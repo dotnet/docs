@@ -1,4 +1,4 @@
 ---
 uid: System.Runtime.Remoting.MetadataServices.SdlType
-internalonly: False
+manager: "ghogen"
 ---

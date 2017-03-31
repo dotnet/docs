@@ -1,4 +1,5 @@
 ---
 uid: System.Net.Http.ClientCertificateOption
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

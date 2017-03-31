@@ -1,159 +1,217 @@
 ---
 uid: System.Windows.Media.Animation.VectorKeyFrameCollection
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.VectorKeyFrameCollection.Insert(System.Int32,System.Windows.Media.Animation.VectorKeyFrame)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.VectorKeyFrameCollection.IsReadOnly
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.VectorKeyFrameCollection.Count
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.VectorKeyFrameCollection.Clear
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.VectorKeyFrameCollection.CloneCurrentValueCore(System.Windows.Freezable)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.VectorKeyFrameCollection.CopyTo(System.Windows.Media.Animation.VectorKeyFrame[],System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.VectorKeyFrameCollection.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.VectorKeyFrameCollection.RemoveAt(System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.VectorKeyFrameCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Animation.VectorKeyFrameCollection.GetCurrentValueAsFrozenCore(System.Windows.Freezable)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.VectorKeyFrameCollection.System#Collections#IList#Contains(System.Object)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Animation.VectorKeyFrameCollection.GetEnumerator
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.VectorKeyFrameCollection.Item(System.Int32)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Animation.VectorKeyFrameCollection.IndexOf(System.Windows.Media.Animation.VectorKeyFrame)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.VectorKeyFrameCollection.Remove(System.Windows.Media.Animation.VectorKeyFrame)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.VectorKeyFrameCollection.IsSynchronized
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.VectorKeyFrameCollection.Add(System.Windows.Media.Animation.VectorKeyFrame)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.VectorKeyFrameCollection.System#Collections#IList#Add(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.VectorKeyFrameCollection.System#Collections#IList#Remove(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.VectorKeyFrameCollection.Contains(System.Windows.Media.Animation.VectorKeyFrame)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.VectorKeyFrameCollection.FreezeCore(System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.VectorKeyFrameCollection.System#Collections#IList#Insert(System.Int32,System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.VectorKeyFrameCollection.IsFixedSize
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.VectorKeyFrameCollection.CreateInstanceCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.VectorKeyFrameCollection.GetAsFrozenCore(System.Windows.Freezable)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Animation.VectorKeyFrameCollection.Clone
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.VectorKeyFrameCollection.System#Collections#IList#Item(System.Int32)
-internalonly: False
+ms.author: "jimwalk"
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Media.Animation.VectorKeyFrameCollection.Empty
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Animation.VectorKeyFrameCollection.CloneCore(System.Windows.Freezable)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.VectorKeyFrameCollection.SyncRoot
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.VectorKeyFrameCollection.System#Collections#IList#IndexOf(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

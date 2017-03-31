@@ -1,59 +1,90 @@
 ---
 uid: System.ServiceModel.Configuration.NetMsmqBindingElement
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.NetMsmqBindingElement.UseActiveDirectory
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.NetMsmqBindingElement.MaxBufferPoolSize
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.NetMsmqBindingElement.Properties
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.NetMsmqBindingElement.BindingElementType
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.NetMsmqBindingElement.OnApplyConfiguration(System.ServiceModel.Channels.Binding)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.NetMsmqBindingElement.Security
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.NetMsmqBindingElement.ReaderQuotas
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.NetMsmqBindingElement.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Configuration.NetMsmqBindingElement.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.NetMsmqBindingElement.InitializeFrom(System.ServiceModel.Channels.Binding)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.NetMsmqBindingElement.QueueTransferProtocol
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.NetMsmqBindingElement.#ctor(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

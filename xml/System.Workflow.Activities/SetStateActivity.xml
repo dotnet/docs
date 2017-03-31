@@ -31,8 +31,31 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides the transition to a <see cref="T:System.Workflow.Activities.StateActivity" /> in a state machine workflow. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ The <xref:System.Workflow.Activities.SetStateActivity> can be used only in state machine workflows.  
+  
+ The <xref:System.Workflow.Activities.SetStateActivity> provides transitions only to leaf <xref:System.Workflow.Activities.StateActivity> activities (a <xref:System.Workflow.Activities.StateActivity> that does not contain other <xref:System.Workflow.Activities.StateActivity> activities).  
+  
+ The <xref:System.Workflow.Activities.SetStateActivity> only provides transitions between two <xref:System.Workflow.Activities.StateActivity> classes and does not support <xref:System.Workflow.Activities.StateActivity> to parent <xref:System.Workflow.Activities.StateActivity> transitions or any other combination.  
+  
+ The <xref:System.Workflow.Activities.SetStateActivity> has to be a leaf node within the activity tree of an event handler.  
+  
+ There can be more than one <xref:System.Workflow.Activities.SetStateActivity> but all the activities must be leaf nodes.  
+  
+ <xref:System.Workflow.Activities.SetStateActivity> is always the last activity in the run path of a <xref:System.Workflow.Activities.EventDrivenActivity> activity.  
+  
+ [!INCLUDE[crdefault](~/includes/crdefault-md.md)] the [Simple State Machine](http://msdn.microsoft.com/en-us/1974edbd-253d-4e01-9095-38ff9c3e749e) sample.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,8 +69,17 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.SetStateActivity" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to create a new instance of the <xref:System.Workflow.Activities.SetStateActivity> class.  This code example is part of the SimpleStateMachineWorkflow SDK Sample from the StateMachineWorkflow.cs file. For more information, see [Simple State Machine](http://msdn.microsoft.com/en-us/1974edbd-253d-4e01-9095-38ff9c3e749e).  
+  
+ [!code-csharp[WF_Samples#310](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets38.cs#310)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -63,8 +95,8 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The user-defined name of the activity.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.SetStateActivity" /> class using the name of the activity.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,9 +143,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the target state.</summary>
+        <value>The name of the target stream.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to create a new instance of the <xref:System.Workflow.Activities.SetStateActivity> class and use it implement a simple state machine to transition between 3 states, and set the value of the <xref:System.Workflow.Activities.SetStateActivity.TargetStateName%2A> property. This code example is part of the SimpleStateMachineWorkflow SDK Sample from the StateMachineWorkflow.cs file. For more information, see [Simple State Machine](http://msdn.microsoft.com/en-us/1974edbd-253d-4e01-9095-38ff9c3e749e).  
+  
+ [!code-csharp[WF_Samples#183](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#183)]
+ [!code-vb[WF_Samples#183](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#183)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TargetStateNameProperty">
@@ -129,8 +171,15 @@
         <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="P:System.Workflow.Activities.SetStateActivity.TargetStateName" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,44 +1,69 @@
 ---
 uid: System.Security.Cryptography.Xml.DataObject
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.Xml.DataObject.GetXml
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.Xml.DataObject.Encoding
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.Xml.DataObject.#ctor(System.String,System.String,System.String,System.Xml.XmlElement)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.Xml.DataObject.Id
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.Xml.DataObject.MimeType
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.Xml.DataObject.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.Xml.DataObject.LoadXml(System.Xml.XmlElement)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.Xml.DataObject.Data
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.Xml.DataObject.#ctor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

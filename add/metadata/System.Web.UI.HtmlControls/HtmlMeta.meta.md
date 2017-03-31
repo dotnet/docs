@@ -1,34 +1,48 @@
 ---
 uid: System.Web.UI.HtmlControls.HtmlMeta
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlMeta.HttpEquiv
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlMeta.Scheme
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlMeta.Render(System.Web.UI.HtmlTextWriter)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlMeta.Content
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlMeta.#ctor
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlMeta.Name
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

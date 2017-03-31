@@ -1,14 +1,19 @@
 ---
 uid: System.Windows.Input.AccessKeyEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.AccessKeyEventArgs.Key
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Input.AccessKeyEventArgs.IsMultiple
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -1,154 +1,208 @@
 ---
 uid: System.Windows.Controls.Grid
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Grid.MeasureOverride(System.Windows.Size)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Grid.GetRow(System.Windows.UIElement)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Grid.RowSpanProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Grid.GetVisualChild(System.Int32)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.Grid.System#Windows#Markup#IAddChild#AddText(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Grid.GetColumn(System.Windows.UIElement)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Grid.System#Windows#Markup#IAddChild#AddChild(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Grid.SetRow(System.Windows.UIElement,System.Int32)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.Grid.ArrangeOverride(System.Windows.Size)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Grid.VisualChildrenCount
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Grid.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Grid.GetRowSpan(System.Windows.UIElement)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Grid.ColumnSpanProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Grid.ShowGridLines
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Grid.SetColumn(System.Windows.UIElement,System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Grid.RowDefinitions
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Grid.GetColumnSpan(System.Windows.UIElement)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.Grid.ShouldSerializeRowDefinitions
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.Grid.ColumnDefinitions
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Grid.RowProperty
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.Grid.OnVisualChildrenChanged(System.Windows.DependencyObject,System.Windows.DependencyObject)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.Grid.ShouldSerializeColumnDefinitions
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Grid.IsSharedSizeScopeProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Grid.ShowGridLinesProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Grid.SetIsSharedSizeScope(System.Windows.UIElement,System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Grid.ColumnProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Grid.GetIsSharedSizeScope(System.Windows.UIElement)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Grid.SetRowSpan(System.Windows.UIElement,System.Int32)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.Grid.LogicalChildren
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.Grid.SetColumnSpan(System.Windows.UIElement,System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

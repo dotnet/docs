@@ -1,44 +1,68 @@
 ---
 uid: System.Printing.PrintServerException
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintServerException.#ctor(System.Int32,System.String,System.String)
-internalonly: False
----
-
----
-uid: System.Printing.PrintServerException.#ctor(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintServerException.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintServerException.#ctor(System.String)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Printing.PrintServerException.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintServerException.ServerName
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintServerException.#ctor(System.Int32,System.String,System.String,System.Exception)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintServerException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintServerException.#ctor(System.String,System.Exception)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintServerException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

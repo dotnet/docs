@@ -17,8 +17,24 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the specifications for output messages returned by the XML Web service. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Exactly one instance of this class is a member of the <xref:System.Web.Services.Description.Operation.Messages%2A> property of the parent <xref:System.Web.Services.Description.Operation> instance.  
+  
+ The <xref:System.Web.Services.Description.OperationOutput> class corresponds to the Web Services Description Language (WSDL) `output` element enclosed by the `operation` element that is in turn enclosed by the `portType` element. For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
+  
+   
+  
+## Examples  
+ [!code-cpp[OperationOutput_OperationOutput#1](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationOutput_OperationOutput/CPP/operationoutput_operationoutput.cpp#1)]
+ [!code-csharp[OperationOutput_OperationOutput#1](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationOutput_OperationOutput/CS/operationoutput_operationoutput.cs#1)]
+ [!code-vb[OperationOutput_OperationOutput#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationOutput_OperationOutput/VB/operationoutput_operationoutput.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,7 +49,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Description.OperationOutput" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,8 +72,8 @@
         <ReturnType>System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection" /> associated with this <see cref="T:System.Web.Services.Description.OperationOutput" />.</summary>
+        <value>The <see cref="T:System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection" /> associated with this <see cref="T:System.Web.Services.Description.OperationOutput" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

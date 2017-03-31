@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Controls.ExpandDirection
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -1,19 +1,19 @@
 ---
 uid: Microsoft.JScript.Equality
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.Equality.#ctor(System.Int32)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.Equality.EvaluateEquality(System.Object,System.Object)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.Equality.JScriptEquals(System.Object,System.Object)
-internalonly: False
+ms.author: "mikejo"
 ---

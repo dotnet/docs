@@ -1,9 +1,13 @@
 ---
 uid: System.CodeDom.CodePropertySetValueReferenceExpression
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.CodePropertySetValueReferenceExpression.#ctor
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

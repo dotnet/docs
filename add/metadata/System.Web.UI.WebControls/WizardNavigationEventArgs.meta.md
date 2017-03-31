@@ -1,24 +1,34 @@
 ---
 uid: System.Web.UI.WebControls.WizardNavigationEventArgs
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.WizardNavigationEventArgs.NextStepIndex
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.WizardNavigationEventArgs.CurrentStepIndex
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.WizardNavigationEventArgs.Cancel
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.WizardNavigationEventArgs.#ctor(System.Int32,System.Int32)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

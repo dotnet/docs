@@ -16,8 +16,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Carries argument name information for the decorated class.  This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,8 +42,8 @@
         <Parameter Name="argumentName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="argumentName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="argumentName">A <see langword="string" /> that contains the argument name.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Serialization.ConstructorArgumentAttribute" /> class, initializing the <see cref="P:System.Workflow.ComponentModel.Serialization.ConstructorArgumentAttribute.ArgumentName" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +60,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see langword="string" /> representing the argument name.</summary>
+        <value>The <see langword="string" /> representing the argument name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

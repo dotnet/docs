@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This class is used to maintain the request state across asynchronous calls within a security token service.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,9 +28,11 @@
         <Parameter Name="federatedAsyncState" Type="System.IdentityModel.SecurityTokenService+FederatedAsyncState" />
       </Parameters>
       <Docs>
-        <param name="federatedAsyncState">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="federatedAsyncState">The <see cref="T:System.IdentityModel.SecurityTokenService.FederatedAsyncState" /> instance from which to create the new instance.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.SecurityTokenService.FederatedAsyncState" /> class from the specified <see cref="T:System.IdentityModel.SecurityTokenService.FederatedAsyncState" /> object. This constructor effectively creates a copy of the specified instance.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="federatedAsyncState" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -48,11 +50,17 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <param name="principal">To be added.</param>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="request">The token request.</param>
+        <param name="principal">The identity of the requestor.</param>
+        <param name="result">An <see cref="T:System.IAsyncResult" /> that represents the status of the asynchronous call.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.SecurityTokenService.FederatedAsyncState" /> class with the specified token request (RST), token requestor, and <see cref="T:System.IAsyncResult" /> object.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="request" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="result" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ClaimsPrincipal">
@@ -68,8 +76,8 @@
         <ReturnType>System.Security.Claims.ClaimsPrincipal</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the identity of the token requestor associated with the asynchronous call.</summary>
+        <value>The identity of the token requestor.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,8 +94,8 @@
         <ReturnType>System.IdentityModel.Protocols.WSTrust.RequestSecurityToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the token request (RST) associated with the asynchronous call.</summary>
+        <value>The token request associated with the asynchronous call.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,8 +112,8 @@
         <ReturnType>System.IAsyncResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.IAsyncResult" /> associated with the asynchronous call.</summary>
+        <value>An <see cref="T:System.IAsyncResult" /> that represents the status of the asynchronous call.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,8 +130,8 @@
         <ReturnType>System.IdentityModel.Tokens.SecurityTokenHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the security token handler that will be used during an asynchronous token-issuance call.</summary>
+        <value>The token handler that will be used.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

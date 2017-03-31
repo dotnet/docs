@@ -25,8 +25,22 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines a wrapper object to access the cryptographic service provider (CSP) implementation of the <see cref="T:System.Security.Cryptography.DSA" /> algorithm. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Security.Cryptography.DSACryptoServiceProvider> class to create digital signatures and protect the integrity of your data.  
+  
+ To use a public-key system to digitally sign a message, the sender first applies a hash function to the message to create a message digest. The sender then encrypts the message digest with the sender's private key to create the sender's personal signature. Upon receiving the message and signature, the receiver decrypts the signature using the sender's public key to recover the message digest and hashes the message using the same hash algorithm that the sender used. If the message digest that the receiver computes exactly matches the message digest received from the sender, the receiver can be sure that the message was not altered while in transit. Note that a signature can be verified by anyone, because the sender's public key is common knowledge.  
+  
+> [!NOTE]
+>  Newer asymmetric algorithms are available. Consider using the <xref:System.Security.Cryptography.RSACryptoServiceProvider> class instead of the <xref:System.Security.Cryptography.DSACryptoServiceProvider> class. Use <xref:System.Security.Cryptography.DSACryptoServiceProvider> only for compatibility with legacy applications and data.  
+  
+ This algorithm supports key lengths from 512 bits to 1024 bits in increments of 64 bits.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,8 +59,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.DSACryptoServiceProvider" /> class.</summary>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -67,9 +82,10 @@
         <Parameter Name="dwKeySize" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="dwKeySize">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="dwKeySize">The size of the key for the asymmetric algorithm in bits.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.DSACryptoServiceProvider" /> class with the specified key size.</summary>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -90,9 +106,10 @@
         <Parameter Name="parameters" Type="System.Security.Cryptography.CspParameters" />
       </Parameters>
       <Docs>
-        <param name="parameters">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="parameters">The parameters for the CSP.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.DSACryptoServiceProvider" /> class with the specified parameters for the cryptographic service provider (CSP).</summary>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -114,10 +131,18 @@
         <Parameter Name="parameters" Type="System.Security.Cryptography.CspParameters" />
       </Parameters>
       <Docs>
-        <param name="dwKeySize">To be added.</param>
-        <param name="parameters">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="dwKeySize">The size of the key for the cryptographic algorithm in bits.</param>
+        <param name="parameters">The parameters for the CSP.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.DSACryptoServiceProvider" /> class with the specified key size and parameters for the cryptographic service provider (CSP).</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The CSP cannot be acquired.  
+  
+ -or-  
+  
+ The key cannot be created.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="dwKeySize" /> is out of range.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
       </Docs>
     </Member>
     <Member MemberName="CreateSignature">
@@ -141,9 +166,9 @@
         <Parameter Name="rgbHash" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="rgbHash">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="rgbHash">The data to be signed.</param>
+        <summary>Creates the <see cref="T:System.Security.Cryptography.DSA" /> signature for the specified data.</summary>
+        <returns>The digital signature for the specified data.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -170,9 +195,18 @@
         <ReturnType>System.Security.Cryptography.CspKeyContainerInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a <see cref="T:System.Security.Cryptography.CspKeyContainerInfo" /> object that describes additional information about a cryptographic key pair.</summary>
+        <value>A <see cref="T:System.Security.Cryptography.CspKeyContainerInfo" /> object that describes additional information about a cryptographic key pair.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Security.Cryptography.DSACryptoServiceProvider.CspKeyContainerInfo%2A> property to retrieve additional information about a cryptographic key pair.  The returned <xref:System.Security.Cryptography.CspKeyContainerInfo> object describes whether the key is exportable, and specifies the key container name, information about the provider, and other information.  
+  
+ In cases where a random key is generated, a key container will not be created until you call a method that uses the key.  Some properties of the <xref:System.Security.Cryptography.CspKeyContainerInfo> object returned by the <xref:System.Security.Cryptography.DSACryptoServiceProvider.CspKeyContainerInfo%2A> property will throw a <xref:System.Security.Cryptography.CryptographicException> if a key container has not been created.  To make sure that a key container has been created, call a method such as <xref:System.Security.Cryptography.DSACryptoServiceProvider.SignData%2A>, <xref:System.Security.Cryptography.DSACryptoServiceProvider.SignHash%2A>, <xref:System.Security.Cryptography.DSACryptoServiceProvider.VerifyData%2A>, <xref:System.Security.Cryptography.DSACryptoServiceProvider.VerifyHash%2A>, and so on, before you call the <xref:System.Security.Cryptography.DSACryptoServiceProvider.CspKeyContainerInfo%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -227,10 +261,19 @@
         <Parameter Name="includePrivateParameters" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="includePrivateParameters">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="includePrivateParameters">
+          <see langword="true" /> to include the private key; otherwise, <see langword="false" />.</param>
+        <summary>Exports a blob containing the key information associated with a <see cref="T:System.Security.Cryptography.DSACryptoServiceProvider" /> object.</summary>
+        <returns>A byte array containing the key information associated with a <see cref="T:System.Security.Cryptography.DSACryptoServiceProvider" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Cryptography.DSACryptoServiceProvider.ExportCspBlob%2A> method returns a blob containing key information that is compatible with the unmanaged Microsoft Cryptographic API (CAPI).  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection">for permission to access a key container when exporting a private key. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.KeyContainerPermissionFlags.Export" /></permission>
       </Docs>
     </Member>
     <Member MemberName="ExportParameters">
@@ -254,10 +297,13 @@
         <Parameter Name="includePrivateParameters" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="includePrivateParameters">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="includePrivateParameters">
+          <see langword="true" /> to include private parameters; otherwise, <see langword="false" />.</param>
+        <summary>Exports the <see cref="T:System.Security.Cryptography.DSAParameters" />.</summary>
+        <returns>The parameters for <see cref="T:System.Security.Cryptography.DSA" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The key cannot be exported.</exception>
+        <permission cref="T:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection">for permission to export a key. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.KeyContainerPermissionFlags.Export" /></permission>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -357,9 +403,17 @@
         <Parameter Name="keyBlob" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="keyBlob">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="keyBlob">A byte array that represents a DSA key blob.</param>
+        <summary>Imports a blob that represents DSA key information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Cryptography.DSACryptoServiceProvider.ImportCspBlob%2A> method initializes the key data of a <xref:System.Security.Cryptography.DSACryptoServiceProvider> object using a blob that is compatible with the unmanaged Microsoft Cryptographic API (CAPI).  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection">for permission to access a key container when importing a key. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.KeyContainerPermissionFlags.Import" /></permission>
       </Docs>
     </Member>
     <Member MemberName="ImportParameters">
@@ -383,9 +437,15 @@
         <Parameter Name="parameters" Type="System.Security.Cryptography.DSAParameters" />
       </Parameters>
       <Docs>
-        <param name="parameters">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="parameters">The parameters for <see cref="T:System.Security.Cryptography.DSA" />.</param>
+        <summary>Imports the specified <see cref="T:System.Security.Cryptography.DSAParameters" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The cryptographic service provider (CSP) cannot be acquired.  
+  
+ -or-  
+  
+ The <paramref name="parameters" /> parameter has missing fields.</exception>
+        <permission cref="T:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection">for permission to import a key. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.KeyContainerPermissionFlags.Import" /></permission>
       </Docs>
     </Member>
     <Member MemberName="KeyExchangeAlgorithm">
@@ -406,8 +466,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the key exchange algorithm.</summary>
+        <value>The name of the key exchange algorithm.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -429,9 +489,18 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the size of the key used by the asymmetric algorithm in bits.</summary>
+        <value>The size of the key used by the asymmetric algorithm.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This algorithm supports key lengths from 512 bits to 1024 bits in increments of 64 bits.  
+  
+ The <xref:System.Security.Cryptography.DSACryptoServiceProvider> class does not allow you to change key sizes using the <xref:System.Security.Cryptography.DSACryptoServiceProvider.KeySize%2A> property.  Any value written to this property will fail to update the property without error.  To change the key size, use one of the constructor overloads.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PersistKeyInCsp">
@@ -452,9 +521,22 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether the key should be persisted in the cryptographic service provider (CSP).</summary>
+        <value>
+          <see langword="true" /> if the key should be persisted in the CSP; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property when you want to persist a key in a key container.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.KeyContainerPermissionAccessEntry">for permission to delete a key. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.KeyContainerPermissionFlags.Delete" />  
+  
+ -or-  
+  
+ for permission to create a key. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.KeyContainerPermissionFlags.Create" /></permission>
       </Docs>
     </Member>
     <Member MemberName="PublicOnly">
@@ -480,9 +562,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Security.Cryptography.DSACryptoServiceProvider" /> object contains only a public key.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Security.Cryptography.DSACryptoServiceProvider" /> object contains only a public key; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Cryptography.DSACryptoServiceProvider> class can be initialized either with a public key only or with both a public and private key.  Use the <xref:System.Security.Cryptography.DSACryptoServiceProvider.PublicOnly%2A> property to determine whether the current instance contains only a public key or both a public and private key.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SignatureAlgorithm">
@@ -503,8 +593,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the signature algorithm.</summary>
+        <value>The name of the signature algorithm.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -529,10 +619,19 @@
         <Parameter Name="buffer" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="buffer">The input data for which to compute the hash.</param>
+        <summary>Computes the hash value of the specified byte array and signs the resulting hash value.</summary>
+        <returns>The <see cref="T:System.Security.Cryptography.DSA" /> signature for the specified data.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method creates a digital signature that is verified using the <xref:System.Security.Cryptography.DSACryptoServiceProvider.VerifyData%2A> method.  
+  
+ <xref:System.Security.Cryptography.DSA> uses the <xref:System.Security.Cryptography.SHA1> hash algorithm.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SignData">
@@ -556,10 +655,17 @@
         <Parameter Name="inputStream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="inputStream">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="inputStream">The input data for which to compute the hash.</param>
+        <summary>Computes the hash value of the specified input stream and signs the resulting hash value.</summary>
+        <returns>The <see cref="T:System.Security.Cryptography.DSA" /> signature for the specified data.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Security.Cryptography.DSA> uses the <xref:System.Security.Cryptography.SHA1> hash algorithm.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SignData">
@@ -585,12 +691,21 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="buffer">The input data to sign.</param>
+        <param name="offset">The offset into the array from which to begin using data.</param>
+        <param name="count">The number of bytes in the array to use as data.</param>
+        <summary>Signs a byte array from the specified start point to the specified end point.</summary>
+        <returns>The <see cref="T:System.Security.Cryptography.DSA" /> signature for the specified data.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method creates a digital signature that is verified using the <xref:System.Security.Cryptography.DSACryptoServiceProvider.VerifyData%2A> method.  
+  
+ <xref:System.Security.Cryptography.DSA> uses the <xref:System.Security.Cryptography.SHA1> hash algorithm.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SignHash">
@@ -615,11 +730,27 @@
         <Parameter Name="str" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="rgbHash">To be added.</param>
-        <param name="str">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="rgbHash">The hash value of the data to be signed.</param>
+        <param name="str">The name of the hash algorithm used to create the hash value of the data.</param>
+        <summary>Computes the signature for the specified hash value by encrypting it with the private key.</summary>
+        <returns>The <see cref="T:System.Security.Cryptography.DSA" /> signature for the specified hash value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method creates a digital signature that is verified using the <xref:System.Security.Cryptography.DSACryptoServiceProvider.VerifyHash%2A> method.  
+  
+ <xref:System.Security.Cryptography.DSA> uses the <xref:System.Security.Cryptography.SHA1> hash algorithm.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="rgbHash" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The cryptographic service provider (CSP) cannot be acquired.  
+  
+ -or-  
+  
+ There is no private key.</exception>
+        <permission cref="T:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection">for permission to sign a file using the key. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.KeyContainerPermissionFlags.Sign" /></permission>
       </Docs>
     </Member>
     <Member MemberName="UseMachineKeyStore">
@@ -640,9 +771,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether the key should be persisted in the computer's key store instead of the user profile store.</summary>
+        <value>
+          <see langword="true" /> if the key should be persisted in the computer key store; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting this property to true is equivalent to passing the <xref:System.Security.Cryptography.DSACryptoServiceProvider.UseMachineKeyStore%2A> flag to a <xref:System.Security.Cryptography.CspParameters> object. The <xref:System.Security.Cryptography.DSACryptoServiceProvider.UseMachineKeyStore%2A> property applies to all code in the current application domain, while the <xref:System.Security.Cryptography.CspParameters> object applies only to classes that explicitly reference it. These settings are useful when impersonating or running under an account whose user profile is not loaded.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="VerifyData">
@@ -667,11 +806,21 @@
         <Parameter Name="rgbSignature" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="rgbData">To be added.</param>
-        <param name="rgbSignature">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="rgbData">The data that was signed.</param>
+        <param name="rgbSignature">The signature data to be verified.</param>
+        <summary>Verifies the specified signature data by comparing it to the signature computed for the specified data.</summary>
+        <returns>
+          <see langword="true" /> if the signature verifies as valid; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method verifies the <xref:System.Security.Cryptography.DSA> digital signature produced by <xref:System.Security.Cryptography.DSACryptoServiceProvider.SignData%2A>.  
+  
+ <xref:System.Security.Cryptography.DSA> uses the <xref:System.Security.Cryptography.SHA1> hash algorithm.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="VerifyHash">
@@ -697,12 +846,32 @@
         <Parameter Name="rgbSignature" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="rgbHash">To be added.</param>
-        <param name="str">To be added.</param>
-        <param name="rgbSignature">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="rgbHash">The hash value of the data to be signed.</param>
+        <param name="str">The name of the hash algorithm used to create the hash value of the data.</param>
+        <param name="rgbSignature">The signature data to be verified.</param>
+        <summary>Verifies the specified signature data by comparing it to the signature computed for the specified hash value.</summary>
+        <returns>
+          <see langword="true" /> if the signature verifies as valid; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method verifies the <xref:System.Security.Cryptography.DSA> digital signature produced by <xref:System.Security.Cryptography.DSACryptoServiceProvider.SignHash%2A>.  
+  
+ If the `str` parameter is `null`, the default hash algorithm (SHA1) is used. The valid hash algorithms is <xref:System.Security.Cryptography.SHA1>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="rgbHash" /> parameter is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="rgbSignature" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The cryptographic service provider (CSP) cannot be acquired.  
+  
+ -or-  
+  
+ The signature cannot be verified.</exception>
       </Docs>
     </Member>
     <Member MemberName="VerifySignature">
@@ -727,10 +896,11 @@
         <Parameter Name="rgbSignature" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="rgbHash">To be added.</param>
-        <param name="rgbSignature">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="rgbHash">The data signed with <c>rgbSignature</c>.</param>
+        <param name="rgbSignature">The signature to be verified for <c>rgbData</c>.</param>
+        <summary>Verifies the <see cref="T:System.Security.Cryptography.DSA" /> signature for the specified data.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="rgbSignature" /> matches the signature computed using the specified hash algorithm and key on <paramref name="rgbHash" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

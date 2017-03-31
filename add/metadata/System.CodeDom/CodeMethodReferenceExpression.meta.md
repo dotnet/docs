@@ -1,34 +1,55 @@
 ---
 uid: System.CodeDom.CodeMethodReferenceExpression
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.CodeMethodReferenceExpression.TypeArguments
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.CodeMethodReferenceExpression.MethodName
-internalonly: False
----
-
----
-uid: System.CodeDom.CodeMethodReferenceExpression.#ctor(System.CodeDom.CodeExpression,System.String,System.CodeDom.CodeTypeReference[])
-internalonly: False
----
-
----
-uid: System.CodeDom.CodeMethodReferenceExpression.#ctor(System.CodeDom.CodeExpression,System.String)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.CodeMethodReferenceExpression.#ctor
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.CodeMethodReferenceExpression.#ctor(System.CodeDom.CodeExpression,System.String,System.CodeDom.CodeTypeReference[])
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.CodeMethodReferenceExpression.#ctor(System.CodeDom.CodeExpression,System.String)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.CodeMethodReferenceExpression.#ctor
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.CodeMethodReferenceExpression.TargetObject
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

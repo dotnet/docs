@@ -31,8 +31,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the name of the property that accesses the attributed field.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can apply this attribute to fields.  
+  
+ This attribute is for use by browsers or tools, and is ignored by the common language runtime.  
+  
+ The classes in System.Runtime.CompilerServices are for compiler writers use only.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -60,8 +71,8 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="propertyName">The name of the property used to access the attributed field.</param>
+        <summary>Initializes a new instance of the <see langword="AccessedThroughPropertyAttribute" /> class with the name of the property used to access the attributed field.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,8 +101,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the property used to access the attributed field.</summary>
+        <value>The name of the property used to access the attributed field.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

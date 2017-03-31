@@ -1,29 +1,41 @@
 ---
 uid: System.Activities.Tracking.TrackingProfile
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Tracking.TrackingProfile.ActivityDefinitionId
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Tracking.TrackingProfile.Queries
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Tracking.TrackingProfile.Name
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Tracking.TrackingProfile.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Tracking.TrackingProfile.ImplementationVisibility
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -1,79 +1,95 @@
 ---
 uid: System.Web.UI.Design.WebControls.SiteMapDataSourceDesigner
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.SiteMapDataSourceDesigner.System#Web#UI#Design#IDataSourceDesigner#RefreshSchema(System.Boolean)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.SiteMapDataSourceDesigner.System#Web#UI#Design#IDataSourceDesigner#CanRefreshSchema
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.SiteMapDataSourceDesigner.System#Web#UI#Design#IDataSourceDesigner#SuppressDataSourceEvents
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.SiteMapDataSourceDesigner.System#Web#UI#Design#IDataSourceDesigner#CanConfigure
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.SiteMapDataSourceDesigner.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.SiteMapDataSourceDesigner.System#Web#UI#Design#IDataSourceDesigner#GetViewNames
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.SiteMapDataSourceDesigner.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.SiteMapDataSourceDesigner.Initialize(System.ComponentModel.IComponent)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.SiteMapDataSourceDesigner.System#Web#UI#Design#IDataSourceDesigner#GetView(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.SiteMapDataSourceDesigner.System#Web#UI#Design#IDataSourceDesigner#Configure
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.SiteMapDataSourceDesigner.RefreshSchema(System.Boolean)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.SiteMapDataSourceDesigner.GetViewNames
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.SiteMapDataSourceDesigner.GetView(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.SiteMapDataSourceDesigner.System#Web#UI#Design#IDataSourceDesigner#ResumeDataSourceEvents
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.SiteMapDataSourceDesigner.CanRefreshSchema
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

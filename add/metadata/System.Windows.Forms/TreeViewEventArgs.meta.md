@@ -1,24 +1,41 @@
 ---
 uid: System.Windows.Forms.TreeViewEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TreeViewEventArgs.#ctor(System.Windows.Forms.TreeNode,System.Windows.Forms.TreeViewAction)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.TreeViewEventArgs.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TreeViewEventArgs.#ctor(System.Windows.Forms.TreeNode)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TreeViewEventArgs.Action
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TreeViewEventArgs.Node
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

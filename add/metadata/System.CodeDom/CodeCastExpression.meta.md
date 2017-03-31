@@ -1,34 +1,55 @@
 ---
 uid: System.CodeDom.CodeCastExpression
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.CodeCastExpression.#ctor
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.CodeCastExpression.#ctor(System.CodeDom.CodeTypeReference,System.CodeDom.CodeExpression)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.CodeCastExpression.TargetType
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.CodeCastExpression.#ctor(System.String,System.CodeDom.CodeExpression)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.CodeCastExpression.#ctor(System.Type,System.CodeDom.CodeExpression)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.CodeCastExpression.Expression
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.CodeCastExpression.#ctor
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

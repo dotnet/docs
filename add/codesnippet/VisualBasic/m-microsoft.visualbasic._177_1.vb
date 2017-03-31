@@ -1,1 +1,0 @@
-        ChDir("D:\TMP")

@@ -1,14 +1,20 @@
 ---
 uid: System.Data.Services.Common.EntitySetAttribute
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Services.Common.EntitySetAttribute.#ctor(System.String)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Services.Common.EntitySetAttribute.EntitySet
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

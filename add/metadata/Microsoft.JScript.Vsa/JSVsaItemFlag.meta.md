@@ -1,4 +1,6 @@
 ---
 uid: Microsoft.JScript.Vsa.JSVsaItemFlag
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

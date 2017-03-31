@@ -1,14 +1,20 @@
 ---
 uid: System.Runtime.Serialization.SafeSerializationEventArgs
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.Serialization.SafeSerializationEventArgs.AddSerializedState(System.Runtime.Serialization.ISafeSerializationData)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.Serialization.SafeSerializationEventArgs.StreamingContext
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -1,19 +1,35 @@
 ---
 uid: System.Workflow.ComponentModel.Design.TypeBrowserEditor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.ComponentModel.Design.TypeBrowserEditor.EditValue
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.TypeBrowserEditor.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.TypeBrowserEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.TypeBrowserEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.ComponentModel.Design.TypeBrowserEditor.GetEditStyle
 ---

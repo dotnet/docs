@@ -1,34 +1,47 @@
 ---
 uid: System.Windows.Media.TransformGroup
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.TransformGroup.Children
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.TransformGroup.Value
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.TransformGroup.CloneCurrentValue
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.TransformGroup.Clone
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.TransformGroup.#ctor
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.TransformGroup.ChildrenProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

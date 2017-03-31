@@ -1,14 +1,14 @@
 ---
 uid: System.Runtime.Remoting.IRemotingTypeInfo
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.IRemotingTypeInfo.TypeName
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.IRemotingTypeInfo.CanCastTo(System.Type,System.Object)
-internalonly: False
+manager: "ghogen"
 ---

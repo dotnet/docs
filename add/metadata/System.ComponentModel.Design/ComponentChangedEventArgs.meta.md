@@ -1,29 +1,41 @@
 ---
 uid: System.ComponentModel.Design.ComponentChangedEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.ComponentChangedEventArgs.#ctor(System.Object,System.ComponentModel.MemberDescriptor,System.Object,System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.ComponentChangedEventArgs.Component
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.ComponentChangedEventArgs.OldValue
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.ComponentChangedEventArgs.Member
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.ComponentChangedEventArgs.NewValue
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

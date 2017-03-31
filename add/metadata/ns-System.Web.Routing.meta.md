@@ -1,4 +1,6 @@
 ---
 uid: System.Web.Routing
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

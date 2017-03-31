@@ -1,4 +1,6 @@
 ---
 uid: System.Reflection.TypeFilter
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

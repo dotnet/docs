@@ -1,24 +1,41 @@
 ---
 uid: System.Reflection.CustomAttributeFormatException
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.CustomAttributeFormatException.#ctor(System.String,System.Exception)
-internalonly: False
----
-
----
-uid: System.Reflection.CustomAttributeFormatException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.CustomAttributeFormatException.#ctor
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Reflection.CustomAttributeFormatException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Reflection.CustomAttributeFormatException.#ctor
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.CustomAttributeFormatException.#ctor(System.String)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

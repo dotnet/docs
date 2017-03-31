@@ -1,29 +1,48 @@
 ---
 uid: System.Windows.Controls.TextChangedEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.TextChangedEventArgs.#ctor(System.Windows.RoutedEvent,System.Windows.Controls.UndoAction)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.TextChangedEventArgs.#ctor(System.Windows.RoutedEvent,System.Windows.Controls.UndoAction,System.Collections.Generic.ICollection{System.Windows.Controls.TextChange})
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.TextChangedEventArgs.Changes
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.TextChangedEventArgs.InvokeEventHandler(System.Delegate,System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.TextChangedEventArgs.UndoAction
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.TextChangedEventArgs.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

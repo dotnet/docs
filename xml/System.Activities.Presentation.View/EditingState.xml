@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Enumerates the possible states of editing an expression in an expression text box.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Activities.Presentation.View.EditingState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the editing state for an expression.</summary>
       </Docs>
     </Member>
     <Member MemberName="Idle">
@@ -43,7 +43,7 @@
         <ReturnType>System.Activities.Presentation.View.EditingState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the idle state in editing an expression.</summary>
       </Docs>
     </Member>
     <Member MemberName="Validating">
@@ -59,7 +59,7 @@
         <ReturnType>System.Activities.Presentation.View.EditingState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the validating state in editing an expression.</summary>
       </Docs>
     </Member>
   </Members>

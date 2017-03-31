@@ -1,9 +1,9 @@
 ---
 uid: Microsoft.JScript.Throw
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.Throw.JScriptThrow(System.Object)
-internalonly: False
+ms.author: "mikejo"
 ---

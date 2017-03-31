@@ -1,144 +1,230 @@
 ---
 uid: System.IO.FileInfo
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.FileInfo.Replace(System.String,System.String)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.FileInfo.Open
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.FileInfo.Open(System.IO.FileMode)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.FileInfo.CopyTo(System.String,System.Boolean)
-internalonly: False
----
-
----
-uid: System.IO.FileInfo.SetAccessControl(System.Security.AccessControl.FileSecurity)
-internalonly: False
----
-
----
-uid: System.IO.FileInfo.Replace(System.String,System.String,System.Boolean)
-internalonly: False
----
-
----
-uid: System.IO.FileInfo.MoveTo(System.String)
-internalonly: False
----
-
----
-uid: System.IO.FileInfo.Exists
-internalonly: False
----
-
----
-uid: System.IO.FileInfo.Create
-internalonly: False
----
-
----
-uid: System.IO.FileInfo.Delete
-internalonly: False
----
-
----
-uid: System.IO.FileInfo.Directory
-internalonly: False
----
-
----
-uid: System.IO.FileInfo.ToString
-internalonly: False
----
-
----
-uid: System.IO.FileInfo.IsReadOnly
-internalonly: False
----
-
----
-uid: System.IO.FileInfo.Open(System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
-internalonly: False
----
-
----
-uid: System.IO.FileInfo.OpenText
-internalonly: False
----
-
----
-uid: System.IO.FileInfo.Decrypt
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.FileInfo.GetAccessControl
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.FileInfo.SetAccessControl(System.Security.AccessControl.FileSecurity)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.FileInfo.Replace(System.String,System.String,System.Boolean)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.FileInfo.MoveTo(System.String)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.FileInfo.Exists
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.FileInfo.Create
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.FileInfo.Delete
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.FileInfo.Directory
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.FileInfo.ToString
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.FileInfo.IsReadOnly
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.FileInfo.Open(System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.FileInfo.OpenText
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.FileInfo.Decrypt
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.FileInfo.GetAccessControl
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.FileInfo.DirectoryName
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.FileInfo.Encrypt
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.FileInfo.Replace
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.FileInfo.CopyTo
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.FileInfo.#ctor(System.String)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.FileInfo.CreateText
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.FileInfo.Open(System.IO.FileMode,System.IO.FileAccess)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.FileInfo.Name
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.FileInfo.Length
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.FileInfo.CopyTo(System.String)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.FileInfo.OpenWrite
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.FileInfo.GetAccessControl(System.Security.AccessControl.AccessControlSections)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.FileInfo.AppendText
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.FileInfo.OpenRead
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

@@ -13,8 +13,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines an interface for a page designer component to obtain services from a designer host such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)] at design time. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ All methods in this interface are to be implemented by the design host and made available to designer components through this <xref:System.Web.UI.Design.MobileControls.IMobileWebFormServices> interface. Before attempting to use the methods in a custom designer component, verify that the design host actually implements the interface.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ClearUndoStack">
@@ -31,8 +38,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Clears all items in the designer host's **Undo** cache at design time. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Since the <xref:System.Web.UI.Design.MobileControls.IMobileWebFormServices.ClearUndoStack%2A> method is implemented by the designer host, verify that it exists before invoking it.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCache">
@@ -52,11 +66,18 @@
         <Parameter Name="key" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="controlID">To be added.</param>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="controlID">The ID for the container control.</param>
+        <param name="key">The key for the cache item.</param>
+        <summary>Gets an item from the cache of the designer host at design time. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <returns>An object from the cache of the designer host.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Since the <xref:System.Web.UI.Design.MobileControls.IMobileWebFormServices.GetCache%2A> method is implemented by the designer host, verify that it exists before invoking it.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshPageView">
@@ -73,8 +94,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Refreshes the page in the designer host at design time. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Since the <xref:System.Web.UI.Design.MobileControls.IMobileWebFormServices.RefreshPageView%2A> method is implemented by the designer host, verify that it exists before invoking it.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetCache">
@@ -95,10 +123,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="controlID">To be added.</param>
-        <param name="key">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="controlID">The ID of the container control.</param>
+        <param name="key">The key for the cache item.</param>
+        <param name="value">The item to store in the cache.</param>
+        <summary>Stores an object in the designer host's cache at design time. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,8 +146,8 @@
         <Parameter Name="rootControl" Type="System.Web.UI.Control" />
       </Parameters>
       <Docs>
-        <param name="rootControl">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="rootControl">The container control with which to begin the update.</param>
+        <summary>Recursively updates the associated control and each of its child controls in the design host at design time. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

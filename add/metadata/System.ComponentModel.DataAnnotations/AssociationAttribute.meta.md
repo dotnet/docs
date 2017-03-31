@@ -1,39 +1,47 @@
 ---
 uid: System.ComponentModel.DataAnnotations.AssociationAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.AssociationAttribute.ThisKeyMembers
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.AssociationAttribute.Name
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.AssociationAttribute.OtherKey
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.AssociationAttribute.ThisKey
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.AssociationAttribute.OtherKeyMembers
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.AssociationAttribute.#ctor(System.String,System.String,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.AssociationAttribute.IsForeignKey
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

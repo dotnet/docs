@@ -1,39 +1,55 @@
 ---
 uid: System.IdentityModel.Selectors.CardSpacePolicyElement
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.IdentityModel.Selectors.CardSpacePolicyElement.Issuer
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.IdentityModel.Selectors.CardSpacePolicyElement.Parameters
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.IdentityModel.Selectors.CardSpacePolicyElement.PolicyNoticeVersion
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.IdentityModel.Selectors.CardSpacePolicyElement.PolicyNoticeLink
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.IdentityModel.Selectors.CardSpacePolicyElement.IsManagedIssuer
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.IdentityModel.Selectors.CardSpacePolicyElement.#ctor(System.Xml.XmlElement,System.Xml.XmlElement,System.Collections.ObjectModel.Collection{System.Xml.XmlElement},System.Uri,System.Int32,System.Boolean)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.IdentityModel.Selectors.CardSpacePolicyElement.Target
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

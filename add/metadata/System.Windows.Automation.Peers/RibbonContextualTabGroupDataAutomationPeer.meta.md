@@ -1,34 +1,47 @@
 ---
 uid: System.Windows.Automation.Peers.RibbonContextualTabGroupDataAutomationPeer
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonContextualTabGroupDataAutomationPeer.System#Windows#Automation#Provider#IInvokeProvider#Invoke
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonContextualTabGroupDataAutomationPeer.GetAutomationControlTypeCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonContextualTabGroupDataAutomationPeer.#ctor(System.Object,System.Windows.Automation.Peers.RibbonContextualTabGroupItemsControlAutomationPeer)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonContextualTabGroupDataAutomationPeer.IsContentElementCore
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonContextualTabGroupDataAutomationPeer.GetClassNameCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonContextualTabGroupDataAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

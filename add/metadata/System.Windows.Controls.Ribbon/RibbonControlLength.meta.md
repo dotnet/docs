@@ -1,74 +1,111 @@
 ---
 uid: System.Windows.Controls.Ribbon.RibbonControlLength
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.RibbonControlLength.op_Equality(System.Windows.Controls.Ribbon.RibbonControlLength,System.Windows.Controls.Ribbon.RibbonControlLength)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.RibbonControlLength.IsAuto
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.RibbonControlLength.#ctor(System.Double,System.Windows.Controls.Ribbon.RibbonControlLengthUnitType)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.RibbonControlLength.Equals(System.Windows.Controls.Ribbon.RibbonControlLength)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.RibbonControlLength.IsStar
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.RibbonControlLength.Auto
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.RibbonControlLength.RibbonControlLengthUnitType
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Controls.Ribbon.RibbonControlLength.Equals
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.RibbonControlLength.GetHashCode
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.RibbonControlLength.Equals(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.RibbonControlLength.op_Inequality(System.Windows.Controls.Ribbon.RibbonControlLength,System.Windows.Controls.Ribbon.RibbonControlLength)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.RibbonControlLength.#ctor(System.Double)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.RibbonControlLength.Value
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.RibbonControlLength.IsAbsolute
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.RibbonControlLength.ToString
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.Ribbon.RibbonControlLength.#ctor
+ms.author: "kempb"
+manager: "ghogen"
 ---

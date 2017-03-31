@@ -1,29 +1,39 @@
 ---
 uid: System.Windows.Media.Imaging.JpegBitmapEncoder
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Imaging.JpegBitmapEncoder.FlipHorizontal
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Imaging.JpegBitmapEncoder.QualityLevel
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Imaging.JpegBitmapEncoder.Rotation
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Imaging.JpegBitmapEncoder.#ctor
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Imaging.JpegBitmapEncoder.FlipVertical
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

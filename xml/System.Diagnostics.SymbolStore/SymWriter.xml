@@ -23,8 +23,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a symbol writer for managed code.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Diagnostics.SymbolStore.SymWriter> class provides methods that define documents, sequence points, lexical scopes, and variables.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,8 +45,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.SymbolStore.SymWriter" /> class.</summary>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to access unmanaged code.</permission>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -55,8 +63,9 @@
         <Parameter Name="noUnderlyingWriter" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="noUnderlyingWriter">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="noUnderlyingWriter">
+          <see langword="true" /> if an underlying symbol writer will be provided by calling the <see cref="M:System.Diagnostics.SymbolStore.SymWriter.SetUnderlyingWriter(System.IntPtr)" /> method; <see langword="false" /> if a default underlying symbol writer should be created instead.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.SymbolStore.SymWriter" /> class, specifying whether to create an underlying symbol writer.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,8 +83,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Closes the <see cref="T:System.Diagnostics.SymbolStore.SymWriter" /> and commits the symbols to the symbol store.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ After this call, the <xref:System.Diagnostics.SymbolStore.SymWriter> becomes invalid for further updates.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CloseMethod">
@@ -92,8 +108,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Closes the current method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ After a method is closed, you cannot define a symbol from within the method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CloseNamespace">
@@ -110,7 +133,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Closes the most recent namespace.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -130,9 +153,16 @@
         <Parameter Name="endOffset" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="endOffset">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="endOffset">The IL offset just past the last instruction in the scope.</param>
+        <summary>Closes the current lexical scope.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ After a scope is closed, you cannot define a variable from within the method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DefineDocument">
@@ -154,12 +184,12 @@
         <Parameter Name="documentType" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="url">To be added.</param>
-        <param name="language">To be added.</param>
-        <param name="languageVendor">To be added.</param>
-        <param name="documentType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="url">The URL that identifies the document.</param>
+        <param name="language">The document language. This parameter can be <see cref="F:System.Guid.Empty" />.</param>
+        <param name="languageVendor">The identity of the vendor for the document language. This parameter can be <see cref="F:System.Guid.Empty" />.</param>
+        <param name="documentType">The type of the document. This parameter can be <see cref="F:System.Guid.Empty" />.</param>
+        <summary>Defines a source document.</summary>
+        <returns>The <see cref="T:System.Diagnostics.SymbolStore.ISymbolDocumentWriter" /> object that represents the document.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,16 +216,17 @@
         <Parameter Name="addr3" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="parent">To be added.</param>
-        <param name="name">To be added.</param>
-        <param name="attributes">To be added.</param>
-        <param name="signature">To be added.</param>
-        <param name="addrKind">To be added.</param>
-        <param name="addr1">To be added.</param>
-        <param name="addr2">To be added.</param>
-        <param name="addr3">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="parent">This parameter is not used.</param>
+        <param name="name">This parameter is not used.</param>
+        <param name="attributes">This parameter is not used.</param>
+        <param name="signature">This parameter is not used.</param>
+        <param name="addrKind">This parameter is not used.</param>
+        <param name="addr1">This parameter is not used.</param>
+        <param name="addr2">This parameter is not used.</param>
+        <param name="addr3">This parameter is not used.</param>
+        <summary>Throws a <see cref="T:System.NotSupportedException" /> in all cases.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">In all cases.</exception>
       </Docs>
     </Member>
     <Member MemberName="DefineGlobalVariable">
@@ -220,15 +251,16 @@
         <Parameter Name="addr3" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="attributes">To be added.</param>
-        <param name="signature">To be added.</param>
-        <param name="addrKind">To be added.</param>
-        <param name="addr1">To be added.</param>
-        <param name="addr2">To be added.</param>
-        <param name="addr3">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">This parameter is not used.</param>
+        <param name="attributes">This parameter is not used.</param>
+        <param name="signature">This parameter is not used.</param>
+        <param name="addrKind">This parameter is not used.</param>
+        <param name="addr1">This parameter is not used.</param>
+        <param name="addr2">This parameter is not used.</param>
+        <param name="addr3">This parameter is not used.</param>
+        <summary>Throws a <see cref="T:System.NotSupportedException" /> in all cases.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">In all cases.</exception>
       </Docs>
     </Member>
     <Member MemberName="DefineLocalVariable">
@@ -255,17 +287,26 @@
         <Parameter Name="endOffset" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="attributes">To be added.</param>
-        <param name="signature">To be added.</param>
-        <param name="addrKind">To be added.</param>
-        <param name="addr1">To be added.</param>
-        <param name="addr2">To be added.</param>
-        <param name="addr3">To be added.</param>
-        <param name="startOffset">To be added.</param>
-        <param name="endOffset">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="name">The local variable name.</param>
+        <param name="attributes">The local variable attributes specified using the <see cref="T:System.Reflection.FieldAttributes" /> enumerator.</param>
+        <param name="signature">The local variable signature.</param>
+        <param name="addrKind">The address types for <c>addr1</c>, <c>addr2</c>, and <c>addr3</c> using <see cref="T:System.Diagnostics.SymbolStore.SymAddressKind" />.</param>
+        <param name="addr1">The first address for the local variable specification.</param>
+        <param name="addr2">The second address for the local variable specification.</param>
+        <param name="addr3">The third address for the local variable specification.</param>
+        <param name="startOffset">The start offset for the variable. If zero, this parameter is ignored and the variable is defined throughout the entire scope. If nonzero, it falls within the offsets of the current scope.</param>
+        <param name="endOffset">The end offset for the variable. If zero, this parameter is ignored and the variable is defined throughout the entire scope. If nonzero, it falls within the offsets of the current scope.</param>
+        <summary>Defines a single variable in the current lexical scope.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `startOffset` and `endOffset` parameters are optional. If their value is zero, they are ignored and the variable is defined throughout the entire scope. If their value is nonzero, they fall within the offsets of the current scope.  
+  
+ You can call <xref:System.Diagnostics.SymbolStore.SymWriter.DefineLocalVariable%2A> multiple times for a variable of the same name that occurs multiple times in different offset ranges throughout a scope. (In this case, start and end offsets must not overlap.)  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DefineParameter">
@@ -290,15 +331,16 @@
         <Parameter Name="addr3" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="attributes">To be added.</param>
-        <param name="sequence">To be added.</param>
-        <param name="addrKind">To be added.</param>
-        <param name="addr1">To be added.</param>
-        <param name="addr2">To be added.</param>
-        <param name="addr3">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">This parameter is not used.</param>
+        <param name="attributes">This parameter is not used.</param>
+        <param name="sequence">This parameter is not used.</param>
+        <param name="addrKind">This parameter is not used.</param>
+        <param name="addr1">This parameter is not used.</param>
+        <param name="addr2">This parameter is not used.</param>
+        <param name="addr3">This parameter is not used.</param>
+        <summary>Throws a <see cref="T:System.NotSupportedException" /> in all cases.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">In all cases.</exception>
       </Docs>
     </Member>
     <Member MemberName="DefineSequencePoints">
@@ -322,14 +364,21 @@
         <Parameter Name="endColumns" Type="System.Int32[]" />
       </Parameters>
       <Docs>
-        <param name="document">To be added.</param>
-        <param name="offsets">To be added.</param>
-        <param name="lines">To be added.</param>
-        <param name="columns">To be added.</param>
-        <param name="endLines">To be added.</param>
-        <param name="endColumns">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="document">The document object for which the sequence points are being defined.</param>
+        <param name="offsets">The IL offset of the sequence points measured from the beginning of the method.</param>
+        <param name="lines">The starting line numbers of the sequence points.</param>
+        <param name="columns">The starting column numbers of the sequence points.</param>
+        <param name="endLines">The ending line numbers of the sequence points.</param>
+        <param name="endColumns">The ending column numbers of the sequence points.</param>
+        <summary>Defines a group of sequence points within the current method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Sequence points are used to map between source file locations and IL offsets.  Each sequence point consists of an IL offset and source file region, specified by start and end line/column numbers relative to an <xref:System.Diagnostics.SymbolStore.ISymbolDocument> object.  Each element at a specific index of every array corresponds to a specific sequence point. Each line and each column defines the start of a statement within a method. The arrays should be sorted in the increasing order of offsets. The offset is always the offset from the start of the method, in bytes.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -346,7 +395,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Releases the resources used by the current instance of the <see cref="T:System.Diagnostics.SymbolStore.SymWriter" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -371,9 +420,17 @@
         <Parameter Name="A_0" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="A_0">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="A_0">
+          <see langword="true" /> to release managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Called by the <see cref="M:System.Diagnostics.SymbolStore.SymWriter.Dispose" /> and <see cref="M:System.Diagnostics.SymbolStore.SymWriter.Finalize" /> methods to release the managed and unmanaged resources used by the current instance of the <see cref="T:System.Diagnostics.SymbolStore.SymWriter" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called only by the public <xref:System.Diagnostics.SymbolStore.SymWriter.Dispose%2A> and <xref:System.Diagnostics.SymbolStore.SymWriter.Finalize%2A> methods; do not call this method directly.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -390,8 +447,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Releases unmanaged resources and performs other cleanup operations before the <see cref="T:System.Diagnostics.SymbolStore.SymWriter" /> is reclaimed by garbage collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method overrides  <xref:System.Object.Finalize%2A>. Application code should not call this method; an object's `Finalize` method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetWriter">
@@ -431,11 +495,20 @@
         <Parameter Name="fFullBuild" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="emitter">To be added.</param>
-        <param name="filename">To be added.</param>
-        <param name="fFullBuild">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="emitter">The metadata emitter interface.</param>
+        <param name="filename">The file name for which the debugging symbols are written. Some writers require a file name, while others do not. If a file name is specified for a writer that does not use file names, this parameter is ignored.</param>
+        <param name="fFullBuild">
+          <see langword="true" /> indicates that this is a full rebuild; <see langword="false" /> indicates an incremental compilation.</param>
+        <summary>Sets the metadata emitter interface to associate with this writer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Diagnostics.SymbolStore.ISymbolWriter.Initialize%2A> also sets the output file name where the debugging symbols are written. This method can be called only once and must be called before any other writer methods are called.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to access unmanaged code.</permission>
       </Docs>
     </Member>
     <Member MemberName="InitWriter">
@@ -454,9 +527,11 @@
         <Parameter Name="noUnderlyingWriter" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="noUnderlyingWriter">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="noUnderlyingWriter">
+          <see langword="true" /> if an underlying symbol writer will be provided by calling the <see cref="M:System.Diagnostics.SymbolStore.SymWriter.SetUnderlyingWriter(System.IntPtr)" /> method; <see langword="false" /> if a default underlying symbol writer should be created instead.</param>
+        <summary>Initializes the symbol writer. This method should not be called directly; it is called by the constructor.</summary>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to access unmanaged code.</permission>
       </Docs>
     </Member>
     <Member MemberName="OpenMethod">
@@ -475,9 +550,16 @@
         <Parameter Name="method" Type="System.Diagnostics.SymbolStore.SymbolToken" />
       </Parameters>
       <Docs>
-        <param name="method">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="method">The metadata token for the method to be opened.</param>
+        <summary>Opens a method in which to place symbol information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The specified method becomes the current method for calls to define sequence points, parameters, and lexical scopes. There is an implicit lexical scope around the entire method. Reopening a method that has been previously closed erases any previously defined symbols for the method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OpenNamespace">
@@ -496,9 +578,16 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the new namespace.</param>
+        <summary>Opens a new namespace.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call this method before defining methods or variables that exist within a namespace. Namespaces can be nested.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OpenScope">
@@ -517,10 +606,19 @@
         <Parameter Name="startOffset" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="startOffset">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="startOffset">The IL offset in bytes from the beginning of the method to the first instruction in the lexical scope.</param>
+        <summary>Opens a new lexical scope in the current method.</summary>
+        <returns>An opaque scope identifier that can be used with <see cref="M:System.Diagnostics.SymbolStore.SymWriter.SetScopeRange(System.Int32,System.Int32,System.Int32)" /> to define the start and end offsets of a scope at a later time. In this case, the offsets passed to <see cref="M:System.Diagnostics.SymbolStore.SymWriter.OpenScope(System.Int32)" /> and <see cref="M:System.Diagnostics.SymbolStore.SymWriter.CloseScope(System.Int32)" /> are ignored. A scope identifier is valid only in the current method.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This scope becomes the new current scope and is pushed onto a stack of scopes. Scopes must form a hierarchy. Siblings are not allowed to overlap.  
+  
+ Scope identifiers are only valid in the current method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetMethodSourceRange">
@@ -544,14 +642,15 @@
         <Parameter Name="endColumn" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="startDoc">To be added.</param>
-        <param name="startLine">To be added.</param>
-        <param name="startColumn">To be added.</param>
-        <param name="endDoc">To be added.</param>
-        <param name="endLine">To be added.</param>
-        <param name="endColumn">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="startDoc">This parameter is not used.</param>
+        <param name="startLine">This parameter is not used.</param>
+        <param name="startColumn">This parameter is not used.</param>
+        <param name="endDoc">This parameter is not used.</param>
+        <param name="endLine">This parameter is not used.</param>
+        <param name="endColumn">This parameter is not used.</param>
+        <summary>Throws a <see cref="T:System.NotSupportedException" /> in all cases.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">In all cases.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetScopeRange">
@@ -572,10 +671,10 @@
         <Parameter Name="endOffset" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="scopeID">To be added.</param>
-        <param name="startOffset">To be added.</param>
-        <param name="endOffset">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="scopeID">The identifier of the lexical scope returned by the <see cref="M:System.Diagnostics.SymbolStore.SymWriter.OpenScope(System.Int32)" /> method.</param>
+        <param name="startOffset">The IL offset of the beginning of the lexical scope.</param>
+        <param name="endOffset">The IL offset of the end of the lexical scope.</param>
+        <summary>Defines the offset range for the specified lexical scope.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -597,11 +696,18 @@
         <Parameter Name="data" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="parent">To be added.</param>
-        <param name="name">To be added.</param>
-        <param name="data">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="parent">The metadata token for which the attribute is being defined.</param>
+        <param name="name">The attribute name.</param>
+        <param name="data">The attribute value.</param>
+        <summary>Defines an attribute when given the attribute name and the attribute value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Diagnostics.SymbolStore.SymWriter.SetSymAttribute%2A> method is only associated with symbolic information and is not a metadata custom attribute.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetUnderlyingWriter">
@@ -620,9 +726,17 @@
         <Parameter Name="underlyingWriter" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="underlyingWriter">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="underlyingWriter">An <see cref="T:System.IntPtr" /> type pointer to code that is the underlying writer.</param>
+        <summary>Sets the underlying [ISymUnmanagedWriter Interface](../Topic/ISymUnmanagedWriter%20Interface.md) (the corresponding unmanaged API) that a managed <see cref="T:System.Diagnostics.SymbolStore.SymWriter" /> uses to emit symbols.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The underlying [ISymUnmanagedWriter Interface](../Topic/ISymUnmanagedWriter%20Interface.md) (the corresponding unmanaged API) interface represents a symbol writer for managed code. The interface provides methods to define documents, sequence points, lexical scopes, and variables.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to access unmanaged code.</permission>
       </Docs>
     </Member>
     <Member MemberName="SetUserEntryPoint">
@@ -641,9 +755,16 @@
         <Parameter Name="entryMethod" Type="System.Diagnostics.SymbolStore.SymbolToken" />
       </Parameters>
       <Docs>
-        <param name="entryMethod">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="entryMethod">The metadata token for the method that is the user entry point.</param>
+        <summary>Identifies the user-defined method as the entry point for the current module.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is normally the main method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UsingNamespace">
@@ -662,9 +783,16 @@
         <Parameter Name="fullName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="fullName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="fullName">The fully qualified name of the namespace.</param>
+        <summary>Specifies that the given, fully qualified namespace name is used within the open lexical scope.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Closing the current scope prevents this scope from using the namespace. The namespace remains in use in all scopes that inherit from the current open scope.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

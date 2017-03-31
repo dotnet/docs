@@ -11,8 +11,8 @@
   </TypeParameters>
   <Interfaces />
   <Docs>
-    <typeparam name="TValue">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="TValue">[!INCLUDE[cpp_iter_arg](~/includes/cpp-iter-arg-md.md)]</typeparam>
+    <summary>Interface for a container that supports both forward and backward iteration. Containers that implement bidirectional iteration support the following operations: moving forward one position by calling <c>operator++</c>, and moving backward one position by calling <c>operator--</c>.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members />

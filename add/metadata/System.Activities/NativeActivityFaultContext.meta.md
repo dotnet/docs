@@ -1,9 +1,13 @@
 ---
 uid: System.Activities.NativeActivityFaultContext
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.NativeActivityFaultContext.HandleFault
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

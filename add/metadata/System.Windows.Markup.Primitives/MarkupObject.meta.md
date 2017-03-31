@@ -1,29 +1,29 @@
 ---
 uid: System.Windows.Markup.Primitives.MarkupObject
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Primitives.MarkupObject.Instance
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Primitives.MarkupObject.AssignRootContext(System.Windows.Markup.IValueSerializerContext)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Primitives.MarkupObject.Properties
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Primitives.MarkupObject.ObjectType
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Primitives.MarkupObject.Attributes
-internalonly: False
+manager: "martinek"
 ---

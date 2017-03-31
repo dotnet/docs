@@ -16,8 +16,20 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the metadata attribute that Web server controls use to indicate support for event validation. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Event validation prevents forged postbacks to an ASP.NET Web page and can be enabled through the `EnableEventValidation` page directive.  
+  
+ For more information, see <xref:System.Web.UI.Page.EnableEventValidation%2A>. For more information about attributes, see [Attributes](../Topic/Extending%20Metadata%20Using%20Attributes.md).  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>If you do not define the <see cref="T:System.Web.UI.SupportsEventValidationAttribute" /> attribute, your custom control does not automatically participate in event validation. However, your control can explicitly call <see cref="M:System.Web.UI.ClientScriptManager.ValidateEvent(System.String)" />. If you handle event registration and validation, call <see cref="M:System.Web.UI.ClientScriptManager.ValidateEvent(System.String)" />, and then you do not need to define this attribute on the control.</para>
+    </block>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +43,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.SupportsEventValidationAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

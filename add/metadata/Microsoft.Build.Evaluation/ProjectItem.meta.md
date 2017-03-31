@@ -1,84 +1,101 @@
 ---
 uid: Microsoft.Build.Evaluation.ProjectItem
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Evaluation.ProjectItem.UnevaluatedInclude
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Evaluation.ProjectItem.RemoveMetadata(System.String)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Evaluation.ProjectItem.GetMetadata(System.String)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Evaluation.ProjectItem.Xml
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Evaluation.ProjectItem.EvaluatedInclude
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Evaluation.ProjectItem.IsImported
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Evaluation.ProjectItem.Project
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Evaluation.ProjectItem.ItemType
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Evaluation.ProjectItem.MetadataCount
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Evaluation.ProjectItem.GetMetadataValue(System.String)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Evaluation.ProjectItem.HasMetadata(System.String)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Evaluation.ProjectItem.DirectMetadataCount
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Evaluation.ProjectItem.Rename(System.String)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Evaluation.ProjectItem.DirectMetadata
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Evaluation.ProjectItem.Metadata
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Evaluation.ProjectItem.SetMetadataValue(System.String,System.String)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

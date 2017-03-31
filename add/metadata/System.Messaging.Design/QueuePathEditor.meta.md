@@ -1,19 +1,27 @@
 ---
 uid: System.Messaging.Design.QueuePathEditor
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Design.QueuePathEditor.#ctor
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Design.QueuePathEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Design.QueuePathEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)
-internalonly: False
+manager: "tyoung"
+---
+
+---
+uid: System.Messaging.Design.QueuePathEditor.GetEditStyle
+---
+
+---
+uid: System.Messaging.Design.QueuePathEditor.EditValue
 ---

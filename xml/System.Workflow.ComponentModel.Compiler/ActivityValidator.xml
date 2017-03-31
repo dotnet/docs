@@ -16,8 +16,25 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Derivative of <see cref="T:System.Workflow.ComponentModel.Compiler.DependencyObjectValidator" /> that is a base class for all activity validator components.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+   
+  
+## Examples  
+ The following example shows a complete <xref:System.Workflow.ComponentModel.Compiler.ActivityValidator> used for a custom activity. The custom activity is a `ConsoleWriteLineActivity` activity that has a single dependency property named `Msg` of type <xref:System.String>. The validator ensures that the `Msg` property is set. If it is not set, the compiler displays an error when the <xref:System.Workflow.ComponentModel.Compiler.ActivityValidator.Validate%2A> method is called on the <xref:System.Workflow.ComponentModel.Compiler.ActivityValidator> and the compilation fails.  
+  
+ [!code-csharp[wf_activities_project#1](~/samples/snippets/csharp/VS_Snippets_CFX/wf_activities_project/cs/consolewritelineactivity.cs#1)]
+ [!code-vb[wf_activities_project#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_activities_project/vb/consolewritelineactivity.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +48,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.ActivityValidator" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,11 +69,28 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="manager">To be added.</param>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="manager">The <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationManager" /> associated with validation.</param>
+        <param name="obj">The <see cref="T:System.Workflow.ComponentModel.Activity" /> to be validated.</param>
+        <summary>Verifies that the given activity is valid.</summary>
+        <returns>A <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" /> object that contains any errors or warnings that occurred during validation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method calls <xref:System.Workflow.ComponentModel.Compiler.Validator.ValidateProperties%2A> to validate the properties of the <xref:System.Workflow.ComponentModel.Activity>.  
+  
+ This method only validates the uniqueness of the <xref:System.Workflow.ComponentModel.Activity.Name%2A> for the <xref:System.Workflow.ComponentModel.Activity> if the <xref:System.Workflow.ComponentModel.Activity> is not a root <xref:System.Workflow.ComponentModel.Activity>.  
+  
+   
+  
+## Examples  
+ The following example shows how to override the <xref:System.Workflow.ComponentModel.Compiler.ActivityValidator.Validate%2A> method for an <xref:System.Workflow.ComponentModel.Compiler.ActivityValidator> used for a custom activity that has a single dependency property named `Msg` of type <xref:System.String>. The custom validator ensures that the `Msg` property is set. If it is not set, the compiler displays an error when the <xref:System.Workflow.ComponentModel.Compiler.ActivityValidator.Validate%2A> method is called on the <xref:System.Workflow.ComponentModel.Compiler.ActivityValidator> and the compilation fails.  
+  
+ [!code-csharp[wf_activities_project#3](~/samples/snippets/csharp/VS_Snippets_CFX/wf_activities_project/cs/consolewritelineactivity.cs#3)]
+ [!code-vb[wf_activities_project#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_activities_project/vb/consolewritelineactivity.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

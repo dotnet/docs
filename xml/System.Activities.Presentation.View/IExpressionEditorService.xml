@@ -8,8 +8,32 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Creates or closes expression editors.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An expression editor is a Visual Basic control used to edit expressions inside Visual Studio. This control provides a full-fledged IDE editing experience, including IntelliSense, colorization, ParamInfo, error squiggles, among other features.  
+  
+ The <xref:System.Activities.Presentation.View.IExpressionEditorService> can also be used to manage instances of custom expression editors. To register a custom expression editor, you must publish the <xref:System.Activities.Presentation.View.IExpressionEditorService> using the following code :  
+  
+ `this.expressionEditorService = new ExpressionEditorService();`  
+  
+ `this.workflowDesigner.Context.Services.Publish<IExpressionEditorService>(this.expressionEditorService);`  
+  
+ An expression editor is created when an <xref:System.Activities.Presentation.View.ExpressionTextBox> instance gains focus and is destroyed on losing focus of a valid expression, or on reloading of the designer.  
+  
+ The default expression editor is not available for use in rehosted applications. If the default expression editor is used in a rehosted application, a text box is available for editing. However, custom expression editors can be used in a rehosted application by publishing the <xref:System.Activities.Presentation.View.IExpressionEditorService> in the application.  
+  
+ If you are using an <xref:System.Activities.Presentation.View.ExpressionTextBox> control in a custom activity designer, it is not necessary to create and destroy expression editors using this interface. The <xref:System.Activities.Presentation.View.ExpressionTextBox> class manages this for you.  
+  
+   
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_IExpressionEditorService#0](WFD_IExpressionEditorService#0)]  -->  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CloseExpressionEditors">
@@ -26,7 +50,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Closes all the active expression editors.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,12 +73,12 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="assemblies">To be added.</param>
-        <param name="importedNamespaces">To be added.</param>
-        <param name="variables">To be added.</param>
-        <param name="text">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="assemblies">Used to set the context for the editor session.</param>
+        <param name="importedNamespaces">The imported namespaces to be used by the expression editor.</param>
+        <param name="variables">Local variables for the expression editor.</param>
+        <param name="text">A string used to populate the expression editor.</param>
+        <summary>Creates a new expression editor.</summary>
+        <returns>Returns a<see cref="T:System.Activities.Presentation.View.IExpressionEditorInstance" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,13 +102,13 @@
         <Parameter Name="expressionType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="assemblies">To be added.</param>
-        <param name="importedNamespaces">To be added.</param>
-        <param name="variables">To be added.</param>
-        <param name="text">To be added.</param>
-        <param name="expressionType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="assemblies">The local and referenced assemblies in the environment.</param>
+        <param name="importedNamespaces">The imported namespaces used by the expression editor.</param>
+        <param name="variables">Local variables for the expression editor.</param>
+        <param name="text">A string used to populate the expression editor.</param>
+        <param name="expressionType">The type of the expression.</param>
+        <summary>Creates a new expression editor using the specified assemblies, imported namespaces, variables, expression text, and expression type.</summary>
+        <returns>A new instance of the <see cref="T:System.Activities.Presentation.View.IExpressionEditorInstance" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,13 +132,13 @@
         <Parameter Name="initialSize" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="assemblies">To be added.</param>
-        <param name="importedNamespaces">To be added.</param>
-        <param name="variables">To be added.</param>
-        <param name="text">To be added.</param>
-        <param name="initialSize">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="assemblies">The local and referenced assemblies in the environment.</param>
+        <param name="importedNamespaces">The imported namespaces used by the expression editor.</param>
+        <param name="variables">Local variables for the expression editor.</param>
+        <param name="text">A string used to populate the expression editor.</param>
+        <param name="initialSize">The initial height and width of the expression editor control.</param>
+        <summary>Creates a new expression editor using the specified assemblies, imported namespaces, variables, expression text, and the initial size.</summary>
+        <returns>A new instance of the <see cref="T:System.Activities.Presentation.View.IExpressionEditorInstance" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -139,14 +163,14 @@
         <Parameter Name="initialSize" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="assemblies">To be added.</param>
-        <param name="importedNamespaces">To be added.</param>
-        <param name="variables">To be added.</param>
-        <param name="text">To be added.</param>
-        <param name="expressionType">To be added.</param>
-        <param name="initialSize">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="assemblies">The local and referenced assemblies in the environment.</param>
+        <param name="importedNamespaces">The imported namespaces used by the expression editor.</param>
+        <param name="variables">Local variables for the expression editor.</param>
+        <param name="text">A string used to populate the expression editor.</param>
+        <param name="expressionType">The type of the expression.</param>
+        <param name="initialSize">The initial height and width of the expression editor control.</param>
+        <summary>Creates a new expression editor using the specified assemblies, imported namespaces, variables, expression text, expression type, and the initial size.</summary>
+        <returns>A new instance of the <see cref="T:System.Activities.Presentation.View.IExpressionEditorInstance" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,9 +191,9 @@
         <Parameter Name="importedNamespaces" Type="System.Activities.Presentation.Hosting.ImportedNamespaceContextItem" />
       </Parameters>
       <Docs>
-        <param name="assemblies">To be added.</param>
-        <param name="importedNamespaces">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="assemblies">Used to set the context for the editor session.</param>
+        <param name="importedNamespaces">The imported namespaces used by the expression editor.</param>
+        <summary>Updates the context for the editing session.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

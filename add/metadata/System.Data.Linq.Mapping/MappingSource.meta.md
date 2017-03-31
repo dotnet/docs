@@ -1,19 +1,27 @@
 ---
 uid: System.Data.Linq.Mapping.MappingSource
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Linq.Mapping.MappingSource.GetModel(System.Type)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Linq.Mapping.MappingSource.CreateModel(System.Type)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Linq.Mapping.MappingSource.#ctor
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

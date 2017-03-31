@@ -1,14 +1,20 @@
 ---
 uid: System.AddIn.Contract.Automation.RemoteMemberData
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.AddIn.Contract.Automation.RemoteMemberData.DeclaringType
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.AddIn.Contract.Automation.RemoteMemberData.Name
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

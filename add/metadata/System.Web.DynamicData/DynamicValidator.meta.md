@@ -1,44 +1,53 @@
 ---
 uid: System.Web.DynamicData.DynamicValidator
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.DynamicValidator.ControlPropertiesValid
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.DynamicValidator.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.DynamicValidator.Column
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.DynamicValidator.ValidationException
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.DynamicValidator.ValidateException(System.Exception)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.DynamicValidator.ColumnName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.DynamicValidator.EvaluateIsValid
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.DynamicValidator.OnInit(System.EventArgs)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

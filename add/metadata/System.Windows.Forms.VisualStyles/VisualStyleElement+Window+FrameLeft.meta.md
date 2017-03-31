@@ -1,14 +1,19 @@
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.Window.FrameLeft
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.Window.FrameLeft.Inactive
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.Window.FrameLeft.Active
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

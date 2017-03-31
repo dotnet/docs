@@ -1,19 +1,27 @@
 ---
 uid: System.Xml.Xsl.Runtime.DifferenceIterator
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Xsl.Runtime.DifferenceIterator.MoveNext(System.Xml.XPath.XPathNavigator)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Xsl.Runtime.DifferenceIterator.Current
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Xsl.Runtime.DifferenceIterator.Create(System.Xml.Xsl.Runtime.XmlQueryRuntime)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

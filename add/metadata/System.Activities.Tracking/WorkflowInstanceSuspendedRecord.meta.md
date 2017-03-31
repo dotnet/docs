@@ -1,34 +1,55 @@
 ---
 uid: System.Activities.Tracking.WorkflowInstanceSuspendedRecord
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Tracking.WorkflowInstanceSuspendedRecord.ToString
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Tracking.WorkflowInstanceSuspendedRecord.#ctor(System.Guid,System.Int64,System.String,System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Tracking.WorkflowInstanceSuspendedRecord.#ctor(System.Guid,System.String,System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Tracking.WorkflowInstanceSuspendedRecord.#ctor(System.Guid,System.String,System.String,System.Activities.WorkflowIdentity)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Tracking.WorkflowInstanceSuspendedRecord.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Tracking.WorkflowInstanceSuspendedRecord.#ctor(System.Guid,System.Int64,System.String,System.String,System.Activities.WorkflowIdentity)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Tracking.WorkflowInstanceSuspendedRecord.Reason
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -1,99 +1,139 @@
 ---
 uid: System.ServiceModel.Configuration.MsmqElementBase
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.MsmqElementBase.CustomDeadLetterQueue
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.MsmqElementBase.ReceiveErrorHandling
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.MsmqElementBase.UseMsmqTracing
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.MsmqElementBase.ApplyConfiguration(System.ServiceModel.Channels.BindingElement)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.MsmqElementBase.MaxRetryCycles
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.MsmqElementBase.Durable
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.MsmqElementBase.TimeToLive
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.MsmqElementBase.CopyFrom(System.ServiceModel.Configuration.ServiceModelExtensionElement)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.MsmqElementBase.ExactlyOnce
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.MsmqElementBase.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.MsmqElementBase.ReceiveContextEnabled
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.MsmqElementBase.DeadLetterQueue
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.MsmqElementBase.ValidityDuration
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.MsmqElementBase.ReceiveRetryCount
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.MsmqElementBase.RetryCycleDelay
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.MsmqElementBase.InitializeFrom(System.ServiceModel.Channels.BindingElement)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.MsmqElementBase.UseSourceJournal
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.MsmqElementBase.MsmqTransportSecurity
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.MsmqElementBase.Properties
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

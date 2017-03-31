@@ -1,59 +1,90 @@
 ---
 uid: System.DirectoryServices.Protocols.VlvRequestControl
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.Protocols.VlvRequestControl.#ctor(System.Int32,System.Int32,System.Byte[])
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.Protocols.VlvRequestControl.Offset
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.Protocols.VlvRequestControl.BeforeCount
-internalonly: False
----
-
----
-uid: System.DirectoryServices.Protocols.VlvRequestControl.ContextId
-internalonly: False
----
-
----
-uid: System.DirectoryServices.Protocols.VlvRequestControl.#ctor(System.Int32,System.Int32,System.Int32)
-internalonly: False
----
-
----
-uid: System.DirectoryServices.Protocols.VlvRequestControl.GetValue
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.Protocols.VlvRequestControl.#ctor
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.Protocols.VlvRequestControl.ContextId
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.Protocols.VlvRequestControl.#ctor(System.Int32,System.Int32,System.Int32)
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.Protocols.VlvRequestControl.GetValue
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.Protocols.VlvRequestControl.#ctor
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.Protocols.VlvRequestControl.#ctor(System.Int32,System.Int32,System.String)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.Protocols.VlvRequestControl.Target
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.Protocols.VlvRequestControl.AfterCount
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.Protocols.VlvRequestControl.EstimateCount
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---

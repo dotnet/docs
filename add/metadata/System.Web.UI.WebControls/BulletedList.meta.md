@@ -1,114 +1,137 @@
 ---
 uid: System.Web.UI.WebControls.BulletedList
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.BulletedList.Controls
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.BulletedList.RenderContents(System.Web.UI.HtmlTextWriter)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.BulletedList.AutoPostBack
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.BulletedList.RenderBulletText(System.Web.UI.WebControls.ListItem,System.Int32,System.Web.UI.HtmlTextWriter)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.BulletedList.BulletImageUrl
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.BulletedList.BulletStyle
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.BulletedList.SelectedValue
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.BulletedList.OnClick(System.Web.UI.WebControls.BulletedListEventArgs)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.BulletedList.System#Web#UI#IPostBackEventHandler#RaisePostBackEvent(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.BulletedList.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.BulletedList.Render(System.Web.UI.HtmlTextWriter)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.BulletedList.SelectedItem
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.BulletedList.Click
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.BulletedList.AddAttributesToRender(System.Web.UI.HtmlTextWriter)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.BulletedList.SelectedIndex
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.BulletedList.Text
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.BulletedList.RenderWhenDataEmpty
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.BulletedList.RaisePostBackEvent(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.BulletedList.DisplayMode
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.BulletedList.Target
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.BulletedList.TagKey
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.BulletedList.FirstBulletNumber
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

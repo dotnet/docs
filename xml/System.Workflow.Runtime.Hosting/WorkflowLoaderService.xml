@@ -16,8 +16,21 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The abstract base class from which workflow loader services are derived.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ You can derive from this class to create a custom version of the workflow loader.  
+  
+ The workflow loader provides a mechanism for developers to generate workflow definitions, and in turn, instances from other XML formats that are not extensible Application Markup Language (XAML). The user is responsible for parsing their unique XML format, generating an activity tree, and providing the root of the activity tree to the workflow runtime for execution.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +44,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>When implemented in a derived class, initializes a new instance of the <see cref="T:System.Workflow.Runtime.Hosting.WorkflowLoaderService" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,9 +64,9 @@
         <Parameter Name="workflowType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="workflowType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="workflowType">The <see cref="T:System.Type" /> of the workflow to create.</param>
+        <summary>Creates a new workflow instance by using the specified workflow <see cref="T:System.Type" />.</summary>
+        <returns>A <see cref="T:System.Workflow.Runtime.WorkflowInstance" /> object that represents the workflow instance created.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,10 +87,10 @@
         <Parameter Name="rulesReader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="workflowDefinitionReader">To be added.</param>
-        <param name="rulesReader">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="workflowDefinitionReader">An <see cref="T:System.Xml.XmlReader" /> that contains the workflow definition.</param>
+        <param name="rulesReader">An <see cref="T:System.Xml.XmlReader" />.</param>
+        <summary>Creates a workflow instance by using the specified <see cref="T:System.Xml.XmlReader" />.</summary>
+        <returns>A <see cref="T:System.Workflow.Runtime.WorkflowInstance" /> object that represents the workflow instance created.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

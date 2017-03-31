@@ -1,24 +1,33 @@
 ---
 uid: System.Windows.Automation.Peers.StatusBarAutomationPeer
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.StatusBarAutomationPeer.GetAutomationControlTypeCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.StatusBarAutomationPeer.GetChildrenCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.StatusBarAutomationPeer.GetClassNameCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.StatusBarAutomationPeer.#ctor(System.Windows.Controls.Primitives.StatusBar)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

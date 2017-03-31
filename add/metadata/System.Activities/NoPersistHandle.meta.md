@@ -1,19 +1,27 @@
 ---
 uid: System.Activities.NoPersistHandle
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.NoPersistHandle.Exit(System.Activities.NativeActivityContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.NoPersistHandle.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.NoPersistHandle.Enter(System.Activities.NativeActivityContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

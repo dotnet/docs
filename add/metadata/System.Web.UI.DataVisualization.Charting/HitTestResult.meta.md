@@ -1,44 +1,53 @@
 ---
 uid: System.Web.UI.DataVisualization.Charting.HitTestResult
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.HitTestResult.ChartArea
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.HitTestResult.Object
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.HitTestResult.ChartElementType
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.HitTestResult.SubObject
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.HitTestResult.Axis
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.HitTestResult.PointIndex
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.HitTestResult.#ctor
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.HitTestResult.Series
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---

@@ -1,14 +1,24 @@
 ---
 uid: System.Web.UI.WebControls.XmlDataSourceView
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.XmlDataSourceView.Select
 ---
 
 ---
 uid: System.Web.UI.WebControls.XmlDataSourceView.#ctor(System.Web.UI.WebControls.XmlDataSource,System.String)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.XmlDataSourceView.Select(System.Web.UI.DataSourceSelectArguments)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

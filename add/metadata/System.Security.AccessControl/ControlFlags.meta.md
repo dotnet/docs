@@ -1,4 +1,6 @@
 ---
 uid: System.Security.AccessControl.ControlFlags
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

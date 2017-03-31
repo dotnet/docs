@@ -1,19 +1,27 @@
 ---
 uid: System.Windows.Media.GeometryHitTestResult
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.GeometryHitTestResult.VisualHit
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.GeometryHitTestResult.IntersectionDetail
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.GeometryHitTestResult.#ctor(System.Windows.Media.Visual,System.Windows.Media.IntersectionDetail)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

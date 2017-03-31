@@ -1,54 +1,71 @@
 ---
 uid: System.Net.Http.Headers.AuthenticationHeaderValue
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.AuthenticationHeaderValue.Parse(System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.AuthenticationHeaderValue.GetHashCode
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Http.Headers.AuthenticationHeaderValue.#ctor
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.AuthenticationHeaderValue.Scheme
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.AuthenticationHeaderValue.#ctor(System.String,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.AuthenticationHeaderValue.System#ICloneable#Clone
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.AuthenticationHeaderValue.TryParse(System.String,System.Net.Http.Headers.AuthenticationHeaderValue@)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.AuthenticationHeaderValue.ToString
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.AuthenticationHeaderValue.Equals(System.Object)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.AuthenticationHeaderValue.Parameter
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.AuthenticationHeaderValue.#ctor(System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

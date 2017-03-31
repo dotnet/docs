@@ -1,59 +1,93 @@
 ---
 uid: System.Windows.Forms.ApplicationContext
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ApplicationContext.Finalize
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ApplicationContext.Dispose(System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ApplicationContext.OnMainFormClosed(System.Object,System.EventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ApplicationContext.MainForm
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ApplicationContext.Dispose
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ApplicationContext.Tag
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ApplicationContext.ThreadExit
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.ApplicationContext.#ctor
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.ApplicationContext.Dispose
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ApplicationContext.Tag
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.ApplicationContext.ThreadExit
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ApplicationContext.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ApplicationContext.ExitThreadCore
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.ApplicationContext.#ctor(System.Windows.Forms.Form)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ApplicationContext.ExitThread
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -1,9 +1,13 @@
 ---
 uid: System.Web.Services.Protocols.ServerType
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Protocols.ServerType.#ctor(System.Type)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

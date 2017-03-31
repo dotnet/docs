@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.Design.WebControls.XmlDesignerDataSourceView
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.XmlDesignerDataSourceView.GetDesignTimeData(System.Int32,System.Boolean@)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.XmlDesignerDataSourceView.Schema
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.XmlDesignerDataSourceView.#ctor(System.Web.UI.Design.WebControls.XmlDataSourceDesigner,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

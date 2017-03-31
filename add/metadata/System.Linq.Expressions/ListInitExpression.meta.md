@@ -1,39 +1,54 @@
 ---
 uid: System.Linq.Expressions.ListInitExpression
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.Expressions.ListInitExpression.Reduce
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.Expressions.ListInitExpression.Initializers
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.Expressions.ListInitExpression.Update(System.Linq.Expressions.NewExpression,System.Collections.Generic.IEnumerable{System.Linq.Expressions.ElementInit})
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.Expressions.ListInitExpression.CanReduce
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.Expressions.ListInitExpression.Type
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.Expressions.ListInitExpression.NewExpression
-internalonly: False
+ms.author: "billchi"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Linq.Expressions.ListInitExpression.NodeType
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---

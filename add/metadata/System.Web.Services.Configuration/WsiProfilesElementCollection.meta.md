@@ -1,59 +1,101 @@
 ---
 uid: System.Web.Services.Configuration.WsiProfilesElementCollection
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Configuration.WsiProfilesElementCollection.Item(System.Object)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Web.Services.Configuration.WsiProfilesElementCollection.RemoveAt
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Configuration.WsiProfilesElementCollection.IndexOf(System.Web.Services.Configuration.WsiProfilesElement)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Web.Services.Configuration.WsiProfilesElementCollection.CopyTo
 ---
 
 ---
 uid: System.Web.Services.Configuration.WsiProfilesElementCollection.Item(System.Int32)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Configuration.WsiProfilesElementCollection.RemoveAt(System.Object)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Configuration.WsiProfilesElementCollection.Remove(System.Web.Services.Configuration.WsiProfilesElement)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Configuration.WsiProfilesElementCollection.Add(System.Web.Services.Configuration.WsiProfilesElement)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Configuration.WsiProfilesElementCollection.CopyTo(System.Web.Services.Configuration.WsiProfilesElement[],System.Int32)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Web.Services.Configuration.WsiProfilesElementCollection.Item
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Configuration.WsiProfilesElementCollection.RemoveAt(System.Int32)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Configuration.WsiProfilesElementCollection.ContainsKey(System.Object)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Configuration.WsiProfilesElementCollection.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Configuration.WsiProfilesElementCollection.Clear
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

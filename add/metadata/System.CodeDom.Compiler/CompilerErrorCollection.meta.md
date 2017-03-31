@@ -1,74 +1,118 @@
 ---
 uid: System.CodeDom.Compiler.CompilerErrorCollection
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.Compiler.CompilerErrorCollection.HasWarnings
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.Compiler.CompilerErrorCollection.Remove(System.CodeDom.Compiler.CompilerError)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.Compiler.CompilerErrorCollection.Add(System.CodeDom.Compiler.CompilerError)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.Compiler.CompilerErrorCollection.Contains(System.CodeDom.Compiler.CompilerError)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.Compiler.CompilerErrorCollection.Item(System.Int32)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.Compiler.CompilerErrorCollection.IndexOf(System.CodeDom.Compiler.CompilerError)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.Compiler.CompilerErrorCollection.AddRange(System.CodeDom.Compiler.CompilerError[])
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.Compiler.CompilerErrorCollection.#ctor(System.CodeDom.Compiler.CompilerError[])
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.Compiler.CompilerErrorCollection.#ctor
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.Compiler.CompilerErrorCollection.#ctor(System.CodeDom.Compiler.CompilerErrorCollection)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.Compiler.CompilerErrorCollection.Insert(System.Int32,System.CodeDom.Compiler.CompilerError)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.Compiler.CompilerErrorCollection.#ctor
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.Compiler.CompilerErrorCollection.HasErrors
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.Compiler.CompilerErrorCollection.AddRange(System.CodeDom.Compiler.CompilerErrorCollection)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.Compiler.CompilerErrorCollection.AddRange
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.Compiler.CompilerErrorCollection.CopyTo(System.CodeDom.Compiler.CompilerError[],System.Int32)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

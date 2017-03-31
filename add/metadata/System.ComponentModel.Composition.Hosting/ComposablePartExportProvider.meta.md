@@ -1,44 +1,76 @@
 ---
 uid: System.ComponentModel.Composition.Hosting.ComposablePartExportProvider
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.ComposablePartExportProvider.Dispose(System.Boolean)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.ComposablePartExportProvider.Compose(System.ComponentModel.Composition.Hosting.CompositionBatch)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.ComposablePartExportProvider.Dispose
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Composition.Hosting.ComposablePartExportProvider.Dispose
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.ComposablePartExportProvider.GetExportsCore(System.ComponentModel.Composition.Primitives.ImportDefinition,System.ComponentModel.Composition.Hosting.AtomicComposition)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.ComposablePartExportProvider.#ctor
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.ComposablePartExportProvider.#ctor(System.ComponentModel.Composition.Hosting.CompositionOptions)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Composition.Hosting.ComposablePartExportProvider.#ctor
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.ComposablePartExportProvider.#ctor(System.Boolean)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.ComposablePartExportProvider.SourceProvider
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

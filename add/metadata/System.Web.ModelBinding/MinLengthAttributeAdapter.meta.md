@@ -1,9 +1,13 @@
 ---
 uid: System.Web.ModelBinding.MinLengthAttributeAdapter
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ModelBinding.MinLengthAttributeAdapter.#ctor(System.Web.ModelBinding.ModelMetadata,System.Web.ModelBinding.ModelBindingExecutionContext,System.ComponentModel.DataAnnotations.MinLengthAttribute)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

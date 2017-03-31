@@ -1,4 +1,5 @@
 ---
 uid: System.Net.DownloadStringCompletedEventHandler
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

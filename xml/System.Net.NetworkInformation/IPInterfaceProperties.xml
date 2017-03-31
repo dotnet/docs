@@ -20,8 +20,25 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides information about network interfaces that support Internet Protocol version 4 (IPv4) or Internet Protocol version 6 (IPv6).</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class provides access to configuration and address information for network interfaces that support IPv4 or IPv6. You do not create instances of this class; they are returned by the <xref:System.Net.NetworkInformation.NetworkInterface.GetIPProperties%2A> method.  
+  
+ To access IPv4-specific properties, use the object returned by the <xref:System.Net.NetworkInformation.IPInterfaceProperties.GetIPv4Properties%2A> method. To access IPv6-specific properties, use the object returned by the <xref:System.Net.NetworkInformation.IPInterfaceProperties.GetIPv6Properties%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example displays address information.  
+  
+ [!code-cpp[NclNetInfoReport#8](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfoReport/CPP/netinfo.cpp#8)]
+ [!code-csharp[NclNetInfoReport#8](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfoReport/CS/netinfo.cs#8)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,8 +61,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.NetworkInformation.IPInterfaceProperties" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor can be called only from classes that derive from <xref:System.Net.NetworkInformation.IPInterfaceProperties>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AnycastAddresses">
@@ -70,9 +94,25 @@
         <ReturnType>System.Net.NetworkInformation.IPAddressInformationCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the anycast IP addresses assigned to this interface.</summary>
+        <value>An <see cref="T:System.Net.NetworkInformation.IPAddressInformationCollection" /> that contains the anycast addresses for this interface.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An anycast address identifies multiple computers. Packets sent to an anycast address are sent to one of the computers identified by the address. Anycast addressing is an IPv6 feature used to update router tables for a group of hosts.  
+  
+   
+  
+## Examples  
+ The following code example displays the anycast addresses for the network interfaces on the local computer.  
+  
+ [!code-cpp[NclNetInfo2#43](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#43)]
+ [!code-csharp[NclNetInfo2#43](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#43)]
+ [!code-vb[NclNetInfo2#43](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#43)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DhcpServerAddresses">
@@ -97,9 +137,25 @@
         <ReturnType>System.Net.NetworkInformation.IPAddressCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the addresses of Dynamic Host Configuration Protocol (DHCP) servers for this interface.</summary>
+        <value>An <see cref="T:System.Net.NetworkInformation.IPAddressCollection" /> that contains the address information for DHCP servers, or an empty array if no servers are found.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Dynamic Host Configuration Protocol (DHCP) allows a computer to obtain a network address from a DHCP server, as opposed to using a static (fixed) network address. A DHCP server does not permanently assign addresses; instead, it temporarily uses one of a number of available addresses to the computer.  
+  
+   
+  
+## Examples  
+ The following code example displays the DHCP address information for the network interfaces on the local computer.  
+  
+ [!code-cpp[NclNetInfo2#46](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#46)]
+ [!code-csharp[NclNetInfo2#46](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#46)]
+ [!code-vb[NclNetInfo2#46](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#46)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DnsAddresses">
@@ -124,9 +180,25 @@
         <ReturnType>System.Net.NetworkInformation.IPAddressCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the addresses of Domain Name System (DNS) servers for this interface.</summary>
+        <value>A <see cref="T:System.Net.NetworkInformation.IPAddressCollection" /> that contains the DNS server addresses.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ DNS is a hierarchical naming system used to map host names to IP addresses.  
+  
+   
+  
+## Examples  
+ The following code example displays the DNS addresses for the network interfaces on the local computer.  
+  
+ [!code-cpp[NclNetInfo2#42](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#42)]
+ [!code-csharp[NclNetInfo2#42](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#42)]
+ [!code-vb[NclNetInfo2#42](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#42)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DnsSuffix">
@@ -151,9 +223,26 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the Domain Name System (DNS) suffix associated with this interface.</summary>
+        <value>A <see cref="T:System.String" /> that contains the DNS suffix for this interface, or <see cref="F:System.String.Empty" /> if there is no DNS suffix for the interface.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The DNS suffix identifies the domain name (for example, "contoso.com") that is appended to an unqualified host name to obtain a fully qualified domain name (FQDN) suitable for a DNS name query. For example, if the local machine has "contoso.com" as its <xref:System.Net.NetworkInformation.IPInterfaceProperties.DnsSuffix%2A>, and must resolve the unqualified host name "www", the FQDN to query is "www.contoso.com".  
+  
+   
+  
+## Examples  
+ The following code example displays the DNS suffix.  
+  
+ [!code-cpp[NclNetInfo2#41](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#41)]
+ [!code-csharp[NclNetInfo2#41](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#41)]
+ [!code-vb[NclNetInfo2#41](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#41)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.PlatformNotSupportedException">This property is not valid on computers running operating systems earlier than Windows 2000.</exception>
       </Docs>
     </Member>
     <Member MemberName="GatewayAddresses">
@@ -178,9 +267,25 @@
         <ReturnType>System.Net.NetworkInformation.GatewayIPAddressInformationCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the IPv4 network gateway addresses for this interface.</summary>
+        <value>An <see cref="T:System.Net.NetworkInformation.GatewayIPAddressInformationCollection" /> that contains the address information for network gateways, or an empty array if no gateways are found.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Gateways that implement the Internet Protocol Version 4 (IPv4) to forward packets between networks are returned by this property.  
+  
+   
+  
+## Examples  
+ The following code example displays the gateway addresses for the network interfaces on the local computer.  
+  
+ [!code-cpp[NclNetInfo2#47](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#47)]
+ [!code-csharp[NclNetInfo2#47](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#47)]
+ [!code-vb[NclNetInfo2#47](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#47)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetIPv4Properties">
@@ -206,9 +311,19 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Provides Internet Protocol version 4 (IPv4) configuration data for this network interface.</summary>
+        <returns>An <see cref="T:System.Net.NetworkInformation.IPv4InterfaceProperties" /> object that contains IPv4 configuration data, or <see langword="null" /> if no data is available for the interface.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property returns `null` for <xref:System.Net.NetworkInformation.NetworkInterfaceType> interfaces.  
+  
+ For a detailed description of the information available for an interface that supports IPv4, see the <xref:System.Net.NetworkInformation.IPv4InterfaceProperties> class documentation. Note that the object returned by the <xref:System.Net.NetworkInformation.IPInterfaceProperties.GetIPv4Properties%2A> method reflects the configuration as of the time the object is created. This information is not updated dynamically.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Net.NetworkInformation.NetworkInformationException">The interface does not support the IPv4 protocol.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetIPv6Properties">
@@ -234,9 +349,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Provides Internet Protocol version 6 (IPv6) configuration data for this network interface.</summary>
+        <returns>An <see cref="T:System.Net.NetworkInformation.IPv6InterfaceProperties" /> object that contains IPv6 configuration data.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For a detailed description of the information available for an interface that supports IPv6, see the <xref:System.Net.NetworkInformation.IPv6InterfaceProperties> documentation. Note that the object returned by the <xref:System.Net.NetworkInformation.IPInterfaceProperties.GetIPv6Properties%2A> method reflects the configuration as of the time the object is created. This information is not updated dynamically.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Net.NetworkInformation.NetworkInformationException">The interface does not support the IPv6 protocol.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsDnsEnabled">
@@ -261,9 +384,26 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a <see cref="T:System.Boolean" /> value that indicates whether NetBt is configured to use DNS name resolution on this interface.</summary>
+        <value>
+          <see langword="true" /> if NetBt is configured to use DNS name resolution on this interface; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ DNS is a hierarchical naming system used to map host names to IP addresses.  
+  
+   
+  
+## Examples  
+ The following code example displays the value of this property.  
+  
+ [!code-cpp[NclNetInfo2#41](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#41)]
+ [!code-csharp[NclNetInfo2#41](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#41)]
+ [!code-vb[NclNetInfo2#41](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#41)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsDynamicDnsEnabled">
@@ -288,9 +428,26 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a <see cref="T:System.Boolean" /> value that indicates whether this interface is configured to automatically register its IP address information with the Domain Name System (DNS).</summary>
+        <value>
+          <see langword="true" /> if this interface is configured to automatically register a mapping between its dynamic IP address and static domain names; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Dynamic DNS enables a client to inform the DNS servers that its dynamic IP address is mapped to its static host name.  
+  
+   
+  
+## Examples  
+ The following code example displays the value of this property.  
+  
+ [!code-cpp[NclNetInfo2#41](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#41)]
+ [!code-csharp[NclNetInfo2#41](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#41)]
+ [!code-vb[NclNetInfo2#41](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#41)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MulticastAddresses">
@@ -315,9 +472,25 @@
         <ReturnType>System.Net.NetworkInformation.MulticastIPAddressInformationCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the multicast addresses assigned to this interface.</summary>
+        <value>An <see cref="T:System.Net.NetworkInformation.MulticastIPAddressInformationCollection" /> that contains the multicast addresses for this interface.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A multicast address identifies multiple computers. Packets sent to a multicast address are sent to all computers identified by the address.  
+  
+   
+  
+## Examples  
+ The following code example displays the multicast addresses for the network interfaces on the local computer.  
+  
+ [!code-cpp[NclNetInfo2#44](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#44)]
+ [!code-csharp[NclNetInfo2#44](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#44)]
+ [!code-vb[NclNetInfo2#44](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#44)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UnicastAddresses">
@@ -342,9 +515,25 @@
         <ReturnType>System.Net.NetworkInformation.UnicastIPAddressInformationCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the unicast addresses assigned to this interface.</summary>
+        <value>An <see cref="T:System.Net.NetworkInformation.UnicastIPAddressInformationCollection" /> that contains the unicast addresses for this interface.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A unicast address identifies a single computer. Packets sent to a unicast address are sent to the computer identified by the address.  
+  
+   
+  
+## Examples  
+ The following code example displays the unicast addresses for the network interfaces on the local computer.  
+  
+ [!code-cpp[NclNetInfo2#45](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#45)]
+ [!code-csharp[NclNetInfo2#45](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#45)]
+ [!code-vb[NclNetInfo2#45](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#45)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WinsServersAddresses">
@@ -369,9 +558,16 @@
         <ReturnType>System.Net.NetworkInformation.IPAddressCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the addresses of Windows Internet Name Service (WINS) servers.</summary>
+        <value>An <see cref="T:System.Net.NetworkInformation.IPAddressCollection" /> that contains the address information for WINS servers, or an empty array if no servers are found.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ WINS provides a distributed database for registering and querying dynamic NetBIOS names to IP address mappings.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,499 +1,599 @@
 ---
 uid: System.Web.UI.WebControls.Wizard
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.HeaderTemplate
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.MoveCompleteCommandName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.SaveControlState
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.StartNavigationTemplate
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.FinishPreviousButtonImageUrl
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.CustomPreviousButtonID
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.CustomFinishButtonID
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.CancelButtonClick
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.AllowNavigationToStep(System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.HeaderPlaceholderId
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.ActiveStepChanged
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.StartNextButtonType
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.LoadControlState(System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.OnInit(System.EventArgs)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.CancelDestinationPageUrl
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.FinishCompleteButtonImageUrl
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.MoveTo(System.Web.UI.WebControls.WizardStepBase)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.FinishPreviousButtonText
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.NextButtonClick
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.OnCancelButtonClick(System.EventArgs)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.HeaderStyle
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.ActiveStep
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.FinishNavigationTemplate
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.StartNextButtonText
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.GetStepType(System.Web.UI.WebControls.WizardStepBase,System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.SideBarTemplate
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.CancelButtonType
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.OnNextButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.GetHistory
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.SideBarButtonStyle
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.FinishPreviousButtonStyle
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.WizardSteps
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.CustomNextButtonID
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.FinishCompleteButtonStyle
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.CellPadding
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.NavigationPlaceholderId
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.FinishCompleteButtonText
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.CancelCommandName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.CancelButtonText
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.SideBarButtonID
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.StartNextButtonID
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.StepNextButtonText
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.OnSideBarButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.TrackViewState
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.FinishPreviousButtonType
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.StartNextButtonStyle
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.FinishButtonID
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.ActiveStepIndex
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.CellSpacing
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.StartNextButtonImageUrl
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.RegisterCommandEvents(System.Web.UI.WebControls.IButtonControl)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.CreateControlCollection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.FinishPreviousButtonID
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.FinishButtonClick
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.PreviousButtonClick
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.StepNextButtonID
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.SaveViewState
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.StepNextButtonStyle
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.StepPreviousButtonID
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.NavigationStyle
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.CancelButtonStyle
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.LoadViewState(System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.StepNavigationTemplate
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.CancelButtonImageUrl
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.SkipLinkText
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.HeaderText
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.NavigationButtonStyle
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.FinishCompleteButtonType
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.StepPreviousButtonType
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.DisplaySideBar
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.DataListID
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.MovePreviousCommandName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.StepNextButtonType
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.TagKey
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.OnBubbleEvent(System.Object,System.EventArgs)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.MoveNextCommandName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.SideBarPlaceholderId
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.StepNextButtonImageUrl
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.StepPreviousButtonImageUrl
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.GetDesignModeState
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.SideBarStyle
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.CancelButtonID
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.CreateControlHierarchy
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.OnActiveStepChanged(System.Object,System.EventArgs)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.OnPreviousButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.CreateControlStyle
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.StepStyle
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.StepPreviousButtonText
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.CreateChildControls
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.SideBarButtonClick
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.Render(System.Web.UI.HtmlTextWriter)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.OnFinishButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.StepPreviousButtonStyle
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.LayoutTemplate
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.MoveToCommandName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.WizardStepPlaceholderId
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.DisplayCancelButton
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Wizard.FinishDestinationPageUrl
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

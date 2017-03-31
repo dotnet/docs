@@ -1,34 +1,47 @@
 ---
 uid: System.Web.UI.ImageClickEventArgs
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ImageClickEventArgs.Y
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ImageClickEventArgs.XRaw
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ImageClickEventArgs.X
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.ImageClickEventArgs.#ctor
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ImageClickEventArgs.#ctor(System.Int32,System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ImageClickEventArgs.YRaw
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ImageClickEventArgs.#ctor(System.Int32,System.Int32,System.Double,System.Double)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

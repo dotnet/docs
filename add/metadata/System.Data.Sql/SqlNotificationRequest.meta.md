@@ -1,29 +1,48 @@
 ---
 uid: System.Data.Sql.SqlNotificationRequest
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Sql.SqlNotificationRequest.#ctor
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Sql.SqlNotificationRequest.Options
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Sql.SqlNotificationRequest.#ctor(System.String,System.String,System.Int32)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Sql.SqlNotificationRequest.UserData
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Sql.SqlNotificationRequest.#ctor
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Sql.SqlNotificationRequest.Timeout
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

@@ -1,9 +1,13 @@
 ---
 uid: System.Workflow.Runtime.IWorkBatch
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.IWorkBatch.Add(System.Workflow.Runtime.IPendingWork,System.Object)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

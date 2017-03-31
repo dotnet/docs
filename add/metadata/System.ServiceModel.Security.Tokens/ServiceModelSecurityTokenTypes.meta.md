@@ -1,34 +1,48 @@
 ---
 uid: System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenTypes
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenTypes.AnonymousSslnego
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenTypes.Spnego
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenTypes.SspiCredential
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenTypes.SecureConversation
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenTypes.SecurityContext
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenTypes.MutualSslnego
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

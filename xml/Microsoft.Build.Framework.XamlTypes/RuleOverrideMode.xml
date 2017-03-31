@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Describes a subsequent definition for a rule with the same name.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>Microsoft.Build.Framework.XamlTypes.RuleOverrideMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A subsequent definition for a rule (with the same name) that adds properties to a previous definition.</summary>
       </Docs>
     </Member>
     <Member MemberName="Replace">
@@ -43,7 +43,7 @@
         <ReturnType>Microsoft.Build.Framework.XamlTypes.RuleOverrideMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A subsequent definition for a rule (with the same name) that entirely overrides a previous definition.</summary>
       </Docs>
     </Member>
   </Members>

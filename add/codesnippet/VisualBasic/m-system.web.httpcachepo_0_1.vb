@@ -1,2 +1,0 @@
-Response.Cache.SetSlidingExpiration(True)
-    

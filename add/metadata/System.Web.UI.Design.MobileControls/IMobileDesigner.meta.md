@@ -1,9 +1,13 @@
 ---
 uid: System.Web.UI.Design.MobileControls.IMobileDesigner
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.MobileControls.IMobileDesigner.UpdateRendering
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

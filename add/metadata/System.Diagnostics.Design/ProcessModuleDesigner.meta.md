@@ -1,14 +1,20 @@
 ---
 uid: System.Diagnostics.Design.ProcessModuleDesigner
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.Design.ProcessModuleDesigner.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.Design.ProcessModuleDesigner.PreFilterProperties(System.Collections.IDictionary)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

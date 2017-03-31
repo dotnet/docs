@@ -1,34 +1,48 @@
 ---
 uid: System.ServiceModel.Configuration.SslStreamSecurityElement
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.SslStreamSecurityElement.RequireClientCertificate
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.SslStreamSecurityElement.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.SslStreamSecurityElement.SslProtocols
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.SslStreamSecurityElement.CopyFrom(System.ServiceModel.Configuration.ServiceModelExtensionElement)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.SslStreamSecurityElement.ApplyConfiguration(System.ServiceModel.Channels.BindingElement)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.SslStreamSecurityElement.BindingElementType
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

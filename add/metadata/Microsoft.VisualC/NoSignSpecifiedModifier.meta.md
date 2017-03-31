@@ -1,9 +1,11 @@
 ---
 uid: Microsoft.VisualC.NoSignSpecifiedModifier
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.NoSignSpecifiedModifier.#ctor
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---

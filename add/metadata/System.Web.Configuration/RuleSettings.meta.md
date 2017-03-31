@@ -1,59 +1,77 @@
 ---
 uid: System.Web.Configuration.RuleSettings
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.RuleSettings.EventName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.RuleSettings.#ctor(System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.TimeSpan)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.RuleSettings.Profile
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.RuleSettings.Custom
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.RuleSettings.MinInstances
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.RuleSettings.#ctor(System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.TimeSpan,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.RuleSettings.#ctor(System.String,System.String,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Configuration.RuleSettings.#ctor
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.RuleSettings.Provider
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.RuleSettings.MaxLimit
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.RuleSettings.Name
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.RuleSettings.MinInterval
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

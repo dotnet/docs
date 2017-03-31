@@ -1,14 +1,20 @@
 ---
 uid: System.Data.Services.Client.SendingRequestEventArgs
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Services.Client.SendingRequestEventArgs.Request
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Services.Client.SendingRequestEventArgs.RequestHeaders
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

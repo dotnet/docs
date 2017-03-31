@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Media.HitTestFilterCallback
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

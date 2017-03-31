@@ -14,7 +14,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>An enumeration that represents the supported types of text syndication content.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,7 +35,7 @@
         <ReturnType>System.ServiceModel.Syndication.TextSyndicationContentKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>HTML (escaped markup)</summary>
       </Docs>
     </Member>
     <Member MemberName="Plaintext">
@@ -55,7 +55,7 @@
         <ReturnType>System.ServiceModel.Syndication.TextSyndicationContentKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Plain text</summary>
       </Docs>
     </Member>
     <Member MemberName="XHtml">
@@ -75,7 +75,7 @@
         <ReturnType>System.ServiceModel.Syndication.TextSyndicationContentKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>XML (not escaped)</summary>
       </Docs>
     </Member>
   </Members>

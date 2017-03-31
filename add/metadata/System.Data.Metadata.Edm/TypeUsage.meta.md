@@ -1,79 +1,132 @@
 ---
 uid: System.Data.Metadata.Edm.TypeUsage
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Metadata.Edm.TypeUsage.CreateDecimalTypeUsage(System.Data.Metadata.Edm.PrimitiveType)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Metadata.Edm.TypeUsage.CreateBinaryTypeUsage(System.Data.Metadata.Edm.PrimitiveType,System.Boolean,System.Int32)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Metadata.Edm.TypeUsage.EdmType
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Metadata.Edm.TypeUsage.CreateDecimalTypeUsage
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Metadata.Edm.TypeUsage.ToString
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Metadata.Edm.TypeUsage.CreateBinaryTypeUsage(System.Data.Metadata.Edm.PrimitiveType,System.Boolean)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Metadata.Edm.TypeUsage.CreateDefaultTypeUsage(System.Data.Metadata.Edm.EdmType)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Metadata.Edm.TypeUsage.Facets
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Metadata.Edm.TypeUsage.CreateBinaryTypeUsage
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Metadata.Edm.TypeUsage.CreateTimeTypeUsage(System.Data.Metadata.Edm.PrimitiveType,System.Nullable{System.Byte})
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Metadata.Edm.TypeUsage.CreateStringTypeUsage
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Metadata.Edm.TypeUsage.CreateDateTimeOffsetTypeUsage(System.Data.Metadata.Edm.PrimitiveType,System.Nullable{System.Byte})
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Metadata.Edm.TypeUsage.CreateStringTypeUsage(System.Data.Metadata.Edm.PrimitiveType,System.Boolean,System.Boolean)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Metadata.Edm.TypeUsage.IsSubtypeOf(System.Data.Metadata.Edm.TypeUsage)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Metadata.Edm.TypeUsage.BuiltInTypeKind
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Metadata.Edm.TypeUsage.CreateDecimalTypeUsage(System.Data.Metadata.Edm.PrimitiveType,System.Byte,System.Byte)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Metadata.Edm.TypeUsage.CreateStringTypeUsage(System.Data.Metadata.Edm.PrimitiveType,System.Boolean,System.Boolean,System.Int32)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Metadata.Edm.TypeUsage.CreateDateTimeTypeUsage(System.Data.Metadata.Edm.PrimitiveType,System.Nullable{System.Byte})
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

@@ -1,4 +1,5 @@
 ---
 uid: System.Web.UI.INamingContainer
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

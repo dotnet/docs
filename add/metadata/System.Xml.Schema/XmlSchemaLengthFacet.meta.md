@@ -1,9 +1,13 @@
 ---
 uid: System.Xml.Schema.XmlSchemaLengthFacet
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Schema.XmlSchemaLengthFacet.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

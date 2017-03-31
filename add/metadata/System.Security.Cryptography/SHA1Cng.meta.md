@@ -1,14 +1,20 @@
 ---
 uid: System.Security.Cryptography.SHA1Cng
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.SHA1Cng.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.SHA1Cng.Initialize
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

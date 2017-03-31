@@ -1,29 +1,65 @@
 ---
 uid: System.Windows.DurationConverter
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.DurationConverter.ConvertFrom
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.DurationConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.DurationConverter.#ctor
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.DurationConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.DurationConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.DurationConverter.CanConvertTo
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.DurationConverter.CanConvertFrom
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.DurationConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.DurationConverter.ConvertTo
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

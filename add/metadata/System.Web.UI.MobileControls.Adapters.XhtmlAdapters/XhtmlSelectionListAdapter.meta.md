@@ -1,29 +1,45 @@
 ---
 uid: System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlSelectionListAdapter
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlSelectionListAdapter.#ctor
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlSelectionListAdapter.Render(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlSelectionListAdapter.Control
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlSelectionListAdapter.Render
 ---
 
 ---
 uid: System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlSelectionListAdapter.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection,System.Object,System.Boolean@)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlSelectionListAdapter.RenderAsHiddenInputField(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

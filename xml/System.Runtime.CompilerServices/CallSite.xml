@@ -20,7 +20,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>A dynamic call site base class. This type is used as a parameter type to the dynamic site targets.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -46,8 +46,8 @@
         <ReturnType>System.Runtime.CompilerServices.CallSiteBinder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Class responsible for binding dynamic operations on the dynamic site.</summary>
+        <value>The <see cref="T:System.Runtime.CompilerServices.CallSiteBinder" /> object responsible for binding dynamic operations.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,10 +77,10 @@
         <Parameter Name="binder" Type="System.Runtime.CompilerServices.CallSiteBinder" />
       </Parameters>
       <Docs>
-        <param name="delegateType">To be added.</param>
-        <param name="binder">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="delegateType">The call site delegate type.</param>
+        <param name="binder">The call site binder.</param>
+        <summary>Creates a call site with the given delegate type and binder.</summary>
+        <returns>The new call site.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

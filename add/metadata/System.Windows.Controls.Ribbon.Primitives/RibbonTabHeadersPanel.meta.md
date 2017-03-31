@@ -1,159 +1,220 @@
 ---
 uid: System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel.PageDown
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel.OnRender(System.Windows.Media.DrawingContext)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel.VerticalOffset
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel.MouseWheelRight
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel.LineDown
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel.PageUp
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel.SetHorizontalOffset(System.Double)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel.SetVerticalOffset(System.Double)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel.LineUp
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel.MeasureOverride(System.Windows.Size)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel.PageLeft
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel.ExtentHeight
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel.Ribbon
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel.LineRight
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel.ArrangeOverride(System.Windows.Size)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel.ScrollOwner
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel.MouseWheelLeft
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel.MouseWheelUp
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel.MakeVisible(System.Windows.Media.Visual,System.Windows.Rect)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel.PageRight
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel.MouseWheelDown
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel.OnIsItemsHostChanged(System.Boolean,System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel.ViewportHeight
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel.#ctor
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel.CanHorizontallyScroll
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel.CanVerticallyScroll
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel.RibbonProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel.ExtentWidth
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel.ViewportWidth
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel.LineLeft
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel.HorizontalOffset
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

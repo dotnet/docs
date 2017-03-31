@@ -28,8 +28,17 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains functionality to compare nodes for their document order. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class implements `IComparer` and `IComparer<XNode>`.  
+  
+ We recommend that instead of using this class directly, you use the <xref:System.Xml.Linq.Extensions.InDocumentOrder%2A> method. This class is used internally by that method.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -53,8 +62,49 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Linq.XNodeDocumentOrderComparer" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ We recommend that instead of using this class directly, you use the <xref:System.Xml.Linq.Extensions.InDocumentOrder%2A> method. This class is used internally by that method.  
+  
+   
+  
+## Examples  
+ The following example uses of this class to compare the document order for two nodes.  
+  
+```csharp  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XText("Text content."),  
+    new XElement("Child1", "child1 content"),  
+    new XElement("Child2", "child2 content"),  
+    new XElement("Child3", "child3 content"),  
+    new XText("More text content."),  
+    new XElement("Child4", "child4 content"),  
+    new XElement("Child5", "child5 content")  
+);  
+XElement child3 = xmlTree.Element("Child3");  
+XElement child5 = xmlTree.Element("Child5");  
+XNodeDocumentOrderComparer documentOrderComparer = new XNodeDocumentOrderComparer();  
+int val = documentOrderComparer.Compare(child3, child5);  
+if (val == 0)  
+    Console.WriteLine("Child3 is same as Child5");  
+else if (val < 0)  
+    Console.WriteLine("Child3 is before Child5");  
+else  
+    Console.WriteLine("Child3 is after Child5");  
+```  
+  
+ This example produces the following output:  
+  
+```  
+Child3 is before Child5  
+```  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Compare">
@@ -84,11 +134,53 @@
         <Parameter Name="y" Type="System.Xml.Linq.XNode" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">The first <see cref="T:System.Xml.Linq.XNode" /> to compare.</param>
+        <param name="y">The second <see cref="T:System.Xml.Linq.XNode" /> to compare.</param>
+        <summary>Compares two nodes to determine their relative document order.</summary>
+        <returns>An <see cref="T:System.Int32" /> that contains 0 if the nodes are equal; -1 if <paramref name="x" /> is before <paramref name="y" />; 1 if <paramref name="x" /> is after <paramref name="y" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ We recommend that instead of using this class directly, you use the <xref:System.Xml.Linq.Extensions.InDocumentOrder%2A> method. This class is used internally by that method.  
+  
+   
+  
+## Examples  
+ The following example uses this class to compare document order for two nodes.  
+  
+```csharp  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XText("Text content."),  
+    new XElement("Child1", "child1 content"),  
+    new XElement("Child2", "child2 content"),  
+    new XElement("Child3", "child3 content"),  
+    new XText("More text content."),  
+    new XElement("Child4", "child4 content"),  
+    new XElement("Child5", "child5 content")  
+);  
+XElement child3 = xmlTree.Element("Child3");  
+XElement child5 = xmlTree.Element("Child5");  
+XNodeDocumentOrderComparer documentOrderComparer = new XNodeDocumentOrderComparer();  
+int val = documentOrderComparer.Compare(child3, child5);  
+if (val == 0)  
+    Console.WriteLine("Child3 is same as Child5");  
+else if (val < 0)  
+    Console.WriteLine("Child3 is before Child5");  
+else  
+    Console.WriteLine("Child3 is after Child5");  
+```  
+  
+ This example produces the following output:  
+  
+```  
+Child3 is before Child5  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The two nodes do not share a common ancestor.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IComparer.Compare">
@@ -118,11 +210,20 @@
         <Parameter Name="y" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">The first <see cref="T:System.Xml.Linq.XNode" /> to compare.</param>
+        <param name="y">The second <see cref="T:System.Xml.Linq.XNode" /> to compare.</param>
+        <summary>Compares two nodes to determine their relative document order.</summary>
+        <returns>An <see cref="T:System.Int32" /> that contains 0 if the nodes are equal; -1 if <paramref name="x" /> is before <paramref name="y" />; 1 if <paramref name="x" /> is after <paramref name="y" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ We recommend that instead of using this class directly, you use the <xref:System.Xml.Linq.Extensions.InDocumentOrder%2A> method. This class is used internally by that method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The two nodes do not share a common ancestor.</exception>
+        <exception cref="T:System.ArgumentException">The two nodes are not derived from <see cref="T:System.Xml.Linq.XNode" />.</exception>
       </Docs>
     </Member>
   </Members>

@@ -1,39 +1,69 @@
 ---
 uid: System.Xml.XmlDictionary
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.XmlDictionary.TryLookup(System.Int32,System.Xml.XmlDictionaryString@)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.XmlDictionary.TryLookup(System.String,System.Xml.XmlDictionaryString@)
-internalonly: False
+uid: System.Xml.XmlDictionary.TryLookup
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.XmlDictionary.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.XmlDictionary.TryLookup(System.String,System.Xml.XmlDictionaryString@)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.XmlDictionary.#ctor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.XmlDictionary.Empty
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.XmlDictionary.TryLookup(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString@)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.XmlDictionary.#ctor(System.Int32)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.XmlDictionary.Add(System.String)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

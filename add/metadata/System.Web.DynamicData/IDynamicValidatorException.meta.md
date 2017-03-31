@@ -1,9 +1,11 @@
 ---
 uid: System.Web.DynamicData.IDynamicValidatorException
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.IDynamicValidatorException.InnerExceptions
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -1,24 +1,34 @@
 ---
 uid: System.ServiceModel.Activities.ReceiveSettings
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.ReceiveSettings.OwnerDisplayName
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.ReceiveSettings.Action
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.ReceiveSettings.CanCreateInstance
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.ReceiveSettings.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

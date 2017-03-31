@@ -17,9 +17,27 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">To be added.</param>
-    <param name="e">To be added.</param>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:System.Windows.Forms.ConvertEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Windows.Forms.Binding.Parse" /> and <see cref="E:System.Windows.Forms.Binding.Format" /> events of a <see cref="T:System.Windows.Forms.Binding" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you create a <xref:System.Windows.Forms.ConvertEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
+  
+   
+  
+## Examples  
+ The following code  
+  
+ example creates a <xref:System.Windows.Forms.Binding>, adds a <xref:System.Windows.Forms.ConvertEventHandler> delegate to both the <xref:System.Windows.Forms.Binding.Parse> and <xref:System.Windows.Forms.Binding.Format> events, and adds the <xref:System.Windows.Forms.Binding> to the <xref:System.Windows.Forms.BindingsCollection> of a <xref:System.Windows.Forms.TextBox> control through the <xref:System.Windows.Forms.Control.DataBindings%2A> property. The `DecimalToCurrency` event delegate, added to the <xref:System.Windows.Forms.Binding.Format> event, formats the bound value (a <xref:System.Decimal> type) as currency using the <xref:System.Decimal.ToString%2A> method. The `CurrencyToDecimal` event delegate, added to the <xref:System.Windows.Forms.Binding.Parse> event, converts the value displayed by the control back to the <xref:System.Decimal> type.  
+  
+ [!code-cpp[Classic ConvertEventHandler Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ConvertEventHandler Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic ConvertEventHandler Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ConvertEventHandler Example/CS/source.cs#1)]
+ [!code-vb[Classic ConvertEventHandler Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ConvertEventHandler Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

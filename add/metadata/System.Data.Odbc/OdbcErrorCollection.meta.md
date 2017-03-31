@@ -1,39 +1,62 @@
 ---
 uid: System.Data.Odbc.OdbcErrorCollection
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Odbc.OdbcErrorCollection.Count
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Odbc.OdbcErrorCollection.CopyTo(System.Array,System.Int32)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Odbc.OdbcErrorCollection.CopyTo
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Odbc.OdbcErrorCollection.GetEnumerator
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Odbc.OdbcErrorCollection.CopyTo(System.Data.Odbc.OdbcError[],System.Int32)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Odbc.OdbcErrorCollection.System#Collections#ICollection#SyncRoot
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Odbc.OdbcErrorCollection.Item(System.Int32)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Odbc.OdbcErrorCollection.System#Collections#ICollection#IsSynchronized
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

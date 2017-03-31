@@ -1,139 +1,202 @@
 ---
 uid: System.Windows.Interop.HwndSourceParameters
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Interop.HwndSourceParameters.RestoreFocusMode
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Interop.HwndSourceParameters.SetSize(System.Int32,System.Int32)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Interop.HwndSourceParameters.op_Inequality(System.Windows.Interop.HwndSourceParameters,System.Windows.Interop.HwndSourceParameters)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Interop.HwndSourceParameters.TreatAsInputRoot
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Interop.HwndSourceParameters.#ctor
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Interop.HwndSourceParameters.GetHashCode
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Interop.HwndSourceParameters.ExtendedWindowStyle
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Interop.HwndSourceParameters.UsesPerPixelOpacity
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Interop.HwndSourceParameters.Width
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Interop.HwndSourceParameters.ParentWindow
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Interop.HwndSourceParameters.Equals(System.Windows.Interop.HwndSourceParameters)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Interop.HwndSourceParameters.AcquireHwndFocusInMenuMode
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Interop.HwndSourceParameters.Equals
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Interop.HwndSourceParameters.Equals(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Interop.HwndSourceParameters.#ctor(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Interop.HwndSourceParameters.SetPosition(System.Int32,System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Interop.HwndSourceParameters.WindowName
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Interop.HwndSourceParameters.TreatAncestorsAsNonClientArea
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Interop.HwndSourceParameters.#ctor(System.String,System.Int32,System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Interop.HwndSourceParameters.PositionY
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Interop.HwndSourceParameters.UsesPerPixelTransparency
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Interop.HwndSourceParameters.WindowStyle
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Interop.HwndSourceParameters.Height
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Interop.HwndSourceParameters.WindowClassStyle
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Interop.HwndSourceParameters.op_Equality(System.Windows.Interop.HwndSourceParameters,System.Windows.Interop.HwndSourceParameters)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Interop.HwndSourceParameters.HasAssignedSize
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Interop.HwndSourceParameters.HwndSourceHook
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Interop.HwndSourceParameters.PositionX
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Interop.HwndSourceParameters.AdjustSizingForNonClientArea
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

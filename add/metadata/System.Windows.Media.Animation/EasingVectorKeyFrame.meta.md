@@ -1,44 +1,67 @@
 ---
 uid: System.Windows.Media.Animation.EasingVectorKeyFrame
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.EasingVectorKeyFrame.CreateInstanceCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.EasingVectorKeyFrame.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.EasingVectorKeyFrame.#ctor(System.Windows.Vector,System.Windows.Media.Animation.KeyTime,System.Windows.Media.Animation.IEasingFunction)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.EasingVectorKeyFrame.#ctor(System.Windows.Vector)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.Animation.EasingVectorKeyFrame.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.EasingVectorKeyFrame.#ctor(System.Windows.Vector,System.Windows.Media.Animation.KeyTime)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.EasingVectorKeyFrame.EasingFunctionProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.EasingVectorKeyFrame.InterpolateValueCore(System.Windows.Vector,System.Double)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Animation.EasingVectorKeyFrame.EasingFunction
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

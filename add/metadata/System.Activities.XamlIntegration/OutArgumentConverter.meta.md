@@ -1,14 +1,27 @@
 ---
 uid: System.Activities.XamlIntegration.OutArgumentConverter
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.XamlIntegration.OutArgumentConverter.#ctor(System.Type)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.XamlIntegration.OutArgumentConverter.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.XamlIntegration.OutArgumentConverter.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

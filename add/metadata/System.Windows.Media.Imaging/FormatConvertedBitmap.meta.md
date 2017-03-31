@@ -1,74 +1,109 @@
 ---
 uid: System.Windows.Media.Imaging.FormatConvertedBitmap
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Imaging.FormatConvertedBitmap.AlphaThresholdProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Imaging.FormatConvertedBitmap.EndInit
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Imaging.FormatConvertedBitmap.DestinationPalette
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Imaging.FormatConvertedBitmap.BeginInit
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Imaging.FormatConvertedBitmap.CloneCurrentValue
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Imaging.FormatConvertedBitmap.DestinationFormat
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Imaging.FormatConvertedBitmap.DestinationFormatProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Imaging.FormatConvertedBitmap.SourceProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Imaging.FormatConvertedBitmap.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Imaging.FormatConvertedBitmap.#ctor
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Imaging.FormatConvertedBitmap.DestinationPaletteProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Imaging.FormatConvertedBitmap.#ctor(System.Windows.Media.Imaging.BitmapSource,System.Windows.Media.PixelFormat,System.Windows.Media.Imaging.BitmapPalette,System.Double)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Imaging.FormatConvertedBitmap.Source
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Imaging.FormatConvertedBitmap.Clone
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Imaging.FormatConvertedBitmap.AlphaThreshold
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a dialog box for the workflow element.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Activities.Presentation.WorkflowElementDialog> is a base type providing a set of methods and services that enable a dialog box to be displayed on the designer surface in a modal fashion in order to obtain input from a user. Examples of this in [!INCLUDE[wf2](~/includes/wf2-md.md)] include the dynamic argument designer that enables dynamic arguments to be manipulated and the <xref:System.Activities.Statements.FlowSwitch> case editor. Custom activity designer authors are encouraged to use the <xref:System.Activities.Presentation.WorkflowElementDialog> rather than their own dialog mechanisms to provide a common way to handle this display.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Presentation.WorkflowElementDialog" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +50,8 @@
         <ReturnType>System.Activities.Presentation.EditingContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the editing context associated with this dialog box.</summary>
+        <value>Returns <see cref="T:System.Activities.Presentation.EditingContext" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,7 +68,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Activities.Presentation.WorkflowElementDialog.Context" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,8 +85,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a Boolean value that determines whether the maximize button is enabled.</summary>
+        <value>
+          <see langword="true" /> if the maximize button is enabled; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,8 +104,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a Boolean value that determines whether the minimize button is enabled.</summary>
+        <value>
+          <see langword="true" /> if the minimize button is enabled; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,8 +126,8 @@
         <Parameter Name="enabled" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="enabled">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="enabled">The **OK** button is enabled if this is <see langword="true" />; otherwise, it is disabled.</param>
+        <summary>Enables or disables the **OK** button of the dialog based on the specified value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,8 +144,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the keyword used to display the F1 help topic related to the dialog.</summary>
+        <value>Returns a<see cref="T:System.String" /> that contains the keyword.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,8 +162,8 @@
         <ReturnType>System.Activities.Presentation.Model.ModelItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="T:System.Activities.Presentation.Model.ModelItem" /> associated with this dialog box.</summary>
+        <value>Returns <see cref="T:System.Activities.Presentation.Model.ModelItem" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -171,7 +180,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Activities.Presentation.WorkflowElementDialog.ModelItem" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -191,8 +200,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">Contains event data.</param>
+        <summary>Raises the Initialized event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -212,8 +221,8 @@
         <Parameter Name="newItem" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="newItem">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="newItem">The new <see cref="T:System.Activities.Presentation.Model.ModelItem" />.</param>
+        <summary>When overridden in a derived class, occurs when the <see cref="T:System.Activities.Presentation.Model.ModelItem" /> is changed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -233,8 +242,8 @@
         <Parameter Name="dialogResult" Type="System.Nullable&lt;System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <param name="dialogResult">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="dialogResult">A Boolean value that indicates how the dialog was closed by the user.</param>
+        <summary>When overridden in a derived class, performs cleanup operations when the dialog is closed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -251,8 +260,8 @@
         <ReturnType>System.Windows.DependencyObject</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the owner of this dialog box.</summary>
+        <value>Returns <see cref="T:System.Windows.DependencyObject" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -270,7 +279,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Displays the dialog window.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -288,8 +297,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Displays the dialog with **OK** and **Cancel** buttons and returns after the dialog is closed.</summary>
+        <returns>
+          <see langword="true" /> if the user accepted the dialog; <see langword="false" /> if the user cancelled the dialog.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -306,8 +316,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the title of this dialog box.</summary>
+        <value>Returns <see cref="T:System.String" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -324,7 +334,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Activities.Presentation.WorkflowElementDialog.Title" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -341,8 +351,8 @@
         <ReturnType>System.Windows.ResizeMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the resize mode of the window.</summary>
+        <value>Returns a <see cref="T:System.Windows.ResizeMode" /> value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -359,7 +369,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Activities.Presentation.WorkflowElementDialog.WindowResizeMode" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -376,8 +386,8 @@
         <ReturnType>System.Windows.SizeToContent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether a window will automatically size itself to fit the size of its content.</summary>
+        <value>Returns a <see cref="T:System.Windows.SizeToContent" /> value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -394,7 +404,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Activities.Presentation.WorkflowElementDialog.WindowSizeToContent" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

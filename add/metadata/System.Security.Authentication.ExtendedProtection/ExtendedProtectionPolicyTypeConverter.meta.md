@@ -1,19 +1,33 @@
 ---
 uid: System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicyTypeConverter
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicyTypeConverter.ConvertTo
+manager: "markl"
 ---
 
 ---
 uid: System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicyTypeConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicyTypeConverter.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicyTypeConverter.CanConvertTo
+manager: "markl"
 ---
 
 ---
 uid: System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicyTypeConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

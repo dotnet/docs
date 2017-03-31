@@ -1,9 +1,13 @@
 ---
 uid: System.Configuration.NoSettingsVersionUpgradeAttribute
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.NoSettingsVersionUpgradeAttribute.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

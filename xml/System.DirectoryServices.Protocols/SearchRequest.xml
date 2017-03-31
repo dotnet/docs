@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.SearchRequest" /> class initiates a search operation.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.SearchRequest.#ctor" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.SearchRequest" /> class. This constructor creates an empty request.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,11 +52,11 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="distinguishedName">To be added.</param>
-        <param name="ldapFilter">To be added.</param>
-        <param name="searchScope">To be added.</param>
-        <param name="attributeList">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="distinguishedName">The distinguished name of the object at which to start the search.</param>
+        <param name="ldapFilter">An LDAP search filter.</param>
+        <param name="searchScope">One of the values of <see cref="T:System.DirectoryServices.Protocols.SearchScope" /> that specifies the search scope.</param>
+        <param name="attributeList">An array that contains the requested attributes in the result set.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.SearchRequest.#ctor(System.String,System.String,System.DirectoryServices.Protocols.SearchScope,System.String[])" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.SearchRequest" /> class using the specified name, search filter, scope, and attributes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,11 +82,11 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="distinguishedName">To be added.</param>
-        <param name="filter">To be added.</param>
-        <param name="searchScope">To be added.</param>
-        <param name="attributeList">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="distinguishedName">The distinguished name of the object for which to search.</param>
+        <param name="filter">A DSML v2 search filter.</param>
+        <param name="searchScope">A <see cref="T:System.DirectoryServices.Protocols.SearchScope" /> value that specifies the search scope. The default value is <see cref="T:System.DirectoryServices.Protocols.SearchScope" />.</param>
+        <param name="attributeList">An array that contains the requested attributes in the result set.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.SearchRequest.#ctor(System.String,System.Xml.XmlDocument,System.DirectoryServices.Protocols.SearchScope,System.String[])" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.SearchRequest" /> class using the specified name, search filter, scope, and attributes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,9 +103,10 @@
         <ReturnType>System.DirectoryServices.Protocols.DereferenceAlias</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.SearchRequest.Aliases" /> property contains one of the values of <see cref="T:System.DirectoryServices.Protocols.DereferenceAlias" /> that specifies the dereference alias behavior.</summary>
+        <value>A <see cref="T:System.DirectoryServices.Protocols.DereferenceAlias" /> value that specifies the dereference alias behavior.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value is not a member of <see cref="T:System.DirectoryServices.Protocols.DereferenceAlias" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Attributes">
@@ -121,9 +122,10 @@
         <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.SearchRequest.Attributes" /> property contains the attributes of the requested object.</summary>
+        <value>The attributes of the requested object. Set this property to <see langword="null" /> to retrieve all attributes.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">One of the strings in <see cref="T:System.Collections.Specialized.StringCollection" /> object is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="DistinguishedName">
@@ -139,8 +141,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.SearchRequest.DistinguishedName" /> property contains the distinguished name of the requested object.</summary>
+        <value>The distinguished name of the requested object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -157,9 +159,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.SearchRequest.Filter" /> property contains the search filter.</summary>
+        <value>The search filter. If the value is a string, this property is an LDAP search filter. If the value is an XML document, the property is a DSML v2 search filter. Any other type throws an exception.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The value is not a string or an XML document.</exception>
       </Docs>
     </Member>
     <Member MemberName="Scope">
@@ -175,9 +178,10 @@
         <ReturnType>System.DirectoryServices.Protocols.SearchScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.SearchRequest.Scope" /> property contains one of the values of <see cref="T:System.DirectoryServices.SearchScope" /> that specifies the scope of the search.</summary>
+        <value>One of the values of <see cref="T:System.DirectoryServices.SearchScope" /> that specifies the scope of the search.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value is not a member of <see cref="T:System.DirectoryServices.SearchScope" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SizeLimit">
@@ -193,9 +197,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.SearchRequest.SizeLimit" /> property contains the maximum number of objects returned in the search request.</summary>
+        <value>The maximum number of objects returned in the search request.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The value is less than zero.</exception>
       </Docs>
     </Member>
     <Member MemberName="TimeLimit">
@@ -211,9 +216,10 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.SearchRequest.TimeLimit" /> property contains a <see cref="T:System.TimeSpan" /> object that specifies the time span allowed, if the server processes the search request.</summary>
+        <value>A <see cref="T:System.TimeSpan" /> object that specifies the time span allowed, if the server processes the search request.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The value is less than <see cref="F:System.TimeSpan.Zero" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ToXmlNode">
@@ -232,9 +238,9 @@
         <Parameter Name="doc" Type="System.Xml.XmlDocument" />
       </Parameters>
       <Docs>
-        <param name="doc">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="doc">A <see cref="T:System.Xml.XmlDocument" /> object.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.SearchRequest.ToXmlNode(System.Xml.XmlDocument)" /> method creates an XML node from the specified <see cref="T:System.Xml.XmlDocument" /> object.</summary>
+        <returns>The resulting <see cref="T:System.Xml.XmlElement" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -251,8 +257,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.SearchRequest.TypesOnly" /> property specifies whether the search returns only the attribute names and not the attribute values.</summary>
+        <value>If this property is <see langword="true" />, the search returns only the attribute names. If this property is <see langword="false" />, the search returns both the attribute names and values.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

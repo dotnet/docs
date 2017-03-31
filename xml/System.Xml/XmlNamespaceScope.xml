@@ -21,7 +21,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines the namespace scope.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -49,7 +49,7 @@
         <ReturnType>System.Xml.XmlNamespaceScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>All namespaces defined in the scope of the current node. This includes the xmlns:xml namespace which is always declared implicitly. The order of the namespaces returned is not defined.</summary>
       </Docs>
     </Member>
     <Member MemberName="ExcludeXml">
@@ -76,7 +76,7 @@
         <ReturnType>System.Xml.XmlNamespaceScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>All namespaces defined in the scope of the current node, excluding the xmlns:xml namespace, which is always declared implicitly. The order of the namespaces returned is not defined.</summary>
       </Docs>
     </Member>
     <Member MemberName="Local">
@@ -103,7 +103,7 @@
         <ReturnType>System.Xml.XmlNamespaceScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>All namespaces that are defined locally at the current node.</summary>
       </Docs>
     </Member>
   </Members>

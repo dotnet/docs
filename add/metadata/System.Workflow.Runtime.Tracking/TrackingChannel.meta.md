@@ -1,19 +1,27 @@
 ---
 uid: System.Workflow.Runtime.Tracking.TrackingChannel
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Tracking.TrackingChannel.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Tracking.TrackingChannel.Send(System.Workflow.Runtime.Tracking.TrackingRecord)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Tracking.TrackingChannel.InstanceCompletedOrTerminated
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

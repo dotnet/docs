@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents an object in a design host such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)]. This class must be inherited.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,10 +33,16 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="designer">To be added.</param>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="designer">The parent designer.</param>
+        <param name="name">The name of the object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.DesignerObject" /> class.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="designer" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="name" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Designer">
@@ -52,8 +58,8 @@
         <ReturnType>System.Web.UI.Design.ControlDesigner</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the associated designer component.</summary>
+        <value>A <see cref="T:System.Web.UI.Design.ControlDesigner" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,9 +79,9 @@
         <Parameter Name="serviceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="serviceType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="serviceType">The type of service being requested.</param>
+        <summary>Gets a service from the design host, as identified by the provided type.</summary>
+        <returns>The requested service.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,8 +98,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the object.</summary>
+        <value>The name of the object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,8 +116,8 @@
         <ReturnType>System.Collections.IDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the object's properties.</summary>
+        <value>An <see cref="T:System.Collections.IDictionary" /> object containing the object's properties and their values.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,9 +137,9 @@
         <Parameter Name="serviceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="serviceType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="serviceType">The type of service being requested.</param>
+        <summary>For a description of this member, see <see cref="M:System.IServiceProvider.GetService(System.Type)" />.</summary>
+        <returns>The requested service.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

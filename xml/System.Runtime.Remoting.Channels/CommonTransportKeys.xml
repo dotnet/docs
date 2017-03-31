@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The transport keys associated with common values used by the channels.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates an instance of <see cref="T:System.Runtime.Remoting.Channels.CommonTransportKeys" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,7 +43,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The transport key associated with a unique ID given to each incoming socket connection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,7 +60,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The transport key associated with the IP address from which an incoming request arrived.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,7 +77,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The transport key associated with the URI that made the request.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

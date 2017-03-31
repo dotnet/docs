@@ -1,29 +1,35 @@
 ---
 uid: System.Web.UI.CompositeScriptReference
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.CompositeScriptReference.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.CompositeScriptReference.Scripts
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.CompositeScriptReference.IsFromSystemWebExtensions
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.CompositeScriptReference.GetUrl(System.Web.UI.ScriptManager,System.Boolean)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.CompositeScriptReference.IsAjaxFrameworkScript(System.Web.UI.ScriptManager)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

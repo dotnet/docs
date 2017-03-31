@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Arguments for the <see cref="E:System.ServiceModel.Discovery.DiscoveryClient.FindCompleted" /> event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.ServiceModel.Discovery.FindResponse</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.ServiceModel.Discovery.FindResponse" /> returned by the find operation.</summary>
+        <value>The results of the find operation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

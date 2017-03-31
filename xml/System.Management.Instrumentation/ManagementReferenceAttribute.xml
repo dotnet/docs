@@ -16,8 +16,162 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The ManagementReferenceAttribute marks a class member, property or method parameter as a reference to another management object or class.  
+  
+ Note: the WMI .NET libraries are now considered in final state, and no further development, enhancements, or updates will be available for non-security related issues affecting these libraries. The [MI APIs](https://msdn.microsoft.com/en-us/library/jj152383%28v=vs.80%29.aspx) should be used for all new development.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this attribute to create association classes as demonstrated in the following example.  
+  
+   
+  
+## Examples  
+ This example demonstrates how to use the <xref:System.Management.Instrumentation.ManagementReferenceAttribute> attribute together with the <xref:System.Management.Instrumentation.ManagementQualifierAttribute> to create an association WMI class that links two other WMI classes. The example is a decoupled provider that exposes three WMI classes in the root/assoc namespace. The first two classes, NumberPhonetic and NumberLetter, are linked by the last class, LetterPhonetic.  
+  
+ To compile the example, you will need to include references to both System.Management.Instrumentation and System.Configuration.Install. You must run installutil.exe against the resulting executable and ensure that the program is running in order to use the implemented WMI classes.  
+  
+```  
+using System;  
+using System.Collections;  
+using System.Management.Instrumentation;  
+  
+[assembly: WmiConfiguration("root/assoc", HostingModel = ManagementHostingModel.Decoupled)]  
+  
+[System.ComponentModel.RunInstaller(true)]  
+public class TheInstaller : DefaultManagementInstaller  
+{ }  
+  
+namespace AssocExample  
+{  
+    class Program  
+    {  
+        static void Main(string[] args)  
+        {  
+            InstrumentationManager.RegisterType(typeof(NumberPhonetic));  
+            InstrumentationManager.RegisterType(typeof(NumberLetter));  
+            InstrumentationManager.RegisterType(typeof(LetterPhonetic));  
+  
+            Console.WriteLine("Press enter to exit");  
+            Console.ReadLine();  
+  
+            InstrumentationManager.UnregisterType(typeof(NumberPhonetic));  
+            InstrumentationManager.UnregisterType(typeof(NumberLetter));  
+            InstrumentationManager.UnregisterType(typeof(LetterPhonetic));  
+  
+        }  
+    }  
+  
+  [ManagementEntity]  
+    public class NumberPhonetic  
+    {  
+        [ManagementKey]  
+        public int Number;  
+  
+        [ManagementProbe]  
+        public string Name;  
+  
+        [ManagementBind]  
+        public NumberPhonetic(int Number)  
+        {  
+           this.Number = Number;  
+           if(Number == 1)  
+           {  
+              Name = "alpha";  
+           }  
+           else if(Number == 2)  
+           {  
+              Name = "bravo";  
+           }  
+           else  
+           {  
+              throw new InstanceNotFoundException();  
+           }  
+        }  
+  
+        [ManagementEnumerator]  
+        static public IEnumerable EnumerateInstances()  
+        {  
+            for (int i = 1; i < 3; i++)  
+            {  
+                yield return new NumberPhonetic(i);  
+            }  
+        }  
+  
+    }  
+  
+    [ManagementEntity]  
+    public class NumberLetter  
+    {  
+        [ManagementKey]  
+        public int Number;  
+  
+        [ManagementProbe]  
+        public string Letter;  
+  
+        [ManagementBind]  
+        public NumberLetter(int Number)  
+        {  
+           this.Number = Number;  
+           if(Number == 1)  
+           {  
+              Letter = "A";  
+           }  
+           else if(Number == 2)  
+           {  
+              Letter = "B";  
+           }  
+           else  
+           {  
+              throw new InstanceNotFoundException();  
+           }  
+        }  
+  
+        [ManagementEnumerator]  
+        static public IEnumerable EnumerateInstances()  
+        {  
+            for (int i = 1; i < 3; i++)  
+            {  
+                yield return new NumberLetter(i);  
+            }  
+        }  
+  
+    }  
+  
+    [ManagementEntity]  
+    [ManagementQualifier("Association", Flavor = ManagementQualifierFlavors.DisableOverride)]  
+    public class LetterPhonetic  
+    {  
+        [ManagementReference(Type = "NumberLetter")]  
+        [ManagementKey]  
+        public string LetterNumber;  
+  
+        [ManagementReference(Type = "NumberPhonetic")]  
+        [ManagementKey]  
+        public string PhoneticNumber;  
+  
+        [ManagementEnumerator]  
+        static public IEnumerable EnumerateInstances()  
+        {  
+            ArrayList insts = new ArrayList();  
+            for (int i = 1; i < 3; i++)  
+            {  
+                LetterPhonetic inst = new LetterPhonetic();  
+                inst.LetterNumber = "Letter = " + i;  
+                inst.PhoneticNumber = "Phonetic = " + i;  
+                insts.Add(inst);  
+            }  
+            return insts;  
+        }  
+  
+    }  
+  
+}  
+```  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +185,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementReferenceAttribute" /> class. This is the default constructor.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,9 +202,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the referenced type.</summary>
+        <value>A string containing the name of the referenced type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default type is object.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -16,8 +16,24 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The <see cref="T:System.Data.Services.ChangeInterceptorAttribute" /> on a method is used to process updates on the specified entity set name.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Resource-level change authorization and validation is implemented by methods annotated on the <xref:System.Data.Services.ChangeInterceptorAttribute>. [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)] provides the infrastructure required for service developers to write per-entity change processing rules and validation.  
+  
+ Entity-level access control and validation can be enforced through query interceptors. For more information, see <xref:System.Data.Services.QueryInterceptorAttribute>.  
+  
+-  
+  
+   
+  
+## Examples  
+ For more information, see the example in the <xref:System.Data.Services.QueryInterceptorAttribute> topic.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,8 +49,8 @@
         <Parameter Name="entitySetName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="entitySetName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="entitySetName">The name of the entity set that contains the entity to which the interceptor applies.</param>
+        <summary>Creates a new change interceptor for an entity set specified by the parameter <paramref name="entitySetName" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,8 +72,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the entity set to which the interceptor applies.</summary>
+        <value>The string value that represents entity set name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

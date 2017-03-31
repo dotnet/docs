@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the invoker for a particular method. Used by the <see cref="T:Microsoft.JScript.JSMethodInfo" /> class to invoke methods.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.MethodInvoker" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,10 +52,10 @@
         <Parameter Name="parameters" Type="System.Object[]" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <param name="parameters">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <param name="parameters">The arguments to use for the method.</param>
+        <summary>When overridden in a derived class, invokes the method.</summary>
+        <returns>The result of invoking the method.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

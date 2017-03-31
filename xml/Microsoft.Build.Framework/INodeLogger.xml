@@ -17,8 +17,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines a "parallel aware logger" in the build system.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A parallel aware logger accepts a CPU count. A CPU count greater than 1 means that build events are received from each CPU's logger as the events are logged.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Initialize">
@@ -38,9 +45,9 @@
         <Parameter Name="nodeCount" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="eventSource">To be added.</param>
-        <param name="nodeCount">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="eventSource">An <see cref="T:Microsoft.Build.Framework.IEventSource" /> object representing the build event source.</param>
+        <param name="nodeCount">The number of CPUs.</param>
+        <summary>Initializes the logger.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

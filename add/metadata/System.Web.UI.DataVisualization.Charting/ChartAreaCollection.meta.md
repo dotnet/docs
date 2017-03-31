@@ -1,9 +1,15 @@
 ---
 uid: System.Web.UI.DataVisualization.Charting.ChartAreaCollection
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Web.UI.DataVisualization.Charting.ChartAreaCollection.Add
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.ChartAreaCollection.Add(System.String)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---

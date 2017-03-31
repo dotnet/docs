@@ -15,8 +15,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The abstract base class that defines methods for a cache used to detect replayed tokens.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When implemented, the cache should purge tokens on a scheduled time interval. The <xref:System.IdentityModel.Tokens.TokenReplayCache.AddOrUpdate%2A> method associates a security token with a key and an expiration time. The can be used to search the cache for the token or to remove the token from the cache. The expiration time indicates the time at which the token should be purged from the cache.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +37,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Called from constructors in derived classes to initialize the <see cref="T:System.IdentityModel.Tokens.TokenReplayCache" />class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,10 +59,10 @@
         <Parameter Name="expirationTime" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="securityToken">To be added.</param>
-        <param name="expirationTime">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="key">The key to use when adding the item.</param>
+        <param name="securityToken">The token to add to the cache, can be <see langword="null" />.</param>
+        <param name="expirationTime">The time at which the entry expires.</param>
+        <summary>When overridden in a derived class, attempts to add a new entry or update and existing entry.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,9 +82,10 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">The key for which to search.</param>
+        <summary>When overridden in a derived class, returns a value that indicates whether a matching entry exists in the cache.</summary>
+        <returns>
+          <see langword="true" /> if a matching entry is is found in the cache; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,9 +105,9 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">The key for which to search.</param>
+        <summary>When overridden in a derived class, attempts to get the specified entry.</summary>
+        <returns>The token that matches the key or <see langword="null" /> if no token is found.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,9 +127,16 @@
         <Parameter Name="nodelist" Type="System.Xml.XmlNodeList" />
       </Parameters>
       <Docs>
-        <param name="nodelist">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="nodelist">The custom configuration XML elements.</param>
+        <summary>When overridden in a derived class, loads custom configuration from the specified XML.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, this method throws a <xref:System.NotImplementedException>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -140,8 +155,8 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="key">The key that identifies the entry to remove.</param>
+        <summary>When overridden in a derived class, attempts to remove an entry from the cache.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

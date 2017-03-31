@@ -1,89 +1,125 @@
 ---
 uid: System.ServiceModel.FederatedMessageSecurityOverHttp
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.FederatedMessageSecurityOverHttp.ShouldSerializeClaimTypeRequirements
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.FederatedMessageSecurityOverHttp.TokenRequestParameters
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.FederatedMessageSecurityOverHttp.ShouldSerializeIssuedKeyType
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.FederatedMessageSecurityOverHttp.NegotiateServiceCredential
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.FederatedMessageSecurityOverHttp.ShouldSerializeAlgorithmSuite
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.FederatedMessageSecurityOverHttp.ShouldSerializeTokenRequestParameters
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.FederatedMessageSecurityOverHttp.IssuerMetadataAddress
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.FederatedMessageSecurityOverHttp.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.FederatedMessageSecurityOverHttp.AlgorithmSuite
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.FederatedMessageSecurityOverHttp.ShouldSerializeNegotiateServiceCredential
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.FederatedMessageSecurityOverHttp.IssuedTokenType
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.FederatedMessageSecurityOverHttp.IssuerAddress
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.FederatedMessageSecurityOverHttp.EstablishSecurityContext
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.FederatedMessageSecurityOverHttp.IssuerBinding
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.FederatedMessageSecurityOverHttp.ClaimTypeRequirements
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.FederatedMessageSecurityOverHttp.ShouldSerializeEstablishSecurityContext
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.FederatedMessageSecurityOverHttp.IssuedKeyType
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

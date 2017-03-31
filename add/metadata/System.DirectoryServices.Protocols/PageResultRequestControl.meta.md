@@ -1,34 +1,55 @@
 ---
 uid: System.DirectoryServices.Protocols.PageResultRequestControl
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.Protocols.PageResultRequestControl.PageSize
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.Protocols.PageResultRequestControl.GetValue
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.Protocols.PageResultRequestControl.Cookie
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.Protocols.PageResultRequestControl.#ctor(System.Int32)
-internalonly: False
----
-
----
-uid: System.DirectoryServices.Protocols.PageResultRequestControl.#ctor(System.Byte[])
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.Protocols.PageResultRequestControl.#ctor
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.Protocols.PageResultRequestControl.#ctor(System.Byte[])
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.Protocols.PageResultRequestControl.#ctor
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---

@@ -1,4 +1,5 @@
 ---
 uid: System.Net.Configuration.UnicodeDecodingConformance
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

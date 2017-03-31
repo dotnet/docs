@@ -1,9 +1,11 @@
 ---
 uid: Microsoft.VisualC.IsSignedModifier
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.IsSignedModifier.#ctor
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---

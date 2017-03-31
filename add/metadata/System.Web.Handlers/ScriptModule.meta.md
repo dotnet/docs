@@ -1,29 +1,35 @@
 ---
 uid: System.Web.Handlers.ScriptModule
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Handlers.ScriptModule.System#Web#IHttpModule#Dispose
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Handlers.ScriptModule.Dispose
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Handlers.ScriptModule.Init(System.Web.HttpApplication)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Handlers.ScriptModule.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Handlers.ScriptModule.System#Web#IHttpModule#Init(System.Web.HttpApplication)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -1,19 +1,26 @@
 ---
 uid: System.Windows.Forms.ThreadExceptionDialog
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ThreadExceptionDialog.AutoSizeChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ThreadExceptionDialog.#ctor(System.Exception)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ThreadExceptionDialog.AutoSize
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

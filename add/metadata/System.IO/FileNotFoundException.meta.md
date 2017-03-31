@@ -1,59 +1,90 @@
 ---
 uid: System.IO.FileNotFoundException
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.FileNotFoundException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
----
-
----
-uid: System.IO.FileNotFoundException.FusionLog
-internalonly: False
----
-
----
-uid: System.IO.FileNotFoundException.ToString
-internalonly: False
----
-
----
-uid: System.IO.FileNotFoundException.FileName
-internalonly: False
----
-
----
-uid: System.IO.FileNotFoundException.#ctor(System.String,System.Exception)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.FileNotFoundException.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.FileNotFoundException.FusionLog
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.FileNotFoundException.ToString
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.FileNotFoundException.FileName
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.FileNotFoundException.#ctor(System.String,System.Exception)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.FileNotFoundException.#ctor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.FileNotFoundException.Message
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.FileNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.FileNotFoundException.#ctor(System.String,System.String)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.FileNotFoundException.#ctor(System.String)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.FileNotFoundException.#ctor(System.String,System.String,System.Exception)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

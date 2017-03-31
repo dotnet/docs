@@ -1,29 +1,41 @@
 ---
 uid: System.Workflow.Activities.Rules.RuleDefinitions
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.Rules.RuleDefinitions.Conditions
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.Rules.RuleDefinitions.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.Rules.RuleDefinitions.RuleSets
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.Rules.RuleDefinitions.Diff(System.Object,System.Object)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.Rules.RuleDefinitions.RuleDefinitionsProperty
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -28,8 +28,21 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a workflow that executes activities sequentially.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ The <xref:System.Workflow.Activities.SequentialWorkflowActivity> is a <xref:System.Workflow.Activities.SequenceActivity> with `Initialized` and `Completed` events for optional processing of parameters. This makes it particularly useful as a top-level activity when you design sequential-style workflows.  
+  
+ The <xref:System.Workflow.Activities.SequentialWorkflowActivity> is a <xref:System.Workflow.ComponentModel.CompositeActivity>, which means the <xref:System.Workflow.Activities.SequentialWorkflowActivity> can contain other activities.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,7 +56,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.SequentialWorkflowActivity" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,8 +73,8 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The user-defined name of the activity.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.SequentialWorkflowActivity" /> class by using the name of the activity.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,8 +96,18 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the workflow has finished.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to create a new <xref:System.Workflow.Activities.SequentialWorkflowActivity> class, and set the event handler for the <xref:System.Workflow.Activities.SequentialWorkflowActivity.Completed> event. This code example is part of the Policy SDK Sample from the DiscountPolicyWorkflow.Designer.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Advanced Policy](http://msdn.microsoft.com/en-us/1ad079ee-b50b-4af4-9575-597eafc97742).  
+  
+ [!code-csharp[wf_samples#1](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#1)]
+ [!code-vb[wf_samples#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CompletedEvent">
@@ -100,8 +123,15 @@
         <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="E:System.Workflow.Activities.SequentialWorkflowActivity.Completed" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DynamicUpdateCondition">
@@ -122,8 +152,8 @@
         <ReturnType>System.Workflow.ComponentModel.ActivityCondition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets an <see cref="T:System.Workflow.ComponentModel.ActivityCondition" /> in which dynamic updates can be made in the workflow, when overridden in a derived class.</summary>
+        <value>A <see cref="T:System.Workflow.ComponentModel.ActivityCondition" /> that identifies when dynamic updates can be made.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,9 +173,9 @@
         <Parameter Name="executionContext" Type="System.Workflow.ComponentModel.ActivityExecutionContext" />
       </Parameters>
       <Docs>
-        <param name="executionContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="executionContext">The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> associated with the <see cref="T:System.Workflow.ComponentModel.Activity" />.</param>
+        <summary>Runs the workflow.</summary>
+        <returns>The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionStatus" /> at the <see cref="T:System.Workflow.Activities.SequentialWorkflowActivity" /> at the end of the requested operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,7 +197,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the workflow is initialized.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,8 +214,15 @@
         <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="E:System.Workflow.Activities.SequentialWorkflowActivity.Initialized" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnSequenceComplete">
@@ -204,9 +241,11 @@
         <Parameter Name="executionContext" Type="System.Workflow.ComponentModel.ActivityExecutionContext" />
       </Parameters>
       <Docs>
-        <param name="executionContext">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="executionContext">The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> associated with the <see cref="T:System.Workflow.ComponentModel.Activity" />.</param>
+        <summary>Raises the <see cref="F:System.Workflow.Activities.SequentialWorkflowActivity.CompletedEvent" /> for the <see cref="T:System.Workflow.Activities.SequentialWorkflowActivity" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="executionContext" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
   </Members>

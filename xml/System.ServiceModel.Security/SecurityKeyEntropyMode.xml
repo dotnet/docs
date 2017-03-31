@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Describes the source of entropy used for key generation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This mode describes how the client and server compute a shared symmetric key to use with a token issued by the server.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ClientEntropy">
@@ -27,7 +34,7 @@
         <ReturnType>System.ServiceModel.Security.SecurityKeyEntropyMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The client provides the key used for the issued token.</summary>
       </Docs>
     </Member>
     <Member MemberName="CombinedEntropy">
@@ -43,7 +50,7 @@
         <ReturnType>System.ServiceModel.Security.SecurityKeyEntropyMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The client and server both provide entropy that is combined using the P-SHA1 function to derive the key of the issued token.</summary>
       </Docs>
     </Member>
     <Member MemberName="ServerEntropy">
@@ -59,7 +66,7 @@
         <ReturnType>System.ServiceModel.Security.SecurityKeyEntropyMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The server provides the key for the issued token.</summary>
       </Docs>
     </Member>
   </Members>

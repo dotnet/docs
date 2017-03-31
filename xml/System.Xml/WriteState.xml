@@ -21,7 +21,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the state of the <see cref="T:System.Xml.XmlWriter" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -49,7 +49,7 @@
         <ReturnType>System.Xml.WriteState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that an attribute value is being written.</summary>
       </Docs>
     </Member>
     <Member MemberName="Closed">
@@ -76,7 +76,7 @@
         <ReturnType>System.Xml.WriteState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the <see cref="M:System.Xml.XmlWriter.Close" /> method has been called.</summary>
       </Docs>
     </Member>
     <Member MemberName="Content">
@@ -103,7 +103,7 @@
         <ReturnType>System.Xml.WriteState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that element content is being written.</summary>
       </Docs>
     </Member>
     <Member MemberName="Element">
@@ -130,7 +130,7 @@
         <ReturnType>System.Xml.WriteState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that an element start tag is being written.</summary>
       </Docs>
     </Member>
     <Member MemberName="Error">
@@ -157,7 +157,17 @@
         <ReturnType>System.Xml.WriteState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An exception has been thrown, which has left the <see cref="T:System.Xml.XmlWriter" /> in an invalid state. You can call the <see cref="M:System.Xml.XmlWriter.Close" /> method to put the <see cref="T:System.Xml.XmlWriter" /> in the <see cref="F:System.Xml.WriteState.Closed" /> state. Any other <see cref="T:System.Xml.XmlWriter" /> method calls results in an <see cref="T:System.InvalidOperationException" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  This field was added in the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)] release.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Prolog">
@@ -184,7 +194,7 @@
         <ReturnType>System.Xml.WriteState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the prolog is being written.</summary>
       </Docs>
     </Member>
     <Member MemberName="Start">
@@ -211,7 +221,7 @@
         <ReturnType>System.Xml.WriteState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that a Write method has not yet been called.</summary>
       </Docs>
     </Member>
   </Members>

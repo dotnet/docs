@@ -17,9 +17,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">To be added.</param>
-    <param name="e">To be added.</param>
-    <summary>To be added.</summary>
+    <param name="sender">The source object of the event.</param>
+    <param name="e">A configuration event argument.</param>
+    <summary>Defines a class used by the .NET Framework infrastructure to support configuration events.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

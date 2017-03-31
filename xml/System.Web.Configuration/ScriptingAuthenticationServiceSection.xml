@@ -11,8 +11,37 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the configuration section for authentication service settings. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.ScriptingAuthenticationServiceSection> class enables you to programmatically access and modify the `authenticationService` element of the configuration section for using AJAX functionality in ASP.NET.  
+  
+ The authentication service for AJAX-enabled applications only works with forms-based authentication that uses cookies to exchange user information. For more information about Forms Authentication, see [Using Forms Authentication with Microsoft Ajax](../Topic/Using%20Forms%20Authentication%20with%20Microsoft%20Ajax.md).  
+  
+   
+  
+## Examples  
+ The following configuration file excerpt shows how to declaratively specify values for properties of the <xref:System.Web.Configuration.ScriptingAuthenticationServiceSection> class.  
+  
+```  
+<system.web.extensions>  
+  <scripting>  
+    <webServices>  
+      <authenticationService enabled="true" requireSSL="false" />  
+    </webServices>  
+  </scripting>  
+</system.web.extensions>  
+```  
+  
+ The following example demonstrates how to access <xref:System.Web.Configuration.ScriptingAuthenticationServiceSection> programmatically.  
+  
+ [!code-csharp[System.Web.Configuration#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.Configuration/CS/App_Code/ConfigSectionSample.cs#1)]
+ [!code-vb[System.Web.Configuration#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.Configuration/VB/App_Code/ConfigSectionSample.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +55,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.ScriptingAuthenticationServiceSection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +77,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether the authentication service is enabled for an application that uses AJAX features of ASP.NET.</summary>
+        <value>
+          <see langword="true" /> if the authentication service is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,8 +119,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether the authentication service requires an SSL-secured connection.</summary>
+        <value>
+          <see langword="true" /> if the authentication service requires Secure Sockets Layer (SSL); otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

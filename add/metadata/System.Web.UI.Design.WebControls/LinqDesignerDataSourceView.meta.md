@@ -1,54 +1,76 @@
 ---
 uid: System.Web.UI.Design.WebControls.LinqDesignerDataSourceView
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.LinqDesignerDataSourceView.IsDataContext
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.LinqDesignerDataSourceView.CanDelete
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.LinqDesignerDataSourceView.CanUpdate
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.LinqDesignerDataSourceView.#ctor(System.Web.UI.Design.WebControls.LinqDataSourceDesigner)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.LinqDesignerDataSourceView.CanSort
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.LinqDesignerDataSourceView.GetDesignTimeData(System.Int32,System.Boolean@)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.LinqDesignerDataSourceView.CanPage
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.LinqDesignerDataSourceView.Schema
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.LinqDesignerDataSourceView.IsTableTypeTable
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.LinqDesignerDataSourceView.CanInsert
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

@@ -23,8 +23,23 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a serializable type of endpoint address that is compliant with the version of WS-Addressing published in August 2004 and that enables it to be exposed as part of the service contract.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.EndpointAddress> is not serializable nor is it tied to a particular version of the WS-Addressing specification. [!INCLUDE[indigo1](~/includes/indigo1-md.md)] supplies a class that provides a serializable type, <xref:System.ServiceModel.EndpointAddress10>, which is WS-Addressing V1 compliant.  
+  
+ This class provides a WS-Addressing August 2004 compliant wrapper for the <xref:System.ServiceModel.EndpointAddress> that is serializable and bound to a particular wire format for legacy purposes. The <xref:System.ServiceModel.EndpointAddressAugust2004.FromEndpointAddress%28System.ServiceModel.EndpointAddress%29> method does the wrapping and the <xref:System.ServiceModel.EndpointAddressAugust2004.ToEndpointAddress%2A> method does the unwrapping, allowing the recovery of the endpoint address after being serialized on the wire.  
+  
+   
+  
+## Examples  
+ [!code-csharp[EndpointAddressAugust2004#1](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddressaugust2004/cs/source.cs#1)]
+ [!code-vb[EndpointAddressAugust2004#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/endpointaddressaugust2004/vb/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="FromEndpointAddress">
@@ -43,10 +58,23 @@
         <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" />
       </Parameters>
       <Docs>
-        <param name="address">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="address">The <see cref="T:System.ServiceModel.EndpointAddress" /> used to initialize the instance of this class.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.EndpointAddress10" /> class with a specified endpoint address.</summary>
+        <returns>The <see cref="T:System.ServiceModel.EndpointAddressAugust2004" /> class that contains the specified endpoint address.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.EndpointAddress> is not tied to a particular version of the WS-Addressing specification or bound to a particular wire format.  
+  
+   
+  
+## Examples  
+ [!code-csharp[EndpointAddressAugust2004#1](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddressaugust2004/cs/source.cs#1)]
+ [!code-vb[EndpointAddressAugust2004#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/endpointaddressaugust2004/vb/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSchema">
@@ -65,10 +93,19 @@
         <Parameter Name="xmlSchemaSet" Type="System.Xml.Schema.XmlSchemaSet" />
       </Parameters>
       <Docs>
-        <param name="xmlSchemaSet">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="xmlSchemaSet">A <see cref="T:System.Xml.Schema.XmlSchema" /> that contains a cache of the XML schema definition language (XSD) schemas for the endpoint address.</param>
+        <summary>Returns an XML-qualified name that describes the XML representation of the version 1 endpoint address from a specified cached schema.</summary>
+        <returns>A <see cref="T:System.Xml.XmlQualifiedName" /> that describes the XML representation of the endpoint address.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is required by the serialization contract. It must be public to be seen by the XmlSerializer. It is not intended to be called by developers.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="xmlSchemaSet" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Xml.Serialization.IXmlSerializable.GetSchema">
@@ -85,8 +122,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns <see langword="null" />.</summary>
+        <returns>
+          <see langword="null" />
+        </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,8 +145,8 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> from which the endpoint address is obtained.</param>
+        <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -127,8 +166,8 @@
         <Parameter Name="writer" Type="System.Xml.XmlWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to which the current endpoint address is saved.</param>
+        <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,9 +185,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Retrieves the endpoint address contained in this serializable type.</summary>
+        <returns>The <see cref="T:System.ServiceModel.EndpointAddress" /> that contains a version-neutral endpoint address of this <see cref="T:System.ServiceModel.EndpointAddressAugust2004" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[EndpointAddressAugust2004#1](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddressaugust2004/cs/source.cs#1)]
+ [!code-vb[EndpointAddressAugust2004#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/endpointaddressaugust2004/vb/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

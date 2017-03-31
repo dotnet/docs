@@ -1,29 +1,41 @@
 ---
 uid: Microsoft.JScript.Vsa.IJSVsaCodeItem
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.JScript.Vsa.IJSVsaCodeItem.SourceText
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.JScript.Vsa.IJSVsaCodeItem.AppendSourceText(System.String)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.JScript.Vsa.IJSVsaCodeItem.RemoveEventSource(System.String)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.JScript.Vsa.IJSVsaCodeItem.CodeDOM
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.JScript.Vsa.IJSVsaCodeItem.AddEventSource(System.String,System.String)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

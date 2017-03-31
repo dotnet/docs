@@ -1,59 +1,80 @@
 ---
 uid: System.Windows.Media.Effects.OuterGlowBitmapEffect
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Effects.OuterGlowBitmapEffect.GlowSize
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Effects.OuterGlowBitmapEffect.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Effects.OuterGlowBitmapEffect.GlowColorProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Effects.OuterGlowBitmapEffect.GlowColor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Effects.OuterGlowBitmapEffect.OpacityProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Effects.OuterGlowBitmapEffect.GlowSizeProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Effects.OuterGlowBitmapEffect.Opacity
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Effects.OuterGlowBitmapEffect.NoiseProperty
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Effects.OuterGlowBitmapEffect.Noise
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Effects.OuterGlowBitmapEffect.Clone
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Effects.OuterGlowBitmapEffect.CloneCurrentValue
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

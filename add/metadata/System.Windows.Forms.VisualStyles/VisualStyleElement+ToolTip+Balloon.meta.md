@@ -1,14 +1,20 @@
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.ToolTip.Balloon
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.ToolTip.Balloon.Normal
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.ToolTip.Balloon.Link
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

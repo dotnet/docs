@@ -1,24 +1,34 @@
 ---
 uid: System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs.ExecutionResult
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs.Activity
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs.ToString
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs.ExecutionStatus
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

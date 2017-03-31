@@ -16,8 +16,19 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The exception that is thrown when an operation is attempted on a transaction that is in doubt, or an attempt is made to commit the transaction and the transaction becomes InDoubt.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This exception is thrown when an action is attempted on a transaction that is in doubt. A transaction is in doubt when the state of the transaction cannot be determined. Specifically, the final outcome of the transaction, whether it commits or aborts, is never known for this transaction.  
+  
+ This exception is also thrown when an attempt is made to commit the transaction and the transaction becomes InDoubt.  
+  
+ This is a recoverable error.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,7 +47,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Transactions.TransactionInDoubtException" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,8 +69,8 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">A <see cref="T:System.String" /> that contains a message that explains why the exception occurred.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Transactions.TransactionInDoubtException" /> class with the specified message.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,9 +93,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object that describes a failed serialization.</param>
+        <param name="context">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object that describes a failed serialization context.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Transactions.TransactionInDoubtException" /> class with the specified serialization and streaming context information.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,9 +118,9 @@
         <Parameter Name="innerException" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="innerException">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">A <see cref="T:System.String" /> that contains a message that explains why the exception occurred.</param>
+        <param name="innerException">Gets the exception instance that causes the current exception. For more information, see the <see cref="P:System.Exception.InnerException" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Transactions.TransactionInDoubtException" /> class with the specified message and inner exception.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

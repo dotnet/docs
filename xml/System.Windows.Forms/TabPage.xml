@@ -34,8 +34,40 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a single tab page in a <see cref="T:System.Windows.Forms.TabControl" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.TabPage> controls represent the tabbed pages in a <xref:System.Windows.Forms.TabControl> control. The order of tab pages in the <xref:System.Windows.Forms.TabControl.TabPages%2A?displayProperty=fullName> collection reflects the order of tabs in the <xref:System.Windows.Forms.TabControl> control. To change the order of tabs in the control, you must change their positions in the collection by removing them and inserting them at new indexes.  
+  
+ <xref:System.Windows.Forms.TabPage> controls are constrained by their container, so some of the properties inherited from the <xref:System.Windows.Forms.Control> base class will have no effect, including <xref:System.Windows.Forms.Control.Top%2A>, <xref:System.Windows.Forms.Control.Height%2A>, <xref:System.Windows.Forms.Control.Left%2A>, <xref:System.Windows.Forms.Control.Width%2A>, <xref:System.Windows.Forms.Control.Show%2A>, and <xref:System.Windows.Forms.Control.Hide%2A>.  
+  
+ The tabs in a <xref:System.Windows.Forms.TabControl> are part of the <xref:System.Windows.Forms.TabControl> but not parts of the individual <xref:System.Windows.Forms.TabPage> controls. Members of the <xref:System.Windows.Forms.TabPage> class, such as the <xref:System.Windows.Forms.Control.ForeColor%2A> property, affect only the client rectangle of the tab page, but not the tabs. Additionally, the <xref:System.Windows.Forms.Control.Hide%2A> method of the <xref:System.Windows.Forms.TabPage> will not hide the tab. To hide the tab, you must remove the <xref:System.Windows.Forms.TabPage> control from the <xref:System.Windows.Forms.TabControl.TabPages%2A?displayProperty=fullName> collection.  
+  
+> [!NOTE]
+>  In [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the tab is considered part of the tab page for determining when the <xref:System.Windows.Forms.Control.Enter> and <xref:System.Windows.Forms.Control.Leave> events of the <xref:System.Windows.Forms.TabPage> occur. In earlier versions of the .NET Framework, the <xref:System.Windows.Forms.Control.Enter> and <xref:System.Windows.Forms.Control.Leave> events of the <xref:System.Windows.Forms.TabPage> do not occur when focus enters or leaves a tab, but only when focus enters or leaves the client rectangle of the tab page.  
+  
+ For more information about how this control responds to the <xref:System.Windows.Forms.Control.Focus%2A> and <xref:System.Windows.Forms.Control.Select%2A> methods, see the following <xref:System.Windows.Forms.Control> members: <xref:System.Windows.Forms.Control.CanFocus%2A>, <xref:System.Windows.Forms.Control.CanSelect%2A>, <xref:System.Windows.Forms.Control.Focused%2A>, <xref:System.Windows.Forms.Control.ContainsFocus%2A>, <xref:System.Windows.Forms.Control.Focus%2A>, <xref:System.Windows.Forms.Control.Select%2A>.  
+  
+> [!NOTE]
+>  Controls contained in a <xref:System.Windows.Forms.TabPage> are not created until the tab page is shown, and any data bindings in these controls are not activated until the tab page is shown.  
+  
+ In [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the <xref:System.Windows.Forms.TabPage.UseVisualStyleBackColor%2A> property lets you indicate whether the background of the tab page should render using the current visual style. This occurs only when the <xref:System.Windows.Forms.TabPage.UseVisualStyleBackColor%2A> and <xref:System.Windows.Forms.Application.RenderWithVisualStyles%2A?displayProperty=fullName> property values are both `true` and the <xref:System.Windows.Forms.TabControl.Appearance%2A> property of the parent <xref:System.Windows.Forms.TabControl> is <xref:System.Windows.Forms.TabAppearance>. Otherwise, the background is painted normally.  
+  
+   
+  
+## Examples  
+ The following code example creates a <xref:System.Windows.Forms.TabControl> with one <xref:System.Windows.Forms.TabPage>.  
+  
+ Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
+  
+ [!code-cpp[TabPage#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TabPage/CPP/form1.cpp#1)]
+ [!code-csharp[TabPage#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TabPage/CS/form1.cs#1)]
+ [!code-vb[TabPage#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TabPage/VB/form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,8 +81,21 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TabPage" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example creates a <xref:System.Windows.Forms.TabControl> with one <xref:System.Windows.Forms.TabPage>. The <xref:System.Windows.Forms.TabPage.%23ctor%2A> constructor instantiates `tabPage1`.  
+  
+ Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
+  
+ [!code-cpp[TabPage_constructor#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TabPage_constructor/CPP/form1.cpp#1)]
+ [!code-csharp[TabPage_constructor#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TabPage_constructor/CS/form1.cs#1)]
+ [!code-vb[TabPage_constructor#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TabPage_constructor/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -66,9 +111,27 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="text">The text for the tab.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TabPage" /> class and specifies the text for the tab.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.TabPage.Text%2A> property is set to the value of the `text` parameter.  
+  
+   
+  
+## Examples  
+ This example creates a <xref:System.Windows.Forms.TabControl> with a <xref:System.Windows.Forms.TabPage>. The <xref:System.Windows.Forms.TabPage.%23ctor%2A> constructor accepts the `myTabPage` string as <xref:System.Windows.Forms.TabPage.Text%2A> for `tabPage1`.  
+  
+ Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
+  
+ [!code-cpp[TabPage_withText#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TabPage_withText/CPP/form1.cpp#1)]
+ [!code-csharp[TabPage_withText#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TabPage_withText/CS/form1.cs#1)]
+ [!code-vb[TabPage_withText#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TabPage_withText/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Anchor">
@@ -92,8 +155,8 @@
         <ReturnType>System.Windows.Forms.AnchorStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This member is not meaningful for this control.</summary>
+        <value>An <see cref="T:System.Windows.Forms.AnchorStyles" /> value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,8 +184,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This property is not meaningful for this control.</summary>
+        <value>The default value is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -147,8 +210,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.TabPage.AutoSize" /> property changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Although you can change the value of the <xref:System.Windows.Forms.TabPage.AutoSize%2A> property and handle this event to determine when the value changes, the <xref:System.Windows.Forms.TabPage.AutoSize%2A> property is not meaningful for this control.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoSizeMode">
@@ -178,8 +248,8 @@
         <ReturnType>System.Windows.Forms.AutoSizeMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This property is not meaningful for this control.</summary>
+        <value>The control grows as much as necessary to fit its contents but does not shrink smaller than the value of its size property</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -196,9 +266,18 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the background color for the <see cref="T:System.Windows.Forms.TabPage" />.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that represents the background color of the <see cref="T:System.Windows.Forms.TabPage" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value of the <xref:System.Windows.Forms.TabPage.BackColor%2A> property is the value of the <xref:System.Windows.Forms.Control.DefaultBackColor%2A?displayProperty=fullName> property unless the <xref:System.Windows.Forms.TabPage.UseVisualStyleBackColor%2A> and <xref:System.Windows.Forms.Application.RenderWithVisualStyles%2A?displayProperty=fullName> property values are both `true` and the <xref:System.Windows.Forms.TabControl.Appearance%2A> property of the parent <xref:System.Windows.Forms.TabControl> has a value of <xref:System.Windows.Forms.TabAppearance>, in which case the default value of the <xref:System.Windows.Forms.TabPage.BackColor%2A> property is <xref:System.Drawing.Color.Transparent%2A>. Child controls that you place on the <xref:System.Windows.Forms.TabPage> inherit the <xref:System.Windows.Forms.TabPage.BackColor%2A> value by default, so this behavior causes the background of the child controls to render with the current visual style.  
+  
+ Changing the value of the <xref:System.Windows.Forms.TabPage.BackColor%2A> property automatically sets the <xref:System.Windows.Forms.TabPage.UseVisualStyleBackColor%2A> property to `false`. If you want the <xref:System.Windows.Forms.TabPage> background to render using visual styles but you want the child controls to inherit a <xref:System.Windows.Forms.TabPage.BackColor%2A> value that you specify, set the <xref:System.Windows.Forms.TabPage.UseVisualStyleBackColor%2A> property after you set the <xref:System.Windows.Forms.TabPage.BackColor%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateControlsInstance">
@@ -215,8 +294,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a new instance of the control collection for the control.</summary>
+        <returns>A new instance of <see cref="T:System.Windows.Forms.Control.ControlCollection" /> assigned to the control.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -241,8 +320,8 @@
         <ReturnType>System.Windows.Forms.DockStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This member is not meaningful for this control.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DockStyle" /> value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -267,8 +346,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.TabPage.Dock" /> property changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.TabPage.Dock%2A> property is not meaningful for this control, although you can change its value and handle the <xref:System.Windows.Forms.TabPage.DockChanged> event to detect the change.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -292,8 +378,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This member is not meaningful for this control.</summary>
+        <value>The default is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -318,8 +404,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.TabPage.Enabled" /> property changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.TabPage.Enabled%2A> property is not meaningful for this control, although you can change its value and handle the <xref:System.Windows.Forms.TabPage.EnabledChanged> event to detect the change.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTabPageOfComponent">
@@ -338,10 +431,23 @@
         <Parameter Name="comp" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="comp">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="comp">The object to look for.</param>
+        <summary>Retrieves the tab page that contains the specified object.</summary>
+        <returns>The <see cref="T:System.Windows.Forms.TabPage" /> that contains the specified object, or <see langword="null" /> if the object cannot be found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example creates a <xref:System.Windows.Forms.TabControl> with two <xref:System.Windows.Forms.TabPage> objects, each containing one <xref:System.Windows.Forms.Button> component. The parameter `button2` is passed to the <xref:System.Windows.Forms.TabPage.GetTabPageOfComponent%2A> method, which retrieves the <xref:System.Windows.Forms.TabPage> containing `button2`. To verify that the correct tab page is retrieved, the <xref:System.Windows.Forms.TabControl.SelectedIndex%2A> property sets the <xref:System.Windows.Forms.TabPage> containing `button2` to the currently selected tab page.  
+  
+ Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
+  
+ [!code-cpp[GetTabPageOfComponent#1](~/samples/snippets/cpp/VS_Snippets_Winforms/GetTabPageOfComponent/CPP/form1.cpp#1)]
+ [!code-csharp[GetTabPageOfComponent#1](~/samples/snippets/csharp/VS_Snippets_Winforms/GetTabPageOfComponent/CS/form1.cs#1)]
+ [!code-vb[GetTabPageOfComponent#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/GetTabPageOfComponent/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ImageIndex">
@@ -374,9 +480,28 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the index to the image displayed on this tab.</summary>
+        <value>The zero-based index to the image in the <see cref="P:System.Windows.Forms.TabControl.ImageList" /> that appears on the tab. The default is -1, which signifies no image.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.TabPage.ImageIndex%2A> points to an image in the associated <xref:System.Windows.Forms.TabControl.ImageList%2A> of the <xref:System.Windows.Forms.TabControl>.  
+  
+   
+  
+## Examples  
+ The following code example creates a <xref:System.Windows.Forms.TabControl> with one <xref:System.Windows.Forms.TabPage>. This example uses the <xref:System.Windows.Forms.TabPage.ImageIndex%2A> property to specify which image from `myImages` displays on the tab of `tabPage1`.  
+  
+ Use the <xref:System.Drawing>, <xref:System.ComponentModel>, <xref:System.Windows.Forms>, and <xref:System.Resources> namespace for this example.  
+  
+ [!code-cpp[TabPage.ImageIndex#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TabPage.ImageIndex/CPP/form1.cpp#1)]
+ [!code-csharp[TabPage.ImageIndex#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TabPage.ImageIndex/CS/form1.cs#1)]
+ [!code-vb[TabPage.ImageIndex#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TabPage.ImageIndex/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.Windows.Forms.TabPage.ImageIndex" /> value is less than -1.</exception>
       </Docs>
     </Member>
     <Member MemberName="ImageKey">
@@ -409,9 +534,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the key accessor for the image in the <see cref="P:System.Windows.Forms.TabControl.ImageList" /> of the associated <see cref="T:System.Windows.Forms.TabControl" />.</summary>
+        <value>A string representing the key of the image.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.TabPage.ImageKey%2A> property specifies the image from the image list to display on the control.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Location">
@@ -435,8 +567,8 @@
         <ReturnType>System.Drawing.Point</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This property is not meaningful for this control.</summary>
+        <value>The x and y coordinates which specifies the location of the object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -461,8 +593,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.TabPage.Location" /> property changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Although you can change the value of the <xref:System.Windows.Forms.TabPage.Location%2A> property and handle this event to determine when the value changes, the <xref:System.Windows.Forms.TabPage.Location%2A> property is not meaningful for this control.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MaximumSize">
@@ -489,8 +628,8 @@
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This property is not meaningful for this control.</summary>
+        <value>The upper limit of the size of the objet.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -515,8 +654,8 @@
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This property is not meaningful for this control.</summary>
+        <value>The lower limit of the size of the objet.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -536,9 +675,23 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Enter" /> event of the <see cref="T:System.Windows.Forms.TabPage" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the tab is considered part of the tab page for determining when the <xref:System.Windows.Forms.Control.Enter> and <xref:System.Windows.Forms.Control.Leave> events of the <xref:System.Windows.Forms.TabPage> occur. In earlier versions of the .NET Framework, the <xref:System.Windows.Forms.Control.Enter> and <xref:System.Windows.Forms.Control.Leave> events of the <xref:System.Windows.Forms.TabPage> do not occur when focus enters or leaves a tab, but only when focus enters or leaves the client rectangle of the tab page.  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
+  
+ The <xref:System.Windows.Forms.TabPage.OnEnter%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.TabPage.OnEnter(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TabPage.OnEnter(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="OnLeave">
@@ -557,9 +710,23 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Leave" /> event of the <see cref="T:System.Windows.Forms.TabPage" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the tab is considered part of the tab page for determining when the <xref:System.Windows.Forms.Control.Enter> and <xref:System.Windows.Forms.Control.Leave> events of the <xref:System.Windows.Forms.TabPage> occur. In earlier versions of the .NET Framework, the <xref:System.Windows.Forms.Control.Enter> and <xref:System.Windows.Forms.Control.Leave> events of the <xref:System.Windows.Forms.TabPage> do not occur when focus enters or leaves a tab, but only when focus enters or leaves the client rectangle of the tab page.  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
+  
+ The <xref:System.Windows.Forms.TabPage.OnLeave%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.TabPage.OnLeave(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TabPage.OnLeave(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="OnPaintBackground">
@@ -578,9 +745,16 @@
         <Parameter Name="e" Type="System.Windows.Forms.PaintEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> that contains data useful for painting the background.</param>
+        <summary>Paints the background of the <see cref="T:System.Windows.Forms.TabPage" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The system calls this method to paint the background of the <xref:System.Windows.Forms.TabPage>. When the <xref:System.Windows.Forms.TabPage.UseVisualStyleBackColor%2A> and <xref:System.Windows.Forms.Application.RenderWithVisualStyles%2A?displayProperty=fullName> property values are both `true` and the <xref:System.Windows.Forms.TabControl.Appearance%2A> property of the parent <xref:System.Windows.Forms.TabControl> is <xref:System.Windows.Forms.TabAppearance>, this method paints the background using the current visual style. Otherwise, this method paints the background as usual.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PreferredSize">
@@ -604,8 +778,8 @@
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This property is not meaningful for this control.</summary>
+        <value>The size of a rectangular area into which the control can fit.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -629,12 +803,12 @@
         <Parameter Name="specified" Type="System.Windows.Forms.BoundsSpecified" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <param name="width">To be added.</param>
-        <param name="height">To be added.</param>
-        <param name="specified">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="x">The new <see cref="P:System.Windows.Forms.Control.Left" /> property value of the control.</param>
+        <param name="y">The new <see cref="P:System.Windows.Forms.Control.Top" /> property value of the control.</param>
+        <param name="width">The new <see cref="P:System.Windows.Forms.Control.Width" /> property value of the control.</param>
+        <param name="height">The new <see cref="P:System.Windows.Forms.Control.Height" /> property value of the control.</param>
+        <param name="specified">A bitwise combination of <see cref="T:System.Windows.Forms.BoundsSpecified" /> values.</param>
+        <summary>This member overrides <see cref="M:System.Windows.Forms.Control.SetBoundsCore(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -659,9 +833,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not meaningful for this control.</summary>
+        <value>The tab order of the control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.Control.TabIndex%2A?displayProperty=fullName> property indicates the order in which controls receive focus as a user presses the TAB key on a form. <xref:System.Windows.Forms.TabPage> controls are contained within <xref:System.Windows.Forms.TabControl> controls, however, and do not receive focus individually as part of the form's TAB order. This property is therefore meaningless for this class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TabIndexChanged">
@@ -685,8 +866,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.TabPage.TabIndex" /> property changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.TabPage.TabIndex%2A> property is not meaningful for this control, although you can change its value and handle the <xref:System.Windows.Forms.TabPage.TabIndexChanged> event to detect the change.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TabStop">
@@ -710,9 +898,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This member is not meaningful for this control.</summary>
+        <value>The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.TabPage> controls are contained within <xref:System.Windows.Forms.TabControl> controls and do not receive focus individually as part of the form's TAB order. This property is therefore meaningless for this class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TabStopChanged">
@@ -736,8 +931,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.TabPage.TabStop" /> property changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.TabPage.TabStop%2A> property is not meaningful for this control, although you can change its value and handle the <xref:System.Windows.Forms.TabPage.TabStopChanged> event to detect the change.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -764,9 +966,27 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the text to display on the tab.</summary>
+        <value>The text to display on the tab.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Changing the <xref:System.Windows.Forms.TabPage.Text%2A> property value does not automatically center the new value on the tab if the <xref:System.Windows.Forms.TabControl> has a <xref:System.Windows.Forms.TabControl.SizeMode%2A> property value of <xref:System.Windows.Forms.TabSizeMode>. You can work around this limitation by setting the <xref:System.Windows.Forms.TabControl.ItemSize%2A?displayProperty=fullName> property or by removing the <xref:System.Windows.Forms.TabPage> from the <xref:System.Windows.Forms.TabControl.TabPages%2A?displayProperty=fullName> collection and adding it back to the collection. Both of these actions will automatically center the text.  
+  
+   
+  
+## Examples  
+ The following code example creates a <xref:System.Windows.Forms.TabControl> with one <xref:System.Windows.Forms.TabPage>. The <xref:System.Windows.Forms.TabPage.Text%2A> property sets the tab page text to `myTabPage`.  
+  
+ Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
+  
+ [!code-cpp[TabText#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TabText/CPP/form1.cpp#1)]
+ [!code-csharp[TabText#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TabText/CS/form1.cs#1)]
+ [!code-vb[TabText#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TabText/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TextChanged">
@@ -790,7 +1010,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.TabControl.Text" /> property changes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -815,9 +1035,27 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the ToolTip text for this tab.</summary>
+        <value>The ToolTip text for this tab.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This tab page belongs to a <xref:System.Windows.Forms.TabControl>. The ToolTip text appears when the user moves the mouse over the tab if the <xref:System.Windows.Forms.TabControl.ShowToolTips%2A> property of the <xref:System.Windows.Forms.TabControl> is `true`. For more information about ToolTips, see the <xref:System.Windows.Forms.ToolTip> class.  
+  
+   
+  
+## Examples  
+ The following code example creates a <xref:System.Windows.Forms.TabControl> with two <xref:System.Windows.Forms.TabPage> objects. The <xref:System.Windows.Forms.TabControl> is set to allow ToolTips, and the tab pages are assigned ToolTip text.  
+  
+ Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
+  
+ [!code-cpp[ToolTipText#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ToolTipText/CPP/form1.cpp#1)]
+ [!code-csharp[ToolTipText#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ToolTipText/CS/form1.cs#1)]
+ [!code-vb[ToolTipText#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ToolTipText/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -834,9 +1072,22 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a string containing the value of the <see cref="P:System.Windows.Forms.TabPage.Text" /> property.</summary>
+        <returns>A string containing the value of the <see cref="P:System.Windows.Forms.TabPage.Text" /> property.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example creates a <xref:System.Windows.Forms.TabControl> with a <xref:System.Windows.Forms.TabPage>. The <xref:System.Windows.Forms.TabPage.ToString%2A> method creates a string that includes the <xref:System.Windows.Forms.TabPage.Text%2A> value for `tabPage1` and returns it to the `tabPage1`<xref:System.Windows.Forms.TabPage.ToolTipText%2A> property.  
+  
+ Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
+  
+ [!code-cpp[TabPage.ToString#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TabPage.ToString/CPP/form1.cpp#1)]
+ [!code-csharp[TabPage.ToString#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TabPage.ToString/CS/form1.cs#1)]
+ [!code-vb[TabPage.ToString#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TabPage.ToString/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UseVisualStyleBackColor">
@@ -857,9 +1108,21 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether the <see cref="T:System.Windows.Forms.TabPage" /> background renders using the current visual style when visual styles are enabled.</summary>
+        <value>
+          <see langword="true" /> to render the background using the current visual style; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.TabPage> background uses the current visual style only when the <xref:System.Windows.Forms.TabPage.UseVisualStyleBackColor%2A> and <xref:System.Windows.Forms.Application.RenderWithVisualStyles%2A?displayProperty=fullName> property values are both `true`.  
+  
+ When the <xref:System.Windows.Forms.TabPage.UseVisualStyleBackColor%2A> and <xref:System.Windows.Forms.Application.RenderWithVisualStyles%2A?displayProperty=fullName> property values are both `true` and the <xref:System.Windows.Forms.TabControl.Appearance%2A> property of the parent <xref:System.Windows.Forms.TabControl> is <xref:System.Windows.Forms.TabAppearance>, the default value of the <xref:System.Windows.Forms.TabPage.BackColor%2A> property is <xref:System.Drawing.Color.Transparent%2A>. Child controls that you place on the <xref:System.Windows.Forms.TabPage> inherit the <xref:System.Windows.Forms.TabPage.BackColor%2A> value by default, so this behavior causes the background of the child controls to render with the current visual style.  
+  
+ Changing the value of the <xref:System.Windows.Forms.TabPage.BackColor%2A> property automatically sets the <xref:System.Windows.Forms.TabPage.UseVisualStyleBackColor%2A> property to `false`. If you want the <xref:System.Windows.Forms.TabPage> background to render using visual styles but you want the child controls to inherit a <xref:System.Windows.Forms.TabPage.BackColor%2A> value that you specify, set the <xref:System.Windows.Forms.TabPage.UseVisualStyleBackColor%2A> property after you set the <xref:System.Windows.Forms.TabPage.BackColor%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -883,9 +1146,18 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This member is not meaningful for this control.</summary>
+        <value>The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is not meaningful for this control.  
+  
+ To hide a tab in a <xref:System.Windows.Forms.TabControl>, you must remove it from the control's <xref:System.Windows.Forms.TabControl.TabPages%2A> collection.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="VisibleChanged">
@@ -909,8 +1181,17 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.TabPage.Visible" /> property changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.TabPage.Visible%2A> property is not meaningful for this control, although you can change its value and handle the <xref:System.Windows.Forms.TabPage.VisibleChanged> event to detect the change.  
+  
+ To hide a tab in a <xref:System.Windows.Forms.TabControl>, you must remove it from the control's <xref:System.Windows.Forms.TabControl.TabPages%2A> collection.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

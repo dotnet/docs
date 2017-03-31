@@ -20,8 +20,26 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains the <see cref="T:System.Runtime.InteropServices.FUNCFLAGS" /> that were originally imported for this method from the COM type library.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The [Tlbimp.exe (Type Library Importer)](../Topic/Tlbimp.exe%20\(Type%20Library%20Importer\).md) applies this attribute to methods.  
+  
+ This attribute is applied when a type library is imported and should never be changed. It is only applied when the method's <xref:System.Runtime.InteropServices.FUNCFLAGS> evaluate to non zero. The attribute is designed to be used by tools that need to know how the original <xref:System.Runtime.InteropServices.FUNCFLAGS> were set. The common language runtime does not use this attribute.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to get the <xref:System.Runtime.InteropServices.TypeLibFuncAttribute> value of a method.  
+  
+ [!code-cpp[ImprovedInteropSnippets#5](~/samples/snippets/cpp/VS_Snippets_CLR/ImprovedInteropSnippets/CPP/codefile5.cpp#5)]
+ [!code-csharp[ImprovedInteropSnippets#5](~/samples/snippets/csharp/VS_Snippets_CLR/ImprovedInteropSnippets/CS/codefile5.cs#5)]
+ [!code-vb[ImprovedInteropSnippets#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/ImprovedInteropSnippets/VB/codefile5.vb#5)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,8 +56,8 @@
         <Parameter Name="flags" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="flags">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="flags">The <see cref="T:System.Runtime.InteropServices.TypeLibFuncFlags" /> value for the attributed method as found in the type library it was imported from.</param>
+        <summary>Initializes a new instance of the <see langword="TypeLibFuncAttribute" /> class with the specified <see cref="T:System.Runtime.InteropServices.TypeLibFuncFlags" /> value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,8 +75,8 @@
         <Parameter Name="flags" Type="System.Runtime.InteropServices.TypeLibFuncFlags" />
       </Parameters>
       <Docs>
-        <param name="flags">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="flags">The <see cref="T:System.Runtime.InteropServices.TypeLibFuncFlags" /> value for the attributed method as found in the type library it was imported from.</param>
+        <summary>Initializes a new instance of the <see langword="TypeLibFuncAttribute" /> class with the specified <see cref="T:System.Runtime.InteropServices.TypeLibFuncFlags" /> value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,8 +94,8 @@
         <ReturnType>System.Runtime.InteropServices.TypeLibFuncFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Runtime.InteropServices.TypeLibFuncFlags" /> value for this method.</summary>
+        <value>The <see cref="T:System.Runtime.InteropServices.TypeLibFuncFlags" /> value for this method.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

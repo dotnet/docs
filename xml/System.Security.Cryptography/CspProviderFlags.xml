@@ -27,7 +27,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies flags that modify the behavior of the cryptographic service providers (CSP).</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -53,7 +53,17 @@
         <ReturnType>System.Security.Cryptography.CspProviderFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Create a temporary key that is released when the associated Rivest-Shamir-Adleman (RSA) object is closed. Do not use this flag if you want your key to be independent of the RSA object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  The CreateEphemeralKey flag provides temporary keys with more reliable cleanup. If this flag is not used, the common language runtime (CLR) generates a randomly named key when an RSA object is created. When the object is finalized or disposed of, the key is deleted. When impersonation is in effect, not explicitly calling `Dispose` can potentially create a problem. For example, if you use impersonation, create an RSA object, and do not dispose of it, the finalizer thread (which is not impersonating) can fail to delete the key, and then throws an exception. This exception is unhandled and can terminate the process. The resources allocated to the key are not recovered, resulting in a memory leak. The <xref:System.Security.Permissions.KeyContainerPermission> demand is suppressed by this flag.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NoFlags">
@@ -78,7 +88,7 @@
         <ReturnType>System.Security.Cryptography.CspProviderFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Do not specify any settings.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoPrompt">
@@ -103,7 +113,7 @@
         <ReturnType>System.Security.Cryptography.CspProviderFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Prevent the CSP from displaying any user interface (UI) for this context.</summary>
       </Docs>
     </Member>
     <Member MemberName="UseArchivableKey">
@@ -128,7 +138,7 @@
         <ReturnType>System.Security.Cryptography.CspProviderFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Allow a key to be exported for archival or recovery.</summary>
       </Docs>
     </Member>
     <Member MemberName="UseDefaultKeyContainer">
@@ -153,7 +163,7 @@
         <ReturnType>System.Security.Cryptography.CspProviderFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use key information from the default key container.</summary>
       </Docs>
     </Member>
     <Member MemberName="UseExistingKey">
@@ -178,7 +188,7 @@
         <ReturnType>System.Security.Cryptography.CspProviderFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use key information from the current key.</summary>
       </Docs>
     </Member>
     <Member MemberName="UseMachineKeyStore">
@@ -203,7 +213,7 @@
         <ReturnType>System.Security.Cryptography.CspProviderFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use key information from the computer's key store.</summary>
       </Docs>
     </Member>
     <Member MemberName="UseNonExportableKey">
@@ -228,7 +238,7 @@
         <ReturnType>System.Security.Cryptography.CspProviderFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use key information that cannot be exported.</summary>
       </Docs>
     </Member>
     <Member MemberName="UseUserProtectedKey">
@@ -253,7 +263,7 @@
         <ReturnType>System.Security.Cryptography.CspProviderFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Notify the user through a dialog box or another method when certain actions are attempting to use a key.  This flag is not compatible with the <see cref="F:System.Security.Cryptography.CspProviderFlags.NoPrompt" /> flag.</summary>
       </Docs>
     </Member>
   </Members>

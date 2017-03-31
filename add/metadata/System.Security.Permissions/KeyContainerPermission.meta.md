@@ -1,64 +1,97 @@
 ---
 uid: System.Security.Permissions.KeyContainerPermission
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.KeyContainerPermission.#ctor(System.Security.Permissions.PermissionState)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.KeyContainerPermission.#ctor(System.Security.Permissions.KeyContainerPermissionFlags)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.KeyContainerPermission.Flags
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.KeyContainerPermission.AccessEntries
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.KeyContainerPermission.Copy
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Permissions.KeyContainerPermission.#ctor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.KeyContainerPermission.IsSubsetOf(System.Security.IPermission)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.KeyContainerPermission.FromXml(System.Security.SecurityElement)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.KeyContainerPermission.IsUnrestricted
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.KeyContainerPermission.#ctor(System.Security.Permissions.KeyContainerPermissionFlags,System.Security.Permissions.KeyContainerPermissionAccessEntry[])
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.KeyContainerPermission.Intersect(System.Security.IPermission)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.KeyContainerPermission.ToXml
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.KeyContainerPermission.Union(System.Security.IPermission)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

@@ -1,14 +1,20 @@
 ---
 uid: System.Xml.Serialization.Configuration.DateTimeSerializationSection
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.Configuration.DateTimeSerializationSection.Mode
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.Configuration.DateTimeSerializationSection.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

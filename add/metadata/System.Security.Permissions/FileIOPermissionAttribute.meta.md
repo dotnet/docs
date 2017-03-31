@@ -1,64 +1,90 @@
 ---
 uid: System.Security.Permissions.FileIOPermissionAttribute
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.FileIOPermissionAttribute.ViewAccessControl
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.FileIOPermissionAttribute.ViewAndModify
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.FileIOPermissionAttribute.Append
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.FileIOPermissionAttribute.AllFiles
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.FileIOPermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.FileIOPermissionAttribute.Write
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.FileIOPermissionAttribute.ChangeAccessControl
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.FileIOPermissionAttribute.AllLocalFiles
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.FileIOPermissionAttribute.Read
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.FileIOPermissionAttribute.All
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.FileIOPermissionAttribute.CreatePermission
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.FileIOPermissionAttribute.PathDiscovery
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

@@ -18,8 +18,19 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the values that define a Peer <see cref="T:System.Net.PeerToPeer.Cloud" /> object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Net.PeerToPeer.Cloud> is a set of nodes that can communicate with each other through the network. Cloud, peer mesh, and peer-to-peer graph are synonymous. A single peer or node may be connected to more than one cloud.  
+  
+ Communication between nodes should never cross from one cloud to another. A <xref:System.Net.PeerToPeer.Cloud> instance is uniquely identified by its name, which is case-sensitive.  
+  
+ Clouds are tied very closely to network interfaces.  On a multi-homed machine with two network cards attached to different subnets, three clouds will be returned: one for each of the link local addresses per interface, and a single global scope cloud.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,10 +47,17 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="info">Reference to the object that holds the data needed to deserialize this instance.</param>
+        <param name="context">Context that provides the means for deserializing the data. Also referred to as the source of the serialized data.</param>
+        <summary>Initializes a new instance of the PNRP <see cref="T:System.Net.PeerToPeer.Cloud" /> type. This populates a serialization information object with the data needed to serialize the Cloud object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.PeerToPeer.Cloud.Name%2A> property contains the name of the cloud object.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AllLinkLocal">
@@ -55,8 +73,15 @@
         <ReturnType>System.Net.PeerToPeer.Cloud</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Returns a reference to a <see cref="T:System.Net.PeerToPeer.Cloud" /> which represents all the link-local clouds in which the client or peer is currently participating.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use of this property causes a <xref:System.Net.PeerToPeer.PeerNameRegistration> or <xref:System.Net.PeerToPeer.PeerNameResolver.Resolve%2A> to occur in all possible link local clouds.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Available">
@@ -72,8 +97,16 @@
         <ReturnType>System.Net.PeerToPeer.Cloud</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Returns a static reference to a <see cref="T:System.Net.PeerToPeer.Cloud" /> which represents all the available clouds in which the client is currently participating.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+-   This field is used to automatically call  <xref:System.Net.PeerToPeer.PeerNameRegistration> or <xref:System.Net.PeerToPeer.PeerNameResolver.Resolve%2A> to on all possible clouds.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -92,10 +125,18 @@
         <Parameter Name="other" Type="System.Net.PeerToPeer.Cloud" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="other">The cloud to compare with this <see cref="T:System.Net.PeerToPeer.Cloud" />.</param>
+        <summary>Performs a case-sensitive comparison between two cloud objects.</summary>
+        <returns>
+          <see langword="True" /> if the <see cref="T:System.Net.PeerToPeer.Cloud" /> specified identifies the same resource as the current one, otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No normalizations are performed on the strings prior to comparison.  All normalization should have been completed at the time the <xref:System.Net.PeerToPeer.Cloud> objects were constructed.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -114,10 +155,20 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="obj">The <see cref="T:System.Object" /> to compare with this <see cref="T:System.Net.PeerToPeer.Cloud" />.</param>
+        <summary>Determines whether the content of this peer <see cref="T:System.Net.PeerToPeer.Cloud" /> is equivalent to the content of a <see cref="N:System" /> object.</summary>
+        <returns>
+          <see langword="True" /> if the <see cref="T:System.Net.PeerToPeer.PeerName" /> and the comparison object contain the same information; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method inherits the default signature and behavior from <xref:System.Object>.  
+  
+ Other objects that may be compared with <xref:System.Net.PeerToPeer> clouds include PeopleNearMe clouds and peer meshes available via the Windows SDK Networking Services.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAvailableClouds">
@@ -134,9 +185,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Obtains a collection of peer clouds known to the calling peer.</summary>
+        <returns>A <see cref="T:System.Net.PeerToPeer.CloudCollection" /> object that specifies a collection of peer clouds known to the calling peer.  If no clouds are available, <see langword="null" /> is returned.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method and the <xref:System.Net.PeerToPeer.Cloud.GetCloudByName%2A> methods are the only ways to get new instances of the <xref:System.Net.PeerToPeer.Cloud> class.  
+  
+ Clouds are tied very closely to network interfaces.  On a multi-homed machine with two network cards attached to different subnets, three clouds will be returned: one for each of the link local addresses per interface, and a single <xref:System.Net.PeerToPeer.Cloud.Global%2A> scope <xref:System.Net.PeerToPeer.Cloud>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCloudByName">
@@ -155,10 +215,22 @@
         <Parameter Name="cloudName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="cloudName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="cloudName">Contains the name of the PNRP <see cref="T:System.Net.PeerToPeer.Cloud" />.</param>
+        <summary>Returns the <see cref="T:System.Net.PeerToPeer.Cloud" /> object with the specified cloud name.</summary>
+        <returns>The <see cref="T:System.Net.PeerToPeer.Cloud" /> object with the specified cloud name.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The maximum size of the name is 256 characters.  
+  
+ If the `cloudName` parameter is `null` or empty, then `null` is returned.  
+  
+ The scope of the cloud, <xref:System.Net.PeerToPeer.Cloud.Global%2A>, link-local, or otherwise, is specified in <xref:System.Net.PeerToPeer.Cloud.Scope%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <see cref="T:System.Net.PeerToPeer.Cloud" /> name is not known.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -175,9 +247,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Overrides <see cref="M:System.Object.GetHashCode" />.</summary>
+        <returns>A hashcode for the current <see cref="T:System.Object" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Two objects are considered equal if this method returns the same hashcode for both of them.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -197,9 +276,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">Holds the serialized data associated with the <see cref="T:System.Net.PeerToPeer.Cloud" /> object.</param>
+        <param name="context">Contains the destination for the serialized stream associated with the <see cref="T:System.Net.PeerToPeer.Cloud" /> object.</param>
+        <summary>Populates a <see cref="N:System.Runtime.Serialization" /> information object with the data needed to serialize the <see cref="T:System.Net.PeerToPeer.Cloud" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -216,8 +295,9 @@
         <ReturnType>System.Net.PeerToPeer.Cloud</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.Net.PeerToPeer.Cloud" /> instance that contains globally (internet) scoped peers.</summary>
+        <value>
+          <see cref="T:System.Net.PeerToPeer.Cloud" /> which contains the peers that will communicate via the global network scope.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -234,9 +314,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the name of the peer <see cref="T:System.Net.PeerToPeer.Cloud" />.</summary>
+        <value>The name of the peer <see cref="T:System.Net.PeerToPeer.Cloud" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Names are case sensitive and are Unicode encoded. They are under 128 characters in length.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Scope">
@@ -252,9 +339,17 @@
         <ReturnType>System.Net.PeerToPeer.PnrpScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the network scope of the peer <see cref="T:System.Net.PeerToPeer.Cloud" />.</summary>
+        <value>
+          <see cref="T:System.Net.PeerToPeer.PnrpScope" /> enumeration value that specifies the PNRP scope of the current peer cloud instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Clouds are tied very closely to network interfaces.  On a multi-homed machine with two network cards attached to different subnets, three network scopes are possible: one for each of the link local addresses per interface, and a single <xref:System.Net.PeerToPeer.Cloud.Global%2A> scope <xref:System.Net.PeerToPeer.Cloud>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ScopeId">
@@ -270,9 +365,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the identifier of a specific IP address for this peer <see cref="T:System.Net.PeerToPeer.Cloud" />.</summary>
+        <value>An integer value that specifies the scope-specific ID for this peer cloud.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ On a multi-homed machine with two network cards attached to different subnets, two network scopes are possible: one is a link local <xref:System.Net.PeerToPeer.Cloud.Scope%2A>, and the other is <xref:System.Net.PeerToPeer.Cloud.Global%2A> scope.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
@@ -297,9 +399,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">Holds the serialized data associated with the <see cref="T:System.Net.PeerToPeer.Cloud" /> object.</param>
+        <param name="context">Contains the destination for the serialized stream associated with the <see cref="T:System.Net.PeerToPeer.Cloud" /> object.</param>
+        <summary>Implements the <see cref="T:System.Runtime.Serialization.ISerializable" /> interface and returns the data needed to serialize the <see cref="T:System.Net.PeerToPeer.Cloud" /> instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -317,9 +419,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a string representation of the current <see cref="T:System.Net.PeerToPeer.Cloud" />.</summary>
+        <returns>A string that represents the current <see cref="T:System.Net.PeerToPeer.Cloud" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method inherits the default signature and behavior from <xref:System.Object>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

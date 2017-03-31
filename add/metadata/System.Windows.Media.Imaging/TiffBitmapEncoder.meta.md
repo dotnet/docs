@@ -1,14 +1,20 @@
 ---
 uid: System.Windows.Media.Imaging.TiffBitmapEncoder
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Imaging.TiffBitmapEncoder.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Imaging.TiffBitmapEncoder.Compression
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

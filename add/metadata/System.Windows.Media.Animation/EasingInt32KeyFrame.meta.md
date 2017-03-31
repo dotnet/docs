@@ -1,44 +1,67 @@
 ---
 uid: System.Windows.Media.Animation.EasingInt32KeyFrame
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.EasingInt32KeyFrame.CreateInstanceCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.EasingInt32KeyFrame.#ctor(System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.EasingInt32KeyFrame.#ctor(System.Int32,System.Windows.Media.Animation.KeyTime)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.EasingInt32KeyFrame.EasingFunctionProperty
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Animation.EasingInt32KeyFrame.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.EasingInt32KeyFrame.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.EasingInt32KeyFrame.InterpolateValueCore(System.Int32,System.Double)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.EasingInt32KeyFrame.#ctor(System.Int32,System.Windows.Media.Animation.KeyTime,System.Windows.Media.Animation.IEasingFunction)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.EasingInt32KeyFrame.EasingFunction
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

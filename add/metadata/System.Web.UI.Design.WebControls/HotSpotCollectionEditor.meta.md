@@ -1,24 +1,29 @@
 ---
 uid: System.Web.UI.Design.WebControls.HotSpotCollectionEditor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.HotSpotCollectionEditor.CreateNewItemTypes
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.HotSpotCollectionEditor.CanSelectMultipleInstances
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.HotSpotCollectionEditor.HelpTopic
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.HotSpotCollectionEditor.#ctor(System.Type)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

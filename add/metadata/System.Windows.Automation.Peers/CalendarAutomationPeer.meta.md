@@ -1,84 +1,110 @@
 ---
 uid: System.Windows.Automation.Peers.CalendarAutomationPeer
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.CalendarAutomationPeer.#ctor(System.Windows.Controls.Calendar)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.CalendarAutomationPeer.System#Windows#Automation#Provider#ITableProvider#GetColumnHeaders
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.CalendarAutomationPeer.System#Windows#Automation#Provider#IMultipleViewProvider#GetViewName(System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.CalendarAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.CalendarAutomationPeer.System#Windows#Automation#Provider#ITableProvider#RowOrColumnMajor
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.CalendarAutomationPeer.System#Windows#Automation#Provider#ISelectionProvider#IsSelectionRequired
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.CalendarAutomationPeer.System#Windows#Automation#Provider#IItemContainerProvider#FindItemByProperty(System.Windows.Automation.Provider.IRawElementProviderSimple,System.Int32,System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.CalendarAutomationPeer.System#Windows#Automation#Provider#IMultipleViewProvider#SetCurrentView(System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.CalendarAutomationPeer.System#Windows#Automation#Provider#IGridProvider#RowCount
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.CalendarAutomationPeer.System#Windows#Automation#Provider#IGridProvider#GetItem(System.Int32,System.Int32)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.CalendarAutomationPeer.System#Windows#Automation#Provider#IGridProvider#ColumnCount
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.CalendarAutomationPeer.System#Windows#Automation#Provider#ISelectionProvider#CanSelectMultiple
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.CalendarAutomationPeer.System#Windows#Automation#Provider#IMultipleViewProvider#CurrentView
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.CalendarAutomationPeer.System#Windows#Automation#Provider#IMultipleViewProvider#GetSupportedViews
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.CalendarAutomationPeer.System#Windows#Automation#Provider#ISelectionProvider#GetSelection
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.CalendarAutomationPeer.System#Windows#Automation#Provider#ITableProvider#GetRowHeaders
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

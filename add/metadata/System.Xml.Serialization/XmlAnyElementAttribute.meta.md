@@ -1,34 +1,55 @@
 ---
 uid: System.Xml.Serialization.XmlAnyElementAttribute
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.XmlAnyElementAttribute.Order
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.XmlAnyElementAttribute.#ctor(System.String,System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.XmlAnyElementAttribute.Namespace
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.XmlAnyElementAttribute.#ctor(System.String)
-internalonly: False
----
-
----
-uid: System.Xml.Serialization.XmlAnyElementAttribute.Name
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.XmlAnyElementAttribute.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Xml.Serialization.XmlAnyElementAttribute.Name
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Xml.Serialization.XmlAnyElementAttribute.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

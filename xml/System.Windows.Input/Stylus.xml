@@ -11,8 +11,18 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides access to general information about a tablet pen.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to record the coordinates of the stylus, even if the stylus leaves the bounds of a <xref:System.Windows.Controls.TextBox>. This example assumes that there is a <xref:System.Windows.Controls.TextBox> called `textBox1`, and that the <xref:System.Windows.Input.Stylus.StylusDown>, <xref:System.Windows.Input.Stylus.StylusUp>, and <xref:System.Windows.Input.Stylus.StylusMove> events are connected to event handlers.  
+  
+ [!code-csharp[StylusSamples#1](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSamples/CSharp/Window1.xaml.cs#1)]
+ [!code-vb[StylusSamples#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSamples/VisualBasic/Window1.xaml.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AddGotStylusCaptureHandler">
@@ -32,9 +42,9 @@
         <Parameter Name="handler" Type="System.Windows.Input.StylusEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to add.</param>
+        <summary>Adds a handler for the <see cref="E:System.Windows.Input.Stylus.GotStylusCapture" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,9 +65,9 @@
         <Parameter Name="handler" Type="System.Windows.Input.StylusEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to add.</param>
+        <summary>Adds a handler for the <see cref="E:System.Windows.Input.Stylus.LostStylusCapture" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,9 +88,9 @@
         <Parameter Name="handler" Type="System.Windows.Input.StylusButtonEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to add.</param>
+        <summary>Adds a handler for the <see cref="E:System.Windows.Input.Stylus.PreviewStylusButtonDown" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,9 +111,9 @@
         <Parameter Name="handler" Type="System.Windows.Input.StylusButtonEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to add.</param>
+        <summary>Adds a handler for the <see cref="E:System.Windows.Input.Stylus.PreviewStylusButtonUp" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,9 +134,9 @@
         <Parameter Name="handler" Type="System.Windows.Input.StylusDownEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to add.</param>
+        <summary>Adds a handler for the <see cref="E:System.Windows.Input.Stylus.PreviewStylusDown" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -147,9 +157,9 @@
         <Parameter Name="handler" Type="System.Windows.Input.StylusEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to add.</param>
+        <summary>Adds a handler for the <see cref="E:System.Windows.Input.Stylus.PreviewStylusInAirMove" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -170,9 +180,9 @@
         <Parameter Name="handler" Type="System.Windows.Input.StylusEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to add.</param>
+        <summary>Adds a handler for the <see cref="E:System.Windows.Input.Stylus.PreviewStylusInRange" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -193,9 +203,9 @@
         <Parameter Name="handler" Type="System.Windows.Input.StylusEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to add.</param>
+        <summary>Adds a handler for the <see cref="E:System.Windows.Input.Stylus.PreviewStylusMove" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -216,9 +226,9 @@
         <Parameter Name="handler" Type="System.Windows.Input.StylusEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to add.</param>
+        <summary>Adds a handler for the <see cref="E:System.Windows.Input.Stylus.PreviewStylusOutOfRange" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -239,9 +249,9 @@
         <Parameter Name="handler" Type="System.Windows.Input.StylusSystemGestureEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to add.</param>
+        <summary>Adds a handler for the <see cref="E:System.Windows.Input.Stylus.PreviewStylusSystemGesture" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -262,9 +272,9 @@
         <Parameter Name="handler" Type="System.Windows.Input.StylusEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to add.</param>
+        <summary>Adds a handler for the <see cref="E:System.Windows.Input.Stylus.PreviewStylusUp" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -285,9 +295,9 @@
         <Parameter Name="handler" Type="System.Windows.Input.StylusButtonEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to add.</param>
+        <summary>Adds a handler for the <see cref="E:System.Windows.Input.Stylus.StylusButtonDown" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -308,9 +318,9 @@
         <Parameter Name="handler" Type="System.Windows.Input.StylusButtonEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to add.</param>
+        <summary>Adds a handler for the <see cref="E:System.Windows.Input.Stylus.StylusButtonUp" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -331,9 +341,9 @@
         <Parameter Name="handler" Type="System.Windows.Input.StylusDownEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to add.</param>
+        <summary>Adds a handler for the <see cref="E:System.Windows.Input.Stylus.StylusDown" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -354,9 +364,9 @@
         <Parameter Name="handler" Type="System.Windows.Input.StylusEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to add.</param>
+        <summary>Adds a handler for the <see cref="E:System.Windows.Input.Stylus.StylusEnter" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -377,9 +387,9 @@
         <Parameter Name="handler" Type="System.Windows.Input.StylusEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to add.</param>
+        <summary>Adds a handler for the <see cref="E:System.Windows.Input.Stylus.StylusInAirMove" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -400,9 +410,9 @@
         <Parameter Name="handler" Type="System.Windows.Input.StylusEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to add.</param>
+        <summary>Adds a handler for the <see cref="E:System.Windows.Input.Stylus.StylusInRange" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -423,9 +433,9 @@
         <Parameter Name="handler" Type="System.Windows.Input.StylusEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to add.</param>
+        <summary>Adds a handler for the <see cref="E:System.Windows.Input.Stylus.StylusLeave" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -446,9 +456,9 @@
         <Parameter Name="handler" Type="System.Windows.Input.StylusEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to add.</param>
+        <summary>Adds a handler for the <see cref="E:System.Windows.Input.Stylus.StylusMove" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -469,9 +479,9 @@
         <Parameter Name="handler" Type="System.Windows.Input.StylusEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to add.</param>
+        <summary>Adds a handler for the <see cref="E:System.Windows.Input.Stylus.StylusOutOfRange" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -492,9 +502,9 @@
         <Parameter Name="handler" Type="System.Windows.Input.StylusSystemGestureEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to add.</param>
+        <summary>Adds a handler for the <see cref="E:System.Windows.Input.Stylus.StylusSystemGesture" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -515,9 +525,9 @@
         <Parameter Name="handler" Type="System.Windows.Input.StylusEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to add.</param>
+        <summary>Adds a handler for the <see cref="E:System.Windows.Input.Stylus.StylusUp" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -537,10 +547,28 @@
         <Parameter Name="element" Type="System.Windows.IInputElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="element">The element to capture the stylus to.</param>
+        <summary>Captures the stylus to the specified element.</summary>
+        <returns>
+          <see langword="true" /> if the stylus is captured to <paramref name="element" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Input.Stylus.Capture%28System.Windows.IInputElement%29> method to ensure that `element` receives stylus events even when the cursor goes out of the elements' bounds. To release the stylus, call <xref:System.Windows.Input.Stylus.Capture%28System.Windows.IInputElement%2CSystem.Windows.Input.CaptureMode%29> with the <xref:System.Windows.Input.CaptureMode> set to <xref:System.Windows.Input.CaptureMode>.  
+  
+ The <xref:System.Windows.Input.Stylus.Capture%28System.Windows.IInputElement%29> method returns `false` if `element` is not visible or enabled.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to record the coordinates of the stylus, even if the stylus leaves the bounds of a <xref:System.Windows.Controls.TextBox>. This example assumes there is a <xref:System.Windows.Controls.TextBox> called `textBox1`, and that the <xref:System.Windows.Input.Stylus.StylusDown>, <xref:System.Windows.Input.Stylus.StylusUp>, and <xref:System.Windows.Input.Stylus.StylusMove> events are connected to event handlers.  
+  
+ [!code-csharp[StylusSamples#1](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSamples/CSharp/Window1.xaml.cs#1)]
+ [!code-vb[StylusSamples#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSamples/VisualBasic/Window1.xaml.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Capture">
@@ -560,11 +588,29 @@
         <Parameter Name="captureMode" Type="System.Windows.Input.CaptureMode" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="captureMode">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="element">The element to capture the stylus to.</param>
+        <param name="captureMode">One of the <see cref="T:System.Windows.Input.CaptureMode" /> values.</param>
+        <summary>Captures the stylus to the specified element.</summary>
+        <returns>
+          <see langword="true" /> if the stylus is captured to <paramref name="element" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Input.Stylus.Capture%28System.Windows.IInputElement%2CSystem.Windows.Input.CaptureMode%29> method to ensure that `element` receives stylus events even when the cursor goes out of the elements' bounds. To release the stylus, call <xref:System.Windows.Input.Stylus.Capture%28System.Windows.IInputElement%2CSystem.Windows.Input.CaptureMode%29> with the <xref:System.Windows.Input.CaptureMode> set to <xref:System.Windows.Input.CaptureMode>.  
+  
+ The <xref:System.Windows.Input.Stylus.Capture%28System.Windows.IInputElement%2CSystem.Windows.Input.CaptureMode%29> method returns `false` if `element` is not visible or enabled.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to record the coordinates of the stylus, even if the stylus leaves the bounds of a <xref:System.Windows.Controls.TextBox>. This example assumes that there is a <xref:System.Windows.Controls.TextBox> called `textBox1`, and that the <xref:System.Windows.Input.Stylus.StylusDown>, <xref:System.Windows.Input.Stylus.StylusUp>, and <xref:System.Windows.Input.Stylus.StylusMove> events are connected to the event handlers.  
+  
+ [!code-csharp[StylusSamples#1](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSamples/CSharp/Window1.xaml.cs#1)]
+ [!code-vb[StylusSamples#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSamples/VisualBasic/Window1.xaml.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Captured">
@@ -580,9 +626,19 @@
         <ReturnType>System.Windows.IInputElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the element to which the stylus is bound.</summary>
+        <value>The <see cref="T:System.Windows.IInputElement" /> to which the stylus is bound.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to ensure that the stylus is not captured when the user touches the stylus to the digitizer. This example assumes that the <xref:System.Windows.Input.Stylus.PreviewStylusDown> event is connected to the event handler.  
+  
+ [!code-csharp[StylusSamples#5](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSamples/CSharp/Window1.xaml.cs#5)]
+ [!code-vb[StylusSamples#5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSamples/VisualBasic/Window1.xaml.vb#5)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CurrentStylusDevice">
@@ -603,9 +659,19 @@
         <ReturnType>System.Windows.Input.StylusDevice</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the stylus that represents the stylus currently in use.</summary>
+        <value>The <see cref="T:System.Windows.Input.StylusDevice" /> that represents the stylus currently in use.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to erase the text that is selected with an inverted stylus. This example assumes that there is a <xref:System.Windows.Controls.TextBox> called `textBox1` and that the <xref:System.Windows.Input.Stylus.StylusUpEvent> event is connected to the event handler.  
+  
+ [!code-csharp[StylusSamples#8](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSamples/CSharp/Window1.xaml.cs#8)]
+ [!code-vb[StylusSamples#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSamples/VisualBasic/Window1.xaml.vb#8)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DirectlyOver">
@@ -621,9 +687,19 @@
         <ReturnType>System.Windows.IInputElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the element that is directly beneath the stylus.</summary>
+        <value>The <see cref="T:System.Windows.IInputElement" /> that is directly beneath the stylus.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to determine which element the stylus is positioned over. This example assumes that there is a <xref:System.Windows.Controls.TextBox> called `textBox1` and that the <xref:System.Windows.Input.Stylus.StylusInAirMove> event is connected to the event handler.  
+  
+ [!code-csharp[StylusSamples#3](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSamples/CSharp/Window1.xaml.cs#3)]
+ [!code-vb[StylusSamples#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSamples/VisualBasic/Window1.xaml.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetIsFlicksEnabled">
@@ -647,10 +723,26 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="element">A <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> on which to determine whether flicks are enabled.</param>
+        <summary>Gets the value of the <see cref="P:System.Windows.Input.Stylus.IsFlicksEnabled" /> attached property on the specified element.</summary>
+        <returns>
+          <see langword="true" /> if the specified element has flicks enabled; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In Windows Vista, a flick, one of the possible system gestures, is a short, quick, straight stroke that can be mapped to a navigation or shortcut command. By default, flicks are disabled on the <xref:System.Windows.Controls.InkCanvas>, <xref:System.Windows.Controls.InkPresenter>, and <xref:System.Windows.Controls.Primitives.ScrollBar>. Flicks are enabled on all other controls.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to determine whether flicks are enabled on a <xref:System.Windows.Controls.Canvas>.  
+  
+ [!code-csharp[GestureSample#6](~/samples/snippets/csharp/VS_Snippets_Wpf/GestureSample/CSharp/Window1.xaml.cs#6)]
+ [!code-vb[GestureSample#6](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GestureSample/VisualBasic/Window1.xaml.vb#6)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetIsPressAndHoldEnabled">
@@ -674,10 +766,21 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="element">A <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> on which to determine whether press and hold is enabled.</param>
+        <summary>Gets the value of the <see cref="P:System.Windows.Input.Stylus.IsPressAndHoldEnabled" /> attached property on the specified element.</summary>
+        <returns>
+          <see langword="true" /> if the specified element has press and hold enabled; otherwise, <see langword="false" />;</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to enable press and hold on a <xref:System.Windows.Controls.Slider>. This example assumes that there is a <xref:System.Windows.Controls.Slider> called `horizontalSlider1`.  
+  
+ [!code-csharp[StylusSamples#9](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSamples/CSharp/Window1.xaml.cs#9)]
+ [!code-vb[StylusSamples#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSamples/VisualBasic/Window1.xaml.vb#9)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetIsTapFeedbackEnabled">
@@ -701,10 +804,26 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="element">A <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> on which to determine whether tap feedback enabled.</param>
+        <summary>Gets the value of the <see cref="P:System.Windows.Input.Stylus.IsTapFeedbackEnabled" /> attached property on the specified element.</summary>
+        <returns>
+          <see langword="true" /> if the specified element has tap feedback enabled; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In Windows Vista, a short animation occurs when the user taps the control.  By default, tap feedback is disabled on the <xref:System.Windows.Controls.InkCanvas>. It is enabled on all other controls.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to determine whether tap feedback is enabled on a <xref:System.Windows.Controls.Canvas>.  
+  
+ [!code-csharp[GestureSample#5](~/samples/snippets/csharp/VS_Snippets_Wpf/GestureSample/CSharp/Window1.xaml.cs#5)]
+ [!code-vb[GestureSample#5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GestureSample/VisualBasic/Window1.xaml.vb#5)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetIsTouchFeedbackEnabled">
@@ -723,10 +842,21 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="element">A <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> on which to determine whether touch input feedback enabled.</param>
+        <summary>Gets the value of the <see cref="P:System.Windows.Input.Stylus.IsTouchFeedbackEnabled" /> attached property on the specified element.</summary>
+        <returns>
+          <see langword="true" /> if touch input feedback is enabled, otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to determine whether tap feedback is enabled on an <xref:System.Windows.Controls.InkCanvas>.  
+  
+ [!code-csharp[GestureSample#7](~/samples/snippets/csharp/VS_Snippets_Wpf/GestureSample/CSharp/Window1.xaml.cs#7)]
+ [!code-vb[GestureSample#7](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GestureSample/VisualBasic/Window1.xaml.vb#7)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GotStylusCaptureEvent">
@@ -742,7 +872,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="E:System.Windows.Input.Stylus.GotStylusCapture" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -759,7 +889,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Input.Stylus.IsFlicksEnabled" /> attached property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -776,7 +906,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Input.Stylus.IsPressAndHoldEnabled" /> attached property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -793,7 +923,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Input.Stylus.IsTapFeedbackEnabled" /> attached property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -810,7 +940,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Input.Stylus.IsTouchFeedbackEnabled" /> attached property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -827,7 +957,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="E:System.Windows.Input.Stylus.LostStylusCapture" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -844,7 +974,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="E:System.Windows.Input.Stylus.PreviewStylusButtonDown" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -861,7 +991,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="E:System.Windows.Input.Stylus.PreviewStylusButtonUp" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -878,7 +1008,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="E:System.Windows.Input.Stylus.PreviewStylusDown" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -895,7 +1025,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="E:System.Windows.Input.Stylus.PreviewStylusInAirMove" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -912,7 +1042,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="E:System.Windows.Input.Stylus.PreviewStylusInRange" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -929,7 +1059,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="E:System.Windows.Input.Stylus.PreviewStylusMove" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -946,7 +1076,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="E:System.Windows.Input.Stylus.PreviewStylusOutOfRange" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -963,7 +1093,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="E:System.Windows.Input.Stylus.PreviewStylusSystemGesture" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -980,7 +1110,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="E:System.Windows.Input.Stylus.PreviewStylusUp" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1001,9 +1131,9 @@
         <Parameter Name="handler" Type="System.Windows.Input.StylusEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to remove.</param>
+        <summary>Removes a handler for the <see cref="E:System.Windows.Input.Stylus.GotStylusCapture" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1024,9 +1154,9 @@
         <Parameter Name="handler" Type="System.Windows.Input.StylusEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to remove.</param>
+        <summary>Removes a handler for the <see cref="E:System.Windows.Input.Stylus.LostStylusCapture" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1047,9 +1177,9 @@
         <Parameter Name="handler" Type="System.Windows.Input.StylusButtonEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to remove.</param>
+        <summary>Removes a handler for the <see cref="E:System.Windows.Input.Stylus.PreviewStylusButtonDown" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1070,9 +1200,9 @@
         <Parameter Name="handler" Type="System.Windows.Input.StylusButtonEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to remove.</param>
+        <summary>Removes a handler for the <see cref="E:System.Windows.Input.Stylus.PreviewStylusButtonUp" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1093,9 +1223,9 @@
         <Parameter Name="handler" Type="System.Windows.Input.StylusDownEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to remove.</param>
+        <summary>Removes a handler for the <see cref="E:System.Windows.Input.Stylus.PreviewStylusDown" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1116,9 +1246,9 @@
         <Parameter Name="handler" Type="System.Windows.Input.StylusEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to remove.</param>
+        <summary>Removes a handler for the <see cref="E:System.Windows.Input.Stylus.PreviewStylusInAirMove" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1139,9 +1269,9 @@
         <Parameter Name="handler" Type="System.Windows.Input.StylusEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to remove.</param>
+        <summary>Removes a handler for the <see cref="E:System.Windows.Input.Stylus.PreviewStylusInRange" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1162,9 +1292,9 @@
         <Parameter Name="handler" Type="System.Windows.Input.StylusEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to remove.</param>
+        <summary>Removes a handler for the <see cref="E:System.Windows.Input.Stylus.PreviewStylusMove" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1185,9 +1315,9 @@
         <Parameter Name="handler" Type="System.Windows.Input.StylusEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to remove.</param>
+        <summary>Removes a handler for the <see cref="E:System.Windows.Input.Stylus.PreviewStylusOutOfRange" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1208,9 +1338,9 @@
         <Parameter Name="handler" Type="System.Windows.Input.StylusSystemGestureEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to remove.</param>
+        <summary>Removes a handler for the <see cref="E:System.Windows.Input.Stylus.PreviewStylusSystemGesture" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1231,9 +1361,9 @@
         <Parameter Name="handler" Type="System.Windows.Input.StylusEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to remove.</param>
+        <summary>Removes a handler for the <see cref="E:System.Windows.Input.Stylus.PreviewStylusUp" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1254,9 +1384,9 @@
         <Parameter Name="handler" Type="System.Windows.Input.StylusButtonEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to remove.</param>
+        <summary>Removes a handler for the <see cref="E:System.Windows.Input.Stylus.StylusButtonDown" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1277,9 +1407,9 @@
         <Parameter Name="handler" Type="System.Windows.Input.StylusButtonEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to remove.</param>
+        <summary>Removes a handler for the <see cref="E:System.Windows.Input.Stylus.StylusButtonUp" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1300,9 +1430,9 @@
         <Parameter Name="handler" Type="System.Windows.Input.StylusDownEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to remove.</param>
+        <summary>Removes a handler for the <see cref="E:System.Windows.Input.Stylus.StylusDown" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1323,9 +1453,9 @@
         <Parameter Name="handler" Type="System.Windows.Input.StylusEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to remove.</param>
+        <summary>Removes a handler for the <see cref="E:System.Windows.Input.Stylus.StylusEnter" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1346,9 +1476,9 @@
         <Parameter Name="handler" Type="System.Windows.Input.StylusEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to remove.</param>
+        <summary>Removes a handler for the <see cref="E:System.Windows.Input.Stylus.StylusInAirMove" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1369,9 +1499,9 @@
         <Parameter Name="handler" Type="System.Windows.Input.StylusEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to remove.</param>
+        <summary>Removes a handler for the <see cref="E:System.Windows.Input.Stylus.StylusInRange" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1392,9 +1522,9 @@
         <Parameter Name="handler" Type="System.Windows.Input.StylusEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to remove.</param>
+        <summary>Removes a handler for the <see cref="E:System.Windows.Input.Stylus.StylusLeave" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1415,9 +1545,9 @@
         <Parameter Name="handler" Type="System.Windows.Input.StylusEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to remove.</param>
+        <summary>Removes a handler for the <see cref="E:System.Windows.Input.Stylus.StylusMove" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1438,9 +1568,9 @@
         <Parameter Name="handler" Type="System.Windows.Input.StylusEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to remove.</param>
+        <summary>Removes a handler for the <see cref="E:System.Windows.Input.Stylus.StylusOutOfRange" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1461,9 +1591,9 @@
         <Parameter Name="handler" Type="System.Windows.Input.StylusSystemGestureEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to remove.</param>
+        <summary>Removes a handler for the <see cref="E:System.Windows.Input.Stylus.StylusSystemGesture" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1484,9 +1614,9 @@
         <Parameter Name="handler" Type="System.Windows.Input.StylusEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to remove.</param>
+        <summary>Removes a handler for the <see cref="E:System.Windows.Input.Stylus.StylusUp" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1507,10 +1637,26 @@
         <Parameter Name="enabled" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="enabled">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> on which to enable flicks.</param>
+        <param name="enabled">
+          <see langword="true" /> to enable flicks; <see langword="false" /> to disable flicks.</param>
+        <summary>Gets the value of the <see cref="P:System.Windows.Input.Stylus.IsFlicksEnabled" /> attached property on the specified element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In Windows Vista, a flick, one of the possible system gestures, is a short, quick, straight stroke that can be mapped to a navigation or shortcut command. By default, flicks are disabled on the <xref:System.Windows.Controls.InkCanvas>, <xref:System.Windows.Controls.InkPresenter>, and <xref:System.Windows.Controls.Primitives.ScrollBar>. Flicks are enabled on all other controls.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to disable flicks on a <xref:System.Windows.Controls.Canvas>.  
+  
+ [!code-csharp[GestureSample#2](~/samples/snippets/csharp/VS_Snippets_Wpf/GestureSample/CSharp/Window1.xaml.cs#2)]
+ [!code-vb[GestureSample#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GestureSample/VisualBasic/Window1.xaml.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetIsPressAndHoldEnabled">
@@ -1530,10 +1676,26 @@
         <Parameter Name="enabled" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="enabled">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> on which to enable press and hold.</param>
+        <param name="enabled">
+          <see langword="true" /> to enable press and hold; <see langword="false" /> to disable press and hold.</param>
+        <summary>Sets the value of the <see cref="P:System.Windows.Input.Stylus.IsPressAndHoldEnabled" /> attached property on the specified element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Press and hold maps to the right-click on a mouse. In Windows Vista, you can disable this behavior on elements if you foresee a situation where the user might hold the tablet pen down without intending to simulate a right-click.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to enable press and hold on a <xref:System.Windows.Controls.Slider>. This example assumes that there is a <xref:System.Windows.Controls.Slider> called `horizontalSlider1`.  
+  
+ [!code-csharp[StylusSamples#9](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSamples/CSharp/Window1.xaml.cs#9)]
+ [!code-vb[StylusSamples#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSamples/VisualBasic/Window1.xaml.vb#9)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetIsTapFeedbackEnabled">
@@ -1553,10 +1715,26 @@
         <Parameter Name="enabled" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="enabled">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> on which to enable tap feedback.</param>
+        <param name="enabled">
+          <see langword="true" /> to enable tap feedback; <see langword="false" /> to disable tap feedback.</param>
+        <summary>Sets the value of the <see cref="P:System.Windows.Input.Stylus.IsTapFeedbackEnabled" /> attached property on the specified element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In Windows Vista, a short animation occurs when the user taps the control. By default, tap feedback is disabled on the <xref:System.Windows.Controls.InkCanvas>. It is enabled on all other controls.  
+  
+   
+  
+## Examples  
+ The following example disables tap feedback on a <xref:System.Windows.Controls.Canvas>.  
+  
+ [!code-csharp[GestureSample#4](~/samples/snippets/csharp/VS_Snippets_Wpf/GestureSample/CSharp/Window1.xaml.cs#4)]
+ [!code-vb[GestureSample#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GestureSample/VisualBasic/Window1.xaml.vb#4)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetIsTouchFeedbackEnabled">
@@ -1576,10 +1754,21 @@
         <Parameter Name="enabled" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="enabled">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> on which to enable tap feedback.</param>
+        <param name="enabled">
+          <see langword="true" /> to enable touch input feedback; <see langword="false" /> to disable touch input feedback.</param>
+        <summary>Sets the value of the <see cref="P:System.Windows.Input.Stylus.IsTouchFeedbackEnabled" /> attached property on the specified element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example enables touch feedback on an <xref:System.Windows.Controls.InkCanvas>.  
+  
+ [!code-csharp[GestureSample#8](~/samples/snippets/csharp/VS_Snippets_Wpf/GestureSample/CSharp/Window1.xaml.cs#8)]
+ [!code-vb[GestureSample#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GestureSample/VisualBasic/Window1.xaml.vb#8)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StylusButtonDownEvent">
@@ -1595,7 +1784,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="E:System.Windows.Input.Stylus.StylusButtonDown" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1612,7 +1801,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="E:System.Windows.Input.Stylus.StylusButtonUp" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1629,7 +1818,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="E:System.Windows.Input.Stylus.StylusDown" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1646,7 +1835,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="E:System.Windows.Input.Stylus.StylusEnter" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1663,7 +1852,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="E:System.Windows.Input.Stylus.StylusInAirMove" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1680,7 +1869,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="E:System.Windows.Input.Stylus.StylusInRange" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1697,7 +1886,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="E:System.Windows.Input.Stylus.StylusLeave" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1714,7 +1903,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="E:System.Windows.Input.Stylus.StylusMove" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1731,7 +1920,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="E:System.Windows.Input.Stylus.StylusOutOfRange" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1748,7 +1937,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="E:System.Windows.Input.Stylus.StylusSystemGesture" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1765,7 +1954,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="E:System.Windows.Input.Stylus.StylusUp" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1783,8 +1972,25 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Synchronizes the cursor and the user interface.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Applications may need to determine the element on which the cursor is located. If the application uses animation, the <xref:System.Windows.Input.Stylus.DirectlyOver%2A> method might return an element that has moved out from under the cursor. Call <xref:System.Windows.Input.Stylus.Synchronize%2A> to be sure that <xref:System.Windows.Input.Stylus.DirectlyOver%2A> returns the proper element.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to get the element that is under the cursor. Calling <xref:System.Windows.Input.Stylus.Synchronize%2A> ensures that <xref:System.Windows.Input.Stylus.DirectlyOver%2A> returns the correct element.  
+  
+ [!code-csharp[StylusSamples#24](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSamples/CSharp/Window2.xaml.cs#24)]
+ [!code-vb[StylusSamples#24](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSamples/VisualBasic/Window2.xaml.vb#24)]  
+[!code-csharp[StylusSamples#25](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSamples/CSharp/Window2.xaml.cs#25)]
+[!code-vb[StylusSamples#25](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSamples/VisualBasic/Window2.xaml.vb#25)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,14 +1,17 @@
 ---
 uid: System.Web.Configuration.SystemWebExtensionsSectionGroup
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.SystemWebExtensionsSectionGroup.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.SystemWebExtensionsSectionGroup.Scripting
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

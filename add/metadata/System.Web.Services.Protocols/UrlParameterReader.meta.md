@@ -1,14 +1,24 @@
 ---
 uid: System.Web.Services.Protocols.UrlParameterReader
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Web.Services.Protocols.UrlParameterReader.Read
 ---
 
 ---
 uid: System.Web.Services.Protocols.UrlParameterReader.Read(System.Web.HttpRequest)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Protocols.UrlParameterReader.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

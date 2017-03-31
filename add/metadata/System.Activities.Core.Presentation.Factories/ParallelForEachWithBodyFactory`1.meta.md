@@ -1,14 +1,20 @@
 ---
 uid: System.Activities.Core.Presentation.Factories.ParallelForEachWithBodyFactory`1
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Core.Presentation.Factories.ParallelForEachWithBodyFactory`1.Create(System.Windows.DependencyObject)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Core.Presentation.Factories.ParallelForEachWithBodyFactory`1.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

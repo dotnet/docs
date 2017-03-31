@@ -1,29 +1,35 @@
 ---
 uid: Microsoft.Build.Tasks.ResolveNonMSBuildProjectOutput
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.ResolveNonMSBuildProjectOutput.UnresolvedProjectReferences
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.ResolveNonMSBuildProjectOutput.PreresolvedProjectOutputs
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.ResolveNonMSBuildProjectOutput.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.ResolveNonMSBuildProjectOutput.Execute
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.ResolveNonMSBuildProjectOutput.ResolvedOutputPaths
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

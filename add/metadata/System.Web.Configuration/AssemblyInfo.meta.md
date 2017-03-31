@@ -1,14 +1,17 @@
 ---
 uid: System.Web.Configuration.AssemblyInfo
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.AssemblyInfo.#ctor(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.AssemblyInfo.Assembly
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

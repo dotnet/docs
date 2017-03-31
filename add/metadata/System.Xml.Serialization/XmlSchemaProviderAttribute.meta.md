@@ -1,19 +1,27 @@
 ---
 uid: System.Xml.Serialization.XmlSchemaProviderAttribute
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.XmlSchemaProviderAttribute.MethodName
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.XmlSchemaProviderAttribute.#ctor(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.XmlSchemaProviderAttribute.IsAny
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

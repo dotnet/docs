@@ -1,14 +1,20 @@
 ---
 uid: System.Windows.Documents.DocumentStructures.NamedElement
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Documents.DocumentStructures.NamedElement.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Documents.DocumentStructures.NamedElement.NameReference
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

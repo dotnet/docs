@@ -1,24 +1,41 @@
 ---
 uid: System.DirectoryServices.Protocols.AsqRequestControl
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.Protocols.AsqRequestControl.#ctor
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.Protocols.AsqRequestControl.AttributeName
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.Protocols.AsqRequestControl.#ctor(System.String)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.Protocols.AsqRequestControl.#ctor
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.Protocols.AsqRequestControl.GetValue
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---

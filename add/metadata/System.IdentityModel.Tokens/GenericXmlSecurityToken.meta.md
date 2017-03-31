@@ -1,74 +1,89 @@
 ---
 uid: System.IdentityModel.Tokens.GenericXmlSecurityToken
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.GenericXmlSecurityToken.TokenXml
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.GenericXmlSecurityToken.ExternalTokenReference
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.GenericXmlSecurityToken.AuthorizationPolicies
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.GenericXmlSecurityToken.MatchesKeyIdentifierClause(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.GenericXmlSecurityToken.ValidFrom
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.GenericXmlSecurityToken.ProofToken
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.GenericXmlSecurityToken.ToString
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.GenericXmlSecurityToken.SecurityKeys
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.GenericXmlSecurityToken.Id
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.GenericXmlSecurityToken.ValidTo
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.GenericXmlSecurityToken.InternalTokenReference
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.GenericXmlSecurityToken.CreateKeyIdentifierClause``1
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.GenericXmlSecurityToken.#ctor(System.Xml.XmlElement,System.IdentityModel.Tokens.SecurityToken,System.DateTime,System.DateTime,System.IdentityModel.Tokens.SecurityKeyIdentifierClause,System.IdentityModel.Tokens.SecurityKeyIdentifierClause,System.Collections.ObjectModel.ReadOnlyCollection{System.IdentityModel.Policy.IAuthorizationPolicy})
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.GenericXmlSecurityToken.CanCreateKeyIdentifierClause``1
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

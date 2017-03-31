@@ -1,4 +1,4 @@
 ---
 uid: System.Transactions.DependentCloneOption
-internalonly: False
+manager: "ghogen"
 ---

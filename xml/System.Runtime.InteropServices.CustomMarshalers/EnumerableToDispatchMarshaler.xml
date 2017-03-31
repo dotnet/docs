@@ -15,8 +15,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Marshals the COM <see langword="IDispatch" /> interface to the .NET Framework <see cref="T:System.Collections.IEnumerable" /> interface, and vice versa.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This custom marshaler marshals `IDispatch` to <xref:System.Collections.IEnumerable> and marshals <xref:System.Collections.IEnumerable> to `IDispatch` when a member with a DISPID of -4 exists. When you use the Type Library Importer (Tlbimp.exe) to create a class that implements <xref:System.Collections.IEnumerable> , the CLR uses this custom marshaler automatically to bridge COM enumerators and .NET enumerators. Calling <xref:System.Collections.IEnumerable.GetEnumerator%2A> results in `IDispatch.Invoke` being called with a DISPID of -4, and vice versa.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CleanUpManagedData">
@@ -35,9 +42,16 @@
         <Parameter Name="pManagedObj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="pManagedObj">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="pManagedObj">The managed object to be destroyed.</param>
+        <summary>Performs necessary cleanup of the managed data when it is no longer needed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The CLR calls this method to clean up managed data allocated in the <xref:System.Runtime.InteropServices.CustomMarshalers.EnumerableToDispatchMarshaler.MarshalNativeToManaged%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CleanUpNativeData">
@@ -56,9 +70,16 @@
         <Parameter Name="pNativeData" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="pNativeData">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="pNativeData">A pointer to the unmanaged data to be destroyed.</param>
+        <summary>Performs necessary cleanup of the unmanaged data when it is no longer needed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The CLR calls this method to clean up the unmanaged data allocated in the <xref:System.Runtime.InteropServices.CustomMarshalers.EnumerableToDispatchMarshaler.MarshalManagedToNative%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetInstance">
@@ -77,10 +98,17 @@
         <Parameter Name="pstrCookie" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="pstrCookie">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="pstrCookie">String "cookie" parameter that can be used by the custom marshaler.</param>
+        <summary>Returns an instance of the custom marshaler.</summary>
+        <returns>An instance of the custom marshaler.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ All custom marshalers must implement this method, although it is not part of the <xref:System.Runtime.InteropServices.ICustomMarshaler> interface definition.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetNativeDataSize">
@@ -97,9 +125,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the size in bytes of the unmanaged data to be marshaled.</summary>
+        <returns>-1 to indicate the type this marshaler handles is not a value type.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because custom marshaling of value types is not supported in the .NET Framework, this method always returns -1.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MarshalManagedToNative">
@@ -118,10 +153,19 @@
         <Parameter Name="pManagedObj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="pManagedObj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="pManagedObj">The managed object to be converted.</param>
+        <summary>Marshals an object from managed code to unmanaged code.</summary>
+        <returns>A pointer to the unmanaged object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The CLR calls this method with the specified instance of a managed object to convert that object from managed code to unmanaged code, and it returns a pointer to the appropriate unmanaged object, representing the COM view of that object.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="pManagedObj" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="MarshalNativeToManaged">
@@ -140,10 +184,19 @@
         <Parameter Name="pNativeData" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="pNativeData">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="pNativeData">A pointer to the unmanaged object to be converted.</param>
+        <summary>Marshals an object from unmanaged code to managed code.</summary>
+        <returns>A managed object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The CLR calls this method with the specified pointer to an unmanaged object to convert that object from unmanaged code to managed code, and returns a managed object representing the managed view of the unmanaged data.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="pNativeData" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

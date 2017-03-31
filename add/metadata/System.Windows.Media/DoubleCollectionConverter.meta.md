@@ -1,29 +1,66 @@
 ---
 uid: System.Windows.Media.DoubleCollectionConverter
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.DoubleCollectionConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.DoubleCollectionConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.DoubleCollectionConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.DoubleCollectionConverter.CanConvertFrom
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.DoubleCollectionConverter.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.DoubleCollectionConverter.CanConvertTo
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.DoubleCollectionConverter.ConvertFrom
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.DoubleCollectionConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.DoubleCollectionConverter.ConvertTo
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

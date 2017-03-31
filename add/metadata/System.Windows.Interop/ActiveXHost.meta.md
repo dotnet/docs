@@ -1,44 +1,68 @@
 ---
 uid: System.Windows.Interop.ActiveXHost
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Interop.ActiveXHost.DestroyWindowCore(System.Runtime.InteropServices.HandleRef)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Interop.ActiveXHost.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Interop.ActiveXHost.MeasureOverride(System.Windows.Size)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Interop.ActiveXHost.Dispose(System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Interop.ActiveXHost.OnWindowPositionChanged(System.Windows.Rect)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Interop.ActiveXHost.IsDisposed
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Interop.ActiveXHost.BuildWindowCore(System.Runtime.InteropServices.HandleRef)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Interop.ActiveXHost.Dispose
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Interop.ActiveXHost.OnAccessKey(System.Windows.Input.AccessKeyEventArgs)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

@@ -1,19 +1,27 @@
 ---
 uid: System.Web.UI.WebControls.DetailsViewModeEventArgs
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.DetailsViewModeEventArgs.NewMode
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.DetailsViewModeEventArgs.#ctor(System.Web.UI.WebControls.DetailsViewMode,System.Boolean)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.DetailsViewModeEventArgs.CancelingEdit
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

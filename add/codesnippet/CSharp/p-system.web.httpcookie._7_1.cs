@@ -1,2 +1,0 @@
-MyCookie.Value = "abc123";
-    

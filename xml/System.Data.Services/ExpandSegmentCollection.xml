@@ -14,8 +14,19 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The segments of a query that can be expanded by the <c>$expand</c> clause that follows a query.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An `$expand` clause indicates that each expand item should be fully expanded. For example, the value `OrderLines.Product.Image` with `$expand` causes `OrderLines`, the `Product` of each element in `OrderLines`, and the `Image` of the `Product` of each element in `OrderLines` to be expanded.  
+  
+ The left-most resource property in an `$expand` clause must be a property on the entity type within the entity set identified by the last path segment in the request URI.  
+  
+ Redundant `$expand` clause rules are ignored.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -29,7 +40,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a collection of expand segments for a query.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +57,8 @@
         <Parameter Name="capacity" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="capacity">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="capacity">The number of expand segments that the new collection can initially store.</param>
+        <summary>Initializes a new collection of expand segments that is empty and has the specified initial capacity.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +75,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Boolean value that indicates whether segments to be expanded include a filter clause.</summary>
+        <value>Boolean value that indicates whether segments to be expanded include a filter clause.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

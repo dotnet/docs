@@ -1,239 +1,398 @@
 ---
 uid: System.Data.SqlClient.SqlCommand
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlClient.SqlCommand.#ctor(System.String,System.Data.SqlClient.SqlConnection,System.Data.SqlClient.SqlTransaction,System.Data.SqlClient.SqlCommandColumnEncryptionSetting)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlClient.SqlCommand.BeginExecuteReader
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(System.IAsyncResult)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlClient.SqlCommand.BeginExecuteReader(System.AsyncCallback,System.Object)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlClient.SqlCommand.CommandType
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlClient.SqlCommand.EndExecuteXmlReader(System.IAsyncResult)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlClient.SqlCommand.BeginExecuteReader(System.Data.CommandBehavior)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlClient.SqlCommand.ExecuteXmlReaderAsync(System.Threading.CancellationToken)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlClient.SqlCommand.Cancel
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlClient.SqlCommand.BeginExecuteReader
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlClient.SqlCommand.ExecuteNonQueryAsync(System.Threading.CancellationToken)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlClient.SqlCommand.ExecuteReader(System.Data.CommandBehavior)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlClient.SqlCommand.ExecuteNonQueryAsync
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlClient.SqlCommand.#ctor(System.String,System.Data.SqlClient.SqlConnection)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlClient.SqlCommand.ExecuteReaderAsync
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlClient.SqlCommand.BeginExecuteXmlReader(System.AsyncCallback,System.Object)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlClient.SqlCommand.BeginExecuteReader(System.AsyncCallback,System.Object,System.Data.CommandBehavior)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlClient.SqlCommand.ExecuteReaderAsync(System.Data.CommandBehavior,System.Threading.CancellationToken)
-internalonly: False
----
-
----
-uid: System.Data.SqlClient.SqlCommand.CommandTimeout
-internalonly: False
----
-
----
-uid: System.Data.SqlClient.SqlCommand.Connection
-internalonly: False
----
-
----
-uid: System.Data.SqlClient.SqlCommand.#ctor(System.String)
-internalonly: False
----
-
----
-uid: System.Data.SqlClient.SqlCommand.Clone
-internalonly: False
----
-
----
-uid: System.Data.SqlClient.SqlCommand.UpdatedRowSource
-internalonly: False
----
-
----
-uid: System.Data.SqlClient.SqlCommand.ExecuteScalarAsync(System.Threading.CancellationToken)
-internalonly: False
----
-
----
-uid: System.Data.SqlClient.SqlCommand.ColumnEncryptionSetting
-internalonly: False
----
-
----
-uid: System.Data.SqlClient.SqlCommand.ExecuteReader
-internalonly: False
----
-
----
-uid: System.Data.SqlClient.SqlCommand.ExecuteReaderAsync(System.Data.CommandBehavior)
-internalonly: False
----
-
----
-uid: System.Data.SqlClient.SqlCommand.Transaction
-internalonly: False
----
-
----
-uid: System.Data.SqlClient.SqlCommand.ResetCommandTimeout
-internalonly: False
----
-
----
-uid: System.Data.SqlClient.SqlCommand.ExecuteNonQuery
-internalonly: False
----
-
----
-uid: System.Data.SqlClient.SqlCommand.Notification
-internalonly: False
----
-
----
-uid: System.Data.SqlClient.SqlCommand.Parameters
-internalonly: False
----
-
----
-uid: System.Data.SqlClient.SqlCommand.BeginExecuteNonQuery(System.AsyncCallback,System.Object)
-internalonly: False
----
-
----
-uid: System.Data.SqlClient.SqlCommand.CreateParameter
-internalonly: False
----
-
----
-uid: System.Data.SqlClient.SqlCommand.ExecuteScalar
-internalonly: False
----
-
----
-uid: System.Data.SqlClient.SqlCommand.ExecuteXmlReaderAsync
-internalonly: False
----
-
----
-uid: System.Data.SqlClient.SqlCommand.DesignTimeVisible
-internalonly: False
----
-
----
-uid: System.Data.SqlClient.SqlCommand.NotificationAutoEnlist
-internalonly: False
----
-
----
-uid: System.Data.SqlClient.SqlCommand.EndExecuteReader(System.IAsyncResult)
-internalonly: False
----
-
----
-uid: System.Data.SqlClient.SqlCommand.BeginExecuteNonQuery
-internalonly: False
----
-
----
-uid: System.Data.SqlClient.SqlCommand.#ctor(System.String,System.Data.SqlClient.SqlConnection,System.Data.SqlClient.SqlTransaction)
-internalonly: False
----
-
----
-uid: System.Data.SqlClient.SqlCommand.CommandText
-internalonly: False
----
-
----
-uid: System.Data.SqlClient.SqlCommand.ExecuteReaderAsync(System.Threading.CancellationToken)
-internalonly: False
----
-
----
-uid: System.Data.SqlClient.SqlCommand.#ctor
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlClient.SqlCommand.BeginExecuteXmlReader
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlClient.SqlCommand.CommandTimeout
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlClient.SqlCommand.Connection
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlClient.SqlCommand.#ctor(System.String)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlClient.SqlCommand.Clone
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlClient.SqlCommand.UpdatedRowSource
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlClient.SqlCommand.ExecuteScalarAsync(System.Threading.CancellationToken)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlClient.SqlCommand.ColumnEncryptionSetting
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlClient.SqlCommand.ExecuteReader
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlClient.SqlCommand.ExecuteReaderAsync(System.Data.CommandBehavior)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlClient.SqlCommand.Transaction
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlClient.SqlCommand.ResetCommandTimeout
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlClient.SqlCommand.ExecuteNonQuery
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlClient.SqlCommand.Notification
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlClient.SqlCommand.Parameters
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlClient.SqlCommand.BeginExecuteNonQuery(System.AsyncCallback,System.Object)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlClient.SqlCommand.BeginExecuteNonQuery
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlClient.SqlCommand.CreateParameter
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlClient.SqlCommand.ExecuteReaderAsync
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlClient.SqlCommand.ExecuteScalar
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlClient.SqlCommand.ExecuteXmlReaderAsync
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlClient.SqlCommand.ExecuteXmlReaderAsync
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlClient.SqlCommand.DesignTimeVisible
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlClient.SqlCommand.NotificationAutoEnlist
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlClient.SqlCommand.EndExecuteReader(System.IAsyncResult)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlClient.SqlCommand.BeginExecuteNonQuery
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlClient.SqlCommand.#ctor(System.String,System.Data.SqlClient.SqlConnection,System.Data.SqlClient.SqlTransaction)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlClient.SqlCommand.ExecuteScalarAsync
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlClient.SqlCommand.CommandText
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlClient.SqlCommand.ExecuteReaderAsync(System.Threading.CancellationToken)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlClient.SqlCommand.ExecuteReader
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlClient.SqlCommand.#ctor
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlClient.SqlCommand.BeginExecuteXmlReader
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlClient.SqlCommand.ExecuteXmlReader
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlClient.SqlCommand.StatementCompleted
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlClient.SqlCommand.#ctor
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlClient.SqlCommand.System#ICloneable#Clone
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlClient.SqlCommand.Prepare
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

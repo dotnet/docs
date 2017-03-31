@@ -1,34 +1,48 @@
 ---
 uid: System.Runtime.InteropServices.CustomMarshalers.ExpandoToDispatchExMarshaler
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.CustomMarshalers.ExpandoToDispatchExMarshaler.CleanUpNativeData(System.IntPtr)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.CustomMarshalers.ExpandoToDispatchExMarshaler.MarshalNativeToManaged(System.IntPtr)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.CustomMarshalers.ExpandoToDispatchExMarshaler.CleanUpManagedData(System.Object)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.CustomMarshalers.ExpandoToDispatchExMarshaler.GetInstance(System.String)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.CustomMarshalers.ExpandoToDispatchExMarshaler.GetNativeDataSize
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.CustomMarshalers.ExpandoToDispatchExMarshaler.MarshalManagedToNative(System.Object)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

@@ -1,139 +1,198 @@
 ---
 uid: System.Windows.Forms.ErrorProvider
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ErrorProvider.#ctor(System.Windows.Forms.ContainerControl)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.ErrorProvider.UpdateBinding
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.ErrorProvider.GetIconAlignment(System.Windows.Forms.Control)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ErrorProvider.OnRightToLeftChanged(System.EventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ErrorProvider.SetIconAlignment(System.Windows.Forms.Control,System.Windows.Forms.ErrorIconAlignment)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ErrorProvider.GetIconPadding(System.Windows.Forms.Control)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.ErrorProvider.RightToLeft
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ErrorProvider.SetError(System.Windows.Forms.Control,System.String)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.ErrorProvider.System#ComponentModel#ISupportInitialize#EndInit
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ErrorProvider.DataSource
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ErrorProvider.ContainerControl
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ErrorProvider.System#ComponentModel#ISupportInitialize#BeginInit
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ErrorProvider.Tag
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ErrorProvider.Clear
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.ErrorProvider.BindToDataAndErrors(System.Object,System.String)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.ErrorProvider.RightToLeftChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ErrorProvider.CanExtend(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ErrorProvider.BlinkStyle
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ErrorProvider.Site
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ErrorProvider.#ctor(System.ComponentModel.IContainer)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.ErrorProvider.Dispose(System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ErrorProvider.SetIconPadding(System.Windows.Forms.Control,System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ErrorProvider.BlinkRate
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ErrorProvider.DataMember
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ErrorProvider.Icon
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ErrorProvider.GetError(System.Windows.Forms.Control)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ErrorProvider.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ErrorProvider.DataMember
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ErrorProvider.Dispose
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.ErrorProvider.Icon
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.ErrorProvider.GetError(System.Windows.Forms.Control)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ErrorProvider.#ctor
+ms.author: "kempb"
+manager: "ghogen"
 ---

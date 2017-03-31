@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides data for the <see cref="E:System.Windows.Media.Imaging.BitmapSource.DownloadProgress" /> and <see cref="E:System.Windows.Media.Imaging.BitmapDecoder.DownloadProgress" /> events.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that represents the download progress of a bitmap, expressed as a percentage.</summary>
+        <value>The progress, expressed as a percentage, to which a bitmap has been downloaded. The returned value will be between 1 and 100.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

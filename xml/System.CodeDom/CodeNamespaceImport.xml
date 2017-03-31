@@ -19,8 +19,29 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a namespace import directive that indicates a namespace to use.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.CodeDom.CodeNamespaceImport> can be used to represent a namespace import directive.  
+  
+ In most languages, a namespace import directive causes visibility of the types within the imported namespaces to code that references types in the imported namespaces.  
+  
+> [!NOTE]
+>  Use fully qualified type references to avoid potential ambiguity.  
+  
+   
+  
+## Examples  
+ The following example code demonstrates use of a <xref:System.CodeDom.CodeNamespaceImport> to import the <xref:System.CodeDom.CodeNamespaceImport> namespace:  
+  
+ [!code-cpp[CodeNamespaceImportExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeNamespaceImportExample/CPP/codenamespaceimportexample.cpp#2)]
+ [!code-csharp[CodeNamespaceImportExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeNamespaceImportExample/CS/codenamespaceimportexample.cs#2)]
+ [!code-vb[CodeNamespaceImportExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeNamespaceImportExample/VB/codenamespaceimportexample.vb#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,7 +55,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeNamespaceImport" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +72,8 @@
         <Parameter Name="nameSpace" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="nameSpace">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="nameSpace">The name of the namespace to import.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeNamespaceImport" /> class using the specified namespace to import.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,8 +90,8 @@
         <ReturnType>System.CodeDom.CodeLinePragma</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the line and file the statement occurs on.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeLinePragma" /> that indicates the context of the statement.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,8 +108,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the namespace to import.</summary>
+        <value>The name of the namespace to import.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,4 +1,4 @@
 ---
 uid: System.Transactions.TransactionScopeOption
-internalonly: False
+manager: "ghogen"
 ---

@@ -1,29 +1,48 @@
 ---
 uid: System.Web.Compilation.ExpressionEditorAttribute
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Compilation.ExpressionEditorAttribute.EditorTypeName
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Compilation.ExpressionEditorAttribute.#ctor
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Compilation.ExpressionEditorAttribute.#ctor(System.String)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Compilation.ExpressionEditorAttribute.#ctor(System.Type)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Compilation.ExpressionEditorAttribute.GetHashCode
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Compilation.ExpressionEditorAttribute.Equals(System.Object)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

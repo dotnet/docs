@@ -1,14 +1,20 @@
 ---
 uid: System.Configuration.SettingsGroupNameAttribute
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SettingsGroupNameAttribute.#ctor(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SettingsGroupNameAttribute.GroupName
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

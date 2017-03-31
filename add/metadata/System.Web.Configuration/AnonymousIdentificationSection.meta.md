@@ -1,54 +1,65 @@
 ---
 uid: System.Web.Configuration.AnonymousIdentificationSection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.AnonymousIdentificationSection.CookieProtection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.AnonymousIdentificationSection.CookiePath
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.AnonymousIdentificationSection.CookieRequireSSL
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.AnonymousIdentificationSection.CookieTimeout
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.AnonymousIdentificationSection.CookieName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.AnonymousIdentificationSection.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.AnonymousIdentificationSection.CookieSlidingExpiration
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.AnonymousIdentificationSection.Enabled
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.AnonymousIdentificationSection.Cookieless
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.AnonymousIdentificationSection.Domain
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

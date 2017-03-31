@@ -1,64 +1,111 @@
 ---
 uid: System.Security.Policy.PolicyStatement
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Policy.PolicyStatement.ToXml(System.Security.Policy.PolicyLevel)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Policy.PolicyStatement.FromXml
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Policy.PolicyStatement.Copy
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Policy.PolicyStatement.AttributeString
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Policy.PolicyStatement.ToXml
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Policy.PolicyStatement.Attributes
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Policy.PolicyStatement.Equals(System.Object)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Policy.PolicyStatement.FromXml(System.Security.SecurityElement,System.Security.Policy.PolicyLevel)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Policy.PolicyStatement.GetHashCode
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Policy.PolicyStatement.#ctor(System.Security.PermissionSet)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Policy.PolicyStatement.PermissionSet
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Policy.PolicyStatement.#ctor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Policy.PolicyStatement.#ctor(System.Security.PermissionSet,System.Security.Policy.PolicyStatementAttribute)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Policy.PolicyStatement.FromXml(System.Security.SecurityElement)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Policy.PolicyStatement.ToXml
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

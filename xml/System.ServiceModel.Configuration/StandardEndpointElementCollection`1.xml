@@ -22,8 +22,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="TEndpointConfiguration">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="TEndpointConfiguration">The type of the endpoint elements in the collection.</typeparam>
+    <summary>Represents a generic collection of standard endpoint elements that are of standard type or of a type from which the standard type can be assigned.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,7 +38,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Configuration.StandardEndpointElementCollection`1" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,29 +1,34 @@
 ---
 uid: System.Management.Instrumentation.InstrumentedAttribute
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.InstrumentedAttribute.#ctor(System.String,System.String)
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.InstrumentedAttribute.NamespaceName
-internalonly: False
----
-
----
-uid: System.Management.Instrumentation.InstrumentedAttribute.SecurityDescriptor
-internalonly: False
----
-
----
-uid: System.Management.Instrumentation.InstrumentedAttribute.#ctor(System.String)
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.InstrumentedAttribute.#ctor
-internalonly: False
+manager: "jillfra"
+---
+
+---
+uid: System.Management.Instrumentation.InstrumentedAttribute.SecurityDescriptor
+manager: "jillfra"
+---
+
+---
+uid: System.Management.Instrumentation.InstrumentedAttribute.#ctor(System.String)
+manager: "jillfra"
+---
+
+---
+uid: System.Management.Instrumentation.InstrumentedAttribute.#ctor
+manager: "jillfra"
 ---

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies a sort key that can be used as part of the sort order in a <see cref="T:System.Data.Common.CommandTrees.DbSortExpression" />. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a Boolean value indicating whether or not this sort key uses an ascending sort order.</summary>
+        <value>
+          <see langword="true" /> if this sort key uses an ascending sort order; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +47,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a string value that specifies the collation for this sort key.</summary>
+        <value>A string value that specifies the collation for this sort key.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +65,8 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that provides the value for this sort key.</summary>
+        <value>The <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that provides the value for this sort key.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

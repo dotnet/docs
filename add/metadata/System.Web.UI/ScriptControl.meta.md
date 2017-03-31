@@ -1,39 +1,47 @@
 ---
 uid: System.Web.UI.ScriptControl
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ScriptControl.Render(System.Web.UI.HtmlTextWriter)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ScriptControl.OnPreRender(System.EventArgs)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ScriptControl.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ScriptControl.System#Web#UI#IScriptControl#GetScriptReferences
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ScriptControl.GetScriptReferences
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ScriptControl.GetScriptDescriptors
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ScriptControl.System#Web#UI#IScriptControl#GetScriptDescriptors
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

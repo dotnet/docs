@@ -1,49 +1,65 @@
 ---
 uid: System.ComponentModel.DataAnnotations.ValidationException
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.ValidationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.ValidationException.#ctor(System.ComponentModel.DataAnnotations.ValidationResult,System.ComponentModel.DataAnnotations.ValidationAttribute,System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.ValidationException.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.ValidationException.ValidationAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.ValidationException.#ctor(System.String,System.ComponentModel.DataAnnotations.ValidationAttribute,System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.DataAnnotations.ValidationException.#ctor
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.ValidationException.#ctor(System.String,System.Exception)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.ValidationException.Value
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.ValidationException.#ctor(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.ValidationException.ValidationResult
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

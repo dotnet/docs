@@ -1,44 +1,49 @@
 ---
 uid: System.Runtime.Remoting.Messaging.ConstructionCall
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Messaging.ConstructionCall.ActivationTypeName
-internalonly: False
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Remoting.Messaging.ConstructionCall.#ctor
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Messaging.ConstructionCall.#ctor(System.Runtime.Remoting.Messaging.IMessage)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Messaging.ConstructionCall.#ctor(System.Runtime.Remoting.Messaging.Header[])
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Messaging.ConstructionCall.ActivationType
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Messaging.ConstructionCall.Properties
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Messaging.ConstructionCall.CallSiteActivationAttributes
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Messaging.ConstructionCall.Activator
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Messaging.ConstructionCall.ContextProperties
-internalonly: False
+manager: "ghogen"
 ---

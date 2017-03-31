@@ -1,34 +1,48 @@
 ---
 uid: System.Web.Services.Protocols.SoapClientMessage
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Protocols.SoapClientMessage.OneWay
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Protocols.SoapClientMessage.Action
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Protocols.SoapClientMessage.Client
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Protocols.SoapClientMessage.SoapVersion
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Protocols.SoapClientMessage.MethodInfo
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Protocols.SoapClientMessage.Url
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

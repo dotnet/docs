@@ -15,8 +15,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates the type of role to check when calling the <see cref="M:Microsoft.VisualBasic.ApplicationServices.User.IsInRole(Microsoft.VisualBasic.ApplicationServices.BuiltInRole)" /> method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration provides functionality similar to the <xref:System.Security.Principal.WindowsBuiltInRole> enumeration.  
+  
+ These roles represent the local Windows groups common to most installations of Windows.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AccountOperator">
@@ -32,7 +41,7 @@
         <ReturnType>Microsoft.VisualBasic.ApplicationServices.BuiltInRole</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Account operators manage the user accounts on a computer or domain.</summary>
       </Docs>
     </Member>
     <Member MemberName="Administrator">
@@ -48,7 +57,7 @@
         <ReturnType>Microsoft.VisualBasic.ApplicationServices.BuiltInRole</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Administrators have complete and unrestricted access to the computer or domain.</summary>
       </Docs>
     </Member>
     <Member MemberName="BackupOperator">
@@ -64,7 +73,7 @@
         <ReturnType>Microsoft.VisualBasic.ApplicationServices.BuiltInRole</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backup operators can override security restrictions for the sole purpose of backing up or restoring files.</summary>
       </Docs>
     </Member>
     <Member MemberName="Guest">
@@ -80,7 +89,7 @@
         <ReturnType>Microsoft.VisualBasic.ApplicationServices.BuiltInRole</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Guests are more restricted than users.</summary>
       </Docs>
     </Member>
     <Member MemberName="PowerUser">
@@ -96,7 +105,7 @@
         <ReturnType>Microsoft.VisualBasic.ApplicationServices.BuiltInRole</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Power users possess most administrative permissions with some restrictions. Thus, power users can run legacy applications, in addition to certified applications.</summary>
       </Docs>
     </Member>
     <Member MemberName="PrintOperator">
@@ -112,7 +121,7 @@
         <ReturnType>Microsoft.VisualBasic.ApplicationServices.BuiltInRole</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Print operators can take control of a printer.</summary>
       </Docs>
     </Member>
     <Member MemberName="Replicator">
@@ -128,7 +137,7 @@
         <ReturnType>Microsoft.VisualBasic.ApplicationServices.BuiltInRole</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Replicators support file replication in a domain.</summary>
       </Docs>
     </Member>
     <Member MemberName="SystemOperator">
@@ -144,7 +153,7 @@
         <ReturnType>Microsoft.VisualBasic.ApplicationServices.BuiltInRole</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>System operators manage a particular computer.</summary>
       </Docs>
     </Member>
     <Member MemberName="User">
@@ -160,7 +169,7 @@
         <ReturnType>Microsoft.VisualBasic.ApplicationServices.BuiltInRole</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Users are prevented from making accidental or intentional system-wide changes. Thus, users can run certified applications, but not most legacy applications.</summary>
       </Docs>
     </Member>
   </Members>

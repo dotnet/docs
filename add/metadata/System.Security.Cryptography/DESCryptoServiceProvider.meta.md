@@ -1,29 +1,55 @@
 ---
 uid: System.Security.Cryptography.DESCryptoServiceProvider
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.DESCryptoServiceProvider.CreateEncryptor(System.Byte[],System.Byte[])
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.DESCryptoServiceProvider.CreateDecryptor(System.Byte[],System.Byte[])
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.DESCryptoServiceProvider.GenerateIV
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.DESCryptoServiceProvider.GenerateKey
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.DESCryptoServiceProvider.CreateDecryptor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.DESCryptoServiceProvider.CreateEncryptor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.DESCryptoServiceProvider.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

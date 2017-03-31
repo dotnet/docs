@@ -20,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a value editor.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,7 +35,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Default constructor needed for XAML deserialization.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,7 +53,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>See <see cref="M:System.ComponentModel.ISupportInitialize.BeginInit" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,8 +75,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the UI display name for the editor.</summary>
+        <value>Returns the display name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,9 +93,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets of sets the name of this <see cref="T:Microsoft.Build.Framework.XamlTypes.ValueEditor" />.</summary>
+        <value>Returns the name of the editor.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This field is mandatory and culture invariant.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EndInit">
@@ -112,7 +119,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>See <see cref="M:System.ComponentModel.ISupportInitialize.EndInit" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,9 +136,16 @@
         <ReturnType>System.Collections.Generic.List&lt;Microsoft.Build.Framework.XamlTypes.NameValuePair&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets additional attributes of the editor that are not generic enough to be made properties on this class.</summary>
+        <value>Returns the additional attributes.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This field is optional.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

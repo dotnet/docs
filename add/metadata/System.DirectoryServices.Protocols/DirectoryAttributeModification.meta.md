@@ -1,14 +1,20 @@
 ---
 uid: System.DirectoryServices.Protocols.DirectoryAttributeModification
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.Protocols.DirectoryAttributeModification.#ctor
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.Protocols.DirectoryAttributeModification.Operation
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---

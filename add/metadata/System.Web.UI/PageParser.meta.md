@@ -1,39 +1,47 @@
 ---
 uid: System.Web.UI.PageParser
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.PageParser.DefaultPageParserFilterType
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.PageParser.GetCompiledPageInstance(System.String,System.String,System.Web.HttpContext)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.PageParser.DefaultApplicationBaseType
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.PageParser.DefaultUserControlBaseType
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.PageParser.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.PageParser.DefaultPageBaseType
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.PageParser.EnableLongStringsAsResources
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

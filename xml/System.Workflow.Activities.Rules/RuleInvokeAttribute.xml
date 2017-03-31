@@ -16,8 +16,29 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates that a method is invoked by a condition. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This attribute is used to support a forward chaining model that will cause the reevaluation of rules based on state change. The <xref:System.Workflow.Activities.Rules.RuleReadAttribute>, <xref:System.Workflow.Activities.Rules.RuleInvokeAttribute>, and <xref:System.Workflow.Activities.Rules.RuleWriteAttribute> classes each indicate the properties used to read a condition, write an action, and invoke a method. These attributes enable the workflow to only reevaluate rules that will change the final output.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates proper usage of the <xref:System.Workflow.Activities.Rules.RuleInvokeAttribute>.  
+  
+```csharp  
+[RuleInvokeAttribute("UpdateAttributeValue")]  
+  
+bool DoSomething()  
+{  
+    return attributevalue();  
+}  
+```  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,8 +54,8 @@
         <Parameter Name="methodInvoked" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="methodInvoked">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="methodInvoked">The method invoked by the rule.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleInvokeAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +72,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the method invoked by the condition.</summary>
+        <value>The method invoked by the condition.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,4 +1,6 @@
 ---
 uid: System.Data.Objects.SaveOptions
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

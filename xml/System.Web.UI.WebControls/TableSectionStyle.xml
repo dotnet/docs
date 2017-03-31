@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the style for a section of a <see cref="T:System.Web.UI.WebControls.Table" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.TableSectionStyle> class is used to represent the style for a section of a <xref:System.Web.UI.WebControls.Table> control. It encapsulates the properties that allow you to customize the appearance of a table. You can apply these properties to sections in multiple <xref:System.Web.UI.WebControls.Table> controls to provide a common appearance.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.TableSectionStyle" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +58,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value indicating whether the table section is displayed.</summary>
+        <value>
+          <see langword="true" /> if the table section is displayed; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

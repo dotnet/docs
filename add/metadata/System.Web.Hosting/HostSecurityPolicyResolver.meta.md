@@ -1,14 +1,17 @@
 ---
 uid: System.Web.Hosting.HostSecurityPolicyResolver
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.HostSecurityPolicyResolver.ResolvePolicy(System.Security.Policy.Evidence)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.HostSecurityPolicyResolver.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

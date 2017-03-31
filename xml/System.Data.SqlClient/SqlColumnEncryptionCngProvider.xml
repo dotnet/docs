@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The CMK Store provider implementation for using the Microsoft Cryptography API: Next Generation (CNG) with [Always Encrypted](https://msdn.microsoft.com/library/mt163865.aspx).</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Enables storing Always Encrypted column master key keys in a store, such as a hardware security module (HSM), that supports the Microsoft Cryptography API: Next Generation (CNG).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.SqlClient.SqlColumnEncryptionCngProvider" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,11 +55,11 @@
         <Parameter Name="encryptedColumnEncryptionKey" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="masterKeyPath">To be added.</param>
-        <param name="encryptionAlgorithm">To be added.</param>
-        <param name="encryptedColumnEncryptionKey">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="masterKeyPath">The master key path.</param>
+        <param name="encryptionAlgorithm">The encryption algorithm.</param>
+        <param name="encryptedColumnEncryptionKey">The encrypted column encryption key.</param>
+        <summary>Decrypts the given encrypted value using an asymmetric key specified by the key path and the specified algorithm. The key path will be in the format of [ProviderName]/KeyIdentifier and should be an asymmetric key stored in the specified CNG key store provider. The valid algorithm used to encrypt/decrypt the CEK is 'RSA_OAEP'.</summary>
+        <returns>The decrypted column encryption key.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,11 +81,11 @@
         <Parameter Name="columnEncryptionKey" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="masterKeyPath">To be added.</param>
-        <param name="encryptionAlgorithm">To be added.</param>
-        <param name="columnEncryptionKey">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="masterKeyPath">The master key path.</param>
+        <param name="encryptionAlgorithm">The encryption algorithm.</param>
+        <param name="columnEncryptionKey">The encrypted column encryption key.</param>
+        <summary>Encrypts the given plain text column encryption key using an asymmetric key specified by the key path and the specified algorithm. The key path will be in the format of [ProviderName]/KeyIdentifier and should be an asymmetric key stored in the specified CNG key store provider. The valid algorithm used to encrypt/decrypt the CEK is 'RSA_OAEP'.</summary>
+        <returns>The encrypted column encryption key.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,7 +102,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A constant string for the provider name 'MSSQL_CNG_STORE'.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

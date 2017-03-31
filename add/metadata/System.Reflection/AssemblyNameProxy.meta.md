@@ -1,14 +1,20 @@
 ---
 uid: System.Reflection.AssemblyNameProxy
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.AssemblyNameProxy.#ctor
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.AssemblyNameProxy.GetAssemblyName(System.String)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

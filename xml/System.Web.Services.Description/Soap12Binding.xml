@@ -20,8 +20,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a binding in a Web Services Description Language (WSDL) document to the SOAP version 1.2 protocol. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class represents the XML added to a WSDL document stating that an XML Web service supports communication using the SOAP protocol version 1.2.  
+  
+ This class is not supported in the .NET Framework version 1.0.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,7 +45,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Description.Soap12Binding" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,8 +63,15 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the transport protocol for the SOAP message is HTTP. This field is constant.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The field value is the URI "http://schemas.xmlsoap.org/soap/http".  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Namespace">
@@ -72,8 +88,15 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the XML namespace of a binding to the SOAP protocol version 1.2. This field is constant.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The field value is the URI "http://schemas.xmlsoap.org/wsdl/soap12/".  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

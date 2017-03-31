@@ -1,34 +1,48 @@
 ---
 uid: System.Windows.Automation.ScrollPattern.ScrollPatternInformation
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.ScrollPattern.ScrollPatternInformation.VerticalViewSize
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.ScrollPattern.ScrollPatternInformation.HorizontalViewSize
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.ScrollPattern.ScrollPatternInformation.VerticallyScrollable
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.ScrollPattern.ScrollPatternInformation.VerticalScrollPercent
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.ScrollPattern.ScrollPatternInformation.HorizontallyScrollable
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.ScrollPattern.ScrollPatternInformation.HorizontalScrollPercent
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---

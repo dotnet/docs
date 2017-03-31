@@ -1,104 +1,125 @@
 ---
 uid: Microsoft.Build.Tasks.AspNetCompiler
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.AspNetCompiler.ToolName
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.AspNetCompiler.KeyContainer
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.AspNetCompiler.AddCommandLineCommands(Microsoft.Build.Tasks.CommandLineBuilderExtension)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.AspNetCompiler.VirtualPath
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.AspNetCompiler.KeyFile
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.AspNetCompiler.TargetFrameworkMoniker
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.AspNetCompiler.Execute
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.AspNetCompiler.MetabasePath
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.AspNetCompiler.Clean
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.AspNetCompiler.GenerateFullPathToTool
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.AspNetCompiler.AllowPartiallyTrustedCallers
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.AspNetCompiler.DelaySign
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.AspNetCompiler.Force
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.AspNetCompiler.Debug
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.AspNetCompiler.ValidateParameters
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.AspNetCompiler.TargetPath
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.AspNetCompiler.Updateable
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.AspNetCompiler.FixedNames
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.AspNetCompiler.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.AspNetCompiler.PhysicalPath
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

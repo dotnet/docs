@@ -1,9 +1,13 @@
 ---
 uid: System.DirectoryServices.Protocols.DomainScopeControl
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.Protocols.DomainScopeControl.#ctor
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---

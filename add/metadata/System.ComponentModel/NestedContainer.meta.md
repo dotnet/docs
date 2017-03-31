@@ -1,34 +1,55 @@
 ---
 uid: System.ComponentModel.NestedContainer
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.NestedContainer.Owner
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.NestedContainer.GetService(System.Type)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.NestedContainer.Dispose
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.NestedContainer.Dispose(System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.NestedContainer.OwnerName
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.NestedContainer.CreateSite(System.ComponentModel.IComponent,System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.NestedContainer.#ctor(System.ComponentModel.IComponent)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -20,8 +20,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Iterates over all child content nodes of the current node.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The state of the navigator changes only if the <xref:System.Xml.Xsl.Runtime.ContentIterator.MoveNext%2A> method has returned `true`.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Create">
@@ -44,8 +51,8 @@
         <Parameter Name="context" Type="System.Xml.XPath.XPathNavigator" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="context">The node from which you start traversing the child content nodes.</param>
+        <summary>Initializes the <see cref="T:System.Xml.Xsl.Runtime.ContentIterator" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,9 +73,16 @@
         <ReturnType>System.Xml.XPath.XPathNavigator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Returns the current result navigator.</summary>
+        <value>The current result navigator.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The state of the navigator changes only if the <xref:System.Xml.Xsl.Runtime.ContentIterator.MoveNext%2A> method has returned `true`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveNext">
@@ -89,9 +103,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Positions the iterator on the next child content node.</summary>
+        <returns>
+          <see langword="true" /> if the next child content node exists; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the next next child content node exists, the <xref:System.Xml.Xsl.Runtime.ContentIterator.MoveNext%2A> method sets the <xref:System.Xml.Xsl.Runtime.ContentIterator.Current%2A> property to the current result navigator; otherwise, the <xref:System.Xml.Xsl.Runtime.ContentIterator.Current%2A> property remains unchanged.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

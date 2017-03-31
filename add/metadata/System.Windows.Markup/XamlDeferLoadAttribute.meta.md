@@ -1,34 +1,39 @@
 ---
 uid: System.Windows.Markup.XamlDeferLoadAttribute
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlDeferLoadAttribute.LoaderType
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlDeferLoadAttribute.#ctor(System.Type,System.Type)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlDeferLoadAttribute.#ctor(System.String,System.String)
-internalonly: False
+manager: "martinek"
+---
+
+---
+uid: System.Windows.Markup.XamlDeferLoadAttribute.#ctor
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlDeferLoadAttribute.ContentType
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlDeferLoadAttribute.ContentTypeName
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlDeferLoadAttribute.LoaderTypeName
-internalonly: False
+manager: "martinek"
 ---

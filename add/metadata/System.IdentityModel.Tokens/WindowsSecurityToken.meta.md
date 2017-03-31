@@ -1,74 +1,101 @@
 ---
 uid: System.IdentityModel.Tokens.WindowsSecurityToken
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.WindowsSecurityToken.SecurityKeys
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.WindowsSecurityToken.ValidFrom
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.WindowsSecurityToken.ValidTo
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.WindowsSecurityToken.Initialize
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.WindowsSecurityToken.ThrowIfDisposed
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.WindowsSecurityToken.Id
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.WindowsSecurityToken.Initialize(System.String,System.String,System.DateTime,System.DateTime,System.Security.Principal.WindowsIdentity,System.Boolean)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.WindowsSecurityToken.WindowsIdentity
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.WindowsSecurityToken.AuthenticationType
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.WindowsSecurityToken.#ctor(System.Security.Principal.WindowsIdentity,System.String)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.WindowsSecurityToken.#ctor(System.Security.Principal.WindowsIdentity,System.String,System.String)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.WindowsSecurityToken.Initialize(System.String,System.DateTime,System.DateTime,System.Security.Principal.WindowsIdentity,System.Boolean)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.WindowsSecurityToken.#ctor(System.Security.Principal.WindowsIdentity)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.WindowsSecurityToken.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.WindowsSecurityToken.Dispose
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.WindowsSecurityToken.#ctor
+ms.author: "v-jibran"
+manager: "markgal"
 ---

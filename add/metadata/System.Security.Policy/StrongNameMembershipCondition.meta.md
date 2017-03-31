@@ -1,69 +1,111 @@
 ---
 uid: System.Security.Policy.StrongNameMembershipCondition
-internalonly: False
----
-
----
-uid: System.Security.Policy.StrongNameMembershipCondition.Name
-internalonly: False
----
-
----
-uid: System.Security.Policy.StrongNameMembershipCondition.Equals(System.Object)
-internalonly: False
----
-
----
-uid: System.Security.Policy.StrongNameMembershipCondition.ToXml(System.Security.Policy.PolicyLevel)
-internalonly: False
----
-
----
-uid: System.Security.Policy.StrongNameMembershipCondition.ToString
-internalonly: False
----
-
----
-uid: System.Security.Policy.StrongNameMembershipCondition.Version
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Policy.StrongNameMembershipCondition.ToXml
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Policy.StrongNameMembershipCondition.Name
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Policy.StrongNameMembershipCondition.Equals(System.Object)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Policy.StrongNameMembershipCondition.ToXml(System.Security.Policy.PolicyLevel)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Policy.StrongNameMembershipCondition.ToString
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Policy.StrongNameMembershipCondition.Version
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Policy.StrongNameMembershipCondition.ToXml
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Policy.StrongNameMembershipCondition.#ctor(System.Security.Permissions.StrongNamePublicKeyBlob,System.String,System.Version)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Policy.StrongNameMembershipCondition.Copy
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Policy.StrongNameMembershipCondition.FromXml
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Policy.StrongNameMembershipCondition.FromXml(System.Security.SecurityElement,System.Security.Policy.PolicyLevel)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Policy.StrongNameMembershipCondition.PublicKey
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Policy.StrongNameMembershipCondition.Check(System.Security.Policy.Evidence)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Policy.StrongNameMembershipCondition.GetHashCode
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Policy.StrongNameMembershipCondition.FromXml(System.Security.SecurityElement)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

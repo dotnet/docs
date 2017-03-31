@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Forms.ScrollEventType
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

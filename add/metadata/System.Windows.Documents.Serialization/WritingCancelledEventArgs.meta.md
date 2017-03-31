@@ -1,14 +1,18 @@
 ---
 uid: System.Windows.Documents.Serialization.WritingCancelledEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Documents.Serialization.WritingCancelledEventArgs.Error
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Documents.Serialization.WritingCancelledEventArgs.#ctor(System.Exception)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

@@ -1,24 +1,41 @@
 ---
 uid: System.Runtime.DurableInstancing.InstanceLockQueryResult
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.DurableInstancing.InstanceLockQueryResult.InstanceOwnerIds
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.DurableInstancing.InstanceLockQueryResult.#ctor(System.Guid,System.Guid)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.DurableInstancing.InstanceLockQueryResult.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Runtime.DurableInstancing.InstanceLockQueryResult.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.DurableInstancing.InstanceLockQueryResult.#ctor(System.Collections.Generic.IDictionary{System.Guid,System.Guid})
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

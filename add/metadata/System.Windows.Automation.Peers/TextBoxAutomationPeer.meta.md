@@ -1,39 +1,51 @@
 ---
 uid: System.Windows.Automation.Peers.TextBoxAutomationPeer
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.TextBoxAutomationPeer.System#Windows#Automation#Provider#IValueProvider#Value
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.TextBoxAutomationPeer.GetAutomationControlTypeCore
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.TextBoxAutomationPeer.#ctor(System.Windows.Controls.TextBox)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.TextBoxAutomationPeer.GetClassNameCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.TextBoxAutomationPeer.System#Windows#Automation#Provider#IValueProvider#IsReadOnly
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.TextBoxAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.TextBoxAutomationPeer.System#Windows#Automation#Provider#IValueProvider#SetValue(System.String)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

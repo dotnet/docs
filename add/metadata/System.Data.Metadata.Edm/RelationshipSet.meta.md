@@ -1,14 +1,20 @@
 ---
 uid: System.Data.Metadata.Edm.RelationshipSet
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Metadata.Edm.RelationshipSet.BuiltInTypeKind
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Metadata.Edm.RelationshipSet.ElementType
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

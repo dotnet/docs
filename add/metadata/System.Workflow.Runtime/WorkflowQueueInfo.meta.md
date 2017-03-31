@@ -1,19 +1,27 @@
 ---
 uid: System.Workflow.Runtime.WorkflowQueueInfo
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.WorkflowQueueInfo.SubscribedActivityNames
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.WorkflowQueueInfo.QueueName
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.WorkflowQueueInfo.Items
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

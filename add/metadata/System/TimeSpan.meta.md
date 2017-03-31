@@ -1,329 +1,517 @@
 ---
 uid: System.TimeSpan
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.ParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.TimeSpanStyles)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.Parse(System.String,System.IFormatProvider)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.op_GreaterThanOrEqual(System.TimeSpan,System.TimeSpan)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.TryParseExact(System.String,System.String[],System.IFormatProvider,System.TimeSpan@)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.TotalMinutes
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.Hours
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.TicksPerMinute
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.op_GreaterThan(System.TimeSpan,System.TimeSpan)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.TotalMilliseconds
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.TryParseExact(System.String,System.String,System.IFormatProvider,System.TimeSpan@)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.Equals(System.TimeSpan,System.TimeSpan)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.Zero
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.TotalSeconds
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.op_Equality(System.TimeSpan,System.TimeSpan)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.Seconds
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.TimeSpan.CompareTo
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.ToString(System.String,System.IFormatProvider)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.Ticks
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.Add(System.TimeSpan)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.Subtract(System.TimeSpan)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.CompareTo(System.Object)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.TicksPerHour
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.MinValue
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.TotalDays
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.TimeSpan.Parse
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.Compare(System.TimeSpan,System.TimeSpan)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.ParseExact(System.String,System.String[],System.IFormatProvider,System.Globalization.TimeSpanStyles)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.Milliseconds
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.Minutes
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.ParseExact(System.String,System.String[],System.IFormatProvider)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.FromDays(System.Double)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.FromMinutes(System.Double)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.TicksPerDay
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.FromSeconds(System.Double)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.TicksPerMillisecond
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.CompareTo(System.TimeSpan)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.#ctor(System.Int32,System.Int32,System.Int32)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.FromTicks(System.Int64)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.op_UnaryNegation(System.TimeSpan)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.TotalHours
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.TryParse(System.String,System.TimeSpan@)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.TimeSpan.Equals
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.#ctor(System.Int64)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.op_LessThan(System.TimeSpan,System.TimeSpan)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.op_LessThanOrEqual(System.TimeSpan,System.TimeSpan)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.TimeSpanStyles,System.TimeSpan@)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.Parse(System.String)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.TryParse(System.String,System.IFormatProvider,System.TimeSpan@)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.GetHashCode
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.Duration
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.Negate
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.FromMilliseconds(System.Double)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.MaxValue
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
-uid: System.TimeSpan.Days
-internalonly: False
----
-
----
-uid: System.TimeSpan.FromHours(System.Double)
-internalonly: False
----
-
----
-uid: System.TimeSpan.ToString(System.String)
-internalonly: False
----
-
----
-uid: System.TimeSpan.TicksPerSecond
-internalonly: False
----
-
----
-uid: System.TimeSpan.op_UnaryPlus(System.TimeSpan)
-internalonly: False
----
-
----
-uid: System.TimeSpan.op_Subtraction(System.TimeSpan,System.TimeSpan)
-internalonly: False
----
-
----
-uid: System.TimeSpan.TryParseExact(System.String,System.String[],System.IFormatProvider,System.Globalization.TimeSpanStyles,System.TimeSpan@)
-internalonly: False
----
-
----
-uid: System.TimeSpan.op_Inequality(System.TimeSpan,System.TimeSpan)
-internalonly: False
+uid: System.TimeSpan.ParseExact
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.ToString
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.TimeSpan.Days
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.TimeSpan.FromHours(System.Double)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.TimeSpan.#ctor
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.TimeSpan.ToString(System.String)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.TimeSpan.TryParseExact
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.TimeSpan.TicksPerSecond
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.TimeSpan.op_UnaryPlus(System.TimeSpan)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.TimeSpan.op_Subtraction(System.TimeSpan,System.TimeSpan)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.TimeSpan.TryParseExact(System.String,System.String[],System.IFormatProvider,System.Globalization.TimeSpanStyles,System.TimeSpan@)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.TimeSpan.op_Inequality(System.TimeSpan,System.TimeSpan)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.TimeSpan.ToString
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.Equals(System.TimeSpan)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.Equals(System.Object)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.op_Addition(System.TimeSpan,System.TimeSpan)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeSpan.ParseExact(System.String,System.String,System.IFormatProvider)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.TimeSpan.TryParse
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

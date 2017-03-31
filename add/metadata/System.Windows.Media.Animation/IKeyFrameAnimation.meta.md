@@ -1,9 +1,13 @@
 ---
 uid: System.Windows.Media.Animation.IKeyFrameAnimation
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.IKeyFrameAnimation.KeyFrames
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

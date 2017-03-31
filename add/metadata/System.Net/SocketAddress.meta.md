@@ -1,44 +1,59 @@
 ---
 uid: System.Net.SocketAddress
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.SocketAddress.Item(System.Int32)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.SocketAddress.Equals(System.Object)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.SocketAddress.Size
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.SocketAddress.Family
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.SocketAddress.#ctor(System.Net.Sockets.AddressFamily,System.Int32)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.SocketAddress.#ctor(System.Net.Sockets.AddressFamily)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.SocketAddress.GetHashCode
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.SocketAddress.#ctor
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.SocketAddress.ToString
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

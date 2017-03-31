@@ -1,49 +1,69 @@
 ---
 uid: System.IdentityModel.Selectors.X509CertificateValidator
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.IdentityModel.Selectors.X509CertificateValidator.CreateChainTrustValidator(System.Boolean,System.Security.Cryptography.X509Certificates.X509ChainPolicy)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.IdentityModel.Selectors.X509CertificateValidator.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.IdentityModel.Selectors.X509CertificateValidator.ChainTrust
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.IdentityModel.Selectors.X509CertificateValidator.PeerOrChainTrust
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.IdentityModel.Selectors.X509CertificateValidator.PeerTrust
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.IdentityModel.Selectors.X509CertificateValidator.LoadCustomConfiguration(System.Xml.XmlNodeList)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.IdentityModel.Selectors.X509CertificateValidator.CreatePeerOrChainTrustValidator(System.Boolean,System.Security.Cryptography.X509Certificates.X509ChainPolicy)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.IdentityModel.Selectors.X509CertificateValidator.Validate(System.Security.Cryptography.X509Certificates.X509Certificate2)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.IdentityModel.Selectors.X509CertificateValidator.None
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

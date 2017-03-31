@@ -16,8 +16,15 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="data">To be added.</param>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <param name="data">An <see cref="T:System.Collections.IEnumerable" /> collection of data records that the <see cref="M:System.Web.UI.DataSourceView.Select(System.Web.UI.DataSourceSelectArguments,System.Web.UI.DataSourceViewSelectCallback)" /> and <see cref="M:System.Web.UI.DataSourceView.ExecuteSelect(System.Web.UI.DataSourceSelectArguments)" /> methods return.</param>
+    <summary>Represents the asynchronous callback method that a data-bound control supplies to a data source view for asynchronous data retrieval.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, ASP.NET Web page and control execution is synchronous. However, ASP.NET data source controls also support an asynchronous data retrieval pattern for data operations. None of the data source controls provided by ASP.NET version 2.0 are asynchronous, but a control developer can build a data source control that is asynchronous. The <xref:System.Web.UI.DataSourceView> object supports the <xref:System.Web.UI.DataSourceView.Select%2A> method for asynchronous data retrieval. The <xref:System.Web.UI.DataSourceViewSelectCallback> delegate is passed to the data source view by a data-bound control, so that the view can call this delegate when asynchronous processing is complete and deliver the data to the data-bound control.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

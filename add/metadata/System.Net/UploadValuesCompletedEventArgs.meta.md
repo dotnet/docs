@@ -1,9 +1,11 @@
 ---
 uid: System.Net.UploadValuesCompletedEventArgs
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.UploadValuesCompletedEventArgs.Result
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

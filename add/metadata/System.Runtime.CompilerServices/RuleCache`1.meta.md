@@ -1,4 +1,6 @@
 ---
 uid: System.Runtime.CompilerServices.RuleCache`1
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

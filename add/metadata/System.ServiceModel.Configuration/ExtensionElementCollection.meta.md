@@ -1,29 +1,48 @@
 ---
 uid: System.ServiceModel.Configuration.ExtensionElementCollection
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.ExtensionElementCollection.BaseAdd(System.Int32,System.Configuration.ConfigurationElement)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.ExtensionElementCollection.ThrowOnDuplicate
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.ExtensionElementCollection.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Configuration.ExtensionElementCollection.BaseAdd
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.ExtensionElementCollection.BaseAdd(System.Configuration.ConfigurationElement)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.ExtensionElementCollection.GetElementKey(System.Configuration.ConfigurationElement)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

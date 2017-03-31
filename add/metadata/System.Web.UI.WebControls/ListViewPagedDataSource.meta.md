@@ -1,84 +1,101 @@
 ---
 uid: System.Web.UI.WebControls.ListViewPagedDataSource
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.ListViewPagedDataSource.DataSource
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.ListViewPagedDataSource.MaximumRows
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.ListViewPagedDataSource.CopyTo(System.Array,System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.ListViewPagedDataSource.TotalRowCount
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.ListViewPagedDataSource.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.ListViewPagedDataSource.GetEnumerator
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.ListViewPagedDataSource.IsReadOnly
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.ListViewPagedDataSource.DataSourceCount
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.ListViewPagedDataSource.AllowServerPaging
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.ListViewPagedDataSource.SyncRoot
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.ListViewPagedDataSource.IsServerPagingEnabled
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.ListViewPagedDataSource.StartRowIndex
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.ListViewPagedDataSource.Count
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.ListViewPagedDataSource.GetItemProperties(System.ComponentModel.PropertyDescriptor[])
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.ListViewPagedDataSource.IsSynchronized
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.ListViewPagedDataSource.GetListName(System.ComponentModel.PropertyDescriptor[])
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -15,8 +15,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the type of default [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) structure to use as the base [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) for conversions of managed <see cref="T:System.Printing.PrintTicket" /> objects to unmanaged [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) structures.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use a value of this enumeration primarily as a parameter in the <xref:System.Printing.Interop.PrintTicketConverter.ConvertPrintTicketToDevMode%2A> method.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="PrinterDefault">
@@ -32,7 +39,7 @@
         <ReturnType>System.Printing.Interop.BaseDevModeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The printer's default [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) structure.</summary>
       </Docs>
     </Member>
     <Member MemberName="UserDefault">
@@ -48,7 +55,7 @@
         <ReturnType>System.Printing.Interop.BaseDevModeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The user's default [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) structure.</summary>
       </Docs>
     </Member>
   </Members>

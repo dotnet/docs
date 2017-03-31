@@ -15,8 +15,23 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the level of access allowed to a Simple Mail Transport Protocol (SMTP) server.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.Mail.SmtpAccess> enumeration is used by the <xref:System.Net.Mail.SmtpPermission> and <xref:System.Net.Mail.SmtpPermissionAttribute> classes to specify a level of access to an SMTP host computer. The <xref:System.Net.Mail.SmtpClient> class demands an <xref:System.Net.Mail.SmtpPermission> when sending electronic mail to the SMTP host for delivery.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Net.Mail.SmtpAccess> enumeration to create a permission object.  
+  
+ [!code-cpp[NclMailPerms#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclMailPerms/CPP/mailpermissions.cpp#1)]
+ [!code-csharp[NclMailPerms#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclMailPerms/CS/mailpermissions.cs#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Connect">
@@ -37,7 +52,7 @@
         <ReturnType>System.Net.Mail.SmtpAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Connection to an SMTP host on the default port (port 25).</summary>
       </Docs>
     </Member>
     <Member MemberName="ConnectToUnrestrictedPort">
@@ -58,7 +73,7 @@
         <ReturnType>System.Net.Mail.SmtpAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Connection to an SMTP host on any port.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -79,7 +94,7 @@
         <ReturnType>System.Net.Mail.SmtpAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No access to an SMTP host.</summary>
       </Docs>
     </Member>
   </Members>

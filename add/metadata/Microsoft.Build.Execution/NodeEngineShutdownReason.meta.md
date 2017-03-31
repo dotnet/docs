@@ -1,4 +1,5 @@
 ---
 uid: Microsoft.Build.Execution.NodeEngineShutdownReason
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a client web socket factory.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.ClientWebSocketFactory" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,10 +47,10 @@
         <Parameter Name="settings" Type="System.ServiceModel.Channels.WebSocketTransportSettings" />
       </Parameters>
       <Docs>
-        <param name="connection">To be added.</param>
-        <param name="settings">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="connection">The web socket connection.</param>
+        <param name="settings">The web socket settings.</param>
+        <summary>Creates a new web socket with the specified connection.</summary>
+        <returns>A new <see cref="T:System.Net.WebSockets.WebSocket" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,8 +67,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the version of the web socket factory.</summary>
+        <value>The version of the web socket factory.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

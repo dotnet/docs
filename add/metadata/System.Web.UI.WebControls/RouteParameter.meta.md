@@ -1,44 +1,69 @@
 ---
 uid: System.Web.UI.WebControls.RouteParameter
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.RouteParameter.Evaluate(System.Web.HttpContext,System.Web.UI.Control)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.RouteParameter.#ctor(System.String,System.TypeCode,System.String)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.RouteParameter.#ctor(System.String,System.String)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.RouteParameter.RouteKey
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.RouteParameter.#ctor(System.String,System.Data.DbType,System.String)
-internalonly: False
----
-
----
-uid: System.Web.UI.WebControls.RouteParameter.Clone
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.RouteParameter.#ctor
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.RouteParameter.Clone
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.RouteParameter.#ctor
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.RouteParameter.#ctor(System.Web.UI.WebControls.RouteParameter)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

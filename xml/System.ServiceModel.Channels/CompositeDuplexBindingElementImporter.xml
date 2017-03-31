@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a policy import extension for mapping policy assertions into [!INCLUDE[indigo1](~/includes/indigo1-md.md)] bindings in which the client must expose an endpoint for the service to send messages back to the client.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.CompositeDuplexBindingElementImporter" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,10 +51,12 @@
         <Parameter Name="context" Type="System.ServiceModel.Description.PolicyConversionContext" />
       </Parameters>
       <Docs>
-        <param name="importer">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="importer">The <see cref="T:System.ServiceModel.Description.MetadataImporter" /> that imports the metadata information.</param>
+        <param name="context">The <see cref="T:System.ServiceModel.Description.PolicyConversionContext" /> object that contains the policy assertions that can be imported and the collections of binding elements to which custom binding elements that implements the policy can be added.</param>
+        <summary>Imports custom policy assertions for composite duplex bindings.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="importer" /> or <paramref name="context" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

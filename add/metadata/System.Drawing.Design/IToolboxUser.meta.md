@@ -1,14 +1,20 @@
 ---
 uid: System.Drawing.Design.IToolboxUser
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Design.IToolboxUser.ToolPicked(System.Drawing.Design.ToolboxItem)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Design.IToolboxUser.GetToolSupported(System.Drawing.Design.ToolboxItem)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -1,4 +1,6 @@
 ---
 uid: System.IdentityModel.Selectors.AudienceUriMode
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

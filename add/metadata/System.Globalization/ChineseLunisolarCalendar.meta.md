@@ -1,39 +1,55 @@
 ---
 uid: System.Globalization.ChineseLunisolarCalendar
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Globalization.ChineseLunisolarCalendar.GetEra(System.DateTime)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Globalization.ChineseLunisolarCalendar.MaxSupportedDateTime
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Globalization.ChineseLunisolarCalendar.MinSupportedDateTime
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Globalization.ChineseLunisolarCalendar.#ctor
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Globalization.ChineseLunisolarCalendar.DaysInYearBeforeMinSupportedYear
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Globalization.ChineseLunisolarCalendar.ChineseEra
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Globalization.ChineseLunisolarCalendar.Eras
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

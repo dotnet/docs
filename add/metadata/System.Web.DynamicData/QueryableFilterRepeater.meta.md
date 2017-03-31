@@ -1,34 +1,41 @@
 ---
 uid: System.Web.DynamicData.QueryableFilterRepeater
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.QueryableFilterRepeater.OnPreRender(System.EventArgs)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.QueryableFilterRepeater.DynamicFilterContainerId
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.QueryableFilterRepeater.ItemTemplate
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.QueryableFilterRepeater.System#Web#DynamicData#IFilterExpressionProvider#Initialize(System.Web.UI.WebControls.IQueryableDataSource)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.QueryableFilterRepeater.System#Web#DynamicData#IFilterExpressionProvider#GetQueryable(System.Linq.IQueryable)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.QueryableFilterRepeater.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

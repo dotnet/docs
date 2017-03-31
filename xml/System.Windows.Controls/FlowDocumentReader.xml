@@ -26,8 +26,42 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a control for viewing flow content, with built-in support for multiple viewing modes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Controls.FlowDocumentReader> includes features that enable the user to dynamically choose between various viewing modes, including a single-page (page-at-a-time) viewing mode, a two-page-at-a-time (book reading format) viewing mode, and a continuous scrolling (bottomless) viewing mode.  If you do not need the ability to dynamically switch between different viewing modes, there are lighter-weight flow content viewers that are fixed in a particular viewing mode.  <xref:System.Windows.Controls.FlowDocumentPageViewer> displays flow content in single-page viewing mode, and <xref:System.Windows.Controls.FlowDocumentScrollViewer> displays flow content in continuous-scrolling mode.  For more information about available display modes, see <xref:System.Windows.Controls.FlowDocumentReaderViewingMode>.  
+  
+ The following figure shows a <xref:System.Windows.Controls.FlowDocumentReader> control with its default [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)].  
+  
+ ![Screenshot with callouts: FlowDocumentReader](~/add/media/flowdocrdr-main.png "Screenshot with callouts: FlowDocumentReader")  
+  
+-   **Content Area** - The content area displays the contents of the <xref:System.Windows.Documents.FlowDocument> specified by the <xref:System.Windows.Controls.FlowDocumentReader.Document%2A> property.  
+  
+-   **Tool Bar** - The default toolbar is docked underneath the content area. It hosts controls for searching content, navigating pages, selecting a viewing mode, and changing the zoom level.  
+  
+    -   **Find Button** - The **Find** button brings up a Find dialog, which enables the user to search the contents of the <xref:System.Windows.Controls.FlowDocumentReader> for specified terms or phrases.  The **Find** button is not shown if <xref:System.Windows.Controls.FlowDocumentReader.IsFindEnabled%2A> is `false`.  For more information, see <xref:System.Windows.Controls.FlowDocumentReader.Find%2A>.  
+  
+    -   **Page Navigation Controls** - The page navigation controls include a button to jump to the next page (the down arrow) or previous page (the up arrow), as well as indicators for the current page number and total number of pages.  
+  
+    -   **Viewing Mode Buttons** - The viewing mode buttons enable the user to select from available viewing modes.  For more information, see <xref:System.Windows.Controls.FlowDocumentReader.ViewingMode%2A>.  
+  
+    -   **Zoom Controls** - The zoom controls enable the user to increase or decrease the zoom level by clicking the plus or minus buttons, respectively.  The zoom controls also include a slider for adjusting the zoom level.  For more information, see <xref:System.Windows.Controls.FlowDocumentReader.Zoom%2A>.  
+  
+ The default toolbar [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] does not include a **Print** button.  
+  
+ <xref:System.Windows.Documents.FlowDocument> is the only allowable child element for a <xref:System.Windows.Controls.FlowDocumentReader>.  A <xref:System.Windows.Controls.FlowDocumentReader> element can host no more than one <xref:System.Windows.Documents.FlowDocument>.  
+  
+   
+  
+## Examples  
+ The following example defines the <xref:System.Windows.Controls.FlowDocumentReader> pictured in the preceding figure.  
+  
+ [!code-xml[FloaterFigureSnippets#_FloaterFigureXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FloaterFigureSnippets/CSharp/Window1.xaml#_floaterfigurexaml)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,7 +75,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.FlowDocumentReader" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,7 +93,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Cancels any current printing job.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,9 +110,25 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the <see cref="P:System.Windows.Controls.FlowDocumentReader.Zoom" /> level can be decreased.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="P:System.Windows.Controls.FlowDocumentReader.Zoom" /> level can be decreased; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling the <xref:System.Windows.Controls.FlowDocumentReader.DecreaseZoom%2A> method decreases the <xref:System.Windows.Controls.FlowDocumentReader.Zoom%2A> level by the amount specified by the <xref:System.Windows.Controls.FlowDocumentReader.ZoomIncrement%2A> property.  The value of this property is subject to the value of the <xref:System.Windows.Controls.FlowDocumentReader.MinZoom%2A> property.  
+  
+<a name="dependencyPropertyInfo_CanDecreaseZoom"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.FlowDocumentReader.CanDecreaseZoomProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CanDecreaseZoomProperty">
@@ -94,7 +144,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.FlowDocumentReader.CanDecreaseZoom" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,9 +161,24 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Windows.Controls.FlowDocumentReader" /> can execute the <see cref="P:System.Windows.Input.NavigationCommands.NextPage" /> routed command to jump to the next page of content.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Controls.FlowDocumentReader" /> can jump to the next page of content; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_CanGoToNextPage"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.FlowDocumentReader>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CanGoToNextPageProperty">
@@ -129,7 +194,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.FlowDocumentReader.CanGoToNextPage" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,10 +214,18 @@
         <Parameter Name="pageNumber" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="pageNumber">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="pageNumber">A page number to check for as a valid jump target.</param>
+        <summary>Returns a value that indicates whether or the <see cref="T:System.Windows.Controls.FlowDocumentReader" /> is able to jump to the specified page number.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Windows.Controls.FlowDocumentReader" /> is able to jump to the specified page number; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Input.NavigationCommands.GoToPage%2A>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CanGoToPreviousPage">
@@ -168,9 +241,24 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Windows.Controls.FlowDocumentReader" /> can execute the <see cref="P:System.Windows.Input.NavigationCommands.PreviousPage" /> routed command to jump to the previous page of content.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Controls.FlowDocumentReader" /> can jump to the previous page of content; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_CanGoToPreviousPage"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.FlowDocumentReader>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CanGoToPreviousPageProperty">
@@ -186,7 +274,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.FlowDocumentReader.CanGoToPreviousPage" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -203,9 +291,25 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the <see cref="P:System.Windows.Controls.FlowDocumentReader.Zoom" /> level can be increased.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="P:System.Windows.Controls.FlowDocumentReader.Zoom" /> level can be increased; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling the <xref:System.Windows.Controls.FlowDocumentReader.IncreaseZoom%2A> method increases the <xref:System.Windows.Controls.FlowDocumentReader.Zoom%2A> level by the amount specified by the <xref:System.Windows.Controls.FlowDocumentReader.ZoomIncrement%2A> property.  The value of this property is subject to the value of the <xref:System.Windows.Controls.FlowDocumentReader.MaxZoom%2A> property.  
+  
+<a name="dependencyPropertyInfo_CanIncreaseZoom"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.FlowDocumentReader.CanIncreaseZoomProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CanIncreaseZoomProperty">
@@ -221,7 +325,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.FlowDocumentReader.CanIncreaseZoom" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -239,8 +343,19 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Executes the <see cref="P:System.Windows.Input.NavigationCommands.DecreaseZoom" /> routed command.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.FlowDocumentReader.DecreaseZoom%2A> method decreases the current <xref:System.Windows.Controls.FlowDocumentReader.Zoom%2A> level by the value specified by the <xref:System.Windows.Controls.FlowDocumentReader.ZoomIncrement%2A> property.  
+  
+ Default <xref:System.Windows.Controls.FlowDocumentReader> [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] includes a button to decrease the zoom.  
+  
+ Calling this method has no effect if the <xref:System.Windows.Controls.FlowDocumentReader.CanDecreaseZoom%2A> property is `false`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Document">
@@ -256,9 +371,23 @@
         <ReturnType>System.Windows.Documents.FlowDocument</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a <see cref="T:System.Windows.Documents.FlowDocument" /> that hosts the content to be displayed by the <see cref="T:System.Windows.Controls.FlowDocumentReader" />.</summary>
+        <value>A <see cref="T:System.Windows.Documents.FlowDocument" /> that hosts the content to be displayed by the <see cref="T:System.Windows.Controls.FlowDocumentReader" />. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_Document"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.FlowDocumentReader>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DocumentProperty">
@@ -274,7 +403,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.FlowDocumentReader.Document" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -292,8 +421,31 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Toggles the Find dialog.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Default <xref:System.Windows.Controls.FlowDocumentReader> [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] includes a **Find** button that toggles the Find dialog.  The following figure shows the Find dialog on a <xref:System.Windows.Controls.FlowDocumentReader> with default UI.  
+  
+ ![Screenshot with callouts: FlowDocumentReader](~/add/media/flowdocrdr-find.png "Screenshot with callouts: FlowDocumentReader")  
+  
+ The default Find dialog includes a field for entering search text, as well as buttons for **Find Next**, **Find Previous**, and **Options**.  The following Find options are provided by default:  
+  
+-   Match whole word only.  
+  
+-   Match case.  
+  
+-   Match diacritic.  
+  
+-   Match kashida.  
+  
+-   Match alef hamza.  
+  
+ Calling this method has no effect if the <xref:System.Windows.Controls.FlowDocumentReader.IsFindEnabled%2A> property is `false`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IncreaseZoom">
@@ -310,8 +462,19 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Executes the <see cref="P:System.Windows.Input.NavigationCommands.IncreaseZoom" /> routed command.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.FlowDocumentReader.IncreaseZoom%2A> method increases the current <xref:System.Windows.Controls.FlowDocumentReader.Zoom%2A> level by the value specified by the <xref:System.Windows.Controls.FlowDocumentReader.ZoomIncrement%2A> property.  
+  
+ Default <xref:System.Windows.Controls.FlowDocumentReader> [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] includes a button to increase the zoom.  
+  
+ Calling this method has no effect if the <xref:System.Windows.Controls.FlowDocumentReader.CanIncreaseZoom%2A> property is `false`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsFindEnabled">
@@ -327,9 +490,41 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether the <see cref="P:System.Windows.Input.ApplicationCommands.Find" /> routed command is enabled.</summary>
+        <value>
+          <see langword="true" /> to enable the <see cref="P:System.Windows.Input.ApplicationCommands.Find" /> routed command; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Default <xref:System.Windows.Controls.FlowDocumentReader> [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] includes a **Find** button that toggles the Find dialog.  The following figure shows the Find dialog on a <xref:System.Windows.Controls.FlowDocumentReader> with default UI.  
+  
+ ![Screenshot with callouts: FlowDocumentReader](~/add/media/flowdocrdr-find.png "Screenshot with callouts: FlowDocumentReader")  
+  
+ When <xref:System.Windows.Controls.FlowDocumentReader.IsFindEnabled%2A> is `false`, the **Find** button does not appear on the <xref:System.Windows.Controls.FlowDocumentReader>[!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)].  
+  
+<a name="dependencyPropertyInfo_IsFindEnabled"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.FlowDocumentReader.IsFindEnabledProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example shows how to set the <xref:System.Windows.Controls.FlowDocumentReader.IsFindEnabled%2A> attribute.  
+  
+ [!code-xml[FlowDocumentSnippets#_FlowDocumentReaderXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentSnippets/CSharp/Window1.xaml#_flowdocumentreaderxaml)]  
+  
+ The following example shows how to set the <xref:System.Windows.Controls.FlowDocumentReader.IsFindEnabled%2A> property programmatically.  
+  
+ [!code-csharp[FlowDocumentSnippets#_FlowDocumentReader](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentSnippets/CSharp/Window1.xaml.cs#_flowdocumentreader)]
+ [!code-vb[FlowDocumentSnippets#_FlowDocumentReader](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FlowDocumentSnippets/visualbasic/window1.xaml.vb#_flowdocumentreader)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsFindEnabledProperty">
@@ -345,7 +540,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.FlowDocumentReader.IsFindEnabled" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -362,9 +557,26 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether <see cref="T:System.Windows.Controls.FlowDocumentReader" /> displays selected text when the control does not have focus.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Controls.FlowDocumentReader" /> displays selected text when the <see cref="T:System.Windows.Controls.FlowDocumentReader" /> does not have focus; otherwise, <see langword="false" />.  
+  
+ The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_IsInactiveSelectionHighlightEnabled"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.FlowDocumentReader>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsInactiveSelectionHighlightEnabledProperty">
@@ -380,7 +592,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.FlowDocumentReader.IsInactiveSelectionHighlightEnabled" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -397,9 +609,26 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether <see cref="F:System.Windows.Controls.FlowDocumentReaderViewingMode.Page" /> is available as a viewing mode.</summary>
+        <value>
+          <see langword="true" /> to indicate that single-page viewing mode is available; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ At least one viewing mode must be enabled.  
+  
+<a name="dependencyPropertyInfo_IsPageViewEnabled"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.FlowDocumentReader.IsPageViewEnabledProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">Setting this property to <see langword="false" /> while <see cref="P:System.Windows.Controls.FlowDocumentReader.IsScrollViewEnabled" /> and <see cref="P:System.Windows.Controls.FlowDocumentReader.IsTwoPageViewEnabled" /> are also <see langword="false" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsPageViewEnabledProperty">
@@ -415,7 +644,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.FlowDocumentReader.IsPageViewEnabled" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -432,9 +661,36 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether the <see cref="P:System.Windows.Input.ApplicationCommands.Print" /> routed command is enabled.</summary>
+        <value>
+          <see langword="true" /> to enable the <see cref="P:System.Windows.Input.ApplicationCommands.Print" /> routed command; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_IsPrintEnabled"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.FlowDocumentReader.IsPrintEnabledProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example shows how to set the <xref:System.Windows.Controls.FlowDocumentReader.IsPrintEnabled%2A> attribute.  
+  
+ [!code-xml[FlowDocumentSnippets#_FlowDocumentReaderXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentSnippets/CSharp/Window1.xaml#_flowdocumentreaderxaml)]  
+  
+ The following example shows how to set the <xref:System.Windows.Controls.FlowDocumentReader.IsPrintEnabled%2A> property programmatically.  
+  
+ [!code-csharp[FlowDocumentSnippets#_FlowDocumentReader](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentSnippets/CSharp/Window1.xaml.cs#_flowdocumentreader)]
+ [!code-vb[FlowDocumentSnippets#_FlowDocumentReader](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FlowDocumentSnippets/visualbasic/window1.xaml.vb#_flowdocumentreader)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsPrintEnabledProperty">
@@ -450,7 +706,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.FlowDocumentReader.IsPrintEnabled" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -467,9 +723,26 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether <see cref="F:System.Windows.Controls.FlowDocumentReaderViewingMode.Scroll" /> is available as a viewing mode.</summary>
+        <value>
+          <see langword="true" /> to indicate that <see cref="F:System.Windows.Controls.FlowDocumentReaderViewingMode.Scroll" /> is available as a viewing mode; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ At least one viewing mode must be enabled.  
+  
+<a name="dependencyPropertyInfo_IsScrollViewEnabled"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.FlowDocumentReader.IsScrollViewEnabledProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">Setting this property to <see langword="false" /> while <see cref="P:System.Windows.Controls.FlowDocumentReader.IsPageViewEnabled" /> and <see cref="P:System.Windows.Controls.FlowDocumentReader.IsTwoPageViewEnabled" /> are also <see langword="false" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsScrollViewEnabledProperty">
@@ -485,7 +758,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.FlowDocumentReader.IsScrollViewEnabled" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -502,9 +775,26 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Windows.Controls.FlowDocumentReader" /> has focus and selected text.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Controls.FlowDocumentReader" /> displays selected text when the text box does not have focus; otherwise, <see langword="false" />.  
+  
+ The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_IsSelectionActive"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.FlowDocumentReader>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSelectionActiveProperty">
@@ -520,7 +810,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.FlowDocumentReader.IsSelectionActive" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -537,9 +827,26 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether <see cref="F:System.Windows.Controls.FlowDocumentReaderViewingMode.TwoPage" /> is available as a viewing mode.</summary>
+        <value>
+          <see langword="true" /> to indicate that <see cref="F:System.Windows.Controls.FlowDocumentReaderViewingMode.TwoPage" /> is available as a viewing mode; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ At least one viewing mode must be enabled.  
+  
+<a name="dependencyPropertyInfo_IsTwoPageViewEnabled"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.FlowDocumentReader.IsTwoPageViewEnabledProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">Setting this property to <see langword="false" /> while <see cref="P:System.Windows.Controls.FlowDocumentReader.IsPageViewEnabled" /> and <see cref="P:System.Windows.Controls.FlowDocumentReader.IsScrollViewEnabled" /> are also <see langword="false" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsTwoPageViewEnabledProperty">
@@ -555,7 +862,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.FlowDocumentReader.IsTwoPageViewEnabled" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -572,8 +879,8 @@
         <ReturnType>System.Collections.IEnumerator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an enumerator that can iterate the logical children of the <see cref="T:System.Windows.Controls.FlowDocumentReader" />.</summary>
+        <value>An enumerator for the logical children.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -590,9 +897,36 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the maximum allowable <see cref="P:System.Windows.Controls.FlowDocumentReader.Zoom" /> level for the <see cref="T:System.Windows.Controls.FlowDocumentReader" />.</summary>
+        <value>The maximum allowable <see cref="P:System.Windows.Controls.FlowDocumentReader.Zoom" /> level for the <see cref="T:System.Windows.Controls.FlowDocumentReader" />, interpreted as a percentage. The default is 200.0 (maximum zoom of 200%).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default <xref:System.Windows.Controls.FlowDocumentReader> [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] includes a slider that can be used to adjust the <xref:System.Windows.Controls.FlowDocumentReader.Zoom%2A> level.  This property specifies the upper-limit value for the <xref:System.Windows.Controls.FlowDocumentReader.Zoom%2A> slider.  
+  
+<a name="dependencyPropertyInfo_MaxZoom"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.FlowDocumentReader.MaxZoomProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example shows how to set the <xref:System.Windows.Controls.FlowDocumentReader.MaxZoom%2A> attribute.  
+  
+ [!code-xml[FlowDocumentSnippets#_FlowDocumentReaderXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentSnippets/CSharp/Window1.xaml#_flowdocumentreaderxaml)]  
+  
+ The following example shows how to set the <xref:System.Windows.Controls.FlowDocumentReader.MaxZoom%2A> property programmatically.  
+  
+ [!code-csharp[FlowDocumentSnippets#_FlowDocumentReader](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentSnippets/CSharp/Window1.xaml.cs#_flowdocumentreader)]
+ [!code-vb[FlowDocumentSnippets#_FlowDocumentReader](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FlowDocumentSnippets/visualbasic/window1.xaml.vb#_flowdocumentreader)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxZoomProperty">
@@ -608,7 +942,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.FlowDocumentReader.MaxZoom" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -625,9 +959,36 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the minimum allowable <see cref="P:System.Windows.Controls.FlowDocumentReader.Zoom" /> level for the <see cref="T:System.Windows.Controls.FlowDocumentReader" />.</summary>
+        <value>The minimum allowable <see cref="P:System.Windows.Controls.FlowDocumentReader.Zoom" /> level for the <see cref="T:System.Windows.Controls.FlowDocumentReader" />, interpreted as a percentage. The default is 80.0 (minimum zoom of 80%).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default <xref:System.Windows.Controls.FlowDocumentReader> [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] includes a slider that can be used to adjust the <xref:System.Windows.Controls.FlowDocumentReader.Zoom%2A> level.  This property specifies the lower-limit value for the <xref:System.Windows.Controls.FlowDocumentReader.Zoom%2A> slider.  
+  
+<a name="dependencyPropertyInfo_MinZoom"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.FlowDocumentReader.MinZoomProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example shows how to set the <xref:System.Windows.Controls.FlowDocumentReader.MinZoom%2A> attribute.  
+  
+ [!code-xml[FlowDocumentSnippets#_FlowDocumentReaderXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentSnippets/CSharp/Window1.xaml#_flowdocumentreaderxaml)]  
+  
+ The following example shows how to set the <xref:System.Windows.Controls.FlowDocumentReader.MinZoom%2A> property programmatically.  
+  
+ [!code-csharp[FlowDocumentSnippets#_FlowDocumentReader](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentSnippets/CSharp/Window1.xaml.cs#_flowdocumentreader)]
+ [!code-vb[FlowDocumentSnippets#_FlowDocumentReader](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FlowDocumentSnippets/visualbasic/window1.xaml.vb#_flowdocumentreader)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MinZoomProperty">
@@ -643,7 +1004,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.FlowDocumentReader.MinZoom" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -661,8 +1022,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Builds the visual tree for the <see cref="T:System.Windows.Controls.FlowDocumentReader" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is invoked whenever <xref:System.Windows.FrameworkElement.ApplyTemplate%2A> is called.  
+  
+ This method overrides <xref:System.Windows.FrameworkElement.OnApplyTemplate%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnCancelPrintCommand">
@@ -679,8 +1049,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Handles the <see cref="P:System.Windows.Input.ApplicationCommands.CancelPrint" /> routed command.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called when the <xref:System.Windows.Input.ApplicationCommands.CancelPrint%2A> command is invoked.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnCreateAutomationPeer">
@@ -697,9 +1074,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates and returns an <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> object for this <see cref="T:System.Windows.Controls.FlowDocumentReader" />.</summary>
+        <returns>An <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> object for this <see cref="T:System.Windows.Controls.FlowDocumentReader" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method overrides <xref:System.Windows.ContentElement.OnCreateAutomationPeer%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnDecreaseZoomCommand">
@@ -716,8 +1100,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Handles the <see cref="P:System.Windows.Input.NavigationCommands.DecreaseZoom" /> routed command.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called when the <xref:System.Windows.Input.NavigationCommands.DecreaseZoom%2A> command is invoked.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnDpiChanged">
@@ -737,9 +1128,9 @@
         <Parameter Name="newDpiScaleInfo" Type="System.Windows.DpiScale" />
       </Parameters>
       <Docs>
-        <param name="oldDpiScaleInfo">To be added.</param>
-        <param name="newDpiScaleInfo">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="oldDpiScaleInfo">The previous DPI scale setting.</param>
+        <param name="newDpiScaleInfo">The new DPI scale setting.</param>
+        <summary>Called when the DPI at which this Flow Document Reader is rendered changes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -757,8 +1148,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Handles the <see cref="P:System.Windows.Input.ApplicationCommands.Find" /> routed command.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called when the <xref:System.Windows.Input.ApplicationCommands.Find%2A> command is invoked.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnIncreaseZoomCommand">
@@ -775,8 +1173,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Handles the <see cref="P:System.Windows.Input.NavigationCommands.IncreaseZoom" /> routed command.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called when the <xref:System.Windows.Input.NavigationCommands.IncreaseZoom%2A> command is invoked.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnInitialized">
@@ -795,9 +1200,18 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">An <see cref="T:System.EventArgs" /> object containing the arguments associated with the <see cref="E:System.Windows.FrameworkElement.Initialized" /> routed event.</param>
+        <summary>Handles the <see cref="E:System.Windows.FrameworkElement.Initialized" /> routed event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called when the <xref:System.Windows.FrameworkElement.IsInitialized%2A> property is `true`.  
+  
+ This method overrides <xref:System.Windows.FrameworkElement.OnInitialized%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnIsKeyboardFocusWithinChanged">
@@ -816,9 +1230,18 @@
         <Parameter Name="e" Type="System.Windows.DependencyPropertyChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">A <see cref="T:System.Windows.DependencyPropertyChangedEventArgs" /> object containing the arguments associated with the <see cref="E:System.Windows.UIElement.IsKeyboardFocusWithinChanged" /> routed event.</param>
+        <summary>Handles the <see cref="E:System.Windows.UIElement.IsKeyboardFocusWithinChanged" /> routed event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method moves the focus to the content area of the <xref:System.Windows.Controls.FlowDocumentReader>.  
+  
+ This method is called whenever the <xref:System.Windows.UIElement.IsKeyboardFocusWithin%2A> dependency property changes.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnKeyDown">
@@ -845,9 +1268,20 @@
         <Parameter Name="e" Type="System.Windows.Input.KeyEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">Provides data about the event.</param>
+        <summary>Invoked whenever an unhandled <see cref="E:System.Windows.Input.Keyboard.KeyDown" /> attached routed event reaches an element derived from this class in its route. Implement this method to add class handling for this event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Keystrokes are handled by a dedicated input manager. Other programming features that rely on keystrokes such as input and command bindings will potentially handle the keystroke before it is exposed as a general keystroke. If these input system features mark the event handled, then <xref:System.Windows.Controls.FlowDocumentReader.OnKeyDown%2A> will not be invoked.  
+  
+ This method has no default implementation. Calling base() in your implementation is still recommended, in case an intermediate class in the inheritance implemented this method. You may call base() either before or after your special handling, depending on your requirements.  
+  
+ The purpose of this method is somewhat similar to [!INCLUDE[TLA#tla_clr](~/includes/tlasharptla-clr-md.md)] event pattern On* methods: it provides the means to handle the matching event from derived classes with a class handler instead of an instance handler. In this case the matching event is a routed event. The implementation pattern of the On* methods is different for routed events because the routed event may have been raised by a child element, not necessarily the element that will invoke handlers, so your implementation will need to take the event arguments' source properties into account (and should not try to re-raise the event in most cases). Subclasses of <xref:System.Windows.Controls.FlowDocumentReader> could choose to call private class handler methods when the event is received along the route. One potential scenario is to take the arguments of the event and mark the event as handled.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPrintCommand">
@@ -864,8 +1298,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Handles the <see cref="P:System.Windows.Input.ApplicationCommands.Print" /> routed command.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called when the <xref:System.Windows.Input.ApplicationCommands.Print%2A> command is invoked.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPrintCompleted">
@@ -882,7 +1323,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Called when a printing job has completed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -902,9 +1343,16 @@
         <Parameter Name="viewingMode" Type="System.Windows.Controls.FlowDocumentReaderViewingMode" />
       </Parameters>
       <Docs>
-        <param name="viewingMode">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="viewingMode">One of the <see cref="T:System.Windows.Controls.FlowDocumentReaderViewingMode" /> values that specifies the viewing mode to switch to.</param>
+        <summary>Handles the <see cref="M:System.Windows.Controls.FlowDocumentReader.SwitchViewingMode(System.Windows.Controls.FlowDocumentReaderViewingMode)" /> routed command.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called when the <xref:System.Windows.Controls.FlowDocumentReader.SwitchViewingMode%2A> routed command is invoked.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PageCount">
@@ -920,9 +1368,26 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the current number of display pages for the content hosted by the <see cref="T:System.Windows.Controls.FlowDocumentReader" />.</summary>
+        <value>The current number of display pages for the content hosted by the <see cref="T:System.Windows.Controls.FlowDocumentReader" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Flow content does not have any inherent notion of a fixed number of pages; the contents of a <xref:System.Windows.Documents.FlowDocument> are dynamically organized into a set of display pages, the number of which is based on current display and layout characteristics.  For example, resizing a <xref:System.Windows.Controls.FlowDocumentReader> or changing the <xref:System.Windows.Controls.FlowDocumentReader.Zoom%2A> level affects the number of display pages that the content is organized into.  
+  
+ When the <xref:System.Windows.Controls.FlowDocumentReader> is in the <xref:System.Windows.Controls.FlowDocumentReaderViewingMode> viewing mode, the page count and the current page number are always 1 (assuming any content has been loaded).  
+  
+<a name="dependencyPropertyInfo_PageCount"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.FlowDocumentReader.PageCountProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PageCountProperty">
@@ -938,7 +1403,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.FlowDocumentReader.PageCount" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -955,9 +1420,26 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the page number for the currently displayed page.</summary>
+        <value>The page number for the currently displayed page.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Flow content does not have any inherent notion of a fixed number of pages; the contents of a <xref:System.Windows.Documents.FlowDocument> are dynamically organized into a set of display pages, the number of which is based on current display and layout characteristics.  For example, resizing a <xref:System.Windows.Controls.FlowDocumentReader> or changing the <xref:System.Windows.Controls.FlowDocumentReader.Zoom%2A> level affects the number of display pages that the content is organized into.  
+  
+ When the <xref:System.Windows.Controls.FlowDocumentReader> is in the <xref:System.Windows.Controls.FlowDocumentReaderViewingMode> viewing mode, the page count and the current page number are always 1 (assuming any content has been loaded).  
+  
+<a name="dependencyPropertyInfo_PageNumber"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.FlowDocumentReader.PageNumberProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PageNumberProperty">
@@ -973,7 +1455,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.FlowDocumentReader.PageNumber" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -991,8 +1473,21 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Invokes a standard Print dialog which can be used to print the contents of the <see cref="T:System.Windows.Controls.FlowDocumentReader" /> and configure printing preferences.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default <xref:System.Windows.Controls.FlowDocumentReader> [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] does not provide a **Print** button.  
+  
+ The following figure shows an example of a standard Print dialog.  Note that the specific appearance of the Print dialog may vary depending on the hosting computer's configuration.  
+  
+ ![Screenshot: Print dialog box](~/add/media/flowdocrdr-print.png "Screenshot: Print dialog box")  
+  
+ Calling this method has no effect if the <xref:System.Windows.Controls.FlowDocumentReader.IsPrintEnabled%2A> property is `false`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Selection">
@@ -1008,9 +1503,25 @@
         <ReturnType>System.Windows.Documents.TextSelection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the selected content of the <see cref="T:System.Windows.Controls.FlowDocumentReader" />.</summary>
+        <value>The selected content of the <see cref="T:System.Windows.Controls.FlowDocumentReader" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Controls.FlowDocumentReader.Selection%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+   
+  
+## Examples  
+ The following example shows how to get the text that a user has selected in the <xref:System.Windows.Controls.FlowDocumentReader>.  
+  
+ [!code-xml[FlowDocSelection#5](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocSelection/CSharp/Window3.xaml#5)]  
+[!code-csharp[FlowDocSelection#6](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocSelection/CSharp/Window3.xaml.cs#6)]
+[!code-vb[FlowDocSelection#6](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FlowDocSelection/VisualBasic/Window3.xaml.vb#6)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectionBrush">
@@ -1026,9 +1537,24 @@
         <ReturnType>System.Windows.Media.Brush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the brush that highlights the selected text.</summary>
+        <value>A brush that highlights the selected text.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can specify the brush that highlights selected text in a <xref:System.Windows.Controls.FlowDocumentReader> by setting the <xref:System.Windows.Controls.FlowDocumentReader.SelectionBrush%2A> and the <xref:System.Windows.Controls.FlowDocumentReader.SelectionOpacity%2A> properties.  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Controls.FlowDocumentReader>, sets the <xref:System.Windows.Controls.FlowDocumentReader.SelectionBrush%2A> property to pink, and sets the <xref:System.Windows.Controls.FlowDocumentReader.SelectionOpacity%2A> property to 0.7.  
+  
+ [!code-xml[FlowDocReaderSelBrushSnippet#SelectionBrush](~/samples/snippets/xaml/VS_Snippets_Wpf/flowdocreaderselbrushsnippet/xaml/window1.xaml#selectionbrush)]
+ [!code-xml[FlowDocReaderSelBrushSnippet#SelectionBrush](~/samples/snippets/csharp/VS_Snippets_Wpf/flowdocreaderselbrushsnippet/CS/window1.xaml#selectionbrush)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectionBrushProperty">
@@ -1044,7 +1570,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.FlowDocumentReader.SelectionBrush" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1061,9 +1587,24 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the opacity of the <see cref="P:System.Windows.Controls.FlowDocumentReader.SelectionBrush" />.</summary>
+        <value>The opacity of the <see cref="P:System.Windows.Controls.FlowDocumentReader.SelectionBrush" />. The default is 0.4.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you set the <xref:System.Windows.Controls.FlowDocumentReader.SelectionOpacity%2A> to 0, the <xref:System.Windows.Controls.FlowDocumentReader.SelectionBrush%2A> is transparent and is not visible. If you set the <xref:System.Windows.Controls.FlowDocumentReader.SelectionOpacity%2A> to 1.0 or greater, the <xref:System.Windows.Controls.FlowDocumentReader.SelectionBrush%2A> is opaque and the selected text is not visible.  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Controls.FlowDocumentReader>, sets the <xref:System.Windows.Controls.FlowDocumentReader.SelectionBrush%2A> property to pink, and sets the <xref:System.Windows.Controls.FlowDocumentReader.SelectionOpacity%2A> property to 0.7.  
+  
+ [!code-xml[FlowDocReaderSelBrushSnippet#SelectionBrush](~/samples/snippets/xaml/VS_Snippets_Wpf/flowdocreaderselbrushsnippet/xaml/window1.xaml#selectionbrush)]
+ [!code-xml[FlowDocReaderSelBrushSnippet#SelectionBrush](~/samples/snippets/csharp/VS_Snippets_Wpf/flowdocreaderselbrushsnippet/CS/window1.xaml#selectionbrush)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectionOpacityProperty">
@@ -1079,7 +1620,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.FlowDocumentReader.SelectionOpacity" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1099,9 +1640,18 @@
         <Parameter Name="viewingMode" Type="System.Windows.Controls.FlowDocumentReaderViewingMode" />
       </Parameters>
       <Docs>
-        <param name="viewingMode">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="viewingMode">One of the <see cref="T:System.Windows.Controls.FlowDocumentReaderViewingMode" /> values that specifies the desired viewing mode.</param>
+        <summary>Executes the <see cref="F:System.Windows.Controls.FlowDocumentReader.SwitchViewingModeCommand" /> command.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method switches the <xref:System.Windows.Controls.FlowDocumentReader> to the specified viewing mode.  
+  
+ For details on available viewing modes for a <xref:System.Windows.Controls.FlowDocumentReader>, see <xref:System.Windows.Controls.FlowDocumentReaderViewingMode>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SwitchViewingModeCommand">
@@ -1117,8 +1667,28 @@
         <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets the value that represents the **Switch Viewing Mode** command.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.FlowDocumentReader> class has built-in handling for this command (as well as built-in handling for a number of application and navigation commands). For more information on commanding and command binding, see [Commanding Overview](../Topic/Commanding%20Overview.md).  
+  
+ Rather than initiate this command, you can instead call <xref:System.Windows.Controls.FlowDocumentReader.SwitchViewingMode%2A> on the relevant <xref:System.Windows.Controls.FlowDocumentReader>. The result is the same.  
+  
+ The **Switch Viewing Mode** command can either be parameterless, in which case the viewing mode advances to the next available viewing mode in the <xref:System.Windows.Controls.FlowDocumentReaderViewingMode> enumeration sequence, or it can specify a viewing mode by naming the <xref:System.Windows.Controls.FlowDocumentReaderViewingMode> in the <xref:System.Windows.Input.RoutedUICommand> command parameters. If used to set a command property in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], the command must be parameterless.  
+  
+ You could also use or respond to this command in a derived class, using either the built-in handling or replacing it with handling of your own. <xref:System.Windows.Controls.FlowDocumentReader.OnSwitchViewingModeCommand%2A> is a callback that you can use to change the class handling, without requiring changes to command bindings in the template or in instances.  
+  
+<a name="xamlTextUsage_SwitchViewingModeCommand"></a>   
+## XAML Text Usage  
+  
+```  
+<object property="SwitchViewingMode"/>  
+```  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SwitchViewingModeCore">
@@ -1137,9 +1707,16 @@
         <Parameter Name="viewingMode" Type="System.Windows.Controls.FlowDocumentReaderViewingMode" />
       </Parameters>
       <Docs>
-        <param name="viewingMode">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="viewingMode">One of the <see cref="T:System.Windows.Controls.FlowDocumentReaderViewingMode" /> values that specifies the desired viewing mode.</param>
+        <summary>Handles the <see cref="M:System.Windows.Controls.FlowDocumentReader.SwitchViewingMode(System.Windows.Controls.FlowDocumentReaderViewingMode)" /> command.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For details on available viewing modes for a <xref:System.Windows.Controls.FlowDocumentReader>, see <xref:System.Windows.Controls.FlowDocumentReaderViewingMode>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Markup.IAddChild.AddChild">
@@ -1158,8 +1735,8 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">An object to add as a child.</param>
+        <summary>This member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code. Use the <see cref="P:System.Windows.Controls.FlowDocumentReader.Document" /> property to add a <see cref="T:System.Windows.Documents.FlowDocument" /> as the content child for the <see cref="T:System.Windows.Controls.FlowDocumentReader" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1179,8 +1756,8 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="text">A string to add to the object.</param>
+        <summary>This member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1197,9 +1774,28 @@
         <ReturnType>System.Windows.Controls.FlowDocumentReaderViewingMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the viewing mode for the <see cref="T:System.Windows.Controls.FlowDocumentReader" />.</summary>
+        <value>One of the <see cref="T:System.Windows.Controls.FlowDocumentReaderViewingMode" /> values that specifies the viewing mode. The default is <see cref="F:System.Windows.Controls.FlowDocumentReaderViewingMode.Page" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Default <xref:System.Windows.Controls.FlowDocumentReader> [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] includes buttons for selecting the viewing mode.  The following figure shows the viewing mode selection buttons on a <xref:System.Windows.Controls.FlowDocumentReader> with default UI.  
+  
+ ![Screenshot: FlowDocumentReader ViewMode](~/add/media/flowdocrdr-viewmode.png "Screenshot: FlowDocumentReader ViewMode")  
+  
+ For more information about <xref:System.Windows.Controls.FlowDocumentReader> viewing modes, see <xref:System.Windows.Controls.FlowDocumentReaderViewingMode>.  
+  
+<a name="dependencyPropertyInfo_ViewingMode"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.FlowDocumentReader.ViewingModeProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ViewingModeProperty">
@@ -1215,7 +1811,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.FlowDocumentReader.ViewingMode" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1232,9 +1828,40 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the current zoom level.</summary>
+        <value>The current zoom level, interpreted as a percentage. The default value 100.0 (zoom level of 100%).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Default <xref:System.Windows.Controls.FlowDocumentReader> [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] includes a zoom control that provides buttons for increasing or decreasing the zoom, as well as a slider for adjusting the zoom level.  The following figure shows the zoom controls on a <xref:System.Windows.Controls.FlowDocumentReader> with default UI.  
+  
+ ![FlowDocumentReader content zoom](~/add/media/flowdocrdr-zoom.png "FlowDocumentReader content zoom")  
+  
+ The zoom level is constrained by the values of the <xref:System.Windows.Controls.FlowDocumentReader.MinZoom%2A> and <xref:System.Windows.Controls.FlowDocumentReader.MaxZoom%2A> properties.  
+  
+<a name="dependencyPropertyInfo_Zoom"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.FlowDocumentReader.ZoomProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example shows how to set the <xref:System.Windows.Controls.FlowDocumentReader.Zoom%2A> attribute.  
+  
+ [!code-xml[FlowDocumentSnippets#_FlowDocumentReaderXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentSnippets/CSharp/Window1.xaml#_flowdocumentreaderxaml)]  
+  
+ The following example shows how to set the <xref:System.Windows.Controls.FlowDocumentReader.Zoom%2A> property programmatically.  
+  
+ [!code-csharp[FlowDocumentSnippets#_FlowDocumentReader](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentSnippets/CSharp/Window1.xaml.cs#_flowdocumentreader)]
+ [!code-vb[FlowDocumentSnippets#_FlowDocumentReader](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FlowDocumentSnippets/visualbasic/window1.xaml.vb#_flowdocumentreader)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ZoomIncrement">
@@ -1250,9 +1877,40 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the zoom increment.</summary>
+        <value>The current zoom increment, interpreted as a percentage. The default is 10.0 (zoom increment of 10%).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The zoom increment is the percentage by which the <xref:System.Windows.Controls.FlowDocumentReader.Zoom%2A> level is increased or decreased when the <xref:System.Windows.Input.NavigationCommands.IncreaseZoom%2A> or <xref:System.Windows.Input.NavigationCommands.DecreaseZoom%2A> commands are executed, respectively.  
+  
+ Default <xref:System.Windows.Controls.FlowDocumentReader> [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] includes a zoom control that provides buttons for increasing or decreasing the zoom, as well as a slider for adjusting the zoom level.  The following figure shows the zoom controls on a <xref:System.Windows.Controls.FlowDocumentReader> with default UI.  
+  
+ ![FlowDocumentReader content zoom](~/add/media/flowdocrdr-zoom.png "FlowDocumentReader content zoom")  
+  
+<a name="dependencyPropertyInfo_ZoomIncrement"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.FlowDocumentReader.ZoomIncrementProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example shows how to set the <xref:System.Windows.Controls.FlowDocumentReader.ZoomIncrement%2A> attribute.  
+  
+ [!code-xml[FlowDocumentSnippets#_FlowDocumentReaderXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentSnippets/CSharp/Window1.xaml#_flowdocumentreaderxaml)]  
+  
+ The following example shows how to set the <xref:System.Windows.Controls.FlowDocumentReader.ZoomIncrement%2A> property programmatically.  
+  
+ [!code-csharp[FlowDocumentSnippets#_FlowDocumentReader](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentSnippets/CSharp/Window1.xaml.cs#_flowdocumentreader)]
+ [!code-vb[FlowDocumentSnippets#_FlowDocumentReader](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FlowDocumentSnippets/visualbasic/window1.xaml.vb#_flowdocumentreader)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ZoomIncrementProperty">
@@ -1268,7 +1926,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.FlowDocumentReader.ZoomIncrement" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1285,7 +1943,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.FlowDocumentReader.Zoom" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

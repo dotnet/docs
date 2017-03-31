@@ -1,1 +1,0 @@
-        Dim outputBytes(base64Transform.OutputBlockSize) As Byte

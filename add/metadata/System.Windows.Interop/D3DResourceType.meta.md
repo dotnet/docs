@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Interop.D3DResourceType
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

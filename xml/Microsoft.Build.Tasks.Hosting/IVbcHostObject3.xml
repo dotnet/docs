@@ -26,7 +26,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines an interface that allows the [Vbc](../Topic/Vbc%20Task.md) task to communicate with the host integrated development environment (IDE).</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -46,9 +46,9 @@
         <Parameter Name="languageVersion" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="languageVersion">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="languageVersion">The language version.</param>
+        <summary>Sets the language version.</summary>
+        <returns>Returns true if the language version is set; false otherwise.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

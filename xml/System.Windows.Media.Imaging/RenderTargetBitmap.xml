@@ -11,8 +11,18 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Converts a <see cref="T:System.Windows.Media.Visual" /> object into a bitmap.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use <xref:System.Windows.Media.Imaging.RenderTargetBitmap> to render text as an image.  
+  
+ [!code-csharp[ImagingSnippetGallery_procedural_snip#RenderTargetBitmapCodeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/ImagingSnippetGallery_procedural_snip/CSharp/RenderTargetBitmapExample.cs#rendertargetbitmapcodeexamplewholepage)]
+ [!code-vb[ImagingSnippetGallery_procedural_snip#RenderTargetBitmapCodeExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ImagingSnippetGallery_procedural_snip/VB/RenderTargetBitmapExample.vb#rendertargetbitmapcodeexamplewholepage)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,12 +47,12 @@
         <Parameter Name="pixelFormat" Type="System.Windows.Media.PixelFormat" />
       </Parameters>
       <Docs>
-        <param name="pixelWidth">To be added.</param>
-        <param name="pixelHeight">To be added.</param>
-        <param name="dpiX">To be added.</param>
-        <param name="dpiY">To be added.</param>
-        <param name="pixelFormat">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="pixelWidth">The width of the bitmap.</param>
+        <param name="pixelHeight">The height of the bitmap.</param>
+        <param name="dpiX">The horizontal DPI of the bitmap.</param>
+        <param name="dpiY">The vertical DPI of the bitmap.</param>
+        <param name="pixelFormat">The format of the bitmap.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Imaging.RenderTargetBitmap" /> class that has the specified parameters.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,7 +75,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Clears the render target and sets all pixels to transparent black.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -188,8 +198,8 @@
         <Parameter Name="visual" Type="System.Windows.Media.Visual" />
       </Parameters>
       <Docs>
-        <param name="visual">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="visual">The <see cref="T:System.Windows.Media.Visual" /> object to be used as a bitmap.</param>
+        <summary>Renders the <see cref="T:System.Windows.Media.Visual" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

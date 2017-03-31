@@ -1,29 +1,47 @@
 ---
 uid: System.Windows.Media.Animation.LinearDecimalKeyFrame
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.LinearDecimalKeyFrame.#ctor(System.Decimal,System.Windows.Media.Animation.KeyTime)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Animation.LinearDecimalKeyFrame.#ctor(System.Decimal)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.LinearDecimalKeyFrame.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.LinearDecimalKeyFrame.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.LinearDecimalKeyFrame.CreateInstanceCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.LinearDecimalKeyFrame.InterpolateValueCore(System.Decimal,System.Double)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

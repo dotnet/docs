@@ -1,24 +1,29 @@
 ---
 uid: System.Web.UI.WebControls.ContextDataSource
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.ContextDataSource.ContextTypeName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.ContextDataSource.EntitySetName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.ContextDataSource.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.ContextDataSource.EntityTypeName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

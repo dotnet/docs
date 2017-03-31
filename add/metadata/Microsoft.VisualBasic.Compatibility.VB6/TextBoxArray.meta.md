@@ -1,374 +1,531 @@
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.SystemColorsChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.FontChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.SetIndex(System.Windows.Forms.TextBox,System.Int16)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.MouseLeave
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.ParentChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.ControlAdded
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.ClientSizeChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.ContextMenuStripChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.DragLeave
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.Item(System.Int16)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.ReadOnlyChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.ContextMenuChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.BorderStyleChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.StyleChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.QueryContinueDrag
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.KeyPress
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.CursorChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.MouseHover
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.GiveFeedback
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.MouseCaptureChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.EnabledChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.KeyDown
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.DragOver
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.RegionChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.DragEnter
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.Layout
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.CanExtend(System.Object)
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.Leave
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.HelpRequested
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.DoubleClick
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.Move
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.MultilineChanged
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.QueryAccessibilityHelp
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.GetIndex(System.Windows.Forms.TextBox)
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.MouseEnter
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.MouseDoubleClick
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.ShouldSerializeIndex(System.Windows.Forms.TextBox)
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.BackColorChanged
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.ChangeUICues
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.HideSelectionChanged
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.KeyUp
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.MarginChanged
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.TextAlignChanged
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.SizeChanged
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.TextChanged
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.ModifiedChanged
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.Validating
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.MouseClick
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.BindingContextChanged
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.TabIndexChanged
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.Validated
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.DragDrop
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.VisibleChanged
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.#ctor(System.ComponentModel.IContainer)
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.DockChanged
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.ControlRemoved
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.MouseUp
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.GetControlInstanceType
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.RightToLeftChanged
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.LocationChanged
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.CausesValidationChanged
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.AcceptsTabChanged
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.AutoSizeChanged
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.Enter
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.ImeModeChanged
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.HookUpControlEvents(System.Object)
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.MouseMove
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.Click
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.MouseDown
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.Leave
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.HelpRequested
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.DoubleClick
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.Move
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.MultilineChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.QueryAccessibilityHelp
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.GetIndex(System.Windows.Forms.TextBox)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.MouseEnter
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.MouseDoubleClick
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.ShouldSerializeIndex(System.Windows.Forms.TextBox)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.BackColorChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.ChangeUICues
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.HideSelectionChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.KeyUp
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.MarginChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.TextAlignChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.SizeChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.TextChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.ModifiedChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.Validating
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.MouseClick
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.BindingContextChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.TabIndexChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.Validated
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.DragDrop
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.VisibleChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.#ctor(System.ComponentModel.IContainer)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.DockChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.ControlRemoved
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.MouseUp
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.GetControlInstanceType
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.RightToLeftChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.LocationChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.CausesValidationChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.AcceptsTabChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.AutoSizeChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.Enter
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.ImeModeChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.HookUpControlEvents(System.Object)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.MouseMove
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.Click
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.MouseDown
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.Resize
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.ResetIndex(System.Windows.Forms.TextBox)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.TabStopChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.TextBoxArray.ForeColorChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

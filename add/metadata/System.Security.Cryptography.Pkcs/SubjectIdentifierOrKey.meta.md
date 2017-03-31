@@ -1,14 +1,20 @@
 ---
 uid: System.Security.Cryptography.Pkcs.SubjectIdentifierOrKey
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.Pkcs.SubjectIdentifierOrKey.Type
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.Pkcs.SubjectIdentifierOrKey.Value
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

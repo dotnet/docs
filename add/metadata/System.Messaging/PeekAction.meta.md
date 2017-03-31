@@ -1,4 +1,4 @@
 ---
 uid: System.Messaging.PeekAction
-internalonly: False
+manager: "tyoung"
 ---

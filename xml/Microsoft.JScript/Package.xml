@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Creates packages of JScript code for use by other code. This class belongs to the abstract syntax tree category.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,9 +32,9 @@
         <Parameter Name="engine" Type="Microsoft.JScript.Vsa.VsaEngine" />
       </Parameters>
       <Docs>
-        <param name="rootName">To be added.</param>
-        <param name="engine">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="rootName">The name of the package.</param>
+        <param name="engine">A reference to the scripting engine.</param>
+        <summary>Creates the specified package by using the specified scripting engine.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

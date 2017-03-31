@@ -1,4 +1,5 @@
 ---
 uid: System.Security.Authentication.ExtendedProtection.TokenBindingType
-internalonly: False
+ms.author: "alkoren"
+manager: "markl"
 ---

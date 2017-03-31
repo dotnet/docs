@@ -1,4 +1,6 @@
 ---
 uid: System.Workflow.ComponentModel.Compiler.ValidationOption
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

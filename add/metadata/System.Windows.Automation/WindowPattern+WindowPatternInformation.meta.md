@@ -1,34 +1,48 @@
 ---
 uid: System.Windows.Automation.WindowPattern.WindowPatternInformation
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.WindowPattern.WindowPatternInformation.CanMaximize
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.WindowPattern.WindowPatternInformation.WindowVisualState
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.WindowPattern.WindowPatternInformation.IsTopmost
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.WindowPattern.WindowPatternInformation.WindowInteractionState
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.WindowPattern.WindowPatternInformation.IsModal
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.WindowPattern.WindowPatternInformation.CanMinimize
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---

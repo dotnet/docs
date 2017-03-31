@@ -1,24 +1,35 @@
 ---
 uid: System.Configuration.SettingsPropertyNotFoundException
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SettingsPropertyNotFoundException.#ctor(System.String,System.Exception)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SettingsPropertyNotFoundException.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SettingsPropertyNotFoundException.#ctor(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SettingsPropertyNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.SettingsPropertyNotFoundException.#ctor
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -1,1 +1,0 @@
-            message.AcknowledgeType = AcknowledgeTypes.PositiveArrival

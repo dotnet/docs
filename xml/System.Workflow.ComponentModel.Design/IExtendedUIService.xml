@@ -13,8 +13,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the methods that workflow designer hosts can call to perform advanced UI operations.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ The methods and properties provided by <xref:System.Workflow.ComponentModel.Design.IExtendedUIService> allow designer hosts to navigate to properties in the property browser window and allow the hosts to add task items to the task list.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AddAssemblyReference">
@@ -33,8 +44,8 @@
         <Parameter Name="assemblyName" Type="System.Reflection.AssemblyName" />
       </Parameters>
       <Docs>
-        <param name="assemblyName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="assemblyName">An <see cref="T:System.Reflection.AssemblyName" /> that identifies the assembly to add.</param>
+        <summary>Instructs the workflow designer host to add an assembly reference for the current project to access.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,8 +65,8 @@
         <Parameter Name="actions" Type="System.Workflow.ComponentModel.Design.DesignerAction[]" />
       </Parameters>
       <Docs>
-        <param name="actions">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="actions">A <see cref="T:System.Workflow.ComponentModel.Design.DesignerAction" /> array that contains the actions to add.</param>
+        <summary>Adds an array of designer actions to the list of available user actions in the workflow designer host.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,10 +87,10 @@
         <Parameter Name="proxyClass" Type="System.Type&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="url">To be added.</param>
-        <param name="proxyClass">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="url">When this method returns, contains a <see cref="T:System.Uri" /> that represents the universal resource locator (URL) of the Web resource to provide the project access to. This parameter is passed uninitialized.</param>
+        <param name="proxyClass">When this method returns, contains a <see cref="T:System.Type" /> of the proxy class associated with the Web resource. This parameter is passed uninitialized.</param>
+        <summary>Adds a reference to a Web resource to a project in a workflow designer.</summary>
+        <returns>A <see cref="T:System.Windows.Forms.DialogResult" /> value that indicates the return value of the **Add Web Reference** dialog box.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,9 +110,9 @@
         <Parameter Name="url" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="url">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="url">A <see cref="T:System.Uri" /> that represents a URL.</param>
+        <summary>Returns the type of the proxy class associated with the specified universal resource locator (URL).</summary>
+        <returns>The <see cref="T:System.Type" /> of the proxy class.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,8 +130,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Provides contextual information about the current component.</summary>
+        <returns>Returns property context.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,9 +151,9 @@
         <Parameter Name="proxyClass" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="proxyClass">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="proxyClass">The <see cref="T:System.Type" /> associated with the proxy class.</param>
+        <summary>Returns the universal resource locator (URL) for the Web resource associated with the specified proxy class.</summary>
+        <returns>The URL for the Web resource associated with the proxy class.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,8 +171,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the types that are generated for the XSD schema that is added to the workflow project.</summary>
+        <returns>The types that are generated for the XSD schema that is added to the workflow project.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -181,9 +192,10 @@
         <Parameter Name="propName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="propName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="propName">The name of the property to navigate to.</param>
+        <summary>Navigates to the specified property in the property browser of the workflow designer host.</summary>
+        <returns>
+          <see langword="true" /> if the property was navigated to successfully; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -201,7 +213,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Deletes all designer actions in the task list associated with the workflow designer host.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -219,7 +231,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Displays the tools options associated with the workflow designer host.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

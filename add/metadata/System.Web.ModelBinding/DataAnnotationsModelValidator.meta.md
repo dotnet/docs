@@ -1,39 +1,55 @@
 ---
 uid: System.Web.ModelBinding.DataAnnotationsModelValidator
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ModelBinding.DataAnnotationsModelValidator.GetLocalizedString(System.String,System.Object[])
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ModelBinding.DataAnnotationsModelValidator.IsRequired
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ModelBinding.DataAnnotationsModelValidator.Attribute
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ModelBinding.DataAnnotationsModelValidator.Validate(System.Object)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ModelBinding.DataAnnotationsModelValidator.#ctor(System.Web.ModelBinding.ModelMetadata,System.Web.ModelBinding.ModelBindingExecutionContext,System.ComponentModel.DataAnnotations.ValidationAttribute)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ModelBinding.DataAnnotationsModelValidator.GetLocalizedErrorMessage(System.String)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ModelBinding.DataAnnotationsModelValidator.ErrorMessage
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

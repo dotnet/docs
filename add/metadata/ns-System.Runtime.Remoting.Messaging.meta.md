@@ -1,4 +1,4 @@
 ---
 uid: System.Runtime.Remoting.Messaging
-internalonly: False
+manager: "ghogen"
 ---

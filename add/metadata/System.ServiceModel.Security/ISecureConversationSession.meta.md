@@ -1,14 +1,14 @@
 ---
 uid: System.ServiceModel.Security.ISecureConversationSession
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.ISecureConversationSession.TryReadSessionTokenIdentifier(System.Xml.XmlReader)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.ISecureConversationSession.WriteSessionTokenIdentifier(System.Xml.XmlDictionaryWriter)
-internalonly: False
+manager: "ghogen"
 ---

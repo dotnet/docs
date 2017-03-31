@@ -1,64 +1,77 @@
 ---
 uid: System.Web.UI.DataVisualization.Charting.TextAnnotation
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.TextAnnotation.Font
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.TextAnnotation.AnnotationType
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.TextAnnotation.#ctor
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.TextAnnotation.BackColor
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.TextAnnotation.Text
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.TextAnnotation.LineWidth
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.TextAnnotation.LineColor
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.TextAnnotation.BackHatchStyle
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.TextAnnotation.LineDashStyle
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.TextAnnotation.BackSecondaryColor
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.TextAnnotation.BackGradientStyle
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.TextAnnotation.IsMultiline
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---

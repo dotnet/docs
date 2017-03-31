@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Handles the mapping of activity designer visual elements and their underlying model items.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <Parameter Name="context" Type="System.Activities.Presentation.EditingContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="context">The editing tool that is used to manipulate objects on the design surface.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Presentation.View.WorkflowViewService" /> class that uses the specified <see cref="T:System.Activities.Presentation.EditingContext" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,9 +49,9 @@
         <Parameter Name="modelItem" Type="System.Activities.Presentation.Model.ModelItem" />
       </Parameters>
       <Docs>
-        <param name="modelItem">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="modelItem">One entity in the editing model of an activity designer.</param>
+        <summary>Creates a new <see cref="T:System.Activities.Presentation.WorkflowViewElement" /> that supports the type of the specified <see cref="T:System.Activities.Presentation.Model.ModelItem" />.</summary>
+        <returns>A workflow view element that supports the same type as the model item argument.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,9 +71,9 @@
         <Parameter Name="view" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="view">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="view">A workflow view element that contains the model item.</param>
+        <summary>Returns a <see cref="T:System.Activities.Presentation.Model.ModelItem" /> that maps to the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <returns>A model item that maps to a dependency object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,9 +93,9 @@
         <Parameter Name="model" Type="System.Activities.Presentation.Model.ModelItem" />
       </Parameters>
       <Docs>
-        <param name="model">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="model">One entity in the editing model of an activity designer.</param>
+        <summary>Creates a new <see cref="T:System.Workflow.ComponentModel.DependencyObject" /> that maps to the specified <see cref="T:System.Activities.Presentation.Model.ModelItem" />.</summary>
+        <returns>A dependency object that maps to a model item.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,9 +115,9 @@
         <Parameter Name="modelItem" Type="System.Activities.Presentation.Model.ModelItem" />
       </Parameters>
       <Docs>
-        <param name="modelItem">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="modelItem">One entity in the editing model of an activity designer.</param>
+        <summary>Creates a new <see cref="T:System.Activities.Presentation.WorkflowViewElement" /> that maps to the specified <see cref="T:System.Activities.Presentation.Model.ModelItem" />.</summary>
+        <returns>A new view element that maps to a specified model item.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,7 +134,7 @@
         <ReturnType>System.EventHandler&lt;System.Activities.Presentation.View.ViewCreatedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the workflow view is created.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

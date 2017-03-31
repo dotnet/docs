@@ -1,59 +1,90 @@
 ---
 uid: System.ServiceModel.Dispatcher.EndpointDispatcher
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.EndpointDispatcher.IsSystemEndpoint
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.EndpointDispatcher.#ctor(System.ServiceModel.EndpointAddress,System.String,System.String,System.Boolean)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.EndpointDispatcher.EndpointAddress
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.EndpointDispatcher.ChannelDispatcher
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.EndpointDispatcher.FilterPriority
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.EndpointDispatcher.ContractFilter
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.EndpointDispatcher.AddressFilter
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.EndpointDispatcher.DispatchRuntime
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Dispatcher.EndpointDispatcher.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.EndpointDispatcher.ContractName
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.EndpointDispatcher.ContractNamespace
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.EndpointDispatcher.#ctor(System.ServiceModel.EndpointAddress,System.String,System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

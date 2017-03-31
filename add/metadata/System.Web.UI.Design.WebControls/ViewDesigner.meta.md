@@ -1,29 +1,41 @@
 ---
 uid: System.Web.UI.Design.WebControls.ViewDesigner
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.ViewDesigner.GetDesignTimeHtml
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.ViewDesigner.GetDesignTimeHtml
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.ViewDesigner.GetDesignTimeHtml(System.Web.UI.Design.DesignerRegionCollection)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.ViewDesigner.Initialize(System.ComponentModel.IComponent)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.ViewDesigner.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.ViewDesigner.NoWrap
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

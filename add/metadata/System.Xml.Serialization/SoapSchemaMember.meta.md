@@ -1,19 +1,27 @@
 ---
 uid: System.Xml.Serialization.SoapSchemaMember
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.SoapSchemaMember.MemberType
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.SoapSchemaMember.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.SoapSchemaMember.MemberName
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

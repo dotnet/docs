@@ -1,9 +1,13 @@
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.WebItemAssociatedWebClassNotOptional
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.WebItemAssociatedWebClassNotOptional.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

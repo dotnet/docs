@@ -1,134 +1,185 @@
 ---
 uid: System.Runtime.Caching.ObjectCache
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Caching.ObjectCache.GetValues
+ms.author: "riande"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.ObjectCache.System#Collections#IEnumerable#GetEnumerator
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.ObjectCache.Name
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.ObjectCache.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.ObjectCache.NoSlidingExpiration
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.ObjectCache.Set(System.Runtime.Caching.CacheItem,System.Runtime.Caching.CacheItemPolicy)
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.ObjectCache.GetCount(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.ObjectCache.GetCacheItem(System.String,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Caching.ObjectCache.AddOrGetExisting
+ms.author: "riande"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.ObjectCache.Remove(System.String,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.ObjectCache.AddOrGetExisting(System.String,System.Object,System.Runtime.Caching.CacheItemPolicy,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.ObjectCache.AddOrGetExisting(System.String,System.Object,System.DateTimeOffset,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.ObjectCache.GetEnumerator
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.ObjectCache.InfiniteAbsoluteExpiration
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.ObjectCache.DefaultCacheCapabilities
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.ObjectCache.Add(System.String,System.Object,System.Runtime.Caching.CacheItemPolicy,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.ObjectCache.Add(System.Runtime.Caching.CacheItem,System.Runtime.Caching.CacheItemPolicy)
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.ObjectCache.Add(System.String,System.Object,System.DateTimeOffset,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.ObjectCache.Contains(System.String,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.ObjectCache.Set(System.String,System.Object,System.DateTimeOffset,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.ObjectCache.GetValues(System.Collections.Generic.IEnumerable{System.String},System.String)
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.ObjectCache.Host
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.ObjectCache.GetValues(System.String,System.String[])
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.ObjectCache.Get(System.String,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Caching.ObjectCache.Set
+ms.author: "riande"
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Caching.ObjectCache.Add
+ms.author: "riande"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.ObjectCache.CreateCacheEntryChangeMonitor(System.Collections.Generic.IEnumerable{System.String},System.String)
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.ObjectCache.Set(System.String,System.Object,System.Runtime.Caching.CacheItemPolicy,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.ObjectCache.Item(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.ObjectCache.AddOrGetExisting(System.Runtime.Caching.CacheItem,System.Runtime.Caching.CacheItemPolicy)
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---

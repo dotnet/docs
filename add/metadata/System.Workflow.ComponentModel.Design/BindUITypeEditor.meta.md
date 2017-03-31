@@ -1,19 +1,35 @@
 ---
 uid: System.Workflow.ComponentModel.Design.BindUITypeEditor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.ComponentModel.Design.BindUITypeEditor.GetEditStyle
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.BindUITypeEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.ComponentModel.Design.BindUITypeEditor.EditValue
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.BindUITypeEditor.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.BindUITypeEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

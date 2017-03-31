@@ -1,4 +1,6 @@
 ---
 uid: System.Security.Permissions.RegistryPermissionAccess
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

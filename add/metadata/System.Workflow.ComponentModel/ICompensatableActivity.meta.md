@@ -1,9 +1,13 @@
 ---
 uid: System.Workflow.ComponentModel.ICompensatableActivity
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.ICompensatableActivity.Compensate(System.Workflow.ComponentModel.ActivityExecutionContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

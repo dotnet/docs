@@ -1,4 +1,5 @@
 ---
 uid: System.Web.UI.Design.ViewEventHandler
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

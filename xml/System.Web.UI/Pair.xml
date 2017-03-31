@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a basic utility class that is used to store two related objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Pair> class is used as a basic structure to store two related objects. It is a utility class that is used in various ways throughout ASP.NET, such as during page state management tasks or in configuration section handlers. You can use the <xref:System.Web.UI.Pair> class in your own code anywhere that you need a structure to contain two related objects and where data hiding is not essential. The <xref:System.Web.UI.Pair> class does not encapsulate its object references, <xref:System.Web.UI.Pair.First> and <xref:System.Web.UI.Pair.Second>, in properties; it exposes them directly to all calling code as public class fields.  
+  
+ The <xref:System.Web.UI.Pair> class can be used in several ways in page state persistence implementations. The most common use is as a container for both the <xref:System.Web.UI.Control.ViewState%2A> and <xref:System.Web.UI.PageStatePersister.ControlState%2A> collections. In this case, the <xref:System.Web.UI.Pair.First> property is used for <xref:System.Web.UI.Control.ViewState%2A>, and the <xref:System.Web.UI.Pair.Second> for <xref:System.Web.UI.PageStatePersister.ControlState%2A>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +35,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new, uninitialized instance of the <see cref="T:System.Web.UI.Pair" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,9 +53,9 @@
         <Parameter Name="y" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="x">An object.</param>
+        <param name="y">An object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Pair" /> class, using the specified object pair.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,7 +72,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the first object of the object pair.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,7 +89,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the second object of the object pair.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

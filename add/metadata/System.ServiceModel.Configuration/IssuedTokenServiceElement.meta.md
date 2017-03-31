@@ -1,59 +1,83 @@
 ---
 uid: System.ServiceModel.Configuration.IssuedTokenServiceElement
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.IssuedTokenServiceElement.CustomCertificateValidatorType
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.IssuedTokenServiceElement.Copy(System.ServiceModel.Configuration.IssuedTokenServiceElement)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.IssuedTokenServiceElement.KnownCertificates
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.IssuedTokenServiceElement.SamlSerializerType
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.IssuedTokenServiceElement.CertificateValidationMode
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.IssuedTokenServiceElement.TrustedStoreLocation
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.IssuedTokenServiceElement.RevocationMode
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.IssuedTokenServiceElement.AllowUntrustedRsaIssuers
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.IssuedTokenServiceElement.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.IssuedTokenServiceElement.AudienceUriMode
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.IssuedTokenServiceElement.AllowedAudienceUris
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

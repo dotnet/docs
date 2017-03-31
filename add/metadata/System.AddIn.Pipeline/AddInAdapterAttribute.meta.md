@@ -1,9 +1,13 @@
 ---
 uid: System.AddIn.Pipeline.AddInAdapterAttribute
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.AddIn.Pipeline.AddInAdapterAttribute.#ctor
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

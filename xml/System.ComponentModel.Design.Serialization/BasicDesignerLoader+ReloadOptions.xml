@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines the behavior of the <see cref="M:System.ComponentModel.Design.Serialization.BasicDesignerLoader.Reload(System.ComponentModel.Design.Serialization.BasicDesignerLoader.ReloadOptions)" /> method. These flags can be combined using the bitwise <see langword="OR" /> operator.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>System.ComponentModel.Design.Serialization.BasicDesignerLoader+ReloadOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The designer loader flushes changes before reloading, but it does not force a reload, and it also does not set the <see cref="P:System.ComponentModel.Design.Serialization.BasicDesignerLoader.Modified" /> property to <see langword="true" /> if load errors occur.</summary>
       </Docs>
     </Member>
     <Member MemberName="Force">
@@ -48,7 +48,7 @@
         <ReturnType>System.ComponentModel.Design.Serialization.BasicDesignerLoader+ReloadOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The designer loader forces the reload to occur. Normally, a reload occurs only if the <see cref="M:System.ComponentModel.Design.Serialization.BasicDesignerLoader.IsReloadNeeded" /> method returns <see langword="true" />. This flag bypasses calling this method and always performs the reload.</summary>
       </Docs>
     </Member>
     <Member MemberName="ModifyOnError">
@@ -64,7 +64,7 @@
         <ReturnType>System.ComponentModel.Design.Serialization.BasicDesignerLoader+ReloadOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The designer loader will set the <see cref="P:System.ComponentModel.Design.Serialization.BasicDesignerLoader.Modified" /> property to <see langword="true" /> if load errors occur. This flag is useful if you want a flush of the loader to overwrite persistent state that had errors.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoFlush">
@@ -80,7 +80,7 @@
         <ReturnType>System.ComponentModel.Design.Serialization.BasicDesignerLoader+ReloadOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The designer loader abandons any changes before reloading.</summary>
       </Docs>
     </Member>
   </Members>

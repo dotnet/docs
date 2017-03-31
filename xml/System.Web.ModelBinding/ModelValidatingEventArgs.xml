@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides data for the <see cref="E:System.Web.ModelBinding.ModelValidationNode.Validating" /> event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,9 +29,9 @@
         <Parameter Name="parentNode" Type="System.Web.ModelBinding.ModelValidationNode" />
       </Parameters>
       <Docs>
-        <param name="modelBindingExecutionContext">To be added.</param>
-        <param name="parentNode">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="modelBindingExecutionContext">The execution context.</param>
+        <param name="parentNode">The parent model validation node.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.ModelValidatingEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +48,8 @@
         <ReturnType>System.Web.ModelBinding.ModelBindingExecutionContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the execution context.</summary>
+        <value>The execution context.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,8 +66,8 @@
         <ReturnType>System.Web.ModelBinding.ModelValidationNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the parent model validation node.</summary>
+        <value>The parent model validation node.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

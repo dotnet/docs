@@ -18,8 +18,19 @@
   <Interfaces>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a media type with an additional quality factor used in a Content-Type header.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.Http.Headers.MediaTypeWithQualityHeaderValue> class provides support for the media type and quality in a Content-Type header as defined in [RFC 2616](http://go.microsoft.com/fwlink/?LinkID=241642) by the IETF.  
+  
+ Quality factors allow the user agent to indicate the relative degree of preference for the media type in a Content-Type header. Quality uses a scale from 0 to 1. The default value is q=1.  
+  
+ This type derives from <xref:System.Net.Http.Headers.MediaTypeHeaderValue>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,8 +52,8 @@
         <Parameter Name="mediaType" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="mediaType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="mediaType">A <see cref="T:System.Net.Http.Headers.MediaTypeWithQualityHeaderValue" /> represented as string to initialize the new instance.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.MediaTypeWithQualityHeaderValue" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,9 +77,9 @@
         <Parameter Name="quality" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="mediaType">To be added.</param>
-        <param name="quality">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="mediaType">A <see cref="T:System.Net.Http.Headers.MediaTypeWithQualityHeaderValue" /> represented as string to initialize the new instance.</param>
+        <param name="quality">The quality associated with this header value.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.MediaTypeWithQualityHeaderValue" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,10 +105,14 @@
         <Parameter Name="input" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="input">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="input">A string that represents media type with quality header value information.</param>
+        <summary>Converts a string to an <see cref="T:System.Net.Http.Headers.MediaTypeWithQualityHeaderValue" /> instance.</summary>
+        <returns>A <see cref="T:System.Net.Http.Headers.MediaTypeWithQualityHeaderValue" /> instance.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="input" /> is a <see langword="null" /> reference.</exception>
+        <exception cref="T:System.FormatException">
+          <paramref name="input" /> is not valid media type with quality header value information.</exception>
       </Docs>
     </Member>
     <Member MemberName="Quality">
@@ -119,8 +134,8 @@
         <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Get or set the quality value for the <see cref="T:System.Net.Http.Headers.MediaTypeWithQualityHeaderValue" />.</summary>
+        <value>The quality value for the <see cref="T:System.Net.Http.Headers.MediaTypeWithQualityHeaderValue" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,8 +157,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a new object that is a copy of the current <see cref="T:System.Net.Http.Headers.MediaTypeWithQualityHeaderValue" /> instance.</summary>
+        <returns>A copy of the current instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -170,10 +185,11 @@
         <Parameter Name="parsedValue" Type="System.Net.Http.Headers.MediaTypeWithQualityHeaderValue&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="input">To be added.</param>
-        <param name="parsedValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="input">The string to validate.</param>
+        <param name="parsedValue">The <see cref="T:System.Net.Http.Headers.MediaTypeWithQualityHeaderValue" /> version of the string.</param>
+        <summary>Determines whether a string is valid <see cref="T:System.Net.Http.Headers.MediaTypeWithQualityHeaderValue" /> information.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="input" /> is valid <see cref="T:System.Net.Http.Headers.MediaTypeWithQualityHeaderValue" /> information; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

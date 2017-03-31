@@ -20,10 +20,10 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <param name="sender">To be added.</param>
-    <param name="e">To be added.</param>
-    <summary>To be added.</summary>
+    <typeparam name="T">The type specifier for the event.</typeparam>
+    <param name="sender">The source of the event.</param>
+    <param name="e">The event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Windows.Navigation.PageFunction`1.Return" /> event of the <see cref="T:System.Windows.Navigation.PageFunction`1" /> class.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

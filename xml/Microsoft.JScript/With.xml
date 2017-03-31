@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the <see langword="with" /> statement. This class belongs to the abstract syntax tree category.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,10 +32,11 @@
         <Parameter Name="engine" Type="Microsoft.JScript.Vsa.VsaEngine" />
       </Parameters>
       <Docs>
-        <param name="withOb">To be added.</param>
-        <param name="engine">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="withOb">The default object.</param>
+        <param name="engine">A reference to the scripting engine.</param>
+        <summary>Establishes the default object for a <see langword="with" /> statement block by adding it to the scope stack.</summary>
+        <returns>
+          <paramref name="withOb" /> converted to an object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

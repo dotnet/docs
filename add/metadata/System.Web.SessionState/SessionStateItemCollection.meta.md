@@ -1,59 +1,77 @@
 ---
 uid: System.Web.SessionState.SessionStateItemCollection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.SessionState.SessionStateItemCollection.Item(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.SessionState.SessionStateItemCollection.Remove(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.SessionState.SessionStateItemCollection.Keys
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.SessionState.SessionStateItemCollection.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.SessionState.SessionStateItemCollection.GetEnumerator
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.SessionState.SessionStateItemCollection.Item(System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.SessionState.SessionStateItemCollection.Deserialize(System.IO.BinaryReader)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.SessionState.SessionStateItemCollection.Dirty
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.SessionState.SessionStateItemCollection.Clear
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.SessionState.SessionStateItemCollection.RemoveAt(System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.SessionState.SessionStateItemCollection.Serialize(System.IO.BinaryWriter)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.SessionState.SessionStateItemCollection.Item
+ms.author: "riande"
+manager: "wpickett"
 ---

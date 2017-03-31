@@ -21,7 +21,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the current <see langword="xml:space" /> scope.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -49,7 +49,7 @@
         <ReturnType>System.Xml.XmlSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see langword="xml:space" /> scope equals <see langword="default" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -76,7 +76,7 @@
         <ReturnType>System.Xml.XmlSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No <see langword="xml:space" /> scope.</summary>
       </Docs>
     </Member>
     <Member MemberName="Preserve">
@@ -103,7 +103,7 @@
         <ReturnType>System.Xml.XmlSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see langword="xml:space" /> scope equals <see langword="preserve" />.</summary>
       </Docs>
     </Member>
   </Members>

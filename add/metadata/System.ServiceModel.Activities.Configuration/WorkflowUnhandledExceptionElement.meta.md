@@ -1,19 +1,27 @@
 ---
 uid: System.ServiceModel.Activities.Configuration.WorkflowUnhandledExceptionElement
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Configuration.WorkflowUnhandledExceptionElement.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Configuration.WorkflowUnhandledExceptionElement.Action
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Configuration.WorkflowUnhandledExceptionElement.BehaviorType
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

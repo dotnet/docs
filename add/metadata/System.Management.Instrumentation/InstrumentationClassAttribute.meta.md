@@ -1,24 +1,29 @@
 ---
 uid: System.Management.Instrumentation.InstrumentationClassAttribute
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.InstrumentationClassAttribute.ManagedBaseClassName
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.InstrumentationClassAttribute.#ctor(System.Management.Instrumentation.InstrumentationType)
-internalonly: False
+manager: "jillfra"
+---
+
+---
+uid: System.Management.Instrumentation.InstrumentationClassAttribute.#ctor
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.InstrumentationClassAttribute.#ctor(System.Management.Instrumentation.InstrumentationType,System.String)
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.InstrumentationClassAttribute.InstrumentationType
-internalonly: False
+manager: "jillfra"
 ---

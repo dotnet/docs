@@ -17,9 +17,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">To be added.</param>
-    <param name="e">To be added.</param>
-    <summary>To be added.</summary>
+    <param name="sender">The object where the event handler is attached.</param>
+    <param name="e">The event data.</param>
+    <summary>Represents a method that will handle the <see cref="E:System.Windows.Controls.Primitives.Thumb.DragCompleted" /> routed event  of a <see cref="T:System.Windows.Controls.Primitives.Thumb" /> control.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

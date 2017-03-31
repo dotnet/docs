@@ -29,9 +29,24 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="TSyndicationItem">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="TSyndicationItem">The <see cref="T:System.ServiceModel.Syndication.SyndicationItem" />-derived type to serialize.</typeparam>
+    <summary>A class that serializes <see cref="T:System.ServiceModel.Syndication.SyndicationItem" />-derived classes to and from RSS 2.0 format.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this class to serialize instances of <xref:System.ServiceModel.Syndication.SyndicationItem>-derived classes and to create instances of <xref:System.ServiceModel.Syndication.SyndicationFeed>-derived classes from XML documents that represent RSS 2.0 items. If you need to serialize a <xref:System.ServiceModel.Syndication.SyndicationItem> instance use the <xref:System.ServiceModel.Syndication.Rss20ItemFormatter> formatter.  
+  
+   
+  
+## Examples  
+ The following code shows how to create a <xref:System.ServiceModel.Syndication.SyndicationItem> derived class and serialize it to RSS 2.0.  
+  
+ [!code-csharp[RssFormatter#10](~/samples/snippets/csharp/VS_Snippets_CFX/rssformatter/cs/snippets.cs#10)]
+ [!code-vb[RssFormatter#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/rssformatter/vb/snippets.vb#10)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,7 +64,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.Rss20ItemFormatter`1" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,9 +85,19 @@
         <Parameter Name="itemToWrite" Type="TSyndicationItem" />
       </Parameters>
       <Docs>
-        <param name="itemToWrite">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="itemToWrite">The <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> to serialize.</param>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.Rss20ItemFormatter`1" /> class with the specified <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> derived instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to call this constructor.  
+  
+ [!code-csharp[RssFormatter#11](~/samples/snippets/csharp/VS_Snippets_CFX/rssformatter/cs/snippets.cs#11)]
+ [!code-vb[RssFormatter#11](~/samples/snippets/visualbasic/VS_Snippets_CFX/rssformatter/vb/snippets.vb#11)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -93,10 +118,25 @@
         <Parameter Name="serializeExtensionsAsAtom" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="itemToWrite">To be added.</param>
-        <param name="serializeExtensionsAsAtom">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="itemToWrite">The <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> to serialize.</param>
+        <param name="serializeExtensionsAsAtom">A value that specifies whether to serialize elements that are defined in the Atom 1.0 specification but not in the RSS 2.0 specification. The default value is <see langword="true" />.</param>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.Rss20ItemFormatter`1" /> class with the specified <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> derived instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the `serializeExtensionsAsAtom` parameter is `true`, all elements defined in the Atom 1.0 specification that are not defined in the RSS 2.0 specification are serialized with the Atom 1.0 namespace.  
+  
+   
+  
+## Examples  
+ The following example shows how to call this constructor.  
+  
+ [!code-csharp[RssFormatter#12](~/samples/snippets/csharp/VS_Snippets_CFX/rssformatter/cs/snippets.cs#12)]
+ [!code-vb[RssFormatter#12](~/samples/snippets/visualbasic/VS_Snippets_CFX/rssformatter/vb/snippets.vb#12)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateItemInstance">
@@ -117,8 +157,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> derived class.</summary>
+        <returns>A new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> class.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

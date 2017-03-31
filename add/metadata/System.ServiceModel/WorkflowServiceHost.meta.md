@@ -1,74 +1,118 @@
 ---
 uid: System.ServiceModel.WorkflowServiceHost
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.WorkflowServiceHost.AddServiceEndpoint
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.WorkflowServiceHost.#ctor(System.IO.Stream,System.IO.Stream,System.Uri[])
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.WorkflowServiceHost.AddServiceEndpoint(System.Type,System.ServiceModel.Channels.Binding,System.Uri,System.Uri)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.WorkflowServiceHost.#ctor(System.Type,System.Uri[])
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.WorkflowServiceHost.#ctor(System.String,System.String,System.Uri[])
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.WorkflowServiceHost.AddServiceEndpoint(System.Type,System.ServiceModel.Channels.Binding,System.Uri)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.WorkflowServiceHost.CreateDescription(System.Collections.Generic.IDictionary{System.String,System.ServiceModel.Description.ContractDescription}@)
-internalonly: False
----
-
----
-uid: System.ServiceModel.WorkflowServiceHost.#ctor(System.String,System.Uri[])
-internalonly: False
----
-
----
-uid: System.ServiceModel.WorkflowServiceHost.#ctor(System.IO.Stream,System.IO.Stream,System.Workflow.ComponentModel.Compiler.ITypeProvider,System.Uri[])
-internalonly: False
----
-
----
-uid: System.ServiceModel.WorkflowServiceHost.OnClosing
-internalonly: False
----
-
----
-uid: System.ServiceModel.WorkflowServiceHost.#ctor(System.String,System.String,System.Workflow.ComponentModel.Compiler.ITypeProvider,System.Uri[])
-internalonly: False
----
-
----
-uid: System.ServiceModel.WorkflowServiceHost.AddServiceEndpoint(System.Type,System.ServiceModel.Channels.Binding,System.String,System.Uri)
-internalonly: False
----
-
----
-uid: System.ServiceModel.WorkflowServiceHost.#ctor(System.IO.Stream,System.Uri[])
-internalonly: False
----
-
----
-uid: System.ServiceModel.WorkflowServiceHost.AddServiceEndpoint(System.Type,System.ServiceModel.Channels.Binding,System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.WorkflowServiceHost.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.WorkflowServiceHost.#ctor(System.String,System.Uri[])
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.WorkflowServiceHost.#ctor(System.IO.Stream,System.IO.Stream,System.Workflow.ComponentModel.Compiler.ITypeProvider,System.Uri[])
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.WorkflowServiceHost.OnClosing
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.WorkflowServiceHost.#ctor(System.String,System.String,System.Workflow.ComponentModel.Compiler.ITypeProvider,System.Uri[])
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.WorkflowServiceHost.AddServiceEndpoint(System.Type,System.ServiceModel.Channels.Binding,System.String,System.Uri)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.WorkflowServiceHost.#ctor(System.IO.Stream,System.Uri[])
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.WorkflowServiceHost.AddServiceEndpoint(System.Type,System.ServiceModel.Channels.Binding,System.String)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.WorkflowServiceHost.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

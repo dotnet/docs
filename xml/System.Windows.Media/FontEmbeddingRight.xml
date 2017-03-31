@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Describes font embedding permissions specified in an OpenType font file.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information on the OpenType fonts, see the **OpenType Specification** at [http://www.microsoft.com/typography/otspec/](http://www.microsoft.com/typography/otspec/).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Editable">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Media.FontEmbeddingRight</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The font may be embedded but must only be installed temporarily on other systems. In contrast to the <see cref="F:System.Windows.Media.FontEmbeddingRight.PreviewAndPrint" /> setting, documents containing Editable fonts may be opened for reading, editing is permitted, and changes may be saved.</summary>
       </Docs>
     </Member>
     <Member MemberName="EditableButNoSubsetting">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Media.FontEmbeddingRight</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The font may be embedded but must only be installed temporarily on other systems. Documents containing the font may be opened for reading, editing is permitted, and changes may be saved. The font may not be subsetted prior to embedding.</summary>
       </Docs>
     </Member>
     <Member MemberName="EditableButNoSubsettingAndWithBitmapsOnly">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.Media.FontEmbeddingRight</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The font may be embedded but must only be installed temporarily on other systems. Documents containing the font may be opened for reading, editing is permitted, and changes may be saved. The font may not be subsetted prior to embedding. Only bitmaps contained in the font may be embedded. No outline data may be embedded.</summary>
       </Docs>
     </Member>
     <Member MemberName="EditableButWithBitmapsOnly">
@@ -75,7 +82,7 @@
         <ReturnType>System.Windows.Media.FontEmbeddingRight</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The font may be embedded but must only be installed temporarily on other systems. Documents containing the font may be opened for reading, editing is permitted, and changes may be saved. Only bitmaps contained in the font may be embedded. No outline data may be embedded.</summary>
       </Docs>
     </Member>
     <Member MemberName="Installable">
@@ -91,7 +98,7 @@
         <ReturnType>System.Windows.Media.FontEmbeddingRight</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Fonts with this setting indicate that they may be embedded and permanently installed on the remote system by an application. The user of the remote system acquires the identical rights, obligations and licenses for that font as the original purchaser of the font, and is subject to the same end-user license agreement, copyright, design patent, and/or trademark as was the original purchaser.</summary>
       </Docs>
     </Member>
     <Member MemberName="InstallableButNoSubsetting">
@@ -107,7 +114,7 @@
         <ReturnType>System.Windows.Media.FontEmbeddingRight</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Fonts with this setting indicate that they may be embedded and permanently installed on the remote system by an application. They may not be subsetted prior to embedding.</summary>
       </Docs>
     </Member>
     <Member MemberName="InstallableButNoSubsettingAndWithBitmapsOnly">
@@ -123,7 +130,7 @@
         <ReturnType>System.Windows.Media.FontEmbeddingRight</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Fonts with this setting indicate that they may be embedded and permanently installed on the remote system by an application. They may not be subsetted prior to embedding. Only bitmaps contained in the fonts may be embedded. No outline data may be embedded.</summary>
       </Docs>
     </Member>
     <Member MemberName="InstallableButWithBitmapsOnly">
@@ -139,7 +146,7 @@
         <ReturnType>System.Windows.Media.FontEmbeddingRight</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Fonts with this setting indicate that they may be embedded and permanently installed on the remote system by an application. Only bitmaps contained in the fonts may be embedded. No outline data may be embedded.</summary>
       </Docs>
     </Member>
     <Member MemberName="PreviewAndPrint">
@@ -155,7 +162,7 @@
         <ReturnType>System.Windows.Media.FontEmbeddingRight</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The font may be embedded and temporarily loaded on the remote system. Documents containing the font must be opened in a read-only mode.</summary>
       </Docs>
     </Member>
     <Member MemberName="PreviewAndPrintButNoSubsetting">
@@ -171,7 +178,7 @@
         <ReturnType>System.Windows.Media.FontEmbeddingRight</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The font may be embedded and temporarily loaded on the remote system. Documents containing the font must be opened in a read-only mode. The font may not be subsetted prior to embedding.</summary>
       </Docs>
     </Member>
     <Member MemberName="PreviewAndPrintButNoSubsettingAndWithBitmapsOnly">
@@ -187,7 +194,7 @@
         <ReturnType>System.Windows.Media.FontEmbeddingRight</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The font may be embedded and temporarily loaded on the remote system. Documents containing the font must be opened in a read-only mode. The font may not be subsetted prior to embedding. Only bitmaps contained in the font may be embedded. No outline data may be embedded.</summary>
       </Docs>
     </Member>
     <Member MemberName="PreviewAndPrintButWithBitmapsOnly">
@@ -203,7 +210,7 @@
         <ReturnType>System.Windows.Media.FontEmbeddingRight</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The font may be embedded and temporarily loaded on the remote system. Documents containing the font must be opened in a read-only mode. Only bitmaps contained in the font may be embedded. No outline data may be embedded.</summary>
       </Docs>
     </Member>
     <Member MemberName="RestrictedLicense">
@@ -219,7 +226,7 @@
         <ReturnType>System.Windows.Media.FontEmbeddingRight</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Fonts with this setting must not be modified, embedded or exchanged in any manner without first obtaining permission of the legal owner.</summary>
       </Docs>
     </Member>
   </Members>

@@ -12,8 +12,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Abstract class that represents the response of a single query or create, update, or delete operation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `OperationResponse` class is used to hold information that is shared between the two response types, but this class is not intended to be used directly by a developer. Instead, this response object should be cast to the specific <xref:System.Data.Services.Client.QueryResponse> or <xref:System.Data.Services.Client.ChangesetResponse> type that includes additional operation specific data.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Error">
@@ -30,9 +37,16 @@
         <ReturnType>System.Exception</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets error thrown by the operation.</summary>
+        <value>An <see cref="T:System.Exception" /> object that contains the error.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is null if no errors are found.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Headers">
@@ -49,8 +63,9 @@
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When overridden in a derived class, contains the HTTP response headers associated with a single operation.</summary>
+        <value>
+          <see cref="T:System.Collections.IDictionary" /> object that contains name value pairs of headers and values.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,8 +83,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When overridden in a derived class, gets or sets the HTTP response code associated with a single operation.</summary>
+        <value>Integer value that contains response code.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

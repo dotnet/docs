@@ -1,14 +1,18 @@
 ---
 uid: System.Windows.Forms.LinkClickedEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.LinkClickedEventArgs.LinkText
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.LinkClickedEventArgs.#ctor(System.String)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

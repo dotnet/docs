@@ -1,39 +1,55 @@
 ---
 uid: System.Web.UI.MobileControls.ArrayListCollectionBase
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.ArrayListCollectionBase.SyncRoot
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.ArrayListCollectionBase.CopyTo(System.Array,System.Int32)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.ArrayListCollectionBase.Count
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.ArrayListCollectionBase.IsReadOnly
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.ArrayListCollectionBase.Items
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.ArrayListCollectionBase.IsSynchronized
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.ArrayListCollectionBase.GetEnumerator
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

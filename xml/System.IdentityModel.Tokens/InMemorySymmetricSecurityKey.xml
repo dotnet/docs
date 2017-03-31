@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents keys that are generated using symmetric algorithms and are only stored in the local computer's random access memory.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, this class is only used by the infrastructure to transform XML using a symmetric key.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -29,8 +36,12 @@
       </Parameters>
       <Docs>
         <param name="key">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.InMemorySymmetricSecurityKey" /> class using the specified symmetric key.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="symmetricKey" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="symmetricKey" /> is zero length.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -49,8 +60,12 @@
       <Docs>
         <param name="key">To be added.</param>
         <param name="clone">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.InMemorySymmetricSecurityKey" /> class using the specified symmetric key and a value that indicates whether the binary data must be cloned.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="symmetricKey" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="symmetricKey" /> is zero length.</exception>
       </Docs>
     </Member>
     <Member MemberName="DecryptKey">
@@ -70,11 +85,20 @@
         <Parameter Name="keyData" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="algorithm">To be added.</param>
-        <param name="keyData">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="algorithm">The cryptographic algorithm that was used to encrypt the key.</param>
+        <param name="keyData">An array of <see cref="T:System.Byte" /> that contains the encrypted key.</param>
+        <summary>Decrypts the specified encrypted key.</summary>
+        <returns>An array of <see cref="T:System.Byte" /> that contains the decrypted key.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the static fields of the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class to specify the algorithm.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="algorithm" /> is not supported. The supported algorithms are <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.TripleDesKeyWrap" />, <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.Aes128KeyWrap" />, <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.Aes192KeyWrap" />, and <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.Aes256KeyWrap" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="EncryptKey">
@@ -94,11 +118,20 @@
         <Parameter Name="keyData" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="algorithm">To be added.</param>
-        <param name="keyData">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="algorithm">The cryptographic algorithm to encrypt the key with.</param>
+        <param name="keyData">An array of <see cref="T:System.Byte" /> that contains the key.</param>
+        <summary>Encrypts the specified key.</summary>
+        <returns>An array of <see cref="T:System.Byte" /> that contains the encrypted key.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the static fields of the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class to specify the algorithm.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="algorithm" /> is not supported. The supported algorithms are <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.TripleDesKeyWrap" />, <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.Aes128KeyWrap" />, <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.Aes192KeyWrap" />, or <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.Aes256KeyWrap" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GenerateDerivedKey">
@@ -121,14 +154,23 @@
         <Parameter Name="offset" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="algorithm">To be added.</param>
-        <param name="label">To be added.</param>
-        <param name="nonce">To be added.</param>
-        <param name="derivedKeyLength">To be added.</param>
-        <param name="offset">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="algorithm">A URI that represents the cryptographic algorithm to use to generate the derived key.</param>
+        <param name="label">An array of <see cref="T:System.Byte" /> that contains the label parameter for the cryptographic algorithm.</param>
+        <param name="nonce">An array of <see cref="T:System.Byte" /> that contains the nonce that is used to create a derived key.</param>
+        <param name="derivedKeyLength">The size of the derived key.</param>
+        <param name="offset">The position at which the derived key is located in the byte array that is returned from this method.</param>
+        <summary>Generates a derived key using the specified cryptographic algorithm and parameters for the current key.</summary>
+        <returns>An array of <see cref="T:System.Byte" /> that contains the derived key.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To specify P-SHA1 as the cryptographic algorithm, use the <xref:System.IdentityModel.Tokens.SecurityAlgorithms.Psha1KeyDerivation> field.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="algorithm" /> is not supported. The supported algorithms is <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.Psha1KeyDerivation" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetDecryptionTransform">
@@ -148,11 +190,20 @@
         <Parameter Name="iv" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="algorithm">To be added.</param>
-        <param name="iv">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="algorithm">A cryptographic algorithm that decrypts cipher text, such as encrypted XML.</param>
+        <param name="iv">An array of <see cref="T:System.Byte" /> that contains the initialization vector (<see langword="IV" />) for the specified algorithm.</param>
+        <summary>Gets a transform that decrypts cipher text using the specified cryptographic algorithm.</summary>
+        <returns>An <see cref="T:System.Security.Cryptography.ICryptoTransform" /> that represents the decryption transform.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the fields that represent decryption algorithms in the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class to specify the algorithm.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="algorithm" /> is not supported. The supported algorithms are <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.TripleDesEncryption" />, <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.Aes128Encryption" />, <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.Aes192Encryption" />, and <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.Aes256Encryption" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetEncryptionTransform">
@@ -172,11 +223,20 @@
         <Parameter Name="iv" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="algorithm">To be added.</param>
-        <param name="iv">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="algorithm">A cryptographic algorithm that encrypts XML.</param>
+        <param name="iv">An array of <see cref="T:System.Byte" /> that contains the initialization vector (<see langword="IV" />) for the specified algorithm.</param>
+        <summary>Gets a transform that encrypts XML using the specified cryptographic algorithm.</summary>
+        <returns>An <see cref="T:System.Security.Cryptography.ICryptoTransform" /> that represents the encryption transform.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the fields that represent encryption algorithms in the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class to specify the algorithm.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="algorithm" /> is not supported. The supported algorithms are <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.TripleDesEncryption" />, <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.Aes128Encryption" />, <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.Aes192Encryption" />, and <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.Aes256Encryption" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetIVSize">
@@ -195,10 +255,19 @@
         <Parameter Name="algorithm" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="algorithm">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="algorithm">The cryptographic algorithm to get the size of the initialization vector (<see langword="IV" />).</param>
+        <summary>Gets the size, in bits, of the initialization vector (<see langword="IV" />) that is required for the specified cryptographic algorithm.</summary>
+        <returns>The size, in bits, of the initialization vector (<see langword="IV" />) that is required for the cryptographic algorithm specified in the <paramref name="algorithm" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the fields that represent encryption algorithms in the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class to specify the algorithm.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="algorithm" /> is not supported. The supported algorithms are <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.TripleDesEncryption" />, <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.Aes128Encryption" />, <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.Aes192Encryption" />, and <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.Aes256Encryption" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetKeyedHashAlgorithm">
@@ -217,10 +286,12 @@
         <Parameter Name="algorithm" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="algorithm">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="algorithm">The keyed hash algorithm to get an instance of.</param>
+        <summary>Gets an instance of the specified keyed hash algorithm.</summary>
+        <returns>A <see cref="T:System.Security.Cryptography.KeyedHashAlgorithm" /> that represents the keyed hash algorithm.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="algorithm" /> is not supported. The supported algorithms is <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.HmacSha1Signature" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetSymmetricAlgorithm">
@@ -239,10 +310,12 @@
         <Parameter Name="algorithm" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="algorithm">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="algorithm">The symmetric algorithm to get an instance of.</param>
+        <summary>Gets an instance of the specified symmetric algorithm.</summary>
+        <returns>A <see cref="T:System.Security.Cryptography.SymmetricAlgorithm" /> that represents the symmetric algorithm.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="algorithm" /> is not supported. The supported algorithms are <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.TripleDesEncryption" />, <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.Aes128Encryption" />, <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.Aes192Encryption" />,  <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.Aes256Encryption" />, <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.TripleDesKeyWrap" />, <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.Aes128KeyWrap" />, <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.Aes192KeyWrap" />, and <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.Aes256KeyWrap" /></exception>
       </Docs>
     </Member>
     <Member MemberName="GetSymmetricKey">
@@ -259,8 +332,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the bytes that represent the symmetric key.</summary>
+        <returns>An array of <see cref="T:System.Byte" /> that contains the symmetric key.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -280,9 +353,10 @@
         <Parameter Name="algorithm" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="algorithm">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="algorithm">The cryptographic algorithm.</param>
+        <summary>Gets a value that indicates whether the specified algorithm uses asymmetric keys.</summary>
+        <returns>
+          <see langword="true" /> when the specified algorithm uses asymmetric keys; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -302,10 +376,38 @@
         <Parameter Name="algorithm" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="algorithm">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="algorithm">The cryptographic algorithm.</param>
+        <summary>Gets a value that indicates whether the specified algorithm is supported by this class.</summary>
+        <returns>
+          <see langword="true" /> when the specified algorithm is supported by this class; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The symmetric algorithms that are supported by this class are the algorithms represented by the following fields:  
+  
+-   <xref:System.IdentityModel.Tokens.SecurityAlgorithms.HmacSha1Signature>  
+  
+-   <xref:System.IdentityModel.Tokens.SecurityAlgorithms.Psha1KeyDerivation>  
+  
+-   <xref:System.IdentityModel.Tokens.SecurityAlgorithms.Aes128Encryption>  
+  
+-   <xref:System.IdentityModel.Tokens.SecurityAlgorithms.Aes128KeyWrap>  
+  
+-   <xref:System.IdentityModel.Tokens.SecurityAlgorithms.Aes192Encryption>  
+  
+-   <xref:System.IdentityModel.Tokens.SecurityAlgorithms.Aes192KeyWrap>  
+  
+-   <xref:System.IdentityModel.Tokens.SecurityAlgorithms.Aes256Encryption>  
+  
+-   <xref:System.IdentityModel.Tokens.SecurityAlgorithms.Aes256KeyWrap>  
+  
+-   <xref:System.IdentityModel.Tokens.SecurityAlgorithms.TripleDesEncryption>  
+  
+-   <xref:System.IdentityModel.Tokens.SecurityAlgorithms.TripleDesKeyWrap>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSymmetricAlgorithm">
@@ -324,9 +426,10 @@
         <Parameter Name="algorithm" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="algorithm">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="algorithm">The cryptographic algorithm.</param>
+        <summary>Gets a value that indicates whether the specified algorithm uses symmetric keys.</summary>
+        <returns>
+          <see langword="true" /> when the specified algorithm uses symmetric keys; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -343,8 +446,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the size, in bits, of the key.</summary>
+        <value>The size, in bits, of the key.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

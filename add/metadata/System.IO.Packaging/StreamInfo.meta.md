@@ -1,34 +1,55 @@
 ---
 uid: System.IO.Packaging.StreamInfo
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.Packaging.StreamInfo.Name
-internalonly: False
----
-
----
-uid: System.IO.Packaging.StreamInfo.GetStream(System.IO.FileMode)
-internalonly: False
----
-
----
-uid: System.IO.Packaging.StreamInfo.EncryptionOption
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.Packaging.StreamInfo.GetStream
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.Packaging.StreamInfo.GetStream(System.IO.FileMode)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.Packaging.StreamInfo.EncryptionOption
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.Packaging.StreamInfo.GetStream
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.Packaging.StreamInfo.CompressionOption
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.Packaging.StreamInfo.GetStream(System.IO.FileMode,System.IO.FileAccess)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -1,19 +1,27 @@
 ---
 uid: System.Windows.Automation.Provider.IExpandCollapseProvider
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Provider.IExpandCollapseProvider.Expand
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Provider.IExpandCollapseProvider.ExpandCollapseState
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Provider.IExpandCollapseProvider.Collapse
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---

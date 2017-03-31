@@ -27,8 +27,18 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the default value of a type or an empty expression.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to create an expression that represents a default value for a given type by using the <xref:System.Linq.Expressions.Expression.Default%2A> method.  
+  
+ [!code-csharp[System.Linq.Expressions.ExpressionDev10#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/cs/program.cs#6)]
+ [!code-vb[System.Linq.Expressions.ExpressionDev10#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/vb/module1.vb#6)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Accept">
@@ -88,8 +98,8 @@
         <ReturnType>System.Linq.Expressions.ExpressionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the node type of this expression. Extension nodes should return <see cref="F:System.Linq.Expressions.ExpressionType.Extension" /> when overriding this method.</summary>
+        <value>The <see cref="T:System.Linq.Expressions.ExpressionType" /> of the expression.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,8 +127,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the static type of the expression that this <see cref="T:System.Linq.Expressions.Expression" /> represents.</summary>
+        <value>The <see cref="P:System.Linq.Expressions.DefaultExpression.Type" /> that represents the static type of the expression.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

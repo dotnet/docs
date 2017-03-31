@@ -1,29 +1,48 @@
 ---
 uid: System.ServiceModel.BasicHttpContextBinding
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.BasicHttpContextBinding.ContextManagementEnabled
-internalonly: False
----
-
----
-uid: System.ServiceModel.BasicHttpContextBinding.#ctor(System.String)
-internalonly: False
----
-
----
-uid: System.ServiceModel.BasicHttpContextBinding.CreateBindingElements
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.BasicHttpContextBinding.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.BasicHttpContextBinding.#ctor(System.String)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.BasicHttpContextBinding.CreateBindingElements
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.BasicHttpContextBinding.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.BasicHttpContextBinding.#ctor(System.ServiceModel.BasicHttpSecurityMode)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

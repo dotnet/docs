@@ -1,29 +1,48 @@
 ---
 uid: System.ServiceModel.Discovery.ResolveCriteria
-internalonly: False
----
-
----
-uid: System.ServiceModel.Discovery.ResolveCriteria.#ctor(System.ServiceModel.EndpointAddress)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.ResolveCriteria.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Discovery.ResolveCriteria.#ctor(System.ServiceModel.EndpointAddress)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Discovery.ResolveCriteria.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.ResolveCriteria.Extensions
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.ResolveCriteria.Duration
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.ResolveCriteria.Address
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

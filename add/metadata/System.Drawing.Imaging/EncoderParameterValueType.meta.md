@@ -1,4 +1,6 @@
 ---
 uid: System.Drawing.Imaging.EncoderParameterValueType
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

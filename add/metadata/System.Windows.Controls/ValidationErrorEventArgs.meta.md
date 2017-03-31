@@ -1,19 +1,26 @@
 ---
 uid: System.Windows.Controls.ValidationErrorEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.ValidationErrorEventArgs.Action
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.ValidationErrorEventArgs.Error
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.ValidationErrorEventArgs.InvokeEventHandler(System.Delegate,System.Object)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

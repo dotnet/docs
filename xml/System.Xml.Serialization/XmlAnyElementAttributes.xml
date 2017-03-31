@@ -22,8 +22,42 @@
   <Interfaces>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a collection of <see cref="T:System.Xml.Serialization.XmlAnyElementAttribute" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Xml.Serialization.XmlAnyElementAttributes> to override the behavior of a set of <xref:System.Xml.Serialization.XmlAnyElementAttribute> objects. Multiple instances of the <xref:System.Xml.Serialization.XmlAnyElementAttribute> class can be applied to a class member, as long as each instance has a distinct <xref:System.Xml.Serialization.XmlAnyElementAttribute.Name%2A> property value; this instructs the <xref:System.Xml.Serialization.XmlSerializer> to collect unknown elements under the named element into the appropriate array. It is for this reason that multiple instances of the <xref:System.Xml.Serialization.XmlAnyElementAttribute> class can be added to the <xref:System.Xml.Serialization.XmlAnyElementAttributes>.  
+  
+ To override a set of <xref:System.Xml.Serialization.XmlAnyElementAttribute> objects:  
+  
+1.  Create an <xref:System.Xml.Serialization.XmlAnyElementAttributes>.  
+  
+2.  Create the set of <xref:System.Xml.Serialization.XmlAnyElementAttribute> objects, and add each object to the collection using the <xref:System.Xml.Serialization.XmlAnyElementAttributes.Add%2A> method.  
+  
+3.  Create an <xref:System.Xml.Serialization.XmlAttributes>.  
+  
+4.  Set the <xref:System.Xml.Serialization.XmlAttributes.XmlAnyElements%2A> property to the <xref:System.Xml.Serialization.XmlAnyElementAttributes>.  
+  
+5.  Create an <xref:System.Xml.Serialization.XmlAttributeOverrides>.  
+  
+6.  Add the <xref:System.Xml.Serialization.XmlAttributes> to the <xref:System.Xml.Serialization.XmlAttributeOverrides> using the <xref:System.Xml.Serialization.XmlAttributeOverrides.Add%2A> method.  
+  
+7.  Create an instance of the <xref:System.Xml.Serialization.XmlSerializer> using the <xref:System.Xml.Serialization.XmlAttributeOverrides>.  
+  
+8.  Serialize or deserialize an object that contains the set of <xref:System.Xml.Serialization.XmlAnyElementAttribute> objects.  
+  
+   
+  
+## Examples  
+ The following example creates a new <xref:System.Xml.Serialization.XmlAnyElementAttribute> and adds it to the collection of objects accessed through the <xref:System.Xml.Serialization.XmlAttributes.XmlAnyElements%2A> property. The <xref:System.Xml.Serialization.XmlAttributes> is then added to a <xref:System.Xml.Serialization.XmlAttributeOverrides> which is used to create an <xref:System.Xml.Serialization.XmlSerializer>. The <xref:System.Xml.Serialization.XmlSerializer> is used to serialize or deserialize an object. To see the effect of using the <xref:System.Xml.Serialization.XmlAnyElementAttributes> property, create an XML document named UnknownElements.xml by running the `SerializeObject` method in the `Main` method. Edit the resulting document to include other (unknown) elements. Comment out the `SerializeObject` call in the `Main` method, and uncomment the call to the `DeserializeObject` method, which prints out the name and value of any unknown XML element.  
+  
+ [!code-cpp[XmlAttributes.XmlAnyElements#1](~/samples/snippets/cpp/VS_Snippets_Remoting/XmlAttributes.XmlAnyElements/CPP/xmlanyover.cpp#1)]
+ [!code-csharp[XmlAttributes.XmlAnyElements#1](~/samples/snippets/csharp/VS_Snippets_Remoting/XmlAttributes.XmlAnyElements/CS/xmlanyover.cs#1)]
+ [!code-vb[XmlAttributes.XmlAnyElements#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/XmlAttributes.XmlAnyElements/VB/xmlanyover.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,7 +80,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlAnyElementAttributes" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,10 +109,21 @@
         <Parameter Name="attribute" Type="System.Xml.Serialization.XmlAnyElementAttribute" />
       </Parameters>
       <Docs>
-        <param name="attribute">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="attribute">The <see cref="T:System.Xml.Serialization.XmlAnyElementAttribute" /> to add.</param>
+        <summary>Adds an <see cref="T:System.Xml.Serialization.XmlAnyElementAttribute" /> to the collection.</summary>
+        <returns>The index of the newly added <see cref="T:System.Xml.Serialization.XmlAnyElementAttribute" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a new <xref:System.Xml.Serialization.XmlAnyElementAttribute> and adds it to the collection of objects accessed through the <xref:System.Xml.Serialization.XmlAttributes.XmlAnyElements%2A> property. The <xref:System.Xml.Serialization.XmlAttributes> is then added to an <xref:System.Xml.Serialization.XmlAttributeOverrides>, which is used to create an <xref:System.Xml.Serialization.XmlSerializer>. The <xref:System.Xml.Serialization.XmlSerializer> is used to serialize or deserialize an object. To see the effect of using the <xref:System.Xml.Serialization.XmlAnyElementAttributes> property, create an XML document named UnknownElements.xml by running the `SerializeObject` method in the `Main` method. Edit the resulting document to include other (unknown) elements. Comment out the `SerializeObject` call in the `Main` method, and uncomment the call to the `DeserializeObject` method, which prints out the name and value of any unknown XML element.  
+  
+ [!code-cpp[XmlAttributes.XmlAnyElements#1](~/samples/snippets/cpp/VS_Snippets_Remoting/XmlAttributes.XmlAnyElements/CPP/xmlanyover.cpp#1)]
+ [!code-csharp[XmlAttributes.XmlAnyElements#1](~/samples/snippets/csharp/VS_Snippets_Remoting/XmlAttributes.XmlAnyElements/CS/xmlanyover.cs#1)]
+ [!code-vb[XmlAttributes.XmlAnyElements#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/XmlAttributes.XmlAnyElements/VB/xmlanyover.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -124,9 +169,10 @@
         <Parameter Name="attribute" Type="System.Xml.Serialization.XmlAnyElementAttribute" />
       </Parameters>
       <Docs>
-        <param name="attribute">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="attribute">The <see cref="T:System.Xml.Serialization.XmlAnyElementAttribute" /> you are interested in.</param>
+        <summary>Gets a value that indicates whether the specified <see cref="T:System.Xml.Serialization.XmlAnyElementAttribute" /> exists in the collection.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Xml.Serialization.XmlAnyElementAttribute" /> exists in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,9 +202,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">The one-dimensional array of <see cref="T:System.Xml.Serialization.XmlElementAttribute" /> objects that is the destination of the elements copied from the collection. The array must have zero-based indexing.</param>
+        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <summary>Copies the entire collection to a compatible one-dimensional array of <see cref="T:System.Xml.Serialization.XmlElementAttribute" /> objects, starting at the specified index of the target array.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -224,9 +270,9 @@
         <Parameter Name="attribute" Type="System.Xml.Serialization.XmlAnyElementAttribute" />
       </Parameters>
       <Docs>
-        <param name="attribute">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="attribute">The <see cref="T:System.Xml.Serialization.XmlAnyElementAttribute" /> whose index you want.</param>
+        <summary>Gets the index of the specified <see cref="T:System.Xml.Serialization.XmlAnyElementAttribute" />.</summary>
+        <returns>The index of the specified <see cref="T:System.Xml.Serialization.XmlAnyElementAttribute" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -256,9 +302,9 @@
         <Parameter Name="attribute" Type="System.Xml.Serialization.XmlAnyElementAttribute" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="attribute">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The index where the <see cref="T:System.Xml.Serialization.XmlAnyElementAttribute" /> is inserted.</param>
+        <param name="attribute">The <see cref="T:System.Xml.Serialization.XmlAnyElementAttribute" /> to insert.</param>
+        <summary>Inserts an <see cref="T:System.Xml.Serialization.XmlAnyElementAttribute" /> into the collection at the specified index.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -287,9 +333,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The index of the <see cref="T:System.Xml.Serialization.XmlAnyElementAttribute" />.</param>
+        <summary>Gets or sets the <see cref="T:System.Xml.Serialization.XmlAnyElementAttribute" /> at the specified index.</summary>
+        <value>An <see cref="T:System.Xml.Serialization.XmlAnyElementAttribute" /> at the specified index.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -318,8 +364,8 @@
         <Parameter Name="attribute" Type="System.Xml.Serialization.XmlAnyElementAttribute" />
       </Parameters>
       <Docs>
-        <param name="attribute">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="attribute">The <see cref="T:System.Xml.Serialization.XmlAnyElementAttribute" /> to remove.</param>
+        <summary>Removes the specified <see cref="T:System.Xml.Serialization.XmlAnyElementAttribute" /> from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a combination of two or more <see cref="T:System.Windows.Automation.PropertyCondition" /> objects that must both be true for a match.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,9 +34,19 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="conditions">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="conditions">Two or more subconditions.</param>
+        <summary>Creates a <see cref="T:System.Windows.Automation.PropertyCondition" /> that is true if all the subconditions are true.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use <xref:System.Windows.Automation.AndCondition> to find [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] elements that match a complex condition.  
+  
+ [!code-csharp[UIAClient_snip#176](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ConditionSnips.cs#176)]
+ [!code-vb[UIAClient_snip#176](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ConditionSnips.vb#176)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetConditions">
@@ -53,9 +63,24 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Retrieves an array of the subconditions for this condition.</summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The returned array is a copy. Modifying it does not affect the state of the <xref:System.Windows.Automation.AndCondition>.  
+  
+   
+  
+## Examples  
+ The following example constructs an <xref:System.Windows.Automation.AndCondition> and then displays the number of conditions it contains.  
+  
+ [!code-csharp[UIAClient_snip#176](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ConditionSnips.cs#176)]
+ [!code-vb[UIAClient_snip#176](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ConditionSnips.vb#176)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

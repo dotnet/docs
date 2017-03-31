@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Describes how content is positioned horizontally in a container.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Windows.Media.AlignmentX</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The contents align toward the center of the container.</summary>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -43,7 +43,7 @@
         <ReturnType>System.Windows.Media.AlignmentX</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The contents align toward the left of the container.</summary>
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -59,7 +59,7 @@
         <ReturnType>System.Windows.Media.AlignmentX</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The contents align toward the right of the container.</summary>
       </Docs>
     </Member>
   </Members>

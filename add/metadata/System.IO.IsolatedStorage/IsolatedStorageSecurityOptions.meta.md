@@ -1,4 +1,6 @@
 ---
 uid: System.IO.IsolatedStorage.IsolatedStorageSecurityOptions
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

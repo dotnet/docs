@@ -1,24 +1,34 @@
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.Window.CloseButton
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.Window.CloseButton.Disabled
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.Window.CloseButton.Normal
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.Window.CloseButton.Hot
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.Window.CloseButton.Pressed
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

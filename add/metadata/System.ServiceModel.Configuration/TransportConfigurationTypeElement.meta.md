@@ -1,29 +1,48 @@
 ---
 uid: System.ServiceModel.Configuration.TransportConfigurationTypeElement
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.TransportConfigurationTypeElement.#ctor(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.TransportConfigurationTypeElement.#ctor(System.String,System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.TransportConfigurationTypeElement.Name
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.TransportConfigurationTypeElement.TransportConfigurationType
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.TransportConfigurationTypeElement.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Configuration.TransportConfigurationTypeElement.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -1,34 +1,55 @@
 ---
 uid: System.Resources.MissingSatelliteAssemblyException
-internalonly: False
----
-
----
-uid: System.Resources.MissingSatelliteAssemblyException.#ctor(System.String,System.Exception)
-internalonly: False
----
-
----
-uid: System.Resources.MissingSatelliteAssemblyException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
----
-
----
-uid: System.Resources.MissingSatelliteAssemblyException.CultureName
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Resources.MissingSatelliteAssemblyException.#ctor
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Resources.MissingSatelliteAssemblyException.#ctor(System.String,System.Exception)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Resources.MissingSatelliteAssemblyException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Resources.MissingSatelliteAssemblyException.CultureName
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Resources.MissingSatelliteAssemblyException.#ctor
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Resources.MissingSatelliteAssemblyException.#ctor(System.String)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Resources.MissingSatelliteAssemblyException.#ctor(System.String,System.String)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

@@ -11,8 +11,24 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a collection of category name strings.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This collection is used to store collections of toolbox category names.  
+  
+   
+  
+## Examples  
+ The following code example attempts to retrieve the <xref:System.Drawing.Design.IToolboxService> when the control is sited in design mode. If the <xref:System.Drawing.Design.IToolboxService> is retrieved, the code gets the names of each toolbox category and draws each name on the surface of the control.  
+  
+ [!code-cpp[CategoryNameCollectionExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/CategoryNameCollectionExample/CPP/toolboxcategorynamescontrol.cpp#2)]
+ [!code-csharp[CategoryNameCollectionExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/CategoryNameCollectionExample/CS/toolboxcategorynamescontrol.cs#2)]
+ [!code-vb[CategoryNameCollectionExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/CategoryNameCollectionExample/VB/toolboxcategorynamescontrol.vb#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,8 +44,8 @@
         <Parameter Name="value" Type="System.Drawing.Design.CategoryNameCollection" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">A <see cref="T:System.Drawing.Design.CategoryNameCollection" /> that contains the names to initialize the collection values to.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Design.CategoryNameCollection" /> class using the specified collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +62,8 @@
         <Parameter Name="value" Type="System.String[]" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">An array of strings that contains the names of the categories to initialize the collection values to.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Design.CategoryNameCollection" /> class using the specified array of names.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,9 +83,10 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The string to check for in the collection.</param>
+        <summary>Indicates whether the specified category is contained in the collection.</summary>
+        <returns>
+          <see langword="true" /> if the specified category is contained in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,9 +107,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">The array to copy to.</param>
+        <param name="index">The index of the destination array at which to begin copying.</param>
+        <summary>Copies the collection elements to the specified array at the specified index.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,9 +129,9 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The category name to retrieve the index of in the collection.</param>
+        <summary>Gets the index of the specified value.</summary>
+        <returns>The index in the collection, or <see langword="null" /> if the string does not exist in the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,9 +151,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The index of the collection element to access.</param>
+        <summary>Gets the category name at the specified index.</summary>
+        <value>The category name at the specified index.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

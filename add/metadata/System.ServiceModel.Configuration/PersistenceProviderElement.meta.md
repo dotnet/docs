@@ -1,59 +1,59 @@
 ---
 uid: System.ServiceModel.Configuration.PersistenceProviderElement
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.PersistenceProviderElement.Unmerge(System.Configuration.ConfigurationElement,System.Configuration.ConfigurationElement,System.Configuration.ConfigurationSaveMode)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.PersistenceProviderElement.CreateBehavior
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.PersistenceProviderElement.SerializeElement(System.Xml.XmlWriter,System.Boolean)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.PersistenceProviderElement.Type
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.PersistenceProviderElement.PersistenceOperationTimeout
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.PersistenceProviderElement.PostDeserialize
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.PersistenceProviderElement.BehaviorType
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.PersistenceProviderElement.IsModified
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.PersistenceProviderElement.#ctor
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.PersistenceProviderElement.OnDeserializeUnrecognizedAttribute(System.String,System.String)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.PersistenceProviderElement.PersistenceProviderArguments
-internalonly: False
+manager: "ghogen"
 ---

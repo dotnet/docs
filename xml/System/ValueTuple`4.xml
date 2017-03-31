@@ -38,12 +38,29 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="T1">To be added.</typeparam>
-    <typeparam name="T2">To be added.</typeparam>
-    <typeparam name="T3">To be added.</typeparam>
-    <typeparam name="T4">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="T1">The type of the value tuple's first element.</typeparam>
+    <typeparam name="T2">The type of the value tuple's second element.</typeparam>
+    <typeparam name="T3">The type of the value tuple's third element.</typeparam>
+    <typeparam name="T4">The type of the value tuple's fourth element.</typeparam>
+    <summary>Represents a value tuple with 4 components.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A value tuple is a data structure that has a specific number and sequence of values. The <xref:System.ValueTuple%604> structure represents a value tuple that has four elements.  
+  
+ The value tuple types differ from the tuple types (such as <xref:System.Tuple%604>) as follows:  
+  
+-   They are structures (value types) rather than classes (reference types).  
+  
+-   Members such as <xref:System.ValueTuple%604.Item1> and   <xref:System.ValueTuple%604.Item2> are fields rather than properties.  
+  
+-   Their fields are mutable rather than read-only.  
+  
+ The value tuple types provide the runtime implementation that supports tuples in C# and struct tuples in F#.  In addition to creating a <xref:System.ValueTuple%604> instance by using language syntax, you can call the <xref:System.ValueTuple.Create%2A> factory method.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -67,11 +84,11 @@
         <Parameter Name="item4" Type="T4" />
       </Parameters>
       <Docs>
-        <param name="item1">To be added.</param>
-        <param name="item2">To be added.</param>
-        <param name="item3">To be added.</param>
-        <param name="item4">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="item1">The value tuple's first element.</param>
+        <param name="item2">The value tuple's second element.</param>
+        <param name="item3">The value tuple's third element.</param>
+        <param name="item4">The value tuple's fourth element.</param>
+        <summary>Initializes a new <see cref="T:System.ValueTuple`4" /> instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,9 +113,44 @@
         <Parameter Name="other" Type="System.ValueTuple&lt;T1,T2,T3,T4&gt;" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">The tuple to compare with this instance.</param>
+        <summary>Compares the current <see cref="T:System.ValueTuple`4" /> instance to a specified <see cref="T:System.ValueTuple`4" /> instance.</summary>
+        <returns>A signed integer that indicates the relative position of this instance and                      <paramref name="other" /> in the sort order, as shown in the following able.  
+  
+ <list type="table">  
+<listheader>  
+<term> Vaue  
+  
+ </term>  
+<description> Description  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> A negative integer  
+  
+ </term>  
+<description> This instance precedes                                      <paramref name="other" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Zero  
+  
+ </term>  
+<description> This instance and                                      <paramref name="other" /> have the same position in the sort order.  
+  
+ </description>  
+</item>  
+<item>  
+<term> A positive integer  
+  
+ </term>  
+<description> This instance follows                                      <paramref name="other" />.  
+  
+ </description>  
+</item>  
+</list></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,10 +175,24 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="obj">The object to compare with this instance.</param>
+        <summary>Returns a value that indicates whether the current <see cref="T:System.ValueTuple`4" /> instance is equal to a specified object.</summary>
+        <returns>
+          <see langword="true" /> if the current instance is equal to the specified object; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The                          `obj` argument is considered to be equal to the current instance under the following conditions:  
+  
+-   It is a                                  <xref:System.ValueTuple%604> value type.  
+  
+-   Its components are of the same types as those of the current instance.  
+  
+-   Its components are equal to those of the current instance. Equality is determined by the default equality comparer for each component.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -150,10 +216,22 @@
         <Parameter Name="other" Type="System.ValueTuple&lt;T1,T2,T3,T4&gt;" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="other">The value tuple to compare with this instance.</param>
+        <summary>Returns a value that indicates whether the current <see cref="T:System.ValueTuple`4" /> instance is equal to a specified <see cref="T:System.ValueTuple`4" /> instance.</summary>
+        <returns>
+          <see langword="true" /> if the current instance is equal to the specified tuple; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The                          `other` argument is considered to be equal to the current instance under the following conditions:  
+  
+-   Its components are of the same types as those of the current instance.  
+  
+-   Its components are equal to those of the current instance. Equality is determined by the default equality comparer for each component.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -175,8 +253,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Calculates the hash code for the current <see cref="T:System.ValueTuple`4" /> instance.</summary>
+        <returns>The hash code for the current <see cref="T:System.ValueTuple`4" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,7 +276,7 @@
         <ReturnType>T1</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the value of the current <see cref="T:System.ValueTuple`4" /> instance's first element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -220,7 +298,7 @@
         <ReturnType>T2</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the value of the current <see cref="T:System.ValueTuple`4" /> instance's second element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -242,7 +320,7 @@
         <ReturnType>T3</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the value of the current <see cref="T:System.ValueTuple`4" /> instance's third element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -264,7 +342,7 @@
         <ReturnType>T4</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the value of the current <see cref="T:System.ValueTuple`4" /> instance's fourth element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -290,10 +368,45 @@
         <Parameter Name="comparer" Type="System.Collections.IComparer" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <param name="comparer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">The object to compare with the current instance.</param>
+        <param name="comparer">An object that provides custom rules for comparison.</param>
+        <summary>Compares the current <see cref="T:System.ValueTuple`4" /> instance to a specified object by using a specified comparer and returns an integer that indicates whether the current object is before, after, or in the same position as the specified object in the sort order.</summary>
+        <returns>A signed integer that indicates the relative position of this instance and <paramref name="other" /> in the sort order, as shown in the following able.  
+  
+ <list type="table">  
+<listheader>  
+<term> Vaue  
+  
+ </term>  
+<description> Description  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> A negative integer  
+  
+ </term>  
+<description> This instance precedes <paramref name="other" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Zero  
+  
+ </term>  
+<description> This instance and <paramref name="other" /> have the same position in the sort order.  
+  
+ </description>  
+</item>  
+<item>  
+<term> A positive integer  
+  
+ </term>  
+<description> This instance follows <paramref name="other" />.  
+  
+ </description>  
+</item>  
+</list></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -319,10 +432,11 @@
         <Parameter Name="comparer" Type="System.Collections.IEqualityComparer" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <param name="comparer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">The object to compare with this instance.</param>
+        <param name="comparer">An object that defines the method to use to evaluate whether the two objects are equal.</param>
+        <summary>Returns a value that indicates whether the current <see cref="T:System.ValueTuple`4" /> instance is equal to a specified object based on a specified comparison method.</summary>
+        <returns>
+          <see langword="true" /> if the current instance is equal to the specified objects; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -347,9 +461,9 @@
         <Parameter Name="comparer" Type="System.Collections.IEqualityComparer" />
       </Parameters>
       <Docs>
-        <param name="comparer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="comparer">An object whose <see cref="M:System.Collections.IEqualityComparer.GetHashCode(System.Object)" /> method calculates the hash code of the current <see cref="T:System.ValueTuple`4" /> instance.</param>
+        <summary>Calculates the hash code for the current <see cref="T:System.ValueTuple`4" /> instance by using a specified computation method.</summary>
+        <returns>A 32-bit signed integer hash code.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -374,9 +488,44 @@
         <Parameter Name="other" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">The object to compare with the current instance.</param>
+        <summary>Compares the current <see cref="T:System.ValueTuple`4" /> instance to a specified object by using a specified comparer and returns an integer that indicates whether the current object is before, after, or in the same position as the specified object in the sort order.</summary>
+        <returns>A signed integer that indicates the relative position of this instance and <paramref name="obj" /> in the sort order, as shown in the following table.  
+  
+ <list type="table">  
+<listheader>  
+<term> Value  
+  
+ </term>  
+<description> Description  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> A negative integer  
+  
+ </term>  
+<description> This instance precedes <paramref name="other" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Zero  
+  
+ </term>  
+<description> This instance and <paramref name="other" /> have the same position in the sort order.  
+  
+ </description>  
+</item>  
+<item>  
+<term> A positive integer  
+  
+ </term>  
+<description> This instance follows <paramref name="other" />.  
+  
+ </description>  
+</item>  
+</list></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -399,9 +548,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a string that represents the value of this <see cref="T:System.ValueTuple`4" /> instance.</summary>
+        <returns>The string representation of this <see cref="T:System.ValueTuple`4" /> instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this method takes the form (*Item1*, *Item2*, *Item3*, *Item4*, where *Item1*, *Item2*, *Item3*, and *Item4* represent the values of the <xref:System.ValueTuple%604>, <xref:System.ValueTuple%604>, <xref:System.ValueTuple%604.Item3>, and <xref:System.ValueTuple%604.Item4> fields. If any of the field values is `null`, it is represented as <xref:System.String.Empty?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

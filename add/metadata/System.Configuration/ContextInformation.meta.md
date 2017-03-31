@@ -1,19 +1,23 @@
 ---
 uid: System.Configuration.ContextInformation
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ContextInformation.IsMachineLevel
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ContextInformation.GetSection(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ContextInformation.HostingContext
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

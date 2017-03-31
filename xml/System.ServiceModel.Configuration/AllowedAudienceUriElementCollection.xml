@@ -19,8 +19,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a collection of <see cref="T:System.ServiceModel.Configuration.AllowedAudienceUriElement" /> which is a target URI for which the <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> security token can be targeted for in order to be considered valid by a <see cref="T:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator" /> instance.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information on this element, see [\&lt;allowedAudienceUris\&gt;](../Topic/%3CallowedAudienceUris%3E.md)  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,7 +41,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.AllowedAudienceUriElementCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

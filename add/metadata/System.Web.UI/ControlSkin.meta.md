@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.ControlSkin
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ControlSkin.ApplySkin(System.Web.UI.Control)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ControlSkin.#ctor(System.Type,System.Web.UI.ControlSkinDelegate)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ControlSkin.ControlType
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

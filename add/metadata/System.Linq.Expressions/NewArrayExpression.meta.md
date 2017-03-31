@@ -1,24 +1,33 @@
 ---
 uid: System.Linq.Expressions.NewArrayExpression
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.Expressions.NewArrayExpression.Update(System.Collections.Generic.IEnumerable{System.Linq.Expressions.Expression})
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.Expressions.NewArrayExpression.Type
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.Expressions.NewArrayExpression.Expressions
-internalonly: False
+ms.author: "billchi"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Linq.Expressions.NewArrayExpression.Accept(System.Linq.Expressions.ExpressionVisitor)
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---

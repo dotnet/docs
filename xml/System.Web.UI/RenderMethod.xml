@@ -17,9 +17,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="output">To be added.</param>
-    <param name="container">To be added.</param>
-    <summary>To be added.</summary>
+    <param name="output">The <see cref="T:System.Web.UI.HtmlTextWriter" /> to render content to.</param>
+    <param name="container">The <see cref="T:System.Web.UI.Control" /> to render.</param>
+    <summary>Represents the method that renders the specified <see cref="T:System.Web.UI.Control" /> container to the specified <see cref="T:System.Web.UI.HtmlTextWriter" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

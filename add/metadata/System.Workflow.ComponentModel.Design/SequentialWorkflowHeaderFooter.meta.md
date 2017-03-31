@@ -1,49 +1,69 @@
 ---
 uid: System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter.#ctor(System.Workflow.ComponentModel.Design.SequentialWorkflowRootDesigner,System.Boolean)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter.OnPaint(System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter.ImageRectangle
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter.TextRectangle
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter.AssociatedDesigner
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter.Text
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter.Image
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter.Bounds
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter.OnLayout(System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

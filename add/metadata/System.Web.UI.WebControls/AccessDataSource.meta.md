@@ -1,44 +1,59 @@
 ---
 uid: System.Web.UI.WebControls.AccessDataSource
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.AccessDataSource.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.AccessDataSource.#ctor(System.String,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.AccessDataSource.GetDbProviderFactory
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.AccessDataSource.SqlCacheDependency
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.AccessDataSource.DataFile
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.AccessDataSource.#ctor
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.AccessDataSource.ProviderName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.AccessDataSource.ConnectionString
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.AccessDataSource.CreateDataSourceView(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

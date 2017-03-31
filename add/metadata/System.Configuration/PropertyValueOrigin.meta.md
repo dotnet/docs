@@ -1,4 +1,5 @@
 ---
 uid: System.Configuration.PropertyValueOrigin
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

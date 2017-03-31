@@ -1,4 +1,5 @@
 ---
 uid: System.Web.UI.VerificationConditionalOperator
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

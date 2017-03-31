@@ -1,24 +1,34 @@
 ---
 uid: System.Linq.Expressions.ConstantExpression
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.Expressions.ConstantExpression.Accept(System.Linq.Expressions.ExpressionVisitor)
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.Expressions.ConstantExpression.NodeType
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.Expressions.ConstantExpression.Type
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.Expressions.ConstantExpression.Value
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---

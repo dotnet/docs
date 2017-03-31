@@ -21,8 +21,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The exception that is thrown when a failure occurs in a managed thread after the underlying operating system thread has been started, but before the thread is ready to execute user code.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The exception returned by the <xref:System.Exception.InnerException%2A> property provides information about the reason for the failure.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members />
 </Type>

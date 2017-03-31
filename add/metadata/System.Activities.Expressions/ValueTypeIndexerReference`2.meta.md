@@ -1,19 +1,27 @@
 ---
 uid: System.Activities.Expressions.ValueTypeIndexerReference`2
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Expressions.ValueTypeIndexerReference`2.Indices
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Expressions.ValueTypeIndexerReference`2.OperandLocation
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Expressions.ValueTypeIndexerReference`2.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

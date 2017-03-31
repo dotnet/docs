@@ -11,8 +11,18 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides for compilation and caching of queries for reuse.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Conceptually this class contains a single method (`Compile`) with several overloads. You call the <xref:System.Data.Linq.CompiledQuery.Compile%2A> method to create a new delegate to represent the compiled query.  
+  
+> [!NOTE]
+>  Compilation does not occur until the first time the query is executed.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Compile&lt;TArg0,TResult&gt;">
@@ -39,12 +49,24 @@
         <Parameter Name="query" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;TArg0,TResult&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TArg0">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="query">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TArg0">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TResult">The type of <see langword="T" /> in the <see cref="T:System.Collections.Generic.IEnumerable`1" /> returned when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <param name="query">The query expression to be compiled.</param>
+        <summary>Compiles the query.</summary>
+        <returns>A generic delegate that represents the compiled query.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Data.Linq.CompiledQuery.Compile%2A>  
+  
+   
+  
+## Examples  
+ See <xref:System.Data.Linq.CompiledQuery.Compile%2A>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Compile&lt;TArg0,TArg1,TResult&gt;">
@@ -72,13 +94,25 @@
         <Parameter Name="query" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;TArg0,TArg1,TResult&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TArg0">To be added.</typeparam>
-        <typeparam name="TArg1">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="query">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TArg0">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg1">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TResult">The type of <see langword="T" /> in the <see cref="T:System.Collections.Generic.IEnumerable`1" /> returned when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <param name="query">The query expression to be compiled.</param>
+        <summary>Compiles the query.</summary>
+        <returns>A generic delegate that represents the compiled query.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Data.Linq.CompiledQuery.Compile%2A>.  
+  
+   
+  
+## Examples  
+ See <xref:System.Data.Linq.CompiledQuery.Compile%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Compile&lt;TArg0,TArg1,TArg2,TResult&gt;">
@@ -107,14 +141,26 @@
         <Parameter Name="query" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;TArg0,TArg1,TArg2,TResult&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TArg0">To be added.</typeparam>
-        <typeparam name="TArg1">To be added.</typeparam>
-        <typeparam name="TArg2">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="query">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TArg0">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg1">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg2">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TResult">The type of <see langword="T" /> in the <see cref="T:System.Collections.Generic.IEnumerable`1" /> returned when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <param name="query">The query expression to be compiled.</param>
+        <summary>Compiles the query.</summary>
+        <returns>A generic delegate that represents the compiled query.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Data.Linq.CompiledQuery.Compile%2A>.  
+  
+   
+  
+## Examples  
+ See <xref:System.Data.Linq.CompiledQuery.Compile%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Compile&lt;TArg0,TArg1,TArg2,TArg3,TResult&gt;">
@@ -144,15 +190,27 @@
         <Parameter Name="query" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;TArg0,TArg1,TArg2,TArg3,TResult&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TArg0">To be added.</typeparam>
-        <typeparam name="TArg1">To be added.</typeparam>
-        <typeparam name="TArg2">To be added.</typeparam>
-        <typeparam name="TArg3">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="query">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TArg0">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg1">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg2">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg3">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TResult">The type of <see langword="T" /> in the <see cref="T:System.Collections.Generic.IEnumerable`1" /> returned when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <param name="query">The query expression to be compiled.</param>
+        <summary>Compiles the query.</summary>
+        <returns>A generic delegate that represents the compiled query.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Data.Linq.CompiledQuery.Compile%2A>.  
+  
+   
+  
+## Examples  
+ See <xref:System.Data.Linq.CompiledQuery.Compile%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Compile&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TResult&gt;">
@@ -183,16 +241,28 @@
         <Parameter Name="query" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TResult&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TArg0">To be added.</typeparam>
-        <typeparam name="TArg1">To be added.</typeparam>
-        <typeparam name="TArg2">To be added.</typeparam>
-        <typeparam name="TArg3">To be added.</typeparam>
-        <typeparam name="TArg4">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="query">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TArg0">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg1">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg2">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg3">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg4">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TResult">The type of <see langword="T" /> in the <see cref="T:System.Collections.Generic.IEnumerable`1" /> returned when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <param name="query">The query expression to be compiled.</param>
+        <summary>Compiles the query.</summary>
+        <returns>A generic delegate that represents the compiled query.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Data.Linq.CompiledQuery.Compile%2A>.  
+  
+   
+  
+## Examples  
+ See <xref:System.Data.Linq.CompiledQuery.Compile%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Compile&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TArg5,TResult&gt;">
@@ -224,17 +294,29 @@
         <Parameter Name="query" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TArg5,TResult&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TArg0">To be added.</typeparam>
-        <typeparam name="TArg1">To be added.</typeparam>
-        <typeparam name="TArg2">To be added.</typeparam>
-        <typeparam name="TArg3">To be added.</typeparam>
-        <typeparam name="TArg4">To be added.</typeparam>
-        <typeparam name="TArg5">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="query">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TArg0">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg1">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg2">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg3">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg4">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg5">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TResult">The type of <see langword="T" /> in the <see cref="T:System.Collections.Generic.IEnumerable`1" /> returned when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <param name="query">The query expression to be compiled.</param>
+        <summary>Compiles the query.</summary>
+        <returns>A generic delegate that represents the compiled query.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Data.Linq.CompiledQuery.Compile%2A>.  
+  
+   
+  
+## Examples  
+ See <xref:System.Data.Linq.CompiledQuery.Compile%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Compile&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TArg5,TArg6,TResult&gt;">
@@ -267,18 +349,30 @@
         <Parameter Name="query" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TArg5,TArg6,TResult&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TArg0">To be added.</typeparam>
-        <typeparam name="TArg1">To be added.</typeparam>
-        <typeparam name="TArg2">To be added.</typeparam>
-        <typeparam name="TArg3">To be added.</typeparam>
-        <typeparam name="TArg4">To be added.</typeparam>
-        <typeparam name="TArg5">To be added.</typeparam>
-        <typeparam name="TArg6">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="query">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TArg0">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg1">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg2">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg3">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg4">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg5">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg6">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TResult">The type of <see langword="T" /> in the <see cref="T:System.Collections.Generic.IEnumerable`1" /> returned when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <param name="query">The query expression to be compiled.</param>
+        <summary>Compiles the query.</summary>
+        <returns>A generic delegate that represents the compiled query.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Data.Linq.CompiledQuery.Compile%2A>.  
+  
+   
+  
+## Examples  
+ See <xref:System.Data.Linq.CompiledQuery.Compile%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Compile&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TArg5,TArg6,TArg7,TResult&gt;">
@@ -312,19 +406,31 @@
         <Parameter Name="query" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TArg5,TArg6,TArg7,TResult&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TArg0">To be added.</typeparam>
-        <typeparam name="TArg1">To be added.</typeparam>
-        <typeparam name="TArg2">To be added.</typeparam>
-        <typeparam name="TArg3">To be added.</typeparam>
-        <typeparam name="TArg4">To be added.</typeparam>
-        <typeparam name="TArg5">To be added.</typeparam>
-        <typeparam name="TArg6">To be added.</typeparam>
-        <typeparam name="TArg7">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="query">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TArg0">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg1">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg2">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg3">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg4">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg5">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg6">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg7">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TResult">The type of <see langword="T" /> in the <see cref="T:System.Collections.Generic.IEnumerable`1" /> returned when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <param name="query">The query expression to be compiled.</param>
+        <summary>Compiles the query.</summary>
+        <returns>A generic delegate that represents the compiled query.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Data.Linq.CompiledQuery.Compile%2A>.  
+  
+   
+  
+## Examples  
+ See <xref:System.Data.Linq.CompiledQuery.Compile%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Compile&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TArg5,TArg6,TArg7,TArg8,TResult&gt;">
@@ -359,20 +465,32 @@
         <Parameter Name="query" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TArg5,TArg6,TArg7,TArg8,TResult&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TArg0">To be added.</typeparam>
-        <typeparam name="TArg1">To be added.</typeparam>
-        <typeparam name="TArg2">To be added.</typeparam>
-        <typeparam name="TArg3">To be added.</typeparam>
-        <typeparam name="TArg4">To be added.</typeparam>
-        <typeparam name="TArg5">To be added.</typeparam>
-        <typeparam name="TArg6">To be added.</typeparam>
-        <typeparam name="TArg7">To be added.</typeparam>
-        <typeparam name="TArg8">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="query">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TArg0">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg1">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg2">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg3">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg4">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg5">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg6">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg7">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg8">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TResult">The type of <see langword="T" /> in the <see cref="T:System.Collections.Generic.IEnumerable`1" /> returned when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <param name="query">The query expression to be compiled.</param>
+        <summary>Compiles the query.</summary>
+        <returns>A generic delegate that represents the compiled query.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Data.Linq.CompiledQuery.Compile%2A>.  
+  
+   
+  
+## Examples  
+ See <xref:System.Data.Linq.CompiledQuery.Compile%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Compile&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TArg5,TArg6,TArg7,TArg8,TArg9,TResult&gt;">
@@ -408,21 +526,33 @@
         <Parameter Name="query" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TArg5,TArg6,TArg7,TArg8,TArg9,TResult&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TArg0">To be added.</typeparam>
-        <typeparam name="TArg1">To be added.</typeparam>
-        <typeparam name="TArg2">To be added.</typeparam>
-        <typeparam name="TArg3">To be added.</typeparam>
-        <typeparam name="TArg4">To be added.</typeparam>
-        <typeparam name="TArg5">To be added.</typeparam>
-        <typeparam name="TArg6">To be added.</typeparam>
-        <typeparam name="TArg7">To be added.</typeparam>
-        <typeparam name="TArg8">To be added.</typeparam>
-        <typeparam name="TArg9">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="query">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TArg0">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg1">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg2">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg3">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg4">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg5">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg6">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg7">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg8">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg9">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TResult">The type of <see langword="T" /> in the <see cref="T:System.Collections.Generic.IEnumerable`1" /> returned when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <param name="query">The query expression to be compiled.</param>
+        <summary>Compiles the query.</summary>
+        <returns>A generic delegate that represents the compiled query.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Data.Linq.CompiledQuery.Compile%2A>.  
+  
+   
+  
+## Examples  
+ See <xref:System.Data.Linq.CompiledQuery.Compile%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Compile&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TArg5,TArg6,TArg7,TArg8,TArg9,TArg10,TResult&gt;">
@@ -459,22 +589,34 @@
         <Parameter Name="query" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TArg5,TArg6,TArg7,TArg8,TArg9,TArg10,TResult&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TArg0">To be added.</typeparam>
-        <typeparam name="TArg1">To be added.</typeparam>
-        <typeparam name="TArg2">To be added.</typeparam>
-        <typeparam name="TArg3">To be added.</typeparam>
-        <typeparam name="TArg4">To be added.</typeparam>
-        <typeparam name="TArg5">To be added.</typeparam>
-        <typeparam name="TArg6">To be added.</typeparam>
-        <typeparam name="TArg7">To be added.</typeparam>
-        <typeparam name="TArg8">To be added.</typeparam>
-        <typeparam name="TArg9">To be added.</typeparam>
-        <typeparam name="TArg10">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="query">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TArg0">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg1">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg2">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg3">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg4">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg5">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg6">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg7">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg8">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg9">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg10">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TResult">The type of <see langword="T" /> in the <see cref="T:System.Collections.Generic.IEnumerable`1" /> returned when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <param name="query">The query expression to be compiled.</param>
+        <summary>Compiles the query.</summary>
+        <returns>A generic delegate that represents the compiled query.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Data.Linq.CompiledQuery.Compile%2A>.  
+  
+   
+  
+## Examples  
+ See <xref:System.Data.Linq.CompiledQuery.Compile%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Compile&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TArg5,TArg6,TArg7,TArg8,TArg9,TArg10,TArg11,TResult&gt;">
@@ -512,23 +654,35 @@
         <Parameter Name="query" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TArg5,TArg6,TArg7,TArg8,TArg9,TArg10,TArg11,TResult&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TArg0">To be added.</typeparam>
-        <typeparam name="TArg1">To be added.</typeparam>
-        <typeparam name="TArg2">To be added.</typeparam>
-        <typeparam name="TArg3">To be added.</typeparam>
-        <typeparam name="TArg4">To be added.</typeparam>
-        <typeparam name="TArg5">To be added.</typeparam>
-        <typeparam name="TArg6">To be added.</typeparam>
-        <typeparam name="TArg7">To be added.</typeparam>
-        <typeparam name="TArg8">To be added.</typeparam>
-        <typeparam name="TArg9">To be added.</typeparam>
-        <typeparam name="TArg10">To be added.</typeparam>
-        <typeparam name="TArg11">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="query">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TArg0">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg1">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg2">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg3">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg4">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg5">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg6">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg7">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg8">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg9">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg10">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg11">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TResult">The type of <see langword="T" /> in the <see cref="T:System.Collections.Generic.IEnumerable`1" /> returned when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <param name="query">The query expression to be compiled.</param>
+        <summary>Compiles the query.</summary>
+        <returns>A generic delegate that represents the compiled query.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Data.Linq.CompiledQuery.Compile%2A>.  
+  
+   
+  
+## Examples  
+ See <xref:System.Data.Linq.CompiledQuery.Compile%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Compile&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TArg5,TArg6,TArg7,TArg8,TArg9,TArg10,TArg11,TArg12,TResult&gt;">
@@ -567,24 +721,36 @@
         <Parameter Name="query" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TArg5,TArg6,TArg7,TArg8,TArg9,TArg10,TArg11,TArg12,TResult&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TArg0">To be added.</typeparam>
-        <typeparam name="TArg1">To be added.</typeparam>
-        <typeparam name="TArg2">To be added.</typeparam>
-        <typeparam name="TArg3">To be added.</typeparam>
-        <typeparam name="TArg4">To be added.</typeparam>
-        <typeparam name="TArg5">To be added.</typeparam>
-        <typeparam name="TArg6">To be added.</typeparam>
-        <typeparam name="TArg7">To be added.</typeparam>
-        <typeparam name="TArg8">To be added.</typeparam>
-        <typeparam name="TArg9">To be added.</typeparam>
-        <typeparam name="TArg10">To be added.</typeparam>
-        <typeparam name="TArg11">To be added.</typeparam>
-        <typeparam name="TArg12">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="query">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TArg0">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg1">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg2">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg3">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg4">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg5">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg6">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg7">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg8">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg9">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg10">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg11">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg12">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TResult">The type of <see langword="T" /> in the <see cref="T:System.Collections.Generic.IEnumerable`1" /> returned when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <param name="query">The query expression to be compiled.</param>
+        <summary>Compiles the query.</summary>
+        <returns>A generic delegate that represents the compiled query.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Data.Linq.CompiledQuery.Compile%2A>.  
+  
+   
+  
+## Examples  
+ See <xref:System.Data.Linq.CompiledQuery.Compile%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Compile&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TArg5,TArg6,TArg7,TArg8,TArg9,TArg10,TArg11,TArg12,TArg13,TResult&gt;">
@@ -624,25 +790,37 @@
         <Parameter Name="query" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TArg5,TArg6,TArg7,TArg8,TArg9,TArg10,TArg11,TArg12,TArg13,TResult&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TArg0">To be added.</typeparam>
-        <typeparam name="TArg1">To be added.</typeparam>
-        <typeparam name="TArg2">To be added.</typeparam>
-        <typeparam name="TArg3">To be added.</typeparam>
-        <typeparam name="TArg4">To be added.</typeparam>
-        <typeparam name="TArg5">To be added.</typeparam>
-        <typeparam name="TArg6">To be added.</typeparam>
-        <typeparam name="TArg7">To be added.</typeparam>
-        <typeparam name="TArg8">To be added.</typeparam>
-        <typeparam name="TArg9">To be added.</typeparam>
-        <typeparam name="TArg10">To be added.</typeparam>
-        <typeparam name="TArg11">To be added.</typeparam>
-        <typeparam name="TArg12">To be added.</typeparam>
-        <typeparam name="TArg13">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="query">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TArg0">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg1">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg2">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg3">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg4">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg5">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg6">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg7">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg8">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg9">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg10">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg11">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg12">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg13">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TResult">The type of <see langword="T" /> in the <see cref="T:System.Collections.Generic.IEnumerable`1" /> returned when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <param name="query">The query expression to be compiled.</param>
+        <summary>Compiles the query.</summary>
+        <returns>A generic delegate that represents the compiled query.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Data.Linq.CompiledQuery.Compile%2A>.  
+  
+   
+  
+## Examples  
+ See <xref:System.Data.Linq.CompiledQuery.Compile%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Compile&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TArg5,TArg6,TArg7,TArg8,TArg9,TArg10,TArg11,TArg12,TArg13,TArg14,TResult&gt;">
@@ -683,26 +861,38 @@
         <Parameter Name="query" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TArg5,TArg6,TArg7,TArg8,TArg9,TArg10,TArg11,TArg12,TArg13,TArg14,TResult&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TArg0">To be added.</typeparam>
-        <typeparam name="TArg1">To be added.</typeparam>
-        <typeparam name="TArg2">To be added.</typeparam>
-        <typeparam name="TArg3">To be added.</typeparam>
-        <typeparam name="TArg4">To be added.</typeparam>
-        <typeparam name="TArg5">To be added.</typeparam>
-        <typeparam name="TArg6">To be added.</typeparam>
-        <typeparam name="TArg7">To be added.</typeparam>
-        <typeparam name="TArg8">To be added.</typeparam>
-        <typeparam name="TArg9">To be added.</typeparam>
-        <typeparam name="TArg10">To be added.</typeparam>
-        <typeparam name="TArg11">To be added.</typeparam>
-        <typeparam name="TArg12">To be added.</typeparam>
-        <typeparam name="TArg13">To be added.</typeparam>
-        <typeparam name="TArg14">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="query">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TArg0">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg1">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg2">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg3">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg4">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg5">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg6">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg7">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg8">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg9">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg10">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg11">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg12">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg13">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg14">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TResult">The type of <see langword="T" /> in the <see cref="T:System.Collections.Generic.IEnumerable`1" /> returned when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <param name="query">The query expression to be compiled.</param>
+        <summary>Compiles the query.</summary>
+        <returns>A generic delegate that represents the compiled query.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Data.Linq.CompiledQuery.Compile%2A>.  
+  
+   
+  
+## Examples  
+ See <xref:System.Data.Linq.CompiledQuery.Compile%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Compile&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TArg5,TArg6,TArg7,TArg8,TArg9,TArg10,TArg11,TArg12,TArg13,TArg14,TArg15,TResult&gt;">
@@ -744,27 +934,39 @@
         <Parameter Name="query" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;TArg0,TArg1,TArg2,TArg3,TArg4,TArg5,TArg6,TArg7,TArg8,TArg9,TArg10,TArg11,TArg12,TArg13,TArg14,TArg15,TResult&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TArg0">To be added.</typeparam>
-        <typeparam name="TArg1">To be added.</typeparam>
-        <typeparam name="TArg2">To be added.</typeparam>
-        <typeparam name="TArg3">To be added.</typeparam>
-        <typeparam name="TArg4">To be added.</typeparam>
-        <typeparam name="TArg5">To be added.</typeparam>
-        <typeparam name="TArg6">To be added.</typeparam>
-        <typeparam name="TArg7">To be added.</typeparam>
-        <typeparam name="TArg8">To be added.</typeparam>
-        <typeparam name="TArg9">To be added.</typeparam>
-        <typeparam name="TArg10">To be added.</typeparam>
-        <typeparam name="TArg11">To be added.</typeparam>
-        <typeparam name="TArg12">To be added.</typeparam>
-        <typeparam name="TArg13">To be added.</typeparam>
-        <typeparam name="TArg14">To be added.</typeparam>
-        <typeparam name="TArg15">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="query">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TArg0">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg1">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg2">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg3">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg4">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg5">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg6">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg7">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg8">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg9">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg10">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg11">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg12">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg13">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg14">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TArg15">Represents the type of the parameter that has to be passed in when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <typeparam name="TResult">The type of <see langword="T" /> in the <see cref="T:System.Collections.Generic.IEnumerable`1" /> returned when executing the delegate returned by the <see cref="M:System.Data.Linq.CompiledQuery.Compile``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})" /> method.</typeparam>
+        <param name="query">The query expression to be compiled.</param>
+        <summary>Compiles the query.</summary>
+        <returns>A generic delegate that represents the compiled query.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Data.Linq.CompiledQuery.Compile%2A>  
+  
+   
+  
+## Examples  
+ See <xref:System.Data.Linq.CompiledQuery.Compile%2A>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Expression">
@@ -780,8 +982,8 @@
         <ReturnType>System.Linq.Expressions.LambdaExpression</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the query as a lambda expression.</summary>
+        <value>The lambda expression that represents the query.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

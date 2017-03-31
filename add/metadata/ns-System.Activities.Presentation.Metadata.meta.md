@@ -1,4 +1,6 @@
 ---
 uid: System.Activities.Presentation.Metadata
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

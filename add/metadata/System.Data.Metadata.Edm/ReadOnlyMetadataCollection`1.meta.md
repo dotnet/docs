@@ -1,39 +1,69 @@
 ---
 uid: System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1.GetValue(System.String,System.Boolean)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1.IsReadOnly
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1.Item(System.String)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1.Contains(System.String)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1.TryGetValue(System.String,System.Boolean,`0@)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1.Item
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1.GetEnumerator
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1.IndexOf(`0)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1.Contains
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

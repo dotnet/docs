@@ -17,7 +17,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents information about a dynamic get member operation that indicates if the get member should invoke properties when they perform the get operation.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -43,9 +43,18 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the value indicating if this get member operation should invoke properties when they perform the get operation. The default value when this interface is not present is true.</summary>
+        <value>True if this get member operation should invoke properties when they perform the get operation; otherwise false.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is used by some languages to get a better [!INCLUDE[TLA2#tla_com](~/includes/tla2sharptla-com-md.md)] interoperation experience.  
+  
+ When the value is set to false, the dynamic [!INCLUDE[TLA2#tla_com](~/includes/tla2sharptla-com-md.md)] object will not invoke the object but will instead bind to the name, and return an object that can be invoked or indexed later. This is useful for indexed properties and languages that do not produce InvokeMember call sites.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

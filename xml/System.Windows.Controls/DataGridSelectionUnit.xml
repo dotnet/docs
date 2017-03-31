@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines constants that specify whether cells, rows, or both, are used for selection in a <see cref="T:System.Windows.Controls.DataGrid" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.DataGrid.SelectionMode%2A> and <xref:System.Windows.Controls.DataGrid.SelectionUnit%2A> properties together determine how users can select items in a <xref:System.Windows.Controls.DataGrid>. For example, if the <xref:System.Windows.Controls.DataGrid.SelectionMode%2A> is <xref:System.Windows.Controls.DataGridSelectionMode> and the <xref:System.Windows.Controls.DataGrid.SelectionUnit%2A> is Cell, the user can select only one cell at a time in the <xref:System.Windows.Controls.DataGrid>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Cell">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Controls.DataGridSelectionUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Only cells are selectable. Clicking a cell selects the cell. Clicking a row or column header does nothing.</summary>
       </Docs>
     </Member>
     <Member MemberName="CellOrRowHeader">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Controls.DataGridSelectionUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Cells and rows are selectable. Clicking a cell selects only the cell. Clicking a row header selects the full row.</summary>
       </Docs>
     </Member>
     <Member MemberName="FullRow">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.Controls.DataGridSelectionUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Only full rows are selectable. Clicking a cell or a row header selects the full row.</summary>
       </Docs>
     </Member>
   </Members>

@@ -20,8 +20,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an elliptic curve.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Security.Cryptography.ECCurve.CurveType> field to determine whether the curve is a named curve or an explicit curve (either a prime or a characteristic 2 curve).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="A">
@@ -46,7 +53,7 @@
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The first coefficient for an explicit curve. <c>A</c> for short Weierstrass, Montgomery, and Twisted Edwards curves.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,7 +79,7 @@
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The second coefficient for an explicit curve. <c>B</c> for short Weierstrass and <c>d</c> for Twisted Edwards curves.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,7 +105,7 @@
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The cofactor of the curve.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -127,10 +134,12 @@
         <Parameter Name="oidFriendlyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="oidFriendlyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="oidFriendlyName">The friendly name of the identifier.</param>
+        <summary>Creates a named curve using the specified friendly name of the identifier.</summary>
+        <returns>An object representing the named curve.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="oidFriendlyName" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateFromOid">
@@ -158,9 +167,9 @@
         <Parameter Name="curveOid" Type="System.Security.Cryptography.Oid" />
       </Parameters>
       <Docs>
-        <param name="curveOid">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="curveOid">The object identifier to use.</param>
+        <summary>Creates a named curve using the specified <see cref="T:System.Security.Cryptography.Oid" /> object.</summary>
+        <returns>An object representing the named curve.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -189,10 +198,12 @@
         <Parameter Name="oidValue" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="oidValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="oidValue">The dotted number of the identifier.</param>
+        <summary>Creates a named curve using the specified dotted-decimal representation of the identifier.</summary>
+        <returns>An object representing the named curve.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="oidValue" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CurveType">
@@ -217,7 +228,7 @@
         <ReturnType>System.Security.Cryptography.ECCurve+ECCurveType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the composition of the <see cref="T:System.Security.Cryptography.ECCurve" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -243,7 +254,7 @@
         <ReturnType>System.Security.Cryptography.ECPoint</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The generator, or base point, for operations on the curve.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -269,7 +280,7 @@
         <ReturnType>System.Nullable&lt;System.Security.Cryptography.HashAlgorithmName&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The name of the hash algorithm which was used to generate the curve coefficients (<see cref="F:System.Security.Cryptography.ECCurve.A" /> and <see cref="F:System.Security.Cryptography.ECCurve.B" />) from the <see cref="F:System.Security.Cryptography.ECCurve.Seed" /> under the ANSI X9.62 generation algorithm. Applies only to explicit curves.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -295,8 +306,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the curve type indicates an explicit characteristic 2 curve.</summary>
+        <value>
+          <see langword="true" /> if the curve is an explicit characteristic 2 curve; <see langword="false" /> if the curve is a named characteristic 2, prime, or implicit curve.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -322,8 +334,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the curve type indicates an explicit curve (either prime or characteristic 2).</summary>
+        <value>
+          <see langword="true" /> if the curve is an explicit curve (either prime or characteristic 2); <see langword="false" /> if the curve is a named or implicit curve.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -349,8 +362,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the curve type indicates a named curve.</summary>
+        <value>
+          <see langword="true" /> if the curve is a named curve; <see langword="false" /> if the curve is an implict or an  explicit curve (either prime or characteristic 2).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -376,8 +390,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the curve type indicates an explicit prime curve.</summary>
+        <value>
+          <see langword="true" /> if the curve is an explicit prime curve; <see langword="false" /> if the curve is a named prime, characteristic 2 or implicit curves.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -403,9 +418,18 @@
         <ReturnType>System.Security.Cryptography.Oid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the identifier of a named curve.</summary>
+        <value>The identifier of a named curve.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot set a value for the <xref:System.Security.Cryptography.ECCurve.Oid%2A> property directly. Instead, to create a named curve, use the <xref:System.Security.Cryptography.ECCurve.CreateFromFriendlyName%2A>, the <xref:System.Security.Cryptography.ECCurve.CreateFromOid%2A> , or the <xref:System.Security.Cryptography.ECCurve.CreateFromValue%2A> methods.  
+  
+ On some systems, the <xref:System.Security.Cryptography.Oid.Value%2A?displayProperty=fullName> property is the primary referenced identifier, while on others it's the <xref:System.Security.Cryptography.Oid.FriendlyName%2A?displayProperty=fullName> property.  Manually creating an <xref:System.Security.Cryptography.Oid> object with mismatched values may produce undesirable results.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Order">
@@ -430,8 +454,15 @@
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The order of the curve. Applies only to explicit curves.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Cryptography.ECCurve.Order> field represents the order of the group generated by G = (x,y).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Polynomial">
@@ -456,7 +487,7 @@
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The curve polynomial. Applies only to characteristic 2 curves.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -482,7 +513,7 @@
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The prime specifying the base field. Applies only to prime curves.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -508,7 +539,7 @@
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The seed value for coefficient generation under the ANSI X9.62 generation algorithm. Applies only to explicit curves.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -535,8 +566,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Validates the integrity of the current curve. Throws a <see cref="T:System.Security.Cryptography.CryptographicException" /> exception if the structure is not valid.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The curve parameters are not valid for the current curve type.</exception>
       </Docs>
     </Member>
   </Members>

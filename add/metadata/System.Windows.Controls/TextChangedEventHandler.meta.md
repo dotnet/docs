@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Controls.TextChangedEventHandler
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -1,14 +1,20 @@
 ---
 uid: System.Web.Compilation.BuildDependencySet
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Compilation.BuildDependencySet.VirtualPaths
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Compilation.BuildDependencySet.HashCode
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

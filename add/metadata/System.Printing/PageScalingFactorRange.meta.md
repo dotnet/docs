@@ -1,19 +1,25 @@
 ---
 uid: System.Printing.PageScalingFactorRange
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PageScalingFactorRange.MinimumScale
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Printing.PageScalingFactorRange.MaximumScale
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PageScalingFactorRange.ToString
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

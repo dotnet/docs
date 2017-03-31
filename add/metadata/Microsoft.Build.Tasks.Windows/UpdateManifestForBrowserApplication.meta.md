@@ -1,24 +1,34 @@
 ---
 uid: Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication.Execute
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication.ApplicationManifest
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication.HostInBrowser
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

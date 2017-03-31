@@ -1,19 +1,34 @@
 ---
 uid: System.Workflow.Activities.ConditionalEventArgs
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.ConditionalEventArgs.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.ConditionalEventArgs.Result
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.ConditionalEventArgs.#ctor(System.Boolean)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.ConditionalEventArgs.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

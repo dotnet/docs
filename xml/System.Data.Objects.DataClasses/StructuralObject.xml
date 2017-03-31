@@ -23,8 +23,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a class that contains the common methods need for a date object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No content here will be updated; please do not add material here.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,7 +45,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Objects.DataClasses.StructuralObject" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,10 +66,11 @@
         <Parameter Name="second" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="first">To be added.</param>
-        <param name="second">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="first">The first byte array value to compare.</param>
+        <param name="second">The second byte array to compare.</param>
+        <summary>Determines whether the specified byte arrays contain identical values.</summary>
+        <returns>
+          <see langword="true" /> if both arrays are of the same length and contain the same byte values or if both arrays are <see langword="null" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,8 +88,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the minimum date time value supported by the data source.</summary>
+        <returns>A <see cref="T:System.DateTime" /> value that is the minimum date time that is supported by the data source.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,7 +106,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This constant name is used for tracking.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,9 +126,9 @@
         <Parameter Name="currentValue" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="currentValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="currentValue">The current byte array value.</param>
+        <summary>Returns a copy of the current byte value.</summary>
+        <returns>A copy of the current <see cref="T:System.Byte" /> value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,13 +159,13 @@
         <Parameter Name="isInitialized" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="currentValue">To be added.</param>
-        <param name="property">To be added.</param>
-        <param name="isNullable">To be added.</param>
-        <param name="isInitialized">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of the complex object being requested.</typeparam>
+        <param name="currentValue">A complex object that inherits from complex object.</param>
+        <param name="property">The name of the complex property that is the complex object.</param>
+        <param name="isNullable">Indicates whether the type supports null values.</param>
+        <param name="isInitialized">Indicates whether the type is initialized.</param>
+        <summary>Returns a complex type for the specified property.</summary>
+        <returns>A complex type object for the property.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -177,8 +185,8 @@
         <Parameter Name="property" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="property">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="property">The name of the changed property.</param>
+        <summary>Raises the <see cref="E:System.Data.Objects.DataClasses.StructuralObject.PropertyChanged" /> event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,8 +206,8 @@
         <Parameter Name="property" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="property">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="property">The name of the property changing.</param>
+        <summary>Raises the <see cref="E:System.Data.Objects.DataClasses.StructuralObject.PropertyChanging" /> event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -216,7 +224,7 @@
         <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when a property value has changed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -233,7 +241,7 @@
         <ReturnType>System.ComponentModel.PropertyChangingEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when a property value change is a pending.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -253,8 +261,8 @@
         <Parameter Name="property" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="property">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="property">The name for the changed property.</param>
+        <summary>Raises an event that is used to report that a property change has occurred.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -274,8 +282,8 @@
         <Parameter Name="property" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="property">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="property">The name of the changing property.</param>
+        <summary>Raises an event that is used to report that a property change is pending.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -295,9 +303,9 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The Boolean value.</param>
+        <summary>Makes sure the <see cref="T:System.Boolean" /> value being set for a property is valid.</summary>
+        <returns>The <see cref="T:System.Boolean" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -317,9 +325,9 @@
         <Parameter Name="value" Type="System.Byte" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value that is being validated.</param>
+        <summary>Makes sure the <see cref="T:System.Byte" /> value being set for a property is valid.</summary>
+        <returns>The <see cref="T:System.Byte" /> value that is set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -339,9 +347,9 @@
         <Parameter Name="value" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.DateTime" /> value.</param>
+        <summary>Makes sure the <see cref="T:System.DateTime" /> value being set for a property is valid.</summary>
+        <returns>The <see cref="T:System.DateTime" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -361,9 +369,9 @@
         <Parameter Name="value" Type="System.DateTimeOffset" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.DateTimeOffset" /> value.</param>
+        <summary>Makes sure the <see cref="T:System.DateTimeOffset" /> value being set for a property is valid.</summary>
+        <returns>A <see cref="T:System.DateTimeOffset" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -383,9 +391,9 @@
         <Parameter Name="value" Type="System.Decimal" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.Decimal" /> value.</param>
+        <summary>Makes sure the <see cref="T:System.Decimal" /> value being set for a property is valid.</summary>
+        <returns>The <see cref="T:System.Decimal" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -405,9 +413,9 @@
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.Double" /> value.</param>
+        <summary>Makes sure the <see cref="T:System.Double" /> value being set for a property is valid.</summary>
+        <returns>The <see cref="T:System.Double" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -427,9 +435,9 @@
         <Parameter Name="value" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.Guid" /> value.</param>
+        <summary>Makes sure the <see cref="T:System.Guid" /> value being set for a property is valid.</summary>
+        <returns>The <see cref="T:System.Guid" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -449,9 +457,9 @@
         <Parameter Name="value" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.Int16" /> value.</param>
+        <summary>Makes sure the <see cref="T:System.Int16" /> value being set for a property is valid.</summary>
+        <returns>The <see cref="T:System.Int16" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -471,9 +479,9 @@
         <Parameter Name="value" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.Int32" /> value.</param>
+        <summary>Makes sure the <see cref="T:System.Int32" /> value being set for a property is valid.</summary>
+        <returns>The <see cref="T:System.Int32" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -493,9 +501,9 @@
         <Parameter Name="value" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.Int64" /> value.</param>
+        <summary>Makes sure the <see cref="T:System.Int64" /> value being set for a property is valid.</summary>
+        <returns>The <see cref="T:System.Int64" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -515,9 +523,9 @@
         <Parameter Name="value" Type="System.Nullable&lt;System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The nullable <see cref="T:System.Boolean" /> value.</param>
+        <summary>Makes sure the <see cref="T:System.Boolean" /> value being set for a property is valid.</summary>
+        <returns>The nullable <see cref="T:System.Boolean" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -537,9 +545,9 @@
         <Parameter Name="value" Type="System.Nullable&lt;System.Byte&gt;" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The nullable <see cref="T:System.Byte" /> value.</param>
+        <summary>Makes sure the <see cref="T:System.Byte" /> value being set for a property is valid.</summary>
+        <returns>The nullable <see cref="T:System.Byte" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -559,9 +567,9 @@
         <Parameter Name="value" Type="System.Nullable&lt;System.DateTime&gt;" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The nullable <see cref="T:System.DateTime" /> value.</param>
+        <summary>Makes sure the <see cref="T:System.DateTime" /> value being set for a property is valid.</summary>
+        <returns>The nullable <see cref="T:System.DateTime" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -581,9 +589,9 @@
         <Parameter Name="value" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The nullable <see cref="T:System.DateTimeOffset" /> value.</param>
+        <summary>Makes sure the <see cref="T:System.DateTimeOffset" /> value being set for a property is valid.</summary>
+        <returns>The nullable <see cref="T:System.DateTimeOffset" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -603,9 +611,9 @@
         <Parameter Name="value" Type="System.Nullable&lt;System.Decimal&gt;" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The nullable <see cref="T:System.Decimal" /> value.</param>
+        <summary>Makes sure the <see cref="T:System.Decimal" /> value being set for a property is valid.</summary>
+        <returns>The nullable <see cref="T:System.Decimal" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -625,9 +633,9 @@
         <Parameter Name="value" Type="System.Nullable&lt;System.Double&gt;" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The nullable <see cref="T:System.Double" /> value.</param>
+        <summary>Makes sure the <see cref="T:System.Double" /> value being set for a property is valid.</summary>
+        <returns>The nullable <see cref="T:System.Double" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -647,9 +655,9 @@
         <Parameter Name="value" Type="System.Nullable&lt;System.Guid&gt;" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The nullable <see cref="T:System.Guid" /> value.</param>
+        <summary>Makes sure the <see cref="T:System.Guid" /> value being set for a property is valid.</summary>
+        <returns>The nullable <see cref="T:System.Guid" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -669,9 +677,9 @@
         <Parameter Name="value" Type="System.Nullable&lt;System.Int16&gt;" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The nullable <see cref="T:System.Int16" /> value.</param>
+        <summary>Makes sure the <see cref="T:System.Int16" /> value being set for a property is valid.</summary>
+        <returns>The nullable <see cref="T:System.Int16" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -691,9 +699,9 @@
         <Parameter Name="value" Type="System.Nullable&lt;System.Int32&gt;" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The nullable <see cref="T:System.Int32" /> value.</param>
+        <summary>Makes sure the <see cref="T:System.Int32" /> value being set for a property is valid.</summary>
+        <returns>The nullable <see cref="T:System.Int32" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -713,9 +721,9 @@
         <Parameter Name="value" Type="System.Nullable&lt;System.Int64&gt;" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The nullable <see cref="T:System.Int64" /> value.</param>
+        <summary>Makes sure the <see cref="T:System.Int64" /> value being set for a property is valid.</summary>
+        <returns>The nullable <see cref="T:System.Int64" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -740,9 +748,9 @@
         <Parameter Name="value" Type="System.Nullable&lt;System.SByte&gt;" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The nullable <see cref="T:System.SByte" /> value.</param>
+        <summary>Makes sure the <see cref="T:System.SByte" /> value being set for a property is valid.</summary>
+        <returns>The nullable <see cref="T:System.SByte" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -762,9 +770,9 @@
         <Parameter Name="value" Type="System.Nullable&lt;System.Single&gt;" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The nullable <see cref="T:System.Single" /> value.</param>
+        <summary>Makes sure the <see cref="T:System.Single" /> value being set for a property is valid.</summary>
+        <returns>The nullable <see cref="T:System.Single" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -784,9 +792,9 @@
         <Parameter Name="value" Type="System.Nullable&lt;System.TimeSpan&gt;" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The nullable <see cref="T:System.TimeSpan" /> value.</param>
+        <summary>Makes sure the <see cref="T:System.TimeSpan" /> value being set for a property is valid.</summary>
+        <returns>The nullable <see cref="T:System.TimeSpan" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -811,9 +819,9 @@
         <Parameter Name="value" Type="System.Nullable&lt;System.UInt16&gt;" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The nullable UInt16 value.</param>
+        <summary>Makes sure the UInt16 value being set for a property is valid.</summary>
+        <returns>The nullable UInt16 value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -838,9 +846,9 @@
         <Parameter Name="value" Type="System.Nullable&lt;System.UInt32&gt;" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The nullable UInt32 value.</param>
+        <summary>Makes sure the UInt32 value being set for a property is valid.</summary>
+        <returns>The nullable UInt32 value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -865,9 +873,9 @@
         <Parameter Name="value" Type="System.Nullable&lt;System.UInt64&gt;" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The nullable UInt64 value.</param>
+        <summary>Makes sure the <see cref="T:System.UInt64" /> value being set for a property is valid.</summary>
+        <returns>The nullable UInt64 value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -892,9 +900,9 @@
         <Parameter Name="value" Type="System.SByte" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.SByte" /> value.</param>
+        <summary>Makes sure the <see cref="T:System.SByte" /> value being set for a property is valid.</summary>
+        <returns>The <see cref="T:System.SByte" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -914,9 +922,9 @@
         <Parameter Name="value" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.Single" /> value.</param>
+        <summary>Makes sure the Single value being set for a property is valid.</summary>
+        <returns>The <see cref="T:System.Single" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -936,9 +944,9 @@
         <Parameter Name="value" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.TimeSpan" /> value.</param>
+        <summary>Makes sure the <see cref="T:System.TimeSpan" /> value being set for a property is valid.</summary>
+        <returns>The <see cref="T:System.TimeSpan" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -963,9 +971,9 @@
         <Parameter Name="value" Type="System.UInt16" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.UInt16" /> value.</param>
+        <summary>Makes sure the <see cref="T:System.UInt16" /> value being set for a property is valid.</summary>
+        <returns>The <see cref="T:System.UInt16" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -990,9 +998,9 @@
         <Parameter Name="value" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.UInt32" /> value.</param>
+        <summary>Makes sure the <see cref="T:System.UInt32" /> value being set for a property is valid.</summary>
+        <returns>The <see cref="T:System.UInt32" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1017,9 +1025,9 @@
         <Parameter Name="value" Type="System.UInt64" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.UInt64" /> value.</param>
+        <summary>Makes sure the <see cref="T:System.UInt64" /> value being set for a property is valid.</summary>
+        <returns>The <see cref="T:System.UInt64" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1040,10 +1048,10 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The Boolean value.</param>
+        <param name="propertyName">The name of the property that is being validated.</param>
+        <summary>Makes sure the <see cref="T:System.Boolean" /> value being set for a property is valid.</summary>
+        <returns>The <see cref="T:System.Boolean" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1064,10 +1072,10 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.Byte" /> value.</param>
+        <param name="propertyName">The name of the property that is being validated.</param>
+        <summary>Makes sure the <see cref="T:System.Byte" /> value being set for a property is valid.</summary>
+        <returns>A <see cref="T:System.Byte" /> that is set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1088,10 +1096,10 @@
         <Parameter Name="isNullable" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="isNullable">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value being set.</param>
+        <param name="isNullable">Indicates whether the property is nullable.</param>
+        <summary>Makes sure the <see cref="T:System.Byte[]" /> value being set for a property is valid.</summary>
+        <returns>A <see cref="T:System.Byte" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1112,11 +1120,13 @@
         <Parameter Name="isNullable" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="isNullable">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">
+          <see cref="T:System.Data.Spatial.DbGeography" /> value to be checked.</param>
+        <param name="isNullable">Flag indicating if this property is allowed to be null.</param>
+        <summary>Validates that the property is not null, and throws if it is.</summary>
+        <returns>The <see cref="T:System.Data.Spatial.DbGeography" /> value being set.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Data.ConstraintException">The value is null for a non-nullable property.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
@@ -1136,11 +1146,12 @@
         <Parameter Name="isNullable" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="isNullable">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.Data.Spatial.DbGeometry" /> value to be checked.</param>
+        <param name="isNullable">Flag indicating if this property is allowed to be null.</param>
+        <summary>Validates that the property is not null, and throws if it is.</summary>
+        <returns>The <see cref="T:System.Data.Spatial.DbGeometry" /> value being set.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Data.ConstraintException">The value is null for a non-nullable property.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
@@ -1160,10 +1171,10 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.DateTime" /> value.</param>
+        <param name="propertyName">The name of the property that is being validated.</param>
+        <summary>Makes sure the <see cref="T:System.DateTime" /> value being set for a property is valid.</summary>
+        <returns>The <see cref="T:System.DateTime" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1184,10 +1195,10 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.DateTimeOffset" /> value.</param>
+        <param name="propertyName">The name of the property that is being validated.</param>
+        <summary>Makes sure the <see cref="T:System.DateTimeOffset" /> value being set for a property is valid.</summary>
+        <returns>The <see cref="T:System.DateTimeOffset" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1208,10 +1219,10 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.Decimal" /> value.</param>
+        <param name="propertyName">The name of the property that is being validated.</param>
+        <summary>Makes sure the <see cref="T:System.Decimal" /> value being set for a property is valid.</summary>
+        <returns>The <see cref="T:System.Decimal" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1232,10 +1243,10 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.Double" /> value.</param>
+        <param name="propertyName">The name of the property that is being validated.</param>
+        <summary>Makes sure the <see cref="T:System.Double" /> value being set for a property is valid.</summary>
+        <returns>The <see cref="T:System.Double" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1256,10 +1267,10 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.Guid" /> value.</param>
+        <param name="propertyName">Name of the property that is being validated.</param>
+        <summary>Makes sure the <see cref="T:System.Guid" /> value being set for a property is valid.</summary>
+        <returns>The <see cref="T:System.Guid" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1280,10 +1291,10 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.Int16" /> value.</param>
+        <param name="propertyName">The name of the property that is being validated.</param>
+        <summary>Makes sure the <see cref="T:System.Int16" /> value being set for a property is valid.</summary>
+        <returns>The <see cref="T:System.Int16" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1304,10 +1315,10 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.Int32" /> value.</param>
+        <param name="propertyName">The name of the property that is being validated.</param>
+        <summary>Makes sure the <see cref="T:System.Int32" /> value being set for a property is valid.</summary>
+        <returns>The <see cref="T:System.Int32" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1328,10 +1339,10 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.Int64" /> value.</param>
+        <param name="propertyName">The name of the property that is being validated.</param>
+        <summary>Makes sure the <see cref="T:System.Int64" /> value being set for a property is valid.</summary>
+        <returns>The <see cref="T:System.Int64" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1352,10 +1363,10 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The nullable <see cref="T:System.Boolean" /> value.</param>
+        <param name="propertyName">The name of the property that is being validated.</param>
+        <summary>Makes sure the <see cref="T:System.Boolean" /> value being set for a property is valid.</summary>
+        <returns>The nullable <see cref="T:System.Boolean" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1376,10 +1387,10 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The nullable <see cref="T:System.Byte" /> value.</param>
+        <param name="propertyName">The name of the property that is being validated.</param>
+        <summary>Makes sure the <see cref="T:System.Byte" /> value being set for a property is valid.</summary>
+        <returns>The nullable <see cref="T:System.Byte" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1400,10 +1411,10 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The nullable <see cref="T:System.DateTime" /> value.</param>
+        <param name="propertyName">The name of the property that is being validated.</param>
+        <summary>Makes sure the <see cref="T:System.DateTime" /> value being set for a property is valid.</summary>
+        <returns>The nullable <see cref="T:System.DateTime" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1424,10 +1435,10 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.DateTimeOffset" /> value.</param>
+        <param name="propertyName">The name of the property that is being validated.</param>
+        <summary>Makes sure the <see cref="T:System.DateTimeOffset" /> value being set for a property is valid.</summary>
+        <returns>The <see cref="T:System.DateTimeOffset" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1448,10 +1459,10 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The nullable <see cref="T:System.Decimal" /> value.</param>
+        <param name="propertyName">The name of the property that is being validated.</param>
+        <summary>Makes sure the <see cref="T:System.Decimal" /> value being set for a property is valid.</summary>
+        <returns>The nullable <see cref="T:System.Decimal" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1472,10 +1483,10 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The nullable <see cref="T:System.Double" /> value.</param>
+        <param name="propertyName">The name of the property that is being validated.</param>
+        <summary>Makes sure the <see cref="T:System.Double" /> value being set for a property is valid.</summary>
+        <returns>The nullable <see cref="T:System.Double" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1496,10 +1507,10 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The nullable <see cref="T:System.Guid" /> value.</param>
+        <param name="propertyName">The name of the property that is being validated.</param>
+        <summary>Makes sure the <see cref="T:System.Guid" /> value being set for a property is valid.</summary>
+        <returns>The nullable <see cref="T:System.Guid" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1520,10 +1531,10 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The nullable <see cref="T:System.Int16" /> value.</param>
+        <param name="propertyName">The name of the property that is being validated.</param>
+        <summary>Makes sure the <see cref="T:System.Int16" /> value being set for a property is valid.</summary>
+        <returns>The nullable <see cref="T:System.Int16" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1544,10 +1555,10 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The nullable <see cref="T:System.Int32" /> value.</param>
+        <param name="propertyName">The name of the property that is being validated.</param>
+        <summary>Makes sure the <see cref="T:System.Int32" /> value being set for a property is valid.</summary>
+        <returns>The nullable <see cref="T:System.Int32" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1568,10 +1579,10 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The nullable <see cref="T:System.Int64" /> value.</param>
+        <param name="propertyName">The name of the property that is being validated.</param>
+        <summary>Makes sure the <see cref="T:System.Int64" /> value being set for a property is valid.</summary>
+        <returns>The nullable <see cref="T:System.Int64" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1597,10 +1608,10 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The nullable <see cref="T:System.SByte" /> value.</param>
+        <param name="propertyName">The name of the property that is being validated.</param>
+        <summary>Makes sure the <see cref="T:System.SByte" /> value being set for a property is valid.</summary>
+        <returns>The nullable <see cref="T:System.SByte" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1621,10 +1632,10 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The nullable <see cref="T:System.Single" /> value.</param>
+        <param name="propertyName">The name of the property that is being validated.</param>
+        <summary>Makes sure the <see cref="T:System.Single" /> value being set for a property is valid.</summary>
+        <returns>The nullable <see cref="T:System.Single" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1645,10 +1656,10 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The nullable <see cref="T:System.TimeSpan" /> value.</param>
+        <param name="propertyName">The name of the property that is being validated.</param>
+        <summary>Makes sure the <see cref="T:System.TimeSpan" /> value being set for a property is valid.</summary>
+        <returns>The nullable <see cref="T:System.TimeSpan" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1674,10 +1685,10 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The nullable UInt16 value.</param>
+        <param name="propertyName">The name of the property that is being validated.</param>
+        <summary>Makes sure the UInt16 value being set for a property is valid.</summary>
+        <returns>The nullable UInt16 value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1703,10 +1714,10 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The nullable UInt32 value.</param>
+        <param name="propertyName">The name of the property that is being validated.</param>
+        <summary>Makes sure the UInt32 value being set for a property is valid.</summary>
+        <returns>The nullable UInt32 value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1732,10 +1743,10 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The nullable UInt64 value.</param>
+        <param name="propertyName">The name of the property that is being validated.</param>
+        <summary>Makes sure the <see cref="T:System.UInt64" /> value being set for a property is valid.</summary>
+        <returns>The nullable UInt64 value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1761,10 +1772,10 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.SByte" /> value.</param>
+        <param name="propertyName">The name of the property that is being validated.</param>
+        <summary>Makes sure the <see cref="T:System.SByte" /> value being set for a property is valid.</summary>
+        <returns>The <see cref="T:System.SByte" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1785,10 +1796,10 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.Single" /> value.</param>
+        <param name="propertyName">The name of the property that is being validated.</param>
+        <summary>Makes sure the Single value being set for a property is valid.</summary>
+        <returns>The <see cref="T:System.Single" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1809,10 +1820,10 @@
         <Parameter Name="isNullable" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="isNullable">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The string value to be checked.</param>
+        <param name="isNullable">Flag indicating if this property is allowed to be null.</param>
+        <summary>Validates that the property is not null, and throws if it is.</summary>
+        <returns>The validated <see cref="T:System.String" /> value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1833,10 +1844,10 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.TimeSpan" /> value.</param>
+        <param name="propertyName">The name of the property that is being validated.</param>
+        <summary>Makes sure the <see cref="T:System.TimeSpan" /> value being set for a property is valid.</summary>
+        <returns>The <see cref="T:System.TimeSpan" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1862,10 +1873,10 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.UInt16" /> value.</param>
+        <param name="propertyName">The name of the property that is being validated.</param>
+        <summary>Makes sure the <see cref="T:System.UInt16" /> value being set for a property is valid.</summary>
+        <returns>The <see cref="T:System.UInt16" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1891,10 +1902,10 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.UInt32" /> value.</param>
+        <param name="propertyName">The name of the property that is being validated.</param>
+        <summary>Makes sure the <see cref="T:System.UInt32" /> value being set for a property is valid.</summary>
+        <returns>The <see cref="T:System.UInt32" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1920,10 +1931,10 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.UInt64" /> value.</param>
+        <param name="propertyName">The name of the property that is being validated.</param>
+        <summary>Makes sure the <see cref="T:System.UInt64" /> value being set for a property is valid.</summary>
+        <returns>The <see cref="T:System.UInt64" /> value being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1945,12 +1956,13 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="isNullable">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value passed into the property setter.</param>
+        <param name="isNullable">Flag indicating if this property is allowed to be null.</param>
+        <param name="propertyName">The name of the property that is being validated.</param>
+        <summary>Makes sure the <see cref="T:System.Byte[]" /> value being set for a property is valid.</summary>
+        <returns>The <see cref="T:System.Byte" /> value being validated.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Data.ConstraintException">If value is null for a non nullable value.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
@@ -1971,12 +1983,13 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="isNullable">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.Data.Spatial.DbGeography" /> value to be checked.</param>
+        <param name="isNullable">Flag indicating if this property is allowed to be null.</param>
+        <param name="propertyName">Name of the property that is being validated.</param>
+        <summary>Validates that the property is not null, and throws if it is.</summary>
+        <returns>The <see cref="T:System.Data.Spatial.DbGeography" /> value being set.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Data.ConstraintException">The value is null for a non-nullable property.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
@@ -1997,12 +2010,14 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="isNullable">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">
+          <see cref="T:System.Data.Spatial.DbGeometry" /> value to be checked.</param>
+        <param name="isNullable">Flag indicating if this property is allowed to be null.</param>
+        <param name="propertyName">The name of the property that is being validated.</param>
+        <summary>Validates that the property is not null, and throws if it is.</summary>
+        <returns>The <see cref="T:System.Data.Spatial.DbGeometry" /> value being set.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Data.ConstraintException">The value is null for a non-nullable property.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetValidValue">
@@ -2023,12 +2038,13 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="isNullable">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The string value to be checked.</param>
+        <param name="isNullable">Flag indicating if this property is allowed to be null.</param>
+        <param name="propertyName">The name of the property that is being validated.</param>
+        <summary>Validates that the property is not null, and throws if it is.</summary>
+        <returns>The validated property.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Data.ConstraintException">The string value is null for a non-nullable string.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetValidValue&lt;T&gt;">
@@ -2056,12 +2072,12 @@
         <Parameter Name="property" Type="System.String" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="oldValue">To be added.</param>
-        <param name="newValue">To be added.</param>
-        <param name="property">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of the object being replaced.</typeparam>
+        <param name="oldValue">The original complex object for the property, if any.</param>
+        <param name="newValue">The complex object is being set.</param>
+        <param name="property">The complex property that is being set to the complex object.</param>
+        <summary>Sets a complex object for the specified property.</summary>
+        <returns>A complex type that derives from complex object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2089,11 +2105,11 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <typeparam name="TComplex">To be added.</typeparam>
-        <param name="complexObject">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TComplex">The type of the complex object being verified.</typeparam>
+        <param name="complexObject">The complex object that is being validated.</param>
+        <param name="propertyName">The complex property on the parent object that is associated with <c>complexObject</c>.</param>
+        <summary>Verifies that a complex object is not <see langword="null" />.</summary>
+        <returns>The complex object being validated.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

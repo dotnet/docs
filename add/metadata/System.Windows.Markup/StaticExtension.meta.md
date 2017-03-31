@@ -1,24 +1,34 @@
 ---
 uid: System.Windows.Markup.StaticExtension
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.StaticExtension.Member
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.StaticExtension.#ctor
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.StaticExtension.ProvideValue(System.IServiceProvider)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.StaticExtension.#ctor(System.String)
-internalonly: False
+manager: "martinek"
+---
+
+---
+uid: System.Windows.Markup.StaticExtension.#ctor
+manager: "martinek"
+---
+
+---
+uid: System.Windows.Markup.StaticExtension.MemberType
+manager: "martinek"
 ---

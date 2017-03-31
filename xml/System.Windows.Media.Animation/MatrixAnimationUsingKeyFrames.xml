@@ -23,8 +23,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Animates the value of a <see cref="T:System.Windows.Media.Matrix" /> property along a set of <see cref="P:System.Windows.Media.Animation.MatrixAnimationUsingKeyFrames.KeyFrames" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A key frame animation's target values are defined by its <xref:System.Windows.Media.Animation.MatrixAnimationUsingKeyFrames.KeyFrames%2A> property, which contains a collection of <xref:System.Windows.Media.Animation.MatrixKeyFrame> objects. Each <xref:System.Windows.Media.Animation.MatrixKeyFrame> defines a segment of the animation with its own target <xref:System.Windows.Media.Animation.MatrixKeyFrame.Value%2A> and <xref:System.Windows.Media.Animation.MatrixKeyFrame.KeyTime%2A>. When the animation runs, it progresses from one key value to the next at the specified key times.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,7 +45,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.MatrixAnimationUsingKeyFrames" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,9 +70,17 @@
         <Parameter Name="child" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="child">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="child">The object to be added as the child of this <see cref="T:System.Windows.Media.Animation.MatrixAnimationUsingKeyFrames" />.</param>
+        <summary>Adds a child <see cref="T:System.Windows.Media.Animation.MatrixKeyFrame" /> to this <see cref="T:System.Windows.Media.Animation.MatrixAnimationUsingKeyFrames" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method allows <xref:System.Windows.Media.Animation.MatrixKeyFrame> objects to be direct children of a <xref:System.Windows.Media.Animation.MatrixAnimationUsingKeyFrames> object in markup.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The parameter <paramref name="child" /> is not a <see cref="T:System.Windows.Media.Animation.MatrixKeyFrame" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddText">
@@ -89,9 +104,17 @@
         <Parameter Name="childText" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="childText">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="childText">The text added to the <see cref="T:System.Windows.Media.Animation.MatrixAnimationUsingKeyFrames" />.</param>
+        <summary>Adds a text string as a child of this <see cref="T:System.Windows.Media.Animation.MatrixAnimationUsingKeyFrames" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Media.Animation.MatrixAnimationUsingKeyFrames> does not accept text as a child, so this method will raise an `InvalididOperationException` unless a derived class has overridden this behavior which allows text to be added.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">A <see cref="T:System.Windows.Media.Animation.MatrixAnimationUsingKeyFrames" /> does not accept text as a child, so this method will raise this exception unless a derived class has overridden this behavior which allows text to be added.</exception>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -108,9 +131,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.Animation.MatrixAnimationUsingKeyFrames" />, making deep copies of this object's values. When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CloneCore">
@@ -129,9 +161,18 @@
         <Parameter Name="sourceFreezable" Type="System.Windows.Freezable" />
       </Parameters>
       <Docs>
-        <param name="sourceFreezable">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="sourceFreezable">The <see cref="T:System.Windows.Media.Animation.MatrixAnimationUsingKeyFrames" /> to clone.</param>
+        <summary>Makes this instance a deep copy of the specified <see cref="T:System.Windows.Media.Animation.MatrixAnimationUsingKeyFrames" />. When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the <xref:System.Windows.Freezable.Clone%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a modifiable copy of the current object, call <xref:System.Windows.Freezable.Clone%2A> instead of calling this method directly.  
+  
+ For more information, see <xref:System.Windows.Freezable.CloneCore%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CloneCurrentValue">
@@ -148,9 +189,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.Animation.MatrixAnimationUsingKeyFrames" /> object, making deep copies of this object's current values. Resource references, data bindings, and animations are not copied, but their current values are.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CloneCurrentValueCore">
@@ -169,9 +219,18 @@
         <Parameter Name="sourceFreezable" Type="System.Windows.Freezable" />
       </Parameters>
       <Docs>
-        <param name="sourceFreezable">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="sourceFreezable">The <see cref="T:System.Windows.Media.Animation.MatrixAnimationUsingKeyFrames" /> to clone.</param>
+        <summary>Makes this instance a modifiable deep copy of the specified <see cref="T:System.Windows.Media.Animation.MatrixAnimationUsingKeyFrames" /> using current property values. Resource references, data bindings, and animations are not copied, but their current values are.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the <xref:System.Windows.Freezable.CloneCurrentValue%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a modifiable copy of the current object, call <xref:System.Windows.Freezable.CloneCurrentValue%2A> instead of calling this method directly.  
+  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValueCore%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceCore">
@@ -188,8 +247,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a new instance of <see cref="T:System.Windows.Media.Animation.MatrixAnimationUsingKeyFrames" />.</summary>
+        <returns>A new instance of <see cref="T:System.Windows.Media.Animation.MatrixAnimationUsingKeyFrames" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -209,9 +268,10 @@
         <Parameter Name="isChecking" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="isChecking">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="isChecking">
+          <see langword="true" /> if this method should simply determine whether this instance can be frozen. <see langword="false" /> if this instance should actually freeze itself when this method is called.</param>
+        <summary>Makes this instance of <see cref="T:System.Windows.Media.Animation.MatrixAnimationUsingKeyFrames" /> object unmodifiable or determines whether it can be made unmodifiable.</summary>
+        <returns>If <paramref name="isChecking" /> is true, this method returns <see langword="true" /> if this instance can be made read-only, or <see langword="false" /> if it cannot be made read-only. If <paramref name="isChecking" /> is false, this method returns <see langword="true" /> if this instance is now read-only, or <see langword="false" /> if it cannot be made read-only, with the side effect of having begun to change the frozen status of this object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -231,9 +291,20 @@
         <Parameter Name="source" Type="System.Windows.Freezable" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="source">The <see cref="T:System.Windows.Media.Animation.MatrixAnimationUsingKeyFrames" /> object to clone.</param>
+        <summary>Makes this instance a clone of the specified <see cref="T:System.Windows.Media.Animation.MatrixAnimationUsingKeyFrames" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values. Note that if these properties contain resource references or data bindings, <xref:System.Windows.Freezable.GetAsFrozen%2A> will fail when trying to freeze the object and will throw an <xref:System.InvalidOperationException>.  
+  
+ This method is called by the <xref:System.Windows.Freezable.GetAsFrozen%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a frozen copy of the current object, call <xref:System.Windows.Freezable.GetAsFrozen%2A> instead of calling this method directly.  
+  
+ For more information, see <xref:System.Windows.Freezable.GetAsFrozenCore%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCurrentValueAsFrozenCore">
@@ -252,9 +323,18 @@
         <Parameter Name="source" Type="System.Windows.Freezable" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="source">The <see cref="T:System.Windows.Media.Animation.MatrixAnimationUsingKeyFrames" /> to copy and freeze.</param>
+        <summary>Makes this instance a frozen clone of the specified <see cref="T:System.Windows.Media.Animation.MatrixAnimationUsingKeyFrames" />. Resource references, data bindings, and animations are not copied, but their current values are.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a frozen copy of the current object, call <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> instead of calling this method directly.  
+  
+ For more information see <xref:System.Windows.Freezable.GetCurrentValueAsFrozenCore%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCurrentValueCore">
@@ -275,12 +355,21 @@
         <Parameter Name="animationClock" Type="System.Windows.Media.Animation.AnimationClock" />
       </Parameters>
       <Docs>
-        <param name="defaultOriginValue">To be added.</param>
-        <param name="defaultDestinationValue">To be added.</param>
-        <param name="animationClock">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="defaultOriginValue">The suggested origin value, used if the animation does not have its own explicitly set start value.</param>
+        <param name="defaultDestinationValue">The suggested destination value, used if the animation does not have its own explicitly set end value.</param>
+        <param name="animationClock">An <see cref="T:System.Windows.Media.Animation.AnimationClock" /> that generates the <see cref="P:System.Windows.Media.Animation.Clock.CurrentTime" /> or <see cref="P:System.Windows.Media.Animation.Clock.CurrentProgress" /> used by the host animation.</param>
+        <summary>Calculates the current output value of this <see cref="T:System.Windows.Media.Animation.MatrixAnimationUsingKeyFrames" />.</summary>
+        <returns>The calculated value of the property, as determined by the current instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the `defaultOriginValue` is the first in the composition chain, this value will be the snapshot value (if one is available) or the base property value; otherwise this value will be the value returned by the previous animation in the chain with an <xref:System.Windows.Media.Animation.AnimationClock> that is not <xref:System.Windows.Media.Animation.Clock.Stopped%2A>.  
+  
+ The `defaultDestinationValue` is the base value if the animation is in the first composition layer of animations on a property; otherwise the value is the output value from the previous composition layer of animations for the property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetNaturalDurationCore">
@@ -299,9 +388,9 @@
         <Parameter Name="clock" Type="System.Windows.Media.Animation.Clock" />
       </Parameters>
       <Docs>
-        <param name="clock">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="clock">The <see cref="T:System.Windows.Media.Animation.Clock" /> whose natural duration is desired.</param>
+        <summary>Provide a custom natural <see cref="T:System.Windows.Duration" /> when the <see cref="T:System.Windows.Duration" /> property is set to <see cref="P:System.Windows.Duration.Automatic" />.</summary>
+        <returns>If the last key frame of this animation is a <see cref="T:System.Windows.Media.Animation.KeyTime" />, then this value is used as the <see cref="P:System.Windows.Media.Animation.Clock.NaturalDuration" />; otherwise it will be one second.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -318,8 +407,8 @@
         <ReturnType>System.Windows.Media.Animation.MatrixKeyFrameCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the collection of <see cref="T:System.Windows.Media.Animation.MatrixKeyFrame" /> objects that define the animation.</summary>
+        <value>The collection of <see cref="T:System.Windows.Media.Animation.MatrixKeyFrame" /> objects that define the animation. The default value is <see cref="P:System.Windows.Media.Animation.MatrixKeyFrameCollection.Empty" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -337,7 +426,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Called when the current <see cref="T:System.Windows.Media.Animation.MatrixAnimationUsingKeyFrames" /> object is modified.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -360,8 +449,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns true if the value of the <see cref="P:System.Windows.Media.Animation.MatrixAnimationUsingKeyFrames.KeyFrames" /> property of this instance of <see cref="T:System.Windows.Media.Animation.MatrixAnimationUsingKeyFrames" /> should be value-serialized.</summary>
+        <returns>
+          <see langword="true" /> if the property value should be serialized; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -381,8 +471,8 @@
         <Parameter Name="child" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="child">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="child">The child object to add.</param>
+        <summary>Adds a child object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -402,8 +492,8 @@
         <Parameter Name="childText" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="childText">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="childText">The text to add to the object.</param>
+        <summary>Adds the text content of a node to the object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -420,8 +510,8 @@
         <ReturnType>System.Collections.IList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets an ordered collection <see cref="P:System.Windows.Media.Animation.IKeyFrameAnimation.KeyFrames" /> associated with this animation sequence.</summary>
+        <value>An <see cref="T:System.Collections.IList" /> of <see cref="P:System.Windows.Media.Animation.IKeyFrameAnimation.KeyFrames" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,29 +1,35 @@
 ---
 uid: System.Configuration.IntegerValidatorAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.IntegerValidatorAttribute.MinValue
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.IntegerValidatorAttribute.ValidatorInstance
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.IntegerValidatorAttribute.MaxValue
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.IntegerValidatorAttribute.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.IntegerValidatorAttribute.ExcludeRange
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

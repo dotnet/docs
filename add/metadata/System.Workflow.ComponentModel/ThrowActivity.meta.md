@@ -1,54 +1,83 @@
 ---
 uid: System.Workflow.ComponentModel.ThrowActivity
-internalonly: False
----
-
----
-uid: System.Workflow.ComponentModel.ThrowActivity.Fault
-internalonly: False
----
-
----
-uid: System.Workflow.ComponentModel.ThrowActivity.System#Workflow#ComponentModel#Design#ITypeFilterProvider#CanFilterType(System.Type,System.Boolean)
-internalonly: False
----
-
----
-uid: System.Workflow.ComponentModel.ThrowActivity.System#Workflow#ComponentModel#IDynamicPropertyTypeProvider#GetPropertyType(System.IServiceProvider,System.String)
-internalonly: False
----
-
----
-uid: System.Workflow.ComponentModel.ThrowActivity.System#Workflow#ComponentModel#IDynamicPropertyTypeProvider#GetAccessType(System.IServiceProvider,System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.ThrowActivity.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.ComponentModel.ThrowActivity.Fault
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.ComponentModel.ThrowActivity.System#Workflow#ComponentModel#Design#ITypeFilterProvider#CanFilterType(System.Type,System.Boolean)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.ComponentModel.ThrowActivity.System#Workflow#ComponentModel#IDynamicPropertyTypeProvider#GetPropertyType(System.IServiceProvider,System.String)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.ComponentModel.ThrowActivity.System#Workflow#ComponentModel#IDynamicPropertyTypeProvider#GetAccessType(System.IServiceProvider,System.String)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.ComponentModel.ThrowActivity.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.ThrowActivity.#ctor(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.ThrowActivity.FaultType
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.ThrowActivity.FaultTypeProperty
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.ThrowActivity.System#Workflow#ComponentModel#Design#ITypeFilterProvider#FilterDescription
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.ThrowActivity.FaultProperty
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

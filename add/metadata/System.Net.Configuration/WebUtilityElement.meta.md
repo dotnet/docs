@@ -1,19 +1,23 @@
 ---
 uid: System.Net.Configuration.WebUtilityElement
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.WebUtilityElement.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.WebUtilityElement.UnicodeDecodingConformance
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.WebUtilityElement.UnicodeEncodingConformance
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

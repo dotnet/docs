@@ -17,9 +17,10 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="msg">To be added.</param>
-    <param name="handled">To be added.</param>
-    <summary>To be added.</summary>
+    <param name="msg">A structure with the message data.</param>
+    <param name="handled">
+      <see langword="true" /> if the message was handled; otherwise, <see langword="false" />.</param>
+    <summary>Represents the method that handles the <see cref="E:System.Windows.Interop.ComponentDispatcher.ThreadFilterMessage" /> and <see cref="E:System.Windows.Interop.ComponentDispatcher.ThreadPreprocessMessage" /> events.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

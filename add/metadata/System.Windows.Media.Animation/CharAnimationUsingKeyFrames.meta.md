@@ -1,99 +1,133 @@
 ---
 uid: System.Windows.Media.Animation.CharAnimationUsingKeyFrames
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.CharAnimationUsingKeyFrames.Clone
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Animation.CharAnimationUsingKeyFrames.System#Windows#Markup#IAddChild#AddChild(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.CharAnimationUsingKeyFrames.FreezeCore(System.Boolean)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Animation.CharAnimationUsingKeyFrames.GetCurrentValueCore(System.Char,System.Char,System.Windows.Media.Animation.AnimationClock)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.CharAnimationUsingKeyFrames.CreateInstanceCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.CharAnimationUsingKeyFrames.CloneCurrentValueCore(System.Windows.Freezable)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Animation.CharAnimationUsingKeyFrames.GetNaturalDurationCore(System.Windows.Media.Animation.Clock)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.CharAnimationUsingKeyFrames.System#Windows#Media#Animation#IKeyFrameAnimation#KeyFrames
-internalonly: False
+ms.author: "jimwalk"
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Media.Animation.CharAnimationUsingKeyFrames.CloneCurrentValue
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.CharAnimationUsingKeyFrames.AddChild(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.CharAnimationUsingKeyFrames.AddText(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.CharAnimationUsingKeyFrames.CloneCore(System.Windows.Freezable)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.CharAnimationUsingKeyFrames.OnChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.CharAnimationUsingKeyFrames.System#Windows#Markup#IAddChild#AddText(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.CharAnimationUsingKeyFrames.ShouldSerializeKeyFrames
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.CharAnimationUsingKeyFrames.GetCurrentValueAsFrozenCore(System.Windows.Freezable)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Animation.CharAnimationUsingKeyFrames.#ctor
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Animation.CharAnimationUsingKeyFrames.KeyFrames
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.CharAnimationUsingKeyFrames.GetAsFrozenCore(System.Windows.Freezable)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

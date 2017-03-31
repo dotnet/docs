@@ -1,24 +1,33 @@
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.Tab.TabItemRightEdge
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.Tab.TabItemRightEdge.Normal
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.Tab.TabItemRightEdge.Pressed
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.Tab.TabItemRightEdge.Disabled
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.Tab.TabItemRightEdge.Hot
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

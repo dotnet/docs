@@ -1,14 +1,20 @@
 ---
 uid: System.ComponentModel.Design.Serialization.IDesignerLoaderHost
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.Serialization.IDesignerLoaderHost.EndLoad(System.String,System.Boolean,System.Collections.ICollection)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.Serialization.IDesignerLoaderHost.Reload
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -1,124 +1,197 @@
 ---
 uid: System.Transactions.Transaction
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.Transaction.Current
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.Transaction.TransactionCompleted
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.Transaction.Equals(System.Object)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.Transaction.PromoterType
-internalonly: False
+ms.author: "sdanie"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.Transaction.EnlistPromotableSinglePhase(System.Transactions.IPromotableSinglePhaseNotification,System.Guid)
-internalonly: False
+ms.author: "sdanie"
+manager: "ghogen"
+---
+
+---
+uid: System.Transactions.Transaction.EnlistVolatile
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.Transaction.EnlistDurable(System.Guid,System.Transactions.ISinglePhaseNotification,System.Transactions.EnlistmentOptions)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.Transaction.IsolationLevel
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.Transaction.EnlistPromotableSinglePhase(System.Transactions.IPromotableSinglePhaseNotification)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.Transaction.Clone
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.Transaction.DependentClone(System.Transactions.DependentCloneOption)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.Transaction.GetHashCode
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "ghogen"
+---
+
+---
+uid: System.Transactions.Transaction.EnlistDurable
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.Transaction.EnlistDurable(System.Guid,System.Transactions.IEnlistmentNotification,System.Transactions.EnlistmentOptions)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.Transaction.op_Equality(System.Transactions.Transaction,System.Transactions.Transaction)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.Transaction.Dispose
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.Transaction.EnlistVolatile(System.Transactions.ISinglePhaseNotification,System.Transactions.EnlistmentOptions)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.Transaction.Rollback(System.Exception)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "ghogen"
+---
+
+---
+uid: System.Transactions.Transaction.EnlistPromotableSinglePhase
+ms.author: "sdanie"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.Transaction.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
----
-
----
-uid: System.Transactions.Transaction.TransactionInformation
-internalonly: False
----
-
----
-uid: System.Transactions.Transaction.PromoteAndEnlistDurable(System.Guid,System.Transactions.IPromotableSinglePhaseNotification,System.Transactions.ISinglePhaseNotification,System.Transactions.EnlistmentOptions)
-internalonly: False
----
-
----
-uid: System.Transactions.Transaction.EnlistVolatile(System.Transactions.IEnlistmentNotification,System.Transactions.EnlistmentOptions)
-internalonly: False
----
-
----
-uid: System.Transactions.Transaction.SetDistributedTransactionIdentifier(System.Transactions.IPromotableSinglePhaseNotification,System.Guid)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.Transaction.Rollback
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "ghogen"
+---
+
+---
+uid: System.Transactions.Transaction.TransactionInformation
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "ghogen"
+---
+
+---
+uid: System.Transactions.Transaction.PromoteAndEnlistDurable(System.Guid,System.Transactions.IPromotableSinglePhaseNotification,System.Transactions.ISinglePhaseNotification,System.Transactions.EnlistmentOptions)
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "ghogen"
+---
+
+---
+uid: System.Transactions.Transaction.EnlistVolatile(System.Transactions.IEnlistmentNotification,System.Transactions.EnlistmentOptions)
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "ghogen"
+---
+
+---
+uid: System.Transactions.Transaction.SetDistributedTransactionIdentifier(System.Transactions.IPromotableSinglePhaseNotification,System.Guid)
+ms.author: "sdanie"
+manager: "ghogen"
+---
+
+---
+uid: System.Transactions.Transaction.Rollback
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.Transaction.GetPromotedToken
-internalonly: False
+ms.author: "sdanie"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.Transaction.op_Inequality(System.Transactions.Transaction,System.Transactions.Transaction)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "ghogen"
 ---

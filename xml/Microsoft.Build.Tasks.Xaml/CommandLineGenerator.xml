@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Class for generating command lines.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,9 +29,9 @@
         <Parameter Name="parameterValues" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Object&gt;" />
       </Parameters>
       <Docs>
-        <param name="rule">To be added.</param>
-        <param name="parameterValues">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="rule">The rule</param>
+        <param name="parameterValues">The parameter values.</param>
+        <summary>Initializes a new instance of the <see cref="Microsoft.Build.Tasks.Xaml.CommandLineGenerator" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,7 +48,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Contains a string of additional options to include on the command line.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -66,7 +66,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Contains the string to append to a command line when there is no template.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -84,7 +84,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Contains the template to use when creating the command line.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -103,7 +103,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Generates a command line.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

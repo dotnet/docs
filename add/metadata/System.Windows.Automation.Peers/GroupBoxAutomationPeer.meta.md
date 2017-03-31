@@ -1,24 +1,33 @@
 ---
 uid: System.Windows.Automation.Peers.GroupBoxAutomationPeer
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.GroupBoxAutomationPeer.GetNameCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.GroupBoxAutomationPeer.#ctor(System.Windows.Controls.GroupBox)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.GroupBoxAutomationPeer.GetAutomationControlTypeCore
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.GroupBoxAutomationPeer.GetClassNameCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

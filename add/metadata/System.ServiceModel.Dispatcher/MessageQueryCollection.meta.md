@@ -1,19 +1,34 @@
 ---
 uid: System.ServiceModel.Dispatcher.MessageQueryCollection
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.MessageQueryCollection.Evaluate``1(System.ServiceModel.Channels.Message)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.MessageQueryCollection.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.MessageQueryCollection.Evaluate``1(System.ServiceModel.Channels.MessageBuffer)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Dispatcher.MessageQueryCollection.Evaluate
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

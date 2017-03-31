@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Compares data points.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,10 +34,10 @@
         <Parameter Name="sortBy" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="series">To be added.</param>
-        <param name="sortOrder">To be added.</param>
-        <param name="sortBy">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="series">Data series.</param>
+        <param name="sortOrder">Sort order.</param>
+        <param name="sortBy">Value used for the sort, for example, "X", "Y or Y1", "Y2", and so forth.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataVisualization.Charting.DataPointComparer" /> class with the specified data series, sort order and sort value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,10 +58,10 @@
         <Parameter Name="y" Type="System.Web.UI.DataVisualization.Charting.DataPoint" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">First data point.</param>
+        <param name="y">Second data point.</param>
+        <summary>Compares two data points.</summary>
+        <returns>An <see langword="integer" /> value. Returns zero (0) if the two values are equal. Returns a positive integer if the value of <paramref name="x" /> is greater than the value of <paramref name="y" />; otherwise, returns a negative integer.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

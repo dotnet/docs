@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a configuration element that provides information to enable an application to function as a client program that can search for, find, and use a workflow service during runtime.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Discovery.Configuration.DynamicEndpointElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,8 +70,8 @@
         <ReturnType>System.ServiceModel.Discovery.Configuration.DiscoveryClientSettingsElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.ServiceModel.Discovery.Configuration.DiscoveryClientSettingsElement" /> that contains the settings needed by an application to participate in the service discovery process as a client.</summary>
+        <value>An element that contains discovery settings required by a client application.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

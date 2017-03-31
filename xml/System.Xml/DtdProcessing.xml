@@ -21,8 +21,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the options for processing DTDs. The <see cref="T:System.Xml.DtdProcessing" /> enumeration is used by the <see cref="T:System.Xml.XmlReaderSettings" /> class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is set on the <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> property or the <xref:System.Xml.XmlTextReader.DtdProcessing%2A> property.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Ignore">
@@ -49,7 +56,17 @@
         <ReturnType>System.Xml.DtdProcessing</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Causes the DOCTYPE element to be ignored. No DTD processing occurs.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  The DTD/DOCTYPE will be lost on output.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -70,7 +87,7 @@
         <ReturnType>System.Xml.DtdProcessing</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Used for parsing DTDs.</summary>
       </Docs>
     </Member>
     <Member MemberName="Prohibit">
@@ -97,7 +114,7 @@
         <ReturnType>System.Xml.DtdProcessing</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that when a DTD is encountered, an <see cref="T:System.Xml.XmlException" /> is thrown with a message that states that DTDs are prohibited. This is the default behavior.</summary>
       </Docs>
     </Member>
   </Members>

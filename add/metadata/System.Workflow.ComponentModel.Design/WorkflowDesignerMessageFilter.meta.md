@@ -1,159 +1,230 @@
 ---
 uid: System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.ParentView
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnLayout(System.Windows.Forms.LayoutEventArgs)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.Dispose(System.Boolean)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseHover(System.Windows.Forms.MouseEventArgs)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnDragLeave
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseCaptureChanged
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseLeave
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnPaint(System.Windows.Forms.PaintEventArgs,System.Drawing.Rectangle,System.Workflow.ComponentModel.Design.AmbientTheme)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.Dispose
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseDoubleClick(System.Windows.Forms.MouseEventArgs)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.MessageHitTestContext
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnKeyDown(System.Windows.Forms.KeyEventArgs)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnGiveFeedback(System.Windows.Forms.GiveFeedbackEventArgs)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.Dispose
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseMove(System.Windows.Forms.MouseEventArgs)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseDown(System.Windows.Forms.MouseEventArgs)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.ProcessMessage(System.Windows.Forms.Message)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnShowContextMenu(System.Drawing.Point)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseEnter(System.Windows.Forms.MouseEventArgs)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnDragDrop(System.Windows.Forms.DragEventArgs)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnKeyUp(System.Windows.Forms.KeyEventArgs)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseWheel(System.Windows.Forms.MouseEventArgs)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnQueryContinueDrag(System.Windows.Forms.QueryContinueDragEventArgs)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnDragEnter(System.Windows.Forms.DragEventArgs)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.Finalize
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnScroll(System.Windows.Forms.ScrollBar,System.Int32)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.Initialize(System.Workflow.ComponentModel.Design.WorkflowView)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseUp(System.Windows.Forms.MouseEventArgs)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnThemeChange
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnDragOver(System.Windows.Forms.DragEventArgs)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnPaintWorkflowAdornments(System.Windows.Forms.PaintEventArgs,System.Drawing.Rectangle,System.Workflow.ComponentModel.Design.AmbientTheme)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a common base class for objects that can be triggers for <see cref="T:System.Web.UI.UpdatePanel" /> controls.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The abstract class <xref:System.Web.UI.UpdatePanelControlTrigger> derives from the <xref:System.Web.UI.UpdatePanelTrigger> class to provide a more specific base class for triggers that are based on controls.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.UpdatePanelTrigger" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,9 +51,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a value that indicates whether the trigger was invoked.</summary>
+        <returns>
+          <see langword="true" /> if the trigger was invoked; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Override the <xref:System.Web.UI.UpdatePanelTrigger.HasTriggered%2A> method if your derived trigger implementation needs to track whether the trigger was invoked. The default implementation of the <xref:System.Web.UI.UpdatePanelTrigger.HasTriggered%2A> method returns `false`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -63,7 +78,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>When overridden in a derived class, enables a trigger to initialize itself.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,8 +100,8 @@
         <ReturnType>System.Web.UI.UpdatePanel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a reference to the <see cref="T:System.Web.UI.UpdatePanel" /> control that the <see cref="T:System.Web.UI.UpdatePanelTrigger" /> targets.</summary>
+        <value>An <see cref="T:System.Web.UI.UpdatePanel" /> control.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

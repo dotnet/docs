@@ -1,14 +1,20 @@
 ---
 uid: System.Reflection.AssemblyTrademarkAttribute
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.AssemblyTrademarkAttribute.Trademark
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.AssemblyTrademarkAttribute.#ctor(System.String)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

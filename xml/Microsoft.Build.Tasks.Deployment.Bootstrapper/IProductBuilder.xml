@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a buildable version of a <see cref="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.Product" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -41,8 +41,8 @@
         <ReturnType>Microsoft.Build.Tasks.Deployment.Bootstrapper.Product</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.Product" /> object that corresponds to this <see cref="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilder" /> object.</summary>
+        <value>The <see cref="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.Product" /> object that corresponds to this <see cref="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilder" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

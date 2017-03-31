@@ -1,34 +1,48 @@
 ---
 uid: System.Web.Services.Protocols.SoapServerType
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Protocols.SoapServerType.ServiceNamespace
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Protocols.SoapServerType.GetDuplicateMethod(System.Object)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Protocols.SoapServerType.#ctor(System.Type,System.Web.Services.Configuration.WebServiceProtocols)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Protocols.SoapServerType.GetMethod(System.Object)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Protocols.SoapServerType.ServiceDefaultIsEncoded
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Protocols.SoapServerType.ServiceRoutingOnSoapAction
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

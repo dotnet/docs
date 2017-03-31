@@ -1,9 +1,11 @@
 ---
 uid: System.Web.UI.PartialCachingControl
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.PartialCachingControl.CachedControl
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

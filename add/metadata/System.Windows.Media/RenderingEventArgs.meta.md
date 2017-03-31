@@ -1,9 +1,13 @@
 ---
 uid: System.Windows.Media.RenderingEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.RenderingEventArgs.RenderingTime
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

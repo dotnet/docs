@@ -1,24 +1,38 @@
 ---
 uid: System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlTextViewAdapter
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlTextViewAdapter.RenderElement(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter,System.Int32,System.Int32,System.Int32)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlTextViewAdapter.Render(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlTextViewAdapter.#ctor
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlTextViewAdapter.Control
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlTextViewAdapter.Render
 ---

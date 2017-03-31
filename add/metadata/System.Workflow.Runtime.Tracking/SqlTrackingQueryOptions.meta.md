@@ -1,39 +1,55 @@
 ---
 uid: System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.WorkflowType
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.TrackingDataItems
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.StatusMaxDateTime
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.Clear
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.WorkflowStatus
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.StatusMinDateTime
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

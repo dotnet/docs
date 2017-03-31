@@ -1,4 +1,6 @@
 ---
 uid: System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

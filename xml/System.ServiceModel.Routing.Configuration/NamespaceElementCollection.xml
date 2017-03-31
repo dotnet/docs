@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a collection of <see cref="T:System.ServiceModel.Routing.Configuration.NamespaceElement" /> instances.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Routing.Configuration.NamespaceElementCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +51,8 @@
         <Parameter Name="element" Type="System.ServiceModel.Routing.Configuration.NamespaceElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The namespace element to add.</param>
+        <summary>Adds a new <see cref="T:System.ServiceModel.Routing.Configuration.NamespaceElement" /> to the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,7 +70,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes all elements from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,8 +88,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a new <see cref="T:System.Configuration.ConfigurationElement" />.</summary>
+        <returns>A new configuration element.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,9 +109,9 @@
         <Parameter Name="element" Type="System.Configuration.ConfigurationElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The configuration element to return the key for.</param>
+        <summary>Returns the key of the specified namespace element.</summary>
+        <returns>The key for the specified configuration element.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,9 +131,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The index of the element to be retrieved from the collection.</param>
+        <summary>Gets an element from the collection with a specified index.</summary>
+        <value>The namespace element in the collection that has the specified index.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,9 +153,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="name">The key of the element to be retrieved from the collection.</param>
+        <summary>Gets an element from the collection with a specified key.</summary>
+        <value>The namespace element in the collection that matches the specified key.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,8 +175,8 @@
         <Parameter Name="element" Type="System.ServiceModel.Routing.Configuration.NamespaceElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The namespace element to be removed.</param>
+        <summary>Removes the first occurrence of the specified <see cref="T:System.ServiceModel.Routing.Configuration.NamespaceElement" /> from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

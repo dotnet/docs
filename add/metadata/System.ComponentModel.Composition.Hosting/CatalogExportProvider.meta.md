@@ -1,44 +1,76 @@
 ---
 uid: System.ComponentModel.Composition.Hosting.CatalogExportProvider
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.CatalogExportProvider.Catalog
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.CatalogExportProvider.GetExportsCore(System.ComponentModel.Composition.Primitives.ImportDefinition,System.ComponentModel.Composition.Hosting.AtomicComposition)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.CatalogExportProvider.Dispose(System.Boolean)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.CatalogExportProvider.#ctor(System.ComponentModel.Composition.Primitives.ComposablePartCatalog,System.Boolean)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.CatalogExportProvider.#ctor(System.ComponentModel.Composition.Primitives.ComposablePartCatalog,System.ComponentModel.Composition.Hosting.CompositionOptions)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.CatalogExportProvider.Dispose
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.CatalogExportProvider.SourceProvider
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Composition.Hosting.CatalogExportProvider.Dispose
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Composition.Hosting.CatalogExportProvider.#ctor
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.CatalogExportProvider.#ctor(System.ComponentModel.Composition.Primitives.ComposablePartCatalog)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

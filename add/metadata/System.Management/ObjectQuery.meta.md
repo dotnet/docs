@@ -1,24 +1,29 @@
 ---
 uid: System.Management.ObjectQuery
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ObjectQuery.#ctor
-internalonly: False
+manager: "jillfra"
+---
+
+---
+uid: System.Management.ObjectQuery.#ctor
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ObjectQuery.#ctor(System.String,System.String)
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ObjectQuery.Clone
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ObjectQuery.#ctor(System.String)
-internalonly: False
+manager: "jillfra"
 ---

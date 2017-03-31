@@ -1,19 +1,24 @@
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.ExplorerBar.SpecialGroupExpand
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.ExplorerBar.SpecialGroupExpand.Normal
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.ExplorerBar.SpecialGroupExpand.Pressed
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.ExplorerBar.SpecialGroupExpand.Hot
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

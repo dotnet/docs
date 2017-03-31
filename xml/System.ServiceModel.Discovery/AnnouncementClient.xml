@@ -18,8 +18,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Used by services to send discovery announcement messages. Clients can use the discovery mechanism, specifically the corresponding <see cref="T:System.ServiceModel.Discovery.AnnouncementService" /> class to listen and act on the announcement messages. An announcement message contains information about the service such as its fully-qualified contract name, any scopes that the service is operating in as well as any custom metadata the service wants to send.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a service adds the <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior> behavior and specifies an <xref:System.ServiceModel.Discovery.AnnouncementEndpoint> the service automatically sends announcement messages when the service goes online or comes offline. Use this class when you want to explicitly send the announcement messages yourself.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,7 +40,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Discovery.AnnouncementClient" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,8 +57,8 @@
         <Parameter Name="announcementEndpoint" Type="System.ServiceModel.Discovery.AnnouncementEndpoint" />
       </Parameters>
       <Docs>
-        <param name="announcementEndpoint">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="announcementEndpoint">The announcement endpoint.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Discovery.AnnouncementClient" /> class with the specified <see cref="T:System.ServiceModel.Discovery.AnnouncementEndpoint" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,8 +75,8 @@
         <Parameter Name="endpointConfigurationName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="endpointConfigurationName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="endpointConfigurationName">The name of the endpoint configuration to use.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Discovery.AnnouncementClient" /> class with the specified endpoint configuration.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,8 +96,8 @@
         <Parameter Name="discoveryMetadata" Type="System.ServiceModel.Discovery.EndpointDiscoveryMetadata" />
       </Parameters>
       <Docs>
-        <param name="discoveryMetadata">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="discoveryMetadata">The endpoint discovery metadata.</param>
+        <summary>Causes an offline announcement message (Bye) to be sent with the specified endpoint discovery metadata.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,8 +117,8 @@
         <Parameter Name="discoveryMetadata" Type="System.ServiceModel.Discovery.EndpointDiscoveryMetadata" />
       </Parameters>
       <Docs>
-        <param name="discoveryMetadata">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="discoveryMetadata">The endpoint discovery metadata.</param>
+        <summary>Causes an offline announcement message (Bye) to be sent asynchronously with the specified endpoint discovery metadata.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,9 +139,9 @@
         <Parameter Name="userState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="discoveryMetadata">To be added.</param>
-        <param name="userState">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="discoveryMetadata">The endpoint discovery metadata.</param>
+        <param name="userState">The user-defined state data.</param>
+        <summary>Causes an offline announcement message (Bye) to be sent asynchronously with the specified endpoint discovery metadata and user-defined state.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,8 +158,15 @@
         <ReturnType>System.EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when an asynchronous offline announcement (Bye) completes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event does not occur when an offline announcement is sent synchronously by calling <xref:System.ServiceModel.Discovery.AnnouncementClient.AnnounceOffline%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AnnounceOfflineTaskAsync">
@@ -171,9 +185,9 @@
         <Parameter Name="discoveryMetadata" Type="System.ServiceModel.Discovery.EndpointDiscoveryMetadata" />
       </Parameters>
       <Docs>
-        <param name="discoveryMetadata">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="discoveryMetadata">The endpoint discovery metadata.</param>
+        <summary>Causes an offline task announcement message (Bye) to be sent asynchronously with the specified endpoint discovery metadata.</summary>
+        <returns>An offline task announcement message to be sent asynchronously.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -193,8 +207,8 @@
         <Parameter Name="discoveryMetadata" Type="System.ServiceModel.Discovery.EndpointDiscoveryMetadata" />
       </Parameters>
       <Docs>
-        <param name="discoveryMetadata">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="discoveryMetadata">The endpoint discovery metadata.</param>
+        <summary>Causes an online announcement message (Hello) to be sent.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -214,8 +228,8 @@
         <Parameter Name="discoveryMetadata" Type="System.ServiceModel.Discovery.EndpointDiscoveryMetadata" />
       </Parameters>
       <Docs>
-        <param name="discoveryMetadata">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="discoveryMetadata">The endpoint discovery metadata.</param>
+        <summary>Causes an online announcement (Hello) message to be sent asynchronously with the specified endpoint discovery metadata.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -236,9 +250,9 @@
         <Parameter Name="userState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="discoveryMetadata">To be added.</param>
-        <param name="userState">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="discoveryMetadata">The endpoint discovery metadata.</param>
+        <param name="userState">The user-defined state data.</param>
+        <summary>Causes an online announcement (Hello) message to be sent asynchronously with the specified endpoint discovery metadata and user-defined state.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -255,8 +269,15 @@
         <ReturnType>System.EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when an asynchronous online announcement (Hello) completes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event does not occur when an online announcement is sent synchronously by calling <xref:System.ServiceModel.Discovery.AnnouncementClient.AnnounceOnline%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AnnounceOnlineTaskAsync">
@@ -275,9 +296,9 @@
         <Parameter Name="discoveryMetadata" Type="System.ServiceModel.Discovery.EndpointDiscoveryMetadata" />
       </Parameters>
       <Docs>
-        <param name="discoveryMetadata">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="discoveryMetadata">The endpoint discovery metadata.</param>
+        <summary>Causes an online task announcement message (Hello) to be sent asynchronously with the specified endpoint discovery metadata.</summary>
+        <returns>An online task announcement message to be sent asynchronously.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -299,11 +320,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="discoveryMetadata">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="discoveryMetadata">The endpoint discovery metadata.</param>
+        <param name="callback">The <see cref="T:System.AsyncCallback" />.</param>
+        <param name="state">The user-defined state data.</param>
+        <summary>Causes an offline announcement (Bye) message to be sent asynchronously with the specified endpoint discovery metadata and user-defined state. The specified <see cref="T:System.AsyncCallback" /> is called when the operation completes.</summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -325,11 +346,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="discoveryMetadata">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="discoveryMetadata">The endpoint discovery metadata.</param>
+        <param name="callback">The <see cref="T:System.AsyncCallback" />.</param>
+        <param name="state">The user-defined state data.</param>
+        <summary>Causes an online announcement (Hello) message to be sent asynchronously with the specified endpoint discovery metadata and user-defined state. The specified <see cref="T:System.AsyncCallback" /> is called when the operation completes.</summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -346,8 +367,8 @@
         <ReturnType>System.ServiceModel.ChannelFactory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the channel factory associated with the <see cref="T:System.ServiceModel.Discovery.AnnouncementClient" />.</summary>
+        <value>A <see cref="T:System.ServiceModel.ChannelFactory" /> instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -364,8 +385,8 @@
         <ReturnType>System.ServiceModel.Description.ClientCredentials</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the client credentials associated with the <see cref="T:System.ServiceModel.Discovery.AnnouncementClient" />.</summary>
+        <value>A <see cref="T:System.ServiceModel.Description.ClientCredentials" /> instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -383,7 +404,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Closes the <see cref="T:System.ServiceModel.Discovery.AnnouncementClient" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -403,8 +424,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="result">A reference to the pending asynchronous operation.</param>
+        <summary>Waits for a pending asynchronous offline announcement to complete.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -424,8 +445,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="result">A reference to the pending asynchronous operation.</param>
+        <summary>Waits for a pending asynchronous online announcement to complete.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -442,8 +463,8 @@
         <ReturnType>System.ServiceModel.Description.ServiceEndpoint</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> associated with the <see cref="T:System.ServiceModel.Discovery.AnnouncementClient" />.</summary>
+        <value>A <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -460,8 +481,8 @@
         <ReturnType>System.ServiceModel.IClientChannel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the inner channel associated with the <see cref="T:System.ServiceModel.Discovery.AnnouncementClient" />.</summary>
+        <value>An <see cref="T:System.ServiceModel.IClientChannel" /> instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -478,8 +499,8 @@
         <ReturnType>System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the message sequence generator associated with the <see cref="T:System.ServiceModel.Discovery.AnnouncementClient" />.</summary>
+        <value>A <see cref="T:System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator" /> instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -497,7 +518,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Opens the <see cref="T:System.ServiceModel.Discovery.AnnouncementClient" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -515,7 +536,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -533,7 +554,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Causes a communication object to transition immediately from its current state into the closed state.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -554,10 +575,10 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate that receives notification of the completion of the asynchronous close operation.</param>
+        <param name="state">An object, specified by the application, that contains state information associated with the asynchronous close operation.</param>
+        <summary>Begins an asynchronous operation to close a communication object.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous close operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -579,11 +600,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="timeout">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="timeout">The <see cref="T:System.TimeSpan" /> that specifies how long the send operation has to complete before timing out.</param>
+        <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate that receives notification of the completion of the asynchronous close operation.</param>
+        <param name="state">An object, specified by the application, that contains state information associated with the asynchronous close operation.</param>
+        <summary>Begins an asynchronous operation to close a communication object with a specified timeout.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous close operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -604,10 +625,10 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate that receives notification of the completion of the asynchronous open operation.</param>
+        <param name="state">An object, specified by the application, that contains state information associated with the asynchronous open operation.</param>
+        <summary>Begins an asynchronous operation to open a communication object.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous open operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -629,11 +650,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="timeout">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="timeout">The <see cref="T:System.TimeSpan" /> that specifies how long the send operation has to complete before timing out.</param>
+        <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate that receives notification of the completion of the asynchronous open operation.</param>
+        <param name="state">An object, specified by the application, that contains state information associated with the asynchronous open operation.</param>
+        <summary>Begins an asynchronous operation to open a communication object within a specified interval of time.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous open operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -651,7 +672,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Causes a communication object to transition from its current state into the closed state.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -671,8 +692,8 @@
         <Parameter Name="timeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="timeout">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="timeout">The <see cref="T:System.TimeSpan" /> that specifies how long the send operation has to complete before timing out.</param>
+        <summary>Causes a communication object to transition from its current state into the closed state within a specified interval of time.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -692,8 +713,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="result">The <see cref="T:System.IAsyncResult" /> that is returned by a call to the <see cref="Overload:System.ServiceModel.ICommunicationObject.BeginClose" /> method.</param>
+        <summary>Completes an asynchronous operation to close a communication object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -713,8 +734,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="result">The <see cref="T:System.IAsyncResult" /> that is returned by a call to the <see cref="Overload:System.ServiceModel.ICommunicationObject.BeginOpen" /> method.</param>
+        <summary>Completes an asynchronous operation to open a communication object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -732,7 +753,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Causes a communication object to transition from the created state into the opened state.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -752,8 +773,8 @@
         <Parameter Name="timeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="timeout">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="timeout">The <see cref="T:System.TimeSpan" /> that specifies how long the send operation has to complete before timing out.</param>
+        <summary>Causes a communication object to transition from the created state into the opened state within a specified interval of time.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -770,8 +791,8 @@
         <ReturnType>System.ServiceModel.CommunicationState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the current state of the communication-oriented object.</summary>
+        <value>The value of the <see cref="T:System.ServiceModel.CommunicationState" /> of the object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

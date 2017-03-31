@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Describes the consistency guarantee of the instance values contained in a specified dictionary.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>System.Runtime.DurableInstancing.InstanceValueConsistency</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the consistency of the instance value is in doubt.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -48,7 +48,7 @@
         <ReturnType>System.Runtime.DurableInstancing.InstanceValueConsistency</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that there is no consistency guarantee.</summary>
       </Docs>
     </Member>
     <Member MemberName="Partial">
@@ -64,7 +64,7 @@
         <ReturnType>System.Runtime.DurableInstancing.InstanceValueConsistency</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the consistency of the instance value is partial.</summary>
       </Docs>
     </Member>
   </Members>

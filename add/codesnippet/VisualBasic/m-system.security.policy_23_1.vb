@@ -1,1 +1,0 @@
-        If (firstCodeGroup.Equals(secondCodeGroup)) Then

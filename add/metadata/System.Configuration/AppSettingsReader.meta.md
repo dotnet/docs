@@ -1,14 +1,17 @@
 ---
 uid: System.Configuration.AppSettingsReader
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.AppSettingsReader.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.AppSettingsReader.GetValue(System.String,System.Type)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

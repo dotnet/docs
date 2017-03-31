@@ -1,29 +1,48 @@
 ---
 uid: System.Activities.DelegateOutArgument`1
-internalonly: False
----
-
----
-uid: System.Activities.DelegateOutArgument`1.#ctor(System.String)
-internalonly: False
----
-
----
-uid: System.Activities.DelegateOutArgument`1.Get(System.Activities.ActivityContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DelegateOutArgument`1.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.DelegateOutArgument`1.#ctor(System.String)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.DelegateOutArgument`1.Get(System.Activities.ActivityContext)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.DelegateOutArgument`1.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DelegateOutArgument`1.Set(System.Activities.ActivityContext,`0)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DelegateOutArgument`1.GetLocation(System.Activities.ActivityContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

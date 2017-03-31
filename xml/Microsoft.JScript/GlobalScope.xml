@@ -20,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the global scope.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,9 +38,9 @@
         <Parameter Name="engine" Type="Microsoft.JScript.Vsa.VsaEngine" />
       </Parameters>
       <Docs>
-        <param name="parent">To be added.</param>
-        <param name="engine">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="parent">A reference to the parent object.</param>
+        <param name="engine">A reference to the scripting engine.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.GlobalScope" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,9 +60,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the field to add.</param>
+        <summary>Adds the specified field to the global scope.</summary>
+        <returns>The new field, if it is successfully added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,8 +80,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the current default scope, which is either the contained object of a <see langword="with" /> statement scope, or the global scope.</summary>
+        <returns>This object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,10 +102,10 @@
         <Parameter Name="lexLevel" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="lexLevel">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the field to search for.</param>
+        <param name="lexLevel">The lexical level to search.</param>
+        <summary>Gets a field that has the specified name by searching the scope hierarchy. This method searches only the scope that is specified by the lexical level.</summary>
+        <returns>A field that has the specified name.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,9 +125,9 @@
         <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
       </Parameters>
       <Docs>
-        <param name="bindingAttr">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="bindingAttr">A bitwise combination of the enumeration values that specifies how the search for members is conducted by reflection.</param>
+        <summary>Gets an array of <see cref="T:System.Reflection.FieldInfo" /> objects that correspond to all fields of the global scope.</summary>
+        <returns>An array of objects that contains all fields of the global scope.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -145,8 +145,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the global scope by returning a reference to this object.</summary>
+        <returns>This object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -166,9 +166,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the field.</param>
+        <summary>Gets the local declaration of a field that has the specified name. This is used at compile time for error checking.</summary>
+        <returns>The local declaration of the field.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -189,10 +189,10 @@
         <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="bindingAttr">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the member to search for.</param>
+        <param name="bindingAttr">A bitwise combination of the enumeration values that specifies how the search for members is conducted by reflection.</param>
+        <summary>Gets an array of <see cref="T:System.Reflection.MemberInfo" /> objects that correspond to all members that match a specified name.</summary>
+        <returns>An array of objects that match the <paramref name="name" /> argument.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -212,9 +212,9 @@
         <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
       </Parameters>
       <Docs>
-        <param name="bindingAttr">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="bindingAttr">A bitwise combination of the enumeration values that specifies how the search for members is conducted by reflection.</param>
+        <summary>Gets an array of <see cref="T:System.Reflection.MemberInfo" /> objects that correspond to all members of the global scope.</summary>
+        <returns>An array of objects that contains all members of the global scope.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -234,9 +234,9 @@
         <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
       </Parameters>
       <Docs>
-        <param name="bindingAttr">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="bindingAttr">A bitwise combination of the enumeration values that specifies how the search for members is conducted by reflection.</param>
+        <summary>Gets an array of <see cref="T:System.Reflection.MethodInfo" /> objects that correspond to all methods of the global scope.</summary>
+        <returns>An array of objects that contains all methods of the global scope.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -256,9 +256,9 @@
         <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
       </Parameters>
       <Docs>
-        <param name="bindingAttr">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="bindingAttr">A bitwise combination of the enumeration values that specifies how the search for members is conducted by reflection.</param>
+        <summary>Gets an array of <see cref="T:System.Reflection.PropertyInfo" /> objects that correspond to all properties of the global scope.</summary>
+        <returns>An array of objects that contains all properties of the global scope.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -279,10 +279,10 @@
         <Parameter Name="method" Type="System.Delegate" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="method">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the method to add.</param>
+        <param name="method">The delegate to the method.</param>
+        <summary>Adds the specified method to the global scope. This method is not implemented in JScript.</summary>
+        <returns>null in all cases.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -302,9 +302,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the property to add.</param>
+        <summary>Adds the specified property to the global scope. This method is not implemented in JScript.</summary>
+        <returns>null in all cases.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -324,8 +324,8 @@
         <Parameter Name="m" Type="System.Reflection.MemberInfo" />
       </Parameters>
       <Docs>
-        <param name="m">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="m">The name of the member to remove.</param>
+        <summary>Removes the specified member from the global scope.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

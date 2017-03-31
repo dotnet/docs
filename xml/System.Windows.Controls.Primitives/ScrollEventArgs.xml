@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides data for a <see cref="E:System.Windows.Controls.Primitives.ScrollBar.Scroll" /> event that occurs when the <see cref="T:System.Windows.Controls.Primitives.Thumb" /> of a <see cref="T:System.Windows.Controls.Primitives.ScrollBar" /> moves.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,9 +29,9 @@
         <Parameter Name="newValue" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="scrollEventType">To be added.</param>
-        <param name="newValue">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="scrollEventType">A <see cref="T:System.Windows.Controls.Primitives.ScrollEventType" /> enumeration value that describes the type of <see cref="T:System.Windows.Controls.Primitives.Thumb" /> movement that caused the event.</param>
+        <param name="newValue">The value that corresponds to the new location of the <see cref="T:System.Windows.Controls.Primitives.Thumb" /> in the <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />.</param>
+        <summary>Initializes an instance of the <see cref="T:System.Windows.Controls.Primitives.ScrollEventArgs" /> class by using the specified <see cref="T:System.Windows.Controls.Primitives.ScrollEventType" /> enumeration value and the new location of the <see cref="T:System.Windows.Controls.Primitives.Thumb" /> control in the <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,9 +52,9 @@
         <Parameter Name="genericTarget" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="genericHandler">To be added.</param>
-        <param name="genericTarget">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="genericHandler">The event handler to call.</param>
+        <param name="genericTarget">The current object along the event's route.</param>
+        <summary>Performs the appropriate type casting to call the type-safe <see cref="T:System.Windows.Controls.Primitives.ScrollEventHandler" /> delegate for the <see cref="E:System.Windows.Controls.Primitives.ScrollBar.Scroll" /> event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,9 +71,16 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that represents the new location of the <see cref="T:System.Windows.Controls.Primitives.Thumb" /> in the <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />.</summary>
+        <value>The value that corresponds to the new position of the <see cref="T:System.Windows.Controls.Primitives.Thumb" /> in the <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The new value corresponds to the value of the <xref:System.Windows.Controls.Primitives.Track.Value%2A> property of the <xref:System.Windows.Controls.Primitives.Track> control that is implemented for the <xref:System.Windows.Controls.Primitives.ScrollBar>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollEventType">
@@ -89,8 +96,8 @@
         <ReturnType>System.Windows.Controls.Primitives.ScrollEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Windows.Controls.Primitives.ScrollEventType" /> enumeration value that describes the change in the <see cref="T:System.Windows.Controls.Primitives.Thumb" /> position that caused this event.</summary>
+        <value>A <see cref="T:System.Windows.Controls.Primitives.ScrollEventType" /> enumeration value that describes the type of <see cref="T:System.Windows.Controls.Primitives.Thumb" /> movement that caused the <see cref="E:System.Windows.Controls.Primitives.ScrollBar.Scroll" /> event.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,34 +1,55 @@
 ---
 uid: System.DirectoryServices.Protocols.ExtendedRequest
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.Protocols.ExtendedRequest.RequestValue
-internalonly: False
----
-
----
-uid: System.DirectoryServices.Protocols.ExtendedRequest.#ctor(System.String)
-internalonly: False
----
-
----
-uid: System.DirectoryServices.Protocols.ExtendedRequest.ToXmlNode(System.Xml.XmlDocument)
-internalonly: False
----
-
----
-uid: System.DirectoryServices.Protocols.ExtendedRequest.RequestName
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.Protocols.ExtendedRequest.#ctor
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.Protocols.ExtendedRequest.#ctor(System.String)
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.Protocols.ExtendedRequest.ToXmlNode(System.Xml.XmlDocument)
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.Protocols.ExtendedRequest.RequestName
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.Protocols.ExtendedRequest.#ctor
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.Protocols.ExtendedRequest.#ctor(System.String,System.Byte[])
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---

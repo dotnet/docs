@@ -1,79 +1,106 @@
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleInformation
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleInformation.IsSupportedByOS
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleInformation.Version
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleInformation.Company
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleInformation.Copyright
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleInformation.ControlHighlightHot
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleInformation.DisplayName
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleInformation.Url
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleInformation.Description
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleInformation.Author
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleInformation.TextControlBorder
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleInformation.ColorScheme
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleInformation.SupportsFlatMenus
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleInformation.MinimumColorDepth
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleInformation.IsEnabledByUser
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleInformation.Size
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

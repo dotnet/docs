@@ -1,19 +1,25 @@
 ---
 uid: System.Windows.Forms.Integration.PropertyMappingExceptionEventArgs
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.Integration.PropertyMappingExceptionEventArgs.PropertyValue
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Integration.PropertyMappingExceptionEventArgs.#ctor(System.Exception,System.String,System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Integration.PropertyMappingExceptionEventArgs.PropertyName
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

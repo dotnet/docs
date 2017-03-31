@@ -1,14 +1,20 @@
 ---
 uid: System.Workflow.Runtime.WorkflowCompletedEventArgs
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.WorkflowCompletedEventArgs.WorkflowDefinition
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.WorkflowCompletedEventArgs.OutputParameters
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

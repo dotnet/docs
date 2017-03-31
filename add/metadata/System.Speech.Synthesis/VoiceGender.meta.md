@@ -1,4 +1,5 @@
 ---
 uid: System.Speech.Synthesis.VoiceGender
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

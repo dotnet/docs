@@ -1,14 +1,20 @@
 ---
 uid: System.ServiceModel.Configuration.MexHttpBindingCollectionElement
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.MexHttpBindingCollectionElement.GetDefault
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.MexHttpBindingCollectionElement.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

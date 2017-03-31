@@ -26,9 +26,18 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="T">The type of value returned by the expression.</typeparam>
+    <summary>Represents a lambda expression used as an l-value, which supports binding of <see cref="F:System.Activities.ArgumentDirection.Out" /> arguments.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Activities.Expressions.LambdaReference%601> is used for lambda expressions specified in code and cannot be serialized to XAML. If an attempt to serialize a workflow that contains a <xref:System.Activities.Expressions.LambdaReference%601> is made, a <xref:System.Activities.Expressions.LambdaSerializationException> is thrown. If the containing workflow requires XAML serialization, use <xref:Microsoft.VisualBasic.Activities.VisualBasicReference%601> or use <xref:System.Activities.Expressions.ExpressionServices> to convert the <xref:System.Activities.Expressions.LambdaReference%601> to a format that can be serialized.  
+  
+ This activity uses the LINQ to Entity provider to evaluate LINQ expressions. Any LINQ expressions used with this activity must be evaluatable by the ADO.Net Entity Data Model. For example, LINQ expressions cannot be used to reference activities, variables, or arguments of the workflow itself.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,8 +53,8 @@
         <Parameter Name="locationExpression" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;System.Activities.ActivityContext,T&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="locationExpression">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="locationExpression">The value of the expression.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Expressions.LambdaReference`1" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,10 +95,17 @@
         <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="context">Context information that is used for conversion.</param>
+        <summary>This method always returns <see langword="true" /> and is used in conjunction with <see cref="M:System.Activities.Expressions.LambdaReference`1.ConvertToString(System.Windows.Markup.IValueSerializerContext)" /> to provide descriptive error messages when an attempt is made to serialize this activity to XAML.</summary>
+        <returns>This method always returns <see langword="true" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Activities.Expressions.LambdaReference%601> is used for lambda expressions specified in code and cannot be serialized to XAML. If an attempt to serialize a workflow that contains a <xref:System.Activities.Expressions.LambdaReference%601> is made, a <xref:System.Activities.Expressions.LambdaSerializationException> is thrown. If the containing workflow requires XAML serialization, use <xref:Microsoft.VisualBasic.Activities.VisualBasicReference%601> or use <xref:System.Activities.Expressions.ExpressionServices> to convert the <xref:System.Activities.Expressions.LambdaReference%601> to a format that can be serialized.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertToString">
@@ -108,10 +124,17 @@
         <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="context">The context information that is used for conversion.</param>
+        <summary>Throws a <see cref="T:System.Activities.Expressions.LambdaSerializationException" /> and is used in conjunction with <see cref="M:System.Activities.Expressions.LambdaReference`1.CanConvertToString(System.Windows.Markup.IValueSerializerContext)" /> to provide descriptive error messages when an attempt is made to serialize this activity to XAML.</summary>
+        <returns>This method throws a <see cref="T:System.Activities.Expressions.LambdaSerializationException" /> when called.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Activities.Expressions.LambdaReference%601> is used for lambda expressions specified in code and cannot be serialized to XAML. If an attempt to serialize a workflow that contains a <xref:System.Activities.Expressions.LambdaReference%601> is made, a <xref:System.Activities.Expressions.LambdaSerializationException> is thrown. If the containing workflow requires XAML serialization, use <xref:Microsoft.VisualBasic.Activities.VisualBasicReference%601> or use <xref:System.Activities.Expressions.ExpressionServices> to convert the <xref:System.Activities.Expressions.LambdaReference%601> to a format that can be serialized.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">

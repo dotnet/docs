@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides methods and attached properties that support data validation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For a detailed discussion of the validation process, see "Data Validation" in [Data Binding Overview](../Topic/Data%20Binding%20Overview.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AddErrorHandler">
@@ -32,9 +39,9 @@
         <Parameter Name="handler" Type="System.EventHandler&lt;System.Windows.Controls.ValidationErrorEventArgs&gt;" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> object to add <c>handler</c> to.</param>
+        <param name="handler">The handler to add.</param>
+        <summary>Adds an event handler for the <see cref="E:System.Windows.Controls.Validation.Error" /> attached event to the specified object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,9 +61,17 @@
         <Parameter Name="bindingExpression" Type="System.Windows.Data.BindingExpressionBase" />
       </Parameters>
       <Docs>
-        <param name="bindingExpression">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="bindingExpression">The object to turn valid.</param>
+        <summary>Removes all <see cref="T:System.Windows.Controls.ValidationError" /> objects from the specified <see cref="T:System.Windows.Data.BindingExpressionBase" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `bindingExpression` object may have been invalid from a <xref:System.Windows.Controls.Validation.MarkInvalid%2A> call or a previously failed validation. The object is valid after this call.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">If <paramref name="bindingExpression" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ErrorEvent">
@@ -72,7 +87,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="E:System.Windows.Controls.Validation.Error" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,7 +104,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Validation.Errors" /> attached property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,7 +121,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Validation.ErrorTemplate" /> attached property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -126,10 +141,11 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> object to read the value from.</param>
+        <summary>Gets the value of the <see cref="P:System.Windows.Controls.Validation.Errors" /> attached property of the specified element.</summary>
+        <returns>A <see cref="T:System.Collections.ObjectModel.ReadOnlyObservableCollection`1" /> of <see cref="T:System.Windows.Controls.ValidationError" /> objects.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">If <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetErrorTemplate">
@@ -153,10 +169,11 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> object to read the value from.</param>
+        <summary>Gets the value of the <see cref="P:System.Windows.Controls.Validation.ErrorTemplate" /> attached property of the specified element.</summary>
+        <returns>The <see cref="T:System.Windows.Controls.ControlTemplate" /> used to generate validation error feedback on the adorner layer.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">If <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetHasError">
@@ -175,10 +192,11 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> object to read the value from.</param>
+        <summary>Gets the value of the <see cref="P:System.Windows.Controls.Validation.HasError" /> attached property of the specified element.</summary>
+        <returns>The value of the <see cref="P:System.Windows.Controls.Validation.HasError" /> attached property of the specified element.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">If <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetValidationAdornerSite">
@@ -202,9 +220,9 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The element from which to get the <see cref="P:System.Windows.Controls.Validation.ValidationAdornerSite" />.</param>
+        <summary>Gets the value of the <see cref="P:System.Windows.Controls.Validation.ValidationAdornerSite" /> attached property for the specified element.</summary>
+        <returns>The value of the <see cref="P:System.Windows.Controls.Validation.ValidationAdornerSite" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -229,9 +247,9 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The element from which to get the <see cref="P:System.Windows.Controls.Validation.ValidationAdornerSiteFor" />.</param>
+        <summary>Gets the value of the <see cref="P:System.Windows.Controls.Validation.ValidationAdornerSiteFor" /> attached property for the specified element.</summary>
+        <returns>The value of the <see cref="P:System.Windows.Controls.Validation.ValidationAdornerSiteFor" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -248,7 +266,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Validation.HasError" /> attached property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -269,10 +287,18 @@
         <Parameter Name="validationError" Type="System.Windows.Controls.ValidationError" />
       </Parameters>
       <Docs>
-        <param name="bindingExpression">To be added.</param>
-        <param name="validationError">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="bindingExpression">The <see cref="T:System.Windows.Data.BindingExpression" /> object to mark as invalid.</param>
+        <param name="validationError">The <see cref="T:System.Windows.Controls.ValidationError" /> object to use.</param>
+        <summary>Marks the specified <see cref="T:System.Windows.Data.BindingExpression" /> object as invalid with the specified <see cref="T:System.Windows.Controls.ValidationError" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Data.BindingExpression> object stays invalid until <xref:System.Windows.Controls.Validation.ClearInvalid%2A> is called or another transfer to the binding source validates successfully.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">If <paramref name="validationError" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveErrorHandler">
@@ -292,9 +318,9 @@
         <Parameter Name="handler" Type="System.EventHandler&lt;System.Windows.Controls.ValidationErrorEventArgs&gt;" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> object to remove <c>handler</c> from.</param>
+        <param name="handler">The handler to remove.</param>
+        <summary>Adds an event handler for the <see cref="E:System.Windows.Controls.Validation.Error" /> attached event from the specified object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -315,10 +341,11 @@
         <Parameter Name="value" Type="System.Windows.Controls.ControlTemplate" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> object to set <c>value</c> on.</param>
+        <param name="value">The <see cref="T:System.Windows.Controls.ControlTemplate" /> to use to generate validation error feedback on the adorner layer.</param>
+        <summary>Sets the value of the <see cref="P:System.Windows.Controls.Validation.ErrorTemplate" /> attached property to the specified element.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">If <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetValidationAdornerSite">
@@ -338,9 +365,9 @@
         <Parameter Name="value" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The element on which to set the <see cref="P:System.Windows.Controls.Validation.ValidationAdornerSite" />.</param>
+        <param name="value">The <see cref="P:System.Windows.Controls.Validation.ValidationAdornerSite" /> of the specified element.</param>
+        <summary>Sets the <see cref="P:System.Windows.Controls.Validation.ValidationAdornerSite" /> attached property to the specified value on the specified element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -361,9 +388,9 @@
         <Parameter Name="value" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The element on which to set the <see cref="P:System.Windows.Controls.Validation.ValidationAdornerSiteFor" />.</param>
+        <param name="value">The <see cref="P:System.Windows.Controls.Validation.ValidationAdornerSiteFor" /> of the specified element.</param>
+        <summary>Sets the <see cref="P:System.Windows.Controls.Validation.ValidationAdornerSiteFor" /> attached property to the specified value on the specified element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -380,7 +407,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Validation.ValidationAdornerSiteFor" /> attached property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -397,7 +424,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Validation.ValidationAdornerSite" /> attached property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

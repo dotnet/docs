@@ -1,24 +1,29 @@
 ---
 uid: System.Web.UI.Design.XslUrlEditor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.XslUrlEditor.Options
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.XslUrlEditor.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.XslUrlEditor.Filter
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.XslUrlEditor.Caption
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

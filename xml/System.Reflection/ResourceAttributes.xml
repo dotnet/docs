@@ -23,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the attributes for a manifest resource.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,7 +45,7 @@
         <ReturnType>System.Reflection.ResourceAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A mask used to retrieve private manifest resources.</summary>
       </Docs>
     </Member>
     <Member MemberName="Public">
@@ -66,7 +66,7 @@
         <ReturnType>System.Reflection.ResourceAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A mask used to retrieve public manifest resources.</summary>
       </Docs>
     </Member>
   </Members>

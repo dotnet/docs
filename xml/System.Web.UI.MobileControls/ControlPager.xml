@@ -16,8 +16,16 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Used by a form to paginate its controls. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ During pagination, a <xref:System.Web.UI.MobileControls.ControlPager> object is passed to each control on the form, and is used by the control to determine the control's page index.  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,9 +42,9 @@
         <Parameter Name="pageWeight" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="form">To be added.</param>
-        <param name="pageWeight">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="form">The form page.</param>
+        <param name="pageWeight">The weight of the specified form page.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.ControlPager" /> class for the specified form that uses the specified weight for a page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,8 +61,15 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Returns the assigned weight for a page. This field is read-only. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The choice of units that you use for optimum page weight and control weights is flexible. Because device adapters can provide both types of weights, a set of adapters can coordinate an appropriate convention for weight units. However, if you follow the default unit system, your adapters can use the default weights of controls. The default unit system is based on one line equaling 100 units, as indicated by the constant <xref:System.Web.UI.MobileControls.ControlPager.DefaultWeight>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetItemPager">
@@ -76,12 +91,12 @@
         <Parameter Name="itemWeight" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="control">To be added.</param>
-        <param name="itemCount">To be added.</param>
-        <param name="itemsPerPage">To be added.</param>
-        <param name="itemWeight">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="control">The control to be paginated.</param>
+        <param name="itemCount">The number of items in the <see cref="T:System.Web.UI.MobileControls.ItemPager" /> object.</param>
+        <param name="itemsPerPage">The maximum number of items on a page.</param>
+        <param name="itemWeight">The optimum weight of the <see cref="T:System.Web.UI.MobileControls.ItemPager" /> object.</param>
+        <summary>Creates and returns an <see cref="T:System.Web.UI.MobileControls.ItemPager" /> object for paginating the contents of the given control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <returns>The <see cref="T:System.Web.UI.MobileControls.ItemPager" /> for paginating the contents of the given control.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,10 +116,17 @@
         <Parameter Name="weight" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="weight">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="weight">The weight of a control.</param>
+        <summary>Returns a newly assigned page index based on the weight of the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <returns>A newly assigned page index based on the weight of the control.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Controls call this method iteratively during pagination to retrieve their assigned pages.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PageCount">
@@ -120,8 +142,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Sets or returns the number of form pages currently created by the pager. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>The number of form pages currently created by the pager.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -138,8 +160,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the optimal weight of a form page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>The optimal weight of a form page.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,8 +178,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Sets or returns the weight that remains on the current ASP.NET mobile Web Forms page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>The weight that remains on the current ASP.NET mobile Web Forms page.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -174,8 +196,15 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Returns whether to use the value of the <see cref="F:System.Web.UI.MobileControls.ControlPager.DefaultWeight" /> field for pagination. This field is read-only. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Extend the <xref:System.Web.UI.MobileControls.ControlPager> class and change this field and the <xref:System.Web.UI.MobileControls.ControlPager.DefaultWeight> field, if you need to use some value other than the <xref:System.Web.UI.MobileControls.ControlPager.DefaultWeight> field as the default weight for a page.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

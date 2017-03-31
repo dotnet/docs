@@ -1,2 +1,0 @@
-			// Requests an IDesignerHost service from the design time environment using Component.Site.GetService()
-			IDesignerHost dh = (IDesignerHost) this.Component.Site.GetService(typeof(IDesignerHost));			

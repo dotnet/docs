@@ -25,8 +25,38 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies whether a property can only be set at design time.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Members marked with the <xref:System.ComponentModel.DesignOnlyAttribute> set to `true` can be set only at design time. Typically, these properties exist only at design time and do not correspond to a real property on the object at run time.  
+  
+ Members that either have no attribute or are marked with the <xref:System.ComponentModel.DesignOnlyAttribute> set to `false` can be set during run time. The default is `false`.  
+  
+ A property with the <xref:System.ComponentModel.DesignOnlyAttribute> set to `true` has its value serialized to the .resx file instead of the `InitializeComponent` method.  
+  
+ For more information, see [Attributes](../Topic/Extending%20Metadata%20Using%20Attributes.md).  
+  
+   
+  
+## Examples  
+ The following example creates a `GetLanguage` property. The property is marked with a <xref:System.ComponentModel.DesignOnlyAttribute>.  
+  
+ [!code-cpp[Classic DesignOnlyAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DesignOnlyAttribute Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic DesignOnlyAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DesignOnlyAttribute Example/CS/source.cs#1)]
+ [!code-vb[Classic DesignOnlyAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DesignOnlyAttribute Example/VB/source.vb#1)]  
+  
+ The next example gets the value of the <xref:System.ComponentModel.DesignOnlyAttribute>. First the code gets a <xref:System.ComponentModel.PropertyDescriptorCollection> with all the properties for the object. Next it indexes into the <xref:System.ComponentModel.PropertyDescriptorCollection> to find the `GetLanguage` property. Then it returns the attributes for this property and saves them in the attributes variable.  
+  
+ The example then prints whether the property is design only by retrieving <xref:System.ComponentModel.DesignOnlyAttribute> from the <xref:System.ComponentModel.AttributeCollection>, and writing it to the console screen.  
+  
+ [!code-cpp[Classic DesignOnlyAttribute Example#2](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DesignOnlyAttribute Example/CPP/source.cpp#2)]
+ [!code-csharp[Classic DesignOnlyAttribute Example#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DesignOnlyAttribute Example/CS/source.cs#2)]
+ [!code-vb[Classic DesignOnlyAttribute Example#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DesignOnlyAttribute Example/VB/source.vb#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,8 +81,9 @@
         <Parameter Name="isDesignOnly" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="isDesignOnly">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="isDesignOnly">
+          <see langword="true" /> if a property can be set only at design time; <see langword="false" /> if the property can be set at design time and at run time.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DesignOnlyAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,7 +109,7 @@
         <ReturnType>System.ComponentModel.DesignOnlyAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the default value for the <see cref="T:System.ComponentModel.DesignOnlyAttribute" />, which is <see cref="F:System.ComponentModel.DesignOnlyAttribute.No" />. This <see langword="static" /> field is read-only.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,9 +138,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The object to test the value equality of.</param>
+        <summary>Returns whether the value of the given object is equal to the current <see cref="T:System.ComponentModel.DesignOnlyAttribute" />.</summary>
+        <returns>
+          <see langword="true" /> if the value of the given object is equal to that of the current; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,8 +168,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code for this instance.</summary>
+        <returns>A 32-bit signed integer hash code.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,8 +192,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Determines if this attribute is the default.</summary>
+        <returns>
+          <see langword="true" /> if the attribute is the default value for this attribute class; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -187,8 +220,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether a property can be set only at design time.</summary>
+        <value>
+          <see langword="true" /> if a property can be set only at design time; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -214,8 +248,15 @@
         <ReturnType>System.ComponentModel.DesignOnlyAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies that a property can be set at design time or at run time. This <see langword="static" /> field is read-only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.DesignOnlyAttribute.No> field is the default setting for this attribute.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Yes">
@@ -240,7 +281,7 @@
         <ReturnType>System.ComponentModel.DesignOnlyAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that a property can be set only at design time. This <see langword="static" /> field is read-only.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

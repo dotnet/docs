@@ -23,8 +23,46 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines a command.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Input.RoutedCommand> and <xref:System.Windows.Input.RoutedUICommand> are two implementations of the <xref:System.Windows.Input.ICommand> interface in [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)].  
+  
+## ICommand in Windows Runtime apps  
+ The <xref:System.Windows.Input.ICommand> interface is the code contract for commands that are written in .NET for Windows Runtime apps. These commands provide the commanding behavior for UI elements such as a Windows Runtime XAML `Button` and in particular an `AppBarButton`. If you're defining commands for Windows Runtime apps you use basically the same techniques you'd use for defining commands for a .NET app. Implement the command by defining a class that implements <xref:System.Windows.Input.ICommand> and specifically implement the <xref:System.Windows.Input.ICommand.Execute%2A> method.  
+  
+ XAML for Windows Runtime does not support x`:Static`, so don't attempt to use the `x:Static` markup extension if the command is used from Windows Runtime XAML. Also, the Windows Runtime does not have any predefined command libraries, so the XAML syntax shown here doesn't really apply for the case where you're implementing the interface and defining the command for Windows Runtime usage.  
+  
+<a name="xamlTextUsage_ICommand"></a>   
+## XAML Attribute Usage  
+ \<*object property*="*predefinedCommandName*"/>  
+  
+ \- or -  
+  
+ \<*object property*="*predefinedCommandName.predefinedCommandName*"/>  
+  
+ \- or -  
+  
+ \<*object property*="{ *customClassName.customCommandName*}"/>  
+  
+<a name="xamlValues_ICommand"></a>   
+## XAML Values  
+ *predefinedClassName*  
+ One of the predefined command classes.  
+  
+ *predefinedCommandName*  
+ One of the predefined commands.  
+  
+ *customClassName*  
+ A custom class that contains the custom command. Custom classes generally require an `xlmns` prefix mapping; see [XAML Namespaces and Namespace Mapping for WPF XAML](../Topic/XAML%20Namespaces%20and%20Namespace%20Mapping%20for%20WPF%20XAML.md).  
+  
+ *customCommandName*  
+ A custom command.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CanExecute">
@@ -53,10 +91,18 @@
         <Parameter Name="parameter" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="parameter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="parameter">Data used by the command.  If the command does not require data to be passed, this object can be set to <see langword="null" />.</param>
+        <summary>Defines the method that determines whether the command can execute in its current state.</summary>
+        <returns>
+          <see langword="true" /> if this command can be executed; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, a command source calls the <xref:System.Windows.Input.ICommand.CanExecute%2A> method when the <xref:System.Windows.Input.ICommand.CanExecuteChanged> event is raised.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CanExecuteChanged">
@@ -82,8 +128,17 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when changes occur that affect whether or not the command should execute.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Normally, a command source calls <xref:System.Windows.Input.ICommand.CanExecute%2A> on the command when this event occurs.  
+  
+ Normally, if the command cannot execute, the command source disables itself.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -112,8 +167,8 @@
         <Parameter Name="parameter" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="parameter">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="parameter">Data used by the command.  If the command does not require data to be passed, this object can be set to <see langword="null" />.</param>
+        <summary>Defines the method to be called when the command is invoked.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

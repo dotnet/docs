@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a tracking record that is created when an state machine instance transitions to a state.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Statements.Tracking.StateMachineStateRecord" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,8 +67,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the display name of the state machine activity that contains the state.</summary>
+        <value>Returns <see cref="T:System.String" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,8 +90,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the display name of executing state when the record is generated.</summary>
+        <value>Returns <see cref="T:System.String" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

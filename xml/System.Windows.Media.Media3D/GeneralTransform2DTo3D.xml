@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides 2-D to 3-D transformation support.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.Visual.TransformToAncestor%2A> method returns a <xref:System.Windows.Media.Media3D.GeneralTransform2DTo3D> object.  
+  
+ <xref:System.Windows.Media.Media3D.GeneralTransform2DTo3D> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CloneCore">
@@ -31,9 +40,16 @@
         <Parameter Name="sourceFreezable" Type="System.Windows.Freezable" />
       </Parameters>
       <Docs>
-        <param name="sourceFreezable">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="sourceFreezable">The object to clone.</param>
+        <summary>Makes the instance a clone (deep copy) of the specified <see cref="T:System.Windows.Freezable" /> using base (non-animated) property values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Media3D.GeneralTransform2DTo3D.CloneCore%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CloneCurrentValueCore">
@@ -52,9 +68,16 @@
         <Parameter Name="sourceFreezable" Type="System.Windows.Freezable" />
       </Parameters>
       <Docs>
-        <param name="sourceFreezable">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="sourceFreezable">The <see cref="T:System.Windows.Freezable" /> to be cloned.</param>
+        <summary>Makes the instance a modifiable clone (deep copy) of the specified <see cref="T:System.Windows.Freezable" /> using current property values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Media3D.GeneralTransform2DTo3D.CloneCurrentValueCore%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceCore">
@@ -71,9 +94,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a new instance of the <see cref="T:System.Windows.Freezable" /> derived class.</summary>
+        <returns>The new instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Media3D.GeneralTransform2DTo3D.CreateInstanceCore%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAsFrozenCore">
@@ -92,9 +122,16 @@
         <Parameter Name="sourceFreezable" Type="System.Windows.Freezable" />
       </Parameters>
       <Docs>
-        <param name="sourceFreezable">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="sourceFreezable">The instance to copy.</param>
+        <summary>Makes the instance a frozen clone of the specified <see cref="T:System.Windows.Freezable" /> using base (non-animated) property values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Media3D.GeneralTransform2DTo3D.GetAsFrozenCore%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCurrentValueAsFrozenCore">
@@ -113,9 +150,16 @@
         <Parameter Name="sourceFreezable" Type="System.Windows.Freezable" />
       </Parameters>
       <Docs>
-        <param name="sourceFreezable">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="sourceFreezable">The <see cref="T:System.Windows.Freezable" /> to copy and freeze.</param>
+        <summary>Makes the current instance a frozen clone of the specified <see cref="T:System.Windows.Freezable" />. If the object has animated dependency properties, their current animated values are copied.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Media3D.GeneralTransform2DTo3D.GetCurrentValueAsFrozenCore%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Transform">
@@ -134,10 +178,18 @@
         <Parameter Name="point" Type="System.Windows.Point" />
       </Parameters>
       <Docs>
-        <param name="point">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="point">The point to transform.</param>
+        <summary>Transforms the specified point and returns the result.</summary>
+        <returns>The result of transforming <paramref name="point" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Media3D.GeneralTransform2DTo3D.Transform%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The transform did not succeed.</exception>
       </Docs>
     </Member>
     <Member MemberName="TryTransform">
@@ -157,11 +209,21 @@
         <Parameter Name="result" Type="System.Windows.Media.Media3D.Point3D&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="inPoint">To be added.</param>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="inPoint">The point to transform.</param>
+        <param name="result">The result of transforming <c>inPoint</c>.</param>
+        <summary>Attempts to transform the specified point and returns a value that indicates whether the transformation was successful.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="inPoint" /> was transformed; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Unlike the <xref:System.Windows.Media.Media3D.GeneralTransform2DTo3D.Transform%2A> method, this method does not throw an exception if the transformation is unsuccessful.  
+  
+ <xref:System.Windows.Media.Media3D.GeneralTransform2DTo3D.TryTransform%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

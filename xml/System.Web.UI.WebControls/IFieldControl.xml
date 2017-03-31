@@ -8,8 +8,15 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a contract that exposes properties that automatically generate fields that are based on data in a data-bound control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This interface provides methods for the <xref:System.Web.UI.WebControls.DetailsView> and <xref:System.Web.UI.WebControls.GridView> data-bound controls. These data-bound controls automatically generate fields based on data.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="FieldsGenerator">
@@ -25,8 +32,8 @@
         <ReturnType>System.Web.UI.IAutoFieldGenerator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="T:System.Web.UI.IAutoFieldGenerator" /> interface, which is the interface that generates fields in a data-bound control.</summary>
+        <value>The interface that generates fields in data-bound controls.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -15,8 +15,25 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides the base functionality for creating data-related collections in the <see cref="N:System.Windows.Forms" /> namespace.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.BaseCollection> class is not intended for use by application developers. Application developers should use <xref:System.Collections.CollectionBase> instead.  
+  
+ The <xref:System.Windows.Forms.BaseCollection> class implements the <xref:System.Collections.ICollection> interface.  
+  
+ Classes that derive from the <xref:System.Windows.Forms.BaseCollection> class include:  
+  
+-   <xref:System.Windows.Forms.BindingsCollection>  
+  
+-   <xref:System.Windows.Forms.GridColumnStylesCollection>  
+  
+-   <xref:System.Windows.Forms.GridTableStylesCollection>  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +47,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.BaseCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,9 +68,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="ar">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="ar">The one-dimensional <see cref="T:System.Array" /> that is the destination of the elements copied from the current <see langword="Array" />.</param>
+        <param name="index">The zero-based relative index in <c>ar</c> at which copying begins.</param>
+        <summary>Copies all the elements of the current one-dimensional <see cref="T:System.Array" /> to the specified one-dimensional <see cref="T:System.Array" /> starting at the specified destination <see cref="T:System.Array" /> index.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,8 +95,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the total number of elements in the collection.</summary>
+        <value>The total number of elements in the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,8 +114,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the object that enables iterating through the members of the collection.</summary>
+        <returns>An object that implements the <see cref="T:System.Collections.IEnumerator" /> interface.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,9 +140,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether the collection is read-only.</summary>
+        <value>This property is always <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The collections that derive from the <xref:System.Windows.Forms.BaseCollection> class are always writable, which is why this property always returns `false`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -149,9 +173,18 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether access to the <see cref="T:System.Collections.ICollection" /> is synchronized.</summary>
+        <value>This property always returns <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a collection is thread safe, the <xref:System.Windows.Forms.BaseCollection.IsSynchronized%2A> property returns `true`, and the programmer does not have to do anything to keep the collection thread safe.  
+  
+ If, as is the case with the <xref:System.Windows.Forms.BaseCollection>, the <xref:System.Windows.Forms.BaseCollection.IsSynchronized%2A> property returns `false`, then the <xref:System.Windows.Forms.BaseCollection.SyncRoot%2A> property returns an object that can be used with the C# `lock` keyword. Use the static <xref:System.Threading.Monitor.Enter%2A> and <xref:System.Threading.Monitor.Exit%2A> methods of the <xref:System.Threading.Monitor> class to manually lock and unlock the synchronization object.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="List">
@@ -167,8 +200,8 @@
         <ReturnType>System.Collections.ArrayList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the list of elements contained in the <see cref="T:System.Windows.Forms.BaseCollection" /> instance.</summary>
+        <value>An <see cref="T:System.Collections.ArrayList" /> containing the elements of the collection. This property returns <see langword="null" /> unless overridden in a derived class.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -193,9 +226,16 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets an object that can be used to synchronize access to the <see cref="T:System.Windows.Forms.BaseCollection" />.</summary>
+        <value>An object that can be used to synchronize the <see cref="T:System.Windows.Forms.BaseCollection" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If, as is the case with the <xref:System.Windows.Forms.BaseCollection>, the <xref:System.Windows.Forms.BaseCollection.IsSynchronized%2A> property returns `false`, then the <xref:System.Windows.Forms.BaseCollection.SyncRoot%2A> property returns an object that can be used with the C# `lock` keyword.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

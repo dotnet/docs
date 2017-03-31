@@ -1,24 +1,29 @@
 ---
 uid: System.Device.Location.GeoPosition`1
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Device.Location.GeoPosition`1.Timestamp
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Device.Location.GeoPosition`1.#ctor(System.DateTimeOffset,`0)
-internalonly: False
----
-
----
-uid: System.Device.Location.GeoPosition`1.Location
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Device.Location.GeoPosition`1.#ctor
-internalonly: False
+manager: "martinek"
+---
+
+---
+uid: System.Device.Location.GeoPosition`1.Location
+manager: "martinek"
+---
+
+---
+uid: System.Device.Location.GeoPosition`1.#ctor
+manager: "martinek"
 ---

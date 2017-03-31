@@ -15,7 +15,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the W3C XML schema data type variety of the type.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,7 +37,7 @@
         <ReturnType>System.Xml.Schema.XmlSchemaDatatypeVariety</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A W3C XML schema atomic type.</summary>
       </Docs>
     </Member>
     <Member MemberName="List">
@@ -58,7 +58,7 @@
         <ReturnType>System.Xml.Schema.XmlSchemaDatatypeVariety</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A W3C XML schema list type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Union">
@@ -79,7 +79,7 @@
         <ReturnType>System.Xml.Schema.XmlSchemaDatatypeVariety</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A W3C XML schema union type.</summary>
       </Docs>
     </Member>
   </Members>

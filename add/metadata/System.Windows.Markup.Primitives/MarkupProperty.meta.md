@@ -1,79 +1,79 @@
 ---
 uid: System.Windows.Markup.Primitives.MarkupProperty
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Primitives.MarkupProperty.IsConstructorArgument
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Primitives.MarkupProperty.IsValueAsString
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Primitives.MarkupProperty.Value
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Primitives.MarkupProperty.IsContent
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Primitives.MarkupProperty.PropertyDescriptor
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Primitives.MarkupProperty.Name
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Primitives.MarkupProperty.IsKey
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Primitives.MarkupProperty.DependencyProperty
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Primitives.MarkupProperty.Items
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Primitives.MarkupProperty.PropertyType
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Primitives.MarkupProperty.IsAttached
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Primitives.MarkupProperty.StringValue
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Primitives.MarkupProperty.Attributes
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Primitives.MarkupProperty.IsComposite
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Primitives.MarkupProperty.TypeReferences
-internalonly: False
+manager: "martinek"
 ---

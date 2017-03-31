@@ -1,54 +1,87 @@
 ---
 uid: System.ComponentModel.Composition.Hosting.TypeCatalog
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.TypeCatalog.#ctor(System.Type[])
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.TypeCatalog.System#ComponentModel#Composition#Primitives#ICompositionElement#DisplayName
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.TypeCatalog.Dispose(System.Boolean)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.TypeCatalog.System#ComponentModel#Composition#Primitives#ICompositionElement#Origin
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Composition.Hosting.TypeCatalog.#ctor
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.TypeCatalog.ToString
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Composition.Hosting.TypeCatalog.Dispose
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.TypeCatalog.#ctor(System.Collections.Generic.IEnumerable{System.Type},System.Reflection.ReflectionContext,System.ComponentModel.Composition.Primitives.ICompositionElement)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.TypeCatalog.#ctor(System.Collections.Generic.IEnumerable{System.Type},System.Reflection.ReflectionContext)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.TypeCatalog.GetEnumerator
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.TypeCatalog.#ctor(System.Collections.Generic.IEnumerable{System.Type},System.ComponentModel.Composition.Primitives.ICompositionElement)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.TypeCatalog.#ctor(System.Collections.Generic.IEnumerable{System.Type})
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

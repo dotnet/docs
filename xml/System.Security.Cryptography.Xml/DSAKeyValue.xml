@@ -11,8 +11,36 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the <see cref="T:System.Security.Cryptography.DSA" /> private key of the <see langword="&lt;KeyInfo&gt;" /> element.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Cryptography.Xml.KeyInfo> class represents the `<KeyInfo>` element, which contains a <xref:System.Security.Cryptography.DSA> public key.  
+  
+ Use <xref:System.Security.Cryptography.Xml.DSAKeyValue> to identify the public key that corresponds to the <xref:System.Security.Cryptography.DSA> private key that was used to create the digital signature.  
+  
+ If a key is not explicitly supplied to the constructor, a new <xref:System.Security.Cryptography.DSA> key pair is randomly generated.  
+  
+ The <xref:System.Security.Cryptography.Xml.DSAKeyValue> class is used with XML signatures. For more information about the W3C specification, see http://www.w3.org/TR/xmldsig-core/.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Security.Cryptography.Xml.DSAKeyValue> class in XML encryption to create a detached signature.  
+  
+ [!code-cpp[System.Security.Cryptography.XML.DSAKeyValue_Detached#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.XML.DSAKeyValue_Detached/CPP/exampledetached.cpp#1)]
+ [!code-csharp[System.Security.Cryptography.XML.DSAKeyValue_Detached#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.XML.DSAKeyValue_Detached/CS/exampledetached.cs#1)]
+ [!code-vb[System.Security.Cryptography.XML.DSAKeyValue_Detached#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.XML.DSAKeyValue_Detached/VB/exampledetached.vb#1)]  
+  
+ The following code example demonstrates how to use the <xref:System.Security.Cryptography.Xml.DSAKeyValue> class in XML encryption to create an envelope signature.  
+  
+ [!code-cpp[System.Security.Cryptography.XML.DSAKeyValue_Envelope#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.XML.DSAKeyValue_Envelope/CPP/exampleenvelope.cpp#1)]
+ [!code-csharp[System.Security.Cryptography.XML.DSAKeyValue_Envelope#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.XML.DSAKeyValue_Envelope/CS/exampleenvelope.cs#1)]
+ [!code-vb[System.Security.Cryptography.XML.DSAKeyValue_Envelope#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.XML.DSAKeyValue_Envelope/VB/exampleenvelope.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,8 +54,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.DSAKeyValue" /> class with a new, randomly-generated <see cref="T:System.Security.Cryptography.DSA" /> public key.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When creating a new <xref:System.Security.Cryptography.DSA> key, this constructor uses the default implementation of <xref:System.Security.Cryptography.DSA> as defined by the <xref:System.Security.Cryptography.CryptoConfig> class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -43,9 +78,24 @@
         <Parameter Name="key" Type="System.Security.Cryptography.DSA" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="key">The instance of an implementation of the <see cref="T:System.Security.Cryptography.DSA" /> class that holds the public key.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.DSAKeyValue" /> class with the specified <see cref="T:System.Security.Cryptography.DSA" /> public key.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Security.Cryptography.Xml.DSAKeyValue> class in XML encryption.  
+  
+ [!code-cpp[System.Security.Cryptography.XML.DSAKeyValue_Detached#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.XML.DSAKeyValue_Detached/CPP/exampledetached.cpp#2)]
+ [!code-csharp[System.Security.Cryptography.XML.DSAKeyValue_Detached#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.XML.DSAKeyValue_Detached/CS/exampledetached.cs#2)]
+ [!code-vb[System.Security.Cryptography.XML.DSAKeyValue_Detached#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.XML.DSAKeyValue_Detached/VB/exampledetached.vb#2)]  
+  
+ [!code-cpp[System.Security.Cryptography.XML.DSAKeyValue_Envelope#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.XML.DSAKeyValue_Envelope/CPP/exampleenvelope.cpp#2)]
+ [!code-csharp[System.Security.Cryptography.XML.DSAKeyValue_Envelope#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.XML.DSAKeyValue_Envelope/CS/exampleenvelope.cs#2)]
+ [!code-vb[System.Security.Cryptography.XML.DSAKeyValue_Envelope#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.XML.DSAKeyValue_Envelope/VB/exampleenvelope.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetXml">
@@ -62,9 +112,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the XML representation of a <see cref="T:System.Security.Cryptography.Xml.DSAKeyValue" /> element.</summary>
+        <returns>The XML representation of the <see cref="T:System.Security.Cryptography.Xml.DSAKeyValue" /> element.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to output XML for a <xref:System.Security.Cryptography.Xml.DSAKeyValue> object.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Key">
@@ -80,9 +137,16 @@
         <ReturnType>System.Security.Cryptography.DSA</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the key value represented by a <see cref="T:System.Security.Cryptography.DSA" /> object.</summary>
+        <value>The public key represented by a <see cref="T:System.Security.Cryptography.DSA" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property represents the DSA key used to sign the XML.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadXml">
@@ -101,9 +165,18 @@
         <Parameter Name="value" Type="System.Xml.XmlElement" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="value">The XML element to load the <see cref="T:System.Security.Cryptography.Xml.DSAKeyValue" /> state from.</param>
+        <summary>Loads a <see cref="T:System.Security.Cryptography.Xml.DSAKeyValue" /> state from an XML element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be used to add XML elements to a <xref:System.Security.Cryptography.Xml.DSAKeyValue> object.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The <paramref name="value" /> parameter is not a valid <see cref="T:System.Security.Cryptography.Xml.DSAKeyValue" /> XML element.</exception>
       </Docs>
     </Member>
   </Members>

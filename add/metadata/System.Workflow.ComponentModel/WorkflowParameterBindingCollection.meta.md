@@ -1,14 +1,20 @@
 ---
 uid: System.Workflow.ComponentModel.WorkflowParameterBindingCollection
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.WorkflowParameterBindingCollection.#ctor(System.Workflow.ComponentModel.Activity)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.WorkflowParameterBindingCollection.GetItem(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

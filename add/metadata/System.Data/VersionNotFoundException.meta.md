@@ -1,24 +1,41 @@
 ---
 uid: System.Data.VersionNotFoundException
-internalonly: False
----
-
----
-uid: System.Data.VersionNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
----
-
----
-uid: System.Data.VersionNotFoundException.#ctor(System.String)
-internalonly: False
----
-
----
-uid: System.Data.VersionNotFoundException.#ctor(System.String,System.Exception)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.VersionNotFoundException.#ctor
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.VersionNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.VersionNotFoundException.#ctor(System.String)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.VersionNotFoundException.#ctor(System.String,System.Exception)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.VersionNotFoundException.#ctor
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

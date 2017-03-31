@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the types of color maps.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Drawing.Imaging.ColorMapType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies a color map for a <see cref="T:System.Drawing.Brush" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -43,7 +43,7 @@
         <ReturnType>System.Drawing.Imaging.ColorMapType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A default color map.</summary>
       </Docs>
     </Member>
   </Members>

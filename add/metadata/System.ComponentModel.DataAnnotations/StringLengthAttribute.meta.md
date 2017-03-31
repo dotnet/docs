@@ -1,29 +1,39 @@
 ---
 uid: System.ComponentModel.DataAnnotations.StringLengthAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.StringLengthAttribute.#ctor(System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.StringLengthAttribute.IsValid(System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.StringLengthAttribute.FormatErrorMessage(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.DataAnnotations.StringLengthAttribute.IsValid
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.StringLengthAttribute.MinimumLength
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.StringLengthAttribute.MaximumLength
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

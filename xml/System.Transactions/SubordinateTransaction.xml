@@ -16,8 +16,16 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a non-rooted transaction that can be delegated. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class derives from <xref:System.Transactions.Transaction> and provides a constructor that takes an implementation of the <xref:System.Transactions.ISimpleTransactionSuperior> interface. Instances of this type are not the root transaction but can be delegated.  
+  
+ ]]></format>
+    </remarks>
+    <threadsafe>This type is thread safe.</threadsafe>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,9 +48,18 @@
       </Parameters>
       <Docs>
         <param name="level">To be added.</param>
-        <param name="superior">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="superior">A <see cref="T:System.Transactions.ISimpleTransactionSuperior" /></param>
+        <summary>Initializes a new instance of the <see cref="T:System.Transactions.SubordinateTransaction" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Only one <xref:System.Transactions.SubordinateTransaction> can be created for a given <xref:System.Transactions.ISimpleTransactionSuperior>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

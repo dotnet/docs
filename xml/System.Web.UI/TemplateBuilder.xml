@@ -15,8 +15,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Supports the page parser in building a template and the child controls it contains.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To use a custom <xref:System.Web.UI.TemplateBuilder> class for a control, create a custom <xref:System.Web.UI.ControlBuilder> for the control, and then return the custom <xref:System.Web.UI.TemplateBuilder> control from the <xref:System.Web.UI.ControlBuilder.GetChildControlType%2A> method.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +37,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.TemplateBuilder" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +55,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Used during design time to build the template and its child controls.</summary>
+        <returns>A reference to the instance of the <see cref="T:System.Web.UI.TemplateBuilder" /> class.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,7 +74,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Called by the parser to inform the builder that the parsing of the control's opening and closing tags is complete.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,13 +99,13 @@
         <Parameter Name="attribs" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="parser">To be added.</param>
-        <param name="parentBuilder">To be added.</param>
-        <param name="type">To be added.</param>
-        <param name="tagName">To be added.</param>
-        <param name="ID">To be added.</param>
-        <param name="attribs">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="parser">The <see cref="T:System.Web.UI.TemplateParser" /> responsible for parsing the control.</param>
+        <param name="parentBuilder">The <see cref="T:System.Web.UI.ControlBuilder" /> responsible for building the control.</param>
+        <param name="type">The <see cref="T:System.Type" /> assigned to the control that the builder will create.</param>
+        <param name="tagName">The name of the tag to build. This allows the builder to support multiple tag types.</param>
+        <param name="ID">The <see cref="P:System.Web.UI.ControlBuilder.ID" /> assigned to the control.</param>
+        <param name="attribs">The <see cref="T:System.Collections.IDictionary" /> that holds all the specified tag attributes.</param>
+        <summary>Initializes the template builder when a Web request is made.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,9 +125,16 @@
         <Parameter Name="container" Type="System.Web.UI.Control" />
       </Parameters>
       <Docs>
-        <param name="container">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="container">The <see cref="T:System.Web.UI.Control" /> to contain the instances of controls from the inline template.</param>
+        <summary>Defines the <see cref="T:System.Web.UI.Control" /> object that child controls and templates belong to in design time.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.TemplateBuilder.InstantiateIn%2A> method is required when implementing the <xref:System.Web.UI.ITemplate> interface. The <xref:System.Web.UI.TemplateBuilder.InstantiateIn%2A> method is used only in design time.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NeedsTagInnerText">
@@ -137,9 +151,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Determines if the control builder needs to get its inner text.</summary>
+        <returns>
+          <see langword="true" /> if the control builder needs to get its inner text. The default is <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.TemplateBuilder.SetTagInnerText%2A> method needs to be called when we are in design time. The <xref:System.Web.UI.TemplateBuilder.NeedsTagInnerText%2A> method returns the value of the <xref:System.Web.UI.ControlBuilder.InDesigner%2A> property of the base <xref:System.Web.UI.ControlBuilder> class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetTagInnerText">
@@ -158,9 +180,16 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="text">The inner text of the template.</param>
+        <summary>Saves the inner text of the template tag.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.TemplateBuilder.SetTagInnerText%2A> method overrides the base class's <xref:System.Web.UI.ControlBuilder.SetTagInnerText%2A?displayProperty=fullName> method and sets the value of the <xref:System.Web.UI.TemplateBuilder.Text%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -176,9 +205,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the text between the opening and closing tags of the template.</summary>
+        <value>The text that appears between the opening and closing tags of the template.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.TemplateBuilder.Text%2A> property is used by the designer to specify or determine the text that appears between the opening and closing tags of the template.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

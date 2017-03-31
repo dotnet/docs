@@ -1,4 +1,6 @@
 ---
 uid: System.Data.Linq.ChangeAction
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

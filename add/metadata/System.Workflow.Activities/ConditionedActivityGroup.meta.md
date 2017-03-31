@@ -1,54 +1,83 @@
 ---
 uid: System.Workflow.Activities.ConditionedActivityGroup
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.ConditionedActivityGroup.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.ConditionedActivityGroup.UntilCondition
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.ConditionedActivityGroup.UntilConditionProperty
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.ConditionedActivityGroup.#ctor(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.ConditionedActivityGroup.GetWhenCondition(System.Object)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.ConditionedActivityGroup.GetChildActivityExecutedCount(System.Workflow.ComponentModel.Activity)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.ConditionedActivityGroup.WhenConditionProperty
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.ConditionedActivityGroup.System#Workflow#ComponentModel#IActivityEventListener{System#Workflow#ComponentModel#ActivityExecutionStatusChangedEventArgs}#OnEvent(System.Object,System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.ConditionedActivityGroup.GetDynamicActivity(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.ConditionedActivityGroup.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.ConditionedActivityGroup.SetWhenCondition(System.Object,System.Object)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

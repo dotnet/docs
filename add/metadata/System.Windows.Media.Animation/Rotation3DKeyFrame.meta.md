@@ -1,54 +1,80 @@
 ---
 uid: System.Windows.Media.Animation.Rotation3DKeyFrame
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.Rotation3DKeyFrame.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.Rotation3DKeyFrame.Value
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.Rotation3DKeyFrame.ValueProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.Rotation3DKeyFrame.InterpolateValueCore(System.Windows.Media.Media3D.Rotation3D,System.Double)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Animation.Rotation3DKeyFrame.KeyTime
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.Rotation3DKeyFrame.InterpolateValue(System.Windows.Media.Media3D.Rotation3D,System.Double)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.Rotation3DKeyFrame.#ctor(System.Windows.Media.Media3D.Rotation3D)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Animation.Rotation3DKeyFrame.System#Windows#Media#Animation#IKeyFrame#Value
-internalonly: False
+ms.author: "jimwalk"
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Media.Animation.Rotation3DKeyFrame.#ctor(System.Windows.Media.Media3D.Rotation3D,System.Windows.Media.Animation.KeyTime)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.Rotation3DKeyFrame.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.Rotation3DKeyFrame.KeyTimeProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

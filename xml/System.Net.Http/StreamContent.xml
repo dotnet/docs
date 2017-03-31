@@ -17,7 +17,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides HTTP content based on a stream.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -40,8 +40,8 @@
         <Parameter Name="content" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="content">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="content">The content used to initialize the <see cref="T:System.Net.Http.StreamContent" />.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Net.Http.StreamContent" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,10 +65,12 @@
         <Parameter Name="bufferSize" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="content">To be added.</param>
-        <param name="bufferSize">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="content">The content used to initialize the <see cref="T:System.Net.Http.StreamContent" />.</param>
+        <param name="bufferSize">The size, in bytes, of the buffer for the <see cref="T:System.Net.Http.StreamContent" />.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Net.Http.StreamContent" /> class.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="content" /> was <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="bufferSize" /> was less than or equal to zero.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateContentReadStreamAsync">
@@ -91,9 +93,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Write the HTTP stream content to a memory stream as an asynchronous operation.</summary>
+        <returns>The task object representing the asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This operation will not block. The returned <xref:System.Threading.Tasks.Task%601> object will complete after all of the content has been written to the memory stream.  
+  
+ The <xref:System.Net.Http.StreamContent.CreateContentReadStreamAsync%2A> method buffers the content to a memory stream. Derived classes can override this behavior if there is a better way to retrieve the content as stream. For example, a byte array or a string could use a more efficient method way such as wrapping a read-only <xref:System.IO.MemoryStream> around the bytes or string.)  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -118,9 +129,17 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to releases only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Net.Http.StreamContent" /> and optionally disposes of the managed resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Net.Http.StreamContent> references. This method invokes the `Dispose()` method of each referenced object.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SerializeToStreamAsync">
@@ -146,11 +165,18 @@
         <Parameter Name="context" Type="System.Net.TransportContext" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="stream">The target stream.</param>
+        <param name="context">Information about the transport (channel binding token, for example). This parameter may be <see langword="null" />.</param>
+        <summary>Serialize the HTTP content to a stream as an asynchronous operation.</summary>
+        <returns>The task object representing the asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This operation will not block. The returned <xref:System.Threading.Tasks.Task> object will complete after all of the content has been serialized to the target stream.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TryComputeLength">
@@ -175,10 +201,18 @@
         <Parameter Name="length" Type="System.Int64&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="length">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="length">The length in bytes of the stream content.</param>
+        <summary>Determines whether the stream content has a valid length in bytes.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="length" /> is a valid length; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.Http.StreamContent.TryComputeLength%2A> method gives HTTP stream content the ability to calculate the content length. This is useful for content types which are able to easily calculate the content length. If computing the content length is not possible or expensive (would require the system to buffer the whole content where the serialization would be expensive or require the system to allocate a lot of memory), this method can return `false`. If this method returns `false`, this implies that either chunked transfer is needed or the content must get buffered before being sent to the server.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

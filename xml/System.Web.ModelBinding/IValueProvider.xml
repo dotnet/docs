@@ -8,7 +8,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines the methods that are required for a value provider.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,9 +28,10 @@
         <Parameter Name="prefix" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="prefix">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="prefix">The prefix.</param>
+        <summary>Returns a value that specifies whether the collection contains the specified prefix.</summary>
+        <returns>
+          <see langword="true" /> if the collection contains the specified prefix; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,9 +51,9 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">The key.</param>
+        <summary>Returns a value object using the specified key.</summary>
+        <returns>The value object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

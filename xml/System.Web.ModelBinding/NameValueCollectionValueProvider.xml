@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the base class for value providers whose values come from a name/value collection.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,9 +33,9 @@
         <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
-        <param name="collection">To be added.</param>
-        <param name="culture">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="collection">The collection.</param>
+        <param name="culture">The culture information.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.NameValueCollectionValueProvider" /> class by using a collection and culture information.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,10 +54,10 @@
         <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
-        <param name="collection">To be added.</param>
-        <param name="unvalidatedCollection">To be added.</param>
-        <param name="culture">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="collection">The collection.</param>
+        <param name="unvalidatedCollection">The unvalidated collection.</param>
+        <param name="culture">The culture information.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.NameValueCollectionValueProvider" /> class by using a collection, an unvalidated version of the collection, and culture information.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,9 +77,10 @@
         <Parameter Name="prefix" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="prefix">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="prefix">The prefix.</param>
+        <summary>Returns a value that indicates whether the value provider contains the specified prefix.</summary>
+        <returns>
+          <see langword="true" /> if the value provider contains the specified prefix; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,10 +100,17 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="key">The key.</param>
+        <summary>Returns the value for the specified key.</summary>
+        <returns>The value for the specified key.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling this method is equivalent to calling the <xref:System.Web.ModelBinding.NameValueCollectionValueProvider.GetValue%2A> method overload and passing `false` for the `skipValidation` parameter.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetValue">
@@ -122,10 +130,11 @@
         <Parameter Name="skipValidation" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="skipValidation">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">The key.</param>
+        <param name="skipValidation">
+          <see langword="true" /> to skip validation; otherwise, <see langword="false" />.</param>
+        <summary>Returns the value for the specified key and optionally enables the caller to specify whether request validation should be skipped.</summary>
+        <returns>The value for the specified key.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

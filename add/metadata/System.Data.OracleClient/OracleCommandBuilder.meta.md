@@ -1,79 +1,139 @@
 ---
 uid: System.Data.OracleClient.OracleCommandBuilder
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleCommandBuilder.#ctor(System.Data.OracleClient.OracleDataAdapter)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleCommandBuilder.DataAdapter
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleCommandBuilder.QuoteIdentifier(System.String)
-internalonly: False
----
-
----
-uid: System.Data.OracleClient.OracleCommandBuilder.DeriveParameters(System.Data.OracleClient.OracleCommand)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleCommandBuilder.#ctor
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.OracleClient.OracleCommandBuilder.GetUpdateCommand
-internalonly: False
+uid: System.Data.OracleClient.OracleCommandBuilder.DeriveParameters(System.Data.OracleClient.OracleCommand)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.OracleClient.OracleCommandBuilder.#ctor
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleCommandBuilder.GetDeleteCommand
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.OracleClient.OracleCommandBuilder.GetUpdateCommand
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.OracleClient.OracleCommandBuilder.GetDeleteCommand
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleCommandBuilder.GetInsertCommand(System.Boolean)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleCommandBuilder.GetDeleteCommand(System.Boolean)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleCommandBuilder.GetInsertCommand
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleCommandBuilder.UnquoteIdentifier(System.String)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.OracleClient.OracleCommandBuilder.GetInsertCommand
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleCommandBuilder.SchemaSeparator
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleCommandBuilder.CatalogLocation
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleCommandBuilder.CatalogSeparator
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleCommandBuilder.GetUpdateCommand(System.Boolean)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.OracleClient.OracleCommandBuilder.GetUpdateCommand
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

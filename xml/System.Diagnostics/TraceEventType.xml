@@ -19,8 +19,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Identifies the type of event that has caused the trace.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Diagnostics.TraceEventType> is used to identify the event that caused a trace in calls to the <xref:System.Diagnostics.TraceSource.TraceEvent%2A?displayProperty=fullName> methods.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Critical">
@@ -45,7 +52,7 @@
         <ReturnType>System.Diagnostics.TraceEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Fatal error or application crash.</summary>
       </Docs>
     </Member>
     <Member MemberName="Error">
@@ -70,7 +77,7 @@
         <ReturnType>System.Diagnostics.TraceEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Recoverable error.</summary>
       </Docs>
     </Member>
     <Member MemberName="Information">
@@ -95,7 +102,7 @@
         <ReturnType>System.Diagnostics.TraceEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Informational message.</summary>
       </Docs>
     </Member>
     <Member MemberName="Resume">
@@ -121,7 +128,7 @@
         <ReturnType>System.Diagnostics.TraceEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Resumption of a logical operation.</summary>
       </Docs>
     </Member>
     <Member MemberName="Start">
@@ -147,7 +154,7 @@
         <ReturnType>System.Diagnostics.TraceEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Starting of a logical operation.</summary>
       </Docs>
     </Member>
     <Member MemberName="Stop">
@@ -173,7 +180,7 @@
         <ReturnType>System.Diagnostics.TraceEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stopping of a logical operation.</summary>
       </Docs>
     </Member>
     <Member MemberName="Suspend">
@@ -199,7 +206,7 @@
         <ReturnType>System.Diagnostics.TraceEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Suspension of a logical operation.</summary>
       </Docs>
     </Member>
     <Member MemberName="Transfer">
@@ -225,7 +232,7 @@
         <ReturnType>System.Diagnostics.TraceEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Changing of correlation identity.</summary>
       </Docs>
     </Member>
     <Member MemberName="Verbose">
@@ -250,7 +257,7 @@
         <ReturnType>System.Diagnostics.TraceEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Debugging trace.</summary>
       </Docs>
     </Member>
     <Member MemberName="Warning">
@@ -275,7 +282,7 @@
         <ReturnType>System.Diagnostics.TraceEventType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Noncritical problem.</summary>
       </Docs>
     </Member>
   </Members>

@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the scope of a writing progress indicator for [!INCLUDE[TLA#tla_metro](~/includes/tlasharptla-metro-md.md)] content.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ These values are primarily used for the <xref:System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventArgs.WritingLevel%2A> property of the <xref:System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventArgs> class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="FixedDocumentSequenceWritingProgress">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An entire sequence of one or more documents.</summary>
       </Docs>
     </Member>
     <Member MemberName="FixedDocumentWritingProgress">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A single document.</summary>
       </Docs>
     </Member>
     <Member MemberName="FixedPageWritingProgress">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A single page.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -75,7 +82,7 @@
         <ReturnType>System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>There is no interpretation for the progress value.</summary>
       </Docs>
     </Member>
   </Members>

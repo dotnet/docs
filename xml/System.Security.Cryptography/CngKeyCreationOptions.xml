@@ -24,8 +24,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies options used for key creation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This type is used by the <xref:System.Security.Cryptography.CngKeyCreationParameters.KeyCreationOptions%2A> property.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="MachineKey">
@@ -50,7 +57,7 @@
         <ReturnType>System.Security.Cryptography.CngKeyCreationOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A machine-wide key is created.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -75,7 +82,7 @@
         <ReturnType>System.Security.Cryptography.CngKeyCreationOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No key creation options are used.</summary>
       </Docs>
     </Member>
     <Member MemberName="OverwriteExistingKey">
@@ -100,7 +107,7 @@
         <ReturnType>System.Security.Cryptography.CngKeyCreationOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The existing key is overwritten during key creation.</summary>
       </Docs>
     </Member>
   </Members>

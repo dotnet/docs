@@ -1,9 +1,13 @@
 ---
 uid: System.Data.Services.DataServiceProcessingPipelineEventArgs
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Services.DataServiceProcessingPipelineEventArgs.OperationContext
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

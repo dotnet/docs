@@ -16,8 +16,22 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides event-based control flow modeling.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This activity behaves similarly to <xref:System.Activities.Statements.Switch> in that it executes only one of several activities in response to events. The action chosen to be executed is defined by an event, chosen from a set of events.  
+  
+   
+  
+## Examples  
+ The following code sample demonstrates creating a <xref:System.Activities.Statements.Pick> activity. This example is from the [Using the Pick Activity](../Topic/Using%20the%20Pick%20Activity.md) sample.  
+  
+ [!code-csharp[wfs_Pick#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_pick/cs/program.cs#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,8 +45,17 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Statements.Pick" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates creating a <xref:System.Activities.Statements.Pick> activity. This example is from the [Using the Pick Activity](../Topic/Using%20the%20Pick%20Activity.md) sample.  
+  
+ [!code-csharp[wfs_Pick#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_pick/cs/program.cs#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Branches">
@@ -48,9 +71,18 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Activities.Statements.PickBranch&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>The collection of <see cref="T:System.Activities.Statements.PickBranch" /> objects that the <see cref="T:System.Activities.Statements.Pick" /> activity potentially executes one of, based on incoming events.</summary>
+        <value>The branch collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates setting the Branches property of a <xref:System.Activities.Statements.Pick> activity. This example is from the [Using the Pick Activity](../Topic/Using%20the%20Pick%20Activity.md) sample.  
+  
+ [!code-csharp[wfs_Pick#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_pick/cs/program.cs#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CacheMetadata">

@@ -1,14 +1,20 @@
 ---
 uid: System.ServiceModel.Activities.Presentation.Factories.SendAndReceiveReplyFactory
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Presentation.Factories.SendAndReceiveReplyFactory.Create(System.Windows.DependencyObject)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Presentation.Factories.SendAndReceiveReplyFactory.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -1,24 +1,41 @@
 ---
 uid: System.Activities.Expressions.DelegateArgumentValue`1
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Expressions.DelegateArgumentValue`1.#ctor(System.Activities.DelegateArgument)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Expressions.DelegateArgumentValue`1.DelegateArgument
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Expressions.DelegateArgumentValue`1.LocationReference
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Expressions.DelegateArgumentValue`1.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Expressions.DelegateArgumentValue`1.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

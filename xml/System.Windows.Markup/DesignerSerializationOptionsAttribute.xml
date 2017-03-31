@@ -16,8 +16,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the serialization flags for a property.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Markup.DesignerSerializationOptionsAttribute> provides a constraint hint for the form that designers and design surfaces should use when interacting with the attributed property. Generally the reason for doing so is to hint <xref:System.Windows.Markup.DesignerSerializationOptions>. You might do this in cases where interacting with that property as a content-serialized form of the string has risk of introducing spurious white space. An example case where <xref:System.Windows.Markup.DesignerSerializationOptionsAttribute> is applied for this reason is <xref:System.Windows.FrameworkElement.Name%2A?displayProperty=fullName>.  
+  
+ Attribute usage for <xref:System.Windows.Markup.DesignerSerializationOptionsAttribute> supports assigning to a method. This enables you to declare serialization options for a XAML attached property, by assigning <xref:System.Windows.Markup.DesignerSerializationOptionsAttribute> on the `Get` accessor method that supports the attached property usage pattern. An example of this in the WPF types is <xref:System.Windows.Markup.XmlAttributeProperties.XmlSpace%2A> and its `Get` accessor <xref:System.Windows.Markup.XmlAttributeProperties.GetXmlSpace%2A>.  
+  
+ Note that <xref:System.Windows.Markup.DesignerSerializationOptionsAttribute> hints the desired serialization form, not whether the property is or is not serialized. If you want to influence other aspects of property serialization, you can use <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute>, or can implement `ShouldSerialize` pattern methods on the owner class. For more information on the general .NET serialization patterns for design time, see [Designer Serialization Overview](../Topic/Designer%20Serialization%20Overview.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,9 +44,11 @@
         <Parameter Name="designerSerializationOptions" Type="System.Windows.Markup.DesignerSerializationOptions" />
       </Parameters>
       <Docs>
-        <param name="designerSerializationOptions">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="designerSerializationOptions">Specifies how the property is to be serialized.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.DesignerSerializationOptionsAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
+          <paramref name="designerSerializationOptions" /> is not a valid <see cref="T:System.Windows.Markup.DesignerSerializationOptions" /> value.</exception>
       </Docs>
     </Member>
     <Member MemberName="DesignerSerializationOptions">
@@ -51,9 +64,16 @@
         <ReturnType>System.Windows.Markup.DesignerSerializationOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Windows.Markup.DesignerSerializationOptions" /> set on the attribute.</summary>
+        <value>The serialization option, as a value of the enumeration.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Currently the only possible value is <xref:System.Windows.Markup.DesignerSerializationOptions?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

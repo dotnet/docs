@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an SQL transaction to be made at a data source. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The application creates an <xref:System.Data.OleDb.OleDbTransaction> object by calling <xref:System.Data.OleDb.OleDbConnection.BeginTransaction%2A> on the <xref:System.Data.OleDb.OleDbConnection> object. All subsequent operations associated with the transaction (for example, committing or aborting the transaction), are performed on the <xref:System.Data.OleDb.OleDbTransaction> object.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Begin">
@@ -29,9 +36,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Initiates a nested database transaction.</summary>
+        <returns>A nested database transaction.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The new transaction is nested within the current transaction.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">Nested transactions are not supported.</exception>
       </Docs>
     </Member>
     <Member MemberName="Begin">
@@ -50,10 +65,18 @@
         <Parameter Name="isolevel" Type="System.Data.IsolationLevel" />
       </Parameters>
       <Docs>
-        <param name="isolevel">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="isolevel">The isolation level to use for the transaction.</param>
+        <summary>Initiates a nested database transaction and specifies the isolation level to use for the new transaction.</summary>
+        <returns>A nested database transaction.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The new transaction is nested within the current transaction.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">Nested transactions are not supported.</exception>
       </Docs>
     </Member>
     <Member MemberName="Commit">
@@ -70,8 +93,24 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Commits the database transaction.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates an <xref:System.Data.OleDb.OleDbConnection> and an <xref:System.Data.OleDb.OleDbTransaction>. It also demonstrates how to use the <xref:System.Data.OleDb.OleDbConnection.BeginTransaction%2A>, a <xref:System.Data.OleDb.OleDbTransaction.Commit%2A>, and <xref:System.Data.OleDb.OleDbTransaction.Rollback%2A> methods.  
+  
+ [!code-csharp[Classic WebData OleDbConnection.BeginTransaction1 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OleDbConnection.BeginTransaction1 Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData OleDbConnection.BeginTransaction1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OleDbConnection.BeginTransaction1 Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Exception">An error occurred while trying to commit the transaction.</exception>
+        <exception cref="T:System.InvalidOperationException">The transaction has already been committed or rolled back.  
+  
+ -or-  
+  
+ The connection is broken.</exception>
       </Docs>
     </Member>
     <Member MemberName="Connection">
@@ -87,9 +126,16 @@
         <ReturnType>System.Data.OleDb.OleDbConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Data.OleDb.OleDbConnection" /> object associated with the transaction, or <see langword="null" /> if the transaction is no longer valid.</summary>
+        <value>The <see cref="T:System.Data.OleDb.OleDbConnection" /> object associated with the transaction.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A single application may have multiple database connections, each with zero or more transactions. This property lets you determine the connection object associated with a particular transaction created by <xref:System.Data.OleDb.OleDbConnection.BeginTransaction%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DbConnection">
@@ -144,9 +190,16 @@
         <ReturnType>System.Data.IsolationLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the <see cref="T:System.Data.IsolationLevel" /> for this transaction.</summary>
+        <value>The <see cref="T:System.Data.IsolationLevel" /> for this transaction. The default is <see langword="ReadCommitted" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Parallel transactions are not supported. Therefore, the <xref:System.Data.IsolationLevel> applies to the whole transaction.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Rollback">
@@ -163,8 +216,29 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Rolls back a transaction from a pending state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The transaction can only be rolled back from a pending state (after <xref:System.Data.OleDb.OleDbConnection.BeginTransaction%2A> has been called, but before <xref:System.Data.OleDb.OleDbTransaction.Commit%2A> is called). The transaction will be rolled back in the event it is disposed before `Commit` or `Rollback` is called.  
+  
+   
+  
+## Examples  
+ The following example creates an <xref:System.Data.OleDb.OleDbConnection> and an <xref:System.Data.OleDb.OleDbTransaction>. It also demonstrates how to use the <xref:System.Data.OleDb.OleDbConnection.BeginTransaction%2A>, a <xref:System.Data.OleDb.OleDbTransaction.Commit%2A>, and <xref:System.Data.OleDb.OleDbTransaction.Rollback%2A> methods.  
+  
+ [!code-csharp[Classic WebData OleDbConnection.BeginTransaction1 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OleDbConnection.BeginTransaction1 Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData OleDbConnection.BeginTransaction1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OleDbConnection.BeginTransaction1 Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Exception">An error occurred while trying to commit the transaction.</exception>
+        <exception cref="T:System.InvalidOperationException">The transaction has already been committed or rolled back.  
+  
+ -or-  
+  
+ The connection is broken.</exception>
       </Docs>
     </Member>
   </Members>

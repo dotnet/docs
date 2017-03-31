@@ -1,14 +1,17 @@
 ---
 uid: Microsoft.VisualC.StlClr.Generic.IRandomAccessContainer`1
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.StlClr.Generic.IRandomAccessContainer`1.valid_bias(System.Int32)
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.StlClr.Generic.IRandomAccessContainer`1.at_bias(System.Int32)
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---

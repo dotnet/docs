@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides data for the <see cref="E:System.Windows.Shell.JumpList.JumpItemsRejected" /> event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Shell.JumpItemsRejectedEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,10 +44,18 @@
         <Parameter Name="reasons" Type="System.Collections.Generic.IList&lt;System.Windows.Shell.JumpItemRejectionReason&gt;" />
       </Parameters>
       <Docs>
-        <param name="rejectedItems">To be added.</param>
-        <param name="reasons">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="rejectedItems">The list of Jump List items that could not be added to the Jump List by the Windows shell.</param>
+        <param name="reasons">The list of reasons why the rejected Jump List items could not be added to the Jump List.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Shell.JumpItemsRejectedEventArgs" /> class that has the specified parameters.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Every rejected item must have a corresponding rejection reason.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The count of <paramref name="rejectedItems " />does not equal the count of rejection <paramref name="reasons" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="RejectedItems">
@@ -63,8 +71,8 @@
         <ReturnType>System.Collections.Generic.IList&lt;System.Windows.Shell.JumpItem&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the list of Jump List items that could not be added to the Jump List by the Windows shell.</summary>
+        <value>The list of Jump List items that could not be added to the Jump List by the Windows shell.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,8 +89,8 @@
         <ReturnType>System.Collections.Generic.IList&lt;System.Windows.Shell.JumpItemRejectionReason&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the list of reasons why the rejected Jump List items could not be added to the Jump List.</summary>
+        <value>The list of reasons why the rejected Jump List items could not be added to the Jump List.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

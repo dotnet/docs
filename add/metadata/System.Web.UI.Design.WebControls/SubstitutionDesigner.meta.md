@@ -1,14 +1,21 @@
 ---
 uid: System.Web.UI.Design.WebControls.SubstitutionDesigner
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.SubstitutionDesigner.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.SubstitutionDesigner.GetDesignTimeHtml
-internalonly: False
+---
+
+---
+uid: System.Web.UI.Design.WebControls.SubstitutionDesigner.GetDesignTimeHtml
+ms.author: "riande"
+manager: "wpickett"
 ---

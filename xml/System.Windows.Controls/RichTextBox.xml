@@ -23,8 +23,51 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a rich editing control which operates on <see cref="T:System.Windows.Documents.FlowDocument" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Documents.FlowDocument> is the only supported child element for a <xref:System.Windows.Controls.RichTextBox>.  
+  
+> [!IMPORTANT]
+>  <xref:System.Windows.Controls.RichTextBox> has built-in handling for the bubbling  <xref:System.Windows.UIElement.MouseUp> and <xref:System.Windows.UIElement.MouseDown> events.  Consequently, custom event handlers that listen for `MouseUp` or `MouseDown` events from a <xref:System.Windows.Controls.RichTextBox> will never be called.  If you need to respond to these events, listen for the tunneling <xref:System.Windows.UIElement.PreviewMouseUp> and <xref:System.Windows.UIElement.PreviewMouseDown> events instead, or register the handlers with the <xref:System.Windows.EventSetter.HandledEventsToo%2A> argument (this latter option is only available through code). Do not mark the event handled unless you deliberately want to disable <xref:System.Windows.Controls.RichTextBox> native handling of these events, and be aware that this has notable effects on the control's [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)].  
+  
+ While <xref:System.Windows.Controls.RichTextBox> supports copying and pasting of images, certain scenarios are currently unsupported and may not work properly.  The following table summarizes these scenarios and expected results.  
+  
+|Image Copy Source|Image Paste Result|  
+|-----------------------|------------------------|  
+|Image source is a graphic metafile|No image is pasted|  
+|Image source uses relative path or link|Garbled or blank image is pasted|  
+|Image source link does not end with an expected image format (.PNG, .JPG, .GIF)|Garbled or blank image is pasted|  
+|Image source copied from malformed RichText (RTF)|Link to image source is pasted (rather than image)|  
+  
+ Pasting HTML content into a <xref:System.Windows.Controls.RichTextBox> might result in unexpected behavior because <xref:System.Windows.Controls.RichTextBox> uses RTF format rather than directly using HTML format.  
+  
+ Text always wraps in a <xref:System.Windows.Controls.RichTextBox>. If you do not want text to wrap then set the <xref:System.Windows.Documents.FlowDocument.PageWidth%2A> on the <xref:System.Windows.Documents.FlowDocument> to be larger than the width of the <xref:System.Windows.Controls.RichTextBox>. However, once the page width is reached the text still wraps.  
+  
+ Horizontally and vertically aligning content within a <xref:System.Windows.Controls.RichTextBox> is done with the <xref:System.Windows.Controls.Control.HorizontalContentAlignment%2A> and <xref:System.Windows.Controls.Control.VerticalContentAlignment%2A> properties. Aligning the <xref:System.Windows.Controls.RichTextBox> within the layout of the page is done with the <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> and <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> properties.  
+  
+ Scrollbars are not visible on a <xref:System.Windows.Controls.RichTextBox> by default. To make a scrollbar visible, set the <xref:System.Windows.Controls.Primitives.TextBoxBase.VerticalScrollBarVisibility%2A> property to <xref:System.Windows.Controls.ScrollBarVisibility> or <xref:System.Windows.Controls.ScrollBarVisibility>.  
+  
+ Usually, the <xref:System.Windows.Controls.Primitives.TextBoxBase.TextChanged> event should be used to detect when the text in a <xref:System.Windows.Controls.TextBox> or <xref:System.Windows.Controls.RichTextBox> changes, rather then <xref:System.Windows.UIElement.KeyDown> as you might expect. For an example, see [How to: Detect When Text in a TextBox Has Changed](../Topic/How%20to:%20Detect%20When%20Text%20in%20a%20TextBox%20Has%20Changed.md).  
+  
+ <xref:System.Windows.Controls.RichTextBox> supports a variety of keyboard commands. For a list of keyboard commands, see <xref:System.Windows.Documents.EditingCommands>.  
+  
+ Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
+  
+   
+  
+## Examples  
+ The following example declares a <xref:System.Windows.Controls.RichTextBox> that contains a simple <xref:System.Windows.Documents.FlowDocument>.  
+  
+ [!code-xml[RichTextBoxSnippets#_RTB_XAML](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml#_rtb_xaml)]  
+  
+ [!code-csharp[RichTextBoxMiscSnippets_procedural_snip#RichTextBoxCodeOnlyExample](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxMiscSnippets_procedural_snip/CSharp/RichTextBoxExample.cs#richtextboxcodeonlyexample)]
+ [!code-vb[RichTextBoxMiscSnippets_procedural_snip#RichTextBoxCodeOnlyExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxMiscSnippets_procedural_snip/visualbasic/richtextboxexample.vb#richtextboxcodeonlyexample)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,8 +81,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new, default instance of the <see cref="T:System.Windows.Controls.RichTextBox" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor creates an empty <xref:System.Windows.Documents.FlowDocument> that is associated with the Document property.  Specifically, the empty <xref:System.Windows.Documents.FlowDocument> contains a single <xref:System.Windows.Documents.Paragraph>, which contains a single <xref:System.Windows.Documents.Run> which contains no text.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -55,9 +105,19 @@
         <Parameter Name="document" Type="System.Windows.Documents.FlowDocument" />
       </Parameters>
       <Docs>
-        <param name="document">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="document">A <see cref="T:System.Windows.Documents.FlowDocument" /> to be added as the initial contents of the new <see cref="T:System.Windows.Controls.RichTextBox" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.RichTextBox" /> class, adding a specified <see cref="T:System.Windows.Documents.FlowDocument" /> as the initial content.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example illustrates use of this constructor.  
+  
+ [!code-csharp[RichTextBoxSnippets#_RTB_Constructor](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_rtb_constructor)]
+ [!code-vb[RichTextBoxSnippets#_RTB_Constructor](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_rtb_constructor)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CaretPosition">
@@ -78,9 +138,23 @@
         <ReturnType>System.Windows.Documents.TextPointer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the position of the input caret.</summary>
+        <value>A <see cref="T:System.Windows.Documents.TextPointer" /> object specifying the position of the input caret.  
+  
+ By default, the caret is at the first insertion position at the beginning of the content hosted by the <see cref="T:System.Windows.Controls.RichTextBox" />. See <see cref="T:System.Windows.Documents.TextPointer" /> for more information on text position terminology like "insertion position".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example illustrates the use of this property.  
+  
+ [!code-csharp[RichTextBoxSnippets#_RTB_CaretPosition](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_rtb_caretposition)]
+ [!code-vb[RichTextBoxSnippets#_RTB_CaretPosition](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_rtb_caretposition)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">An attempt is made to set this property to <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">An attempt is made to set this property to a <see cref="T:System.Windows.Documents.TextPointer" /> that references a position outside of the current document.</exception>
       </Docs>
     </Member>
     <Member MemberName="Document">
@@ -96,9 +170,29 @@
         <ReturnType>System.Windows.Documents.FlowDocument</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see cref="T:System.Windows.Documents.FlowDocument" /> that represents the contents of the <see cref="T:System.Windows.Controls.RichTextBox" />.</summary>
+        <value>A <see cref="T:System.Windows.Documents.FlowDocument" /> object that represents the contents of the <see cref="T:System.Windows.Controls.RichTextBox" />.  
+  
+ By default, this property is set to an empty <see cref="T:System.Windows.Documents.FlowDocument" />.  Specifically, the empty <see cref="T:System.Windows.Documents.FlowDocument" /> contains a single <see cref="T:System.Windows.Documents.Paragraph" />, which contains a single <see cref="T:System.Windows.Documents.Run" /> which contains no text.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A FlowDocument may only be hosted by a single <xref:System.Windows.Controls.RichTextBox>.  Specifying a single FlowDocument as the contents of multiple <xref:System.Windows.Controls.RichTextBox> controls is not supported.  
+  
+   
+  
+## Examples  
+ The following example illustrates the use of this property.  
+  
+ [!code-csharp[RichTextBoxSnippets#_RTB_Document](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_rtb_document)]
+ [!code-vb[RichTextBoxSnippets#_RTB_Document](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_rtb_document)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">An attempt is made to set this property to <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">An attempt is made to set this property to a <see cref="T:System.Windows.Documents.FlowDocument" /> that represents the contents of another <see cref="T:System.Windows.Controls.RichTextBox" />.</exception>
+        <exception cref="T:System.InvalidOperationException">This property is set while a change block has been activated.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetNextSpellingErrorPosition">
@@ -118,10 +212,10 @@
         <Parameter Name="direction" Type="System.Windows.Documents.LogicalDirection" />
       </Parameters>
       <Docs>
-        <param name="position">To be added.</param>
-        <param name="direction">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="position">A <see cref="T:System.Windows.Documents.TextPointer" /> indicating a position from which to search for the next spelling error.</param>
+        <param name="direction">A <see cref="T:System.Windows.Documents.LogicalDirection" /> in which to search for the next spelling error, starting at the specified <c>posision</c>.</param>
+        <summary>Returns a <see cref="T:System.Windows.Documents.TextPointer" /> that points to the next spelling error in the contents of the <see cref="T:System.Windows.Controls.RichTextBox" />.</summary>
+        <returns>A <see cref="T:System.Windows.Documents.TextPointer" /> that points to the next spelling error in the contents of the <see cref="T:System.Windows.Controls.RichTextBox" />, or <see langword="null" /> if no next spelling error exists.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,11 +236,21 @@
         <Parameter Name="snapToText" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="point">To be added.</param>
-        <param name="snapToText">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="point">A <see cref="T:System.Windows.Point" /> object specifying the position to retrieve a <see cref="T:System.Windows.Documents.TextPointer" /> for.</param>
+        <param name="snapToText">If <see langword="true" />, this method always returns a <see cref="T:System.Windows.Documents.TextPointer" /> specifying the closest insertion position for the <see cref="T:System.Windows.Point" /> specified, regardless or whether or not the supplied <see cref="T:System.Windows.Point" /> is inside a character's bounding box.  
+  
+ If <see langword="false" />, this method returns <see langword="null" /> if the specified <see cref="T:System.Windows.Point" /> does not fall within any character bounding box.</param>
+        <summary>Returns a <see cref="T:System.Windows.Documents.TextPointer" /> that points to the insertion point closest to the specified position.</summary>
+        <returns>A <see cref="T:System.Windows.Documents.TextPointer" /> specifying the closest insertion position for the supplied point, or <see langword="null" /> if <paramref name="snapToText" /> is <see langword="false" /> and the supplied <see cref="T:System.Windows.Point" /> is not within any character's bounding box. Note that the <see cref="T:System.Windows.Documents.TextPointer" /> returned is usually the position between two characters. Use the <see cref="P:System.Windows.Documents.TextPointer.LogicalDirection" /> property of the returned <see cref="T:System.Windows.Documents.TextPointer" /> to determine which of the two characters the <see cref="T:System.Windows.Documents.TextPointer" /> corresponds to.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Controls.RichTextBox> uses a standard coordinate system with the origin located at the upper-left corner of the <xref:System.Windows.Controls.RichTextBox>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">Raised if layout information for the <see cref="T:System.Windows.Controls.RichTextBox" /> is not current.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetSpellingError">
@@ -165,10 +269,17 @@
         <Parameter Name="position" Type="System.Windows.Documents.TextPointer" />
       </Parameters>
       <Docs>
-        <param name="position">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="position">A <see cref="T:System.Windows.Documents.TextPointer" /> that specifies a position and logical direction that resolves to a character to examine for a spelling error. Use the <see cref="P:System.Windows.Documents.TextPointer.LogicalDirection" /> property of this <see cref="T:System.Windows.Documents.TextPointer" /> to specify the direction of the character to examine.</param>
+        <summary>Returns a <see cref="T:System.Windows.Controls.SpellingError" /> object associated with any spelling error at a specified position in the contents of the <see cref="T:System.Windows.Controls.RichTextBox" />.</summary>
+        <returns>A <see cref="T:System.Windows.Controls.SpellingError" /> object containing the details of the spelling error found at the character indicated by <paramref name="position" />, or <see langword="null" /> if no spelling error exists at the specified character.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Documents.TextPointer> like `position` usually specifies a position between two characters. Use the <xref:System.Windows.Documents.TextPointer.LogicalDirection%2A> property of `position` to specify which character to examine.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSpellingErrorRange">
@@ -187,10 +298,17 @@
         <Parameter Name="position" Type="System.Windows.Documents.TextPointer" />
       </Parameters>
       <Docs>
-        <param name="position">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="position">A <see cref="T:System.Windows.Documents.TextPointer" /> that specifies a position and logical direction that resolves to a character to examine for a spelling error. Use the <see cref="P:System.Windows.Documents.TextPointer.LogicalDirection" /> property of this <see cref="T:System.Windows.Documents.TextPointer" /> to specify the direction of the character to examine.</param>
+        <summary>Returns a <see cref="T:System.Windows.Documents.TextRange" /> object covering any misspelled word at a specified position in the contents of the <see cref="T:System.Windows.Controls.RichTextBox" />.</summary>
+        <returns>A <see cref="T:System.Windows.Documents.TextRange" /> object covering any misspelled word that includes the character specified by <paramref name="position" />, or <see langword="null" /> if no spelling error exists at the specified character.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Documents.TextPointer> like `position` usually specifies a position between two characters. Use the <xref:System.Windows.Documents.TextPointer.LogicalDirection%2A> property of `position` to specify which character to examine.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsDocumentEnabled">
@@ -206,9 +324,25 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether the user can interact with <see cref="T:System.Windows.UIElement" /> and <see cref="T:System.Windows.ContentElement" /> objects within the <see cref="T:System.Windows.Controls.RichTextBox" />.</summary>
+        <value>
+          <see langword="true" /> if the user can interact with <see cref="T:System.Windows.UIElement" /> and <see cref="T:System.Windows.ContentElement" /> objects within the <see cref="T:System.Windows.Controls.RichTextBox" />; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Controls.RichTextBox.IsDocumentEnabled%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+   
+  
+## Examples  
+ The following example creates <xref:System.Windows.Controls.CheckBox> and a <xref:System.Windows.Controls.RichTextBox> that contains a <xref:System.Windows.Documents.Hyperlink> and a <xref:System.Windows.Controls.Button>.  The <xref:System.Windows.Controls.RichTextBox.IsDocumentEnabled%2A> property of the <xref:System.Windows.Controls.RichTextBox> is bound to the <xref:System.Windows.Controls.Primitives.ToggleButton.IsChecked%2A> property of the <xref:System.Windows.Controls.CheckBox>.  When the user selects the <xref:System.Windows.Controls.CheckBox>, the user can interact with the <xref:System.Windows.Controls.Button> and <xref:System.Windows.Documents.Hyperlink>. When the user clears the <xref:System.Windows.Controls.CheckBox>, the <xref:System.Windows.Controls.Button> and <xref:System.Windows.Documents.Hyperlink> are disabled.  
+  
+ [!code-xml[RTBIsDocumentEnabled#1](~/samples/snippets/xaml/VS_Snippets_Wpf/RTBIsDocumentEnabled/XAML/Window1.xaml#1)]
+ [!code-xml[RTBIsDocumentEnabled#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RTBIsDocumentEnabled/VB/Window1.xaml#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsDocumentEnabledProperty">
@@ -224,7 +358,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.RichTextBox.IsDocumentEnabled" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -241,8 +375,8 @@
         <ReturnType>System.Collections.IEnumerator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an enumerator that can iterate the logical children of the <see langword="RichTextBox" />.</summary>
+        <value>An enumerator for the logical children.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -262,10 +396,17 @@
         <Parameter Name="constraint" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="constraint">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="constraint">A <see cref="T:System.Windows.Size" /> structure specifying constraints on the size of the <see cref="T:System.Windows.Controls.RichTextBox" />.</param>
+        <summary>Called to re-measure the <see cref="T:System.Windows.Controls.RichTextBox" />.</summary>
+        <returns>A <see cref="T:System.Windows.Size" /> structure indicating the new size of the <see cref="T:System.Windows.Controls.RichTextBox" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method overrides <xref:System.Windows.Controls.Control.MeasureOverride%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnCreateAutomationPeer">
@@ -282,9 +423,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates and returns an <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> object for this <see cref="T:System.Windows.Controls.RichTextBox" />.</summary>
+        <returns>An <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> object for this <see cref="T:System.Windows.Controls.RichTextBox" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method overrides <xref:System.Windows.ContentElement.OnCreateAutomationPeer%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnDpiChanged">
@@ -304,9 +452,9 @@
         <Parameter Name="newDpiScaleInfo" Type="System.Windows.DpiScale" />
       </Parameters>
       <Docs>
-        <param name="oldDpiScaleInfo">To be added.</param>
-        <param name="newDpiScaleInfo">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="oldDpiScaleInfo">The previous DPI scale setting.</param>
+        <param name="newDpiScaleInfo">The new DPI scale setting.</param>
+        <summary>Called when the DPI at which this Rich Text Box is rendered changes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -323,9 +471,26 @@
         <ReturnType>System.Windows.Documents.TextSelection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a <see cref="T:System.Windows.Documents.TextSelection" /> object containing the current selection in the <see cref="T:System.Windows.Controls.RichTextBox" />.</summary>
+        <value>A <see cref="T:System.Windows.Documents.TextSelection" /> object containing the current selection in the <see cref="T:System.Windows.Controls.RichTextBox" />.  
+  
+ The default returned <see cref="T:System.Windows.Documents.TextSelection" /> has an <see cref="P:System.Windows.Documents.TextRange.IsEmpty" /> property value of <see langword="True" />. An empty <see cref="T:System.Windows.Documents.TextSelection" /> renders as a caret in the text area with no selection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Documents.TextRange.Select%2A> method to programmatically select content.  
+  
+   
+  
+## Examples  
+ The following example illustrates the use of this property.  
+  
+ [!code-csharp[RichTextBoxSnippets#_RTB_Selection](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_rtb_selection)]
+ [!code-vb[RichTextBoxSnippets#_RTB_Selection](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_rtb_selection)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeDocument">
@@ -347,8 +512,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a value that indicates whether or not the effective value of the <see cref="P:System.Windows.Controls.RichTextBox.Document" /> property should be serialized during serialization of a <see cref="T:System.Windows.Controls.RichTextBox" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="P:System.Windows.Controls.RichTextBox.Document" /> property should be serialized; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -368,8 +534,8 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">An object to add as a child.</param>
+        <summary>This type or member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -389,8 +555,8 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="text">A string to add to the object.</param>
+        <summary>This type or member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

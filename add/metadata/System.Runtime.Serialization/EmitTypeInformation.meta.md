@@ -1,4 +1,6 @@
 ---
 uid: System.Runtime.Serialization.EmitTypeInformation
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

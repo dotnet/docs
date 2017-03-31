@@ -1,4 +1,6 @@
 ---
 uid: System.IdentityModel.Policy
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

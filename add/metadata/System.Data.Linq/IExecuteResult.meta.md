@@ -1,14 +1,20 @@
 ---
 uid: System.Data.Linq.IExecuteResult
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Linq.IExecuteResult.GetParameterValue(System.Int32)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Linq.IExecuteResult.ReturnValue
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

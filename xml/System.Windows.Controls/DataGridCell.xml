@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a cell of a <see cref="T:System.Windows.Controls.DataGrid" /> control.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.DataGridCell" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,10 +46,17 @@
         <Parameter Name="arrangeSize" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="arrangeSize">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arrangeSize">The maximum size that the cell can occupy.</param>
+        <summary>Determines the final size and placement of the cell content.</summary>
+        <returns>The final size of the control.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.DataGridCell.ArrangeOverride%2A> method determines the arrangement of the cell content with a gridline on the right.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Column">
@@ -65,8 +72,8 @@
         <ReturnType>System.Windows.Controls.DataGridColumn</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the column that the cell is in.</summary>
+        <value>The column that the cell is in.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,7 +90,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.DataGridCell.Column" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,8 +107,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether the cell is in edit mode.</summary>
+        <value>
+          <see langword="true" /> if the cell is in edit mode; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For more information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,7 +126,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.DataGridCell.IsEditing" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,9 +143,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the cell can be put in edit mode.</summary>
+        <value>
+          <see langword="true" /> if the cell cannot be put in edit mode; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For more information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Set the <xref:System.Windows.Controls.DataGridCell.IsReadOnly%2A> property to `true` to make an individual cell read-only. Set the <xref:System.Windows.Controls.DataGridColumn.IsReadOnly%2A?displayProperty=fullName> property to `true` to make all cells in an individual column read-only. Set the <xref:System.Windows.Controls.DataGrid.IsReadOnly%2A?displayProperty=fullName> property to `true` to make all cells in the <xref:System.Windows.Controls.DataGrid> read-only If there is a conflict between the settings at the <xref:System.Windows.Controls.DataGrid>, column, and cell levels, a value of `true` takes precedence over a value of `false`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnlyProperty">
@@ -153,7 +169,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.DataGridCell.IsReadOnly" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -170,9 +186,19 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether the cell is selected.</summary>
+        <value>
+          <see langword="true" /> if the cell is selected; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For more information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.DataGridCell.Selected> event occurs when the <xref:System.Windows.Controls.DataGridCell.IsSelected%2A> property is set to `true`.  
+  
+ The <xref:System.Windows.Controls.DataGridCell.Unselected> event occurs when the <xref:System.Windows.Controls.DataGridCell.IsSelected%2A> property is set to `false`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSelectedProperty">
@@ -188,7 +214,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.DataGridCell.IsSelected" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -208,10 +234,17 @@
         <Parameter Name="constraint" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="constraint">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="constraint">The maximum size that the cell can occupy.</param>
+        <summary>Determines the desired size of the <see cref="T:System.Windows.Controls.DataGridCell" />.</summary>
+        <returns>The desired size of the <see cref="T:System.Windows.Controls.DataGridCell" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.DataGridCell.MeasureOverride%2A> method measures the area needed for the cell and the gridline on the right.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnColumnChanged">
@@ -231,10 +264,17 @@
         <Parameter Name="newColumn" Type="System.Windows.Controls.DataGridColumn" />
       </Parameters>
       <Docs>
-        <param name="oldColumn">To be added.</param>
-        <param name="newColumn">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="oldColumn">The old column definition.</param>
+        <param name="newColumn">The new column definition.</param>
+        <summary>Called when the cell's <see cref="P:System.Windows.Controls.DataGridCell.Column" /> property changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is not called if changes are made to the current column definition. It is called only if the <xref:System.Windows.Controls.DataGridCell.Column%2A> property is set.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnCreateAutomationPeer">
@@ -251,9 +291,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the automation peer for this <see cref="T:System.Windows.Controls.DataGridCell" />.</summary>
+        <returns>The automation peer for this <see cref="T:System.Windows.Controls.DataGridCell" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Automation.Peers.DataGridCellAutomationPeer> exposes the <xref:System.Windows.Controls.DataGrid> to [!INCLUDE[TLA#tla_uiautomation#initcap](~/includes/tlasharptla-uiautomationsharpinitcap-md.md)].  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnIsEditingChanged">
@@ -272,9 +319,16 @@
         <Parameter Name="isEditing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="isEditing">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="isEditing">The new value of the <see cref="P:System.Windows.Controls.DataGridCell.IsEditing" /> property.</param>
+        <summary>Called when the <see cref="P:System.Windows.Controls.DataGridCell.IsEditing" /> property changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method changes the visual state of the cell between the Editing and Display states.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnKeyDown">
@@ -293,9 +347,16 @@
         <Parameter Name="e" Type="System.Windows.Input.KeyEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">The data for the event.</param>
+        <summary>Reports that a key was pressed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method passes keyboard input to the <xref:System.Windows.Controls.DataGridCell.Column%2A> that contains the cell. Each column handles the input in a way that is appropriate for the column type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPreviewKeyDown">
@@ -314,9 +375,16 @@
         <Parameter Name="e" Type="System.Windows.Input.KeyEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">The data for the event.</param>
+        <summary>Reports that a key was pressed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method passes keyboard input to the <xref:System.Windows.Controls.DataGridCell.Column%2A> that contains the cell. Each column handles the input in a way that is appropriate for the column type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnRender">
@@ -335,8 +403,8 @@
         <Parameter Name="drawingContext" Type="System.Windows.Media.DrawingContext" />
       </Parameters>
       <Docs>
-        <param name="drawingContext">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="drawingContext">The drawing instructions for the cell.</param>
+        <summary>Draws the cell and the right side gridline.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -356,9 +424,21 @@
         <Parameter Name="e" Type="System.Windows.RoutedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">The data for the event.</param>
+        <summary>Raises the <see cref="E:System.Windows.Controls.DataGridCell.Selected" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+ The <xref:System.Windows.Controls.DataGridCell.OnSelected%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Controls.DataGridCell.OnSelected(System.Windows.RoutedEventArgs)" /> in a derived class, make sure that you call the base class’s <see cref="M:System.Windows.Controls.DataGridCell.OnSelected(System.Windows.RoutedEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="OnTextInput">
@@ -377,9 +457,16 @@
         <Parameter Name="e" Type="System.Windows.Input.TextCompositionEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">The data for the event.</param>
+        <summary>Reports text composition.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method passes text input to the <xref:System.Windows.Controls.DataGridCell.Column%2A> that contains the cell. Each column handles the input in a way that is appropriate for the column type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnUnselected">
@@ -398,9 +485,21 @@
         <Parameter Name="e" Type="System.Windows.RoutedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">The data for the event.</param>
+        <summary>Raises the <see cref="E:System.Windows.Controls.DataGridCell.Unselected" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+ The <xref:System.Windows.Controls.DataGridCell.OnUnselected%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Controls.DataGridCell.OnUnselected(System.Windows.RoutedEventArgs)" /> in a derived class, make sure that you call the base class’s <see cref="M:System.Windows.Controls.DataGridCell.OnUnselected(System.Windows.RoutedEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="Selected">
@@ -416,8 +515,15 @@
         <ReturnType>System.Windows.RoutedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the cell is selected.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event occurs when the <xref:System.Windows.Controls.DataGridCell.IsSelected%2A> property is set to `true`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectedEvent">
@@ -433,7 +539,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="E:System.Windows.Controls.DataGridCell.Selected" /> routed event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -450,8 +556,15 @@
         <ReturnType>System.Windows.RoutedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the cell selection is cleared.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event occurs when the <xref:System.Windows.Controls.DataGridCell.IsSelected%2A> property is set to `false`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UnselectedEvent">
@@ -467,7 +580,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="E:System.Windows.Controls.DataGridCell.Unselected" /> routed event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,9 +1,11 @@
 ---
 uid: System.Net.PeerToPeer.Collaboration.InviteCompletedEventArgs
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.InviteCompletedEventArgs.InviteResponse
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

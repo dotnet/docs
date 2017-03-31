@@ -1,19 +1,19 @@
 ---
 uid: System.Transactions.DistributedTransactionPermissionAttribute
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.DistributedTransactionPermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.DistributedTransactionPermissionAttribute.Unrestricted
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.DistributedTransactionPermissionAttribute.CreatePermission
-internalonly: False
+manager: "ghogen"
 ---

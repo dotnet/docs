@@ -1,24 +1,34 @@
 ---
 uid: Microsoft.Build.Tasks.Xaml.NamedObject
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.NamedObject.Visibility
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.NamedObject.Type
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.NamedObject.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.NamedObject.Name
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

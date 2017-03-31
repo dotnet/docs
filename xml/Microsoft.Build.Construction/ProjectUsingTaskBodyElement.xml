@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the body of an inline task.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,8 +33,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets null because the Condition attribute is nonexistent for this element and a nonexistent condition is implicitly true.</summary>
+        <value>Returns a null.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +51,8 @@
         <ReturnType>Microsoft.Build.Construction.ElementLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Do not use. The Condition attribute is nonexistent for <see cref="T:Microsoft.Build.Construction.ProjectUsingTaskBodyElement" />. Get throws an internal error.</summary>
+        <value>Throws an internal error and returns null.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,9 +69,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the value of the Evaluate attribute.</summary>
+        <value>Returns the value of the Evaluate attribute, which is either "true" or "false". Returns "true" if the attribute is not present.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If "true", expands the item and property values in the inline task body.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EvaluateLocation">
@@ -87,8 +94,8 @@
         <ReturnType>Microsoft.Build.Construction.ElementLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Location of the Evaluate attribute on this element, if any.</summary>
+        <value>Returns Evaluate attribute location. If there is no such attribute, returns the location of the element, instead of the location of the default attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,8 +112,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the unevaluated value of the contents of the inline task.</summary>
+        <value>Returns the unevaluated inner XML content of the inline task. Returns an empty string if no inline task body is present.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

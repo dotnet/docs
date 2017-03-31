@@ -16,7 +16,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.Security.Cryptography.Pkcs.Pkcs9DocumentDescription" /> class defines the description of the content of a CMS/PKCS #7 message.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,7 +36,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="M:System.Security.Cryptography.Pkcs.Pkcs9DocumentDescription.#ctor" /> constructor creates an instance of the <see cref="T:System.Security.Cryptography.Pkcs.Pkcs9DocumentDescription" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,8 +58,8 @@
         <Parameter Name="encodedDocumentDescription" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="encodedDocumentDescription">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="encodedDocumentDescription">An array of byte values that specifies the encoded description of the CMS/PKCS #7 message.</param>
+        <summary>The <see cref="M:System.Security.Cryptography.Pkcs.Pkcs9DocumentDescription.#ctor(System.Byte[])" /> constructor creates an instance of the <see cref="T:System.Security.Cryptography.Pkcs.Pkcs9DocumentDescription" /> class by using the specified array of byte values as the encoded description of the content of a CMS/PKCS #7 message.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,8 +81,8 @@
         <Parameter Name="documentDescription" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="documentDescription">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="documentDescription">An instance of the <see cref="T:System.String" /> class that specifies the description for the CMS/PKCS #7 message.</param>
+        <summary>The <see cref="M:System.Security.Cryptography.Pkcs.Pkcs9DocumentDescription.#ctor(System.String)" /> constructor creates an instance of the <see cref="T:System.Security.Cryptography.Pkcs.Pkcs9DocumentDescription" /> class by using the specified description of the content of a CMS/PKCS #7 message.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,9 +107,16 @@
         <Parameter Name="asnEncodedData" Type="System.Security.Cryptography.AsnEncodedData" />
       </Parameters>
       <Docs>
-        <param name="asnEncodedData">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="asnEncodedData">The <see cref="T:System.Security.Cryptography.AsnEncodedData" /> object from which to copy information.</param>
+        <summary>Copies information from an <see cref="T:System.Security.Cryptography.AsnEncodedData" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method replaces the current <xref:System.Security.Cryptography.Pkcs.Pkcs9DocumentDescription> object with the specified <xref:System.Security.Cryptography.AsnEncodedData> object.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DocumentDescription">
@@ -130,8 +137,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.Security.Cryptography.Pkcs.Pkcs9DocumentDescription.DocumentDescription" /> property retrieves the document description.</summary>
+        <value>A <see cref="T:System.String" /> object that contains the document description.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

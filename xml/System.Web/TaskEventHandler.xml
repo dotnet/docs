@@ -17,10 +17,10 @@
     <ReturnType>System.Threading.Tasks.Task</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">To be added.</param>
-    <param name="e">To be added.</param>
-    <summary>To be added.</summary>
-    <returns>To be added.</returns>
+    <param name="sender">The source of the event.</param>
+    <param name="e">The event data.</param>
+    <summary>Represents the asynchronous task that is being processed by an instance of the <see cref="T:System.Web.EventHandlerTaskAsyncHelper" /> class.</summary>
+    <returns>The asynchronous task.</returns>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

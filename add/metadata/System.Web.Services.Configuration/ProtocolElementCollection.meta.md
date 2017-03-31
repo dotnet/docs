@@ -1,59 +1,101 @@
 ---
 uid: System.Web.Services.Configuration.ProtocolElementCollection
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Configuration.ProtocolElementCollection.Item(System.Object)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Configuration.ProtocolElementCollection.IndexOf(System.Web.Services.Configuration.ProtocolElement)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Web.Services.Configuration.ProtocolElementCollection.CopyTo
 ---
 
 ---
 uid: System.Web.Services.Configuration.ProtocolElementCollection.RemoveAt(System.Int32)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Configuration.ProtocolElementCollection.Remove(System.Web.Services.Configuration.ProtocolElement)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Configuration.ProtocolElementCollection.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Web.Services.Configuration.ProtocolElementCollection.RemoveAt
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Web.Services.Configuration.ProtocolElementCollection.Item
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Configuration.ProtocolElementCollection.Item(System.Int32)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Configuration.ProtocolElementCollection.ContainsKey(System.Object)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Configuration.ProtocolElementCollection.Clear
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Configuration.ProtocolElementCollection.RemoveAt(System.Object)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Configuration.ProtocolElementCollection.Add(System.Web.Services.Configuration.ProtocolElement)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Configuration.ProtocolElementCollection.CopyTo(System.Web.Services.Configuration.ProtocolElement[],System.Int32)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

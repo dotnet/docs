@@ -21,8 +21,28 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Decrypts Optimal Asymmetric Encryption Padding (OAEP) key exchange data.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Key exchange allows a sender to create secret information, for example, random data that can be used as a key in a symmetric encryption algorithm, and use encryption to send it to the intended recipient.  
+  
+ Use <xref:System.Security.Cryptography.RSAOAEPKeyExchangeFormatter> to create the key exchange message with the <xref:System.Security.Cryptography.RSA> algorithm.  
+  
+> [!CAUTION]
+>  It is highly recommended that you not attempt to create your own key exchange method from the basic functionality provided, because many details of the operation must be performed carefully in order for the key exchange to be successful.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Security.Cryptography.RSAOAEPKeyExchangeDeformatter> class to recreate an exchange key to be used to decrypt a message.  
+  
+ [!code-csharp[System.Security.Cryptography.RSAOAEPKeyExchangeDeformatter2#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.security.cryptography.rsaoaepkeyexchangedeformatter2/cs/program.cs#1)]
+ [!code-vb[System.Security.Cryptography.RSAOAEPKeyExchangeDeformatter2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.security.cryptography.rsaoaepkeyexchangedeformatter2/vb/program.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,8 +61,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.RSAOAEPKeyExchangeDeformatter" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Security.Cryptography.RSAOAEPKeyExchangeDeformatter.SetKey%2A> to establish the key before calling <xref:System.Security.Cryptography.RSAOAEPKeyExchangeDeformatter.DecryptKeyExchange%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -63,9 +90,11 @@
         <Parameter Name="key" Type="System.Security.Cryptography.AsymmetricAlgorithm" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="key">The instance of the <see cref="T:System.Security.Cryptography.RSA" /> algorithm that holds the private key.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.RSAOAEPKeyExchangeDeformatter" /> class with the specified key.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key " />is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="DecryptKeyExchange">
@@ -94,10 +123,27 @@
         <Parameter Name="rgbData" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="rgbData">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="rgbData">The key exchange data within which the secret information is hidden.</param>
+        <summary>Extracts secret information from the encrypted key exchange data.</summary>
+        <returns>The secret information derived from the key exchange data.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You must specify a key before calling this method.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Security.Cryptography.RSAOAEPKeyExchangeDeformatter.DecryptKeyExchange%2A> method to recreate an exchange key from a message sender. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.RSAPKCS1KeyExchangeDeformatter> class.  
+  
+ [!code-csharp[System.Security.Cryptography.RSAOAEPKeyExchangeDeformatter2#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.security.cryptography.rsaoaepkeyexchangedeformatter2/cs/program.cs#3)]
+ [!code-vb[System.Security.Cryptography.RSAOAEPKeyExchangeDeformatter2#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.security.cryptography.rsaoaepkeyexchangedeformatter2/vb/program.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The key exchange data verification has failed.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicUnexpectedOperationException">The key is missing.</exception>
       </Docs>
     </Member>
     <Member MemberName="Parameters">
@@ -118,9 +164,20 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the parameters for the Optimal Asymmetric Encryption Padding (OAEP) key exchange.</summary>
+        <value>An XML string containing the parameters of the OAEP key exchange operation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to call the <xref:System.Security.Cryptography.RSAOAEPKeyExchangeDeformatter.Parameters%2A> property to retrieve an XML representation of the parameters. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.RSAOAEPKeyExchangeDeformatter> class.  
+  
+ [!code-cpp[System.Security.Cryptography.RSAOAEPKeyExchangeDeformatter#12](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.RSAOAEPKeyExchangeDeformatter/CPP/rsaencoder.cpp#12)]
+ [!code-csharp[System.Security.Cryptography.RSAOAEPKeyExchangeDeformatter#12](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.RSAOAEPKeyExchangeDeformatter/CS/rsaencoder.cs#12)]
+ [!code-vb[System.Security.Cryptography.RSAOAEPKeyExchangeDeformatter#12](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.RSAOAEPKeyExchangeDeformatter/VB/rsaencoder.vb#12)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetKey">
@@ -144,9 +201,18 @@
         <Parameter Name="key" Type="System.Security.Cryptography.AsymmetricAlgorithm" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="key">The instance of the <see cref="T:System.Security.Cryptography.RSA" /> algorithm that holds the private key.</param>
+        <summary>Sets the private key to use for decrypting the secret information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You must set a key before calling <xref:System.Security.Cryptography.RSAOAEPKeyExchangeDeformatter.DecryptKeyExchange%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

@@ -1,99 +1,99 @@
 ---
 uid: System.Runtime.Remoting.Services.RemotingClientProxy
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Services.RemotingClientProxy.Cookies
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Services.RemotingClientProxy.PreAuthenticate
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Services.RemotingClientProxy.ConfigureProxy(System.Type,System.String)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Services.RemotingClientProxy.Url
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Services.RemotingClientProxy.Password
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Services.RemotingClientProxy._tp
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Services.RemotingClientProxy.ProxyName
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Services.RemotingClientProxy.#ctor
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Services.RemotingClientProxy.AllowAutoRedirect
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Services.RemotingClientProxy.EnableCookies
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Services.RemotingClientProxy.Username
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Services.RemotingClientProxy._url
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Services.RemotingClientProxy.UserAgent
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Services.RemotingClientProxy.Timeout
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Services.RemotingClientProxy.Path
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Services.RemotingClientProxy.ConnectProxy
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Services.RemotingClientProxy._type
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Services.RemotingClientProxy.Domain
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Services.RemotingClientProxy.ProxyPort
-internalonly: False
+manager: "ghogen"
 ---

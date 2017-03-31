@@ -1,29 +1,48 @@
 ---
 uid: System.Windows.Documents.Section
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Documents.Section.HasTrailingParagraphBreakOnPaste
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Documents.Section.#ctor(System.Windows.Documents.Block)
-internalonly: False
----
-
----
-uid: System.Windows.Documents.Section.Blocks
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Documents.Section.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Documents.Section.Blocks
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Documents.Section.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Documents.Section.ShouldSerializeBlocks(System.Windows.Markup.XamlDesignerSerializationManager)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

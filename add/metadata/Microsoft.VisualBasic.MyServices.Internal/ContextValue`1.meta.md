@@ -1,14 +1,20 @@
 ---
 uid: Microsoft.VisualBasic.MyServices.Internal.ContextValue`1
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.MyServices.Internal.ContextValue`1.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.MyServices.Internal.ContextValue`1.Value
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

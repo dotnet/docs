@@ -15,7 +15,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a &lt;<see langword="atom:categories" />&gt; element within a service document.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,7 +34,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.InlineCategoriesDocument" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,8 +55,8 @@
         <Parameter Name="categories" Type="System.Collections.Generic.IEnumerable&lt;System.ServiceModel.Syndication.SyndicationCategory&gt;" />
       </Parameters>
       <Docs>
-        <param name="categories">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="categories">A collection of syndication categories.</param>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.InlineCategoriesDocument" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,10 +79,10 @@
         <Parameter Name="scheme" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="categories">To be added.</param>
-        <param name="isFixed">To be added.</param>
-        <param name="scheme">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="categories">A collection of syndication categories.</param>
+        <param name="isFixed">Specifies whether syndication categories can be added to the <see cref="T:System.ServiceModel.Syndication.InlineCategoriesDocument" />.</param>
+        <param name="scheme">The scheme of the <see cref="T:System.ServiceModel.Syndication.InlineCategoriesDocument" />.</param>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.InlineCategoriesDocument" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,8 +103,8 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Syndication.SyndicationCategory&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the collection of syndication categories associated with the <see cref="T:System.ServiceModel.Syndication.InlineCategoriesDocument" />.</summary>
+        <value>Returns a collection of syndication categories.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -126,8 +126,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a new <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" /> instance.</summary>
+        <returns>Returns a new  <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -148,8 +148,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets and sets a value that specifies whether syndication categories can be added to the <see cref="T:System.ServiceModel.Syndication.InlineCategoriesDocument" />.</summary>
+        <value>Returns a <see cref="T:System.Boolean" /> that specifies if new syndication categories can be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -170,8 +170,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets and sets the scheme of the <see cref="T:System.ServiceModel.Syndication.InlineCategoriesDocument" />.</summary>
+        <value>Returns the scheme of the <see cref="T:System.ServiceModel.Syndication.InlineCategoriesDocument" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

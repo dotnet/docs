@@ -10,8 +10,29 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the formats used with text-related methods of the <see cref="T:System.Windows.Forms.Clipboard" /> and <see cref="T:System.Windows.Forms.DataObject" /> classes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration contains values that are similar to the text-related fields of the <xref:System.Windows.Forms.DataFormats> type.  
+  
+ This enumeration is used with the following methods:  
+  
+-   <xref:System.Windows.Forms.Clipboard.ContainsText%28System.Windows.Forms.TextDataFormat%29?displayProperty=fullName>  
+  
+-   <xref:System.Windows.Forms.Clipboard.GetText%28System.Windows.Forms.TextDataFormat%29?displayProperty=fullName>  
+  
+-   <xref:System.Windows.Forms.Clipboard.SetText%28System.String%2CSystem.Windows.Forms.TextDataFormat%29?displayProperty=fullName>  
+  
+-   <xref:System.Windows.Forms.DataObject.ContainsText%28System.Windows.Forms.TextDataFormat%29?displayProperty=fullName>  
+  
+-   <xref:System.Windows.Forms.DataObject.GetText%28System.Windows.Forms.TextDataFormat%29?displayProperty=fullName>  
+  
+-   <xref:System.Windows.Forms.DataObject.SetText%28System.String%2CSystem.Windows.Forms.TextDataFormat%29?displayProperty=fullName>  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CommaSeparatedValue">
@@ -27,7 +48,7 @@
         <ReturnType>System.Windows.Forms.TextDataFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies a comma-separated value (CSV) format, which is a common interchange format used by spreadsheets.</summary>
       </Docs>
     </Member>
     <Member MemberName="Html">
@@ -43,7 +64,7 @@
         <ReturnType>System.Windows.Forms.TextDataFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies text consisting of HTML data.</summary>
       </Docs>
     </Member>
     <Member MemberName="Rtf">
@@ -59,7 +80,7 @@
         <ReturnType>System.Windows.Forms.TextDataFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies text consisting of rich text format (RTF) data.</summary>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -75,7 +96,7 @@
         <ReturnType>System.Windows.Forms.TextDataFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the standard ANSI text format.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnicodeText">
@@ -91,7 +112,7 @@
         <ReturnType>System.Windows.Forms.TextDataFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the standard Windows Unicode text format.</summary>
       </Docs>
     </Member>
   </Members>

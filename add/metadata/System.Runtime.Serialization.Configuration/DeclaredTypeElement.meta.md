@@ -1,24 +1,41 @@
 ---
 uid: System.Runtime.Serialization.Configuration.DeclaredTypeElement
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.Serialization.Configuration.DeclaredTypeElement.#ctor(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.Serialization.Configuration.DeclaredTypeElement.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Runtime.Serialization.Configuration.DeclaredTypeElement.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.Serialization.Configuration.DeclaredTypeElement.Type
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.Serialization.Configuration.DeclaredTypeElement.KnownTypes
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.WebControls.IQueryableDataSource
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.IQueryableDataSource.RaiseViewChanged
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.IQueryableDataSource.QueryCreated
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

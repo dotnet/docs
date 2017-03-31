@@ -1,74 +1,111 @@
 ---
 uid: System.ServiceModel.Channels.TcpTransportBindingElement
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.TcpTransportBindingElement.#ctor(System.ServiceModel.Channels.TcpTransportBindingElement)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.TcpTransportBindingElement.ListenBacklog
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.TcpTransportBindingElement.BuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.TcpTransportBindingElement.GetProperty``1(System.ServiceModel.Channels.BindingContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.TcpTransportBindingElement.TeredoEnabled
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.TcpTransportBindingElement.Scheme
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.TcpTransportBindingElement.ShouldSerializeListenBacklog
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.TcpTransportBindingElement.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Channels.TcpTransportBindingElement.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.TcpTransportBindingElement.BuildChannelListener``1(System.ServiceModel.Channels.BindingContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.TcpTransportBindingElement.ConnectionPoolSettings
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.TcpTransportBindingElement.PortSharingEnabled
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.TcpTransportBindingElement.ExtendedProtectionPolicy
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.TcpTransportBindingElement.Clone
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.TcpTransportBindingElement.ShouldSerializeExtendedProtectionPolicy
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

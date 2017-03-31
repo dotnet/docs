@@ -10,8 +10,23 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the type of user Rights Account Certificate to request for rights management activation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Used as a parameter to the <xref:System.Security.RightsManagement.SecureEnvironment.Create%2A> method of a <xref:System.Security.RightsManagement.SecureEnvironment>, <xref:System.Security.RightsManagement.UserActivationMode> specifies to request either a `Temporary` or `Permanent` [Rights Account Certificate](http://go.microsoft.com/fwlink/?LinkId=74474).  
+  
+   
+  
+## Examples  
+ The following example shows how to use this enumeration to create a <xref:System.Security.RightsManagement.SecureEnvironment>.  
+  
+ [!code-csharp[RightsManagedPackagePublish#RmPkgPubSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgpubsecenv)]
+ [!code-vb[RightsManagedPackagePublish#RmPkgPubSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgpubsecenv)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Permanent">
@@ -27,7 +42,7 @@
         <ReturnType>System.Security.RightsManagement.UserActivationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A permanent Rights Account Certificate.</summary>
       </Docs>
     </Member>
     <Member MemberName="Temporary">
@@ -43,7 +58,7 @@
         <ReturnType>System.Security.RightsManagement.UserActivationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A temporary Rights Account Certificate.</summary>
       </Docs>
     </Member>
   </Members>

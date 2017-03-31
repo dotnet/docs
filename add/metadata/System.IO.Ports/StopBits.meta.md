@@ -1,4 +1,6 @@
 ---
 uid: System.IO.Ports.StopBits
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

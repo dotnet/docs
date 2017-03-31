@@ -14,8 +14,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="T">The type of the return value.</typeparam>
+    <summary>Provides data for the <see cref="E:System.Windows.Navigation.PageFunction`1.Return" /> event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Navigation.ReturnEventArgs`1" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,8 +47,8 @@
         <Parameter Name="result" Type="T" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="result">The value to be returned.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Navigation.ReturnEventArgs`1" /> class with the return value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,8 +65,8 @@
         <ReturnType>T</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value that is returned by the page function.</summary>
+        <value>The value that is returned by the page function.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

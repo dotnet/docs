@@ -1,39 +1,60 @@
 ---
 uid: System.Printing.PageResolution
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Printing.PageResolution.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PageResolution.#ctor(System.Printing.PageQualitativeResolution)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PageResolution.Y
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PageResolution.X
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PageResolution.QualitativeResolution
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PageResolution.#ctor(System.Int32,System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PageResolution.ToString
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PageResolution.#ctor(System.Int32,System.Int32,System.Printing.PageQualitativeResolution)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

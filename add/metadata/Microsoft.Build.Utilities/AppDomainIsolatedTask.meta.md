@@ -1,54 +1,71 @@
 ---
 uid: Microsoft.Build.Utilities.AppDomainIsolatedTask
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Utilities.AppDomainIsolatedTask.HelpKeywordPrefix
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Utilities.AppDomainIsolatedTask.TaskResources
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Utilities.AppDomainIsolatedTask.Execute
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Utilities.AppDomainIsolatedTask.BuildEngine
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Utilities.AppDomainIsolatedTask.#ctor(System.Resources.ResourceManager,System.String)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Utilities.AppDomainIsolatedTask.InitializeLifetimeService
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Utilities.AppDomainIsolatedTask.#ctor(System.Resources.ResourceManager)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Utilities.AppDomainIsolatedTask.Log
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Utilities.AppDomainIsolatedTask.HostObject
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Utilities.AppDomainIsolatedTask.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
+---
+
+---
+uid: Microsoft.Build.Utilities.AppDomainIsolatedTask.#ctor
+ms.author: "susanno"
+manager: "douge"
 ---

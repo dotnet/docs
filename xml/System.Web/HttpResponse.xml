@@ -11,8 +11,54 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Encapsulates HTTP-response information from an ASP.NET operation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The methods and properties of the <xref:System.Web.HttpResponse> class are exposed through the <xref:System.Web.HttpApplication.Response%2A> property of the <xref:System.Web.HttpApplication>, <xref:System.Web.HttpContext>, <xref:System.Web.UI.Page>, and <xref:System.Web.UI.UserControl> classes.  
+  
+ The following methods of the <xref:System.Web.HttpResponse> class are supported only in post back scenarios and not in asynchronous post back scenarios:  
+  
+-   <xref:System.Web.HttpResponse.BinaryWrite%2A>  
+  
+-   <xref:System.Web.HttpResponse.Clear%2A>  
+  
+-   <xref:System.Web.HttpResponse.ClearContent%2A>  
+  
+-   <xref:System.Web.HttpResponse.ClearHeaders%2A>  
+  
+-   <xref:System.Web.HttpResponse.Close%2A>  
+  
+-   <xref:System.Web.HttpResponse.End%2A>  
+  
+-   <xref:System.Web.HttpResponse.Flush%2A>  
+  
+-   <xref:System.Web.HttpResponse.TransmitFile%2A>  
+  
+-   <xref:System.Web.HttpResponse.Write%2A>  
+  
+-   <xref:System.Web.HttpResponse.WriteFile%2A>  
+  
+-   <xref:System.Web.HttpResponse.WriteSubstitution%2A>  
+  
+ Partial-page updates are enabled when you use <xref:System.Web.UI.UpdatePanel> controls to update selected regions of a page instead of updating the whole page with a post back. For more information, see [UpdatePanel Control Overview](../Topic/UpdatePanel%20Control%20Overview.md) and [Partial-Page Rendering Overview](../Topic/Partial-Page%20Rendering%20Overview.md).  
+  
+   
+  
+## Examples  
+ The following example draws three overlapping rectangles when the page is requested. The code begins by setting the <xref:System.Web.HttpResponse.ContentType%2A> property to image/jpeg, so that the entire page will be rendered as a JPEG image. The code then calls the <xref:System.Web.HttpResponse.Clear%2A> method to ensure that no extraneous content is sent with this response. Next, the code sets the <xref:System.Web.HttpResponse.BufferOutput%2A> property to true so that the page is completely processed before it is sent to the requesting client. Two objects used to draw the rectangles are then created: a <xref:System.Drawing.Bitmap> and a <xref:System.Drawing.Graphics> object. The variables created in the page are used as coordinates to draw the rectangles and a string that appears inside the largest rectangle.  
+  
+ When the three rectangles and the string that appears inside them are drawn, the <xref:System.Drawing.Bitmap> is saved to the <xref:System.IO.Stream> object that is associated with the <xref:System.Web.HttpResponse.OutputStream%2A> property and its format is set to JPEG. The code calls the <xref:System.Drawing.Image.Dispose%2A> and <xref:System.Drawing.Graphics.Dispose%2A> methods to release the resources used by the two drawing objects. Lastly, the code calls the <xref:System.Web.HttpResponse.Flush%2A> method to send the buffered response to the requesting client.  
+  
+> [!NOTE]
+>  In code, the <xref:System.Web.HttpResponse> object is referred to by the keyword `Response`. For example, `Response.Clear()` refers to the <xref:System.Web.HttpResponse.Clear%2A?displayProperty=fullName> method. The <xref:System.Web.UI.Page> class has a property that is named <xref:System.Web.UI.Page.Response%2A> that exposes the current instance of <xref:System.Web.HttpResponse>.  
+  
+ [!code-csharp[System.Web.HttpResponse_Samples1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse_Samples1/CS/responsesamplescs.aspx#1)]
+ [!code-vb[System.Web.HttpResponse_Samples1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse_Samples1/VB/responsesamplesvb.aspx#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,9 +74,18 @@
         <Parameter Name="writer" Type="System.IO.TextWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="writer">A <see cref="T:System.IO.TextWriter" /> object that enables custom HTTP output.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.HttpResponse" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.  
+  
+ The methods and properties of the <xref:System.Web.HttpResponse> class are exposed through the intrinsic <xref:System.Web.HttpContext.Response%2A> object in ASP.NET.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddCacheDependency">
@@ -55,9 +110,26 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="dependencies">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="dependencies">A file, cache key, or <see cref="T:System.Web.Caching.CacheDependency" /> to add to the list of application dependencies.</param>
+        <summary>Associates a set of cache dependencies with the response to facilitate invalidation of the response if it is stored in the output cache and the specified dependencies change.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpResponse.AddCacheDependency%2A> method allows dependencies to be created between cached responses and a <xref:System.Web.Caching.CacheDependency> object.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to create a cache dependency by using the <xref:System.Web.HttpResponse.AddCacheDependency%2A> method and a <xref:System.Web.Caching.CacheDependency> object.  
+  
+ [!code-csharp[HttpResponse.AddCacheDependency#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpResponse.AddCacheDependency/CS/httpresponse.addcachedependency_cs.aspx#1)]
+ [!code-vb[HttpResponse.AddCacheDependency#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpResponse.AddCacheDependency/VB/httpresponse.addcachedependency_vb.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="dependencies" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">This method was called too late in the cache processing pipeline, after the cached response was already created.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddCacheItemDependencies">
@@ -76,9 +148,24 @@
         <Parameter Name="cacheKeys" Type="System.Collections.ArrayList" />
       </Parameters>
       <Docs>
-        <param name="cacheKeys">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="cacheKeys">The <see cref="T:System.Collections.ArrayList" /> that contains the keys of the items that the current cached response is dependent upon.</param>
+        <summary>Makes the validity of a cached response dependent on other items in the cache.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the items referred to in the `cacheKeys` parameter are removed from the cache, the cached response of the current item is not valid.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use an ASP.NET page that is output cached. The code for the page creates an <xref:System.Collections.ArrayList> object of keys that are associated with items that are stored in the <xref:System.Web.Caching.Cache> object. Next, the code passes the <xref:System.Collections.ArrayList> as the parameter in a call to the <xref:System.Web.HttpResponse.AddCacheItemDependencies%2A> method. This makes the output cached response not valid, if any of the files specified in the <xref:System.Collections.ArrayList> change.  
+  
+ [!code-csharp[System.Web.HttpResponse_Samples2#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse_Samples2/CS/cacheitemsdepscs.aspx#5)]
+ [!code-vb[System.Web.HttpResponse_Samples2#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse_Samples2/VB/cacheitemsdepsvb.aspx#5)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddCacheItemDependencies">
@@ -97,9 +184,16 @@
         <Parameter Name="cacheKeys" Type="System.String[]" />
       </Parameters>
       <Docs>
-        <param name="cacheKeys">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="cacheKeys">An array of item keys that the cached response is dependent upon.</param>
+        <summary>Makes the validity of a cached item dependent on another item in the cache.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When any of the `cacheKey`s are removed from the cache, the cached response of the current item is invalid.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddCacheItemDependency">
@@ -118,9 +212,26 @@
         <Parameter Name="cacheKey" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="cacheKey">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="cacheKey">The key of the item that the cached response is dependent upon.</param>
+        <summary>Makes the validity of a cached response dependent on another item in the cache.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the item corresponding to the `cacheKey` parameter is removed from the cache, the cached response of the current item is invalid.  
+  
+   
+  
+## Examples  
+ The following example is an ASP.NET user control that is output cached. The code for the control calls the <xref:System.Web.HttpResponse.AddCacheItemDependency%2A> method with the key of an item stored in the <xref:System.Web.Caching.Cache> object passed as its parameter. If the item does not exist in the cache, the control's response that was stored in the output cache is invalidated. This means that on the subsequent request, a new version of the control's response will be added to the output cache.  
+  
+ Next, the code checks whether an item associated with a `bookData` key is stored in the `Cache` object, and displays one of two lines of text dependent upon the result. Then, the code sets the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property of a <xref:System.Web.UI.WebControls.DataGrid> control, which is named `dgBooks`, with a call to a custom `DataHelper` class' shared `GetBookData` method, and populates the <xref:System.Web.UI.WebControls.DataGrid> with the <xref:System.Web.UI.Control.DataBind%2A> method.  
+  
+ [!code-csharp[System.Web.HttpResponse_Samples2#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse_Samples2/CS/bookscs.ascx#3)]
+ [!code-vb[System.Web.HttpResponse_Samples2#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse_Samples2/VB/booksvb.ascx#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddFileDependencies">
@@ -139,9 +250,19 @@
         <Parameter Name="filenames" Type="System.Collections.ArrayList" />
       </Parameters>
       <Docs>
-        <param name="filenames">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="filenames">The collection of files to add.</param>
+        <summary>Adds a group of file names to the collection of file names on which the current response is dependent.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example is an ASP.NET page that is output cached. The code for the page creates an <xref:System.Collections.ArrayList> of file paths, and then passes the <xref:System.Collections.ArrayList> as the parameter in a call to the <xref:System.Web.HttpResponse.AddFileDependencies%2A> method. This makes the output cached response invalid if any of the files specified in the <xref:System.Collections.ArrayList> changes.  
+  
+ [!code-csharp[System.Web.HttpResponse_Samples2#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse_Samples2/CS/responsefiledepscs.aspx#6)]
+ [!code-vb[System.Web.HttpResponse_Samples2#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse_Samples2/VB/responsefiledepsvb.aspx#6)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddFileDependencies">
@@ -160,9 +281,19 @@
         <Parameter Name="filenames" Type="System.String[]" />
       </Parameters>
       <Docs>
-        <param name="filenames">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="filenames">An array of files to add.</param>
+        <summary>Adds an array of file names to the collection of file names on which the current response is dependent.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example adds an array of file names to the <xref:System.Web.HttpResponse.AddFileDependencies%2A> file dependency list. If the files changes, the cached response is invalidated.  
+  
+ [!code-csharp[Response.AddFileDependency#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Response.AddFileDependency/CS/addfiledependency_cs.aspx#1)]
+ [!code-vb[Response.AddFileDependency#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Response.AddFileDependency/VB/addfiledependency_vb.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddFileDependency">
@@ -181,9 +312,24 @@
         <Parameter Name="filename" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="filename">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="filename">The name of the file to add.</param>
+        <summary>Adds a single file name to the collection of file names on which the current response is dependent.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you use the <xref:System.Web.HttpResponse.AddFileDependency%2A> method to add a file dependency, you must also specify output caching programmatically or declaratively. For example, to specify output caching declaratively, use the  directive. For more information, see [How to: Cache Page Output with File Dependencies](../Topic/How%20to:%20Cache%20Page%20Output%20with%20File%20Dependencies.md).  
+  
+   
+  
+## Examples  
+ The following example shows how to add a single file name to the <xref:System.Web.HttpResponse.AddFileDependency%2A> file dependency list. If the file changes, the cached response is invalidated.  
+  
+ [!code-csharp[Classic HttpResponse.AddFileDependency Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpResponse.AddFileDependency Example/CS/source.cs#1)]
+ [!code-vb[Classic HttpResponse.AddFileDependency Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpResponse.AddFileDependency Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddHeader">
@@ -203,10 +349,17 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the HTTP header to add <c>value</c> to.</param>
+        <param name="value">The string to add to the header.</param>
+        <summary>Adds an HTTP header to the output stream. <see cref="M:System.Web.HttpResponse.AddHeader(System.String,System.String)" /> is provided for compatibility with earlier versions of ASP.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.HttpResponse.AddHeader%2A> is the same as <xref:System.Web.HttpResponse.AppendHeader%2A> and is provided only for compatibility with earlier versions of ASP. With ASP.NET, use <xref:System.Web.HttpResponse.AppendHeader%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddOnSendingHeaders">
@@ -225,10 +378,33 @@
         <Parameter Name="callback" Type="System.Action&lt;System.Web.HttpContext&gt;" />
       </Parameters>
       <Docs>
-        <param name="callback">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="callback">The callback method.</param>
+        <summary>[Supported in the .NET Framework 4.5.2 and later versions]  
+  
+ Registers a callback that the ASP.NET runtime will invoke immediately before response headers are sent for this request.</summary>
+        <returns>An <see cref="T:System.Web.ISubscriptionToken" /> object that represents the subscription to the OnSendingHeaders pseudo-event.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  The AddOnSendingHeaders method is not invoked if the native module flushes the response first.  
+  
+ The pseudo-event OnSendingHeaders differs from the IHttpModule-level pipeline event in that it is a per-request subscription rather than a per-application subscription. The intent is that the callback may modify the response status code or may set a response cookie or header. Other usage notes and caveats:  
+  
+-   This method is effective only when IIS runs in integrated pipeline mode pipeline and only if response headers haven't yet been sent for the current request.  
+  
+-   The ASP.NET runtime does not guarantee anything about the thread that the callback is invoked on. For example, the callback may be invoked synchronously in a background thread if a background flush is being performed. <xref:System.Web.HttpContext.Current%2A> is not guaranteed to be available in such a thread.  
+  
+-   The callback must not call any method that manipulates the response entity body or that results in a flush. For example, the callback must not call <xref:System.Web.HttpResponse.Redirect%2A>, as that method may manipulate the response entity body.  
+  
+-   The callback must contain only short-running synchronous code. Attempting to invoke an asynchronous operation or wait on such an operation could result in a deadlock.  
+  
+-   The callback must not throw an exception; otherwise behavior is undefined.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AppendCookie">
@@ -247,9 +423,20 @@
         <Parameter Name="cookie" Type="System.Web.HttpCookie" />
       </Parameters>
       <Docs>
-        <param name="cookie">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="cookie">The <see cref="T:System.Web.HttpCookie" /> to add to the output stream.</param>
+        <summary>Adds an HTTP cookie to the intrinsic cookie collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a new cookie named `LastVisit`, sets the value of the cookie to the current date and time, and appends the cookie to the current cookie collection. All cookies in the cookie collection are sent to the client in the `Set-Cookie` header with the HTTP output stream.  
+  
+ [!code-csharp[Classic HttpResponse.AppendCookie Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpResponse.AppendCookie Example/CS/source.cs#1)]
+ [!code-vb[Classic HttpResponse.AppendCookie Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpResponse.AppendCookie Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">A cookie is appended after the HTTP headers have been sent.</exception>
       </Docs>
     </Member>
     <Member MemberName="AppendHeader">
@@ -269,10 +456,28 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the HTTP header to add to the output stream.</param>
+        <param name="value">The string to append to the header.</param>
+        <summary>Adds an HTTP header to the output stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you use the <xref:System.Web.HttpResponse.AppendHeader%2A> method to send cache-specific headers and at the same time use the cache object model (<xref:System.Web.HttpResponse.Cache%2A>) to set cache policy, HTTP response headers that pertain to caching (`Cache-Control`, `Expires`, `Last-Modified`, `Pragma`, and `Vary`) might be deleted when the cache object model is used. This behavior enables ASP.NET to maintain the most restrictive settings. For example, consider a page that includes user controls. If those controls have conflicting cache policies, the most restrictive cache policy will be used. If one user control sets the header "`Cache-Control: Public`" and another user control sets the more restrictive header "`Cache-Control: Private`" via calls to <xref:System.Web.HttpCachePolicy.SetCacheability%2A>, then the "`Cache-Control: Private`" header will be sent with the response.  
+  
+ For a list of standard HTTP/1.1 headers, see section 14, "Header Field Definitions," in the [Hypertext Transfer Protocol -- HTTP/1.1](http://go.microsoft.com/fwlink/?LinkID=73147) specification on the World Wide Web Consortium (W3C) Web site.  
+  
+   
+  
+## Examples  
+ The following example calls the <xref:System.Web.HttpResponse.AppendHeader%2A> method to add a custom header to the <xref:System.Web.HttpResponse> object sent to the requesting client.  
+  
+ [!code-csharp[System.Web.HttpResponse.AppendHeader_Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse.AppendHeader_Example/CS/responseappendheader.cs.aspx#1)]
+ [!code-vb[System.Web.HttpResponse.AppendHeader_Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse.AppendHeader_Example/VB/responseappendheader.vb.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">The header is appended after the HTTP headers have been sent.</exception>
       </Docs>
     </Member>
     <Member MemberName="AppendToLog">
@@ -291,9 +496,36 @@
         <Parameter Name="param" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="param">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="param">The text to add to the log file.</param>
+        <summary>Adds custom log information to the Internet Information Services (IIS) log file.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To allow for the specified string to be recorded in the log file, you first must enable the **URI Query** option of the **Extended Logging Properties** dialog box for the site that you want to log activity for in IIS.  
+  
+ To customize extended logging in IIS 6.0, follow these steps:  
+  
+1.  In IIS Manager, expand the local computer node, expand the Web or FTP Sites folder, right-click the Web or FTP site, and then click **Properties**.  
+  
+2.  Click the **Web or FTP Site** tab, and then select the **Enable logging** check box (if it is not already selected).  
+  
+3.  In the **Active log format** box, click **W3C Extended Log File Format**.  
+  
+4.  Click **Properties**.  
+  
+5.  Click the **Advanced** tab, select the properties that you want to log, and then click **OK**.  
+  
+   
+  
+## Examples  
+ The following example shows how to append a string to the log.  
+  
+ [!code-csharp[Classic HttpResponse.AppendToLog Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpResponse.AppendToLog Example/CS/source.cs#1)]
+ [!code-vb[Classic HttpResponse.AppendToLog Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpResponse.AppendToLog Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ApplyAppPathModifier">
@@ -312,10 +544,25 @@
         <Parameter Name="virtualPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="virtualPath">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="virtualPath">The virtual path to a resource.</param>
+        <summary>Adds a session ID to the virtual path if the session is using <see cref="P:System.Web.Configuration.SessionStateSection.Cookieless" /> session state and returns the combined path. If <see cref="P:System.Web.Configuration.SessionStateSection.Cookieless" /> session state is not used, <see cref="M:System.Web.HttpResponse.ApplyAppPathModifier(System.String)" /> returns the original virtual path.</summary>
+        <returns>The <paramref name="virtualPath" /> with the session ID inserted.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.HttpResponse.ApplyAppPathModifier%2A> is used only with cookieless sessions to construct absolute HREFs.  
+  
+   
+  
+## Examples  
+ The following example declares a string variable named `urlConverted`, and sets it to the result of an <xref:System.Web.HttpResponse.ApplyAppPathModifier%2A> method call. The code then passes the variable's value to a <xref:System.Web.UI.WebControls.HyperLink> control's <xref:System.Web.UI.WebControls.HyperLink.NavigateUrl%2A> property.  
+  
+ [!code-csharp[System.Web.HttpResponse_Sample5#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse_Sample5/CS/responseapppathmodifiercs.aspx#5)]
+ [!code-vb[System.Web.HttpResponse_Sample5#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse_Sample5/VB/responseapppathmodifiervb.aspx#5)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginFlush">
@@ -335,11 +582,19 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="callback">The callback object.</param>
+        <param name="state">The response state.</param>
+        <summary>Sends the currently buffered response to the client.</summary>
+        <returns>The asynchronous result object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the underlying <xref:System.Web.HttpWorkerRequest> object supports asynchronous flush operations and this method is called from an asynchronous module event or from an asynchronous handler, the flush operation is performed asynchronously. Otherwise, the flush operation is performed synchronously. Asynchronous flush is supported for IIS 6.0 and later.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">The response is already completed.</exception>
       </Docs>
     </Member>
     <Member MemberName="BinaryWrite">
@@ -358,9 +613,19 @@
         <Parameter Name="buffer" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="buffer">The bytes to write to the output stream.</param>
+        <summary>Writes a string of binary characters to the HTTP output stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example reads a text file into a buffer and writes the buffer to the HTTP output stream.  
+  
+ [!code-csharp[Classic HttpResponse.BinaryWrite Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpResponse.BinaryWrite Example/CS/source.cs#1)]
+ [!code-vb[Classic HttpResponse.BinaryWrite Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpResponse.BinaryWrite Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Buffer">
@@ -376,9 +641,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether to buffer output and send it after the complete response is finished processing.</summary>
+        <value>
+          <see langword="true" /> if the output to client is buffered; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpResponse.Buffer%2A> property has been deprecated in favor of the <xref:System.Web.HttpResponse.BufferOutput%2A> property and is provided only for compatibility with earlier versions of ASP. With ASP.NET, use <xref:System.Web.HttpResponse.BufferOutput%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BufferOutput">
@@ -394,9 +667,22 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether to buffer output and send it after the complete page is finished processing.</summary>
+        <value>
+          <see langword="true" /> if the output to client is buffered; otherwise <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example sets the <xref:System.Web.HttpResponse.ContentType%2A> property for the response to image/jpeg, calls the <xref:System.Web.HttpResponse.Clear%2A> method to remove other content that might be attached to the response, and then sets the <xref:System.Web.HttpResponse.BufferOutput%2A> property to true so that the entire page will be processed before any content is sent to the requesting client.  
+  
+ For a complete example, see the <xref:System.Web.HttpResponse> class.  
+  
+ [!code-csharp[System.Web.HttpResponse_Samples1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse_Samples1/CS/responsesamplescs.aspx#2)]
+ [!code-vb[System.Web.HttpResponse_Samples1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse_Samples1/VB/responsesamplesvb.aspx#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Cache">
@@ -412,9 +698,19 @@
         <ReturnType>System.Web.HttpCachePolicy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the caching policy (such as expiration time, privacy settings, and vary clauses) of a Web page.</summary>
+        <value>An <see cref="T:System.Web.HttpCachePolicy" /> object that contains information about the caching policy of the current response.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example writes properties of the current cache policy to the HTTP output stream.  
+  
+ [!code-csharp[Classic HttpResponse.Cache Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpResponse.Cache Example/CS/source.cs#1)]
+ [!code-vb[Classic HttpResponse.Cache Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpResponse.Cache Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CacheControl">
@@ -430,9 +726,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see langword="Cache-Control" /> HTTP header that matches one of the <see cref="T:System.Web.HttpCacheability" /> enumeration values.</summary>
+        <value>A string representation of the <see cref="T:System.Web.HttpCacheability" /> enumeration value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The values for `Private`, `Public`, and `No-Cache` are strings and must be enclosed in quotation marks (" "). If the <xref:System.Web.HttpResponse.CacheControl%2A> property is set to a value that does not match one of the <xref:System.Web.HttpCacheability> enumeration values, then an <xref:System.ArgumentException> is thrown. If the <xref:System.Web.HttpResponse.CacheControl%2A> property is not set, the cacheability of the response is set to <xref:System.Web.HttpCacheability>.  
+  
+ The `CacheControl`, <xref:System.Web.HttpResponse.Expires%2A>, and <xref:System.Web.HttpResponse.ExpiresAbsolute%2A> properties have been deprecated. Instead, the methods of the <xref:System.Web.HttpCachePolicy> class are available through the <xref:System.Web.HttpResponse.Cache%2A> intrinsic object to control the Internet Information Services (IIS) output cache and client caches.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The string value set does not match one of the <see cref="T:System.Web.HttpCacheability" /> enumeration values.</exception>
       </Docs>
     </Member>
     <Member MemberName="Charset">
@@ -448,9 +754,25 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the HTTP character set of the output stream.</summary>
+        <value>The HTTP character set of the output stream.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `Charset` property can be set to `null` to suppress the HTTP `Content-Type` header.  
+  
+   
+  
+## Examples  
+ The following example checks whether the character set of the output stream is Central European (ISO).  
+  
+ [!code-csharp[System.Web.HttpResponse.Charset#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse.Charset/cs/default.aspx#1)]
+ [!code-vb[System.Web.HttpResponse.Charset#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse.Charset/vb/default.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">The <see langword="Charset" /> property was set after headers were sent.</exception>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -467,8 +789,25 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Clears all content output from the buffer stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpResponse.Clear%2A> method does not clear header information.  
+  
+   
+  
+## Examples  
+ The following example sets the <xref:System.Web.HttpResponse.ContentType%2A> property for the response to image/jpeg, calls the <xref:System.Web.HttpResponse.Clear%2A> method to remove other content that might be attached to the response, and then sets the <xref:System.Web.HttpResponse.BufferOutput%2A> property to true so that the complete page will be processed before any content is sent to the requesting client.  
+  
+ For a complete example, see the <xref:System.Web.HttpResponse> class.  
+  
+ [!code-csharp[System.Web.HttpResponse_Samples1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse_Samples1/CS/responsesamplescs.aspx#2)]
+ [!code-vb[System.Web.HttpResponse_Samples1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse_Samples1/VB/responsesamplesvb.aspx#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearContent">
@@ -485,8 +824,23 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Clears all content output from the buffer stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpResponse.ClearContent%2A> method does not clear header information.  
+  
+   
+  
+## Examples  
+ The following example clears all content from the buffer stream.  
+  
+ [!code-csharp[Classic HttpResponse.ClearContent Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpResponse.ClearContent Example/CS/source.cs#1)]
+ [!code-vb[Classic HttpResponse.ClearContent Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpResponse.ClearContent Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearHeaders">
@@ -503,8 +857,19 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Clears all headers from the buffer stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example calls the <xref:System.Web.HttpResponse.ClearHeaders%2A> method to ensure that no headers are sent with the current response. This technique can be especially important if the ASP.NET response is generating an image, such as a JPEG file. In this example the <xref:System.Web.HttpResponse.ContentType%2A> property is set to image/jpeg.  
+  
+ [!code-csharp[System.Web.HttpResponse_Sample5#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse_Sample5/CS/httpresponseclearheaderscs.aspx#2)]
+ [!code-vb[System.Web.HttpResponse_Sample5#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse_Sample5/VB/httpresponseclearheadersvb.aspx#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">Headers are cleared after the HTTP headers have been sent.</exception>
       </Docs>
     </Member>
     <Member MemberName="ClientDisconnectedToken">
@@ -520,9 +885,30 @@
         <ReturnType>System.Threading.CancellationToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a <see cref="T:System.Threading.CancellationToken" /> object that is tripped when the client disconnects.</summary>
+        <value>The cancellation token.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This API is thread-safe. However, there are some restrictions on how the cancellation token should be used. Using it incorrectly can lead to race conditions, deadlocks, or other unexpected behavior. Keep in mind the following guidelines:  
+  
+-   Ensure that you don't call into this API outside the bounds of a single request, because ASP.NET will dispose of the cancellation token at the end of the request. There is no guarantee that the token will ever transition to a canceled state before it is disposed. For example, if the request finishes without the client having disconnected, the token will be disposed without having first been canceled.  
+  
+-   Do not wait on the <xref:System.Threading.CancellationToken.WaitHandle%2A?displayProperty=fullName>, as this defeats the purpose of an asynchronous notification and can cause deadlocks.  
+  
+-   Do not call the <xref:System.Threading.CancellationToken.Register%2A?displayProperty=fullName> overloads which invoke the callback on the original <xref:System.Threading.SynchronizationContext> object.  
+  
+-   Do not use the <xref:System.Web.HttpContext> object or other non-thread-safe ASP.NET intrinsic objects from within the callback provided to the <xref:System.Threading.CancellationToken.Register%2A?displayProperty=fullName> method. The callback may be running concurrently with other ASP.NET or application code.  
+  
+-   Keep the callback methods short-running and non-blocking.  
+  
+-   Make every effort to avoid throwing exceptions from within the callback methods.  
+  
+ This property is only applicable to Internet Information Service (IIS) 7.5 in integrated mode. If you invoke it without the right IIS version or pipeline mode, a <xref:System.PlatformNotSupportedException> is thrown. To determine the IIS version, use <xref:System.Web.HttpRuntime.IISVersion%2A>. To determine the pipeline mode, use <xref:System.Web.HttpRuntime.UsingIntegratedPipeline%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -539,8 +925,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Closes the socket connection to a client.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method terminates the connection to the client in an abrupt manner and is not intended for normal HTTP request processing. The method sends a reset packet to the client, which can cause response data that is buffered on the server, the client, or somewhere in between to be dropped.  
+  
+ However, typically you should call <xref:System.Web.HttpApplication.CompleteRequest%2A> instead if you want to jump ahead to the <xref:System.Web.HttpApplication.EndRequest> event and send a response to the client.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ContentEncoding">
@@ -556,9 +951,25 @@
         <ReturnType>System.Text.Encoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the HTTP character set of the output stream.</summary>
+        <value>A <see cref="T:System.Text.Encoding" /> object that contains information about the character set of the current response.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Default `ContentEncoding` can be specified in an ASP.NET configuration file in the [globalization Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/e2dffc8e-ebd2-439b-a2fd-e3ac5e620da7) section. If <xref:System.Web.HttpResponse.ContentEncoding%2A> is specified by the client, the default configuration settings are overridden.  
+  
+   
+  
+## Examples  
+ The following example writes a human-readable description of the character set encoding to the output stream.  
+  
+ [!code-csharp[Classic HttpResponse.ContentEncoding Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpResponse.ContentEncoding Example/CS/source.cs#1)]
+ [!code-vb[Classic HttpResponse.ContentEncoding Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpResponse.ContentEncoding Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">Attempted to set <see cref="P:System.Web.HttpResponse.ContentEncoding" /> to <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContentType">
@@ -574,9 +985,22 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the HTTP MIME type of the output stream.</summary>
+        <value>The HTTP MIME type of the output stream. The default value is "<see langword="text/html" />".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example sets the <xref:System.Web.HttpResponse.ContentType%2A> property for the response to image/jpeg, calls the <xref:System.Web.HttpResponse.Clear%2A> method to remove other content that might be attached to the response, and then sets the <xref:System.Web.HttpResponse.BufferOutput%2A> property to true so that the complete page will be processed before any content is sent to the requesting client.  
+  
+ For a complete example, see the <xref:System.Web.HttpResponse> class.  
+  
+ [!code-csharp[System.Web.HttpResponse_Samples1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse_Samples1/CS/responsesamplescs.aspx#2)]
+ [!code-vb[System.Web.HttpResponse_Samples1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse_Samples1/VB/responsesamplesvb.aspx#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">The <see cref="P:System.Web.HttpResponse.ContentType" /> property is set to <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Cookies">
@@ -592,9 +1016,26 @@
         <ReturnType>System.Web.HttpCookieCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the response cookie collection.</summary>
+        <value>The response cookie collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ASP.NET includes two intrinsic cookie collections. The collection accessed through the <xref:System.Web.HttpRequest.Cookies%2A> collection of <xref:System.Web.HttpRequest> contains cookies transmitted by the client to the server in the `Cookie` header. The collection accessed through the <xref:System.Web.HttpResponse.Cookies%2A> collection of <xref:System.Web.HttpResponse> contains new cookies created on the server and transmitted to the client in the `Set-Cookie` header.  
+  
+ After you add a cookie by using the <xref:System.Web.HttpResponse.Cookies%2A?displayProperty=fullName> collection, the cookie is immediately available in the <xref:System.Web.HttpRequest.Cookies%2A?displayProperty=fullName> collection, even if the response has not been sent to the client.  
+  
+   
+  
+## Examples  
+ The following example creates a new cookie named `LastVisit`, sets the value of the cookie to the current date and time, and adds the cookie to the current cookie collection. All cookies in the cookie collection are sent to the client in the `Set-Cookie` header with the HTTP output stream.  
+  
+ [!code-csharp[Classic HttpResponse.Cookies Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpResponse.Cookies Example/CS/source.cs#1)]
+ [!code-vb[Classic HttpResponse.Cookies Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpResponse.Cookies Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DisableKernelCache">
@@ -611,8 +1052,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Disables kernel caching for the current response.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If kernel caching is not supported, this method has no effect.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DisableUserCache">
@@ -629,8 +1077,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Disables IIS user-mode caching for this response.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If IIS user-mode caching is not supported, this method returns without performing any action.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="End">
@@ -647,8 +1102,24 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Sends all currently buffered output to the client, stops execution of the page, and raises the <see cref="E:System.Web.HttpApplication.EndRequest" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is provided only for compatibility with ASP—that is, for compatibility with COM-based Web-programming technology that preceded ASP.NET. If you want to jump ahead to the <xref:System.Web.HttpApplication.EndRequest> event and send a response to the client, it is usually preferable to call <xref:System.Web.HttpApplication.CompleteRequest%2A> instead.  
+  
+ To mimic the behavior of the `End` method in ASP, this method tries to raise a <xref:System.Threading.ThreadAbortException> exception. If this attempt is successful, the calling thread will be aborted, which is detrimental to your site's performance. In that case, no code after the call to the <xref:System.Web.HttpResponse.End%2A> method is executed.  
+  
+ If the <xref:System.Web.HttpResponse.End%2A> method is not able to raise a <xref:System.Threading.ThreadAbortException>, it instead flushes the response bytes to the client. It does this synchronously, which can also be detrimental to your site's performance.  
+  
+ In either case (whether or not a <xref:System.Threading.ThreadAbortException> exception is successfully raised), the response pipeline jumps ahead to the <xref:System.Web.HttpApplication.EndRequest> event.  
+  
+ The <xref:System.Web.HttpApplication.CompleteRequest%2A> method does not raise an exception, and code after the call to the <xref:System.Web.HttpApplication.CompleteRequest%2A> method might be executed. If your intention is to avoid execution of subsequent code, and if the performance penalty of <xref:System.Web.HttpResponse.End%2A> is acceptable, you can call <xref:System.Web.HttpResponse.End%2A> instead of <xref:System.Web.HttpApplication.CompleteRequest%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Threading.ThreadAbortException">The call to <see cref="M:System.Web.HttpResponse.End" /> has terminated the current request.</exception>
       </Docs>
     </Member>
     <Member MemberName="EndFlush">
@@ -667,9 +1138,11 @@
         <Parameter Name="asyncResult" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="asyncResult">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="asyncResult">The asynchronous result object.</param>
+        <summary>Completes an asynchronous flush operation.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Asynchronous flush is not supported and the <paramref name="asyncResult" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">Asynchronous flush is not supported and the <paramref name="asyncResult" /> parameter cannot be cast to a <c>FlushAsyncResult</c> object.</exception>
       </Docs>
     </Member>
     <Member MemberName="Expires">
@@ -685,9 +1158,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the number of minutes before a page cached on a browser expires. If the user returns to the same page before it expires, the cached version is displayed. <see cref="P:System.Web.HttpResponse.Expires" /> is provided for compatibility with earlier versions of ASP.</summary>
+        <value>The number of minutes before the page expires.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `Expires`, <xref:System.Web.HttpResponse.ExpiresAbsolute%2A> and <xref:System.Web.HttpResponse.CacheControl%2A> properties have been deprecated in favor of the methods of the <xref:System.Web.HttpCachePolicy> class available through the <xref:System.Web.HttpResponse.Cache%2A> intrinsic object to control the Internet Information Services (IIS) output cache and client caches.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ExpiresAbsolute">
@@ -703,9 +1183,16 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the absolute date and time at which to remove cached information from the cache. <see cref="P:System.Web.HttpResponse.ExpiresAbsolute" /> is provided for compatibility with earlier versions of ASP.</summary>
+        <value>The date and time at which the page expires.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `ExpiresAbsolute`, <xref:System.Web.HttpResponse.Expires%2A>, and <xref:System.Web.HttpResponse.CacheControl%2A> properties have been deprecated in favor of the methods of the <xref:System.Web.HttpCachePolicy> class available through the <xref:System.Web.HttpResponse.Cache%2A> intrinsic object to control the Internet Information Services (IIS) output cache and client caches.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Filter">
@@ -721,9 +1208,25 @@
         <ReturnType>System.IO.Stream</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a wrapping filter object that is used to modify the HTTP entity body before transmission.</summary>
+        <value>The <see cref="T:System.IO.Stream" /> object that acts as the output filter.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you create a `Stream` object and set the <xref:System.Web.HttpResponse.Filter%2A> property to the `Stream` object, all HTTP output sent by <xref:System.Web.HttpResponse.Write%2A> passes through the filter.  
+  
+   
+  
+## Examples  
+ The following example is an ASP.NET page that sets the <xref:System.Web.HttpResponse.Filter%2A> property to a new instance of the `UpperCaseFilter` class, a custom <xref:System.IO.Stream> class that converts all text that passes through it to uppercase. The information about the request is saved to a text file, and then the <xref:System.Web.HttpResponse.Filter%2A> property is set. After the response filter is in place, the code calls the <xref:System.Web.HttpRequest.MapPath%2A> method to get the absolute path to a text file named `TestFile.txt` that serves as the source for the content of the response. The code then creates a new <xref:System.IO.StreamReader> object to read the text file from beginning to end, and then calls the <xref:System.Web.HttpResponse.Write%2A> method to display the content of the file on the page.  
+  
+ [!code-csharp[System.Web.HttpRequest_Samples2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_Samples2/CS/requestsamples2cs.aspx#1)]
+ [!code-vb[System.Web.HttpRequest_Samples2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_Samples2/VB/requestsamples2vb.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">Filtering is not allowed with the entity.</exception>
       </Docs>
     </Member>
     <Member MemberName="Flush">
@@ -740,8 +1243,26 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Sends all currently buffered output to the client.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Forces all currently buffered output to be sent to the client. The <xref:System.Web.HttpResponse.Flush%2A> method can be called multiple times during request processing.  
+  
+   
+  
+## Examples  
+ The following example calls the <xref:System.Drawing.Graphics.Save%2A> method to save a <xref:System.Drawing.Bitmap> object to the <xref:System.Web.HttpResponse.OutputStream%2A> property and converts the image to the JPEG format. The code then calls the `Dispose` method on the <xref:System.Drawing.Bitmap> object and a <xref:System.Drawing.Graphics> object, releasing the resources that they were using. It then calls the <xref:System.Web.HttpResponse.Flush%2A> method to send the content of the response to the requesting client.  
+  
+ For a complete example, see the <xref:System.Web.HttpResponse> class.  
+  
+ [!code-csharp[System.Web.HttpResponse_Samples1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse_Samples1/CS/responsesamplescs.aspx#1)]
+ [!code-vb[System.Web.HttpResponse_Samples1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse_Samples1/VB/responsesamplesvb.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">The cache is flushed after the response has been sent.</exception>
       </Docs>
     </Member>
     <Member MemberName="FlushAsync">
@@ -758,8 +1279,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Asynchronously sends all currently buffered output to the client.</summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> that represents the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -776,9 +1297,24 @@
         <ReturnType>System.Text.Encoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets an <see cref="T:System.Text.Encoding" /> object that represents the encoding for the current header output stream.</summary>
+        <value>An <see cref="T:System.Text.Encoding" /> that contains information about the character set for the current header.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpResponse.HeaderEncoding%2A> property gives you the ability to disable or change the <xref:System.Text.Encoding> object on a response header by using the <xref:System.Text.ASCIIEncoding>, <xref:System.Text.UnicodeEncoding>, <xref:System.Text.UTF7Encoding>, or <xref:System.Text.UTF8Encoding> object. The default encoding value is the <xref:System.Text.UTF8Encoding> class.  
+  
+ By changing the type of the <xref:System.Web.HttpResponse.HeaderEncoding%2A> property, you can potentially increase the risk of certain malicious attacks or cause sensitive data to be sent through the response header. Header injection attacks can be avoided, in part, by leaving the <xref:System.Web.HttpResponse.HeaderEncoding%2A> property of a response to the default setting. An attack against a vulnerable application could echo back entrusted data as part of a response header. If the <xref:System.Web.HttpResponse.HeaderEncoding%2A> is disabled because of a requirement for continuation lines in a header or if any header is constructed based on the result of untrusted data, the header data should be validated before sending to the response stream.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The encoding value is <see langword="null" />.</exception>
+        <exception cref="T:System.Web.HttpException">The encoding value is <see cref="P:System.Text.Encoding.Unicode" />.  
+  
+ \- or -  
+  
+ The headers have already been sent.</exception>
       </Docs>
     </Member>
     <Member MemberName="Headers">
@@ -794,9 +1330,17 @@
         <ReturnType>System.Collections.Specialized.NameValueCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the collection of response headers.</summary>
+        <value>A <see cref="T:System.Collections.Specialized.NameValueCollection" /> of response headers.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpResponse.Headers%2A> property is only supported with the [!INCLUDE[iisver](~/includes/iisver-md.md)] integrated pipeline mode and at least the .NET Framework 3.0. When you try to access the <xref:System.Web.HttpResponse.Headers%2A> property and either of these two conditions is not met, a <xref:System.PlatformNotSupportedException> is thrown.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.PlatformNotSupportedException">The operation requires the integrated pipeline mode in [!INCLUDE[iisver](~/includes/iisver-md.md)] and at least the .NET Framework version 3.0.</exception>
       </Docs>
     </Member>
     <Member MemberName="HeadersWritten">
@@ -812,8 +1356,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>[Supported in the .NET Framework 4.5.2 and later versions]  
+  
+ Gets a value indicating whether the response headers have been written.</summary>
+        <value>
+          <see langword="true" /> if the response headers have been written; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -830,9 +1377,29 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether the client is still connected to the server.</summary>
+        <value>
+          <see langword="true" /> if the client is currently connected; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpResponse.IsClientConnected%2A> property returns `false` when the following conditions are true:  
+  
+-   The connection to the client was terminated. This can occur if the <xref:System.Web.HttpResponse.Close%2A> method was invoked, or if the client stopped execution of the Web page or browsed to another page.  
+  
+-   The <xref:System.Web.HttpWorkerRequest> object that is handling the request is `null` or the <xref:System.Web.HttpWorkerRequest.IsClientConnected%2A?displayProperty=fullName> method returns `false`. If a custom <xref:System.Web.HttpWorkerRequest> object handles the request, then the <xref:System.Web.HttpWorkerRequest.IsClientConnected%2A?displayProperty=fullName> method might be set based on custom criteria. For example, the custom worker request might force a time-out after a period of time.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Web.HttpResponse.IsClientConnected%2A> property to check whether the client that is requesting the page remains connected to the server. If <xref:System.Web.HttpResponse.IsClientConnected%2A> is true, the code calls the <xref:System.Web.HttpResponse.Redirect%2A> method, and the client will view another page. If <xref:System.Web.HttpResponse.IsClientConnected%2A> is false, then the code calls the <xref:System.Web.HttpResponse.End%2A> method and all page processing is terminated.  
+  
+ [!code-csharp[System.Web.HttpResponse_Sample4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse_Sample4/CS/page1cs.aspx#1)]
+ [!code-vb[System.Web.HttpResponse_Sample4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse_Sample4/VB/page1vb.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsRequestBeingRedirected">
@@ -848,9 +1415,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a Boolean value indicating whether the client is being transferred to a new location.</summary>
+        <value>
+          <see langword="true" /> if the value of the location response header is different than the current location; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.HttpResponse.IsRequestBeingRedirected%2A> property with the <xref:System.Web.HttpResponse.RedirectLocation%2A> property to test and determine whether the absolute URI that is transmitted to the client in the HTTP `Location` header is different than the current URI and what the new intended URI that is being transferred to will be.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Output">
@@ -866,9 +1441,19 @@
         <ReturnType>System.IO.TextWriter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Enables output of text to the outgoing HTTP response stream.</summary>
+        <value>A <see cref="T:System.IO.TextWriter" /> object that enables custom output to the client.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example is an ASP.NET page that contains a <xref:System.Web.UI.WebControls.TextBox> control that has its <xref:System.Web.UI.WebControls.TextBox.TextMode%2A> property set to <xref:System.Web.UI.WebControls.TextBoxMode>. The page's code takes the text that a user enters in the <xref:System.Web.UI.WebControls.TextBox.TextMode%2A>, uses the <xref:System.Web.HttpServerUtility.HtmlEncode%2A> method to HTML encode it, and the <xref:System.Web.HttpResponse.Output%2A> property to display the encoded string to the page.  
+  
+ [!code-csharp[System.Web.HttpResponse.Output_Sample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse.Output_Sample/CS/responseoutputcs.aspx#1)]
+ [!code-vb[System.Web.HttpResponse.Output_Sample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse.Output_Sample/VB/responseoutputvb.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OutputStream">
@@ -884,9 +1469,32 @@
         <ReturnType>System.IO.Stream</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Enables binary output to the outgoing HTTP content body.</summary>
+        <value>An IO <see cref="T:System.IO.Stream" /> representing the raw contents of the outgoing HTTP content body.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Starting with the .NET Framework version 2.0, when you use the [Stream.Write(Byte\<xref:System.IO.Stream.Write%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%29?displayProperty=fullName> method of the IO stream returned by the <xref:System.Web.HttpResponse.OutputStream%2A> property, the following exceptions might be thrown:  
+  
+-   <xref:System.ArgumentOutOfRangeException>, if the `offset` or `count` parameter is negative or if the `buffer` parameter's length minus the `offset` parameter is less than or equal to zero.  
+  
+-   <xref:System.ArgumentNullException>, if the `buffer` parameter is `null`.  
+  
+   
+  
+## Examples  
+ The following example calls the <xref:System.Drawing.Image.Save%2A> method to save a <xref:System.Drawing.Bitmap> object to the <xref:System.Web.HttpResponse.OutputStream%2A> property, and converts the image to the JPEG format. The code then calls the Dispose method on the <xref:System.Drawing.Bitmap> object and a <xref:System.Drawing.Graphics> object, releasing the resources that they were using. Finally, the code calls the <xref:System.Web.HttpResponse.Flush%2A> method to send the content of the response to the requesting client.  
+  
+ For a complete example, see the <xref:System.Web.HttpResponse> class.  
+  
+ [!code-csharp[System.Web.HttpResponse_Samples1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse_Samples1/CS/responsesamplescs.aspx#1)]
+ [!code-vb[System.Web.HttpResponse_Samples1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse_Samples1/VB/responsesamplesvb.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">
+          <paramref name="OutputStream" /> is not available.</exception>
       </Docs>
     </Member>
     <Member MemberName="Pics">
@@ -905,9 +1513,26 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="value">The string to add to the <see langword="PICS-Label" /> header.</param>
+        <summary>Appends a HTTP <see langword="PICS-Label" /> header to the output stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Platform for Internet Content Selection (PICS) is a World Wide Web Consortium (W3C) standard for content labeling. PICS is essentially a language for creating a ratings system.  
+  
+ Any value can be a PICS label; ASP.NET does not validate the label. The maximum length of the string is 255 characters. For more information about PICS standards and syntax, see the [World Wide Web Consortium](http://go.microsoft.com/fwlink/?LinkID=37125) Web site.  
+  
+   
+  
+## Examples  
+ The following example is an ASP.NET page that displays an image. The page code calls the <xref:System.Web.HttpResponse.Pics%2A> method to set the HTTP `PICS-Label` header for the response. The string that is passed as the parameter to the <xref:System.Web.HttpResponse.Pics%2A> method represents a rating label generated from the Internet Content Rating Association (ICRA) Web site.  
+  
+ [!code-csharp[System.Web.HttpResponse_Sample4#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse_Sample4/CS/page2cs.aspx#2)]
+ [!code-vb[System.Web.HttpResponse_Sample4#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse_Sample4/VB/page2vb.aspx#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PushPromise">
@@ -926,9 +1551,16 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="path">The URL of the push request. It should be the virtual path of the relative resource that the server wants to push to the client.</param>
+        <summary>This API is to support applications sending push promises to HTTP 2.0 clients. You can find more details regarding to Http2 server push at [HTTP/2 Specification Section 8.2: Server Push](http://http2.github.io/http2-spec/#PushResources).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ PushPromise is non-deterministic and applications shouldn't have logic that depends on it. Its only purpose is performance advantage in some cases. There are many conditions (protocol and implementation) that may cause to ignore the push requests completely. The expectation is based on fire-and-forget.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PushPromise">
@@ -949,11 +1581,18 @@
         <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <param name="method">To be added.</param>
-        <param name="headers">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="path">The URL of the push request. It should be the virtual path of the relative resource that the server wants to push to the client.</param>
+        <param name="method">Http request method that would be used by the push request.</param>
+        <param name="headers">Http request header that would be used by the push request.</param>
+        <summary>This API is to support applications sending push promises to HTTP 2.0 clients. You can find more details regarding to Http2 server push at [HTTP/2 Specification Section 8.2: Server Push](http://http2.github.io/http2-spec/#PushResources).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ PushPromise is non-deterministic and applications shouldn't have logic that depends on it. Its only purpose is performance advantage in some cases. There are many conditions (protocol and implementation) that may cause to ignore the push requests completely. The expectation is based on fire-and-forget.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Redirect">
@@ -972,9 +1611,32 @@
         <Parameter Name="url" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="url">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="url">The target location.</param>
+        <summary>Redirects a request to a new URL and specifies the new URL.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling <xref:System.Web.HttpResponse.Redirect%2A> is equivalent to calling <xref:System.Web.HttpResponse.Redirect%2A> with the second parameter set to `true`.  
+  
+ <xref:System.Web.HttpResponse.Redirect%2A> calls <xref:System.Web.HttpResponse.End%2A> which throws a <xref:System.Threading.ThreadAbortException> exception upon completion. This exception has a detrimental effect on Web application performance. Therefore, we recommend that instead of this overload you use the <xref:System.Web.HttpResponse.Redirect%28System.String%2CSystem.Boolean%29?displayProperty=fullName> overload and pass `false` for the `endResponse` parameter, and then call the <xref:System.Web.HttpApplication.CompleteRequest%2A> method. For more information, see the <xref:System.Web.HttpResponse.End%2A> method.  
+  
+> [!NOTE]
+>  For mobile pages only, if your application relies on cookieless sessions, or might receive requests from mobile devices that require cookieless sessions, using a tilde (~) in a path can result in creating a new session and potentially losing session data. To set a property on a mobile control with a path such as "~/path", resolve the path using <xref:System.Web.UI.MobileControls.MobileControl.ResolveUrl%2A> "~/path" before assigning it to the property.  
+  
+ ASP.NET performs the redirection by returning a 302 HTTP status code. An alternative way to transfer control to another page is the <xref:System.Web.HttpServerUtility.Transfer%2A> method. The <xref:System.Web.HttpServerUtility.Transfer%2A> method is typically more efficient because it does not cause a round trip to the client. For more information, see [How to: Redirect Users to Another Page](../Topic/How%20to:%20Redirect%20Users%20to%20Another%20Page.md).  
+  
+   
+  
+## Examples  
+ The following example forces an unconditional redirection to another Web site.  
+  
+ [!code-csharp[Classic HttpResponse.Redirect Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpResponse.Redirect Example/CS/source.cs#1)]
+ [!code-vb[Classic HttpResponse.Redirect Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpResponse.Redirect Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">A redirection is attempted after the HTTP headers have been sent.</exception>
       </Docs>
     </Member>
     <Member MemberName="Redirect">
@@ -994,10 +1656,38 @@
         <Parameter Name="endResponse" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="url">To be added.</param>
-        <param name="endResponse">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="url">The location of the target.</param>
+        <param name="endResponse">Indicates whether execution of the current page should terminate.</param>
+        <summary>Redirects a client to a new URL. Specifies the new URL and whether execution of the current page should terminate.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An absolute URL (for example, http://www.contoso.com/default.aspx) or a relative URL (for example, Default.aspx) can be specified for the target location but some browsers may reject a relative URL.  
+  
+ When you use this method in a page handler to terminate a request for one page and start a new request for another page, set `endResponse` to `false` and then call the <xref:System.Web.HttpApplication.CompleteRequest%2A> method. If you specify `true` for the `endResponse` parameter, this method calls the <xref:System.Web.HttpResponse.End%2A> method for the original request, which throws a <xref:System.Threading.ThreadAbortException> exception when it completes. This exception has a detrimental effect on Web application performance, which is why passing `false` for the `endResponse` parameter is recommended. For more information, see the <xref:System.Web.HttpResponse.End%2A> method.  
+  
+> [!NOTE]
+>  For mobile pages, if your application relies on cookieless sessions, or might receive requests from mobile devices that require cookieless sessions, using a tilde (~) in a path can create a new session and potentially lose session data. To set a property on a mobile control with a path such as "~/path", resolve the path using <xref:System.Web.UI.MobileControls.MobileControl.ResolveUrl%2A> "~/path" before assigning it to the property.  
+  
+ ASP.NET performs the redirection by returning a 302 HTTP status code. An alternative way to transfer control to another page is the <xref:System.Web.HttpServerUtility.Transfer%2A> method. The <xref:System.Web.HttpServerUtility.Transfer%2A> method is typically more efficient because it does not cause a round trip to the client. For more information, see [How to: Redirect Users to Another Page](../Topic/How%20to:%20Redirect%20Users%20to%20Another%20Page.md).  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Web.HttpResponse.IsClientConnected%2A> property to check whether the client that is requesting the page remains connected to the server. If <xref:System.Web.HttpResponse.IsClientConnected%2A> is true, the code calls the <xref:System.Web.HttpResponse.Redirect%2A> method, and the client will view another page. If <xref:System.Web.HttpResponse.IsClientConnected%2A> is false, then the code calls the <xref:System.Web.HttpResponse.End%2A> method and all page processing is terminated.  
+  
+ [!code-csharp[System.Web.HttpResponse_Sample4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse_Sample4/CS/page1cs.aspx#1)]
+ [!code-vb[System.Web.HttpResponse_Sample4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse_Sample4/VB/page1vb.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="url" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="url" /> contains a newline character.</exception>
+        <exception cref="T:System.Web.HttpException">A redirection is attempted after the HTTP headers have been sent.</exception>
+        <exception cref="T:System.ApplicationException">The page request is the result of a callback.</exception>
       </Docs>
     </Member>
     <Member MemberName="RedirectLocation">
@@ -1013,9 +1703,24 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the value of the HTTP <see langword="Location" /> header.</summary>
+        <value>The absolute URI that is transmitted to the client in the HTTP <see langword="Location" /> header.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this property to specify the redirect URL when you code a permanent redirect by using the HTTP 301 response code.  
+  
+```csharp  
+Response.StatusCode = 301;  
+Response.Status = "301 Moved Permanently";  
+Response.RedirectLocation = "http://www.newurl.com ";  
+Response.End();  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">The HTTP headers have already been written.</exception>
       </Docs>
     </Member>
     <Member MemberName="RedirectPermanent">
@@ -1034,9 +1739,22 @@
         <Parameter Name="url" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="url">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="url">The location to redirect the request to.</param>
+        <summary>Performs a permanent redirection from the requested URL to the specified URL.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpResponse.RedirectPermanent%28System.String%29> method overload provides a 301 HTTP status code in the response and includes the URL to redirect the request to. A 301 HTTP status code is a standard code in an HTTP response. It indicates that a permanent redirection exists, and it provides the redirection location.  
+  
+ Calling the <xref:System.Web.HttpResponse.RedirectPermanent%28System.String%29> method overload terminates the response.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="url" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="url" /> includes a newline character (<c>\n</c>).</exception>
       </Docs>
     </Member>
     <Member MemberName="RedirectPermanent">
@@ -1056,10 +1774,22 @@
         <Parameter Name="endResponse" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="url">To be added.</param>
-        <param name="endResponse">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="url">The location to redirect the request to.</param>
+        <param name="endResponse">
+          <see langword="true" /> to terminate the response; otherwise <see langword="false" />. The default is <see langword="false" />.</param>
+        <summary>Performs a permanent redirection from the requested URL to the specified URL, and provides the option to complete the response.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpResponse.RedirectPermanent%28System.String%2CSystem.Boolean%29> method overload provides a 301 HTTP status code in the response and includes the URL to redirect the request to. This method overload also provides the option to specify whether to terminate or to complete the response after the redirection has been performed. A 301 HTTP status code is a standard code in an HTTP response. It indicates that a permanent redirection exists, and it provides the redirection location.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="url" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="url" /> includes a newline character (<c>\n</c>).</exception>
       </Docs>
     </Member>
     <Member MemberName="RedirectToRoute">
@@ -1078,9 +1808,37 @@
         <Parameter Name="routeValues" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="routeValues">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="routeValues">The route parameter values.</param>
+        <summary>Redirects a request to a new URL by using route parameter values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is provided for coding convenience. It is equivalent to calling the <xref:System.Web.HttpResponse.Redirect%28System.String%2CSystem.Boolean%29> method with the second parameter set to `false`.  
+  
+ This method converts the object that is passed in `routeValues` to a <xref:System.Web.Routing.RouteValueDictionary?displayProperty=fullName> object by using the <xref:System.Web.Routing.RouteValueDictionary.%23ctor%28System.Object%29?displayProperty=fullName> constructor. The <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A?displayProperty=fullName> method is then called to determine the URL.  
+  
+ ASP.NET performs the redirection by returning a 302 HTTP status code.  
+  
+   
+  
+## Examples  
+ The following example shows how to call this method to redirect to a route that has parameters that are named `productid` and `category`.  
+  
+```vb  
+Response.RedirectToRoute(  
+  New With {.productid = "1", .category = "widgets"})  
+```  
+  
+```csharp  
+Response.RedirectToRoute(  
+  new { productid = "1", category = "widgets" });  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">No route corresponds to the specified route parameters.</exception>
+        <exception cref="T:System.Web.HttpException">Redirection was attempted after the HTTP headers had been sent.</exception>
       </Docs>
     </Member>
     <Member MemberName="RedirectToRoute">
@@ -1099,9 +1857,35 @@
         <Parameter Name="routeName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="routeName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="routeName">The name of the route.</param>
+        <summary>Redirects a request to a new URL by using a route name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is provided for coding convenience. It is equivalent to calling the <xref:System.Web.HttpResponse.Redirect%28System.String%2CSystem.Boolean%29> method with the second parameter set to `false`.  
+  
+ This method converts the route name that is passed in `routeName` to a URL by using the <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A?displayProperty=fullName> method.  
+  
+ ASP.NET performs the redirection by returning a 302 HTTP status code.  
+  
+   
+  
+## Examples  
+ The following example shows how to call this method to redirect to a route that is named `Products`.  
+  
+```vb  
+Response.RedirectToRoute("Products")  
+```  
+  
+```csharp  
+Response.RedirectToRoute("Products");  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">No route corresponds to the specified route parameters.</exception>
+        <exception cref="T:System.Web.HttpException">Redirection was attempted after the HTTP headers had been sent.</exception>
       </Docs>
     </Member>
     <Member MemberName="RedirectToRoute">
@@ -1120,9 +1904,37 @@
         <Parameter Name="routeValues" Type="System.Web.Routing.RouteValueDictionary" />
       </Parameters>
       <Docs>
-        <param name="routeValues">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="routeValues">The route parameter values.</param>
+        <summary>Redirects a request to a new URL by using route parameter values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is provided for coding convenience. It is equivalent to calling the <xref:System.Web.HttpResponse.Redirect%28System.String%2CSystem.Boolean%29> method with the second parameter set to `false`.  
+  
+ This method calls the <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A?displayProperty=fullName> method to determine the URL.  
+  
+ ASP.NET performs the redirection by returning a 302 HTTP status code.  
+  
+   
+  
+## Examples  
+ The following example shows how to call this method to redirect to a route that has parameters that are named `productid` and `category`.  
+  
+```vb  
+Response.RedirectToRoute(  
+  new RouteValueDictionary {productId="1", category="widgets"})  
+```  
+  
+```csharp  
+Response.RedirectToRoute(  
+  (new RouteValueDictionary {productId="1", category="widgets"});  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">No route corresponds to the specified route parameters.</exception>
+        <exception cref="T:System.Web.HttpException">Redirection was attempted after the HTTP headers had been sent.</exception>
       </Docs>
     </Member>
     <Member MemberName="RedirectToRoute">
@@ -1142,10 +1954,38 @@
         <Parameter Name="routeValues" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="routeName">To be added.</param>
-        <param name="routeValues">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="routeName">The name of the route.</param>
+        <param name="routeValues">The route parameter values.</param>
+        <summary>Redirects a request to a new URL by using route parameter values and a route name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is provided for coding convenience. It is equivalent to calling the <xref:System.Web.HttpResponse.Redirect%28System.String%2CSystem.Boolean%29> method with the second parameter set to `false`.  
+  
+ This method converts the object that is passed in `routeValues` to a <xref:System.Web.Routing.RouteValueDictionary?displayProperty=fullName> object by using the <xref:System.Web.Routing.RouteValueDictionary.%23ctor%28System.Object%29?displayProperty=fullName> constructor. The <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A?displayProperty=fullName> method is then called to determine the URL.  
+  
+ ASP.NET performs the redirection by returning a 302 HTTP status code.  
+  
+   
+  
+## Examples  
+ The following example shows how to call this method to redirect to a route that is named `Product` and that has parameters that are named `productid` and `category`.  
+  
+```vb  
+Response.RedirectToRoute("Product",  
+  New With {.productid = "1", .category = "widgets"})  
+```  
+  
+```csharp  
+Response.RedirectToRoute("Product",  
+  new { productid = "1", category = "widgets" });  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">No route corresponds to the specified route parameters.</exception>
+        <exception cref="T:System.Web.HttpException">Redirection was attempted after the HTTP headers had been sent.</exception>
       </Docs>
     </Member>
     <Member MemberName="RedirectToRoute">
@@ -1165,10 +2005,38 @@
         <Parameter Name="routeValues" Type="System.Web.Routing.RouteValueDictionary" />
       </Parameters>
       <Docs>
-        <param name="routeName">To be added.</param>
-        <param name="routeValues">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="routeName">The name of the route.</param>
+        <param name="routeValues">The route parameter values.</param>
+        <summary>Redirects a request to a new URL by using route parameter values and a route name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is provided for coding convenience. It is equivalent to calling the <xref:System.Web.HttpResponse.Redirect%28System.String%2CSystem.Boolean%29> method with the second parameter set to `false`.  
+  
+ The <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A?displayProperty=fullName> method is called to determine the URL.  
+  
+ ASP.NET performs the redirection by returning a 302 HTTP status code.  
+  
+   
+  
+## Examples  
+ The following example shows how to call this method to redirect to a route that is named `Product` and that has parameters that are named `productid` and `category`.  
+  
+```vb  
+Response.RedirectToRoute("Product",  
+  new RouteValueDictionary {productId="1", category="widgets"})  
+```  
+  
+```csharp  
+Response.RedirectToRoute("Product",  
+  (new RouteValueDictionary {productId="1", category="widgets"});  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">No route corresponds to the specified route parameters.</exception>
+        <exception cref="T:System.Web.HttpException">Redirection was attempted after the HTTP headers had been sent.</exception>
       </Docs>
     </Member>
     <Member MemberName="RedirectToRoutePermanent">
@@ -1187,9 +2055,37 @@
         <Parameter Name="routeValues" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="routeValues">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="routeValues">The route parameter values.</param>
+        <summary>Performs a permanent redirection from a requested URL to a new URL by using route parameter values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is provided for coding convenience. It is equivalent to calling the <xref:System.Web.HttpResponse.RedirectPermanent%28System.String%2CSystem.Boolean%29> method with the second parameter set to `false`.  
+  
+ This method converts the object that is passed in `routeValues` to a <xref:System.Web.Routing.RouteValueDictionary?displayProperty=fullName> object by using the <xref:System.Web.Routing.RouteValueDictionary.%23ctor%28System.Object%29?displayProperty=fullName> constructor. The <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A?displayProperty=fullName> method is then called to determine the URL.  
+  
+ ASP.NET performs the redirection by returning a 301 HTTP status code.  
+  
+   
+  
+## Examples  
+ The following example shows how to call this method to redirect to a route that has parameters that are named `productid` and `category`.  
+  
+```vb  
+Response.RedirectToRoutePermanent(  
+  New With {.productid = "1", .category = "widgets"})  
+```  
+  
+```csharp  
+Response.RedirectToRoutePermanent(  
+  new { productid = "1", category = "widgets" });  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">No route corresponds to the specified route parameters.</exception>
+        <exception cref="T:System.Web.HttpException">Redirection was attempted after the HTTP headers had been sent.</exception>
       </Docs>
     </Member>
     <Member MemberName="RedirectToRoutePermanent">
@@ -1208,9 +2104,35 @@
         <Parameter Name="routeName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="routeName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="routeName">The name of the route.</param>
+        <summary>Performs a permanent redirection from a requested URL to a new URL by using a route name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is provided for coding convenience. It is equivalent to calling the <xref:System.Web.HttpResponse.RedirectPermanent%28System.String%2CSystem.Boolean%29> method with the second parameter set to `false`.  
+  
+ This method converts the route name that is passed in `routeName` to a URL by using the <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A?displayProperty=fullName> method.  
+  
+ ASP.NET performs the redirection by returning a 301 HTTP status code.  
+  
+   
+  
+## Examples  
+ The following example shows how to call this method to redirect to a route that is named `Products`.  
+  
+```vb  
+Response.RedirectToRoutePermanent("Products")  
+```  
+  
+```csharp  
+Response.RedirectToRoutePermanent("Products");  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">No route corresponds to the specified route parameters.</exception>
+        <exception cref="T:System.Web.HttpException">Redirection was attempted after the HTTP headers had been sent.</exception>
       </Docs>
     </Member>
     <Member MemberName="RedirectToRoutePermanent">
@@ -1229,9 +2151,37 @@
         <Parameter Name="routeValues" Type="System.Web.Routing.RouteValueDictionary" />
       </Parameters>
       <Docs>
-        <param name="routeValues">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="routeValues">The route parameter values.</param>
+        <summary>Performs a permanent redirection from a requested URL to a new URL by using route parameter values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is provided for coding convenience. It is equivalent to calling the <xref:System.Web.HttpResponse.Redirect%28System.String%2CSystem.Boolean%29> method with the second parameter set to `false`.  
+  
+ This method calls the <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A?displayProperty=fullName> method to determine the URL.  
+  
+ ASP.NET performs the redirection by returning a 301 HTTP status code.  
+  
+   
+  
+## Examples  
+ The following example shows how to call this method to redirect to a route that has parameters that are named `productid` and `category`.  
+  
+```vb  
+Response.RedirectToRoutePermanent(  
+  new RouteValueDictionary {productId="1", category="widgets"})  
+```  
+  
+```csharp  
+Response.RedirectToRoutePermanent(  
+  new RouteValueDictionary {productId="1", category="widgets"});  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">No route corresponds to the specified route parameters.</exception>
+        <exception cref="T:System.Web.HttpException">Redirection was attempted after the HTTP headers had been sent.</exception>
       </Docs>
     </Member>
     <Member MemberName="RedirectToRoutePermanent">
@@ -1251,10 +2201,38 @@
         <Parameter Name="routeValues" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="routeName">To be added.</param>
-        <param name="routeValues">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="routeName">The name of the route.</param>
+        <param name="routeValues">The route parameter values.</param>
+        <summary>Performs a permanent redirection from a requested URL to a new URL by using the route parameter values and the name of the route that correspond to the new URL.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is provided for coding convenience. It is equivalent to calling the <xref:System.Web.HttpResponse.RedirectPermanent%2A> method with the second parameter set to `false`.  
+  
+ This method converts the object that is passed in `routeValues` to a <xref:System.Web.Routing.RouteValueDictionary?displayProperty=fullName> object by using the <xref:System.Web.Routing.RouteValueDictionary.%23ctor%28System.Object%29?displayProperty=fullName> constructor. The <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A?displayProperty=fullName> method is then called to determine the URL.  
+  
+ ASP.NET performs the redirection by returning a 301 HTTP status code.  
+  
+   
+  
+## Examples  
+ The following example shows how to call this method to redirect to a route that is named `Product` and that has parameters that are named `productid` and `category`.  
+  
+```vb  
+Response.RedirectToRoutePermanent("Product",  
+  New With {.productid = "1", .category = "widgets"})  
+```  
+  
+```csharp  
+Response.RedirectToRoutePermanent("Product",  
+  new { productid = "1", category = "widgets" });  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">No route corresponds to the specified route parameters.</exception>
+        <exception cref="T:System.Web.HttpException">Redirection was attempted after the HTTP headers had been sent.</exception>
       </Docs>
     </Member>
     <Member MemberName="RedirectToRoutePermanent">
@@ -1274,10 +2252,38 @@
         <Parameter Name="routeValues" Type="System.Web.Routing.RouteValueDictionary" />
       </Parameters>
       <Docs>
-        <param name="routeName">To be added.</param>
-        <param name="routeValues">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="routeName">The name of the route.</param>
+        <param name="routeValues">The route parameter values.</param>
+        <summary>Performs a permanent redirection from a requested URL to a new URL by using route parameter values and a route name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is provided for coding convenience. It is equivalent to calling the <xref:System.Web.HttpResponse.Redirect%28System.String%2CSystem.Boolean%29> method with the second parameter set to `false`.  
+  
+ This method calls the <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A?displayProperty=fullName> method to determine the URL.  
+  
+ ASP.NET performs the redirection by returning a 301 HTTP status code.  
+  
+   
+  
+## Examples  
+ The following example shows how to call this method to redirect to a route that is named `Product` and that has parameters that are named `productid` and `category`.  
+  
+```vb  
+Response.RedirectToRoutePermanent("Product",  
+  new RouteValueDictionary {productId="1", category="widgets"})  
+```  
+  
+```csharp  
+Response.RedirectToRoutePermanent("Product",  
+  new RouteValueDictionary {productId="1", category="widgets"});  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">No route corresponds to the specified route parameters.</exception>
+        <exception cref="T:System.Web.HttpException">Redirection was attempted after the HTTP headers had been sent.</exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveOutputCacheItem">
@@ -1296,9 +2302,20 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="path">The virtual absolute path to the items that are removed from the cache.</param>
+        <summary>Removes from the cache all cached items that are associated with the default output-cache provider. This method is static.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call this method to remove output-cache items that are associated with the default output-cache provider. Call the <xref:System.Web.HttpResponse.RemoveOutputCacheItem%2A> method to remove output-cache items that are associated with custom output-cache providers that are specified in the Web site configuration file.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="path" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="path" /> is not an absolute virtual path.</exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveOutputCacheItem">
@@ -1318,10 +2335,21 @@
         <Parameter Name="providerName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <param name="providerName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="path">The virtual absolute path of the items that are removed from the cache.</param>
+        <param name="providerName">The provider that is used to remove the output-cache artifacts that are associated with the specified path.</param>
+        <summary>Uses the specified output-cache provider to remove all output-cache items that are associated with the specified path.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call this method to remove output-cache items that are associated with the custom output-cache providers that are specified in the Web site configuration file. To remove output-cache items that are associated with the default output-cache provider, call the <xref:System.Web.HttpResponse.RemoveOutputCacheItem%28System.String%29> method overload.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="path" /> is null.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="path" /> is an invalid path.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetCookie">
@@ -1340,9 +2368,20 @@
         <Parameter Name="cookie" Type="System.Web.HttpCookie" />
       </Parameters>
       <Docs>
-        <param name="cookie">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="cookie">The cookie in the collection to be updated.</param>
+        <summary>Updates an existing cookie in the cookie collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example updates the value of an existing cookie.  
+  
+ [!code-csharp[Classic HttpResponse.SetCookie Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpResponse.SetCookie Example/CS/source.cs#1)]
+ [!code-vb[Classic HttpResponse.SetCookie Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpResponse.SetCookie Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">Attempted to set the cookie after the HTTP headers were sent.</exception>
       </Docs>
     </Member>
     <Member MemberName="Status">
@@ -1358,9 +2397,17 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Sets the <see langword="Status" /> line that is returned to the client.</summary>
+        <value>Setting the status code causes a string describing the status of the HTTP output to be returned to the client. The default value is 200 (OK).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.HttpResponse.Status%2A> has been deprecated in favor of <xref:System.Web.HttpResponse.StatusDescription%2A> and is provided only for compatibility with earlier versions of ASP. With ASP.NET, use <xref:System.Web.HttpResponse.StatusDescription%2A> instead.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">Status is set to an invalid status code.</exception>
       </Docs>
     </Member>
     <Member MemberName="StatusCode">
@@ -1376,9 +2423,21 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the HTTP status code of the output returned to the client.</summary>
+        <value>An Integer representing the status of the HTTP output returned to the client. The default value is 200 (OK). For a listing of valid status codes, see [Http Status Codes](http://go.microsoft.com/fwlink/?LinkId=73157).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example checks the status code of the output stream. If the status code is not equal to 200, additional code is executed.  
+  
+ [!code-csharp[System.Web.HttpResponse.StatusCode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse.StatusCode/cs/default.aspx#1)]
+ [!code-vb[System.Web.HttpResponse.StatusCode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse.StatusCode/vb/default.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">
+          <see cref="P:System.Web.HttpResponse.StatusCode" /> is set after the HTTP headers have been sent.</exception>
       </Docs>
     </Member>
     <Member MemberName="StatusDescription">
@@ -1394,9 +2453,22 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the HTTP status string of the output returned to the client.</summary>
+        <value>A string that describes the status of the HTTP output returned to the client. The default value is "OK". For a listing of valid status codes, see [Http Status Codes](http://go.microsoft.com/fwlink/?LinkId=73157).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example checks the status string of the output stream. If the status is not equal to "OK", additional code is executed.  
+  
+ [!code-csharp[System.Web.HttpResponse.StatusDescription#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse.StatusDescription/cs/default.aspx#1)]
+ [!code-vb[System.Web.HttpResponse.StatusDescription#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse.StatusDescription/vb/default.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">
+          <paramref name="StatusDescription" /> is set after the HTTP headers have been sent.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The selected value has a length greater than 512.</exception>
       </Docs>
     </Member>
     <Member MemberName="SubStatusCode">
@@ -1412,9 +2484,26 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value qualifying the status code of the response.</summary>
+        <value>An integer value that represents the [!INCLUDE[iisver](~/includes/iisver-md.md)] sub status code.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpResponse.SubStatusCode%2A> property is only supported with the integrated pipeline mode in [!INCLUDE[iisver](~/includes/iisver-md.md)] and at least the .NET Framework version 3.0. When you set the <xref:System.Web.HttpResponse.SubStatusCode%2A> property, the status is logged on [!INCLUDE[iisver](~/includes/iisver-md.md)] if failed-request tracing is configured. Independent of whether tracing is configured, the code is never sent as part of the final response to the request. For more information, see [Troubleshooting Failed Requests Using Failed Request Tracing in IIS 7.0](http://www.iis.net/default.aspx?tabid=2&subtabid=25&i=969&p=1).  
+  
+   
+  
+## Examples  
+ The following example sets the <xref:System.Web.HttpResponse.SubStatusCode%2A> property in an event handler for the <xref:System.Web.HttpApplication> instance of the <xref:System.Web.HttpApplication.PostAuthenticateRequest> event. Put the code file in the App_Code folder of your Web application and configure the Web.config file to register the module. For more information, see [Walkthrough: Creating and Registering a Custom HTTP Module](../Topic/Walkthrough:%20Creating%20and%20Registering%20a%20Custom%20HTTP%20Module.md).  
+  
+ [!code-csharp[System.Web.HttpResponse.SubStatusCode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse.SubStatusCode/CS/App_Code/TestModule.cs#1)]
+ [!code-vb[System.Web.HttpResponse.SubStatusCode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse.SubStatusCode/VB/App_Code/TestModule.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.PlatformNotSupportedException">The operation requires the integrated pipeline mode in [!INCLUDE[iisver](~/includes/iisver-md.md)] and at least the .NET Framework version 3.0.</exception>
+        <exception cref="T:System.Web.HttpException">The status code is set after all HTTP headers have been sent.</exception>
       </Docs>
     </Member>
     <Member MemberName="SupportsAsyncFlush">
@@ -1430,9 +2519,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the connection supports asynchronous flush operations.</summary>
+        <value>
+          <see langword="true" /> if the connection supports asynchronous flush operations; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property returns the value of the <xref:System.Web.HttpWorkerRequest.SupportsAsyncFlush%2A?displayProperty=fullName> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SuppressContent">
@@ -1448,9 +2545,20 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether to send HTTP content to the client.</summary>
+        <value>
+          <see langword="true" /> to suppress output; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example checks whether the <xref:System.Web.HttpRequest.IsSecureConnection%2A> property is set to false. If it is, the <xref:System.Web.HttpResponse.SuppressContent%2A> property is set to true to stop the response from being sent.  
+  
+ [!code-csharp[System.Web.HttpResponse_Sample5#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse_Sample5/CS/httpresponsesuppresscontentcs.aspx#3)]
+ [!code-vb[System.Web.HttpResponse_Sample5#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse_Sample5/VB/httpresponsesuppresscontentvb.aspx#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SuppressDefaultCacheControlHeader">
@@ -1466,9 +2574,21 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>[Supported in the .NET Framework 4.5.2 and later versions]  
+  
+ Gets or sets a value indicating whether to suppress the default <c>Cache Control: private</c> header for the current HTTP response.</summary>
+        <value>
+          <see langword="true" /> to suppress the default <c>Cache Control: private</c> header for the current HTTP response; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, ASP.NET sends a `Cache-Control: private` response header unless an explicit cache policy has been specified for this response. This property allows suppressing this default response header on a per-request basis. The header can still be suppressed for the entire application by setting <xref:System.Web.Configuration.HttpRuntimeSection.SendCacheControlHeader%2A> in [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/e9b81350-8aaf-47cc-9843-5f7d0c59f369) or [outputCache Element for caching (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/47cd2b47-316f-4dfd-bbf8-539be3066fee).  
+  
+ Use caution when suppressing the default `Cache-Control: private` header, as proxies and other intermediaries may treat responses without this header as cacheable by default. This treatment can lead to the inadvertent caching of sensitive information. See [RFC 2616, Sec. 13.4](http://tools.ietf.org/html/rfc2616) for more information.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SuppressFormsAuthenticationRedirect">
@@ -1484,9 +2604,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that specifies whether forms authentication redirection to the login page should be suppressed.</summary>
+        <value>
+          <see langword="true" /> if forms authentication redirection should be suppressed; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, forms authentication converts HTTP 401 status codes to 302 in order to redirect to the login page. This isn't appropriate for certain classes of errors, such as when authentication succeeds but authorization fails, or when the current request is an AJAX or web service request. This property provides a way to suppress the redirect behavior and send the original status code to the client.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TransmitFile">
@@ -1505,9 +2633,10 @@
         <Parameter Name="filename" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="filename">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="filename">The name of the file to write to the HTTP output.</param>
+        <summary>Writes the specified file directly to an HTTP response output stream, without buffering it in memory.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="filename" /> parameter is <see langword="null" /></exception>
       </Docs>
     </Member>
     <Member MemberName="TransmitFile">
@@ -1528,11 +2657,37 @@
         <Parameter Name="length" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="filename">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="length">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="filename">The name of the file to write to the HTTP output.</param>
+        <param name="offset">The position in the file to begin to write to the HTTP output.</param>
+        <param name="length">The number of bytes to be transmitted.</param>
+        <summary>Writes the specified part of a file directly to an HTTP response output stream without buffering it in memory.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you specify 0 as the `offset` parameter and -1 as the `length` parameter, the whole file is sent.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="offset" /> parameter is less than zero.  
+  
+ \- or -  
+  
+ The <paramref name="length" /> parameter is less than -1.  
+  
+ \- or -  
+  
+ The <paramref name="length" /> parameter specifies a number of bytes that is greater than the number of bytes the file contains minus the offset.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">The out-of-process worker request is not supported.  
+  
+ \- or -  
+  
+ The response is not using an <see cref="T:System.Web.HttpWriter" /> object.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="offset" /> parameter is less than zero or greater than the file size.  
+  
+ \- or -  
+  
+ The <paramref name="length" /> parameter is less than -1 or greater than the value of the <paramref name="offset" /> parameter plus the file size.</exception>
       </Docs>
     </Member>
     <Member MemberName="TrySkipIisCustomErrors">
@@ -1548,9 +2703,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that specifies whether [!INCLUDE[iisver](~/includes/iisver-md.md)] custom errors are disabled.</summary>
+        <value>
+          <see langword="true" /> to disable IIS custom errors; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpResponse.TrySkipIisCustomErrors%2A> property is used only when your application is hosted in IIS 7.0. When running in Classic mode in IIS 7.0 the <xref:System.Web.HttpResponse.TrySkipIisCustomErrors%2A> property default value is `true`. When running in Integrated mode, the <xref:System.Web.HttpResponse.TrySkipIisCustomErrors%2A> property default value is `false`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1569,9 +2732,19 @@
         <Parameter Name="ch" Type="System.Char" />
       </Parameters>
       <Docs>
-        <param name="ch">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="ch">The character to write to the HTTP output stream.</param>
+        <summary>Writes a character to an HTTP response output stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a series of constants that are written to an ASP.NET page using the Write method. The code calls this version of the Write method to write individual character constants to the page.  
+  
+ [!code-csharp[System.Web.HttpResponse_Sample5#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse_Sample5/CS/httpresponsewritecharscs.aspx#4)]
+ [!code-vb[System.Web.HttpResponse_Sample5#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse_Sample5/VB/httpresponsewritecharsvb.aspx#4)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1590,8 +2763,8 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="obj">The <see cref="T:System.Object" /> to write to the HTTP output stream.</param>
+        <summary>Writes an <see cref="T:System.Object" /> to an HTTP response stream.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1611,9 +2784,30 @@
         <Parameter Name="s" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="s">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="s">The string to write to the HTTP output stream.</param>
+        <summary>Writes a string to an HTTP response output stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Dynamically generated HTML pages can introduce security risks if input received from Web clients is not validated either when it is received from a client or when it is transmitted back to a client. Malicious script that is embedded in input submitted to a Web site and later written back out to a client can appear to be originating from a trusted source. This security risk is referred to as a cross-site scripting attack. You should always validate data that is received from a client when it will be transmitted from your site to client browsers.  
+  
+ Moreover, whenever you write out as HTML any data that was received as input, you should encode it using a technique such as <xref:System.Web.HttpServerUtility.HtmlEncode%2A> or <xref:System.Web.HttpServerUtility.UrlEncode%2A> to prevent malicious script from executing. This technique is useful for data that was not validated when it was received.  
+  
+ When you encode or filter data, you must specify a character set for your Web pages so that your filter can identify and remove any byte sequences that do not belong to that set (such as nonalphanumeric sequences) and could potentially have malicious script embedded in them.  
+  
+ For more information about cross-site scripting attacks, see article Q252985, "How to Prevent Cross-Site Scripting Security Issues" on the [Microsoft Knowledge Base](http://go.microsoft.com/fwlink/?LinkID=37115) Web site.  
+  
+   
+  
+## Examples  
+ The following example echoes the client's name back to the client's browser. The <xref:System.Web.HttpServerUtility.HtmlEncode%2A> method strips any malicious script and invalid characters that may have been submitted in the `UserName` input field.  
+  
+ [!code-csharp[System.Web.HttpResponse.Write#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse.Write/CS/systemwebhttpresponsewrite.cs#1)]
+ [!code-vb[System.Web.HttpResponse.Write#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse.Write/vb/systemwebhttpresponsewrite.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1634,11 +2828,21 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
-        <param name="index">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="buffer">The character array to write.</param>
+        <param name="index">The position in the character array where writing starts.</param>
+        <param name="count">The number of characters to write, beginning at <c>index</c>.</param>
+        <summary>Writes an array of characters to an HTTP response output stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a series of constants that are written to an ASP.NET page using the Write method. The code calls this version of the Write method to write individual character constants to the page.  
+  
+ [!code-csharp[System.Web.HttpResponse_Sample5#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse_Sample5/CS/httpresponsewritecharscs.aspx#4)]
+ [!code-vb[System.Web.HttpResponse_Sample5#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse_Sample5/VB/httpresponsewritecharsvb.aspx#4)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteFile">
@@ -1657,9 +2861,25 @@
         <Parameter Name="filename" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="filename">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="filename">The name of the file to write to the HTTP output.</param>
+        <summary>Writes the contents of the specified file directly to an HTTP response output stream as a file block.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When this method is used with large files, calling the method might throw an exception. The size of the file that can be used with this method depends on the hardware configuration of the Web server. For more information, see article 812406, "PRB: Response.WriteFile Cannot Download a Large File" on the [Microsoft Knowledge Base](http://go.microsoft.com/fwlink/?linkid=149903) Web site.  
+  
+   
+  
+## Examples  
+ The following example writes all the contents of a text file named `Login.txt` (which might contain literal HTML text and input controls) directly to the output stream.  
+  
+ [!code-csharp[Classic HttpResponse.WriteFile Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpResponse.WriteFile Example/CS/source.cs#1)]
+ [!code-vb[Classic HttpResponse.WriteFile Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpResponse.WriteFile Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="filename" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteFile">
@@ -1679,10 +2899,26 @@
         <Parameter Name="readIntoMemory" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="filename">To be added.</param>
-        <param name="readIntoMemory">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="filename">The name of the file to write into a memory block.</param>
+        <param name="readIntoMemory">Indicates whether the file will be written into a memory block.</param>
+        <summary>Writes the contents of the specified file directly to an HTTP response output stream as a memory block.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When this method is used with large files, calling the method might throw an exception. The size of the file that can be used with this method depends on the hardware configuration of the Web server. For more information, see article 812406, "PRB: Response.WriteFile Cannot Download a Large File" on the [Microsoft Knowledge Base](http://go.microsoft.com/fwlink/?linkid=149903) Web site.  
+  
+   
+  
+## Examples  
+ The following example writes a file to memory.  
+  
+ [!code-csharp[Classic HttpResponse.WriteFile1 Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpResponse.WriteFile1 Example/CS/source.cs#1)]
+ [!code-vb[Classic HttpResponse.WriteFile1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpResponse.WriteFile1 Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="filename" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteFile">
@@ -1703,11 +2939,34 @@
         <Parameter Name="size" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="fileHandle">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="size">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="fileHandle">The file handle of the file to write to the HTTP output stream.</param>
+        <param name="offset">The byte position in the file where writing will start.</param>
+        <param name="size">The number of bytes to write to the output stream.</param>
+        <summary>Writes the specified file directly to an HTTP response output stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When this method is used with large files, calling the method might throw an exception. The size of the file that can be used with this method depends on the hardware configuration of the Web server. For more information, see article 812406, "PRB: Response.WriteFile Cannot Download a Large File" on the [Microsoft Knowledge Base](http://go.microsoft.com/fwlink/?linkid=149903) Web site.  
+  
+   
+  
+## Examples  
+ The following example writes all the contents of a text file named `Login.txt` (which might contain literal HTML text and input controls) directly to the output stream.  
+  
+ [!code-csharp[Classic HttpResponse.WriteFile3 Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpResponse.WriteFile3 Example/CS/source.cs#1)]
+ [!code-vb[Classic HttpResponse.WriteFile3 Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpResponse.WriteFile3 Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="fileHandler" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Web.HttpException">
+          <paramref name="offset" /> is less than 0.  
+  
+ \- or -  
+  
+ <paramref name="size" /> is greater than the file size minus <paramref name="offset" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteFile">
@@ -1728,11 +2987,33 @@
         <Parameter Name="size" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="filename">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="size">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="filename">The name of the file to write to the HTTP output stream.</param>
+        <param name="offset">The byte position in the file where writing will start.</param>
+        <param name="size">The number of bytes to write to the output stream.</param>
+        <summary>Writes the specified file directly to an HTTP response output stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When this method is used with large files, calling the method might throw an exception. The size of the file that can be used with this method depends on the hardware configuration of the Web server. For more information, see article 812406, "PRB: Response.WriteFile Cannot Download a Large File" on the [Microsoft Knowledge Base](http://go.microsoft.com/fwlink/?linkid=149903) Web site.  
+  
+   
+  
+## Examples  
+ The following example writes all the contents of a text file named `Login.txt` (which might contain literal text and HTML input controls) directly to the output stream.  
+  
+ [!code-csharp[Classic HttpResponse.WriteFile2 Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpResponse.WriteFile2 Example/CS/source.cs#1)]
+ [!code-vb[Classic HttpResponse.WriteFile2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpResponse.WriteFile2 Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">
+          <paramref name="offset" /> is less than 0.  
+  
+ \- or -  
+  
+ <paramref name="size" /> is greater than the file size minus <paramref name="offset" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="filename" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteSubstitution">
@@ -1751,9 +3032,26 @@
         <Parameter Name="callback" Type="System.Web.HttpResponseSubstitutionCallback" />
       </Parameters>
       <Docs>
-        <param name="callback">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="callback">The method, user control, or object to substitute.</param>
+        <summary>Allows insertion of response substitution blocks into the response, which allows dynamic generation of specified response regions for output cached responses.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Web.HttpResponse.WriteSubstitution%2A> method for post-cache substitution in your output-cached pages. By passing a <xref:System.Web.HttpContext> object to a callback method with a prescribed <xref:System.Web.HttpResponseSubstitutionCallback> signature, you can replace output cached content at any given location in the page cache. To initiate the replacement, call the <xref:System.Web.HttpResponse.WriteSubstitution%2A> method, passing it the callback method, which must be thread safe and can be either of the following:  
+  
+-   A static method on the container page or user control.  
+  
+-   A static or instance method on another arbitrary object.  
+  
+ On the first request to the page, the <xref:System.Web.HttpResponse.WriteSubstitution%2A> calls the <xref:System.Web.HttpResponseSubstitutionCallback> delegate to produce the output. Then, it adds a substitution buffer to the response, which retains the delegate to call on future requests. Finally, it degrades client-side cacheability from public to server-only, ensuring future requests to the page re-invoke the delegate by not caching on the client.  
+  
+> [!NOTE]
+>  Post-cache substitution is not supported for a cached user control where output caching is applied at the user control level. This is also known as fragment caching. For more information, see [Caching Portions of an ASP.NET Page](../Topic/Caching%20Portions%20of%20an%20ASP.NET%20Page.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The target of the <paramref name="callback" /> parameter is of type <see cref="T:System.Web.UI.Control" />.</exception>
       </Docs>
     </Member>
   </Members>

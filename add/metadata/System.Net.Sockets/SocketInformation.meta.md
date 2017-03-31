@@ -1,14 +1,17 @@
 ---
 uid: System.Net.Sockets.SocketInformation
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.SocketInformation.Options
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.SocketInformation.ProtocolInformation
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

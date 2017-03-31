@@ -1,19 +1,25 @@
 ---
 uid: System.Windows.ThemeInfoAttribute
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.ThemeInfoAttribute.#ctor(System.Windows.ResourceDictionaryLocation,System.Windows.ResourceDictionaryLocation)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.ThemeInfoAttribute.GenericDictionaryLocation
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.ThemeInfoAttribute.ThemeDictionaryLocation
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

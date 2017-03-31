@@ -1,19 +1,19 @@
 ---
 uid: System.Windows.Markup.XData
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XData.#ctor
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XData.Text
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XData.XmlReader
-internalonly: False
+manager: "martinek"
 ---

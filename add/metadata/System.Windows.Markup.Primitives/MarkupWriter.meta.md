@@ -1,19 +1,24 @@
 ---
 uid: System.Windows.Markup.Primitives.MarkupWriter
-internalonly: False
+manager: "martinek"
+---
+
+---
+uid: System.Windows.Markup.Primitives.MarkupWriter.GetMarkupObjectFor
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Primitives.MarkupWriter.GetMarkupObjectFor(System.Object,System.Windows.Markup.XamlDesignerSerializationManager)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Primitives.MarkupWriter.Dispose
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Primitives.MarkupWriter.GetMarkupObjectFor(System.Object)
-internalonly: False
+manager: "martinek"
 ---

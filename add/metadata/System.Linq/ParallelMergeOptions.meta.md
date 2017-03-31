@@ -1,4 +1,5 @@
 ---
 uid: System.Linq.ParallelMergeOptions
-internalonly: False
+ms.author: "billchi"
+manager: "ghogen"
 ---

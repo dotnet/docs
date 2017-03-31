@@ -1,14 +1,17 @@
 ---
 uid: System.Net.PeerToPeer.ResolveCompletedEventArgs
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.ResolveCompletedEventArgs.#ctor(System.Net.PeerToPeer.PeerNameRecordCollection,System.Exception,System.Boolean,System.Object)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.ResolveCompletedEventArgs.PeerNameRecordCollection
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

@@ -1,94 +1,117 @@
 ---
 uid: System.Net.Http.HttpClientHandler
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.HttpClientHandler.UseDefaultCredentials
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.HttpClientHandler.MaxRequestContentBufferSize
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.HttpClientHandler.MaxAutomaticRedirections
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.HttpClientHandler.SupportsRedirectConfiguration
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.HttpClientHandler.Proxy
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.HttpClientHandler.UseProxy
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.HttpClientHandler.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.HttpClientHandler.SupportsProxy
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Http.HttpClientHandler.Dispose
 ---
 
 ---
 uid: System.Net.Http.HttpClientHandler.CookieContainer
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.HttpClientHandler.UseCookies
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.HttpClientHandler.AllowAutoRedirect
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.HttpClientHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.HttpClientHandler.PreAuthenticate
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.HttpClientHandler.AutomaticDecompression
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.HttpClientHandler.ClientCertificateOptions
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.HttpClientHandler.SupportsAutomaticDecompression
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.HttpClientHandler.Credentials
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.HttpClientHandler.Dispose(System.Boolean)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

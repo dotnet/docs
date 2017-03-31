@@ -1,14 +1,20 @@
 ---
 uid: System.Windows.Automation.GridPattern.GridPatternInformation
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.GridPattern.GridPatternInformation.ColumnCount
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.GridPattern.GridPatternInformation.RowCount
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---

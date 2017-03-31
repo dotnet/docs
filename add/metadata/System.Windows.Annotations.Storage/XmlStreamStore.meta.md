@@ -1,64 +1,103 @@
 ---
 uid: System.Windows.Annotations.Storage.XmlStreamStore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Annotations.Storage.XmlStreamStore.AddAnnotation(System.Windows.Annotations.Annotation)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Annotations.Storage.XmlStreamStore.#ctor(System.IO.Stream)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Annotations.Storage.XmlStreamStore.AutoFlush
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Annotations.Storage.XmlStreamStore.#ctor(System.IO.Stream,System.Collections.Generic.IDictionary{System.Uri,System.Collections.Generic.IList{System.Uri}})
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Annotations.Storage.XmlStreamStore.WellKnownNamespaces
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Annotations.Storage.XmlStreamStore.IgnoredNamespaces
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Annotations.Storage.XmlStreamStore.GetAnnotations
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Annotations.Storage.XmlStreamStore.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Annotations.Storage.XmlStreamStore.GetAnnotations
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Annotations.Storage.XmlStreamStore.GetAnnotation(System.Guid)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Annotations.Storage.XmlStreamStore.Flush
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Annotations.Storage.XmlStreamStore.DeleteAnnotation(System.Guid)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Annotations.Storage.XmlStreamStore.GetWellKnownCompatibleNamespaces(System.Uri)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Annotations.Storage.XmlStreamStore.GetAnnotations(System.Windows.Annotations.ContentLocator)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

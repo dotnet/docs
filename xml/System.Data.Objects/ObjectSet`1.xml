@@ -31,9 +31,16 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="TEntity">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="TEntity">The entity type.</typeparam>
+    <summary>Represents a typed entity set that is used to perform create, read, update, and delete operations.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.Objects.ObjectSet%601> class allows you to operate on a typed entity set without having to specify the entity set name as an argument to each method call. The <xref:System.Data.Objects.ObjectSet%601> class extends the functionality of the <xref:System.Data.Objects.ObjectQuery%601> class to provide object context functionality, such as adding and deleting objects, in the context of a typed entity set that is accessed from the <xref:System.Data.Objects.ObjectContext>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AddObject">
@@ -52,9 +59,16 @@
         <Parameter Name="entity" Type="TEntity" />
       </Parameters>
       <Docs>
-        <param name="entity">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="entity">The object to add.</param>
+        <summary>Adds an object to the object context in the current entity set.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is a wrapper around the <xref:System.Data.Objects.ObjectContext.AddObject%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ApplyCurrentValues">
@@ -73,10 +87,17 @@
         <Parameter Name="currentEntity" Type="TEntity" />
       </Parameters>
       <Docs>
-        <param name="currentEntity">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="currentEntity">The detached object that has property updates to apply to the original object. The entity key of <c>currentEntity</c> must match the <see cref="P:System.Data.Objects.ObjectStateEntry.EntityKey" /> property of an entry in the <see cref="T:System.Data.Objects.ObjectContext" />.</param>
+        <summary>Copies the scalar values from the supplied object into the object in the <see cref="T:System.Data.Objects.ObjectContext" /> that has the same key.</summary>
+        <returns>The updated object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is a wrapper around the <xref:System.Data.Objects.ObjectContext.ApplyCurrentValues%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ApplyOriginalValues">
@@ -95,10 +116,17 @@
         <Parameter Name="originalEntity" Type="TEntity" />
       </Parameters>
       <Docs>
-        <param name="originalEntity">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="originalEntity">The detached object that has property updates to apply to the original object. The entity key of <c>originalEntity</c> must match the <see cref="P:System.Data.Objects.ObjectStateEntry.EntityKey" /> property of an entry in the <see cref="T:System.Data.Objects.ObjectContext" />.</param>
+        <summary>Sets the <see cref="P:System.Data.Objects.ObjectStateEntry.OriginalValues" /> property of an <see cref="T:System.Data.Objects.ObjectStateEntry" /> to match the property values of a supplied object.</summary>
+        <returns>The updated object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is a wrapper around the <xref:System.Data.Objects.ObjectContext.ApplyOriginalValues%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Attach">
@@ -117,9 +145,16 @@
         <Parameter Name="entity" Type="TEntity" />
       </Parameters>
       <Docs>
-        <param name="entity">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="entity">The object to attach.</param>
+        <summary>Attaches an object or object graph to the object context in the current entity set.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is a wrapper around the <xref:System.Data.Objects.ObjectContext.AttachTo%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateObject">
@@ -136,8 +171,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a new entity type object.</summary>
+        <returns>The new entity type object, or an instance of a proxy type that corresponds to the entity type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -163,9 +198,9 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">Type of object to be returned.</typeparam>
+        <summary>Creates an instance of the specified type.</summary>
+        <returns>An instance of the requested type <paramref name="T" />, or an instance of a proxy type that corresponds to the type <paramref name="T" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -185,9 +220,16 @@
         <Parameter Name="entity" Type="TEntity" />
       </Parameters>
       <Docs>
-        <param name="entity">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="entity">An object that represents the entity to delete. The object can be in any state except <see cref="F:System.Data.EntityState.Detached" />.</param>
+        <summary>Marks an object for deletion.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is a wrapper around the <xref:System.Data.Objects.ObjectContext.DeleteObject%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Detach">
@@ -206,9 +248,16 @@
         <Parameter Name="entity" Type="TEntity" />
       </Parameters>
       <Docs>
-        <param name="entity">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="entity">Object to be detached. Only the <c>entity</c> is removed; if there are any related objects that are being tracked by the same <see cref="T:System.Data.Objects.ObjectStateManager" />, those will not be detached automatically.</param>
+        <summary>Removes the object from the object context.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is a wrapper around the <xref:System.Data.Objects.ObjectContext.Detach%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EntitySet">
@@ -224,8 +273,8 @@
         <ReturnType>System.Data.Metadata.Edm.EntitySet</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the metadata of the entity set represented by this <see cref="T:System.Data.Objects.ObjectSet`1" /> instance.</summary>
+        <value>An <see cref="T:System.Data.Metadata.Edm.EntitySet" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

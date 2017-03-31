@@ -11,8 +11,29 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides access to the application domain and process of an add-in.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this class to load add-ins into a desired environment, which can be one of the following:  
+  
+-   An existing application domain for which you have the <xref:System.AppDomain> object.  
+  
+-   An application domain that was automatically generated to activate an add-in.  
+  
+-   An existing external process.  
+  
+ To obtain the <xref:System.AddIn.Hosting.AddInEnvironment> object for an add-in, pass the add-in's application domain to the <xref:System.AddIn.Hosting.AddInEnvironment> class constructor. Alternatively, you can use the <xref:System.AddIn.Hosting.AddInController.AddInEnvironment%2A> property of the <xref:System.AddIn.Hosting.AddInController> class to obtain the add-in's <xref:System.AddIn.Hosting.AddInEnvironment> object.  
+  
+ After you obtain the <xref:System.AddIn.Hosting.AddInEnvironment> object, you can do the following:  
+  
+-   Pass that <xref:System.AddIn.Hosting.AddInEnvironment> object to the appropriate <xref:System.AddIn.Hosting.AddInToken.Activate%2A> method overload. The add-in will be activated in the application domain and process that is represented by the <xref:System.AddIn.Hosting.AddInEnvironment> object.  
+  
+-   Use the <xref:System.AddIn.Hosting.AddInEnvironment.Process%2A> property to obtain an <xref:System.AddIn.Hosting.AddInProcess> object. Then pass that object to the appropriate <xref:System.AddIn.Hosting.AddInToken.Activate%2A> method overload. The add-in will be activated in the process that is represented by the <xref:System.AddIn.Hosting.AddInProcess> object but in a new application domain.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,9 +49,19 @@
         <Parameter Name="appDomain" Type="System.AppDomain" />
       </Parameters>
       <Docs>
-        <param name="appDomain">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="appDomain">The application domain that contains the add-in.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Hosting.AddInEnvironment" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you have access to the application domain that contains the add-in you need, you can use this constructor to obtain the add-in's <xref:System.AddIn.Hosting.AddInEnvironment> object. Otherwise, you can use the <xref:System.AddIn.Hosting.AddInController.AddInEnvironment%2A> property of the <xref:System.AddIn.Hosting.AddInController> class to obtain the <xref:System.AddIn.Hosting.AddInEnvironment> object.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="appDomain" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.SecurityException">Full-trust permission is demanded. A caller in the call chain does not have sufficient permission.</exception>
       </Docs>
     </Member>
     <Member MemberName="Process">
@@ -46,9 +77,20 @@
         <ReturnType>System.AddIn.Hosting.AddInProcess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.AddIn.Hosting.AddInProcess" /> object that represents the process in which the add-in is running.</summary>
+        <value>The process in which the add-in is running.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this property to activate multiple add-ins in the same process but in different domains.  
+  
+ Pass the <xref:System.AddIn.Hosting.AddInProcess> object obtained with this property to the appropriate <xref:System.AddIn.Hosting.AddInToken.Activate%2A> method overload.  
+  
+ If you want to activate them in the same domain in an external process you should pass the <xref:System.AddIn.Hosting.AddInEnvironment> object directly to the <xref:System.AddIn.Hosting.AddInToken.Activate%60%601%28System.AddIn.Hosting.AddInEnvironment%29?displayProperty=fullName> method overload.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Implements the <c>WriteLinesToFile</c> task. Use the <c>WriteLinesToFile</c> element in your project file to create and execute this task. For usage and parameter information, see <c>WriteLinesToFile</c>[WriteLinesToFile Task](../Topic/WriteLinesToFile%20Task.md).</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.WriteLinesToFile" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the system text encoding, for example UTF-8.</summary>
+        <value>Returns the system text encoding.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,8 +62,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Executes the <c>WriteLinesToFile</c> task.</summary>
+        <returns>
+          <see langword="true" /> if task execution succeeded; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,8 +86,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the file to write the items to.</summary>
+        <value>The file to write the items to.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,8 +104,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the items to write to the file.</summary>
+        <value>The items to write to the file.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,8 +122,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a Boolean value that specifies whether the task overwrites any existing content in the file.</summary>
+        <value>
+          <see langword="true" /> if the task overwrites any existing content in the file; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the protocol to use with the <see cref="T:System.Runtime.Remoting.Channels.SoapServerFormatterSink" /> class.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Runtime.Remoting.Channels.SoapServerFormatterSink+Protocol</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the current formatter sink is using the HTTP protocol, and therefore requires special processing.</summary>
       </Docs>
     </Member>
     <Member MemberName="Other">
@@ -43,7 +43,7 @@
         <ReturnType>System.Runtime.Remoting.Channels.SoapServerFormatterSink+Protocol</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that a protocol other than HTTP is used with the current formatter sink.</summary>
       </Docs>
     </Member>
   </Members>

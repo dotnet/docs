@@ -1,264 +1,397 @@
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.GetNextRow(System.Int32,System.Windows.Forms.DataGridViewElementStates,System.Windows.Forms.DataGridViewElementStates)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.AddCopy(System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.Add(System.Windows.Forms.DataGridViewRow)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.Add
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.SharedRow(System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.System#Collections#IList#IsReadOnly
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.RemoveAt(System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.Clear
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.GetFirstRow(System.Windows.Forms.DataGridViewElementStates)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.DataGridViewRowCollection.GetNextRow
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.GetPreviousRow(System.Int32,System.Windows.Forms.DataGridViewElementStates)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.System#Collections#ICollection#Count
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.Insert(System.Int32,System.Windows.Forms.DataGridViewRow)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.#ctor(System.Windows.Forms.DataGridView)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.Insert(System.Int32,System.Object[])
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.OnCollectionChanged(System.ComponentModel.CollectionChangeEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.System#Collections#IList#Insert(System.Int32,System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.System#Collections#IList#Clear
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.Add(System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.System#Collections#ICollection#SyncRoot
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.GetPreviousRow(System.Int32,System.Windows.Forms.DataGridViewElementStates,System.Windows.Forms.DataGridViewElementStates)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.GetLastRow(System.Windows.Forms.DataGridViewElementStates)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.CopyTo(System.Windows.Forms.DataGridViewRow[],System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.Item(System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.InsertCopies(System.Int32,System.Int32,System.Int32)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.Remove(System.Windows.Forms.DataGridViewRow)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.Insert(System.Int32,System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.AddCopies(System.Int32,System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.CollectionChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.System#Collections#IList#IsFixedSize
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.System#Collections#IList#Item(System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridViewRowCollection.Insert
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.DataGridView
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.System#Collections#IList#IndexOf(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.System#Collections#IList#Remove(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.InsertRange(System.Int32,System.Windows.Forms.DataGridViewRow[])
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.System#Collections#IList#RemoveAt(System.Int32)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.Count
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.AddRange(System.Windows.Forms.DataGridViewRow[])
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.Contains(System.Windows.Forms.DataGridViewRow)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.System#Collections#IList#Add(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.IndexOf(System.Windows.Forms.DataGridViewRow)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.GetRowState(System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.System#Collections#IEnumerable#GetEnumerator
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.GetRowsHeight(System.Windows.Forms.DataGridViewElementStates)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.InsertCopy(System.Int32,System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridViewRowCollection.GetFirstRow
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridViewRowCollection.GetPreviousRow
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.System#Collections#IList#Contains(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.Add(System.Object[])
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.System#Collections#ICollection#IsSynchronized
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.GetRowCount(System.Windows.Forms.DataGridViewElementStates)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.GetFirstRow(System.Windows.Forms.DataGridViewElementStates,System.Windows.Forms.DataGridViewElementStates)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridViewRowCollection.Add
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.List
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCollection.GetNextRow(System.Int32,System.Windows.Forms.DataGridViewElementStates)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

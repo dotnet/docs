@@ -11,8 +11,13 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides design-time support in a visual designer for the <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> control.</summary>
     <remarks>To be added.</remarks>
+    <block subset="none" type="overrides">
+      <para>To provide commands for the action list menu at design time in a derived class, you must override the <see cref="P:System.Web.UI.Design.ControlDesigner.ActionLists" /> property to return a custom <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> object with items derived from the <see cref="T:System.ComponentModel.Design.DesignerActionList" /> object.  
+  
+ For more information and a code sample, see <see cref="T:System.Web.UI.Design.DataSourceDesigner" />.</para>
+    </block>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.SqlDataSourceDesigner" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +48,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the <see cref="M:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.Configure" /> method can be called by the design host.</summary>
+        <value>
+          <see langword="true" /> if the design host supports the <see cref="T:System.ComponentModel.Design.Data.IDataEnvironment" /> interface; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +67,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the <see cref="M:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.RefreshSchema(System.Boolean)" /> method can be called by the design host.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="P:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.ConnectionString" /> and <see cref="P:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.SelectCommand" /> properties are not empty; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,7 +87,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Launches the data source configuration utility in the design host.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,9 +104,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the string used to open a database.</summary>
+        <value>The string used to open a database connection at runtime.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.ConnectionString%2A> property shadows the same property in the associated control, and is intended for internal use only.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateView">
@@ -118,10 +132,17 @@
         <Parameter Name="viewName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="viewName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="viewName">The name of the view to create.</param>
+        <summary>Creates a new <see cref="T:System.Web.UI.Design.WebControls.SqlDesignerDataSourceView" /> instance using the specified name.</summary>
+        <returns>An <see cref="T:System.Web.UI.Design.WebControls.SqlDesignerDataSourceView" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.UI.Design.WebControls.SqlDesignerDataSourceView>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DeleteQuery">
@@ -157,9 +178,16 @@
         <ReturnType>System.Web.UI.DataSourceOperation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see cref="T:System.Web.UI.Design.WebControls.SqlDataSourceDesigner" /> that supports delete queries.</summary>
+        <value>The <see cref="F:System.Web.UI.DataSourceOperation.Delete" /> query.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For this implementation, setting the <xref:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.DeleteQuery%2A> property has no effect. The <xref:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.DeleteQuery%2A> property shadows the same property in the associated control, and is intended for internal use only.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DeriveParameters">
@@ -179,9 +207,9 @@
         <Parameter Name="command" Type="System.Data.Common.DbCommand" />
       </Parameters>
       <Docs>
-        <param name="providerName">To be added.</param>
-        <param name="command">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="providerName">The name of the data provider.</param>
+        <param name="command">A <see cref="T:System.Data.Common.DbCommand" /> object.</param>
+        <summary>Derives the parameters from the specified SQL command and adds corresponding <see cref="T:System.Web.UI.WebControls.Parameter" /> objects to the command's parameters collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -199,8 +227,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the connection string that is valid at design time for the control that is associated with this designer.</summary>
+        <returns>A connection string.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -220,9 +248,9 @@
         <Parameter Name="viewName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="viewName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="viewName">The name of the view to get.</param>
+        <summary>Retrieves a <see cref="T:System.Web.UI.Design.DesignerDataSourceView" /> object that is identified by the view name.</summary>
+        <returns>A <see cref="T:System.Web.UI.Design.DesignerDataSourceView" /> object if found in the data source; otherwise <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -240,8 +268,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets a list of available views.</summary>
+        <returns>A string array containing the names of the available views.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -263,11 +291,11 @@
         <Parameter Name="commandType" Type="System.Web.UI.WebControls.SqlDataSourceCommandType" />
       </Parameters>
       <Docs>
-        <param name="connection">To be added.</param>
-        <param name="commandText">To be added.</param>
-        <param name="commandType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="connection">A <see cref="T:System.ComponentModel.Design.Data.DesignerDataConnection" /> object.</param>
+        <param name="commandText">The text of the command.</param>
+        <param name="commandType">A <see cref="T:System.Web.UI.WebControls.SqlDataSourceCommandType" /> indicating the type of command.</param>
+        <summary>Returns an array of parameters using the specified connection, command text, and command type.</summary>
+        <returns>An array of <see cref="T:System.Web.UI.WebControls.Parameter" /> objects.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -304,9 +332,16 @@
         <ReturnType>System.Web.UI.DataSourceOperation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see cref="T:System.Web.UI.Design.WebControls.SqlDataSourceDesigner" /> that supports insert queries.</summary>
+        <value>The <see cref="F:System.Web.UI.DataSourceOperation.Insert" /> query.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For this implementation, setting the <xref:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.DeleteQuery%2A> property has no effect. The <xref:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.InsertQuery%2A> property in the designer shadows the same property in the associated control, and is intended for internal use only.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PreFilterProperties">
@@ -325,8 +360,8 @@
         <Parameter Name="properties" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="properties">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="properties">The properties to be filtered.</param>
+        <summary>Used by the designer to add properties to, or remove them from, the **Properties** grid or to shadow properties of the associated control.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -343,9 +378,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the .NET Framework data provider that the associated <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> control uses to connect to an underlying data source.</summary>
+        <value>A string containing the name of the data provider.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.ProviderName%2A> property shadows the same property in the associated control, and is intended for internal use only.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshSchema">
@@ -364,9 +406,17 @@
         <Parameter Name="preferSilent" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="preferSilent">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="preferSilent">
+          <see langword="true" /> to suppress all data source events until the schema is refreshed; otherwise, false.</param>
+        <summary>Refreshes the schema from the underlying data source.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.RefreshSchema%2A> method will be called by the design host only if <xref:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.CanRefreshSchema%2A> is `true`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectCommand">
@@ -382,9 +432,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the SQL query in the associated <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> for selecting data from the underlying database.</summary>
+        <value>An SQL query.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.SelectCommand%2A> property shadows the same property in the associated control, and is intended for internal use only.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectQuery">
@@ -420,9 +477,16 @@
         <ReturnType>System.Web.UI.DataSourceOperation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see cref="T:System.Web.UI.Design.WebControls.SqlDataSourceDesigner" /> that supports select queries.</summary>
+        <value>The <see cref="F:System.Web.UI.DataSourceOperation.Select" /> query.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For this implementation, setting the <xref:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.DeleteQuery%2A> property has no effect. The <xref:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.ProviderName%2A> property shadows the same property in the associated control, and is intended for internal use only.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateQuery">
@@ -458,9 +522,16 @@
         <ReturnType>System.Web.UI.DataSourceOperation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see cref="T:System.Web.UI.Design.WebControls.SqlDataSourceDesigner" /> that supports update queries.</summary>
+        <value>The <see cref="F:System.Web.UI.DataSourceOperation.Update" /> query.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For this implementation, setting the <xref:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.DeleteQuery%2A> property has no effect. The <xref:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.UpdateQuery%2A> property shadows the same property in the associated control, and is intended for internal use only.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

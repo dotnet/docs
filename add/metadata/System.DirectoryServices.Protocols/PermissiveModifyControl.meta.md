@@ -1,9 +1,13 @@
 ---
 uid: System.DirectoryServices.Protocols.PermissiveModifyControl
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.Protocols.PermissiveModifyControl.#ctor
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---

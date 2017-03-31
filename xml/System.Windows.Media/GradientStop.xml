@@ -20,8 +20,20 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Describes the location and color of a transition point in a gradient.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this class to describe the colors in a <xref:System.Windows.Media.LinearGradientBrush> or <xref:System.Windows.Media.RadialGradientBrush>.  
+  
+ Note that this class does not provide an opacity property; to make a <xref:System.Windows.Media.GradientStop> semi-transparent, set its <xref:System.Windows.Media.GradientStop.Color%2A?displayProperty=fullName> property with a transparent <xref:System.Windows.Media.Color>.  
+  
+## Freezable Features  
+ A <xref:System.Windows.Media.GradientStop> is a type of <xref:System.Windows.Freezable> object and therefore can be frozen to improve performance. For information about <xref:System.Windows.Freezable> features, such as freezing and cloning, see the [Freezable Objects Overview](../Topic/Freezable%20Objects%20Overview.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,7 +47,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.GradientStop" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,9 +65,9 @@
         <Parameter Name="offset" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="color">To be added.</param>
-        <param name="offset">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="color">The color value of the gradient stop.</param>
+        <param name="offset">The location in the gradient where the gradient stop is placed.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.GradientStop" /> class with the specified color and offset.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,9 +85,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.GradientStop" />, making deep copies of this object's values. When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CloneCurrentValue">
@@ -92,9 +113,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.GradientStop" /> object, making deep copies of this object's current values. Resource references, data bindings, and animations are not copied, but their current values are.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Color">
@@ -110,9 +140,23 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the color of the gradient stop.</summary>
+        <value>The color of the gradient stop. The default value is <see cref="P:System.Windows.Media.Colors.Transparent" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_Color"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.GradientStop.ColorProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ColorProperty">
@@ -128,7 +172,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Media.GradientStop.Color" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -164,9 +208,24 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the location of the gradient stop within the gradient vector.</summary>
+        <value>The relative location of this gradient stop along the gradient vector. The default value is 0.0.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A value of 0.0 specifies that the stop is positioned at the beginning of the gradient vector, while a value of 1.0 specifies that the stop is positioned at the end of the gradient vector.  
+  
+<a name="dependencyPropertyInfo_Offset"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.GradientStop.OffsetProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OffsetProperty">
@@ -182,7 +241,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Media.GradientStop.Offset" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -203,10 +262,18 @@
         <Parameter Name="provider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="format">To be added.</param>
-        <param name="provider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="format">The format to use.  
+  
+ -or-  
+  
+ A null reference (<see langword="Nothing" /> in Visual Basic) to use the default format defined for the type of the <see cref="T:System.IFormattable" /> implementation.</param>
+        <param name="provider">The provider to use to format the value.  
+  
+ -or-  
+  
+ A null reference (<see langword="Nothing" /> in Visual Basic) to obtain the numeric format information from the current locale setting of the operating system.</param>
+        <summary>Formats the value of the current instance using the specified format.</summary>
+        <returns>The value of the current instance in the specified format.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -224,8 +291,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a string representation of this object based on the current culture.</summary>
+        <returns>A string representation of this object that contains its <see cref="P:System.Windows.Media.GradientStop.Color" /> and <see cref="P:System.Windows.Media.GradientStop.Offset" /> values.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -245,9 +312,9 @@
         <Parameter Name="provider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="provider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="provider">Culture specific formatting information, or <see langword="null" /> to use the current culture.</param>
+        <summary>Creates a string representation of this object based on the specified culture-specific formatting information.</summary>
+        <returns>A string representation of this object that contains its <see cref="P:System.Windows.Media.GradientStop.Color" /> and <see cref="P:System.Windows.Media.GradientStop.Offset" /> values.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

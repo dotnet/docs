@@ -1,14 +1,18 @@
 ---
 uid: Microsoft.JScript.FunctionConstructor
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.FunctionConstructor.Invoke(System.Object[])
-internalonly: False
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.FunctionConstructor.Invoke
 ---
 
 ---
 uid: Microsoft.JScript.FunctionConstructor.CreateInstance(System.Object[])
-internalonly: False
+ms.author: "mikejo"
 ---

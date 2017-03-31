@@ -1,39 +1,44 @@
 ---
 uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapToken
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapToken.#ctor
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapToken.GetXsdType
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapToken.ToString
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapToken.#ctor(System.String)
-internalonly: False
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapToken.#ctor
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapToken.Value
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapToken.XsdType
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapToken.Parse(System.String)
-internalonly: False
+manager: "ghogen"
 ---

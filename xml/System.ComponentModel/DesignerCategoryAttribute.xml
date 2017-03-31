@@ -25,8 +25,43 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies that the designer for a class belongs to a certain category.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A visual designer can use a designer category to inform a development environment of the type of designer that will be implemented. If no designer category is provided on a class, a development environment may or may not allow the class to be designed. A category can be created for any name.  
+  
+ When you mark a class with this attribute, it is set to a constant member. When you want to check the value of this attribute in your code, you must specify the constant member. The Description column in the table below lists the constant member that each value is set to.  
+  
+ The <xref:System.ComponentModel.DesignerCategoryAttribute> class defines the following common categories:  
+  
+|Category|Description|  
+|--------------|-----------------|  
+|Component|Designers that are used with components. The attribute is set to the constant member <xref:System.ComponentModel.DesignerCategoryAttribute.Component?displayProperty=fullName>.|  
+|Form|Designers that are used with forms. The attribute is set to the constant member <xref:System.ComponentModel.DesignerCategoryAttribute.Form?displayProperty=fullName>.|  
+|Designer|Designers that are used with designers. The attribute is set to the constant member <xref:System.ComponentModel.DesignerCategoryAttribute.Generic?displayProperty=fullName>.|  
+|Empty String ("")|This is the default category.|  
+  
+ For more information, see [Attributes](../Topic/Extending%20Metadata%20Using%20Attributes.md).  
+  
+   
+  
+## Examples  
+ The following example creates a class called `MyForm`. `MyForm` has two attributes, a <xref:System.ComponentModel.DesignerAttribute> that specifies this class uses the <xref:System.Windows.Forms.Design.DocumentDesigner>, and a <xref:System.ComponentModel.DesignerCategoryAttribute> that specifies the <xref:System.ComponentModel.DesignerCategoryAttribute.Form> category.  
+  
+ [!code-cpp[Classic DesignerCategoryAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DesignerCategoryAttribute Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic DesignerCategoryAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DesignerCategoryAttribute Example/CS/source.cs#1)]
+ [!code-vb[Classic DesignerCategoryAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DesignerCategoryAttribute Example/VB/source.vb#1)]  
+  
+ The next example creates an instance of `MyForm`. Then it gets the attributes for the class, extracts the <xref:System.ComponentModel.DesignerCategoryAttribute>, and prints the name of the designer.  
+  
+ [!code-cpp[Classic DesignerCategoryAttribute Example#2](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DesignerCategoryAttribute Example/CPP/source.cpp#2)]
+ [!code-csharp[Classic DesignerCategoryAttribute Example#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DesignerCategoryAttribute Example/CS/source.cs#2)]
+ [!code-vb[Classic DesignerCategoryAttribute Example#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DesignerCategoryAttribute Example/VB/source.vb#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,7 +84,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DesignerCategoryAttribute" /> class with an empty string ("").</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,8 +110,8 @@
         <Parameter Name="category" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="category">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="category">The name of the category.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DesignerCategoryAttribute" /> class with the given category name.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,8 +137,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the category.</summary>
+        <value>The name of the category.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,7 +164,7 @@
         <ReturnType>System.ComponentModel.DesignerCategoryAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that a component marked with this category use a component designer. This field is read-only.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,8 +190,15 @@
         <ReturnType>System.ComponentModel.DesignerCategoryAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies that a component marked with this category cannot use a visual designer. This <see langword="static" /> field is read-only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is the default category.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -184,9 +226,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The object to test the value equality of.</param>
+        <summary>Returns whether the value of the given object is equal to the current <see cref="T:System.ComponentModel.DesignOnlyAttribute" />.</summary>
+        <returns>
+          <see langword="true" /> if the value of the given object is equal to that of the current; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -212,7 +255,7 @@
         <ReturnType>System.ComponentModel.DesignerCategoryAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that a component marked with this category use a form designer. This <see langword="static" /> field is read-only.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -238,7 +281,7 @@
         <ReturnType>System.ComponentModel.DesignerCategoryAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that a component marked with this category use a generic designer. This <see langword="static" /> field is read-only.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -265,8 +308,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code for this instance.</summary>
+        <returns>A 32-bit signed integer hash code.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -289,8 +332,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Determines if this attribute is the default.</summary>
+        <returns>
+          <see langword="true" /> if the attribute is the default value for this attribute class; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -312,8 +356,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a unique identifier for this attribute.</summary>
+        <value>An <see cref="T:System.Object" /> that is a unique identifier for the attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

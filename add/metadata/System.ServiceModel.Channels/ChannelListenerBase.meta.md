@@ -1,74 +1,111 @@
 ---
 uid: System.ServiceModel.Channels.ChannelListenerBase
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.ChannelListenerBase.OnEndWaitForChannel(System.IAsyncResult)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.ChannelListenerBase.GetProperty``1
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.ChannelListenerBase.DefaultCloseTimeout
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.ChannelListenerBase.EndWaitForChannel(System.IAsyncResult)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.ChannelListenerBase.#ctor(System.ServiceModel.IDefaultCommunicationTimeouts)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.ChannelListenerBase.OnWaitForChannel(System.TimeSpan)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.ChannelListenerBase.WaitForChannel(System.TimeSpan)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.ChannelListenerBase.DefaultOpenTimeout
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.ChannelListenerBase.OnBeginWaitForChannel(System.TimeSpan,System.AsyncCallback,System.Object)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.ChannelListenerBase.DefaultSendTimeout
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.ChannelListenerBase.BeginWaitForChannel(System.TimeSpan,System.AsyncCallback,System.Object)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.ChannelListenerBase.DefaultReceiveTimeout
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.ChannelListenerBase.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.ChannelListenerBase.Uri
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Channels.ChannelListenerBase.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

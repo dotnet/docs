@@ -9,7 +9,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>When implemented by an MTOM writer, this interface ensures initialization for an MTOM writer.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,15 +37,15 @@
         <Parameter Name="ownsStream" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <param name="encoding">To be added.</param>
-        <param name="maxSizeInBytes">To be added.</param>
-        <param name="startInfo">To be added.</param>
-        <param name="boundary">To be added.</param>
-        <param name="startUri">To be added.</param>
-        <param name="writeMessageHeaders">To be added.</param>
-        <param name="ownsStream">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="stream">The stream to write to.</param>
+        <param name="encoding">The character encoding of the stream.</param>
+        <param name="maxSizeInBytes">The maximum number of bytes that are buffered in the writer.</param>
+        <param name="startInfo">An attribute in the ContentType SOAP header, set to "Application/soap+xml".</param>
+        <param name="boundary">The MIME boundary string.</param>
+        <param name="startUri">The URI for MIME section.</param>
+        <param name="writeMessageHeaders">If <see langword="true" />, write message headers.</param>
+        <param name="ownsStream">If <see langword="true" />, the stream is closed by the writer when done; otherwise <see langword="false" />.</param>
+        <summary>When implemented by an MTOM writer, initializes an MTOM writer.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

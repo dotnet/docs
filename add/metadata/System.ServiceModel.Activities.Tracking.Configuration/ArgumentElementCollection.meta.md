@@ -1,14 +1,20 @@
 ---
 uid: System.ServiceModel.Activities.Tracking.Configuration.ArgumentElementCollection
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Tracking.Configuration.ArgumentElementCollection.ElementName
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Tracking.Configuration.ArgumentElementCollection.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -13,7 +13,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines the service contract for sending WS-Trust messages to an STS.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -40,11 +40,11 @@
         <Parameter Name="asyncState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="asyncState">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the request message, which contains the RST.</param>
+        <param name="callback">An optional <see cref="T:System.AsyncCallback" /> delegate, to be called when the send is complete.</param>
+        <param name="asyncState">A user-provided object that distinguishes this particular asynchronous send request from other requests.</param>
+        <summary>The asynchronous begin method for the WS-Trust Cancel binding.</summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> object that represents the asynchronous send, which could still be pending.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,11 +71,11 @@
         <Parameter Name="asyncState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="asyncState">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the request message, which contains the RST.</param>
+        <param name="callback">An optional <see cref="T:System.AsyncCallback" /> delegate, to be called when the send is complete.</param>
+        <param name="asyncState">A user-provided object that distinguishes this particular asynchronous send request from other requests.</param>
+        <summary>The asynchronous begin method for the WS-Trust Issue binding.</summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> object that represents the asynchronous send, which could still be pending.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,11 +102,11 @@
         <Parameter Name="asyncState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="asyncState">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the request message, which contains the RST.</param>
+        <param name="callback">An optional <see cref="T:System.AsyncCallback" /> delegate, to be called when the send is complete.</param>
+        <param name="asyncState">A user-provided object that distinguishes this particular asynchronous send request from other requests.</param>
+        <summary>The asynchronous begin method for the WS-Trust Renew binding.</summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> object that represents the asynchronous send, which could still be pending.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,11 +133,11 @@
         <Parameter Name="asyncState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="asyncState">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the request message, which contains the RST.</param>
+        <param name="callback">An optional <see cref="T:System.AsyncCallback" /> delegate, to be called when the send is complete.</param>
+        <param name="asyncState">A user-provided object that distinguishes this particular asynchronous send request from other requests.</param>
+        <summary>The asynchronous begin method for the WS-Trust Validate binding.</summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> object that represents the asynchronous send, which could still be pending.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,9 +162,9 @@
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the request message, which contains the RST.</param>
+        <summary>The method for the WS-Trust Cancel binding.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the response message, which contains the RSTR.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,9 +184,9 @@
         <Parameter Name="asyncResult" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="asyncResult">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="asyncResult">A reference to the outstanding asynchronous send request.</param>
+        <summary>The asynchronous end method for the WS-Trust Cancel binding.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the response message, which contains the RSTR.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -206,9 +206,9 @@
         <Parameter Name="asyncResult" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="asyncResult">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="asyncResult">A reference to the outstanding asynchronous send request.</param>
+        <summary>The asynchronous end method for the WS-Trust Issue binding.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the response message, which contains the RSTR.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -228,9 +228,9 @@
         <Parameter Name="asyncResult" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="asyncResult">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="asyncResult">A reference to the outstanding asynchronous send request.</param>
+        <summary>The asynchronous end method for the WS-Trust Renew binding.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the response message, which contains the RSTR.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -250,9 +250,9 @@
         <Parameter Name="asyncResult" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="asyncResult">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="asyncResult">A reference to the outstanding asynchronous send request.</param>
+        <summary>The asynchronous end method for the WS-Trust Validate binding.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the response message, which contains the RSTR.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -277,9 +277,9 @@
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the request message, which contains the RST.</param>
+        <summary>The method for the WS-Trust Issue binding.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the response message, which contains the RSTR.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -304,9 +304,9 @@
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the request message, which contains the RST.</param>
+        <summary>The method for the WS-Trust Renew binding.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the response message, which contains the RSTR.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -331,9 +331,9 @@
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the request message, which contains the RST.</param>
+        <summary>The method for the WS-Trust Validate binding.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the response message, which contains the RSTR.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

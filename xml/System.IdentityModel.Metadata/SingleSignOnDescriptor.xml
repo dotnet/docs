@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines an SSO descriptor.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.SingleSignOnDescriptor" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,9 +43,16 @@
         <ReturnType>System.IdentityModel.Metadata.IndexedProtocolEndpointDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets an <see cref="T:System.IdentityModel.Metadata.IndexedProtocolEndpointDictionary" /> object that contains the indexed endpoints for the artifact resolution services.</summary>
+        <value>The <see cref="T:System.IdentityModel.Metadata.IndexedProtocolEndpointDictionary" /> that contains the indexed endpoints for the artifact resolution services.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The dictionary contains zero or more entries that describe indexed endpoints that support the Artifact Resolution profile defined in [SAMLProf].  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NameIdentifierFormats">
@@ -61,9 +68,16 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.Uri&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the collection of URIs that represent the supported name identifier formats.</summary>
+        <value>The collection of URIs that represent the supported name identifier formats.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The collection contains zero or more elements that enumerate the name identifier formats supported by the service provider.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SingleLogoutServices">
@@ -79,9 +93,16 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Metadata.ProtocolEndpoint&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of single logout service endpoints.</summary>
+        <value>The collection of single logout service endpoints.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The collection contains zero or more elements that describe endpoints that support the Single Logout profiles defined in [SAMLProf].  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

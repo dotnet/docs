@@ -1,99 +1,119 @@
 ---
 uid: Microsoft.Build.Tasks.SGen
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.SGen.Platform
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.SGen.DelaySign
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.SGen.SdkToolsPath
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.SGen.References
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.SGen.SerializationAssembly
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.SGen.ToolName
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.SGen.GenerateCommandLineCommands
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.SGen.GenerateFullPathToTool
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.SGen.Types
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.SGen.ShouldGenerateSerializer
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.SGen.UseProxyTypes
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.SGen.ValidateParameters
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.SGen.BuildAssemblyPath
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.SGen.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.SGen.SkipTaskExecution
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.SGen.SerializationAssemblyName
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.SGen.KeyFile
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.SGen.KeyContainer
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.SGen.BuildAssemblyName
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

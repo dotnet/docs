@@ -16,8 +16,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>This class has been deprecated as of Visual Basic 2005.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class provides methods for manipulating data that potentially represents a `String` value.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="FromBoolean">
@@ -36,10 +43,17 @@
         <Parameter Name="Value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="Value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="Value">Required. <see langword="Boolean" /> to convert to a <see langword="String" /> value.</param>
+        <summary>Returns a <see langword="String" /> value that corresponds to the specified <see langword="Boolean" />.</summary>
+        <returns>The <see langword="String" /> value corresponding to <paramref name="Value" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FromByte">
@@ -58,10 +72,17 @@
         <Parameter Name="Value" Type="System.Byte" />
       </Parameters>
       <Docs>
-        <param name="Value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="Value">Required. <see langword="Byte" /> to convert to a <see langword="String" /> value.</param>
+        <summary>Returns a <see langword="String" /> value that corresponds to the specified <see langword="Byte" />.</summary>
+        <returns>The <see langword="String" /> value corresponding to <paramref name="Value" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FromChar">
@@ -80,10 +101,17 @@
         <Parameter Name="Value" Type="System.Char" />
       </Parameters>
       <Docs>
-        <param name="Value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="Value">Required. <see langword="Char" /> to convert to a <see langword="String" /> value.</param>
+        <summary>Returns a <see langword="String" /> value that corresponds to the specified <see langword="Char" />.</summary>
+        <returns>The <see langword="String" /> value corresponding to <paramref name="Value" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FromDate">
@@ -102,10 +130,17 @@
         <Parameter Name="Value" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="Value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="Value">Required. Date to convert to a <see langword="String" /> value.</param>
+        <summary>Returns a <see langword="String" /> value that corresponds to the specified date.</summary>
+        <returns>The <see langword="String" /> value corresponding to <paramref name="Value" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FromDecimal">
@@ -124,10 +159,17 @@
         <Parameter Name="Value" Type="System.Decimal" />
       </Parameters>
       <Docs>
-        <param name="Value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="Value">Required. <see langword="Decimal" /> to convert to a <see langword="String" /> value.</param>
+        <summary>Returns a <see langword="String" /> value that corresponds to the specified <see langword="Decimal" />.</summary>
+        <returns>The <see langword="String" /> value corresponding to <paramref name="Value" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FromDecimal">
@@ -147,11 +189,18 @@
         <Parameter Name="NumberFormat" Type="System.Globalization.NumberFormatInfo" />
       </Parameters>
       <Docs>
-        <param name="Value">To be added.</param>
-        <param name="NumberFormat">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="Value">Required. <see langword="Decimal" /> to convert to a <see langword="String" /> value.</param>
+        <param name="NumberFormat">A <see cref="T:System.Globalization.NumberFormatInfo" /> object that defines how numeric values are formatted and displayed, depending on the culture.</param>
+        <summary>Returns a <see langword="String" /> value that corresponds to a specified <see langword="Decimal" /> and number format information.</summary>
+        <returns>The <see langword="String" /> value corresponding to <paramref name="Value" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FromDouble">
@@ -170,10 +219,17 @@
         <Parameter Name="Value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="Value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="Value">Required. <see langword="Double" /> to convert to a <see langword="String" /> value.</param>
+        <summary>Returns a <see langword="String" /> value that corresponds to a specified <see langword="Double" />.</summary>
+        <returns>The <see langword="String" /> value corresponding to <paramref name="Value" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FromDouble">
@@ -193,11 +249,18 @@
         <Parameter Name="NumberFormat" Type="System.Globalization.NumberFormatInfo" />
       </Parameters>
       <Docs>
-        <param name="Value">To be added.</param>
-        <param name="NumberFormat">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="Value">Required. <see langword="Double" /> to convert to a <see langword="String" /> value.</param>
+        <param name="NumberFormat">A <see cref="T:System.Globalization.NumberFormatInfo" /> object that defines how numeric values are formatted and displayed, depending on the culture.</param>
+        <summary>Returns a <see langword="String" /> value that corresponds to a specified <see langword="Double" /> and number format information.</summary>
+        <returns>The <see langword="String" /> value corresponding to <paramref name="Value" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FromInteger">
@@ -216,10 +279,17 @@
         <Parameter Name="Value" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="Value">Required. <see langword="Integer" /> to convert to a <see langword="String" /> value.</param>
+        <summary>Returns a <see langword="String" /> value that corresponds to a specified <see langword="Integer" />.</summary>
+        <returns>The <see langword="String" /> value corresponding to <paramref name="Value" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FromLong">
@@ -238,10 +308,17 @@
         <Parameter Name="Value" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="Value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="Value">Required. <see langword="Int64" /> to convert to a <see langword="String" /> value.</param>
+        <summary>Returns a <see langword="String" /> value that corresponds to a specified <see langword="Int64" /> (64-bit integer).</summary>
+        <returns>The <see langword="String" /> value corresponding to <paramref name="Value" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FromObject">
@@ -260,10 +337,17 @@
         <Parameter Name="Value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="Value">Required. Object to convert to a <see langword="String" /> value.</param>
+        <summary>Returns a <see langword="String" /> value that corresponds to the specified object.</summary>
+        <returns>The <see langword="String" /> value corresponding to <paramref name="Value" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FromShort">
@@ -282,10 +366,17 @@
         <Parameter Name="Value" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="Value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="Value">Required. <see langword="Int616" /> to convert to a <see langword="String" /> value.</param>
+        <summary>Returns a <see langword="String" /> value that corresponds to a specified <see langword="Int16" /> (16-bit integer).</summary>
+        <returns>The <see langword="String" /> value corresponding to <paramref name="Value" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FromSingle">
@@ -304,10 +395,17 @@
         <Parameter Name="Value" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="Value">Required. <see langword="Single" /> to convert to a <see langword="String" /> value.</param>
+        <summary>Returns a <see langword="String" /> value that corresponds to a specified <see langword="Single" />.</summary>
+        <returns>The <see langword="String" /> value corresponding to <paramref name="Value" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FromSingle">
@@ -327,11 +425,18 @@
         <Parameter Name="NumberFormat" Type="System.Globalization.NumberFormatInfo" />
       </Parameters>
       <Docs>
-        <param name="Value">To be added.</param>
-        <param name="NumberFormat">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="Value">Required. <see langword="Sinble" /> to convert to a <see langword="String" /> value.</param>
+        <param name="NumberFormat">A <see cref="T:System.Globalization.NumberFormatInfo" /> object that defines how numeric values are formatted and displayed, depending on the culture.</param>
+        <summary>Returns a <see langword="String" /> value that corresponds to a specified <see langword="Single" /> and number format information.</summary>
+        <returns>The <see langword="String" /> value corresponding to <paramref name="Value" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MidStmtStr">
@@ -353,12 +458,19 @@
         <Parameter Name="sInsert" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="sDest">To be added.</param>
-        <param name="StartPosition">To be added.</param>
-        <param name="MaxInsertLength">To be added.</param>
-        <param name="sInsert">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="sDest">Required. String variable to modify.</param>
+        <param name="StartPosition">Required. Location in the <c>sDest</c> parameter to begin overwriting from. The index is 1-based.</param>
+        <param name="MaxInsertLength">Required. Maximum number of characters from the <c>sInsert</c> parameter to use, starting from the first character.</param>
+        <param name="sInsert">Required. String value to overwrite the <c>sDest</c> parameter with.</param>
+        <summary>Overwrites the <paramref name="sDest" /> parameter with the contents of the <paramref name="sInsert" /> parameter.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StrCmp">
@@ -379,12 +491,54 @@
         <Parameter Name="TextCompare" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="sLeft">To be added.</param>
-        <param name="sRight">To be added.</param>
-        <param name="TextCompare">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="sLeft">Required. String to compare with <c>sRight</c>.</param>
+        <param name="sRight">Required. String to compare with <c>sLeft</c>.</param>
+        <param name="TextCompare">Required. <see langword="True" /> to perform a case-insensitive comparison; otherwise <see langword="False" />.</param>
+        <summary>Compares two strings.</summary>
+        <returns>
+          <list type="table">  
+<listheader>  
+<term> Value  
+  
+ </term>  
+<description> Condition  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> zero  
+  
+ </term>  
+<description> The two strings are equal.  
+  
+ </description>  
+</item>  
+<item>  
+<term> less than zero  
+  
+ </term>  
+<description> <paramref name="sLeft" /> is less than <paramref name="sRight" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> greater than zero  
+  
+ </term>  
+<description> <paramref name="sLeft" /> is greater than <paramref name="sRight" />.  
+  
+ </description>  
+</item>  
+</list>
+        </returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StrLike">
@@ -405,12 +559,19 @@
         <Parameter Name="CompareOption" Type="Microsoft.VisualBasic.CompareMethod" />
       </Parameters>
       <Docs>
-        <param name="Source">To be added.</param>
-        <param name="Pattern">To be added.</param>
-        <param name="CompareOption">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="Source">Required. Any <see langword="String" /> expression.</param>
+        <param name="Pattern">Any <see langword="String" /> expression conforming to the pattern-matching conventions described in Like Operator.</param>
+        <param name="CompareOption">Specifies how to compare strings to patterns, according to the <see cref="T:Microsoft.VisualBasic.CompareMethod" />. Can be <see langword="vbBinaryCompare" /> for binary comparison or <see langword="vbTextCompare" /> for comparison based on a case-insensitive text sort order determined by your system's <see langword="LocaleID" /> value.</param>
+        <summary>Compares the parameters <paramref name="Source" /> and <paramref name="Pattern" /> and returns the same results as the <see langword="Like" /> operator.</summary>
+        <returns>A <see langword="Boolean" /> value indicating whether or not the string satisfies the pattern. If the value in string satisfies the pattern contained in pattern, result is <see langword="True" />. If the string does not satisfy the pattern, result is <see langword="False" />. If both string and pattern are empty strings, the result is <see langword="True" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method compares the parameters `Source` and `Pattern` and returns the same results as the [Like Operator](../Topic/Like%20Operator%20\(Visual%20Basic\).md). The result is a Boolean value indicating whether or not the string satisfies the pattern.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StrLikeBinary">
@@ -430,11 +591,20 @@
         <Parameter Name="Pattern" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Source">To be added.</param>
-        <param name="Pattern">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="Source">Required. Any <see langword="String" /> expression.</param>
+        <param name="Pattern">Required. Any <see langword="String" /> expression conforming to the pattern-matching conventions described in Like Operator.</param>
+        <summary>Compares the parameters <paramref name="Source" /> and <paramref name="Pattern" /> and returns the same results as the <see langword="Like" /> operator, using binary comparison.</summary>
+        <returns>A <see langword="Boolean" /> value indicating whether or not the string satisfies the pattern. If the value in string satisfies the pattern contained in pattern, result is <see langword="True" />. If the string does not satisfy the pattern, result is <see langword="False" />. If both string and pattern are empty strings, the result is <see langword="True" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method compares the parameters `Source` and `Pattern` and returns the same results as the [Like Operator](../Topic/Like%20Operator%20\(Visual%20Basic\).md). The result is a Boolean value indicating whether or not the string satisfies the pattern.  
+  
+ This method is similar to <xref:Microsoft.VisualBasic.CompilerServices.StringType.StrLike%2A> except that it always performs a case-sensitive binary comparison.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StrLikeText">
@@ -454,12 +624,72 @@
         <Parameter Name="Pattern" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Source">To be added.</param>
-        <param name="Pattern">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="Source">Required. Any <see langword="String" /> expression.</param>
+        <param name="Pattern">Required. Any <see langword="String" /> expression conforming to the pattern-matching conventions described in Like Operator.</param>
+        <summary>Compares the parameters <paramref name="Source" /> and <paramref name="Pattern" /> and returns the same results as the <see langword="Like" /> operator, using text comparison.</summary>
+        <returns>A <see langword="Boolean" /> value indicating whether or not the string satisfies the pattern. If the value in string satisfies the pattern contained in pattern, result is <see langword="True" />. If the string does not satisfy the pattern, result is <see langword="False" />. If both string and pattern are empty strings, the result is <see langword="True" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method compares the parameters `Source` and `Pattern` and returns the same results as the [Like Operator](../Topic/Like%20Operator%20\(Visual%20Basic\).md). The result is a `Boolean` value indicating whether or not the string satisfies the pattern.  
+  
+ This method is similar to <xref:Microsoft.VisualBasic.CompilerServices.StringType.StrLike%2A> except that it always performs a comparison based on a case-insensitive text sort order determined by your system's `LocaleID` value.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FromSingle">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see langword="String" /> value that corresponds to a specified <see langword="Single" /> and optional number format information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FromDecimal">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see langword="String" /> value that corresponds to a specified <see langword="Decimal" /> and optional number format information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FromDouble">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see langword="String" /> value that corresponds to a specified <see langword="Double" /> and optional number format information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

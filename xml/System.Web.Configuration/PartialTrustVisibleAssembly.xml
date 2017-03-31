@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Configures a partial-trust assembly. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.PartialTrustVisibleAssembly> configures an assembly that is marked with the Partially Trusted Callers Attribute (APTCA) for use in a partial-trust ASP.NET application. For more information, see <xref:System.Security.AllowPartiallyTrustedCallersAttribute>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -29,9 +36,9 @@
         <Parameter Name="publicKey" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="assemblyName">To be added.</param>
-        <param name="publicKey">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="assemblyName">The assembly name.</param>
+        <param name="publicKey">The hexadecimal string representation of the public key that is associated with the assembly.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.PartialTrustVisibleAssembly" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,8 +63,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the assembly name.</summary>
+        <value>The assembly name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,8 +107,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the assembly public key.</summary>
+        <value>The hexadecimal string representation of the public key that is associated with the assembly.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

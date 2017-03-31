@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains arguments associated with the <see cref="E:System.Windows.Input.InputMethod.StateChanged" /> event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether or not the <see cref="P:System.Windows.Input.InputMethod.HandwritingState" /> property changed.</summary>
+        <value>**true** if the <see cref="P:System.Windows.Input.InputMethod.HandwritingState" /> property changed; otherwise, **false**.  
+  
+ This property has no default value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +48,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether or not the <see cref="P:System.Windows.Input.InputMethod.ImeConversionMode" /> property changed.</summary>
+        <value>**true** if the <see cref="P:System.Windows.Input.InputMethod.ImeConversionMode" /> property changed; otherwise, **false**.  
+  
+ This property has no default value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +68,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether or not the <see cref="P:System.Windows.Input.InputMethod.ImeSentenceMode" /> property changed.</summary>
+        <value>**true** if the <see cref="P:System.Windows.Input.InputMethod.ImeSentenceMode" /> property changed; otherwise, **false**.  
+  
+ This property has no default value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +88,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether or not the <see cref="P:System.Windows.Input.InputMethod.ImeState" /> property changed.</summary>
+        <value>**true** if the <see cref="P:System.Windows.Input.InputMethod.ImeState" /> property changed; otherwise, **false**.  
+  
+ This property has no default value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,8 +108,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether or not the <see cref="P:System.Windows.Input.InputMethod.MicrophoneState" /> property changed.</summary>
+        <value>**true** if the <see cref="P:System.Windows.Input.InputMethod.MicrophoneState" /> property changed; otherwise, **false**.  
+  
+ This property has no default value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,8 +128,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether or not the <see cref="P:System.Windows.Input.InputMethod.SpeechMode" /> property changed.</summary>
+        <value>**true** if the <see cref="P:System.Windows.Input.InputMethod.SpeechMode" /> property changed; otherwise, **false**.  
+  
+ This property has no default value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

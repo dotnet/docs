@@ -1,24 +1,35 @@
 ---
 uid: System.IdentityModel.Protocols.WSTrust.Entropy
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.Entropy.#ctor(System.Byte[])
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Protocols.WSTrust.Entropy.#ctor
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.Entropy.#ctor(System.IdentityModel.Protocols.WSTrust.ProtectedKey)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.Entropy.#ctor(System.Byte[],System.IdentityModel.Tokens.EncryptingCredentials)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.Entropy.#ctor(System.Int32)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains a collection of <see cref="T:System.Configuration.SettingElement" /> objects. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.SettingElementCollection> object contains a collection of <xref:System.Configuration.SettingElement> objects. A <xref:System.Configuration.SettingElement> object is used to set the value of an element within the configuration.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.SettingElementCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +53,8 @@
         <Parameter Name="element" Type="System.Configuration.SettingElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Configuration.SettingElement" /> object to add to the collection.</param>
+        <summary>Adds a <see cref="T:System.Configuration.SettingElement" /> object to the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,7 +72,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes all <see cref="T:System.Configuration.SettingElement" /> objects from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +89,8 @@
         <ReturnType>System.Configuration.ConfigurationElementCollectionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type of the configuration collection.</summary>
+        <value>The <see cref="T:System.Configuration.ConfigurationElementCollectionType" /> object of the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,9 +147,9 @@
         <Parameter Name="elementKey" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="elementKey">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="elementKey">A string value representing the <see cref="T:System.Configuration.SettingElement" /> object in the collection.</param>
+        <summary>Gets a <see cref="T:System.Configuration.SettingElement" /> object from the collection.</summary>
+        <returns>A <see cref="T:System.Configuration.SettingElement" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,8 +191,8 @@
         <Parameter Name="element" Type="System.Configuration.SettingElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">A <see cref="T:System.Configuration.SettingElement" /> object.</param>
+        <summary>Removes a <see cref="T:System.Configuration.SettingElement" /> object from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

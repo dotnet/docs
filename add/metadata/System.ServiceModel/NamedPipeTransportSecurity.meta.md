@@ -1,14 +1,20 @@
 ---
 uid: System.ServiceModel.NamedPipeTransportSecurity
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.NamedPipeTransportSecurity.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.NamedPipeTransportSecurity.ProtectionLevel
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

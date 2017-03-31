@@ -1,39 +1,63 @@
 ---
 uid: System.Collections.Generic.IDictionary`2
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Collections.Generic.IDictionary`2.Remove
 ---
 
 ---
 uid: System.Collections.Generic.IDictionary`2.Add(`0,`1)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.Generic.IDictionary`2.ContainsKey(`0)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.Generic.IDictionary`2.Item(`0)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.Generic.IDictionary`2.Remove(`0)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.Generic.IDictionary`2.Values
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.Generic.IDictionary`2.Keys
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Collections.Generic.IDictionary`2.Add
 ---
 
 ---
 uid: System.Collections.Generic.IDictionary`2.TryGetValue(`0,`1@)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

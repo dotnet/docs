@@ -1,49 +1,59 @@
 ---
 uid: System.Web.DynamicData.DynamicFilter
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.DynamicFilter.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.DynamicFilter.DataField
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.DynamicFilter.Column
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.DynamicFilter.Render(System.Web.UI.HtmlTextWriter)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.DynamicFilter.System#Web#DynamicData#IFilterExpressionProvider#Initialize(System.Web.UI.WebControls.IQueryableDataSource)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.DynamicFilter.FilterTemplate
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.DynamicFilter.FilterChanged
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.DynamicFilter.System#Web#DynamicData#IFilterExpressionProvider#GetQueryable(System.Linq.IQueryable)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.DynamicFilter.FilterUIHint
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

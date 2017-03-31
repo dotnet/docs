@@ -1,9 +1,13 @@
 ---
 uid: System.Runtime.InteropServices.WindowsRuntime.IActivationFactory
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.WindowsRuntime.IActivationFactory.ActivateInstance
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

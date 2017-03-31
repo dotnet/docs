@@ -1,29 +1,40 @@
 ---
 uid: System.Windows.Automation.Peers.ButtonAutomationPeer
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.ButtonAutomationPeer.GetClassNameCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.ButtonAutomationPeer.System#Windows#Automation#Provider#IInvokeProvider#Invoke
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.ButtonAutomationPeer.GetAutomationControlTypeCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.ButtonAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.ButtonAutomationPeer.#ctor(System.Windows.Controls.Button)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

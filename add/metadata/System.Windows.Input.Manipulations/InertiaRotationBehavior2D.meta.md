@@ -1,24 +1,34 @@
 ---
 uid: System.Windows.Input.Manipulations.InertiaRotationBehavior2D
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Input.Manipulations.InertiaRotationBehavior2D.InitialVelocity
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Input.Manipulations.InertiaRotationBehavior2D.DesiredDeceleration
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Input.Manipulations.InertiaRotationBehavior2D.#ctor
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Input.Manipulations.InertiaRotationBehavior2D.DesiredRotation
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---

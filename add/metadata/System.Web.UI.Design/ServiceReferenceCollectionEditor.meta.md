@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.Design.ServiceReferenceCollectionEditor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ServiceReferenceCollectionEditor.CreateNewItemTypes
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ServiceReferenceCollectionEditor.CanSelectMultipleInstances
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ServiceReferenceCollectionEditor.#ctor(System.Type)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

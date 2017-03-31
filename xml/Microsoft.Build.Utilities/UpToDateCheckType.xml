@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The possible types of up to date check that we can support</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>Microsoft.Build.Utilities.UpToDateCheckType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Input newer than output</summary>
       </Docs>
     </Member>
     <Member MemberName="InputNewerThanTracking">
@@ -43,7 +43,7 @@
         <ReturnType>Microsoft.Build.Utilities.UpToDateCheckType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Input newer than tracking</summary>
       </Docs>
     </Member>
     <Member MemberName="InputOrOutputNewerThanTracking">
@@ -59,7 +59,7 @@
         <ReturnType>Microsoft.Build.Utilities.UpToDateCheckType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Input or output newer than tracking</summary>
       </Docs>
     </Member>
   </Members>

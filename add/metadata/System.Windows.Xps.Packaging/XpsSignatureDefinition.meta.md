@@ -1,49 +1,49 @@
 ---
 uid: System.Windows.Xps.Packaging.XpsSignatureDefinition
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Packaging.XpsSignatureDefinition.RequestedSigner
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Packaging.XpsSignatureDefinition.SpotId
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Packaging.XpsSignatureDefinition.Culture
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Packaging.XpsSignatureDefinition.SignBy
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Packaging.XpsSignatureDefinition.SigningLocale
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Packaging.XpsSignatureDefinition.HasBeenModified
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Packaging.XpsSignatureDefinition.#ctor
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Packaging.XpsSignatureDefinition.Intent
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Packaging.XpsSignatureDefinition.SpotLocation
-internalonly: False
+manager: "leannef"
 ---

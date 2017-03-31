@@ -1,24 +1,33 @@
 ---
 uid: System.Windows.Media.TextFormatting.TextEmbeddedObjectMetrics
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.TextEmbeddedObjectMetrics.Baseline
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.TextEmbeddedObjectMetrics.Width
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.TextEmbeddedObjectMetrics.#ctor(System.Double,System.Double,System.Double)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.TextEmbeddedObjectMetrics.Height
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

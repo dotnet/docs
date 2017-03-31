@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Forms.ColumnWidthChangingEventHandler
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

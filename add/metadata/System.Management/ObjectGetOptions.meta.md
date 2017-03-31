@@ -1,29 +1,34 @@
 ---
 uid: System.Management.ObjectGetOptions
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ObjectGetOptions.Clone
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ObjectGetOptions.#ctor
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ObjectGetOptions.#ctor(System.Management.ManagementNamedValueCollection,System.TimeSpan,System.Boolean)
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ObjectGetOptions.UseAmendedQualifiers
-internalonly: False
+manager: "jillfra"
+---
+
+---
+uid: System.Management.ObjectGetOptions.#ctor
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ObjectGetOptions.#ctor(System.Management.ManagementNamedValueCollection)
-internalonly: False
+manager: "jillfra"
 ---

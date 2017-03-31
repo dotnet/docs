@@ -1,19 +1,27 @@
 ---
 uid: System.DirectoryServices.AccountManagement.PrincipalSearchResult`1
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.AccountManagement.PrincipalSearchResult`1.Dispose
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.AccountManagement.PrincipalSearchResult`1.System#Collections#IEnumerable#GetEnumerator
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.AccountManagement.PrincipalSearchResult`1.GetEnumerator
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---

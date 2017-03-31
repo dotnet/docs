@@ -23,8 +23,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="T">The type of the extension objects.</typeparam>
+    <summary>A collection of the <see cref="T:System.ServiceModel.IExtension`1" /> objects that allow for retrieving the <see cref="T:System.ServiceModel.IExtension`1" /> by its type.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -46,10 +46,17 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="E">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="E">The type of extension object.</typeparam>
+        <summary>Finds the specified extension object in the collection.</summary>
+        <returns>The extension object that was found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ServiceModel.IExtensionCollection%601.Find%2A> returns an extension that implements (is or derives from) the specified type. If more than one extension implements the specified type, one is returned. The [!INCLUDE[indigo2](~/includes/indigo2-md.md)] implementation returns the most recently added, but this is not required of implementations. If no extension implements the specified type, <xref:System.ServiceModel.IExtensionCollection%601.Find%2A> returns null.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FindAll&lt;E&gt;">
@@ -70,9 +77,9 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="E">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="E">The type of extension object.</typeparam>
+        <summary>Finds all extension object in the collection specified by <paramref name="E" />.</summary>
+        <returns>A collection of all extension objects in the collection that implement the specified type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

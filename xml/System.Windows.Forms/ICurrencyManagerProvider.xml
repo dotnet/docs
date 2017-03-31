@@ -8,8 +8,19 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides custom binding management for components.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This interface allows component authors to provide their own <xref:System.Windows.Forms.CurrencyManager> for components that will interact with the Windows Forms data-binding engine. It is rare for a component author to need to implement this interface.  
+  
+ The <xref:System.Windows.Forms.BindingSource> class provides an example implementation of <xref:System.Windows.Forms.ICurrencyManagerProvider>.  
+  
+ Note that for Smartphone applications, this class requires Windows Mobile Version 5.0 software for Smartphones.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CurrencyManager">
@@ -25,8 +36,8 @@
         <ReturnType>System.Windows.Forms.CurrencyManager</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Windows.Forms.CurrencyManager" /> associated with this <see cref="T:System.Windows.Forms.ICurrencyManagerProvider" />.</summary>
+        <value>The <see cref="T:System.Windows.Forms.CurrencyManager" /> associated with this <see cref="T:System.Windows.Forms.ICurrencyManagerProvider" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,10 +57,17 @@
         <Parameter Name="dataMember" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="dataMember">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="dataMember">The name of the column or list, within the data source, to obtain the <see cref="T:System.Windows.Forms.CurrencyManager" /> for.</param>
+        <summary>Gets the <see cref="T:System.Windows.Forms.CurrencyManager" /> for this <see cref="T:System.Windows.Forms.ICurrencyManagerProvider" /> and the specified data member.</summary>
+        <returns>The related <see cref="T:System.Windows.Forms.CurrencyManager" /> obtained from this <see cref="T:System.Windows.Forms.ICurrencyManagerProvider" /> and the specified data member.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `dataMember` is `null` or an empty string (""), <xref:System.Windows.Forms.ICurrencyManagerProvider.GetRelatedCurrencyManager%2A> returns the main currency manager for this <xref:System.Windows.Forms.ICurrencyManagerProvider>, which is the same currency manager returned from the <xref:System.Windows.Forms.ICurrencyManagerProvider.CurrencyManager%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

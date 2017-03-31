@@ -23,8 +23,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="TResult">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="TResult">The type of the activity being implemented.</typeparam>
+    <summary>Provides property data for a generic workflow activity.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -39,7 +39,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.ActivityBuilder`1" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +61,8 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Attribute&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the generic collection of attributes to use in the construction of an activity tree.</summary>
+        <value>A generic collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,8 +87,8 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Activities.Validation.Constraint&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the generic collection of constraints that govern the construction of an activity tree.</summary>
+        <value>A generic collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,8 +116,8 @@
         <ReturnType>System.Activities.Activity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the generic activity tree that is represented by the current instance of <see cref="T:System.Activities.ActivityBuilder`1" />.</summary>
+        <value>An activity object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -145,8 +145,8 @@
         <ReturnType>System.Version</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the implementation version of the activity builder.</summary>
+        <value>The implementation version of the activity builder.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -163,8 +163,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the generic activity tree that is represented by the current instance of <see cref="T:System.Activities.ActivityBuilder`1" />.</summary>
+        <value>The name of the activity tree.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -189,8 +189,8 @@
         <ReturnType>System.Collections.ObjectModel.KeyedCollection&lt;System.String,System.Activities.DynamicActivityProperty&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.Collections.ObjectModel.KeyedCollection" /> of the properties of the current instance of <see cref="T:System.Activities.ActivityBuilder`1" />.</summary>
+        <value>A key and value pair collection of activity properties.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -208,8 +208,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the root of the current workflow tree.</summary>
+        <returns>An activity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

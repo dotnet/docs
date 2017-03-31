@@ -1,1 +1,0 @@
-bufferModeSetting.MaxFlushSize = 24;

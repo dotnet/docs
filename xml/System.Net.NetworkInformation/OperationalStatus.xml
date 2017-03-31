@@ -19,8 +19,23 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the operational state of a network interface.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration defines valid values for the <xref:System.Net.NetworkInformation.NetworkInterface.OperationalStatus%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example displays a summary for all interfaces on the local computer.  
+  
+ [!code-cpp[NCLNetInfoReport#16](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfoReport/CPP/netinfo.cpp#16)]
+ [!code-csharp[NCLNetInfoReport#16](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfoReport/CS/netinfo.cs#16)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Dormant">
@@ -45,7 +60,7 @@
         <ReturnType>System.Net.NetworkInformation.OperationalStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The network interface is not in a condition to transmit data packets; it is waiting for an external event.</summary>
       </Docs>
     </Member>
     <Member MemberName="Down">
@@ -70,7 +85,7 @@
         <ReturnType>System.Net.NetworkInformation.OperationalStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The network interface is unable to transmit data packets.</summary>
       </Docs>
     </Member>
     <Member MemberName="LowerLayerDown">
@@ -95,7 +110,7 @@
         <ReturnType>System.Net.NetworkInformation.OperationalStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The network interface is unable to transmit data packets because it runs on top of one or more other interfaces, and at least one of these "lower layer" interfaces is down.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotPresent">
@@ -120,7 +135,7 @@
         <ReturnType>System.Net.NetworkInformation.OperationalStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The network interface is unable to transmit data packets because of a missing component, typically a hardware component.</summary>
       </Docs>
     </Member>
     <Member MemberName="Testing">
@@ -145,7 +160,7 @@
         <ReturnType>System.Net.NetworkInformation.OperationalStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The network interface is running tests.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -170,7 +185,7 @@
         <ReturnType>System.Net.NetworkInformation.OperationalStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The network interface status is not known.</summary>
       </Docs>
     </Member>
     <Member MemberName="Up">
@@ -195,7 +210,7 @@
         <ReturnType>System.Net.NetworkInformation.OperationalStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The network interface is up; it can transmit data packets.</summary>
       </Docs>
     </Member>
   </Members>

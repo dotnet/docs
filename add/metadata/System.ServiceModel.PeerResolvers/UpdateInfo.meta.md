@@ -1,39 +1,53 @@
 ---
 uid: System.ServiceModel.PeerResolvers.UpdateInfo
-internalonly: False
+ms.author: "bobdel"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerResolvers.UpdateInfo.ClientId
-internalonly: False
+ms.author: "bobdel"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerResolvers.UpdateInfo.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerResolvers.UpdateInfo.MeshId
-internalonly: False
+ms.author: "bobdel"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerResolvers.UpdateInfo.NodeAddress
-internalonly: False
+ms.author: "bobdel"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerResolvers.UpdateInfo.HasBody
-internalonly: False
+ms.author: "bobdel"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerResolvers.UpdateInfo.#ctor(System.Guid,System.Guid,System.String,System.ServiceModel.PeerNodeAddress)
-internalonly: False
+ms.author: "bobdel"
+manager: "ghogen"
+---
+
+---
+uid: System.ServiceModel.PeerResolvers.UpdateInfo.#ctor
+ms.author: "bobdel"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerResolvers.UpdateInfo.RegistrationId
-internalonly: False
+ms.author: "bobdel"
+manager: "ghogen"
 ---

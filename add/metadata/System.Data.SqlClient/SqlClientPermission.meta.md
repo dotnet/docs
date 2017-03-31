@@ -1,29 +1,48 @@
 ---
 uid: System.Data.SqlClient.SqlClientPermission
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlClient.SqlClientPermission.#ctor(System.Security.Permissions.PermissionState)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlClient.SqlClientPermission.Add(System.String,System.String,System.Data.KeyRestrictionBehavior)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlClient.SqlClientPermission.Copy
-internalonly: False
----
-
----
-uid: System.Data.SqlClient.SqlClientPermission.#ctor(System.Security.Permissions.PermissionState,System.Boolean)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlClient.SqlClientPermission.#ctor
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlClient.SqlClientPermission.#ctor(System.Security.Permissions.PermissionState,System.Boolean)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlClient.SqlClientPermission.#ctor
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

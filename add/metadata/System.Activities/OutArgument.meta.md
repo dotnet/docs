@@ -1,14 +1,27 @@
 ---
 uid: System.Activities.OutArgument
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.OutArgument.CreateReference(System.Activities.InOutArgument,System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.OutArgument.CreateReference(System.Activities.OutArgument,System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.OutArgument.CreateReference
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

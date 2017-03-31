@@ -1,54 +1,58 @@
 ---
 uid: Microsoft.JScript.RegExpConstructor
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.RegExpConstructor.lastParen
-internalonly: False
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.RegExpConstructor.Invoke
 ---
 
 ---
 uid: Microsoft.JScript.RegExpConstructor.index
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.RegExpConstructor.leftContext
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.RegExpConstructor.Construct(System.String,System.Boolean,System.Boolean,System.Boolean)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.RegExpConstructor.input
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.RegExpConstructor.CreateInstance(System.Object[])
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.RegExpConstructor.lastMatch
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.RegExpConstructor.lastIndex
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.RegExpConstructor.Invoke(System.Object[])
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.RegExpConstructor.rightContext
-internalonly: False
+ms.author: "mikejo"
 ---

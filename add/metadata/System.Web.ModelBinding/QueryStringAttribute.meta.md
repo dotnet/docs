@@ -1,34 +1,55 @@
 ---
 uid: System.Web.ModelBinding.QueryStringAttribute
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ModelBinding.QueryStringAttribute.#ctor(System.String)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ModelBinding.QueryStringAttribute.GetValueProvider(System.Web.ModelBinding.ModelBindingExecutionContext)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ModelBinding.QueryStringAttribute.GetModelName
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ModelBinding.QueryStringAttribute.ValidateInput
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ModelBinding.QueryStringAttribute.#ctor
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ModelBinding.QueryStringAttribute.Key
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.ModelBinding.QueryStringAttribute.#ctor
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

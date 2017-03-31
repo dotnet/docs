@@ -1,1 +1,0 @@
-        Console.WriteLine(vbCrLf & "ToString: " & hello.ToString())

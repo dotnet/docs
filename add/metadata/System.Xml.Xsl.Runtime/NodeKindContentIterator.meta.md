@@ -1,19 +1,27 @@
 ---
 uid: System.Xml.Xsl.Runtime.NodeKindContentIterator
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Xsl.Runtime.NodeKindContentIterator.Create(System.Xml.XPath.XPathNavigator,System.Xml.XPath.XPathNodeType)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Xsl.Runtime.NodeKindContentIterator.Current
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Xsl.Runtime.NodeKindContentIterator.MoveNext
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

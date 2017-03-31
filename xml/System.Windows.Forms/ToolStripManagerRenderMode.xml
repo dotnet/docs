@@ -10,8 +10,17 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the painting style applied to multiple <see cref="T:System.Windows.Forms.ToolStrip" /> objects contained in a form.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ToolStripManagerRenderMode> is used by the <xref:System.Windows.Forms.ToolStripManager> class and sets the painting style for <xref:System.Windows.Forms.ToolStrip> objects that have their <xref:System.Windows.Forms.ToolStrip.RenderMode%2A?displayProperty=fullName> property set to <xref:System.Windows.Forms.ToolStripRenderMode?displayProperty=fullName>.  
+  
+ You cannot explicitly set the <xref:System.Windows.Forms.ToolStripManager.RenderMode%2A?displayProperty=fullName> to Custom, however the <xref:System.Windows.Forms.ToolStripManager.RenderMode%2A?displayProperty=fullName> is returned Custom when the <xref:System.Windows.Forms.ToolStripManager.Renderer%2A?displayProperty=fullName> is set to an extension of the <xref:System.Windows.Forms.ToolStripRenderer> class that is not <xref:System.Windows.Forms.ToolStripProfessionalRenderer> or <xref:System.Windows.Forms.ToolStripSystemRenderer>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Custom">
@@ -32,7 +41,7 @@
         <ReturnType>System.Windows.Forms.ToolStripManagerRenderMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates the use of a <see cref="T:System.Windows.Forms.ToolStripRenderer" /> other than <see cref="T:System.Windows.Forms.ToolStripProfessionalRenderer" /> or <see cref="T:System.Windows.Forms.ToolStripSystemRenderer" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Professional">
@@ -48,7 +57,7 @@
         <ReturnType>System.Windows.Forms.ToolStripManagerRenderMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates the use of a <see cref="T:System.Windows.Forms.ToolStripProfessionalRenderer" /> to paint.</summary>
       </Docs>
     </Member>
     <Member MemberName="System">
@@ -64,7 +73,7 @@
         <ReturnType>System.Windows.Forms.ToolStripManagerRenderMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates the use of a <see cref="T:System.Windows.Forms.ToolStripSystemRenderer" /> to paint.</summary>
       </Docs>
     </Member>
   </Members>

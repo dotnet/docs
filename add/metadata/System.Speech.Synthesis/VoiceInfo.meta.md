@@ -1,54 +1,65 @@
 ---
 uid: System.Speech.Synthesis.VoiceInfo
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.VoiceInfo.Gender
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.VoiceInfo.GetHashCode
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.VoiceInfo.AdditionalInfo
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.VoiceInfo.Age
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.VoiceInfo.Equals(System.Object)
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.VoiceInfo.Description
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.VoiceInfo.Id
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.VoiceInfo.SupportedAudioFormats
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.VoiceInfo.Name
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.VoiceInfo.Culture
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

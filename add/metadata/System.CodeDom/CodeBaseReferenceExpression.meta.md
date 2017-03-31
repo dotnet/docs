@@ -1,9 +1,13 @@
 ---
 uid: System.CodeDom.CodeBaseReferenceExpression
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.CodeBaseReferenceExpression.#ctor
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

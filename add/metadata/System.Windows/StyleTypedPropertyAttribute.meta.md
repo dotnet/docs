@@ -1,19 +1,26 @@
 ---
 uid: System.Windows.StyleTypedPropertyAttribute
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.StyleTypedPropertyAttribute.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.StyleTypedPropertyAttribute.Property
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.StyleTypedPropertyAttribute.StyleTargetType
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

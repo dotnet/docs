@@ -1,9 +1,11 @@
 ---
 uid: Microsoft.Build.Utilities.TrackedDependencies
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Utilities.TrackedDependencies.ExpandWildcards(Microsoft.Build.Framework.ITaskItem[])
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Input.ProcessInputEventHandler
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

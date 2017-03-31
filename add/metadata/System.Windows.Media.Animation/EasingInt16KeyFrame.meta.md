@@ -1,44 +1,63 @@
 ---
 uid: System.Windows.Media.Animation.EasingInt16KeyFrame
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Animation.EasingInt16KeyFrame.CreateInstanceCore
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Animation.EasingInt16KeyFrame.EasingFunction
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Animation.EasingInt16KeyFrame.InterpolateValueCore(System.Int16,System.Double)
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.EasingInt16KeyFrame.#ctor(System.Int16)
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.EasingInt16KeyFrame.EasingFunctionProperty
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.EasingInt16KeyFrame.#ctor(System.Int16,System.Windows.Media.Animation.KeyTime,System.Windows.Media.Animation.IEasingFunction)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Animation.EasingInt16KeyFrame.#ctor
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.Animation.EasingInt16KeyFrame.#ctor(System.Int16)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.Animation.EasingInt16KeyFrame.EasingFunctionProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.EasingInt16KeyFrame.#ctor(System.Int16,System.Windows.Media.Animation.KeyTime,System.Windows.Media.Animation.IEasingFunction)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.EasingInt16KeyFrame.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.EasingInt16KeyFrame.#ctor(System.Int16,System.Windows.Media.Animation.KeyTime)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -20,8 +20,25 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a randomly accessed view of a memory-mapped file.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateViewAccessor%2A> method of a <xref:System.IO.MemoryMappedFiles.MemoryMappedFile> object to get this view.  
+  
+   
+  
+## Examples  
+ The following example obtains a <xref:System.IO.MemoryMappedFiles.MemoryMappedViewAccessor> from a large memory-mapped file for editing.  
+  
+ This code example is part of a larger example provided for the <xref:System.IO.MemoryMappedFiles.MemoryMappedFile> class.  
+  
+ [!code-csharp[memorymappedfiles.memorymappedfile.createfromfile#2](~/samples/snippets/csharp/VS_Snippets_CLR/memorymappedfiles.memorymappedfile.createfromfile/cs/program.cs#2)]
+ [!code-vb[memorymappedfiles.memorymappedfile.createfromfile#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/memorymappedfiles.memorymappedfile.createfromfile/vb/program.vb#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Dispose">
@@ -87,8 +104,20 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Clears all buffers for this view and causes any buffered data to be written to the underlying file.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you are using views that are adjacent to each other, this method will also clear the following data, provided its size is equal to a multiple of the system page size:  
+  
+-   Any data that precedes the view up until the latest file offset.  
+  
+-   Any data that follows the view up until the earliest file offset.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">Methods were called after the accessor was closed.</exception>
       </Docs>
     </Member>
     <Member MemberName="PointerOffset">
@@ -113,9 +142,12 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
+  
+ Gets the number of bytes by which the starting position of this view is offset from the beginning of the memory-mapped file.</summary>
+        <value>The number of bytes between the starting position of this view and the beginning of the memory-mapped file.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The object from which this instance was created is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SafeMemoryMappedViewHandle">
@@ -145,9 +177,10 @@
         <ReturnType>Microsoft.Win32.SafeHandles.SafeMemoryMappedViewHandle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a handle to the view of a memory-mapped file.</summary>
+        <value>A wrapper for the operating system's handle to the view of the file.</value>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.</permission>
       </Docs>
     </Member>
   </Members>

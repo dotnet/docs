@@ -1,24 +1,38 @@
 ---
 uid: System.Web.UI.MobileControls.Adapters.HtmlListAdapter
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.Adapters.HtmlListAdapter.Control
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.Adapters.HtmlListAdapter.Render
 ---
 
 ---
 uid: System.Web.UI.MobileControls.Adapters.HtmlListAdapter.RenderList(System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.Adapters.HtmlListAdapter.#ctor
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.Adapters.HtmlListAdapter.Render(System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

@@ -1,24 +1,34 @@
 ---
 uid: System.ServiceModel.ServiceHostingEnvironment
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.ServiceHostingEnvironment.AspNetCompatibilityEnabled
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.ServiceHostingEnvironment.MultipleSiteBindingsEnabled
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.ServiceHostingEnvironment.EnsureInitialized
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.ServiceHostingEnvironment.EnsureServiceAvailable(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

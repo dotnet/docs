@@ -1,14 +1,17 @@
 ---
 uid: System.Web.Configuration.CodeSubDirectory
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.CodeSubDirectory.#ctor(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.CodeSubDirectory.DirectoryName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

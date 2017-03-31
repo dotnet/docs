@@ -1,39 +1,54 @@
 ---
 uid: System.Windows.Controls.Primitives.CustomPopupPlacement
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Primitives.CustomPopupPlacement.PrimaryAxis
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Primitives.CustomPopupPlacement.op_Equality(System.Windows.Controls.Primitives.CustomPopupPlacement,System.Windows.Controls.Primitives.CustomPopupPlacement)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Primitives.CustomPopupPlacement.GetHashCode
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Primitives.CustomPopupPlacement.op_Inequality(System.Windows.Controls.Primitives.CustomPopupPlacement,System.Windows.Controls.Primitives.CustomPopupPlacement)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Primitives.CustomPopupPlacement.#ctor(System.Windows.Point,System.Windows.Controls.Primitives.PopupPrimaryAxis)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Primitives.CustomPopupPlacement.Point
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.Primitives.CustomPopupPlacement.Equals(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

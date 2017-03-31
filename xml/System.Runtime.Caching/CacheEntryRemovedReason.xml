@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the reason why a cache entry was removed or an entry is about to be removed.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Caching.CacheEntryRemovedReason> enumeration is used to provide a predefined set of reasons why a cache entry was removed or is about to be removed. The <xref:System.Runtime.Caching.CacheEntryRemovedArguments> class takes a <xref:System.Runtime.Caching.CacheEntryRemovedReason> value as one of the parameter to pass to a callback method.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CacheSpecificEviction">
@@ -27,7 +34,7 @@
         <ReturnType>System.Runtime.Caching.CacheEntryRemovedReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A cache entry was evicted for as reason that is defined by a particular cache implementation.</summary>
       </Docs>
     </Member>
     <Member MemberName="ChangeMonitorChanged">
@@ -43,7 +50,7 @@
         <ReturnType>System.Runtime.Caching.CacheEntryRemovedReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A cache entry was removed because a related dependency (such as a file or another cache entry) triggered eviction of the cache entry.</summary>
       </Docs>
     </Member>
     <Member MemberName="Evicted">
@@ -59,7 +66,7 @@
         <ReturnType>System.Runtime.Caching.CacheEntryRemovedReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A cache entry was removed to free memory in the cache. This occurs when a cache instance approaches cache-specific memory limits, or when a process or cache instance approaches computer-wide memory limits.</summary>
       </Docs>
     </Member>
     <Member MemberName="Expired">
@@ -75,7 +82,7 @@
         <ReturnType>System.Runtime.Caching.CacheEntryRemovedReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A cache entry was removed because it expired. Expiration can be based on an absolute time or on a sliding expiration time.</summary>
       </Docs>
     </Member>
     <Member MemberName="Removed">
@@ -91,7 +98,7 @@
         <ReturnType>System.Runtime.Caching.CacheEntryRemovedReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A cache entry was removed by using the <see cref="M:System.Runtime.Caching.ObjectCache.Remove(System.String,System.String)" /> or <see cref="M:System.Runtime.Caching.ObjectCache.Set(System.String,System.Object,System.DateTimeOffset,System.String)" /> method.</summary>
       </Docs>
     </Member>
   </Members>

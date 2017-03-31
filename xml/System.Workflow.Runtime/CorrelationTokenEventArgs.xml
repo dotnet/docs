@@ -16,8 +16,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains the event data associated with the <see cref="T:System.Workflow.Runtime.CorrelationToken" />. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CorrelationToken">
@@ -33,8 +42,8 @@
         <ReturnType>System.Workflow.Runtime.CorrelationToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the current <see cref="T:System.Workflow.Runtime.CorrelationToken" />.</summary>
+        <value>The current <see cref="T:System.Workflow.Runtime.CorrelationToken" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +60,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the <see cref="M:System.Workflow.Runtime.CorrelationToken.Initialize(System.Workflow.ComponentModel.Activity,System.Collections.Generic.ICollection{System.Workflow.Runtime.CorrelationProperty})" /> method has been executed.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="M:System.Workflow.Runtime.CorrelationToken.Initialize(System.Workflow.ComponentModel.Activity,System.Collections.Generic.ICollection{System.Workflow.Runtime.CorrelationProperty})" /> method has been executed; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,39 +1,53 @@
 ---
 uid: System.Net.HttpListenerContext
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.HttpListenerContext.AcceptWebSocketAsync
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.HttpListenerContext.Request
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.HttpListenerContext.User
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.HttpListenerContext.AcceptWebSocketAsync(System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.HttpListenerContext.AcceptWebSocketAsync(System.String,System.Int32,System.TimeSpan,System.ArraySegment{System.Byte})
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.HttpListenerContext.AcceptWebSocketAsync(System.String,System.Int32,System.TimeSpan)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.HttpListenerContext.Response
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.HttpListenerContext.AcceptWebSocketAsync(System.String,System.TimeSpan)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

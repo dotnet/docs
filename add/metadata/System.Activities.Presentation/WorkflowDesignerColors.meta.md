@@ -1,659 +1,923 @@
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.OutlineViewItemTextColor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.AnnotationBackgroundGradientEndColor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.FontFamilyKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.AnnotationBackgroundGradientEndColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.FontWeight
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.OutlineViewExpandedArrowColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.DesignerViewExpandAllCollapseAllButtonColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.AnnotationDockButtonHoverBorderColor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.DesignerViewStatusBarBackgroundColor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.PropertyInspectorToolBarItemSelectedBackgroundBrushKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.PropertyInspectorTextBrushKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.WorkflowViewElementSelectedBorderColor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.ContextMenuBackgroundGradientEndColor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarHoverColorGradientEndKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.PropertyInspectorBorderBrushKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.OutlineViewItemTextColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.ContextMenuBorderColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.WorkflowViewElementSelectedBackgroundColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.AnnotationBorderColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.AnnotationBorderColor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.AnnotationBackgroundGradientMiddleColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.PropertyInspectorSelectedForegroundBrushKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.AnnotationDockTextColor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.FlowchartExpressionButtonMouseOverBrush
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.ContextMenuBackgroundGradientEndColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.ContextMenuMouseOverBeginColor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.ContextMenuBorderColor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.ContextMenuMouseOverBorderColor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.WorkflowViewElementCaptionColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.AnnotationBackgroundGradientBeginColor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.ContextMenuBackgroundGradientBeginColor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.ContextMenuMouseOverMiddle1ColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.DesignerViewExpandAllCollapseAllButtonMouseOverColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.AnnotationBackgroundGradientBeginColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.DesignerViewStatusBarBackgroundColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.DesignerViewExpandAllCollapseAllButtonBrush
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.OutlineViewCollapsedArrowBorderColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.OutlineViewExpandedArrowBorderColor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.ContextMenuIconAreaColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.ContextMenuItemTextSelectedColor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.AnnotationDockButtonHoverColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.AnnotationUndockTextColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.OutlineViewItemSelectedTextColor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.OutlineViewCollapsedArrowHoverBorderColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.ContextMenuItemTextColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.WorkflowViewElementBackgroundColor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarControlBackgroundColor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.FontSizeKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.ContextMenuSeparatorColor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarControlBackgroundColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.PropertyInspectorSelectedBackgroundBrushKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.PropertyInspectorToolBarSeparatorBrushKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.WorkflowViewElementSelectedBackgroundColor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.PropertyInspectorToolBarItemHoverBorderBrushKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.PropertyInspectorCategoryCaptionTextBrushKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.DesignerViewBackgroundColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarHoverColorGradientBeginKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.OutlineViewCollapsedArrowBorderColor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.PropertyInspectorToolBarItemSelectedBorderBrushKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarCaptionColor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.PropertyInspectorToolBarBackgroundBrushKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.ContextMenuItemTextDisabledColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.FlowchartExpressionButtonBrush
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarSelectedColorGradientEndKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.PropertyInspectorToolBarItemHoverBackgroundBrushKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.ContextMenuItemTextHoverColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.FlowchartExpressionButtonPressedBrush
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.RubberBandRectangleColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.WorkflowViewElementBackgroundColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.AnnotationDockButtonHoverBorderColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.PropertyInspectorPaneBrushKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.WorkflowViewElementCaptionColor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.DesignerViewExpandAllCollapseAllPressedBrush
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.ContextMenuMouseOverBorderColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.ContextMenuMouseOverMiddle2ColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.ContextMenuItemTextSelectedColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.ContextMenuIconAreaColor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.ContextMenuMouseOverBeginColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarColorGradientEndKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.AnnotationUndockTextColor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarSelectedColorGradientEndColor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.ContextMenuItemTextColor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.AnnotationDockButtonHoverBackgroundColor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.PropertyInspectorToolBarTextBoxBorderBrushKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.ContextMenuBackgroundGradientBeginColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.OutlineViewItemSelectedTextColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarColorGradientBeginKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.ContextMenuMouseOverEndColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.FlowchartExpressionButtonMouseOverColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.FontFamily
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.PropertyInspectorBackgroundBrushKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarColorGradientEndColor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.ContextMenuItemTextHoverColor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.OutlineViewItemHighlightBackgroundColor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.ContextMenuMouseOverMiddle1Color
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.AnnotationBackgroundGradientMiddleColor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarCaptionActiveColor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.OutlineViewBackgroundColor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.FlowchartExpressionButtonColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.AnnotationDockButtonColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.FontWeightKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarHoverColorGradientEndColor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.DesignerViewExpandAllCollapseAllPressedColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.OutlineViewItemHighlightBackgroundColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.GridViewRowHoverColor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarCaptionColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.ContextMenuMouseOverEndColor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.AnnotationDockButtonHoverColor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.FlowchartExpressionButtonPressedColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.OutlineViewExpandedArrowBorderColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.PropertyInspectorPopupBrushKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.ContextMenuSeparatorColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.AnnotationDockTextColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.ContextMenuMouseOverMiddle2Color
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarSelectedColorGradientBeginKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.AnnotationDockButtonColor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.WorkflowViewElementBorderColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.ContextMenuItemTextDisabledColor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.AnnotationDockButtonHoverBackgroundColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.OutlineViewCollapsedArrowHoverBorderColor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarSelectedColorGradientBeginColor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.FontSize
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.DesignerViewBackgroundColor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.OutlineViewBackgroundColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarCaptionActiveColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.DesignerViewExpandAllCollapseAllButtonMouseOverBrush
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.WorkflowViewElementSelectedBorderColorKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.WorkflowViewElementBorderColor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.OutlineViewExpandedArrowColor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarHoverColorGradientBeginColor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarColorGradientBeginColor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

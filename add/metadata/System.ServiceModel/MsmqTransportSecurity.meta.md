@@ -1,34 +1,55 @@
 ---
 uid: System.ServiceModel.MsmqTransportSecurity
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.MsmqTransportSecurity.MsmqAuthenticationMode
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.MsmqTransportSecurity.MsmqEncryptionAlgorithm
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.MsmqTransportSecurity.MsmqSecureHashAlgorithm
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.MsmqTransportSecurity.#ctor(System.ServiceModel.MsmqTransportSecurity)
-internalonly: False
----
-
----
-uid: System.ServiceModel.MsmqTransportSecurity.MsmqProtectionLevel
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.MsmqTransportSecurity.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.MsmqTransportSecurity.MsmqProtectionLevel
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.MsmqTransportSecurity.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

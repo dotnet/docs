@@ -1,114 +1,157 @@
 ---
 uid: System.Windows.Controls.GridViewHeaderRowPresenter
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderContextMenuProperty
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderToolTip
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.GridViewHeaderRowPresenter.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.GridViewHeaderRowPresenter.OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplateSelector
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderStringFormatProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.GridViewHeaderRowPresenter.AllowsColumnReorderProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.GridViewHeaderRowPresenter.OnMouseMove(System.Windows.Input.MouseEventArgs)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderToolTipProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplateProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.GridViewHeaderRowPresenter.AllowsColumnReorder
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.GridViewHeaderRowPresenter.OnCreateAutomationPeer
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplate
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.GridViewHeaderRowPresenter.OnMouseLeftButtonUp(System.Windows.Input.MouseButtonEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.GridViewHeaderRowPresenter.ArrangeOverride(System.Windows.Size)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.GridViewHeaderRowPresenter.MeasureOverride(System.Windows.Size)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderStringFormat
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.GridViewHeaderRowPresenter.OnLostMouseCapture(System.Windows.Input.MouseEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderContextMenu
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderContainerStyleProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplateSelectorProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderContainerStyle
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

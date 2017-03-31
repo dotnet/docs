@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Extends the <see cref="T:System.Attribute" /> class to indicate the type of server control that an extender control can be applied to.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,9 +33,11 @@
         <Parameter Name="targetControlType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="targetControlType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="targetControlType">The type of the target control.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.TargetControlTypeAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="targetControlType" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="TargetControlType">
@@ -51,8 +53,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type of the target control, as specified in the constructor.</summary>
+        <value>The type of the target control.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,8 +71,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a unique identifier for this <see cref="T:System.Web.UI.TargetControlTypeAttribute" />.</summary>
+        <value>The unique identifier for this attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

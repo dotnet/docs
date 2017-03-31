@@ -1,29 +1,48 @@
 ---
 uid: System.Security.Cryptography.Pkcs.Pkcs9SigningTime
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.Pkcs.Pkcs9SigningTime.#ctor(System.DateTime)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.Pkcs.Pkcs9SigningTime.#ctor(System.Byte[])
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.Pkcs.Pkcs9SigningTime.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.Pkcs.Pkcs9SigningTime.#ctor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.Pkcs.Pkcs9SigningTime.SigningTime
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.Pkcs.Pkcs9SigningTime.CopyFrom(System.Security.Cryptography.AsnEncodedData)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

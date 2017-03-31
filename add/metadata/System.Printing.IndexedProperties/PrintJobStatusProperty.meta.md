@@ -1,19 +1,41 @@
 ---
 uid: System.Printing.IndexedProperties.PrintJobStatusProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.IndexedProperties.PrintJobStatusProperty.#ctor(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.IndexedProperties.PrintJobStatusProperty.Value
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.IndexedProperties.PrintJobStatusProperty.#ctor(System.String,System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.IndexedProperties.PrintJobStatusProperty.op_Implicit
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.IndexedProperties.PrintJobStatusProperty.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

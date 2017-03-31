@@ -1,59 +1,77 @@
 ---
 uid: System.IdentityModel.Metadata.DisplayClaim
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.DisplayClaim.Optional
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.DisplayClaim.WriteOptionalAttribute
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.DisplayClaim.#ctor(System.String)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.DisplayClaim.CreateDisplayClaimFromClaimType(System.String)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.DisplayClaim.DisplayValue
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.DisplayClaim.#ctor(System.String,System.String,System.String,System.String)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.DisplayClaim.#ctor(System.String,System.String,System.String)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.DisplayClaim.DisplayTag
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.DisplayClaim.Description
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.DisplayClaim.ClaimType
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Metadata.DisplayClaim.#ctor
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.DisplayClaim.#ctor(System.String,System.String,System.String,System.String,System.Boolean)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

@@ -1,4 +1,6 @@
 ---
 uid: System.IO.Packaging.EncryptionOption
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

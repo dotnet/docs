@@ -1,49 +1,88 @@
 ---
 uid: System.Printing.IndexedProperties.PrintPropertyDictionary
-internalonly: False
----
-
----
-uid: System.Printing.IndexedProperties.PrintPropertyDictionary.#ctor
-internalonly: False
----
-
----
-uid: System.Printing.IndexedProperties.PrintPropertyDictionary.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
----
-
----
-uid: System.Printing.IndexedProperties.PrintPropertyDictionary.Add(System.Printing.IndexedProperties.PrintProperty)
-internalonly: False
----
-
----
-uid: System.Printing.IndexedProperties.PrintPropertyDictionary.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
----
-
----
-uid: System.Printing.IndexedProperties.PrintPropertyDictionary.SetProperty(System.String,System.Printing.IndexedProperties.PrintProperty)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.IndexedProperties.PrintPropertyDictionary.Dispose
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.IndexedProperties.PrintPropertyDictionary.Add
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.IndexedProperties.PrintPropertyDictionary.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.IndexedProperties.PrintPropertyDictionary.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.IndexedProperties.PrintPropertyDictionary.#ctor
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Printing.IndexedProperties.PrintPropertyDictionary.Add(System.Printing.IndexedProperties.PrintProperty)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.IndexedProperties.PrintPropertyDictionary.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.IndexedProperties.PrintPropertyDictionary.SetProperty(System.String,System.Printing.IndexedProperties.PrintProperty)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Printing.IndexedProperties.PrintPropertyDictionary.Dispose
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.IndexedProperties.PrintPropertyDictionary.OnDeserialization(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.IndexedProperties.PrintPropertyDictionary.Dispose(System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.IndexedProperties.PrintPropertyDictionary.GetProperty(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

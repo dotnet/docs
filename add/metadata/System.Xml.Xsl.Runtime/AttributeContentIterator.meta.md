@@ -1,19 +1,27 @@
 ---
 uid: System.Xml.Xsl.Runtime.AttributeContentIterator
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Xsl.Runtime.AttributeContentIterator.MoveNext
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Xsl.Runtime.AttributeContentIterator.Create(System.Xml.XPath.XPathNavigator)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Xsl.Runtime.AttributeContentIterator.Current
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

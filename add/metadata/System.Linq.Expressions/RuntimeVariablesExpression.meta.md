@@ -1,24 +1,33 @@
 ---
 uid: System.Linq.Expressions.RuntimeVariablesExpression
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.Expressions.RuntimeVariablesExpression.Variables
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.Expressions.RuntimeVariablesExpression.Update(System.Collections.Generic.IEnumerable{System.Linq.Expressions.ParameterExpression})
-internalonly: False
+ms.author: "billchi"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Linq.Expressions.RuntimeVariablesExpression.Type
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.Expressions.RuntimeVariablesExpression.NodeType
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---

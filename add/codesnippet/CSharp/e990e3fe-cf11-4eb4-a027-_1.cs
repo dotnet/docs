@@ -1,1 +1,0 @@
-        UIPermission uiPerm2 = new UIPermission(PermissionState.None);

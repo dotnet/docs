@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.HtmlControls.HtmlEmbed
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlEmbed.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlEmbed.Src
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlEmbed.RenderAttributes(System.Web.UI.HtmlTextWriter)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

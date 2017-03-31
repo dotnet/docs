@@ -11,8 +11,26 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Serves as a base class that contains abstract methods for implementing an output-cache provider.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ All output-cache providers must implement the abstract methods in the <xref:System.Web.Caching.OutputCacheProvider> class.  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>When you inherit from <see cref="T:System.Web.Caching.OutputCacheProvider" />, you must override the following members:  
+  
+-   <see cref="M:System.Web.Caching.OutputCacheProvider.Add(System.String,System.Object,System.DateTime)" />  
+  
+-   <see cref="M:System.Web.Caching.OutputCacheProvider.Get(System.String)" />  
+  
+-   <see cref="M:System.Web.Caching.OutputCacheProvider.Remove(System.String)" />  
+  
+-   <see cref="M:System.Web.Caching.OutputCacheProvider.Set(System.String,System.Object,System.DateTime)" /></para>
+    </block>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +44,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Caching.OutputCacheProvider" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,12 +66,19 @@
         <Parameter Name="utcExpiry" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="entry">To be added.</param>
-        <param name="utcExpiry">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="key">A unique identifier for <c>entry</c>.</param>
+        <param name="entry">The content to add to the output cache.</param>
+        <param name="utcExpiry">The time and date on which the cached entry expires.</param>
+        <summary>Inserts the specified entry into the output cache.</summary>
+        <returns>A reference to the specified provider.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If there is already a value in the cache for the specified key, the provider must return that value. The provider must not store the data passed by using the <xref:System.Web.Caching.OutputCacheProvider.Add%2A> method parameters. The <xref:System.Web.Caching.OutputCacheProvider.Add%2A> method stores the data if it is not already in the cache. If the data is in the cache, the <xref:System.Web.Caching.OutputCacheProvider.Add%2A> method returns it.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Get">
@@ -72,9 +97,9 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">A unique identifier for a cached entry in the output cache.</param>
+        <summary>Returns a reference to the specified entry in the output cache.</summary>
+        <returns>The <paramref name="key" /> value that identifies the specified entry in the cache, or <see langword="null" /> if the specified entry is not in the cache.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,8 +119,8 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="key">The unique identifier for the entry to remove from the output cache.</param>
+        <summary>Removes the specified entry from the output cache.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,11 +142,18 @@
         <Parameter Name="utcExpiry" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="entry">To be added.</param>
-        <param name="utcExpiry">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="key">A unique identifier for <c>entry</c>.</param>
+        <param name="entry">The content to add to the output cache.</param>
+        <param name="utcExpiry">The time and date on which the cached <c>entry</c> expires.</param>
+        <summary>Inserts the specified entry into the output cache, overwriting the entry if it is already cached.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The expiration date specified in `utcExpiry` is always an absolute expiration date.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

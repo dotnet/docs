@@ -1,14 +1,14 @@
 ---
 uid: System.Management.CompletedEventArgs
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.CompletedEventArgs.Status
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.CompletedEventArgs.StatusObject
-internalonly: False
+manager: "jillfra"
 ---

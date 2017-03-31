@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a prototype-based object that is defined by a constructor function. This class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -42,9 +42,9 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="args">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="args">The arguments to pass to the constructor.</param>
+        <summary>Creates an instance of the prototype-based object, passing in the specified arguments.</summary>
+        <returns>An instance of the object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,8 +62,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the number of milliseconds that have elapsed since January 1, 1970.</summary>
+        <returns>The number of milliseconds that have elapsed since January 1, 1970.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,9 +88,9 @@
         <Parameter Name="str" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="str">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="str">A string that contains a date and time to convert.</param>
+        <summary>Converts the specified string representation of a date and time to its <see cref="T:System.Double" /> equivalent.</summary>
+        <returns>A <see cref="T:System.Double" /> equivalent of the date and time that is contained in <paramref name="str" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,15 +121,15 @@
         <Parameter Name="ms" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="year">To be added.</param>
-        <param name="month">To be added.</param>
-        <param name="date">To be added.</param>
-        <param name="hours">To be added.</param>
-        <param name="minutes">To be added.</param>
-        <param name="seconds">To be added.</param>
-        <param name="ms">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="year">The year of the date and time to convert.</param>
+        <param name="month">The month of the date and time to convert.</param>
+        <param name="date">The date of the date and time to convert.</param>
+        <param name="hours">The hours of the date and time to convert.</param>
+        <param name="minutes">The minutes of the date and time to convert.</param>
+        <param name="seconds">The seconds of the date and time to convert.</param>
+        <param name="ms">The milliseconds of the date and time to convert.</param>
+        <summary>Converts the specified date and time to its <see cref="T:System.Double" /> equivalent.</summary>
+        <returns>A <see cref="T:System.Double" /> equivalent of the specified date and time.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

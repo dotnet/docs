@@ -1,29 +1,35 @@
 ---
 uid: System.Net.Configuration.HttpCachePolicyElement
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.HttpCachePolicyElement.MaximumStale
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.HttpCachePolicyElement.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.HttpCachePolicyElement.PolicyLevel
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.HttpCachePolicyElement.MinimumFresh
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.HttpCachePolicyElement.MaximumAge
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

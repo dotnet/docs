@@ -1,24 +1,34 @@
 ---
 uid: System.Security.Permissions.TypeDescriptorPermissionAttribute
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.TypeDescriptorPermissionAttribute.RestrictedRegistrationAccess
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.TypeDescriptorPermissionAttribute.CreatePermission
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.TypeDescriptorPermissionAttribute.Flags
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.TypeDescriptorPermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

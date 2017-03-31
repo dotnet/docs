@@ -1,9 +1,13 @@
 ---
 uid: System.Windows.Forms.VScrollProperties
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VScrollProperties.#ctor(System.Windows.Forms.ScrollableControl)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

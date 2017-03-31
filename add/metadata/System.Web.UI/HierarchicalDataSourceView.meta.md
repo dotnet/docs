@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.HierarchicalDataSourceView
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HierarchicalDataSourceView.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HierarchicalDataSourceView.Select
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

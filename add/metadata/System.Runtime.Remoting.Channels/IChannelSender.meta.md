@@ -1,9 +1,9 @@
 ---
 uid: System.Runtime.Remoting.Channels.IChannelSender
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Channels.IChannelSender.CreateMessageSink(System.String,System.Object,System.String@)
-internalonly: False
+manager: "ghogen"
 ---

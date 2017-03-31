@@ -1,94 +1,119 @@
 ---
 uid: System.IdentityModel.Tokens.SecurityTokenDescriptor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.SecurityTokenDescriptor.Lifetime
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.SecurityTokenDescriptor.SigningCredentials
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.SecurityTokenDescriptor.TokenIssuerName
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.SecurityTokenDescriptor.TokenType
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.SecurityTokenDescriptor.Subject
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.SecurityTokenDescriptor.AddAuthenticationClaims(System.String,System.DateTime)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.SecurityTokenDescriptor.Properties
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.SecurityTokenDescriptor.AppliesToAddress
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.SecurityTokenDescriptor.EncryptingCredentials
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.SecurityTokenDescriptor.UnattachedReference
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.SecurityTokenDescriptor.AuthenticationInfo
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.SecurityTokenDescriptor.AttachedReference
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.SecurityTokenDescriptor.ReplyToAddress
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.SecurityTokenDescriptor.Token
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.SecurityTokenDescriptor.AddAuthenticationClaims
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.SecurityTokenDescriptor.Proof
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.SecurityTokenDescriptor.ApplyTo(System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.SecurityTokenDescriptor.AddAuthenticationClaims(System.String)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.SecurityTokenDescriptor.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

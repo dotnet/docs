@@ -1,9 +1,13 @@
 ---
 uid: System.Activities.Presentation.PropertyEditing.PropertyValueSource
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.PropertyEditing.PropertyValueSource.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

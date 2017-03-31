@@ -8,7 +8,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines a method for getting information about how the scrollbars of windows need to be themed when displayed in the Visual Studio designer.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,8 +26,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets an enumeration of <see cref="T:System.Windows.Forms.Design.ThemedScrollbarWindow" /> objects that represent windows and how their scrollbars need to be themed when displayed in the Visual Studio designer.</summary>
+        <returns>An enumeration of objects that represent windows and how their scrollbars need to be themed when displayed in the Visual Studio designer.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,194 +1,272 @@
 ---
 uid: System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.MessageSecurityVersion
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.SecureConversationSecurityBindingElementProperty
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.SuppressAuditFailureProperty
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.MessageDirectionProperty
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.PreferSslCertificateAuthenticatorProperty
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.SecurityBindingElementProperty
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.DuplexClientLocalAddressProperty
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.AuditLogLocationProperty
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.SupportSecurityContextCancellationProperty
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.Namespace
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.EndpointFilterTableProperty
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.IssuerBindingContextProperty
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.IssuerAddressProperty
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.HttpAuthenticationSchemeProperty
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.IsInitiatorProperty
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.ChannelParametersCollectionProperty
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.SupportingTokenAttachmentModeProperty
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.TransportSchemeProperty
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.IssuedSecurityTokenParametersProperty
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.SecurityAlgorithmSuiteProperty
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.SecurityAlgorithmSuite
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.ExtendedProtectionPolicy
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.IssuerBinding
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.ViaProperty
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.MessageSecurityVersionProperty
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.PrivacyNoticeVersionProperty
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.SecureConversationSecurityBindingElement
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.IsOutOfBandTokenProperty
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.IssuerBindingProperty
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.PrivacyNoticeUriProperty
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.SecurityBindingElement
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.IssuerAddress
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.TargetAddressProperty
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.TransportScheme
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.ListenUriProperty
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.IsInitiator
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.MessageAuthenticationAuditLevelProperty
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

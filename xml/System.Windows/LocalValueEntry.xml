@@ -11,8 +11,25 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a property identifier and the property value for a locally set dependency property.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Instances of this class are returned when getting the value of the <xref:System.Windows.LocalValueEnumerator.Current%2A> property of a <xref:System.Windows.LocalValueEnumerator>. All <xref:System.Windows.LocalValueEntry> properties are read-only.  
+  
+ This class has no public constructor. In order to obtain instances of this class you must call <xref:System.Windows.DependencyObject.GetLocalValueEnumerator%2A>, and then get the value of <xref:System.Windows.LocalValueEnumerator.Current%2A> from the returned <xref:System.Windows.LocalValueEnumerator>.  
+  
+   
+  
+## Examples  
+ The following example iterates locally set values of a <xref:System.Windows.DependencyObject> and queries <xref:System.Windows.LocalValueEntry> properties.  
+  
+ [!code-csharp[DPClearValue#IterateLocalValuesAndClear](~/samples/snippets/csharp/VS_Snippets_Wpf/DPClearValue/CSharp/default.xaml.cs#iteratelocalvaluesandclear)]
+ [!code-vb[DPClearValue#IterateLocalValuesAndClear](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DPClearValue/VisualBasic/default.xaml.vb#iteratelocalvaluesandclear)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Equals">
@@ -31,9 +48,9 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The <see cref="T:System.Windows.LocalValueEntry" /> to compare with the current <see cref="T:System.Windows.LocalValueEntry" />.</param>
+        <summary>Determines whether two <see cref="T:System.Windows.LocalValueEntry" /> instances are equal.</summary>
+        <returns>This <see cref="M:System.Windows.LocalValueEntry.op_Equality(System.Windows.LocalValueEntry,System.Windows.LocalValueEntry)" /> implementation compares the values of the <see cref="P:System.Windows.LocalValueEntry.Property" />, and potentially compares the values of <see cref="P:System.Windows.LocalValueEntry.Value" />. The <see cref="P:System.Windows.LocalValueEntry.Property" /> component of a <see cref="T:System.Windows.LocalValueEntry" /> is a value type, so will always be a bitwise comparison. For the <see cref="P:System.Windows.LocalValueEntry.Value" /> component, this implementation employs a bitwise comparison if it is a value type. For locally set properties that have reference types, the behavior is deferred to that type's equality determination mechanisms, because it just uses the == operator on the two values internally. By default, this would be a reference equality of the values and thus the equality of the entire <see cref="T:System.Windows.LocalValueEntry" /> would become a reference equality.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +68,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code for this <see cref="T:System.Windows.LocalValueEntry" />.</summary>
+        <returns>A signed 32-bit integer value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,11 +90,21 @@
         <Parameter Name="obj2" Type="System.Windows.LocalValueEntry" />
       </Parameters>
       <Docs>
-        <param name="obj1">To be added.</param>
-        <param name="obj2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="obj1">The first instance to compare.</param>
+        <param name="obj2">The second instance to compare.</param>
+        <summary>Compares the specified <see cref="T:System.Windows.LocalValueEntry" /> instances to determine whether they are the same.</summary>
+        <returns>
+          <see langword="true" /> if the <paramref name="obj1" /> <see cref="T:System.Windows.LocalValueEntry" /> is equal to the <paramref name="obj2" /> <see cref="T:System.Windows.LocalValueEntry" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This <xref:System.Windows.LocalValueEntry.op_Equality%2A> implementation compares the values of the <xref:System.Windows.LocalValueEntry.Property%2A>, and potentially compares the values of <xref:System.Windows.LocalValueEntry.Value%2A>. The <xref:System.Windows.LocalValueEntry.Property%2A> component of a <xref:System.Windows.LocalValueEntry> is always a value type, so this comparison will always be a bitwise value comparison. For the <xref:System.Windows.LocalValueEntry.Value%2A> component, this implementation employs a bitwise comparison if it is a value type.  
+  
+ For locally set properties that have reference types, the behavior is deferred to that type's equality determination mechanisms, because it uses the `==` operator on the two values internally. By default, this is a reference equality of the values.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -97,10 +124,12 @@
         <Parameter Name="obj2" Type="System.Windows.LocalValueEntry" />
       </Parameters>
       <Docs>
-        <param name="obj1">To be added.</param>
-        <param name="obj2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj1">The first instance to compare.</param>
+        <param name="obj2">The second instance to compare.</param>
+        <summary>Compares the specified <see cref="T:System.Windows.LocalValueEnumerator" /> instances to determine whether they are different.</summary>
+        <returns>This implementation compares the values of the <see cref="P:System.Windows.LocalValueEntry.Property" /> and <see cref="P:System.Windows.LocalValueEntry.Value" /> components of a <see cref="T:System.Windows.LocalValueEntry" />. The <see cref="P:System.Windows.LocalValueEntry.Property" /> component of a <see cref="T:System.Windows.LocalValueEntry" /> is always a value type, so this comparison will always be a bitwise comparison. For the <see cref="P:System.Windows.LocalValueEntry.Value" /> component, this implementation employs a bitwise comparison if it is a value type.  
+  
+ For locally set properties that have reference types, the behavior is deferred to that type's equality determination mechanisms, because it uses the <see langword="==" /> operator on the two values internally. By default, this is a reference equality of the values.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,9 +146,16 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the identifier for the locally set dependency property that is represented by this entry.</summary>
+        <value>The identifier for the locally set dependency property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to query the identifier of the locally set dependency property and to obtain its metadata. This obtained metadata may include the initial default value of the property and whether the property supports property value inheritance.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -135,9 +171,16 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the value of the locally set dependency property.</summary>
+        <value>The value of the locally set dependency property as an object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To determine a more specific type for this value, check the <xref:System.Windows.LocalValueEntry.Property%2A> for the current <xref:System.Windows.LocalValueEntry> and get its <xref:System.Windows.DependencyProperty.PropertyType%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

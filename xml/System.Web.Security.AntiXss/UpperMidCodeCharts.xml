@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies values for the upper-middle region of the UTF-8 Unicode code charts, from U2DE0 to UA8DF.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Bamum code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="Bopomofo">
@@ -48,7 +48,7 @@
         <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Bopomofo code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="BopomofoExtended">
@@ -64,7 +64,7 @@
         <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Bopomofo Extended code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="CjkCompatibility">
@@ -80,7 +80,7 @@
         <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The CJK Compatibility code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="CjkRadicalsSupplement">
@@ -96,7 +96,7 @@
         <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The CJK Radicals Supplement code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="CjkStrokes">
@@ -112,7 +112,7 @@
         <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The CJK Strokes code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="CjkSymbolsAndPunctuation">
@@ -128,7 +128,7 @@
         <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The CJK Symbols and Punctuation code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="CjkUnifiedIdeographs">
@@ -144,7 +144,7 @@
         <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The CJK Unified Ideographs code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="CjkUnifiedIdeographsExtensionA">
@@ -160,7 +160,7 @@
         <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The CJK Unified Ideographs Extension-A code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="CommonIndicNumberForms">
@@ -176,7 +176,7 @@
         <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Common Indic Number Forms code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="CyrillicExtendedA">
@@ -192,7 +192,7 @@
         <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Cyrillic Extended-A code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="CyrillicExtendedB">
@@ -208,7 +208,7 @@
         <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Cyrillic Extended-B code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="EnclosedCjkLettersAndMonths">
@@ -224,7 +224,7 @@
         <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Enclosed CJK Letters and Months code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="HangulCompatibilityJamo">
@@ -240,7 +240,7 @@
         <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Hangul Compatibility Jamo code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="Hiragana">
@@ -256,7 +256,7 @@
         <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Hiragana code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="IdeographicDescriptionCharacters">
@@ -272,7 +272,7 @@
         <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Ideographic Description Characters code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="Kanbun">
@@ -288,7 +288,7 @@
         <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Kanbun code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="KangxiRadicals">
@@ -304,7 +304,7 @@
         <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Kangxi Radicals code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="Katakana">
@@ -320,7 +320,7 @@
         <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Katakana code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="KatakanaPhoneticExtensions">
@@ -336,7 +336,7 @@
         <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Katakana Phonetic Extensions code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="LatinExtendedD">
@@ -352,7 +352,7 @@
         <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Latin Extended-D code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="Lisu">
@@ -368,7 +368,7 @@
         <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Lisu code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="ModifierToneLetters">
@@ -384,7 +384,7 @@
         <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Modifier Tone Letters code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -400,7 +400,7 @@
         <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>None of the UTF-8 Unicode code charts from the upper-middle region are marked as safe.</summary>
       </Docs>
     </Member>
     <Member MemberName="Phagspa">
@@ -416,7 +416,7 @@
         <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Phags-Pa code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="Saurashtra">
@@ -432,7 +432,7 @@
         <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Saurashtra code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="SupplementalPunctuation">
@@ -448,7 +448,7 @@
         <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Supplemental Punctuation code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="SylotiNagri">
@@ -464,7 +464,7 @@
         <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Syloti Nagri code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="Vai">
@@ -480,7 +480,7 @@
         <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Vai code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="YijingHexagramSymbols">
@@ -496,7 +496,7 @@
         <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Yijing Hexagram Symbols code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="YiRadicals">
@@ -512,7 +512,7 @@
         <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Yi Radicals code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="YiSyllables">
@@ -528,7 +528,7 @@
         <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Yi Syllables code chart.</summary>
       </Docs>
     </Member>
   </Members>

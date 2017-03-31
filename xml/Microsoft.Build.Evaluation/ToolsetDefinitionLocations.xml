@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Flags for controlling the toolset initialization.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>Microsoft.Build.Evaluation.ToolsetDefinitionLocations</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Read toolset information from the exe configuration file.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -48,7 +48,7 @@
         <ReturnType>Microsoft.Build.Evaluation.ToolsetDefinitionLocations</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Do not read toolset information from any external location.</summary>
       </Docs>
     </Member>
     <Member MemberName="Registry">
@@ -64,7 +64,7 @@
         <ReturnType>Microsoft.Build.Evaluation.ToolsetDefinitionLocations</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Read toolset information from the registry (HKLM\Software\Microsoft\MSBuild\ToolsVersions).</summary>
       </Docs>
     </Member>
   </Members>

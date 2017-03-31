@@ -1,14 +1,24 @@
 ---
 uid: System.Web.ApplicationServices.ApplicationServicesHostFactory
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.ApplicationServices.ApplicationServicesHostFactory.CreateServiceHost
 ---
 
 ---
 uid: System.Web.ApplicationServices.ApplicationServicesHostFactory.CreateServiceHost(System.Type,System.Uri[])
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ApplicationServices.ApplicationServicesHostFactory.#ctor
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

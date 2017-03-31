@@ -16,8 +16,15 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="arguments">To be added.</param>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <param name="arguments">The information about the cache entry that was removed from the cache.</param>
+    <summary>Defines a reference to a method that is called after a cache entry is removed from the cache.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Caching.CacheEntryRemovedCallback> delegate passes information about the removed cache entry in the form of a <xref:System.Runtime.Caching.CacheEntryRemovedArguments> object.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

@@ -1,4 +1,4 @@
 ---
 uid: System.Messaging.MessageLookupAction
-internalonly: False
+manager: "tyoung"
 ---

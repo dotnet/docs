@@ -1,44 +1,69 @@
 ---
 uid: System.ComponentModel.LicenseProviderAttribute
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.LicenseProviderAttribute.Default
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.LicenseProviderAttribute.#ctor(System.Type)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.LicenseProviderAttribute.LicenseProvider
-internalonly: False
----
-
----
-uid: System.ComponentModel.LicenseProviderAttribute.TypeId
-internalonly: False
----
-
----
-uid: System.ComponentModel.LicenseProviderAttribute.Equals(System.Object)
-internalonly: False
----
-
----
-uid: System.ComponentModel.LicenseProviderAttribute.#ctor(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.LicenseProviderAttribute.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.LicenseProviderAttribute.TypeId
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.LicenseProviderAttribute.Equals(System.Object)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.LicenseProviderAttribute.#ctor(System.String)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.LicenseProviderAttribute.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.LicenseProviderAttribute.GetHashCode
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

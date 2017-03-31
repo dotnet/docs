@@ -1,54 +1,76 @@
 ---
 uid: System.Runtime.InteropServices.DllImportAttribute
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.DllImportAttribute.PreserveSig
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.DllImportAttribute.SetLastError
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.DllImportAttribute.EntryPoint
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.DllImportAttribute.ExactSpelling
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.DllImportAttribute.ThrowOnUnmappableChar
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.DllImportAttribute.BestFitMapping
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.DllImportAttribute.#ctor(System.String)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.DllImportAttribute.CharSet
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.DllImportAttribute.CallingConvention
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.DllImportAttribute.Value
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

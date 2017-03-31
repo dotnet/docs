@@ -1,94 +1,143 @@
 ---
 uid: System.Web.Caching.CacheDependency
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Caching.CacheDependency.KeepDependenciesAlive
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.CacheDependency.UtcLastModified
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.CacheDependency.#ctor(System.String[],System.String[],System.Web.Caching.CacheDependency)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.CacheDependency.#ctor(System.String,System.DateTime)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Caching.CacheDependency.TakeOwnership
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.CacheDependency.GetUniqueID
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.CacheDependency.GetFileDependencies
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.CacheDependency.#ctor(System.String[],System.String[],System.Web.Caching.CacheDependency,System.DateTime)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.CacheDependency.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.CacheDependency.#ctor(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Caching.CacheDependency.ItemRemoved
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.CacheDependency.#ctor(System.String[],System.String[],System.DateTime)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.CacheDependency.SetUtcLastModified(System.DateTime)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Caching.CacheDependency.SetCacheDependencyChanged(System.Action{System.Object,System.EventArgs})
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Caching.CacheDependency.#ctor
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.CacheDependency.DependencyDispose
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.CacheDependency.HasChanged
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.CacheDependency.Dispose
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.CacheDependency.FinishInit
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.CacheDependency.#ctor(System.String[],System.DateTime)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.CacheDependency.#ctor(System.String[],System.String[])
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.CacheDependency.#ctor(System.String[])
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.CacheDependency.NotifyDependencyChanged(System.Object,System.EventArgs)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

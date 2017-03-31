@@ -1,49 +1,76 @@
 ---
 uid: System.Web.UI.HtmlControls.HtmlContainerControl
-internalonly: False
----
-
----
-uid: System.Web.UI.HtmlControls.HtmlContainerControl.Render(System.Web.UI.HtmlTextWriter)
-internalonly: False
----
-
----
-uid: System.Web.UI.HtmlControls.HtmlContainerControl.LoadViewState(System.Object)
-internalonly: False
----
-
----
-uid: System.Web.UI.HtmlControls.HtmlContainerControl.CreateControlCollection
-internalonly: False
----
-
----
-uid: System.Web.UI.HtmlControls.HtmlContainerControl.#ctor(System.String)
-internalonly: False
----
-
----
-uid: System.Web.UI.HtmlControls.HtmlContainerControl.RenderEndTag(System.Web.UI.HtmlTextWriter)
-internalonly: False
----
-
----
-uid: System.Web.UI.HtmlControls.HtmlContainerControl.InnerText
-internalonly: False
----
-
----
-uid: System.Web.UI.HtmlControls.HtmlContainerControl.RenderAttributes(System.Web.UI.HtmlTextWriter)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlContainerControl.#ctor
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.HtmlControls.HtmlContainerControl.Render(System.Web.UI.HtmlTextWriter)
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.HtmlControls.HtmlContainerControl.LoadViewState(System.Object)
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.HtmlControls.HtmlContainerControl.CreateControlCollection
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.HtmlControls.HtmlContainerControl.#ctor(System.String)
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.HtmlControls.HtmlContainerControl.RenderEndTag(System.Web.UI.HtmlTextWriter)
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.HtmlControls.HtmlContainerControl.InnerText
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.HtmlControls.HtmlContainerControl.RenderAttributes(System.Web.UI.HtmlTextWriter)
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.HtmlControls.HtmlContainerControl.#ctor
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlContainerControl.InnerHtml
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

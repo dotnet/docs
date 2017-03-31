@@ -1,29 +1,55 @@
 ---
 uid: System.Data.Metadata.Edm.EdmItemCollection
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Metadata.Edm.EdmItemCollection.EdmVersion
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Metadata.Edm.EdmItemCollection.#ctor(System.String[])
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Metadata.Edm.EdmItemCollection.GetPrimitiveTypes
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Metadata.Edm.EdmItemCollection.GetPrimitiveTypes
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Metadata.Edm.EdmItemCollection.#ctor
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Metadata.Edm.EdmItemCollection.GetPrimitiveTypes(System.Double)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Metadata.Edm.EdmItemCollection.#ctor(System.Collections.Generic.IEnumerable{System.Xml.XmlReader})
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

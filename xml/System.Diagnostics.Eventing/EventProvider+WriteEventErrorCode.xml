@@ -10,8 +10,17 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the possible states of the last write operation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To get an instance of this enumeration, call the <xref:System.Diagnostics.Eventing.EventProvider.GetLastWriteEventError%2A?displayProperty=fullName> method.  
+  
+ The <xref:System.Diagnostics.Eventing.EventProvider.WriteEvent%2A?displayProperty=fullName>, <xref:System.Diagnostics.Eventing.EventProvider.WriteMessageEvent%2A?displayProperty=fullName>, and <xref:System.Diagnostics.Eventing.EventProvider.WriteTransferEvent%2A?displayProperty=fullName> methods set this value if they fail to write the event.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="EventTooBig">
@@ -27,7 +36,7 @@
         <ReturnType>System.Diagnostics.Eventing.EventProvider+WriteEventErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The event is larger than the session buffer size; events cannot span buffers.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoError">
@@ -43,7 +52,7 @@
         <ReturnType>System.Diagnostics.Eventing.EventProvider+WriteEventErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The write was successful.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoFreeBuffers">
@@ -59,7 +68,7 @@
         <ReturnType>System.Diagnostics.Eventing.EventProvider+WriteEventErrorCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The session ran out of free buffers to write to. This can occur during high event rates because the disk subsystem is overloaded or the number of buffers is too small. Rather than blocking until more buffers become available, the event is dropped. Consider increasing the number and size of the buffers for the session, or reducing the number of events written or the size of the events.</summary>
       </Docs>
     </Member>
   </Members>

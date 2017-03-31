@@ -1,44 +1,65 @@
 ---
 uid: System.IdentityModel.Tokens.IssuerTokenResolver
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.IssuerTokenResolver.#ctor(System.IdentityModel.Selectors.SecurityTokenResolver)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.IssuerTokenResolver.TryResolveSecurityKeyCore(System.IdentityModel.Tokens.SecurityKeyIdentifierClause,System.IdentityModel.Tokens.SecurityKey@)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.IssuerTokenResolver.DefaultStoreLocation
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.IssuerTokenResolver.DefaultStoreName
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Tokens.IssuerTokenResolver.WrappedTokenResolver
-internalonly: False
----
-
----
-uid: System.IdentityModel.Tokens.IssuerTokenResolver.TryResolveTokenCore(System.IdentityModel.Tokens.SecurityKeyIdentifierClause,System.IdentityModel.Tokens.SecurityToken@)
-internalonly: False
+uid: System.IdentityModel.Tokens.IssuerTokenResolver.TryResolveTokenCore
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.IssuerTokenResolver.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.IssuerTokenResolver.WrappedTokenResolver
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.IssuerTokenResolver.TryResolveTokenCore(System.IdentityModel.Tokens.SecurityKeyIdentifierClause,System.IdentityModel.Tokens.SecurityToken@)
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.IssuerTokenResolver.#ctor
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.IssuerTokenResolver.TryResolveTokenCore(System.IdentityModel.Tokens.SecurityKeyIdentifier,System.IdentityModel.Tokens.SecurityToken@)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

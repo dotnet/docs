@@ -1,354 +1,503 @@
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.MouseMove
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.Click
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.KeyDown
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.CheckedChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.MouseLeave
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.PaddingChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.QueryAccessibilityHelp
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.ForeColorChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.StyleChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.ControlAdded
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.GetControlInstanceType
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.MouseCaptureChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.RightToLeftChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.AppearanceChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.ResetIndex(System.Windows.Forms.RadioButton)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.Validated
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.CanExtend(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.KeyPress
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.MouseUp
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.KeyUp
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.SystemColorsChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.Paint
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.BindingContextChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.CursorChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.DragOver
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.HelpRequested
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.LocationChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.Item(System.Int16)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.ChangeUICues
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.TabIndexChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.TextChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.BackColorChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.VisibleChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.EnabledChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.HookUpControlEvents(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.SetIndex(System.Windows.Forms.RadioButton,System.Int16)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.BackgroundImageLayoutChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.ShouldSerializeIndex(System.Windows.Forms.RadioButton)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.BackgroundImageChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.#ctor(System.ComponentModel.IContainer)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.DragEnter
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.ControlRemoved
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.Enter
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.MarginChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.MouseEnter
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.DockChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.ContextMenuChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.SizeChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.GetIndex(System.Windows.Forms.RadioButton)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.ContextMenuStripChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.RegionChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.Validating
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.Layout
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.FontChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.ParentChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.TabStopChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.MouseHover
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.ClientSizeChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.GiveFeedback
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.AutoSizeChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.Leave
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.MouseClick
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.DragDrop
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.Resize
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.QueryContinueDrag
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.CausesValidationChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.DragLeave
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.MouseDown
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.Move
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

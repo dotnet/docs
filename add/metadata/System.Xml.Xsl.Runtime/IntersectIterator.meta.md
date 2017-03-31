@@ -1,19 +1,27 @@
 ---
 uid: System.Xml.Xsl.Runtime.IntersectIterator
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Xsl.Runtime.IntersectIterator.MoveNext(System.Xml.XPath.XPathNavigator)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Xsl.Runtime.IntersectIterator.Create(System.Xml.Xsl.Runtime.XmlQueryRuntime)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Xsl.Runtime.IntersectIterator.Current
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

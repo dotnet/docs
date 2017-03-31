@@ -1,4 +1,0 @@
-        if (Response.StatusDescription != "OK")
-        {
-            // ...
-        }

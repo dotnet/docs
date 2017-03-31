@@ -1,44 +1,65 @@
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogWatcher
-internalonly: False
----
-
----
-uid: System.Diagnostics.Eventing.Reader.EventLogWatcher.#ctor(System.String)
-internalonly: False
----
-
----
-uid: System.Diagnostics.Eventing.Reader.EventLogWatcher.Dispose(System.Boolean)
-internalonly: False
----
-
----
-uid: System.Diagnostics.Eventing.Reader.EventLogWatcher.#ctor(System.Diagnostics.Eventing.Reader.EventLogQuery)
-internalonly: False
----
-
----
-uid: System.Diagnostics.Eventing.Reader.EventLogWatcher.Enabled
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogWatcher.Dispose
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.EventLogWatcher.#ctor(System.String)
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.EventLogWatcher.Dispose(System.Boolean)
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.EventLogWatcher.#ctor(System.Diagnostics.Eventing.Reader.EventLogQuery)
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.EventLogWatcher.Enabled
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.EventLogWatcher.Dispose
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogWatcher.#ctor(System.Diagnostics.Eventing.Reader.EventLogQuery,System.Diagnostics.Eventing.Reader.EventBookmark,System.Boolean)
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.EventLogWatcher.#ctor
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogWatcher.#ctor(System.Diagnostics.Eventing.Reader.EventLogQuery,System.Diagnostics.Eventing.Reader.EventBookmark)
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogWatcher.EventRecordWritten
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---

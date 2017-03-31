@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the overall quality when rendering GDI+ objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The quality level is inversely proportional to the amount of time spent rendering. This mode does not affect text. To set the text rendering quality, use the <xref:System.Drawing.Text.TextRenderingHint> enumeration.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Default">
@@ -27,7 +34,7 @@
         <ReturnType>System.Drawing.Drawing2D.QualityMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the default mode.</summary>
       </Docs>
     </Member>
     <Member MemberName="High">
@@ -43,7 +50,7 @@
         <ReturnType>System.Drawing.Drawing2D.QualityMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies high quality, low speed rendering.</summary>
       </Docs>
     </Member>
     <Member MemberName="Invalid">
@@ -59,7 +66,7 @@
         <ReturnType>System.Drawing.Drawing2D.QualityMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies an invalid mode.</summary>
       </Docs>
     </Member>
     <Member MemberName="Low">
@@ -75,7 +82,7 @@
         <ReturnType>System.Drawing.Drawing2D.QualityMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies low quality, high speed rendering.</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,29 +1,35 @@
 ---
 uid: System.Web.UI.WebControls.GridViewUpdateEventArgs
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.GridViewUpdateEventArgs.RowIndex
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.GridViewUpdateEventArgs.Keys
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.GridViewUpdateEventArgs.#ctor(System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.GridViewUpdateEventArgs.NewValues
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.GridViewUpdateEventArgs.OldValues
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

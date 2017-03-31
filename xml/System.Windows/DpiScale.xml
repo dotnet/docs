@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Stores DPI information from which a <see cref="T:System.Windows.Media.Visual" /> or <see cref="T:System.Windows.UIElement" /> is rendered.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,9 +29,9 @@
         <Parameter Name="dpiScaleY" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="dpiScaleX">To be added.</param>
-        <param name="dpiScaleY">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="dpiScaleX">The DPI scale on the X axis.</param>
+        <param name="dpiScaleY">The DPI scale on the Y axis.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.DpiScale" /> structure.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,9 +48,16 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the DPI scale on the X axis.</summary>
+        <value>The DPI scale for the X axis.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For example, if the DPI is 120 , DpiScaleX would be 1.25 (120/96).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DpiScaleY">
@@ -66,9 +73,16 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the DPI scale on the Yaxis.</summary>
+        <value>The DPI scale for the Y axis.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ DpiScaleY is always equal to the DpiScaleX, but still, the values are stored in separate properties.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PixelsPerDip">
@@ -84,8 +98,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Get or sets the PixelsPerDip at which the text should be rendered.</summary>
+        <value>The current <see cref="P:System.Windows.DpiScale.PixelsPerDip" /> value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,9 +116,16 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the DPI along X axis.</summary>
+        <value>The DPI along the X axis.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.DpiScale.PixelsPerInchX%2A> and <xref:System.Windows.DpiScale.PixelsPerInchY%2A> reference the number of pixels that are drawn within an inch on the screen.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PixelsPerInchY">
@@ -120,9 +141,16 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the DPI along Y axis.</summary>
+        <value>The DPI along the Y axis.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.DpiScale.PixelsPerInchX%2A> and <xref:System.Windows.DpiScale.PixelsPerInchY%2A> reference the number of pixels that are drawn within an inch on the screen.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

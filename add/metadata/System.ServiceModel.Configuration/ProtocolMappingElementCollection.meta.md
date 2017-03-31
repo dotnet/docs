@@ -1,9 +1,13 @@
 ---
 uid: System.ServiceModel.Configuration.ProtocolMappingElementCollection
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.ProtocolMappingElementCollection.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a <see cref="T:System.Windows.Automation.Condition" /> that is the negative of a specified <see cref="T:System.Windows.Automation.Condition" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,9 +28,19 @@
         <Parameter Name="condition" Type="System.Windows.Automation.Condition" />
       </Parameters>
       <Docs>
-        <param name="condition">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="condition">The condition to negate.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.NotCondition" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ In the following example, a <xref:System.Windows.Automation.NotCondition> is used to retrieve all elements that were not retrieved using another <xref:System.Windows.Automation.Condition>.  
+  
+ [!code-csharp[UIAClient_snip#177](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ConditionSnips.cs#177)]
+ [!code-vb[UIAClient_snip#177](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ConditionSnips.vb#177)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Condition">
@@ -46,8 +56,8 @@
         <ReturnType>System.Windows.Automation.Condition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Windows.Automation.Condition" /> that this <see cref="T:System.Windows.Automation.NotCondition" /> negates.</summary>
+        <value>The <see cref="T:System.Windows.Automation.Condition" /> that this <see cref="T:System.Windows.Automation.NotCondition" /> negates.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

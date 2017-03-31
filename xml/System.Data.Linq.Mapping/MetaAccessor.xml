@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents an accessor to a member.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Linq.Mapping.MetaAccessor" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,9 +46,9 @@
         <Parameter Name="instance" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instance">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="instance">The instance from which to get the value or on which to set the value.</param>
+        <summary>Specifies an object on which to set a value or from which to get a value.</summary>
+        <returns>The boxed value of this instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,9 +68,10 @@
         <Parameter Name="instance" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instance">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="instance">The instance being looked at.</param>
+        <summary>Specifies whether the instance has an assigned value.</summary>
+        <returns>
+          <see langword="true" /> if the instance currently has an assigned value; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,9 +91,10 @@
         <Parameter Name="instance" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instance">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="instance">The instance being looked at.</param>
+        <summary>Specifies whether the instance has a value loaded from a deferred source.</summary>
+        <returns>
+          <see langword="true" /> if the instance currently has a value loaded from a deferred source; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,9 +114,10 @@
         <Parameter Name="instance" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instance">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="instance">The instance being looked at.</param>
+        <summary>Specifies whether the instance has a loaded or assigned value.</summary>
+        <returns>
+          <see langword="true" /> if the instance currently has a loaded or assigned value; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,9 +138,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instance">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instance">The instance into which to set the value.</param>
+        <param name="value">The value to set.</param>
+        <summary>Sets the value as an object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,8 +157,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type of the member accessed by this accessor.</summary>
+        <value>The type of the member.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

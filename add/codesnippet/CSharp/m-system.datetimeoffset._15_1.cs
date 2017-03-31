@@ -1,1 +1,0 @@
-      return this.UtcDateTime == other.UtcDateTime;

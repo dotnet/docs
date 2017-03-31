@@ -1,19 +1,27 @@
 ---
 uid: System.Workflow.ComponentModel.Compiler.WorkflowMarkupSourceAttribute
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Compiler.WorkflowMarkupSourceAttribute.#ctor(System.String,System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Compiler.WorkflowMarkupSourceAttribute.MD5Digest
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Compiler.WorkflowMarkupSourceAttribute.FileName
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

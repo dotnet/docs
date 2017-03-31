@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents information about the functions that may be invoked from the queries written by the Entity SQL query language. These may be the built-in functions exposed by the storage provider or user-defined functions in a particular database.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the built-in type kind for this <see cref="T:System.Data.Metadata.Edm.EdmFunction" />.</summary>
+        <value>One of the enumeration values of the <see cref="T:System.Data.Metadata.Edm.BuiltInTypeKind" /> enumeration.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a query in the language that is used by the database management system or storage model.</summary>
+        <value>A string value in the syntax used by the database management system or storage model that contains the query or update statement of the <see cref="T:System.Data.Metadata.Edm.EdmFunction" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +64,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the full name (namespace plus name) of this type.</summary>
+        <value>The full name of the type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +82,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets whether this instance is mapped to a function or to a stored procedure.</summary>
+        <value>
+          <see langword="true" /> if this instance is mapped to a function; <see langword="false" /> if this instance is mapped to a stored procedure.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,8 +101,8 @@
         <ReturnType>System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;System.Data.Metadata.Edm.FunctionParameter&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the parameters of this <see cref="T:System.Data.Metadata.Edm.EdmFunction" />.</summary>
+        <value>A collection of type <see cref="T:System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1" /> that contains the parameters of this <see cref="T:System.Data.Metadata.Edm.EdmFunction" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,8 +119,8 @@
         <ReturnType>System.Data.Metadata.Edm.FunctionParameter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the return parameter of this <see cref="T:System.Data.Metadata.Edm.EdmFunction" />.</summary>
+        <value>A <see cref="T:System.Data.Metadata.Edm.FunctionParameter" /> object that represents the return parameter of this <see cref="T:System.Data.Metadata.Edm.EdmFunction" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,8 +137,8 @@
         <ReturnType>System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;System.Data.Metadata.Edm.FunctionParameter&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the return parameters of this <see cref="T:System.Data.Metadata.Edm.EdmFunction" />.</summary>
+        <value>A collection of type <see cref="T:System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1" /> that represents the return parameters of this <see cref="T:System.Data.Metadata.Edm.EdmFunction" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

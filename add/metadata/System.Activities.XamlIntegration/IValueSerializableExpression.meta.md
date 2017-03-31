@@ -1,14 +1,20 @@
 ---
 uid: System.Activities.XamlIntegration.IValueSerializableExpression
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.XamlIntegration.IValueSerializableExpression.ConvertToString(System.Windows.Markup.IValueSerializerContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.XamlIntegration.IValueSerializableExpression.CanConvertToString(System.Windows.Markup.IValueSerializerContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

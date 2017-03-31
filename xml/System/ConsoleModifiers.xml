@@ -24,8 +24,26 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the SHIFT, ALT, and CTRL modifier keys on a keyboard.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No distinction is made between the left or right SHIFT, ALT, and CTRL keys.  
+  
+ The <xref:System.ConsoleModifiers> enumeration is used in conjunction with the <xref:System.ConsoleKeyInfo> type.  
+  
+   
+  
+## Examples  
+ The following code example reads a key and determines whether one or more modifier keys was pressed.  
+  
+ [!code-cpp[console.readkey1#1](~/samples/snippets/cpp/VS_Snippets_CLR/console.readkey1/CPP/rk.cpp#1)]
+ [!code-csharp[console.readkey1#1](~/samples/snippets/csharp/VS_Snippets_CLR/console.readkey1/CS/rk.cs#1)]
+ [!code-vb[console.readkey1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/console.readkey1/VB/rk.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Alt">
@@ -50,7 +68,7 @@
         <ReturnType>System.ConsoleModifiers</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The left or right ALT modifier key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Control">
@@ -75,7 +93,7 @@
         <ReturnType>System.ConsoleModifiers</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The left or right CTRL modifier key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Shift">
@@ -100,7 +118,7 @@
         <ReturnType>System.ConsoleModifiers</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The left or right SHIFT modifier key.</summary>
       </Docs>
     </Member>
   </Members>

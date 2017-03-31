@@ -16,8 +16,27 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a selectable <see cref="T:System.Windows.Forms.ToolStripItem" /> that can contain text and images.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Windows.Forms.ToolStripButton> to create a toolbar button that supports both text and images. Use the <xref:System.Windows.Forms.ToolStripItem.ImageAlign%2A?displayProperty=fullName> and <xref:System.Windows.Forms.ToolStripItem.TextAlign%2A?displayProperty=fullName> properties to get or set the positioning of <xref:System.Windows.Forms.ToolStripButton> images and text.  
+  
+ You can display a <xref:System.Windows.Forms.ToolStripButton> with various border styles, and you can use it to represent and activate operational states. You can also define it to have the focus by default.  
+  
+ Although <xref:System.Windows.Forms.ToolStripButton> replaces and extends the <xref:System.Windows.Forms.ToolBarButton> control of previous versions, <xref:System.Windows.Forms.ToolBarButton> is retained for both backward compatibility and future use.  
+  
+   
+  
+## Examples  
+ The following code example shows two <xref:System.Windows.Forms.ToolStripButton> controls with both image and text on a <xref:System.Windows.Forms.ToolStrip>. Clicking the **New**<xref:System.Windows.Forms.ToolStripButton> displays a message box.  
+  
+ [!code-csharp[System.Windows.Forms.ToolStripButton#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripButton/cs/Form1.cs#1)]
+ [!code-vb[System.Windows.Forms.ToolStripButton#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripButton/vb/Form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +50,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripButton" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,9 +67,16 @@
         <Parameter Name="image" Type="System.Drawing.Image" />
       </Parameters>
       <Docs>
-        <param name="image">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="image">The image to display on the <see cref="T:System.Windows.Forms.ToolStripButton" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripButton" /> class that displays the specified image.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create a <xref:System.Windows.Forms.ToolStripButton> that displays only an image on the <xref:System.Windows.Forms.ToolStripButton>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -66,9 +92,16 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="text">The text to display on the <see cref="T:System.Windows.Forms.ToolStripButton" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripButton" /> class that displays the specified text.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create a <xref:System.Windows.Forms.ToolStripButton> that displays only text on the <xref:System.Windows.Forms.ToolStripButton>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -85,10 +118,17 @@
         <Parameter Name="image" Type="System.Drawing.Image" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <param name="image">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="text">The text to display on the <see cref="T:System.Windows.Forms.ToolStripButton" />.</param>
+        <param name="image">The image to display on the <see cref="T:System.Windows.Forms.ToolStripButton" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripButton" /> class that displays the specified text and image.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create a <xref:System.Windows.Forms.ToolStripButton> that displays both an image and text.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -106,11 +146,18 @@
         <Parameter Name="onClick" Type="System.EventHandler" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <param name="image">To be added.</param>
-        <param name="onClick">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="text">The text to display on the <see cref="T:System.Windows.Forms.ToolStripButton" />.</param>
+        <param name="image">The image to display on the <see cref="T:System.Windows.Forms.ToolStripButton" />.</param>
+        <param name="onClick">An event handler that raises the <see cref="E:System.Windows.Forms.ToolStripItem.Click" /> event.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripButton" /> class that displays the specified text and image and that raises the <see cref="E:System.Windows.Forms.ToolStripItem.Click" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create a <xref:System.Windows.Forms.ToolStripButton> that displays both an image and text and raises the <xref:System.Windows.Forms.ToolStripItem.Click> event when clicked.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -129,12 +176,19 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <param name="image">To be added.</param>
-        <param name="onClick">To be added.</param>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="text">The text to display on the <see cref="T:System.Windows.Forms.ToolStripButton" />.</param>
+        <param name="image">The image to display on the <see cref="T:System.Windows.Forms.ToolStripButton" />.</param>
+        <param name="onClick">An event handler that raises the <see cref="E:System.Windows.Forms.ToolStripItem.Click" /> event.</param>
+        <param name="name">The name of the <see cref="T:System.Windows.Forms.ToolStripButton" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripButton" /> class with the specified name that displays the specified text and image and that raises the <see cref="E:System.Windows.Forms.ToolStripItem.Click" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create a <xref:System.Windows.Forms.ToolStripButton> with the specified name that displays both an image and text and raises the <xref:System.Windows.Forms.ToolStripItem.Click> event when clicked.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoToolTip">
@@ -155,9 +209,25 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether default or custom <see cref="T:System.Windows.Forms.ToolTip" /> text is displayed on the <see cref="T:System.Windows.Forms.ToolStripButton" />.</summary>
+        <value>
+          <see langword="true" /> if default <see cref="T:System.Windows.Forms.ToolTip" /> text is displayed; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Set the <xref:System.Windows.Forms.ToolStripButton.AutoToolTip%2A> property to `false` to display custom <xref:System.Windows.Forms.ToolStripItem.ToolTipText%2A> on a <xref:System.Windows.Forms.ToolStripItem>.  
+  
+   
+  
+## Examples  
+ The following code example turns off the automatic <xref:System.Windows.Forms.ToolTip> text for a <xref:System.Windows.Forms.ToolStripButton> and sets custom <xref:System.Windows.Forms.ToolStripItem.ToolTipText%2A>.  
+  
+ [!code-csharp[System.Windows.Forms.ToolStripToolTip#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripToolTip/cs/Form1.cs#1)]
+ [!code-vb[System.Windows.Forms.ToolStripToolTip#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripToolTip/vb/Form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CanSelect">
@@ -173,8 +243,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the <see cref="T:System.Windows.Forms.ToolStripButton" /> can be selected.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Forms.ToolStripButton" /> can be selected; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -196,9 +267,21 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether the <see cref="T:System.Windows.Forms.ToolStripButton" /> is pressed or not pressed.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Forms.ToolStripButton" /> is pressed in or not pressed in; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example sets the <xref:System.Windows.Forms.ToolStripButton.CheckOnClick%2A> property to `true` and uses the <xref:System.Windows.Forms.ToolStripButton.Checked%2A> property in a <xref:System.Windows.Forms.ToolStripButton.CheckedChanged> event to change the font of the button text to bold when the button is clicked.  
+  
+ [!code-cpp[System.Windows.Forms.ToolStrip1#50](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/CPP/form1.cpp#50)]
+ [!code-csharp[System.Windows.Forms.ToolStrip1#50](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/CS/form1.cs#50)]
+ [!code-vb[System.Windows.Forms.ToolStrip1#50](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/VB/form1.vb#50)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CheckedChanged">
@@ -214,8 +297,24 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.ToolStripButton.Checked" /> property changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
+  
+   
+  
+## Examples  
+ The following code example sets the <xref:System.Windows.Forms.ToolStripButton.CheckOnClick%2A> property to `true` and uses the <xref:System.Windows.Forms.ToolStripButton.Checked%2A> property in a <xref:System.Windows.Forms.ToolStripButton.CheckedChanged> event to change the font of the button text to bold when the button is clicked.  
+  
+ [!code-cpp[System.Windows.Forms.ToolStrip1#50](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/CPP/form1.cpp#50)]
+ [!code-csharp[System.Windows.Forms.ToolStrip1#50](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/CS/form1.cs#50)]
+ [!code-vb[System.Windows.Forms.ToolStrip1#50](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/VB/form1.vb#50)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CheckOnClick">
@@ -236,9 +335,21 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether the <see cref="T:System.Windows.Forms.ToolStripButton" /> should automatically appear pressed in and not pressed in when clicked.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Forms.ToolStripButton" /> should automatically appear pressed in and not pressed in when clicked; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example sets the <xref:System.Windows.Forms.ToolStripButton.CheckOnClick%2A> property to `true` and uses the <xref:System.Windows.Forms.ToolStripButton.Checked%2A> property in a <xref:System.Windows.Forms.ToolStripButton.CheckedChanged> event to change the font of the button text to bold when the button is clicked.  
+  
+ [!code-cpp[System.Windows.Forms.ToolStrip1#50](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/CPP/form1.cpp#50)]
+ [!code-csharp[System.Windows.Forms.ToolStrip1#50](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/CS/form1.cs#50)]
+ [!code-vb[System.Windows.Forms.ToolStrip1#50](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/VB/form1.vb#50)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CheckState">
@@ -259,9 +370,17 @@
         <ReturnType>System.Windows.Forms.CheckState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether the <see cref="T:System.Windows.Forms.ToolStripButton" /> is in the pressed or not pressed state by default, or is in an indeterminate state.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.CheckState" /> values. The default is <see langword="Unchecked" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Set the <xref:System.Windows.Forms.ToolStripButton.CheckState%2A> to `Indeterminate` when you do not want to set a default state.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value assigned is not one of the <see cref="T:System.Windows.Forms.CheckState" /> values.</exception>
       </Docs>
     </Member>
     <Member MemberName="CheckStateChanged">
@@ -277,8 +396,25 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.ToolStripButton.CheckState" /> property changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripButton.CheckStateChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripButton> named `ToolStripButton1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripButton.CheckStateChanged> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#568](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#568)]
+ [!code-vb[System.Windows.Forms.EventExamples#568](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#568)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateAccessibilityInstance">
@@ -300,9 +436,19 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a new accessibility object for the <see cref="T:System.Windows.Forms.ToolStripButton" />.</summary>
+        <returns>A new <see cref="T:System.Windows.Forms.AccessibleObject" /> for the <see cref="T:System.Windows.Forms.ToolStripButton" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you do not explicitly call <xref:System.Windows.Forms.ToolStripButton.CreateAccessibilityInstance%2A>, it will be called when the <xref:System.Windows.Forms.ToolStripItem.AccessibilityObject%2A> property is referenced.  
+  
+> [!NOTE]
+>  To get or set the <xref:System.Windows.Forms.ToolStripItem.AccessibilityObject%2A> property, you must add a reference to the `Accessibility` assembly installed with the .NET Framework.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultAutoToolTip">
@@ -318,8 +464,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether to display the ToolTip that is defined as the default.</summary>
+        <value>
+          <see langword="true" /> in all cases.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -339,9 +486,9 @@
         <Parameter Name="constrainingSize" Type="System.Drawing.Size" />
       </Parameters>
       <Docs>
-        <param name="constrainingSize">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="constrainingSize">The specified area for a <see cref="T:System.Windows.Forms.ToolStripButton" />.</param>
+        <summary>Retrieves the size of a rectangular area into which a <see cref="T:System.Windows.Forms.ToolStripButton" /> can be fitted.</summary>
+        <returns>An ordered pair of type <see cref="T:System.Drawing.Size" /> representing the width and height of a rectangle.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -361,9 +508,21 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripButton.CheckedChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
+  
+ The <xref:System.Windows.Forms.ToolStripButton.OnCheckedChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.ToolStripButton.OnCheckedChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ToolStripButton.OnCheckedChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="OnCheckStateChanged">
@@ -382,9 +541,21 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripButton.CheckStateChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
+  
+ The <xref:System.Windows.Forms.ToolStripButton.OnCheckStateChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.ToolStripButton.OnCheckStateChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ToolStripButton.OnCheckStateChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="OnClick">
@@ -403,9 +574,21 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Click" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
+  
+ The <xref:System.Windows.Forms.ToolStripButton.OnClick%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.ToolStripButton.OnClick(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ToolStripButton.OnClick(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="OnPaint">
@@ -424,9 +607,21 @@
         <Parameter Name="e" Type="System.Windows.Forms.PaintEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Paint" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
+  
+ The <xref:System.Windows.Forms.ToolStripButton.OnPaint%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.ToolStripButton.OnPaint(System.Windows.Forms.PaintEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ToolStripButton.OnPaint(System.Windows.Forms.PaintEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
       </Docs>
     </Member>
   </Members>

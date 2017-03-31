@@ -1,9 +1,13 @@
 ---
 uid: System.Security.Policy.IApplicationTrustManager
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Policy.IApplicationTrustManager.DetermineApplicationTrust(System.ActivationContext,System.Security.Policy.TrustManagerContext)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

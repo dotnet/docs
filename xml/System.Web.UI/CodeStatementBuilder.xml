@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Generates Code DOM statements.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the CodeStatementBuilder class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,9 +46,9 @@
         <Parameter Name="writerReferenceExpression" Type="System.CodeDom.CodeArgumentReferenceExpression" />
       </Parameters>
       <Docs>
-        <param name="writerReferenceExpression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="writerReferenceExpression">Represents a reference to the value of an argument.</param>
+        <summary>Builds a <see cref="T:System.CodeDom.CodeStatement" /> object for a generated Render method.</summary>
+        <returns>An object that represents a code statement.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

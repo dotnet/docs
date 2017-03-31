@@ -15,8 +15,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies how much of the X.509 certificate chain should be included in the X.509 data.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration specifies how much of the certificate chain to include in X.509 data. You can choose to include the end certificate only; the whole chain; or the whole chain except the root certificate, which is the default.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="EndCertOnly">
@@ -37,7 +44,7 @@
         <ReturnType>System.Security.Cryptography.X509Certificates.X509IncludeOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Only the end certificate is included in the X.509 chain information.</summary>
       </Docs>
     </Member>
     <Member MemberName="ExcludeRoot">
@@ -58,7 +65,7 @@
         <ReturnType>System.Security.Cryptography.X509Certificates.X509IncludeOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The entire X.509 chain is included except for the root certificate.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -79,7 +86,7 @@
         <ReturnType>System.Security.Cryptography.X509Certificates.X509IncludeOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No X.509 chain information is included.</summary>
       </Docs>
     </Member>
     <Member MemberName="WholeChain">
@@ -100,7 +107,7 @@
         <ReturnType>System.Security.Cryptography.X509Certificates.X509IncludeOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The entire X.509 chain is included.</summary>
       </Docs>
     </Member>
   </Members>

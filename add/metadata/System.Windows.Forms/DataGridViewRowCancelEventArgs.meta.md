@@ -1,14 +1,19 @@
 ---
 uid: System.Windows.Forms.DataGridViewRowCancelEventArgs
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCancelEventArgs.Row
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowCancelEventArgs.#ctor(System.Windows.Forms.DataGridViewRow)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

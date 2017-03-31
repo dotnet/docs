@@ -1,24 +1,34 @@
 ---
 uid: System.Diagnostics.Tracing.EventSourceAttribute
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.Tracing.EventSourceAttribute.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.Tracing.EventSourceAttribute.LocalizationResources
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.Tracing.EventSourceAttribute.Name
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.Tracing.EventSourceAttribute.Guid
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

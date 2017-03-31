@@ -1,24 +1,34 @@
 ---
 uid: System.Web.Services.Protocols.TextReturnReader
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Protocols.TextReturnReader.Read(System.Net.WebResponse,System.IO.Stream)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Protocols.TextReturnReader.GetInitializer(System.Web.Services.Protocols.LogicalMethodInfo)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Protocols.TextReturnReader.Initialize(System.Object)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Protocols.TextReturnReader.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

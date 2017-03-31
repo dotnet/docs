@@ -1,14 +1,20 @@
 ---
 uid: System.Runtime.InteropServices.ITypeLibImporterNotifySink
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.ITypeLibImporterNotifySink.ResolveRef(System.Object)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.ITypeLibImporterNotifySink.ReportEvent(System.Runtime.InteropServices.ImporterEventKind,System.Int32,System.String)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

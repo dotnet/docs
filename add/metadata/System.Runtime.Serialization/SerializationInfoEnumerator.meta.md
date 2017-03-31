@@ -1,39 +1,41 @@
 ---
 uid: System.Runtime.Serialization.SerializationInfoEnumerator
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.SerializationInfoEnumerator.System#Collections#IEnumerator#Current
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.Serialization.SerializationInfoEnumerator.MoveNext
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.SerializationInfoEnumerator.Current
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.SerializationInfoEnumerator.Name
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.SerializationInfoEnumerator.Reset
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.SerializationInfoEnumerator.Value
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.SerializationInfoEnumerator.ObjectType
-internalonly: False
+manager: "ghogen"
 ---

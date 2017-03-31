@@ -1,39 +1,53 @@
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogException
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogException.#ctor(System.String,System.Exception)
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogException.#ctor(System.String)
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogException.#ctor
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogException.Message
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.EventLogException.#ctor
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogException.#ctor(System.Int32)
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---

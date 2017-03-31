@@ -8,8 +8,15 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a property that returns a description of all of the correlation data that a channel can supply.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By implementing this interface, a channel indicates that it is registering to provide correlation data.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="DataSources">
@@ -25,8 +32,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.ServiceModel.Channels.CorrelationDataDescription&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection that contains a description of all of the correlation data that a channel can supply.</summary>
+        <value>The correlation data descriptions.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the configuration element that provides additional configuration settings to connection-oriented transport binding elements, such as TCP and named pipes.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,8 +31,8 @@
         <Parameter Name="bindingElement" Type="System.ServiceModel.Channels.BindingElement" />
       </Parameters>
       <Docs>
-        <param name="bindingElement">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="bindingElement">A binding element.</param>
+        <summary>Applies the content of a specified binding element to this binding configuration element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,8 +57,8 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the maximum time the channel can be in the initialization status before being disconnected.</summary>
+        <value>A <see cref="T:System.TimeSpan" /> structure that specifies the maximum time the channel can be in the initialization status before being disconnected.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,9 +83,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the size of the buffer used to transmit a part of the serialized message on the wire from the client or service.</summary>
+        <value>The size of the buffer used to transmit a part of the serialized message on the wire from the client or service. The default value is 8K.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This value can be changed to provide better throughput based on average message sizes and exchange patterns.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyFrom">
@@ -104,8 +111,8 @@
         <Parameter Name="from" Type="System.ServiceModel.Configuration.ServiceModelExtensionElement" />
       </Parameters>
       <Docs>
-        <param name="from">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="from">The configuration element to be copied.</param>
+        <summary>Copies the content of the specified configuration element to this configuration element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -127,8 +134,8 @@
         <ReturnType>System.ServiceModel.HostNameComparisonMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether the hostname is used to reach the service when matching on the URI.</summary>
+        <value>A valid <see cref="P:System.ServiceModel.Configuration.WSDualHttpBindingElement.HostNameComparisonMode" /> value that indicates whether the hostname is included when routing incoming requests to an endpoint URI. The default value is <see cref="F:System.ServiceModel.HostNameComparisonMode.StrongWildcard" /> , which ignores the hostname in the match.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -148,8 +155,8 @@
         <Parameter Name="bindingElement" Type="System.ServiceModel.Channels.BindingElement" />
       </Parameters>
       <Docs>
-        <param name="bindingElement">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="bindingElement">A binding element.</param>
+        <summary>Initializes this binding configuration element with the content of the specified binding element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -174,9 +181,22 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the maximum size of the buffer to use.</summary>
+        <value>The maximum number of bytes that are used to buffer incoming messages in memory. The default value is 65,536 bytes.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property only applies to the headers of streamed messages.  
+  
+ This value should be at least the maximum possible size of the SOAP headers, which are read in buffered mode.  
+  
+ The value of this property must be less than or equal to MaxMessageSize and must be larger than the size of the headers of the message. Otherwise, the channel throws an exception.  
+  
+ If you receive more data than you can buffer, the channel throws a <xref:System.ServiceModel.CommunicationException>, which contains <xref:System.ServiceModel.QuotaExceededException> as an inner exception.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxOutputDelay">
@@ -200,8 +220,8 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the maximum interval of time that a part of a message or a full message can remain buffered in memory before being sent out.</summary>
+        <value>A <see cref="T:System.TimeSpan" /> that specifies the maximum interval of time that a part of a message or a full message can remain buffered in memory before being sent out. The default value is 200 milliseconds.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -226,9 +246,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the maximum number of pending asynchronous accept threads that are available for processing incoming connections on the service.</summary>
+        <value>The maximum number of pending messages the service can accept. The default value is 1.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you anticipate high levels of simultaneous connections, you should adjust this property to handle higher levels of concurrent client connections.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxPendingConnections">
@@ -252,9 +279,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the maximum number of pending connections.</summary>
+        <value>The maximum number of pending connections.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is 100.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -270,8 +304,8 @@
         <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.Configuration.ConfigurationPropertyCollection" /> instance that contains a collection of <see cref="T:System.Configuration.ConfigurationProperty" /> objects that can be attributes or <see cref="T:System.Configuration.ConfigurationElement" /> objects of this configuration element.</summary>
+        <value>A <see cref="T:System.Configuration.ConfigurationPropertyCollection" /> instance that contains a collection of <see cref="T:System.Configuration.ConfigurationProperty" /> objects that can be attributes or <see cref="T:System.Configuration.ConfigurationElement" /> objects of this configuration element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -293,8 +327,8 @@
         <ReturnType>System.ServiceModel.TransferMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that specifies whether the messages are buffered or streamed with the connection-oriented transport.</summary>
+        <value>A valid <see cref="T:System.ServiceModel.TransferMode" /> value that specifies whether a channel uses streamed or buffered modes of message transfer. The default is <see cref="F:System.ServiceModel.TransferMode.Buffered" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

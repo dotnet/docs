@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.AsyncPostBackErrorEventArgs
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.AsyncPostBackErrorEventArgs.Exception
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.AsyncPostBackErrorEventArgs.#ctor(System.Exception)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

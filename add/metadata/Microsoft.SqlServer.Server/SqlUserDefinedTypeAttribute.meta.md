@@ -1,39 +1,39 @@
 ---
 uid: Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute
-internalonly: False
+manager: "mblythe"
 ---
 
 ---
 uid: Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute.ValidationMethodName
-internalonly: False
+manager: "mblythe"
 ---
 
 ---
 uid: Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute.Format
-internalonly: False
+manager: "mblythe"
 ---
 
 ---
 uid: Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute.IsFixedLength
-internalonly: False
+manager: "mblythe"
 ---
 
 ---
 uid: Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute.Name
-internalonly: False
+manager: "mblythe"
 ---
 
 ---
 uid: Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute.IsByteOrdered
-internalonly: False
+manager: "mblythe"
 ---
 
 ---
 uid: Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute.MaxByteSize
-internalonly: False
+manager: "mblythe"
 ---
 
 ---
 uid: Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute.#ctor(Microsoft.SqlServer.Server.Format)
-internalonly: False
+manager: "mblythe"
 ---

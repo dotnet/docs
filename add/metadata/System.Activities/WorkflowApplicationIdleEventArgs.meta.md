@@ -1,9 +1,13 @@
 ---
 uid: System.Activities.WorkflowApplicationIdleEventArgs
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.WorkflowApplicationIdleEventArgs.Bookmarks
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

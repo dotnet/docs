@@ -1,9 +1,11 @@
 ---
 uid: Microsoft.VisualC.NeedsCopyConstructorModifier
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.NeedsCopyConstructorModifier.#ctor
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---

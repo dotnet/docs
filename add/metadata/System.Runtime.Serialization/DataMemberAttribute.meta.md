@@ -1,34 +1,48 @@
 ---
 uid: System.Runtime.Serialization.DataMemberAttribute
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.Serialization.DataMemberAttribute.Order
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.Serialization.DataMemberAttribute.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.Serialization.DataMemberAttribute.IsRequired
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.Serialization.DataMemberAttribute.Name
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.Serialization.DataMemberAttribute.IsNameSetExplicitly
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the display state of an element.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Elements that have a <xref:System.Windows.UIElement.Visibility%2A> value of Collapsed do not occupy any layout space. By default, elements are Visible.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Collapsed">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Visibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Do not display the element, and do not reserve space for it in layout.</summary>
       </Docs>
     </Member>
     <Member MemberName="Hidden">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Visibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Do not display the element, but reserve space for the element in layout.</summary>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.Visibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Display the element.</summary>
       </Docs>
     </Member>
   </Members>

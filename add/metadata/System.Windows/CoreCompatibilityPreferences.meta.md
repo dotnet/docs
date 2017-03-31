@@ -1,14 +1,20 @@
 ---
 uid: System.Windows.CoreCompatibilityPreferences
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.CoreCompatibilityPreferences.EnableMultiMonitorDisplayClipping
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.CoreCompatibilityPreferences.IsAltKeyRequiredInAccessKeyDefaultScope
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

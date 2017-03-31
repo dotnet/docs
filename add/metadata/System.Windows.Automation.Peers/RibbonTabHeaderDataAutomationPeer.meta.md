@@ -1,29 +1,39 @@
 ---
 uid: System.Windows.Automation.Peers.RibbonTabHeaderDataAutomationPeer
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonTabHeaderDataAutomationPeer.GetAutomationControlTypeCore
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonTabHeaderDataAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonTabHeaderDataAutomationPeer.IsContentElementCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonTabHeaderDataAutomationPeer.GetClassNameCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonTabHeaderDataAutomationPeer.#ctor(System.Object,System.Windows.Automation.Peers.RibbonTabHeaderItemsControlAutomationPeer)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

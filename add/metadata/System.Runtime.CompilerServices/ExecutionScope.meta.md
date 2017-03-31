@@ -1,34 +1,48 @@
 ---
 uid: System.Runtime.CompilerServices.ExecutionScope
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.CompilerServices.ExecutionScope.Globals
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.CompilerServices.ExecutionScope.Parent
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.CompilerServices.ExecutionScope.IsolateExpression(System.Linq.Expressions.Expression,System.Object[])
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.CompilerServices.ExecutionScope.Locals
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.CompilerServices.ExecutionScope.CreateHoistedLocals
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.CompilerServices.ExecutionScope.CreateDelegate(System.Int32,System.Object[])
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

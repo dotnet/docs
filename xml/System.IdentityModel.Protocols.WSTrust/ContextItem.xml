@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the auth:ContextItem element defined in the authorization extensions to WS-Trust. These extensions are defined in the WS-Federation specification.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The auth:ContextItem element is a subelement of the auth:AdditionalContext element that is represented by the <xref:System.IdentityModel.Protocols.WSTrust.AdditionalContext> class.  
+  
+ For more information about the element that this class represents, see the WS-Federation specification.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,9 +37,20 @@
         <Parameter Name="name" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="name">A <see cref="T:System.Uri" /> that indicates the context item name.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.ContextItem" /> class with the specified Name URI.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Protocols.WSTrust.ContextItem.Value%2A> property and the <xref:System.IdentityModel.Protocols.WSTrust.ContextItem.Scope%2A> property are set to `null` in the new instance.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNull">
+          <paramref name="name" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Argument">
+          <paramref name="name" /> is not an absolute URI.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -47,10 +67,21 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="name">A <see cref="T:System.Uri" /> that indicates the context item name.</param>
+        <param name="value">The context item value. Can be <see langword="null" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.ContextItem" /> class with the specified Name URI and value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Protocols.WSTrust.ContextItem.Scope%2A> property is set to `null` in the new instance.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNull">
+          <paramref name="name" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Argument">
+          <paramref name="name" /> is not an absolute URI.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -68,11 +99,19 @@
         <Parameter Name="scope" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="scope">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">A <see cref="T:System.Uri" /> that indicates the context item name.</param>
+        <param name="value">The context item value. Can be <see langword="null" />.</param>
+        <param name="scope">The context item scope. Can be <see langword="null" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.ContextItem" /> class with the specified Name URI, value, and Scope URI.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNull">
+          <paramref name="name" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Argument">
+          <paramref name="name" /> is not an absolute URI.  
+  
+ -or-  
+  
+ <paramref name="scope" /> is not <see langword="null" /> and is not an absolute URI.</exception>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -88,8 +127,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the Name URI.</summary>
+        <value>A <see cref="T:System.Uri" /> that contains the value of the Name attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,9 +145,10 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the Scope URI.</summary>
+        <value>A <see cref="T:System.Uri" /> that contains the value of the Scope attribute. Can be <see langword="null" />.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">An attempt is made to set a value that is not <see langword="null" /> and is not an absolute URI.</exception>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -124,9 +164,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the value of the context item.</summary>
+        <value>The value of the ContextItem element. Can be <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property can be set to `null`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

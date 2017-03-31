@@ -1,19 +1,19 @@
 ---
 uid: System.Xaml.IXamlLineInfo
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.IXamlLineInfo.HasLineInfo
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.IXamlLineInfo.LinePosition
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.IXamlLineInfo.LineNumber
-internalonly: False
+manager: "martinek"
 ---

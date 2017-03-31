@@ -1,29 +1,35 @@
 ---
 uid: System.Web.HttpPostedFile
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.HttpPostedFile.ContentLength
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.HttpPostedFile.InputStream
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.HttpPostedFile.SaveAs(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.HttpPostedFile.ContentType
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.HttpPostedFile.FileName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

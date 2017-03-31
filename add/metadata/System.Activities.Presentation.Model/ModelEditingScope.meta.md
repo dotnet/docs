@@ -1,54 +1,83 @@
 ---
 uid: System.Activities.Presentation.Model.ModelEditingScope
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.Model.ModelEditingScope.Revert
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.Model.ModelEditingScope.OnException(System.Exception)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.Model.ModelEditingScope.Complete
-internalonly: False
----
-
----
-uid: System.Activities.Presentation.Model.ModelEditingScope.CanComplete
-internalonly: False
----
-
----
-uid: System.Activities.Presentation.Model.ModelEditingScope.OnComplete
-internalonly: False
----
-
----
-uid: System.Activities.Presentation.Model.ModelEditingScope.OnRevert(System.Boolean)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.Model.ModelEditingScope.Dispose
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Presentation.Model.ModelEditingScope.CanComplete
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Presentation.Model.ModelEditingScope.OnComplete
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Presentation.Model.ModelEditingScope.OnRevert(System.Boolean)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Presentation.Model.ModelEditingScope.Dispose
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.Model.ModelEditingScope.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.Model.ModelEditingScope.Description
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.Model.ModelEditingScope.Dispose(System.Boolean)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

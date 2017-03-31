@@ -1,34 +1,44 @@
 ---
 uid: System.Windows.Annotations.ContentLocatorGroup
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Annotations.ContentLocatorGroup.WriteXml(System.Xml.XmlWriter)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Annotations.ContentLocatorGroup.GetSchema
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Annotations.ContentLocatorGroup.ReadXml(System.Xml.XmlReader)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Annotations.ContentLocatorGroup.Clone
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Annotations.ContentLocatorGroup.#ctor
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Annotations.ContentLocatorGroup.Locators
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -1,24 +1,24 @@
 ---
 uid: System.Windows.Xps.Serialization.XpsSerializationPrintTicketRequiredEventArgs
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.XpsSerializationPrintTicketRequiredEventArgs.#ctor(System.Windows.Xps.Serialization.PrintTicketLevel,System.Int32)
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.XpsSerializationPrintTicketRequiredEventArgs.Sequence
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.XpsSerializationPrintTicketRequiredEventArgs.PrintTicketLevel
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.XpsSerializationPrintTicketRequiredEventArgs.PrintTicket
-internalonly: False
+manager: "leannef"
 ---

@@ -1,1 +1,0 @@
-            if (SecurityElement.IsValidTag(tagName))

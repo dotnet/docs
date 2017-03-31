@@ -1,119 +1,181 @@
 ---
 uid: System.Data.OracleClient.OracleCommand
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleCommand.CommandType
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleCommand.ExecuteReader(System.Data.CommandBehavior)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleCommand.ExecuteScalar
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleCommand.#ctor(System.String,System.Data.OracleClient.OracleConnection,System.Data.OracleClient.OracleTransaction)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleCommand.ExecuteOracleNonQuery(System.Data.OracleClient.OracleString@)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleCommand.Parameters
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleCommand.Cancel
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleCommand.ResetCommandTimeout
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleCommand.Connection
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleCommand.UpdatedRowSource
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleCommand.ExecuteNonQuery
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleCommand.Prepare
-internalonly: False
----
-
----
-uid: System.Data.OracleClient.OracleCommand.CreateParameter
-internalonly: False
----
-
----
-uid: System.Data.OracleClient.OracleCommand.DesignTimeVisible
-internalonly: False
----
-
----
-uid: System.Data.OracleClient.OracleCommand.CommandTimeout
-internalonly: False
----
-
----
-uid: System.Data.OracleClient.OracleCommand.#ctor(System.String,System.Data.OracleClient.OracleConnection)
-internalonly: False
----
-
----
-uid: System.Data.OracleClient.OracleCommand.ExecuteOracleScalar
-internalonly: False
----
-
----
-uid: System.Data.OracleClient.OracleCommand.CommandText
-internalonly: False
----
-
----
-uid: System.Data.OracleClient.OracleCommand.Transaction
-internalonly: False
----
-
----
-uid: System.Data.OracleClient.OracleCommand.Clone
-internalonly: False
----
-
----
-uid: System.Data.OracleClient.OracleCommand.#ctor(System.String)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleCommand.ExecuteReader
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.OracleClient.OracleCommand.CreateParameter
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.OracleClient.OracleCommand.DesignTimeVisible
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.OracleClient.OracleCommand.CommandTimeout
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.OracleClient.OracleCommand.#ctor(System.String,System.Data.OracleClient.OracleConnection)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.OracleClient.OracleCommand.ExecuteOracleScalar
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.OracleClient.OracleCommand.CommandText
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.OracleClient.OracleCommand.Transaction
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.OracleClient.OracleCommand.Clone
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.OracleClient.OracleCommand.#ctor(System.String)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleCommand.#ctor
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.OracleClient.OracleCommand.ExecuteReader
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.OracleClient.OracleCommand.#ctor
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

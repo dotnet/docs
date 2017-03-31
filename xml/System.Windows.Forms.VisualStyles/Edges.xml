@@ -15,8 +15,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies which edges of a visual style element to draw.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.Edges> values are used as argument values in the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.DrawEdge%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Bottom">
@@ -32,7 +39,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.Edges</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The bottom edge of the element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Diagonal">
@@ -48,7 +55,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.Edges</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A diagonal border.</summary>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -64,7 +71,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.Edges</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The left edge of the element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -80,7 +87,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.Edges</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The right edge of the element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -96,7 +103,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.Edges</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The top edge of the element.</summary>
       </Docs>
     </Member>
   </Members>

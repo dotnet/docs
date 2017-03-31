@@ -1,24 +1,34 @@
 ---
 uid: System.Runtime.InteropServices.ComTypes.STATDATA
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.ComTypes.STATDATA.advSink
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.ComTypes.STATDATA.formatetc
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.ComTypes.STATDATA.connection
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.ComTypes.STATDATA.advf
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

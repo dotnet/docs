@@ -1,39 +1,62 @@
 ---
 uid: System.Activities.Statements.FlowDecision
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Statements.FlowDecision.#ctor(System.Activities.Activity{System.Boolean})
-internalonly: False
----
-
----
-uid: System.Activities.Statements.FlowDecision.Condition
-internalonly: False
----
-
----
-uid: System.Activities.Statements.FlowDecision.#ctor(System.Linq.Expressions.Expression{System.Func{System.Activities.ActivityContext,System.Boolean}})
-internalonly: False
----
-
----
-uid: System.Activities.Statements.FlowDecision.DisplayName
-internalonly: False
----
-
----
-uid: System.Activities.Statements.FlowDecision.True
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Statements.FlowDecision.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Statements.FlowDecision.Condition
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Statements.FlowDecision.#ctor(System.Linq.Expressions.Expression{System.Func{System.Activities.ActivityContext,System.Boolean}})
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Statements.FlowDecision.DisplayName
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Statements.FlowDecision.True
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Statements.FlowDecision.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Statements.FlowDecision.False
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -1,19 +1,34 @@
 ---
 uid: System.Data.Common.CommandTrees.DbOfTypeExpression
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DbOfTypeExpression.Accept``1(System.Data.Common.CommandTrees.DbExpressionVisitor{``0})
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Common.CommandTrees.DbOfTypeExpression.Accept
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DbOfTypeExpression.OfType
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DbOfTypeExpression.Accept(System.Data.Common.CommandTrees.DbExpressionVisitor)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

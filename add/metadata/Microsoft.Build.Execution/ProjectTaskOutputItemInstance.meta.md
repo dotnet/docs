@@ -1,39 +1,47 @@
 ---
 uid: Microsoft.Build.Execution.ProjectTaskOutputItemInstance
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ProjectTaskOutputItemInstance.TaskParameterLocation
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ProjectTaskOutputItemInstance.Condition
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ProjectTaskOutputItemInstance.ConditionLocation
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ProjectTaskOutputItemInstance.TaskParameter
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ProjectTaskOutputItemInstance.Location
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ProjectTaskOutputItemInstance.ItemType
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ProjectTaskOutputItemInstance.ItemTypeLocation
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

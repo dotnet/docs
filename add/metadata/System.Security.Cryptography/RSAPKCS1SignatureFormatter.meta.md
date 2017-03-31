@@ -1,29 +1,55 @@
 ---
 uid: System.Security.Cryptography.RSAPKCS1SignatureFormatter
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.RSAPKCS1SignatureFormatter.#ctor(System.Security.Cryptography.AsymmetricAlgorithm)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.RSAPKCS1SignatureFormatter.CreateSignature
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.RSAPKCS1SignatureFormatter.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.RSAPKCS1SignatureFormatter.SetHashAlgorithm(System.String)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.RSAPKCS1SignatureFormatter.#ctor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.RSAPKCS1SignatureFormatter.SetKey(System.Security.Cryptography.AsymmetricAlgorithm)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.RSAPKCS1SignatureFormatter.CreateSignature(System.Byte[])
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

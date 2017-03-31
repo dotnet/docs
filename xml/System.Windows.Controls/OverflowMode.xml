@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies how <see cref="T:System.Windows.Controls.ToolBar" /> items are placed in the main toolbar panel and in the overflow panel.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Windows.Controls.OverflowMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Item is permanently placed in the overflow panel.</summary>
       </Docs>
     </Member>
     <Member MemberName="AsNeeded">
@@ -43,7 +43,7 @@
         <ReturnType>System.Windows.Controls.OverflowMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Item moves between the main panel and overflow panel, depending on the available space.</summary>
       </Docs>
     </Member>
     <Member MemberName="Never">
@@ -59,7 +59,7 @@
         <ReturnType>System.Windows.Controls.OverflowMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Item is never allowed to overflow.</summary>
       </Docs>
     </Member>
   </Members>

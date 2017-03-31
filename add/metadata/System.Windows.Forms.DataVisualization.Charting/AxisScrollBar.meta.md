@@ -1,69 +1,89 @@
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.AxisScrollBar
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.AxisScrollBar.ChartArea
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.AxisScrollBar.Dispose
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.AxisScrollBar.IsVisible
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.AxisScrollBar.Size
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.AxisScrollBar.IsPositionedInside
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.AxisScrollBar.Axis
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.AxisScrollBar.Dispose(System.Boolean)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.AxisScrollBar.#ctor
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.AxisScrollBar.LineColor
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.AxisScrollBar.Dispose
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.AxisScrollBar.ButtonColor
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.AxisScrollBar.ButtonStyle
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.AxisScrollBar.BackColor
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.AxisScrollBar.Enabled
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---

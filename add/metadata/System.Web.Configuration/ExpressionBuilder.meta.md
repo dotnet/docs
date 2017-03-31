@@ -1,19 +1,23 @@
 ---
 uid: System.Web.Configuration.ExpressionBuilder
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ExpressionBuilder.#ctor(System.String,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ExpressionBuilder.ExpressionPrefix
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ExpressionBuilder.Type
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

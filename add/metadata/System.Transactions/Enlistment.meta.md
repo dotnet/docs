@@ -1,9 +1,9 @@
 ---
 uid: System.Transactions.Enlistment
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.Enlistment.Done
-internalonly: False
+manager: "ghogen"
 ---

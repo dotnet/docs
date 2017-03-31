@@ -11,8 +11,27 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides access to individual files that have been uploaded by a client.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpFileCollection> class provides access to all the files that are uploaded from a client as a file collection. The <xref:System.Web.HttpPostedFile> class provides properties and methods to get information about an individual file and to read and save the file.  
+  
+ The <xref:System.Web.UI.HtmlControls.HtmlInputFile> control can be used to select and upload files from a client.  
+  
+ Files are uploaded in MIME multipart/form-data format. By default, all requests, including form fields and uploaded files, larger than 256 KB are buffered to disk, rather than held in server memory.  
+  
+ You can specify the maximum allowable request size by accessing the <xref:System.Web.Configuration.HttpRuntimeSection.MaxRequestLength%2A> property or by setting the `maxRequestLength` attribute of the [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/e9b81350-8aaf-47cc-9843-5f7d0c59f369) element within the Machine.config or Web.config file. The default is 4 MB.  
+  
+ The amount of data that is buffered in server memory for a request, which includes file uploads, can be specified by accessing the <xref:System.Web.Configuration.HttpRuntimeSection.RequestLengthDiskThreshold%2A> property or by setting the `requestLengthDiskThreshold` attribute of the [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/e9b81350-8aaf-47cc-9843-5f7d0c59f369) element within the Machine.config or Web.config file.  
+  
+ By adjusting the <xref:System.Web.Configuration.HttpRuntimeSection.MaxRequestLength%2A> and <xref:System.Web.Configuration.HttpRuntimeSection.RequestLengthDiskThreshold%2A> properties, you can fine tune the performance of your server. Additionally, you should consider setting the <xref:System.Web.Configuration.HttpRuntimeSection.MaxRequestLength%2A> to prevent denial of service attacks caused by users posting large files to the server.  
+  
+ Server resources that are allocated to buffer the uploaded file will be destroyed when the request ends. To save a durable copy of the file, use the <xref:System.Web.HttpPostedFile.SaveAs%2A> method.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ContentLength">
@@ -28,8 +47,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the size of an uploaded file, in bytes.</summary>
+        <value>The file length, in bytes.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,9 +65,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the MIME content type of a file sent by a client.</summary>
+        <value>The MIME content type of the uploaded file.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to loop through all the files in the uploaded file collection and take action when the MIME type of a file is `US-ASCII`.  
+  
+ [!code-csharp[Classic HttpPostedFile.ContentType Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpPostedFile.ContentType Example/CS/source.cs#1)]
+ [!code-vb[Classic HttpPostedFile.ContentType Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpPostedFile.ContentType Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FileName">
@@ -64,9 +93,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the fully qualified name of the file on the client.</summary>
+        <value>The name of the client's file, including the directory path.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to assign the name of an uploaded file (the first file in the file collection) to a string variable.  
+  
+ [!code-csharp[Classic HttpPostedFile.FileName Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpPostedFile.FileName Example/CS/source.cs#1)]
+ [!code-vb[Classic HttpPostedFile.FileName Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpPostedFile.FileName Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InputStream">
@@ -82,9 +121,19 @@
         <ReturnType>System.IO.Stream</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a <see cref="T:System.IO.Stream" /> object that points to an uploaded file to prepare for reading the contents of the file.</summary>
+        <value>A <see cref="T:System.IO.Stream" /> pointing to a file.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to read the contents of the first file in the client's file collection into a byte array, and then copy the byte array to a string.  
+  
+ [!code-csharp[Classic HttpPostedFile.InputStream Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpPostedFile.InputStream Example/CS/source.cs#1)]
+ [!code-vb[Classic HttpPostedFile.InputStream Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpPostedFile.InputStream Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SaveAs">
@@ -103,9 +152,25 @@
         <Parameter Name="filename" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="filename">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="filename">The name of the saved file.</param>
+        <summary>Saves the contents of an uploaded file.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The maximum size allowed for a request, which includes uploaded files, is 4 MB, by default. Maximum request size can be specified in the Machine.config or Web.config file in the `maxRequestLength` attribute of the [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/e9b81350-8aaf-47cc-9843-5f7d0c59f369) element. The maximum request size for a specific page can be specified using the [location Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/922ef7d5-da38-4661-b1c6-5b9e5ceda1d5) element in a Web.config file.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to save all the files that are uploaded by the client to the C:\TempFiles folder on the Web server's local disk.  
+  
+ [!code-csharp[Classic HttpPostedFile.SaveAs Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpPostedFile.SaveAs Example/CS/source.cs#1)]
+ [!code-vb[Classic HttpPostedFile.SaveAs Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpPostedFile.SaveAs Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">The <see cref="P:System.Web.Configuration.HttpRuntimeSection.RequireRootedSaveAsPath" /> property of the <see cref="T:System.Web.Configuration.HttpRuntimeSection" /> object is set to <see langword="true" />, but <paramref name="filename" /> is not an absolute path.</exception>
       </Docs>
     </Member>
   </Members>

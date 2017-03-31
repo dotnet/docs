@@ -11,8 +11,17 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies options that affect security in isolated storage.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IO.IsolatedStorage.IsolatedStorageSecurityState.Options%2A?displayProperty=fullName> property gets this enumeration to determine which operations can be performed in isolated storage.  
+  
+ A host application can override the <xref:System.AppDomainManager.CheckSecuritySettings%2A?displayProperty=fullName> method to perform policy decisions based on a <xref:System.IO.IsolatedStorage.IsolatedStorageSecurityState> object, and then allow or prevent the increase in the quota size for isolated storage.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="IncreaseQuotaForApplication">
@@ -29,7 +38,7 @@
         <ReturnType>System.IO.IsolatedStorage.IsolatedStorageSecurityOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The quota can be increased for isolated storage.</summary>
       </Docs>
     </Member>
   </Members>

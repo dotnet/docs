@@ -17,8 +17,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the out-of-band data for a call.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Runtime.Remoting.Messaging.Header> objects are used to convey information about a remote function call (for example, transaction ID or a method signature). For more information, see <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> and <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,9 +43,9 @@
         <Parameter Name="_Value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="_Name">To be added.</param>
-        <param name="_Value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="_Name">The name of the <see cref="T:System.Runtime.Remoting.Messaging.Header" />.</param>
+        <param name="_Value">The object that contains the value for the <see cref="T:System.Runtime.Remoting.Messaging.Header" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Messaging.Header" /> class with the given name and value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,10 +65,10 @@
         <Parameter Name="_MustUnderstand" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="_Name">To be added.</param>
-        <param name="_Value">To be added.</param>
-        <param name="_MustUnderstand">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="_Name">The name of the <see cref="T:System.Runtime.Remoting.Messaging.Header" />.</param>
+        <param name="_Value">The object that contains the value for the <see cref="T:System.Runtime.Remoting.Messaging.Header" />.</param>
+        <param name="_MustUnderstand">Indicates whether the receiving end must understand the out-of-band data.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Messaging.Header" /> class with the given name, value, and additional configuration information.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,11 +89,11 @@
         <Parameter Name="_HeaderNamespace" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="_Name">To be added.</param>
-        <param name="_Value">To be added.</param>
-        <param name="_MustUnderstand">To be added.</param>
-        <param name="_HeaderNamespace">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="_Name">The name of the <see cref="T:System.Runtime.Remoting.Messaging.Header" />.</param>
+        <param name="_Value">The object that contains the value of the <see cref="T:System.Runtime.Remoting.Messaging.Header" />.</param>
+        <param name="_MustUnderstand">Indicates whether the receiving end must understand out-of-band data.</param>
+        <param name="_HeaderNamespace">The <see cref="T:System.Runtime.Remoting.Messaging.Header" /> XML namespace.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Messaging.Header" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,7 +111,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates the XML namespace that the current <see cref="T:System.Runtime.Remoting.Messaging.Header" /> belongs to.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,7 +129,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates whether the receiving end must understand the out-of-band data.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,7 +147,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Contains the name of the <see cref="T:System.Runtime.Remoting.Messaging.Header" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -158,7 +165,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Contains the value for the <see cref="T:System.Runtime.Remoting.Messaging.Header" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -24,7 +24,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Describes how values are pushed onto a stack or popped off a stack.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -50,7 +50,7 @@
         <ReturnType>System.Reflection.Emit.StackBehaviour</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No values are popped off the stack.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pop1">
@@ -75,7 +75,7 @@
         <ReturnType>System.Reflection.Emit.StackBehaviour</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Pops one value off the stack.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pop1_pop1">
@@ -100,7 +100,7 @@
         <ReturnType>System.Reflection.Emit.StackBehaviour</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Pops 1 value off the stack for the first operand, and 1 value of the stack for the second operand.</summary>
       </Docs>
     </Member>
     <Member MemberName="Popi">
@@ -125,7 +125,7 @@
         <ReturnType>System.Reflection.Emit.StackBehaviour</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Pops a 32-bit integer off the stack.</summary>
       </Docs>
     </Member>
     <Member MemberName="Popi_pop1">
@@ -150,7 +150,7 @@
         <ReturnType>System.Reflection.Emit.StackBehaviour</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Pops a 32-bit integer off the stack for the first operand, and a value off the stack for the second operand.</summary>
       </Docs>
     </Member>
     <Member MemberName="Popi_popi">
@@ -175,7 +175,7 @@
         <ReturnType>System.Reflection.Emit.StackBehaviour</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Pops a 32-bit integer off the stack for the first operand, and a 32-bit integer off the stack for the second operand.</summary>
       </Docs>
     </Member>
     <Member MemberName="Popi_popi_popi">
@@ -200,7 +200,7 @@
         <ReturnType>System.Reflection.Emit.StackBehaviour</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Pops a 32-bit integer off the stack for the first operand, a 32-bit integer off the stack for the second operand, and a 32-bit integer off the stack for the third operand.</summary>
       </Docs>
     </Member>
     <Member MemberName="Popi_popi8">
@@ -225,7 +225,7 @@
         <ReturnType>System.Reflection.Emit.StackBehaviour</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Pops a 32-bit integer off the stack for the first operand, and a 64-bit integer off the stack for the second operand.</summary>
       </Docs>
     </Member>
     <Member MemberName="Popi_popr4">
@@ -250,7 +250,7 @@
         <ReturnType>System.Reflection.Emit.StackBehaviour</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Pops a 32-bit integer off the stack for the first operand, and a 32-bit floating point number off the stack for the second operand.</summary>
       </Docs>
     </Member>
     <Member MemberName="Popi_popr8">
@@ -275,7 +275,7 @@
         <ReturnType>System.Reflection.Emit.StackBehaviour</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Pops a 32-bit integer off the stack for the first operand, and a 64-bit floating point number off the stack for the second operand.</summary>
       </Docs>
     </Member>
     <Member MemberName="Popref">
@@ -300,7 +300,7 @@
         <ReturnType>System.Reflection.Emit.StackBehaviour</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Pops a reference off the stack.</summary>
       </Docs>
     </Member>
     <Member MemberName="Popref_pop1">
@@ -325,7 +325,7 @@
         <ReturnType>System.Reflection.Emit.StackBehaviour</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Pops a reference off the stack for the first operand, and a value off the stack for the second operand.</summary>
       </Docs>
     </Member>
     <Member MemberName="Popref_popi">
@@ -350,7 +350,7 @@
         <ReturnType>System.Reflection.Emit.StackBehaviour</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Pops a reference off the stack for the first operand, and a 32-bit integer off the stack for the second operand.</summary>
       </Docs>
     </Member>
     <Member MemberName="Popref_popi_pop1">
@@ -375,7 +375,7 @@
         <ReturnType>System.Reflection.Emit.StackBehaviour</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Pops a reference off the stack for the first operand, a value off the stack for the second operand, and a 32-bit integer off the stack for the third operand.</summary>
       </Docs>
     </Member>
     <Member MemberName="Popref_popi_popi">
@@ -400,7 +400,7 @@
         <ReturnType>System.Reflection.Emit.StackBehaviour</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Pops a reference off the stack for the first operand, a value off the stack for the second operand, and a value off the stack for the third operand.</summary>
       </Docs>
     </Member>
     <Member MemberName="Popref_popi_popi8">
@@ -425,7 +425,7 @@
         <ReturnType>System.Reflection.Emit.StackBehaviour</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Pops a reference off the stack for the first operand, a value off the stack for the second operand, and a 64-bit integer off the stack for the third operand.</summary>
       </Docs>
     </Member>
     <Member MemberName="Popref_popi_popr4">
@@ -450,7 +450,7 @@
         <ReturnType>System.Reflection.Emit.StackBehaviour</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Pops a reference off the stack for the first operand, a value off the stack for the second operand, and a 32-bit integer off the stack for the third operand.</summary>
       </Docs>
     </Member>
     <Member MemberName="Popref_popi_popr8">
@@ -475,7 +475,7 @@
         <ReturnType>System.Reflection.Emit.StackBehaviour</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Pops a reference off the stack for the first operand, a value off the stack for the second operand, and a 64-bit floating point number off the stack for the third operand.</summary>
       </Docs>
     </Member>
     <Member MemberName="Popref_popi_popref">
@@ -500,7 +500,7 @@
         <ReturnType>System.Reflection.Emit.StackBehaviour</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Pops a reference off the stack for the first operand, a value off the stack for the second operand, and a reference off the stack for the third operand.</summary>
       </Docs>
     </Member>
     <Member MemberName="Push0">
@@ -525,7 +525,7 @@
         <ReturnType>System.Reflection.Emit.StackBehaviour</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No values are pushed onto the stack.</summary>
       </Docs>
     </Member>
     <Member MemberName="Push1">
@@ -550,7 +550,7 @@
         <ReturnType>System.Reflection.Emit.StackBehaviour</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Pushes one value onto the stack.</summary>
       </Docs>
     </Member>
     <Member MemberName="Push1_push1">
@@ -575,7 +575,7 @@
         <ReturnType>System.Reflection.Emit.StackBehaviour</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Pushes 1 value onto the stack for the first operand, and 1 value onto the stack for the second operand.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pushi">
@@ -600,7 +600,7 @@
         <ReturnType>System.Reflection.Emit.StackBehaviour</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Pushes a 32-bit integer onto the stack.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pushi8">
@@ -625,7 +625,7 @@
         <ReturnType>System.Reflection.Emit.StackBehaviour</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Pushes a 64-bit integer onto the stack.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pushr4">
@@ -650,7 +650,7 @@
         <ReturnType>System.Reflection.Emit.StackBehaviour</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Pushes a 32-bit floating point number onto the stack.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pushr8">
@@ -675,7 +675,7 @@
         <ReturnType>System.Reflection.Emit.StackBehaviour</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Pushes a 64-bit floating point number onto the stack.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pushref">
@@ -700,7 +700,7 @@
         <ReturnType>System.Reflection.Emit.StackBehaviour</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Pushes a reference onto the stack.</summary>
       </Docs>
     </Member>
     <Member MemberName="Varpop">
@@ -725,7 +725,7 @@
         <ReturnType>System.Reflection.Emit.StackBehaviour</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Pops a variable off the stack.</summary>
       </Docs>
     </Member>
     <Member MemberName="Varpush">
@@ -750,7 +750,7 @@
         <ReturnType>System.Reflection.Emit.StackBehaviour</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Pushes a variable onto the stack.</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,19 +1,27 @@
 ---
 uid: System.Windows.Forms.DataGridViewRowHeightInfoNeededEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowHeightInfoNeededEventArgs.RowIndex
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowHeightInfoNeededEventArgs.MinimumHeight
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowHeightInfoNeededEventArgs.Height
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

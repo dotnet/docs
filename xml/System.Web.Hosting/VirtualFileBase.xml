@@ -11,8 +11,18 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides the core implementation for the <see cref="T:System.Web.Hosting.VirtualFile" /> and <see cref="T:System.Web.Hosting.VirtualDirectory" /> objects. An abstract class, it cannot be instantiated.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Hosting.VirtualFileBase> abstract class provides the common methods and properties shared between the <xref:System.Web.Hosting.VirtualFile> and <xref:System.Web.Hosting.VirtualDirectory> objects. Implementations of these classes provide the ASP.NET runtime with access to files and paths used for compilation. For more information on using virtual files and paths, see the <xref:System.Web.Hosting.VirtualPathProvider> class.  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>When you inherit from the <see cref="T:System.Web.Hosting.VirtualFileBase" /> class, you must override the <see cref="P:System.Web.Hosting.VirtualFileBase.IsDirectory" /> property to indicate whether the derived object is a virtual directory or a virtual file. If you derive from either the <see cref="T:System.Web.Hosting.VirtualFile" /> or the <see cref="T:System.Web.Hosting.VirtualDirectory" /> class, the <see cref="P:System.Web.Hosting.VirtualFileBase.IsDirectory" /> property is already set.</para>
+    </block>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,8 +36,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes the class for use by an inherited class instance. This constructor can be called only by an inherited class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Although you cannot directly construct an instance of the <xref:System.Web.Hosting.VirtualFileBase> class, you can call this constructor from the constructor of an inheriting class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InitializeLifetimeService">
@@ -44,9 +61,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gives a <see cref="T:System.Web.Hosting.VirtualFileBase" /> instance an infinite lifetime by preventing a lease from being created.</summary>
+        <returns>Always <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method overrides the <xref:System.MarshalByRefObject.InitializeLifetimeService%2A> method on its base class. It always returns `null` and thereby prevents a lease from being created that would limit the lifetime of the virtual file or directory.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsDirectory">
@@ -62,8 +86,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When overridden in a derived class, gets a value indicating whether the <see cref="T:System.Web.Hosting.VirtualFileBase" /> instance represents a virtual file or a virtual directory.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Web.Hosting.VirtualFileBase" /> instance is a virtual directory; otherwise, <see langword="false" /> if the <see cref="T:System.Web.Hosting.VirtualFileBase" /> instance is a virtual file.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,9 +105,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the display name of the virtual resource.</summary>
+        <value>The display name of the virtual file.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Hosting.VirtualFileBase.Name%2A> property is typically the file name and extension associated with the resource, although virtual resources may use arbitrary names.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>The <see cref="P:System.Web.Hosting.VirtualFileBase.Name" /> property should return the correct casing of the virtual resource for the virtual path provider. The correct casing may be different from the casing in the original path.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="VirtualPath">
@@ -98,9 +133,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the virtual file path.</summary>
+        <value>The path to the virtual file.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Hosting.VirtualFileBase.VirtualPath%2A> property returns the path to the file or directory represented by this object.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

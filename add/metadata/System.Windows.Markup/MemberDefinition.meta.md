@@ -1,14 +1,14 @@
 ---
 uid: System.Windows.Markup.MemberDefinition
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.MemberDefinition.#ctor
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.MemberDefinition.Name
-internalonly: False
+manager: "martinek"
 ---

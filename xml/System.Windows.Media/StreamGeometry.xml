@@ -16,8 +16,32 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines a geometric shape, described using a <see cref="T:System.Windows.Media.StreamGeometryContext" />. This geometry is light-weight alternative to <see cref="T:System.Windows.Media.PathGeometry" />: it does not support data binding, animation, or modification.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use a <xref:System.Windows.Media.StreamGeometry> when you need to describe a complex geometry but do not want the overhead of supporting data binding, animation, or modification. Because of its efficiency, the <xref:System.Windows.Media.StreamGeometry> class is a good choice for describing adorners.  
+  
+ A <xref:System.Windows.Media.StreamGeometry> cannot be serialized if it contains a <xref:System.Windows.Media.Transform> or any non-stroked or unfilled segments.  
+  
+## Freezable Features  
+ A <xref:System.Windows.Media.StreamGeometry> is a <xref:System.Windows.Freezable> type. For information about <xref:System.Windows.Freezable> features, such as freezing and cloning, see the [Freezable Objects Overview](../Topic/Freezable%20Objects%20Overview.md).  
+  
+<a name="xamlAttributeUsage_StreamGeometry"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="moveAndDrawCommands"/>  
+```  
+  
+<a name="xamlValues_StreamGeometry"></a>   
+## XAML Values  
+ *moveAndDrawCommands*  
+ One or more move and draw commands. See [Path Markup Syntax](../Topic/Path%20Markup%20Syntax.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +55,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new, empty instance of the <see cref="T:System.Windows.Media.StreamGeometry" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,9 +72,16 @@
         <ReturnType>System.Windows.Rect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a <see cref="T:System.Windows.Rect" /> that is exactly large enough to contain this <see cref="T:System.Windows.Media.StreamGeometry" />.</summary>
+        <value>The bounding box of this <see cref="T:System.Windows.Media.StreamGeometry" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method does not take any pen into account when calculating the geometry's bounds.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -67,7 +98,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes all geometric information from this <see cref="T:System.Windows.Media.StreamGeometry" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,9 +116,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.StreamGeometry" />, making deep copies of this object's values. When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CloneCore">
@@ -125,9 +165,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.StreamGeometry" /> object, making deep copies of this object's current values. Resource references, data bindings, and animations are not copied, but their current values are.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CloneCurrentValueCore">
@@ -183,9 +232,29 @@
         <ReturnType>System.Windows.Media.FillRule</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that determines how the intersecting areas contained in this <see cref="T:System.Windows.Media.StreamGeometry" /> are combined.</summary>
+        <value>Indicates how the intersecting areas of this <see cref="T:System.Windows.Media.StreamGeometry" /> are combined.  The default value is <c>EvenOdd</c>.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ **EvenOdd** Determines the "insideness" of a point on the shape by drawing a ray from that point to infinity in any direction and counting the number of path segments from the given shape that the ray crosses. If this number is odd, the point is inside; if even, the point is outside.  
+  
+ **NonZero** Determines the "insideness" of a point on the shape by drawing a ray from that point to infinity in any direction and then examining the places where a segment of the shape crosses the ray. Starting with a count of zero, add one each time a Segment crosses the ray from left to right and subtract one each time a path segment crosses the ray from right to left. After counting the crossings, if the result is zero then the point is outside the path. Otherwise, it is inside.  
+  
+ ![Fill rule illustration](~/add/media/ref-mil-fillrule-stars.PNG "Fill rule illustration")  
+FillRule Example  
+  
+<a name="dependencyPropertyInfo_FillRule"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.StreamGeometry>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FillRuleProperty">
@@ -201,7 +270,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Media.StreamGeometry.FillRule" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -266,8 +335,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Determines whether this <see cref="T:System.Windows.Media.StreamGeometry" /> describes a geometric shape.</summary>
+        <returns>**true** if this <see cref="T:System.Windows.Media.StreamGeometry" /> describes a geometry shape; otherwise, **false**.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -290,8 +359,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Determines whether this <see cref="T:System.Windows.Media.StreamGeometry" /> contains a curved segment.</summary>
+        <returns>**true** if this <see cref="T:System.Windows.Media.StreamGeometry" /> object has a curved segment; otherwise, **false**.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -327,8 +396,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Opens a <see cref="T:System.Windows.Media.StreamGeometryContext" /> that can be used to describe this <see cref="T:System.Windows.Media.StreamGeometry" /> object's contents.</summary>
+        <returns>A <see cref="T:System.Windows.Media.StreamGeometryContext" /> that can be used to describe this <see cref="T:System.Windows.Media.StreamGeometry" /> object's contents.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

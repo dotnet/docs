@@ -1,29 +1,41 @@
 ---
 uid: System.IdentityModel.Tokens.AsymmetricProofDescriptor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.AsymmetricProofDescriptor.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.AsymmetricProofDescriptor.#ctor
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.AsymmetricProofDescriptor.#ctor(System.Security.Cryptography.RSA)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.AsymmetricProofDescriptor.KeyIdentifier
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.AsymmetricProofDescriptor.#ctor(System.IdentityModel.Tokens.SecurityKeyIdentifier)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.AsymmetricProofDescriptor.ApplyTo(System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

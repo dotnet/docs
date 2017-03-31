@@ -1,1 +1,0 @@
-        string identityName = genericIdentity.Name;

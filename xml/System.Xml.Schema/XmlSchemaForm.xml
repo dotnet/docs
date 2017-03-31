@@ -21,8 +21,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates if attributes or elements need to be qualified with a namespace prefix.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Used by <xref:System.Xml.Schema.XmlSchema.AttributeFormDefault%2A> and <xref:System.Xml.Schema.XmlSchema.ElementFormDefault%2A>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="None">
@@ -54,7 +61,7 @@
         <ReturnType>System.Xml.Schema.XmlSchemaForm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Element and attribute form is not specified in the schema.</summary>
       </Docs>
     </Member>
     <Member MemberName="Qualified">
@@ -86,7 +93,7 @@
         <ReturnType>System.Xml.Schema.XmlSchemaForm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Elements and attributes must be qualified with a namespace prefix.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unqualified">
@@ -118,7 +125,7 @@
         <ReturnType>System.Xml.Schema.XmlSchemaForm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Elements and attributes are not required to be qualified with a namespace prefix.</summary>
       </Docs>
     </Member>
   </Members>

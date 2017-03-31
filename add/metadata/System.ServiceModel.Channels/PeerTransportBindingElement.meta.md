@@ -1,79 +1,79 @@
 ---
 uid: System.ServiceModel.Channels.PeerTransportBindingElement
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Channels.PeerTransportBindingElement.BuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Channels.PeerTransportBindingElement.ListenIPAddress
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Channels.PeerTransportBindingElement.System#ServiceModel#Description#IWsdlExportExtension#ExportEndpoint(System.ServiceModel.Description.WsdlExporter,System.ServiceModel.Description.WsdlEndpointConversionContext)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Channels.PeerTransportBindingElement.System#ServiceModel#Description#IWsdlExportExtension#ExportContract(System.ServiceModel.Description.WsdlExporter,System.ServiceModel.Description.WsdlContractConversionContext)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Channels.PeerTransportBindingElement.Scheme
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Channels.PeerTransportBindingElement.GetProperty``1(System.ServiceModel.Channels.BindingContext)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Channels.PeerTransportBindingElement.Clone
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Channels.PeerTransportBindingElement.System#ServiceModel#Description#IPolicyExportExtension#ExportPolicy(System.ServiceModel.Description.MetadataExporter,System.ServiceModel.Description.PolicyConversionContext)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Channels.PeerTransportBindingElement.MaxReceivedMessageSize
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Channels.PeerTransportBindingElement.#ctor
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Channels.PeerTransportBindingElement.Security
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Channels.PeerTransportBindingElement.CanBuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Channels.PeerTransportBindingElement.Port
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Channels.PeerTransportBindingElement.BuildChannelListener``1(System.ServiceModel.Channels.BindingContext)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Channels.PeerTransportBindingElement.CanBuildChannelListener``1(System.ServiceModel.Channels.BindingContext)
-internalonly: False
+manager: "ghogen"
 ---

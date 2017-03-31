@@ -1,14 +1,17 @@
 ---
 uid: System.Net.PeerToPeer.ResolveProgressChangedEventArgs
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.ResolveProgressChangedEventArgs.PeerNameRecord
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.ResolveProgressChangedEventArgs.#ctor(System.Net.PeerToPeer.PeerNameRecord,System.Object)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

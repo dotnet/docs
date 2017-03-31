@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Enables you to select an <see cref="T:System.Windows.Controls.ItemContainerTemplate" /> for each item within an <see cref="T:System.Windows.Controls.ItemsControl" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.ItemContainerTemplateSelector" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,10 +47,10 @@
         <Parameter Name="parentItemsControl" Type="System.Windows.Controls.ItemsControl" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <param name="parentItemsControl">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The object for which to select the template.</param>
+        <param name="parentItemsControl">The container for the items.</param>
+        <summary>When overridden in a derived class, returns an <see cref="T:System.Windows.Controls.ItemContainerTemplate" /> based on custom logic.</summary>
+        <returns>The template. The default implementation returns <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

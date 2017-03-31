@@ -1,19 +1,19 @@
 ---
 uid: System.Runtime.Serialization.SerializationEntry
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.SerializationEntry.Value
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.SerializationEntry.Name
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.SerializationEntry.ObjectType
-internalonly: False
+manager: "ghogen"
 ---

@@ -1,44 +1,53 @@
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogInformation
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogInformation.LastAccessTime
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogInformation.OldestRecordNumber
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogInformation.RecordCount
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogInformation.IsLogFull
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogInformation.CreationTime
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogInformation.LastWriteTime
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogInformation.Attributes
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogInformation.FileSize
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---

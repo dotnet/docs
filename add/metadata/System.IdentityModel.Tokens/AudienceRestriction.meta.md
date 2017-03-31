@@ -1,24 +1,35 @@
 ---
 uid: System.IdentityModel.Tokens.AudienceRestriction
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.AudienceRestriction.AudienceMode
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.AudienceRestriction.AllowedAudienceUris
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.AudienceRestriction.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.AudienceRestriction.#ctor
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.AudienceRestriction.#ctor(System.IdentityModel.Selectors.AudienceUriMode)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

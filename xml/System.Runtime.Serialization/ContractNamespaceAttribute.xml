@@ -25,8 +25,28 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the CLR namespace and XML namespace of the data contract.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Apply the <xref:System.Runtime.Serialization.ContractNamespaceAttribute> attribute to an assembly that contains types to which the <xref:System.Runtime.Serialization.DataContractAttribute> has been applied. The <xref:System.Runtime.Serialization.ContractNamespaceAttribute> enables you to set a namespace that is different than the one generated when the type is serialized. For more information about how names are generated, see [Data Contract Names](../Topic/Data%20Contract%20Names.md).  
+  
+ If you are using a type to conform to an existing data contract, you must match the namespace of the existing contract by using the <xref:System.Runtime.Serialization.ContractNamespaceAttribute> (or the <xref:System.Runtime.Serialization.DataContractAttribute.Namespace%2A> property of the <xref:System.Runtime.Serialization.DataContractAttribute> class).  
+  
+> [!NOTE]
+>  In any code, you can use the word `ContractNamespace` instead of the longer <xref:System.Runtime.Serialization.ContractNamespaceAttribute>.  
+  
+   
+  
+## Examples  
+ The following example shows the <xref:System.Runtime.Serialization.ContractNamespaceAttribute> applied to an assembly.  
+  
+ [!code-csharp[ContractNamespaceAttribute#1](~/samples/snippets/csharp/VS_Snippets_CFX/contractnamespaceattribute/cs/overview.cs#1)]
+ [!code-vb[ContractNamespaceAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/contractnamespaceattribute/vb/overview.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,8 +71,8 @@
         <Parameter Name="contractNamespace" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="contractNamespace">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="contractNamespace">The namespace of the contract.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.ContractNamespaceAttribute" /> class using the supplied namespace.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,8 +98,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the CLR namespace of the data contract type.</summary>
+        <value>The CLR-legal namespace of a type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,9 +125,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the namespace of the data contract members.</summary>
+        <value>The namespace of the data contract members.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property can only be set using the constructor when applying the attribute to an assembly.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,19 +1,26 @@
 ---
 uid: System.Windows.Media.Animation.ClockGroup
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.ClockGroup.#ctor(System.Windows.Media.Animation.TimelineGroup)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.ClockGroup.Timeline
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.ClockGroup.Children
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

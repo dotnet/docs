@@ -17,8 +17,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Annotates a property on a class that has been annotated with the <see cref="T:System.Data.Services.Client.MediaEntryAttribute" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `MimeTypePropertyAttribute` takes the name of the property that holds the mime type to associate with the property specified in the <xref:System.Data.Services.Client.MediaEntryAttribute>. The property specified is automatically set to the mime type of data when a media resource associated with the media link entry is delay-loaded by the <xref:System.Data.Services.Client.DataServiceContext.LoadProperty%2A> method.  
+  
+ The system also reads the mime type from this property and uses it to set the `Content-Type` header in a POST request for a media link entry. A media link entry is an AtomPub protocol construct for handling binary data and metadata.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,9 +45,9 @@
         <Parameter Name="mimeTypePropertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="dataPropertyName">To be added.</param>
-        <param name="mimeTypePropertyName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="dataPropertyName">A string that contains the name of the new property attribute.</param>
+        <param name="mimeTypePropertyName">A string that contains the Mime type of the new property attribute.</param>
+        <summary>Creates a new instance of the <see langword="MimeTypePropertyAttribute" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,8 +65,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the <see langword="MimeTypePropertyAttribute" />.</summary>
+        <value>A string that contains the name of the property attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,8 +84,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Mime type of the <see langword="MimeTypePropertyAttribute" /></summary>
+        <value>A string that contains the Mime type of the property attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,24 +1,48 @@
 ---
 uid: System.ComponentModel.ComponentResourceManager
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.ComponentResourceManager.ApplyResources(System.Object,System.String,System.Globalization.CultureInfo)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.ComponentResourceManager.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.ComponentResourceManager.ApplyResources
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.ComponentResourceManager.ApplyResources(System.Object,System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.ComponentResourceManager.#ctor(System.Type)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.ComponentResourceManager.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

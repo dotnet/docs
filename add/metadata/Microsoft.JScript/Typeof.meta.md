@@ -1,9 +1,9 @@
 ---
 uid: Microsoft.JScript.Typeof
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.Typeof.JScriptTypeof(System.Object)
-internalonly: False
+ms.author: "mikejo"
 ---

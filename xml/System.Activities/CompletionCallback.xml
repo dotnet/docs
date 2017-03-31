@@ -17,9 +17,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="context">To be added.</param>
-    <param name="completedInstance">To be added.</param>
-    <summary>To be added.</summary>
+    <param name="context">The execution environment of the activity.</param>
+    <param name="completedInstance">The activity that completed.</param>
+    <summary>The method that is called when an activity completes.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

@@ -1,9 +1,13 @@
 ---
 uid: System.Runtime.CompilerServices.IteratorStateMachineAttribute
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.CompilerServices.IteratorStateMachineAttribute.#ctor(System.Type)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

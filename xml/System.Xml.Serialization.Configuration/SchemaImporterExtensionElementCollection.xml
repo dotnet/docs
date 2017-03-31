@@ -16,8 +16,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Handles the XML elements used to configure the operation of the <see cref="T:System.Xml.Serialization.XmlSchemaImporter" />. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The configuration section for the <xref:System.Xml.Serialization.XmlSchemaImporter> is found in the app.config file or the machine.config file (for globally setting how the importer works).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +38,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.Configuration.SchemaImporterExtensionElementCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +58,8 @@
         <Parameter Name="element" Type="System.Xml.Serialization.Configuration.SchemaImporterExtensionElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Xml.Serialization.Configuration.SchemaImporterExtensionElement" /> to add to the collection.</param>
+        <summary>Adds an item to the end of the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,7 +77,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes all items from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,9 +138,9 @@
         <Parameter Name="element" Type="System.Xml.Serialization.Configuration.SchemaImporterExtensionElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The <see cref="T:System.Xml.Serialization.Configuration.SchemaImporterExtensionElement" /> to find.</param>
+        <summary>Returns the zero-based index of the first element in the collection with the specified value.</summary>
+        <returns>The index of the found element.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,10 +160,16 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The zero-based index of the XML element to get or set.</param>
+        <summary>Gets or sets the object that represents the XML element at the specified index.</summary>
+        <value>The <see cref="T:System.Xml.Serialization.Configuration.SchemaImporterExtensionElement" /> at the specified index.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than zero.  
+  
+ -or-  
+  
+ <paramref name="index" /> is equal to or greater than <see langword="Count" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -175,9 +188,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="name">The name of the item to get or set.</param>
+        <summary>Gets or sets the item with the specified name.</summary>
+        <value>The <see cref="T:System.Xml.Serialization.Configuration.SchemaImporterExtensionElement" /> with the specified name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -197,8 +210,8 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the item to remove.</param>
+        <summary>Removes the item with the specified name from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -218,8 +231,8 @@
         <Parameter Name="element" Type="System.Xml.Serialization.Configuration.SchemaImporterExtensionElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Xml.Serialization.Configuration.SchemaImporterExtensionElement" /> to remove.</param>
+        <summary>Removes the first occurrence of a specific item from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -239,8 +252,8 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The index of the object to remove.</param>
+        <summary>Removes the item at the specified index from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

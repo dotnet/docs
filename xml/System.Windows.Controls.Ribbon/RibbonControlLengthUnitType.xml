@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines constants that specify how elements in a <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> are sized.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Windows.Controls.Ribbon.RibbonControlLengthUnitType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The sizing method is not specified.</summary>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -43,7 +43,7 @@
         <ReturnType>System.Windows.Controls.Ribbon.RibbonControlLengthUnitType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The size is a fixed value expressed in the number of child elements.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pixel">
@@ -59,7 +59,7 @@
         <ReturnType>System.Windows.Controls.Ribbon.RibbonControlLengthUnitType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The size is a fixed value expressed in pixels.</summary>
       </Docs>
     </Member>
     <Member MemberName="Star">
@@ -75,7 +75,7 @@
         <ReturnType>System.Windows.Controls.Ribbon.RibbonControlLengthUnitType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The size is a weighted proportion of the available space.</summary>
       </Docs>
     </Member>
   </Members>

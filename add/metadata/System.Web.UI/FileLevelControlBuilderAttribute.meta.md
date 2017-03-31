@@ -1,34 +1,41 @@
 ---
 uid: System.Web.UI.FileLevelControlBuilderAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.FileLevelControlBuilderAttribute.BuilderType
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.FileLevelControlBuilderAttribute.Default
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.FileLevelControlBuilderAttribute.GetHashCode
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.FileLevelControlBuilderAttribute.IsDefaultAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.FileLevelControlBuilderAttribute.Equals(System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.FileLevelControlBuilderAttribute.#ctor(System.Type)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

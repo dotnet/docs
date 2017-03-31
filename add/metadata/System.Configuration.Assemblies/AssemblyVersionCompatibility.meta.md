@@ -1,4 +1,6 @@
 ---
 uid: System.Configuration.Assemblies.AssemblyVersionCompatibility
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

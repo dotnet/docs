@@ -19,8 +19,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="TConfigurationElement">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="TConfigurationElement">The type of configuration element.</typeparam>
+    <summary>The base class for all tracking configuration collections.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,7 +35,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.Tracking.Configuration.TrackingConfigurationCollection`1" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,8 +55,8 @@
         <Parameter Name="element" Type="TConfigurationElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The element to add.</param>
+        <summary>Adds an element into the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,7 +74,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Clears the contents of the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,8 +91,8 @@
         <ReturnType>System.Configuration.ConfigurationElementCollectionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the collection type.</summary>
+        <value>One of the <see cref="T:System.Configuration.ConfigurationElementCollectionType" /> enumeration values.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,8 +110,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a new element.</summary>
+        <returns>A new configuration element.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,9 +131,9 @@
         <Parameter Name="element" Type="System.Configuration.ConfigurationElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The configuration element.</param>
+        <summary>Gets the element key for the specified configuration element.</summary>
+        <returns>The element key.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,9 +153,9 @@
         <Parameter Name="element" Type="TConfigurationElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The configuration element.</param>
+        <summary>Gets the index of the specified configuration element.</summary>
+        <returns>The zero-based index of the configuration element.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,9 +175,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The index of the element to retrieve.</param>
+        <summary>Gets the element as the specified index.</summary>
+        <value>The element at the specified index.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -197,8 +197,8 @@
         <Parameter Name="element" Type="TConfigurationElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The configuration element to remove.</param>
+        <summary>Removes the specified configuration element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -218,8 +218,8 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The index of the configuration element to remove.</param>
+        <summary>Removes the configuration element at the specified index.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,29 +1,39 @@
 ---
 uid: System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry.GetIssuerName(System.IdentityModel.Tokens.SecurityToken)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry.GetIssuerName
 ---
 
 ---
 uid: System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry.LoadCustomConfiguration(System.Xml.XmlNodeList)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry.ConfiguredTrustedIssuers
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry.AddTrustedIssuer(System.String,System.String)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

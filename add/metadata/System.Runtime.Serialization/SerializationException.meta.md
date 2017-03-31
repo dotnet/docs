@@ -1,24 +1,29 @@
 ---
 uid: System.Runtime.Serialization.SerializationException
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.SerializationException.#ctor
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.SerializationException.#ctor(System.String,System.Exception)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.SerializationException.#ctor(System.String)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.SerializationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Serialization.SerializationException.#ctor
+manager: "ghogen"
 ---

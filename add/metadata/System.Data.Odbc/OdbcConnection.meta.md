@@ -1,119 +1,188 @@
 ---
 uid: System.Data.Odbc.OdbcConnection
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Odbc.OdbcConnection.ServerVersion
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Odbc.OdbcConnection.ConnectionString
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Odbc.OdbcConnection.EnlistTransaction(System.Transactions.Transaction)
-internalonly: False
----
-
----
-uid: System.Data.Odbc.OdbcConnection.EnlistDistributedTransaction(System.EnterpriseServices.ITransaction)
-internalonly: False
----
-
----
-uid: System.Data.Odbc.OdbcConnection.ConnectionTimeout
-internalonly: False
----
-
----
-uid: System.Data.Odbc.OdbcConnection.InfoMessage
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Odbc.OdbcConnection.GetSchema
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Odbc.OdbcConnection.Close
-internalonly: False
----
-
----
-uid: System.Data.Odbc.OdbcConnection.ChangeDatabase(System.String)
-internalonly: False
----
-
----
-uid: System.Data.Odbc.OdbcConnection.#ctor(System.String)
-internalonly: False
----
-
----
-uid: System.Data.Odbc.OdbcConnection.Database
-internalonly: False
----
-
----
-uid: System.Data.Odbc.OdbcConnection.GetSchema(System.String)
-internalonly: False
----
-
----
-uid: System.Data.Odbc.OdbcConnection.ReleaseObjectPool
-internalonly: False
----
-
----
-uid: System.Data.Odbc.OdbcConnection.State
-internalonly: False
----
-
----
-uid: System.Data.Odbc.OdbcConnection.BeginTransaction(System.Data.IsolationLevel)
-internalonly: False
----
-
----
-uid: System.Data.Odbc.OdbcConnection.DataSource
-internalonly: False
+uid: System.Data.Odbc.OdbcConnection.EnlistDistributedTransaction(System.EnterpriseServices.ITransaction)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Odbc.OdbcConnection.BeginTransaction
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Odbc.OdbcConnection.ConnectionTimeout
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Odbc.OdbcConnection.InfoMessage
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Odbc.OdbcConnection.GetSchema
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Odbc.OdbcConnection.#ctor
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Odbc.OdbcConnection.Close
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Odbc.OdbcConnection.ChangeDatabase(System.String)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Odbc.OdbcConnection.#ctor(System.String)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Odbc.OdbcConnection.Database
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Odbc.OdbcConnection.GetSchema(System.String)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Odbc.OdbcConnection.ReleaseObjectPool
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Odbc.OdbcConnection.State
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Odbc.OdbcConnection.BeginTransaction(System.Data.IsolationLevel)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Odbc.OdbcConnection.DataSource
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Odbc.OdbcConnection.BeginTransaction
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Odbc.OdbcConnection.#ctor
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Odbc.OdbcConnection.Open
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Odbc.OdbcConnection.GetSchema(System.String,System.String[])
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Odbc.OdbcConnection.CreateCommand
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Odbc.OdbcConnection.System#ICloneable#Clone
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Odbc.OdbcConnection.Driver
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

@@ -1,24 +1,35 @@
 ---
 uid: System.Configuration.ConfigurationFileMap
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationFileMap.MachineConfigFilename
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationFileMap.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationFileMap.#ctor(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationFileMap.Clone
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.ConfigurationFileMap.#ctor
+ms.author: "riande"
+manager: "wpickett"
 ---

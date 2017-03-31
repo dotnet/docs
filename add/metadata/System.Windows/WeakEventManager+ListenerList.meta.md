@@ -1,89 +1,129 @@
 ---
 uid: System.Windows.WeakEventManager.ListenerList
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.WeakEventManager.ListenerList.Clone
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.WeakEventManager.ListenerList.#ctor(System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.WeakEventManager.ListenerList.Add(System.Windows.IWeakEventListener)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.WeakEventManager.ListenerList.Item(System.Int32)
-internalonly: False
----
-
----
-uid: System.Windows.WeakEventManager.ListenerList.Empty
-internalonly: False
----
-
----
-uid: System.Windows.WeakEventManager.ListenerList.Remove(System.Windows.IWeakEventListener)
-internalonly: False
----
-
----
-uid: System.Windows.WeakEventManager.ListenerList.DeliverEvent(System.Object,System.EventArgs,System.Type)
-internalonly: False
----
-
----
-uid: System.Windows.WeakEventManager.ListenerList.Purge
-internalonly: False
----
-
----
-uid: System.Windows.WeakEventManager.ListenerList.RemoveHandler(System.Delegate)
-internalonly: False
----
-
----
-uid: System.Windows.WeakEventManager.ListenerList.BeginUse
-internalonly: False
----
-
----
-uid: System.Windows.WeakEventManager.ListenerList.CopyTo(System.Windows.WeakEventManager.ListenerList)
-internalonly: False
----
-
----
-uid: System.Windows.WeakEventManager.ListenerList.IsEmpty
-internalonly: False
----
-
----
-uid: System.Windows.WeakEventManager.ListenerList.EndUse
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.WeakEventManager.ListenerList.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.WeakEventManager.ListenerList.Empty
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.WeakEventManager.ListenerList.Remove(System.Windows.IWeakEventListener)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.WeakEventManager.ListenerList.DeliverEvent(System.Object,System.EventArgs,System.Type)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.WeakEventManager.ListenerList.Purge
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.WeakEventManager.ListenerList.RemoveHandler(System.Delegate)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.WeakEventManager.ListenerList.BeginUse
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.WeakEventManager.ListenerList.CopyTo(System.Windows.WeakEventManager.ListenerList)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.WeakEventManager.ListenerList.IsEmpty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.WeakEventManager.ListenerList.EndUse
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.WeakEventManager.ListenerList.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.WeakEventManager.ListenerList.PrepareForWriting(System.Windows.WeakEventManager.ListenerList@)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.WeakEventManager.ListenerList.Count
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.WeakEventManager.ListenerList.AddHandler(System.Delegate)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

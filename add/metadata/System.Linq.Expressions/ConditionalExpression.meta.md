@@ -1,39 +1,54 @@
 ---
 uid: System.Linq.Expressions.ConditionalExpression
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.Expressions.ConditionalExpression.Type
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.Expressions.ConditionalExpression.Accept(System.Linq.Expressions.ExpressionVisitor)
-internalonly: False
+ms.author: "billchi"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Linq.Expressions.ConditionalExpression.NodeType
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.Expressions.ConditionalExpression.Test
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.Expressions.ConditionalExpression.IfFalse
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.Expressions.ConditionalExpression.IfTrue
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.Expressions.ConditionalExpression.Update(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---

@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Metadata Interface for all CLR types types</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No content here will be updated; please do not add material here.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Common.DbProviderManifest" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,7 +50,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Value to pass to GetInformation to get the ConceptualSchemaDefinitionVersion.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,7 +67,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Value to pass to GetInformation to get the ConceptualSchemaDefinitionVersion3.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,9 +87,9 @@
         <Parameter Name="argument" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="argument">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="argument">The argument to be escaped.</param>
+        <summary>Provider writers should override this method to return the argument with the wildcards and the escape character escaped. This method is only used if SupportsEscapingLikeArgument returns true.</summary>
+        <returns>The argument with the wildcards and the escape character escaped.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,9 +109,9 @@
         <Parameter Name="informationType" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="informationType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="informationType">The type of the information to return.</param>
+        <summary>When overridden in a derived class, this method returns provider-specific information.</summary>
+        <returns>The XmlReader object that represents the mapping to the underlying data store catalog.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,9 +131,9 @@
         <Parameter Name="storeType" Type="System.Data.Metadata.Edm.TypeUsage" />
       </Parameters>
       <Docs>
-        <param name="storeType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="storeType">The TypeUsage instance that describes a storage type and a set of facets for that type to be mapped to the EDM type.</param>
+        <summary>When overridden in a derived class, this method maps the specified storage type and a set of facets for that type to an EDM type.</summary>
+        <returns>The <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> instance that describes an EDM type and a set of facets for that type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,9 +153,9 @@
         <Parameter Name="edmType" Type="System.Data.Metadata.Edm.EdmType" />
       </Parameters>
       <Docs>
-        <param name="edmType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="edmType">The EDM type to return the facet description for.</param>
+        <summary>Returns the FacetDescription objects for a particular type.</summary>
+        <returns>The FacetDescription objects for the specified EDM type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -168,9 +175,9 @@
         <Parameter Name="informationType" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="informationType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="informationType">The type of the information to return.</param>
+        <summary>Gets the provider-specific information.</summary>
+        <returns>The provider-specific information.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -188,8 +195,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>When overridden in a derived class, returns a collection of EDM functions supported by the provider manifest.</summary>
+        <returns>A collection of EDM functions.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -209,9 +216,9 @@
         <Parameter Name="edmType" Type="System.Data.Metadata.Edm.TypeUsage" />
       </Parameters>
       <Docs>
-        <param name="edmType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="edmType">The TypeUsage instance that describes the EDM type and a set of facets for that type to be mapped to a storage type.</param>
+        <summary>When overridden in a derived class, this method maps the specified EDM type and a set of facets for that type to a storage type.</summary>
+        <returns>The TypeUsage instance that describes a storage type and a set of facets for that type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -229,8 +236,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>When overridden in a derived class, returns the set of primitive types supported by the data source.</summary>
+        <returns>The set of types supported by the data source.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -247,8 +254,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the namespace used by this provider manifest.</summary>
+        <value>The namespace used by this provider manifest.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -265,7 +272,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Value to pass to GetInformation to get the StoreSchemaDefinitionVersion.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -282,7 +289,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Value to pass to GetInformation to get the StoreSchemaDefinitionVersion3.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -299,7 +306,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Value to pass to GetInformation to get the StoreSchemaMappingVersion.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -316,7 +323,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Value to pass to GetInformation to get the StoreSchemaMappingVersion3.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -336,9 +343,10 @@
         <Parameter Name="escapeCharacter" Type="System.Char&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="escapeCharacter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="escapeCharacter">If the provider supports escaping, the character that would be used as the escape character.</param>
+        <summary>Indicates if the provider supports escaping strings to be used as patterns in a Like expression.</summary>
+        <returns>
+          <see langword="True" /> if this provider supports escaping strings to be used as patterns in a Like expression; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

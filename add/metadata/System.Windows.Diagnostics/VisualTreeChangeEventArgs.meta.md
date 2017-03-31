@@ -1,29 +1,31 @@
 ---
 uid: System.Windows.Diagnostics.VisualTreeChangeEventArgs
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Diagnostics.VisualTreeChangeEventArgs.Parent
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Diagnostics.VisualTreeChangeEventArgs.ChangeType
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Diagnostics.VisualTreeChangeEventArgs.ChildIndex
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Diagnostics.VisualTreeChangeEventArgs.#ctor(System.Windows.DependencyObject,System.Windows.DependencyObject,System.Int32,System.Windows.Diagnostics.VisualTreeChangeType)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Diagnostics.VisualTreeChangeEventArgs.Child
-internalonly: False
+manager: "ghogen"
 ---

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>An XML element that configures HTTP message security.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.BasicHttpMessageSecurityElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +51,8 @@
         <ReturnType>System.ServiceModel.Security.SecurityAlgorithmSuite</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Specifies the algorithms to use with the <see cref="T:System.ServiceModel.Configuration.BasicHttpMessageSecurityElement" /> class.</summary>
+        <value>A <see cref="T:System.ServiceModel.Security.SecurityAlgorithmSuite" />. The default is <see cref="P:System.ServiceModel.Security.SecurityAlgorithmSuite.Basic256" /> .</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,8 +74,8 @@
         <ReturnType>System.ServiceModel.BasicHttpMessageCredentialType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Specifies the type of client credential to use with the <see cref="T:System.ServiceModel.Configuration.BasicHttpMessageSecurityElement" /> class.</summary>
+        <value>A <see cref="T:System.ServiceModel.BasicHttpMessageCredentialType" /> . The default is UserName.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,4 +1,5 @@
 ---
 uid: System.Speech.Synthesis.PromptVolume
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

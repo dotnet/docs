@@ -1,14 +1,20 @@
 ---
 uid: System.Activities.Presentation.Model.AttachedPropertyInfo
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.Model.AttachedPropertyInfo.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.Model.AttachedPropertyInfo.PropertyName
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

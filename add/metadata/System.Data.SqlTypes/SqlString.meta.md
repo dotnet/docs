@@ -1,299 +1,447 @@
 ---
 uid: System.Data.SqlTypes.SqlString
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.SqlCompareOptions
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.op_GreaterThanOrEqual(System.Data.SqlTypes.SqlString,System.Data.SqlTypes.SqlString)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.#ctor(System.Int32,System.Data.SqlTypes.SqlCompareOptions,System.Byte[],System.Int32,System.Int32)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.System#Xml#Serialization#IXmlSerializable#ReadXml(System.Xml.XmlReader)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.#ctor(System.Int32,System.Data.SqlTypes.SqlCompareOptions,System.Byte[],System.Boolean)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.Add(System.Data.SqlTypes.SqlString,System.Data.SqlTypes.SqlString)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.System#Xml#Serialization#IXmlSerializable#GetSchema
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.Value
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.GetXsdType(System.Xml.Schema.XmlSchemaSet)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.GreaterThanOrEqual(System.Data.SqlTypes.SqlString,System.Data.SqlTypes.SqlString)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.op_LessThan(System.Data.SqlTypes.SqlString,System.Data.SqlTypes.SqlString)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.GetUnicodeBytes
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.ToSqlInt64
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.Concat(System.Data.SqlTypes.SqlString,System.Data.SqlTypes.SqlString)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.IgnoreKanaType
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlTypes.SqlString.op_Explicit
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.op_LessThanOrEqual(System.Data.SqlTypes.SqlString,System.Data.SqlTypes.SqlString)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.LessThanOrEqual(System.Data.SqlTypes.SqlString,System.Data.SqlTypes.SqlString)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.ToSqlDouble
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.#ctor(System.String,System.Int32)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.ToSqlSingle
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.ToSqlDateTime
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.CompareTo(System.Data.SqlTypes.SqlString)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.GetHashCode
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.op_Equality(System.Data.SqlTypes.SqlString,System.Data.SqlTypes.SqlString)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.Equals(System.Data.SqlTypes.SqlString,System.Data.SqlTypes.SqlString)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.ToSqlMoney
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.IgnoreCase
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.BinarySort
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.#ctor(System.Int32,System.Data.SqlTypes.SqlCompareOptions,System.Byte[])
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.IgnoreNonSpace
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.op_GreaterThan(System.Data.SqlTypes.SqlString,System.Data.SqlTypes.SqlString)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.#ctor(System.String)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.CompareInfo
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.Clone
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.ToSqlInt32
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.#ctor(System.String,System.Int32,System.Data.SqlTypes.SqlCompareOptions)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.op_Inequality(System.Data.SqlTypes.SqlString,System.Data.SqlTypes.SqlString)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.BinarySort2
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.ToSqlBoolean
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.op_Addition(System.Data.SqlTypes.SqlString,System.Data.SqlTypes.SqlString)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.IgnoreWidth
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.ToSqlDecimal
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlTypes.SqlString.Equals
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.LessThan(System.Data.SqlTypes.SqlString,System.Data.SqlTypes.SqlString)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.GetNonUnicodeBytes
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.System#Xml#Serialization#IXmlSerializable#WriteXml(System.Xml.XmlWriter)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.Equals(System.Object)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlTypes.SqlString.CompareTo
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.CompareTo(System.Object)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.GreaterThan(System.Data.SqlTypes.SqlString,System.Data.SqlTypes.SqlString)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.ToString
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.IsNull
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.CultureInfo
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.#ctor(System.Int32,System.Data.SqlTypes.SqlCompareOptions,System.Byte[],System.Int32,System.Int32,System.Boolean)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.LCID
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.ToSqlByte
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.NotEquals(System.Data.SqlTypes.SqlString,System.Data.SqlTypes.SqlString)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.Null
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.ToSqlGuid
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.ToSqlInt16
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlString.CompareOptionsFromSqlCompareOptions(System.Data.SqlTypes.SqlCompareOptions)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlTypes.SqlString.#ctor
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

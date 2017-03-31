@@ -1,74 +1,95 @@
 ---
 uid: Microsoft.Build.Execution.BuildRequestData
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
+---
+
+---
+uid: Microsoft.Build.Execution.BuildRequestData.#ctor
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildRequestData.#ctor(Microsoft.Build.Execution.ProjectInstance,System.String[],Microsoft.Build.Execution.HostServices)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildRequestData.ExplicitlySpecifiedToolsVersion
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildRequestData.Flags
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildRequestData.#ctor(Microsoft.Build.Execution.ProjectInstance,System.String[],Microsoft.Build.Execution.HostServices,Microsoft.Build.Execution.BuildRequestDataFlags,System.Collections.Generic.IEnumerable{System.String})
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildRequestData.#ctor(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String[],Microsoft.Build.Execution.HostServices,Microsoft.Build.Execution.BuildRequestDataFlags)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildRequestData.#ctor(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String[],Microsoft.Build.Execution.HostServices)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildRequestData.TargetNames
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildRequestData.#ctor(Microsoft.Build.Execution.ProjectInstance,System.String[],Microsoft.Build.Execution.HostServices,Microsoft.Build.Execution.BuildRequestDataFlags)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildRequestData.HostServices
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildRequestData.ProjectFullPath
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildRequestData.ProjectInstance
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildRequestData.PropertiesToTransfer
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildRequestData.GlobalProperties
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildRequestData.#ctor(Microsoft.Build.Execution.ProjectInstance,System.String[])
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

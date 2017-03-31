@@ -17,9 +17,16 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">To be added.</param>
-    <param name="e">To be added.</param>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <param name="sender">The source of the event.</param>
+    <param name="e">The event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Windows.Interop.HwndSource.AutoResized" /> event raised by <see cref="T:System.Windows.Interop.HwndSource" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Interop.HwndSource.AutoResized> event is raised when the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] layout system causes a <xref:System.Windows.Interop.HwndSource> to resize automatically. A typical handler implementation would communicate size changes to the HWND contained within the <xref:System.Windows.Interop.HwndSource>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

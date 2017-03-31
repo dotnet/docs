@@ -12,8 +12,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Many [!INCLUDE[indigo1](~/includes/indigo1-md.md)] features require the use of buffers, which are expensive to create and destroy. You can use the <see cref="T:System.ServiceModel.Channels.BufferManager" /> class to manage a buffer pool. The pool and its buffers are created when you instantiate this class and destroyed when the buffer pool is reclaimed by garbage collection. Every time you need to use a buffer, you take one from the pool, use it, and return it to the pool when done. This process is much faster than creating and destroying a buffer every time you need to use one.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is commonly used while implementing custom encoders or custom transport channels.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,8 +35,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.BufferManager" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because this constructor is `protected`, you can only call it from a derived class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -47,7 +61,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Releases the buffers currently cached in the manager.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,11 +83,29 @@
         <Parameter Name="maxBufferSize" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="maxBufferPoolSize">To be added.</param>
-        <param name="maxBufferSize">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="maxBufferPoolSize">The maximum size of the pool.</param>
+        <param name="maxBufferSize">The maximum size of an individual buffer.</param>
+        <summary>Creates a new BufferManager with a specified maximum buffer pool size and a maximum size for each individual buffer in the pool.</summary>
+        <returns>Returns a <see cref="T:System.ServiceModel.Channels.BufferManager" /> object with the specified parameters.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method creates a new buffer pool with as many buffers as can be created.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InsufficientMemoryException">
+          <block subset="none" type="note">  
+<para>  
+ In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](../Topic/Cross-Platform%20Development%20with%20the%20Portable%20Class%20Library.md), catch the base class exception, <see cref="T:System.OutOfMemoryException" />, instead.  
+  
+</para>  
+</block>  
+  
+ There was insufficient memory to create the requested buffer pool.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="maxBufferPoolSize" /> or <paramref name="maxBufferSize" /> was less than zero.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReturnBuffer">
@@ -93,9 +125,19 @@
         <Parameter Name="buffer" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="buffer">A reference to the buffer being returned.</param>
+        <summary>Returns a buffer to the pool.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The buffer is returned to the pool and is available for re-use.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="buffer" /> reference cannot be <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">Length of <paramref name="buffer" /> does not match the pool's buffer length property.</exception>
       </Docs>
     </Member>
     <Member MemberName="TakeBuffer">
@@ -115,10 +157,19 @@
         <Parameter Name="bufferSize" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="bufferSize">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="bufferSize">The size, in bytes, of the requested buffer.</param>
+        <summary>Gets a buffer of at least the specified size from the pool.</summary>
+        <returns>A byte array that is the requested size of the buffer.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If successful, the system returns a byte array buffer of at least the requested size.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="bufferSize" /> cannot be less than zero.</exception>
       </Docs>
     </Member>
   </Members>

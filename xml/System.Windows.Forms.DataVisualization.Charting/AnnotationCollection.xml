@@ -14,8 +14,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Stores chart annotation objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ All chart annotations are stored in this collection.  
+  
+ This class includes methods to add, insert, iterate through and remove annotations from the collection.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="FindByName">
@@ -34,9 +43,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the annotation to find.</param>
+        <summary>Finds an annotation in the collection by name.</summary>
+        <returns>An <see cref="T:System.Windows.Forms.DataVisualization.Charting.Annotation" /> object, or <see langword="null" /> if the object does not exist.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

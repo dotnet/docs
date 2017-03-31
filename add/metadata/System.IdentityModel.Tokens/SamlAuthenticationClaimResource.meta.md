@@ -1,54 +1,71 @@
 ---
 uid: System.IdentityModel.Tokens.SamlAuthenticationClaimResource
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.SamlAuthenticationClaimResource.Equals(System.Object)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.SamlAuthenticationClaimResource.#ctor(System.DateTime,System.String,System.String,System.String,System.Collections.Generic.IEnumerable{System.IdentityModel.Tokens.SamlAuthorityBinding})
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.SamlAuthenticationClaimResource.AuthenticationInstant
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.SamlAuthenticationClaimResource.#ctor
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.SamlAuthenticationClaimResource.#ctor(System.DateTime,System.String,System.String,System.String)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.SamlAuthenticationClaimResource.#ctor(System.DateTime,System.String,System.String,System.String,System.Collections.ObjectModel.ReadOnlyCollection{System.IdentityModel.Tokens.SamlAuthorityBinding})
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.SamlAuthenticationClaimResource.AuthorityBindings
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.SamlAuthenticationClaimResource.GetHashCode
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.SamlAuthenticationClaimResource.IPAddress
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.SamlAuthenticationClaimResource.DnsAddress
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.SamlAuthenticationClaimResource.AuthenticationMethod
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

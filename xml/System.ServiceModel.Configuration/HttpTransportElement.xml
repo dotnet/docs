@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the configuration element that specifies an HTTP transport for transmitting SOAP messages.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.HttpTransportElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,9 +48,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether the client accepts cookies and propagates them on future requests.</summary>
+        <value>
+          <see langword="true" /> if cookies are allowed; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this property when you interact with ASMX Web services that use cookies. In this way, you can be sure that the cookies returned from the server are automatically copied to all future client requests for that service.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ApplyConfiguration">
@@ -69,8 +77,8 @@
         <Parameter Name="bindingElement" Type="System.ServiceModel.Channels.BindingElement" />
       </Parameters>
       <Docs>
-        <param name="bindingElement">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="bindingElement">The binding element to use for this configuration.</param>
+        <summary>Applies a new configuration for this element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,9 +100,16 @@
         <ReturnType>System.Net.AuthenticationSchemes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the authentication scheme used to authenticate client requests being processed by an HTTP listener.</summary>
+        <value>The <see cref="T:System.Net.AuthenticationSchemes" /> object that specifies the protocols used for client authentication. The default is Anonymous.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The authentication scheme can only be set once.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BindingElementType">
@@ -110,8 +125,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type of binding.</summary>
+        <value>The type of binding.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,9 +148,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether proxies are ignored for local addresses.</summary>
+        <value>
+          <see langword="true" /> if proxies are ignored for local addresses; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A local address is one that is on the local LAN or intranet. Always ignores the proxy if the service address begins with http://localhost. You should use the host name rather than localhost if you want clients to go through a proxy when communicating with services on the same machine.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyFrom">
@@ -154,8 +177,8 @@
         <Parameter Name="from" Type="System.ServiceModel.Configuration.ServiceModelExtensionElement" />
       </Parameters>
       <Docs>
-        <param name="from">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="from">The source that contains the element to be copied.</param>
+        <summary>Copies the configuration element from a specified source.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -173,8 +196,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a new transport binding element from this instance.</summary>
+        <returns>The newly created <see cref="T:System.ServiceModel.Channels.TransportBindingElement" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -196,8 +219,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether data decompression for SOAP messages is enabled for this transport.</summary>
+        <value>
+          <see langword="true" /> if data decompression for SOAP messages is enabled for this transport; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -219,8 +243,8 @@
         <ReturnType>System.Security.Authentication.ExtendedProtection.Configuration.ExtendedProtectionPolicyElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.Security.Authentication.ExtendedProtection.Configuration.ExtendedProtectionPolicyElement" /> instance which contains the configuration settings to use for extended protection for a session.</summary>
+        <value>The <see cref="T:System.Security.Authentication.ExtendedProtection.Configuration.ExtendedProtectionPolicyElement" /> which contains the configuration settings to use for extended protection for a session.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -242,8 +266,8 @@
         <ReturnType>System.ServiceModel.HostNameComparisonMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that specifies how the hostname is used to reach the service when matching on the URI.</summary>
+        <value>The <see cref="T:System.ServiceModel.HostNameComparisonMode" /> value that specifies how the hostname is included when routing incoming requests to an endpoint URI. The default value is **StrongWildcard**, which ignores the hostname in the match.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -263,8 +287,8 @@
         <Parameter Name="bindingElement" Type="System.ServiceModel.Channels.BindingElement" />
       </Parameters>
       <Docs>
-        <param name="bindingElement">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="bindingElement">The binding element to use for initialization.</param>
+        <summary>Initializes this instance using a specified binding element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -286,8 +310,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a <see langword="Boolean" /> value that indicates whether to make a persistent connection to the internet resource.</summary>
+        <value>
+          <see langword="true" /> if a persistent connection to the internet resource is maintained; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -312,8 +337,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the maximum size of the buffer pool.</summary>
+        <value>The maximum size of the buffer pool. The default is 524,288 bytes (512 * 1024).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -338,8 +363,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the maximum number of pending asynchronous accept operations that are available for processing incoming connections to the service.</summary>
+        <value>The maximum number of pending asynchronous accept operations that are available for processing incoming connections to the service.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -361,8 +386,8 @@
         <ReturnType>System.ServiceModel.Configuration.HttpMessageHandlerFactoryElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the message handler factory.</summary>
+        <value>The message handler factory.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -379,8 +404,8 @@
         <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.Configuration.ConfigurationPropertyCollection" /> instance that contains a collection of <see cref="T:System.Configuration.ConfigurationProperty" /> objects that can be attributes or <see cref="T:System.Configuration.ConfigurationElement" /> objects of this configuration element.</summary>
+        <value>A <see cref="T:System.Configuration.ConfigurationPropertyCollection" /> instance that contains a collection of <see cref="T:System.Configuration.ConfigurationProperty" /> objects that can be attributes or <see cref="T:System.Configuration.ConfigurationElement" /> objects of this configuration element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -402,8 +427,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a URI that contains the address of the proxy to use for HTTP requests.</summary>
+        <value>The <see cref="T:System.Uri" /> that contains the address for the proxy.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -425,8 +450,8 @@
         <ReturnType>System.Net.AuthenticationSchemes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the authentication scheme used to authenticate client requests being processed by an HTTP proxy.</summary>
+        <value>The <see cref="T:System.Net.AuthenticationSchemes" /> object that specifies the protocols used for client authentication on the proxy. The default is Anonymous.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -451,8 +476,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the authentication realm.</summary>
+        <value>A string that contains the authentication realm.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -477,8 +502,8 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the timespan that specifies how long the request initialization has to complete before timing out.</summary>
+        <value>A timespan after which the request initialization times out.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -500,8 +525,8 @@
         <ReturnType>System.ServiceModel.TransferMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that specifies whether messages are buffered or streamed or a request or response.</summary>
+        <value>A valid <see cref="T:System.ServiceModel.TransferMode" /> value that specifies whether messages are buffered or streamed or a request or response.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -523,9 +548,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether unsafe connection sharing is enabled on the server.</summary>
+        <value>
+          <see langword="true" /> if unsafe connection sharing is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If enabled, NTLM authentication is performed once on each TCP connection.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UseDefaultWebProxy">
@@ -546,8 +579,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether the machine-wide proxy settings are used rather than the user-specific settings.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="N:System.Net" /> default proxy settings are used; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -569,8 +603,8 @@
         <ReturnType>System.ServiceModel.Configuration.WebSocketTransportSettingsElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the web socket settings.</summary>
+        <value>The web socket settings.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

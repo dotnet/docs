@@ -1,24 +1,34 @@
 ---
 uid: Microsoft.Build.Tasks.Deployment.Bootstrapper.IProduct
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Deployment.Bootstrapper.IProduct.ProductCode
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Deployment.Bootstrapper.IProduct.ProductBuilder
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Deployment.Bootstrapper.IProduct.Name
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Deployment.Bootstrapper.IProduct.Includes
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

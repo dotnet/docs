@@ -1,1 +1,0 @@
-        Dim v As String = mySortedList.Values(3)

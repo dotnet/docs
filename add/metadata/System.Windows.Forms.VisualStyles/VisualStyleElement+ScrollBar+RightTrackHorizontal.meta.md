@@ -1,24 +1,32 @@
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar.RightTrackHorizontal
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar.RightTrackHorizontal.Normal
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar.RightTrackHorizontal.Hot
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar.RightTrackHorizontal.Disabled
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar.RightTrackHorizontal.Pressed
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

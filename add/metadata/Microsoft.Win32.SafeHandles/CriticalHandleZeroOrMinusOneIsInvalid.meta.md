@@ -1,14 +1,20 @@
 ---
 uid: Microsoft.Win32.SafeHandles.CriticalHandleZeroOrMinusOneIsInvalid
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Win32.SafeHandles.CriticalHandleZeroOrMinusOneIsInvalid.IsInvalid
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Win32.SafeHandles.CriticalHandleZeroOrMinusOneIsInvalid.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

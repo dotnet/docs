@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the day of the week.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used by <xref:System.Windows.Forms.MonthCalendar>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Default">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Forms.Day</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A default day of the week specified by the application.</summary>
       </Docs>
     </Member>
     <Member MemberName="Friday">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Forms.Day</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The day Friday.</summary>
       </Docs>
     </Member>
     <Member MemberName="Monday">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.Forms.Day</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The day Monday.</summary>
       </Docs>
     </Member>
     <Member MemberName="Saturday">
@@ -75,7 +82,7 @@
         <ReturnType>System.Windows.Forms.Day</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The day Saturday.</summary>
       </Docs>
     </Member>
     <Member MemberName="Sunday">
@@ -91,7 +98,7 @@
         <ReturnType>System.Windows.Forms.Day</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The day Sunday.</summary>
       </Docs>
     </Member>
     <Member MemberName="Thursday">
@@ -107,7 +114,7 @@
         <ReturnType>System.Windows.Forms.Day</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The day Thursday.</summary>
       </Docs>
     </Member>
     <Member MemberName="Tuesday">
@@ -123,7 +130,7 @@
         <ReturnType>System.Windows.Forms.Day</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The day Tuesday.</summary>
       </Docs>
     </Member>
     <Member MemberName="Wednesday">
@@ -139,7 +146,7 @@
         <ReturnType>System.Windows.Forms.Day</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The day Wednesday.</summary>
       </Docs>
     </Member>
   </Members>

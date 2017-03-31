@@ -1,24 +1,31 @@
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.Page.UpHorizontal
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.Page.UpHorizontal.Pressed
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.Page.UpHorizontal.Normal
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.Page.UpHorizontal.Hot
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.Page.UpHorizontal.Disabled
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -1,34 +1,48 @@
 ---
 uid: System.Activities.Tracking.BookmarkResumptionRecord
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Tracking.BookmarkResumptionRecord.BookmarkScope
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Tracking.BookmarkResumptionRecord.#ctor(System.Guid,System.Int64,System.Guid,System.String,System.Activities.Tracking.ActivityInfo)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Tracking.BookmarkResumptionRecord.Payload
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Tracking.BookmarkResumptionRecord.Owner
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Tracking.BookmarkResumptionRecord.ToString
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Tracking.BookmarkResumptionRecord.BookmarkName
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

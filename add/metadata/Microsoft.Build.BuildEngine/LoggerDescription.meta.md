@@ -1,19 +1,23 @@
 ---
 uid: Microsoft.Build.BuildEngine.LoggerDescription
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.BuildEngine.LoggerDescription.#ctor(System.String,System.String,System.String,System.String,Microsoft.Build.Framework.LoggerVerbosity)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.BuildEngine.LoggerDescription.Verbosity
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.BuildEngine.LoggerDescription.LoggerSwitchParameters
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

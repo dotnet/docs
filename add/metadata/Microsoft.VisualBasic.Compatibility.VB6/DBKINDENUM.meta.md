@@ -1,4 +1,6 @@
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.DBKINDENUM
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

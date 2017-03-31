@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents an enumeration that specifies the target directory that a <see cref="T:System.Web.Configuration.FolderLevelBuildProvider" /> object applies to.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>System.Web.Compilation.FolderLevelBuildProviderAppliesTo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that a <see cref="T:System.Web.Configuration.FolderLevelBuildProvider" /> object applies to a folder that contains code.</summary>
       </Docs>
     </Member>
     <Member MemberName="GlobalResources">
@@ -48,7 +48,7 @@
         <ReturnType>System.Web.Compilation.FolderLevelBuildProviderAppliesTo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that a <see cref="T:System.Web.Configuration.FolderLevelBuildProvider" /> object applies to the global resources directory.</summary>
       </Docs>
     </Member>
     <Member MemberName="LocalResources">
@@ -64,7 +64,7 @@
         <ReturnType>System.Web.Compilation.FolderLevelBuildProviderAppliesTo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that a <see cref="T:System.Web.Configuration.FolderLevelBuildProvider" /> object applies to the local resources directory.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -80,7 +80,7 @@
         <ReturnType>System.Web.Compilation.FolderLevelBuildProviderAppliesTo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that a <see cref="T:System.Web.Configuration.FolderLevelBuildProvider" /> object does not apply to any directory.</summary>
       </Docs>
     </Member>
     <Member MemberName="WebReferences">
@@ -96,7 +96,7 @@
         <ReturnType>System.Web.Compilation.FolderLevelBuildProviderAppliesTo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that a <see cref="T:System.Web.Configuration.FolderLevelBuildProvider" /> object applies to the Web content directory.</summary>
       </Docs>
     </Member>
   </Members>

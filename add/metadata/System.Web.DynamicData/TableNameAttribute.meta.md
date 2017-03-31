@@ -1,14 +1,17 @@
 ---
 uid: System.Web.DynamicData.TableNameAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.TableNameAttribute.#ctor(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.TableNameAttribute.Name
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

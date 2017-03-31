@@ -1,19 +1,34 @@
 ---
 uid: System.ServiceModel.Channels.StreamSecurityUpgradeProvider
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.StreamSecurityUpgradeProvider.#ctor(System.ServiceModel.IDefaultCommunicationTimeouts)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.StreamSecurityUpgradeProvider.Identity
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.StreamSecurityUpgradeProvider.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Channels.StreamSecurityUpgradeProvider.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -26,7 +26,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides data for the <see cref="E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged" /> event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -53,8 +53,8 @@
         <Parameter Name="action" Type="System.Collections.Specialized.NotifyCollectionChangedAction" />
       </Parameters>
       <Docs>
-        <param name="action">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="action">The action that caused the event. This must be set to <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Reset" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs" /> class that describes a <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Reset" /> change.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,9 +82,9 @@
         <Parameter Name="changedItems" Type="System.Collections.IList" />
       </Parameters>
       <Docs>
-        <param name="action">To be added.</param>
-        <param name="changedItems">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="action">The action that caused the event. This can be set to <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Reset" />, <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Add" />, or <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Remove" />.</param>
+        <param name="changedItems">The items that are affected by the change.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs" /> class that describes a multi-item change.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,10 +112,11 @@
         <Parameter Name="changedItem" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="action">To be added.</param>
-        <param name="changedItem">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="action">The action that caused the event. This can be set to <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Reset" />, <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Add" />, or <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Remove" />.</param>
+        <param name="changedItem">The item that is affected by the change.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs" /> class that describes a one-item change.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">If <paramref name="action" /> is not Reset, Add, or Remove, or if <paramref name="action" /> is Reset and <paramref name="changedItem" /> is not null.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -143,11 +144,13 @@
         <Parameter Name="oldItems" Type="System.Collections.IList" />
       </Parameters>
       <Docs>
-        <param name="action">To be added.</param>
-        <param name="newItems">To be added.</param>
-        <param name="oldItems">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="action">The action that caused the event. This can only be set to <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Replace" />.</param>
+        <param name="newItems">The new items that are replacing the original items.</param>
+        <param name="oldItems">The original items that are replaced.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs" /> class that describes a multi-item <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Replace" /> change.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">If <paramref name="action" /> is not Replace.</exception>
+        <exception cref="T:System.ArgumentNullException">If <paramref name="oldItems" /> or <paramref name="newItems" /> is null.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -175,11 +178,13 @@
         <Parameter Name="startingIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="action">To be added.</param>
-        <param name="changedItems">To be added.</param>
-        <param name="startingIndex">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="action">The action that caused the event. This can be set to <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Reset" />, <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Add" />, or <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Remove" />.</param>
+        <param name="changedItems">The items affected by the change.</param>
+        <param name="startingIndex">The index where the change occurred.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs" /> class that describes a multi-item change or a <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Reset" /> change.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">If <paramref name="action" /> is not Reset, Add, or Remove, if <paramref name="action" /> is Reset and either <paramref name="changedItems" /> is not null or <paramref name="startingIndex" /> is not -1, or if action is Add or Remove and <paramref name="startingIndex" /> is less than -1.</exception>
+        <exception cref="T:System.ArgumentNullException">If <paramref name="action" /> is Add or Remove and <paramref name="changedItems" /> is null.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -207,11 +212,12 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="action">To be added.</param>
-        <param name="changedItem">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="action">The action that caused the event. This can be set to <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Reset" />, <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Add" />, or <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Remove" />.</param>
+        <param name="changedItem">The item that is affected by the change.</param>
+        <param name="index">The index where the change occurred.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs" /> class that describes a one-item change.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">If <paramref name="action" /> is not Reset, Add, or Remove, or if <paramref name="action" /> is Reset and either <paramref name="changedItems" /> is not null or <paramref name="index" /> is not -1.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -239,11 +245,12 @@
         <Parameter Name="oldItem" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="action">To be added.</param>
-        <param name="newItem">To be added.</param>
-        <param name="oldItem">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="action">The action that caused the event. This can only be set to <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Replace" />.</param>
+        <param name="newItem">The new item that is replacing the original item.</param>
+        <param name="oldItem">The original item that is replaced.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs" /> class that describes a one-item <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Replace" /> change.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">If <paramref name="action" /> is not Replace.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -272,12 +279,14 @@
         <Parameter Name="startingIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="action">To be added.</param>
-        <param name="newItems">To be added.</param>
-        <param name="oldItems">To be added.</param>
-        <param name="startingIndex">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="action">The action that caused the event. This can only be set to <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Replace" />.</param>
+        <param name="newItems">The new items that are replacing the original items.</param>
+        <param name="oldItems">The original items that are replaced.</param>
+        <param name="startingIndex">The index of the first item of the items that are being replaced.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs" /> class that describes a multi-item <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Replace" /> change.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">If <paramref name="action" /> is not Replace.</exception>
+        <exception cref="T:System.ArgumentNullException">If <paramref name="oldItems" /> or <paramref name="newItems" /> is null.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -306,12 +315,13 @@
         <Parameter Name="oldIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="action">To be added.</param>
-        <param name="changedItems">To be added.</param>
-        <param name="index">To be added.</param>
-        <param name="oldIndex">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="action">The action that caused the event. This can only be set to <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Move" />.</param>
+        <param name="changedItems">The items affected by the change.</param>
+        <param name="index">The new index for the changed items.</param>
+        <param name="oldIndex">The old index for the changed items.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs" /> class that describes a multi-item <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Move" /> change.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">If <paramref name="action" /> is not Move or <paramref name="index" /> is less than 0.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -340,12 +350,13 @@
         <Parameter Name="oldIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="action">To be added.</param>
-        <param name="changedItem">To be added.</param>
-        <param name="index">To be added.</param>
-        <param name="oldIndex">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="action">The action that caused the event. This can only be set to <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Move" />.</param>
+        <param name="changedItem">The item affected by the change.</param>
+        <param name="index">The new index for the changed item.</param>
+        <param name="oldIndex">The old index for the changed item.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs" /> class that describes a one-item <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Move" /> change.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">If <paramref name="action" /> is not Move or <paramref name="index" /> is less than 0.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -374,12 +385,13 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="action">To be added.</param>
-        <param name="newItem">To be added.</param>
-        <param name="oldItem">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="action">The action that caused the event. This can be set to <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Replace" />.</param>
+        <param name="newItem">The new item that is replacing the original item.</param>
+        <param name="oldItem">The original item that is replaced.</param>
+        <param name="index">The index of the item being replaced.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs" /> class that describes a one-item <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Replace" /> change.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">If <paramref name="action" /> is not Replace.</exception>
       </Docs>
     </Member>
     <Member MemberName="Action">
@@ -405,8 +417,8 @@
         <ReturnType>System.Collections.Specialized.NotifyCollectionChangedAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the action that caused the event.</summary>
+        <value>A <see cref="T:System.Collections.Specialized.NotifyCollectionChangedAction" /> value that describes the action that caused the event.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -433,8 +445,8 @@
         <ReturnType>System.Collections.IList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the list of new items involved in the change.</summary>
+        <value>The list of new items involved in the change.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -461,8 +473,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the index at which the change occurred.</summary>
+        <value>The zero-based index at which the change occurred.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -489,8 +501,8 @@
         <ReturnType>System.Collections.IList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the list of items affected by a <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Replace" />, Remove, or Move action.</summary>
+        <value>The list of items affected by a <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Replace" />, Remove, or Move action.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -517,8 +529,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the index at which a <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Move" />, Remove, or Replace action occurred.</summary>
+        <value>The zero-based index at which a <see cref="F:System.Collections.Specialized.NotifyCollectionChangedAction.Move" />, Remove, or Replace action occurred.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,2 +1,0 @@
-        //ts.Listeners.Add(new EventSchemaTraceListener("TraceOutput.xml", "eventListener", 65536, TraceLogRetentionOption.LimitedCircularFiles, 20480000, 2));
-        ts.Listeners.Add(new EventSchemaTraceListener("TraceOutput.xml", "eventListener"));

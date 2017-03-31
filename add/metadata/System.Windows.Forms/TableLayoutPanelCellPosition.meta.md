@@ -1,44 +1,59 @@
 ---
 uid: System.Windows.Forms.TableLayoutPanelCellPosition
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TableLayoutPanelCellPosition.#ctor(System.Int32,System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TableLayoutPanelCellPosition.Column
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TableLayoutPanelCellPosition.Equals(System.Object)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.TableLayoutPanelCellPosition.Row
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.TableLayoutPanelCellPosition.op_Equality(System.Windows.Forms.TableLayoutPanelCellPosition,System.Windows.Forms.TableLayoutPanelCellPosition)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TableLayoutPanelCellPosition.op_Inequality(System.Windows.Forms.TableLayoutPanelCellPosition,System.Windows.Forms.TableLayoutPanelCellPosition)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TableLayoutPanelCellPosition.GetHashCode
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TableLayoutPanelCellPosition.ToString
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

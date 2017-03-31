@@ -15,8 +15,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the priority of a <see cref="T:System.Net.Mail.MailMessage" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this enumeration to set the priority header of an email message.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="High">
@@ -37,7 +44,7 @@
         <ReturnType>System.Net.Mail.MailPriority</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The email has high priority.</summary>
       </Docs>
     </Member>
     <Member MemberName="Low">
@@ -58,7 +65,7 @@
         <ReturnType>System.Net.Mail.MailPriority</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The email has low priority.</summary>
       </Docs>
     </Member>
     <Member MemberName="Normal">
@@ -79,7 +86,7 @@
         <ReturnType>System.Net.Mail.MailPriority</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The email has normal priority.</summary>
       </Docs>
     </Member>
   </Members>

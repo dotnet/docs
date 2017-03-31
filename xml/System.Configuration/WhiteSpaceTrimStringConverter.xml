@@ -11,8 +11,45 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Converts a string to its canonical format.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This <xref:System.Configuration.WhiteSpaceTrimStringConverter> object converts between a configuration string value and its canonical representation. Canonical representation means that all white spaces are trimmed from the beginning and end of a string value.  
+  
+   
+  
+## Examples  
+ The following code example shows how to apply <xref:System.Configuration.WhiteSpaceTrimStringConverter> to a custom string property `FileName`.  
+  
+ [!code-csharp[System.Configuration.ConfigurationConvertersCustomSection#0](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationConvertersCustomSection/CS/ConfigurationConvertersCustomSection.cs#0)]
+ [!code-vb[System.Configuration.ConfigurationConvertersCustomSection#0](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationConvertersCustomSection/VB/ConfigurationConvertersCustomSection.vb#0)]  
+  
+ The following is a configuration excerpt used by the previous example.  
+  
+```  
+<?xml version="1.0" encoding="utf-8"?>  
+<configuration>  
+  
+  <configSections>  
+    <section name="CustomSection"   
+      type="Samples.AspNet.CustomSection,   
+      ConfigurationConverters,   
+      Version=1.0.0.0, Culture=neutral,   
+      PublicKeyToken=null"   
+      allowDefinition="Everywhere"   
+      allowExeDefinition="MachineToApplication"   
+      restartOnExternalChanges="true" />  
+  </configSections>  
+  
+  <CustomSection fileName="default.txt" maxIdleTime="90" timeDelay="infinite" cdStr="str0, str1" permission="Read" maxUsers="Infinite"/>  
+  
+</configuration>  
+```  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,8 +63,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.WhiteSpaceTrimStringConverter" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Normally, you use the converter types provided by the system. The only time you need to use the <xref:System.Configuration.WhiteSpaceTrimStringConverter.%23ctor%2A> constructor is when you create your own conversion type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertFrom">
@@ -48,12 +92,19 @@
         <Parameter Name="data" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ctx">To be added.</param>
-        <param name="ci">To be added.</param>
-        <param name="data">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="ctx">The <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> object used for type conversions.</param>
+        <param name="ci">The <see cref="T:System.Globalization.CultureInfo" /> object used during conversion.</param>
+        <param name="data">The <see cref="T:System.String" /> object to convert.</param>
+        <summary>Converts a <see cref="T:System.String" /> to canonical form.</summary>
+        <returns>An object representing the converted value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The system uses the <xref:System.Configuration.WhiteSpaceTrimStringConverter.ConvertFrom%2A> method when reading from a configuration file to convert a <xref:System.String> value to its canonical form.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -75,13 +126,20 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="ctx">To be added.</param>
-        <param name="ci">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="ctx">The <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> object used for type conversions.</param>
+        <param name="ci">The <see cref="T:System.Globalization.CultureInfo" /> object used during conversion.</param>
+        <param name="value">The value to convert to.</param>
+        <param name="type">The type to convert to.</param>
+        <summary>Converts a <see cref="T:System.String" /> to canonical form.</summary>
+        <returns>An object representing the converted value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The system uses the <xref:System.Configuration.WhiteSpaceTrimStringConverter.ConvertTo%2A> method when writing to a configuration file to convert a <xref:System.String> value to its canonical form.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

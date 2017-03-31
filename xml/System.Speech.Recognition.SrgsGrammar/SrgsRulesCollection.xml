@@ -15,8 +15,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a collection of <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsRule" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ After you define the content for an <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule> object, you must add it to the <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Rules%2A> collection of an <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> instance using the <xref:System.Speech.Recognition.SrgsGrammar.SrgsRulesCollection.Add%2A> method. An <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule> cannot be used for recognition until it has been added to the <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Rules%2A> collection of an <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> instance.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +37,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsRulesCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,9 +63,12 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="rules">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="rules">The array of rule objects to add to the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsRulesCollection" /> object.</param>
+        <summary>Adds the contents of an array of <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsRule" /> objects to the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsRulesCollection" /> object.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="rules" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">Any <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsRule" /> object in the <paramref name="rules" /> array is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetKeyForItem">

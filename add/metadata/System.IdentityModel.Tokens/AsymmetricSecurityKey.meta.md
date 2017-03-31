@@ -1,34 +1,41 @@
 ---
 uid: System.IdentityModel.Tokens.AsymmetricSecurityKey
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.AsymmetricSecurityKey.GetHashAlgorithmForSignature(System.String)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.AsymmetricSecurityKey.HasPrivateKey
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.AsymmetricSecurityKey.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.AsymmetricSecurityKey.GetAsymmetricAlgorithm(System.String,System.Boolean)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.AsymmetricSecurityKey.GetSignatureFormatter(System.String)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.AsymmetricSecurityKey.GetSignatureDeformatter(System.String)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

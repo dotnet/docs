@@ -1,1 +1,0 @@
-			Dim clone As LocalClientSecuritySettings = settings.Clone()

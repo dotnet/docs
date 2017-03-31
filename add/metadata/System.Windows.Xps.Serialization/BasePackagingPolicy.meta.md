@@ -1,139 +1,149 @@
 ---
 uid: System.Windows.Xps.Serialization.BasePackagingPolicy
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.BasePackagingPolicy.#ctor
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.BasePackagingPolicy.ReleaseXmlWriterForFixedDocumentSequence
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.BasePackagingPolicy.ReleaseXmlWriterForFixedDocument
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.BasePackagingPolicy.AcquireXmlWriterForFixedDocument
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.BasePackagingPolicy.PreCommitCurrentPage
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.BasePackagingPolicy.CurrentFixedPageUri
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.BasePackagingPolicy.AcquireResourceStreamForXpsFont(System.String)
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.BasePackagingPolicy.AcquireResourceStreamForXpsFont
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.BasePackagingPolicy.RelateResourceToCurrentPage(System.Uri,System.String)
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.BasePackagingPolicy.AcquireXmlWriterForResourceDictionary
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.BasePackagingPolicy.CurrentFixedDocumentUri
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.BasePackagingPolicy.AcquireXmlWriterForFixedPage
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.BasePackagingPolicy.AcquireResourceStreamForXpsImage(System.String)
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.BasePackagingPolicy.ReleaseXmlWriterForFixedPage
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.BasePackagingPolicy.AcquireStreamForLinkTargets
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.BasePackagingPolicy.ReleaseResourceStreamForXpsFont(System.String)
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.BasePackagingPolicy.AcquireResourceStreamForXpsColorContext(System.String)
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.BasePackagingPolicy.RelateRestrictedFontToCurrentDocument(System.Uri)
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.BasePackagingPolicy.AcquireXmlWriterForFixedDocumentSequence
-internalonly: False
----
-
----
-uid: System.Windows.Xps.Serialization.BasePackagingPolicy.System#IDisposable#Dispose
-internalonly: False
----
-
----
-uid: System.Windows.Xps.Serialization.BasePackagingPolicy.AcquireResourceStreamForXpsResourceDictionary(System.String)
-internalonly: False
----
-
----
-uid: System.Windows.Xps.Serialization.BasePackagingPolicy.ReleaseResourceStreamForXpsResourceDictionary
-internalonly: False
----
-
----
-uid: System.Windows.Xps.Serialization.BasePackagingPolicy.ReleaseResourceStreamForXpsImage
-internalonly: False
----
-
----
-uid: System.Windows.Xps.Serialization.BasePackagingPolicy.ReleaseResourceStreamForXpsColorContext
-internalonly: False
----
-
----
-uid: System.Windows.Xps.Serialization.BasePackagingPolicy.AcquireXmlWriterForPage
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.BasePackagingPolicy.ReleaseResourceStreamForXpsFont
-internalonly: False
+manager: "leannef"
+---
+
+---
+uid: System.Windows.Xps.Serialization.BasePackagingPolicy.System#IDisposable#Dispose
+manager: "leannef"
+---
+
+---
+uid: System.Windows.Xps.Serialization.BasePackagingPolicy.AcquireResourceStreamForXpsResourceDictionary(System.String)
+manager: "leannef"
+---
+
+---
+uid: System.Windows.Xps.Serialization.BasePackagingPolicy.ReleaseResourceStreamForXpsResourceDictionary
+manager: "leannef"
+---
+
+---
+uid: System.Windows.Xps.Serialization.BasePackagingPolicy.ReleaseResourceStreamForXpsImage
+manager: "leannef"
+---
+
+---
+uid: System.Windows.Xps.Serialization.BasePackagingPolicy.ReleaseResourceStreamForXpsColorContext
+manager: "leannef"
+---
+
+---
+uid: System.Windows.Xps.Serialization.BasePackagingPolicy.AcquireXmlWriterForPage
+manager: "leannef"
+---
+
+---
+uid: System.Windows.Xps.Serialization.BasePackagingPolicy.ReleaseResourceStreamForXpsFont
+manager: "leannef"
+---
+
+---
+uid: System.Windows.Xps.Serialization.BasePackagingPolicy.AcquireResourceStreamForXpsFont
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.BasePackagingPolicy.PersistPrintTicket(System.Printing.PrintTicket)
-internalonly: False
+manager: "leannef"
 ---

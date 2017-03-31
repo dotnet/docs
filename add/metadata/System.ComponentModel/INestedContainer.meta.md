@@ -1,9 +1,13 @@
 ---
 uid: System.ComponentModel.INestedContainer
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.INestedContainer.Owner
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -1,24 +1,29 @@
 ---
 uid: System.Speech.Recognition.ReplacementText
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.ReplacementText.CountOfWords
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.ReplacementText.FirstWordIndex
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.ReplacementText.Text
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.ReplacementText.DisplayAttributes
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

@@ -1,54 +1,65 @@
 ---
 uid: System.Web.UI.ScriptComponentDescriptor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ScriptComponentDescriptor.Type
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ScriptComponentDescriptor.AddElementProperty(System.String,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ScriptComponentDescriptor.AddEvent(System.String,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ScriptComponentDescriptor.GetScript
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ScriptComponentDescriptor.ClientID
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ScriptComponentDescriptor.AddScriptProperty(System.String,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ScriptComponentDescriptor.ID
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ScriptComponentDescriptor.AddProperty(System.String,System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ScriptComponentDescriptor.#ctor(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ScriptComponentDescriptor.AddComponentProperty(System.String,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

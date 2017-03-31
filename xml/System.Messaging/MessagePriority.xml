@@ -10,8 +10,30 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the priority Message Queuing applies to a message while it is en route to a queue, and when inserting the message into the destination queue.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Messaging.MessagePriority> enumeration is used by the <xref:System.Messaging.Message> class's <xref:System.Messaging.Message.Priority%2A> property. This property affects how Message Queuing handles the message both while it is en route and once it reaches its destination. Higher-priority messages are given preference during routing and inserted toward the front of the destination queue. Messages with the same priority are placed in the queue according to their arrival time.  
+  
+ When Message Queuing routes a message to a public queue, the priority level of the message is added to the priority level of the public queue (which you can access through the <xref:System.Messaging.MessageQueue> class's <xref:System.Messaging.MessageQueue.BasePriority%2A> property). The priority level of the queue has no effect on how messages are placed in the queue, only on how Message Queuing handles the message while en route.  
+  
+ Base priority applies only to public queues. For a private queue, the base priority is always zero.  
+  
+ You can set a meaningful priority only for non-transactional messages. Message Queuing automatically sets the priority for transactional messages to `Lowest`, which causes transactional message priority to be ignored.  
+  
+   
+  
+## Examples  
+ The following example sends two messages of different priorities to the queue, and retrieves them subsequently.  
+  
+ [!code-cpp[Message.DefaultPropertiesToSend#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Message.DefaultPropertiesToSend/CPP/message_defaultandpriority.cpp#1)]
+ [!code-csharp[Message.DefaultPropertiesToSend#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Message.DefaultPropertiesToSend/CS/message_defaultandpriority.cs#1)]
+ [!code-vb[Message.DefaultPropertiesToSend#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Message.DefaultPropertiesToSend/VB/message_defaultandpriority.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AboveNormal">
@@ -27,7 +49,7 @@
         <ReturnType>System.Messaging.MessagePriority</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Between <see cref="F:System.Messaging.MessagePriority.High" /> and <see cref="F:System.Messaging.MessagePriority.Normal" /> message priority.</summary>
       </Docs>
     </Member>
     <Member MemberName="High">
@@ -43,7 +65,7 @@
         <ReturnType>System.Messaging.MessagePriority</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>High message priority.</summary>
       </Docs>
     </Member>
     <Member MemberName="Highest">
@@ -59,7 +81,7 @@
         <ReturnType>System.Messaging.MessagePriority</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Highest message priority.</summary>
       </Docs>
     </Member>
     <Member MemberName="Low">
@@ -75,7 +97,7 @@
         <ReturnType>System.Messaging.MessagePriority</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Low message priority.</summary>
       </Docs>
     </Member>
     <Member MemberName="Lowest">
@@ -91,7 +113,7 @@
         <ReturnType>System.Messaging.MessagePriority</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Lowest message priority.</summary>
       </Docs>
     </Member>
     <Member MemberName="Normal">
@@ -107,7 +129,7 @@
         <ReturnType>System.Messaging.MessagePriority</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Normal message priority.</summary>
       </Docs>
     </Member>
     <Member MemberName="VeryHigh">
@@ -123,7 +145,7 @@
         <ReturnType>System.Messaging.MessagePriority</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Between <see langword="Highest" /> and <see langword="High" /> message priority.</summary>
       </Docs>
     </Member>
     <Member MemberName="VeryLow">
@@ -139,7 +161,7 @@
         <ReturnType>System.Messaging.MessagePriority</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Between <see langword="Low" /> and <see langword="Lowest" /> message priority.</summary>
       </Docs>
     </Member>
   </Members>

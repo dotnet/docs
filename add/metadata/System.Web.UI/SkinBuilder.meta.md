@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.SkinBuilder
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.SkinBuilder.ApplyTheme
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.SkinBuilder.#ctor(System.Web.UI.ThemeProvider,System.Web.UI.Control,System.Web.UI.ControlBuilder,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

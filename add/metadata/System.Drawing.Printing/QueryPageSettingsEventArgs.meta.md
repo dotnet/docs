@@ -1,14 +1,20 @@
 ---
 uid: System.Drawing.Printing.QueryPageSettingsEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Printing.QueryPageSettingsEventArgs.#ctor(System.Drawing.Printing.PageSettings)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Printing.QueryPageSettingsEventArgs.PageSettings
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

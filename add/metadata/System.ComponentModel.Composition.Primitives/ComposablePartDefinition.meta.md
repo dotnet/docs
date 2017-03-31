@@ -1,29 +1,41 @@
 ---
 uid: System.ComponentModel.Composition.Primitives.ComposablePartDefinition
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Primitives.ComposablePartDefinition.Metadata
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Primitives.ComposablePartDefinition.#ctor
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Primitives.ComposablePartDefinition.ImportDefinitions
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Primitives.ComposablePartDefinition.CreatePart
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Primitives.ComposablePartDefinition.ExportDefinitions
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

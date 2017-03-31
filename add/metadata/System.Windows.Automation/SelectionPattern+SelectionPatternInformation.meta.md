@@ -1,19 +1,27 @@
 ---
 uid: System.Windows.Automation.SelectionPattern.SelectionPatternInformation
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.SelectionPattern.SelectionPatternInformation.IsSelectionRequired
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.SelectionPattern.SelectionPatternInformation.GetSelection
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.SelectionPattern.SelectionPatternInformation.CanSelectMultiple
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---

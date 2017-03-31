@@ -1,69 +1,97 @@
 ---
 uid: Microsoft.Build.Tasks.Xaml.BuildExtensionContext
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.BuildExtensionContext.References
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.BuildExtensionContext.Language
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.BuildExtensionContext.RootNamespace
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.BuildExtensionContext.GeneratedResourceFiles
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.BuildExtensionContext.AssemblyName
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.BuildExtensionContext.OutputPath
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.BuildExtensionContext.AddGeneratedFile(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.BuildExtensionContext.XamlBuildLogger
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.BuildExtensionContext.GeneratedFiles
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.BuildExtensionContext.LocalAssembly
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.BuildExtensionContext.SourceCodeFiles
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.BuildExtensionContext.AddGeneratedResourceFile(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.BuildExtensionContext.IsInProcessXamlMarkupCompile
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

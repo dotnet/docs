@@ -1,29 +1,41 @@
 ---
 uid: Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.CommandLineArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.InternalCommandLine
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.IsNetworkDeployed
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.Deployment
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

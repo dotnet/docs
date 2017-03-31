@@ -1,34 +1,53 @@
 ---
 uid: System.Speech.Recognition.Choices
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.Choices.#ctor(System.String[])
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.Choices.ToGrammarBuilder
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.Choices.#ctor
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
+---
+
+---
+uid: System.Speech.Recognition.Choices.Add
+ms.author: "kbridge"
+manager: "ghogen"
+---
+
+---
+uid: System.Speech.Recognition.Choices.#ctor
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.Choices.Add(System.String[])
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.Choices.#ctor(System.Speech.Recognition.GrammarBuilder[])
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.Choices.Add(System.Speech.Recognition.GrammarBuilder[])
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

@@ -1,24 +1,34 @@
 ---
 uid: System.ServiceModel.Dispatcher.JsonQueryStringConverter
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.JsonQueryStringConverter.ConvertStringToValue(System.String,System.Type)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.JsonQueryStringConverter.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.JsonQueryStringConverter.CanConvert(System.Type)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.JsonQueryStringConverter.ConvertValueToString(System.Object,System.Type)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

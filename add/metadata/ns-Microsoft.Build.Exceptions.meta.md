@@ -1,4 +1,5 @@
 ---
 uid: Microsoft.Build.Exceptions
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

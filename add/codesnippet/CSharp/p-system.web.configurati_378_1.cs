@@ -1,1 +1,0 @@
-bufferModeSetting.MaxBufferThreads = 1;

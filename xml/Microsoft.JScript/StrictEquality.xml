@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Performs comparison operations. This class belongs to the abstract syntax tree category.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,10 +32,10 @@
         <Parameter Name="v2" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="v1">To be added.</param>
-        <param name="v2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="v1">The first operand.</param>
+        <param name="v2">The second operand.</param>
+        <summary>Performs a comparison operation.</summary>
+        <returns>The result of the operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

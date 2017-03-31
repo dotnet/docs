@@ -1,1 +1,0 @@
-      returnTime = DateTime.SpecifyKind(cal.AddSeconds(time, seconds), time.Kind);

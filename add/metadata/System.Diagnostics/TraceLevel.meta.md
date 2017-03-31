@@ -1,4 +1,6 @@
 ---
 uid: System.Diagnostics.TraceLevel
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

@@ -1,14 +1,27 @@
 ---
 uid: System.Web.RegularExpressions.LTRegex
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.RegularExpressions.LTRegex.#ctor(System.TimeSpan)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.RegularExpressions.LTRegex.#ctor
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.RegularExpressions.LTRegex.#ctor
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

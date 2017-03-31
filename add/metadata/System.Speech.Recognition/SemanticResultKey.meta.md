@@ -1,19 +1,29 @@
 ---
 uid: System.Speech.Recognition.SemanticResultKey
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SemanticResultKey.#ctor(System.String,System.Speech.Recognition.GrammarBuilder[])
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SemanticResultKey.#ctor(System.String,System.String[])
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
+---
+
+---
+uid: System.Speech.Recognition.SemanticResultKey.#ctor
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SemanticResultKey.ToGrammarBuilder
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

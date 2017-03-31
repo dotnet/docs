@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the context data for the <see cref="T:System.Web.UI.WebControls.ContextDataSource" /> class.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.ContextDataSource" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <Parameter Name="context" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="context">The data context object to use.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.ContextDataSource" /> class by using a data context object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +61,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the instance of the data context object.</summary>
+        <value>An instance of the data context object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,8 +79,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the property or field in the data context class that represents a data collection.</summary>
+        <value>The property or field in the data context class that represents a data collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

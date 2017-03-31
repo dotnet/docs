@@ -1,14 +1,17 @@
 ---
 uid: System.IdentityModel.Services.AuthorizationFailedEventArgs
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.AuthorizationFailedEventArgs.RedirectToIdentityProvider
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.AuthorizationFailedEventArgs.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

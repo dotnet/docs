@@ -1,29 +1,48 @@
 ---
 uid: System.ServiceModel.Channels.HttpMessageHandlerFactory
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.HttpMessageHandlerFactory.#ctor(System.Type[])
-internalonly: False
----
-
----
-uid: System.ServiceModel.Channels.HttpMessageHandlerFactory.OnCreate(System.Net.Http.HttpMessageHandler)
-internalonly: False
----
-
----
-uid: System.ServiceModel.Channels.HttpMessageHandlerFactory.Create(System.Net.Http.HttpMessageHandler)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.HttpMessageHandlerFactory.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Channels.HttpMessageHandlerFactory.OnCreate(System.Net.Http.HttpMessageHandler)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Channels.HttpMessageHandlerFactory.Create(System.Net.Http.HttpMessageHandler)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Channels.HttpMessageHandlerFactory.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.HttpMessageHandlerFactory.#ctor(System.Func{System.Collections.Generic.IEnumerable{System.Net.Http.DelegatingHandler}})
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

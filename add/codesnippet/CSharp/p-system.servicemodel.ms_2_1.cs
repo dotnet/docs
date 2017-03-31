@@ -1,1 +1,0 @@
-            string MessageId = message.Id;

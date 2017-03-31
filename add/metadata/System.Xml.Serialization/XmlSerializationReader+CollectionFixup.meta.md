@@ -1,24 +1,34 @@
 ---
 uid: System.Xml.Serialization.XmlSerializationReader.CollectionFixup
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.XmlSerializationReader.CollectionFixup.Collection
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.XmlSerializationReader.CollectionFixup.#ctor(System.Object,System.Xml.Serialization.XmlSerializationCollectionFixupCallback,System.Object)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.XmlSerializationReader.CollectionFixup.CollectionItems
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.XmlSerializationReader.CollectionFixup.Callback
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

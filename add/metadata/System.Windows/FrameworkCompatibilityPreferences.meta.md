@@ -1,19 +1,25 @@
 ---
 uid: System.Windows.FrameworkCompatibilityPreferences
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.FrameworkCompatibilityPreferences.ShouldThrowOnCopyOrCutFailure
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.FrameworkCompatibilityPreferences.KeepTextBoxDisplaySynchronizedWithTextProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.FrameworkCompatibilityPreferences.AreInactiveSelectionHighlightBrushKeysSupported
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

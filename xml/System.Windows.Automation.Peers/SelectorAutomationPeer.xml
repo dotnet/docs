@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Exposes <see cref="T:System.Windows.Controls.Primitives.Selector" /> types to [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)].</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,8 +32,8 @@
         <Parameter Name="owner" Type="System.Windows.Controls.Primitives.Selector" />
       </Parameters>
       <Docs>
-        <param name="owner">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="owner">The <see cref="T:System.Windows.Controls.Primitives.Selector" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.SelectorAutomationPeer" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.SelectorAutomationPeer" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +51,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the control type for the <see cref="T:System.Windows.Controls.Primitives.Selector" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.SelectorAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" />.</summary>
+        <returns>The <see cref="F:System.Windows.Automation.Peers.AutomationControlType.List" /> enumeration value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,9 +72,9 @@
         <Parameter Name="patternInterface" Type="System.Windows.Automation.Peers.PatternInterface" />
       </Parameters>
       <Docs>
-        <param name="patternInterface">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="patternInterface">A value in the enumeration.</param>
+        <summary>Gets the control pattern for the <see cref="T:System.Windows.Controls.Primitives.Selector" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.SelectorAutomationPeer" />.</summary>
+        <returns>If <paramref name="patternInterface" /> is <see cref="F:System.Windows.Automation.Peers.PatternInterface.Selection" />, this method returns a pointer to the current instance; otherwise <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,8 +91,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This type or member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
+        <value>
+          <see langword="true" /> if multiple selection is allowed; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,8 +111,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>This type or member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
+        <returns>A collection of UI Automation providers. true if multiple selection is allowed; otherwise false.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,8 +129,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This type or member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
+        <value>Returns <see langword="S_OK" /> if successful, or an error value otherwise.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

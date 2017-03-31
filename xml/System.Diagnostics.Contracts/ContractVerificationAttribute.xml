@@ -28,8 +28,21 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Instructs analysis tools to assume the correctness of an assembly, type, or member without performing static verification.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use `ContractVerification(false)` to explicitly mark an assembly, type, or member as not requiring verification. The most specific element found (member, type, and then assembly) takes precedence. Applying this attribute to a property, type, or assembly has the following effects:  
+  
+-   When you apply it to a property, it applies to both the `get` accessor and the `set` accessor.  
+  
+-   When you apply it to a type, it applies to all members of the type, including nested types.  
+  
+-   When you apply it to an assembly, it applies to all types and members of the assembly.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -54,8 +67,9 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">
+          <see langword="true" /> to require verification; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Contracts.ContractVerificationAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,8 +95,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the value that indicates whether to verify the contract of the target.</summary>
+        <value>
+          <see langword="true" /> if verification is required; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

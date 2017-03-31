@@ -1,4 +1,4 @@
 ---
 uid: System.Management
-internalonly: False
+manager: "jillfra"
 ---

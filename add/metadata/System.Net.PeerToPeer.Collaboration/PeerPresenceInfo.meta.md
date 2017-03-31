@@ -1,24 +1,35 @@
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerPresenceInfo
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerPresenceInfo.#ctor(System.Net.PeerToPeer.Collaboration.PeerPresenceStatus,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerPresenceInfo.PresenceStatus
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerPresenceInfo.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerPresenceInfo.DescriptiveText
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.PeerToPeer.Collaboration.PeerPresenceInfo.#ctor
+ms.author: "bobdel"
+manager: "markl"
 ---

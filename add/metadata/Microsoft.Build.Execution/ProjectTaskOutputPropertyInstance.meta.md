@@ -1,39 +1,47 @@
 ---
 uid: Microsoft.Build.Execution.ProjectTaskOutputPropertyInstance
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ProjectTaskOutputPropertyInstance.PropertyName
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ProjectTaskOutputPropertyInstance.Location
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ProjectTaskOutputPropertyInstance.PropertyNameLocation
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ProjectTaskOutputPropertyInstance.TaskParameter
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ProjectTaskOutputPropertyInstance.ConditionLocation
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ProjectTaskOutputPropertyInstance.TaskParameterLocation
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ProjectTaskOutputPropertyInstance.Condition
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

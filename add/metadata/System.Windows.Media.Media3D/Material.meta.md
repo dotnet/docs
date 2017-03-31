@@ -1,29 +1,45 @@
 ---
 uid: System.Windows.Media.Media3D.Material
-internalonly: False
----
-
----
-uid: System.Windows.Media.Media3D.Material.CloneCurrentValue
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Media3D.Material.ToString
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Media3D.Material.CloneCurrentValue
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.Media3D.Material.ToString
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Media3D.Material.System#IFormattable#ToString(System.String,System.IFormatProvider)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Media3D.Material.Clone
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Media3D.Material.ToString(System.IFormatProvider)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a key identifier clause that is based on XML.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,9 +28,18 @@
         <Parameter Name="referenceXml" Type="System.Xml.XmlElement" />
       </Parameters>
       <Docs>
-        <param name="referenceXml">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="referenceXml">The XML element that represents the key identifier clause. Sets the value of the <see cref="P:System.IdentityModel.Tokens.GenericXmlSecurityKeyIdentifierClause.ReferenceXml" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.GenericXmlSecurityKeyIdentifierClause" /> class by using the specified XML element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.ClauseType%2A> property is initialized to `null` and the <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.DerivationLength%2A> property is initialized to zero in the new instance.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="referenceXML" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -48,11 +57,20 @@
         <Parameter Name="derivationLength" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="referenceXml">To be added.</param>
-        <param name="derivationNonce">To be added.</param>
-        <param name="derivationLength">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="referenceXml">The XML element that represents the key identifier clause. Sets the value of the <see cref="P:System.IdentityModel.Tokens.GenericXmlSecurityKeyIdentifierClause.ReferenceXml" /> property.</param>
+        <param name="derivationNonce">An array of <see cref="T:System.Byte" /> that contains the nonce that was used to create a derived key. Sets the value that is returned by the <see cref="M:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.GetDerivationNonce" /> method.</param>
+        <param name="derivationLength">The size of the derived key. Sets the value of the <see cref="P:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.DerivationLength" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.GenericXmlSecurityKeyIdentifierClause" /> class by using the specified XML element, nonce, and derivation length.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.ClauseType%2A> property is initialized to `null` in the new instance.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="referenceXML" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Matches">
@@ -71,10 +89,18 @@
         <Parameter Name="keyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
       </Parameters>
       <Docs>
-        <param name="keyIdentifierClause">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="keyIdentifierClause">The key identifier clause to which to compare current instance.</param>
+        <summary>Returns a value that indicates whether specified key identifier clause matches the current instance.</summary>
+        <returns>
+          <see langword="true" /> if the specified key identifier clause matches the current instance; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For the match to succeed, the specified key identifier clause must be assignable from <xref:System.IdentityModel.Tokens.GenericXmlSecurityKeyIdentifierClause> and its markup (XML) must match that of this instance. (The <xref:System.Xml.XmlNode.OuterXml%2A> property of the element specified by the <xref:System.IdentityModel.Tokens.GenericXmlSecurityKeyIdentifierClause.ReferenceXml%2A> property is compared for the two instances.)  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReferenceXml">
@@ -90,8 +116,8 @@
         <ReturnType>System.Xml.XmlElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the XML element that represents the key identifier clause.</summary>
+        <value>The XML element that represents the key identifier clause.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

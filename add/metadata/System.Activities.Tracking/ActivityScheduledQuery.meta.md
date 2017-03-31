@@ -1,19 +1,27 @@
 ---
 uid: System.Activities.Tracking.ActivityScheduledQuery
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Tracking.ActivityScheduledQuery.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Tracking.ActivityScheduledQuery.ChildActivityName
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Tracking.ActivityScheduledQuery.ActivityName
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -21,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the database table that a class is mapped to.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -43,8 +43,8 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the table the class is mapped to.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.Schema.TableAttribute" /> class using the specified name of the table.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,8 +66,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the table the class is mapped to.</summary>
+        <value>The name of the table the class is mapped to.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,8 +89,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the schema of the table the class is mapped to.</summary>
+        <value>The schema of the table the class is mapped to.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

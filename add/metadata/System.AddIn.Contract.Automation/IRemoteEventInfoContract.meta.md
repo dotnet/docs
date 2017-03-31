@@ -1,19 +1,27 @@
 ---
 uid: System.AddIn.Contract.Automation.IRemoteEventInfoContract
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.AddIn.Contract.Automation.IRemoteEventInfoContract.GetMemberData
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.AddIn.Contract.Automation.IRemoteEventInfoContract.GetRemoveMethod
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.AddIn.Contract.Automation.IRemoteEventInfoContract.GetAddMethod
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

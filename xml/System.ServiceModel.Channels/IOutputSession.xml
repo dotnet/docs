@@ -13,8 +13,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the interface for the session implemented on the sending side of a one-way communication between messaging endpoints.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ On the other side of the message interchange, the <xref:System.ServiceModel.Channels.IInputSession> interface represents an incoming <xref:System.ServiceModel.Channels.ISession> implemented on the receiving side of a one-way communication between messaging endpoints. Note these two sessions are distinct.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members />
 </Type>

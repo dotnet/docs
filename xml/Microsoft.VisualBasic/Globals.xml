@@ -16,8 +16,31 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The <see langword="Globals" /> module contains script engine functions.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This module supports the Visual Basic language keywords and runtime library members that provide information about the runtime currently in use.  
+  
+   
+  
+## Examples  
+ The following example uses the `ScriptEngineMajorVersion` property and related properties to return a string describing the current runtime information:  
+  
+```  
+Function getRuntimeInfo() As String  
+    Dim runtime As String = ScriptEngine & " Version "  
+    runtime &= CStr(ScriptEngineMajorVersion) & "."  
+    runtime &= CStr(ScriptEngineMinorVersion) & "."  
+    runtime &= CStr(ScriptEngineBuildVersion)  
+    ' Return the current runtime information.  
+    Return runtime  
+End Function  
+```  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ScriptEngine">
@@ -33,9 +56,25 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Returns a <see langword="String" /> representing the runtime currently in use.</summary>
+        <value>Returns a <see langword="String" /> representing the runtime currently in use.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `ScriptEngine` property returns the string "VB".  
+  
+ You can use `ScriptEngine` when your application is running as a standalone program, in a script, or in a host application.  
+  
+   
+  
+## Examples  
+ The following example uses the `ScriptEngine` property and related properties to return a string describing the current run-time information:  
+  
+ [!code-vb[VbVbalrScriptEngineProperties#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrScriptEngineProperties/VB/Module1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ScriptEngineBuildVersion">
@@ -51,9 +90,25 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Returns an <see langword="Integer" /> containing the build version number of the runtime currently in use.</summary>
+        <value>Returns an <see langword="Integer" /> containing the build version number of the runtime currently in use.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The returned value corresponds directly to the version information contained in the DLL for the current runtime.  
+  
+ You can use `ScriptEngineBuildVersion` when your application is running as a standalone program, in a script, or in a host application.  
+  
+   
+  
+## Examples  
+ The following example uses the `ScriptEngineBuildVersion` property and related properties to return a string describing the current run-time information:  
+  
+ [!code-vb[VbVbalrScriptEngineProperties#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrScriptEngineProperties/VB/Module1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ScriptEngineMajorVersion">
@@ -69,9 +124,25 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Returns an <see langword="Integer" /> containing the major version number of the runtime currently in use.</summary>
+        <value>Returns an <see langword="Integer" /> containing the major version number of the runtime currently in use.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The returned value corresponds directly to the version information contained in the DLL for the current runtime.  
+  
+ You can use `ScriptEngineMajorVersion` when your application is running as a standalone program, in a script, or in a host application.  
+  
+   
+  
+## Examples  
+ The following example uses the `ScriptEngineMajorVersion` property and related properties to return a string describing the current run-time information:  
+  
+ [!code-vb[VbVbalrScriptEngineProperties#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrScriptEngineProperties/VB/Module1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ScriptEngineMinorVersion">
@@ -87,9 +158,25 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Returns an <see langword="Integer" /> containing the minor version number of the runtime currently in use.</summary>
+        <value>Returns an <see langword="Integer" /> containing the minor version number of the runtime currently in use.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The returned value corresponds directly to the version information contained in the DLL for the current runtime.  
+  
+ You can use `ScriptEngineMinorVersion` when your application is running as a standalone program, in a script, or in a host application.  
+  
+   
+  
+## Examples  
+ The following example uses the `ScriptEngineMinorVersion` property and related properties to return a string describing the current run-time information:  
+  
+ [!code-vb[VbVbalrScriptEngineProperties#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrScriptEngineProperties/VB/Module1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a collection of guide lines that can assist in adjusting rendered figures to a device pixel grid.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.GuidelineSet" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,9 +44,9 @@
         <Parameter Name="guidelinesY" Type="System.Double[]" />
       </Parameters>
       <Docs>
-        <param name="guidelinesX">To be added.</param>
-        <param name="guidelinesY">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="guidelinesX">The value of the <see cref="P:System.Windows.Media.GuidelineSet.GuidelinesX" /> property.</param>
+        <param name="guidelinesY">The value of the <see cref="P:System.Windows.Media.GuidelineSet.GuidelinesY" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.GuidelineSet" /> class with the specified <see cref="P:System.Windows.Media.GuidelineSet.GuidelinesX" /> and <see cref="P:System.Windows.Media.GuidelineSet.GuidelinesY" /> values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,9 +64,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.GuidelineSet" />, making deep copies of this object's values. When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CloneCurrentValue">
@@ -83,9 +92,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.GuidelineSet" /> object, making deep copies of this object's current values. Resource references, data bindings, and animations are not copied, but their current values are.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceCore">
@@ -120,9 +138,23 @@
         <ReturnType>System.Windows.Media.DoubleCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a series of coordinate values that represent guide lines on the X-axis.</summary>
+        <value>A <see cref="T:System.Windows.Media.DoubleCollection" /> of values that represent guide lines on the X-axis.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_GuidelinesX"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.GuidelineSet.GuidelinesXProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GuidelinesXProperty">
@@ -138,7 +170,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Media.GuidelineSet.GuidelinesX" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,9 +187,23 @@
         <ReturnType>System.Windows.Media.DoubleCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a series of coordinate values that represent guide lines on the Y-axis.</summary>
+        <value>A <see cref="T:System.Windows.Media.DoubleCollection" /> of values that represent guide lines on the Y-axis.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_GuidelinesY"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.GuidelineSet.GuidelinesYProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GuidelinesYProperty">
@@ -173,7 +219,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Media.GuidelineSet.GuidelinesY" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

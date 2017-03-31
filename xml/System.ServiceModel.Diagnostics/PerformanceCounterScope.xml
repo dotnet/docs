@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies whether performance counters for the assembly are enabled.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used to configure the <xref:System.ServiceModel.Configuration.DiagnosticSection.PerformanceCounters%2A> property to indicate whether performance counters are enabled for diagnostics purpose.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="All">
@@ -27,7 +34,7 @@
         <ReturnType>System.ServiceModel.Diagnostics.PerformanceCounterScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Performance counters can be viewed at runtime.</summary>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -43,7 +50,7 @@
         <ReturnType>System.ServiceModel.Diagnostics.PerformanceCounterScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A single performance counter instance _WCF_Admin is created. This instance is used to enable the collection of SQM data for used by the infrastructure. None of the counter values for this instance are updated and therefore will remain at zero. This is the default value if no configuration is present for [!INCLUDE[indigo1](~/includes/indigo1-md.md)].</summary>
       </Docs>
     </Member>
     <Member MemberName="Off">
@@ -59,7 +66,7 @@
         <ReturnType>System.ServiceModel.Diagnostics.PerformanceCounterScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Performance counters are disabled. This is the default value.</summary>
       </Docs>
     </Member>
     <Member MemberName="ServiceOnly">
@@ -75,7 +82,7 @@
         <ReturnType>System.ServiceModel.Diagnostics.PerformanceCounterScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Only performance counters relevant to this service is enabled.</summary>
       </Docs>
     </Member>
   </Members>

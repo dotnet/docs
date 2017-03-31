@@ -1,9 +1,13 @@
 ---
 uid: System.Windows.Controls.Primitives.ResizeGrip
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Primitives.ResizeGrip.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -1,9 +1,13 @@
 ---
 uid: System.Web.UI.WebControls.WizardStepControlBuilder
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.WizardStepControlBuilder.#ctor
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

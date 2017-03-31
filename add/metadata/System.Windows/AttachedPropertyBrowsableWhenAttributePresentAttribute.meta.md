@@ -1,24 +1,33 @@
 ---
 uid: System.Windows.AttachedPropertyBrowsableWhenAttributePresentAttribute
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.AttachedPropertyBrowsableWhenAttributePresentAttribute.#ctor(System.Type)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.AttachedPropertyBrowsableWhenAttributePresentAttribute.AttributeType
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.AttachedPropertyBrowsableWhenAttributePresentAttribute.GetHashCode
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.AttachedPropertyBrowsableWhenAttributePresentAttribute.Equals(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

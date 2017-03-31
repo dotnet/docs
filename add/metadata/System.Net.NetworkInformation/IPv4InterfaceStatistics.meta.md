@@ -1,69 +1,83 @@
 ---
 uid: System.Net.NetworkInformation.IPv4InterfaceStatistics
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPv4InterfaceStatistics.UnicastPacketsSent
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPv4InterfaceStatistics.BytesSent
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPv4InterfaceStatistics.OutgoingPacketsWithErrors
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPv4InterfaceStatistics.IncomingPacketsWithErrors
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPv4InterfaceStatistics.NonUnicastPacketsReceived
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPv4InterfaceStatistics.IncomingPacketsDiscarded
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPv4InterfaceStatistics.OutgoingPacketsDiscarded
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPv4InterfaceStatistics.BytesReceived
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPv4InterfaceStatistics.UnicastPacketsReceived
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPv4InterfaceStatistics.IncomingUnknownProtocolPackets
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPv4InterfaceStatistics.NonUnicastPacketsSent
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPv4InterfaceStatistics.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPv4InterfaceStatistics.OutputQueueLength
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

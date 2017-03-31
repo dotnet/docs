@@ -30,7 +30,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides information about an <see cref="T:System.Reflection.Assembly" /> reference.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -52,7 +52,7 @@
         <ReturnType>System.Reflection.AssemblyNameFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that just-in-time (JIT) compiler optimization is disabled for the assembly. This is the exact opposite of the meaning that is suggested by the member name.</summary>
       </Docs>
     </Member>
     <Member MemberName="EnableJITcompileTracking">
@@ -73,7 +73,7 @@
         <ReturnType>System.Reflection.AssemblyNameFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that just-in-time (JIT) compiler tracking is enabled for the assembly.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -101,7 +101,7 @@
         <ReturnType>System.Reflection.AssemblyNameFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that no flags are in effect.</summary>
       </Docs>
     </Member>
     <Member MemberName="PublicKey">
@@ -129,7 +129,7 @@
         <ReturnType>System.Reflection.AssemblyNameFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that a public key is formed from the full public key rather than the public key token.</summary>
       </Docs>
     </Member>
     <Member MemberName="Retargetable">
@@ -157,7 +157,7 @@
         <ReturnType>System.Reflection.AssemblyNameFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the assembly can be retargeted at runtime to an assembly from a different publisher. This value supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
       </Docs>
     </Member>
   </Members>

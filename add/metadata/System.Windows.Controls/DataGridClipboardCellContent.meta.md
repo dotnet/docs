@@ -1,44 +1,60 @@
 ---
 uid: System.Windows.Controls.DataGridClipboardCellContent
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.DataGridClipboardCellContent.op_Equality(System.Windows.Controls.DataGridClipboardCellContent,System.Windows.Controls.DataGridClipboardCellContent)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.DataGridClipboardCellContent.Equals(System.Object)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.DataGridClipboardCellContent.#ctor(System.Object,System.Windows.Controls.DataGridColumn,System.Object)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.DataGridClipboardCellContent.Content
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.DataGridClipboardCellContent.op_Inequality(System.Windows.Controls.DataGridClipboardCellContent,System.Windows.Controls.DataGridClipboardCellContent)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.DataGridClipboardCellContent.Column
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.DataGridClipboardCellContent.Item
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.DataGridClipboardCellContent.GetHashCode
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

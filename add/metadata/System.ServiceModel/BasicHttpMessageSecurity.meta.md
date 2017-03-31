@@ -1,29 +1,41 @@
 ---
 uid: System.ServiceModel.BasicHttpMessageSecurity
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.BasicHttpMessageSecurity.ShouldSerializeAlgorithmSuite
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.BasicHttpMessageSecurity.AlgorithmSuite
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.BasicHttpMessageSecurity.ClientCredentialType
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.BasicHttpMessageSecurity.ShouldSerializeClientCredentialType
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.BasicHttpMessageSecurity.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

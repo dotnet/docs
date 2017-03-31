@@ -19,8 +19,26 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an expression cast to a data type or interface.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.CodeDom.CodeCastExpression> can be used to represent an expression cast to a different data type or interface.  
+  
+ The <xref:System.CodeDom.CodeCastExpression.Expression%2A> property indicates the <xref:System.CodeDom.CodeExpression> to cast. The <xref:System.CodeDom.CodeCastExpression.TargetType%2A> property indicates the type to cast to.  
+  
+   
+  
+## Examples  
+ This example demonstrates using a <xref:System.CodeDom.CodeCastExpression> to cast a `System.Int32` value to a `System.Int64` data type.  
+  
+ [!code-cpp[CodeCastExpressionExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeCastExpressionExample/CPP/codecastexpressionexample.cpp#2)]
+ [!code-csharp[CodeCastExpressionExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeCastExpressionExample/CS/codecastexpressionexample.cs#2)]
+ [!code-vb[CodeCastExpressionExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeCastExpressionExample/VB/codecastexpressionexample.vb#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,7 +52,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeCastExpression" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,9 +70,9 @@
         <Parameter Name="expression" Type="System.CodeDom.CodeExpression" />
       </Parameters>
       <Docs>
-        <param name="targetType">To be added.</param>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="targetType">A <see cref="T:System.CodeDom.CodeTypeReference" /> that indicates the destination type of the cast.</param>
+        <param name="expression">The <see cref="T:System.CodeDom.CodeExpression" /> to cast.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeCastExpression" /> class using the specified destination type and expression.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,9 +90,9 @@
         <Parameter Name="expression" Type="System.CodeDom.CodeExpression" />
       </Parameters>
       <Docs>
-        <param name="targetType">To be added.</param>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="targetType">The name of the destination type of the cast.</param>
+        <param name="expression">The <see cref="T:System.CodeDom.CodeExpression" /> to cast.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeCastExpression" /> class using the specified destination type and expression.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,9 +110,9 @@
         <Parameter Name="expression" Type="System.CodeDom.CodeExpression" />
       </Parameters>
       <Docs>
-        <param name="targetType">To be added.</param>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="targetType">The destination data type of the cast.</param>
+        <param name="expression">The <see cref="T:System.CodeDom.CodeExpression" /> to cast.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeCastExpression" /> class using the specified destination type and expression.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,8 +129,8 @@
         <ReturnType>System.CodeDom.CodeExpression</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the expression to cast.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the code to cast.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,8 +147,8 @@
         <ReturnType>System.CodeDom.CodeTypeReference</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the destination type of the cast.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeTypeReference" /> that indicates the destination type to cast to.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

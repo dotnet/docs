@@ -1,4 +1,5 @@
 ---
 uid: System.UriHostNameType
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

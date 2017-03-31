@@ -1,284 +1,402 @@
 ---
 uid: System.Windows.Forms.TreeNode
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TreeNode.#ctor(System.String,System.Windows.Forms.TreeNode[])
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TreeNode.IsEditing
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TreeNode.Remove
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TreeNode.Deserialize(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TreeNode.Collapse(System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TreeNode.Collapse
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TreeNode.NodeFont
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TreeNode.StateImageIndex
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TreeNode.Checked
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TreeNode.Parent
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TreeNode.TreeView
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TreeNode.StateImageKey
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TreeNode.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TreeNode.NextNode
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TreeNode.ToolTipText
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TreeNode.#ctor(System.String)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.TreeNode.Serialize(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.TreeNode.FirstNode
-internalonly: False
----
-
----
-uid: System.Windows.Forms.TreeNode.Text
-internalonly: False
----
-
----
-uid: System.Windows.Forms.TreeNode.FullPath
-internalonly: False
----
-
----
-uid: System.Windows.Forms.TreeNode.IsExpanded
-internalonly: False
----
-
----
-uid: System.Windows.Forms.TreeNode.Nodes
-internalonly: False
----
-
----
-uid: System.Windows.Forms.TreeNode.ToString
-internalonly: False
----
-
----
-uid: System.Windows.Forms.TreeNode.Toggle
-internalonly: False
----
-
----
-uid: System.Windows.Forms.TreeNode.Index
-internalonly: False
----
-
----
-uid: System.Windows.Forms.TreeNode.#ctor(System.String,System.Int32,System.Int32)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.TreeNode.ImageKey
-internalonly: False
----
-
----
-uid: System.Windows.Forms.TreeNode.EnsureVisible
-internalonly: False
----
-
----
-uid: System.Windows.Forms.TreeNode.ContextMenu
-internalonly: False
----
-
----
-uid: System.Windows.Forms.TreeNode.ExpandAll
-internalonly: False
----
-
----
-uid: System.Windows.Forms.TreeNode.#ctor(System.String,System.Int32,System.Int32,System.Windows.Forms.TreeNode[])
-internalonly: False
----
-
----
-uid: System.Windows.Forms.TreeNode.EndEdit(System.Boolean)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.TreeNode.Level
-internalonly: False
----
-
----
-uid: System.Windows.Forms.TreeNode.ContextMenuStrip
-internalonly: False
----
-
----
-uid: System.Windows.Forms.TreeNode.Clone
-internalonly: False
----
-
----
-uid: System.Windows.Forms.TreeNode.LastNode
-internalonly: False
----
-
----
-uid: System.Windows.Forms.TreeNode.SelectedImageIndex
-internalonly: False
----
-
----
-uid: System.Windows.Forms.TreeNode.ForeColor
-internalonly: False
----
-
----
-uid: System.Windows.Forms.TreeNode.IsVisible
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TreeNode.#ctor
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.TreeNode.Serialize(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.TreeNode.FirstNode
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.TreeNode.Text
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.TreeNode.FullPath
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.TreeNode.IsExpanded
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.TreeNode.Nodes
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.TreeNode.ToString
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.TreeNode.Toggle
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.TreeNode.Index
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.TreeNode.#ctor(System.String,System.Int32,System.Int32)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.TreeNode.ImageKey
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.TreeNode.EnsureVisible
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.TreeNode.ContextMenu
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.TreeNode.ExpandAll
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.TreeNode.#ctor(System.String,System.Int32,System.Int32,System.Windows.Forms.TreeNode[])
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.TreeNode.EndEdit(System.Boolean)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.TreeNode.Level
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.TreeNode.ContextMenuStrip
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.TreeNode.Clone
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.TreeNode.LastNode
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.TreeNode.SelectedImageIndex
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.TreeNode.ForeColor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.TreeNode.IsVisible
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.TreeNode.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TreeNode.PrevVisibleNode
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TreeNode.Tag
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TreeNode.IsSelected
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TreeNode.Bounds
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TreeNode.PrevNode
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.TreeNode.Collapse
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.TreeNode.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.TreeNode.SelectedImageKey
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TreeNode.BackColor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TreeNode.NextVisibleNode
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TreeNode.Handle
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TreeNode.ImageIndex
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TreeNode.Expand
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TreeNode.FromHandle(System.Windows.Forms.TreeView,System.IntPtr)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TreeNode.GetNodeCount(System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TreeNode.Name
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.TreeNode.BeginEdit
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

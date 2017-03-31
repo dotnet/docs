@@ -1,19 +1,26 @@
 ---
 uid: System.Windows.Forms.ToolStripDropDown.ToolStripDropDownAccessibleObject
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripDropDown.ToolStripDropDownAccessibleObject.Role
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripDropDown.ToolStripDropDownAccessibleObject.Name
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripDropDown.ToolStripDropDownAccessibleObject.#ctor(System.Windows.Forms.ToolStripDropDown)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

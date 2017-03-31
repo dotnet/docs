@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides the functionality required to validate a workflow activity designer while it is being edited and to provide the results of the validation process.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,9 +28,16 @@
         <Parameter Name="context" Type="System.Activities.Presentation.EditingContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="context">An object that contains permanent and transient state context information about a designer instance.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Presentation.Validation.ValidationService" /> that uses permanent and transient state context information about an activity designer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Examples of what can be included in the state information object are permanent state, which is a list of services running in the designer, and transient state, which is a set of currently selected items.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NavigateToError">
@@ -49,8 +56,8 @@
         <Parameter Name="validationErrorInfo" Type="System.Activities.Presentation.Validation.ValidationErrorInfo" />
       </Parameters>
       <Docs>
-        <param name="validationErrorInfo">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="validationErrorInfo">The information of the validation error.</param>
+        <summary>Moves the keyboard focus to the work surface location of an error in an activity.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,8 +77,8 @@
         <Parameter Name="id" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="id">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="id">An error identification number.</param>
+        <summary>Moves the keyboard focus to the work surface location of an error in an activity.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,7 +96,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Triggers a new validation completed event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,9 +113,16 @@
         <ReturnType>System.Activities.Validation.ValidationSettings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the settings for the validation of the current activity tree</summary>
+        <value>An object that contains the validation settings.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Validation settings configure issues, such as the type of validation performed, the schema namespace location, data types, what is allowed and not allowed, and other conditions.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidateWorkflow">
@@ -125,7 +139,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Invokes validation of an activity tree.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

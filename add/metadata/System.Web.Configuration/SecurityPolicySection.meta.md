@@ -1,14 +1,17 @@
 ---
 uid: System.Web.Configuration.SecurityPolicySection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.SecurityPolicySection.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.SecurityPolicySection.TrustLevels
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

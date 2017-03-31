@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.WebControls.Expressions.CustomExpression
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Expressions.CustomExpression.GetQueryable(System.Linq.IQueryable)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Expressions.CustomExpression.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Expressions.CustomExpression.Querying
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -1,14 +1,20 @@
 ---
 uid: System.Windows.Input.KeyInterop
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.KeyInterop.VirtualKeyFromKey(System.Windows.Input.Key)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.KeyInterop.KeyFromVirtualKey(System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

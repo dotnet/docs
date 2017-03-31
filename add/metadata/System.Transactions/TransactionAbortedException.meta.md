@@ -1,24 +1,29 @@
 ---
 uid: System.Transactions.TransactionAbortedException
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.TransactionAbortedException.#ctor
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.TransactionAbortedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.TransactionAbortedException.#ctor(System.String,System.Exception)
-internalonly: False
+manager: "ghogen"
+---
+
+---
+uid: System.Transactions.TransactionAbortedException.#ctor
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.TransactionAbortedException.#ctor(System.String)
-internalonly: False
+manager: "ghogen"
 ---

@@ -1,4 +1,5 @@
 ---
 uid: System.Web.Instrumentation
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

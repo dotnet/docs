@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.Design.DataSetSchema
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DataSetSchema.#ctor(System.Data.DataSet)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DataSetSchema.GetViews
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

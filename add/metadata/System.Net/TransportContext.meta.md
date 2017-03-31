@@ -1,19 +1,23 @@
 ---
 uid: System.Net.TransportContext
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.TransportContext.GetChannelBinding(System.Security.Authentication.ExtendedProtection.ChannelBindingKind)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.TransportContext.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.TransportContext.GetTlsTokenBindings
-internalonly: False
+ms.author: "alkoren"
+manager: "markl"
 ---

@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the event that contains information about Web service errors.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Management.WebServiceErrorEvent> event is raised if an error occurs during a Web service request. Your application can use this event to obtain request-related information, which is available by using the <xref:System.Web.Management.WebRequestInformation> and the <xref:System.Web.Management.WebThreadInformation> classes.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,10 +37,10 @@
         <Parameter Name="exception" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="eventSource">To be added.</param>
-        <param name="exception">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The event description.</param>
+        <param name="eventSource">The object that is the source of the event.</param>
+        <param name="exception">The exception that is associated with the error.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Management.WebServiceErrorEvent" /> class by using the specified event parameters.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,8 +57,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the code number that is associated with the current error event.</summary>
+        <value>The code number that is associated with this event. For information about event codes, see <see cref="T:System.Web.Management.WebEventCodes" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

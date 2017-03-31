@@ -1,39 +1,47 @@
 ---
 uid: System.IdentityModel.Tokens.Saml2SubjectConfirmationData
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.Saml2SubjectConfirmationData.InResponseTo
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.Saml2SubjectConfirmationData.NotOnOrAfter
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.Saml2SubjectConfirmationData.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.Saml2SubjectConfirmationData.KeyIdentifiers
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.Saml2SubjectConfirmationData.Recipient
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.Saml2SubjectConfirmationData.Address
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.Saml2SubjectConfirmationData.NotBefore
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

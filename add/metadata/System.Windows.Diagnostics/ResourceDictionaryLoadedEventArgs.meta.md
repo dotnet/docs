@@ -1,9 +1,13 @@
 ---
 uid: System.Windows.Diagnostics.ResourceDictionaryLoadedEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Diagnostics.ResourceDictionaryLoadedEventArgs.ResourceDictionaryInfo
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

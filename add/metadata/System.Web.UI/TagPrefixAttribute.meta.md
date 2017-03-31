@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.TagPrefixAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.TagPrefixAttribute.NamespaceName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.TagPrefixAttribute.#ctor(System.String,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.TagPrefixAttribute.TagPrefix
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

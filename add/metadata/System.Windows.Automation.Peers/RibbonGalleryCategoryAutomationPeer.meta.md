@@ -1,34 +1,46 @@
 ---
 uid: System.Windows.Automation.Peers.RibbonGalleryCategoryAutomationPeer
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonGalleryCategoryAutomationPeer.GetChildrenCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonGalleryCategoryAutomationPeer.CreateItemAutomationPeer(System.Object)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonGalleryCategoryAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonGalleryCategoryAutomationPeer.#ctor(System.Windows.Controls.Ribbon.RibbonGalleryCategory)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonGalleryCategoryAutomationPeer.GetAutomationControlTypeCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonGalleryCategoryAutomationPeer.GetClassNameCore
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

@@ -10,8 +10,33 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies how pages of content are oriented on print media.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the values of this type primarily for these purposes:  
+  
+-   As members of the <xref:System.Printing.PrintCapabilities.PageOrientationCapability%2A> collection, which is a property of <xref:System.Printing.PrintCapabilities>, these values indicate the orientation types that a printer supports.  
+  
+-   As the value of the <xref:System.Printing.PrintTicket.PageOrientation%2A> property of a <xref:System.Printing.PrintTicket>, the value directs the printer to use a particular orientation.  
+  
+ The **Unknown** value is never used in properties of <xref:System.Printing.PrintCapabilities> objects.  
+  
+ You should never set a <xref:System.Printing.PrintTicket> property to **Unknown**. If some other <xref:System.Printing.PrintTicket> producing application has created a *PrintTicket document* that sets the orientation feature to an unrecognized option (that is, an option that is not defined in the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)), then a <xref:System.Printing.PrintTicket> object in your application that is constructed with that document will have **Unknown** as the value of the <xref:System.Printing.PrintTicket.PageOrientation%2A> property.  
+  
+ Although the <xref:System.Printing.PrintTicket> and <xref:System.Printing.PrintCapabilities> classes cannot be inherited, you can extend the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397) to recognize print device features that are not accounted for in the <xref:System.Printing.PrintTicket> or <xref:System.Printing.PrintCapabilities> classes. For more information see [NOTINBUILD: How to: Extend the Print Schema and Create New Print System Classes](http://msdn.microsoft.com/en-us/a3600218-1ea5-478a-9853-6560464f2885).  
+  
+   
+  
+## Examples  
+ The following example shows how to use this enumeration to set <xref:System.Printing.PrintTicket> values.  
+  
+ [!code-csharp[XpsPrint#OutputColorAndPageOrientation](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsPrint/CSharp/XpsPrintHelper.cs#outputcolorandpageorientation)]
+ [!code-vb[XpsPrint#OutputColorAndPageOrientation](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsPrint/visualbasic/xpsprinthelper.vb#outputcolorandpageorientation)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Landscape">
@@ -27,7 +52,7 @@
         <ReturnType>System.Printing.PageOrientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Content of the imageable area is rotated on the page 90 degrees counterclockwise from standard (portrait) orientation.</summary>
       </Docs>
     </Member>
     <Member MemberName="Portrait">
@@ -43,7 +68,7 @@
         <ReturnType>System.Printing.PageOrientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Standard orientation.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReverseLandscape">
@@ -59,7 +84,7 @@
         <ReturnType>System.Printing.PageOrientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Content of the imageable area is rotated on the page 90 degrees clockwise from standard (portrait) orientation.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReversePortrait">
@@ -75,7 +100,7 @@
         <ReturnType>System.Printing.PageOrientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Content of the imageable area is upside down relative to standard (portrait) orientation.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -91,7 +116,7 @@
         <ReturnType>System.Printing.PageOrientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The feature (whose options are represented by this enumeration) is set to an option not defined in the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397).</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,29 +1,33 @@
 ---
 uid: Microsoft.JScript.JSVariableField
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSVariableField.DeclaringType
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSVariableField.GetCustomAttributes(System.Boolean)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSVariableField.Name
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSVariableField.FieldType
-internalonly: False
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.JSVariableField.GetCustomAttributes
 ---
 
 ---
 uid: Microsoft.JScript.JSVariableField.Attributes
-internalonly: False
+ms.author: "mikejo"
 ---

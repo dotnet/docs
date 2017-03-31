@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains all of the configuration settings needed by the WS-Federation Authentication Module (<see cref="T:System.IdentityModel.Services.WSFederationAuthenticationModule" />).</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An instance of the <xref:System.IdentityModel.Services.Configuration.WsFederationConfiguration> class that is set on the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> object accessed through the <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration%2A?displayProperty=fullName> property contains the settings that are used to initialize the properties of the WS-Federation Authentication Module (WSFAM) and control its behavior. These settings are typically loaded from the `<wsFederation>` element in the configuration file.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,9 +35,18 @@
         <Parameter Name="federationElement" Type="System.IdentityModel.Services.Configuration.WSFederationElement" />
       </Parameters>
       <Docs>
-        <param name="federationElement">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="federationElement">The <see langword="&lt;wsFederation&gt;" /> element from which to initialize the new instance.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.Configuration.WsFederationConfiguration" /> class from the specified <see langword="&lt;wsFederation&gt;" /> element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The properties of the new instance are initialized according to the settings of the specified `<wsFederation>` element.  
+  
+ Some validation is performed on the <xref:System.IdentityModel.Services.Configuration.WSFederationElement> object specified by `federationElement`. Both the <xref:System.IdentityModel.Services.Configuration.WSFederationElement.Issuer%2A?displayProperty=fullName> property and the <xref:System.IdentityModel.Services.Configuration.WSFederationElement.Realm%2A?displayProperty=fullName> property must specify non-null, non-empty values. If the <xref:System.IdentityModel.Services.Configuration.WSFederationElement.RequireHttps%2A?displayProperty=fullName> property is set `true`, the <xref:System.IdentityModel.Services.Configuration.WSFederationElement.Issuer%2A?displayProperty=fullName> property must specify a URI that has an HTTPS scheme. The <xref:System.IdentityModel.Services.Configuration.WSFederationElement.Freshness%2A?displayProperty=fullName> property cannot be negative. If any of these conditions are not met, an exception is thrown.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -47,10 +63,23 @@
         <Parameter Name="realm" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="issuer">To be added.</param>
-        <param name="realm">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="issuer">A string that contains the URI of the issuer to be used by the WS-Federation Authentication Module (WSFAM).</param>
+        <param name="realm">A string that contains the URI of the requesting realm to be used by the WSFAM.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.Configuration.WsFederationConfiguration" /> class by using the specified issuer and realm.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Services.Configuration.WsFederationConfiguration.Issuer%2A> and <xref:System.IdentityModel.Services.Configuration.WsFederationConfiguration.Realm%2A> properties are initialized according to the `issuer` and `realm` parameters. All other properties are initialized to their default values.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="issuer" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="realm" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AuthenticationType">
@@ -66,8 +95,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value of the wauth parameter to use in WS-Federation sign-in requests (“wsignin1.0”).</summary>
+        <value>A URI that specifies the authentication type. The default is an empty string.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,8 +113,8 @@
         <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a dictionary that contains any extra attributes specified in the <see langword="&lt;wsFederation&gt;" /> element in the configuration file.</summary>
+        <value>The dictionary that contains the extra attributes.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,7 +132,7 @@
       </ReturnValue>
       <MemberValue>null</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A constant that contains the default value for the <see cref="P:System.IdentityModel.Services.Configuration.WsFederationConfiguration.Freshness" /> property; zero.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,7 +150,7 @@
       </ReturnValue>
       <MemberValue>2097152</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A constant that sets the default <see cref="P:System.Xml.XmlDictionaryReaderQuotas.MaxArrayLength" /> property of the XML dictionary reader quotas object referenced by the <see cref="P:System.IdentityModel.Services.Configuration.WsFederationConfiguration.XmlDictionaryReaderQuotas" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -139,7 +168,7 @@
       </ReturnValue>
       <MemberValue>2097152</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A constant that sets the default <see cref="P:System.Xml.XmlDictionaryReaderQuotas.MaxStringContentLength" /> property of the XML dictionary reader quotas object referenced by the <see cref="P:System.IdentityModel.Services.Configuration.WsFederationConfiguration.XmlDictionaryReaderQuotas" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,7 +185,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A constant that contains the default value for the <see cref="P:System.IdentityModel.Services.Configuration.WsFederationConfiguration.PassiveRedirectEnabled" /> property; <see langword="true" />, passive redirects are enabled.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -173,7 +202,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A constant that contains the default value for the <see cref="P:System.IdentityModel.Services.Configuration.WsFederationConfiguration.PersistentCookiesOnPassiveRedirects" /> property; <see langword="false" />, cookies are not enabled.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -190,7 +219,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A constant that contains the default value for the <see cref="P:System.IdentityModel.Services.Configuration.WsFederationConfiguration.RequireHttps" /> property; <see langword="true" />, HTTPS is required on redirects.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -207,8 +236,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value of the wfresh parameter to use in WS-Federation sign-in requests (“wsignin1.0”).</summary>
+        <value>The desired maximum age of authentication requests, in minutes. The default is <see cref="F:System.IdentityModel.Services.Configuration.WsFederationConfiguration.DefaultFreshness" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -225,8 +254,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value of the whr parameter to use in WS-Federation sign-in requests (“wsignin1.0”).</summary>
+        <value>The address of the home realm identity provider. The default is an empty string.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -243,9 +272,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a URI that identifies the intended issuer of the security token.</summary>
+        <value>The URI that identifies the security token service (STS). Cannot be <see langword="null" />.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">An attempt to set the property to <see langword="null" /> occurs.</exception>
       </Docs>
     </Member>
     <Member MemberName="PassiveRedirectEnabled">
@@ -261,8 +291,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that specifies whether the module is enabled to initiate WS-Federation protocol redirects.</summary>
+        <value>
+          <see langword="true" /> to enable redirects; otherwise, <see langword="false" />. The default is <see cref="F:System.IdentityModel.Services.Configuration.WsFederationConfiguration.DefaultPassiveRedirectEnabled" />, redirects are enabled.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -279,8 +310,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that specifies whether a persistent session cookie is issued on successful authentication.</summary>
+        <value>
+          <see langword="true" /> to issue a persistent session cookie; otherwise, <see langword="false" />. The default is <see cref="F:System.IdentityModel.Services.Configuration.WsFederationConfiguration.DefaultPersistentCookiesOnPassiveRedirects" />, cookies are not enabled.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -297,8 +329,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value of the wp parameter to be used in WS-Federation sign-in requests (“wsignin1.0”).</summary>
+        <value>A URL that identifies the policy to use. The default is an empty string.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -315,9 +347,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value of the wtrealm parameter to be used for WS-Federation sign-in requests (“wsignin1.0”).</summary>
+        <value>A URI that identifies the relying party (RP) to the security token service (STS). Cannot be <see langword="null" />.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">An attempt to set the property to <see langword="null" /> occurs.</exception>
       </Docs>
     </Member>
     <Member MemberName="Reply">
@@ -333,8 +366,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value of the wreply parameter to use in WS-Federation sign-in requests (“wsignin1.0”).</summary>
+        <value>A URL that identifies the address at which the relying party (RP) application would like to receive replies from the Security Token Service (STS). The default is an empty string.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -351,8 +384,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value of the wreq parameter to use in WS-Federation sign-in requests (“wsignin1.0”).</summary>
+        <value>The token issuance request expressed as a <see langword="&lt;wst:RequestSecurityToken&gt;" /> element. The default is an empty string.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -369,8 +402,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value of the wreqptr parameter to use in WS-Federation sign-in requests (“wsignin1.0”).</summary>
+        <value>A URL that specifies the location of the token issuance request expressed as a <see langword="&lt;wst:RequestSecurityToken&gt;" /> element</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -387,8 +420,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that specifies whether communication with the security token service (STS) must use HTTPS protocol.</summary>
+        <value>
+          <see langword="true" /> if communication with the STS must be secured using HTTPS; otherwise, <see langword="false" />. The default is <see cref="F:System.IdentityModel.Services.Configuration.WsFederationConfiguration.DefaultRequireHttps" />, HTTPS is required.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -405,9 +439,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Get or sets the value of the wres parameter to use in WS-Federation sign-in requests (“wsignin1.0”).</summary>
+        <value>A URI that identifies the resource being accessed, the relying party (RP), to the to the security token service (STS). The default is an empty string.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The wtrealm parameter, which is set by the <xref:System.IdentityModel.Services.Configuration.WsFederationConfiguration.Realm%2A> property, should be used instead of this parameter.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SignInQueryString">
@@ -423,8 +464,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a query string that contains any additional parameters to be sent in WS-Federation sign-in requests (“wsignin1.0”).</summary>
+        <value>A URL fragment that contains the additional message parameters in the following format: <c>“?param1=value1&amp;param2=value2&amp;paramN=valueN”</c>. The default is an empty string.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -441,8 +482,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a query string that contains any additional parameters to be sent in WS-Federation sign-out requests (“wsignout1.0”) during passive sign-out.</summary>
+        <value>A URL fragment that contains the additional message parameters in the following format: <c>“?param1=value1&amp;param2=value2&amp;paramN=valueN”</c>. The default is an empty string.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -459,8 +500,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value of the wreply parameter to use during WS-Federation sign-out requests (“wsignout1.0”).</summary>
+        <value>The URL to which the client should be redirected by the security token service (STS) during passive sign-out through the WS-Federation protocol. The default is an empty string.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -477,9 +518,10 @@
         <ReturnType>System.Xml.XmlDictionaryReaderQuotas</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the configurable quota values for XML dictionary readers used by this instance.</summary>
+        <value>The object that contains the configurable quota values. The default object has the <see cref="P:System.Xml.XmlDictionaryReaderQuotas.MaxArrayLength" /> property set to <see cref="F:System.IdentityModel.Services.Configuration.WsFederationConfiguration.DefaultMaxArrayLength" /> and the <see cref="P:System.Xml.XmlDictionaryReaderQuotas.MaxStringContentLength" /> property set to <see cref="F:System.IdentityModel.Services.Configuration.WsFederationConfiguration.DefaultMaxStringContentLength" />.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">An attempt to set the property to <see langword="null" /> occurs.</exception>
       </Docs>
     </Member>
   </Members>

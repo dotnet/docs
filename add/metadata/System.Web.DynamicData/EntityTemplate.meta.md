@@ -1,14 +1,17 @@
 ---
 uid: System.Web.DynamicData.EntityTemplate
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.EntityTemplate.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.EntityTemplate.ItemTemplate
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

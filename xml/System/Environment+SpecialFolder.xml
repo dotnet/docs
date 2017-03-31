@@ -20,8 +20,28 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies enumerated constants used to retrieve directory paths to system special folders.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The system special folders are folders such as **Program Files**, **Programs**, **System**, or **Startup**, which contain common information. Special folders are set by default by the system, or explicitly by the user, when installing a version of Windows.  
+  
+ The <xref:System.Environment.GetFolderPath%2A> method returns the locations associated with this enumeration. The locations of these folders can have different values on different operating systems, the user can change some of the locations, and the locations are localized.  
+  
+ For more information about special folders, see the [KNOWNFOLDERID](http://msdn.microsoft.com/library/dd378457.aspx) constants in the Windows documentation.  
+  
+   
+  
+## Examples  
+ The following example shows how to use <xref:System.Environment.SpecialFolder> with the <xref:System.Environment.GetFolderPath%2A> method to get the System directory.  
+  
+ [!code-cpp[Environment.GetFolderPath#1](~/samples/snippets/cpp/VS_Snippets_CLR/Environment.GetFolderPath/CPP/getfolderpath.cpp#1)]
+ [!code-csharp[Environment.GetFolderPath#1](~/samples/snippets/csharp/VS_Snippets_CLR/Environment.GetFolderPath/CS/getfolderpath.cs#1)]
+ [!code-vb[Environment.GetFolderPath#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Environment.GetFolderPath/VB/getfolderpath.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AdminTools">
@@ -42,7 +62,7 @@
         <ReturnType>System.Environment+SpecialFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The file system directory that is used to store administrative tools for an individual user. The Microsoft Management Console (MMC) will save customized consoles to this directory, and it will roam with the user. Added in the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)].</summary>
       </Docs>
     </Member>
     <Member MemberName="ApplicationData">
@@ -63,7 +83,15 @@
         <ReturnType>System.Environment+SpecialFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The directory that serves as a common repository for application-specific data for the current roaming user.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A roaming user works on more than one computer on a network. A roaming user's profile is kept on a server on the network and is loaded onto a system when the user logs on.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CDBurning">
@@ -84,7 +112,7 @@
         <ReturnType>System.Environment+SpecialFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The file system directory that acts as a staging area for files waiting to be written to a CD. Added in the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)].</summary>
       </Docs>
     </Member>
     <Member MemberName="CommonAdminTools">
@@ -105,7 +133,7 @@
         <ReturnType>System.Environment+SpecialFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The file system directory that contains administrative tools for all users of the computer. Added in the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)].</summary>
       </Docs>
     </Member>
     <Member MemberName="CommonApplicationData">
@@ -126,7 +154,7 @@
         <ReturnType>System.Environment+SpecialFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The directory that serves as a common repository for application-specific data that is used by all users.</summary>
       </Docs>
     </Member>
     <Member MemberName="CommonDesktopDirectory">
@@ -147,7 +175,7 @@
         <ReturnType>System.Environment+SpecialFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The file system directory that contains files and folders that appear on the desktop for all users. This special folder is valid only for Windows NT systems. Added in the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)].</summary>
       </Docs>
     </Member>
     <Member MemberName="CommonDocuments">
@@ -168,7 +196,7 @@
         <ReturnType>System.Environment+SpecialFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The file system directory that contains documents that are common to all users. This special folder is valid for Windows NT systems, Windows 95, and Windows 98 systems with Shfolder.dll installed. Added in the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)].</summary>
       </Docs>
     </Member>
     <Member MemberName="CommonMusic">
@@ -189,7 +217,7 @@
         <ReturnType>System.Environment+SpecialFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The file system directory that serves as a repository for music files common to all users. Added in the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)].</summary>
       </Docs>
     </Member>
     <Member MemberName="CommonOemLinks">
@@ -210,7 +238,7 @@
         <ReturnType>System.Environment+SpecialFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This value is recognized in Windows Vista for backward compatibility, but the special folder itself is no longer used. Added in the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)].</summary>
       </Docs>
     </Member>
     <Member MemberName="CommonPictures">
@@ -231,7 +259,7 @@
         <ReturnType>System.Environment+SpecialFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The file system directory that serves as a repository for image files common to all users. Added in the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)].</summary>
       </Docs>
     </Member>
     <Member MemberName="CommonProgramFiles">
@@ -252,7 +280,9 @@
         <ReturnType>System.Environment+SpecialFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The directory for components that are shared across applications.  
+  
+ To get the x86 common program files directory on a non-x86 system, use the <see cref="F:System.Environment.SpecialFolder.ProgramFilesX86" /> member.</summary>
       </Docs>
     </Member>
     <Member MemberName="CommonProgramFilesX86">
@@ -273,7 +303,7 @@
         <ReturnType>System.Environment+SpecialFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The **Program Files** folder. Added in the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)].</summary>
       </Docs>
     </Member>
     <Member MemberName="CommonPrograms">
@@ -294,7 +324,7 @@
         <ReturnType>System.Environment+SpecialFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A folder for components that are shared across applications. This special folder is valid only for Windows NT, Windows 2000, and Windows XP systems. Added in the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)].</summary>
       </Docs>
     </Member>
     <Member MemberName="CommonStartMenu">
@@ -315,7 +345,7 @@
         <ReturnType>System.Environment+SpecialFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The file system directory that contains the programs and folders that appear on the **Start** menu for all users. This special folder is valid only for Windows NT systems. Added in the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)].</summary>
       </Docs>
     </Member>
     <Member MemberName="CommonStartup">
@@ -336,7 +366,7 @@
         <ReturnType>System.Environment+SpecialFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The file system directory that contains the programs that appear in the **Startup** folder for all users. This special folder is valid only for Windows NT systems. Added in the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)].</summary>
       </Docs>
     </Member>
     <Member MemberName="CommonTemplates">
@@ -357,7 +387,7 @@
         <ReturnType>System.Environment+SpecialFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The file system directory that contains the templates that are available to all users. This special folder is valid only for Windows NT systems.  Added in the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)].</summary>
       </Docs>
     </Member>
     <Member MemberName="CommonVideos">
@@ -378,7 +408,7 @@
         <ReturnType>System.Environment+SpecialFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The file system directory that serves as a repository for video files common to all users. Added in the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)].</summary>
       </Docs>
     </Member>
     <Member MemberName="Cookies">
@@ -399,7 +429,7 @@
         <ReturnType>System.Environment+SpecialFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The directory that serves as a common repository for Internet cookies.</summary>
       </Docs>
     </Member>
     <Member MemberName="Desktop">
@@ -420,7 +450,7 @@
         <ReturnType>System.Environment+SpecialFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The logical Desktop rather than the physical file system location.</summary>
       </Docs>
     </Member>
     <Member MemberName="DesktopDirectory">
@@ -441,7 +471,15 @@
         <ReturnType>System.Environment+SpecialFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The directory used to physically store file objects on the desktop.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Do not confuse this directory with the desktop folder itself, which is a virtual folder.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Favorites">
@@ -462,7 +500,7 @@
         <ReturnType>System.Environment+SpecialFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The directory that serves as a common repository for the user's favorite items.</summary>
       </Docs>
     </Member>
     <Member MemberName="Fonts">
@@ -483,7 +521,7 @@
         <ReturnType>System.Environment+SpecialFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A virtual folder that contains fonts. Added in the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)].</summary>
       </Docs>
     </Member>
     <Member MemberName="History">
@@ -504,7 +542,7 @@
         <ReturnType>System.Environment+SpecialFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The directory that serves as a common repository for Internet history items.</summary>
       </Docs>
     </Member>
     <Member MemberName="InternetCache">
@@ -525,7 +563,7 @@
         <ReturnType>System.Environment+SpecialFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The directory that serves as a common repository for temporary Internet files.</summary>
       </Docs>
     </Member>
     <Member MemberName="LocalApplicationData">
@@ -546,7 +584,7 @@
         <ReturnType>System.Environment+SpecialFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The directory that serves as a common repository for application-specific data that is used by the current, non-roaming user.</summary>
       </Docs>
     </Member>
     <Member MemberName="LocalizedResources">
@@ -567,7 +605,7 @@
         <ReturnType>System.Environment+SpecialFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The file system directory that contains localized resource data. Added in the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)].</summary>
       </Docs>
     </Member>
     <Member MemberName="MyComputer">
@@ -588,7 +626,15 @@
         <ReturnType>System.Environment+SpecialFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The **My Computer** folder.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The MyComputer constant always yields the empty string ("") because no path is defined for the My Computer folder.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MyDocuments">
@@ -609,7 +655,15 @@
         <ReturnType>System.Environment+SpecialFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The **My Documents** folder.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is equivalent to  Personal.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MyMusic">
@@ -630,7 +684,7 @@
         <ReturnType>System.Environment+SpecialFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The **My Music** folder.</summary>
       </Docs>
     </Member>
     <Member MemberName="MyPictures">
@@ -651,7 +705,7 @@
         <ReturnType>System.Environment+SpecialFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The **My Pictures** folder.</summary>
       </Docs>
     </Member>
     <Member MemberName="MyVideos">
@@ -672,7 +726,7 @@
         <ReturnType>System.Environment+SpecialFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The file system directory that serves as a repository for videos that belong to a user.  Added in the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)].</summary>
       </Docs>
     </Member>
     <Member MemberName="NetworkShortcuts">
@@ -693,7 +747,7 @@
         <ReturnType>System.Environment+SpecialFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A file system directory that contains the link objects that may exist in the **My Network Places** virtual folder. Added in the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)].</summary>
       </Docs>
     </Member>
     <Member MemberName="Personal">
@@ -714,7 +768,15 @@
         <ReturnType>System.Environment+SpecialFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The directory that serves as a common repository for documents.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is equivalent to  MyDocuments.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PrinterShortcuts">
@@ -735,7 +797,7 @@
         <ReturnType>System.Environment+SpecialFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The file system directory that contains the link objects that can exist in the **Printers** virtual folder. Added in the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)].</summary>
       </Docs>
     </Member>
     <Member MemberName="ProgramFiles">
@@ -756,7 +818,9 @@
         <ReturnType>System.Environment+SpecialFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The program files directory.  
+  
+ On a non-x86 system, passing <see cref="F:System.Environment.SpecialFolder.ProgramFiles" /> to the <see cref="M:System.Environment.GetFolderPath(System.Environment.SpecialFolder)" /> method returns the path for non-x86 programs. To get the x86 program files directory on a non-x86 system, use the <see cref="F:System.Environment.SpecialFolder.ProgramFilesX86" /> member.</summary>
       </Docs>
     </Member>
     <Member MemberName="ProgramFilesX86">
@@ -777,7 +841,7 @@
         <ReturnType>System.Environment+SpecialFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The x86 **Program Files** folder. Added in the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)].</summary>
       </Docs>
     </Member>
     <Member MemberName="Programs">
@@ -798,7 +862,7 @@
         <ReturnType>System.Environment+SpecialFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The directory that contains the user's program groups.</summary>
       </Docs>
     </Member>
     <Member MemberName="Recent">
@@ -819,7 +883,7 @@
         <ReturnType>System.Environment+SpecialFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The directory that contains the user's most recently used documents.</summary>
       </Docs>
     </Member>
     <Member MemberName="Resources">
@@ -840,7 +904,7 @@
         <ReturnType>System.Environment+SpecialFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The file system directory that contains resource data. Added in the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)].</summary>
       </Docs>
     </Member>
     <Member MemberName="SendTo">
@@ -861,7 +925,7 @@
         <ReturnType>System.Environment+SpecialFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The directory that contains the Send To menu items.</summary>
       </Docs>
     </Member>
     <Member MemberName="StartMenu">
@@ -882,7 +946,7 @@
         <ReturnType>System.Environment+SpecialFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The directory that contains the Start menu items.</summary>
       </Docs>
     </Member>
     <Member MemberName="Startup">
@@ -903,7 +967,15 @@
         <ReturnType>System.Environment+SpecialFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The directory that corresponds to the user's Startup program group.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The system starts these programs whenever a user logs on or starts Windows NT or later, or starts Windows 98.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System">
@@ -924,7 +996,7 @@
         <ReturnType>System.Environment+SpecialFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The System directory.</summary>
       </Docs>
     </Member>
     <Member MemberName="SystemX86">
@@ -945,7 +1017,7 @@
         <ReturnType>System.Environment+SpecialFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Windows **System** folder. Added in the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)].</summary>
       </Docs>
     </Member>
     <Member MemberName="Templates">
@@ -966,7 +1038,7 @@
         <ReturnType>System.Environment+SpecialFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The directory that serves as a common repository for document templates.</summary>
       </Docs>
     </Member>
     <Member MemberName="UserProfile">
@@ -987,7 +1059,7 @@
         <ReturnType>System.Environment+SpecialFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The user's profile folder. Applications should not create files or folders at this level; they should put their data under the locations referred to by <see cref="F:System.Environment.SpecialFolder.ApplicationData" />. Added in the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)].</summary>
       </Docs>
     </Member>
     <Member MemberName="Windows">
@@ -1008,7 +1080,7 @@
         <ReturnType>System.Environment+SpecialFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Windows directory or SYSROOT. This corresponds to the %windir% or %SYSTEMROOT% environment variables. Added in the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)].</summary>
       </Docs>
     </Member>
   </Members>

@@ -11,8 +11,23 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Makes available the client IP address and port number associated with the remote endpoint from which a message was sent.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The property is added to each incoming message to a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] service through both the HTTP and TCP transports.  
+  
+ The property is not present on messages received through either a named pipes or MSMQ transport.  
+  
+ Availability of the property when using HTTP hosted in IIS depends on having a currently active request.  Therefore, this property is not available after the request has completed, such as when performing a one-way receive.  
+  
+ The IP address and port number are that of the node from which the message was received. If a message goes through a relay or proxy, the IP address and port number of the respective relay or proxy is the one attached to the message by this property.  
+  
+ Be aware that the IP address and port could be spoofed by an attacker and thus should not be relied upon for security sensitive authentication or authorization unless additional application specific logic is added.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -29,10 +44,20 @@
         <Parameter Name="port" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="address">To be added.</param>
-        <param name="port">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="address">The IP address of the remote endpoint associated with the message.</param>
+        <param name="port">The port number of the remote endpoint associated with the message.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.RemoteEndpointMessageProperty" /> class for a specified IP address and port that identify the client from which the message was sent.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Be aware that the IP address and port could be spoofed by an attacker and thus should not be relied upon for security sensitive authentication or authorization unless additional application specific logic is added.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="address" /> is <see langword="null" /> or empty.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The port number is less than zero or greater than 65535 (0xffff).</exception>
       </Docs>
     </Member>
     <Member MemberName="Address">
@@ -48,8 +73,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the IP address of the client from which the message was sent.</summary>
+        <value>The IP address of the client from which the message was sent.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,8 +91,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the string "System.ServiceModel.Channels.RemoteEndpointMessageProperty".</summary>
+        <value>"System.ServiceModel.Channels.RemoteEndpointMessageProperty"</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,8 +109,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the port number of the client from which the message was sent.</summary>
+        <value>The port number of the client from which the message was sent.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

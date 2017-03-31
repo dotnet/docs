@@ -17,8 +17,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Use <see cref="T:System.Runtime.InteropServices.ComTypes.PARAMDESC" /> instead.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For additional information about `PARAMDESC`, see the MSDN Library.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="lpVarValue">
@@ -35,8 +42,15 @@
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents a pointer to a value that is being passed between processes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For additional information about `PARAMDESC`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="wParamFlags">
@@ -53,8 +67,15 @@
         <ReturnType>System.Runtime.InteropServices.PARAMFLAG</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents bitmask values that describe the structure element, parameter, or return value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For additional information about `PARAMDESC`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,39 +1,59 @@
 ---
 uid: System.Windows.Forms.Design.ToolStripItemDesignerAvailabilityAttribute
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.ToolStripItemDesignerAvailabilityAttribute.ItemAdditionVisibility
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.ToolStripItemDesignerAvailabilityAttribute.GetHashCode
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.ToolStripItemDesignerAvailabilityAttribute.Default
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.Design.ToolStripItemDesignerAvailabilityAttribute.#ctor(System.Windows.Forms.Design.ToolStripItemDesignerAvailability)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.Design.ToolStripItemDesignerAvailabilityAttribute.IsDefaultAttribute
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.ToolStripItemDesignerAvailabilityAttribute.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.Design.ToolStripItemDesignerAvailabilityAttribute.IsDefaultAttribute
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.Design.ToolStripItemDesignerAvailabilityAttribute.#ctor
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.Design.ToolStripItemDesignerAvailabilityAttribute.Equals(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

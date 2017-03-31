@@ -20,8 +20,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The exception that is thrown when an error is made while using a network protocol.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Net.ProtocolViolationException> is thrown by descendants of <xref:System.Net.WebRequest> and <xref:System.Net.WebResponse> to indicate an error using the underlying protocol. For example, the <xref:System.Net.HttpWebRequest> and <xref:System.Net.HttpWebResponse> classes throw a <xref:System.Net.ProtocolViolationException> to indicate an error using HTTP.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,8 +51,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.ProtocolViolationException" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Exception.Message%2A> property is initialized to a system-supplied message that describes the error. The <xref:System.Exception.InnerException%2A> property is initialized to `null`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -70,9 +84,16 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="message">The error message string.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.ProtocolViolationException" /> class with the specified message.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor initializes a new instance of the <xref:System.Net.ProtocolViolationException> class with the <xref:System.Exception.Message%2A> property set to the value of the `message` parameter. If `message` is a null reference, the `Message` property is initialized to a system-supplied message. The `InnerException` property is initialized to `null`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -94,10 +115,17 @@
         <Parameter Name="streamingContext" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="serializationInfo">To be added.</param>
-        <param name="streamingContext">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="serializationInfo">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that contains the information that is required to deserialize the <see cref="T:System.Net.ProtocolViolationException" />.</param>
+        <param name="streamingContext">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains the source of the serialized stream that is associated with the new <see cref="T:System.Net.ProtocolViolationException" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.ProtocolViolationException" /> class from the specified <see cref="T:System.Runtime.Serialization.SerializationInfo" /> and <see cref="T:System.Runtime.Serialization.StreamingContext" /> instances.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor implements the <xref:System.Runtime.Serialization.ISerializable> interface for the <xref:System.Net.ProtocolViolationException> class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -122,10 +150,17 @@
         <Parameter Name="streamingContext" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="serializationInfo">To be added.</param>
-        <param name="streamingContext">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="serializationInfo">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> to populate with data.</param>
+        <param name="streamingContext">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> that specifies the destination for this serialization.</param>
+        <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with the data required to serialize the target object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Any objects included in the <xref:System.Runtime.Serialization.SerializationInfo> are automatically tracked and serialized by the formatter.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
@@ -150,9 +185,9 @@
         <Parameter Name="streamingContext" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="serializationInfo">To be added.</param>
-        <param name="streamingContext">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serializationInfo">The object into which this <see cref="T:System.Net.ProtocolViolationException" /> will be serialized.</param>
+        <param name="streamingContext">The destination of the serialization.</param>
+        <summary>Serializes this instance into the specified <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

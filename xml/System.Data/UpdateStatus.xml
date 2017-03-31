@@ -15,7 +15,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the action to take with regard to the current and remaining rows during an <see cref="M:System.Data.Common.DbDataAdapter.Update(System.Data.DataSet)" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,7 +37,7 @@
         <ReturnType>System.Data.UpdateStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Data.Common.DataAdapter" /> is to continue proccessing rows.</summary>
       </Docs>
     </Member>
     <Member MemberName="ErrorsOccurred">
@@ -58,7 +58,7 @@
         <ReturnType>System.Data.UpdateStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The event handler reports that the update should be treated as an error.</summary>
       </Docs>
     </Member>
     <Member MemberName="SkipAllRemainingRows">
@@ -79,7 +79,7 @@
         <ReturnType>System.Data.UpdateStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The current row and all remaining rows are not to be updated.</summary>
       </Docs>
     </Member>
     <Member MemberName="SkipCurrentRow">
@@ -100,7 +100,7 @@
         <ReturnType>System.Data.UpdateStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The current row is not to be updated.</summary>
       </Docs>
     </Member>
   </Members>

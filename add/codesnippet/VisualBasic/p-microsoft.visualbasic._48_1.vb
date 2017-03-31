@@ -1,1 +1,0 @@
-        My.Computer.Registry.CurrentConfig.CreateSubKey("MyDeviceSettings")

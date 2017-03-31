@@ -10,8 +10,26 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the validation summary display mode used by the <see cref="T:System.Web.UI.WebControls.ValidationSummary" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.ValidationSummaryDisplayMode> enumeration represents the different display formats of a <xref:System.Web.UI.WebControls.ValidationSummary> control.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to specify the display mode for a <xref:System.Web.UI.WebControls.ValidationSummary> control.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](../Topic/Script%20Exploits%20Overview.md).  
+  
+ [!code-csharp[Classic ValidationSummary.DisplayMode Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ValidationSummary.DisplayMode Example/CS/sourcecs.aspx#1)]
+ [!code-vb[Classic ValidationSummary.DisplayMode Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ValidationSummary.DisplayMode Example/VB/sourcevb.aspx#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="BulletList">
@@ -27,7 +45,7 @@
         <ReturnType>System.Web.UI.WebControls.ValidationSummaryDisplayMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Validation summary displayed in a bulleted list.</summary>
       </Docs>
     </Member>
     <Member MemberName="List">
@@ -43,7 +61,7 @@
         <ReturnType>System.Web.UI.WebControls.ValidationSummaryDisplayMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Validation summary displayed in a list.</summary>
       </Docs>
     </Member>
     <Member MemberName="SingleParagraph">
@@ -59,7 +77,7 @@
         <ReturnType>System.Web.UI.WebControls.ValidationSummaryDisplayMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Validation summary displayed in a single paragraph.</summary>
       </Docs>
     </Member>
   </Members>

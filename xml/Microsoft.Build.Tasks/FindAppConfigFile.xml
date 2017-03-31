@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Finds the app.config file, if any, in the provided lists.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:Microsoft.Build.Tasks.FindAppConfigFile> also adds the <xref:Microsoft.Build.Tasks.FindAppConfigFile.TargetPath%2A> metadata.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.FindAppConfigFile" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +55,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the first matching item found in the list, if any.</summary>
+        <value>The first matching item found in the list, or <see langword="null" /> if no matching item is found.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,9 +74,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Finds the app config file.</summary>
+        <returns>
+          <see langword="true" /> in all cases.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:Microsoft.Build.Tasks.FindAppConfigFile.Execute%2A> looks first at the whole item specification; that is, it first searches app.config files that are directly in the project folder. If that fails, then it falls back to app.config files anywhere in the project.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PrimaryList">
@@ -90,8 +105,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the primary list to search through.</summary>
+        <value>The primary list to search through.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,8 +128,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the secondary list to search through.</summary>
+        <value>The secondary list to search through.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,8 +151,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value to add as <see cref="P:Microsoft.Build.Tasks.FindAppConfigFile.TargetPath" /> metadata.</summary>
+        <value>The <see cref="P:Microsoft.Build.Tasks.FindAppConfigFile.TargetPath" /> metadata.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -13,7 +13,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines an interface used by the .NET Framework to support configuration management.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,8 +31,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Ensures that the networking configuration is loaded.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to prevent deadlocks in the networking classes by ensuring that networking configuration is loaded before networking requests are made.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

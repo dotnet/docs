@@ -1,19 +1,27 @@
 ---
 uid: System.Activities.HandleInitializationContext
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.HandleInitializationContext.GetExtension``1
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.HandleInitializationContext.UninitializeHandle(System.Activities.Handle)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.HandleInitializationContext.CreateAndInitializeHandle``1
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

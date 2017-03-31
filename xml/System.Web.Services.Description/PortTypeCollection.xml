@@ -12,8 +12,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a collection of instances of the <see cref="T:System.Web.Services.Description.PortType" /> class; that is, a collection of sets of operations supported by the XML Web service. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[PortTypeCollection_Class#1](~/samples/snippets/cpp/VS_Snippets_Remoting/PortTypeCollection_Class/CPP/porttypecollection_class.cpp#1)]
+ [!code-csharp[PortTypeCollection_Class#1](~/samples/snippets/csharp/VS_Snippets_Remoting/PortTypeCollection_Class/CS/porttypecollection_class.cs#1)]
+ [!code-vb[PortTypeCollection_Class#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/PortTypeCollection_Class/VB/porttypecollection_class.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -33,10 +42,19 @@
         <Parameter Name="portType" Type="System.Web.Services.Description.PortType" />
       </Parameters>
       <Docs>
-        <param name="portType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="portType">The <see cref="T:System.Web.Services.Description.PortType" /> to add to the collection.</param>
+        <summary>Adds the specified <see cref="T:System.Web.Services.Description.PortType" /> to the end of the <see cref="T:System.Web.Services.Description.PortTypeCollection" />.</summary>
+        <returns>The zero-based index where the <paramref name="portType" /> parameter has been added.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[PortTypeCollection_1#3](~/samples/snippets/cpp/VS_Snippets_Remoting/PortTypeCollection_1/CPP/porttypecollection_1.cpp#3)]
+ [!code-csharp[PortTypeCollection_1#3](~/samples/snippets/csharp/VS_Snippets_Remoting/PortTypeCollection_1/CS/porttypecollection_1.cs#3)]
+ [!code-vb[PortTypeCollection_1#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/PortTypeCollection_1/VB/porttypecollection_1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -56,10 +74,20 @@
         <Parameter Name="portType" Type="System.Web.Services.Description.PortType" />
       </Parameters>
       <Docs>
-        <param name="portType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="portType">The <see cref="T:System.Web.Services.Description.PortType" /> for which to check for collection membership.</param>
+        <summary>Returns a value indicating whether the specified <see cref="T:System.Web.Services.Description.PortType" /> is a member of the <see cref="T:System.Web.Services.Description.PortTypeCollection" />.</summary>
+        <returns>
+          <see langword="true" /> if the <paramref name="portType" /> parameter is a member of the <see cref="T:System.Web.Services.Description.PortTypeCollection" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[PortTypeCollection_2#1](~/samples/snippets/cpp/VS_Snippets_Remoting/PortTypeCollection_2/CPP/porttypecollection_2.cpp#1)]
+ [!code-csharp[PortTypeCollection_2#1](~/samples/snippets/csharp/VS_Snippets_Remoting/PortTypeCollection_2/CS/porttypecollection_2.cs#1)]
+ [!code-vb[PortTypeCollection_2#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/PortTypeCollection_2/VB/porttypecollection_2.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -80,10 +108,19 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="array">An array of type <see cref="T:System.Web.Services.Description.PortType" /> serving as the destination for the copy action.</param>
+        <param name="index">The zero-based index at which to start placing the copied collection.</param>
+        <summary>Copies the entire <see cref="T:System.Web.Services.Description.PortTypeCollection" /> to a one-dimensional array of type <see cref="T:System.Web.Services.Description.PortType" />, starting at the specified zero-based index of the target array.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[PortTypeCollection_CopyTo#1](~/samples/snippets/cpp/VS_Snippets_Remoting/PortTypeCollection_CopyTo/CPP/porttypecollection_copyto.cpp#1)]
+ [!code-csharp[PortTypeCollection_CopyTo#1](~/samples/snippets/csharp/VS_Snippets_Remoting/PortTypeCollection_CopyTo/CS/porttypecollection_copyto.cs#1)]
+ [!code-vb[PortTypeCollection_CopyTo#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/PortTypeCollection_CopyTo/VB/porttypecollection_copyto.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetKey">
@@ -126,10 +163,19 @@
         <Parameter Name="portType" Type="System.Web.Services.Description.PortType" />
       </Parameters>
       <Docs>
-        <param name="portType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="portType">The <see cref="T:System.Web.Services.Description.PortType" /> for which to search in the collection.</param>
+        <summary>Searches for the specified <see cref="T:System.Web.Services.Description.PortType" /> and returns the zero-based index of the first occurrence within the collection.</summary>
+        <returns>A 32-bit signed integer.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[PortTypeCollection_2#3](~/samples/snippets/cpp/VS_Snippets_Remoting/PortTypeCollection_2/CPP/porttypecollection_2.cpp#3)]
+ [!code-csharp[PortTypeCollection_2#3](~/samples/snippets/csharp/VS_Snippets_Remoting/PortTypeCollection_2/CS/porttypecollection_2.cs#3)]
+ [!code-vb[PortTypeCollection_2#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/PortTypeCollection_2/VB/porttypecollection_2.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -150,10 +196,33 @@
         <Parameter Name="portType" Type="System.Web.Services.Description.PortType" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="portType">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index at which to insert the <c>portType</c> parameter.</param>
+        <param name="portType">The <see cref="T:System.Web.Services.Description.PortType" /> to add to the collection.</param>
+        <summary>Adds the specified <see cref="T:System.Web.Services.Description.PortType" /> to the <see cref="T:System.Web.Services.Description.PortTypeCollection" /> at the specified zero-based index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the number of items in the collection already equals the collection's capacity, the capacity is doubled by automatically reallocating the internal array before the new element is inserted.  
+  
+ If the value of the `index` parameter is equal to <xref:System.Collections.CollectionBase.Count%2A>, the specified <xref:System.Web.Services.Description.PortType> instance is added to the end of the <xref:System.Web.Services.Description.PortTypeCollection>.  
+  
+ The elements after the insertion point move down to accommodate the new element.  
+  
+   
+  
+## Examples  
+ [!code-cpp[PortTypeCollection_2#2](~/samples/snippets/cpp/VS_Snippets_Remoting/PortTypeCollection_2/CPP/porttypecollection_2.cpp#2)]
+ [!code-csharp[PortTypeCollection_2#2](~/samples/snippets/csharp/VS_Snippets_Remoting/PortTypeCollection_2/CS/porttypecollection_2.cs#2)]
+ [!code-vb[PortTypeCollection_2#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/PortTypeCollection_2/VB/porttypecollection_2.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.IndexOutOfRangeException">The <paramref name="index" /> parameter is less than zero.  
+  
+ \- or -  
+  
+ The <paramref name="index" /> parameter is greater than <see cref="P:System.Collections.CollectionBase.Count" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -173,10 +242,19 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index of the <see cref="T:System.Web.Services.Description.PortType" /> whose value is modified or returned.</param>
+        <summary>Gets or sets the value of a <see cref="T:System.Web.Services.Description.PortType" /> at the specified zero-based index.</summary>
+        <value>A <see langword="PortType" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[PortTypeCollection_1#1](~/samples/snippets/cpp/VS_Snippets_Remoting/PortTypeCollection_1/CPP/porttypecollection_1.cpp#1)]
+ [!code-csharp[PortTypeCollection_1#1](~/samples/snippets/csharp/VS_Snippets_Remoting/PortTypeCollection_1/CS/porttypecollection_1.cs#1)]
+ [!code-vb[PortTypeCollection_1#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/PortTypeCollection_1/VB/porttypecollection_1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -196,10 +274,20 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the <see cref="T:System.Web.Services.Description.PortType" /> returned.</param>
+        <summary>Gets the <see cref="T:System.Web.Services.Description.PortType" /> specified by its name.</summary>
+        <value>The name of the <paramref name="value" /> parameter.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[PortTypeCollection_2#4](~/samples/snippets/cpp/VS_Snippets_Remoting/PortTypeCollection_2/CPP/porttypecollection_2.cpp#4)]
+ [!code-csharp[PortTypeCollection_2#4](~/samples/snippets/csharp/VS_Snippets_Remoting/PortTypeCollection_2/CS/porttypecollection_2.cs#4)]
+ [!code-vb[PortTypeCollection_2#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/PortTypeCollection_2/VB/porttypecollection_2.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidCastException">The <paramref name="value" /> parameter cannot be explicitly cast to type <see cref="T:System.Web.Services.Description.PortType" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -219,9 +307,25 @@
         <Parameter Name="portType" Type="System.Web.Services.Description.PortType" />
       </Parameters>
       <Docs>
-        <param name="portType">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="portType">The <see cref="T:System.Web.Services.Description.PortType" /> to remove from the collection.</param>
+        <summary>Removes the first occurrence of the specified <see cref="T:System.Web.Services.Description.PortType" /> from the <see cref="T:System.Web.Services.Description.PortTypeCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method performs a linear search; therefore, the average execution time is proportional to <xref:System.Collections.CollectionBase.Count%2A>.  
+  
+ The elements that follow the removed <xref:System.Web.Services.Description.PortType> move up to occupy the vacated spot.  
+  
+   
+  
+## Examples  
+ [!code-cpp[PortTypeCollection_1#2](~/samples/snippets/cpp/VS_Snippets_Remoting/PortTypeCollection_1/CPP/porttypecollection_1.cpp#2)]
+ [!code-csharp[PortTypeCollection_1#2](~/samples/snippets/csharp/VS_Snippets_Remoting/PortTypeCollection_1/CS/porttypecollection_1.cs#2)]
+ [!code-vb[PortTypeCollection_1#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/PortTypeCollection_1/VB/porttypecollection_1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetParent">

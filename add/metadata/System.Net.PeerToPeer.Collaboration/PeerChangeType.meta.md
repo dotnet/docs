@@ -1,4 +1,5 @@
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerChangeType
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

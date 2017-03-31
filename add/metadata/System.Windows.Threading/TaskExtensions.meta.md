@@ -1,19 +1,33 @@
 ---
 uid: System.Windows.Threading.TaskExtensions
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Threading.TaskExtensions.DispatcherOperationWait(System.Threading.Tasks.Task,System.TimeSpan)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Threading.TaskExtensions.DispatcherOperationWait
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Threading.TaskExtensions.DispatcherOperationWait(System.Threading.Tasks.Task)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Threading.TaskExtensions.IsDispatcherOperationTask(System.Threading.Tasks.Task)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

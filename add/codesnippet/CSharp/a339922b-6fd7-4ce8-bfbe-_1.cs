@@ -1,1 +1,0 @@
-UriBuilder myUri = new UriBuilder("http","www.contoso.com",8080,"index.htm","#top");

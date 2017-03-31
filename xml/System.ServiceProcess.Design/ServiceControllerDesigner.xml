@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides design-time services for the <see cref="T:System.ServiceProcess.ServiceController" /> class.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceProcess.Design.ServiceControllerDesigner" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <Parameter Name="properties" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="properties">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="properties">An <see cref="T:System.Collections.IDictionary" /> containing the properties for the <see cref="T:System.ServiceProcess.ServiceController" /> class.</param>
+        <summary>Adjusts the set of properties the <see cref="T:System.ServiceProcess.ServiceController" /> exposes through a <see cref="T:System.ComponentModel.TypeDescriptor" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

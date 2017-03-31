@@ -26,10 +26,17 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="fMoreData">To be added.</param>
-    <param name="adStatus">To be added.</param>
-    <param name="pRecordset">To be added.</param>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <param name="fMoreData">A <see langword="Boolean" /> determining whether the end of the <see cref="P:Microsoft.VisualBasic.Compatibility.VB6.ADODC.Recordset" /> has been reached.</param>
+    <param name="adStatus">An <see langword="ADODB.EventStatusEnum" />.</param>
+    <param name="pRecordset">An <see langword="ADODB.Recordset" /> object.</param>
+    <summary>Represents the method that will handle an event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

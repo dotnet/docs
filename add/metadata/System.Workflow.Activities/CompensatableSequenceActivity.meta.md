@@ -1,19 +1,34 @@
 ---
 uid: System.Workflow.Activities.CompensatableSequenceActivity
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.CompensatableSequenceActivity.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.CompensatableSequenceActivity.System#Workflow#ComponentModel#ICompensatableActivity#Compensate(System.Workflow.ComponentModel.ActivityExecutionContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.CompensatableSequenceActivity.#ctor(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.CompensatableSequenceActivity.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

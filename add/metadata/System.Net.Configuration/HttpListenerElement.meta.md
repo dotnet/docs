@@ -1,19 +1,23 @@
 ---
 uid: System.Net.Configuration.HttpListenerElement
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.HttpListenerElement.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.HttpListenerElement.UnescapeRequestUrl
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.HttpListenerElement.Timeouts
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

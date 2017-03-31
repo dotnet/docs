@@ -1,9 +1,13 @@
 ---
 uid: System.IdentityModel.Selectors.AudienceUriModeValidationHelper
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.IdentityModel.Selectors.AudienceUriModeValidationHelper.IsDefined(System.IdentityModel.Selectors.AudienceUriMode)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

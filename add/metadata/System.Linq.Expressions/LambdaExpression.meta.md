@@ -1,59 +1,93 @@
 ---
 uid: System.Linq.Expressions.LambdaExpression
-internalonly: False
+ms.author: "billchi"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Linq.Expressions.LambdaExpression.CompileToMethod(System.Reflection.Emit.MethodBuilder)
-internalonly: False
+ms.author: "billchi"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Linq.Expressions.LambdaExpression.Body
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
-uid: System.Linq.Expressions.LambdaExpression.ReturnType
-internalonly: False
----
-
----
-uid: System.Linq.Expressions.LambdaExpression.Parameters
-internalonly: False
----
-
----
-uid: System.Linq.Expressions.LambdaExpression.NodeType
-internalonly: False
----
-
----
-uid: System.Linq.Expressions.LambdaExpression.CompileToMethod(System.Reflection.Emit.MethodBuilder,System.Runtime.CompilerServices.DebugInfoGenerator)
-internalonly: False
+uid: System.Linq.Expressions.LambdaExpression.CompileToMethod
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.Expressions.LambdaExpression.Compile
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+
+---
+uid: System.Linq.Expressions.LambdaExpression.ReturnType
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+
+---
+uid: System.Linq.Expressions.LambdaExpression.Parameters
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+
+---
+uid: System.Linq.Expressions.LambdaExpression.NodeType
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+
+---
+uid: System.Linq.Expressions.LambdaExpression.CompileToMethod(System.Reflection.Emit.MethodBuilder,System.Runtime.CompilerServices.DebugInfoGenerator)
+ms.author: "billchi"
+manager: "ghogen"
+---
+
+---
+uid: System.Linq.Expressions.LambdaExpression.Compile
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.Expressions.LambdaExpression.Compile(System.Runtime.CompilerServices.DebugInfoGenerator)
-internalonly: False
+ms.author: "billchi"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Linq.Expressions.LambdaExpression.TailCall
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.Expressions.LambdaExpression.Name
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.Expressions.LambdaExpression.Type
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---

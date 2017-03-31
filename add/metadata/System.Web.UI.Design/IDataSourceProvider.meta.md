@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.Design.IDataSourceProvider
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.IDataSourceProvider.GetResolvedSelectedDataSource
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.IDataSourceProvider.GetSelectedDataSource
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -1,4 +1,5 @@
 ---
 uid: System.Runtime.Caching.CacheEntryRemovedReason
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---

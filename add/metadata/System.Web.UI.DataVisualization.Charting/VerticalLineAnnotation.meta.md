@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.DataVisualization.Charting.VerticalLineAnnotation
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.VerticalLineAnnotation.AnnotationType
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.VerticalLineAnnotation.#ctor
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---

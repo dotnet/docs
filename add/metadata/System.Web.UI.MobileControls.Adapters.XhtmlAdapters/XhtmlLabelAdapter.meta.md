@@ -1,19 +1,31 @@
 ---
 uid: System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlLabelAdapter
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlLabelAdapter.#ctor
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlLabelAdapter.Render
 ---
 
 ---
 uid: System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlLabelAdapter.Render(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlLabelAdapter.Control
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

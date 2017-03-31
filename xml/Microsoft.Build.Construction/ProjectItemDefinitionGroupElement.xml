@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents an [ItemDefinitionGroup Element (MSBuild)](../Topic/ItemDefinitionGroup%20Element%20\(MSBuild\).md) in an MSBuild project.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,10 +36,17 @@
         <Parameter Name="itemType" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="itemType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="itemType">Element name of item to be added.</param>
+        <summary>Adds a new item definition after the last child in this item definition group.</summary>
+        <returns>Returns the new item definition.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This convenience method picks a location in the project DOM based on a heuristic.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ItemDefinitions">
@@ -55,8 +62,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;Microsoft.Build.Construction.ProjectItemDefinitionElement&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets all child item definitions.</summary>
+        <value>Returns all child item definitions.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

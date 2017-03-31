@@ -1,34 +1,55 @@
 ---
 uid: System.Drawing.Drawing2D.HatchBrush
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Drawing.Drawing2D.HatchBrush.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Drawing2D.HatchBrush.BackgroundColor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Drawing2D.HatchBrush.Clone
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Drawing2D.HatchBrush.HatchStyle
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Drawing2D.HatchBrush.#ctor(System.Drawing.Drawing2D.HatchStyle,System.Drawing.Color,System.Drawing.Color)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Drawing2D.HatchBrush.ForegroundColor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Drawing2D.HatchBrush.#ctor(System.Drawing.Drawing2D.HatchStyle,System.Drawing.Color)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

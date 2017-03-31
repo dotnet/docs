@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines a set of states for the handling of automatic completion of a text composition.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Windows.Input.TextCompositionAutoComplete</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Auto-complete is off.</summary>
       </Docs>
     </Member>
     <Member MemberName="On">
@@ -43,7 +43,7 @@
         <ReturnType>System.Windows.Input.TextCompositionAutoComplete</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Auto-complete is on. A <see cref="E:System.Windows.Input.TextCompositionManager.TextInput" /> event will be raised automatically by the <see cref="T:System.Windows.Input.TextCompositionManager" /> after a <see cref="E:System.Windows.Input.TextCompositionManager.TextInputStart" /> event is handled.</summary>
       </Docs>
     </Member>
   </Members>

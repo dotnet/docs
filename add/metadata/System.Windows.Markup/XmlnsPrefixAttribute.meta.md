@@ -1,19 +1,19 @@
 ---
 uid: System.Windows.Markup.XmlnsPrefixAttribute
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XmlnsPrefixAttribute.Prefix
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XmlnsPrefixAttribute.XmlNamespace
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XmlnsPrefixAttribute.#ctor(System.String,System.String)
-internalonly: False
+manager: "martinek"
 ---

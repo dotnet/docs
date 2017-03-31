@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a tracking record of an activity being scheduled for execution.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,11 +36,11 @@
         <Parameter Name="child" Type="System.Activities.Tracking.ActivityInfo" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="recordNumber">To be added.</param>
-        <param name="activity">To be added.</param>
-        <param name="child">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceId">The instance ID of the scheduled activity.</param>
+        <param name="recordNumber">A sequence that indicates the order in which tracking records are generated.</param>
+        <param name="activity">The activity issuing the scheduled execution request.</param>
+        <param name="child">The scheduled activity.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Tracking.ActivityScheduledRecord" /> class using the specified instance ID, record number, activity and child activity.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,8 +57,8 @@
         <ReturnType>System.Activities.Tracking.ActivityInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Activities.Tracking.ActivityInfo" /> for the activity.</summary>
+        <value>The activity information.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,8 +75,8 @@
         <ReturnType>System.Activities.Tracking.ActivityInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Activities.Tracking.ActivityInfo" /> for the child activity</summary>
+        <value>The child activity information.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,8 +113,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a string that contains all of the details of the <see cref="T:System.Activities.Tracking.ActivityScheduledRecord" />.</summary>
+        <returns>The tracking record details.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

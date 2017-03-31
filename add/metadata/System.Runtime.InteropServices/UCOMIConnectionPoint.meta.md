@@ -1,29 +1,41 @@
 ---
 uid: System.Runtime.InteropServices.UCOMIConnectionPoint
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.UCOMIConnectionPoint.Advise(System.Object,System.Int32@)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.UCOMIConnectionPoint.GetConnectionPointContainer(System.Runtime.InteropServices.UCOMIConnectionPointContainer@)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.UCOMIConnectionPoint.GetConnectionInterface(System.Guid@)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.UCOMIConnectionPoint.EnumConnections(System.Runtime.InteropServices.UCOMIEnumConnections@)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.UCOMIConnectionPoint.Unadvise(System.Int32)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

@@ -22,8 +22,24 @@
   <Interfaces>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a collection of <see cref="T:System.Xml.Serialization.XmlElementAttribute" /> objects used by the <see cref="T:System.Xml.Serialization.XmlSerializer" /> to override the default way it serializes a class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.Serialization.XmlElementAttributes> is returned by the <xref:System.Xml.Serialization.XmlAttributes.XmlElements%2A> property of the <xref:System.Xml.Serialization.XmlAttributes> class. By using the <xref:System.Xml.Serialization.XmlAttributeOverrides> class and the <xref:System.Xml.Serialization.XmlAttributes> class, you can override the default way that the <xref:System.Xml.Serialization.XmlSerializer> serializes a class.  
+  
+   
+  
+## Examples  
+ The following example serializes the `Transportation` class, which contains a single field named `Vehicles` that returns an <xref:System.Collections.ArrayList>. The example first applies two instances of the <xref:System.Xml.Serialization.XmlElementAttribute> class to the `Vehicles` field that specifies the types of objects the <xref:System.Xml.Serialization.XmlSerializer> inserts into the array. The example then creates two <xref:System.Xml.Serialization.XmlElementAttribute> objects to override the behavior of the attributes applied to the `Vehicles` property. The two overriding objects are added to the <xref:System.Xml.Serialization.XmlElementAttributes> collection of an <xref:System.Xml.Serialization.XmlAttributes>. Lastly, the example adds the <xref:System.Xml.Serialization.XmlAttributes> to an <xref:System.Xml.Serialization.XmlAttributeOverrides>, allowing the <xref:System.Xml.Serialization.XmlSerializer> to insert the new object types into the <xref:System.Collections.ArrayList> returned by the `Vehicles` field.  
+  
+ [!code-cpp[Classic XmlElementAttributes Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic XmlElementAttributes Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic XmlElementAttributes Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic XmlElementAttributes Example/CS/source.cs#1)]
+ [!code-vb[Classic XmlElementAttributes Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic XmlElementAttributes Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,7 +62,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlElementAttributes" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,10 +91,21 @@
         <Parameter Name="attribute" Type="System.Xml.Serialization.XmlElementAttribute" />
       </Parameters>
       <Docs>
-        <param name="attribute">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="attribute">The <see cref="T:System.Xml.Serialization.XmlElementAttribute" /> to add.</param>
+        <summary>Adds an <see cref="T:System.Xml.Serialization.XmlElementAttribute" /> to the collection.</summary>
+        <returns>The zero-based index of the newly added item.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates two <xref:System.Xml.Serialization.XmlElementAttribute> objects and calls the <xref:System.Xml.Serialization.XmlElementAttributes.Add%2A> method to add them to an <xref:System.Xml.Serialization.XmlElementAttributes>. The example then adds the <xref:System.Xml.Serialization.XmlElementAttributes> to an <xref:System.Xml.Serialization.XmlAttributeOverrides>, which is used to create an <xref:System.Xml.Serialization.XmlSerializer> that can serialize an instance of the `Transportation` class.  
+  
+ [!code-cpp[Classic XmlElementAttributes.Add Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic XmlElementAttributes.Add Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic XmlElementAttributes.Add Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic XmlElementAttributes.Add Example/CS/source.cs#1)]
+ [!code-vb[Classic XmlElementAttributes.Add Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic XmlElementAttributes.Add Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -124,9 +151,10 @@
         <Parameter Name="attribute" Type="System.Xml.Serialization.XmlElementAttribute" />
       </Parameters>
       <Docs>
-        <param name="attribute">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="attribute">The <see cref="T:System.Xml.Serialization.XmlElementAttribute" /> to look for.</param>
+        <summary>Determines whether the collection contains the specified object.</summary>
+        <returns>
+          <see langword="true" /> if the object exists in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,9 +184,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">The <see cref="T:System.Xml.Serialization.XmlElementAttribute" /> array to hold the copied elements.</param>
+        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <summary>Copies the <see cref="T:System.Xml.Serialization.XmlElementAttributes" />, or a portion of it to a one-dimensional array.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -224,9 +252,9 @@
         <Parameter Name="attribute" Type="System.Xml.Serialization.XmlElementAttribute" />
       </Parameters>
       <Docs>
-        <param name="attribute">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="attribute">The <see cref="T:System.Xml.Serialization.XmlElementAttribute" /> whose index is being retrieved.</param>
+        <summary>Gets the index of the specified <see cref="T:System.Xml.Serialization.XmlElementAttribute" />.</summary>
+        <returns>The zero-based index of the <see cref="T:System.Xml.Serialization.XmlElementAttribute" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -256,9 +284,9 @@
         <Parameter Name="attribute" Type="System.Xml.Serialization.XmlElementAttribute" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="attribute">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The zero-based index where the member is inserted.</param>
+        <param name="attribute">The <see cref="T:System.Xml.Serialization.XmlElementAttribute" /> to insert.</param>
+        <summary>Inserts an <see cref="T:System.Xml.Serialization.XmlElementAttribute" /> into the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -287,10 +315,13 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The zero-based index of the element to get or set.</param>
+        <summary>Gets or sets the element at the specified index.</summary>
+        <value>The element at the specified index.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is not a valid index in the <see cref="T:System.Xml.Serialization.XmlElementAttributes" />.</exception>
+        <exception cref="T:System.NotSupportedException">The property is set and the <see cref="T:System.Xml.Serialization.XmlElementAttributes" /> is read-only.</exception>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -318,8 +349,8 @@
         <Parameter Name="attribute" Type="System.Xml.Serialization.XmlElementAttribute" />
       </Parameters>
       <Docs>
-        <param name="attribute">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="attribute">The <see cref="T:System.Xml.Serialization.XmlElementAttribute" /> to remove from the collection.</param>
+        <summary>Removes the specified object from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

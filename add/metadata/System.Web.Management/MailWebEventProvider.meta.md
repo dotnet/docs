@@ -1,24 +1,34 @@
 ---
 uid: System.Web.Management.MailWebEventProvider
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Management.MailWebEventProvider.ProcessEventFlush(System.Web.Management.WebEventBufferFlushInfo)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Management.MailWebEventProvider.ProcessEvent(System.Web.Management.WebBaseEvent)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Management.MailWebEventProvider.Shutdown
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Management.MailWebEventProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

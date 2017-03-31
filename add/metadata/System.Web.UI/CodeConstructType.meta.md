@@ -1,4 +1,5 @@
 ---
 uid: System.Web.UI.CodeConstructType
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -1,59 +1,90 @@
 ---
 uid: System.Security.Permissions.KeyContainerPermissionAccessEntry
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.KeyContainerPermissionAccessEntry.Flags
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.KeyContainerPermissionAccessEntry.#ctor(System.String,System.Security.Permissions.KeyContainerPermissionFlags)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.KeyContainerPermissionAccessEntry.#ctor(System.Security.Cryptography.CspParameters,System.Security.Permissions.KeyContainerPermissionFlags)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.KeyContainerPermissionAccessEntry.KeySpec
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Permissions.KeyContainerPermissionAccessEntry.#ctor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.KeyContainerPermissionAccessEntry.ProviderName
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.KeyContainerPermissionAccessEntry.ProviderType
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.KeyContainerPermissionAccessEntry.GetHashCode
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.KeyContainerPermissionAccessEntry.KeyContainerName
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.KeyContainerPermissionAccessEntry.Equals(System.Object)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.KeyContainerPermissionAccessEntry.KeyStore
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.KeyContainerPermissionAccessEntry.#ctor(System.String,System.String,System.Int32,System.String,System.Int32,System.Security.Permissions.KeyContainerPermissionFlags)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

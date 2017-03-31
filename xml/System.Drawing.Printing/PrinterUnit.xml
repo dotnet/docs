@@ -10,8 +10,17 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies several of the units of measure used for printing.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Drawing.Printing.PreviewPrintController>, <xref:System.Drawing.Printing.PrinterSettings>, and <xref:System.Windows.Forms.PageSetupDialog> classes use this enumeration.  
+  
+ For more information on printing, see the <xref:System.Drawing.Printing> namespace overview.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Display">
@@ -27,7 +36,7 @@
         <ReturnType>System.Drawing.Printing.PrinterUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The default unit (0.01 in.).</summary>
       </Docs>
     </Member>
     <Member MemberName="HundredthsOfAMillimeter">
@@ -43,7 +52,7 @@
         <ReturnType>System.Drawing.Printing.PrinterUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>One-hundredth of a millimeter (0.01 mm).</summary>
       </Docs>
     </Member>
     <Member MemberName="TenthsOfAMillimeter">
@@ -59,7 +68,7 @@
         <ReturnType>System.Drawing.Printing.PrinterUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>One-tenth of a millimeter (0.1 mm).</summary>
       </Docs>
     </Member>
     <Member MemberName="ThousandthsOfAnInch">
@@ -75,7 +84,7 @@
         <ReturnType>System.Drawing.Printing.PrinterUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>One-thousandth of an inch (0.001 in.).</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,44 +1,59 @@
 ---
 uid: System.Net.PeerToPeer.PeerNameRecord
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.PeerNameRecord.Data
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.PeerNameRecord.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.PeerNameRecord.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.PeerNameRecord.EndPointCollection
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.PeerNameRecord.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.PeerToPeer.PeerNameRecord.#ctor
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.PeerNameRecord.Comment
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.PeerNameRecord.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.PeerNameRecord.PeerName
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

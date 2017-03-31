@@ -1,54 +1,71 @@
 ---
 uid: System.Net.Http.Headers.ProductHeaderValue
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Http.Headers.ProductHeaderValue.#ctor
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.ProductHeaderValue.System#ICloneable#Clone
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.ProductHeaderValue.Equals(System.Object)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.ProductHeaderValue.ToString
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.ProductHeaderValue.GetHashCode
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.ProductHeaderValue.Name
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.ProductHeaderValue.#ctor(System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.ProductHeaderValue.TryParse(System.String,System.Net.Http.Headers.ProductHeaderValue@)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.ProductHeaderValue.#ctor(System.String,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.ProductHeaderValue.Parse(System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.ProductHeaderValue.Version
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

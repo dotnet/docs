@@ -1,9 +1,13 @@
 ---
 uid: System.ServiceModel.UnknownMessageReceivedEventArgs
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.UnknownMessageReceivedEventArgs.Message
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

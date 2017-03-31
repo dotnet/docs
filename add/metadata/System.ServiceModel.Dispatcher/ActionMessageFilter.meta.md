@@ -1,29 +1,48 @@
 ---
 uid: System.ServiceModel.Dispatcher.ActionMessageFilter
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.ActionMessageFilter.Actions
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.ActionMessageFilter.CreateFilterTable``1
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.ActionMessageFilter.Match(System.ServiceModel.Channels.MessageBuffer)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.ActionMessageFilter.Match(System.ServiceModel.Channels.Message)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.ActionMessageFilter.#ctor(System.String[])
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Dispatcher.ActionMessageFilter.Match
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

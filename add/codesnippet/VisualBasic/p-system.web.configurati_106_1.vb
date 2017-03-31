@@ -1,1 +1,0 @@
-ruleSetting = healthMonitoringSection.Rules(i)

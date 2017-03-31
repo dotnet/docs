@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the configuration section that contains services.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Services are defined in the services section of the configuration file. Each service has its own service configuration section.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.ServicesSection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,8 +117,8 @@
         <ReturnType>System.ServiceModel.Configuration.ServiceElementCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets all the services configured in this section.</summary>
+        <value>A <see cref="T:System.ServiceModel.Configuration.ServiceElementCollection" /> that contains all the services configured in this section.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

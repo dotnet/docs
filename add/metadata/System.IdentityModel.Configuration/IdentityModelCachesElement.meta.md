@@ -1,24 +1,29 @@
 ---
 uid: System.IdentityModel.Configuration.IdentityModelCachesElement
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Configuration.IdentityModelCachesElement.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Configuration.IdentityModelCachesElement.TokenReplayCache
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Configuration.IdentityModelCachesElement.IsConfigured
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Configuration.IdentityModelCachesElement.SessionSecurityTokenCache
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

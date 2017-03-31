@@ -1,64 +1,95 @@
 ---
 uid: System.Windows.Media.Effects.BitmapEffectInput
-internalonly: False
----
-
----
-uid: System.Windows.Media.Effects.BitmapEffectInput.CloneCurrentValue
-internalonly: False
----
-
----
-uid: System.Windows.Media.Effects.BitmapEffectInput.AreaToApplyEffectUnits
-internalonly: False
----
-
----
-uid: System.Windows.Media.Effects.BitmapEffectInput.ContextInputSource
-internalonly: False
----
-
----
-uid: System.Windows.Media.Effects.BitmapEffectInput.ShouldSerializeInput
-internalonly: False
----
-
----
-uid: System.Windows.Media.Effects.BitmapEffectInput.#ctor(System.Windows.Media.Imaging.BitmapSource)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Effects.BitmapEffectInput.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Effects.BitmapEffectInput.CloneCurrentValue
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Effects.BitmapEffectInput.AreaToApplyEffectUnits
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Effects.BitmapEffectInput.ContextInputSource
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Effects.BitmapEffectInput.ShouldSerializeInput
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Effects.BitmapEffectInput.#ctor(System.Windows.Media.Imaging.BitmapSource)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Effects.BitmapEffectInput.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Effects.BitmapEffectInput.AreaToApplyEffectUnitsProperty
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Effects.BitmapEffectInput.InputProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Effects.BitmapEffectInput.AreaToApplyEffectProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Effects.BitmapEffectInput.Clone
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Effects.BitmapEffectInput.AreaToApplyEffect
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Effects.BitmapEffectInput.Input
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

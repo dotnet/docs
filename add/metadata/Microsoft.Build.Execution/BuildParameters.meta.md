@@ -1,154 +1,191 @@
 ---
 uid: Microsoft.Build.Execution.BuildParameters
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildParameters.GetToolset(System.String)
-internalonly: False
----
-
----
-uid: Microsoft.Build.Execution.BuildParameters.UICulture
-internalonly: False
----
-
----
-uid: Microsoft.Build.Execution.BuildParameters.BuildThreadPriority
-internalonly: False
----
-
----
-uid: Microsoft.Build.Execution.BuildParameters.SaveOperatingEnvironment
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildParameters.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
+---
+
+---
+uid: Microsoft.Build.Execution.BuildParameters.UICulture
+ms.author: "susanno"
+manager: "douge"
+---
+
+---
+uid: Microsoft.Build.Execution.BuildParameters.BuildThreadPriority
+ms.author: "susanno"
+manager: "douge"
+---
+
+---
+uid: Microsoft.Build.Execution.BuildParameters.SaveOperatingEnvironment
+ms.author: "susanno"
+manager: "douge"
+---
+
+---
+uid: Microsoft.Build.Execution.BuildParameters.#ctor
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildParameters.NodeExeLocation
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildParameters.Toolsets
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildParameters.BuildProcessEnvironment
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildParameters.Loggers
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildParameters.LogInitialPropertiesAndItems
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildParameters.EnvironmentProperties
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildParameters.DetailedSummary
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildParameters.ToolsetDefinitionLocations
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildParameters.MemoryUseLimit
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildParameters.LegacyThreadingSemantics
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildParameters.EnableNodeReuse
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildParameters.Clone
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildParameters.LogTaskInputs
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildParameters.OnlyLogCriticalEvents
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildParameters.#ctor(Microsoft.Build.Evaluation.ProjectCollection)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildParameters.DisableInProcNode
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildParameters.UseSynchronousLogging
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildParameters.ResetCaches
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildParameters.ShutdownInProcNodeOnBuildFinish
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildParameters.ForwardingLoggers
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildParameters.DefaultToolsVersion
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildParameters.MaxNodeCount
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildParameters.Culture
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildParameters.GlobalProperties
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildParameters.HostServices
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

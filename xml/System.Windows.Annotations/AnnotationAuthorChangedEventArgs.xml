@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides data for the <see cref="E:System.Windows.Annotations.Annotation.AuthorChanged" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Annotations.AnnotationAuthorChangedEventArgs> is passed as a parameter to the <xref:System.Windows.Annotations.AnnotationAuthorChangedEventHandler> whenever an <xref:System.Windows.Annotations.Annotation.AuthorChanged> event occurs on an <xref:System.Windows.Annotations.Annotation>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,11 +37,22 @@
         <Parameter Name="author" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="annotation">To be added.</param>
-        <param name="action">To be added.</param>
-        <param name="author">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="annotation">The annotation raising the event.</param>
+        <param name="action">The author operation performed: <see cref="F:System.Windows.Annotations.AnnotationAction.Added" />, <see cref="F:System.Windows.Annotations.AnnotationAction.Removed" />, or <see cref="F:System.Windows.Annotations.AnnotationAction.Modified" />.</param>
+        <param name="author">The author object being changed by the event.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Annotations.AnnotationAuthorChangedEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ **AnnotationAuthorChangedEventArgs** is passed as a parameter to the <xref:System.Windows.Annotations.AnnotationAuthorChangedEventHandler> whenever an <xref:System.Windows.Annotations.Annotation.AuthorChanged> event occurs on an annotation.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="annotation" /> or <paramref name="action" /> is a null reference (**Nothing** in Visual Basic).</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
+          <paramref name="action" /> is an invalid <see cref="T:System.Windows.Annotations.AnnotationAction" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Action">
@@ -50,8 +68,8 @@
         <ReturnType>System.Windows.Annotations.AnnotationAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the author change operation for the event.</summary>
+        <value>The author change operation: <see cref="F:System.Windows.Annotations.AnnotationAction.Added" />, <see cref="F:System.Windows.Annotations.AnnotationAction.Removed" />, or <see cref="F:System.Windows.Annotations.AnnotationAction.Modified" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,8 +86,8 @@
         <ReturnType>System.Windows.Annotations.Annotation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the annotation that raised the event.</summary>
+        <value>The annotation that raised the event.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,8 +104,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the author object that is the target of the event.</summary>
+        <value>The author object that is the target of the event.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

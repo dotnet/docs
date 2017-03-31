@@ -1,14 +1,18 @@
 ---
 uid: System.Windows.Input.InputGesture
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Input.InputGesture.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.InputGesture.Matches(System.Object,System.Windows.Input.InputEventArgs)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

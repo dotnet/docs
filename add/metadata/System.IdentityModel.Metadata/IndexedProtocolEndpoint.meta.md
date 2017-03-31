@@ -1,24 +1,35 @@
 ---
 uid: System.IdentityModel.Metadata.IndexedProtocolEndpoint
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.IndexedProtocolEndpoint.#ctor(System.Int32,System.Uri,System.Uri)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.IndexedProtocolEndpoint.IsDefault
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.IndexedProtocolEndpoint.Index
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.IndexedProtocolEndpoint.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Metadata.IndexedProtocolEndpoint.#ctor
+ms.author: "v-jibran"
+manager: "markgal"
 ---

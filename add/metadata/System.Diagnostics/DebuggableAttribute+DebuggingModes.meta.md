@@ -1,4 +1,6 @@
 ---
 uid: System.Diagnostics.DebuggableAttribute.DebuggingModes
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

@@ -1,64 +1,77 @@
 ---
 uid: System.Web.UI.WebControls.HierarchicalDataBoundControl
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.HierarchicalDataBoundControl.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.HierarchicalDataBoundControl.DataSourceID
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.HierarchicalDataBoundControl.OnPagePreLoad(System.Object,System.EventArgs)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.HierarchicalDataBoundControl.GetDataSource
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.HierarchicalDataBoundControl.OnLoad(System.EventArgs)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.HierarchicalDataBoundControl.GetData(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.HierarchicalDataBoundControl.ValidateDataSource(System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.HierarchicalDataBoundControl.PerformSelect
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.HierarchicalDataBoundControl.OnDataPropertyChanged
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.HierarchicalDataBoundControl.MarkAsDataBound
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.HierarchicalDataBoundControl.OnDataSourceChanged(System.Object,System.EventArgs)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.HierarchicalDataBoundControl.PerformDataBinding
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

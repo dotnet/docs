@@ -1,19 +1,34 @@
 ---
 uid: System.Runtime.InteropServices.TypeLibTypeAttribute
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.TypeLibTypeAttribute.#ctor(System.Runtime.InteropServices.TypeLibTypeFlags)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.TypeLibTypeAttribute.Value
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.InteropServices.TypeLibTypeAttribute.#ctor
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.TypeLibTypeAttribute.#ctor(System.Int16)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

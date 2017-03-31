@@ -1,59 +1,77 @@
 ---
 uid: System.ComponentModel.DataAnnotations.ValidationContext
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.ValidationContext.#ctor(System.Object,System.IServiceProvider,System.Collections.Generic.IDictionary{System.Object,System.Object})
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.ValidationContext.ServiceContainer
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.ValidationContext.#ctor(System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.ValidationContext.InitializeServiceProvider(System.Func{System.Type,System.Object})
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.ValidationContext.ObjectInstance
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.ValidationContext.#ctor(System.Object,System.Collections.Generic.IDictionary{System.Object,System.Object})
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.DataAnnotations.ValidationContext.#ctor
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.ValidationContext.GetService(System.Type)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.ValidationContext.ObjectType
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.ValidationContext.MemberName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.ValidationContext.Items
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.ValidationContext.DisplayName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

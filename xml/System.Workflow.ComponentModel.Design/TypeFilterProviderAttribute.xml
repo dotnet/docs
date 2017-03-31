@@ -19,8 +19,23 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the class a type or member uses to filter the types that are displayed in the class browser dialog box. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ The class you use to filter the types to display in the class browser dialog box must implement <xref:System.Workflow.ComponentModel.Design.ITypeFilterProvider>.  
+  
+ Use the <xref:System.Workflow.ComponentModel.Design.TypeFilterProviderAttribute.TypeFilterProviderTypeName%2A> property to determine the name of the filter class.  
+  
+ For more information about using attributes, see [Attributes](../Topic/Extending%20Metadata%20Using%20Attributes.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,8 +51,8 @@
         <Parameter Name="typeName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="typeName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="typeName">A string that contains the name of the type that implements <see cref="T:System.Workflow.ComponentModel.Design.ITypeFilterProvider" /> to apply to the class or member.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Design.TypeFilterProviderAttribute" /> class by using the specified type name.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,8 +69,8 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="type">A <see cref="T:System.Type" /> that implements <see cref="T:System.Workflow.ComponentModel.Design.ITypeFilterProvider" /> to apply to the class or member.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Design.TypeFilterProviderAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,8 +87,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the type that implements <see cref="T:System.Workflow.ComponentModel.Design.ITypeFilterProvider" />.</summary>
+        <value>A string that contains the name of the type that implements  <see cref="T:System.Workflow.ComponentModel.Design.ITypeFilterProvider" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

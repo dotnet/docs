@@ -1,29 +1,48 @@
 ---
 uid: System.Diagnostics.SymbolStore.SymDocumentWriter
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.SymbolStore.SymDocumentWriter.Finalize
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.SymbolStore.SymDocumentWriter.SetCheckSum(System.Guid,System.Byte[])
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.SymbolStore.SymDocumentWriter.SetSource(System.Byte[])
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.SymbolStore.SymDocumentWriter.Dispose(System.Boolean)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.SymbolStore.SymDocumentWriter.Dispose
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.SymbolStore.SymDocumentWriter.Dispose
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

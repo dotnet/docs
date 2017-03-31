@@ -1,49 +1,66 @@
 ---
 uid: System.Windows.Forms.SearchForVirtualItemEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.SearchForVirtualItemEventArgs.Direction
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.SearchForVirtualItemEventArgs.IsTextSearch
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.SearchForVirtualItemEventArgs.StartingPoint
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.SearchForVirtualItemEventArgs.Index
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.SearchForVirtualItemEventArgs.Text
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.SearchForVirtualItemEventArgs.#ctor(System.Boolean,System.Boolean,System.Boolean,System.String,System.Drawing.Point,System.Windows.Forms.SearchDirectionHint,System.Int32)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.SearchForVirtualItemEventArgs.StartIndex
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.SearchForVirtualItemEventArgs.IsPrefixSearch
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.SearchForVirtualItemEventArgs.IncludeSubItemsInSearch
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

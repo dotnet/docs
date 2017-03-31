@@ -17,7 +17,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Use <see cref="T:System.Runtime.InteropServices.ComTypes.VARDESC.DESCUNION" /> instead.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,7 +35,7 @@
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Describes a symbolic constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,7 +53,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates the offset of this variable within the instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

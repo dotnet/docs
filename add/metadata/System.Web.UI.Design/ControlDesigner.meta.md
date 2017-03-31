@@ -1,299 +1,395 @@
 ---
 uid: System.Web.UI.Design.ControlDesigner
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ControlDesigner.ActionLists
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.ControlDesigner.Tag
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.ControlDesigner.CreateErrorDesignTimeHtml(System.String)
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.ControlDesigner.GetErrorDesignTimeHtml(System.Exception)
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.ControlDesigner.TemplateGroups
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.ControlDesigner.IsDirty
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.ControlDesigner.AutoFormats
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.ControlDesigner.GetBounds
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.ControlDesigner.UsePreviewControl
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.ControlDesigner.UpdateDesignTimeHtml
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.ControlDesigner.DataBindingsEnabled
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.ControlDesigner.Invalidate
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.ControlDesigner.OnPaint(System.Windows.Forms.PaintEventArgs)
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.ControlDesigner.DesignTimeHtmlRequiresLoadComplete
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.ControlDesigner.GetViewRendering
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.ControlDesigner.OnControlResize
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.ControlDesigner.RegisterClone(System.Object,System.Object)
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.ControlDesigner.SetViewFlags(System.Web.UI.Design.ViewFlags,System.Boolean)
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.ControlDesigner.OnComponentChanging(System.Object,System.ComponentModel.Design.ComponentChangingEventArgs)
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.ControlDesigner.RaiseResizeEvent
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.ControlDesigner.InTemplateMode
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.ControlDesigner.HidePropertiesInTemplateMode
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.ControlDesigner.SetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion,System.String)
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.ControlDesigner.ReadOnly
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.ControlDesigner.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.ControlDesigner.CreatePlaceHolderDesignTimeHtml(System.String)
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.ControlDesigner.OnAutoFormatApplied(System.Web.UI.Design.DesignerAutoFormat)
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.ControlDesigner.Invalidate(System.Drawing.Rectangle)
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.ControlDesigner.GetDesignTimeResourceProviderFactory(System.IServiceProvider)
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.ControlDesigner.GetEmptyDesignTimeHtml
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.ControlDesigner.CreateErrorDesignTimeHtml(System.String,System.Exception)
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.ControlDesigner.InvokeTransactedChange(System.ComponentModel.IComponent,System.Web.UI.Design.TransactedChangeCallback,System.Object,System.String)
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.ControlDesigner.Initialize(System.ComponentModel.IComponent)
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.ControlDesigner.OnBindingsCollectionChanged(System.String)
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.ControlDesigner.GetViewRendering(System.Web.UI.Control)
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.ControlDesigner.GetViewRendering(System.Web.UI.Design.ControlDesigner)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ControlDesigner.CreatePlaceHolderDesignTimeHtml
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.ControlDesigner.InvokeTransactedChange(System.IServiceProvider,System.ComponentModel.IComponent,System.Web.UI.Design.TransactedChangeCallback,System.Object,System.String,System.ComponentModel.MemberDescriptor)
-internalonly: False
+uid: System.Web.UI.Design.ControlDesigner.Tag
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.ControlDesigner.CreateViewControl
-internalonly: False
+uid: System.Web.UI.Design.ControlDesigner.CreateErrorDesignTimeHtml(System.String)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ControlDesigner.CreateErrorDesignTimeHtml
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ControlDesigner.GetErrorDesignTimeHtml(System.Exception)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ControlDesigner.TemplateGroups
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ControlDesigner.IsDirty
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ControlDesigner.AutoFormats
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ControlDesigner.GetBounds
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ControlDesigner.UsePreviewControl
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ControlDesigner.UpdateDesignTimeHtml
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ControlDesigner.DataBindingsEnabled
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ControlDesigner.Invalidate
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ControlDesigner.OnPaint(System.Windows.Forms.PaintEventArgs)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ControlDesigner.DesignTimeHtmlRequiresLoadComplete
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ControlDesigner.GetViewRendering
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ControlDesigner.OnControlResize
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ControlDesigner.RegisterClone(System.Object,System.Object)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ControlDesigner.SetViewFlags(System.Web.UI.Design.ViewFlags,System.Boolean)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ControlDesigner.OnComponentChanging(System.Object,System.ComponentModel.Design.ComponentChangingEventArgs)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ControlDesigner.RaiseResizeEvent
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ControlDesigner.InTemplateMode
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ControlDesigner.HidePropertiesInTemplateMode
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ControlDesigner.SetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion,System.String)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ControlDesigner.ReadOnly
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ControlDesigner.InvokeTransactedChange
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ControlDesigner.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ControlDesigner.CreatePlaceHolderDesignTimeHtml(System.String)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ControlDesigner.OnAutoFormatApplied(System.Web.UI.Design.DesignerAutoFormat)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ControlDesigner.Invalidate(System.Drawing.Rectangle)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ControlDesigner.GetDesignTimeResourceProviderFactory(System.IServiceProvider)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ControlDesigner.GetEmptyDesignTimeHtml
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ControlDesigner.CreateErrorDesignTimeHtml(System.String,System.Exception)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ControlDesigner.InvokeTransactedChange(System.ComponentModel.IComponent,System.Web.UI.Design.TransactedChangeCallback,System.Object,System.String)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ControlDesigner.Initialize(System.ComponentModel.IComponent)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ControlDesigner.OnBindingsCollectionChanged(System.String)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ControlDesigner.GetViewRendering(System.Web.UI.Control)
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ControlDesigner.GetDesignTimeHtml
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ControlDesigner.GetViewRendering(System.Web.UI.Design.ControlDesigner)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ControlDesigner.CreatePlaceHolderDesignTimeHtml
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ControlDesigner.InvokeTransactedChange(System.IServiceProvider,System.ComponentModel.IComponent,System.Web.UI.Design.TransactedChangeCallback,System.Object,System.String,System.ComponentModel.MemberDescriptor)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ControlDesigner.CreateViewControl
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ControlDesigner.GetDesignTimeHtml
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ControlDesigner.GetPersistenceContent
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ControlDesigner.ViewControl
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ControlDesigner.DesignerState
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ControlDesigner.IsPropertyBound(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ControlDesigner.RootDesigner
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ControlDesigner.DesignTimeElementView
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ControlDesigner.GetViewRendering
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ControlDesigner.AllowResize
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ControlDesigner.PreFilterProperties(System.Collections.IDictionary)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ControlDesigner.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ControlDesigner.GetPersistInnerHtml
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ControlDesigner.InvokeTransactedChange(System.ComponentModel.IComponent,System.Web.UI.Design.TransactedChangeCallback,System.Object,System.String,System.ComponentModel.MemberDescriptor)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ControlDesigner.SetRegionContent(System.Web.UI.Design.EditableDesignerRegion,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ControlDesigner.Visible
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ControlDesigner.ViewControlCreated
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ControlDesigner.Localize(System.Web.UI.Design.IDesignTimeResourceWriter)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ControlDesigner.ID
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ControlDesigner.Invalidate
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ControlDesigner.GetDesignTimeHtml(System.Web.UI.Design.DesignerRegionCollection)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ControlDesigner.OnClick(System.Web.UI.Design.DesignerRegionMouseEventArgs)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ControlDesigner.GetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

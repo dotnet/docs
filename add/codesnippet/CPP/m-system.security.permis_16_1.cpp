@@ -1,1 +1,0 @@
-      Console::WriteLine( "Value of the permission set ToString = \n{0}", ps1->ToString() );

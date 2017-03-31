@@ -1,164 +1,230 @@
 ---
 uid: Microsoft.Build.Tasks.Windows.MarkupCompilePass1
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Windows.MarkupCompilePass1.LanguageSourceExtension
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Windows.MarkupCompilePass1.GeneratedBamlFiles
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Windows.MarkupCompilePass1.GeneratedLocalizationFiles
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Windows.MarkupCompilePass1.SourceCodeFiles
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Windows.MarkupCompilePass1.OutputType
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Windows.MarkupCompilePass1.References
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Windows.MarkupCompilePass1.RootNamespace
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Windows.MarkupCompilePass1.IsRunningInVisualStudio
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Windows.MarkupCompilePass1.HostInBrowser
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Windows.MarkupCompilePass1.KnownReferencePaths
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Windows.MarkupCompilePass1.ExtraBuildControlFiles
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Windows.MarkupCompilePass1.AssemblyVersion
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Windows.MarkupCompilePass1.OutputPath
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Windows.MarkupCompilePass1.Language
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Windows.MarkupCompilePass1.ApplicationMarkup
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Windows.MarkupCompilePass1.Execute
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Windows.MarkupCompilePass1.XamlDebuggingInformation
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Windows.MarkupCompilePass1.ContentFiles
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Windows.MarkupCompilePass1.SplashScreen
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Windows.MarkupCompilePass1.PageMarkup
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Windows.MarkupCompilePass1.AssembliesGeneratedDuringBuild
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Windows.MarkupCompilePass1.AllGeneratedFiles
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Windows.MarkupCompilePass1.LocalizationDirectivesToLocFile
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Windows.MarkupCompilePass1.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Windows.MarkupCompilePass1.GeneratedCodeFiles
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Windows.MarkupCompilePass1.DefineConstants
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Windows.MarkupCompilePass1.RequirePass2ForSatelliteAssembly
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Windows.MarkupCompilePass1.UICulture
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Windows.MarkupCompilePass1.AssemblyName
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Windows.MarkupCompilePass1.RequirePass2ForMainAssembly
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Windows.MarkupCompilePass1.AssemblyPublicKeyToken
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Windows.MarkupCompilePass1.AlwaysCompileMarkupFilesInSeparateDomain
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

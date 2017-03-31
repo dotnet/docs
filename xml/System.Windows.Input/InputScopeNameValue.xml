@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the input scope name which modifies how input from alternative input methods is interpreted.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Input.InputScopeName> enumeration provides a set of pre-defined <xref:System.Windows.Input.InputScopePhrase.Name%2A> property values of the <xref:System.Windows.Input.InputScopePhrase> class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AddressCity">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for a city address.</summary>
       </Docs>
     </Member>
     <Member MemberName="AddressCountryName">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for the name of a country.</summary>
       </Docs>
     </Member>
     <Member MemberName="AddressCountryShortName">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for the abbreviated name of a country.</summary>
       </Docs>
     </Member>
     <Member MemberName="AddressStateOrProvince">
@@ -75,7 +82,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for a state or province.</summary>
       </Docs>
     </Member>
     <Member MemberName="AddressStreet">
@@ -91,7 +98,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for a street address.</summary>
       </Docs>
     </Member>
     <Member MemberName="AlphanumericFullWidth">
@@ -107,7 +114,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for alphanumeric full-width characters.</summary>
       </Docs>
     </Member>
     <Member MemberName="AlphanumericHalfWidth">
@@ -123,7 +130,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for alphanumeric half-width characters.</summary>
       </Docs>
     </Member>
     <Member MemberName="Bopomofo">
@@ -139,7 +146,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for the Bopomofo Mandarin Chinese phonetic transcription system.</summary>
       </Docs>
     </Member>
     <Member MemberName="CurrencyAmount">
@@ -155,7 +162,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for amount of currency.</summary>
       </Docs>
     </Member>
     <Member MemberName="CurrencyAmountAndSymbol">
@@ -171,7 +178,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for amount and symbol of currency.</summary>
       </Docs>
     </Member>
     <Member MemberName="CurrencyChinese">
@@ -187,7 +194,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for Chinese currency.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date">
@@ -203,7 +210,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for a calendar date.</summary>
       </Docs>
     </Member>
     <Member MemberName="DateDay">
@@ -219,7 +226,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for the numeric day in a calendar date.</summary>
       </Docs>
     </Member>
     <Member MemberName="DateDayName">
@@ -235,7 +242,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for the name of the day in a calendar date.</summary>
       </Docs>
     </Member>
     <Member MemberName="DateMonth">
@@ -251,7 +258,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for the numeric month in a calendar date.</summary>
       </Docs>
     </Member>
     <Member MemberName="DateMonthName">
@@ -267,7 +274,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for the name of the month in a calendar date.</summary>
       </Docs>
     </Member>
     <Member MemberName="DateYear">
@@ -283,7 +290,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for the year in a calendar date.</summary>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -299,7 +306,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The default handling of input commands.</summary>
       </Docs>
     </Member>
     <Member MemberName="Digits">
@@ -315,7 +322,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for digits.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmailSmtpAddress">
@@ -331,7 +338,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for a Simple Mail Transfer Protocol (SMTP) email address.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmailUserName">
@@ -347,7 +354,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for an email user name.</summary>
       </Docs>
     </Member>
     <Member MemberName="FileName">
@@ -363,7 +370,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for a file name.</summary>
       </Docs>
     </Member>
     <Member MemberName="FullFilePath">
@@ -379,7 +386,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for the full path of a file.</summary>
       </Docs>
     </Member>
     <Member MemberName="Hanja">
@@ -395,7 +402,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for Hanja characters.</summary>
       </Docs>
     </Member>
     <Member MemberName="Hiragana">
@@ -411,7 +418,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for the Hiragana writing system.</summary>
       </Docs>
     </Member>
     <Member MemberName="KatakanaFullWidth">
@@ -427,7 +434,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for full-width Katakana characters.</summary>
       </Docs>
     </Member>
     <Member MemberName="KatakanaHalfWidth">
@@ -443,7 +450,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for half-width Katakana characters.</summary>
       </Docs>
     </Member>
     <Member MemberName="LogOnName">
@@ -459,7 +466,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for a log on name.</summary>
       </Docs>
     </Member>
     <Member MemberName="Number">
@@ -475,7 +482,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for a number.</summary>
       </Docs>
     </Member>
     <Member MemberName="NumberFullWidth">
@@ -491,7 +498,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for a full-width number.</summary>
       </Docs>
     </Member>
     <Member MemberName="OneChar">
@@ -507,7 +514,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for one character.</summary>
       </Docs>
     </Member>
     <Member MemberName="Password">
@@ -523,7 +530,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for a password.</summary>
       </Docs>
     </Member>
     <Member MemberName="PersonalFullName">
@@ -539,7 +546,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for a person's full name.</summary>
       </Docs>
     </Member>
     <Member MemberName="PersonalGivenName">
@@ -555,7 +562,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for a person's given name.</summary>
       </Docs>
     </Member>
     <Member MemberName="PersonalMiddleName">
@@ -571,7 +578,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for a person's middle name.</summary>
       </Docs>
     </Member>
     <Member MemberName="PersonalNamePrefix">
@@ -587,7 +594,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for the prefix of a person's name.</summary>
       </Docs>
     </Member>
     <Member MemberName="PersonalNameSuffix">
@@ -603,7 +610,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for the suffix of a person's name.</summary>
       </Docs>
     </Member>
     <Member MemberName="PersonalSurname">
@@ -619,7 +626,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for a person's surname.</summary>
       </Docs>
     </Member>
     <Member MemberName="PhraseList">
@@ -635,7 +642,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for a phrase list.</summary>
       </Docs>
     </Member>
     <Member MemberName="PostalAddress">
@@ -651,7 +658,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for a postal address.</summary>
       </Docs>
     </Member>
     <Member MemberName="PostalCode">
@@ -667,7 +674,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for a postal code.</summary>
       </Docs>
     </Member>
     <Member MemberName="RegularExpression">
@@ -683,7 +690,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for a regular expression.</summary>
       </Docs>
     </Member>
     <Member MemberName="Srgs">
@@ -699,7 +706,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for the Speech Recognition Grammar Specification (SRGS).</summary>
       </Docs>
     </Member>
     <Member MemberName="TelephoneAreaCode">
@@ -715,7 +722,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for a telephone area code.</summary>
       </Docs>
     </Member>
     <Member MemberName="TelephoneCountryCode">
@@ -731,7 +738,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for a telephone country code.</summary>
       </Docs>
     </Member>
     <Member MemberName="TelephoneLocalNumber">
@@ -747,7 +754,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for a telephone local number.</summary>
       </Docs>
     </Member>
     <Member MemberName="TelephoneNumber">
@@ -763,7 +770,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for a telephone number.</summary>
       </Docs>
     </Member>
     <Member MemberName="Time">
@@ -779,7 +786,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for the time.</summary>
       </Docs>
     </Member>
     <Member MemberName="TimeHour">
@@ -795,7 +802,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for the hour of the time.</summary>
       </Docs>
     </Member>
     <Member MemberName="TimeMinorSec">
@@ -811,7 +818,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for the minutes or seconds of time.</summary>
       </Docs>
     </Member>
     <Member MemberName="Url">
@@ -827,7 +834,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for a Uniform Resource Locator (URL).</summary>
       </Docs>
     </Member>
     <Member MemberName="Xml">
@@ -843,7 +850,7 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text input pattern for XML.</summary>
       </Docs>
     </Member>
   </Members>

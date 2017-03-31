@@ -1,9 +1,13 @@
 ---
 uid: System.Data.Linq.IMultipleResults
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Linq.IMultipleResults.GetResult``1
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

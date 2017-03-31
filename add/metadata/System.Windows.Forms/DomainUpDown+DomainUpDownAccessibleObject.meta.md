@@ -1,24 +1,33 @@
 ---
 uid: System.Windows.Forms.DomainUpDown.DomainUpDownAccessibleObject
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DomainUpDown.DomainUpDownAccessibleObject.GetChildCount
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DomainUpDown.DomainUpDownAccessibleObject.#ctor(System.Windows.Forms.Control)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DomainUpDown.DomainUpDownAccessibleObject.GetChild(System.Int32)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DomainUpDown.DomainUpDownAccessibleObject.Role
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

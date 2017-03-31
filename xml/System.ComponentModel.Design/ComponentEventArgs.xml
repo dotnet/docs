@@ -21,8 +21,24 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides data for the <see cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentAdded" />, <see cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentAdding" />, <see cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentRemoved" />, and <see cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentRemoving" /> events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ComponentModel.Design.ComponentEventArgs> is the root event arguments class for all component management events. This type of event occurs when you add or remove components using a designer.  
+  
+   
+  
+## Examples  
+ The following example demonstrates creating a <xref:System.ComponentModel.Design.ComponentEventArgs>.  
+  
+ [!code-cpp[ComponentEventArgsExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ComponentEventArgsExample/CPP/componenteventargsexample.cpp#1)]
+ [!code-csharp[ComponentEventArgsExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ComponentEventArgsExample/CS/componenteventargsexample.cs#1)]
+ [!code-vb[ComponentEventArgsExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ComponentEventArgsExample/VB/componenteventargsexample.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,8 +59,8 @@
         <Parameter Name="component" Type="System.ComponentModel.IComponent" />
       </Parameters>
       <Docs>
-        <param name="component">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="component">The component that is the source of the event.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.ComponentEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,8 +82,8 @@
         <ReturnType>System.ComponentModel.IComponent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the component associated with the event.</summary>
+        <value>The component associated with the event.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

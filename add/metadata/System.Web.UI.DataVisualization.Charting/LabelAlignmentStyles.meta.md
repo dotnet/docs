@@ -1,4 +1,5 @@
 ---
 uid: System.Web.UI.DataVisualization.Charting.LabelAlignmentStyles
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---

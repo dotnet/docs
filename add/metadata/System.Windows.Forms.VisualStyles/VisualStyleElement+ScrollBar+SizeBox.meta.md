@@ -1,14 +1,20 @@
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar.SizeBox
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar.SizeBox.RightAlign
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar.SizeBox.LeftAlign
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

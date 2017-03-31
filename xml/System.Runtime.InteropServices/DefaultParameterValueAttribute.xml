@@ -29,8 +29,26 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Sets the default value of a parameter when called from a language that supports default parameters. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.InteropServices.DefaultParameterValueAttribute> attribute allows you to specify a default parameter value in a language that does not otherwise support default parameters.  After you apply this attribute to your code, languages that support default parameters can use the specified value as a default parameter.  
+  
+ Note that the <xref:System.Runtime.InteropServices.DefaultParameterValueAttribute> does not add support for default parameters to languages that do not support this feature.  For example, if you use the <xref:System.Runtime.InteropServices.DefaultParameterValueAttribute> with a method written in C#, which does not support default parameters, you cannot use the default parameter when calling the method from C#.  You can use the default parameter only when calling the method in a language such as C++ that does support the feature.  
+  
+ The <xref:System.Runtime.InteropServices.DefaultParameterValueAttribute> is particularly useful to specify default parameters for methods of a COM interop interface.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to apply the <xref:System.Runtime.InteropServices.DefaultParameterValueAttribute> attribute to a parameter of a method written in C#.  
+  
+ [!code-csharp[System.Runtime.InteropServices.DefaultParameterValueAttribute#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Runtime.InteropServices.DefaultParameterValueAttribute/cs/sample.cs#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -59,9 +77,23 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="value">An object that represents the default value of a parameter.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.DefaultParameterValueAttribute" /> class with the default value of a parameter.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to apply the <xref:System.Runtime.InteropServices.DefaultParameterValueAttribute> attribute to a parameter written in a language such as Microsoft Visual C# that does not support default parameters.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to apply the <xref:System.Runtime.InteropServices.DefaultParameterValueAttribute> attribute to a parameter of a method written in C#.  
+  
+ [!code-csharp[System.Runtime.InteropServices.DefaultParameterValueAttribute#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Runtime.InteropServices.DefaultParameterValueAttribute/cs/sample.cs#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -90,8 +122,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the default value of a parameter.</summary>
+        <value>An object that represents the default value of a parameter.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

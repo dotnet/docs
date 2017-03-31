@@ -1,14 +1,17 @@
 ---
 uid: System.Net.NetworkInformation.GatewayIPAddressInformation
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.GatewayIPAddressInformation.Address
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.GatewayIPAddressInformation.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

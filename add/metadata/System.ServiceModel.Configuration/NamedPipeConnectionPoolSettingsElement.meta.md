@@ -1,24 +1,34 @@
 ---
 uid: System.ServiceModel.Configuration.NamedPipeConnectionPoolSettingsElement
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.NamedPipeConnectionPoolSettingsElement.MaxOutboundConnectionsPerEndpoint
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.NamedPipeConnectionPoolSettingsElement.GroupName
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.NamedPipeConnectionPoolSettingsElement.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.NamedPipeConnectionPoolSettingsElement.IdleTimeout
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -13,8 +13,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines methods to dynamically create, update and remove code elements for a type at design time. Methods are also provided that allow you to display code at design time.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CreateEvent">
@@ -37,12 +46,13 @@
         <Parameter Name="emitDependencyProperty" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="className">To be added.</param>
-        <param name="eventName">To be added.</param>
-        <param name="eventType">To be added.</param>
-        <param name="attributes">To be added.</param>
-        <param name="emitDependencyProperty">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="className">A string that contains the class name to add the event to.</param>
+        <param name="eventName">A string that defines the name of the event.</param>
+        <param name="eventType">The <see cref="T:System.Type" /> assigned to the event.</param>
+        <param name="attributes">An <see cref="T:System.Workflow.ComponentModel.Compiler.AttributeInfo" /> array that contains information on all attributes to assign to the event.</param>
+        <param name="emitDependencyProperty">
+          <see langword="true" /> to emit any dependency properties associated with the event; otherwise, <see langword="false" />.</param>
+        <summary>Creates an event on the specified class by using the specified event name, event type and attributes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,14 +78,15 @@
         <Parameter Name="overwriteExisting" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="className">To be added.</param>
-        <param name="fieldName">To be added.</param>
-        <param name="fieldType">To be added.</param>
-        <param name="genericParameterTypes">To be added.</param>
-        <param name="attributes">To be added.</param>
-        <param name="initializationExpression">To be added.</param>
-        <param name="overwriteExisting">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="className">A string that defines the name of the class to add the field.</param>
+        <param name="fieldName">A string that defines the name of the field.</param>
+        <param name="fieldType">The <see cref="T:System.Type" /> of the new field.</param>
+        <param name="genericParameterTypes">A <see cref="T:System.Type" /> array of any parameters associated with the field.</param>
+        <param name="attributes">A <see cref="T:System.CodeDom.MemberAttributes" /> that defines the member attribute identifier for the field.</param>
+        <param name="initializationExpression">A <see cref="T:System.CodeDom.CodeSnippetExpression" /> that contains the literal expression of the field.</param>
+        <param name="overwriteExisting">
+          <see langword="true" /> to delete any existing fields on <c>className</c> when creating the new field; otherwise, <see langword="false" />.</param>
+        <summary>Creates a field on the specified class by using the specified field name, field type, parameter types, attributes and literal initialization expression.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,16 +114,20 @@
         <Parameter Name="isReadOnly" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="className">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <param name="propertyType">To be added.</param>
-        <param name="attributes">To be added.</param>
-        <param name="emitDependencyProperty">To be added.</param>
-        <param name="isMetaProperty">To be added.</param>
-        <param name="isAttached">To be added.</param>
-        <param name="ownerType">To be added.</param>
-        <param name="isReadOnly">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="className">A string that defines the name of the class to add the field.</param>
+        <param name="propertyName">A string that defines the name of the field.</param>
+        <param name="propertyType">The <see cref="T:System.Type" /> of the new property.</param>
+        <param name="attributes">An <see cref="T:System.Workflow.ComponentModel.Compiler.AttributeInfo" /> array that contains information on all attributes to assign to the property.</param>
+        <param name="emitDependencyProperty">
+          <see langword="true" /> to emit any dependency properties associated with the property; otherwise, <see langword="false" />.</param>
+        <param name="isMetaProperty">
+          <see langword="true" /> to create the property as a meta property; otherwise, <see langword="false" />.</param>
+        <param name="isAttached">
+          <see langword="true" /> to indicate that the emitted dependency property has its <see cref="P:System.Workflow.ComponentModel.DependencyProperty.IsAttached" /> property set to <see langword="true" />; otherwise, <see langword="false" />.</param>
+        <param name="ownerType">The <see cref="T:System.Type" /> that is declaring the dependency property.</param>
+        <param name="isReadOnly">
+          <see langword="true" /> to create the property as a read-only property; <see langword="false" /> to create the property as a read-write property.</param>
+        <summary>Creates a property on the specified class by using the specified property name, property type and attributes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,10 +149,10 @@
         <Parameter Name="eventType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="className">To be added.</param>
-        <param name="eventName">To be added.</param>
-        <param name="eventType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="className">A string that contains the name of the class from which to remove the event.</param>
+        <param name="eventName">A string that contains the name of the event to remove.</param>
+        <param name="eventType">The <see cref="T:System.Type" /> associated with the event to remove.</param>
+        <summary>Removes the specified event from the specified class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -159,10 +174,10 @@
         <Parameter Name="propertyType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="className">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <param name="propertyType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="className">A string that contains the name of the class from which to remove the property.</param>
+        <param name="propertyName">A string that contains the name of the property to remove.</param>
+        <param name="propertyType">The <see cref="T:System.Type" /> of the property to remove.</param>
+        <summary>Removes the specified property from the specified class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -180,7 +195,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Displays code for the new member on a workflow design surface.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -202,10 +217,10 @@
         <Parameter Name="delegateType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="activity">To be added.</param>
-        <param name="methodName">To be added.</param>
-        <param name="delegateType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="activity">The <see cref="T:System.Workflow.ComponentModel.Activity" /> associated with the code to display.</param>
+        <param name="methodName">The name of the method to display.</param>
+        <param name="delegateType">The <see cref="T:System.Type" /> of the delegate associated with the method to display.</param>
+        <summary>Displays code for the new member on a workflow design surface by using the specified <see cref="T:System.Workflow.ComponentModel.Activity" />, the specified method and the specified delegate type.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -226,9 +241,9 @@
         <Parameter Name="baseType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="className">To be added.</param>
-        <param name="baseType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="className">A string that contains the name of the class to update with a new base type.</param>
+        <param name="baseType">The <see cref="T:System.Type" /> to be the new base type for the class.</param>
+        <summary>Updates the base type to associate with the specified class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -255,15 +270,17 @@
         <Parameter Name="isMetaProperty" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="className">To be added.</param>
-        <param name="oldEventName">To be added.</param>
-        <param name="oldEventType">To be added.</param>
-        <param name="newEventName">To be added.</param>
-        <param name="newEventType">To be added.</param>
-        <param name="attributes">To be added.</param>
-        <param name="emitDependencyProperty">To be added.</param>
-        <param name="isMetaProperty">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="className">A string that contains the name of the class that contains the event to update.</param>
+        <param name="oldEventName">A string that contains the name of the existing event.</param>
+        <param name="oldEventType">The <see cref="T:System.Type" /> associated with the existing event.</param>
+        <param name="newEventName">A string that contains the new name of the updated event.</param>
+        <param name="newEventType">The <see cref="T:System.Type" /> to associate with the updated event.</param>
+        <param name="attributes">An <see cref="T:System.Workflow.ComponentModel.Compiler.AttributeInfo" /> array that contains information on all attributes to assign to the updated event.</param>
+        <param name="emitDependencyProperty">
+          <see langword="true" /> to update the event to emit a dependency property; otherwise, <see langword="false" />.</param>
+        <param name="isMetaProperty">
+          <see langword="true" /> to set the event as a meta property; otherwise, <see langword="false" />.</param>
+        <summary>Sets a new name and type to an existing event on the specified class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -290,15 +307,17 @@
         <Parameter Name="isMetaProperty" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="className">To be added.</param>
-        <param name="oldPropertyName">To be added.</param>
-        <param name="oldPropertyType">To be added.</param>
-        <param name="newPropertyName">To be added.</param>
-        <param name="newPropertyType">To be added.</param>
-        <param name="attributes">To be added.</param>
-        <param name="emitDependencyProperty">To be added.</param>
-        <param name="isMetaProperty">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="className">A string that contains the name of the class on which the property to update resides.</param>
+        <param name="oldPropertyName">A string that contains the existing name of the property.</param>
+        <param name="oldPropertyType">The <see cref="T:System.Type" /> associated with the existing property.</param>
+        <param name="newPropertyName">A string that contains the new name of the property.</param>
+        <param name="newPropertyType">The <see cref="T:System.Type" /> to associate with the updated version of the property.</param>
+        <param name="attributes">An <see cref="T:System.Workflow.ComponentModel.Compiler.AttributeInfo" /> array that contains information on all attributes to assign to the updated property.</param>
+        <param name="emitDependencyProperty">
+          <see langword="true" /> to update the property emit a dependency property; otherwise, <see langword="false" />.</param>
+        <param name="isMetaProperty">
+          <see langword="true" /> to set the property as a meta property; otherwise, <see langword="false" />.</param>
+        <summary>Sets a new name and type to a property on the specified class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -319,9 +338,9 @@
         <Parameter Name="newClassName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="oldClassName">To be added.</param>
-        <param name="newClassName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="oldClassName">A string that contains the existing name of the class.</param>
+        <param name="newClassName">A string that contains the new name to assign to the class.</param>
+        <summary>Updates the name of the specified class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,9 +1,13 @@
 ---
 uid: System.Web.ModelBinding.IMetadataAware
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ModelBinding.IMetadataAware.OnMetadataCreated(System.Web.ModelBinding.ModelMetadata)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

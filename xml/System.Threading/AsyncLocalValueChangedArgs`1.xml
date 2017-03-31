@@ -23,9 +23,16 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="T">The type of the data.</typeparam>
+    <summary>The class that provides data change information to <see cref="T:System.Threading.AsyncLocal`1" /> instances that register for change notifications.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Threading.AsyncLocal%601> objects receives change notifications when it is instantiated by calling its <xref:System.Threading.AsyncLocal%601.%23ctor%28System.Action%7BSystem.Threading.AsyncLocalValueChangedArgs%7B%600%7D%7D%29> constructor.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CurrentValue">
@@ -50,8 +57,8 @@
         <ReturnType>T</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the data's current value.</summary>
+        <value>The data's current value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,8 +84,8 @@
         <ReturnType>T</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the data's previous value.</summary>
+        <value>The data's previous value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,9 +111,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Returns a value that indicates whether the value changes because of a change of execution context.</summary>
+        <value>
+          <see langword="true" /> if the value changed because of a change of execution context; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The property value is `false` if the <xref:System.Threading.AsyncLocal%601.Value%2A?displayProperty=fullName> property is changed explicitly.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -11,8 +11,24 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Pens for all the standard colors. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Drawing.Pen> objects returned by this class are immutable, meaning their properties cannot be changed. To see the colors represented by pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+   
+  
+## Examples  
+ The following method demonstrates how to use the <xref:System.Drawing.Pens> class.  This example is designed to be used with Windows Forms.  Paste the code into a form and call the `UsePensClass` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-cpp[System.Drawing.PensExample#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.PensExample/CPP/form1.cpp#4)]
+ [!code-csharp[System.Drawing.PensExample#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.PensExample/CS/form1.cs#4)]
+ [!code-vb[System.Drawing.PensExample#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.PensExample/VB/form1.vb#4)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AliceBlue">
@@ -28,9 +44,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AntiqueWhite">
@@ -46,9 +69,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Aqua">
@@ -64,9 +94,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Aquamarine">
@@ -82,9 +119,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Azure">
@@ -100,9 +144,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Beige">
@@ -118,9 +169,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Bisque">
@@ -136,9 +194,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Black">
@@ -154,9 +219,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BlanchedAlmond">
@@ -172,9 +244,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Blue">
@@ -190,9 +269,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BlueViolet">
@@ -208,9 +294,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Brown">
@@ -226,9 +319,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BurlyWood">
@@ -244,9 +344,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CadetBlue">
@@ -262,9 +369,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Chartreuse">
@@ -280,9 +394,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Chocolate">
@@ -298,9 +419,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Coral">
@@ -316,9 +444,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CornflowerBlue">
@@ -334,9 +469,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Cornsilk">
@@ -352,9 +494,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Crimson">
@@ -370,9 +519,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Cyan">
@@ -388,9 +544,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DarkBlue">
@@ -406,9 +569,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DarkCyan">
@@ -424,9 +594,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DarkGoldenrod">
@@ -442,9 +619,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DarkGray">
@@ -460,9 +644,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DarkGreen">
@@ -478,9 +669,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DarkKhaki">
@@ -496,9 +694,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DarkMagenta">
@@ -514,9 +719,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DarkOliveGreen">
@@ -532,9 +744,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DarkOrange">
@@ -550,9 +769,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DarkOrchid">
@@ -568,9 +794,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DarkRed">
@@ -586,9 +819,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DarkSalmon">
@@ -604,9 +844,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DarkSeaGreen">
@@ -622,9 +869,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DarkSlateBlue">
@@ -640,9 +894,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DarkSlateGray">
@@ -658,9 +919,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DarkTurquoise">
@@ -676,9 +944,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DarkViolet">
@@ -694,9 +969,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DeepPink">
@@ -712,9 +994,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DeepSkyBlue">
@@ -730,9 +1019,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DimGray">
@@ -748,9 +1044,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DodgerBlue">
@@ -766,9 +1069,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Firebrick">
@@ -784,9 +1094,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FloralWhite">
@@ -802,9 +1119,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ForestGreen">
@@ -820,9 +1144,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Fuchsia">
@@ -838,9 +1169,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Gainsboro">
@@ -856,9 +1194,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GhostWhite">
@@ -874,9 +1219,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Gold">
@@ -892,9 +1244,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Goldenrod">
@@ -910,9 +1269,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Gray">
@@ -928,9 +1294,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Green">
@@ -946,9 +1319,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GreenYellow">
@@ -964,9 +1344,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Honeydew">
@@ -982,9 +1369,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HotPink">
@@ -1000,9 +1394,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IndianRed">
@@ -1018,9 +1419,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Indigo">
@@ -1036,9 +1444,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Ivory">
@@ -1054,9 +1469,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Khaki">
@@ -1072,9 +1494,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Lavender">
@@ -1090,9 +1519,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LavenderBlush">
@@ -1108,9 +1544,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LawnGreen">
@@ -1126,9 +1569,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LemonChiffon">
@@ -1144,9 +1594,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LightBlue">
@@ -1162,9 +1619,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LightCoral">
@@ -1180,9 +1644,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LightCyan">
@@ -1198,9 +1669,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LightGoldenrodYellow">
@@ -1216,9 +1694,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LightGray">
@@ -1234,9 +1719,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LightGreen">
@@ -1252,9 +1744,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LightPink">
@@ -1270,9 +1769,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LightSalmon">
@@ -1288,9 +1794,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LightSeaGreen">
@@ -1306,9 +1819,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LightSkyBlue">
@@ -1324,9 +1844,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LightSlateGray">
@@ -1342,9 +1869,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LightSteelBlue">
@@ -1360,9 +1894,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LightYellow">
@@ -1378,9 +1919,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Lime">
@@ -1396,9 +1944,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LimeGreen">
@@ -1414,9 +1969,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Linen">
@@ -1432,9 +1994,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Magenta">
@@ -1450,9 +2019,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Maroon">
@@ -1468,9 +2044,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MediumAquamarine">
@@ -1486,9 +2069,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MediumBlue">
@@ -1504,9 +2094,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MediumOrchid">
@@ -1522,9 +2119,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MediumPurple">
@@ -1540,9 +2144,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MediumSeaGreen">
@@ -1558,9 +2169,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MediumSlateBlue">
@@ -1576,9 +2194,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MediumSpringGreen">
@@ -1594,9 +2219,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MediumTurquoise">
@@ -1612,9 +2244,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MediumVioletRed">
@@ -1630,9 +2269,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MidnightBlue">
@@ -1648,9 +2294,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MintCream">
@@ -1666,9 +2319,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MistyRose">
@@ -1684,9 +2344,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Moccasin">
@@ -1702,9 +2369,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NavajoWhite">
@@ -1720,9 +2394,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Navy">
@@ -1738,9 +2419,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OldLace">
@@ -1756,9 +2444,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Olive">
@@ -1774,9 +2469,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OliveDrab">
@@ -1792,9 +2494,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Orange">
@@ -1810,9 +2519,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OrangeRed">
@@ -1828,9 +2544,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Orchid">
@@ -1846,9 +2569,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PaleGoldenrod">
@@ -1864,9 +2594,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PaleGreen">
@@ -1882,9 +2619,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PaleTurquoise">
@@ -1900,9 +2644,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PaleVioletRed">
@@ -1918,9 +2669,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PapayaWhip">
@@ -1936,9 +2694,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PeachPuff">
@@ -1954,9 +2719,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Peru">
@@ -1972,9 +2744,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Pink">
@@ -1990,9 +2769,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Plum">
@@ -2008,9 +2794,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PowderBlue">
@@ -2026,9 +2819,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Purple">
@@ -2044,9 +2844,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Red">
@@ -2062,9 +2869,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RosyBrown">
@@ -2080,9 +2894,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RoyalBlue">
@@ -2098,9 +2919,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SaddleBrown">
@@ -2116,9 +2944,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Salmon">
@@ -2134,9 +2969,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SandyBrown">
@@ -2152,9 +2994,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SeaGreen">
@@ -2170,9 +3019,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SeaShell">
@@ -2188,9 +3044,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Sienna">
@@ -2206,9 +3069,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Silver">
@@ -2224,9 +3094,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SkyBlue">
@@ -2242,9 +3119,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SlateBlue">
@@ -2260,9 +3144,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SlateGray">
@@ -2278,9 +3169,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Snow">
@@ -2296,9 +3194,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SpringGreen">
@@ -2314,9 +3219,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SteelBlue">
@@ -2332,9 +3244,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Tan">
@@ -2350,9 +3269,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Teal">
@@ -2368,9 +3294,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Thistle">
@@ -2386,9 +3319,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Tomato">
@@ -2404,9 +3344,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Transparent">
@@ -2422,9 +3369,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Turquoise">
@@ -2440,9 +3394,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Violet">
@@ -2458,9 +3419,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Wheat">
@@ -2476,9 +3444,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="White">
@@ -2494,9 +3469,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WhiteSmoke">
@@ -2512,9 +3494,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Yellow">
@@ -2530,9 +3519,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="YellowGreen">
@@ -2548,9 +3544,16 @@
         <ReturnType>System.Drawing.Pen</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

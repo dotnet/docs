@@ -1,89 +1,125 @@
 ---
 uid: System.Security.AccessControl.EventWaitHandleSecurity
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.AccessControl.EventWaitHandleSecurity.AccessRuleType
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.AccessControl.EventWaitHandleSecurity.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.AccessControl.EventWaitHandleSecurity.RemoveAuditRuleAll(System.Security.AccessControl.EventWaitHandleAuditRule)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.AccessControl.EventWaitHandleSecurity.SetAuditRule(System.Security.AccessControl.EventWaitHandleAuditRule)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.AccessControl.EventWaitHandleSecurity.RemoveAccessRuleAll(System.Security.AccessControl.EventWaitHandleAccessRule)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.AccessControl.EventWaitHandleSecurity.AddAuditRule(System.Security.AccessControl.EventWaitHandleAuditRule)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.AccessControl.EventWaitHandleSecurity.ResetAccessRule(System.Security.AccessControl.EventWaitHandleAccessRule)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.AccessControl.EventWaitHandleSecurity.RemoveAuditRule(System.Security.AccessControl.EventWaitHandleAuditRule)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.AccessControl.EventWaitHandleSecurity.AddAccessRule(System.Security.AccessControl.EventWaitHandleAccessRule)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.AccessControl.EventWaitHandleSecurity.RemoveAuditRuleSpecific(System.Security.AccessControl.EventWaitHandleAuditRule)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.AccessControl.EventWaitHandleSecurity.AccessRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AccessControlType)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.AccessControl.EventWaitHandleSecurity.AccessRightType
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.AccessControl.EventWaitHandleSecurity.RemoveAccessRuleSpecific(System.Security.AccessControl.EventWaitHandleAccessRule)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.AccessControl.EventWaitHandleSecurity.SetAccessRule(System.Security.AccessControl.EventWaitHandleAccessRule)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.AccessControl.EventWaitHandleSecurity.AuditRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AuditFlags)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.AccessControl.EventWaitHandleSecurity.RemoveAccessRule(System.Security.AccessControl.EventWaitHandleAccessRule)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.AccessControl.EventWaitHandleSecurity.AuditRuleType
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

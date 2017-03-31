@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Base type for <see cref="T:System.Workflow.Activities.Rules.RuleExpressionCondition" /> and any custom conditions created by users.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>When implemented in a derived class, initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,8 +44,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>When overridden in a derived class, creates a deep copy of the current <see cref="T:System.Workflow.Activities.Rules.RuleCondition" />.</summary>
+        <returns>A <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> that is identical to this instance</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,9 +65,10 @@
         <Parameter Name="execution" Type="System.Workflow.Activities.Rules.RuleExecution" />
       </Parameters>
       <Docs>
-        <param name="execution">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="execution">The runtime context the rule is running in.</param>
+        <summary>When overridden in a derived class, evaluates the <see cref="T:System.Workflow.Activities.Rules.RuleCondition" />.</summary>
+        <returns>
+          <see langword="true" /> to show that the <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> evaluated to <see langword="true" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,9 +88,9 @@
         <Parameter Name="validation" Type="System.Workflow.Activities.Rules.RuleValidation" />
       </Parameters>
       <Docs>
-        <param name="validation">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="validation">The <see cref="T:System.Workflow.Activities.Rules.RuleValidation" /> that was used previously in a call to <see cref="M:System.Workflow.Activities.Rules.RuleAction.Validate(System.Workflow.Activities.Rules.RuleValidation)" />.</param>
+        <summary>When overridden in a derived class, gets the dependencies for the <see cref="T:System.Workflow.Activities.Rules.RuleCondition" />.</summary>
+        <returns>A list of symbols that represent entities read by the condition.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,8 +107,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the <see cref="T:System.Workflow.Activities.Rules.RuleCondition" />.</summary>
+        <value>The name of the <see cref="T:System.Workflow.Activities.Rules.RuleCondition" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,7 +126,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Called when all properties have been given values. After this call, no properties can be modified.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -145,10 +146,18 @@
         <Parameter Name="validation" Type="System.Workflow.Activities.Rules.RuleValidation" />
       </Parameters>
       <Docs>
-        <param name="validation">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="validation">The instance of <see cref="T:System.Workflow.Activities.Rules.RuleValidation" /> that is used to manage the validation of rules and rule conditions.</param>
+        <summary>When overridden in a derived class, verifies that the <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> is configured correctly and has no errors.</summary>
+        <returns>
+          <see langword="true" /> to show that the <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> has no errors; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Workflow.Activities.Rules.RuleCondition> contains errors (the `Validate` method returns `false`), then <xref:System.Workflow.Activities.Rules.RuleValidation.Errors%2A?displayProperty=fullName> will contain the list of errors encountered.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

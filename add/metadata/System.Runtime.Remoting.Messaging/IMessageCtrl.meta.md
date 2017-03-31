@@ -1,9 +1,9 @@
 ---
 uid: System.Runtime.Remoting.Messaging.IMessageCtrl
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Messaging.IMessageCtrl.Cancel(System.Int32)
-internalonly: False
+manager: "ghogen"
 ---

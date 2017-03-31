@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.Design.WebControls.BulletedListDesigner
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.BulletedListDesigner.PostFilterEvents(System.Collections.IDictionary)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.BulletedListDesigner.UsePreviewControl
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.BulletedListDesigner.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

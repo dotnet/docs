@@ -18,7 +18,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Exposes <see cref="T:System.Windows.Controls.DatePicker" /> types to [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)].</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,8 +35,8 @@
         <Parameter Name="owner" Type="System.Windows.Controls.DatePicker" />
       </Parameters>
       <Docs>
-        <param name="owner">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="owner">The element associated with this automation peer.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.DatePickerAutomationPeer" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,9 +132,9 @@
         <Parameter Name="patternInterface" Type="System.Windows.Automation.Peers.PatternInterface" />
       </Parameters>
       <Docs>
-        <param name="patternInterface">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="patternInterface">An enumeration value that specifies the control pattern.</param>
+        <summary>Returns the object that supports the specified control pattern of the element that is associated with this automation peer.</summary>
+        <returns>If <paramref name="patternInterface" /> is <see cref="F:System.Windows.Automation.Peers.PatternInterface.ExpandCollapse" /> or <see cref="F:System.Windows.Automation.Peers.PatternInterface.Value" />, this method returns a <see langword="this" /> pointer; otherwise, this method returns <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -170,8 +170,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Hides all nodes, controls, or content that are descendants of the control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DatePickerAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IExpandCollapseProvider> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.IExpandCollapseProvider.Expand">
@@ -188,8 +195,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Displays all child nodes, controls, or content of the control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DatePickerAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IExpandCollapseProvider> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.IExpandCollapseProvider.ExpandCollapseState">
@@ -205,9 +219,16 @@
         <ReturnType>System.Windows.Automation.ExpandCollapseState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the state (expanded or collapsed) of the control.</summary>
+        <value>The state (expanded or collapsed) of the control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DatePickerAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IExpandCollapseProvider> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.IValueProvider.IsReadOnly">
@@ -223,9 +244,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that specifies whether the value of a control is read-only.</summary>
+        <value>
+          <see langword="true" /> if the value is read-only; <see langword="false" /> if it can be modified.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DatePickerAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IValueProvider> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.IValueProvider.SetValue">
@@ -244,9 +273,16 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to set. The provider is responsible for converting the value to the appropriate data type.</param>
+        <summary>Sets the value of a control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DatePickerAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IValueProvider> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.IValueProvider.Value">
@@ -262,9 +298,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the value of the control.</summary>
+        <value>A string that represents the value of the control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DatePickerAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IValueProvider> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -22,7 +22,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> in the conditions collection and enables you to programmatically evaluate the condition.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,7 +37,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleConditionReference" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,9 +54,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> to evaluate.</summary>
+        <value>The <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> to evaluate.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The actual condition definition behind a <xref:System.Workflow.Activities.Rules.RuleConditionReference> is of type <xref:System.Workflow.Activities.Rules.RuleExpressionCondition>, which is derived from <xref:System.Workflow.Activities.Rules.RuleCondition>. This defines the rule condition.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Evaluate">
@@ -76,10 +83,11 @@
         <Parameter Name="provider" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="activity">To be added.</param>
-        <param name="provider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="activity">The <see cref="T:System.Workflow.ComponentModel.Activity" /> associated with this condition.</param>
+        <param name="provider">The <see cref="T:System.IServiceProvider" /> for this condition evaluation.</param>
+        <summary>Evaluates the underlying <see cref="T:System.Workflow.Activities.Rules.RuleCondition" />.</summary>
+        <returns>
+          <see langword="true" /> if the condition evaluates to <see langword="true" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,7 +105,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets member properties based on the <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> that <see cref="T:System.Workflow.Activities.Rules.RuleConditionReference" /> points to.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,14 +1,20 @@
 ---
 uid: System.Activities.DurableInstancing.LoadWorkflowCommand
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DurableInstancing.LoadWorkflowCommand.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DurableInstancing.LoadWorkflowCommand.AcceptUninitializedInstance
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

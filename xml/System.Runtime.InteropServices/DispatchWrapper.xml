@@ -29,8 +29,21 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Wraps objects the marshaler should marshal as a <see langword="VT_DISPATCH" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use to wrap objects the marshaler should marshal as a `VT_DISPATCH`. This wrapper will force objects to be marshaled out as `VT_DISPATCH`. If the object does not support `IDispatch` then an exception will be thrown.  
+  
+ [!code-cpp[System.Runtime.InteropServices.DispatchWrapper#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.runtime.interopservices.dispatchwrapper/cpp/source.cpp#1)]
+ [!code-csharp[System.Runtime.InteropServices.DispatchWrapper#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.runtime.interopservices.dispatchwrapper/cs/source.cs#1)]
+ [!code-vb[System.Runtime.InteropServices.DispatchWrapper#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.runtime.interopservices.dispatchwrapper/vb/source.vb#1)]  
+  
+ For more information on `VT_DISPATCH`, please see the existing documentation for `VARENUM::VT_DISPATCH` in the MSDN library.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -64,9 +77,25 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="obj">The object to be wrapped and converted to <see cref="F:System.Runtime.InteropServices.VarEnum.VT_DISPATCH" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.DispatchWrapper" /> class with the object being wrapped.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="obj" /> is not a class or an array.  
+  
+ -or-  
+  
+ <paramref name="obj" /> does not support <see langword="IDispatch" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The <paramref name="obj" /> parameter was marked with a <see cref="T:System.Runtime.InteropServices.ComVisibleAttribute" /> attribute that was passed a value of <see langword="false" />.  
+  
+ -or-  
+  
+ The <paramref name="obj" /> parameter inherits from a type marked with a <see cref="T:System.Runtime.InteropServices.ComVisibleAttribute" /> attribute that was passed a value of <see langword="false" />.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for permission to call unmanaged code.  
+  
+ Security Action: Demand.  
+  
+ Associated Enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
       </Docs>
     </Member>
     <Member MemberName="WrappedObject">
@@ -95,8 +124,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the object wrapped by the <see cref="T:System.Runtime.InteropServices.DispatchWrapper" />.</summary>
+        <value>The object wrapped by the <see cref="T:System.Runtime.InteropServices.DispatchWrapper" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

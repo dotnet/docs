@@ -1,14 +1,26 @@
 ---
 uid: System.Windows.Interop.InteropBitmap
-internalonly: False
----
-
----
-uid: System.Windows.Interop.InteropBitmap.Invalidate(System.Nullable{System.Windows.Int32Rect})
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Interop.InteropBitmap.Invalidate
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Interop.InteropBitmap.Invalidate(System.Nullable{System.Windows.Int32Rect})
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Interop.InteropBitmap.Invalidate
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

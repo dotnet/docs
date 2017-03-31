@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides an **Auto Format** dialog box for a <see cref="T:System.Web.UI.WebControls.Calendar" /> Web server control.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,8 +36,8 @@
         <Parameter Name="calendar" Type="System.Web.UI.WebControls.Calendar" />
       </Parameters>
       <Docs>
-        <param name="calendar">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="calendar">The <see cref="T:System.Web.UI.WebControls.Calendar" /> instance for which the AutoFormatePage is displayed.</param>
+        <summary>Creates a new AutoFormatPage instance associated with a <see cref="T:System.Web.UI.WebControls.Calendar" /> instance for a designer host.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,7 +55,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Executes any initialization that was delayed until the first idle time</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,10 +76,13 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="source">The source of the event.</param>
+        <param name="e">An <see cref="T:System.EventArgs" /> that provides information about the event.</param>
+        <summary>Occurs when the <see cref="T:System.Web.UI.Design.WebControls.CalendarAutoFormatDialog" /> is activated.</summary>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>This method provides an opportunity to perform processing after a Calendar AutoFormat dialog box has been activated.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="OnOKClicked">
@@ -99,9 +102,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="source">The source of the event.</param>
+        <param name="e">An <see cref="T:System.EventArgs" /> that provides information about the event.</param>
+        <summary>Handles changes in the pre-defined schema choices</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,9 +125,9 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="source">The source of the event.</param>
+        <param name="e">An <see cref="T:System.EventArgs" /> that provides information about the event.</param>
+        <summary>Handles changes in the predefined schema choices</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,7 +145,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Saves any changes into the component</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

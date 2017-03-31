@@ -11,8 +11,8 @@
   </TypeParameters>
   <Interfaces />
   <Docs>
-    <typeparam name="TValue">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="TValue">[!INCLUDE[cpp_iter_arg](~/includes/cpp-iter-arg-md.md)]</typeparam>
+    <summary>Interface for a container that supports random access iteration. Containers that implement random access iteration support the following operations: moving forward one position by calling <c>operator++</c>, moving backward one position by calling <c>operator--</c>, accessing an element by using <c>operator[]</c>, and accessing an element by using pointer arithmetic.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,8 +33,8 @@
       </Parameters>
       <Docs>
         <param name="A_0">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the element at the current bias of the container. The bias is the offset from the current element zero.</summary>
+        <returns>The element at the given bias.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,9 +54,10 @@
         <Parameter Name="A_0" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="A_0">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="A_0">The current bias.</param>
+        <summary>Determines if a given bias is valid for the container. The bias is the offset from the current element zero.</summary>
+        <returns>
+          <see langword="true" /> if the given bias is valid for the container; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

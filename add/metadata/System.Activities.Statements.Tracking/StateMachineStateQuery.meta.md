@@ -1,14 +1,20 @@
 ---
 uid: System.Activities.Statements.Tracking.StateMachineStateQuery
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Statements.Tracking.StateMachineStateQuery.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Statements.Tracking.StateMachineStateQuery.Name
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

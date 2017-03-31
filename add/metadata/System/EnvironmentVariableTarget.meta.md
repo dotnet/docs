@@ -1,4 +1,6 @@
 ---
 uid: System.EnvironmentVariableTarget
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

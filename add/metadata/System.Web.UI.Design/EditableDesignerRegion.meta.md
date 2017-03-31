@@ -1,34 +1,47 @@
 ---
 uid: System.Web.UI.Design.EditableDesignerRegion
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.EditableDesignerRegion.Content
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.EditableDesignerRegion.SupportsDataBinding
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.EditableDesignerRegion.#ctor(System.Web.UI.Design.ControlDesigner,System.String,System.Boolean)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.EditableDesignerRegion.ServerControlsOnly
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.EditableDesignerRegion.#ctor(System.Web.UI.Design.ControlDesigner,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.EditableDesignerRegion.#ctor
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.EditableDesignerRegion.GetChildViewRendering(System.Web.UI.Control)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

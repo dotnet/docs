@@ -1,54 +1,71 @@
 ---
 uid: System.Web.Configuration.ProfileSettingsCollection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ProfileSettingsCollection.IndexOf(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ProfileSettingsCollection.Add(System.Web.Configuration.ProfileSettings)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ProfileSettingsCollection.Remove(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ProfileSettingsCollection.Insert(System.Int32,System.Web.Configuration.ProfileSettings)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ProfileSettingsCollection.Item(System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ProfileSettingsCollection.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ProfileSettingsCollection.Contains(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ProfileSettingsCollection.Item(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ProfileSettingsCollection.RemoveAt(System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ProfileSettingsCollection.Clear
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Configuration.ProfileSettingsCollection.Item
+ms.author: "riande"
+manager: "wpickett"
 ---

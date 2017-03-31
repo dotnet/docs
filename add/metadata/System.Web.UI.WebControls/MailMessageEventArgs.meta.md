@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.WebControls.MailMessageEventArgs
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.MailMessageEventArgs.#ctor(System.Net.Mail.MailMessage)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.MailMessageEventArgs.Message
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

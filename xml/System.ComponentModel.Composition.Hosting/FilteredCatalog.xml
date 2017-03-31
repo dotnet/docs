@@ -16,8 +16,17 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a catalog after a filter function is applied to it.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,9 +44,9 @@
         <Parameter Name="filter" Type="System.Func&lt;System.ComponentModel.Composition.Primitives.ComposablePartDefinition,System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <param name="catalog">To be added.</param>
-        <param name="filter">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="catalog">The underlying catalog.</param>
+        <param name="filter">The function to filter parts.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Hosting.FilteredCatalog" /> class with the specified underlying catalog and filter.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,7 +64,7 @@
         <ReturnType>System.EventHandler&lt;System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the underlying catalog has changed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,7 +82,7 @@
         <ReturnType>System.EventHandler&lt;System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the underlying catalog is changing.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,8 +100,8 @@
         <ReturnType>System.ComponentModel.Composition.Hosting.FilteredCatalog</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a catalog that contains parts that are present in the underlying catalog but that were filtered out by the filter function.</summary>
+        <value>A catalog that contains the complement of this catalog.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,9 +122,23 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="disposing">
+          <see langword="true" /> to release managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Called by the <see langword="Dispose()" /> and <see langword="Finalize()" /> methods to release the managed and unmanaged resources used by the current instance of the <see cref="T:System.ComponentModel.Composition.Hosting.FilteredCatalog" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called only by the public `Dispose()` and `Finalize()` methods; do not call this method directly.When you implement the dispose pattern, the Boolean parameter of the `Dispose(Boolean)` method should be used as follows:  
+  
+-   The `Dispose()` method of the current object should call `Dispose(Boolean)` with the Boolean parameter set to `true` to release both managed and unmanaged resources.  
+  
+-   The `Finalize()` method of the current object should call `Dispose(Boolean)` with the Boolean parameter set to `false` to release only unmanaged resources.  
+  
+ For more information, see .  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -133,8 +156,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an enumerator that iterates through the catalog.</summary>
+        <returns>An enumerator that can be used to iterate through the catalog.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,9 +178,9 @@
         <Parameter Name="definition" Type="System.ComponentModel.Composition.Primitives.ImportDefinition" />
       </Parameters>
       <Docs>
-        <param name="definition">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="definition">The import to match.</param>
+        <summary>Gets the exported parts from this catalog that match the specified import.</summary>
+        <returns>A collection of matching parts.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -176,8 +199,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets a new <see cref="T:System.ComponentModel.Composition.Hosting.FilteredCatalog" /> object that contains all the parts from this catalog and all their dependencies.</summary>
+        <returns>The new catalog.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,9 +221,9 @@
         <Parameter Name="importFilter" Type="System.Func&lt;System.ComponentModel.Composition.Primitives.ImportDefinition,System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <param name="importFilter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="importFilter">The filter for imports.</param>
+        <summary>Gets a new <see cref="T:System.ComponentModel.Composition.Hosting.FilteredCatalog" /> object that contains all the parts from this catalog and all dependencies that can be reached through imports that match the specified filter.</summary>
+        <returns>The new catalog.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -219,8 +242,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets a new <see cref="T:System.ComponentModel.Composition.Hosting.FilteredCatalog" /> object that contains all the parts from this catalog and all their dependents.</summary>
+        <returns>The new catalog.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -241,9 +264,9 @@
         <Parameter Name="importFilter" Type="System.Func&lt;System.ComponentModel.Composition.Primitives.ImportDefinition,System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <param name="importFilter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="importFilter">The filter for imports.</param>
+        <summary>Gets a new <see cref="T:System.ComponentModel.Composition.Hosting.FilteredCatalog" /> object that contains all the parts from this catalog and all dependents that can be reached through imports that match the specified filter.</summary>
+        <returns>The new catalog.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -264,8 +287,8 @@
         <Parameter Name="e" Type="System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">Provides data for the event.</param>
+        <summary>Raises the <see cref="E:System.ComponentModel.Composition.Hosting.FilteredCatalog.Changed" /> event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -286,8 +309,8 @@
         <Parameter Name="e" Type="System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">Provides data for the event.</param>
+        <summary>Raises the <see cref="E:System.ComponentModel.Composition.Hosting.FilteredCatalog.Changing" /> event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

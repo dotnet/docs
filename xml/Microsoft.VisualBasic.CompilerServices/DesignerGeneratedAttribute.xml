@@ -19,8 +19,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>When applied to a class, the compiler implicitly calls a component-initializing method from the default synthetic constructor.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This attribute instructs the compiler to implicitly calls a private `InitializeComponent` method from the default synthetic constructor. The compiler will also verify that this method is called from user defined constructors and report a warning or error it is not. The Visual Studio Integrated Development Environment will honor this attribute when generating code on behalf of the user.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,7 +41,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.CompilerServices.DesignerGeneratedAttribute" /> attribute.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

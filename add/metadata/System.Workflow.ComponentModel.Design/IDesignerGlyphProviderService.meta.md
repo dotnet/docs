@@ -1,19 +1,27 @@
 ---
 uid: System.Workflow.ComponentModel.Design.IDesignerGlyphProviderService
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.IDesignerGlyphProviderService.RemoveGlyphProvider(System.Workflow.ComponentModel.Design.IDesignerGlyphProvider)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.IDesignerGlyphProviderService.AddGlyphProvider(System.Workflow.ComponentModel.Design.IDesignerGlyphProvider)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.IDesignerGlyphProviderService.GlyphProviders
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

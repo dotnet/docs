@@ -1,1 +1,0 @@
-        Dim uiPerm2 As New UIPermission(PermissionState.None)

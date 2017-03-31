@@ -1,14 +1,19 @@
 ---
 uid: System.Windows.Forms.DataGridViewBindingCompleteEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewBindingCompleteEventArgs.ListChangedType
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewBindingCompleteEventArgs.#ctor(System.ComponentModel.ListChangedType)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

@@ -1,19 +1,34 @@
 ---
 uid: System.Runtime.CompilerServices.CompilationRelaxationsAttribute
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.CompilerServices.CompilationRelaxationsAttribute.#ctor
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.CompilerServices.CompilationRelaxationsAttribute.CompilationRelaxations
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.CompilerServices.CompilationRelaxationsAttribute.#ctor(System.Int32)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.CompilerServices.CompilationRelaxationsAttribute.#ctor(System.Runtime.CompilerServices.CompilationRelaxations)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

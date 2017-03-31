@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.HiddenFieldPageStatePersister
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HiddenFieldPageStatePersister.#ctor(System.Web.UI.Page)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HiddenFieldPageStatePersister.Load
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HiddenFieldPageStatePersister.Save
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

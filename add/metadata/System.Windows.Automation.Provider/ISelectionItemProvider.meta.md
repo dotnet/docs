@@ -1,29 +1,41 @@
 ---
 uid: System.Windows.Automation.Provider.ISelectionItemProvider
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Provider.ISelectionItemProvider.AddToSelection
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Provider.ISelectionItemProvider.SelectionContainer
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Provider.ISelectionItemProvider.IsSelected
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Provider.ISelectionItemProvider.RemoveFromSelection
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Provider.ISelectionItemProvider.Select
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---

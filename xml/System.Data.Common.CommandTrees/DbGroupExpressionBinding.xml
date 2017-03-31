@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines the binding for the input set to a <see cref="T:System.Data.Common.CommandTrees.DbGroupByExpression" />. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,9 +28,11 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that defines the input set.</summary>
+        <value>The <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that defines the input set.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The expression is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The expression is not associated with the command tree of the <see cref="T:System.Data.Common.CommandTrees.DbGroupExpressionBinding" />, or its result type is not equal or promotable to the result type of the current value of the property.</exception>
       </Docs>
     </Member>
     <Member MemberName="GroupAggregate">
@@ -46,8 +48,8 @@
         <ReturnType>System.Data.Common.CommandTrees.DbGroupAggregate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Data.Common.CommandTrees.DbGroupAggregate" /> that represents the collection of elements in the group.</summary>
+        <value>The elements in the group.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +66,8 @@
         <ReturnType>System.Data.Common.CommandTrees.DbVariableReferenceExpression</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Data.Common.CommandTrees.DbVariableReferenceExpression" /> that references the group element variable.</summary>
+        <value>A reference to the group element variable.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +84,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name assigned to the group element variable.</summary>
+        <value>The name assigned to the group element variable.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,8 +102,8 @@
         <ReturnType>System.Data.Metadata.Edm.TypeUsage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type metadata of the group element variable.</summary>
+        <value>The type metadata of the group element variable.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,8 +120,8 @@
         <ReturnType>System.Data.Common.CommandTrees.DbVariableReferenceExpression</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Data.Common.CommandTrees.DbVariableReferenceExpression" /> that references the element variable.</summary>
+        <value>A reference to the element variable.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,8 +138,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name assigned to the element variable.</summary>
+        <value>The name assigned to the element variable.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,8 +156,8 @@
         <ReturnType>System.Data.Metadata.Edm.TypeUsage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type metadata of the element variable.</summary>
+        <value>The type metadata of the element variable.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

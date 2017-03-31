@@ -1,79 +1,95 @@
 ---
 uid: System.Web.UI.MobileControls.BaseValidator
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.BaseValidator.Validate
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.BaseValidator.ControlPropertiesValid
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.BaseValidator.CreateStyle
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.BaseValidator.CreateWebValidator
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.BaseValidator.VisibleWeight
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.BaseValidator.StyleReference
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.BaseValidator.EvaluateIsValid
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.BaseValidator.ControlToValidate
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.BaseValidator.ErrorMessage
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.BaseValidator.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.BaseValidator.CheckControlValidationProperty(System.String,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.BaseValidator.OnInit(System.EventArgs)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.BaseValidator.OnPreRender(System.EventArgs)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.BaseValidator.IsValid
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.BaseValidator.Display
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

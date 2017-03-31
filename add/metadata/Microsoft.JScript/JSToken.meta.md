@@ -1,4 +1,4 @@
 ---
 uid: Microsoft.JScript.JSToken
-internalonly: False
+ms.author: "mikejo"
 ---

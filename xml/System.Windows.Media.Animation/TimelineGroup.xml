@@ -20,8 +20,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Abstract class that, when implemented represents a <see cref="T:System.Windows.Media.Animation.Timeline" /> that may contain a collection of child <see cref="T:System.Windows.Media.Animation.Timeline" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Media.Animation.TimelineGroup> can be a child of another <xref:System.Windows.Media.Animation.TimelineGroup>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,7 +42,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.TimelineGroup" /> class, with default properties.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,8 +59,8 @@
         <Parameter Name="beginTime" Type="System.Nullable&lt;System.TimeSpan&gt;" />
       </Parameters>
       <Docs>
-        <param name="beginTime">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="beginTime">The <see cref="P:System.Windows.Media.Animation.Timeline.BeginTime" /> for this <see cref="T:System.Windows.Media.Animation.TimelineGroup" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.TimelineGroup" /> class with the specified <see cref="P:System.Windows.Media.Animation.Timeline.BeginTime" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,9 +78,9 @@
         <Parameter Name="duration" Type="System.Windows.Duration" />
       </Parameters>
       <Docs>
-        <param name="beginTime">To be added.</param>
-        <param name="duration">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="beginTime">The <see cref="P:System.Windows.Media.Animation.Timeline.BeginTime" /> for this <see cref="T:System.Windows.Media.Animation.TimelineGroup" />.</param>
+        <param name="duration">The <see cref="P:System.Windows.Media.Animation.Timeline.Duration" /> for this <see cref="T:System.Windows.Media.Animation.TimelineGroup" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.TimelineGroup" /> class with the specified <see cref="P:System.Windows.Media.Animation.Timeline.BeginTime" /> and <see cref="P:System.Windows.Media.Animation.Timeline.Duration" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,10 +99,10 @@
         <Parameter Name="repeatBehavior" Type="System.Windows.Media.Animation.RepeatBehavior" />
       </Parameters>
       <Docs>
-        <param name="beginTime">To be added.</param>
-        <param name="duration">To be added.</param>
-        <param name="repeatBehavior">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="beginTime">The <see cref="P:System.Windows.Media.Animation.Timeline.BeginTime" /> for this <see cref="T:System.Windows.Media.Animation.TimelineGroup" />.</param>
+        <param name="duration">The <see cref="P:System.Windows.Media.Animation.Timeline.Duration" /> for this <see cref="T:System.Windows.Media.Animation.TimelineGroup" />.</param>
+        <param name="repeatBehavior">The <see cref="P:System.Windows.Media.Animation.Timeline.RepeatBehavior" /> for this <see cref="T:System.Windows.Media.Animation.TimelineGroup" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.TimelineGroup" /> class with the specified <see cref="P:System.Windows.Media.Animation.Timeline.BeginTime" />, <see cref="P:System.Windows.Media.Animation.Timeline.Duration" />, and <see cref="P:System.Windows.Media.Animation.Timeline.RepeatBehavior" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,9 +127,10 @@
         <Parameter Name="child" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="child">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="child">The object to be added as the child of this <see cref="T:System.Windows.Media.Animation.TimelineGroup" />. If this object is a <see cref="T:System.Windows.Media.Animation.Timeline" /> it will be added to the <see cref="P:System.Windows.Media.Animation.TimelineGroup.Children" /> collection; otherwise, an exception will be thrown.</param>
+        <summary>Adds a child <see cref="T:System.Windows.Media.Animation.Timeline" /> to this <see cref="T:System.Windows.Media.Animation.TimelineGroup" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The parameter <paramref name="child" /> is not a <see cref="T:System.Windows.Media.Animation.Timeline" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddText">
@@ -146,9 +154,16 @@
         <Parameter Name="childText" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="childText">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="childText">The text added to the <see cref="T:System.Windows.Media.Animation.Timeline" />.</param>
+        <summary>Adds a text string as a child of this <see cref="T:System.Windows.Media.Animation.Timeline" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Media.Animation.Timeline> does not accept text as a child, so this method will raise an InvalididOperationException unless a derived class has overridden this behavior which allows text to be added.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AllocateClock">
@@ -165,9 +180,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a type-specific clock for this timeline.</summary>
+        <returns>A clock for this timeline.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a derived class overrides this method, it should only create and return an object of a class inheriting from <xref:System.Windows.Media.Animation.Clock>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Children">
@@ -183,9 +205,23 @@
         <ReturnType>System.Windows.Media.Animation.TimelineCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the collection of direct child <see cref="T:System.Windows.Media.Animation.Timeline" /> objects of the <see cref="T:System.Windows.Media.Animation.TimelineGroup" />.</summary>
+        <value>Child <see cref="T:System.Windows.Media.Animation.Timeline" /> objects of the <see cref="T:System.Windows.Media.Animation.TimelineGroup" />. The default value is **null**.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_Children"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.Animation.TimelineGroup>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ChildrenProperty">
@@ -201,8 +237,15 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Identifies the <see cref="P:System.Windows.Media.Animation.TimelineGroup.Children" /> dependency property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The identifier for the <xref:System.Windows.Media.Animation.TimelineGroup.Children%2A> dependency property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -219,9 +262,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.Animation.TimelineGroup" />, making deep copies of this object's values. When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CloneCurrentValue">
@@ -238,9 +290,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.Animation.TimelineGroup" /> object, making deep copies of this object's current values. Resource references, data bindings, and animations are not copied, but their current values are.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateClock">
@@ -257,8 +318,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Instantiates a new <see cref="T:System.Windows.Media.Animation.ClockGroup" /> object, using this instance.</summary>
+        <returns>A <see cref="T:System.Windows.Media.Animation.ClockGroup" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -278,8 +339,8 @@
         <Parameter Name="child" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="child">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="child">The child object to add.</param>
+        <summary>Adds a child object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -299,8 +360,8 @@
         <Parameter Name="childText" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="childText">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="childText">The text to add to the object.</param>
+        <summary>Adds the text content of a node to the object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

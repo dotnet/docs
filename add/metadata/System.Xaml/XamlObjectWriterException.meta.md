@@ -1,24 +1,29 @@
 ---
 uid: System.Xaml.XamlObjectWriterException
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlObjectWriterException.#ctor(System.String,System.Exception)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlObjectWriterException.#ctor(System.String)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlObjectWriterException.#ctor
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlObjectWriterException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+manager: "martinek"
+---
+
+---
+uid: System.Xaml.XamlObjectWriterException.#ctor
+manager: "martinek"
 ---

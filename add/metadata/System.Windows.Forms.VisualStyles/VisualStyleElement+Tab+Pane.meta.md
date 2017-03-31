@@ -1,9 +1,13 @@
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.Tab.Pane
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.Tab.Pane.Normal
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

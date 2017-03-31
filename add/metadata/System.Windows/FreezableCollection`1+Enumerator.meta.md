@@ -1,29 +1,41 @@
 ---
 uid: System.Windows.FreezableCollection`1.Enumerator
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.FreezableCollection`1.Enumerator.Reset
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.FreezableCollection`1.Enumerator.System#Collections#IEnumerator#Current
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.FreezableCollection`1.Enumerator.System#IDisposable#Dispose
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.FreezableCollection`1.Enumerator.Current
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.FreezableCollection`1.Enumerator.MoveNext
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

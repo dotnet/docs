@@ -1,44 +1,59 @@
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.PrintingManager
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.PrintingManager.Dispose(System.Boolean)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.PrintingManager.PrintDocument
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.PrintingManager.Print(System.Boolean)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.PrintingManager.PrintPreview
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.PrintingManager.PrintPaint(System.Drawing.Graphics,System.Drawing.Rectangle)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.PrintingManager.PageSetup
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.PrintingManager.#ctor(System.ComponentModel.Design.IServiceContainer)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.PrintingManager.Dispose
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.PrintingManager.Dispose
+ms.author: "mblythe"
+manager: "mblythe"
 ---

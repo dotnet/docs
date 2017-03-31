@@ -1,29 +1,41 @@
 ---
 uid: System.Windows.Automation.TableItemPattern
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.TableItemPattern.Pattern
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.TableItemPattern.ColumnHeaderItemsProperty
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.TableItemPattern.Current
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.TableItemPattern.Cached
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.TableItemPattern.RowHeaderItemsProperty
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---

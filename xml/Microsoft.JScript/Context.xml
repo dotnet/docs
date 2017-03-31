@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents JScript source code. This class belongs to the compilation and run-time state category.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used mainly by the <xref:Microsoft.JScript.JSScanner> and the <xref:Microsoft.JScript.JSParser> to read source code. For more information, see [Create a Language Compiler for the .NET Framework](http://go.microsoft.com/fwlink/?LinkId=110392).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="EndColumn">
@@ -28,8 +35,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the column number in the line where this code ends. This includes whitespace at the start of the line.</summary>
+        <value>The column number where this code ends.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +53,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the ending line number of this code.</summary>
+        <value>The ending line number of this code.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +71,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the position in the code string where this code ends, because all lines of code are stored in a single string.</summary>
+        <value>The position in the code string where this code ends.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,8 +90,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the code that the context contains, discarding any whitespace.</summary>
+        <returns>The code that the context contains.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,8 +109,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets an individual unit of code, or a *token*, that the context contains.</summary>
+        <returns>An individual unit of code, or a *token*, that the context contains.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,8 +127,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the column number in the line where this code starts. This includes whitespace at the start of the line.</summary>
+        <value>The column number where this code starts.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -138,8 +145,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the line number where this code starts.</summary>
+        <value>The line number where this code starts.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,8 +163,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the position in the code string where this code starts, because all lines of code are stored in a single string.</summary>
+        <value>The position in the code string where this code starts.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

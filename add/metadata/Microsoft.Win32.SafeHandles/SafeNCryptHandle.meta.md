@@ -1,19 +1,27 @@
 ---
 uid: Microsoft.Win32.SafeHandles.SafeNCryptHandle
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Win32.SafeHandles.SafeNCryptHandle.ReleaseNativeHandle
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Win32.SafeHandles.SafeNCryptHandle.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Win32.SafeHandles.SafeNCryptHandle.ReleaseHandle
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

@@ -1,44 +1,53 @@
 ---
 uid: System.Configuration.ConfigurationPermission
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationPermission.Union(System.Security.IPermission)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationPermission.IsSubsetOf(System.Security.IPermission)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationPermission.ToXml
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationPermission.IsUnrestricted
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationPermission.#ctor(System.Security.Permissions.PermissionState)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationPermission.FromXml(System.Security.SecurityElement)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationPermission.Copy
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationPermission.Intersect(System.Security.IPermission)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

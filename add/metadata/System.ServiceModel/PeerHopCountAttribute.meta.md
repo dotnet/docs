@@ -1,39 +1,39 @@
 ---
 uid: System.ServiceModel.PeerHopCountAttribute
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerHopCountAttribute.Name
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerHopCountAttribute.Actor
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerHopCountAttribute.Namespace
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerHopCountAttribute.ProtectionLevel
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerHopCountAttribute.Relay
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerHopCountAttribute.#ctor
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerHopCountAttribute.MustUnderstand
-internalonly: False
+manager: "ghogen"
 ---

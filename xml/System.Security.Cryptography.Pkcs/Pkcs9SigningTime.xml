@@ -16,8 +16,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The <see cref="T:System.Security.Cryptography.Pkcs.Pkcs9SigningTime" /> class defines the signing date and time of a signature. A <see cref="T:System.Security.Cryptography.Pkcs.Pkcs9SigningTime" /> object can  be used as an authenticated attribute of a <see cref="T:System.Security.Cryptography.Pkcs.CmsSigner" /> object when an authenticated date and time are to accompany a digital signature.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A signing time attribute is also available in CAPICOM.  See [CAPICOM_ATTRIBUTE](https://msdn.microsoft.com/library/aa375631.aspx).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,8 +43,21 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="M:System.Security.Cryptography.Pkcs.Pkcs9SigningTime.#ctor" /> constructor creates an instance of the <see cref="T:System.Security.Cryptography.Pkcs.Pkcs9SigningTime" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Cryptography.Pkcs.Pkcs9SigningTime> class has the following default property values.  
+  
+|Property|Default value|  
+|--------------|-------------------|  
+|<xref:System.Security.Cryptography.Pkcs.Pkcs9SigningTime.SigningTime%2A>|The current date and time|  
+  
+ If you want to specify a specific date and time for the <xref:System.Security.Cryptography.Pkcs.Pkcs9SigningTime> object, use the <xref:System.Security.Cryptography.Pkcs.Pkcs9SigningTime.%23ctor%28System.DateTime%29> constructor.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -58,8 +78,8 @@
         <Parameter Name="encodedSigningTime" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="encodedSigningTime">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="encodedSigningTime">An array of byte values that specifies the encoded signing date and time of the CMS/PKCS #7 message.</param>
+        <summary>The <see cref="M:System.Security.Cryptography.Pkcs.Pkcs9SigningTime.#ctor(System.Byte[])" /> constructor creates an instance of the <see cref="T:System.Security.Cryptography.Pkcs.Pkcs9SigningTime" /> class by using the specified array of byte values as the encoded signing date and time of the content of a CMS/PKCS #7 message.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,8 +101,8 @@
         <Parameter Name="signingTime" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="signingTime">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="signingTime">A <see cref="T:System.DateTime" /> structure that represents the signing date and time of the signature.</param>
+        <summary>The <see cref="M:System.Security.Cryptography.Pkcs.Pkcs9SigningTime.#ctor(System.DateTime)" /> constructor creates an instance of the <see cref="T:System.Security.Cryptography.Pkcs.Pkcs9SigningTime" /> class by using the specified signing date and time.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,9 +127,16 @@
         <Parameter Name="asnEncodedData" Type="System.Security.Cryptography.AsnEncodedData" />
       </Parameters>
       <Docs>
-        <param name="asnEncodedData">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="asnEncodedData">The <see cref="T:System.Security.Cryptography.AsnEncodedData" /> object from which to copy information.</param>
+        <summary>Copies information from a <see cref="T:System.Security.Cryptography.AsnEncodedData" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method replaces the current <xref:System.Security.Cryptography.Pkcs.Pkcs9SigningTime> object with the specified <xref:System.Security.Cryptography.AsnEncodedData> object.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SigningTime">
@@ -130,8 +157,8 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.Security.Cryptography.Pkcs.Pkcs9SigningTime.SigningTime" /> property retrieves a <see cref="T:System.DateTime" /> structure that represents the date and time that the message was signed.</summary>
+        <value>A <see cref="T:System.DateTime" /> structure that contains the date and time the document was signed.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

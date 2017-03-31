@@ -1,39 +1,62 @@
 ---
 uid: System.Dynamic.GetMemberBinder
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+
+---
+uid: System.Dynamic.GetMemberBinder.FallbackGetMember
+ms.author: "billchi"
+manager: "douge"
 ---
 
 ---
 uid: System.Dynamic.GetMemberBinder.Bind(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject[])
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+
+---
+uid: System.Dynamic.GetMemberBinder.Bind
 ---
 
 ---
 uid: System.Dynamic.GetMemberBinder.FallbackGetMember(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject)
-internalonly: False
+ms.author: "billchi"
+manager: "douge"
 ---
 
 ---
 uid: System.Dynamic.GetMemberBinder.ReturnType
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Dynamic.GetMemberBinder.Name
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Dynamic.GetMemberBinder.IgnoreCase
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Dynamic.GetMemberBinder.#ctor(System.String,System.Boolean)
-internalonly: False
+ms.author: "billchi"
+manager: "douge"
 ---
 
 ---
 uid: System.Dynamic.GetMemberBinder.FallbackGetMember(System.Dynamic.DynamicMetaObject)
-internalonly: False
+ms.author: "billchi"
+manager: "douge"
 ---

@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.MobileControls.DeviceSpecificControlBuilder
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.DeviceSpecificControlBuilder.GetChildControlType(System.String,System.Collections.IDictionary)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.DeviceSpecificControlBuilder.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.DeviceSpecificControlBuilder.AppendLiteralString(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

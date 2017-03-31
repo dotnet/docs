@@ -1,139 +1,230 @@
 ---
 uid: System.Drawing.Bitmap
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Bitmap.GetPixel(System.Int32,System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Bitmap.#ctor(System.Drawing.Image,System.Int32,System.Int32)
-internalonly: False
----
-
----
-uid: System.Drawing.Bitmap.#ctor(System.Type,System.String)
-internalonly: False
----
-
----
-uid: System.Drawing.Bitmap.#ctor(System.Int32,System.Int32,System.Drawing.Graphics)
-internalonly: False
----
-
----
-uid: System.Drawing.Bitmap.Clone(System.Drawing.Rectangle,System.Drawing.Imaging.PixelFormat)
-internalonly: False
----
-
----
-uid: System.Drawing.Bitmap.#ctor(System.IO.Stream)
-internalonly: False
----
-
----
-uid: System.Drawing.Bitmap.#ctor(System.String)
-internalonly: False
----
-
----
-uid: System.Drawing.Bitmap.FromHicon(System.IntPtr)
-internalonly: False
----
-
----
-uid: System.Drawing.Bitmap.UnlockBits(System.Drawing.Imaging.BitmapData)
-internalonly: False
----
-
----
-uid: System.Drawing.Bitmap.LockBits(System.Drawing.Rectangle,System.Drawing.Imaging.ImageLockMode,System.Drawing.Imaging.PixelFormat)
-internalonly: False
----
-
----
-uid: System.Drawing.Bitmap.#ctor(System.Int32,System.Int32,System.Int32,System.Drawing.Imaging.PixelFormat,System.IntPtr)
-internalonly: False
----
-
----
-uid: System.Drawing.Bitmap.GetHicon
-internalonly: False
----
-
----
-uid: System.Drawing.Bitmap.FromResource(System.IntPtr,System.String)
-internalonly: False
----
-
----
-uid: System.Drawing.Bitmap.Clone(System.Drawing.RectangleF,System.Drawing.Imaging.PixelFormat)
-internalonly: False
----
-
----
-uid: System.Drawing.Bitmap.#ctor(System.Drawing.Image,System.Drawing.Size)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Bitmap.GetHbitmap
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Bitmap.LockBits(System.Drawing.Rectangle,System.Drawing.Imaging.ImageLockMode,System.Drawing.Imaging.PixelFormat,System.Drawing.Imaging.BitmapData)
-internalonly: False
+uid: System.Drawing.Bitmap.#ctor(System.Type,System.String)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Bitmap.GetHbitmap(System.Drawing.Color)
-internalonly: False
+uid: System.Drawing.Bitmap.#ctor(System.Int32,System.Int32,System.Drawing.Graphics)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Bitmap.#ctor(System.Drawing.Image)
-internalonly: False
+uid: System.Drawing.Bitmap.Clone(System.Drawing.Rectangle,System.Drawing.Imaging.PixelFormat)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Bitmap.SetResolution(System.Single,System.Single)
-internalonly: False
+uid: System.Drawing.Bitmap.#ctor(System.IO.Stream)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Bitmap.#ctor(System.Int32,System.Int32,System.Drawing.Imaging.PixelFormat)
-internalonly: False
+uid: System.Drawing.Bitmap.#ctor(System.String)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Drawing.Bitmap.FromHicon(System.IntPtr)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Drawing.Bitmap.LockBits
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Drawing.Bitmap.Clone
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Drawing.Bitmap.UnlockBits(System.Drawing.Imaging.BitmapData)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Drawing.Bitmap.LockBits(System.Drawing.Rectangle,System.Drawing.Imaging.ImageLockMode,System.Drawing.Imaging.PixelFormat)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Drawing.Bitmap.#ctor(System.Int32,System.Int32,System.Int32,System.Drawing.Imaging.PixelFormat,System.IntPtr)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Drawing.Bitmap.GetHicon
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Drawing.Bitmap.FromResource(System.IntPtr,System.String)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Drawing.Bitmap.Clone(System.Drawing.RectangleF,System.Drawing.Imaging.PixelFormat)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Bitmap.MakeTransparent
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Drawing.Bitmap.#ctor(System.Drawing.Image,System.Drawing.Size)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Drawing.Bitmap.GetHbitmap
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Drawing.Bitmap.LockBits(System.Drawing.Rectangle,System.Drawing.Imaging.ImageLockMode,System.Drawing.Imaging.PixelFormat,System.Drawing.Imaging.BitmapData)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Drawing.Bitmap.GetHbitmap(System.Drawing.Color)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Drawing.Bitmap.#ctor(System.Drawing.Image)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Drawing.Bitmap.SetResolution(System.Single,System.Single)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Drawing.Bitmap.#ctor(System.Int32,System.Int32,System.Drawing.Imaging.PixelFormat)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Drawing.Bitmap.MakeTransparent
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Bitmap.#ctor(System.String,System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Bitmap.SetPixel(System.Int32,System.Int32,System.Drawing.Color)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Drawing.Bitmap.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Bitmap.MakeTransparent(System.Drawing.Color)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Bitmap.#ctor(System.IO.Stream,System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Bitmap.#ctor(System.Int32,System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

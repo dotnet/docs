@@ -1,14 +1,20 @@
 ---
 uid: System.Diagnostics.SwitchLevelAttribute
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.SwitchLevelAttribute.SwitchLevelType
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.SwitchLevelAttribute.#ctor(System.Type)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

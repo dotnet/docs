@@ -1,24 +1,34 @@
 ---
 uid: Microsoft.Build.Tasks.Xaml.AttributeData
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.AttributeData.Type
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.AttributeData.Parameters
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.AttributeData.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.AttributeData.Properties
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

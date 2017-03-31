@@ -1,19 +1,23 @@
 ---
 uid: System.Web.Profile.CustomProviderDataAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Profile.CustomProviderDataAttribute.CustomProviderData
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Profile.CustomProviderDataAttribute.IsDefaultAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Profile.CustomProviderDataAttribute.#ctor(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

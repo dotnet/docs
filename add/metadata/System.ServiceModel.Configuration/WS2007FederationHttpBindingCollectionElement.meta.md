@@ -1,9 +1,13 @@
 ---
 uid: System.ServiceModel.Configuration.WS2007FederationHttpBindingCollectionElement
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.WS2007FederationHttpBindingCollectionElement.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

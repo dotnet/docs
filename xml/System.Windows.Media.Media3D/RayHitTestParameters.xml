@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the parameters of a hit test along a ray.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Note that the visual layer supports hit testing against all objects under a point or geometry, not just the topmost object.  A 2D hit test will also return 3D results directly under the specified point or geometry.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -29,10 +36,17 @@
         <Parameter Name="direction" Type="System.Windows.Media.Media3D.Vector3D" />
       </Parameters>
       <Docs>
-        <param name="origin">To be added.</param>
-        <param name="direction">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="origin">Point3D at which the ray originates.</param>
+        <param name="direction">Vector3D that indicates the direction of the ray.</param>
+        <summary>Creates an instance of the object that specifies the origin and direction of the ray along which to hit test.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Note that the visual layer supports hit testing against all objects under a point or geometry, not just the topmost object.  A 2D hit test will also return 3D results directly under the specified point or geometry.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Direction">
@@ -48,9 +62,22 @@
         <ReturnType>System.Windows.Media.Media3D.Vector3D</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> that indicates the direction (from its origin) of the ray along which to hit test.</summary>
+        <value>Vector3D that indicates the direction of the ray along which to hit test.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Note that the visual layer supports hit testing against all objects under a point or geometry, not just the topmost object.  A 2D hit test will also return 3D results directly under the specified point or geometry.  
+  
+   
+  
+## Examples  
+ [!code-csharp[hittest3d#HitTest3D3DN4](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTest3D/CSharp/Window1.xaml.cs#hittest3d3dn4)]
+ [!code-vb[hittest3d#HitTest3D3DN4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTest3D/visualbasic/window1.xaml.vb#hittest3d3dn4)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Origin">
@@ -66,9 +93,22 @@
         <ReturnType>System.Windows.Media.Media3D.Point3D</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the origin of the ray along which to hit test.</summary>
+        <value>Origin of the ray along which to hit test.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Note that the visual layer supports hit testing against all objects under a point or geometry, not just the topmost object.  A 2D hit test will also return 3D results directly under the specified point or geometry.  
+  
+   
+  
+## Examples  
+ [!code-csharp[hittest3d#HitTest3D3DN4](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTest3D/CSharp/Window1.xaml.cs#hittest3d3dn4)]
+ [!code-vb[hittest3d#HitTest3D3DN4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTest3D/visualbasic/window1.xaml.vb#hittest3d3dn4)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

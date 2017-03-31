@@ -1,9 +1,11 @@
 ---
 uid: System.Configuration.IConfigurationSectionHandler
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.IConfigurationSectionHandler.Create(System.Object,System.Object,System.Xml.XmlNode)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -1,24 +1,35 @@
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogNotFoundException
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogNotFoundException.#ctor(System.String)
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogNotFoundException.#ctor
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogNotFoundException.#ctor(System.String,System.Exception)
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.EventLogNotFoundException.#ctor
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---

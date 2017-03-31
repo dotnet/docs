@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides data for the <see cref="E:System.Windows.UIElement.ManipulationBoundaryFeedback" /> event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.Windows.Input.ManipulationDelta</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the unused portion of the direct manipulation.</summary>
+        <value>The unused portion of the direct manipulation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,8 +69,8 @@
         <ReturnType>System.Windows.IInputElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the container that the <see cref="P:System.Windows.Input.ManipulationBoundaryFeedbackEventArgs.BoundaryFeedback" /> property is relative to.</summary>
+        <value>The container that the <see cref="P:System.Windows.Input.ManipulationBoundaryFeedbackEventArgs.BoundaryFeedback" /> property is relative to.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,8 +87,8 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Windows.Input.IManipulator&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of objects that represents the touch contacts for the manipulation.</summary>
+        <value>A collection of objects that represents the touch contacts for the manipulation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

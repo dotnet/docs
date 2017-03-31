@@ -1,34 +1,48 @@
 ---
 uid: System.Windows.Automation.SelectionItemPatternIdentifiers
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.SelectionItemPatternIdentifiers.Pattern
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.SelectionItemPatternIdentifiers.ElementSelectedEvent
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.SelectionItemPatternIdentifiers.IsSelectedProperty
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.SelectionItemPatternIdentifiers.ElementAddedToSelectionEvent
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.SelectionItemPatternIdentifiers.SelectionContainerProperty
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.SelectionItemPatternIdentifiers.ElementRemovedFromSelectionEvent
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---

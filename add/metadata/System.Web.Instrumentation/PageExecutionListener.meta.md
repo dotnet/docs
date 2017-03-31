@@ -1,19 +1,23 @@
 ---
 uid: System.Web.Instrumentation.PageExecutionListener
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Instrumentation.PageExecutionListener.EndContext(System.Web.Instrumentation.PageExecutionContext)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Instrumentation.PageExecutionListener.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Instrumentation.PageExecutionListener.BeginContext(System.Web.Instrumentation.PageExecutionContext)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

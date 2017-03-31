@@ -1,29 +1,39 @@
 ---
 uid: System.Windows.Shapes.Polygon
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Shapes.Polygon.FillRule
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Shapes.Polygon.#ctor
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Shapes.Polygon.Points
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Shapes.Polygon.PointsProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Shapes.Polygon.FillRuleProperty
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

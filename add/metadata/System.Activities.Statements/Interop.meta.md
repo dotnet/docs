@@ -1,84 +1,132 @@
 ---
 uid: System.Activities.Statements.Interop
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Statements.Interop.System#ComponentModel#ICustomTypeDescriptor#GetConverter
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Statements.Interop.System#ComponentModel#ICustomTypeDescriptor#GetPropertyOwner(System.ComponentModel.PropertyDescriptor)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Statements.Interop.System#ComponentModel#ICustomTypeDescriptor#GetAttributes
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Statements.Interop.System#ComponentModel#ICustomTypeDescriptor#GetProperties(System.Attribute[])
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Statements.Interop.System#ComponentModel#ICustomTypeDescriptor#GetComponentName
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Statements.Interop.System#ComponentModel#ICustomTypeDescriptor#GetDefaultProperty
-internalonly: False
----
-
----
-uid: System.Activities.Statements.Interop.System#ComponentModel#ICustomTypeDescriptor#GetEditor(System.Type)
-internalonly: False
----
-
----
-uid: System.Activities.Statements.Interop.System#ComponentModel#ICustomTypeDescriptor#GetProperties
-internalonly: False
----
-
----
-uid: System.Activities.Statements.Interop.ActivityProperties
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Statements.Interop.System#ComponentModel#ICustomTypeDescriptor#GetEvents
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Statements.Interop.System#ComponentModel#ICustomTypeDescriptor#GetEditor(System.Type)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Statements.Interop.System#ComponentModel#ICustomTypeDescriptor#GetProperties
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Statements.Interop.ActivityProperties
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Statements.Interop.System#ComponentModel#ICustomTypeDescriptor#GetEvents
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Statements.Interop.System#ComponentModel#ICustomTypeDescriptor#GetProperties
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Statements.Interop.System#ComponentModel#ICustomTypeDescriptor#GetClassName
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Statements.Interop.System#ComponentModel#ICustomTypeDescriptor#GetEvents(System.Attribute[])
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Statements.Interop.System#ComponentModel#ICustomTypeDescriptor#GetDefaultEvent
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Statements.Interop.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Statements.Interop.ActivityType
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Statements.Interop.ActivityMetaProperties
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

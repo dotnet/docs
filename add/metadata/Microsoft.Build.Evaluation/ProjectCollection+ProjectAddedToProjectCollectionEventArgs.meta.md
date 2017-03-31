@@ -1,14 +1,17 @@
 ---
 uid: Microsoft.Build.Evaluation.ProjectCollection.ProjectAddedToProjectCollectionEventArgs
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Evaluation.ProjectCollection.ProjectAddedToProjectCollectionEventArgs.#ctor(Microsoft.Build.Construction.ProjectRootElement)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Evaluation.ProjectCollection.ProjectAddedToProjectCollectionEventArgs.ProjectRootElement
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

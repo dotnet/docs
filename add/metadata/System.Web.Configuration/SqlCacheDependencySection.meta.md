@@ -1,24 +1,29 @@
 ---
 uid: System.Web.Configuration.SqlCacheDependencySection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.SqlCacheDependencySection.PollTime
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.SqlCacheDependencySection.Enabled
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.SqlCacheDependencySection.Databases
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.SqlCacheDependencySection.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

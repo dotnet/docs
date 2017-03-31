@@ -1,14 +1,20 @@
 ---
 uid: System.Activities.DurableInstancing.CreateWorkflowOwnerCommand
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DurableInstancing.CreateWorkflowOwnerCommand.InstanceOwnerMetadata
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DurableInstancing.CreateWorkflowOwnerCommand.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

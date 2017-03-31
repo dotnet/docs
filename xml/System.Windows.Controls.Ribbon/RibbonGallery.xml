@@ -47,8 +47,25 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a menu that displays a set of related items or commands in a visually rich format that can be organized into multiple categorized subsets.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following illustration shows a <xref:System.Windows.Controls.Ribbon.RibbonComboBox> hosting a simple <xref:System.Windows.Controls.Ribbon.RibbonGallery>.  
+  
+ ![Ribbon combo box control with drop&#45;down open](~/add/media/wpfribbon-combobox-selection.png "Ribbon combo box control with drop-down open")  
+Ribbon gallery in a combo box  
+  
+   
+  
+## Examples  
+ The following example shows the markup to create a combo box that hosts a <xref:System.Windows.Controls.Ribbon.RibbonGallery> with three available items.  
+  
+ [!code-xml[Ribbon_ControlsSample#RibbonComboBox](~/samples/snippets/csharp/VS_Snippets_Wpf/ribbon_controlssample/cs/mainwindow.xaml#ribboncombobox)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -62,7 +79,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Ribbon.RibbonGallery" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,9 +96,16 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the filter that returns all items in a ribbon gallery.</summary>
+        <value>The filter that returns all items in a ribbon gallery.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you implement a custom <xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemTemplateSelector%2A> or <xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemContainerStyleSelector%2A>, you can use this property to distinguish between "All" filter items and custom filter items.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AllFilterItemContainerStyle">
@@ -97,9 +121,23 @@
         <ReturnType>System.Windows.Style</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the style that is applied to items in the filter when the "All" filter is selected.</summary>
+        <value>The style that is applied to items in the filter when the "All" filter is selected.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_AllFilterItemContainerStyle"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.AllFilterItemContainerStyleProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AllFilterItemContainerStyleProperty">
@@ -115,7 +153,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.AllFilterItemContainerStyle" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,9 +170,23 @@
         <ReturnType>System.Windows.DataTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see cref="T:System.Windows.DataTemplate" /> that is used to display items in the filter when the "All" filter is selected.</summary>
+        <value>A template that specifies the visualization of the items. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_AllFilterItemTemplate"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.AllFilterItemTemplateProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AllFilterItemTemplateProperty">
@@ -150,7 +202,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.AllFilterItemTemplate" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,9 +219,24 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether this control can be added directly to the Quick Access Toolbar.</summary>
+        <value>
+          <see langword="true" /> if this control can be added directly to the Quick Access Toolbar; otherwise, <see langword="false" />. The registered default is <see langword="true" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_CanAddToQuickAccessToolBarDirectly"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.CanAddToQuickAccessToolBarDirectlyProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CanAddToQuickAccessToolBarDirectlyProperty">
@@ -185,7 +252,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.CanAddToQuickAccessToolBarDirectly" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -202,9 +269,24 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether a user can apply a filter to gallery items.</summary>
+        <value>
+          <see langword="true" /> if a filter can be applied to gallery items; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_CanUserFilter"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.CanUserFilterProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CanUserFilterProperty">
@@ -220,7 +302,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.CanUserFilter" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -237,9 +319,24 @@
         <ReturnType>System.Windows.Style</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the style that is applied to the <see cref="T:System.Windows.Controls.Ribbon.RibbonGalleryCategory" /> element generated for each item.</summary>
+        <value>The style that is applied to the container element generated for each item. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this property value is not `null`, it overrides the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A?displayProperty=fullName> property.  
+  
+<a name="dependencyPropertyInfo_CategoryStyle"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.CategoryStyleProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CategoryStyleProperty">
@@ -255,7 +352,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.CategoryStyle" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -277,9 +374,24 @@
         <ReturnType>System.Windows.DataTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see cref="T:System.Windows.DataTemplate" /> that is used to display each item in a <see cref="T:System.Windows.Controls.Ribbon.RibbonGalleryCategory" />.</summary>
+        <value>A template that specifies the visualization of the items. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this property value is not `null`, it overrides the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A?displayProperty=fullName> property.  
+  
+<a name="dependencyPropertyInfo_CategoryTemplate"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.CategoryTemplateProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CategoryTemplateProperty">
@@ -295,7 +407,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.CategoryTemplate" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -316,10 +428,17 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="element">The element that is used to display the item.</param>
+        <param name="item">The item to display from the <see cref="P:System.Windows.Controls.ItemsControl.Items" /> collection.</param>
+        <summary>Unloads the container for the specified item.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method undoes the effects of the <xref:System.Windows.Controls.Ribbon.RibbonGallery.PrepareContainerForItemOverride%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ColumnsStretchToFill">
@@ -335,9 +454,25 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates that the gallery distributes all its available width equally between its columns.</summary>
+        <value>
+          <see langword="true" /> if the gallery distributes its available width equally between its columns; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.Ribbon.RibbonGallery.ColumnsStretchToFill%2A> property only has an effect when <xref:System.Windows.Controls.Ribbon.RibbonGallery.IsSharedColumnSizeScope%2A> is set to `true`.  
+  
+<a name="dependencyPropertyInfo_ColumnsStretchToFill"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.ColumnsStretchToFillProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ColumnsStretchToFillProperty">
@@ -353,7 +488,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.ColumnsStretchToFill" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -370,9 +505,23 @@
         <ReturnType>System.Windows.Input.ICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the command that is associated with this ribbon gallery.</summary>
+        <value>The command that is associated with this ribbon gallery. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_Command"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.CommandProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CommandParameter">
@@ -388,9 +537,23 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a user-defined data value to pass to the command.</summary>
+        <value>A user-defined data value to pass to the command. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_CommandParameter"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.CommandParameterProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CommandParameterProperty">
@@ -406,7 +569,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.CommandParameter" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -423,7 +586,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.Command" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -440,9 +603,23 @@
         <ReturnType>System.Windows.IInputElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the element on which to invoke the specified command.</summary>
+        <value>The element on which to invoke the command. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_CommandTarget"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.CommandTargetProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CommandTargetProperty">
@@ -458,7 +635,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.CommandTarget" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -475,8 +652,8 @@
         <ReturnType>System.Windows.Input.RoutedCommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the command to invoke when the current gallery filter is changed by the user.</summary>
+        <value>The command to invoke when the current filter is changed. The default is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -493,9 +670,23 @@
         <ReturnType>System.Windows.Style</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the style that is applied to the filter items container generated from a <see cref="T:System.Windows.Controls.Ribbon.RibbonGalleryCategory" /> header.</summary>
+        <value>The style applied to the filter items container element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_FilterItemContainerStyle"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemContainerStyleProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FilterItemContainerStyleProperty">
@@ -511,7 +702,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemContainerStyle" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -528,9 +719,24 @@
         <ReturnType>System.Windows.Controls.StyleSelector</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the custom logic for selecting a <see cref="T:System.Windows.Style" /> that is applied to items in the filter when a custom filter is selected.</summary>
+        <value>A custom <see cref="T:System.Windows.Controls.StyleSelector" /> object that provides logic and returns a <see cref="T:System.Windows.Style" />. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You use the <xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemContainerStyle%2A> property to specify the appearance of the content. If you have more than one style defined and want to specify logic that selects a style to use, then you use this property. This property is ignored if the <xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemContainerStyle%2A> property is set.  
+  
+<a name="dependencyPropertyInfo_FilterItemContainerStyleSelector"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemContainerStyleSelectorProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FilterItemContainerStyleSelectorProperty">
@@ -546,7 +752,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemContainerStyleSelector" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -563,9 +769,23 @@
         <ReturnType>System.Windows.DataTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see cref="T:System.Windows.DataTemplate" /> that is used to display items in the filter when a custom filter is selected.</summary>
+        <value>A template that specifies the visualization of the items. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_FilterItemTemplate"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemTemplateProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FilterItemTemplateProperty">
@@ -581,7 +801,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemTemplate" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -598,9 +818,24 @@
         <ReturnType>System.Windows.Controls.DataTemplateSelector</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the custom logic for selecting a <see cref="T:System.Windows.DataTemplate" /> that is used to display items in the filter when a custom filter is selected.</summary>
+        <value>A custom <see cref="T:System.Windows.Controls.DataTemplateSelector" /> object that provides logic and returns a <see cref="T:System.Windows.DataTemplate" />. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You use the<xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemTemplate%2A> property to specify the visualization of the content. If you have more than one template defined and want to specify logic that selects a template to use, then you use this property. This property is ignored if the <xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemTemplate%2A> property is set.  
+  
+<a name="dependencyPropertyInfo_FilterItemTemplateSelector"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemTemplateSelectorProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FilterItemTemplateSelectorProperty">
@@ -616,7 +851,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemTemplateSelector" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -633,9 +868,23 @@
         <ReturnType>System.Windows.Style</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the style that is applied to the filter menu button.</summary>
+        <value>The style that is applied to the filter menu button. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_FilterMenuButtonStyle"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterMenuButtonStyleProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FilterMenuButtonStyleProperty">
@@ -651,7 +900,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.FilterMenuButtonStyle" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -668,9 +917,23 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the contents of the filter pane.</summary>
+        <value>The contents of the filter pane. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_FilterPaneContent"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterPaneContentProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FilterPaneContentProperty">
@@ -686,7 +949,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.FilterPaneContent" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -703,9 +966,23 @@
         <ReturnType>System.Windows.DataTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see cref="T:System.Windows.DataTemplate" /> that is used to display the contents of the filter pane.</summary>
+        <value>A template that specifies the visualization of the filter pane contents. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_FilterPaneContentTemplate"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterPaneContentTemplateProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FilterPaneContentTemplateProperty">
@@ -721,7 +998,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.FilterPaneContentTemplate" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -738,9 +1015,23 @@
         <ReturnType>System.Windows.Style</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the style that is applied to items in the <see cref="T:System.Windows.Controls.Ribbon.RibbonGallery" />.</summary>
+        <value>The style that is applied to items in the <see cref="T:System.Windows.Controls.Ribbon.RibbonGallery" />. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_GalleryItemStyle"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GalleryItemStyleProperty">
@@ -756,7 +1047,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.GalleryItemStyle" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -773,9 +1064,23 @@
         <ReturnType>System.Windows.DataTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see cref="T:System.Windows.DataTemplate" /> that is used to display each item in a <see cref="T:System.Windows.Controls.Ribbon.RibbonGallery" />.</summary>
+        <value>A template that specifies the visualization of the items. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_GalleryItemTemplate"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GalleryItemTemplateProperty">
@@ -791,7 +1096,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.GalleryItemTemplate" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -809,8 +1114,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a new <see cref="T:System.Windows.Controls.Ribbon.RibbonGalleryCategory" /> object.</summary>
+        <returns>A new <see cref="T:System.Windows.Controls.Ribbon.RibbonGalleryCategory" /> container object that is used to display an item from the <see cref="P:System.Windows.Controls.ItemsControl.Items" /> collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -827,9 +1132,23 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the item that is currently highlighted.</summary>
+        <value>The item that is currently highlighted. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_HighlightedItem"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.HighlightedItemProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HighlightedItemProperty">
@@ -845,7 +1164,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.HighlightedItem" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -862,8 +1181,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the value that indicates whether the gallery is enabled.</summary>
+        <value>
+          <see langword="true" /> if the gallery is enabled; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -883,9 +1203,10 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The item to test.</param>
+        <summary>Returns a value that indicates whether the specified item is (or is eligible to be) its own container.</summary>
+        <returns>
+          <see langword="true" /> if the item is a <see cref="T:System.Windows.Controls.Ribbon.RibbonGalleryCategory" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -902,9 +1223,24 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that specifies whether this gallery defines the scope used for uniform layout of items.</summary>
+        <value>
+          <see langword="true" /> if this gallery defines the scope used for uniform layout of items; otherwise, <see langword="false" />. The registered default is <see langword="true" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_IsSharedColumnSizeScope"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.IsSharedColumnSizeScopeProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSharedColumnSizeScopeProperty">
@@ -920,7 +1256,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.IsSharedColumnSizeScope" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -937,9 +1273,24 @@
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether the gallery should keep the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedItem" /> synchronized with the current item in the <see cref="P:System.Windows.Controls.ItemsControl.Items" /> collection.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedItem" /> is always synchronized with the current item in the source collection; <see langword="false" /> if the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedItem" /> is never synchronized with the current item; <see langword="null" /> if the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedItem" /> is synchronized with the current item only if the gallery is bound to a <see cref="T:System.Windows.Data.CollectionViewSource" />. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_IsSynchronizedWithCurrentItem"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.IsSynchronizedWithCurrentItemProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSynchronizedWithCurrentItemProperty">
@@ -955,7 +1306,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.IsSynchronizedWithCurrentItem" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -972,9 +1323,23 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that specifies the maximum number of columns used to layout items in a gallery <see cref="P:System.Windows.Controls.ItemsControl.ItemsPanel" />.</summary>
+        <value>The maximum number of columns used to layout items in a gallery <see cref="P:System.Windows.Controls.ItemsControl.ItemsPanel" />. The registered default is <see cref="F:System.Int32.MaxValue" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_MaxColumnCount"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.MaxColumnCountProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxColumnCountProperty">
@@ -990,7 +1355,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.MaxColumnCount" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1007,9 +1372,23 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that specifies the minimum number of columns used to layout items in a gallery <see cref="P:System.Windows.Controls.ItemsControl.ItemsPanel" />.</summary>
+        <value>The minimum number of columns used to layout items in a gallery <see cref="P:System.Windows.Controls.ItemsControl.ItemsPanel" />.The registered default is 1. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_MinColumnCount"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.MinColumnCountProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MinColumnCountProperty">
@@ -1025,7 +1404,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.MinColumnCount" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1043,8 +1422,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Builds the visual tree for the <see cref="T:System.Windows.Controls.Ribbon.RibbonGallery" /> when a new template is applied.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is invoked whenever application code or an internal process, such as a rebuilding layout pass, calls the <xref:System.Windows.FrameworkElement.ApplyTemplate%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnCreateAutomationPeer">
@@ -1061,8 +1447,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a new <see cref="T:System.Windows.Automation.Peers.RibbonGalleryAutomationPeer" /> object for this control.</summary>
+        <returns>A new automation peer object for this control.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1082,8 +1468,8 @@
         <Parameter Name="e" Type="System.Windows.DependencyPropertyChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">Information about the change.</param>
+        <summary>Updates the old and new items when the highlighted item changes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1103,8 +1489,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">The event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.FrameworkElement.Initialized" /> event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1124,9 +1510,16 @@
         <Parameter Name="e" Type="System.Windows.DependencyPropertyChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">The event data.</param>
+        <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.IsKeyboardFocusWithinChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This implementation does not change the handled state (the <xref:System.Windows.RoutedEventArgs.Handled%2A> property) of the <xref:System.Windows.UIElement.IsKeyboardFocusWithinChanged> event data.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnItemsChanged">
@@ -1145,8 +1538,8 @@
         <Parameter Name="e" Type="System.Collections.Specialized.NotifyCollectionChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">Information about the change.</param>
+        <summary>Invoked when the <see cref="P:System.Windows.Controls.ItemsControl.Items" /> property changes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1167,9 +1560,9 @@
         <Parameter Name="newValue" Type="System.Collections.IEnumerable" />
       </Parameters>
       <Docs>
-        <param name="oldValue">To be added.</param>
-        <param name="newValue">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="oldValue">The old value of the <see cref="P:System.Windows.Controls.ItemsControl.ItemsSource" /> property.</param>
+        <param name="newValue">The new value of the <see cref="P:System.Windows.Controls.ItemsControl.ItemsSource" /> property.</param>
+        <summary>Invoked when the <see cref="P:System.Windows.Controls.ItemsControl.ItemsSource" /> property changes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1189,9 +1582,16 @@
         <Parameter Name="e" Type="System.Windows.Input.MouseEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">The event data.</param>
+        <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.MouseEnter" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This implementation does not change the handled state (the <xref:System.Windows.RoutedEventArgs.Handled%2A> property) of the <xref:System.Windows.UIElement.MouseEnter> event data.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnMouseLeave">
@@ -1210,9 +1610,16 @@
         <Parameter Name="e" Type="System.Windows.Input.MouseEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">The event data.</param>
+        <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.MouseLeave" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This implementation does not change the handled state (the <xref:System.Windows.RoutedEventArgs.Handled%2A> property) of the <xref:System.Windows.UIElement.MouseLeave> event data.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPreviewKeyDown">
@@ -1231,8 +1638,8 @@
         <Parameter Name="e" Type="System.Windows.Input.KeyEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">The event data.</param>
+        <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.PreviewKeyDown" /> event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1252,9 +1659,16 @@
         <Parameter Name="e" Type="System.Windows.RoutedPropertyChangedEventArgs&lt;System.Object&gt;" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">The event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Controls.Ribbon.RibbonGallery.SelectionChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called when the <xref:System.Windows.Controls.Ribbon.RibbonGallery.SelectedItem%2A> property changes.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PrepareContainerForItemOverride">
@@ -1274,10 +1688,17 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="element">The element that is used to display the item.</param>
+        <param name="item">The item to display from the <see cref="P:System.Windows.Controls.ItemsControl.Items" /> collection.</param>
+        <summary>Prepares the specified element to display the specified item.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method prepares a <xref:System.Windows.Controls.Ribbon.RibbonGalleryCategory> to display <xref:System.Windows.Controls.Ribbon.RibbonGalleryItem> objects.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PreviewCommandParameter">
@@ -1293,9 +1714,23 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a user-defined data value to pass to the command when it is previewed.</summary>
+        <value>A user-defined data value to pass to the command. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_PreviewCommandParameter"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.PreviewCommandParameterProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PreviewCommandParameterProperty">
@@ -1311,7 +1746,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.PreviewCommandParameter" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1328,9 +1763,23 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a unique identifier that links a ribbon control to a corresponding control in the Quick Access Toolbar.</summary>
+        <value>A unique identifier for a control in the Quick Access Toolbar.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_QuickAccessToolBarId"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.QuickAccessToolBarIdProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="QuickAccessToolBarIdProperty">
@@ -1346,7 +1795,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.QuickAccessToolBarId" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1363,9 +1812,23 @@
         <ReturnType>System.Windows.Controls.Ribbon.Ribbon</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a reference to the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> that this control belongs to.</summary>
+        <value>A reference to the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> that this control belongs to. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_Ribbon"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.RibbonProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RibbonProperty">
@@ -1381,7 +1844,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.Ribbon" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1401,8 +1864,8 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="item">The object to bring into view.</param>
+        <summary>Causes the object to scroll into view.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1419,9 +1882,23 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the currently selected item in the ribbon gallery.</summary>
+        <value>The currently selected item, or <see langword="null" /> if no item is selected. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_SelectedItem"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.SelectedItemProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectedItemProperty">
@@ -1437,7 +1914,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedItem" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1454,9 +1931,23 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the value of the property on the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedItem" /> that is specified by the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedValuePath" />.</summary>
+        <value>The value of the property on the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedItem" /> that is specified by the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedValuePath" />, or <see langword="null" /> if no item is selected. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_SelectedValue"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.SelectedValueProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectedValuePath">
@@ -1477,9 +1968,23 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the path that is used to get the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedValue" /> of the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedItem" /> in a <see cref="T:System.Windows.Controls.Ribbon.RibbonGallery" />.</summary>
+        <value>The path that is used to get the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedValue" /> of the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedItem" />. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_SelectedValuePath"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectedValuePathProperty">
@@ -1495,7 +2000,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedValuePath" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1512,7 +2017,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedValue" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1529,7 +2034,7 @@
         <ReturnType>System.Windows.RoutedPropertyChangedEventHandler&lt;System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedItem" /> property changes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1546,7 +2051,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="E:System.Windows.Controls.Ribbon.RibbonGallery.SelectionChanged" /> routed event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1563,9 +2068,23 @@
         <ReturnType>System.Windows.Media.ImageSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the image that is displayed on the control when the image size is set to <see cref="F:System.Windows.Controls.Ribbon.RibbonImageSize.Small" />.</summary>
+        <value>The image to display on the control. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_SmallImageSource"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.SmallImageSourceProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SmallImageSourceProperty">
@@ -1581,7 +2100,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.SmallImageSource" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1603,12 +2122,20 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="managerType">To be added.</param>
-        <param name="sender">To be added.</param>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="managerType">The type of the <see cref="T:System.Windows.WeakEventManager" /> calling this method.</param>
+        <param name="sender">The object that originated the event.</param>
+        <param name="e">The event data.</param>
+        <summary>Receives events from the centralized event manager.</summary>
+        <returns>
+          <see langword="true" /> if the listener handled the event. <see langword="false" /> if it receives an event that it does not recognize or handle.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.Ribbon.RibbonGallery> instance is cast to an <xref:System.Windows.IWeakEventListener> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToolTipDescription">
@@ -1624,9 +2151,26 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the descriptive text that is displayed in the ToolTip for this control.</summary>
+        <value>The descriptive text to display in the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!WARNING]
+>  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
+  
+<a name="dependencyPropertyInfo_ToolTipDescription"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.ToolTipDescriptionProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToolTipDescriptionProperty">
@@ -1642,7 +2186,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.ToolTipDescription" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1659,9 +2203,26 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the descriptive text that is displayed in the footer of the ToolTip for this control.</summary>
+        <value>The descriptive text to display in the footer of the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!WARNING]
+>  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
+  
+<a name="dependencyPropertyInfo_ToolTipFooterDescription"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.ToolTipFooterDescriptionProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToolTipFooterDescriptionProperty">
@@ -1677,7 +2238,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.ToolTipFooterDescription" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1694,9 +2255,26 @@
         <ReturnType>System.Windows.Media.ImageSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the image that is displayed in the footer of the ToolTip for this control.</summary>
+        <value>The image to display in the footer of the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!WARNING]
+>  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
+  
+<a name="dependencyPropertyInfo_ToolTipFooterImageSource"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.ToolTipFooterImageSourceProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToolTipFooterImageSourceProperty">
@@ -1712,7 +2290,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.ToolTipFooterImageSource" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1729,9 +2307,26 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the title text that is displayed in the footer of the ToolTip for this control.</summary>
+        <value>The title text to display in the footer of the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!WARNING]
+>  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
+  
+<a name="dependencyPropertyInfo_ToolTipFooterTitle"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.ToolTipFooterTitleProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToolTipFooterTitleProperty">
@@ -1747,7 +2342,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.ToolTipFooterTitle" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1764,9 +2359,26 @@
         <ReturnType>System.Windows.Media.ImageSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the image that is displayed in the ToolTip for this control.</summary>
+        <value>The image to display in the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!WARNING]
+>  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
+  
+<a name="dependencyPropertyInfo_ToolTipImageSource"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.ToolTipImageSourceProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToolTipImageSourceProperty">
@@ -1782,7 +2394,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.ToolTipImageSource" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1799,9 +2411,26 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the title text that is displayed in the ToolTip for this control.</summary>
+        <value>The title text to display in the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!WARNING]
+>  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
+  
+<a name="dependencyPropertyInfo_ToolTipTitle"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonGallery.ToolTipTitleProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToolTipTitleProperty">
@@ -1817,7 +2446,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.RibbonGallery.ToolTipTitle" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

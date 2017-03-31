@@ -1,79 +1,109 @@
 ---
 uid: System.Windows.Data.XmlNamespaceMappingCollection
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Data.XmlNamespaceMappingCollection.Contains(System.Windows.Data.XmlNamespaceMapping)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Data.XmlNamespaceMappingCollection.AddChild(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Data.XmlNamespaceMappingCollection.IsReadOnly
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Data.XmlNamespaceMappingCollection.AddText(System.String)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Data.XmlNamespaceMappingCollection.System#Windows#Markup#IAddChild#AddChild(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Data.XmlNamespaceMappingCollection.System#Windows#Markup#IAddChild#AddText(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Data.XmlNamespaceMappingCollection.Add(System.Windows.Data.XmlNamespaceMapping)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Data.XmlNamespaceMappingCollection.GetEnumerator
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Data.XmlNamespaceMappingCollection.Remove(System.Windows.Data.XmlNamespaceMapping)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Data.XmlNamespaceMappingCollection.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Data.XmlNamespaceMappingCollection.Count
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Data.XmlNamespaceMappingCollection.System#Collections#Generic#IEnumerable{System#Windows#Data#XmlNamespaceMapping}#GetEnumerator
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Data.XmlNamespaceMappingCollection.ProtectedGetEnumerator
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Data.XmlNamespaceMappingCollection.CopyTo(System.Windows.Data.XmlNamespaceMapping[],System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Data.XmlNamespaceMappingCollection.Clear
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -1,14 +1,19 @@
 ---
 uid: System.Windows.Forms.DataGridViewAutoSizeModeEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewAutoSizeModeEventArgs.PreviousModeAutoSized
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewAutoSizeModeEventArgs.#ctor(System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -1,14 +1,20 @@
 ---
 uid: System.Data.Common.CommandTrees.DbAggregate
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DbAggregate.ResultType
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DbAggregate.Arguments
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

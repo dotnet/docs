@@ -1,34 +1,54 @@
 ---
 uid: System.Dynamic.CallInfo
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+
+---
+uid: System.Dynamic.CallInfo.#ctor
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Dynamic.CallInfo.Equals(System.Object)
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Dynamic.CallInfo.ArgumentNames
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Dynamic.CallInfo.ArgumentCount
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Dynamic.CallInfo.#ctor(System.Int32,System.Collections.Generic.IEnumerable{System.String})
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Dynamic.CallInfo.GetHashCode
-internalonly: False
+ms.author: "billchi"
+manager: "douge"
 ---
 
 ---
 uid: System.Dynamic.CallInfo.#ctor(System.Int32,System.String[])
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---

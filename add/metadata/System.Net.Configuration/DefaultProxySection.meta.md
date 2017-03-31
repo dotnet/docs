@@ -1,34 +1,41 @@
 ---
 uid: System.Net.Configuration.DefaultProxySection
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.DefaultProxySection.Enabled
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.DefaultProxySection.UseDefaultCredentials
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.DefaultProxySection.Proxy
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.DefaultProxySection.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.DefaultProxySection.Module
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.DefaultProxySection.BypassList
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

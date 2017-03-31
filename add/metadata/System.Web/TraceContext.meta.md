@@ -1,54 +1,77 @@
 ---
 uid: System.Web.TraceContext
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.TraceContext.Warn(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.TraceContext.Write(System.String,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.TraceContext.TraceFinished
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.TraceContext.Warn(System.String,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.TraceContext.#ctor(System.Web.HttpContext)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.TraceContext.Warn(System.String,System.String,System.Exception)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.TraceContext.Write(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.TraceContext.Warn
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.TraceContext.Write
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.TraceContext.Write(System.String,System.String,System.Exception)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.TraceContext.IsEnabled
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.TraceContext.TraceMode
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

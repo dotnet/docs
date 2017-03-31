@@ -1,9 +1,9 @@
 ---
 uid: Microsoft.JScript.VBArrayConstructor
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.VBArrayConstructor.CreateInstance(System.Object[])
-internalonly: False
+ms.author: "mikejo"
 ---

@@ -21,8 +21,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the installer for a type that installs components.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The class used for the installer must implement the <xref:System.ComponentModel.Design.IDesigner> interface. Use the <xref:System.ComponentModel.InstallerTypeAttribute.InstallerType%2A> property to get the installer associated with this attribute.  
+  
+ For more information, see [Attributes](../Topic/Extending%20Metadata%20Using%20Attributes.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,8 +52,8 @@
         <Parameter Name="typeName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="typeName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="typeName">The name of a <see cref="T:System.Type" /> that represents the installer for the component this attribute is bound to. This class must implement <see cref="T:System.ComponentModel.Design.IDesigner" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.InstallerTypeAttribute" /> class with the name of the component's installer type.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,8 +75,8 @@
         <Parameter Name="installerType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="installerType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="installerType">A <see cref="T:System.Type" /> that represents the installer for the component this attribute is bound to. This class must implement <see cref="T:System.ComponentModel.Design.IDesigner" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.InstallerTypeAttribute" /> class, when given a <see cref="T:System.Type" /> that represents the installer for a component.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,9 +101,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The object to test the value equality of.</param>
+        <summary>Returns whether the value of the given object is equal to the current <see cref="T:System.ComponentModel.InstallerTypeAttribute" />.</summary>
+        <returns>
+          <see langword="true" /> if the value of the given object is equal to that of the current; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,8 +127,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hashcode for this object.</summary>
+        <returns>A hash code for the current <see cref="T:System.ComponentModel.InstallerTypeAttribute" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,8 +150,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type of installer associated with this attribute.</summary>
+        <value>A <see cref="T:System.Type" /> that represents the type of installer associated with this attribute, or <see langword="null" /> if an installer does not exist.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

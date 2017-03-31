@@ -1,29 +1,41 @@
 ---
 uid: System.Activities.RuntimeDelegateArgument
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.RuntimeDelegateArgument.Name
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.RuntimeDelegateArgument.BoundArgument
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.RuntimeDelegateArgument.Direction
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.RuntimeDelegateArgument.Type
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.RuntimeDelegateArgument.#ctor(System.String,System.Type,System.Activities.ArgumentDirection,System.Activities.DelegateArgument)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

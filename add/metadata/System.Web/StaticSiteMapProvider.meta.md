@@ -1,49 +1,67 @@
 ---
 uid: System.Web.StaticSiteMapProvider
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.StaticSiteMapProvider.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.StaticSiteMapProvider.FindSiteMapNode
 ---
 
 ---
 uid: System.Web.StaticSiteMapProvider.GetParentNode(System.Web.SiteMapNode)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.StaticSiteMapProvider.AddNode(System.Web.SiteMapNode,System.Web.SiteMapNode)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.StaticSiteMapProvider.RemoveNode(System.Web.SiteMapNode)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.StaticSiteMapProvider.BuildSiteMap
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.StaticSiteMapProvider.GetChildNodes(System.Web.SiteMapNode)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.StaticSiteMapProvider.FindSiteMapNode(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.StaticSiteMapProvider.AddNode
 ---
 
 ---
 uid: System.Web.StaticSiteMapProvider.FindSiteMapNodeFromKey(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.StaticSiteMapProvider.Clear
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -1,79 +1,95 @@
 ---
 uid: System.Web.UI.MobileControls.Calendar
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.Calendar.SelectedDate
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.Calendar.SelectionChanged
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.Calendar.OnSelectionChanged
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.Calendar.RaisePostBackEvent(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.Calendar.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.Calendar.System#Web#UI#IPostBackEventHandler#RaisePostBackEvent(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.Calendar.RaiseSelectionChangedEvent
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.Calendar.WebCalendar
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.Calendar.VisibleDate
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.Calendar.CreateWebCalendar
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.Calendar.SelectionMode
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.Calendar.FirstDayOfWeek
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.Calendar.CalendarEntryText
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.Calendar.SelectedDates
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.Calendar.ShowDayHeader
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

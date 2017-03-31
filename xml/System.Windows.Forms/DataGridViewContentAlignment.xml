@@ -10,8 +10,23 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines constants that indicate the alignment of content within a <see cref="T:System.Windows.Forms.DataGridView" /> cell.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the <xref:System.Windows.Forms.DataGridViewCellStyle.Alignment%2A?displayProperty=fullName> property.  
+  
+   
+  
+## Examples  
+ The following code example illustrates the use of this type. For more information, see [How to: Format Data in the Windows Forms DataGridView Control](../Topic/How%20to:%20Format%20Data%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+  
+ [!code-csharp[System.Windows.Forms.DataGridViewMisc#072](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/CS/datagridviewmisc.cs#072)]
+ [!code-vb[System.Windows.Forms.DataGridViewMisc#072](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#072)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="BottomCenter">
@@ -27,7 +42,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewContentAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The content is aligned vertically at the bottom and horizontally at the center of a cell.</summary>
       </Docs>
     </Member>
     <Member MemberName="BottomLeft">
@@ -43,7 +58,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewContentAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The content is aligned vertically at the bottom and horizontally at the left of a cell.</summary>
       </Docs>
     </Member>
     <Member MemberName="BottomRight">
@@ -59,7 +74,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewContentAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The content is aligned vertically at the bottom and horizontally at the right of a cell.</summary>
       </Docs>
     </Member>
     <Member MemberName="MiddleCenter">
@@ -75,7 +90,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewContentAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The content is aligned at the vertical and horizontal center of a cell.</summary>
       </Docs>
     </Member>
     <Member MemberName="MiddleLeft">
@@ -91,7 +106,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewContentAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The content is aligned vertically at the middle and horizontally at the left of a cell.</summary>
       </Docs>
     </Member>
     <Member MemberName="MiddleRight">
@@ -107,7 +122,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewContentAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The content is aligned vertically at the middle and horizontally at the right of a cell.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotSet">
@@ -123,7 +138,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewContentAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The alignment is not set.</summary>
       </Docs>
     </Member>
     <Member MemberName="TopCenter">
@@ -139,7 +154,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewContentAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The content is aligned vertically at the top and horizontally at the center of a cell.</summary>
       </Docs>
     </Member>
     <Member MemberName="TopLeft">
@@ -155,7 +170,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewContentAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The content is aligned vertically at the top and horizontally at the left of a cell.</summary>
       </Docs>
     </Member>
     <Member MemberName="TopRight">
@@ -171,7 +186,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewContentAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The content is aligned vertically at the top and horizontally at the right of a cell.</summary>
       </Docs>
     </Member>
   </Members>

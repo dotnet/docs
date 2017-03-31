@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the visual state of a combo box that is drawn with visual styles.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.ComboBoxState> values correspond to the states of the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> objects exposed by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ComboBox.DropDownButton> class. The <xref:System.Windows.Forms.VisualStyles.ComboBoxState> values are also used as an argument in the <xref:System.Windows.Forms.ComboBoxRenderer.DrawDropDownButton%2A?displayProperty=fullName> and <xref:System.Windows.Forms.ComboBoxRenderer.DrawTextBox%2A?displayProperty=fullName> methods.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Disabled">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.ComboBoxState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The combo box is disabled.</summary>
       </Docs>
     </Member>
     <Member MemberName="Hot">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.ComboBoxState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The combo box is hot.</summary>
       </Docs>
     </Member>
     <Member MemberName="Normal">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.ComboBoxState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The combo box has the default appearance.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pressed">
@@ -75,7 +82,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.ComboBoxState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The combo box is pressed.</summary>
       </Docs>
     </Member>
   </Members>

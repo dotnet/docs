@@ -1,64 +1,97 @@
 ---
 uid: System.Diagnostics.SymbolStore.SymVariable
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.SymbolStore.SymVariable.StartOffset
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.SymbolStore.SymVariable.Finalize
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.SymbolStore.SymVariable.Name
-internalonly: False
----
-
----
-uid: System.Diagnostics.SymbolStore.SymVariable.AddressField3
-internalonly: False
----
-
----
-uid: System.Diagnostics.SymbolStore.SymVariable.AddressField1
-internalonly: False
----
-
----
-uid: System.Diagnostics.SymbolStore.SymVariable.Dispose(System.Boolean)
-internalonly: False
----
-
----
-uid: System.Diagnostics.SymbolStore.SymVariable.AddressKind
-internalonly: False
----
-
----
-uid: System.Diagnostics.SymbolStore.SymVariable.EndOffset
-internalonly: False
----
-
----
-uid: System.Diagnostics.SymbolStore.SymVariable.Attributes
-internalonly: False
----
-
----
-uid: System.Diagnostics.SymbolStore.SymVariable.AddressField2
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.SymbolStore.SymVariable.Dispose
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.SymbolStore.SymVariable.AddressField3
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.SymbolStore.SymVariable.AddressField1
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.SymbolStore.SymVariable.Dispose(System.Boolean)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.SymbolStore.SymVariable.AddressKind
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.SymbolStore.SymVariable.EndOffset
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.SymbolStore.SymVariable.Attributes
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.SymbolStore.SymVariable.AddressField2
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.SymbolStore.SymVariable.Dispose
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.SymbolStore.SymVariable.GetSignature
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

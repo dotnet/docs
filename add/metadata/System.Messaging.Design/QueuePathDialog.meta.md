@@ -1,44 +1,49 @@
 ---
 uid: System.Messaging.Design.QueuePathDialog
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Design.QueuePathDialog.#ctor(System.Windows.Forms.Design.IUIService)
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Design.QueuePathDialog.ChoosePath
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Design.QueuePathDialog.#ctor(System.IServiceProvider)
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Design.QueuePathDialog.OnHandleCreated(System.EventArgs)
-internalonly: False
+manager: "tyoung"
+---
+
+---
+uid: System.Messaging.Design.QueuePathDialog.#ctor
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Design.QueuePathDialog.SelectQueue(System.Messaging.MessageQueue)
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Design.QueuePathDialog.OnFormClosing(System.Windows.Forms.FormClosingEventArgs)
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Design.QueuePathDialog.DoubleClicked(System.Object,System.EventArgs)
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Design.QueuePathDialog.Path
-internalonly: False
+manager: "tyoung"
 ---

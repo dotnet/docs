@@ -1,59 +1,90 @@
 ---
 uid: System.ServiceModel.Discovery.DiscoveryMessageSequence
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.DiscoveryMessageSequence.Equals(System.Object)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.DiscoveryMessageSequence.ToString
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.DiscoveryMessageSequence.MessageNumber
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.DiscoveryMessageSequence.InstanceId
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.DiscoveryMessageSequence.CompareTo(System.ServiceModel.Discovery.DiscoveryMessageSequence)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.DiscoveryMessageSequence.SequenceId
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Discovery.DiscoveryMessageSequence.Equals
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.DiscoveryMessageSequence.GetHashCode
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.DiscoveryMessageSequence.Equals(System.ServiceModel.Discovery.DiscoveryMessageSequence)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.DiscoveryMessageSequence.CanCompareTo(System.ServiceModel.Discovery.DiscoveryMessageSequence)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.DiscoveryMessageSequence.op_Inequality(System.ServiceModel.Discovery.DiscoveryMessageSequence,System.ServiceModel.Discovery.DiscoveryMessageSequence)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.DiscoveryMessageSequence.op_Equality(System.ServiceModel.Discovery.DiscoveryMessageSequence,System.ServiceModel.Discovery.DiscoveryMessageSequence)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

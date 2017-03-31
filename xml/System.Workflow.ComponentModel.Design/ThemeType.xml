@@ -15,8 +15,23 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the type of theme displayed in the **Options** dialog box.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ The user can modify UserDefined themes in the workflow designer, but cannot modify Default or System themes in that context.  
+  
+ The **Options** dialog box appears when a user right-clicks the workflow design surface and selects **Select Custom Theme…**. The Default and System categories are listed under the **Standard Themes** header in the selection window, while the UserDefined category, which contains any themes created by the user, are listed under the **User Defined Themes** header.  
+  
+ Themes define the background, foreground, text, icon and other styles used to render a workflow on the workflow design surface.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Default">
@@ -32,7 +47,7 @@
         <ReturnType>System.Workflow.ComponentModel.Design.ThemeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The theme settings are provided by the default workflow theme.</summary>
       </Docs>
     </Member>
     <Member MemberName="System">
@@ -48,7 +63,7 @@
         <ReturnType>System.Workflow.ComponentModel.Design.ThemeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The theme settings are provided by the operating system.</summary>
       </Docs>
     </Member>
     <Member MemberName="UserDefined">
@@ -64,7 +79,7 @@
         <ReturnType>System.Workflow.ComponentModel.Design.ThemeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The theme settings are provided by user-defined themes.</summary>
       </Docs>
     </Member>
   </Members>

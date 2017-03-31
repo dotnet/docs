@@ -1,4 +1,6 @@
 ---
 uid: System.Diagnostics.SymbolStore
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

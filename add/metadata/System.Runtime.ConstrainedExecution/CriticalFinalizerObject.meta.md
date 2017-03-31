@@ -1,14 +1,20 @@
 ---
 uid: System.Runtime.ConstrainedExecution.CriticalFinalizerObject
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.ConstrainedExecution.CriticalFinalizerObject.#ctor
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.ConstrainedExecution.CriticalFinalizerObject.Finalize
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

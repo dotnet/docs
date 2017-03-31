@@ -1,59 +1,83 @@
 ---
 uid: System.ServiceModel.Activities.Configuration.SqlWorkflowInstanceStoreElement
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Configuration.SqlWorkflowInstanceStoreElement.BehaviorType
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Configuration.SqlWorkflowInstanceStoreElement.CreateBehavior
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Configuration.SqlWorkflowInstanceStoreElement.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Configuration.SqlWorkflowInstanceStoreElement.HostLockRenewalPeriod
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Configuration.SqlWorkflowInstanceStoreElement.RunnableInstancesDetectionPeriod
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Configuration.SqlWorkflowInstanceStoreElement.MaxConnectionRetries
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Configuration.SqlWorkflowInstanceStoreElement.ConnectionStringName
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Configuration.SqlWorkflowInstanceStoreElement.ConnectionString
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Configuration.SqlWorkflowInstanceStoreElement.InstanceLockedExceptionAction
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Configuration.SqlWorkflowInstanceStoreElement.InstanceCompletionAction
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Configuration.SqlWorkflowInstanceStoreElement.InstanceEncodingOption
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

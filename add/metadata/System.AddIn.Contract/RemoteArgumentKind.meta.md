@@ -1,4 +1,6 @@
 ---
 uid: System.AddIn.Contract.RemoteArgumentKind
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

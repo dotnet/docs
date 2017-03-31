@@ -10,8 +10,27 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Identifies the various parts of a selection adorner on an <see cref="T:System.Windows.Controls.InkCanvas" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.InkCanvas.HitTestSelection%2A> method returns an <xref:System.Windows.Controls.InkCanvasSelectionHitResult> to indicate which part of the selection adorner intersects or surrounds a <xref:System.Windows.Point>. This is useful when performing drag-and-drop operations.  
+  
+<a name="xamlTextUsage_InkCanvasSelectionHitResult"></a>   
+## XAML Text Usage  
+ This class is not typically used in XAML.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how use <xref:System.Windows.Controls.InkCanvas.HitTestSelection%2A> to determine whether to create a <xref:System.Windows.DataObject> to initiate drag and drop.  To implement drag and drop between two <xref:System.Windows.Controls.InkCanvas> objects, see [How to: Drag and Drop Ink](../Topic/How%20to:%20Drag%20and%20Drop%20Ink.md).  
+  
+ [!code-csharp[InkDragDrop#3](~/samples/snippets/csharp/VS_Snippets_Wpf/InkDragDrop/CSharp/Window1.xaml.cs#3)]
+ [!code-vb[InkDragDrop#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InkDragDrop/VisualBasic/Window1.xaml.vb#3)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Bottom">
@@ -27,7 +46,7 @@
         <ReturnType>System.Windows.Controls.InkCanvasSelectionHitResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The lower middle handle of the selection adorner.</summary>
       </Docs>
     </Member>
     <Member MemberName="BottomLeft">
@@ -43,7 +62,7 @@
         <ReturnType>System.Windows.Controls.InkCanvasSelectionHitResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The lower left handle of the selection adorner.</summary>
       </Docs>
     </Member>
     <Member MemberName="BottomRight">
@@ -59,7 +78,7 @@
         <ReturnType>System.Windows.Controls.InkCanvasSelectionHitResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The lower right handle of the selection adorner.</summary>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -75,7 +94,7 @@
         <ReturnType>System.Windows.Controls.InkCanvasSelectionHitResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The middle handle on the left edge of the selection adorner.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -91,7 +110,7 @@
         <ReturnType>System.Windows.Controls.InkCanvasSelectionHitResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No part of the selection adorner.</summary>
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -107,7 +126,7 @@
         <ReturnType>System.Windows.Controls.InkCanvasSelectionHitResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The middle handle on the right edge of the selection adorner.</summary>
       </Docs>
     </Member>
     <Member MemberName="Selection">
@@ -123,7 +142,7 @@
         <ReturnType>System.Windows.Controls.InkCanvasSelectionHitResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The area within the bounds of the selection adorner.</summary>
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -139,7 +158,7 @@
         <ReturnType>System.Windows.Controls.InkCanvasSelectionHitResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The upper middle handle of the selection adorner.</summary>
       </Docs>
     </Member>
     <Member MemberName="TopLeft">
@@ -155,7 +174,7 @@
         <ReturnType>System.Windows.Controls.InkCanvasSelectionHitResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The upper left handle of the selection adorner.</summary>
       </Docs>
     </Member>
     <Member MemberName="TopRight">
@@ -171,7 +190,7 @@
         <ReturnType>System.Windows.Controls.InkCanvasSelectionHitResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The upper right handle of the selection adorner.</summary>
       </Docs>
     </Member>
   </Members>

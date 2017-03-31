@@ -1,9 +1,13 @@
 ---
 uid: System.ServiceModel.Configuration.DelegatingHandlerElementCollection
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.DelegatingHandlerElementCollection.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

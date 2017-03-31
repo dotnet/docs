@@ -24,8 +24,26 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies changes to watch for in a file or folder.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can combine the members of this enumeration to watch for more than one kind of change. For example, you can watch for changes in the size of a file or folder, and for changes in security settings. This raises an event anytime there is a change in size or security settings of a file or folder.  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.IO.FileSystemWatcher> to watch the directory that is specified at runtime. The component is set to watch for any changes in LastWrite and LastAccess time, the creation, deletion, or renaming of text files in the directory. If a file is changed, created, or deleted, the path to the file prints to the console. When a file is renamed, the old and new paths print to the console.  
+  
+ Use the <xref:System.Diagnostics> and <xref:System.IO> namespaces for this example.  
+  
+ [!code-cpp[Classic NotifyFilters Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic NotifyFilters Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic NotifyFilters Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic NotifyFilters Example/CS/source.cs#1)]
+ [!code-vb[Classic NotifyFilters Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic NotifyFilters Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Attributes">
@@ -50,7 +68,7 @@
         <ReturnType>System.IO.NotifyFilters</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The attributes of the file or folder.</summary>
       </Docs>
     </Member>
     <Member MemberName="CreationTime">
@@ -75,7 +93,7 @@
         <ReturnType>System.IO.NotifyFilters</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The time the file or folder was created.</summary>
       </Docs>
     </Member>
     <Member MemberName="DirectoryName">
@@ -100,7 +118,7 @@
         <ReturnType>System.IO.NotifyFilters</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The name of the directory.</summary>
       </Docs>
     </Member>
     <Member MemberName="FileName">
@@ -125,7 +143,7 @@
         <ReturnType>System.IO.NotifyFilters</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The name of the file.</summary>
       </Docs>
     </Member>
     <Member MemberName="LastAccess">
@@ -150,7 +168,7 @@
         <ReturnType>System.IO.NotifyFilters</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The date the file or folder was last opened.</summary>
       </Docs>
     </Member>
     <Member MemberName="LastWrite">
@@ -175,7 +193,7 @@
         <ReturnType>System.IO.NotifyFilters</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The date the file or folder last had anything written to it.</summary>
       </Docs>
     </Member>
     <Member MemberName="Security">
@@ -200,7 +218,7 @@
         <ReturnType>System.IO.NotifyFilters</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The security settings of the file or folder.</summary>
       </Docs>
     </Member>
     <Member MemberName="Size">
@@ -225,7 +243,7 @@
         <ReturnType>System.IO.NotifyFilters</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The size of the file or folder.</summary>
       </Docs>
     </Member>
   </Members>

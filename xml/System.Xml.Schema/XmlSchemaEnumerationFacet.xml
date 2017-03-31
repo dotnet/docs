@@ -16,8 +16,23 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the <see langword="enumeration" /> facet from XML Schema as specified by the World Wide Web Consortium (W3C). This class specifies a list of valid values for a simpleType element. Declaration is contained within a <see langword="restriction" /> declaration.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows the use of the `XmlSchemaEnumerationFacet` class.  
+  
+ [!code-cpp[Classic WebData XmlSchemaEnumerationFacet Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlSchemaEnumerationFacet Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic WebData XmlSchemaEnumerationFacet Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlSchemaEnumerationFacet Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData XmlSchemaEnumerationFacet Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlSchemaEnumerationFacet Example/VB/source.vb#1)]  
+  
+ The following XML file is generated for the preceding code example.  
+  
+ [!code-xml[Classic WebData XmlSchemaEnumerationFacet Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlSchemaEnumerationFacet Example/XML/source.xml#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,7 +51,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Schema.XmlSchemaEnumerationFacet" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

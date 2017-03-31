@@ -1,49 +1,69 @@
 ---
 uid: System.Security.RightsManagement.PublishLicense
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.RightsManagement.PublishLicense.ContentId
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.RightsManagement.PublishLicense.AcquireUseLicense(System.Security.RightsManagement.SecureEnvironment)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.RightsManagement.PublishLicense.UseLicenseAcquisitionUrl
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.RightsManagement.PublishLicense.#ctor(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.RightsManagement.PublishLicense.ReferralInfoName
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.RightsManagement.PublishLicense.ReferralInfoUri
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.RightsManagement.PublishLicense.ToString
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.RightsManagement.PublishLicense.DecryptUnsignedPublishLicense(System.Security.RightsManagement.CryptoProvider)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.RightsManagement.PublishLicense.AcquireUseLicenseNoUI(System.Security.RightsManagement.SecureEnvironment)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

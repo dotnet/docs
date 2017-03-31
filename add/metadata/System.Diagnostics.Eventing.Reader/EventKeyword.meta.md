@@ -1,19 +1,23 @@
 ---
 uid: System.Diagnostics.Eventing.Reader.EventKeyword
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventKeyword.Name
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventKeyword.DisplayName
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventKeyword.Value
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---

@@ -1,29 +1,35 @@
 ---
 uid: System.Configuration.DpapiProtectedConfigurationProvider
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.DpapiProtectedConfigurationProvider.Encrypt(System.Xml.XmlNode)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.DpapiProtectedConfigurationProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.DpapiProtectedConfigurationProvider.UseMachineProtection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.DpapiProtectedConfigurationProvider.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.DpapiProtectedConfigurationProvider.Decrypt(System.Xml.XmlNode)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

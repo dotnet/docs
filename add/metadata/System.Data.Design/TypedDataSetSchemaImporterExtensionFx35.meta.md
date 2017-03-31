@@ -1,9 +1,13 @@
 ---
 uid: System.Data.Design.TypedDataSetSchemaImporterExtensionFx35
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Design.TypedDataSetSchemaImporterExtensionFx35.#ctor
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

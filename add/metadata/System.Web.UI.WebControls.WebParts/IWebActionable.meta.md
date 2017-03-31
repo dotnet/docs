@@ -1,9 +1,13 @@
 ---
 uid: System.Web.UI.WebControls.WebParts.IWebActionable
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.WebParts.IWebActionable.Verbs
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

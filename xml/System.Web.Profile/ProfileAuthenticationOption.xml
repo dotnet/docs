@@ -10,8 +10,26 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Describes the authentication type of user profiles to be searched.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Profile.ProfileAuthenticationOption> enumeration is used by profile providers and the <xref:System.Web.Profile.ProfileManager> class when they search for profiles in the data source and when they delete them. The <xref:System.Web.Profile.ProfileAuthenticationOption> enumeration is used to select whether only anonymous, only authenticated, or all profiles are searched.  
+  
+   
+  
+## Examples  
+ The following code example allows a user to view and delete active and inactive profiles information based on search criteria including a <xref:System.Web.Profile.ProfileAuthenticationOption> parameter.  
+  
+> [!IMPORTANT]
+>  This example includes a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](../Topic/Script%20Exploits%20Overview.md).  
+  
+ [!code-csharp[System.Web.Profile.ProfileManager#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/CS/FindProfilesByUserNamecs.aspx#5)]
+ [!code-vb[System.Web.Profile.ProfileManager#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/VB/FindProfilesByUserNamevb.aspx#5)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="All">
@@ -27,7 +45,7 @@
         <ReturnType>System.Web.Profile.ProfileAuthenticationOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Search all profiles.</summary>
       </Docs>
     </Member>
     <Member MemberName="Anonymous">
@@ -43,7 +61,7 @@
         <ReturnType>System.Web.Profile.ProfileAuthenticationOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Search only anonymous profiles.</summary>
       </Docs>
     </Member>
     <Member MemberName="Authenticated">
@@ -59,7 +77,7 @@
         <ReturnType>System.Web.Profile.ProfileAuthenticationOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Search only authenticated profiles.</summary>
       </Docs>
     </Member>
   </Members>

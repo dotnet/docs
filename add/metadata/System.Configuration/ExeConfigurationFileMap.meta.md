@@ -1,34 +1,55 @@
 ---
 uid: System.Configuration.ExeConfigurationFileMap
-internalonly: False
----
-
----
-uid: System.Configuration.ExeConfigurationFileMap.RoamingUserConfigFilename
-internalonly: False
----
-
----
-uid: System.Configuration.ExeConfigurationFileMap.LocalUserConfigFilename
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ExeConfigurationFileMap.#ctor
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.ExeConfigurationFileMap.RoamingUserConfigFilename
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.ExeConfigurationFileMap.LocalUserConfigFilename
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.ExeConfigurationFileMap.#ctor
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ExeConfigurationFileMap.#ctor(System.String)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ExeConfigurationFileMap.ExeConfigFilename
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ExeConfigurationFileMap.Clone
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

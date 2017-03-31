@@ -1,14 +1,20 @@
 ---
 uid: System.Web.Services.Protocols.HttpPostClientProtocol
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Protocols.HttpPostClientProtocol.GetWebRequest(System.Uri)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Protocols.HttpPostClientProtocol.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

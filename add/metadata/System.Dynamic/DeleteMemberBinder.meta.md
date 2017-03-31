@@ -1,39 +1,63 @@
 ---
 uid: System.Dynamic.DeleteMemberBinder
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Dynamic.DeleteMemberBinder.IgnoreCase
-internalonly: False
+ms.author: "billchi"
+manager: "douge"
 ---
 
 ---
 uid: System.Dynamic.DeleteMemberBinder.ReturnType
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Dynamic.DeleteMemberBinder.#ctor(System.String,System.Boolean)
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+
+---
+uid: System.Dynamic.DeleteMemberBinder.Bind
 ---
 
 ---
 uid: System.Dynamic.DeleteMemberBinder.FallbackDeleteMember(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject)
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Dynamic.DeleteMemberBinder.Bind(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject[])
-internalonly: False
+ms.author: "billchi"
+manager: "douge"
 ---
 
 ---
 uid: System.Dynamic.DeleteMemberBinder.FallbackDeleteMember(System.Dynamic.DynamicMetaObject)
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Dynamic.DeleteMemberBinder.Name
-internalonly: False
+ms.author: "billchi"
+manager: "douge"
+---
+
+---
+uid: System.Dynamic.DeleteMemberBinder.FallbackDeleteMember
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---

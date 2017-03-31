@@ -1,19 +1,34 @@
 ---
 uid: System.ServiceModel.Dispatcher.EndpointNameMessageFilter
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.EndpointNameMessageFilter.#ctor(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Dispatcher.EndpointNameMessageFilter.Match
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.EndpointNameMessageFilter.Match(System.ServiceModel.Channels.MessageBuffer)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.EndpointNameMessageFilter.Match(System.ServiceModel.Channels.Message)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -1,14 +1,20 @@
 ---
 uid: System.AssemblyLoadEventArgs
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.AssemblyLoadEventArgs.#ctor(System.Reflection.Assembly)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.AssemblyLoadEventArgs.LoadedAssembly
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

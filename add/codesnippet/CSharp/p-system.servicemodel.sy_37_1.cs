@@ -1,2 +1,0 @@
-            SyndicationFeed feed = new SyndicationFeed("Feed Title", "Feed Description", new Uri("http://Feed/Alternate/Link"), "FeedID", DateTime.Now);
-            feed.Copyright = new TextSyndicationContent("Copyright 2007");

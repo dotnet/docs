@@ -1,24 +1,41 @@
 ---
 uid: System.Deployment.Application.TrustNotGrantedException
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Deployment.Application.TrustNotGrantedException.#ctor(System.String,System.Exception)
-internalonly: False
----
-
----
-uid: System.Deployment.Application.TrustNotGrantedException.#ctor(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Deployment.Application.TrustNotGrantedException.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Deployment.Application.TrustNotGrantedException.#ctor(System.String)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Deployment.Application.TrustNotGrantedException.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Deployment.Application.TrustNotGrantedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

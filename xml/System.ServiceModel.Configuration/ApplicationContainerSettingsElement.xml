@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies settings for the application container settings element.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.ApplicationContainerSettingsElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +51,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the full name of the package.</summary>
+        <value>The full name of the package.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,8 +95,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the unique session identifier for the <see cref="T:System.ServiceModel.Configuration.ApplicationContainerSettingsElement" />.</summary>
+        <value>The unique session identifier.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

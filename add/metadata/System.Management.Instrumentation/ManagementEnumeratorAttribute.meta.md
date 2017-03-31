@@ -1,14 +1,14 @@
 ---
 uid: System.Management.Instrumentation.ManagementEnumeratorAttribute
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.ManagementEnumeratorAttribute.Schema
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.ManagementEnumeratorAttribute.#ctor
-internalonly: False
+manager: "jillfra"
 ---

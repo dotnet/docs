@@ -1,2 +1,0 @@
-MyCookieCollection.Clear();
-    

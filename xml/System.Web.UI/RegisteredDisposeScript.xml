@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides access to a <see langword="dispose" /> script for a control that is inside an <see cref="T:System.Web.UI.UpdatePanel" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `dispose` script executes when the <xref:System.Web.UI.UpdatePanel> control is updated or deleted.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Control">
@@ -28,8 +35,8 @@
         <ReturnType>System.Web.UI.Control</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the control that registered the <see langword="dispose" /> script.</summary>
+        <value>A reference to the control that registered the <see langword="dispose" /> script.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +53,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the <see langword="dispose" /> script.</summary>
+        <value>The name of the <see langword="dispose" /> script.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

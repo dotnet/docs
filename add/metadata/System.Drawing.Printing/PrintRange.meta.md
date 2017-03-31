@@ -1,4 +1,6 @@
 ---
 uid: System.Drawing.Printing.PrintRange
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

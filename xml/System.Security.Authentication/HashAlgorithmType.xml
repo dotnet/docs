@@ -19,8 +19,23 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the algorithm used for generating message authentication codes (MACs).</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration specifies valid values for the <xref:System.Net.Security.SslStream.HashAlgorithm%2A?displayProperty=fullName> property.  
+  
+   
+  
+## Examples  
+ The following example displays the properties of an <xref:System.Net.Security.SslStream> after authentication has succeeded.  
+  
+ [!code-cpp[NCLSslClientAsync#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslClientAsync/CPP/NclSslClientAsync.cpp#3)]
+ [!code-csharp[NCLSslClientAsync#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslClientAsync/CS/clientasync.cs#3)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Md5">
@@ -45,7 +60,7 @@
         <ReturnType>System.Security.Authentication.HashAlgorithmType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Message Digest 5 (MD5) hashing algorithm.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -70,7 +85,7 @@
         <ReturnType>System.Security.Authentication.HashAlgorithmType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No hashing algorithm is used.</summary>
       </Docs>
     </Member>
     <Member MemberName="Sha1">
@@ -95,7 +110,7 @@
         <ReturnType>System.Security.Authentication.HashAlgorithmType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Secure Hashing Algorithm (SHA1).</summary>
       </Docs>
     </Member>
     <Member MemberName="Sha256">
@@ -111,7 +126,7 @@
         <ReturnType>System.Security.Authentication.HashAlgorithmType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Secure Hashing Algorithm 2 (SHA-2), using a 256-bit digest.</summary>
       </Docs>
     </Member>
     <Member MemberName="Sha384">
@@ -127,7 +142,7 @@
         <ReturnType>System.Security.Authentication.HashAlgorithmType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Secure Hashing Algorithm 2 (SHA-2), using a 384-bit digest.</summary>
       </Docs>
     </Member>
     <Member MemberName="Sha512">
@@ -143,7 +158,7 @@
         <ReturnType>System.Security.Authentication.HashAlgorithmType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Secure Hashing Algorithm 2 (SHA-2), using a 512-bit digest.</summary>
       </Docs>
     </Member>
   </Members>

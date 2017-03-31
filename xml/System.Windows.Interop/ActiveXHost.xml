@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Hosts an ActiveX control as an element within Windows Presentation Foundation (WPF) content.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Interop.ActiveXHost> class to host an ActiveX control as a <xref:System.Windows.FrameworkElement>. Currently, support is limited to windowed controls.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="BuildWindowCore">
@@ -36,9 +43,9 @@
         <Parameter Name="hwndParent" Type="System.Runtime.InteropServices.HandleRef" />
       </Parameters>
       <Docs>
-        <param name="hwndParent">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="hwndParent">The parent window.</param>
+        <summary>Creates the <see cref="T:System.Windows.Interop.ActiveXHost" /> window and assigns it to a parent.</summary>
+        <returns>A <see cref="T:System.Runtime.InteropServices.HandleRef" /> to the <see cref="T:System.Windows.Interop.ActiveXHost" /> window.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,8 +65,8 @@
         <Parameter Name="hwnd" Type="System.Runtime.InteropServices.HandleRef" />
       </Parameters>
       <Docs>
-        <param name="hwnd">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="hwnd">A structure that contains the window handle.</param>
+        <summary>Destroys the hosted window.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,8 +86,9 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources that are used by the <see cref="T:System.Windows.Interop.ActiveXHost" /> and optionally releases the managed resources.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,8 +105,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the <see cref="M:System.Windows.Interop.ActiveXHost.Dispose(System.Boolean)" /> method has been called on the <see cref="T:System.Windows.Interop.ActiveXHost" /> instance.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Interop.ActiveXHost" /> instance has been disposed; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,9 +127,9 @@
         <Parameter Name="swConstraint" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="swConstraint">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="swConstraint">The size of the <see cref="T:System.Windows.Interop.HwndHost" /> object.</param>
+        <summary>Returns the size of the window represented by the <see cref="T:System.Windows.Interop.HwndHost" /> object, as requested by layout engine operations.</summary>
+        <returns>The size of the <see cref="T:System.Windows.Interop.HwndHost" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,8 +149,8 @@
         <Parameter Name="args" Type="System.Windows.Input.AccessKeyEventArgs" />
       </Parameters>
       <Docs>
-        <param name="args">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="args">The event data to the access key event. The event data reports which key was invoked, and indicate whether the <see cref="T:System.Windows.Input.AccessKeyManager" /> object that controls the sending of these events also sent this access key invocation to other elements.</param>
+        <summary>Provides class handling for when an access key that is meaningful for this element is invoked.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -161,8 +170,8 @@
         <Parameter Name="e" Type="System.Windows.DependencyPropertyChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">The event data that describes the property that changed, as well as old and new values.</param>
+        <summary>Invoked whenever the effective value of any dependency property on this <see cref="T:System.Windows.FrameworkElement" /> has been updated. The specific dependency property that changed is reported in the arguments parameter. Overrides <see cref="M:System.Windows.DependencyObject.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -187,8 +196,8 @@
         <Parameter Name="bounds" Type="System.Windows.Rect" />
       </Parameters>
       <Docs>
-        <param name="bounds">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="bounds">The window's position.</param>
+        <summary>Called when the hosted window's position changes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

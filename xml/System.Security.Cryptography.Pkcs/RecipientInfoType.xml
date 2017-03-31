@@ -15,7 +15,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.Security.Cryptography.Pkcs.RecipientInfoType" /> enumeration defines the types of recipient information.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,7 +37,7 @@
         <ReturnType>System.Security.Cryptography.Pkcs.RecipientInfoType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Key agreement recipient information.</summary>
       </Docs>
     </Member>
     <Member MemberName="KeyTransport">
@@ -58,7 +58,7 @@
         <ReturnType>System.Security.Cryptography.Pkcs.RecipientInfoType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Key transport recipient information.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -79,7 +79,7 @@
         <ReturnType>System.Security.Cryptography.Pkcs.RecipientInfoType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The recipient information type is unknown.</summary>
       </Docs>
     </Member>
   </Members>

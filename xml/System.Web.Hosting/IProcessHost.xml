@@ -16,8 +16,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the set of process-wide functionality that every host of the application manager must implement.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.Hosting.IProcessHost> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="EnumerateAppDomains">
@@ -36,8 +43,8 @@
         <Parameter Name="appDomainInfoEnum" Type="System.Web.Hosting.IAppDomainInfoEnum&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="appDomainInfoEnum">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="appDomainInfoEnum">The <see cref="T:System.Web.Hosting.AppDomainInfoEnum" /> interface.</param>
+        <summary>Gets an <see cref="T:System.Web.Hosting.AppDomainInfoEnum" /> interface.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,7 +62,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sends a request to terminate all applications in an application domain.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,9 +82,16 @@
         <Parameter Name="appId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="appId">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="appId">The application to terminate.</param>
+        <summary>Terminates the specified application.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.Hosting.IProcessHost.ShutdownApplication%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StartApplication">
@@ -98,10 +112,10 @@
         <Parameter Name="runtimeInterface" Type="System.Object&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="appId">To be added.</param>
-        <param name="appPath">To be added.</param>
-        <param name="runtimeInterface">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="appId">The unique application ID.</param>
+        <param name="appPath">The virtual path to the application.</param>
+        <param name="runtimeInterface">A runtime manager interface.</param>
+        <summary>Starts the specified application</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

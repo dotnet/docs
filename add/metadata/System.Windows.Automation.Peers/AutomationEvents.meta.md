@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Automation.Peers.AutomationEvents
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

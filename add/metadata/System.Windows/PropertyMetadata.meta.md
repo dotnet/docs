@@ -1,59 +1,87 @@
 ---
 uid: System.Windows.PropertyMetadata
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.PropertyMetadata.#ctor(System.Object,System.Windows.PropertyChangedCallback,System.Windows.CoerceValueCallback)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.PropertyMetadata.OnApply(System.Windows.DependencyProperty,System.Type)
-internalonly: False
----
-
----
-uid: System.Windows.PropertyMetadata.Merge(System.Windows.PropertyMetadata,System.Windows.DependencyProperty)
-internalonly: False
----
-
----
-uid: System.Windows.PropertyMetadata.CoerceValueCallback
-internalonly: False
----
-
----
-uid: System.Windows.PropertyMetadata.#ctor(System.Object,System.Windows.PropertyChangedCallback)
-internalonly: False
----
-
----
-uid: System.Windows.PropertyMetadata.PropertyChangedCallback
-internalonly: False
----
-
----
-uid: System.Windows.PropertyMetadata.#ctor(System.Windows.PropertyChangedCallback)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.PropertyMetadata.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.PropertyMetadata.Merge(System.Windows.PropertyMetadata,System.Windows.DependencyProperty)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.PropertyMetadata.CoerceValueCallback
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.PropertyMetadata.#ctor(System.Object,System.Windows.PropertyChangedCallback)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.PropertyMetadata.PropertyChangedCallback
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.PropertyMetadata.#ctor(System.Windows.PropertyChangedCallback)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.PropertyMetadata.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.PropertyMetadata.DefaultValue
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.PropertyMetadata.IsSealed
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.PropertyMetadata.#ctor(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

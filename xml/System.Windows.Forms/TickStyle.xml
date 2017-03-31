@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the location of tick marks in a <see cref="T:System.Windows.Forms.TrackBar" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the members of this enumeration to set the value of the <xref:System.Windows.Forms.TrackBar.TickStyle%2A> property of the <xref:System.Windows.Forms.TrackBar> control.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Both">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Forms.TickStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Tick marks are located on both sides of the control.</summary>
       </Docs>
     </Member>
     <Member MemberName="BottomRight">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Forms.TickStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Tick marks are located on the bottom of a horizontal control or on the right side of a vertical control.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.Forms.TickStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No tick marks appear in the control.</summary>
       </Docs>
     </Member>
     <Member MemberName="TopLeft">
@@ -75,7 +82,7 @@
         <ReturnType>System.Windows.Forms.TickStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Tick marks are located on the top of a horizontal control or on the left of a vertical control.</summary>
       </Docs>
     </Member>
   </Members>

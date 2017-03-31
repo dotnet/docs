@@ -21,8 +21,26 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Accesses the managed version of the <see cref="T:System.Security.Cryptography.Rijndael" /> algorithm. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This algorithm supports key lengths of 128, 192, or 256 bits; defaulting to 256 bits. This algorithm supports block sizes of 128, 192, or 256 bits; defaulting to 128 bits (<xref:System.Security.Cryptography.Aes>-compatible).  
+  
+ The <xref:System.Security.Cryptography.Rijndael> algorithm is the predecessor of <xref:System.Security.Cryptography.Aes>. You should use the <xref:System.Security.Cryptography.Aes> class instead of <xref:System.Security.Cryptography.RijndaelManaged>. For more information, see the entry [The Differences Between Rijndael and AES](http://go.microsoft.com/fwlink/?LinkId=200932) in the .NET Security blog.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to encrypt and decrypt sample data using the `RijndaelManaged` class.  
+  
+ [!code-cpp[RijndaelManaged Example#1](~/samples/snippets/cpp/VS_Snippets_CLR/RijndaelManaged Example/CPP/class1.cpp#1)]
+ [!code-csharp[RijndaelManaged Example#1](~/samples/snippets/csharp/VS_Snippets_CLR/RijndaelManaged Example/CS/class1.cs#1)]
+ [!code-vb[RijndaelManaged Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/RijndaelManaged Example/VB/class1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,8 +59,20 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.RijndaelManaged" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a new instance of the `RijndaelManaged` class.  
+  
+ [!code-cpp[RijndaelManaged Example#1](~/samples/snippets/cpp/VS_Snippets_CLR/RijndaelManaged Example/CPP/class1.cpp#1)]
+ [!code-csharp[RijndaelManaged Example#1](~/samples/snippets/csharp/VS_Snippets_CLR/RijndaelManaged Example/CS/class1.cs#1)]
+ [!code-vb[RijndaelManaged Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/RijndaelManaged Example/VB/class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">This class is not compliant with the FIPS algorithm.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateDecryptor">
@@ -67,11 +97,35 @@
         <Parameter Name="rgbIV" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="rgbKey">To be added.</param>
-        <param name="rgbIV">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="rgbKey">The secret key to be used for the symmetric algorithm. The key size must be 128, 192, or 256 bits.</param>
+        <param name="rgbIV">The IV to be used for the symmetric algorithm.</param>
+        <summary>Creates a symmetric <see cref="T:System.Security.Cryptography.Rijndael" /> decryptor object with the specified <see cref="P:System.Security.Cryptography.SymmetricAlgorithm.Key" /> and initialization vector (<see cref="P:System.Security.Cryptography.SymmetricAlgorithm.IV" />).</summary>
+        <returns>A symmetric <see cref="T:System.Security.Cryptography.Rijndael" /> decryptor object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method decrypts an encrypted message created using the <xref:System.Security.Cryptography.RijndaelManaged.CreateEncryptor%2A> overload with the same signature.  
+  
+ The `rgbkey` size must be 128, 192, or 256 bits.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the [CreateDecryptor Method (Byte\<xref:System.Security.Cryptography.RijndaelManaged.CreateDecryptor%2A> method to decrypt messages encoded with the same signature parameter.  
+  
+ [!code-cpp[RijndaelManaged Example#1](~/samples/snippets/cpp/VS_Snippets_CLR/RijndaelManaged Example/CPP/class1.cpp#1)]
+ [!code-csharp[RijndaelManaged Example#1](~/samples/snippets/csharp/VS_Snippets_CLR/RijndaelManaged Example/CS/class1.cs#1)]
+ [!code-vb[RijndaelManaged Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/RijndaelManaged Example/VB/class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="rgbKey" /> parameter is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="rgbIV" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The value of the <see cref="P:System.Security.Cryptography.SymmetricAlgorithm.Mode" /> property is not <see cref="F:System.Security.Cryptography.CipherMode.ECB" />, <see cref="F:System.Security.Cryptography.CipherMode.CBC" />, or <see cref="F:System.Security.Cryptography.CipherMode.CFB" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateEncryptor">
@@ -96,11 +150,35 @@
         <Parameter Name="rgbIV" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="rgbKey">To be added.</param>
-        <param name="rgbIV">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="rgbKey">The secret key to be used for the symmetric algorithm. The key size must be 128, 192, or 256 bits.</param>
+        <param name="rgbIV">The IV to be used for the symmetric algorithm.</param>
+        <summary>Creates a symmetric <see cref="T:System.Security.Cryptography.Rijndael" /> encryptor object with the specified <see cref="P:System.Security.Cryptography.SymmetricAlgorithm.Key" /> and initialization vector (<see cref="P:System.Security.Cryptography.SymmetricAlgorithm.IV" />).</summary>
+        <returns>A symmetric <see cref="T:System.Security.Cryptography.Rijndael" /> encryptor object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Security.Cryptography.RijndaelManaged.CreateDecryptor%2A> overload with the same signature to decrypt the result of this method.  
+  
+ The `rgbkey` size must be 128, 192, or 256 bits.  
+  
+   
+  
+## Examples  
+ The following code examples demonstrates how to encrypt a message using the `CreateEncryptor` method.  
+  
+ [!code-cpp[RijndaelManaged Example#1](~/samples/snippets/cpp/VS_Snippets_CLR/RijndaelManaged Example/CPP/class1.cpp#1)]
+ [!code-csharp[RijndaelManaged Example#1](~/samples/snippets/csharp/VS_Snippets_CLR/RijndaelManaged Example/CS/class1.cs#1)]
+ [!code-vb[RijndaelManaged Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/RijndaelManaged Example/VB/class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="rgbKey" /> parameter is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="rgbIV" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The value of the <see cref="P:System.Security.Cryptography.SymmetricAlgorithm.Mode" /> property is not <see cref="F:System.Security.Cryptography.CipherMode.ECB" />, <see cref="F:System.Security.Cryptography.CipherMode.CBC" />, or <see cref="F:System.Security.Cryptography.CipherMode.CFB" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GenerateIV">
@@ -122,8 +200,22 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Generates a random initialization vector (<see cref="P:System.Security.Cryptography.SymmetricAlgorithm.IV" />) to be used for the algorithm.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to generate a random IV when none is specified.  
+  
+   
+  
+## Examples  
+ [!code-cpp[RijndaelManaged Example#1](~/samples/snippets/cpp/VS_Snippets_CLR/RijndaelManaged Example/CPP/class1.cpp#1)]
+ [!code-csharp[RijndaelManaged Example#1](~/samples/snippets/csharp/VS_Snippets_CLR/RijndaelManaged Example/CS/class1.cs#1)]
+ [!code-vb[RijndaelManaged Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/RijndaelManaged Example/VB/class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GenerateKey">
@@ -145,8 +237,22 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Generates a random <see cref="P:System.Security.Cryptography.SymmetricAlgorithm.Key" /> to be used for the algorithm.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to generate a random key when none is specified.  
+  
+   
+  
+## Examples  
+ [!code-cpp[RijndaelManaged Example#1](~/samples/snippets/cpp/VS_Snippets_CLR/RijndaelManaged Example/CPP/class1.cpp#1)]
+ [!code-csharp[RijndaelManaged Example#1](~/samples/snippets/csharp/VS_Snippets_CLR/RijndaelManaged Example/CS/class1.cs#1)]
+ [!code-vb[RijndaelManaged Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/RijndaelManaged Example/VB/class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

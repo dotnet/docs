@@ -1,19 +1,23 @@
 ---
 uid: System.Web.Script.Serialization.SimpleTypeResolver
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Script.Serialization.SimpleTypeResolver.ResolveTypeId(System.Type)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Script.Serialization.SimpleTypeResolver.ResolveType(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Script.Serialization.SimpleTypeResolver.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Interop.ThreadMessageEventHandler
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -16,8 +16,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the <see langword="restriction" /> element for simple types from XML Schema as specified by the World Wide Web Consortium (W3C). This class can be used restricting <see langword="simpleType" /> element.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ See <xref:System.Xml.Schema.XmlSchemaSimpleType> for an example using this class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,7 +43,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Schema.XmlSchemaSimpleTypeRestriction" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,9 +70,16 @@
         <ReturnType>System.Xml.Schema.XmlSchemaSimpleType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets information on the base type.</summary>
+        <value>The base type for the <see langword="simpleType" /> element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The use of <xref:System.Xml.Schema.XmlSchemaSimpleTypeRestriction.BaseTypeName%2A> and `BaseType` are mutually exclusive.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BaseTypeName">
@@ -91,9 +105,16 @@
         <ReturnType>System.Xml.XmlQualifiedName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the qualified base type.</summary>
+        <value>The qualified name of the simple type restriction base type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The use of `BaseTypeName` and <xref:System.Xml.Schema.XmlSchemaSimpleTypeRestriction.BaseType%2A> are mutually exclusive.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Facets">
@@ -152,8 +173,10 @@
         <ReturnType>System.Xml.Schema.XmlSchemaObjectCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets an Xml Schema facet.</summary>
+        <value>One of the following facet classes:  
+  
+ <see cref="T:System.Xml.Schema.XmlSchemaLengthFacet" />, <see cref="T:System.Xml.Schema.XmlSchemaMinLengthFacet" />, <see cref="T:System.Xml.Schema.XmlSchemaMaxLengthFacet" />, <see cref="T:System.Xml.Schema.XmlSchemaPatternFacet" />, <see cref="T:System.Xml.Schema.XmlSchemaEnumerationFacet" />, <see cref="T:System.Xml.Schema.XmlSchemaMaxInclusiveFacet" />, <see cref="T:System.Xml.Schema.XmlSchemaMaxExclusiveFacet" />, <see cref="T:System.Xml.Schema.XmlSchemaMinInclusiveFacet" />, <see cref="T:System.Xml.Schema.XmlSchemaMinExclusiveFacet" />, <see cref="T:System.Xml.Schema.XmlSchemaFractionDigitsFacet" />, <see cref="T:System.Xml.Schema.XmlSchemaTotalDigitsFacet" />, <see cref="T:System.Xml.Schema.XmlSchemaWhiteSpaceFacet" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

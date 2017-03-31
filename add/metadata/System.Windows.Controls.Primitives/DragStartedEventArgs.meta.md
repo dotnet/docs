@@ -1,24 +1,33 @@
 ---
 uid: System.Windows.Controls.Primitives.DragStartedEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Primitives.DragStartedEventArgs.InvokeEventHandler(System.Delegate,System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Primitives.DragStartedEventArgs.#ctor(System.Double,System.Double)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Primitives.DragStartedEventArgs.HorizontalOffset
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.Primitives.DragStartedEventArgs.VerticalOffset
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

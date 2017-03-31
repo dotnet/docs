@@ -1,89 +1,140 @@
 ---
 uid: System.Diagnostics.Eventing.EventProviderTraceListener
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.EventProviderTraceListener.IsThreadSafe
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.EventProviderTraceListener.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object)
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.EventProviderTraceListener.TraceTransfer(System.Diagnostics.TraceEventCache,System.String,System.Int32,System.String,System.Guid)
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.EventProviderTraceListener.Fail
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.EventProviderTraceListener.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object[])
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.EventProviderTraceListener.#ctor(System.String)
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.EventProviderTraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String,System.Object[])
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.EventProviderTraceListener.Write
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.EventProviderTraceListener.WriteLine(System.String)
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.EventProviderTraceListener.GetSupportedAttributes
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.EventProviderTraceListener.#ctor
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.EventProviderTraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String)
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.EventProviderTraceListener.TraceEvent
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.EventProviderTraceListener.Fail(System.String,System.String)
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.EventProviderTraceListener.Close
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.EventProviderTraceListener.Flush
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.EventProviderTraceListener.Delimiter
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.EventProviderTraceListener.Write(System.String)
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.EventProviderTraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32)
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.EventProviderTraceListener.#ctor(System.String,System.String)
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.EventProviderTraceListener.#ctor(System.String,System.String,System.String)
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.EventProviderTraceListener.WriteLine
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.EventProviderTraceListener.TraceData
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---

@@ -1,104 +1,125 @@
 ---
 uid: System.IdentityModel.Protocols.WSTrust.WSTrustMessage
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.WSTrustMessage.Context
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.WSTrustMessage.SignWith
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.WSTrustMessage.AllowPostdating
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.WSTrustMessage.KeyWrapAlgorithm
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.WSTrustMessage.EncryptionAlgorithm
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.WSTrustMessage.EncryptWith
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.WSTrustMessage.CanonicalizationAlgorithm
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.WSTrustMessage.AuthenticationType
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.WSTrustMessage.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.WSTrustMessage.SignatureAlgorithm
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.WSTrustMessage.RequestType
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.WSTrustMessage.AppliesTo
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.WSTrustMessage.UseKey
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.WSTrustMessage.TokenType
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.WSTrustMessage.Lifetime
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.WSTrustMessage.Entropy
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.WSTrustMessage.BinaryExchange
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.WSTrustMessage.KeySizeInBits
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.WSTrustMessage.KeyType
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.WSTrustMessage.ReplyTo
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

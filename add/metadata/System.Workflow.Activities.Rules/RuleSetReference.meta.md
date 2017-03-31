@@ -1,19 +1,34 @@
 ---
 uid: System.Workflow.Activities.Rules.RuleSetReference
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.Rules.RuleSetReference.#ctor(System.String)
-internalonly: False
----
-
----
-uid: System.Workflow.Activities.Rules.RuleSetReference.RuleSetName
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.Rules.RuleSetReference.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.Rules.RuleSetReference.RuleSetName
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.Rules.RuleSetReference.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

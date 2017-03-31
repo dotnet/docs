@@ -1,254 +1,449 @@
 ---
 uid: System.Reflection.Emit.EnumBuilder
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Reflection.Emit.EnumBuilder.GetConstructors
+manager: "ghogen"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.SetCustomAttribute(System.Reflection.Emit.CustomAttributeBuilder)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.GetNestedType(System.String,System.Reflection.BindingFlags)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.GUID
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.MakeArrayType(System.Int32)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.TypeToken
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.GetEnumUnderlyingType
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.IsAssignableFrom(System.Reflection.TypeInfo)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.FullName
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.Module
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Reflection.Emit.EnumBuilder.GetEvent
+manager: "ghogen"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.System#Runtime#InteropServices#_EnumBuilder#GetTypeInfo(System.UInt32,System.UInt32,System.IntPtr)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.SetCustomAttribute(System.Reflection.ConstructorInfo,System.Byte[])
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.DeclaringType
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.GetCustomAttributes(System.Type,System.Boolean)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Reflection.Emit.EnumBuilder.GetField
+manager: "ghogen"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.ReflectedType
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.DefineLiteral(System.String,System.Object)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.UnderlyingSystemType
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.GetElementType
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.GetInterface(System.String,System.Boolean)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Reflection.Emit.EnumBuilder.SetCustomAttribute
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.GetField(System.String,System.Reflection.BindingFlags)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.IsDefined(System.Type,System.Boolean)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.GetFields(System.Reflection.BindingFlags)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.MakeArrayType
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.System#Runtime#InteropServices#_EnumBuilder#GetTypeInfoCount(System.UInt32@)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.TypeHandle
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.MakeByRefType
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.AssemblyQualifiedName
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Reflection.Emit.EnumBuilder.GetFields
+manager: "ghogen"
+---
+
+---
+uid: System.Reflection.Emit.EnumBuilder.GetNestedType
+manager: "ghogen"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.GetCustomAttributes(System.Boolean)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.UnderlyingField
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.System#Runtime#InteropServices#_EnumBuilder#Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Reflection.Emit.EnumBuilder.GetMembers
+manager: "ghogen"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.Name
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.GetMembers(System.Reflection.BindingFlags)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.GetMember(System.String,System.Reflection.MemberTypes,System.Reflection.BindingFlags)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.GetConstructors(System.Reflection.BindingFlags)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Reflection.Emit.EnumBuilder.GetMember
+manager: "ghogen"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.GetEvent(System.String,System.Reflection.BindingFlags)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.IsConstructedGenericType
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.BaseType
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Reflection.Emit.EnumBuilder.GetInterface
+manager: "ghogen"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.CreateType
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
-uid: System.Reflection.Emit.EnumBuilder.GetInterfaces
-internalonly: False
----
-
----
-uid: System.Reflection.Emit.EnumBuilder.CreateTypeInfo
-internalonly: False
----
-
----
-uid: System.Reflection.Emit.EnumBuilder.GetProperties(System.Reflection.BindingFlags)
-internalonly: False
+uid: System.Reflection.Emit.EnumBuilder.GetNestedTypes
+manager: "ghogen"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.GetEvents
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Reflection.Emit.EnumBuilder.GetInterfaces
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Reflection.Emit.EnumBuilder.MakeArrayType
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Reflection.Emit.EnumBuilder.CreateTypeInfo
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Reflection.Emit.EnumBuilder.IsAssignableFrom
+manager: "ghogen"
+---
+
+---
+uid: System.Reflection.Emit.EnumBuilder.InvokeMember
+manager: "ghogen"
+---
+
+---
+uid: System.Reflection.Emit.EnumBuilder.GetProperties(System.Reflection.BindingFlags)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Reflection.Emit.EnumBuilder.GetEvents
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.GetEvents(System.Reflection.BindingFlags)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Reflection.Emit.EnumBuilder.GetProperties
+manager: "ghogen"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.GetInterfaceMap(System.Type)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.System#Runtime#InteropServices#_EnumBuilder#GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.Assembly
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.GetMethods(System.Reflection.BindingFlags)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.MakePointerType
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Reflection.Emit.EnumBuilder.GetCustomAttributes
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.GetNestedTypes(System.Reflection.BindingFlags)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.Namespace
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Reflection.Emit.EnumBuilder.GetMethods
+manager: "ghogen"
 ---

@@ -29,9 +29,16 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="TResult">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="TResult">The type of the expression.</typeparam>
+    <summary>Contains an expression in Visual Basic syntax that evaluates to an r-value, which supports binding of <see cref="F:System.Activities.ArgumentDirection.In" /> arguments.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This activity uses the LINQ to Entity provider to evaluate LINQ expressions. Any LINQ expressions used with this activity must be evaluatable by the ADO.Net Entity Data Model. For example, LINQ expressions cannot be used to reference activities, variables, or arguments of the workflow itself.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,7 +52,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicValue`1" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,8 +69,8 @@
         <Parameter Name="expressionText" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="expressionText">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="expressionText">The expression string in Visual Basic syntax.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicValue`1" /> class using the specified expression.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,10 +111,18 @@
         <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="context">The context information that is used for conversion.</param>
+        <summary>Determines whether the <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicValue`1" /> can be converted into a <see cref="T:System.String" />.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicValue`1" /> can be converted into a string; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method always returns `true`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertToString">
@@ -126,10 +141,17 @@
         <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="context">The context information that is used for conversion.</param>
+        <summary>Converts the <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicValue`1" /> to a <see cref="T:System.String" />.</summary>
+        <returns>A string representation of the <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicValue`1" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string representation consists of the <xref:Microsoft.VisualBasic.Activities.VisualBasicValue%601.ExpressionText%2A> surrounded by brackets.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -167,8 +189,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or set the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] expression represented by this <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicValue`1" />.</summary>
+        <value>The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] expression.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,8 +208,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the expression tree for the value.</summary>
+        <returns>The expression tree for the value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -209,8 +231,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the language used for the value.</summary>
+        <value>The language used.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -227,8 +249,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets whether the value requires compilation.</summary>
+        <value>
+          <see langword="True" /> if the value requires compilation; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

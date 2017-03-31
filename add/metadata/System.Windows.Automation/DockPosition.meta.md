@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Automation.DockPosition
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---

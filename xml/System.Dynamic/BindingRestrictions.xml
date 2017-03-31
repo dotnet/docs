@@ -28,7 +28,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a set of binding restrictions on the <see cref="T:System.Dynamic.DynamicMetaObject" /> under which the dynamic binding is valid.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -57,9 +57,9 @@
         <Parameter Name="contributingObjects" Type="System.Collections.Generic.IList&lt;System.Dynamic.DynamicMetaObject&gt;" />
       </Parameters>
       <Docs>
-        <param name="contributingObjects">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="contributingObjects">The list of <see cref="T:System.Dynamic.DynamicMetaObject" /> instances from which to combine restrictions.</param>
+        <summary>Combines binding restrictions from the list of <see cref="T:System.Dynamic.DynamicMetaObject" /> instances into one set of restrictions.</summary>
+        <returns>The new set of binding restrictions.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,7 +85,7 @@
         <ReturnType>System.Dynamic.BindingRestrictions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents an empty set of binding restrictions. This field is read only.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,10 +114,17 @@
         <Parameter Name="expression" Type="System.Linq.Expressions.Expression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="expression">The expression representing the restrictions.</param>
+        <summary>Creates the binding restriction that checks the expression for arbitrary immutable properties.</summary>
+        <returns>The new binding restrictions.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By convention, the general restrictions created by this method must only test immutable object properties.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetInstanceRestriction">
@@ -146,10 +153,10 @@
         <Parameter Name="instance" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <param name="instance">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The expression to test.</param>
+        <param name="instance">The exact object instance to test.</param>
+        <summary>Creates the binding restriction that checks the expression for object instance identity.</summary>
+        <returns>The new binding restrictions.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -179,10 +186,10 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The expression to test.</param>
+        <param name="type">The exact type to test.</param>
+        <summary>Creates the binding restriction that check the expression for runtime type identity.</summary>
+        <returns>The new binding restrictions.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -211,9 +218,9 @@
         <Parameter Name="restrictions" Type="System.Dynamic.BindingRestrictions" />
       </Parameters>
       <Docs>
-        <param name="restrictions">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="restrictions">The set of restrictions with which to merge the current binding restrictions.</param>
+        <summary>Merges the set of binding restrictions with the current binding restrictions.</summary>
+        <returns>The new set of binding restrictions.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -240,8 +247,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates the <see cref="T:System.Linq.Expressions.Expression" /> representing the binding restrictions.</summary>
+        <returns>The expression tree representing the restrictions.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

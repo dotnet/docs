@@ -1,29 +1,48 @@
 ---
 uid: System.Activities.Debugger.VirtualStackFrame
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Debugger.VirtualStackFrame.#ctor(System.Activities.Debugger.State)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Debugger.VirtualStackFrame.Locals
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Debugger.VirtualStackFrame.ToString
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Debugger.VirtualStackFrame.State
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Debugger.VirtualStackFrame.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Debugger.VirtualStackFrame.#ctor(System.Activities.Debugger.State,System.Collections.Generic.IDictionary{System.String,System.Object})
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

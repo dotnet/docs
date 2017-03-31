@@ -1,39 +1,53 @@
 ---
 uid: System.Web.UI.Design.WebControls.ContentPlaceHolderDesigner
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.ContentPlaceHolderDesigner.GetDesignTimeHtml(System.Web.UI.Design.DesignerRegionCollection)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.ContentPlaceHolderDesigner.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.ContentPlaceHolderDesigner.GetPersistenceContent
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.ContentPlaceHolderDesigner.SetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.ContentPlaceHolderDesigner.GetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.ContentPlaceHolderDesigner.AllowResize
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.ContentPlaceHolderDesigner.GetDesignTimeHtml
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.ContentPlaceHolderDesigner.GetDesignTimeHtml
+ms.author: "riande"
+manager: "wpickett"
 ---

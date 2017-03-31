@@ -17,9 +17,26 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">To be added.</param>
-    <param name="e">To be added.</param>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <param name="sender">The object where the event handler is attached.</param>
+    <param name="e">The event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Windows.UIElement.QueryCursor" /> and <see cref="E:System.Windows.ContentElement.QueryCursor" /> events, as well as the <see cref="E:System.Windows.Input.Mouse.QueryCursor" /> attached event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This delegate is used with the following attached events.  
+  
+-   <xref:System.Windows.Input.Mouse.QueryCursor?displayProperty=fullName>  
+  
+ This delegate is used with the following routed events. These routed events forward the previously listed attached events to make them more accessible to the general element model in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)].  
+  
+-   <xref:System.Windows.UIElement.QueryCursor?displayProperty=fullName>  
+  
+-   <xref:System.Windows.ContentElement.QueryCursor?displayProperty=fullName>  
+  
+ The attached events and the base element routed events share their event data, and the bubbling and tunneling versions of the routed events also share event data. This can affect the handled characteristics of the event as it travels the event route. For details, see [Input Overview](../Topic/Input%20Overview.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

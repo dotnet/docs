@@ -1,9 +1,13 @@
 ---
 uid: System.Web.HttpBrowserCapabilities
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.HttpBrowserCapabilities.#ctor
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

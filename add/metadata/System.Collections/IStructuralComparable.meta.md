@@ -1,9 +1,13 @@
 ---
 uid: System.Collections.IStructuralComparable
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.IStructuralComparable.CompareTo(System.Object,System.Collections.IComparer)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

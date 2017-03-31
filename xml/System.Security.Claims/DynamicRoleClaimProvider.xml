@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The single method, <see cref="M:System.Security.Claims.DynamicRoleClaimProvider.AddDynamicRoleClaims(System.Security.Claims.ClaimsIdentity,System.Collections.Generic.IEnumerable{System.Security.Claims.Claim})" />, exposed by this class is obsolete. You can use a <see cref="T:System.Security.Claims.ClaimsAuthenticationManager" /> object to add claims to a <see cref="T:System.Security.Claims.ClaimsIdentity" /> object.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -40,9 +40,9 @@
         <Parameter Name="claims" Type="System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt;" />
       </Parameters>
       <Docs>
-        <param name="claimsIdentity">To be added.</param>
-        <param name="claims">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="claimsIdentity">The claims identity to which to add the claims.</param>
+        <param name="claims">The claims to add.</param>
+        <summary>You can use a <see cref="T:System.Security.Claims.ClaimsAuthenticationManager" /> object to add claims to a <see cref="T:System.Security.Claims.ClaimsIdentity" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

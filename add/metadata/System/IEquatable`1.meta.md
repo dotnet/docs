@@ -1,9 +1,13 @@
 ---
 uid: System.IEquatable`1
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IEquatable`1.Equals(`0)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

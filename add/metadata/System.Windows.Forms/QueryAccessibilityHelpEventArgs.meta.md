@@ -1,29 +1,47 @@
 ---
 uid: System.Windows.Forms.QueryAccessibilityHelpEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.QueryAccessibilityHelpEventArgs.#ctor
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.QueryAccessibilityHelpEventArgs.HelpNamespace
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.QueryAccessibilityHelpEventArgs.#ctor(System.String,System.String,System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.QueryAccessibilityHelpEventArgs.HelpKeyword
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.QueryAccessibilityHelpEventArgs.HelpString
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.QueryAccessibilityHelpEventArgs.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

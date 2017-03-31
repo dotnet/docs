@@ -11,8 +11,29 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Enables Windows authentication with client application services.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use client application services to validate users by using Windows authentication. To enable Windows authentication, you configure your application to use the <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider> class. For more information, see [How to: Configure Client Application Services](../Topic/How%20to:%20Configure%20Client%20Application%20Services.md).  
+  
+ After configuration, you can validate users by calling the `static` <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> method. The <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> method internally calls the <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.ValidateUser%2A> method.  
+  
+ The <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.ValidateUser%2A?displayProperty=fullName> method automatically authenticates the current user and sets the `static` <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=fullName> property to a <xref:System.Web.ClientServices.ClientRolePrincipal> object that contains the current <xref:System.Security.Principal.WindowsIdentity>. If a <xref:System.Web.ClientServices.Providers.ClientRoleProvider> is configured for your application, you can use the <xref:System.Web.ClientServices.ClientRolePrincipal> object to retrieve user role information from the roles service.  
+  
+ You can retrieve a reference to the current <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider> instance through the `static` <xref:System.Web.Security.Membership.Provider%2A?displayProperty=fullName> property. You can use the membership provider reference to call the <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.ValidateUser%2A?displayProperty=fullName> method directly. Additionally, you will need the membership provider reference to call the <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.Logout%2A> method, which is not available in the <xref:System.Web.Security.MembershipProvider> base class.  
+  
+   
+  
+## Examples  
+ The following example code demonstrates how to use this method to authenticate a user by using Windows authentication. In this example, the value of the `static` <xref:System.Web.Security.Membership.Provider%2A?displayProperty=fullName> property is cast to a <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider> instance. This makes sure that a <xref:System.NullReferenceException> will be thrown if you accidentally test this code by using another membership provider.  
+  
+ [!code-csharp[ClientApplicationServices#309](~/samples/snippets/csharp/VS_Snippets_Winforms/ClientApplicationServices/CS/Class1.cs#309)]
+ [!code-vb[ClientApplicationServices#309](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClientApplicationServices/VB/Class1.vb#309)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +47,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,9 +64,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not used by this class.</summary>
+        <value>The name of the application using the custom membership provider.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting this property has no effect.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ChangePassword">
@@ -66,12 +94,13 @@
         <Parameter Name="newPassword" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="username">To be added.</param>
-        <param name="oldPassword">To be added.</param>
-        <param name="newPassword">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="username">Not used.</param>
+        <param name="oldPassword">Not used.</param>
+        <param name="newPassword">Not used.</param>
+        <summary>This method is not used by this class.</summary>
+        <returns>Not applicable. This method always throws an exception.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
       </Docs>
     </Member>
     <Member MemberName="ChangePasswordQuestionAndAnswer">
@@ -93,13 +122,14 @@
         <Parameter Name="newPasswordAnswer" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="username">To be added.</param>
-        <param name="password">To be added.</param>
-        <param name="newPasswordQuestion">To be added.</param>
-        <param name="newPasswordAnswer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="username">Not used.</param>
+        <param name="password">Not used.</param>
+        <param name="newPasswordQuestion">Not used.</param>
+        <param name="newPasswordAnswer">Not used.</param>
+        <summary>This method is not used by this class.</summary>
+        <returns>Not applicable. This method always throws an exception.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateUser">
@@ -125,17 +155,18 @@
         <Parameter Name="status" Type="System.Web.Security.MembershipCreateStatus&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="username">To be added.</param>
-        <param name="password">To be added.</param>
-        <param name="email">To be added.</param>
-        <param name="passwordQuestion">To be added.</param>
-        <param name="passwordAnswer">To be added.</param>
-        <param name="isApproved">To be added.</param>
-        <param name="providerUserKey">To be added.</param>
-        <param name="status">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="username">Not used.</param>
+        <param name="password">Not used.</param>
+        <param name="email">Not used.</param>
+        <param name="passwordQuestion">Not used.</param>
+        <param name="passwordAnswer">Not used.</param>
+        <param name="isApproved">Not used.</param>
+        <param name="providerUserKey">Not used.</param>
+        <param name="status">Not used.</param>
+        <summary>This method is not used by this class.</summary>
+        <returns>Not applicable. This method always throws an exception.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
       </Docs>
     </Member>
     <Member MemberName="DeleteUser">
@@ -155,11 +186,12 @@
         <Parameter Name="deleteAllRelatedData" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="username">To be added.</param>
-        <param name="deleteAllRelatedData">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="username">Not used.</param>
+        <param name="deleteAllRelatedData">Not used.</param>
+        <summary>This method is not used by this class.</summary>
+        <returns>Not applicable. This method always throws an exception.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
       </Docs>
     </Member>
     <Member MemberName="EnablePasswordReset">
@@ -175,9 +207,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not used by this class.</summary>
+        <value>Always <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Windows authentication uses the identity supplied by the operating system when a user logs on to the computer or domain. Therefore, properties related to user credentials are not relevant for this class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EnablePasswordRetrieval">
@@ -193,9 +232,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not used by this class.</summary>
+        <value>Always <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Windows authentication uses the identity supplied by the operating system when a user logs on to the computer or domain. Therefore, properties related to user credentials are not relevant for this class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FindUsersByEmail">
@@ -217,13 +263,14 @@
         <Parameter Name="totalRecords" Type="System.Int32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="emailToMatch">To be added.</param>
-        <param name="pageIndex">To be added.</param>
-        <param name="pageSize">To be added.</param>
-        <param name="totalRecords">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="emailToMatch">Not used.</param>
+        <param name="pageIndex">Not used.</param>
+        <param name="pageSize">Not used.</param>
+        <param name="totalRecords">Not used.</param>
+        <summary>This method is not used by this class.</summary>
+        <returns>Not applicable. This method always throws an exception.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
       </Docs>
     </Member>
     <Member MemberName="FindUsersByName">
@@ -245,13 +292,14 @@
         <Parameter Name="totalRecords" Type="System.Int32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="usernameToMatch">To be added.</param>
-        <param name="pageIndex">To be added.</param>
-        <param name="pageSize">To be added.</param>
-        <param name="totalRecords">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="usernameToMatch">Not used.</param>
+        <param name="pageIndex">Not used.</param>
+        <param name="pageSize">Not used.</param>
+        <param name="totalRecords">Not used.</param>
+        <summary>This method is not used by this class.</summary>
+        <returns>Not applicable. This method always throws an exception.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetAllUsers">
@@ -272,12 +320,13 @@
         <Parameter Name="totalRecords" Type="System.Int32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="pageIndex">To be added.</param>
-        <param name="pageSize">To be added.</param>
-        <param name="totalRecords">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="pageIndex">Not used.</param>
+        <param name="pageSize">Not used.</param>
+        <param name="totalRecords">Not used.</param>
+        <summary>This method is not used by this class.</summary>
+        <returns>Not applicable. This method always throws an exception.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetNumberOfUsersOnline">
@@ -294,9 +343,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>This method is not used by this class.</summary>
+        <returns>Not applicable. This method always throws an exception.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetPassword">
@@ -316,11 +366,12 @@
         <Parameter Name="answer" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="username">To be added.</param>
-        <param name="answer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="username">Not used.</param>
+        <param name="answer">Not used.</param>
+        <summary>This method is not used by this class.</summary>
+        <returns>Not applicable. This method always throws an exception.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetUser">
@@ -340,11 +391,12 @@
         <Parameter Name="userIsOnline" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="providerUserKey">To be added.</param>
-        <param name="userIsOnline">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="providerUserKey">Not used.</param>
+        <param name="userIsOnline">Not used.</param>
+        <summary>This method is not used by this class.</summary>
+        <returns>Not applicable. This method always throws an exception.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetUser">
@@ -364,11 +416,12 @@
         <Parameter Name="userIsOnline" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="username">To be added.</param>
-        <param name="userIsOnline">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="username">Not used.</param>
+        <param name="userIsOnline">Not used.</param>
+        <summary>This method is not used by this class.</summary>
+        <returns>Not applicable. This method always throws an exception.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetUserNameByEmail">
@@ -387,10 +440,11 @@
         <Parameter Name="email" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="email">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="email">Not used.</param>
+        <summary>This method is not used by this class.</summary>
+        <returns>Not applicable. This method always throws an exception.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
       </Docs>
     </Member>
     <Member MemberName="Logout">
@@ -407,8 +461,23 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Logs out the user.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For users authenticated through client application services, the `static` <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=fullName> property is set to a <xref:System.Web.ClientServices.ClientRolePrincipal> object that enables access to the configured role service. The <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.Logout%2A> method resets the <xref:System.Threading.Thread.CurrentPrincipal%2A> property to a <xref:System.Security.Principal.WindowsPrincipal> object that contains the current <xref:System.Security.Principal.WindowsIdentity>. After you call this method, you can no longer retrieve roles for the user through the <xref:System.Web.ClientServices.Providers.ClientRoleProvider> class. To reauthenticate the current user, call the <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.ValidateUser%2A?displayProperty=fullName> method.  
+  
+   
+  
+## Examples  
+ The following example code demonstrates how to use this method to log out the user.  
+  
+ [!code-csharp[ClientApplicationServices#310](~/samples/snippets/csharp/VS_Snippets_Winforms/ClientApplicationServices/CS/Class1.cs#310)]
+ [!code-vb[ClientApplicationServices#310](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClientApplicationServices/VB/Class1.vb#310)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxInvalidPasswordAttempts">
@@ -424,9 +493,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not used by this class.</summary>
+        <value>The number of invalid password attempts allowed before the membership user is locked out.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Windows authentication uses the identity supplied by the operating system when a user logs on to the computer or domain. Therefore, properties related to user credentials are not relevant for this class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MinRequiredNonAlphanumericCharacters">
@@ -442,9 +518,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not used by this class.</summary>
+        <value>Always zero.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Windows authentication uses the identity supplied by the operating system when a user logs on to the computer or domain. Therefore, properties related to user credentials are not relevant for this class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MinRequiredPasswordLength">
@@ -460,9 +543,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not used by this class.</summary>
+        <value>Always one.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Windows authentication uses the identity supplied by the operating system when a user logs on to the computer or domain. Therefore, properties related to user credentials are not relevant for this class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PasswordAttemptWindow">
@@ -478,9 +568,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not used by this class.</summary>
+        <value>The number of minutes in which a maximum number of invalid password or password-answer attempts are allowed before the membership user is locked out.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Windows authentication uses the identity supplied by the operating system when a user logs on to the computer or domain. Therefore, properties related to user credentials are not relevant for this class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PasswordFormat">
@@ -496,9 +593,16 @@
         <ReturnType>System.Web.Security.MembershipPasswordFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not used by this class.</summary>
+        <value>The format for storing passwords in the store data.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Windows authentication uses the identity supplied by the operating system when a user logs on to the computer or domain. Therefore, properties related to user credentials are not relevant for this class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PasswordStrengthRegularExpression">
@@ -514,9 +618,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not used by this class.</summary>
+        <value>Always "*".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Windows authentication uses the identity supplied by the operating system when a user logs on to the computer or domain. Therefore, properties related to user credentials are not relevant for this class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RequiresQuestionAndAnswer">
@@ -532,9 +643,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not used by this class.</summary>
+        <value>Always <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Windows authentication uses the identity supplied by the operating system when a user logs on to the computer or domain. Therefore, properties related to user credentials are not relevant for this class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RequiresUniqueEmail">
@@ -550,9 +668,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not used by this class.</summary>
+        <value>Always <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Windows authentication uses the identity supplied by the operating system when a user logs on to the computer or domain. Therefore, properties related to user credentials are not relevant for this class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ResetPassword">
@@ -572,11 +697,12 @@
         <Parameter Name="answer" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="username">To be added.</param>
-        <param name="answer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="username">Not used.</param>
+        <param name="answer">Not used.</param>
+        <summary>This method is not used by this class.</summary>
+        <returns>Not applicable. This method always throws an exception.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
       </Docs>
     </Member>
     <Member MemberName="UnlockUser">
@@ -595,10 +721,11 @@
         <Parameter Name="username" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="username">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="username">Not used.</param>
+        <summary>This method is not used by this class.</summary>
+        <returns>Not applicable. This method always throws an exception.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
       </Docs>
     </Member>
     <Member MemberName="UpdateUser">
@@ -617,9 +744,10 @@
         <Parameter Name="user" Type="System.Web.Security.MembershipUser" />
       </Parameters>
       <Docs>
-        <param name="user">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="user">Not used.</param>
+        <summary>This method is not used by this class.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
       </Docs>
     </Member>
     <Member MemberName="ValidateUser">
@@ -639,11 +767,32 @@
         <Parameter Name="password" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="username">To be added.</param>
-        <param name="password">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="username">Must be <see cref="F:System.String.Empty" /> or <see langword="null" />.</param>
+        <param name="password">Must be <see cref="F:System.String.Empty" /> or <see langword="null" />.</param>
+        <summary>Automatically authenticates the current user by using the identity supplied by the operating system.</summary>
+        <returns>Always <see langword="true" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you configure your application to use the <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider> class, the `static` <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> method will use this method for its implementation. The <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.ValidateUser%2A?displayProperty=fullName> method automatically authenticates the current user and sets the `static` <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=fullName> property to a <xref:System.Web.ClientServices.ClientRolePrincipal> object that contains the current <xref:System.Security.Principal.WindowsIdentity>. If a <xref:System.Web.ClientServices.Providers.ClientRoleProvider> is configured for your application, you can use the <xref:System.Web.ClientServices.ClientRolePrincipal> object to retrieve user role information from the roles service.  
+  
+   
+  
+## Examples  
+ The following example code demonstrates how to use this method to authenticate a user by using Windows authentication.  
+  
+ [!code-csharp[ClientApplicationServices#309](~/samples/snippets/csharp/VS_Snippets_Winforms/ClientApplicationServices/CS/Class1.cs#309)]
+ [!code-vb[ClientApplicationServices#309](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClientApplicationServices/VB/Class1.vb#309)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="username" /> is not <see cref="F:System.String.Empty" /> or <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="password" /> is not <see cref="F:System.String.Empty" /> or <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

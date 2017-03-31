@@ -1,54 +1,97 @@
 ---
 uid: System.Data.Metadata.Edm.ObjectItemCollection
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Metadata.Edm.ObjectItemCollection.LoadFromAssembly(System.Reflection.Assembly,System.Data.Metadata.Edm.EdmItemCollection,System.Action{System.String})
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Metadata.Edm.ObjectItemCollection.LoadFromAssembly
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Metadata.Edm.ObjectItemCollection.TryGetClrType
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Metadata.Edm.ObjectItemCollection.TryGetClrType(System.Data.Metadata.Edm.EnumType,System.Type@)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Metadata.Edm.ObjectItemCollection.GetItems``1
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Metadata.Edm.ObjectItemCollection.GetClrType(System.Data.Metadata.Edm.StructuralType)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Metadata.Edm.ObjectItemCollection.TryGetClrType(System.Data.Metadata.Edm.StructuralType,System.Type@)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Metadata.Edm.ObjectItemCollection.LoadFromAssembly(System.Reflection.Assembly)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Metadata.Edm.ObjectItemCollection.LoadFromAssembly(System.Reflection.Assembly,System.Data.Metadata.Edm.EdmItemCollection)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Metadata.Edm.ObjectItemCollection.#ctor
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Metadata.Edm.ObjectItemCollection.GetPrimitiveTypes
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Metadata.Edm.ObjectItemCollection.GetClrType(System.Data.Metadata.Edm.EnumType)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Metadata.Edm.ObjectItemCollection.GetClrType
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

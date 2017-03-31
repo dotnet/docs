@@ -1,9 +1,13 @@
 ---
 uid: System.Linq.ParallelQuery
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.ParallelQuery.System#Collections#IEnumerable#GetEnumerator
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---

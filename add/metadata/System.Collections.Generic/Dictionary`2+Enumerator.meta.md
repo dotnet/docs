@@ -1,44 +1,62 @@
 ---
 uid: System.Collections.Generic.Dictionary`2.Enumerator
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.Generic.Dictionary`2.Enumerator.MoveNext
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.Generic.Dictionary`2.Enumerator.System#Collections#IDictionaryEnumerator#Key
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.Generic.Dictionary`2.Enumerator.System#Collections#IDictionaryEnumerator#Value
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.Generic.Dictionary`2.Enumerator.System#Collections#IDictionaryEnumerator#Entry
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.Generic.Dictionary`2.Enumerator.System#Collections#IEnumerator#Current
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.Generic.Dictionary`2.Enumerator.System#Collections#IEnumerator#Reset
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.Generic.Dictionary`2.Enumerator.Current
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.Generic.Dictionary`2.Enumerator.Dispose
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

@@ -1,54 +1,65 @@
 ---
 uid: Microsoft.Build.Tasks.ResolveNativeReference
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.ResolveNativeReference.ContainedTypeLibraries
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.ResolveNativeReference.ContainedComComponents
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.ResolveNativeReference.ContainedLooseEtcFiles
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.ResolveNativeReference.Execute
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.ResolveNativeReference.NativeReferences
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.ResolveNativeReference.ContainingReferenceFiles
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.ResolveNativeReference.ContainedPrerequisiteAssemblies
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.ResolveNativeReference.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.ResolveNativeReference.ContainedLooseTlbFiles
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.ResolveNativeReference.AdditionalSearchPaths
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

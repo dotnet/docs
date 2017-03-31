@@ -25,8 +25,28 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the name of the property that an implementer of <see cref="T:System.ComponentModel.IExtenderProvider" /> offers to other components. This class cannot be inherited</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you mark a class with this attribute, you tell the code generator to create an extender property with the name you provide. The marked class must implement <xref:System.ComponentModel.IExtenderProvider>. As a result, the new property can be used by other components in a container.  
+  
+ Within the marked class, you must implement `Get` \<name> and `Set` \<name> methods. For example, if you mark a class with [ProvideProperty("PropertyName")], you must implement `GetPropertyName` and `SetPropertyName` methods. To specify that the new property will be an extender property, you must implement from <xref:System.ComponentModel.IExtenderProvider>, you must also implement a `CanExtend` method.  
+  
+ For more information, see [Attributes](../Topic/Extending%20Metadata%20Using%20Attributes.md).  
+  
+   
+  
+## Examples  
+ The following example marks `MyClass` with a <xref:System.ComponentModel.ProvidePropertyAttribute> that tells the compiler to create a property called `MyProperty` from the `GetMyProperty` and `SetMyProperty` methods.  
+  
+ [!code-cpp[Classic ProvidePropertyAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ProvidePropertyAttribute Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic ProvidePropertyAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ProvidePropertyAttribute Example/CS/source.cs#1)]
+ [!code-vb[Classic ProvidePropertyAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ProvidePropertyAttribute Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -52,9 +72,9 @@
         <Parameter Name="receiverTypeName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="propertyName">To be added.</param>
-        <param name="receiverTypeName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="propertyName">The name of the property extending to an object of the specified type.</param>
+        <param name="receiverTypeName">The name of the data type this property can extend.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ProvidePropertyAttribute" /> class with the name of the property and the type of its receiver.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,9 +101,9 @@
         <Parameter Name="receiverType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="propertyName">To be added.</param>
-        <param name="receiverType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="propertyName">The name of the property extending to an object of the specified type.</param>
+        <param name="receiverType">The <see cref="T:System.Type" /> of the data type of the object that can receive the property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ProvidePropertyAttribute" /> class with the name of the property and its <see cref="T:System.Type" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,9 +132,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The object to test the value equality of.</param>
+        <summary>Returns whether the value of the given object is equal to the current <see cref="T:System.ComponentModel.ProvidePropertyAttribute" />.</summary>
+        <returns>
+          <see langword="true" /> if the value of the given object is equal to that of the current; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -141,8 +162,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code for this instance.</summary>
+        <returns>A hash code for the current <see cref="T:System.ComponentModel.ProvidePropertyAttribute" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -168,8 +189,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of a property that this class provides.</summary>
+        <value>The name of a property that this class provides.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -195,8 +216,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the data type this property can extend.</summary>
+        <value>The name of the data type this property can extend.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -218,8 +239,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a unique identifier for this attribute.</summary>
+        <value>An <see cref="T:System.Object" /> that is a unique identifier for the attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

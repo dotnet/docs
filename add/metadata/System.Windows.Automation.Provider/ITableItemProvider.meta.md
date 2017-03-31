@@ -1,14 +1,20 @@
 ---
 uid: System.Windows.Automation.Provider.ITableItemProvider
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Provider.ITableItemProvider.GetColumnHeaderItems
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Provider.ITableItemProvider.GetRowHeaderItems
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---

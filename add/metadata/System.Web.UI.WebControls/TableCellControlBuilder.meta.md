@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.WebControls.TableCellControlBuilder
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.TableCellControlBuilder.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.TableCellControlBuilder.AllowWhitespaceLiterals
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

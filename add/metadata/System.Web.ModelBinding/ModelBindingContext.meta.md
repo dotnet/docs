@@ -1,64 +1,97 @@
 ---
 uid: System.Web.ModelBinding.ModelBindingContext
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ModelBinding.ModelBindingContext.ModelBinderProviders
-internalonly: False
----
-
----
-uid: System.Web.ModelBinding.ModelBindingContext.#ctor(System.Web.ModelBinding.ModelBindingContext)
-internalonly: False
----
-
----
-uid: System.Web.ModelBinding.ModelBindingContext.ValidationNode
-internalonly: False
----
-
----
-uid: System.Web.ModelBinding.ModelBindingContext.ValidateRequest
-internalonly: False
----
-
----
-uid: System.Web.ModelBinding.ModelBindingContext.ValueProvider
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ModelBinding.ModelBindingContext.#ctor
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.ModelBinding.ModelBindingContext.#ctor(System.Web.ModelBinding.ModelBindingContext)
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.ModelBinding.ModelBindingContext.ValidationNode
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.ModelBinding.ModelBindingContext.ValidateRequest
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.ModelBinding.ModelBindingContext.ValueProvider
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.ModelBinding.ModelBindingContext.#ctor
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ModelBinding.ModelBindingContext.ModelMetadata
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ModelBinding.ModelBindingContext.PropertyMetadata
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ModelBinding.ModelBindingContext.ModelName
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ModelBinding.ModelBindingContext.ModelState
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ModelBinding.ModelBindingContext.Model
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ModelBinding.ModelBindingContext.ModelType
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

@@ -1,14 +1,27 @@
 ---
 uid: System.Web.RegularExpressions.DatabindExprRegex
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.RegularExpressions.DatabindExprRegex.#ctor(System.TimeSpan)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.RegularExpressions.DatabindExprRegex.#ctor
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.RegularExpressions.DatabindExprRegex.#ctor
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

@@ -17,7 +17,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents errors that occur during execution of [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)] client applications.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,8 +33,22 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Services.Client.DataServiceClientException" /> class with a system-supplied message that describes the error.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor initializes the <xref:System.Exception.Message%2A> property of the new instance to a system-supplied message that describes the error. This message takes into account the current system culture.  
+  
+ The following table shows the initial property values for an instance of <xref:System.InsufficientMemoryException>.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|`null`.|  
+|<xref:System.Exception.Message%2A>|The localized error message string.|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -51,9 +65,21 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="message">The message that describes the exception. The caller of this constructor is required to ensure that this string has been localized for the current system culture.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Services.Client.DataServiceClientException" /> class with a specified message that describes the error.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows the initial property values for an instance of <xref:System.Data.Services.Client.DataServiceClientException>.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|`null`.|  
+|<xref:System.Exception.Message%2A>|The error message string specified in `message`.|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -92,10 +118,24 @@
         <Parameter Name="innerException" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="innerException">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="message">The message that describes the exception. The caller of this constructor is required to ensure that this string has been localized for the current system culture.</param>
+        <param name="innerException">The exception that is the cause of the current exception. If the <c>innerException</c> parameter is not <see langword="null" />, the current exception is raised in a <see langword="catch" /> block that handles the inner exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Services.Client.DataServiceClientException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
+  
+ The following table shows the initial property values for an instance of <xref:System.Data.Services.Client.DataServiceClientException>.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|`null`.|  
+|<xref:System.Exception.Message%2A>|The error message string specified in `message`.|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -113,9 +153,9 @@
         <Parameter Name="statusCode" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="statusCode">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The string value that contains the error message.</param>
+        <param name="statusCode">The integer value that contains status code.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Services.Client.DataServiceClientException" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,10 +175,10 @@
         <Parameter Name="statusCode" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="innerException">To be added.</param>
-        <param name="statusCode">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The string value that contains the error message.</param>
+        <param name="innerException">The <see langword="System.Exception" /> object that contains the inner exception.</param>
+        <param name="statusCode">The integer value that contains status code.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Services.Client.DataServiceClientException" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -165,10 +205,17 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="info">The object that holds the serialized object data.</param>
+        <param name="context">The contextual information about the source or destination.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Services.Client.DataServiceClientException" /> class with serialized data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is called during deserialization to reconstitute the exception object transmitted over a stream. For more information, see [XML and SOAP Serialization](../Topic/XML%20and%20SOAP%20Serialization.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StatusCode">
@@ -185,8 +232,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the HTTP error status code returned after <see cref="T:System.Data.Services.Client.DataServiceClientException" />.</summary>
+        <value>An integer value that represents the exception.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

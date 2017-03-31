@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the type of border that a <see cref="T:System.Windows.Window" /> has. Used by the <see cref="P:System.Windows.Window.WindowStyle" /> property.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Windows.WindowStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Only the client area is visible - the title bar and border are not shown. A <see cref="T:System.Windows.Navigation.NavigationWindow" /> with a <see cref="P:System.Windows.Window.WindowStyle" /> of <see cref="F:System.Windows.WindowStyle.None" /> will still display the navigation [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)].</summary>
       </Docs>
     </Member>
     <Member MemberName="SingleBorderWindow">
@@ -43,7 +43,7 @@
         <ReturnType>System.Windows.WindowStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A window with a single border. This is the default value.</summary>
       </Docs>
     </Member>
     <Member MemberName="ThreeDBorderWindow">
@@ -59,7 +59,7 @@
         <ReturnType>System.Windows.WindowStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A window with a [!INCLUDE[TLA#tla_3d](~/includes/tlasharptla-3d-md.md)] border.</summary>
       </Docs>
     </Member>
     <Member MemberName="ToolWindow">
@@ -75,7 +75,7 @@
         <ReturnType>System.Windows.WindowStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A fixed tool window.</summary>
       </Docs>
     </Member>
   </Members>

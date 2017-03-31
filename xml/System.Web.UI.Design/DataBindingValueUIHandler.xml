@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a UI handler for data binding values.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.DataBindingValueUIHandler" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,10 +48,10 @@
         <Parameter Name="valueUIItemList" Type="System.Collections.ArrayList" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="propDesc">To be added.</param>
-        <param name="valueUIItemList">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> object that can provide additional context information.</param>
+        <param name="propDesc">A <see cref="T:System.ComponentModel.PropertyDescriptor" /> that represents the property to add a data binding for.</param>
+        <param name="valueUIItemList">An <see cref="T:System.Collections.ArrayList" /> of items that have data bindings.</param>
+        <summary>Adds a data binding for the specified property and the specified value item list, if the current control has data bindings and the current object does not already have a binding.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,29 +1,48 @@
 ---
 uid: System.Data.Common.CommandTrees.DbCaseExpression
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DbCaseExpression.Accept``1(System.Data.Common.CommandTrees.DbExpressionVisitor{``0})
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DbCaseExpression.When
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DbCaseExpression.Accept(System.Data.Common.CommandTrees.DbExpressionVisitor)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DbCaseExpression.Else
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DbCaseExpression.Then
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Common.CommandTrees.DbCaseExpression.Accept
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

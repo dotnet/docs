@@ -1,1 +1,0 @@
-                startStopButton.Dispatcher.BeginInvoke(DispatcherPriority.Normal, New NextPrimeDelegate(AddressOf CheckNextNumber))

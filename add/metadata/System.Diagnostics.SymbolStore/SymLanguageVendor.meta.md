@@ -1,14 +1,20 @@
 ---
 uid: System.Diagnostics.SymbolStore.SymLanguageVendor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.SymbolStore.SymLanguageVendor.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.SymbolStore.SymLanguageVendor.Microsoft
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

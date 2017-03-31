@@ -1,24 +1,29 @@
 ---
 uid: System.Web.Configuration.RootProfilePropertySettingsCollection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.RootProfilePropertySettingsCollection.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.RootProfilePropertySettingsCollection.Equals(System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.RootProfilePropertySettingsCollection.GroupSettings
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.RootProfilePropertySettingsCollection.GetHashCode
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

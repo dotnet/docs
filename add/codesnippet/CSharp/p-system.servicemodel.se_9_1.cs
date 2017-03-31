@@ -1,1 +1,0 @@
-            itcc.LocalIssuerBinding = new WSHttpBinding("LocalIssuerBinding");

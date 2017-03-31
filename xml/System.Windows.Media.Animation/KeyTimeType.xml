@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the different types that may represent a <see cref="T:System.Windows.Media.Animation.KeyTime" /> instance.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each key frame's <xref:System.Windows.Media.Animation.KeyTime> specifies when that key frame ends. It does not specify how long the key time plays. The amount of time a key frame plays is determined by when the key frame ends, when the previous key frame ended, and the animation's duration. See [Key-Frame Animations Overview](../Topic/Key-Frame%20Animations%20Overview.md) for more information.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Paced">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Media.Animation.KeyTimeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that adjacent KeyFrames are each allotted a slice of time proportional to their length, respectively.  The overall goal is to produce a length value that keeps the pace of the animation sequence constant.</summary>
       </Docs>
     </Member>
     <Member MemberName="Percent">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Media.Animation.KeyTimeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that each <see cref="T:System.Windows.Media.Animation.KeyTime" /> value is expressed as a percentage of the total time allotted for a given animation sequence.</summary>
       </Docs>
     </Member>
     <Member MemberName="TimeSpan">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.Media.Animation.KeyTimeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that each <see cref="P:System.Windows.Media.Animation.ByteKeyFrame.KeyTime" /> is expressed as a <see cref="P:System.Windows.Media.Animation.KeyTime.TimeSpan" /> value relative to the <see cref="P:System.Windows.Media.Animation.Timeline.BeginTime" /> of an animation sequence.</summary>
       </Docs>
     </Member>
     <Member MemberName="Uniform">
@@ -75,7 +82,7 @@
         <ReturnType>System.Windows.Media.Animation.KeyTimeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the allotted total time for an animation sequence is divided evenly amongst each of the key frames.</summary>
       </Docs>
     </Member>
   </Members>

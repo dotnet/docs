@@ -1,14 +1,17 @@
 ---
 uid: System.Web.Configuration.ScriptingRoleServiceSection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ScriptingRoleServiceSection.Enabled
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ScriptingRoleServiceSection.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -1,39 +1,52 @@
 ---
 uid: System.Windows.Input.ManipulationCompletedEventArgs
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Input.ManipulationCompletedEventArgs.IsInertial
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.ManipulationCompletedEventArgs.ManipulationContainer
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Input.ManipulationCompletedEventArgs.Cancel
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.ManipulationCompletedEventArgs.Manipulators
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.ManipulationCompletedEventArgs.TotalManipulation
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.ManipulationCompletedEventArgs.ManipulationOrigin
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.ManipulationCompletedEventArgs.FinalVelocities
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

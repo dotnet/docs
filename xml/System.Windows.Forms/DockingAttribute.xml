@@ -16,8 +16,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the default docking behavior for a control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can create new controls in Windows Forms derived either from an existing control or from <xref:System.Windows.Forms.UserControl>. Use this attribute on new controls to describe how the control should dock by default when placed on a form.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +38,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DockingAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +55,8 @@
         <Parameter Name="dockingBehavior" Type="System.Windows.Forms.DockingBehavior" />
       </Parameters>
       <Docs>
-        <param name="dockingBehavior">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="dockingBehavior">A <see cref="T:System.Windows.Forms.DockingBehavior" /> value specifying the default behavior.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DockingAttribute" /> class with the given docking behavior.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,7 +73,7 @@
         <ReturnType>System.Windows.Forms.DockingAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The default <see cref="T:System.Windows.Forms.DockingAttribute" /> for this control.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,8 +90,8 @@
         <ReturnType>System.Windows.Forms.DockingBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the docking behavior supplied to this attribute.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DockingBehavior" /> value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,9 +111,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The <see cref="T:System.Object" /> against which to compare this <see cref="T:System.Windows.Forms.DockingAttribute" />.</param>
+        <summary>Compares an arbitrary object with the <see cref="T:System.Windows.Forms.DockingAttribute" /> object for equality.</summary>
+        <returns>
+          <see langword="true" /> is <paramref name="obj" /> is equal to this <see cref="T:System.Windows.Forms.DockingAttribute" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,8 +132,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>The hash code for this object.</summary>
+        <returns>An <see cref="T:System.Int32" /> representing an in-memory hash of this object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,8 +151,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Specifies whether this <see cref="T:System.Windows.Forms.DockingAttribute" /> is the default docking attribute.</summary>
+        <returns>
+          <see langword="true" /> is the current <see cref="T:System.Windows.Forms.DockingAttribute" /> is the default; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

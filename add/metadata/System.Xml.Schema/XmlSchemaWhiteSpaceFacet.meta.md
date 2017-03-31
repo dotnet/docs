@@ -1,9 +1,13 @@
 ---
 uid: System.Xml.Schema.XmlSchemaWhiteSpaceFacet
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Schema.XmlSchemaWhiteSpaceFacet.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

@@ -1,79 +1,103 @@
 ---
 uid: System.Windows.Automation.Peers.DateTimeAutomationPeer
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DateTimeAutomationPeer.System#Windows#Automation#Provider#ITableItemProvider#GetRowHeaderItems
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DateTimeAutomationPeer.System#Windows#Automation#Provider#IInvokeProvider#Invoke
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DateTimeAutomationPeer.System#Windows#Automation#Provider#IGridItemProvider#ContainingGrid
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DateTimeAutomationPeer.System#Windows#Automation#Provider#ISelectionItemProvider#RemoveFromSelection
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DateTimeAutomationPeer.System#Windows#Automation#Provider#ISelectionItemProvider#Select
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DateTimeAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DateTimeAutomationPeer.System#Windows#Automation#Provider#IGridItemProvider#Column
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DateTimeAutomationPeer.System#Windows#Automation#Provider#ITableItemProvider#GetColumnHeaderItems
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DateTimeAutomationPeer.System#Windows#Automation#Provider#IGridItemProvider#ColumnSpan
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DateTimeAutomationPeer.System#Windows#Automation#Provider#ISelectionItemProvider#IsSelected
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DateTimeAutomationPeer.System#Windows#Automation#Provider#ISelectionItemProvider#SelectionContainer
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DateTimeAutomationPeer.System#Windows#Automation#Provider#IVirtualizedItemProvider#Realize
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DateTimeAutomationPeer.System#Windows#Automation#Provider#IGridItemProvider#RowSpan
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DateTimeAutomationPeer.System#Windows#Automation#Provider#ISelectionItemProvider#AddToSelection
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DateTimeAutomationPeer.System#Windows#Automation#Provider#IGridItemProvider#Row
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---

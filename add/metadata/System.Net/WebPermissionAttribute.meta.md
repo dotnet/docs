@@ -1,34 +1,41 @@
 ---
 uid: System.Net.WebPermissionAttribute
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebPermissionAttribute.AcceptPattern
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebPermissionAttribute.Connect
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebPermissionAttribute.CreatePermission
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebPermissionAttribute.Accept
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebPermissionAttribute.ConnectPattern
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebPermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

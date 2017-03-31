@@ -1,14 +1,20 @@
 ---
 uid: System.Windows.Automation.Peers.RibbonTabHeaderAutomationPeer
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonTabHeaderAutomationPeer.GetClassNameCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonTabHeaderAutomationPeer.#ctor(System.Windows.Controls.Ribbon.RibbonTabHeader)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

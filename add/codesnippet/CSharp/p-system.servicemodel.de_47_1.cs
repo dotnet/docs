@@ -1,1 +1,0 @@
-            Type type = cd.CallbackContractType;

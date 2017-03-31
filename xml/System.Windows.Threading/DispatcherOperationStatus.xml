@@ -10,8 +10,19 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Describes the possible values for the status of a <see cref="T:System.Windows.Threading.DispatcherOperation" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Threading.DispatcherOperation> is returned after a call to <xref:System.Windows.Threading.Dispatcher.BeginInvoke%2A>.  The <xref:System.Windows.Threading.DispatcherOperation> can be used to interact with the delegate on the <xref:System.Windows.Threading.Dispatcher> queue, such as changing the priority of the operation or aborting the operation.  
+  
+ The stages of a <xref:System.Windows.Threading.DispatcherOperation> are Pending, Executing, and Completed.  At any point before the operation completes, the status can be set to Aborted.  
+  
+<a name="xamlTextUsage_DispatcherOperationStatus"></a>   
+## XAML Text Usage  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Aborted">
@@ -27,7 +38,7 @@
         <ReturnType>System.Windows.Threading.DispatcherOperationStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The operation has aborted.</summary>
       </Docs>
     </Member>
     <Member MemberName="Completed">
@@ -43,7 +54,7 @@
         <ReturnType>System.Windows.Threading.DispatcherOperationStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The operation is completed.</summary>
       </Docs>
     </Member>
     <Member MemberName="Executing">
@@ -59,7 +70,7 @@
         <ReturnType>System.Windows.Threading.DispatcherOperationStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The operation started executing, but has not completed.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pending">
@@ -75,7 +86,7 @@
         <ReturnType>System.Windows.Threading.DispatcherOperationStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The operation is pending and is still in the <see cref="T:System.Windows.Threading.Dispatcher" /> queue.</summary>
       </Docs>
     </Member>
   </Members>

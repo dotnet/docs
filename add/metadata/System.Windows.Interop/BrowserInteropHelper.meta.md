@@ -1,24 +1,32 @@
 ---
 uid: System.Windows.Interop.BrowserInteropHelper
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Interop.BrowserInteropHelper.HostScript
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Interop.BrowserInteropHelper.ClientSite
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Interop.BrowserInteropHelper.IsBrowserHosted
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Interop.BrowserInteropHelper.Source
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

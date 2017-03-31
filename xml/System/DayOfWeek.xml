@@ -27,8 +27,28 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the day of the week.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.DayOfWeek> enumeration represents the day of the week in calendars that have seven days per week. The value of the constants in this enumeration ranges from Sunday to Saturday. If cast to an integer, its value ranges from zero (which indicates Sunday) to six (which indicates Saturday).  
+  
+ This enumeration is useful when it is desirable to have a strongly typed specification of the day of the week. For example, this enumeration is the type of the property value for the <xref:System.DateTime.DayOfWeek%2A?displayProperty=fullName> property.  
+  
+ The members of the <xref:System.DayOfWeek> enumeration are not localized. To return the localized name of the day of the week, call the <xref:System.DateTime.ToString%28System.String%29?displayProperty=fullName> or the <xref:System.DateTime.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=fullName> method with either the "ddd" or "dddd" format strings. The former format string produces the abbreviated weekday name; the latter produces the full weekday name.  
+  
+   
+  
+## Examples  
+ The following example demonstrates the <xref:System.DateTime.DayOfWeek%2A?displayProperty=fullName> property and the <xref:System.DayOfWeek> enumeration.  
+  
+ [!code-cpp[DateTime.DayOfWeek#1](~/samples/snippets/cpp/VS_Snippets_CLR/DateTime.DayOfWeek/CPP/dow.cpp#1)]
+ [!code-csharp[DateTime.DayOfWeek#1](~/samples/snippets/csharp/VS_Snippets_CLR/DateTime.DayOfWeek/CS/dow.cs#1)]
+ [!code-vb[DateTime.DayOfWeek#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/DateTime.DayOfWeek/VB/dow.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Friday">
@@ -56,7 +76,7 @@
         <ReturnType>System.DayOfWeek</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates Friday.</summary>
       </Docs>
     </Member>
     <Member MemberName="Monday">
@@ -84,7 +104,7 @@
         <ReturnType>System.DayOfWeek</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates Monday.</summary>
       </Docs>
     </Member>
     <Member MemberName="Saturday">
@@ -112,7 +132,7 @@
         <ReturnType>System.DayOfWeek</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates Saturday.</summary>
       </Docs>
     </Member>
     <Member MemberName="Sunday">
@@ -140,7 +160,7 @@
         <ReturnType>System.DayOfWeek</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates Sunday.</summary>
       </Docs>
     </Member>
     <Member MemberName="Thursday">
@@ -168,7 +188,7 @@
         <ReturnType>System.DayOfWeek</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates Thursday.</summary>
       </Docs>
     </Member>
     <Member MemberName="Tuesday">
@@ -196,7 +216,7 @@
         <ReturnType>System.DayOfWeek</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates Tuesday.</summary>
       </Docs>
     </Member>
     <Member MemberName="Wednesday">
@@ -224,7 +244,7 @@
         <ReturnType>System.DayOfWeek</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates Wednesday.</summary>
       </Docs>
     </Member>
   </Members>

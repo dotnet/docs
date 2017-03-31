@@ -16,8 +16,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the appropriate position for a <see cref="T:System.Activator" /> in the chain of activators.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The design of activators allows for more than one activator to participate in the activation process, and additional activators can be added to the chain by using <xref:System.Runtime.Remoting.Activation.IActivator.NextActivator%2A?displayProperty=fullName>. Because each activator is responsible for calling the next one in the chain, an activator can position itself anywhere in the chain. The <xref:System.Runtime.Remoting.Activation.ActivatorLevel> enumerator helps activators find the appropriate position in the chain.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AppDomain">
@@ -34,7 +41,7 @@
         <ReturnType>System.Runtime.Remoting.Activation.ActivatorLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Finds or creates a <see cref="T:System.AppDomain" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Construction">
@@ -51,7 +58,7 @@
         <ReturnType>System.Runtime.Remoting.Activation.ActivatorLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Constructs a blank object and runs the constructor.</summary>
       </Docs>
     </Member>
     <Member MemberName="Context">
@@ -68,7 +75,7 @@
         <ReturnType>System.Runtime.Remoting.Activation.ActivatorLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Finds or creates a suitable context.</summary>
       </Docs>
     </Member>
     <Member MemberName="Machine">
@@ -85,7 +92,7 @@
         <ReturnType>System.Runtime.Remoting.Activation.ActivatorLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Finds a suitable computer.</summary>
       </Docs>
     </Member>
     <Member MemberName="Process">
@@ -102,7 +109,7 @@
         <ReturnType>System.Runtime.Remoting.Activation.ActivatorLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Starts a process.</summary>
       </Docs>
     </Member>
   </Members>

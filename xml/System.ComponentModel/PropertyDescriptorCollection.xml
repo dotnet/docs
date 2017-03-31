@@ -27,8 +27,34 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a collection of <see cref="T:System.ComponentModel.PropertyDescriptor" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ComponentModel.PropertyDescriptorCollection> is read-only; it does not implement methods that add or remove properties. You must inherit from this class to implement these methods.  
+  
+ Using the properties available in the <xref:System.ComponentModel.PropertyDescriptorCollection> class, you can query the collection about its contents. Use the <xref:System.ComponentModel.PropertyDescriptorCollection.Count%2A> property to determine the number of elements in the collection. Use the [Item\<xref:System.ComponentModel.PropertyDescriptorCollection.Item%2A> property to get a specific property by index number or by name.  
+  
+ In addition to properties, you can use the <xref:System.ComponentModel.PropertyDescriptorCollection.Find%2A> method to get a description of the property with the specified name from the collection.  
+  
+   
+  
+## Examples  
+ The following code example creates a new <xref:System.ComponentModel.PropertyDescriptorCollection> using the properties on `button1`. It requires that `button1` has been instantiated on a form.  
+  
+ [!code-cpp[Classic PropertyDescriptorCollection Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic PropertyDescriptorCollection Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection Example/CS/source.cs#1)]
+ [!code-vb[Classic PropertyDescriptorCollection Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic PropertyDescriptorCollection Example/VB/source.vb#1)]  
+  
+ The next example prints all the properties on a button in a text box. It requires that `button1` and `textBox1` have been instantiated on a form.  
+  
+ [!code-cpp[Classic PropertyDescriptorCollection Example#2](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection Example/CPP/source.cpp#2)]
+ [!code-csharp[Classic PropertyDescriptorCollection Example#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection Example/CS/source.cs#2)]
+ [!code-vb[Classic PropertyDescriptorCollection Example#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic PropertyDescriptorCollection Example/VB/source.vb#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -53,8 +79,8 @@
         <Parameter Name="properties" Type="System.ComponentModel.PropertyDescriptor[]" />
       </Parameters>
       <Docs>
-        <param name="properties">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="properties">An array of type <see cref="T:System.ComponentModel.PropertyDescriptor" /> that provides the properties for this collection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,9 +107,9 @@
         <Parameter Name="readOnly" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="properties">To be added.</param>
-        <param name="readOnly">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="properties">An array of type <see cref="T:System.ComponentModel.PropertyDescriptor" /> that provides the properties for this collection.</param>
+        <param name="readOnly">If <see langword="true" />, specifies that the collection cannot be modified.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> class, which is optionally read-only.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,10 +138,11 @@
         <Parameter Name="value" Type="System.ComponentModel.PropertyDescriptor" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.ComponentModel.PropertyDescriptor" /> to add to the collection.</param>
+        <summary>Adds the specified <see cref="T:System.ComponentModel.PropertyDescriptor" /> to the collection.</summary>
+        <returns>The index of the <see cref="T:System.ComponentModel.PropertyDescriptor" /> that was added to the collection.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -141,8 +168,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes all <see cref="T:System.ComponentModel.PropertyDescriptor" /> objects from the collection.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -170,9 +198,10 @@
         <Parameter Name="value" Type="System.ComponentModel.PropertyDescriptor" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.ComponentModel.PropertyDescriptor" /> to find in the collection.</param>
+        <summary>Returns whether the collection contains the given <see cref="T:System.ComponentModel.PropertyDescriptor" />.</summary>
+        <returns>
+          <see langword="true" /> if the collection contains the given <see cref="T:System.ComponentModel.PropertyDescriptor" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -202,9 +231,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">An array of <see cref="T:System.ComponentModel.PropertyDescriptor" /> objects to copy elements of the collection to.</param>
+        <param name="index">The index of the <c>array</c> parameter at which copying begins.</param>
+        <summary>Copies the entire collection to an array, starting at the specified index number.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -230,9 +259,25 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of property descriptors in the collection.</summary>
+        <value>The number of property descriptors in the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.ComponentModel.PropertyDescriptorCollection.Count%2A> property to set the limits of a loop that iterates through a collection of objects. Because the collection is zero-based, be sure to use `Count - 1` as the upper boundary of the loop.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.ComponentModel.PropertyDescriptorCollection.Count%2A> property to print the number of properties on `button1`. It requires that `button1` and `textBox1` have been instantiated on a form.  
+  
+ [!code-cpp[Classic PropertyDescriptorCollection.Count Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.Count Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic PropertyDescriptorCollection.Count Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.Count Example/CS/source.cs#1)]
+ [!code-vb[Classic PropertyDescriptorCollection.Count Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.Count Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Empty">
@@ -257,7 +302,7 @@
         <ReturnType>System.ComponentModel.PropertyDescriptorCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies an empty collection that you can use instead of creating a new one with no items. This <see langword="static" /> field is read-only.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -287,11 +332,23 @@
         <Parameter Name="ignoreCase" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="ignoreCase">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the <see cref="T:System.ComponentModel.PropertyDescriptor" /> to return from the collection.</param>
+        <param name="ignoreCase">
+          <see langword="true" /> if you want to ignore the case of the property name; otherwise, <see langword="false" />.</param>
+        <summary>Returns the <see cref="T:System.ComponentModel.PropertyDescriptor" /> with the specified name, using a Boolean to indicate whether to ignore case.</summary>
+        <returns>A <see cref="T:System.ComponentModel.PropertyDescriptor" /> with the specified name, or <see langword="null" /> if the property does not exist.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example finds a specific <xref:System.ComponentModel.PropertyDescriptor>. It prints the type of component for this <xref:System.ComponentModel.PropertyDescriptor> in a text box. It requires that `button1` and `textBox1` have been instantiated on a form.  
+  
+ [!code-cpp[Classic PropertyDescriptorCollection.Find Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.Find Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic PropertyDescriptorCollection.Find Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.Find Example/CS/source.cs#1)]
+ [!code-vb[Classic PropertyDescriptorCollection.Find Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.Find Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -317,9 +374,20 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns an enumerator for this class.</summary>
+        <returns>An enumerator of type <see cref="T:System.Collections.IEnumerator" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example gets an enumerator for the properties on `button1`. It uses the enumerator to print the names of the properties in the collection. It requires that `button1` and `textBox1` have been instantiated on a form.  
+  
+ [!code-cpp[Classic PropertyDescriptorCollection.GetEnumerator Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.GetEnumerator Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic PropertyDescriptorCollection.GetEnumerator Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.GetEnumerator Example/CS/source.cs#1)]
+ [!code-vb[Classic PropertyDescriptorCollection.GetEnumerator Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.GetEnumerator Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -347,9 +415,9 @@
         <Parameter Name="value" Type="System.ComponentModel.PropertyDescriptor" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.ComponentModel.PropertyDescriptor" /> to return the index of.</param>
+        <summary>Returns the index of the given <see cref="T:System.ComponentModel.PropertyDescriptor" />.</summary>
+        <returns>The index of the given <see cref="T:System.ComponentModel.PropertyDescriptor" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -379,10 +447,11 @@
         <Parameter Name="value" Type="System.ComponentModel.PropertyDescriptor" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The index at which to add the <c>value</c> parameter to the collection.</param>
+        <param name="value">The <see cref="T:System.ComponentModel.PropertyDescriptor" /> to add to the collection.</param>
+        <summary>Adds the <see cref="T:System.ComponentModel.PropertyDescriptor" /> to the collection at the specified index number.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
       </Docs>
     </Member>
     <Member MemberName="InternalSort">
@@ -410,8 +479,8 @@
         <Parameter Name="sorter" Type="System.Collections.IComparer" />
       </Parameters>
       <Docs>
-        <param name="sorter">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="sorter">A comparer to use to sort the <see cref="T:System.ComponentModel.PropertyDescriptor" /> objects in this collection.</param>
+        <summary>Sorts the members of this collection, using the specified <see cref="T:System.Collections.IComparer" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -440,9 +509,20 @@
         <Parameter Name="names" Type="System.String[]" />
       </Parameters>
       <Docs>
-        <param name="names">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="names">An array of strings describing the order in which to sort the <see cref="T:System.ComponentModel.PropertyDescriptor" /> objects in this collection.</param>
+        <summary>Sorts the members of this collection. The specified order is applied first, followed by the default sort for this collection, which is usually alphabetical.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example defines the sort order for the <xref:System.ComponentModel.PropertyDescriptorCollection.InternalSort%2A> method. If the <xref:System.ComponentModel.PropertyDescriptorCollection> contains four <xref:System.ComponentModel.PropertyDescriptor> objects with the names `A`, `B`, `C`, and `D`, the properties of `myNewColl` would be sorted in the order `D`, `B`, `A`, and `C`.  
+  
+ [!code-cpp[Classic EventDescriptorCollection.InternalSort Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic EventDescriptorCollection.InternalSort Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic EventDescriptorCollection.InternalSort Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic EventDescriptorCollection.InternalSort Example/CS/source.cs#1)]
+ [!code-vb[Classic EventDescriptorCollection.InternalSort Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic EventDescriptorCollection.InternalSort Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -470,10 +550,27 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index of the <see cref="T:System.ComponentModel.PropertyDescriptor" /> to get or set.</param>
+        <summary>Gets or sets the <see cref="T:System.ComponentModel.PropertyDescriptor" /> at the specified index number.</summary>
+        <value>The <see cref="T:System.ComponentModel.PropertyDescriptor" /> with the specified index number.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The index number is zero-based. Therefore, you must subtract 1 from the numerical position of a particular <xref:System.ComponentModel.PropertyDescriptor> to access that <xref:System.ComponentModel.PropertyDescriptor>. For example, to get the third <xref:System.ComponentModel.PropertyDescriptor>, you need to specify `myColl[2]`.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.ComponentModel.PropertyDescriptorCollection.Item%2A> property to print the name of the <xref:System.ComponentModel.PropertyDescriptor> specified by the index number in a text box. Because the index number is zero-based, this example prints the name of the second <xref:System.ComponentModel.PropertyDescriptor>. It requires that `button1` has been instantiated on a form.  
+  
+ [!code-cpp[Classic PropertyDescriptorCollection.this Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.this Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic PropertyDescriptorCollection.this Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.this Example/CS/source.cs#1)]
+ [!code-vb[Classic PropertyDescriptorCollection.this Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.this Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.IndexOutOfRangeException">The <paramref name="index" /> parameter is not a valid index for <see cref="P:System.ComponentModel.PropertyDescriptorCollection.Item(System.Int32)" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -501,10 +598,26 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the <see cref="T:System.ComponentModel.PropertyDescriptor" /> to get from the collection.</param>
+        <summary>Gets or sets the <see cref="T:System.ComponentModel.PropertyDescriptor" /> with the specified name.</summary>
+        <value>The <see cref="T:System.ComponentModel.PropertyDescriptor" /> with the specified name, or <see langword="null" /> if the property does not exist.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.PropertyDescriptorCollection.Item%2A> property is case-sensitive when searching for names. That is, the names "Pname" and "pname" are considered to be two different properties.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.ComponentModel.PropertyDescriptorCollection.Item%2A> property to print the type of component for the <xref:System.ComponentModel.PropertyDescriptor> specified by the index. It requires that `button1` and `textBox1` have been instantiated on a form.  
+  
+ [!code-cpp[Classic PropertyDescriptorCollection.this1 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.this1 Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic PropertyDescriptorCollection.this1 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.this1 Example/CS/source.cs#1)]
+ [!code-vb[Classic PropertyDescriptorCollection.this1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.this1 Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -532,9 +645,10 @@
         <Parameter Name="value" Type="System.ComponentModel.PropertyDescriptor" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The <see cref="T:System.ComponentModel.PropertyDescriptor" /> to remove from the collection.</param>
+        <summary>Removes the specified <see cref="T:System.ComponentModel.PropertyDescriptor" /> from the collection.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -562,9 +676,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The index of the <see cref="T:System.ComponentModel.PropertyDescriptor" /> to remove from the collection.</param>
+        <summary>Removes the <see cref="T:System.ComponentModel.PropertyDescriptor" /> at the specified index from the collection.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
       </Docs>
     </Member>
     <Member MemberName="Sort">
@@ -590,8 +705,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Sorts the members of this collection, using the default sort for this collection, which is usually alphabetical.</summary>
+        <returns>A new <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> that contains the sorted <see cref="T:System.ComponentModel.PropertyDescriptor" /> objects.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -620,9 +735,9 @@
         <Parameter Name="comparer" Type="System.Collections.IComparer" />
       </Parameters>
       <Docs>
-        <param name="comparer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="comparer">A comparer to use to sort the <see cref="T:System.ComponentModel.PropertyDescriptor" /> objects in this collection.</param>
+        <summary>Sorts the members of this collection, using the specified <see cref="T:System.Collections.IComparer" />.</summary>
+        <returns>A new <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> that contains the sorted <see cref="T:System.ComponentModel.PropertyDescriptor" /> objects.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -651,10 +766,21 @@
         <Parameter Name="names" Type="System.String[]" />
       </Parameters>
       <Docs>
-        <param name="names">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="names">An array of strings describing the order in which to sort the <see cref="T:System.ComponentModel.PropertyDescriptor" /> objects in this collection.</param>
+        <summary>Sorts the members of this collection. The specified order is applied first, followed by the default sort for this collection, which is usually alphabetical.</summary>
+        <returns>A new <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> that contains the sorted <see cref="T:System.ComponentModel.PropertyDescriptor" /> objects.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example defines the sort order for the <xref:System.ComponentModel.PropertyDescriptorCollection.Sort%2A> method. If the <xref:System.ComponentModel.PropertyDescriptorCollection> contains four <xref:System.ComponentModel.PropertyDescriptor> objects with the names `A`, `B`, `C`, and `D`, the properties of `myNewColl` would be sorted in the order `D`, `B`, `A`, and `C`.  
+  
+ [!code-cpp[classic eventdescriptorcollection.sort example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic EventDescriptorCollection.Sort Example/CPP/source.cpp#1)]
+ [!code-csharp[classic eventdescriptorcollection.sort example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic EventDescriptorCollection.Sort Example/CS/source.cs#1)]
+ [!code-vb[classic eventdescriptorcollection.sort example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic EventDescriptorCollection.Sort Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Sort">
@@ -683,11 +809,22 @@
         <Parameter Name="comparer" Type="System.Collections.IComparer" />
       </Parameters>
       <Docs>
-        <param name="names">To be added.</param>
-        <param name="comparer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="names">An array of strings describing the order in which to sort the <see cref="T:System.ComponentModel.PropertyDescriptor" /> objects in this collection.</param>
+        <param name="comparer">A comparer to use to sort the <see cref="T:System.ComponentModel.PropertyDescriptor" /> objects in this collection.</param>
+        <summary>Sorts the members of this collection. The specified order is applied first, followed by the sort using the specified <see cref="T:System.Collections.IComparer" />.</summary>
+        <returns>A new <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> that contains the sorted <see cref="T:System.ComponentModel.PropertyDescriptor" /> objects.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example defines the sort order for the [Sort Method (String\<xref:System.ComponentModel.PropertyDescriptorCollection.Sort%2A> method. If the <xref:System.ComponentModel.PropertyDescriptorCollection> contains four <xref:System.ComponentModel.PropertyDescriptor> objects with the names `A`, `B`, `C`, and `D`, the properties of `myNewColl` would be sorted in the order `D`, `B`, `A`, and `C`.  
+  
+ [!code-cpp[classic eventdescriptorcollection.sort example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic EventDescriptorCollection.Sort Example/CPP/source.cpp#1)]
+ [!code-csharp[classic eventdescriptorcollection.sort example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic EventDescriptorCollection.Sort Example/CS/source.cs#1)]
+ [!code-vb[classic eventdescriptorcollection.sort example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic EventDescriptorCollection.Sort Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.Count">
@@ -708,8 +845,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of elements contained in the collection.</summary>
+        <value>The number of elements contained in the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -735,8 +872,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether access to the collection is synchronized (thread safe).</summary>
+        <value>
+          <see langword="true" /> if access to the collection is synchronized (thread safe); otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -762,8 +900,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an object that can be used to synchronize access to the collection.</summary>
+        <value>An object that can be used to synchronize access to the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -793,10 +931,13 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="key">The <see cref="T:System.Object" /> to use as the key of the element to add.</param>
+        <param name="value">The <see cref="T:System.Object" /> to use as the value of the element to add.</param>
+        <summary>Adds an element with the provided key and value to the <see cref="T:System.Collections.IDictionary" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Clear">
@@ -818,7 +959,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes all elements from the <see cref="T:System.Collections.IDictionary" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -847,9 +988,10 @@
         <Parameter Name="key" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">The key to locate in the <see cref="T:System.Collections.IDictionary" />.</param>
+        <summary>Determines whether the <see cref="T:System.Collections.IDictionary" /> contains an element with the specified key.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Collections.IDictionary" /> contains an element with the key; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -876,9 +1018,20 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns an enumerator for this class.</summary>
+        <returns>An enumerator of type <see cref="T:System.Collections.IEnumerator" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example gets an enumerator for the properties on `button1`. It uses the enumerator to print the names of the properties in the collection. It requires that `button1` and `textBox1` have been instantiated on a form.  
+  
+ [!code-cpp[Classic PropertyDescriptorCollection.GetEnumerator Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.GetEnumerator Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic PropertyDescriptorCollection.GetEnumerator Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.GetEnumerator Example/CS/source.cs#1)]
+ [!code-vb[Classic PropertyDescriptorCollection.GetEnumerator Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.GetEnumerator Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.IsFixedSize">
@@ -903,8 +1056,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the <see cref="T:System.Collections.IDictionary" /> has a fixed size.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Collections.IDictionary" /> has a fixed size; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -930,8 +1084,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the <see cref="T:System.Collections.IDictionary" /> is read-only.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Collections.IDictionary" /> is read-only; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -960,9 +1115,9 @@
         <Parameter Name="key" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="key">The key of the element to get or set.</param>
+        <summary>Gets or sets the element with the specified key.</summary>
+        <value>The element with the specified key.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -988,8 +1143,8 @@
         <ReturnType>System.Collections.ICollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an <see cref="T:System.Collections.ICollection" /> containing the keys of the <see cref="T:System.Collections.IDictionary" />.</summary>
+        <value>An <see cref="T:System.Collections.ICollection" /> containing the keys of the <see cref="T:System.Collections.IDictionary" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1018,8 +1173,8 @@
         <Parameter Name="key" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="key">The key of the element to remove.</param>
+        <summary>Removes the element with the specified key from the <see cref="T:System.Collections.IDictionary" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1045,8 +1200,8 @@
         <ReturnType>System.Collections.ICollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an <see cref="T:System.Collections.ICollection" /> containing the values in the <see cref="T:System.Collections.IDictionary" />.</summary>
+        <value>An <see cref="T:System.Collections.ICollection" /> containing the values in the <see cref="T:System.Collections.IDictionary" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1069,8 +1224,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an <see cref="T:System.Collections.IEnumerator" /> for the <see cref="T:System.Collections.IDictionary" />.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> for the <see cref="T:System.Collections.IDictionary" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1099,9 +1254,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The item to add to the collection.</param>
+        <summary>Adds an item to the <see cref="T:System.Collections.IList" />.</summary>
+        <returns>The position into which the new element was inserted.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1124,8 +1279,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes all items from the collection.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Contains">
@@ -1153,9 +1309,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The item to locate in the collection.</param>
+        <summary>Determines whether the collection contains a specific value.</summary>
+        <returns>
+          <see langword="true" /> if the item is found in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1184,9 +1341,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The item to locate in the collection.</param>
+        <summary>Determines the index of a specified item in the collection.</summary>
+        <returns>The index of <paramref name="value" /> if found in the list, otherwise -1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1216,10 +1373,11 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The zero-based index at which <c>value</c> should be inserted.</param>
+        <param name="value">The item to insert into the collection.</param>
+        <summary>Inserts an item into the collection at a specified index.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsFixedSize">
@@ -1244,8 +1402,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the collection has a fixed size.</summary>
+        <value>
+          <see langword="true" /> if the collection has a fixed size; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1271,8 +1430,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the collection is read-only.</summary>
+        <value>
+          <see langword="true" /> if the collection is read-only; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1301,10 +1461,19 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The zero-based index of the item to get or set.</param>
+        <summary>Gets or sets an item from the collection at a specified index.</summary>
+        <value>The element at the specified index.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> is not a <see cref="T:System.ComponentModel.PropertyDescriptor" />.</exception>
+        <exception cref="T:System.IndexOutOfRangeException">
+          <paramref name="index" /> is less than 0.  
+  
+ -or-  
+  
+ <paramref name="index" /> is equal to or greater than <see cref="P:System.ComponentModel.EventDescriptorCollection.Count" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Remove">
@@ -1332,9 +1501,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The item to remove from the collection.</param>
+        <summary>Removes the first occurrence of a specified value from the collection.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.RemoveAt">
@@ -1358,9 +1528,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The zero-based index of the item to remove.</param>
+        <summary>Removes the item at the specified index.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
       </Docs>
     </Member>
   </Members>

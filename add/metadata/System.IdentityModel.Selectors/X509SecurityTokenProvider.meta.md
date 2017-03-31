@@ -1,29 +1,48 @@
 ---
 uid: System.IdentityModel.Selectors.X509SecurityTokenProvider
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.IdentityModel.Selectors.X509SecurityTokenProvider.Dispose
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.IdentityModel.Selectors.X509SecurityTokenProvider.Certificate
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.IdentityModel.Selectors.X509SecurityTokenProvider.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate2)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.IdentityModel.Selectors.X509SecurityTokenProvider.#ctor(System.Security.Cryptography.X509Certificates.StoreLocation,System.Security.Cryptography.X509Certificates.StoreName,System.Security.Cryptography.X509Certificates.X509FindType,System.Object)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.IdentityModel.Selectors.X509SecurityTokenProvider.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.IdentityModel.Selectors.X509SecurityTokenProvider.GetTokenCore(System.TimeSpan)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -16,8 +16,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides extensible Application Markup Language (XAML) serialization services for a <see cref="T:System.Workflow.ComponentModel.CompositeActivity" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ <xref:System.Workflow.ComponentModel.Serialization.CompositeActivityMarkupSerializer> performs any serialization required for composite activities to be represented in an XAML file associated with a workflow designer.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +42,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Serialization.CompositeActivityMarkupSerializer" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

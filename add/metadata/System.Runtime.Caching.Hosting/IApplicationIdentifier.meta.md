@@ -1,9 +1,13 @@
 ---
 uid: System.Runtime.Caching.Hosting.IApplicationIdentifier
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.Hosting.IApplicationIdentifier.GetApplicationId
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "ghogen"
 ---

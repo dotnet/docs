@@ -10,8 +10,23 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the types of buttons to display for navigating between pages of content in a paginated control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.PagerButtons> enumeration represents the types of buttons to display for navigating between pages of content in a paginated control. This enumeration is used by the <xref:System.Web.UI.WebControls.PagerSettings.Mode%2A> property to specify the type of navigation buttons to display in controls that use the <xref:System.Web.UI.WebControls.PagerSettings> class, such as <xref:System.Web.UI.WebControls.GridView> and <xref:System.Web.UI.WebControls.DetailsView>.  
+  
+ `PagerButtons.NextPrevious` displays **Next** and **Previous** buttons to access the next and previous pages of the paginated control.  
+  
+ `PagerButtons.NextPreviousFirstLast` displays **Next** and **Previous** buttons as well as **First** and **Last** buttons to directly access the first and last pages of the paginated control.  
+  
+ `PagerButtons.Numeric` displays numeric link buttons corresponding to the pages of the paginated control.  
+  
+ `PagerButtons.NumericFirstLast` displays numeric link buttons corresponding to the pages of the paginated control as well as **First** and **Last** buttons to directly access the first and last pages of the paginated control.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="NextPrevious">
@@ -27,7 +42,7 @@
         <ReturnType>System.Web.UI.WebControls.PagerButtons</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A set of pagination controls consisting of **Previous** and **Next** buttons.</summary>
       </Docs>
     </Member>
     <Member MemberName="NextPreviousFirstLast">
@@ -43,7 +58,7 @@
         <ReturnType>System.Web.UI.WebControls.PagerButtons</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A set of pagination controls consisting of **Previous**, **Next**, **First**, and **Last** buttons.</summary>
       </Docs>
     </Member>
     <Member MemberName="Numeric">
@@ -59,7 +74,7 @@
         <ReturnType>System.Web.UI.WebControls.PagerButtons</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A set of pagination controls consisting of numbered link buttons to access pages directly.</summary>
       </Docs>
     </Member>
     <Member MemberName="NumericFirstLast">
@@ -75,7 +90,7 @@
         <ReturnType>System.Web.UI.WebControls.PagerButtons</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A set of pagination controls consisting of numbered and **First** and **Last** link buttons.</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,19 +1,34 @@
 ---
 uid: System.Workflow.Runtime.Tracking.WorkflowTrackingLocation
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Tracking.WorkflowTrackingLocation.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Tracking.WorkflowTrackingLocation.#ctor(System.Collections.Generic.IList{System.Workflow.Runtime.Tracking.TrackingWorkflowEvent})
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Runtime.Tracking.WorkflowTrackingLocation.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Tracking.WorkflowTrackingLocation.Events
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -1,1 +1,0 @@
-        Dim properties As PropertyDescriptorCollection = TypeDescriptor.GetProperties(button1)

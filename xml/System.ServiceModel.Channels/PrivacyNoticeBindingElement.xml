@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the binding element that contains the privacy policy for the WS-Federation binding.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.PrivacyNoticeBindingElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,8 +47,8 @@
         <Parameter Name="elementToBeCloned" Type="System.ServiceModel.Channels.PrivacyNoticeBindingElement" />
       </Parameters>
       <Docs>
-        <param name="elementToBeCloned">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="elementToBeCloned">The <see cref="T:System.ServiceModel.Channels.PrivacyNoticeBindingElement" /> used to initialize the new element.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.PrivacyNoticeBindingElement" /> class from an existing element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,8 +66,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a copy of the current binding element.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.BindingElement" /> that is a copy of the current element.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,11 +94,18 @@
         <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The interface whose support is being tested.</typeparam>
+        <param name="context">The <see cref="T:System.ServiceModel.Channels.BindingContext" /> for the current binding element.</param>
+        <summary>Queries the binding element stack to see whether it supports a particular interface.</summary>
+        <returns>The interface whose support is being tested.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calls <xref:System.ServiceModel.Channels.BindingElement.GetProperty%60%601%28System.ServiceModel.Channels.BindingContext%29> on the next binding element in the binding context.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Description.IPolicyExportExtension.ExportPolicy">
@@ -118,9 +125,9 @@
         <Parameter Name="context" Type="System.ServiceModel.Description.PolicyConversionContext" />
       </Parameters>
       <Docs>
-        <param name="exporter">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="exporter">The <see cref="T:System.ServiceModel.Description.MetadataExporter" /> that you can use to modify the exporting process.</param>
+        <param name="context">The <see cref="T:System.ServiceModel.Description.PolicyConversionContext" /> that contains the binding assertions and elements associated with the policy.</param>
+        <summary>Exports custom policy assertions regarding the privacy notice from the binding elements that contain the policy.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,8 +144,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the URI at which the privacy notice is located.</summary>
+        <value>The <see cref="T:System.Uri" /> at which the privacy notice is located.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,8 +162,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the privacy notice version number for the binding.</summary>
+        <value>The version number of the privacy notice.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

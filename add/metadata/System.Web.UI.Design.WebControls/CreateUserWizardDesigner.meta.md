@@ -1,49 +1,59 @@
 ---
 uid: System.Web.UI.Design.WebControls.CreateUserWizardDesigner
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.CreateUserWizardDesigner.PreFilterProperties(System.Collections.IDictionary)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.CreateUserWizardDesigner.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.CreateUserWizardDesigner.Initialize(System.ComponentModel.IComponent)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.CreateUserWizardDesigner.GetErrorDesignTimeHtml(System.Exception)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.CreateUserWizardDesigner.ActionLists
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.CreateUserWizardDesigner.UsePreviewControl
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.CreateUserWizardDesigner.AddDesignerRegions(System.Web.UI.Design.DesignerRegionCollection)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.CreateUserWizardDesigner.AutoFormats
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.CreateUserWizardDesigner.ConvertToCustomNavigationTemplate
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

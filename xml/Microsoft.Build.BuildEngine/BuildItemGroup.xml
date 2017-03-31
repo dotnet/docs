@@ -20,8 +20,23 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a collection of <see cref="T:Microsoft.Build.BuildEngine.BuildItem" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:Microsoft.Build.BuildEngine.BuildItemGroup> object can represent an  element in the project, or a virtual collection of items, containing the items created after evaluating wildcards in the `Include` and `Exclude` attributes of an `Item` element.  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:Microsoft.Build.BuildEngine.Project> object and uses the <xref:Microsoft.Build.BuildEngine.Project.LoadXml%2A> method to add content to the project. The <xref:Microsoft.Build.BuildEngine.BuildItem>, <xref:Microsoft.Build.BuildEngine.BuildItemGroup>, and <xref:Microsoft.Build.BuildEngine.BuildItemGroupCollection> classes are used to add, remove, and change items in the project.  
+  
+ [!code-csharp[msbuild_AddNewItem#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_AddNewItem/CS/Program.cs#1)]
+ [!code-vb[msbuild_AddNewItem#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_AddNewItem/VB/Module1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,7 +50,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.BuildEngine.BuildItemGroup" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,11 +71,21 @@
         <Parameter Name="itemInclude" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="itemName">To be added.</param>
-        <param name="itemInclude">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="itemName">The <see cref="P:Microsoft.Build.BuildEngine.BuildItem.Name" /> property value to assign the new <see cref="T:Microsoft.Build.BuildEngine.BuildItem" />.</param>
+        <param name="itemInclude">The <see cref="P:Microsoft.Build.BuildEngine.BuildItem.Include" /> property value to assign the new <see cref="T:Microsoft.Build.BuildEngine.BuildItem" />.</param>
+        <summary>Adds a new <see cref="T:Microsoft.Build.BuildEngine.BuildItem" /> with the specified <see cref="P:Microsoft.Build.BuildEngine.BuildItem.Name" /> and <see cref="P:Microsoft.Build.BuildEngine.BuildItem.Include" /> property values to the <see cref="T:Microsoft.Build.BuildEngine.BuildItemGroup" />.</summary>
+        <returns>The new <see cref="T:Microsoft.Build.BuildEngine.BuildItem" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a <xref:Microsoft.Build.BuildEngine.Project> object and uses the <xref:Microsoft.Build.BuildEngine.Project.LoadXml%2A> method to add content to the project. The <xref:Microsoft.Build.BuildEngine.BuildItem>, <xref:Microsoft.Build.BuildEngine.BuildItemGroup>, and <xref:Microsoft.Build.BuildEngine.BuildItemGroupCollection> classes are used to add, remove, and change items in the project.  
+  
+ [!code-csharp[msbuild_AddNewItem#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_AddNewItem/CS/Program.cs#1)]
+ [!code-vb[msbuild_AddNewItem#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_AddNewItem/VB/Module1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddNewItem">
@@ -81,11 +106,12 @@
         <Parameter Name="treatItemIncludeAsLiteral" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="itemName">To be added.</param>
-        <param name="itemInclude">To be added.</param>
-        <param name="treatItemIncludeAsLiteral">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="itemName">The <see cref="P:Microsoft.Build.BuildEngine.BuildItem.Name" /> property value to assign the new <see cref="T:Microsoft.Build.BuildEngine.BuildItem" />.</param>
+        <param name="itemInclude">The <see cref="P:Microsoft.Build.BuildEngine.BuildItem.Include" /> property value to assign the new <see cref="T:Microsoft.Build.BuildEngine.BuildItem" />.</param>
+        <param name="treatItemIncludeAsLiteral">
+          <see langword="true" /> to treat the <c>itemInclude</c> parameter as a literal value; otherwise, <see langword="false" />.</param>
+        <summary>Adds a new <see cref="T:Microsoft.Build.BuildEngine.BuildItem" /> with the specified <see cref="P:Microsoft.Build.BuildEngine.BuildItem.Name" /> and <see cref="P:Microsoft.Build.BuildEngine.BuildItem.Include" /> property values to the <see cref="T:Microsoft.Build.BuildEngine.BuildItemGroup" />, allowing you to specify whether the <see cref="P:Microsoft.Build.BuildEngine.BuildItem.Include" /> property value is treated as a literal.</summary>
+        <returns>The new <see cref="T:Microsoft.Build.BuildEngine.BuildItem" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,7 +129,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes the <see cref="P:Microsoft.Build.BuildEngine.BuildItemGroup.Condition" /> property value and all <see cref="T:Microsoft.Build.BuildEngine.BuildItem" /> objects from the <see cref="T:Microsoft.Build.BuildEngine.BuildItemGroup" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,10 +149,22 @@
         <Parameter Name="deepClone" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="deepClone">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="deepClone">
+          <see langword="true" /> to create a deep copy of the <see cref="T:Microsoft.Build.BuildEngine.BuildItemGroup" />; otherwise, <see langword="false" />.</param>
+        <summary>Creates a deep or shallow copy of the <see cref="T:Microsoft.Build.BuildEngine.BuildItemGroup" />.</summary>
+        <returns>A copy of the <see cref="T:Microsoft.Build.BuildEngine.BuildItemGroup" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A shallow copy of a <xref:Microsoft.Build.BuildEngine.BuildItemGroup> references the same property group as the original. Modifications a shallow copy will be reflected in both copies.  
+  
+ A deep copy of a <xref:Microsoft.Build.BuildEngine.BuildItemGroup> creates a new XML element to reference so that both copies of the <xref:Microsoft.Build.BuildEngine.BuildItemGroup> can be independently modified.  
+  
+ If the <xref:Microsoft.Build.BuildEngine.BuildItemGroup> corresponds directly to a  element in the project (rather than corresponding to a collection of items created after evaluating wildcards in the `Include` and `Exclude` attributes of an `Item` element), only deep copies are allowed.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Condition">
@@ -142,8 +180,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <c>Condition</c> attribute value of the item group.</summary>
+        <value>The <c>Condition</c> attribute value of the item group.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,8 +198,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating the number of <see cref="T:Microsoft.Build.BuildEngine.BuildItem" /> objects in the <see cref="T:Microsoft.Build.BuildEngine.BuildItemGroup" />.</summary>
+        <value>An integer value representing the number of <see cref="T:Microsoft.Build.BuildEngine.BuildItem" /> objects in the <see cref="T:Microsoft.Build.BuildEngine.BuildItemGroup" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -179,9 +217,24 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets an enumerator that iterates through the <see cref="T:Microsoft.Build.BuildEngine.BuildItemGroup" />.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> for the entire <see cref="T:Microsoft.Build.BuildEngine.BuildItemGroup" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method allows the caller to use the `foreach` statement of the C# language (`for each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) to iterate through the individual <xref:Microsoft.Build.BuildEngine.BuildItem> objects in the <xref:Microsoft.Build.BuildEngine.BuildItemGroup>.  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:Microsoft.Build.BuildEngine.Project> object and uses the <xref:Microsoft.Build.BuildEngine.BuildItem>, <xref:Microsoft.Build.BuildEngine.BuildProperty><xref:Microsoft.Build.BuildEngine.BuildItemGroup>, and <xref:Microsoft.Build.BuildEngine.BuildPropertyGroup> classes to list all the items and properties in the project.  
+  
+ [!code-csharp[msbuild_ListItemsAndProperties#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_ListItemsAndProperties/CS/Program.cs#1)]
+ [!code-vb[msbuild_ListItemsAndProperties#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_ListItemsAndProperties/VB/Module1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsImported">
@@ -197,8 +250,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value indicating whether the item group was imported into the project.</summary>
+        <value>
+          <see langword="true" /> if the item group was imported into the project; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -218,9 +272,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The zero-based index of the <see cref="T:Microsoft.Build.BuildEngine.BuildItem" /> object to get or set.</param>
+        <summary>Gets or sets a <see cref="T:Microsoft.Build.BuildEngine.BuildItem" /> object in this <see cref="T:Microsoft.Build.BuildEngine.BuildItemGroup" />.</summary>
+        <value>A <see cref="T:Microsoft.Build.BuildEngine.BuildItem" /> object in this <see cref="T:Microsoft.Build.BuildEngine.BuildItemGroup" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -240,9 +294,19 @@
         <Parameter Name="itemToRemove" Type="Microsoft.Build.BuildEngine.BuildItem" />
       </Parameters>
       <Docs>
-        <param name="itemToRemove">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="itemToRemove">The <see cref="T:Microsoft.Build.BuildEngine.BuildItem" /> to remove.</param>
+        <summary>Removes the specified <see cref="T:Microsoft.Build.BuildEngine.BuildItem" /> from the <see cref="T:Microsoft.Build.BuildEngine.BuildItemGroup" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a <xref:Microsoft.Build.BuildEngine.Project> object and uses the <xref:Microsoft.Build.BuildEngine.Project.LoadXml%2A> method to add content to the project. The <xref:Microsoft.Build.BuildEngine.BuildItem>, <xref:Microsoft.Build.BuildEngine.BuildItemGroup>, and <xref:Microsoft.Build.BuildEngine.BuildItemGroupCollection> classes are used to add, remove, and change items in the project.  
+  
+ [!code-csharp[msbuild_AddNewItem#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_AddNewItem/CS/Program.cs#1)]
+ [!code-vb[msbuild_AddNewItem#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_AddNewItem/VB/Module1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveItemAt">
@@ -261,8 +325,8 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The zero-based index of the <see cref="T:Microsoft.Build.BuildEngine.BuildItem" /> object to remove.</param>
+        <summary>Removes the <see cref="T:Microsoft.Build.BuildEngine.BuildItem" /> at the specified index from the <see cref="T:Microsoft.Build.BuildEngine.BuildItemGroup" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -280,10 +344,30 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Copies the <see cref="T:Microsoft.Build.BuildEngine.BuildItem" /> objects in the <see cref="T:Microsoft.Build.BuildEngine.BuildItemGroup" /> to a new array.</summary>
+        <returns>A new array containing the <see cref="T:Microsoft.Build.BuildEngine.BuildItem" /> objects copied from the <see cref="T:Microsoft.Build.BuildEngine.BuildItemGroup" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddNewItem">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a new <see cref="T:Microsoft.Build.BuildEngine.BuildItem" /> to the <see cref="T:Microsoft.Build.BuildEngine.BuildItemGroup" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a <xref:Microsoft.Build.BuildEngine.Project> object and uses the <xref:Microsoft.Build.BuildEngine.Project.LoadXml%2A> method to add content to the project. The <xref:Microsoft.Build.BuildEngine.BuildItem>, <xref:Microsoft.Build.BuildEngine.BuildItemGroup>, and <xref:Microsoft.Build.BuildEngine.BuildItemGroupCollection> classes are used to add, remove, and change items in the project.  
+  
+ [!code-csharp[msbuild_AddNewItem#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_AddNewItem/CS/Program.cs#1)]
+ [!code-vb[msbuild_AddNewItem#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_AddNewItem/VB/Module1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

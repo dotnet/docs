@@ -1,9 +1,13 @@
 ---
 uid: System.Windows.Threading.DispatcherPriorityAwaitable
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Threading.DispatcherPriorityAwaitable.GetAwaiter
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

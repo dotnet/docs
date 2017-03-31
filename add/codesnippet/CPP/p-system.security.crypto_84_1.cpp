@@ -1,1 +1,0 @@
-      int inputBlockSize = cryptoTransform->InputBlockSize;

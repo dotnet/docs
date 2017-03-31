@@ -1,24 +1,29 @@
 ---
 uid: System.Management.EventQuery
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.EventQuery.Clone
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.EventQuery.#ctor(System.String,System.String)
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.EventQuery.#ctor(System.String)
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.EventQuery.#ctor
-internalonly: False
+manager: "jillfra"
+---
+
+---
+uid: System.Management.EventQuery.#ctor
+manager: "jillfra"
 ---

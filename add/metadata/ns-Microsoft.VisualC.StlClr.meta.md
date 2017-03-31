@@ -1,4 +1,5 @@
 ---
 uid: Microsoft.VisualC.StlClr
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---

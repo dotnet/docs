@@ -1,64 +1,77 @@
 ---
 uid: System.Configuration.SettingsPropertyValueCollection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SettingsPropertyValueCollection.SetReadOnly
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SettingsPropertyValueCollection.GetEnumerator
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SettingsPropertyValueCollection.Count
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SettingsPropertyValueCollection.IsSynchronized
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SettingsPropertyValueCollection.Item(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SettingsPropertyValueCollection.Clone
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SettingsPropertyValueCollection.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SettingsPropertyValueCollection.Remove(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SettingsPropertyValueCollection.CopyTo(System.Array,System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SettingsPropertyValueCollection.Clear
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SettingsPropertyValueCollection.SyncRoot
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SettingsPropertyValueCollection.Add(System.Configuration.SettingsPropertyValue)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

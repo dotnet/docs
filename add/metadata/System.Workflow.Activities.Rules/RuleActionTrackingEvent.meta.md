@@ -1,14 +1,20 @@
 ---
 uid: System.Workflow.Activities.Rules.RuleActionTrackingEvent
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.Rules.RuleActionTrackingEvent.RuleName
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.Rules.RuleActionTrackingEvent.ConditionResult
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

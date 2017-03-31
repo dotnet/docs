@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the culture information to use when string values are converted to types.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Web.UI.WebControls.ParsingCulture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the <see cref="P:System.Globalization.CultureInfo.InvariantCulture" /> option.</summary>
       </Docs>
     </Member>
     <Member MemberName="Invariant">
@@ -43,7 +43,7 @@
         <ReturnType>System.Web.UI.WebControls.ParsingCulture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the <see cref="P:System.Globalization.CultureInfo.CurrentCulture" /> option.</summary>
       </Docs>
     </Member>
   </Members>

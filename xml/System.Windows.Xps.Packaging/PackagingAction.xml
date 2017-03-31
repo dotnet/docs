@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Identifies the types of events that occur during the serialization of a package.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this enumeration as the value of the <xref:System.Windows.Xps.Packaging.PackagingProgressEventArgs.Action%2A?displayProperty=fullName> property.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AddingDocumentSequence">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Xps.Packaging.PackagingAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A document sequence is being added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AddingFixedDocument">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Xps.Packaging.PackagingAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A document is being added.</summary>
       </Docs>
     </Member>
     <Member MemberName="AddingFixedPage">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.Xps.Packaging.PackagingAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A page is being added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DocumentSequenceCompleted">
@@ -75,7 +82,7 @@
         <ReturnType>System.Windows.Xps.Packaging.PackagingAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A document sequence has been added, but not necessarily committed.</summary>
       </Docs>
     </Member>
     <Member MemberName="FixedDocumentCompleted">
@@ -91,7 +98,7 @@
         <ReturnType>System.Windows.Xps.Packaging.PackagingAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A document has been added, but not necessarily committed.</summary>
       </Docs>
     </Member>
     <Member MemberName="FixedPageCompleted">
@@ -107,7 +114,7 @@
         <ReturnType>System.Windows.Xps.Packaging.PackagingAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A page has been added, but not necessarily committed.</summary>
       </Docs>
     </Member>
     <Member MemberName="FontAdded">
@@ -123,7 +130,7 @@
         <ReturnType>System.Windows.Xps.Packaging.PackagingAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A font has been added, but not necessarily committed.</summary>
       </Docs>
     </Member>
     <Member MemberName="ImageAdded">
@@ -139,7 +146,7 @@
         <ReturnType>System.Windows.Xps.Packaging.PackagingAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An image has been added, but not necessarily committed.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -155,7 +162,7 @@
         <ReturnType>System.Windows.Xps.Packaging.PackagingAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No action has been taken.</summary>
       </Docs>
     </Member>
     <Member MemberName="ResourceAdded">
@@ -171,7 +178,7 @@
         <ReturnType>System.Windows.Xps.Packaging.PackagingAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A resource has been added, but not necessarily committed.</summary>
       </Docs>
     </Member>
     <Member MemberName="XpsDocumentCommitted">
@@ -187,7 +194,7 @@
         <ReturnType>System.Windows.Xps.Packaging.PackagingAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The document is committed.</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,69 +1,89 @@
 ---
 uid: System.Net.Http.Headers.ViaHeaderValue
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.ViaHeaderValue.ReceivedBy
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.ViaHeaderValue.ProtocolVersion
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.ViaHeaderValue.#ctor(System.String,System.String,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.ViaHeaderValue.GetHashCode
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.ViaHeaderValue.#ctor(System.String,System.String,System.String,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.ViaHeaderValue.ToString
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.ViaHeaderValue.#ctor(System.String,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.ViaHeaderValue.Comment
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Http.Headers.ViaHeaderValue.#ctor
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.ViaHeaderValue.TryParse(System.String,System.Net.Http.Headers.ViaHeaderValue@)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.ViaHeaderValue.ProtocolName
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.ViaHeaderValue.System#ICloneable#Clone
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.ViaHeaderValue.Equals(System.Object)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.ViaHeaderValue.Parse(System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

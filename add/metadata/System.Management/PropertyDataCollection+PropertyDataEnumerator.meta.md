@@ -1,24 +1,24 @@
 ---
 uid: System.Management.PropertyDataCollection.PropertyDataEnumerator
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.PropertyDataCollection.PropertyDataEnumerator.MoveNext
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.PropertyDataCollection.PropertyDataEnumerator.System#Collections#IEnumerator#Current
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.PropertyDataCollection.PropertyDataEnumerator.Reset
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.PropertyDataCollection.PropertyDataEnumerator.Current
-internalonly: False
+manager: "jillfra"
 ---

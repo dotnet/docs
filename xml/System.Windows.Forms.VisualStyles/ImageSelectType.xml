@@ -10,8 +10,17 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies when the visual style selects a different multiple-image file to draw an element.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A visual style can define up to five multiple-image files for an element. These image files are specified by the <xref:System.Windows.Forms.VisualStyles.FilenameProperty> values <xref:System.Windows.Forms.VisualStyles.FilenameProperty> through <xref:System.Windows.Forms.VisualStyles.FilenameProperty>. The <xref:System.Windows.Forms.VisualStyles.ImageSelectType> values indicate when the visual style selects a different image file to draw the element.  
+  
+ The <xref:System.Windows.Forms.VisualStyles.ImageSelectType> values represent the return values of the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetEnumValue%2A?displayProperty=fullName> method when it is called with an argument value of <xref:System.Windows.Forms.VisualStyles.EnumProperty?displayProperty=fullName>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Dpi">
@@ -27,7 +36,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.ImageSelectType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Image file changes are based on dots per inch (DPI) settings.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -43,7 +52,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.ImageSelectType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The image file does not change.</summary>
       </Docs>
     </Member>
     <Member MemberName="Size">
@@ -59,7 +68,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.ImageSelectType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Image file changes are based on size settings.</summary>
       </Docs>
     </Member>
   </Members>

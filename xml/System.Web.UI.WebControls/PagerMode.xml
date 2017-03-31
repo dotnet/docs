@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the mode of the pager for accessing various pages within the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.PagerMode> enumeration represents the different display modes for the pager of a <xref:System.Web.UI.WebControls.DataGrid> control. NextPrev displays the pager controls using `Next` and `Previous` buttons; NumericPages displays numeric buttons representing the individual page numbers.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="NextPrev">
@@ -27,7 +34,7 @@
         <ReturnType>System.Web.UI.WebControls.PagerMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A pager with <see langword="Previous" /> and <see langword="Next" /> buttons to access the next and previous pages.</summary>
       </Docs>
     </Member>
     <Member MemberName="NumericPages">
@@ -43,7 +50,7 @@
         <ReturnType>System.Web.UI.WebControls.PagerMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A pager with numbered buttons to access pages directly.</summary>
       </Docs>
     </Member>
   </Members>

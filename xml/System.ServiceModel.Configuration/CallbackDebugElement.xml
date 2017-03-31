@@ -11,8 +11,18 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a configuration element that specifies service-side debugging for a Windows Communication Foundation (WCF) callback object. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you set the <xref:System.ServiceModel.Configuration.CallbackDebugElement.IncludeExceptionDetailInFaults%2A> property to `true` programmatically, you can enable the flow of managed exception information in a client callback object back to the service for debugging purposes.  
+  
+> [!CAUTION]
+>  Returning managed exception information to clients can be a security risk. This is because exception details expose information about the internal service implementation that could be used by unauthorized clients.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +36,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.CallbackDebugElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +53,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type of this behavior element.</summary>
+        <value>The type of the behavior element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +74,8 @@
         <Parameter Name="from" Type="System.ServiceModel.Configuration.ServiceModelExtensionElement" />
       </Parameters>
       <Docs>
-        <param name="from">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="from">The configuration element to be copied.</param>
+        <summary>Copies the content of the specified configuration element to this configuration element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,8 +116,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that specifies whether client callback objects return managed exception information in SOAP faults back to the service.</summary>
+        <value>
+          <see langword="true" /> if Windows Communication Foundation (WCF) returns managed client callback exception information in the SOAP faults for service-side debugging purposes in duplex communication; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,4 +1,5 @@
 ---
 uid: System.Net.NetworkInformation.OperationalStatus
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

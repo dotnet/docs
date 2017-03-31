@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>To implement a security upgrade initiator, inherit from this <see langword="abstract" /> base class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used with <xref:System.ServiceModel.Channels.StreamSecurityUpgradeAcceptor> and <xref:System.ServiceModel.Channels.StreamSecurityUpgradeProvider> to implement a custom stream upgrade.  
+  
+ For a detailed description of the upgrade process, see <xref:System.ServiceModel.Channels.StreamUpgradeProvider>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +35,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.StreamSecurityUpgradeInitiator" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,9 +53,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets the security message property provided on the stream for performing custom security negotiation based on the information provided in the security context.</summary>
+        <returns>Returns the <see cref="T:System.ServiceModel.Security.SecurityMessageProperty" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This information is useful for implementing a stream-level authentication mechanism based on the identities provided in the security context.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

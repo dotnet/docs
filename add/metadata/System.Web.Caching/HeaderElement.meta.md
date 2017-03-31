@@ -1,19 +1,19 @@
 ---
 uid: System.Web.Caching.HeaderElement
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.HeaderElement.Value
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.HeaderElement.#ctor(System.String,System.String)
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.HeaderElement.Name
-internalonly: False
+manager: "wpickett"
 ---

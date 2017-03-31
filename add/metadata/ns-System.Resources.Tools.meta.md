@@ -1,4 +1,6 @@
 ---
 uid: System.Resources.Tools
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

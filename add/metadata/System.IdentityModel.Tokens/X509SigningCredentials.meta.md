@@ -1,29 +1,41 @@
 ---
 uid: System.IdentityModel.Tokens.X509SigningCredentials
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.X509SigningCredentials.#ctor
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.X509SigningCredentials.Certificate
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.X509SigningCredentials.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate2,System.IdentityModel.Tokens.SecurityKeyIdentifier)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.X509SigningCredentials.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate2)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.X509SigningCredentials.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate2,System.IdentityModel.Tokens.SecurityKeyIdentifier,System.String,System.String)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.X509SigningCredentials.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate2,System.String,System.String)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

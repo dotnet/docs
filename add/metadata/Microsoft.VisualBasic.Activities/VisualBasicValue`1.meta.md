@@ -1,44 +1,69 @@
 ---
 uid: Microsoft.VisualBasic.Activities.VisualBasicValue`1
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Activities.VisualBasicValue`1.GetExpressionTree
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Activities.VisualBasicValue`1.Language
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Activities.VisualBasicValue`1.CanConvertToString(System.Windows.Markup.IValueSerializerContext)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Activities.VisualBasicValue`1.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Activities.VisualBasicValue`1.Language
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Activities.VisualBasicValue`1.CanConvertToString(System.Windows.Markup.IValueSerializerContext)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Activities.VisualBasicValue`1.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Activities.VisualBasicValue`1.ExpressionText
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Activities.VisualBasicValue`1.ConvertToString(System.Windows.Markup.IValueSerializerContext)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Activities.VisualBasicValue`1.#ctor(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Activities.VisualBasicValue`1.RequiresCompilation
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

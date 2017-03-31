@@ -1,19 +1,27 @@
 ---
 uid: System.Web.UI.WebControls.WebParts.SharedPersonalizationStateInfo
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.WebParts.SharedPersonalizationStateInfo.SizeOfPersonalizations
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.WebParts.SharedPersonalizationStateInfo.CountOfPersonalizations
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.WebParts.SharedPersonalizationStateInfo.#ctor(System.String,System.DateTime,System.Int32,System.Int32,System.Int32)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

@@ -1,9 +1,11 @@
 ---
 uid: Microsoft.Build.Framework.RunInSTAAttribute
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.RunInSTAAttribute.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

@@ -1,39 +1,44 @@
 ---
 uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapEntities
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapEntities.#ctor(System.String)
-internalonly: False
----
-
----
-uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapEntities.XsdType
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapEntities.#ctor
-internalonly: False
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapEntities.XsdType
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapEntities.#ctor
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapEntities.Parse(System.String)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapEntities.Value
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapEntities.ToString
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapEntities.GetXsdType
-internalonly: False
+manager: "ghogen"
 ---

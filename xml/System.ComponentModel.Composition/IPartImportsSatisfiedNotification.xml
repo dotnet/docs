@@ -9,7 +9,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Notifies a part when its imports have been satisfied.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,7 +28,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Called when a part's imports have been satisfied and it is safe to use.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

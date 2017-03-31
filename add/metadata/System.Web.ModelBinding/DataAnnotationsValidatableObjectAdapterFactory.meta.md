@@ -1,4 +1,6 @@
 ---
 uid: System.Web.ModelBinding.DataAnnotationsValidatableObjectAdapterFactory
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

@@ -1,1 +1,0 @@
-        Dim permissionSetName As String = codeGroup.PermissionSetName

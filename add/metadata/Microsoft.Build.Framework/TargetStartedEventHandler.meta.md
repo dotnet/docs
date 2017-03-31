@@ -1,4 +1,5 @@
 ---
 uid: Microsoft.Build.Framework.TargetStartedEventHandler
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

@@ -19,8 +19,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines status codes for the <see cref="T:System.Net.WebException" /> class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.WebExceptionStatus> enumeration defines the status codes assigned to the <xref:System.Net.WebException.Status%2A> property.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CacheEntryNotFound">
@@ -45,7 +52,7 @@
         <ReturnType>System.Net.WebExceptionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The specified cache entry was not found.</summary>
       </Docs>
     </Member>
     <Member MemberName="ConnectFailure">
@@ -70,7 +77,7 @@
         <ReturnType>System.Net.WebExceptionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The remote service point could not be contacted at the transport level.</summary>
       </Docs>
     </Member>
     <Member MemberName="ConnectionClosed">
@@ -95,7 +102,7 @@
         <ReturnType>System.Net.WebExceptionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The connection was prematurely closed.</summary>
       </Docs>
     </Member>
     <Member MemberName="KeepAliveFailure">
@@ -120,7 +127,7 @@
         <ReturnType>System.Net.WebExceptionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The connection for a request that specifies the Keep-alive header was closed unexpectedly.</summary>
       </Docs>
     </Member>
     <Member MemberName="MessageLengthLimitExceeded">
@@ -145,7 +152,7 @@
         <ReturnType>System.Net.WebExceptionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A message was received that exceeded the specified limit when sending a request or receiving a response from the server.</summary>
       </Docs>
     </Member>
     <Member MemberName="NameResolutionFailure">
@@ -170,7 +177,7 @@
         <ReturnType>System.Net.WebExceptionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The name resolver service could not resolve the host name.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pending">
@@ -195,7 +202,7 @@
         <ReturnType>System.Net.WebExceptionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An internal asynchronous request is pending.</summary>
       </Docs>
     </Member>
     <Member MemberName="PipelineFailure">
@@ -220,7 +227,7 @@
         <ReturnType>System.Net.WebExceptionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The request was a piplined request and the connection was closed before the response was received.</summary>
       </Docs>
     </Member>
     <Member MemberName="ProtocolError">
@@ -245,7 +252,7 @@
         <ReturnType>System.Net.WebExceptionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The response received from the server was complete but indicated a protocol-level error. For example, an HTTP protocol error such as 401 Access Denied would use this status.</summary>
       </Docs>
     </Member>
     <Member MemberName="ProxyNameResolutionFailure">
@@ -270,7 +277,7 @@
         <ReturnType>System.Net.WebExceptionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The name resolver service could not resolve the proxy host name.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReceiveFailure">
@@ -295,7 +302,7 @@
         <ReturnType>System.Net.WebExceptionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A complete response was not received from the remote server.</summary>
       </Docs>
     </Member>
     <Member MemberName="RequestCanceled">
@@ -320,7 +327,7 @@
         <ReturnType>System.Net.WebExceptionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The request was canceled, the <see cref="M:System.Net.WebRequest.Abort" /> method was called, or an unclassifiable error occurred. This is the default value for <see cref="P:System.Net.WebException.Status" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="RequestProhibitedByCachePolicy">
@@ -345,7 +352,7 @@
         <ReturnType>System.Net.WebExceptionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The request was not permitted by the cache policy. In general, this occurs when a request is not cacheable and the effective policy prohibits sending the request to the server. You might receive this status if a request method implies the presence of a request body, a request method requires direct interaction with the server, or a request contains a conditional header.</summary>
       </Docs>
     </Member>
     <Member MemberName="RequestProhibitedByProxy">
@@ -370,7 +377,7 @@
         <ReturnType>System.Net.WebExceptionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This request was not permitted by the proxy.</summary>
       </Docs>
     </Member>
     <Member MemberName="SecureChannelFailure">
@@ -395,7 +402,7 @@
         <ReturnType>System.Net.WebExceptionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An error occurred while establishing a connection using SSL.</summary>
       </Docs>
     </Member>
     <Member MemberName="SendFailure">
@@ -420,7 +427,7 @@
         <ReturnType>System.Net.WebExceptionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A complete request could not be sent to the remote server.</summary>
       </Docs>
     </Member>
     <Member MemberName="ServerProtocolViolation">
@@ -445,7 +452,7 @@
         <ReturnType>System.Net.WebExceptionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The server response was not a valid HTTP response.</summary>
       </Docs>
     </Member>
     <Member MemberName="Success">
@@ -470,7 +477,7 @@
         <ReturnType>System.Net.WebExceptionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No error was encountered.</summary>
       </Docs>
     </Member>
     <Member MemberName="Timeout">
@@ -495,7 +502,7 @@
         <ReturnType>System.Net.WebExceptionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No response was received during the time-out period for a request.</summary>
       </Docs>
     </Member>
     <Member MemberName="TrustFailure">
@@ -520,7 +527,7 @@
         <ReturnType>System.Net.WebExceptionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A server certificate could not be validated.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnknownError">
@@ -545,7 +552,7 @@
         <ReturnType>System.Net.WebExceptionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An exception of unknown type has occurred.</summary>
       </Docs>
     </Member>
   </Members>

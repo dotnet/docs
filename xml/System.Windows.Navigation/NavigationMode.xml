@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the type of navigation that is taking place <see cref="T:System.Windows.Navigation.NavigationMode" /> is used by the <see cref="P:System.Windows.Navigation.NavigatingCancelEventArgs.NavigationMode" /> property.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Windows.Navigation.NavigationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Navigating back to the most recent content in back navigation history. This occurs when the **GoBack** method is called.</summary>
       </Docs>
     </Member>
     <Member MemberName="Forward">
@@ -43,7 +43,7 @@
         <ReturnType>System.Windows.Navigation.NavigationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Navigating to the most recent content on forward navigation history. This occurs when the **GoForward** method is called.</summary>
       </Docs>
     </Member>
     <Member MemberName="New">
@@ -59,7 +59,7 @@
         <ReturnType>System.Windows.Navigation.NavigationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Navigating to new content. This occurs when the **Navigate** method is called, or when **Source** property is set.</summary>
       </Docs>
     </Member>
     <Member MemberName="Refresh">
@@ -75,7 +75,7 @@
         <ReturnType>System.Windows.Navigation.NavigationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Reloading the current content. This occurs when the **Refresh** method is called.</summary>
       </Docs>
     </Member>
   </Members>

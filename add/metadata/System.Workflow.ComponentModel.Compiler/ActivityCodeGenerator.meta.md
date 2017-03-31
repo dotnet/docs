@@ -1,19 +1,27 @@
 ---
 uid: System.Workflow.ComponentModel.Compiler.ActivityCodeGenerator
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Compiler.ActivityCodeGenerator.GetCodeTypeDeclaration(System.Workflow.ComponentModel.Compiler.CodeGenerationManager,System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Compiler.ActivityCodeGenerator.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Compiler.ActivityCodeGenerator.GenerateCode(System.Workflow.ComponentModel.Compiler.CodeGenerationManager,System.Object)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

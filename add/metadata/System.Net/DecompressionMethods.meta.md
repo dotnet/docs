@@ -1,4 +1,5 @@
 ---
 uid: System.Net.DecompressionMethods
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

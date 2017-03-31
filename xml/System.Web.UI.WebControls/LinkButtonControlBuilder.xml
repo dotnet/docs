@@ -11,8 +11,18 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Interacts with the parser to build a <see cref="T:System.Web.UI.WebControls.LinkButton" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.LinkButtonControlBuilder> causes the parser to ignore inner text if it is completely made up of white space characters.  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>To create a custom control builder for a <see cref="T:System.Web.UI.WebControls.LinkButton" /> derived control, you need to inherit from this class.</para>
+    </block>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +36,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.LinkButtonControlBuilder" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,9 +54,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Specifies whether white space literals are allowed.</summary>
+        <returns>
+          <see langword="false" /> for all cases.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method overrides <xref:System.Web.UI.ControlBuilder.AllowWhitespaceLiterals%2A?displayProperty=fullName> to ignore white space in the <xref:System.Web.UI.WebControls.LinkButton> control.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

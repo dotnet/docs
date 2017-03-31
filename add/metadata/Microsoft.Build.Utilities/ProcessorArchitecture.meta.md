@@ -1,34 +1,41 @@
 ---
 uid: Microsoft.Build.Utilities.ProcessorArchitecture
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Utilities.ProcessorArchitecture.AMD64
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Utilities.ProcessorArchitecture.CurrentProcessArchitecture
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Utilities.ProcessorArchitecture.MSIL
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Utilities.ProcessorArchitecture.ARM
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Utilities.ProcessorArchitecture.IA64
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Utilities.ProcessorArchitecture.X86
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

@@ -27,8 +27,26 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Computes the <see cref="T:System.Security.Cryptography.SHA384" /> hash for the input data.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The hash is used as a unique value of fixed size representing a large amount of data. Hashes of two sets of data should match if and only if the corresponding data also matches. Small changes to the data result in large unpredictable changes in the hash.  
+  
+ The hash size for the <xref:System.Security.Cryptography.SHA384> algorithm is 384 bits.  
+  
+   
+  
+## Examples  
+ The following example computes the <xref:System.Security.Cryptography.SHA384> hash for `data` and stores it in `result`. This example assumes that there is a predefined constant `DATA_SIZE`.  
+  
+ [!code-cpp[Classic SHA384 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic SHA384 Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic SHA384 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic SHA384 Example/CS/source.cs#1)]
+ [!code-vb[Classic SHA384 Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic SHA384 Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -53,8 +71,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of <see cref="T:System.Security.Cryptography.SHA384" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot create an instance of an abstract class. Application code create a new instance of a derived class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -82,9 +107,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates an instance of the default implementation of <see cref="T:System.Security.Cryptography.SHA384" />.</summary>
+        <returns>A new instance of <see cref="T:System.Security.Cryptography.SHA384" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Reflection.TargetInvocationException">The algorithm was used with Federal Information Processing Standards (FIPS) mode enabled, but is not FIPS compatible.</exception>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -108,10 +134,11 @@
         <Parameter Name="hashName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="hashName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="hashName">The name of the specific implementation of <see cref="T:System.Security.Cryptography.SHA384" /> to be used.</param>
+        <summary>Creates an instance of a specified implementation of <see cref="T:System.Security.Cryptography.SHA384" />.</summary>
+        <returns>A new instance of <see cref="T:System.Security.Cryptography.SHA384" /> using the specified implementation.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Reflection.TargetInvocationException">The algorithm described by the <paramref name="hashName" /> parameter was used with Federal Information Processing Standards (FIPS) mode enabled, but is not FIPS compatible.</exception>
       </Docs>
     </Member>
   </Members>

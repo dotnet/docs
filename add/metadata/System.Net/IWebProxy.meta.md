@@ -1,19 +1,23 @@
 ---
 uid: System.Net.IWebProxy
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.IWebProxy.IsBypassed(System.Uri)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.IWebProxy.GetProxy(System.Uri)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.IWebProxy.Credentials
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

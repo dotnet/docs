@@ -29,8 +29,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="TResult">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="TResult">The type of the value.</typeparam>
+    <summary>Specifies information about a C# value.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,7 +45,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.CSharp.Activities.CSharpValue`1" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,8 +62,8 @@
         <Parameter Name="expressionText" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="expressionText">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="expressionText">The expression text.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.CSharp.Activities.CSharpValue`1" /> class with specified expression text.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,8 +83,8 @@
         <Parameter Name="metadata" Type="System.Activities.CodeActivityMetadata" />
       </Parameters>
       <Docs>
-        <param name="metadata">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="metadata">The compiled metadata.</param>
+        <summary>Compiles a new metadata to the C# value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,9 +104,9 @@
         <Parameter Name="context" Type="System.Activities.CodeActivityContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">The context.</param>
+        <summary>Executes the C# value.</summary>
+        <returns>The executed reference.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,8 +123,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the expression text used.</summary>
+        <value>The expression text used.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,8 +142,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the expression tree for the C# value.</summary>
+        <returns>The expression tree.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -165,8 +165,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the language used.</summary>
+        <value>The language used</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -183,8 +183,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets whether the value requires compilation.</summary>
+        <value>
+          <see langword="True" /> if the value requires compilation; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

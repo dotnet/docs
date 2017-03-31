@@ -1,14 +1,20 @@
 ---
 uid: System.ServiceModel.Dispatcher.ClientRuntimeCompatBase
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.ClientRuntimeCompatBase.MessageInspectors
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.ClientRuntimeCompatBase.Operations
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

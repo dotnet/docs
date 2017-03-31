@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Enables assigning values to the settings of a channel factory configuration element in a workflow service application. This is a sealed class.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Activities.Configuration.FactorySettingsElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,8 +54,8 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the maximum interval of time for which the object can remain idle in a workflow cache before being disposed.</summary>
+        <value>A timespan object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,8 +83,8 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the interval of time after which an object will be removed from a workflow cache.</summary>
+        <value>A timespan object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,8 +109,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the maximum number of objects that can be in a workflow cache.</summary>
+        <value>An integer representing a maximum number.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

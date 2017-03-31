@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>A helper class used to update model item references and properties.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,9 +32,9 @@
         <Parameter Name="extension" Type="System.Activities.Presentation.Model.PropertyValueMorphHelper" />
       </Parameters>
       <Docs>
-        <param name="propertyType">To be added.</param>
-        <param name="extension">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="propertyType">The property type.</param>
+        <param name="extension">The method that handles type conversions.</param>
+        <summary>Adds a method to handle type conversions for the specified property type.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,9 +54,9 @@
         <Parameter Name="propertyType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="propertyType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="propertyType">The property type to get the method for.</param>
+        <summary>Returns the method that handles type conversions for the specified property type.</summary>
+        <returns>The method that handles type conversions for the specified property type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,9 +77,9 @@
         <Parameter Name="newModelitem" Type="System.Activities.Presentation.Model.ModelItem" />
       </Parameters>
       <Docs>
-        <param name="oldModelItem">To be added.</param>
-        <param name="newModelitem">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="oldModelItem">The old model item to get the parents and sources of.</param>
+        <param name="newModelitem">The new model item.</param>
+        <summary>Updates the model item references to the specified new model item in the model item parents and sources.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,9 +100,9 @@
         <Parameter Name="newModelitem" Type="System.Activities.Presentation.Model.ModelItem" />
       </Parameters>
       <Docs>
-        <param name="oldModelItem">To be added.</param>
-        <param name="newModelitem">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="oldModelItem">The old model item.</param>
+        <param name="newModelitem">The new model item.</param>
+        <summary>Updates the property values in the specified new model item from the corresponding property values in the specified old model item.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

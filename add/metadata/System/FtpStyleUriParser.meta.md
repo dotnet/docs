@@ -1,9 +1,11 @@
 ---
 uid: System.FtpStyleUriParser
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.FtpStyleUriParser.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

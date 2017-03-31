@@ -1,9 +1,13 @@
 ---
 uid: System.Data.SqlTypes.TypeTinyIntSchemaImporterExtension
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.TypeTinyIntSchemaImporterExtension.#ctor
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

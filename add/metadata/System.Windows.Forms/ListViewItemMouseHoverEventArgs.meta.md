@@ -1,14 +1,20 @@
 ---
 uid: System.Windows.Forms.ListViewItemMouseHoverEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ListViewItemMouseHoverEventArgs.#ctor(System.Windows.Forms.ListViewItem)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ListViewItemMouseHoverEventArgs.Item
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

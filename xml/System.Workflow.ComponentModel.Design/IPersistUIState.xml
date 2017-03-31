@@ -13,8 +13,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines methods that workflow designers and activity designers use to save UI state information to and restore UI state information from a binary stream.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="LoadViewState">
@@ -33,8 +42,8 @@
         <Parameter Name="reader" Type="System.IO.BinaryReader" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="reader">The <see cref="T:System.IO.BinaryReader" /> from which to restore the designer state.</param>
+        <summary>Restores the UI state of a designer from a binary stream.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,8 +63,8 @@
         <Parameter Name="writer" Type="System.IO.BinaryWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The <see cref="T:System.IO.BinaryWriter" /> to use to store the state.</param>
+        <summary>Stores the UI state of a designer to a binary stream.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

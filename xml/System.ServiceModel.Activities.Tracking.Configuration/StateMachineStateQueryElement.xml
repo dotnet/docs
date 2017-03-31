@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a configuration StateMachineStateQuery element in DotNetConfig.xsd.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.Tracking.Configuration.StateMachineStateQueryElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +51,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the activity name filter attribute in StateMachineTrackingQuery element.</summary>
+        <value>The activity name filter attribute in StateMachineTrackingQuery element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,8 +70,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a StateMachine-specific CustomTrackingQuery, if the user specifies StateMachineTrackingQuery element in app.config.</summary>
+        <returns>A CustomTrackingQuery instance that tracks StateMachine specific TrackingRecord.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,8 +88,8 @@
         <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the attributes in StateMachineTrackingQuery element.</summary>
+        <value>The attributes in StateMachineTrackingQuery element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

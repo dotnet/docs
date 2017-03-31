@@ -28,8 +28,32 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>An in-memory representation of an XML Schema, as specified in the World Wide Web Consortium (W3C) [XML Schema Part 1: Structures](http://www.w3.org/TR/xmlschema-1/) and [XML Schema Part 2: Datatypes](http://www.w3.org/TR/xmlschema-2/) specifications.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  -   Do not use schemas from unknown or untrusted sources or locations. Doing so will compromise the security of your code.  
+> -   XML schemas (including inline schemas) are inherently vulnerable to denial of service attacks; do not accept them in untrusted scenarios.  
+> -   Exceptions raised as a result of using the <xref:System.Xml.Schema.XmlSchema> class, such as the <xref:System.Xml.Schema.XmlSchemaException> class, may contain sensitive information that should not be exposed in untrusted scenarios. For example, the <xref:System.Xml.Schema.XmlSchemaException.SourceUri%2A> property of an <xref:System.Xml.Schema.XmlSchemaException> returns the URI path to the schema file that caused the exception. The <xref:System.Xml.Schema.XmlSchemaException.SourceUri%2A> property should not be exposed in untrusted scenarios. Exceptions should be properly handled so this sensitive information is not exposed in untrusted scenarios.  
+  
+   
+  
+## Examples  
+ The following example creates a schema definition.  
+  
+ [!code-cpp[Classic WebData XmlSchema Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlSchema Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic WebData XmlSchema Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlSchema Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData XmlSchema Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlSchema Example/VB/source.vb#1)]  
+  
+ The following XML file is generated for the preceding code example.  
+  
+ [!code-xml[Classic WebData XmlSchema Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlSchema Example/XML/source.xml#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,7 +72,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Schema.XmlSchema" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,9 +102,24 @@
         <ReturnType>System.Xml.Schema.XmlSchemaForm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the form for attributes declared in the target namespace of the schema.</summary>
+        <value>The <see cref="T:System.Xml.Schema.XmlSchemaForm" /> value that indicates if attributes from the target namespace are required to be qualified with the namespace prefix. The default is <see cref="F:System.Xml.Schema.XmlSchemaForm.None" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value must be one of the <xref:System.Xml.Schema.XmlSchemaForm> values shown in the following table.  
+  
+|<xref:System.Xml.Schema.XmlSchemaForm> Value|Description|  
+|----------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|  
+|<xref:System.Xml.Schema.XmlSchemaForm>|The attribute form is not specified in schema.|  
+|<xref:System.Xml.Schema.XmlSchemaForm>|Attributes from the target namespace must be qualified with the namespace prefix.|  
+|<xref:System.Xml.Schema.XmlSchemaForm>|Attributes from the target namespace are not required to be qualified with the namespace prefix.|  
+  
+ This value is the global default for all attributes declared in the target namespace. Individual attributes can override this setting for the local scope using the `form` attribute.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AttributeGroups">
@@ -106,8 +145,8 @@
         <ReturnType>System.Xml.Schema.XmlSchemaObjectTable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the post-schema-compilation value of all the global attribute groups in the schema.</summary>
+        <value>An <see cref="T:System.Xml.Schema.XmlSchemaObjectTable" /> collection of all the global attribute groups in the schema.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,8 +173,8 @@
         <ReturnType>System.Xml.Schema.XmlSchemaObjectTable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the post-schema-compilation value for all the attributes in the schema.</summary>
+        <value>An <see cref="T:System.Xml.Schema.XmlSchemaObjectTable" /> collection of all the attributes in the schema.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -165,9 +204,28 @@
         <ReturnType>System.Xml.Schema.XmlSchemaDerivationMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see langword="blockDefault" /> attribute which sets the default value of the <see langword="block" /> attribute on element and complex types in the <see langword="targetNamespace" /> of the schema.</summary>
+        <value>An <see cref="T:System.Xml.Schema.XmlSchemaDerivationMethod" /> value representing the different methods for preventing derivation. The default value is <see langword="XmlSchemaDerivationMethod.None" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `block` attribute prevents a `complexType` or element that has the specified type of derivation from being used in place of the inherited `complexType` or element. This attribute's value can either be a white space separated list of restriction, extension and substitution or the value can contain `#all` or a list that is a subset of extension, restriction, or substitution.  
+  
+ The following table lists the possible values of <xref:System.Xml.Schema.XmlSchemaDerivationMethod>.  
+  
+|Value|Description|  
+|-----------|-----------------|  
+|`None`|By default, there are no restrictions on type derivations in the schema.|  
+|`Empty`|Overrides the default derivation method and allows any type derivations in the schema.|  
+|`Extension`|By default, elements in this schema cannot be derived by Extension. Applies only to element and complex type elements.|  
+|`Restriction`|By default, elements in this schema cannot be derived by Restriction.|  
+|`Union`|By default, elements in this schema cannot be derived by Union. Applies only to simple types.|  
+|`List`|By default, elements in this schema cannot be derived by List. Applies only to simple types.|  
+|`All`|`#all`. By default, elements in this schema cannot be derived by any method.|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Compile">
@@ -196,9 +254,18 @@
         <Parameter Name="validationEventHandler" Type="System.Xml.Schema.ValidationEventHandler" />
       </Parameters>
       <Docs>
-        <param name="validationEventHandler">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="validationEventHandler">The validation event handler that receives information about XML Schema validation errors.</param>
+        <summary>Compiles the XML Schema Object Model (SOM) into schema information for validation. Used to check the syntactic and semantic structure of the programmatically built SOM. Semantic validation checking is performed during compilation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  The <xref:System.Xml.Schema.XmlSchema.Compile%2A> method is obsolete in the Microsoft .NET Framework version 2.0 and has been replaced by the <xref:System.Xml.Schema.XmlSchemaSet.Compile%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Compile">
@@ -228,10 +295,23 @@
         <Parameter Name="resolver" Type="System.Xml.XmlResolver" />
       </Parameters>
       <Docs>
-        <param name="validationEventHandler">To be added.</param>
-        <param name="resolver">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="validationEventHandler">The validation event handler that receives information about the XML Schema validation errors.</param>
+        <param name="resolver">The <see langword="XmlResolver" /> used to resolve namespaces referenced in <see langword="include" /> and <see langword="import" /> elements.</param>
+        <summary>Compiles the XML Schema Object Model (SOM) into schema information for validation. Used to check the syntactic and semantic structure of the programmatically built SOM. Semantic validation checking is performed during compilation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the SOM references other namespaces through the `import` or `include` elements, the `XmlResolver` is used to resolve these references. If the resolver is set to `null`, this indicates that the user does not care about resolving `import` or `include` elements. In this case, the references are not resolved. The resolver is not cached after the `Compile` method completes.  
+  
+> [!IMPORTANT]
+>  The <xref:System.Xml.Schema.XmlSchema.Compile%2A> method is obsolete in the Microsoft .NET Framework version 2.0 and has been replaced by the <xref:System.Xml.Schema.XmlSchemaSet.Compile%2A?displayProperty=fullName> method.  
+  
+> [!IMPORTANT]
+>  The <xref:System.Xml.Schema.XmlSchema.Compile%2A> method uses the <xref:System.Xml.XmlUrlResolver> class to resolve external schemas referenced in include, import, or redefine elements by default. You can disable resolution of external schemas by passing null as the <xref:System.Xml.XmlResolver> parameter.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ElementFormDefault">
@@ -260,9 +340,24 @@
         <ReturnType>System.Xml.Schema.XmlSchemaForm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the form for elements declared in the target namespace of the schema.</summary>
+        <value>The <see cref="T:System.Xml.Schema.XmlSchemaForm" /> value that indicates if elements from the target namespace are required to be qualified with the namespace prefix. The default is <see cref="F:System.Xml.Schema.XmlSchemaForm.None" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value must be one of the <xref:System.Xml.Schema.XmlSchemaForm> values shown in the following table.  
+  
+|<xref:System.Xml.Schema.XmlSchemaForm> Value|Description|  
+|----------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|  
+|<xref:System.Xml.Schema.XmlSchemaForm>|The element form is not specified in the schema.|  
+|<xref:System.Xml.Schema.XmlSchemaForm>|Elements from the target namespace must be qualified with the namespace prefix.|  
+|<xref:System.Xml.Schema.XmlSchemaForm>|Elements from the target namespace are not required to be qualified with the namespace prefix.|  
+  
+ This value is the global default for all elements declared in the target namespace. Individual elements can override this setting for the local scope by using the `form` attribute.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Elements">
@@ -288,8 +383,8 @@
         <ReturnType>System.Xml.Schema.XmlSchemaObjectTable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the post-schema-compilation value for all the elements in the schema.</summary>
+        <value>An <see cref="T:System.Xml.Schema.XmlSchemaObjectTable" /> collection of all the elements in the schema.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -319,9 +414,28 @@
         <ReturnType>System.Xml.Schema.XmlSchemaDerivationMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see langword="finalDefault" /> attribute which sets the default value of the <see langword="final" /> attribute on elements and complex types in the target namespace of the schema.</summary>
+        <value>An <see cref="T:System.Xml.Schema.XmlSchemaDerivationMethod" /> value representing the different methods for preventing derivation. The default value is <see langword="XmlSchemaDerivationMethod.None" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `final` attribute prevents the specified type of derivation of an element or complex type. This value can contain `#all` or a list that is a subset of extension or restriction.  
+  
+ The following table lists the possible values of <xref:System.Xml.Schema.XmlSchemaDerivationMethod>.  
+  
+|Value|Description|  
+|-----------|-----------------|  
+|`None`|By default, there are no restrictions on type derivations in the schema.|  
+|`Empty`|Overrides the default derivation method and allows any type derivations in the schema.|  
+|`Extension`|By default, elements in this schema cannot be derived by Extension. Applies only to element and complex type elements.|  
+|`Restriction`|By default, elements in this schema cannot be derived by Restriction.|  
+|`Union`|By default, elements in this schema cannot be derived by Union. Applies only to simple types.|  
+|`List`|By default, elements in this schema cannot be derived by List. Applies only to simple types.|  
+|`All`|`#all`. By default, elements in this schema cannot be derived by any method.|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Groups">
@@ -347,8 +461,8 @@
         <ReturnType>System.Xml.Schema.XmlSchemaObjectTable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the post-schema-compilation value of all the groups in the schema.</summary>
+        <value>An <see cref="T:System.Xml.Schema.XmlSchemaObjectTable" /> collection of all the groups in the schema.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -375,8 +489,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the string ID.</summary>
+        <value>The ID of the string. The default value is <see langword="String.Empty" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -409,9 +523,38 @@
         <ReturnType>System.Xml.Schema.XmlSchemaObjectCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the collection of included and imported schemas.</summary>
+        <value>An <see cref="T:System.Xml.Schema.XmlSchemaObjectCollection" /> of the included and imported schemas.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.Schema.XmlSchemaObjectCollection.Add%2A> method expects only <xref:System.Xml.Schema.XmlSchemaExternal> and its derived types (<xref:System.Xml.Schema.XmlSchemaImport>, <xref:System.Xml.Schema.XmlSchemaInclude>, and <xref:System.Xml.Schema.XmlSchemaRedefine>) as parameters. The following example illustrates adding an included schema to the <xref:System.Xml.Schema.XmlSchema.Includes%2A> collection of an existing <xref:System.Xml.Schema.XmlSchema> object.  
+  
+```vb  
+Dim schema As XmlSchema = New XmlSchema()  
+  
+Dim textReader As XmlTextReader = New XmlTextReader("include.xsd")  
+Dim includeSchema As XmlSchema = XmlSchema.Read(textReader, null)  
+  
+Dim include As XmlSchemaInclude = New XmlSchemaInclude()  
+include.Schema = includeSchema;  
+schema.Includes.Add(include);  
+```  
+  
+```csharp  
+XmlSchema schema = new XmlSchema();  
+  
+XmlTextReader textReader = new XmlTextReader("include.xsd");  
+XmlSchema includeSchema = XmlSchema.Read(textReader, null);  
+  
+XmlSchemaInclude include = new XmlSchemaInclude();  
+include.Schema = includeSchema;  
+schema.Includes.Add(include);  
+```  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InstanceNamespace">
@@ -432,7 +575,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The XML schema instance namespace. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -459,8 +602,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Indicates if the schema has been compiled.</summary>
+        <value>
+          <see langword="true" /> if schema has been compiled, otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -508,9 +652,16 @@
         <ReturnType>System.Xml.Schema.XmlSchemaObjectCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the collection of schema elements in the schema and is used to add new element types at the <see langword="schema" /> element level.</summary>
+        <value>An <see cref="T:System.Xml.Schema.XmlSchemaObjectCollection" /> of schema elements in the schema.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The collection of <xref:System.Xml.Schema.XmlSchemaAnnotation>, <xref:System.Xml.Schema.XmlSchemaAttribute>, <xref:System.Xml.Schema.XmlSchemaAttributeGroup>, <xref:System.Xml.Schema.XmlSchemaComplexType>, <xref:System.Xml.Schema.XmlSchemaSimpleType>, <xref:System.Xml.Schema.XmlSchemaElement>, <xref:System.Xml.Schema.XmlSchemaGroup>, or <xref:System.Xml.Schema.XmlSchemaNotation>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Namespace">
@@ -531,7 +682,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The XML schema namespace. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -558,8 +709,8 @@
         <ReturnType>System.Xml.Schema.XmlSchemaObjectTable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the post-schema-compilation value for all notations in the schema.</summary>
+        <value>An <see cref="T:System.Xml.Schema.XmlSchemaObjectTable" /> collection of all notations in the schema.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -585,11 +736,12 @@
         <Parameter Name="validationEventHandler" Type="System.Xml.Schema.ValidationEventHandler" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <param name="validationEventHandler">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="stream">The supplied data stream.</param>
+        <param name="validationEventHandler">The validation event handler that receives information about XML Schema syntax errors.</param>
+        <summary>Reads an XML Schema  from the supplied stream.</summary>
+        <returns>The <see cref="T:System.Xml.Schema.XmlSchema" /> object representing the XML Schema.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Xml.Schema.XmlSchemaException">An <see cref="T:System.Xml.Schema.XmlSchemaException" /> is raised if no <see cref="T:System.Xml.Schema.ValidationEventHandler" /> is specified.</exception>
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -614,11 +766,12 @@
         <Parameter Name="validationEventHandler" Type="System.Xml.Schema.ValidationEventHandler" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <param name="validationEventHandler">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="reader">The <see langword="TextReader" /> containing the XML Schema to read.</param>
+        <param name="validationEventHandler">The validation event handler that receives information about the XML Schema syntax errors.</param>
+        <summary>Reads an XML Schema from the supplied <see cref="T:System.IO.TextReader" />.</summary>
+        <returns>The <see cref="T:System.Xml.Schema.XmlSchema" /> object representing the XML Schema.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Xml.Schema.XmlSchemaException">An <see cref="T:System.Xml.Schema.XmlSchemaException" /> is raised if no <see cref="T:System.Xml.Schema.ValidationEventHandler" /> is specified.</exception>
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -643,11 +796,12 @@
         <Parameter Name="validationEventHandler" Type="System.Xml.Schema.ValidationEventHandler" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <param name="validationEventHandler">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="reader">The <see langword="XmlReader" /> containing the XML Schema to read.</param>
+        <param name="validationEventHandler">The validation event handler that receives information about the XML Schema syntax errors.</param>
+        <summary>Reads an XML Schema from the supplied <see cref="T:System.Xml.XmlReader" />.</summary>
+        <returns>The <see cref="T:System.Xml.Schema.XmlSchema" /> object representing the XML Schema.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Xml.Schema.XmlSchemaException">An <see cref="T:System.Xml.Schema.XmlSchemaException" /> is raised if no <see cref="T:System.Xml.Schema.ValidationEventHandler" /> is specified.</exception>
       </Docs>
     </Member>
     <Member MemberName="SchemaTypes">
@@ -673,8 +827,8 @@
         <ReturnType>System.Xml.Schema.XmlSchemaObjectTable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the post-schema-compilation value of all schema types in the schema.</summary>
+        <value>An <see cref="T:System.Xml.Schema.XmlSchemaObjectCollection" /> of all schema types in the schema.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -701,9 +855,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the Uniform Resource Identifier (URI) of the schema target namespace.</summary>
+        <value>The schema target namespace.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.Schema.XmlSchema.TargetNamespace%2A> is the namespace of all schema components in this schema as well as any schema included using the `include` element. Included schemas must either have the same target namespace as the containing schema or have no target namespace specified.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UnhandledAttributes">
@@ -729,8 +890,8 @@
         <ReturnType>System.Xml.XmlAttribute[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets and sets the qualified attributes which do not belong to the schema target namespace.</summary>
+        <value>An array of qualified <see cref="T:System.Xml.XmlAttribute" /> objects that do not belong to the schema target namespace.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -757,8 +918,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the version of the schema.</summary>
+        <value>The version of the schema. The default value is <see langword="String.Empty" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -783,8 +944,8 @@
         <Parameter Name="stream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="stream">The supplied data stream.</param>
+        <summary>Writes the XML Schema to the supplied data stream.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -809,8 +970,8 @@
         <Parameter Name="writer" Type="System.IO.TextWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The <see cref="T:System.IO.TextWriter" /> to write to.</param>
+        <summary>Writes the XML Schema to the supplied <see cref="T:System.IO.TextWriter" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -835,9 +996,10 @@
         <Parameter Name="writer" Type="System.Xml.XmlWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write to.</param>
+        <summary>Writes the XML Schema to the supplied <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="writer" /> parameter is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -862,10 +1024,19 @@
         <Parameter Name="namespaceManager" Type="System.Xml.XmlNamespaceManager" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <param name="namespaceManager">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="stream">The supplied data stream.</param>
+        <param name="namespaceManager">The <see cref="T:System.Xml.XmlNamespaceManager" />.</param>
+        <summary>Writes the XML Schema to the supplied <see cref="T:System.IO.Stream" /> using the <see cref="T:System.Xml.XmlNamespaceManager" /> specified.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Supplying an <xref:System.Xml.XmlNamespaceManager> disables automatic namespace prefix mapping.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -890,10 +1061,19 @@
         <Parameter Name="namespaceManager" Type="System.Xml.XmlNamespaceManager" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="namespaceManager">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="writer">The <see cref="T:System.IO.TextWriter" /> to write to.</param>
+        <param name="namespaceManager">The <see cref="T:System.Xml.XmlNamespaceManager" />.</param>
+        <summary>Writes the XML Schema to the supplied <see cref="T:System.IO.TextWriter" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Supplying an <xref:System.Xml.XmlNamespaceManager> disables automatic namespace prefix mapping.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -918,11 +1098,40 @@
         <Parameter Name="namespaceManager" Type="System.Xml.XmlNamespaceManager" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="namespaceManager">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write to.</param>
+        <param name="namespaceManager">The <see cref="T:System.Xml.XmlNamespaceManager" />.</param>
+        <summary>Writes the XML Schema to the supplied <see cref="T:System.Xml.XmlWriter" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Supplying an <xref:System.Xml.XmlNamespaceManager> disables automatic namespace prefix mapping.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Compile">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compiles the XML Schema Object Model (SOM) into schema information for validation. Used to check the syntactic and semantic structure of the programmatically built SOM. Semantic validation checking is performed during compilation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  The <xref:System.Xml.Schema.XmlSchema.Compile%2A> method is obsolete in the Microsoft .NET Framework version 2.0 and has been replaced by the <xref:System.Xml.Schema.XmlSchemaSet.Compile%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

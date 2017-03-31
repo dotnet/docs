@@ -1,9 +1,11 @@
 ---
 uid: System.Windows.Forms.Integration.LayoutExceptionEventArgs
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.Integration.LayoutExceptionEventArgs.#ctor(System.Exception)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

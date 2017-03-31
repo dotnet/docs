@@ -1,34 +1,41 @@
 ---
 uid: System.Web.Profile.ProfileModule
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Profile.ProfileModule.MigrateAnonymous
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Profile.ProfileModule.Dispose
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Profile.ProfileModule.Init(System.Web.HttpApplication)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Profile.ProfileModule.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Profile.ProfileModule.Personalize
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Profile.ProfileModule.ProfileAutoSaving
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

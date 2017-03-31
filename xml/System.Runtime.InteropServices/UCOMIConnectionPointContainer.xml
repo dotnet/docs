@@ -20,8 +20,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Use <see cref="T:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer" /> instead.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, please see the existing documentation for `IConnectionPointContainer` in the com subfolder of the MSDN library.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="EnumConnectionPoints">
@@ -41,9 +48,16 @@
         <Parameter Name="ppEnum" Type="System.Runtime.InteropServices.UCOMIEnumConnectionPoints&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="ppEnum">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="ppEnum">On successful return, contains the interface pointer of the enumerator.</param>
+        <summary>Creates an enumerator of all the connection points supported in the connectable object, one connection point per IID.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, please see the existing documentation for `IConnectionPointContainer::EnumConnectionPoints` in the MSDN library.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FindConnectionPoint">
@@ -64,10 +78,17 @@
         <Parameter Name="ppCP" Type="System.Runtime.InteropServices.UCOMIConnectionPoint&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="riid">To be added.</param>
-        <param name="ppCP">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="riid">A reference to the outgoing interface IID whose connection point is being requested.</param>
+        <param name="ppCP">On successful return, contains the connection point that manages the outgoing interface <c>riid</c>.</param>
+        <summary>Asks the connectable object if it has a connection point for a particular IID, and if so, returns the <see langword="IConnectionPoint" /> interface pointer to that connection point.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, please see the existing documentation for `IConnectionPointContainer::FindConnectionPoint` in the MSDN library.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

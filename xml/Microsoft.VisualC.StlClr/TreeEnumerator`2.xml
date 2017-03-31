@@ -28,10 +28,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="TKey">To be added.</typeparam>
-    <typeparam name="TValue">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="TKey">The type of the key component of an element in the controlled sequence.</typeparam>
+    <typeparam name="TValue">The type of the value component of an element in the controlled sequence.</typeparam>
+    <summary>Supports simple iteration over any STL/CLR object that implements the <see cref="T:Microsoft.VisualC.StlClr.ITree`2" /> interface.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[unnamed_parm](~/includes/unnamed-parm-md.md)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -52,8 +59,8 @@
         <Parameter Name="_First" Type="Microsoft.VisualC.StlClr.Generic.INode&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_First">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="_First">The first node in the container over which to iterate.</param>
+        <summary>Allocates and initializes a new <see cref="T:Microsoft.VisualC.StlClr.TreeEnumerator`2" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,8 +77,8 @@
         <ReturnType>TValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the current element in the collection.</summary>
+        <value>The current element in the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,7 +96,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Frees, releases, or resets unmanaged resources that are used by the <see cref="T:Microsoft.VisualC.StlClr.TreeEnumerator`2" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,8 +116,9 @@
         <Parameter Name="A_0" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="A_0">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="A_0">
+          <see langword="true" /> to dispose of managed objects; <see langword="false" /> to dispose of unmanaged objects.</param>
+        <summary>Frees, releases, or resets unmanaged resources that are used by the <see cref="T:Microsoft.VisualC.StlClr.TreeEnumerator`2" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,8 +136,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Advances the enumerator to the next element in the collection.</summary>
+        <returns>
+          <see langword="true" /> if the enumerator was successfully advanced to the next element; <see langword="false" /> if the enumerator has passed the end of the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -147,7 +156,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the enumerator to its initial position, which is before the first element in the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

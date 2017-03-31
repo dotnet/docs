@@ -1,64 +1,97 @@
 ---
 uid: System.ServiceModel.Syndication.AtomPub10CategoriesDocumentFormatter
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Syndication.AtomPub10CategoriesDocumentFormatter.ReadFrom(System.Xml.XmlReader)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Syndication.AtomPub10CategoriesDocumentFormatter.System#Xml#Serialization#IXmlSerializable#ReadXml(System.Xml.XmlReader)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Syndication.AtomPub10CategoriesDocumentFormatter.#ctor(System.Type,System.Type)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Syndication.AtomPub10CategoriesDocumentFormatter.System#Xml#Serialization#IXmlSerializable#WriteXml(System.Xml.XmlWriter)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Syndication.AtomPub10CategoriesDocumentFormatter.System#Xml#Serialization#IXmlSerializable#GetSchema
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Syndication.AtomPub10CategoriesDocumentFormatter.#ctor(System.ServiceModel.Syndication.CategoriesDocument)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Syndication.AtomPub10CategoriesDocumentFormatter.Version
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Syndication.AtomPub10CategoriesDocumentFormatter.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Syndication.AtomPub10CategoriesDocumentFormatter.CreateInlineCategoriesDocument
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Syndication.AtomPub10CategoriesDocumentFormatter.CanRead(System.Xml.XmlReader)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Syndication.AtomPub10CategoriesDocumentFormatter.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Syndication.AtomPub10CategoriesDocumentFormatter.WriteTo(System.Xml.XmlWriter)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Syndication.AtomPub10CategoriesDocumentFormatter.CreateReferencedCategoriesDocument
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

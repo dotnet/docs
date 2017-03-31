@@ -8,8 +8,15 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides the data needed for the star layout.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the panels that lay out the ribbon use *star sizing* to show the largest possible control variation that can fit in the available space. Star sizing is a convention where the available space is divided evenly between the elements that need to occupy the space. The name derives from the fact that you specify star sizing by using an asterisk (*) in XAML.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="OnInitializeLayout">
@@ -26,7 +33,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Called before the star allocator is measured.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +50,8 @@
         <ReturnType>System.Windows.UIElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Windows.UIElement" /> object that this provider targets.</summary>
+        <value>The targeted element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

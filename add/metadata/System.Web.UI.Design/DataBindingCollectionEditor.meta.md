@@ -1,19 +1,31 @@
 ---
 uid: System.Web.UI.Design.DataBindingCollectionEditor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DataBindingCollectionEditor.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DataBindingCollectionEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.DataBindingCollectionEditor.EditValue
 ---
 
 ---
 uid: System.Web.UI.Design.DataBindingCollectionEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.DataBindingCollectionEditor.GetEditStyle
 ---

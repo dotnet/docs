@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.WebControls.HyperLinkControlBuilder
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.HyperLinkControlBuilder.AllowWhitespaceLiterals
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.HyperLinkControlBuilder.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

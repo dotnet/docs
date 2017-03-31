@@ -1,9 +1,13 @@
 ---
 uid: System.Runtime.CompilerServices.UnsafeValueTypeAttribute
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.CompilerServices.UnsafeValueTypeAttribute.#ctor
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

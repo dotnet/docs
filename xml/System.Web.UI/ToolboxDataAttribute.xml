@@ -16,8 +16,29 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the default tag generated for a custom control when it is dragged from a toolbox in a tool such as Microsoft Visual Studio.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the visual designer of a tool such as Visual Studio, creates an empty tag. This is a tag representing a control in its default state, when the control is dropped from the toolbox of a visual designer onto the design surface. To specify initial default values, a control can make use of this attribute. You can use this attribute to customize the initial HTML content that is placed in the designer when the control is dragged from the toolbox onto the form.  
+  
+   
+  
+## Examples  
+  
+```  
+[ ToolboxData("<{0}:MyLabel runat= server Text=   
+       MyLabel><{0}:MyLabel>") ]public class MyLabel : Label {...}  
+```  
+  
+ In the following code example, the previous code sets several properties specific to `MyLabel`. All occurrences of `{0}` are replaced, by the designer, with the tag prefix associated with the `MyLabel` class.  
+  
+ [!code-csharp[SystemWebUI_ToolboxDataAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SystemWebUI_ToolboxDataAttribute/CS/toolboxdataattribute.cs#1)]
+ [!code-vb[SystemWebUI_ToolboxDataAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SystemWebUI_ToolboxDataAttribute/VB/toolboxdataattribute.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,8 +54,8 @@
         <Parameter Name="data" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="data">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="data">The string to be set as the <see cref="P:System.Web.UI.ToolboxDataAttribute.Data" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ToolboxDataAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +72,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the string representing the initial values of the control's property, which is used in a visual designer for creating an instance of the control.</summary>
+        <value>A string representing the initial values for this attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,7 +90,7 @@
         <ReturnType>System.Web.UI.ToolboxDataAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the default <see cref="T:System.Web.UI.ToolboxDataAttribute" /> value for a custom control.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,10 +110,18 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="obj">The object to compare to.</param>
+        <summary>Tests whether the <see cref="T:System.Web.UI.ToolboxDataAttribute" /> object is equal to the given object.</summary>
+        <returns>
+          <see langword="true" />, if the <see cref="T:System.Web.UI.ToolboxDataAttribute" /> object is equal to the given object; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.ToolboxDataAttribute.Equals%2A> method first compares the objects for equality.  If the comparison returns `false`, the <xref:System.Web.UI.ToolboxDataAttribute.Equals%2A> method then compares the data of the <xref:System.Web.UI.ToolboxDataAttribute> object to the data of the given object after first testing the given object to make sure that the given object is not `null` and is also typed as <xref:System.Web.UI.ToolboxDataAttribute> object.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -109,8 +138,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code of the custom control.</summary>
+        <returns>A 32-bit signed <see langword="integer" /> representing the hash code.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,9 +157,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Tests whether the <see cref="T:System.Web.UI.ToolboxDataAttribute" /> object contains the default value for the <see cref="P:System.Web.UI.ToolboxDataAttribute.Data" /> property.</summary>
+        <returns>
+          <see langword="true" />, if the <see cref="T:System.Web.UI.ToolboxDataAttribute" /> contains the default value for the <see cref="P:System.Web.UI.ToolboxDataAttribute.Data" /> property; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default is an empty string ("").  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

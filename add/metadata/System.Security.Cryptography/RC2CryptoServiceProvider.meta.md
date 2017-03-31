@@ -1,39 +1,69 @@
 ---
 uid: System.Security.Cryptography.RC2CryptoServiceProvider
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.RC2CryptoServiceProvider.GenerateKey
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.RC2CryptoServiceProvider.UseSalt
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.RC2CryptoServiceProvider.GenerateIV
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.RC2CryptoServiceProvider.CreateEncryptor(System.Byte[],System.Byte[])
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.RC2CryptoServiceProvider.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.RC2CryptoServiceProvider.CreateDecryptor(System.Byte[],System.Byte[])
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.RC2CryptoServiceProvider.EffectiveKeySize
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.RC2CryptoServiceProvider.CreateDecryptor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.RC2CryptoServiceProvider.CreateEncryptor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

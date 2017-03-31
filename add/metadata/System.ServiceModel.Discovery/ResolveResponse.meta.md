@@ -1,14 +1,20 @@
 ---
 uid: System.ServiceModel.Discovery.ResolveResponse
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.ResolveResponse.EndpointDiscoveryMetadata
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.ResolveResponse.MessageSequence
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

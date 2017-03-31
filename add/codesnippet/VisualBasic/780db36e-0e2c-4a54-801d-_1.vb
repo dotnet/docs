@@ -1,1 +1,0 @@
-        exporter.PolicyVersion = PolicyVersion.Policy15

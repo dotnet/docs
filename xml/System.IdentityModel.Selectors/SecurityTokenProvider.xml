@@ -11,8 +11,25 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a security token provider that handles security tokens for a SOAP message sender.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.IdentityModel.Selectors.SecurityTokenProvider> class when custom security tokens are required. The role of a security token provider is to get a security token when a SOAP message is sent by a client and a security token is used to authenticate the client or to protect the SOAP message. Specifically, the <xref:System.IdentityModel.Selectors.SecurityTokenProvider.GetToken%2A> method is called to get a security token. The security token provider can also be called to cancel and renew a security using the <xref:System.IdentityModel.Selectors.SecurityTokenProvider.CancelToken%2A> and <xref:System.IdentityModel.Selectors.SecurityTokenProvider.RenewToken%2A> methods.  
+  
+ Classes that derive from the <xref:System.IdentityModel.Selectors.SecurityTokenManager> class implement the <xref:System.IdentityModel.Selectors.SecurityTokenManager.CreateSecurityTokenProvider%2A> method to determine which security token provider is required for a given security token.  
+  
+ The <xref:System.ServiceModel.ClientCredentialsSecurityTokenManager> and <xref:System.ServiceModel.Security.ServiceCredentialsSecurityTokenManager> classes provide the default implementations for built-in security token types. For custom security token scenarios, you must derive a class from one of the <xref:System.IdentityModel.Selectors.SecurityTokenManager>, <xref:System.ServiceModel.ClientCredentialsSecurityTokenManager>, or <xref:System.ServiceModel.Security.ServiceCredentialsSecurityTokenManager> classes and provide the functionality to create the security token provider, security token authenticator, and security token serializer for the custom security token. [!INCLUDE[crabout](~/includes/crabout-md.md)] creating a custom token, see [How to: Create a Custom Token](../Topic/How%20to:%20Create%20a%20Custom%20Token.md).  
+  
+   
+  
+## Examples  
+ [!code-csharp[SecurityTokenProvider#0](~/samples/snippets/csharp/VS_Snippets_CFX/securitytokenprovider/cs/samlsecuritytokenprovider.cs#0)]
+ [!code-vb[SecurityTokenProvider#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/securitytokenprovider/vb/samlsecuritytokenprovider.vb#0)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +43,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Selectors.SecurityTokenProvider" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,13 +66,25 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="timeout">To be added.</param>
-        <param name="token">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="timeout">A <see cref="T:System.TimeSpan" /> that specifies the timeout value for the message that cancels the security token.</param>
+        <param name="token">The <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> to cancel.</param>
+        <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate that receives notification of the completion of the asynchronous close operation.</param>
+        <param name="state">An object, specified by the application, that contains state information associated with the asynchronous close operation.</param>
+        <summary>Begins an asynchronous operation to cancel a security token.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous cancel operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A security token that can be cancelled, such as one that is issued, allows a client that requested a security token to cancel it when it is done with it.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>The <see cref="M:System.IdentityModel.Selectors.SecurityTokenProvider.BeginCancelTokenCore(System.TimeSpan,System.IdentityModel.Tokens.SecurityToken,System.AsyncCallback,System.Object)" /> method is called by the <see cref="M:System.IdentityModel.Selectors.SecurityTokenProvider.BeginCancelToken(System.TimeSpan,System.IdentityModel.Tokens.SecurityToken,System.AsyncCallback,System.Object)" /> method.  
+  
+ The asynchronous methods, which have a prefix of Begin and End, do not need to be overridden in derived classes. The <see cref="T:System.IdentityModel.Selectors.SecurityTokenProvider" /> base class provides an asynchronous implementation that is based on the synchronous methods.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="BeginCancelTokenCore">
@@ -77,13 +106,27 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="timeout">To be added.</param>
-        <param name="token">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="timeout">A <see cref="T:System.TimeSpan" /> that specifies the timeout value for the message that cancels the security token.</param>
+        <param name="token">The <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> to cancel.</param>
+        <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate that receives notification of the completion of the asynchronous close operation.</param>
+        <param name="state">An object, specified by the application, that contains state information associated with the asynchronous close operation.</param>
+        <summary>Begins an asynchronous operation to cancel a security token.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous cancel operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A security token that can be cancelled, such as one that is issued, allows a client that requested a security token to cancel it when it is done with it.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When you inherit from the <see cref="T:System.IdentityModel.Selectors.SecurityTokenProvider" /> class you are not required to override the asynchronous methods, as the <see cref="T:System.IdentityModel.Selectors.SecurityTokenProvider" /> base class provides asynchronous support based upon the synchronous methods. Therefore, you are not required to override the <see cref="M:System.IdentityModel.Selectors.SecurityTokenProvider.BeginCancelTokenCore(System.TimeSpan,System.IdentityModel.Tokens.SecurityToken,System.AsyncCallback,System.Object)" /> method, unless you need to provide your own asynchronous implementation.  
+  
+ The <see cref="M:System.IdentityModel.Selectors.SecurityTokenProvider.BeginCancelTokenCore(System.TimeSpan,System.IdentityModel.Tokens.SecurityToken,System.AsyncCallback,System.Object)" /> method is called by the <see cref="M:System.IdentityModel.Selectors.SecurityTokenProvider.BeginCancelToken(System.TimeSpan,System.IdentityModel.Tokens.SecurityToken,System.AsyncCallback,System.Object)" /> method.  
+  
+ The asynchronous methods, which have a prefix of Begin and End, do not need to be overridden in derived classes. The <see cref="T:System.IdentityModel.Selectors.SecurityTokenProvider" /> base class provides an asynchronous implementation that is based on the synchronous methods.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="BeginGetToken">
@@ -104,12 +147,22 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="timeout">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="timeout">A <see cref="T:System.TimeSpan" /> that specifies the timeout value for the message that gets the security token.</param>
+        <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate that receives notification of the completion of the asynchronous close operation.</param>
+        <param name="state">An object, specified by the application, that contains state information associated with the asynchronous close operation.</param>
+        <summary>Begins an asynchronous operation to get a security token.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous close operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Selectors.SecurityTokenProvider.BeginGetToken%2A> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenProvider.BeginGetTokenCore%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>The asynchronous methods, which have a prefix of Begin and End, do not need to be overridden in derived classes. The <see cref="T:System.IdentityModel.Selectors.SecurityTokenProvider" /> base class provides an asynchronous implementation that is based on the synchronous methods.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="BeginGetTokenCore">
@@ -130,12 +183,24 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="timeout">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="timeout">A <see cref="T:System.TimeSpan" /> that specifies the timeout value for the message that gets the security token.</param>
+        <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate that receives notification of the completion of the asynchronous close operation.</param>
+        <param name="state">An object, specified by the application, that contains state information associated with the asynchronous close operation.</param>
+        <summary>Begins an asynchronous operation to get a security token.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you inherit from the <xref:System.IdentityModel.Selectors.SecurityTokenProvider> class you are not required to override the asynchronous methods, as the <xref:System.IdentityModel.Selectors.SecurityTokenProvider> base class provides asynchronous support based upon the synchronous methods. Therefore, you are not required to override the <xref:System.IdentityModel.Selectors.SecurityTokenProvider.BeginGetTokenCore%2A> method, unless you must provide your own asynchronous implementation.  
+  
+ The <xref:System.IdentityModel.Selectors.SecurityTokenProvider.BeginGetToken%2A> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenProvider.BeginGetTokenCore%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>The asynchronous methods, which have a prefix of Begin and End, do not need to be overridden in derived classes. The <see cref="T:System.IdentityModel.Selectors.SecurityTokenProvider" /> base class provides an asynchronous implementation that is based on the synchronous methods.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="BeginRenewToken">
@@ -157,13 +222,23 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="timeout">To be added.</param>
+        <param name="timeout">A <see cref="T:System.TimeSpan" /> that specifies the timeout value for the message that renews the security token.</param>
         <param name="token">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate that receives notification of the completion of the asynchronous close operation.</param>
+        <param name="state">An object, specified by the application, that contains state information associated with the asynchronous close operation.</param>
+        <summary>Begins an asynchronous operation that renews a security token.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Selectors.SecurityTokenProvider.BeginRenewToken%2A> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenProvider.BeginRenewTokenCore%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>The asynchronous methods, which have a prefix of Begin and End, do not need to be overridden in derived classes. The <see cref="T:System.IdentityModel.Selectors.SecurityTokenProvider" /> base class provides an asynchronous implementation that is based on the synchronous methods.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="BeginRenewTokenCore">
@@ -185,13 +260,22 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="timeout">To be added.</param>
+        <param name="timeout">A <see cref="T:System.TimeSpan" /> that specifies the timeout value for the message that renews the security token.</param>
         <param name="token">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate that receives notification of the completion of the asynchronous close operation.</param>
+        <param name="state">An object, specified by the application, that contains state information associated with the asynchronous close operation.</param>
+        <summary>Begins an asynchronous operation that renews a security token.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you inherit from the <xref:System.IdentityModel.Selectors.SecurityTokenProvider> class you are not required to override the asynchronous methods, as the <xref:System.IdentityModel.Selectors.SecurityTokenProvider> base class provides asynchronous support based upon the synchronous methods. Therefore, you are not required to override the <xref:System.IdentityModel.Selectors.SecurityTokenProvider.BeginRenewTokenCore%2A> method, unless you must provide your own asynchronous implementation.  
+  
+ The <xref:System.IdentityModel.Selectors.SecurityTokenProvider.BeginRenewToken%2A> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenProvider.BeginRenewTokenCore%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CancelToken">
@@ -211,10 +295,19 @@
         <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken" />
       </Parameters>
       <Docs>
-        <param name="timeout">To be added.</param>
-        <param name="token">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="timeout">A <see cref="T:System.TimeSpan" /> that specifies the timeout value for the message that cancels the security token.</param>
+        <param name="token">The <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> to cancel.</param>
+        <summary>Cancels a security token.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A security token that can be cancelled, such as one that is issued, allows a client that requested a security token to cancel it when it is done with it.  
+  
+ The <xref:System.IdentityModel.Selectors.SecurityTokenProvider.CancelToken%2A> method calls <xref:System.IdentityModel.Selectors.SecurityTokenProvider.CancelTokenCore%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CancelTokenCore">
@@ -234,10 +327,21 @@
         <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken" />
       </Parameters>
       <Docs>
-        <param name="timeout">To be added.</param>
-        <param name="token">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="timeout">A <see cref="T:System.TimeSpan" /> that specifies the timeout value for the message that cancels the security token.</param>
+        <param name="token">The <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> to cancel.</param>
+        <summary>Cancels a security token.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A security token that can be cancelled, such as one that is issued, allows a client that requested a security token to cancel it when it is done with it.  
+  
+ The <xref:System.IdentityModel.Selectors.SecurityTokenProvider.CancelToken%2A> method calls <xref:System.IdentityModel.Selectors.SecurityTokenProvider.CancelTokenCore%2A> method.  
+  
+ When the <xref:System.IdentityModel.Selectors.SecurityTokenProvider.CancelTokenCore%2A> method is overridden and the security token passed into the token parameter cannot be canceled, throw the <xref:System.IdentityModel.Tokens.SecurityTokenException> exception.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EndCancelToken">
@@ -256,9 +360,21 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="result">The <see cref="T:System.IAsyncResult" /> that is returned by a call to the <see cref="M:System.IdentityModel.Selectors.SecurityTokenProvider.BeginCancelToken(System.TimeSpan,System.IdentityModel.Tokens.SecurityToken,System.AsyncCallback,System.Object)" /> method.</param>
+        <summary>Completes an asynchronous operation to cancel a security token.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A security token that can be cancelled, such as one that is issued, allows a client that requested a security token to cancel it when it is done with it.  
+  
+ The <xref:System.IdentityModel.Selectors.SecurityTokenProvider.EndCancelToken%2A> method calls <xref:System.IdentityModel.Selectors.SecurityTokenProvider.EndCancelTokenCore%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>The asynchronous methods, which have a prefix of Begin and End, do not need to be overridden in derived classes. The <see cref="T:System.IdentityModel.Selectors.SecurityTokenProvider" /> base class provides an asynchronous implementation that is based on the synchronous methods.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="EndCancelTokenCore">
@@ -277,9 +393,20 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="result">The <see cref="T:System.IAsyncResult" /> that is returned by a call to the <see cref="M:System.IdentityModel.Selectors.SecurityTokenProvider.BeginCancelTokenCore(System.TimeSpan,System.IdentityModel.Tokens.SecurityToken,System.AsyncCallback,System.Object)" /> method.</param>
+        <summary>Completes an asynchronous operation to cancel a security token.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A security token that can be cancelled, such as one that is issued, allows a client that requested a security token to cancel it when it is done with it.  
+  
+ When you inherit from the <xref:System.IdentityModel.Selectors.SecurityTokenProvider> class you are not required to override the asynchronous methods, as the <xref:System.IdentityModel.Selectors.SecurityTokenProvider> base class provides asynchronous support based upon the synchronous methods. Therefore, you are not required to override the <xref:System.IdentityModel.Selectors.SecurityTokenProvider.EndCancelTokenCore%2A> method, unless you must provide your own asynchronous implementation.  
+  
+ The <xref:System.IdentityModel.Selectors.SecurityTokenProvider.EndCancelToken%2A> method calls <xref:System.IdentityModel.Selectors.SecurityTokenProvider.EndCancelTokenCore%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EndGetToken">
@@ -298,10 +425,17 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="result">The <see cref="T:System.IAsyncResult" /> that is returned by a call to the <see cref="M:System.IdentityModel.Selectors.SecurityTokenProvider.BeginGetToken(System.TimeSpan,System.AsyncCallback,System.Object)" /> method.</param>
+        <summary>Completes an asynchronous operation to get a security token.</summary>
+        <returns>The <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> that represents the security token.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Selectors.SecurityTokenProvider.EndGetToken%2A> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenProvider.EndGetTokenCore%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EndGetTokenCore">
@@ -320,10 +454,19 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="result">The <see cref="T:System.IAsyncResult" /> that is returned by a call to the <see cref="M:System.IdentityModel.Selectors.SecurityTokenProvider.BeginGetTokenCore(System.TimeSpan,System.AsyncCallback,System.Object)" /> method.</param>
+        <summary>Completes an asynchronous operation to get a security token.</summary>
+        <returns>The <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> that represents the security token.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you inherit from the <xref:System.IdentityModel.Selectors.SecurityTokenProvider> class you are not required to override the asynchronous methods, as the <xref:System.IdentityModel.Selectors.SecurityTokenProvider> base class provides asynchronous support based upon the synchronous methods. Therefore, you are not required to override the <xref:System.IdentityModel.Selectors.SecurityTokenProvider.EndGetTokenCore%2A> method, unless you must provide your own asynchronous implementation.  
+  
+ The <xref:System.IdentityModel.Selectors.SecurityTokenProvider.EndGetToken%2A> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenProvider.EndGetTokenCore%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EndRenewToken">
@@ -342,10 +485,17 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="result">The <see cref="T:System.IAsyncResult" /> that is returned by a call to the <see cref="M:System.IdentityModel.Selectors.SecurityTokenProvider.BeginRenewToken(System.TimeSpan,System.IdentityModel.Tokens.SecurityToken,System.AsyncCallback,System.Object)" /> method.</param>
+        <summary>Completes an asynchronous operation to renew a security token.</summary>
+        <returns>The <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> that represents the security token that is renewed.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Selectors.SecurityTokenProvider.EndRenewToken%2A> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenProvider.EndRenewTokenCore%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EndRenewTokenCore">
@@ -364,10 +514,19 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="result">The <see cref="T:System.IAsyncResult" /> that is returned by a call to the <see cref="M:System.IdentityModel.Selectors.SecurityTokenProvider.BeginRenewTokenCore(System.TimeSpan,System.IdentityModel.Tokens.SecurityToken,System.AsyncCallback,System.Object)" /> method.</param>
+        <summary>Completes an asynchronous operation to renew the security token.</summary>
+        <returns>The <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> that represents the security token that is renewed.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you inherit from the <xref:System.IdentityModel.Selectors.SecurityTokenProvider> class you are not required to override the asynchronous methods, as the <xref:System.IdentityModel.Selectors.SecurityTokenProvider> base class provides asynchronous support based upon the synchronous methods. Therefore, you are not required to override the <xref:System.IdentityModel.Selectors.SecurityTokenProvider.EndRenewTokenCore%2A> method, unless you must provide your own asynchronous implementation.  
+  
+ The <xref:System.IdentityModel.Selectors.SecurityTokenProvider.EndRenewToken%2A> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenProvider.EndRenewTokenCore%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetToken">
@@ -386,10 +545,21 @@
         <Parameter Name="timeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="timeout">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="timeout">A <see cref="T:System.TimeSpan" /> that specifies the timeout value for the message that gets the security token.</param>
+        <summary>Gets a security token.</summary>
+        <returns>The <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> that represents the security token to get.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Selectors.SecurityTokenProvider.GetToken%2A> method is called by the <xref:System.ServiceModel.Description.ClientCredentials> class when a client sends a SOAP message and a security token is required.  
+  
+ The <xref:System.IdentityModel.Selectors.SecurityTokenProvider.GetToken%2A> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenProvider.GetTokenCore%2A> method.  
+  
+ In most cases the `timeout` parameter is not used by derived classes of <xref:System.IdentityModel.Selectors.SecurityTokenProvider> such as <xref:System.IdentityModel.Selectors.UserNameSecurityTokenProvider>. However, sometimes retrieving a security token involves distributed messaging. An example is <xref:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider> used in a federated service. In these cases the `timeout` parameter is used to avoid exceptions caused by network failures, message loss, and other error conditions.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTokenCore">
@@ -408,10 +578,27 @@
         <Parameter Name="timeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="timeout">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="timeout">A <see cref="T:System.TimeSpan" /> that specifies the timeout value for the message that gets the security token.</param>
+        <summary>Gets a security token.</summary>
+        <returns>The <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> that represents the security token to get.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.IdentityModel.Selectors.SecurityTokenProvider.GetTokenCore%2A> method is overridden and the security token passed into the token parameter cannot be obtained, throw the <xref:System.IdentityModel.Tokens.SecurityTokenException> exception.  
+  
+ The <xref:System.IdentityModel.Selectors.SecurityTokenProvider.GetToken%2A> method is called by the <xref:System.ServiceModel.Description.ClientCredentials> class when a client sends a SOAP message and a security token is required.  
+  
+ The <xref:System.IdentityModel.Selectors.SecurityTokenProvider.GetToken%2A> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenProvider.GetTokenCore%2A> method.  
+  
+   
+  
+## Examples  
+ [!code-csharp[SecurityTokenProvider#1](~/samples/snippets/csharp/VS_Snippets_CFX/securitytokenprovider/cs/samlsecuritytokenprovider.cs#1)]
+ [!code-vb[SecurityTokenProvider#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/securitytokenprovider/vb/samlsecuritytokenprovider.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RenewToken">
@@ -431,11 +618,20 @@
         <Parameter Name="tokenToBeRenewed" Type="System.IdentityModel.Tokens.SecurityToken" />
       </Parameters>
       <Docs>
-        <param name="timeout">To be added.</param>
+        <param name="timeout">A <see cref="T:System.TimeSpan" /> that specifies the timeout value for the message that renews the security token.</param>
         <param name="token">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Renews a security token.</summary>
+        <returns>The <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> that represents the security token that is renewed.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An issued security token that is renewable allows a client to renew it when the security token is about to or has expired.  
+  
+ The <xref:System.IdentityModel.Selectors.SecurityTokenProvider.RenewToken%2A> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenProvider.RenewTokenCore%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RenewTokenCore">
@@ -455,11 +651,22 @@
         <Parameter Name="tokenToBeRenewed" Type="System.IdentityModel.Tokens.SecurityToken" />
       </Parameters>
       <Docs>
-        <param name="timeout">To be added.</param>
+        <param name="timeout">A <see cref="T:System.TimeSpan" /> that specifies the timeout value for the message that renews the security token.</param>
         <param name="token">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Renews a security token.</summary>
+        <returns>The <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> that represents the security token that is renewed.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An issued security token that is renewable allows a client to renew it when the security token is about to or has expired.  
+  
+ When the <xref:System.IdentityModel.Selectors.SecurityTokenProvider.RenewTokenCore%2A> method is overridden and the security token passed into the token parameter cannot be renewed, throw the <xref:System.IdentityModel.Tokens.SecurityTokenException> exception.  
+  
+ The <xref:System.IdentityModel.Selectors.SecurityTokenProvider.RenewToken%2A> method calls the <xref:System.IdentityModel.Selectors.SecurityTokenProvider.RenewTokenCore%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportsTokenCancellation">
@@ -475,9 +682,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the security token can be cancelled.</summary>
+        <value>
+          <see langword="true" /> if the security token can be cancelled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A security token that can be cancelled, such as one that is issued, allows a client that requested a security token to cancel it when it is done with it.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportsTokenRenewal">
@@ -493,9 +708,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the security token is renewable.</summary>
+        <value>
+          <see langword="true" /> if the security token can be renewed; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An issued security token that is renewable allows a client to renew it when the security token is about to or has expired.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies an Elliptic Curve Diffie-Hellman (ECDH) public key for use with the <see cref="T:System.Security.Cryptography.ECDiffieHellmanCng" /> class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Security.Cryptography.ECDiffieHellmanCngPublicKey> objects are used in key exchanges with <xref:System.Security.Cryptography.ECDiffieHellmanCng> objects.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="BlobFormat">
@@ -28,8 +35,8 @@
         <ReturnType>System.Security.Cryptography.CngKeyBlobFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the key BLOB format for a <see cref="T:System.Security.Cryptography.ECDiffieHellmanCngPublicKey" /> object.</summary>
+        <value>The format that the key BLOB is expressed in.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,9 +75,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Exports the key and explicit curve parameters used by the <see cref="T:System.Security.Cryptography.ECCurve" /> object into an <see cref="T:System.Security.Cryptography.ECParameters" /> object.</summary>
+        <returns>The key and explicit curve parameters used by the <see cref="T:System.Security.Cryptography.ECCurve" /> object.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The method cannot obtain curve values.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">Explicit export is not supported by this platform. Windows 10 or higher is required.</exception>
       </Docs>
     </Member>
     <Member MemberName="ExportParameters">
@@ -87,9 +96,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Exports the key used by the <see cref="T:System.Security.Cryptography.ECCurve" /> object into an <see cref="T:System.Security.Cryptography.ECParameters" /> object.</summary>
+        <returns>The key and named curve parameters used by the <see cref="T:System.Security.Cryptography.ECCurve" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the key was created as a named curve, the <xref:System.Security.Cryptography.ECParameters?displayProperty=fullName> field contains named curve parameters;          otherwise,  it contains explicit parameters.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The method cannot obtain curve values.</exception>
       </Docs>
     </Member>
     <Member MemberName="FromByteArray">
@@ -114,11 +131,20 @@
         <Parameter Name="format" Type="System.Security.Cryptography.CngKeyBlobFormat" />
       </Parameters>
       <Docs>
-        <param name="publicKeyBlob">To be added.</param>
-        <param name="format">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="publicKeyBlob">A byte array that contains an Elliptic Curve Diffie-Hellman (ECDH) public key.</param>
+        <param name="format">An object that specifies the format of the key BLOB.</param>
+        <summary>Converts a byte array that contains a public key to a <see cref="T:System.Security.Cryptography.ECDiffieHellmanCngPublicKey" /> object according to the specified format.</summary>
+        <returns>An object that contains the ECDH public key that is serialized in the byte array.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This static method is shared among all <xref:System.Security.Cryptography.ECDiffieHellmanCngPublicKey> instances.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="publicKeyBlob" /> or <paramref name="format" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="publicKeyBlob" /> parameter does not contain an <see cref="T:System.Security.Cryptography.ECDiffieHellman" /> key.</exception>
       </Docs>
     </Member>
     <Member MemberName="FromXmlString">
@@ -142,10 +168,19 @@
         <Parameter Name="xml" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="xml">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="xml">An XML string that contains an Elliptic Curve Diffie-Hellman (ECDH) key.</param>
+        <summary>Converts an XML string to an <see cref="T:System.Security.Cryptography.ECDiffieHellmanCngPublicKey" /> object.</summary>
+        <returns>An object that contains the ECDH public key that is specified by the given XML.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This static method is shared among all <xref:System.Security.Cryptography.ECDiffieHellmanCngPublicKey> instances.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="xml" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="xml" /> parameter does not specify an <see cref="T:System.Security.Cryptography.ECDiffieHellman" /> key.</exception>
       </Docs>
     </Member>
     <Member MemberName="Import">
@@ -162,8 +197,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Converts the <see cref="T:System.Security.Cryptography.ECDiffieHellmanCngPublicKey" /> object to a <see cref="T:System.Security.Cryptography.CngKey" /> object.</summary>
+        <returns>An object that contains the key represented by the <see cref="T:System.Security.Cryptography.ECDiffieHellmanCngPublicKey" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -181,9 +216,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Serializes the <see cref="T:System.Security.Cryptography.ECDiffieHellmanCngPublicKey" /> public key to an XML string in RFC 4050 format.</summary>
+        <returns>An XML string that contains the serialized <see cref="T:System.Security.Cryptography.ECDiffieHellmanCngPublicKey" /> public key.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Security.Cryptography.ECKeyXmlFormat?displayProperty=fullName>for information about the XML format that this method uses.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

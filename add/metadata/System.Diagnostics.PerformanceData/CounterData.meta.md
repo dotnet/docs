@@ -1,29 +1,35 @@
 ---
 uid: System.Diagnostics.PerformanceData.CounterData
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceData.CounterData.IncrementBy(System.Int64)
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceData.CounterData.Increment
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceData.CounterData.Value
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceData.CounterData.Decrement
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceData.CounterData.RawValue
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---

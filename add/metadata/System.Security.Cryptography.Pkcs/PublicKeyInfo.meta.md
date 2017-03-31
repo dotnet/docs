@@ -1,14 +1,20 @@
 ---
 uid: System.Security.Cryptography.Pkcs.PublicKeyInfo
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.Pkcs.PublicKeyInfo.KeyValue
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.Pkcs.PublicKeyInfo.Algorithm
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

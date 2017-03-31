@@ -1,19 +1,25 @@
 ---
 uid: System.Windows.Controls.TextChange
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.TextChange.AddedLength
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.TextChange.Offset
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.TextChange.RemovedLength
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

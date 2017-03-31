@@ -15,8 +15,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines identifiers for types of inheritance levels.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ComponentModel.InheritanceLevel> defines identifiers for numeric IDs that are used with the <xref:System.ComponentModel.InheritanceAttribute> attribute to indicate various levels of inheritance.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Inherited">
@@ -37,7 +44,7 @@
         <ReturnType>System.ComponentModel.InheritanceLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The object is inherited.</summary>
       </Docs>
     </Member>
     <Member MemberName="InheritedReadOnly">
@@ -58,7 +65,7 @@
         <ReturnType>System.ComponentModel.InheritanceLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The object is inherited, but has read-only access.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotInherited">
@@ -79,7 +86,7 @@
         <ReturnType>System.ComponentModel.InheritanceLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The object is not inherited.</summary>
       </Docs>
     </Member>
   </Members>

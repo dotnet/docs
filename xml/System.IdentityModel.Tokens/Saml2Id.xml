@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the identifier used for SAML assertions.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the element that this class represents, see the SAML V2.0 Core specification.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,8 +33,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2Id" /> class with a system-generated value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The ID is created based on a generated GUID and the <xref:System.IdentityModel.Tokens.Saml2Id.Value%2A> property is set accordingly.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -43,9 +57,20 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="value">The ID value.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2Id" /> class with the specified value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The identifier should be unique per [Saml2Core, 1.3.4] and must fit the NCName xml schema definition, that is, it must begin with a letter or underscore.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> is not a valid NCName.</exception>
+        <exception cref="T:System.ArgumentNUllException">
+          <paramref name="value" /> is <see langword="null" /> or an empty string.</exception>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -64,10 +89,18 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="obj">The object with which to compare this instance.</param>
+        <summary>Determines whether this instance is equal to the specified object.</summary>
+        <returns>
+          <see langword="true" /> if the objects are equal; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For the objects to be equal, the specified object must be an instance of the <xref:System.IdentityModel.Tokens.Saml2Id> class and its <xref:System.IdentityModel.Tokens.Saml2Id.Value%2A> property must be equal to the <xref:System.IdentityModel.Tokens.Saml2Id.Value%2A> property of this instance as determined by a string comparison.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -84,8 +117,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a hash code for this instance.</summary>
+        <returns>An integer that contains the hash code.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,9 +136,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a string representation of this instance.</summary>
+        <returns>The string representation of the <see cref="T:System.IdentityModel.Tokens.Saml2Id" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.Saml2Id.Value%2A> property is returned.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -121,9 +161,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the identifier string.</summary>
+        <value>The ID string.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The identifier should be unique per [Saml2Core, 1.3.4] and must fit the NCName xml schema definition, that is, it must begin with a letter or underscore.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

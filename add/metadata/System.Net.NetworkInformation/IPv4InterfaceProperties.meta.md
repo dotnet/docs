@@ -1,44 +1,53 @@
 ---
 uid: System.Net.NetworkInformation.IPv4InterfaceProperties
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPv4InterfaceProperties.IsAutomaticPrivateAddressingActive
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPv4InterfaceProperties.IsDhcpEnabled
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPv4InterfaceProperties.Mtu
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPv4InterfaceProperties.UsesWins
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPv4InterfaceProperties.IsForwardingEnabled
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPv4InterfaceProperties.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPv4InterfaceProperties.Index
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPv4InterfaceProperties.IsAutomaticPrivateAddressingEnabled
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

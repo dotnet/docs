@@ -26,8 +26,31 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The exception that is thrown when there is an attempt to dynamically access a method that does not exist.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Normally a compilation error is generated if code attempts to access a nonexistent method of a class. <xref:System.MissingMethodException> is designed to handle cases where an attempt is made to dynamically access a renamed or deleted method of an assembly that is not referenced by its strong name. <xref:System.MissingMethodException> is thrown when code in a dependent assembly attempts to access a missing method in an assembly that was modified.  
+  
+ <xref:System.MissingMethodException> uses the HRESULT COR_E_MISSINGMETHOD, that has the value 0x80131513.  
+  
+ For a list of initial property values for an instance of <xref:System.MissingMethodException>, see the <xref:System.MissingMethodException.%23ctor%2A> constructors.  
+  
+> [!NOTE]
+>  This exception is not included in the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the , but it is thrown by some members that are. To catch the exception in that case, write a `catch` statement for <xref:System.MissingMemberException> instead.  
+  
+   
+  
+## Examples  
+ This example shows what happens if you attempt to use reflection to call a method that does not exist and access a field that does not exist. The application recovers by catching the <xref:System.MissingMethodException>, <xref:System.MissingFieldException>, and <xref:System.MissingMemberException>.  
+  
+ [!code-cpp[MissingMethodException#1](~/samples/snippets/cpp/VS_Snippets_CLR/MissingMethodException/cpp/MissingMethodException.cpp#1)]
+ [!code-csharp[MissingMethodException#1](~/samples/snippets/csharp/VS_Snippets_CLR/MissingMethodException/CS/MissingMethodException.cs#1)]
+ [!code-vb[MissingMethodException#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/MissingMethodException/vb/missingmethodexception.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,8 +74,22 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.MissingMethodException" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor initializes the <xref:System.MissingMethodException.Message%2A> property of the new instance to a system-supplied message that describes the error, such as "Attempted to access a missing method." This message takes into account the current system culture.  
+  
+ The following table shows the initial property values for an instance of <xref:System.MissingMethodException>.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|A null reference (`Nothing` in Visual Basic).|  
+|<xref:System.MissingMemberException.Message%2A>|The localized error message string.|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -78,9 +115,23 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="message">A <see cref="T:System.String" /> that describes the error.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.MissingMethodException" /> class with a specified error message.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The content of the `message` parameter should be understandable by the user. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
+  
+ The following table shows the initial property values for an instance of <xref:System.MissingMethodException>.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|A null reference (`Nothing` in Visual Basic).|  
+|<xref:System.MissingMethodException.Message%2A>|The error message string.|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -102,10 +153,17 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="info">The object that holds the serialized object data.</param>
+        <param name="context">The contextual information about the source or destination.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.MissingMethodException" /> class with serialized data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is called during deserialization to reconstitute the exception object transmitted over a stream. For more information, see [XML and SOAP Serialization](../Topic/XML%20and%20SOAP%20Serialization.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -132,10 +190,24 @@
         <Parameter Name="inner" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="inner">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="message">The error message that explains the reason for the exception.</param>
+        <param name="inner">The exception that is the cause of the current exception. If the <c>inner</c> parameter is not a null reference (<see langword="Nothing" /> in Visual Basic), the current exception is raised in a <see langword="catch" /> block that handles the inner exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.MissingMethodException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or a null reference (`Nothing` in Visual Basic) if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
+  
+ The following table shows the initial property values for an instance of <xref:System.MissingMethodException>.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|The inner exception reference.|  
+|<xref:System.MissingMethodException.Message%2A>|The error message string.|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -157,9 +229,9 @@
         <Parameter Name="methodName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="className">To be added.</param>
-        <param name="methodName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="className">The name of the class in which access to a nonexistent method was attempted.</param>
+        <param name="methodName">The name of the method that cannot be accessed.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.MissingMethodException" /> class with the specified class name and method name.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -191,9 +263,27 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the text string showing the class name, the method name, and the signature of the missing method. This property is read-only.</summary>
+        <value>The error message string.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the class name is not specified when the object is constructed, the default text string inherited from the base class is returned.  
+  
+ This property overrides <xref:System.MissingMemberException.Message%2A>. The error message should be localized.  
+  
+   
+  
+## Examples  
+ The following example demonstrates the <xref:System.MissingMethodException.Message%2A> property. This code example is part of a larger example provided for the <xref:System.MissingMethodException> class.  
+  
+ [!code-cpp[MissingMethodException#2](~/samples/snippets/cpp/VS_Snippets_CLR/MissingMethodException/cpp/MissingMethodException.cpp#2)]
+ [!code-csharp[MissingMethodException#2](~/samples/snippets/csharp/VS_Snippets_CLR/MissingMethodException/CS/MissingMethodException.cs#2)]
+ [!code-vb[MissingMethodException#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/MissingMethodException/vb/missingmethodexception.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,9 +1,13 @@
 ---
 uid: System.Web.Compilation.IAssemblyPostProcessor
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Compilation.IAssemblyPostProcessor.PostProcessAssembly(System.String)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

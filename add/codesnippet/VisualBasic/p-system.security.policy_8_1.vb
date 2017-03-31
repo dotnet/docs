@@ -1,1 +1,0 @@
-        policyStatement.Attributes = PolicyStatementAttribute.All

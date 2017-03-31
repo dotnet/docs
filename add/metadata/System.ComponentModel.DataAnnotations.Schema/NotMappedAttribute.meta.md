@@ -1,9 +1,11 @@
 ---
 uid: System.ComponentModel.DataAnnotations.Schema.NotMappedAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.Schema.NotMappedAttribute.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -1,29 +1,38 @@
 ---
 uid: System.Windows.Automation.Peers.RibbonGalleryItemAutomationPeer
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonGalleryItemAutomationPeer.GetAccessKeyCore
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonGalleryItemAutomationPeer.GetHelpTextCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonGalleryItemAutomationPeer.#ctor(System.Windows.Controls.Ribbon.RibbonGalleryItem)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonGalleryItemAutomationPeer.GetClassNameCore
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonGalleryItemAutomationPeer.GetAutomationControlTypeCore
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

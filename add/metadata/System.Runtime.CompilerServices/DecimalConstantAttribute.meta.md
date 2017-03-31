@@ -1,19 +1,34 @@
 ---
 uid: System.Runtime.CompilerServices.DecimalConstantAttribute
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.CompilerServices.DecimalConstantAttribute.#ctor
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.CompilerServices.DecimalConstantAttribute.#ctor(System.Byte,System.Byte,System.UInt32,System.UInt32,System.UInt32)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.CompilerServices.DecimalConstantAttribute.Value
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.CompilerServices.DecimalConstantAttribute.#ctor(System.Byte,System.Byte,System.Int32,System.Int32,System.Int32)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

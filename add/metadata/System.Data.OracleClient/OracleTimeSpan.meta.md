@@ -1,169 +1,258 @@
 ---
 uid: System.Data.OracleClient.OracleTimeSpan
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.OracleClient.OracleTimeSpan.Equals
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleTimeSpan.CompareTo(System.Object)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleTimeSpan.Hours
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleTimeSpan.GetHashCode
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleTimeSpan.op_GreaterThan(System.Data.OracleClient.OracleTimeSpan,System.Data.OracleClient.OracleTimeSpan)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleTimeSpan.Value
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleTimeSpan.MaxValue
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleTimeSpan.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleTimeSpan.Milliseconds
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleTimeSpan.NotEquals(System.Data.OracleClient.OracleTimeSpan,System.Data.OracleClient.OracleTimeSpan)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleTimeSpan.Minutes
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleTimeSpan.IsNull
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleTimeSpan.op_LessThan(System.Data.OracleClient.OracleTimeSpan,System.Data.OracleClient.OracleTimeSpan)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleTimeSpan.op_LessThanOrEqual(System.Data.OracleClient.OracleTimeSpan,System.Data.OracleClient.OracleTimeSpan)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleTimeSpan.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleTimeSpan.GreaterThan(System.Data.OracleClient.OracleTimeSpan,System.Data.OracleClient.OracleTimeSpan)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleTimeSpan.Equals(System.Object)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleTimeSpan.GreaterThanOrEqual(System.Data.OracleClient.OracleTimeSpan,System.Data.OracleClient.OracleTimeSpan)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleTimeSpan.Equals(System.Data.OracleClient.OracleTimeSpan,System.Data.OracleClient.OracleTimeSpan)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleTimeSpan.MinValue
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleTimeSpan.#ctor(System.Int64)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.OracleClient.OracleTimeSpan.#ctor
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleTimeSpan.Null
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleTimeSpan.#ctor(System.Int32,System.Int32,System.Int32)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleTimeSpan.LessThan(System.Data.OracleClient.OracleTimeSpan,System.Data.OracleClient.OracleTimeSpan)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleTimeSpan.op_GreaterThanOrEqual(System.Data.OracleClient.OracleTimeSpan,System.Data.OracleClient.OracleTimeSpan)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.OracleClient.OracleTimeSpan.op_Explicit
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleTimeSpan.Days
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleTimeSpan.Parse(System.String)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleTimeSpan.ToString
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleTimeSpan.op_Inequality(System.Data.OracleClient.OracleTimeSpan,System.Data.OracleClient.OracleTimeSpan)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleTimeSpan.#ctor(System.Data.OracleClient.OracleTimeSpan)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleTimeSpan.Seconds
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleTimeSpan.op_Equality(System.Data.OracleClient.OracleTimeSpan,System.Data.OracleClient.OracleTimeSpan)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleTimeSpan.LessThanOrEqual(System.Data.OracleClient.OracleTimeSpan,System.Data.OracleClient.OracleTimeSpan)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OracleClient.OracleTimeSpan.#ctor(System.TimeSpan)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

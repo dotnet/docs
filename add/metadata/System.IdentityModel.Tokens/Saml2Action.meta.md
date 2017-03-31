@@ -1,19 +1,23 @@
 ---
 uid: System.IdentityModel.Tokens.Saml2Action
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.Saml2Action.Value
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.Saml2Action.#ctor(System.String,System.Uri)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.Saml2Action.Namespace
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

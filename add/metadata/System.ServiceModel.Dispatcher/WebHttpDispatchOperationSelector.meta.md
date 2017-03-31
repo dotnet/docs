@@ -1,39 +1,69 @@
 ---
 uid: System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector.SelectOperation
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector.SelectOperation(System.ServiceModel.Channels.Message@)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector.HttpOperationSelectorUriMatchedPropertyName
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector.SelectOperation(System.ServiceModel.Channels.Message@,System.Boolean@)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector.#ctor(System.ServiceModel.Description.ServiceEndpoint)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector.GetUriTemplate(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector.HttpOperationNamePropertyName
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

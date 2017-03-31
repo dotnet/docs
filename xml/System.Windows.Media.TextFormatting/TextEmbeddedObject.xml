@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines a type of text content in which measuring, hit testing and drawing of the entire content is done in whole.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An example of a <xref:System.Windows.Media.TextFormatting.TextEmbeddedObject> is a button in the middle of a line of text.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.TextFormatting.TextEmbeddedObject" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +50,8 @@
         <ReturnType>System.Windows.LineBreakCondition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the line breaking condition after the text object.</summary>
+        <value>An enumerated value of <see cref="T:System.Windows.LineBreakCondition" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +68,8 @@
         <ReturnType>System.Windows.LineBreakCondition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the line breaking condition before the text object.</summary>
+        <value>An enumerated value of <see cref="T:System.Windows.LineBreakCondition" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,10 +90,10 @@
         <Parameter Name="sideways" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="rightToLeft">To be added.</param>
-        <param name="sideways">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="rightToLeft">A <see cref="T:System.Boolean" /> value that determines if the text object is drawn from right to left.</param>
+        <param name="sideways">A <see cref="T:System.Boolean" /> value that determines if the text object is drawn with its side parallel to the baseline.</param>
+        <summary>Gets the computed bounding box of the text object.</summary>
+        <returns>A <see cref="T:System.Windows.Rect" /> value that represents the bounding box size of the text object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,11 +116,11 @@
         <Parameter Name="sideways" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="drawingContext">To be added.</param>
-        <param name="origin">To be added.</param>
-        <param name="rightToLeft">To be added.</param>
-        <param name="sideways">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="drawingContext">The <see cref="T:System.Windows.Media.DrawingContext" /> to use for rendering the text object.</param>
+        <param name="origin">The <see cref="T:System.Windows.Point" /> value that represents the origin where the text object is drawn.</param>
+        <param name="rightToLeft">A <see cref="T:System.Boolean" /> value that determines if the text object is drawn from right to left.</param>
+        <param name="sideways">A <see cref="T:System.Boolean" /> value that determines if the text object is drawn with its side parallel to the baseline.</param>
+        <summary>Draws the text object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,9 +140,9 @@
         <Parameter Name="remainingParagraphWidth" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="remainingParagraphWidth">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="remainingParagraphWidth">A <see cref="T:System.Double" /> that represents the remaining paragraph width.</param>
+        <summary>Get text object measurement metrics that will fit within the specified remaining width of the paragraph.</summary>
+        <returns>A <see cref="T:System.Windows.Media.TextFormatting.TextEmbeddedObjectMetrics" /> value that represents the text object metrics.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -152,8 +159,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Determines whether the text object has a fixed size regardless of where it is placed within a line.</summary>
+        <value>
+          <see langword="true" /> if the text object has a fixed size; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

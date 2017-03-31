@@ -19,8 +19,16 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a reference to the type of adapter to be used in the designer. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this attribute to associate a type of adapter with your control.  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,8 +44,8 @@
         <Parameter Name="adapterTypeName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="adapterTypeName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="adapterTypeName">The name of the type of adapter.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.DesignerAdapterAttribute" /> class using the name of the type of adapter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,8 +62,8 @@
         <Parameter Name="adapterType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="adapterType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="adapterType">The <see cref="T:System.Type" /> of adapter</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.DesignerAdapterAttribute" /> class using the <see cref="T:System.Type" /> of adapter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,8 +80,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the name of the associated type of adapter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>The name of the associated type of adapter.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

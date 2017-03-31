@@ -1,4 +1,6 @@
 ---
 uid: System.Data.Services.Client.EntityStates
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

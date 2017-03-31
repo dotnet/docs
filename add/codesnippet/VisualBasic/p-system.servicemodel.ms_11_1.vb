@@ -1,1 +1,0 @@
-            Dim body = message.Body

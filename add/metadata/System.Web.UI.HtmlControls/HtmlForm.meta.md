@@ -1,94 +1,117 @@
 ---
 uid: System.Web.UI.HtmlControls.HtmlForm
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlForm.Name
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlForm.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlForm.Render(System.Web.UI.HtmlTextWriter)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlForm.DefaultFocus
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlForm.RenderChildren(System.Web.UI.HtmlTextWriter)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlForm.RenderAttributes(System.Web.UI.HtmlTextWriter)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlForm.Target
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlForm.ClientID
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlForm.Method
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlForm.OnPreRender(System.EventArgs)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlForm.Enctype
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlForm.SubmitDisabledControls
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.HtmlControls.HtmlForm.RenderControl
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlForm.OnInit(System.EventArgs)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlForm.Action
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlForm.CreateControlCollection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlForm.DefaultButton
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlForm.RenderControl(System.Web.UI.HtmlTextWriter)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlForm.UniqueID
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -1,39 +1,67 @@
 ---
 uid: System.Windows.Controls.ValidationRule
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.ValidationRule.ValidationStep
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.ValidationRule.Validate(System.Object,System.Globalization.CultureInfo,System.Windows.Data.BindingExpressionBase)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.ValidationRule.#ctor(System.Windows.Controls.ValidationStep,System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.ValidationRule.ValidatesOnTargetUpdated
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.ValidationRule.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.ValidationRule.Validate(System.Object,System.Globalization.CultureInfo,System.Windows.Data.BindingGroup)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.ValidationRule.Validate
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.ValidationRule.Validate(System.Object,System.Globalization.CultureInfo)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Controls.ValidationRule.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

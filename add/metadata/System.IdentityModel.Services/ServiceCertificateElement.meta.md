@@ -1,14 +1,17 @@
 ---
 uid: System.IdentityModel.Services.ServiceCertificateElement
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.ServiceCertificateElement.CertificateReference
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.ServiceCertificateElement.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

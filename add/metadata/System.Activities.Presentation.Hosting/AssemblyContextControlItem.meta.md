@@ -1,44 +1,62 @@
 ---
 uid: System.Activities.Presentation.Hosting.AssemblyContextControlItem
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.Hosting.AssemblyContextControlItem.ReferencedAssemblyNames
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.Hosting.AssemblyContextControlItem.AllAssemblyNamesInContext
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.Hosting.AssemblyContextControlItem.GetAssembly(System.Reflection.AssemblyName,System.Activities.Presentation.Hosting.IMultiTargetingSupportService)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.Hosting.AssemblyContextControlItem.ItemType
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.Hosting.AssemblyContextControlItem.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.Hosting.AssemblyContextControlItem.LocalAssemblyName
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.Hosting.AssemblyContextControlItem.GetEnvironmentAssemblyNames
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.Hosting.AssemblyContextControlItem.GetEnvironmentAssemblies(System.Activities.Presentation.Hosting.IMultiTargetingSupportService)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

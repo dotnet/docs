@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Data.GroupDescriptionSelectorCallback
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

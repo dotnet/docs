@@ -1,9 +1,9 @@
 ---
 uid: System.Management.ObjectPutEventArgs
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ObjectPutEventArgs.Path
-internalonly: False
+manager: "jillfra"
 ---

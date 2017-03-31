@@ -1,44 +1,61 @@
 ---
 uid: System.Web.Configuration.ConvertersCollection
-internalonly: False
----
-
----
-uid: System.Web.Configuration.ConvertersCollection.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ConvertersCollection.CreateNewElement
-internalonly: False
+---
+
+---
+uid: System.Web.Configuration.ConvertersCollection.#ctor
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Configuration.ConvertersCollection.CreateNewElement
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ConvertersCollection.Remove(System.Web.Configuration.Converter)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ConvertersCollection.Clear
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Configuration.ConvertersCollection.Item
 ---
 
 ---
 uid: System.Web.Configuration.ConvertersCollection.Properties
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ConvertersCollection.Item(System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ConvertersCollection.GetElementKey(System.Configuration.ConfigurationElement)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ConvertersCollection.Add(System.Web.Configuration.Converter)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

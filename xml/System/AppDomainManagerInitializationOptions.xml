@@ -19,8 +19,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the action that a custom application domain manager takes when initializing a new domain.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ These flags are used for property settings in the <xref:System.AppDomainManager> class. The <xref:System.AppDomainManagerInitializationOptions> flags apply only to custom application domain managers; they do not apply to the default manager. The <xref:System.AppDomainManager.InitializeNewDomain%2A> method in the default application domain manager does nothing. The default enumeration value is None.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="None">
@@ -37,7 +44,7 @@
         <ReturnType>System.AppDomainManagerInitializationOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No initialization action.</summary>
       </Docs>
     </Member>
     <Member MemberName="RegisterWithHost">
@@ -54,7 +61,7 @@
         <ReturnType>System.AppDomainManagerInitializationOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Register the COM callable wrapper for the current <see cref="T:System.AppDomainManager" /> with the unmanaged host.</summary>
       </Docs>
     </Member>
   </Members>

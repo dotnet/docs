@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Media.Effects
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

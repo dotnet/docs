@@ -1,9 +1,11 @@
 ---
 uid: System.Net.OpenReadCompletedEventArgs
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.OpenReadCompletedEventArgs.Result
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

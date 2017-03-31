@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The default extension of the <see cref="T:System.Web.Configuration.HttpCapabilitiesProvider" /> class that is included with ASP.NET.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.HttpCapabilitiesDefaultProvider" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <Parameter Name="parent" Type="System.Web.Configuration.HttpCapabilitiesDefaultProvider" />
       </Parameters>
       <Docs>
-        <param name="parent">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="parent">The <see cref="T:System.Web.Configuration.HttpCapabilitiesDefaultProvider" /> instance to use for initializing a new instance.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.HttpCapabilitiesDefaultProvider" /> class with the values of the specified instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,9 +64,16 @@
         <Parameter Name="variable" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="variable">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="variable">The string to use to parse browser capability information.</param>
+        <summary>Adds an HTTP request string to use to parse browser capability information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method adds to the collection that is created by the `use` child element of the `browserCaps` element of the Web.config file.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddRuleList">
@@ -85,9 +92,16 @@
         <Parameter Name="ruleList" Type="System.Collections.ArrayList" />
       </Parameters>
       <Docs>
-        <param name="ruleList">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="ruleList">The search string that modifies a browser definition.</param>
+        <summary>Adds a search string that modifies a browser definition.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method adds to the collection that is created by the `filter` child element of the `browserCaps` element of the Web.config file.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CacheTime">
@@ -103,8 +117,8 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the length of time in seconds to retain the <see cref="T:System.Web.HttpBrowserCapabilities" /> object in the cache.</summary>
+        <value>The length of time in seconds to retain the <see cref="T:System.Web.HttpBrowserCapabilities" /> object in the cache.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,9 +138,9 @@
         <Parameter Name="request" Type="System.Web.HttpRequest" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">The <see cref="T:System.Web.HttpRequest" /> object.</param>
+        <summary>Gets the <see cref="T:System.Web.HttpBrowserCapabilities" /> object for the specified <see cref="T:System.Web.HttpRequest" /> object.</summary>
+        <returns>The <see cref="T:System.Web.HttpBrowserCapabilities" /> object for the <see cref="T:System.Web.HttpRequest" /> object that was passed in.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,9 +157,16 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the type of the class that is used to hold the results from parsing the <see langword="browserCap" /> element of the Web.config file.</summary>
+        <value>The type of the class that is used to hold the results from parsing the <see langword="browserCaps" /> element of the Web.config file.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property corresponds to the `result` child element of the `browserCaps` element of the Web.config file.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UserAgentCacheKeyLength">
@@ -161,8 +182,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the number of characters from the user agent string to use for caching of the <see cref="T:System.Web.HttpBrowserCapabilities" /> object.</summary>
+        <value>The number of characters from the supplied user agent string to use for caching of the <see cref="T:System.Web.HttpBrowserCapabilities" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

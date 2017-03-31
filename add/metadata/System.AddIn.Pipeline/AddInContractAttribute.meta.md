@@ -1,9 +1,13 @@
 ---
 uid: System.AddIn.Pipeline.AddInContractAttribute
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.AddIn.Pipeline.AddInContractAttribute.#ctor
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

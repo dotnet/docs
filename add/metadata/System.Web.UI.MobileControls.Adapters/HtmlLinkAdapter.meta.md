@@ -1,19 +1,31 @@
 ---
 uid: System.Web.UI.MobileControls.Adapters.HtmlLinkAdapter
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.Adapters.HtmlLinkAdapter.Render(System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.Adapters.HtmlLinkAdapter.#ctor
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.Adapters.HtmlLinkAdapter.Render
 ---
 
 ---
 uid: System.Web.UI.MobileControls.Adapters.HtmlLinkAdapter.Control
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

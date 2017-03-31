@@ -1,19 +1,34 @@
 ---
 uid: System.Activities.Expressions.EnvironmentLocationValue`1
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Expressions.EnvironmentLocationValue`1.Execute(System.Activities.CodeActivityContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Expressions.EnvironmentLocationValue`1.CacheMetadata(System.Activities.CodeActivityMetadata)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Expressions.EnvironmentLocationValue`1.CacheMetadata
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Expressions.EnvironmentLocationValue`1.LocationReference
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

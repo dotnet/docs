@@ -1,9 +1,11 @@
 ---
 uid: System.NewsStyleUriParser
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.NewsStyleUriParser.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

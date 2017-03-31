@@ -1,34 +1,41 @@
 ---
 uid: System.IdentityModel.Tokens.Saml2Conditions
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.Saml2Conditions.NotBefore
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.Saml2Conditions.AudienceRestrictions
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.Saml2Conditions.ProxyRestriction
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.Saml2Conditions.OneTimeUse
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.Saml2Conditions.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.Saml2Conditions.NotOnOrAfter
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

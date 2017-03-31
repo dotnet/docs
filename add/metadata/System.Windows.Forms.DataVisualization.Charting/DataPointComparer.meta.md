@@ -1,14 +1,17 @@
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.DataPointComparer
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.DataPointComparer.#ctor(System.Windows.Forms.DataVisualization.Charting.Series,System.Windows.Forms.DataVisualization.Charting.PointSortOrder,System.String)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.DataPointComparer.Compare(System.Windows.Forms.DataVisualization.Charting.DataPoint,System.Windows.Forms.DataVisualization.Charting.DataPoint)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---

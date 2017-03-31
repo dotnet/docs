@@ -1,14 +1,17 @@
 ---
 uid: System.Net.Configuration.AuthenticationModulesSection
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.AuthenticationModulesSection.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.AuthenticationModulesSection.AuthenticationModules
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

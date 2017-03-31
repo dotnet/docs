@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides data for the <see cref="E:System.Windows.Xps.Serialization.XpsSerializationManager.XpsSerializationProgressChanged" /> event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,12 +31,19 @@
         <Parameter Name="userToken" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="writingLevel">To be added.</param>
-        <param name="pageNumber">To be added.</param>
-        <param name="progressPercentage">To be added.</param>
-        <param name="userToken">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="writingLevel">A value that specifies whether the change in progress is an additional page completed or an additional document completed.</param>
+        <param name="pageNumber">A value that specifies the total number of pages or the number of documents that are serialized at the time of the event.</param>
+        <param name="progressPercentage">A value that specifies the percentage of the total serialization job that is complete.</param>
+        <param name="userToken">A user-supplied object that provides additional information for the event handler.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When `writingLevel` is <xref:System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel>, `pageNumber` is the number of pages. When `writingLevel` is <xref:System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel>, `pageNumber` is the number of fixed documents.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PageNumber">
@@ -52,9 +59,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of pages or documents that have been serialized.</summary>
+        <value>The total pages or documents have been serialized at the point when the event occurred.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When <xref:System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventArgs.WritingLevel%2A> is <xref:System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel>, then <xref:System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventArgs.PageNumber%2A> is the number of pages. When <xref:System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventArgs.WritingLevel%2A> is <xref:System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel>, then <xref:System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventArgs.PageNumber%2A> is the number of fixed documents.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WritingLevel">
@@ -70,9 +84,16 @@
         <ReturnType>System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates the scope of the progress indicator.</summary>
+        <value>The scope of the progress indicator.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventArgs.WritingLevel%2A> property identifies whether the event refers to the progress in serializing a sequence of documents or the pages in a single document.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,14 +1,20 @@
 ---
 uid: System.IO.Packaging.PackWebRequestFactory
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.Packaging.PackWebRequestFactory.System#Net#IWebRequestCreate#Create(System.Uri)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.Packaging.PackWebRequestFactory.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

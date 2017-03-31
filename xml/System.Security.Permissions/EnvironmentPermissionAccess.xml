@@ -19,8 +19,18 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies access to environment variables.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by <xref:System.Security.Permissions.EnvironmentPermission>.  
+  
+> [!NOTE]
+>  Although NoAccess and AllAccess appear in <xref:System.Security.Permissions.EnvironmentPermissionAccess>, they are not valid for use as the parameter for <xref:System.Security.Permissions.EnvironmentPermission.GetPathList%2A> because they describe no environment variable access types or all environment variable access types, respectively, and <xref:System.Security.Permissions.EnvironmentPermission.GetPathList%2A> expects a single environment variable access type.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AllAccess">
@@ -37,7 +47,8 @@
         <ReturnType>System.Security.Permissions.EnvironmentPermissionAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+          <see cref="F:System.Security.Permissions.EnvironmentPermissionAccess.Read" /> and <see cref="F:System.Security.Permissions.EnvironmentPermissionAccess.Write" /> access to environment variables. <see cref="F:System.Security.Permissions.EnvironmentPermissionAccess.AllAccess" /> represents multiple <see cref="T:System.Security.Permissions.EnvironmentPermissionAccess" /> values and causes an <see cref="T:System.ArgumentException" /> when used as the <paramref name="flag" /> parameter for the <see cref="M:System.Security.Permissions.EnvironmentPermission.GetPathList(System.Security.Permissions.EnvironmentPermissionAccess)" /> method, which expects a single value.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoAccess">
@@ -54,7 +65,7 @@
         <ReturnType>System.Security.Permissions.EnvironmentPermissionAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No access to environment variables. <see cref="F:System.Security.Permissions.EnvironmentPermissionAccess.NoAccess" /> represents no valid <see cref="T:System.Security.Permissions.EnvironmentPermissionAccess" /> values and causes an <see cref="T:System.ArgumentException" /> when used as the parameter for <see cref="M:System.Security.Permissions.EnvironmentPermission.GetPathList(System.Security.Permissions.EnvironmentPermissionAccess)" />, which expects a single value.</summary>
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -71,7 +82,7 @@
         <ReturnType>System.Security.Permissions.EnvironmentPermissionAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Only read access to environment variables is specified. Changing, deleting and creating environment variables is not included in this access level.</summary>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -88,7 +99,7 @@
         <ReturnType>System.Security.Permissions.EnvironmentPermissionAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Only write access to environment variables is specified. Write access includes creating and deleting environment variables as well as changing existing values. Reading environment variables is not included in this access level.</summary>
       </Docs>
     </Member>
   </Members>

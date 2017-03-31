@@ -1,29 +1,41 @@
 ---
 uid: System.ServiceModel.Activities.Tracking.Configuration.FaultPropagationQueryElement
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Tracking.Configuration.FaultPropagationQueryElement.NewTrackingQuery
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Tracking.Configuration.FaultPropagationQueryElement.Properties
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Tracking.Configuration.FaultPropagationQueryElement.FaultHandlerActivityName
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Tracking.Configuration.FaultPropagationQueryElement.FaultSourceActivityName
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Tracking.Configuration.FaultPropagationQueryElement.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -1,169 +1,272 @@
 ---
 uid: System.SByte
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.SByte.System#IConvertible#ToInt32(System.IFormatProvider)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.SByte.Parse
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.SByte.CompareTo(System.SByte)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.SByte.System#IConvertible#ToType(System.Type,System.IFormatProvider)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.SByte.Parse(System.String,System.Globalization.NumberStyles)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.SByte.System#IConvertible#ToByte(System.IFormatProvider)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.SByte.System#IConvertible#ToUInt16(System.IFormatProvider)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.SByte.Equals(System.Object)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.SByte.System#IConvertible#ToSingle(System.IFormatProvider)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.SByte.GetTypeCode
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.SByte.Equals
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.SByte.CompareTo(System.Object)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.SByte.System#IConvertible#ToChar(System.IFormatProvider)
-internalonly: False
----
-
----
-uid: System.SByte.Equals(System.SByte)
-internalonly: False
----
-
----
-uid: System.SByte.TryParse(System.String,System.SByte@)
-internalonly: False
----
-
----
-uid: System.SByte.System#IConvertible#ToUInt32(System.IFormatProvider)
-internalonly: False
----
-
----
-uid: System.SByte.ToString(System.String,System.IFormatProvider)
-internalonly: False
----
-
----
-uid: System.SByte.System#IConvertible#ToBoolean(System.IFormatProvider)
-internalonly: False
----
-
----
-uid: System.SByte.Parse(System.String)
-internalonly: False
----
-
----
-uid: System.SByte.ToString(System.String)
-internalonly: False
----
-
----
-uid: System.SByte.System#IConvertible#ToDateTime(System.IFormatProvider)
-internalonly: False
----
-
----
-uid: System.SByte.System#IConvertible#ToInt64(System.IFormatProvider)
-internalonly: False
----
-
----
-uid: System.SByte.GetHashCode
-internalonly: False
----
-
----
-uid: System.SByte.System#IConvertible#ToUInt64(System.IFormatProvider)
-internalonly: False
----
-
----
-uid: System.SByte.System#IConvertible#ToDouble(System.IFormatProvider)
-internalonly: False
----
-
----
-uid: System.SByte.Parse(System.String,System.Globalization.NumberStyles,System.IFormatProvider)
-internalonly: False
----
-
----
-uid: System.SByte.MaxValue
-internalonly: False
----
-
----
-uid: System.SByte.ToString(System.IFormatProvider)
-internalonly: False
----
-
----
-uid: System.SByte.System#IConvertible#ToDecimal(System.IFormatProvider)
-internalonly: False
----
-
----
-uid: System.SByte.MinValue
-internalonly: False
----
-
----
-uid: System.SByte.System#IConvertible#ToSByte(System.IFormatProvider)
-internalonly: False
----
-
----
-uid: System.SByte.TryParse(System.String,System.Globalization.NumberStyles,System.IFormatProvider,System.SByte@)
-internalonly: False
----
-
----
-uid: System.SByte.Parse(System.String,System.IFormatProvider)
-internalonly: False
----
-
----
-uid: System.SByte.System#IConvertible#ToInt16(System.IFormatProvider)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.SByte.ToString
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.SByte.Equals(System.SByte)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.SByte.TryParse(System.String,System.SByte@)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.SByte.System#IConvertible#ToUInt32(System.IFormatProvider)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.SByte.ToString(System.String,System.IFormatProvider)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.SByte.System#IConvertible#ToBoolean(System.IFormatProvider)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.SByte.Parse(System.String)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.SByte.ToString(System.String)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.SByte.System#IConvertible#ToDateTime(System.IFormatProvider)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.SByte.System#IConvertible#ToInt64(System.IFormatProvider)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.SByte.GetHashCode
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.SByte.System#IConvertible#ToUInt64(System.IFormatProvider)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.SByte.TryParse
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.SByte.System#IConvertible#ToDouble(System.IFormatProvider)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.SByte.CompareTo
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.SByte.Parse(System.String,System.Globalization.NumberStyles,System.IFormatProvider)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.SByte.MaxValue
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.SByte.ToString(System.IFormatProvider)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.SByte.System#IConvertible#ToDecimal(System.IFormatProvider)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.SByte.MinValue
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.SByte.System#IConvertible#ToSByte(System.IFormatProvider)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.SByte.TryParse(System.String,System.Globalization.NumberStyles,System.IFormatProvider,System.SByte@)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.SByte.Parse(System.String,System.IFormatProvider)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.SByte.System#IConvertible#ToInt16(System.IFormatProvider)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.SByte.ToString
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

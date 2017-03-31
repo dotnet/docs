@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>A standard endpoint that enables you to call control operations on workflow instances.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Control operations allow you to programmatically control an existing workflow instance.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.WorkflowControlEndpoint" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,9 +51,9 @@
         <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" />
       </Parameters>
       <Docs>
-        <param name="binding">To be added.</param>
-        <param name="address">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="binding">The binding.</param>
+        <param name="address">The endpoint address.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.WorkflowControlEndpoint" /> class with the specified binding and <see cref="T:System.ServiceModel.EndpointAddress" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,209 +1,338 @@
 ---
 uid: System.Windows.Ink.StrokeCollection
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.StrokeCollection.GetIncrementalLassoHitTester(System.Int32)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Ink.StrokeCollection.GetPropertyData(System.Guid)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.StrokeCollection.StrokesChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.StrokeCollection.Replace(System.Windows.Ink.Stroke,System.Windows.Ink.StrokeCollection)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Ink.StrokeCollection.Add
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Ink.StrokeCollection.InsertItem(System.Int32,System.Windows.Ink.Stroke)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.StrokeCollection.OnStrokesChanged(System.Windows.Ink.StrokeCollectionChangedEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.StrokeCollection.ContainsPropertyData(System.Guid)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Ink.StrokeCollection.PropertyDataChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.StrokeCollection.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.StrokeCollection.Replace(System.Windows.Ink.StrokeCollection,System.Windows.Ink.StrokeCollection)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Ink.StrokeCollection.Erase
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Ink.StrokeCollection.Erase(System.Collections.Generic.IEnumerable{System.Windows.Point})
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.StrokeCollection.HitTest(System.Collections.Generic.IEnumerable{System.Windows.Point},System.Windows.Ink.StylusShape)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.StrokeCollection.#ctor(System.IO.Stream)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.StrokeCollection.GetPropertyDataIds
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.StrokeCollection.AddPropertyData(System.Guid,System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.StrokeCollection.OnPropertyDataChanged(System.Windows.Ink.PropertyDataChangedEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.StrokeCollection.ClearItems
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.StrokeCollection.HitTest(System.Windows.Point)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Ink.StrokeCollection.HitTest(System.Windows.Point,System.Double)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.StrokeCollection.Save(System.IO.Stream,System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.StrokeCollection.Remove(System.Windows.Ink.StrokeCollection)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.StrokeCollection.Erase(System.Collections.Generic.IEnumerable{System.Windows.Point},System.Windows.Ink.StylusShape)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Ink.StrokeCollection.RemoveItem(System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.StrokeCollection.HitTest(System.Collections.Generic.IEnumerable{System.Windows.Point},System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.StrokeCollection.RemovePropertyData(System.Guid)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.StrokeCollection.Clip(System.Windows.Rect)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Ink.StrokeCollection.IndexOf(System.Windows.Ink.Stroke)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.StrokeCollection.Clip(System.Collections.Generic.IEnumerable{System.Windows.Point})
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.StrokeCollection.Save(System.IO.Stream)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Ink.StrokeCollection.Save
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.StrokeCollection.HitTest(System.Windows.Rect,System.Int32)
-internalonly: False
----
-
----
-uid: System.Windows.Ink.StrokeCollection.InkSerializedFormat
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.StrokeCollection.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Ink.StrokeCollection.InkSerializedFormat
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Ink.StrokeCollection.Remove
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Ink.StrokeCollection.HitTest
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Ink.StrokeCollection.Replace
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Ink.StrokeCollection.Clip
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Ink.StrokeCollection.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.StrokeCollection.SetItem(System.Int32,System.Windows.Ink.Stroke)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Ink.StrokeCollection.Erase(System.Windows.Rect)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.StrokeCollection.Transform(System.Windows.Media.Matrix,System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.StrokeCollection.Clone
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.StrokeCollection.#ctor(System.Collections.Generic.IEnumerable{System.Windows.Ink.Stroke})
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Ink.StrokeCollection.Draw(System.Windows.Media.DrawingContext)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.StrokeCollection.GetBounds
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.StrokeCollection.Add(System.Windows.Ink.StrokeCollection)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.StrokeCollection.GetIncrementalStrokeHitTester(System.Windows.Ink.StylusShape)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

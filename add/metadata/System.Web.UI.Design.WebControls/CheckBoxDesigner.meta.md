@@ -1,14 +1,21 @@
 ---
 uid: System.Web.UI.Design.WebControls.CheckBoxDesigner
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.CheckBoxDesigner.GetDesignTimeHtml
-internalonly: False
+---
+
+---
+uid: System.Web.UI.Design.WebControls.CheckBoxDesigner.GetDesignTimeHtml
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.CheckBoxDesigner.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

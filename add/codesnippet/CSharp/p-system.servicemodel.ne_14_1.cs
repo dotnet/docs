@@ -1,2 +1,0 @@
-		TransferMode transferMode =
-			binding.TransferMode;

@@ -1,49 +1,76 @@
 ---
 uid: System.Web.Services.Configuration.XmlFormatExtensionAttribute
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Configuration.XmlFormatExtensionAttribute.#ctor(System.String,System.String,System.Type)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Configuration.XmlFormatExtensionAttribute.#ctor(System.String,System.String,System.Type,System.Type,System.Type,System.Type)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Configuration.XmlFormatExtensionAttribute.#ctor(System.String,System.String,System.Type,System.Type,System.Type)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Configuration.XmlFormatExtensionAttribute.ElementName
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Configuration.XmlFormatExtensionAttribute.#ctor(System.String,System.String,System.Type,System.Type)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Configuration.XmlFormatExtensionAttribute.#ctor(System.String,System.String,System.Type[])
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Configuration.XmlFormatExtensionAttribute.ExtensionPoints
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Configuration.XmlFormatExtensionAttribute.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Web.Services.Configuration.XmlFormatExtensionAttribute.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Configuration.XmlFormatExtensionAttribute.Namespace
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

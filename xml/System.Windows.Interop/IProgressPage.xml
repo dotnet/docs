@@ -8,7 +8,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines the interaction between [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] applications that are hosting interoperation content, and a host supplied progress page.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -25,9 +25,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets  the application's name.</summary>
+        <value>Name of the application that originates the progress page.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Establishing the application name must wait until the manifest download is complete, because the manifest itself contains the information needed.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DeploymentPath">
@@ -43,8 +50,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="T:System.Uri" /> path to the application deployment manifest.</summary>
+        <value>The application deployment manifest path.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,9 +68,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the application's publisher.</summary>
+        <value>The publisher identifying string.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Establishing the application publisher must wait until the manifest download is complete, because the manifest itself contains the information needed.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshCallback">
@@ -79,8 +93,8 @@
         <ReturnType>System.Windows.Threading.DispatcherOperationCallback</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a reference to a <see cref="T:System.Windows.Threading.DispatcherOperationCallback" /> handler, that can handle the case of a user-initiated Refresh command.</summary>
+        <value>The callback reference.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,8 +111,8 @@
         <ReturnType>System.Windows.Threading.DispatcherOperationCallback</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a reference to a <see cref="T:System.Windows.Threading.DispatcherOperationCallback" /> handler, that can handle the case of a user-initiated Stop command.</summary>
+        <value>The callback reference.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,9 +133,9 @@
         <Parameter Name="bytesTotal" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="bytesDownloaded">To be added.</param>
-        <param name="bytesTotal">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="bytesDownloaded">Total bytes downloaded thus far.</param>
+        <param name="bytesTotal">Total bytes that need to be downloaded for the application.</param>
+        <summary>Provides upload progress numeric information that can be used to update the progress indicators.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

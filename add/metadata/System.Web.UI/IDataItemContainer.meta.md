@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.IDataItemContainer
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IDataItemContainer.DataItemIndex
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IDataItemContainer.DisplayIndex
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IDataItemContainer.DataItem
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

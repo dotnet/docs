@@ -1,14 +1,17 @@
 ---
 uid: System.IdentityModel.Services.RedirectingToIdentityProviderEventArgs
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.RedirectingToIdentityProviderEventArgs.SignInRequestMessage
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.RedirectingToIdentityProviderEventArgs.#ctor(System.IdentityModel.Services.SignInRequestMessage)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

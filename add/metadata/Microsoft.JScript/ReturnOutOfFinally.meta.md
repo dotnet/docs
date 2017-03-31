@@ -1,19 +1,24 @@
 ---
 uid: Microsoft.JScript.ReturnOutOfFinally
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.ReturnOutOfFinally.#ctor
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.ReturnOutOfFinally.#ctor(System.String)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.ReturnOutOfFinally.#ctor(System.String,System.Exception)
-internalonly: False
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.ReturnOutOfFinally.#ctor
+ms.author: "mikejo"
 ---

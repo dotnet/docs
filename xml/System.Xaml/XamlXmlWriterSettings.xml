@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides initialization settings for the <see cref="T:System.Xaml.XamlXmlWriter" /> XAML writer implementation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The defaults for all <xref:System.Xaml.XamlXmlWriterSettings> values are `false`.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlXmlWriterSettings" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +50,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that specifies whether the <see cref="T:System.Xaml.XamlXmlWriter" /> should always assume valid XAML input for purposes of duplicate resolution or other error checking.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Xaml.XamlXmlWriter" /> skips certain validation or error checks, such as throwing exceptions on duplicate members. <see langword="false" /> if the <see cref="T:System.Xaml.XamlXmlWriter" /> throws exceptions when invalid XAML is encountered. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,9 +69,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that specifies whether the <see cref="T:System.Xaml.XamlXmlWriter" /> should close immediately on <see langword="Dispose" /> or other operations, or whether the XAML writer should instead write the buffer output before closing. Use this setting with caution; closing immediately can result in invalid XAML that cannot be loaded again.</summary>
+        <value>
+          <see langword="true" /> if <see cref="T:System.Xaml.XamlXmlWriter" /> immediately closes on a <see langword="Dispose" /> or similar operations. <see langword="false" /> if the remaining buffer output is written before the <see cref="T:System.Xaml.XamlXmlWriter" /> is released. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This setting influences the logic of <xref:System.Xaml.XamlXmlWriter.Dispose%2A?displayProperty=fullName>, which calls `Close` on the underlying <xref:System.Xml.XmlWriter> or <xref:System.IO.TextWriter> when <xref:System.Xaml.XamlXmlWriterSettings.CloseOutput%2A> is `true`; or it calls <xref:System.Xaml.XamlXmlWriter.Flush%2A> (again tied to the underlying <xref:System.Xml.XmlWriter> or <xref:System.IO.TextWriter>) if <xref:System.Xaml.XamlXmlWriterSettings.CloseOutput%2A> is `false`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -80,8 +96,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a copy of this <see cref="T:System.Xaml.XamlXmlWriterSettings" /> instance.</summary>
+        <returns>The returned copy.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

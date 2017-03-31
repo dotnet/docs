@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides the items within the context menu.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the copy menu item.</summary>
+        <value>The copy menu item.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the disabled copy menu item.</summary>
+        <value>The disabled copy menu item.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +64,8 @@
         <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the cut menu item.</summary>
+        <value>The cut menu item.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +82,8 @@
         <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the disabled cut menu item.</summary>
+        <value>The disabled cut menu item.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,8 +100,8 @@
         <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the delete menu item.</summary>
+        <value>The delete menu item.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,8 +118,8 @@
         <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the disabled delete menu item.</summary>
+        <value>The disabled delete menu item.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,8 +136,8 @@
         <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the paste menu item.</summary>
+        <value>The paste menu item.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,8 +154,8 @@
         <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the disabled paste menu item.</summary>
+        <value>The disabled paste menu item.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

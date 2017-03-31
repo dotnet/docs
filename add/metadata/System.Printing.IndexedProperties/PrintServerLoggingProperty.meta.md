@@ -1,19 +1,37 @@
 ---
 uid: System.Printing.IndexedProperties.PrintServerLoggingProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.IndexedProperties.PrintServerLoggingProperty.Value
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Printing.IndexedProperties.PrintServerLoggingProperty.op_Implicit
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.IndexedProperties.PrintServerLoggingProperty.#ctor(System.String,System.Object)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Printing.IndexedProperties.PrintServerLoggingProperty.#ctor(System.String)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Printing.IndexedProperties.PrintServerLoggingProperty.#ctor
+ms.author: "kempb"
+manager: "ghogen"
 ---

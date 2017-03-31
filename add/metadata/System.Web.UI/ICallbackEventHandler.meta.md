@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.ICallbackEventHandler
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ICallbackEventHandler.GetCallbackResult
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

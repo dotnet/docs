@@ -20,8 +20,23 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides data for the state change event of a .NET Framework data provider.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The data is used by the `StateChange` property of the <xref:System.Data.OleDb.OleDbConnection> and the `StateChange` property of the <xref:System.Data.SqlClient.SqlConnection>.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the `StateChange` event within the <xref:System.Data.SqlClient.SqlConnection> class.  
+  
+ [!code-csharp[Classic WebData StateChangeEventArgs Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData StateChangeEventArgs Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData StateChangeEventArgs Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData StateChangeEventArgs Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -47,9 +62,9 @@
         <Parameter Name="currentState" Type="System.Data.ConnectionState" />
       </Parameters>
       <Docs>
-        <param name="originalState">To be added.</param>
-        <param name="currentState">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="originalState">One of the <see cref="T:System.Data.ConnectionState" /> values.</param>
+        <param name="currentState">One of the <see cref="T:System.Data.ConnectionState" /> values.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.StateChangeEventArgs" /> class, when given the original state and the current state of the object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,8 +90,8 @@
         <ReturnType>System.Data.ConnectionState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the new state of the connection. The connection object will be in the new state already when the event is fired.</summary>
+        <value>One of the <see cref="T:System.Data.ConnectionState" /> values.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,8 +117,8 @@
         <ReturnType>System.Data.ConnectionState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the original state of the connection.</summary>
+        <value>One of the <see cref="T:System.Data.ConnectionState" /> values.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

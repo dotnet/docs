@@ -24,8 +24,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies an algorithm to hash all files in an assembly. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The file hash values and names in the assembly are stored in the assembly manifest. When a file is loaded, the hash value is used to verify that a file has not been changed since the manifest was built.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,8 +53,8 @@
         <Parameter Name="algorithmId" Type="System.Configuration.Assemblies.AssemblyHashAlgorithm" />
       </Parameters>
       <Docs>
-        <param name="algorithmId">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="algorithmId">A member of <see langword="AssemblyHashAlgorithm" /> that represents the hash algorithm.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Reflection.AssemblyAlgorithmIdAttribute" /> class with the specified hash algorithm, using one of the members of <see cref="T:System.Configuration.Assemblies.AssemblyHashAlgorithm" /> to represent the hash algorithm.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,8 +81,8 @@
         <Parameter Name="algorithmId" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="algorithmId">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="algorithmId">An unsigned integer representing the hash algorithm.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Reflection.AssemblyAlgorithmIdAttribute" /> class with the specified hash algorithm, using an unsigned integer to represent the hash algorithm.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,8 +109,8 @@
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the hash algorithm of an assembly manifest's contents.</summary>
+        <value>An unsigned integer representing the assembly hash algorithm.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

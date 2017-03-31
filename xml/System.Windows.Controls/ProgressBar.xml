@@ -22,8 +22,36 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates the progress of an operation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Controls.ProgressBar> control consists of a window that is filled, by default from left to right, as an operation progresses. The control has a range and a current position.  
+  
+ <xref:System.Windows.Controls.ProgressBar> overrides the metadata of the <xref:System.Windows.Controls.Primitives.RangeBase.Maximum%2A> property and sets its default to 100. <xref:System.Windows.Controls.ProgressBar> overrides the metadata of the <xref:System.Windows.UIElement.Focusable%2A> property and sets its default to `false`. For more information, see [Dependency Properties Overview](../Topic/Dependency%20Properties%20Overview.md).  
+  
+## Customizing the ProgressBar Control  
+ To apply the same property settings to multiple <xref:System.Windows.Controls.ProgressBar> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../Topic/Customizing%20the%20Appearance%20of%20an%20Existing%20Control%20by%20Creating%20a%20ControlTemplate.md).  To see the parts and states that are specific to the <xref:System.Windows.Controls.ProgressBar>, see [ProgressBar Styles and Templates](../Topic/ProgressBar%20Styles%20and%20Templates.md).  
+  
+ Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
+  
+> [!NOTE]
+>  Setting a visual property will only have an effect if that property is both present in <xref:System.Windows.Controls.ProgressBar> control's default template and is set by using a . You can find a list of visual properties in the "Changing the Visual Structure of a Control" section in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../Topic/Customizing%20the%20Appearance%20of%20an%20Existing%20Control%20by%20Creating%20a%20ControlTemplate.md).  
+  
+   
+  
+## Examples  
+ This example creates a <xref:System.Windows.Controls.ProgressBar> and uses an animation to simulate the progress of an operation.  
+  
+ [!code-xml[StatusBar_Snips#1](~/samples/snippets/csharp/VS_Snippets_Wpf/StatusBar_Snips/CS/Window1.xaml#1)]
+ [!code-xml[StatusBar_Snips#1](~/samples/snippets/xaml/VS_Snippets_Wpf/StatusBar_Snips/XAML/Window1.xaml#1)]  
+  
+ [!code-csharp[ProgressBar#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ProgressBar/CSharp/Window1.xaml.cs#1)]
+ [!code-vb[ProgressBar#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ProgressBar/visualbasic/window1.xaml.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,7 +65,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.ProgressBar" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,9 +82,33 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets whether the <see cref="T:System.Windows.Controls.ProgressBar" /> shows actual values or generic, continuous progress feedback.</summary>
+        <value>
+          <see langword="false" /> if the <see cref="T:System.Windows.Controls.ProgressBar" /> shows actual values; <see langword="true" /> if the <see cref="T:System.Windows.Controls.ProgressBar" /> shows generic progress. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When this property is `true`, the <xref:System.Windows.Controls.ProgressBar> animates a few bars moving across the <xref:System.Windows.Controls.ProgressBar> in a continuous manner and ignores the <xref:System.Windows.Controls.Primitives.RangeBase.Value%2A> property.  
+  
+<a name="dependencyPropertyInfo_IsIndeterminate"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.ProgressBar.IsIndeterminateProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example sets the <xref:System.Windows.Controls.ProgressBar.IsIndeterminate%2A> property to `true` to create a <xref:System.Windows.Controls.ProgressBar> that shows generic progress.  
+  
+ [!code-csharp[ProgressBar#3](~/samples/snippets/csharp/VS_Snippets_Wpf/ProgressBar/CSharp/Window1.xaml.cs#3)]
+ [!code-vb[ProgressBar#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ProgressBar/visualbasic/window1.xaml.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsIndeterminateProperty">
@@ -72,7 +124,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.ProgressBar.IsIndeterminate" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,7 +142,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Called when a template is applied to a <see cref="T:System.Windows.Controls.ProgressBar" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,8 +160,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Provides an appropriate <see cref="T:System.Windows.Automation.Peers.ProgressBarAutomationPeer" /> implementation for this control, as part of the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] automation infrastructure.</summary>
+        <returns>The type-specific <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> implementation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -130,9 +182,9 @@
         <Parameter Name="newMaximum" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="oldMaximum">To be added.</param>
-        <param name="newMaximum">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="oldMaximum">Old value of the <see cref="P:System.Windows.Controls.Primitives.RangeBase.Maximum" /> property.</param>
+        <param name="newMaximum">New value of the <see cref="P:System.Windows.Controls.Primitives.RangeBase.Maximum" /> property.</param>
+        <summary>Updates the current position of the <see cref="T:System.Windows.Controls.ProgressBar" /> when the <see cref="P:System.Windows.Controls.Primitives.RangeBase.Maximum" /> property changes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,9 +205,9 @@
         <Parameter Name="newMinimum" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="oldMinimum">To be added.</param>
-        <param name="newMinimum">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="oldMinimum">Old value of the <see cref="P:System.Windows.Controls.Primitives.RangeBase.Minimum" /> property.</param>
+        <param name="newMinimum">New value of the <see cref="P:System.Windows.Controls.Primitives.RangeBase.Minimum" /> property.</param>
+        <summary>Updates the current position of the <see cref="T:System.Windows.Controls.ProgressBar" /> when the <see cref="P:System.Windows.Controls.Primitives.RangeBase.Minimum" /> property changes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -176,9 +228,9 @@
         <Parameter Name="newValue" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="oldValue">To be added.</param>
-        <param name="newValue">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="oldValue">Old value of the <see cref="P:System.Windows.Controls.Primitives.RangeBase.Value" /> property.</param>
+        <param name="newValue">New value of the <see cref="P:System.Windows.Controls.Primitives.RangeBase.Value" /> property.</param>
+        <summary>Updates the current position of the <see cref="T:System.Windows.Controls.ProgressBar" /> when the <see cref="P:System.Windows.Controls.Primitives.RangeBase.Value" /> property changes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -195,9 +247,31 @@
         <ReturnType>System.Windows.Controls.Orientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the orientation of a <see cref="T:System.Windows.Controls.ProgressBar" />: horizontal or vertical.</summary>
+        <value>One of the <see cref="T:System.Windows.Controls.Orientation" /> values. The default is <see cref="F:System.Windows.Controls.Orientation.Horizontal" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_Orientation"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.ProgressBar>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
+  
+   
+  
+## Examples  
+ The following example which creates a <xref:System.Windows.Controls.ProgressBar> shows how to use the <xref:System.Windows.Controls.ProgressBar.Orientation%2A> property to make a horizontal bar.  
+  
+ [!code-csharp[ProgressBar#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ProgressBar/CSharp/Window1.xaml.cs#1)]
+ [!code-vb[ProgressBar#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ProgressBar/visualbasic/window1.xaml.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OrientationProperty">
@@ -213,7 +287,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.ProgressBar.Orientation" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

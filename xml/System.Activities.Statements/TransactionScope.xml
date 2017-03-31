@@ -16,8 +16,25 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>An activity that demarcates a transaction boundary.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When this activity begins executing, a new <xref:System.Transactions.Transaction> is started if one does not already exist. The transaction commits when the activity and all other participants in the transaction have completed successfully.  
+  
+> [!NOTE]
+>  The <xref:System.Activities.Statements.TryCatch.Finally%2A> activity member of a <xref:System.Activities.Statements.TryCatch> activity that is the child of a <xref:System.Activities.Statements.TransactionScope> will not execute if an unhandled exception propagates past the <xref:System.Activities.Statements.TransactionScope> boundary.  
+  
+   
+  
+## Examples  
+ The following code sample demonstrates creating a <xref:System.Activities.Statements.TransactionScope> activity. This example is from the [Basic TransactionScope](../Topic/Basic%20TransactionScope.md) sample.  
+  
+ [!code-csharp[wfs_NestedTransactionScope#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_nestedtransactionscope/cs/program.cs#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,8 +48,17 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Statements.TransactionScope" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates creating a <xref:System.Activities.Statements.TransactionScope> activity. This example is from the [Basic TransactionScope](../Topic/Basic%20TransactionScope.md) sample.  
+  
+ [!code-csharp[wfs_NestedTransactionScope#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_nestedtransactionscope/cs/program.cs#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AbortInstanceOnTransactionFailure">
@@ -53,9 +79,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the value that indicates whether the workflow should be aborted if the transaction aborts.</summary>
+        <value>
+          <see langword="true" /> if the workflow should be aborted.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is read-only at runtime. If the value is set at runtime an <xref:System.InvalidOperationException> is thrown.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Body">
@@ -76,9 +110,16 @@
         <ReturnType>System.Activities.Activity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the activity that is scheduled when the <see cref="T:System.Activities.Statements.TransactionScope" /> executes.</summary>
+        <value>The activity that is scheduled when the <see cref="T:System.Activities.Statements.TransactionScope" /> executes.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is read-only at runtime. If the value is set at runtime an <xref:System.InvalidOperationException> is thrown.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CacheMetadata">
@@ -154,9 +195,16 @@
         <ReturnType>System.Transactions.IsolationLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see cref="T:System.Transactions.IsolationLevel" /> for this <see cref="T:System.Activities.Statements.TransactionScope" />.</summary>
+        <value>The <see cref="T:System.Transactions.IsolationLevel" /> for this <see cref="T:System.Activities.Statements.TransactionScope" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is read-only at runtime. If the value is set at runtime an <xref:System.InvalidOperationException> is thrown.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeIsolationLevel">
@@ -178,8 +226,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Indicates whether the <see cref="P:System.Activities.Statements.TransactionScope.IsolationLevel" /> for this <see cref="T:System.Activities.Statements.TransactionScope" /> should be serialized.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="P:System.Activities.Statements.TransactionScope.IsolationLevel" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -202,8 +251,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Indicates whether the <see cref="P:System.Activities.Statements.TransactionScope.Timeout" /> for this <see cref="T:System.Activities.Statements.TransactionScope" /> should be serialized.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="P:System.Activities.Statements.TransactionScope.Timeout" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -220,9 +270,23 @@
         <ReturnType>System.Activities.InArgument&lt;System.TimeSpan&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see cref="T:System.TimeSpan" /> that indicates the timeout period for the transaction used for this <see cref="T:System.Activities.Statements.TransactionScope" />.</summary>
+        <value>The <see cref="T:System.TimeSpan" /> that indicates the timeout period for the transaction used for this <see cref="T:System.Activities.Statements.TransactionScope" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is read-only at runtime. If the value is set at runtime an <xref:System.InvalidOperationException> is thrown.  
+  
+   
+  
+## Examples  
+ The following code sample demonstrates setting the Timeout property of a <xref:System.Activities.Statements.TransactionScope> activity. This example is from the [Basic TransactionScope](../Topic/Basic%20TransactionScope.md) sample.  
+  
+ [!code-csharp[wfs_NestedTransactionScope#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_nestedtransactionscope/cs/program.cs#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

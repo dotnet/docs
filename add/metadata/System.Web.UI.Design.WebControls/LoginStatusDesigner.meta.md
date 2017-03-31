@@ -1,29 +1,39 @@
 ---
 uid: System.Web.UI.Design.WebControls.LoginStatusDesigner
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.LoginStatusDesigner.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.LoginStatusDesigner.GetDesignTimeHtml
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.LoginStatusDesigner.GetDesignTimeHtml
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.LoginStatusDesigner.UsePreviewControl
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.LoginStatusDesigner.Initialize(System.ComponentModel.IComponent)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.LoginStatusDesigner.ActionLists
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

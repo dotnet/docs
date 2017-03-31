@@ -15,7 +15,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the validity of an XML item validated by the <see cref="T:System.Xml.Schema.XmlSchemaValidator" /> class.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,7 +37,7 @@
         <ReturnType>System.Xml.Schema.XmlSchemaValidity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The XML item is invalid.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotKnown">
@@ -58,7 +58,7 @@
         <ReturnType>System.Xml.Schema.XmlSchemaValidity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The validity of the XML item is not known.</summary>
       </Docs>
     </Member>
     <Member MemberName="Valid">
@@ -79,7 +79,7 @@
         <ReturnType>System.Xml.Schema.XmlSchemaValidity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The XML item is valid.</summary>
       </Docs>
     </Member>
   </Members>

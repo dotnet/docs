@@ -1,34 +1,41 @@
 ---
 uid: Microsoft.Build.Framework.XamlTypes.RuleBag
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.XamlTypes.RuleBag.EndInit
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.XamlTypes.RuleBag.BeginInit
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.XamlTypes.RuleBag.Rules
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.XamlTypes.RuleBag.GetSchemaObjects(System.Type)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.XamlTypes.RuleBag.GetSchemaObjectTypes
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.XamlTypes.RuleBag.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

@@ -1,24 +1,29 @@
 ---
 uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration
-internalonly: False
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration.ToString
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration.Parse(System.String)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration.XsdType
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration.ToString(System.TimeSpan)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDuration.#ctor
-internalonly: False
+manager: "ghogen"
 ---

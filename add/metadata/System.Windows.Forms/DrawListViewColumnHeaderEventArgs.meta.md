@@ -1,69 +1,100 @@
 ---
 uid: System.Windows.Forms.DrawListViewColumnHeaderEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DrawListViewColumnHeaderEventArgs.DrawText
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DrawListViewColumnHeaderEventArgs.BackColor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DrawListViewColumnHeaderEventArgs.#ctor(System.Drawing.Graphics,System.Drawing.Rectangle,System.Int32,System.Windows.Forms.ColumnHeader,System.Windows.Forms.ListViewItemStates,System.Drawing.Color,System.Drawing.Color,System.Drawing.Font)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DrawListViewColumnHeaderEventArgs.State
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DrawListViewColumnHeaderEventArgs.DrawText
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DrawListViewColumnHeaderEventArgs.ColumnIndex
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DrawListViewColumnHeaderEventArgs.Font
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DrawListViewColumnHeaderEventArgs.ForeColor
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DrawListViewColumnHeaderEventArgs.DrawDefault
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DrawListViewColumnHeaderEventArgs.Graphics
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DrawListViewColumnHeaderEventArgs.Bounds
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DrawListViewColumnHeaderEventArgs.DrawText(System.Windows.Forms.TextFormatFlags)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DrawListViewColumnHeaderEventArgs.DrawBackground
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DrawListViewColumnHeaderEventArgs.Header
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

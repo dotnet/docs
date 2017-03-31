@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the actions that occur with <see cref="T:System.Windows.Annotations.Annotation" /> author, anchor, and cargo resources.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Annotations.AnnotationAction> defines the operations that occur to an annotation's <xref:System.Windows.Annotations.Annotation.Authors%2A>, <xref:System.Windows.Annotations.Annotation.Anchors%2A>, and <xref:System.Windows.Annotations.Annotation.Cargos%2A> properties.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Added">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Annotations.AnnotationAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The component was added to the annotation.</summary>
       </Docs>
     </Member>
     <Member MemberName="Modified">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Annotations.AnnotationAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The component was modified within the annotation.</summary>
       </Docs>
     </Member>
     <Member MemberName="Removed">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.Annotations.AnnotationAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The component was removed from the annotation.</summary>
       </Docs>
     </Member>
   </Members>

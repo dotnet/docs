@@ -1,24 +1,34 @@
 ---
 uid: System.Runtime.InteropServices.ComTypes.IEnumSTATDATA
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.ComTypes.IEnumSTATDATA.Reset
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.ComTypes.IEnumSTATDATA.Next(System.Int32,System.Runtime.InteropServices.ComTypes.STATDATA[],System.Int32[])
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.ComTypes.IEnumSTATDATA.Clone(System.Runtime.InteropServices.ComTypes.IEnumSTATDATA@)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.ComTypes.IEnumSTATDATA.Skip(System.Int32)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

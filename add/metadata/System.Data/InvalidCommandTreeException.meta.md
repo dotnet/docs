@@ -1,19 +1,34 @@
 ---
 uid: System.Data.InvalidCommandTreeException
-internalonly: False
----
-
----
-uid: System.Data.InvalidCommandTreeException.#ctor(System.String)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.InvalidCommandTreeException.#ctor
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.InvalidCommandTreeException.#ctor(System.String)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.InvalidCommandTreeException.#ctor
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.InvalidCommandTreeException.#ctor(System.String,System.Exception)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

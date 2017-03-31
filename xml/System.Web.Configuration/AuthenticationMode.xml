@@ -10,8 +10,23 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the authentication mode to use in a Web application.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.Configuration.AuthenticationSection.Mode%2A> property to programmatically configure the type of authentication used by a Web application,  
+  
+   
+  
+## Examples  
+ The following code example shows how to access the <xref:System.Web.Configuration.AuthenticationSection.Mode%2A> property.  
+  
+ [!code-csharp[System.Web.Configuration.AuthenticationSection#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.AuthenticationSection/CS/authenticationsection.cs#4)]
+ [!code-vb[System.Web.Configuration.AuthenticationSection#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.AuthenticationSection/VB/authenticationsection.vb#4)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Forms">
@@ -27,7 +42,7 @@
         <ReturnType>System.Web.Configuration.AuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies ASP.NET Forms-based authentication as the authentication mode.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -43,7 +58,7 @@
         <ReturnType>System.Web.Configuration.AuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies no authentication.</summary>
       </Docs>
     </Member>
     <Member MemberName="Passport">
@@ -64,7 +79,7 @@
         <ReturnType>System.Web.Configuration.AuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies Microsoft Passport as the authentication mode.</summary>
       </Docs>
     </Member>
     <Member MemberName="Windows">
@@ -80,7 +95,7 @@
         <ReturnType>System.Web.Configuration.AuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies Windows as the authentication mode. This mode applies when using the Internet Information Services (IIS) authentication methods Basic, Digest, Integrated Windows (NTLM/Kerberos), or certificates.</summary>
       </Docs>
     </Member>
   </Members>

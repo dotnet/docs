@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a collection of <see cref="T:System.Web.Mobile.DeviceFilterElement" /> objects. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,7 +34,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Mobile.DeviceFilterElementCollection" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,8 +54,8 @@
         <Parameter Name="deviceFilter" Type="System.Web.Mobile.DeviceFilterElement" />
       </Parameters>
       <Docs>
-        <param name="deviceFilter">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="deviceFilter">The object to add to the collection.</param>
+        <summary>Adds the specified <see cref="T:System.Web.Mobile.DeviceFilterElement" /> object to the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,8 +72,8 @@
         <ReturnType>System.Object[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection containing the keys of each item in the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>A collection containing the keys of each item in the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,7 +91,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes all items from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,8 +108,8 @@
         <ReturnType>System.Configuration.ConfigurationElementCollectionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the configuration collection type of this <see cref="T:System.Web.Mobile.DeviceFilterElementCollection" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>A value from the <see cref="T:System.Configuration.ConfigurationElementCollectionType" /> enumeration representing the type of the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -188,10 +188,17 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="index">The index at which to get or set the item.</param>
+        <summary>Gets or sets the item at the specified index. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>The item at the specified index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you set an item at an index where an item already exists, the existing item is removed and the new item is then assigned to its index position in the collection.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -210,10 +217,17 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="name">The string that identifies the item.</param>
+        <summary>Gets the specified item from the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>The specified item in the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Mobile.DeviceFilterElementCollection.Item%2A?displayProperty=fullName> property can only get an item. To set an item, use the <xref:System.Web.Mobile.DeviceFilterElementCollection.Item%2A?displayProperty=fullName> property, which can both set and get an item.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -250,8 +264,8 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The key that identifies the item to be removed.</param>
+        <summary>Removes the object with the specified key from the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -271,9 +285,16 @@
         <Parameter Name="deviceFilter" Type="System.Web.Mobile.DeviceFilterElement" />
       </Parameters>
       <Docs>
-        <param name="deviceFilter">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="deviceFilter">The item to remove from the collection.</param>
+        <summary>Removes the specified item from the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This overload gets the key from the object referenced by the `deviceFilter` parameter and then calls the <xref:System.Web.Mobile.DeviceFilterElementCollection.Remove%2A?displayProperty=fullName> method with the key as the argument.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -292,10 +313,27 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The index of the item to be removed.</param>
+        <summary>Removes an item from the collection at the specified index. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets an item in the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property takes either a 32-bit signed integer or a string as an argument. When specifying the item by string, only the `get` accessor is available. However, when specifying the item by integer, both the `get` and `set` accessors are available.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

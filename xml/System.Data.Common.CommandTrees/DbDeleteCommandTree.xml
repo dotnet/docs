@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a single row delete operation expressed as a command tree. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,9 +28,16 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets an <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that specifies the predicate used to determine which members of the target collection should be deleted.</summary>
+        <value>An <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that specifies the predicate used to determine which members of the target collection should be deleted.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The predicate can include only the following elements: <xref:System.Data.Common.CommandTrees.DbComparisonExpression> (represents equality), <xref:System.Data.Common.CommandTrees.DbConstantExpression>, <xref:System.Data.Common.CommandTrees.DbIsNullExpression>, <xref:System.Data.Common.CommandTrees.DbPropertyExpression>, <xref:System.Data.Common.CommandTrees.DbVariableReferenceExpression> (references the target), <xref:System.Data.Common.CommandTrees.DbAndExpression>, <xref:System.Data.Common.CommandTrees.DbOrExpression>, and <xref:System.Data.Common.CommandTrees.DbNotExpression>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

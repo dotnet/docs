@@ -1,14 +1,20 @@
 ---
 uid: System.Workflow.ComponentModel.Design.IPersistUIState
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.IPersistUIState.SaveViewState(System.IO.BinaryWriter)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.IPersistUIState.LoadViewState(System.IO.BinaryReader)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

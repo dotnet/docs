@@ -21,8 +21,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the data type of the column as a row version.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A row version type (also known as a sequence number) is a binary number that is guaranteed to be unique in the database. It does not represent an actual time. Row version data is not visually meaningful. Therefore, when the <xref:System.ComponentModel.DataAnnotations.TimestampAttribute> attribute is used with a Dynamic Data field, the column is not displayed unless the <xref:System.ComponentModel.DataAnnotations.ScaffoldColumnAttribute> attribute of the column is explicitly set to `true`.  
+  
+ For more information, see [rowversion](http://msdn.microsoft.com/en-us/65c9cf0e-3e8a-45f8-87b3-3460d96afb0b).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,7 +50,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.TimestampAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

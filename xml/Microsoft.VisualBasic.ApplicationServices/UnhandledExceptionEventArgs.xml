@@ -19,8 +19,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides data for the <see langword="My.Application.UnhandledException" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UnhandledException> event occurs when an unhandled exception occurs in an application that implements the Visual Basic Application Model. For more information, see [Overview of the Visual Basic Application Model](../Topic/Overview%20of%20the%20Visual%20Basic%20Application%20Model.md).  
+  
+ <xref:Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs> contains the <xref:System.Exception> that occurred and indicates whether the application should exit upon exiting the exception handler.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,10 +46,19 @@
         <Parameter Name="exception" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="exitApplication">To be added.</param>
-        <param name="exception">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="exitApplication">A <see cref="T:System.Boolean" /> that indicates whether the application should exit upon exiting the exception handler.</param>
+        <param name="exception">The <see cref="T:System.Exception" /> that occurred.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UnhandledException> event occurs when an unhandled exception occurs in an application that implements the Visual Basic Application Model. For more information, see [Overview of the Visual Basic Application Model](../Topic/Overview%20of%20the%20Visual%20Basic%20Application%20Model.md).  
+  
+ <xref:Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs> contains the <xref:System.Exception> that occurred and indicates whether the application should exit upon exiting the exception handler.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ExitApplication">
@@ -56,9 +74,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Indicates whether the application should exit upon exiting the exception handler.</summary>
+        <value>A <see cref="T:System.Boolean" /> that indicates whether the application should exit upon exiting the exception handler.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Visual Basic Application Model checks the value of this property after running the handlers of the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UnhandledException> event. If <xref:Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs.ExitApplication%2A> is `True`, then the application exits. Otherwise, the application continues to run. For more information, see [Overview of the Visual Basic Application Model](../Topic/Overview%20of%20the%20Visual%20Basic%20Application%20Model.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,6 @@
 ---
 uid: System.IO.Pipes.PipeAccessRights
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

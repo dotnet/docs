@@ -1,9 +1,9 @@
 ---
 uid: System.Runtime.Remoting.Contexts.IContributeObjectSink
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Contexts.IContributeObjectSink.GetObjectSink(System.MarshalByRefObject,System.Runtime.Remoting.Messaging.IMessageSink)
-internalonly: False
+manager: "ghogen"
 ---

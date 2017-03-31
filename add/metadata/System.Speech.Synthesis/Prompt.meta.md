@@ -1,24 +1,35 @@
 ---
 uid: System.Speech.Synthesis.Prompt
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.Prompt.#ctor(System.Speech.Synthesis.PromptBuilder)
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.Prompt.IsCompleted
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
+---
+
+---
+uid: System.Speech.Synthesis.Prompt.#ctor
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.Prompt.#ctor(System.String,System.Speech.Synthesis.SynthesisTextFormat)
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.Prompt.#ctor(System.String)
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

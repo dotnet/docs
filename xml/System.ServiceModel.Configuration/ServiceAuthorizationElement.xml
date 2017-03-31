@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a configuration element that defines security settings at the service level.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.ServiceAuthorizationElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,9 +48,16 @@
         <ReturnType>System.ServiceModel.Configuration.AuthorizationPolicyTypeElementCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of authorization policy types.</summary>
+        <value>An <see cref="T:System.ServiceModel.Configuration.AuthorizationPolicyTypeElementCollection" /> that contains a collection of authorization policy types.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Configuring a set of authorization policy implementations enables transformation of one set of input claims into another set of claims. Access control can be granted or denied based on the claims.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BehaviorType">
@@ -66,8 +73,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type of this behavior configuration element.</summary>
+        <value>The type of the behavior.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,8 +94,8 @@
         <Parameter Name="from" Type="System.ServiceModel.Configuration.ServiceModelExtensionElement" />
       </Parameters>
       <Docs>
-        <param name="from">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="from">The configuration element to be copied.</param>
+        <summary>Copies the content of a specified configuration element to this configuration element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,9 +136,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a Boolean value that specifies whether all the operations in the service impersonate the caller.</summary>
+        <value>
+          <see langword="true" /> if all the operations in the service impersonate the caller; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a specific service operation impersonates the caller, the thread context is switched to the caller context before executing the specified service.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ImpersonateOnSerializingReply">
@@ -152,8 +167,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether the <see cref="T:System.ServiceModel.Configuration.ServiceAuthorizationElement" /> impersonates on serializing reply.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.ServiceModel.Configuration.ServiceAuthorizationElement" /> impersonates on serializing reply; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,8 +191,8 @@
         <ReturnType>System.ServiceModel.Description.PrincipalPermissionMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the principal used to carry out operations on the server.</summary>
+        <value>A valid <see cref="T:System.ServiceModel.Description.PrincipalPermissionMode" /> value that specifies the principal used to carry out operations on the server. The default is <see cref="F:System.ServiceModel.Description.PrincipalPermissionMode.UseWindowsGroups" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -219,9 +235,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the role provider, which provides role information for a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] application.</summary>
+        <value>The name of the role provider. The default is an empty string.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Different types of role providers can be used to provide role information from a Windows group, an SQL database, an authorization manager policy store, and so on.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ServiceAuthorizationManagerType">
@@ -245,8 +268,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the type of service authorization manager used.</summary>
+        <value>A string that specifies the type of the service authorization manager.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

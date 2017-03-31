@@ -1,49 +1,59 @@
 ---
 uid: Microsoft.Build.Tasks.ToolTaskExtension
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.ToolTaskExtension.Bag
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.ToolTaskExtension.Log
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.ToolTaskExtension.AddResponseFileCommands(Microsoft.Build.Tasks.CommandLineBuilderExtension)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.ToolTaskExtension.HasLoggedErrors
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.ToolTaskExtension.AddCommandLineCommands(Microsoft.Build.Tasks.CommandLineBuilderExtension)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.ToolTaskExtension.GetIntParameterWithDefault(System.String,System.Int32)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.ToolTaskExtension.GetBoolParameterWithDefault(System.String,System.Boolean)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.ToolTaskExtension.GenerateResponseFileCommands
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.ToolTaskExtension.GenerateCommandLineCommands
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

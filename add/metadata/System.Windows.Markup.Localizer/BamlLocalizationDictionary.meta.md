@@ -1,124 +1,124 @@
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizationDictionary
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizationDictionary.RootElementKey
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizationDictionary.System#Collections#IDictionary#Remove(System.Object)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizationDictionary.Add(System.Windows.Markup.Localizer.BamlLocalizableResourceKey,System.Windows.Markup.Localizer.BamlLocalizableResource)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizationDictionary.IsReadOnly
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizationDictionary.System#Collections#ICollection#SyncRoot
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizationDictionary.System#Collections#IDictionary#GetEnumerator
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizationDictionary.#ctor
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizationDictionary.IsFixedSize
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizationDictionary.Values
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizationDictionary.System#Collections#ICollection#Count
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizationDictionary.System#Collections#IEnumerable#GetEnumerator
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizationDictionary.Keys
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizationDictionary.System#Collections#IDictionary#Contains(System.Object)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizationDictionary.System#Collections#IDictionary#Add(System.Object,System.Object)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizationDictionary.CopyTo(System.Collections.DictionaryEntry[],System.Int32)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizationDictionary.Item(System.Windows.Markup.Localizer.BamlLocalizableResourceKey)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizationDictionary.GetEnumerator
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizationDictionary.Count
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizationDictionary.Contains(System.Windows.Markup.Localizer.BamlLocalizableResourceKey)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizationDictionary.System#Collections#IDictionary#Item(System.Object)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizationDictionary.System#Collections#ICollection#IsSynchronized
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizationDictionary.Clear
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizationDictionary.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizationDictionary.Remove(System.Windows.Markup.Localizer.BamlLocalizableResourceKey)
-internalonly: False
+manager: "martinek"
 ---

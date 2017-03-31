@@ -1,29 +1,47 @@
 ---
 uid: System.Windows.Media.Animation.DiscreteQuaternionKeyFrame
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.DiscreteQuaternionKeyFrame.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.DiscreteQuaternionKeyFrame.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.DiscreteQuaternionKeyFrame.#ctor(System.Windows.Media.Media3D.Quaternion,System.Windows.Media.Animation.KeyTime)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Animation.DiscreteQuaternionKeyFrame.CreateInstanceCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.DiscreteQuaternionKeyFrame.InterpolateValueCore(System.Windows.Media.Media3D.Quaternion,System.Double)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.DiscreteQuaternionKeyFrame.#ctor(System.Windows.Media.Media3D.Quaternion)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

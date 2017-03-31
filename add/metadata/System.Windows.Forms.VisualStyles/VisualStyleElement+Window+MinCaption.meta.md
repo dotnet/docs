@@ -1,19 +1,25 @@
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.Window.MinCaption
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.Window.MinCaption.Active
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.Window.MinCaption.Disabled
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.Window.MinCaption.Inactive
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

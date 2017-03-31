@@ -15,8 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="TValue">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="TValue">[!INCLUDE[cpp_iter_arg](~/includes/cpp-iter-arg-md.md)]</typeparam>
+    <summary>Interface for an iterator that is used to write a sequence to a container only in the forward direction. The element that the iterator points to can be written to only one time.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members />

@@ -1,79 +1,132 @@
 ---
 uid: System.Activities.RuntimeTransactionHandle
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.RuntimeTransactionHandle.System#Activities#IExecutionProperty#SetupWorkflowThread
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.RuntimeTransactionHandle.GetCurrentTransaction(System.Activities.CodeActivityContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.RuntimeTransactionHandle.#ctor(System.Transactions.Transaction)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.RuntimeTransactionHandle.System#Activities#IPropertyRegistrationCallback#Unregister(System.Activities.RegistrationContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.RuntimeTransactionHandle.GetCurrentTransaction(System.Activities.AsyncCodeActivityContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.RuntimeTransactionHandle.RequestTransactionContext(System.Activities.NativeActivityContext,System.Action{System.Activities.NativeActivityTransactionContext,System.Object},System.Object)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.RuntimeTransactionHandle.CompleteTransaction
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.RuntimeTransactionHandle.RequireTransactionContext(System.Activities.NativeActivityContext,System.Action{System.Activities.NativeActivityTransactionContext,System.Object},System.Object)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.RuntimeTransactionHandle.GetCurrentTransaction(System.Activities.NativeActivityContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.RuntimeTransactionHandle.CompleteTransaction(System.Activities.NativeActivityContext,System.Activities.BookmarkCallback)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.RuntimeTransactionHandle.GetCurrentTransaction
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.RuntimeTransactionHandle.System#Activities#IPropertyRegistrationCallback#Register(System.Activities.RegistrationContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.RuntimeTransactionHandle.SuppressTransaction
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.RuntimeTransactionHandle.CompleteTransaction(System.Activities.NativeActivityContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.RuntimeTransactionHandle.System#Activities#IExecutionProperty#CleanupWorkflowThread
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.RuntimeTransactionHandle.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.RuntimeTransactionHandle.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.RuntimeTransactionHandle.AbortInstanceOnTransactionFailure
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

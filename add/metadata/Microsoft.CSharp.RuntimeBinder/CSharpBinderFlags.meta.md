@@ -1,4 +1,6 @@
 ---
 uid: Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

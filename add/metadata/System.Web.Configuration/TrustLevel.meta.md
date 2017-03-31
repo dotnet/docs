@@ -1,19 +1,23 @@
 ---
 uid: System.Web.Configuration.TrustLevel
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.TrustLevel.Name
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.TrustLevel.#ctor(System.String,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.TrustLevel.PolicyFile
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

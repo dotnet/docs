@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.Design.IContentResolutionService
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.IContentResolutionService.SetContentDesignerState(System.String,System.Web.UI.Design.ContentDesignerState)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.IContentResolutionService.ContentDefinitions
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.IContentResolutionService.GetContentDesignerState(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

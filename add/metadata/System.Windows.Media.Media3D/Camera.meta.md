@@ -1,39 +1,61 @@
 ---
 uid: System.Windows.Media.Media3D.Camera
-internalonly: False
----
-
----
-uid: System.Windows.Media.Media3D.Camera.Clone
-internalonly: False
----
-
----
-uid: System.Windows.Media.Media3D.Camera.CloneCurrentValue
-internalonly: False
----
-
----
-uid: System.Windows.Media.Media3D.Camera.TransformProperty
-internalonly: False
----
-
----
-uid: System.Windows.Media.Media3D.Camera.ToString(System.IFormatProvider)
-internalonly: False
----
-
----
-uid: System.Windows.Media.Media3D.Camera.Transform
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Media3D.Camera.ToString
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.Media3D.Camera.Clone
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Media3D.Camera.CloneCurrentValue
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Media3D.Camera.TransformProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Media3D.Camera.ToString(System.IFormatProvider)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Media3D.Camera.Transform
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Media3D.Camera.ToString
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Media3D.Camera.System#IFormattable#ToString(System.String,System.IFormatProvider)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

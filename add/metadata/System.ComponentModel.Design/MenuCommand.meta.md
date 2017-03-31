@@ -1,69 +1,104 @@
 ---
 uid: System.ComponentModel.Design.MenuCommand
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.MenuCommand.OnCommandChanged(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.ComponentModel.Design.MenuCommand.ToString
-internalonly: False
----
-
----
-uid: System.ComponentModel.Design.MenuCommand.CommandChanged
-internalonly: False
----
-
----
-uid: System.ComponentModel.Design.MenuCommand.Properties
-internalonly: False
----
-
----
-uid: System.ComponentModel.Design.MenuCommand.OleStatus
-internalonly: False
----
-
----
-uid: System.ComponentModel.Design.MenuCommand.Enabled
-internalonly: False
----
-
----
-uid: System.ComponentModel.Design.MenuCommand.Supported
-internalonly: False
----
-
----
-uid: System.ComponentModel.Design.MenuCommand.Checked
-internalonly: False
----
-
----
-uid: System.ComponentModel.Design.MenuCommand.Visible
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.MenuCommand.Invoke
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Design.MenuCommand.ToString
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Design.MenuCommand.CommandChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Design.MenuCommand.Properties
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Design.MenuCommand.OleStatus
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Design.MenuCommand.Enabled
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Design.MenuCommand.Supported
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Design.MenuCommand.Checked
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Design.MenuCommand.Visible
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Design.MenuCommand.Invoke
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.MenuCommand.Invoke(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.MenuCommand.#ctor(System.EventHandler,System.ComponentModel.Design.CommandID)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.MenuCommand.CommandID
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

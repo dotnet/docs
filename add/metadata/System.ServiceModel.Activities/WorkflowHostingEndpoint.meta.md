@@ -1,34 +1,55 @@
 ---
 uid: System.ServiceModel.Activities.WorkflowHostingEndpoint
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.WorkflowHostingEndpoint.OnGetInstanceId(System.Object[],System.ServiceModel.OperationContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.WorkflowHostingEndpoint.#ctor(System.Type,System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Activities.WorkflowHostingEndpoint.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.WorkflowHostingEndpoint.OnGetCreationContext(System.Object[],System.ServiceModel.OperationContext,System.Guid,System.ServiceModel.Activities.WorkflowHostingResponseContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.WorkflowHostingEndpoint.#ctor(System.Type)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.WorkflowHostingEndpoint.OnResolveBookmark(System.Object[],System.ServiceModel.OperationContext,System.ServiceModel.Activities.WorkflowHostingResponseContext,System.Object@)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.WorkflowHostingEndpoint.CorrelationQueries
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

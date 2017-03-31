@@ -1,4 +1,6 @@
 ---
 uid: System.Data.Metadata.Edm.EdmSchemaErrorSeverity
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

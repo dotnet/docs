@@ -1,24 +1,41 @@
 ---
 uid: System.ServiceModel.Configuration.EndpointBehaviorElement
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.EndpointBehaviorElement.Add(System.ServiceModel.Configuration.BehaviorExtensionElement)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.EndpointBehaviorElement.#ctor(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.EndpointBehaviorElement.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.EndpointBehaviorElement.CanAdd(System.ServiceModel.Configuration.BehaviorExtensionElement)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Configuration.EndpointBehaviorElement.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

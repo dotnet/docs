@@ -15,8 +15,37 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Qualifier flavors that can be used with WMI provider extensions.  
+  
+ Note: the WMI .NET libraries are now considered in final state, and no further development, enhancements, or updates will be available for non-security related issues affecting these libraries. The [MI APIs](https://msdn.microsoft.com/en-us/library/jj152383%28v=vs.80%29.aspx) should be used for all new development.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To learn more about qualifier flavors read the [Qualifier Flavors](http://go.microsoft.com/fwlink/?LinkId=96563) topic in the WMI SDK on MSDN.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the DisableOverride ManagementQualifierFlavors enumeration. Here it is being applied to the Association qualifier.  
+  
+```  
+[ManagementQualifier("Association",  
+Flavor = ManagementQualifierFlavors.DisableOverride)]  
+public class AssociationSampleBase  
+{  
+   [ManagementReference(Type = "UserInfo")]  
+   [ManagementKey]  
+   public string Configuration;  
+  
+   [ManagementReference(Type = "LogInfo")]  
+   [ManagementKey]  
+   public string Hosting;  
+   //additional code omitted  
+```  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Amended">
@@ -32,7 +61,7 @@
         <ReturnType>System.Management.Instrumentation.ManagementQualifierFlavors</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The qualifier is not required in the basic class definition and can be moved to the amendment to be localized.</summary>
       </Docs>
     </Member>
     <Member MemberName="ClassOnly">
@@ -48,7 +77,7 @@
         <ReturnType>System.Management.Instrumentation.ManagementQualifierFlavors</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The qualifier is propagated to instances.</summary>
       </Docs>
     </Member>
     <Member MemberName="DisableOverride">
@@ -64,7 +93,7 @@
         <ReturnType>System.Management.Instrumentation.ManagementQualifierFlavors</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The qualifier cannot be overridden in a derived class or instance. Note that being able to override a propagated qualifier is the default.</summary>
       </Docs>
     </Member>
     <Member MemberName="ThisClassOnly">
@@ -80,7 +109,7 @@
         <ReturnType>System.Management.Instrumentation.ManagementQualifierFlavors</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The qualifier is not propagated to derived classes.</summary>
       </Docs>
     </Member>
   </Members>

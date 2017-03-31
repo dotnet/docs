@@ -17,7 +17,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies that this type’s exports won’t be included in a <see cref="T:System.ComponentModel.Composition.Primitives.ComposablePartCatalog" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.PartNotDiscoverableAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

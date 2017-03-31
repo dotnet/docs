@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Identifies a specific location in a target source code file.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,9 +34,9 @@
         <Parameter Name="line" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="fileName">To be added.</param>
-        <param name="line">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="fileName">A source code file.</param>
+        <param name="line">The number of a line in the source code file.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Debugger.SourceLocation" /> class that specifies a source code file name and the number of a line in that file.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,12 +57,12 @@
         <Parameter Name="endColumn" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="fileName">To be added.</param>
-        <param name="startLine">To be added.</param>
-        <param name="startColumn">To be added.</param>
-        <param name="endLine">To be added.</param>
-        <param name="endColumn">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="fileName">The name of a source code file.</param>
+        <param name="startLine">A number that designates the line in the source code file where reading begins.</param>
+        <param name="startColumn">A number that designates the column in the source code file where reading begins.</param>
+        <param name="endLine">A number that designates the line in the source code file where reading ends.</param>
+        <param name="endColumn">A number that designates the column in the source code file where reading ends.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Debugger.SourceLocation" /> class that specifies a source code file name and parameters for a range of data within that file.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,8 +79,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the final column in a range of one or more columns in the source code file.</summary>
+        <value>An integer representing the final column in a range of columns.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,8 +97,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the final line in a range of one or more lines in the source code file.</summary>
+        <value>An integer representing the final line in a range of lines.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,9 +118,9 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">A specified <see cref="T:System.Activities.Debugger.SourceLocation" /> object.</param>
+        <summary>Returns a value that indicates whether the source code file line and column settings referenced by the <see cref="T:System.Activities.Debugger.SourceLocation" /> object are an exact match for the line and column settings in another, specified <see cref="T:System.Activities.Debugger.SourceLocation" /> object.</summary>
+        <returns>A boolean that indicates the presence or absence of a match.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,8 +137,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the target source code file.</summary>
+        <value>A string instance of the name of the target source code file.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,8 +156,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a unique value to represent the <see cref="T:System.Activities.Debugger.SourceLocation" /> object.</summary>
+        <returns>An integer representing a hash code.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -174,8 +174,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the line and column settings define a single, complete line, and not multiple lines, in the source code file.</summary>
+        <value>A boolean representing what the column settings define.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -192,8 +192,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the first column in a range of one or more columns in the source code file.</summary>
+        <value>An integer representing a column in a range of columns.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -210,8 +210,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the first line in a range of one or more lines in the source code file.</summary>
+        <value>An integer representing a line a range of lines.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

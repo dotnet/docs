@@ -1,24 +1,29 @@
 ---
 uid: System.Web.Configuration.SiteMapSection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.SiteMapSection.DefaultProvider
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.SiteMapSection.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.SiteMapSection.Providers
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.SiteMapSection.Enabled
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

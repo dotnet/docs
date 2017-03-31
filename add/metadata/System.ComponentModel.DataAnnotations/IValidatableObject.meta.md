@@ -1,9 +1,11 @@
 ---
 uid: System.ComponentModel.DataAnnotations.IValidatableObject
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.IValidatableObject.Validate(System.ComponentModel.DataAnnotations.ValidationContext)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

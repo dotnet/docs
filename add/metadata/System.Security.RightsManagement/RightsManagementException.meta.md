@@ -1,54 +1,83 @@
 ---
 uid: System.Security.RightsManagement.RightsManagementException
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.RightsManagement.RightsManagementException.#ctor(System.Security.RightsManagement.RightsManagementFailureCode,System.Exception)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.RightsManagement.RightsManagementException.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.RightsManagement.RightsManagementException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.RightsManagement.RightsManagementException.#ctor(System.Security.RightsManagement.RightsManagementFailureCode,System.String,System.Exception)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.RightsManagement.RightsManagementException.FailureCode
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.RightsManagement.RightsManagementException.#ctor(System.Security.RightsManagement.RightsManagementFailureCode,System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.RightsManagement.RightsManagementException.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.RightsManagement.RightsManagementException.#ctor(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.RightsManagement.RightsManagementException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.RightsManagement.RightsManagementException.#ctor(System.Security.RightsManagement.RightsManagementFailureCode)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.RightsManagement.RightsManagementException.#ctor(System.String,System.Exception)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

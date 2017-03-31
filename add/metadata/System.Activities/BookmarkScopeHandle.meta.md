@@ -1,34 +1,55 @@
 ---
 uid: System.Activities.BookmarkScopeHandle
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.BookmarkScopeHandle.CreateBookmarkScope(System.Activities.NativeActivityContext,System.Guid)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.BookmarkScopeHandle.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.BookmarkScopeHandle.CreateBookmarkScope(System.Activities.NativeActivityContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.BookmarkScopeHandle.CreateBookmarkScope
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.BookmarkScopeHandle.BookmarkScope
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.BookmarkScopeHandle.Initialize(System.Activities.NativeActivityContext,System.Guid)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.BookmarkScopeHandle.Default
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

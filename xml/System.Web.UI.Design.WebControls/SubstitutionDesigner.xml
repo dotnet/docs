@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides design-time support in a visual designer for the <see cref="T:System.Web.UI.WebControls.Substitution" /> control.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.SubstitutionDesigner" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,8 +49,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the HTML markup that is used to represent the control at design time.</summary>
+        <returns>The HTML markup used to represent the control at design time.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

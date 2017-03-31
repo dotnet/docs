@@ -1,4 +1,6 @@
 ---
 uid: System.Xml.Schema.XmlSchemaValidationFlags
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

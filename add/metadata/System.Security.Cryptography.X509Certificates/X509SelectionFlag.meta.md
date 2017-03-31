@@ -1,4 +1,6 @@
 ---
 uid: System.Security.Cryptography.X509Certificates.X509SelectionFlag
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

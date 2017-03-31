@@ -1,24 +1,34 @@
 ---
 uid: System.Activities.Tracking.ActivityScheduledRecord
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Tracking.ActivityScheduledRecord.#ctor(System.Guid,System.Int64,System.Activities.Tracking.ActivityInfo,System.Activities.Tracking.ActivityInfo)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Tracking.ActivityScheduledRecord.Child
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Tracking.ActivityScheduledRecord.Activity
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Tracking.ActivityScheduledRecord.ToString
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

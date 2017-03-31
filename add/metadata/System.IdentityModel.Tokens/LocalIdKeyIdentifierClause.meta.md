@@ -1,44 +1,65 @@
 ---
 uid: System.IdentityModel.Tokens.LocalIdKeyIdentifierClause
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.OwnerType
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.Matches(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.Matches(System.String,System.Type)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.ToString
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.#ctor(System.String,System.Type)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.#ctor(System.String)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.#ctor(System.String,System.Byte[],System.Int32,System.Type)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.LocalId
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.#ctor
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.Matches
+ms.author: "v-jibran"
+manager: "markgal"
 ---

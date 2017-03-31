@@ -1,24 +1,31 @@
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.Window.HorizontalScroll
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.Window.HorizontalScroll.Pressed
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.Window.HorizontalScroll.Normal
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.Window.HorizontalScroll.Disabled
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.Window.HorizontalScroll.Hot
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

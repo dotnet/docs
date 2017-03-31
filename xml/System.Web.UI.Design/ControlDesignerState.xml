@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides access to the state of the control designer in the design host through the <see cref="T:System.ComponentModel.Design.IComponentDesignerStateService" /> interface. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.ControlDesignerState> class is a wrapper for the <xref:System.ComponentModel.Design.IComponentDesignerStateService> interface, which is the interface between a designer and a design host, such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)].  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Item">
@@ -31,9 +38,9 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="key">The name of the item to set or retrieve from the state collection.</param>
+        <summary>Represents one element, identified by the given key, in the state collection for a control designer.</summary>
+        <value>The object identified by <paramref name="key" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

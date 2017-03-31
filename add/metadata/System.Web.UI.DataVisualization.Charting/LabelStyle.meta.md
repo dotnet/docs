@@ -1,74 +1,93 @@
 ---
 uid: System.Web.UI.DataVisualization.Charting.LabelStyle
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.LabelStyle.IsEndLabelVisible
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.LabelStyle.Dispose(System.Boolean)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.LabelStyle.IntervalOffsetType
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.LabelStyle.Enabled
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.LabelStyle.Interval
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.LabelStyle.IsStaggered
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.LabelStyle.TruncatedLabels
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.LabelStyle.Format
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.LabelStyle.IntervalType
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.LabelStyle.Angle
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.LabelStyle.IntervalOffset
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Web.UI.DataVisualization.Charting.LabelStyle.Dispose
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.LabelStyle.Font
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.LabelStyle.ForeColor
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.LabelStyle.#ctor
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---

@@ -1,24 +1,29 @@
 ---
 uid: System.Net.Configuration.SocketElement
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.SocketElement.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.SocketElement.IPProtectionLevel
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.SocketElement.AlwaysUseCompletionPortsForConnect
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.SocketElement.AlwaysUseCompletionPortsForAccept
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

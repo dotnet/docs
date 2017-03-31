@@ -1,19 +1,27 @@
 ---
 uid: System.Data.Common.CommandTrees.DbUpdateCommandTree
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DbUpdateCommandTree.Returning
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DbUpdateCommandTree.SetClauses
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DbUpdateCommandTree.Predicate
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

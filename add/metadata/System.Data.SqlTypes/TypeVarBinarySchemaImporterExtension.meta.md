@@ -1,9 +1,13 @@
 ---
 uid: System.Data.SqlTypes.TypeVarBinarySchemaImporterExtension
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.TypeVarBinarySchemaImporterExtension.#ctor
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

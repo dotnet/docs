@@ -1,4 +1,6 @@
 ---
 uid: System.Reflection.Emit.FlowControl
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

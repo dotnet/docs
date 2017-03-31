@@ -1,74 +1,79 @@
 ---
 uid: System.Runtime.Remoting.Contexts.SynchronizationAttribute
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Contexts.SynchronizationAttribute.#ctor(System.Int32)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Contexts.SynchronizationAttribute.REQUIRES_NEW
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Contexts.SynchronizationAttribute.#ctor(System.Boolean)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Contexts.SynchronizationAttribute.Locked
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Contexts.SynchronizationAttribute.#ctor
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Contexts.SynchronizationAttribute.IsContextOK(System.Runtime.Remoting.Contexts.Context,System.Runtime.Remoting.Activation.IConstructionCallMessage)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Contexts.SynchronizationAttribute.GetClientContextSink(System.Runtime.Remoting.Messaging.IMessageSink)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Contexts.SynchronizationAttribute.GetServerContextSink(System.Runtime.Remoting.Messaging.IMessageSink)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Contexts.SynchronizationAttribute.REQUIRED
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Contexts.SynchronizationAttribute.GetPropertiesForNewContext(System.Runtime.Remoting.Activation.IConstructionCallMessage)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Contexts.SynchronizationAttribute.SUPPORTED
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Contexts.SynchronizationAttribute.IsReEntrant
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Contexts.SynchronizationAttribute.#ctor(System.Int32,System.Boolean)
-internalonly: False
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Remoting.Contexts.SynchronizationAttribute.#ctor
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Contexts.SynchronizationAttribute.NOT_SUPPORTED
-internalonly: False
+manager: "ghogen"
 ---

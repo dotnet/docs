@@ -1,59 +1,77 @@
 ---
 uid: System.Web.UI.DataVisualization.Charting.Margins
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.Margins.GetHashCode
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.Margins.ToRectangleF
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.Margins.Bottom
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.Margins.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.Margins.Right
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.Margins.Left
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.Margins.IsEmpty
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.Margins.Top
-internalonly: False
----
-
----
-uid: System.Web.UI.DataVisualization.Charting.Margins.Equals(System.Object)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.Margins.#ctor
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Web.UI.DataVisualization.Charting.Margins.Equals(System.Object)
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Web.UI.DataVisualization.Charting.Margins.#ctor
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.Margins.ToString
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---

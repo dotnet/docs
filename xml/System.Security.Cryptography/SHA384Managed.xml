@@ -21,8 +21,26 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Computes the <see cref="T:System.Security.Cryptography.SHA384" /> hash for the input data using the managed library.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The hash is used as a unique value of fixed size representing a large amount of data. Hashes of two sets of data should match if and only if the corresponding data also matches. Small changes to the data result in large unpredictable changes in the hash.  
+  
+ The hash size for the <xref:System.Security.Cryptography.SHA384Managed> algorithm is 384 bits.  
+  
+   
+  
+## Examples  
+ The following example computes the <xref:System.Security.Cryptography.SHA384Managed> hash for `data` and stores it in `result`. This example assumes that there is a predefined constant `DATA_SIZE`.  
+  
+ [!code-cpp[Classic SHA384Managed Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic SHA384Managed Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic SHA384Managed Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic SHA384Managed Example/CS/source.cs#1)]
+ [!code-vb[Classic SHA384Managed Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic SHA384Managed Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,8 +59,22 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.SHA384Managed" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The hash is used as a unique value of fixed size representing a large amount of data. Hashes of two sets of data should match if and only if the corresponding data also matches. Small changes to the data result in large unpredictable changes in the hash.  
+  
+ The hash size for the <xref:System.Security.Cryptography.SHA384Managed> algorithm is 384 bits.  
+  
+ **Important** If you enable the following security setting either in the Local Security Policy or as part of Group Policy you will get an <xref:System.InvalidOperationException> when you attempt to use this constructor:  
+  
+ **System cryptography: Use FIPS compliant algorithms for encryption, hashing, and signing**  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The Federal Information Processing Standards (FIPS) security setting is enabled. This implementation is not part of the Windows Platform FIPS-validated cryptographic algorithms.</exception>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -112,11 +144,20 @@
         <Parameter Name="cbSize" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="rgb">To be added.</param>
-        <param name="ibStart">To be added.</param>
-        <param name="cbSize">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="rgb">The input data.</param>
+        <param name="ibStart">The offset into the byte array from which to begin using data.</param>
+        <param name="cbSize">The number of bytes in the array to use as data.</param>
+        <summary>When overridden in a derived class, routes data written to the object into the <see cref="T:System.Security.Cryptography.SHA384Managed" /> hash algorithm for computing the hash.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is not called by application code.  
+  
+ This abstract method performs the hash computation. Every write to the cryptographic stream object passes the data through this method. For each block of data, this method updates the state of the hash object so a correct hash value is returned at the end of the data stream.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HashFinal">
@@ -143,9 +184,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>When overridden in a derived class, finalizes the hash computation after the last data is processed by the cryptographic stream object.</summary>
+        <returns>The computed hash code.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is not called by application code. This method finalizes any partial computation and returns the correct hash value of the data stream.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -167,8 +215,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes an instance of <see cref="T:System.Security.Cryptography.SHA384Managed" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The hash is used as a unique value of fixed size representing a large amount of data. Hashes of two sets of data should match if and only if the corresponding data also matches. Small changes to the data result in large unpredictable changes in the hash.  
+  
+ The hash size for the <xref:System.Security.Cryptography.SHA384Managed> algorithm is 384 bits.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

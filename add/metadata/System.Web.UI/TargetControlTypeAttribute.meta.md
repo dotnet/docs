@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.TargetControlTypeAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.TargetControlTypeAttribute.TypeId
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.TargetControlTypeAttribute.#ctor(System.Type)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.TargetControlTypeAttribute.TargetControlType
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

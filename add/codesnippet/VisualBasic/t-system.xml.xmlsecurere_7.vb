@@ -1,1 +1,0 @@
-Dim myResolver As New XmlSecureResolver(New XmlUrlResolver(), myPermissions)

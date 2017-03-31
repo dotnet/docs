@@ -1,1 +1,0 @@
-        Console.WriteLine("MaximumNumberOfFiles =  " + ((EventSchemaTraceListener)ts.Listeners["eventListener"]).MaximumNumberOfFiles);

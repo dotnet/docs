@@ -22,8 +22,19 @@
   <Interfaces>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a collection of <see cref="T:System.Xml.Serialization.XmlArrayItemAttribute" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.Serialization.XmlArrayItemAttributes> class allows you to specify the derived types that can be inserted into an array returned by a public field or public read/write property.  
+  
+ An instance of this class is returned by the <xref:System.Xml.Serialization.XmlAttributes.XmlArrayItems%2A> property of the <xref:System.Xml.Serialization.XmlAttributes> class. The <xref:System.Xml.Serialization.XmlAttributes> class is used when overriding the set of <xref:System.Xml.Serialization.XmlArrayItemAttribute> objects that can be inserted into an array to which the <xref:System.Xml.Serialization.XmlArrayAttribute> has been applied.  
+  
+ For each new type you want the field or property to accept, create an <xref:System.Xml.Serialization.XmlArrayItemAttribute> and use the <xref:System.Xml.Serialization.XmlArrayItemAttributes.Add%2A> to add the object to the <xref:System.Xml.Serialization.XmlArrayItemAttributes> collection returned by the <xref:System.Xml.Serialization.XmlAttributes.XmlArrayItems%2A> property. <xref:System.Xml.Serialization.XmlAttributeOverrides.Add%2A> the <xref:System.Xml.Serialization.XmlAttributes> to an <xref:System.Xml.Serialization.XmlAttributeOverrides>, that specifies the type of the object that contains the field or property, and the name of the field or property. Construct an <xref:System.Xml.Serialization.XmlSerializer> with the <xref:System.Xml.Serialization.XmlAttributeOverrides> before calling the <xref:System.Xml.Serialization.XmlSerializer.Serialize%2A> or <xref:System.Xml.Serialization.XmlSerializer.Deserialize%2A> method.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,7 +57,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlArrayItemAttributes" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,9 +86,9 @@
         <Parameter Name="attribute" Type="System.Xml.Serialization.XmlArrayItemAttribute" />
       </Parameters>
       <Docs>
-        <param name="attribute">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="attribute">The <see cref="T:System.Xml.Serialization.XmlArrayItemAttribute" /> to add to the collection.</param>
+        <summary>Adds an <see cref="T:System.Xml.Serialization.XmlArrayItemAttribute" /> to the collection.</summary>
+        <returns>The index of the added item.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,9 +135,10 @@
         <Parameter Name="attribute" Type="System.Xml.Serialization.XmlArrayItemAttribute" />
       </Parameters>
       <Docs>
-        <param name="attribute">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="attribute">The <see cref="T:System.Xml.Serialization.XmlArrayItemAttribute" /> to check for.</param>
+        <summary>Determines whether the collection contains the specified <see cref="T:System.Xml.Serialization.XmlArrayItemAttribute" />.</summary>
+        <returns>
+          <see langword="true" /> if the collection contains the specified <see cref="T:System.Xml.Serialization.XmlArrayItemAttribute" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,9 +168,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">The array of <see cref="T:System.Xml.Serialization.XmlArrayItemAttribute" /> objects to copy to the collection.</param>
+        <param name="index">The index at which the copied attributes begin.</param>
+        <summary>Copies an <see cref="T:System.Xml.Serialization.XmlArrayItemAttribute" /> array to the collection, starting at a specified target index.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -224,9 +236,9 @@
         <Parameter Name="attribute" Type="System.Xml.Serialization.XmlArrayItemAttribute" />
       </Parameters>
       <Docs>
-        <param name="attribute">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="attribute">The <see cref="T:System.Xml.Serialization.XmlArrayItemAttribute" /> to locate in the collection.</param>
+        <summary>Returns the zero-based index of the first occurrence of the specified <see cref="T:System.Xml.Serialization.XmlArrayItemAttribute" /> in the collection or -1 if the attribute is not found in the collection.</summary>
+        <returns>The first index of the <see cref="T:System.Xml.Serialization.XmlArrayItemAttribute" /> in the collection or -1 if the attribute is not found in the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -256,9 +268,9 @@
         <Parameter Name="attribute" Type="System.Xml.Serialization.XmlArrayItemAttribute" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="attribute">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The index at which the attribute is inserted.</param>
+        <param name="attribute">The <see cref="T:System.Xml.Serialization.XmlArrayItemAttribute" /> to insert.</param>
+        <summary>Inserts an <see cref="T:System.Xml.Serialization.XmlArrayItemAttribute" /> into the collection at the specified index.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -287,9 +299,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The zero-based index of the collection member to get or set.</param>
+        <summary>Gets or sets the item at the specified index.</summary>
+        <value>The <see cref="T:System.Xml.Serialization.XmlArrayItemAttribute" /> at the specified index.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -318,9 +330,16 @@
         <Parameter Name="attribute" Type="System.Xml.Serialization.XmlArrayItemAttribute" />
       </Parameters>
       <Docs>
-        <param name="attribute">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="attribute">The <see cref="T:System.Xml.Serialization.XmlArrayItemAttribute" /> to remove.</param>
+        <summary>Removes an <see cref="T:System.Xml.Serialization.XmlArrayItemAttribute" /> from the collection, if it is present.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The implementation of this is the same as the <xref:System.Collections.ArrayList.Remove%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">

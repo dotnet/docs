@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Helper class that provides information about the IME conversion mode.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.Collections.Generic.Dictionary&lt;System.Windows.Forms.ImeMode,System.Windows.Forms.ImeModeConversion&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a dictionary that contains the conversion mode flags corresponding to each <see cref="T:System.Windows.Forms.ImeMode" />.</summary>
+        <value>A dictionary that contains the flags to <see cref="T:System.Windows.Forms.ImeMode" /> mapping.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the current language table is supported.</summary>
+        <value>
+          <see langword="true" /> if the language table is supported; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

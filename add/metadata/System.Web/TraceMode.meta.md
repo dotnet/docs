@@ -1,4 +1,5 @@
 ---
 uid: System.Web.TraceMode
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a type converter to convert <see cref="T:System.Activities.InOutArgument" /> classes to and from various other representations.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.XamlIntegration.InOutArgumentConverter" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="type">The type of the associated <see cref="T:System.Activities.InOutArgument" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.XamlIntegration.InOutArgumentConverter" /> class using the specified type.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

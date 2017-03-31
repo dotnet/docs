@@ -1,9 +1,9 @@
 ---
 uid: System.Management.Instrumentation.ManagementCommitAttribute
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.ManagementCommitAttribute.#ctor
-internalonly: False
+manager: "jillfra"
 ---

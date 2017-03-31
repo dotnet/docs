@@ -16,8 +16,30 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the World Wide Web Consortium (W3C) <see langword="annotation" /> element.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An `annotation` element can contain one or more <xref:System.Xml.Schema.XmlSchemaAppInfo> instances (information for applications) and <xref:System.Xml.Schema.XmlSchemaDocumentation> instances (comments or text for humans).  
+  
+ An annotation is used to store extra information about the schema or its elements. These notes are specified for human consumption, `xs:documentation`, or by software, `xs:appinfo`. Annotation can be the first element of most schema elements or anywhere under the schema element.  
+  
+   
+  
+## Examples  
+ The following example creates the `annotation` element.  
+  
+ [!code-cpp[Classic WebData XmlSchemaAnnotation Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlSchemaAnnotation Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic WebData XmlSchemaAnnotation Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlSchemaAnnotation Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData XmlSchemaAnnotation Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlSchemaAnnotation Example/VB/source.vb#1)]  
+  
+ The following XML file is generated for the preceding code example.  
+  
+ [!code-xml[Classic WebData XmlSchemaAnnotation Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlSchemaAnnotation Example/XML/source.xml#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,7 +58,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Schema.XmlSchemaAnnotation" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,8 +85,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the string id.</summary>
+        <value>The string id. The default is <see langword="String.Empty" />.  
+  
+ Optional.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,9 +118,16 @@
         <ReturnType>System.Xml.Schema.XmlSchemaObjectCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see langword="Items" /> collection that is used to store the <see langword="appinfo" /> and <see langword="documentation" /> child elements.</summary>
+        <value>An <see cref="T:System.Xml.Schema.XmlSchemaObjectCollection" /> of <see langword="appinfo" /> and <see langword="documentation" /> child elements.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An annotation can contain <xref:System.Xml.Schema.XmlSchemaAppInfo> (information used by applications) or <xref:System.Xml.Schema.XmlSchemaDocumentation> (comments or text used by humans).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UnhandledAttributes">
@@ -122,8 +153,8 @@
         <ReturnType>System.Xml.XmlAttribute[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the qualified attributes that do not belong to the schema's target namespace.</summary>
+        <value>An array of <see cref="T:System.Xml.XmlAttribute" /> objects that do not belong to the schema's target namespace.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

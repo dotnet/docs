@@ -1,14 +1,20 @@
 ---
 uid: System.Windows.Automation.Provider.IToggleProvider
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Provider.IToggleProvider.Toggle
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Provider.IToggleProvider.ToggleState
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---

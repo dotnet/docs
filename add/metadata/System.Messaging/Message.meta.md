@@ -1,249 +1,254 @@
 ---
 uid: System.Messaging.Message
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.Authenticated
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.UseAuthentication
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.Formatter
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.LookupId
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.AcknowledgeType
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.IsFirstInTransaction
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.Body
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.TimeToBeReceived
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.Id
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.ArrivedTime
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.DigitalSignature
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.Acknowledgment
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.SecurityContext
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.BodyType
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.TransactionId
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.ConnectorType
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.Extension
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.#ctor
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.InfiniteTimeout
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.DestinationSymmetricKey
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.HashAlgorithm
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.UseEncryption
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.AdministrationQueue
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.BodyStream
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.AttachSenderId
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.IsLastInTransaction
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.TimeToReachQueue
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.AuthenticationProviderType
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.#ctor(System.Object,System.Messaging.IMessageFormatter)
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.Label
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.UseJournalQueue
-internalonly: False
+manager: "tyoung"
+---
+
+---
+uid: System.Messaging.Message.#ctor
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.SourceMachine
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.TransactionStatusQueue
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.SenderCertificate
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.SenderId
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.#ctor(System.Object)
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.UseDeadLetterQueue
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.ResponseQueue
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.AuthenticationProviderName
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.Priority
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.DestinationQueue
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.SenderVersion
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.AppSpecific
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.CorrelationId
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.Recoverable
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.EncryptionAlgorithm
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.SentTime
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.UseTracing
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Message.MessageType
-internalonly: False
+manager: "tyoung"
 ---

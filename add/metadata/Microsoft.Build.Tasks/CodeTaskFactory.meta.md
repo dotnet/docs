@@ -1,39 +1,47 @@
 ---
 uid: Microsoft.Build.Tasks.CodeTaskFactory
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.CodeTaskFactory.TaskType
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.CodeTaskFactory.FactoryName
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.CodeTaskFactory.Initialize(System.String,System.Collections.Generic.IDictionary{System.String,Microsoft.Build.Framework.TaskPropertyInfo},System.String,Microsoft.Build.Framework.IBuildEngine)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.CodeTaskFactory.GetTaskParameters
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.CodeTaskFactory.CreateTask(Microsoft.Build.Framework.IBuildEngine)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.CodeTaskFactory.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.CodeTaskFactory.CleanupTask(Microsoft.Build.Framework.ITask)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

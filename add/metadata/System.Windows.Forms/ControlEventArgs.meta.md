@@ -1,14 +1,18 @@
 ---
 uid: System.Windows.Forms.ControlEventArgs
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.ControlEventArgs.Control
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.ControlEventArgs.#ctor(System.Windows.Forms.Control)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

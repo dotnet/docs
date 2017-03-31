@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a query for events in an event log and the settings that define how the query is executed and on what computer the query is executed on.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ For example code using this class, see [How To: Query for Events](http://msdn.microsoft.com/en-us/5231a436-4cf2-4539-90d2-a04813aba069) or [How To: Access and Read Event Information](http://msdn.microsoft.com/en-us/14db3375-d305-49ae-aa24-aedbe906e76c).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -29,9 +36,9 @@
         <Parameter Name="pathType" Type="System.Diagnostics.Eventing.Reader.PathType" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <param name="pathType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="path">The name of the event log to query, or the path to the event log file to query.</param>
+        <param name="pathType">Specifies whether the string used in the path parameter specifies the name of an event log, or the path to an event log file.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Eventing.Reader.EventLogQuery" /> class by specifying the target of the query. The target can be an active event log or a log file.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,10 +57,10 @@
         <Parameter Name="query" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <param name="pathType">To be added.</param>
-        <param name="query">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="path">The name of the event log to query, or the path to the event log file to query.</param>
+        <param name="pathType">Specifies whether the string used in the path parameter specifies the name of an event log, or the path to an event log file.</param>
+        <param name="query">The event query used to retrieve events that match the query conditions.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Eventing.Reader.EventLogQuery" /> class by specifying the target of the query and the event query. The target can be an active event log or a log file.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,9 +77,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the Boolean value that determines whether to read events from the newest event in an event log to the oldest event in the log.</summary>
+        <value>Returns <see langword="true" /> if events are read from the newest event in the log to the oldest event, and returns <see langword="false" /> if events are read from the oldest event in the log to the newest event.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is `false`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -88,8 +102,8 @@
         <ReturnType>System.Diagnostics.Eventing.Reader.EventLogSession</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the session that access the Event Log service on the local computer or a remote computer. This object can be set to access a remote event log by creating a <see cref="T:System.Diagnostics.Eventing.Reader.EventLogReader" /> object or an <see cref="T:System.Diagnostics.Eventing.Reader.EventLogWatcher" /> object with this <see cref="T:System.Diagnostics.Eventing.Reader.EventLogQuery" /> object.</summary>
+        <value>Returns an <see cref="T:System.Diagnostics.Eventing.Reader.EventLogSession" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,8 +120,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a Boolean value that determines whether this query will continue to retrieve events when the query has an error.</summary>
+        <value>
+          <see langword="true" /> indicates that the query will continue to retrieve events even if the query fails for some logs, and <see langword="false" /> indicates that this query will not continue to retrieve events when the query fails.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

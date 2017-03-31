@@ -16,8 +16,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides text writer functionality for devices targeted by the HTML adapter set. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
     <remarks>To be added.</remarks>
+    <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,10 +35,17 @@
         <Parameter Name="device" Type="System.Web.Mobile.MobileCapabilities" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="device">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="writer">The base writer object.</param>
+        <param name="device">An object of <see cref="T:System.Web.Mobile.MobileCapabilities" /> class that provides the capability information for the specific device.</param>
+        <summary>Creates a new instance of the specified class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Adapters are usually constructed automatically by ASP.NET and must have a default constructor.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginStyleContext">
@@ -54,8 +62,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Starts a new Style block. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.EndStyleContext%2A> method to complete the Style block.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EndStyleContext">
@@ -72,8 +87,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Completes a new Style block. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.BeginStyleContext%2A> method to start the Style block.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EnterFormat">
@@ -92,8 +114,8 @@
         <Parameter Name="style" Type="System.Web.UI.MobileControls.Style" />
       </Parameters>
       <Docs>
-        <param name="style">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="style">The style reference.</param>
+        <summary>Begins a block by using the character formatting from a specified style. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,8 +135,8 @@
         <Parameter Name="style" Type="System.Web.UI.MobileControls.Style" />
       </Parameters>
       <Docs>
-        <param name="style">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="style">The style reference.</param>
+        <summary>Begins a block by using the layout and character formatting from a given style. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,9 +156,16 @@
         <Parameter Name="style" Type="System.Web.UI.MobileControls.Style" />
       </Parameters>
       <Docs>
-        <param name="style">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="style">The style reference.</param>
+        <summary>Begins a block by using the layout and character formatting from a given style. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.EnterStyle%2A> and <xref:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.ExitStyle%2A> methods allow a device adapter to emit markup, in order to begin and end a block using the character formatting from a given style.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ExitFormat">
@@ -155,8 +184,8 @@
         <Parameter Name="style" Type="System.Web.UI.MobileControls.Style" />
       </Parameters>
       <Docs>
-        <param name="style">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="style">The style reference.</param>
+        <summary>Ends a block that has been using the character formatting from a specified style. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -177,9 +206,9 @@
         <Parameter Name="breakAfter" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="style">To be added.</param>
-        <param name="breakAfter">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="style">The style reference.</param>
+        <param name="breakAfter">If <c>breakAfter</c> is <see langword="true" />, a break is added after the closing style element.</param>
+        <summary>Ends a block that has been using the character formatting from a specified style. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -199,8 +228,8 @@
         <Parameter Name="style" Type="System.Web.UI.MobileControls.Style" />
       </Parameters>
       <Docs>
-        <param name="style">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="style">The style reference.</param>
+        <summary>Removes the current style, restores the previous style as the current layout style, and optionally calls the <see cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.WriteEndTag(System.String)" /> method to close the current element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -221,9 +250,9 @@
         <Parameter Name="breakAfter" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="style">To be added.</param>
-        <param name="breakAfter">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="style">The style reference.</param>
+        <param name="breakAfter">If <c>breakAfter</c> is <see langword="true" />, a break is added after the closing style element.</param>
+        <summary>Removes the current style, restores the previous style as the current layout style, and optionally calls the <see cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.WriteEndTag(System.String)" /> method to close the current element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -243,8 +272,8 @@
         <Parameter Name="style" Type="System.Web.UI.MobileControls.Style" />
       </Parameters>
       <Docs>
-        <param name="style">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="style">The style reference.</param>
+        <summary>Ends a block that has been using the layout and character formatting from a given style. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -265,9 +294,9 @@
         <Parameter Name="breakAfter" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="style">To be added.</param>
-        <param name="breakAfter">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="style">The style reference.</param>
+        <param name="breakAfter">If <c>breakAfter</c> is <see langword="true" />, a break is added after the closing style element.</param>
+        <summary>Ends a block that has been using the layout and character formatting from a given style. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -285,7 +314,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Marks the beginning of a style context. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -302,8 +331,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Indicates whether the body color attribute can be sent to the output stream. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>
+          <see langword="true" /> if the body color attribute can be sent to the output stream; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -320,8 +350,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Indicates whether the bold attribute can be sent to the output stream. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>
+          <see langword="true" /> if the bold attribute can be sent to the output stream; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -338,8 +369,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Indicates whether the alignment attribute can be sent to the output stream. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>
+          <see langword="true" /> if the alignment attribute can be sent to the output stream; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -356,8 +388,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Indicates whether the target device supports the <see langword="NoWrap" /> value for text wrapping. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>
+          <see langword="true" /> if the target device supports the <see langword="NoWrap" /> value for text wrapping; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -374,8 +407,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Indicates whether the font color attribute can be sent to the output stream. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>
+          <see langword="true" /> if the font color attribute can be sent to the output stream; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -392,8 +426,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Indicates whether the font name attribute can be sent to the output stream. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>
+          <see langword="true" /> if the font name attribute can be sent to the output stream; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -410,8 +445,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Indicates whether the font size attribute can be sent to the output stream. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>
+          <see langword="true" /> if the font size attribute can be sent to the output stream; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -428,8 +464,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Contains a Boolean value that indicates whether to send the <see langword="italic" /> attribute to the target device. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>
+          <see langword="true" /> if the <see langword="italic" /> attribute can be sent to the target device; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -446,8 +483,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the device does not support HTML <see langword="&lt; br &gt;" /> elements to format line breaks. The default is <see langword="false" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>
+          <see langword="true" /> if the device does not support HTML <see langword="&lt; br &gt;" /> tags; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -465,7 +503,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Closes a style context. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -485,8 +523,8 @@
         <Parameter Name="c" Type="System.Char" />
       </Parameters>
       <Docs>
-        <param name="c">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="c">The character to write to the output stream.</param>
+        <summary>Writes the given character to the output stream. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -506,8 +544,8 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="text">The text to write to the output stream.</param>
+        <summary>Writes the text to the output stream, along with any pending tab spacing. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -527,8 +565,8 @@
         <Parameter Name="tag" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="tag">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="tag">None</param>
+        <summary>Writes any tab spacing and the opening tag of the specified markup element to the output stream. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -546,7 +584,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Writes a line break. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -566,8 +604,8 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="text">The text to encode and write to the output stream.</param>
+        <summary>Encodes the specified text for the requesting device, and then writes it to the output stream. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -587,8 +625,8 @@
         <Parameter Name="tag" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="tag">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="tag">None</param>
+        <summary>Writes any tab spacing and the opening tag of the specified markup element to the output stream. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -609,10 +647,17 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the hidden field.</param>
+        <param name="value">The value of the hidden field.</param>
+        <summary>Writes a hidden field with the given name and value. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A hidden field is in the form \<input type="hidden" name="name" value="value">.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -631,8 +676,8 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="text">The line terminator string to write.</param>
+        <summary>Writes a line terminator string to the output stream. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -653,10 +698,17 @@
         <Parameter Name="encodeText" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <param name="encodeText">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="text">The text to write.</param>
+        <param name="encodeText">If <see langword="true" />, encodes the text.</param>
+        <summary>Writes the given text, optionally with encoding. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Encoding involves mapping characters with HTML/WML meanings to the appropriate character code.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteUrlParameter">
@@ -676,10 +728,17 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="name">The parameter name to encode and write.</param>
+        <param name="value">The parameter value to encode and write.</param>
+        <summary>Writes an encoded URL parameter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The parameter is written in the form `name=value`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

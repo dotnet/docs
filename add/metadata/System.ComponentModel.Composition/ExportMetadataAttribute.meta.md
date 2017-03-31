@@ -1,24 +1,34 @@
 ---
 uid: System.ComponentModel.Composition.ExportMetadataAttribute
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.ExportMetadataAttribute.IsMultiple
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.ExportMetadataAttribute.Value
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.ExportMetadataAttribute.Name
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.ExportMetadataAttribute.#ctor(System.String,System.Object)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

@@ -28,8 +28,59 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines abbreviations that you can use in place of the full contract syntax.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to create abbreviated names for code contracts that are repeated in several methods.  
+  
+```csharp  
+  
+using System.Diagnostics.Contracts;  
+  
+public class MyClass   
+{  
+   public int State { get; }  
+   public int Data { get; }  
+  
+   [ ContractAbbreviator ]  
+   private void DataAndStateUnchanged()   
+   {  
+      Contract.Ensures( this .State == Contract.OldValue(this.State));  
+      Contract.Ensures( this .Data == Contract.OldValue(this.Data));  
+   }  
+  
+   [ ContractAbbreviator ]  
+   private void InStateZeroAndUnchanged()   
+   {  
+      Contract.Requires( this.State == 0);  
+      DataAndStateUnchanged();  
+   }  
+  
+   public void Method1(...)   
+   {  
+      InStateZeroAndUnchanged();  
+      ...  
+   }  
+  
+   public void Method2(...)   
+   {  
+      InStateZeroAndUnchanged();  
+      ...  
+   }  
+  
+   public void Method3(...)  
+   {  
+      Contract.Requires(this .State == 1);  
+      DataAndStateUnchanged();  
+   }  
+}  
+  
+```  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -52,7 +103,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Contracts.ContractAbbreviatorAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

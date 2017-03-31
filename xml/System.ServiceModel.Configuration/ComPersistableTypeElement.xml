@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies all the persistable types.This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.ComPersistableTypeElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <Parameter Name="ID" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="ID">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="ID">A unique identifier for a persistable type.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.ComPersistableTypeElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,8 +69,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a unique identifier for a persistable type.</summary>
+        <value>A unique identifier for a persistable type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,8 +95,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the persistable type.</summary>
+        <value>A name of the persistable type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

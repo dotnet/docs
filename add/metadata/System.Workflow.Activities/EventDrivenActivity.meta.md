@@ -1,19 +1,34 @@
 ---
 uid: System.Workflow.Activities.EventDrivenActivity
-internalonly: False
----
-
----
-uid: System.Workflow.Activities.EventDrivenActivity.#ctor(System.String)
-internalonly: False
----
-
----
-uid: System.Workflow.Activities.EventDrivenActivity.EventActivity
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.EventDrivenActivity.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.EventDrivenActivity.#ctor(System.String)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.EventDrivenActivity.EventActivity
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.EventDrivenActivity.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

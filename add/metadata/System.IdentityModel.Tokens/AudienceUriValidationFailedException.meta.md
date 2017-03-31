@@ -1,24 +1,35 @@
 ---
 uid: System.IdentityModel.Tokens.AudienceUriValidationFailedException
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.AudienceUriValidationFailedException.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.AudienceUriValidationFailedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.AudienceUriValidationFailedException.#ctor
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.AudienceUriValidationFailedException.#ctor(System.String)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.AudienceUriValidationFailedException.#ctor(System.String,System.Exception)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

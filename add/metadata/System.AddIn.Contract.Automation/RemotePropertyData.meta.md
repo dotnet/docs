@@ -1,34 +1,48 @@
 ---
 uid: System.AddIn.Contract.Automation.RemotePropertyData
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.AddIn.Contract.Automation.RemotePropertyData.CanWrite
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.AddIn.Contract.Automation.RemotePropertyData.MemberData
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.AddIn.Contract.Automation.RemotePropertyData.Attributes
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.AddIn.Contract.Automation.RemotePropertyData.IndexParameters
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.AddIn.Contract.Automation.RemotePropertyData.PropertyType
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.AddIn.Contract.Automation.RemotePropertyData.CanRead
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

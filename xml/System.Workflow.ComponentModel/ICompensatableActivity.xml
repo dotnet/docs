@@ -13,8 +13,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the interface required by an <see cref="T:System.Workflow.ComponentModel.Activity" /> that can be compensated.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ For more information about compensation, see [Using Transactions in Workflows](http://msdn.microsoft.com/en-us/78212ef0-6e48-4fe8-84dd-0010964187ad).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Compensate">
@@ -33,9 +44,9 @@
         <Parameter Name="executionContext" Type="System.Workflow.ComponentModel.ActivityExecutionContext" />
       </Parameters>
       <Docs>
-        <param name="executionContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="executionContext">The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> for the operation.</param>
+        <summary>Called by the workflow runtime to compensate an activity that is in the Closed state. The activity must have a value of <see langword="Succeeded" /> for its <see cref="P:System.Workflow.ComponentModel.Activity.ExecutionResult" /> property in order to be compensatable.</summary>
+        <returns>The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionStatus" /> after operation has been tried.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

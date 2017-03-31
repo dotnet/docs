@@ -1,29 +1,29 @@
 ---
 uid: Microsoft.JScript.StringObject
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.StringObject.length
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.StringObject.Equals(System.Object)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.StringObject.GetType
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.StringObject.#ctor(Microsoft.JScript.ScriptObject,System.String)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.StringObject.GetHashCode
-internalonly: False
+ms.author: "mikejo"
 ---

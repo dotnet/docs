@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represent the schema of an integer property.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The default constructor for an integer property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,7 +44,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>See <see cref="M:System.ComponentModel.ISupportInitialize.EndInit" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,9 +61,18 @@
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the maximum allowed value for this property.</summary>
+        <value>Returns the maximum allowed value. Returns <see langword="null" /> when this property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This field is optional.  
+  
+ The value of this property must be greater than or equal to the <xref:Microsoft.Build.Framework.XamlTypes.IntProperty.MinValue%2A> property (if the latter is defined).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MinValue">
@@ -79,9 +88,18 @@
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the minimum allowed value for this property.</summary>
+        <value>Returns the minimum allowed value. Returns <see langword="null" /> when this property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This field is optional.  
+  
+ The value of this property must be less than or equal to the <xref:Microsoft.Build.Framework.XamlTypes.IntProperty.MaxValue%2A> property (if the latter is defined).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

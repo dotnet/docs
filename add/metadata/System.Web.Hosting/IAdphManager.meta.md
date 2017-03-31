@@ -1,19 +1,23 @@
 ---
 uid: System.Web.Hosting.IAdphManager
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.IAdphManager.StartAppDomainProtocolListenerChannel(System.String,System.String,System.Web.Hosting.IListenerChannelCallback)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.IAdphManager.StopAppDomainProtocol(System.String,System.String,System.Boolean)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.IAdphManager.StopAppDomainProtocolListenerChannel(System.String,System.String,System.Int32,System.Boolean)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

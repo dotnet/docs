@@ -1,24 +1,24 @@
 ---
 uid: System.Transactions.TransactionInformation
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.TransactionInformation.Status
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.TransactionInformation.LocalIdentifier
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.TransactionInformation.CreationTime
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.TransactionInformation.DistributedIdentifier
-internalonly: False
+manager: "ghogen"
 ---

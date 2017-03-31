@@ -1,24 +1,29 @@
 ---
 uid: System.Runtime.Caching.CacheEntryChangeMonitor
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.CacheEntryChangeMonitor.LastModified
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.CacheEntryChangeMonitor.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.CacheEntryChangeMonitor.CacheKeys
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.CacheEntryChangeMonitor.RegionName
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---

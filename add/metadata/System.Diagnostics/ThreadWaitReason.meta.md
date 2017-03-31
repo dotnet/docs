@@ -1,4 +1,6 @@
 ---
 uid: System.Diagnostics.ThreadWaitReason
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

@@ -1,24 +1,24 @@
 ---
 uid: System.Configuration.CallbackValidatorAttribute
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.CallbackValidatorAttribute.Type
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.CallbackValidatorAttribute.ValidatorInstance
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.CallbackValidatorAttribute.CallbackMethodName
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.CallbackValidatorAttribute.#ctor
-internalonly: False
+manager: "wpickett"
 ---

@@ -1,44 +1,69 @@
 ---
 uid: System.Web.Configuration.HttpCapabilitiesDefaultProvider
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.HttpCapabilitiesDefaultProvider.ResultType
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.HttpCapabilitiesDefaultProvider.#ctor(System.Web.Configuration.HttpCapabilitiesDefaultProvider)
-internalonly: False
----
-
----
-uid: System.Web.Configuration.HttpCapabilitiesDefaultProvider.AddRuleList(System.Collections.ArrayList)
-internalonly: False
----
-
----
-uid: System.Web.Configuration.HttpCapabilitiesDefaultProvider.AddDependency(System.String)
-internalonly: False
----
-
----
-uid: System.Web.Configuration.HttpCapabilitiesDefaultProvider.GetBrowserCapabilities(System.Web.HttpRequest)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.HttpCapabilitiesDefaultProvider.#ctor
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Configuration.HttpCapabilitiesDefaultProvider.AddRuleList(System.Collections.ArrayList)
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Configuration.HttpCapabilitiesDefaultProvider.AddDependency(System.String)
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Configuration.HttpCapabilitiesDefaultProvider.GetBrowserCapabilities(System.Web.HttpRequest)
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Configuration.HttpCapabilitiesDefaultProvider.#ctor
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.HttpCapabilitiesDefaultProvider.CacheTime
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.HttpCapabilitiesDefaultProvider.UserAgentCacheKeyLength
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

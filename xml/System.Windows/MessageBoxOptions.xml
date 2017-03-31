@@ -15,8 +15,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies special display options for a message box.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ For more information, see [MessageBox Sample](http://go.microsoft.com/fwlink/?LinkID=160023).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="DefaultDesktopOnly">
@@ -32,7 +39,7 @@
         <ReturnType>System.Windows.MessageBoxOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The message box is displayed on the default desktop of the interactive window station. Specifies that the message box is displayed from a [!INCLUDE[TLA#tla_winfx](~/includes/tlasharptla-winfx-md.md)] windows service application in order to notify the user of an event.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -48,7 +55,7 @@
         <ReturnType>System.Windows.MessageBoxOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No options are set.</summary>
       </Docs>
     </Member>
     <Member MemberName="RightAlign">
@@ -64,7 +71,7 @@
         <ReturnType>System.Windows.MessageBoxOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The message box text and title bar caption are right-aligned.</summary>
       </Docs>
     </Member>
     <Member MemberName="RtlReading">
@@ -80,7 +87,7 @@
         <ReturnType>System.Windows.MessageBoxOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>All text, buttons, icons, and title bars are displayed right-to-left.</summary>
       </Docs>
     </Member>
     <Member MemberName="ServiceNotification">
@@ -96,7 +103,7 @@
         <ReturnType>System.Windows.MessageBoxOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The message box is displayed on the currently active desktop even if a user is not logged on to the computer. Specifies that the message box is displayed from a [!INCLUDE[TLA#tla_winfx](~/includes/tlasharptla-winfx-md.md)] windows service application in order to notify the user of an event.</summary>
       </Docs>
     </Member>
   </Members>

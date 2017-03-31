@@ -1,29 +1,48 @@
 ---
 uid: System.Security.Cryptography.AsymmetricSignatureFormatter
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.AsymmetricSignatureFormatter.CreateSignature(System.Security.Cryptography.HashAlgorithm)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.AsymmetricSignatureFormatter.CreateSignature
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.AsymmetricSignatureFormatter.CreateSignature(System.Byte[])
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.AsymmetricSignatureFormatter.SetHashAlgorithm(System.String)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.AsymmetricSignatureFormatter.SetKey(System.Security.Cryptography.AsymmetricAlgorithm)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.AsymmetricSignatureFormatter.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

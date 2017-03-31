@@ -1,9 +1,11 @@
 ---
 uid: Microsoft.Build.Tasks.Hosting.IVbcHostObject4
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Hosting.IVbcHostObject4.SetVBRuntime(System.String)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

@@ -1,19 +1,23 @@
 ---
 uid: System.Web.Profile.ProfileEventArgs
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Profile.ProfileEventArgs.#ctor(System.Web.HttpContext)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Profile.ProfileEventArgs.Profile
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Profile.ProfileEventArgs.Context
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

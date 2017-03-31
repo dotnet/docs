@@ -16,8 +16,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Use <see cref="T:System.Runtime.InteropServices.ComTypes.INVOKEKIND" /> instead.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For additional information about `INVOKEKIND`, see the MSDN Library.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="INVOKE_FUNC">
@@ -34,7 +41,7 @@
         <ReturnType>System.Runtime.InteropServices.INVOKEKIND</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The member is called using a normal function invocation syntax.</summary>
       </Docs>
     </Member>
     <Member MemberName="INVOKE_PROPERTYGET">
@@ -51,7 +58,7 @@
         <ReturnType>System.Runtime.InteropServices.INVOKEKIND</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The function is invoked using a normal property-access syntax.</summary>
       </Docs>
     </Member>
     <Member MemberName="INVOKE_PROPERTYPUT">
@@ -68,7 +75,7 @@
         <ReturnType>System.Runtime.InteropServices.INVOKEKIND</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The function is invoked using a property value assignment syntax.</summary>
       </Docs>
     </Member>
     <Member MemberName="INVOKE_PROPERTYPUTREF">
@@ -85,7 +92,7 @@
         <ReturnType>System.Runtime.InteropServices.INVOKEKIND</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The function is invoked using a property reference assignment syntax.</summary>
       </Docs>
     </Member>
   </Members>

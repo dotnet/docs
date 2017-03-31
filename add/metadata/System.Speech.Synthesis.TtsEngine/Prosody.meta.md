@@ -1,44 +1,53 @@
 ---
 uid: System.Speech.Synthesis.TtsEngine.Prosody
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.TtsEngine.Prosody.Volume
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.TtsEngine.Prosody.Pitch
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.TtsEngine.Prosody.GetContourPoints
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.TtsEngine.Prosody.Range
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.TtsEngine.Prosody.#ctor
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.TtsEngine.Prosody.SetContourPoints(System.Speech.Synthesis.TtsEngine.ContourPoint[])
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.TtsEngine.Prosody.Duration
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.TtsEngine.Prosody.Rate
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

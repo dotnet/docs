@@ -1,24 +1,33 @@
 ---
 uid: System.Windows.Controls.DataGridCellClipboardEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.DataGridCellClipboardEventArgs.Content
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.DataGridCellClipboardEventArgs.Item
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.DataGridCellClipboardEventArgs.Column
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.DataGridCellClipboardEventArgs.#ctor(System.Object,System.Windows.Controls.DataGridColumn,System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

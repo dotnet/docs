@@ -21,8 +21,26 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the filter string and filter type to use for a toolbox item.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ComponentModel.ToolboxItemFilterAttribute> provides a mechanism by which toolbox items can be marked for use only with designers that have a matching attribute or code that determines whether the item should be enabled or disabled in the toolbox.  
+  
+ A <xref:System.ComponentModel.ToolboxItemFilterAttribute> can be applied to a <xref:System.Drawing.Design.ToolboxItem> to indicate a filter string and filter type that specify when to enable or disable the item. <xref:System.ComponentModel.ToolboxItemFilterAttribute> can also be applied to a designer to indicate its requirements for enabling items in the toolbox. This type of attribute can be used to indicate that a toolbox item can only be enabled when a designer with a matching filter string is being used. The type of the filter is indicated in the <xref:System.ComponentModel.ToolboxItemFilterAttribute.FilterType%2A> property by a <xref:System.ComponentModel.ToolboxItemFilterType> that indicates whether and how a filter string match is used, or whether to use custom code to determine whether to enable an item.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to apply the <xref:System.ComponentModel.ToolboxItemFilterAttribute>.  
+  
+ [!code-cpp[IToolboxUserExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IToolboxUserExample/CPP/samplecontrol.cpp#1)]
+ [!code-csharp[IToolboxUserExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IToolboxUserExample/CS/samplecontrol.cs#1)]
+ [!code-vb[IToolboxUserExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IToolboxUserExample/VB/samplecontrol.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,8 +61,8 @@
         <Parameter Name="filterString" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="filterString">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="filterString">The filter string for the toolbox item.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ToolboxItemFilterAttribute" /> class using the specified filter string.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,10 +85,21 @@
         <Parameter Name="filterType" Type="System.ComponentModel.ToolboxItemFilterType" />
       </Parameters>
       <Docs>
-        <param name="filterString">To be added.</param>
-        <param name="filterType">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="filterString">The filter string for the toolbox item.</param>
+        <param name="filterType">A <see cref="T:System.ComponentModel.ToolboxItemFilterType" /> indicating the type of the filter.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ToolboxItemFilterAttribute" /> class using the specified filter string and type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to apply the <xref:System.ComponentModel.ToolboxItemFilterAttribute>.  
+  
+ [!code-cpp[IToolboxUserExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IToolboxUserExample/CPP/samplecontrol.cpp#1)]
+ [!code-csharp[IToolboxUserExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IToolboxUserExample/CS/samplecontrol.cs#1)]
+ [!code-vb[IToolboxUserExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IToolboxUserExample/VB/samplecontrol.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -94,9 +123,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">An <see cref="T:System.Object" /> to compare with this instance or a null reference (<see langword="Nothing" /> in Visual Basic).</param>
+        <summary>Returns a value that indicates whether this instance is equal to a specified object.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="obj" /> equals the type and value of this instance; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,8 +148,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the filter string for the toolbox item.</summary>
+        <value>The filter string for the toolbox item.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -141,9 +171,16 @@
         <ReturnType>System.ComponentModel.ToolboxItemFilterType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the type of the filter.</summary>
+        <value>A <see cref="T:System.ComponentModel.ToolboxItemFilterType" /> that indicates the type of the filter.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The type of the filter, along with any existing <xref:System.ComponentModel.ToolboxItemFilterAttribute> on the current designer, indicates the rules to use to determine whether a particular toolbox item should be enabled in the toolbox.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -165,8 +202,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code for this instance.</summary>
+        <returns>A 32-bit signed integer hash code.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -191,9 +228,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The object to test for a matching filter string.</param>
+        <summary>Indicates whether the specified object has a matching filter string.</summary>
+        <returns>
+          <see langword="true" /> if the specified object has a matching filter string; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -216,8 +254,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a string that represents the current object.</summary>
+        <returns>A string that represents the current object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -239,8 +277,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type ID for the attribute.</summary>
+        <value>The type ID for this attribute. All <see cref="T:System.ComponentModel.ToolboxItemFilterAttribute" /> objects with the same filter string return the same type ID.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

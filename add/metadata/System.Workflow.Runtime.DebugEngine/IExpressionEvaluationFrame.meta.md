@@ -1,9 +1,13 @@
 ---
 uid: System.Workflow.Runtime.DebugEngine.IExpressionEvaluationFrame
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.DebugEngine.IExpressionEvaluationFrame.CreateEvaluationFrame(System.Workflow.Runtime.DebugEngine.IInstanceTable,System.Workflow.Runtime.DebugEngine.DebugEngineCallback)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

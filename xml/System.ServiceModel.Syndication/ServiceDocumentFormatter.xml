@@ -20,8 +20,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>An abstract class used as a base class for other formatters, such as <see cref="T:System.ServiceModel.Syndication.AtomPub10ServiceDocumentFormatter" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is abstract and cannot be instantiated directly.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,7 +46,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.ServiceDocumentFormatter" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,8 +67,8 @@
         <Parameter Name="documentToWrite" Type="System.ServiceModel.Syndication.ServiceDocument" />
       </Parameters>
       <Docs>
-        <param name="documentToWrite">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="documentToWrite">The <see cref="T:System.ServiceModel.Syndication.ServiceDocument" /> to serialize.</param>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.ServiceDocumentFormatter" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,9 +92,10 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="reader">An XML reader to check.</param>
+        <summary>Verifies whether the specified <see cref="T:System.Xml.XmlReader" /> contains a valid service document.</summary>
+        <returns>
+          <see langword="true" />, if the XML reader contains a valid service document, otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,9 +119,9 @@
         <Parameter Name="inlineCategories" Type="System.ServiceModel.Syndication.InlineCategoriesDocument" />
       </Parameters>
       <Docs>
-        <param name="inlineCategories">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="inlineCategories">An <see cref="T:System.ServiceModel.Syndication.InlineCategories" /> instance used to create the new categories document.</param>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" /> class.</summary>
+        <returns>Returns a new <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,9 +145,9 @@
         <Parameter Name="workspace" Type="System.ServiceModel.Syndication.Workspace" />
       </Parameters>
       <Docs>
-        <param name="workspace">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="workspace">A <see cref="T:System.ServiceModel.Syndication.Workspace" /> instance used to create the new collection.</param>
+        <summary>Creates a new <see cref="T:System.ServiceModel.Syndication.ResourceCollectionInfo" /> instance.</summary>
+        <returns>Returns a new <see cref="T:System.ServiceModel.Syndication.ResourceCollectionInfo" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -161,8 +169,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a new <see cref="T:System.ServiceModel.Syndication.ServiceDocument" /> instance.</summary>
+        <returns>Returns a new <see cref="T:System.ServiceModel.Syndication.ServiceDocument" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,9 +194,9 @@
         <Parameter Name="collection" Type="System.ServiceModel.Syndication.ResourceCollectionInfo" />
       </Parameters>
       <Docs>
-        <param name="collection">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="collection">The <see cref="T:System.ServiceModel.Syndication.ResourceCollectionInfo" /> to use to create the new <see cref="T:System.ServiceModel.Syndication.InlineCategoriesDocument" />.</param>
+        <summary>Creates a new <see cref="T:System.ServiceModel.Syndication.InlineCategoriesDocument" />.</summary>
+        <returns>Returns a new <see cref="T:System.ServiceModel.Syndication.InlineCategoriesDocument" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -212,9 +220,9 @@
         <Parameter Name="collection" Type="System.ServiceModel.Syndication.ResourceCollectionInfo" />
       </Parameters>
       <Docs>
-        <param name="collection">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="collection">The <see cref="T:System.ServiceModel.Syndication.ResourceCollectionInfo" /> instance to use to create the new <see cref="T:System.ServiceModel.Syndication.ReferencedCategoriesDocument" />.</param>
+        <summary>Creates a new <see cref="T:System.ServiceModel.Syndication.ReferencedCategoriesDocument" />.</summary>
+        <returns>Returns a new <see cref="T:System.ServiceModel.Syndication.ReferencedCategoriesDocument" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -238,9 +246,9 @@
         <Parameter Name="document" Type="System.ServiceModel.Syndication.ServiceDocument" />
       </Parameters>
       <Docs>
-        <param name="document">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="document">The <see cref="T:System.ServiceModel.Syndication.ServiceDocument" /> to use to create the new workspace.</param>
+        <summary>Creates a new <see cref="T:System.ServiceModel.Syndication.Workspace" /></summary>
+        <returns>Returns a new <see cref="T:System.ServiceModel.Syndication.Workspace" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -261,8 +269,8 @@
         <ReturnType>System.ServiceModel.Syndication.ServiceDocument</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.ServiceModel.Syndication.ServiceDocument" /> associated with the formatter.</summary>
+        <value>Returns the <see cref="T:System.ServiceModel.Syndication.ServiceDocument" /> associated with the formatter.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -288,10 +296,10 @@
         <Parameter Name="maxExtensionSize" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <param name="categories">To be added.</param>
-        <param name="maxExtensionSize">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read from.</param>
+        <param name="categories">The <see cref="T:System.ServiceModel.Syndication.CategoriesDocument" /> to use to read the element extensions.</param>
+        <param name="maxExtensionSize">The maximum size of an element extension to be loaded.</param>
+        <summary>Loads element extensions.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -317,10 +325,10 @@
         <Parameter Name="maxExtensionSize" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <param name="collection">To be added.</param>
-        <param name="maxExtensionSize">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read from.</param>
+        <param name="collection">The <see cref="T:System.ServiceModel.Syndication.ResourceCollectionInfo" /> to use to load the element extensions.</param>
+        <param name="maxExtensionSize">The maximum size of an extension to load.</param>
+        <summary>Loads element extensions.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -346,10 +354,10 @@
         <Parameter Name="maxExtensionSize" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <param name="document">To be added.</param>
-        <param name="maxExtensionSize">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read from.</param>
+        <param name="document">The <see cref="T:System.ServiceModel.Syndication.ServiceDocument" /> to use to read the element extensions.</param>
+        <param name="maxExtensionSize">The maximum size of an extension to load.</param>
+        <summary>Loads element extensions.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -375,10 +383,10 @@
         <Parameter Name="maxExtensionSize" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <param name="workspace">To be added.</param>
-        <param name="maxExtensionSize">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read from.</param>
+        <param name="workspace">The <see cref="T:System.ServiceModel.Syndication.Workspace" /> to use to load the element extensions.</param>
+        <param name="maxExtensionSize">The maximum size of an extension to load.</param>
+        <summary>Loads element extensions.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -402,8 +410,8 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read from.</param>
+        <summary>Reads a service document from the specified <see cref="T:System.Xml.XmlReader" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -427,8 +435,8 @@
         <Parameter Name="document" Type="System.ServiceModel.Syndication.ServiceDocument" />
       </Parameters>
       <Docs>
-        <param name="document">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="document">The <see cref="T:System.ServiceModel.Syndication.ServiceDocument" /> to write.</param>
+        <summary>Sets the <see cref="T:System.ServiceModel.Syndication.ServiceDocument" /> to write.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -456,13 +464,13 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="ns">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="categories">To be added.</param>
-        <param name="version">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the element.</param>
+        <param name="ns">The namespace of the element.</param>
+        <param name="value">The attribute to parse.</param>
+        <param name="categories">The <see cref="T:System.ServiceModel.Syndication.CategoriesDocument" /> to use to parse the attribute extension.</param>
+        <param name="version">The syndication version to use when parsing.</param>
+        <summary>Attempts to parse an attribute extension.</summary>
+        <returns>Returns a <see cref="T:System.Boolean" /> that indicates whether the attribute extension was successfully parsed.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -490,13 +498,13 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="ns">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="collection">To be added.</param>
-        <param name="version">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the element.</param>
+        <param name="ns">The namespace of the element.</param>
+        <param name="value">The attribute to parse.</param>
+        <param name="collection">The <see cref="T:System.ServiceModel.Syndication.ResourceCollectionInfo" /> to use to parse the attribute.</param>
+        <param name="version">The syndication version to use when parsing.</param>
+        <summary>Attempts to parse an attribute extension.</summary>
+        <returns>Returns a <see cref="T:System.Boolean" /> that indicates whether the attribute extension was parsed successfully.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -524,13 +532,13 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="ns">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="document">To be added.</param>
-        <param name="version">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the element.</param>
+        <param name="ns">The namespace of the element.</param>
+        <param name="value">The attribute extension to parse.</param>
+        <param name="document">The <see cref="T:System.ServiceModel.Syndication.ServiceDocument" /> to use to parse the attribute extension.</param>
+        <param name="version">The syndication version to use when parsing.</param>
+        <summary>Attempts to parse an attribute extensions.</summary>
+        <returns>Returns a <see cref="T:System.Boolean" /> that indicates whether the attribute extension was parsed successfully.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -558,13 +566,13 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="ns">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="workspace">To be added.</param>
-        <param name="version">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the element.</param>
+        <param name="ns">The namespace of the element.</param>
+        <param name="value">The attribute to parse.</param>
+        <param name="workspace">The <see cref="T:System.ServiceModel.Syndication.Workspace" /> to use to parse the attribute.</param>
+        <param name="version">The syndication version to use when parsing.</param>
+        <summary>Attempts to parse an attribute extension</summary>
+        <returns>Returns a <see cref="T:System.Boolean" /> that indicates whether the attribute extension was parsed successfully.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -590,11 +598,11 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <param name="categories">To be added.</param>
-        <param name="version">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read from.</param>
+        <param name="categories">The <see cref="T:System.ServiceModel.Syndication.CategoriesDocument" /> to use to parse the element extension.</param>
+        <param name="version">The syndication version to use when parsing.</param>
+        <summary>Attempts to parse an element extension.</summary>
+        <returns>Returns a <see cref="T:System.Boolean" /> that indicates whether the element extension was parsed successfully.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -620,11 +628,11 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <param name="collection">To be added.</param>
-        <param name="version">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read from.</param>
+        <param name="collection">The <see cref="T:System.ServiceModel.Syndication.ResourceCollectionInfo" /> to use to parse the element extension.</param>
+        <param name="version">The syndication version to use when parsing.</param>
+        <summary>Attempts to parse an element extension.</summary>
+        <returns>Returns a <see cref="T:System.Boolean" /> that indicates whether the element extension was parsed successfully.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -650,11 +658,11 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <param name="document">To be added.</param>
-        <param name="version">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read from.</param>
+        <param name="document">The <see cref="T:System.ServiceModel.Syndication.ServiceDocument" /> to use to parse the element extension.</param>
+        <param name="version">The syndication version to use when parsing.</param>
+        <summary>Attempts to parse an element extension.</summary>
+        <returns>Returns a <see cref="T:System.Boolean" /> that indicates whether the element extension was successfully parsed.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -680,11 +688,11 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <param name="workspace">To be added.</param>
-        <param name="version">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read from.</param>
+        <param name="workspace">The <see cref="T:System.ServiceModel.Syndication.Workspace" /> to use to parse the element extension.</param>
+        <param name="version">The syndication version to use when parsing.</param>
+        <summary>Attempts to parse an element extension.</summary>
+        <returns>Returns a <see cref="T:System.Boolean" /> that indicates whether the element extension was parsed successfully.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -705,8 +713,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the version of the formatter.</summary>
+        <value>Returns a <see cref="T:System.String" /> that contains the version of the formatter.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -732,10 +740,10 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="categories">To be added.</param>
-        <param name="version">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write to.</param>
+        <param name="categories">The <see cref="T:System.ServiceModel.Syndication.CategoriesDocument" /> to use to write the element extensions.</param>
+        <param name="version">The syndication version to use when writing.</param>
+        <summary>Writes attribute extensions.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -761,10 +769,10 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="collection">To be added.</param>
-        <param name="version">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write to.</param>
+        <param name="collection">The <see cref="T:System.ServiceModel.Syndication.ResourceCollectionInfo" /> to use to write the attribute extensions.</param>
+        <param name="version">The syndication version to use when writing the attribute extensions.</param>
+        <summary>Writes attribute extensions.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -790,10 +798,10 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="document">To be added.</param>
-        <param name="version">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write to.</param>
+        <param name="document">The <see cref="T:System.ServiceModel.Syndication.ServiceDocument" /> to use to write the attribute extensions.</param>
+        <param name="version">The syndication version to use when writing the attribute extensions.</param>
+        <summary>Writes attribute extensions.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -819,10 +827,10 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="workspace">To be added.</param>
-        <param name="version">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write to.</param>
+        <param name="workspace">The <see cref="T:System.ServiceModel.Syndication.Workspace" /> to use to write the attribute extensions.</param>
+        <param name="version">The syndication version to use when writing the attribute extensions.</param>
+        <summary>Writes attribute extensions.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -848,10 +856,10 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="categories">To be added.</param>
-        <param name="version">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write to.</param>
+        <param name="categories">The  <see cref="T:System.ServiceModel.Syndication.CategoriesDocument" /> to use to write the element extensions.</param>
+        <param name="version">The syndication version to use when writing the element extensions.</param>
+        <summary>Writes element extensions.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -877,10 +885,10 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="collection">To be added.</param>
-        <param name="version">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write to.</param>
+        <param name="collection">The <see cref="T:System.ServiceModel.Syndication.ResourceCollectionInfo" /> to use to write the element extensions.</param>
+        <param name="version">The syndication version to use when writing the element extensions.</param>
+        <summary>Writes element extensions.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -906,10 +914,10 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="document">To be added.</param>
-        <param name="version">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write to.</param>
+        <param name="document">The <see cref="T:System.ServiceModel.Syndication.ServiceDocument" /> to use to write the element extensions.</param>
+        <param name="version">The syndication version to use when writing the element extensions.</param>
+        <summary>Writes element extensions.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -935,10 +943,10 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="workspace">To be added.</param>
-        <param name="version">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write to.</param>
+        <param name="workspace">The <see cref="T:System.ServiceModel.Syndication.Workspace" /> to use to write the element extensions.</param>
+        <param name="version">The syndication version to use when writing the element extensions.</param>
+        <summary>Writes element extensions.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -962,8 +970,8 @@
         <Parameter Name="writer" Type="System.Xml.XmlWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write to.</param>
+        <summary>Writes a service document to the specified <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

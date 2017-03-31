@@ -1,29 +1,35 @@
 ---
 uid: Microsoft.Build.Framework.XamlTypes.FileExtension
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.XamlTypes.FileExtension.GetSchemaObjectTypes
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.XamlTypes.FileExtension.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.XamlTypes.FileExtension.GetSchemaObjects(System.Type)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.XamlTypes.FileExtension.ContentType
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.XamlTypes.FileExtension.Name
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

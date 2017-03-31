@@ -36,9 +36,20 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="T">Specifies the type of data stored per-thread.</typeparam>
+    <summary>Provides thread-local storage of data.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use <xref:System.Threading.ThreadLocal%601>:  
+  
+ [!code-csharp[System.Threading.ThreadLocal#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.threadlocal/cs/threadlocal.cs#01)]
+ [!code-vb[System.Threading.ThreadLocal#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.threadlocal/vb/threadlocal.vb#01)]  
+  
+ ]]></format>
+    </remarks>
+    <threadsafe>With the exception of <see cref="M:System.Threading.ThreadLocal`1.Dispose" />, all public and protected members of <see cref="T:System.Threading.ThreadLocal`1" /> are thread-safe and may be used concurrently from multiple threads. The value returned for the <see cref="P:System.Threading.ThreadLocal`1.Value" /> and <see cref="P:System.Threading.ThreadLocal`1.IsValueCreated" /> properties is specific for the thread on which the property is accessed.</threadsafe>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -62,8 +73,17 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes the <see cref="T:System.Threading.ThreadLocal`1" /> instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value of `T` is used to initialize the instance when <xref:System.Threading.ThreadLocal%601.Value%2A> is accessed for the first time.  
+  
+ This constructor is equivalent to calling the <xref:System.Threading.ThreadLocal%601.%23ctor%28System.Boolean%29> constructor with a value of `false` for the `trackAllValues` argument.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -89,9 +109,17 @@
         <Parameter Name="trackAllValues" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="trackAllValues">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="trackAllValues">
+          <see langword="true" /> to track all values set on the instance and expose them through the <see cref="P:System.Threading.ThreadLocal`1.Values" /> property; <see langword="false" /> otherwise.</param>
+        <summary>Initializes the <see cref="T:System.Threading.ThreadLocal`1" /> instance and specifies whether all values are accessible from any thread.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `trackAllValues` is `false`, only the value of this instance for the current thread is accessible. Attempting to use the <xref:System.Threading.ThreadLocal%601.Values%2A> property to retrieve all values throws an <xref:System.InvalidOperationException> exception.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -117,9 +145,11 @@
         <Parameter Name="valueFactory" Type="System.Func&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="valueFactory">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="valueFactory">The  <see cref="T:System.Func`1" /> invoked to produce a lazily-initialized value when an attempt is made to retrieve <see cref="P:System.Threading.ThreadLocal`1.Value" /> without it having been previously initialized.</param>
+        <summary>Initializes the <see cref="T:System.Threading.ThreadLocal`1" /> instance with the specified <paramref name="valueFactory" /> function.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="valueFactory" /> is a null reference (Nothing in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -146,10 +176,20 @@
         <Parameter Name="trackAllValues" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="valueFactory">To be added.</param>
-        <param name="trackAllValues">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="valueFactory">The <see cref="T:System.Func`1" /> invoked to produce a lazily-initialized value when an attempt is made to retrieve <see cref="P:System.Threading.ThreadLocal`1.Value" /> without it having been previously initialized.</param>
+        <param name="trackAllValues">
+          <see langword="true" /> to track all values set on the instance and expose them through the <see cref="P:System.Threading.ThreadLocal`1.Values" /> property; <see langword="false" /> otherwise.</param>
+        <summary>Initializes the <see cref="T:System.Threading.ThreadLocal`1" /> instance with the specified <paramref name="valueFactory" /> function and a flag that indicates whether all values are accessible from any thread.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `trackAllValues` is `false`, only the value of this instance for the current thread is accessible. Attempting to use the <xref:System.Threading.ThreadLocal%601.Values%2A> property to retrieve all values throws an <xref:System.InvalidOperationException> exception.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="valueFactory" /> is a <see langword="null" /> reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -176,8 +216,20 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Releases all resources used by the current instance of the <see cref="T:System.Threading.ThreadLocal`1" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call `Dispose` when you are finished using the <xref:System.Threading.ThreadLocal%601>. The `Dispose` method leaves the <xref:System.Threading.ThreadLocal%601> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.Threading.ThreadLocal%601> so the garbage collector can reclaim the memory that the <xref:System.Threading.ThreadLocal%601> was occupying.  
+  
+ For more information, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+  
+> [!NOTE]
+>  Always call `Dispose` before you release your last reference to the <xref:System.Threading.ThreadLocal%601>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Threading.ThreadLocal%601> object's `Finalize` method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -206,9 +258,16 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="disposing">A Boolean value that indicates whether this method is being called due to a call to <see cref="M:System.Threading.ThreadLocal`1.Dispose" />.</param>
+        <summary>Releases the resources used by this <see cref="T:System.Threading.ThreadLocal`1" /> instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Unlike most of the members of <xref:System.Threading.ThreadLocal%601>, this method is not thread-safe.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -235,7 +294,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Releases the resources used by this <see cref="T:System.Threading.ThreadLocal`1" /> instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -262,9 +321,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets whether <see cref="P:System.Threading.ThreadLocal`1.Value" /> is initialized on the current thread.</summary>
+        <value>true if <see cref="P:System.Threading.ThreadLocal`1.Value" /> is initialized on the current thread; otherwise false.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.ThreadLocal`1" /> instance has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -291,9 +351,20 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates and returns a string representation of this instance for the current thread.</summary>
+        <returns>The result of calling <see cref="M:System.Object.ToString" /> on the <see cref="P:System.Threading.ThreadLocal`1.Value" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling this method forces initialization for the current thread, as is the case with accessing <xref:System.Threading.ThreadLocal%601.Value%2A> directly.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.ThreadLocal`1" /> instance has been disposed.</exception>
+        <exception cref="T:System.NullReferenceException">The <see cref="P:System.Threading.ThreadLocal`1.Value" /> for the current thread is a null reference (Nothing in Visual Basic).</exception>
+        <exception cref="T:System.InvalidOperationException">The initialization function attempted to reference <see cref="P:System.Threading.ThreadLocal`1.Value" /> recursively.</exception>
+        <exception cref="T:System.MissingMemberException">No default constructor is provided and no value factory is supplied.</exception>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -324,9 +395,19 @@
         <ReturnType>T</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the value of this instance for the current thread.</summary>
+        <value>Returns an instance of the object that this ThreadLocal is responsible for initializing.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this instance was not previously initialized for the current thread, accessing <xref:System.Threading.ThreadLocal%601.Value%2A> will attempt to initialize it. If an initialization function was supplied during the construction, that initialization will happen by invoking the function to retrieve the initial value for <xref:System.Threading.ThreadLocal%601.Value%2A>. Otherwise, the default value of will be used. If an exception is thrown, that exception is cached and thrown on each subsequent access of the property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.ThreadLocal`1" /> instance has been disposed.</exception>
+        <exception cref="T:System.InvalidOperationException">The initialization function attempted to reference <see cref="P:System.Threading.ThreadLocal`1.Value" /> recursively.</exception>
+        <exception cref="T:System.MissingMemberException">No default constructor is provided and no value factory is supplied.</exception>
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -352,9 +433,11 @@
         <ReturnType>System.Collections.Generic.IList&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a list for all of the values currently stored by all of the threads that have accessed this instance.</summary>
+        <value>A list for all of the values currently stored by all of the threads that have accessed this instance.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">Values stored by all threads are not available because this instance was initialized with the <paramref name="trackAllValues" /> argument set to <see langword="false" /> in the call to a class constructor.</exception>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.ThreadLocal`1" /> instance has been disposed.</exception>
       </Docs>
     </Member>
   </Members>

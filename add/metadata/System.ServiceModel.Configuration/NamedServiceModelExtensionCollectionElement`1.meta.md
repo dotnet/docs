@@ -1,14 +1,20 @@
 ---
 uid: System.ServiceModel.Configuration.NamedServiceModelExtensionCollectionElement`1
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.NamedServiceModelExtensionCollectionElement`1.Name
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.NamedServiceModelExtensionCollectionElement`1.Properties
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

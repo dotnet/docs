@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a collection of <see cref="T:System.ServiceModel.Configuration.XPathMessageFilterElement" /> objects. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,7 +34,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.XPathMessageFilterElementCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,10 +54,14 @@
         <Parameter Name="key" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">The key to look up in the collection.</param>
+        <summary>Determines whether the <see cref="T:System.ServiceModel.Configuration.XPathMessageFilterElementCollection" /> contains an element with the specified key.</summary>
+        <returns>
+          <see langword="true" /> if the key exists in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The type associated with <paramref name="key" /> is invalid.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetElementKey">
@@ -98,9 +102,9 @@
         <Parameter Name="key" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="key">The key to look up in the collection.</param>
+        <summary>Gets an item with the specified key from the collection.</summary>
+        <value>The <see cref="T:System.ServiceModel.Configuration.XPathMessageFilterElement" /> associated with the specified <paramref name="key" /> in the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

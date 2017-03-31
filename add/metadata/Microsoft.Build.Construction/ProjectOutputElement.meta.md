@@ -1,44 +1,53 @@
 ---
 uid: Microsoft.Build.Construction.ProjectOutputElement
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.ProjectOutputElement.ItemType
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.ProjectOutputElement.IsOutputProperty
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.ProjectOutputElement.PropertyNameLocation
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.ProjectOutputElement.PropertyName
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.ProjectOutputElement.TaskParameterLocation
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.ProjectOutputElement.ItemTypeLocation
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.ProjectOutputElement.IsOutputItem
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.ProjectOutputElement.TaskParameter
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

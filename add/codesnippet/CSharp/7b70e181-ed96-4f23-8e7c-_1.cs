@@ -1,1 +1,0 @@
-        myNewColl = this.Sort(new string[]{"D", "B"});

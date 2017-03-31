@@ -1,14 +1,17 @@
 ---
 uid: System.Web.DynamicData.IFilterExpressionProvider
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.IFilterExpressionProvider.Initialize(System.Web.UI.WebControls.IQueryableDataSource)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.IFilterExpressionProvider.GetQueryable(System.Linq.IQueryable)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

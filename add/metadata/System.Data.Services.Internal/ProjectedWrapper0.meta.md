@@ -1,9 +1,13 @@
 ---
 uid: System.Data.Services.Internal.ProjectedWrapper0
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Services.Internal.ProjectedWrapper0.#ctor
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

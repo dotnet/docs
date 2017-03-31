@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.RegisteredDisposeScript
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.RegisteredDisposeScript.Control
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.RegisteredDisposeScript.Script
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

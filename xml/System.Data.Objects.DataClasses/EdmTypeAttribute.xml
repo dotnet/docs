@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Base class for attributes that define how types in the object layer are mapped to entity types and complex types in the conceptual model.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.Objects.DataClasses.EdmEntityTypeAttribute> and <xref:System.Data.Objects.DataClasses.EdmComplexTypeAttribute> are derived from <xref:System.Data.Objects.DataClasses.EdmTypeAttribute>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Name">
@@ -28,9 +35,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>The name of the type in the conceptual schema that maps to the class to which this attribute is applied.</summary>
+        <value>A <see cref="T:System.String" /> that is the name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The name of the type must correspond to the name of the entity type or complex type in the conceptual schema.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NamespaceName">
@@ -46,8 +60,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The namespace name of the entity object type or complex type in the conceptual schema that maps to this type.</summary>
+        <value>A <see cref="T:System.String" /> that is the namespace name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

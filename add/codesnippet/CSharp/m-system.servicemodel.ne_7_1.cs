@@ -1,1 +1,0 @@
-		BindingElementCollection bCollection = binding.CreateBindingElements();

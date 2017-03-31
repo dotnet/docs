@@ -1,19 +1,27 @@
 ---
 uid: System.Workflow.Activities.Rules.RuleReadWriteAttribute
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.Rules.RuleReadWriteAttribute.#ctor(System.String,System.Workflow.Activities.Rules.RuleAttributeTarget)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.Rules.RuleReadWriteAttribute.Target
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.Rules.RuleReadWriteAttribute.Path
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

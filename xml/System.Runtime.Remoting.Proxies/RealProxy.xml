@@ -17,8 +17,35 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides base functionality for proxies.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Remoting.Proxies.RealProxy> class is the `abstract` base class from which proxies must derive.  
+  
+ A client that uses an object across any kind of a remoting boundary is actually using a transparent proxy for the object. The transparent proxy provides the illusion that the actual object resides in the client's space. It achieves this by forwarding calls made on it to the real object using the remoting infrastructure.  
+  
+ The transparent proxy is itself housed by an instance of a managed runtime class of type <xref:System.Runtime.Remoting.Proxies.RealProxy>. The <xref:System.Runtime.Remoting.Proxies.RealProxy> implements a part of the functionality that is needed to forward the operations from the transparent proxy. Note that a proxy object inherits the associated semantics of managed objects such as garbage collection, support for fields and methods, and can be extended to form new classes. The proxy has a dual nature: it acts as an object of the same class as the remote object (transparent proxy), and it is a managed object itself.  
+  
+ A proxy object can be used without regard to any remoting subdivisions within a <xref:System.AppDomain>.  
+  
+> [!NOTE]
+>  This class makes a link demand and an inheritance demand at the class level. A <xref:System.Security.SecurityException> is thrown when either the immediate caller or the derived class does not have infrastructure permission. For details about security demands, see [Link Demands](../Topic/Link%20Demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
+  
+   
+  
+## Examples  
+ [!code-cpp[ChannelServices_SyncDispatchMessage#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ChannelServices_SyncDispatchMessage/CPP/channelservices_syncdispatchmessage_client.cpp#1)]
+ [!code-csharp[ChannelServices_SyncDispatchMessage#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ChannelServices_SyncDispatchMessage/CS/channelservices_syncdispatchmessage_client.cs#1)]
+ [!code-vb[ChannelServices_SyncDispatchMessage#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ChannelServices_SyncDispatchMessage/VB/channelservices_syncdispatchmessage_client.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Security.Permissions.SecurityPermission">For operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission Value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+    <block subset="none" type="overrides">
+      <para>When you inherit from <see cref="T:System.Runtime.Remoting.Proxies.RealProxy" />, you must override the <see cref="M:System.Runtime.Remoting.Proxies.RealProxy.Invoke(System.Runtime.Remoting.Messaging.IMessage)" /> method.</para>
+    </block>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,8 +60,17 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Proxies.RealProxy" /> class with default values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[CustomProxy_Attribute_RealProxy#12](~/samples/snippets/cpp/VS_Snippets_Remoting/CustomProxy_Attribute_RealProxy/CPP/customproxy_sample.cpp#12)]
+ [!code-csharp[CustomProxy_Attribute_RealProxy#12](~/samples/snippets/csharp/VS_Snippets_Remoting/CustomProxy_Attribute_RealProxy/CS/customproxy_sample.cs#12)]
+ [!code-vb[CustomProxy_Attribute_RealProxy#12](~/samples/snippets/visualbasic/VS_Snippets_Remoting/CustomProxy_Attribute_RealProxy/VB/customproxy_sample.vb#12)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -51,9 +87,29 @@
         <Parameter Name="classToProxy" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="classToProxy">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="classToProxy">The <see cref="T:System.Type" /> of the remote object for which to create a proxy.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Proxies.RealProxy" /> class that represents a remote object of the specified <see cref="T:System.Type" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The current method creates a transparent proxy, which can be accessed through the <xref:System.Runtime.Remoting.Proxies.RealProxy.GetTransparentProxy%2A> method.  
+  
+ A client that uses an object across any kind of a remoting boundary is actually using a transparent proxy for the object. The transparent proxy gives the impression that the actual object resides in the client's space. It achieves this by forwarding calls made on it to the real object using the remoting infrastructure.  
+  
+ The transparent proxy is housed by an instance of a managed runtime class <xref:System.Runtime.Remoting.Proxies.RealProxy>. The <xref:System.Runtime.Remoting.Proxies.RealProxy> implements a part of the functionality that is needed to forward the operations from the transparent proxy. Note that a proxy object inherits the associated semantics of managed objects such as garbage collection and support for fields and methods, and can be extended to form new classes. The proxy has a dual nature: it acts as an object of the same class as the remote object (transparent proxy), and is a managed object itself.  
+  
+   
+  
+## Examples  
+ [!code-cpp[CustomProxy_Attribute_RealProxy#10](~/samples/snippets/cpp/VS_Snippets_Remoting/CustomProxy_Attribute_RealProxy/CPP/customproxy_sample.cpp#10)]
+ [!code-csharp[CustomProxy_Attribute_RealProxy#10](~/samples/snippets/csharp/VS_Snippets_Remoting/CustomProxy_Attribute_RealProxy/CS/customproxy_sample.cs#10)]
+ [!code-vb[CustomProxy_Attribute_RealProxy#10](~/samples/snippets/visualbasic/VS_Snippets_Remoting/CustomProxy_Attribute_RealProxy/VB/customproxy_sample.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="classToProxy" /> is not an interface, and is not derived from <see cref="T:System.MarshalByRefObject" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -72,11 +128,21 @@
         <Parameter Name="stubData" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="classToProxy">To be added.</param>
-        <param name="stub">To be added.</param>
-        <param name="stubData">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="classToProxy">The <see cref="T:System.Type" /> of the remote object for which to create a proxy.</param>
+        <param name="stub">A stub to associate with the new proxy instance.</param>
+        <param name="stubData">The stub data to set for the specified stub and the new proxy instance.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Proxies.RealProxy" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The stub data is used by custom proxy users to decide what to do with an incoming method call. For example, the stub data might be information about the server's context that you can use to determine whether to execute the call locally, or send it through the remoting infrastructure.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="classToProxy" /> is not an interface, and is not derived from <see cref="T:System.MarshalByRefObject" />.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">For calling unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.</permission>
       </Docs>
     </Member>
     <Member MemberName="AttachServer">
@@ -96,9 +162,11 @@
         <Parameter Name="s" Type="System.MarshalByRefObject" />
       </Parameters>
       <Docs>
-        <param name="s">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="s">The <see cref="T:System.MarshalByRefObject" /> that the current proxy instance represents.</param>
+        <summary>Attaches the current proxy instance to the specified remote <see cref="T:System.MarshalByRefObject" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller does not have UnmanagedCode permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">For the ability to call unmanaged code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
       </Docs>
     </Member>
     <Member MemberName="CreateObjRef">
@@ -118,10 +186,19 @@
         <Parameter Name="requestedType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="requestedType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="requestedType">The object type that an <see cref="T:System.Runtime.Remoting.ObjRef" /> is created for.</param>
+        <summary>Creates an <see cref="T:System.Runtime.Remoting.ObjRef" /> for the specified object type, and registers it with the remoting infrastructure as a client-activated object.</summary>
+        <returns>A new instance of <see cref="T:System.Runtime.Remoting.ObjRef" /> that is created for the specified type.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[CustomProxy_Attribute_RealProxy#6](~/samples/snippets/cpp/VS_Snippets_Remoting/CustomProxy_Attribute_RealProxy/CPP/customproxy_sample.cpp#6)]
+ [!code-csharp[CustomProxy_Attribute_RealProxy#6](~/samples/snippets/csharp/VS_Snippets_Remoting/CustomProxy_Attribute_RealProxy/CS/customproxy_sample.cs#6)]
+ [!code-vb[CustomProxy_Attribute_RealProxy#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/CustomProxy_Attribute_RealProxy/VB/customproxy_sample.vb#6)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DetachServer">
@@ -139,9 +216,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Detaches the current proxy instance from the remote server object that it represents.</summary>
+        <returns>The detached server object.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller does not have UnmanagedCode permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">For the ability to call unmanaged code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
       </Docs>
     </Member>
     <Member MemberName="GetCOMIUnknown">
@@ -161,10 +240,27 @@
         <Parameter Name="fIsMarshalled" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="fIsMarshalled">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="fIsMarshalled">
+          <see langword="true" /> if the object reference is requested for marshaling to a remote location; <see langword="false" /> if the object reference is requested for communication with unmanaged objects in the current process through COM.</param>
+        <summary>Requests an unmanaged reference to the object represented by the current proxy instance.</summary>
+        <returns>A pointer to a [COM Callable Wrapper](../Topic/COM%20Callable%20Wrapper.md) if the object reference is requested for communication with unmanaged objects in the current process through COM, or a pointer to a cached or newly generated <see langword="IUnknown" /> COM interface if the object reference is requested for marshaling to a remote location.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the proxy is requested for marshaling, then an `IUnknown` interface for the object represented by the current proxy instance is returned. If an `IUnknown` was previously cached by the <xref:System.Runtime.Remoting.Proxies.RealProxy.SetCOMIUnknown%2A> method, then that instance is returned; otherwise, a new instance is returned.  
+  
+ If the proxy is requested not for marshaling but for communication with unmanaged objects in the current process, then a [COM Callable Wrapper](../Topic/COM%20Callable%20Wrapper.md) (CCW), which can be used in the current process for communication through COM, is returned.  
+  
+   
+  
+## Examples  
+ [!code-cpp[RealProxy_Sample#2](~/samples/snippets/cpp/VS_Snippets_Remoting/RealProxy_Sample/CPP/realproxy_sample.cpp#2)]
+ [!code-csharp[RealProxy_Sample#2](~/samples/snippets/csharp/VS_Snippets_Remoting/RealProxy_Sample/CS/realproxy_sample.cs#2)]
+ [!code-vb[RealProxy_Sample#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/RealProxy_Sample/VB/realproxy_sample.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -185,10 +281,22 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> into which the transparent proxy is serialized.</param>
+        <param name="context">The source and destination of the serialization.</param>
+        <summary>Adds the transparent proxy of the object represented by the current instance of <see cref="T:System.Runtime.Remoting.Proxies.RealProxy" /> to the specified <see cref="T:System.Runtime.Serialization.SerializationInfo" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[CustomProxy_Attribute_RealProxy#7](~/samples/snippets/cpp/VS_Snippets_Remoting/CustomProxy_Attribute_RealProxy/CPP/customproxy_sample.cpp#7)]
+ [!code-csharp[CustomProxy_Attribute_RealProxy#7](~/samples/snippets/csharp/VS_Snippets_Remoting/CustomProxy_Attribute_RealProxy/CS/customproxy_sample.cs#7)]
+ [!code-vb[CustomProxy_Attribute_RealProxy#7](~/samples/snippets/visualbasic/VS_Snippets_Remoting/CustomProxy_Attribute_RealProxy/VB/customproxy_sample.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> or <paramref name="context" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.SecurityException">The immediate caller does not have SerializationFormatter permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">For providing serialization services. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter" /></permission>
       </Docs>
     </Member>
     <Member MemberName="GetProxiedType">
@@ -206,9 +314,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the <see cref="T:System.Type" /> of the object that the current instance of <see cref="T:System.Runtime.Remoting.Proxies.RealProxy" /> represents.</summary>
+        <returns>The <see cref="T:System.Type" /> of the object that the current instance of <see cref="T:System.Runtime.Remoting.Proxies.RealProxy" /> represents.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[CustomProxy_Attribute_RealProxy#10](~/samples/snippets/cpp/VS_Snippets_Remoting/CustomProxy_Attribute_RealProxy/CPP/customproxy_sample.cpp#10)]
+ [!code-csharp[CustomProxy_Attribute_RealProxy#10](~/samples/snippets/csharp/VS_Snippets_Remoting/CustomProxy_Attribute_RealProxy/CS/customproxy_sample.cs#10)]
+ [!code-vb[CustomProxy_Attribute_RealProxy#10](~/samples/snippets/visualbasic/VS_Snippets_Remoting/CustomProxy_Attribute_RealProxy/VB/customproxy_sample.vb#10)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetStubData">
@@ -228,10 +345,26 @@
         <Parameter Name="rp" Type="System.Runtime.Remoting.Proxies.RealProxy" />
       </Parameters>
       <Docs>
-        <param name="rp">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="rp">The proxy for which stub data is requested.</param>
+        <summary>Retrieves stub data that is stored for the specified proxy.</summary>
+        <returns>Stub data for the specified proxy.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The stub data is used by custom proxy users to decide what to do with an incoming method call. For example, the stub data might be information about the server's context that you can use to determine whether to execute the call locally, or send it through the remoting infrastructure.  
+  
+   
+  
+## Examples  
+ [!code-cpp[CustomProxy_Attribute_RealProxy#9](~/samples/snippets/cpp/VS_Snippets_Remoting/CustomProxy_Attribute_RealProxy/CPP/customproxy_sample.cpp#9)]
+ [!code-csharp[CustomProxy_Attribute_RealProxy#9](~/samples/snippets/csharp/VS_Snippets_Remoting/CustomProxy_Attribute_RealProxy/CS/customproxy_sample.cs#9)]
+ [!code-vb[CustomProxy_Attribute_RealProxy#9](~/samples/snippets/visualbasic/VS_Snippets_Remoting/CustomProxy_Attribute_RealProxy/VB/customproxy_sample.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller does not have UnmanagedCode permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">For the ability to call unmanaged code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
       </Docs>
     </Member>
     <Member MemberName="GetTransparentProxy">
@@ -249,9 +382,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the transparent proxy for the current instance of <see cref="T:System.Runtime.Remoting.Proxies.RealProxy" />.</summary>
+        <returns>The transparent proxy for the current proxy instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[CustomProxy_Attribute_RealProxy#8](~/samples/snippets/cpp/VS_Snippets_Remoting/CustomProxy_Attribute_RealProxy/CPP/customproxy_sample.cpp#8)]
+ [!code-csharp[CustomProxy_Attribute_RealProxy#8](~/samples/snippets/csharp/VS_Snippets_Remoting/CustomProxy_Attribute_RealProxy/CS/customproxy_sample.cs#8)]
+ [!code-vb[CustomProxy_Attribute_RealProxy#8](~/samples/snippets/visualbasic/VS_Snippets_Remoting/CustomProxy_Attribute_RealProxy/VB/customproxy_sample.vb#8)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetUnwrappedServer">
@@ -269,9 +411,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the server object that is represented by the current proxy instance.</summary>
+        <returns>The server object that is represented by the current proxy instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Remoting.Proxies.RealProxy.GetUnwrappedServer%2A> method is used in scenarios involving an external <xref:System.Runtime.Remoting.Contexts.Context> in the same <xref:System.AppDomain>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller does not have UnmanagedCode permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">For the ability to call unmanaged code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
       </Docs>
     </Member>
     <Member MemberName="InitializeServerObject">
@@ -296,10 +447,26 @@
         <Parameter Name="ctorMsg" Type="System.Runtime.Remoting.Activation.IConstructionCallMessage" />
       </Parameters>
       <Docs>
-        <param name="ctorMsg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="ctorMsg">A construction call message that contains the constructor parameters for the new instance of the remote object that is represented by the current <see cref="T:System.Runtime.Remoting.Proxies.RealProxy" />. Can be <see langword="null" />.</param>
+        <summary>Initializes a new instance of the object <see cref="T:System.Type" /> of the remote object that the current instance of <see cref="T:System.Runtime.Remoting.Proxies.RealProxy" /> represents with the specified <see cref="T:System.Runtime.Remoting.Activation.IConstructionCallMessage" />.</summary>
+        <returns>The result of the construction request.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the `ctorMsg` parameter is `null`, then the <xref:System.Runtime.Remoting.Proxies.RealProxy.InitializeServerObject%2A> method calls the default constructor for the new instance of the remote object that is represented by the current <xref:System.Runtime.Remoting.Proxies.RealProxy>.  
+  
+   
+  
+## Examples  
+ [!code-cpp[CustomProxy_Attribute_RealProxy#5](~/samples/snippets/cpp/VS_Snippets_Remoting/CustomProxy_Attribute_RealProxy/CPP/customproxy_sample.cpp#5)]
+ [!code-csharp[CustomProxy_Attribute_RealProxy#5](~/samples/snippets/csharp/VS_Snippets_Remoting/CustomProxy_Attribute_RealProxy/CS/customproxy_sample.cs#5)]
+ [!code-vb[CustomProxy_Attribute_RealProxy#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/CustomProxy_Attribute_RealProxy/VB/customproxy_sample.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller does not have UnmanagedCode permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">For the ability to call unmanaged code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
       </Docs>
     </Member>
     <Member MemberName="Invoke">
@@ -319,10 +486,26 @@
         <Parameter Name="msg" Type="System.Runtime.Remoting.Messaging.IMessage" />
       </Parameters>
       <Docs>
-        <param name="msg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="msg">A <see cref="T:System.Runtime.Remoting.Messaging.IMessage" /> that contains a <see cref="T:System.Collections.IDictionary" /> of information about the method call.</param>
+        <summary>When overridden in a derived class, invokes the method that is specified in the provided <see cref="T:System.Runtime.Remoting.Messaging.IMessage" /> on the remote object that is represented by the current instance.</summary>
+        <returns>The message returned by the invoked method, containing the return value and any <see langword="out" /> or <see langword="ref" /> parameters.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the transparent proxy that is backed by the <xref:System.Runtime.Remoting.Proxies.RealProxy> is called, it delegates the calls to the <xref:System.Runtime.Remoting.Proxies.RealProxy.Invoke%2A> method. The <xref:System.Runtime.Remoting.Proxies.RealProxy.Invoke%2A> method transforms the message in the `msg` parameter into a <xref:System.Runtime.Remoting.Messaging.IMethodCallMessage>, and sends it to the remote object that is represented by the current instance of <xref:System.Runtime.Remoting.Proxies.RealProxy>.  
+  
+ The <xref:System.Runtime.Remoting.Messaging.IMessage> parameter provides a dictionary through the <xref:System.Runtime.Remoting.Messaging.IMessage.Properties%2A?displayProperty=fullName> property. The dictionary contains name/value pairs of information about the method call, such as the name of the method called and its parameters.  
+  
+   
+  
+## Examples  
+ [!code-cpp[CustomProxy_Attribute_RealProxy#4](~/samples/snippets/cpp/VS_Snippets_Remoting/CustomProxy_Attribute_RealProxy/CPP/customproxy_sample.cpp#4)]
+ [!code-csharp[CustomProxy_Attribute_RealProxy#4](~/samples/snippets/csharp/VS_Snippets_Remoting/CustomProxy_Attribute_RealProxy/CS/customproxy_sample.cs#4)]
+ [!code-vb[CustomProxy_Attribute_RealProxy#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/CustomProxy_Attribute_RealProxy/VB/customproxy_sample.vb#4)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetCOMIUnknown">
@@ -342,9 +525,25 @@
         <Parameter Name="i" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="i">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="i">A pointer to the <see langword="IUnknown" /> interface for the object that is represented by the current proxy instance.</param>
+        <summary>Stores an unmanaged proxy of the object that is represented by the current instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When an unmanaged proxy attempts to communicate with the common language runtime through COM, the runtime resolves the remote object that is represented by the unmanaged proxy. If the remote object is managed and also resides in a common language environment, then instead of communicating with it through distributed COM, the object is sent to the current process.  
+  
+ If the remote object is not derived from <xref:System.MarshalByRefObject>, then it is serialized and copied to the current location. If it is derived from <xref:System.MarshalByRefObject>, then it returns a transparent proxy, and the remoting infrastructure caches the unmanaged proxy (the `IUnknown` interface) in the transparent proxy for future use.  
+  
+   
+  
+## Examples  
+ [!code-cpp[RealProxy_Sample#3](~/samples/snippets/cpp/VS_Snippets_Remoting/RealProxy_Sample/CPP/realproxy_sample.cpp#3)]
+ [!code-csharp[RealProxy_Sample#3](~/samples/snippets/csharp/VS_Snippets_Remoting/RealProxy_Sample/CS/realproxy_sample.cs#3)]
+ [!code-vb[RealProxy_Sample#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/RealProxy_Sample/VB/realproxy_sample.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetStubData">
@@ -365,10 +564,26 @@
         <Parameter Name="stubData" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="rp">To be added.</param>
-        <param name="stubData">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="rp">The proxy for which to set stub data.</param>
+        <param name="stubData">The new stub data.</param>
+        <summary>Sets the stub data for the specified proxy.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The stub data is used by custom proxy users to decide what to do with an incoming method call. For example, the stub data might be information about the server's context that you can use to determine whether to execute the call locally, or send it through the remoting infrastructure.  
+  
+   
+  
+## Examples  
+ [!code-cpp[CustomProxy_Attribute_RealProxy#3](~/samples/snippets/cpp/VS_Snippets_Remoting/CustomProxy_Attribute_RealProxy/CPP/customproxy_sample.cpp#3)]
+ [!code-csharp[CustomProxy_Attribute_RealProxy#3](~/samples/snippets/csharp/VS_Snippets_Remoting/CustomProxy_Attribute_RealProxy/CS/customproxy_sample.cs#3)]
+ [!code-vb[CustomProxy_Attribute_RealProxy#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/CustomProxy_Attribute_RealProxy/VB/customproxy_sample.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller does not have UnmanagedCode permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">For the ability to call unmanaged code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
       </Docs>
     </Member>
     <Member MemberName="SupportsInterface">
@@ -388,10 +603,26 @@
         <Parameter Name="iid" Type="System.Guid&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="iid">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="iid">A reference to the requested interface.</param>
+        <summary>Requests a COM interface with the specified ID.</summary>
+        <returns>A pointer to the requested interface.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Remoting.Proxies.RealProxy.SupportsInterface%2A> method allows the current proxy instance to implement additional COM interfaces on behalf of the server object that the current instance represents. The current method generates the requested interface and returns a pointer to it. The types of COM interfaces that can be generated by this method depend on the proxy type, which in turn might depend on the type of the server object that the current proxy instance represents.  
+  
+ For more information, see <xref:System.Runtime.Remoting.Proxies.ProxyAttribute>.  
+  
+   
+  
+## Examples  
+ [!code-cpp[RealProxy_Sample#1](~/samples/snippets/cpp/VS_Snippets_Remoting/RealProxy_Sample/CPP/realproxy_sample.cpp#1)]
+ [!code-csharp[RealProxy_Sample#1](~/samples/snippets/csharp/VS_Snippets_Remoting/RealProxy_Sample/CS/realproxy_sample.cs#1)]
+ [!code-vb[RealProxy_Sample#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/RealProxy_Sample/VB/realproxy_sample.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

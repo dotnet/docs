@@ -15,8 +15,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>A service behavior that enables your service to use buffered receive processing.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The buffered receive feature enables a workflow service to process out-of-order messages. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Out-of-Order Message Processing](../Topic/Out-of-Order%20Message%20Processing.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +37,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Activities.Description.BufferedReceiveServiceBehavior" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,11 +60,11 @@
         <Parameter Name="bindingParameters" Type="System.ServiceModel.Channels.BindingParameterCollection" />
       </Parameters>
       <Docs>
-        <param name="serviceDescription">To be added.</param>
-        <param name="serviceHostBase">To be added.</param>
-        <param name="endpoints">To be added.</param>
-        <param name="bindingParameters">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceDescription">The service description.</param>
+        <param name="serviceHostBase">The service host.</param>
+        <param name="endpoints">The endpoints exposed by the service.</param>
+        <param name="bindingParameters">The binding parameters required to implement the behavior.</param>
+        <summary>Implements the <see cref="M:System.ServiceModel.Description.IServiceBehavior.AddBindingParameters(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase,System.Collections.ObjectModel.Collection{System.ServiceModel.Description.ServiceEndpoint},System.ServiceModel.Channels.BindingParameterCollection)" /> method.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,9 +85,9 @@
         <Parameter Name="serviceHostBase" Type="System.ServiceModel.ServiceHostBase" />
       </Parameters>
       <Docs>
-        <param name="serviceDescription">To be added.</param>
-        <param name="serviceHostBase">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceDescription">The service description.</param>
+        <param name="serviceHostBase">The service host.</param>
+        <summary>Implements the <see cref="M:System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)" /> method.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,9 +104,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that specifies the maximum number of pending messages allowed for each channel.</summary>
+        <value>The maximum number of pending messages.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is 512. This property limits the number of out-of-order messages that can be received by a workflow service.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Validate">
@@ -119,9 +133,9 @@
         <Parameter Name="serviceHostBase" Type="System.ServiceModel.ServiceHostBase" />
       </Parameters>
       <Docs>
-        <param name="serviceDescription">To be added.</param>
-        <param name="serviceHostBase">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceDescription">The service description.</param>
+        <param name="serviceHostBase">The service host.</param>
+        <summary>Implements the <see cref="M:System.ServiceModel.Description.IServiceBehavior.Validate(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)" /> method.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

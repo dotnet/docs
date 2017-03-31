@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.LocatorFlags" /> enumeration specifies data required to locate a domain controller.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>System.DirectoryServices.Protocols.LocatorFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the domain controller returned should not be the current computer. The value is equal to 16384 or 0x4000.</summary>
       </Docs>
     </Member>
     <Member MemberName="DirectoryServicesPreferred">
@@ -48,7 +48,7 @@
         <ReturnType>System.DirectoryServices.Protocols.LocatorFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Attempts to find a domain controller that supports directory service functions ([!INCLUDE[Win2kFamily](~/includes/win2kfamily-md.md)] or later). The value is equal to 32 or 0x20.</summary>
       </Docs>
     </Member>
     <Member MemberName="DirectoryServicesRequired">
@@ -64,7 +64,7 @@
         <ReturnType>System.DirectoryServices.Protocols.LocatorFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Requires that the returned domain controller support [!INCLUDE[Win2kFamily](~/includes/win2kfamily-md.md)] or later. The value is equal to 16 or 0x10.</summary>
       </Docs>
     </Member>
     <Member MemberName="ForceRediscovery">
@@ -80,7 +80,7 @@
         <ReturnType>System.DirectoryServices.Protocols.LocatorFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Forces the cached domain controller to be ignored. The value is equal to 1 or 0x1.</summary>
       </Docs>
     </Member>
     <Member MemberName="GCRequired">
@@ -96,7 +96,7 @@
         <ReturnType>System.DirectoryServices.Protocols.LocatorFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Requires that the returned domain controller be a global catalog server for the forest of domains with this domain as the root. The value is equal to 64 or 0x40.</summary>
       </Docs>
     </Member>
     <Member MemberName="GoodTimeServerPreferred">
@@ -112,7 +112,7 @@
         <ReturnType>System.DirectoryServices.Protocols.LocatorFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Attempts to find a domain controller that is a reliable time server. The value is equal to 8192 or 0x2000.</summary>
       </Docs>
     </Member>
     <Member MemberName="IPRequired">
@@ -128,7 +128,7 @@
         <ReturnType>System.DirectoryServices.Protocols.LocatorFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the Internet protocol address of the domain controller in the DomainControllerAddress member of DomainControllerInfo. The value is equal to 512 or 0x200.</summary>
       </Docs>
     </Member>
     <Member MemberName="IsDnsName">
@@ -144,7 +144,7 @@
         <ReturnType>System.DirectoryServices.Protocols.LocatorFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the DomainName parameter is a DNS name. The value is equal to 131072 or 0x20000.</summary>
       </Docs>
     </Member>
     <Member MemberName="IsFlatName">
@@ -160,7 +160,7 @@
         <ReturnType>System.DirectoryServices.Protocols.LocatorFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the DomainName parameter is a flat name. The value is equal to 65536 or 0x10000.</summary>
       </Docs>
     </Member>
     <Member MemberName="KdcRequired">
@@ -176,7 +176,7 @@
         <ReturnType>System.DirectoryServices.Protocols.LocatorFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Requires that the returned domain controller be currently running the Kerberos Key Distribution Center service. The value is equal to 1024 or 0x400.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -192,7 +192,7 @@
         <ReturnType>System.DirectoryServices.Protocols.LocatorFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No data required. The value is equal to 0 or 0x0.</summary>
       </Docs>
     </Member>
     <Member MemberName="OnlyLdapNeeded">
@@ -208,7 +208,7 @@
         <ReturnType>System.DirectoryServices.Protocols.LocatorFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the server returned is an LDAP server. The value is equal to 32768 or 0x8000.</summary>
       </Docs>
     </Member>
     <Member MemberName="PdcRequired">
@@ -224,7 +224,7 @@
         <ReturnType>System.DirectoryServices.Protocols.LocatorFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Requires that the returned domain controller be the primary domain controller for the domain. The value is equal to 128 or 0x80.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReturnDnsName">
@@ -240,7 +240,7 @@
         <ReturnType>System.DirectoryServices.Protocols.LocatorFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the name returned should be a DNS name. The value is equal to 1073741824 or 0x40000000.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReturnFlatName">
@@ -256,7 +256,7 @@
         <ReturnType>System.DirectoryServices.Protocols.LocatorFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the name should be a flat name. The value is equal to 2147483648 or 0x80000000.</summary>
       </Docs>
     </Member>
     <Member MemberName="TimeServerRequired">
@@ -272,7 +272,7 @@
         <ReturnType>System.DirectoryServices.Protocols.LocatorFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Requires that the returned domain controller be currently running the Windows Time Service. The value is equal to 2048 or 0x800.</summary>
       </Docs>
     </Member>
     <Member MemberName="WriteableRequired">
@@ -288,7 +288,7 @@
         <ReturnType>System.DirectoryServices.Protocols.LocatorFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Requires that the returned domain controller be writable. The value is equal to 4096 or 0x1000.</summary>
       </Docs>
     </Member>
   </Members>

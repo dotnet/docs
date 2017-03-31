@@ -38,24 +38,24 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="T1">To be added.</typeparam>
-    <typeparam name="T2">To be added.</typeparam>
-    <typeparam name="T3">To be added.</typeparam>
-    <typeparam name="T4">To be added.</typeparam>
-    <typeparam name="T5">To be added.</typeparam>
-    <typeparam name="T6">To be added.</typeparam>
-    <typeparam name="T7">To be added.</typeparam>
-    <typeparam name="T8">To be added.</typeparam>
-    <typeparam name="T9">To be added.</typeparam>
-    <typeparam name="T10">To be added.</typeparam>
-    <typeparam name="T11">To be added.</typeparam>
-    <typeparam name="T12">To be added.</typeparam>
-    <typeparam name="T13">To be added.</typeparam>
-    <typeparam name="T14">To be added.</typeparam>
-    <typeparam name="T15">To be added.</typeparam>
-    <typeparam name="T16">To be added.</typeparam>
-    <typeparam name="TResult">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="T1">The type of the first <see cref="T:System.Activities.InArgument`1" /> whose value is passed to the <see cref="T:System.Activities.ActivityFunc`17" />.</typeparam>
+    <typeparam name="T2">The type of the second <see cref="T:System.Activities.InArgument`1" /> whose value is passed to the <see cref="T:System.Activities.ActivityFunc`17" />.</typeparam>
+    <typeparam name="T3">The type of the third <see cref="T:System.Activities.InArgument`1" /> whose value is passed to the <see cref="T:System.Activities.ActivityFunc`17" />.</typeparam>
+    <typeparam name="T4">The type of the fourth <see cref="T:System.Activities.InArgument`1" /> whose value is passed to the <see cref="T:System.Activities.ActivityFunc`17" />.</typeparam>
+    <typeparam name="T5">The type of the fifth <see cref="T:System.Activities.InArgument`1" /> whose value is passed to the <see cref="T:System.Activities.ActivityFunc`17" />.</typeparam>
+    <typeparam name="T6">The type of the sixth <see cref="T:System.Activities.InArgument`1" /> whose value is passed to the <see cref="T:System.Activities.ActivityFunc`17" />.</typeparam>
+    <typeparam name="T7">The type of the seventh <see cref="T:System.Activities.InArgument`1" /> whose value is passed to the <see cref="T:System.Activities.ActivityFunc`17" />.</typeparam>
+    <typeparam name="T8">The type of the eighth <see cref="T:System.Activities.InArgument`1" /> whose value is passed to the <see cref="T:System.Activities.ActivityFunc`17" />.</typeparam>
+    <typeparam name="T9">The type of the ninth <see cref="T:System.Activities.InArgument`1" /> whose value is passed to the <see cref="T:System.Activities.ActivityFunc`17" />.</typeparam>
+    <typeparam name="T10">The type of the tenth <see cref="T:System.Activities.InArgument`1" /> whose value is passed to the <see cref="T:System.Activities.ActivityFunc`17" />.</typeparam>
+    <typeparam name="T11">The type of the eleventh <see cref="T:System.Activities.InArgument`1" /> whose value is passed to the <see cref="T:System.Activities.ActivityFunc`17" />.</typeparam>
+    <typeparam name="T12">The type of the twelfth <see cref="T:System.Activities.InArgument`1" /> whose value is passed to the <see cref="T:System.Activities.ActivityFunc`17" />.</typeparam>
+    <typeparam name="T13">The type of the thirteenth <see cref="T:System.Activities.InArgument`1" /> whose value is passed to the <see cref="T:System.Activities.ActivityFunc`17" />.</typeparam>
+    <typeparam name="T14">The type of the fourteenth <see cref="T:System.Activities.InArgument`1" /> whose value is passed to the <see cref="T:System.Activities.ActivityFunc`17" />.</typeparam>
+    <typeparam name="T15">The type of the fifteenth <see cref="T:System.Activities.InArgument`1" /> whose value is passed to the <see cref="T:System.Activities.ActivityFunc`17" />.</typeparam>
+    <typeparam name="T16">The type of the sixteenth <see cref="T:System.Activities.InArgument`1" /> whose value is passed to the <see cref="T:System.Activities.ActivityFunc`17" />.</typeparam>
+    <typeparam name="TResult">The type of the return <see cref="T:System.Activities.OutArgument`1" /> whose value is returned from the <see cref="T:System.Activities.ActivityFunc`17" />.</typeparam>
+    <summary>Invokes an <see cref="T:System.Activities.ActivityFunc`17" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -70,7 +70,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Expressions.InvokeFunc`17" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,8 +92,8 @@
         <ReturnType>System.Activities.InArgument&lt;T1&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the first argument passed to the <see cref="T:System.Activities.ActivityFunc`17" />.</summary>
+        <value>The first argument passed to the <see cref="T:System.Activities.ActivityFunc`17" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,8 +115,8 @@
         <ReturnType>System.Activities.InArgument&lt;T10&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the tenth argument passed to the <see cref="T:System.Activities.ActivityFunc`17" />.</summary>
+        <value>The tenth argument passed to the <see cref="T:System.Activities.ActivityFunc`17" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -138,8 +138,8 @@
         <ReturnType>System.Activities.InArgument&lt;T11&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the eleventh argument passed to the <see cref="T:System.Activities.ActivityFunc`17" />.</summary>
+        <value>The eleventh argument passed to the <see cref="T:System.Activities.ActivityFunc`17" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -161,8 +161,8 @@
         <ReturnType>System.Activities.InArgument&lt;T12&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the twelfth argument passed to the <see cref="T:System.Activities.ActivityFunc`17" />.</summary>
+        <value>The twelfth argument passed to the <see cref="T:System.Activities.ActivityFunc`17" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,8 +184,8 @@
         <ReturnType>System.Activities.InArgument&lt;T13&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the thirteenth argument passed to the <see cref="T:System.Activities.ActivityFunc`17" />.</summary>
+        <value>The thirteenth argument passed to the <see cref="T:System.Activities.ActivityFunc`17" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -207,8 +207,8 @@
         <ReturnType>System.Activities.InArgument&lt;T14&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the fourteenth argument passed to the <see cref="T:System.Activities.ActivityFunc`17" />.</summary>
+        <value>The fourteenth argument passed to the <see cref="T:System.Activities.ActivityFunc`17" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -230,8 +230,8 @@
         <ReturnType>System.Activities.InArgument&lt;T15&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the fifteenth argument passed to the <see cref="T:System.Activities.ActivityFunc`17" />.</summary>
+        <value>The fifteenth argument passed to the <see cref="T:System.Activities.ActivityFunc`17" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -253,8 +253,8 @@
         <ReturnType>System.Activities.InArgument&lt;T16&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the sixteenth argument passed to the <see cref="T:System.Activities.ActivityFunc`17" />.</summary>
+        <value>The sixteenth argument passed to the <see cref="T:System.Activities.ActivityFunc`17" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -276,8 +276,8 @@
         <ReturnType>System.Activities.InArgument&lt;T2&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the second argument passed to the <see cref="T:System.Activities.ActivityFunc`17" />.</summary>
+        <value>The second argument passed to the <see cref="T:System.Activities.ActivityFunc`17" />.Returns <see cref="T:System.Activities.InArgument`1" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -299,8 +299,8 @@
         <ReturnType>System.Activities.InArgument&lt;T3&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the third argument passed to the <see cref="T:System.Activities.ActivityFunc`17" />.</summary>
+        <value>The third argument passed to the <see cref="T:System.Activities.ActivityFunc`17" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -322,8 +322,8 @@
         <ReturnType>System.Activities.InArgument&lt;T4&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the fourth argument passed to the <see cref="T:System.Activities.ActivityFunc`17" />.</summary>
+        <value>The fourth argument passed to the <see cref="T:System.Activities.ActivityFunc`17" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -345,8 +345,8 @@
         <ReturnType>System.Activities.InArgument&lt;T5&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the fifth argument passed to the <see cref="T:System.Activities.ActivityFunc`17" />.</summary>
+        <value>The fifth argument passed to the <see cref="T:System.Activities.ActivityFunc`17" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -368,8 +368,8 @@
         <ReturnType>System.Activities.InArgument&lt;T6&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the sixth argument passed to the <see cref="T:System.Activities.ActivityFunc`17" />.</summary>
+        <value>The sixth argument passed to the <see cref="T:System.Activities.ActivityFunc`17" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -391,8 +391,8 @@
         <ReturnType>System.Activities.InArgument&lt;T7&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the seventh argument passed to the <see cref="T:System.Activities.ActivityFunc`17" />.</summary>
+        <value>The seventh argument passed to the <see cref="T:System.Activities.ActivityFunc`17" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -414,8 +414,8 @@
         <ReturnType>System.Activities.InArgument&lt;T8&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the eighth argument passed to the <see cref="T:System.Activities.ActivityFunc`17" />.</summary>
+        <value>The eighth argument passed to the <see cref="T:System.Activities.ActivityFunc`17" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -437,8 +437,8 @@
         <ReturnType>System.Activities.InArgument&lt;T9&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the ninth argument passed to the <see cref="T:System.Activities.ActivityFunc`17" />.</summary>
+        <value>The ninth argument passed to the <see cref="T:System.Activities.ActivityFunc`17" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -481,8 +481,8 @@
         <ReturnType>System.Activities.ActivityFunc&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,TResult&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="T:System.Activities.ActivityFunc`17" /> to be invoked.</summary>
+        <value>The activity functions to be invoked.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

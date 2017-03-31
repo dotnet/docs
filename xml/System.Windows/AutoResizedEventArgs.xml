@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides data for the <see cref="E:System.Windows.Interop.HwndSource.AutoResized" /> event raised by <see cref="T:System.Windows.Interop.HwndSource" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <Parameter Name="size" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="size">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="size">The size to report in the event data.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.AutoResizedEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <ReturnType>System.Windows.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the new size of the window after the auto resize operation.</summary>
+        <value>Size of the window after resizing.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

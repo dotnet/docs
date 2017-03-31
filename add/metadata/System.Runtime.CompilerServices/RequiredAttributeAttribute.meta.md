@@ -1,14 +1,20 @@
 ---
 uid: System.Runtime.CompilerServices.RequiredAttributeAttribute
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.CompilerServices.RequiredAttributeAttribute.RequiredContract
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.CompilerServices.RequiredAttributeAttribute.#ctor(System.Type)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

@@ -1,19 +1,39 @@
 ---
 uid: System.Printing.IndexedProperties.PrintServerProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.IndexedProperties.PrintServerProperty.op_Implicit
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.IndexedProperties.PrintServerProperty.#ctor(System.String,System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.IndexedProperties.PrintServerProperty.#ctor
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Printing.IndexedProperties.PrintServerProperty.#ctor(System.String)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Printing.IndexedProperties.PrintServerProperty.Value
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

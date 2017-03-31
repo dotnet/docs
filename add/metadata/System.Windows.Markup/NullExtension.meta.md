@@ -1,14 +1,14 @@
 ---
 uid: System.Windows.Markup.NullExtension
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.NullExtension.ProvideValue(System.IServiceProvider)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.NullExtension.#ctor
-internalonly: False
+manager: "martinek"
 ---

@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines a set of <see cref="T:System.ComponentModel.Design.CommandID" /> fields that each correspond to a command function provided by the host environment.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.Design.MenuCommands> contains a set of <xref:System.ComponentModel.Design.CommandID> fields that can be used to specify a command to link when adding a command using the <xref:System.ComponentModel.Design.IMenuCommandService.AddCommand%2A> method of the <xref:System.ComponentModel.Design.IMenuCommandService>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.MenuCommands" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,7 +50,7 @@
         <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the component tray menu.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,7 +67,7 @@
         <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the container menu.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,7 +84,7 @@
         <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the properties page for the designer.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,7 +101,7 @@
         <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the edit label handler.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,7 +118,7 @@
         <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the cancel key handler.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,7 +135,7 @@
         <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the default key handler.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -145,7 +152,7 @@
         <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the end key handler.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,7 +169,7 @@
         <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the home key handler.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -179,7 +186,7 @@
         <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the smart tag invocation handler.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -196,7 +203,7 @@
         <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the move down key handler.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -213,7 +220,7 @@
         <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the move left key handler.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -230,7 +237,7 @@
         <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the move right key handler.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -247,7 +254,7 @@
         <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the move up key handler.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -264,7 +271,7 @@
         <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the nudge down key handler.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -281,7 +288,7 @@
         <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the nudge height decrease key handler.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -298,7 +305,7 @@
         <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the nudge height increase key handler.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -315,7 +322,7 @@
         <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the nudge left key handler.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -332,7 +339,7 @@
         <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the nudge right key handler.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -349,7 +356,7 @@
         <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the nudge up key handler.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -366,7 +373,7 @@
         <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the nudge width decrease key handler.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -383,7 +390,7 @@
         <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the nudge width increase key handler.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -400,7 +407,7 @@
         <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the reverse cancel key handler.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -417,7 +424,7 @@
         <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the select next key handler.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -434,7 +441,7 @@
         <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the select previous key handler.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -451,7 +458,7 @@
         <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the SHIFT-END key handler.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -468,7 +475,7 @@
         <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the SHIFT-HOME key handler.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -485,7 +492,7 @@
         <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the size height decrease key handler.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -502,7 +509,7 @@
         <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the size height increase key handler.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -519,7 +526,7 @@
         <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the size width decrease key handler.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -536,7 +543,7 @@
         <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the size width increase key handler.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -553,7 +560,7 @@
         <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the tab order select key handler.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -570,7 +577,7 @@
         <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the selection menu.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -587,7 +594,7 @@
         <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to set the status rectangle.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -604,7 +611,7 @@
         <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to set the status rectangle text.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -621,7 +628,7 @@
         <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the tray selection menu.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

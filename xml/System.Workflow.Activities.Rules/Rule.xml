@@ -11,8 +11,24 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines a condition with an associated set of actions to perform.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Workflow.Activities.Rules.Rule> consists of a <xref:System.Workflow.Activities.Rules.RuleCondition> and one or both <xref:System.Workflow.Activities.Rules.Rule.ThenActions%2A> or <xref:System.Workflow.Activities.Rules.Rule.ElseActions%2A> collections.  
+  
+   
+  
+## Examples  
+ The following example shows how to create a named <xref:System.Workflow.Activities.Rules.Rule>.  
+  
+```csharp  
+private Rule firstRule = new Rule("firstRule");  
+```  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +42,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.Rule" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +59,8 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the <see cref="T:System.Workflow.Activities.Rules.Rule" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.Rule" /> class using the name of the <see cref="T:System.Workflow.Activities.Rules.Rule" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,10 +79,10 @@
         <Parameter Name="thenActions" Type="System.Collections.Generic.IList&lt;System.Workflow.Activities.Rules.RuleAction&gt;" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="condition">To be added.</param>
-        <param name="thenActions">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the <see cref="T:System.Workflow.Activities.Rules.Rule" />.</param>
+        <param name="condition">The <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> for the <see cref="T:System.Workflow.Activities.Rules.Rule" />.</param>
+        <param name="thenActions">A collection of <see cref="T:System.Workflow.Activities.Rules.RuleAction" /> objects to evaluate whether the condition is true.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.Rule" /> class using the name of the <see langword="Rule" />, the rule condition, and a list of THEN actions.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,11 +102,11 @@
         <Parameter Name="elseActions" Type="System.Collections.Generic.IList&lt;System.Workflow.Activities.Rules.RuleAction&gt;" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="condition">To be added.</param>
-        <param name="thenActions">To be added.</param>
-        <param name="elseActions">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the <see cref="T:System.Workflow.Activities.Rules.Rule" />.</param>
+        <param name="condition">The <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> for the <see cref="T:System.Workflow.Activities.Rules.Rule" />.</param>
+        <param name="thenActions">A collection of <see cref="T:System.Workflow.Activities.Rules.RuleAction" /> objects to evaluate if the condition is true.</param>
+        <param name="elseActions">A collection of <see cref="T:System.Workflow.Activities.Rules.RuleAction" /> objects to evaluate whether the condition is false.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.Rule" /> class using the name of the <see langword="Rule" />, the rule condition, a list of THEN actions, and a list of ELSE actions.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,9 +123,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether the <see cref="T:System.Workflow.Activities.Rules.Rule" /> should be evaluated.</summary>
+        <value>
+          <see langword="true" /> if the Rule should be evaluated; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When set to `false`, this property is similar to commenting out the rule. The default is `true`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -126,8 +150,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a deep copy of the current <see cref="T:System.Workflow.Activities.Rules.Rule" />.</summary>
+        <returns>A <see cref="T:System.Workflow.Activities.Rules.Rule" /> that is identical to this instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,8 +168,8 @@
         <ReturnType>System.Workflow.Activities.Rules.RuleCondition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> for the <see cref="T:System.Workflow.Activities.Rules.Rule" /> to evaluate.</summary>
+        <value>A <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> for the <see cref="T:System.Workflow.Activities.Rules.Rule" /> to evaluate.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,8 +186,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a description of the <see cref="T:System.Workflow.Activities.Rules.Rule" />.</summary>
+        <value>A description of the <see cref="T:System.Workflow.Activities.Rules.Rule" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -185,9 +209,18 @@
         <ReturnType>System.Collections.Generic.IList&lt;System.Workflow.Activities.Rules.RuleAction&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of <see cref="T:System.Workflow.Activities.Rules.RuleAction" /> classes to perform in the ELSE case.</summary>
+        <value>A collection of <see cref="T:System.Workflow.Activities.Rules.RuleAction" /> to perform in the ELSE case.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.Activities.Rules.Rule.ElseActions%2A> typically set a variable value on one of the properties of the activity, calls a method of the activity, or calls static methods on types in referenced assemblies.  
+  
+ The <xref:System.Workflow.Activities.Rules.RuleHaltAction> causes the <xref:System.Workflow.Activities.Rules.RuleSet> to stop executing and returns control to the calling method. A <xref:System.Workflow.Activities.Rules.RuleStatementAction> modifies a property or calls a method. A <xref:System.Workflow.Activities.Rules.RuleUpdateAction> explicitly indicates that a rule is updating a variable. This causes the re-evaluation of any affected rules.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -206,9 +239,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The object to compare the current object to.</param>
+        <summary>Determines whether this instance of <see cref="T:System.Workflow.Activities.Rules.Rule" /> and the object passed as the parameter have the same value.</summary>
+        <returns>
+          <see langword="true" /> if the current object and <paramref name="obj" /> are the same; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -226,8 +260,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code for this instance.</summary>
+        <returns>The hash code for this instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -244,8 +278,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the <see cref="T:System.Workflow.Activities.Rules.Rule" />.</summary>
+        <value>The name of the <see cref="T:System.Workflow.Activities.Rules.Rule" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -262,9 +296,18 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates the order in which a <see cref="T:System.Workflow.Activities.Rules.Rule" /> should be run.</summary>
+        <value>A value that indicates the order in which a <see cref="T:System.Workflow.Activities.Rules.Rule" /> should be run.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.Activities.Rules.Rule> classes that have a higher priority value are run before lower priority <xref:System.Workflow.Activities.Rules.Rule> classes. Rules that have the same priority are run in the alphabetic order of their name properties.  
+  
+ The <xref:System.Workflow.Activities.Rules.Rule.Priority%2A> value can be positive or negative. The default value for any <xref:System.Workflow.Activities.Rules.Rule> is 0.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReevaluationBehavior">
@@ -280,8 +323,8 @@
         <ReturnType>System.Workflow.Activities.Rules.RuleReevaluationBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value indicating whether a <see cref="T:System.Workflow.Activities.Rules.Rule" /> can be reevaluated.</summary>
+        <value>The <see cref="T:System.Workflow.Activities.Rules.RuleReevaluationBehavior" /> indicating whether the <see cref="T:System.Workflow.Activities.Rules.Rule" /> can be reevaluated.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -303,9 +346,18 @@
         <ReturnType>System.Collections.Generic.IList&lt;System.Workflow.Activities.Rules.RuleAction&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of <see cref="T:System.Workflow.Activities.Rules.RuleAction" /> classes to perform in the THEN case.</summary>
+        <value>A collection of <see cref="T:System.Workflow.Activities.Rules.RuleAction" /> classes to perform in the THEN case.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.Activities.Rules.Rule.ThenActions%2A> typically set a variable value on one of the properties of the activity, call a method of the activity, or call static methods on types in referenced assemblies.  
+  
+ The <xref:System.Workflow.Activities.Rules.RuleHaltAction> causes the <xref:System.Workflow.Activities.Rules.RuleSet> to stop executing and returns control to the calling method. A <xref:System.Workflow.Activities.Rules.RuleUpdateAction> explicitly indicates that a rule is updating a variable. This causes the re-evaluation of any affected rules.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -16,8 +16,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>A token that is returned when an event handler is added to a [!INCLUDE[wrt](~/includes/wrt-md.md)] event. The token is used to remove the event handler from the event at a later time.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken> structure only if you use native [!INCLUDE[wrt](~/includes/wrt-md.md)] techniques to add and remove event handlers for [!INCLUDE[wrt](~/includes/wrt-md.md)] events. If you use the syntax that is provided by the C# or Visual Basic languages to add and remove event handlers, <xref:System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken> is an implementation detail handled by the compilers.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Equals">
@@ -41,9 +48,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The object to compare.</param>
+        <summary>Returns a value that indicates whether the current object is equal to the specified object.</summary>
+        <returns>
+          <see langword="true" /> if the current object is equal to <paramref name="obj" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,8 +74,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code for this instance.</summary>
+        <returns>The hash code for this instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,10 +101,11 @@
         <Parameter Name="right" Type="System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first instance to compare.</param>
+        <param name="right">The second instance to compare.</param>
+        <summary>Indicates whether two <see cref="T:System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken" /> instances are equal.</summary>
+        <returns>
+          <see langword="true" /> if the two objects are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,10 +131,11 @@
         <Parameter Name="right" Type="System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first instance to compare.</param>
+        <param name="right">The second instance to compare.</param>
+        <summary>Indicates whether two <see cref="T:System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken" /> instances are not equal.</summary>
+        <returns>
+          <see langword="true" /> if the two instances are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

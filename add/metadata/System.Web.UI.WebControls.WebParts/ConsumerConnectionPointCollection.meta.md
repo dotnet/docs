@@ -1,44 +1,76 @@
 ---
 uid: System.Web.UI.WebControls.WebParts.ConsumerConnectionPointCollection
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.WebParts.ConsumerConnectionPointCollection.Item(System.Int32)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.WebParts.ConsumerConnectionPointCollection.Contains(System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.WebParts.ConsumerConnectionPointCollection.Item(System.String)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.WebParts.ConsumerConnectionPointCollection.#ctor
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.WebParts.ConsumerConnectionPointCollection.#ctor(System.Collections.ICollection)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.WebParts.ConsumerConnectionPointCollection.CopyTo(System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint[],System.Int32)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.WebParts.ConsumerConnectionPointCollection.#ctor
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.WebParts.ConsumerConnectionPointCollection.Item
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.WebParts.ConsumerConnectionPointCollection.IndexOf(System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.WebParts.ConsumerConnectionPointCollection.Default
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

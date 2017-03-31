@@ -1,54 +1,83 @@
 ---
 uid: System.ServiceModel.Channels.SymmetricSecurityBindingElement
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.SymmetricSecurityBindingElement.RequireSignatureConfirmation
-internalonly: False
----
-
----
-uid: System.ServiceModel.Channels.SymmetricSecurityBindingElement.#ctor(System.ServiceModel.Security.Tokens.SecurityTokenParameters)
-internalonly: False
----
-
----
-uid: System.ServiceModel.Channels.SymmetricSecurityBindingElement.GetProperty``1(System.ServiceModel.Channels.BindingContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.SymmetricSecurityBindingElement.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Channels.SymmetricSecurityBindingElement.#ctor(System.ServiceModel.Security.Tokens.SecurityTokenParameters)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Channels.SymmetricSecurityBindingElement.GetProperty``1(System.ServiceModel.Channels.BindingContext)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Channels.SymmetricSecurityBindingElement.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.SymmetricSecurityBindingElement.MessageProtectionOrder
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.SymmetricSecurityBindingElement.ToString
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.SymmetricSecurityBindingElement.Clone
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.SymmetricSecurityBindingElement.ProtectionTokenParameters
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.SymmetricSecurityBindingElement.SetKeyDerivation(System.Boolean)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.SymmetricSecurityBindingElement.System#ServiceModel#Description#IPolicyExportExtension#ExportPolicy(System.ServiceModel.Description.MetadataExporter,System.ServiceModel.Description.PolicyConversionContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

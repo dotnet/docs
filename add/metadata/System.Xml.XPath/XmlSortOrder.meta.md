@@ -1,4 +1,6 @@
 ---
 uid: System.Xml.XPath.XmlSortOrder
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

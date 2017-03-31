@@ -18,9 +18,20 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">To be added.</param>
-    <param name="e">To be added.</param>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <param name="sender">The source of the event.</param>
+    <param name="e">The <see cref="T:System.Data.SqlClient.SqlRowUpdatingEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Data.SqlClient.SqlDataAdapter.RowUpdating" /> event of a <see cref="T:System.Data.SqlClient.SqlDataAdapter" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The handler is not required to perform any action, and your code should avoid generating exceptions or allowing exceptions to propagate to the calling method. Any exceptions that do reach the caller are ignored.  
+  
+ The handler may use the <xref:System.Data.SqlClient.SqlRowUpdatingEventArgs> to influence the processing of the updates. For example, the handler may opt to skip the update of the current row or skip the update of all remaining rows. Note that the rows are updated in the order that they were received from the data source.  
+  
+ When you create a <xref:System.Data.SqlClient.SqlRowUpdatingEventArgs> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

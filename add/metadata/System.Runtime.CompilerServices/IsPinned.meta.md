@@ -1,4 +1,6 @@
 ---
 uid: System.Runtime.CompilerServices.IsPinned
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

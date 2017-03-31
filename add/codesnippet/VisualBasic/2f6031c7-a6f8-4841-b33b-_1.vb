@@ -1,4 +1,0 @@
-<Synchronization(SynchronizationOption.Disabled)>  _
-Public Class SynchronizationAttribute_Ctor_SynchronizationOption
-    Inherits ServicedComponent
-End Class 'SynchronizationAttribute_Ctor_SynchronizationOption

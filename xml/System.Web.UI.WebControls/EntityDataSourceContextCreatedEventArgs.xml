@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.EntityDataSource.ContextCreated" /> event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.Data.Objects.ObjectContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Data.Objects.ObjectContext" /> used by the data source.</summary>
+        <value>The object context used by the data source.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,59 +1,90 @@
 ---
 uid: System.Data.SqlTypes.SqlXml
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlXml.Value
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlXml.#ctor(System.Xml.XmlReader)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlXml.GetXsdType(System.Xml.Schema.XmlSchemaSet)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlXml.IsNull
-internalonly: False
----
-
----
-uid: System.Data.SqlTypes.SqlXml.#ctor(System.IO.Stream)
-internalonly: False
----
-
----
-uid: System.Data.SqlTypes.SqlXml.System#Xml#Serialization#IXmlSerializable#WriteXml(System.Xml.XmlWriter)
-internalonly: False
----
-
----
-uid: System.Data.SqlTypes.SqlXml.System#Xml#Serialization#IXmlSerializable#ReadXml(System.Xml.XmlReader)
-internalonly: False
----
-
----
-uid: System.Data.SqlTypes.SqlXml.Null
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlXml.#ctor
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlTypes.SqlXml.#ctor(System.IO.Stream)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlTypes.SqlXml.System#Xml#Serialization#IXmlSerializable#WriteXml(System.Xml.XmlWriter)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlTypes.SqlXml.System#Xml#Serialization#IXmlSerializable#ReadXml(System.Xml.XmlReader)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlTypes.SqlXml.Null
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlTypes.SqlXml.#ctor
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlXml.System#Xml#Serialization#IXmlSerializable#GetSchema
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlXml.CreateReader
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

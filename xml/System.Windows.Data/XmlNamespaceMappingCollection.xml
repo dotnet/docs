@@ -23,8 +23,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a collection of <see cref="T:System.Windows.Data.XmlNamespaceMapping" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Data.XmlNamespaceMapping> class provides a mapping between the namespace specified in your [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] binding source and a prefix you specify that you can use in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)].  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,7 +45,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Data.XmlNamespaceMappingCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,9 +65,11 @@
         <Parameter Name="mapping" Type="System.Windows.Data.XmlNamespaceMapping" />
       </Parameters>
       <Docs>
-        <param name="mapping">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="mapping">The <see cref="T:System.Windows.Data.XmlNamespaceMapping" /> object to add. This cannot be <see langword="null" />.</param>
+        <summary>Adds a <see cref="T:System.Windows.Data.XmlNamespaceMapping" /> object to this collection.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">If <paramref name="mapping" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">If the <see cref="P:System.Windows.Data.XmlNamespaceMapping.Uri" /> of the <see cref="T:System.Windows.Data.XmlNamespaceMapping" /> object is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddChild">
@@ -79,9 +88,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The <see cref="T:System.Windows.Data.XmlNamespaceMapping" /> object to add. This cannot be <see langword="null" />.</param>
+        <summary>Adds a <see cref="T:System.Windows.Data.XmlNamespaceMapping" /> object to this collection.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">If <paramref name="mapping" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddText">
@@ -100,9 +110,10 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="text">The text string to add as a child.</param>
+        <summary>Adds a text string as a child of this <see cref="T:System.Windows.Data.XmlNamespaceMappingCollection" /> object.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">If <paramref name="text" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -119,8 +130,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Removes all <see cref="T:System.Windows.Data.XmlNamespaceMapping" /> objects in this collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is potentially an expensive operation; consider just creating a new <xref:System.Windows.Data.XmlNamespaceMappingCollection> object.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -139,10 +157,13 @@
         <Parameter Name="mapping" Type="System.Windows.Data.XmlNamespaceMapping" />
       </Parameters>
       <Docs>
-        <param name="mapping">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="mapping">The <see cref="T:System.Windows.Data.XmlNamespaceMapping" /> object of interest. This cannot be <see langword="null" />.</param>
+        <summary>Returns a value that indicates whether this collection contains the specified <see cref="T:System.Windows.Data.XmlNamespaceMapping" /> object.</summary>
+        <returns>
+          <see langword="true" /> if this collection contains the specified <see cref="T:System.Windows.Data.XmlNamespaceMapping" /> object; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">If <paramref name="mapping" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">If the <see cref="P:System.Windows.Data.XmlNamespaceMapping.Uri" /> of the <see cref="T:System.Windows.Data.XmlNamespaceMapping" /> object is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -162,10 +183,12 @@
         <Parameter Name="arrayIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="arrayIndex">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">The array that is the destination of the items copied from the collection.</param>
+        <param name="arrayIndex">The zero-based index in array at which copying starts.</param>
+        <summary>Copies the items of the collection to the specified array, starting at the specified index.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">If <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">If the number of items exceed the length of the array.</exception>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -181,8 +204,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of <see cref="T:System.Windows.Data.XmlNamespaceMapping" /> objects in the collection.</summary>
+        <value>The number of <see cref="T:System.Windows.Data.XmlNamespaceMapping" /> objects in the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -200,8 +223,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an <see cref="T:System.Collections.IEnumerator" /> object that you can use to enumerate the items in this collection.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> object that you can use to enumerate the items in this collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -218,8 +241,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether this collection is read-only.</summary>
+        <value>This always returns <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -242,9 +265,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a generic <see cref="T:System.Collections.Generic.IEnumerator`1" /> object.</summary>
+        <returns>A generic <see cref="T:System.Collections.Generic.IEnumerator`1" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is a protected member that is for <xref:System.Collections.Generic.IEnumerable%601> implementations.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -263,10 +293,13 @@
         <Parameter Name="mapping" Type="System.Windows.Data.XmlNamespaceMapping" />
       </Parameters>
       <Docs>
-        <param name="mapping">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="mapping">The <see cref="T:System.Windows.Data.XmlNamespaceMapping" /> object to remove. This cannot be <see langword="null" />.</param>
+        <summary>Removes the specified <see cref="T:System.Windows.Data.XmlNamespaceMapping" /> object from this collection.</summary>
+        <returns>
+          <see langword="true" /> if the specified <see cref="T:System.Windows.Data.XmlNamespaceMapping" /> object has been successfully removed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">If <paramref name="mapping" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">If the <see cref="P:System.Windows.Data.XmlNamespaceMapping.Uri" /> of the <see cref="T:System.Windows.Data.XmlNamespaceMapping" /> object is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IEnumerable&lt;System.Windows.Data.XmlNamespaceMapping&gt;.GetEnumerator">
@@ -283,9 +316,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator" />.</summary>
+        <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Data.XmlNamespaceMappingCollection> instance is cast to an <xref:System.Collections.Generic.IEnumerable%601> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Markup.IAddChild.AddChild">
@@ -304,9 +344,16 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="value">The child <see cref="T:System.Object" /> to add.</param>
+        <summary>For a description of this member, see <see cref="M:System.Windows.Markup.IAddChild.AddChild(System.Object)" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Data.XmlNamespaceMappingCollection> instance is cast to an <xref:System.Windows.Markup.IAddChild> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Markup.IAddChild.AddText">
@@ -325,9 +372,16 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="text">The text to add to the <see cref="T:System.Object" />.</param>
+        <summary>For a description of this member, see <see cref="M:System.Windows.Markup.IAddChild.AddText(System.String)" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Data.XmlNamespaceMappingCollection> instance is cast to an <xref:System.Windows.Markup.IAddChild> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

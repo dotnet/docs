@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Input.StylusButtonState
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

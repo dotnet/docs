@@ -1,1 +1,0 @@
-      returnTime = DateTime.SpecifyKind(cal.AddHours(time, hours), time.Kind)

@@ -1,29 +1,29 @@
 ---
 uid: System.Management.MethodData
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.MethodData.Origin
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.MethodData.Name
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.MethodData.Qualifiers
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.MethodData.OutParameters
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.MethodData.InParameters
-internalonly: False
+manager: "jillfra"
 ---

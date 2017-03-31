@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Forms.DataGridViewAdvancedCellBorderStyle
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

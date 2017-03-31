@@ -1,9 +1,13 @@
 ---
 uid: System.Windows.Automation.VirtualizedItemPatternIdentifiers
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.VirtualizedItemPatternIdentifiers.Pattern
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---

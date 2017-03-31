@@ -1,2 +1,0 @@
-      ' Pass the name of the existing porttype 'MathServiceSoap' and the Xml targetNamespace attribute of the Descriptions tag.
-      myBinding.Type = New XmlQualifiedName("MathServiceSoap", myServiceDescription.TargetNamespace)

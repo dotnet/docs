@@ -8,7 +8,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides execution properties with a mechanism for configuring thread local storage before and after the work items of the associated activity.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides an opportunity for the execution property to tear down thread local storage.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,7 +44,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides an opportunity for the execution property to set up thread local storage.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

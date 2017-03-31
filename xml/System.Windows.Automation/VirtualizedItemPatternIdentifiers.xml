@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains values used as identifiers by <see cref="T:System.Windows.Automation.Provider.IVirtualizedItemProvider" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ These identifiers are used by UI Automation providers. UI Automation client applications should use the equivalent fields in <xref:System.Windows.Automation.VirtualizedItemPattern>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Pattern">
@@ -28,8 +35,15 @@
         <ReturnType>System.Windows.Automation.AutomationPattern</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Identifies the <see cref="T:System.Windows.Automation.VirtualizedItemPattern" /> control pattern.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ These identifiers are used by UI Automation providers. UI Automation client applications should use the equivalent fields in <xref:System.Windows.Automation.VirtualizedItemPattern>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

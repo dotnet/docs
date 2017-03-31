@@ -1,34 +1,39 @@
 ---
 uid: System.Runtime.Remoting.Channels.BinaryServerFormatterSinkProvider
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Channels.BinaryServerFormatterSinkProvider.#ctor(System.Collections.IDictionary,System.Collections.ICollection)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Channels.BinaryServerFormatterSinkProvider.TypeFilterLevel
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Channels.BinaryServerFormatterSinkProvider.GetChannelData(System.Runtime.Remoting.Channels.IChannelDataStore)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Channels.BinaryServerFormatterSinkProvider.Next
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Channels.BinaryServerFormatterSinkProvider.#ctor
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Channels.BinaryServerFormatterSinkProvider.CreateSink(System.Runtime.Remoting.Channels.IChannelReceiver)
-internalonly: False
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Remoting.Channels.BinaryServerFormatterSinkProvider.#ctor
+manager: "ghogen"
 ---

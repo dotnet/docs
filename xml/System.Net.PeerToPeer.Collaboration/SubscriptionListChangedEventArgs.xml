@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides qualifying information to a callback method when a <see cref="E:System.Net.PeerToPeer.Collaboration.ContactManager.SubscriptionListChanged" /> event is signaled.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,9 @@
         <ReturnType>System.Net.PeerToPeer.Collaboration.PeerChangeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Specifies the type of change that has occurred.</summary>
+        <value>
+          <see cref="T:System.Net.PeerToPeer.Collaboration.PeerChangeType" /> enumeration that specifies the type of change performed on the Subscription List.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +47,9 @@
         <ReturnType>System.Net.PeerToPeer.Collaboration.PeerContact</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Specifies the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> for which the Subscription List was changed.</summary>
+        <value>
+          <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> object for which the Subscription List was changed.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +66,9 @@
         <ReturnType>System.Net.PeerToPeer.Collaboration.PeerEndPoint</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Specifies the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> for which the subscription notification was received.</summary>
+        <value>
+          <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> object for which the Subscription List was changed.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

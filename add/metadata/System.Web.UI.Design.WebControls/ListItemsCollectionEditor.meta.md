@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.Design.WebControls.ListItemsCollectionEditor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.ListItemsCollectionEditor.HelpTopic
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.ListItemsCollectionEditor.#ctor(System.Type)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.ListItemsCollectionEditor.CanSelectMultipleInstances
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

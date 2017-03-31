@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.DirectoryServices.ActiveDirectory.TrustRelationshipInformation" /> class contains information for a trust relationship between a pair of <see cref="T:System.DirectoryServices.ActiveDirectory.Domain" /> or <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> objects.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Obtains the name of the source <see cref="T:System.DirectoryServices.ActiveDirectory.Domain" /> or <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> objects for this trust relationship.</summary>
+        <value>A string that contains the name of the source <see cref="T:System.DirectoryServices.ActiveDirectory.Domain" /> or <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> objects for this trust relationship.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Obtains the name of the target <see cref="T:System.DirectoryServices.ActiveDirectory.Domain" /> or <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> objects for this trust relationship.</summary>
+        <value>A string that contains the name of the target <see cref="T:System.DirectoryServices.ActiveDirectory.Domain" /> or <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> objects for this trust relationship.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +64,8 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.TrustDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Obtains the <see cref="T:System.DirectoryServices.ActiveDirectory.TrustDirection" /> objects for this trust relationship relative to the <see cref="T:System.DirectoryServices.ActiveDirectory.Domain" /> or <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> objects that created the trust.</summary>
+        <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.TrustDirection" /> value for this trust relationship relative to the <see cref="T:System.DirectoryServices.ActiveDirectory.Domain" /> or <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> objects that created the trust.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +82,8 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.TrustType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Obtains the <see cref="T:System.DirectoryServices.ActiveDirectory.TrustType" /> object of the trust relationship.</summary>
+        <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.TrustType" /> value that represents the type of the trust relationship.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

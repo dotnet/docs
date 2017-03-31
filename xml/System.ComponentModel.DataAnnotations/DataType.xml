@@ -15,8 +15,43 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an enumeration of the data types associated with data fields and parameters.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used to specify the type of data to associate with a data column or a parameter. You use the ttribute class to specify the data type you want to associate with the data field or parameter. You select the data type from this enumeration.  
+  
+ The ttribute attribute lets you mark fields by using a type that is more specific than the database intrinsic types. For example, a string data field that contains e-mail addresses can be attributed with the EmailAddress type. This information can be accessed by the field templates and modify how the data field is processed.  
+  
+ The following table lists the data types Dynamic Data provides.  
+  
+   
+  
+## Examples  
+ The following example uses the ttribute to customize the display of EmailAddress data field of the customer table in the AdventureWorksLT database. The e-mail addresses are shown as hyperlinks instead of the simple text that ASP.NET Dynamic Data would have inferred from the intrinsic data type.  
+  
+ The example code:  
+  
+-   Implements a metadata partial class for the related table and the associated metadata class.  
+  
+-   Applies the ttribute attribute to the EmailAddress data field by specifying the EmailAddress enumerated value in the associated metadata class. This indicates to the Text.ascx field template that the e-mail address display is customized.  
+  
+ [!code-csharp[System.ComponentModel.DataAnnotations.DataTypeAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/CS/Customer.cs#1)]
+ [!code-vb[System.ComponentModel.DataAnnotations.DataTypeAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/VB/Customer.vb#1)]  
+  
+ To compile the example code, you need the following:  
+  
+-   Visual Studio 2008 Service Pack 1 or Visual Developer 2008 Express Edition Service Pack 1.  
+  
+-   The AdventureWorksLT sample database. For information about how to download and install the SQL Server sample database, see [Microsoft SQL Server Product Samples: Database](http://go.microsoft.com/fwlink/?LinkId=117483) on the CodePlex site. Make sure that you install the correct version of the sample database for the version of SQL Server that you are running (SQL Server 2005 or SQL Server 2008).  
+  
+-   A Dynamic Data Web site. This enables you to create a data context for the database and the class that contains the data field to customize and the methods to override. In addition, it creates the environment in which to use the page described before. For more information, see [Walkthrough: Creating a New Dynamic Data Web Site Using Scaffolding](../Topic/Walkthrough:%20Creating%20a%20New%20Dynamic%20Data%20Web%20Site%20Using%20Scaffolding.md).  
+  
+ For the complete code example that the field template uses to customize the display of the EmailAddress data fields, see ttribute.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CreditCard">
@@ -37,7 +72,7 @@
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents a credit card number.</summary>
       </Docs>
     </Member>
     <Member MemberName="Currency">
@@ -58,7 +93,7 @@
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents a currency value.</summary>
       </Docs>
     </Member>
     <Member MemberName="Custom">
@@ -79,7 +114,7 @@
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents a custom data type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date">
@@ -100,7 +135,7 @@
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents a date value.</summary>
       </Docs>
     </Member>
     <Member MemberName="DateTime">
@@ -121,7 +156,7 @@
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents an instant in time, expressed as a date and time of day.</summary>
       </Docs>
     </Member>
     <Member MemberName="Duration">
@@ -142,7 +177,7 @@
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents a continuous time during which an object exists.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmailAddress">
@@ -163,7 +198,7 @@
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents an e-mail address.</summary>
       </Docs>
     </Member>
     <Member MemberName="Html">
@@ -184,7 +219,7 @@
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents an HTML file.</summary>
       </Docs>
     </Member>
     <Member MemberName="ImageUrl">
@@ -205,7 +240,7 @@
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents a URL to an image.</summary>
       </Docs>
     </Member>
     <Member MemberName="MultilineText">
@@ -226,7 +261,7 @@
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents multi-line text.</summary>
       </Docs>
     </Member>
     <Member MemberName="Password">
@@ -247,7 +282,7 @@
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represent a password value.</summary>
       </Docs>
     </Member>
     <Member MemberName="PhoneNumber">
@@ -268,7 +303,7 @@
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents a phone number value.</summary>
       </Docs>
     </Member>
     <Member MemberName="PostalCode">
@@ -289,7 +324,7 @@
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents a postal code.</summary>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -310,7 +345,7 @@
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents text that is displayed.</summary>
       </Docs>
     </Member>
     <Member MemberName="Time">
@@ -331,7 +366,7 @@
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents a time value.</summary>
       </Docs>
     </Member>
     <Member MemberName="Upload">
@@ -352,7 +387,7 @@
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents file upload data type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Url">
@@ -373,7 +408,7 @@
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents a URL value.</summary>
       </Docs>
     </Member>
   </Members>

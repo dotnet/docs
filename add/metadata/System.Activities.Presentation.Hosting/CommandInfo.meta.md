@@ -1,14 +1,20 @@
 ---
 uid: System.Activities.Presentation.Hosting.CommandInfo
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.Hosting.CommandInfo.Command
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.Hosting.CommandInfo.IsBindingEnabledInDesigner
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

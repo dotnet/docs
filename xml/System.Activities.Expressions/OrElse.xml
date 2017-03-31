@@ -14,7 +14,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Computes the logical OR of two values. To do this, both operands are evaluated to boolean values. If both operands are <see langword="false" /> then the expression returns <see langword="false" />. If one or both operands evaluate to <see langword="true" />, the expression returns <see langword="true" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,7 +29,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Expressions.OrElse" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,8 +72,8 @@
         <ReturnType>System.Activities.Activity&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the left operand.</summary>
+        <value>The <see cref="T:System.Activities.Activity" /> that represents the left operand.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,8 +118,8 @@
         <ReturnType>System.Activities.Activity&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the right operand.</summary>
+        <value>The <see cref="T:System.Activities.Activity" /> that represents the right operand.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

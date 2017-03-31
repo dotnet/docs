@@ -22,8 +22,29 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Identifies the level of an event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The level signifies the severity of an event. Lower severity levels encompass higher severity levels. For example, Warning includes the Error and Critical levels, which are higher in severity.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Diagnostics.Tracing.EventLevel> class to specify event levels. This code example is part of a larger example provided for the <xref:System.Diagnostics.Tracing.EventSource> class.  
+  
+ [!code-csharp[ETWTrace#5](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#5)]
+ [!code-vb[ETWTrace#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#5)]  
+  
+ [!code-csharp[ETWTrace#6](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#6)]
+ [!code-vb[ETWTrace#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#6)]  
+  
+ [!code-csharp[ETWTrace#11](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#11)]
+ [!code-vb[ETWTrace#11](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#11)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Critical">
@@ -51,7 +72,7 @@
         <ReturnType>System.Diagnostics.Tracing.EventLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This level corresponds to a critical error, which is a serious error that has caused a major failure.</summary>
       </Docs>
     </Member>
     <Member MemberName="Error">
@@ -79,7 +100,18 @@
         <ReturnType>System.Diagnostics.Tracing.EventLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This level adds standard errors that signify a problem.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the Error field to identify an error message. This code example is part of a larger example provided for the <xref:System.Diagnostics.Tracing.EventSource> class.  
+  
+ [!code-csharp[ETWTrace#5](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#5)]
+ [!code-vb[ETWTrace#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#5)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Informational">
@@ -107,7 +139,18 @@
         <ReturnType>System.Diagnostics.Tracing.EventLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This level adds informational events or messages that are not errors. These events can help trace the progress or state of an application.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the Informational field to identify an informational message. This code example is part of a larger example provided for the <xref:System.Diagnostics.Tracing.EventSource> class.  
+  
+ [!code-csharp[ETWTrace#6](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#6)]
+ [!code-vb[ETWTrace#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#6)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LogAlways">
@@ -135,7 +178,7 @@
         <ReturnType>System.Diagnostics.Tracing.EventLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No level filtering is done on the event.</summary>
       </Docs>
     </Member>
     <Member MemberName="Verbose">
@@ -163,7 +206,18 @@
         <ReturnType>System.Diagnostics.Tracing.EventLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This level adds lengthy events or messages. It causes all events to be logged.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the Verbose field to identify a verbose message. This code example is part of a larger example provided for the <xref:System.Diagnostics.Tracing.EventSource> class.  
+  
+ [!code-csharp[ETWTrace#11](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#11)]
+ [!code-vb[ETWTrace#11](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#11)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Warning">
@@ -191,7 +245,7 @@
         <ReturnType>System.Diagnostics.Tracing.EventLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This level adds warning events (for example, events that are published because a disk is nearing full capacity).</summary>
       </Docs>
     </Member>
   </Members>

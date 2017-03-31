@@ -1,1 +1,0 @@
-        Dim maxKeySize As Integer = firstKeySize.MaxSize

@@ -1,24 +1,34 @@
 ---
 uid: System.IO.IsolatedStorage.IsolatedStorageSecurityState
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.IsolatedStorage.IsolatedStorageSecurityState.EnsureState
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.IsolatedStorage.IsolatedStorageSecurityState.UsedSize
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.IsolatedStorage.IsolatedStorageSecurityState.Quota
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.IsolatedStorage.IsolatedStorageSecurityState.Options
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

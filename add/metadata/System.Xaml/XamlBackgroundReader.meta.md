@@ -1,79 +1,84 @@
 ---
 uid: System.Xaml.XamlBackgroundReader
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlBackgroundReader.HasLineInfo
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlBackgroundReader.StartThread
-internalonly: False
+manager: "martinek"
+---
+
+---
+uid: System.Xaml.XamlBackgroundReader.StartThread
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlBackgroundReader.Namespace
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlBackgroundReader.SchemaContext
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlBackgroundReader.Member
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlBackgroundReader.Dispose(System.Boolean)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlBackgroundReader.Type
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlBackgroundReader.LinePosition
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlBackgroundReader.IsEof
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlBackgroundReader.#ctor(System.Xaml.XamlReader)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlBackgroundReader.Read
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlBackgroundReader.LineNumber
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlBackgroundReader.StartThread(System.String)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlBackgroundReader.Value
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlBackgroundReader.NodeType
-internalonly: False
+manager: "martinek"
 ---

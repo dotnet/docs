@@ -1,4 +1,6 @@
 ---
 uid: System.Reflection.EventAttributes
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

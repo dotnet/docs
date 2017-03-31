@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>A specialization of the ConsoleLogger that logs to a file instead of the console.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The output in terms of what is written and how it looks is identical. For example you can log verbosely to a file using the FileLogger while simultaneously logging only high priority events to the console using a ConsoleLogger.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a file logger.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +53,8 @@
         <Parameter Name="eventSource" Type="Microsoft.Build.Framework.IEventSource" />
       </Parameters>
       <Docs>
-        <param name="eventSource">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="eventSource">The available events.</param>
+        <summary>Signs up the console file logger for the given build events.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,9 +75,9 @@
         <Parameter Name="nodeCount" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="eventSource">To be added.</param>
-        <param name="nodeCount">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="eventSource">The event source.</param>
+        <param name="nodeCount">The node count.</param>
+        <summary>Initializes a file logger in a multiprocessor environment.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,8 +95,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Called when the build is finished.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The method must flush and close the file log.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

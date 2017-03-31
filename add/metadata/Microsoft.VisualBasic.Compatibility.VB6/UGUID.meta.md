@@ -1,9 +1,13 @@
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.UGUID
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.UGUID.guid
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

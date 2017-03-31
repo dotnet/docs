@@ -18,7 +18,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents state machines that are generated for asynchronous methods. This type is intended for compiler use only.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -46,7 +46,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Moves the state machine to its next state.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,8 +76,8 @@
         <Parameter Name="stateMachine" Type="System.Runtime.CompilerServices.IAsyncStateMachine" />
       </Parameters>
       <Docs>
-        <param name="stateMachine">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="stateMachine">The heap-allocated replica.</param>
+        <summary>Configures the state machine with a heap-allocated replica.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

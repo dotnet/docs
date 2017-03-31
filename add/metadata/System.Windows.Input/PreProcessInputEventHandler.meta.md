@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Input.PreProcessInputEventHandler
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

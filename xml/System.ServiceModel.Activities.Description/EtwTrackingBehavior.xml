@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>A service behavior that allows a service to utilize ETW tracking using an <see cref="T:System.Activities.Tracking.EtwTrackingParticipant" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Activities.Description.EtwTrackingBehavior" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,11 +53,11 @@
         <Parameter Name="bindingParameters" Type="System.ServiceModel.Channels.BindingParameterCollection" />
       </Parameters>
       <Docs>
-        <param name="serviceDescription">To be added.</param>
-        <param name="serviceHostBase">To be added.</param>
-        <param name="endpoints">To be added.</param>
-        <param name="bindingParameters">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceDescription">The service description.</param>
+        <param name="serviceHostBase">The host of the service.</param>
+        <param name="endpoints">The service endpoints.</param>
+        <param name="bindingParameters">Custom objects required to implement the behavior.</param>
+        <summary>An implementation of the <see cref="M:System.ServiceModel.Description.IServiceBehavior.AddBindingParameters(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase,System.Collections.ObjectModel.Collection{System.ServiceModel.Description.ServiceEndpoint},System.ServiceModel.Channels.BindingParameterCollection)" /> method.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,9 +78,9 @@
         <Parameter Name="serviceHostBase" Type="System.ServiceModel.ServiceHostBase" />
       </Parameters>
       <Docs>
-        <param name="serviceDescription">To be added.</param>
-        <param name="serviceHostBase">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceDescription">The service description.</param>
+        <param name="serviceHostBase">The host of the service.</param>
+        <summary>An implementation of the <see cref="M:System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)" /></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,8 +97,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the <see cref="T:System.Activities.Tracking.TrackingProfile" /> associated with this behavior.</summary>
+        <value>The name of the <see cref="T:System.Activities.Tracking.TrackingProfile" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,9 +119,9 @@
         <Parameter Name="serviceHostBase" Type="System.ServiceModel.ServiceHostBase" />
       </Parameters>
       <Docs>
-        <param name="serviceDescription">To be added.</param>
-        <param name="serviceHostBase">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceDescription">The service description.</param>
+        <param name="serviceHostBase">The host of the service.</param>
+        <summary>An implementation of the <see cref="M:System.ServiceModel.Description.IServiceBehavior.Validate(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)" /> method.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

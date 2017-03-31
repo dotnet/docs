@@ -1,9 +1,13 @@
 ---
 uid: System.Drawing.BitmapSuffixInSatelliteAssemblyAttribute
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.BitmapSuffixInSatelliteAssemblyAttribute.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

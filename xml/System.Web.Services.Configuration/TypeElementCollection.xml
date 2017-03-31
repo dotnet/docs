@@ -16,8 +16,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains a strongly typed collection of <see cref="T:System.Web.Services.Configuration.TypeElement" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Services.Configuration.TypeElementCollection> class is used to work with a collection of <xref:System.Web.Services.Configuration.TypeElement> objects.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +38,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new <see cref="T:System.Web.Services.Configuration.TypeElementCollection" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +58,8 @@
         <Parameter Name="element" Type="System.Web.Services.Configuration.TypeElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Web.Services.Configuration.TypeElement" /> to add.</param>
+        <summary>Adds a <see cref="T:System.Web.Services.Configuration.TypeElement" /> to the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,7 +77,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes all <see cref="T:System.Web.Services.Configuration.TypeElement" /> objects from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,9 +97,10 @@
         <Parameter Name="key" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">The key of the <see cref="T:System.Web.Services.Configuration.TypeElement" /> to find in the collection.</param>
+        <summary>Returns a <see cref="T:System.Boolean" /> that indicates whether a <see cref="T:System.Web.Services.Configuration.TypeElement" /> with the specified key exists in the collection.</summary>
+        <returns>
+          <see langword="true" /> if the collection contains a <see cref="T:System.Web.Services.Configuration.TypeElement" /> with the specified key; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,9 +121,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">An array of type <see cref="T:System.Web.Services.Configuration.TypeElement" /> to which to copy the contents of the collection.</param>
+        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <summary>Copies the elements from the collection to an array, starting at a specified index of the array.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -176,9 +184,9 @@
         <Parameter Name="element" Type="System.Web.Services.Configuration.TypeElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The <see cref="T:System.Web.Services.Configuration.TypeElement" /> to find in the collection.</param>
+        <summary>Returns the zero-based index of a specified <see cref="T:System.Web.Services.Configuration.TypeElement" /> in the collection.</summary>
+        <returns>The zero-based index of the specified <see cref="T:System.Web.Services.Configuration.TypeElement" />, or -1 if the element was not found in the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,9 +206,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The zero-based index into the collection.</param>
+        <summary>Gets or sets the element at a specified index in the collection.</summary>
+        <value>The <see cref="T:System.Web.Services.Configuration.TypeElement" /> that exists at the specified index.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -220,10 +228,11 @@
         <Parameter Name="key" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="key">The key of the <see cref="T:System.Web.Services.Configuration.TypeElement" /> to get or set in the collection.</param>
+        <summary>Gets or sets the <see cref="T:System.Web.Services.Configuration.TypeElement" /> that has the specified key in the collection.</summary>
+        <value>The <see cref="T:System.Web.Services.Configuration.TypeElement" /> with the specified key.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Collections.Generic.KeyNotFoundException">The <see cref="T:System.Web.Services.Configuration.TypeElement" /> with the specified key was not found in the collection.</exception>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -242,8 +251,8 @@
         <Parameter Name="element" Type="System.Web.Services.Configuration.TypeElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Web.Services.Configuration.TypeElement" /> to remove from the collection.</param>
+        <summary>Removes a specified <see cref="T:System.Web.Services.Configuration.TypeElement" /> from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -263,8 +272,8 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The zero-based index of the <see cref="T:System.Web.Services.Configuration.TypeElement" /> to remove from the collection.</param>
+        <summary>Removes the element at the specified index in the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -284,8 +293,8 @@
         <Parameter Name="key" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="key">The key of the <see cref="T:System.Web.Services.Configuration.TypeElement" /> to be removed from the collection.</param>
+        <summary>Removes the <see cref="T:System.Web.Services.Configuration.TypeElement" /> with the specified key from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

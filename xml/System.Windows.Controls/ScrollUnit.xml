@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the type of unit that is used by the <see cref="P:System.Windows.Controls.VirtualizingPanel.ScrollUnit" /> attached property.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Windows.Controls.ScrollUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="P:System.Windows.Controls.VirtualizingPanel.ScrollUnit" /> is measured in terms of the items that are displayed in the panel.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pixel">
@@ -43,7 +43,7 @@
         <ReturnType>System.Windows.Controls.ScrollUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="P:System.Windows.Controls.VirtualizingPanel.ScrollUnit" /> is measured in terms of [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)].</summary>
       </Docs>
     </Member>
   </Members>

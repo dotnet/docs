@@ -16,8 +16,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the collection of services to be added to the workflow runtime engine.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ Represents the services specified by the <`Services`> element in a configuration file.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +42,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElementCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,9 +62,11 @@
         <Parameter Name="serviceSettings" Type="System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement" />
       </Parameters>
       <Docs>
-        <param name="serviceSettings">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceSettings">A <see cref="T:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement" /> that represents a service to be initialized and activated by the workflow runtime engine.</param>
+        <summary>Adds a <see cref="T:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement" /> to this <see cref="T:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElementCollection" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="serviceSettings" /> is a null reference (<see langword="Nothing" /> in Visual Basic)</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateNewElement">
@@ -70,9 +83,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a new <see cref="T:System.Configuration.ConfigurationElement" />.</summary>
+        <returns>An empty <see cref="T:System.Configuration.ConfigurationElement" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An empty <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement> is created and returned.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetElementKey">
@@ -91,10 +111,17 @@
         <Parameter Name="settings" Type="System.Configuration.ConfigurationElement" />
       </Parameters>
       <Docs>
-        <param name="settings">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="settings">A <see cref="T:System.Configuration.ConfigurationElement" /> for which to return a key.</param>
+        <summary>Returns a key for the specified <see cref="T:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement" />.</summary>
+        <returns>The assembly-qualified type name of the service for the <see cref="T:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement" /> specified by <paramref name="settings" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `settings` should specify a <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement>. The <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement.Type%2A?displayProperty=fullName> for `settings` is returned. This property holds the assembly-qualified type name of the service specified by the <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

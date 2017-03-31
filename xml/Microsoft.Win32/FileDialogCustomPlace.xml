@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an entry in a <see cref="T:Microsoft.Win32.FileDialog" /> custom place list.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Starting in [!INCLUDE[TLA#tla_winvista](~/includes/tlasharptla-winvista-md.md)], open and save file dialog boxes have a **Favorite Links** panel on the left side of the dialog box that allows the user to quickly navigate to a different location. These links are called custom places. This class allows you to modify the list that appears when your application uses a file dialog box. For the list of known folders for custom places, see <xref:Microsoft.Win32.FileDialogCustomPlaces>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,8 +35,8 @@
         <Parameter Name="knownFolder" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="knownFolder">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="knownFolder">The GUID of a known folder.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Win32.FileDialogCustomPlace" /> class with the specified known folder GUID.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +53,8 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="path">The path for the folder.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Win32.FileDialogCustomPlace" /> class with the specified path.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,9 +71,16 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the GUID of the known folder for the custom place.</summary>
+        <value>The GUID of a known folder.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ GUIDs are associated with the known folders. For the list of known folders, see <xref:Microsoft.Win32.FileDialogCustomPlaces>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Path">
@@ -82,8 +96,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the file path for the custom place.</summary>
+        <value>The path for a custom place.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

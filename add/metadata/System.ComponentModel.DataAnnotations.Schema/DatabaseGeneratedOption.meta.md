@@ -1,4 +1,5 @@
 ---
 uid: System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

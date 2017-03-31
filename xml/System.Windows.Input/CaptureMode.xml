@@ -10,8 +10,17 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the mouse capture policies.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When <xref:System.Windows.Input.CaptureMode> is set to Element, mouse capture is applied only to the element which has captured the mouse.  
+  
+ When <xref:System.Windows.Input.CaptureMode> is set to SubTree, mouse capture is applied to the element that has mouse capture or one of its child elements if the mouse is over the child element.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Element">
@@ -27,7 +36,7 @@
         <ReturnType>System.Windows.Input.CaptureMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Mouse capture is applied to a single element.  Mouse input goes to the captured element.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -43,7 +52,7 @@
         <ReturnType>System.Windows.Input.CaptureMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No mouse capture.  Mouse input goes to the element under the mouse.</summary>
       </Docs>
     </Member>
     <Member MemberName="SubTree">
@@ -59,7 +68,7 @@
         <ReturnType>System.Windows.Input.CaptureMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Mouse capture is applied to a subtree of elements.  If the mouse is over a child of the element with capture, mouse input is sent to the child element.  Otherwise, mouse input is sent to the element with mouse capture.</summary>
       </Docs>
     </Member>
   </Members>

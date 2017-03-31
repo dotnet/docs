@@ -1,9 +1,13 @@
 ---
 uid: System.Data.Objects.DataClasses.EdmEntityTypeAttribute
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Objects.DataClasses.EdmEntityTypeAttribute.#ctor
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

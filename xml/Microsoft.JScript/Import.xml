@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Imports namespaces for use in code. This class belongs to the abstract syntax tree category.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,9 +32,9 @@
         <Parameter Name="engine" Type="Microsoft.JScript.Vsa.VsaEngine" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="engine">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The namespace to import.</param>
+        <param name="engine">A reference to the scripting engine.</param>
+        <summary>Imports the specified namespace for use by the specified scripting engine.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

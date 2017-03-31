@@ -1,64 +1,104 @@
 ---
 uid: System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet.Dispose(System.Boolean)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet.Delete
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet.FindByName(System.DirectoryServices.ActiveDirectory.DirectoryContext,System.String)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet.#ctor
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet.Site
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet.Dispose
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet.Name
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet.Save
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet.Dispose
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet.#ctor(System.DirectoryServices.ActiveDirectory.DirectoryContext,System.String)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet.ToString
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet.GetDirectoryEntry
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet.Location
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet.#ctor(System.DirectoryServices.ActiveDirectory.DirectoryContext,System.String,System.String)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---

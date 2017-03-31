@@ -1,49 +1,49 @@
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizationDictionaryEnumerator
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizationDictionaryEnumerator.MoveNext
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizationDictionaryEnumerator.System#Collections#IDictionaryEnumerator#Value
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizationDictionaryEnumerator.Current
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizationDictionaryEnumerator.Entry
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizationDictionaryEnumerator.Key
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizationDictionaryEnumerator.System#Collections#IDictionaryEnumerator#Key
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizationDictionaryEnumerator.Reset
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizationDictionaryEnumerator.System#Collections#IEnumerator#Current
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizationDictionaryEnumerator.Value
-internalonly: False
+manager: "martinek"
 ---

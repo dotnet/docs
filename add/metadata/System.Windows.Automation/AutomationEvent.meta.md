@@ -1,9 +1,13 @@
 ---
 uid: System.Windows.Automation.AutomationEvent
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.AutomationEvent.LookupById(System.Int32)
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---

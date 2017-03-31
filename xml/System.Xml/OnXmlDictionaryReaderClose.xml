@@ -25,8 +25,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="reader">To be added.</param>
-    <summary>To be added.</summary>
+    <param name="reader">The <see cref="T:System.Xml.XmlDictionaryReader" /> that fires the <c>OnClose</c> event.</param>
+    <summary>
+      <see langword="delegate" /> for a callback method when closing the reader.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

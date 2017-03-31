@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Serves as the abstract base class for ASP.NET file parsers.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.TemplateParser> class provides the common functionality for parser classes. Because the <xref:System.Web.UI.TemplateParser> class is abstract, an instance of this class is not created directly.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ParseFile">
@@ -32,10 +39,21 @@
         <Parameter Name="virtualPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="physicalPath">To be added.</param>
-        <param name="virtualPath">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="physicalPath">The physical path of the file to parse. <c>physicalPath</c> has precedence over <c>virtualPath</c>.</param>
+        <param name="virtualPath">The virtual path of the file to parse.</param>
+        <summary>Parses the content of the file that is specified by either its virtual or physical path.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a physical path is specified, it is used over the virtual path for locating the file to parse.  
+  
+ If the path to the file to parse is a circular reference; that is, it refers to the same file that the parser is currently parsing, an <xref:System.Web.HttpException> exception is thrown.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">
+          <paramref name="physicalPath" /> or <paramref name="virtualPath" /> refers to the file currently being parsed.</exception>
       </Docs>
     </Member>
     <Member MemberName="ParseTemplate">
@@ -56,11 +74,12 @@
         <Parameter Name="ignoreFilter" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="content">To be added.</param>
-        <param name="virtualPath">To be added.</param>
-        <param name="ignoreFilter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="content">The content.</param>
+        <param name="virtualPath">The virtual path.</param>
+        <param name="ignoreFilter">
+          <see langword="true" /> to ignore the filter; otherwise, <see langword="false" />.</param>
+        <summary>Parses the template.</summary>
+        <returns>Returns the template.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,8 +99,8 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The error message text used to create a new <see cref="T:System.Web.ParserError" />.</param>
+        <summary>Reports a process error by creating a new <see cref="T:System.Web.ParserError" /> object with the specified message and adding it to a <see cref="T:System.Web.ParserErrorCollection" /> collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,9 +120,10 @@
         <Parameter Name="ex" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="ex">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="ex">The <see cref="T:System.Exception" /> used to create a new <see cref="T:System.Web.ParserError" />.</param>
+        <summary>Reports a parser exception by creating a new <see cref="T:System.Web.ParserError" /> object as the specified <see cref="T:System.Exception" /> exception and adding it to a <see cref="T:System.Web.ParserErrorCollection" /> collection.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Web.HttpCompileException">The <see cref="T:System.Exception" /> to process is a compiler error.</exception>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -119,8 +139,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the string that contains the data to be parsed.</summary>
+        <value>The data to be parsed.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

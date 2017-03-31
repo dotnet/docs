@@ -8,8 +8,15 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Declares the members required to support enumerators for results and associated segments on an [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)] <c>$expand</c> query option.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Expand providers can generate enumerations that implement this interface to reshape expanded properties.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ExpandedElement">
@@ -25,8 +32,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the element with expanded properties.</summary>
+        <value>The object in a property expanded by <see cref="T:System.Data.Services.IExpandedResult" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,9 +53,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the property for which to get enumerable results.</param>
+        <summary>Gets the value for a named property of the result.</summary>
+        <returns>The value of the property.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,4 +1,6 @@
 ---
 uid: System.Collections.Concurrent.EnumerablePartitionerOptions
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

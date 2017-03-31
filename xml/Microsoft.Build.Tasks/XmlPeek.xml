@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>A task that returns values as specified by XPath Query from an XML file.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a task that returns values as specified by XPath Query from an XML file.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,8 +44,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Executes the XMLPeek task.</summary>
+        <returns>Returns true if transformation succeeds; false otherwise.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,8 +62,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the namespaces for XPath query's prefixes.</summary>
+        <value>Returns the namespaces.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,8 +80,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the XPath Query.</summary>
+        <value>Returns the XPath Query.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,8 +103,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the results returned by this task.</summary>
+        <value>Returns the results.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,8 +121,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the XML input as a string.</summary>
+        <value>Returns the XML input as a string.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -139,8 +139,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the XML input as a file path.</summary>
+        <value>Returns the XML input as a file path.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

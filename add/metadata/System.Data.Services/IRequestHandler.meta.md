@@ -1,9 +1,13 @@
 ---
 uid: System.Data.Services.IRequestHandler
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Services.IRequestHandler.ProcessRequestForMessage(System.IO.Stream)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

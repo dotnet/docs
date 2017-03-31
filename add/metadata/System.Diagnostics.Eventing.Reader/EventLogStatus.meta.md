@@ -1,14 +1,17 @@
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogStatus
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogStatus.StatusCode
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogStatus.LogName
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---

@@ -1,24 +1,34 @@
 ---
 uid: System.Windows.Controls.Ribbon.RibbonQuickAccessToolBarCloneEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.RibbonQuickAccessToolBarCloneEventArgs.#ctor(System.Windows.UIElement)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.RibbonQuickAccessToolBarCloneEventArgs.InstanceToBeCloned
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.RibbonQuickAccessToolBarCloneEventArgs.InvokeEventHandler(System.Delegate,System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.RibbonQuickAccessToolBarCloneEventArgs.CloneInstance
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

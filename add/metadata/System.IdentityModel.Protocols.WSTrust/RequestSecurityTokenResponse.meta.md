@@ -1,49 +1,65 @@
 ---
 uid: System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse.RequestedTokenCancelled
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse.IsFinal
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse.RequestedProofToken
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse.RequestedAttachedReference
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse.RequestedUnattachedReference
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse.#ctor(System.IdentityModel.Protocols.WSTrust.WSTrustMessage)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse.Status
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse.#ctor
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse.RequestedSecurityToken
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

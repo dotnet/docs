@@ -8,7 +8,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Common interface for all chart elements that support image maps.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -25,8 +25,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the custom attributes of a map area.</summary>
+        <value>A <see langword="string" /> value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a postback value for the map area.</summary>
+        <value>A <see langword="string" /> value that represents the postback value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +61,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets custom data for the map area.</summary>
+        <value>An <see cref="T:System.Object" /> that represents the custom data tag.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,8 +79,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a tooltip for the map area.</summary>
+        <value>A <see langword="string" /> value that represents the tooltip.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,8 +97,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the URL for the map area.</summary>
+        <value>A <see langword="string" /> value that represents the URL of the map area.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

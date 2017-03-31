@@ -13,8 +13,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Notifies workflow debugger that code condition evaluation events have occurred.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ This interface is implemented by the workflow runtime engine.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="NotifyHandlerInvoked">
@@ -31,7 +42,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Called after a code condition handler is invoked.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +62,8 @@
         <Parameter Name="delegateHandler" Type="System.Delegate" />
       </Parameters>
       <Docs>
-        <param name="delegateHandler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="delegateHandler">The code condition handler that will be invoked.</param>
+        <summary>Called before a code condition handler is invoked.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

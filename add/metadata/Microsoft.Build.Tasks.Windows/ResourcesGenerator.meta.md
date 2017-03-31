@@ -1,29 +1,41 @@
 ---
 uid: Microsoft.Build.Tasks.Windows.ResourcesGenerator
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Windows.ResourcesGenerator.Execute
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Windows.ResourcesGenerator.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Windows.ResourcesGenerator.OutputResourcesFile
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Windows.ResourcesGenerator.ResourceFiles
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Windows.ResourcesGenerator.OutputPath
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

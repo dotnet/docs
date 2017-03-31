@@ -38,8 +38,33 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides the logic to establish a timer and to wait, asynchronously, for timer's expiration.  This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ When notified that its timer has expired, a <xref:System.Workflow.Activities.DelayActivity> completes its execution.  
+  
+ You can set a time out on the <xref:System.Workflow.Activities.DelayActivity> so that your workflow pauses before resuming execution. You specify the <xref:System.Workflow.Activities.DelayActivity.TimeoutDuration%2A> using <xref:System.TimeSpan>. This causes your workflow to pause until the specified <xref:System.TimeSpan> has elapsed.  
+  
+ The <xref:System.Workflow.Activities.DelayActivity> class runs the code method associated with the <xref:System.Workflow.Activities.DelayActivity.InitializeTimeoutDuration> event before the activity starts and the code-beside method can be used to initialize the <xref:System.Workflow.Activities.DelayActivity.TimeoutDuration%2A> property.  
+  
+ The <xref:System.Workflow.Activities.DelayActivity> is guaranteed to complete no sooner than the indicated <xref:System.Workflow.Activities.DelayActivity.TimeoutDuration%2A>. The delay can take longer because the timer notification might occur some time after the <xref:System.Workflow.Activities.DelayActivity.TimeoutDuration%2A> is reached. One reason for a longer delay is if the workflow is running under high system stress in a server environment.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a new instance of the <xref:System.Workflow.Activities.DelayActivity> class.  This code example is part of the SimpleStateMachineWorkflow SDK Sample from the StateMachineWorkflow.cs file. For more information, see Simple State Machine.  
+  
+ [!code-csharp[wf_samples#188](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#188)]
+ [!code-vb[wf_samples#188](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#188)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -53,8 +78,18 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.DelayActivity" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to initialize a new instance of the <xref:System.Workflow.Activities.DelayActivity> class.  This code example is part of the SimpleStateMachineWorkflow SDK Sample from the StateMachineWorkflow.cs file. For more information, see [Simple State Machine](http://msdn.microsoft.com/en-us/1974edbd-253d-4e01-9095-38ff9c3e749e).  
+  
+ [!code-csharp[wf_samples#188](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#188)]
+ [!code-vb[wf_samples#188](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#188)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -70,8 +105,8 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The user-defined name of the activity.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.DelayActivity" /> class using the name of the activity.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -182,8 +217,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs before the time-out duration starts.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event should not be used to set the <xref:System.Workflow.Activities.DelayActivity.TimeoutDuration%2A> for a <xref:System.Workflow.Activities.DelayActivity>. The time-out duration should be set in the workflow's `InitializeComponent` method instead.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InitializeTimeoutDurationEvent">
@@ -199,8 +241,15 @@
         <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="E:System.Workflow.Activities.DelayActivity.InitializeTimeoutDuration" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnClosed">
@@ -237,9 +286,16 @@
         <ReturnType>System.IComparable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the name of the workflow queue that will be delivered when the timer expires.</summary>
+        <value>The name of the workflow queue.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The name of the workflow queue is set by the <xref:System.Workflow.Runtime.WorkflowQueuingService.CreateWorkflowQueue%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Workflow.Activities.IEventActivity.Subscribe">
@@ -259,10 +315,12 @@
         <Parameter Name="parentEventHandler" Type="System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.QueueEventArgs&gt;" />
       </Parameters>
       <Docs>
-        <param name="parentContext">To be added.</param>
-        <param name="parentEventHandler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="parentContext">The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> that represents the execution environment of the <see cref="T:System.Workflow.ComponentModel.Activity" />.</param>
+        <param name="parentEventHandler">The <see cref="T:System.EventHandler" /> for the parent event.</param>
+        <summary>Creates the subscription of the <see cref="T:System.Workflow.Activities.DelayActivity" /> to an event.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="parentContext" /> or <paramref name="parentEventHandler" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Workflow.Activities.IEventActivity.Unsubscribe">
@@ -282,10 +340,12 @@
         <Parameter Name="parentEventHandler" Type="System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.QueueEventArgs&gt;" />
       </Parameters>
       <Docs>
-        <param name="parentContext">To be added.</param>
-        <param name="parentEventHandler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="parentContext">The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> that represents the execution environment of the <see cref="T:System.Workflow.ComponentModel.Activity" />.</param>
+        <param name="parentEventHandler">The <see cref="T:System.EventHandler" /> for the parent event.</param>
+        <summary>Cancels the subscription of the <see cref="T:System.Workflow.Activities.DelayActivity" /> to an event.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="parentContext" /> or <paramref name="parentEventHandler" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.QueueEventArgs&gt;.OnEvent">
@@ -305,9 +365,9 @@
         <Parameter Name="e" Type="System.Workflow.ComponentModel.QueueEventArgs" />
       </Parameters>
       <Docs>
-        <param name="sender">To be added.</param>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="sender">The object that raised the event.</param>
+        <param name="e">The previously typed event arguments.</param>
+        <summary>Defines the processing procedure when the subscribed-to event occurs.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -332,9 +392,24 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets and sets the duration of the delay in the workflow.</summary>
+        <value>A <see cref="T:System.TimeSpan" /> that indicates the length of the delay in the workflow.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The time period set in this property determines the time the workflow will sit idle before the workflow proceeds to the next activity.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to set the value of the <xref:System.Workflow.Activities.DelayActivity.TimeoutDuration%2A> property to 3 seconds. This code assumes that `delay2` is of type <xref:System.Workflow.Activities.DelayActivity>. This code example is part of the SimpleStateMachineWorkflow SDK Sample from the StateMachineWorkflow.cs file. For more information, see [Simple State Machine](http://msdn.microsoft.com/en-us/1974edbd-253d-4e01-9095-38ff9c3e749e).  
+  
+ [!code-csharp[wf_samples#190](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#190)]
+ [!code-vb[wf_samples#190](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#190)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TimeoutDurationProperty">
@@ -350,8 +425,23 @@
         <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="P:System.Workflow.Activities.DelayActivity.TimeoutDuration" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Workflow.Activities.DelayActivity.TimeoutDurationProperty> field.  
+  
+ [!code-csharp[WF_Samples#190](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#190)]
+ [!code-vb[WF_Samples#190](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#190)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

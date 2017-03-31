@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a data-binding handler for a data-bound control at design time.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.TextDataBindingHandler> object is a data-binding handler that can provide data to a data-bound text property at design time. Data-binding handlers are used when there is no designer for the control present that would otherwise provide the data for the data bound property.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.TextDataBindingHandler" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,10 +54,22 @@
         <Parameter Name="control" Type="System.Web.UI.Control" />
       </Parameters>
       <Docs>
-        <param name="designerHost">To be added.</param>
-        <param name="control">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="designerHost">An object implementing <see cref="T:System.ComponentModel.Design.IDesignerHost" /> for the document that contains the control.</param>
+        <param name="control">The <see cref="T:System.Web.UI.Control" /> to data-bind.</param>
+        <summary>Data-binds the specified control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.TextDataBindingHandler.DataBindControl%2A> method of <xref:System.Web.UI.Design.TextDataBindingHandler> sets the `Text` property of the control, if it exists, to a sample data string.  
+  
+ This method should be implemented in a derived class to provide functionality to a custom data-binding handler. The logic for the data-binding should be implemented within this method, and can be specific to the type or types that the handler is binding a property or properties on.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Most data binding handlers need to examine the data-bindings collection on the control using the <see cref="T:System.Web.UI.IDataBindingsAccessor" /> interface to determine if any specific properties it can handle are data-bound.</para>
+        </block>
       </Docs>
     </Member>
   </Members>

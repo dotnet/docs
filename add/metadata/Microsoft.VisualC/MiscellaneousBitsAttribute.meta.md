@@ -1,14 +1,17 @@
 ---
 uid: Microsoft.VisualC.MiscellaneousBitsAttribute
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.MiscellaneousBitsAttribute.#ctor(System.Int32)
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.MiscellaneousBitsAttribute.m_dwAttrs
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---

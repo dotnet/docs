@@ -1,49 +1,63 @@
 ---
 uid: System.Web.UI.Design.WebControls.ContentDesigner
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.ContentDesigner.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.ContentDesigner.GetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.ContentDesigner.AllowResize
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.ContentDesigner.GetDesignTimeHtml(System.Web.UI.Design.DesignerRegionCollection)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.ContentDesigner.GetPersistenceContent
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.ContentDesigner.PreFilterEvents(System.Collections.IDictionary)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.ContentDesigner.ActionLists
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.ContentDesigner.PostFilterProperties(System.Collections.IDictionary)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.ContentDesigner.GetDesignTimeHtml
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.ContentDesigner.SetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -1,34 +1,41 @@
 ---
 uid: System.Web.UI.Design.SupportsPreviewControlAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.SupportsPreviewControlAttribute.#ctor(System.Boolean)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.SupportsPreviewControlAttribute.Default
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.SupportsPreviewControlAttribute.SupportsPreviewControl
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.SupportsPreviewControlAttribute.Equals(System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.SupportsPreviewControlAttribute.GetHashCode
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.SupportsPreviewControlAttribute.IsDefaultAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

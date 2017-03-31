@@ -1,9 +1,9 @@
 ---
 uid: System.Runtime.Remoting.Channels.ISecurableChannel
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Channels.ISecurableChannel.IsSecured
-internalonly: False
+manager: "ghogen"
 ---

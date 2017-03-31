@@ -1,24 +1,34 @@
 ---
 uid: System.ServiceModel.Security.X509PeerCertificateAuthentication
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.X509PeerCertificateAuthentication.CustomCertificateValidator
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.X509PeerCertificateAuthentication.RevocationMode
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.X509PeerCertificateAuthentication.TrustedStoreLocation
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.X509PeerCertificateAuthentication.CertificateValidationMode
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

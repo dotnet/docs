@@ -1,29 +1,45 @@
 ---
 uid: System.Windows.Media.Animation.LinearRectKeyFrame
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.LinearRectKeyFrame.#ctor(System.Windows.Rect)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.LinearRectKeyFrame.#ctor
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.Animation.LinearRectKeyFrame.#ctor(System.Windows.Rect)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.LinearRectKeyFrame.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.LinearRectKeyFrame.InterpolateValueCore(System.Windows.Rect,System.Double)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Animation.LinearRectKeyFrame.#ctor(System.Windows.Rect,System.Windows.Media.Animation.KeyTime)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.LinearRectKeyFrame.CreateInstanceCore
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

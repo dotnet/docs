@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents configuration for a rule-based constructor parameter import.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Registration.ParameterImportBuilder" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,9 +47,9 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of the parameter to define.</typeparam>
+        <summary>Defines the specified parameter as an imported parameter.</summary>
+        <returns>Default of <paramref name="T" />, but this method should only be referenced and never invoked.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,11 +72,13 @@
         <Parameter Name="configure" Type="System.Action&lt;System.ComponentModel.Composition.Registration.ImportBuilder&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="configure">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of the parameter to define.</typeparam>
+        <param name="configure">An object that contains configuration information for the imported parameter.</param>
+        <summary>Defines the specified parameter as an imported parameter that has the specified configuration.</summary>
+        <returns>Default of <paramref name="T" />, but this method should only be referenced and never invoked.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="configure" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

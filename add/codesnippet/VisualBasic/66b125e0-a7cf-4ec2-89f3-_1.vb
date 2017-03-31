@@ -1,1 +1,0 @@
-        Dim zoneIdPerm1 As New ZoneIdentityPermission(SecurityZone.Intranet)

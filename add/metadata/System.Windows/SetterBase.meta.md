@@ -1,14 +1,19 @@
 ---
 uid: System.Windows.SetterBase
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.SetterBase.IsSealed
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.SetterBase.CheckSealed
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

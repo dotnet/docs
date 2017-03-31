@@ -1,4 +1,6 @@
 ---
 uid: System.Runtime.CompilerServices.IsImplicitlyDereferenced
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

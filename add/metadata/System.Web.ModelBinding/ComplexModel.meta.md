@@ -1,24 +1,34 @@
 ---
 uid: System.Web.ModelBinding.ComplexModel
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ModelBinding.ComplexModel.PropertyMetadata
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ModelBinding.ComplexModel.Results
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ModelBinding.ComplexModel.#ctor(System.Web.ModelBinding.ModelMetadata,System.Collections.Generic.IEnumerable{System.Web.ModelBinding.ModelMetadata})
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ModelBinding.ComplexModel.ModelMetadata
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

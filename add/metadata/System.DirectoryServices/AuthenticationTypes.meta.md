@@ -1,4 +1,6 @@
 ---
 uid: System.DirectoryServices.AuthenticationTypes
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---

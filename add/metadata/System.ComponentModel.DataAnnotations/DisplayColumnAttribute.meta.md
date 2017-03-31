@@ -1,34 +1,47 @@
 ---
 uid: System.ComponentModel.DataAnnotations.DisplayColumnAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.DisplayColumnAttribute.SortDescending
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.DisplayColumnAttribute.#ctor(System.String,System.String,System.Boolean)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.DisplayColumnAttribute.#ctor(System.String,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.DisplayColumnAttribute.#ctor(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.DisplayColumnAttribute.SortColumn
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.DataAnnotations.DisplayColumnAttribute.#ctor
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.DisplayColumnAttribute.DisplayColumn
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

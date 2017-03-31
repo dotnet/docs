@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a span of continuous text in a <see cref="T:System.Windows.Automation.TextPattern" /> container.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Automation.Text.TextPatternRange> can represent an insertion point, a subset, or all of the text in a <xref:System.Windows.Automation.TextPattern> container.  
+  
+ A <xref:System.Windows.Automation.Text.TextPatternRange> will become invalid if one of the following occurs: the text in the <xref:System.Windows.Automation.TextPattern> container changes because of some user activity, or the <xref:System.Windows.Automation.ValuePattern.SetValue%2A> method of <xref:System.Windows.Automation.ValuePattern> is used to programmatically change the value of the text in the <xref:System.Windows.Automation.TextPattern> container.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AddToSelection">
@@ -29,8 +38,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Adds to the collection of highlighted text in a text container that supports multiple, disjoint selections.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The text insertion point moves to the area of the new selection.  
+  
+ Providing a degenerate text range moves the insertion point.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">If text provider does not support multiple, disjoint selections (for example, <see cref="P:System.Windows.Automation.TextPattern.SupportedTextSelection" /> must have a value of <see langword="Multiple" />).</exception>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -47,9 +66,25 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Retrieves a new <see cref="T:System.Windows.Automation.Text.TextPatternRange" /> identical to the original <see cref="T:System.Windows.Automation.Text.TextPatternRange" /> and inheriting all properties of the original.</summary>
+        <returns>The new text range. A null reference (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]) is never returned.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Alternatively, create a new <xref:System.Windows.Automation.TextPattern.DocumentRange%2A> from the <xref:System.Windows.Automation.TextPattern> and move the two endpoints to correspond with the endpoints of the original text range.  
+  
+ The new range can be manipulated independently from the original.  
+  
+   
+  
+## Examples  
+ [!code-csharp[UIATextPattern_snip#1060](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#1060)]  
+  
+ [!code-vb[UIATextPattern_snip#2060](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATextPattern_snip/VisualBasic/SearchWindow.vb#2060)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Compare">
@@ -68,10 +103,21 @@
         <Parameter Name="range" Type="System.Windows.Automation.Text.TextPatternRange" />
       </Parameters>
       <Docs>
-        <param name="range">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="range">A text range to compare.</param>
+        <summary>Returns a <see cref="T:System.Boolean" /> value indicating whether the span (the <see cref="F:System.Windows.Automation.Text.TextPatternRangeEndpoint.Start" /> endpoint to the <see cref="F:System.Windows.Automation.Text.TextPatternRangeEndpoint.End" /> endpoint) of a text range is the same as another text range.</summary>
+        <returns>
+          <see langword="true" /> if the span of both text ranges is identical; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[UIATextPattern_snip#1061](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#1061)]  
+  
+ [!code-vb[UIATextPattern_snip#2061](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATextPattern_snip/VisualBasic/SearchWindow.vb#2061)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">If the range being compared does not come from the same text provider.</exception>
       </Docs>
     </Member>
     <Member MemberName="CompareEndpoints">
@@ -92,12 +138,32 @@
         <Parameter Name="targetEndpoint" Type="System.Windows.Automation.Text.TextPatternRangeEndpoint" />
       </Parameters>
       <Docs>
-        <param name="endpoint">To be added.</param>
-        <param name="targetRange">To be added.</param>
-        <param name="targetEndpoint">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="endpoint">The <see cref="F:System.Windows.Automation.Text.TextPatternRangeEndpoint.Start" /> or <see cref="F:System.Windows.Automation.Text.TextPatternRangeEndpoint.End" /> endpoint of the caller.</param>
+        <param name="targetRange">The target range for comparison.</param>
+        <param name="targetEndpoint">The <see cref="F:System.Windows.Automation.Text.TextPatternRangeEndpoint.Start" /> or <see cref="F:System.Windows.Automation.Text.TextPatternRangeEndpoint.End" /> endpoint of the target.</param>
+        <summary>Returns an <see cref="T:System.Int32" /> indicating whether two text ranges have identical endpoints.</summary>
+        <returns>Returns a negative value if the caller's endpoint occurs earlier in the text than the target endpoint.  
+  
+ Returns zero if the caller's endpoint is at the same location as the target endpoint.  
+  
+ Returns a positive value if the caller's endpoint occurs later in the text than the target endpoint.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By comparing the starting and ending endpoints of the same text range you can identify if a text range is degenerate or if the endpoints are in the order of logical text flow.  
+  
+   
+  
+## Examples  
+ [!code-csharp[UIATextPattern_snip#1062](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#1062)]  
+  
+ [!code-vb[UIATextPattern_snip#2062](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATextPattern_snip/VisualBasic/SearchWindow.vb#2062)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">If range is a null reference (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]).</exception>
+        <exception cref="T:System.ArgumentException">If range is from another container.</exception>
       </Docs>
     </Member>
     <Member MemberName="ExpandToEnclosingUnit">
@@ -116,9 +182,59 @@
         <Parameter Name="unit" Type="System.Windows.Automation.Text.TextUnit" />
       </Parameters>
       <Docs>
-        <param name="unit">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="unit">The textual unit.</param>
+        <summary>Expands the text range to the specified <see cref="T:System.Windows.Automation.Text.TextUnit" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the range is already an exact quantity of the specified units then it remains unchanged.  
+  
+ In order for the <xref:System.Windows.Automation.Text.TextPatternRange.ExpandToEnclosingUnit%2A> method to execute successfully, a sequence of actions is performed behind the scenes.  
+  
+1.  The text range is normalized; that is, the text range is collapsed to a degenerate range at the <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint> endpoint, making the <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint> endpoint superfluous. This step is necessary to remove ambiguity in situations where a text range spans `unit` boundaries; for example, "{The U}RL [http://www.microsoft.com](http://www.microsoft.com) is embedded in text" where "{" and "}" are the text range endpoints.  
+  
+2.  The resulting range is moved backward in the <xref:System.Windows.Automation.TextPattern.DocumentRange%2A> to the beginning of the requested `unit` boundary.  
+  
+3.  The range is moved forward or backward in the <xref:System.Windows.Automation.TextPattern.DocumentRange%2A> by the requested number of `unit` boundaries.  
+  
+4.  The range is then expanded from a degenerate range state by moving the <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint> endpoint by one requested `unit` boundary.  
+  
+ ![Range adjustments by Move & ExpandToEnclosingUnit](~/add/media/uia-textpattern-moveandexpand-examples.png "Range adjustments by Move & ExpandToEnclosingUnit")  
+Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()  
+  
+> [!NOTE]
+>  These steps are necessary since it is common for a screen reader to read out a full word, sentence, or entire paragraph at the insertion point or any virtual cursor position.  
+  
+ <xref:System.Windows.Automation.Text.TextPatternRange.ExpandToEnclosingUnit%2A> respects both hidden and visible text. The UI Automation client can check the <xref:System.Windows.Automation.TextPattern.IsHiddenAttribute> for text visibility.  
+  
+ <xref:System.Windows.Automation.Text.TextPatternRange.ExpandToEnclosingUnit%2A> defers to the next largest <xref:System.Windows.Automation.Text.TextUnit> supported if the given <xref:System.Windows.Automation.Text.TextUnit> is not supported by the control.  
+  
+ The order, from smallest unit to largest, is listed below.  
+  
+-   <xref:System.Windows.Automation.Text.TextUnit>  
+  
+-   <xref:System.Windows.Automation.Text.TextUnit>  
+  
+-   <xref:System.Windows.Automation.Text.TextUnit>  
+  
+-   <xref:System.Windows.Automation.Text.TextUnit>  
+  
+-   <xref:System.Windows.Automation.Text.TextUnit>  
+  
+-   <xref:System.Windows.Automation.Text.TextUnit>  
+  
+-   <xref:System.Windows.Automation.Text.TextUnit>  
+  
+   
+  
+## Examples  
+ [!code-csharp[UIATextPattern_snip#1063](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#1063)]  
+  
+ [!code-vb[UIATextPattern_snip#2063](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATextPattern_snip/VisualBasic/SearchWindow.vb#2063)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FindAttribute">
@@ -139,12 +255,30 @@
         <Parameter Name="backward" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="attribute">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="backward">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="attribute">The attribute to search for.</param>
+        <param name="value">The attribute value to search for. This value must match the type specified for the attribute.</param>
+        <param name="backward">
+          <see langword="true" /> if the last occurring text range should be returned instead of the first; otherwise <see langword="false" />.</param>
+        <summary>Returns a text range subset that has the specified attribute value.</summary>
+        <returns>A text range having a matching attribute and attribute value; otherwise null (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]).</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There is no differentiation between hidden and visible text. UI Automation clients can use <xref:System.Windows.Automation.TextPattern.IsHiddenAttribute> to check text visibility.  
+  
+> [!NOTE]
+>  Use <xref:System.Windows.Automation.TextPattern.DocumentRange%2A> to search the entire document.  
+  
+   
+  
+## Examples  
+ [!code-csharp[UIATextPattern_snip#1064](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#1064)]  
+  
+ [!code-vb[UIATextPattern_snip#2064](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATextPattern_snip/VisualBasic/SearchWindow.vb#2064)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FindText">
@@ -165,12 +299,31 @@
         <Parameter Name="ignoreCase" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <param name="backward">To be added.</param>
-        <param name="ignoreCase">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="text">The text string to search for.</param>
+        <param name="backward">
+          <see langword="true" /> if the last occurring text range should be returned instead of the first; otherwise <see langword="false" />.</param>
+        <param name="ignoreCase">
+          <see langword="true" /> if case should be ignored; otherwise <see langword="false" />.</param>
+        <summary>Returns a text range subset that contains the specified text.</summary>
+        <returns>A text range matching the specified text; otherwise null (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]).</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There is no differentiation between hidden and visible text. UI Automation clients can use <xref:System.Windows.Automation.TextPattern.IsHiddenAttribute> to check text visibility.  
+  
+> [!NOTE]
+>  Use <xref:System.Windows.Automation.TextPattern.DocumentRange%2A> to search the entire document.  
+  
+   
+  
+## Examples  
+ [!code-csharp[UIATextPattern_snip#1065](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#1065)]  
+  
+ [!code-vb[UIATextPattern_snip#2065](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATextPattern_snip/VisualBasic/SearchWindow.vb#2065)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAttributeValue">
@@ -189,10 +342,29 @@
         <Parameter Name="attribute" Type="System.Windows.Automation.AutomationTextAttribute" />
       </Parameters>
       <Docs>
-        <param name="attribute">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="attribute">The text attribute.</param>
+        <summary>Returns the value of the specified attribute across the entire text range.</summary>
+        <returns>Returns the value of the specified attribute. For example, GetAttributeValue(TextPattern.FontNameAttribute) would return a string that represents the font name, if unique, of the text range while GetAttributeValue(TextPattern.IsItalicAttribute) would return a boolean.  
+  
+ Returns <see cref="F:System.Windows.Automation.TextPattern.MixedAttributeValue" /> if the value of the specified attribute varies over the text range.  
+  
+ Returns <see cref="F:System.Windows.Automation.AutomationElement.NotSupported" /> if the specified attribute is not supported by the provider or the control.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There is no differentiation between hidden and visible text. UI Automation clients can use <xref:System.Windows.Automation.TextPattern.IsHiddenAttribute> to check text visibility.  
+  
+   
+  
+## Examples  
+ [!code-csharp[UIATextPattern_snip#1066](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#1066)]  
+  
+ [!code-vb[UIATextPattern_snip#2066](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATextPattern_snip/VisualBasic/SearchWindow.vb#2066)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">If the specified attribute is not valid.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetBoundingRectangles">
@@ -209,9 +381,22 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Retrieves a collection of bounding rectangles for each fully or partially visible line of text in a text range.</summary>
+        <returns>An array of bounding rectangles for each full or partial line of text in a text range.  
+  
+ An empty array for a degenerate text range.  
+  
+ An empty array for a text range that has screen coordinates placing it completely off-screen, scrolled out of view, or obscured by an overlapping window.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[UIATextPattern_snip#1067](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#1067)]  
+  
+ [!code-vb[UIATextPattern_snip#2067](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATextPattern_snip/VisualBasic/SearchWindow.vb#2067)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetChildren">
@@ -228,9 +413,23 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Retrieves a collection of all embedded objects that fall within the text range.</summary>
+        <returns>A collection of all child objects that fall within the range. Children that overlap with the range but are not entirely enclosed by it will also be included in the collection.  
+  
+ Returns an empty collection if there are no child objects.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[UIATextPattern_snip#StartTarget](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#starttarget)]
+ [!code-vb[UIATextPattern_snip#StartTarget](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATextPattern_snip/VisualBasic/SearchWindow.vb#starttarget)]  
+[!code-csharp[UIATextPattern_snip#GetTextElement](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#gettextelement)]
+[!code-vb[UIATextPattern_snip#GetTextElement](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATextPattern_snip/VisualBasic/SearchWindow.vb#gettextelement)]  
+[!code-csharp[UIATextPattern_snip#GetEmbeddedObjects](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#getembeddedobjects)]
+[!code-vb[UIATextPattern_snip#GetEmbeddedObjects](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATextPattern_snip/VisualBasic/SearchWindow.vb#getembeddedobjects)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnclosingElement">
@@ -247,9 +446,23 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the innermost <see cref="T:System.Windows.Automation.AutomationElement" /> that encloses the text range.</summary>
+        <returns>The innermost element enclosing the caller.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The enclosing <xref:System.Windows.Automation.AutomationElement>, typically the text provider that supplies the text range. However, if the text provider supports child elements such as tables or hyperlinks, then the enclosing element could be a descendant of the text provider.  
+  
+   
+  
+## Examples  
+ [!code-csharp[UIATextPattern_snip#1069](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#1069)]  
+  
+ [!code-vb[UIATextPattern_snip#2069](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATextPattern_snip/VisualBasic/SearchWindow.vb#2069)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetText">
@@ -268,10 +481,29 @@
         <Parameter Name="maxLength" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="maxLength">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="maxLength">The maximum length of the string to return. Use <c>-1</c> if no limit is required.</param>
+        <summary>Returns the plain text of the text range.</summary>
+        <returns>The plain text of the text range, possibly truncated at the specified <paramref name="maxLength" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Automation.Text.TextPatternRange.GetText%2A> respects both hidden and visible text. The UI Automation client can check the <xref:System.Windows.Automation.TextPattern.IsHiddenAttribute> for text visibility.  
+  
+ If `maxLength` is greater than the length of the text span of the caller, the string returned will be the plain text of the text range.  
+  
+ <xref:System.Windows.Automation.Text.TextPatternRange.GetText%2A> will not be affected by the order of endpoints in the text flow; it will always return the text between the Start and End endpoints of the text range in the logical text flow order.  
+  
+   
+  
+## Examples  
+ [!code-csharp[UIATextPattern_snip#1070](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#1070)]  
+  
+ [!code-vb[UIATextPattern_snip#2070](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATextPattern_snip/VisualBasic/SearchWindow.vb#2070)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">If <paramref name="maxLength" /> is less than -1.</exception>
       </Docs>
     </Member>
     <Member MemberName="Move">
@@ -291,11 +523,67 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="unit">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="unit">The text unit boundary.</param>
+        <param name="count">The number of text units to move. A positive value moves the text range forward, a negative value moves the text range backward, and 0 has no effect.</param>
+        <summary>Moves the text range the specified number of text units.</summary>
+        <returns>The number of units actually moved. This can be less than the number requested if either of the new text range endpoints is greater than or less than the <see cref="P:System.Windows.Automation.TextPattern.DocumentRange" /> endpoints.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When it is necessary to traverse the content of a text range, a series of steps are involved behind the scenes in order for the <xref:System.Windows.Automation.Text.TextPatternRange.Move%2A> method to execute successfully.  
+  
+1.  The text range is normalized; that is, the text range is collapsed to a degenerate range at the <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint> endpoint, which makes the <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint> endpoint superfluous. This step is necessary to remove ambiguity in situations where a text range spans `unit` boundaries; for example, "{The U}RL [http://www.microsoft.com](http://www.microsoft.com) is embedded in text" where "{" and "}" are the text range endpoints.  
+  
+2.  The resulting range is moved backward in the <xref:System.Windows.Automation.TextPattern.DocumentRange%2A> to the beginning of the requested `unit` boundary.  
+  
+3.  The range is moved forward or backward in the <xref:System.Windows.Automation.TextPattern.DocumentRange%2A> by the requested number of `unit` boundaries.  
+  
+4.  The range is then expanded from a degenerate range state by moving the <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint> endpoint by one requested `unit` boundary.  
+  
+ ![Range adjustments by Move & ExpandToEnclosingUnit](~/add/media/uia-textpattern-moveandexpand-examples.png "Range adjustments by Move & ExpandToEnclosingUnit")  
+Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()  
+  
+ The textual content (or inner text) of a text container and an embedded object, such as a hyperlink or table cell, is exposed as a single, continuous text stream in both the control view and the content view of the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] tree; object boundaries are ignored. If a UI Automation client is retrieving the text for the purpose of reciting, interpreting, or analyzing in some manner, the text range should be checked for special cases, such as a table with textual content or other embedded objects. This can be accomplished by calling <xref:System.Windows.Automation.Text.TextPatternRange.GetChildren%2A> to obtain an <xref:System.Windows.Automation.AutomationElement> for each embedded object and then calling <xref:System.Windows.Automation.TextPattern.RangeFromChild%2A> to obtain a text range for each element; this is done recursively until all textual content has been retrieved.  
+  
+ ![Text ranges spanned by embedded objects.](~/add/media/uia-textpattern-embeddedobjecttextranges.png "Text ranges spanned by embedded objects.")  
+Example of a text stream with embedded objects and their range spans  
+  
+ <xref:System.Windows.Automation.Text.TextPatternRange.Move%2A> respects both hidden and visible text. The UI Automation client can check the <xref:System.Windows.Automation.TextPattern.IsHiddenAttribute> for text visibility.  
+  
+ <xref:System.Windows.Automation.Text.TextPatternRange.Move%2A> defers to the next largest <xref:System.Windows.Automation.Text.TextUnit> supported if the given <xref:System.Windows.Automation.Text.TextUnit> is not supported by the control.  
+  
+ The order, from smallest unit to largest, is listed below.  
+  
+-   <xref:System.Windows.Automation.Text.TextUnit>  
+  
+-   <xref:System.Windows.Automation.Text.TextUnit>  
+  
+-   <xref:System.Windows.Automation.Text.TextUnit>  
+  
+-   <xref:System.Windows.Automation.Text.TextUnit>  
+  
+-   <xref:System.Windows.Automation.Text.TextUnit>  
+  
+-   <xref:System.Windows.Automation.Text.TextUnit>  
+  
+-   <xref:System.Windows.Automation.Text.TextUnit>  
+  
+> [!NOTE]
+>  The text is not altered in any way as the text range just spans a different part of the text.  
+  
+   
+  
+## Examples  
+ [!code-csharp[UIATextPattern_snip#StartTarget](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#starttarget)]
+ [!code-vb[UIATextPattern_snip#StartTarget](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATextPattern_snip/VisualBasic/SearchWindow.vb#starttarget)]  
+[!code-csharp[UIATextPattern_snip#GetTextElement](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#gettextelement)]
+[!code-vb[UIATextPattern_snip#GetTextElement](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATextPattern_snip/VisualBasic/SearchWindow.vb#gettextelement)]  
+[!code-csharp[UIATextPattern_snip#MoveSelection](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#moveselection)]
+[!code-vb[UIATextPattern_snip#MoveSelection](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATextPattern_snip/VisualBasic/SearchWindow.vb#moveselection)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveEndpointByRange">
@@ -316,11 +604,25 @@
         <Parameter Name="targetEndpoint" Type="System.Windows.Automation.Text.TextPatternRangeEndpoint" />
       </Parameters>
       <Docs>
-        <param name="endpoint">To be added.</param>
-        <param name="targetRange">To be added.</param>
-        <param name="targetEndpoint">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="endpoint">The endpoint to move.</param>
+        <param name="targetRange">Another range from the same text provider.</param>
+        <param name="targetEndpoint">An endpoint on the other range.</param>
+        <summary>Moves one endpoint of a text range to the specified endpoint of a second text range.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the endpoint being moved crosses the other endpoint of the same text range then that other endpoint is moved also, resulting in a degenerate range and ensuring the correct ordering of the endpoints (that is, <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint> is always less than or equal to <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint>).  
+  
+   
+  
+## Examples  
+ [!code-csharp[UIATextPattern_snip#1072](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#1072)]  
+  
+ [!code-vb[UIATextPattern_snip#2072](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATextPattern_snip/VisualBasic/SearchWindow.vb#2072)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveEndpointByUnit">
@@ -341,12 +643,58 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="endpoint">To be added.</param>
-        <param name="unit">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="endpoint">The endpoint to move.</param>
+        <param name="unit">The textual unit for moving.</param>
+        <param name="count">The number of units to move. A positive count moves the endpoint forward. A negative count moves backward. A count of 0 has no effect.</param>
+        <summary>Moves one endpoint of the text range the specified number of <see cref="T:System.Windows.Automation.Text.TextUnit" />s within the document range.</summary>
+        <returns>The number of units actually moved, which can be less than the number requested if moving the endpoint runs into the beginning or end of the document.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When it is necessary to traverse the content of a text range, a series of steps are involved behind the scenes in order for the <xref:System.Windows.Automation.Text.TextPatternRange.Move%2A> method to execute successfully.  
+  
+1.  The text range is normalized; that is, the text range is collapsed to a degenerate range at the <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint> endpoint, which makes the <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint> endpoint superfluous. This step is necessary to remove ambiguity in situations where a text range spans `unit` boundaries; for example, "{The U}RL [http://www.microsoft.com](http://www.microsoft.com) is embedded in text" where "{" and "}" are the text range endpoints.  
+  
+2.  The resulting range is moved backward in the <xref:System.Windows.Automation.TextPattern.DocumentRange%2A> to the beginning of the requested `unit` boundary.  
+  
+3.  The range is then expanded from a degenerate range state by moving the <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint> endpoint by one requested `unit` boundary.  
+  
+ ![Range adjustments by Move & ExpandToEnclosingUnit](~/add/media/uia-textpattern-moveandexpand-examples.png "Range adjustments by Move & ExpandToEnclosingUnit")  
+Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()  
+  
+ The textual content (or inner text) of a text container and an embedded object, such as a hyperlink or table cell, is exposed as a single, continuous text stream in both the control view and the content view of the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] tree; object boundaries are ignored. If a UI Automation client is retrieving the text for the purpose of reciting, interpreting, or analyzing in some manner, the text range should be checked for special cases, such as a table with textual content or other embedded objects. This can be accomplished by calling <xref:System.Windows.Automation.Text.TextPatternRange.GetChildren%2A> to obtain an <xref:System.Windows.Automation.AutomationElement> for each embedded object and then calling <xref:System.Windows.Automation.TextPattern.RangeFromChild%2A> to obtain a text range for each element; this is done recursively until all textual content has been retrieved.  
+  
+ ![Text ranges spanned by embedded objects.](~/add/media/uia-textpattern-embeddedobjecttextranges.png "Text ranges spanned by embedded objects.")  
+Example of a text stream with embedded objects and their range spans  
+  
+ <xref:System.Windows.Automation.Text.TextPatternRange.MoveEndpointByUnit%2A> defers to the next largest <xref:System.Windows.Automation.Text.TextUnit> supported if the given <xref:System.Windows.Automation.Text.TextUnit> is not supported by the control.  
+  
+ The order, from smallest unit to largest, is listed below.  
+  
+-   <xref:System.Windows.Automation.Text.TextUnit>  
+  
+-   <xref:System.Windows.Automation.Text.TextUnit>  
+  
+-   <xref:System.Windows.Automation.Text.TextUnit>  
+  
+-   <xref:System.Windows.Automation.Text.TextUnit>  
+  
+-   <xref:System.Windows.Automation.Text.TextUnit>  
+  
+-   <xref:System.Windows.Automation.Text.TextUnit>  
+  
+-   <xref:System.Windows.Automation.Text.TextUnit>  
+  
+   
+  
+## Examples  
+ [!code-csharp[UIATextPattern_snip#1073](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#1073)]  
+  
+ [!code-vb[UIATextPattern_snip#2073](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATextPattern_snip/VisualBasic/SearchWindow.vb#2073)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveFromSelection">
@@ -363,8 +711,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Removes a highlighted section of text, corresponding to the calling text range <see cref="F:System.Windows.Automation.Text.TextPatternRangeEndpoint.Start" /> and <see cref="F:System.Windows.Automation.Text.TextPatternRangeEndpoint.End" /> endpoints, from an existing collection of highlighted text in a text container that supports multiple, disjoint selections.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The text insertion point will move to the area of the removed highlight.  
+  
+ Providing a degenerate text range will move the insertion point.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">If text provider does not support multiple, disjoint selections (for example, <see cref="P:System.Windows.Automation.TextPattern.SupportedTextSelection" /> must have a value of <see langword="Multiple" />).</exception>
       </Docs>
     </Member>
     <Member MemberName="ScrollIntoView">
@@ -383,9 +741,25 @@
         <Parameter Name="alignToTop" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="alignToTop">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="alignToTop">
+          <see langword="true" /> if the text control should be scrolled so the text range is flush with the top of the viewport; <see langword="false" /> if it should be flush with the bottom of the viewport.</param>
+        <summary>Causes the text control to scroll vertically until the text range is visible in the viewport.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Automation.Text.TextPatternRange.ScrollIntoView%2A> respects both hidden and visible text. The UI Automation client can check the <xref:System.Windows.Automation.TextPattern.IsHiddenAttribute> for text visibility. If the text range is hidden, the text control will scroll only if the hidden text has an anchor in the viewport.  
+  
+   
+  
+## Examples  
+ [!code-csharp[UIATextPattern_snip#1074](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#1074)]  
+  
+ [!code-vb[UIATextPattern_snip#2074](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATextPattern_snip/VisualBasic/SearchWindow.vb#2074)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">If scrolling is not supported by the control.</exception>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -402,8 +776,23 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Highlights text in the text control corresponding to the text range <see cref="F:System.Windows.Automation.Text.TextPatternRangeEndpoint.Start" /> and <see cref="F:System.Windows.Automation.Text.TextPatternRangeEndpoint.End" /> endpoints.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a degenerate text range is provided, the text insertion point will move to the <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint> endpoint of the text range.  
+  
+   
+  
+## Examples  
+ [!code-csharp[UIATextPattern_snip#1075](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#1075)]  
+  
+ [!code-vb[UIATextPattern_snip#2075](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATextPattern_snip/VisualBasic/SearchWindow.vb#2075)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">Occurs when text selection is not supported by the text control.</exception>
       </Docs>
     </Member>
     <Member MemberName="TextPattern">
@@ -419,9 +808,18 @@
         <ReturnType>System.Windows.Automation.TextPattern</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Windows.Automation.TextPattern" /> associated with the text range.</summary>
+        <value>The text provider.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[UIATextPattern_snip#1076](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#1076)]  
+  
+ [!code-vb[UIATextPattern_snip#2076](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATextPattern_snip/VisualBasic/SearchWindow.vb#2076)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

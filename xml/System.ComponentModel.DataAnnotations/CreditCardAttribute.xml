@@ -21,8 +21,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies that a data field value is a credit card number.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value is validated using a regular expression. The class does not validate that the credit card number is valid for purchases, only that it is well formed.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,7 +48,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.CreditCardAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,10 +73,18 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to validate.</param>
+        <summary>Determines whether the specified credit card number is valid.</summary>
+        <returns>
+          <see langword="true" /> if the credit card number is valid; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value is validated using a regular expression. The class does not validate that the credit card number is valid for purchases, only that it is well formed.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

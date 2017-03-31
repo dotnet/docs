@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Shell.JumpItemRejectionReason
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

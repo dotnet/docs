@@ -1,24 +1,24 @@
 ---
 uid: System.Runtime.Remoting.Channels.CommonTransportKeys
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Channels.CommonTransportKeys.#ctor
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Channels.CommonTransportKeys.ConnectionId
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Channels.CommonTransportKeys.IPAddress
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Channels.CommonTransportKeys.RequestUri
-internalonly: False
+manager: "ghogen"
 ---

@@ -1,119 +1,143 @@
 ---
 uid: System.Net.Http.Headers.CacheControlHeaderValue
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.CacheControlHeaderValue.MaxStale
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.CacheControlHeaderValue.Parse(System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.CacheControlHeaderValue.NoCache
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.CacheControlHeaderValue.MinFresh
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.CacheControlHeaderValue.SharedMaxAge
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.CacheControlHeaderValue.Extensions
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.CacheControlHeaderValue.NoStore
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.CacheControlHeaderValue.GetHashCode
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.CacheControlHeaderValue.NoCacheHeaders
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.CacheControlHeaderValue.ToString
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.CacheControlHeaderValue.MaxAge
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.CacheControlHeaderValue.NoTransform
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.CacheControlHeaderValue.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.CacheControlHeaderValue.TryParse(System.String,System.Net.Http.Headers.CacheControlHeaderValue@)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.CacheControlHeaderValue.OnlyIfCached
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.CacheControlHeaderValue.Public
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.CacheControlHeaderValue.Private
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.CacheControlHeaderValue.MustRevalidate
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.CacheControlHeaderValue.Equals(System.Object)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.CacheControlHeaderValue.MaxStaleLimit
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.CacheControlHeaderValue.System#ICloneable#Clone
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.CacheControlHeaderValue.PrivateHeaders
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.CacheControlHeaderValue.ProxyRevalidate
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

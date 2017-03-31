@@ -1,14 +1,20 @@
 ---
 uid: System.Web.UI.IDataKeysControl
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IDataKeysControl.ClientIDRowSuffix
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IDataKeysControl.ClientIDRowSuffixDataKeys
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

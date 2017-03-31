@@ -1,54 +1,76 @@
 ---
 uid: System.ServiceModel.Discovery.Configuration.UdpTransportSettingsElement
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.Configuration.UdpTransportSettingsElement.TimeToLive
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.Configuration.UdpTransportSettingsElement.MaxUnicastRetransmitCount
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.Configuration.UdpTransportSettingsElement.MaxMulticastRetransmitCount
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.Configuration.UdpTransportSettingsElement.SocketReceiveBufferSize
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.Configuration.UdpTransportSettingsElement.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.Configuration.UdpTransportSettingsElement.MulticastInterfaceId
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.Configuration.UdpTransportSettingsElement.MaxBufferPoolSize
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.Configuration.UdpTransportSettingsElement.MaxReceivedMessageSize
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.Configuration.UdpTransportSettingsElement.MaxPendingMessageCount
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.Configuration.UdpTransportSettingsElement.DuplicateMessageHistoryLength
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

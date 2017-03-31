@@ -1,9 +1,9 @@
 ---
 uid: System.Xaml.IDestinationTypeProvider
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.IDestinationTypeProvider.GetDestinationType
-internalonly: False
+manager: "martinek"
 ---

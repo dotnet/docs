@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the type of scroll bars to display in a <see cref="T:System.Windows.Forms.RichTextBox" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the members of this enumeration to set the value of the <xref:System.Windows.Forms.RichTextBox.ScrollBars%2A> property of the <xref:System.Windows.Forms.RichTextBox> control.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Both">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Forms.RichTextBoxScrollBars</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Display both a horizontal and a vertical scroll bar when needed.</summary>
       </Docs>
     </Member>
     <Member MemberName="ForcedBoth">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Forms.RichTextBoxScrollBars</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Always display both a horizontal and a vertical scroll bar.</summary>
       </Docs>
     </Member>
     <Member MemberName="ForcedHorizontal">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.Forms.RichTextBoxScrollBars</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Always display a horizontal scroll bar.</summary>
       </Docs>
     </Member>
     <Member MemberName="ForcedVertical">
@@ -75,7 +82,7 @@
         <ReturnType>System.Windows.Forms.RichTextBoxScrollBars</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Always display a vertical scroll bar.</summary>
       </Docs>
     </Member>
     <Member MemberName="Horizontal">
@@ -91,7 +98,7 @@
         <ReturnType>System.Windows.Forms.RichTextBoxScrollBars</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Display a horizontal scroll bar only when text is longer than the width of the control.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -107,7 +114,7 @@
         <ReturnType>System.Windows.Forms.RichTextBoxScrollBars</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No scroll bars are displayed.</summary>
       </Docs>
     </Member>
     <Member MemberName="Vertical">
@@ -123,7 +130,7 @@
         <ReturnType>System.Windows.Forms.RichTextBoxScrollBars</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Display a vertical scroll bar only when text is longer than the height of the control.</summary>
       </Docs>
     </Member>
   </Members>

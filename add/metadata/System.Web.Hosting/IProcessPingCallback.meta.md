@@ -1,9 +1,11 @@
 ---
 uid: System.Web.Hosting.IProcessPingCallback
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.IProcessPingCallback.Respond
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

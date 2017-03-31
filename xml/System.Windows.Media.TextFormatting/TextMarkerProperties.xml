@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an abstract class for defining text markers.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A text marker is a symbol that is commonly used for creating distinctive visual elements, such as the bullets and auto-numbering for a list of items. The <xref:System.Windows.Media.TextFormatting.TextSimpleMarkerProperties> object provides functionality for creating a text marker that is used for bullets and auto-numbering.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.TextFormatting.TextMarkerProperties" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +50,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the distance from the start of the line to the end of the text marker symbol.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the offset of the marker symbol from the beginning of the line.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +68,8 @@
         <ReturnType>System.Windows.Media.TextFormatting.TextSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Windows.Media.TextFormatting.TextSource" /> that represents the source of the text runs for the marker symbol.</summary>
+        <value>The <see cref="T:System.Windows.Media.TextFormatting.TextSource" /> that represents the text marker.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

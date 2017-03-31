@@ -1,3 +1,0 @@
-    <ListBox ItemsSource="{Binding Source={StaticResource MyPhotos}}"
-             ItemContainerStyle="{StaticResource ContainerStyle}" 
-             Background="Silver" Width="600" Margin="10" SelectedIndex="0"/>

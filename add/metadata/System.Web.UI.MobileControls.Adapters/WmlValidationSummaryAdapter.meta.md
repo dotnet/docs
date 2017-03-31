@@ -1,24 +1,38 @@
 ---
 uid: System.Web.UI.MobileControls.Adapters.WmlValidationSummaryAdapter
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.Adapters.WmlValidationSummaryAdapter.Control
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.Adapters.WmlValidationSummaryAdapter.OnInit(System.EventArgs)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.Adapters.WmlValidationSummaryAdapter.Render
 ---
 
 ---
 uid: System.Web.UI.MobileControls.Adapters.WmlValidationSummaryAdapter.#ctor
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.Adapters.WmlValidationSummaryAdapter.Render(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

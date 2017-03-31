@@ -1,29 +1,35 @@
 ---
 uid: Microsoft.Build.BuildEngine.BuildItemGroupCollection
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.BuildEngine.BuildItemGroupCollection.SyncRoot
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.BuildEngine.BuildItemGroupCollection.IsSynchronized
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.BuildEngine.BuildItemGroupCollection.CopyTo(System.Array,System.Int32)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.BuildEngine.BuildItemGroupCollection.GetEnumerator
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.BuildEngine.BuildItemGroupCollection.Count
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

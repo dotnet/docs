@@ -1,19 +1,23 @@
 ---
 uid: System.IdentityModel.Services.MachineKeyTransform
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.MachineKeyTransform.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.MachineKeyTransform.Decode(System.Byte[])
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.MachineKeyTransform.Encode(System.Byte[])
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

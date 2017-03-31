@@ -1,44 +1,66 @@
 ---
 uid: System.Windows.Media.Animation.SplineDecimalKeyFrame
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SplineDecimalKeyFrame.CreateInstanceCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SplineDecimalKeyFrame.KeySplineProperty
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SplineDecimalKeyFrame.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SplineDecimalKeyFrame.#ctor(System.Decimal)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SplineDecimalKeyFrame.KeySpline
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.SplineDecimalKeyFrame.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SplineDecimalKeyFrame.InterpolateValueCore(System.Decimal,System.Double)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SplineDecimalKeyFrame.#ctor(System.Decimal,System.Windows.Media.Animation.KeyTime,System.Windows.Media.Animation.KeySpline)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SplineDecimalKeyFrame.#ctor(System.Decimal,System.Windows.Media.Animation.KeyTime)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

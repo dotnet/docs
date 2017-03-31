@@ -1,4 +1,5 @@
 ---
 uid: System.Net.NetworkInformation.ScopeLevel
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

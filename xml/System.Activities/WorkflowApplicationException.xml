@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides the base class for handling an error that occurs during the execution of a workflow application.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.WorkflowApplicationException" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">A description of the application exception.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.WorkflowApplicationException" /> class with a text string description of the exception.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,9 +62,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">The information required to serialize or deserialize the application exception object.</param>
+        <param name="context">The source and destination of a given serialized stream, and an additional caller-defined context.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.WorkflowApplicationException" /> class with the context and serialization information required to retrieve data about this exception from a serialized stream.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,10 +82,17 @@
         <Parameter Name="innerException" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="innerException">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="message">A description of the application exception.</param>
+        <param name="innerException">An exception that has a causal relationship to the application exception.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.WorkflowApplicationException" /> class with a text string description of the exception and with an additional exception that is the cause of the application exception.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The application exception is thrown in response to the inner exception and can use information from the inner exception to handle the error more appropriately.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -102,9 +109,9 @@
         <Parameter Name="instanceId" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="instanceId">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">A description of the application exception.</param>
+        <param name="instanceId">A globally unique identifier.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.WorkflowApplicationException" /> class with a text string description of the exception and with a unique identifier for it.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,11 +130,18 @@
         <Parameter Name="innerException" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="instanceId">To be added.</param>
-        <param name="innerException">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="message">A description of the application exception.</param>
+        <param name="instanceId">A globally unique identifier.</param>
+        <param name="innerException">An exception that has a causal relationship to the application exception.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.WorkflowApplicationException" /> class with a text string description of the exception, a unique identifier for it, and an additional exception that is the cause of the application exception.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The application exception is thrown in response to the inner exception and can use information from the inner exception to handle the error more appropriately.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -152,9 +166,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">The information required to serialize or deserialize the abort exception object.</param>
+        <param name="context">The source and destination of a given serialized stream, and an additional caller-defined context.</param>
+        <summary>Sets the specified <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object with information about the exception.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -171,8 +185,8 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the unique identifier for the current exception.</summary>
+        <value>A unique identifier.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

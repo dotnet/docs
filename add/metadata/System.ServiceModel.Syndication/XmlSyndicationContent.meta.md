@@ -1,69 +1,111 @@
 ---
 uid: System.ServiceModel.Syndication.XmlSyndicationContent
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Syndication.XmlSyndicationContent.Clone
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Syndication.XmlSyndicationContent.ReadContent
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Syndication.XmlSyndicationContent.WriteContentsTo(System.Xml.XmlWriter)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Syndication.XmlSyndicationContent.Extension
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Syndication.XmlSyndicationContent.ReadContent``1(System.Runtime.Serialization.XmlObjectSerializer)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Syndication.XmlSyndicationContent.ReadContent``1(System.Xml.Serialization.XmlSerializer)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Syndication.XmlSyndicationContent.#ctor(System.ServiceModel.Syndication.XmlSyndicationContent)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Syndication.XmlSyndicationContent.#ctor(System.String,System.ServiceModel.Syndication.SyndicationElementExtension)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Syndication.XmlSyndicationContent.Type
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Syndication.XmlSyndicationContent.#ctor(System.Xml.XmlReader)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Syndication.XmlSyndicationContent.#ctor(System.String,System.Object,System.Xml.Serialization.XmlSerializer)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Syndication.XmlSyndicationContent.GetReaderAtContent
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Syndication.XmlSyndicationContent.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Syndication.XmlSyndicationContent.ReadContent``1
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Syndication.XmlSyndicationContent.#ctor(System.String,System.Object,System.Runtime.Serialization.XmlObjectSerializer)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

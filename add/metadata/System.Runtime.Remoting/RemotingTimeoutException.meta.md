@@ -1,19 +1,24 @@
 ---
 uid: System.Runtime.Remoting.RemotingTimeoutException
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.RemotingTimeoutException.#ctor
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.RemotingTimeoutException.#ctor(System.String)
-internalonly: False
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Remoting.RemotingTimeoutException.#ctor
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.RemotingTimeoutException.#ctor(System.String,System.Exception)
-internalonly: False
+manager: "ghogen"
 ---

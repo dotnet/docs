@@ -1,24 +1,29 @@
 ---
 uid: System.Web.Configuration.FullTrustAssembly
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.FullTrustAssembly.PublicKey
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.FullTrustAssembly.Version
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.FullTrustAssembly.#ctor(System.String,System.String,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.FullTrustAssembly.AssemblyName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

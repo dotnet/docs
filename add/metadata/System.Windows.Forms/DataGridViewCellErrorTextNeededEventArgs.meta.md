@@ -1,9 +1,12 @@
 ---
 uid: System.Windows.Forms.DataGridViewCellErrorTextNeededEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewCellErrorTextNeededEventArgs.ErrorText
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

@@ -1,59 +1,88 @@
 ---
 uid: System.Windows.Forms.DataGridView.DataGridViewTopRowAccessibleObject
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.DataGridViewTopRowAccessibleObject.GetChild(System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.DataGridViewTopRowAccessibleObject.Navigate(System.Windows.Forms.AccessibleNavigation)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.DataGridViewTopRowAccessibleObject.Parent
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.DataGridViewTopRowAccessibleObject.Name
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.DataGridViewTopRowAccessibleObject.GetChildCount
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.DataGridViewTopRowAccessibleObject.Value
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.DataGridViewTopRowAccessibleObject.Bounds
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.DataGridViewTopRowAccessibleObject.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.DataGridViewTopRowAccessibleObject.GetChildCount
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.DataGridViewTopRowAccessibleObject.Value
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.DataGridViewTopRowAccessibleObject.Bounds
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.DataGridViewTopRowAccessibleObject.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.DataGridViewTopRowAccessibleObject.Role
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.DataGridViewTopRowAccessibleObject.#ctor(System.Windows.Forms.DataGridView)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.DataGridViewTopRowAccessibleObject.Owner
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

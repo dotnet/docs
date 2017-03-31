@@ -1,9 +1,13 @@
 ---
 uid: Microsoft.Win32.SafeHandles.SafePipeHandle
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Win32.SafeHandles.SafePipeHandle.#ctor(System.IntPtr,System.Boolean)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

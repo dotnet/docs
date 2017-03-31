@@ -1,1 +1,0 @@
-        int hashCode = policyStatement.GetHashCode();

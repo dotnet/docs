@@ -1,19 +1,34 @@
 ---
 uid: System.Xml.Serialization.XmlChoiceIdentifierAttribute
-internalonly: False
----
-
----
-uid: System.Xml.Serialization.XmlChoiceIdentifierAttribute.MemberName
-internalonly: False
----
-
----
-uid: System.Xml.Serialization.XmlChoiceIdentifierAttribute.#ctor(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.XmlChoiceIdentifierAttribute.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Xml.Serialization.XmlChoiceIdentifierAttribute.MemberName
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Xml.Serialization.XmlChoiceIdentifierAttribute.#ctor(System.String)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Xml.Serialization.XmlChoiceIdentifierAttribute.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

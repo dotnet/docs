@@ -1,49 +1,76 @@
 ---
 uid: System.Activities.DynamicUpdate.InstanceUpdateException
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DynamicUpdate.InstanceUpdateException.#ctor(System.String,System.Exception)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DynamicUpdate.InstanceUpdateException.BlockingActivities
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DynamicUpdate.InstanceUpdateException.#ctor(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DynamicUpdate.InstanceUpdateException.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DynamicUpdate.InstanceUpdateException.#ctor(System.String,System.Collections.Generic.IList{System.Activities.DynamicUpdate.ActivityBlockingUpdate})
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DynamicUpdate.InstanceUpdateException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DynamicUpdate.InstanceUpdateException.#ctor(System.String,System.Collections.Generic.IList{System.Activities.DynamicUpdate.ActivityBlockingUpdate},System.Exception)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DynamicUpdate.InstanceUpdateException.#ctor(System.Collections.Generic.IList{System.Activities.DynamicUpdate.ActivityBlockingUpdate})
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.DynamicUpdate.InstanceUpdateException.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DynamicUpdate.InstanceUpdateException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

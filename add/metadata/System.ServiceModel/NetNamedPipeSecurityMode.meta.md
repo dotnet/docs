@@ -1,4 +1,6 @@
 ---
 uid: System.ServiceModel.NetNamedPipeSecurityMode
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

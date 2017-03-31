@@ -1,44 +1,69 @@
 ---
 uid: System.ComponentModel.TypeConverter.SimplePropertyDescriptor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.TypeConverter.SimplePropertyDescriptor.CanResetValue(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.TypeConverter.SimplePropertyDescriptor.ComponentType
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.TypeConverter.SimplePropertyDescriptor.ResetValue(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.TypeConverter.SimplePropertyDescriptor.#ctor(System.Type,System.String,System.Type)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.TypeConverter.SimplePropertyDescriptor.IsReadOnly
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.TypeConverter.SimplePropertyDescriptor.PropertyType
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.TypeConverter.SimplePropertyDescriptor.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.TypeConverter.SimplePropertyDescriptor.ShouldSerializeValue(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.TypeConverter.SimplePropertyDescriptor.#ctor(System.Type,System.String,System.Type,System.Attribute[])
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -1,4 +1,6 @@
 ---
 uid: System.Security.PartialTrustVisibilityLevel
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

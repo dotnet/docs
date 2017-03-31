@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Binds the members of a function to an object.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,8 +29,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a string representation of the function.</summary>
+        <returns>A string representation of the function that contains the function source, the function members, and the function name.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,8 +1,0 @@
-    Private Sub PrintNamespacePairs(ByVal namespaces As XmlSerializerNamespaces)
-        Dim qualifiedNames() As XmlQualifiedName = namespaces.ToArray()
-        Dim i As Integer
-        For i = 0 To qualifiedNames.Length - 1
-            Console.WriteLine(qualifiedNames(i).Name & ControlChars.Tab & _
-                              qualifiedNames(i).Namespace)
-        Next i
-    End Sub

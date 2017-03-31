@@ -1,4 +1,6 @@
 ---
 uid: System.Security.Policy.ApplicationVersionMatch
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

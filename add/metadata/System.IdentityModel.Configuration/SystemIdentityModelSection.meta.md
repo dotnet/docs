@@ -1,29 +1,35 @@
 ---
 uid: System.IdentityModel.Configuration.SystemIdentityModelSection
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Configuration.SystemIdentityModelSection.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Configuration.SystemIdentityModelSection.Current
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Configuration.SystemIdentityModelSection.IdentityConfigurationElements
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Configuration.SystemIdentityModelSection.SectionName
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Configuration.SystemIdentityModelSection.DefaultIdentityConfigurationElement
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

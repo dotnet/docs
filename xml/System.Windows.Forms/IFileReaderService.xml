@@ -8,7 +8,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines a method that opens a file from the current directory.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,10 +28,17 @@
         <Parameter Name="relativePath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="relativePath">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="relativePath">The file to open.</param>
+        <summary>Opens a file from the current directory.</summary>
+        <returns>A stream of the specified file.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `relativePath` is relative to the current directory.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

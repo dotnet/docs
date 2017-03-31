@@ -1,89 +1,107 @@
 ---
 uid: System.Web.DynamicData.ModelProviders.TableProvider
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.ModelProviders.TableProvider.DataContextPropertyName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.ModelProviders.TableProvider.Columns
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.ModelProviders.TableProvider.DataModel
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.ModelProviders.TableProvider.RootEntityType
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.ModelProviders.TableProvider.CanInsert(System.Security.Principal.IPrincipal)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.ModelProviders.TableProvider.EntityType
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.ModelProviders.TableProvider.CanDelete(System.Security.Principal.IPrincipal)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.ModelProviders.TableProvider.CanRead(System.Security.Principal.IPrincipal)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.ModelProviders.TableProvider.GetQuery(System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.ModelProviders.TableProvider.Name
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.ModelProviders.TableProvider.EvaluateForeignKey(System.Object,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.ModelProviders.TableProvider.Attributes
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.ModelProviders.TableProvider.ParentEntityType
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.ModelProviders.TableProvider.GetTypeDescriptor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.ModelProviders.TableProvider.#ctor(System.Web.DynamicData.ModelProviders.DataModelProvider)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.ModelProviders.TableProvider.ToString
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.ModelProviders.TableProvider.CanUpdate(System.Security.Principal.IPrincipal)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

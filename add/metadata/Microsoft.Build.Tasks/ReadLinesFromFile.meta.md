@@ -1,24 +1,29 @@
 ---
 uid: Microsoft.Build.Tasks.ReadLinesFromFile
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.ReadLinesFromFile.Execute
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.ReadLinesFromFile.Lines
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.ReadLinesFromFile.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.ReadLinesFromFile.File
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

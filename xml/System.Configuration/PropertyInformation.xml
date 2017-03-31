@@ -11,8 +11,25 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains meta-information on an individual property within the configuration. This type cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.PropertyInformation> object contains the meta-information of an individual property within the configuration. This object can be used when validating and changing the properties of an individual attribute.  
+  
+ The <xref:System.Configuration.PropertyInformation> object is derived from the associated <xref:System.Configuration.PropertyInformationCollection> object. The <xref:System.Configuration.PropertyInformationCollection> object is derived from the associated <xref:System.Configuration.ElementInformation> object.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Configuration.PropertyInformation> type.  
+  
+ [!code-csharp[System.Configuration.PropertyInformation#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.PropertyInformation/CS/PropertyInformation.cs#1)]
+ [!code-vb[System.Configuration.PropertyInformation#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.PropertyInformation/VB/PropertyInformation.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Converter">
@@ -28,9 +45,16 @@
         <ReturnType>System.ComponentModel.TypeConverter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.ComponentModel.TypeConverter" /> object related to the configuration attribute.</summary>
+        <value>A <see cref="T:System.ComponentModel.TypeConverter" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.TypeConverter> object is used to guide how the value of an attribute can be modified.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultValue">
@@ -46,9 +70,19 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets an object containing the default value related to a configuration attribute.</summary>
+        <value>An object containing the default value of the configuration attribute.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Configuration.PropertyInformation.DefaultValue%2A> property. This code example is part of a larger example provided for the <xref:System.Configuration.PropertyInformation> class.  
+  
+ [!code-csharp[System.Configuration.PropertyInformation#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.PropertyInformation/CS/PropertyInformation.cs#2)]
+ [!code-vb[System.Configuration.PropertyInformation#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.PropertyInformation/VB/PropertyInformation.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -64,8 +98,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the description of the object that corresponds to a configuration attribute.</summary>
+        <value>The description of the configuration attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,9 +116,20 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value specifying whether the configuration attribute is a key.</summary>
+        <value>
+          <see langword="true" /> if the configuration attribute is a key; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Configuration.PropertyInformation.IsKey%2A> property. This code example is part of a larger example provided for the <xref:System.Configuration.PropertyInformation> class.  
+  
+ [!code-csharp[System.Configuration.PropertyInformation#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.PropertyInformation/CS/PropertyInformation.cs#3)]
+ [!code-vb[System.Configuration.PropertyInformation#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.PropertyInformation/VB/PropertyInformation.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsLocked">
@@ -100,9 +145,25 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value specifying whether the configuration attribute is locked.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Configuration.PropertyInformation" /> object is locked; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.PropertyInformation.IsLocked%2A> property returns `true` when the related element is locked by the <xref:System.Configuration.ConfigurationElement.LockAttributes%2A> or <xref:System.Configuration.ConfigurationElement.LockAllAttributesExcept%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Configuration.PropertyInformation.IsLocked%2A> property. This code example is part of a larger example provided for the <xref:System.Configuration.PropertyInformation> class.  
+  
+ [!code-csharp[System.Configuration.PropertyInformation#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.PropertyInformation/CS/PropertyInformation.cs#4)]
+ [!code-vb[System.Configuration.PropertyInformation#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.PropertyInformation/VB/PropertyInformation.vb#4)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsModified">
@@ -118,9 +179,20 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value specifying whether the configuration attribute has been modified.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Configuration.PropertyInformation" /> object has been modified; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Configuration.PropertyInformation.IsModified%2A> property. This code example is part of a larger example provided for the <xref:System.Configuration.PropertyInformation> class.  
+  
+ [!code-csharp[System.Configuration.PropertyInformation#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.PropertyInformation/CS/PropertyInformation.cs#5)]
+ [!code-vb[System.Configuration.PropertyInformation#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.PropertyInformation/VB/PropertyInformation.vb#5)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsRequired">
@@ -136,9 +208,20 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value specifying whether the configuration attribute is required.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Configuration.PropertyInformation" /> object is required; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Configuration.PropertyInformation.IsRequired%2A> property. This code example is part of a larger example provided for the <xref:System.Configuration.PropertyInformation> class.  
+  
+ [!code-csharp[System.Configuration.PropertyInformation#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.PropertyInformation/CS/PropertyInformation.cs#6)]
+ [!code-vb[System.Configuration.PropertyInformation#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.PropertyInformation/VB/PropertyInformation.vb#6)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LineNumber">
@@ -154,9 +237,24 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the line number in the configuration file related to the configuration attribute.</summary>
+        <value>A line number of the configuration file.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The line number associated with the source configuration file. Zero is returned when there is no source configuration file.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Configuration.PropertyInformation.LineNumber%2A> property. This code example is part of a larger example provided for the <xref:System.Configuration.PropertyInformation> class.  
+  
+ [!code-csharp[System.Configuration.PropertyInformation#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.PropertyInformation/CS/PropertyInformation.cs#7)]
+ [!code-vb[System.Configuration.PropertyInformation#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.PropertyInformation/VB/PropertyInformation.vb#7)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -172,9 +270,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the name of the object that corresponds to a configuration attribute.</summary>
+        <value>The name of the <see cref="T:System.Configuration.PropertyInformation" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Configuration.PropertyInformation.LineNumber%2A> property. This code example is part of a larger example provided for the <xref:System.Configuration.PropertyInformation> class.  
+  
+ [!code-csharp[System.Configuration.PropertyInformation#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.PropertyInformation/CS/PropertyInformation.cs#8)]
+ [!code-vb[System.Configuration.PropertyInformation#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.PropertyInformation/VB/PropertyInformation.vb#8)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Source">
@@ -190,9 +298,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the source file that corresponds to a configuration attribute.</summary>
+        <value>The source file of the <see cref="T:System.Configuration.PropertyInformation" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Configuration.PropertyInformation.Source%2A> property. This code example is part of a larger example provided for the <xref:System.Configuration.PropertyInformation> class.  
+  
+ [!code-csharp[System.Configuration.PropertyInformation#9](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.PropertyInformation/CS/PropertyInformation.cs#9)]
+ [!code-vb[System.Configuration.PropertyInformation#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.PropertyInformation/VB/PropertyInformation.vb#9)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -208,9 +326,19 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Type" /> of the object that corresponds to a configuration attribute.</summary>
+        <value>The <see cref="T:System.Type" /> of the <see cref="T:System.Configuration.PropertyInformation" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Configuration.PropertyInformation.Type%2A> property. This code example is part of a larger example provided for the <xref:System.Configuration.PropertyInformation> class.  
+  
+ [!code-csharp[System.Configuration.PropertyInformation#10](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.PropertyInformation/CS/PropertyInformation.cs#10)]
+ [!code-vb[System.Configuration.PropertyInformation#10](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.PropertyInformation/VB/PropertyInformation.vb#10)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Validator">
@@ -226,9 +354,24 @@
         <ReturnType>System.Configuration.ConfigurationValidatorBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a <see cref="T:System.Configuration.ConfigurationValidatorBase" /> object related to the configuration attribute.</summary>
+        <value>A <see cref="T:System.Configuration.ConfigurationValidatorBase" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the returned <xref:System.Configuration.ConfigurationValidatorBase> object to validate the value configuration attribute.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Configuration.PropertyInformation.Type%2A> property. This code example is part of a larger example provided for the <xref:System.Configuration.PropertyInformation> class.  
+  
+ [!code-csharp[System.Configuration.PropertyInformation#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.PropertyInformation/CS/PropertyInformation.cs#11)]
+ [!code-vb[System.Configuration.PropertyInformation#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.PropertyInformation/VB/PropertyInformation.vb#11)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -244,9 +387,19 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets an object containing the value related to a configuration attribute.</summary>
+        <value>An object containing the value for the <see cref="T:System.Configuration.PropertyInformation" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Configuration.PropertyInformation.Value%2A> property. This code example is part of a larger example provided for the <xref:System.Configuration.PropertyInformation> class.  
+  
+ [!code-csharp[System.Configuration.PropertyInformation#12](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.PropertyInformation/CS/PropertyInformation.cs#12)]
+ [!code-vb[System.Configuration.PropertyInformation#12](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.PropertyInformation/VB/PropertyInformation.vb#12)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ValueOrigin">
@@ -262,9 +415,24 @@
         <ReturnType>System.Configuration.PropertyValueOrigin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a <see cref="T:System.Configuration.PropertyValueOrigin" /> object related to the configuration attribute.</summary>
+        <value>A <see cref="T:System.Configuration.PropertyValueOrigin" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.PropertyValueOrigin> object describes how the value of the configuration attribute was determined.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Configuration.PropertyInformation.ValueOrigin%2A> property. This code example is part of a larger example provided for the <xref:System.Configuration.PropertyInformation> class.  
+  
+ [!code-csharp[System.Configuration.PropertyInformation#13](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.PropertyInformation/CS/PropertyInformation.cs#13)]
+ [!code-vb[System.Configuration.PropertyInformation#13](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.PropertyInformation/VB/PropertyInformation.vb#13)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

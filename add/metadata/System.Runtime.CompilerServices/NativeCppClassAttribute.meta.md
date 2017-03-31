@@ -1,9 +1,13 @@
 ---
 uid: System.Runtime.CompilerServices.NativeCppClassAttribute
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.CompilerServices.NativeCppClassAttribute.#ctor
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

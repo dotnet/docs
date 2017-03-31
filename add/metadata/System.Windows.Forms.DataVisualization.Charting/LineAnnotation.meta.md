@@ -1,79 +1,95 @@
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.LineAnnotation
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.LineAnnotation.BackHatchStyle
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.LineAnnotation.BackSecondaryColor
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.LineAnnotation.EndCap
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.LineAnnotation.AnchorAlignment
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.LineAnnotation.BackGradientStyle
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.LineAnnotation.IsSizeAlwaysRelative
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.LineAnnotation.StartCap
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.LineAnnotation.AnnotationType
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.LineAnnotation.ForeColor
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.LineAnnotation.Font
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.LineAnnotation.#ctor
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.LineAnnotation.TextStyle
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.LineAnnotation.IsInfinitive
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.LineAnnotation.Alignment
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.LineAnnotation.BackColor
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---

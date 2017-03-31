@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Controls.DataGridClipboardCopyMode
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

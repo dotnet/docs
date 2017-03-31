@@ -1,14 +1,17 @@
 ---
 uid: Microsoft.Build.Evaluation.ProjectXmlChangedEventArgs
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Evaluation.ProjectXmlChangedEventArgs.ProjectXml
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Evaluation.ProjectXmlChangedEventArgs.Reason
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

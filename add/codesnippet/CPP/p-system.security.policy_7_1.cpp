@@ -1,1 +1,0 @@
-      codeGroup->PolicyStatement = gcnew PolicyStatement( gcnew NamedPermissionSet( "MyPermissionSet" ) );

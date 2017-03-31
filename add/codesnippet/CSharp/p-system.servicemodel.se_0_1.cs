@@ -1,1 +1,0 @@
-        TimeSpan closeTimeout = hostDefault.CloseTimeout;

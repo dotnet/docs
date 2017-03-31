@@ -24,8 +24,23 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>A class that serializes a <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> instance to and from RSS 2.0 format.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this class to serialize instances of <xref:System.ServiceModel.Syndication.SyndicationItem> and to create an instance of <xref:System.ServiceModel.Syndication.SyndicationItem> from an XML document that represents an RSS 2.0 item. If you have derived a class from <xref:System.ServiceModel.Syndication.SyndicationItem> and want to serialize it, use the <xref:System.ServiceModel.Syndication.Rss20ItemFormatter%601> formatter.  
+  
+   
+  
+## Examples  
+ The following code shows how to create a <xref:System.ServiceModel.Syndication.SyndicationItem> instance and serialize it.  
+  
+ [!code-csharp[RssFormatter#7](~/samples/snippets/csharp/VS_Snippets_CFX/rssformatter/cs/snippets.cs#7)]
+ [!code-vb[RssFormatter#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/rssformatter/vb/snippets.vb#7)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,7 +58,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.Rss20ItemFormatter" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,9 +79,19 @@
         <Parameter Name="itemToWrite" Type="System.ServiceModel.Syndication.SyndicationItem" />
       </Parameters>
       <Docs>
-        <param name="itemToWrite">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="itemToWrite">The <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> to serialize.</param>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.Rss20ItemFormatter" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to call this constructor.  
+  
+ [!code-csharp[RssFormatter#8](~/samples/snippets/csharp/VS_Snippets_CFX/rssformatter/cs/snippets.cs#8)]
+ [!code-vb[RssFormatter#8](~/samples/snippets/visualbasic/VS_Snippets_CFX/rssformatter/vb/snippets.vb#8)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -86,9 +111,23 @@
         <Parameter Name="itemTypeToCreate" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="itemTypeToCreate">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="itemTypeToCreate">The instance derived from <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> to associate with the <see cref="T:System.ServiceModel.Syndication.Rss20ItemFormatter" />.</param>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.Rss20ItemFormatter" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to specify a class derived from <xref:System.ServiceModel.Syndication.SyndicationItem> to instantiate when a syndication item is read in.  
+  
+   
+  
+## Examples  
+ The following code shows how to use this constructor.  
+  
+ [!code-csharp[RssFormatter#16](~/samples/snippets/csharp/VS_Snippets_CFX/rssformatter/cs/snippets.cs#16)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -109,10 +148,25 @@
         <Parameter Name="serializeExtensionsAsAtom" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="itemToWrite">To be added.</param>
-        <param name="serializeExtensionsAsAtom">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="itemToWrite">The <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> to serialize.</param>
+        <param name="serializeExtensionsAsAtom">A value that specifies whether to serialize elements that are defined in the Atom 1.0 specification but not in the RSS 2.0 specification. The default value is <see langword="true" />.</param>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.Rss20ItemFormatter" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the `serializeExtensionsAsAtom` parameter is `true`, all elements defined in the Atom 1.0 specification that are not defined in the RSS 2.0 specification are serialized with the Atom 1.0 namespace.  
+  
+   
+  
+## Examples  
+ The following example shows how to call this constructor.  
+  
+ [!code-csharp[RssFormatter#9](~/samples/snippets/csharp/VS_Snippets_CFX/rssformatter/cs/snippets.cs#9)]
+ [!code-vb[RssFormatter#9](~/samples/snippets/visualbasic/VS_Snippets_CFX/rssformatter/vb/snippets.vb#9)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CanRead">
@@ -135,10 +189,19 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read from.</param>
+        <summary>Verifies whether the specified <see cref="T:System.Xml.XmlReader" /> contains a valid RSS 2.0 syndication item.</summary>
+        <returns>A value that specifies if the <see cref="T:System.Xml.XmlReader" /> contains a valid RSS 2.0 syndication item.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code shows using the <xref:System.ServiceModel.Syndication.Rss20ItemFormatter.CanRead%28System.Xml.XmlReader%29> method.  
+  
+ [!code-csharp[RssFormatter#17](~/samples/snippets/csharp/VS_Snippets_CFX/rssformatter/cs/snippets.cs#17)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateItemInstance">
@@ -159,9 +222,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a new <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> instance.</summary>
+        <returns>A new <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The newly created <xref:System.ServiceModel.Syndication.SyndicationItem> instance is not automatically associated with the <xref:System.ServiceModel.Syndication.Rss20ItemFormatter> used to create it.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ItemType">
@@ -181,8 +251,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type of the syndication item associated with the <see cref="T:System.ServiceModel.Syndication.Rss20ItemFormatter" />.</summary>
+        <value>The type of the syndication item associated with the <see cref="T:System.ServiceModel.Syndication.Rss20ItemFormatter" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -203,9 +273,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that specifies whether to preserve attribute extensions during serialization.</summary>
+        <value>A value that specifies whether to preserve attribute extensions during serialization.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value of this property is `true`. Attribute extensions are XML attributes that are not defined in the Atom 1.0 specification. This property determines whether to write these attributes during serialization. Similarly, this property determines whether to preserve attribute extensions inside the `AttributeExtensions` properties in the <xref:System.ServiceModel.Syndication.SyndicationItem> instance when deserializing an RSS 2.0 item.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PreserveElementExtensions">
@@ -225,9 +302,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that specifies whether to preserve element extensions during serialization.</summary>
+        <value>A value that specifies whether to preserve element extensions during serialization.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value of this property is `true`. Element extensions are XML elements that are not defined in the Atom 1.0 specification. This property determines whether to write these elements during serialization. Similarly, this property determines whether to preserve element extensions inside the `ElementExtensions` property in the <xref:System.ServiceModel.Syndication.SyndicationItem> instance when deserializing an RSS 2.0 item.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadFrom">
@@ -250,9 +334,18 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read from.</param>
+        <summary>Reads an RSS 2.0 syndication item from the specified <see cref="T:System.Xml.XmlReader" /> instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code shows how to use the <xref:System.ServiceModel.Syndication.Rss20ItemFormatter.ReadFrom%28System.Xml.XmlReader%29> method.  
+  
+ [!code-csharp[RssFormatter#18](~/samples/snippets/csharp/VS_Snippets_CFX/rssformatter/cs/snippets.cs#18)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SerializeExtensionsAsAtom">
@@ -272,9 +365,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets and sets a value that specifies whether to serialize extensions within the Atom 1.0 namespace.</summary>
+        <value>A value that specifies whether to serialize extensions within the Atom 1.0 namespace.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value of this property is `true`. When this property is `true`, any properties in the <xref:System.ServiceModel.Syndication.SyndicationFeed> class that cannot be represented in the RSS 2.0 format are serialized within the Atom 1.0 namespace; otherwise these properties are not be serialized.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Xml.Serialization.IXmlSerializable.GetSchema">
@@ -295,9 +395,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Implements the <see cref="M:System.Xml.Serialization.IXmlSerializable.GetSchema" /> method.</summary>
+        <returns>
+          <see langword="Null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Override this method to return your own schema.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Xml.Serialization.IXmlSerializable.ReadXml">
@@ -320,8 +428,8 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> used to read the XML document.</param>
+        <summary>Implements the <see cref="M:System.Xml.Serialization.IXmlSerializable.ReadXml(System.Xml.XmlReader)" /> method.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -345,8 +453,8 @@
         <Parameter Name="writer" Type="System.Xml.XmlWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> used to write XML node.</param>
+        <summary>Implements the <see cref="M:System.Xml.Serialization.IXmlSerializable.WriteXml(System.Xml.XmlWriter)" /> method.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -367,9 +475,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the syndication version used by the formatter.</summary>
+        <value>The syndication version used by the formatter.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[indigo1](~/includes/indigo1-md.md)] supports Atom 1.0 and RSS 2.0 syndication versions.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteTo">
@@ -392,9 +507,18 @@
         <Parameter Name="writer" Type="System.Xml.XmlWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write to.</param>
+        <summary>Writes the <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> associated with the <see cref="T:System.ServiceModel.Syndication.Rss20FeedFormatter" /> to the specified <see cref="T:System.Xml.XmlWriter" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code shows how to create a syndication feed and use a <xref:System.ServiceModel.Syndication.Rss20ItemFormatter> to write the item to an <xref:System.Xml.XmlWriter>.  
+  
+ [!code-csharp[RssFormatter#19](~/samples/snippets/csharp/VS_Snippets_CFX/rssformatter/cs/snippets.cs#19)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

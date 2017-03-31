@@ -11,8 +11,23 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>An abstract class that can be implemented to encode the security state.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used to encode and decode the content of the security context token when a binding with message security that uses a stateful security context token is used. [!INCLUDE[crabout](~/includes/crabout-md.md)] stateful security context tokens, see [How to: Create a Security Context Token for a Secure Session](../Topic/How%20to:%20Create%20a%20Security%20Context%20Token%20for%20a%20Secure%20Session.md) topic.  
+  
+ Microsoft’s version of <xref:System.ServiceModel.Security.SecurityStateEncoder> is <xref:System.ServiceModel.Security.DataProtectionSecurityStateEncoder>. It uses Microsoft’s [Windows Data Protection (DPAPI)](http://go.microsoft.com/fwlink/?LinkId=96704) technology to encrypt/decrypt the cookie. You can plug in a different mechanism for encrypting and decrypting cookies by implementing this class.  
+  
+ The encoding of the security state must ensure that the state is signed and encrypted for the service.  
+  
+ This class is used by the server when sending the security state as a cookie in the `SecurityContextToken` issued to the client.  
+  
+ An example implementation of this class is an `X509CertificateSecurityStateEncoder` that uses the service's certificate to sign and encrypt the security state.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +41,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.SecurityStateEncoder" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,9 +61,9 @@
         <Parameter Name="data" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="data">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="data">Security data.</param>
+        <summary>Decodes the security state.</summary>
+        <returns>A byte array that represents the security state.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,9 +83,9 @@
         <Parameter Name="data" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="data">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="data">The security state data.</param>
+        <summary>Encodes the security state.</summary>
+        <returns>A byte array that results from encoding the security state.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

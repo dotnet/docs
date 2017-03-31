@@ -1,14 +1,19 @@
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.Button.GroupBox
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.Button.GroupBox.Disabled
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.Button.GroupBox.Normal
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

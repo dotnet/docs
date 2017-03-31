@@ -1,19 +1,27 @@
 ---
 uid: System.Web.Services.Discovery.DiscoveryRequestHandler
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Discovery.DiscoveryRequestHandler.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Discovery.DiscoveryRequestHandler.ProcessRequest(System.Web.HttpContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Discovery.DiscoveryRequestHandler.IsReusable
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

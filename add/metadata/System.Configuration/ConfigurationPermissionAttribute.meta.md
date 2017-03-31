@@ -1,14 +1,17 @@
 ---
 uid: System.Configuration.ConfigurationPermissionAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationPermissionAttribute.CreatePermission
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationPermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

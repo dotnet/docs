@@ -1,14 +1,27 @@
 ---
 uid: System.Activities.XamlIntegration.ActivityWithResultConverter
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.XamlIntegration.ActivityWithResultConverter.#ctor(System.Type)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.XamlIntegration.ActivityWithResultConverter.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.XamlIntegration.ActivityWithResultConverter.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

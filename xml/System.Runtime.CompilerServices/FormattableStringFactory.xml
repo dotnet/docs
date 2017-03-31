@@ -21,7 +21,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a static method to create a <see cref="T:System.FormattableString" /> object from a composite format string and its arguments.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -58,11 +58,17 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="format">To be added.</param>
-        <param name="arguments">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="format">A composite format string.</param>
+        <param name="arguments">The arguments whose string representations are to be inserted in the result string.</param>
+        <summary>Creates a <see cref="T:System.FormattableString" /> instance from a composite format string and its arguments.</summary>
+        <returns>The object that represents the composite format string and its arguments.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="format" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="arguments" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

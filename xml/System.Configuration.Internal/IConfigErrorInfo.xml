@@ -8,7 +8,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines an interface used by the .NET Framework to support creating error configuration records.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -25,8 +25,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a string specifying the file name related to the configuration details.</summary>
+        <value>A string specifying a filename.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an integer specifying the line number related to the configuration details.</summary>
+        <value>An integer specifying a line number.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

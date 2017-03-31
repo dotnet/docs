@@ -1,9 +1,11 @@
 ---
 uid: System.Web.UI.TemplatePropertyEntry
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.TemplatePropertyEntry.BindableTemplate
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -1,24 +1,34 @@
 ---
 uid: System.DirectoryServices.Protocols.SearchResultEntryCollection
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.Protocols.SearchResultEntryCollection.IndexOf(System.DirectoryServices.Protocols.SearchResultEntry)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.Protocols.SearchResultEntryCollection.CopyTo(System.DirectoryServices.Protocols.SearchResultEntry[],System.Int32)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.Protocols.SearchResultEntryCollection.Contains(System.DirectoryServices.Protocols.SearchResultEntry)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.Protocols.SearchResultEntryCollection.Item(System.Int32)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---

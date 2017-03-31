@@ -40,8 +40,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="T">The generic class.</typeparam>
+    <summary>Represents the Generic ChannelBase class.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -59,8 +59,8 @@
         <Parameter Name="client" Type="System.ServiceModel.ClientBase&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="client">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="client">The object used to initialize the new instance of the class.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ClientBase`1.ChannelBase`1" /> class from an existing instance of the class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -147,12 +147,12 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="methodName">To be added.</param>
-        <param name="args">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="methodName">The name of the method to be called asynchronously.</param>
+        <param name="args">An array of arguments for the method invoked.</param>
+        <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate.</param>
+        <param name="state">The state object.</param>
+        <summary>Starts an asynchronous call of a specified method by name.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous method invoked.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -254,11 +254,11 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="methodName">To be added.</param>
-        <param name="args">To be added.</param>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="methodName">The name of the method called asynchronously.</param>
+        <param name="args">An array of arguments for the method invoked.</param>
+        <param name="result">The result returned by a call.</param>
+        <summary>Completes an asynchronous invocation by name of a specified method.</summary>
+        <returns>The <see cref="T:System.Object" /> output by the method invoked.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -415,7 +415,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Performs application-defined tasks with freeing, releasing, or resetting unmanaged resources associated with the channel.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -441,9 +441,9 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="TProperty">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TProperty">The type object for which the method is querying.</typeparam>
+        <summary>Returns a typed object requested, if present from the appropriate layer in the channel stack.</summary>
+        <returns>The typed object T requested if it is present or null if it is not.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -466,11 +466,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">The message being sent on the output channel.</param>
+        <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate.</param>
+        <param name="state">An object, specified by the application, that contains state information associated with the asynchronous send operation.</param>
+        <summary>Begins an asynchronous operation to transmit a message to the destination of the output channel.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous message transmission.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -494,12 +494,12 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="timeout">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">The message being sent on the output channel.</param>
+        <param name="timeout">The timespan that specifies how long the send operation has to complete before timing out.</param>
+        <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate that receives the notification of the asynchronous operation send completion.</param>
+        <param name="state">An object, specified by the application, that contains state information associated with the asynchronous send operation.</param>
+        <summary>Begins an asynchronous operation to transmit a message to the destination of the output channel within a specified interval of time.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous send operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -520,8 +520,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="result">The result returned by a call.</param>
+        <summary>Completes an asynchronous operation to transmit a message to the destination of the output channel.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -538,8 +538,8 @@
         <ReturnType>System.ServiceModel.EndpointAddress</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the destination of the service to which messages are sent out on the output channel.</summary>
+        <value>The <see cref="T:System.ServiceModel.EndpointAddress" /> of the service to which the output channel sends messages.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -560,8 +560,8 @@
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The message being sent on the output channel.</param>
+        <summary>Transmits a message to the destination of the output channel.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -583,9 +583,9 @@
         <Parameter Name="timeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="timeout">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The message being sent on the output channel.</param>
+        <param name="timeout">The timespan that specifies how long the send operation has to complete before timing out.</param>
+        <summary>Sends a message on the current output channel within a specified interval of time.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -602,8 +602,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the URI that contains the transport address to which messages are sent on the output channel.</summary>
+        <value>The <see cref="T:System.Uri" /> that contains the transport address to which messages are sent on the output channel.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -626,11 +626,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">The request message to be transmitted.</param>
+        <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate that receives the notification of the completion of the asynchronous operation transmitting a request message.</param>
+        <param name="state">An object, specified by the application, that contains state information associated with the asynchronous operation transmitting a request message.</param>
+        <summary>Begins an asynchronous operation to transmit a request message to the reply-side of a request-reply message exchange.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous message transmission.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -654,12 +654,12 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="timeout">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">The request message to be transmitted.</param>
+        <param name="timeout">The timespan that specifies the interval of time within which a response must be received.</param>
+        <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate that receives the notification of the completion of the asynchronous operation transmitting a request message.</param>
+        <param name="state">An object, specified by the application, that contains state information associated with the asynchronous operation transmitting a request message.</param>
+        <summary>Begins an asynchronous operation to transmit a request message to the reply-side of a request-reply message exchange within a specified interval of time.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous message transmission.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -680,9 +680,9 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="result">The result of the operation.</param>
+        <summary>Completes an asynchronous operation to return a message-based response to a transmitted request.</summary>
+        <returns>The message received in response to the request.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -700,8 +700,8 @@
         <ReturnType>System.ServiceModel.EndpointAddress</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the remote address to which the request channel sends messages.</summary>
+        <value>The <see cref="T:System.ServiceModel.EndpointAddress" /> to which the request channel sends messages.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -722,9 +722,9 @@
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">The request message to be transmitted.</param>
+        <summary>Sends a message-based request and returns the correlated message-based response.</summary>
+        <returns>The message received in response to the request.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -746,10 +746,10 @@
         <Parameter Name="timeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="timeout">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">The request message to be transmitted.</param>
+        <param name="timeout">The timespan that specifies the interval of time within which a response must be received.</param>
+        <summary>Sends a message-based request and returns the correlated message-based response within a specified interval of time.</summary>
+        <returns>The message received in response to the request.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -767,8 +767,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the transport address to which the request is sent.</summary>
+        <value>The <see cref="T:System.Uri" /> that contains the transport address to which the message is sent.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -785,8 +785,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether the client channel allows an initialization UI.</summary>
+        <value>
+          <see langword="True" /> if the client channel allows an initialization UR; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -807,10 +808,10 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="callback">That method that is called when this method completes.</param>
+        <param name="state">Information about the state of the channel.</param>
+        <summary>An asynchronous call to begin using a user interface to obtain credential information.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> to use to call back when processing has completed.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -827,8 +828,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether a call was done to a user interface to obtain credential information.</summary>
+        <value>
+          <see langword="True" /> if a call was done to a user interface to obtain credential information; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -846,7 +848,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies a call to a user interface to obtain credential information.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -866,8 +868,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="result">The result of the operation.</param>
+        <summary>Called when the call to BeginDisplayInitializationUI has finished.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -884,8 +886,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the URI that contains the transport address to which messages are sent on the client channel.</summary>
+        <value>The URI that contains the transport address to which messages are sent on the channel.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -904,7 +906,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Causes a communication object to transition immediately from its current state into the closed state.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -926,10 +928,10 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate that receives notification of the completion of the asynchronous close operation.</param>
+        <param name="state">An object specified by the application, that contains state information associated with the asynchronous close operation.</param>
+        <summary>Begins an asynchronous operation to close a communication object.</summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> that references the asynchronous close operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -952,11 +954,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="timeout">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="timeout">The timespan that specifies how long the send operation has to complete before timing out.</param>
+        <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate that receives notification of the completion of the asynchronous close operation.</param>
+        <param name="state">An object, specified by the application, that contains state information associated with the asynchronous close operation.</param>
+        <summary>Begins an asynchronous operation to close a communication object with a specified time-out.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous close operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -978,10 +980,10 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate that receives notification of the completion of the asynchronous open operation.</param>
+        <param name="state">An object, specified by the application, that contains state information associated with the asynchronous open operation.</param>
+        <summary>Begins an asynchronous operation to open a communication object.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous open operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1004,11 +1006,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="timeout">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="timeout">The timespan that specifies how long the send operation has to complete before timing out.</param>
+        <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate that receives notification of the completion of the asynchronous open operation.</param>
+        <param name="state">An object, specified by the application, that contains state information associated with the asynchronous open operation.</param>
+        <summary>Begins an asynchronous operation to open a communication object within a specified interval of time.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous open operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1027,7 +1029,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Causes a communication object to transition from its current state into the closed state.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1048,8 +1050,8 @@
         <Parameter Name="timeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="timeout">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="timeout">The timespan that specifies how long the send operation has to complete before timing out.</param>
+        <summary>Causes a communication object to transition from its current state into the closed state.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1070,8 +1072,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="result">The <see cref="T:System.IAsyncResult" /> that is returned by a call to the BeginClose() method.</param>
+        <summary>Completes an asynchronous operation to close a communication object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1092,8 +1094,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="result">The <see cref="T:System.IAsyncResult" /> that is returned by a call to the BeginOpen() method.</param>
+        <summary>Completes an asynchronous operation to open a communication object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1112,7 +1114,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Causes a communication object to transition from the created state into the opened state.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1133,8 +1135,8 @@
         <Parameter Name="timeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="timeout">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="timeout">The timespan that specifies how long the send operation has to complete before timing out.</param>
+        <summary>Causes a communication object to transition from the created state into the opened state within a specified interval of time.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1152,8 +1154,8 @@
         <ReturnType>System.ServiceModel.CommunicationState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the current state of the communication-oriented object.</summary>
+        <value>The value of the <see cref="T:System.ServiceModel.CommunicationState" /> of the object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1170,8 +1172,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether the batching of outgoing messages is allowed; otherwise, false.</summary>
+        <value>
+          <see langword="True" /> if the batching of outgoing messages is allowed; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1188,8 +1191,8 @@
         <ReturnType>System.ServiceModel.Channels.IInputSession</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the input session for the channel.</summary>
+        <value>The input session for the channel.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1206,8 +1209,8 @@
         <ReturnType>System.ServiceModel.EndpointAddress</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the local endpoint for the channel.</summary>
+        <value>The local endpoint for the channel.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1224,8 +1227,8 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the time period within which an operation must complete or an exception is thrown.</summary>
+        <value>The timespan that specifies the time period within which an operation must complete.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1242,8 +1245,8 @@
         <ReturnType>System.ServiceModel.Channels.IOutputSession</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the output session associated with the channel, if any.</summary>
+        <value>A <see cref="T:System.ServiceModel.Channels.IOutputSession" /> implementation if an input session exists; otherwise, null.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1260,8 +1263,8 @@
         <ReturnType>System.ServiceModel.EndpointAddress</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the remote address associated with the channel.</summary>
+        <value>The remote <see cref="T:System.ServiceModel.EndpointAddress" /> for the channel.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1278,8 +1281,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an identifier for the current session, if any.</summary>
+        <value>The current session identifier, if any.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1297,8 +1300,8 @@
         <ReturnType>System.ServiceModel.IExtensionCollection&lt;System.ServiceModel.IContextChannel&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of extension objects for this extensible object.</summary>
+        <value>The <see cref="T:System.ServiceModel.IExtensionCollection`1" /> of extension objects.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

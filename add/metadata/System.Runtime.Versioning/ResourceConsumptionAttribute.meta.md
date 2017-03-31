@@ -1,24 +1,41 @@
 ---
 uid: System.Runtime.Versioning.ResourceConsumptionAttribute
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.Versioning.ResourceConsumptionAttribute.ResourceScope
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.Versioning.ResourceConsumptionAttribute.#ctor(System.Runtime.Versioning.ResourceScope)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.Versioning.ResourceConsumptionAttribute.#ctor
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.Versioning.ResourceConsumptionAttribute.#ctor(System.Runtime.Versioning.ResourceScope,System.Runtime.Versioning.ResourceScope)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.Versioning.ResourceConsumptionAttribute.ConsumptionScope
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

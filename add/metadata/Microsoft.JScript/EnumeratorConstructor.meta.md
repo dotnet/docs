@@ -1,14 +1,18 @@
 ---
 uid: Microsoft.JScript.EnumeratorConstructor
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.EnumeratorConstructor.CreateInstance(System.Object[])
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.EnumeratorConstructor.Invoke
-internalonly: False
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.EnumeratorConstructor.Invoke
 ---

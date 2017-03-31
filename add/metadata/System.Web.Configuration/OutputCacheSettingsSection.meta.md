@@ -1,14 +1,17 @@
 ---
 uid: System.Web.Configuration.OutputCacheSettingsSection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.OutputCacheSettingsSection.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.OutputCacheSettingsSection.OutputCacheProfiles
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

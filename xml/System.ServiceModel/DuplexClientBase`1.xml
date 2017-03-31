@@ -22,9 +22,34 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="TChannel">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="TChannel">The type of the channel to be created.</typeparam>
+    <summary>Used to create a channel to a duplex service and associate that channel with a callback object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.DuplexClientBase%601> class to create a channel to a service that specifies a callback object. The <xref:System.ServiceModel.DuplexClientBase%601> object wraps a <xref:System.ServiceModel.DuplexChannelFactory%601?displayProperty=fullName> object, which provides the connectivity for the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] object. You can use either type to connect to a duplex service. For more information about duplex services, see [Duplex Services](../Topic/Duplex%20Services.md).  
+  
+ Special note for Managed C++ users deriving from this class:  
+  
+-   Put your cleanup code in (On)(Begin)Close (and/or OnAbort), not in a destructor.  
+  
+-   Avoid destructors: they cause the compiler to auto-generate <xref:System.IDisposable>  
+  
+-   Avoid non-reference members: they can cause the compiler to auto-generate <xref:System.IDisposable>  
+  
+-   Avoid finalizers; but if you include one, you should suppress the build warning and call <xref:System.GC.SuppressFinalize%28System.Object%29> and the finalizer itself from (On)(Begin)Close (and/or OnAbort) in order to emulate what would have been the auto-generated <xref:System.IDisposable> behavior.  
+  
+   
+  
+## Examples  
+ The following example shows the use in the client of a duplex [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client type, the `SampleDuplexHelloClient`, to pass a new <xref:System.ServiceModel.InstanceContext?displayProperty=fullName> object with the callback object to listen for callbacks.  
+  
+ [!code-csharp[CallbackBehaviorAttribute#3](~/samples/snippets/csharp/VS_Snippets_CFX/callbackbehaviorattribute/cs/client.cs#3)]
+ [!code-vb[CallbackBehaviorAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/callbackbehaviorattribute/vb/client.vb#3)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,9 +66,17 @@
         <Parameter Name="callbackInstance" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="callbackInstance">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="callbackInstance">An object used to create the instance context that associates the callback object with the channel to the service.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexClientBase`1" /> class using the specified callback object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[indigo2](~/includes/indigo2-md.md)] creates a new <xref:System.ServiceModel.InstanceContext> object using the `callbackInstance` object to handle all callback operations.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The callback instance is null.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -60,9 +93,17 @@
         <Parameter Name="callbackInstance" Type="System.ServiceModel.InstanceContext" />
       </Parameters>
       <Docs>
-        <param name="callbackInstance">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="callbackInstance">An <see cref="T:System.ServiceModel.InstanceContext" /> object that associates the callback object with the channel to the service.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexClientBase`1" /> class using the specified callback object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `callbackInstance` provided by the user is used to service all callback operations.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The callback instance is null.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -80,10 +121,11 @@
         <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
       </Parameters>
       <Docs>
-        <param name="callbackInstance">To be added.</param>
-        <param name="endpoint">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="callbackInstance">An object used to create the instance context that associates the callback object with the channel to the service.</param>
+        <param name="endpoint">The service endpoint.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexClientBase`1" /> class with the specified callback object and service endpoint.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The service endpoint is null.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -101,10 +143,18 @@
         <Parameter Name="endpointConfigurationName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="callbackInstance">To be added.</param>
-        <param name="endpointConfigurationName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="callbackInstance">An object used to create the instance context that associates the callback object with the channel to the service.</param>
+        <param name="endpointConfigurationName">The name of the client endpoint information in the application configuration file.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexClientBase`1" /> class using the specified callback object and configuration name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[indigo2](~/includes/indigo2-md.md)] creates a new <xref:System.ServiceModel.InstanceContext> object using the `callbackInstance` object to handle all callback operations.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The configuration name is null.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -122,10 +172,11 @@
         <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
       </Parameters>
       <Docs>
-        <param name="callbackInstance">To be added.</param>
-        <param name="endpoint">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="callbackInstance">An <see cref="T:System.ServiceModel.InstanceContext" /> object that associates the callback object with the channel to the service.</param>
+        <param name="endpoint">The service endpoint.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexClientBase`1" /> class with the specified callback object and service endpoint.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The service endpoint is null.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -143,10 +194,18 @@
         <Parameter Name="endpointConfigurationName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="callbackInstance">To be added.</param>
-        <param name="endpointConfigurationName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="callbackInstance">An object used to create the instance context that associates the callback object with the channel to the service.</param>
+        <param name="endpointConfigurationName">The name of the client endpoint information in the application configuration file.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexClientBase`1" /> class using the specified callback object and configuration name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `callbackInstance` provided by the user is used to service all callback operations.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The configuration name is null.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -165,11 +224,19 @@
         <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" />
       </Parameters>
       <Docs>
-        <param name="callbackInstance">To be added.</param>
-        <param name="binding">To be added.</param>
-        <param name="remoteAddress">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="callbackInstance">An object used to create the instance context that associates the callback object with the channel to the service.</param>
+        <param name="binding">The binding with which to call the service.</param>
+        <param name="remoteAddress">The service endpoint address to use.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexClientBase`1" /> class using the specified callback object, binding, and service endpoint address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[indigo2](~/includes/indigo2-md.md)] creates a new <xref:System.ServiceModel.InstanceContext> object using the `callbackInstance` object to handle all callback operations.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The address is null.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -188,11 +255,19 @@
         <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" />
       </Parameters>
       <Docs>
-        <param name="callbackInstance">To be added.</param>
+        <param name="callbackInstance">An object used to create the instance context that associates the callback object with the channel to the service.</param>
         <param name="bindingConfigurationName">To be added.</param>
-        <param name="remoteAddress">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="remoteAddress">The address of the service endpoint to use.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexClientBase`1" /> class using the specified callback object, configuration name, and service endpoint address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[indigo2](~/includes/indigo2-md.md)] creates a new <xref:System.ServiceModel.InstanceContext> object using the `callbackInstance` object to handle all callback operations.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The address is null.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -211,11 +286,19 @@
         <Parameter Name="remoteAddress" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="callbackInstance">To be added.</param>
-        <param name="endpointConfigurationName">To be added.</param>
-        <param name="remoteAddress">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="callbackInstance">An object used to create the instance context that associates the callback object with the channel to the service.</param>
+        <param name="endpointConfigurationName">The name of the client endpoint information in the application configuration file.</param>
+        <param name="remoteAddress">The address of the service endpoint to use.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexClientBase`1" /> class using the specified callback object, endpoint configuration name, and service endpoint address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[indigo2](~/includes/indigo2-md.md)] creates a new <xref:System.ServiceModel.InstanceContext> object using the `callbackInstance` object to handle all callback operations.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The address is null.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -234,11 +317,18 @@
         <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" />
       </Parameters>
       <Docs>
-        <param name="callbackInstance">To be added.</param>
-        <param name="binding">To be added.</param>
-        <param name="remoteAddress">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="callbackInstance">An object used to create the instance context that associates the callback object with the channel to the service.</param>
+        <param name="binding">The binding with which to call the service.</param>
+        <param name="remoteAddress">The service endpoint address to use.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexClientBase`1" /> class using the specified callback object, binding, and service endpoint address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `callbackInstance` provided by the user is used to service all callback operations.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -257,11 +347,19 @@
         <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" />
       </Parameters>
       <Docs>
-        <param name="callbackInstance">To be added.</param>
-        <param name="endpointConfigurationName">To be added.</param>
+        <param name="callbackInstance">An object used to create the instance context that associates the callback object with the channel to the service.</param>
+        <param name="endpointConfigurationName">The name of the client endpoint information in the application configuration file.</param>
         <param name="address">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexClientBase`1" /> class using the specified callback object, configuration name, and service endpoint address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `callbackInstance` provided by the user is used to service all callback operations.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The address is null.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -280,11 +378,19 @@
         <Parameter Name="remoteAddress" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="callbackInstance">To be added.</param>
-        <param name="endpointConfigurationName">To be added.</param>
-        <param name="remoteAddress">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="callbackInstance">An object used to create the instance context that associates the callback object with the channel to the service.</param>
+        <param name="endpointConfigurationName">The name of the client endpoint information in the application configuration file.</param>
+        <param name="remoteAddress">The address of the service endpoint to use.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexClientBase`1" /> class using the specified callback object, configuration name, and service endpoint address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `callbackInstance` provided by the user is used to service all callback operations.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The address is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateChannel">
@@ -321,8 +427,8 @@
         <ReturnType>System.ServiceModel.IDuplexContextChannel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the inner duplex channel.</summary>
+        <value>The inner duplex channel.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a container for the current <see cref="T:System.Web.ModelBinding.ModelMetadataProvider" /> instance.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.Web.ModelBinding.ModelMetadataProvider</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the current <see cref="T:System.Web.ModelBinding.ModelMetadataProvider" /> instance.</summary>
+        <value>The current <see cref="T:System.Web.ModelBinding.ModelMetadataProvider" /> instance. The default value is a new instance of the <see cref="T:System.Web.ModelBinding.EmptyModelMetadataProvider" /> class.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

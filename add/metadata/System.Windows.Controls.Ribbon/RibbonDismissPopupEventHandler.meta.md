@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Controls.Ribbon.RibbonDismissPopupEventHandler
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

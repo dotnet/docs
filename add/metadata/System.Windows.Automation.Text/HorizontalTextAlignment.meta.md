@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Automation.Text.HorizontalTextAlignment
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---

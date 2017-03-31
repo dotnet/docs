@@ -1,1 +1,0 @@
-            MessageVersion msgVersion = MessageVersion.Default;

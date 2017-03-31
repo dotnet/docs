@@ -1,14 +1,20 @@
 ---
 uid: System.Xml.Serialization.Configuration.SchemaImporterExtensionsSection
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.Configuration.SchemaImporterExtensionsSection.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.Configuration.SchemaImporterExtensionsSection.SchemaImporterExtensions
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

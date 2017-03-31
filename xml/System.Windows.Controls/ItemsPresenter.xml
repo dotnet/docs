@@ -16,8 +16,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Used within the template of an item control to specify the place in the control’s visual tree where the <see cref="P:System.Windows.Controls.ItemsControl.ItemsPanel" /> defined by the <see cref="T:System.Windows.Controls.ItemsControl" /> is to be added.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use an <xref:System.Windows.Controls.ItemsPresenter> in a control template for a <xref:System.Windows.Controls.HeaderedItemsControl>.  
+  
+ [!code-xml[HeaderedItemsControl#HeaderedItemsControl_Style](~/samples/snippets/csharp/VS_Snippets_Wpf/HeaderedItemsControl/CSharp/Page1.xaml#headereditemscontrol_style)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +40,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.ItemsPresenter" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,9 +60,9 @@
         <Parameter Name="arrangeSize" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="arrangeSize">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="arrangeSize">Computed size used to arrange the content.</param>
+        <summary>Called to arrange and size the content of an <see cref="T:System.Windows.Controls.ItemsPresenter" /> object.</summary>
+        <returns>Size of content.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,9 +82,9 @@
         <Parameter Name="constraint" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="constraint">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="constraint">Constraint size is an "upper limit." The return value should not exceed this size.</param>
+        <summary>Overrides the base class implementation of <see cref="M:System.Windows.FrameworkElement.MeasureOverride(System.Windows.Size)" /> to measure the size of the <see cref="T:System.Windows.Controls.ItemsPresenter" /> object and return proper sizes to the layout engine.</summary>
+        <returns>The desired size.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,7 +102,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Called when an internal process or application calls <see cref="M:System.Windows.FrameworkElement.ApplyTemplate" />, which is used to build the current template's visual tree.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,9 +123,9 @@
         <Parameter Name="newTemplate" Type="System.Windows.Controls.ItemsPanelTemplate" />
       </Parameters>
       <Docs>
-        <param name="oldTemplate">To be added.</param>
-        <param name="newTemplate">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="oldTemplate">Value of the old template.</param>
+        <param name="newTemplate">Value of the new template.</param>
+        <summary>Called when the control template changes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

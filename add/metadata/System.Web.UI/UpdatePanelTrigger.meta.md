@@ -1,24 +1,29 @@
 ---
 uid: System.Web.UI.UpdatePanelTrigger
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.UpdatePanelTrigger.Owner
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.UpdatePanelTrigger.Initialize
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.UpdatePanelTrigger.HasTriggered
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.UpdatePanelTrigger.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

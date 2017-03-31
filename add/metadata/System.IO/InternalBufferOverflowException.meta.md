@@ -1,24 +1,41 @@
 ---
 uid: System.IO.InternalBufferOverflowException
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.InternalBufferOverflowException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.InternalBufferOverflowException.#ctor(System.String,System.Exception)
-internalonly: False
----
-
----
-uid: System.IO.InternalBufferOverflowException.#ctor(System.String)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.InternalBufferOverflowException.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.InternalBufferOverflowException.#ctor(System.String)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.InternalBufferOverflowException.#ctor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

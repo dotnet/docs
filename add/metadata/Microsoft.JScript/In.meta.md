@@ -1,9 +1,9 @@
 ---
 uid: Microsoft.JScript.In
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.In.JScriptIn(System.Object,System.Object)
-internalonly: False
+ms.author: "mikejo"
 ---

@@ -19,8 +19,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides an implementation of the OLE DB <see langword="IColumnInfo" /> interface for use by applications upgraded from Visual Basic 6.0.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="GetColumnInfo">
@@ -41,11 +48,18 @@
         <Parameter Name="pStringsBuffer" Type="System.IntPtr&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="cColumns">To be added.</param>
-        <param name="pColumnInfo">To be added.</param>
-        <param name="pStringsBuffer">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="cColumns">A pointer to memory in which to return the number of columns in the rowset; this number includes the bookmark column, if there is one.</param>
+        <param name="pColumnInfo">A pointer to memory in which to return an array of <see langword="DBCOLUMNINFO" /> structures.</param>
+        <param name="pStringsBuffer">A pointer to memory in which to return a pointer to storage for all string values (names used either within columnid or for pwszName) within a single allocation block.</param>
+        <summary>Returns the column metadata needed by most consumers.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MapColumnIDs">
@@ -66,11 +80,18 @@
         <Parameter Name="rgColumns" Type="System.Int32[]" />
       </Parameters>
       <Docs>
-        <param name="cColumnIDs">To be added.</param>
-        <param name="columnIDs">To be added.</param>
-        <param name="rgColumns">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="cColumnIDs">The number of column IDs to map.</param>
+        <param name="columnIDs">An array of IDs of the columns for which to determine the column ordinals.</param>
+        <param name="rgColumns">An array of <c>cColumnIDs</c> ordinals of the columns identified by the elements of <c>columnIDs</c>.</param>
+        <summary>Returns an array of ordinals of the columns in a rowset that are identified by the specified column IDs.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

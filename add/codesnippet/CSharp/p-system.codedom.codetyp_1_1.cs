@@ -1,1 +1,0 @@
-            kType.Constraints.Add(new CodeTypeReference(typeof(IComparable)));

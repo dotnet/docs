@@ -1,34 +1,39 @@
 ---
 uid: System.Xaml.XamlNodeList
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlNodeList.GetReader
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlNodeList.Clear
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlNodeList.#ctor(System.Xaml.XamlSchemaContext)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlNodeList.Writer
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlNodeList.#ctor(System.Xaml.XamlSchemaContext,System.Int32)
-internalonly: False
+manager: "martinek"
+---
+
+---
+uid: System.Xaml.XamlNodeList.#ctor
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlNodeList.Count
-internalonly: False
+manager: "martinek"
 ---

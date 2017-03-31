@@ -11,8 +11,39 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The exception that is thrown when a configuration error has occurred.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ConfigurationErrorsException> exception is thrown when any error occurs while configuration information is being read or written.  
+  
+   
+  
+## Examples  
+ The following code example creates a custom section and generates a <xref:System.Configuration.ConfigurationErrorsException> exception when it modifies its properties.  
+  
+ [!code-csharp[System.Configuration.ConfigurationErrorsException#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationErrorsException/CS/ConfigurationErrorsException.cs#1)]
+ [!code-vb[System.Configuration.ConfigurationErrorsException#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationErrorsException/VB/ConfigurationErrorsException.vb#1)]  
+  
+ The following example is a configuration excerpt used by the previous example.  
+  
+```  
+<?xml version="1.0" encoding="utf-8"?>  
+<configuration>  
+  <configSections>  
+    <section name="CustomSection" type="Samples.AspNet.CustomSection,   
+      ConfigurationErrorsException, Version=1.0.0.0, Culture=neutral,   
+      PublicKeyToken=null" allowDefinition="Everywhere"   
+      allowExeDefinition="MachineToApplication"   
+      restartOnExternalChanges="true" />  
+  </configSections>  
+  <CustomSection fileName="default.txt" maxUsers="10" />  
+</configuration>  
+```  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +57,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationErrorsException" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +74,8 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">A message that describes why this <see cref="T:System.Configuration.ConfigurationErrorsException" /> exception was thrown.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationErrorsException" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,10 +93,11 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">The object that holds the information to deserialize.</param>
+        <param name="context">Contextual information about the source or destination.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationErrorsException" /> class.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The current type is not a <see cref="T:System.Configuration.ConfigurationException" /> or a <see cref="T:System.Configuration.ConfigurationErrorsException" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -82,9 +114,9 @@
         <Parameter Name="inner" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="inner">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">A message that describes why this <see cref="T:System.Configuration.ConfigurationErrorsException" /> exception was thrown.</param>
+        <param name="inner">The exception that caused this <see cref="T:System.Configuration.ConfigurationErrorsException" /> exception to be thrown.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationErrorsException" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,9 +134,9 @@
         <Parameter Name="node" Type="System.Xml.XmlNode" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="node">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">A message that describes why this <see cref="T:System.Configuration.ConfigurationErrorsException" /> exception was thrown.</param>
+        <param name="node">The <see cref="T:System.Xml.XmlNode" /> object that caused this <see cref="T:System.Configuration.ConfigurationErrorsException" /> exception to be thrown.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationErrorsException" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,9 +154,9 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">A message that describes why this <see cref="T:System.Configuration.ConfigurationErrorsException" /> exception was thrown.</param>
+        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> object that caused this <see cref="T:System.Configuration.ConfigurationErrorsException" /> exception to be thrown.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationErrorsException" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,10 +175,10 @@
         <Parameter Name="node" Type="System.Xml.XmlNode" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="inner">To be added.</param>
-        <param name="node">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">A message that describes why this <see cref="T:System.Configuration.ConfigurationErrorsException" /> exception was thrown.</param>
+        <param name="inner">The inner exception that caused this <see cref="T:System.Configuration.ConfigurationErrorsException" /> exception to be thrown.</param>
+        <param name="node">The <see cref="T:System.Xml.XmlNode" /> object that caused this <see cref="T:System.Configuration.ConfigurationErrorsException" /> exception to be thrown.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationErrorsException" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -165,10 +197,10 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="inner">To be added.</param>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">A message that describes why this <see cref="T:System.Configuration.ConfigurationErrorsException" /> exception was thrown.</param>
+        <param name="inner">The inner exception that caused this <see cref="T:System.Configuration.ConfigurationErrorsException" /> exception to be thrown.</param>
+        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> object that caused this <see cref="T:System.Configuration.ConfigurationErrorsException" /> exception to be thrown.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationErrorsException" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -187,10 +219,10 @@
         <Parameter Name="line" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="filename">To be added.</param>
-        <param name="line">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">A message that describes why this <see cref="T:System.Configuration.ConfigurationErrorsException" /> exception was thrown.</param>
+        <param name="filename">The path to the configuration file that caused this <see cref="T:System.Configuration.ConfigurationErrorsException" /> exception to be thrown.</param>
+        <param name="line">The line number within the configuration file at which this <see cref="T:System.Configuration.ConfigurationErrorsException" /> exception was thrown.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationErrorsException" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -210,11 +242,11 @@
         <Parameter Name="line" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="inner">To be added.</param>
-        <param name="filename">To be added.</param>
-        <param name="line">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">A message that describes why this <see cref="T:System.Configuration.ConfigurationErrorsException" /> exception was thrown.</param>
+        <param name="inner">The inner exception that caused this <see cref="T:System.Configuration.ConfigurationErrorsException" /> exception to be thrown.</param>
+        <param name="filename">The path to the configuration file that caused this <see cref="T:System.Configuration.ConfigurationErrorsException" /> exception to be thrown.</param>
+        <param name="line">The line number within the configuration file at which this <see cref="T:System.Configuration.ConfigurationErrorsException" /> exception was thrown.</param>
+        <summary>Initializes a new instance of a <see cref="T:System.Configuration.ConfigurationErrorsException" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -231,9 +263,24 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a description of why this configuration exception was thrown.</summary>
+        <value>A description of why this <see cref="T:System.Configuration.ConfigurationErrorsException" /> was thrown.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ConfigurationErrorsException.BareMessage%2A> property does not contain the name of the configuration file or the line number at which this <xref:System.Configuration.ConfigurationErrorsException> exception occurred. If you want a message that contains the name of the configuration file and the line number, along with the message, use the <xref:System.Configuration.ConfigurationErrorsException.Message%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example shows how to get the <xref:System.Configuration.ConfigurationErrorsException.BareMessage%2A> property value.  
+  
+ [!code-csharp[System.Configuration.ConfigurationErrorsException#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationErrorsException/CS/ConfigurationErrorsException.cs#6)]
+ [!code-vb[System.Configuration.ConfigurationErrorsException#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationErrorsException/VB/ConfigurationErrorsException.vb#6)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Errors">
@@ -249,9 +296,16 @@
         <ReturnType>System.Collections.ICollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of errors that detail the reasons this <see cref="T:System.Configuration.ConfigurationErrorsException" /> exception was thrown.</summary>
+        <value>An <see cref="T:System.Collections.ICollection" /> object that contains errors that identify the reasons this <see cref="T:System.Configuration.ConfigurationErrorsException" /> exception was thrown.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ConfigurationErrorsException.Errors%2A> property collects as many errors as possible that might occur during an operation, such as reading a configuration file. The exception thrown shows only the first error. You can access <xref:System.Configuration.ConfigurationErrorsException.Errors%2A> to see all the errors issued.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Filename">
@@ -267,9 +321,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the path to the configuration file that caused this configuration exception to be thrown.</summary>
+        <value>The path to the configuration file that caused this <see cref="T:System.Configuration.ConfigurationErrorsException" /> to be thrown.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to get the <xref:System.Configuration.ConfigurationErrorsException.Filename%2A> property value.  
+  
+ [!code-csharp[System.Configuration.ConfigurationErrorsException#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationErrorsException/CS/ConfigurationErrorsException.cs#4)]
+ [!code-vb[System.Configuration.ConfigurationErrorsException#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationErrorsException/VB/ConfigurationErrorsException.vb#4)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetFilename">
@@ -288,10 +352,17 @@
         <Parameter Name="node" Type="System.Xml.XmlNode" />
       </Parameters>
       <Docs>
-        <param name="node">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="node">The <see cref="T:System.Xml.XmlNode" /> object that caused this <see cref="T:System.Configuration.ConfigurationErrorsException" /> exception to be thrown.</param>
+        <summary>Gets the path to the configuration file from which the internal <see cref="T:System.Xml.XmlNode" /> object was loaded when this configuration exception was thrown.</summary>
+        <returns>The path to the configuration file from which the internal <see cref="T:System.Xml.XmlNode" /> object was loaded when this configuration exception was thrown.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ConfigurationErrorsException.GetFilename%2A> method returns the name of the configuration file that contains the <xref:System.Xml.XmlNode> object being parsed when the exception occurred.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetFilename">
@@ -310,10 +381,17 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> object that caused this <see cref="T:System.Configuration.ConfigurationErrorsException" /> exception to be thrown.</param>
+        <summary>Gets the path to the configuration file that the internal <see cref="T:System.Xml.XmlReader" /> was reading when this configuration exception was thrown.</summary>
+        <returns>The path of the configuration file the internal <see cref="T:System.Xml.XmlReader" /> object was accessing when the exception occurred.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ConfigurationErrorsException.GetFilename%2A> method returns the name of the configuration file that the <xref:System.Xml.XmlReader> object was accessing when the exception occurred.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetLineNumber">
@@ -332,10 +410,17 @@
         <Parameter Name="node" Type="System.Xml.XmlNode" />
       </Parameters>
       <Docs>
-        <param name="node">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="node">The <see cref="T:System.Xml.XmlNode" /> object that caused this <see cref="T:System.Configuration.ConfigurationErrorsException" /> exception to be thrown.</param>
+        <summary>Gets the line number within the configuration file that the internal <see cref="T:System.Xml.XmlNode" /> object represented when this configuration exception was thrown.</summary>
+        <returns>The line number within the configuration file that contains the <see cref="T:System.Xml.XmlNode" /> object being parsed when this configuration exception was thrown.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ConfigurationErrorsException.GetFilename%2A> method returns the name of the configuration file that contains the <xref:System.Xml.XmlNode> object being parsed when the exception occurred.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetLineNumber">
@@ -354,10 +439,17 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> object that caused this <see cref="T:System.Configuration.ConfigurationErrorsException" /> exception to be thrown.</param>
+        <summary>Gets the line number within the configuration file that the internal <see cref="T:System.Xml.XmlReader" /> object was processing when this configuration exception was thrown.</summary>
+        <returns>The line number within the configuration file that the <see cref="T:System.Xml.XmlReader" /> object was accessing when the exception occurred.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ConfigurationErrorsException.GetLineNumber%2A> method returns the name of the configuration file that the <xref:System.Xml.XmlReader> object was accessing when the exception occurred.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -377,10 +469,17 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="info">The object that holds the information to be serialized.</param>
+        <param name="context">The contextual information about the source or destination.</param>
+        <summary>Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object with the file name and line number at which this configuration exception occurred.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ConfigurationErrorsException.GetObjectData%2A> method sets a <xref:System.Runtime.Serialization.SerializationInfo> object with the file name and line number at which this <xref:System.Configuration.ConfigurationErrorsException> exception occurred. During deserialization, the <xref:System.Configuration.ConfigurationErrorsException> exception is reconstituted from the <xref:System.Runtime.Serialization.SerializationInfo> object that is transmitted over the stream.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Line">
@@ -396,9 +495,19 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the line number within the configuration file at which this configuration exception was thrown.</summary>
+        <value>The line number within the configuration file at which this <see cref="T:System.Configuration.ConfigurationErrorsException" /> exception was thrown.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to get the <xref:System.Configuration.ConfigurationErrorsException.Line%2A> property value.  
+  
+ [!code-csharp[System.Configuration.ConfigurationErrorsException#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationErrorsException/CS/ConfigurationErrorsException.cs#5)]
+ [!code-vb[System.Configuration.ConfigurationErrorsException#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationErrorsException/VB/ConfigurationErrorsException.vb#5)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Message">
@@ -414,9 +523,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets an extended description of why this configuration exception was thrown.</summary>
+        <value>An extended description of why this <see cref="T:System.Configuration.ConfigurationErrorsException" /> exception was thrown.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to get the <xref:System.Configuration.ConfigurationErrorsException.Message%2A> property value.  
+  
+ [!code-csharp[System.Configuration.ConfigurationErrorsException#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationErrorsException/CS/ConfigurationErrorsException.cs#3)]
+ [!code-vb[System.Configuration.ConfigurationErrorsException#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationErrorsException/VB/ConfigurationErrorsException.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

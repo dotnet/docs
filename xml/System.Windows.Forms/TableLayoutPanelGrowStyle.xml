@@ -10,8 +10,23 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies how a <see cref="T:System.Windows.Forms.TableLayoutPanel" /> will gain additional rows or columns after its existing cells are full.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If all the cells in the <xref:System.Windows.Forms.TableLayoutPanel> are filled and the <xref:System.Windows.Forms.TableLayoutPanel.GrowStyle%2A> property is set to FixedSize, an attempt to add another control will throw an exception.  
+  
+   
+  
+## Examples  
+ The following example shows how to use <xref:System.Windows.Forms.TableLayoutPanelGrowStyle> to set the <xref:System.Windows.Forms.TableLayoutPanel.GrowStyle%2A> property on a <xref:System.Windows.Forms.TableLayoutPanel> control. This code example is part of a larger example provided for the <xref:System.Windows.Forms.TableLayoutPanel> control.  
+  
+ [!code-csharp[System.Windows.Forms.TableLayoutPanel#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel/CS/form1.cs#7)]
+ [!code-vb[System.Windows.Forms.TableLayoutPanel#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel/VB/form1.vb#7)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AddColumns">
@@ -27,7 +42,7 @@
         <ReturnType>System.Windows.Forms.TableLayoutPanelGrowStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Windows.Forms.TableLayoutPanel" /> gains additional columns after it is full.</summary>
       </Docs>
     </Member>
     <Member MemberName="AddRows">
@@ -43,7 +58,7 @@
         <ReturnType>System.Windows.Forms.TableLayoutPanelGrowStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Windows.Forms.TableLayoutPanel" /> gains additional rows after it is full.</summary>
       </Docs>
     </Member>
     <Member MemberName="FixedSize">
@@ -59,7 +74,7 @@
         <ReturnType>System.Windows.Forms.TableLayoutPanelGrowStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Windows.Forms.TableLayoutPanel" /> does not allow additional rows or columns after it is full.</summary>
       </Docs>
     </Member>
   </Members>

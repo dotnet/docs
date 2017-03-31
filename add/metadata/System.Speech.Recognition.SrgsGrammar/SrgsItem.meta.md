@@ -1,79 +1,107 @@
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsItem
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsItem.Elements
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsItem.Weight
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsItem.#ctor(System.Int32,System.Int32,System.Speech.Recognition.SrgsGrammar.SrgsElement[])
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsItem.SetRepeat(System.Int32)
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsItem.#ctor(System.String)
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsItem.Add(System.Speech.Recognition.SrgsGrammar.SrgsElement)
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsItem.RepeatProbability
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsItem.#ctor(System.Int32,System.Int32)
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsItem.#ctor
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsItem.#ctor(System.Speech.Recognition.SrgsGrammar.SrgsElement[])
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsItem.MinRepeat
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsItem.#ctor(System.Int32,System.Int32,System.String)
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsItem.SetRepeat(System.Int32,System.Int32)
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
+---
+
+---
+uid: System.Speech.Recognition.SrgsGrammar.SrgsItem.#ctor
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsItem.#ctor(System.Int32)
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsItem.MaxRepeat
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
+---
+
+---
+uid: System.Speech.Recognition.SrgsGrammar.SrgsItem.SetRepeat
+ms.author: "kbridge"
+manager: "ghogen"
 ---

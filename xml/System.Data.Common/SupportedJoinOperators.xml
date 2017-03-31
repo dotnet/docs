@@ -20,8 +20,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies what types of Transact-SQL join statements are supported by the data source.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ These members are flags that allow a bitwise combination of the join capabilities.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="FullOuter">
@@ -42,7 +49,7 @@
         <ReturnType>System.Data.Common.SupportedJoinOperators</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The data source supports full outer joins.</summary>
       </Docs>
     </Member>
     <Member MemberName="Inner">
@@ -63,7 +70,7 @@
         <ReturnType>System.Data.Common.SupportedJoinOperators</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The data source supports inner joins.</summary>
       </Docs>
     </Member>
     <Member MemberName="LeftOuter">
@@ -84,7 +91,7 @@
         <ReturnType>System.Data.Common.SupportedJoinOperators</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The data source supports left outer joins.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -105,7 +112,7 @@
         <ReturnType>System.Data.Common.SupportedJoinOperators</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The data source does not support join queries.</summary>
       </Docs>
     </Member>
     <Member MemberName="RightOuter">
@@ -126,7 +133,7 @@
         <ReturnType>System.Data.Common.SupportedJoinOperators</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The data source supports right outer joins.</summary>
       </Docs>
     </Member>
   </Members>

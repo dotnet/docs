@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Converts a <see cref="T:System.Windows.Input.MouseAction" /> object to and from other types.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Input.MouseActionConverter> class only converts an instance of <xref:System.Windows.Input.MouseAction> to and from a <xref:System.String>.  
+  
+<a name="xamlTextUsage_MouseActionConverter"></a>   
+## XAML Text Usage  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +35,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.MouseActionConverter" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,10 +56,11 @@
         <Parameter Name="sourceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="sourceType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">A format context that provides information about the environment from which this converter is being invoked.</param>
+        <param name="sourceType">The type being evaluated for conversion.</param>
+        <summary>Determines whether an object of the specified type can be converted to an instance of <see cref="T:System.Windows.Input.MouseAction" />,using the specified context.</summary>
+        <returns>
+          <see langword="true" /> if this converter can perform the operation; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,10 +81,11 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="destinationType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">A format context that provides information about the environment from which this converter is being invoked.</param>
+        <param name="destinationType">The type being evaluated for conversion.</param>
+        <summary>Determines whether an instance of <see cref="T:System.Windows.Input.MouseAction" /> can be converted to the specified type, using the specified context.</summary>
+        <returns>
+          <see langword="true" /> if this converter can perform the operation; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,12 +107,14 @@
         <Parameter Name="source" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="culture">To be added.</param>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">A format context that provides information about the environment from which this converter is being invoked.</param>
+        <param name="culture">Culture specific information.</param>
+        <param name="source">The object to convert.</param>
+        <summary>Attempts to convert the specified object to a <see cref="T:System.Windows.Input.MouseAction" />, using the specified context.</summary>
+        <returns>The converted object.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">
+          <paramref name="source" /> cannot be converted.</exception>
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -123,13 +136,26 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="culture">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="destinationType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="context">A format context that provides information about the environment from which this converter is being invoked.</param>
+        <param name="culture">Culture specific information.</param>
+        <param name="value">The object to convert.</param>
+        <param name="destinationType">The type to convert the object to.</param>
+        <summary>Attempts to convert a <see cref="T:System.Windows.Input.MouseAction" /> to the specified type, using the specified context.</summary>
+        <returns>The converted object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `destinationType` must be <xref:System.String>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="destinationType" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
+          <paramref name="value" /> does not map to a valid <see cref="T:System.Windows.Input.MouseAction" />.</exception>
+        <exception cref="T:System.NotSupportedException">
+          <paramref name="value" /> cannot be converted.</exception>
       </Docs>
     </Member>
   </Members>

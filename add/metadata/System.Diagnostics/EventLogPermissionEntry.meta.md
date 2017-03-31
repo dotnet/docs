@@ -1,19 +1,27 @@
 ---
 uid: System.Diagnostics.EventLogPermissionEntry
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.EventLogPermissionEntry.MachineName
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.EventLogPermissionEntry.PermissionAccess
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.EventLogPermissionEntry.#ctor(System.Diagnostics.EventLogPermissionAccess,System.String)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

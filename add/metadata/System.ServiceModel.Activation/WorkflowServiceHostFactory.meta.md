@@ -1,14 +1,20 @@
 ---
 uid: System.ServiceModel.Activation.WorkflowServiceHostFactory
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activation.WorkflowServiceHostFactory.CreateServiceHost(System.String,System.Uri[])
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activation.WorkflowServiceHostFactory.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

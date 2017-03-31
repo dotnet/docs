@@ -1,39 +1,62 @@
 ---
 uid: System.ComponentModel.Composition.Primitives.ComposablePartCatalog
-internalonly: False
----
-
----
-uid: System.ComponentModel.Composition.Primitives.ComposablePartCatalog.Parts
-internalonly: False
----
-
----
-uid: System.ComponentModel.Composition.Primitives.ComposablePartCatalog.#ctor
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Primitives.ComposablePartCatalog.Dispose
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Composition.Primitives.ComposablePartCatalog.Parts
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Composition.Primitives.ComposablePartCatalog.#ctor
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Composition.Primitives.ComposablePartCatalog.Dispose
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Primitives.ComposablePartCatalog.GetExports(System.ComponentModel.Composition.Primitives.ImportDefinition)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Primitives.ComposablePartCatalog.GetEnumerator
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Primitives.ComposablePartCatalog.System#Collections#IEnumerable#GetEnumerator
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Primitives.ComposablePartCatalog.Dispose(System.Boolean)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

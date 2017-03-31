@@ -1,44 +1,53 @@
 ---
 uid: System.Web.UI.WebControls.SiteMapNodeItem
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.SiteMapNodeItem.ItemIndex
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.SiteMapNodeItem.System#Web#UI#IDataItemContainer#DataItem
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.SiteMapNodeItem.System#Web#UI#IDataItemContainer#DisplayIndex
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.SiteMapNodeItem.ItemType
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.SiteMapNodeItem.#ctor(System.Int32,System.Web.UI.WebControls.SiteMapNodeItemType)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.SiteMapNodeItem.System#Web#UI#IDataItemContainer#DataItemIndex
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.SiteMapNodeItem.SiteMapNode
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.SiteMapNodeItem.SetItemType(System.Web.UI.WebControls.SiteMapNodeItemType)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

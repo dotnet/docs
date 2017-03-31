@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.SimpleWebHandlerParser
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.SimpleWebHandlerParser.DefaultDirectiveName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.SimpleWebHandlerParser.GetCompiledTypeFromCache
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.SimpleWebHandlerParser.#ctor(System.Web.HttpContext,System.String,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

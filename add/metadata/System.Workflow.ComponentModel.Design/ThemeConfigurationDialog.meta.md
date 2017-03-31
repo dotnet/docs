@@ -1,19 +1,34 @@
 ---
 uid: System.Workflow.ComponentModel.Design.ThemeConfigurationDialog
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.ComponentModel.Design.ThemeConfigurationDialog.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.ThemeConfigurationDialog.#ctor(System.IServiceProvider,System.Workflow.ComponentModel.Design.WorkflowTheme)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.ThemeConfigurationDialog.ComposedTheme
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.ThemeConfigurationDialog.#ctor(System.IServiceProvider)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

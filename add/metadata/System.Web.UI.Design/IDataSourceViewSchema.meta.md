@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.Design.IDataSourceViewSchema
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.IDataSourceViewSchema.GetChildren
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.IDataSourceViewSchema.GetFields
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.IDataSourceViewSchema.Name
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

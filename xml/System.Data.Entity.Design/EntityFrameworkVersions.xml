@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides information about different versions of the Entity Framework.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,10 +32,10 @@
         <Parameter Name="dataSpace" Type="System.Data.Metadata.Edm.DataSpace" />
       </Parameters>
       <Docs>
-        <param name="entityFrameworkVersion">To be added.</param>
-        <param name="dataSpace">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="entityFrameworkVersion">The property of <see cref="T:System.Data.Entity.Design.EntityFrameworkVersions" /> that corresponds to the targeted version of the Entity Framework.</param>
+        <param name="dataSpace">The desired <see cref="T:System.Data.Metadata.Edm.DataSpace" /> of the XSD.</param>
+        <summary>Returns a stream of the XSD that corresponds to the specified Entity Framework version, with default model names as specified in the <paramref name="dataSpace" /> parameter.</summary>
+        <returns>A  <see cref="T:System.IO.Stream" /> of the XSD that corresponds to the specified Entity Framework version and <see cref="T:System.Data.Metadata.Edm.DataSpace" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,7 +52,7 @@
         <ReturnType>System.Version</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A read-only property that represents version 1 of the Entity Framework.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,7 +69,7 @@
         <ReturnType>System.Version</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A read-only property that represents version 2 of the Entity Framework.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,7 +86,7 @@
         <ReturnType>System.Version</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A read-only property that represents version 3 of the Entity Framework.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

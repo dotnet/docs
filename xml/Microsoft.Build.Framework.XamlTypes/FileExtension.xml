@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>A simple class that deserializes content type data.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Constructor</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,8 +47,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the corresponding content type.</summary>
+        <value>Returns the corresponding content type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,9 +73,9 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="type">The type of static data to retrieve.</param>
+        <summary>Returns an enumerator over all instances of static data that have the given type.</summary>
+        <returns>Returns an enumerator over all instances of static data that have the given type. Returns <see langword="Null" /> or Empty list if no objects of the given type are provided by this node.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,8 +98,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an enumerator over all types of static data for the data-driven features that this node contains.</summary>
+        <returns>Returns an enumerator over all types of static data for the data-driven features that this node contains.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,8 +116,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the file extension.</summary>
+        <value>Returns the name of the file extension.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,39 +1,53 @@
 ---
 uid: System.IdentityModel.Tokens.Saml2AuthenticationStatement
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.Saml2AuthenticationStatement.AuthenticationInstant
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.Saml2AuthenticationStatement.SubjectLocality
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.Saml2AuthenticationStatement.SessionIndex
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.Saml2AuthenticationStatement.#ctor(System.IdentityModel.Tokens.Saml2AuthenticationContext)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.Saml2AuthenticationStatement.AuthenticationContext
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.Saml2AuthenticationStatement.SessionNotOnOrAfter
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.Saml2AuthenticationStatement.#ctor(System.IdentityModel.Tokens.Saml2AuthenticationContext,System.DateTime)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.Saml2AuthenticationStatement.#ctor
+ms.author: "v-jibran"
+manager: "markgal"
 ---

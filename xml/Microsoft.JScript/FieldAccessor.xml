@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a field accessor.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.FieldAccessor" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,9 +51,9 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <summary>When overridden in a derived class, gets the value of the field for the specified object.</summary>
+        <returns>The value of the field for <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,9 +79,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <param name="value">The value to set for the field.</param>
+        <summary>When overridden in a derived class, sets the specified value of the field for the specified object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

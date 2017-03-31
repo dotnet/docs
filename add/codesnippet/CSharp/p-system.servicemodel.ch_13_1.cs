@@ -1,2 +1,0 @@
-	    HttpStatusCode httpStatusCode =
-	        responseProperty.StatusCode;

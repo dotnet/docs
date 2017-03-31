@@ -22,8 +22,59 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Holds text, markup, and server controls to render to a <see cref="T:System.Web.UI.WebControls.ContentPlaceHolder" /> control in a master page.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Web.UI.WebControls.Content> control is a container for the content and controls of a content page. A <xref:System.Web.UI.WebControls.Content> control is used only with a master page that defines a corresponding <xref:System.Web.UI.WebControls.ContentPlaceHolder> control. A <xref:System.Web.UI.WebControls.Content> control is not added to the control hierarchy at runtime. Instead, the contents within the <xref:System.Web.UI.WebControls.Content> control are directly merged into the corresponding <xref:System.Web.UI.WebControls.ContentPlaceHolder> control.  
+  
+ The <xref:System.Web.UI.WebControls.Content> control is associated with a <xref:System.Web.UI.WebControls.ContentPlaceHolder> using its <xref:System.Web.UI.WebControls.Content.ContentPlaceHolderID%2A> property. Set the <xref:System.Web.UI.WebControls.Content.ContentPlaceHolderID%2A> property to the value of the <xref:System.Web.UI.Control.ID%2A> property of a <xref:System.Web.UI.WebControls.ContentPlaceHolder> control in a master page. When the URL of the content page is called, all text, markup, and server controls that are contained within the <xref:System.Web.UI.WebControls.Content> control are rendered to the <xref:System.Web.UI.WebControls.ContentPlaceHolder> on the master page, and the address bar of the browser will show the name of the content page.  
+  
+ For more information about master pages and content pages, see [ASP.NET Master Pages](../Topic/ASP.NET%20Master%20Pages.md).  
+  
+<a name="DeclarativeSyntax"></a>   
+## Declarative Syntax  
+  
+```  
+<asp:Content  
+    ContentPlaceHolderID="string"  
+    EnableViewState="True|False"  
+    ID="string"  
+    runat="server">  
+    Visible="True|False"  
+        <!-- child controls -->  
+</asp:Content>  
+```  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.UI.WebControls.Content> control to define the content for a master page. The first Web page is a master page and defines a content region using a <xref:System.Web.UI.WebControls.ContentPlaceHolder> control.  
+  
+ [!code-csharp[System.Web.UI.MasterPage_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.MasterPage_1/CS/MasterPageSample_1cs.master#1)]
+ [!code-vb[System.Web.UI.MasterPage_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.MasterPage_1/VB/MasterPageSample_1vb.master#1)]  
+  
+ The following code example demonstrates how to use a content page for the preceding master page. The text, markup, and any server controls that are defined within the <xref:System.Web.UI.WebControls.Content> control template are rendered to the <xref:System.Web.UI.WebControls.ContentPlaceHolder> on the master page.  
+  
+```csharp  
+<%@ Page Language="C#" MasterPageFile="~/MasterPageSample_1cs.master" Title="Content Page"%>  
+  
+<asp:content   
+    runat="server"  
+    contentplaceholderid="ContentPlaceHolder1" >Hello, Master Pages!</asp:content>  
+```  
+  
+```vb  
+<%@ Page Language="VB" MasterPageFile="~/MasterPageSample_1vb.master" Title="Content Page"%>  
+  
+<asp:content   
+    runat="server"  
+    contentplaceholderid="ContentPlaceHolder1" >Hello, Master Pages!</asp:content>  
+```  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,8 +88,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.CompositeDataBoundControl" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.Content> control typically is created declaratively, not programmatically. For an example, see <xref:System.Web.UI.WebControls.Content>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ContentPlaceHolderID">
@@ -65,9 +123,42 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the ID of the <see cref="T:System.Web.UI.WebControls.ContentPlaceHolder" /> control that is associated with the current content.</summary>
+        <value>A string containing the ID of the <see cref="T:System.Web.UI.WebControls.ContentPlaceHolder" /> associated with the current content. The default is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ All content that is encapsulated by the <xref:System.Web.UI.WebControls.Content> control renders within the referenced <xref:System.Web.UI.WebControls.ContentPlaceHolder> control in a master page. A <xref:System.Web.UI.WebControls.Content> control is not added to the control hierarchy at runtime.  
+  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](../Topic/ASP.NET%20Themes%20and%20Skins.md).  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.UI.WebControls.Content.ContentPlaceHolderID%2A> property of a <xref:System.Web.UI.WebControls.ContentPlaceHolder> control in an ASP.NET Web page.  
+  
+ This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.Content> class.  
+  
+```csharp  
+<%@ Page Language="C#" MasterPageFile="~/MasterPageSample_1cs.master" Title="Content Page"%>  
+  
+<asp:content   
+    runat="server"  
+    contentplaceholderid="ContentPlaceHolder1" >Hello, Master Pages!</asp:content>  
+```  
+  
+```vb  
+<%@ Page Language="VB" MasterPageFile="~/MasterPageSample_1vb.master" Title="Content Page"%>  
+  
+<asp:content   
+    runat="server"  
+    contentplaceholderid="ContentPlaceHolder1" >Hello, Master Pages!</asp:content>  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">An attempt was made to set the property at run time.</exception>
       </Docs>
     </Member>
     <Member MemberName="DataBinding">
@@ -91,8 +182,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the control binds to a data source.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.Content.DataBinding> event is never invoked and does not appear in visual designers.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Disposed">
@@ -116,8 +214,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the control is released from memory.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.Content.Disposed> event is never invoked and does not appear in visual designers.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Init">
@@ -141,8 +246,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the control is initialized.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.Content.Init> event is never invoked and does not appear in visual designers.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -166,8 +278,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the server control is loaded into the <see cref="T:System.Web.UI.Page" /> control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.Content.Load> event is never invoked and does not appear in visual designers.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PreRender">
@@ -191,8 +310,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the server control is about to render to its containing <see cref="T:System.Web.UI.Page" /> control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.Content.PreRender> event is never invoked and does not appear in visual designers.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Unload">
@@ -216,8 +342,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the server control is unloaded from memory.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.Content.Unload> event is never invoked and does not appear in visual designers.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

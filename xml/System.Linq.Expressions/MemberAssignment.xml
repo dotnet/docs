@@ -22,8 +22,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents assignment operation for a field or property of an object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Linq.Expressions.Expression.Bind%2A> factory methods to create a <xref:System.Linq.Expressions.MemberAssignment>.  
+  
+ A <xref:System.Linq.Expressions.MemberAssignment> has the <xref:System.Linq.Expressions.MemberBinding.BindingType%2A> property equal to <xref:System.Linq.Expressions.MemberBindingType>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Expression">
@@ -50,8 +59,8 @@
         <ReturnType>System.Linq.Expressions.Expression</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the expression to assign to the field or property.</summary>
+        <value>The <see cref="T:System.Linq.Expressions.Expression" /> that represents the value to assign to the field or property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,9 +91,9 @@
         <Parameter Name="expression" Type="System.Linq.Expressions.Expression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The <see cref="P:System.Linq.Expressions.MemberAssignment.Expression" /> property of the result.</param>
+        <summary>Creates a new expression that is like this one, but using the supplied children. If all of the children are the same, it will return this expression.</summary>
+        <returns>This expression if no children are changed or an expression with the updated children.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

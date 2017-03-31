@@ -1,69 +1,94 @@
 ---
 uid: System.Windows.Automation.Peers.ComboBoxAutomationPeer
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.ComboBoxAutomationPeer.System#Windows#Automation#Provider#IValueProvider#Value
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.ComboBoxAutomationPeer.#ctor(System.Windows.Controls.ComboBox)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.ComboBoxAutomationPeer.System#Windows#Automation#Provider#IExpandCollapseProvider#Expand
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.ComboBoxAutomationPeer.GetAutomationControlTypeCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.ComboBoxAutomationPeer.System#Windows#Automation#Provider#IValueProvider#SetValue(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.ComboBoxAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.ComboBoxAutomationPeer.CreateItemAutomationPeer(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.ComboBoxAutomationPeer.System#Windows#Automation#Provider#IExpandCollapseProvider#ExpandCollapseState
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.ComboBoxAutomationPeer.System#Windows#Automation#Provider#IValueProvider#IsReadOnly
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.ComboBoxAutomationPeer.SetFocusCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.ComboBoxAutomationPeer.GetClassNameCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.ComboBoxAutomationPeer.System#Windows#Automation#Provider#IExpandCollapseProvider#Collapse
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.ComboBoxAutomationPeer.GetChildrenCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

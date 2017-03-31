@@ -1,14 +1,17 @@
 ---
 uid: Microsoft.Build.Construction.ProjectPropertyElement
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.ProjectPropertyElement.Value
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.ProjectPropertyElement.Name
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

@@ -1,14 +1,17 @@
 ---
 uid: System.Runtime.Caching.SqlChangeMonitor
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.SqlChangeMonitor.#ctor(System.Data.SqlClient.SqlDependency)
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.SqlChangeMonitor.UniqueId
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---

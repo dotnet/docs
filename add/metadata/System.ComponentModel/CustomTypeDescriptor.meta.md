@@ -1,74 +1,125 @@
 ---
 uid: System.ComponentModel.CustomTypeDescriptor
-internalonly: False
----
-
----
-uid: System.ComponentModel.CustomTypeDescriptor.GetEvents
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.CustomTypeDescriptor.GetProperties
-internalonly: False
----
-
----
-uid: System.ComponentModel.CustomTypeDescriptor.GetPropertyOwner(System.ComponentModel.PropertyDescriptor)
-internalonly: False
----
-
----
-uid: System.ComponentModel.CustomTypeDescriptor.GetClassName
-internalonly: False
----
-
----
-uid: System.ComponentModel.CustomTypeDescriptor.GetEditor(System.Type)
-internalonly: False
----
-
----
-uid: System.ComponentModel.CustomTypeDescriptor.GetEvents(System.Attribute[])
-internalonly: False
----
-
----
-uid: System.ComponentModel.CustomTypeDescriptor.GetProperties(System.Attribute[])
-internalonly: False
----
-
----
-uid: System.ComponentModel.CustomTypeDescriptor.GetComponentName
-internalonly: False
----
-
----
-uid: System.ComponentModel.CustomTypeDescriptor.GetAttributes
-internalonly: False
----
-
----
-uid: System.ComponentModel.CustomTypeDescriptor.#ctor(System.ComponentModel.ICustomTypeDescriptor)
-internalonly: False
----
-
----
-uid: System.ComponentModel.CustomTypeDescriptor.GetDefaultProperty
-internalonly: False
----
-
----
-uid: System.ComponentModel.CustomTypeDescriptor.GetDefaultEvent
-internalonly: False
----
-
----
-uid: System.ComponentModel.CustomTypeDescriptor.GetConverter
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.CustomTypeDescriptor.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.CustomTypeDescriptor.GetEvents
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.CustomTypeDescriptor.GetProperties
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.CustomTypeDescriptor.GetPropertyOwner(System.ComponentModel.PropertyDescriptor)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.CustomTypeDescriptor.GetClassName
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.CustomTypeDescriptor.GetEditor(System.Type)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.CustomTypeDescriptor.GetEvents(System.Attribute[])
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.CustomTypeDescriptor.GetProperties(System.Attribute[])
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.CustomTypeDescriptor.GetComponentName
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.CustomTypeDescriptor.GetAttributes
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.CustomTypeDescriptor.#ctor(System.ComponentModel.ICustomTypeDescriptor)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.CustomTypeDescriptor.GetDefaultProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.CustomTypeDescriptor.GetDefaultEvent
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.CustomTypeDescriptor.GetConverter
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.CustomTypeDescriptor.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.CustomTypeDescriptor.GetEvents
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

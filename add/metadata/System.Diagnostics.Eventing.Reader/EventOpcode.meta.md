@@ -1,19 +1,23 @@
 ---
 uid: System.Diagnostics.Eventing.Reader.EventOpcode
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventOpcode.Value
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventOpcode.DisplayName
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventOpcode.Name
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---

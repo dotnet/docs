@@ -28,8 +28,32 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>A [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] control that can be used to host a [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] element.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Forms.Integration.ElementHost> control to place a [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] <xref:System.Windows.UIElement> on your [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] control or form.  
+  
+ To host a [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] control in a [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] element, use the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element.  
+  
+> [!NOTE]
+>  WindowsFormsIntegration.dll is installed with the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] assemblies. The default location for the assembly is %programfiles%\Reference Assemblies\Microsoft\Framework\v3.0\WindowsFormsIntegration.dll.  
+  
+ To host a [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] element in a Windows Form, you must assign the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] element to the <xref:System.Windows.Forms.Integration.ElementHost.Child%2A> property.  
+  
+ Use the <xref:System.Windows.Forms.Integration.ElementHost.PropertyMap%2A> property to assign custom mappings between an <xref:System.Windows.Forms.Integration.ElementHost> control and its hosted [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] element. For more information, see [Windows Forms and WPF Property Mapping](../Topic/Windows%20Forms%20and%20WPF%20Property%20Mapping.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.Integration.ElementHost> control to host a [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] element. For more information, see [Walkthrough: Hosting a 3-D WPF Composite Control in Windows Forms](../Topic/Walkthrough:%20Hosting%20a%203-D%20WPF%20Composite%20Control%20in%20Windows%20Forms.md).  
+  
+ [!code-csharp[HostingWpfUserControlInWf#11](~/samples/snippets/csharp/VS_Snippets_Wpf/HostingWpfUserControlInWf/CSharp/WpfUserControlHost/Form1.cs#11)]
+ [!code-vb[HostingWpfUserControlInWf#11](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HostingWpfUserControlInWf/VisualBasic/WpfUserControlHost/Form1.vb#11)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,8 +67,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Integration.ElementHost" /> class.</summary>
         <remarks>To be added.</remarks>
+        <permission cref="F:System.Security.Permissions.SecurityAction.Demand">for full trust for all callers higher in the call stack. This member cannot be used by partially trusted code.</permission>
       </Docs>
     </Member>
     <Member MemberName="AutoSize">
@@ -68,8 +93,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value indicating whether the control is automatically resized to display its entire contents.</summary>
+        <value>
+          <see langword="true" /> if the control adjusts its size to closely fit its contents; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,9 +117,19 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether the hosted element has a transparent background.</summary>
+        <value>
+          <see langword="true" /> if the hosted element has a transparent background; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.Integration.ElementHost.BackColorTransparent%2A> property enables bitmap copying, which enables hosted elements to use transparency over the host container. This is useful when the element is over an image or gradient background.  
+  
+ For performance reasons, the <xref:System.Windows.Forms.Integration.ElementHost.BackColorTransparent%2A> property is turned off by default.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BindingContextChanged">
@@ -117,8 +153,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the value of the <see cref="T:System.Windows.Forms.BindingContext" /> property changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.BindingContextChanged> event, see <xref:System.Windows.Forms.Control.BindingContextChanged?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CanEnableIme">
@@ -134,8 +177,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the <see cref="P:System.Windows.Forms.Control.ImeMode" /> property can be set to an active value to enable IME support.</summary>
+        <value>
+          <see langword="true" /> if <see cref="T:System.Windows.Forms.Integration.ElementHost" /> has a <see cref="P:System.Windows.Forms.Integration.ElementHost.Child" /> element; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,9 +204,24 @@
         <ReturnType>System.Windows.UIElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see cref="T:System.Windows.UIElement" /> hosted by the <see cref="T:System.Windows.Forms.Integration.ElementHost" /> control.</summary>
+        <value>The hosted [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Only one element can be hosted, but <xref:System.Windows.Forms.Integration.ElementHost.Child%2A> can have any number of child elements.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.Integration.ElementHost.Child%2A> property to assign a hosted [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] element. For more information, see [Walkthrough: Hosting a 3-D WPF Composite Control in Windows Forms](../Topic/Walkthrough:%20Hosting%20a%203-D%20WPF%20Composite%20Control%20in%20Windows%20Forms.md).  
+  
+ [!code-csharp[HostingWpfUserControlInWf#11](~/samples/snippets/csharp/VS_Snippets_Wpf/HostingWpfUserControlInWf/CSharp/WpfUserControlHost/Form1.cs#11)]
+ [!code-vb[HostingWpfUserControlInWf#11](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HostingWpfUserControlInWf/VisualBasic/WpfUserControlHost/Form1.vb#11)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ChildChanged">
@@ -178,7 +237,7 @@
         <ReturnType>System.EventHandler&lt;System.Windows.Forms.Integration.ChildChangedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the <see cref="P:System.Windows.Forms.Integration.WindowsFormsHost.Child" /> property is set.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -203,8 +262,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the control is clicked.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.Click> event, see <xref:System.Windows.Forms.Control.Click?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ClientSizeChanged">
@@ -228,8 +294,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.Control.ClientSize" /> property changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.ClientSizeChanged> event, see <xref:System.Windows.Forms.Control.ClientSizeChanged?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ControlAdded">
@@ -253,8 +326,15 @@
         <ReturnType>System.Windows.Forms.ControlEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a new control is added to the <see cref="T:System.Windows.Forms.Control.ControlCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.ControlAdded> event, see <xref:System.Windows.Forms.Control.ControlAdded?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ControlRemoved">
@@ -278,8 +358,15 @@
         <ReturnType>System.Windows.Forms.ControlEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a control is removed from the <see cref="T:System.Windows.Forms.Control.ControlCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.ControlRemoved> event, see <xref:System.Windows.Forms.Control.ControlRemoved?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CursorChanged">
@@ -303,8 +390,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.Control.Cursor" /> property changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For a more information about the <xref:System.Windows.Forms.Integration.ElementHost.CursorChanged> event, see <xref:System.Windows.Forms.Control.CursorChanged?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultSize">
@@ -320,9 +414,16 @@
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the default size of the control.</summary>
+        <value>The default <see cref="T:System.Drawing.Size" /> of the control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.DefaultSize%2A> property, see <xref:System.Windows.Forms.Control.DefaultSize%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -341,9 +442,25 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Immediately frees any system resources used by the <see cref="T:System.Windows.Forms.Integration.ElementHost" /> control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the public `Dispose` method and the <xref:System.Object.Finalize%2A> method. `Dispose` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+  
+ When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Windows.Forms.Integration.ElementHost> references. This method invokes the `Dispose` method of each referenced object.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean) " />be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement<see langword=" Dispose(Boolean)" />, see [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+  
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="DoubleClick">
@@ -367,8 +484,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the control is double-clicked.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.DoubleClick> event, see <xref:System.Windows.Forms.Control.DoubleClick?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DragDrop">
@@ -392,8 +516,15 @@
         <ReturnType>System.Windows.Forms.DragEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a drag-and-drop operation is completed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.DragDrop> event, see <xref:System.Windows.Forms.Control.DragDrop?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DragEnter">
@@ -417,8 +548,15 @@
         <ReturnType>System.Windows.Forms.DragEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when an object is dragged into the control's bounds.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.DragEnter> event, see <xref:System.Windows.Forms.Control.DragEnter?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DragLeave">
@@ -442,8 +580,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when an object is dragged out of the control's bounds.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.DragLeave> event, see <xref:System.Windows.Forms.Control.DragLeave>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DragOver">
@@ -467,8 +612,15 @@
         <ReturnType>System.Windows.Forms.DragEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when an object is dragged over the control's bounds.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.DragOver> event, see <xref:System.Windows.Forms.Control.DragOver?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableModelessKeyboardInterop">
@@ -487,9 +639,17 @@
         <Parameter Name="window" Type="System.Windows.Window" />
       </Parameters>
       <Docs>
-        <param name="window">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="window">The [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] window to be opened modelessly.</param>
+        <summary>Enables a <see cref="T:System.Windows.Window" /> to receive keyboard messages correctly when it is opened modelessly from [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)].</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call the <xref:System.Windows.Forms.Integration.ElementHost.EnableModelessKeyboardInterop%2A> method to forward all keyboard messages when a [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] window is opened modelessly. The <xref:System.Windows.Forms.Integration.ElementHost.EnableModelessKeyboardInterop%2A> method installs a message filter in the [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)]-based application. The filter forwards all keyboard messages when the modeless window is active.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="F:System.Security.Permissions.SecurityAction.Demand">for full trust for all callers higher in the call stack. This member cannot be used by partially trusted code.</permission>
       </Docs>
     </Member>
     <Member MemberName="Enter">
@@ -513,8 +673,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the control is entered.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.Enter> event, see <xref:System.Windows.Forms.Control.Enter?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Focused">
@@ -530,8 +697,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the control has input focus.</summary>
+        <value>
+          <see langword="true" /> if the control has focus; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -556,8 +724,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the <see cref="P:System.Windows.Forms.Control.Font" /> property value changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.FontChanged> event, see <xref:System.Windows.Forms.Control.FontChanged?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ForeColorChanged">
@@ -581,8 +756,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the <see cref="P:System.Windows.Forms.Control.ForeColor" /> property value changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.ForeColorChanged> event, see <xref:System.Windows.Forms.Control.ForeColorChanged?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetPreferredSize">
@@ -601,9 +783,9 @@
         <Parameter Name="proposedSize" Type="System.Drawing.Size" />
       </Parameters>
       <Docs>
-        <param name="proposedSize">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="proposedSize">The custom-sized area for a [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] element.</param>
+        <summary>Overrides the base class implementation <see cref="M:System.Windows.Forms.Control.GetPreferredSize(System.Drawing.Size)" /> to provide correct layout behavior for the hosted [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] elements.</summary>
+        <returns>The <see cref="T:System.Drawing.Size" /> computed by the <see cref="T:System.Windows.Forms.Integration.ElementHost" /> control, given the constraints specified by <paramref name="proposedSize" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -628,8 +810,15 @@
         <ReturnType>System.Windows.Forms.GiveFeedbackEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs during a drag operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.GiveFeedback> event, see <xref:System.Windows.Forms.Control.GiveFeedback?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GotFocus">
@@ -653,8 +842,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the control receives focus.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.GotFocus> event, see <xref:System.Windows.Forms.Control.GotFocus?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HostContainer">
@@ -678,9 +874,16 @@
         <ReturnType>System.Windows.Controls.Panel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the parent container of the hosted [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] element.</summary>
+        <value>The parent container.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The host container is the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] <xref:System.Windows.FrameworkElement>, which is the parent container for the hosted element. The host container is always at the root of the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] element hierarchy. To access the parent of the hosted element, access <xref:System.Windows.Forms.Integration.ElementHost.HostContainer%2A> directly.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ImeModeBase">
@@ -696,8 +899,8 @@
         <ReturnType>System.Windows.Forms.ImeMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the IME mode of a control.</summary>
+        <value>The IME mode of the control.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -722,8 +925,15 @@
         <ReturnType>System.Windows.Forms.InvalidateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a control's display requires redrawing.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.Invalidated> event, see <xref:System.Windows.Forms.Control.Invalidated?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsInputChar">
@@ -742,10 +952,18 @@
         <Parameter Name="charCode" Type="System.Char" />
       </Parameters>
       <Docs>
-        <param name="charCode">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="charCode">The character to forward.</param>
+        <summary>Ensures that all WM_CHAR key messages are forwarded to the hosted element.</summary>
+        <returns>
+          <see langword="true" /> in all cases.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the hosted [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] element does not process `charCode`, the <xref:System.Windows.Forms.Integration.ElementHost> control processes it with the <xref:System.Windows.Forms.Control.ProcessDialogChar%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyDown">
@@ -769,8 +987,15 @@
         <ReturnType>System.Windows.Forms.KeyEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a key is pressed while the control has focus.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.KeyDown> event, see <xref:System.Windows.Forms.Control.KeyDown?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyPress">
@@ -794,8 +1019,15 @@
         <ReturnType>System.Windows.Forms.KeyPressEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a key is pressed while the control has focus.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.KeyPress> event, see <xref:System.Windows.Forms.Control.KeyPress?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyUp">
@@ -819,8 +1051,15 @@
         <ReturnType>System.Windows.Forms.KeyEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a key is released while the control has focus.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.KeyUp> event, see <xref:System.Windows.Forms.Control.KeyUp?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Layout">
@@ -844,8 +1083,15 @@
         <ReturnType>System.Windows.Forms.LayoutEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a control should reposition its child controls.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.Layout> event, see <xref:System.Windows.Forms.Control.Layout?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Leave">
@@ -869,8 +1115,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the input focus leaves the control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.Leave> event, see <xref:System.Windows.Forms.Control.Leave?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LostFocus">
@@ -894,8 +1147,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the control loses focus.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.LostFocus> event, see <xref:System.Windows.Forms.Control.LostFocus?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseCaptureChanged">
@@ -919,8 +1179,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the control loses or gains mouse capture.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.MouseCaptureChanged> event, see <xref:System.Windows.Forms.Control.MouseCaptureChanged?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseClick">
@@ -944,8 +1211,15 @@
         <ReturnType>System.Windows.Forms.MouseEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the control is clicked by the mouse.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.MouseClick> event, see <xref:System.Windows.Forms.Control.MouseClick?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseDoubleClick">
@@ -969,8 +1243,15 @@
         <ReturnType>System.Windows.Forms.MouseEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the control is double clicked by the mouse.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.MouseDoubleClick> event, see <xref:System.Windows.Forms.Control.MouseDoubleClick?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseDown">
@@ -994,8 +1275,15 @@
         <ReturnType>System.Windows.Forms.MouseEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the mouse pointer is over the control and a mouse button is pressed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.MouseDown> event, see <xref:System.Windows.Forms.Control.MouseDown?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseEnter">
@@ -1019,8 +1307,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the mouse pointer enters the control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.MouseEnter> event, see <xref:System.Windows.Forms.Control.MouseEnter?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseHover">
@@ -1044,8 +1339,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the mouse pointer rests on the control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.MouseHover> event, see <xref:System.Windows.Forms.Control.MouseHover?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseLeave">
@@ -1069,8 +1371,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the mouse pointer leaves the control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.MouseLeave> event, see <xref:System.Windows.Forms.Control.MouseLeave?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseMove">
@@ -1094,8 +1403,15 @@
         <ReturnType>System.Windows.Forms.MouseEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the mouse pointer is moved over the control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.MouseMove> event, see <xref:System.Windows.Forms.Control.MouseMove?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseUp">
@@ -1119,8 +1435,15 @@
         <ReturnType>System.Windows.Forms.MouseEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the mouse pointer is over the control and a mouse button is released.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.MouseUp> event, see <xref:System.Windows.Forms.Control.MouseUp?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseWheel">
@@ -1144,8 +1467,15 @@
         <ReturnType>System.Windows.Forms.MouseEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the mouse wheel moves while the control has focus.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.MouseWheel> event, see <xref:System.Windows.Forms.Control.MouseWheel?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnEnabledChanged">
@@ -1164,9 +1494,21 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">The data for the event.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.EnabledChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
+  
+ The <xref:System.Windows.Forms.Integration.ElementHost.OnEnabledChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.Integration.ElementHost.OnEnabledChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Integration.ElementHost.OnEnabledChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="OnGotFocus">
@@ -1185,9 +1527,16 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Integration.ElementHost.GotFocus" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.OnGotFocus%2A> method, see <xref:System.Windows.Forms.Control.OnGotFocus%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnHandleCreated">
@@ -1206,9 +1555,16 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.HandleCreated" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.OnHandleCreated%2A> method, see <xref:System.Windows.Forms.Control.OnHandleCreated%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnLeave">
@@ -1227,9 +1583,16 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Leave" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.OnLeave%2A> method, see <xref:System.Windows.Forms.Control.OnLeave%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPaint">
@@ -1256,9 +1619,19 @@
         <Parameter Name="e" Type="System.Windows.Forms.PaintEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Paint" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.Integration.ElementHost> implementation of the <xref:System.Windows.Forms.Integration.ElementHost.OnPaint%2A> method forwards to the base class implementation.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Do not override this implementation of the <see cref="M:System.Windows.Forms.Integration.ElementHost.OnPaint(System.Windows.Forms.PaintEventArgs)" /> method. The <see cref="T:System.Windows.Forms.Integration.ElementHost" /> control manages the painting of its hosted element, and overriding <see cref="M:System.Windows.Forms.Integration.ElementHost.OnPaint(System.Windows.Forms.PaintEventArgs)" /> will cause unpredictable results.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="OnPaintBackground">
@@ -1285,9 +1658,18 @@
         <Parameter Name="pevent" Type="System.Windows.Forms.PaintEventArgs" />
       </Parameters>
       <Docs>
-        <param name="pevent">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="pevent">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> that contains information about the control to paint.</param>
+        <summary>Paints the background of the control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.Integration.ElementHost.OnPaintBackground%2A> method paints the parent control's background into an offscreen HBITMAP. This bitmap is used as the background in the hosted element to support transparency.  
+  
+ This method supports the [!INCLUDE[TLA#tla_net](~/includes/tlasharptla-net-md.md)] infrastructure and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPrint">
@@ -1306,8 +1688,8 @@
         <Parameter Name="e" Type="System.Windows.Forms.PaintEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> that contains the event data.</param>
+        <summary>Renders the control using the provided <see cref="T:System.Drawing.Graphics" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1328,10 +1710,11 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="propertyName">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="propertyName">The name of the property that has changed and requires translation.</param>
+        <param name="value">The new value of the property.</param>
+        <summary>Notifies the <see cref="P:System.Windows.Forms.Integration.ElementHost.PropertyMap" /> that a property has changed.</summary>
         <remarks>To be added.</remarks>
+        <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This member cannot be inherited by partially trusted code.</permission>
       </Docs>
     </Member>
     <Member MemberName="OnVisibleChanged">
@@ -1350,9 +1733,16 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.VisibleChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.OnVisibleChanged%2A> method, see <xref:System.Windows.Forms.Control.OnVisibleChanged%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PaddingChanged">
@@ -1376,8 +1766,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the control's padding changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.PaddingChanged> event, see <xref:System.Windows.Forms.Control.PaddingChanged?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Paint">
@@ -1401,8 +1798,15 @@
         <ReturnType>System.Windows.Forms.PaintEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the <see cref="T:System.Windows.Forms.Integration.ElementHost" /> control is redrawn.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The implementation of this event adds event handlers to the base <xref:System.Windows.Controls.Control> event.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PreviewKeyDown">
@@ -1426,8 +1830,15 @@
         <ReturnType>System.Windows.Forms.PreviewKeyDownEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs before the <see cref="E:System.Windows.Forms.Control.KeyDown" /> event when a key is pressed while focus is on this control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.PreviewKeyDown> event, see <xref:System.Windows.Forms.Control.PreviewKeyDown?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ProcessCmdKey">
@@ -1447,11 +1858,20 @@
         <Parameter Name="keyData" Type="System.Windows.Forms.Keys" />
       </Parameters>
       <Docs>
-        <param name="msg">To be added.</param>
-        <param name="keyData">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="msg">A <see cref="T:System.Windows.Forms.Message" />, passed by reference, that represents the window message to process.</param>
+        <param name="keyData">One of the <see cref="T:System.Windows.Forms.Keys" /> values representing the key to process.</param>
+        <summary>Processes a command key, ensuring that the hosted element has an opportunity to handle the command before normal [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] processing.</summary>
+        <returns>
+          <see langword="true" /> if the character is a [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] shortcut key; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a key message is not handled by the hosted [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] element, it is forwarded up the [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] class hierarchy for processing.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
       </Docs>
     </Member>
     <Member MemberName="ProcessMnemonic">
@@ -1470,10 +1890,19 @@
         <Parameter Name="charCode" Type="System.Char" />
       </Parameters>
       <Docs>
-        <param name="charCode">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="charCode">The character to process.</param>
+        <summary>Processes a mnemonic character, ensuring that the hosted element has an opportunity to handle the mnemonic before normal [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] processing.</summary>
+        <returns>
+          <see langword="true" /> if the character is a [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] shortcut key; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a key message is not handled by the hosted [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] element, it is forwarded up the [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] class hierarchy for processing.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
       </Docs>
     </Member>
     <Member MemberName="PropertyMap">
@@ -1494,9 +1923,24 @@
         <ReturnType>System.Windows.Forms.Integration.PropertyMap</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the property map, which determines how setting properties on the <see cref="T:System.Windows.Forms.Integration.ElementHost" /> control affects the hosted [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] element.</summary>
+        <value>A <see cref="T:System.Windows.Forms.Integration.PropertyMap" /> that maps <see cref="T:System.Windows.Forms.Integration.ElementHost" /> to properties on the hosted [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] and [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] technologies have two similar but different property models. *Property mapping* supports interoperation between the two architectures. For more information, see [Windows Forms and WPF Property Mapping](../Topic/Windows%20Forms%20and%20WPF%20Property%20Mapping.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.Integration.ElementHost.PropertyMap%2A> property to translate the <xref:System.Windows.FrameworkElement.Margin%2A> property for a hosted [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] element. For more information, see [Walkthrough: Mapping Properties Using the ElementHost Control](../Topic/Walkthrough:%20Mapping%20Properties%20Using%20the%20ElementHost%20Control.md).  
+  
+ [!code-csharp[PropertyMappingWithElementHost#12](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithElementHost/CSharp/PropertyMappingWithElementHost/Form1.cs#12)]
+ [!code-vb[PropertyMappingWithElementHost#12](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertyMappingWithElementHost/VisualBasic/PropertyMappingWithElementHost/Form1.vb#12)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="QueryContinueDrag">
@@ -1520,8 +1964,15 @@
         <ReturnType>System.Windows.Forms.QueryContinueDragEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs during a drag-and-drop operation and enables the drag source to determine whether the drag-and-drop operation should be canceled.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.QueryContinueDrag> event, see <xref:System.Windows.Forms.Control.QueryContinueDrag?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Resize">
@@ -1545,8 +1996,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the control is resized.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.Resize> event, see <xref:System.Windows.Forms.Control.Resize?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RightToLeftChanged">
@@ -1570,8 +2028,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the <see cref="P:System.Windows.Forms.Control.RightToLeft" /> property value changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.RightToLeftChanged> event, see <xref:System.Windows.Forms.Control.RightToLeftChanged?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ScaleCore">
@@ -1591,9 +2056,9 @@
         <Parameter Name="dy" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="dx">To be added.</param>
-        <param name="dy">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="dx">The scaling factor for the x-axis.</param>
+        <param name="dy">The scaling factor for the y-axis.</param>
+        <summary>Scales the parent container and the hosted [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] control.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1614,10 +2079,23 @@
         <Parameter Name="forward" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="directed">To be added.</param>
-        <param name="forward">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="directed">
+          <see langword="true" /> to specify the direction of the control to select; otherwise, <see langword="false" />.</param>
+        <param name="forward">
+          <see langword="true" /> to move forward in the tab order; <see langword="false" /> to move backward in the tab order.</param>
+        <summary>Activates the hosted element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.Integration.ElementHost.Select%2A> method activates the hosted element. If more than one hosted element exists, either the first or last element is activated, depending on the `directed` and `forward` parameters.  
+  
+ Repeated calls to the <xref:System.Windows.Forms.Integration.ElementHost.Select%2A> method do not traverse the hosted elements. To select subsequent elements, call the <xref:System.Windows.FrameworkElement.MoveFocus%2A> method on the <xref:System.Windows.Forms.Integration.ElementHost.HostContainer%2A> property.  
+  
+ This implementation forwards tab keys from [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] to [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)].  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SizeChanged">
@@ -1641,8 +2119,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the <see cref="P:System.Windows.Forms.Control.Size" /> property value changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.SizeChanged> event, see <xref:System.Windows.Forms.Control.SizeChanged?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TextChanged">
@@ -1666,8 +2151,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the <see cref="P:System.Windows.Forms.Control.Text" /> property value changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.TextChanged> event, see <xref:System.Windows.Forms.Control.TextChanged?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WndProc">
@@ -1686,9 +2178,18 @@
         <Parameter Name="m" Type="System.Windows.Forms.Message&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="m">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="m">A message to process.</param>
+        <summary>Processes Windows messages.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.WndProc%2A> method, see <xref:System.Windows.Forms.Control.WndProc%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This member cannot be inherited by partially trusted code.</permission>
       </Docs>
     </Member>
   </Members>

@@ -1,19 +1,23 @@
 ---
 uid: Microsoft.Build.Framework.ITask
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.ITask.HostObject
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.ITask.Execute
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.ITask.BuildEngine
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

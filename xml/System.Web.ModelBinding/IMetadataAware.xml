@@ -8,8 +8,15 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines a method that must be implemented by classes that are metadata-aware.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This interface enables attributes to contribute to the process of creating model metadata without requiring a custom metadata provider. It is used by the <xref:System.Web.ModelBinding.AssociatedMetadataProvider> class, so this behavior is automatically inherited by all classes that derive from the <xref:System.Web.ModelBinding.AssociatedMetadataProvider> class (notably the <xref:System.Web.ModelBinding.DataAnnotationsModelMetadataProvider> class).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="OnMetadataCreated">
@@ -28,8 +35,8 @@
         <Parameter Name="metadata" Type="System.Web.ModelBinding.ModelMetadata" />
       </Parameters>
       <Docs>
-        <param name="metadata">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="metadata">The metadata.</param>
+        <summary>Enables metadata-aware attributes to perform required processing of metadata after the metadata is created.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

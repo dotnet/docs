@@ -1,1 +1,0 @@
-        Console.WriteLine("MaximumFileSize =  " + ((EventSchemaTraceListener)ts.Listeners["eventListener"]).MaximumFileSize);

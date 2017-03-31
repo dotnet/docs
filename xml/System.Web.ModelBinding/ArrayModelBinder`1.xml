@@ -17,8 +17,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="TElement">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="TElement">The type of the array.</typeparam>
+    <summary>Maps a browser request to an array.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.ArrayModelBinder`1" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,11 +55,12 @@
         <Parameter Name="newCollection" Type="System.Collections.Generic.IList&lt;TElement&gt;" />
       </Parameters>
       <Docs>
-        <param name="modelBindingExecutionContext">To be added.</param>
-        <param name="bindingContext">To be added.</param>
-        <param name="newCollection">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="modelBindingExecutionContext">The execution context.</param>
+        <param name="bindingContext">The binding context.</param>
+        <param name="newCollection">The new collection.</param>
+        <summary>Converts the collection to an array.</summary>
+        <returns>
+          <see langword="true" /> in all cases.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

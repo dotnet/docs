@@ -1,54 +1,75 @@
 ---
 uid: System.Windows.Automation.Peers.RibbonTabDataAutomationPeer
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonTabDataAutomationPeer.GetAutomationControlTypeCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonTabDataAutomationPeer.System#Windows#Automation#Provider#IExpandCollapseProvider#Collapse
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonTabDataAutomationPeer.System#Windows#Automation#Provider#IExpandCollapseProvider#ExpandCollapseState
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonTabDataAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonTabDataAutomationPeer.System#Windows#Automation#Provider#ISelectionItemProvider#RemoveFromSelection
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonTabDataAutomationPeer.#ctor(System.Object,System.Windows.Automation.Peers.RibbonAutomationPeer)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonTabDataAutomationPeer.System#Windows#Automation#Provider#ISelectionItemProvider#AddToSelection
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonTabDataAutomationPeer.System#Windows#Automation#Provider#IExpandCollapseProvider#Expand
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonTabDataAutomationPeer.System#Windows#Automation#Provider#IScrollItemProvider#ScrollIntoView
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonTabDataAutomationPeer.GetClassNameCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -1,39 +1,47 @@
 ---
 uid: System.Web.Configuration.TrustSection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.TrustSection.PermissionSetName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.TrustSection.LegacyCasModel
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.TrustSection.HostSecurityPolicyResolverType
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.TrustSection.Level
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.TrustSection.OriginUrl
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.TrustSection.ProcessRequestInApplicationTrust
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.TrustSection.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

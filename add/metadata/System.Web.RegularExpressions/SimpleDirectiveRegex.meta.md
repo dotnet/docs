@@ -1,14 +1,27 @@
 ---
 uid: System.Web.RegularExpressions.SimpleDirectiveRegex
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.RegularExpressions.SimpleDirectiveRegex.#ctor
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.RegularExpressions.SimpleDirectiveRegex.#ctor
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.RegularExpressions.SimpleDirectiveRegex.#ctor(System.TimeSpan)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

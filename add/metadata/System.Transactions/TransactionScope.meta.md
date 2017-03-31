@@ -1,84 +1,89 @@
 ---
 uid: System.Transactions.TransactionScope
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.TransactionScope.#ctor(System.Transactions.TransactionScopeOption,System.Transactions.TransactionOptions,System.Transactions.EnterpriseServicesInteropOption)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.TransactionScope.#ctor(System.Transactions.TransactionScopeOption,System.Transactions.TransactionOptions,System.Transactions.TransactionScopeAsyncFlowOption)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.TransactionScope.#ctor(System.Transactions.Transaction)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.TransactionScope.#ctor(System.Transactions.Transaction,System.TimeSpan,System.Transactions.TransactionScopeAsyncFlowOption)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.TransactionScope.#ctor(System.Transactions.TransactionScopeAsyncFlowOption)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.TransactionScope.#ctor(System.Transactions.TransactionScopeOption,System.TimeSpan)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.TransactionScope.#ctor(System.Transactions.TransactionScopeOption,System.TimeSpan,System.Transactions.TransactionScopeAsyncFlowOption)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.TransactionScope.#ctor(System.Transactions.Transaction,System.Transactions.TransactionScopeAsyncFlowOption)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.TransactionScope.#ctor
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.TransactionScope.#ctor(System.Transactions.TransactionScopeOption,System.Transactions.TransactionOptions)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.TransactionScope.#ctor(System.Transactions.TransactionScopeOption,System.Transactions.TransactionScopeAsyncFlowOption)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.TransactionScope.#ctor(System.Transactions.Transaction,System.TimeSpan,System.Transactions.EnterpriseServicesInteropOption)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.TransactionScope.#ctor(System.Transactions.Transaction,System.TimeSpan)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.TransactionScope.Dispose
-internalonly: False
+manager: "ghogen"
+---
+
+---
+uid: System.Transactions.TransactionScope.#ctor
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.TransactionScope.Complete
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.TransactionScope.#ctor(System.Transactions.TransactionScopeOption)
-internalonly: False
+manager: "ghogen"
 ---

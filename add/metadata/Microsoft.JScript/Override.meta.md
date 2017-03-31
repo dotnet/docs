@@ -1,9 +1,9 @@
 ---
 uid: Microsoft.JScript.Override
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.Override.#ctor
-internalonly: False
+ms.author: "mikejo"
 ---

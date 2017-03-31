@@ -1,39 +1,39 @@
 ---
 uid: Microsoft.JScript.NumberPrototype
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.NumberPrototype.toFixed(System.Object,System.Double)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.NumberPrototype.toPrecision(System.Object,System.Object)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.NumberPrototype.valueOf(System.Object)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.NumberPrototype.constructor
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.NumberPrototype.toLocaleString(System.Object)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.NumberPrototype.toString(System.Object,System.Object)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.NumberPrototype.toExponential(System.Object,System.Object)
-internalonly: False
+ms.author: "mikejo"
 ---

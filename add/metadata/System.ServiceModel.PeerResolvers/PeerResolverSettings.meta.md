@@ -1,24 +1,29 @@
 ---
 uid: System.ServiceModel.PeerResolvers.PeerResolverSettings
-internalonly: False
+ms.author: "bobdel"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerResolvers.PeerResolverSettings.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerResolvers.PeerResolverSettings.Custom
-internalonly: False
+ms.author: "bobdel"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerResolvers.PeerResolverSettings.Mode
-internalonly: False
+ms.author: "bobdel"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerResolvers.PeerResolverSettings.ReferralPolicy
-internalonly: False
+ms.author: "bobdel"
+manager: "ghogen"
 ---

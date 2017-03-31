@@ -1,4 +1,5 @@
 ---
 uid: System.Web.UI.DataVisualization.Charting.AxisName
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---

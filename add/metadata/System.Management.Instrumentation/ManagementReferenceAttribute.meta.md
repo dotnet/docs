@@ -1,14 +1,14 @@
 ---
 uid: System.Management.Instrumentation.ManagementReferenceAttribute
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.ManagementReferenceAttribute.Type
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.ManagementReferenceAttribute.#ctor
-internalonly: False
+manager: "jillfra"
 ---

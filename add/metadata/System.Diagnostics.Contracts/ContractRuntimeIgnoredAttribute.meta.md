@@ -1,9 +1,13 @@
 ---
 uid: System.Diagnostics.Contracts.ContractRuntimeIgnoredAttribute
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.Contracts.ContractRuntimeIgnoredAttribute.#ctor
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

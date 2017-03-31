@@ -1,2 +1,0 @@
-            SyndicationPerson sp = new SyndicationPerson("jesper@contoso.com", "Jesper Aaberg", "http://Jesper/Aaberg");
-            sp.AttributeExtensions.Add(new XmlQualifiedName("myAttribute", ""), "someValue");

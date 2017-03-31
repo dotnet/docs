@@ -1,19 +1,19 @@
 ---
 uid: System.Windows.Markup.ServiceProviders
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.ServiceProviders.AddService(System.Type,System.Object)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.ServiceProviders.#ctor
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.ServiceProviders.GetService(System.Type)
-internalonly: False
+manager: "martinek"
 ---

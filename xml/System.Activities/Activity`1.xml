@@ -22,9 +22,23 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="TResult">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="TResult">The type of the return value of the activity.</typeparam>
+    <summary>An abstract base class used to create composite activities from pre-existing <see cref="T:System.Activities.Activity" /> objects, which specifies a result type using the activity’s type specifier.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Activities.Activity%601> is the base class in the activity type hierarchy. All other activity types with generic type definitions such as <xref:System.Activities.CodeActivity%601>, <xref:System.Activities.NativeActivity%601>, <xref:System.Activities.AsyncCodeActivity%601>, and <xref:System.Activities.DynamicActivity%601> derive from this class.  
+  
+   
+  
+## Examples  
+ The following example shows how to derive a class from <xref:System.Activities.Activity%601>.  
+  
+ [!code-csharp[HelloWorld#0](~/samples/snippets/csharp/VS_Snippets_CFX/helloworld/cs/appendstring.cs#0)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,7 +52,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>When implemented in a derived class, creates a new instance of the derived class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,9 +72,9 @@
         <Parameter Name="constValue" Type="TResult" />
       </Parameters>
       <Docs>
-        <param name="constValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="constValue">The value used to create the <see cref="T:System.Activities.Activity`1" /> expression.</param>
+        <summary>Returns a <see cref="T:System.Activities.Activity`1" /> expression that evaluates to the given value.</summary>
+        <returns>A workflow expression that evaluates to the given value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,10 +94,17 @@
         <Parameter Name="variable" Type="System.Activities.Variable" />
       </Parameters>
       <Docs>
-        <param name="variable">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="variable">The value for the expression.</param>
+        <summary>Returns a <see cref="T:System.Activities.Activity`1" /> expression that evaluates to the given <see cref="T:System.Activities.Variable" />.</summary>
+        <returns>A workflow expression that evaluates to the given variable.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the type of the <xref:System.Activities.Variable> is not compatible with the type of the <xref:System.Activities.Activity%601>, then an <xref:System.ArgumentException> is thrown.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FromVariable">
@@ -102,9 +123,9 @@
         <Parameter Name="variable" Type="System.Activities.Variable&lt;TResult&gt;" />
       </Parameters>
       <Docs>
-        <param name="variable">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="variable">The value for the expression.</param>
+        <summary>Returns a <see cref="T:System.Activities.Activity`1" /> expression that evaluates to the given <see cref="T:System.Activities.Variable`1" />.</summary>
+        <returns>A workflow expression that evaluates to the given variable.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -192,9 +213,16 @@
         <ReturnType>System.Activities.OutArgument&lt;TResult&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the result argument for the <see cref="T:System.Activities.Activity`1" />.</summary>
+        <value>The result argument for the <see cref="T:System.Activities.Activity`1" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is read-only at runtime. If the value is set at runtime, an <xref:System.InvalidOperationException> is thrown.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

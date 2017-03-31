@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a key name and value pair that is part of an <see cref="T:System.Data.EntityKey" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,8 +31,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.EntityKeyMember" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is used during entity key serialization.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -49,9 +56,9 @@
         <Parameter Name="keyValue" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="keyName">To be added.</param>
-        <param name="keyValue">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="keyName">The name of the key.</param>
+        <param name="keyValue">The key value.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.EntityKeyMember" /> class with the specified entity key pair.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,8 +80,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the entity key.</summary>
+        <value>The key name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,9 +99,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a string representation of the entity key.</summary>
+        <returns>A string representation of the entity key.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.EntityKeyMember.ToString%2A> method returns a string in the format "[*keyName*, *keyValue*]".  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -115,8 +129,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value of the entity key.</summary>
+        <value>The key value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

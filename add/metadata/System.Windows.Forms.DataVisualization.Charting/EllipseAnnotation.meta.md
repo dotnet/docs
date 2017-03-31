@@ -1,14 +1,17 @@
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.EllipseAnnotation
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.EllipseAnnotation.AnnotationType
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.EllipseAnnotation.#ctor
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---

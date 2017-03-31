@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a value provider for profile values.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <Parameter Name="modelBindingExecutionContext" Type="System.Web.ModelBinding.ModelBindingExecutionContext" />
       </Parameters>
       <Docs>
-        <param name="modelBindingExecutionContext">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="modelBindingExecutionContext">The execution context.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.ProfileValueProvider" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

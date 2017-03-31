@@ -1,29 +1,60 @@
 ---
 uid: System.Windows.Forms.LinkConverter
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.LinkConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.LinkConverter.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.LinkConverter.CanConvertFrom
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.LinkConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.LinkConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.LinkConverter.ConvertTo
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.LinkConverter.ConvertFrom
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.LinkConverter.CanConvertTo
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.LinkConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

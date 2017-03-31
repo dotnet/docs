@@ -1,24 +1,34 @@
 ---
 uid: System.DirectoryServices.ActiveDirectory.ForestTrustDomainInformation
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ForestTrustDomainInformation.DnsName
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ForestTrustDomainInformation.NetBiosName
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ForestTrustDomainInformation.DomainSid
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ForestTrustDomainInformation.Status
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---

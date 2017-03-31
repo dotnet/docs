@@ -1,64 +1,83 @@
 ---
 uid: System.Net.Http.Headers.WarningHeaderValue
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.WarningHeaderValue.GetHashCode
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.WarningHeaderValue.Text
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.WarningHeaderValue.Equals(System.Object)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.WarningHeaderValue.Parse(System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.WarningHeaderValue.System#ICloneable#Clone
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.WarningHeaderValue.#ctor(System.Int32,System.String,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.WarningHeaderValue.ToString
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.WarningHeaderValue.#ctor(System.Int32,System.String,System.String,System.DateTimeOffset)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.WarningHeaderValue.Agent
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Http.Headers.WarningHeaderValue.#ctor
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.WarningHeaderValue.Date
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.WarningHeaderValue.TryParse(System.String,System.Net.Http.Headers.WarningHeaderValue@)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.Headers.WarningHeaderValue.Code
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

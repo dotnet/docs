@@ -1,44 +1,69 @@
 ---
 uid: System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException.#ctor(System.String,System.Exception)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
----
-
----
-uid: System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException.#ctor(System.String)
-internalonly: False
----
-
----
-uid: System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException.#ctor(System.String,System.Exception,System.Int32)
-internalonly: False
----
-
----
-uid: System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException.#ctor(System.String,System.Int32)
-internalonly: False
----
-
----
-uid: System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException.ErrorCode
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException.#ctor
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException.#ctor(System.String)
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException.#ctor(System.String,System.Exception,System.Int32)
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException.#ctor(System.String,System.Int32)
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException.ErrorCode
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException.#ctor
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---

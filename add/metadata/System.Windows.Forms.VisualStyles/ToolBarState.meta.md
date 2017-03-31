@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Forms.VisualStyles.ToolBarState
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

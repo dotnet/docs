@@ -1,19 +1,27 @@
 ---
 uid: System.Web.UI.WebControls.WebParts.ProviderConnectionPoint
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.WebParts.ProviderConnectionPoint.GetObject(System.Web.UI.Control)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.WebParts.ProviderConnectionPoint.#ctor(System.Reflection.MethodInfo,System.Type,System.Type,System.String,System.String,System.Boolean)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.WebParts.ProviderConnectionPoint.GetSecondaryInterfaces(System.Web.UI.Control)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

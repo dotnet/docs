@@ -14,7 +14,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a service contract that defines a set of operations that allows a client to update workflow service hosted with <see cref="T:System.ServiceModel.Activities.WorkflowServiceHost" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,7 +29,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.WorkflowUpdateableControlClient" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <Parameter Name="workflowEndpoint" Type="System.ServiceModel.Activities.WorkflowControlEndpoint" />
       </Parameters>
       <Docs>
-        <param name="workflowEndpoint">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="workflowEndpoint">The workflow control endpoint.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.WorkflowUpdateableControlClient" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +64,8 @@
         <Parameter Name="endpointConfigurationName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="endpointConfigurationName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="endpointConfigurationName">The configuration to use.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.WorkflowUpdateableControlClient" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,9 +83,9 @@
         <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" />
       </Parameters>
       <Docs>
-        <param name="binding">To be added.</param>
-        <param name="remoteAddress">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="binding">The binding.</param>
+        <param name="remoteAddress">The endpoint address.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.WorkflowUpdateableControlClient" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,9 +103,9 @@
         <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" />
       </Parameters>
       <Docs>
-        <param name="endpointConfigurationName">To be added.</param>
-        <param name="remoteAddress">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="endpointConfigurationName">The configuration to use.</param>
+        <param name="remoteAddress">The endpoint address.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.WorkflowUpdateableControlClient" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,9 +123,9 @@
         <Parameter Name="remoteAddress" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="endpointConfigurationName">To be added.</param>
-        <param name="remoteAddress">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="endpointConfigurationName">The configuration to use.</param>
+        <param name="remoteAddress">The endpoint address.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.WorkflowUpdateableControlClient" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -145,8 +145,8 @@
         <Parameter Name="instanceId" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceId">The workflow instance to abandon.</param>
+        <summary>Abandons the specified workflow instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,9 +167,9 @@
         <Parameter Name="reason" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="reason">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceId">The workflow instance to abandon.</param>
+        <param name="reason">The reason to abandon the workflow instance.</param>
+        <summary>Abandons the specified workflow instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -189,8 +189,8 @@
         <Parameter Name="instanceId" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceId">The workflows instance to abandon.</param>
+        <summary>Begins an asynchronous operation that abandons the specified workflow instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -211,9 +211,9 @@
         <Parameter Name="userState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="userState">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceId">The workflows instance to abandon.</param>
+        <param name="userState">A user-defined object that contains state information associated with the asynchronous abandon operation.</param>
+        <summary>Begins an asynchronous operation that abandons the specified workflow instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -234,9 +234,9 @@
         <Parameter Name="reason" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="reason">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceId">The workflows instance to abandon.</param>
+        <param name="reason">The reason to abandon the workflow instance.</param>
+        <summary>Begins an asynchronous operation that abandons the specified workflow instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -258,10 +258,10 @@
         <Parameter Name="userState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="reason">To be added.</param>
-        <param name="userState">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceId">The workflows instance to abandon.</param>
+        <param name="reason">The reason to abandon the workflow instance.</param>
+        <param name="userState">A user-defined object that contains state information associated with the asynchronous abandon operation.</param>
+        <summary>Begins an asynchronous operation that abandons the specified workflow instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -278,7 +278,7 @@
         <ReturnType>System.EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when an asynchronous abandon operation completes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -300,11 +300,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="instanceId">The workflow instance to abandon.</param>
+        <param name="callback">The asynchronous callback delegate that receives the notification of the asynchronous operation completion.</param>
+        <param name="state">A user-defined object that contains state information associated with the asynchronous abandon operation.</param>
+        <summary>Begins an asynchronous operation that abandons the specified workflow instance.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> object that represents the status of the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -327,12 +327,12 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="reason">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="instanceId">The workflow instance to abandon.</param>
+        <param name="reason">The reason to abandon the workflow instance.</param>
+        <param name="callback">The asynchronous callback delegate that receives the notification of the asynchronous operation completion.</param>
+        <param name="state">A user-defined object that contains state information associated with the asynchronous abandon operation.</param>
+        <summary>Begins an asynchronous operation that abandons the specified workflow instance.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> object that represents the status of the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -354,11 +354,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="instanceId">The workflow instance to cancel.</param>
+        <param name="callback">The asynchronous callback delegate that receives the notification of the asynchronous operation completion.</param>
+        <param name="state">A user-defined object that contains state information associated with the asynchronous cancel operation.</param>
+        <summary>Begins an asynchronous operation that cancels the specified workflow instance.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> object that represents the status of the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -380,11 +380,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="instanceId">The workflow instance to run.</param>
+        <param name="callback">The asynchronous callback delegate that receives the notification of the asynchronous operation completion.</param>
+        <param name="state">A user-defined object that contains state information associated with the asynchronous run operation.</param>
+        <summary>Begins an asynchronous operation that runs the specified workflow instance.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> object that represents the status of the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -406,11 +406,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="instanceId">The workflow instance to suspend.</param>
+        <param name="callback">The asynchronous callback delegate that receives the notification of the asynchronous operation completion.</param>
+        <param name="state">A user-defined object that contains state information associated with the asynchronous suspend operation.</param>
+        <summary>Begins an asynchronous operation that suspends the specified operation.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> object that represents the status of the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -433,12 +433,12 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="reason">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="instanceId">The workflow instance to suspend.</param>
+        <param name="reason">The reason to suspend the workflow instance.</param>
+        <param name="callback">The asynchronous callback delegate that receives the notification of the asynchronous operation completion.</param>
+        <param name="state">A user-defined object that contains state information associated with the asynchronous suspend operation.</param>
+        <summary>Begins an asynchronous operation that suspends the specified operation.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> object that represents the status of the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -460,11 +460,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="instanceId">The workflow instance to terminate.</param>
+        <param name="callback">The asynchronous callback delegate that receives the notification of the asynchronous operation completion.</param>
+        <param name="state">A user-defined object that contains state information associated with the asynchronous terminate operation.</param>
+        <summary>Begins an asynchronous operation that terminates a workflow instance.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> object that represents the status of the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -487,12 +487,12 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="reason">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="instanceId">The workflow instance to terminate.</param>
+        <param name="reason">The reason to terminate the workflow instance.</param>
+        <param name="callback">The asynchronous callback delegate that receives the notification of the asynchronous operation completion.</param>
+        <param name="state">A user-defined object that contains state information associated with the asynchronous terminate operation.</param>
+        <summary>Begins an asynchronous operation that terminates a workflow instance.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> object that represents the status of the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -514,11 +514,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="instanceId">The workflow instance to unsuspend.</param>
+        <param name="callback">The asynchronous callback delegate that receives the notification of the asynchronous operation completion.</param>
+        <param name="state">A user-defined object that contains state information associated with the asynchronous unsuspend operation.</param>
+        <summary>Begins an asynchronous operation that unsuspends a workflow instance.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> object that represents the status of the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -541,12 +541,12 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="updatedDefinitionIdentity">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="instanceId">The workflow instance to update.</param>
+        <param name="updatedDefinitionIdentity">The updated workflow identity.</param>
+        <param name="callback">The asynchronous callback delegate that receives the notification of the asynchronous operation completion.</param>
+        <param name="state">A user-defined object that contains state information associated with the asynchronous update operation.</param>
+        <summary>Begins an asynchronous operation that updates a workflow instance.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> object that represents the status of the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -566,8 +566,8 @@
         <Parameter Name="instanceId" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceId">The workflow instance to cancel.</param>
+        <summary>Cancels the specified workflow instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -587,8 +587,8 @@
         <Parameter Name="instanceId" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceId">The workflow instance to cancel.</param>
+        <summary>Begins an asynchronous operation that cancels the specified workflow instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -609,9 +609,9 @@
         <Parameter Name="userState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="userState">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceId">The workflow instance to cancel.</param>
+        <param name="userState">A user-defined object that contains state information associated with the asynchronous cancel operation.</param>
+        <summary>Begins an asynchronous operation that cancels the specified workflow instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -628,7 +628,7 @@
         <ReturnType>System.EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when an asynchronous cancel operation completes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -648,8 +648,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="result">The <see cref="T:System.IAsyncResult" /> object that represents the status of the asynchronous operation.</param>
+        <summary>Completes an asynchronous abandon operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -669,8 +669,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="result">The <see cref="T:System.IAsyncResult" /> object that represents the status of the asynchronous operation.</param>
+        <summary>Completes an asynchronous cancel operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -690,8 +690,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="result">The <see cref="T:System.IAsyncResult" /> object that represents the status of the asynchronous operation.</param>
+        <summary>Completes an asynchronous run operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -711,8 +711,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="result">The <see cref="T:System.IAsyncResult" /> object that represents the status of the asynchronous operation.</param>
+        <summary>Completes an asynchronous suspend operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -732,8 +732,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="result">The <see cref="T:System.IAsyncResult" /> object that represents the status of the asynchronous operation.</param>
+        <summary>Completes an asynchronous terminate operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -753,8 +753,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="result">The <see cref="T:System.IAsyncResult" /> object that represents the status of the asynchronous operation.</param>
+        <summary>Completes an asynchronous unsuspend operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -774,8 +774,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="result">The <see cref="T:System.IAsyncResult" /> object that represents the status of the asynchronous operation.</param>
+        <summary>Completes an asynchronous update operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -795,8 +795,8 @@
         <Parameter Name="instanceId" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceId">The workflow instance to run.</param>
+        <summary>Runs the specified workflow instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -816,8 +816,8 @@
         <Parameter Name="instanceId" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceId">The workflow instance to run.</param>
+        <summary>Begins an asynchronous operation that runs the specified workflow instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -838,9 +838,9 @@
         <Parameter Name="userState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="userState">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceId">The workflow instance to run.</param>
+        <param name="userState">A user-defined object that contains state information associated with the asynchronous run operation.</param>
+        <summary>Begins an asynchronous operation that runs the specified workflow instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -857,7 +857,7 @@
         <ReturnType>System.EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when an asynchronous run operation completes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -877,8 +877,8 @@
         <Parameter Name="instanceId" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceId">The workflow instance to suspend.</param>
+        <summary>Suspends the specified workflow instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -899,9 +899,9 @@
         <Parameter Name="reason" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="reason">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceId">The workflow instance to suspend.</param>
+        <param name="reason">The reason to suspend the workflow instance.</param>
+        <summary>Suspends the specified workflow instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -921,8 +921,8 @@
         <Parameter Name="instanceId" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceId">The workflow instance to suspend.</param>
+        <summary>Begins an asynchronous suspend operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -943,9 +943,9 @@
         <Parameter Name="userState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="userState">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceId">The workflow instance to suspend.</param>
+        <param name="userState">A user-defined object that contains state information associated with the asynchronous suspend operation.</param>
+        <summary>Begins an asynchronous suspend operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -966,9 +966,9 @@
         <Parameter Name="reason" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="reason">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceId">The workflow instance to suspend.</param>
+        <param name="reason">The reason to suspend the workflow instance.</param>
+        <summary>Begins an asynchronous suspend operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -990,10 +990,10 @@
         <Parameter Name="userState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="reason">To be added.</param>
-        <param name="userState">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceId">The workflow instance to suspend.</param>
+        <param name="reason">The reason to suspend the workflow instance.</param>
+        <param name="userState">A user-defined object that contains state information associated with the asynchronous run operation.</param>
+        <summary>Begins an asynchronous suspend operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1010,7 +1010,7 @@
         <ReturnType>System.EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when an asynchronous suspend operation completes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1030,8 +1030,8 @@
         <Parameter Name="instanceId" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceId">The workflow instance to terminate.</param>
+        <summary>Terminates the specified workflow instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1052,9 +1052,9 @@
         <Parameter Name="reason" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="reason">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceId">The workflow instance to terminate.</param>
+        <param name="reason">The reason to terminate the workflow instance.</param>
+        <summary>Terminates the specified workflow instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1074,8 +1074,8 @@
         <Parameter Name="instanceId" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceId">The workflow instance to terminate.</param>
+        <summary>Begins an asynchronous terminate operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1096,9 +1096,9 @@
         <Parameter Name="userState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="userState">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceId">The workflow instance to terminate.</param>
+        <param name="userState">A user-defined object that contains state information associated with the asynchronous terminate operation.</param>
+        <summary>Begins an asynchronous terminate operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1119,9 +1119,9 @@
         <Parameter Name="reason" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="reason">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceId">The workflow instance to terminate.</param>
+        <param name="reason">The reason to terminate the workflow instance.</param>
+        <summary>Begins an asynchronous terminate operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1143,10 +1143,10 @@
         <Parameter Name="userState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="reason">To be added.</param>
-        <param name="userState">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceId">The workflow instance to terminate.</param>
+        <param name="reason">The reason to terminate the workflow instance.</param>
+        <param name="userState">A user-defined object that contains state information associated with the asynchronous terminate operation.</param>
+        <summary>Begins an asynchronous terminate operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1163,7 +1163,7 @@
         <ReturnType>System.EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when an asynchronous terminate operation completes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1183,8 +1183,8 @@
         <Parameter Name="instanceId" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceId">The workflow instance to unsuspend.</param>
+        <summary>Unsuspends the specified workflow instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1204,8 +1204,8 @@
         <Parameter Name="instanceId" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceId">The workflow instance to unsuspend.</param>
+        <summary>Begins an asynchronous unsuspend operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1226,9 +1226,9 @@
         <Parameter Name="userState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="userState">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceId">The workflow instance to unsuspend.</param>
+        <param name="userState">A user-defined object that contains state information associated with the asynchronous unsuspend operation.</param>
+        <summary>Begins an asynchronous unsuspend operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1245,7 +1245,7 @@
         <ReturnType>System.EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when an asynchronous unsuspend operation completes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1266,9 +1266,9 @@
         <Parameter Name="updatedDefinitionIdentity" Type="System.Activities.WorkflowIdentity" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="updatedDefinitionIdentity">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceId">The workflow instance to update.</param>
+        <param name="updatedDefinitionIdentity">The updated workflow identity.</param>
+        <summary>Updates the specified workflow instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1289,9 +1289,9 @@
         <Parameter Name="updatedDefinitionIdentity" Type="System.Activities.WorkflowIdentity" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="updatedDefinitionIdentity">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceId">The workflow instance to update.</param>
+        <param name="updatedDefinitionIdentity">The updated workflow identity.</param>
+        <summary>Begins an asynchronous update operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1313,10 +1313,10 @@
         <Parameter Name="userState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="updatedDefinitionIdentity">To be added.</param>
-        <param name="userState">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceId">The workflow instance to update.</param>
+        <param name="updatedDefinitionIdentity">The updated workflow identity.</param>
+        <param name="userState">A user-defined object that contains state information associated with the asynchronous update operation.</param>
+        <summary>Begins an asynchronous update operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1333,7 +1333,7 @@
         <ReturnType>System.EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when an asynchronous update operation completes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

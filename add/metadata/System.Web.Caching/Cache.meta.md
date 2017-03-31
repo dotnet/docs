@@ -1,89 +1,94 @@
 ---
 uid: System.Web.Caching.Cache
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.Cache.NoSlidingExpiration
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.Cache.NoAbsoluteExpiration
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.Cache.EffectivePercentagePhysicalMemoryLimit
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.Cache.GetEnumerator
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.Cache.Get(System.String)
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.Cache.Add(System.String,System.Object,System.Web.Caching.CacheDependency,System.DateTime,System.TimeSpan,System.Web.Caching.CacheItemPriority,System.Web.Caching.CacheItemRemovedCallback)
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.Cache.#ctor
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.Cache.System#Collections#IEnumerable#GetEnumerator
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.Cache.EffectivePrivateBytesLimit
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.Cache.Insert(System.String,System.Object)
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency,System.DateTime,System.TimeSpan,System.Web.Caching.CacheItemPriority,System.Web.Caching.CacheItemRemovedCallback)
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.Cache.Item(System.String)
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.Cache.Remove(System.String)
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency,System.DateTime,System.TimeSpan)
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.Cache.Count
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency)
-internalonly: False
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Caching.Cache.Insert
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency,System.DateTime,System.TimeSpan,System.Web.Caching.CacheItemUpdateCallback)
-internalonly: False
+manager: "wpickett"
 ---

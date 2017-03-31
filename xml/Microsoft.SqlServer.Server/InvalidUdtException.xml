@@ -12,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Thrown when SQL Server or the ADO.NET <see cref="N:System.Data.SqlClient" /> provider detects an invalid user-defined type (UDT).</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,10 +34,17 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="si">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="si">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object.</param>
+        <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> object.</param>
+        <summary>Streams all the <see cref="T:Microsoft.SqlServer.Server.InvalidUdtException" /> properties into the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> class for the given <see cref="T:System.Runtime.Serialization.StreamingContext" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is present in the <xref:Microsoft.SqlServer.Server.InvalidUdtException> class to make the class serializable.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

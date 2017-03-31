@@ -1,14 +1,23 @@
 ---
 uid: System.Windows.Forms.WebBrowserSiteBase
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.WebBrowserSiteBase.Dispose
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.WebBrowserSiteBase.Dispose
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.WebBrowserSiteBase.Dispose(System.Boolean)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

@@ -1,4 +1,4 @@
 ---
 uid: Microsoft.JScript.RegExpMatch
-internalonly: False
+ms.author: "mikejo"
 ---

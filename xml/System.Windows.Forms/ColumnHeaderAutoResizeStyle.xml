@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies how a column contained in a <see cref="T:System.Windows.Forms.ListView" /> should be resized.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ColumnHeaderAutoResizeStyle> is used by the <xref:System.Windows.Forms.ListView.AutoResizeColumn%2A?displayProperty=fullName>, <xref:System.Windows.Forms.ListView.AutoResizeColumns%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.ColumnHeader.AutoResize%2A?displayProperty=fullName> methods.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ColumnContent">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Forms.ColumnHeaderAutoResizeStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the column should be resized based on the length of the column content.</summary>
       </Docs>
     </Member>
     <Member MemberName="HeaderSize">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Forms.ColumnHeaderAutoResizeStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the column should be resized based on the length of the column header content.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.Forms.ColumnHeaderAutoResizeStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies no resizing should occur.</summary>
       </Docs>
     </Member>
   </Members>

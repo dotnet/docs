@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Interop.RenderMode
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

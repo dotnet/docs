@@ -1,44 +1,49 @@
 ---
 uid: System.Xaml.XamlReaderSettings
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlReaderSettings.ProvideLineInfo
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlReaderSettings.#ctor(System.Xaml.XamlReaderSettings)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlReaderSettings.#ctor
-internalonly: False
+manager: "martinek"
+---
+
+---
+uid: System.Xaml.XamlReaderSettings.#ctor
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlReaderSettings.BaseUri
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlReaderSettings.AllowProtectedMembersOnRoot
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlReaderSettings.LocalAssembly
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlReaderSettings.ValuesMustBeString
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlReaderSettings.IgnoreUidsOnPropertyElements
-internalonly: False
+manager: "martinek"
 ---

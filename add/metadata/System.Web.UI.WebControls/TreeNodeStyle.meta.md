@@ -1,54 +1,71 @@
 ---
 uid: System.Web.UI.WebControls.TreeNodeStyle
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.TreeNodeStyle.VerticalPadding
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.TreeNodeStyle.NodeSpacing
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.TreeNodeStyle.MergeWith(System.Web.UI.WebControls.Style)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.TreeNodeStyle.ImageUrl
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.TreeNodeStyle.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.TreeNodeStyle.#ctor
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.TreeNodeStyle.#ctor(System.Web.UI.StateBag)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.TreeNodeStyle.ChildNodesPadding
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.TreeNodeStyle.HorizontalPadding
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.TreeNodeStyle.Reset
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.TreeNodeStyle.CopyFrom(System.Web.UI.WebControls.Style)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

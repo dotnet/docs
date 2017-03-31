@@ -11,8 +11,23 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an update attempt with one or more optimistic concurrency conflicts.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This scenario is one in which an attempted update fails because database values have been updated since the client last read them.  
+  
+ The following example shows how to retrieve information about objects in conflict.  
+  
+   
+  
+## Examples  
+ [!code-csharp[System.Data.Linq.ObjectChangeConflict#1](~/samples/snippets/csharp/VS_Snippets_Data/system.data.linq.objectchangeconflict/cs/program.cs#1)]
+ [!code-vb[System.Data.Linq.ObjectChangeConflict#1](~/samples/snippets/visualbasic/VS_Snippets_Data/system.data.linq.objectchangeconflict/vb/module1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="IsDeleted">
@@ -28,8 +43,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the object in conflict has been deleted from the database.</summary>
+        <value>
+          <see langword="True" /> if the object has been deleted.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,9 +62,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the conflicts for this object have already been resolved.</summary>
+        <value>
+          <see langword="True" /> if the conflicts have been resolved.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is read-only and is automatically updated as conflicts are resolved.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MemberConflicts">
@@ -64,8 +88,8 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Linq.MemberChangeConflict&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of all member conflicts that caused the update to fail.</summary>
+        <value>A collection of member conflicts.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +106,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the object in conflict.</summary>
+        <value>The object in conflict.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,7 +125,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Resolves member conflicts by keeping current values and resetting the baseline original values to match the more recent database values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,9 +145,34 @@
         <Parameter Name="refreshMode" Type="System.Data.Linq.RefreshMode" />
       </Parameters>
       <Docs>
-        <param name="refreshMode">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="refreshMode">The appropriate option from <see cref="T:System.Data.Linq.RefreshMode" />.</param>
+        <summary>Resolves member conflicts by using the specified <see cref="T:System.Data.Linq.RefreshMode" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following examples show what results are produced by using the various values for <xref:System.Data.Linq.RefreshMode>.  
+  
+   
+  
+## Examples  
+ The following example overwrites current values with values from the database.  
+  
+ [!code-csharp[System.Data.Linq.RefreshMode#1](~/samples/snippets/csharp/VS_Snippets_Data/system.data.linq.refreshmode/cs/program.cs#1)]
+ [!code-vb[System.Data.Linq.RefreshMode#1](~/samples/snippets/visualbasic/VS_Snippets_Data/system.data.linq.refreshmode/vb/module1.vb#1)]  
+  
+ The following example shows how to swap the original value with the values retrieved from the dtabase. No current value is modified.  
+  
+ [!code-csharp[System.Data.Linq.RefreshMode#2](~/samples/snippets/csharp/VS_Snippets_Data/system.data.linq.refreshmode/cs/program.cs#2)]
+ [!code-vb[System.Data.Linq.RefreshMode#2](~/samples/snippets/visualbasic/VS_Snippets_Data/system.data.linq.refreshmode/vb/module1.vb#2)]  
+  
+ The following example keeps the current values that have been changed, but updates the other values with database values.  
+  
+ [!code-csharp[System.Data.Linq.RefreshMode#3](~/samples/snippets/csharp/VS_Snippets_Data/system.data.linq.refreshmode/cs/program.cs#3)]
+ [!code-vb[System.Data.Linq.RefreshMode#3](~/samples/snippets/visualbasic/VS_Snippets_Data/system.data.linq.refreshmode/vb/module1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Resolve">
@@ -143,9 +192,9 @@
         <Parameter Name="autoResolveDeletes" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="refreshMode">To be added.</param>
-        <param name="autoResolveDeletes">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="refreshMode">The appropriate option from <see cref="T:System.Data.Linq.RefreshMode" />.</param>
+        <param name="autoResolveDeletes">When <see langword="true" />, automatically resolves conflicts resulting from a modified object that is no longer in the database.</param>
+        <summary>Resolve member conflicts keeping current values and resetting the baseline original values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

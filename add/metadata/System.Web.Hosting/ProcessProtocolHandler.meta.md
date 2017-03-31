@@ -1,29 +1,35 @@
 ---
 uid: System.Web.Hosting.ProcessProtocolHandler
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.ProcessProtocolHandler.InitializeLifetimeService
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.ProcessProtocolHandler.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.ProcessProtocolHandler.StopListenerChannel(System.Int32,System.Boolean)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.ProcessProtocolHandler.StartListenerChannel(System.Web.Hosting.IListenerChannelCallback,System.Web.Hosting.IAdphManager)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.ProcessProtocolHandler.StopProtocol(System.Boolean)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

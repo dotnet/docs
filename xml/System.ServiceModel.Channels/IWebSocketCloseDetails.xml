@@ -8,7 +8,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the details of the close status of the web socket connection.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -25,8 +25,8 @@
         <ReturnType>System.Nullable&lt;System.Net.WebSockets.WebSocketCloseStatus&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the status of the input close details.</summary>
+        <value>The status of the input close details.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the status description of the close details.</summary>
+        <value>The status description of the close details.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,9 +65,9 @@
         <Parameter Name="closeStatusDescription" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="closeStatus">To be added.</param>
-        <param name="closeStatusDescription">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="closeStatus">The status of the output close details.</param>
+        <param name="closeStatusDescription">The status description of the output close details.</param>
+        <summary>Sets the output status and description of the close details of the web socket.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -20,8 +20,29 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a type converter to convert Unicode character objects to and from various other representations.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This converter can only convert a string, with a length of 1, to and from a character.  
+  
+ For more information about type converters, see the <xref:System.ComponentModel.TypeConverter> base class and [How to: Implement a Type Converter](../Topic/How%20to:%20Implement%20a%20Type%20Converter.md).  
+  
+> [!NOTE]
+>  You should never create an instance of a <xref:System.ComponentModel.CharConverter>. Instead, call the <xref:System.ComponentModel.TypeDescriptor.GetConverter%2A> method of the <xref:System.ComponentModel.TypeDescriptor> class. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter> base class.  
+  
+   
+  
+## Examples  
+ The following code example converts a variable of type <xref:System.Char> to a string variable, and vice versa.  
+  
+ [!code-cpp[Converters#5](~/samples/snippets/cpp/VS_Snippets_Winforms/Converters/CPP/converters.cpp#5)]
+ [!code-csharp[Converters#5](~/samples/snippets/csharp/VS_Snippets_Winforms/Converters/CS/converters.cs#5)]
+ [!code-vb[Converters#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Converters/VB/converters.vb#5)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,7 +65,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.CharConverter" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,11 +95,21 @@
         <Parameter Name="sourceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="sourceType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
+        <param name="sourceType">A <see cref="T:System.Type" /> that represents the type you want to convert from.</param>
+        <summary>Gets a value indicating whether this converter can convert an object in the given source type to a Unicode character object using the specified context.</summary>
+        <returns>
+          <see langword="true" /> if this converter can perform the conversion; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This converter can only convert a string, with a length of 1, to and from a character.  
+  
+ The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertFrom">
@@ -108,12 +139,24 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="culture">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
+        <param name="culture">The culture into which <c>value</c> will be converted.</param>
+        <param name="value">The <see cref="T:System.Object" /> to convert.</param>
+        <summary>Converts the given object to a Unicode character object.</summary>
+        <returns>An <see cref="T:System.Object" /> that represents the converted <paramref name="value" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This converter can only convert a string, with a length of 1, to and from a character.  
+  
+ The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.FormatException">
+          <paramref name="value" /> is not a valid value for the target type.</exception>
+        <exception cref="T:System.NotSupportedException">The conversion cannot be performed.</exception>
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -144,13 +187,14 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="culture">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="destinationType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
+        <param name="culture">The culture into which <c>value</c> will be converted.</param>
+        <param name="value">The <see cref="T:System.Object" /> to convert.</param>
+        <param name="destinationType">The <see cref="T:System.Type" /> to convert the value to.</param>
+        <summary>Converts the given value object to a Unicode character object using the arguments.</summary>
+        <returns>An <see cref="T:System.Object" /> that represents the converted value.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">The conversion cannot be performed.</exception>
       </Docs>
     </Member>
   </Members>

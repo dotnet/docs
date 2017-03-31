@@ -1,499 +1,783 @@
 ---
 uid: System.Data.DataSet
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataSet.WriteXmlSchema(System.IO.TextWriter)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataSet.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataSet.HasChanges
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataSet.WriteXml(System.Xml.XmlWriter,System.Data.XmlWriteMode)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataSet.ReadXmlSchema(System.String)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataSet.CaseSensitive
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataSet.Load(System.Data.IDataReader,System.Data.LoadOption,System.String[])
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataSet.GetSchemaSerializable
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataSet.EndInit
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataSet.ReadXml(System.String)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataSet.BeginInit
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataSet.#ctor(System.String)
-internalonly: False
----
-
----
-uid: System.Data.DataSet.ReadXml(System.Xml.XmlReader)
-internalonly: False
----
-
----
-uid: System.Data.DataSet.System#Xml#Serialization#IXmlSerializable#WriteXml(System.Xml.XmlWriter)
-internalonly: False
----
-
----
-uid: System.Data.DataSet.Merge(System.Data.DataSet,System.Boolean,System.Data.MissingSchemaAction)
-internalonly: False
----
-
----
-uid: System.Data.DataSet.#ctor
-internalonly: False
----
-
----
-uid: System.Data.DataSet.GetSerializationData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
----
-
----
-uid: System.Data.DataSet.IsBinarySerialized(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
----
-
----
-uid: System.Data.DataSet.Clone
-internalonly: False
----
-
----
-uid: System.Data.DataSet.System#Xml#Serialization#IXmlSerializable#GetSchema
-internalonly: False
----
-
----
-uid: System.Data.DataSet.WriteXmlSchema(System.Xml.XmlWriter,System.Converter{System.Type,System.String})
-internalonly: False
----
-
----
-uid: System.Data.DataSet.ReadXml(System.IO.TextReader)
-internalonly: False
----
-
----
-uid: System.Data.DataSet.WriteXmlSchema(System.String,System.Converter{System.Type,System.String})
-internalonly: False
----
-
----
-uid: System.Data.DataSet.WriteXml(System.IO.Stream,System.Data.XmlWriteMode)
-internalonly: False
----
-
----
-uid: System.Data.DataSet.RaisePropertyChanging(System.String)
-internalonly: False
----
-
----
-uid: System.Data.DataSet.AcceptChanges
-internalonly: False
----
-
----
-uid: System.Data.DataSet.ReadXmlSchema(System.Xml.XmlReader)
-internalonly: False
----
-
----
-uid: System.Data.DataSet.EnforceConstraints
-internalonly: False
----
-
----
-uid: System.Data.DataSet.ReadXmlSerializable(System.Xml.XmlReader)
-internalonly: False
----
-
----
-uid: System.Data.DataSet.ShouldSerializeTables
-internalonly: False
----
-
----
-uid: System.Data.DataSet.ExtendedProperties
-internalonly: False
----
-
----
-uid: System.Data.DataSet.InferXmlSchema(System.String,System.String[])
-internalonly: False
----
-
----
-uid: System.Data.DataSet.System#Xml#Serialization#IXmlSerializable#ReadXml(System.Xml.XmlReader)
-internalonly: False
----
-
----
-uid: System.Data.DataSet.Clear
-internalonly: False
----
-
----
-uid: System.Data.DataSet.RemotingFormat
-internalonly: False
----
-
----
-uid: System.Data.DataSet.Copy
-internalonly: False
----
-
----
-uid: System.Data.DataSet.Merge(System.Data.DataTable,System.Boolean,System.Data.MissingSchemaAction)
-internalonly: False
----
-
----
-uid: System.Data.DataSet.Load(System.Data.IDataReader,System.Data.LoadOption,System.Data.FillErrorEventHandler,System.Data.DataTable[])
-internalonly: False
----
-
----
-uid: System.Data.DataSet.OnRemoveRelation(System.Data.DataRelation)
-internalonly: False
----
-
----
-uid: System.Data.DataSet.GetDataSetSchema(System.Xml.Schema.XmlSchemaSet)
-internalonly: False
----
-
----
-uid: System.Data.DataSet.WriteXmlSchema(System.IO.TextWriter,System.Converter{System.Type,System.String})
-internalonly: False
----
-
----
-uid: System.Data.DataSet.WriteXml(System.IO.Stream)
-internalonly: False
----
-
----
-uid: System.Data.DataSet.DetermineSchemaSerializationMode(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
----
-
----
-uid: System.Data.DataSet.ReadXmlSchema(System.IO.Stream)
-internalonly: False
----
-
----
-uid: System.Data.DataSet.Reset
-internalonly: False
----
-
----
-uid: System.Data.DataSet.WriteXml(System.String,System.Data.XmlWriteMode)
-internalonly: False
----
-
----
-uid: System.Data.DataSet.RejectChanges
-internalonly: False
----
-
----
-uid: System.Data.DataSet.HasErrors
-internalonly: False
----
-
----
-uid: System.Data.DataSet.DefaultViewManager
-internalonly: False
----
-
----
-uid: System.Data.DataSet.InferXmlSchema(System.IO.TextReader,System.String[])
-internalonly: False
----
-
----
-uid: System.Data.DataSet.ReadXml(System.String,System.Data.XmlReadMode)
-internalonly: False
----
-
----
-uid: System.Data.DataSet.DataSetName
-internalonly: False
----
-
----
-uid: System.Data.DataSet.WriteXmlSchema(System.String)
-internalonly: False
----
-
----
-uid: System.Data.DataSet.SchemaSerializationMode
-internalonly: False
----
-
----
-uid: System.Data.DataSet.ReadXml(System.IO.Stream)
-internalonly: False
----
-
----
-uid: System.Data.DataSet.WriteXmlSchema(System.Xml.XmlWriter)
-internalonly: False
----
-
----
-uid: System.Data.DataSet.InferXmlSchema(System.Xml.XmlReader,System.String[])
-internalonly: False
----
-
----
-uid: System.Data.DataSet.GetChanges
-internalonly: False
----
-
----
-uid: System.Data.DataSet.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext,System.Boolean)
-internalonly: False
----
-
----
-uid: System.Data.DataSet.Merge(System.Data.DataSet,System.Boolean)
-internalonly: False
----
-
----
-uid: System.Data.DataSet.ReadXmlSchema(System.IO.TextReader)
-internalonly: False
----
-
----
-uid: System.Data.DataSet.Merge(System.Data.DataRow[],System.Boolean,System.Data.MissingSchemaAction)
-internalonly: False
----
-
----
-uid: System.Data.DataSet.ReadXml(System.IO.TextReader,System.Data.XmlReadMode)
-internalonly: False
----
-
----
-uid: System.Data.DataSet.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
----
-
----
-uid: System.Data.DataSet.OnRemoveTable(System.Data.DataTable)
-internalonly: False
----
-
----
-uid: System.Data.DataSet.HasChanges(System.Data.DataRowState)
-internalonly: False
----
-
----
-uid: System.Data.DataSet.Merge(System.Data.DataRow[])
-internalonly: False
----
-
----
-uid: System.Data.DataSet.WriteXmlSchema(System.IO.Stream)
-internalonly: False
----
-
----
-uid: System.Data.DataSet.Load(System.Data.IDataReader,System.Data.LoadOption,System.Data.DataTable[])
-internalonly: False
----
-
----
-uid: System.Data.DataSet.GetXml
-internalonly: False
----
-
----
-uid: System.Data.DataSet.DetermineSchemaSerializationMode(System.Xml.XmlReader)
-internalonly: False
----
-
----
-uid: System.Data.DataSet.WriteXml(System.IO.TextWriter)
-internalonly: False
----
-
----
-uid: System.Data.DataSet.System#ComponentModel#IListSource#ContainsListCollection
-internalonly: False
----
-
----
-uid: System.Data.DataSet.WriteXml(System.IO.TextWriter,System.Data.XmlWriteMode)
-internalonly: False
----
-
----
-uid: System.Data.DataSet.ReadXml(System.IO.Stream,System.Data.XmlReadMode)
-internalonly: False
----
-
----
-uid: System.Data.DataSet.WriteXmlSchema(System.IO.Stream,System.Converter{System.Type,System.String})
-internalonly: False
----
-
----
-uid: System.Data.DataSet.ShouldSerializeRelations
-internalonly: False
----
-
----
-uid: System.Data.DataSet.Merge(System.Data.DataTable)
-internalonly: False
----
-
----
-uid: System.Data.DataSet.InferXmlSchema(System.IO.Stream,System.String[])
-internalonly: False
----
-
----
-uid: System.Data.DataSet.MergeFailed
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataSet.CreateDataReader
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.ReadXml(System.Xml.XmlReader)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.System#Xml#Serialization#IXmlSerializable#WriteXml(System.Xml.XmlWriter)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.ReadXmlSchema
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.Merge(System.Data.DataSet,System.Boolean,System.Data.MissingSchemaAction)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.#ctor
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.#ctor
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.GetSerializationData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.IsBinarySerialized(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.Clone
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.System#Xml#Serialization#IXmlSerializable#GetSchema
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.WriteXmlSchema(System.Xml.XmlWriter,System.Converter{System.Type,System.String})
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.ReadXml(System.IO.TextReader)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.WriteXmlSchema(System.String,System.Converter{System.Type,System.String})
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.WriteXml(System.IO.Stream,System.Data.XmlWriteMode)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.RaisePropertyChanging(System.String)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.AcceptChanges
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.ReadXmlSchema(System.Xml.XmlReader)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.EnforceConstraints
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.ReadXmlSerializable(System.Xml.XmlReader)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.ShouldSerializeTables
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.ExtendedProperties
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.InferXmlSchema(System.String,System.String[])
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.System#Xml#Serialization#IXmlSerializable#ReadXml(System.Xml.XmlReader)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.Clear
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.RemotingFormat
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.Copy
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.DetermineSchemaSerializationMode
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.Merge(System.Data.DataTable,System.Boolean,System.Data.MissingSchemaAction)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.Load(System.Data.IDataReader,System.Data.LoadOption,System.Data.FillErrorEventHandler,System.Data.DataTable[])
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.OnRemoveRelation(System.Data.DataRelation)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.GetDataSetSchema(System.Xml.Schema.XmlSchemaSet)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.WriteXmlSchema(System.IO.TextWriter,System.Converter{System.Type,System.String})
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.Load
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.WriteXml(System.IO.Stream)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.DetermineSchemaSerializationMode(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.ReadXmlSchema(System.IO.Stream)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.Reset
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.WriteXml(System.String,System.Data.XmlWriteMode)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.RejectChanges
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.HasErrors
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.DefaultViewManager
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.InferXmlSchema(System.IO.TextReader,System.String[])
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.ReadXml(System.String,System.Data.XmlReadMode)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.DataSetName
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.WriteXmlSchema(System.String)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.SchemaSerializationMode
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.ReadXml(System.IO.Stream)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.WriteXmlSchema(System.Xml.XmlWriter)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.InferXmlSchema(System.Xml.XmlReader,System.String[])
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.GetChanges
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext,System.Boolean)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.Merge(System.Data.DataSet,System.Boolean)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.ReadXmlSchema(System.IO.TextReader)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.Merge(System.Data.DataRow[],System.Boolean,System.Data.MissingSchemaAction)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.ReadXml
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.ReadXml(System.IO.TextReader,System.Data.XmlReadMode)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.OnRemoveTable(System.Data.DataTable)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.HasChanges(System.Data.DataRowState)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.Merge(System.Data.DataRow[])
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.WriteXmlSchema(System.IO.Stream)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.Load(System.Data.IDataReader,System.Data.LoadOption,System.Data.DataTable[])
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.GetXml
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.DetermineSchemaSerializationMode(System.Xml.XmlReader)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.WriteXml(System.IO.TextWriter)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.WriteXml
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.System#ComponentModel#IListSource#ContainsListCollection
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.HasChanges
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.WriteXml(System.IO.TextWriter,System.Data.XmlWriteMode)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.Merge
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.ReadXml(System.IO.Stream,System.Data.XmlReadMode)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.WriteXmlSchema(System.IO.Stream,System.Converter{System.Type,System.String})
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.ShouldSerializeRelations
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.Merge(System.Data.DataTable)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.InferXmlSchema(System.IO.Stream,System.String[])
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.MergeFailed
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.WriteXmlSchema
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.CreateDataReader
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataSet.IsInitialized
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataSet.Tables
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.GetChanges
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataSet.GetChanges(System.Data.DataRowState)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataSet.Namespace
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataSet.System#ComponentModel#IListSource#GetList
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataSet.ReadXml(System.Xml.XmlReader,System.Data.XmlReadMode)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataSet.Prefix
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataSet.InitializeDerivedDataSet
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataSet.CreateDataReader(System.Data.DataTable[])
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataSet.Merge(System.Data.DataSet)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataSet.WriteXml(System.Xml.XmlWriter)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataSet.GetXmlSchema
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataSet.Site
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataSet.Locale
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataSet.Initialized
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataSet.Relations
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataSet.WriteXml(System.String)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataSet.OnPropertyChanging(System.ComponentModel.PropertyChangedEventArgs)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataSet.InferXmlSchema
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

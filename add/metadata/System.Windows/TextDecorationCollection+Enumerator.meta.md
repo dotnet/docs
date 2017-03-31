@@ -1,29 +1,38 @@
 ---
 uid: System.Windows.TextDecorationCollection.Enumerator
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.TextDecorationCollection.Enumerator.System#Collections#IEnumerator#Current
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.TextDecorationCollection.Enumerator.Current
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.TextDecorationCollection.Enumerator.Reset
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.TextDecorationCollection.Enumerator.System#IDisposable#Dispose
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.TextDecorationCollection.Enumerator.MoveNext
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

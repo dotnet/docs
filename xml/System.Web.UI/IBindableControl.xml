@@ -8,7 +8,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines a method that enables field template controls to implement two-way data-binding.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <Parameter Name="dictionary" Type="System.Collections.Specialized.IOrderedDictionary" />
       </Parameters>
       <Docs>
-        <param name="dictionary">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="dictionary">The dictionary that contains the name/value pairs.</param>
+        <summary>Retrieves a set of name/value pairs to implement two-way data-binding in field template controls.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

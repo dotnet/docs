@@ -1,39 +1,62 @@
 ---
 uid: System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding.CreateBindingElements
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding.Security
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding.SerializationFormat
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding.#ctor(System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurityMode)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding.ShouldSerializeSecurity
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding.#ctor(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

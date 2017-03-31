@@ -1,39 +1,62 @@
 ---
 uid: System.Runtime.DurableInstancing.InstanceHandleConflictException
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.DurableInstancing.InstanceHandleConflictException.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.DurableInstancing.InstanceHandleConflictException.#ctor(System.Xml.Linq.XName,System.Guid,System.String,System.Exception)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.DurableInstancing.InstanceHandleConflictException.#ctor(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.DurableInstancing.InstanceHandleConflictException.#ctor(System.Xml.Linq.XName,System.Guid,System.Exception)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.DurableInstancing.InstanceHandleConflictException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.DurableInstancing.InstanceHandleConflictException.#ctor(System.Xml.Linq.XName,System.Guid)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Runtime.DurableInstancing.InstanceHandleConflictException.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.DurableInstancing.InstanceHandleConflictException.#ctor(System.String,System.Exception)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

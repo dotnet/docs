@@ -1,24 +1,34 @@
 ---
 uid: System.DirectoryServices.ActiveDirectory.ReadOnlySiteCollection
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ReadOnlySiteCollection.Item(System.Int32)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ReadOnlySiteCollection.Contains(System.DirectoryServices.ActiveDirectory.ActiveDirectorySite)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ReadOnlySiteCollection.CopyTo(System.DirectoryServices.ActiveDirectory.ActiveDirectorySite[],System.Int32)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ReadOnlySiteCollection.IndexOf(System.DirectoryServices.ActiveDirectory.ActiveDirectorySite)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---

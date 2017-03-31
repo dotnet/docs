@@ -1,19 +1,33 @@
 ---
 uid: System.Windows.Forms.AxHost.InvalidActiveXStateException
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.AxHost.InvalidActiveXStateException.#ctor(System.String,System.Windows.Forms.AxHost.ActiveXInvokeKind)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.AxHost.InvalidActiveXStateException.ToString
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.AxHost.InvalidActiveXStateException.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.AxHost.InvalidActiveXStateException.ToString
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.AxHost.InvalidActiveXStateException.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -11,8 +11,16 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Converts instances of other types to and from a <see cref="T:System.Windows.CornerRadius" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlTextUsage_CornerRadiusConverter"></a>   
+## XAML Text Usage  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +34,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.CornerRadiusConverter" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,10 +55,11 @@
         <Parameter Name="sourceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="typeDescriptorContext">To be added.</param>
-        <param name="sourceType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="typeDescriptorContext">Describes the context information of a type.</param>
+        <param name="sourceType">The source <see cref="T:System.Type" /> that is being queried for conversion support.</param>
+        <summary>Indicates whether an object can be converted from a given type to a <see cref="T:System.Windows.CornerRadius" />.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="sourceType" /> is of type <see cref="T:System.String" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,10 +80,11 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="typeDescriptorContext">To be added.</param>
-        <param name="destinationType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="typeDescriptorContext">Describes the context information of a type.</param>
+        <param name="destinationType">The desired type this <see cref="T:System.Windows.CornerRadius" /> is being evaluated to be converted to.</param>
+        <summary>Determines whether <see cref="T:System.Windows.CornerRadius" /> values can be converted to the specified type.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="destinationType" /> is of type <see cref="T:System.String" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,12 +106,16 @@
         <Parameter Name="source" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="typeDescriptorContext">To be added.</param>
-        <param name="cultureInfo">To be added.</param>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="typeDescriptorContext">Describes the context information of a type.</param>
+        <param name="cultureInfo">Describes the <see cref="T:System.Globalization.CultureInfo" /> of the type being converted.</param>
+        <param name="source">The object being converted.</param>
+        <summary>Converts the specified object to a <see cref="T:System.Windows.CornerRadius" />.</summary>
+        <returns>The <see cref="T:System.Windows.CornerRadius" /> created from converting <paramref name="source" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="source" /> is not <see langword="null" /> and is not a valid type which can be converted to a <see cref="T:System.Windows.CornerRadius" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -128,13 +142,24 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="typeDescriptorContext">To be added.</param>
-        <param name="cultureInfo">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="destinationType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="typeDescriptorContext">Describes the context information of a type.</param>
+        <param name="cultureInfo">Describes the <see cref="T:System.Globalization.CultureInfo" /> of the type being converted.</param>
+        <param name="value">The <see cref="T:System.Windows.CornerRadius" /> to convert.</param>
+        <param name="destinationType">The type to convert the <see cref="T:System.Windows.CornerRadius" /> to.</param>
+        <summary>Converts the specified <see cref="T:System.Windows.CornerRadius" /> to the specified type.</summary>
+        <returns>The object created from converting this <see cref="T:System.Windows.CornerRadius" /> (a string).</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `destinationType` must be <xref:System.String>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> is not <see langword="null" /> and is not a <see cref="T:System.Windows.Media.Brush" />, or if <paramref name="destinationType" /> is not one of the valid destination types.</exception>
       </Docs>
     </Member>
   </Members>

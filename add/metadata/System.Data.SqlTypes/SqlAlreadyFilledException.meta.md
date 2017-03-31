@@ -1,19 +1,34 @@
 ---
 uid: System.Data.SqlTypes.SqlAlreadyFilledException
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlAlreadyFilledException.#ctor(System.String)
-internalonly: False
----
-
----
-uid: System.Data.SqlTypes.SqlAlreadyFilledException.#ctor(System.String,System.Exception)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlAlreadyFilledException.#ctor
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlTypes.SqlAlreadyFilledException.#ctor(System.String,System.Exception)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlTypes.SqlAlreadyFilledException.#ctor
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

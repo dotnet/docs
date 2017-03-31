@@ -1,9 +1,13 @@
 ---
 uid: System.Windows.Automation.Provider.IInvokeProvider
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Provider.IInvokeProvider.Invoke
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---

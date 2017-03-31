@@ -17,8 +17,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides access to data from an <see cref="T:System.ActivationContext" /> object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is a temporary helper class used to access internal members of an <xref:System.ActivationContext> object.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="GetActivationContextData">
@@ -38,9 +45,9 @@
         <Parameter Name="appInfo" Type="System.ActivationContext" />
       </Parameters>
       <Docs>
-        <param name="appInfo">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="appInfo">The object containing the manifest.</param>
+        <summary>Gets the contents of the application manifest from an <see cref="T:System.ActivationContext" /> object.</summary>
+        <returns>The application manifest that is contained by the <see cref="T:System.ActivationContext" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,9 +68,9 @@
         <Parameter Name="appInfo" Type="System.ActivationContext" />
       </Parameters>
       <Docs>
-        <param name="appInfo">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="appInfo">The object containing the manifest.</param>
+        <summary>Gets the manifest of the last deployment component in an <see cref="T:System.ActivationContext" /> object.</summary>
+        <returns>The manifest of the last deployment component in the <see cref="T:System.ActivationContext" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,9 +91,9 @@
         <Parameter Name="appInfo" Type="System.ActivationContext" />
       </Parameters>
       <Docs>
-        <param name="appInfo">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="appInfo">The object to get bytes from.</param>
+        <summary>Gets a byte array containing the raw content of the application manifest..</summary>
+        <returns>An array containing the application manifest as raw data.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,9 +114,9 @@
         <Parameter Name="appInfo" Type="System.ActivationContext" />
       </Parameters>
       <Docs>
-        <param name="appInfo">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="appInfo">The object containing the manifest.</param>
+        <summary>Gets the manifest of the first deployment component in an <see cref="T:System.ActivationContext" /> object.</summary>
+        <returns>The manifest of the first deployment component in the <see cref="T:System.ActivationContext" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -130,9 +137,9 @@
         <Parameter Name="appInfo" Type="System.ActivationContext" />
       </Parameters>
       <Docs>
-        <param name="appInfo">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="appInfo">The object to get bytes from.</param>
+        <summary>Gets a byte array containing the raw content of the deployment manifest.</summary>
+        <returns>An array containing the deployment manifest as raw data.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,9 +160,10 @@
         <Parameter Name="appInfo" Type="System.ActivationContext" />
       </Parameters>
       <Docs>
-        <param name="appInfo">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="appInfo">The object to examine.</param>
+        <summary>Gets a value indicating whether this is the first time this <see cref="T:System.ActivationContext" /> object has been run.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.ActivationContext" /> indicates it is running for the first time; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -176,8 +184,8 @@
         <Parameter Name="appInfo" Type="System.ActivationContext" />
       </Parameters>
       <Docs>
-        <param name="appInfo">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="appInfo">The object to inform.</param>
+        <summary>Informs an <see cref="T:System.ActivationContext" /> to get ready to be run.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

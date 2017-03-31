@@ -1,2 +1,0 @@
-Response.AppendToLog("Page delivered")
-    

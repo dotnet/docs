@@ -26,7 +26,7 @@
   </Interfaces>
   <Docs>
     <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <summary>Represents the base class for all chart element collections.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -44,7 +44,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes all elements from the <see cref="T:System.Collections.ObjectModel.Collection`1" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,7 +62,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Releases the resources used by the <see cref="T:System.Web.UI.DataVisualization.Charting.ChartElementCollection`1" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +82,9 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="disposing">
+          <see langword="True" /> to release both managed and unmanaged resources; <see langword="False" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Web.UI.DataVisualization.Charting.ChartElementCollection`1" /> and optionally releases the managed resources.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,9 +105,9 @@
         <Parameter Name="item" Type="T" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The zero-based index location of the item will be inserted.</param>
+        <param name="item">The object to insert. The value can be <see langword="null" /> for reference types.</param>
+        <summary>Inserts an element into the <see cref="T:System.Collections.ObjectModel.Collection`1" /> at the specified index location.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,7 +125,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Forces the invalidation of the parent chart element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,8 +145,8 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The zero-based index location of the element to remove.</param>
+        <summary>Removes the element at the specified index location of the <see cref="T:System.Collections.ObjectModel.Collection`1" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -163,8 +164,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Resumes the invalidation of a chart element in the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you call the <xref:System.Web.UI.DataVisualization.Charting.ChartElementCollection%601.SuspendUpdates%2A> method several times, you will need to call the <xref:System.Web.UI.DataVisualization.Charting.ChartElementCollection%601.ResumeUpdates%2A> method an equal number of times.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetItem">
@@ -184,9 +192,9 @@
         <Parameter Name="item" Type="T" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The zero-based index location of the element to replace.</param>
+        <param name="item">The new value for the element at the specified index location. The value can be <see langword="null" /> for reference types.</param>
+        <summary>Replaces the element at the specified index location.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -204,8 +212,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Suspends the invalidation of a chart element in the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A call to the <xref:System.Web.UI.DataVisualization.Charting.ChartElementCollection%601.Invalidate%2A> method will have no effect after the <xref:System.Web.UI.DataVisualization.Charting.ChartElementCollection%601.SuspendUpdates%2A> method is called.  
+  
+ If you call the <xref:System.Web.UI.DataVisualization.Charting.ChartElementCollection%601.SuspendUpdates%2A> method several times, you will need to call the <xref:System.Web.UI.DataVisualization.Charting.ChartElementCollection%601.ResumeUpdates%2A> method an equal number of times.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

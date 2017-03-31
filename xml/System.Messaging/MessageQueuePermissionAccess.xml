@@ -15,8 +15,18 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines access levels used by <see cref="N:System.Messaging" /> permission classes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example uses <xref:System.Messaging.MessageQueuePermissionAccess> in creating a new instance of <xref:System.Messaging.MessageQueuePermission>.  
+  
+ [!code-cpp[MessageQueuePermissionAccess#0](~/samples/snippets/cpp/VS_Snippets_Remoting/MessageQueuePermissionAccess/cpp/class1.cpp#0)]
+ [!code-csharp[MessageQueuePermissionAccess#0](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueuePermissionAccess/CS/class1.cs#0)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Administer">
@@ -32,7 +42,7 @@
         <ReturnType>System.Messaging.MessageQueuePermissionAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Messaging.MessageQueue" /> can look at the queues that are available, read the messages in the queue, and send and receive messages.</summary>
       </Docs>
     </Member>
     <Member MemberName="Browse">
@@ -48,7 +58,7 @@
         <ReturnType>System.Messaging.MessageQueuePermissionAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Messaging.MessageQueue" /> can look at the queues that are available.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -64,7 +74,7 @@
         <ReturnType>System.Messaging.MessageQueuePermissionAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Messaging.MessageQueue" /> has no permissions.</summary>
       </Docs>
     </Member>
     <Member MemberName="Peek">
@@ -80,7 +90,7 @@
         <ReturnType>System.Messaging.MessageQueuePermissionAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Messaging.MessageQueue" /> can look at the queues that are available and read the messages in the queue.</summary>
       </Docs>
     </Member>
     <Member MemberName="Receive">
@@ -96,7 +106,7 @@
         <ReturnType>System.Messaging.MessageQueuePermissionAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Messaging.MessageQueue" /> can look at the queues that are available, read the messages in the queue, and receive messages.</summary>
       </Docs>
     </Member>
     <Member MemberName="Send">
@@ -112,7 +122,7 @@
         <ReturnType>System.Messaging.MessageQueuePermissionAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Messaging.MessageQueue" /> can look at the queues that are available and send messages.</summary>
       </Docs>
     </Member>
   </Members>

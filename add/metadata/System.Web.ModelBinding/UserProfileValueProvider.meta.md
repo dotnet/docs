@@ -1,9 +1,13 @@
 ---
 uid: System.Web.ModelBinding.UserProfileValueProvider
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ModelBinding.UserProfileValueProvider.#ctor(System.Web.ModelBinding.ModelBindingExecutionContext)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

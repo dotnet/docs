@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the built-in JScript functions. These functions correspond to the static methods of the intrinsic JScript objects. The members of this enumeration are used to create <see cref="T:Microsoft.JScript.JSFunctionAttribute" /> objects.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.ArrayPrototype.concat(System.Object,Microsoft.JScript.Vsa.VsaEngine,System.Object[])" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Array_join">
@@ -43,7 +43,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.ArrayPrototype.join(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Array_pop">
@@ -59,7 +59,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.ArrayPrototype.pop(System.Object)" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Array_push">
@@ -75,7 +75,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.ArrayPrototype.push(System.Object,System.Object[])" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Array_reverse">
@@ -91,7 +91,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.ArrayPrototype.reverse(System.Object)" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Array_shift">
@@ -107,7 +107,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.ArrayPrototype.shift(System.Object)" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Array_slice">
@@ -123,7 +123,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.ArrayPrototype.slice(System.Object,Microsoft.JScript.Vsa.VsaEngine,System.Double,System.Object)" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Array_sort">
@@ -139,7 +139,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.ArrayPrototype.sort(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Array_splice">
@@ -155,7 +155,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.ArrayPrototype.splice(System.Object,Microsoft.JScript.Vsa.VsaEngine,System.Double,System.Double,System.Object[])" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Array_toLocaleString">
@@ -171,7 +171,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.ArrayPrototype.toLocaleString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Array_toString">
@@ -187,7 +187,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.ArrayPrototype.toString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Array_unshift">
@@ -203,7 +203,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.ArrayPrototype.unshift(System.Object,System.Object[])" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Boolean_toString">
@@ -219,7 +219,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.BooleanPrototype.toString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.BooleanPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Boolean_valueOf">
@@ -235,7 +235,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.BooleanPrototype.valueOf(System.Object)" /> method of the <see cref="T:Microsoft.JScript.BooleanPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date_getDate">
@@ -251,7 +251,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getDate(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date_getDay">
@@ -267,7 +267,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getDay(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date_getFullYear">
@@ -283,7 +283,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getFullYear(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date_getHours">
@@ -299,7 +299,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getHours(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date_getMilliseconds">
@@ -315,7 +315,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getMilliseconds(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date_getMinutes">
@@ -331,7 +331,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getMinutes(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date_getMonth">
@@ -347,7 +347,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getMonth(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date_getSeconds">
@@ -363,7 +363,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getSeconds(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date_getTime">
@@ -379,7 +379,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getTime(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date_getTimezoneOffset">
@@ -395,7 +395,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getTimezoneOffset(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date_getUTCDate">
@@ -411,7 +411,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getUTCDate(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date_getUTCDay">
@@ -427,7 +427,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getUTCDay(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date_getUTCFullYear">
@@ -443,7 +443,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getUTCFullYear(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date_getUTCHours">
@@ -459,7 +459,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getUTCHours(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date_getUTCMilliseconds">
@@ -475,7 +475,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getUTCMilliseconds(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date_getUTCMinutes">
@@ -491,7 +491,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getUTCMinutes(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date_getUTCMonth">
@@ -507,7 +507,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getUTCMonth(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date_getUTCSeconds">
@@ -523,7 +523,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getUTCSeconds(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date_getVarDate">
@@ -539,7 +539,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getVarDate(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date_getYear">
@@ -555,7 +555,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getYear(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date_parse">
@@ -571,7 +571,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.DateConstructor.parse(System.String)" /> method of the <see cref="T:Microsoft.JScript.DateConstructor" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date_setDate">
@@ -587,7 +587,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setDate(System.Object,System.Double)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date_setFullYear">
@@ -603,7 +603,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setFullYear(System.Object,System.Double,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date_setHours">
@@ -619,7 +619,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setHours(System.Object,System.Double,System.Object,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date_setMilliseconds">
@@ -635,7 +635,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setMilliseconds(System.Object,System.Double)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date_setMinutes">
@@ -651,7 +651,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setMinutes(System.Object,System.Double,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date_setMonth">
@@ -667,7 +667,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setMonth(System.Object,System.Double,System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date_setSeconds">
@@ -683,7 +683,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setSeconds(System.Object,System.Double,System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date_setTime">
@@ -699,7 +699,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setTime(System.Object,System.Double)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date_setUTCDate">
@@ -715,7 +715,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setUTCDate(System.Object,System.Double)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date_setUTCFullYear">
@@ -731,7 +731,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setUTCFullYear(System.Object,System.Double,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date_setUTCHours">
@@ -747,7 +747,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setUTCHours(System.Object,System.Double,System.Object,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date_setUTCMilliseconds">
@@ -763,7 +763,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setUTCMilliseconds(System.Object,System.Double)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date_setUTCMinutes">
@@ -779,7 +779,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setUTCMinutes(System.Object,System.Double,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date_setUTCMonth">
@@ -795,7 +795,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setUTCMonth(System.Object,System.Double,System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date_setUTCSeconds">
@@ -811,7 +811,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setUTCSeconds(System.Object,System.Double,System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date_setYear">
@@ -827,7 +827,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setYear(System.Object,System.Double)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date_toDateString">
@@ -843,7 +843,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.toDateString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date_toGMTString">
@@ -859,7 +859,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.toGMTString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date_toLocaleDateString">
@@ -875,7 +875,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.toLocaleDateString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date_toLocaleString">
@@ -891,7 +891,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.toLocaleString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date_toLocaleTimeString">
@@ -907,7 +907,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.toLocaleTimeString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date_toString">
@@ -923,7 +923,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.toString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date_toTimeString">
@@ -939,7 +939,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.toTimeString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date_toUTCString">
@@ -955,7 +955,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.toUTCString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date_UTC">
@@ -971,7 +971,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.DateConstructor.UTC(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.DateConstructor" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date_valueOf">
@@ -987,7 +987,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.valueOf(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Enumerator_atEnd">
@@ -1003,7 +1003,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.EnumeratorPrototype.atEnd(System.Object)" /> method of the <see cref="T:Microsoft.JScript.EnumeratorPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Enumerator_item">
@@ -1019,7 +1019,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.EnumeratorPrototype.item(System.Object)" /> method of the <see cref="T:Microsoft.JScript.EnumeratorPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Enumerator_moveFirst">
@@ -1035,7 +1035,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.EnumeratorPrototype.moveFirst(System.Object)" /> method of the <see cref="T:Microsoft.JScript.EnumeratorPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Enumerator_moveNext">
@@ -1051,7 +1051,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.EnumeratorPrototype.moveNext(System.Object)" /> method of the <see cref="T:Microsoft.JScript.EnumeratorPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Error_toString">
@@ -1067,7 +1067,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.ErrorPrototype.toString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.ErrorPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Function_apply">
@@ -1083,7 +1083,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.FunctionPrototype.apply(System.Object,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.FunctionPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Function_call">
@@ -1099,7 +1099,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.FunctionPrototype.call(System.Object,System.Object,System.Object[])" /> method of the <see cref="T:Microsoft.JScript.FunctionPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Function_toString">
@@ -1115,7 +1115,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.FunctionPrototype.toString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.FunctionPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Global_CollectGarbage">
@@ -1131,7 +1131,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.CollectGarbage" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Global_decodeURI">
@@ -1147,7 +1147,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.decodeURI(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Global_decodeURIComponent">
@@ -1163,7 +1163,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.decodeURIComponent(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Global_encodeURI">
@@ -1179,7 +1179,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.encodeURI(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Global_encodeURIComponent">
@@ -1195,7 +1195,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.encodeURIComponent(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Global_escape">
@@ -1211,7 +1211,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.escape(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Global_eval">
@@ -1227,7 +1227,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.eval(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Global_GetObject">
@@ -1243,7 +1243,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.GetObject(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Global_isFinite">
@@ -1259,7 +1259,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.isFinite(System.Double)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Global_isNaN">
@@ -1275,7 +1275,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.isNaN(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Global_parseFloat">
@@ -1291,7 +1291,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.parseFloat(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Global_parseInt">
@@ -1307,7 +1307,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.parseInt(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Global_ScriptEngine">
@@ -1323,7 +1323,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.ScriptEngine" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Global_ScriptEngineBuildVersion">
@@ -1339,7 +1339,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.ScriptEngineBuildVersion" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Global_ScriptEngineMajorVersion">
@@ -1355,7 +1355,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.ScriptEngineMajorVersion" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Global_ScriptEngineMinorVersion">
@@ -1371,7 +1371,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.ScriptEngineMinorVersion" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Global_unescape">
@@ -1387,7 +1387,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.unescape(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Math_abs">
@@ -1403,7 +1403,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.MathObject.abs(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Math_acos">
@@ -1419,7 +1419,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.MathObject.acos(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Math_asin">
@@ -1435,7 +1435,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.MathObject.asin(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Math_atan">
@@ -1451,7 +1451,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.MathObject.atan(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Math_atan2">
@@ -1467,7 +1467,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.MathObject.atan2(System.Double,System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Math_ceil">
@@ -1483,7 +1483,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.MathObject.ceil(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Math_cos">
@@ -1499,7 +1499,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.MathObject.cos(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Math_exp">
@@ -1515,7 +1515,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.MathObject.exp(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Math_floor">
@@ -1531,7 +1531,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.MathObject.floor(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Math_log">
@@ -1547,7 +1547,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.MathObject.log(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Math_max">
@@ -1563,7 +1563,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.MathObject.max(System.Object,System.Object,System.Object[])" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Math_min">
@@ -1579,7 +1579,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.MathObject.min(System.Object,System.Object,System.Object[])" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Math_pow">
@@ -1595,7 +1595,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.MathObject.pow(System.Double,System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Math_random">
@@ -1611,7 +1611,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.MathObject.random" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Math_round">
@@ -1627,7 +1627,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.MathObject.round(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Math_sin">
@@ -1643,7 +1643,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.MathObject.sin(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Math_sqrt">
@@ -1659,7 +1659,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.MathObject.sqrt(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Math_tan">
@@ -1675,7 +1675,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.MathObject.tan(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -1691,7 +1691,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No method. This is the default value.</summary>
       </Docs>
     </Member>
     <Member MemberName="Number_toExponential">
@@ -1707,7 +1707,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.NumberPrototype.toExponential(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.NumberPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Number_toFixed">
@@ -1723,7 +1723,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.NumberPrototype.toFixed(System.Object,System.Double)" /> method of the <see cref="T:Microsoft.JScript.NumberPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Number_toLocaleString">
@@ -1739,7 +1739,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.NumberPrototype.toLocaleString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.NumberPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Number_toPrecision">
@@ -1755,7 +1755,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.NumberPrototype.toPrecision(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.NumberPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Number_toString">
@@ -1771,7 +1771,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.NumberPrototype.toString(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.NumberPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Number_valueOf">
@@ -1787,7 +1787,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.NumberPrototype.valueOf(System.Object)" /> method of the <see cref="T:Microsoft.JScript.NumberPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Object_hasOwnProperty">
@@ -1803,7 +1803,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.ObjectPrototype.hasOwnProperty(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.ObjectPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Object_isPrototypeOf">
@@ -1819,7 +1819,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.ObjectPrototype.isPrototypeOf(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.ObjectPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Object_propertyIsEnumerable">
@@ -1835,7 +1835,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.ObjectPrototype.propertyIsEnumerable(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.ObjectPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Object_toLocaleString">
@@ -1851,7 +1851,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.ObjectPrototype.toLocaleString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.ObjectPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Object_toString">
@@ -1867,7 +1867,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.ObjectPrototype.toString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.ObjectPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Object_valueOf">
@@ -1883,7 +1883,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.ObjectPrototype.valueOf(System.Object)" /> method of the <see cref="T:Microsoft.JScript.ObjectPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="RegExp_compile">
@@ -1899,7 +1899,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.RegExpPrototype.compile(System.Object,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.RegExpPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="RegExp_exec">
@@ -1915,7 +1915,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.RegExpPrototype.exec(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.RegExpPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="RegExp_test">
@@ -1931,7 +1931,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.RegExpPrototype.test(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.RegExpPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="RegExp_toString">
@@ -1947,7 +1947,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.RegExpPrototype.toString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.RegExpPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="String_anchor">
@@ -1963,7 +1963,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.anchor(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="String_big">
@@ -1979,7 +1979,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.big(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="String_blink">
@@ -1995,7 +1995,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.blink(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="String_bold">
@@ -2011,7 +2011,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.bold(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="String_charAt">
@@ -2027,7 +2027,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.charAt(System.Object,System.Double)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="String_charCodeAt">
@@ -2043,7 +2043,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.charCodeAt(System.Object,System.Double)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="String_concat">
@@ -2059,7 +2059,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.concat(System.Object,System.Object[])" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="String_fixed">
@@ -2075,7 +2075,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.fixed(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="String_fontcolor">
@@ -2091,7 +2091,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.fontcolor(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="String_fontsize">
@@ -2107,7 +2107,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.fontsize(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="String_fromCharCode">
@@ -2123,7 +2123,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.StringConstructor.fromCharCode(System.Object[])" /> method of the <see cref="T:Microsoft.JScript.StringConstructor" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="String_indexOf">
@@ -2139,7 +2139,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.indexOf(System.Object,System.Object,System.Double)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="String_italics">
@@ -2155,7 +2155,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.italics(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="String_lastIndexOf">
@@ -2171,7 +2171,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.lastIndexOf(System.Object,System.Object,System.Double)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="String_link">
@@ -2187,7 +2187,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.link(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="String_localeCompare">
@@ -2203,7 +2203,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.localeCompare(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="String_match">
@@ -2219,7 +2219,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.match(System.Object,Microsoft.JScript.Vsa.VsaEngine,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="String_replace">
@@ -2235,7 +2235,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.replace(System.Object,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="String_search">
@@ -2251,7 +2251,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.search(System.Object,Microsoft.JScript.Vsa.VsaEngine,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="String_slice">
@@ -2267,7 +2267,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.slice(System.Object,System.Double,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="String_small">
@@ -2283,7 +2283,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.small(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="String_split">
@@ -2299,7 +2299,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.split(System.Object,Microsoft.JScript.Vsa.VsaEngine,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="String_strike">
@@ -2315,7 +2315,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.strike(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="String_sub">
@@ -2331,7 +2331,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.sub(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="String_substr">
@@ -2347,7 +2347,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.substr(System.Object,System.Double,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="String_substring">
@@ -2363,7 +2363,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.substring(System.Object,System.Double,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="String_sup">
@@ -2379,7 +2379,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.sup(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="String_toLocaleLowerCase">
@@ -2395,7 +2395,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.toLocaleLowerCase(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="String_toLocaleUpperCase">
@@ -2411,7 +2411,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.toLocaleUpperCase(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="String_toLowerCase">
@@ -2427,7 +2427,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.toLowerCase(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="String_toString">
@@ -2443,7 +2443,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.toString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="String_toUpperCase">
@@ -2459,7 +2459,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.toUpperCase(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="String_valueOf">
@@ -2475,7 +2475,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.valueOf(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="VBArray_dimensions">
@@ -2491,7 +2491,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.VBArrayPrototype.dimensions(System.Object)" /> method of the <see cref="T:Microsoft.JScript.VBArrayPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="VBArray_getItem">
@@ -2507,7 +2507,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.VBArrayPrototype.getItem(System.Object,System.Object[])" /> method of the <see cref="T:Microsoft.JScript.VBArrayPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="VBArray_lbound">
@@ -2523,7 +2523,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.VBArrayPrototype.lbound(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.VBArrayPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="VBArray_toArray">
@@ -2539,7 +2539,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.VBArrayPrototype.toArray(System.Object,Microsoft.JScript.Vsa.VsaEngine)" /> method of the <see cref="T:Microsoft.JScript.VBArrayPrototype" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="VBArray_ubound">
@@ -2555,7 +2555,7 @@
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The static <see cref="M:Microsoft.JScript.VBArrayPrototype.ubound(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.VBArrayPrototype" /> class.</summary>
       </Docs>
     </Member>
   </Members>

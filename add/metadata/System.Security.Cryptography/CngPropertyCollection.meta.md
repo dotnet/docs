@@ -1,9 +1,13 @@
 ---
 uid: System.Security.Cryptography.CngPropertyCollection
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.CngPropertyCollection.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

@@ -1,39 +1,59 @@
 ---
 uid: System.Diagnostics.PerformanceData.CounterSet
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.PerformanceData.CounterSet.AddCounter
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceData.CounterSet.Finalize
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceData.CounterSet.AddCounter(System.Int32,System.Diagnostics.PerformanceData.CounterType,System.String)
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceData.CounterSet.Dispose(System.Boolean)
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceData.CounterSet.Dispose
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceData.CounterSet.CreateCounterSetInstance(System.String)
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceData.CounterSet.AddCounter(System.Int32,System.Diagnostics.PerformanceData.CounterType)
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceData.CounterSet.#ctor(System.Guid,System.Guid,System.Diagnostics.PerformanceData.CounterSetInstanceType)
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.PerformanceData.CounterSet.Dispose
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---

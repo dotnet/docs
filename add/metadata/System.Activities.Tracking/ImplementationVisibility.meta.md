@@ -1,4 +1,6 @@
 ---
 uid: System.Activities.Tracking.ImplementationVisibility
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

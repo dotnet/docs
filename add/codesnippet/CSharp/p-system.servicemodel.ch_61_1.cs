@@ -1,1 +1,0 @@
-            int replayCacheSize = settings.ReplayCacheSize;

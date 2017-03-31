@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.IValidator
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IValidator.Validate
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IValidator.IsValid
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IValidator.ErrorMessage
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

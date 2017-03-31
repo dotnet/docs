@@ -22,9 +22,18 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">To be added.</param>
-    <param name="e">To be added.</param>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <param name="sender">The source of the event, an <see cref="T:System.Web.UI.MobileControls.ObjectList" />.</param>
+    <param name="e">An <see cref="T:System.Web.UI.MobileControls.ObjectListDataBindEventArgs" /> object that contains the event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Web.UI.MobileControls.ObjectList.ItemDataBind" /> event of an <see cref="T:System.Web.UI.MobileControls.ObjectList" />. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you create an <xref:System.Web.UI.MobileControls.ObjectListDataBindEventHandler> delegate for an <xref:System.Web.UI.MobileControls.ObjectList>, you identify the method that will handle the event. The <xref:System.Web.UI.MobileControls.ObjectList> notifies the handler when an item event is generated (after data binding). To associate the event with your event handler, add an instance of the delegate to the event. Unless you remove the delegate, the event handler is called whenever the event occurs.  
+  
+ You can use this handler to do complex data binding and to set values in the <xref:System.Web.UI.MobileControls.ObjectListItem> object.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

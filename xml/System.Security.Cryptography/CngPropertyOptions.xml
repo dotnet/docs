@@ -24,8 +24,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies Cryptography Next Generation (CNG) key property options.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ These options are used to initialize <xref:System.Security.Cryptography.CngProperty> objects, which are then used in <xref:System.Security.Cryptography.CngKey.SetProperty%2A> calls. You also use these options when you query for the value of properties with the <xref:System.Security.Cryptography.CngKey.GetProperty%2A> method.  
+  
+ Properties must be queried with the <xref:System.Security.Cryptography.CngPropertyOptions> they are stored with. Otherwise, they will not be found.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CustomProperty">
@@ -50,7 +59,7 @@
         <ReturnType>System.Security.Cryptography.CngPropertyOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The property is not specified by CNG. Use this option to avoid future name conflicts with CNG properties.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -75,7 +84,7 @@
         <ReturnType>System.Security.Cryptography.CngPropertyOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The referenced property has no options.</summary>
       </Docs>
     </Member>
     <Member MemberName="Persist">
@@ -100,7 +109,7 @@
         <ReturnType>System.Security.Cryptography.CngPropertyOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The property should be persisted.</summary>
       </Docs>
     </Member>
   </Members>

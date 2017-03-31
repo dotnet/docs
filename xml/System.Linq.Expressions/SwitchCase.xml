@@ -27,8 +27,18 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents one case of a <see cref="T:System.Linq.Expressions.SwitchExpression" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to create an expression that represents a switch statement without a default case by using the <xref:System.Linq.Expressions.Expression.SwitchCase%2A> method.  
+  
+ [!code-csharp[System.Linq.Expressions.ExpressionDev10#34](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/cs/program.cs#34)]
+ [!code-vb[System.Linq.Expressions.ExpressionDev10#34](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/vb/module1.vb#34)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Body">
@@ -55,8 +65,8 @@
         <ReturnType>System.Linq.Expressions.Expression</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the body of this case.</summary>
+        <value>The <see cref="T:System.Linq.Expressions.Expression" /> object that represents the body of the case block.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,8 +94,8 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Linq.Expressions.Expression&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the values of this case. This case is selected for execution when the <see cref="P:System.Linq.Expressions.SwitchExpression.SwitchValue" /> matches any of these values.</summary>
+        <value>The read-only collection of the values for this case block.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,8 +124,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a <see cref="T:System.String" /> that represents the current <see cref="T:System.Object" />.</summary>
+        <returns>A <see cref="T:System.String" /> that represents the current <see cref="T:System.Object" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -147,10 +157,10 @@
         <Parameter Name="body" Type="System.Linq.Expressions.Expression" />
       </Parameters>
       <Docs>
-        <param name="testValues">To be added.</param>
-        <param name="body">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="testValues">The <see cref="P:System.Linq.Expressions.SwitchCase.TestValues" /> property of the result.</param>
+        <param name="body">The <see cref="P:System.Linq.Expressions.SwitchCase.Body" /> property of the result.</param>
+        <summary>Creates a new expression that is like this one, but using the supplied children. If all of the children are the same, it will return this expression.</summary>
+        <returns>This expression if no children are changed or an expression with the updated children.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

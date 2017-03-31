@@ -1,4 +1,4 @@
 ---
 uid: System.Windows.Xps.Packaging.PackageInterleavingOrder
-internalonly: False
+manager: "leannef"
 ---

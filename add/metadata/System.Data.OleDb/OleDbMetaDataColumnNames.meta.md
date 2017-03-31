@@ -1,24 +1,34 @@
 ---
 uid: System.Data.OleDb.OleDbMetaDataColumnNames
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OleDb.OleDbMetaDataColumnNames.BooleanFalseLiteral
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OleDb.OleDbMetaDataColumnNames.BooleanTrueLiteral
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OleDb.OleDbMetaDataColumnNames.NativeDataType
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OleDb.OleDbMetaDataColumnNames.DateTimeDigits
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

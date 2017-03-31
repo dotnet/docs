@@ -1,34 +1,41 @@
 ---
 uid: System.IdentityModel.Services.HttpModuleBase
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.HttpModuleBase.Dispose
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.HttpModuleBase.InitializeModule(System.Web.HttpApplication)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.HttpModuleBase.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.HttpModuleBase.Init(System.Web.HttpApplication)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.HttpModuleBase.FederationConfiguration
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.HttpModuleBase.InitializePropertiesFromConfiguration
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

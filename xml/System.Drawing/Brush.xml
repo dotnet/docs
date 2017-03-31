@@ -18,8 +18,18 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines objects used to fill the interiors of graphical shapes such as rectangles, ellipses, pies, polygons, and paths.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an abstract base class and cannot be instantiated. To create a brush object, use classes derived from <xref:System.Drawing.Brush>, such as <xref:System.Drawing.SolidBrush>, <xref:System.Drawing.TextureBrush>, and <xref:System.Drawing.Drawing2D.LinearGradientBrush>.  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>When you inherit from the <see cref="T:System.Drawing.Brush" /> class, you must override the <see cref="M:System.Drawing.Brush.Clone" /> method.</para>
+    </block>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,7 +43,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Brush" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +61,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>When overridden in a derived class, creates an exact copy of this <see cref="T:System.Drawing.Brush" />.</summary>
+        <returns>The new <see cref="T:System.Drawing.Brush" /> that this method creates.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,8 +80,20 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Releases all resources used by this <see cref="T:System.Drawing.Brush" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling <xref:System.Drawing.Brush.Dispose%2A> allows the resources used by this <xref:System.Drawing.Brush> object to be reallocated for other purposes.  
+  
+ Call <xref:System.Drawing.Brush.Dispose%2A> when you are finished using the <xref:System.Drawing.Brush>. The <xref:System.Drawing.Brush.Dispose%2A> method leaves the <xref:System.Drawing.Brush> in an unusable state. After calling <xref:System.Drawing.Brush.Dispose%2A>, you must release all references to the <xref:System.Drawing.Brush> so the garbage collector can reclaim the memory that the <xref:System.Drawing.Brush> was occupying. For more information, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+  
+> [!NOTE]
+>  Always call <xref:System.Drawing.Brush.Dispose%2A> before you release your last reference to the <xref:System.Drawing.Brush>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Drawing.Brush> object's `Finalize` method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -90,9 +112,25 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Drawing.Brush" /> and optionally releases the managed resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the public `Dispose()`method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+  
+ When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.Drawing.Brush> references. This method invokes the `Dispose()` method of each referenced object.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean) " />be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement<see langword=" Dispose(Boolean)" />, see [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+  
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -109,7 +147,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,8 +167,8 @@
         <Parameter Name="brush" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="brush">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="brush">A pointer to the [!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)] brush object.</param>
+        <summary>In a derived class, sets a reference to a [!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)] brush object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

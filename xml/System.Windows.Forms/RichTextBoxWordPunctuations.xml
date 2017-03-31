@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the types of punctuation tables that can be used with the <see cref="T:System.Windows.Forms.RichTextBox" /> control's word-wrapping and word-breaking features.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Windows.Forms.RichTextBoxWordPunctuations</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Used as a mask.</summary>
       </Docs>
     </Member>
     <Member MemberName="Custom">
@@ -43,7 +43,7 @@
         <ReturnType>System.Windows.Forms.RichTextBoxWordPunctuations</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use a custom defined punctuation table.</summary>
       </Docs>
     </Member>
     <Member MemberName="Level1">
@@ -59,7 +59,7 @@
         <ReturnType>System.Windows.Forms.RichTextBoxWordPunctuations</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use pre-defined Level 1 punctuation table as default.</summary>
       </Docs>
     </Member>
     <Member MemberName="Level2">
@@ -75,7 +75,7 @@
         <ReturnType>System.Windows.Forms.RichTextBoxWordPunctuations</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use pre-defined Level 2 punctuation table as default.</summary>
       </Docs>
     </Member>
   </Members>

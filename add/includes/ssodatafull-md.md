@@ -1,1 +1,0 @@
-Open Data Protocol (OData)

@@ -20,8 +20,27 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a user annotation in the [!INCLUDE[TLA#tla_caf](~/includes/tlasharptla-caf-md.md)].</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Annotations.Annotation> represents a single annotation with all associated anchoring and content data.  An annotation consists of the following main elements.  
+  
+-   Zero, one, or more <xref:System.Windows.Annotations.Annotation.Anchors%2A> that identify what is being annotated.  
+  
+-   Zero, one, or more <xref:System.Windows.Annotations.Annotation.Cargos%2A> that contain the user data for the annotation.  
+  
+-   Zero, one, or more <xref:System.Windows.Annotations.Annotation.Authors%2A> that define who created the annotation.  
+  
+-   A <xref:System.Windows.Annotations.Annotation.CreationTime%2A> that specifies the date and time when the annotation was created.  
+  
+-   A <xref:System.Windows.Annotations.Annotation.LastModificationTime%2A> that specifies when the annotation was last updated.  
+  
+-   A unique annotation <xref:System.Windows.Annotations.Annotation.Id%2A> (a [!INCLUDE[TLA#tla_guid](~/includes/tlasharptla-guid-md.md)]).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,8 +54,17 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>This constructor supports the [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Applications should not use the default constructor without parameters–the default constructor does not fully initialize the instance. To create a new <xref:System.Windows.Annotations.Annotation> applications should use one of the parameter-based constructors.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -52,8 +80,8 @@
         <Parameter Name="annotationType" Type="System.Xml.XmlQualifiedName" />
       </Parameters>
       <Docs>
-        <param name="annotationType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="annotationType">The type name of the annotation.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Annotations.Annotation" /> class that has a specified type name and namespace.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,12 +101,21 @@
         <Parameter Name="lastModificationTime" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="annotationType">To be added.</param>
-        <param name="id">To be added.</param>
-        <param name="creationTime">To be added.</param>
-        <param name="lastModificationTime">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="annotationType">The type name of the annotation.</param>
+        <param name="id">The [!INCLUDE[TLA#tla_guid](~/includes/tlasharptla-guid-md.md)] for the annotation.</param>
+        <param name="creationTime">The date and time the annotation was first created.</param>
+        <param name="lastModificationTime">The date and time the annotation was last modified.</param>
+        <summary>This constructor supports the [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  This constructor is used by the [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] serialization infrastructure and should not be used directly under ordinary circumstances.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AnchorChanged">
@@ -94,8 +131,15 @@
         <ReturnType>System.Windows.Annotations.AnnotationResourceChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when an anchor is added, removed, or modified in the list of annotation <see cref="P:System.Windows.Annotations.Annotation.Anchors" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In addition to when an anchor is added or removed, <xref:System.Windows.Annotations.Annotation.AnchorChanged> occurs on any modifications to an anchor subpart, such as a change to a <xref:System.Windows.Annotations.ContentLocatorPart>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Anchors">
@@ -111,9 +155,18 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Windows.Annotations.AnnotationResource&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of zero or more <see cref="T:System.Windows.Annotations.AnnotationResource" /> anchor elements that define the data selection(s) being annotated.</summary>
+        <value>A collection of zero or more <see cref="T:System.Windows.Annotations.AnnotationResource" /> anchor elements.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each <xref:System.Windows.Annotations.AnnotationResource> in the <xref:System.Windows.Annotations.Annotation.Anchors%2A> collection identifies a data selection to which the annotation is bound (in other words, "the data selection that is being annotated").  While most annotations refer to a single data selection and contain just one anchor <xref:System.Windows.Annotations.AnnotationResource>, multiple anchors can occur if a single annotation refers to multiple data selections.  
+  
+ The returned <xref:System.Windows.Annotations.Annotation.Anchors%2A> collection is never null; however, the collection may contain zero elements.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AnnotationType">
@@ -129,9 +182,19 @@
         <ReturnType>System.Xml.XmlQualifiedName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Xml.XmlQualifiedName" /> of the annotation type.</summary>
+        <value>The XML qualified name for this kind of annotation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The returned annotation type is the <xref:System.Xml.XmlQualifiedName> name passed as a parameter to the <xref:System.Windows.Annotations.Annotation.%23ctor%2A> constructor.  
+  
+> [!NOTE]
+>  <xref:System.Windows.Annotations.Annotation.AnnotationType%2A> returns `null` if the annotation was incorrectly constructed by using a default constructor without parameters.  (The default constructor without parameters does not fully initialize the instance and is used only internally in combination with XML serialization.)  To create a new annotation, applications should use the <xref:System.Windows.Annotations.Annotation.%23ctor%2A> constructor that takes an <xref:System.Xml.XmlQualifiedName> as a parameter.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AuthorChanged">
@@ -147,7 +210,7 @@
         <ReturnType>System.Windows.Annotations.AnnotationAuthorChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when an author is added, removed, or modified in the list of annotation <see cref="P:System.Windows.Annotations.Annotation.Authors" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -164,9 +227,16 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of zero or more author strings that identify who created the <see cref="T:System.Windows.Annotations.Annotation" />.</summary>
+        <value>A collection of zero or more author strings.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The returned <xref:System.Windows.Annotations.Annotation.Authors%2A> collection is never `null`; however, the collection can contain zero elements if no author is specified.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CargoChanged">
@@ -182,8 +252,15 @@
         <ReturnType>System.Windows.Annotations.AnnotationResourceChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a cargo is added, removed, or modified in the list of annotation <see cref="P:System.Windows.Annotations.Annotation.Cargos" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In addition to when a cargo is added or removed, <xref:System.Windows.Annotations.Annotation.CargoChanged> occurs on any modification to a cargo subpart, such as a change to an <xref:System.Xml.XmlElement> in the <xref:System.Windows.Annotations.AnnotationResource.Contents%2A> collection of a cargo.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Cargos">
@@ -199,9 +276,18 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Windows.Annotations.AnnotationResource&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of zero or more <see cref="T:System.Windows.Annotations.AnnotationResource" /> cargo elements that contain data for the annotation.</summary>
+        <value>A collection of zero or more <see cref="T:System.Windows.Annotations.AnnotationResource" /> cargo elements.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each <xref:System.Windows.Annotations.AnnotationResource> in the <xref:System.Windows.Annotations.Annotation.Cargos%2A> collection contains user-defined data for the annotation.  
+  
+ The returned <xref:System.Windows.Annotations.Annotation.Cargos%2A> collection is never null; however, the collection may contain zero elements if there is no user data for the annotation.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreationTime">
@@ -217,9 +303,18 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the date and the time that the annotation was created.</summary>
+        <value>The date and the time the annotation was created.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  <xref:System.Windows.Annotations.Annotation.CreationTime%2A> returns             <xref:System.DateTime?displayProperty=fullName> if the annotation was incorrectly created by using the default <xref:System.Windows.Annotations.Annotation> constructor without parameters.  An <xref:System.Windows.Annotations.Annotation> constructor with parameters should be used to correctly instantiate a new annotation.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSchema">
@@ -236,8 +331,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Always returns <see langword="null" />.  See [Annotations Schema](../Topic/Annotations%20Schema.md) for schema details.</summary>
+        <returns>Always <see langword="null" />.  See [Annotations Schema](../Topic/Annotations%20Schema.md) for schema details.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -254,9 +349,18 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the [!INCLUDE[TLA#tla_guid](~/includes/tlasharptla-guid-md.md)] of the <see cref="T:System.Windows.Annotations.Annotation" />.</summary>
+        <value>The [!INCLUDE[TLA2#tla_guid](~/includes/tla2sharptla-guid-md.md)] of the annotation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  <xref:System.Windows.Annotations.Annotation.Id%2A> returns <xref:System.Guid> if the annotation was instantiated by using the default <xref:System.Windows.Annotations.Annotation> constructor without parameters.  An <xref:System.Windows.Annotations.Annotation> constructor with parameters should be used to correctly instantiate a new annotation with a valid [!INCLUDE[TLA2#tla_guid](~/includes/tla2sharptla-guid-md.md)].  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LastModificationTime">
@@ -272,8 +376,8 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the date and the time that the annotation was last modified.</summary>
+        <value>The date and the time the annotation was last modified.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -293,9 +397,12 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="reader">The XML reader to use to deserialize the annotation.</param>
+        <summary>Deserializes the <see cref="T:System.Windows.Annotations.Annotation" /> from a specified <see cref="T:System.Xml.XmlReader" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Xml.XmlException">The serialized XML for the <see cref="T:System.Windows.Annotations.Annotation" /> is not valid.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteXml">
@@ -314,9 +421,12 @@
         <Parameter Name="writer" Type="System.Xml.XmlWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The XML writer to use to serialize the annotation.</param>
+        <summary>Serializes the annotation to a specified <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="writer" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Windows.Annotations.Annotation.AnnotationType" /> is not valid.</exception>
       </Docs>
     </Member>
   </Members>

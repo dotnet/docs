@@ -23,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a managed install.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,7 +38,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.Install.ManagedInstallerClass" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,8 +58,8 @@
         <Parameter Name="args" Type="System.String[]" />
       </Parameters>
       <Docs>
-        <param name="args">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="args">The arguments passed to the Installer Tool.</param>
+        <summary>Handles the functionality of the [Installutil.exe (Installer Tool)](../Topic/Installutil.exe%20\(Installer%20Tool\).md).</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,11 +80,18 @@
         <Parameter Name="hInstall" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="argString">To be added.</param>
-        <param name="hInstall">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="argString">The command line to install.</param>
+        <param name="hInstall">The handle to the installation.</param>
+        <summary>For a description of this member, see <see cref="M:System.Configuration.Install.IManagedInstaller.ManagedInstall(System.String,System.Int32)" />.</summary>
+        <returns>The return code for installutil.exe. A successful installation returns 0. Other values indicate failure.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Configuration.Install.ManagedInstallerClass> instance is cast to an <xref:System.Configuration.Install.IManagedInstaller> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

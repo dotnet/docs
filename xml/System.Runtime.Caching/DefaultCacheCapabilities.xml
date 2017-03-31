@@ -15,8 +15,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a set of features that a cache implementation provides.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Caching.DefaultCacheCapabilities> class is a flag enumeration. The field values are bits and can be combined as a set of flags that describe the capabilities of the cache.  
+  
+ The <xref:System.Runtime.Caching.DefaultCacheCapabilities> enumeration can be used to programmatically set the behavior of the cache implementation. This behavior is based on the combination of features that a particular cache implements.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AbsoluteExpirations">
@@ -32,7 +41,7 @@
         <ReturnType>System.Runtime.Caching.DefaultCacheCapabilities</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A cache implementation supports the ability to automatically remove cache entries at a specific date and time.</summary>
       </Docs>
     </Member>
     <Member MemberName="CacheEntryChangeMonitors">
@@ -48,7 +57,7 @@
         <ReturnType>System.Runtime.Caching.DefaultCacheCapabilities</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A cache implementation supports the ability to create change monitors that monitor entries.</summary>
       </Docs>
     </Member>
     <Member MemberName="CacheEntryRemovedCallback">
@@ -64,7 +73,7 @@
         <ReturnType>System.Runtime.Caching.DefaultCacheCapabilities</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A cache implementation can raise a notification that an entry has been removed from the cache.</summary>
       </Docs>
     </Member>
     <Member MemberName="CacheEntryUpdateCallback">
@@ -80,7 +89,7 @@
         <ReturnType>System.Runtime.Caching.DefaultCacheCapabilities</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A cache implementation can raise a notification that an entry is about to be removed from the cache. This setting also indicates that a cache implementation supports the ability to automatically replace the entry that is being removed with a new cache entry.</summary>
       </Docs>
     </Member>
     <Member MemberName="CacheRegions">
@@ -96,7 +105,7 @@
         <ReturnType>System.Runtime.Caching.DefaultCacheCapabilities</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A cache implementation supports the ability to partition its storage into cache regions, and supports the ability to insert cache entries into those regions and to retrieve cache entries from those regions.</summary>
       </Docs>
     </Member>
     <Member MemberName="InMemoryProvider">
@@ -112,7 +121,7 @@
         <ReturnType>System.Runtime.Caching.DefaultCacheCapabilities</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A cache implementation runs at least partially in memory. A distributed cache would not set this flag, whereas an in-memory cache such as the <see cref="T:System.Runtime.Caching.MemoryCache" /> class would do so.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -128,7 +137,7 @@
         <ReturnType>System.Runtime.Caching.DefaultCacheCapabilities</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A cache implementation does not provide any of the features that are described in the <see cref="T:System.Runtime.Caching.DefaultCacheCapabilities" /> enumeration.</summary>
       </Docs>
     </Member>
     <Member MemberName="OutOfProcessProvider">
@@ -144,7 +153,7 @@
         <ReturnType>System.Runtime.Caching.DefaultCacheCapabilities</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A cache implementation runs out-of-process. A distributed cache would set this flag, whereas an in-memory cache such as the <see cref="T:System.Runtime.Caching.MemoryCache" /> class would not.</summary>
       </Docs>
     </Member>
     <Member MemberName="SlidingExpirations">
@@ -160,7 +169,7 @@
         <ReturnType>System.Runtime.Caching.DefaultCacheCapabilities</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A cache implementation supports the ability to automatically remove cache entries that have not been accessed in a specified time span.</summary>
       </Docs>
     </Member>
   </Members>

@@ -12,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains helper methods for using the MEF attributed programming model with composition.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,11 +37,11 @@
         <Parameter Name="exportedValue" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="batch">To be added.</param>
-        <param name="exportedValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of the new part.</typeparam>
+        <param name="batch">The batch to add to.</param>
+        <param name="exportedValue">The value to add.</param>
+        <summary>Creates a part from the specified value and adds it to the specified batch.</summary>
+        <returns>The new part.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,12 +67,12 @@
         <Parameter Name="exportedValue" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="batch">To be added.</param>
-        <param name="contractName">To be added.</param>
-        <param name="exportedValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of the new part.</typeparam>
+        <param name="batch">The batch to add to.</param>
+        <param name="contractName">The contract name of the export.</param>
+        <param name="exportedValue">The value to add.</param>
+        <summary>Creates a part from the specified value and adds it to the specified batch with the specified contract name.</summary>
+        <returns>The new part.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,10 +94,10 @@
         <Parameter Name="attributedPart" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="batch">To be added.</param>
-        <param name="attributedPart">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="batch">The batch to add to.</param>
+        <param name="attributedPart">The object to add.</param>
+        <summary>Creates a composable part from the specified attributed object, and adds it to the specified composition batch.</summary>
+        <returns>The new part.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,10 +122,10 @@
         <Parameter Name="exportedValue" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="container">To be added.</param>
-        <param name="exportedValue">To be added.</param>
-        <summary>To be added.</summary>
+        <typeparam name="T">The type of the new part.</typeparam>
+        <param name="container">The composition container to perform composition in.</param>
+        <param name="exportedValue">The value to compose.</param>
+        <summary>Creates a part from the specified value and composes it in the specified composition container.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,11 +151,11 @@
         <Parameter Name="exportedValue" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="container">To be added.</param>
-        <param name="contractName">To be added.</param>
-        <param name="exportedValue">To be added.</param>
-        <summary>To be added.</summary>
+        <typeparam name="T">The type of the new part.</typeparam>
+        <param name="container">The composition container to perform composition in.</param>
+        <param name="contractName">The contract name to export the part under.</param>
+        <param name="exportedValue">The value to compose.</param>
+        <summary>Creates a part from the specified object under the specified contract name and composes it in the specified composition container.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -183,9 +183,9 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="container">To be added.</param>
-        <param name="attributedParts">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="container">The composition container to perform composition in.</param>
+        <param name="attributedParts">An array of attributed objects to compose.</param>
+        <summary>Creates composable parts from an array of attributed objects and composes them in the specified composition container.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -206,9 +206,9 @@
         <Parameter Name="attributedPart" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="attributedPart">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="attributedPart">The attributed object.</param>
+        <summary>Creates a composable part from the specified attributed object.</summary>
+        <returns>The created part.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -230,10 +230,10 @@
         <Parameter Name="attributedPart" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="partDefinition">To be added.</param>
-        <param name="attributedPart">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="partDefinition">The definition of the new part.</param>
+        <param name="attributedPart">The attributed object.</param>
+        <summary>Creates a composable part from the specified attributed object, using the specified part definition.</summary>
+        <returns>The created part.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -255,11 +255,13 @@
         <Parameter Name="reflectionContext" Type="System.Reflection.ReflectionContext" />
       </Parameters>
       <Docs>
-        <param name="attributedPart">To be added.</param>
-        <param name="reflectionContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="attributedPart">The attributed object.</param>
+        <param name="reflectionContext">The reflection context for the part.</param>
+        <summary>Creates a composable part from the specified attributed object, using the specified reflection context.</summary>
+        <returns>The created part.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reflectionContext" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreatePartDefinition">
@@ -280,10 +282,10 @@
         <Parameter Name="origin" Type="System.ComponentModel.Composition.Primitives.ICompositionElement" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <param name="origin">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="type">The type of the definition.</param>
+        <param name="origin">The origin of the definition.</param>
+        <summary>Creates a part definition with the specified type and origin.</summary>
+        <returns>The new part definition.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -306,11 +308,11 @@
         <Parameter Name="ensureIsDiscoverable" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <param name="origin">To be added.</param>
-        <param name="ensureIsDiscoverable">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="type">The type of the definition.</param>
+        <param name="origin">The origin of the definition.</param>
+        <param name="ensureIsDiscoverable">A value indicating whether or not the new definition should be discoverable.</param>
+        <summary>Creates a part definition with the specified type and origin.</summary>
+        <returns>The new part definition.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -332,10 +334,11 @@
         <Parameter Name="contractType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="part">To be added.</param>
-        <param name="contractType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="part">The part to search.</param>
+        <param name="contractType">The contract type.</param>
+        <summary>Returns a value that indicates whether the specified part contains an export that matches the specified contract type.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="part" /> contains an export definition that matches <paramref name="contractType" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -359,10 +362,11 @@
         <Parameter Name="part" Type="System.ComponentModel.Composition.Primitives.ComposablePartDefinition" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="part">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The contract type.</typeparam>
+        <param name="part">The part to search.</param>
+        <summary>Returns a value that indicates whether the specified part contains an export that matches the specified contract type.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="part" /> contains an export definition of type <paramref name="T" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -383,9 +387,9 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="type">The type to use.</param>
+        <summary>Gets a canonical contract name for the specified type.</summary>
+        <returns>A contract name created from the specified type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -409,10 +413,10 @@
         <Parameter Name="metadata" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TMetadataView">To be added.</typeparam>
-        <param name="metadata">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TMetadataView">The type of the metadata view object to get.</typeparam>
+        <param name="metadata">A collection of loose metadata.</param>
+        <summary>Gets a metadata view object from a dictionary of loose metadata.</summary>
+        <returns>A metadata view containing the specified metadata.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -433,9 +437,9 @@
         <Parameter Name="method" Type="System.Reflection.MethodInfo" />
       </Parameters>
       <Docs>
-        <param name="method">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="method">The method to examine.</param>
+        <summary>Gets the unique identifier for the specified method.</summary>
+        <returns>The unique identifier for the method.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -456,9 +460,9 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="type">The type to examine.</param>
+        <summary>Gets the unique identifier for the specified type.</summary>
+        <returns>The unique identifier for the type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -480,10 +484,11 @@
         <Parameter Name="contractType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="part">To be added.</param>
-        <param name="contractType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="part">The part to search.</param>
+        <param name="contractType">The contract type.</param>
+        <summary>Returns a value that indicates whether the specified part contains an import that matches the specified contract type.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="part" /> contains an import definition that matches <paramref name="contractType" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -506,11 +511,12 @@
         <Parameter Name="importCardinality" Type="System.ComponentModel.Composition.Primitives.ImportCardinality" />
       </Parameters>
       <Docs>
-        <param name="part">To be added.</param>
-        <param name="contractType">To be added.</param>
-        <param name="importCardinality">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="part">The part to search.</param>
+        <param name="contractType">The contract type.</param>
+        <param name="importCardinality">The import cardinality.</param>
+        <summary>Returns a value that indicates whether the specified part contains an import that matches the specified contract type and import cardinality.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="part" /> contains an import definition that matches <paramref name="contractType" /> and <paramref name="importCardinality" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -534,10 +540,11 @@
         <Parameter Name="part" Type="System.ComponentModel.Composition.Primitives.ComposablePartDefinition" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="part">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The contract type.</typeparam>
+        <param name="part">The part to search.</param>
+        <summary>Returns a value that indicates whether the specified part contains an import that matches the specified contract type.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="part" /> contains an import definition of type <paramref name="T" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -562,11 +569,12 @@
         <Parameter Name="importCardinality" Type="System.ComponentModel.Composition.Primitives.ImportCardinality" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="part">To be added.</param>
-        <param name="importCardinality">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The contract type.</typeparam>
+        <param name="part">The part to search.</param>
+        <param name="importCardinality">The import cardinality.</param>
+        <summary>Returns a value that indicates whether the specified part contains an import that matches the specified contract type and import cardinality.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="part" /> contains an import definition of type <paramref name="T" /> that has the specified import cardinality; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -588,11 +596,18 @@
         <Parameter Name="attributedPart" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="compositionService">To be added.</param>
-        <param name="attributedPart">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="compositionService">The composition service to use.</param>
+        <param name="attributedPart">The part to compose.</param>
+        <summary>Composes the specified part by using the specified composition service, with recomposition disabled.</summary>
+        <returns>The composed part.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Unlike ordinary composition, parts composed with this method are not guaranteed to remain valid if the catalog behind`compositionService` changes.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SatisfyImportsOnce">
@@ -614,12 +629,14 @@
         <Parameter Name="reflectionContext" Type="System.Reflection.ReflectionContext" />
       </Parameters>
       <Docs>
-        <param name="compositionService">To be added.</param>
-        <param name="attributedPart">To be added.</param>
-        <param name="reflectionContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="compositionService">The composition service to use.</param>
+        <param name="attributedPart">The part to compose.</param>
+        <param name="reflectionContext">The reflection context for the part.</param>
+        <summary>Composes the specified part by using the specified composition service, with recomposition disabled and using the specified reflection context.</summary>
+        <returns>The composed part.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reflectionContext" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

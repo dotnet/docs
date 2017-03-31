@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides the functionality to throw an exception from the <see cref="M:System.Activities.Presentation.Metadata.AttributeTableBuilder.ValidateTable" /> method if the metadata provided in the table does not match properties, methods, and events on real types.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_AttributeTableValidationException#0](WFD_AttributeTableValidationException#0)]  -->  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Presentation.Metadata.AttributeTableValidationException" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +50,8 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">A message about the exception that is provided to the user.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Presentation.Metadata.AttributeTableValidationException" /> class with a specified message about the exception.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,10 +69,17 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="info">The serialization store.</param>
+        <param name="context">The serialization context.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Presentation.Metadata.AttributeTableValidationException" /> class that uses a specified serialization store and context.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used during serialization to deserialize an exception.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -82,9 +96,9 @@
         <Parameter Name="validationErrors" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="validationErrors">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">A message about the exception that is provided to the user.</param>
+        <param name="validationErrors">Zero or more errors that occurred during validation.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Presentation.Metadata.AttributeTableValidationException" /> class with a message for the user and an enumeration of validation errors that have occurred.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,9 +116,9 @@
         <Parameter Name="inner" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="inner">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">A message about the exception that is provided to the user.</param>
+        <param name="inner">The error that caused the current exception.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Presentation.Metadata.AttributeTableValidationException" /> class with a specified message for the user and the error that caused the current exception.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,10 +137,10 @@
         <Parameter Name="validationErrors" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="inner">To be added.</param>
-        <param name="validationErrors">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">A message about the exception that is provided to the user.</param>
+        <param name="inner">The error that caused the current exception.</param>
+        <param name="validationErrors">Zero or more errors that occurred during validation.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Presentation.Metadata.AttributeTableValidationException" /> class with the specified message for the user, the error that caused the current exception, and an enumeration of errors that occurred during validation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -147,9 +161,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">The serialization store.</param>
+        <param name="context">The serialization context.</param>
+        <summary>Performs serialization.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -166,8 +180,8 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an enumeration of validation errors.</summary>
+        <value>An enumeration of validation errors.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

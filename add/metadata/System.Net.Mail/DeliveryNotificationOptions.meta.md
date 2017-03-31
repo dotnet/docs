@@ -1,4 +1,5 @@
 ---
 uid: System.Net.Mail.DeliveryNotificationOptions
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

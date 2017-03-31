@@ -16,8 +16,23 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains a set of <see cref="T:System.Web.Configuration.ProfilePropertySettingsCollection" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `profile` section of the configuration file specifies a schema for user profiles. At run time, the ASP.NET compilation system uses the information specified in the `profile` section to generate a class called `ProfileCommon`, which is derived from <xref:System.Web.Profile.ProfileBase>. The `ProfileCommon` class definition is based on the properties defined in the `properties` subsection of the `profile` section of the configuration file. An instance of this class is created for each user profile, and you can access the individual profile values in your code through the <xref:System.Web.HttpContext.Profile%2A> property. For more information about profile properties, see [ASP.NET Profile Properties Overview](../Topic/ASP.NET%20Profile%20Properties%20Overview.md). For more information about the profile features added to [!INCLUDE[vstecasplong](~/includes/vstecasplong-md.md)], see [ASP.NET Profile Properties Overview](../Topic/ASP.NET%20Profile%20Properties%20Overview.md).  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.ProfileGroupSettings.PropertySettings%2A> property, which is an instance of the <xref:System.Web.Configuration.ProfilePropertySettingsCollection> class. This code example is part of a larger example provided for the <xref:System.Web.Configuration.ProfileSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.ProfileSection#12](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.ProfileSection/CS/profilesection.cs#12)]
+ [!code-vb[System.Web.Configuration.ProfileSection#12](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.ProfileSection/VB/profilesection.vb#12)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +46,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.Web.Configuration.ProfilePropertySettingsCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,9 +66,25 @@
         <Parameter Name="propertySettings" Type="System.Web.Configuration.ProfilePropertySettings" />
       </Parameters>
       <Docs>
-        <param name="propertySettings">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="propertySettings">A <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> object to add to the collection.</param>
+        <summary>Adds a <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> object to the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The collection must not already contain a <xref:System.Web.Configuration.ProfilePropertySettings> object with the same name.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.ProfilePropertySettingsCollection.Add%2A> method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.ProfileSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.ProfileSection#22](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.ProfileSection/CS/profilesection.cs#22)]
+ [!code-vb[System.Web.Configuration.ProfileSection#22](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.ProfileSection/VB/profilesection.vb#22)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Configuration.ConfigurationException">The <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> object to add already exists in the collection or the collection is read only.</exception>
       </Docs>
     </Member>
     <Member MemberName="AllKeys">
@@ -69,8 +100,8 @@
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns an array containing the names of all the <see cref="T:System.Web.Configuration.ProfileSection" /> objects contained in the collection.</summary>
+        <value>An array containing the names of all the <see cref="T:System.Web.Configuration.ProfileSection" /> objects contained in the collection or an empty array if the collection is empty.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,8 +118,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the &lt;clear&gt; element is valid as a <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> object.</summary>
+        <value>
+          <see langword="false" /> in all cases.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,8 +138,23 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Removes all <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> objects from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method inserts a `clear` directive into the appropriate section of the configuration file to clear all references to elements defined in a higher-level configuration file. All elements defined in the appropriate section of the current configuration file are removed.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.ProfilePropertySettingsCollection.Clear%2A> method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.ProfileSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.ProfileSection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.ProfileSection/CS/profilesection.cs#2)]
+ [!code-vb[System.Web.Configuration.ProfileSection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.ProfileSection/VB/profilesection.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateNewElement">
@@ -124,8 +171,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>When overridden in a derived class, creates a new <see cref="T:System.Configuration.ConfigurationElement" />.</summary>
+        <returns>A new <see cref="T:System.Configuration.ConfigurationElement" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -145,9 +192,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="index">The index of the <see cref="T:System.Web.Configuration.ProfileSection" /> to get.</param>
+        <summary>Returns the <see cref="T:System.Web.Configuration.ProfileSection" /> object at the specified index.</summary>
+        <returns>The <see cref="T:System.Web.Configuration.ProfileSection" /> object at the specified index, or <see langword="null" /> if there is no object at that index.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,9 +214,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the <see cref="T:System.Web.Configuration.ProfileSection" /> to get.</param>
+        <summary>Returns the <see cref="T:System.Web.Configuration.ProfileSection" /> object with the specified name.</summary>
+        <returns>The <see cref="T:System.Web.Configuration.ProfileSection" /> object with the specified name, or <see langword="null" /> if the name does not exist.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -189,9 +236,9 @@
         <Parameter Name="element" Type="System.Configuration.ConfigurationElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">A <see cref="T:System.Configuration.ConfigurationElement" /> in the collection.</param>
+        <summary>Gets the key for the specified configuration element.</summary>
+        <returns>The name of the element.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -211,10 +258,17 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="index">The index of a <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> in the collection.</param>
+        <summary>Gets the name of the <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> at the specified index location.</summary>
+        <returns>The name of the <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> at the specified index location.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An object at the index must exist in the collection.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -233,9 +287,9 @@
         <Parameter Name="propertySettings" Type="System.Web.Configuration.ProfilePropertySettings" />
       </Parameters>
       <Docs>
-        <param name="propertySettings">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="propertySettings">A <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> object in the collection.</param>
+        <summary>Returns the index of the specified <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> object.</summary>
+        <returns>The index of the specified <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> object, or -1 if the object is not found in the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -255,9 +309,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The index of a <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> object in the collection.</param>
+        <summary>Gets or sets the <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> object at the specified index location.</summary>
+        <value>The <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> object at the specified index location.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -277,9 +331,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="name">The name of a <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> object in the collection.</param>
+        <summary>Gets or sets the <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> object with the specified name.</summary>
+        <value>The <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> object with the specified name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -300,11 +354,25 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="elementName">To be added.</param>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="elementName">The name of the unrecognized element.</param>
+        <param name="reader">An input stream that reads XML from the configuration file.</param>
+        <summary>Handles the reading of unrecognized configuration elements from a configuration file and causes the configuration system to throw an exception if the element cannot be handled.</summary>
+        <returns>
+          <see langword="true" /> if the unrecognized element was deserialized successfully; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This implementation of <xref:System.Web.Configuration.ProfilePropertySettingsCollection.OnDeserializeUnrecognizedElement%2A> throws specialized errors if the element name is either "clear" or "group".  After checking for these conditions, the method then explicitly calls its base implementation, the <xref:System.Configuration.ConfigurationElementCollection.OnDeserializeUnrecognizedElement%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">
+          <paramref name="elementName" /> equals "clear"  
+  
+ \- or -  
+  
+ <paramref name="elementName" /> equals "group".</exception>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -320,8 +388,8 @@
         <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of configuration properties.</summary>
+        <value>A collection of configuration properties.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -341,9 +409,33 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of a <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> object to remove from the collection.</param>
+        <summary>Removes a <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> object from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method inserts a `remove` element into the appropriate section of the configuration file for any element defined in a higher-level configuration file. If the element is defined in the appropriate section of the current configuration file, its entry is removed from the configuration file. The object to remove must exist in the collection.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.ProfilePropertySettingsCollection.Remove%2A> method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.ProfileSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.ProfileSection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.ProfileSection/CS/profilesection.cs#1)]
+ [!code-vb[System.Web.Configuration.ProfileSection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.ProfileSection/VB/profilesection.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Configuration.ConfigurationException">There is no <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> object with the specified key in the collection.  
+  
+ \- or -  
+  
+ The element has already been removed.  
+  
+ \- or -  
+  
+ The collection is read-only.</exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -362,9 +454,33 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The index of a <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> object in the collection.</param>
+        <summary>Removes a <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> object at the specified index location from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method inserts a `remove` element into the appropriate section of the configuration file for any element defined in a higher-level configuration file. If the element is defined in the appropriate section of the current configuration file, its entry is removed from the configuration file. The object to remove must exist in the collection.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.ProfilePropertySettingsCollection.RemoveAt%2A> method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.ProfileSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.ProfileSection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.ProfileSection/CS/profilesection.cs#1)]
+ [!code-vb[System.Web.Configuration.ProfileSection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.ProfileSection/VB/profilesection.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.IndexOutOfRangeException">There is no <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> object at the specified index in the collection.  
+  
+ \- or -  
+  
+ The element has already been removed.  
+  
+ \- or -  
+  
+ The collection is read-only.</exception>
       </Docs>
     </Member>
     <Member MemberName="Set">
@@ -383,9 +499,17 @@
         <Parameter Name="propertySettings" Type="System.Web.Configuration.ProfilePropertySettings" />
       </Parameters>
       <Docs>
-        <param name="propertySettings">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="propertySettings">A <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> object.</param>
+        <summary>Adds the specified <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> object to the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling this method has the same effect as calling the <xref:System.Web.Configuration.ProfilePropertySettingsCollection.Add%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Configuration.ConfigurationException">The <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> object to add already exists in the collection, or the collection is read-only.</exception>
       </Docs>
     </Member>
     <Member MemberName="ThrowOnDuplicate">
@@ -401,8 +525,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether an error should be thrown if an attempt to create a duplicate object is made.</summary>
+        <value>
+          <see langword="true" /> in all cases.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

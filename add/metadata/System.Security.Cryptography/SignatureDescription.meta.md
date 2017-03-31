@@ -1,49 +1,76 @@
 ---
 uid: System.Security.Cryptography.SignatureDescription
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.SignatureDescription.FormatterAlgorithm
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.SignatureDescription.CreateDeformatter(System.Security.Cryptography.AsymmetricAlgorithm)
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.SignatureDescription.DeformatterAlgorithm
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.SignatureDescription.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.SignatureDescription.CreateDeformatter(System.Security.Cryptography.AsymmetricAlgorithm)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.SignatureDescription.DeformatterAlgorithm
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.SignatureDescription.#ctor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.SignatureDescription.CreateFormatter(System.Security.Cryptography.AsymmetricAlgorithm)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.SignatureDescription.#ctor(System.Security.SecurityElement)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.SignatureDescription.KeyAlgorithm
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.SignatureDescription.CreateDigest
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.SignatureDescription.DigestAlgorithm
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

@@ -1,29 +1,35 @@
 ---
 uid: System.IdentityModel.Services.Configuration.SystemIdentityModelServicesSection
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.Configuration.SystemIdentityModelServicesSection.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.Configuration.SystemIdentityModelServicesSection.Current
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.Configuration.SystemIdentityModelServicesSection.SectionName
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.Configuration.SystemIdentityModelServicesSection.FederationConfigurationElements
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.Configuration.SystemIdentityModelServicesSection.DefaultFederationConfigurationElement
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

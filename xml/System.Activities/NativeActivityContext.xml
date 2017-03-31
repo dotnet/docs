@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The execution context for a <see cref="T:System.Activities.NativeActivity" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Activities.NativeActivity> is provided access to the advanced capabilities of the WF runtime via <xref:System.Activities.NativeActivityContext>, which is passed as a parameter to the activity’s <xref:System.Activities.NativeActivity.Execute%2A> method.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Abort">
@@ -29,7 +36,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Aborts the current workflow instance during runtime.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,8 +56,8 @@
         <Parameter Name="reason" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="reason">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="reason">The error that caused the workflow to abort.</param>
+        <summary>Aborts the current workflow instance during runtime for the specified reason.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,8 +77,8 @@
         <Parameter Name="activity" Type="System.Activities.ActivityInstance" />
       </Parameters>
       <Docs>
-        <param name="activity">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="activity">A child of the currently executing <see cref="T:System.Activities.NativeActivity" />.</param>
+        <summary>Aborts the specified instance of a <see cref="T:System.Activities.NativeActivity" /> child activity.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,9 +99,9 @@
         <Parameter Name="reason" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="activity">To be added.</param>
-        <param name="reason">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="activity">A child of the currently executing <see cref="T:System.Activities.NativeActivity" />.</param>
+        <param name="reason">The error that caused the child activity to abort.</param>
+        <summary>Aborts the specified instance of a <see cref="T:System.Activities.NativeActivity" /> child activity for the specified reason.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,8 +121,8 @@
         <Parameter Name="activityInstance" Type="System.Activities.ActivityInstance" />
       </Parameters>
       <Docs>
-        <param name="activityInstance">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="activityInstance">A child of the currently executing <see cref="T:System.Activities.NativeActivity" />.</param>
+        <summary>Cancels the specified child activity instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,7 +140,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Causes an early completion of all the child activities of an executing <see cref="T:System.Activities.NativeActivity" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,8 +158,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a point at which a <see cref="T:System.Activities.NativeActivity" /> can passively wait to be resumed.</summary>
+        <returns>A bookmark.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -172,9 +179,9 @@
         <Parameter Name="callback" Type="System.Activities.BookmarkCallback" />
       </Parameters>
       <Docs>
-        <param name="callback">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="callback">The method to be called when a notification signals resumption of the <see cref="T:System.Activities.NativeActivity" />.</param>
+        <summary>Creates the point at which a <see cref="T:System.Activities.NativeActivity" /> can passively wait to be resumed and schedules the specified method to execute when notification of the resume operation completes.</summary>
+        <returns>The callback method.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -194,9 +201,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the bookmark.</param>
+        <summary>Creates the point, with the specified name, at which a <see cref="T:System.Activities.NativeActivity" /> can passively wait to be resumed.</summary>
+        <returns>A bookmark that includes the name of the bookmark.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -217,11 +224,20 @@
         <Parameter Name="options" Type="System.Activities.BookmarkOptions" />
       </Parameters>
       <Docs>
-        <param name="callback">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="callback">The method to be called when a notification signals resumption of the <see cref="T:System.Activities.NativeActivity" />.</param>
+        <param name="options">An enumerated setting that governs how the bookmark operates in relation to other threads during the execution of the current <see cref="T:System.Activities.NativeActivity" />.</param>
+        <summary>Creates the point at which a <see cref="T:System.Activities.NativeActivity" /> can passively wait to be resumed, with the specified method to execute when notification of the resume operation completes and with the specified option that governs how the bookmark is used during the execution of the current <see cref="T:System.Activities.NativeActivity" />.</summary>
+        <returns>A bookmark that includes the callback method and the bookmark execution option.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Bookmark options include <xref:System.Activities.BookmarkOptions>, <xref:System.Activities.BookmarkOptions> and <xref:System.Activities.BookmarkOptions>.  
+  
+ Bookmark callbacks can operate without bookmark options but bookmark options must always be paired with a callback because the options do not apply in situations where there is no callback method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateBookmark">
@@ -241,10 +257,10 @@
         <Parameter Name="callback" Type="System.Activities.BookmarkCallback" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="callback">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the bookmark.</param>
+        <param name="callback">The method to be called when a notification signals resumption of the <see cref="T:System.Activities.NativeActivity" />.</param>
+        <summary>Creates the point at which a <see cref="T:System.Activities.NativeActivity" /> can passively wait to be resumed, with the specified name and with the specified method to execute when notification of the resume operation completes.</summary>
+        <returns>A bookmark that includes the name of the bookmark and the callback method.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -266,12 +282,19 @@
         <Parameter Name="options" Type="System.Activities.BookmarkOptions" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the bookmark.</param>
+        <param name="callback">The method to be called when a notification signals resumption of the <see cref="T:System.Activities.NativeActivity" />.</param>
+        <param name="options">The bookmark options that govern how the bookmark is used during the execution of the current <see cref="T:System.Activities.NativeActivity" />.</param>
+        <summary>Creates the point at which a <see cref="T:System.Activities.NativeActivity" /> can passively wait to be resumed with the specified name, the specified method to execute when notification of the resume operation completes, and the specified option that governs how the bookmark is used during the execution of the current <see cref="T:System.Activities.NativeActivity" />.</summary>
+        <returns>A bookmark that includes the name of the bookmark, the callback method, and the bookmark execution option.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Bookmark callbacks can operate without bookmark options but bookmark options must always be paired with a callback because the options do not apply in situations where there is no callback method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateBookmark">
@@ -292,12 +315,19 @@
         <Parameter Name="scope" Type="System.Activities.BookmarkScope" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="scope">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the bookmark.</param>
+        <param name="callback">The method to be called when a notification signals resumption of the <see cref="T:System.Activities.NativeActivity" />.</param>
+        <param name="scope">An identifier applied to a group of bookmarks that operate under the same protocol during a workflow runtime.</param>
+        <summary>Creates the point at which a <see cref="T:System.Activities.NativeActivity" /> can passively wait to be resumed with the specified name, the specified method to execute when notification of the resume operation completes, and the specified scope of the bookmark.</summary>
+        <returns>A bookmark that includes the name of the bookmark, the callback method, and the scope of the bookmark.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Bookmark callbacks can operate without bookmark options but bookmark options must always be paired with a callback because the options do not apply in situations where there is no callback method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateBookmark">
@@ -319,13 +349,20 @@
         <Parameter Name="options" Type="System.Activities.BookmarkOptions" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="scope">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the bookmark.</param>
+        <param name="callback">The method to be called when a notification signals resumption of the <see cref="T:System.Activities.NativeActivity" />.</param>
+        <param name="scope">An identifier applied to a group of bookmarks that operate under the same protocol during a workflow runtime.</param>
+        <param name="options">The bookmark options that governs how the bookmark is used during the execution of the current <see cref="T:System.Activities.NativeActivity" />.</param>
+        <summary>Creates the point at which a <see cref="T:System.Activities.NativeActivity" /> can passively wait to be resumed with the specified name, the specified method to execute when notification of the resume operation completes, the specified scope of the bookmark, and the specified option that governs how the bookmark is used during the execution of the current <see cref="T:System.Activities.NativeActivity" />.</summary>
+        <returns>A bookmark that includes the name of the bookmark, the callback method, the scope of the bookmark, and the bookmark execution option.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Bookmark callbacks can operate without bookmark options but bookmark options must always be paired with a callback because the options do not apply in situations where there is no callback method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultBookmarkScope">
@@ -341,8 +378,8 @@
         <ReturnType>System.Activities.BookmarkScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the bookmark scope associated with the root of the workflow.</summary>
+        <value>A unique GUID identifier.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -360,8 +397,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a collection of the child activities for the current <see cref="T:System.Activities.NativeActivity" />.</summary>
+        <returns>A generic read-only collection of child <see cref="T:System.Activities.NativeActivity" /> objects.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -381,9 +418,9 @@
         <Parameter Name="variable" Type="System.Activities.Variable" />
       </Parameters>
       <Docs>
-        <param name="variable">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="variable">The variable whose value is being retrieved during execution of the current <see cref="T:System.Activities.NativeActivity" /> instance.</param>
+        <summary>Returns the value of the specified variable in the current <see cref="T:System.Activities.NativeActivity" /> instance.</summary>
+        <returns>The value of the specified variable.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -406,10 +443,10 @@
         <Parameter Name="variable" Type="System.Activities.Variable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="variable">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of the variable whose value is being retrieved.</typeparam>
+        <param name="variable">The generic variable whose value is being retrieved during execution of the current <see cref="T:System.Activities.NativeActivity" /> instance.</param>
+        <summary>Returns the value of the specified generic variable in the current <see cref="T:System.Activities.NativeActivity" /> instance.</summary>
+        <returns>The value of the specified variable.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -426,8 +463,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether the currently executing <see cref="T:System.Activities.NativeActivity" /> instance is to be canceled.</summary>
+        <value>
+          <see langword="true" /> if the currently executing <see cref="T:System.Activities.NativeActivity" /> instance is to be canceled; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -445,7 +483,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Designates the currently executing <see cref="T:System.Activities.NativeActivity" /> instance as canceled.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -462,8 +500,8 @@
         <ReturnType>System.Activities.ExecutionProperties</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an object that handles properties for execution of the current <see cref="T:System.Activities.NativeActivityContext" />.</summary>
+        <value>An object that handles execution properties.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -481,7 +519,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes all the bookmarks associated with the currently executing <see cref="T:System.Activities.NativeActivity" /> instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -501,9 +539,10 @@
         <Parameter Name="bookmark" Type="System.Activities.Bookmark" />
       </Parameters>
       <Docs>
-        <param name="bookmark">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="bookmark">A point at which a <see cref="T:System.Activities.NativeActivity" /> instance can passively wait to be resumed.</param>
+        <summary>Removes the specified bookmark from the currently executing <see cref="T:System.Activities.NativeActivity" /> instance.</summary>
+        <returns>
+          <see langword="true" /> if the bookmark was removed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -523,9 +562,10 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the bookmark.</param>
+        <summary>Removes the bookmark with the specified name.</summary>
+        <returns>
+          <see langword="true" /> if the bookmark was removed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -546,10 +586,11 @@
         <Parameter Name="scope" Type="System.Activities.BookmarkScope" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="scope">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the bookmark.</param>
+        <param name="scope">The unique GUID identifier for a group of <see cref="T:System.Activities.Bookmark" /> objects that are categorized as operating under the same protocol.</param>
+        <summary>Removes the bookmark with the specified name and the specified bookmark scope.</summary>
+        <returns>
+          <see langword="true" /> if the bookmark was removed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -570,10 +611,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="bookmark">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="bookmark">A point at which a <see cref="T:System.Activities.NativeActivity" /> can passively wait to be resumed.</param>
+        <param name="value">The information related to the resumption of a bookmark.</param>
+        <summary>Resumes the specified bookmark.</summary>
+        <returns>The outcome of the attempt to resume <see cref="T:System.Activities.NativeActivity" /> operation at the point of the bookmark.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -595,11 +636,11 @@
         <Parameter Name="onFaulted" Type="System.Activities.FaultCallback" />
       </Parameters>
       <Docs>
-        <param name="activityAction">To be added.</param>
-        <param name="onCompleted">To be added.</param>
-        <param name="onFaulted">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="activityAction">An action that executes when a specific event occurs in the parent activity.</param>
+        <param name="onCompleted">A bookmark that indicates where the parent activity execution resumes upon completion of the <see cref="T:System.Activities.ActivityAction" />.</param>
+        <param name="onFaulted">A bookmark that indicates where the parent activity execution resumes if an error causes the termination of the <see cref="T:System.Activities.ActivityAction" />.</param>
+        <summary>Schedules for execution a specified <see cref="T:System.Activities.ActivityAction" /> that has no parameters, and that bookmarks the specified callback locations where the parent process resumes upon completion of the <see cref="T:System.Activities.ActivityAction" />.</summary>
+        <returns>A new instance of an activity action.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -625,13 +666,13 @@
         <Parameter Name="onFaulted" Type="System.Activities.FaultCallback" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="activityAction">To be added.</param>
-        <param name="argument">To be added.</param>
-        <param name="onCompleted">To be added.</param>
-        <param name="onFaulted">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">An argument that carries data into an activity.</typeparam>
+        <param name="activityAction">An action that executes when a specific event occurs in the parent activity.</param>
+        <param name="argument">Data sent into an activity.</param>
+        <param name="onCompleted">A bookmark that indicates where the parent activity execution resumes upon completion of the <see cref="T:System.Activities.ActivityAction`1" />.</param>
+        <param name="onFaulted">A bookmark that indicates where the parent activity execution resumes if an error causes the termination of the <see cref="T:System.Activities.ActivityAction`1" />.</param>
+        <summary>Schedules for execution a specified <see cref="T:System.Activities.ActivityAction`1" /> that has one parameter for an <see langword="in" /> argument and bookmarks the specified callback locations where the parent process resumes upon completion of the <see cref="T:System.Activities.ActivityAction`1" />.</summary>
+        <returns>An instance of an activity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -659,15 +700,15 @@
         <Parameter Name="onFaulted" Type="System.Activities.FaultCallback" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <param name="activityAction">To be added.</param>
-        <param name="argument1">To be added.</param>
-        <param name="argument2">To be added.</param>
-        <param name="onCompleted">To be added.</param>
-        <param name="onFaulted">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The data that is carried into an activity.</typeparam>
+        <typeparam name="T2">The data that is carried into an activity.</typeparam>
+        <param name="activityAction">An action that executes when a specific event occurs in the parent activity.</param>
+        <param name="argument1">An argument that carries data into an activity.</param>
+        <param name="argument2">An argument that carries data into an activity.</param>
+        <param name="onCompleted">A bookmark that indicates where the parent activity execution resumes upon completion of the <see cref="T:System.Activities.ActivityAction`2" />.</param>
+        <param name="onFaulted">A bookmark that indicates where the parent activity execution resumes if an error causes the termination of the <see cref="T:System.Activities.ActivityAction`2" />.</param>
+        <summary>Schedules for execution a specified <see cref="T:System.Activities.ActivityAction`2" /> that has two parameters for <see langword="in" /> arguments and that bookmarks the specified callback locations where the parent process resumes upon completion of the <see cref="T:System.Activities.ActivityAction`2" />.</summary>
+        <returns>An instance of an activity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -697,17 +738,17 @@
         <Parameter Name="onFaulted" Type="System.Activities.FaultCallback" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <param name="activityAction">To be added.</param>
-        <param name="argument1">To be added.</param>
-        <param name="argument2">To be added.</param>
-        <param name="argument3">To be added.</param>
-        <param name="onCompleted">To be added.</param>
-        <param name="onFaulted">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The data that is carried into an activity.</typeparam>
+        <typeparam name="T2">The data that is carried into an activity.</typeparam>
+        <typeparam name="T3">The data that is carried into an activity.</typeparam>
+        <param name="activityAction">An action that executes when a specific event occurs in the parent activity.</param>
+        <param name="argument1">An argument that carries data into an activity.</param>
+        <param name="argument2">An argument that carries data into an activity.</param>
+        <param name="argument3">An argument that carries data into an activity.</param>
+        <param name="onCompleted">A bookmark that indicates where the parent activity execution resumes upon completion of the <see cref="T:System.Activities.ActivityAction`3" />.</param>
+        <param name="onFaulted">A bookmark that indicates where the parent activity execution resumes if an error causes the termination of the <see cref="T:System.Activities.ActivityAction`3" />.</param>
+        <summary>Schedules for execution a specified <see cref="T:System.Activities.ActivityAction`3" /> that has three parameters for <see langword="in" /> arguments and that bookmarks the specified callback locations where the parent process resumes upon completion of the <see cref="T:System.Activities.ActivityAction`3" />.</summary>
+        <returns>An instance of an activity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -739,19 +780,19 @@
         <Parameter Name="onFaulted" Type="System.Activities.FaultCallback" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <param name="activityAction">To be added.</param>
-        <param name="argument1">To be added.</param>
-        <param name="argument2">To be added.</param>
-        <param name="argument3">To be added.</param>
-        <param name="argument4">To be added.</param>
-        <param name="onCompleted">To be added.</param>
-        <param name="onFaulted">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">the data that is carried into an activity.</typeparam>
+        <typeparam name="T2">The data that is carried into an activity.</typeparam>
+        <typeparam name="T3">The data that is carried into an activity.</typeparam>
+        <typeparam name="T4">The data that is carried into an activity.</typeparam>
+        <param name="activityAction">An action that executes when a specific event occurs in the parent activity.</param>
+        <param name="argument1">An argument that carries data into an activity.</param>
+        <param name="argument2">An argument that carries data into an activity.</param>
+        <param name="argument3">An argument that carries data into an activity.</param>
+        <param name="argument4">An argument that carries data into an activity.</param>
+        <param name="onCompleted">A bookmark that indicates where the parent activity execution resumes upon completion of the <see cref="T:System.Activities.ActivityAction`4" />.</param>
+        <param name="onFaulted">A bookmark that indicates where the parent activity execution resumes if an error causes the termination of the <see cref="T:System.Activities.ActivityAction`4" />.</param>
+        <summary>Schedules for execution a specified <see cref="T:System.Activities.ActivityAction`4" /> that has four parameters for <see langword="in" /> arguments and that bookmarks the specified callback locations where the parent process resumes upon completion of the <see cref="T:System.Activities.ActivityAction`4" />.</summary>
+        <returns>An instance of an activity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -785,21 +826,21 @@
         <Parameter Name="onFaulted" Type="System.Activities.FaultCallback" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <param name="activityAction">To be added.</param>
-        <param name="argument1">To be added.</param>
-        <param name="argument2">To be added.</param>
-        <param name="argument3">To be added.</param>
-        <param name="argument4">To be added.</param>
-        <param name="argument5">To be added.</param>
-        <param name="onCompleted">To be added.</param>
-        <param name="onFaulted">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The data that is carried into an activity.</typeparam>
+        <typeparam name="T2">The data that is carried into an activity.</typeparam>
+        <typeparam name="T3">The data that is carried into an activity.</typeparam>
+        <typeparam name="T4">The data that is carried into an activity.</typeparam>
+        <typeparam name="T5">The data that is carried into an activity.</typeparam>
+        <param name="activityAction">An action that executes when a specific event occurs in the parent activity.</param>
+        <param name="argument1">An argument that carries data into an activity.</param>
+        <param name="argument2">An argument that carries data into an activity.</param>
+        <param name="argument3">An argument that carries data into an activity.</param>
+        <param name="argument4">An argument that carries data into an activity.</param>
+        <param name="argument5">An argument that carries data into an activity.</param>
+        <param name="onCompleted">A bookmark that indicates where the parent activity execution resumes upon completion of the <see cref="T:System.Activities.ActivityAction`5" />.</param>
+        <param name="onFaulted">A bookmark that indicates where the parent activity execution resumes if an error causes the termination of the <see cref="T:System.Activities.ActivityAction`5" />.</param>
+        <summary>Schedules for execution a specified <see cref="T:System.Activities.ActivityAction`5" /> that has five parameters for <see langword="in" /> arguments and that bookmarks the specified callback locations where the parent process resumes upon completion of the <see cref="T:System.Activities.ActivityAction`5" />.</summary>
+        <returns>An instance of an activity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -835,23 +876,23 @@
         <Parameter Name="onFaulted" Type="System.Activities.FaultCallback" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <param name="activityAction">To be added.</param>
-        <param name="argument1">To be added.</param>
-        <param name="argument2">To be added.</param>
-        <param name="argument3">To be added.</param>
-        <param name="argument4">To be added.</param>
-        <param name="argument5">To be added.</param>
-        <param name="argument6">To be added.</param>
-        <param name="onCompleted">To be added.</param>
-        <param name="onFaulted">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The data that is carried into an activity.</typeparam>
+        <typeparam name="T2">The data that is carried into an activity.</typeparam>
+        <typeparam name="T3">The data that is carried into an activity.</typeparam>
+        <typeparam name="T4">The data that is carried into an activity.</typeparam>
+        <typeparam name="T5">The data that is carried into an activity.</typeparam>
+        <typeparam name="T6">The data that is carried into an activity.</typeparam>
+        <param name="activityAction">An action that executes when a specific event occurs in the parent activity.</param>
+        <param name="argument1">An argument that carries data into an activity.</param>
+        <param name="argument2">An argument that carries data into an activity.</param>
+        <param name="argument3">An argument that carries data into an activity.</param>
+        <param name="argument4">An argument that carries data into an activity.</param>
+        <param name="argument5">An argument that carries data into an activity.</param>
+        <param name="argument6">An argument that carries data into an activity.</param>
+        <param name="onCompleted">A bookmark that indicates where the parent activity execution resumes upon completion of the <see cref="T:System.Activities.ActivityAction`6" />.</param>
+        <param name="onFaulted">A bookmark that indicates where the parent activity execution resumes if an error causes the termination of the <see cref="T:System.Activities.ActivityAction`6" />.</param>
+        <summary>Schedules for execution a specified <see cref="T:System.Activities.ActivityAction`6" /> that has six parameters for <see langword="in" /> arguments and that bookmarks the specified callback locations where the parent process resumes upon completion of the <see cref="T:System.Activities.ActivityAction`6" />.</summary>
+        <returns>An instance of an activity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -889,25 +930,25 @@
         <Parameter Name="onFaulted" Type="System.Activities.FaultCallback" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <param name="activityAction">To be added.</param>
-        <param name="argument1">To be added.</param>
-        <param name="argument2">To be added.</param>
-        <param name="argument3">To be added.</param>
-        <param name="argument4">To be added.</param>
-        <param name="argument5">To be added.</param>
-        <param name="argument6">To be added.</param>
-        <param name="argument7">To be added.</param>
-        <param name="onCompleted">To be added.</param>
-        <param name="onFaulted">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The data that is carried into an activity.</typeparam>
+        <typeparam name="T2">The data that is carried into an activity.</typeparam>
+        <typeparam name="T3">The data that is carried into an activity.</typeparam>
+        <typeparam name="T4">The data that is carried into an activity.</typeparam>
+        <typeparam name="T5">The data that is carried into an activity.</typeparam>
+        <typeparam name="T6">The data that is carried into an activity.</typeparam>
+        <typeparam name="T7">The data that is carried into an activity.</typeparam>
+        <param name="activityAction">An action that executes when a specific event occurs in the parent activity.</param>
+        <param name="argument1">An argument that carries data into an activity.</param>
+        <param name="argument2">An argument that carries data into an activity.</param>
+        <param name="argument3">An argument that carries data into an activity.</param>
+        <param name="argument4">An argument that carries data into an activity.</param>
+        <param name="argument5">An argument that carries data into an activity.</param>
+        <param name="argument6">An argument that carries data into an activity.</param>
+        <param name="argument7">An argument that carries data into an activity.</param>
+        <param name="onCompleted">A bookmark that indicates where the parent activity execution resumes upon completion of the <see cref="T:System.Activities.ActivityAction`7" />.</param>
+        <param name="onFaulted">A bookmark that indicates where the parent activity execution resumes if an error causes the termination of the <see cref="T:System.Activities.ActivityAction`7" />.</param>
+        <summary>Schedules for execution a specified <see cref="T:System.Activities.ActivityAction`7" /> that has seven parameters for <see langword="in" /> arguments and that bookmarks the specified callback locations where the parent process resumes upon completion of the <see cref="T:System.Activities.ActivityAction`7" />.</summary>
+        <returns>An instance of an activity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -947,27 +988,27 @@
         <Parameter Name="onFaulted" Type="System.Activities.FaultCallback" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <param name="activityAction">To be added.</param>
-        <param name="argument1">To be added.</param>
-        <param name="argument2">To be added.</param>
-        <param name="argument3">To be added.</param>
-        <param name="argument4">To be added.</param>
-        <param name="argument5">To be added.</param>
-        <param name="argument6">To be added.</param>
-        <param name="argument7">To be added.</param>
-        <param name="argument8">To be added.</param>
-        <param name="onCompleted">To be added.</param>
-        <param name="onFaulted">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The data that is carried into an activity.</typeparam>
+        <typeparam name="T2">The data that is carried into an activity.</typeparam>
+        <typeparam name="T3">The data that is carried into an activity.</typeparam>
+        <typeparam name="T4">The data that is carried into an activity.</typeparam>
+        <typeparam name="T5">The data that is carried into an activity.</typeparam>
+        <typeparam name="T6">The data that is carried into an activity.</typeparam>
+        <typeparam name="T7">The data that is carried into an activity.</typeparam>
+        <typeparam name="T8">The data that is carried into an activity.</typeparam>
+        <param name="activityAction">An action that executes when a specific event occurs in the parent activity.</param>
+        <param name="argument1">An argument that carries data into an activity.</param>
+        <param name="argument2">An argument that carries data into an activity.</param>
+        <param name="argument3">An argument that carries data into an activity.</param>
+        <param name="argument4">An argument that carries data into an activity.</param>
+        <param name="argument5">An argument that carries data into an activity.</param>
+        <param name="argument6">An argument that carries data into an activity.</param>
+        <param name="argument7">An argument that carries data into an activity.</param>
+        <param name="argument8">An argument that carries data into an activity.</param>
+        <param name="onCompleted">A bookmark that indicates where the parent activity execution resumes upon completion of the <see cref="T:System.Activities.ActivityAction`8" />.</param>
+        <param name="onFaulted">A bookmark that indicates where the parent activity execution resumes if an error causes the termination of the <see cref="T:System.Activities.ActivityAction`8" />.</param>
+        <summary>Schedules for execution a specified <see cref="T:System.Activities.ActivityAction`8" /> that has eight parameters for <see langword="in" /> arguments and that bookmarks the specified callback locations where the parent process resumes upon completion of the <see cref="T:System.Activities.ActivityAction`8" />.</summary>
+        <returns>An instance of an activity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1009,29 +1050,29 @@
         <Parameter Name="onFaulted" Type="System.Activities.FaultCallback" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <param name="activityAction">To be added.</param>
-        <param name="argument1">To be added.</param>
-        <param name="argument2">To be added.</param>
-        <param name="argument3">To be added.</param>
-        <param name="argument4">To be added.</param>
-        <param name="argument5">To be added.</param>
-        <param name="argument6">To be added.</param>
-        <param name="argument7">To be added.</param>
-        <param name="argument8">To be added.</param>
-        <param name="argument9">To be added.</param>
-        <param name="onCompleted">To be added.</param>
-        <param name="onFaulted">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The data that is carried into an activity.</typeparam>
+        <typeparam name="T2">The data that is carried into an activity.</typeparam>
+        <typeparam name="T3">The data that is carried into an activity.</typeparam>
+        <typeparam name="T4">The data that is carried into an activity.</typeparam>
+        <typeparam name="T5">The data that is carried into an activity.</typeparam>
+        <typeparam name="T6">The data that is carried into an activity.</typeparam>
+        <typeparam name="T7">The data that is carried into an activity.</typeparam>
+        <typeparam name="T8">The data that is carried into an activity.</typeparam>
+        <typeparam name="T9">The data that is carried into an activity.</typeparam>
+        <param name="activityAction">An action that executes when a specific event occurs in the parent activity.</param>
+        <param name="argument1">An argument that carries data into an activity.</param>
+        <param name="argument2">An argument that carries data into an activity.</param>
+        <param name="argument3">An argument that carries data into an activity.</param>
+        <param name="argument4">An argument that carries data into an activity.</param>
+        <param name="argument5">An argument that carries data into an activity.</param>
+        <param name="argument6">An argument that carries data into an activity.</param>
+        <param name="argument7">An argument that carries data into an activity.</param>
+        <param name="argument8">An argument that carries data into an activity.</param>
+        <param name="argument9">An argument that carries data into an activity.</param>
+        <param name="onCompleted">A bookmark that indicates where the parent activity execution resumes upon completion of the <see cref="T:System.Activities.ActivityAction`9" />.</param>
+        <param name="onFaulted">A bookmark that indicates where the parent activity execution resumes if an error causes the termination of the <see cref="T:System.Activities.ActivityAction`9" />.</param>
+        <summary>Schedules for execution a specified <see cref="T:System.Activities.ActivityAction`9" /> that has nine parameters for <see langword="in" /> arguments and that bookmarks the specified callback locations where the parent process resumes upon completion of the <see cref="T:System.Activities.ActivityAction`9" />.</summary>
+        <returns>An instance of an activity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1075,31 +1116,31 @@
         <Parameter Name="onFaulted" Type="System.Activities.FaultCallback" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <param name="activityAction">To be added.</param>
-        <param name="argument1">To be added.</param>
-        <param name="argument2">To be added.</param>
-        <param name="argument3">To be added.</param>
-        <param name="argument4">To be added.</param>
-        <param name="argument5">To be added.</param>
-        <param name="argument6">To be added.</param>
-        <param name="argument7">To be added.</param>
-        <param name="argument8">To be added.</param>
-        <param name="argument9">To be added.</param>
-        <param name="argument10">To be added.</param>
-        <param name="onCompleted">To be added.</param>
-        <param name="onFaulted">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The data that is carried into an activity.</typeparam>
+        <typeparam name="T2">The data that is carried into an activity.</typeparam>
+        <typeparam name="T3">The data that is carried into an activity.</typeparam>
+        <typeparam name="T4">The data that is carried into an activity.</typeparam>
+        <typeparam name="T5">The data that is carried into an activity.</typeparam>
+        <typeparam name="T6">The data that is carried into an activity.</typeparam>
+        <typeparam name="T7">The data that is carried into an activity.</typeparam>
+        <typeparam name="T8">The data that is carried into an activity.</typeparam>
+        <typeparam name="T9">The data that is carried into an activity.</typeparam>
+        <typeparam name="T10">The data that is carried into an activity.</typeparam>
+        <param name="activityAction">An action that executes when a specific event occurs in the parent activity.</param>
+        <param name="argument1">An argument that carries data into an activity.</param>
+        <param name="argument2">An argument that carries data into an activity.</param>
+        <param name="argument3">An argument that carries data into an activity.</param>
+        <param name="argument4">An argument that carries data into an activity.</param>
+        <param name="argument5">An argument that carries data into an activity.</param>
+        <param name="argument6">An argument that carries data into an activity.</param>
+        <param name="argument7">An argument that carries data into an activity.</param>
+        <param name="argument8">An argument that carries data into an activity.</param>
+        <param name="argument9">An argument that carries data into an activity.</param>
+        <param name="argument10">An argument that carries data into an activity.</param>
+        <param name="onCompleted">A bookmark that indicates where the parent activity execution resumes upon completion of the <see cref="T:System.Activities.ActivityAction`10" />.</param>
+        <param name="onFaulted">A bookmark that indicates where the parent activity execution resumes if an error causes the termination of the <see cref="T:System.Activities.ActivityAction`10" />.</param>
+        <summary>Schedules for execution a specified <see cref="T:System.Activities.ActivityAction`10" /> that has ten parameters for <see langword="in" /> arguments and that bookmarks the specified callback locations where the parent process resumes upon completion of the <see cref="T:System.Activities.ActivityAction`10" />.</summary>
+        <returns>An instance of an activity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1145,33 +1186,33 @@
         <Parameter Name="onFaulted" Type="System.Activities.FaultCallback" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <typeparam name="T11">To be added.</typeparam>
-        <param name="activityAction">To be added.</param>
-        <param name="argument1">To be added.</param>
-        <param name="argument2">To be added.</param>
-        <param name="argument3">To be added.</param>
-        <param name="argument4">To be added.</param>
-        <param name="argument5">To be added.</param>
-        <param name="argument6">To be added.</param>
-        <param name="argument7">To be added.</param>
-        <param name="argument8">To be added.</param>
-        <param name="argument9">To be added.</param>
-        <param name="argument10">To be added.</param>
-        <param name="argument11">To be added.</param>
-        <param name="onCompleted">To be added.</param>
-        <param name="onFaulted">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The data that is carried into an activity.</typeparam>
+        <typeparam name="T2">The data that is carried into an activity.</typeparam>
+        <typeparam name="T3">The data that is carried into an activity.</typeparam>
+        <typeparam name="T4">The data that is carried into an activity.</typeparam>
+        <typeparam name="T5">The data that is carried into an activity.</typeparam>
+        <typeparam name="T6">The data that is carried into an activity.</typeparam>
+        <typeparam name="T7">The data that is carried into an activity.</typeparam>
+        <typeparam name="T8">The data that is carried into an activity.</typeparam>
+        <typeparam name="T9">The data that is carried into an activity.</typeparam>
+        <typeparam name="T10">The data that is carried into an activity.</typeparam>
+        <typeparam name="T11">The data that is carried into an activity.</typeparam>
+        <param name="activityAction">An action that executes when a specific event occurs in the parent activity.</param>
+        <param name="argument1">An argument that carries data into an activity.</param>
+        <param name="argument2">An argument that carries data into an activity.</param>
+        <param name="argument3">An argument that carries data into an activity.</param>
+        <param name="argument4">An argument that carries data into an activity.</param>
+        <param name="argument5">An argument that carries data into an activity.</param>
+        <param name="argument6">An argument that carries data into an activity.</param>
+        <param name="argument7">An argument that carries data into an activity.</param>
+        <param name="argument8">An argument that carries data into an activity.</param>
+        <param name="argument9">An argument that carries data into an activity.</param>
+        <param name="argument10">An argument that carries data into an activity.</param>
+        <param name="argument11">An argument that carries data into an activity.</param>
+        <param name="onCompleted">A bookmark that indicates where the parent activity execution resumes upon completion of the <see cref="T:System.Activities.ActivityAction`11" />.</param>
+        <param name="onFaulted">A bookmark that indicates where the parent activity execution resumes if an error causes the termination of the <see cref="T:System.Activities.ActivityAction`11" />.</param>
+        <summary>Schedules for execution a specified <see cref="T:System.Activities.ActivityAction`11" /> that has eleven parameters for <see langword="in" /> arguments, and that bookmarks the specified callback locations where the parent process resumes upon completion of the <see cref="T:System.Activities.ActivityAction`11" />.</summary>
+        <returns>An instance of an activity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1219,35 +1260,35 @@
         <Parameter Name="onFaulted" Type="System.Activities.FaultCallback" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <typeparam name="T11">To be added.</typeparam>
-        <typeparam name="T12">To be added.</typeparam>
-        <param name="activityAction">To be added.</param>
-        <param name="argument1">To be added.</param>
-        <param name="argument2">To be added.</param>
-        <param name="argument3">To be added.</param>
-        <param name="argument4">To be added.</param>
-        <param name="argument5">To be added.</param>
-        <param name="argument6">To be added.</param>
-        <param name="argument7">To be added.</param>
-        <param name="argument8">To be added.</param>
-        <param name="argument9">To be added.</param>
-        <param name="argument10">To be added.</param>
-        <param name="argument11">To be added.</param>
-        <param name="argument12">To be added.</param>
-        <param name="onCompleted">To be added.</param>
-        <param name="onFaulted">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The data that is carried into an activity.</typeparam>
+        <typeparam name="T2">The data that is carried into an activity.</typeparam>
+        <typeparam name="T3">The data that is carried into an activity.</typeparam>
+        <typeparam name="T4">The data that is carried into an activity.</typeparam>
+        <typeparam name="T5">The data that is carried into an activity.</typeparam>
+        <typeparam name="T6">The data that is carried into an activity.</typeparam>
+        <typeparam name="T7">The data that is carried into an activity.</typeparam>
+        <typeparam name="T8">The data that is carried into an activity.</typeparam>
+        <typeparam name="T9">The data that is carried into an activity.</typeparam>
+        <typeparam name="T10">The data that is carried into an activity.</typeparam>
+        <typeparam name="T11">The data that is carried into an activity.</typeparam>
+        <typeparam name="T12">The data that is carried into an activity.</typeparam>
+        <param name="activityAction">An action that executes when a specific event occurs in the parent activity.</param>
+        <param name="argument1">An argument that carries data into an activity.</param>
+        <param name="argument2">An argument that carries data into an activity.</param>
+        <param name="argument3">An argument that carries data into an activity.</param>
+        <param name="argument4">An argument that carries data into an activity.</param>
+        <param name="argument5">An argument that carries data into an activity.</param>
+        <param name="argument6">An argument that carries data into an activity.</param>
+        <param name="argument7">An argument that carries data into an activity.</param>
+        <param name="argument8">An argument that carries data into an activity.</param>
+        <param name="argument9">An argument that carries data into an activity.</param>
+        <param name="argument10">An argument that carries data into an activity.</param>
+        <param name="argument11">An argument that carries data into an activity.</param>
+        <param name="argument12">An argument that carries data into an activity.</param>
+        <param name="onCompleted">A bookmark that indicates where the parent activity execution resumes upon completion of the <see cref="T:System.Activities.ActivityAction`12" />.</param>
+        <param name="onFaulted">A bookmark that indicates where the parent activity execution resumes if an error causes the termination of the <see cref="T:System.Activities.ActivityAction`12" />.</param>
+        <summary>Schedules for execution a specified <see cref="T:System.Activities.ActivityAction`12" /> that has twelve parameters for <see langword="in" /> arguments and that bookmarks the specified callback locations where the parent process resumes upon completion of the <see cref="T:System.Activities.ActivityAction`12" />.</summary>
+        <returns>An instance of an activity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1297,37 +1338,37 @@
         <Parameter Name="onFaulted" Type="System.Activities.FaultCallback" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <typeparam name="T11">To be added.</typeparam>
-        <typeparam name="T12">To be added.</typeparam>
-        <typeparam name="T13">To be added.</typeparam>
-        <param name="activityAction">To be added.</param>
-        <param name="argument1">To be added.</param>
-        <param name="argument2">To be added.</param>
-        <param name="argument3">To be added.</param>
-        <param name="argument4">To be added.</param>
-        <param name="argument5">To be added.</param>
-        <param name="argument6">To be added.</param>
-        <param name="argument7">To be added.</param>
-        <param name="argument8">To be added.</param>
-        <param name="argument9">To be added.</param>
-        <param name="argument10">To be added.</param>
-        <param name="argument11">To be added.</param>
-        <param name="argument12">To be added.</param>
-        <param name="argument13">To be added.</param>
-        <param name="onCompleted">To be added.</param>
-        <param name="onFaulted">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The data that is carried into an activity.</typeparam>
+        <typeparam name="T2">The data that is carried into an activity.</typeparam>
+        <typeparam name="T3">The data that is carried into an activity.</typeparam>
+        <typeparam name="T4">The data that is carried into an activity.</typeparam>
+        <typeparam name="T5">The data that is carried into an activity.</typeparam>
+        <typeparam name="T6">The data that is carried into an activity.</typeparam>
+        <typeparam name="T7">The data that is carried into an activity.</typeparam>
+        <typeparam name="T8">The data that is carried into an activity.</typeparam>
+        <typeparam name="T9">The data that is carried into an activity.</typeparam>
+        <typeparam name="T10">The data that is carried into an activity.</typeparam>
+        <typeparam name="T11">The data that is carried into an activity.</typeparam>
+        <typeparam name="T12">The data that is carried into an activity.</typeparam>
+        <typeparam name="T13">The data that is carried into an activity.</typeparam>
+        <param name="activityAction">An action that executes when a specific event occurs in the parent activity.</param>
+        <param name="argument1">An argument that carries data into an activity.</param>
+        <param name="argument2">An argument that carries data into an activity.</param>
+        <param name="argument3">An argument that carries data into an activity.</param>
+        <param name="argument4">An argument that carries data into an activity.</param>
+        <param name="argument5">An argument that carries data into an activity.</param>
+        <param name="argument6">An argument that carries data into an activity.</param>
+        <param name="argument7">An argument that carries data into an activity.</param>
+        <param name="argument8">An argument that carries data into an activity.</param>
+        <param name="argument9">An argument that carries data into an activity.</param>
+        <param name="argument10">An argument that carries data into an activity.</param>
+        <param name="argument11">An argument that carries data into an activity.</param>
+        <param name="argument12">An argument that carries data into an activity.</param>
+        <param name="argument13">An argument that carries data into an activity.</param>
+        <param name="onCompleted">A bookmark that indicates where the parent activity execution resumes upon completion of the <see cref="T:System.Activities.ActivityAction`13" />.</param>
+        <param name="onFaulted">A bookmark that indicates where the parent activity execution resumes if an error causes the termination of the <see cref="T:System.Activities.ActivityAction`13" />.</param>
+        <summary>Schedules for execution a specified <see cref="T:System.Activities.ActivityAction`13" /> that has thirteen parameters for <see langword="in" /> arguments and that bookmarks the specified callback locations where the parent process resumes upon completion of the <see cref="T:System.Activities.ActivityAction`13" />.</summary>
+        <returns>An instance of an activity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1379,39 +1420,39 @@
         <Parameter Name="onFaulted" Type="System.Activities.FaultCallback" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <typeparam name="T11">To be added.</typeparam>
-        <typeparam name="T12">To be added.</typeparam>
-        <typeparam name="T13">To be added.</typeparam>
-        <typeparam name="T14">To be added.</typeparam>
-        <param name="activityAction">To be added.</param>
-        <param name="argument1">To be added.</param>
-        <param name="argument2">To be added.</param>
-        <param name="argument3">To be added.</param>
-        <param name="argument4">To be added.</param>
-        <param name="argument5">To be added.</param>
-        <param name="argument6">To be added.</param>
-        <param name="argument7">To be added.</param>
-        <param name="argument8">To be added.</param>
-        <param name="argument9">To be added.</param>
-        <param name="argument10">To be added.</param>
-        <param name="argument11">To be added.</param>
-        <param name="argument12">To be added.</param>
-        <param name="argument13">To be added.</param>
-        <param name="argument14">To be added.</param>
-        <param name="onCompleted">To be added.</param>
-        <param name="onFaulted">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The data that is carried into an activity.</typeparam>
+        <typeparam name="T2">The data that is carried into an activity.</typeparam>
+        <typeparam name="T3">The data that is carried into an activity.</typeparam>
+        <typeparam name="T4">The data that is carried into an activity.</typeparam>
+        <typeparam name="T5">The data that is carried into an activity.</typeparam>
+        <typeparam name="T6">The data that is carried into an activity.</typeparam>
+        <typeparam name="T7">The data that is carried into an activity.</typeparam>
+        <typeparam name="T8">The data that is carried into an activity.</typeparam>
+        <typeparam name="T9">The data that is carried into an activity.</typeparam>
+        <typeparam name="T10">The data that is carried into an activity.</typeparam>
+        <typeparam name="T11">The data that is carried into an activity.</typeparam>
+        <typeparam name="T12">The data that is carried into an activity.</typeparam>
+        <typeparam name="T13">The data that is carried into an activity.</typeparam>
+        <typeparam name="T14">The data that is carried into an activity.</typeparam>
+        <param name="activityAction">An action that executes when a specific event occurs in the parent activity.</param>
+        <param name="argument1">An argument that carries data into an activity.</param>
+        <param name="argument2">An argument that carries data into an activity.</param>
+        <param name="argument3">An argument that carries data into an activity.</param>
+        <param name="argument4">An argument that carries data into an activity.</param>
+        <param name="argument5">An argument that carries data into an activity.</param>
+        <param name="argument6">An argument that carries data into an activity.</param>
+        <param name="argument7">An argument that carries data into an activity.</param>
+        <param name="argument8">An argument that carries data into an activity.</param>
+        <param name="argument9">An argument that carries data into an activity.</param>
+        <param name="argument10">An argument that carries data into an activity.</param>
+        <param name="argument11">An argument that carries data into an activity.</param>
+        <param name="argument12">An argument that carries data into an activity.</param>
+        <param name="argument13">An argument that carries data into an activity.</param>
+        <param name="argument14">An argument that carries data into an activity.</param>
+        <param name="onCompleted">A bookmark that indicates where the parent activity execution resumes upon completion of the <see cref="T:System.Activities.ActivityAction`14" />.</param>
+        <param name="onFaulted">A bookmark that indicates where the parent activity execution resumes if an error causes the termination of the <see cref="T:System.Activities.ActivityAction`14" />.</param>
+        <summary>Schedules for execution a specified <see cref="T:System.Activities.ActivityAction`14" /> that has fourteen parameters for <see langword="in" /> arguments and that bookmarks the specified callback locations where the parent process resumes upon completion of the <see cref="T:System.Activities.ActivityAction`14" />.</summary>
+        <returns>An instance of an activity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1465,41 +1506,41 @@
         <Parameter Name="onFaulted" Type="System.Activities.FaultCallback" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <typeparam name="T11">To be added.</typeparam>
-        <typeparam name="T12">To be added.</typeparam>
-        <typeparam name="T13">To be added.</typeparam>
-        <typeparam name="T14">To be added.</typeparam>
-        <typeparam name="T15">To be added.</typeparam>
-        <param name="activityAction">To be added.</param>
-        <param name="argument1">To be added.</param>
-        <param name="argument2">To be added.</param>
-        <param name="argument3">To be added.</param>
-        <param name="argument4">To be added.</param>
-        <param name="argument5">To be added.</param>
-        <param name="argument6">To be added.</param>
-        <param name="argument7">To be added.</param>
-        <param name="argument8">To be added.</param>
-        <param name="argument9">To be added.</param>
-        <param name="argument10">To be added.</param>
-        <param name="argument11">To be added.</param>
-        <param name="argument12">To be added.</param>
-        <param name="argument13">To be added.</param>
-        <param name="argument14">To be added.</param>
-        <param name="argument15">To be added.</param>
-        <param name="onCompleted">To be added.</param>
-        <param name="onFaulted">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The data that is carried into an activity.</typeparam>
+        <typeparam name="T2">The data that is carried into an activity.</typeparam>
+        <typeparam name="T3">The data that is carried into an activity.</typeparam>
+        <typeparam name="T4">The data that is carried into an activity.</typeparam>
+        <typeparam name="T5">The data that is carried into an activity.</typeparam>
+        <typeparam name="T6">The data that is carried into an activity.</typeparam>
+        <typeparam name="T7">The  data that is carried into an activity.</typeparam>
+        <typeparam name="T8">The data that is carried into an activity.</typeparam>
+        <typeparam name="T9">The data that is carried into an activity.</typeparam>
+        <typeparam name="T10">The data that is carried into an activity.</typeparam>
+        <typeparam name="T11">The data that is carried into an activity.</typeparam>
+        <typeparam name="T12">The data that is carried into an activity.</typeparam>
+        <typeparam name="T13">The data that is carried into an activity.</typeparam>
+        <typeparam name="T14">The data that is carried into an activity.</typeparam>
+        <typeparam name="T15">Generic parameter that represents data that is carried into an activity.</typeparam>
+        <param name="activityAction">An action that executes when a specific event occurs in the parent activity.</param>
+        <param name="argument1">An argument that carries data into an activity.</param>
+        <param name="argument2">An argument that carries data into an activity.</param>
+        <param name="argument3">An argument that carries data into an activity.</param>
+        <param name="argument4">An argument that carries data into an activity.</param>
+        <param name="argument5">An argument that carries data into an activity.</param>
+        <param name="argument6">An argument that carries data into an activity.</param>
+        <param name="argument7">An argument that carries data into an activity.</param>
+        <param name="argument8">An argument that carries data into an activity.</param>
+        <param name="argument9">An argument that carries data into an activity.</param>
+        <param name="argument10">An argument that carries data into an activity.</param>
+        <param name="argument11">An argument that carries data into an activity.</param>
+        <param name="argument12">An argument that carries data into an activity.</param>
+        <param name="argument13">An argument that carries data into an activity.</param>
+        <param name="argument14">An argument that carries data into an activity.</param>
+        <param name="argument15">An argument that carries data into an activity.</param>
+        <param name="onCompleted">A bookmark that indicates where the parent activity execution resumes upon completion of the <see cref="T:System.Activities.ActivityAction`15" />.</param>
+        <param name="onFaulted">A bookmark that indicates where the parent activity execution resumes if an error causes the termination of the <see cref="T:System.Activities.ActivityAction`15" />.</param>
+        <summary>Schedules for execution a specified <see cref="T:System.Activities.ActivityAction`15" /> that has fifteen parameters for <see langword="in" /> arguments and that bookmarks the specified callback locations where the parent process resumes upon completion of the <see cref="T:System.Activities.ActivityAction`15" />.</summary>
+        <returns>An instance of an activity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1555,43 +1596,43 @@
         <Parameter Name="onFaulted" Type="System.Activities.FaultCallback" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <typeparam name="T11">To be added.</typeparam>
-        <typeparam name="T12">To be added.</typeparam>
-        <typeparam name="T13">To be added.</typeparam>
-        <typeparam name="T14">To be added.</typeparam>
-        <typeparam name="T15">To be added.</typeparam>
-        <typeparam name="T16">To be added.</typeparam>
-        <param name="activityAction">To be added.</param>
-        <param name="argument1">To be added.</param>
-        <param name="argument2">To be added.</param>
-        <param name="argument3">To be added.</param>
-        <param name="argument4">To be added.</param>
-        <param name="argument5">To be added.</param>
-        <param name="argument6">To be added.</param>
-        <param name="argument7">To be added.</param>
-        <param name="argument8">To be added.</param>
-        <param name="argument9">To be added.</param>
-        <param name="argument10">To be added.</param>
-        <param name="argument11">To be added.</param>
-        <param name="argument12">To be added.</param>
-        <param name="argument13">To be added.</param>
-        <param name="argument14">To be added.</param>
-        <param name="argument15">To be added.</param>
-        <param name="argument16">To be added.</param>
-        <param name="onCompleted">To be added.</param>
-        <param name="onFaulted">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The data that is carried into an activity.</typeparam>
+        <typeparam name="T2">The data that is carried into an activity.</typeparam>
+        <typeparam name="T3">The data that is carried into an activity.</typeparam>
+        <typeparam name="T4">The data that is carried into an activity.</typeparam>
+        <typeparam name="T5">The data that is carried into an activity.</typeparam>
+        <typeparam name="T6">The data that is carried into an activity.</typeparam>
+        <typeparam name="T7">The data that is carried into an activity.</typeparam>
+        <typeparam name="T8">The data that is carried into an activity.</typeparam>
+        <typeparam name="T9">The data that is carried into an activity.</typeparam>
+        <typeparam name="T10">The data that is carried into an activity.</typeparam>
+        <typeparam name="T11">The data that is carried into an activity.</typeparam>
+        <typeparam name="T12">The data that is carried into an activity.</typeparam>
+        <typeparam name="T13">The data that is carried into an activity.</typeparam>
+        <typeparam name="T14">The data that is carried into an activity.</typeparam>
+        <typeparam name="T15">The data that is carried into an activity.</typeparam>
+        <typeparam name="T16">The data that is carried into an activity.</typeparam>
+        <param name="activityAction">An action that executes when a specific event occurs in the parent activity.</param>
+        <param name="argument1">An argument that carries data into an activity.</param>
+        <param name="argument2">An argument that carries data into an activity.</param>
+        <param name="argument3">An argument that carries data into an activity.</param>
+        <param name="argument4">An argument that carries data into an activity.</param>
+        <param name="argument5">An argument that carries data into an activity.</param>
+        <param name="argument6">An argument that carries data into an activity.</param>
+        <param name="argument7">An argument that carries data into an activity.</param>
+        <param name="argument8">An argument that carries data into an activity.</param>
+        <param name="argument9">An argument that carries data into an activity.</param>
+        <param name="argument10">An argument that carries data into an activity.</param>
+        <param name="argument11">An argument that carries data into an activity.</param>
+        <param name="argument12">An argument that carries data into an activity.</param>
+        <param name="argument13">An argument that carries data into an activity.</param>
+        <param name="argument14">An argument that carries data into an activity.</param>
+        <param name="argument15">An argument that carries data into an activity.</param>
+        <param name="argument16">An argument that carries data into an activity.</param>
+        <param name="onCompleted">A bookmark that indicates where the parent activity execution resumes upon completion of the <see cref="T:System.Activities.ActivityAction`16" />.</param>
+        <param name="onFaulted">A bookmark that indicates where the parent activity execution resumes if an error causes the termination of the <see cref="T:System.Activities.ActivityAction`16" />.</param>
+        <summary>Schedules for execution a specified <see cref="T:System.Activities.ActivityAction`16" /> that has sixteen parameters for <see langword="in" /> arguments and that bookmarks the specified callback locations where the parent process resumes upon completion of the <see cref="T:System.Activities.ActivityAction`16" />.</summary>
+        <returns>An instance of an activity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1611,9 +1652,9 @@
         <Parameter Name="activity" Type="System.Activities.Activity" />
       </Parameters>
       <Docs>
-        <param name="activity">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="activity">A child activity that is triggered by an event that occurs in the execution of a parent <see cref="T:System.Activities.NativeActivity" />.</param>
+        <summary>Schedules the specified <see cref="T:System.Activities.NativeActivity" /> child activity for execution.</summary>
+        <returns>An activity instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1634,10 +1675,10 @@
         <Parameter Name="onCompleted" Type="System.Activities.CompletionCallback" />
       </Parameters>
       <Docs>
-        <param name="activity">To be added.</param>
-        <param name="onCompleted">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="activity">A child activity that is triggered by an event that occurs in the execution of a parent <see cref="T:System.Activities.NativeActivity" />.</param>
+        <param name="onCompleted">A bookmark that indicates where the parent activity execution resumes upon completion of the <see cref="T:System.Activities.ActivityAction" />.</param>
+        <summary>Schedules the specified <see cref="T:System.Activities.NativeActivity" /> child activity for execution using the specified completion callback location where the parent process resumes upon completion of the activity.</summary>
+        <returns>An activity instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1658,10 +1699,10 @@
         <Parameter Name="onFaulted" Type="System.Activities.FaultCallback" />
       </Parameters>
       <Docs>
-        <param name="activity">To be added.</param>
-        <param name="onFaulted">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="activity">A child activity that is triggered by an event that occurs in the execution of a parent <see cref="T:System.Activities.NativeActivity" />.</param>
+        <param name="onFaulted">A bookmark that indicates where the parent activity execution resumes if an error causes the termination of the <see cref="T:System.Activities.ActivityAction" />.</param>
+        <summary>Schedules the specified <see cref="T:System.Activities.NativeActivity" /> child activity for execution using the specified fault callback location where the parent process resumes when the activity enters the faulted state.</summary>
+        <returns>An activity instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1683,11 +1724,11 @@
         <Parameter Name="onFaulted" Type="System.Activities.FaultCallback" />
       </Parameters>
       <Docs>
-        <param name="activity">To be added.</param>
-        <param name="onCompleted">To be added.</param>
-        <param name="onFaulted">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="activity">A child activity that is triggered by an event that occurs in the execution of a parent <see cref="T:System.Activities.NativeActivity" />.</param>
+        <param name="onCompleted">A bookmark that indicates where the <see cref="T:System.Activities.NativeActivity" /> execution resumes upon completion of the <see cref="T:System.Activities.ActivityAction" />.</param>
+        <param name="onFaulted">A bookmark that indicates where the <see cref="T:System.Activities.NativeActivity" /> execution resumes if an error causes the termination of the <see cref="T:System.Activities.ActivityAction" />.</param>
+        <summary>Schedules the specified <see cref="T:System.Activities.NativeActivity" /> child activity for execution and bookmarks the specified callback locations where the parent process resumes upon completion of the child activity.</summary>
+        <returns>An instance of an activity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1712,12 +1753,12 @@
         <Parameter Name="onFaulted" Type="System.Activities.FaultCallback" />
       </Parameters>
       <Docs>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="activity">To be added.</param>
-        <param name="onCompleted">To be added.</param>
-        <param name="onFaulted">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TResult">The type of the <see cref="T:System.Activities.NativeActivity" /> child activity <see langword="out" /> argument.</typeparam>
+        <param name="activity">A child activity that is triggered by an event that occurs in the execution of a parent <see cref="T:System.Activities.NativeActivity" />.</param>
+        <param name="onCompleted">A bookmark that indicates where the <see cref="T:System.Activities.NativeActivity" /> execution resumes upon completion of the <see cref="T:System.Activities.ActivityAction`1" />.</param>
+        <param name="onFaulted">A bookmark that indicates where the <see cref="T:System.Activities.NativeActivity" /> execution resumes if an error causes the termination of the <see cref="T:System.Activities.ActivityAction" />.</param>
+        <summary>Schedules the specified <see cref="T:System.Activities.NativeActivity" /> child activity for execution, with one parameter for an <see langword="in" /> argument, and bookmarks the specified callback locations where the parent process resumes upon completion of the <see cref="T:System.Activities.ActivityAction`1" />.</summary>
+        <returns>An instance of an activity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1740,12 +1781,12 @@
         <Parameter Name="onFaulted" Type="System.Activities.FaultCallback" />
       </Parameters>
       <Docs>
-        <param name="activityDelegate">To be added.</param>
-        <param name="inputParameters">To be added.</param>
-        <param name="onCompleted">To be added.</param>
-        <param name="onFaulted">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="activityDelegate">The callback method to which an activity returns when the specified activity action completes.</param>
+        <param name="inputParameters">A dictionary list of activity argument names and values.</param>
+        <param name="onCompleted">A bookmark that indicates where the parent activity execution resumes upon completion of the <see cref="T:System.Activities.ActivityAction" />.</param>
+        <param name="onFaulted">A bookmark that indicates where the parent activity execution resumes if an error causes the termination of the <see cref="T:System.Activities.ActivityAction" />.</param>
+        <summary>Pushes the callback method for an activity into the work item pool.</summary>
+        <returns>An instance of an activity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1770,12 +1811,12 @@
         <Parameter Name="onFaulted" Type="System.Activities.FaultCallback" />
       </Parameters>
       <Docs>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="activityFunc">To be added.</param>
-        <param name="onCompleted">To be added.</param>
-        <param name="onFaulted">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TResult">The type of the <see cref="T:System.Activities.NativeActivity" /> child activity <see langword="out" /> argument.</typeparam>
+        <param name="activityFunc">A child activity that runs when a specific event occurs in the parent activity and returns a value.</param>
+        <param name="onCompleted">A bookmark that indicates where the parent activity execution resumes upon completion of the <see cref="T:System.Activities.ActivityFunc`1" />.</param>
+        <param name="onFaulted">A bookmark that indicates where the parent activity execution resumes if an error causes the termination of the <see cref="T:System.Activities.ActivityFunc`1" />.</param>
+        <summary>Schedules for execution a specified <see cref="T:System.Activities.ActivityFunc`1" /> with one parameter that holds a return value and bookmarks the specified callback locations where the parent process resumes upon completion of the <see cref="T:System.Activities.ActivityFunc`1" />.</summary>
+        <returns>An instance of an activity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1802,14 +1843,14 @@
         <Parameter Name="onFaulted" Type="System.Activities.FaultCallback" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="activityFunc">To be added.</param>
-        <param name="argument">To be added.</param>
-        <param name="onCompleted">To be added.</param>
-        <param name="onFaulted">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The data that is carried into an activity.</typeparam>
+        <typeparam name="TResult">The type of the <see cref="T:System.Activities.NativeActivity" /> child activity <see langword="out" /> argument.</typeparam>
+        <param name="activityFunc">A child activity that runs when a specific event occurs in the parent activity and returns a value.</param>
+        <param name="argument">An argument that carries data into an activity.</param>
+        <param name="onCompleted">A bookmark that indicates where the parent activity execution resumes upon completion of the <see cref="T:System.Activities.ActivityFunc`2" />.</param>
+        <param name="onFaulted">A bookmark that indicates where the parent activity execution resumes if an error causes the termination of the <see cref="T:System.Activities.ActivityFunc`2" />.</param>
+        <summary>Schedules for execution a specified <see cref="T:System.Activities.ActivityFunc`2" /> that has two parameters for a return value and an <see langword="in" /> argument and that bookmarks the specified callback locations where the parent process resumes upon completion of the <see cref="T:System.Activities.ActivityFunc`2" />.</summary>
+        <returns>An instance of an activity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1838,16 +1879,16 @@
         <Parameter Name="onFaulted" Type="System.Activities.FaultCallback" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="activityFunc">To be added.</param>
-        <param name="argument1">To be added.</param>
-        <param name="argument2">To be added.</param>
-        <param name="onCompleted">To be added.</param>
-        <param name="onFaulted">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The data that is carried into an activity.</typeparam>
+        <typeparam name="T2">The data that is carried into an activity.</typeparam>
+        <typeparam name="TResult">The type of the <see cref="T:System.Activities.NativeActivity" /> child activity <see langword="out" /> argument.</typeparam>
+        <param name="activityFunc">A child activity that runs when a specific event occurs in the parent activity and returns a value.</param>
+        <param name="argument1">An argument that carries data into an activity.</param>
+        <param name="argument2">An argument that carries data into an activity.</param>
+        <param name="onCompleted">A bookmark that indicates where the parent activity execution resumes upon completion of the <see cref="T:System.Activities.ActivityFunc`3" />.</param>
+        <param name="onFaulted">A bookmark that indicates where the parent activity execution resumes if an error causes the termination of the <see cref="T:System.Activities.ActivityFunc`3" />.</param>
+        <summary>Schedules for execution a specified <see cref="T:System.Activities.ActivityFunc`3" /> that has three parameters for a return value and <see langword="in" /> arguments and that bookmarks the specified callback locations where the parent process resumes upon completion of the <see cref="T:System.Activities.ActivityFunc`3" />.</summary>
+        <returns>An instance of an activity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1878,18 +1919,18 @@
         <Parameter Name="onFaulted" Type="System.Activities.FaultCallback" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="activityFunc">To be added.</param>
-        <param name="argument1">To be added.</param>
-        <param name="argument2">To be added.</param>
-        <param name="argument3">To be added.</param>
-        <param name="onCompleted">To be added.</param>
-        <param name="onFaulted">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The data that is carried into an activity.</typeparam>
+        <typeparam name="T2">The data that is carried into an activity.</typeparam>
+        <typeparam name="T3">The data that is carried into an activity.</typeparam>
+        <typeparam name="TResult">The type of the <see cref="T:System.Activities.NativeActivity" /> child activity <see langword="out" /> argument.</typeparam>
+        <param name="activityFunc">A child activity that runs when a specific event occurs in the parent activity and returns a value.</param>
+        <param name="argument1">An argument that carries data into an activity.</param>
+        <param name="argument2">An argument that carries data into an activity.</param>
+        <param name="argument3">An argument that carries data into an activity.</param>
+        <param name="onCompleted">A bookmark that indicates where the parent activity execution resumes upon completion of the <see cref="T:System.Activities.ActivityFunc`4" />.</param>
+        <param name="onFaulted">A bookmark that indicates where the parent activity execution resumes if an error causes the termination of the <see cref="T:System.Activities.ActivityFunc`4" />.</param>
+        <summary>Schedules for execution a specified <see cref="T:System.Activities.ActivityFunc`4" /> that has four parameters for a return value and <see langword="in" /> arguments and that bookmarks the specified callback locations where the parent process resumes upon completion of the <see cref="T:System.Activities.ActivityFunc`4" />.</summary>
+        <returns>An instance of an activity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1922,20 +1963,20 @@
         <Parameter Name="onFaulted" Type="System.Activities.FaultCallback" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="activityFunc">To be added.</param>
-        <param name="argument1">To be added.</param>
-        <param name="argument2">To be added.</param>
-        <param name="argument3">To be added.</param>
-        <param name="argument4">To be added.</param>
-        <param name="onCompleted">To be added.</param>
-        <param name="onFaulted">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The data that is carried into an activity.</typeparam>
+        <typeparam name="T2">The data that is carried into an activity.</typeparam>
+        <typeparam name="T3">The data that is carried into an activity.</typeparam>
+        <typeparam name="T4">The data that is carried into an activity.</typeparam>
+        <typeparam name="TResult">The type of the <see cref="T:System.Activities.NativeActivity" /> child activity <see langword="out" /> argument.</typeparam>
+        <param name="activityFunc">A child activity that runs when a specific event occurs in the parent activity and returns a value.</param>
+        <param name="argument1">An argument that carries data into an activity.</param>
+        <param name="argument2">An argument that carries data into an activity.</param>
+        <param name="argument3">An argument that carries data into an activity.</param>
+        <param name="argument4">An argument that carries data into an activity.</param>
+        <param name="onCompleted">A bookmark that indicates where the parent activity execution resumes upon completion of the <see cref="T:System.Activities.ActivityFunc`5" />.</param>
+        <param name="onFaulted">A bookmark that indicates where the parent activity execution resumes if an error causes the termination of the <see cref="T:System.Activities.ActivityFunc`5" />.</param>
+        <summary>Schedules for execution a specified <see cref="T:System.Activities.ActivityFunc`5" /> that has five parameters for a return value and <see langword="in" /> arguments and that bookmarks the specified callback locations where the parent process resumes upon completion of the <see cref="T:System.Activities.ActivityFunc`5" />.</summary>
+        <returns>An instance of an activity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1970,22 +2011,22 @@
         <Parameter Name="onFaulted" Type="System.Activities.FaultCallback" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="activityFunc">To be added.</param>
-        <param name="argument1">To be added.</param>
-        <param name="argument2">To be added.</param>
-        <param name="argument3">To be added.</param>
-        <param name="argument4">To be added.</param>
-        <param name="argument5">To be added.</param>
-        <param name="onCompleted">To be added.</param>
-        <param name="onFaulted">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The data that is carried into an activity.</typeparam>
+        <typeparam name="T2">The data that is carried into an activity.</typeparam>
+        <typeparam name="T3">The data that is carried into an activity.</typeparam>
+        <typeparam name="T4">The data that is carried into an activity.</typeparam>
+        <typeparam name="T5">The data that is carried into an activity.</typeparam>
+        <typeparam name="TResult">The type of the <see cref="T:System.Activities.NativeActivity" /> child activity <see langword="out" /> argument.</typeparam>
+        <param name="activityFunc">A child activity that runs when a specific event occurs in the parent activity and returns a value.</param>
+        <param name="argument1">An argument that carries data into an activity.</param>
+        <param name="argument2">An argument that carries data into an activity.</param>
+        <param name="argument3">An argument that carries data into an activity.</param>
+        <param name="argument4">An argument that carries data into an activity.</param>
+        <param name="argument5">An argument that carries data into an activity.</param>
+        <param name="onCompleted">A bookmark that indicates where the parent activity execution resumes upon completion of the <see cref="T:System.Activities.ActivityFunc`6" />.</param>
+        <param name="onFaulted">A bookmark that indicates where the parent activity execution resumes if an error causes the termination of the <see cref="T:System.Activities.ActivityFunc`6" />.</param>
+        <summary>Schedules for execution a specified <see cref="T:System.Activities.ActivityFunc`6" /> that has six parameters for a return value and <see langword="in" /> arguments and that bookmarks the specified callback locations where the parent process resumes upon completion of the <see cref="T:System.Activities.ActivityFunc`6" />.</summary>
+        <returns>An instance of an activity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2022,24 +2063,24 @@
         <Parameter Name="onFaulted" Type="System.Activities.FaultCallback" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="activityFunc">To be added.</param>
-        <param name="argument1">To be added.</param>
-        <param name="argument2">To be added.</param>
-        <param name="argument3">To be added.</param>
-        <param name="argument4">To be added.</param>
-        <param name="argument5">To be added.</param>
-        <param name="argument6">To be added.</param>
-        <param name="onCompleted">To be added.</param>
-        <param name="onFaulted">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The data that is carried into an activity.</typeparam>
+        <typeparam name="T2">The data that is carried into an activity.</typeparam>
+        <typeparam name="T3">The data that is carried into an activity.</typeparam>
+        <typeparam name="T4">The data that is carried into an activity.</typeparam>
+        <typeparam name="T5">The data that is carried into an activity.</typeparam>
+        <typeparam name="T6">The data that is carried into an activity.</typeparam>
+        <typeparam name="TResult">The type of the <see cref="T:System.Activities.NativeActivity" /> child activity <see langword="out" /> argument.</typeparam>
+        <param name="activityFunc">A child activity that runs when a specific event occurs in the parent activity and returns a value.</param>
+        <param name="argument1">An argument that carries data into an activity.</param>
+        <param name="argument2">An argument that carries data into an activity.</param>
+        <param name="argument3">An argument that carries data into an activity.</param>
+        <param name="argument4">An argument that carries data into an activity.</param>
+        <param name="argument5">An argument that carries data into an activity.</param>
+        <param name="argument6">An argument that carries data into an activity.</param>
+        <param name="onCompleted">A bookmark that indicates where the parent activity execution resumes upon completion of the <see cref="T:System.Activities.ActivityFunc`7" />.</param>
+        <param name="onFaulted">A bookmark that indicates where the parent activity execution resumes if an error causes the termination of the <see cref="T:System.Activities.ActivityFunc`7" />.</param>
+        <summary>Schedules for execution a specified <see cref="T:System.Activities.ActivityFunc`7" /> that has seven parameters for a return value and <see langword="in" /> arguments and that bookmarks the specified callback locations where the parent process resumes upon completion of the <see cref="T:System.Activities.ActivityFunc`7" />.</summary>
+        <returns>An instance of an activity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2078,26 +2119,26 @@
         <Parameter Name="onFaulted" Type="System.Activities.FaultCallback" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="activityFunc">To be added.</param>
-        <param name="argument1">To be added.</param>
-        <param name="argument2">To be added.</param>
-        <param name="argument3">To be added.</param>
-        <param name="argument4">To be added.</param>
-        <param name="argument5">To be added.</param>
-        <param name="argument6">To be added.</param>
-        <param name="argument7">To be added.</param>
-        <param name="onCompleted">To be added.</param>
-        <param name="onFaulted">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The data that is carried into an activity.</typeparam>
+        <typeparam name="T2">The data that is carried into an activity.</typeparam>
+        <typeparam name="T3">The data that is carried into an activity.</typeparam>
+        <typeparam name="T4">The data that is carried into an activity.</typeparam>
+        <typeparam name="T5">The data that is carried into an activity.</typeparam>
+        <typeparam name="T6">The data that is carried into an activity.</typeparam>
+        <typeparam name="T7">The data that is carried into an activity.</typeparam>
+        <typeparam name="TResult">The type of the <see cref="T:System.Activities.NativeActivity" /> child activity <see langword="out" /> argument.</typeparam>
+        <param name="activityFunc">A child activity that runs when a specific event occurs in the parent activity and returns a value.</param>
+        <param name="argument1">An argument that carries data into an activity.</param>
+        <param name="argument2">An argument that carries data into an activity.</param>
+        <param name="argument3">An argument that carries data into an activity.</param>
+        <param name="argument4">An argument that carries data into an activity.</param>
+        <param name="argument5">An argument that carries data into an activity.</param>
+        <param name="argument6">An argument that carries data into an activity.</param>
+        <param name="argument7">An argument that carries data into an activity.</param>
+        <param name="onCompleted">A bookmark that indicates where the parent activity execution resumes upon completion of the <see cref="T:System.Activities.ActivityFunc`8" />.</param>
+        <param name="onFaulted">A bookmark that indicates where the parent activity execution resumes if an error causes the termination of the <see cref="T:System.Activities.ActivityFunc`8" />.</param>
+        <summary>Schedules for execution a specified <see cref="T:System.Activities.ActivityFunc`8" /> that has eight parameters for a return value and <see langword="in" /> arguments and that bookmarks the specified callback locations where the parent process resumes upon completion of the <see cref="T:System.Activities.ActivityFunc`8" />.</summary>
+        <returns>An instance of an activity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2138,28 +2179,28 @@
         <Parameter Name="onFaulted" Type="System.Activities.FaultCallback" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="activityFunc">To be added.</param>
-        <param name="argument1">To be added.</param>
-        <param name="argument2">To be added.</param>
-        <param name="argument3">To be added.</param>
-        <param name="argument4">To be added.</param>
-        <param name="argument5">To be added.</param>
-        <param name="argument6">To be added.</param>
-        <param name="argument7">To be added.</param>
-        <param name="argument8">To be added.</param>
-        <param name="onCompleted">To be added.</param>
-        <param name="onFaulted">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The data that is carried into an activity.</typeparam>
+        <typeparam name="T2">The data that is carried into an activity.</typeparam>
+        <typeparam name="T3">The data that is carried into an activity.</typeparam>
+        <typeparam name="T4">The data that is carried into an activity.</typeparam>
+        <typeparam name="T5">The data that is carried into an activity.</typeparam>
+        <typeparam name="T6">The data that is carried into an activity.</typeparam>
+        <typeparam name="T7">The data that is carried into an activity.</typeparam>
+        <typeparam name="T8">The data that is carried into an activity.</typeparam>
+        <typeparam name="TResult">The type of the <see cref="T:System.Activities.NativeActivity" /> child activity <see langword="out" /> argument.</typeparam>
+        <param name="activityFunc">A child activity that runs when a specific event occurs in the parent activity and returns a value.</param>
+        <param name="argument1">An argument that carries data into an activity.</param>
+        <param name="argument2">An argument that carries data into an activity.</param>
+        <param name="argument3">An argument that carries data into an activity.</param>
+        <param name="argument4">An argument that carries data into an activity.</param>
+        <param name="argument5">An argument that carries data into an activity.</param>
+        <param name="argument6">An argument that carries data into an activity.</param>
+        <param name="argument7">An argument that carries data into an activity.</param>
+        <param name="argument8">An argument that carries data into an activity.</param>
+        <param name="onCompleted">A bookmark that indicates where the parent activity execution resumes upon completion of the <see cref="T:System.Activities.ActivityFunc`9" />.</param>
+        <param name="onFaulted">A bookmark that indicates where the parent activity execution resumes if an error causes the termination of the <see cref="T:System.Activities.ActivityFunc`9" />.</param>
+        <summary>Schedules for execution a specified <see cref="T:System.Activities.ActivityFunc`9" /> that has nine parameters for a return value and <see langword="in" /> arguments and that bookmarks the specified callback locations where the parent process resumes upon completion of the <see cref="T:System.Activities.ActivityFunc`9" />.</summary>
+        <returns>An instance of an activity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2202,30 +2243,30 @@
         <Parameter Name="onFaulted" Type="System.Activities.FaultCallback" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="activityFunc">To be added.</param>
-        <param name="argument1">To be added.</param>
-        <param name="argument2">To be added.</param>
-        <param name="argument3">To be added.</param>
-        <param name="argument4">To be added.</param>
-        <param name="argument5">To be added.</param>
-        <param name="argument6">To be added.</param>
-        <param name="argument7">To be added.</param>
-        <param name="argument8">To be added.</param>
-        <param name="argument9">To be added.</param>
-        <param name="onCompleted">To be added.</param>
-        <param name="onFaulted">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The data that is carried into an activity.</typeparam>
+        <typeparam name="T2">The data that is carried into an activity.</typeparam>
+        <typeparam name="T3">The data that is carried into an activity.</typeparam>
+        <typeparam name="T4">The data that is carried into an activity.</typeparam>
+        <typeparam name="T5">The data that is carried into an activity.</typeparam>
+        <typeparam name="T6">The data that is carried into an activity.</typeparam>
+        <typeparam name="T7">The data that is carried into an activity.</typeparam>
+        <typeparam name="T8">The data that is carried into an activity.</typeparam>
+        <typeparam name="T9">The data that is carried into an activity.</typeparam>
+        <typeparam name="TResult">The type of the child activity out argument.</typeparam>
+        <param name="activityFunc">A child activity that runs when a specific event occurs in the parent activity and returns a value.</param>
+        <param name="argument1">An argument that carries data into an activity.</param>
+        <param name="argument2">An argument that carries data into an activity.</param>
+        <param name="argument3">An argument that carries data into an activity.</param>
+        <param name="argument4">An argument that carries data into an activity.</param>
+        <param name="argument5">An argument that carries data into an activity.</param>
+        <param name="argument6">An argument that carries data into an activity.</param>
+        <param name="argument7">An argument that carries data into an activity.</param>
+        <param name="argument8">An argument that carries data into an activity.</param>
+        <param name="argument9">An argument that carries data into an activity.</param>
+        <param name="onCompleted">A bookmark that indicates where the parent activity execution resumes upon completion of the <see cref="T:System.Activities.ActivityFunc`10" />.</param>
+        <param name="onFaulted">A bookmark that indicates where the parent activity execution resumes if an error causes the termination of the <see cref="T:System.Activities.ActivityFunc`10" />.</param>
+        <summary>Schedules for execution a specified <see cref="T:System.Activities.ActivityFunc`10" /> that has ten parameters for a return value and <see langword="in" /> arguments and bookmarks the specified callback locations where the parent process resumes upon completion of the <see cref="T:System.Activities.ActivityFunc`10" />.</summary>
+        <returns>An instance of an activity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2270,32 +2311,32 @@
         <Parameter Name="onFaulted" Type="System.Activities.FaultCallback" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="activityFunc">To be added.</param>
-        <param name="argument1">To be added.</param>
-        <param name="argument2">To be added.</param>
-        <param name="argument3">To be added.</param>
-        <param name="argument4">To be added.</param>
-        <param name="argument5">To be added.</param>
-        <param name="argument6">To be added.</param>
-        <param name="argument7">To be added.</param>
-        <param name="argument8">To be added.</param>
-        <param name="argument9">To be added.</param>
-        <param name="argument10">To be added.</param>
-        <param name="onCompleted">To be added.</param>
-        <param name="onFaulted">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The data that is carried into an activity.</typeparam>
+        <typeparam name="T2">The data that is carried into an activity.</typeparam>
+        <typeparam name="T3">The data that is carried into an activity.</typeparam>
+        <typeparam name="T4">The data that is carried into an activity.</typeparam>
+        <typeparam name="T5">The data that is carried into an activity.</typeparam>
+        <typeparam name="T6">The data that is carried into an activity.</typeparam>
+        <typeparam name="T7">The data that is carried into an activity.</typeparam>
+        <typeparam name="T8">The data that is carried into an activity.</typeparam>
+        <typeparam name="T9">The data that is carried into an activity.</typeparam>
+        <typeparam name="T10">The data that is carried into an activity.</typeparam>
+        <typeparam name="TResult">The type of the <see cref="T:System.Activities.NativeActivity" /> child activity out argument.</typeparam>
+        <param name="activityFunc">A child activity that runs when a specific event occurs in the parent activity and returns a value.</param>
+        <param name="argument1">An argument that carries data into an activity.</param>
+        <param name="argument2">An argument that carries data into an activity.</param>
+        <param name="argument3">An argument that carries data into an activity.</param>
+        <param name="argument4">An argument that carries data into an activity.</param>
+        <param name="argument5">An argument that carries data into an activity.</param>
+        <param name="argument6">An argument that carries data into an activity.</param>
+        <param name="argument7">An argument that carries data into an activity.</param>
+        <param name="argument8">An argument that carries data into an activity.</param>
+        <param name="argument9">An argument that carries data into an activity.</param>
+        <param name="argument10">An argument that carries data into an activity.</param>
+        <param name="onCompleted">A bookmark that indicates where the parent activity execution resumes upon completion of the <see cref="T:System.Activities.ActivityFunc`11" />.</param>
+        <param name="onFaulted">A bookmark that indicates where the parent activity execution resumes if an error causes the termination of the <see cref="T:System.Activities.ActivityFunc`11" />.</param>
+        <summary>Schedules for execution a specified <see cref="T:System.Activities.ActivityFunc`11" /> that has eleven parameters for a return value and in arguments, and bookmarks the specified callback locations where the parent process resumes upon completion of the <see cref="T:System.Activities.ActivityFunc`11" />.</summary>
+        <returns>An instance of an activity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2342,34 +2383,34 @@
         <Parameter Name="onFaulted" Type="System.Activities.FaultCallback" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <typeparam name="T11">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="activityFunc">To be added.</param>
-        <param name="argument1">To be added.</param>
-        <param name="argument2">To be added.</param>
-        <param name="argument3">To be added.</param>
-        <param name="argument4">To be added.</param>
-        <param name="argument5">To be added.</param>
-        <param name="argument6">To be added.</param>
-        <param name="argument7">To be added.</param>
-        <param name="argument8">To be added.</param>
-        <param name="argument9">To be added.</param>
-        <param name="argument10">To be added.</param>
-        <param name="argument11">To be added.</param>
-        <param name="onCompleted">To be added.</param>
-        <param name="onFaulted">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The data that is carried into an activity.</typeparam>
+        <typeparam name="T2">The data that is carried into an activity.</typeparam>
+        <typeparam name="T3">The data that is carried into an activity.</typeparam>
+        <typeparam name="T4">The data that is carried into an activity.</typeparam>
+        <typeparam name="T5">The data that is carried into an activity.</typeparam>
+        <typeparam name="T6">The data that is carried into an activity.</typeparam>
+        <typeparam name="T7">The data that is carried into an activity.</typeparam>
+        <typeparam name="T8">The data that is carried into an activity.</typeparam>
+        <typeparam name="T9">The data that is carried into an activity.</typeparam>
+        <typeparam name="T10">The data that is carried into an activity.</typeparam>
+        <typeparam name="T11">The data that is carried into an activity.</typeparam>
+        <typeparam name="TResult">The type of the child activity out argument.</typeparam>
+        <param name="activityFunc">A child activity that runs when a specific event occurs in the parent activity and returns a value.</param>
+        <param name="argument1">An argument that carries data into an activity.</param>
+        <param name="argument2">An argument that carries data into an activity.</param>
+        <param name="argument3">An argument that carries data into an activity.</param>
+        <param name="argument4">An argument that carries data into an activity.</param>
+        <param name="argument5">An argument that carries data into an activity.</param>
+        <param name="argument6">An argument that carries data into an activity.</param>
+        <param name="argument7">An argument that carries data into an activity.</param>
+        <param name="argument8">An argument that carries data into an activity.</param>
+        <param name="argument9">An argument that carries data into an activity.</param>
+        <param name="argument10">An argument that carries data into an activity.</param>
+        <param name="argument11">An argument that carries data into an activity.</param>
+        <param name="onCompleted">A bookmark that indicates where the parent activity execution resumes upon completion of the <see cref="T:System.Activities.ActivityFunc`12" />.</param>
+        <param name="onFaulted">A bookmark that indicates where the parent activity execution resumes if an error causes the termination of the <see cref="T:System.Activities.ActivityFunc`12" />.</param>
+        <summary>Schedules for execution a specified <see cref="T:System.Activities.ActivityFunc`12" /> that has twelve parameters for a return value and <see langword="in" /> arguments and that bookmarks the specified callback locations where the parent process resumes upon completion of the <see cref="T:System.Activities.ActivityFunc`12" />.</summary>
+        <returns>An instance of an activity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2418,36 +2459,36 @@
         <Parameter Name="onFaulted" Type="System.Activities.FaultCallback" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <typeparam name="T11">To be added.</typeparam>
-        <typeparam name="T12">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="activityFunc">To be added.</param>
-        <param name="argument1">To be added.</param>
-        <param name="argument2">To be added.</param>
-        <param name="argument3">To be added.</param>
-        <param name="argument4">To be added.</param>
-        <param name="argument5">To be added.</param>
-        <param name="argument6">To be added.</param>
-        <param name="argument7">To be added.</param>
-        <param name="argument8">To be added.</param>
-        <param name="argument9">To be added.</param>
-        <param name="argument10">To be added.</param>
-        <param name="argument11">To be added.</param>
-        <param name="argument12">To be added.</param>
-        <param name="onCompleted">To be added.</param>
-        <param name="onFaulted">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The data that is carried into an activity.</typeparam>
+        <typeparam name="T2">The data that is carried into an activity.</typeparam>
+        <typeparam name="T3">The data that is carried into an activity.</typeparam>
+        <typeparam name="T4">The data that is carried into an activity.</typeparam>
+        <typeparam name="T5">The data that is carried into an activity.</typeparam>
+        <typeparam name="T6">The data that is carried into an activity.</typeparam>
+        <typeparam name="T7">The data that is carried into an activity.</typeparam>
+        <typeparam name="T8">The data that is carried into an activity.</typeparam>
+        <typeparam name="T9">The data that is carried into an activity.</typeparam>
+        <typeparam name="T10">The data that is carried into an activity.</typeparam>
+        <typeparam name="T11">The data that is carried into an activity.</typeparam>
+        <typeparam name="T12">The data that is carried into an activity.</typeparam>
+        <typeparam name="TResult">The type of the <see cref="T:System.Activities.NativeActivity" /> child activity out argument.</typeparam>
+        <param name="activityFunc">A child activity that runs when a specific event occurs in the parent activity and returns a value.</param>
+        <param name="argument1">An argument that carries data into an activity.</param>
+        <param name="argument2">An argument that carries data into an activity.</param>
+        <param name="argument3">An argument that carries data into an activity.</param>
+        <param name="argument4">An argument that carries data into an activity.</param>
+        <param name="argument5">An argument that carries data into an activity.</param>
+        <param name="argument6">An argument that carries data into an activity.</param>
+        <param name="argument7">An argument that carries data into an activity.</param>
+        <param name="argument8">An argument that carries data into an activity.</param>
+        <param name="argument9">An argument that carries data into an activity.</param>
+        <param name="argument10">An argument that carries data into an activity.</param>
+        <param name="argument11">An argument that carries data into an activity.</param>
+        <param name="argument12">An argument that carries data into an activity.</param>
+        <param name="onCompleted">A bookmark that indicates where the parent activity execution resumes upon completion of the <see cref="T:System.Activities.ActivityFunc`13" />.</param>
+        <param name="onFaulted">A bookmark that indicates where the parent activity execution resumes if an error causes the termination of the <see cref="T:System.Activities.ActivityFunc`13" />.</param>
+        <summary>Schedules for execution a specified <see cref="T:System.Activities.ActivityFunc`13" /> that has thirteen parameters for a return value and <see langword="in" /> arguments and bookmarks the specified callback locations where the parent process resumes upon completion of the <see cref="T:System.Activities.ActivityFunc`13" />.</summary>
+        <returns>An instance of an activity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2498,38 +2539,38 @@
         <Parameter Name="onFaulted" Type="System.Activities.FaultCallback" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <typeparam name="T11">To be added.</typeparam>
-        <typeparam name="T12">To be added.</typeparam>
-        <typeparam name="T13">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="activityFunc">To be added.</param>
-        <param name="argument1">To be added.</param>
-        <param name="argument2">To be added.</param>
-        <param name="argument3">To be added.</param>
-        <param name="argument4">To be added.</param>
-        <param name="argument5">To be added.</param>
-        <param name="argument6">To be added.</param>
-        <param name="argument7">To be added.</param>
-        <param name="argument8">To be added.</param>
-        <param name="argument9">To be added.</param>
-        <param name="argument10">To be added.</param>
-        <param name="argument11">To be added.</param>
-        <param name="argument12">To be added.</param>
-        <param name="argument13">To be added.</param>
-        <param name="onCompleted">To be added.</param>
-        <param name="onFaulted">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The data that is carried into an activity.</typeparam>
+        <typeparam name="T2">The data that is carried into an activity.</typeparam>
+        <typeparam name="T3">The data that is carried into an activity.</typeparam>
+        <typeparam name="T4">The data that is carried into an activity.</typeparam>
+        <typeparam name="T5">The data that is carried into an activity.</typeparam>
+        <typeparam name="T6">The data that is carried into an activity.</typeparam>
+        <typeparam name="T7">The data that is carried into an activity.</typeparam>
+        <typeparam name="T8">The data that is carried into an activity.</typeparam>
+        <typeparam name="T9">The data that is carried into an activity.</typeparam>
+        <typeparam name="T10">The data that is carried into an activity.</typeparam>
+        <typeparam name="T11">The data that is carried into an activity.</typeparam>
+        <typeparam name="T12">The data that is carried into an activity.</typeparam>
+        <typeparam name="T13">The data that is carried into an activity.</typeparam>
+        <typeparam name="TResult">The type of the <see cref="T:System.Activities.NativeActivity" /> child activity out argument.</typeparam>
+        <param name="activityFunc">A child activity that runs when a specific event occurs in the parent activity and returns a value.</param>
+        <param name="argument1">An argument that carries data into an activity.</param>
+        <param name="argument2">An argument that carries data into an activity.</param>
+        <param name="argument3">An argument that carries data into an activity.</param>
+        <param name="argument4">An argument that carries data into an activity.</param>
+        <param name="argument5">An argument that carries data into an activity.</param>
+        <param name="argument6">An argument that carries data into an activity.</param>
+        <param name="argument7">An argument that carries data into an activity.</param>
+        <param name="argument8">An argument that carries data into an activity.</param>
+        <param name="argument9">An argument that carries data into an activity.</param>
+        <param name="argument10">An argument that carries data into an activity.</param>
+        <param name="argument11">An argument that carries data into an activity.</param>
+        <param name="argument12">An argument that carries data into an activity.</param>
+        <param name="argument13">An argument that carries data into an activity.</param>
+        <param name="onCompleted">A bookmark that indicates where the parent activity execution resumes upon completion of the <see cref="T:System.Activities.ActivityFunc`14" />.</param>
+        <param name="onFaulted">A bookmark that indicates where the parent activity execution resumes if an error causes the termination of the <see cref="T:System.Activities.ActivityFunc`14" />.</param>
+        <summary>Schedules for execution a specified <see cref="T:System.Activities.ActivityFunc`14" /> that has fourteen parameters for a return value and <see langword="in" /> arguments and that bookmarks the specified callback locations where the parent process resumes upon completion of the <see cref="T:System.Activities.ActivityFunc`14" />.</summary>
+        <returns>An instance of an activity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2582,40 +2623,40 @@
         <Parameter Name="onFaulted" Type="System.Activities.FaultCallback" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <typeparam name="T11">To be added.</typeparam>
-        <typeparam name="T12">To be added.</typeparam>
-        <typeparam name="T13">To be added.</typeparam>
-        <typeparam name="T14">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="activityFunc">To be added.</param>
-        <param name="argument1">To be added.</param>
-        <param name="argument2">To be added.</param>
-        <param name="argument3">To be added.</param>
-        <param name="argument4">To be added.</param>
-        <param name="argument5">To be added.</param>
-        <param name="argument6">To be added.</param>
-        <param name="argument7">To be added.</param>
-        <param name="argument8">To be added.</param>
-        <param name="argument9">To be added.</param>
-        <param name="argument10">To be added.</param>
-        <param name="argument11">To be added.</param>
-        <param name="argument12">To be added.</param>
-        <param name="argument13">To be added.</param>
-        <param name="argument14">To be added.</param>
-        <param name="onCompleted">To be added.</param>
-        <param name="onFaulted">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The data that is carried into an activity.</typeparam>
+        <typeparam name="T2">The data that is carried into an activity.</typeparam>
+        <typeparam name="T3">The data that is carried into an activity.</typeparam>
+        <typeparam name="T4">The data that is carried into an activity.</typeparam>
+        <typeparam name="T5">The data that is carried into an activity.</typeparam>
+        <typeparam name="T6">The data that is carried into an activity.</typeparam>
+        <typeparam name="T7">The data that is carried into an activity.</typeparam>
+        <typeparam name="T8">The data that is carried into an activity.</typeparam>
+        <typeparam name="T9">The data that is carried into an activity.</typeparam>
+        <typeparam name="T10">The data that is carried into an activity.</typeparam>
+        <typeparam name="T11">The data that is carried into an activity.</typeparam>
+        <typeparam name="T12">The data that is carried into an activity.</typeparam>
+        <typeparam name="T13">The data that is carried into an activity.</typeparam>
+        <typeparam name="T14">The data that is carried into an activity.</typeparam>
+        <typeparam name="TResult">The type of the <see cref="T:System.Activities.NativeActivity" /> child activity out argument.</typeparam>
+        <param name="activityFunc">A child activity that runs when a specific event occurs in the parent activity and returns a value.</param>
+        <param name="argument1">An argument that carries data into an activity.</param>
+        <param name="argument2">An argument that carries data into an activity.</param>
+        <param name="argument3">An argument that carries data into an activity.</param>
+        <param name="argument4">An argument that carries data into an activity.</param>
+        <param name="argument5">An argument that carries data into an activity.</param>
+        <param name="argument6">An argument that carries data into an activity.</param>
+        <param name="argument7">An argument that carries data into an activity.</param>
+        <param name="argument8">An argument that carries data into an activity.</param>
+        <param name="argument9">An argument that carries data into an activity.</param>
+        <param name="argument10">An argument that carries data into an activity.</param>
+        <param name="argument11">An argument that carries data into an activity.</param>
+        <param name="argument12">An argument that carries data into an activity.</param>
+        <param name="argument13">An argument that carries data into an activity.</param>
+        <param name="argument14">An argument that carries data into an activity.</param>
+        <param name="onCompleted">A bookmark that indicates where the parent activity execution resumes upon completion of the <see cref="T:System.Activities.ActivityFunc`15" />.</param>
+        <param name="onFaulted">A bookmark that indicates where the parent activity execution resumes if an error causes the termination of the <see cref="T:System.Activities.ActivityFunc`15" />.</param>
+        <summary>Schedules for execution a specified <see cref="T:System.Activities.ActivityFunc`15" /> that has fifteen parameters for a return value and <see langword="in" /> arguments and that bookmarks the specified callback locations where the parent process resumes upon completion of the <see cref="T:System.Activities.ActivityFunc`15" />.</summary>
+        <returns>An instance of an activity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2670,42 +2711,42 @@
         <Parameter Name="onFaulted" Type="System.Activities.FaultCallback" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <typeparam name="T11">To be added.</typeparam>
-        <typeparam name="T12">To be added.</typeparam>
-        <typeparam name="T13">To be added.</typeparam>
-        <typeparam name="T14">To be added.</typeparam>
-        <typeparam name="T15">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="activityFunc">To be added.</param>
-        <param name="argument1">To be added.</param>
-        <param name="argument2">To be added.</param>
-        <param name="argument3">To be added.</param>
-        <param name="argument4">To be added.</param>
-        <param name="argument5">To be added.</param>
-        <param name="argument6">To be added.</param>
-        <param name="argument7">To be added.</param>
-        <param name="argument8">To be added.</param>
-        <param name="argument9">To be added.</param>
-        <param name="argument10">To be added.</param>
-        <param name="argument11">To be added.</param>
-        <param name="argument12">To be added.</param>
-        <param name="argument13">To be added.</param>
-        <param name="argument14">To be added.</param>
-        <param name="argument15">To be added.</param>
-        <param name="onCompleted">To be added.</param>
-        <param name="onFaulted">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The data that is carried into an activity.</typeparam>
+        <typeparam name="T2">The data that is carried into an activity.</typeparam>
+        <typeparam name="T3">The data that is carried into an activity.</typeparam>
+        <typeparam name="T4">The data that is carried into an activity.</typeparam>
+        <typeparam name="T5">The data that is carried into an activity.</typeparam>
+        <typeparam name="T6">The data that is carried into an activity.</typeparam>
+        <typeparam name="T7">The data that is carried into an activity.</typeparam>
+        <typeparam name="T8">The data that is carried into an activity.</typeparam>
+        <typeparam name="T9">The data that is carried into an activity.</typeparam>
+        <typeparam name="T10">The data that is carried into an activity.</typeparam>
+        <typeparam name="T11">The data that is carried into an activity.</typeparam>
+        <typeparam name="T12">The data that is carried into an activity.</typeparam>
+        <typeparam name="T13">The data that is carried into an activity.</typeparam>
+        <typeparam name="T14">The data that is carried into an activity.</typeparam>
+        <typeparam name="T15">The data that is carried into an activity.</typeparam>
+        <typeparam name="TResult">The type of the <see cref="T:System.Activities.NativeActivity" /> child activity out argument.</typeparam>
+        <param name="activityFunc">A child activity that runs when a specific event occurs in the parent activity and returns a value.</param>
+        <param name="argument1">An argument that carries data into an activity.</param>
+        <param name="argument2">An argument that carries data into an activity.</param>
+        <param name="argument3">An argument that carries data into an activity.</param>
+        <param name="argument4">An argument that carries data into an activity.</param>
+        <param name="argument5">An argument that carries data into an activity.</param>
+        <param name="argument6">An argument that carries data into an activity.</param>
+        <param name="argument7">An argument that carries data into an activity.</param>
+        <param name="argument8">An argument that carries data into an activity.</param>
+        <param name="argument9">An argument that carries data into an activity.</param>
+        <param name="argument10">An argument that carries data into an activity.</param>
+        <param name="argument11">An argument that carries data into an activity.</param>
+        <param name="argument12">An argument that carries data into an activity.</param>
+        <param name="argument13">An argument that carries data into an activity.</param>
+        <param name="argument14">An argument that carries data into an activity.</param>
+        <param name="argument15">An argument that carries data into an activity.</param>
+        <param name="onCompleted">A bookmark that indicates where the parent activity execution resumes upon completion of the <see cref="T:System.Activities.ActivityFunc`16" />.</param>
+        <param name="onFaulted">A bookmark that indicates where the parent activity execution resumes if an error causes the termination of the <see cref="T:System.Activities.ActivityFunc`16" />.</param>
+        <summary>Schedules for execution a specified <see cref="T:System.Activities.ActivityFunc`16" /> that has sixteen parameters for a return value and <see langword="in" /> arguments and that bookmarks the specified callback locations where the parent process resumes upon completion of the <see cref="T:System.Activities.ActivityFunc`16" />.</summary>
+        <returns>An instance of an activity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2762,44 +2803,44 @@
         <Parameter Name="onFaulted" Type="System.Activities.FaultCallback" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <typeparam name="T11">To be added.</typeparam>
-        <typeparam name="T12">To be added.</typeparam>
-        <typeparam name="T13">To be added.</typeparam>
-        <typeparam name="T14">To be added.</typeparam>
-        <typeparam name="T15">To be added.</typeparam>
-        <typeparam name="T16">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="activityFunc">To be added.</param>
-        <param name="argument1">To be added.</param>
-        <param name="argument2">To be added.</param>
-        <param name="argument3">To be added.</param>
-        <param name="argument4">To be added.</param>
-        <param name="argument5">To be added.</param>
-        <param name="argument6">To be added.</param>
-        <param name="argument7">To be added.</param>
-        <param name="argument8">To be added.</param>
-        <param name="argument9">To be added.</param>
-        <param name="argument10">To be added.</param>
-        <param name="argument11">To be added.</param>
-        <param name="argument12">To be added.</param>
-        <param name="argument13">To be added.</param>
-        <param name="argument14">To be added.</param>
-        <param name="argument15">To be added.</param>
-        <param name="argument16">To be added.</param>
-        <param name="onCompleted">To be added.</param>
-        <param name="onFaulted">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The data that is carried into an activity.</typeparam>
+        <typeparam name="T2">The data that is carried into an activity.</typeparam>
+        <typeparam name="T3">The data that is carried into an activity.</typeparam>
+        <typeparam name="T4">The data that is carried into an activity.</typeparam>
+        <typeparam name="T5">The data that is carried into an activity.</typeparam>
+        <typeparam name="T6">The data that is carried into an activity.</typeparam>
+        <typeparam name="T7">The data that is carried into an activity.</typeparam>
+        <typeparam name="T8">The data that is carried into an activity.</typeparam>
+        <typeparam name="T9">The data that is carried into an activity.</typeparam>
+        <typeparam name="T10">The data that is carried into an activity.</typeparam>
+        <typeparam name="T11">The data that is carried into an activity.</typeparam>
+        <typeparam name="T12">The data that is carried into an activity.</typeparam>
+        <typeparam name="T13">The data that is carried into an activity.</typeparam>
+        <typeparam name="T14">The data that is carried into an activity.</typeparam>
+        <typeparam name="T15">The data that is carried into an activity.</typeparam>
+        <typeparam name="T16">The data that is carried into an activity.</typeparam>
+        <typeparam name="TResult">The type of the <see cref="T:System.Activities.NativeActivity" /> child activity <see langword="out" /> argument.</typeparam>
+        <param name="activityFunc">A child activity that runs when a specific event occurs in the parent activity, and returns a value.</param>
+        <param name="argument1">An argument that carries data into an activity.</param>
+        <param name="argument2">An argument that carries data into an activity.</param>
+        <param name="argument3">An argument that carries data into an activity.</param>
+        <param name="argument4">An argument that carries data into an activity.</param>
+        <param name="argument5">An argument that carries data into an activity.</param>
+        <param name="argument6">An argument that carries data into an activity.</param>
+        <param name="argument7">An argument that carries data into an activity.</param>
+        <param name="argument8">An argument that carries data into an activity.</param>
+        <param name="argument9">An argument that carries data into an activity.</param>
+        <param name="argument10">An argument that carries data into an activity.</param>
+        <param name="argument11">An argument that carries data into an activity.</param>
+        <param name="argument12">An argument that carries data into an activity.</param>
+        <param name="argument13">An argument that carries data into an activity.</param>
+        <param name="argument14">An argument that carries data into an activity.</param>
+        <param name="argument15">An argument that carries data into an activity.</param>
+        <param name="argument16">An argument that carries data into an activity.</param>
+        <param name="onCompleted">A bookmark that indicates where the parent activity execution resumes upon completion of the <see cref="T:System.Activities.ActivityFunc`17" />.</param>
+        <param name="onFaulted">A bookmark that indicates where the parent activity execution resumes if an error causes the termination of the <see cref="T:System.Activities.ActivityFunc`17" />.</param>
+        <summary>Schedules for execution a specified <see cref="T:System.Activities.ActivityFunc`17" /> that has seventeen parameters for a return value and <see langword="in" /> arguments and that bookmarks the specified callback locations where the parent process resumes upon completion of the <see cref="T:System.Activities.ActivityFunc`17" />.</summary>
+        <returns>An instance of an activity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2820,9 +2861,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="variable">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="variable">A variable object without a specified type that can be assigned a value object.</param>
+        <param name="value">An object without a specified type that can be assigned to a variable object.</param>
+        <summary>Assigns the specified value object to the specified variable object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2846,10 +2887,10 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="variable">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <typeparam name="T">The type of the <c>variable</c> and <c>value</c>.</typeparam>
+        <param name="variable">A variable object with a specified type that can be assigned a value object.</param>
+        <param name="value">An object with a specified type that can be assigned to a variable object.</param>
+        <summary>Assigns the specified generic value object to the specified generic variable object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2869,8 +2910,8 @@
         <Parameter Name="record" Type="System.Activities.Tracking.CustomTrackingRecord" />
       </Parameters>
       <Docs>
-        <param name="record">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="record">The data sent to tracking participants when tracked events occur.</param>
+        <summary>Adds an activity tracking record to the current workflow instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

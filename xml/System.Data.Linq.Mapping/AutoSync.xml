@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Instructs the runtime how to retrieve the value after an insert or update operation.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Data.Linq.Mapping.AutoSync</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Always returns the value.</summary>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -43,7 +43,7 @@
         <ReturnType>System.Data.Linq.Mapping.AutoSync</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Automatically selects the value.</summary>
       </Docs>
     </Member>
     <Member MemberName="Never">
@@ -59,7 +59,7 @@
         <ReturnType>System.Data.Linq.Mapping.AutoSync</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Never returns the value.</summary>
       </Docs>
     </Member>
     <Member MemberName="OnInsert">
@@ -75,7 +75,7 @@
         <ReturnType>System.Data.Linq.Mapping.AutoSync</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Returns the value only after an insert operation.</summary>
       </Docs>
     </Member>
     <Member MemberName="OnUpdate">
@@ -91,7 +91,7 @@
         <ReturnType>System.Data.Linq.Mapping.AutoSync</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Returns the value only after an update operation.</summary>
       </Docs>
     </Member>
   </Members>

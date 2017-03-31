@@ -17,7 +17,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the <see cref="P:System.ComponentModel.Composition.PartCreationPolicyAttribute.CreationPolicy" /> for a part.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,8 +35,8 @@
         <Parameter Name="creationPolicy" Type="System.ComponentModel.Composition.CreationPolicy" />
       </Parameters>
       <Docs>
-        <param name="creationPolicy">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="creationPolicy">The creation policy to use.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.PartCreationPolicyAttribute" /> class with the specified creation policy.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,8 +54,8 @@
         <ReturnType>System.ComponentModel.Composition.CreationPolicy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates the creation policy of the attributed part.</summary>
+        <value>One of the <see cref="P:System.ComponentModel.Composition.PartCreationPolicyAttribute.CreationPolicy" /> values that indicates the creation policy of the attributed part. The default is <see cref="F:System.ComponentModel.Composition.CreationPolicy.Any" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

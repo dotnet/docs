@@ -11,8 +11,25 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides facilities for managing input languages in [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)].</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Additional languages can be registered by using the Regional and Language Options control panel. From the Languages tab, select "Text Services and input languages", then click the "Details" button to register additional languages. The following dialog appears.  
+  
+ ![Text services and input languages dialog.](~/add/media/tsf-dialog.PNG "Text services and input languages dialog.")  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use an <xref:System.Windows.Input.InputLanguageManager> to set the input language of a <xref:System.Windows.Controls.TextBox> element.  
+  
+ [!code-csharp[languageManager#1](~/samples/snippets/csharp/VS_Snippets_Wpf/languageManager/CSharp/Window1.xaml.cs#1)]
+ [!code-vb[languageManager#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/languageManager/visualbasic/window1.xaml.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AvailableInputLanguages">
@@ -28,9 +45,21 @@
         <ReturnType>System.Collections.IEnumerable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets an enumerator for currently available input languages.</summary>
+        <value>An enumerator for currently available input languages, or **null** if no input languages are available.  
+  
+ This property has no default value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use an <xref:System.Windows.Input.InputLanguageManager> to enumerate the available input languages.  
+  
+ [!code-csharp[languageManager#1](~/samples/snippets/csharp/VS_Snippets_Wpf/languageManager/CSharp/Window1.xaml.cs#1)]
+ [!code-vb[languageManager#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/languageManager/visualbasic/window1.xaml.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Current">
@@ -46,9 +75,21 @@
         <ReturnType>System.Windows.Input.InputLanguageManager</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the input language manager associated with the current context.</summary>
+        <value>An <see cref="T:System.Windows.Input.InputLanguageManager" /> object associated with the current context.  
+  
+ This property has no default value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use an <xref:System.Windows.Input.InputLanguageManager> to access the language manager associated with the current context.  
+  
+ [!code-csharp[languageManager#1](~/samples/snippets/csharp/VS_Snippets_Wpf/languageManager/CSharp/Window1.xaml.cs#1)]
+ [!code-vb[languageManager#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/languageManager/visualbasic/window1.xaml.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CurrentInputLanguage">
@@ -69,9 +110,22 @@
         <ReturnType>System.Globalization.CultureInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the current input language.</summary>
+        <value>A <see cref="T:System.Globalization.CultureInfo" /> object representing the currently selected input language.  This property may not be set to **null**.  
+  
+ The default value is <see cref="P:System.Globalization.CultureInfo.InvariantCulture" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use an <xref:System.Windows.Input.InputLanguageManager> to get the current input language.  
+  
+ [!code-csharp[languageManager#3](~/samples/snippets/csharp/VS_Snippets_Wpf/languageManager/CSharp/Window1.xaml.cs#3)]
+ [!code-vb[languageManager#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/languageManager/visualbasic/window1.xaml.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">Raised when an attempt is made to set this property to **null**.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetInputLanguage">
@@ -98,10 +152,21 @@
         <Parameter Name="target" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="target">The dependency object for which to retrieve the input language.</param>
+        <summary>Returns the value of the <see cref="P:System.Windows.Input.InputLanguageManager.InputLanguage" /> attached property for a specified dependency object.</summary>
+        <returns>A <see cref="T:System.Globalization.CultureInfo" /> object representing the input language for the specified dependency object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use an <xref:System.Windows.Input.InputLanguageManager> to get the input language of a <xref:System.Windows.Controls.TextBox> element.  
+  
+ [!code-csharp[languageManager#1](~/samples/snippets/csharp/VS_Snippets_Wpf/languageManager/CSharp/Window1.xaml.cs#1)]
+ [!code-vb[languageManager#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/languageManager/visualbasic/window1.xaml.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">Raised when <paramref name="target" /> is **null**.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetRestoreInputLanguage">
@@ -125,10 +190,11 @@
         <Parameter Name="target" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The dependency object for which to retrieve the value of <see cref="P:System.Windows.Input.InputLanguageManager.RestoreInputLanguage" />.</param>
+        <summary>Returns the value of <see cref="P:System.Windows.Input.InputLanguageManager.RestoreInputLanguage" /> attached property for a specified dependency object.</summary>
+        <returns>The current value of <see cref="P:System.Windows.Input.InputLanguageManager.RestoreInputLanguage" /> for the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Raised when <paramref name="target" /> is **null**.</exception>
       </Docs>
     </Member>
     <Member MemberName="InputLanguageChanged">
@@ -144,7 +210,7 @@
         <ReturnType>System.Windows.Input.InputLanguageEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when a change of input language is completed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -161,7 +227,7 @@
         <ReturnType>System.Windows.Input.InputLanguageEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when a change of input language is initiated.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -178,7 +244,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Input.InputLanguageManager.InputLanguage" /> attached property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,9 +264,10 @@
         <Parameter Name="inputLanguageSource" Type="System.Windows.Input.IInputLanguageSource" />
       </Parameters>
       <Docs>
-        <param name="inputLanguageSource">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="inputLanguageSource">An object that specifies the input language to register.  This object must implement the <see cref="T:System.Windows.Input.IInputLanguageSource" /> interface.</param>
+        <summary>Registers an input language source with the <see cref="T:System.Windows.Input.InputLanguageManager" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Raised when <paramref name="inputLanguageSource" /> is **null**.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReportInputLanguageChanged">
@@ -220,10 +287,11 @@
         <Parameter Name="previousLanguageId" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
-        <param name="newLanguageId">To be added.</param>
-        <param name="previousLanguageId">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="newLanguageId">A <see cref="T:System.Globalization.CultureInfo" /> object representing the new input language.</param>
+        <param name="previousLanguageId">A <see cref="T:System.Globalization.CultureInfo" /> object representing the previous input language.</param>
+        <summary>Report the completion of a change of input language to the <see cref="T:System.Windows.Input.InputLanguageManager" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Raised when <paramref name="newLanguageId" /> or <paramref name="previousLanguageId" /> is **null**.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReportInputLanguageChanging">
@@ -243,11 +311,12 @@
         <Parameter Name="previousLanguageId" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
-        <param name="newLanguageId">To be added.</param>
-        <param name="previousLanguageId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="newLanguageId">A <see cref="T:System.Globalization.CultureInfo" /> object representing the new input language.</param>
+        <param name="previousLanguageId">A <see cref="T:System.Globalization.CultureInfo" /> object representing the previous input language.</param>
+        <summary>Report the initiation of a change of input language to the <see cref="T:System.Windows.Input.InputLanguageManager" />.</summary>
+        <returns>**true** to indicate that the reported change of input language was accepted; otherwise, **false**.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Raised when <paramref name="newLanguageId" /> or <paramref name="previousLanguageId" /> is **null**.</exception>
       </Docs>
     </Member>
     <Member MemberName="RestoreInputLanguageProperty">
@@ -263,7 +332,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Input.InputLanguageManager.RestoreInputLanguage" /> attached property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -284,10 +353,21 @@
         <Parameter Name="inputLanguage" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="inputLanguage">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="target">The dependency object on which to set the <see cref="P:System.Windows.Input.InputLanguageManager.InputLanguage" /> attached property.</param>
+        <param name="inputLanguage">A <see cref="T:System.Globalization.CultureInfo" /> object representing the new value for the <see cref="P:System.Windows.Input.InputLanguageManager.InputLanguage" /> attached property.</param>
+        <summary>Sets the value of the <see cref="P:System.Windows.Input.InputLanguageManager.InputLanguage" /> attached property on the specified dependency object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use an <xref:System.Windows.Input.InputLanguageManager> to set the input language of a <xref:System.Windows.Controls.TextBox> element.  
+  
+ [!code-csharp[languageManager#1](~/samples/snippets/csharp/VS_Snippets_Wpf/languageManager/CSharp/Window1.xaml.cs#1)]
+ [!code-vb[languageManager#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/languageManager/visualbasic/window1.xaml.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">Raised when <paramref name="target" /> is **null**.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetRestoreInputLanguage">
@@ -307,10 +387,11 @@
         <Parameter Name="restore" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="restore">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="target">The dependency object for which to set the value of <see cref="P:System.Windows.Input.InputLanguageManager.RestoreInputLanguage" />.</param>
+        <param name="restore">A Boolean value to set the <see cref="P:System.Windows.Input.InputLanguageManager.RestoreInputLanguage" /> attached property to.</param>
+        <summary>Sets the value of the <see cref="P:System.Windows.Input.InputLanguageManager.RestoreInputLanguage" /> dependency property on the specified dependency object.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Raised when <paramref name="target" /> is **null**.</exception>
       </Docs>
     </Member>
   </Members>

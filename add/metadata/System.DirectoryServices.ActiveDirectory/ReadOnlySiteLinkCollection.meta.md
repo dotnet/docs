@@ -1,24 +1,34 @@
 ---
 uid: System.DirectoryServices.ActiveDirectory.ReadOnlySiteLinkCollection
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ReadOnlySiteLinkCollection.Item(System.Int32)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ReadOnlySiteLinkCollection.Contains(System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ReadOnlySiteLinkCollection.IndexOf(System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ReadOnlySiteLinkCollection.CopyTo(System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink[],System.Int32)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---

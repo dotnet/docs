@@ -1,9 +1,13 @@
 ---
 uid: System.Runtime.CompilerServices.FixedAddressValueTypeAttribute
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.CompilerServices.FixedAddressValueTypeAttribute.#ctor
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

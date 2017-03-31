@@ -1,19 +1,37 @@
 ---
 uid: System.Windows.Forms.ScrollableControl.DockPaddingEdgesConverter
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ScrollableControl.DockPaddingEdgesConverter.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ScrollableControl.DockPaddingEdgesConverter.GetPropertiesSupported
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.ScrollableControl.DockPaddingEdgesConverter.GetProperties
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.ScrollableControl.DockPaddingEdgesConverter.GetProperties(System.ComponentModel.ITypeDescriptorContext,System.Object,System.Attribute[])
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ScrollableControl.DockPaddingEdgesConverter.GetPropertiesSupported(System.ComponentModel.ITypeDescriptorContext)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

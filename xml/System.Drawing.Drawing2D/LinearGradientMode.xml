@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the direction of a linear gradient.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Drawing.Drawing2D.LinearGradientMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies a gradient from upper right to lower left.</summary>
       </Docs>
     </Member>
     <Member MemberName="ForwardDiagonal">
@@ -43,7 +43,7 @@
         <ReturnType>System.Drawing.Drawing2D.LinearGradientMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies a gradient from upper left to lower right.</summary>
       </Docs>
     </Member>
     <Member MemberName="Horizontal">
@@ -59,7 +59,7 @@
         <ReturnType>System.Drawing.Drawing2D.LinearGradientMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies a gradient from left to right.</summary>
       </Docs>
     </Member>
     <Member MemberName="Vertical">
@@ -75,7 +75,7 @@
         <ReturnType>System.Drawing.Drawing2D.LinearGradientMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies a gradient from top to bottom.</summary>
       </Docs>
     </Member>
   </Members>

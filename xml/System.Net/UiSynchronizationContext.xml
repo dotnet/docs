@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides the synchronization context for the managed UI used in synchronization models.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -44,8 +44,10 @@
         <ReturnType>System.Threading.SynchronizationContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the synchronization context for the current thread.</summary>
+        <value>Returns <see cref="T:System.Threading.SynchronizationContext" />.  
+  
+ The synchronization context for the current thread.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,8 +72,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a unique identifier for the current managed thread.</summary>
+        <value>Returns <see cref="T:System.Int32" />.  
+  
+ An integer that represents a unique identifier for this managed thread.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

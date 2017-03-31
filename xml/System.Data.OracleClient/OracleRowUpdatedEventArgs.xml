@@ -11,8 +11,47 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides data for the <see cref="E:System.Data.OracleClient.OracleDataAdapter.RowUpdated" /> event. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.OracleClient.OracleDataAdapter.RowUpdated> event is raised when an <xref:System.Data.Common.DbDataAdapter.Update%2A> to a row is completed.  
+  
+ When using <xref:System.Data.Common.DbDataAdapter.Update%2A>, there are two events that occur for each data row updated. The order of execution is as follows:  
+  
+1.  The values in the <xref:System.Data.DataRow> are moved to the parameter values.  
+  
+2.  The <xref:System.Data.Common.DbDataAdapter.OnRowUpdating%2A> event is raised.  
+  
+3.  The command executes.  
+  
+4.  If the command is set to `FirstReturnedRecord`, the first returned result is placed in the <xref:System.Data.DataRow>.  
+  
+5.  If there are output parameters, they are placed in the <xref:System.Data.DataRow>.  
+  
+6.  The <xref:System.Data.Common.DbDataAdapter.OnRowUpdated%2A> event is raised.  
+  
+7.  <xref:System.Data.DataRow.AcceptChanges%2A> is called.  
+  
+   
+  
+## Examples  
+ The following example shows how to use both the <xref:System.Data.OracleClient.OracleDataAdapter.RowUpdating> and <xref:System.Data.OracleClient.OracleDataAdapter.RowUpdated> events.  
+  
+ The <xref:System.Data.OracleClient.OracleDataAdapter.RowUpdating> event returns this output:  
+  
+ `Event Arguments: (command=OracleCommand commandType=2status=0)`  
+  
+ The <xref:System.Data.OracleClient.OracleDataAdapter.RowUpdated> event returns this output:  
+  
+ `Event Arguments: (command= OracleCommend commandType=2 recordsAffected=1 row=System.Data.DataRow[37] status=0)`  
+  
+ [!code-csharp[Classic WebData OracleRowUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OracleRowUpdatedEventArgs/CS/source.cs#1)]
+ [!code-vb[Classic WebData OracleRowUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OracleRowUpdatedEventArgs/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,11 +70,11 @@
         <Parameter Name="tableMapping" Type="System.Data.Common.DataTableMapping" />
       </Parameters>
       <Docs>
-        <param name="row">To be added.</param>
-        <param name="command">To be added.</param>
-        <param name="statementType">To be added.</param>
-        <param name="tableMapping">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="row">The <see cref="T:System.Data.DataRow" /> sent through an <see cref="M:System.Data.Common.DbDataAdapter.Update(System.Data.DataSet)" />.</param>
+        <param name="command">The <see cref="T:System.Data.IDbCommand" /> executed when <see cref="M:System.Data.Common.DbDataAdapter.Update(System.Data.DataSet)" /> is called.</param>
+        <param name="statementType">One of the <see cref="T:System.Data.StatementType" /> values that specifies the type of query executed.</param>
+        <param name="tableMapping">The <see cref="T:System.Data.Common.DataTableMapping" /> sent through an <see cref="M:System.Data.Common.DbDataAdapter.Update(System.Data.DataSet)" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.OracleClient.OracleRowUpdatedEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,8 +91,8 @@
         <ReturnType>System.Data.OracleClient.OracleCommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="T:System.Data.OracleClient.OracleCommand" /> executed when <see cref="M:System.Data.Common.DbDataAdapter.Update(System.Data.DataSet)" /> is called.</summary>
+        <value>The <see cref="T:System.Data.OracleClient.OracleCommand" /> executed when <see cref="M:System.Data.Common.DbDataAdapter.Update(System.Data.DataSet)" /> is called.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

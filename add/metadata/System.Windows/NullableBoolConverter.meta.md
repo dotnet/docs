@@ -1,24 +1,54 @@
 ---
 uid: System.Windows.NullableBoolConverter
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.NullableBoolConverter.GetStandardValuesExclusive
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.NullableBoolConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.NullableBoolConverter.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.NullableBoolConverter.GetStandardValuesSupported(System.ComponentModel.ITypeDescriptorContext)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.NullableBoolConverter.GetStandardValuesExclusive(System.ComponentModel.ITypeDescriptorContext)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.NullableBoolConverter.GetStandardValuesSupported
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.NullableBoolConverter.GetStandardValues
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

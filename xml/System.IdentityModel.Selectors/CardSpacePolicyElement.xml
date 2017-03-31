@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This class is intended for use by the infrastructure.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,13 +33,16 @@
         <Parameter Name="isManagedIssuer" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="issuer">To be added.</param>
-        <param name="parameters">To be added.</param>
+        <param name="target">An <see cref="T:System.Xml.XmlElement" /> that represents the target of this policy.  
+  
+ Sets the <see cref="P:System.IdentityModel.Selectors.CardSpacePolicyElement.Target" /> property.</param>
+        <param name="issuer">An <see cref="T:System.Xml.XmlElement" /> that represents the policy issuer. Sets the <see cref="P:System.IdentityModel.Selectors.CardSpacePolicyElement.Issuer" /> property.</param>
+        <param name="parameters">A <see cref="T:System.Collections.ObjectModel.Collection`1" /> of type <see cref="T:System.Xml.XmlElement" /> that represents the parameters for this element. Sets the <see cref="P:System.IdentityModel.Selectors.CardSpacePolicyElement.Parameters" /> property.</param>
         <param name="policyNoticeLink">To be added.</param>
         <param name="policyNoticeVersion">To be added.</param>
-        <param name="isManagedIssuer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="isManagedIssuer">
+          <see langword="true" /> if the issuer is managed; otherwise <see langword="false" />. Sets the <see cref="P:System.IdentityModel.Selectors.CardSpacePolicyElement.IsManagedIssuer" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Selectors.CardSpacePolicyElement" /> class using the specified target and issuer of the policy, the policy parameters, privacy notice location, and the privacy notice version.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,8 +59,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether the issuer of the policy is a managed issuer.</summary>
+        <value>
+          <see langword="true" /> if the issuer is managed; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,8 +78,8 @@
         <ReturnType>System.Xml.XmlElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the policy issuer.</summary>
+        <value>An <see cref="T:System.Xml.XmlElement" /> that represents the policy issuer.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,8 +96,8 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Xml.XmlElement&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of XML elements that represent the parameters for this element.</summary>
+        <value>A <see cref="T:System.Collections.ObjectModel.Collection`1" /> of type <see cref="T:System.Xml.XmlElement" /> that represents the parameters for this element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,8 +114,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the URI for the privacy information of this policy.</summary>
+        <value>The <see cref="T:System.Uri" /> where the privacy policy is located.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,8 +132,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the version of the privacy information.</summary>
+        <value>The version of the privacy information.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,8 +150,8 @@
         <ReturnType>System.Xml.XmlElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the target of this policy.</summary>
+        <value>An <see cref="T:System.Xml.XmlElement" /> that represents the target of this policy.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,14 +1,14 @@
 ---
 uid: Microsoft.JScript.LenientDateConstructor
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.LenientDateConstructor.UTC
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.LenientDateConstructor.parse
-internalonly: False
+ms.author: "mikejo"
 ---

@@ -1,29 +1,35 @@
 ---
 uid: System.Web.UI.PostBackTrigger
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.PostBackTrigger.ToString
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.PostBackTrigger.Initialize
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.PostBackTrigger.HasTriggered
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.PostBackTrigger.ControlID
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.PostBackTrigger.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

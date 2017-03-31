@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the type of shadow to add to text.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.TextShadowType> values represent the return values of the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetEnumValue%2A?displayProperty=fullName> method when it is called with an argument value of <xref:System.Windows.Forms.VisualStyles.EnumProperty?displayProperty=fullName>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Continuous">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.TextShadowType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A continuous shadow is drawn.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.TextShadowType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No shadow is drawn.</summary>
       </Docs>
     </Member>
     <Member MemberName="Single">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.TextShadowType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A single shadow is drawn.</summary>
       </Docs>
     </Member>
   </Members>

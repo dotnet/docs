@@ -1,24 +1,28 @@
 ---
 uid: System.Web.Caching.OutputCacheProviderCollection
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.OutputCacheProviderCollection.Add(System.Configuration.Provider.ProviderBase)
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.OutputCacheProviderCollection.CopyTo(System.Web.Caching.OutputCacheProvider[],System.Int32)
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.OutputCacheProviderCollection.#ctor
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.OutputCacheProviderCollection.Item(System.String)
-internalonly: False
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Caching.OutputCacheProviderCollection.CopyTo
 ---

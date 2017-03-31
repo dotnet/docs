@@ -1,24 +1,32 @@
 ---
 uid: System.Windows.Controls.Primitives.SelectiveScrollingGrid
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.Primitives.SelectiveScrollingGrid.GetSelectiveScrollingOrientation(System.Windows.DependencyObject)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Primitives.SelectiveScrollingGrid.SelectiveScrollingOrientationProperty
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.Primitives.SelectiveScrollingGrid.SetSelectiveScrollingOrientation(System.Windows.DependencyObject,System.Windows.Controls.SelectiveScrollingOrientation)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Primitives.SelectiveScrollingGrid.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

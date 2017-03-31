@@ -27,8 +27,18 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the abstract base class from which all implementations of the Advanced Encryption Standard (AES) must inherit.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to encrypt and decrypt sample data by using the <xref:System.Security.Cryptography.Aes> class.  
+  
+ [!code-csharp[AesSample#1](~/samples/snippets/csharp/VS_Snippets_CLR/aessample/cs/program.cs#1)]
+ [!code-vb[AesSample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/aessample/vb/program.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -53,8 +63,18 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Aes" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to encrypt and decrypt sample data using the <xref:System.Security.Cryptography.Aes> class.  
+  
+ [!code-csharp[AesSample#1](~/samples/snippets/csharp/VS_Snippets_CLR/aessample/cs/program.cs#1)]
+ [!code-vb[AesSample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/aessample/vb/program.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -82,8 +102,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a cryptographic object that is used to perform the symmetric algorithm.</summary>
+        <returns>A cryptographic object that is used to perform the symmetric algorithm.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,10 +128,18 @@
         <Parameter Name="algorithmName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="algorithmName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="algorithmName">The name of the specific implementation of AES to use.</param>
+        <summary>Creates a cryptographic object that specifies the implementation of AES to use to perform the symmetric algorithm.</summary>
+        <returns>A cryptographic object that is used to perform the symmetric algorithm.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Possible `algorithmName` values are: "AES", "AesCryptoServiceProvider", "System.Security.Cryptography.AesCryptoServiceProvider", "AesManaged", and "System.Security.Cryptography.AesManaged".  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="algorithmName" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="LegalBlockSizes">

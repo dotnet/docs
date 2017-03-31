@@ -1,14 +1,18 @@
 ---
 uid: System.Windows.Automation.Peers.RibbonControlAutomationPeer
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonControlAutomationPeer.#ctor(System.Windows.FrameworkElement)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonControlAutomationPeer.GetClassNameCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

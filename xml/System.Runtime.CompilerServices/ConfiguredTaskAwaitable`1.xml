@@ -24,9 +24,16 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="TResult">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="TResult">The type of the result produced by this <see cref="T:System.Threading.Tasks.Task`1" />.</typeparam>
+    <summary>Provides an awaitable object that enables configured awaits on a task.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This type is intended for compiler use; do not use it directly in your code.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="GetAwaiter">
@@ -53,9 +60,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns an awaiter for this awaitable object.</summary>
+        <returns>The awaiter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is intended for compiler use; do not use it directly in your code.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,54 +1,79 @@
 ---
 uid: System.Windows.Media.Animation.Point3DKeyFrame
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.Point3DKeyFrame.InterpolateValueCore(System.Windows.Media.Media3D.Point3D,System.Double)
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.Point3DKeyFrame.ValueProperty
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.Point3DKeyFrame.Value
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.Point3DKeyFrame.KeyTime
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.Point3DKeyFrame.InterpolateValue(System.Windows.Media.Media3D.Point3D,System.Double)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.Point3DKeyFrame.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.Point3DKeyFrame.InterpolateValueCore(System.Windows.Media.Media3D.Point3D,System.Double)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.Animation.Point3DKeyFrame.ValueProperty
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.Animation.Point3DKeyFrame.Value
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.Animation.Point3DKeyFrame.KeyTime
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.Point3DKeyFrame.InterpolateValue(System.Windows.Media.Media3D.Point3D,System.Double)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.Point3DKeyFrame.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.Point3DKeyFrame.System#Windows#Media#Animation#IKeyFrame#Value
-internalonly: False
+ms.author: "jimwalk"
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Media.Animation.Point3DKeyFrame.#ctor(System.Windows.Media.Media3D.Point3D)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.Point3DKeyFrame.KeyTimeProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.Point3DKeyFrame.#ctor(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Animation.KeyTime)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

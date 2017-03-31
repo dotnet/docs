@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.DirectoryServices.DirectoryServicesPermissionEntry" /> class defines the smallest unit of a code access security permission set for <see cref="N:System.DirectoryServices" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,9 +29,9 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="permissionAccess">To be added.</param>
-        <param name="path">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="permissionAccess">One of the <see cref="T:System.DirectoryServices.DirectoryServicesPermissionAccess" /> values.</param>
+        <param name="path">The path of the Active Directory Domain Services node to which the permissions apply.</param>
+        <summary>The <see cref="M:System.DirectoryServices.DirectoryServicesPermissionEntry.#ctor(System.DirectoryServices.DirectoryServicesPermissionAccess,System.String)" /> constructor initializes a new instance of the <see cref="M:System.DirectoryServices.DirectoryServicesPermissionEntry.#ctor(System.DirectoryServices.DirectoryServicesPermissionAccess,System.String)" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +48,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.DirectoryServicesPermissionEntry.Path" /> property gets a path to an Active Directory Domain Services node to which the permissions apply.</summary>
+        <value>The path to an Active Directory Domain Services node.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,8 +66,8 @@
         <ReturnType>System.DirectoryServices.DirectoryServicesPermissionAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.DirectoryServicesPermissionEntry.PermissionAccess" /> property gets the access levels used in creating permissions.</summary>
+        <value>One of the <see cref="T:System.DirectoryServices.DirectoryServicesPermissionAccess" /> values.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

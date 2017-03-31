@@ -1,24 +1,34 @@
 ---
 uid: System.Windows.Input.Manipulations.Manipulation2DCompletedEventArgs
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Input.Manipulations.Manipulation2DCompletedEventArgs.Total
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Input.Manipulations.Manipulation2DCompletedEventArgs.OriginX
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Input.Manipulations.Manipulation2DCompletedEventArgs.Velocities
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Input.Manipulations.Manipulation2DCompletedEventArgs.OriginY
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---

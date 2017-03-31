@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides data for the <see cref="E:Microsoft.Build.Framework.IEventSource.TaskFinished" /> event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.TaskFinishedEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,13 +48,14 @@
         <Parameter Name="succeeded" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="helpKeyword">To be added.</param>
-        <param name="projectFile">To be added.</param>
-        <param name="taskFile">To be added.</param>
-        <param name="taskName">To be added.</param>
-        <param name="succeeded">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The text for the message.</param>
+        <param name="helpKeyword">The Help keyword associated with the event.</param>
+        <param name="projectFile">The project file name.</param>
+        <param name="taskFile">The file in which the task is defined.</param>
+        <param name="taskName">The name of the task.</param>
+        <param name="succeeded">
+          <see langword="true" /> to indicate the task succeeded; otherwise, <see langword="false." /></param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.TaskFinishedEventArgs" /> class with the specified values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,14 +78,15 @@
         <Parameter Name="eventTimestamp" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="helpKeyword">To be added.</param>
-        <param name="projectFile">To be added.</param>
-        <param name="taskFile">To be added.</param>
-        <param name="taskName">To be added.</param>
-        <param name="succeeded">To be added.</param>
-        <param name="eventTimestamp">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The text for the message.</param>
+        <param name="helpKeyword">The Help keyword associated with the event.</param>
+        <param name="projectFile">The project file name.</param>
+        <param name="taskFile">The file in which the task is defined.</param>
+        <param name="taskName">The name of the task.</param>
+        <param name="succeeded">
+          <see langword="true" /> to indicate the task succeeded; otherwise, <see langword="false." /></param>
+        <param name="eventTimestamp">When the event finished.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.TaskFinishedEventArgs" /> class with the specified values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,8 +103,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the project file associated with the event.</summary>
+        <value>The name of the project file associated with the event.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,8 +121,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the execution of the task succeeded.</summary>
+        <value>The value indicating whether the execution of the task succeeded.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,8 +139,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] file where the task is defined.</summary>
+        <value>The [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] file where the task is defined.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,8 +157,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the task associated with the event.</summary>
+        <value>The name of the task associated with the event.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

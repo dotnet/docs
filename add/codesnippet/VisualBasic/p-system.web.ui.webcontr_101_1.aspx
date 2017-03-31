@@ -1,1 +1,0 @@
-        md.BodyFileName = sourceMailFile.Text

@@ -1,79 +1,118 @@
 ---
 uid: System.Workflow.Activities.Rules.Rule
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.Rules.Rule.#ctor(System.String,System.Workflow.Activities.Rules.RuleCondition,System.Collections.Generic.IList{System.Workflow.Activities.Rules.RuleAction})
-internalonly: False
----
-
----
-uid: System.Workflow.Activities.Rules.Rule.Condition
-internalonly: False
----
-
----
-uid: System.Workflow.Activities.Rules.Rule.Description
-internalonly: False
----
-
----
-uid: System.Workflow.Activities.Rules.Rule.Active
-internalonly: False
----
-
----
-uid: System.Workflow.Activities.Rules.Rule.Equals(System.Object)
-internalonly: False
----
-
----
-uid: System.Workflow.Activities.Rules.Rule.ThenActions
-internalonly: False
----
-
----
-uid: System.Workflow.Activities.Rules.Rule.Priority
-internalonly: False
----
-
----
-uid: System.Workflow.Activities.Rules.Rule.#ctor(System.String,System.Workflow.Activities.Rules.RuleCondition,System.Collections.Generic.IList{System.Workflow.Activities.Rules.RuleAction},System.Collections.Generic.IList{System.Workflow.Activities.Rules.RuleAction})
-internalonly: False
----
-
----
-uid: System.Workflow.Activities.Rules.Rule.ReevaluationBehavior
-internalonly: False
----
-
----
-uid: System.Workflow.Activities.Rules.Rule.Clone
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.Rules.Rule.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.Rules.Rule.Condition
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.Rules.Rule.Description
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.Rules.Rule.Active
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.Rules.Rule.Equals(System.Object)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.Rules.Rule.ThenActions
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.Rules.Rule.Priority
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.Rules.Rule.#ctor(System.String,System.Workflow.Activities.Rules.RuleCondition,System.Collections.Generic.IList{System.Workflow.Activities.Rules.RuleAction},System.Collections.Generic.IList{System.Workflow.Activities.Rules.RuleAction})
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.Rules.Rule.ReevaluationBehavior
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.Rules.Rule.Clone
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.Rules.Rule.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.Rules.Rule.Name
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.Rules.Rule.#ctor(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.Rules.Rule.ElseActions
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.Rules.Rule.GetHashCode
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

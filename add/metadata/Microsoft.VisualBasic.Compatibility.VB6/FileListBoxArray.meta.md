@@ -1,324 +1,461 @@
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.Validating
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.ShouldSerializeIndex(Microsoft.VisualBasic.Compatibility.VB6.FileListBox)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.Layout
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.#ctor(System.ComponentModel.IContainer)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.Move
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.Leave
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.DataSourceChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.ValueMemberChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.DragLeave
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.Validated
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.QueryAccessibilityHelp
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.SizeChanged
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.DragEnter
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.MeasureItem
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.MouseEnter
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.ResetIndex(Microsoft.VisualBasic.Compatibility.VB6.FileListBox)
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.GetIndex(Microsoft.VisualBasic.Compatibility.VB6.FileListBox)
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.DrawItem
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.CausesValidationChanged
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.QueryContinueDrag
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.MouseUp
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.DoubleClick
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.StyleChanged
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.HelpRequested
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.Item(System.Int16)
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.DisplayMemberChanged
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.KeyDown
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.SystemColorsChanged
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.HookUpControlEvents(System.Object)
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.LocationChanged
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.ContextMenuChanged
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.RightToLeftChanged
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.Enter
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.CursorChanged
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.VisibleChanged
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.TabIndexChanged
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.FontChanged
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.BindingContextChanged
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.DockChanged
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.MouseDown
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.KeyPress
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.MouseHover
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.SelectedValueChanged
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.CanExtend(System.Object)
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.Resize
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.DragDrop
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.KeyUp
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.GetControlInstanceType
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.MouseLeave
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.SelectedIndexChanged
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.TabStopChanged
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.MouseMove
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.ImeModeChanged
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.GiveFeedback
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.BackColorChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.SizeChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.DragEnter
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.MeasureItem
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.MouseEnter
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.ResetIndex(Microsoft.VisualBasic.Compatibility.VB6.FileListBox)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.GetIndex(Microsoft.VisualBasic.Compatibility.VB6.FileListBox)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.DrawItem
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.CausesValidationChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.QueryContinueDrag
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.MouseUp
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.DoubleClick
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.StyleChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.HelpRequested
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.Item(System.Int16)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.DisplayMemberChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.KeyDown
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.SystemColorsChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.HookUpControlEvents(System.Object)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.LocationChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.ContextMenuChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.RightToLeftChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.Enter
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.CursorChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.VisibleChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.TabIndexChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.FontChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.BindingContextChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.DockChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.MouseDown
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.KeyPress
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.MouseHover
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.SelectedValueChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.CanExtend(System.Object)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.Resize
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.DragDrop
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.KeyUp
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.GetControlInstanceType
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.MouseLeave
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.SelectedIndexChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.TabStopChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.MouseMove
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.ImeModeChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.GiveFeedback
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.BackColorChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.PathChange
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.PatternChange
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.ForeColorChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.ParentChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.ChangeUICues
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.DragOver
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.EnabledChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.SetIndex(Microsoft.VisualBasic.Compatibility.VB6.FileListBox,System.Int16)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

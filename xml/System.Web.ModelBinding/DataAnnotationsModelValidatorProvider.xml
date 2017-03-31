@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Implements the default validator provider.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is an implementation of <xref:System.Web.ModelBinding.ModelValidatorProvider> that provides validators for attributes that derive from <xref:System.ComponentModel.DataAnnotations.ValidationAttribute>. It also provides validators for types that implement <xref:System.ComponentModel.DataAnnotations.IValidatableObject>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.DataAnnotationsModelValidatorProvider" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +50,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether non-nullable value types are required.</summary>
+        <value>
+          <see langword="true" /> if non-nullable value types are required; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,11 +74,11 @@
         <Parameter Name="attributes" Type="System.Collections.Generic.IEnumerable&lt;System.Attribute&gt;" />
       </Parameters>
       <Docs>
-        <param name="metadata">To be added.</param>
-        <param name="context">To be added.</param>
-        <param name="attributes">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="metadata">The metadata.</param>
+        <param name="context">The execution context.</param>
+        <param name="attributes">The validation attributes.</param>
+        <summary>Gets a collection of validators for the model.</summary>
+        <returns>The collection of validators.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,9 +99,9 @@
         <Parameter Name="adapterType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="attributeType">To be added.</param>
-        <param name="adapterType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="attributeType">The type of the validation attribute.</param>
+        <param name="adapterType">The type of the adapter.</param>
+        <summary>Registers an adapter for client-side validation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,9 +122,9 @@
         <Parameter Name="factory" Type="System.Web.ModelBinding.DataAnnotationsModelValidationFactory" />
       </Parameters>
       <Docs>
-        <param name="attributeType">To be added.</param>
-        <param name="factory">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="attributeType">The type of the attribute.</param>
+        <param name="factory">The factory that will be used to create the validator object for the specified attribute.</param>
+        <summary>Registers an adapter factory for the validation provider.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,8 +144,8 @@
         <Parameter Name="adapterType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="adapterType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="adapterType">The type of the adapter.</param>
+        <summary>Registers the default adapter.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -157,8 +165,8 @@
         <Parameter Name="factory" Type="System.Web.ModelBinding.DataAnnotationsModelValidationFactory" />
       </Parameters>
       <Docs>
-        <param name="factory">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="factory">The factory that will be used to create the validator object for the default adapter.</param>
+        <summary>Registers the default adapter factory.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -178,9 +186,11 @@
         <Parameter Name="adapterType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="adapterType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="adapterType">The type of the adapter.</param>
+        <summary>Registers an adapter for default object validation.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="type" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The adapter type does not have a public constructor that accepts two parameters that are typed as <see cref="T:System.Web.ModelBinding.ModelMetadata" /> and <see cref="T:System.Web.ModelBinding.ModelBindingExecutionContext" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="RegisterDefaultValidatableObjectAdapterFactory">
@@ -199,9 +209,11 @@
         <Parameter Name="factory" Type="System.Web.ModelBinding.DataAnnotationsValidatableObjectAdapterFactory" />
       </Parameters>
       <Docs>
-        <param name="factory">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="factory">The factory.</param>
+        <summary>Registers an adapter factory for the default object validation provider.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="factory" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="RegisterValidatableObjectAdapter">
@@ -221,10 +233,12 @@
         <Parameter Name="adapterType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="modelType">To be added.</param>
-        <param name="adapterType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="modelType">The type of the model.</param>
+        <param name="adapterType">The type of the adapter.</param>
+        <summary>Registers an adapter for object validation.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="adapterType" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The adapter type does not have a public constructor that accepts two parameters that are typed <see cref="T:System.Web.ModelBinding.ModelMetadata" /> and <see cref="T:System.Web.ModelBinding.ModelBindingExecutionContext" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="RegisterValidatableObjectAdapterFactory">
@@ -244,10 +258,12 @@
         <Parameter Name="factory" Type="System.Web.ModelBinding.DataAnnotationsValidatableObjectAdapterFactory" />
       </Parameters>
       <Docs>
-        <param name="modelType">To be added.</param>
-        <param name="factory">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="modelType">The type of the model.</param>
+        <param name="factory">The factory.</param>
+        <summary>Registers an adapter factory for the object validation provider.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="factory" /> or <paramref name="type" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The model type does not implement the <see cref="T:System.ComponentModel.DataAnnotations.IValidatableObject" /> interface.</exception>
       </Docs>
     </Member>
   </Members>

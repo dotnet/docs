@@ -1,14 +1,14 @@
 ---
 uid: System.Messaging.MessagingDescriptionAttribute
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagingDescriptionAttribute.#ctor(System.String)
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagingDescriptionAttribute.Description
-internalonly: False
+manager: "tyoung"
 ---

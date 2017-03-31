@@ -15,8 +15,20 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a collection that is used to store descriptions of the messages that make up an operation that belongs to a contract.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.ServiceModel.Description.ContractDescription> is used to describe contracts and their associated operations. Each contract operation has a corresponding <xref:System.ServiceModel.Description.OperationDescription> that describes aspects of the operation, such as whether the operation is one-way or request/reply. Each <xref:System.ServiceModel.Description.OperationDescription> in turn describes the messages that make up the operation using a collection of <xref:System.ServiceModel.Description.MessageDescription>.  
+  
+   
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [S_UE_MessageDescriptionCollection#0](S_UE_MessageDescriptionCollection#0)]  -->  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Find">
@@ -36,10 +48,22 @@
         <Parameter Name="action" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="action">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="action">The action of the message being found.</param>
+        <summary>Finds and returns the first message description in a collection for a message with a specified action.</summary>
+        <returns>The first <see cref="T:System.ServiceModel.Description.MessageDescription" /> from the collection whose message has the specified <paramref name="action" /> and <see langword="null" /> if no matching <paramref name="action" /> is found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you need to find all of the <xref:System.ServiceModel.Description.MessageDescription> objects in the collection that match the specified `action`, use the <xref:System.ServiceModel.Description.MessageDescriptionCollection.FindAll%28System.String%29> method instead.  
+  
+   
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [S_UE_MessageDescriptionCollection#1](S_UE_MessageDescriptionCollection#1)]  -->  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FindAll">
@@ -59,10 +83,22 @@
         <Parameter Name="action" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="action">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="action">The action of the messages being found.</param>
+        <summary>Finds and returns all of the message descriptions in a collection whose messages have a specified action.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Description.MessageDescriptionCollection" /> that contains the collection message descriptions from the current collection whose messages have the specified <paramref name="action" />. If no matching <see cref="T:System.ServiceModel.Description.MessageDescription" /> objects are found, an empty collection is returned.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you need to find the first instance of the <xref:System.ServiceModel.Description.MessageDescription> in the collection that match the specified `action`, use the <xref:System.ServiceModel.Description.MessageDescriptionCollection.Find%28System.String%29> method instead.  
+  
+   
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [S_UE_MessageDescriptionCollection#2](S_UE_MessageDescriptionCollection#2)]  -->  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

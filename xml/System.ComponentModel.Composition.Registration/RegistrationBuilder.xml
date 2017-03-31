@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a reflection context that has associated conventions that describe rules for decorating entities with Managed Extensibility Framework (MEF) attributes.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Registration.RegistrationBuilder" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,9 +46,9 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="type">The type.</param>
+        <summary>Gets an object that represents a rule that applies to the specified type.</summary>
+        <returns>An object that represents the rule.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,9 +69,9 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type.</typeparam>
+        <summary>Gets a strongly typed object that represents a rule that applies to the specified type.</summary>
+        <returns>A strongly typed object that represents the rule.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,9 +91,9 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="type">The type.</param>
+        <summary>Gets an object that represents a rule applicable to all types that implement the specified type, but not applicable to the specified type.</summary>
+        <returns>An object that represents the rule.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,9 +114,9 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type.</typeparam>
+        <summary>Gets a strongly typed object that represents a rule applicable to all types that implement the specified type, but not applicable to the specified type.</summary>
+        <returns>A strongly typed object that represents the rule.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,9 +136,9 @@
         <Parameter Name="typeFilter" Type="System.Predicate&lt;System.Type&gt;" />
       </Parameters>
       <Docs>
-        <param name="typeFilter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="typeFilter">The predicate to match.</param>
+        <summary>Gets an object that represents a rule applicable to all types that match the specified predicate.</summary>
+        <returns>An object that represents the rule.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -161,10 +161,10 @@
         <Parameter Name="typeFilter" Type="System.Predicate&lt;System.Type&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="typeFilter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of <see cref="T:System.ComponentModel.Composition.Registration.PartBuilder`1" /> object to return.</typeparam>
+        <param name="typeFilter">The predicate to match.</param>
+        <summary>Gets a strongly typed object that represents a rule applicable to all types that match the specified predicate.</summary>
+        <returns>A strongly typed object that represents the rule.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -185,10 +185,10 @@
         <Parameter Name="declaredAttributes" Type="System.Collections.Generic.IEnumerable&lt;System.Object&gt;" />
       </Parameters>
       <Docs>
-        <param name="member">To be added.</param>
-        <param name="declaredAttributes">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="member">The member whose custom attributes will be returned.</param>
+        <param name="declaredAttributes">A collection of the member's attributes in its current context.</param>
+        <summary>Provides a list of custom attributes for the specified member, as represented in this reflection context.</summary>
+        <returns>A collection that represents the custom attributes of the specified member in this reflection context.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -209,10 +209,10 @@
         <Parameter Name="declaredAttributes" Type="System.Collections.Generic.IEnumerable&lt;System.Object&gt;" />
       </Parameters>
       <Docs>
-        <param name="parameter">To be added.</param>
-        <param name="declaredAttributes">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="parameter">The parameter whose custom attributes will be returned.</param>
+        <param name="declaredAttributes">A collection of the parameter's attributes in its current context.</param>
+        <summary>Provides a list of custom attributes for the specified parameter, as represented in this reflection context.</summary>
+        <returns>A collection that represents the custom attributes of the specified parameter in this reflection context.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

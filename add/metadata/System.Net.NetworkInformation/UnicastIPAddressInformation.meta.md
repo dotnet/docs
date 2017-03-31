@@ -1,49 +1,59 @@
 ---
 uid: System.Net.NetworkInformation.UnicastIPAddressInformation
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.UnicastIPAddressInformation.PrefixOrigin
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.UnicastIPAddressInformation.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.UnicastIPAddressInformation.AddressPreferredLifetime
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.UnicastIPAddressInformation.AddressValidLifetime
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.UnicastIPAddressInformation.IPv4Mask
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.UnicastIPAddressInformation.SuffixOrigin
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.UnicastIPAddressInformation.DhcpLeaseLifetime
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.UnicastIPAddressInformation.DuplicateAddressDetectionState
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.UnicastIPAddressInformation.PrefixLength
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

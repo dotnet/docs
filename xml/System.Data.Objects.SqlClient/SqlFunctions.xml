@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides common language runtime (CLR) methods that call functions in the database in LINQ to Entities queries.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,10 +36,19 @@
         <Parameter Name="arg1" Type="System.Nullable&lt;System.Decimal&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg1">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg1">The cosine of an angle.</param>
+        <summary>A mathematical function that returns the angle, in radians, whose cosine is the specified numerical value. This angle is called the arccosine.</summary>
+        <returns>An angle, measured in radians.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [ACOS (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140034).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Acos">
@@ -63,10 +72,19 @@
         <Parameter Name="arg1" Type="System.Nullable&lt;System.Double&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg1">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg1">The cosine of an angle.</param>
+        <summary>A mathematical function that returns the angle, in radians, whose cosine is the specified numerical value. This angle is called the arccosine.</summary>
+        <returns>The angle, in radians, defined by the input cosine value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [ACOS (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140034).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Ascii">
@@ -90,10 +108,19 @@
         <Parameter Name="arg" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg">A valid string.</param>
+        <summary>Returns the ASCII code value of the left-most character of a character expression.</summary>
+        <returns>The ASCII code of the first character in the input string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [ASCII (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140040).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Asin">
@@ -117,10 +144,19 @@
         <Parameter Name="arg" Type="System.Nullable&lt;System.Decimal&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg">The sine of an angle.</param>
+        <summary>A mathematical function that returns the angle, in radians, whose sine is the specified numerical value. This angle is called the arcsine.</summary>
+        <returns>An angle, measured in radians.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [ASIN (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140039).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Asin">
@@ -144,10 +180,19 @@
         <Parameter Name="arg" Type="System.Nullable&lt;System.Double&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg">The sine of an angle.</param>
+        <summary>A mathematical function that returns the angle, in radians, whose sine is the specified numerical value. This angle is called the arcsine.</summary>
+        <returns>An angle, measured in radians.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [ASIN (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140039).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Atan">
@@ -171,10 +216,19 @@
         <Parameter Name="arg" Type="System.Nullable&lt;System.Decimal&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg">The tangent of an angle.</param>
+        <summary>A mathematical function that returns the angle, in radians, whose tangent is the specified numerical value. This angle is called the arctangent.</summary>
+        <returns>An angle, measured in radians.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [ATAN (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140038).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Atan">
@@ -198,10 +252,19 @@
         <Parameter Name="arg" Type="System.Nullable&lt;System.Double&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg">The tangent of an angle.</param>
+        <summary>A mathematical function that returns the angle, in radians, whose tangent is the specified numerical value. This angle is called the arctangent.</summary>
+        <returns>An angle, measured in radians.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [ATAN (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140038).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Atan2">
@@ -226,11 +289,20 @@
         <Parameter Name="arg2" Type="System.Nullable&lt;System.Decimal&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg1">To be added.</param>
-        <param name="arg2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg1">The y-coordinate of a point.</param>
+        <param name="arg2">The x-coordinate of a point.</param>
+        <summary>Returns the positive angle, in radians, between the positive x-axis and the ray from the origin through the point (x, y), where x and y are the two specified numerical values. The first parameter passed to the function is the y-value and the second parameter is the x-value.</summary>
+        <returns>An angle, measured in radians.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [ATN2 (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140037).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Atan2">
@@ -255,11 +327,20 @@
         <Parameter Name="arg2" Type="System.Nullable&lt;System.Double&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg1">To be added.</param>
-        <param name="arg2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg1">The y-coordinate of a point.</param>
+        <param name="arg2">The x-coordinate of a point.</param>
+        <summary>Returns the positive angle, in radians, between the positive x-axis and the ray from the origin through the point (x, y), where x and y are the two specified numerical values. The first parameter passed to the function is the y-value and the second parameter is the x-value.</summary>
+        <returns>An angle, measured in radians.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [ATN2 (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140037).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Char">
@@ -283,10 +364,19 @@
         <Parameter Name="arg" Type="System.Nullable&lt;System.Int32&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg">An ASCII code.</param>
+        <summary>Returns the character that corresponds to the specified integer ASCII value.</summary>
+        <returns>The character that corresponds to the specified ASCII value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [CHAR (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140119).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CharIndex">
@@ -311,11 +401,20 @@
         <Parameter Name="target" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="toSearch">To be added.</param>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="toSearch">The string expression to be searched.</param>
+        <param name="target">The string expression to be found.</param>
+        <summary>Returns the starting position of one expression found within another expression.</summary>
+        <returns>The starting position of <paramref name="target" /> if it is found in <paramref name="toSearch" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [CHARINDEX (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140118).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CharIndex">
@@ -340,11 +439,20 @@
         <Parameter Name="target" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="toSearch">To be added.</param>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="toSearch">The string expression to be searched.</param>
+        <param name="target">The string expression to be found.</param>
+        <summary>Returns the starting position of one expression found within another expression.</summary>
+        <returns>The starting position of <paramref name="target" /> if it is found in <paramref name="toSearch" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [CHARINDEX (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140118).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CharIndex">
@@ -370,12 +478,21 @@
         <Parameter Name="startLocation" Type="System.Nullable&lt;System.Int32&gt;" />
       </Parameters>
       <Docs>
-        <param name="toSearch">To be added.</param>
-        <param name="target">To be added.</param>
-        <param name="startLocation">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="toSearch">The string expression to be searched.</param>
+        <param name="target">The string expression to be found.</param>
+        <param name="startLocation">The character position in <c>toSearch</c> where searching begins.</param>
+        <summary>Returns the starting position of one expression found within another expression.</summary>
+        <returns>The starting position of <paramref name="target" /> if it is found in <paramref name="toSearch" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [CHARINDEX (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140118).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CharIndex">
@@ -401,12 +518,21 @@
         <Parameter Name="startLocation" Type="System.Nullable&lt;System.Int64&gt;" />
       </Parameters>
       <Docs>
-        <param name="toSearch">To be added.</param>
-        <param name="target">To be added.</param>
-        <param name="startLocation">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="toSearch">The string expression to be searched.</param>
+        <param name="target">The string expression to be found.</param>
+        <param name="startLocation">The character position in <c>toSearch</c> at which searching begins.</param>
+        <summary>Returns the starting position of one expression found within another expression.</summary>
+        <returns>The starting position of <paramref name="target" /> if it is found in <paramref name="toSearch" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [CHARINDEX (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140118).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CharIndex">
@@ -432,12 +558,21 @@
         <Parameter Name="startLocation" Type="System.Nullable&lt;System.Int32&gt;" />
       </Parameters>
       <Docs>
-        <param name="toSearch">To be added.</param>
-        <param name="target">To be added.</param>
-        <param name="startLocation">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="toSearch">The string expression to be searched.</param>
+        <param name="target">The string expression to be found.</param>
+        <param name="startLocation">The character position in <c>toSearch</c> where searching begins.</param>
+        <summary>Returns the starting position of one expression found within another expression.</summary>
+        <returns>The starting position of <paramref name="target" /> if it is found in <paramref name="toSearch" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [CHARINDEX (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140118).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CharIndex">
@@ -463,12 +598,21 @@
         <Parameter Name="startLocation" Type="System.Nullable&lt;System.Int64&gt;" />
       </Parameters>
       <Docs>
-        <param name="toSearch">To be added.</param>
-        <param name="target">To be added.</param>
-        <param name="startLocation">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="toSearch">The string expression to be searched.</param>
+        <param name="target">The string expression to be found.</param>
+        <param name="startLocation">The character position in <c>toSearch</c> where searching begins.</param>
+        <summary>Returns the starting position of one expression found within another expression.</summary>
+        <returns>A <see cref="T:System.Nullable`1" /> of <see cref="T:System.Int64" /> value that is the starting position of <paramref name="target" /> if it is found in <paramref name="toSearch" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [CHARINDEX (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140118).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Checksum">
@@ -492,10 +636,19 @@
         <Parameter Name="arg1" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="arg1">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg1">The character array for which the checksum is calculated.</param>
+        <summary>Returns the checksum value computed over the input argument.</summary>
+        <returns>The checksum computed over the input value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [CHECKSUM (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140120).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Checksum">
@@ -519,10 +672,19 @@
         <Parameter Name="arg1" Type="System.Nullable&lt;System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg1">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg1">The value for which the checksum is calculated.</param>
+        <summary>Returns the checksum value computed over the input argument.</summary>
+        <returns>The checksum computed over the input value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [CHECKSUM (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140120).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Checksum">
@@ -546,10 +708,19 @@
         <Parameter Name="arg1" Type="System.Nullable&lt;System.DateTime&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg1">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg1">The value for which the checksum is calculated.</param>
+        <summary>Returns the checksum value computed over the input argument.</summary>
+        <returns>The checksum computed over the input values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [CHECKSUM (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140120).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Checksum">
@@ -573,10 +744,19 @@
         <Parameter Name="arg1" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg1">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg1">The value for which the checksum is calculated.</param>
+        <summary>Returns the checksum value computed over the input argument.</summary>
+        <returns>The checksum computed over the input value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [CHECKSUM (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140120).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Checksum">
@@ -600,10 +780,19 @@
         <Parameter Name="arg1" Type="System.Nullable&lt;System.Decimal&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg1">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg1">The value for which the checksum is calculated.</param>
+        <summary>Returns the checksum value computed over the input argument.</summary>
+        <returns>The checksum computed over the input value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [CHECKSUM (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140120).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Checksum">
@@ -627,10 +816,19 @@
         <Parameter Name="arg1" Type="System.Nullable&lt;System.Double&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg1">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg1">The value for which the checksum is calculated.</param>
+        <summary>Returns the checksum value computed over the input argument.</summary>
+        <returns>The checksum computed over the input value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [CHECKSUM (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140120).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Checksum">
@@ -654,10 +852,19 @@
         <Parameter Name="arg1" Type="System.Nullable&lt;System.Guid&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg1">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg1">The value for which the checksum is calculated.</param>
+        <summary>Returns the checksum value computed over the input argument.</summary>
+        <returns>The checksum computed over the input value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [CHECKSUM (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140120).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Checksum">
@@ -681,10 +888,19 @@
         <Parameter Name="arg1" Type="System.Nullable&lt;System.TimeSpan&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg1">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg1">The value for which the checksum is calculated.</param>
+        <summary>Returns the checksum value computed over the input argument.</summary>
+        <returns>The checksum computed over the input value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [CHECKSUM (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140120).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Checksum">
@@ -708,10 +924,19 @@
         <Parameter Name="arg1" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="arg1">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg1">The value for which the checksum is calculated.</param>
+        <summary>Returns the checksum value computed over the input argument.</summary>
+        <returns>The checksum computed over the input value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [CHECKSUM (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140120).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Checksum">
@@ -736,11 +961,20 @@
         <Parameter Name="arg2" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="arg1">To be added.</param>
-        <param name="arg2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg1">The character array for which the checksum is calculated.</param>
+        <param name="arg2">The character array for which the checksum is calculated.</param>
+        <summary>Returns the checksum value computed over the input arguments.</summary>
+        <returns>The checksum computed over the input values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [CHECKSUM (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140120).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Checksum">
@@ -765,11 +999,20 @@
         <Parameter Name="arg2" Type="System.Nullable&lt;System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg1">To be added.</param>
-        <param name="arg2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg1">The value for which the checksum is calculated.</param>
+        <param name="arg2">The value for which the checksum is calculated.</param>
+        <summary>Returns the checksum value computed over the input arguments.</summary>
+        <returns>The checksum computed over the input values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [CHECKSUM (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140120).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Checksum">
@@ -794,11 +1037,20 @@
         <Parameter Name="arg2" Type="System.Nullable&lt;System.DateTime&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg1">To be added.</param>
-        <param name="arg2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg1">The value for which the checksum is calculated.</param>
+        <param name="arg2">The value for which the checksum is calculated.</param>
+        <summary>Returns the checksum value computed over the input arguments.</summary>
+        <returns>The checksum computed over the input values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [CHECKSUM (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140120).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Checksum">
@@ -823,11 +1075,20 @@
         <Parameter Name="arg2" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg1">To be added.</param>
-        <param name="arg2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg1">The value for which the checksum is calculated.</param>
+        <param name="arg2">The value for which the checksum is calculated.</param>
+        <summary>Returns the checksum value computed over the input arguments.</summary>
+        <returns>The checksum computed over the input values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [CHECKSUM (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140120).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Checksum">
@@ -852,11 +1113,20 @@
         <Parameter Name="arg2" Type="System.Nullable&lt;System.Decimal&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg1">To be added.</param>
-        <param name="arg2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg1">The value for which the checksum is calculated.</param>
+        <param name="arg2">The value for which the checksum is calculated.</param>
+        <summary>Returns the checksum value computed over the input arguments.</summary>
+        <returns>The checksum computed over the input values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [CHECKSUM (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140120).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Checksum">
@@ -881,11 +1151,20 @@
         <Parameter Name="arg2" Type="System.Nullable&lt;System.Double&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg1">To be added.</param>
-        <param name="arg2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg1">The value for which the checksum is calculated.</param>
+        <param name="arg2">The value for which the checksum is calculated.</param>
+        <summary>Returns the checksum value computed over the input arguments.</summary>
+        <returns>The checksum computed over the input values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [CHECKSUM (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140120).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Checksum">
@@ -910,11 +1189,20 @@
         <Parameter Name="arg2" Type="System.Nullable&lt;System.Guid&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg1">To be added.</param>
-        <param name="arg2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg1">The value for which the checksum is calculated.</param>
+        <param name="arg2">The value for which the checksum is calculated.</param>
+        <summary>Returns the checksum value computed over the input arguments.</summary>
+        <returns>The checksum computed over the input values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [CHECKSUM (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140120).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Checksum">
@@ -939,11 +1227,20 @@
         <Parameter Name="arg2" Type="System.Nullable&lt;System.TimeSpan&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg1">To be added.</param>
-        <param name="arg2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg1">The value for which the checksum is calculated.</param>
+        <param name="arg2">The value for which the checksum is calculated.</param>
+        <summary>Returns the checksum value computed over the input arguments.</summary>
+        <returns>The checksum computed over the input values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [CHECKSUM (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140120).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Checksum">
@@ -968,11 +1265,20 @@
         <Parameter Name="arg2" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="arg1">To be added.</param>
-        <param name="arg2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg1">The value for which the checksum is calculated.</param>
+        <param name="arg2">The value for which the checksum is calculated.</param>
+        <summary>Returns the checksum value computed over the input arguments.</summary>
+        <returns>The checksum computed over the input values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [CHECKSUM (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140120).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Checksum">
@@ -998,12 +1304,21 @@
         <Parameter Name="arg3" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="arg1">To be added.</param>
-        <param name="arg2">To be added.</param>
-        <param name="arg3">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg1">The character array for which the checksum is calculated.</param>
+        <param name="arg2">The character array for which the checksum is calculated.</param>
+        <param name="arg3">The character array for which the checksum is calculated.</param>
+        <summary>Returns the checksum value computed over the input arguments.</summary>
+        <returns>The checksum computed over the input values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [CHECKSUM (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140120).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Checksum">
@@ -1029,12 +1344,21 @@
         <Parameter Name="arg3" Type="System.Nullable&lt;System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg1">To be added.</param>
-        <param name="arg2">To be added.</param>
-        <param name="arg3">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg1">The value for which the checksum is calculated.</param>
+        <param name="arg2">The value for which the checksum is calculated.</param>
+        <param name="arg3">The value for which the checksum is calculated.</param>
+        <summary>Returns the checksum value computed over the input arguments.</summary>
+        <returns>The checksum computed over the input values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [CHECKSUM (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140120).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Checksum">
@@ -1060,12 +1384,21 @@
         <Parameter Name="arg3" Type="System.Nullable&lt;System.DateTime&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg1">To be added.</param>
-        <param name="arg2">To be added.</param>
-        <param name="arg3">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg1">The value for which the checksum is calculated.</param>
+        <param name="arg2">The value for which the checksum is calculated.</param>
+        <param name="arg3">The value for which the checksum is calculated.</param>
+        <summary>Returns the checksum value computed over the input arguments.</summary>
+        <returns>The checksum computed over the input values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [CHECKSUM (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140120).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Checksum">
@@ -1091,12 +1424,21 @@
         <Parameter Name="arg3" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg1">To be added.</param>
-        <param name="arg2">To be added.</param>
-        <param name="arg3">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg1">The value for which the checksum is calculated.</param>
+        <param name="arg2">The value for which the checksum is calculated.</param>
+        <param name="arg3">The value for which the checksum is calculated.</param>
+        <summary>Returns the checksum value computed over the input arguments.</summary>
+        <returns>The checksum computed over the input values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [CHECKSUM (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140120).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Checksum">
@@ -1122,12 +1464,21 @@
         <Parameter Name="arg3" Type="System.Nullable&lt;System.Decimal&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg1">To be added.</param>
-        <param name="arg2">To be added.</param>
-        <param name="arg3">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg1">The value for which the checksum is calculated.</param>
+        <param name="arg2">The value for which the checksum is calculated.</param>
+        <param name="arg3">The value for which the checksum is calculated.</param>
+        <summary>Returns the checksum value computed over the input arguments.</summary>
+        <returns>The checksum computed over the input values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [CHECKSUM (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140120).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Checksum">
@@ -1153,12 +1504,21 @@
         <Parameter Name="arg3" Type="System.Nullable&lt;System.Double&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg1">To be added.</param>
-        <param name="arg2">To be added.</param>
-        <param name="arg3">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg1">The value for which the checksum is calculated.</param>
+        <param name="arg2">The value for which the checksum is calculated.</param>
+        <param name="arg3">The value for which the checksum is calculated.</param>
+        <summary>Returns the checksum value computed over the input arguments.</summary>
+        <returns>The checksum computed over the input values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [CHECKSUM (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140120).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Checksum">
@@ -1184,12 +1544,21 @@
         <Parameter Name="arg3" Type="System.Nullable&lt;System.Guid&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg1">To be added.</param>
-        <param name="arg2">To be added.</param>
-        <param name="arg3">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg1">The value for which the checksum is calculated.</param>
+        <param name="arg2">The value for which the checksum is calculated.</param>
+        <param name="arg3">The value for which the checksum is calculated.</param>
+        <summary>Returns the checksum value computed over the input arguments.</summary>
+        <returns>The checksum computed over the input values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [CHECKSUM (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140120).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Checksum">
@@ -1215,12 +1584,21 @@
         <Parameter Name="arg3" Type="System.Nullable&lt;System.TimeSpan&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg1">To be added.</param>
-        <param name="arg2">To be added.</param>
-        <param name="arg3">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg1">The value for which the checksum is calculated.</param>
+        <param name="arg2">The value for which the checksum is calculated.</param>
+        <param name="arg3">The value for which the checksum is calculated.</param>
+        <summary>Returns the checksum value computed over the input arguments.</summary>
+        <returns>The checksum computed over the input values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [CHECKSUM (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140120).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Checksum">
@@ -1246,12 +1624,21 @@
         <Parameter Name="arg3" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="arg1">To be added.</param>
-        <param name="arg2">To be added.</param>
-        <param name="arg3">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg1">The value for which the checksum is calculated.</param>
+        <param name="arg2">The value for which the checksum is calculated.</param>
+        <param name="arg3">The value for which the checksum is calculated.</param>
+        <summary>Returns the checksum value computed over the input arguments.</summary>
+        <returns>The checksum computed over the input values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [CHECKSUM (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140120).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ChecksumAggregate">
@@ -1275,10 +1662,17 @@
         <Parameter Name="arg" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg">The collection of values over which the checksum is computed.</param>
+        <summary>Returns the checksum of the values in a collection. Null values are ignored.</summary>
+        <returns>The checksum computed from the input collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [CHECKSUM_AGG (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140120).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ChecksumAggregate">
@@ -1302,10 +1696,17 @@
         <Parameter Name="arg" Type="System.Collections.Generic.IEnumerable&lt;System.Nullable&lt;System.Int32&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg">The collection of values over which the checksum is computed.</param>
+        <summary>Returns the checksum of the values in a collection. Null values are ignored.</summary>
+        <returns>The checksum computed from the input collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [CHECKSUM_AGG (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140120).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Cos">
@@ -1329,10 +1730,19 @@
         <Parameter Name="arg" Type="System.Nullable&lt;System.Decimal&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg">An angle, measured in radians.</param>
+        <summary>Returns the trigonometric cosine of the specified angle, in radians, in the specified expression.</summary>
+        <returns>The trigonometric cosine of the specified angle.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [COS (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140121).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Cos">
@@ -1356,10 +1766,19 @@
         <Parameter Name="arg" Type="System.Nullable&lt;System.Double&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg">An angle, measured in radians.</param>
+        <summary>Returns the trigonometric cosine of the specified angle, in radians, in the specified expression.</summary>
+        <returns>The trigonometric cosine of the specified angle.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [COS (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140121).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Cot">
@@ -1383,10 +1802,19 @@
         <Parameter Name="arg" Type="System.Nullable&lt;System.Decimal&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg">An angle, measured in radians.</param>
+        <summary>A mathematical function that returns the trigonometric cotangent of the specified angle, in radians.</summary>
+        <returns>The trigonometric cotangent of the specified angle.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [COT (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140122).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Cot">
@@ -1410,10 +1838,19 @@
         <Parameter Name="arg" Type="System.Nullable&lt;System.Double&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg">An angle, measured in radians.</param>
+        <summary>A mathematical function that returns the trigonometric cotangent of the specified angle, in radians.</summary>
+        <returns>The trigonometric cotangent of the specified angle.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [COT (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140122).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CurrentTimestamp">
@@ -1435,9 +1872,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the current date and time.</summary>
+        <returns>The current date and time.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [CURRENT_TIMESTAMP (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140125).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CurrentUser">
@@ -1459,9 +1905,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the name of the current user.</summary>
+        <returns>The name of the current user.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [CURRENT_USER (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140126).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataLength">
@@ -1485,10 +1940,19 @@
         <Parameter Name="arg" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg">The value to be examined for length.</param>
+        <summary>Returns the number of bytes used to represent any expression.</summary>
+        <returns>The number of bytes in the input value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATALENGTH (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140127).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataLength">
@@ -1512,10 +1976,19 @@
         <Parameter Name="arg" Type="System.Nullable&lt;System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg">The value to be examined for data length.</param>
+        <summary>Returns the number of bytes used to represent any expression.</summary>
+        <returns>The number of bytes in the input value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATALENGTH (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140127).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataLength">
@@ -1539,10 +2012,19 @@
         <Parameter Name="arg" Type="System.Nullable&lt;System.DateTime&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg">The value to be examined for data length.</param>
+        <summary>Returns the number of bytes used to represent any expression.</summary>
+        <returns>The number of bytes in the input value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATALENGTH (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140127).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataLength">
@@ -1566,10 +2048,19 @@
         <Parameter Name="arg" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg">The value to be examined for data length.</param>
+        <summary>Returns the number of bytes used to represent any expression.</summary>
+        <returns>The number of bytes in the input value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATALENGTH (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140127).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataLength">
@@ -1593,10 +2084,19 @@
         <Parameter Name="arg" Type="System.Nullable&lt;System.Decimal&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg">The value to be examined for data length.</param>
+        <summary>Returns the number of bytes used to represent any expression.</summary>
+        <returns>The number of bytes in the input value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATALENGTH (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140127).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataLength">
@@ -1620,10 +2120,19 @@
         <Parameter Name="arg" Type="System.Nullable&lt;System.Double&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg">The value to be examined for data length.</param>
+        <summary>Returns the number of bytes used to represent any expression.</summary>
+        <returns>The number of bytes in the input value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATALENGTH (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140127).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataLength">
@@ -1647,10 +2156,19 @@
         <Parameter Name="arg" Type="System.Nullable&lt;System.Guid&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg">The value to be examined for data length.</param>
+        <summary>Returns the number of bytes used to represent any expression.</summary>
+        <returns>The number of bytes in the input value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATALENGTH (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140127).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataLength">
@@ -1674,10 +2192,19 @@
         <Parameter Name="arg" Type="System.Nullable&lt;System.TimeSpan&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg">The value to be examined for data length.</param>
+        <summary>Returns the number of bytes used to represent any expression.</summary>
+        <returns>The number of bytes in the input value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATALENGTH (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140127).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataLength">
@@ -1701,10 +2228,19 @@
         <Parameter Name="arg" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg">The value to be examined for data length.</param>
+        <summary>Returns the number of bytes used to represent any expression.</summary>
+        <returns>The number of bytes in the input value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATALENGTH (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140127).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateAdd">
@@ -1730,12 +2266,21 @@
         <Parameter Name="date" Type="System.Nullable&lt;System.DateTime&gt;" />
       </Parameters>
       <Docs>
-        <param name="datePartArg">To be added.</param>
-        <param name="number">To be added.</param>
-        <param name="date">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="datePartArg">The part of the date to increment.</param>
+        <param name="number">The value used to increment a date by a specified amount.</param>
+        <param name="date">The date to increment.</param>
+        <summary>Returns a new <see langword="datetime" /> value based on adding an interval to the specified date.</summary>
+        <returns>The new date.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATEADD (Transact-SQL).](http://go.microsoft.com/fwlink/?LinkId=140128)  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateAdd">
@@ -1761,12 +2306,21 @@
         <Parameter Name="dateTimeOffsetArg" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
       </Parameters>
       <Docs>
-        <param name="datePartArg">To be added.</param>
-        <param name="number">To be added.</param>
-        <param name="dateTimeOffsetArg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="datePartArg">The part of the date to increment.</param>
+        <param name="number">The value used to increment a date by a specified amount.</param>
+        <param name="dateTimeOffsetArg">The date to increment.</param>
+        <summary>Returns a new date value based on adding an interval to the specified date.</summary>
+        <returns>The new point in time, expressed as a date and time of day, relative to Coordinated Universal Time (UTC).</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATEADD (Transact-SQL).](http://go.microsoft.com/fwlink/?LinkId=140128)  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateAdd">
@@ -1792,12 +2346,21 @@
         <Parameter Name="time" Type="System.Nullable&lt;System.TimeSpan&gt;" />
       </Parameters>
       <Docs>
-        <param name="datePartArg">To be added.</param>
-        <param name="number">To be added.</param>
-        <param name="time">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="datePartArg">The part of the date to increment.</param>
+        <param name="number">The value used to increment a date by a specified amount.</param>
+        <param name="time">The time span to increment.</param>
+        <summary>Returns a new time span value based on adding an interval to the specified time span.</summary>
+        <returns>The new time span.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATEADD (Transact-SQL).](http://go.microsoft.com/fwlink/?LinkId=140128)  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateAdd">
@@ -1823,12 +2386,21 @@
         <Parameter Name="date" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="datePartArg">To be added.</param>
-        <param name="number">To be added.</param>
-        <param name="date">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="datePartArg">The part of the date to increment.</param>
+        <param name="number">The value used to increment a date by a specified amount.</param>
+        <param name="date">The date to increment.</param>
+        <summary>Returns a new <see langword="datetime" /> value based on adding an interval to the specified date.</summary>
+        <returns>A <see cref="T:System.Nullable`1" /> of <see cref="T:System.DateTime" /> value that is the new date.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATEADD (Transact-SQL).](http://go.microsoft.com/fwlink/?LinkId=140128)  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiff">
@@ -1854,12 +2426,21 @@
         <Parameter Name="endDate" Type="System.Nullable&lt;System.DateTime&gt;" />
       </Parameters>
       <Docs>
-        <param name="datePartArg">To be added.</param>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="datePartArg">The part of the date to calculate the differing number of time intervals.</param>
+        <param name="startDate">The first date.</param>
+        <param name="endDate">The second date.</param>
+        <summary>Returns the count of the specified datepart boundaries crossed between the specified start date and end date.</summary>
+        <returns>The number of time intervals between the two dates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATEDIFF (Transact-SQL).](http://go.microsoft.com/fwlink/?LinkId=141344)  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiff">
@@ -1885,12 +2466,21 @@
         <Parameter Name="endDate" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
       </Parameters>
       <Docs>
-        <param name="datePartArg">To be added.</param>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="datePartArg">The part of the date to calculate the differing number of time intervals.</param>
+        <param name="startDate">The first date.</param>
+        <param name="endDate">The second date.</param>
+        <summary>Returns the count of the specified datepart boundaries crossed between the specified start date and end date.</summary>
+        <returns>The number of time intervals between the two dates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATEDIFF (Transact-SQL).](http://go.microsoft.com/fwlink/?LinkId=141344)  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiff">
@@ -1916,12 +2506,21 @@
         <Parameter Name="endDate" Type="System.Nullable&lt;System.TimeSpan&gt;" />
       </Parameters>
       <Docs>
-        <param name="datePartArg">To be added.</param>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="datePartArg">The part of the date to calculate the differing number of time intervals.</param>
+        <param name="startDate">The first date.</param>
+        <param name="endDate">The second date.</param>
+        <summary>Returns the count of the specified datepart boundaries crossed between the specified start date and end date.</summary>
+        <returns>The number of time intervals between the two dates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATEDIFF (Transact-SQL).](http://go.microsoft.com/fwlink/?LinkId=141344)  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiff">
@@ -1947,12 +2546,21 @@
         <Parameter Name="endDate" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="datePartArg">To be added.</param>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="datePartArg">The part of the date to calculate the differing number of time intervals.</param>
+        <param name="startDate">The first date.</param>
+        <param name="endDate">The second date.</param>
+        <summary>Returns the count of the specified datepart boundaries crossed between the specified start date and end date.</summary>
+        <returns>The number of time intervals between the two dates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATEDIFF (Transact-SQL).](http://go.microsoft.com/fwlink/?LinkId=141344)  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiff">
@@ -1978,12 +2586,21 @@
         <Parameter Name="endDate" Type="System.Nullable&lt;System.DateTime&gt;" />
       </Parameters>
       <Docs>
-        <param name="datePartArg">To be added.</param>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="datePartArg">The part of the date to calculate the differing number of time intervals.</param>
+        <param name="startDate">The first date.</param>
+        <param name="endDate">The second date.</param>
+        <summary>Returns the count of the specified datepart boundaries crossed between the specified start date and end date.</summary>
+        <returns>The number of time intervals between the two dates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATEDIFF (Transact-SQL).](http://go.microsoft.com/fwlink/?LinkId=141344)  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiff">
@@ -2009,12 +2626,21 @@
         <Parameter Name="endDate" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
       </Parameters>
       <Docs>
-        <param name="datePartArg">To be added.</param>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="datePartArg">The part of the date to calculate the differing number of time intervals.</param>
+        <param name="startDate">The first date.</param>
+        <param name="endDate">The second date.</param>
+        <summary>Returns the count of the specified datepart boundaries crossed between the specified start date and end date.</summary>
+        <returns>The number of time intervals between the two dates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATEDIFF (Transact-SQL).](http://go.microsoft.com/fwlink/?LinkId=141344)  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiff">
@@ -2040,12 +2666,21 @@
         <Parameter Name="endDate" Type="System.Nullable&lt;System.TimeSpan&gt;" />
       </Parameters>
       <Docs>
-        <param name="datePartArg">To be added.</param>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="datePartArg">The part of the date to calculate the differing number of time intervals.</param>
+        <param name="startDate">The first date.</param>
+        <param name="endDate">The second date.</param>
+        <summary>Returns the count of the specified datepart boundaries crossed between the specified start date and end date.</summary>
+        <returns>The number of time intervals between the two Dates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATEDIFF (Transact-SQL).](http://go.microsoft.com/fwlink/?LinkId=141344)  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiff">
@@ -2071,12 +2706,21 @@
         <Parameter Name="endDate" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="datePartArg">To be added.</param>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="datePartArg">The part of the date to calculate the differing number of time intervals.</param>
+        <param name="startDate">The first date.</param>
+        <param name="endDate">The second date.</param>
+        <summary>Returns the count of the specified datepart boundaries crossed between the specified start date and end date.</summary>
+        <returns>The number of time intervals between the two dates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATEDIFF (Transact-SQL).](http://go.microsoft.com/fwlink/?LinkId=141344)  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiff">
@@ -2102,12 +2746,21 @@
         <Parameter Name="endDate" Type="System.Nullable&lt;System.DateTime&gt;" />
       </Parameters>
       <Docs>
-        <param name="datePartArg">To be added.</param>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="datePartArg">The part of the date to calculate the differing number of time intervals.</param>
+        <param name="startDate">The first date.</param>
+        <param name="endDate">The second date.</param>
+        <summary>Returns the count of the specified datepart boundaries crossed between the specified start date and end date.</summary>
+        <returns>The number of time intervals between the two dates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATEDIFF (Transact-SQL).](http://go.microsoft.com/fwlink/?LinkId=141344)  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiff">
@@ -2133,12 +2786,21 @@
         <Parameter Name="endDate" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
       </Parameters>
       <Docs>
-        <param name="datePartArg">To be added.</param>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="datePartArg">The part of the date to calculate the differing number of time intervals.</param>
+        <param name="startDate">The first date.</param>
+        <param name="endDate">The second date.</param>
+        <summary>Returns the count of the specified datepart boundaries crossed between the specified start date and end date.</summary>
+        <returns>The number of time intervals between the two dates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATEDIFF (Transact-SQL).](http://go.microsoft.com/fwlink/?LinkId=141344)  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiff">
@@ -2164,12 +2826,21 @@
         <Parameter Name="endDate" Type="System.Nullable&lt;System.TimeSpan&gt;" />
       </Parameters>
       <Docs>
-        <param name="datePartArg">To be added.</param>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="datePartArg">The part of the date to calculate the differing number of time intervals.</param>
+        <param name="startDate">The first date.</param>
+        <param name="endDate">The second date.</param>
+        <summary>Returns the count of the specified datepart boundaries crossed between the specified start date and end date.</summary>
+        <returns>The number of time intervals between the two dates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATEDIFF (Transact-SQL).](http://go.microsoft.com/fwlink/?LinkId=141344)  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiff">
@@ -2195,12 +2866,21 @@
         <Parameter Name="endDate" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="datePartArg">To be added.</param>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="datePartArg">The part of the date to calculate the differing number of time intervals.</param>
+        <param name="startDate">The first date.</param>
+        <param name="endDate">The second date.</param>
+        <summary>Returns the count of the specified datepart boundaries crossed between the specified start date and end date.</summary>
+        <returns>The number of time intervals between the two dates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATEDIFF (Transact-SQL).](http://go.microsoft.com/fwlink/?LinkId=141344)  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiff">
@@ -2226,12 +2906,21 @@
         <Parameter Name="endDate" Type="System.Nullable&lt;System.DateTime&gt;" />
       </Parameters>
       <Docs>
-        <param name="datePartArg">To be added.</param>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="datePartArg">The part of the date to calculate the differing number of time intervals.</param>
+        <param name="startDate">The first date.</param>
+        <param name="endDate">The second date.</param>
+        <summary>Returns the count of the specified datepart boundaries crossed between the specified start date and end date.</summary>
+        <returns>The number of time intervals between the two dates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATEDIFF (Transact-SQL).](http://go.microsoft.com/fwlink/?LinkId=141344)  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiff">
@@ -2257,12 +2946,21 @@
         <Parameter Name="endDate" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
       </Parameters>
       <Docs>
-        <param name="datePartArg">To be added.</param>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="datePartArg">The part of the date to calculate the differing number of time intervals.</param>
+        <param name="startDate">The first date.</param>
+        <param name="endDate">The second date.</param>
+        <summary>Returns the count of the specified datepart boundaries crossed between the specified start date and end date.</summary>
+        <returns>The number of time intervals between the two dates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATEDIFF (Transact-SQL).](http://go.microsoft.com/fwlink/?LinkId=141344)  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiff">
@@ -2288,12 +2986,21 @@
         <Parameter Name="endDate" Type="System.Nullable&lt;System.TimeSpan&gt;" />
       </Parameters>
       <Docs>
-        <param name="datePartArg">To be added.</param>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="datePartArg">The part of the date to calculate the differing number of time intervals.</param>
+        <param name="startDate">The first date.</param>
+        <param name="endDate">The second date.</param>
+        <summary>Returns the count of the specified datepart boundaries crossed between the specified start date and end date.</summary>
+        <returns>The value specifying the number of time intervals between the two dates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATEDIFF (Transact-SQL).](http://go.microsoft.com/fwlink/?LinkId=141344)  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiff">
@@ -2319,12 +3026,21 @@
         <Parameter Name="endDate" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="datePartArg">To be added.</param>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="datePartArg">The part of the date to calculate the differing number of time intervals.</param>
+        <param name="startDate">The first date.</param>
+        <param name="endDate">The second date.</param>
+        <summary>Returns the count of the specified datepart boundaries crossed between the specified start date and end date.</summary>
+        <returns>The number of time intervals between the two dates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATEDIFF (Transact-SQL).](http://go.microsoft.com/fwlink/?LinkId=141344)  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateName">
@@ -2349,11 +3065,20 @@
         <Parameter Name="date" Type="System.Nullable&lt;System.DateTime&gt;" />
       </Parameters>
       <Docs>
-        <param name="datePartArg">To be added.</param>
-        <param name="date">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="datePartArg">The part of the date to calculate the differing number of time intervals.</param>
+        <param name="date">The date.</param>
+        <summary>Returns a character string that represents the specified datepart of the specified date.</summary>
+        <returns>The specified part of the specified date.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATENAME (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141345).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateName">
@@ -2378,11 +3103,20 @@
         <Parameter Name="date" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
       </Parameters>
       <Docs>
-        <param name="datePartArg">To be added.</param>
-        <param name="date">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="datePartArg">The part of the date to calculate the differing number of time intervals.</param>
+        <param name="date">The date.</param>
+        <summary>Returns a character string that represents the specified datepart of the specified date.</summary>
+        <returns>The specified part of the specified date.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATENAME (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141345).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateName">
@@ -2407,11 +3141,20 @@
         <Parameter Name="date" Type="System.Nullable&lt;System.TimeSpan&gt;" />
       </Parameters>
       <Docs>
-        <param name="datePartArg">To be added.</param>
-        <param name="date">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="datePartArg">The part of the date to calculate the differing number of time intervals.</param>
+        <param name="date">The date.</param>
+        <summary>Returns a character string that represents the specified datepart of the specified date.</summary>
+        <returns>The specified part of the specified date.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATENAME (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141345).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateName">
@@ -2436,11 +3179,20 @@
         <Parameter Name="date" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="datePartArg">To be added.</param>
-        <param name="date">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="datePartArg">The part of the date to calculate the differing number of time intervals.</param>
+        <param name="date">The date.</param>
+        <summary>Returns a character string that represents the specified datepart of the specified date.</summary>
+        <returns>The specified part of the specified date.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATENAME (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141345).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DatePart">
@@ -2465,11 +3217,20 @@
         <Parameter Name="date" Type="System.Nullable&lt;System.DateTime&gt;" />
       </Parameters>
       <Docs>
-        <param name="datePartArg">To be added.</param>
-        <param name="date">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="datePartArg">The part of the date to return the value.</param>
+        <param name="date">The date.</param>
+        <summary>Returns an integer that represents the specified datepart of the specified date.</summary>
+        <returns>The the specified datepart of the specified date.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATEPART (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DatePart">
@@ -2494,11 +3255,20 @@
         <Parameter Name="date" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
       </Parameters>
       <Docs>
-        <param name="datePartArg">To be added.</param>
-        <param name="date">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="datePartArg">The part of the date to return the value.</param>
+        <param name="date">The date.</param>
+        <summary>Returns an integer that represents the specified datepart of the specified date.</summary>
+        <returns>The specified datepart of the specified date.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATEPART (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DatePart">
@@ -2523,11 +3293,20 @@
         <Parameter Name="date" Type="System.Nullable&lt;System.TimeSpan&gt;" />
       </Parameters>
       <Docs>
-        <param name="datePartArg">To be added.</param>
-        <param name="date">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="datePartArg">The part of the date to return the value.</param>
+        <param name="date">The date.</param>
+        <summary>Returns an integer that represents the specified datepart of the specified date.</summary>
+        <returns>The specified datepart of the specified date.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATEPART (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DatePart">
@@ -2552,11 +3331,20 @@
         <Parameter Name="date" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="datePartArg">To be added.</param>
-        <param name="date">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="datePartArg">The part of the date to return the value.</param>
+        <param name="date">The date.</param>
+        <summary>Returns an integer that represents the specified datepart of the specified date.</summary>
+        <returns>The specified datepart of the specified date.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATEPART (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Degrees">
@@ -2580,10 +3368,19 @@
         <Parameter Name="arg1" Type="System.Nullable&lt;System.Decimal&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg1">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg1">An angle, measured in radians.</param>
+        <summary>Returns the corresponding angle in degrees for an angle specified in radians.</summary>
+        <returns>The specified angle converted to degrees.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DEGREES (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141348).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Degrees">
@@ -2607,10 +3404,19 @@
         <Parameter Name="arg1" Type="System.Nullable&lt;System.Double&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg1">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg1">An angle, measured in radians.</param>
+        <summary>Returns the corresponding angle in degrees for an angle specified in radians.</summary>
+        <returns>The specified angle converted to degrees.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DEGREES (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141348).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Degrees">
@@ -2634,10 +3440,19 @@
         <Parameter Name="arg1" Type="System.Nullable&lt;System.Int32&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg1">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg1">An angle, measured in radians.</param>
+        <summary>Returns the corresponding angle in degrees for an angle specified in radians.</summary>
+        <returns>The specified angle converted to degrees.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DEGREES (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141348).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Degrees">
@@ -2661,10 +3476,19 @@
         <Parameter Name="arg1" Type="System.Nullable&lt;System.Int64&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg1">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg1">An angle, measured in radians.</param>
+        <summary>Returns the corresponding angle in degrees for an angle specified in radians.</summary>
+        <returns>The specified angle converted to degrees.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DEGREES (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141348).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Difference">
@@ -2689,11 +3513,20 @@
         <Parameter Name="string2" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="string1">To be added.</param>
-        <param name="string2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="string1">The first string.</param>
+        <param name="string2">The second string.</param>
+        <summary>Returns an integer value that indicates the difference between the SOUNDEX values of two character expressions.</summary>
+        <returns>The SOUNDEX difference between the two strings.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DIFFERENCE (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141349).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Exp">
@@ -2717,10 +3550,19 @@
         <Parameter Name="arg" Type="System.Nullable&lt;System.Decimal&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg">The input value.</param>
+        <summary>Returns the exponential value of the specified float expression.</summary>
+        <returns>The constant e raised to the power of the input value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [EXP (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141350).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Exp">
@@ -2744,10 +3586,19 @@
         <Parameter Name="arg" Type="System.Nullable&lt;System.Double&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg">The input value.</param>
+        <summary>Returns the exponential value of the specified float expression.</summary>
+        <returns>The constant e raised to the power of the input value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [EXP (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141350).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDate">
@@ -2769,9 +3620,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the current database system timestamp as a datetime value without the database time zone offset. This value is derived from the operating system of the computer on which the instance of SQL Server is running.</summary>
+        <returns>The current database timestamp.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [GETDATE (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141352).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetUtcDate">
@@ -2793,9 +3653,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the current database system timestamp as a datetime value. The database time zone offset is not included. This value represents the current UTC time (Coordinated Universal Time). This value is derived from the operating system of the computer on which the instance of SQL Server is running.</summary>
+        <returns>The current database UTC timestamp.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [GETUTCDATE (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141353).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HostName">
@@ -2817,9 +3686,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the workstation name.</summary>
+        <returns>The name of the workstation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [HOSTNAME (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141354).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsDate">
@@ -2843,10 +3721,19 @@
         <Parameter Name="arg" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg">The tested value.</param>
+        <summary>Indicates whether the input value is a valid date or time.</summary>
+        <returns>1 if the input expression is a valid date or time value of datetime or smalldatetime data types; otherwise, 0.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [HOSTNAME (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141354).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsNumeric">
@@ -2870,10 +3757,19 @@
         <Parameter Name="arg" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg">A string expression.</param>
+        <summary>Indicates whether the input value is a valid numeric type.</summary>
+        <returns>1 if the input expression is a valid numeric data type; otherwise, 0.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [ISNUMERIC (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141355).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Log">
@@ -2897,10 +3793,19 @@
         <Parameter Name="arg" Type="System.Nullable&lt;System.Decimal&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg">A numeric expression.</param>
+        <summary>Returns the natural logarithm of the specified input value.</summary>
+        <returns>The natural logarithm of the input value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [LOG (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141358).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Log">
@@ -2924,10 +3829,19 @@
         <Parameter Name="arg" Type="System.Nullable&lt;System.Double&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg">A numeric expression.</param>
+        <summary>Returns the natural logarithm of the specified input value.</summary>
+        <returns>The natural logarithm of the input value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [LOG (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141358).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Log10">
@@ -2951,10 +3865,19 @@
         <Parameter Name="arg" Type="System.Nullable&lt;System.Decimal&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg">A numeric expression.</param>
+        <summary>Returns the base-10 logarithm of the specified input value.</summary>
+        <returns>The base-10 logarithm of the input value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [LOG10 (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141359).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Log10">
@@ -2978,10 +3901,19 @@
         <Parameter Name="arg" Type="System.Nullable&lt;System.Double&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg">A numeric expression.</param>
+        <summary>Returns the base-10 logarithm of the specified input value.</summary>
+        <returns>The base-10 logarithm of the input value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [LOG10 (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141359).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NChar">
@@ -3005,10 +3937,19 @@
         <Parameter Name="arg" Type="System.Nullable&lt;System.Int32&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg">A character code.</param>
+        <summary>Returns the Unicode character with the specified integer code, as defined by the Unicode standard.</summary>
+        <returns>The character that corresponds to the input character code.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [NCHAR (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141365).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PatIndex">
@@ -3033,11 +3974,20 @@
         <Parameter Name="target" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="stringPattern">To be added.</param>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="stringPattern">A string pattern to search for.</param>
+        <param name="target">The string to search.</param>
+        <summary>Returns the starting position of the first occurrence of a pattern in a specified expression, or zeros if the pattern is not found, on all valid text and character data types.</summary>
+        <returns>The starting character position where the string pattern was found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [PATINDEX (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141310).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Pi">
@@ -3059,9 +4009,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the constant value of pi.</summary>
+        <returns>The numeric value of pi.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [PI (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141311).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="QuoteName">
@@ -3085,10 +4044,19 @@
         <Parameter Name="stringArg" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="stringArg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="stringArg">The expression that quote characters will be added to.</param>
+        <summary>Returns a Unicode string with the delimiters added to make the input string a valid Microsoft SQL Server delimited identifier.</summary>
+        <returns>The original string with brackets added.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [QUOTENAME (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141313).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="QuoteName">
@@ -3113,11 +4081,20 @@
         <Parameter Name="quoteCharacter" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="stringArg">To be added.</param>
-        <param name="quoteCharacter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="stringArg">The expression that quote characters will be added to.</param>
+        <param name="quoteCharacter">The one-character string to use as the delimiter. It can be a single quotation mark ( ' ), a left or right bracket ( [ ] ), or a double quotation mark ( " ). If quote_character is not specified, brackets are used.</param>
+        <summary>Returns a Unicode string with the delimiters added to make the input string a valid Microsoft SQL Server delimited identifier.</summary>
+        <returns>The original string with the specified quote characters added.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [QUOTENAME (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141313).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Radians">
@@ -3141,10 +4118,19 @@
         <Parameter Name="arg" Type="System.Nullable&lt;System.Decimal&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg">The angle, measured in degrees.</param>
+        <summary>Returns the radian measure corresponding to the specified angle in degrees.</summary>
+        <returns>The radian measure of the specified angle.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [RADIANS (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141314).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Radians">
@@ -3168,10 +4154,19 @@
         <Parameter Name="arg" Type="System.Nullable&lt;System.Double&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg">The angle, measured in degrees.</param>
+        <summary>Returns the radian measure corresponding to the specified angle in degrees.</summary>
+        <returns>The radian measure of the specified angle.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [RADIANS (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141314).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Radians">
@@ -3195,10 +4190,19 @@
         <Parameter Name="arg" Type="System.Nullable&lt;System.Int32&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg">The angle, measured in degrees</param>
+        <summary>Returns the radian measure corresponding to the specified angle in degrees.</summary>
+        <returns>The radian measure of the specified angle.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [RADIANS (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141314).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Radians">
@@ -3222,10 +4226,19 @@
         <Parameter Name="arg" Type="System.Nullable&lt;System.Int64&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg">The angle, measured in degrees</param>
+        <summary>Returns the radian measure corresponding to the specified angle in degrees.</summary>
+        <returns>The radian measure of the specified angle.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [RADIANS (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141314).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Rand">
@@ -3247,9 +4260,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a pseudo-random float value from 0 through 1, exclusive.</summary>
+        <returns>The pseudo-random value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [RAND (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141315).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Rand">
@@ -3273,10 +4295,19 @@
         <Parameter Name="seed" Type="System.Nullable&lt;System.Int32&gt;" />
       </Parameters>
       <Docs>
-        <param name="seed">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="seed">The seed value. If <c>seed</c> is not specified, the SQL Server Database Engine assigns a seed value at random. For a specified seed value, the result returned is always the same.</param>
+        <summary>Returns a pseudo-random float value from 0 through 1, exclusive.</summary>
+        <returns>The pseudo-random value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see see [RAND (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141315).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Replicate">
@@ -3301,11 +4332,20 @@
         <Parameter Name="count" Type="System.Nullable&lt;System.Int32&gt;" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="target">A valid string.</param>
+        <param name="count">The value that specifies how many time to repeat <c>target</c>.</param>
+        <summary>Repeats a string value a specified number of times.</summary>
+        <returns>The target string, repeated the number of times specified by <paramref name="count" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [REPLICATE (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141318).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Sign">
@@ -3329,10 +4369,19 @@
         <Parameter Name="arg" Type="System.Nullable&lt;System.Decimal&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg">A numeric expression.</param>
+        <summary>Returns the positive (+1), zero (0), or negative (-1) sign of the specified expression.</summary>
+        <returns>The sign of the input expression.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [SIGN (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141323).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Sign">
@@ -3356,10 +4405,19 @@
         <Parameter Name="arg" Type="System.Nullable&lt;System.Double&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg">A numeric expression.</param>
+        <summary>Returns the positive (+1), zero (0), or negative (-1) sign of the specified expression.</summary>
+        <returns>The sign of the input expression.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [SIGN (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141323).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Sign">
@@ -3383,10 +4441,19 @@
         <Parameter Name="arg" Type="System.Nullable&lt;System.Int32&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg">A numeric expression.</param>
+        <summary>Returns the positive (+1), zero (0), or negative (-1) sign of the specified expression.</summary>
+        <returns>The sign of the input expression.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [SIGN (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141323).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Sign">
@@ -3410,10 +4477,19 @@
         <Parameter Name="arg" Type="System.Nullable&lt;System.Int64&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg">A numeric expression.</param>
+        <summary>Returns the positive (+1), zero (0), or negative (-1) sign of the specified expression.</summary>
+        <returns>The sign of the input expression.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [SIGN (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141323).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Sin">
@@ -3437,10 +4513,19 @@
         <Parameter Name="arg" Type="System.Nullable&lt;System.Decimal&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg">An angle, measured in radians.</param>
+        <summary>Returns the trigonometric sine of the specified angle.</summary>
+        <returns>The trigonometric sine of the input expression.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [SIN (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141324).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Sin">
@@ -3464,10 +4549,19 @@
         <Parameter Name="arg" Type="System.Nullable&lt;System.Double&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg">An angle, measured in radians.</param>
+        <summary>Returns the trigonometric sine of the specified angle.</summary>
+        <returns>The trigonometric sine of the input expression.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [SIN (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141324).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SoundCode">
@@ -3491,10 +4585,19 @@
         <Parameter Name="arg" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg">A valid string.</param>
+        <summary>Converts an alphanumeric string to a four-character (SOUNDEX) code to find similar-sounding words or names.</summary>
+        <returns>The SOUNDEX code of the input string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [SOUNDEX (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141325).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Space">
@@ -3518,10 +4621,19 @@
         <Parameter Name="arg1" Type="System.Nullable&lt;System.Int32&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg1">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg1">The number of spaces. If negative, a null string is returned.</param>
+        <summary>Returns a string of repeated spaces.</summary>
+        <returns>A string that consists of the specified number of spaces.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [SPACE (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141326).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Square">
@@ -3545,10 +4657,19 @@
         <Parameter Name="arg1" Type="System.Nullable&lt;System.Decimal&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg1">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg1">A numeric expression.</param>
+        <summary>Returns the square of the specified number.</summary>
+        <returns>The square of the input value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [SQUARE (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141327).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Square">
@@ -3572,10 +4693,19 @@
         <Parameter Name="arg1" Type="System.Nullable&lt;System.Double&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg1">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg1">A numeric expression.</param>
+        <summary>Returns the square of the specified number.</summary>
+        <returns>The square of the input value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [SQUARE (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141327).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SquareRoot">
@@ -3599,10 +4729,19 @@
         <Parameter Name="arg" Type="System.Nullable&lt;System.Decimal&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg">A numeric expression.</param>
+        <summary>Returns the square root of the specified number.</summary>
+        <returns>The square root of the input value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [SQRT (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141328).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SquareRoot">
@@ -3626,10 +4765,19 @@
         <Parameter Name="arg" Type="System.Nullable&lt;System.Double&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg">A numeric expression.</param>
+        <summary>Returns the square root of the specified number.</summary>
+        <returns>The square root of the input value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [SQRT (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141328).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StringConvert">
@@ -3653,10 +4801,19 @@
         <Parameter Name="number" Type="System.Nullable&lt;System.Decimal&gt;" />
       </Parameters>
       <Docs>
-        <param name="number">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="number">A numeric expression.</param>
+        <summary>Returns character data converted from numeric data.</summary>
+        <returns>The input expression converted to a string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [STR (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141331).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StringConvert">
@@ -3680,10 +4837,19 @@
         <Parameter Name="number" Type="System.Nullable&lt;System.Double&gt;" />
       </Parameters>
       <Docs>
-        <param name="number">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="number">A numeric expression.</param>
+        <summary>Returns character data converted from numeric data.</summary>
+        <returns>The numeric input expression converted to a string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [STR (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141331).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StringConvert">
@@ -3708,11 +4874,20 @@
         <Parameter Name="length" Type="System.Nullable&lt;System.Int32&gt;" />
       </Parameters>
       <Docs>
-        <param name="number">To be added.</param>
-        <param name="length">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="number">A numeric expression.</param>
+        <param name="length">The total length of the string. This includes decimal point, sign, digits, and spaces. The default is 10.</param>
+        <summary>Returns character data converted from numeric data.</summary>
+        <returns>The input expression converted to a string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [STR (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141331).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StringConvert">
@@ -3737,11 +4912,20 @@
         <Parameter Name="length" Type="System.Nullable&lt;System.Int32&gt;" />
       </Parameters>
       <Docs>
-        <param name="number">To be added.</param>
-        <param name="length">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="number">A numeric expression.</param>
+        <param name="length">The total length of the string. This includes decimal point, sign, digits, and spaces. The default is 10.</param>
+        <summary>Returns character data converted from numeric data.</summary>
+        <returns>The numeric input expression converted to a string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [STR (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141331).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StringConvert">
@@ -3767,12 +4951,21 @@
         <Parameter Name="decimalArg" Type="System.Nullable&lt;System.Int32&gt;" />
       </Parameters>
       <Docs>
-        <param name="number">To be added.</param>
-        <param name="length">To be added.</param>
-        <param name="decimalArg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="number">A numeric expression.</param>
+        <param name="length">The total length of the string. This includes decimal point, sign, digits, and spaces. The default is 10.</param>
+        <param name="decimalArg">The number of places to the right of the decimal point. <c>decimal</c> must be less than or equal to 16. If <c>decimal</c> is more than 16 then the result is truncated to sixteen places to the right of the decimal point.</param>
+        <summary>Returns character data converted from numeric data.</summary>
+        <returns>The input expression converted to a string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [STR (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141331).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StringConvert">
@@ -3798,12 +4991,21 @@
         <Parameter Name="decimalArg" Type="System.Nullable&lt;System.Int32&gt;" />
       </Parameters>
       <Docs>
-        <param name="number">To be added.</param>
-        <param name="length">To be added.</param>
-        <param name="decimalArg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="number">A numeric expression.</param>
+        <param name="length">The total length of the string. This includes decimal point, sign, digits, and spaces. The default is 10.</param>
+        <param name="decimalArg">The number of places to the right of the decimal point. <c>decimal</c> must be less than or equal to 16. If <c>decimal</c> is more than 16 then the result is truncated to sixteen places to the right of the decimal point.</param>
+        <summary>Returns character data converted from numeric data.</summary>
+        <returns>The numeric input expression converted to a string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [STR (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141331).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Stuff">
@@ -3830,13 +5032,22 @@
         <Parameter Name="stringReplacement" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="stringInput">To be added.</param>
-        <param name="start">To be added.</param>
-        <param name="length">To be added.</param>
-        <param name="stringReplacement">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="stringInput">The target string.</param>
+        <param name="start">The character position in <c>stringinput</c> where the replacement string is to be inserted.</param>
+        <param name="length">The number of characters to delete from <c>stringInput</c>. If <c>length</c> is longer than <c>stringInput</c>, deletion occurs up to the last character in <c>stringReplacement</c>.</param>
+        <param name="stringReplacement">The substring to be inserted into <c>stringInput</c>.</param>
+        <summary>Inserts a string into another string. It deletes a specified length of characters in the target string at the start position and then inserts the second string into the target string at the start position.</summary>
+        <returns>A string consisting of the two strings.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [STUFF (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141708).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Tan">
@@ -3860,10 +5071,19 @@
         <Parameter Name="arg" Type="System.Nullable&lt;System.Decimal&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg">An angle, measured in radians.</param>
+        <summary>Returns the trigonometric tangent of the input expression.</summary>
+        <returns>The tangent of the input angle.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [TAN (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141715).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Tan">
@@ -3887,10 +5107,19 @@
         <Parameter Name="arg" Type="System.Nullable&lt;System.Double&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg">An angle, measured in radians.</param>
+        <summary>Returns the trigonometric tangent of the input expression.</summary>
+        <returns>The tangent of the input angle.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [TAN (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141715).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Unicode">
@@ -3914,10 +5143,19 @@
         <Parameter Name="arg" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg">A valid string.</param>
+        <summary>Returns the integer value, as defined by the Unicode standard, for the first character of the input expression.</summary>
+        <returns>The character code for the first character in the input string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [UNICODE (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141716).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UserName">
@@ -3939,9 +5177,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a database user name corresponding to a specified identification number.</summary>
+        <returns>The user name.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [USER_NAME (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141718).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UserName">
@@ -3965,11 +5212,550 @@
         <Parameter Name="arg" Type="System.Nullable&lt;System.Int32&gt;" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arg">A user ID.</param>
+        <summary>Returns a database user name corresponding to a specified identification number.</summary>
+        <returns>The user name.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [USER_NAME (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141718).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DataLength">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the number of bytes used to represent any expression.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATALENGTH (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140127).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Tan">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the trigonometric tangent of the input expression.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [TAN (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141715).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="StringConvert">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns character data converted from numeric data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [STR (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141331).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Degrees">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the corresponding angle in degrees for an angle specified in radians.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DEGREES (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141348).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Log">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the natural logarithm of the specified input value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [LOG (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141358).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DateName">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a character string that represents the specified datepart of the specified date.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATENAME (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141345).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Square">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the square of the specified number.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [SQUARE (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141327).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SquareRoot">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the square root of the specified number.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [SQRT (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141328).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Radians">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the radian measure corresponding to the specified angle in degrees.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [RADIANS (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141314).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Checksum">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the checksum value computed over the input arguments.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [CHECKSUM (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140120).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Log10">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the base-10 logarithm of the specified input value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [LOG10 (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141359).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Atan2">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the positive angle, in radians, between the positive x-axis and the ray from the origin through the point (x, y), where x and y are the two specified numerical values. The first parameter passed to the function is the y-value and the second parameter is the x-value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [ATN2 (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140037).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ChecksumAggregate">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the checksum of the values in a collection. Null values are ignored.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [CHECKSUM_AGG (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140120).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="UserName">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a database user name corresponding to a specified identification number.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [USER_NAME (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141718).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Asin">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>A mathematical function that returns the angle, in radians, whose sine is the specified numerical value. This angle is called the arcsine.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [ASIN (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140039).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Cos">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the trigonometric cosine of the specified angle, in radians.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [COS (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140121).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DateDiff">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the number of date and time boundaries crossed between two specified dates.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATEDIFF (Transact-SQL).](http://go.microsoft.com/fwlink/?LinkId=141344)  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Acos">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>A mathematical function that returns the angle, in radians, whose cosine is the specified numerical value. This angle is called the arccosine.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [ACOS (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140034).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Rand">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a pseudo-random float value from 0 through 1, exclusive.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [RAND (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141315).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="QuoteName">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a Unicode string with the delimiters added to make the input string a valid Microsoft SQL Server delimited identifier.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [QUOTENAME (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141313).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Sin">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the trigonometric sine of the specified angle.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [SIN (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141324).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Exp">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the exponential value of the specified float expression.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [EXP (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141350).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DatePart">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an integer that represents the specified datepart of the specified date.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATEPART (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141346).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DateAdd">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a new <see langword="datetime" /> value based on adding an interval to the specified date.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATEADD (Transact-SQL).](http://go.microsoft.com/fwlink/?LinkId=140128)  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CharIndex">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the starting position of one expression found within another expression.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [CHARINDEX (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140118).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Sign">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the positive (+1), zero (0), or negative (-1) sign of the specified expression.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [SIGN (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141323).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Atan">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>A mathematical function that returns the angle, in radians, whose tangent is the specified numerical value. This angle is called the arctangent.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [ATAN (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140038).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Cot">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>A mathematical function that returns the trigonometric cotangent of the specified angle, in radians.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [COT (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140122).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

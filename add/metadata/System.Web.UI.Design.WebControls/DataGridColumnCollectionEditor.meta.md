@@ -1,19 +1,31 @@
 ---
 uid: System.Web.UI.Design.WebControls.DataGridColumnCollectionEditor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.DataGridColumnCollectionEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.DataGridColumnCollectionEditor.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.DataGridColumnCollectionEditor.GetEditStyle
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.DataGridColumnCollectionEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.DataGridColumnCollectionEditor.EditValue
 ---

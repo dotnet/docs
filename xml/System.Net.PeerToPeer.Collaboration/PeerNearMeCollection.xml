@@ -14,7 +14,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a container for elements of a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> object. An instance of this type is returned by the <see cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaboration.GetPeersNearMe" /> static method.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,10 +35,18 @@
         <Parameter Name="item" Type="System.Net.PeerToPeer.Collaboration.PeerNearMe" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index in which the element resides.</param>
+        <param name="item">The new value for the element in the specified index.</param>
+        <summary>Inserts a new <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> element into the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMeCollection" /> at the specified index or key.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `Null` value elements are not allowed.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="item" /> argument is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetItem">
@@ -58,10 +66,18 @@
         <Parameter Name="item" Type="System.Net.PeerToPeer.Collaboration.PeerNearMe" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index in which the element resides.</param>
+        <param name="item">The new value for the element in the specified index.</param>
+        <summary>Replaces the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> element at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `Null` value elements are not allowed.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="item" /> argument is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -78,8 +94,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a string representation of the current value for each instance of <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" />, separated by commas.</summary>
+        <returns>Unicode string representing the current value for each instance of <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

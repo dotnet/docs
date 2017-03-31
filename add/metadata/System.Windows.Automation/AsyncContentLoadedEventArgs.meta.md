@@ -1,19 +1,27 @@
 ---
 uid: System.Windows.Automation.AsyncContentLoadedEventArgs
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.AsyncContentLoadedEventArgs.AsyncContentLoadedState
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.AsyncContentLoadedEventArgs.PercentComplete
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.AsyncContentLoadedEventArgs.#ctor(System.Windows.Automation.AsyncContentLoadedState,System.Double)
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---

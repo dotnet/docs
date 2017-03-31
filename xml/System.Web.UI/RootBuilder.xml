@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Supports the page parser in defining the behavior for how content is parsed.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.RootBuilder" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <Parameter Name="parser" Type="System.Web.UI.TemplateParser" />
       </Parameters>
       <Docs>
-        <param name="parser">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="parser">The object to use to parse files.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.RootBuilder" /> class with the specified template parser.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +61,8 @@
         <ReturnType>System.Collections.IDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of the objects to persist that were built by the root builder.</summary>
+        <value>A <see cref="T:System.Collections.Hashtable" /> object that contains the objects that were built by the root builder.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,11 +83,18 @@
         <Parameter Name="attribs" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="tagName">To be added.</param>
-        <param name="attribs">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="tagName">The tag name of the child control.</param>
+        <param name="attribs">The <see cref="T:System.Collections.IDictionary" /> object that holds all the specified tag attributes.</param>
+        <summary>Returns the control type of any parsed child controls.</summary>
+        <returns>The type of the child control.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.RootBuilder.GetChildControlType%2A> method overrides the implementation of this method in <xref:System.Web.UI.ControlBuilder>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnCodeGenerationComplete">
@@ -104,8 +111,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Provides a way to modify the <see cref="T:System.CodeDom.CodeCompileUnit" /> object after code generation is finished.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.RootBuilder.OnCodeGenerationComplete%2A> method is called when the CodeDom tree has been fully built.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

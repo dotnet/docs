@@ -1,14 +1,20 @@
 ---
 uid: System.Workflow.Runtime.Tracking.TrackingWorkflowChangedEventArgs
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Tracking.TrackingWorkflowChangedEventArgs.Changes
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Tracking.TrackingWorkflowChangedEventArgs.Definition
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

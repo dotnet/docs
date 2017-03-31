@@ -1,4 +1,5 @@
 ---
 uid: System.Web.UI.UpdatePanelRenderMode
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

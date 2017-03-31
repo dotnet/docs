@@ -1,9 +1,9 @@
 ---
 uid: System.Runtime.Remoting.Channels.IChannelSinkBase
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Channels.IChannelSinkBase.Properties
-internalonly: False
+manager: "ghogen"
 ---

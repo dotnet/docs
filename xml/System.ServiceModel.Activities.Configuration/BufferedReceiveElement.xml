@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines the configuration element that controls the buffering of data received from the client by the workflow service operation. This is a sealed class.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Activities.Configuration.BufferedReceiveElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the behavior type of the service element that controls the workflow runtime buffering of messages received from a client instance of workflow.</summary>
+        <value>A type object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,8 +91,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the maximum number of messages which can be buffered for a communications channel during a workflow service operation.</summary>
+        <value>An integer.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

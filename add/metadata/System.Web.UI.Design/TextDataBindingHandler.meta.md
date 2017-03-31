@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.Design.TextDataBindingHandler
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.TextDataBindingHandler.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.TextDataBindingHandler.DataBindControl(System.ComponentModel.Design.IDesignerHost,System.Web.UI.Control)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

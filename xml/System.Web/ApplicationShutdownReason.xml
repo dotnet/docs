@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies why the <see cref="T:System.AppDomain" /> class shut down.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.ApplicationShutdownReason> represents the possible values for the <xref:System.Web.Hosting.HostingEnvironment.ShutdownReason%2A> property of the <xref:System.Web.Hosting.HostingEnvironment> class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="BinDirChangeOrDirectoryRename">
@@ -27,7 +34,7 @@
         <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A change was made to the Bin folder or to files in it.</summary>
       </Docs>
     </Member>
     <Member MemberName="BrowsersDirChangeOrDirectoryRename">
@@ -43,7 +50,7 @@
         <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A change was made to the App_Browsers folder or to files in it.</summary>
       </Docs>
     </Member>
     <Member MemberName="BuildManagerChange">
@@ -59,7 +66,7 @@
         <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The compilation system shut the application domain. The <see cref="F:System.Web.ApplicationShutdownReason.BuildManagerChange" /> member is introduced in the .NET Framework version 3.5.  For more information, see [.NET Framework Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).</summary>
       </Docs>
     </Member>
     <Member MemberName="ChangeInGlobalAsax">
@@ -75,7 +82,7 @@
         <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A change was made to the Global.asax file.</summary>
       </Docs>
     </Member>
     <Member MemberName="ChangeInSecurityPolicyFile">
@@ -91,7 +98,7 @@
         <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A change was made in the code access security policy file.</summary>
       </Docs>
     </Member>
     <Member MemberName="CodeDirChangeOrDirectoryRename">
@@ -107,7 +114,7 @@
         <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A change was made to the App_Code folder or to files in it.</summary>
       </Docs>
     </Member>
     <Member MemberName="ConfigurationChange">
@@ -123,7 +130,7 @@
         <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A change was made to the application-level configuration file.</summary>
       </Docs>
     </Member>
     <Member MemberName="HostingEnvironment">
@@ -139,7 +146,7 @@
         <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The hosting environment shut down the application domain.</summary>
       </Docs>
     </Member>
     <Member MemberName="HttpRuntimeClose">
@@ -155,7 +162,7 @@
         <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A call was made to <see cref="M:System.Web.HttpRuntime.Close" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="IdleTimeout">
@@ -171,7 +178,7 @@
         <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The maximum idle time limit was reached.</summary>
       </Docs>
     </Member>
     <Member MemberName="InitializationError">
@@ -187,7 +194,7 @@
         <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An <see cref="T:System.AppDomain" /> initialization error occurred.</summary>
       </Docs>
     </Member>
     <Member MemberName="MaxRecompilationsReached">
@@ -203,7 +210,7 @@
         <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The maximum number of dynamic recompiles of resources was reached.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -219,7 +226,7 @@
         <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No shutdown reason was provided.</summary>
       </Docs>
     </Member>
     <Member MemberName="PhysicalApplicationPathChanged">
@@ -235,7 +242,7 @@
         <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A change was made to the physical path of the application.</summary>
       </Docs>
     </Member>
     <Member MemberName="ResourcesDirChangeOrDirectoryRename">
@@ -251,7 +258,7 @@
         <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A change was made to the App_GlobalResources folder or to files in it.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnloadAppDomainCalled">
@@ -267,7 +274,7 @@
         <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A call was made to <see cref="M:System.Web.HttpRuntime.UnloadAppDomain" />.</summary>
       </Docs>
     </Member>
   </Members>

@@ -11,7 +11,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents types of token binding.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,7 +29,7 @@
         <ReturnType>System.Security.Authentication.ExtendedProtection.TokenBindingType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Used to establish a token binding when connecting to a server.</summary>
       </Docs>
     </Member>
     <Member MemberName="Referred">
@@ -46,7 +46,7 @@
         <ReturnType>System.Security.Authentication.ExtendedProtection.TokenBindingType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Used when requesting tokens to be presented to a different server.</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,14 +1,27 @@
 ---
 uid: System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection.#ctor(System.Collections.Generic.IEnumerable{System.Workflow.Runtime.Tracking.ActivityTrackingLocation})
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

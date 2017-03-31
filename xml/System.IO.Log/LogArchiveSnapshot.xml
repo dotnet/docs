@@ -11,8 +11,25 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a snapshot of the <see cref="T:System.IO.Log.LogStore" /> instance that can be used to generate an archive.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.IO.Log.LogArchiveSnapshot> object contains the information necessary to generate a consistent backup of the data in a <xref:System.IO.Log.LogStore>. The actual data is contained in the enumerable collection of <xref:System.IO.Log.FileRegion> objects returned by the <xref:System.IO.Log.LogArchiveSnapshot.ArchiveRegions%2A> property. Each <xref:System.IO.Log.FileRegion> instance represents a sequence of bytes in a file that must be archived.  
+  
+ The <xref:System.IO.Log.LogArchiveSnapshot.ArchiveTail%2A>, <xref:System.IO.Log.LogArchiveSnapshot.BaseSequenceNumber%2A>, and <xref:System.IO.Log.LogArchiveSnapshot.LastSequenceNumber%2A> properties are for informational purposes only. They can be recorded along with the archive data to provide optional information, but are not required to restore the data.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.IO.Log.LogArchiveSnapshot> class to archive a <xref:System.IO.Log.LogStore> to an XML document.  
+  
+ [!code-csharp[logarchievesnapshot#0](~/samples/snippets/csharp/VS_Snippets_CFX/logarchievesnapshot/cs/logarchievesnapshot.cs#0)]
+ [!code-vb[logarchievesnapshot#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/logarchievesnapshot/vb/logarchievesnapshot.vb#0)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ArchiveRegions">
@@ -28,9 +45,19 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.IO.Log.FileRegion&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets an enumerable collection of <see cref="T:System.IO.Log.FileRegion" /> instances containing the actual archival data.</summary>
+        <value>An enumerable collection of <see cref="T:System.IO.Log.FileRegion" /> instances containing the actual archival data.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the <xref:System.IO.Log.LogArchiveSnapshot> class to archive a <xref:System.IO.Log.LogStore> to an XML document.  
+  
+ [!code-csharp[logarchievesnapshot#0](~/samples/snippets/csharp/VS_Snippets_CFX/logarchievesnapshot/cs/logarchievesnapshot.cs#0)]
+ [!code-vb[logarchievesnapshot#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/logarchievesnapshot/vb/logarchievesnapshot.vb#0)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ArchiveTail">
@@ -46,8 +73,8 @@
         <ReturnType>System.IO.Log.SequenceNumber</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the sequence number of the <see cref="T:System.IO.Log.LogStore" /> archive tail at the time the snapshot was taken.</summary>
+        <value>The sequence number of the <see cref="T:System.IO.Log.LogStore" /> archive tail at the time the snapshot was taken.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +91,8 @@
         <ReturnType>System.IO.Log.SequenceNumber</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the base sequence number of the <see cref="T:System.IO.Log.LogStore" /> at the time the snapshot was taken.</summary>
+        <value>The base sequence number of the <see cref="T:System.IO.Log.LogStore" /> at the time the snapshot was taken.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,9 +109,19 @@
         <ReturnType>System.IO.Log.SequenceNumber</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the last sequence number of the <see cref="T:System.IO.Log.LogStore" /> at the time the snapshot was taken.</summary>
+        <value>The last sequence number of the <see cref="T:System.IO.Log.LogStore" /> at the time the snapshot was taken.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the <xref:System.IO.Log.LogArchiveSnapshot> class to archive a <xref:System.IO.Log.LogStore> to an XML document.  
+  
+ [!code-csharp[logarchievesnapshot#0](~/samples/snippets/csharp/VS_Snippets_CFX/logarchievesnapshot/cs/logarchievesnapshot.cs#0)]
+ [!code-vb[logarchievesnapshot#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/logarchievesnapshot/vb/logarchievesnapshot.vb#0)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

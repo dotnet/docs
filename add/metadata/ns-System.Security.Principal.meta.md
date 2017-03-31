@@ -1,4 +1,6 @@
 ---
 uid: System.Security.Principal
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

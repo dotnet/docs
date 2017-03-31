@@ -1,2 +1,0 @@
-        Dim item As New SyndicationItem("Item Title", "Item Content", New Uri("http:' Item/Alternate/Link"), "itemID", DateTimeOffset.Now)
-        item.AddPermalink(New Uri("http:' contoso/links/mylink"))

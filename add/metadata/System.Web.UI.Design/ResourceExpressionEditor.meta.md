@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.Design.ResourceExpressionEditor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ResourceExpressionEditor.EvaluateExpression(System.String,System.Object,System.Type,System.IServiceProvider)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ResourceExpressionEditor.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ResourceExpressionEditor.GetExpressionEditorSheet(System.String,System.IServiceProvider)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

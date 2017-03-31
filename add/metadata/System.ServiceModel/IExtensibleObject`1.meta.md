@@ -1,9 +1,13 @@
 ---
 uid: System.ServiceModel.IExtensibleObject`1
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.IExtensibleObject`1.Extensions
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

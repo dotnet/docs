@@ -1,169 +1,203 @@
 ---
 uid: System.Net.NetworkInformation.IcmpV6Statistics
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IcmpV6Statistics.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IcmpV6Statistics.RouterSolicitsSent
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IcmpV6Statistics.MembershipReductionsReceived
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IcmpV6Statistics.TimeExceededMessagesReceived
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IcmpV6Statistics.MessagesReceived
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IcmpV6Statistics.MembershipQueriesReceived
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IcmpV6Statistics.MembershipReportsReceived
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IcmpV6Statistics.NeighborAdvertisementsReceived
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IcmpV6Statistics.ParameterProblemsSent
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IcmpV6Statistics.MembershipQueriesSent
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IcmpV6Statistics.RouterAdvertisementsReceived
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IcmpV6Statistics.MessagesSent
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IcmpV6Statistics.ErrorsReceived
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IcmpV6Statistics.PacketTooBigMessagesSent
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IcmpV6Statistics.EchoRequestsSent
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IcmpV6Statistics.NeighborAdvertisementsSent
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IcmpV6Statistics.EchoRequestsReceived
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IcmpV6Statistics.EchoRepliesReceived
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IcmpV6Statistics.RouterAdvertisementsSent
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IcmpV6Statistics.RedirectsReceived
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IcmpV6Statistics.RedirectsSent
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IcmpV6Statistics.ErrorsSent
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IcmpV6Statistics.PacketTooBigMessagesReceived
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IcmpV6Statistics.DestinationUnreachableMessagesSent
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IcmpV6Statistics.MembershipReductionsSent
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IcmpV6Statistics.RouterSolicitsReceived
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IcmpV6Statistics.DestinationUnreachableMessagesReceived
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IcmpV6Statistics.MembershipReportsSent
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IcmpV6Statistics.NeighborSolicitsSent
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IcmpV6Statistics.EchoRepliesSent
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IcmpV6Statistics.ParameterProblemsReceived
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IcmpV6Statistics.TimeExceededMessagesSent
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IcmpV6Statistics.NeighborSolicitsReceived
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

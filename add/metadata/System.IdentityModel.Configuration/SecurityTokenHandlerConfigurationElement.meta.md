@@ -1,59 +1,71 @@
 ---
 uid: System.IdentityModel.Configuration.SecurityTokenHandlerConfigurationElement
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Configuration.SecurityTokenHandlerConfigurationElement.Name
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Configuration.SecurityTokenHandlerConfigurationElement.IssuerTokenResolver
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Configuration.SecurityTokenHandlerConfigurationElement.Caches
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Configuration.SecurityTokenHandlerConfigurationElement.AudienceUris
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Configuration.SecurityTokenHandlerConfigurationElement.ServiceTokenResolver
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Configuration.SecurityTokenHandlerConfigurationElement.CertificateValidation
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Configuration.SecurityTokenHandlerConfigurationElement.TokenReplayDetection
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Configuration.SecurityTokenHandlerConfigurationElement.SaveBootstrapContext
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Configuration.SecurityTokenHandlerConfigurationElement.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Configuration.SecurityTokenHandlerConfigurationElement.IssuerNameRegistry
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Configuration.SecurityTokenHandlerConfigurationElement.MaximumClockSkew
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

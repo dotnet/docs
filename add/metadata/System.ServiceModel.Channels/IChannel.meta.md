@@ -1,9 +1,13 @@
 ---
 uid: System.ServiceModel.Channels.IChannel
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.IChannel.GetProperty``1
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

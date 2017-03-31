@@ -16,8 +16,15 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="item">To be added.</param>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <param name="item">The context item that changed.</param>
+    <summary>Defines a callback method that will be invoked when a context item changes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This callback provides a mechanism for interested parties in both the host and the workflow designer to subscribe to updates to a <xref:System.Activities.Presentation.ContextItem> published to the editing context of the workflow designer.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

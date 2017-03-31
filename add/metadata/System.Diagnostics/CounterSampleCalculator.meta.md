@@ -1,14 +1,27 @@
 ---
 uid: System.Diagnostics.CounterSampleCalculator
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.CounterSampleCalculator.ComputeCounterValue(System.Diagnostics.CounterSample)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.CounterSampleCalculator.ComputeCounterValue
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.CounterSampleCalculator.ComputeCounterValue(System.Diagnostics.CounterSample,System.Diagnostics.CounterSample)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

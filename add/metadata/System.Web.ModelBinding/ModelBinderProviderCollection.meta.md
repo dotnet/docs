@@ -1,44 +1,83 @@
 ---
 uid: System.Web.ModelBinding.ModelBinderProviderCollection
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ModelBinding.ModelBinderProviderCollection.RegisterBinderForGenericType(System.Type,System.Web.ModelBinding.IModelBinder)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ModelBinding.ModelBinderProviderCollection.RegisterBinderForGenericType(System.Type,System.Func{System.Type[],System.Web.ModelBinding.IModelBinder})
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.ModelBinding.ModelBinderProviderCollection.RegisterBinderForGenericType
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.ModelBinding.ModelBinderProviderCollection.RegisterBinderForType
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ModelBinding.ModelBinderProviderCollection.RegisterBinderForGenericType(System.Type,System.Type)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ModelBinding.ModelBinderProviderCollection.RegisterBinderForType(System.Type,System.Func{System.Web.ModelBinding.IModelBinder})
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ModelBinding.ModelBinderProviderCollection.GetBinder(System.Web.ModelBinding.ModelBindingExecutionContext,System.Web.ModelBinding.ModelBindingContext)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ModelBinding.ModelBinderProviderCollection.#ctor
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.ModelBinding.ModelBinderProviderCollection.#ctor
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ModelBinding.ModelBinderProviderCollection.RegisterBinderForType(System.Type,System.Web.ModelBinding.IModelBinder)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ModelBinding.ModelBinderProviderCollection.#ctor(System.Collections.Generic.IList{System.Web.ModelBinding.ModelBinderProvider})
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

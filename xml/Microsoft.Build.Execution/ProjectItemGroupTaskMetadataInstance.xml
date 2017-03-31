@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Wraps an unevaluated metadata under an item in an item group in a target. Immutable.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,8 +38,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the unevaluated Condition attribute value.</summary>
+        <value>Returns the unevaluated Condition attribute value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +61,8 @@
         <ReturnType>Microsoft.Build.Construction.ElementLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Location of the condition attribute if any</summary>
+        <value>Returns <see cref="T:Microsoft.Build.Construction.ElementLocation" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,8 +84,8 @@
         <ReturnType>Microsoft.Build.Construction.ElementLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Location of the element</summary>
+        <value>Returns <see cref="T:Microsoft.Build.Construction.ElementLocation" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,8 +107,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of this metadata.</summary>
+        <value>Returns the name of this metadata.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -130,8 +130,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the unevaluated value of this metadata.</summary>
+        <value>Returns the unevaluated value of this metadata.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

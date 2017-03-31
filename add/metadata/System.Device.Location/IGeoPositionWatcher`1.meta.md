@@ -1,44 +1,49 @@
 ---
 uid: System.Device.Location.IGeoPositionWatcher`1
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Device.Location.IGeoPositionWatcher`1.TryStart(System.Boolean,System.TimeSpan)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Device.Location.IGeoPositionWatcher`1.Position
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Device.Location.IGeoPositionWatcher`1.StatusChanged
-internalonly: False
----
-
----
-uid: System.Device.Location.IGeoPositionWatcher`1.PositionChanged
-internalonly: False
----
-
----
-uid: System.Device.Location.IGeoPositionWatcher`1.Stop
-internalonly: False
----
-
----
-uid: System.Device.Location.IGeoPositionWatcher`1.Start(System.Boolean)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Device.Location.IGeoPositionWatcher`1.Start
-internalonly: False
+manager: "martinek"
+---
+
+---
+uid: System.Device.Location.IGeoPositionWatcher`1.PositionChanged
+manager: "martinek"
+---
+
+---
+uid: System.Device.Location.IGeoPositionWatcher`1.Stop
+manager: "martinek"
+---
+
+---
+uid: System.Device.Location.IGeoPositionWatcher`1.Start(System.Boolean)
+manager: "martinek"
+---
+
+---
+uid: System.Device.Location.IGeoPositionWatcher`1.Start
+manager: "martinek"
 ---
 
 ---
 uid: System.Device.Location.IGeoPositionWatcher`1.Status
-internalonly: False
+manager: "martinek"
 ---

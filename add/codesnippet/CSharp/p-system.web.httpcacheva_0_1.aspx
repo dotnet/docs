@@ -1,1 +1,0 @@
-    Response.Cache.VaryByHeaders.UserAgent = true;

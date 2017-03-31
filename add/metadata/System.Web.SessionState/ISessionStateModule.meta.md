@@ -1,14 +1,17 @@
 ---
 uid: System.Web.SessionState.ISessionStateModule
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.SessionState.ISessionStateModule.ReleaseSessionState(System.Web.HttpContext)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.SessionState.ISessionStateModule.ReleaseSessionStateAsync(System.Web.HttpContext)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

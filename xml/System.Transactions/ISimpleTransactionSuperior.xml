@@ -17,7 +17,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a transaction that is not a root transaction, but can be escalated to be managed by the MSDTC.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -40,7 +40,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Notifies an enlisted object that the transaction is being rolled back.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

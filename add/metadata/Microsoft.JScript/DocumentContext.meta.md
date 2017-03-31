@@ -1,4 +1,4 @@
 ---
 uid: Microsoft.JScript.DocumentContext
-internalonly: False
+ms.author: "mikejo"
 ---

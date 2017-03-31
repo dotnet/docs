@@ -1,34 +1,62 @@
 ---
 uid: System.Security.Cryptography.RNGCryptoServiceProvider
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.RNGCryptoServiceProvider.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.RNGCryptoServiceProvider.#ctor(System.String)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.RNGCryptoServiceProvider.#ctor(System.Byte[])
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.RNGCryptoServiceProvider.GetBytes
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.RNGCryptoServiceProvider.GetNonZeroBytes(System.Byte[])
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.RNGCryptoServiceProvider.GetBytes(System.Byte[])
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.RNGCryptoServiceProvider.#ctor(System.Security.Cryptography.CspParameters)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.RNGCryptoServiceProvider.#ctor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

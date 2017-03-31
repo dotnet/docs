@@ -1,39 +1,47 @@
 ---
 uid: System.Web.UI.WebControls.ListViewUpdatedEventArgs
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.ListViewUpdatedEventArgs.KeepInEditMode
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.ListViewUpdatedEventArgs.ExceptionHandled
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.ListViewUpdatedEventArgs.OldValues
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.ListViewUpdatedEventArgs.#ctor(System.Int32,System.Exception)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.ListViewUpdatedEventArgs.AffectedRows
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.ListViewUpdatedEventArgs.Exception
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.ListViewUpdatedEventArgs.NewValues
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

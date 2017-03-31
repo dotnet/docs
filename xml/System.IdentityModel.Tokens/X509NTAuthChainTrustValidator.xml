@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents an X.509 certificate validator that will validate a specified X.509 certificate and verify whether the certificate can be mapped to a Windows account and whether the certificate chain is trusted.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.X509NTAuthChainTrustValidator" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,9 +44,10 @@
         <Parameter Name="chainPolicy" Type="System.Security.Cryptography.X509Certificates.X509ChainPolicy" />
       </Parameters>
       <Docs>
-        <param name="useMachineContext">To be added.</param>
-        <param name="chainPolicy">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="useMachineContext">
+          <see langword="true" /> to use the local machine context to build the certificate chain; otherwise, <see langword="false" />.</param>
+        <param name="chainPolicy">The chain policy to use when building the X.509 certificate chain.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.X509NTAuthChainTrustValidator" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,9 +67,19 @@
         <Parameter Name="certificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate2" />
       </Parameters>
       <Docs>
-        <param name="certificate">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="certificate">The X.509 certificate to validate.</param>
+        <summary>Validates the specified X.509 certificate.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Throws a <xref:System.IdentityModel.Tokens.SecurityTokenValidationException> exception if validation fails.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="certificate" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.IdentityModel.Tokens.SecurityTokenValidationException">Validation of the X.509 certificate failed.</exception>
       </Docs>
     </Member>
   </Members>

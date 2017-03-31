@@ -20,8 +20,38 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an item in the XQuery 1.0 and XPath 2.0 Data Model.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An item is either a node or an atomic value.  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>When you inherit from the <see cref="T:System.Xml.XPath.XPathItem" /> class, you must override the following members: <see cref="P:System.Xml.XPath.XPathItem.IsNode" />:  
+  
+-   <see cref="P:System.Xml.XPath.XPathItem.TypedValue" />  
+  
+-   <see cref="P:System.Xml.XPath.XPathItem.Value" />  
+  
+-   <see cref="M:System.Xml.XPath.XPathItem.ValueAs(System.Type,System.Xml.IXmlNamespaceResolver)" />  
+  
+-   <see cref="P:System.Xml.XPath.XPathItem.ValueAsBoolean" />  
+  
+-   <see cref="P:System.Xml.XPath.XPathItem.ValueAsDateTime" />  
+  
+-   <see cref="P:System.Xml.XPath.XPathItem.ValueAsDouble" />  
+  
+-   <see cref="P:System.Xml.XPath.XPathItem.ValueAsInt" />  
+  
+-   <see cref="P:System.Xml.XPath.XPathItem.ValueAsLong" />  
+  
+-   <see cref="P:System.Xml.XPath.XPathItem.ValueType" />  
+  
+-   <see cref="P:System.Xml.XPath.XPathItem.XmlType" /></para>
+    </block>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,8 +70,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.XPath.XPathItem" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is called by derived class constructors to initialize state in this type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsNode">
@@ -66,8 +103,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When overridden in a derived class, gets a value indicating whether the item represents an XPath node or an atomic value.</summary>
+        <value>
+          <see langword="true" /> if the item represents an XPath node; <see langword="false" /> if the item represents an atomic value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,9 +131,18 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>When overridden in a derived class, gets the current item as a boxed object of the most appropriate [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)] type according to its schema type.</summary>
+        <value>The current item as a boxed object of the most appropriate [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the value of the item is not valid according to its specified schema type, the value of the <xref:System.Xml.XPath.XPathItem.TypedValue%2A> property is equivalent to the value of the <xref:System.Xml.XPath.XPathItem.Value%2A> property.  
+  
+ For more information about type support in the <xref:System.Xml?displayProperty=fullName> namespace, see [Type Support in the System.Xml Classes](../Topic/Type%20Support%20in%20the%20System.Xml%20Classes.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -120,8 +167,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When overridden in a derived class, gets the <see langword="string" /> value of the item.</summary>
+        <value>The <see langword="string" /> value of the item.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -150,10 +197,20 @@
         <Parameter Name="returnType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="returnType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="returnType">The type to return the item value as.</param>
+        <summary>Returns the item's value as the specified type.</summary>
+        <returns>The value of the item as the type requested.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When overridden in a derived class, the <xref:System.Xml.XPath.XPathItem.ValueAs%2A> method attempts to convert the value of the item to the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)] type specified.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.FormatException">The item's value is not in the correct format for the target type.</exception>
+        <exception cref="T:System.InvalidCastException">The attempted cast is not valid.</exception>
+        <exception cref="T:System.OverflowException">The attempted cast resulted in an overflow.</exception>
       </Docs>
     </Member>
     <Member MemberName="ValueAs">
@@ -182,11 +239,25 @@
         <Parameter Name="nsResolver" Type="System.Xml.IXmlNamespaceResolver" />
       </Parameters>
       <Docs>
-        <param name="returnType">To be added.</param>
-        <param name="nsResolver">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="returnType">The type to return the item's value as.</param>
+        <param name="nsResolver">The <see cref="T:System.Xml.IXmlNamespaceResolver" /> object used to resolve namespace prefixes.</param>
+        <summary>When overridden in a derived class, returns the item's value as the type specified using the <see cref="T:System.Xml.IXmlNamespaceResolver" /> object specified to resolve namespace prefixes.</summary>
+        <returns>The value of the item as the type requested.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When overridden in a derived class, the <xref:System.Xml.XPath.XPathItem.ValueAs%2A> method attempts to convert the value of the item to the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)] type specified.  
+  
+ The <xref:System.Xml.IXmlNamespaceResolver> object is used to resolve namespace prefixes related to type conversions. For example, when converting an `xs:QName` to an `xs:string`.  
+  
+ For more information about type support in the <xref:System.Xml?displayProperty=fullName> namespace, see [Type Support in the System.Xml Classes](../Topic/Type%20Support%20in%20the%20System.Xml%20Classes.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.FormatException">The item's value is not in the correct format for the target type.</exception>
+        <exception cref="T:System.InvalidCastException">The attempted cast is not valid.</exception>
+        <exception cref="T:System.OverflowException">The attempted cast resulted in an overflow.</exception>
       </Docs>
     </Member>
     <Member MemberName="ValueAsBoolean">
@@ -211,9 +282,20 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>When overridden in a derived class, gets the item's value as a <see cref="T:System.Boolean" />.</summary>
+        <value>The item's value as a <see cref="T:System.Boolean" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.XPath.XPathItem.ValueAsDateTime%2A> property attempts to convert the value of the item to the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)] <xref:System.Boolean> type according to the XPath 2.0 rules for casting the item's type.  
+  
+ For more information about type support in the <xref:System.Xml?displayProperty=fullName> namespace, see [Type Support in the System.Xml Classes](../Topic/Type%20Support%20in%20the%20System.Xml%20Classes.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.FormatException">The item's value is not in the correct format for the <see cref="T:System.Boolean" /> type.</exception>
+        <exception cref="T:System.InvalidCastException">The attempted cast to <see cref="T:System.Boolean" /> is not valid.</exception>
       </Docs>
     </Member>
     <Member MemberName="ValueAsDateTime">
@@ -238,9 +320,20 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>When overridden in a derived class, gets the item's value as a <see cref="T:System.DateTime" />.</summary>
+        <value>The item's value as a <see cref="T:System.DateTime" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.XPath.XPathItem.ValueAsDateTime%2A> property attempts to convert the value of the item to the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)] <xref:System.DateTime> type according to the XPath 2.0 rules for casting the item's type.  
+  
+ For more information about type support in the <xref:System.Xml?displayProperty=fullName> namespace, see [Type Support in the System.Xml Classes](../Topic/Type%20Support%20in%20the%20System.Xml%20Classes.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.FormatException">The item's value is not in the correct format for the <see cref="T:System.DateTime" /> type.</exception>
+        <exception cref="T:System.InvalidCastException">The attempted cast to <see cref="T:System.DateTime" /> is not valid.</exception>
       </Docs>
     </Member>
     <Member MemberName="ValueAsDouble">
@@ -265,9 +358,21 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>When overridden in a derived class, gets the item's value as a <see cref="T:System.Double" />.</summary>
+        <value>The item's value as a <see cref="T:System.Double" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.XPath.XPathItem.ValueAsDouble%2A> property attempts to convert the value of the item to the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)] <xref:System.Double> type according to the XPath 2.0 rules for casting the item's type.  
+  
+ For more information about type support in the <xref:System.Xml?displayProperty=fullName> namespace, see [Type Support in the System.Xml Classes](../Topic/Type%20Support%20in%20the%20System.Xml%20Classes.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.FormatException">The item's value is not in the correct format for the <see cref="T:System.Double" /> type.</exception>
+        <exception cref="T:System.InvalidCastException">The attempted cast to <see cref="T:System.Double" /> is not valid.</exception>
+        <exception cref="T:System.OverflowException">The attempted cast resulted in an overflow.</exception>
       </Docs>
     </Member>
     <Member MemberName="ValueAsInt">
@@ -292,9 +397,21 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>When overridden in a derived class, gets the item's value as an <see cref="T:System.Int32" />.</summary>
+        <value>The item's value as an <see cref="T:System.Int32" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.XPath.XPathItem.ValueAsInt%2A> property attempts to convert the value of the item to the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)] <xref:System.Int32> type according to the XPath 2.0 rules for casting the item's type.  
+  
+ For more information about type support in the <xref:System.Xml?displayProperty=fullName> namespace, see [Type Support in the System.Xml Classes](../Topic/Type%20Support%20in%20the%20System.Xml%20Classes.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.FormatException">The item's value is not in the correct format for the <see cref="T:System.Int32" /> type.</exception>
+        <exception cref="T:System.InvalidCastException">The attempted cast to <see cref="T:System.Int32" /> is not valid.</exception>
+        <exception cref="T:System.OverflowException">The attempted cast resulted in an overflow.</exception>
       </Docs>
     </Member>
     <Member MemberName="ValueAsLong">
@@ -319,9 +436,21 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>When overridden in a derived class, gets the item's value as an <see cref="T:System.Int64" />.</summary>
+        <value>The item's value as an <see cref="T:System.Int64" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.XPath.XPathItem.ValueAsLong%2A> property attempts to convert the value of the item to the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)] <xref:System.Int64> type according to the XPath 2.0 rules for casting the item's type.  
+  
+ For more information about type support in the <xref:System.Xml?displayProperty=fullName> namespace, see [Type Support in the System.Xml Classes](../Topic/Type%20Support%20in%20the%20System.Xml%20Classes.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.FormatException">The item's value is not in the correct format for the <see cref="T:System.Int64" /> type.</exception>
+        <exception cref="T:System.InvalidCastException">The attempted cast to <see cref="T:System.Int64" /> is not valid.</exception>
+        <exception cref="T:System.OverflowException">The attempted cast resulted in an overflow.</exception>
       </Docs>
     </Member>
     <Member MemberName="ValueType">
@@ -346,9 +475,23 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>When overridden in a derived class, gets the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)] type of the item.</summary>
+        <value>The [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] type of the item. The default value is <see cref="T:System.String" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When overridden in a derived class, the <xref:System.Xml.XPath.XPathItem.ValueType%2A> property gets the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] type of the typed value of the item.  
+  
+ For example, an element of type `xs:int` would have a <xref:System.Xml.XPath.XPathItem.ValueType%2A> of <xref:System.Int32> by default. However, the <xref:System.Xml.XPath.XPathItem.ValueType%2A> could be any one of the valid types that can be mapped to `xs:int`, such as <xref:System.Int16> or <xref:System.Double>.  
+  
+ For more information about type support in the <xref:System.Xml?displayProperty=fullName> namespace, see [Type Support in the System.Xml Classes](../Topic/Type%20Support%20in%20the%20System.Xml%20Classes.md).  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>All implementers must provide a <see cref="P:System.Xml.XPath.XPathItem.ValueType" /> property for every item, even if it is only <see cref="T:System.String" />.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="XmlType">
@@ -369,9 +512,16 @@
         <ReturnType>System.Xml.Schema.XmlSchemaType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>When overridden in a derived class, gets the <see cref="T:System.Xml.Schema.XmlSchemaType" /> for the item.</summary>
+        <value>The <see cref="T:System.Xml.Schema.XmlSchemaType" /> for the item.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When overridden in a derived class, the <xref:System.Xml.XPath.XPathItem.XmlType%2A> property gets the <xref:System.Xml.Schema.XmlSchemaType> for the item. For example, the <xref:System.Xml.Schema.XmlSchemaSimpleType> or <xref:System.Xml.Schema.XmlSchemaComplexType>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

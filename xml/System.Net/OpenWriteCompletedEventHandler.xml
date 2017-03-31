@@ -22,9 +22,31 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">To be added.</param>
-    <param name="e">To be added.</param>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:System.Net.OpenWriteCompletedEventArgs" /> containing event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Net.WebClient.OpenWriteCompleted" /> event of a <see cref="T:System.Net.WebClient" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you create a <xref:System.Net.OpenWriteCompletedEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates opening a stream to write data to be uploaded.  
+  
+ [!code-cpp[NCLWebClientAsync#16](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLWebClientAsync/CPP/asyncmethods.cpp#16)]
+ [!code-csharp[NCLWebClientAsync#16](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLWebClientAsync/CS/asyncmethods.cs#16)]
+ [!code-vb[NCLWebClientAsync#16](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLWebClientAsync/VB/asyncmethods.vb#16)]  
+  
+ The following method is called when the stream is available.  
+  
+ [!code-cpp[NCLWebClientAsync#15](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLWebClientAsync/CPP/asyncmethods.cpp#15)]
+ [!code-csharp[NCLWebClientAsync#15](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLWebClientAsync/CS/asyncmethods.cs#15)]
+ [!code-vb[NCLWebClientAsync#15](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLWebClientAsync/VB/asyncmethods.vb#15)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

@@ -10,8 +10,18 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the drawing mode for a background image.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode> enumeration represents the drawing mode for a background image, as set by the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.BackImageWrapMode%2A> property of the <xref:System.Windows.Forms.DataVisualization.Charting.Chart> control. To set a background image for a chart element, use the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.BackImage%2A> property.  
+  
+> [!NOTE]
+>  If you specify the Unscaled value, the location where the image is drawn will depend on the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.BackImageAlignment%2A> property setting.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Scaled">
@@ -27,7 +37,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Background image is scaled to fit the entire chart element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Tile">
@@ -43,7 +53,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Background image is tiled to fit the entire chart element.</summary>
       </Docs>
     </Member>
     <Member MemberName="TileFlipX">
@@ -59,7 +69,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Every other tiled image is reversed around the X-axis.</summary>
       </Docs>
     </Member>
     <Member MemberName="TileFlipXY">
@@ -75,7 +85,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Every other tiled image is reversed around the X-axis and Y-axis.</summary>
       </Docs>
     </Member>
     <Member MemberName="TileFlipY">
@@ -91,7 +101,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Every other tiled image is reversed around the Y-axis.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unscaled">
@@ -107,7 +117,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Background image is not scaled.</summary>
       </Docs>
     </Member>
   </Members>

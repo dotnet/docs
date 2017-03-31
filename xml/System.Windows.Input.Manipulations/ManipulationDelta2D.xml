@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the result of a 2D manipulation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Input.Manipulations.ManipulationDelta2D> object is used in the event arguments of <xref:System.Windows.Input.Manipulations.Manipulation2DDeltaEventArgs> to inform the event handler of the changes (both incremental and cumulative) involved in the manipulation, and in the event arguments of <xref:System.Windows.Input.Manipulations.Manipulation2DCompletedEventArgs> to inform the event handler of the total changes involved in the manipulation.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ExpansionX">
@@ -28,8 +35,8 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the amount of expansion along the x-axis, in coordinate units.</summary>
+        <value>The amount of expansion along the x-axis, in coordinate units.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +53,8 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the amount of expansion along the y-axis, in coordinate units.</summary>
+        <value>The amount of expansion along the y-axis, in coordinate units.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +71,8 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the amount of rotation, in radians.</summary>
+        <value>The amount of rotation, in radians.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +89,8 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the scale factor along the x-axis.</summary>
+        <value>The scale factor along the x-axis.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,8 +107,8 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the scale factor along the y-axis.</summary>
+        <value>The scale factor along the y-axis.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,8 +125,8 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the translation along the x-axis, in coordinate units.</summary>
+        <value>The translation along the x-axis, in coordinate units.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,8 +143,8 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the translation along the y-axis, in coordinate units.</summary>
+        <value>The translation along the y-axis, in coordinate units.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

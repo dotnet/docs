@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.WebControls.PlaceHolderControlBuilder
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.PlaceHolderControlBuilder.AllowWhitespaceLiterals
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.PlaceHolderControlBuilder.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

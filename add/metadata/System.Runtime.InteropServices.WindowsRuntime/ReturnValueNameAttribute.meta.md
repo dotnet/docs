@@ -1,14 +1,20 @@
 ---
 uid: System.Runtime.InteropServices.WindowsRuntime.ReturnValueNameAttribute
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.WindowsRuntime.ReturnValueNameAttribute.Name
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.WindowsRuntime.ReturnValueNameAttribute.#ctor(System.String)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

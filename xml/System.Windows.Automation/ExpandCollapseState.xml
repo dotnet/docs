@@ -18,8 +18,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains values that specify the <see cref="T:System.Windows.Automation.ExpandCollapseState" /> of a UI Automation element.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Automation.ExpandCollapseState> refers to the visibility of immediate child objects only; it does not refer to the visibility of all descendant objects.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Collapsed">
@@ -35,7 +42,7 @@
         <ReturnType>System.Windows.Automation.ExpandCollapseState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No child nodes, controls, or content of the UI Automation element are displayed.</summary>
       </Docs>
     </Member>
     <Member MemberName="Expanded">
@@ -51,7 +58,7 @@
         <ReturnType>System.Windows.Automation.ExpandCollapseState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>All child nodes, controls or content of the UI Automation element are displayed.</summary>
       </Docs>
     </Member>
     <Member MemberName="LeafNode">
@@ -67,7 +74,7 @@
         <ReturnType>System.Windows.Automation.ExpandCollapseState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The UI Automation element has no child nodes, controls, or content to display.</summary>
       </Docs>
     </Member>
     <Member MemberName="PartiallyExpanded">
@@ -83,7 +90,7 @@
         <ReturnType>System.Windows.Automation.ExpandCollapseState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Some, but not all, child nodes, controls, or content of the UI Automation element are displayed.</summary>
       </Docs>
     </Member>
   </Members>

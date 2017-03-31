@@ -1,9 +1,9 @@
 ---
 uid: System.Messaging.SecurityContext
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.SecurityContext.Dispose
-internalonly: False
+manager: "tyoung"
 ---

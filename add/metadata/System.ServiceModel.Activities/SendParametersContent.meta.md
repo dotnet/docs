@@ -1,19 +1,34 @@
 ---
 uid: System.ServiceModel.Activities.SendParametersContent
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.SendParametersContent.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.SendParametersContent.#ctor(System.Collections.Generic.IDictionary{System.String,System.Activities.InArgument})
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.SendParametersContent.Parameters
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Activities.SendParametersContent.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -1,34 +1,53 @@
 ---
 uid: System.Windows.Forms.Design.WindowsFormsComponentEditor
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.Design.WindowsFormsComponentEditor.GetComponentEditorPages
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.WindowsFormsComponentEditor.EditComponent(System.Object,System.Windows.Forms.IWin32Window)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.WindowsFormsComponentEditor.EditComponent(System.ComponentModel.ITypeDescriptorContext,System.Object,System.Windows.Forms.IWin32Window)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.Design.WindowsFormsComponentEditor.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.WindowsFormsComponentEditor.GetInitialComponentEditorPageIndex
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.Design.WindowsFormsComponentEditor.EditComponent
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.WindowsFormsComponentEditor.EditComponent(System.ComponentModel.ITypeDescriptorContext,System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

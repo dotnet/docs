@@ -1,0 +1,67 @@
+<!-- <snippet1> -->
+<%@ Page Language="C#" %>
+<%@ register TagPrefix="uc1" 
+  TagName="DisplayModeMenuCS" 
+  Src="DisplayModeMenuCS.ascx" %>
+<%@ register tagprefix="aspSample" 
+  Namespace="Samples.AspNet.CS.Controls" 
+  Assembly="ConnectionSampleCS" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<script runat="server">
+ 
+  private void UpdateLabelData(int wpCount, int connCount)
+  {
+    Label1.Text = "WebPart Control Count:  " + wpCount.ToString();
+    Label2.Text = "Connections Count: " + connCount.ToString();
+  }
+
+  protected void WebPartManager1_WebPartsConnected(object sender, WebPartConnectionsEventArgs e)
+  {
+    UpdateLabelData(WebPartManager1.WebParts.Count,
+      WebPartManager1.Connections.Count);
+  }
+
+  protected void WebPartManager1_WebPartsDisconnected(object sender, WebPartConnectionsEventArgs e)
+  {
+    UpdateLabelData(WebPartManager1.WebParts.Count,
+      WebPartManager1.Connections.Count);
+  }
+  
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title>ASP.NET Example</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+      <!-- Reference the WebPartManager control. -->
+      <asp:WebPartManager ID="WebPartManager1" runat="server"  
+        OnWebPartsConnected="WebPartManager1_WebPartsConnected" 
+        OnWebPartsDisconnected="WebPartManager1_WebPartsDisconnected" />
+    <div>
+      <uc1:DisplayModeMenuCS ID="displaymode1" runat="server" />
+      <!-- Reference consumer and provider controls in a zone. -->
+      <asp:WebPartZone ID="WebPartZone1" runat="server">
+        <ZoneTemplate>
+          <aspSample:ZipCodeWebPart ID="zip1" 
+            runat="server" 
+            Title="Zip Code Control"/>
+          <aspSample:WeatherWebPart ID="weather1" 
+            runat="server" 
+            Title="Weather Control" />
+        </ZoneTemplate>
+      </asp:WebPartZone>
+      <hr />
+      <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
+      <br />
+      <asp:Label ID="Label2" runat="server" Text=""></asp:Label>
+      <!-- Add a ConnectionsZone so users can connect controls. -->
+      <asp:ConnectionsZone ID="ConnectionsZone1" runat="server" />
+    </div>
+    </form>
+</body>
+</html>
+<!-- </snippet1> -->

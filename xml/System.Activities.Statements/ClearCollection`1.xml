@@ -19,8 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="T">The type of the elements in the <see cref="P:System.Activities.Statements.ClearCollection`1.Collection" /> parameter.</typeparam>
+    <summary>Clears a specified collection of all items.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,7 +35,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="M:System.Activities.Statements.ClearCollection`1.#ctor" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,8 +81,8 @@
         <ReturnType>System.Activities.InArgument&lt;System.Collections.Generic.ICollection&lt;T&gt;&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The collection to be cleared of contents.</summary>
+        <value>The collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

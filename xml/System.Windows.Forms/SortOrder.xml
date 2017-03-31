@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies how items in a list are sorted.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the members of this enumeration to set the value of the <xref:System.Windows.Forms.ListView.Sorting%2A> property of the <xref:System.Windows.Forms.ListView> control.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Ascending">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Forms.SortOrder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The items are sorted in ascending order.</summary>
       </Docs>
     </Member>
     <Member MemberName="Descending">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Forms.SortOrder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The items are sorted in descending order.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.Forms.SortOrder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The items are not sorted.</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,119 +1,124 @@
 ---
 uid: System.Xaml.XamlDirective
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlDirective.LookupTypeConverter
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlDirective.LookupIsWritePublic
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlDirective.LookupIsWriteOnly
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlDirective.LookupCustomAttributeProvider
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlDirective.LookupUnderlyingSetter
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlDirective.LookupIsReadOnly
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlDirective.LookupUnderlyingMember
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlDirective.LookupIsUnknown
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlDirective.LookupIsReadPublic
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlDirective.LookupInvoker
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlDirective.LookupType
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlDirective.LookupDependsOn
-internalonly: False
+manager: "martinek"
+---
+
+---
+uid: System.Xaml.XamlDirective.#ctor
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlDirective.LookupIsAmbient
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlDirective.LookupDeferringLoader
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlDirective.LookupUnderlyingGetter
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlDirective.#ctor(System.Collections.Generic.IEnumerable{System.String},System.String,System.Xaml.XamlType,System.Xaml.Schema.XamlValueConverter{System.ComponentModel.TypeConverter},System.Xaml.Schema.AllowedMemberLocations)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlDirective.LookupIsEvent
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlDirective.GetXamlNamespaces
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlDirective.#ctor(System.String,System.String)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlDirective.AllowedLocation
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlDirective.GetHashCode
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlDirective.ToString
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlDirective.LookupTargetType
-internalonly: False
+manager: "martinek"
 ---

@@ -1,14 +1,20 @@
 ---
 uid: System.Activities.IExecutionProperty
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.IExecutionProperty.SetupWorkflowThread
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.IExecutionProperty.CleanupWorkflowThread
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

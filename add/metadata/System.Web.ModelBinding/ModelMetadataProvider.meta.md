@@ -1,24 +1,34 @@
 ---
 uid: System.Web.ModelBinding.ModelMetadataProvider
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ModelBinding.ModelMetadataProvider.GetMetadataForProperties(System.Object,System.Type)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ModelBinding.ModelMetadataProvider.GetMetadataForProperty(System.Func{System.Object},System.Type,System.String)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ModelBinding.ModelMetadataProvider.#ctor
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ModelBinding.ModelMetadataProvider.GetMetadataForType(System.Func{System.Object},System.Type)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

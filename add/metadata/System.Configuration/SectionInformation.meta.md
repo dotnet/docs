@@ -1,144 +1,178 @@
 ---
 uid: System.Configuration.SectionInformation
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SectionInformation.ForceDeclaration(System.Boolean)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SectionInformation.IsDeclarationRequired
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SectionInformation.RestartOnExternalChanges
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SectionInformation.IsDeclared
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SectionInformation.Type
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SectionInformation.ConfigSource
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SectionInformation.RequirePermission
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SectionInformation.OverrideModeEffective
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SectionInformation.IsLocked
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SectionInformation.AllowLocation
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SectionInformation.ForceSave
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SectionInformation.Name
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SectionInformation.ProtectSection(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SectionInformation.SetRawXml(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SectionInformation.SectionName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SectionInformation.OverrideMode
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SectionInformation.ProtectionProvider
-internalonly: False
----
-
----
-uid: System.Configuration.SectionInformation.GetRawXml
-internalonly: False
----
-
----
-uid: System.Configuration.SectionInformation.GetParentSection
-internalonly: False
----
-
----
-uid: System.Configuration.SectionInformation.UnprotectSection
-internalonly: False
----
-
----
-uid: System.Configuration.SectionInformation.OverrideModeDefault
-internalonly: False
----
-
----
-uid: System.Configuration.SectionInformation.InheritInChildApplications
-internalonly: False
----
-
----
-uid: System.Configuration.SectionInformation.IsProtected
-internalonly: False
----
-
----
-uid: System.Configuration.SectionInformation.AllowOverride
-internalonly: False
----
-
----
-uid: System.Configuration.SectionInformation.RevertToParent
-internalonly: False
----
-
----
-uid: System.Configuration.SectionInformation.AllowDefinition
-internalonly: False
----
-
----
-uid: System.Configuration.SectionInformation.AllowExeDefinition
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SectionInformation.ForceDeclaration
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.SectionInformation.GetRawXml
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.SectionInformation.GetParentSection
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.SectionInformation.UnprotectSection
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.SectionInformation.OverrideModeDefault
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.SectionInformation.InheritInChildApplications
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.SectionInformation.IsProtected
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.SectionInformation.AllowOverride
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.SectionInformation.RevertToParent
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.SectionInformation.AllowDefinition
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.SectionInformation.AllowExeDefinition
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.SectionInformation.ForceDeclaration
+ms.author: "riande"
+manager: "wpickett"
 ---

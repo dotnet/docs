@@ -1,59 +1,93 @@
 ---
 uid: System.Windows.Media.GradientStop
-internalonly: False
----
-
----
-uid: System.Windows.Media.GradientStop.OffsetProperty
-internalonly: False
----
-
----
-uid: System.Windows.Media.GradientStop.ToString(System.IFormatProvider)
-internalonly: False
----
-
----
-uid: System.Windows.Media.GradientStop.#ctor(System.Windows.Media.Color,System.Double)
-internalonly: False
----
-
----
-uid: System.Windows.Media.GradientStop.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.GradientStop.ToString
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.GradientStop.OffsetProperty
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.GradientStop.ToString(System.IFormatProvider)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.GradientStop.#ctor(System.Windows.Media.Color,System.Double)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.GradientStop.#ctor
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.GradientStop.ToString
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.GradientStop.System#IFormattable#ToString(System.String,System.IFormatProvider)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.GradientStop.Offset
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.GradientStop.CloneCurrentValue
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.GradientStop.ColorProperty
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.GradientStop.Color
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.GradientStop.Clone
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.GradientStop.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

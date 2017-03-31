@@ -1,14 +1,14 @@
 ---
 uid: System.Windows.Markup.RuntimeNamePropertyAttribute
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.RuntimeNamePropertyAttribute.Name
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.RuntimeNamePropertyAttribute.#ctor(System.String)
-internalonly: False
+manager: "martinek"
 ---

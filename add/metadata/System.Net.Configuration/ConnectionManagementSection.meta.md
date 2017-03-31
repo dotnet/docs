@@ -1,14 +1,17 @@
 ---
 uid: System.Net.Configuration.ConnectionManagementSection
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.ConnectionManagementSection.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.ConnectionManagementSection.ConnectionManagement
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

@@ -1,9 +1,13 @@
 ---
 uid: System.Drawing.BufferedGraphicsManager
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.BufferedGraphicsManager.Current
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

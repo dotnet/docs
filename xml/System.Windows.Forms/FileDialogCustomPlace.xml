@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an entry in a <see cref="T:System.Windows.Forms.FileDialog" /> custom place collection for [!INCLUDE[wiprlhext](~/includes/wiprlhext-md.md)].</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default open and save dialog boxes on [!INCLUDE[wiprlhext](~/includes/wiprlhext-md.md)] have an area on the left side of the dialog box titled **Favorite Links**. This area is called custom places. This class represents a custom place.  
+  
+ On [!INCLUDE[winxp](~/includes/winxp-md.md)] or [!INCLUDE[winxpsvr](~/includes/winxpsvr-md.md)], this class does not have any effect.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,9 +37,24 @@
         <Parameter Name="knownFolderGuid" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="knownFolderGuid">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="knownFolderGuid">A <see cref="T:System.Guid" /> that represents a [!INCLUDE[wiprlhext](~/includes/wiprlhext-md.md)] Known Folder.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.FileDialogCustomPlace" /> class with a custom place identified by a [!INCLUDE[wiprlhext](~/includes/wiprlhext-md.md)] Known Folder GUID.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For a list of the available [!INCLUDE[wiprlhext](~/includes/wiprlhext-md.md)] Known Folders, see [Known Folder GUIDs for File Dialog Custom Places](../Topic/Known%20Folder%20GUIDs%20for%20File%20Dialog%20Custom%20Places.md) or the KnownFolders.h file in the [!INCLUDE[winSDK](~/includes/winsdk-md.md)].  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.FileDialogCustomPlace.%23ctor%2A> method. To run this example, paste the following code into a Windows Form and call `InitializeDialogAndButton` from the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method.  
+  
+ [!code-csharp[System.Windows.Forms.FileDialogCommonPlaces#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.FileDialogCommonPlaces/CS/Form1.cs#1)]
+ [!code-vb[System.Windows.Forms.FileDialogCommonPlaces#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.FileDialogCommonPlaces/VB/Form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -46,8 +70,8 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="path">A folder path to the custom place.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.FileDialogCustomPlace" /> class. with a specified folder path to a custom place.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +88,8 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the [!INCLUDE[wiprlhext](~/includes/wiprlhext-md.md)] Known Folder GUID for the custom place.</summary>
+        <value>A <see cref="T:System.Guid" /> that indicates the [!INCLUDE[wiprlhext](~/includes/wiprlhext-md.md)] Known Folder for the custom place. If the custom place was specified with a folder path, then an empty GUID is returned. For a list of the available [!INCLUDE[wiprlhext](~/includes/wiprlhext-md.md)] Known Folders, see [Known Folder GUIDs for File Dialog Custom Places](../Topic/Known%20Folder%20GUIDs%20for%20File%20Dialog%20Custom%20Places.md) or the KnownFolders.h file in the [!INCLUDE[winSDK](~/includes/winsdk-md.md)].</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +106,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the folder path to the custom place.</summary>
+        <value>A folder path to the custom place. If the custom place was specified with a [!INCLUDE[wiprlhext](~/includes/wiprlhext-md.md)] Known Folder GUID, then an empty string is returned.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,8 +125,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a string that represents this <see cref="T:System.Windows.Forms.FileDialogCustomPlace" /> instance.</summary>
+        <returns>A string that represents this <see cref="T:System.Windows.Forms.FileDialogCustomPlace" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

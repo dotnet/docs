@@ -1,44 +1,44 @@
 ---
 uid: System.Windows.Xps.Serialization.XpsSerializationManager
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.XpsSerializationManager.IsBatchMode
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.XpsSerializationManager.XpsSerializationProgressChanged
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.XpsSerializationManager.SetFontSubsettingCountPolicy(System.Int32)
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.XpsSerializationManager.#ctor(System.Windows.Xps.Serialization.BasePackagingPolicy,System.Boolean)
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.XpsSerializationManager.SaveAsXaml(System.Object)
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.XpsSerializationManager.SetFontSubsettingPolicy(System.Windows.Xps.Serialization.FontSubsetterCommitPolicies)
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.XpsSerializationManager.Commit
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.XpsSerializationManager.XpsSerializationPrintTicketRequired
-internalonly: False
+manager: "leannef"
 ---

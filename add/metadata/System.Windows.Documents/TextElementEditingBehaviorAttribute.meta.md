@@ -1,19 +1,26 @@
 ---
 uid: System.Windows.Documents.TextElementEditingBehaviorAttribute
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Documents.TextElementEditingBehaviorAttribute.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Documents.TextElementEditingBehaviorAttribute.IsMergeable
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Documents.TextElementEditingBehaviorAttribute.IsTypographicOnly
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

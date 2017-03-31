@@ -1,9 +1,11 @@
 ---
 uid: Microsoft.Build.Framework.RequiredAttribute
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.RequiredAttribute.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

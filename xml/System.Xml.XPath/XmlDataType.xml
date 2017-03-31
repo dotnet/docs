@@ -19,7 +19,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the data type used to determine sort order.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,7 +45,7 @@
         <ReturnType>System.Xml.XPath.XmlDataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Values are sorted numerically.</summary>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -70,7 +70,7 @@
         <ReturnType>System.Xml.XPath.XmlDataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Values are sorted alphabetically.</summary>
       </Docs>
     </Member>
   </Members>

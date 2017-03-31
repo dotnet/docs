@@ -1,54 +1,90 @@
 ---
 uid: System.Runtime.Serialization.Configuration.DeclaredTypeElementCollection
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.Serialization.Configuration.DeclaredTypeElementCollection.Clear
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.Serialization.Configuration.DeclaredTypeElementCollection.Remove(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.Serialization.Configuration.DeclaredTypeElementCollection.Remove(System.Runtime.Serialization.Configuration.DeclaredTypeElement)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.Serialization.Configuration.DeclaredTypeElementCollection.IndexOf(System.Runtime.Serialization.Configuration.DeclaredTypeElement)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Runtime.Serialization.Configuration.DeclaredTypeElementCollection.Remove
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.Serialization.Configuration.DeclaredTypeElementCollection.Item(System.Int32)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.Serialization.Configuration.DeclaredTypeElementCollection.RemoveAt(System.Int32)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.Serialization.Configuration.DeclaredTypeElementCollection.Add(System.Runtime.Serialization.Configuration.DeclaredTypeElement)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.Serialization.Configuration.DeclaredTypeElementCollection.Contains(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Runtime.Serialization.Configuration.DeclaredTypeElementCollection.Item
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.Serialization.Configuration.DeclaredTypeElementCollection.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.Serialization.Configuration.DeclaredTypeElementCollection.Item(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -1,9 +1,12 @@
 ---
 uid: System.Windows.Input.StylusButtonCollection
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Input.StylusButtonCollection.GetStylusButtonByGuid(System.Guid)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

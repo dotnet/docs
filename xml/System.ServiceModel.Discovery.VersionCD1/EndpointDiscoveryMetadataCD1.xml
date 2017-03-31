@@ -20,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains the metadata for a discoverable service based on the Committee Draft 1 version of the WS-Discovery protocol.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -40,9 +40,9 @@
         <Parameter Name="endpointDiscoveryMetadata" Type="System.ServiceModel.Discovery.EndpointDiscoveryMetadata" />
       </Parameters>
       <Docs>
-        <param name="endpointDiscoveryMetadata">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="endpointDiscoveryMetadata">The endpoint discovery metadata.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Discovery.VersionCD1.EndpointDiscoveryMetadataCD1" /> class with the specified <see cref="T:System.ServiceModel.Discovery.EndpointDiscoveryMetadata" /> instance.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Discovery.VersionCD1.EndpointDiscoveryMetadataCD1" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,8 +60,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the schema for endpoint discovery metadata for the Committee Draft 1 version of the WS-Discovery protocol.</summary>
+        <returns>The XML qualified name of the schema.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,9 +81,9 @@
         <Parameter Name="schemaSet" Type="System.Xml.Schema.XmlSchemaSet" />
       </Parameters>
       <Docs>
-        <param name="schemaSet">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="schemaSet">The schema set.</param>
+        <summary>Gets the schema for endpoint discovery metadata for the Committee Draft 1 version of the WS-Discovery protocol and adds it to the specified schema set if it is not already present.</summary>
+        <returns>The XML qualified name of the schema.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,8 +103,8 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="reader">The XML reader to read from.</param>
+        <summary>Reads an <see cref="T:System.ServiceModel.Discovery.VersionCD1.EndpointDiscoveryMetadataCD1" /> instance from XML.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,8 +122,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the <see cref="T:System.ServiceModel.Discovery.EndpointDiscoveryMetadata" /> associated with this <see cref="T:System.ServiceModel.Discovery.VersionCD1.EndpointDiscoveryMetadataCD1" /> instance.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Discovery.VersionCD1.EndpointDiscoveryMetadataCD1" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,8 +143,8 @@
         <Parameter Name="writer" Type="System.Xml.XmlWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The XML writer to write to.</param>
+        <summary>Writes a <see cref="T:System.ServiceModel.Discovery.VersionCD1.EndpointDiscoveryMetadataCD1" /> instance to XML.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

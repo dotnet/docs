@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies if a remote peer subscribed to the local peer can receive event notifications.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Net.PeerToPeer.Collaboration.SubscriptionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that a remote peer can subscribe to the local peer as well as receive event notifications.</summary>
       </Docs>
     </Member>
     <Member MemberName="Blocked">
@@ -43,7 +43,7 @@
         <ReturnType>System.Net.PeerToPeer.Collaboration.SubscriptionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that a remote peer can subscribe to the local peer, but will not receive event notifications.</summary>
       </Docs>
     </Member>
   </Members>

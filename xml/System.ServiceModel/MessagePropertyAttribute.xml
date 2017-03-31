@@ -17,8 +17,23 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents data that is passed locally with a custom message type but not serialized into a SOAP message.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.MessagePropertyAttribute> attribute to attach data to the custom message type as it passes through the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] system without serializing the data into a SOAP message.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.ServiceModel.MessagePropertyAttribute> attribute.  
+  
+ [!code-csharp[messagepropertyattribute#0](~/samples/snippets/csharp/VS_Snippets_CFX/messagepropertyattribute/cs/source.cs#0)]
+ [!code-vb[messagepropertyattribute#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/messagepropertyattribute/vb/source.vb#0)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,7 +48,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.MessagePropertyAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +66,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the property.</summary>
+        <value>The name of the <see cref="T:System.ServiceModel.MessagePropertyAttribute" /> attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

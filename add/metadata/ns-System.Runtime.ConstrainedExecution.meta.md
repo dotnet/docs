@@ -1,4 +1,6 @@
 ---
 uid: System.Runtime.ConstrainedExecution
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

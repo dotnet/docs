@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a component editor for the data controls collection of the <see cref="T:System.Web.DynamicData.DynamicDataManager" /> control.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="type">The type of the collection to edit.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.Design.DataControlReferenceCollectionEditor" /> class by using the specified collection type.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,8 +47,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the type of the collection to edit.</summary>
+        <returns>The type of the collection to edit.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

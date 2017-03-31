@@ -1,14 +1,14 @@
 ---
 uid: System.Web.Caching.IOutputCacheEntry
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.IOutputCacheEntry.ResponseElements
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.IOutputCacheEntry.HeaderElements
-internalonly: False
+manager: "wpickett"
 ---

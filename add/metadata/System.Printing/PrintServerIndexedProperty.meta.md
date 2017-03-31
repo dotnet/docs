@@ -1,4 +1,5 @@
 ---
 uid: System.Printing.PrintServerIndexedProperty
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

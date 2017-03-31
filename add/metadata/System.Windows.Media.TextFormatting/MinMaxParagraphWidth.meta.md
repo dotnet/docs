@@ -1,39 +1,61 @@
 ---
 uid: System.Windows.Media.TextFormatting.MinMaxParagraphWidth
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.MinMaxParagraphWidth.Equals(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.MinMaxParagraphWidth.op_Inequality(System.Windows.Media.TextFormatting.MinMaxParagraphWidth,System.Windows.Media.TextFormatting.MinMaxParagraphWidth)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.MinMaxParagraphWidth.op_Equality(System.Windows.Media.TextFormatting.MinMaxParagraphWidth,System.Windows.Media.TextFormatting.MinMaxParagraphWidth)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.TextFormatting.MinMaxParagraphWidth.Equals
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.MinMaxParagraphWidth.MaxWidth
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.MinMaxParagraphWidth.MinWidth
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.MinMaxParagraphWidth.GetHashCode
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.MinMaxParagraphWidth.Equals(System.Windows.Media.TextFormatting.MinMaxParagraphWidth)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

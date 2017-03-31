@@ -1,24 +1,41 @@
 ---
 uid: System.Deployment.Application.DeploymentDownloadException
-internalonly: False
----
-
----
-uid: System.Deployment.Application.DeploymentDownloadException.#ctor(System.String)
-internalonly: False
----
-
----
-uid: System.Deployment.Application.DeploymentDownloadException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Deployment.Application.DeploymentDownloadException.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Deployment.Application.DeploymentDownloadException.#ctor(System.String)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Deployment.Application.DeploymentDownloadException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Deployment.Application.DeploymentDownloadException.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Deployment.Application.DeploymentDownloadException.#ctor(System.String,System.Exception)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

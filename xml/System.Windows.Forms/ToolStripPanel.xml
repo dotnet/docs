@@ -29,8 +29,29 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Creates a container within which other controls can share horizontal or vertical space.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use a <xref:System.Windows.Forms.ToolStripPanel> to hold one or more <xref:System.Windows.Forms.ToolStrip>, <xref:System.Windows.Forms.MenuStrip>, <xref:System.Windows.Forms.StatusStrip> or user-defined controls.  
+  
+ You might find that one or more <xref:System.Windows.Forms.ToolStripPanel> controls meet the needs of your application better than a <xref:System.Windows.Forms.ToolStripContainer> if you do not need the four panels and the central <xref:System.Windows.Forms.ToolStripContentPanel>.  
+  
+ You can use only one panel if you so choose, and <xref:System.Windows.Forms.ToolStripPanel> works well in Multiple Document Interface (MDI) scenarios.  
+  
+ Each <xref:System.Windows.Forms.ToolStripPanel> is expandable and collapsible.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use <xref:System.Windows.Forms.ToolStripPanel> controls with a multiple document interface (MDI).  
+  
+ [!code-csharp[System.Windows.Forms.ToolStrip.Misc#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/CS/Program.cs#10)]
+ [!code-vb[System.Windows.Forms.ToolStrip.Misc#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/VB/Program.vb#10)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,7 +65,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripPanel" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,9 +93,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not relevant to this class.</summary>
+        <value>
+          <see langword="true" /> if enabled; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not relevant to this class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoScroll">
@@ -101,9 +130,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not relevant to this class.</summary>
+        <value>
+          <see langword="true" /> if enabled; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not relevant to this class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoScrollMargin">
@@ -130,9 +167,17 @@
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not relevant to this class.</summary>
+        <value>
+          <see langword="true" /> if enabled; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not relevant to this class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoScrollMinSize">
@@ -159,9 +204,17 @@
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not relevant to this class.</summary>
+        <value>
+          <see langword="true" /> if enabled; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not relevant to this class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoSize">
@@ -185,8 +238,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value indicating whether the <see cref="T:System.Windows.Forms.ToolStripPanel" /> automatically adjusts its size when the form is resized.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Forms.ToolStripPanel" /> automatically resizes; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -211,8 +265,25 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.ToolStripPanel.AutoSize" /> property changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripPanel.AutoSizeChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripPanel> named `ToolStripPanel1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripPanel.AutoSizeChanged> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#606](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#606)]
+ [!code-vb[System.Windows.Forms.EventExamples#606](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#606)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginInit">
@@ -229,7 +300,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Begins the initialization of a <see cref="T:System.Windows.Forms.ToolStripPanel" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -247,8 +318,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Retrieves a collection of <see cref="T:System.Windows.Forms.ToolStripPanel" /> controls.</summary>
+        <returns>A collection of <see cref="T:System.Windows.Forms.ToolStripPanel" /> controls.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -265,8 +336,8 @@
         <ReturnType>System.Windows.Forms.Padding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the space, in pixels, that is specified by default between controls.</summary>
+        <value>A <see cref="T:System.Windows.Forms.Padding" /> that represents the default space between controls.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -283,8 +354,8 @@
         <ReturnType>System.Windows.Forms.Padding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the internal spacing, in pixels, of the contents of a control.</summary>
+        <value>A <see cref="T:System.Windows.Forms.Padding" /> that represents the internal spacing of the contents of a control.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -304,9 +375,25 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.ToolStripPanel" /> and optionally releases the managed resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the public `Dispose` method and the <xref:System.Object.Finalize%2A> method. `Dispose` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+  
+ When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.Windows.Forms.ToolStripPanel> references. This method invokes the `Dispose` method of each referenced object.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean) " />be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement<see langword=" Dispose(Boolean)" />, see [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+  
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="Dock">
@@ -322,8 +409,8 @@
         <ReturnType>System.Windows.Forms.DockStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets which control borders are docked to its parent control and determines how a control is resized with its parent.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.DockStyle" /> values. The default is None.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -341,7 +428,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Ends the initialization of a <see cref="T:System.Windows.Forms.ToolStripPanel" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -361,9 +448,19 @@
         <Parameter Name="toolStripToDrag" Type="System.Windows.Forms.ToolStrip" />
       </Parameters>
       <Docs>
-        <param name="toolStripToDrag">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="toolStripToDrag">The <see cref="T:System.Windows.Forms.ToolStrip" /> to add to the <see cref="T:System.Windows.Forms.ToolStripPanel" />.</param>
+        <summary>Adds the specified <see cref="T:System.Windows.Forms.ToolStrip" /> to a <see cref="T:System.Windows.Forms.ToolStripPanel" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Windows.Forms.ToolStripPanel.Join%2A> constructor. This example is part of a larger example available in the <xref:System.Windows.Forms.ToolStripPanel> class overview.  
+  
+ [!code-csharp[System.Windows.Forms.ToolStrip.Misc#11](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/CS/Program.cs#11)]
+ [!code-vb[System.Windows.Forms.ToolStrip.Misc#11](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/VB/Program.vb#11)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Join">
@@ -383,9 +480,9 @@
         <Parameter Name="location" Type="System.Drawing.Point" />
       </Parameters>
       <Docs>
-        <param name="toolStripToDrag">To be added.</param>
-        <param name="location">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="toolStripToDrag">The <see cref="T:System.Windows.Forms.ToolStrip" /> to add to the <see cref="T:System.Windows.Forms.ToolStripPanel" />.</param>
+        <param name="location">A <see cref="T:System.Drawing.Point" /> value representing the x- and y-client coordinates, in pixels, of the new location for the <see cref="T:System.Windows.Forms.ToolStrip" />.</param>
+        <summary>Adds the specified <see cref="T:System.Windows.Forms.ToolStrip" /> to a <see cref="T:System.Windows.Forms.ToolStripPanel" /> at the specified location.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -406,10 +503,11 @@
         <Parameter Name="row" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="toolStripToDrag">To be added.</param>
-        <param name="row">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="toolStripToDrag">The <see cref="T:System.Windows.Forms.ToolStrip" /> to add to the <see cref="T:System.Windows.Forms.ToolStripPanel" />.</param>
+        <param name="row">An <see cref="T:System.Int32" /> representing the <see cref="T:System.Windows.Forms.ToolStripPanelRow" /> to which the <see cref="T:System.Windows.Forms.ToolStrip" /> is added.</param>
+        <summary>Adds the specified <see cref="T:System.Windows.Forms.ToolStrip" /> to a <see cref="T:System.Windows.Forms.ToolStripPanel" /> in the specified row.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="row" /> parameter is less than zero (0).</exception>
       </Docs>
     </Member>
     <Member MemberName="Join">
@@ -430,10 +528,10 @@
         <Parameter Name="y" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="toolStripToDrag">To be added.</param>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="toolStripToDrag">The <see cref="T:System.Windows.Forms.ToolStrip" /> to add to the <see cref="T:System.Windows.Forms.ToolStripPanel" />.</param>
+        <param name="x">The horizontal client coordinate, in pixels.</param>
+        <param name="y">The vertical client coordinate, in pixels.</param>
+        <summary>Adds the specified <see cref="T:System.Windows.Forms.ToolStrip" /> to a <see cref="T:System.Windows.Forms.ToolStripPanel" /> at the specified coordinates.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -450,8 +548,8 @@
         <ReturnType>System.Windows.Forms.Layout.LayoutEngine</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a cached instance of the control's layout engine.</summary>
+        <value>The <see cref="T:System.Windows.Forms.Layout.LayoutEngine" /> for the control's contents.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -479,8 +577,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value indicating whether the <see cref="T:System.Windows.Forms.ToolStripPanel" /> can be moved or resized.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Forms.ToolStripPanel" /> can be moved or resized; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -500,9 +599,23 @@
         <Parameter Name="e" Type="System.Windows.Forms.ControlEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">A <see cref="T:System.Windows.Forms.ControlEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStrip.ControlAdded" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ToolStripPanel.OnControlAdded%2A> method is called when a child control is added to the <xref:System.Windows.Forms.ToolStrip>.  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
+  
+ The <xref:System.Windows.Forms.ToolStripPanel.OnControlAdded%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.ToolStripPanel.OnControlAdded(System.Windows.Forms.ControlEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ToolStripPanel.OnControlAdded(System.Windows.Forms.ControlEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="OnControlRemoved">
@@ -521,9 +634,23 @@
         <Parameter Name="e" Type="System.Windows.Forms.ControlEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">A <see cref="T:System.Windows.Forms.ControlEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStrip.ControlRemoved" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ToolStripPanel.OnControlRemoved%2A> is called when a child control is removed from the <xref:System.Windows.Forms.ToolStrip>.  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
+  
+ The <xref:System.Windows.Forms.ToolStripPanel.OnControlRemoved%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.ToolStripPanel.OnControlRemoved(System.Windows.Forms.ControlEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ToolStripPanel.OnControlRemoved(System.Windows.Forms.ControlEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="OnDockChanged">
@@ -542,9 +669,21 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">A <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.DockChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
+  
+ The <xref:System.Windows.Forms.ToolStripPanel.OnDockChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.ToolStripPanel.OnDockChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ToolStripPanel.OnDockChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="OnLayout">
@@ -563,9 +702,21 @@
         <Parameter Name="e" Type="System.Windows.Forms.LayoutEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">A <see cref="T:System.Windows.Forms.LayoutEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Layout" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
+  
+ The <xref:System.Windows.Forms.ToolStripPanel.OnLayout%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.ToolStripPanel.OnLayout(System.Windows.Forms.LayoutEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ToolStripPanel.OnLayout(System.Windows.Forms.LayoutEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="OnPaintBackground">
@@ -589,8 +740,8 @@
         <Parameter Name="e" Type="System.Windows.Forms.PaintEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> that contains the event data.</param>
+        <summary>Paints the background of the control.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -610,8 +761,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">The event data.</param>
+        <summary>Raises the <see cref="M:System.Windows.Forms.Control.OnParentChanged(System.EventArgs)" /> event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -631,9 +782,21 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">A <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripPanel.RendererChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
+  
+ The <xref:System.Windows.Forms.ToolStripPanel.OnRendererChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.ToolStripPanel.OnRendererChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ToolStripPanel.OnRendererChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="OnRightToLeftChanged">
@@ -652,9 +815,21 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.RightToLeftChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
+  
+ The <xref:System.Windows.Forms.ToolStripPanel.OnRightToLeftChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.ToolStripPanel.OnRightToLeftChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ToolStripPanel.OnRightToLeftChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="Orientation">
@@ -670,8 +845,8 @@
         <ReturnType>System.Windows.Forms.Orientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value indicating the horizontal or vertical orientation of the <see cref="T:System.Windows.Forms.ToolStripPanel" />.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.Orientation" /> values.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -691,9 +866,9 @@
         <Parameter Name="clientLocation" Type="System.Drawing.Point" />
       </Parameters>
       <Docs>
-        <param name="clientLocation">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="clientLocation">A <see cref="T:System.Drawing.Point" /> used as a reference to find the <see cref="T:System.Windows.Forms.ToolStripPanelRow" />.</param>
+        <summary>Retrieves the <see cref="T:System.Windows.Forms.ToolStripPanelRow" /> given a point within the <see cref="T:System.Windows.Forms.ToolStripPanel" /> client area.</summary>
+        <returns>The <see cref="T:System.Windows.Forms.ToolStripPanelRow" /> that contains the <paramref name="raftingContainerPoint" />, or <see langword="null" /> if no such <see cref="T:System.Windows.Forms.ToolStripPanelRow" /> exists.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -718,8 +893,8 @@
         <ReturnType>System.Windows.Forms.ToolStripRenderer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a <see cref="T:System.Windows.Forms.ToolStripRenderer" /> used to customize the appearance of a <see cref="T:System.Windows.Forms.ToolStripPanel" />.</summary>
+        <value>A <see cref="T:System.Windows.Forms.ToolStripRenderer" /> that handles painting.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -736,8 +911,25 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.ToolStripPanel.Renderer" /> property changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripPanel.RendererChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripPanel> named `ToolStripPanel1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripPanel.RendererChanged> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#607](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#607)]
+ [!code-vb[System.Windows.Forms.EventExamples#607](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#607)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderMode">
@@ -753,8 +945,8 @@
         <ReturnType>System.Windows.Forms.ToolStripRenderMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the painting styles to be applied to the <see cref="T:System.Windows.Forms.ToolStripPanel" />.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.ToolStripRenderMode" /> values.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -771,8 +963,8 @@
         <ReturnType>System.Windows.Forms.Padding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the spacing, in pixels, between the <see cref="T:System.Windows.Forms.ToolStripPanelRow" />s and the <see cref="T:System.Windows.Forms.ToolStripPanel" />.</summary>
+        <value>A <see cref="T:System.Windows.Forms.Padding" /> value representing the spacing, in pixels.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -797,8 +989,8 @@
         <ReturnType>System.Windows.Forms.ToolStripPanelRow[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Windows.Forms.ToolStripPanelRow" />s in this <see cref="T:System.Windows.Forms.ToolStripPanel" />.</summary>
+        <value>A <see cref="T:System.Windows.Forms.ToolStripPanel.ToolStripPanelRowCollection" /> representing the <see cref="T:System.Windows.Forms.ToolStripPanelRow" />s in this <see cref="T:System.Windows.Forms.ToolStripPanel" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -826,9 +1018,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not relevant to this class.</summary>
+        <value>An <see cref="T:System.Int32" /> representing the tab index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not relevant to this class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TabIndexChanged">
@@ -852,8 +1051,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>This event is not relevant for this class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event is not relevant for this class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TabStop">
@@ -880,9 +1086,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not relevant to this class.</summary>
+        <value>
+          <see langword="true" /> if enabled; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not relevant to this class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TabStopChanged">
@@ -906,8 +1120,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>This event is not relevant for this class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event is not relevant for this class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -934,9 +1155,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not relevant to this class.</summary>
+        <value>A <see cref="T:System.String" /> representing the display text.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not relevant to this class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TextChanged">
@@ -960,8 +1188,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>This event is not relevant for this class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event is not relevant for this class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

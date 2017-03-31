@@ -1,49 +1,59 @@
 ---
 uid: System.Net.Configuration.NetSectionGroup
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.NetSectionGroup.GetSectionGroup(System.Configuration.Configuration)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.NetSectionGroup.MailSettings
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.NetSectionGroup.DefaultProxy
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.NetSectionGroup.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.NetSectionGroup.Settings
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.NetSectionGroup.WebRequestModules
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.NetSectionGroup.RequestCaching
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.NetSectionGroup.ConnectionManagement
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.NetSectionGroup.AuthenticationModules
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

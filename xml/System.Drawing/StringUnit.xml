@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the units of measure for a text string.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is not currently used in the .NET Framework.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Display">
@@ -27,7 +34,7 @@
         <ReturnType>System.Drawing.StringUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the device unit as the unit of measure.</summary>
       </Docs>
     </Member>
     <Member MemberName="Document">
@@ -43,7 +50,7 @@
         <ReturnType>System.Drawing.StringUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies 1/300 of an inch as the unit of measure.</summary>
       </Docs>
     </Member>
     <Member MemberName="Em">
@@ -59,7 +66,7 @@
         <ReturnType>System.Drawing.StringUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies a printer's em size of 32 as the unit of measure.</summary>
       </Docs>
     </Member>
     <Member MemberName="Inch">
@@ -75,7 +82,7 @@
         <ReturnType>System.Drawing.StringUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies an inch as the unit of measure.</summary>
       </Docs>
     </Member>
     <Member MemberName="Millimeter">
@@ -91,7 +98,7 @@
         <ReturnType>System.Drawing.StringUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies a millimeter as the unit of measure</summary>
       </Docs>
     </Member>
     <Member MemberName="Pixel">
@@ -107,7 +114,7 @@
         <ReturnType>System.Drawing.StringUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies a pixel as the unit of measure.</summary>
       </Docs>
     </Member>
     <Member MemberName="Point">
@@ -123,7 +130,7 @@
         <ReturnType>System.Drawing.StringUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies a printer's point (1/72 inch) as the unit of measure.</summary>
       </Docs>
     </Member>
     <Member MemberName="World">
@@ -139,7 +146,7 @@
         <ReturnType>System.Drawing.StringUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies world units as the unit of measure.</summary>
       </Docs>
     </Member>
   </Members>

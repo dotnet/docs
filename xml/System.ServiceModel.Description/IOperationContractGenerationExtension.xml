@@ -8,8 +8,31 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the methods called during contract generation that can be used to modify the generated code for an operation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implement the <xref:System.ServiceModel.Description.IOperationContractGenerationExtension> interface on an operation behavior (a <xref:System.ServiceModel.Description.IOperationBehavior?displayProperty=fullName> type) to enable you to modify the code generated when a contract or endpoint is compiled into code. Typically, a custom <xref:System.ServiceModel.Description.IWsdlImportExtension?displayProperty=fullName> inserts a custom operation behavior into the <xref:System.ServiceModel.Description.OperationDescription.Behaviors%2A?displayProperty=fullName> collection during the call to <xref:System.ServiceModel.Description.IWsdlImportExtension.ImportContract%2A?displayProperty=fullName> or <xref:System.ServiceModel.Description.IWsdlImportExtension.ImportEndpoint%2A?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+ The following code example shows the implementation of the <xref:System.ServiceModel.Description.IOperationContractGenerationExtension.GenerateOperation%2A> method that adds a string to the comments section of the operation using the <xref:System.CodeDom?displayProperty=fullName> namespace.  
+  
+  
+  
+ The following code example shows how the operation behavior that implements <xref:System.ServiceModel.Description.IOperationContractGenerationExtension> is inserted into the <xref:System.ServiceModel.Description.OperationDescription.Behaviors%2A?displayProperty=fullName> collection during the call to <xref:System.ServiceModel.Description.IWsdlImportExtension.ImportContract%2A?displayProperty=fullName>.  
+  
+ [!code-csharp[C_CustomWSDLExtensions#4](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/wsdldocumentationimporter.cs#4)]  
+  
+ Finally, the following code example shows the operation generated in both Visual Basic and C#.  
+  
+ [!code-csharp[C_CustomWSDLExtensions#3](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/newgeneratedcontract.cs#3)]
+ [!code-vb[C_CustomWSDLExtensions#3](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/newgeneratedcontract.vb#3)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="GenerateOperation">
@@ -28,9 +51,34 @@
         <Parameter Name="context" Type="System.ServiceModel.Description.OperationContractGenerationContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="context">The working context that contains the <see cref="N:System.CodeDom" /> types necessary to modify the generated operation.</param>
+        <summary>Implement to modify the code document object model prior to the contract generation process.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, a custom <xref:System.ServiceModel.Description.IWsdlImportExtension?displayProperty=fullName> inserts a custom operation behavior into the <xref:System.ServiceModel.Description.OperationDescription.Behaviors%2A?displayProperty=fullName> collection during the call to <xref:System.ServiceModel.Description.IWsdlImportExtension.ImportContract%2A?displayProperty=fullName> or <xref:System.ServiceModel.Description.IWsdlImportExtension.ImportEndpoint%2A?displayProperty=fullName>.  
+  
+ The <xref:System.ServiceModel.Description.IOperationContractGenerationExtension.GenerateOperation%2A> method is called once for each contract.  
+  
+   
+  
+## Examples  
+ The following code example shows the implementation of the <xref:System.ServiceModel.Description.IOperationContractGenerationExtension.GenerateOperation%2A> method that adds a string to the comments section of the operation using the <xref:System.CodeDom?displayProperty=fullName> namespace.  
+  
+  
+  
+ The following code example shows how the operation behavior that implements <xref:System.ServiceModel.Description.IOperationContractGenerationExtension> is inserted into the <xref:System.ServiceModel.Description.OperationDescription.Behaviors%2A?displayProperty=fullName> collection during the call to <xref:System.ServiceModel.Description.IWsdlImportExtension.ImportContract%2A?displayProperty=fullName>.  
+  
+ [!code-csharp[C_CustomWSDLExtensions#4](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/wsdldocumentationimporter.cs#4)]  
+  
+ Finally, the following code example shows the operation generated in both Visual Basic and C#.  
+  
+ [!code-csharp[C_CustomWSDLExtensions#3](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/newgeneratedcontract.cs#3)]
+ [!code-vb[C_CustomWSDLExtensions#3](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/newgeneratedcontract.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

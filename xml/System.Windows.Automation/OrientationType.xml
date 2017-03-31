@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains values that specify the orientation of a control.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,7 +35,7 @@
         <ReturnType>System.Windows.Automation.OrientationType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the control has horizontal orientation.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -51,7 +51,7 @@
         <ReturnType>System.Windows.Automation.OrientationType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the control has no orientation.</summary>
       </Docs>
     </Member>
     <Member MemberName="Vertical">
@@ -67,7 +67,7 @@
         <ReturnType>System.Windows.Automation.OrientationType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the control has vertical orientation.</summary>
       </Docs>
     </Member>
   </Members>

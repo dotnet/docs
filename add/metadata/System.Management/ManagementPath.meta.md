@@ -1,84 +1,89 @@
 ---
 uid: System.Management.ManagementPath
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementPath.#ctor
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementPath.DefaultPath
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementPath.SetAsSingleton
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementPath.Server
-internalonly: False
+manager: "jillfra"
+---
+
+---
+uid: System.Management.ManagementPath.#ctor
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementPath.IsInstance
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementPath.IsClass
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementPath.ClassName
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementPath.IsSingleton
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementPath.ToString
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementPath.NamespacePath
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementPath.Clone
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementPath.SetAsClass
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementPath.Path
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementPath.RelativePath
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementPath.#ctor(System.String)
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementPath.System#ICloneable#Clone
-internalonly: False
+manager: "jillfra"
 ---

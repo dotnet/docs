@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Determines whether the default value for a property is set at the bottom or the top of the project file.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>Microsoft.Build.Framework.XamlTypes.DefaultValueSourceLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The default value for a property is set at the bottom of the project file (usually via an import of a .targets file, where the property definition is conditional on whether the property has not already been defined.)</summary>
       </Docs>
     </Member>
     <Member MemberName="BeforeContext">
@@ -43,7 +43,7 @@
         <ReturnType>Microsoft.Build.Framework.XamlTypes.DefaultValueSourceLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The default value for a property is set at the top of the project file (usually via an import of a .props file).</summary>
       </Docs>
     </Member>
   </Members>

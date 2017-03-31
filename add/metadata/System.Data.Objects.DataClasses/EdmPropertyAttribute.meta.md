@@ -1,4 +1,6 @@
 ---
 uid: System.Data.Objects.DataClasses.EdmPropertyAttribute
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

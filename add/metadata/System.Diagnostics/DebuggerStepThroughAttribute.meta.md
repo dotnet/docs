@@ -1,9 +1,13 @@
 ---
 uid: System.Diagnostics.DebuggerStepThroughAttribute
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.DebuggerStepThroughAttribute.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

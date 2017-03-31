@@ -1,4 +1,5 @@
 ---
 uid: System.GenericUriParserOptions
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

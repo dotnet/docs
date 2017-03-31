@@ -10,8 +10,17 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates how to determine and format date intervals when calling date-related functions.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you call date-related functions, you can use enumeration members in your code in place of the actual values.  
+  
+ The `DateInterval` enumeration defines constants used with date-related functions to identify how date intervals are determined and formatted.  For an example, see the <xref:Microsoft.VisualBasic.DateAndTime.DatePart%2A> method.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Day">
@@ -27,7 +36,7 @@
         <ReturnType>Microsoft.VisualBasic.DateInterval</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Day of month (1 through 31)</summary>
       </Docs>
     </Member>
     <Member MemberName="DayOfYear">
@@ -43,7 +52,7 @@
         <ReturnType>Microsoft.VisualBasic.DateInterval</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Day of year (1 through 366)</summary>
       </Docs>
     </Member>
     <Member MemberName="Hour">
@@ -59,7 +68,7 @@
         <ReturnType>Microsoft.VisualBasic.DateInterval</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Hour (0 through 23)</summary>
       </Docs>
     </Member>
     <Member MemberName="Minute">
@@ -75,7 +84,7 @@
         <ReturnType>Microsoft.VisualBasic.DateInterval</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Minute (0 through 59)</summary>
       </Docs>
     </Member>
     <Member MemberName="Month">
@@ -91,7 +100,7 @@
         <ReturnType>Microsoft.VisualBasic.DateInterval</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Month (1 through 12)</summary>
       </Docs>
     </Member>
     <Member MemberName="Quarter">
@@ -107,7 +116,7 @@
         <ReturnType>Microsoft.VisualBasic.DateInterval</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Quarter of year (1 through 4)</summary>
       </Docs>
     </Member>
     <Member MemberName="Second">
@@ -123,7 +132,7 @@
         <ReturnType>Microsoft.VisualBasic.DateInterval</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Second (0 through 59)</summary>
       </Docs>
     </Member>
     <Member MemberName="Weekday">
@@ -139,7 +148,7 @@
         <ReturnType>Microsoft.VisualBasic.DateInterval</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Day of week (1 through 7)</summary>
       </Docs>
     </Member>
     <Member MemberName="WeekOfYear">
@@ -155,7 +164,7 @@
         <ReturnType>Microsoft.VisualBasic.DateInterval</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Week of year (1 through 53)</summary>
       </Docs>
     </Member>
     <Member MemberName="Year">
@@ -171,7 +180,7 @@
         <ReturnType>Microsoft.VisualBasic.DateInterval</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Year</summary>
       </Docs>
     </Member>
   </Members>

@@ -18,8 +18,22 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>A collection of toolbox items that have been categorized.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Activities.Presentation.Toolbox.ToolboxCategory> collection contains items of type <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper> that are added and removed from an instance of the collection using the  <xref:System.Activities.Presentation.Toolbox.ToolboxCategory.Add%2A> and <xref:System.Activities.Presentation.Toolbox.ToolboxCategory.Remove%2A> methods.  
+  
+ The <xref:System.Activities.Presentation.Toolbox.ToolboxCategory> class implements the <xref:System.ComponentModel.INotifyPropertyChanged> interface. This allows the collection that is storing the toolbox items to provide notifications when properties like the <xref:System.Activities.Presentation.Toolbox.ToolboxCategory.CategoryName%2A> property are changed and methods like <xref:System.Activities.Presentation.Toolbox.ToolboxCategory.Add%2A> and <xref:System.Activities.Presentation.Toolbox.ToolboxCategory.Remove%2A> are used to change the contents of the collection.  
+  
+   
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_ToolboxCategory#0](WFD_ToolboxCategory#0)]  -->  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,8 +47,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Creates an instance of the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default name assigned to the <xref:System.Activities.Presentation.Toolbox.ToolboxCategory> collection is an empty `string`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -50,9 +71,16 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the toolbox category collection.</param>
+        <summary>Creates an instance of the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" /> class with a specified name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The name assigned to the <xref:System.Activities.Presentation.Toolbox.ToolboxCategory> collection can be an empty `string`. This is the value assigned by the default constructor, <xref:System.Activities.Presentation.Toolbox.ToolboxCategory.%23ctor%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -71,9 +99,10 @@
         <Parameter Name="tool" Type="System.Activities.Presentation.Toolbox.ToolboxItemWrapper" />
       </Parameters>
       <Docs>
-        <param name="tool">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="tool">The <see cref="T:System.Activities.Presentation.Toolbox.ToolboxItemWrapper" /> item to add to the collection.</param>
+        <summary>Adds a specified tool to the end of the toolbox category collection.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="tool" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CategoryName">
@@ -89,9 +118,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the toolbox category.</summary>
+        <value>The name of the toolbox category.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When set, the property provides a notification.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -110,10 +146,11 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The zero-based index of the tool to get or set.</param>
+        <summary>Gets or sets the tool at the specified index.</summary>
+        <value>The <see cref="T:System.Activities.Presentation.Toolbox.ToolboxItemWrapper" /> object at the specified <paramref name="index" />..</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> is not valid for the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" /> collection.</exception>
       </Docs>
     </Member>
     <Member MemberName="PropertyChanged">
@@ -129,7 +166,7 @@
         <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when a property value changes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,10 +186,12 @@
         <Parameter Name="tool" Type="System.Activities.Presentation.Toolbox.ToolboxItemWrapper" />
       </Parameters>
       <Docs>
-        <param name="tool">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="tool">The <see cref="T:System.Activities.Presentation.Toolbox.ToolboxItemWrapper" /> item to remove from the collection.</param>
+        <summary>Removes the first occurrence of a specified tool from the toolbox category collection.</summary>
+        <returns>
+          <see langword="true" /> if the tool is successfully removed; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if the tool was not found in the collection.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="tool" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -172,10 +211,18 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the elements copied from the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" /> collection. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
+        <param name="index">The index of the array at which the copying begins.</param>
+        <summary>Copies the entire <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" /> collection to a compatible one-dimensional <see cref="T:System.Array" />, starting at the specified index of the target <see cref="T:System.Array" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The elements are copied to the <xref:System.Array> in the same order in which the enumerator iterates through the <xref:System.Activities.Presentation.Toolbox.ToolboxCategory> collection.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="array" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.Count">
@@ -191,9 +238,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of tools contained in the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" />.</summary>
+        <value>The number of elements contained in the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Activities.Presentation.Toolbox.ToolboxCategory> implements the <xref:System.Collections.ICollection> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -209,9 +263,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether access to the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" /> is synchronized (thread safe).</summary>
+        <value>
+          <see langword="true" /> if access to the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" /> is synchronized (thread safe); otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Activities.Presentation.Toolbox.ToolboxCategory> implements the <xref:System.Collections.ICollection> interface. The <xref:System.Activities.Presentation.Toolbox.ToolboxCategory.System%23Collections%23ICollection%23SyncRoot%2A> property returns an object, which can be used to synchronize access to the <xref:System.Activities.Presentation.Toolbox.ToolboxCategory>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.SyncRoot">
@@ -227,9 +289,16 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets an object that can be used to synchronize access to the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" />.</summary>
+        <value>An object that can be used to synchronize access to the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Activities.Presentation.Toolbox.ToolboxCategory> implements the <xref:System.Collections.ICollection> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -246,9 +315,20 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns an enumerator that iterates through the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" /> collection.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator`1" /> for the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Enumerators can be used to read the data in a collection, but they cannot be used to modify the underlying collection.  
+  
+ Initially, the enumerator is positioned before the first element in the collection. At this position, <xref:System.Collections.Generic.IEnumerator%601.Current> is undefined. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.Generic.IEnumerator%601.Current>. An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is no longer valid and its behavior is undefined.  
+  
+ The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Add">
@@ -267,10 +347,18 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The position into which the new element is inserted.</param>
+        <summary>Adds a tool to the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" />.</summary>
+        <returns>The zero-based index of the tool added to the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Activities.Presentation.Toolbox.ToolboxCategory> implements the <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="value" /> is of a type that is not assignable to the <see cref="T:System.Collections.IList" /> implemented by the collection.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Clear">
@@ -287,8 +375,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Removes all the tools from the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Activities.Presentation.Toolbox.ToolboxCategory> implements the <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Contains">
@@ -307,10 +402,19 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The tool <see cref="T:System.Object" /> to locate in the collection.</param>
+        <summary>Determines whether the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" /> contains a specific tool.</summary>
+        <returns>
+          <see langword="true" /> if the <paramref name="value" /> is found in the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Activities.Presentation.Toolbox.ToolboxCategory> implements the <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IndexOf">
@@ -329,10 +433,18 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The <see cref="T:System.Object" /> to locate in the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" />.</param>
+        <summary>Determines the index of a specific tool in the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" />.</summary>
+        <returns>The zero-based index of <paramref name="value" /> if found in the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" />; otherwise, -1.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Activities.Presentation.Toolbox.ToolboxCategory> implements the <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Insert">
@@ -352,10 +464,24 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index at which <c>value</c> should be inserted.</param>
+        <param name="value">The tool added to the collection.</param>
+        <summary>Inserts a tool into the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" /> at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Activities.Presentation.Toolbox.ToolboxCategory> implements the <xref:System.Collections.IList> interface.  
+  
+ If `index` equals the number of items in the <xref:System.Collections.IList>, then `value` is appended to the end.  
+  
+ In collections of contiguous elements, such as lists, the elements that follow the insertion point move down to accommodate the new element. If the collection is indexed, the indexes of the elements that are moved are also updated.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> is not valid for the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" /> collection.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.NotSupportedException">The <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" /> is read-only, or it has a fixed size that has been exceeded.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsFixedSize">
@@ -371,9 +497,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" /> has a fixed size.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" /> has a fixed size; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Activities.Presentation.Toolbox.ToolboxCategory> implements the <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsReadOnly">
@@ -389,9 +523,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" /> is read-only.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" /> is read-only; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Activities.Presentation.Toolbox.ToolboxCategory> implements the <xref:System.Collections.IList> interface. A collection that is read-only does not allow the addition, removal, or modification of elements after the collection is created.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Item">
@@ -410,10 +552,17 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index of the tool item to get or set.</param>
+        <summary>Gets or sets the tool at the specified index.</summary>
+        <value>The tool<see cref="T:System.Object" /> at the specified index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Activities.Presentation.Toolbox.ToolboxCategory> implements the <xref:System.Collections.IList> interface. This property provides the ability to access a specific element in the collection by using the following syntax: `myCollection[index]`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Remove">
@@ -432,9 +581,18 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="value">The tool <see cref="T:System.Object" /> to remove from the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" />.</param>
+        <summary>Removes the first occurrence of a specific tool from the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Activities.Presentation.Toolbox.ToolboxCategory> implements the <xref:System.Collections.IList> interface.  
+  
+ In collections of contiguous elements, such as lists, the elements that follow the removed element move up to occupy the vacated spot. If the collection is indexed, the indexes of the elements that are moved are also updated.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.RemoveAt">
@@ -453,9 +611,19 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index of the tool item to remove.</param>
+        <summary>Removes the tool at the specified index of the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" /> collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Activities.Presentation.Toolbox.ToolboxCategory> implements the <xref:System.Collections.IList> interface.  
+  
+ In collections of contiguous elements, such as lists, the elements that follow the removed element move up to occupy the vacated spot. If the collection is indexed, the indexes of the elements that are moved are also updated.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> is not valid for the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" /> collection.</exception>
       </Docs>
     </Member>
     <Member MemberName="Tools">
@@ -471,8 +639,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.Activities.Presentation.Toolbox.ToolboxItemWrapper&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the tools in the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" />.</summary>
+        <value>An<see cref="T:System.Collections.Generic.ICollection`1" /> that contains the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

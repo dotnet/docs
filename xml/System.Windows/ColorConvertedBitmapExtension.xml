@@ -16,8 +16,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Implements a markup extension that enables <see cref="T:System.Windows.Media.Imaging.ColorConvertedBitmap" /> creation. A <see cref="T:System.Windows.Media.Imaging.ColorConvertedBitmap" /> does not have an embedded profile, the profile instead being based on source and destination values.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is a markup extension implementation. Markup extension classes exist mainly to provide infrastructure support for some aspect of the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] processor implementation, and the members exposed by a markup extension are not typically called from user code. This extension supports the [ColorConvertedBitmap Markup Extension](../Topic/ColorConvertedBitmap%20Markup%20Extension.md) usage from [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+  
+<a name="xamlTextUsage_ColorConvertedBitmapExtension"></a>   
+## XAML Text Usage  
+ For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [ColorConvertedBitmap Markup Extension](../Topic/ColorConvertedBitmap%20Markup%20Extension.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,8 +42,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.ColorConvertedBitmapExtension" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is not used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -48,8 +66,8 @@
         <Parameter Name="image" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="image">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="image">A string that is parsed to determine three [!INCLUDE[TLA2#tla_uri#plural](~/includes/tla2sharptla-urisharpplural-md.md)]: image source, source color context, and destination color context.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.ColorConvertedBitmapExtension" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,9 +87,9 @@
         <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="serviceProvider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="serviceProvider">An object that can provide services for the markup extension. This service is expected to provide results for <see cref="T:System.Windows.Markup.IUriContext" />.</param>
+        <summary>Returns an object that should be set on the property where this extension is applied. For <see cref="T:System.Windows.ColorConvertedBitmapExtension" />, this is the completed <see cref="T:System.Windows.Media.Imaging.ColorConvertedBitmap" />.</summary>
+        <returns>A <see cref="T:System.Windows.Media.Imaging.ColorConvertedBitmap" /> based on the values passed to the constructor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

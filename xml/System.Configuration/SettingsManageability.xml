@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides values to indicate which services should be made available to application settings.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The ttribute is used to apply individual application settings properties and property groups to indicate that special, predefined services are to be provided for them. The <xref:System.Configuration.SettingsManageability> enumeration lists the services that are available. Most of these services will be provided by the Windows operating system.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Roaming">
@@ -27,7 +34,7 @@
         <ReturnType>System.Configuration.SettingsManageability</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Enables application settings to be stored in roaming user profiles. For more information about roaming user profiles, see [Isolated Storage and Roaming](http://msdn.microsoft.com/en-us/d3cca593-4521-408d-b323-ea398d226de3).</summary>
       </Docs>
     </Member>
   </Members>

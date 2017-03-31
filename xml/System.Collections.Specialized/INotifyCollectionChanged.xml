@@ -23,8 +23,23 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Notifies listeners of dynamic changes, such as when an item is added and removed or the whole list is cleared.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can enumerate over any collection that implements the <xref:System.Collections.IEnumerable> interface. However, to set up dynamic bindings so that insertions or deletions in the collection update the [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] automatically, the collection must implement the <xref:System.Collections.Specialized.INotifyCollectionChanged> interface. This interface exposes the <xref:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged> event that must be raised whenever the underlying collection changes.  
+  
+ [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] provides the <xref:System.Collections.ObjectModel.ObservableCollection%601> class, which is a built-in implementation of a data collection that exposes the <xref:System.Collections.Specialized.INotifyCollectionChanged> interface. For an example, see [How to: Create and Bind to an ObservableCollection](../Topic/How%20to:%20Create%20and%20Bind%20to%20an%20ObservableCollection.md).  
+  
+ The individual data objects within the collection must satisfy the requirements described in the [Binding Sources Overview](../Topic/Binding%20Sources%20Overview.md).  
+  
+ Before implementing your own collection, consider using <xref:System.Collections.ObjectModel.ObservableCollection%601> or one of the existing collection classes, such as <xref:System.Collections.Generic.List%601>, <xref:System.Collections.ObjectModel.Collection%601>, and <xref:System.ComponentModel.BindingList%601>, among many others.  
+  
+ If you have an advanced scenario and want to implement your own collection, consider using <xref:System.Collections.IList>, which provides a non-generic collection of objects that can be individually accessed by index and provides the best performance.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CollectionChanged">
@@ -50,8 +65,15 @@
         <ReturnType>System.Collections.Specialized.NotifyCollectionChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the collection changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The event handler receives an argument of type <xref:System.Collections.Specialized.NotifyCollectionChangedEventArgs>,which contains data that is related to this event.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

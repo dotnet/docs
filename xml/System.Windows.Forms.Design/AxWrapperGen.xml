@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Generates a wrapper for ActiveX controls for use in the design-time environment.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <Parameter Name="axType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="axType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="axType">The type of ActiveX control to generate a wrapper for.</param>
+        <summary>Generates an ActiveX wrapper for design-time hosting of an ActiveX control.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,15 @@
         <ReturnType>System.Collections.ArrayList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>This field initializes a local <see cref="T:System.Collections.ArrayList" /> variable named GeneratedSources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This object contains the paths to each of any sources for ActiveX control wrappers that were generated.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,49 +1,69 @@
 ---
 uid: System.Security.Cryptography.X509Certificates.AuthenticodeSignatureInformation
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.X509Certificates.AuthenticodeSignatureInformation.Description
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.X509Certificates.AuthenticodeSignatureInformation.TrustStatus
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.X509Certificates.AuthenticodeSignatureInformation.Timestamp
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.X509Certificates.AuthenticodeSignatureInformation.VerificationResult
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.X509Certificates.AuthenticodeSignatureInformation.HashAlgorithm
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.X509Certificates.AuthenticodeSignatureInformation.HResult
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.X509Certificates.AuthenticodeSignatureInformation.SignatureChain
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.X509Certificates.AuthenticodeSignatureInformation.DescriptionUrl
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.X509Certificates.AuthenticodeSignatureInformation.SigningCertificate
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

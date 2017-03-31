@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies what should be done when a directory that is to be deleted contains files or directories.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used with the <xref:Microsoft.VisualBasic.MyServices.FileSystemProxy.DeleteDirectory%2A> method.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="DeleteAllContents">
@@ -27,7 +34,7 @@
         <ReturnType>Microsoft.VisualBasic.FileIO.DeleteDirectoryOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Delete the contents of the directory along with the directory. Default.</summary>
       </Docs>
     </Member>
     <Member MemberName="ThrowIfDirectoryNonEmpty">
@@ -43,7 +50,7 @@
         <ReturnType>Microsoft.VisualBasic.FileIO.DeleteDirectoryOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Throw an <see cref="T:System.IO.IOException" /> if the directory is not empty. The <see langword="Data" /> property of the exception lists the file(s) that could not be deleted.</summary>
       </Docs>
     </Member>
   </Members>

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines the application service descriptor and its endpoints.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes an instance of the <see cref="T:System.IdentityModel.Metadata.ApplicationServiceDescriptor" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.IdentityModel.Protocols.WSTrust.EndpointReference&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the endpoints of this application service.</summary>
+        <value>The collection of endpoints for the application service.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +61,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.IdentityModel.Protocols.WSTrust.EndpointReference&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the passive requestor endpoints of this application service.</summary>
+        <value>The collection of passive requestor endpoints for the application service.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

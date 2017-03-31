@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>A class that represents the types of serializers available.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.ServiceModel.Activities.SerializerOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the <see cref="T:System.Runtime.Serialization.DataContractSerializer" /> should be used when serializing.</summary>
       </Docs>
     </Member>
     <Member MemberName="XmlSerializer">
@@ -43,7 +43,7 @@
         <ReturnType>System.ServiceModel.Activities.SerializerOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the <see cref="T:System.Xml.Serialization.XmlSerializer" /> should be used when serializing.</summary>
       </Docs>
     </Member>
   </Members>

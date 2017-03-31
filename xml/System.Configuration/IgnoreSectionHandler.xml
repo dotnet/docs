@@ -15,8 +15,19 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a legacy section-handler definition for configuration sections that are not handled by the <see cref="N:System.Configuration" /> types.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The configuration system completely parses configuration files to collect configuration information and throws exceptions when it encounters configuration sections that do not have a corresponding entry in the `configSections` section.  
+  
+ For those sections not handled by the <xref:System.Configuration> types, the new wrapper type <xref:System.Configuration.IgnoreSection> is provided. This is to prevent configuration-file parsing exceptions.  
+  
+ For legacy purposes the <xref:System.Configuration.IgnoreSectionHandler> is also provided.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +41,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.IgnoreSectionHandler" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,11 +63,11 @@
         <Parameter Name="section" Type="System.Xml.XmlNode" />
       </Parameters>
       <Docs>
-        <param name="parent">To be added.</param>
-        <param name="configContext">To be added.</param>
-        <param name="section">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="parent">The configuration settings in a corresponding parent configuration section.</param>
+        <param name="configContext">The virtual path for which the configuration section handler computes configuration values. Normally this parameter is reserved and is <see langword="null" />.</param>
+        <param name="section">An <see cref="T:System.Xml.XmlNode" /> that contains the configuration information to be handled. Provides direct access to the XML contents of the configuration section.</param>
+        <summary>Creates a new configuration handler and adds the specified configuration object to the section-handler collection.</summary>
+        <returns>The created configuration handler object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -13,8 +13,55 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Used to modify or extend the execution behavior of a specific contract operation in a client object or client channel object. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Dispatcher.ClientOperation> class is the location for client run-time modifications and insertion point for custom extensions that are scoped to only one service operation. (To modify client run-time behavior for all messages in a contract, use the <xref:System.ServiceModel.Dispatcher.ClientRuntime> class. )  
+  
+ Install <xref:System.ServiceModel.Dispatcher.ClientOperation> modifications using a custom client behavior object, either of type <xref:System.ServiceModel.Description.IContractBehavior> (to find a particular operation to modify) or of type <xref:System.ServiceModel.Description.IOperationBehavior> (which can then be applied by creating a custom attribute).  
+  
+ Use the <xref:System.ServiceModel.Dispatcher.ClientRuntime.Operations%2A> property to locate the <xref:System.ServiceModel.Dispatcher.ClientOperation> object that represents a particular service operation.  
+  
+ For more information about clients and the client architecture, see [Accessing Services Using a WCF Client](../Topic/Accessing%20Services%20Using%20a%20Client.md) and [WCF Client Architecture](../Topic/Client%20Architecture.md). For more information about customizing the client runtime, see [Extending Clients](../Topic/Extending%20Clients.md). For more information about using behaviors, see [Configuring and Extending the Runtime with Behaviors](../Topic/Configuring%20and%20Extending%20the%20Runtime%20with%20Behaviors.md).  
+  
+ The following properties enable you to insert custom objects or modify the client execution behavior:  
+  
+-   Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.Formatter%2A> property to insert a custom <xref:System.ServiceModel.Dispatcher.IClientMessageFormatter> implementation for an operation or modify the current formatter.  
+  
+-   Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.ParameterInspectors%2A> property to insert a custom <xref:System.ServiceModel.Dispatcher.IParameterInspector> implementation or to modify the current one.  
+  
+-   Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.SerializeRequest%2A> property to control who serializes an outbound message.  
+  
+-   Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.DeserializeReply%2A> property to control who deserializes an inbound message.  
+  
+-   Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.Action%2A> property to access the WS-Addressing action of the request message and the <xref:System.ServiceModel.Dispatcher.ClientOperation.ReplyAction%2A> property to access the response message action.  
+  
+-   Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.BeginMethod%2A> and <xref:System.ServiceModel.Dispatcher.ClientOperation.EndMethod%2A> to specify which client methods are associated with an asynchronous operation.  
+  
+-   Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.FaultContractInfos%2A> property to get a collection of specified types that can appear in SOAP faults as the detail type.  
+  
+-   Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.IsInitiating%2A> and <xref:System.ServiceModel.Dispatcher.ClientOperation.IsTerminating%2A> properties to control whether a session is initiated or is torn down, respectively, when the operation is called.  
+  
+-   Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.IsOneWay%2A> property to control whether the client waits for a response before completing the invocation.  
+  
+-   Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.Parent%2A> property to obtain the containing <xref:System.ServiceModel.Dispatcher.ClientRuntime> object.  
+  
+-   Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.Name%2A> property to get the name of the operation.  
+  
+-   Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.SyncMethod%2A> property to control which method is mapped to the operation.  
+  
+   
+  
+## Examples  
+ The following code example shows an <xref:System.ServiceModel.Description.IEndpointBehavior?displayProperty=fullName> inserting a custom parameter inspector into each <xref:System.ServiceModel.Dispatcher.ClientOperation> in the <xref:System.ServiceModel.Dispatcher.ClientRuntime.Operations%2A?displayProperty=fullName> property.  
+  
+ [!code-csharp[Interceptors#2](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/insertingbehaviors.cs#2)]
+ [!code-vb[Interceptors#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/insertingbehaviors.vb#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,10 +80,10 @@
         <Parameter Name="action" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="parent">To be added.</param>
-        <param name="name">To be added.</param>
-        <param name="action">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="parent">The containing <see cref="T:System.ServiceModel.Dispatcher.ClientRuntime" /> object.</param>
+        <param name="name">The name of the operation.</param>
+        <param name="action">The action of the operation.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.ClientOperation" /> class using the specified <see cref="T:System.ServiceModel.Dispatcher.ClientRuntime" />, name, and action values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,11 +104,11 @@
         <Parameter Name="replyAction" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="parent">To be added.</param>
-        <param name="name">To be added.</param>
-        <param name="action">To be added.</param>
-        <param name="replyAction">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="parent">The containing <see cref="T:System.ServiceModel.Dispatcher.ClientRuntime" /> object.</param>
+        <param name="name">The name of the operation.</param>
+        <param name="action">The action of the operation.</param>
+        <param name="replyAction">The action of the reply message.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.ClientOperation" /> class using the specified <see cref="T:System.ServiceModel.Dispatcher.ClientRuntime" />, name, action, and reply action values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,9 +126,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the action of the operation.</summary>
+        <value>The action of the operation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default this value corresponds to the value of <xref:System.ServiceModel.OperationContractAttribute.Action%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginMethod">
@@ -98,8 +152,8 @@
         <ReturnType>System.Reflection.MethodInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the method associated with an asynchronous operation.</summary>
+        <value>A <see cref="T:System.Reflection.MethodInfo" /> object that represents the method handling the begin portion of an asynchronous method pair, or <see langword="null" /> if the operation is not part of an asynchronous method pair.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,9 +171,16 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.ServiceModel.Dispatcher.IParameterInspector&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of parameter inspector objects used to view or modify parameters prior to or subsequent to a client call.</summary>
+        <value>A collection of parameter inspector objects used to view or modify parameters prior to or subsequent to a client call.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ClientParameterInspectors is a thread-safe collection.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DeserializeReply">
@@ -136,9 +197,19 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether the <see cref="P:System.ServiceModel.Dispatcher.ClientOperation.Formatter" /> property value is used to deserialize the reply message.</summary>
+        <value>
+          <see langword="true " />if the return type is not a <see cref="T:System.ServiceModel.Channels.Message" />; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.DeserializeReply%2A> property to control whether the formatter deserializes the return value from an inbound message or whether the inbound message is returned directly as the return value.  
+  
+-   **Note** If `false`, the return type must be of type <xref:System.ServiceModel.Channels.Message> and there can be no out parameters or an <xref:System.InvalidCastException> is thrown at run-time. If the message is `null`, a <xref:System.InvalidOperationException> is thrown at run-time.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EndMethod">
@@ -155,8 +226,8 @@
         <ReturnType>System.Reflection.MethodInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the method that implements the asynchronous end method for the operation.</summary>
+        <value>A <see cref="T:System.Reflection.MethodInfo" /> that represents the end method for the operation, or <see langword="null" /> if the operation is not asynchronous.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -174,9 +245,16 @@
         <ReturnType>System.Collections.Generic.SynchronizedCollection&lt;System.ServiceModel.Dispatcher.FaultContractInfo&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of <see cref="T:System.ServiceModel.Dispatcher.FaultContractInfo" /> objects that represent the specified SOAP faults for this operation.</summary>
+        <value>A collection of SOAP faults specified for this operation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.FaultContractInfos%2A> property to get a collection of all contractually specified SOAP faults.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Formatter">
@@ -193,9 +271,18 @@
         <ReturnType>System.ServiceModel.Dispatcher.IClientMessageFormatter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the formatter that serializes objects into messages and deserializes messages into objects.</summary>
+        <value>An <see cref="T:System.ServiceModel.Dispatcher.IClientMessageFormatter" /> implementation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.Formatter%2A> property to insert a custom <xref:System.ServiceModel.Dispatcher.IClientMessageFormatter> implementation for an operation or modify the current formatter. The use of the formatter can be controlled by the <xref:System.ServiceModel.Dispatcher.ClientOperation.SerializeRequest%2A> and <xref:System.ServiceModel.Dispatcher.ClientOperation.DeserializeReply%2A> properties.  
+  
+ The <xref:System.ServiceModel.Dispatcher.IClientMessageFormatter> interface defines the  <xref:System.ServiceModel.Dispatcher.IClientMessageFormatter.SerializeRequest%2A> and <xref:System.ServiceModel.Dispatcher.IClientMessageFormatter.DeserializeReply%2A> methods, which are used to convert a set of object parameters to a message and from a message to a set of return values, respectively.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsInitiating">
@@ -212,9 +299,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether a session can be started by a message to this operation.</summary>
+        <value>
+          <see langword="true" /> if a message to this operation can initiate a session; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default this value corresponds to the value of <xref:System.ServiceModel.OperationContractAttribute.IsInitiating%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsOneWay">
@@ -231,9 +326,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates if the operation is a one-way operation.</summary>
+        <value>
+          <see langword="true" /> if the indigo2 client should not expect a reply; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default this value corresponds to the value of <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A?displayProperty=fullName>. For issues related to one-way operations, see [One-Way Services](../Topic/One-Way%20Services.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsTerminating">
@@ -250,9 +353,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates if this operation is the last one in a session.</summary>
+        <value>
+          <see langword="true" /> if the associated session is closed after the operation is invoked; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default this value corresponds to the value of <xref:System.ServiceModel.OperationContractAttribute.IsTerminating%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -269,9 +380,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the name of the operation.</summary>
+        <value>The name of the operation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default this value corresponds to the value of <xref:System.ServiceModel.OperationContractAttribute.Name%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ParameterInspectors">
@@ -288,9 +406,24 @@
         <ReturnType>System.Collections.Generic.SynchronizedCollection&lt;System.ServiceModel.Dispatcher.IParameterInspector&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a collection of <see cref="T:System.ServiceModel.Dispatcher.IParameterInspector" /> objects that can inspect and modify inbound and outbound objects for a particular client method.</summary>
+        <value>A collection of <see cref="T:System.ServiceModel.Dispatcher.IParameterInspector" /> implementations.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.ParameterInspectors%2A> property to insert a custom <xref:System.ServiceModel.Dispatcher.IParameterInspector> implementation or to modify the current one. Parameter inspectors are invoked in the order in which they are added to the collection for requests and in the reverse order for replies.  
+  
+   
+  
+## Examples  
+ The following code example shows an <xref:System.ServiceModel.Description.IEndpointBehavior?displayProperty=fullName> inserting a custom parameter inspector into each <xref:System.ServiceModel.Dispatcher.ClientOperation> in the <xref:System.ServiceModel.Dispatcher.ClientRuntime.Operations%2A?displayProperty=fullName> property.  
+  
+ [!code-csharp[Interceptors#2](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/insertingbehaviors.cs#2)]
+ [!code-vb[Interceptors#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/insertingbehaviors.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -307,8 +440,8 @@
         <ReturnType>System.ServiceModel.Dispatcher.ClientRuntime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the containing <see cref="T:System.ServiceModel.Dispatcher.ClientRuntime" /> object.</summary>
+        <value>The containing <see cref="T:System.ServiceModel.Dispatcher.ClientRuntime" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -326,9 +459,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the action of the reply message for this operation.</summary>
+        <value>The action of the reply.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default this value corresponds to the value of <xref:System.ServiceModel.OperationContractAttribute.ReplyAction%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SerializeRequest">
@@ -345,9 +485,20 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that specifies whether the <see cref="P:System.ServiceModel.Dispatcher.ClientOperation.Formatter" /> object serializes an outbound message.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="P:System.ServiceModel.Dispatcher.ClientOperation.Formatter" /> property serializes the return values into a reply message; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.SerializeRequest%2A> property to indicate whether the formatter serializes operation parameters into a reply message or to determine if the first parameter is sent as the outbound message.  
+  
+> [!NOTE]
+>  If set to `false`, the operation must have exactly one parameter of type <xref:System.ServiceModel.Channels.Message> or an exception is thrown.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SyncMethod">
@@ -364,8 +515,8 @@
         <ReturnType>System.Reflection.MethodInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the method that is associated with this operation.</summary>
+        <value>A <see cref="T:System.Reflection.MethodInfo" /> that represents the method that implements the operation. If the operation is asynchronous, this value is <see langword="null" /> and the implementing methods are stored in the <see cref="P:System.ServiceModel.Dispatcher.ClientOperation.BeginMethod" /> and <see cref="P:System.ServiceModel.Dispatcher.ClientOperation.EndMethod" /> properties.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -383,8 +534,8 @@
         <ReturnType>System.Reflection.MethodInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the method associated with a task.</summary>
+        <value>A <see cref="T:System.Reflection.MethodInfo" /> object that represents the method associated with a task.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -402,8 +553,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the type of the result of the method that is associated with a task.</summary>
+        <value>The <see cref="T:System.Type" /> of the result of the method that is associated with a task.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

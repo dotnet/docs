@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Indicates how frequently the memory monitor perceives we are asking listeners to react to the approaching memory threshold.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Web.Hosting.RecycleLimitNotificationFrequency</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>High frequency of reaction to approaching memory threshold.</summary>
       </Docs>
     </Member>
     <Member MemberName="Low">
@@ -43,7 +43,7 @@
         <ReturnType>System.Web.Hosting.RecycleLimitNotificationFrequency</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Low frequency of reaction to approaching memory threshold.</summary>
       </Docs>
     </Member>
     <Member MemberName="Medium">
@@ -59,7 +59,7 @@
         <ReturnType>System.Web.Hosting.RecycleLimitNotificationFrequency</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Medium frequency of reaction to approaching memory threshold.</summary>
       </Docs>
     </Member>
   </Members>

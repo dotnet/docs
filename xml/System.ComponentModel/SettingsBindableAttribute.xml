@@ -21,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies when a component property can be bound to an application setting.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -43,8 +43,9 @@
         <Parameter Name="bindable" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="bindable">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="bindable">
+          <see langword="true" /> to specify that a property is appropriate to bind settings to; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.SettingsBindableAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,8 +67,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether a property is appropriate to bind settings to.</summary>
+        <value>
+          <see langword="true" /> if the property is appropriate to bind settings to; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,9 +94,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">An <see cref="T:System.Object" /> to compare with this instance or a null reference (<see langword="Nothing" /> in Visual Basic).</param>
+        <summary>Returns a value that indicates whether this instance is equal to a specified object.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="obj" /> equals the type and value of this instance; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,8 +120,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code for this instance.</summary>
+        <returns>A 32-bit signed integer hash code.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,7 +143,7 @@
         <ReturnType>System.ComponentModel.SettingsBindableAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that a property is not appropriate to bind settings to.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,7 +165,7 @@
         <ReturnType>System.ComponentModel.SettingsBindableAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that a property is appropriate to bind settings to.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

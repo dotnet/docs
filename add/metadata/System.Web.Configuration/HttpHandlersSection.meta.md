@@ -1,14 +1,17 @@
 ---
 uid: System.Web.Configuration.HttpHandlersSection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.HttpHandlersSection.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.HttpHandlersSection.Handlers
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

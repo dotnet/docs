@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Forms.TextImageRelation
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

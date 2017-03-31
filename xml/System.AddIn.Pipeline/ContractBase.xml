@@ -18,8 +18,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a default implementation of <see cref="T:System.AddIn.Contract.IContract" /> members.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Contracts define the types and methods used by the host and the add-in. All contracts must derive from <xref:System.AddIn.Contract.IContract>. This class provides the default implementation of <xref:System.AddIn.Contract.IContract> members.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,7 +40,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Pipeline.ContractBase" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,9 +58,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Obtains a lifetime token.</summary>
+        <returns>A random number that identifies a token.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">All previously acquired tokens have been revoked.  No further tokens are available.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetRemoteHashCode">
@@ -70,8 +78,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the hash code for the current <see cref="T:System.AddIn.Pipeline.ContractBase" /> object.</summary>
+        <returns>A hash code for the current <see cref="T:System.AddIn.Pipeline.ContractBase" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,8 +97,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>When overridden in an add-in-side adapter, releases native resources held by the adapter.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the system when all the lifetime tokens that have been acquired from the current <xref:System.AddIn.Pipeline.ContractBase> instance have been revoked. Use this method to clean up any native resources held by the adapter, and to signal to the adapted views that they should do the same.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="QueryContract">
@@ -109,10 +124,19 @@
         <Parameter Name="contractIdentifier" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="contractIdentifier">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="contractIdentifier">The full name of the contract, including its assembly name.</param>
+        <summary>Reflects over the instance of a contract and returns the <see langword="this" /> pointer if the current object implements that contract.</summary>
+        <returns>The <see langword="this" /> pointer to an <see cref="T:System.AddIn.Contract.IContract" /> interface, or <see langword="null" /> if the contract is not implemented.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be overridden.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="contractIdentifier" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="RemoteEquals">
@@ -131,9 +155,10 @@
         <Parameter Name="contract" Type="System.AddIn.Contract.IContract" />
       </Parameters>
       <Docs>
-        <param name="contract">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="contract">The object to test for equality with the remote object.</param>
+        <summary>Compares an object with a remote object for equality.</summary>
+        <returns>
+          <see langword="true" /> if the object is equal to the remote object; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,8 +176,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets a string that identifies a remote object.</summary>
+        <returns>A string that identifies the remote object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -177,10 +202,13 @@
         <Parameter Name="lease" Type="System.Runtime.Remoting.Lifetime.ILease" />
       </Parameters>
       <Docs>
-        <param name="lease">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="lease">The lifetime lease object that is used by the remoting lifetime service.</param>
+        <summary>Requests a sponsoring client to renew the lease for the specified object.</summary>
+        <returns>The renewed lease.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="lease" /> is <see langword="null" />.</exception>
+        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
       </Docs>
     </Member>
     <Member MemberName="RevokeLifetimeToken">
@@ -204,9 +232,18 @@
         <Parameter Name="token" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="token">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="token">The token number.</param>
+        <summary>Removes the specified token from the list of outstanding lifetime tokens.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the token is not in the list of outstanding lifetime tokens, this method throws an <xref:System.InvalidOperationException>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="token" /> is not found in the list of outstanding lifetime tokens.</exception>
       </Docs>
     </Member>
   </Members>

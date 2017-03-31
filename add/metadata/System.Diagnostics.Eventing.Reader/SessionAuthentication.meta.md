@@ -1,4 +1,5 @@
 ---
 uid: System.Diagnostics.Eventing.Reader.SessionAuthentication
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---

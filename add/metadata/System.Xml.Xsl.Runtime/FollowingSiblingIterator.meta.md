@@ -1,19 +1,27 @@
 ---
 uid: System.Xml.Xsl.Runtime.FollowingSiblingIterator
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Xsl.Runtime.FollowingSiblingIterator.Create(System.Xml.XPath.XPathNavigator,System.Xml.Xsl.Runtime.XmlNavigatorFilter)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Xsl.Runtime.FollowingSiblingIterator.Current
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Xsl.Runtime.FollowingSiblingIterator.MoveNext
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

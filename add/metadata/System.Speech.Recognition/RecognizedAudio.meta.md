@@ -1,39 +1,47 @@
 ---
 uid: System.Speech.Recognition.RecognizedAudio
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.RecognizedAudio.GetRange(System.TimeSpan,System.TimeSpan)
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.RecognizedAudio.Duration
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.RecognizedAudio.StartTime
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.RecognizedAudio.Format
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.RecognizedAudio.WriteToAudioStream(System.IO.Stream)
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.RecognizedAudio.AudioPosition
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.RecognizedAudio.WriteToWaveStream(System.IO.Stream)
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

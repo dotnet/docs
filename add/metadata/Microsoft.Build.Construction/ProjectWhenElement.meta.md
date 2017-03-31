@@ -1,19 +1,23 @@
 ---
 uid: Microsoft.Build.Construction.ProjectWhenElement
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.ProjectWhenElement.PropertyGroups
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.ProjectWhenElement.ItemGroups
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.ProjectWhenElement.ChooseElements
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

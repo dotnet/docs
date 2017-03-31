@@ -1,54 +1,64 @@
 ---
 uid: System.Windows.Xps.VisualsToXpsDocument
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.VisualsToXpsDocument.WriteAsync(System.Windows.Media.Visual)
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.VisualsToXpsDocument.Cancel
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.VisualsToXpsDocument.EndBatchWrite
-internalonly: False
+manager: "leannef"
+---
+
+---
+uid: System.Windows.Xps.VisualsToXpsDocument.WriteAsync
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.VisualsToXpsDocument.Write(System.Windows.Media.Visual)
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.VisualsToXpsDocument.WriteAsync(System.Windows.Media.Visual,System.Printing.PrintTicket)
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.VisualsToXpsDocument.CancelAsync
-internalonly: False
+manager: "leannef"
+---
+
+---
+uid: System.Windows.Xps.VisualsToXpsDocument.Write
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.VisualsToXpsDocument.WriteAsync(System.Windows.Media.Visual,System.Printing.PrintTicket,System.Object)
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.VisualsToXpsDocument.BeginBatchWrite
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.VisualsToXpsDocument.WriteAsync(System.Windows.Media.Visual,System.Object)
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.VisualsToXpsDocument.Write(System.Windows.Media.Visual,System.Printing.PrintTicket)
-internalonly: False
+manager: "leannef"
 ---

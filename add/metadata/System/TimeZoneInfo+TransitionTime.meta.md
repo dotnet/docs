@@ -1,79 +1,118 @@
 ---
 uid: System.TimeZoneInfo.TransitionTime
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeZoneInfo.TransitionTime.GetHashCode
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.TimeZoneInfo.TransitionTime.Equals
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeZoneInfo.TransitionTime.DayOfWeek
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeZoneInfo.TransitionTime.CreateFixedDateRule(System.DateTime,System.Int32,System.Int32)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeZoneInfo.TransitionTime.Day
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeZoneInfo.TransitionTime.op_Equality(System.TimeZoneInfo.TransitionTime,System.TimeZoneInfo.TransitionTime)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeZoneInfo.TransitionTime.Week
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeZoneInfo.TransitionTime.CreateFloatingDateRule(System.DateTime,System.Int32,System.Int32,System.DayOfWeek)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeZoneInfo.TransitionTime.System#Runtime#Serialization#IDeserializationCallback#OnDeserialization(System.Object)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeZoneInfo.TransitionTime.op_Inequality(System.TimeZoneInfo.TransitionTime,System.TimeZoneInfo.TransitionTime)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeZoneInfo.TransitionTime.TimeOfDay
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeZoneInfo.TransitionTime.Equals(System.Object)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeZoneInfo.TransitionTime.Month
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeZoneInfo.TransitionTime.IsFixedDateRule
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeZoneInfo.TransitionTime.Equals(System.TimeZoneInfo.TransitionTime)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.TimeZoneInfo.TransitionTime.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

@@ -1,1 +1,0 @@
-            Dim be As New BinaryMessageEncodingBindingElement()

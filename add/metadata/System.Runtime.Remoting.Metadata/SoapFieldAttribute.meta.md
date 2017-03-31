@@ -1,24 +1,34 @@
 ---
 uid: System.Runtime.Remoting.Metadata.SoapFieldAttribute
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.Remoting.Metadata.SoapFieldAttribute.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.Remoting.Metadata.SoapFieldAttribute.XmlElementName
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.Remoting.Metadata.SoapFieldAttribute.Order
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.Remoting.Metadata.SoapFieldAttribute.IsInteropXmlElement
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

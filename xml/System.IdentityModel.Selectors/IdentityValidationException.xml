@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Exception class to indicate that the recipient certificate was not valid.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Selectors.IdentityValidationException" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">A string that contains the error message that explains the reason for the exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Selectors.IdentityValidationException" /> class with the specified error message.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,9 +62,10 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">
+          <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception that is being thrown.</param>
+        <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Selectors.IdentityValidationException" /> class using the specified serialization information and serialization context.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,9 +83,9 @@
         <Parameter Name="innerException" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="innerException">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">A string that contains the error message that explains the reason for the exception.</param>
+        <param name="innerException">The original exception that caused this exception to be thrown.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Selectors.IdentityValidationException" /> class with the specified error message and the original exception that caused this exception to be thrown.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,1 +1,0 @@
-        Dim xmlTreeDescription As String = xmlElement.Text

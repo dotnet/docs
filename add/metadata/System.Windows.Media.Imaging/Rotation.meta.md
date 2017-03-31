@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Media.Imaging.Rotation
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

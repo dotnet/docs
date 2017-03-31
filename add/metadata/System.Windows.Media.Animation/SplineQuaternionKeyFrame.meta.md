@@ -1,54 +1,80 @@
 ---
 uid: System.Windows.Media.Animation.SplineQuaternionKeyFrame
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SplineQuaternionKeyFrame.KeySplineProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SplineQuaternionKeyFrame.#ctor
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SplineQuaternionKeyFrame.CreateInstanceCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SplineQuaternionKeyFrame.UseShortestPath
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SplineQuaternionKeyFrame.UseShortestPathProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SplineQuaternionKeyFrame.#ctor(System.Windows.Media.Media3D.Quaternion,System.Windows.Media.Animation.KeyTime)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SplineQuaternionKeyFrame.#ctor(System.Windows.Media.Media3D.Quaternion,System.Windows.Media.Animation.KeyTime,System.Windows.Media.Animation.KeySpline)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SplineQuaternionKeyFrame.KeySpline
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SplineQuaternionKeyFrame.InterpolateValueCore(System.Windows.Media.Media3D.Quaternion,System.Double)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.Animation.SplineQuaternionKeyFrame.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SplineQuaternionKeyFrame.#ctor(System.Windows.Media.Media3D.Quaternion)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

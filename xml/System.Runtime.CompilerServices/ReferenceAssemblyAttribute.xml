@@ -28,8 +28,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Identifies an assembly as a reference assembly, which contains metadata but no executable code.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A reference assembly contains public surface area but no usable implementation. Reference assemblies can be loaded for introspection, but not for execution.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,7 +62,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.CompilerServices.ReferenceAssemblyAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,8 +91,8 @@
         <Parameter Name="description" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="description">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="description">The description of the reference assembly.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.CompilerServices.ReferenceAssemblyAttribute" /> class by using the specified description.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,8 +121,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the description of the reference assembly.</summary>
+        <value>The description of the reference assembly.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,34 +1,61 @@
 ---
 uid: System.Windows.Forms.Design.ImageListImageEditor
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.Design.ImageListImageEditor.EditValue
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.Design.ImageListImageEditor.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.Design.ImageListImageEditor.GetPaintValueSupported
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.Design.ImageListImageEditor.GetPaintValueSupported(System.ComponentModel.ITypeDescriptorContext)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.ImageListImageEditor.PaintValue(System.Drawing.Design.PaintValueEventArgs)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.Design.ImageListImageEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.ImageListImageEditor.GetFileDialogDescription
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.Design.ImageListImageEditor.PaintValue
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.Design.ImageListImageEditor.GetImageExtenders
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

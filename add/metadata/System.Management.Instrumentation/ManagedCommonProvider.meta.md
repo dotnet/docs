@@ -1,9 +1,9 @@
 ---
 uid: System.Management.Instrumentation.ManagedCommonProvider
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.ManagedCommonProvider.#ctor
-internalonly: False
+manager: "jillfra"
 ---

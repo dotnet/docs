@@ -1,4 +1,6 @@
 ---
 uid: System.Collections.Specialized.NotifyCollectionChangedAction
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -28,7 +28,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The base class for a collection of parameters relevant to a <see cref="T:System.Data.Common.DbCommand" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -52,7 +52,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Common.DbParameterCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,9 +81,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="P:System.Data.Common.DbParameter.Value" /> of the <see cref="T:System.Data.Common.DbParameter" /> to add to the collection.</param>
+        <summary>Adds the specified <see cref="T:System.Data.Common.DbParameter" /> object to the <see cref="T:System.Data.Common.DbParameterCollection" />.</summary>
+        <returns>The index of the <see cref="T:System.Data.Common.DbParameter" /> object in the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,8 +112,8 @@
         <Parameter Name="values" Type="System.Array" />
       </Parameters>
       <Docs>
-        <param name="values">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="values">An array of values of type <see cref="T:System.Data.Common.DbParameter" /> to add to the collection.</param>
+        <summary>Adds an array of items with the specified values to the <see cref="T:System.Data.Common.DbParameterCollection" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,7 +140,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes all <see cref="T:System.Data.Common.DbParameter" /> values from the <see cref="T:System.Data.Common.DbParameterCollection" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -169,9 +169,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="P:System.Data.Common.DbParameter.Value" /> of the <see cref="T:System.Data.Common.DbParameter" /> to look for in the collection.</param>
+        <summary>Indicates whether a <see cref="T:System.Data.Common.DbParameter" /> with the specified <see cref="P:System.Data.Common.DbParameter.Value" /> is contained in the collection.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Data.Common.DbParameter" /> is in the collection; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -200,9 +201,10 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The name of the <see cref="T:System.Data.Common.DbParameter" /> to look for in the collection.</param>
+        <summary>Indicates whether a <see cref="T:System.Data.Common.DbParameter" /> with the specified name exists in the collection.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Data.Common.DbParameter" /> is in the collection; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -232,9 +234,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">The array of items to copy to the collection.</param>
+        <param name="index">The index in the collection to copy the items.</param>
+        <summary>Copies an array of items to the collection starting at the specified index.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -268,8 +270,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Specifies the number of items in the collection.</summary>
+        <value>The number of items in the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -301,8 +303,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Exposes the <see cref="M:System.Collections.IEnumerable.GetEnumerator" /> method, which supports a simple iteration over a collection by a .NET Framework data provider.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> that can be used to iterate through the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -331,9 +333,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="index">The index of the <see cref="T:System.Data.Common.DbParameter" /> in the collection.</param>
+        <summary>Returns the <see cref="T:System.Data.Common.DbParameter" /> object at the specified index in the collection.</summary>
+        <returns>The <see cref="T:System.Data.Common.DbParameter" /> object at the specified index in the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -362,9 +364,9 @@
         <Parameter Name="parameterName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="parameterName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="parameterName">The name of the <see cref="T:System.Data.Common.DbParameter" /> in the collection.</param>
+        <summary>Returns <see cref="T:System.Data.Common.DbParameter" /> the object with the specified name.</summary>
+        <returns>The <see cref="T:System.Data.Common.DbParameter" /> the object with the specified name.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -393,9 +395,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.Data.Common.DbParameter" /> object in the collection.</param>
+        <summary>Returns the index of the specified <see cref="T:System.Data.Common.DbParameter" /> object.</summary>
+        <returns>The index of the specified <see cref="T:System.Data.Common.DbParameter" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -424,9 +426,9 @@
         <Parameter Name="parameterName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="parameterName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="parameterName">The name of the <see cref="T:System.Data.Common.DbParameter" /> object in the collection.</param>
+        <summary>Returns the index of the <see cref="T:System.Data.Common.DbParameter" /> object with the specified name.</summary>
+        <returns>The index of the <see cref="T:System.Data.Common.DbParameter" /> object with the specified name.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -456,9 +458,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The index at which to insert the <see cref="T:System.Data.Common.DbParameter" /> object.</param>
+        <param name="value">The <see cref="T:System.Data.Common.DbParameter" /> object to insert into the collection.</param>
+        <summary>Inserts the specified index of the <see cref="T:System.Data.Common.DbParameter" /> object with the specified name into the collection at the specified index.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -491,8 +493,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Specifies whether the collection is a fixed size.</summary>
+        <value>
+          <see langword="true" /> if the collection is a fixed size; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -525,8 +528,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Specifies whether the collection is read-only.</summary>
+        <value>
+          <see langword="true" /> if the collection is read-only; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -559,8 +563,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Specifies whether the collection is synchronized.</summary>
+        <value>
+          <see langword="true" /> if the collection is synchronized; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -589,10 +594,11 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The zero-based index of the parameter.</param>
+        <summary>Gets and sets the <see cref="T:System.Data.Common.DbParameter" /> at the specified index.</summary>
+        <value>The <see cref="T:System.Data.Common.DbParameter" /> at the specified index.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.IndexOutOfRangeException">The specified index does not exist.</exception>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -620,10 +626,11 @@
         <Parameter Name="parameterName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="parameterName">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="parameterName">The name of the parameter.</param>
+        <summary>Gets and sets the <see cref="T:System.Data.Common.DbParameter" /> with the specified name.</summary>
+        <value>The <see cref="T:System.Data.Common.DbParameter" /> with the specified name.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.IndexOutOfRangeException">The specified index does not exist.</exception>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -651,8 +658,8 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The <see cref="T:System.Data.Common.DbParameter" /> object to remove.</param>
+        <summary>Removes the specified <see cref="T:System.Data.Common.DbParameter" /> object from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -681,8 +688,8 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The index where the <see cref="T:System.Data.Common.DbParameter" /> object is located.</param>
+        <summary>Removes the <see cref="T:System.Data.Common.DbParameter" /> object at the specified from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -711,8 +718,8 @@
         <Parameter Name="parameterName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="parameterName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="parameterName">The name of the <see cref="T:System.Data.Common.DbParameter" /> object to remove.</param>
+        <summary>Removes the <see cref="T:System.Data.Common.DbParameter" /> object with the specified name from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -742,9 +749,9 @@
         <Parameter Name="value" Type="System.Data.Common.DbParameter" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The index where the <see cref="T:System.Data.Common.DbParameter" /> object is located.</param>
+        <param name="value">The new <see cref="T:System.Data.Common.DbParameter" /> value.</param>
+        <summary>Sets the <see cref="T:System.Data.Common.DbParameter" /> object at the specified index to a new value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -774,9 +781,9 @@
         <Parameter Name="value" Type="System.Data.Common.DbParameter" />
       </Parameters>
       <Docs>
-        <param name="parameterName">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="parameterName">The name of the <see cref="T:System.Data.Common.DbParameter" /> object in the collection.</param>
+        <param name="value">The new <see cref="T:System.Data.Common.DbParameter" /> value.</param>
+        <summary>Sets the <see cref="T:System.Data.Common.DbParameter" /> object with the specified name to a new value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -813,8 +820,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Specifies the <see cref="T:System.Object" /> to be used to synchronize access to the collection.</summary>
+        <value>A <see cref="T:System.Object" /> to be used to synchronize access to the <see cref="T:System.Data.Common.DbParameterCollection" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -897,10 +904,19 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index of the element to get or set.</param>
+        <summary>Gets or sets the element at the specified index.</summary>
+        <value>The element at the specified index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Common.DbParameterCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ For more information, see <xref:System.Collections.IList.Item%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Data.IDataParameterCollection.Item">
@@ -928,10 +944,19 @@
         <Parameter Name="parameterName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="parameterName">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="parameterName">The name of the parameter to retrieve.</param>
+        <summary>Gets or sets the parameter at the specified index.</summary>
+        <value>An <see cref="T:System.Object" /> at the specified index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Common.DbParameterCollection> instance is cast to an <xref:System.Data.IDataParameterCollection> interface.  
+  
+ For more information, see <xref:System.Data.IDataParameterCollection.Item%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

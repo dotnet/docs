@@ -21,8 +21,43 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a Windows menu or toolbar command item.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.MenuCommand> class represents information about a Windows menu or toolbar command. The <xref:System.ComponentModel.Design.IMenuCommandService> interface allows you to add <xref:System.ComponentModel.Design.MenuCommand> objects to the Visual Studio menu.  
+  
+ This class provides the following members:  
+  
+-   An event-handler property to which you can attach an event handler for the command.  
+  
+-   A <xref:System.ComponentModel.Design.CommandID> property that uniquely identifies the command.  
+  
+-   An <xref:System.ComponentModel.Design.MenuCommand.Invoke%2A> method that executes the command.  
+  
+-   An <xref:System.ComponentModel.Design.MenuCommand.OnCommandChanged%2A> method that can be overridden to handle the event that occurs when a new command is selected.  
+  
+-   Boolean flag states that indicate whether the command is <xref:System.ComponentModel.Design.MenuCommand.Checked%2A>, <xref:System.ComponentModel.Design.MenuCommand.Enabled%2A>, <xref:System.ComponentModel.Design.MenuCommand.Supported%2A>, or <xref:System.ComponentModel.Design.MenuCommand.Visible%2A>.  
+  
+-   An <xref:System.ComponentModel.Design.MenuCommand.OleStatus%2A> property that indicates the OLE command status code for the command.  
+  
+-   An override for the <xref:System.ComponentModel.Design.MenuCommand.ToString%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example creates a <xref:System.ComponentModel.Design.MenuCommand> object, configures its properties, and adds it to the <xref:System.ComponentModel.Design.IMenuCommandService>.  
+  
+ Create an instance of the `Component1` class on your form and open the form in a design environment like Visual Studio. Press the F1 key to invoke the <xref:System.ComponentModel.Design.MenuCommand>.  
+  
+ [!code-cpp[MenuCommand Example#10](~/samples/snippets/cpp/VS_Snippets_Winforms/MenuCommand Example/CPP/component1.cpp#10)]
+ [!code-csharp[MenuCommand Example#10](~/samples/snippets/csharp/VS_Snippets_Winforms/MenuCommand Example/CS/component1.cs#10)]
+ [!code-vb[MenuCommand Example#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MenuCommand Example/VB/component1.vb#10)]  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,10 +79,21 @@
         <Parameter Name="command" Type="System.ComponentModel.Design.CommandID" />
       </Parameters>
       <Docs>
-        <param name="handler">To be added.</param>
-        <param name="command">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="handler">The event to raise when the user selects the menu item or toolbar button.</param>
+        <param name="command">The unique command ID that links this menu command to the environment's menu.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.MenuCommand" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example creates a <xref:System.ComponentModel.Design.MenuCommand> object, configures its properties, and adds it to an <xref:System.ComponentModel.Design.IMenuCommandService> object.  
+  
+ [!code-cpp[MenuCommand Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/MenuCommand Example/CPP/component1.cpp#1)]
+ [!code-csharp[MenuCommand Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/MenuCommand Example/CS/component1.cs#1)]
+ [!code-vb[MenuCommand Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MenuCommand Example/VB/component1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Checked">
@@ -68,8 +114,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value indicating whether this menu item is checked.</summary>
+        <value>
+          <see langword="true" /> if the item is checked; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,8 +138,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the menu command changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A command can change if it becomes checked or disabled.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CommandID">
@@ -113,8 +167,8 @@
         <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.ComponentModel.Design.CommandID" /> associated with this menu command.</summary>
+        <value>The <see cref="T:System.ComponentModel.Design.CommandID" /> associated with the menu command.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,9 +190,21 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether this menu item is available.</summary>
+        <value>
+          <see langword="true" /> if the item is enabled; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example creates a <xref:System.ComponentModel.Design.MenuCommand> object, configures its properties, and adds it to <xref:System.ComponentModel.Design.IMenuCommandService>.  
+  
+ [!code-cpp[MenuCommand Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/MenuCommand Example/CPP/component1.cpp#1)]
+ [!code-csharp[MenuCommand Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/MenuCommand Example/CS/component1.cs#1)]
+ [!code-vb[MenuCommand Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MenuCommand Example/VB/component1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Invoke">
@@ -160,7 +226,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Invokes the command.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -185,9 +251,12 @@
         <Parameter Name="arg" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="arg">An optional argument for use by the command.</param>
+        <summary>Invokes the command with the given parameter.</summary>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>The default implementation of this method ignores <paramref name="arg" />, but deriving classes may override this method and use it.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="OleStatus">
@@ -208,8 +277,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the OLE command status code for this menu item.</summary>
+        <value>An integer containing a mixture of status flags that reflect the state of this menu item.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -234,9 +303,21 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.ComponentModel.Design.MenuCommand.CommandChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+ The <xref:System.ComponentModel.Design.MenuCommand.OnCommandChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.ComponentModel.Design.MenuCommand.OnCommandChanged(System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.ComponentModel.Design.MenuCommand.OnCommandChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -257,9 +338,16 @@
         <ReturnType>System.Collections.IDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the public properties associated with the <see cref="T:System.ComponentModel.Design.MenuCommand" />.</summary>
+        <value>An <see cref="T:System.Collections.IDictionary" /> containing the public properties of the <see cref="T:System.ComponentModel.Design.MenuCommand" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ All menu commands store their public properties in the <xref:System.ComponentModel.Design.MenuCommand.Properties%2A> collection. The key in the properties dictionary is the property name. This allows for generic enumeration of properties and provides a consistent substrate from which new properties can be added without modifying the class definition.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Supported">
@@ -280,9 +368,21 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether this menu item is supported.</summary>
+        <value>
+          <see langword="true" /> if the item is supported, which is the default; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example creates a <xref:System.ComponentModel.Design.MenuCommand> object, configures its properties, and adds it to the <xref:System.ComponentModel.Design.IMenuCommandService>.  
+  
+ [!code-cpp[MenuCommand Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/MenuCommand Example/CPP/component1.cpp#1)]
+ [!code-csharp[MenuCommand Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/MenuCommand Example/CS/component1.cs#1)]
+ [!code-vb[MenuCommand Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MenuCommand Example/VB/component1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -304,8 +404,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a string representation of this menu command.</summary>
+        <returns>A string containing the value of the <see cref="P:System.ComponentModel.Design.MenuCommand.CommandID" /> property appended with the names of any flags that are set, separated by pipe bars (|). These flag properties include <see cref="P:System.ComponentModel.Design.MenuCommand.Checked" />, <see cref="P:System.ComponentModel.Design.MenuCommand.Enabled" />, <see cref="P:System.ComponentModel.Design.MenuCommand.Supported" />, and <see cref="P:System.ComponentModel.Design.MenuCommand.Visible" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -327,9 +427,21 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether this menu item is visible.</summary>
+        <value>
+          <see langword="true" /> if the item is visible; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example creates a <xref:System.ComponentModel.Design.MenuCommand> object, configures its properties, and adds it to the <xref:System.ComponentModel.Design.IMenuCommandService>.  
+  
+ [!code-cpp[MenuCommand Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/MenuCommand Example/CPP/component1.cpp#1)]
+ [!code-csharp[MenuCommand Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/MenuCommand Example/CS/component1.cs#1)]
+ [!code-vb[MenuCommand Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MenuCommand Example/VB/component1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

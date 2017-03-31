@@ -23,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>A sequence of XML items that dynamically expands and allows random access to items.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -42,7 +42,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryItemSequence" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,8 +63,8 @@
         <Parameter Name="capacity" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="capacity">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="capacity">A value of type <see langword="Int32" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryItemSequence" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,8 +85,8 @@
         <Parameter Name="item" Type="System.Xml.XPath.XPathItem" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="item">An instance of the <see cref="T:System.Xml.XPath.XPathItem" /> class.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryItemSequence" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,8 +110,8 @@
         <Parameter Name="item" Type="System.Xml.XPath.XPathItem" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="item">An instance of the <see cref="T:System.Xml.XPath.XPathItem" /> class.</param>
+        <summary>Adds an item to the sequence. If the item is a navigator, this method clones it before adding it to the sequence.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,9 +135,9 @@
         <Parameter Name="seq" Type="System.Xml.Xsl.Runtime.XmlQueryItemSequence" />
       </Parameters>
       <Docs>
-        <param name="seq">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="seq">An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryItemSequence" /> class.</param>
+        <summary>Clears and reuses an <see cref="T:System.Xml.Xsl.Runtime.XmlQueryItemSequence" /> object if it is available. If the <paramref name="seq" /> parameter is null, creates a new <see cref="T:System.Xml.Xsl.Runtime.XmlQueryItemSequence" />.</summary>
+        <returns>An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryItemSequence" /> class.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,10 +162,10 @@
         <Parameter Name="item" Type="System.Xml.XPath.XPathItem" />
       </Parameters>
       <Docs>
-        <param name="seq">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="seq">An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryItemSequence" /> class.</param>
+        <param name="item">An instance of the <see cref="T:System.Xml.XPath.XPathItem" /> class.</param>
+        <summary>Clears and reuses an <see cref="T:System.Xml.Xsl.Runtime.XmlQueryItemSequence" /> object if it is available. If the <paramref name="seq" /> parameter is null, creates a new <see cref="T:System.Xml.Xsl.Runtime.XmlQueryItemSequence" />. This method then adds a new item to reused or new sequence.</summary>
+        <returns>An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryItemSequence" /> class.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,7 +186,7 @@
         <ReturnType>System.Xml.Xsl.Runtime.XmlQueryItemSequence</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Returns a properly initialized, empty <see cref="T:System.Xml.Xsl.Runtime.XmlQueryItemSequence" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

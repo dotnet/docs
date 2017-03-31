@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the output property value of the path that is used to drive the animation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There are three possible output property values that a path animation can move along - X, Y, and Angle. By specifying one of these values, you are telling the animation to use that property output value of the path to drive the animation. For example, if you are animating the property that specifies the x-coordinate of an object (i.e. <xref:System.Windows.Media.TranslateTransform.X%2A?displayProperty=fullName>) using a <xref:System.Windows.Media.Animation.PathAnimationSource> of Y, then the animation will animate the x-coordinate of the object using the y-coordinates of the path.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Angle">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Media.Animation.PathAnimationSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the tangent angle of rotation during the progression along an animation sequence path.</summary>
       </Docs>
     </Member>
     <Member MemberName="X">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Media.Animation.PathAnimationSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the x-coordinate offset during the progression along an animation sequence path.</summary>
       </Docs>
     </Member>
     <Member MemberName="Y">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.Media.Animation.PathAnimationSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the y-coordinate offset during the progression along an animation sequence path.</summary>
       </Docs>
     </Member>
   </Members>

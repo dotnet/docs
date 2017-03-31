@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Arranges <see cref="T:System.Windows.Controls.ToolBar" /> items inside a <see cref="T:System.Windows.Controls.ToolBar" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Controls.Primitives.ToolBarPanel> determines which <xref:System.Windows.Controls.ToolBar> items will fit inside a <xref:System.Windows.Controls.ToolBar> and which must be put in the overflow area. The <xref:System.Windows.Controls.ToolBar.OverflowMode%2A?displayProperty=fullName> property determines how items should be distributed between the <xref:System.Windows.Controls.Primitives.ToolBarPanel> and the <xref:System.Windows.Controls.Primitives.ToolBarOverflowPanel>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Primitives.ToolBarPanel" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,9 +53,9 @@
         <Parameter Name="arrangeSize" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="arrangeSize">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="arrangeSize">The size that the <see cref="T:System.Windows.Controls.Primitives.ToolBarPanel" /> assumes to position its children.</param>
+        <summary>Arranges and sizes <see cref="T:System.Windows.Controls.ToolBar" /> items inside a <see cref="T:System.Windows.Controls.Primitives.ToolBarPanel" />.</summary>
+        <returns>The size of the panel.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,9 +75,9 @@
         <Parameter Name="constraint" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="constraint">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="constraint">The measurement constraints; a <see cref="T:System.Windows.Controls.Primitives.ToolBarPanel" /> cannot return a size larger than the constraint.</param>
+        <summary>Remeasures a toolbar panel.</summary>
+        <returns>The desired size of the panel.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

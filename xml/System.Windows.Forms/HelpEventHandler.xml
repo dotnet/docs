@@ -17,9 +17,25 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">To be added.</param>
-    <param name="hlpevent">To be added.</param>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <param name="sender">The source of the event.</param>
+    <param name="hlpevent">A <see cref="T:System.Windows.Forms.HelpEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Windows.Forms.Control.HelpRequested" /> event of a <see cref="T:System.Windows.Forms.Control" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you create a <xref:System.Windows.Forms.HelpEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about handling events with delegates, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
+  
+   
+  
+## Examples  
+ The following example demonstrates handling the <xref:System.Windows.Forms.Control.HelpRequested> event to display custom Help content on a form containing four address fields. The <xref:System.Windows.Forms.Control.HelpRequested> event is raised either by pressing the F1 key with the focus in an address field, or by the using the context-sensitive Help button and clicking the Help cursor on an address field. The <xref:System.Windows.Forms.HelpEventArgs.Handled%2A> property is set to true to indicate that the `HelpRequested` event is handled. The example also demonstrates storing the Help text in the <xref:System.Windows.Forms.Control.Tag%2A?displayProperty=fullName> property.  
+  
+ [!code-cpp[System.Windows.Forms.HelpEventHandler#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.HelpEventHandler/CPP/helpevent.cpp#1)]
+ [!code-csharp[System.Windows.Forms.HelpEventHandler#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HelpEventHandler/CS/helpevent.cs#1)]
+ [!code-vb[System.Windows.Forms.HelpEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HelpEventHandler/VB/helpevent.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

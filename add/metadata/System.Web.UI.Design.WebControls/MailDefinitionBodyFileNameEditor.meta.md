@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.Design.WebControls.MailDefinitionBodyFileNameEditor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.MailDefinitionBodyFileNameEditor.Filter
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.MailDefinitionBodyFileNameEditor.Caption
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.MailDefinitionBodyFileNameEditor.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

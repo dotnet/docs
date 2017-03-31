@@ -1,59 +1,90 @@
 ---
 uid: System.Activities.DurableInstancing.SqlWorkflowInstanceStore
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DurableInstancing.SqlWorkflowInstanceStore.RunnableInstancesDetectionPeriod
-internalonly: False
----
-
----
-uid: System.Activities.DurableInstancing.SqlWorkflowInstanceStore.InstanceLockedExceptionAction
-internalonly: False
----
-
----
-uid: System.Activities.DurableInstancing.SqlWorkflowInstanceStore.#ctor(System.String)
-internalonly: False
----
-
----
-uid: System.Activities.DurableInstancing.SqlWorkflowInstanceStore.ConnectionString
-internalonly: False
----
-
----
-uid: System.Activities.DurableInstancing.SqlWorkflowInstanceStore.MaxConnectionRetries
-internalonly: False
----
-
----
-uid: System.Activities.DurableInstancing.SqlWorkflowInstanceStore.HostLockRenewalPeriod
-internalonly: False
----
-
----
-uid: System.Activities.DurableInstancing.SqlWorkflowInstanceStore.Promote(System.String,System.Collections.Generic.IEnumerable{System.Xml.Linq.XName},System.Collections.Generic.IEnumerable{System.Xml.Linq.XName})
-internalonly: False
----
-
----
-uid: System.Activities.DurableInstancing.SqlWorkflowInstanceStore.EnqueueRunCommands
-internalonly: False
----
-
----
-uid: System.Activities.DurableInstancing.SqlWorkflowInstanceStore.InstanceCompletionAction
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DurableInstancing.SqlWorkflowInstanceStore.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.DurableInstancing.SqlWorkflowInstanceStore.InstanceLockedExceptionAction
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.DurableInstancing.SqlWorkflowInstanceStore.#ctor(System.String)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.DurableInstancing.SqlWorkflowInstanceStore.ConnectionString
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.DurableInstancing.SqlWorkflowInstanceStore.MaxConnectionRetries
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.DurableInstancing.SqlWorkflowInstanceStore.HostLockRenewalPeriod
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.DurableInstancing.SqlWorkflowInstanceStore.Promote(System.String,System.Collections.Generic.IEnumerable{System.Xml.Linq.XName},System.Collections.Generic.IEnumerable{System.Xml.Linq.XName})
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.DurableInstancing.SqlWorkflowInstanceStore.EnqueueRunCommands
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.DurableInstancing.SqlWorkflowInstanceStore.InstanceCompletionAction
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.DurableInstancing.SqlWorkflowInstanceStore.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DurableInstancing.SqlWorkflowInstanceStore.InstanceEncodingOption
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

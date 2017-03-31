@@ -1,24 +1,29 @@
 ---
 uid: System.Web.UI.EventEntry
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.EventEntry.HandlerMethodName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.EventEntry.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.EventEntry.Name
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.EventEntry.HandlerType
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

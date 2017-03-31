@@ -1,44 +1,67 @@
 ---
 uid: System.Windows.Media.Animation.SplineVectorKeyFrame
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SplineVectorKeyFrame.CreateInstanceCore
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.SplineVectorKeyFrame.InterpolateValueCore(System.Windows.Vector,System.Double)
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.SplineVectorKeyFrame.KeySplineProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SplineVectorKeyFrame.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.SplineVectorKeyFrame.InterpolateValueCore(System.Windows.Vector,System.Double)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.SplineVectorKeyFrame.KeySplineProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.SplineVectorKeyFrame.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SplineVectorKeyFrame.#ctor(System.Windows.Vector)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SplineVectorKeyFrame.KeySpline
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SplineVectorKeyFrame.#ctor(System.Windows.Vector,System.Windows.Media.Animation.KeyTime)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SplineVectorKeyFrame.#ctor(System.Windows.Vector,System.Windows.Media.Animation.KeyTime,System.Windows.Media.Animation.KeySpline)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

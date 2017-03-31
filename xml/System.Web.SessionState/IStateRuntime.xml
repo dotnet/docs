@@ -16,8 +16,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the interface used by the ASP.NET state service to manage session data.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ASP.NET can manage session state out-of-process by using a Windows service called the ASP.NET state service. The <xref:System.Web.SessionState.StateRuntime> class is used by unmanaged code in this service to manage session data. This class supports the .NET Framework infrastructure implementation of the ASP.NET state service and is not intended be used directly from your code.  
+  
+ Using the ASP.NET state service is not the default method of managing sessionstate in ASP.NET; ASP.NET supports in-process session-state management by default. It also supports a second out-of-process option that manages session state in a Microsoft SQL Server database, and it enables custom session-state management solutions. For more information about session-state storage options, see [Session-State Modes](../Topic/Session-State%20Modes.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ProcessRequest">
@@ -44,17 +53,26 @@
         <Parameter Name="content" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="tracker">To be added.</param>
-        <param name="verb">To be added.</param>
-        <param name="uri">To be added.</param>
-        <param name="exclusive">To be added.</param>
-        <param name="timeout">To be added.</param>
-        <param name="lockCookieExists">To be added.</param>
-        <param name="lockCookie">To be added.</param>
-        <param name="contentLength">To be added.</param>
-        <param name="content">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="tracker">An <see cref="T:System.IntPtr" /> pointer to an object stored in the unmanaged ASP.NET state server.</param>
+        <param name="verb">The action to take on the object.</param>
+        <param name="uri">An identifier for the session.</param>
+        <param name="exclusive">The type of access to objects in the store.</param>
+        <param name="timeout">The number of minutes the session data is stored.</param>
+        <param name="lockCookieExists">A value that indicates whether the lock cookie exists in the original request from the ASP.NET Web server to the ASP.NET state server.</param>
+        <param name="lockCookie">The owner of the lock on the session state.</param>
+        <param name="contentLength">The length, in bytes, of the data stored for the session.</param>
+        <param name="content">An <see cref="T:System.IntPtr" /> pointer to the content stored for the session in the unmanaged ASP.NET state server.</param>
+        <summary>Used by the ASP.NET state server to process session data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ASP.NET can manage session state out-of-process by using a Windows service called the ASP.NET state service. The <xref:System.Web.SessionState.IStateRuntime.ProcessRequest%2A> method is used by unmanaged code in this service to manage the session data.  
+  
+ This member supports the .NET Framework infrastructure implementation of the ASP.NET state service and is not intended be used directly from your code. For more information about session-state storage options, see [Session-State Modes](../Topic/Session-State%20Modes.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ProcessRequest">
@@ -82,18 +100,27 @@
         <Parameter Name="content" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="tracker">To be added.</param>
-        <param name="verb">To be added.</param>
-        <param name="uri">To be added.</param>
-        <param name="exclusive">To be added.</param>
-        <param name="extraFlags">To be added.</param>
-        <param name="timeout">To be added.</param>
-        <param name="lockCookieExists">To be added.</param>
-        <param name="lockCookie">To be added.</param>
-        <param name="contentLength">To be added.</param>
-        <param name="content">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="tracker">An <see cref="T:System.IntPtr" /> pointer to an object stored in the unmanaged ASP.NET state server.</param>
+        <param name="verb">The action to take on the object.</param>
+        <param name="uri">An identifier for the session.</param>
+        <param name="exclusive">The type of access to objects in the store.</param>
+        <param name="extraFlags">A value that indicates whether the current session is an uninitialized, cookieless session.</param>
+        <param name="timeout">The number of minutes the session data is stored.</param>
+        <param name="lockCookieExists">A value that indicates whether the lock cookie exists in the original request from the ASP.NET Web server to the ASP.NET state server.</param>
+        <param name="lockCookie">The owner of the lock on the session state.</param>
+        <param name="contentLength">The length, in bytes, of the data stored for the session.</param>
+        <param name="content">An <see cref="T:System.IntPtr" /> pointer to the content stored for the session in the unmanaged ASP.NET state server.</param>
+        <summary>Used by the ASP.NET state server to process session data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ASP.NET can manage session state out-of-process by using a Windows service called the ASP.NET state service. The <xref:System.Web.SessionState.IStateRuntime.ProcessRequest%2A> method is used by unmanaged code in this service to manage the session data.  
+  
+ This member supports the .NET Framework infrastructure implementation of the ASP.NET state service and is not intended be used directly from your code. For more information about session-state storage options, see [Session-State Modes](../Topic/Session-State%20Modes.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StopProcessing">
@@ -110,8 +137,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Stops the processing of session data stored in ASP.NET state server.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ASP.NET can manage session state out-of-process by using a Windows service called the ASP.NET state service. The <xref:System.Web.SessionState.StateRuntime.StopProcessing%2A> method is used by unmanaged code in this service to stop processing the session data. This member is provided to support the .NET Framework infrastructure implementation of the ASP.NET state service and is not intended be used directly from your code. For more information about session-state storage options, see [Session-State Modes](../Topic/Session-State%20Modes.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

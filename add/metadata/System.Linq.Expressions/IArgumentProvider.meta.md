@@ -1,14 +1,18 @@
 ---
 uid: System.Linq.Expressions.IArgumentProvider
-internalonly: False
+ms.author: "billchi"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Linq.Expressions.IArgumentProvider.GetArgument(System.Int32)
-internalonly: False
+ms.author: "billchi"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Linq.Expressions.IArgumentProvider.ArgumentCount
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---

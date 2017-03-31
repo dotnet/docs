@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides required event data for the <see cref="E:System.Windows.Markup.Localizer.BamlLocalizer.ErrorNotify" /> event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.Windows.Markup.Localizer.BamlLocalizerError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the specific error condition encountered by <see cref="T:System.Windows.Markup.Localizer.BamlLocalizer" />.</summary>
+        <value>The error condition encountered by <see cref="T:System.Windows.Markup.Localizer.BamlLocalizer" />, as a value of the enumeration.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <ReturnType>System.Windows.Markup.Localizer.BamlLocalizableResourceKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the key associated with the resource that generated the error condition.</summary>
+        <value>The key associated with the resource that generated the error condition.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

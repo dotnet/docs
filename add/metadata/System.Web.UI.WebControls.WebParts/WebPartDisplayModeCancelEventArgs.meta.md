@@ -1,14 +1,20 @@
 ---
 uid: System.Web.UI.WebControls.WebParts.WebPartDisplayModeCancelEventArgs
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.WebParts.WebPartDisplayModeCancelEventArgs.#ctor(System.Web.UI.WebControls.WebParts.WebPartDisplayMode)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.WebParts.WebPartDisplayModeCancelEventArgs.NewDisplayMode
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

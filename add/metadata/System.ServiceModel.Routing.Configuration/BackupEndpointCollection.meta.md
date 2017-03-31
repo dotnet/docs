@@ -1,39 +1,60 @@
 ---
 uid: System.ServiceModel.Routing.Configuration.BackupEndpointCollection
-internalonly: False
----
-
----
-uid: System.ServiceModel.Routing.Configuration.BackupEndpointCollection.Name
-internalonly: False
----
-
----
-uid: System.ServiceModel.Routing.Configuration.BackupEndpointCollection.Remove(System.ServiceModel.Routing.Configuration.BackupEndpointElement)
-internalonly: False
----
-
----
-uid: System.ServiceModel.Routing.Configuration.BackupEndpointCollection.GetElementKey(System.Configuration.ConfigurationElement)
-internalonly: False
----
-
----
-uid: System.ServiceModel.Routing.Configuration.BackupEndpointCollection.Add(System.ServiceModel.Routing.Configuration.BackupEndpointElement)
-internalonly: False
----
-
----
-uid: System.ServiceModel.Routing.Configuration.BackupEndpointCollection.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Routing.Configuration.BackupEndpointCollection.CreateNewElement
-internalonly: False
+manager: "ghogen"
+---
+
+---
+uid: System.ServiceModel.Routing.Configuration.BackupEndpointCollection.Name
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Routing.Configuration.BackupEndpointCollection.Remove(System.ServiceModel.Routing.Configuration.BackupEndpointElement)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Routing.Configuration.BackupEndpointCollection.GetElementKey(System.Configuration.ConfigurationElement)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Routing.Configuration.BackupEndpointCollection.Add(System.ServiceModel.Routing.Configuration.BackupEndpointElement)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Routing.Configuration.BackupEndpointCollection.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Routing.Configuration.BackupEndpointCollection.CreateNewElement
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Routing.Configuration.BackupEndpointCollection.Clear
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

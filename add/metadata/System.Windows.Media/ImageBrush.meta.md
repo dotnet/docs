@@ -1,34 +1,53 @@
 ---
 uid: System.Windows.Media.ImageBrush
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.ImageBrush.CloneCurrentValue
-internalonly: False
----
-
----
-uid: System.Windows.Media.ImageBrush.Clone
-internalonly: False
----
-
----
-uid: System.Windows.Media.ImageBrush.ImageSourceProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.ImageBrush.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.ImageBrush.Clone
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.ImageBrush.ImageSourceProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.ImageBrush.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.ImageBrush.#ctor(System.Windows.Media.ImageSource)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.ImageBrush.ImageSource
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

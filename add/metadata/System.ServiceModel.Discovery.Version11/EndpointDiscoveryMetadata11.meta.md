@@ -1,34 +1,55 @@
 ---
 uid: System.ServiceModel.Discovery.Version11.EndpointDiscoveryMetadata11
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.Version11.EndpointDiscoveryMetadata11.GetSchema
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.Version11.EndpointDiscoveryMetadata11.GetSchema(System.Xml.Schema.XmlSchemaSet)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.Version11.EndpointDiscoveryMetadata11.WriteXml(System.Xml.XmlWriter)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.Version11.EndpointDiscoveryMetadata11.FromEndpointDiscoveryMetadata(System.ServiceModel.Discovery.EndpointDiscoveryMetadata)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.Version11.EndpointDiscoveryMetadata11.ToEndpointDiscoveryMetadata
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.Version11.EndpointDiscoveryMetadata11.ReadXml(System.Xml.XmlReader)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Discovery.Version11.EndpointDiscoveryMetadata11.GetSchema
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

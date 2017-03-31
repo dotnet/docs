@@ -1,99 +1,135 @@
 ---
 uid: System.Windows.Controls.KeyTipService
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.KeyTipService.RemoveActivatingKeyTipHandler(System.Windows.DependencyObject,System.Windows.Controls.ActivatingKeyTipEventHandler)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.KeyTipService.IsKeyTipScopeProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.KeyTipService.RemoveKeyTipAccessedHandler(System.Windows.DependencyObject,System.Windows.Controls.KeyTipAccessedEventHandler)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.KeyTipService.SetKeyTip(System.Windows.DependencyObject,System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.KeyTipService.KeyTipStyleProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.KeyTipService.SetKeyTipStyle(System.Windows.DependencyObject,System.Windows.Style)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.KeyTipService.DismissKeyTips
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.KeyTipService.KeyTipProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.KeyTipService.AddPreviewKeyTipAccessedHandler(System.Windows.DependencyObject,System.Windows.Controls.KeyTipAccessedEventHandler)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.KeyTipService.RemovePreviewKeyTipAccessedHandler(System.Windows.DependencyObject,System.Windows.Controls.KeyTipAccessedEventHandler)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.KeyTipService.PreviewKeyTipAccessedEvent
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.KeyTipService.KeyTipAccessedEvent
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.KeyTipService.GetKeyTipStyle(System.Windows.DependencyObject)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.KeyTipService.AddActivatingKeyTipHandler(System.Windows.DependencyObject,System.Windows.Controls.ActivatingKeyTipEventHandler)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.KeyTipService.AddKeyTipAccessedHandler(System.Windows.DependencyObject,System.Windows.Controls.KeyTipAccessedEventHandler)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.KeyTipService.ActivatingKeyTipEvent
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.KeyTipService.GetIsKeyTipScope(System.Windows.DependencyObject)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.KeyTipService.SetIsKeyTipScope(System.Windows.DependencyObject,System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.KeyTipService.GetKeyTip(System.Windows.DependencyObject)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

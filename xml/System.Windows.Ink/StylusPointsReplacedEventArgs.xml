@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides data for the <see cref="E:System.Windows.Ink.Stroke.StylusPointsReplaced" /> event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,9 +29,9 @@
         <Parameter Name="previousStylusPoints" Type="System.Windows.Input.StylusPointCollection" />
       </Parameters>
       <Docs>
-        <param name="newStylusPoints">To be added.</param>
-        <param name="previousStylusPoints">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="newStylusPoints">The new <see cref="T:System.Windows.Input.StylusPointCollection" /> for the <see cref="T:System.Windows.Ink.Stroke" />.</param>
+        <param name="previousStylusPoints">The replaced <see cref="T:System.Windows.Input.StylusPointCollection" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Ink.StylusPointsReplacedEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +48,8 @@
         <ReturnType>System.Windows.Input.StylusPointCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the new <see cref="T:System.Windows.Input.StylusPointCollection" /> for the <see cref="T:System.Windows.Ink.Stroke" />.</summary>
+        <value>The new <see cref="T:System.Windows.Input.StylusPointCollection" /> for the <see cref="T:System.Windows.Ink.Stroke" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,8 +66,8 @@
         <ReturnType>System.Windows.Input.StylusPointCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the replaced <see cref="T:System.Windows.Input.StylusPointCollection" />.</summary>
+        <value>The replaced <see cref="T:System.Windows.Input.StylusPointCollection" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

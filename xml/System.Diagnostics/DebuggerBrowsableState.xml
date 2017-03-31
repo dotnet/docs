@@ -25,8 +25,24 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides display instructions for the debugger.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Diagnostics.DebuggerBrowsableState> is used to simplify the view in the debug window. Use of the <xref:System.Diagnostics.DebuggerDisplayAttribute> attribute using this enumeration can result in a much simpler and more pleasing view in the debug window. See the <xref:System.Diagnostics.DebuggerBrowsableAttribute> class for information on the use of this enumeration.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Diagnostics.DebuggerBrowsableState> enumeration to instruct the debugger to not display the root (property name) of the `Keys` property, but to display the elements of the array that `Keys` gets. This code example is part of a larger example provided for the <xref:System.Diagnostics.DebuggerDisplayAttribute> class.  
+  
+ [!code-cpp[System.Diagnostics.DebuggerBrowsableAttribute#6](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Diagnostics.DebuggerBrowsableAttribute/cpp/program.cpp#6)]
+ [!code-csharp[System.Diagnostics.DebuggerBrowsableAttribute#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.DebuggerBrowsableAttribute/CS/program.cs#6)]
+ [!code-vb[System.Diagnostics.DebuggerBrowsableAttribute#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.DebuggerBrowsableAttribute/VB/module1.vb#6)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Collapsed">
@@ -52,7 +68,7 @@
         <ReturnType>System.Diagnostics.DebuggerBrowsableState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Show the element as collapsed.</summary>
       </Docs>
     </Member>
     <Member MemberName="Never">
@@ -78,7 +94,7 @@
         <ReturnType>System.Diagnostics.DebuggerBrowsableState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Never show the element.</summary>
       </Docs>
     </Member>
     <Member MemberName="RootHidden">
@@ -104,7 +120,7 @@
         <ReturnType>System.Diagnostics.DebuggerBrowsableState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Do not display the root element; display the child elements if the element is a collection or array of items.</summary>
       </Docs>
     </Member>
   </Members>

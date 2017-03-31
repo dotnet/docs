@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines a cacheable command plan.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.Common.DbCommandDefinition> class is used by the Entity Framework and is not intended for use as a stand-alone component.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,8 +33,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Common.DbCommandDefinition" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default constructor is used by classes that derive from <xref:System.Data.Common.DbCommandDefinition>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -43,9 +57,18 @@
         <Parameter Name="prototype" Type="System.Data.Common.DbCommand" />
       </Parameters>
       <Docs>
-        <param name="prototype">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="prototype">The supplied <see cref="T:System.Data.Common.DbCommand" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Common.DbCommandDefinition" /> class using the supplied <see cref="T:System.Data.Common.DbCommand" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The supplied <xref:System.Data.Common.DbCommand> must implement <xref:System.ICloneable>; otherwise a <xref:System.Data.ProviderIncompatibleException> is raised.  
+  
+ This constructor is used by classes that derive from <xref:System.Data.Common.DbCommandDefinition>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateCommand">
@@ -62,8 +85,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates and returns a <see cref="T:System.Data.Common.DbCommand" /> object that can be executed.</summary>
+        <returns>The command for database.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

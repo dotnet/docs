@@ -1,29 +1,34 @@
 ---
 uid: System.Windows.Markup.XamlWriter
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlWriter.Save(System.Object,System.IO.TextWriter)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlWriter.Save(System.Object,System.Xml.XmlWriter)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlWriter.Save(System.Object,System.IO.Stream)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlWriter.Save(System.Object)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlWriter.Save(System.Object,System.Windows.Markup.XamlDesignerSerializationManager)
-internalonly: False
+manager: "martinek"
+---
+
+---
+uid: System.Windows.Markup.XamlWriter.Save
+manager: "martinek"
 ---

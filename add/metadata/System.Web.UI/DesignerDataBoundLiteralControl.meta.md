@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.DesignerDataBoundLiteralControl
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.DesignerDataBoundLiteralControl.Text
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.DesignerDataBoundLiteralControl.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -25,7 +25,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Indicates that the use of <see cref="T:System.Object" /> on a member is meant to be treated as a dynamically dispatched type.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -49,8 +49,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.CompilerServices.DynamicAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When used in an attribute specification, the default constructor is semantically equivalent to `DynamicAttribute({ true })`, and can be considered a shorthand for that expression. It should therefore only be used on an element of type <xref:System.Object>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -75,9 +82,18 @@
         <Parameter Name="transformFlags" Type="System.Boolean[]" />
       </Parameters>
       <Docs>
-        <param name="transformFlags">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="transformFlags">Specifies, in a prefix traversal of a type's construction, which <see cref="T:System.Object" /> occurrences are meant to be treated as a dynamically dispatched type.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.CompilerServices.DynamicAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is meant to be used on types that are built on an underlying occurrence of <xref:System.Object> that is meant to be treated dynamically.  
+  
+ For instance, if `C` is a generic type with two type parameters, a use of the constructed type `C<Object,Object>` might be intended to treat the first type argument dynamically and the second typically, in which case the appropriate attribute specification should use a `transformFlags` value of `{ false, true, false }`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TransformFlags">
@@ -102,8 +118,8 @@
         <ReturnType>System.Collections.Generic.IList&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Specifies, in a prefix traversal of a type's construction, which <see cref="T:System.Object" /> occurrences are meant to be treated as a dynamically dispatched type.</summary>
+        <value>The list of <see cref="T:System.Object" /> occurrences that are meant to be treated as a dynamically dispatched type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

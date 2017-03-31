@@ -1,9 +1,11 @@
 ---
 uid: System.Web.UI.Design.ClientScriptItemCollection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ClientScriptItemCollection.#ctor(System.Web.UI.Design.ClientScriptItem[])
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the severity level of the error.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Data.Metadata.Edm.EdmSchemaErrorSeverity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An error indicates that a severe problem occurred and the schema cannot be used.</summary>
       </Docs>
     </Member>
     <Member MemberName="Warning">
@@ -43,7 +43,7 @@
         <ReturnType>System.Data.Metadata.Edm.EdmSchemaErrorSeverity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A warning indicates that there are some problems in the schema but it is still usable.</summary>
       </Docs>
     </Member>
   </Members>

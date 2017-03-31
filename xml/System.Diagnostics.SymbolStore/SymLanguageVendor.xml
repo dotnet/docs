@@ -21,8 +21,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Holds the public GUIDs for language vendors to be used with the symbol store.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how <xref:System.Diagnostics.SymbolStore.SymLanguageVendor> is used when calling <xref:System.Reflection.Emit.ModuleBuilder.DefineDocument%2A>.  
+  
+ [!code-cpp[ModuleBuilder_DefineDocument#1](~/samples/snippets/cpp/VS_Snippets_CLR/ModuleBuilder_DefineDocument/CPP/modulebuilder_definedocument.cpp#1)]
+ [!code-csharp[ModuleBuilder_DefineDocument#1](~/samples/snippets/csharp/VS_Snippets_CLR/ModuleBuilder_DefineDocument/CS/modulebuilder_definedocument.cs#1)]
+ [!code-vb[ModuleBuilder_DefineDocument#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ModuleBuilder_DefineDocument/VB/modulebuilder_definedocument.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,7 +52,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.SymbolStore.SymLanguageVendor" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,7 +74,7 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the GUID of the Microsoft language vendor.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

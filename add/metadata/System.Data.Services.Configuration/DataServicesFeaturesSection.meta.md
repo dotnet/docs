@@ -1,14 +1,20 @@
 ---
 uid: System.Data.Services.Configuration.DataServicesFeaturesSection
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Services.Configuration.DataServicesFeaturesSection.ReplaceFunction
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Services.Configuration.DataServicesFeaturesSection.#ctor
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

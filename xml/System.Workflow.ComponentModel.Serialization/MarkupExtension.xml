@@ -11,8 +11,19 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the abstract class for all Markup extensions for types. This class must be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ This class, through its descendents, provides a mark-up representation for various types, such as arrays.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +37,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>When implemented in a derived class, initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Serialization.MarkupExtension" /> class.  This class must be inherited.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,9 +57,9 @@
         <Parameter Name="provider" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="provider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="provider">The specified <see cref="T:System.IServiceProvider" />.</param>
+        <summary>When overridden in a derived class, provides the value for the underlying type, by optional use of an <see cref="T:System.IServiceProvider" />.</summary>
+        <returns>The <see cref="T:System.Object" /> representing the encapsulated type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

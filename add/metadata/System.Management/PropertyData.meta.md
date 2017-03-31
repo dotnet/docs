@@ -1,39 +1,39 @@
 ---
 uid: System.Management.PropertyData
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.PropertyData.Origin
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.PropertyData.IsArray
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.PropertyData.Name
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.PropertyData.Qualifiers
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.PropertyData.IsLocal
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.PropertyData.Value
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.PropertyData.Type
-internalonly: False
+manager: "jillfra"
 ---

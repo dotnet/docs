@@ -1,4 +1,4 @@
 ---
 uid: System.Xaml.XamlNodeType
-internalonly: False
+manager: "martinek"
 ---

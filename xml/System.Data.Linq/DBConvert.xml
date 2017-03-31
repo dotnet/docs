@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Used internally to convert one type to another.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,10 +32,10 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The object to be converted.</param>
+        <param name="type">The type to convert the object to.</param>
+        <summary>Changes the specified value to the specified type.</summary>
+        <returns>An object that contains the converted value of the specified type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,10 +58,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type to change to.</typeparam>
+        <param name="value">The object to be converted.</param>
+        <summary>Changes the specified value to the current type.</summary>
+        <returns>An object of the specified type that contains the converted value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

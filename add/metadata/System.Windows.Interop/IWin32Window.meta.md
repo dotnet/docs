@@ -1,9 +1,13 @@
 ---
 uid: System.Windows.Interop.IWin32Window
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Interop.IWin32Window.Handle
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

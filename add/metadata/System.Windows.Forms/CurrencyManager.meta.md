@@ -1,129 +1,184 @@
 ---
 uid: System.Windows.Forms.CurrencyManager
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.CurrencyManager.OnCurrentChanged(System.EventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.CurrencyManager.OnCurrentItemChanged(System.EventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.CurrencyManager.OnItemChanged(System.Windows.Forms.ItemChangedEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.CurrencyManager.Refresh
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.CurrencyManager.Count
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.CurrencyManager.CheckEmpty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.CurrencyManager.ResumeBinding
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.CurrencyManager.OnMetaDataChanged(System.EventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.CurrencyManager.Current
-internalonly: False
----
-
----
-uid: System.Windows.Forms.CurrencyManager.OnPositionChanged(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.CurrencyManager.AddNew
-internalonly: False
----
-
----
-uid: System.Windows.Forms.CurrencyManager.GetListName(System.Collections.ArrayList)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.CurrencyManager.listposition
-internalonly: False
----
-
----
-uid: System.Windows.Forms.CurrencyManager.ItemChanged
-internalonly: False
----
-
----
-uid: System.Windows.Forms.CurrencyManager.finalType
-internalonly: False
----
-
----
-uid: System.Windows.Forms.CurrencyManager.SuspendBinding
-internalonly: False
----
-
----
-uid: System.Windows.Forms.CurrencyManager.RemoveAt(System.Int32)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.CurrencyManager.Position
-internalonly: False
----
-
----
-uid: System.Windows.Forms.CurrencyManager.CancelCurrentEdit
-internalonly: False
----
-
----
-uid: System.Windows.Forms.CurrencyManager.ListChanged
-internalonly: False
----
-
----
-uid: System.Windows.Forms.CurrencyManager.UpdateIsBinding
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.CurrencyManager.GetItemProperties
-internalonly: False
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.CurrencyManager.OnPositionChanged(System.EventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.CurrencyManager.AddNew
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.CurrencyManager.GetListName(System.Collections.ArrayList)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.CurrencyManager.listposition
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.CurrencyManager.ItemChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.CurrencyManager.finalType
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.CurrencyManager.SuspendBinding
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.CurrencyManager.RemoveAt(System.Int32)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.CurrencyManager.Position
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.CurrencyManager.CancelCurrentEdit
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.CurrencyManager.ListChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.CurrencyManager.UpdateIsBinding
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.CurrencyManager.GetItemProperties
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.CurrencyManager.MetaDataChanged
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.CurrencyManager.List
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.CurrencyManager.EndCurrentEdit
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

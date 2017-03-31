@@ -1,24 +1,29 @@
 ---
 uid: System.Web.UI.IControlDesignerAccessor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IControlDesignerAccessor.GetDesignModeState
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IControlDesignerAccessor.UserData
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IControlDesignerAccessor.SetDesignModeState(System.Collections.IDictionary)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IControlDesignerAccessor.SetOwnerControl(System.Web.UI.Control)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

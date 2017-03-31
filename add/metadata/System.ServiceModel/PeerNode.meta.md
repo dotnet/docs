@@ -1,39 +1,39 @@
 ---
 uid: System.ServiceModel.PeerNode
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerNode.Port
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerNode.RefreshConnection
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerNode.MessagePropagationFilter
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerNode.IsOnline
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerNode.Online
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerNode.Offline
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerNode.ToString
-internalonly: False
+manager: "ghogen"
 ---

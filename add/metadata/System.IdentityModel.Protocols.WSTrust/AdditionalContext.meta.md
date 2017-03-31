@@ -1,19 +1,29 @@
 ---
 uid: System.IdentityModel.Protocols.WSTrust.AdditionalContext
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.AdditionalContext.#ctor(System.Collections.Generic.IEnumerable{System.IdentityModel.Protocols.WSTrust.ContextItem})
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.AdditionalContext.Items
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.AdditionalContext.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Protocols.WSTrust.AdditionalContext.#ctor
+ms.author: "v-jibran"
+manager: "markgal"
 ---

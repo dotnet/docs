@@ -1,9 +1,13 @@
 ---
 uid: System.Workflow.ComponentModel.Design.SequenceDesigner
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.SequenceDesigner.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

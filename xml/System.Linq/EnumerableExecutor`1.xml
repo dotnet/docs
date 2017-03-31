@@ -23,8 +23,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="T">The data type of the value that results from executing the expression tree.</typeparam>
+    <summary>Represents an expression tree and provides functionality to execute the expression tree after rewriting it.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -50,8 +50,8 @@
         <Parameter Name="expression" Type="System.Linq.Expressions.Expression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="expression">An expression tree to associate with the new instance.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Linq.EnumerableExecutor`1" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

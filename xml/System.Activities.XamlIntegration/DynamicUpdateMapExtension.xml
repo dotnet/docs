@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies dynamic update map extension options.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.XamlIntegration.DynamicUpdateMapExtension" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +48,8 @@
         <Parameter Name="updateMap" Type="System.Activities.DynamicUpdate.DynamicUpdateMap" />
       </Parameters>
       <Docs>
-        <param name="updateMap">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="updateMap">The update map.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.XamlIntegration.DynamicUpdateMapExtension" /> class using the update map.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,8 +69,8 @@
         <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="serviceProvider">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceProvider">The service provider.</param>
+        <summary>Specifies the value for service provider.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,8 +88,8 @@
         <ReturnType>System.Activities.DynamicUpdate.DynamicUpdateMap</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the extension for the dynamic update map.</summary>
+        <value>The extension for the dynamic update map.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,8 +106,8 @@
         <ReturnType>System.Xml.Serialization.IXmlSerializable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Xml content for the Dynamic Update Map Extension.</summary>
+        <value>The Xml content for the Dynamic Update Map Extension.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

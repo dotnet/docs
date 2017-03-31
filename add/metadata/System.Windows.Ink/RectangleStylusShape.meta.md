@@ -1,14 +1,27 @@
 ---
 uid: System.Windows.Ink.RectangleStylusShape
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.RectangleStylusShape.#ctor(System.Double,System.Double)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.RectangleStylusShape.#ctor(System.Double,System.Double,System.Double)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Ink.RectangleStylusShape.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

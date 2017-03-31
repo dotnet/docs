@@ -1,89 +1,153 @@
 ---
 uid: System.Data.Objects.DataClasses.RelatedEnd
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Objects.DataClasses.RelatedEnd.System#Data#Objects#DataClasses#IRelatedEnd#CreateSourceQuery
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Objects.DataClasses.RelatedEnd.System#Data#Objects#DataClasses#IRelatedEnd#Remove
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Objects.DataClasses.RelatedEnd.TargetRoleName
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Objects.DataClasses.RelatedEnd.System#Data#Objects#DataClasses#IRelatedEnd#Attach(System.Data.Objects.DataClasses.IEntityWithRelationships)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Objects.DataClasses.RelatedEnd.Load(System.Data.Objects.MergeOption)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Objects.DataClasses.RelatedEnd.System#Data#Objects#DataClasses#IRelatedEnd#Remove(System.Object)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Objects.DataClasses.RelatedEnd.System#Data#Objects#DataClasses#IRelatedEnd#Add(System.Data.Objects.DataClasses.IEntityWithRelationships)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Objects.DataClasses.RelatedEnd.SourceRoleName
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Objects.DataClasses.RelatedEnd.RelationshipSet
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Objects.DataClasses.RelatedEnd.System#Data#Objects#DataClasses#IRelatedEnd#Attach(System.Object)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Objects.DataClasses.RelatedEnd.System#Data#Objects#DataClasses#IRelatedEnd#Add(System.Object)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Objects.DataClasses.RelatedEnd.IsLoaded
-internalonly: False
----
-
----
-uid: System.Data.Objects.DataClasses.RelatedEnd.System#Data#Objects#DataClasses#IRelatedEnd#Remove(System.Data.Objects.DataClasses.IEntityWithRelationships)
-internalonly: False
----
-
----
-uid: System.Data.Objects.DataClasses.RelatedEnd.OnDeserialized(System.Runtime.Serialization.StreamingContext)
-internalonly: False
----
-
----
-uid: System.Data.Objects.DataClasses.RelatedEnd.AssociationChanged
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Objects.DataClasses.RelatedEnd.Load
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Objects.DataClasses.RelatedEnd.System#Data#Objects#DataClasses#IRelatedEnd#Remove(System.Data.Objects.DataClasses.IEntityWithRelationships)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Objects.DataClasses.RelatedEnd.OnDeserialized(System.Runtime.Serialization.StreamingContext)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Objects.DataClasses.RelatedEnd.System#Data#Objects#DataClasses#IRelatedEnd#Attach
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Objects.DataClasses.RelatedEnd.AssociationChanged
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Objects.DataClasses.RelatedEnd.Load
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Objects.DataClasses.RelatedEnd.RelationshipName
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Objects.DataClasses.RelatedEnd.GetEnumerator
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Objects.DataClasses.RelatedEnd.System#Data#Objects#DataClasses#IRelatedEnd#Add
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

@@ -28,9 +28,16 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="TextElementType">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="TextElementType">Type specifier for the generic collection.  Acceptable types are constrained to a type of <see cref="T:System.Windows.Documents.TextElement" /> or a descendant of <see cref="T:System.Windows.Documents.TextElement" />.</typeparam>
+    <summary>Provides standard facilities for creating and managing a type-safe, ordered collection of <see cref="T:System.Windows.Documents.TextElement" /> objects.  This is a generic collection for working with objects of a specified type that derives from <see cref="T:System.Windows.Documents.TextElement" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This collection supports zero-based indexing.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -49,9 +56,11 @@
         <Parameter Name="item" Type="TextElementType" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="item">An item to append to the collection.</param>
+        <summary>Appends a specified item to the collection.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">Raised when *item* already belongs to a collection.</exception>
+        <exception cref="T:System.ArgumentNullException">Raised when *item* is **null**.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -70,9 +79,11 @@
         <Parameter Name="range" Type="System.Collections.IEnumerable" />
       </Parameters>
       <Docs>
-        <param name="range">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="range">An object that implements the <see cref="T:System.Collections.IEnumerable" /> interface, and that specifies a range of items to add to the collection.</param>
+        <summary>Appends a specified range of items to the collection.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">Raised when *range* includes any **null** items.</exception>
+        <exception cref="T:System.ArgumentNullException">Raised when *range* is **null**.</exception>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -89,7 +100,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Clears all items from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,9 +120,9 @@
         <Parameter Name="item" Type="TextElementType" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">An item to query for the presence of in the collection.</param>
+        <summary>Queries for the presence of a specified item in the collection.</summary>
+        <returns>**true** if the specified *item* is present in the collection; otherwise, **false**.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,10 +143,13 @@
         <Parameter Name="arrayIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="arrayIndex">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">A one-dimensional array to which the collection contents will be copied.  This array must use zero-based indexing.</param>
+        <param name="arrayIndex">A zero-based index in <c>array</c> specifying the position at which to begin inserting the copied collection objects.</param>
+        <summary>Copies the contents of the collection and inserts them into a specified array starting at a specified index position in the array.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">Raised when *array* includes items that are not compatible with the type <see cref="T:System.Windows.Documents.TextElement" />, or if *arrayIndex* specifies a position that falls outside of the bounds of *array*.</exception>
+        <exception cref="T:System.ArgumentNullException">Raised when *array* is **null**.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">Raised when *arrayIndex* is less than **0**.</exception>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -151,8 +165,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of items currently in the collection.</summary>
+        <value>The number of items currently in the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -170,8 +184,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an enumerator for the contents of the collection.</summary>
+        <returns>An enumerator for the contents of the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -192,10 +206,13 @@
         <Parameter Name="newItem" Type="TextElementType" />
       </Parameters>
       <Docs>
-        <param name="previousSibling">To be added.</param>
-        <param name="newItem">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="previousSibling">An item in the collection after which the new item will be inserted.</param>
+        <param name="newItem">An item to insert into the collection.</param>
+        <summary>Inserts a specified item in the collection after a specified collection item.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">Raised when *newItem* already belongs to a collection.</exception>
+        <exception cref="T:System.ArgumentNullException">Raised when *previousSibling* or *newItem* is **null**.</exception>
+        <exception cref="T:System.InvalidOperationException">Raised when *previousSibling* does not belong to this collection.</exception>
       </Docs>
     </Member>
     <Member MemberName="InsertBefore">
@@ -215,10 +232,13 @@
         <Parameter Name="newItem" Type="TextElementType" />
       </Parameters>
       <Docs>
-        <param name="nextSibling">To be added.</param>
-        <param name="newItem">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="nextSibling">An item in the collection before which the new item will be inserted.</param>
+        <param name="newItem">An item to insert into the collection.</param>
+        <summary>Inserts a specified item in the collection before a specified collection item.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">Raised when *newItem* already belongs to a collection.</exception>
+        <exception cref="T:System.ArgumentNullException">Raised when *nextSibling* or *newItem* is **null**.</exception>
+        <exception cref="T:System.InvalidOperationException">Raised when *nextSibling* does not belong to this collection.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -234,9 +254,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether or not the collection is read-only.</summary>
+        <value>**true** if the collection is read-only; otherwise, **false**.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Currently, this property always returns **false**.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -255,10 +282,17 @@
         <Parameter Name="item" Type="TextElementType" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="item">An item to be removed fro the collection.</param>
+        <summary>Removes a specified item from the collection.</summary>
+        <returns>**true** if the specified item was found and removed; otherwise, **false**.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns **false** if *item* is **null**.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -278,9 +312,9 @@
         <Parameter Name="arrayIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="arrayIndex">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the elements copied from <see cref="T:System.Collections.ICollection" />. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
+        <param name="arrayIndex">The zero-based index in <c>array</c> at which copying begins.</param>
+        <summary>Copies the elements of the <see cref="T:System.Collections.ICollection" /> to an <see cref="T:System.Array" />, starting at a particular <see cref="T:System.Array" /> index..  Use the type-safe <see cref="M:System.Windows.Documents.TextElementCollection`1.CopyTo(`0[],System.Int32)" /> method instead.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -297,8 +331,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of elements contained in the <see cref="T:System.Collections.ICollection" />.  Use the type-safe <see cref="P:System.Windows.Documents.TextElementCollection`1.Count" /> property instead.</summary>
+        <value>The number of elements contained in the <see cref="T:System.Collections.ICollection" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -315,8 +349,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether access to the <see cref="T:System.Collections.ICollection" /> is synchronized (thread safe).</summary>
+        <value>
+          <see langword="true" /> if access to the <see cref="T:System.Collections.ICollection" /> is synchronized (thread safe); otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -333,8 +368,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an object that can be used to synchronize access to the <see cref="T:System.Collections.ICollection" />.</summary>
+        <value>An object that can be used to synchronize access to the <see cref="T:System.Collections.ICollection" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -352,8 +387,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an enumerator that iterates through a collection.  Use the type-safe <see cref="M:System.Windows.Documents.TextElementCollection`1.GetEnumerator" /> method instead.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -373,9 +408,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The object to add to the <see cref="T:System.Collections.IList" />.</param>
+        <summary>Adds an item to the <see cref="T:System.Collections.IList" />.  Use the type-safe <see cref="M:System.Windows.Documents.TextElementCollection`1.Add(`0)" /> method instead.</summary>
+        <returns>The position into which the new element was inserted.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -393,7 +428,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type or member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.  Use the type-safe <see cref="M:System.Windows.Documents.TextElementCollection`1.Clear" /> method instead.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -413,9 +448,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The object to locate in the <see cref="T:System.Collections.IList" />.</param>
+        <summary>Determines whether the <see cref="T:System.Collections.IList" /> contains a specific value..  Use the type-safe <see cref="M:System.Windows.Documents.TextElementCollection`1.Contains(`0)" /> method instead.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Object" /> is found in the <see cref="T:System.Collections.IList" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -435,9 +471,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The object to locate in the <see cref="T:System.Collections.IList" />.</param>
+        <summary>Determines the index of a specific item in the <see cref="T:System.Collections.IList" />.</summary>
+        <returns>The index of <paramref name="value" /> if found in the list; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -458,9 +494,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The zero-based index at which <c>value</c> should be inserted.</param>
+        <param name="value">The object to insert into the <see cref="T:System.Collections.IList" />.</param>
+        <summary>Inserts an item to the <see cref="T:System.Collections.IList" /> at the specified index.  Use the type-safe <see cref="M:System.Windows.Documents.TextElementCollection`1.InsertAfter(`0,`0)" /> or <see cref="M:System.Windows.Documents.TextElementCollection`1.InsertBefore(`0,`0)" /> methods instead.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -477,8 +513,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the <see cref="T:System.Collections.IList" /> has a fixed size.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Collections.IList" /> has a fixed size; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -495,8 +532,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the <see cref="T:System.Collections.IList" /> is read-only.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Collections.IList" /> is read-only; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -516,9 +554,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The zero-based index of the element to get or set.</param>
+        <summary>Gets or sets the element at the specified index.</summary>
+        <value>The element at the specified index.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -538,8 +576,8 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The object to remove from the <see cref="T:System.Collections.IList" />.</param>
+        <summary>Removes the first occurrence of a specific object from the <see cref="T:System.Collections.IList" />.  Use the type-safe <see cref="M:System.Windows.Documents.TextElementCollection`1.Remove(`0)" /> method instead.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -559,8 +597,8 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The zero-based index of the item to remove.</param>
+        <summary>Removes the <see cref="T:System.Collections.IList" /> item at the specified index.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

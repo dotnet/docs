@@ -15,8 +15,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a collection of <see cref="T:System.Windows.Automation.AutomationElement" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Automation.AutomationElementCollection> is used as the return type for methods such as <xref:System.Windows.Automation.AutomationElement.FindAll%2A>. It is not intended to be used for application-defined collections, for which you should use a more generic class such as <xref:System.Collections.ArrayList>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CopyTo">
@@ -36,10 +43,20 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="array">The destination of the elements copied from the collection.</param>
+        <param name="index">The zero-based index in the target array where copying should begin.</param>
+        <summary>Copies the collection's elements to an array, starting at the specified index in the target array.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to copy an <xref:System.Windows.Automation.AutomationElementCollection> to an array of objects.  
+  
+ [!code-csharp[UIAClient_snip#118](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#118)]
+ [!code-vb[UIAClient_snip#118](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#118)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -59,10 +76,21 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="array">The destination of the elements copied from the collection.</param>
+        <param name="index">The zero-based index in the target array where copying should begin.</param>
+        <summary>Copies the collection's elements to a specialized array instance, starting at the specified index in the target array.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to copy an <xref:System.Windows.Automation.AutomationElementCollection> to an array of <xref:System.Windows.Automation.AutomationElement> objects.  
+  
+ [!code-csharp[UIAClient_snip#117](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#117)]
+ [!code-vb[UIAClient_snip#117](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#117)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The destination array is not large enough, or <paramref name="index" /> is outside the bounds of the array.</exception>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -78,9 +106,19 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of elements in this collection.</summary>
+        <value>The number of elements.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows the <xref:System.Windows.Automation.AutomationElementCollection.Count%2A> property being used.  
+  
+ [!code-csharp[UIAClient_snip#117](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#117)]
+ [!code-vb[UIAClient_snip#117](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#117)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -97,8 +135,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an enumerator that can be used to iterate through the items in the collection.</summary>
+        <returns>An enumerator that can be used to iterate through the <see cref="T:System.Windows.Automation.AutomationElementCollection" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,9 +153,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether the <see cref="T:System.Windows.Automation.AutomationElementCollection" /> object is synchronized (thread-safe).</summary>
+        <value>Always returns <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Windows.Automation.AutomationElementCollection> is not thread-safe.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -136,10 +181,21 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index of the element in the collection.</param>
+        <summary>Gets the <see cref="T:System.Windows.Automation.AutomationElement" /> at the specified index.</summary>
+        <value>The <see cref="T:System.Windows.Automation.AutomationElement" /> at the specified index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ In the following example, the first element is retrieved from an <xref:System.Windows.Automation.AutomationElementCollection>.  
+  
+ [!code-csharp[UIAClient_snip#182](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#182)]
+ [!code-vb[UIAClient_snip#182](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#182)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.IndexOutOfRangeException">A negative integer was specified for <paramref name="index" />, or <paramref name="index" /> is greater than or equal to <see cref="P:System.Windows.Automation.AutomationElementCollection.Count" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -155,8 +211,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an object that can be used to synchronize access to the <see cref="T:System.Windows.Automation.AutomationElementCollection" /> collection.</summary>
+        <value>An object that can be used to synchronize access to the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

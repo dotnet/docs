@@ -1,14 +1,17 @@
 ---
 uid: System.ComponentModel.DataAnnotations.UrlAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.UrlAttribute.IsValid(System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.UrlAttribute.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

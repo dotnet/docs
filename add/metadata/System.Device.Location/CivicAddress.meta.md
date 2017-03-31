@@ -1,64 +1,69 @@
 ---
 uid: System.Device.Location.CivicAddress
-internalonly: False
----
-
----
-uid: System.Device.Location.CivicAddress.IsUnknown
-internalonly: False
----
-
----
-uid: System.Device.Location.CivicAddress.City
-internalonly: False
----
-
----
-uid: System.Device.Location.CivicAddress.CountryRegion
-internalonly: False
----
-
----
-uid: System.Device.Location.CivicAddress.AddressLine1
-internalonly: False
----
-
----
-uid: System.Device.Location.CivicAddress.AddressLine2
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Device.Location.CivicAddress.#ctor
-internalonly: False
+manager: "martinek"
+---
+
+---
+uid: System.Device.Location.CivicAddress.IsUnknown
+manager: "martinek"
+---
+
+---
+uid: System.Device.Location.CivicAddress.City
+manager: "martinek"
+---
+
+---
+uid: System.Device.Location.CivicAddress.CountryRegion
+manager: "martinek"
+---
+
+---
+uid: System.Device.Location.CivicAddress.AddressLine1
+manager: "martinek"
+---
+
+---
+uid: System.Device.Location.CivicAddress.AddressLine2
+manager: "martinek"
+---
+
+---
+uid: System.Device.Location.CivicAddress.#ctor
+manager: "martinek"
 ---
 
 ---
 uid: System.Device.Location.CivicAddress.Unknown
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Device.Location.CivicAddress.StateProvince
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Device.Location.CivicAddress.Building
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Device.Location.CivicAddress.PostalCode
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Device.Location.CivicAddress.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Device.Location.CivicAddress.FloorLevel
-internalonly: False
+manager: "martinek"
 ---

@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.ObjectConverter
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ObjectConverter.ConvertValue(System.Object,System.Type,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ObjectConverter.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -1,114 +1,160 @@
 ---
 uid: System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.BodyType
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.Name
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.AcknowledgeType
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.ArrivedTime
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.ResponseQueue
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.SenderId
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.AppSpecific
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.Label
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.Priority
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.SentTime
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.CorrelationId
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.Body
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.AdministrationQueue
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.Id
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.Authenticated
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.DestinationQueue
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.Get(System.ServiceModel.Channels.Message)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.Extension
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.TimeToReachQueue
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.Acknowledgment
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.MessageType
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

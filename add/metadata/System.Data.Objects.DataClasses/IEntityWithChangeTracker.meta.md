@@ -1,9 +1,13 @@
 ---
 uid: System.Data.Objects.DataClasses.IEntityWithChangeTracker
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Objects.DataClasses.IEntityWithChangeTracker.SetChangeTracker(System.Data.Objects.DataClasses.IEntityChangeTracker)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

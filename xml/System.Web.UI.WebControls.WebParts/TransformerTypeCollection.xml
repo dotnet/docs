@@ -11,8 +11,19 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a read-only collection of <see cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.TransformerTypeCollection> class represents a read-only collection of objects, typically used by <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> and <xref:System.Web.UI.WebControls.WebParts.WebPartManager> objects to manage sets of <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> objects.  
+  
+ A <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control uses a <xref:System.Web.UI.WebControls.WebParts.TransformerTypeCollection> collection to keep a list of available <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> objects on a page, whereas a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> object uses a <xref:System.Web.UI.WebControls.WebParts.TransformerTypeCollection> collection to track the available <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> objects that it contains.  
+  
+ Although the <xref:System.Web.UI.WebControls.WebParts.TransformerTypeCollection> collection is read-only, you can make programmatic changes to the properties of the underlying controls referenced in the collection.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +37,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.TransformerTypeCollection" /> class with no members in the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,9 +54,11 @@
         <Parameter Name="transformerTypes" Type="System.Collections.ICollection" />
       </Parameters>
       <Docs>
-        <param name="transformerTypes">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="transformerTypes">A collection of <see cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" /> objects.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.TransformerTypeCollection" /> class containing the specified <see cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" /> objects.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="transformerTypes" /> contains objects that are not transformers.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -62,10 +75,12 @@
         <Parameter Name="transformerTypes" Type="System.Collections.ICollection" />
       </Parameters>
       <Docs>
-        <param name="existingTransformerTypes">To be added.</param>
-        <param name="transformerTypes">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="existingTransformerTypes">A collection of <see cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" /> objects already contained in a <see cref="T:System.Web.UI.WebControls.WebParts.TransformerTypeCollection" />.</param>
+        <param name="transformerTypes">A collection of <see cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" /> objects to combine with the collection in the <c>existingTransformerTypes</c> parameter.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.TransformerTypeCollection" /> class by combining an existing <see cref="T:System.Web.UI.WebControls.WebParts.TransformerTypeCollection" /> collection with the specified <see cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" /> objects.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="transformerTypes" /> contains objects that are not transformers.</exception>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -84,10 +99,17 @@
         <Parameter Name="value" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">A <see cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" /> that is checked to determine whether it is in the collection.</param>
+        <summary>Returns a value indicating whether a particular transformer exists in the collection.</summary>
+        <returns>A Boolean value that indicates whether a particular transformer is in the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.TransformerTypeCollection.Contains%2A> method enables you to check a particular <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> object and determine whether it is part of a <xref:System.Web.UI.WebControls.WebParts.TransformerTypeCollection> collection.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -107,10 +129,17 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="array">An array of <see cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" /> objects to contain the copied collection.</param>
+        <param name="index">The starting point in the array at which to place the collection contents.</param>
+        <summary>Copies the collection to an array of <see cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" /> objects.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.TransformerTypeCollection.CopyTo%2A> method is useful when you want to assemble a custom array that can contain all the <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> objects in the <xref:System.Web.UI.WebControls.WebParts.TransformerTypeCollection> collection, a subset of those objects, or a superset of those objects.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Empty">
@@ -126,8 +155,15 @@
         <ReturnType>System.Web.UI.WebControls.WebParts.TransformerTypeCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Creates a collection for storing transformers.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.TransformerTypeCollection.Empty> field creates and returns a new instance of the <xref:System.Web.UI.WebControls.WebParts.TransformerTypeCollection> object. The instance is created through the <xref:System.Web.UI.WebControls.WebParts.TransformerTypeCollection.%23ctor%2A> constructor and does not contain any existing members in the collection.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -146,9 +182,9 @@
         <Parameter Name="value" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">A <see cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" /> that is a member of the collection.</param>
+        <summary>Returns the position of a particular member in the collection.</summary>
+        <returns>An integer that indicates the position of a particular object in the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -168,9 +204,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The index of a particular <see cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" /> in a collection.</param>
+        <summary>Gets a member of the collection based on its position in the collection.</summary>
+        <value>The <see cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" /> located at <paramref name="index" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

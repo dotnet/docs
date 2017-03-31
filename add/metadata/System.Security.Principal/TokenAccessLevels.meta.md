@@ -1,4 +1,6 @@
 ---
 uid: System.Security.Principal.TokenAccessLevels
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

@@ -19,9 +19,23 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="T">The type of the values provided in the <see cref="P:System.Activities.Statements.ForEach`1.Values" /> collection.</typeparam>
+    <summary>Executes an activity action once for each value provided in the <see cref="P:System.Activities.Statements.ForEach`1.Values" /> collection.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Activities.Statements.ForEach> is similar to the keyword `foreach`, but is implemented as an activity rather than a language statement. Note that unlike `foreach` in C#, the <xref:System.Activities.Statements.ForEach%601> activity uses <xref:System.Collections.IEnumerable%601.GetEnumerator%2A>, rather than <xref:System.Collections.IEnumerator%23System%23Collections%23IEnumerable%23GetEnumerator%2A>.  
+  
+   
+  
+## Examples  
+ The following code sample demonstrates creating a <xref:System.Activities.Statements.ForEach%601> activity. This example is from the [DynamicActivity Creation](../Topic/DynamicActivity%20Creation.md) sample.  
+  
+ [!code-csharp[wfs_DynamicActivityCreation#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_dynamicactivitycreation/cs/program.cs#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,8 +49,17 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Statements.ForEach`1" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates creating a <xref:System.Activities.Statements.ForEach%601> activity. This example is from the [DynamicActivity Creation](../Topic/DynamicActivity%20Creation.md) sample.  
+  
+ [!code-csharp[wfs_DynamicActivityCreation#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_dynamicactivitycreation/cs/program.cs#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Body">
@@ -57,9 +80,18 @@
         <ReturnType>System.Activities.ActivityAction&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="T:System.Activities.ActivityAction" /> to be executed for each item in the <see cref="P:System.Activities.Statements.ForEach`1.Values" /> collection.</summary>
+        <value>The action to be executed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates setting the Body property of a <xref:System.Activities.Statements.ForEach%601> activity. This example is from the [DynamicActivity Creation](../Topic/DynamicActivity%20Creation.md) sample.  
+  
+ [!code-csharp[wfs_DynamicActivityCreation#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_dynamicactivitycreation/cs/program.cs#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CacheMetadata">
@@ -148,9 +180,18 @@
         <ReturnType>System.Activities.InArgument&lt;System.Collections.Generic.IEnumerable&lt;T&gt;&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>The activity’s collection of inputs for the execution of the <see cref="P:System.Activities.Statements.ForEach`1.Body" /> activity action.</summary>
+        <value>The collection of values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates setting the Values property of a <xref:System.Activities.Statements.ForEach%601> activity. This example is from the [DynamicActivity Creation](../Topic/DynamicActivity%20Creation.md) sample.  
+  
+ [!code-csharp[wfs_DynamicActivityCreation#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_dynamicactivitycreation/cs/program.cs#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

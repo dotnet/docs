@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>A configuration element that contains a <see cref="T:System.String" /> name and <see cref="T:System.String" /> value. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.NameValueConfigurationElement> inherits from the <xref:System.Configuration.ConfigurationElement> base class. The <xref:System.Configuration.ConfigurationElement> represents an element within a configuration file.  
+  
+ There is a difference between the <xref:System.Configuration.NameValueConfigurationElement> class and <xref:System.Configuration.KeyValueConfigurationElement> class. The <xref:System.Configuration.NameValueConfigurationElement> class does not require the first string to be unique, whereas <xref:System.Configuration.KeyValueConfigurationElement> class requires the first string to be a key, and therefore unique in the collection.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -29,9 +38,9 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the <see cref="T:System.Configuration.NameValueConfigurationElement" /> object.</param>
+        <param name="value">The value of the <see cref="T:System.Configuration.NameValueConfigurationElement" /> object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.NameValueConfigurationElement" /> class based on supplied parameters.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,8 +62,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the <see cref="T:System.Configuration.NameValueConfigurationElement" /> object.</summary>
+        <value>The name of the <see cref="T:System.Configuration.NameValueConfigurationElement" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,8 +103,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value of the <see cref="T:System.Configuration.NameValueConfigurationElement" /> object.</summary>
+        <value>The value of the <see cref="T:System.Configuration.NameValueConfigurationElement" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

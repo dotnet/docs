@@ -23,8 +23,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines a name for text input patterns.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The names defined by this class are used by the <xref:System.Windows.Input.InputScopePhrase> class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,7 +45,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.InputScopeName" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,8 +62,8 @@
         <Parameter Name="nameValue" Type="System.Windows.Input.InputScopeNameValue" />
       </Parameters>
       <Docs>
-        <param name="nameValue">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="nameValue">The input scope name which modifies how input from alternative input methods is interpreted.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.InputScopeName" /> class with the specified <see cref="P:System.Windows.Input.InputScopeName.NameValue" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,8 +83,8 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The object to be added as the child of this <see cref="T:System.Windows.Input.InputScopeName" />.</param>
+        <summary>Adds a child object to this <see cref="T:System.Windows.Input.InputScopeName" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,8 +104,8 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The text added to the <see cref="T:System.Windows.Input.InputScopeName" />.</param>
+        <summary>Adds a text string as a child of this <see cref="T:System.Windows.Input.InputScopeName" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,9 +122,27 @@
         <ReturnType>System.Windows.Input.InputScopeNameValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the input scope name value which modifies how input from alternative input methods is interpreted.</summary>
+        <value>The input scope name value which modifies how input from alternative input methods is interpreted.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_InputScopeName"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object NameValue="inputScopeNameValue"/>  
+```  
+  
+<a name="xamlValues_InputScopeName"></a>   
+## XAML Values  
+ *inputScopeNameValue*  
+ String representation of a <xref:System.Windows.Input.InputScopeNameValue> value.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

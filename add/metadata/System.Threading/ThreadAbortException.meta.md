@@ -1,9 +1,13 @@
 ---
 uid: System.Threading.ThreadAbortException
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Threading.ThreadAbortException.ExceptionState
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

@@ -1,19 +1,31 @@
 ---
 uid: System.Configuration.CommaDelimitedStringCollectionConverter
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.CommaDelimitedStringCollectionConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.CommaDelimitedStringCollectionConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.CommaDelimitedStringCollectionConverter.ConvertTo
 ---
 
 ---
 uid: System.Configuration.CommaDelimitedStringCollectionConverter.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.CommaDelimitedStringCollectionConverter.ConvertFrom
 ---

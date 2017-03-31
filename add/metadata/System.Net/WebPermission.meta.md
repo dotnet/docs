@@ -1,79 +1,107 @@
 ---
 uid: System.Net.WebPermission
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebPermission.Union(System.Security.IPermission)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebPermission.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebPermission.#ctor(System.Net.NetworkAccess,System.Text.RegularExpressions.Regex)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebPermission.IsSubsetOf(System.Security.IPermission)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebPermission.AddPermission(System.Net.NetworkAccess,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebPermission.IsUnrestricted
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebPermission.ConnectList
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebPermission.#ctor(System.Security.Permissions.PermissionState)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebPermission.#ctor(System.Net.NetworkAccess,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.WebPermission.AddPermission
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebPermission.ToXml
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebPermission.AddPermission(System.Net.NetworkAccess,System.Text.RegularExpressions.Regex)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.WebPermission.#ctor
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebPermission.Intersect(System.Security.IPermission)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebPermission.Copy
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebPermission.FromXml(System.Security.SecurityElement)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebPermission.AcceptList
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

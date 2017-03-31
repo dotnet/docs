@@ -15,7 +15,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides extension methods for accessing user principal associated with the HTTP request message.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,9 +35,9 @@
         <Parameter Name="httpRequestMessage" Type="System.Net.Http.HttpRequestMessage" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="httpRequestMessage">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="httpRequestMessage">The HTTP request message from which to get the user principal.</param>
+        <summary>Gets the user principal associated with the specified HTTP request message.</summary>
+        <returns>The user principal associated with the specified HTTP request message.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,9 +58,9 @@
         <Parameter Name="user" Type="System.Security.Principal.IPrincipal" />
       </Parameters>
       <Docs>
-        <param name="httpRequestMessage">To be added.</param>
-        <param name="user">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="httpRequestMessage">The HTTP request message from which to set the user principal.</param>
+        <param name="user">The user principal to set.</param>
+        <summary>Replaces the user principal associated with the specified HTTP request message.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,10 +80,17 @@
         <Parameter Name="httpRequestMessage" Type="System.Net.Http.HttpRequestMessage" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="httpRequestMessage">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="httpRequestMessage">The <see cref="T:System.Net.Http.HttpRequestMessage" /> from which to create the <see cref="T:System.ServiceModel.Channels.Message" /> instance.</param>
+        <summary>Creates a <see cref="T:System.ServiceModel.Channels.Message" /> instance from an <see cref="T:System.Net.Http.HttpRequestMessage" /> instance.</summary>
+        <returns>The new <see cref="T:System.ServiceModel.Channels.Message" /> instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Channels.Message> instance can be read, written and copied  just as a traditional <xref:System.ServiceModel.Channels.ByteStreamMessage> instance. The <xref:System.ServiceModel.Channels.Message> instance can also "read" to retrieve the original <xref:System.Net.Http.HttpRequestMessage> instance by calling the <xref:System.ServiceModel.Channels.MessageExtensionMethods.ToHttpRequestMessage%2A> extension method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

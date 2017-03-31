@@ -16,8 +16,37 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the sequence of dashes and gaps that will be applied by a <see cref="T:System.Windows.Media.Pen" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.DashStyle.Dashes%2A> property of this class describes the length of alternating dashes and gaps.  The values in the collection are in terms of multiples of the <xref:System.Windows.Media.Pen.Thickness%2A> of the <xref:System.Windows.Media.Pen>.  For example, an array of `1`,`2` specifies a dash of length (`1` * <xref:System.Windows.Media.Pen.Thickness%2A>) followed by a gap of length (`2` * <xref:System.Windows.Media.Pen.Thickness%2A>).  
+  
+> [!NOTE]
+>  The actual length of the dash that is drawn depends on the style of <xref:System.Windows.Media.Pen.DashCap%2A> that is added to each end of the dash. The default <xref:System.Windows.Media.Pen.DashCap%2A> value for a <xref:System.Windows.Media.Pen> is <xref:System.Windows.Media.PenLineCap>. This causes an end cap that is one half the thickness of the line to be added onto each end of the pen stroke. (See <xref:System.Windows.Media.PenLineCap> for an example.) Therefore, if you specify an array of `0`, `2` and a square <xref:System.Windows.Media.Pen.DashCap%2A>, the actual dash length will be (`0` * <xref:System.Windows.Media.Pen.Thickness%2A>) + (`2` * <xref:System.Windows.Media.Pen.DashCap%2A>).  
+  
+ If there are an odd number of values in the collection, the values are interpreted as if they had been repeated once to produce an even number of values.  For example, a collection containing `2`,`3`,`5` is interpreted the same as a collection containing `2`,`3`,`5`,`2`,`3`,`5`.  
+  
+ Negative values in the array are interpreted as their absolute value.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Media.DashStyle> property of a <xref:System.Windows.Media.Pen> to create a dashed line under text.  
+  
+ [!code-xml[DrawingMiscSnippets_snip#DashStyle](~/samples/snippets/xaml/VS_Snippets_Wpf/DrawingMiscSnippets_snip/XAML/DashStyleExample.xaml#dashstyle)]  
+  
+ The following illustration shows what the preceding example produces.  
+  
+ ![Text with dashed line underneath.](~/add/media/graphicsdashstyle.gif "Text with dashed line underneath.")  
+  
+ The following illustration shows examples of different dash styles applied to an underline.  
+  
+ ![Shows several different dash styles.](~/add/media/graphicsdashstyles.gif "Shows several different dash styles.")  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +60,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.DashStyle" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,9 +78,9 @@
         <Parameter Name="offset" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="dashes">To be added.</param>
-        <param name="offset">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="dashes">The <see cref="P:System.Windows.Media.DashStyle.Dashes" /> of the <see cref="T:System.Windows.Media.DashStyle" />.</param>
+        <param name="offset">The <see cref="P:System.Windows.Media.DashStyle.Offset" /> of the <see cref="T:System.Windows.Media.DashStyle" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.DashStyle" /> class with the specified <see cref="P:System.Windows.Media.DashStyle.Dashes" /> and <see cref="P:System.Windows.Media.DashStyle.Offset" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,9 +98,20 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.DashStyle" />, making deep copies of this object's values.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true." /></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+  
+ When copying dependency properties, this method copies resource references and data bindings (they might no longer resolve) but not animations or their current values.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CloneCurrentValue">
@@ -88,9 +128,20 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.DashStyle" /> object, making deep copies of this object's current values.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+  
+ Resource references, data bindings, and animations are not copied, but their current values are.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceCore">
@@ -125,9 +176,38 @@
         <ReturnType>System.Windows.Media.DoubleCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the collection of dashes and gaps in this <see cref="T:System.Windows.Media.DashStyle" />.</summary>
+        <value>The collection of dashes and gaps.  The default is an empty <see cref="T:System.Windows.Media.DoubleCollection" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This collection describes the length of alternating dashes and gaps.  The values in the collection are in terms of multiples of the <xref:System.Windows.Media.Pen.Thickness%2A> of the <xref:System.Windows.Media.Pen>.  For example, an array of `1`,`2` specifies a dash of length (`1` * <xref:System.Windows.Media.Pen.Thickness%2A>) followed by a gap of length (`2` * <xref:System.Windows.Media.Pen.Thickness%2A>).  
+  
+> [!NOTE]
+>  The actual length of the dash that is drawn depends on the style of <xref:System.Windows.Media.Pen.DashCap%2A> that is added to each end of the dash. The default <xref:System.Windows.Media.Pen.DashCap%2A> value for a <xref:System.Windows.Media.Pen> is <xref:System.Windows.Media.PenLineCap>. This causes an end cap that is one half the thickness of the line to be added onto each end of the pen stroke. (See <xref:System.Windows.Media.PenLineCap> for an example.) Therefore, if you specify an array of `0`, `2` and a square <xref:System.Windows.Media.Pen.DashCap%2A>, the actual dash length will be (`0` * <xref:System.Windows.Media.Pen.Thickness%2A>) + (`2` * <xref:System.Windows.Media.Pen.DashCap%2A>).  
+  
+ If there are an odd number of values in the collection, the values are interpreted as if they had been repeated once to produce an even number of values.  For example, a collection containing `2`,`3`,`5` is interpreted the same as a collection containing `2`,`3`,`5`,`2`,`3`,`5`.  
+  
+ Negative values in the array are interpreted as their absolute value.  
+  
+<a name="dependencyPropertyInfo_Dashes"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.DashStyle.DashesProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Media.DashStyle> property of a <xref:System.Windows.Media.Pen> to create a dashed line under text.  
+  
+ [!code-xml[DrawingMiscSnippets_snip#DashStyle](~/samples/snippets/xaml/VS_Snippets_Wpf/DrawingMiscSnippets_snip/XAML/DashStyleExample.xaml#dashstyle)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DashesProperty">
@@ -143,7 +223,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Media.DashStyle.Dashes" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,9 +240,24 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets how far in the dash sequence the stroke will start.</summary>
+        <value>The offset for the dash sequence.  The default is 0.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ It is strongly recommended to use an offset value that resolves to the middle of any dash.  This will make most strokes start and end in mid dash rather than at a gap.  
+  
+<a name="dependencyPropertyInfo_Offset"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.DashStyle.OffsetProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OffsetProperty">
@@ -178,7 +273,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Media.DashStyle.Offset" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

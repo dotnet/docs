@@ -1,9 +1,9 @@
 ---
 uid: Microsoft.JScript.IMessageReceiver
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.IMessageReceiver.Message(System.String)
-internalonly: False
+ms.author: "mikejo"
 ---

@@ -1,29 +1,48 @@
 ---
 uid: System.ComponentModel.Composition.ChangeRejectedException
-internalonly: False
----
-
----
-uid: System.ComponentModel.Composition.ChangeRejectedException.#ctor(System.Collections.Generic.IEnumerable{System.ComponentModel.Composition.CompositionError})
-internalonly: False
----
-
----
-uid: System.ComponentModel.Composition.ChangeRejectedException.Message
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.ChangeRejectedException.#ctor
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Composition.ChangeRejectedException.#ctor(System.Collections.Generic.IEnumerable{System.ComponentModel.Composition.CompositionError})
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Composition.ChangeRejectedException.Message
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Composition.ChangeRejectedException.#ctor
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.ChangeRejectedException.#ctor(System.String)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.ChangeRejectedException.#ctor(System.String,System.Exception)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

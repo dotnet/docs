@@ -15,8 +15,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines constants that specify the visibility of row and column headers in a <see cref="T:System.Windows.Controls.DataGrid" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the <xref:System.Windows.Controls.DataGrid.HeadersVisibility%2A> property.  
+  
+ The style of the headers is determined by the <xref:System.Windows.Controls.DataGrid.RowHeaderStyle%2A> and <xref:System.Windows.Controls.DataGrid.ColumnHeaderStyle%2A> properties.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="All">
@@ -32,7 +41,7 @@
         <ReturnType>System.Windows.Controls.DataGridHeadersVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Both row and column headers are visible.</summary>
       </Docs>
     </Member>
     <Member MemberName="Column">
@@ -48,7 +57,7 @@
         <ReturnType>System.Windows.Controls.DataGridHeadersVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Only column headers are visible.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -64,7 +73,7 @@
         <ReturnType>System.Windows.Controls.DataGridHeadersVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No headers are visible.</summary>
       </Docs>
     </Member>
     <Member MemberName="Row">
@@ -80,7 +89,7 @@
         <ReturnType>System.Windows.Controls.DataGridHeadersVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Only row headers are visible.</summary>
       </Docs>
     </Member>
   </Members>

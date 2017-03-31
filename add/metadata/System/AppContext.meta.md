@@ -1,19 +1,41 @@
 ---
 uid: System.AppContext
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.AppContext.BaseDirectory
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.AppContext.TryGetSwitch(System.String,System.Boolean@)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.AppContext.SetSwitch(System.String,System.Boolean)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.AppContext.GetData(System.String)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.AppContext.TargetFrameworkName
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

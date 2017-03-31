@@ -1,79 +1,118 @@
 ---
 uid: System.Data.ForeignKeyConstraint
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.ForeignKeyConstraint.#ctor(System.String,System.Data.DataColumn,System.Data.DataColumn)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.ForeignKeyConstraint.Columns
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.ForeignKeyConstraint.#ctor
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.ForeignKeyConstraint.Table
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.ForeignKeyConstraint.UpdateRule
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.ForeignKeyConstraint.RelatedTable
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.ForeignKeyConstraint.RelatedColumns
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.ForeignKeyConstraint.#ctor(System.String,System.Data.DataColumn[],System.Data.DataColumn[])
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.ForeignKeyConstraint.#ctor(System.String,System.String,System.String[],System.String[],System.Data.AcceptRejectRule,System.Data.Rule,System.Data.Rule)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.ForeignKeyConstraint.#ctor(System.Data.DataColumn,System.Data.DataColumn)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.ForeignKeyConstraint.#ctor(System.String,System.String,System.String,System.String[],System.String[],System.Data.AcceptRejectRule,System.Data.Rule,System.Data.Rule)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.ForeignKeyConstraint.#ctor(System.Data.DataColumn[],System.Data.DataColumn[])
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.ForeignKeyConstraint.Equals(System.Object)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.ForeignKeyConstraint.DeleteRule
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.ForeignKeyConstraint.AcceptRejectRule
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.ForeignKeyConstraint.GetHashCode
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

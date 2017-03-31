@@ -1,19 +1,27 @@
 ---
 uid: System.Runtime.InteropServices.WindowsRuntime.DesignerNamespaceResolveEventArgs
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.WindowsRuntime.DesignerNamespaceResolveEventArgs.NamespaceName
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.WindowsRuntime.DesignerNamespaceResolveEventArgs.ResolvedAssemblyFiles
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.WindowsRuntime.DesignerNamespaceResolveEventArgs.#ctor(System.String)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

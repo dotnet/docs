@@ -1,24 +1,35 @@
 ---
 uid: System.Net.Configuration.ConnectionManagementElement
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.ConnectionManagementElement.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.ConnectionManagementElement.#ctor(System.String,System.Int32)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.ConnectionManagementElement.Address
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.ConnectionManagementElement.MaxConnection
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Configuration.ConnectionManagementElement.#ctor
+ms.author: "bobdel"
+manager: "markl"
 ---

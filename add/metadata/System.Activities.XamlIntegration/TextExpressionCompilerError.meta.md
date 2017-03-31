@@ -1,24 +1,34 @@
 ---
 uid: System.Activities.XamlIntegration.TextExpressionCompilerError
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.XamlIntegration.TextExpressionCompilerError.IsWarning
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.XamlIntegration.TextExpressionCompilerError.Number
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.XamlIntegration.TextExpressionCompilerError.SourceLineNumber
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.XamlIntegration.TextExpressionCompilerError.Message
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

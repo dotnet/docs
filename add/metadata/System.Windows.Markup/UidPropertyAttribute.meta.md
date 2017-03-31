@@ -1,14 +1,14 @@
 ---
 uid: System.Windows.Markup.UidPropertyAttribute
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.UidPropertyAttribute.#ctor(System.String)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.UidPropertyAttribute.Name
-internalonly: False
+manager: "martinek"
 ---

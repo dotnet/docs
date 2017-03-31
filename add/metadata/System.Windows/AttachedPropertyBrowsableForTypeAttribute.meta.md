@@ -1,29 +1,40 @@
 ---
 uid: System.Windows.AttachedPropertyBrowsableForTypeAttribute
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.AttachedPropertyBrowsableForTypeAttribute.GetHashCode
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.AttachedPropertyBrowsableForTypeAttribute.#ctor(System.Type)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.AttachedPropertyBrowsableForTypeAttribute.TargetType
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.AttachedPropertyBrowsableForTypeAttribute.Equals(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.AttachedPropertyBrowsableForTypeAttribute.TypeId
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

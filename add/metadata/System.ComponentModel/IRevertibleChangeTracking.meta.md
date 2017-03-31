@@ -1,9 +1,13 @@
 ---
 uid: System.ComponentModel.IRevertibleChangeTracking
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.IRevertibleChangeTracking.RejectChanges
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

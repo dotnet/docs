@@ -1,9 +1,9 @@
 ---
 uid: System.ServiceModel.Configuration.UdpBindingCollectionElement
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.UdpBindingCollectionElement.#ctor
-internalonly: False
+manager: "ghogen"
 ---

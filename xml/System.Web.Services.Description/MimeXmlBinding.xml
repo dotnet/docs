@@ -17,8 +17,24 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an extensibility element added to a <see cref="T:System.Web.Services.Description.MimePart" />, an <see cref="T:System.Web.Services.Description.InputBinding" /> or an <see cref="T:System.Web.Services.Description.OutputBinding" />. It specifies the schema for XML messages that are not SOAP compliant. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about specifying protocols for XML Web services, see [&#91;\<topic://cpconbuildingaspnetwebservices>&#93;](http://msdn.microsoft.com/en-us/01dfc27c-c68e-4910-a0aa-5e4c2a766b0c). For more information about Web Services Description Language (WSDL), see the specification at http://www.w3.org/TR/wsdl/.  
+  
+   
+  
+## Examples  
+ The following example demonstrates a typical use of the `MimeXmlBinding` class.  
+  
+ [!code-cpp[MimeXmlBinding_Part_3#1](~/samples/snippets/cpp/VS_Snippets_Remoting/MimeXmlBinding_Part_3/CPP/mimexmlbinding_part_3.cpp#1)]
+ [!code-csharp[MimeXmlBinding_Part_3#1](~/samples/snippets/csharp/VS_Snippets_Remoting/MimeXmlBinding_Part_3/CS/mimexmlbinding_part_3.cs#1)]
+ [!code-vb[MimeXmlBinding_Part_3#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MimeXmlBinding_Part_3/VB/mimexmlbinding_part_3.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,7 +49,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Description.MimeXmlBinding" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,9 +72,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the <see cref="T:System.Web.Services.Description.MessagePart" /> to which the <see cref="T:System.Web.Services.Description.MimeXmlBinding" /> applies.</summary>
+        <value>The name of the corresponding <see cref="T:System.Web.Services.Description.MessagePart" />. The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ MimeXmlBinding_Part_3#3  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

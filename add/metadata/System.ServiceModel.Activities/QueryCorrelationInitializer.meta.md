@@ -1,14 +1,20 @@
 ---
 uid: System.ServiceModel.Activities.QueryCorrelationInitializer
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.QueryCorrelationInitializer.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.QueryCorrelationInitializer.MessageQuerySet
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

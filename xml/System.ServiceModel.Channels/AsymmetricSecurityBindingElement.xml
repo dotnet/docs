@@ -15,8 +15,40 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a custom binding element that supports channel security using asymmetric encryption. This binding element signs the message using the sender's authentication token and encrypts the message using the recipient's token.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A custom binding contains a collection of binding elements arranged in a specific order: the element that represents the top of the binding stack is added first, the next element down in the binding stack, is added second, and so forth.  
+  
+### To add this class to a binding  
+  
+1.  Create a <xref:System.ServiceModel.Channels.BindingElementCollection>.  
+  
+2.  Create custom binding elements that is above this binding element in the binding stack, such as the optional <xref:System.ServiceModel.Channels.TransactionFlowBindingElement> and <xref:System.ServiceModel.Channels.ReliableSessionBindingElement>.  
+  
+3.  Add the created elements in the preceding order to the <xref:System.ServiceModel.Channels.BindingElementCollection> using the <xref:System.ServiceModel.Channels.BindingElementCollection.InsertItem%28System.Int32%2CSystem.ServiceModel.Channels.BindingElement%29> method.  
+  
+4.  Create an instance of <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement> and add it to the collection.  
+  
+5.  Add any additional custom binding elements to the collection, such as <xref:System.ServiceModel.Channels.TcpTransportBindingElement>.  
+  
+ Before using this class, you should determine if a standard binding meets your security requirements.  
+  
+> [!NOTE]
+>  Once an instance of this object is created, you should treat the properties of its base class <xref:System.ServiceModel.Channels.SecurityBindingElement> as immutable. Calling set on some properties may have unpredictable effects: the binding may behave as if the property retained its old value, with a run-time failure being the only indication of an issue. Two properties known to behave this way are <xref:System.ServiceModel.Security.Tokens.IssuedSecurityTokenParameters.KeyType%2A> and <xref:System.ServiceModel.Channels.SecurityBindingElement.MessageSecurityVersion%2A>. There may be other properties this is true of.  
+  
+   
+  
+## Examples  
+ The following example shows how to use this class to create a custom binding that includes this class as a security binding element. [!INCLUDE[crabout](~/includes/crabout-md.md)] the code in this example, see [How to: Consistently Reference X.509 Certificates](../Topic/How%20to:%20Consistently%20Reference%20X.509%20Certificates.md).  
+  
+ [!code-csharp[S_UEAssymetricSecurityBindingElement#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueassymetricsecuritybindingelement/cs/source.cs#1)]
+ [!code-vb[S_UEAssymetricSecurityBindingElement#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueassymetricsecuritybindingelement/vb/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,8 +62,23 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Creates an instance of this class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following members are set by this constructor:  
+  
+|Member|Value|  
+|------------|-----------|  
+|<xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement.MessageProtectionOrder%2A>|<xref:System.ServiceModel.Security.MessageProtectionOrder>|  
+|<xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement.RequireSignatureConfirmation%2A>|`false`|  
+|<xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement.InitiatorTokenParameters%2A>|`null`|  
+|<xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement.RecipientTokenParameters%2A>|`null`|  
+|<xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement.AllowSerializedSigningTokenOnReply%2A>|`false`|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -47,9 +94,24 @@
         <Parameter Name="recipientTokenParameters" Type="System.ServiceModel.Security.Tokens.SecurityTokenParameters" />
       </Parameters>
       <Docs>
-        <param name="recipientTokenParameters">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="recipientTokenParameters">Defines the token for the recipient (for example, the server's X.509 certificate).</param>
+        <summary>Initializes a new instance of <see cref="T:System.ServiceModel.Channels.AsymmetricSecurityBindingElement" /> with the specified recipient token parameters.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following members are set by this constructor:  
+  
+|Member|Value|  
+|------------|-----------|  
+|<xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement.MessageProtectionOrder%2A>|<xref:System.ServiceModel.Security.MessageProtectionOrder>|  
+|<xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement.RequireSignatureConfirmation%2A>|`false`|  
+|<xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement.InitiatorTokenParameters%2A>|`null`|  
+|<xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement.RecipientTokenParameters%2A>|`recipientTokenParameters`|  
+|<xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement.AllowSerializedSigningTokenOnReply%2A>|`false`|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -66,10 +128,33 @@
         <Parameter Name="initiatorTokenParameters" Type="System.ServiceModel.Security.Tokens.SecurityTokenParameters" />
       </Parameters>
       <Docs>
-        <param name="recipientTokenParameters">To be added.</param>
-        <param name="initiatorTokenParameters">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="recipientTokenParameters">Defines the token for the recipient (for example the server's X.509 certificate).</param>
+        <param name="initiatorTokenParameters">Defines the token for the initiator (for example, the client's X.509 certificate).</param>
+        <summary>Initializes a new instance of <see cref="T:System.ServiceModel.Channels.AsymmetricSecurityBindingElement" /> with the specified recipient and initiator token parameters.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following members are set by this constructor:  
+  
+|Member|Value|  
+|------------|-----------|  
+|<xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement.MessageProtectionOrder%2A>|<xref:System.ServiceModel.Security.MessageProtectionOrder>|  
+|<xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement.RequireSignatureConfirmation%2A>|`false`|  
+|<xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement.InitiatorTokenParameters%2A>|`initiatorTokenParameters`|  
+|<xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement.RecipientTokenParameters%2A>|`recipientTokenParameters`|  
+|<xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement.AllowSerializedSigningTokenOnReply%2A>|`false`|  
+  
+   
+  
+## Examples  
+ The following code shows one way to call this constructor.  
+  
+ [!code-csharp[S_UEAssymetricSecurityBindingElement#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueassymetricsecuritybindingelement/cs/source.cs#2)]
+ [!code-vb[S_UEAssymetricSecurityBindingElement#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueassymetricsecuritybindingelement/vb/source.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowSerializedSigningTokenOnReply">
@@ -85,9 +170,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether serializing a signing token on a reply message is allowed.</summary>
+        <value>
+          <see langword="true" /> if serializing a signing token on a reply message is allowed; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This flag is intended to enable interoperability with some older implementations of WS-Security (for example, WSE 2.0).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BuildChannelFactoryCore&lt;TChannel&gt;">
@@ -161,9 +254,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a new instance of this class initialized from the current one.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.BindingElement" /> object with property values equal to those of the current instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This creates a complete copy of the current binding element object tree, also called a deep clone. A deep clone of an object creates a copy of the object and a copy of everything directly or indirectly referenced by that object. (This can also be described as copying the entire object graph.) Returning a deep clone enables the runtime to support the case in which multiple custom bindings share a custom binding element. If a deep clone is not returned, the run-time behavior is undefined.  
+  
+ A shallow clone of an object, by contrast, is a copy of the object only. If the object contains references to other objects, the shallow copy does not create copies of the referred objects; instead, it copies only the references to the original objects.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetProperty&lt;T&gt;">
@@ -189,11 +291,18 @@
         <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The type of the object to get.</typeparam>
+        <param name="context">A <see cref="T:System.ServiceModel.Channels.BindingContext" />.</param>
+        <summary>Gets a specified object from the <see cref="T:System.ServiceModel.Channels.BindingContext" />.</summary>
+        <returns>The specified object from the <see cref="T:System.ServiceModel.Channels.BindingContext" /> or <see langword="null" /> if the object is not found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method gets the specified object from the base class or from one of that class's ancestors. The object that is returned is usually a collection of properties, for example an object that implements <xref:System.ServiceModel.Channels.ISecurityCapabilities>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InitiatorTokenParameters">
@@ -209,9 +318,24 @@
         <ReturnType>System.ServiceModel.Security.Tokens.SecurityTokenParameters</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the token definition for the initiator.</summary>
+        <value>A <see cref="T:System.ServiceModel.Security.Tokens.SecurityTokenParameters" /> that holds the token definition.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property gets and sets a class that contains the properties for the token of the party that initiates communication.  
+  
+   
+  
+## Examples  
+ The following code shows an example of referencing this property.  
+  
+ [!code-csharp[S_UEAssymetricSecurityBindingElement#4](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueassymetricsecuritybindingelement/cs/source.cs#4)]
+ [!code-vb[S_UEAssymetricSecurityBindingElement#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueassymetricsecuritybindingelement/vb/source.vb#4)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MessageProtectionOrder">
@@ -227,9 +351,21 @@
         <ReturnType>System.ServiceModel.Security.MessageProtectionOrder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the order of message encryption and signing for this binding.</summary>
+        <value>One of the <see cref="T:System.ServiceModel.Security.MessageProtectionOrder" /> values that specify how the message is protected. The default is <see cref="F:System.ServiceModel.Security.MessageProtectionOrder.SignBeforeEncrypt" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  If there is nothing in the message that is encrypted, the signature element is not encrypted even when the <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement.MessageProtectionOrder%2A> property is set to <xref:System.ServiceModel.Security.MessageProtectionOrder>. This behavior occurs even with system-provided bindings. However the WSDL generated by [!INCLUDE[indigo2](~/includes/indigo2-md.md)] still contains the <`sp:EncryptSignature`> assertion.  
+  
+ For a listing of the members and their descriptions, see <xref:System.ServiceModel.Security.MessageProtectionOrder>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value is not a valid member of the enumeration.</exception>
       </Docs>
     </Member>
     <Member MemberName="RecipientTokenParameters">
@@ -245,9 +381,24 @@
         <ReturnType>System.ServiceModel.Security.Tokens.SecurityTokenParameters</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the token definition for the recipient.</summary>
+        <value>A <see cref="T:System.ServiceModel.Security.Tokens.SecurityTokenParameters" /> that holds the token definition.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property gets and sets a class that contains the properties for the token of the party that receives the communication.  
+  
+   
+  
+## Examples  
+ The following code shows an example of referencing this property.  
+  
+ [!code-csharp[S_UEAssymetricSecurityBindingElement#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueassymetricsecuritybindingelement/cs/source.cs#5)]
+ [!code-vb[S_UEAssymetricSecurityBindingElement#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueassymetricsecuritybindingelement/vb/source.vb#5)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RequireSignatureConfirmation">
@@ -263,9 +414,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether message signatures must be confirmed.</summary>
+        <value>
+          <see langword="true" /> if message signatures must be confirmed; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property specifies whether the request signatures must be confirmed as part of the response. If the value is `true`, then the server includes and signs, in the response, all the signatures included in the request.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetKeyDerivation">
@@ -284,9 +443,25 @@
         <Parameter Name="requireDerivedKeys" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="requireDerivedKeys">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="requireDerivedKeys">
+          <see langword="true" /> if derived keys are required; otherwise, <see langword="false" />.</param>
+        <summary>Sets a value that indicates whether derived keys are required.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A derived key is created from an existing key and makes it possible to vary the key used in the course of a conversation. This makes it more difficult for a hacker to decrypt the communication.  
+  
+   
+  
+## Examples  
+ The following code shows how to set this property.  
+  
+ [!code-csharp[S_UEAssymetricSecurityBindingElement#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueassymetricsecuritybindingelement/cs/source.cs#3)]
+ [!code-vb[S_UEAssymetricSecurityBindingElement#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueassymetricsecuritybindingelement/vb/source.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Description.IPolicyExportExtension.ExportPolicy">
@@ -306,10 +481,23 @@
         <Parameter Name="context" Type="System.ServiceModel.Description.PolicyConversionContext" />
       </Parameters>
       <Docs>
-        <param name="exporter">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="exporter">The <see cref="T:System.ServiceModel.Description.MetadataExporter" /> that you can use to modify the exporting process.</param>
+        <param name="context">The <see cref="T:System.ServiceModel.Description.PolicyConversionContext" /> that you can use to insert your custom policy assertion.</param>
+        <summary>Exports a custom policy assertion about bindings, which is added to the Web Services Description Language (WSDL) information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method writes binding-related statements into the WSDL information exposed by a particular contract and is used by [!INCLUDE[indigo1](~/includes/indigo1-md.md)] to communicate to clients the existence of this custom binding element in the binding stack.  
+  
+ This method takes two parameters: the <xref:System.ServiceModel.Description.MetadataExporter> and <xref:System.ServiceModel.Description.PolicyConversionContext> objects. Use the <xref:System.ServiceModel.Description.PolicyConversionContext.GetBindingAssertions%2A>, <xref:System.ServiceModel.Description.PolicyConversionContext.GetMessageBindingAssertions%2A>, and <xref:System.ServiceModel.Description.PolicyConversionContext.GetOperationBindingAssertions%2A> methods to obtain collections of policy assertions that have already been exported at various scopes. Then use this method to add your own policy assertions to the appropriate collection.  
+  
+ The <xref:System.ServiceModel.Description.PolicyConversionContext.Contract%2A> property exposes the <xref:System.ServiceModel.Description.ContractDescription> for the endpoint that is being exported. This allows this method to correctly scope their exported policy assertions. For example, security attributes in code may add behaviors to the <xref:System.ServiceModel.Description.ContractDescription> that indicate where security policy assertions should be added.  
+  
+ Once custom policy assertions are attached to the WSDL information, clients can detect and import the custom binding assertions by implementing an <xref:System.ServiceModel.Description.IPolicyImportExtension> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -326,9 +514,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a string that represents this <see cref="T:System.ServiceModel.Channels.AsymmetricSecurityBindingElement" /> instance.</summary>
+        <returns>The current <see cref="T:System.ServiceModel.Channels.AsymmetricSecurityBindingElement" /> instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Information returned by <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement.ToString%2A> includes the <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement.MessageProtectionOrder%2A>, <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement.RequireSignatureConfirmation%2A>, <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement.RecipientTokenParameters%2A>, and <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement.InitiatorTokenParameters%2A> values of the current instance.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

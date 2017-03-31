@@ -1,4 +1,6 @@
 ---
 uid: Microsoft.JScript.Vsa.JSVsaItemType
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

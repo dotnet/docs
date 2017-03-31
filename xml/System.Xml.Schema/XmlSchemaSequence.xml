@@ -16,8 +16,23 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the <see langword="sequence" /> element (compositor) from the XML Schema as specified by the World Wide Web Consortium (W3C). The <see langword="sequence" /> requires the elements in the group to appear in the specified sequence within the containing element.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows the `XmlSchemaSequence` class.  
+  
+ [!code-cpp[Classic WebData XmlSchemaGroup Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlSchemaGroup Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic WebData XmlSchemaGroup Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlSchemaGroup Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData XmlSchemaGroup Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlSchemaGroup Example/VB/source.vb#1)]  
+  
+ The following XML file is used for the preceding code example.  
+  
+ [!code-xml[Classic WebData XmlSchemaGroup Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlSchemaGroup Example/XML/source.xml#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,7 +51,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Schema.XmlSchemaSequence" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,8 +90,8 @@
         <ReturnType>System.Xml.Schema.XmlSchemaObjectCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The elements contained within the compositor. Collection of <see cref="T:System.Xml.Schema.XmlSchemaElement" />, <see cref="T:System.Xml.Schema.XmlSchemaGroupRef" />, <see cref="T:System.Xml.Schema.XmlSchemaChoice" />, <see cref="T:System.Xml.Schema.XmlSchemaSequence" />, or <see cref="T:System.Xml.Schema.XmlSchemaAny" />.</summary>
+        <value>The elements contained within the compositor.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,14 +1,14 @@
 ---
 uid: System.Runtime.Serialization.OptionalFieldAttribute
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.OptionalFieldAttribute.VersionAdded
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.OptionalFieldAttribute.#ctor
-internalonly: False
+manager: "ghogen"
 ---

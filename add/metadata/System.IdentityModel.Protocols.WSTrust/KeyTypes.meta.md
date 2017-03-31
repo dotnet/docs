@@ -1,19 +1,23 @@
 ---
 uid: System.IdentityModel.Protocols.WSTrust.KeyTypes
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.KeyTypes.Symmetric
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.KeyTypes.Bearer
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.KeyTypes.Asymmetric
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

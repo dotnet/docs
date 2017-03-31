@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides qualifying information to a callback method when a <see cref="E:System.Net.PeerToPeer.Collaboration.ContactManager.CreateContactCompleted" /> event occurs.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.Net.PeerToPeer.Collaboration.PeerContact</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> for which the event was raised.</summary>
+        <value>A <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> object associated with the event.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

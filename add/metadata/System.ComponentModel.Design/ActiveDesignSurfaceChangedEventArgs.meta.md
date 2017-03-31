@@ -1,19 +1,27 @@
 ---
 uid: System.ComponentModel.Design.ActiveDesignSurfaceChangedEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.ActiveDesignSurfaceChangedEventArgs.#ctor(System.ComponentModel.Design.DesignSurface,System.ComponentModel.Design.DesignSurface)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.ActiveDesignSurfaceChangedEventArgs.OldSurface
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.ActiveDesignSurfaceChangedEventArgs.NewSurface
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

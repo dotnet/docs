@@ -1,14 +1,19 @@
 ---
 uid: System.Windows.Media.Animation.SetStoryboardSpeedRatio
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SetStoryboardSpeedRatio.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SetStoryboardSpeedRatio.SpeedRatio
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

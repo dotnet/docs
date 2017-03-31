@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a collection of <see cref="T:System.Web.UI.ExpressionBinding" /> objects. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ExpressionBindingCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,8 +50,8 @@
         <Parameter Name="binding" Type="System.Web.UI.ExpressionBinding" />
       </Parameters>
       <Docs>
-        <param name="binding">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="binding">The <see cref="T:System.Web.UI.ExpressionBinding" /> to append to the <see cref="T:System.Web.UI.ExpressionBindingCollection" />.</param>
+        <summary>Appends the specified <see cref="T:System.Web.UI.ExpressionBinding" /> object to the end of the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,8 +68,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the collection of <see cref="T:System.Web.UI.ExpressionBinding" /> objects is changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.ExpressionBindingCollection.Changed> event occurs when the <xref:System.Web.UI.ExpressionBindingCollection.Add%2A> method, the <xref:System.Web.UI.ExpressionBindingCollection.Remove%2A> method, or the <xref:System.Web.UI.ExpressionBindingCollection.Clear%2A> method is called.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -86,7 +93,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes all the <see cref="T:System.Web.UI.ExpressionBinding" /> objects from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,9 +113,10 @@
         <Parameter Name="propName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="propName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="propName">The <see cref="P:System.Web.UI.ExpressionBinding.PropertyName" /> of the <see cref="T:System.Web.UI.ExpressionBinding" /> to locate in the collection.</param>
+        <summary>Determines whether the <see cref="T:System.Web.UI.ExpressionBindingCollection" /> collection contains a specific <see cref="T:System.Web.UI.ExpressionBinding" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Web.UI.ExpressionBinding" /> is found in the <see cref="T:System.Web.UI.ExpressionBindingCollection" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,9 +137,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">The zero-based array that receives the <see cref="T:System.Web.UI.ExpressionBinding" /> objects copied from the collection.</param>
+        <param name="index">The position in the target array at which the array starts receiving the copied items.</param>
+        <summary>Copies all the <see cref="T:System.Web.UI.ExpressionBinding" /> objects from the <see cref="T:System.Web.UI.ExpressionBindingCollection" /> collection to a one-dimensional array, starting at the specified index in the target array.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -152,9 +160,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">The zero-based array of <see cref="T:System.Web.UI.ExpressionBinding" /> objects that receives the <see cref="T:System.Web.UI.ExpressionBinding" /> objects copied from the collection.</param>
+        <param name="index">The position in the target array at which the array starts receiving the copied items.</param>
+        <summary>Copies all the <see cref="T:System.Web.UI.ExpressionBinding" /> objects from the <see cref="T:System.Web.UI.ExpressionBindingCollection" /> collection to a one-dimensional array of <see cref="T:System.Web.UI.ExpressionBinding" /> objects, starting at the specified index in the target array.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -171,8 +179,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of <see cref="T:System.Web.UI.ExpressionBinding" /> objects in the <see cref="T:System.Web.UI.ExpressionBindingCollection" /> collection.</summary>
+        <value>The number of <see cref="T:System.Web.UI.ExpressionBinding" /> objects in the <see cref="T:System.Web.UI.ExpressionBindingCollection" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -190,8 +198,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an <see cref="T:System.Collections.IEnumerator" />-implemented object that can be used to iterate through the <see cref="T:System.Web.UI.ExpressionBinding" /> objects in the collection.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" />-implemented object that contains all the <see cref="T:System.Web.UI.ExpressionBinding" /> objects in the <see cref="T:System.Web.UI.ExpressionBindingCollection" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -208,8 +216,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the <see cref="T:System.Web.UI.ExpressionBinding" /> objects in the collection can be modified.</summary>
+        <value>
+          <see langword="false" /> in all cases.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -226,8 +235,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether access to the collection is synchronized (thread safe).</summary>
+        <value>
+          <see langword="false" /> in all cases.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -247,9 +257,9 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="propertyName">The <see cref="P:System.Web.UI.ExpressionBinding.PropertyName" /> of the <see cref="T:System.Web.UI.ExpressionBinding" /> to retrieve.</param>
+        <summary>Gets an <see cref="T:System.Web.UI.ExpressionBinding" /> object from the collection with the specified <see cref="P:System.Web.UI.ExpressionBinding.PropertyName" /> value.</summary>
+        <value>An <see cref="T:System.Web.UI.ExpressionBinding" /> in the <see cref="T:System.Web.UI.ExpressionBindingCollection" /> with the specified <see cref="P:System.Web.UI.ExpressionBinding.PropertyName" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -269,8 +279,8 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="propertyName">The <see cref="P:System.Web.UI.ExpressionBinding.PropertyName" /> of the <see cref="T:System.Web.UI.ExpressionBinding" /> to remove from the collection.</param>
+        <summary>Removes the specified <see cref="T:System.Web.UI.ExpressionBinding" /> object from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -290,8 +300,8 @@
         <Parameter Name="binding" Type="System.Web.UI.ExpressionBinding" />
       </Parameters>
       <Docs>
-        <param name="binding">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="binding">The <see cref="T:System.Web.UI.ExpressionBinding" /> to remove from the collection.</param>
+        <summary>Removes the specified <see cref="T:System.Web.UI.ExpressionBinding" /> object from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -312,9 +322,10 @@
         <Parameter Name="addToRemovedList" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="propertyName">To be added.</param>
-        <param name="addToRemovedList">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="propertyName">The <see cref="P:System.Web.UI.ExpressionBinding.PropertyName" /> of the <see cref="T:System.Web.UI.ExpressionBinding" /> to remove from the collection.</param>
+        <param name="addToRemovedList">
+          <see langword="true" /> to add the <see cref="T:System.Web.UI.ExpressionBinding" /> to the <see cref="P:System.Web.UI.ExpressionBindingCollection.RemovedBindings" /> collection; otherwise, <see langword="false" />.</param>
+        <summary>Removes the specified <see cref="T:System.Web.UI.ExpressionBinding" /> object from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -331,8 +342,8 @@
         <ReturnType>System.Collections.ICollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of strings representing the names of bindings that have been removed.</summary>
+        <value>An <see cref="T:System.Collections.ICollection" /> containing the names of bindings that have been removed.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -349,8 +360,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an object that can be used to synchronize access to the collection.</summary>
+        <value>An <see cref="T:System.Object" /> that can be used to synchronize access to the <see cref="T:System.Web.UI.ExpressionBindingCollection" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

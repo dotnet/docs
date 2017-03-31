@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains a collection of <see cref="T:System.Windows.Forms.Control" /> objects.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,8 +33,8 @@
         <Parameter Name="owner" Type="System.Windows.Forms.TabControl" />
       </Parameters>
       <Docs>
-        <param name="owner">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="owner">The <see cref="T:System.Windows.Forms.TabControl" /> that this collection belongs to.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TabControl.ControlCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,9 +54,17 @@
         <Parameter Name="value" Type="System.Windows.Forms.Control" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="value">The <see cref="T:System.Windows.Forms.Control" /> to add.</param>
+        <summary>Adds a <see cref="T:System.Windows.Forms.Control" /> to the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot add a <xref:System.Windows.Forms.TabPage> to a <xref:System.Windows.Forms.TabPage>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Exception">The specified <see cref="T:System.Windows.Forms.Control" /> is a <see cref="T:System.Windows.Forms.TabPage" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -75,8 +83,8 @@
         <Parameter Name="value" Type="System.Windows.Forms.Control" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The <see cref="T:System.Windows.Forms.Control" /> to remove.</param>
+        <summary>Removes a <see cref="T:System.Windows.Forms.Control" /> from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

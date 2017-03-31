@@ -1,14 +1,20 @@
 ---
 uid: System.ServiceModel.Discovery.AnnouncementEventArgs
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.AnnouncementEventArgs.EndpointDiscoveryMetadata
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.AnnouncementEventArgs.MessageSequence
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

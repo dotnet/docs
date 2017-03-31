@@ -24,8 +24,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the key export policies for a key.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used by the <xref:System.Security.Cryptography.CngKey.ExportPolicy%2A> property and the <xref:System.Security.Cryptography.CngKeyCreationParameters> class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AllowArchiving">
@@ -50,7 +57,7 @@
         <ReturnType>System.Security.Cryptography.CngExportPolicies</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The private key can be exported one time for archiving purposes.</summary>
       </Docs>
     </Member>
     <Member MemberName="AllowExport">
@@ -75,7 +82,7 @@
         <ReturnType>System.Security.Cryptography.CngExportPolicies</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The private key can be exported multiple times.</summary>
       </Docs>
     </Member>
     <Member MemberName="AllowPlaintextArchiving">
@@ -100,7 +107,7 @@
         <ReturnType>System.Security.Cryptography.CngExportPolicies</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The private key can be exported one time as plaintext.</summary>
       </Docs>
     </Member>
     <Member MemberName="AllowPlaintextExport">
@@ -125,7 +132,7 @@
         <ReturnType>System.Security.Cryptography.CngExportPolicies</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The private key can be exported multiple times as plaintext.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -150,7 +157,7 @@
         <ReturnType>System.Security.Cryptography.CngExportPolicies</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No export policies are established. Key export is allowed without restriction.</summary>
       </Docs>
     </Member>
   </Members>

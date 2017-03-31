@@ -1,4 +1,6 @@
 ---
 uid: System.Workflow.Runtime.Hosting
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides functionality for connecting one visual tree to another visual tree across thread boundaries.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <Parameter Name="hostVisual" Type="System.Windows.Media.HostVisual" />
       </Parameters>
       <Docs>
-        <param name="hostVisual">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="hostVisual">A value of type <see cref="T:System.Windows.Media.HostVisual" />.</param>
+        <summary>Constructor that creates a new <see cref="T:System.Windows.Media.VisualTarget" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,7 +52,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Cleans up the state associated with the <see cref="T:System.Windows.Interop.HwndTarget" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,8 +69,8 @@
         <ReturnType>System.Windows.Media.Matrix</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns a matrix that can be used to transform coordinates from the rendering destination device to the <see cref="T:System.Windows.Media.VisualTarget" />.</summary>
+        <value>Gets a value of type <see cref="T:System.Windows.Media.Matrix" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,8 +87,8 @@
         <ReturnType>System.Windows.Media.Matrix</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns a matrix that can be used to transform coordinates from the <see cref="T:System.Windows.Media.VisualTarget" /> to the rendering destination device.</summary>
+        <value>Gets a value of type <see cref="T:System.Windows.Media.Matrix" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

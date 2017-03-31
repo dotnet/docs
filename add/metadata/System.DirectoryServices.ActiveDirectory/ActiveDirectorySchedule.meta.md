@@ -1,39 +1,69 @@
 ---
 uid: System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule
-internalonly: False
----
-
----
-uid: System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule.SetSchedule(System.DayOfWeek[],System.DirectoryServices.ActiveDirectory.HourOfDay,System.DirectoryServices.ActiveDirectory.MinuteOfHour,System.DirectoryServices.ActiveDirectory.HourOfDay,System.DirectoryServices.ActiveDirectory.MinuteOfHour)
-internalonly: False
----
-
----
-uid: System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule.#ctor(System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule.#ctor
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule.SetSchedule(System.DayOfWeek[],System.DirectoryServices.ActiveDirectory.HourOfDay,System.DirectoryServices.ActiveDirectory.MinuteOfHour,System.DirectoryServices.ActiveDirectory.HourOfDay,System.DirectoryServices.ActiveDirectory.MinuteOfHour)
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule.#ctor(System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule)
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule.SetSchedule
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule.#ctor
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule.SetSchedule(System.DayOfWeek,System.DirectoryServices.ActiveDirectory.HourOfDay,System.DirectoryServices.ActiveDirectory.MinuteOfHour,System.DirectoryServices.ActiveDirectory.HourOfDay,System.DirectoryServices.ActiveDirectory.MinuteOfHour)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule.ResetSchedule
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule.SetDailySchedule(System.DirectoryServices.ActiveDirectory.HourOfDay,System.DirectoryServices.ActiveDirectory.MinuteOfHour,System.DirectoryServices.ActiveDirectory.HourOfDay,System.DirectoryServices.ActiveDirectory.MinuteOfHour)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule.RawSchedule
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---

@@ -1,14 +1,14 @@
 ---
 uid: Microsoft.JScript.NumericUnary
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.NumericUnary.#ctor(System.Int32)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.NumericUnary.EvaluateUnary(System.Object)
-internalonly: False
+ms.author: "mikejo"
 ---

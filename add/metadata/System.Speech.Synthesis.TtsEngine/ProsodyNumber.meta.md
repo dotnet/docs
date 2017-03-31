@@ -1,64 +1,89 @@
 ---
 uid: System.Speech.Synthesis.TtsEngine.ProsodyNumber
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.TtsEngine.ProsodyNumber.SsmlAttributeId
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.TtsEngine.ProsodyNumber.AbsoluteNumber
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.TtsEngine.ProsodyNumber.Equals(System.Object)
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.TtsEngine.ProsodyNumber.#ctor(System.Int32)
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.TtsEngine.ProsodyNumber.GetHashCode
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.TtsEngine.ProsodyNumber.#ctor(System.Single)
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
+---
+
+---
+uid: System.Speech.Synthesis.TtsEngine.ProsodyNumber.Equals
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.TtsEngine.ProsodyNumber.op_Inequality(System.Speech.Synthesis.TtsEngine.ProsodyNumber,System.Speech.Synthesis.TtsEngine.ProsodyNumber)
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.TtsEngine.ProsodyNumber.Equals(System.Speech.Synthesis.TtsEngine.ProsodyNumber)
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
+---
+
+---
+uid: System.Speech.Synthesis.TtsEngine.ProsodyNumber.#ctor
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.TtsEngine.ProsodyNumber.op_Equality(System.Speech.Synthesis.TtsEngine.ProsodyNumber,System.Speech.Synthesis.TtsEngine.ProsodyNumber)
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.TtsEngine.ProsodyNumber.IsNumberPercent
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.TtsEngine.ProsodyNumber.Number
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.TtsEngine.ProsodyNumber.Unit
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

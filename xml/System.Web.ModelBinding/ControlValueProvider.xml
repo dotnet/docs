@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a value provider for control values.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,9 +29,9 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="modelBindingExecutionContext">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="modelBindingExecutionContext">The execution context.</param>
+        <param name="propertyName">The name of the control property to get the value from.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.ControlValueProvider" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,8 +70,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the control property to get the value from.</summary>
+        <value>The property name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

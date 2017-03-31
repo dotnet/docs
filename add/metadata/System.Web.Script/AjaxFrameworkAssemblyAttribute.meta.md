@@ -1,14 +1,17 @@
 ---
 uid: System.Web.Script.AjaxFrameworkAssemblyAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Script.AjaxFrameworkAssemblyAttribute.GetDefaultAjaxFrameworkAssembly(System.Reflection.Assembly)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Script.AjaxFrameworkAssemblyAttribute.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

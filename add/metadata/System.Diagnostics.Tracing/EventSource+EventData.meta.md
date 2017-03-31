@@ -1,14 +1,20 @@
 ---
 uid: System.Diagnostics.Tracing.EventSource.EventData
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.Tracing.EventSource.EventData.Size
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.Tracing.EventSource.EventData.DataPointer
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

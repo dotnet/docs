@@ -11,8 +11,22 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides numerous conversion functions and exposes a GDI+ <see cref="T:System.Drawing.Graphics" /> object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class provides numerous conversion functions and also exposes a GDI+ <xref:System.Drawing.Graphics> object. Note that when rendering as Scalable Vector Graphics (SVG), use of the <xref:System.Drawing.Graphics> object for custom drawing will not be included as part of the SVG document.  
+  
+ Note also that, by default, <xref:System.Drawing.Graphics> functions usually take absolute coordinates. Therefore the conversion methods of this class should be useful if you perform drawing operations.  
+  
+ A <xref:System.Windows.Forms.DataVisualization.Charting.ChartGraphics> object is exposed in the <xref:System.Windows.Forms.DataVisualization.Charting.ChartPaintEventArgs.ChartGraphics%2A> property of the <xref:System.Windows.Forms.DataVisualization.Charting.ChartPaintEventArgs> class?qualifyHint=False&autoUpgrade=True, which makes it easy to perform custom drawing in the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.PrePaint> and <xref:System.Windows.Forms.DataVisualization.Charting.Chart.PostPaint> events.  
+  
+> [!IMPORTANT]
+>  If significant changes are made to the default behavior of the <xref:System.Drawing.Graphics> object, the chart image and its associated elements may be drawn erratically. For example, positioning may be altered. It is highly recommended that you become well acquainted with GDI+ before you make any significant changes to the properties of the <xref:System.Drawing.Graphics> object.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Dispose">
@@ -31,8 +45,9 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="disposing">
+          <see langword="True" /> to release both unmanaged and managed resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases unmanaged and, optionally, managed resources.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,9 +67,9 @@
         <Parameter Name="point" Type="System.Drawing.PointF" />
       </Parameters>
       <Docs>
-        <param name="point">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="point">A <see cref="T:System.Drawing.PointF" /> object in relative coordinates.</param>
+        <summary>Takes a <see cref="T:System.Drawing.PointF" /> object and converts its relative coordinates to absolute coordinates.</summary>
+        <returns>A <see cref="T:System.Drawing.PointF" /> object in absolute coordinates.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,9 +89,9 @@
         <Parameter Name="rectangle" Type="System.Drawing.RectangleF" />
       </Parameters>
       <Docs>
-        <param name="rectangle">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="rectangle">A <see cref="T:System.Drawing.RectangleF" /> object in relative coordinates.</param>
+        <summary>Takes a <see cref="T:System.Drawing.RectangleF" /> object and converts its relative coordinates to absolute coordinates.</summary>
+        <returns>A <see cref="T:System.Drawing.RectangleF" /> object in absolute coordinates.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,9 +111,9 @@
         <Parameter Name="size" Type="System.Drawing.SizeF" />
       </Parameters>
       <Docs>
-        <param name="size">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="size">A <see cref="T:System.Drawing.SizeF" /> object in relative coordinates.</param>
+        <summary>Takes a <see cref="T:System.Drawing.SizeF" /> object that uses relative coordinates and returns a <see cref="T:System.Drawing.SizeF" /> object that uses absolute coordinates.</summary>
+        <returns>A <see cref="T:System.Drawing.SizeF" /> object in absolute coordinates.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,11 +135,11 @@
         <Parameter Name="axisValue" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="chartAreaName">To be added.</param>
-        <param name="axis">To be added.</param>
-        <param name="axisValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="chartAreaName">Chart area name.</param>
+        <param name="axis">An <see cref="T:System.Windows.Forms.DataVisualization.Charting.AxisName" /> enumeration value that identifies the relevant axis.</param>
+        <param name="axisValue">The axis value to be converted to a relative pixel value.</param>
+        <summary>Takes a given axis value for a specified axis and returns the relative pixel value.</summary>
+        <returns>A <see langword="string" /> value that represents the converted axis value, in relative pixel coordinates.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,9 +159,9 @@
         <Parameter Name="point" Type="System.Drawing.PointF" />
       </Parameters>
       <Docs>
-        <param name="point">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="point">A <see cref="T:System.Drawing.PointF" /> object in absolute coordinates.</param>
+        <summary>Takes a <see cref="T:System.Drawing.PointF" /> object that uses absolute coordinates and returns a <see cref="T:System.Drawing.PointF" /> object that uses relative coordinates.</summary>
+        <returns>A <see cref="T:System.Drawing.PointF" /> object in relative coordinates.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -166,9 +181,9 @@
         <Parameter Name="rectangle" Type="System.Drawing.RectangleF" />
       </Parameters>
       <Docs>
-        <param name="rectangle">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="rectangle">A <see cref="T:System.Drawing.RectangleF" /> structure in absolute coordinates.</param>
+        <summary>Takes a <see cref="T:System.Drawing.RectangleF" /> structure that is using absolute coordinates and returns a <see cref="T:System.Drawing.RectangleF" /> object that uses relative coordinates.</summary>
+        <returns>A <see cref="T:System.Drawing.RectangleF" /> structure in relative coordinates.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -188,9 +203,9 @@
         <Parameter Name="size" Type="System.Drawing.SizeF" />
       </Parameters>
       <Docs>
-        <param name="size">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="size">A <see cref="T:System.Drawing.SizeF" /> object in absolute coordinates.</param>
+        <summary>Takes a <see cref="T:System.Drawing.SizeF" /> object in absolute coordinates and returns a <see cref="T:System.Drawing.SizeF" /> object that uses relative coordinates.</summary>
+        <returns>A <see cref="T:System.Drawing.SizeF" /> object in relative coordinates.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -207,9 +222,16 @@
         <ReturnType>System.Drawing.Graphics</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a GDI+ <see cref="T:System.Drawing.Graphics" /> object that can be used for drawing purposes.</summary>
+        <value>A <see cref="T:System.Drawing.Graphics" /> object used for drawing.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this property to perform any custom drawing that can be performed using GDI+.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

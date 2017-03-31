@@ -13,7 +13,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines an interface used by the configuration system to set the <see cref="T:System.Configuration.ConfigurationSettings" /> class.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +31,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that initialization of the configuration system has completed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,9 +52,10 @@
         <Parameter Name="initComplete" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="internalConfigSystem">To be added.</param>
-        <param name="initComplete">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="internalConfigSystem">An <see cref="T:System.Configuration.Internal.IInternalConfigSystem" /> object used by the <see cref="T:System.Configuration.ConfigurationSettings" /> class.</param>
+        <param name="initComplete">
+          <see langword="true" /> if the initialization process of the configuration system is complete; otherwise, <see langword="false" />.</param>
+        <summary>Provides hierarchical configuration settings and extensions specific to ASP.NET to the configuration system.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

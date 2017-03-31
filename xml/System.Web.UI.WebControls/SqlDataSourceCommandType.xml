@@ -10,8 +10,23 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Describes the type of SQL command used by the <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> and <see cref="T:System.Web.UI.WebControls.AccessDataSource" /> controls when performing a database operation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.SqlDataSourceCommandType> enumeration is used by the <xref:System.Web.UI.WebControls.SqlDataSource> and <xref:System.Web.UI.WebControls.AccessDataSource> controls to describe the type of SQL command contained in the <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A>, <xref:System.Web.UI.WebControls.SqlDataSource.InsertCommand%2A>, <xref:System.Web.UI.WebControls.SqlDataSource.UpdateCommand%2A>, and <xref:System.Web.UI.WebControls.SqlDataSource.DeleteCommand%2A> properties. The Text value indicates that the text is a SQL query or command string while the StoredProcedure value indicates that the text is the name of a stored procedure.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to set the <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A> text to the name of a stored procedure and the <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommandType%2A> property to the StoredProcedure value to retrieve data from a Microsoft SQL Server database and display it in a <xref:System.Web.UI.WebControls.DropDownList>.  
+  
+ [!code-csharp[System.Web.UI.WebControls.SqlDataSource_14sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_14sql/CS/sql14cs.aspx#1)]
+ [!code-vb[System.Web.UI.WebControls.SqlDataSource_14sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_14sql/VB/sql14vb.aspx#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="StoredProcedure">
@@ -27,7 +42,7 @@
         <ReturnType>System.Web.UI.WebControls.SqlDataSourceCommandType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text contained in a corresponding text property is the name of a stored procedure.</summary>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -43,7 +58,7 @@
         <ReturnType>System.Web.UI.WebControls.SqlDataSourceCommandType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text contained in a corresponding text property is a SQL query or command.</summary>
       </Docs>
     </Member>
   </Members>

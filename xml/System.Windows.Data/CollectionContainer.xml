@@ -18,7 +18,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Holds an existing collection structure, such as an <see cref="T:System.Collections.ObjectModel.ObservableCollection`1" /> or a <see cref="T:System.Data.DataSet" />, to be used inside a <see cref="T:System.Windows.Data.CompositeCollection" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of a <see cref="T:System.Windows.Data.CollectionContainer" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,9 +50,27 @@
         <ReturnType>System.Collections.IEnumerable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the collection to add.</summary>
+        <value>The collection to add. The default is an empty collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_Collection"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Data.CollectionContainer.CollectionProperty>|  
+|Metadata properties set to `true`|None|  
+  
+<a name="xamlTextUsage_Collection"></a>   
+## XAML Text Usage  
+ In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], you can use the <xref:System.Windows.Data.Binding> syntax to bind to a collection. For more information, see the <xref:System.Windows.Data.Binding> type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CollectionChanged">
@@ -68,7 +86,7 @@
         <ReturnType>System.Collections.Specialized.NotifyCollectionChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the contained collection changes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,7 +103,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Data.CollectionContainer.Collection" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,8 +123,8 @@
         <Parameter Name="args" Type="System.Collections.Specialized.NotifyCollectionChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="args">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="args">The event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Data.CollectionContainer.CollectionChanged" /> event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,11 +146,12 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="managerType">To be added.</param>
-        <param name="sender">To be added.</param>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="managerType">The type of the <see cref="T:System.Windows.WeakEventManager" /> calling this method. This only recognizes manager objects of type <see cref="T:System.Collections.Specialized.CollectionChangedEventManager" />.</param>
+        <param name="sender">The object that originated the event.</param>
+        <param name="e">The event data.</param>
+        <summary>Handles events from the centralized event table.</summary>
+        <returns>
+          <see langword="true" /> if the listener handled the event; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,9 +174,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Indicates whether the <see cref="P:System.Windows.Data.CollectionContainer.Collection" /> property should be persisted.</summary>
+        <returns>
+          <see langword="true" /> if the property value has changed from its default; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This `ShouldSerialize` method is provided because the <xref:System.Windows.Data.CollectionContainer.Collection%2A> property does not have a simple default value. This method indicates whether the property has changed from its default value. You typically invoke this method if you are either developing a designer for the <xref:System.Windows.Data.CollectionContainer> or developing your own control incorporating the <xref:System.Windows.Data.CollectionContainer>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.IWeakEventListener.ReceiveWeakEvent">
@@ -178,11 +205,12 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="managerType">To be added.</param>
-        <param name="sender">To be added.</param>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="managerType">The type of the <see cref="T:System.Windows.WeakEventManager" /> calling this method. This only recognizes manager objects of type <see cref="T:System.Collections.Specialized.CollectionChangedEventManager" />.</param>
+        <param name="sender">Object that originated the event.</param>
+        <param name="e">Event data.</param>
+        <summary>This member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
+        <returns>
+          <see langword="true" /> if the listener handled the event; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

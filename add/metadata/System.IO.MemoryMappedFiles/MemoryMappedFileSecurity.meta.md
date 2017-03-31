@@ -1,9 +1,13 @@
 ---
 uid: System.IO.MemoryMappedFiles.MemoryMappedFileSecurity
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.MemoryMappedFiles.MemoryMappedFileSecurity.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

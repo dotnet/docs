@@ -1,4 +1,6 @@
 ---
 uid: System.Runtime.Caching.Configuration
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "ghogen"
 ---

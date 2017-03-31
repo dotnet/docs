@@ -1,19 +1,27 @@
 ---
 uid: System.ComponentModel.DataAnnotations.RequiredAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.DataAnnotations.RequiredAttribute.IsValid
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.RequiredAttribute.IsValid(System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.RequiredAttribute.AllowEmptyStrings
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Controls.Ribbon.RibbonQuickAccessToolBarCloneEventHandler
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

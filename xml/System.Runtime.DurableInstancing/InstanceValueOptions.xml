@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains options for instance values to indicate whether the instance values are write-only, optional, there are no instance values.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -40,7 +40,7 @@
         <ReturnType>System.Runtime.DurableInstancing.InstanceValueOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that there are no instance values.</summary>
       </Docs>
     </Member>
     <Member MemberName="Optional">
@@ -61,7 +61,7 @@
         <ReturnType>System.Runtime.DurableInstancing.InstanceValueOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that a host can function without knowing the value of this instance value.</summary>
       </Docs>
     </Member>
     <Member MemberName="WriteOnly">
@@ -82,7 +82,7 @@
         <ReturnType>System.Runtime.DurableInstancing.InstanceValueOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the instance value is write-only. The instance value can be used for administration purposes.</summary>
       </Docs>
     </Member>
   </Members>

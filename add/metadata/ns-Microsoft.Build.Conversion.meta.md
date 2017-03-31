@@ -1,4 +1,5 @@
 ---
 uid: Microsoft.Build.Conversion
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

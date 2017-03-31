@@ -1,1 +1,0 @@
-			Dim maxCookieCachingTime As TimeSpan = settings.MaxCookieCachingTime

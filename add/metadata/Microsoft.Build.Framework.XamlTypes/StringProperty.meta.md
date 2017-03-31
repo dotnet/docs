@@ -1,14 +1,17 @@
 ---
 uid: Microsoft.Build.Framework.XamlTypes.StringProperty
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.XamlTypes.StringProperty.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.XamlTypes.StringProperty.Subtype
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

@@ -1,14 +1,17 @@
 ---
 uid: System.Web.Configuration.WebPartsPersonalizationAuthorization
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.WebPartsPersonalizationAuthorization.Rules
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.WebPartsPersonalizationAuthorization.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

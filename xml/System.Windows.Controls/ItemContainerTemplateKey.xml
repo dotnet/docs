@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a resource key for an <see cref="T:System.Windows.Controls.ItemContainerTemplate" /> object.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,8 +26,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.ItemContainerTemplateKey" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Windows.Controls.ItemContainerTemplateKey> is initialized without a `dataType` parameter (for example, when set in XAML), you must set the value of the <xref:System.Windows.TemplateKey.DataType%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -43,8 +50,8 @@
         <Parameter Name="dataType" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="dataType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="dataType">The type for which this template is designed.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.ItemContainerTemplateKey" /> class with the specified data type.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

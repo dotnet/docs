@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides an abstract base class for a custom metadata provider.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>When overridden in a derived class, initializes a new instance of the object that derives from the <see cref="T:System.Web.ModelBinding.ModelMetadataProvider" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,10 +47,10 @@
         <Parameter Name="containerType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="container">To be added.</param>
-        <param name="containerType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="container">The container object.</param>
+        <param name="containerType">The type of the container object.</param>
+        <summary>Returns a <see cref="T:System.Web.ModelBinding.ModelMetadata" /> object for all properties of a model.</summary>
+        <returns>A collection of <see cref="T:System.Web.ModelBinding.ModelMetadata" /> objects.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,11 +72,11 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="modelAccessor">To be added.</param>
-        <param name="containerType">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="modelAccessor">The model accessor.</param>
+        <param name="containerType">The type of the container.</param>
+        <param name="propertyName">The name of the property.</param>
+        <summary>Returns metadata for the specified property.</summary>
+        <returns>Metadata for the specified property.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,10 +97,10 @@
         <Parameter Name="modelType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="modelAccessor">To be added.</param>
-        <param name="modelType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="modelAccessor">The model accessor.</param>
+        <param name="modelType">The type of the model.</param>
+        <summary>Returns metadata for the specified model type.</summary>
+        <returns>Metadata for the specified model type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Forms.DataGridViewContentAlignment
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

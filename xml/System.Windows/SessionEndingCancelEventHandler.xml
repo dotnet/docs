@@ -17,9 +17,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">To be added.</param>
-    <param name="e">To be added.</param>
-    <summary>To be added.</summary>
+    <param name="sender">The object that raised the event.</param>
+    <param name="e">A <see cref="T:System.Windows.SessionEndingCancelEventArgs" /> object with the event arguments.</param>
+    <summary>Represents the method that handles the <see cref="E:System.Windows.Application.SessionEnding" /> event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

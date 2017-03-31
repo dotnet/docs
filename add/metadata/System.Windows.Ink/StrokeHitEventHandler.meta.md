@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Ink.StrokeHitEventHandler
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

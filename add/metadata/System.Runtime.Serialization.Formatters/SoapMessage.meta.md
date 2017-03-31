@@ -1,39 +1,39 @@
 ---
 uid: System.Runtime.Serialization.Formatters.SoapMessage
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.Formatters.SoapMessage.#ctor
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.Formatters.SoapMessage.ParamValues
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.Formatters.SoapMessage.MethodName
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.Formatters.SoapMessage.ParamTypes
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.Formatters.SoapMessage.XmlNameSpace
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.Formatters.SoapMessage.ParamNames
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.Formatters.SoapMessage.Headers
-internalonly: False
+manager: "ghogen"
 ---

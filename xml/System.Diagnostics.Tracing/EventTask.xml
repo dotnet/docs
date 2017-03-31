@@ -22,8 +22,23 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the tasks that apply to events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is intended to be customized for an event source.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Diagnostics.Tracing.EventTask> class to define event tasks. This code example is part of a larger example provided for the <xref:System.Diagnostics.Tracing.EventSource> class.  
+  
+ [!code-csharp[ETWTrace#4](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#4)]
+ [!code-vb[ETWTrace#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#4)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="None">
@@ -51,7 +66,7 @@
         <ReturnType>System.Diagnostics.Tracing.EventTask</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Undefined task.</summary>
       </Docs>
     </Member>
   </Members>

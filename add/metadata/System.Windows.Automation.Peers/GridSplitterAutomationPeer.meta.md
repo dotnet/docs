@@ -1,49 +1,65 @@
 ---
 uid: System.Windows.Automation.Peers.GridSplitterAutomationPeer
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.GridSplitterAutomationPeer.System#Windows#Automation#Provider#ITransformProvider#CanMove
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.GridSplitterAutomationPeer.GetClassNameCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.GridSplitterAutomationPeer.System#Windows#Automation#Provider#ITransformProvider#CanResize
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.GridSplitterAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.GridSplitterAutomationPeer.System#Windows#Automation#Provider#ITransformProvider#Move(System.Double,System.Double)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.GridSplitterAutomationPeer.System#Windows#Automation#Provider#ITransformProvider#CanRotate
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.GridSplitterAutomationPeer.#ctor(System.Windows.Controls.GridSplitter)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.GridSplitterAutomationPeer.System#Windows#Automation#Provider#ITransformProvider#Rotate(System.Double)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.GridSplitterAutomationPeer.System#Windows#Automation#Provider#ITransformProvider#Resize(System.Double,System.Double)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

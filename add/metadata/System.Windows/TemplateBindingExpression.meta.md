@@ -1,9 +1,13 @@
 ---
 uid: System.Windows.TemplateBindingExpression
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.TemplateBindingExpression.TemplateBindingExtension
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

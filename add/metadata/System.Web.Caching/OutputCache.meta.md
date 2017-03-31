@@ -1,24 +1,24 @@
 ---
 uid: System.Web.Caching.OutputCache
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.OutputCache.Serialize(System.IO.Stream,System.Object)
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.OutputCache.DefaultProviderName
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.OutputCache.Providers
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.OutputCache.Deserialize(System.IO.Stream)
-internalonly: False
+manager: "wpickett"
 ---

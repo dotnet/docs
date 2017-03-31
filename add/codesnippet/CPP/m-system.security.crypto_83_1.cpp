@@ -1,1 +1,0 @@
-            xmlTransform->LoadInput( xmlDoc );

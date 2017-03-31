@@ -21,8 +21,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides the Web site from which a code assembly originates as evidence for policy evaluation. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The presence of <xref:System.Security.Policy.Site> evidence produces a <xref:System.Security.Permissions.SiteIdentityPermission> in the grant set. If there is a <xref:System.Security.CodeAccessPermission.Demand%2A> for <xref:System.Security.Permissions.SiteIdentityPermission>, the <xref:System.Security.Permissions.SiteIdentityPermission> that corresponds to the <xref:System.Security.Policy.Site> evidence will be compared with the demanded permission.  
+  
+ Site identity is defined for code from URLs with any protocol except FILE. A site is the string between the "//" after the protocol of a URL and the following "/", if present. For example, www.fourthcoffee.com is the site identity in the URL http://www.fourthcoffee.com/process/grind.htm. This excludes port numbers. If a given URL is http://www.fourthcoffee.com:8000/, the site is www.fourthcoffee.com, not www.fourthcoffee.com:8000.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,9 +48,10 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The website of origin for the associated code assembly.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Policy.Site" /> class with the website from which a code assembly originates.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -58,8 +68,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a new object that is a copy of the current instance.</summary>
+        <returns>A new object that is a copy of this instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,8 +88,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates an equivalent copy of the <see cref="T:System.Security.Policy.Site" /> object.</summary>
+        <returns>A new object that is identical to the current <see cref="T:System.Security.Policy.Site" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,10 +110,15 @@
         <Parameter Name="url" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="url">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="url">The URL from which to create the new <see cref="T:System.Security.Policy.Site" /> object.</param>
+        <summary>Creates a new <see cref="T:System.Security.Policy.Site" /> object from the specified URL.</summary>
+        <returns>A new site object.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="url" /> parameter is not a valid URL.  
+  
+ -or-  
+  
+ The <paramref name="url" /> parameter is a file name.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateIdentityPermission">
@@ -123,9 +138,9 @@
         <Parameter Name="evidence" Type="System.Security.Policy.Evidence" />
       </Parameters>
       <Docs>
-        <param name="evidence">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="evidence">The evidence from which to construct the identity permission.</param>
+        <summary>Creates an identity permission that corresponds to the current <see cref="T:System.Security.Policy.Site" /> object.</summary>
+        <returns>A site identity permission for the current <see cref="T:System.Security.Policy.Site" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,10 +161,18 @@
         <Parameter Name="o" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="o">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="o">The object to test for equivalence with the current object.</param>
+        <summary>Compares the current <see cref="T:System.Security.Policy.Site" /> to the specified object for equivalence.</summary>
+        <returns>
+          <see langword="true" /> if the two instances of the <see cref="T:System.Security.Policy.Site" /> class are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Security.Policy.Site> objects are equal if they designate the same website name.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -167,8 +190,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code of the current website name.</summary>
+        <returns>The hash code of the current website name.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,8 +209,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the website from which the code assembly originates.</summary>
+        <value>The name of the website from which the code assembly originates.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -206,8 +229,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a string representation of the current <see cref="T:System.Security.Policy.Site" /> object.</summary>
+        <returns>A representation of the current site.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

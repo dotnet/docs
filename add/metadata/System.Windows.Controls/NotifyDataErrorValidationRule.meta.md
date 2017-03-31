@@ -1,14 +1,27 @@
 ---
 uid: System.Windows.Controls.NotifyDataErrorValidationRule
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.NotifyDataErrorValidationRule.Validate
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.NotifyDataErrorValidationRule.Validate(System.Object,System.Globalization.CultureInfo)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.NotifyDataErrorValidationRule.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

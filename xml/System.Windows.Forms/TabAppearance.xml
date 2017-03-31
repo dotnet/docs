@@ -10,8 +10,24 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the appearance of the tabs in a tab control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by members such as <xref:System.Windows.Forms.TabControl.Appearance%2A?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.TabControl.Alignment%2A?displayProperty=fullName> and <xref:System.Windows.Forms.TabControl.Appearance%2A?displayProperty=fullName> properties and the <xref:System.Windows.Forms.TabAlignment> and <xref:System.Windows.Forms.TabAppearance> enumerations. To run the example, paste the following codein a form containing a <xref:System.Windows.Forms.TabControl> called TabControl1. Call the ChangeTheLookOfTheTabControl method in the form's constructor or Load method.  
+  
+ [!code-cpp[System.Windows.Forms.TabControlExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.TabControlExample/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.TabControlExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TabControlExample/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.TabControlExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TabControlExample/VB/form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Buttons">
@@ -27,7 +43,7 @@
         <ReturnType>System.Windows.Forms.TabAppearance</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The tabs have the appearance of three-dimensional buttons.</summary>
       </Docs>
     </Member>
     <Member MemberName="FlatButtons">
@@ -43,7 +59,7 @@
         <ReturnType>System.Windows.Forms.TabAppearance</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The tabs have the appearance of flat buttons.</summary>
       </Docs>
     </Member>
     <Member MemberName="Normal">
@@ -59,7 +75,7 @@
         <ReturnType>System.Windows.Forms.TabAppearance</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The tabs have the standard appearance of tabs.</summary>
       </Docs>
     </Member>
   </Members>

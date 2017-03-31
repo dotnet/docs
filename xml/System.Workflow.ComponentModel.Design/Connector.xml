@@ -23,8 +23,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a connector between two activity designers on a workflow design surface.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ A connector is the line that appears on a workflow design surface that connects one activity designer to another. <xref:System.Workflow.ComponentModel.Design.Connector> provides methods and properties that allow you to customize how to draw a set of connectors when an activity designer is rendered at design time.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,10 +52,12 @@
         <Parameter Name="target" Type="System.Workflow.ComponentModel.Design.ConnectionPoint" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="source">The <see cref="T:System.Workflow.ComponentModel.Design.ConnectionPoint" /> where drawing for the <see cref="T:System.Workflow.ComponentModel.Design.Connector" /> begins.</param>
+        <param name="target">The <see cref="T:System.Workflow.ComponentModel.Design.ConnectionPoint" /> where drawing for the <see cref="T:System.Workflow.ComponentModel.Design.Connector" /> ends.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Design.Connector" /> class.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" /> or <paramref name="target" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="AccessibilityObject">
@@ -60,8 +73,8 @@
         <ReturnType>System.Windows.Forms.AccessibleObject</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an <see cref="T:System.Windows.Forms.AccessibleObject" /> that accessibility applications use to adjust the application UI for users who have impairments.</summary>
+        <value>An <see cref="T:System.Windows.Forms.AccessibleObject" /> that accessibility applications use to adjust the application UI for users who have impairments.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,8 +91,8 @@
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the bounding rectangle for the connector on the workflow design surface.</summary>
+        <value>The <see cref="T:System.Drawing.Rectangle" /> that bounds the connector on the workflow design surface.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,8 +109,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the value that indicates whether the <see cref="T:System.Workflow.ComponentModel.Design.Connector" /> is modified.</summary>
+        <value>
+          <see langword="true" /> if the connector is modified; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,8 +128,8 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Drawing.Point&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a read-only collection of points that contains all segments found in the <see cref="T:System.Workflow.ComponentModel.Design.Connector" />.</summary>
+        <value>A <see cref="T:System.Drawing.Point" /> read-only collection that contains all segments found in the <see cref="T:System.Workflow.ComponentModel.Design.Connector" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,10 +149,18 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="obj">The <see cref="T:System.Workflow.ComponentModel.Design.Connector" /> to compare with the current connector.</param>
+        <summary>Determines whether the current <see cref="T:System.Workflow.ComponentModel.Design.Connector" /> is equal to the specified connector.</summary>
+        <returns>
+          <see langword="true" /> if the specified connector is equal to the current <see cref="T:System.Workflow.ComponentModel.Design.Connector" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Equals verifies that both the <xref:System.Workflow.ComponentModel.Design.Connector.Source%2A> and <xref:System.Workflow.ComponentModel.Design.Connector.Target%2A> properties of the two connectors hold references to the same <xref:System.Workflow.ComponentModel.Design.ConnectionPoint> objects.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ExcludedRoutingRectangles">
@@ -154,8 +176,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.Drawing.Rectangle&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns an empty array of Rectangle object. Derived classes populate this collection.</summary>
+        <value>A generic collection of Rectangle objects.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -173,8 +195,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code for the current <see cref="T:System.Workflow.ComponentModel.Design.Connector" />.</summary>
+        <returns>A hash code for the current <see cref="T:System.Workflow.ComponentModel.Design.Connector" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -194,10 +216,17 @@
         <Parameter Name="serviceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="serviceType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="serviceType">The <see cref="T:System.Type" /> of the service object to return.</param>
+        <summary>Returns a service object of the specified type if it is available.</summary>
+        <returns>A service object of type <paramref name="serviceType" /> or a null reference (<see langword="Nothing" /> in Visual Basic) if there is no service object of type <paramref name="serviceType" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.Connector.GetService%2A> returns the service object available through <xref:System.Workflow.ComponentModel.Design.Connector.ParentDesigner%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HitTest">
@@ -216,10 +245,18 @@
         <Parameter Name="point" Type="System.Drawing.Point" />
       </Parameters>
       <Docs>
-        <param name="point">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="point">The <see cref="T:System.Drawing.Point" /> to test.</param>
+        <summary>Returns a value that indicates whether the specified point resides on the current <see cref="T:System.Workflow.ComponentModel.Design.Connector" />.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="point" /> resides on the current <see cref="T:System.Workflow.ComponentModel.Design.Connector" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, <xref:System.Workflow.ComponentModel.Design.Connector.HitTest%2A> indicates whether a user has clicked a point on a connector displayed on a workflow design surface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Invalidate">
@@ -236,8 +273,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Invalidates the current <see cref="T:System.Workflow.ComponentModel.Design.Connector" /> and causes it to be redrawn.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.Connector.Invalidate%2A> causes all contents found in <xref:System.Workflow.ComponentModel.Design.Connector.Bounds%2A> to be included in the update region for the <xref:System.Workflow.ComponentModel.Design.Connector.ParentDesigner%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Offset">
@@ -256,8 +300,8 @@
         <Parameter Name="size" Type="System.Drawing.Size" />
       </Parameters>
       <Docs>
-        <param name="size">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="size">The <see cref="T:System.Drawing.Size" /> that contains the height and width settings to offset the connector.</param>
+        <summary>Changes the <see cref="T:System.Workflow.ComponentModel.Design.Connector" /> height and width using the settings defined in the specified <see cref="T:System.Drawing.Size" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -277,9 +321,16 @@
         <Parameter Name="e" Type="System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs" /> that contains the event data.</param>
+        <summary>Notifies the <see cref="T:System.Workflow.ComponentModel.Design.Connector" /> that layout operations are occurring.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.Connector.OnLayout%2A> clears <xref:System.Workflow.ComponentModel.Design.Connector.ConnectorSegments%2A> and repopulates it with a new range of points.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPaint">
@@ -298,8 +349,8 @@
         <Parameter Name="e" Type="System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs" /> that contains the drawing data.</param>
+        <summary>Renders the <see cref="T:System.Workflow.ComponentModel.Design.Connector" /> on the workflow design surface.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -321,11 +372,18 @@
         <Parameter Name="segmentEditPoints" Type="System.Drawing.Point[]" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <param name="segments">To be added.</param>
-        <param name="segmentEditPoints">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">An <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs" /> object that specifies the graphics to use to draw the object and the clipping rectangle in which to draw it.</param>
+        <param name="segments">Coordinates for the segments in the <see cref="T:System.Workflow.ComponentModel.Design.Connector" />.</param>
+        <param name="segmentEditPoints">Coordinated for the edit points on the <see cref="T:System.Workflow.ComponentModel.Design.Connector" />.</param>
+        <summary>Used for drawing the Connector when it is dragged from one state to another.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called when a user is creating a connector, moving a middle point or moving an endpoint from one activity to another.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPaintSelected">
@@ -346,10 +404,10 @@
         <Parameter Name="segmentEditPoints" Type="System.Drawing.Point[]" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <param name="primarySelection">To be added.</param>
-        <param name="segmentEditPoints">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">An <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs" /> object that specifies the graphics to use to draw the object and the clipping rectangle in which to draw it.</param>
+        <param name="primarySelection">Not used.</param>
+        <param name="segmentEditPoints">Coordinates for the edit points on the <see cref="T:System.Workflow.ComponentModel.Design.Connector" />.</param>
+        <summary>Used for drawing a Connector that is selected by the user.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -366,8 +424,8 @@
         <ReturnType>System.Workflow.ComponentModel.Design.FreeformActivityDesigner</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the designer on which the connecter appears on the workflow design surface.</summary>
+        <value>The <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesigner" /> on which the connector appears on the workflow design surface.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -384,9 +442,16 @@
         <ReturnType>System.Workflow.ComponentModel.Design.WorkflowView</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the workflow view associated with the connector.</summary>
+        <value>The <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" /> that is associated with the connector.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.Connector.ParentView%2A> provides access to the workflow design surface on which the connector appears.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PerformLayout">
@@ -403,8 +468,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Performs layout tasks for the <see cref="T:System.Workflow.ComponentModel.Design.Connector" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.Connector.PerformLayout%2A> calls the <xref:System.Workflow.ComponentModel.Design.WorkflowView.PerformLayout%2A?displayProperty=fullName> method and specifies that the layout update does not need to occur immediately.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetConnectorSegments">
@@ -423,8 +495,8 @@
         <Parameter Name="segments" Type="System.Collections.Generic.ICollection&lt;System.Drawing.Point&gt;" />
       </Parameters>
       <Docs>
-        <param name="segments">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="segments">A <see cref="T:System.Drawing.Point" /> collection that represents the new connector segments to use for rerouting.</param>
+        <summary>Reroutes the connector from source to target if the connector has changed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -446,9 +518,12 @@
         <ReturnType>System.Workflow.ComponentModel.Design.ConnectionPoint</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="T:System.Workflow.ComponentModel.Design.ConnectionPoint" /> where drawing of the <see cref="T:System.Workflow.ComponentModel.Design.Connector" /> begins.</summary>
+        <value>The <see cref="T:System.Workflow.ComponentModel.Design.ConnectionPoint" /> where drawing of the <see cref="T:System.Workflow.ComponentModel.Design.Connector" /> begins.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">When setting this property the source <see cref="P:System.Workflow.ComponentModel.Design.ConnectionPoint.AssociatedDesigner" /> does not match the target associated designer.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <see cref="P:System.Workflow.ComponentModel.Design.Connector.Source" /> was set to a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="System.IDisposable.Dispose">
@@ -465,7 +540,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Releases all resources used by the <see cref="T:System.Workflow.ComponentModel.Design.Connector" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -487,9 +562,12 @@
         <ReturnType>System.Workflow.ComponentModel.Design.ConnectionPoint</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="T:System.Workflow.ComponentModel.Design.ConnectionPoint" /> where drawing of the <see cref="T:System.Workflow.ComponentModel.Design.Connector" /> ends.</summary>
+        <value>The <see cref="T:System.Workflow.ComponentModel.Design.ConnectionPoint" /> where drawing of the <see cref="T:System.Workflow.ComponentModel.Design.Connector" /> ends.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">When setting this property the source <see cref="P:System.Workflow.ComponentModel.Design.ConnectionPoint.AssociatedDesigner" /> does not match the target associated designer.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <see cref="P:System.Workflow.ComponentModel.Design.Connector.Target" /> was set to a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
   </Members>

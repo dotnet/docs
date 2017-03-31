@@ -35,8 +35,23 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides the definition of a constraint-based execution context for a set of child activities.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ The <xref:System.Workflow.Activities.ConditionedActivityGroup> activity is a <xref:System.Workflow.ComponentModel.CompositeActivity>, meaning the <xref:System.Workflow.Activities.ConditionedActivityGroup> activity can contain other activities.  
+  
+ The <xref:System.Workflow.Activities.ConditionedActivityGroup> activity runs and re-executes child activities based on the evaluation of their `when` conditions. All rules are evaluated whenever required based on their data and state change dependencies.  
+  
+ When the completion rule of the <xref:System.Workflow.Activities.ConditionedActivityGroup> evaluates to `true`, it immediately cancels any currently executing child activities and finishes.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -50,8 +65,19 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.ConditionedActivityGroup" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to use the constructor to create an instance of <xref:System.Workflow.Activities.ConditionedActivityGroup>. The code also creates two <xref:System.Workflow.Activities.CodeCondition> class instances and two <xref:System.Workflow.Activities.CodeActivity> class instances. This code example is part of the ConditionedActivityGroup SDK Sample from the SimpleCAGWorkflow.Designer.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Using ConditionedActivityGroup](http://msdn.microsoft.com/en-us/5a0b7e9e-def5-46b2-acbb-0005e1aff984).  
+  
+ [!code-csharp[wf_samples#157](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#157)]
+ [!code-vb[wf_samples#157](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#157)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">No children are executing and the <see cref="P:System.Workflow.Activities.ConditionedActivityGroup.UntilCondition" /> evaluates to <see langword="false" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -67,8 +93,8 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The user-defined name of the activity.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.ConditionedActivityGroup" /> class using the name of the activity.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,10 +158,14 @@
         <Parameter Name="child" Type="System.Workflow.ComponentModel.Activity" />
       </Parameters>
       <Docs>
-        <param name="child">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="child">The child activity.</param>
+        <summary>Gets the number of times that the specified child activity has been executed.</summary>
+        <returns>The number of times that the specified child activity has been executed.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="child" /> parameter is a <see langword="null" /> reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <exception cref="T:System.InvalidOperationException">The conditioned activity group state is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The number of times that the child activity has been run cannot be determined.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetDynamicActivity">
@@ -154,10 +184,13 @@
         <Parameter Name="childActivityName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="childActivityName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="childActivityName">The name of the child <see cref="T:System.Workflow.Activities.EventDrivenActivity" />.</param>
+        <summary>Gets the currently executing instance of the child activity.</summary>
+        <returns>The currently executing instance of the <see cref="T:System.Workflow.Activities.EventDrivenActivity" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="childactivity" /> is a <see langword="null" /> reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <exception cref="T:System.ArgumentException">The executable activities do not contain the <paramref name="childactivity" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetWhenCondition">
@@ -176,10 +209,13 @@
         <Parameter Name="dependencyObject" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="dependencyObject">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dependencyObject">The underlying data storage object for the activity.</param>
+        <summary>Gets the condition associated with the <see cref="F:System.Workflow.Activities.ConditionedActivityGroup.WhenConditionProperty" /> for the specified dependency object.</summary>
+        <returns>The <see langword="when" /> condition.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dependencyObject" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <exception cref="T:System.ArgumentException">The executable activities do not contain the <paramref name="dependencyObject" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="OnActivityChangeAdd">
@@ -287,10 +323,13 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="dependencyObject">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="dependencyObject">The underlying data storage object for the activity.</param>
+        <param name="value">The value of the when condition.</param>
+        <summary>Sets the condition associated with the <see cref="F:System.Workflow.Activities.ConditionedActivityGroup.WhenConditionProperty" /> for the specified dependency object.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dependencyObject" /> is a <see langword="null" /> reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <exception cref="T:System.ArgumentException">The executable activities do not contain the <paramref name="dependencyObject" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt;.OnEvent">
@@ -310,9 +349,9 @@
         <Parameter Name="e" Type="System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="sender">To be added.</param>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="sender">The object that raised the event.</param>
+        <param name="e">The previously-typed event arguments.</param>
+        <summary>Defines the processing procedure when the subscribed-to event occurs.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -334,9 +373,19 @@
         <ReturnType>System.Workflow.ComponentModel.ActivityCondition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates when the <see cref="T:System.Workflow.Activities.ConditionedActivityGroup" /> should complete.</summary>
+        <value>A condition that determines whether the <see cref="T:System.Workflow.Activities.ConditionedActivityGroup" /> should complete.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to set the <xref:System.Workflow.Activities.ConditionedActivityGroup.UntilCondition%2A> to `null`, which means the `BookingCAG`<xref:System.Workflow.Activities.ConditionedActivityGroup> class never completes. This code example is part of the ConditionedActivityGroup SDK Sample from the SimpleCAGWorkflow.Designer.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Using ConditionedActivityGroup](http://msdn.microsoft.com/en-us/5a0b7e9e-def5-46b2-acbb-0005e1aff984).  
+  
+ [!code-csharp[wf_samples#159](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#159)]
+ [!code-vb[wf_samples#159](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#159)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UntilConditionProperty">
@@ -352,8 +401,15 @@
         <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="P:System.Workflow.Activities.ConditionedActivityGroup.UntilCondition" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WhenConditionProperty">
@@ -369,8 +425,15 @@
         <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="F:System.Workflow.Activities.ConditionedActivityGroup.WhenConditionProperty" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

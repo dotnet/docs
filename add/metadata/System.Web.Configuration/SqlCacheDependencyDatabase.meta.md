@@ -1,29 +1,41 @@
 ---
 uid: System.Web.Configuration.SqlCacheDependencyDatabase
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.SqlCacheDependencyDatabase.#ctor(System.String,System.String,System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Configuration.SqlCacheDependencyDatabase.#ctor
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.SqlCacheDependencyDatabase.PollTime
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.SqlCacheDependencyDatabase.#ctor(System.String,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.SqlCacheDependencyDatabase.Name
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.SqlCacheDependencyDatabase.ConnectionStringName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

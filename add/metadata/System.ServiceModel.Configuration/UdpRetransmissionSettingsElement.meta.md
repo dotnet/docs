@@ -1,34 +1,34 @@
 ---
 uid: System.ServiceModel.Configuration.UdpRetransmissionSettingsElement
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.UdpRetransmissionSettingsElement.DelayUpperBound
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.UdpRetransmissionSettingsElement.MaxDelayPerRetransmission
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.UdpRetransmissionSettingsElement.MaxMulticastRetransmitCount
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.UdpRetransmissionSettingsElement.MaxUnicastRetransmitCount
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.UdpRetransmissionSettingsElement.#ctor
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.UdpRetransmissionSettingsElement.DelayLowerBound
-internalonly: False
+manager: "ghogen"
 ---

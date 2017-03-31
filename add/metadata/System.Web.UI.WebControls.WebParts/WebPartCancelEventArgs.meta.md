@@ -1,14 +1,20 @@
 ---
 uid: System.Web.UI.WebControls.WebParts.WebPartCancelEventArgs
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.WebParts.WebPartCancelEventArgs.WebPart
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.WebParts.WebPartCancelEventArgs.#ctor(System.Web.UI.WebControls.WebParts.WebPart)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

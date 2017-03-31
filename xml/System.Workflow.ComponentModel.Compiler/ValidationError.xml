@@ -11,8 +11,27 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the base class for all validation errors.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+   
+  
+## Examples  
+ The following example shows how to create and manipulate validation errors as part of a custom validation routine.  
+  
+ This code example is part of the Send Mail SDK Sample and is from the SendEMailActivity.cs file. For more information, see [Send Mail Activity](http://msdn.microsoft.com/en-us/bfb5939e-60a9-4037-af4e-2cea9e654669).  
+  
+ [!code-csharp[WF_Samples#235](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#235)]
+ [!code-vb[WF_Samples#235](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#235)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -29,9 +48,9 @@
         <Parameter Name="errorNumber" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="errorText">To be added.</param>
-        <param name="errorNumber">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="errorText">The associated error text for this instance.</param>
+        <param name="errorNumber">The error number for this error.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationError" /> class; initializes the error text and error numbers for this instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,10 +69,10 @@
         <Parameter Name="isWarning" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="errorText">To be added.</param>
-        <param name="errorNumber">To be added.</param>
-        <param name="isWarning">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="errorText">The associated error text for this instance.</param>
+        <param name="errorNumber">The error number for this error.</param>
+        <param name="isWarning">A Boolean which is <see langword="true" /> if the error is considered a warning and <see langword="false" /> otherwise.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationError" /> class, initializes the error text, error number and error type for this instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,11 +92,11 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="errorText">To be added.</param>
-        <param name="errorNumber">To be added.</param>
-        <param name="isWarning">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="errorText">The associated error text for this instance.</param>
+        <param name="errorNumber">The error number for this error.</param>
+        <param name="isWarning">A Boolean which is <see langword="true" /> if the error is considered a warning and <see langword="false" /> otherwise.</param>
+        <param name="propertyName">The name of the property associated with this error.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationError" /> class, initializing the error text, the error number, the error type and the property name associated with the error.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,8 +113,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the error number of this instance.</summary>
+        <value>The error number of this instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,8 +131,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the error text for this instance.</summary>
+        <value>The error text for this instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,9 +152,9 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="propertyName">The property associated with this error.</param>
+        <summary>Creates a new validation error defined for the error type of a property not being set.</summary>
+        <returns>A new validation error defined for the error type of a property not being set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -152,8 +171,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether this instance is a warning.</summary>
+        <value>
+          <see langword="true" /> if a warning; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -170,9 +190,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the property that failed to validate.</summary>
+        <value>A <see cref="T:System.String" /> that contains the name of the property that failed to validate.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is used by the designer to display configuration errors and navigate the user to the properties that contain the errors.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -189,8 +216,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Provides a string representation of this instance incorporating the error type (error or warning) the error number and the error text.</summary>
+        <returns>A string representation of this instance incorporating the error type (error or warning) the error number and the error text.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -207,10 +234,32 @@
         <ReturnType>System.Collections.IDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an <see cref="T:System.Collections.IDictionary" /> for the definition and storage of user-defined data related to this instance.</summary>
+        <value>An <see cref="T:System.Collections.IDictionary" /> for the definition and storage of user-defined data related to this instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationError" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following example shows how to create and manipulate validation errors as part of a custom validation routine.  
+  
+ This code example is part of the Send Mail SDK Sample and is from the SendEMailActivity.cs file. For more information, see [Send Mail Activity](http://msdn.microsoft.com/en-us/bfb5939e-60a9-4037-af4e-2cea9e654669).  
+  
+ [!code-csharp[WF_Samples#235](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#235)]
+ [!code-vb[WF_Samples#235](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#235)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

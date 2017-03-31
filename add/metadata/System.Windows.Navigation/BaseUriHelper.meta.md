@@ -1,14 +1,19 @@
 ---
 uid: System.Windows.Navigation.BaseUriHelper
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Navigation.BaseUriHelper.BaseUriProperty
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Navigation.BaseUriHelper.GetBaseUri(System.Windows.DependencyObject)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

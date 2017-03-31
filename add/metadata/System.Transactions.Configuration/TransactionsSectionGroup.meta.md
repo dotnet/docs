@@ -1,24 +1,24 @@
 ---
 uid: System.Transactions.Configuration.TransactionsSectionGroup
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.Configuration.TransactionsSectionGroup.DefaultSettings
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.Configuration.TransactionsSectionGroup.MachineSettings
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.Configuration.TransactionsSectionGroup.GetSectionGroup(System.Configuration.Configuration)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.Configuration.TransactionsSectionGroup.#ctor
-internalonly: False
+manager: "ghogen"
 ---

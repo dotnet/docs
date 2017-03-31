@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.WebControls.LabelControlBuilder
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.LabelControlBuilder.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.LabelControlBuilder.AllowWhitespaceLiterals
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

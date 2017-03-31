@@ -21,8 +21,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies that the attributed code should be excluded from code coverage information.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Placing this attribute on a class or a structure excludes all the members of that class or structure from the collection of code coverage information.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,7 +48,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

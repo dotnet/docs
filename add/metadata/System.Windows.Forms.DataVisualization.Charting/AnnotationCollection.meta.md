@@ -1,9 +1,11 @@
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.AnnotationCollection
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.AnnotationCollection.FindByName(System.String)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---

@@ -1,1 +1,0 @@
-            TextSyndicationContent textContent = new TextSyndicationContent("Some text content");

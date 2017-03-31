@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Associates a method with a stored procedure or user-defined function in the database.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Linq.Mapping.FunctionAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +48,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets whether a method is mapped to a function or to a stored procedure.</summary>
+        <value>
+          <see langword="true" /> if a function; <see langword="false" /> if a stored procedure.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,9 +67,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the function.</summary>
+        <value>The name of the function or stored procedure.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The name must be prefixed by the schema name.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

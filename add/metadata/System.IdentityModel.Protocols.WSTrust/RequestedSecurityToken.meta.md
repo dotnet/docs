@@ -1,24 +1,35 @@
 ---
 uid: System.IdentityModel.Protocols.WSTrust.RequestedSecurityToken
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.RequestedSecurityToken.SecurityToken
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.RequestedSecurityToken.#ctor(System.IdentityModel.Tokens.SecurityToken)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Protocols.WSTrust.RequestedSecurityToken.#ctor
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.RequestedSecurityToken.#ctor(System.Xml.XmlElement)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.RequestedSecurityToken.SecurityTokenXml
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

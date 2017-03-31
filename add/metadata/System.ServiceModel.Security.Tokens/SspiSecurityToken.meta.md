@@ -1,59 +1,90 @@
 ---
 uid: System.ServiceModel.Security.Tokens.SspiSecurityToken
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.SspiSecurityToken.AllowUnauthenticatedCallers
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.SspiSecurityToken.#ctor(System.Net.NetworkCredential,System.Boolean,System.Boolean)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.SspiSecurityToken.ValidTo
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.SspiSecurityToken.ValidFrom
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.SspiSecurityToken.NetworkCredential
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.SspiSecurityToken.ImpersonationLevel
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.SspiSecurityToken.Id
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.SspiSecurityToken.SecurityKeys
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Security.Tokens.SspiSecurityToken.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.SspiSecurityToken.#ctor(System.Security.Principal.TokenImpersonationLevel,System.Boolean,System.Net.NetworkCredential)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.SspiSecurityToken.ExtractGroupsForWindowsAccounts
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.SspiSecurityToken.AllowNtlm
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

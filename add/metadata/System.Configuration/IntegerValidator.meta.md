@@ -1,29 +1,41 @@
 ---
 uid: System.Configuration.IntegerValidator
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.IntegerValidator.CanValidate(System.Type)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.IntegerValidator.#ctor
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.IntegerValidator.#ctor(System.Int32,System.Int32,System.Boolean,System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.IntegerValidator.Validate(System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.IntegerValidator.#ctor(System.Int32,System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.IntegerValidator.#ctor(System.Int32,System.Int32,System.Boolean)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -1,24 +1,32 @@
 ---
 uid: System.Windows.Automation.Peers.SliderAutomationPeer
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.SliderAutomationPeer.GetAutomationControlTypeCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.SliderAutomationPeer.#ctor(System.Windows.Controls.Slider)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.SliderAutomationPeer.GetClickablePointCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.SliderAutomationPeer.GetClassNameCore
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

@@ -1,14 +1,20 @@
 ---
 uid: System.Data.Common.DbProviderSpecificTypePropertyAttribute
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.DbProviderSpecificTypePropertyAttribute.#ctor(System.Boolean)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.DbProviderSpecificTypePropertyAttribute.IsProviderSpecificTypeProperty
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

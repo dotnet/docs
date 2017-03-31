@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a configuration element that specifies the settings for a secure conversation service. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.SecureConversationServiceElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,9 +46,12 @@
         <Parameter Name="from" Type="System.ServiceModel.Configuration.SecureConversationServiceElement" />
       </Parameters>
       <Docs>
-        <param name="from">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="from">The configuration element to be copied.</param>
+        <summary>Copies the content of the specified configuration element to this configuration element.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="from" /> is <see langword="null" /> or empty.</exception>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">The configuration file is read-only.</exception>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -90,8 +93,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the type of <see cref="T:System.ServiceModel.Security.SecurityStateEncoder" /> to be used.</summary>
+        <value>The type of <see cref="T:System.ServiceModel.Security.SecurityStateEncoder" /> to be used.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -15,8 +15,24 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the part of the <see cref="T:System.Windows.Forms.DataGrid" /> control the user has clicked.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the members of this enumeration to determine which part of the grid has been clicked. The <xref:System.Windows.Forms.DataGrid.HitTestInfo.Type%2A> property of a <xref:System.Windows.Forms.DataGrid.HitTestInfo> returns a <xref:System.Windows.Forms.DataGrid.HitTestType>. The <xref:System.Windows.Forms.DataGrid.HitTestInfo> is created by invoking the <xref:System.Windows.Forms.DataGrid.HitTest%2A> method of a <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> control.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Windows.Forms.DataGrid.HitTest%2A> method in a <xref:System.Windows.Forms.Control.MouseDown> event to return the <xref:System.Windows.Forms.DataGrid.HitTestInfo>. The row, column, and part of the grid are then printed.  
+  
+ [!code-cpp[Classic DataGrid.HitTestType Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGrid.HitTestType Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic DataGrid.HitTestType Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGrid.HitTestType Example/CS/source.cs#1)]
+ [!code-vb[Classic DataGrid.HitTestType Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGrid.HitTestType Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Caption">
@@ -32,7 +48,7 @@
         <ReturnType>System.Windows.Forms.DataGrid+HitTestType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The caption of the <see cref="T:System.Windows.Forms.DataGrid" /> control.</summary>
       </Docs>
     </Member>
     <Member MemberName="Cell">
@@ -48,7 +64,7 @@
         <ReturnType>System.Windows.Forms.DataGrid+HitTestType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A cell in the <see cref="T:System.Windows.Forms.DataGrid" /> control.</summary>
       </Docs>
     </Member>
     <Member MemberName="ColumnHeader">
@@ -64,7 +80,7 @@
         <ReturnType>System.Windows.Forms.DataGrid+HitTestType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A column header in the <see cref="T:System.Windows.Forms.DataGrid" /> control.</summary>
       </Docs>
     </Member>
     <Member MemberName="ColumnResize">
@@ -80,7 +96,7 @@
         <ReturnType>System.Windows.Forms.DataGrid+HitTestType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The column border, which is the line between column headers. It can be dragged to resize a column's width.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -96,7 +112,7 @@
         <ReturnType>System.Windows.Forms.DataGrid+HitTestType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The background area, visible when the control contains no table, few rows, or when a table is scrolled to its bottom.</summary>
       </Docs>
     </Member>
     <Member MemberName="ParentRows">
@@ -112,7 +128,7 @@
         <ReturnType>System.Windows.Forms.DataGrid+HitTestType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The parent row section of the <see cref="T:System.Windows.Forms.DataGrid" /> control. The parent row displays information from or about the parent table of the currently displayed child table, such as the name of the parent table, column names and values of the parent record.</summary>
       </Docs>
     </Member>
     <Member MemberName="RowHeader">
@@ -128,7 +144,7 @@
         <ReturnType>System.Windows.Forms.DataGrid+HitTestType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A row header in the <see cref="T:System.Windows.Forms.DataGrid" /> control.</summary>
       </Docs>
     </Member>
     <Member MemberName="RowResize">
@@ -144,7 +160,7 @@
         <ReturnType>System.Windows.Forms.DataGrid+HitTestType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The row border, which is the line between grid row headers. It can be dragged to resize a row's height.</summary>
       </Docs>
     </Member>
   </Members>

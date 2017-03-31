@@ -20,7 +20,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a processing instruction, which XML defines to keep processor-specific information in the text of the document.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -48,11 +48,18 @@
         <Parameter Name="doc" Type="System.Xml.XmlDocument" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="data">To be added.</param>
-        <param name="doc">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="target">The target of the processing instruction; see the <see cref="P:System.Xml.XmlProcessingInstruction.Target" /> property.</param>
+        <param name="data">The content of the instruction; see the <see cref="P:System.Xml.XmlProcessingInstruction.Data" /> property.</param>
+        <param name="doc">The parent XML document.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.XmlProcessingInstruction" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Do not instantiate an <xref:System.Xml.XmlProcessingInstruction> directly; instead, use methods such as <xref:System.Xml.XmlDocument.CreateProcessingInstruction%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CloneNode">
@@ -80,10 +87,20 @@
         <Parameter Name="deep" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="deep">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="deep">
+          <see langword="true" /> to recursively clone the subtree under the specified node; <see langword="false" /> to clone only the node itself.</param>
+        <summary>Creates a duplicate of this node.</summary>
+        <returns>The duplicate node.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `CloneNode` serves as a copy constructor for nodes. For processing instruction nodes, the cloned node always includes the target and data. To see how this method behaves with other node types, see the <xref:System.Xml.XmlNode.CloneNode%2A> method in the `XmlNode` class.  
+  
+ The cloned node has no parent (<xref:System.Xml.XmlNode.ParentNode%2A> returns `null`).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Data">
@@ -108,9 +125,20 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the content of the processing instruction, excluding the target.</summary>
+        <value>The content of the processing instruction, excluding the target.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a processing instruction node and adds it to a document.  
+  
+ [!code-cpp[Classic WebData XmlDocument.CreateProcessingInstruction Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.CreateProcessingInstruction Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic WebData XmlDocument.CreateProcessingInstruction Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.CreateProcessingInstruction Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData XmlDocument.CreateProcessingInstruction Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.CreateProcessingInstruction Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InnerText">
@@ -135,9 +163,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the concatenated values of the node and all its children.</summary>
+        <value>The concatenated values of the node and all its children.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is a Microsoft extension to the Document Object Model (DOM).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LocalName">
@@ -162,8 +197,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the local name of the node.</summary>
+        <value>For processing instruction nodes, this property returns the target of the processing instruction.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -189,8 +224,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the qualified name of the node.</summary>
+        <value>For processing instruction nodes, this property returns the target of the processing instruction.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -216,8 +251,8 @@
         <ReturnType>System.Xml.XmlNodeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type of the current node.</summary>
+        <value>For <see langword="XmlProcessingInstruction" /> nodes, this value is XmlNodeType.ProcessingInstruction.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -243,9 +278,20 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the target of the processing instruction.</summary>
+        <value>The target of the processing instruction.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a processing instruction node and adds it to a document.  
+  
+ [!code-cpp[Classic WebData XmlDocument.CreateProcessingInstruction Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.CreateProcessingInstruction Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic WebData XmlDocument.CreateProcessingInstruction Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.CreateProcessingInstruction Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData XmlDocument.CreateProcessingInstruction Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.CreateProcessingInstruction Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -270,9 +316,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value of the node.</summary>
+        <value>The entire content of the processing instruction, excluding the target.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">Node is read-only.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteContentTo">
@@ -300,9 +347,16 @@
         <Parameter Name="w" Type="System.Xml.XmlWriter" />
       </Parameters>
       <Docs>
-        <param name="w">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="w">The <see langword="XmlWriter" /> to which you want to save.</param>
+        <summary>Saves all the children of the node to the specified <see cref="T:System.Xml.XmlWriter" />. Because ProcessingInstruction nodes do not have children, this method has no effect.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is a Microsoft extension to the Document Object Model (DOM).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteTo">
@@ -330,9 +384,16 @@
         <Parameter Name="w" Type="System.Xml.XmlWriter" />
       </Parameters>
       <Docs>
-        <param name="w">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="w">The <see langword="XmlWriter" /> to which you want to save.</param>
+        <summary>Saves the node to the specified <see cref="T:System.Xml.XmlWriter" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is a Microsoft extension to the Document Object Model (DOM).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,5 +1,0 @@
-        Dim item As New SyndicationItem("Item Title", "Item Content", New Uri("http:' Item/Alternate/Link"), "itemID", DateTimeOffset.Now)
-        Dim atomFormatter As Atom10ItemFormatter = item.GetAtom10Formatter()
-        Dim writer As XmlWriter = XmlWriter.Create("output.xml")
-        atomFormatter.WriteTo(writer)
-        writer.Close()

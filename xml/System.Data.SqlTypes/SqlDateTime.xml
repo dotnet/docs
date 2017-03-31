@@ -35,7 +35,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the date and time data ranging in value from January 1, 1753 to December 31, 9999 to an accuracy of 3.33 milliseconds to be stored in or retrieved from a database. The <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure has a different underlying data structure from its corresponding .NET Framework type, <see cref="T:System.DateTime" />, which can represent any time between 12:00:00 AM 1/1/0001 and 11:59:59 PM 12/31/9999, to the accuracy of 100 nanoseconds. <see cref="T:System.Data.SqlTypes.SqlDateTime" /> actually stores the relative difference to 00:00:00 AM 1/1/1900. Therefore, a conversion from "00:00:00 AM 1/1/1900" to an integer will return 0.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -61,8 +61,8 @@
         <Parameter Name="value" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">A <see langword="DateTime" /> structure.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure using the specified <see cref="T:System.DateTime" /> value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,9 +89,9 @@
         <Parameter Name="timeTicks" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="dayTicks">To be added.</param>
-        <param name="timeTicks">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="dayTicks">An integer value that represents the date as ticks.</param>
+        <param name="timeTicks">An integer value that represents the time as ticks.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure using the supplied parameters.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,10 +119,10 @@
         <Parameter Name="day" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="year">To be added.</param>
-        <param name="month">To be added.</param>
-        <param name="day">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="year">An integer representing the year of the of the new <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <param name="month">An integer value representing the month of the new <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <param name="day">An integer value representing the day number of the new <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure using the supplied parameters to initialize the year, month, day.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,13 +153,13 @@
         <Parameter Name="second" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="year">To be added.</param>
-        <param name="month">To be added.</param>
-        <param name="day">To be added.</param>
-        <param name="hour">To be added.</param>
-        <param name="minute">To be added.</param>
-        <param name="second">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="year">An integer value representing the year of the new <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <param name="month">An integer value representing the month of the new <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <param name="day">An integer value representing the day of the month of the new <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <param name="hour">An integer value representing the hour of the new <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <param name="minute">An integer value representing the minute of the new <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <param name="second">An integer value representing the second of the new <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure using the supplied parameters to initialize the year, month, day, hour, minute, and second of the new structure.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -191,14 +191,14 @@
         <Parameter Name="millisecond" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="year">To be added.</param>
-        <param name="month">To be added.</param>
-        <param name="day">To be added.</param>
-        <param name="hour">To be added.</param>
-        <param name="minute">To be added.</param>
-        <param name="second">To be added.</param>
-        <param name="millisecond">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="year">An integer value representing the year of the new <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <param name="month">An integer value representing the month of the new <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <param name="day">An integer value representing the day of the month of the new <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <param name="hour">An integer value representing the hour of the new <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <param name="minute">An integer value representing the minute of the new <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <param name="second">An integer value representing the second of the new <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <param name="millisecond">An double value representing the millisecond of the new <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure using the supplied parameters to initialize the year, month, day, hour, minute, second, and millisecond of the new structure.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -230,14 +230,14 @@
         <Parameter Name="bilisecond" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="year">To be added.</param>
-        <param name="month">To be added.</param>
-        <param name="day">To be added.</param>
-        <param name="hour">To be added.</param>
-        <param name="minute">To be added.</param>
-        <param name="second">To be added.</param>
-        <param name="bilisecond">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="year">An integer value representing the year of the new <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <param name="month">An integer value representing the month of the new <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <param name="day">An integer value representing the day of the new <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <param name="hour">An integer value representing the hour of the new <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <param name="minute">An integer value representing the minute of the new <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <param name="second">An integer value representing the second of the new <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <param name="bilisecond">An integer value representing the bilisecond (billionth of a second) of the new <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure using the supplied parameters to initialize the year, month, day, hour, minute, second, and billisecond of the new structure.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -267,10 +267,10 @@
         <Parameter Name="t" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="t">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> value.</param>
+        <param name="t">A <see langword="Timespan" /> value.</param>
+        <summary>Adds a <see cref="T:System.Data.SqlTypes.SqlDateTime" /> to the specified <see langword="TimeSpan" />.</summary>
+        <returns>A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -299,9 +299,48 @@
         <Parameter Name="value" Type="System.Data.SqlTypes.SqlDateTime" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure to be compared.</param>
+        <summary>Compares this <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure to the supplied <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure and returns an indication of their relative values.</summary>
+        <returns>A signed number that indicates the relative values of the instance and the object.  
+  
+ <list type="table">  
+<listheader>  
+<term> Return value  
+  
+ </term>  
+<description> Condition  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> Less than zero  
+  
+ </term>  
+<description> This instance is less than <see cref="T:System.Data.SqlTypes.SqlDateTime" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Zero  
+  
+ </term>  
+<description> This instance is the same as <see cref="T:System.Data.SqlTypes.SqlDateTime" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Greater than zero  
+  
+ </term>  
+<description> This instance is greater than <see cref="T:System.Data.SqlTypes.SqlDateTime" />  
+  
+ -or-  
+  
+ <see cref="T:System.Data.SqlTypes.SqlDateTime" /> is a null reference (<see langword="Nothing " />in Visual Basic)  
+  
+ </description>  
+</item>  
+</list></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -330,9 +369,48 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.Object" /> to be compared.</param>
+        <summary>Compares this <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure to the supplied <see cref="T:System.Object" /> and returns an indication of their relative values.</summary>
+        <returns>A signed number that indicates the relative values of the instance and the object.  
+  
+ <list type="table">  
+<listheader>  
+<term> Return value  
+  
+ </term>  
+<description> Condition  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> Less than zero  
+  
+ </term>  
+<description> This instance is less than the object.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Zero  
+  
+ </term>  
+<description> This instance is the same as the object.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Greater than zero  
+  
+ </term>  
+<description> This instance is greater than the object  
+  
+ -or-  
+  
+ The object is a null reference (<see langword="Nothing" /> as Visual Basic).  
+  
+ </description>  
+</item>  
+</list></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -358,9 +436,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of ticks representing the date of this <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</summary>
+        <value>The number of ticks representing the date that is contained in the <see cref="P:System.Data.SqlTypes.SqlDateTime.Value" /> property of this <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Data.SqlTypes.SqlNullValueException">The exception that is thrown when the <see langword="Value" /> property of a <see cref="N:System.Data.SqlTypes" /> structure is set to null.</exception>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -388,9 +467,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The object to be compared.</param>
+        <summary>Compares the supplied object parameter to the <see cref="P:System.Data.SqlTypes.SqlDateTime.Value" /> property of the <see cref="T:System.Data.SqlTypes.SqlDateTime" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the object is an instance of <see cref="T:System.Data.SqlTypes.SqlDateTime" /> and the two are equal; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -420,10 +500,11 @@
         <Parameter Name="y" Type="System.Data.SqlTypes.SqlDateTime" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <param name="y">A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <summary>Performs a logical comparison of two <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structures to determine whether they are equal.</summary>
+        <returns>
+          <see langword="true" /> if the two values are equal. Otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -450,8 +531,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the hash code for this instance.</summary>
+        <returns>A 32-bit signed integer hash code.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -476,9 +557,9 @@
         <Parameter Name="schemaSet" Type="System.Xml.Schema.XmlSchemaSet" />
       </Parameters>
       <Docs>
-        <param name="schemaSet">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="schemaSet">A <see cref="T:System.Xml.Schema.XmlSchemaSet" />.</param>
+        <summary>Returns the XML Schema definition language (XSD) of the specified <see cref="T:System.Xml.Schema.XmlSchemaSet" />.</summary>
+        <returns>A <see langword="string" /> value that indicates the XSD of the specified <see cref="T:System.Xml.Schema.XmlSchemaSet" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -508,10 +589,10 @@
         <Parameter Name="y" Type="System.Data.SqlTypes.SqlDateTime" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <param name="y">A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <summary>Compares two instances of <see cref="T:System.Data.SqlTypes.SqlDateTime" /> to determine whether the first is greater than the second.</summary>
+        <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is greater than the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlDateTime" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -541,10 +622,10 @@
         <Parameter Name="y" Type="System.Data.SqlTypes.SqlDateTime" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <param name="y">A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <summary>Compares two instances of <see cref="T:System.Data.SqlTypes.SqlDateTime" /> to determine whether the first is greater than or equal to the second.</summary>
+        <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is greater than or equal to the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlDateTime" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -570,9 +651,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Indicates whether this <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure is null.</summary>
+        <value>
+          <see langword="true" /> if null. Otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [Handling Null Values](../Topic/Handling%20Null%20Values.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LessThan">
@@ -601,10 +690,10 @@
         <Parameter Name="y" Type="System.Data.SqlTypes.SqlDateTime" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <param name="y">A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <summary>Compares two instances of <see cref="T:System.Data.SqlTypes.SqlDateTime" /> to determine whether the first is less than the second.</summary>
+        <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is less than the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlDateTime" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -634,10 +723,10 @@
         <Parameter Name="y" Type="System.Data.SqlTypes.SqlDateTime" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <param name="y">A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <summary>Compares two instances of <see cref="T:System.Data.SqlTypes.SqlDateTime" /> to determine whether the first is less than or equal to the second.</summary>
+        <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is less than or equal to the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlDateTime" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -663,8 +752,15 @@
         <ReturnType>System.Data.SqlTypes.SqlDateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the maximum valid date value for a <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The maximum valid date for a <xref:System.Data.SqlTypes.SqlDateTime> structure is December 31, 9999.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MinValue">
@@ -689,8 +785,15 @@
         <ReturnType>System.Data.SqlTypes.SqlDateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the minimum valid date value for a <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The minimum valid date for a <xref:System.Data.SqlTypes.SqlDateTime> structure is January 1, 1753.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NotEquals">
@@ -719,10 +822,10 @@
         <Parameter Name="y" Type="System.Data.SqlTypes.SqlDateTime" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <param name="y">A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <summary>Performs a logical comparison of two instances of <see cref="T:System.Data.SqlTypes.SqlDateTime" /> to determine whether they are not equal.</summary>
+        <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the two instances are not equal or <see cref="F:System.Data.SqlTypes.SqlBoolean.False" /> if the two instances are equal. If either instance of <see cref="T:System.Data.SqlTypes.SqlDateTime" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -748,8 +851,15 @@
         <ReturnType>System.Data.SqlTypes.SqlDateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents a <see cref="T:System.DBNull" /> that can be assigned to this instance of the <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Null functions as a constant for the <xref:System.Data.SqlTypes.SqlDateTime> structure. For more information, see [Handling Null Values](../Topic/Handling%20Null%20Values.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
@@ -778,10 +888,10 @@
         <Parameter Name="t" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="t">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <param name="t">A <see cref="T:System.TimeSpan" /> structure.</param>
+        <summary>Adds the period of time indicated by the supplied <see cref="T:System.TimeSpan" /> parameter, <paramref name="t" />, to the supplied <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</summary>
+        <returns>A new <see cref="T:System.Data.SqlTypes.SqlDateTime" />. If either argument is <see cref="F:System.Data.SqlTypes.SqlDateTime.Null" />, the new <see cref="P:System.Data.SqlTypes.SqlDateTime.Value" /> is <see cref="F:System.Data.SqlTypes.SqlDateTime.Null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -811,11 +921,14 @@
         <Parameter Name="y" Type="System.Data.SqlTypes.SqlDateTime" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <param name="y">A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <summary>Performs a logical comparison of two <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structures to determine whether they are equal.</summary>
+        <returns>
+          <see langword="true" /> if the two values are equal. Otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDateTime.Equals%28System.Data.SqlTypes.SqlDateTime%2CSystem.Data.SqlTypes.SqlDateTime%29?displayProperty=fullName>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -906,11 +1019,13 @@
         <Parameter Name="y" Type="System.Data.SqlTypes.SqlDateTime" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <param name="y">A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <summary>Compares two instances of <see cref="T:System.Data.SqlTypes.SqlDateTime" /> to determine whether the first is greater than the second.</summary>
+        <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is greater than the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlBoolean" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDateTime.GreaterThan%28System.Data.SqlTypes.SqlDateTime%2CSystem.Data.SqlTypes.SqlDateTime%29?displayProperty=fullName>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
@@ -939,11 +1054,13 @@
         <Parameter Name="y" Type="System.Data.SqlTypes.SqlDateTime" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <param name="y">A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <summary>Compares two instances of <see cref="T:System.Data.SqlTypes.SqlDateTime" /> to determine whether the first is greater than or equal to the second.</summary>
+        <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is greater than or equal to the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlDateTime" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDateTime.GreaterThanOrEqual%28System.Data.SqlTypes.SqlDateTime%2CSystem.Data.SqlTypes.SqlDateTime%29?displayProperty=fullName>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -1003,10 +1120,10 @@
         <Parameter Name="y" Type="System.Data.SqlTypes.SqlDateTime" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <param name="y">A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <summary>Performs a logical comparison of two instances of <see cref="T:System.Data.SqlTypes.SqlDateTime" /> to determine whether they are not equal.</summary>
+        <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the two instances are not equal or <see cref="F:System.Data.SqlTypes.SqlBoolean.False" /> if the two instances are equal. If either instance of <see cref="T:System.Data.SqlTypes.SqlDateTime" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1036,11 +1153,13 @@
         <Parameter Name="y" Type="System.Data.SqlTypes.SqlDateTime" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <param name="y">A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <summary>Compares two instances of <see cref="T:System.Data.SqlTypes.SqlDateTime" /> to determine whether the first is less than the second.</summary>
+        <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is less than the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlDateTime" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDateTime.LessThan%28System.Data.SqlTypes.SqlDateTime%2CSystem.Data.SqlTypes.SqlDateTime%29?displayProperty=fullName>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
@@ -1069,11 +1188,13 @@
         <Parameter Name="y" Type="System.Data.SqlTypes.SqlDateTime" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <param name="y">A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <summary>Compares two instances of <see cref="T:System.Data.SqlTypes.SqlDateTime" /> to determine whether the first is less than or equal to the second.</summary>
+        <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is less than or equal to the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlDateTime" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDateTime.LessThanOrEqual%28System.Data.SqlTypes.SqlDateTime%2CSystem.Data.SqlTypes.SqlDateTime%29?displayProperty=fullName>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
@@ -1102,10 +1223,10 @@
         <Parameter Name="t" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="t">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
+        <param name="t">A <see cref="T:System.TimeSpan" /> structure.</param>
+        <summary>Subtracts the supplied <see cref="T:System.TimeSpan" /> structure, <paramref name="t" />, from the supplied <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</summary>
+        <returns>A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure representing the results of the subtraction.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1134,9 +1255,9 @@
         <Parameter Name="s" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="s">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="s">The <see langword="string" /> to be parsed.</param>
+        <summary>Converts the specified <see cref="T:System.String" /> representation of a date and time to its <see cref="T:System.Data.SqlTypes.SqlDateTime" /> equivalent.</summary>
+        <returns>A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure equal to the date and time represented by the specified <see langword="string" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1162,7 +1283,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A constant whose value is the number of ticks equivalent to one hour.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1188,7 +1309,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A constant whose value is the number of ticks equivalent to one minute.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1214,7 +1335,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A constant whose value is the number of ticks equivalent to one second.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1244,10 +1365,10 @@
         <Parameter Name="t" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="t">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> value.</param>
+        <param name="t">A <see langword="Timespan" /> value.</param>
+        <summary>Subtracts the specified <see langword="Timespan" /> from this <see cref="T:System.Data.SqlTypes.SqlDateTime" /> instance.</summary>
+        <returns>A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1270,8 +1391,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
+        <returns>An <see langword="XmlSchema" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1296,8 +1417,10 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="reader">
+          <see langword="XmlReader " />
+        </param>
+        <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1322,8 +1445,10 @@
         <Parameter Name="writer" Type="System.Xml.XmlWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">
+          <see langword="XmlWriter " />
+        </param>
+        <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1349,8 +1474,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of ticks representing the time of this <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</summary>
+        <value>The number of ticks representing the time of this <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1377,8 +1502,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure to <see cref="T:System.Data.SqlTypes.SqlString" />.</summary>
+        <returns>A <see langword="SqlString" /> structure whose value is a string representing the date and time that is contained in this <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1405,8 +1530,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure to a <see cref="T:System.String" />.</summary>
+        <returns>A <see langword="String" /> representing the <see cref="P:System.Data.SqlTypes.SqlDateTime.Value" /> property of this <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1432,9 +1557,10 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the value of the <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure. This property is read-only.</summary>
+        <value>The value of this <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Data.SqlTypes.SqlNullValueException">The exception that is thrown when the <see langword="Value" /> property of a <see cref="N:System.Data.SqlTypes" /> structure is set to null.</exception>
       </Docs>
     </Member>
   </Members>

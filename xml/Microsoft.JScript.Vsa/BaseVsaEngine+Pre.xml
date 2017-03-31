@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides enumeration for the <see cref="T:Microsoft.JScript.Vsa.BaseVsaEngine" /> class.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>Microsoft.JScript.Vsa.BaseVsaEngine+Pre</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The engine is compiled.</summary>
       </Docs>
     </Member>
     <Member MemberName="EngineInitialised">
@@ -48,7 +48,7 @@
         <ReturnType>Microsoft.JScript.Vsa.BaseVsaEngine+Pre</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The engine is initialized.</summary>
       </Docs>
     </Member>
     <Member MemberName="EngineNotClosed">
@@ -64,7 +64,7 @@
         <ReturnType>Microsoft.JScript.Vsa.BaseVsaEngine+Pre</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The engine is not closed.</summary>
       </Docs>
     </Member>
     <Member MemberName="EngineNotInitialised">
@@ -80,7 +80,7 @@
         <ReturnType>Microsoft.JScript.Vsa.BaseVsaEngine+Pre</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The engine is not initialized.</summary>
       </Docs>
     </Member>
     <Member MemberName="EngineNotRunning">
@@ -96,7 +96,7 @@
         <ReturnType>Microsoft.JScript.Vsa.BaseVsaEngine+Pre</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The engine is not running.</summary>
       </Docs>
     </Member>
     <Member MemberName="EngineRunning">
@@ -112,7 +112,7 @@
         <ReturnType>Microsoft.JScript.Vsa.BaseVsaEngine+Pre</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The engine is running.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -128,7 +128,7 @@
         <ReturnType>Microsoft.JScript.Vsa.BaseVsaEngine+Pre</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No engine is set.</summary>
       </Docs>
     </Member>
     <Member MemberName="RootMonikerNotSet">
@@ -144,7 +144,7 @@
         <ReturnType>Microsoft.JScript.Vsa.BaseVsaEngine+Pre</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The root moniker is not set.</summary>
       </Docs>
     </Member>
     <Member MemberName="RootMonikerSet">
@@ -160,7 +160,7 @@
         <ReturnType>Microsoft.JScript.Vsa.BaseVsaEngine+Pre</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The root moniker is set.</summary>
       </Docs>
     </Member>
     <Member MemberName="RootNamespaceSet">
@@ -176,7 +176,7 @@
         <ReturnType>Microsoft.JScript.Vsa.BaseVsaEngine+Pre</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The root namespace is set.</summary>
       </Docs>
     </Member>
     <Member MemberName="SiteNotSet">
@@ -192,7 +192,7 @@
         <ReturnType>Microsoft.JScript.Vsa.BaseVsaEngine+Pre</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The site is not set.</summary>
       </Docs>
     </Member>
     <Member MemberName="SiteSet">
@@ -208,7 +208,7 @@
         <ReturnType>Microsoft.JScript.Vsa.BaseVsaEngine+Pre</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The site is set.</summary>
       </Docs>
     </Member>
     <Member MemberName="SupportForDebug">
@@ -224,7 +224,7 @@
         <ReturnType>Microsoft.JScript.Vsa.BaseVsaEngine+Pre</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The debug features are switched on.</summary>
       </Docs>
     </Member>
   </Members>

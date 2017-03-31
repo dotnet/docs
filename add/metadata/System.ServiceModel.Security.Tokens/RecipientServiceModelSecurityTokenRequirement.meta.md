@@ -1,34 +1,48 @@
 ---
 uid: System.ServiceModel.Security.Tokens.RecipientServiceModelSecurityTokenRequirement
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.RecipientServiceModelSecurityTokenRequirement.ListenUri
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.RecipientServiceModelSecurityTokenRequirement.ToString
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.RecipientServiceModelSecurityTokenRequirement.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.RecipientServiceModelSecurityTokenRequirement.MessageAuthenticationAuditLevel
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.RecipientServiceModelSecurityTokenRequirement.AuditLogLocation
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.RecipientServiceModelSecurityTokenRequirement.SuppressAuditFailure
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Add a specified activity validation error to the activity before execution.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Validation.AddValidationError" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,8 +90,9 @@
         <ReturnType>System.Activities.InArgument&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether the validation error that occurred is a warning and not an error.</summary>
+        <value>
+          <see langword="true" /> if the error that occurred is a warning and not an error; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,8 +109,8 @@
         <ReturnType>System.Activities.InArgument&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets an alphanumeric string that contains a description of the error.</summary>
+        <value>A description of the error.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,8 +132,8 @@
         <ReturnType>System.Activities.InArgument&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the property that caused the error.</summary>
+        <value>The name of the property that caused the error.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

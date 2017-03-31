@@ -1,1 +1,0 @@
-	    int maxBufferSize = binding.MaxBufferSize;

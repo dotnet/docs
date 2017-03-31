@@ -8,7 +8,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides the interface for implementing property accessors.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,9 +28,9 @@
         <Parameter Name="target" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The property from which the value is retrieved.</param>
+        <summary>Gets the value of a specified property.</summary>
+        <returns>The value of the specified property.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,9 +51,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="target">The property for which <c>value</c> is set.</param>
+        <param name="value">The object containing the value of the property.</param>
+        <summary>Sets the specified property with the given value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

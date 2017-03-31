@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.DirectoryServices.ActiveDirectory.ForestTrustDomainInformation" /> class contains information about a <see cref="T:System.DirectoryServices.ActiveDirectory.Domain" /> object and is contained in a <see cref="T:System.DirectoryServices.ActiveDirectory.ForestTrustDomainInfoCollection" /> object.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the DNS name of the <see cref="T:System.DirectoryServices.ActiveDirectory.Domain" /> object.</summary>
+        <value>A string that contains the DNS name of the <see cref="T:System.DirectoryServices.ActiveDirectory.Domain" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the SID of the <see cref="T:System.DirectoryServices.ActiveDirectory.Domain" /> object.</summary>
+        <value>A string that contains the SID of the <see cref="T:System.DirectoryServices.ActiveDirectory.Domain" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +64,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the NetBIOS name of the <see cref="T:System.DirectoryServices.ActiveDirectory.Domain" /> object.</summary>
+        <value>A string that contains the NetBIOS name of the <see cref="T:System.DirectoryServices.ActiveDirectory.Domain" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,9 +82,11 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.ForestTrustDomainStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the status of the <see cref="T:System.DirectoryServices.ActiveDirectory.Domain" /> object.</summary>
+        <value>One of the <see cref="T:System.DirectoryServices.ActiveDirectory.ForestTrustDomainStatus" /> values that represents the status of the <see cref="T:System.DirectoryServices.ActiveDirectory.Domain" /> object.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
+          <paramref name="Status" /> is not a valid <see cref="T:System.DirectoryServices.ActiveDirectory.ForestTrustDomainStatus" /> enumeration value.</exception>
       </Docs>
     </Member>
   </Members>

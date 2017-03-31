@@ -1,9 +1,13 @@
 ---
 uid: System.Timers.ElapsedEventArgs
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Timers.ElapsedEventArgs.SignalTime
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

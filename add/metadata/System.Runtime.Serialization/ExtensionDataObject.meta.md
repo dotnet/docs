@@ -1,4 +1,6 @@
 ---
 uid: System.Runtime.Serialization.ExtensionDataObject
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

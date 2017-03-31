@@ -1,19 +1,23 @@
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.TickMark
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.TickMark.#ctor
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.TickMark.Size
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.TickMark.TickMarkStyle
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---

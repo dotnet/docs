@@ -22,9 +22,28 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="TChannel">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="TChannel">The type of channel to create.</typeparam>
+    <summary>A class for accessing [!INCLUDE[indigo1](~/includes/indigo1-md.md)] Web services on a client.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is a special <xref:System.ServiceModel.ChannelFactory> that automatically adds the <xref:System.ServiceModel.Description.WebHttpBehavior> to the endpoint if it is not already present. Furthermore, it adds a default <xref:System.ServiceModel.WebHttpBinding> to the endpoint if the binding is not explicitly configured and the address is an HTTP or HTTPS address.  
+  
+ If all the operations of the contract have no return value or have a return value of type <xref:System.IO.Stream>, then the <xref:System.ServiceModel.Web.WebChannelFactory%601> configures the binding for the appropriate content type.  
+  
+   
+  
+## Examples  
+ The following code shows how to use the <xref:System.ServiceModel.Web.WebChannelFactory%601> class to call a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service.  
+  
+ [!code-csharp[BasicWebProgramming#0](~/samples/snippets/csharp/VS_Snippets_CFX/basicwebprogramming/cs/snippets.cs#0)]
+ [!code-vb[BasicWebProgramming#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/basicwebprogramming/vb/snippets.vb#0)]  
+  
+ For a full code example, see [Basic WCF REST Programming Model Sample](http://msdn.microsoft.com/en-us/d3265542-febc-4018-84ea-32ddcfd2d874).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,7 +57,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Web.WebChannelFactory`1" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,9 +74,19 @@
         <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
       </Parameters>
       <Docs>
-        <param name="binding">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="binding">The binding to use when creating the channel.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Web.WebChannelFactory`1" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code shows how use this constructor to create a <xref:System.ServiceModel.Web.WebChannelFactory%601> and use it to call a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service.  
+  
+ [!code-csharp[BasicWebProgramming#1](~/samples/snippets/csharp/VS_Snippets_CFX/basicwebprogramming/cs/snippets.cs#1)]
+ [!code-vb[BasicWebProgramming#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/basicwebprogramming/vb/snippets.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -73,9 +102,19 @@
         <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
       </Parameters>
       <Docs>
-        <param name="endpoint">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="endpoint">The endpoint to use when creating the channel.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Web.WebChannelFactory`1" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code shows how use this constructor to create a <xref:System.ServiceModel.Web.WebChannelFactory%601> and use it to call a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service.  
+  
+ [!code-csharp[BasicWebProgramming#2](~/samples/snippets/csharp/VS_Snippets_CFX/basicwebprogramming/cs/snippets.cs#2)]
+ [!code-vb[BasicWebProgramming#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/basicwebprogramming/vb/snippets.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -93,8 +132,23 @@
       </Parameters>
       <Docs>
         <param name="configurationName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Web.WebChannelFactory`1" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `endpointConfigurationName` parameter must be set to the same value as the `name` attribute of the `<endpoint>` element in the application configuration file.  
+  
+   
+  
+## Examples  
+ The following code shows how use this constructor to create a <xref:System.ServiceModel.Web.WebChannelFactory%601> instance and use it to call a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service.  
+  
+ [!code-csharp[BasicWebProgramming#3](~/samples/snippets/csharp/VS_Snippets_CFX/basicwebprogramming/cs/snippets.cs#3)]
+ [!code-vb[BasicWebProgramming#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/basicwebprogramming/vb/snippets.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -112,8 +166,15 @@
       </Parameters>
       <Docs>
         <param name="serviceType">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Web.WebChannelFactory`1" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The type passed for the type parameter must be an interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -130,9 +191,19 @@
         <Parameter Name="remoteAddress" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="remoteAddress">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="remoteAddress">The URI of the Web service that is called.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Web.WebChannelFactory`1" /> class with the specified <see cref="T:System.Uri" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code shows how to use this constructor to create a <xref:System.ServiceModel.Web.WebChannelFactory%601> instance and call a service.  
+  
+ [!code-csharp[BasicWebProgramming#4](~/samples/snippets/csharp/VS_Snippets_CFX/basicwebprogramming/cs/snippets.cs#4)]
+ [!code-vb[BasicWebProgramming#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/basicwebprogramming/vb/snippets.vb#4)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -150,10 +221,20 @@
         <Parameter Name="remoteAddress" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="binding">To be added.</param>
-        <param name="remoteAddress">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="binding">The binding to use.</param>
+        <param name="remoteAddress">The URI of the Web service that is called.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Web.WebChannelFactory`1" /> class with the specified binding and <see cref="T:System.Uri" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code shows how to use this constructor to create a <xref:System.ServiceModel.Web.WebChannelFactory%601> instance and call a service.  
+  
+ [!code-csharp[BasicWebProgramming#5](~/samples/snippets/csharp/VS_Snippets_CFX/basicwebprogramming/cs/snippets.cs#5)]
+ [!code-vb[BasicWebProgramming#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/basicwebprogramming/vb/snippets.vb#5)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -171,10 +252,25 @@
         <Parameter Name="remoteAddress" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="endpointConfigurationName">To be added.</param>
-        <param name="remoteAddress">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="endpointConfigurationName">The name within the application configuration file where the channel is configured.</param>
+        <param name="remoteAddress">The URI of the Web service that is called.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Web.WebChannelFactory`1" /> class with the specified endpoint configuration and <see cref="T:System.Uri" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `endpointConfigurationName` parameter must be set to the same value as the `name` attribute of the `<endpoint>` element in the application configuration file.  
+  
+   
+  
+## Examples  
+ The following code shows how to use this constructor to create a <xref:System.ServiceModel.Web.WebChannelFactory%601> instance and call a service.  
+  
+ [!code-csharp[BasicWebProgramming#6](~/samples/snippets/csharp/VS_Snippets_CFX/basicwebprogramming/cs/snippets.cs#6)]
+ [!code-vb[BasicWebProgramming#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/basicwebprogramming/vb/snippets.vb#6)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnOpening">
@@ -192,8 +288,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>This method is called when the <see cref="T:System.ServiceModel.Web.WebChannelFactory`1" /> is opened.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When this method is called, if the <xref:System.ServiceModel.Web.WebChannelFactory%601> is not already associated with a binding a new <xref:System.ServiceModel.WebHttpBinding> is created based on the URI scheme of the remote address. Bindings with an HTTPS remote address are appropriately configured with the <xref:System.ServiceModel.WebHttpSecurity.Mode%2A> property set to <xref:System.ServiceModel.WebHttpSecurityMode> and the <xref:System.ServiceModel.WebHttpSecurity.Transport%2A> property set to `None`. The <xref:System.ServiceModel.Web.WebChannelFactory%601> adds an instance of <xref:System.ServiceModel.Description.WebHttpBehavior> to the endpoint if one does not already exist.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,24 +1,44 @@
 ---
 uid: System.ServiceModel.Configuration.StandardBindingOptionalReliableSessionElement
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.StandardBindingOptionalReliableSessionElement.InitializeFrom(System.ServiceModel.OptionalReliableSession)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Configuration.StandardBindingOptionalReliableSessionElement.ApplyConfiguration
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.StandardBindingOptionalReliableSessionElement.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Configuration.StandardBindingOptionalReliableSessionElement.InitializeFrom
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.StandardBindingOptionalReliableSessionElement.ApplyConfiguration(System.ServiceModel.OptionalReliableSession)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.StandardBindingOptionalReliableSessionElement.Enabled
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

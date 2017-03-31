@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Enumeration for the kind of resource key.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Data.Services.Providers.ResourceTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Complex type resource.</summary>
       </Docs>
     </Member>
     <Member MemberName="EntityType">
@@ -43,7 +43,7 @@
         <ReturnType>System.Data.Services.Providers.ResourceTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Entity type resource.</summary>
       </Docs>
     </Member>
     <Member MemberName="Primitive">
@@ -59,7 +59,7 @@
         <ReturnType>System.Data.Services.Providers.ResourceTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Primitive type resource.</summary>
       </Docs>
     </Member>
   </Members>

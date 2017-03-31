@@ -1,14 +1,17 @@
 ---
 uid: System.Web.Configuration.AuthorizationSection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.AuthorizationSection.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.AuthorizationSection.Rules
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

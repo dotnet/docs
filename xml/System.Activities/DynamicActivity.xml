@@ -20,8 +20,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides an object model that allows you to construct activities dynamically that interface with the WF designer and runtime using <see cref="T:System.ComponentModel.ICustomTypeDescriptor" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to create a <xref:System.Activities.DynamicActivity>.  
+  
+ [!code-csharp[DynamicActivityCreation#0](~/samples/snippets/csharp/VS_Snippets_CFX/dynamicactivitycreation/cs/program.cs#0)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,8 +44,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.DynamicActivity" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ With <xref:System.Activities.DynamicActivity> you can create new activities without creating new types. <xref:System.Activities.DynamicActivity> with its associated XAML support in <xref:System.Activities.XamlIntegration.ActivityXamlServices> allows new arguments to be defined in XAML and bound by the host without requiring XAML to be compiled.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Attributes">
@@ -57,8 +73,8 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Attribute&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the collection of attributes of the dynamically generated activity.</summary>
+        <value>The collection of attributes.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,8 +96,8 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Activities.Validation.Constraint&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns a collection of <see cref="T:System.Activities.Validation.Constraint" /> activities that are configured to provide validation for the <see cref="T:System.Activities.DynamicActivity" />.</summary>
+        <value>The constraint collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,9 +128,18 @@
         <ReturnType>System.Func&lt;System.Activities.Activity&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the execution logic of the activity.</summary>
+        <value>The execution logic.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to specify the implementation for a dynamic activity.  
+  
+ [!code-csharp[DynamicActivityCreation#0](~/samples/snippets/csharp/VS_Snippets_CFX/dynamicactivitycreation/cs/program.cs#0)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ImplementationVersion">
@@ -138,8 +163,8 @@
         <ReturnType>System.Version</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the implementation version of the activity.</summary>
+        <value>The implementation version of the activity.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,8 +181,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The name to be displayed for the activity in the workflow designer.</summary>
+        <value>The activity name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -182,8 +207,8 @@
         <ReturnType>System.Collections.ObjectModel.KeyedCollection&lt;System.String,System.Activities.DynamicActivityProperty&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the collection of properties that map to the arguments of the dynamically generated activity.</summary>
+        <value>The collection of properties.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -201,9 +226,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a collection of attributes of the dynamic activity.</summary>
+        <returns>The attributes of the dynamic activity.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Activities.DynamicActivity> instance is cast to an <xref:System.ComponentModel.ICustomTypeDescriptor> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetClassName">
@@ -220,9 +252,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the class name of the dynamic activity.</summary>
+        <returns>The class name.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Activities.DynamicActivity> instance is cast to an <xref:System.ComponentModel.ICustomTypeDescriptor> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetComponentName">
@@ -239,9 +278,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the component name of the dynamic activity.</summary>
+        <returns>The component name.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Activities.DynamicActivity> instance is cast to an <xref:System.ComponentModel.ICustomTypeDescriptor> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetConverter">
@@ -258,9 +304,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a type converter for the dynamic activity.</summary>
+        <returns>A type converter for this dynamic activity instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Activities.DynamicActivity> instance is cast to an <xref:System.ComponentModel.ICustomTypeDescriptor> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetDefaultEvent">
@@ -277,9 +330,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the default event for the dynamic activity.</summary>
+        <returns>The default event.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Activities.DynamicActivity> instance is cast to an <xref:System.ComponentModel.ICustomTypeDescriptor> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty">
@@ -296,9 +356,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the default property for the dynamic activity.</summary>
+        <returns>The default property.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Activities.DynamicActivity> instance is cast to an <xref:System.ComponentModel.ICustomTypeDescriptor> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetEditor">
@@ -317,10 +384,17 @@
         <Parameter Name="editorBaseType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="editorBaseType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="editorBaseType">The base type of the editor you want to find.</param>
+        <summary>Returns an editor with the specified base type.</summary>
+        <returns>An instance of the editor that can be cast to the specified editor type or <see langword="null" /> if no editor of the requested type can be found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Activities.DynamicActivity> instance is cast to an <xref:System.ComponentModel.ICustomTypeDescriptor> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetEvents">
@@ -337,9 +411,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the collection of events of the dynamic activity.</summary>
+        <returns>The collection of events.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Activities.DynamicActivity> instance is cast to an <xref:System.ComponentModel.ICustomTypeDescriptor> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetEvents">
@@ -358,10 +439,17 @@
         <Parameter Name="attributes" Type="System.Attribute[]" />
       </Parameters>
       <Docs>
-        <param name="attributes">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="attributes">An array that you can use as a filter.</param>
+        <summary>Returns the collection of events of the dynamic activity using a specified array of attributes as a filter.</summary>
+        <returns>The collection of events that match the specified attributes.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Activities.DynamicActivity> instance is cast to an <xref:System.ComponentModel.ICustomTypeDescriptor> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetProperties">
@@ -378,9 +466,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the collection of properties of the dynamic activity.</summary>
+        <returns>The collection of properties.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Activities.DynamicActivity> instance is cast to an <xref:System.ComponentModel.ICustomTypeDescriptor> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetProperties">
@@ -399,10 +494,17 @@
         <Parameter Name="attributes" Type="System.Attribute[]" />
       </Parameters>
       <Docs>
-        <param name="attributes">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="attributes">An array that you can use as a filter.</param>
+        <summary>Returns the collection of properties of the dynamic activity using a specified array of attributes as a filter.</summary>
+        <returns>The collection of properties that match the specified attributes.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Activities.DynamicActivity> instance is cast to an <xref:System.ComponentModel.ICustomTypeDescriptor> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner">
@@ -421,10 +523,19 @@
         <Parameter Name="pd" Type="System.ComponentModel.PropertyDescriptor" />
       </Parameters>
       <Docs>
-        <param name="pd">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="pd">The property whose owner is to be found.</param>
+        <summary>Returns this instance of the <see cref="T:System.Activities.DynamicActivity" /> class.</summary>
+        <returns>This instance of <see cref="T:System.Activities.DynamicActivity" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `pd` parameter is ignored by this method. This parameter is present to implement the <xref:System.ComponentModel.ICustomTypeDescriptor> interface.  
+  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Activities.DynamicActivity> instance is cast to an <xref:System.ComponentModel.ICustomTypeDescriptor> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

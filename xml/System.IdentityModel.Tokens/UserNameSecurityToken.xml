@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a security token that is based upon a user name and password.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.IdentityModel.Tokens.UserNameSecurityToken> class to provide authentication credentials in the form of a user name and password.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -29,10 +36,16 @@
         <Parameter Name="password" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="userName">To be added.</param>
-        <param name="password">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="userName">A user name. Sets the <see cref="P:System.IdentityModel.Tokens.UserNameSecurityToken.UserName" /> property.</param>
+        <param name="password">A password for the user name. Sets the <see cref="P:System.IdentityModel.Tokens.UserNameSecurityToken.Password" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.UserNameSecurityToken" /> class using the specified user name and password.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="userName" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="password" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -50,11 +63,21 @@
         <Parameter Name="id" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="userName">To be added.</param>
-        <param name="password">To be added.</param>
-        <param name="id">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="userName">A user name. Sets the <see cref="P:System.IdentityModel.Tokens.UserNameSecurityToken.UserName" /> property.</param>
+        <param name="password">A password for the user name. Sets the <see cref="P:System.IdentityModel.Tokens.UserNameSecurityToken.Password" /> property.</param>
+        <param name="id">A unique identifier of the security token. Sets the <see cref="P:System.IdentityModel.Tokens.UserNameSecurityToken.Id" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.UserNameSecurityToken" /> class using the specified user name, password, and unique identifier.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="userName" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="password" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="id" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Id">
@@ -70,9 +93,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a unique identifier of the security token.</summary>
+        <value>A unique identifier of the security token.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.UserNameSecurityToken.Id%2A> property is usually in the format of a URI with a GUID.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Password">
@@ -88,8 +118,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the password for the user name associated with the security token.</summary>
+        <value>The password for the user name associated with the security token.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,9 +136,16 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Tokens.SecurityKey&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the cryptographic keys associated with the security token.</summary>
+        <value>A <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> of type <see cref="T:System.IdentityModel.Tokens.SecurityKey" /> that contains the set of keys associated with the security token.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.IdentityModel.Tokens.UserNameSecurityToken> security tokens cannot be used for cryptographic operations, by default, so the <xref:System.IdentityModel.Tokens.UserNameSecurityToken.SecurityKeys%2A> property returns an empty collection.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UserName">
@@ -124,8 +161,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the user name that is associated with the security token.</summary>
+        <value>The user name that is associated with the security token.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,9 +179,16 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the first instant in time at which this security token is valid.</summary>
+        <value>A <see cref="T:System.DateTime" /> that represents the instant in time at which this security token is first valid.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.IdentityModel.Tokens.UserNameSecurityToken.ValidFrom%2A> and <xref:System.IdentityModel.Tokens.UserNameSecurityToken.ValidTo%2A> properties to determine the time period in which a <xref:System.IdentityModel.Tokens.UserNameSecurityToken> token is valid. The <xref:System.IdentityModel.Tokens.UserNameSecurityToken.ValidFrom%2A> and <xref:System.IdentityModel.Tokens.UserNameSecurityToken.ValidTo%2A> properties represent the first and last instants in time in which the security token is valid, respectively.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidTo">
@@ -160,9 +204,16 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the last instant in time at which this security token is valid.</summary>
+        <value>A <see cref="T:System.DateTime" /> that represents the last instant in time at which this security token is valid.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.IdentityModel.Tokens.UserNameSecurityToken.ValidFrom%2A> and <xref:System.IdentityModel.Tokens.UserNameSecurityToken.ValidTo%2A> properties to determine the time period in which a <xref:System.IdentityModel.Tokens.UserNameSecurityToken> token is valid. The <xref:System.IdentityModel.Tokens.UserNameSecurityToken.ValidFrom%2A> and <xref:System.IdentityModel.Tokens.UserNameSecurityToken.ValidTo%2A> properties represent the first and last instants in time in which the security token is valid, respectively.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

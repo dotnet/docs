@@ -24,7 +24,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Enumerates Secure Socket Layer (SSL) policy errors.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -50,7 +50,7 @@
         <ReturnType>System.Net.Security.SslPolicyErrors</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No SSL policy errors.</summary>
       </Docs>
     </Member>
     <Member MemberName="RemoteCertificateChainErrors">
@@ -75,7 +75,8 @@
         <ReturnType>System.Net.Security.SslPolicyErrors</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+          <see cref="P:System.Security.Cryptography.X509Certificates.X509Chain.ChainStatus" /> has returned a non empty array.</summary>
       </Docs>
     </Member>
     <Member MemberName="RemoteCertificateNameMismatch">
@@ -100,7 +101,7 @@
         <ReturnType>System.Net.Security.SslPolicyErrors</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Certificate name mismatch.</summary>
       </Docs>
     </Member>
     <Member MemberName="RemoteCertificateNotAvailable">
@@ -125,7 +126,7 @@
         <ReturnType>System.Net.Security.SslPolicyErrors</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Certificate not available.</summary>
       </Docs>
     </Member>
   </Members>

@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines XML serialization formats for elliptic curve keys.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration contains only one member, Rfc4050. This format describes how Elliptic Curve Digital Signature Algorithm (ECDSA) keys are serialized to XML.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Rfc4050">
@@ -27,7 +34,7 @@
         <ReturnType>System.Security.Cryptography.ECKeyXmlFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An XML serialization format described in RFC 4050, "Using the Elliptic Curve Signature Algorithm (ECDSA) for XML Digital Signatures."</summary>
       </Docs>
     </Member>
   </Members>

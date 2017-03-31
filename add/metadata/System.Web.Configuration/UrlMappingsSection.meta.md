@@ -1,19 +1,23 @@
 ---
 uid: System.Web.Configuration.UrlMappingsSection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.UrlMappingsSection.IsEnabled
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.UrlMappingsSection.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.UrlMappingsSection.UrlMappings
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

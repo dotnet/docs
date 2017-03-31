@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a placeholder for metadata items that cannot be converted from [!INCLUDE[TLA#tla_cshrp](~/includes/tlasharptla-cshrp-md.md)] to an underlying data type that persists metadata. The blob is converted into an array of bytes to preserve the content.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] supports the following image metadata schemas: [!INCLUDE[TLA#tla_exif](~/includes/tlasharptla-exif-md.md)], tEXt ([!INCLUDE[TLA2#tla_png](~/includes/tla2sharptla-png-md.md)] Textual Data), [!INCLUDE[TLA#tla_ifd](~/includes/tlasharptla-ifd-md.md)], [!INCLUDE[TLA#tla_iptc](~/includes/tlasharptla-iptc-md.md)], and [!INCLUDE[TLA#tla_xmp](~/includes/tlasharptla-xmp-md.md)].  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,8 +35,8 @@
         <Parameter Name="blob" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="blob">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="blob">Placeholder metadata.</param>
+        <summary>Initializes an instance of <see cref="T:System.Windows.Media.Imaging.BitmapMetadataBlob" /> and converts the metadata it holds into an array of bytes to persist its content.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,8 +54,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an array of bytes that represents the value of a <see cref="T:System.Windows.Media.Imaging.BitmapMetadataBlob" />.</summary>
+        <returns>An array of bytes.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,14 +1,14 @@
 ---
 uid: System.Management.Instrumentation.Instance
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.Instance.#ctor
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.Instance.Published
-internalonly: False
+manager: "jillfra"
 ---

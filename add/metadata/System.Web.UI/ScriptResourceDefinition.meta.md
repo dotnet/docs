@@ -1,49 +1,59 @@
 ---
 uid: System.Web.UI.ScriptResourceDefinition
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ScriptResourceDefinition.Path
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ScriptResourceDefinition.DebugPath
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ScriptResourceDefinition.CdnSupportsSecureConnection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ScriptResourceDefinition.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ScriptResourceDefinition.LoadSuccessExpression
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ScriptResourceDefinition.ResourceName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ScriptResourceDefinition.CdnPath
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ScriptResourceDefinition.ResourceAssembly
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ScriptResourceDefinition.CdnDebugPath
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

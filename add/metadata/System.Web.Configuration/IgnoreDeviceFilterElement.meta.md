@@ -1,14 +1,17 @@
 ---
 uid: System.Web.Configuration.IgnoreDeviceFilterElement
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.IgnoreDeviceFilterElement.Name
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.IgnoreDeviceFilterElement.#ctor(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

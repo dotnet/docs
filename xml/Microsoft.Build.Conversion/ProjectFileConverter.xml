@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Converts a [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] project file to the [!INCLUDE[vs_dev10_long](~/includes/vs-dev10-long-md.md)] project file format.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Conversion.ProjectFileConverter" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the last attempted conversion was skipped because the project file is already in the latest format.</summary>
+        <value>
+          <see langword="true" /> if the last attempted conversion was skipped because the project file is already in the latest format; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +62,8 @@
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a list of warnings generated during the conversion.</summary>
+        <value>A string array containing any warnings generated during the conversion.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,7 +81,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Converts the project specified by the <see cref="P:Microsoft.Build.Conversion.ProjectFileConverter.OldProjectFile" /> property and saves it in the file specified by the <see cref="P:Microsoft.Build.Conversion.ProjectFileConverter.NewProjectFile" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,8 +106,8 @@
         <Parameter Name="projectLoadSettings" Type="Microsoft.Build.BuildEngine.ProjectLoadSettings" />
       </Parameters>
       <Docs>
-        <param name="projectLoadSettings">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="projectLoadSettings">A <see cref="T:Microsoft.Build.BuildEngine.ProjectLoadSettings" /> flag that determine whether the project ignores non-existent .target files when loading.</param>
+        <summary>Converts the project specified by the <see cref="P:Microsoft.Build.Conversion.ProjectFileConverter.OldProjectFile" /> property and saves it in the file specified by the <see cref="P:Microsoft.Build.Conversion.ProjectFileConverter.NewProjectFile" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,8 +132,8 @@
         <Parameter Name="msbuildBinPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="msbuildBinPath">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="msbuildBinPath">The fully qualified path to MSBuild.exe.</param>
+        <summary>This is the entry point method, which performs the project file format conversion. This method will overwrite "newProjectFile" if it already exists, so the caller of this method should confirm with the user that that's what he really wants to do.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -150,9 +151,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a new project in memory from the <see cref="P:Microsoft.Build.Conversion.ProjectFileConverter.OldProjectFile" />.</summary>
+        <returns>Returns the converted <see cref="T:Microsoft.Build.BuildEngine.Project" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Returns the converted <xref:Microsoft.Build.BuildEngine.Project>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertInMemory">
@@ -176,9 +184,9 @@
         <Parameter Name="engine" Type="Microsoft.Build.BuildEngine.Engine" />
       </Parameters>
       <Docs>
-        <param name="engine">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="engine">The <see cref="T:Microsoft.Build.BuildEngine.Engine" /> in which to create the new project.</param>
+        <summary>Creates a new project in memory from the <see cref="P:Microsoft.Build.Conversion.ProjectFileConverter.OldProjectFile" />.</summary>
+        <returns>Returns the converted <see cref="T:Microsoft.Build.BuildEngine.Project" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -204,10 +212,10 @@
         <Parameter Name="projectLoadSettings" Type="Microsoft.Build.BuildEngine.ProjectLoadSettings" />
       </Parameters>
       <Docs>
-        <param name="engine">To be added.</param>
-        <param name="projectLoadSettings">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="engine">The <see cref="T:Microsoft.Build.BuildEngine.Engine" /> in which to create the new project.</param>
+        <param name="projectLoadSettings">A <see cref="T:Microsoft.Build.BuildEngine.ProjectLoadSettings" /> flag that determines whether the project ignores non-existent .target files when loading.</param>
+        <summary>This is the entry point method, which performs the project file format conversion. This method will simply create a new MSBuild Project object in memory, instead of trying to write it to disk.</summary>
+        <returns>Returns the converted <see cref="T:Microsoft.Build.BuildEngine.Project" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -227,9 +235,11 @@
         <Parameter Name="actuallyMakeChanges" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="actuallyMakeChanges">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="actuallyMakeChanges">if true, make the changes, otherwise, don't actually make any changes, but return whether you would make the changes</param>
+        <summary>Performs conversions specific to F# projects (VS2008 CTP -&gt; VS2012) and (VS2010 -&gt; VS2012).  
+  
+ This involves: changing the location of FSharp targets, and for 2008CTP, adding explicit mscorlib and FSharp.Core references.</summary>
+        <returns>Returns true if anything was (would be) changed, false otherwise.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -246,8 +256,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value indicating whether the project file being converted is a .user file.</summary>
+        <value>
+          <see langword="true" /> if the project file being converted is a .user file; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -264,9 +275,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the new project file name.</summary>
+        <value>A string representing the new project file name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This value must be set before running the <xref:Microsoft.Build.Conversion.ProjectFileConverter.Convert%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OldProjectFile">
@@ -282,9 +300,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the old project file name.</summary>
+        <value>The old project file name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This value must be set before running the <xref:Microsoft.Build.Conversion.ProjectFileConverter.Convert%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SolutionFile">
@@ -300,10 +325,27 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the solution file that contains the project being converted.</summary>
+        <value>The name of the solution file that contains the project being converted.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ConvertInMemory">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Conversion.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new project in memory from the <see cref="P:Microsoft.Build.Conversion.ProjectFileConverter.OldProjectFile" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Returns the converted <xref:Microsoft.Build.BuildEngine.Project>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

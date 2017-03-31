@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Identifies the string properties of a visual style element.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.StringProperty> enumeration represents a set of string properties that describe visual style elements. The <xref:System.Windows.Forms.VisualStyles.StringProperty> values are used as an argument in the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetString%2A?displayProperty=fullName> method to specify which property value to retrieve for the element that the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> currently represents.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Text">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.StringProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text that will be displayed with the element.</summary>
       </Docs>
     </Member>
   </Members>

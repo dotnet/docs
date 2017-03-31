@@ -1,44 +1,66 @@
 ---
 uid: System.Windows.Media.Animation.SplineInt32KeyFrame
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.SplineInt32KeyFrame.InterpolateValueCore(System.Int32,System.Double)
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.SplineInt32KeyFrame.#ctor(System.Int32,System.Windows.Media.Animation.KeyTime)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SplineInt32KeyFrame.#ctor
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.Animation.SplineInt32KeyFrame.InterpolateValueCore(System.Int32,System.Double)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.SplineInt32KeyFrame.#ctor(System.Int32,System.Windows.Media.Animation.KeyTime)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.Animation.SplineInt32KeyFrame.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SplineInt32KeyFrame.KeySpline
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SplineInt32KeyFrame.KeySplineProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SplineInt32KeyFrame.#ctor(System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SplineInt32KeyFrame.#ctor(System.Int32,System.Windows.Media.Animation.KeyTime,System.Windows.Media.Animation.KeySpline)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SplineInt32KeyFrame.CreateInstanceCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

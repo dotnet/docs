@@ -15,7 +15,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.Security.Cryptography.Pkcs.SubjectIdentifierType" /> enumeration defines the type of subject identifier.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,7 +37,7 @@
         <ReturnType>System.Security.Cryptography.Pkcs.SubjectIdentifierType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The subject is identified by the certificate issuer and serial number.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoSignature">
@@ -58,7 +58,7 @@
         <ReturnType>System.Security.Cryptography.Pkcs.SubjectIdentifierType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The subject is identified as taking part in an integrity check operation that uses only a hashing algorithm.</summary>
       </Docs>
     </Member>
     <Member MemberName="SubjectKeyIdentifier">
@@ -79,7 +79,7 @@
         <ReturnType>System.Security.Cryptography.Pkcs.SubjectIdentifierType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The subject is identified by the hash of the subject's public key. The hash algorithm used is determined by the signature algorithm suite in the subject's certificate.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -100,7 +100,7 @@
         <ReturnType>System.Security.Cryptography.Pkcs.SubjectIdentifierType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The type of subject identifier is unknown.</summary>
       </Docs>
     </Member>
   </Members>

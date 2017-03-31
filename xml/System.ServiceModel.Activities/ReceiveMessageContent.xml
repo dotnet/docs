@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>A class used to receive a <see cref="T:System.ServiceModel.Channels.Message" /> or a message contract type within a workflow service.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.ReceiveMessageContent" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +48,8 @@
         <Parameter Name="message" Type="System.Activities.OutArgument" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The message.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.ReceiveMessageContent" /> class with the specified message.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,9 +67,9 @@
         <Parameter Name="declaredMessageType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="declaredMessageType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The message.</param>
+        <param name="declaredMessageType">The message type.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.ReceiveMessageContent" /> class with the specified message and message type.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,8 +91,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the declared message type.</summary>
+        <value>The declared message type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,8 +114,8 @@
         <ReturnType>System.Activities.OutArgument</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the message received.</summary>
+        <value>The received message.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -138,8 +138,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets a boolean value that determines if the message should be serialized as the declared message type.</summary>
+        <returns>
+          <see langword="true" /> if the message should be serialized as the declared message type; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

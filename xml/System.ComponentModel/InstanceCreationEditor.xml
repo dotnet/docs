@@ -16,8 +16,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Creates an instance of a particular type of property from a drop-down box within the <see cref="T:System.Windows.Forms.PropertyGrid" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Usually, the text specified by <xref:System.ComponentModel.InstanceCreationEditor.Text%2A> is displayed on the drop-down box from the <xref:System.Windows.Forms.PropertyGrid> as a link or button. When clicked, the <xref:System.ComponentModel.InstanceCreationEditor.CreateInstance%2A> method is called with the <xref:System.Type> of the object to create.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,7 +43,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.InstanceCreationEditor" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,10 +69,10 @@
         <Parameter Name="instanceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="instanceType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">The context information.</param>
+        <param name="instanceType">The specified type.</param>
+        <summary>When overridden in a derived class, returns an instance of the specified type.</summary>
+        <returns>An instance of the specified type or <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,8 +94,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the specified text.</summary>
+        <value>The specified text.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

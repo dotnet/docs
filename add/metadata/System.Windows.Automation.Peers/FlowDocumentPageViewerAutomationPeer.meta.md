@@ -1,19 +1,26 @@
 ---
 uid: System.Windows.Automation.Peers.FlowDocumentPageViewerAutomationPeer
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.FlowDocumentPageViewerAutomationPeer.GetClassNameCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.FlowDocumentPageViewerAutomationPeer.GetChildrenCore
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.FlowDocumentPageViewerAutomationPeer.#ctor(System.Windows.Controls.FlowDocumentPageViewer)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

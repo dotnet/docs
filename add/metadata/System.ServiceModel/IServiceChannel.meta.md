@@ -1,9 +1,13 @@
 ---
 uid: System.ServiceModel.IServiceChannel
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.IServiceChannel.ListenUri
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

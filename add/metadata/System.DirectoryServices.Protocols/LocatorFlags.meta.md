@@ -1,4 +1,6 @@
 ---
 uid: System.DirectoryServices.Protocols.LocatorFlags
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---

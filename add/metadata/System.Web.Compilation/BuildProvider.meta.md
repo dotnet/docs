@@ -1,94 +1,146 @@
 ---
 uid: System.Web.Compilation.BuildProvider
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Compilation.BuildProvider.GenerateCode(System.Web.Compilation.AssemblyBuilder)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Compilation.BuildProvider.GetDefaultCompilerType
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Compilation.BuildProvider.ProcessCompileErrors(System.CodeDom.Compiler.CompilerResults)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Compilation.BuildProvider.#ctor
-internalonly: False
----
-
----
-uid: System.Web.Compilation.BuildProvider.GetCustomString(System.CodeDom.Compiler.CompilerResults)
-internalonly: False
----
-
----
-uid: System.Web.Compilation.BuildProvider.VirtualPathDependencies
-internalonly: False
----
-
----
-uid: System.Web.Compilation.BuildProvider.VirtualPath
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Compilation.BuildProvider.OpenStream
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Compilation.BuildProvider.GetCustomString(System.CodeDom.Compiler.CompilerResults)
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Compilation.BuildProvider.VirtualPathDependencies
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Compilation.BuildProvider.VirtualPath
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Compilation.BuildProvider.OpenStream
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Compilation.BuildProvider.OpenStream(System.String)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Compilation.BuildProvider.GetResultFlags(System.CodeDom.Compiler.CompilerResults)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Compilation.BuildProvider.RegisterBuildProvider(System.String,System.Type)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Compilation.BuildProvider.ReferencedAssemblies
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Compilation.BuildProvider.GetCodeCompileUnit(System.Collections.IDictionary@)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Compilation.BuildProvider.GetGeneratedType(System.CodeDom.Compiler.CompilerResults)
-internalonly: False
----
-
----
-uid: System.Web.Compilation.BuildProvider.CodeCompilerType
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Compilation.BuildProvider.OpenReader
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Compilation.BuildProvider.CodeCompilerType
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Compilation.BuildProvider.OpenReader
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Compilation.BuildProvider.GetDefaultCompilerTypeForLanguage(System.String)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Compilation.BuildProvider.OpenReader(System.String)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

@@ -17,7 +17,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Enables management of how HTTP cookies are handled in HTTP requests and responses.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.HttpCookieContainerBindingElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +51,8 @@
         <Parameter Name="elementToBeCloned" Type="System.ServiceModel.Channels.HttpCookieContainerBindingElement" />
       </Parameters>
       <Docs>
-        <param name="elementToBeCloned">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="elementToBeCloned">The binding element to be cloned.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.HttpCookieContainerBindingElement" /> class from a specified binding element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,10 +76,11 @@
         <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
       </Parameters>
       <Docs>
-        <typeparam name="TChannel">To be added.</typeparam>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TChannel">The type of channel factory.</typeparam>
+        <param name="context">
+          <see cref="T:System.ServiceModel.Channels.BindingContext" /> members that describe bindings, behaviors, contracts and other information required to create the channel factory.</param>
+        <summary>Creates a channel factory that can be used to create a channel.</summary>
+        <returns>A channel factory of the specified type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,8 +99,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a copy of the current binding element object.</summary>
+        <returns>The binding element object that is a deep clone of the original.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -127,10 +128,10 @@
         <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The typed object for which the method is querying.</typeparam>
+        <param name="context">The binding context for the binding element.</param>
+        <summary>Returns a typed object requested, if present, from the appropriate layer in the binding stack.</summary>
+        <returns>The typed object <paramref name="T" /> requested if it is present, or <see langword="Nothing" /> if it is not present.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,24 +1,35 @@
 ---
 uid: System.Configuration.SettingsPropertyWrongTypeException
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SettingsPropertyWrongTypeException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SettingsPropertyWrongTypeException.#ctor(System.String,System.Exception)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SettingsPropertyWrongTypeException.#ctor(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SettingsPropertyWrongTypeException.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.SettingsPropertyWrongTypeException.#ctor
+ms.author: "riande"
+manager: "wpickett"
 ---

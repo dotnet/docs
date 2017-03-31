@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.SqlServer.Server.SqlMethodAttribute
-internalonly: False
+manager: "mblythe"
 ---
 
 ---
 uid: Microsoft.SqlServer.Server.SqlMethodAttribute.#ctor
-internalonly: False
+manager: "mblythe"
 ---
 
 ---
 uid: Microsoft.SqlServer.Server.SqlMethodAttribute.OnNullCall
-internalonly: False
+manager: "mblythe"
 ---
 
 ---
 uid: Microsoft.SqlServer.Server.SqlMethodAttribute.IsMutator
-internalonly: False
+manager: "mblythe"
 ---
 
 ---
 uid: Microsoft.SqlServer.Server.SqlMethodAttribute.InvokeIfReceiverIsNull
-internalonly: False
+manager: "mblythe"
 ---

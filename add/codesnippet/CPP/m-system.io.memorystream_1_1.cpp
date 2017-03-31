@@ -1,1 +1,0 @@
-   MemoryStream^ memStream = gcnew MemoryStream( 100 );

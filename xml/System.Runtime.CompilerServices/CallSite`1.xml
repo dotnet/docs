@@ -27,8 +27,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="T">The delegate type.</typeparam>
+    <summary>Dynamic site type.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -57,9 +57,9 @@
         <Parameter Name="binder" Type="System.Runtime.CompilerServices.CallSiteBinder" />
       </Parameters>
       <Docs>
-        <param name="binder">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="binder">The binder responsible for the runtime binding of the dynamic operations at this call site.</param>
+        <summary>Creates an instance of the dynamic call site, initialized with the binder responsible for the runtime binding of the dynamic operations at this call site.</summary>
+        <returns>The new instance of dynamic call site.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,7 +85,7 @@
         <ReturnType>T</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Level 0 cache - a delegate specialized based on the site history.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,8 +111,8 @@
         <ReturnType>T</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The update delegate. Called when the dynamic site experiences cache miss.</summary>
+        <value>The update delegate.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,24 +1,29 @@
 ---
 uid: System.Web.UI.WebControls.ListViewDeleteEventArgs
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.ListViewDeleteEventArgs.Keys
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.ListViewDeleteEventArgs.ItemIndex
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.ListViewDeleteEventArgs.Values
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.ListViewDeleteEventArgs.#ctor(System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

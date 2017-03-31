@@ -1,4 +1,4 @@
 ---
 uid: System.Messaging.Acknowledgment
-internalonly: False
+manager: "tyoung"
 ---

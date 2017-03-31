@@ -1,14 +1,20 @@
 ---
 uid: System.Deployment.Application.CompatibleFrameworks
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Deployment.Application.CompatibleFrameworks.Frameworks
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Deployment.Application.CompatibleFrameworks.SupportUrl
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

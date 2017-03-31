@@ -1,19 +1,27 @@
 ---
 uid: System.CodeDom.Compiler.GeneratedCodeAttribute
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.Compiler.GeneratedCodeAttribute.#ctor(System.String,System.String)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.Compiler.GeneratedCodeAttribute.Version
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.Compiler.GeneratedCodeAttribute.Tool
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

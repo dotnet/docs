@@ -1,34 +1,54 @@
 ---
 uid: System.Windows.Media.PixelFormatChannelMask
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.PixelFormatChannelMask.op_Equality(System.Windows.Media.PixelFormatChannelMask,System.Windows.Media.PixelFormatChannelMask)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.PixelFormatChannelMask.Equals(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.PixelFormatChannelMask.Equals(System.Windows.Media.PixelFormatChannelMask,System.Windows.Media.PixelFormatChannelMask)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.PixelFormatChannelMask.Equals
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.PixelFormatChannelMask.Mask
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.PixelFormatChannelMask.GetHashCode
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.PixelFormatChannelMask.op_Inequality(System.Windows.Media.PixelFormatChannelMask,System.Windows.Media.PixelFormatChannelMask)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

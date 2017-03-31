@@ -22,9 +22,16 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">To be added.</param>
-    <param name="e">To be added.</param>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <param name="sender">The object that raised the event.</param>
+    <param name="e">A <see cref="T:System.Web.Security.PassportAuthenticationEventArgs" /> object that contains the event data.</param>
+    <summary>Represents the method that handles the <see langword="PassportAuthentication_OnAuthenticate" /> event of a <see cref="T:System.Web.Security.PassportAuthenticationModule" />. This class is deprecated.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

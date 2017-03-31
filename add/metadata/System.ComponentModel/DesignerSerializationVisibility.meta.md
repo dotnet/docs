@@ -1,4 +1,6 @@
 ---
 uid: System.ComponentModel.DesignerSerializationVisibility
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

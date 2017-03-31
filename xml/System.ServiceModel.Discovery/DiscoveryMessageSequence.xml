@@ -18,8 +18,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the AppSequence header defined in the WS-Discovery protocol.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class allows a receiver of discovery messages to process those messages in order even though they were received out of order.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CanCompareTo">
@@ -38,9 +45,10 @@
         <Parameter Name="other" Type="System.ServiceModel.Discovery.DiscoveryMessageSequence" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">The discovery message sequence to compare.</param>
+        <summary>Gets a value that indicates whether the specified <see cref="T:System.ServiceModel.Discovery.DiscoveryMessageSequence" /> instance is comparable to the current <see cref="T:System.ServiceModel.Discovery.DiscoveryMessageSequence" /> instance.</summary>
+        <returns>
+          <see langword="true" /> if the two discovery message sequences are comparable; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,9 +68,9 @@
         <Parameter Name="other" Type="System.ServiceModel.Discovery.DiscoveryMessageSequence" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">The discovery message sequence to compare.</param>
+        <summary>Compares the specified <see cref="T:System.ServiceModel.Discovery.DiscoveryMessageSequence" /> instance with the current <see cref="T:System.ServiceModel.Discovery.DiscoveryMessageSequence" /> instance.</summary>
+        <returns>0 if the two discovery message sequences are equal, a negative number if the message number of <paramref name="other" /> is greater than the message number of the current discovery sequence.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,9 +90,9 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The object to compare.</param>
+        <summary>Determines if the specified object is equal to the current <see cref="T:System.ServiceModel.Discovery.DiscoveryMessageSequence" /> instance.</summary>
+        <returns>true if the specified object is equal to the current discovery message sequence.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,9 +112,10 @@
         <Parameter Name="other" Type="System.ServiceModel.Discovery.DiscoveryMessageSequence" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">The discovery message sequence to compare.</param>
+        <summary>Determines if the specified <see cref="T:System.ServiceModel.Discovery.DiscoveryMessageSequence" /> instance is comparable to the current <see cref="T:System.ServiceModel.Discovery.DiscoveryMessageSequence" /> instance.</summary>
+        <returns>
+          <see langword="true" /> if the two discovery message sequences are comparable; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,8 +133,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets a hash code for the current <see cref="T:System.ServiceModel.Discovery.DiscoveryMessageSequence" /> instance.</summary>
+        <returns>A hash code value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,9 +151,16 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the instance ID.</summary>
+        <value>The instance ID.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This value is incremented each time the service is shut down or loses state.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MessageNumber">
@@ -160,9 +176,16 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the message number.</summary>
+        <value>The message number.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This value identifies a message within the context of a sequence identifier and an instance identifier.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -182,10 +205,11 @@
         <Parameter Name="messageSequence2" Type="System.ServiceModel.Discovery.DiscoveryMessageSequence" />
       </Parameters>
       <Docs>
-        <param name="messageSequence1">To be added.</param>
-        <param name="messageSequence2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="messageSequence1">A discovery message sequence.</param>
+        <param name="messageSequence2">A discovery message sequence.</param>
+        <summary>Determines if two specified instances of <see cref="T:System.ServiceModel.Discovery.DiscoveryMessageSequence" /> are equal.</summary>
+        <returns>
+          <see langword="true" /> if the two discovery message sequence instances are equal; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -206,10 +230,11 @@
         <Parameter Name="messageSequence2" Type="System.ServiceModel.Discovery.DiscoveryMessageSequence" />
       </Parameters>
       <Docs>
-        <param name="messageSequence1">To be added.</param>
-        <param name="messageSequence2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="messageSequence1">A discovery message sequence.</param>
+        <param name="messageSequence2">A discovery message sequence.</param>
+        <summary>Determines if two specified instances of <see cref="T:System.ServiceModel.Discovery.DiscoveryMessageSequence" /> are not equal.</summary>
+        <returns>
+          <see langword="true" /> if the two discovery message sequence instances are not equal; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -226,9 +251,16 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the sequence ID.</summary>
+        <value>The sequence ID.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This value identifies a sequence within the context of an instance identifier.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -245,8 +277,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a string representation of the <see cref="T:System.ServiceModel.Discovery.DiscoveryMessageSequence" /> instance.</summary>
+        <returns>The discovery message sequence.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

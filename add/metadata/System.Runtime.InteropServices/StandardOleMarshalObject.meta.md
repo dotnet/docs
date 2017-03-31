@@ -1,9 +1,13 @@
 ---
 uid: System.Runtime.InteropServices.StandardOleMarshalObject
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.StandardOleMarshalObject.#ctor
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

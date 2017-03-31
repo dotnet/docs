@@ -1,24 +1,24 @@
 ---
 uid: System.Runtime.Remoting.Messaging.IMethodCallMessage
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Messaging.IMethodCallMessage.GetInArg(System.Int32)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Messaging.IMethodCallMessage.InArgCount
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Messaging.IMethodCallMessage.GetInArgName(System.Int32)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Messaging.IMethodCallMessage.InArgs
-internalonly: False
+manager: "ghogen"
 ---

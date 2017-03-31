@@ -1,19 +1,27 @@
 ---
 uid: System.Web.UI.Design.WebControls.ValidationSummaryDesigner
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.ValidationSummaryDesigner.CreateViewControl
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.ValidationSummaryDesigner.PreFilterProperties(System.Collections.IDictionary)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.ValidationSummaryDesigner.#ctor
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

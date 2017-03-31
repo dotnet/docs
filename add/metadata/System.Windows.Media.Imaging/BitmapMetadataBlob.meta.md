@@ -1,14 +1,19 @@
 ---
 uid: System.Windows.Media.Imaging.BitmapMetadataBlob
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Imaging.BitmapMetadataBlob.#ctor(System.Byte[])
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Imaging.BitmapMetadataBlob.GetBlobValue
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

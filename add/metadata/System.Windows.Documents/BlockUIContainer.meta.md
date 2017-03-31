@@ -1,19 +1,33 @@
 ---
 uid: System.Windows.Documents.BlockUIContainer
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Documents.BlockUIContainer.Child
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Documents.BlockUIContainer.#ctor
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Documents.BlockUIContainer.#ctor(System.Windows.UIElement)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Documents.BlockUIContainer.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

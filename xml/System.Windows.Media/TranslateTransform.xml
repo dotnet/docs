@@ -11,8 +11,20 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Translates (moves) an object in the [!INCLUDE[TLA#tla_2d](~/includes/tlasharptla-2d-md.md)] x-y coordinate system.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.TranslateTransform> defines an axis-aligned translation along the x- and y- axes. The following illustration shows the transformation matrix for a translation by offset (*dx*, *dy*).  
+  
+ ![Translate Matrix 100010dxdy1](~/add/media/translate-matrix.gif "Translate Matrix 100010dxdy1")  
+Typical 3x3 matrix for 2-D translations  
+  
+ **Freezable Features:** Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.TranslateTransform> class provides several special features: <xref:System.Windows.Media.TranslateTransform> objects can be declared as , shared among multiple objects, made read-only to improve performance, cloned, and made thread-safe. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see [Freezable Objects Overview](../Topic/Freezable%20Objects%20Overview.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +38,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.TranslateTransform" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,9 +56,9 @@
         <Parameter Name="offsetY" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="offsetX">To be added.</param>
-        <param name="offsetY">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="offsetX">The displacement in the direction of the x-axis.</param>
+        <param name="offsetY">The displacement in the direction of the y-axis.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.TranslateTransform" /> class and specifies the displacements in the direction of the x- and y- axes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,9 +76,20 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a modifiable copy of this <see cref="T:System.Windows.Media.TranslateTransform" /> by making deep copies of its values.</summary>
+        <returns>A modifiable deep copy of the current object. The <see cref="P:System.Windows.Freezable.IsFrozen" /> property of the cloned object returns <see langword="false" /> even if the <see cref="P:System.Windows.Freezable.IsFrozen" /> property of the source is <see langword="true." /></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to produce modifiable copies of read-only <xref:System.Windows.Freezable> objects. For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ When this method copies dependency properties, it copies resource references and data bindings, although they might no longer resolve. It does not copy animations or their current values.  
+  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CloneCurrentValue">
@@ -83,9 +106,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a modifiable copy of this <see cref="T:System.Windows.Media.TranslateTransform" /> object by making deep copies of its values. This method does not copy resource references, data bindings, and animations, although it does copy their current values.</summary>
+        <returns>A modifiable deep copy of the current object. The <see cref="P:System.Windows.Freezable.IsFrozen" /> property of the cloned object is <see langword="false" /> even if the <see cref="P:System.Windows.Freezable.IsFrozen" /> property of the source is <see langword="true" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to produce modifiable copies of read-only <xref:System.Windows.Freezable> objects. For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceCore">
@@ -120,8 +152,8 @@
         <ReturnType>System.Windows.Media.Matrix</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.Windows.Media.Matrix" /> representation of this <see cref="T:System.Windows.Media.TranslateTransform" />.</summary>
+        <value>A matrix that represents this <see cref="T:System.Windows.Media.TranslateTransform" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -138,9 +170,24 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the distance to translate along the x-axis.</summary>
+        <value>The distance to translate (move) an object along the x-axis. The default value is 0.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Negative values move an object to the left; positive values move an object to the right.  
+  
+<a name="dependencyPropertyInfo_X"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.TranslateTransform.XProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="XProperty">
@@ -156,7 +203,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Media.TranslateTransform.X" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -173,9 +220,24 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the distance to translate (move) an object along the y-axis.</summary>
+        <value>The distance to translate (move) an object along the y-axis. The default value is 0.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Negative values move an object up; positive values move an object down.  
+  
+<a name="dependencyPropertyInfo_Y"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.TranslateTransform.YProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="YProperty">
@@ -191,7 +253,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Media.TranslateTransform.Y" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

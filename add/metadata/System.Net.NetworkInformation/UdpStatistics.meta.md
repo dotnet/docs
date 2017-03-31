@@ -1,34 +1,41 @@
 ---
 uid: System.Net.NetworkInformation.UdpStatistics
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.UdpStatistics.IncomingDatagramsDiscarded
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.UdpStatistics.UdpListeners
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.UdpStatistics.DatagramsSent
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.UdpStatistics.DatagramsReceived
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.UdpStatistics.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.UdpStatistics.IncomingDatagramsWithErrors
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

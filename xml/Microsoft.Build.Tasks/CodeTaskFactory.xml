@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>A task factory which can take a code DOM supported language and create a task from it.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates the task factory.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,8 +50,8 @@
         <Parameter Name="task" Type="Microsoft.Build.Framework.ITask" />
       </Parameters>
       <Docs>
-        <param name="task">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="task">The task to clean up.</param>
+        <summary>Cleans up any context or state used in a task.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,9 +71,9 @@
         <Parameter Name="loggingHost" Type="Microsoft.Build.Framework.IBuildEngine" />
       </Parameters>
       <Docs>
-        <param name="loggingHost">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="loggingHost">The host that logs information from the task factory.</param>
+        <summary>Create a <c>taskfactory</c> instance which contains the data that needs to be refreshed between task invocations.</summary>
+        <returns>Returns the new task.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,8 +90,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The MSBuild engine uses this for logging.</summary>
+        <value>Returns the name of the task.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,8 +109,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the type information for all task parameters.</summary>
+        <returns>Returns an array of the type information for all task parameters.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,12 +133,12 @@
         <Parameter Name="taskFactoryLoggingHost" Type="Microsoft.Build.Framework.IBuildEngine" />
       </Parameters>
       <Docs>
-        <param name="taskName">To be added.</param>
-        <param name="taskParameters">To be added.</param>
-        <param name="taskElementContents">To be added.</param>
-        <param name="taskFactoryLoggingHost">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="taskName">The name of the task.</param>
+        <param name="taskParameters">The parameters for the task.</param>
+        <param name="taskElementContents">The element contents for the task.</param>
+        <param name="taskFactoryLoggingHost">The logging host that gets information about tasks.</param>
+        <summary>Initialzes the task factory.</summary>
+        <returns>Returns the new task factory.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,8 +155,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Represents the type of task.</summary>
+        <value>Returns the task type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

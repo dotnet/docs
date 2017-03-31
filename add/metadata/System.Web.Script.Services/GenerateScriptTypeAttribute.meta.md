@@ -1,19 +1,23 @@
 ---
 uid: System.Web.Script.Services.GenerateScriptTypeAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Script.Services.GenerateScriptTypeAttribute.ScriptTypeId
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Script.Services.GenerateScriptTypeAttribute.Type
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Script.Services.GenerateScriptTypeAttribute.#ctor(System.Type)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

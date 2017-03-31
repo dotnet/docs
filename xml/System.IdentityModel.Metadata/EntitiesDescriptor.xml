@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a collection of entities.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,8 +26,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.EntitiesDescriptor" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Metadata.EntitiesDescriptor.ChildEntities%2A> and <xref:System.IdentityModel.Metadata.EntitiesDescriptor.ChildEntityGroups%2A> properties are initialized to empty collections in the new instance.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -43,8 +50,8 @@
         <Parameter Name="entityGroupList" Type="System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Metadata.EntitiesDescriptor&gt;" />
       </Parameters>
       <Docs>
-        <param name="entityGroupList">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="entityGroupList">The entities descriptor collection. Initializes the <see cref="P:System.IdentityModel.Metadata.EntitiesDescriptor.ChildEntityGroups" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.EntitiesDescriptor" /> class with the specified collection of child <see cref="T:System.IdentityModel.Metadata.EntitiesDescriptor" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +68,8 @@
         <Parameter Name="entityList" Type="System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Metadata.EntityDescriptor&gt;" />
       </Parameters>
       <Docs>
-        <param name="entityList">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="entityList">The entity descriptor collection. Initializes the <see cref="P:System.IdentityModel.Metadata.EntitiesDescriptor.ChildEntities" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.EntitiesDescriptor" /> class with the specified collection of child <see cref="T:System.IdentityModel.Metadata.EntityDescriptor" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,9 +87,9 @@
         <Parameter Name="entityGroupList" Type="System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Metadata.EntitiesDescriptor&gt;" />
       </Parameters>
       <Docs>
-        <param name="entityList">To be added.</param>
-        <param name="entityGroupList">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="entityList">The entity descriptor collection. Initializes the <see cref="P:System.IdentityModel.Metadata.EntitiesDescriptor.ChildEntities" /> property.</param>
+        <param name="entityGroupList">The entities descriptor collection. Initializes the <see cref="P:System.IdentityModel.Metadata.EntitiesDescriptor.ChildEntityGroups" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.EntitiesDescriptor" /> class with the specified collection of child <see cref="T:System.IdentityModel.Metadata.EntityDescriptor" /> and the specified collection of child <see cref="T:System.IdentityModel.Metadata.EntitiesDescriptor" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,8 +106,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.IdentityModel.Metadata.EntityDescriptor&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the child <see cref="T:System.IdentityModel.Metadata.EntityDescriptor" /> for this entities collection.</summary>
+        <value>The collection of child <see cref="T:System.IdentityModel.Metadata.EntityDescriptor" />. The default is an empty collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,8 +124,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.IdentityModel.Metadata.EntitiesDescriptor&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the child <see cref="T:System.IdentityModel.Metadata.EntitiesDescriptor" /> for this entities collection.</summary>
+        <value>The collection of child <see cref="T:System.IdentityModel.Metadata.EntitiesDescriptor" /> for this entity. The default is an empty collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,8 +142,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of this entities collection.</summary>
+        <value>The name of the entities collection. The default is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -11,8 +11,41 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the SOAP style that determines how the WSDL metadata for the service is formatted.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the message body is formatted with the Style set to Document. The style `RPC` means that the WSDL representation of messages exchanged for an operation contains parameters as if it were a remote procedure call. The following is an example.  
+  
+```  
+<wsdl:message name="IUseAndStyleCalculator_Add_InputMessage">  
+  <wsdl:part name="n1" type="xsd:double"/>  
+  <wsdl:part name="n2" type="xsd:double"/>  
+</wsdl:message>  
+  
+```  
+  
+ Setting the style to `Document` means that the WSDL representation contains a single element that represents the document that is exchanged for an operation as shown in the following example.  
+  
+```  
+<wsdl:message name="IUseAndStyleCalculator_Add_InputMessage">  
+  <wsdl:part name="parameters" element="tns:Add"/>  
+</wsdl:message>  
+```  
+  
+ Use the <xref:System.ServiceModel.XmlSerializerFormatAttribute?displayProperty=fullName> to set this value.  
+  
+   
+  
+## Examples  
+ The following code shows how to use this enumeration.  
+  
+ [!code-csharp[style_and_Use#0](~/samples/snippets/csharp/VS_Snippets_CFX/style_and_use/cs/source.cs#0)]
+ [!code-vb[style_and_Use#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/style_and_use/vb/source.vb#0)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Document">
@@ -29,7 +62,7 @@
         <ReturnType>System.ServiceModel.OperationFormatStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Causes the WSDL representation to contain a single element that represents the document that is exchanged for the operation.</summary>
       </Docs>
     </Member>
     <Member MemberName="Rpc">
@@ -46,7 +79,7 @@
         <ReturnType>System.ServiceModel.OperationFormatStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Causes the WSDL representation of messages exchanged for an operation and contains parameters as if it were a remote procedure call.</summary>
       </Docs>
     </Member>
   </Members>

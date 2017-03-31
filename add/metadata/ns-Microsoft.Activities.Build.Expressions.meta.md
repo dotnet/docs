@@ -1,4 +1,6 @@
 ---
 uid: Microsoft.Activities.Build.Expressions
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

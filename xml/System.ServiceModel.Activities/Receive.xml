@@ -16,8 +16,68 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>An activity that receives a message.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Activities.Receive> activity can receive a single item or multiple items depending on the type of receive content used.  
+  
+> [!WARNING]
+>  When a workflow contains multiple <xref:System.ServiceModel.Activities.Receive> activities with the same operation name, the <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> property must be set to the same set of correlation queries.  
+  
+   
+  
+## Examples  
+ The following example shows how to create a <xref:System.ServiceModel.Activities.Receive> activity and add it to a workflow in code.  
+  
+ [!code-csharp[SendReceiveParameters#0](~/samples/snippets/csharp/VS_Snippets_CFX/sendreceiveparameters/cs/echoworkflowservice/program.cs#0)]  
+  
+ The following example shows how to create a <xref:System.ServiceModel.Activities.Receive> activity and add it to a workflow service in XAML.  
+  
+```xaml  
+<WorkflowService mc:Ignorable="sap" ConfigurationName="Service1" Name="Service1" mva:VisualBasic.Settings="Assembly references and imported namespaces serialized as XML namespaces" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/servicemodel" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mv="clr-namespace:Microsoft.VisualBasic;assembly=System" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:s1="clr-namespace:System;assembly=System" xmlns:s2="clr-namespace:System;assembly=System.Xml" xmlns:s3="clr-namespace:System;assembly=System.Core" xmlns:sad="clr-namespace:System.Activities.Debugger;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System" xmlns:scg1="clr-namespace:System.Collections.Generic;assembly=System.ServiceModel" xmlns:scg2="clr-namespace:System.Collections.Generic;assembly=System.Core" xmlns:scg3="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:sl="clr-namespace:System.Linq;assembly=System.Core" xmlns:ssa="clr-namespace:System.ServiceModel.Activities;assembly=System.ServiceModel.Activities" xmlns:st="clr-namespace:System.Text;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">  
+  <p:Sequence sad:XamlDebuggerXmlReader.FileName="c:\Projects\WFServiceSnippets\WFServiceSnippets\Service1.xamlx" sap:VirtualizedContainerService.HintSize="277,644" mva:VisualBasic.Settings="Assembly references and imported namespaces serialized as XML namespaces">  
+    <p:Sequence.Variables>  
+      <p:Variable x:TypeArguments="CorrelationHandle" Name="__handle1" />  
+      <p:Variable x:TypeArguments="x:String" Name="Message" />  
+      <p:Variable x:TypeArguments="x:String" Name="Echo" />  
+    </p:Sequence.Variables>  
+    <sap:WorkflowViewStateService.ViewState>  
+      <scg3:Dictionary x:TypeArguments="x:String, x:Object">  
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>  
+      </scg3:Dictionary>  
+    </sap:WorkflowViewStateService.ViewState>  
+    <Receive x:Name="__ReferenceID0" CanCreateInstance="True" DisplayName="ReceiveString" sap:VirtualizedContainerService.HintSize="255,90" OperationName="Echo" ServiceContractName="Echo">  
+      <Receive.CorrelationInitializers>  
+        <RequestReplyCorrelationInitializer CorrelationHandle="[__handle1]" />  
+      </Receive.CorrelationInitializers>  
+      <ReceiveParametersContent>  
+        <p:OutArgument x:TypeArguments="x:String" x:Key="message">[Message]</p:OutArgument>  
+      </ReceiveParametersContent>  
+    </Receive>  
+    <p:WriteLine sap:VirtualizedContainerService.HintSize="255,61" Text="[&quot;Message received: &quot; + Message]" />  
+    <p:Assign sap:VirtualizedContainerService.HintSize="255,58">  
+      <p:Assign.To>  
+        <p:OutArgument x:TypeArguments="x:String">[Echo]</p:OutArgument>  
+      </p:Assign.To>  
+      <p:Assign.Value>  
+        <p:InArgument x:TypeArguments="x:String">["&lt;echo&gt; " + Message]</p:InArgument>  
+      </p:Assign.Value>  
+    </p:Assign>  
+    <SendReply Request="{x:Reference __ReferenceID0}" DisplayName="SendReply" sap:VirtualizedContainerService.HintSize="255,90">  
+      <SendParametersContent>  
+        <p:InArgument x:TypeArguments="x:String" x:Key="echo">[Echo]</p:InArgument>  
+      </SendParametersContent>  
+    </SendReply>  
+    <p:WriteLine sap:VirtualizedContainerService.HintSize="255,61" Text="[&quot;Message sent: &quot; + Echo]" />  
+  </p:Sequence>  
+</WorkflowService>  
+  
+```  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,8 +91,17 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.Receive" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this constructor.  
+  
+ [!code-csharp[SendReceiveParameters#1](~/samples/snippets/csharp/VS_Snippets_CFX/sendreceiveparameters/cs/echoworkflowservice/program.cs#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Action">
@@ -53,9 +122,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the value of the action header of the message.</summary>
+        <value>The action URI of the message.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.ServiceModel.Activities.Receive.Action%2A> property is not explicitly set, its value defaults to: `https://tempuri.org/{service contract namespace}/{service contract name}/{operation name}`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CacheMetadata">
@@ -97,9 +173,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether a new workflow instance is created to process the message if the message does not correlate to an existing workflow instance..</summary>
+        <value>
+          <see langword="true" /> if a new workflow instance is created to process the message, otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `true`, a new workflow instance is created to process the message if the message does not correlate with an existing workflow instance.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Content">
@@ -120,8 +204,8 @@
         <ReturnType>System.ServiceModel.Activities.ReceiveContent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the data to receive. The content can be either a <see cref="T:System.ServiceModel.Activities.ReceiveMessageContent" /> or a <see cref="T:System.ServiceModel.Activities.ReceiveParametersContent" />.</summary>
+        <value>The data to receive.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -138,8 +222,8 @@
         <ReturnType>System.ServiceModel.MessageQuerySet</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="T:System.ServiceModel.MessageQuerySet" /> used to query the message to extract correlation data.</summary>
+        <value>A set of message queries used to extract correlation data from the incoming message.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -161,8 +245,8 @@
         <ReturnType>System.Activities.InArgument&lt;System.ServiceModel.Activities.CorrelationHandle&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a correlation handle that is used to route the message to the appropriate workflow instance.</summary>
+        <value>The correlation handle.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -179,8 +263,8 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Activities.CorrelationInitializer&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of correlation initializers that initialize query-based, context, callback context, or request-reply correlations with a <see cref="T:System.ServiceModel.Activities.Send" /> activity runs.</summary>
+        <value>A collection of correlation initializers.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -200,9 +284,9 @@
         <Parameter Name="operation" Type="System.ServiceModel.Description.OperationDescription" />
       </Parameters>
       <Docs>
-        <param name="operation">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="operation">The contract operation description.</param>
+        <summary>Returns the receive activity from the given contract operation description.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Activities.Receive" /> object from the given contract operation description.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -219,9 +303,16 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Type&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of known types for the operation.</summary>
+        <value>A collection of known types.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property should be used in conjunction with the <xref:System.Runtime.Serialization.DataContractSerializer>. It is ignored if <xref:System.Xml.Serialization.XmlSerializer> is used. [!INCLUDE[crabout](~/includes/crabout-md.md)] known types, see [Data Contract Known Types](../Topic/Data%20Contract%20Known%20Types.md). Known types specified in this property will be added to the <xref:System.ServiceModel.Description.OperationDescription.KnownTypes%2A> collection of the corresponding <xref:System.ServiceModel.Description.OperationDescription> for this operation.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnCreateDynamicUpdateMap">
@@ -265,9 +356,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the operation implemented by the <see cref="T:System.ServiceModel.Activities.Receive" />.</summary>
+        <value>The name of the operation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.ServiceModel.Activities.Receive.OperationName%2A> property is not set, an exception is thrown. The operation name is used to construct the default value for the <xref:System.ServiceModel.Activities.Receive.Action%2A> property if the <xref:System.ServiceModel.Activities.Receive.Action%2A> property is not explicitly set. <xref:System.ServiceModel.Activities.Receive.OperationName%2A> is the <xref:System.ServiceModel.Description.OperationDescription.Name%2A> of the <xref:System.ServiceModel.Description.OperationDescription> for this operation.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ProtectionLevel">
@@ -288,9 +386,16 @@
         <ReturnType>System.Nullable&lt;System.Net.Security.ProtectionLevel&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates the protection level for the operation.</summary>
+        <value>The protection level for the operation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is set to one of the <xref:System.Net.Security.ProtectionLevel> enumeration values.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SerializerOption">
@@ -311,9 +416,16 @@
         <ReturnType>System.ServiceModel.Activities.SerializerOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that specifies the serializer to use for this operation.</summary>
+        <value>The serializer to use.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default serializer is the <xref:System.Runtime.Serialization.DataContractSerializer>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ServiceContractName">
@@ -337,9 +449,16 @@
         <ReturnType>System.Xml.Linq.XName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the service contract.</summary>
+        <value>The service contract name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is used to group service operations into individual service contracts. All <xref:System.ServiceModel.Activities.Receive> activities that have the same <xref:System.ServiceModel.Activities.Receive.ServiceContractName%2A> are grouped into the same service contract (WSDL PortType). This property defaults to the name of the workflow service.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeCorrelatesOn">
@@ -361,8 +480,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a value that indicates whether the <see cref="P:System.ServiceModel.Activities.Receive.CorrelatesOn" /> property has changed from its default value and should be serialized.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="P:System.ServiceModel.Activities.Receive.CorrelatesOn" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

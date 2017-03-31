@@ -15,8 +15,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the configuration file mapping for the machine configuration file.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ConfigurationFileMap> class is used to specify the path of the machine configuration file, commonly named Machine.config.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +37,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationFileMap" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,8 +54,8 @@
         <Parameter Name="machineConfigFilename" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="machineConfigFilename">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="machineConfigFilename">The name of the machine configuration file.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationFileMap" /> class based on the supplied parameter.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,8 +73,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a copy of the existing <see cref="T:System.Configuration.ConfigurationFileMap" /> object.</summary>
+        <returns>A <see cref="T:System.Configuration.ConfigurationFileMap" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,9 +91,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the machine configuration file name.</summary>
+        <value>The machine configuration file name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The machine configuration file name is commonly set as Machine.config.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

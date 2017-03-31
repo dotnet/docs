@@ -1,1 +1,0 @@
-      myAttributeCollection = New AttributeCollection(ViewState)

@@ -22,8 +22,22 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an XML qualified name.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An XML qualified name is a namespace qualified local name in the format of `namespace:localname`.  
+  
+ Because prefixes are only required when XML is persisted or read, they are irrelevant for <xref:System.Xml.XmlQualifiedName> objects. This class assumes that prefixes are irrelevant. It is the responsibility of the user to ensure the local name does not contain a ":".  
+  
+   
+  
+## Examples  
+ For an example using the <xref:System.Xml.XmlQualifiedName> class, see <xref:System.Xml.Schema.XmlSchemaAll>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,8 +62,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.XmlQualifiedName" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The object created has no name or namespace defined.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -76,9 +97,16 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="name">The local name to use as the name of the <see cref="T:System.Xml.XmlQualifiedName" /> object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.XmlQualifiedName" /> class with the specified name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The object created does not have a namespace defined.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -106,9 +134,9 @@
         <Parameter Name="ns" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="ns">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The local name to use as the name of the <see cref="T:System.Xml.XmlQualifiedName" /> object.</param>
+        <param name="ns">The namespace for the <see cref="T:System.Xml.XmlQualifiedName" /> object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.XmlQualifiedName" /> class with the specified name and namespace.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,7 +164,7 @@
         <ReturnType>System.Xml.XmlQualifiedName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides an empty <see cref="T:System.Xml.XmlQualifiedName" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,9 +195,10 @@
         <Parameter Name="other" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">The <see cref="T:System.Xml.XmlQualifiedName" /> to compare.</param>
+        <summary>Determines whether the specified <see cref="T:System.Xml.XmlQualifiedName" /> object is equal to the current <see cref="T:System.Xml.XmlQualifiedName" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the two are the same instance object; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,8 +227,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code for the <see cref="T:System.Xml.XmlQualifiedName" />.</summary>
+        <returns>A hash code for this object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -227,8 +256,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the <see cref="T:System.Xml.XmlQualifiedName" /> is empty.</summary>
+        <value>
+          <see langword="true" /> if name and namespace are empty strings; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -256,8 +286,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a string representation of the qualified name of the <see cref="T:System.Xml.XmlQualifiedName" />.</summary>
+        <value>A string representation of the qualified name or String.Empty if a name is not defined for the object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -285,8 +315,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a string representation of the namespace of the <see cref="T:System.Xml.XmlQualifiedName" />.</summary>
+        <value>A string representation of the namespace or String.Empty if a namespace is not defined for the object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -318,11 +348,14 @@
         <Parameter Name="b" Type="System.Xml.XmlQualifiedName" />
       </Parameters>
       <Docs>
-        <param name="a">To be added.</param>
-        <param name="b">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="a">An <see cref="T:System.Xml.XmlQualifiedName" /> to compare.</param>
+        <param name="b">An <see cref="T:System.Xml.XmlQualifiedName" /> to compare.</param>
+        <summary>Compares two <see cref="T:System.Xml.XmlQualifiedName" /> objects.</summary>
+        <returns>
+          <see langword="true" /> if the two objects have the same name and namespace values; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Xml.XmlQualifiedName.Equals%28System.Object%29?displayProperty=fullName>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -353,11 +386,14 @@
         <Parameter Name="b" Type="System.Xml.XmlQualifiedName" />
       </Parameters>
       <Docs>
-        <param name="a">To be added.</param>
-        <param name="b">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="a">An <see cref="T:System.Xml.XmlQualifiedName" /> to compare.</param>
+        <param name="b">An <see cref="T:System.Xml.XmlQualifiedName" /> to compare.</param>
+        <summary>Compares two <see cref="T:System.Xml.XmlQualifiedName" /> objects.</summary>
+        <returns>
+          <see langword="true" /> if the name and namespace values for the two objects differ; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Xml.XmlQualifiedName.Equals%28System.Object%29?displayProperty=fullName>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -385,8 +421,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the string value of the <see cref="T:System.Xml.XmlQualifiedName" />.</summary>
+        <returns>The string value of the <see cref="T:System.Xml.XmlQualifiedName" /> in the format of <see langword="namespace:localname" />. If the object does not have a namespace defined, this method returns just the local name.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -418,10 +454,10 @@
         <Parameter Name="ns" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="ns">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the object.</param>
+        <param name="ns">The namespace of the object.</param>
+        <summary>Returns the string value of the <see cref="T:System.Xml.XmlQualifiedName" />.</summary>
+        <returns>The string value of the <see cref="T:System.Xml.XmlQualifiedName" /> in the format of <see langword="namespace:localname" />. If the object does not have a namespace defined, this method returns just the local name.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

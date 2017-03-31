@@ -1,24 +1,29 @@
 ---
 uid: Microsoft.Build.Tasks.FormatUrl
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.FormatUrl.OutputUrl
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.FormatUrl.Execute
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.FormatUrl.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.FormatUrl.InputUrl
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

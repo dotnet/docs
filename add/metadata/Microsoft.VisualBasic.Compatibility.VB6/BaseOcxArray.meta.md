@@ -1,129 +1,188 @@
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.SizeChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.#ctor(System.ComponentModel.IContainer)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.Validated
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.Resize
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.Validating
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.PaddingChanged
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.Move
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.HookUpControlEvents(System.Object)
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.ClientSizeChanged
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.ParentChanged
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.ContextMenuStripChanged
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.RegionChanged
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.ControlRemoved
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.CausesValidationChanged
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.DockChanged
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.Enter
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.LocationChanged
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.ContextMenuChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.Resize
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.Validating
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.PaddingChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.Move
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.HookUpControlEvents(System.Object)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.ClientSizeChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.ParentChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.ContextMenuStripChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.RegionChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.ControlRemoved
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.CausesValidationChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.DockChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.Enter
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.LocationChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.ContextMenuChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.MouseCaptureChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.VisibleChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.MarginChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.ControlAdded
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.Leave
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.SystemColorsChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

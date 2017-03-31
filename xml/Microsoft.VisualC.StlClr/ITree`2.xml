@@ -27,10 +27,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="TKey">To be added.</typeparam>
-    <typeparam name="TValue">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="TKey">The type of the key component of an element in the controlled sequence.</typeparam>
+    <typeparam name="TValue">The type of the value component of an element in the controlled sequence.</typeparam>
+    <summary>Defines the interface of the STL/CLR <c>hash_map</c>, <c>hash_multimap</c>, <c>hash_set</c>, and <c>hash_multiset</c> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[unnamed_parm](~/includes/unnamed-parm-md.md)]  
+  
+ For more information, see [hash_map (STL/CLR)](../Topic/hash_map%20\(STL-CLR\).md), [hash_multimap (STL/CLR)](../Topic/hash_multimap%20\(STL-CLR\).md), [hash_set (STL/CLR)](../Topic/hash_set%20\(STL-CLR\).md), and [hash_multiset (STL/CLR)](../Topic/hash_multiset%20\(STL-CLR\).md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="begin">
@@ -50,9 +59,16 @@
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Designates the beginning of the controlled sequence.</summary>
+        <returns>An iterator.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::begin (STL/CLR)](../Topic/hash_map::begin%20\(STL-CLR\).md), [hash_multimap::begin (STL/CLR)](../Topic/hash_multimap::begin%20\(STL-CLR\).md), [hash_set::begin (STL/CLR)](../Topic/hash_set::begin%20\(STL-CLR\).md), and [hash_multiset::begin (STL/CLR)](../Topic/hash_multiset::begin%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="clear">
@@ -69,8 +85,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Removes all elements from the container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::clear (STL/CLR)](../Topic/hash_map::clear%20\(STL-CLR\).md), [hash_multimap::clear (STL/CLR)](../Topic/hash_multimap::clear%20\(STL-CLR\).md), [hash_set::clear (STL/CLR)](../Topic/hash_set::clear%20\(STL-CLR\).md), and [hash_multiset::clear (STL/CLR)](../Topic/hash_multiset::clear%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="count">
@@ -89,10 +112,17 @@
         <Parameter Name="_Keyval" Type="TKey" />
       </Parameters>
       <Docs>
-        <param name="_Keyval">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="_Keyval">The key value for which to search.</param>
+        <summary>Finds the number of elements that match a specified key.</summary>
+        <returns>The number of elements in the controlled sequence that have the same key as <paramref name="_Keyval" />. You use it to determine the number of elements currently in the controlled sequence that match a specified key.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::count (STL/CLR)](../Topic/hash_map::count%20\(STL-CLR\).md), [hash_multimap::count (STL/CLR)](../Topic/hash_multimap::count%20\(STL-CLR\).md), [hash_set::count (STL/CLR)](../Topic/hash_set::count%20\(STL-CLR\).md), and [hash_multiset::count (STL/CLR)](../Topic/hash_multiset::count%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="empty">
@@ -109,9 +139,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Tests whether no elements are present in the container.</summary>
+        <returns>
+          <see langword="true" /> if the container has no elements; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::empty (STL/CLR)](../Topic/hash_map::empty%20\(STL-CLR\).md), [hash_multimap::empty (STL/CLR)](../Topic/hash_multimap::empty%20\(STL-CLR\).md), [hash_set::empty (STL/CLR)](../Topic/hash_set::empty%20\(STL-CLR\).md), and [hash_multiset::empty (STL/CLR)](../Topic/hash_multiset::empty%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="end">
@@ -131,9 +169,16 @@
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Designates the end of the controlled sequence.</summary>
+        <returns>An iterator.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::end (STL/CLR)](../Topic/hash_map::end%20\(STL-CLR\).md), [hash_multimap::end (STL/CLR)](../Topic/hash_multimap::end%20\(STL-CLR\).md), [hash_set::end (STL/CLR)](../Topic/hash_set::end%20\(STL-CLR\).md), and [hash_multiset::end (STL/CLR)](../Topic/hash_multiset::end%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="equal_range">
@@ -154,10 +199,17 @@
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
-        <param name="_Keyval">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="_Keyval">The key value for which to search.</param>
+        <summary>Finds the range that matches a specified key.</summary>
+        <returns>A pair of iterators.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::equal_range (STL/CLR)](../Topic/hash_map::equal_range%20\(STL-CLR\).md), [hash_multimap::equal_range (STL/CLR)](../Topic/hash_multimap::equal_range%20\(STL-CLR\).md), [hash_set::equal_range (STL/CLR)](../Topic/hash_set::equal_range%20\(STL-CLR\).md), and [hash_multiset::equal_range (STL/CLR)](../Topic/hash_multiset::equal_range%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="erase">
@@ -176,10 +228,17 @@
         <Parameter Name="_Keyval" Type="TKey" />
       </Parameters>
       <Docs>
-        <param name="_Keyval">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="_Keyval">The key value to erase.</param>
+        <summary>Removes elements from the container that match the specified key.</summary>
+        <returns>The number of elements removed.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::erase (STL/CLR)](../Topic/hash_map::erase%20\(STL-CLR\).md), [hash_multimap::erase (STL/CLR)](../Topic/hash_multimap::erase%20\(STL-CLR\).md), [hash_set::erase (STL/CLR)](../Topic/hash_set::erase%20\(STL-CLR\).md), and [hash_multiset::erase (STL/CLR)](../Topic/hash_multiset::erase%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="erase">
@@ -250,10 +309,17 @@
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
-        <param name="_Keyval">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="_Keyval">The key value for which to search.</param>
+        <summary>Finds an element that matches a specified key.</summary>
+        <returns>An iterator.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::find (STL/CLR)](../Topic/hash_map::find%20\(STL-CLR\).md), [hash_multimap::find (STL/CLR)](../Topic/hash_multimap::find%20\(STL-CLR\).md), [hash_set::find (STL/CLR)](../Topic/hash_set::find%20\(STL-CLR\).md), and [hash_multiset::find (STL/CLR)](../Topic/hash_multiset::find%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="insert">
@@ -272,9 +338,16 @@
         <Parameter Name="_Right" Type="System.Collections.Generic.IEnumerable&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Right">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="_Right">The enumeration to insert into the container.</param>
+        <summary>Adds the given enumeration to the container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::insert (STL/CLR)](../Topic/hash_map::insert%20\(STL-CLR\).md), [hash_multimap::insert (STL/CLR)](../Topic/hash_multimap::insert%20\(STL-CLR\).md), [hash_set::insert (STL/CLR)](../Topic/hash_set::insert%20\(STL-CLR\).md), and [hash_multiset::insert (STL/CLR)](../Topic/hash_multiset::insert%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="insert">
@@ -294,10 +367,17 @@
         <Parameter Name="_Last" Type="Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_First">To be added.</param>
-        <param name="_Last">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="_First">An iterator that points to the beginning of the range of elements to insert.</param>
+        <param name="_Last">An iterator that points to the element that immediately follows the range of elements to insert.</param>
+        <summary>Adds to the container the elements specified by the given iterators.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::insert (STL/CLR)](../Topic/hash_map::insert%20\(STL-CLR\).md), [hash_multimap::insert (STL/CLR)](../Topic/hash_multimap::insert%20\(STL-CLR\).md), [hash_set::insert (STL/CLR)](../Topic/hash_set::insert%20\(STL-CLR\).md), and [hash_multiset::insert (STL/CLR)](../Topic/hash_multiset::insert%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="insert">
@@ -318,10 +398,17 @@
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
-        <param name="_Val">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="_Val">The key value to insert into the container.</param>
+        <summary>Adds the given value to the container.</summary>
+        <returns>A pair of iterators.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::insert (STL/CLR)](../Topic/hash_map::insert%20\(STL-CLR\).md), [hash_multimap::insert (STL/CLR)](../Topic/hash_multimap::insert%20\(STL-CLR\).md), [hash_set::insert (STL/CLR)](../Topic/hash_set::insert%20\(STL-CLR\).md), and [hash_multiset::insert (STL/CLR)](../Topic/hash_multiset::insert%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="insert">
@@ -364,9 +451,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the ordering delegate that is used to order the controlled sequence. You use it to compare two keys.</summary>
+        <returns>The ordering delegate that is used to order the controlled sequence.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::key_comp (STL/CLR)](../Topic/hash_map::key_comp%20\(STL-CLR\).md), [hash_multimap::key_comp (STL/CLR)](../Topic/hash_multimap::key_comp%20\(STL-CLR\).md), [hash_set::key_comp (STL/CLR)](../Topic/hash_set::key_comp%20\(STL-CLR\).md), and [hash_multiset::key_comp (STL/CLR)](../Topic/hash_multiset::key_comp%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="lower_bound">
@@ -387,10 +481,17 @@
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
-        <param name="_Keyval">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="_Keyval">The key value for which to search.</param>
+        <summary>Finds the beginning of the range of elements that match a specified key.</summary>
+        <returns>An iterator.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::lower_bound (STL/CLR)](../Topic/hash_map::lower_bound%20\(STL-CLR\).md), [hash_multimap::lower_bound (STL/CLR)](../Topic/hash_multimap::lower_bound%20\(STL-CLR\).md), [hash_set::lower_bound (STL/CLR)](../Topic/hash_set::lower_bound%20\(STL-CLR\).md), and [hash_multiset::lower_bound (STL/CLR)](../Topic/hash_multiset::lower_bound%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="rbegin">
@@ -410,9 +511,16 @@
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Designates the beginning of the reversed controlled sequence.</summary>
+        <returns>An iterator.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::rbegin (STL/CLR)](../Topic/hash_map::rbegin%20\(STL-CLR\).md), [hash_multimap::rbegin (STL/CLR)](../Topic/hash_multimap::rbegin%20\(STL-CLR\).md), [hash_set::rbegin (STL/CLR)](../Topic/hash_set::rbegin%20\(STL-CLR\).md), and [hash_multiset::rbegin (STL/CLR)](../Topic/hash_multiset::rbegin%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="rend">
@@ -432,9 +540,16 @@
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Designates the end of the reversed controlled sequence.</summary>
+        <returns>An iterator.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::rend (STL/CLR)](../Topic/hash_map::rend%20\(STL-CLR\).md), [hash_multimap::rend (STL/CLR)](../Topic/hash_multimap::rend%20\(STL-CLR\).md), [hash_set::rend (STL/CLR)](../Topic/hash_set::rend%20\(STL-CLR\).md), and [hash_multiset::rend (STL/CLR)](../Topic/hash_multiset::rend%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="size">
@@ -451,9 +566,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Counts the number of elements in the container.</summary>
+        <returns>The length of the controlled sequence.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::size (STL/CLR)](../Topic/hash_map::size%20\(STL-CLR\).md), [hash_multimap::size (STL/CLR)](../Topic/hash_multimap::size%20\(STL-CLR\).md), [hash_set::size (STL/CLR)](../Topic/hash_set::size%20\(STL-CLR\).md), and [hash_multiset::size (STL/CLR)](../Topic/hash_multiset::size%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="swap">
@@ -472,9 +594,16 @@
         <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.ITree&lt;TKey,TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Right">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="_Right">The container with which to swap contents.</param>
+        <summary>Swaps the contents of two containers.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::swap (STL/CLR)](../Topic/hash_map::swap%20\(STL-CLR\).md), [hash_multimap::swap (STL/CLR)](../Topic/hash_multimap::swap%20\(STL-CLR\).md), [hash_set::swap (STL/CLR)](../Topic/hash_set::swap%20\(STL-CLR\).md), and [hash_multiset::swap (STL/CLR)](../Topic/hash_multiset::swap%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="upper_bound">
@@ -495,10 +624,17 @@
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
-        <param name="_Keyval">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="_Keyval">The key value to search for.</param>
+        <summary>Finds the end of the range of elements that match a specified key.</summary>
+        <returns>An iterator.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::upper_bound (STL/CLR)](../Topic/hash_map::upper_bound%20\(STL-CLR\).md), [hash_multimap::upper_bound (STL/CLR)](../Topic/hash_multimap::upper_bound%20\(STL-CLR\).md), [hash_set::upper_bound (STL/CLR)](../Topic/hash_set::upper_bound%20\(STL-CLR\).md), and [hash_multiset::upper_bound (STL/CLR)](../Topic/hash_multiset::upper_bound%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="value_comp">
@@ -515,10 +651,51 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the ordering delegate that is used to order the controlled sequence.</summary>
+        <returns>The ordering delegate that is used to order the controlled sequence.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::value_comp (STL/CLR)](../Topic/hash_map::value_comp%20\(STL-CLR\).md), [hash_multimap::value_comp (STL/CLR)](../Topic/hash_multimap::value_comp%20\(STL-CLR\).md), [hash_set::value_comp (STL/CLR)](../Topic/hash_set::value_comp%20\(STL-CLR\).md), and [hash_multiset::value_comp (STL/CLR)](../Topic/hash_multiset::value_comp%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="erase">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes elements from the container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::erase (STL/CLR)](../Topic/hash_map::erase%20\(STL-CLR\).md), [hash_multimap::erase (STL/CLR)](../Topic/hash_multimap::erase%20\(STL-CLR\).md), [hash_set::erase (STL/CLR)](../Topic/hash_set::erase%20\(STL-CLR\).md), and [hash_multiset::erase (STL/CLR)](../Topic/hash_multiset::erase%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="insert">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds elements to the container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::insert (STL/CLR)](../Topic/hash_map::insert%20\(STL-CLR\).md), [hash_multimap::insert (STL/CLR)](../Topic/hash_multimap::insert%20\(STL-CLR\).md), [hash_set::insert (STL/CLR)](../Topic/hash_set::insert%20\(STL-CLR\).md), and [hash_multiset::insert (STL/CLR)](../Topic/hash_multiset::insert%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

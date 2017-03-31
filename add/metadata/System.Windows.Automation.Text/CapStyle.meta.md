@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Automation.Text.CapStyle
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---

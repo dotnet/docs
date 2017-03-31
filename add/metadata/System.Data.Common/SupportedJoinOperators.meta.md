@@ -1,4 +1,6 @@
 ---
 uid: System.Data.Common.SupportedJoinOperators
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

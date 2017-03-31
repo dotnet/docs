@@ -1,34 +1,41 @@
 ---
 uid: System.Web.UI.MobileControls.CustomValidator
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.CustomValidator.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.CustomValidator.ControlPropertiesValid
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.CustomValidator.OnServerValidate(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.CustomValidator.ServerValidate
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.CustomValidator.CreateWebValidator
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.CustomValidator.EvaluateIsValid
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

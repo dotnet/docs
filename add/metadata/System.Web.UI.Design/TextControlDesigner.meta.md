@@ -1,14 +1,21 @@
 ---
 uid: System.Web.UI.Design.TextControlDesigner
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.TextControlDesigner.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.TextControlDesigner.GetDesignTimeHtml
-internalonly: False
+---
+
+---
+uid: System.Web.UI.Design.TextControlDesigner.#ctor
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.TextControlDesigner.GetDesignTimeHtml
+ms.author: "riande"
+manager: "wpickett"
 ---

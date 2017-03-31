@@ -14,8 +14,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="TResult">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="TResult">The type that is returned by the <see cref="T:System.Threading.Tasks.Task`1" />.</typeparam>
+    <summary>Represents an object that is used to interact with an operation that has been posted to the <see cref="T:System.Windows.Threading.Dispatcher" /> queue and contains a <see cref="T:System.Threading.Tasks.Task`1" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -41,8 +41,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an object that awaits an asynchronous operation that returns a result.</summary>
+        <returns>An object that awaits an asynchronous operation that returns a result.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,8 +60,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Begins the operation that is associated with this <see cref="T:System.Windows.Threading.DispatcherOperation" />.</summary>
+        <returns>The result of the operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,8 +78,8 @@
         <ReturnType>TResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the result of the operation after it has completed.</summary>
+        <value>The result of the operation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,8 +96,8 @@
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.Threading.Tasks.Task`1" /> that represents the current operation.</summary>
+        <value>An object that represents the current operation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

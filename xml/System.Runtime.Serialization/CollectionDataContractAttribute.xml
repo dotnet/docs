@@ -25,8 +25,32 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>When applied to a collection type, enables custom specification of the collection item elements. This attribute can be applied only to types that are recognized by the <see cref="T:System.Runtime.Serialization.DataContractSerializer" /> as valid, serializable collections.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Serialization.CollectionDataContractAttribute> is intended to ease interoperability when working with data from non-[!INCLUDE[indigo2](~/includes/indigo2-md.md)] providers and to control the exact shape of serialized instances. To this end, the <xref:System.Runtime.Serialization.CollectionDataContractAttribute.ItemName%2A> property enables you to control the names of the repeating items inside a collection. This is especially useful when the provider does not use the XML element type name as the array item name, for example, if a provider uses "String" as an element type name instead of the XSD type name "string".  
+  
+ The <xref:System.Runtime.Serialization.CollectionDataContractAttribute> is also intended to be used with dictionary types to handle keyed collections. Dictionary types are classes that implement either the <xref:System.Collections.IDictionary> or the <xref:System.Collections.Generic.IDictionary%602> interface, for example, the <xref:System.Collections.Generic.Dictionary%602>. Use the <xref:System.Runtime.Serialization.CollectionDataContractAttribute.KeyName%2A> and <xref:System.Runtime.Serialization.CollectionDataContractAttribute.ValueName%2A> properties to set custom names when using the <xref:System.Collections.Generic.Dictionary%602> class.  
+  
+ [!INCLUDE[crabout](~/includes/crabout-md.md)] using the <xref:System.Runtime.Serialization.DataContractSerializer>, see [Using Data Contracts](../Topic/Using%20Data%20Contracts.md).  
+  
+   
+  
+## Examples  
+ The following example applies the <xref:System.Runtime.Serialization.CollectionDataContractAttribute> to a class that inherits from the <xref:System.Collections.Generic.List%601> class. The code sets the <xref:System.Runtime.Serialization.CollectionDataContractAttribute.Name%2A> and <xref:System.Runtime.Serialization.CollectionDataContractAttribute.ItemName%2A> properties to custom values.  
+  
+ [!code-csharp[CollectionDataContractAttribute#1](~/samples/snippets/csharp/VS_Snippets_CFX/collectiondatacontractattribute/cs/source.cs#1)]
+ [!code-vb[CollectionDataContractAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/collectiondatacontractattribute/vb/source.vb#1)]  
+  
+ When the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../Topic/ServiceModel%20Metadata%20Utility%20Tool%20\(Svcutil.exe\).md) is used to generate code for the client, the code resembles the following example. Notice that the name of the class is changed, as well as the <xref:System.Runtime.Serialization.CollectionDataContractAttribute.ItemName%2A>. When using generics, the type parameter name is used to create the resulting type name.  
+  
+ [!code-csharp[CollectionDataContractAttribute#2](~/samples/snippets/csharp/VS_Snippets_CFX/collectiondatacontractattribute/cs/source.cs#2)]
+ [!code-vb[CollectionDataContractAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/collectiondatacontractattribute/vb/source.vb#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,7 +73,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.CollectionDataContractAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,8 +99,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets whether <see cref="P:System.Runtime.Serialization.CollectionDataContractAttribute.ItemName" /> has been explicitly set.</summary>
+        <value>Returns <see langword="true" /> if the item name has been explicitly set; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,8 +126,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets whether <see cref="P:System.Runtime.Serialization.CollectionDataContractAttribute.KeyName" /> has been explicitly set.</summary>
+        <value>Returns <see langword="true" /> if the key name has been explicitly set; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,8 +153,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets whether <see cref="P:System.Runtime.Serialization.CollectionDataContractAttribute.Name" /> has been explicitly set.</summary>
+        <value>Returns <see langword="true" /> if the name has been explicitly set; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,8 +180,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets whether <see cref="P:System.Runtime.Serialization.CollectionDataContractAttribute.Namespace" /> has been explicitly set.</summary>
+        <value>Returns <see langword="true" /> if the item namespace has been explicitly set; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -183,9 +207,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether to preserve object reference data.</summary>
+        <value>
+          <see langword="true" /> to keep object reference data; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `IsReference` setting does not apply to the elements of the collection.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsReferenceSetExplicitly">
@@ -210,8 +242,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets whether reference has been explicitly set.</summary>
+        <value>Returns <see langword="true" /> if the reference has been explicitly set; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -237,8 +269,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets whether <see cref="P:System.Runtime.Serialization.CollectionDataContractAttribute.ValueName" /> has been explicitly set.</summary>
+        <value>Returns <see langword="true" /> if the value name has been explicitly set; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -264,8 +296,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a custom name for a collection element.</summary>
+        <value>The name to apply to collection elements.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -291,8 +323,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the custom name for a dictionary key name.</summary>
+        <value>The name to use instead of the default dictionary key name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -318,8 +350,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the data contract name for the collection type.</summary>
+        <value>The data contract name for the collection type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -345,8 +377,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the namespace for the data contract.</summary>
+        <value>The namespace of the data contract.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -372,8 +404,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the custom name for a dictionary value name.</summary>
+        <value>The name to use instead of the default dictionary value name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

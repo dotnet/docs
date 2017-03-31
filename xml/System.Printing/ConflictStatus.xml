@@ -15,8 +15,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies whether any changes were made to a merged <see cref="T:System.Printing.PrintTicket" /> to ensure a viable <see cref="T:System.Printing.PrintTicket" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A> method merges two <xref:System.Printing.PrintTicket> objects, the initial print ticket may request printing functions that the printer does not support. In such cases, the printer driver changes the non-viable settings to ensure that the final print ticket is viable. The <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A> method uses this enumeration to report whether it had to make changes to ensure a viable print ticket.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ConflictResolved">
@@ -32,7 +39,7 @@
         <ReturnType>System.Printing.ConflictStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>One or more conflicts were found and all conflicts were resolved.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoConflict">
@@ -48,7 +55,7 @@
         <ReturnType>System.Printing.ConflictStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No conflicts were found between the initial merged print ticket and the supported printer functions.</summary>
       </Docs>
     </Member>
   </Members>

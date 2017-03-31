@@ -1,44 +1,64 @@
 ---
 uid: System.Windows.ComponentResourceKey
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.ComponentResourceKey.Assembly
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.ComponentResourceKey.GetHashCode
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.ComponentResourceKey.TypeInTargetAssembly
-internalonly: False
----
-
----
-uid: System.Windows.ComponentResourceKey.Equals(System.Object)
-internalonly: False
----
-
----
-uid: System.Windows.ComponentResourceKey.ToString
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.ComponentResourceKey.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.ComponentResourceKey.Equals(System.Object)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.ComponentResourceKey.ToString
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.ComponentResourceKey.#ctor
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.ComponentResourceKey.#ctor(System.Type,System.Object)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.ComponentResourceKey.ResourceId
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

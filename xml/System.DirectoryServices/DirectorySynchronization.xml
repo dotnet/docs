@@ -11,8 +11,68 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies how to synchronize a directory within a domain.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following C# example shows how to synchronize a directory.  
+  
+```csharp  
+DirectorySearcher src = new DirectorySearcher("…");   
+src.DirectorySynchornization= new DirectorySynchronization(); // Initiate dirsync,   
+                                                              // this means a full synch  
+  
+foreach(SearchResult res in src.FindAll() )  
+{  
+    Console.WriteLine(…");  
+}  
+  
+// Restart the dirsync   
+foreach(SearchResult res in src.FindAll() )  
+{  
+    Console.WriteLine(…");  
+}  
+  
+```  
+  
+ The following C# example shows how to synchronize a directory by persisting it to a file.  
+  
+```csharp  
+DirectorySearcher src = new DirectorySearcher("…");   
+src.DirectorySynchornization= new DirectorySynchronization(); // Initiate dirsync,   
+                                                              // this means a full synch  
+  
+foreach(SearchResult res in src.FindAll() )  
+{  
+    Console.WriteLine(…");  
+}  
+  
+// Now they should be able to persist the dirSync cookie, by serializing to a file.   
+FileStream myStream = File.Create("dirsync.data");  
+BinaryFormatter fmt = new BinaryFormatter();  
+fmt.Serialize(myStream, src.DirectorySynchronization);  
+myStream.Close();  
+… ….  
+  
+// At some point in time, we wake up and read by de-serializing the dirSync cookie,   
+// and resume the  dirSync   
+FileStream myStream = FileCreate("dirsync.data");  
+BinaryFormatter fmt = new BinaryFormatter();  
+DirectorySynchronization dirSync = fmt.Deserialize(myStream);  
+  
+DirectorySearcher src = new DirectorySearcher(…);  
+src.DirectorySynchronization = dirSync;  
+  
+foreach(SearchResult res in src.FindAll() )  
+{  
+    Console.WriteLine(…");  
+}  
+  
+```  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +86,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.DirectorySynchronization" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +103,8 @@
         <Parameter Name="cookie" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="cookie">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="cookie">A Byte data type object that specifies the directory synchronization search cookie.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.DirectorySynchronization" /> object with a cookie.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +121,8 @@
         <Parameter Name="sync" Type="System.DirectoryServices.DirectorySynchronization" />
       </Parameters>
       <Docs>
-        <param name="sync">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="sync">A <see cref="T:System.DirectoryServices.DirectorySynchronization" /> data type object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.DirectorySynchronization" /> object with a directory synchronization object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,8 +139,8 @@
         <Parameter Name="option" Type="System.DirectoryServices.DirectorySynchronizationOptions" />
       </Parameters>
       <Docs>
-        <param name="option">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="option">A <see cref="T:System.DirectoryServices.DirectorySynchronizationOptions" /> data type object that specifies how a directory synchronization search is performed.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.DirectorySynchronization" /> object with a directory synchronization option.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,9 +158,9 @@
         <Parameter Name="cookie" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="option">To be added.</param>
-        <param name="cookie">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="option">A <see cref="T:System.DirectoryServices.DirectorySynchronizationOptions" /> data type object that specifies how a directory synchronization search is performed.</param>
+        <param name="cookie">A Byte data type object that specifies the directory synchronization search cookie.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.DirectorySynchronization" /> object with a directory synchronization option and cookie.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,8 +178,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a copy of the current <see cref="T:System.DirectoryServices.DirectorySynchronization" /> instance.</summary>
+        <returns>Returns a <see cref="T:System.DirectoryServices.DirectorySynchronization" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,9 +197,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets the directory synchronization search cookie.</summary>
+        <returns>The directory synchronization search cookie object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The returned search results must be enumerated before the cookie can be retrieved. For more information, see the code example [Taking a Snapshot for a Later DirSync Search](http://msdn.microsoft.com/msdnmag/issues/05/12/DirectoryServices/default.aspx?loc=&fig=true).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Option">
@@ -163,9 +230,17 @@
         <ReturnType>System.DirectoryServices.DirectorySynchronizationOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the options for the directory synchronization search.</summary>
+        <value>A <see cref="T:System.DirectoryServices.DirectorySynchronizationOptions" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The options that can be used with this property are found in the <xref:System.DirectoryServices.DirectorySynchronizationOptions> enumeration.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value is not one of the <see cref="T:System.DirectoryServices.DirectorySynchronizationOptions" /> values.</exception>
       </Docs>
     </Member>
     <Member MemberName="ResetDirectorySynchronizationCookie">
@@ -182,7 +257,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Resetss the directory synchronization search cookie.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -202,8 +277,8 @@
         <Parameter Name="cookie" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="cookie">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="cookie">A Byte data type object that contains a directory synchronization search cookie.  This method resets the cookie for this <see cref="T:System.DirectoryServices.DirectorySynchronization" /> object instance to this value.</param>
+        <summary>Resets the directory synchronization search cookie.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

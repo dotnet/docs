@@ -1,39 +1,55 @@
 ---
 uid: System.ServiceModel.Description.PolicyConversionContext
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Description.PolicyConversionContext.Contract
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Description.PolicyConversionContext.GetBindingAssertions
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Description.PolicyConversionContext.GetOperationBindingAssertions(System.ServiceModel.Description.OperationDescription)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Description.PolicyConversionContext.BindingElements
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Description.PolicyConversionContext.GetMessageBindingAssertions(System.ServiceModel.Description.MessageDescription)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Description.PolicyConversionContext.#ctor(System.ServiceModel.Description.ServiceEndpoint)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Description.PolicyConversionContext.GetFaultBindingAssertions(System.ServiceModel.Description.FaultDescription)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

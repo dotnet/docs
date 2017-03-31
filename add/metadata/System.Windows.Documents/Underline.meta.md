@@ -1,24 +1,40 @@
 ---
 uid: System.Windows.Documents.Underline
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Documents.Underline.#ctor(System.Windows.Documents.Inline)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Documents.Underline.#ctor(System.Windows.Documents.Inline,System.Windows.Documents.TextPointer)
-internalonly: False
----
-
----
-uid: System.Windows.Documents.Underline.#ctor(System.Windows.Documents.TextPointer,System.Windows.Documents.TextPointer)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Documents.Underline.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Documents.Underline.#ctor(System.Windows.Documents.TextPointer,System.Windows.Documents.TextPointer)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Documents.Underline.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

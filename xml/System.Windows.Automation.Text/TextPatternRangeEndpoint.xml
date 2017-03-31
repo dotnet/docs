@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Allows the endpoints to be identified when calling methods of <see cref="T:System.Windows.Automation.Text.TextPatternRange" />. Each <see cref="T:System.Windows.Automation.Text.TextPatternRange" /> has two endpoints (<see cref="F:System.Windows.Automation.Text.TextPatternRangeEndpoint.Start" /> and <see cref="F:System.Windows.Automation.Text.TextPatternRangeEndpoint.End" />).</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,7 +35,7 @@
         <ReturnType>System.Windows.Automation.Text.TextPatternRangeEndpoint</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the ending point of the range.</summary>
       </Docs>
     </Member>
     <Member MemberName="Start">
@@ -51,7 +51,7 @@
         <ReturnType>System.Windows.Automation.Text.TextPatternRangeEndpoint</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the starting point of the range.</summary>
       </Docs>
     </Member>
   </Members>

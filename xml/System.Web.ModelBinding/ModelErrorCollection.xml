@@ -14,7 +14,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a container for model validation errors.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,7 +29,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.ModelErrorCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,8 +49,8 @@
         <Parameter Name="exception" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="exception">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="exception">The exception.</param>
+        <summary>Adds a validation error to the collection using the specified exception.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,8 +70,8 @@
         <Parameter Name="errorMessage" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="errorMessage">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="errorMessage">The error message string.</param>
+        <summary>Adds a validation error to the collection using the specified error message string.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

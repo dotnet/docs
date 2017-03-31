@@ -10,8 +10,23 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the function of an item in the <see cref="T:System.Web.UI.WebControls.ListView" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.ListViewItemType> enumeration identifies the function of items in a <xref:System.Web.UI.WebControls.ListView> control. You can use the <xref:System.Web.UI.WebControls.ListViewItemType> enumeration to identify the type of a <xref:System.Web.UI.WebControls.ListViewItem> object.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.UI.WebControls.ListViewItemType> enumeration to check the type of a <xref:System.Web.UI.WebControls.ListViewItem> object.  
+  
+ [!code-csharp[System.Web.UI.WebControls.ListView.ItemDataBound#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemDataBound/CS/ListViewItemDataBoundCS.aspx#1)]
+ [!code-vb[System.Web.UI.WebControls.ListView.ItemDataBound#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemDataBound/VB/ListViewItemDataBoundVB.aspx#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="DataItem">
@@ -27,7 +42,7 @@
         <ReturnType>System.Web.UI.WebControls.ListViewItemType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A data item in the <see cref="T:System.Web.UI.WebControls.ListView" /> control.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmptyItem">
@@ -43,7 +58,7 @@
         <ReturnType>System.Web.UI.WebControls.ListViewItemType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An empty item in the <see cref="T:System.Web.UI.WebControls.ListView" /> control. The empty item is displayed when the <see cref="T:System.Web.UI.WebControls.ListView" /> control has no records to display, or when a group in the <see cref="T:System.Web.UI.WebControls.ListView" /> control has no more records to display.</summary>
       </Docs>
     </Member>
     <Member MemberName="InsertItem">
@@ -59,7 +74,7 @@
         <ReturnType>System.Web.UI.WebControls.ListViewItemType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An insert item in the <see cref="T:System.Web.UI.WebControls.ListView" /> control.</summary>
       </Docs>
     </Member>
   </Members>

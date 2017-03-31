@@ -11,8 +11,28 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides data for the <see cref="E:System.Drawing.Printing.PrintDocument.PrintPage" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Drawing.Printing.PrintPageEventArgs.MarginBounds%2A> property retrieves the rectangular area that represents the portion of the page between the margins. The <xref:System.Drawing.Printing.PrintPageEventArgs.PageBounds%2A> property retrieves the rectangular area that represents the total area of the page. The <xref:System.Drawing.Printing.PrintPageEventArgs.Graphics%2A> property defines the graphics object with which to do the painting. The <xref:System.Drawing.Printing.PrintPageEventArgs.PageSettings%2A> property retrieves the printer settings for the current page. The remaining properties indicate whether a print job should be canceled or whether a print job has more pages.  
+  
+ For more information about printing with Windows Forms, see the <xref:System.Drawing.Printing> namespace overview. If you wish to print from a Windows Presentation Foundation application, see the <xref:System.Printing> namespace.  
+  
+   
+  
+## Examples  
+ The following code example assumes a <xref:System.Windows.Forms.Button> named `printButton` and a <xref:System.Drawing.Printing.PrintDocument> named `pd` have been created on a <xref:System.Windows.Forms.Form>. Make sure the <xref:System.Windows.Forms.Control.Click> event for the <xref:System.Windows.Forms.Button> is associated with the `printButton_Click` method and the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event of the <xref:System.Drawing.Printing.PrintDocument> is associated with the `pd_PrintPage` method in the example. The `printButton_Click` method from the example calls the <xref:System.Drawing.Printing.PrintDocument.Print%2A> method raising the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event, and prints the .bmp file specified in the `pd_PrintPage` method. To run this example, change the path to the bitmap you want to print.  
+  
+ Use the <xref:System.Drawing>, <xref:System.Drawing.Printing>, and <xref:System.Windows.Forms> namespaces for this example.  
+  
+ [!code-cpp[Classic PrintPageEventArgs Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic PrintPageEventArgs Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic PrintPageEventArgs Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic PrintPageEventArgs Example/CS/source.cs#1)]
+ [!code-vb[Classic PrintPageEventArgs Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic PrintPageEventArgs Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,11 +51,11 @@
         <Parameter Name="pageSettings" Type="System.Drawing.Printing.PageSettings" />
       </Parameters>
       <Docs>
-        <param name="graphics">To be added.</param>
-        <param name="marginBounds">To be added.</param>
-        <param name="pageBounds">To be added.</param>
-        <param name="pageSettings">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> used to paint the item.</param>
+        <param name="marginBounds">The area between the margins.</param>
+        <param name="pageBounds">The total area of the paper.</param>
+        <param name="pageSettings">The <see cref="T:System.Drawing.Printing.PageSettings" /> for the page.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Printing.PrintPageEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,8 +72,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value indicating whether the print job should be canceled.</summary>
+        <value>
+          <see langword="true" /> if the print job should be canceled; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,9 +91,22 @@
         <ReturnType>System.Drawing.Graphics</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Drawing.Graphics" /> used to paint the page.</summary>
+        <value>The <see cref="T:System.Drawing.Graphics" /> used to paint the page.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example assumes a <xref:System.Windows.Forms.Button> named `printButton` and a <xref:System.Drawing.Printing.PrintDocument> named `pd` have been created on a <xref:System.Windows.Forms.Form>. Make sure the <xref:System.Windows.Forms.Control.Click> event for the <xref:System.Windows.Forms.Button> is associated with the `printButton_Click` method and the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event of the <xref:System.Drawing.Printing.PrintDocument> is associated with the `pd_PrintPage` method in the example. The `printButton_Click` method from the example calls the <xref:System.Drawing.Printing.PrintDocument.Print%2A> method raising the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event, and prints the .bmp file specified in the `pd_PrintPage` method. To run this example, change the path to the bitmap you want to print.  
+  
+ Use the <xref:System.Drawing>, <xref:System.Drawing.Printing>, and <xref:System.Windows.Forms> namespaces for this example.  
+  
+ [!code-cpp[Classic PrintPageEventArgs Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic PrintPageEventArgs Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic PrintPageEventArgs Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic PrintPageEventArgs Example/CS/source.cs#1)]
+ [!code-vb[Classic PrintPageEventArgs Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic PrintPageEventArgs Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HasMorePages">
@@ -88,9 +122,25 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether an additional page should be printed.</summary>
+        <value>
+          <see langword="true" /> if an additional page should be printed; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example assumes a <xref:System.Windows.Forms.Button> named `printButton` and a <xref:System.Drawing.Printing.PrintDocument> named `pd` have been created on a <xref:System.Windows.Forms.Form>. Make sure the <xref:System.Windows.Forms.Control.Click> event for the <xref:System.Windows.Forms.Button> is associated with the `printButton_Click` method and the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event of the <xref:System.Drawing.Printing.PrintDocument> is associated with the `pd_PrintPage` method in the example. The `printButton_Click` method from the example calls the <xref:System.Drawing.Printing.PrintDocument.Print%2A> method raising the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event, and prints the .bmp file specified in the `pd_PrintPage` method. To run this example, change the path to the bitmap you want to print.  
+  
+ Use the <xref:System.Drawing>, <xref:System.Drawing.Printing>, and <xref:System.Windows.Forms> namespaces for this example.  
+  
+ [!code-cpp[Classic PrintPageEventArgs Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic PrintPageEventArgs Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic PrintPageEventArgs Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic PrintPageEventArgs Example/CS/source.cs#1)]
+ [!code-vb[Classic PrintPageEventArgs Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic PrintPageEventArgs Example/VB/source.vb#1)]  
+  
+ For another example that shows how to use <xref:System.Drawing.Printing.PrintPageEventArgs.HasMorePages%2A>, see [How to: Print a Multi-Page Text File in Windows Forms](../Topic/How%20to:%20Print%20a%20Multi-Page%20Text%20File%20in%20Windows%20Forms.md)  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MarginBounds">
@@ -106,8 +156,8 @@
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the rectangular area that represents the portion of the page inside the margins.</summary>
+        <value>The rectangular area, measured in hundredths of an inch, that represents the portion of the page inside the margins.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,9 +174,18 @@
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the rectangular area that represents the total area of the page.</summary>
+        <value>The rectangular area that represents the total area of the page.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Most printers cannot print at the very edge of the page.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PageSettings">
@@ -142,8 +201,8 @@
         <ReturnType>System.Drawing.Printing.PageSettings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the page settings for the current page.</summary>
+        <value>The page settings for the current page.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

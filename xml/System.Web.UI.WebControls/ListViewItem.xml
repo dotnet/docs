@@ -20,8 +20,40 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an individual item in a <see cref="T:System.Web.UI.WebControls.ListView" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.ListViewItem> class is used to represent an individual item in a <xref:System.Web.UI.WebControls.ListView> control. An individual item usually represents a record in the underlying data source of a <xref:System.Web.UI.WebControls.ListView> control.  
+  
+ Each item in the <xref:System.Web.UI.WebControls.ListView> control has a designated item type, as listed in the following table.  
+  
+|Item type|Description|  
+|---------------|-----------------|  
+|<xref:System.Web.UI.WebControls.ListViewItemType>|A data item in the <xref:System.Web.UI.WebControls.ListView> control.|  
+|<xref:System.Web.UI.WebControls.ListViewItemType>|An insert item in the <xref:System.Web.UI.WebControls.ListView> control.|  
+|<xref:System.Web.UI.WebControls.ListViewItemType>|An empty item in the <xref:System.Web.UI.WebControls.ListView> control. The empty item is displayed when the <xref:System.Web.UI.WebControls.ListView> control does not have any records to display, or when a group in the <xref:System.Web.UI.WebControls.ListView> control does not have any more records to display.|  
+  
+ To determine the type of a <xref:System.Web.UI.WebControls.ListViewItem> object, use the <xref:System.Web.UI.WebControls.ListViewItem.ItemType%2A> property.  
+  
+ If an item contains other controls, you can retrieve a control by using the <xref:System.Web.UI.Control.Controls%2A> collection of the item. If the control's <xref:System.Web.UI.Control.ID%2A> property is set, you can also use the <xref:System.Web.UI.Control.FindControl%2A> method to find the control.  
+  
+ For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.ListViewItem>, see the <xref:System.Web.UI.WebControls.ListViewItem.%23ctor%2A> constructor.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.UI.WebControls.ListViewItem> class to access the properties of the item that is being created in the <xref:System.Web.UI.WebControls.ListView> control.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](../Topic/Script%20Exploits%20Overview.md).  
+  
+ [!code-csharp[System.Web.UI.WebControls.ListViewItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItem/CS/ListViewItemCS.aspx#1)]
+ [!code-vb[System.Web.UI.WebControls.ListViewItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItem/VB/ListViewItemVB.aspx#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,9 +69,22 @@
         <Parameter Name="itemType" Type="System.Web.UI.WebControls.ListViewItemType" />
       </Parameters>
       <Docs>
-        <param name="itemType">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="itemType">One of the <see cref="T:System.Web.UI.WebControls.ListViewItemType" /> enumeration values.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.ListViewItem" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to initialize a new instance of a <xref:System.Web.UI.WebControls.ListViewItem> object.  
+  
+ The following table shows initial property values for an instance of the <xref:System.Web.UI.WebControls.ListViewItem> class.  
+  
+|Property|Initial value|  
+|--------------|-------------------|  
+|<xref:System.Web.UI.WebControls.ListViewItem.ItemType%2A>|The value of the `itemType` parameter.|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataItem">
@@ -55,8 +100,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the underlying data object that the <see cref="T:System.Web.UI.WebControls.ListViewItem" /> object is bound to.</summary>
+        <value>The underlying data object that the <see cref="T:System.Web.UI.WebControls.ListViewItem" /> object is bound to.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,8 +118,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the index of the data item that is bound to the <see cref="T:System.Web.UI.WebControls.ListViewItem" /> control.</summary>
+        <value>The index of the data item that is bound to the <see cref="T:System.Web.UI.WebControls.ListViewItem" /> control.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,8 +136,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the position of the data item as displayed in the <see cref="T:System.Web.UI.WebControls.ListView" /> control.</summary>
+        <value>The position of the data item as displayed in the <see cref="T:System.Web.UI.WebControls.ListView" /> control.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,9 +154,32 @@
         <ReturnType>System.Web.UI.WebControls.ListViewItemType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the item type of the <see cref="T:System.Web.UI.WebControls.ListViewItem" /> object.</summary>
+        <value>One of the <see cref="T:System.Web.UI.WebControls.ListViewItemType" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.ListViewItem.ItemType%2A> property to determine the type of item that the <xref:System.Web.UI.WebControls.ListViewItem> object represents, as listed in the following table.  
+  
+|Item type|Description|  
+|---------------|-----------------|  
+|<xref:System.Web.UI.WebControls.ListViewItemType>|A data item in the <xref:System.Web.UI.WebControls.ListView> control.|  
+|<xref:System.Web.UI.WebControls.ListViewItemType>|An insert item in the <xref:System.Web.UI.WebControls.ListView> control.|  
+|<xref:System.Web.UI.WebControls.ListViewItemType>|An empty item in the <xref:System.Web.UI.WebControls.ListView> control. The empty item is displayed when the <xref:System.Web.UI.WebControls.ListView> control does not have any records to display, or when a group in the <xref:System.Web.UI.WebControls.ListView> control does not have any more records to display.|  
+  
+ You typically use this property to determine an item's type before you perform an operation.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.UI.WebControls.ListViewItem.ItemType%2A> property to determine whether the item that is being created is a data item. If the item is a data item, the e-mail address is displayed in italic. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.ListViewItem> class.  
+  
+ [!code-csharp[System.Web.UI.WebControls.ListViewItem#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItem/CS/ListViewItemCS.aspx#2)]
+ [!code-vb[System.Web.UI.WebControls.ListViewItem#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItem/VB/ListViewItemVB.aspx#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnBubbleEvent">
@@ -131,10 +199,11 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="source">The source of the event.</param>
+        <param name="e">The event data.</param>
+        <summary>Determines whether to pass an event up the page's ASP.NET server control hierarchy.</summary>
+        <returns>
+          <see langword="true" /> if the event has been canceled; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

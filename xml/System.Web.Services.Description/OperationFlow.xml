@@ -11,8 +11,24 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the type of transmission an endpoint of the XML Web service can support.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Although request-response or solicit-response operations are logically correlated in the Web Services Description Language (WSDL) document, the concrete correlation information will be specified by a binding. For example, the request and response messages can be exchanged as part of one or two actual HTTP transmissions.  
+  
+   
+  
+## Examples  
+ The following sample demonstrates the use of the `OperationFlow` enumeration.  
+  
+ [!code-cpp[OperationFlow_Enum#1](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationFlow_Enum/CPP/operationflow_enum.cpp#1)]
+ [!code-csharp[OperationFlow_Enum#1](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationFlow_Enum/CS/operationflow_enum.cs#1)]
+ [!code-vb[OperationFlow_Enum#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationFlow_Enum/VB/operationflow_enum.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="None">
@@ -29,7 +45,7 @@
         <ReturnType>System.Web.Services.Description.OperationFlow</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the endpoint of the XML Web service receives no transmissions.</summary>
       </Docs>
     </Member>
     <Member MemberName="Notification">
@@ -46,7 +62,7 @@
         <ReturnType>System.Web.Services.Description.OperationFlow</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the endpoint of the XML Web service sends a message.</summary>
       </Docs>
     </Member>
     <Member MemberName="OneWay">
@@ -63,7 +79,7 @@
         <ReturnType>System.Web.Services.Description.OperationFlow</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the endpoint of the XML Web service receives a message.</summary>
       </Docs>
     </Member>
     <Member MemberName="RequestResponse">
@@ -80,7 +96,7 @@
         <ReturnType>System.Web.Services.Description.OperationFlow</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the endpoint of the XML Web service receives a message, then sends a correlated message.</summary>
       </Docs>
     </Member>
     <Member MemberName="SolicitResponse">
@@ -97,7 +113,7 @@
         <ReturnType>System.Web.Services.Description.OperationFlow</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the endpoint of the XML Web service sends a message, then receives a correlated message.</summary>
       </Docs>
     </Member>
   </Members>

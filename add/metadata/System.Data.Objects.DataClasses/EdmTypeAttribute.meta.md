@@ -1,14 +1,20 @@
 ---
 uid: System.Data.Objects.DataClasses.EdmTypeAttribute
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Objects.DataClasses.EdmTypeAttribute.Name
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Objects.DataClasses.EdmTypeAttribute.NamespaceName
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

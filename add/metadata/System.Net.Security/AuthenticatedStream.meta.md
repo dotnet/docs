@@ -1,49 +1,63 @@
 ---
 uid: System.Net.Security.AuthenticatedStream
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Security.AuthenticatedStream.InnerStream
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Security.AuthenticatedStream.IsEncrypted
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Security.AuthenticatedStream.IsSigned
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Security.AuthenticatedStream.IsServer
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Security.AuthenticatedStream.Dispose
 ---
 
 ---
 uid: System.Net.Security.AuthenticatedStream.Dispose(System.Boolean)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Security.AuthenticatedStream.IsAuthenticated
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Security.AuthenticatedStream.LeaveInnerStreamOpen
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Security.AuthenticatedStream.#ctor(System.IO.Stream,System.Boolean)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Security.AuthenticatedStream.IsMutuallyAuthenticated
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

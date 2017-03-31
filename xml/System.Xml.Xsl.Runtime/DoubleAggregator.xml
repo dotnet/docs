@@ -20,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Computes aggregates over a sequence of <see langword="double" /> values.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -44,8 +44,8 @@
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">A value of type <see langword="double" />.</param>
+        <summary>Returns the average of a sequence of <see langword="double" /> values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,8 +66,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Computes the average value over a sequence of <see langword="double" /> values.</summary>
+        <value>The average result.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,7 +89,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a sequence of <see langword="double" /> values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,8 +110,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Determines whether a sequence of <see langword="double" /> values is empty.</summary>
+        <value>
+          <see langword="true" /> if the result is empty; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,8 +136,8 @@
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">A value of type <see langword="double" />.</param>
+        <summary>Assigns the <paramref name="value" /> parameter to the existing result if the <paramref name="value" /> parameter is greater than the existing result.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -157,8 +158,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the maximum value of a sequence of <see langword="double" /> values.</summary>
+        <value>The maximum result.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -182,8 +183,8 @@
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">A value of type <see langword="double" />.</param>
+        <summary>Assigns the <paramref name="value" /> parameter to the existing result if the <paramref name="value" /> parameter is less than the existing result.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -204,8 +205,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the minimum value of a sequence of <see langword="double" /> values.</summary>
+        <value>The minimum result.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -229,8 +230,8 @@
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">A value of type <see langword="double" />.</param>
+        <summary>Adds a <see langword="Double" /> value to the existing result..</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -251,8 +252,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the sum of a sequence of <see langword="double" /> values.</summary>
+        <value>The sum of all results.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

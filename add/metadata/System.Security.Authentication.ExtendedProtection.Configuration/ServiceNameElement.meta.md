@@ -1,14 +1,17 @@
 ---
 uid: System.Security.Authentication.ExtendedProtection.Configuration.ServiceNameElement
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Security.Authentication.ExtendedProtection.Configuration.ServiceNameElement.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Security.Authentication.ExtendedProtection.Configuration.ServiceNameElement.Name
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

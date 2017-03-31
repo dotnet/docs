@@ -17,8 +17,17 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Notifies clients that a property value is changing.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.INotifyPropertyChanging> interface is used to notify clients, typically binding clients, that a property value is changing.  
+  
+ <xref:System.ComponentModel.INotifyPropertyChanging> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="PropertyChanging">
@@ -43,7 +52,7 @@
         <ReturnType>System.ComponentModel.PropertyChangingEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when a property value is changing.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

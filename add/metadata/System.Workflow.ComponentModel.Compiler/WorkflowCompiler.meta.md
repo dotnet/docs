@@ -1,14 +1,20 @@
 ---
 uid: System.Workflow.ComponentModel.Compiler.WorkflowCompiler
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Compiler.WorkflowCompiler.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Compiler.WorkflowCompiler.Compile(System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters,System.String[])
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

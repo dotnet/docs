@@ -1,9 +1,13 @@
 ---
 uid: System.ComponentModel.Design.ITypeDiscoveryService
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.ITypeDiscoveryService.GetTypes(System.Type,System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -1,9 +1,13 @@
 ---
 uid: System.Collections.Generic.IEnumerable`1
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

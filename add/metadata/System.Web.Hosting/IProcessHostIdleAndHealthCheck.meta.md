@@ -1,14 +1,17 @@
 ---
 uid: System.Web.Hosting.IProcessHostIdleAndHealthCheck
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.IProcessHostIdleAndHealthCheck.IsIdle
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.IProcessHostIdleAndHealthCheck.Ping(System.Web.Hosting.IProcessPingCallback)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

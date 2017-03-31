@@ -21,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the type of the item.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,7 +38,7 @@
         <ReturnType>Microsoft.JScript.Vsa.JSVsaItemType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Used to add a global object to the .NET script engine. This type is used to create an IJSVsaGlobalItem object.</summary>
       </Docs>
     </Member>
     <Member MemberName="Code">
@@ -54,7 +54,7 @@
         <ReturnType>Microsoft.JScript.Vsa.JSVsaItemType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Used to create a code item for storing source code for the .NET script engine.</summary>
       </Docs>
     </Member>
     <Member MemberName="Reference">
@@ -70,7 +70,7 @@
         <ReturnType>Microsoft.JScript.Vsa.JSVsaItemType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Used to add a reference to an external .NET assembly, which can then be referenced from code. This type is used to create an IJSVsaReferenceItem object</summary>
       </Docs>
     </Member>
   </Members>

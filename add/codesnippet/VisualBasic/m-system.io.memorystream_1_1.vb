@@ -1,1 +1,0 @@
-        Dim memStream As New MemoryStream(100)

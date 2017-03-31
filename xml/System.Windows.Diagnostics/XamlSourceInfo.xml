@@ -16,8 +16,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents information about an object’s XAML source document.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[internalonly_netframework_type](~/includes/internalonly-netframework-type-md.md)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,11 +42,18 @@
         <Parameter Name="linePosition" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="sourceUri">To be added.</param>
-        <param name="lineNumber">To be added.</param>
-        <param name="linePosition">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="sourceUri">The URI of the source document where the element is declared.</param>
+        <param name="lineNumber">The line number in the source document where the element is declared.</param>
+        <param name="linePosition">The position on the line in the source document where the element is declared.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Diagnostics.XamlSourceInfo" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[internalonly_netframework_member](~/includes/internalonly-netframework-member-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LineNumber">
@@ -55,9 +69,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the line number in the source document where the element is declared.</summary>
+        <value>The line number in the source document where the element is declared.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[internalonly_netframework_member](~/includes/internalonly-netframework-member-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LinePosition">
@@ -73,9 +94,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the position on the line in the source document where the element is declared.</summary>
+        <value>The position on the line in the source document where the element is declared.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[internalonly_netframework_member](~/includes/internalonly-netframework-member-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceUri">
@@ -91,9 +119,16 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the URI of the source document where the element is declared.</summary>
+        <value>The URI of the source document where the element is declared.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[internalonly_netframework_member](~/includes/internalonly-netframework-member-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

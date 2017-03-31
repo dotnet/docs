@@ -1,159 +1,244 @@
 ---
 uid: System.Data.SqlTypes.SqlBinary
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlBinary.ToString
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlBinary.Add(System.Data.SqlTypes.SqlBinary,System.Data.SqlTypes.SqlBinary)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlBinary.GreaterThanOrEqual(System.Data.SqlTypes.SqlBinary,System.Data.SqlTypes.SqlBinary)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlBinary.GetXsdType(System.Xml.Schema.XmlSchemaSet)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlBinary.Concat(System.Data.SqlTypes.SqlBinary,System.Data.SqlTypes.SqlBinary)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlBinary.op_LessThan(System.Data.SqlTypes.SqlBinary,System.Data.SqlTypes.SqlBinary)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlBinary.Item(System.Int32)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlBinary.#ctor(System.Byte[])
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlBinary.CompareTo(System.Object)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlBinary.IsNull
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlBinary.op_Addition(System.Data.SqlTypes.SqlBinary,System.Data.SqlTypes.SqlBinary)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlBinary.CompareTo(System.Data.SqlTypes.SqlBinary)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlBinary.System#Xml#Serialization#IXmlSerializable#ReadXml(System.Xml.XmlReader)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlBinary.op_Inequality(System.Data.SqlTypes.SqlBinary,System.Data.SqlTypes.SqlBinary)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlBinary.System#Xml#Serialization#IXmlSerializable#GetSchema
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlBinary.Equals(System.Object)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlBinary.GetHashCode
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlBinary.LessThan(System.Data.SqlTypes.SqlBinary,System.Data.SqlTypes.SqlBinary)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlBinary.op_LessThanOrEqual(System.Data.SqlTypes.SqlBinary,System.Data.SqlTypes.SqlBinary)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlBinary.op_Equality(System.Data.SqlTypes.SqlBinary,System.Data.SqlTypes.SqlBinary)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlTypes.SqlBinary.CompareTo
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlBinary.Null
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlBinary.op_GreaterThanOrEqual(System.Data.SqlTypes.SqlBinary,System.Data.SqlTypes.SqlBinary)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlBinary.LessThanOrEqual(System.Data.SqlTypes.SqlBinary,System.Data.SqlTypes.SqlBinary)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlBinary.Value
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlBinary.NotEquals(System.Data.SqlTypes.SqlBinary,System.Data.SqlTypes.SqlBinary)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlTypes.SqlBinary.Equals
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlBinary.Length
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlBinary.GreaterThan(System.Data.SqlTypes.SqlBinary,System.Data.SqlTypes.SqlBinary)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlBinary.ToSqlGuid
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlTypes.SqlBinary.op_Explicit
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlBinary.Equals(System.Data.SqlTypes.SqlBinary,System.Data.SqlTypes.SqlBinary)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlBinary.System#Xml#Serialization#IXmlSerializable#WriteXml(System.Xml.XmlWriter)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.SqlBinary.op_GreaterThan(System.Data.SqlTypes.SqlBinary,System.Data.SqlTypes.SqlBinary)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

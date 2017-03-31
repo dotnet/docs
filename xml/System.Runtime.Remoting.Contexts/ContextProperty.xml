@@ -17,8 +17,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Holds the name/value pair of the property name and the object representing the property of a context.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The properties that make up the context are provided by various automatic services and are set up by the activation services when a <xref:System.Runtime.Remoting.Contexts.Context> class is created. Each property is itself a managed object. Depending on whether or not properties contribute message sinks, they are considered either active or passive.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Name">
@@ -35,8 +42,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the T:System.Runtime.Remoting.Contexts.ContextProperty class.</summary>
+        <value>The name of the <see cref="T:System.Runtime.Remoting.Contexts.ContextProperty" /> class.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,8 +61,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the object representing the property of a context.</summary>
+        <value>The object representing the property of a context.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,94 +1,124 @@
 ---
 uid: System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.System#Windows#Automation#Provider#IExpandCollapseProvider#Expand
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.GetAccessKeyCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.GetClassNameCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.GetHelpTextCore
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.System#Windows#Automation#Provider#ITransformProvider#Resize(System.Double,System.Double)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.GetChildrenCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.System#Windows#Automation#Provider#IExpandCollapseProvider#ExpandCollapseState
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.System#Windows#Automation#Provider#ITransformProvider#Rotate(System.Double)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.System#Windows#Automation#Provider#ITransformProvider#CanMove
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.System#Windows#Automation#Provider#ITransformProvider#CanResize
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.System#Windows#Automation#Provider#ITransformProvider#Move(System.Double,System.Double)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.CreateItemAutomationPeer(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.#ctor(System.Windows.Controls.Ribbon.RibbonMenuButton)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.System#Windows#Automation#Provider#IExpandCollapseProvider#Collapse
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.System#Windows#Automation#Provider#ITransformProvider#CanRotate
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.GetNameCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.GetAutomationControlTypeCore
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

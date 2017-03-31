@@ -1,29 +1,29 @@
 ---
 uid: Microsoft.JScript.LenientRegExpPrototype
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.LenientRegExpPrototype.exec
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.LenientRegExpPrototype.toString
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.LenientRegExpPrototype.constructor
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.LenientRegExpPrototype.test
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.LenientRegExpPrototype.compile
-internalonly: False
+ms.author: "mikejo"
 ---

@@ -1,49 +1,71 @@
 ---
 uid: System.Net.Configuration.AuthenticationModuleElementCollection
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.AuthenticationModuleElementCollection.Add(System.Net.Configuration.AuthenticationModuleElement)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Configuration.AuthenticationModuleElementCollection.Remove
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.AuthenticationModuleElementCollection.Remove(System.Net.Configuration.AuthenticationModuleElement)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.AuthenticationModuleElementCollection.Item(System.Int32)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.AuthenticationModuleElementCollection.Remove(System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Configuration.AuthenticationModuleElementCollection.Item
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.AuthenticationModuleElementCollection.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.AuthenticationModuleElementCollection.IndexOf(System.Net.Configuration.AuthenticationModuleElement)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.AuthenticationModuleElementCollection.Clear
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.AuthenticationModuleElementCollection.RemoveAt(System.Int32)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.AuthenticationModuleElementCollection.Item(System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

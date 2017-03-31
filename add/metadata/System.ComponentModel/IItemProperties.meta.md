@@ -1,9 +1,13 @@
 ---
 uid: System.ComponentModel.IItemProperties
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.IItemProperties.ItemProperties
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

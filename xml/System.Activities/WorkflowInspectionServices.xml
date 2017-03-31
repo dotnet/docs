@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides methods for working with the runtime metadata for an activity tree.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,8 +31,8 @@
         <Parameter Name="rootActivity" Type="System.Activities.Activity" />
       </Parameters>
       <Docs>
-        <param name="rootActivity">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="rootActivity">The root activity of the activity tree.</param>
+        <summary>Caches the runtime metadata for the specified activity tree.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,9 +53,9 @@
         <Parameter Name="hostEnvironment" Type="System.Activities.LocationReferenceEnvironment" />
       </Parameters>
       <Docs>
-        <param name="rootActivity">To be added.</param>
-        <param name="hostEnvironment">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="rootActivity">The root activity of the activity tree.</param>
+        <param name="hostEnvironment">The environment associated with the activity tree.</param>
+        <summary>Caches the runtime metadata for the specified activity tree using the specified environment.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,9 +75,10 @@
         <Parameter Name="activity" Type="System.Activities.Activity" />
       </Parameters>
       <Docs>
-        <param name="activity">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="activity">The activity.</param>
+        <summary>Specifies whether the service can include idle activities.</summary>
+        <returns>
+          <see langword="True" /> if the service can include idle activities; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,10 +103,19 @@
         <Parameter Name="activity" Type="System.Activities.Activity" />
       </Parameters>
       <Docs>
-        <param name="activity">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="activity">The root activity.</param>
+        <summary>Returns an <see cref="T:System.Collections.Generic.IEnumerable`1" /> that represents all activities associated with the input activity.</summary>
+        <returns>An enumeration that represents all activities associated with the input activity.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The enumeration contains all child activities, delegate handlers, variable defaults, and argument expressions. If the input activity is `null`, an <xref:System.ArgumentNullException> is thrown. The activity tree must remain unmodified and <xref:System.Activities.WorkflowInspectionServices.CacheMetadata%2A> must not be called while the tree is being enumerated or else an <xref:System.InvalidOperationException> is thrown when <xref:System.Collections.IEnumerator.MoveNext%2A> is called.  
+  
+ Calling this method causes a full cache metadata to occur. If you make changes to the workflow after calling this method, you must call the <xref:System.Activities.Validation.ActivityValidationServices> <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A> method after making the changes in order to re-cache the metadata.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetImplementationVersion">
@@ -124,9 +134,9 @@
         <Parameter Name="activity" Type="System.Activities.Activity" />
       </Parameters>
       <Docs>
-        <param name="activity">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="activity">The activity.</param>
+        <summary>Retrieves the implementation version of the activity.</summary>
+        <returns>The implementation version of the activity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -147,10 +157,10 @@
         <Parameter Name="id" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="root">To be added.</param>
-        <param name="id">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="root">The activity tree to search.</param>
+        <param name="id">The identifier of the activity to find.</param>
+        <summary>Returns the activity with the specified <paramref name="id" /> from the specified activity tree.</summary>
+        <returns>The specified activity if found; otherwise, an <see cref="T:System.ArgumentException" /> is thrown.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

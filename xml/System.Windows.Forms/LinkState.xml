@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies constants that define the state of the link.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Windows.Forms.LinkState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The state of a link that has been clicked.</summary>
       </Docs>
     </Member>
     <Member MemberName="Hover">
@@ -43,7 +43,7 @@
         <ReturnType>System.Windows.Forms.LinkState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The state of a link over which a mouse pointer is resting.</summary>
       </Docs>
     </Member>
     <Member MemberName="Normal">
@@ -59,7 +59,7 @@
         <ReturnType>System.Windows.Forms.LinkState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The state of a link in its normal state (none of the other states apply).</summary>
       </Docs>
     </Member>
     <Member MemberName="Visited">
@@ -75,7 +75,7 @@
         <ReturnType>System.Windows.Forms.LinkState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The state of a link that has been visited.</summary>
       </Docs>
     </Member>
   </Members>

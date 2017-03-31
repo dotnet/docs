@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides an editor that uses a modal dialog box to display a property page for an ActiveX control.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.AxHost.AxComponentEditor" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,11 +53,12 @@
         <Parameter Name="parent" Type="System.Windows.Forms.IWin32Window" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="obj">To be added.</param>
-        <param name="parent">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that can be used to gain additional context information.</param>
+        <param name="obj">The component to edit.</param>
+        <param name="parent">An <see cref="T:System.Windows.Forms.IWin32Window" /> that the component belongs to.</param>
+        <summary>Creates an editor window that allows the user to edit the specified component.</summary>
+        <returns>
+          <see langword="true" /> if the component was changed during editing; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

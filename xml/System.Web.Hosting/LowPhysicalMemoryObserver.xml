@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>An observer that implements ASP.NET's default reaction to <see cref="T:System.Web.Hosting.LowPhysicalMemoryInfo" /> events raised by the application's memory monitor.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.Web.Hosting.LowPhysicalMemoryObserver" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,7 +48,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Notifies the observer that the provider has finished sending push-based notifications.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,8 +68,8 @@
         <Parameter Name="error" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="error">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="error">The exception.</param>
+        <summary>Notifies the observer that an exception has been raised.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,7 +90,7 @@
       </Parameters>
       <Docs>
         <param name="lowMemoryInfo">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Provides the observer with new data.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

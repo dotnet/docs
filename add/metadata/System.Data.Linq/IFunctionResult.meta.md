@@ -1,9 +1,13 @@
 ---
 uid: System.Data.Linq.IFunctionResult
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Linq.IFunctionResult.ReturnValue
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

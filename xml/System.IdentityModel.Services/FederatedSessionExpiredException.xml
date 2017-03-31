@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The exception that is thrown when a session has expired.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.FederatedSessionExpiredException" />class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,9 +43,23 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="message">The error message that explains the reason for the exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.FederatedSessionExpiredException" /> class with a specified error message.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor initializes the <xref:System.Exception.Message%2A> property of the new exception using the `message` parameter. The content of `message` is intended to be understood by humans. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
+  
+ The following table shows the initial property values for the new instance.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|`null`.|  
+|<xref:System.Exception.Message%2A>|The error message string.|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -62,9 +76,9 @@
         <Parameter Name="expired" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="tested">To be added.</param>
-        <param name="expired">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="tested">The time that the session was validated.</param>
+        <param name="expired">The time that the session expired.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.FederatedSessionExpiredException" /> class that has the specified instant that the session was validated and the instant that it expired.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,10 +96,19 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+        <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.FederatedSessionExpiredException" />class with serialized data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is called during deserialization to reconstitute the exception object transmitted over a stream.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="info" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -102,10 +125,24 @@
         <Parameter Name="inner" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="inner">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="message">The error message that explains the reason for the exception.</param>
+        <param name="inner">The <see cref="T:System.Exception" /> that is the cause of the current exception. If the <c>inner</c> parameter is not <see langword="null" />, the current exception is raised in a <see langword="catch" /> block that handles the inner exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.FederatedSessionExpiredException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor.  
+  
+ The following table shows the initial property values for the new instance.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|The inner exception reference.|  
+|<xref:System.Exception.Message%2A>|The error message string.|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -123,10 +160,10 @@
         <Parameter Name="inner" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="tested">To be added.</param>
-        <param name="expired">To be added.</param>
-        <param name="inner">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="tested">The time at which the session was validated.</param>
+        <param name="expired">The time at which the session expired.</param>
+        <param name="inner">The exception that is the cause of the current exception, or <see langword="null" /> if no inner exception is specified.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.FederatedSessionExpiredException" /> class with the specified instant that the session was validated, the instant that the session expired, and a reference to the inner exception that is the cause of this exception.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,8 +180,8 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the time that the session expired.</summary>
+        <value>The time that the session expired.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -170,9 +207,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+        <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+        <summary>When overridden in a derived class, sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object with information about the exception.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -189,8 +226,8 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the time that the session was validated.</summary>
+        <value>The time that the session was validated.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

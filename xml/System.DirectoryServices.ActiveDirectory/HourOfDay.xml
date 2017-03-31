@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Indicates the hour of the day.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.HourOfDay</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>8:00 A.M.</summary>
       </Docs>
     </Member>
     <Member MemberName="Eighteen">
@@ -43,7 +43,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.HourOfDay</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>6:00 P.M.</summary>
       </Docs>
     </Member>
     <Member MemberName="Eleven">
@@ -59,7 +59,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.HourOfDay</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>11:00 A.M.</summary>
       </Docs>
     </Member>
     <Member MemberName="Fifteen">
@@ -75,7 +75,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.HourOfDay</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>3:00 P.M.</summary>
       </Docs>
     </Member>
     <Member MemberName="Five">
@@ -91,7 +91,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.HourOfDay</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>5:00 A.M.</summary>
       </Docs>
     </Member>
     <Member MemberName="Four">
@@ -107,7 +107,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.HourOfDay</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>4:00 A.M.</summary>
       </Docs>
     </Member>
     <Member MemberName="Fourteen">
@@ -123,7 +123,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.HourOfDay</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>2:00 P.M.</summary>
       </Docs>
     </Member>
     <Member MemberName="Nine">
@@ -139,7 +139,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.HourOfDay</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>9:00 A.M.</summary>
       </Docs>
     </Member>
     <Member MemberName="Nineteen">
@@ -155,7 +155,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.HourOfDay</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>7:00 P.M.</summary>
       </Docs>
     </Member>
     <Member MemberName="One">
@@ -171,7 +171,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.HourOfDay</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>1:00 A.M.</summary>
       </Docs>
     </Member>
     <Member MemberName="Seven">
@@ -187,7 +187,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.HourOfDay</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>7:00 A.M.</summary>
       </Docs>
     </Member>
     <Member MemberName="Seventeen">
@@ -203,7 +203,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.HourOfDay</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>5:00 P.M.</summary>
       </Docs>
     </Member>
     <Member MemberName="Six">
@@ -219,7 +219,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.HourOfDay</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>6:00 A.M.</summary>
       </Docs>
     </Member>
     <Member MemberName="Sixteen">
@@ -235,7 +235,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.HourOfDay</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>4:00 P.M.</summary>
       </Docs>
     </Member>
     <Member MemberName="Ten">
@@ -251,7 +251,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.HourOfDay</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>10:00 A.M.</summary>
       </Docs>
     </Member>
     <Member MemberName="Thirteen">
@@ -267,7 +267,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.HourOfDay</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>1:00 P.M.</summary>
       </Docs>
     </Member>
     <Member MemberName="Three">
@@ -283,7 +283,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.HourOfDay</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>3:00 A.M.</summary>
       </Docs>
     </Member>
     <Member MemberName="Twelve">
@@ -299,7 +299,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.HourOfDay</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>12:00 P.M. (noon)</summary>
       </Docs>
     </Member>
     <Member MemberName="Twenty">
@@ -315,7 +315,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.HourOfDay</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>8:00 P.M.</summary>
       </Docs>
     </Member>
     <Member MemberName="TwentyOne">
@@ -331,7 +331,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.HourOfDay</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>9:00 P.M.</summary>
       </Docs>
     </Member>
     <Member MemberName="TwentyThree">
@@ -347,7 +347,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.HourOfDay</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>11:00 P.M.</summary>
       </Docs>
     </Member>
     <Member MemberName="TwentyTwo">
@@ -363,7 +363,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.HourOfDay</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>10:00 P.M.</summary>
       </Docs>
     </Member>
     <Member MemberName="Two">
@@ -379,7 +379,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.HourOfDay</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>2:00 A.M.</summary>
       </Docs>
     </Member>
     <Member MemberName="Zero">
@@ -395,7 +395,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.HourOfDay</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>12:00 A.M. (midnight)</summary>
       </Docs>
     </Member>
   </Members>

@@ -31,8 +31,26 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Creates or associates parameter information.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Parameter attributes need to consistent with the method signature. If you specify `Out` attributes for a parameter, you should ensure that the type of that method parameter is a `ByRef` type.  
+  
+ Some <xref:System.Reflection.Emit.ParameterBuilder> attributes require that you call <xref:System.Reflection.Emit.TypeBuilder.DefineMethod%2A> with viable parameters in order for the Microsoft intermediate language (MSIL) to work correctly at runtime. For example, if you define a <xref:System.Reflection.Emit.ParameterBuilder> with ParameterAttributes.Out for parameter 1 of a `MethodBuilder`, then parameter 1 of <xref:System.Reflection.Emit.MethodBuilder> must be a reference such as Type.GetType("System.String&"), rather than Type.GetType("System.String").  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to create a dynamic method with a parameter passed by reference using `ParameterBuilder`.  
+  
+ [!code-cpp[System.Reflection.Emit.ParameterBuilder Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.ParameterBuilder Example/CPP/source.cpp#1)]
+ [!code-csharp[System.Reflection.Emit.ParameterBuilder Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.ParameterBuilder Example/CS/source.cs#1)]
+ [!code-vb[System.Reflection.Emit.ParameterBuilder Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.ParameterBuilder Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Attributes">
@@ -53,9 +71,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Retrieves the attributes for this parameter.</summary>
+        <value>Read-only. Retrieves the attributes for this parameter.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The values of the attribute correspond to the values of the <xref:System.Reflection.ParameterAttributes> enumeration.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetToken">
@@ -73,8 +98,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Retrieves the token for this parameter.</summary>
+        <returns>Returns the token for this parameter.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,9 +121,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Retrieves whether this is an input parameter.</summary>
+        <value>Read-only. Retrieves whether this is an input parameter.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method depends on an optional metadata flag. This flag can be inserted by compilers, but the compilers are not obligated to do so.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsOptional">
@@ -119,8 +151,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Retrieves whether this parameter is optional.</summary>
+        <value>Read-only. Specifies whether this parameter is optional.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,8 +174,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Retrieves whether this parameter is an output parameter.</summary>
+        <value>Read-only. Retrieves whether this parameter is an output parameter.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -165,8 +197,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Retrieves the name of this parameter.</summary>
+        <value>Read-only. Retrieves the name of this parameter.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -188,8 +220,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Retrieves the signature position for this parameter.</summary>
+        <value>Read-only. Retrieves the signature position for this parameter.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -214,9 +246,25 @@
         <Parameter Name="defaultValue" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="defaultValue">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="defaultValue">The default value of this parameter.</param>
+        <summary>Sets the default value of the parameter.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `defaultValue` is restricted to the following types: `Boolean`, `SByte`, `Int16`, `Int32`, `Int64`, `Byte`, `UInt16`, `UInt32`, `UInt64`, `Single`, `Double`, `DateTime`, `Char`, `String`, and `Enum`. If the parameter type is a reference type, CLS compliance requires `defaultValue` to be `null`. However, starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], `defaultValue` can be non-null for a reference type as long as the value can be assigned to that reference type. For example, an `Int32` value can be assigned to a parameter of type <xref:System.Object>. This is not CLS-compliant, but it can be useful in interop scenarios.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The parameter is not one of the supported types.  
+  
+ -or-  
+  
+ The type of <paramref name="defaultValue" /> does not match the type of the parameter.  
+  
+ -or-  
+  
+ The parameter is of type <see cref="T:System.Object" /> or other reference type, <paramref name="defaultValue" /> is not <see langword="null" />, and the value cannot be assigned to the reference type.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetCustomAttribute">
@@ -240,9 +288,11 @@
         <Parameter Name="customBuilder" Type="System.Reflection.Emit.CustomAttributeBuilder" />
       </Parameters>
       <Docs>
-        <param name="customBuilder">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="customBuilder">An instance of a helper class to define the custom attribute.</param>
+        <summary>Set a custom attribute using a custom attribute builder.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="con" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetCustomAttribute">
@@ -272,10 +322,19 @@
         <Parameter Name="binaryAttribute" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="con">To be added.</param>
-        <param name="binaryAttribute">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="con">The constructor for the custom attribute.</param>
+        <param name="binaryAttribute">A byte blob representing the attributes.</param>
+        <summary>Set a custom attribute using a specified custom attribute blob.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See the metadata specification in the ECMA Partition II documentation for details on how to format `binaryAttribute`. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="con" /> or <paramref name="binaryAttribute" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetMarshal">
@@ -300,9 +359,20 @@
         <Parameter Name="unmanagedMarshal" Type="System.Reflection.Emit.UnmanagedMarshal" />
       </Parameters>
       <Docs>
-        <param name="unmanagedMarshal">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="unmanagedMarshal">The marshaling information for this parameter.</param>
+        <summary>Specifies the marshaling for this parameter.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method should throw the following exception but currently does not:  
+  
+ <xref:System.InvalidOperationException> if the containing type has been created using TypeBuilder.CreateType().  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="unmanagedMarshal" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.InteropServices._ParameterBuilder.GetIDsOfNames">
@@ -326,13 +396,21 @@
         <Parameter Name="rgDispId" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="riid">To be added.</param>
-        <param name="rgszNames">To be added.</param>
-        <param name="cNames">To be added.</param>
-        <param name="lcid">To be added.</param>
-        <param name="rgDispId">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="riid">Reserved for future use. Must be IID_NULL.</param>
+        <param name="rgszNames">Passed-in array of names to be mapped.</param>
+        <param name="cNames">Count of the names to be mapped.</param>
+        <param name="lcid">The locale context in which to interpret the names.</param>
+        <param name="rgDispId">Caller-allocated array which receives the IDs corresponding to the names.</param>
+        <summary>Maps a set of names to a corresponding set of dispatch identifiers.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetIDsOfNames`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.InteropServices._ParameterBuilder.GetTypeInfo">
@@ -354,11 +432,19 @@
         <Parameter Name="ppTInfo" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="iTInfo">To be added.</param>
-        <param name="lcid">To be added.</param>
-        <param name="ppTInfo">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="iTInfo">The type information to return.</param>
+        <param name="lcid">The locale identifier for the type information.</param>
+        <param name="ppTInfo">Receives a pointer to the requested type information object.</param>
+        <summary>Retrieves the type information for an object, which can then be used to get the type information for an interface.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfo`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.InteropServices._ParameterBuilder.GetTypeInfoCount">
@@ -378,9 +464,17 @@
         <Parameter Name="pcTInfo" Type="System.UInt32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="pcTInfo">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="pcTInfo">Points to a location that receives the number of type information interfaces provided by the object.</param>
+        <summary>Retrieves the number of type information interfaces that an object provides (either 0 or 1).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfoCount`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.InteropServices._ParameterBuilder.Invoke">
@@ -407,16 +501,24 @@
         <Parameter Name="puArgErr" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="dispIdMember">To be added.</param>
-        <param name="riid">To be added.</param>
-        <param name="lcid">To be added.</param>
-        <param name="wFlags">To be added.</param>
-        <param name="pDispParams">To be added.</param>
-        <param name="pVarResult">To be added.</param>
-        <param name="pExcepInfo">To be added.</param>
-        <param name="puArgErr">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="dispIdMember">Identifies the member.</param>
+        <param name="riid">Reserved for future use. Must be IID_NULL.</param>
+        <param name="lcid">The locale context in which to interpret arguments.</param>
+        <param name="wFlags">Flags describing the context of the call.</param>
+        <param name="pDispParams">Pointer to a structure containing an array of arguments, an array of argument DISPIDs for named arguments, and counts for the number of elements in the arrays.</param>
+        <param name="pVarResult">Pointer to the location where the result is to be stored.</param>
+        <param name="pExcepInfo">Pointer to a structure that contains exception information.</param>
+        <param name="puArgErr">The index of the first argument that has an error.</param>
+        <summary>Provides access to properties and methods exposed by an object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::Invoke`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
       </Docs>
     </Member>
   </Members>

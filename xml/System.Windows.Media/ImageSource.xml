@@ -26,7 +26,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents an object type that has a width, height, and <see cref="T:System.Windows.Media.ImageMetadata" /> such as a  <see cref="T:System.Windows.Media.Imaging.BitmapSource" /> and a <see cref="T:System.Windows.Media.DrawingImage" />. This is an abstract class.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -44,9 +44,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.ImageSource" />, making deep copies of this object's values. When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CloneCurrentValue">
@@ -63,9 +72,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.ImageSource" /> object, making deep copies of this object's current values. Resource references, data bindings, and animations are not copied, but their current values are.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -81,8 +99,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When overridden in a derived class, gets the height of the image in measure units (96ths of an inch).</summary>
+        <value>The height of the image.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,8 +117,8 @@
         <ReturnType>System.Windows.Media.ImageMetadata</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When overridden in a derived class, gets the <see cref="T:System.Windows.Media.ImageMetadata" /> associated with the image.</summary>
+        <value>The metadata associated with the image.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,10 +139,10 @@
         <Parameter Name="pixels" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="dpi">To be added.</param>
-        <param name="pixels">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dpi">Width of the bitmap, in dots per inch.</param>
+        <param name="pixels">Width of the bitmap, in pixels.</param>
+        <summary>Converts pixels to DIPs in a way that is consistent with MIL.</summary>
+        <returns>The natural size of the bitmap in MIL Device Independent Pixels (DIPs, or 1/96").</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -145,10 +163,18 @@
         <Parameter Name="provider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="format">To be added.</param>
-        <param name="provider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="format">The format to use.  
+  
+ -or-  
+  
+ A null reference (<see langword="Nothing" /> in Visual Basic) to use the default format defined for the type of the <see cref="T:System.IFormattable" /> implementation.</param>
+        <param name="provider">The provider to use to format the value.  
+  
+ -or-  
+  
+ A null reference (<see langword="Nothing" /> in Visual Basic) to obtain the numeric format information from the current locale setting of the operating system.</param>
+        <summary>Formats the value of the current instance using the specified format.</summary>
+        <returns>The value of the current instance in the specified format.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -166,8 +192,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a string representation of this object based on the current culture.</summary>
+        <returns>A string representation of this object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -187,9 +213,9 @@
         <Parameter Name="provider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="provider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="provider">An <see cref="T:System.IFormatProvider" /> that supplies culture-specific formatting information.</param>
+        <summary>Creates a string representation of this object based on the <see cref="T:System.IFormatProvider" /> passed in. If the provider is <see langword="null" />, the <see cref="P:System.Globalization.CultureInfo.CurrentCulture" /> is used.</summary>
+        <returns>A string representation of this object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -206,8 +232,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When overridden in a derived class, gets the width of the image in measure units (96ths of an inch).</summary>
+        <value>The width of the image in measure units (96ths of an inch).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,19 +1,27 @@
 ---
 uid: System.Activities.Presentation.SourceLocationUpdatedEventArgs
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.SourceLocationUpdatedEventArgs.#ctor(System.Guid,System.Activities.Debugger.SourceLocation)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.SourceLocationUpdatedEventArgs.UpdatedSourceLocation
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.SourceLocationUpdatedEventArgs.ObjectReference
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

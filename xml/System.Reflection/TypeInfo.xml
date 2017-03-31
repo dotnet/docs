@@ -32,8 +32,31 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents type declarations for class types, interface types, array types, value types, enumeration types, type parameters, generic type definitions, and open or closed constructed generic types.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], the <xref:System.Reflection.TypeInfo> class is included in the [!INCLUDE[net_win8_profile](~/includes/net-win8-profile-md.md)] subset for use in creating Windows Store apps. <xref:System.Reflection.TypeInfo> is available in the full .NET Framework as well. For more information about reflection for Windows Store apps, see [System.Reflection namespaces](http://msdn.microsoft.com/library/windows/apps/hh441595\(v=vs.110\).aspx) in the Windows Dev Center and [Reflection in the .NET Framework for Windows Store Apps](../Topic/Reflection%20in%20the%20.NET%20Framework%20for%20Windows%20Store%20Apps.md) in the MSDN Library.  
+  
+ <xref:System.Reflection.TypeInfo> contains many of the members available in the <xref:System.Type> class, and many of the reflection properties in the [!INCLUDE[net_win8_profile](~/includes/net-win8-profile-md.md)] return collections of <xref:System.Reflection.TypeInfo> objects. To get a <xref:System.Reflection.TypeInfo> object from a <xref:System.Type> object, use the <xref:System.Reflection.IntrospectionExtensions.GetTypeInfo%28System.Type%29?displayProperty=fullName> extension method.  
+  
+ A <xref:System.Reflection.TypeInfo> object represents the type definition itself, whereas a <xref:System.Type> object represents a reference to the type definition. Getting a <xref:System.Reflection.TypeInfo> object forces the assembly that contains that type to load. In comparison, you can manipulate <xref:System.Type> objects without necessarily requiring the runtime to load the assembly they reference.  
+  
+ In the [!INCLUDE[net_win8_profile](~/includes/net-win8-profile-md.md)], you use the reflection properties of <xref:System.Reflection.TypeInfo> that return <xref:System.Collections.Generic.IEnumerable%601> collections instead of methods that return arrays. For example, use the <xref:System.Reflection.TypeInfo.DeclaredMembers%2A> property to get all declared members, or the <xref:System.Reflection.TypeInfo.DeclaredProperties%2A> property to get all declared properties. Reflection contexts can implement lazy traversal of these collections for large assemblies or types. To get specific members, use methods such as <xref:System.Reflection.TypeInfo.GetDeclaredMethod%2A> and <xref:System.Reflection.TypeInfo.GetDeclaredProperty%2A>, and pass the name of the method or property you would like to retrieve.  
+  
+ To filter the results of <xref:System.Reflection.TypeInfo> properties, use LINQ queries. For reflection objects that originate with the runtime (for example, as the result of `typeof(Object)`), you can traverse the inheritance tree by using the methods in the <xref:System.Reflection.RuntimeReflectionExtensions> class. Consumers of objects from customized reflection contexts cannot use these methods and must traverse the inheritance tree themselves.  
+  
+   
+  
+## Examples  
+ This example uses the reflection types and members in the [!INCLUDE[net_win8_profile](~/includes/net-win8-profile-md.md)] subset to retrieve the methods and properties of the <xref:System.Globalization.Calendar> type, including inherited methods and properties. To run this code, paste it into the code file for a [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] XAML app that contains a [Windows.UI.Xaml.Controls.Textblock](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textblock.aspx) control named `textblock1`.  
+  
+ [!code-csharp[System.ReflectionWinStoreApp#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.reflectionwinstoreapp/cs/mainpage.xaml.cs#1)]
+ [!code-vb[System.ReflectionWinStoreApp#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.reflectionwinstoreapp/vb/mainpage.xaml.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Assembly">
@@ -101,8 +124,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the current type as a <see cref="T:System.Type" /> object.</summary>
+        <returns>The current type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -190,9 +213,16 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Reflection.ConstructorInfo&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of the constructors declared by the current type.</summary>
+        <value>A collection of the constructors declared by the current type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To filter the results of the <xref:System.Reflection.TypeInfo.DeclaredConstructors%2A> property, use LINQ queries. For reflection objects that originate with the runtime (for example, as the result of `typeof(Object)`), you can traverse the inheritance tree by using the methods in the <xref:System.Reflection.RuntimeReflectionExtensions> class. Consumers of objects from customized reflection contexts cannot use these methods and must traverse the inheritance tree themselves.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DeclaredEvents">
@@ -219,9 +249,16 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Reflection.EventInfo&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of the events defined by the current type.</summary>
+        <value>A collection of the events defined by the current type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To filter the results of the <xref:System.Reflection.TypeInfo.DeclaredEvents%2A> property, use LINQ queries. For reflection objects that originate with the runtime (for example, as the result of `typeof(Object)`), you can traverse the inheritance tree by using the methods in the <xref:System.Reflection.RuntimeReflectionExtensions> class. Consumers of objects from customized reflection contexts cannot use these methods and must traverse the inheritance tree themselves.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DeclaredFields">
@@ -248,9 +285,16 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Reflection.FieldInfo&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of the fields defined by the current type.</summary>
+        <value>A collection of the fields defined by the current type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To filter the results of the <xref:System.Reflection.TypeInfo.DeclaredFields%2A> property, use LINQ queries. For reflection objects that originate with the runtime (for example, as the result of `typeof(Object)`), you can traverse the inheritance tree by using the methods in the <xref:System.Reflection.RuntimeReflectionExtensions> class. Consumers of objects from customized reflection contexts cannot use these methods and must traverse the inheritance tree themselves.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DeclaredMembers">
@@ -277,9 +321,16 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Reflection.MemberInfo&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of the members defined by the current type.</summary>
+        <value>A collection of the members defined by the current type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To filter the results of the <xref:System.Reflection.TypeInfo.DeclaredMembers%2A> property, use LINQ queries. For reflection objects that originate with the runtime (for example, as the result of `typeof(Object)`), you can traverse the inheritance tree by using the methods in the <xref:System.Reflection.RuntimeReflectionExtensions> class. Consumers of objects from customized reflection contexts cannot use these methods and must traverse the inheritance tree themselves.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DeclaredMethods">
@@ -306,9 +357,24 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Reflection.MethodInfo&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of the methods defined by the current type.</summary>
+        <value>A collection of the methods defined by the current type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To filter the results of the <xref:System.Reflection.TypeInfo.DeclaredMethods%2A> property, use LINQ queries. For reflection objects that originate with the runtime (for example, as the result of `typeof(Object)`), you can traverse the inheritance tree by using the methods in the <xref:System.Reflection.RuntimeReflectionExtensions> class. Consumers of objects from customized reflection contexts cannot use these methods and must traverse the inheritance tree themselves.  
+  
+   
+  
+## Examples  
+ This example uses the reflection types and members in the [!INCLUDE[net_win8_profile](~/includes/net-win8-profile-md.md)] subset to retrieve the methods and properties of the <xref:System.Globalization.Calendar> type, including inherited methods and properties. To run this code, paste it into the code file for a [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] XAML app that contains a [Windows.UI.Xaml.Controls.Textblock](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textblock.aspx) control named `textblock1`.  
+  
+ [!code-csharp[System.ReflectionWinStoreApp#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.reflectionwinstoreapp/cs/mainpage.xaml.cs#1)]
+ [!code-vb[System.ReflectionWinStoreApp#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.reflectionwinstoreapp/vb/mainpage.xaml.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DeclaredNestedTypes">
@@ -335,9 +401,16 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Reflection.TypeInfo&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of the nested types defined by the current type.</summary>
+        <value>A collection of nested types defined by the current type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To filter the results of the <xref:System.Reflection.TypeInfo.DeclaredNestedTypes%2A> property, use LINQ queries. For reflection objects that originate with the runtime (for example, as the result of `typeof(Object)`), you can traverse the inheritance tree by using the methods in the <xref:System.Reflection.RuntimeReflectionExtensions> class. Consumers of objects from customized reflection contexts cannot use these methods and must traverse the inheritance tree themselves.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DeclaredProperties">
@@ -364,9 +437,19 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Reflection.PropertyInfo&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of the properties defined by the current type.</summary>
+        <value>A collection of the properties defined by the current type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ This example uses the reflection types and members in the [!INCLUDE[net_win8_profile](~/includes/net-win8-profile-md.md)] subset to retrieve the methods and properties of the <xref:System.Globalization.Calendar> type, including inherited methods and properties. To run this code, paste it into the code file for a [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] XAML app that contains a [Windows.UI.Xaml.Controls.Textblock](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textblock.aspx) control named `textblock1`.  
+  
+ [!code-csharp[System.ReflectionWinStoreApp#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.reflectionwinstoreapp/cs/mainpage.xaml.cs#1)]
+ [!code-vb[System.ReflectionWinStoreApp#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.reflectionwinstoreapp/vb/mainpage.xaml.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DeclaringMethod">
@@ -545,8 +628,8 @@
         <ReturnType>System.Type[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an array of the generic type parameters of the current instance.</summary>
+        <value>An array that contains the current instance's generic type parameters, or an array of <see cref="P:System.Array.Length" /> zero if the current instance has no generic type parameters.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -661,10 +744,12 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the event.</param>
+        <summary>Returns an object that represents the specified public event declared by the current type.</summary>
+        <returns>An object that represents the specified event, if found; otherwise, <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetDeclaredField">
@@ -694,10 +779,12 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the field.</param>
+        <summary>Returns an object that represents the specified public field declared by the current type.</summary>
+        <returns>An object that represents the specified field, if found; otherwise, <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetDeclaredMethod">
@@ -727,10 +814,12 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the method.</param>
+        <summary>Returns an object that represents the specified public method declared by the current type.</summary>
+        <returns>An object that represents the specified method, if found; otherwise, <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetDeclaredMethods">
@@ -760,10 +849,12 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The method name to search for.</param>
+        <summary>Returns a collection that contains all public methods declared on the current type that match the specified name.</summary>
+        <returns>A collection that contains methods that match <paramref name="name" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetDeclaredNestedType">
@@ -793,10 +884,12 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the nested type.</param>
+        <summary>Returns an object that represents the specified public nested type declared by the current type.</summary>
+        <returns>An object that represents the specified nested type, if found; otherwise, <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetDeclaredProperty">
@@ -826,10 +919,12 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the property.</param>
+        <summary>Returns an object that represents the specified public property declared by the current type.</summary>
+        <returns>An object that represents the specified property, if found; otherwise, <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetDefaultMembers">
@@ -1841,8 +1936,8 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Type&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of the interfaces implemented by the current type.</summary>
+        <value>A collection of the interfaces implemented by the current type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1933,9 +2028,10 @@
         <Parameter Name="typeInfo" Type="System.Reflection.TypeInfo" />
       </Parameters>
       <Docs>
-        <param name="typeInfo">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="typeInfo">The type to check.</param>
+        <summary>Returns a value that indicates whether the specified type can be assigned to the current type.</summary>
+        <returns>
+          <see langword="true" /> if the specified type can be assigned to this type; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2867,9 +2963,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a representation of the current type as a <see cref="T:System.Reflection.TypeInfo" /> object.</summary>
+        <returns>A reference to the current type.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Reflection.TypeInfo> instance is cast to an <xref:System.Reflection.IReflectableType> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TypeInitializer">

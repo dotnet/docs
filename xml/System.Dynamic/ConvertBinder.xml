@@ -20,7 +20,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the convert dynamic operation at the call site, providing the binding semantic and the details about the operation.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -47,9 +47,9 @@
         <Parameter Name="explicit" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <param name="explicit">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="type">The type to convert to.</param>
+        <param name="explicit">Is true if the conversion should consider explicit conversions; otherwise, false.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Dynamic.ConvertBinder" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,10 +79,10 @@
         <Parameter Name="args" Type="System.Dynamic.DynamicMetaObject[]" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="args">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The target of the dynamic convert operation.</param>
+        <param name="args">An array of arguments of the dynamic convert operation.</param>
+        <summary>Performs the binding of the dynamic convert operation.</summary>
+        <returns>The <see cref="T:System.Dynamic.DynamicMetaObject" /> representing the result of the binding.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,8 +108,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the value indicating if the conversion should consider explicit conversions.</summary>
+        <value>
+          <see langword="True" /> if there is an explicit conversion, otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -138,9 +139,9 @@
         <Parameter Name="target" Type="System.Dynamic.DynamicMetaObject" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The target of the dynamic convert operation.</param>
+        <summary>Performs the binding of the dynamic convert operation if the target dynamic object cannot bind.</summary>
+        <returns>The <see cref="T:System.Dynamic.DynamicMetaObject" /> representing the result of the binding.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -170,10 +171,10 @@
         <Parameter Name="errorSuggestion" Type="System.Dynamic.DynamicMetaObject" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="errorSuggestion">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The target of the dynamic convert operation.</param>
+        <param name="errorSuggestion">The binding result to use if binding fails, or null.</param>
+        <summary>When overridden in the derived class, performs the binding of the dynamic convert operation if the target dynamic object cannot bind.</summary>
+        <returns>The <see cref="T:System.Dynamic.DynamicMetaObject" /> representing the result of the binding.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -199,8 +200,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The result type of the operation.</summary>
+        <value>The <see cref="T:System.Type" /> object representing the result type of the operation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -226,8 +227,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The type to convert to.</summary>
+        <value>The <see cref="T:System.Type" /> object that represents the type to convert to.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -21,8 +21,29 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a certificate's public key information. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Cryptography.X509Certificates.PublicKey> object contains the object identifier (<xref:System.Security.Cryptography.X509Certificates.PublicKey.Oid%2A>) representing the public key algorithm, the ASN-encoded parameters, and the ASN.1-encoded key value.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the public key from a <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> object to encrypt a file. It also shows how to decrypt the encrypted file using the private key for that certificate.  
+  
+ [!code-csharp[X509Certificate2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509certificate2/cs/program.cs#1)]
+ [!code-vb[X509Certificate2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509certificate2/vb/program.vb#1)]  
+  
+ The following example creates a command-line executable that takes a certificate file as an argument and prints various certificate properties to the console.  
+  
+ [!code-cpp[CertInfo#1](~/samples/snippets/cpp/VS_Snippets_CLR/CertInfo/CPP/certinfo.cpp#1)]
+ [!code-csharp[CertInfo#1](~/samples/snippets/csharp/VS_Snippets_CLR/CertInfo/CS/certinfo.cs#1)]
+ [!code-vb[CertInfo#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CertInfo/VB/certinfo.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -50,10 +71,10 @@
         <Parameter Name="keyValue" Type="System.Security.Cryptography.AsnEncodedData" />
       </Parameters>
       <Docs>
-        <param name="oid">To be added.</param>
-        <param name="parameters">To be added.</param>
-        <param name="keyValue">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="oid">An object identifier (OID) object that represents the public key.</param>
+        <param name="parameters">An ASN.1-encoded representation of the public key parameters.</param>
+        <param name="keyValue">An ASN.1-encoded representation of the public key value.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.X509Certificates.PublicKey" /> class using an object identifier (OID) object of the public key, an ASN.1-encoded representation of the public key parameters, and an ASN.1-encoded representation of the public key value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,9 +101,20 @@
         <ReturnType>System.Security.Cryptography.AsnEncodedData</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the ASN.1-encoded representation of the public key value.</summary>
+        <value>The ASN.1-encoded representation of the public key value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example creates a command-line executable that takes a certificate file as an argument and prints various certificate properties to the console.  
+  
+ [!code-cpp[CertInfo#1](~/samples/snippets/cpp/VS_Snippets_CLR/CertInfo/CPP/certinfo.cpp#1)]
+ [!code-csharp[CertInfo#1](~/samples/snippets/csharp/VS_Snippets_CLR/CertInfo/CS/certinfo.cs#1)]
+ [!code-vb[CertInfo#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CertInfo/VB/certinfo.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EncodedParameters">
@@ -108,8 +140,8 @@
         <ReturnType>System.Security.Cryptography.AsnEncodedData</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the ASN.1-encoded representation of the public key parameters.</summary>
+        <value>The ASN.1-encoded representation of the public key parameters.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,9 +163,26 @@
         <ReturnType>System.Security.Cryptography.AsymmetricAlgorithm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets an <see cref="T:System.Security.Cryptography.RSACryptoServiceProvider" /> or <see cref="T:System.Security.Cryptography.DSACryptoServiceProvider" /> object representing the public key.</summary>
+        <value>An <see cref="T:System.Security.Cryptography.AsymmetricAlgorithm" /> object representing the public key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property returns the public key. Both <xref:System.Security.Cryptography.RSA> and <xref:System.Security.Cryptography.DSA> keys are supported. Call this property to obtain a certificate's public key. Repeated calls to this property will return the same key.  
+  
+   
+  
+## Examples  
+ The following code example opens the current user certificate store, selects only active certificates, and then allows the user to select one or more certificates. The example then writes certificate information to the console.  
+  
+ [!code-cpp[CertSelect#1](~/samples/snippets/cpp/VS_Snippets_CLR/CertSelect/CPP/certselect.cpp#1)]
+ [!code-csharp[CertSelect#1](~/samples/snippets/csharp/VS_Snippets_CLR/CertSelect/CS/certselect.cs#1)]
+ [!code-vb[CertSelect#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CertSelect/VB/certselect.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The key algorithm is not supported.</exception>
       </Docs>
     </Member>
     <Member MemberName="Oid">
@@ -159,9 +208,25 @@
         <ReturnType>System.Security.Cryptography.Oid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets an object identifier (OID) object of the public key.</summary>
+        <value>An object identifier (OID) object of the public key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An object identifier (OID) is a number that uniquely identifies an object class or attribute. An object identifier is represented as a dotted decimal string, such as "1.2.3.4." Object identifiers are organized into a global hierarchy. National registration authorities issue root object identifiers to individuals or organizations, who manage the hierarchy of OIDs grouped below their root object identifier.  
+  
+   
+  
+## Examples  
+ The following code example creates a command-line executable that takes a certificate file as an argument and prints various certificate properties to the console.  
+  
+ [!code-cpp[CertInfo#1](~/samples/snippets/cpp/VS_Snippets_CLR/CertInfo/CPP/certinfo.cpp#1)]
+ [!code-csharp[CertInfo#1](~/samples/snippets/csharp/VS_Snippets_CLR/CertInfo/CS/certinfo.cs#1)]
+ [!code-vb[CertInfo#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CertInfo/VB/certinfo.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

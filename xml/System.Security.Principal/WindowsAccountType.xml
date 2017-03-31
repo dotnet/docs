@@ -16,8 +16,24 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the type of Windows account used.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Principal.WindowsAccountType> enumeration is used by the <xref:System.Security.Principal.WindowsIdentity> class.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Security.Principal.WindowsIdentity.%23ctor%2A> constructor to create a new instance of the <xref:System.Security.Principal.WindowsIdentity> class for the user represented by the specified Windows account token, the specified authentication type, and the specified Windows account type. This code example is part of a larger example provided for the <xref:System.Security.Principal.WindowsIdentity> class.  
+  
+ [!code-cpp[System.Security.Principal.WindowsIdentity_AllMembers#7](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Principal.WindowsIdentity_AllMembers/CPP/windowsidentitymembers.cpp#7)]
+ [!code-csharp[System.Security.Principal.WindowsIdentity_AllMembers#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Principal.WindowsIdentity_AllMembers/CS/windowsidentitymembers.cs#7)]
+ [!code-vb[System.Security.Principal.WindowsIdentity_AllMembers#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Principal.WindowsIdentity_AllMembers/VB/Form1.vb#7)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Anonymous">
@@ -34,7 +50,7 @@
         <ReturnType>System.Security.Principal.WindowsAccountType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An anonymous account.</summary>
       </Docs>
     </Member>
     <Member MemberName="Guest">
@@ -51,7 +67,7 @@
         <ReturnType>System.Security.Principal.WindowsAccountType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A Windows guest account.</summary>
       </Docs>
     </Member>
     <Member MemberName="Normal">
@@ -68,7 +84,7 @@
         <ReturnType>System.Security.Principal.WindowsAccountType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A standard user account.</summary>
       </Docs>
     </Member>
     <Member MemberName="System">
@@ -85,7 +101,7 @@
         <ReturnType>System.Security.Principal.WindowsAccountType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A Windows system account.</summary>
       </Docs>
     </Member>
   </Members>

@@ -19,7 +19,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Indicates how to interpret the data contained in an <see cref="T:System.Security.Cryptography.ECCurve" /> object.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,7 +45,7 @@
         <ReturnType>System.Security.Cryptography.ECCurve+ECCurveType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The curve parameters represent a characteristic 2 curve.</summary>
       </Docs>
     </Member>
     <Member MemberName="Implicit">
@@ -70,7 +70,7 @@
         <ReturnType>System.Security.Cryptography.ECCurve+ECCurveType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No curve data is interpreted. The caller is assumed to know what the curve is.</summary>
       </Docs>
     </Member>
     <Member MemberName="Named">
@@ -95,7 +95,7 @@
         <ReturnType>System.Security.Cryptography.ECCurve+ECCurveType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The curve parameters represent a named curve.</summary>
       </Docs>
     </Member>
     <Member MemberName="PrimeMontgomery">
@@ -120,7 +120,7 @@
         <ReturnType>System.Security.Cryptography.ECCurve+ECCurveType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The curve parameters represent a prime curve with the formula B*y^2 = x^3 + A\*x^2 + x.</summary>
       </Docs>
     </Member>
     <Member MemberName="PrimeShortWeierstrass">
@@ -145,7 +145,7 @@
         <ReturnType>System.Security.Cryptography.ECCurve+ECCurveType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The curve parameters represent a prime curve with the formula y^2 = x^3 + A*x + B in the prime field P.</summary>
       </Docs>
     </Member>
     <Member MemberName="PrimeTwistedEdwards">
@@ -170,7 +170,7 @@
         <ReturnType>System.Security.Cryptography.ECCurve+ECCurveType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The curve parameters represent a prime curve with the formula A*x^2 + y^2 = 1 + B\*x^2\*y^2 in the prime field P.</summary>
       </Docs>
     </Member>
   </Members>

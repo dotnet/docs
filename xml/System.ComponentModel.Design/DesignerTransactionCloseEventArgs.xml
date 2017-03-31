@@ -21,8 +21,25 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides data for the <see cref="E:System.ComponentModel.Design.IDesignerHost.TransactionClosed" /> and <see cref="E:System.ComponentModel.Design.IDesignerHost.TransactionClosing" /> events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.IDesignerHost.TransactionClosed> event occurs when a designer finalizes a transaction.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates creating a <xref:System.ComponentModel.Design.DesignerTransactionCloseEventArgs>.  
+  
+ [!code-cpp[DesignerTransactionCloseEventArgsExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/DesignerTransactionCloseEventArgsExample/CPP/designertransactioncloseeventargsexample.cpp#1)]
+ [!code-csharp[DesignerTransactionCloseEventArgsExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/DesignerTransactionCloseEventArgsExample/CS/designertransactioncloseeventargsexample.cs#1)]
+ [!code-vb[DesignerTransactionCloseEventArgsExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DesignerTransactionCloseEventArgsExample/VB/designertransactioncloseeventargsexample.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,9 +65,10 @@
         <Parameter Name="commit" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="commit">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="commit">A value indicating whether the transaction was committed.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerTransactionCloseEventArgs" /> class, using the specified value that indicates whether the designer called <see cref="M:System.ComponentModel.Design.DesignerTransaction.Commit" /> on the transaction.</summary>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -72,10 +90,19 @@
         <Parameter Name="lastTransaction" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="commit">To be added.</param>
-        <param name="lastTransaction">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="commit">A value indicating whether the transaction was committed.</param>
+        <param name="lastTransaction">
+          <see langword="true" /> if this is the last transaction to close; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerTransactionCloseEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `commit` is `true`, the <xref:System.ComponentModel.Design.DesignerTransactionCloseEventArgs.LastTransaction%2A> property defaults to `true`.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
       </Docs>
     </Member>
     <Member MemberName="LastTransaction">
@@ -96,9 +123,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether this is the last transaction to close.</summary>
+        <value>
+          <see langword="true" />, if this is the last transaction to close; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
       </Docs>
     </Member>
     <Member MemberName="TransactionCommitted">
@@ -119,9 +148,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Indicates whether the designer called <see cref="M:System.ComponentModel.Design.DesignerTransaction.Commit" /> on the transaction.</summary>
+        <value>
+          <see langword="true" /> if the designer called <see cref="M:System.ComponentModel.Design.DesignerTransaction.Commit" /> on the transaction; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
       </Docs>
     </Member>
   </Members>

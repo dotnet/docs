@@ -1,4 +1,6 @@
 ---
 uid: System.Runtime.CompilerServices.RuntimeHelpers.CleanupCode
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

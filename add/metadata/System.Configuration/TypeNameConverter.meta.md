@@ -1,19 +1,31 @@
 ---
 uid: System.Configuration.TypeNameConverter
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.TypeNameConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.TypeNameConverter.ConvertFrom
 ---
 
 ---
 uid: System.Configuration.TypeNameConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.TypeNameConverter.ConvertTo
 ---
 
 ---
 uid: System.Configuration.TypeNameConverter.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -1,1 +1,0 @@
-    myParserError.Line = 5

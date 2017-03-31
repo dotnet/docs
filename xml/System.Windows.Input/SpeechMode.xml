@@ -10,8 +10,18 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the mode of interpretation for speech input.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to specify the speech mode using the <xref:System.Windows.Input.SpeechMode> enumeration.  
+  
+ [!code-csharp[languagemanager#2](~/samples/snippets/csharp/VS_Snippets_Wpf/languageManager/CSharp/Window1.xaml.cs#2)]
+ [!code-vb[languagemanager#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/languageManager/visualbasic/window1.xaml.vb#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Command">
@@ -27,7 +37,7 @@
         <ReturnType>System.Windows.Input.SpeechMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Speech input is interpreted as commands.</summary>
       </Docs>
     </Member>
     <Member MemberName="Dictation">
@@ -43,7 +53,7 @@
         <ReturnType>System.Windows.Input.SpeechMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Speech input is interpreted as dictation.</summary>
       </Docs>
     </Member>
     <Member MemberName="Indeterminate">
@@ -59,7 +69,7 @@
         <ReturnType>System.Windows.Input.SpeechMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Speech input mode is indeterminate.</summary>
       </Docs>
     </Member>
   </Members>

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides design-time support in a visual designer for the <see cref="T:System.Web.UI.WebControls.EntityDataSource" /> control.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.Web.UI.Design.WebControls.EntityDataSourceDesigner" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the <see cref="M:System.Web.UI.Design.WebControls.EntityDataSourceDesigner.Configure" /> method can be called by the design host.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="M:System.Web.UI.Design.WebControls.EntityDataSourceDesigner.Configure" /> method can be called; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +62,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the <see cref="M:System.Web.UI.Design.WebControls.EntityDataSourceDesigner.RefreshSchema(System.Boolean)" /> method can be called by the design host.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="M:System.Web.UI.Design.WebControls.EntityDataSourceDesigner.RefreshSchema(System.Boolean)" /> method can be called; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,8 +95,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="P:System.Web.UI.WebControls.EntityDataSource.CommandText" /> property of the <see cref="T:System.Web.UI.WebControls.EntityDataSource" /> control.</summary>
+        <value>The value of the <see cref="P:System.Web.UI.WebControls.EntityDataSource.CommandText" /> property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,7 +114,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Launches the data source configuration utility in the design host.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,8 +139,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="P:System.Web.UI.WebControls.EntityDataSource.ConnectionString" /> property of the <see cref="T:System.Web.UI.WebControls.EntityDataSource" /> control.</summary>
+        <value>The value of the <see cref="P:System.Web.UI.WebControls.EntityDataSource.ConnectionString" /> property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -166,8 +168,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="P:System.Web.UI.WebControls.EntityDataSource.DefaultContainerName" /> property of the <see cref="T:System.Web.UI.WebControls.EntityDataSource" /> control.</summary>
+        <value>The value of the <see cref="P:System.Web.UI.WebControls.EntityDataSource.DefaultContainerName" /> property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -195,8 +197,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="P:System.Web.UI.WebControls.EntityDataSource.EntitySetName" /> property of the <see cref="T:System.Web.UI.WebControls.EntityDataSource" /> control.</summary>
+        <value>The value of the <see cref="P:System.Web.UI.WebControls.EntityDataSource.EntitySetName" /> property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -224,8 +226,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="P:System.Web.UI.WebControls.EntityDataSource.EntityTypeFilter" /> property of the <see cref="T:System.Web.UI.WebControls.EntityDataSource" /> control.</summary>
+        <value>The value of the <see cref="P:System.Web.UI.WebControls.EntityDataSource.EntityTypeFilter" /> property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -245,9 +247,9 @@
         <Parameter Name="viewName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="viewName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="viewName">The name of the view to return.</param>
+        <summary>Returns a data source view that has the specified name.</summary>
+        <returns>A <see cref="T:System.Web.UI.WebControls.Design.EntityDesignerDataSourceView" /> object with the name specified by <paramref name="viewName" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -265,8 +267,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets a list of available views.</summary>
+        <returns>A collection with one element that contains the name "DefaultView".</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -286,8 +288,8 @@
         <Parameter Name="component" Type="System.ComponentModel.IComponent" />
       </Parameters>
       <Docs>
-        <param name="component">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="component">An <see cref="T:System.ComponentModel.IComponent" /> object to initialize.</param>
+        <summary>Initializes the control designer and loads the specified component.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -318,8 +320,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="P:System.Web.UI.WebControls.EntityDataSource.OrderBy" /> property of the <see cref="T:System.Web.UI.WebControls.EntityDataSource" /> control.</summary>
+        <value>The value of the <see cref="P:System.Web.UI.WebControls.EntityDataSource.OrderBy" /> property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -339,9 +341,16 @@
         <Parameter Name="properties" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="properties">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="properties">The properties to be filtered.</param>
+        <summary>Used by the designer to add properties or remove properties in the properties grid, or to shadow properties of the associated control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member overrides <xref:System.Web.UI.Design.ControlDesigner.PreFilterProperties%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshSchema">
@@ -360,8 +369,9 @@
         <Parameter Name="preferSilent" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="preferSilent">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="preferSilent">
+          <see langword="true" /> to suppress all data source events until the schema is refreshed.</param>
+        <summary>Refreshes the schema from the underlying data source.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -392,8 +402,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="P:System.Web.UI.WebControls.EntityDataSource.Select" /> property of the <see cref="T:System.Web.UI.WebControls.EntityDataSource" /> control.</summary>
+        <value>The value of the <see cref="P:System.Web.UI.WebControls.EntityDataSource.Select" /> property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -424,8 +434,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="P:System.Web.UI.WebControls.EntityDataSource.Where" /> property of the <see cref="T:System.Web.UI.WebControls.EntityDataSource" /> control.</summary>
+        <value>The value of the <see cref="P:System.Web.UI.WebControls.EntityDataSource.Where" /> property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

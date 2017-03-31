@@ -1,14 +1,20 @@
 ---
 uid: System.Windows.Forms.BindingManagerDataErrorEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.BindingManagerDataErrorEventArgs.Exception
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.BindingManagerDataErrorEventArgs.#ctor(System.Exception)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

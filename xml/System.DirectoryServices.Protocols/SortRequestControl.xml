@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.SortRequestControl" /> class is used with <see cref="T:System.DirectoryServices.Protocols.SearchRequest" /> to instruct the server to sort the search results before returning them to the client application.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,8 +34,8 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="sortKeys">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="sortKeys">An array of <see cref="T:System.DirectoryServices.Protocols.SortKey" /> objects used by the server to sort the search results before returning them to the client.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.SortRequestControl.#ctor(System.DirectoryServices.Protocols.SortKey[])" /> constructor creates and initializes a new instance of the <see cref="T:System.DirectoryServices.Protocols.SortRequestControl" /> class using the specified sort keys.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,9 +53,10 @@
         <Parameter Name="reverseOrder" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="attributeName">To be added.</param>
-        <param name="reverseOrder">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="attributeName">The name of the attribute on which the query is based.</param>
+        <param name="reverseOrder">
+          <see langword="true" /> if results should be returned in reverse order or <see langword="false" /> otherwise.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.SortRequestControl.#ctor(System.String,System.Boolean)" /> constructor creates a new instance of the <see cref="T:System.DirectoryServices.Protocols.SortRequestControl" /> class using the specified attribute name and sort order.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,10 +75,11 @@
         <Parameter Name="reverseOrder" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="attributeName">To be added.</param>
-        <param name="matchingRule">To be added.</param>
-        <param name="reverseOrder">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="attributeName">The name of the attribute on which the query is based.</param>
+        <param name="matchingRule">Specifies the object identifier (OID) of the matching rule for the sort.</param>
+        <param name="reverseOrder">
+          <see langword="true" /> if the sort is ordered from lowest to highest or <see langword="false" /> if the sort is ordered from highest to lowest.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.SortRequestControl.#ctor(System.String,System.String,System.Boolean)" /> constructor creates a new instance of the <see cref="T:System.DirectoryServices.Protocols.SortRequestControl" /> class using the specified attribute name, matching rule, and sort order.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,8 +97,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.SortRequestControl.GetValue" /> method specifies the sort keys and matching rules for this control.</summary>
+        <returns>The sort keys and matching rules for this control.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,8 +115,8 @@
         <ReturnType>System.DirectoryServices.Protocols.SortKey[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.SortRequestControl.SortKeys" /> property contains an array of <see cref="T:System.DirectoryServices.Protocols.SortKey" /> objects used by the server to sort the search results before returning them to the client.</summary>
+        <value>An array of <see cref="T:System.DirectoryServices.Protocols.SortKey" /> objects used by the server to sort the search results before returning them to the client.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

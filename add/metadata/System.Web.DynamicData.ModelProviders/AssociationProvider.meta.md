@@ -1,44 +1,53 @@
 ---
 uid: System.Web.DynamicData.ModelProviders.AssociationProvider
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.ModelProviders.AssociationProvider.Direction
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.ModelProviders.AssociationProvider.IsPrimaryKeyInThisTable
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.ModelProviders.AssociationProvider.FromColumn
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.ModelProviders.AssociationProvider.ToTable
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.ModelProviders.AssociationProvider.ToColumn
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.ModelProviders.AssociationProvider.ForeignKeyNames
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.ModelProviders.AssociationProvider.GetSortExpression(System.Web.DynamicData.ModelProviders.ColumnProvider)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.ModelProviders.AssociationProvider.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

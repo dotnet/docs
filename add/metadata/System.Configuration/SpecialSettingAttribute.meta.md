@@ -1,14 +1,20 @@
 ---
 uid: System.Configuration.SpecialSettingAttribute
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SpecialSettingAttribute.#ctor(System.Configuration.SpecialSetting)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SpecialSettingAttribute.SpecialSetting
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

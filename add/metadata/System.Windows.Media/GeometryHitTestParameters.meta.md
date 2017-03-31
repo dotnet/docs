@@ -1,14 +1,19 @@
 ---
 uid: System.Windows.Media.GeometryHitTestParameters
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.GeometryHitTestParameters.HitGeometry
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.GeometryHitTestParameters.#ctor(System.Windows.Media.Geometry)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

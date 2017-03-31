@@ -21,8 +21,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies overrides of default event settings such as the log level, keywords and operation code when the <see cref="M:System.Diagnostics.Tracing.EventSource.Write``1(System.String,System.Diagnostics.Tracing.EventSourceOptions,``0)" /> method is called.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about ETW keywords and levels, see [CLR ETW Keywords and Levels](../Topic/CLR%20ETW%20Keywords%20and%20Levels.md)  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ActivityOptions">
@@ -48,8 +55,8 @@
         <ReturnType>System.Diagnostics.Tracing.EventActivityOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The activity options defined for this event source.</summary>
+        <value>Returns <see cref="T:System.Diagnostics.Tracing.EventActivityOptions" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,8 +83,8 @@
         <ReturnType>System.Diagnostics.Tracing.EventKeywords</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the keywords applied to the event. If this property is not set, the event’s keywords will be <see langword="None" />.</summary>
+        <value>The keywords applied to the event, or <see langword="None" /> if no keywords are set.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,9 +111,16 @@
         <ReturnType>System.Diagnostics.Tracing.EventLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the event level applied to the event.</summary>
+        <value>The event level for the event. If not set, the default is Verbose (5).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ETW events can also be filtered by level. If the level is set at Verbose (5), events of all levels, including Verbose and below are raised. If the level is set at Error (2), only events that belong to Error level and below are raised.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Opcode">
@@ -132,8 +146,8 @@
         <ReturnType>System.Diagnostics.Tracing.EventOpcode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the operation code to use for the specified event.</summary>
+        <value>The operation code to use for the specified event. If not set, the default is <see langword="Info" /> (0).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,8 +174,8 @@
         <ReturnType>System.Diagnostics.Tracing.EventTags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The event tags defined for this event source.</summary>
+        <value>Returns <see cref="T:System.Diagnostics.Tracing.EventTags" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

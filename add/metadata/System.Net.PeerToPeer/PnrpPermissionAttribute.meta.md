@@ -1,14 +1,17 @@
 ---
 uid: System.Net.PeerToPeer.PnrpPermissionAttribute
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.PnrpPermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.PnrpPermissionAttribute.CreatePermission
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

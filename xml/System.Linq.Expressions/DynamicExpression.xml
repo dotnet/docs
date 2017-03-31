@@ -29,7 +29,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a dynamic operation.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -58,10 +58,17 @@
         <Parameter Name="visitor" Type="System.Linq.Expressions.ExpressionVisitor" />
       </Parameters>
       <Docs>
-        <param name="visitor">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="visitor">The visitor to visit this node with.</param>
+        <summary>Dispatches to the specific visit method for this node type. For example, <see cref="T:System.Linq.Expressions.MethodCallExpression" /> calls the <see cref="M:System.Linq.Expressions.ExpressionVisitor.VisitMethodCall(System.Linq.Expressions.MethodCallExpression)" />.</summary>
+        <returns>The result of visiting this node.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This default implementation for <xref:System.Linq.Expressions.ExpressionType> nodes calls <xref:System.Linq.Expressions.ExpressionVisitor.VisitExtension%2A>. Override this method to call into a more specific method on a derived visitor class of the <xref:System.Linq.Expressions.ExpressionVisitor> class. However, it should still support unknown visitors by calling <xref:System.Linq.Expressions.ExpressionVisitor.VisitExtension%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Arguments">
@@ -86,8 +93,8 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Linq.Expressions.Expression&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the arguments to the dynamic operation.</summary>
+        <value>The read-only collections containing the arguments to the dynamic operation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,8 +120,8 @@
         <ReturnType>System.Runtime.CompilerServices.CallSiteBinder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Runtime.CompilerServices.CallSiteBinder" />, which determines the run-time behavior of the dynamic site.</summary>
+        <value>The <see cref="T:System.Runtime.CompilerServices.CallSiteBinder" />, which determines the run-time behavior of the dynamic site.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,8 +147,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type of the delegate used by the <see cref="T:System.Runtime.CompilerServices.CallSite" />.</summary>
+        <value>The <see cref="T:System.Type" /> object representing the type of the delegate used by the <see cref="T:System.Runtime.CompilerServices.CallSite" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -172,12 +179,19 @@
         <Parameter Name="arguments" Type="System.Collections.Generic.IEnumerable&lt;System.Linq.Expressions.Expression&gt;" />
       </Parameters>
       <Docs>
-        <param name="binder">To be added.</param>
-        <param name="returnType">To be added.</param>
-        <param name="arguments">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="binder">The runtime binder for the dynamic operation.</param>
+        <param name="returnType">The result type of the dynamic expression.</param>
+        <param name="arguments">The arguments to the dynamic operation.</param>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.DynamicExpression" /> that represents a dynamic operation bound by the provided <see cref="T:System.Runtime.CompilerServices.CallSiteBinder" />.</summary>
+        <returns>A <see cref="T:System.Linq.Expressions.DynamicExpression" /> that has <see cref="P:System.Linq.Expressions.DynamicExpression.NodeType" /> equal to <see cref="F:System.Linq.Expressions.ExpressionType.Dynamic" />,  and has the <see cref="P:System.Linq.Expressions.DynamicExpression.Binder" /> and <see cref="P:System.Linq.Expressions.DynamicExpression.Arguments" /> set to the specified values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Linq.Expressions.DynamicExpression.DelegateType%2A> property of the result is inferred from the types of the arguments and the specified return type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dynamic">
@@ -207,12 +221,19 @@
         <Parameter Name="arg0" Type="System.Linq.Expressions.Expression" />
       </Parameters>
       <Docs>
-        <param name="binder">To be added.</param>
-        <param name="returnType">To be added.</param>
-        <param name="arg0">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="binder">The runtime binder for the dynamic operation.</param>
+        <param name="returnType">The result type of the dynamic expression.</param>
+        <param name="arg0">The first argument to the dynamic operation.</param>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.DynamicExpression" /> that represents a dynamic operation bound by the provided <see cref="T:System.Runtime.CompilerServices.CallSiteBinder" />.</summary>
+        <returns>A <see cref="T:System.Linq.Expressions.DynamicExpression" /> that has <see cref="P:System.Linq.Expressions.DynamicExpression.NodeType" /> equal to <see cref="F:System.Linq.Expressions.ExpressionType.Dynamic" />,  and has the <see cref="P:System.Linq.Expressions.DynamicExpression.Binder" /> and <see cref="P:System.Linq.Expressions.DynamicExpression.Arguments" /> set to the specified values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Linq.Expressions.DynamicExpression.DelegateType%2A> property of the result is inferred from the types of the arguments and the specified return type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dynamic">
@@ -248,12 +269,19 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="binder">To be added.</param>
-        <param name="returnType">To be added.</param>
-        <param name="arguments">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="binder">The runtime binder for the dynamic operation.</param>
+        <param name="returnType">The result type of the dynamic expression.</param>
+        <param name="arguments">The arguments to the dynamic operation.</param>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.DynamicExpression" /> that represents a dynamic operation bound by the provided <see cref="T:System.Runtime.CompilerServices.CallSiteBinder" />.</summary>
+        <returns>A <see cref="T:System.Linq.Expressions.DynamicExpression" /> that has <see cref="P:System.Linq.Expressions.DynamicExpression.NodeType" /> equal to <see cref="F:System.Linq.Expressions.ExpressionType.Dynamic" />, and has the <see cref="P:System.Linq.Expressions.DynamicExpression.Binder" /> and <see cref="P:System.Linq.Expressions.DynamicExpression.Arguments" /> set to the specified values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Linq.Expressions.DynamicExpression.DelegateType%2A> property of the result is inferred from the types of the arguments and the specified return type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dynamic">
@@ -284,13 +312,20 @@
         <Parameter Name="arg1" Type="System.Linq.Expressions.Expression" />
       </Parameters>
       <Docs>
-        <param name="binder">To be added.</param>
-        <param name="returnType">To be added.</param>
-        <param name="arg0">To be added.</param>
-        <param name="arg1">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="binder">The runtime binder for the dynamic operation.</param>
+        <param name="returnType">The result type of the dynamic expression.</param>
+        <param name="arg0">The first argument to the dynamic operation.</param>
+        <param name="arg1">The second argument to the dynamic operation.</param>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.DynamicExpression" /> that represents a dynamic operation bound by the provided <see cref="T:System.Runtime.CompilerServices.CallSiteBinder" />.</summary>
+        <returns>A <see cref="T:System.Linq.Expressions.DynamicExpression" /> that has <see cref="P:System.Linq.Expressions.DynamicExpression.NodeType" /> equal to <see cref="F:System.Linq.Expressions.ExpressionType.Dynamic" />, and has the <see cref="P:System.Linq.Expressions.DynamicExpression.Binder" /> and <see cref="P:System.Linq.Expressions.DynamicExpression.Arguments" /> set to the specified values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Linq.Expressions.DynamicExpression.DelegateType%2A> property of the result is inferred from the types of the arguments and the specified return type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dynamic">
@@ -322,14 +357,21 @@
         <Parameter Name="arg2" Type="System.Linq.Expressions.Expression" />
       </Parameters>
       <Docs>
-        <param name="binder">To be added.</param>
-        <param name="returnType">To be added.</param>
-        <param name="arg0">To be added.</param>
-        <param name="arg1">To be added.</param>
-        <param name="arg2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="binder">The runtime binder for the dynamic operation.</param>
+        <param name="returnType">The result type of the dynamic expression.</param>
+        <param name="arg0">The first argument to the dynamic operation.</param>
+        <param name="arg1">The second argument to the dynamic operation.</param>
+        <param name="arg2">The third argument to the dynamic operation.</param>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.DynamicExpression" /> that represents a dynamic operation bound by the provided <see cref="T:System.Runtime.CompilerServices.CallSiteBinder" />.</summary>
+        <returns>A <see cref="T:System.Linq.Expressions.DynamicExpression" /> that has <see cref="P:System.Linq.Expressions.DynamicExpression.NodeType" /> equal to <see cref="F:System.Linq.Expressions.ExpressionType.Dynamic" />, and has the <see cref="P:System.Linq.Expressions.DynamicExpression.Binder" /> and <see cref="P:System.Linq.Expressions.DynamicExpression.Arguments" /> set to the specified values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Linq.Expressions.DynamicExpression.DelegateType%2A> property of the result is inferred from the types of the arguments and the specified return type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dynamic">
@@ -362,15 +404,22 @@
         <Parameter Name="arg3" Type="System.Linq.Expressions.Expression" />
       </Parameters>
       <Docs>
-        <param name="binder">To be added.</param>
-        <param name="returnType">To be added.</param>
-        <param name="arg0">To be added.</param>
-        <param name="arg1">To be added.</param>
-        <param name="arg2">To be added.</param>
-        <param name="arg3">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="binder">The runtime binder for the dynamic operation.</param>
+        <param name="returnType">The result type of the dynamic expression.</param>
+        <param name="arg0">The first argument to the dynamic operation.</param>
+        <param name="arg1">The second argument to the dynamic operation.</param>
+        <param name="arg2">The third argument to the dynamic operation.</param>
+        <param name="arg3">The fourth argument to the dynamic operation.</param>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.DynamicExpression" /> that represents a dynamic operation bound by the provided <see cref="T:System.Runtime.CompilerServices.CallSiteBinder" />.</summary>
+        <returns>A <see cref="T:System.Linq.Expressions.DynamicExpression" /> that has <see cref="P:System.Linq.Expressions.DynamicExpression.NodeType" /> equal to <see cref="F:System.Linq.Expressions.ExpressionType.Dynamic" />, and has the <see cref="P:System.Linq.Expressions.DynamicExpression.Binder" /> and <see cref="P:System.Linq.Expressions.DynamicExpression.Arguments" /> set to the specified values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Linq.Expressions.DynamicExpression.DelegateType%2A> property of the result is inferred from the types of the arguments and the specified return type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MakeDynamic">
@@ -400,11 +449,11 @@
         <Parameter Name="arguments" Type="System.Collections.Generic.IEnumerable&lt;System.Linq.Expressions.Expression&gt;" />
       </Parameters>
       <Docs>
-        <param name="delegateType">To be added.</param>
-        <param name="binder">To be added.</param>
-        <param name="arguments">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="delegateType">The type of the delegate used by the <see cref="T:System.Runtime.CompilerServices.CallSite" />.</param>
+        <param name="binder">The runtime binder for the dynamic operation.</param>
+        <param name="arguments">The arguments to the dynamic operation.</param>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.DynamicExpression" /> that represents a dynamic operation bound by the provided <see cref="T:System.Runtime.CompilerServices.CallSiteBinder" />.</summary>
+        <returns>A <see cref="T:System.Linq.Expressions.DynamicExpression" /> that has <see cref="P:System.Linq.Expressions.DynamicExpression.NodeType" /> equal to <see cref="F:System.Linq.Expressions.ExpressionType.Dynamic" />, and has the <see cref="P:System.Linq.Expressions.DynamicExpression.DelegateType" />, <see cref="P:System.Linq.Expressions.DynamicExpression.Binder" />, and <see cref="P:System.Linq.Expressions.DynamicExpression.Arguments" /> set to the specified values.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -435,11 +484,11 @@
         <Parameter Name="arg0" Type="System.Linq.Expressions.Expression" />
       </Parameters>
       <Docs>
-        <param name="delegateType">To be added.</param>
-        <param name="binder">To be added.</param>
-        <param name="arg0">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="delegateType">The type of the delegate used by the <see cref="T:System.Runtime.CompilerServices.CallSite" />.</param>
+        <param name="binder">The runtime binder for the dynamic operation.</param>
+        <param name="arg0">The argument to the dynamic operation.</param>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.DynamicExpression" /> that represents a dynamic operation bound by the provided <see cref="T:System.Runtime.CompilerServices.CallSiteBinder" /> and one argument.</summary>
+        <returns>A <see cref="T:System.Linq.Expressions.DynamicExpression" /> that has <see cref="P:System.Linq.Expressions.DynamicExpression.NodeType" /> equal to <see cref="F:System.Linq.Expressions.ExpressionType.Dynamic" />, and has the <see cref="P:System.Linq.Expressions.DynamicExpression.DelegateType" />, <see cref="P:System.Linq.Expressions.DynamicExpression.Binder" />, and <see cref="P:System.Linq.Expressions.DynamicExpression.Arguments" /> set to the specified values.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -476,11 +525,11 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="delegateType">To be added.</param>
-        <param name="binder">To be added.</param>
-        <param name="arguments">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="delegateType">The type of the delegate used by the <see cref="T:System.Runtime.CompilerServices.CallSite" />.</param>
+        <param name="binder">The runtime binder for the dynamic operation.</param>
+        <param name="arguments">The arguments to the dynamic operation.</param>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.DynamicExpression" /> that represents a dynamic operation bound by the provided <see cref="T:System.Runtime.CompilerServices.CallSiteBinder" />.</summary>
+        <returns>A <see cref="T:System.Linq.Expressions.DynamicExpression" /> that has <see cref="P:System.Linq.Expressions.DynamicExpression.NodeType" /> equal to <see cref="F:System.Linq.Expressions.ExpressionType.Dynamic" />, and has the <see cref="P:System.Linq.Expressions.DynamicExpression.DelegateType" />, <see cref="P:System.Linq.Expressions.DynamicExpression.Binder" />, and <see cref="P:System.Linq.Expressions.DynamicExpression.Arguments" /> set to the specified values.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -512,12 +561,12 @@
         <Parameter Name="arg1" Type="System.Linq.Expressions.Expression" />
       </Parameters>
       <Docs>
-        <param name="delegateType">To be added.</param>
-        <param name="binder">To be added.</param>
-        <param name="arg0">To be added.</param>
-        <param name="arg1">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="delegateType">The type of the delegate used by the <see cref="T:System.Runtime.CompilerServices.CallSite" />.</param>
+        <param name="binder">The runtime binder for the dynamic operation.</param>
+        <param name="arg0">The first argument to the dynamic operation.</param>
+        <param name="arg1">The second argument to the dynamic operation.</param>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.DynamicExpression" /> that represents a dynamic operation bound by the provided <see cref="T:System.Runtime.CompilerServices.CallSiteBinder" /> and two arguments.</summary>
+        <returns>A <see cref="T:System.Linq.Expressions.DynamicExpression" /> that has <see cref="P:System.Linq.Expressions.DynamicExpression.NodeType" /> equal to <see cref="F:System.Linq.Expressions.ExpressionType.Dynamic" />, and has the <see cref="P:System.Linq.Expressions.DynamicExpression.DelegateType" />, <see cref="P:System.Linq.Expressions.DynamicExpression.Binder" />, and <see cref="P:System.Linq.Expressions.DynamicExpression.Arguments" /> set to the specified values.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -550,13 +599,13 @@
         <Parameter Name="arg2" Type="System.Linq.Expressions.Expression" />
       </Parameters>
       <Docs>
-        <param name="delegateType">To be added.</param>
-        <param name="binder">To be added.</param>
-        <param name="arg0">To be added.</param>
-        <param name="arg1">To be added.</param>
-        <param name="arg2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="delegateType">The type of the delegate used by the <see cref="T:System.Runtime.CompilerServices.CallSite" />.</param>
+        <param name="binder">The runtime binder for the dynamic operation.</param>
+        <param name="arg0">The first argument to the dynamic operation.</param>
+        <param name="arg1">The second argument to the dynamic operation.</param>
+        <param name="arg2">The third argument to the dynamic operation.</param>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.DynamicExpression" /> that represents a dynamic operation bound by the provided <see cref="T:System.Runtime.CompilerServices.CallSiteBinder" /> and three arguments.</summary>
+        <returns>A <see cref="T:System.Linq.Expressions.DynamicExpression" /> that has <see cref="P:System.Linq.Expressions.DynamicExpression.NodeType" /> equal to <see cref="F:System.Linq.Expressions.ExpressionType.Dynamic" />, and has the <see cref="P:System.Linq.Expressions.DynamicExpression.DelegateType" />, <see cref="P:System.Linq.Expressions.DynamicExpression.Binder" />, and <see cref="P:System.Linq.Expressions.DynamicExpression.Arguments" /> set to the specified values.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -590,14 +639,14 @@
         <Parameter Name="arg3" Type="System.Linq.Expressions.Expression" />
       </Parameters>
       <Docs>
-        <param name="delegateType">To be added.</param>
-        <param name="binder">To be added.</param>
-        <param name="arg0">To be added.</param>
-        <param name="arg1">To be added.</param>
-        <param name="arg2">To be added.</param>
-        <param name="arg3">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="delegateType">The type of the delegate used by the <see cref="T:System.Runtime.CompilerServices.CallSite" />.</param>
+        <param name="binder">The runtime binder for the dynamic operation.</param>
+        <param name="arg0">The first argument to the dynamic operation.</param>
+        <param name="arg1">The second argument to the dynamic operation.</param>
+        <param name="arg2">The third argument to the dynamic operation.</param>
+        <param name="arg3">The fourth argument to the dynamic operation.</param>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.DynamicExpression" /> that represents a dynamic operation bound by the provided <see cref="T:System.Runtime.CompilerServices.CallSiteBinder" /> and four arguments.</summary>
+        <returns>A <see cref="T:System.Linq.Expressions.DynamicExpression" /> that has <see cref="P:System.Linq.Expressions.DynamicExpression.NodeType" /> equal to <see cref="F:System.Linq.Expressions.ExpressionType.Dynamic" />, and has the <see cref="P:System.Linq.Expressions.DynamicExpression.DelegateType" />, <see cref="P:System.Linq.Expressions.DynamicExpression.Binder" />, and <see cref="P:System.Linq.Expressions.DynamicExpression.Arguments" /> set to the specified values.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -623,8 +672,8 @@
         <ReturnType>System.Linq.Expressions.ExpressionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the node type of this expression. Extension nodes should return <see cref="F:System.Linq.Expressions.ExpressionType.Extension" /> when overriding this method.</summary>
+        <value>The <see cref="T:System.Linq.Expressions.ExpressionType" /> of the expression.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -650,8 +699,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the number of arguments to the expression tree node.  You should not use this member.  It is only public due to assembly refactoring, and it is used internally for performance optimizations.</summary>
+        <value>Returns <see cref="T:System.Int32" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -680,9 +729,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="index">The index of the argument.</param>
+        <summary>Returns the argument at index, throwing if index is out of bounds.  You should not use this member.  It is only public due to assembly refactoring, and it is used internally for performance optimizations.</summary>
+        <returns>Returns <see cref="T:System.Linq.Expressions.Expression" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -709,8 +758,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Optionally creates the CallSite and returns the CallSite for the DynamicExpression’s polymorphic inline cache.  You should not use this member.  It is only public due to assembly refactoring, and it is used internally for performance optimizations.</summary>
+        <returns>Returns <see cref="T:System.Object" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -739,9 +788,9 @@
         <Parameter Name="args" Type="System.Linq.Expressions.Expression[]" />
       </Parameters>
       <Docs>
-        <param name="args">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="args">The arguments.</param>
+        <summary>Rewrite this node replacing the dynamic expression’s arguments with the provided values.  The number of <c>args</c> needs to match the number of the current expression.  You should not use this type.  It is only public due to assembly refactoring, and it is used internally for performance optimizations.  This helper method allows re-writing of nodes to be independent of the specific implementation class deriving from DynamicExpression that is being used at the call site.</summary>
+        <returns>Returns <see cref="T:System.Linq.Expressions.Expression" />, the rewritten expression.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -767,8 +816,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the static type of the expression that this <see cref="T:System.Linq.Expressions.Expression" /> represents.</summary>
+        <value>The <see cref="P:System.Linq.Expressions.DynamicExpression.Type" /> that represents the static type of the expression.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -797,9 +846,9 @@
         <Parameter Name="arguments" Type="System.Collections.Generic.IEnumerable&lt;System.Linq.Expressions.Expression&gt;" />
       </Parameters>
       <Docs>
-        <param name="arguments">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="arguments">The <see cref="P:System.Linq.Expressions.DynamicExpression.Arguments" /> property of the result.</param>
+        <summary>Compares the value sent to the parameter, <c>arguments</c>, to the <see langword="Arguments" /> property of the current instance of <see langword="DynamicExpression" />. If the values of the parameter and the property are equal, the current instance is returned. If they are not equal, a new <see langword="DynamicExpression" /> instance is returned that is identical to the current instance except that the <see langword="Arguments" /> property is set to the value of parameter <c>arguments</c>.</summary>
+        <returns>This expression if no children are changed or an expression with the updated children.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

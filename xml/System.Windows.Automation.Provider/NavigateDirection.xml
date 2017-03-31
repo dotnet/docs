@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains values used to specify the direction of navigation within the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] tree.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,7 +35,7 @@
         <ReturnType>System.Windows.Automation.Provider.NavigateDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The navigation direction is to the first child.</summary>
       </Docs>
     </Member>
     <Member MemberName="LastChild">
@@ -51,7 +51,7 @@
         <ReturnType>System.Windows.Automation.Provider.NavigateDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The navigation direction is to the last child.</summary>
       </Docs>
     </Member>
     <Member MemberName="NextSibling">
@@ -67,7 +67,7 @@
         <ReturnType>System.Windows.Automation.Provider.NavigateDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The navigation direction is to the next sibling.</summary>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -83,7 +83,7 @@
         <ReturnType>System.Windows.Automation.Provider.NavigateDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The navigation direction is toward the parent.</summary>
       </Docs>
     </Member>
     <Member MemberName="PreviousSibling">
@@ -99,7 +99,7 @@
         <ReturnType>System.Windows.Automation.Provider.NavigateDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The navigation direction is to the previous sibling.</summary>
       </Docs>
     </Member>
   </Members>

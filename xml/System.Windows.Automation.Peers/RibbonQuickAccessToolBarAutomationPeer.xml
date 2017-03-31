@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Exposes <see cref="T:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar" /> types to [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)].</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,8 +32,8 @@
         <Parameter Name="owner" Type="System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar" />
       </Parameters>
       <Docs>
-        <param name="owner">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="owner">The element associated with this automation peer.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.RibbonQuickAccessToolBarAutomationPeer" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +51,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Hides all items that are in the <see cref="T:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonQuickAccessToolBarAutomationPeer" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar" /> does not have items in the overflow menu.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateItemAutomationPeer">
@@ -71,9 +72,9 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">An object that is in the <see cref="T:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonQuickAccessToolBarAutomationPeer" />.</param>
+        <summary>Creates a new <see cref="T:System.Windows.Automation.Peers.RibbonControlDataAutomationPeer" /> for the specified item.</summary>
+        <returns>A <see cref="T:System.Windows.Automation.Peers.RibbonControlDataAutomationPeer" /> for the specified item.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,8 +92,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Displays all items that are in the <see cref="T:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonQuickAccessToolBarAutomationPeer" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar" /> does not have items in the overflow menu.</exception>
       </Docs>
     </Member>
     <Member MemberName="ExpandCollapseState">
@@ -108,8 +110,8 @@
         <ReturnType>System.Windows.Automation.ExpandCollapseState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the state, expanded or collapsed, of the <see cref="T:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonQuickAccessToolBarAutomationPeer" />.</summary>
+        <value>The state of the <see cref="T:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonQuickAccessToolBarAutomationPeer" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -127,8 +129,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the control type for the <see cref="T:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonQuickAccessToolBarAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" />.</summary>
+        <returns>The <see cref="F:System.Windows.Automation.Peers.AutomationControlType.ToolBar" /> enumeration value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,8 +148,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the collection of child elements of the <see cref="T:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonQuickAccessToolBarAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetChildren" />.</summary>
+        <returns>The collection of child elements of the <see cref="T:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonQuickAccessToolBarAutomationPeer" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -165,8 +167,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the class name of the <see cref="T:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonQuickAccessToolBarAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" />.</summary>
+        <returns>The class name of the <see cref="T:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonQuickAccessToolBarAutomationPeer" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,9 +188,9 @@
         <Parameter Name="patternInterface" Type="System.Windows.Automation.Peers.PatternInterface" />
       </Parameters>
       <Docs>
-        <param name="patternInterface">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="patternInterface">A value enumeration that specifies the control pattern.</param>
+        <summary>Gets the control pattern for the <see cref="T:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar" /> that is associated with the <see cref="T:System.Windows.Automation.Peers.RibbonQuickAccessToolBarAutomationPeer" />.</summary>
+        <returns>An object that supports the control pattern if <paramref name="patternInterface" /> is the <see cref="F:System.Windows.Automation.Peers.PatternInterface.Scroll" />, <see cref="F:System.Windows.Automation.Peers.PatternInterface.ItemContainer" />, <see cref="F:System.Windows.Automation.Peers.PatternInterface.SynchronizedInput" /> value, or if the <see cref="T:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar" /> has items in the overflow menu and <paramref name="patternInterface" /> is the <see cref="F:System.Windows.Automation.Peers.PatternInterface.ExpandCollapse" /> value; otherwise, <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

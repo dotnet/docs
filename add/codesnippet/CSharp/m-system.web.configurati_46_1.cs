@@ -1,2 +1,0 @@
-            AuthenticationSection newauthenticationSection = 
-                new AuthenticationSection();

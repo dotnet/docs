@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Converts instances of <see cref="T:System.Activities.Argument" /> to instances of <see cref="T:System.String" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.XamlIntegration.ArgumentValueSerializer" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,10 +47,11 @@
         <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The object to evaluate for conversion.</param>
+        <param name="context">Context information that is used for conversion.</param>
+        <summary>Determines whether the specified object can be converted into a <see cref="T:System.String" />.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="value" /> can be converted into a <see cref="T:System.String" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,10 +72,10 @@
         <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The object to convert into a <see cref="T:System.String" />.</param>
+        <param name="context">Context information that is used for conversion.</param>
+        <summary>Converts the specified object to a <see cref="T:System.String" />.</summary>
+        <returns>A <see cref="T:System.String" /> representation of the specified object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

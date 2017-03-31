@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines identifiers used to specify behavior of a <see cref="T:System.Windows.Forms.Design.FolderNameEditor.FolderBrowser" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>System.Windows.Forms.Design.FolderNameEditor+FolderBrowserStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The folder browser can only return computers. If the user selects anything other than a computer, the **OK** button is grayed.</summary>
       </Docs>
     </Member>
     <Member MemberName="BrowseForEverything">
@@ -48,7 +48,7 @@
         <ReturnType>System.Windows.Forms.Design.FolderNameEditor+FolderBrowserStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The folder browser can return any object that it can return.</summary>
       </Docs>
     </Member>
     <Member MemberName="BrowseForPrinter">
@@ -64,7 +64,7 @@
         <ReturnType>System.Windows.Forms.Design.FolderNameEditor+FolderBrowserStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The folder browser can only return printers. If the user selects anything other than a printer, the **OK** button is grayed.</summary>
       </Docs>
     </Member>
     <Member MemberName="RestrictToDomain">
@@ -80,7 +80,7 @@
         <ReturnType>System.Windows.Forms.Design.FolderNameEditor+FolderBrowserStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The folder browser will not include network folders below the domain level in the dialog box's tree view control, or allow navigation to network locations outside of the domain.</summary>
       </Docs>
     </Member>
     <Member MemberName="RestrictToFilesystem">
@@ -96,7 +96,7 @@
         <ReturnType>System.Windows.Forms.Design.FolderNameEditor+FolderBrowserStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The folder browser will only return local file system directories. If the user selects folders that are not part of the local file system, the **OK** button is grayed.</summary>
       </Docs>
     </Member>
     <Member MemberName="RestrictToSubfolders">
@@ -112,7 +112,7 @@
         <ReturnType>System.Windows.Forms.Design.FolderNameEditor+FolderBrowserStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The folder browser will only return obejcts of the local file system that are within the root folder or a subfolder of the root folder. If the user selects a subfolder of the root folder that is not part of the local file system, the **OK** button is grayed.</summary>
       </Docs>
     </Member>
     <Member MemberName="ShowTextBox">
@@ -128,7 +128,7 @@
         <ReturnType>System.Windows.Forms.Design.FolderNameEditor+FolderBrowserStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The folder browser includes a <see cref="T:System.Windows.Forms.TextBox" /> control in the browse dialog box that allows the user to type the name of an item.</summary>
       </Docs>
     </Member>
   </Members>

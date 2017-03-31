@@ -1,4 +1,5 @@
 ---
 uid: System.Net.Mime.MediaTypeNames
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the base class for classes that perform operations on two operands, such as <see cref="T:Microsoft.JScript.Plus" />, <see cref="T:Microsoft.JScript.Equality" />, and <see cref="T:Microsoft.JScript.Relational" />. This class belongs to the abstract syntax tree category.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,10 +32,10 @@
         <Parameter Name="ir2" Type="System.Reflection.IReflect" />
       </Parameters>
       <Docs>
-        <param name="ir1">To be added.</param>
-        <param name="ir2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="ir1">The data type of the first operand.</param>
+        <param name="ir2">The data type of the second operand.</param>
+        <summary>Determines the best method to call based on the operation that is requested and the data types of the operands.</summary>
+        <returns>The recommended method to call on the operands.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,7 +52,7 @@
         <ReturnType>Microsoft.JScript.AST</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the first operand of the operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,7 +69,7 @@
         <ReturnType>Microsoft.JScript.AST</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the second operand of the operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,7 +86,7 @@
         <ReturnType>System.Reflection.MethodInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the operation that is actually performed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,7 +103,7 @@
         <ReturnType>Microsoft.JScript.JSToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the operation that is requested. One of the <see cref="T:Microsoft.JScript.JSToken" /> enumeration values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,7 +120,7 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the data type of the first operand of the operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,7 +137,7 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the data type of the second operand of the operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

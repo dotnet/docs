@@ -1,24 +1,34 @@
 ---
 uid: System.Runtime.Serialization.Configuration.SerializationSectionGroup
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.Serialization.Configuration.SerializationSectionGroup.DataContractSerializer
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.Serialization.Configuration.SerializationSectionGroup.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.Serialization.Configuration.SerializationSectionGroup.NetDataContractSerializer
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.Serialization.Configuration.SerializationSectionGroup.GetSectionGroup(System.Configuration.Configuration)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.WebControls.BulletedListEventArgs
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.BulletedListEventArgs.#ctor(System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.BulletedListEventArgs.Index
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

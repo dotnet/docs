@@ -1,79 +1,88 @@
 ---
 uid: Microsoft.JScript.COMFieldInfo
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMFieldInfo.#ctor
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMFieldInfo.DeclaringType
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMFieldInfo.IsDefined(System.Type,System.Boolean)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMFieldInfo.Initialize(System.String,Microsoft.JScript.COMMemberInfo)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMFieldInfo.FieldType
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMFieldInfo.Name
-internalonly: False
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.COMFieldInfo.GetCustomAttributes
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMFieldInfo.SetValue(System.Object,System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Globalization.CultureInfo)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMFieldInfo.GetCustomAttributes(System.Boolean)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMFieldInfo.FieldHandle
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMFieldInfo.GetCOMMemberInfo
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMFieldInfo.GetValue(System.Object)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMFieldInfo.ReflectedType
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMFieldInfo.GetCustomAttributes(System.Type,System.Boolean)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMFieldInfo.Attributes
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMFieldInfo.MemberType
-internalonly: False
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.COMFieldInfo.SetValue
 ---

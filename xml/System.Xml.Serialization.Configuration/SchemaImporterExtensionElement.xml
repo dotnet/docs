@@ -11,8 +11,23 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Handles the configuration for the <see cref="T:System.Xml.Serialization.XmlSchemaImporter" /> class. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used by the serialization infrastructure to handle the configuration elements and cannot be used directly. For more information about configuration files, see [Configuration File Schema](../Topic/Configuration%20File%20Schema%20for%20the%20.NET%20Framework.md).  
+  
+ Instead, to configure the <xref:System.Xml.Serialization.XmlSchemaImporter>, create an application configuration file and use the following XML elements to specify types used by the class when mapping XSD types to .Net Framework types:  
+  
+-   [\&lt;system.xml.serialization\&gt; Element](../Topic/%3Csystem.xml.serialization%3E%20Element.md)  
+  
+-   [\&lt;schemaImporterExtensions\&gt; Element](../Topic/%3CschemaImporterExtensions%3E%20Element.md)  
+  
+-   [\&lt;add\&gt; Element for \&lt;xmlSchemaImporterExtensions\&gt;](../Topic/%3Cadd%3E%20Element%20for%20%3CxmlSchemaImporterExtensions%3E.md)  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +41,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.Configuration.SchemaImporterExtensionElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,9 +59,9 @@
         <Parameter Name="type" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the new extension. The name must be unique.</param>
+        <param name="type">The type of the new extension, specified as a string.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.Configuration.SchemaImporterExtensionElement" /> class and specifies the name and type of the extension.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,9 +79,9 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the new extension. The name must be unique.</param>
+        <param name="type">The <see cref="T:System.Type" /> of the new extension.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.Configuration.SchemaImporterExtensionElement" /> class using the specified name and type.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,9 +103,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the extension.</summary>
+        <value>The name of the extension.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The name must be unique.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -132,8 +154,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the type of the extension.</summary>
+        <value>A type of the extension.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

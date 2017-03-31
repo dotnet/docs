@@ -1,4 +1,5 @@
 ---
 uid: System.Speech.AudioFormat
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

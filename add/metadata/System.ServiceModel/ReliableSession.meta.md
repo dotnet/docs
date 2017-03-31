@@ -1,24 +1,41 @@
 ---
 uid: System.ServiceModel.ReliableSession
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.ReliableSession.#ctor(System.ServiceModel.Channels.ReliableSessionBindingElement)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.ReliableSession.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.ReliableSession.InactivityTimeout
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.ReliableSession.Ordered
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.ReliableSession.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -1,19 +1,34 @@
 ---
 uid: System.Data.Common.CommandTrees.DbParameterReferenceExpression
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DbParameterReferenceExpression.Accept(System.Data.Common.CommandTrees.DbExpressionVisitor)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DbParameterReferenceExpression.ParameterName
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DbParameterReferenceExpression.Accept``1(System.Data.Common.CommandTrees.DbExpressionVisitor{``0})
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Common.CommandTrees.DbParameterReferenceExpression.Accept
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

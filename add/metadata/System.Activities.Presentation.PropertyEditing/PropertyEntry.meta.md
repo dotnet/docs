@@ -1,119 +1,181 @@
 ---
 uid: System.Activities.Presentation.PropertyEditing.PropertyEntry
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.PropertyEditing.PropertyEntry.IsReadOnly
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.PropertyEditing.PropertyEntry.PropertyChanged
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.PropertyEditing.PropertyEntry.IsAdvanced
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Presentation.PropertyEditing.PropertyEntry.OnPropertyChanged
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.PropertyEditing.PropertyEntry.Description
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.PropertyEditing.PropertyEntry.MatchesPredicate(System.Activities.Presentation.PropertyEditing.PropertyFilterPredicate)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.PropertyEditing.PropertyEntry.PropertyValue
-internalonly: False
----
-
----
-uid: System.Activities.Presentation.PropertyEditing.PropertyEntry.CreatePropertyValueInstance
-internalonly: False
----
-
----
-uid: System.Activities.Presentation.PropertyEditing.PropertyEntry.OnFilterApplied(System.Activities.Presentation.PropertyEditing.PropertyFilter)
-internalonly: False
----
-
----
-uid: System.Activities.Presentation.PropertyEditing.PropertyEntry.MatchesFilter
-internalonly: False
----
-
----
-uid: System.Activities.Presentation.PropertyEditing.PropertyEntry.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
-internalonly: False
----
-
----
-uid: System.Activities.Presentation.PropertyEditing.PropertyEntry.PropertyType
-internalonly: False
----
-
----
-uid: System.Activities.Presentation.PropertyEditing.PropertyEntry.PropertyName
-internalonly: False
----
-
----
-uid: System.Activities.Presentation.PropertyEditing.PropertyEntry.ParentValue
-internalonly: False
----
-
----
-uid: System.Activities.Presentation.PropertyEditing.PropertyEntry.CategoryName
-internalonly: False
----
-
----
-uid: System.Activities.Presentation.PropertyEditing.PropertyEntry.PropertyValueEditor
-internalonly: False
----
-
----
-uid: System.Activities.Presentation.PropertyEditing.PropertyEntry.HasStandardValues
-internalonly: False
----
-
----
-uid: System.Activities.Presentation.PropertyEditing.PropertyEntry.StandardValues
-internalonly: False
----
-
----
-uid: System.Activities.Presentation.PropertyEditing.PropertyEntry.ApplyFilter(System.Activities.Presentation.PropertyEditing.PropertyFilter)
-internalonly: False
----
-
----
-uid: System.Activities.Presentation.PropertyEditing.PropertyEntry.#ctor(System.Activities.Presentation.PropertyEditing.PropertyValue)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.PropertyEditing.PropertyEntry.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Presentation.PropertyEditing.PropertyEntry.CreatePropertyValueInstance
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Presentation.PropertyEditing.PropertyEntry.OnFilterApplied(System.Activities.Presentation.PropertyEditing.PropertyFilter)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Presentation.PropertyEditing.PropertyEntry.MatchesFilter
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Presentation.PropertyEditing.PropertyEntry.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Presentation.PropertyEditing.PropertyEntry.PropertyType
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Presentation.PropertyEditing.PropertyEntry.PropertyName
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Presentation.PropertyEditing.PropertyEntry.ParentValue
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Presentation.PropertyEditing.PropertyEntry.CategoryName
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Presentation.PropertyEditing.PropertyEntry.PropertyValueEditor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Presentation.PropertyEditing.PropertyEntry.HasStandardValues
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Presentation.PropertyEditing.PropertyEntry.StandardValues
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Presentation.PropertyEditing.PropertyEntry.ApplyFilter(System.Activities.Presentation.PropertyEditing.PropertyFilter)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Presentation.PropertyEditing.PropertyEntry.#ctor(System.Activities.Presentation.PropertyEditing.PropertyValue)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Presentation.PropertyEditing.PropertyEntry.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.PropertyEditing.PropertyEntry.OnPropertyChanged(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.PropertyEditing.PropertyEntry.DisplayName
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.PropertyEditing.PropertyEntry.FilterApplied
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

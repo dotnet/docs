@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.DataVisualization.Charting.CustomizeMapAreasEventArgs
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.CustomizeMapAreasEventArgs.#ctor(System.Web.UI.DataVisualization.Charting.MapAreasCollection)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.CustomizeMapAreasEventArgs.MapAreaItems
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---

@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a text annotation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Note that other annotations, such as rectangle and ellipse annotations, can display inner text.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.TextAnnotation" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,9 +64,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the annotation type.</summary>
+        <value>The annotation type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For internal use, should not be used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BackColor">
@@ -92,9 +106,16 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not applicable to the text annotation type.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not applicable to the text annotation type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BackGradientStyle">
@@ -124,9 +145,16 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.GradientStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not applicable to the text annotation type.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.GradientStyle" /> enumeration value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not applicable to the text annotation type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BackHatchStyle">
@@ -156,9 +184,16 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not applicable to the text annotation type.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle" /> enumeration value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not applicable to the text annotation type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BackSecondaryColor">
@@ -191,9 +226,16 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not applicable to the text annotation type.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not applicable to the text annotation type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginTextEditing">
@@ -210,8 +252,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Begins editing of the annotation text by an end-user.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ After calling this method, the annotation displays an editing box that allows the user to edit the annotation text.  
+  
+ Call the <xref:System.Windows.Forms.DataVisualization.Charting.TextAnnotation.StopTextEditing%2A> method to cancel this mode programmatically. Note that editing also ends when the end-user hits the Enter key if the value of the <xref:System.Windows.Forms.DataVisualization.Charting.TextAnnotation.IsMultiline%2A> property is `false`, or when the end-user clicks outside the editing box if the value is `true`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EndPlacement">
@@ -228,8 +279,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Ends user placement of an annotation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Ends an annotation placement operation previously started by a <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.BeginPlacement%2A> method call. You are not required to call this method, because placement will automatically end when an end-user enters all required points. However, it is useful when an annotation placement operation needs to be aborted for some reason.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -250,9 +308,16 @@
         <ReturnType>System.Drawing.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the font for the annotation text.</summary>
+        <value>A <see cref="T:System.Drawing.Font" /> object used as the font for the annotation text.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To set this property, create a new <xref:System.Drawing.Font> object, and then assign it to this property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsMultiline">
@@ -273,8 +338,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a flag that indicates whether the annotation text is multiline.</summary>
+        <value>
+          <see langword="True" /> if the annotation text is multiline; otherwise, <see langword="False" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -305,9 +371,16 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not applicable to the text annotation type.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not applicable to the text annotation type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LineDashStyle">
@@ -331,9 +404,16 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartDashStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not applicable to the text annotation type.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartDashStyle" /> enumeration value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not applicable to the text annotation type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LineWidth">
@@ -357,9 +437,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not applicable to the text annotation type.</summary>
+        <value>An <see langword="integer" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not applicable to the text annotation type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StopTextEditing">
@@ -376,8 +463,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Stops end-user editing of the annotation text.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call this method to cancel a text editing operation that was started with a call to the <xref:System.Windows.Forms.DataVisualization.Charting.TextAnnotation.BeginTextEditing%2A> method.  
+  
+ Note that if the end user double-clicks the annotation, the <xref:System.Windows.Forms.DataVisualization.Charting.TextAnnotation.BeginTextEditing%2A> method will be automatically called.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -398,8 +494,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the text of the annotation.</summary>
+        <value>A <see langword="string" /> value that represents the text.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

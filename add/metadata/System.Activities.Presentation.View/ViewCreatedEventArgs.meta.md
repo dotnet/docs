@@ -1,14 +1,20 @@
 ---
 uid: System.Activities.Presentation.View.ViewCreatedEventArgs
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.View.ViewCreatedEventArgs.View
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.View.ViewCreatedEventArgs.#ctor(System.Activities.Presentation.WorkflowViewElement)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

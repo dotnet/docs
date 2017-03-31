@@ -16,8 +16,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Raises an <see cref="T:System.Exception" /> if the closing tag for a template associated with a <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.WebItem" /> is missing.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:Microsoft.VisualBasic.Compatibility.VB6.WebClass> class is used by the upgrade tools to upgrade a Visual Basic 6.0 `WebClass` project to an [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] Web-site project.  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,9 +42,18 @@
         <Parameter Name="TagName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="TagName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="TagName">A <see cref="T:System.String" /> that contains the name of the tag.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.WebItemClosingTagNotFound" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:Microsoft.VisualBasic.Compatibility.VB6.WebClass> class is used by the upgrade tools to upgrade a Visual Basic 6.0 `WebClass` project to an [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] Web-site project.  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

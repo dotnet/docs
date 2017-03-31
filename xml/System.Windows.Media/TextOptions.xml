@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines a set of attached properties that affect the way text is displayed in an element.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,9 +31,9 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The element to get the <see cref="T:System.Windows.Media.TextFormattingMode" /> for.</param>
+        <summary>Gets the <see cref="T:System.Windows.Media.TextFormattingMode" /> for the specified element.</summary>
+        <returns>The <see cref="T:System.Windows.Media.TextFormattingMode" /> for <paramref name="element" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,9 +53,9 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The element to get the <see cref="T:System.Windows.Media.TextHintingMode" /> for.</param>
+        <summary>Gets the <see cref="T:System.Windows.Media.TextHintingMode" /> for the specified element.</summary>
+        <returns>The <see cref="T:System.Windows.Media.TextHintingMode" /> for <paramref name="element" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,9 +75,9 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The element to get the <see cref="T:System.Windows.Media.TextRenderingMode" /> for.</param>
+        <summary>Gets the <see cref="T:System.Windows.Media.TextRenderingMode" /> for the specified element.</summary>
+        <returns>The <see cref="T:System.Windows.Media.TextRenderingMode" /> for <paramref name="element" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,10 +98,12 @@
         <Parameter Name="value" Type="System.Windows.Media.TextFormattingMode" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The element to set the <see cref="T:System.Windows.Media.TextFormattingMode" /> for.</param>
+        <param name="value">The <see cref="T:System.Windows.Media.TextFormattingMode" /> to set on <c>element</c>.</param>
+        <summary>Sets the <see cref="T:System.Windows.Media.TextFormattingMode" /> for the specified element.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetTextHintingMode">
@@ -121,10 +123,12 @@
         <Parameter Name="value" Type="System.Windows.Media.TextHintingMode" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The element to set the <see cref="T:System.Windows.Media.TextHintingMode" /> for.</param>
+        <param name="value">The <see cref="T:System.Windows.Media.TextHintingMode" /> to set on <c>element</c>.</param>
+        <summary>Sets the <see cref="T:System.Windows.Media.TextHintingMode" /> for the specified element.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetTextRenderingMode">
@@ -144,10 +148,12 @@
         <Parameter Name="value" Type="System.Windows.Media.TextRenderingMode" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The element to set the <see cref="T:System.Windows.Media.TextRenderingMode" /> for.</param>
+        <param name="value">The <see cref="T:System.Windows.Media.TextRenderingMode" /> to set on <c>element</c>.</param>
+        <summary>Sets the <see cref="T:System.Windows.Media.TextRenderingMode" /> for the specified element.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="TextFormattingModeProperty">
@@ -163,7 +169,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Media.TextOptions.TextFormattingMode" /> attached property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -180,7 +186,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Media.TextOptions.TextHintingMode" /> attached property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -197,7 +203,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Media.TextOptions.TextRenderingMode" /> attached property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

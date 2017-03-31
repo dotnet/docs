@@ -1,1 +1,0 @@
-      Return Me.UtcDateTime = other.UtcDateTime

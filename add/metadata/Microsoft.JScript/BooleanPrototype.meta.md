@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.JScript.BooleanPrototype
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.BooleanPrototype.toString(System.Object)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.BooleanPrototype.constructor
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.BooleanPrototype.valueOf(System.Object)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.BooleanPrototype.#ctor(Microsoft.JScript.ObjectPrototype,System.Type)
-internalonly: False
+ms.author: "mikejo"
 ---

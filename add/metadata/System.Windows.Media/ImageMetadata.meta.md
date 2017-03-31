@@ -1,9 +1,12 @@
 ---
 uid: System.Windows.Media.ImageMetadata
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.ImageMetadata.Clone
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

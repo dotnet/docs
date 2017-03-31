@@ -1,9 +1,11 @@
 ---
 uid: System.Web.UI.WebControls.FormViewPagerRow
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.FormViewPagerRow.#ctor(System.Int32,System.Web.UI.WebControls.DataControlRowType,System.Web.UI.WebControls.DataControlRowState)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

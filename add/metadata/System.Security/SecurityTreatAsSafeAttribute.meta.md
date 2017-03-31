@@ -1,9 +1,13 @@
 ---
 uid: System.Security.SecurityTreatAsSafeAttribute
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.SecurityTreatAsSafeAttribute.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

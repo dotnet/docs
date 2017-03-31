@@ -1,29 +1,29 @@
 ---
 uid: Microsoft.JScript.LenientEnumeratorPrototype
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.LenientEnumeratorPrototype.atEnd
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.LenientEnumeratorPrototype.moveNext
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.LenientEnumeratorPrototype.moveFirst
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.LenientEnumeratorPrototype.constructor
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.LenientEnumeratorPrototype.item
-internalonly: False
+ms.author: "mikejo"
 ---

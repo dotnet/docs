@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Supports the page parser in building controls that are connected to a data provider. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataSourceControlBuilder> class extends <xref:System.Web.UI.ControlBuilder> by overriding the <xref:System.Web.UI.DataSourceControlBuilder.AllowWhitespaceLiterals%2A> method to return `false`. <xref:System.Web.UI.DataSourceControlBuilder> ensures that white-space literals are trimmed from the content.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataSourceControlBuilder" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,9 +51,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Determines whether white-space literals are permitted in the content between a control's opening and closing tags.</summary>
+        <returns>Always <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataSourceControlBuilder.AllowWhitespaceLiterals%2A> method is used to determine whether white-space literals are permitted in the content between the opening and closing tags of a control. <xref:System.Web.UI.DataSourceControlBuilder> always returns `false` in this method, which means the white-space literals are trimmed from the content before the content is processed by the page parser.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

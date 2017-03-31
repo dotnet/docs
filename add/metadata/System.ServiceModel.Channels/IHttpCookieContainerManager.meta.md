@@ -1,9 +1,13 @@
 ---
 uid: System.ServiceModel.Channels.IHttpCookieContainerManager
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.IHttpCookieContainerManager.CookieContainer
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

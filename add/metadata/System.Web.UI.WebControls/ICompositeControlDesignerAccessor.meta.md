@@ -1,9 +1,13 @@
 ---
 uid: System.Web.UI.WebControls.ICompositeControlDesignerAccessor
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.ICompositeControlDesignerAccessor.RecreateChildControls
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

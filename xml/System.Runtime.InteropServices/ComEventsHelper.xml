@@ -24,7 +24,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides methods that enable .NET Framework delegates that handle events to be added and removed from COM objects.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -60,12 +60,13 @@
         <Parameter Name="d" Type="System.Delegate" />
       </Parameters>
       <Docs>
-        <param name="rcw">To be added.</param>
-        <param name="iid">To be added.</param>
-        <param name="dispid">To be added.</param>
-        <param name="d">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="rcw">The COM object that triggers the events the caller would like to respond to.</param>
+        <param name="iid">The identifier of the source interface used by the COM object to trigger events.</param>
+        <param name="dispid">The dispatch identifier of the method on the source interface.</param>
+        <param name="d">The delegate to invoke when the COM event is fired.</param>
+        <summary>Adds a delegate to the invocation list of events originating from a COM object.</summary>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -100,13 +101,14 @@
         <Parameter Name="d" Type="System.Delegate" />
       </Parameters>
       <Docs>
-        <param name="rcw">To be added.</param>
-        <param name="iid">To be added.</param>
-        <param name="dispid">To be added.</param>
-        <param name="d">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="rcw">The COM object the delegate is attached to.</param>
+        <param name="iid">The identifier of the source interface used by the COM object to trigger events.</param>
+        <param name="dispid">The dispatch identifier of the method on the source interface.</param>
+        <param name="d">The delegate to remove from the invocation list.</param>
+        <summary>Removes a delegate from the invocation list of events originating from a COM object.</summary>
+        <returns>The delegate that was removed from the invocation list.</returns>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
       </Docs>
     </Member>
   </Members>

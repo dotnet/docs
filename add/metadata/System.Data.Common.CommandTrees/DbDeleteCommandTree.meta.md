@@ -1,9 +1,13 @@
 ---
 uid: System.Data.Common.CommandTrees.DbDeleteCommandTree
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DbDeleteCommandTree.Predicate
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

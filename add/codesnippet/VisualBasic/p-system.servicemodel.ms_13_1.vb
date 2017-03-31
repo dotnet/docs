@@ -1,1 +1,0 @@
-            message.Priority = MessagePriority.Normal

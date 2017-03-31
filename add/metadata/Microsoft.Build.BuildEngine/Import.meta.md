@@ -1,24 +1,29 @@
 ---
 uid: Microsoft.Build.BuildEngine.Import
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.BuildEngine.Import.IsImported
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.BuildEngine.Import.Condition
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.BuildEngine.Import.EvaluatedProjectPath
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.BuildEngine.Import.ProjectPath
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

@@ -1,29 +1,48 @@
 ---
 uid: System.Windows.Media.Animation.LinearPoint3DKeyFrame
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.LinearPoint3DKeyFrame.#ctor(System.Windows.Media.Media3D.Point3D)
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.LinearPoint3DKeyFrame.InterpolateValueCore(System.Windows.Media.Media3D.Point3D,System.Double)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.LinearPoint3DKeyFrame.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.LinearPoint3DKeyFrame.InterpolateValueCore(System.Windows.Media.Media3D.Point3D,System.Double)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.LinearPoint3DKeyFrame.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.LinearPoint3DKeyFrame.CreateInstanceCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.LinearPoint3DKeyFrame.#ctor(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Animation.KeyTime)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -1,39 +1,39 @@
 ---
 uid: Microsoft.JScript.BinaryOp
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.BinaryOp.type1
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.BinaryOp.operand1
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.BinaryOp.operand2
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.BinaryOp.type2
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.BinaryOp.GetOperator(System.Reflection.IReflect,System.Reflection.IReflect)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.BinaryOp.operatorMeth
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.BinaryOp.operatorTok
-internalonly: False
+ms.author: "mikejo"
 ---

@@ -1,4 +1,6 @@
 ---
 uid: System.Func`13
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

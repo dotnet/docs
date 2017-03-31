@@ -18,8 +18,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the possible key values on a keyboard.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Information pertaining to key input can be obtained in several different ways in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)].  Key-related events, such as <xref:System.Windows.UIElement.KeyDown> and <xref:System.Windows.UIElement.KeyUp>, provide key state information through the ventArgs object that is passed to the event handler.  Key state information can also be obtained through the static methods on the oard class, such as oard.IsKeyUp(System.Windows.Input.Key) and oard.GetKeyStates(System.Windows.Input.Key).  The oard class reports the current state of the keyboard.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="A">
@@ -35,7 +42,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The A key.</summary>
       </Docs>
     </Member>
     <Member MemberName="AbntC1">
@@ -51,7 +58,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The ABNT_C1 (Brazilian) key.</summary>
       </Docs>
     </Member>
     <Member MemberName="AbntC2">
@@ -67,7 +74,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The ABNT_C2 (Brazilian) key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -83,7 +90,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Add key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Apps">
@@ -99,7 +106,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Application key (Microsoft Natural Keyboard).</summary>
       </Docs>
     </Member>
     <Member MemberName="Attn">
@@ -115,7 +122,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The ATTN key.</summary>
       </Docs>
     </Member>
     <Member MemberName="B">
@@ -131,7 +138,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The B key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Back">
@@ -147,7 +154,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Backspace key.</summary>
       </Docs>
     </Member>
     <Member MemberName="BrowserBack">
@@ -163,7 +170,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Browser Back key.</summary>
       </Docs>
     </Member>
     <Member MemberName="BrowserFavorites">
@@ -179,7 +186,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Browser Favorites key.</summary>
       </Docs>
     </Member>
     <Member MemberName="BrowserForward">
@@ -195,7 +202,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Browser Forward key.</summary>
       </Docs>
     </Member>
     <Member MemberName="BrowserHome">
@@ -211,7 +218,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Browser Home key.</summary>
       </Docs>
     </Member>
     <Member MemberName="BrowserRefresh">
@@ -227,7 +234,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Browser Refresh key.</summary>
       </Docs>
     </Member>
     <Member MemberName="BrowserSearch">
@@ -243,7 +250,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Browser Search key.</summary>
       </Docs>
     </Member>
     <Member MemberName="BrowserStop">
@@ -259,7 +266,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Browser Stop key.</summary>
       </Docs>
     </Member>
     <Member MemberName="C">
@@ -275,7 +282,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The C key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Cancel">
@@ -291,7 +298,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Cancel key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Capital">
@@ -307,7 +314,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Caps Lock key.</summary>
       </Docs>
     </Member>
     <Member MemberName="CapsLock">
@@ -323,7 +330,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Caps Lock key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -339,7 +346,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Clear key.</summary>
       </Docs>
     </Member>
     <Member MemberName="CrSel">
@@ -355,7 +362,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The CRSEL key.</summary>
       </Docs>
     </Member>
     <Member MemberName="D">
@@ -371,7 +378,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The D key.</summary>
       </Docs>
     </Member>
     <Member MemberName="D0">
@@ -387,7 +394,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The 0 (zero) key.</summary>
       </Docs>
     </Member>
     <Member MemberName="D1">
@@ -403,7 +410,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The 1 (one) key.</summary>
       </Docs>
     </Member>
     <Member MemberName="D2">
@@ -419,7 +426,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The 2 key.</summary>
       </Docs>
     </Member>
     <Member MemberName="D3">
@@ -435,7 +442,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The 3 key.</summary>
       </Docs>
     </Member>
     <Member MemberName="D4">
@@ -451,7 +458,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The 4 key.</summary>
       </Docs>
     </Member>
     <Member MemberName="D5">
@@ -467,7 +474,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The 5 key.</summary>
       </Docs>
     </Member>
     <Member MemberName="D6">
@@ -483,7 +490,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The 6 key.</summary>
       </Docs>
     </Member>
     <Member MemberName="D7">
@@ -499,7 +506,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The 7 key.</summary>
       </Docs>
     </Member>
     <Member MemberName="D8">
@@ -515,7 +522,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The 8 key.</summary>
       </Docs>
     </Member>
     <Member MemberName="D9">
@@ -531,7 +538,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The 9 key.</summary>
       </Docs>
     </Member>
     <Member MemberName="DbeAlphanumeric">
@@ -547,7 +554,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The DBE_ALPHANUMERIC key.</summary>
       </Docs>
     </Member>
     <Member MemberName="DbeCodeInput">
@@ -563,7 +570,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The DBE_CODEINPUT key.</summary>
       </Docs>
     </Member>
     <Member MemberName="DbeDbcsChar">
@@ -579,7 +586,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The DBE_DBCSCHAR key.</summary>
       </Docs>
     </Member>
     <Member MemberName="DbeDetermineString">
@@ -595,7 +602,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The DBE_DETERMINESTRING key.</summary>
       </Docs>
     </Member>
     <Member MemberName="DbeEnterDialogConversionMode">
@@ -611,7 +618,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The DBE_ENTERDLGCONVERSIONMODE key.</summary>
       </Docs>
     </Member>
     <Member MemberName="DbeEnterImeConfigureMode">
@@ -627,7 +634,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The DBE_ENTERIMECONFIGMODE key.</summary>
       </Docs>
     </Member>
     <Member MemberName="DbeEnterWordRegisterMode">
@@ -643,7 +650,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The DBE_ENTERWORDREGISTERMODE key.</summary>
       </Docs>
     </Member>
     <Member MemberName="DbeFlushString">
@@ -659,7 +666,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The DBE_FLUSHSTRING key.</summary>
       </Docs>
     </Member>
     <Member MemberName="DbeHiragana">
@@ -675,7 +682,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The DBE_HIRAGANA key.</summary>
       </Docs>
     </Member>
     <Member MemberName="DbeKatakana">
@@ -691,7 +698,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The DBE_KATAKANA key.</summary>
       </Docs>
     </Member>
     <Member MemberName="DbeNoCodeInput">
@@ -707,7 +714,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The DBE_NOCODEINPUT key.</summary>
       </Docs>
     </Member>
     <Member MemberName="DbeNoRoman">
@@ -723,7 +730,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The DBE_NOROMAN key.</summary>
       </Docs>
     </Member>
     <Member MemberName="DbeRoman">
@@ -739,7 +746,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The DBE_ROMAN key.</summary>
       </Docs>
     </Member>
     <Member MemberName="DbeSbcsChar">
@@ -755,7 +762,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The DBE_SBCSCHAR key.</summary>
       </Docs>
     </Member>
     <Member MemberName="DeadCharProcessed">
@@ -771,7 +778,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The key is used with another key to create a single combined character.</summary>
       </Docs>
     </Member>
     <Member MemberName="Decimal">
@@ -787,7 +794,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Decimal key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -803,7 +810,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Delete key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Divide">
@@ -819,7 +826,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Divide key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Down">
@@ -835,7 +842,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Down Arrow key.</summary>
       </Docs>
     </Member>
     <Member MemberName="E">
@@ -851,7 +858,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The E key.</summary>
       </Docs>
     </Member>
     <Member MemberName="End">
@@ -867,7 +874,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The End key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Enter">
@@ -883,7 +890,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Enter key.</summary>
       </Docs>
     </Member>
     <Member MemberName="EraseEof">
@@ -899,7 +906,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The ERASE EOF key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Escape">
@@ -915,7 +922,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The ESC key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -931,7 +938,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Execute key.</summary>
       </Docs>
     </Member>
     <Member MemberName="ExSel">
@@ -947,7 +954,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The EXSEL key.</summary>
       </Docs>
     </Member>
     <Member MemberName="F">
@@ -963,7 +970,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The F key.</summary>
       </Docs>
     </Member>
     <Member MemberName="F1">
@@ -979,7 +986,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The F1 key.</summary>
       </Docs>
     </Member>
     <Member MemberName="F10">
@@ -995,7 +1002,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The F10 key.</summary>
       </Docs>
     </Member>
     <Member MemberName="F11">
@@ -1011,7 +1018,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The F11 key.</summary>
       </Docs>
     </Member>
     <Member MemberName="F12">
@@ -1027,7 +1034,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The F12 key.</summary>
       </Docs>
     </Member>
     <Member MemberName="F13">
@@ -1043,7 +1050,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The F13 key.</summary>
       </Docs>
     </Member>
     <Member MemberName="F14">
@@ -1059,7 +1066,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The F14 key.</summary>
       </Docs>
     </Member>
     <Member MemberName="F15">
@@ -1075,7 +1082,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The F15 key.</summary>
       </Docs>
     </Member>
     <Member MemberName="F16">
@@ -1091,7 +1098,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The F16 key.</summary>
       </Docs>
     </Member>
     <Member MemberName="F17">
@@ -1107,7 +1114,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The F17 key.</summary>
       </Docs>
     </Member>
     <Member MemberName="F18">
@@ -1123,7 +1130,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The F18 key.</summary>
       </Docs>
     </Member>
     <Member MemberName="F19">
@@ -1139,7 +1146,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The F19 key.</summary>
       </Docs>
     </Member>
     <Member MemberName="F2">
@@ -1155,7 +1162,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The F2 key.</summary>
       </Docs>
     </Member>
     <Member MemberName="F20">
@@ -1171,7 +1178,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The F20 key.</summary>
       </Docs>
     </Member>
     <Member MemberName="F21">
@@ -1187,7 +1194,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The F21 key.</summary>
       </Docs>
     </Member>
     <Member MemberName="F22">
@@ -1203,7 +1210,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The F22 key.</summary>
       </Docs>
     </Member>
     <Member MemberName="F23">
@@ -1219,7 +1226,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The F23 key.</summary>
       </Docs>
     </Member>
     <Member MemberName="F24">
@@ -1235,7 +1242,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The F24 key.</summary>
       </Docs>
     </Member>
     <Member MemberName="F3">
@@ -1251,7 +1258,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The F3 key.</summary>
       </Docs>
     </Member>
     <Member MemberName="F4">
@@ -1267,7 +1274,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The F4 key.</summary>
       </Docs>
     </Member>
     <Member MemberName="F5">
@@ -1283,7 +1290,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The F5 key.</summary>
       </Docs>
     </Member>
     <Member MemberName="F6">
@@ -1299,7 +1306,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The F6 key.</summary>
       </Docs>
     </Member>
     <Member MemberName="F7">
@@ -1315,7 +1322,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The F7 key.</summary>
       </Docs>
     </Member>
     <Member MemberName="F8">
@@ -1331,7 +1338,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The F8 key.</summary>
       </Docs>
     </Member>
     <Member MemberName="F9">
@@ -1347,7 +1354,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The F9 key.</summary>
       </Docs>
     </Member>
     <Member MemberName="FinalMode">
@@ -1363,7 +1370,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The IME Final mode key.</summary>
       </Docs>
     </Member>
     <Member MemberName="G">
@@ -1379,7 +1386,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The G key.</summary>
       </Docs>
     </Member>
     <Member MemberName="H">
@@ -1395,7 +1402,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The H key.</summary>
       </Docs>
     </Member>
     <Member MemberName="HangulMode">
@@ -1411,7 +1418,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The IME Hangul mode key.</summary>
       </Docs>
     </Member>
     <Member MemberName="HanjaMode">
@@ -1427,7 +1434,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The IME Hanja mode key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Help">
@@ -1443,7 +1450,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Help key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Home">
@@ -1459,7 +1466,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Home key.</summary>
       </Docs>
     </Member>
     <Member MemberName="I">
@@ -1475,7 +1482,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The I key.</summary>
       </Docs>
     </Member>
     <Member MemberName="ImeAccept">
@@ -1491,7 +1498,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The IME Accept key.</summary>
       </Docs>
     </Member>
     <Member MemberName="ImeConvert">
@@ -1507,7 +1514,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The IME Convert key.</summary>
       </Docs>
     </Member>
     <Member MemberName="ImeModeChange">
@@ -1523,7 +1530,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The IME Mode change request.</summary>
       </Docs>
     </Member>
     <Member MemberName="ImeNonConvert">
@@ -1539,7 +1546,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The IME NonConvert key.</summary>
       </Docs>
     </Member>
     <Member MemberName="ImeProcessed">
@@ -1555,7 +1562,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A special key masking the real key being processed by an IME.</summary>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -1571,7 +1578,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Insert key.</summary>
       </Docs>
     </Member>
     <Member MemberName="J">
@@ -1587,7 +1594,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The J key.</summary>
       </Docs>
     </Member>
     <Member MemberName="JunjaMode">
@@ -1603,7 +1610,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The IME Junja mode key.</summary>
       </Docs>
     </Member>
     <Member MemberName="K">
@@ -1619,7 +1626,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The K key.</summary>
       </Docs>
     </Member>
     <Member MemberName="KanaMode">
@@ -1635,7 +1642,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The IME Kana mode key.</summary>
       </Docs>
     </Member>
     <Member MemberName="KanjiMode">
@@ -1651,7 +1658,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The IME Kanji mode key.</summary>
       </Docs>
     </Member>
     <Member MemberName="L">
@@ -1667,7 +1674,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The L key.</summary>
       </Docs>
     </Member>
     <Member MemberName="LaunchApplication1">
@@ -1683,7 +1690,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Launch Application1 key.</summary>
       </Docs>
     </Member>
     <Member MemberName="LaunchApplication2">
@@ -1699,7 +1706,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Launch Application2 key.</summary>
       </Docs>
     </Member>
     <Member MemberName="LaunchMail">
@@ -1715,7 +1722,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Launch Mail key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -1731,7 +1738,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Left Arrow key.</summary>
       </Docs>
     </Member>
     <Member MemberName="LeftAlt">
@@ -1747,7 +1754,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The left ALT key.</summary>
       </Docs>
     </Member>
     <Member MemberName="LeftCtrl">
@@ -1763,7 +1770,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The left CTRL key.</summary>
       </Docs>
     </Member>
     <Member MemberName="LeftShift">
@@ -1779,7 +1786,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The left Shift key.</summary>
       </Docs>
     </Member>
     <Member MemberName="LineFeed">
@@ -1795,7 +1802,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Linefeed key.</summary>
       </Docs>
     </Member>
     <Member MemberName="LWin">
@@ -1811,7 +1818,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The left Windows logo key (Microsoft Natural Keyboard).</summary>
       </Docs>
     </Member>
     <Member MemberName="M">
@@ -1827,7 +1834,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The M key.</summary>
       </Docs>
     </Member>
     <Member MemberName="MediaNextTrack">
@@ -1843,7 +1850,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Media Next Track key.</summary>
       </Docs>
     </Member>
     <Member MemberName="MediaPlayPause">
@@ -1859,7 +1866,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Media Play Pause key.</summary>
       </Docs>
     </Member>
     <Member MemberName="MediaPreviousTrack">
@@ -1875,7 +1882,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Media Previous Track key.</summary>
       </Docs>
     </Member>
     <Member MemberName="MediaStop">
@@ -1891,7 +1898,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Media Stop key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Multiply">
@@ -1907,7 +1914,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Multiply key.</summary>
       </Docs>
     </Member>
     <Member MemberName="N">
@@ -1923,7 +1930,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The N key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Next">
@@ -1939,7 +1946,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Page Down key.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoName">
@@ -1955,7 +1962,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A constant reserved for future use.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -1971,7 +1978,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No key pressed.</summary>
       </Docs>
     </Member>
     <Member MemberName="NumLock">
@@ -1987,7 +1994,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Num Lock key.</summary>
       </Docs>
     </Member>
     <Member MemberName="NumPad0">
@@ -2003,7 +2010,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The 0 key on the numeric keypad.</summary>
       </Docs>
     </Member>
     <Member MemberName="NumPad1">
@@ -2019,7 +2026,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The 1 key on the numeric keypad.</summary>
       </Docs>
     </Member>
     <Member MemberName="NumPad2">
@@ -2035,7 +2042,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The 2 key on the numeric keypad.</summary>
       </Docs>
     </Member>
     <Member MemberName="NumPad3">
@@ -2051,7 +2058,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The 3 key on the numeric keypad.</summary>
       </Docs>
     </Member>
     <Member MemberName="NumPad4">
@@ -2067,7 +2074,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The 4 key on the numeric keypad.</summary>
       </Docs>
     </Member>
     <Member MemberName="NumPad5">
@@ -2083,7 +2090,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The 5 key on the numeric keypad.</summary>
       </Docs>
     </Member>
     <Member MemberName="NumPad6">
@@ -2099,7 +2106,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The 6 key on the numeric keypad.</summary>
       </Docs>
     </Member>
     <Member MemberName="NumPad7">
@@ -2115,7 +2122,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The 7 key on the numeric keypad.</summary>
       </Docs>
     </Member>
     <Member MemberName="NumPad8">
@@ -2131,7 +2138,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The 8 key on the numeric keypad.</summary>
       </Docs>
     </Member>
     <Member MemberName="NumPad9">
@@ -2147,7 +2154,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The 9 key on the numeric keypad.</summary>
       </Docs>
     </Member>
     <Member MemberName="O">
@@ -2163,7 +2170,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The O key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Oem1">
@@ -2179,7 +2186,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The OEM 1 key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Oem102">
@@ -2195,7 +2202,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The OEM 102 key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Oem2">
@@ -2211,7 +2218,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The OEM 2 key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Oem3">
@@ -2227,7 +2234,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The OEM 3 key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Oem4">
@@ -2243,7 +2250,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The OEM 4 key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Oem5">
@@ -2259,7 +2266,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The OEM 5 key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Oem6">
@@ -2275,7 +2282,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The OEM 6 key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Oem7">
@@ -2291,7 +2298,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The OEM 7 key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Oem8">
@@ -2307,7 +2314,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The OEM 8 key.</summary>
       </Docs>
     </Member>
     <Member MemberName="OemAttn">
@@ -2323,7 +2330,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The OEM ATTN key.</summary>
       </Docs>
     </Member>
     <Member MemberName="OemAuto">
@@ -2339,7 +2346,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The OEM AUTO key.</summary>
       </Docs>
     </Member>
     <Member MemberName="OemBackslash">
@@ -2355,7 +2362,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The OEM Backslash key.</summary>
       </Docs>
     </Member>
     <Member MemberName="OemBackTab">
@@ -2371,7 +2378,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The OEM BACKTAB key.</summary>
       </Docs>
     </Member>
     <Member MemberName="OemClear">
@@ -2387,7 +2394,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The OEM Clear key.</summary>
       </Docs>
     </Member>
     <Member MemberName="OemCloseBrackets">
@@ -2403,7 +2410,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The OEM Close Brackets key.</summary>
       </Docs>
     </Member>
     <Member MemberName="OemComma">
@@ -2419,7 +2426,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The OEM Comma key.</summary>
       </Docs>
     </Member>
     <Member MemberName="OemCopy">
@@ -2435,7 +2442,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The OEM COPY key.</summary>
       </Docs>
     </Member>
     <Member MemberName="OemEnlw">
@@ -2451,7 +2458,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The OEM ENLW key.</summary>
       </Docs>
     </Member>
     <Member MemberName="OemFinish">
@@ -2467,7 +2474,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The OEM FINISH key.</summary>
       </Docs>
     </Member>
     <Member MemberName="OemMinus">
@@ -2483,7 +2490,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The OEM Minus key.</summary>
       </Docs>
     </Member>
     <Member MemberName="OemOpenBrackets">
@@ -2499,7 +2506,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The OEM Open Brackets key.</summary>
       </Docs>
     </Member>
     <Member MemberName="OemPeriod">
@@ -2515,7 +2522,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The OEM Period key.</summary>
       </Docs>
     </Member>
     <Member MemberName="OemPipe">
@@ -2531,7 +2538,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The OEM Pipe key.</summary>
       </Docs>
     </Member>
     <Member MemberName="OemPlus">
@@ -2547,7 +2554,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The OEM Addition key.</summary>
       </Docs>
     </Member>
     <Member MemberName="OemQuestion">
@@ -2563,7 +2570,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The OEM Question key.</summary>
       </Docs>
     </Member>
     <Member MemberName="OemQuotes">
@@ -2579,7 +2586,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The OEM Quotes key.</summary>
       </Docs>
     </Member>
     <Member MemberName="OemSemicolon">
@@ -2595,7 +2602,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The OEM Semicolon key.</summary>
       </Docs>
     </Member>
     <Member MemberName="OemTilde">
@@ -2611,7 +2618,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The OEM Tilde key.</summary>
       </Docs>
     </Member>
     <Member MemberName="P">
@@ -2627,7 +2634,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The P key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pa1">
@@ -2643,7 +2650,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The PA1 key.</summary>
       </Docs>
     </Member>
     <Member MemberName="PageDown">
@@ -2659,7 +2666,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Page Down key.</summary>
       </Docs>
     </Member>
     <Member MemberName="PageUp">
@@ -2675,7 +2682,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Page Up key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pause">
@@ -2691,7 +2698,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Pause key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Play">
@@ -2707,7 +2714,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The PLAY key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Print">
@@ -2723,7 +2730,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Print key.</summary>
       </Docs>
     </Member>
     <Member MemberName="PrintScreen">
@@ -2739,7 +2746,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Print Screen key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Prior">
@@ -2755,7 +2762,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Page Up key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Q">
@@ -2771,7 +2778,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Q key.</summary>
       </Docs>
     </Member>
     <Member MemberName="R">
@@ -2787,7 +2794,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The R key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Return">
@@ -2803,7 +2810,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Return key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -2819,7 +2826,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Right Arrow key.</summary>
       </Docs>
     </Member>
     <Member MemberName="RightAlt">
@@ -2835,7 +2842,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The right ALT key.</summary>
       </Docs>
     </Member>
     <Member MemberName="RightCtrl">
@@ -2851,7 +2858,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The right CTRL key.</summary>
       </Docs>
     </Member>
     <Member MemberName="RightShift">
@@ -2867,7 +2874,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The right Shift key.</summary>
       </Docs>
     </Member>
     <Member MemberName="RWin">
@@ -2883,7 +2890,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The right Windows logo key (Microsoft Natural Keyboard).</summary>
       </Docs>
     </Member>
     <Member MemberName="S">
@@ -2899,7 +2906,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The S key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Scroll">
@@ -2915,7 +2922,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Scroll Lock key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -2931,7 +2938,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Select key.</summary>
       </Docs>
     </Member>
     <Member MemberName="SelectMedia">
@@ -2947,7 +2954,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Select Media key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Separator">
@@ -2963,7 +2970,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Separator key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Sleep">
@@ -2979,7 +2986,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Computer Sleep key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Snapshot">
@@ -2995,7 +3002,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Print Screen key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Space">
@@ -3011,7 +3018,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Spacebar key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Subtract">
@@ -3027,7 +3034,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Subtract key.</summary>
       </Docs>
     </Member>
     <Member MemberName="System">
@@ -3043,7 +3050,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A special key masking the real key being processed as a system key.</summary>
       </Docs>
     </Member>
     <Member MemberName="T">
@@ -3059,7 +3066,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The T key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Tab">
@@ -3075,7 +3082,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Tab key.</summary>
       </Docs>
     </Member>
     <Member MemberName="U">
@@ -3091,7 +3098,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The U key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Up">
@@ -3107,7 +3114,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Up Arrow key.</summary>
       </Docs>
     </Member>
     <Member MemberName="V">
@@ -3123,7 +3130,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The V key.</summary>
       </Docs>
     </Member>
     <Member MemberName="VolumeDown">
@@ -3139,7 +3146,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Volume Down key.</summary>
       </Docs>
     </Member>
     <Member MemberName="VolumeMute">
@@ -3155,7 +3162,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Volume Mute key.</summary>
       </Docs>
     </Member>
     <Member MemberName="VolumeUp">
@@ -3171,7 +3178,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Volume Up key.</summary>
       </Docs>
     </Member>
     <Member MemberName="W">
@@ -3187,7 +3194,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The W key.</summary>
       </Docs>
     </Member>
     <Member MemberName="X">
@@ -3203,7 +3210,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The X key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Y">
@@ -3219,7 +3226,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Y key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Z">
@@ -3235,7 +3242,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Z key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Zoom">
@@ -3251,7 +3258,7 @@
         <ReturnType>System.Windows.Input.Key</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The ZOOM key.</summary>
       </Docs>
     </Member>
   </Members>

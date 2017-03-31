@@ -17,9 +17,18 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">To be added.</param>
-    <param name="e">To be added.</param>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:Microsoft.Build.Framework.TaskStartedEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:Microsoft.Build.Framework.IEventSource.TaskStarted" /> event of a build.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to write a basic logger that responds to build events.  
+  
+ [!code-csharp[msbuild_BasicLogger#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_BasicLogger/CS/msbuild_BasicLogger.cs#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

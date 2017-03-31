@@ -11,8 +11,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies how parameters are formatted in a SOAP message.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Services.Protocols.SoapParameterStyle> can be set when applying a <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute> to an XML Web service method or a method of a client proxy class. The <xref:System.Web.Services.Protocols.SoapParameterStyle> can also be set by applying a <xref:System.Web.Services.Protocols.SoapDocumentServiceAttribute> to a class implementing an XML Web service.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Bare">
@@ -29,7 +36,7 @@
         <ReturnType>System.Web.Services.Protocols.SoapParameterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Parameters sent to and from an XML Web service method are placed in XML elements directly following the <see langword="Body" /> element of a SOAP request or SOAP response.</summary>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -46,7 +53,7 @@
         <ReturnType>System.Web.Services.Protocols.SoapParameterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies using the default <see cref="T:System.Web.Services.Protocols.SoapParameterStyle" /> for the XML Web service. The default for an XML Web service can be set by applying a <see cref="T:System.Web.Services.Protocols.SoapDocumentServiceAttribute" /> to the class implementing the XML Web service. If a <see cref="T:System.Web.Services.Protocols.SoapDocumentServiceAttribute" /> is not applied to the class implementing the XML Web service, the default is <see cref="F:System.Web.Services.Protocols.SoapParameterStyle.Wrapped" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Wrapped">
@@ -63,7 +70,7 @@
         <ReturnType>System.Web.Services.Protocols.SoapParameterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Parameters sent to and from an XML Web service method are encapsulated within a single XML element followig the <see langword="Body" /> element of the XML portion of a SOAP request or SOAP response.</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,39 +1,62 @@
 ---
 uid: System.Data.Entity.Design.TypeGeneratedEventArgs
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Entity.Design.TypeGeneratedEventArgs.#ctor
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Entity.Design.TypeGeneratedEventArgs.AdditionalAttributes
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Entity.Design.TypeGeneratedEventArgs.AdditionalInterfaces
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Entity.Design.TypeGeneratedEventArgs.TypeSource
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Entity.Design.TypeGeneratedEventArgs.#ctor
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Entity.Design.TypeGeneratedEventArgs.#ctor(System.Data.Metadata.Edm.GlobalItem,System.CodeDom.CodeTypeReference)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Entity.Design.TypeGeneratedEventArgs.BaseType
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Entity.Design.TypeGeneratedEventArgs.AdditionalMembers
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

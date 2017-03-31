@@ -1,1 +1,0 @@
-            Console.WriteLine("Message arrived at the destination queue at {0}", message.ArrivedTime.ToString())

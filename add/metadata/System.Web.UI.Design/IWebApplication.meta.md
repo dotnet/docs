@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.Design.IWebApplication
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.IWebApplication.RootProjectItem
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.IWebApplication.OpenWebConfiguration(System.Boolean)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.IWebApplication.GetProjectItemFromUrl(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

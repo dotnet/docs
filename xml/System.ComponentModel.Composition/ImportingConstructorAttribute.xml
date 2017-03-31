@@ -17,8 +17,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies which constructor should be used when creating a part.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, only a parameter-less constructor will be used to construct an attributed part. Use <xref:System.ComponentModel.Composition.ImportingConstructorAttribute> to indicate that a specific constructor should be used instead. Parameters to the decorated constructor will be treated as imports.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,7 +40,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.ImportingConstructorAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

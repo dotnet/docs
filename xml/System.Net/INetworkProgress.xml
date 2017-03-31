@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides information on network progress in sending data over the network.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -41,7 +41,7 @@
         <ReturnType>System.EventHandler&lt;System.Net.NetworkProgressChangedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Network progress has changed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,7 +66,7 @@
         <ReturnType>System.EventHandler&lt;System.Net.NetworkProgressChangedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Network progress has completed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,7 +91,7 @@
         <ReturnType>System.EventHandler&lt;System.Net.NetworkProgressChangedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Network progress has failed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

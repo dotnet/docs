@@ -11,7 +11,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Indicates the network origin of a peer channel message.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,7 +29,7 @@
         <ReturnType>System.ServiceModel.PeerMessageOrigination</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The message originated on the local computer.</summary>
       </Docs>
     </Member>
     <Member MemberName="Remote">
@@ -46,7 +46,7 @@
         <ReturnType>System.ServiceModel.PeerMessageOrigination</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The message originated from a remote computer.</summary>
       </Docs>
     </Member>
   </Members>

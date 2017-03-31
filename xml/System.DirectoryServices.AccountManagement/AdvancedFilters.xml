@@ -11,8 +11,20 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>This class provides writable access to certain attributes so that users can modify read-only properties of the "dummy" principal object that is passed to a <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearcher" /> object when using [Query By Example](http://msdn.microsoft.com/en-us/84ac40bb-04c4-4d0b-adaf-0ddb9253599e).</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.DirectoryServices.AccountManagement.AdvancedFilters> class is accessed from a <xref:System.DirectoryServices.AccountManagement.UserPrincipal> object through the <xref:System.DirectoryServices.AccountManagement.UserPrincipal.AdvancedSearchFilter%2A> property, and is effectually treated like a property of the <xref:System.DirectoryServices.AccountManagement.UserPrincipal> object, and isn't intended to be used on its own.  
+  
+   
+  
+## Examples  
+ See the [Query By Example](http://msdn.microsoft.com/en-us/84ac40bb-04c4-4d0b-adaf-0ddb9253599e) topic for example code.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,9 +40,16 @@
         <Parameter Name="p" Type="System.DirectoryServices.AccountManagement.Principal" />
       </Parameters>
       <Docs>
-        <param name="p">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="p">A <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> object.</param>
+        <summary>Instantiates a new <see cref="T:System.DirectoryServices.AccountManagement.AdvancedFilters" /> object. Not intended to be called directly.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Applications should access <xref:System.DirectoryServices.AccountManagement.AdvancedFilters> through the <xref:System.DirectoryServices.AccountManagement.UserPrincipal.AdvancedSearchFilter%2A> property of the user object.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AccountExpirationDate">
@@ -50,10 +69,45 @@
         <Parameter Name="match" Type="System.DirectoryServices.AccountManagement.MatchType" />
       </Parameters>
       <Docs>
-        <param name="expirationTime">To be added.</param>
-        <param name="match">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="expirationTime">A <see cref="T:System.DateTime" /> object.</param>
+        <param name="match">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> that specifies how <c>expirationTime</c> should be used in the comparison.</param>
+        <summary>Sets the query filter for the <see cref="P:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.AccountExpirationDate" /> attribute to the specified time and comparison type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of your <xref:System.DateTime> object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+  
+```csharp  
+  
+// Create the principal context for the usr object.  
+PrincipalContext ctx = new PrincipalContext(ContextType.Domain, "fabrikam.com", "CN=Users,DC=fabrikam,DC=com", "administrator", "securlyStoredPassword");  
+  
+// Create the principal user object from the context  
+UserPrincipal usr = new UserPrincipal(ctx);  
+  
+// Set the advanced query filter  
+usr.AdvancedSearchFilter.AccountExpirationDate(DateTime.Now, MatchType.LessThan);  
+  
+// Create a PrincipalSearcher object.  
+PrincipalSearcher ps = new PrincipalSearcher(usr);  
+  
+PrincipalSearchResult<Principal> results = ps.FindAll();  
+  
+Console.WriteLine("The following users' accounts have expired:");  
+  
+foreach (UserPrincipal u in results)  
+{  
+  Console.WriteLine(u.Name);  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AccountLockoutTime">
@@ -73,10 +127,45 @@
         <Parameter Name="match" Type="System.DirectoryServices.AccountManagement.MatchType" />
       </Parameters>
       <Docs>
-        <param name="lockoutTime">To be added.</param>
-        <param name="match">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="lockoutTime">A <see cref="T:System.DateTime" /> object.</param>
+        <param name="match">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> that specifies how <c>lockoutTime</c> should be used in the comparison.</param>
+        <summary>Sets the <see cref="P:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.AccountLockoutTime" /> query filter to the specified time and comparison type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of your <xref:System.DateTime> object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+  
+```csharp  
+  
+// Create the principal context for the usr object.  
+PrincipalContext ctx = new PrincipalContext(ContextType.Domain, "fabrikam.com", "CN=Users,DC=fabrikam,DC=com", "administrator", "SecurlyStoredPassword");  
+  
+// Create the principal user object from the context  
+UserPrincipal usr = new UserPrincipal(ctx);  
+  
+// Set the advanced query filter  
+usr.AdvancedSearchFilter.AccountLockoutTime(DateTime.Now.AddDays(-1), MatchType.GreaterThan);  
+  
+// Create a PrincipalSearcher object.  
+PrincipalSearcher ps = new PrincipalSearcher(usr);  
+  
+PrincipalSearchResult<Principal> results = ps.FindAll();  
+  
+//Print user names of all accounts locked within the last 24 hours.  
+  
+foreach (UserPrincipal u in results)  
+{  
+  Console.WriteLine(u.Name);  
+ }  
+```  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AdvancedFilterSet">
@@ -103,12 +192,32 @@
         <Parameter Name="mt" Type="System.DirectoryServices.AccountManagement.MatchType" />
       </Parameters>
       <Docs>
-        <param name="attribute">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="objectType">To be added.</param>
-        <param name="mt">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="attribute">The name of the attribute</param>
+        <param name="value">An object.</param>
+        <param name="objectType">The object type of <c>value</c>.</param>
+        <param name="mt">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> that specifies how <c>value</c> should be compared to the attribute's value.</param>
+        <summary>Creates a query filter for a property in an extended class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ In an extended class, you might implement an advanced search filter for `LogonCount`:  
+  
+```csharp  
+  
+public class InetOrgPersonSearchFilter : AdvancedFilters  
+{  
+	public InetOrgPersonSearchFilter(Principal p) : base(p) { }  
+  
+	public void LogonCount(int value, MatchType mt)  
+	{  
+		this.AdvancedFilterSet("LogonCount", value, typeof(int), mt);  
+	}  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BadLogonCount">
@@ -128,10 +237,38 @@
         <Parameter Name="match" Type="System.DirectoryServices.AccountManagement.MatchType" />
       </Parameters>
       <Docs>
-        <param name="badLogonCount">To be added.</param>
-        <param name="match">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="badLogonCount">An integer.</param>
+        <param name="match">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> that specifies how <c>badLogonCount</c> should be compared to the attribute's value.</param>
+        <summary>Sets the query filter for the <see cref="P:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.BadLogonCount" /> attribute to the specified value and comparison type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+  
+```csharp  
+  
+// Create the principal context for the usr object.  
+PrincipalContext ctx = new PrincipalContext(ContextType.Domain, "fabrikam.com", "CN=Users,DC=fabrikam,DC=com", "administrator", "SecurlyStoredPassword");  
+  
+// Create the principal user object from the context  
+UserPrincipal usr = new UserPrincipal(ctx);  
+  
+// Set the advanced query filter  
+int badLogonThreshold = 3;  
+usr.AdvancedSearchFilter.BadLogonCount(badLogonThreshold, MatchType.GreaterThan);  
+  
+// Create a PrincipalSearcher object.  
+PrincipalSearcher ps = new PrincipalSearcher(usr);  
+PrincipalSearchResult<Principal> results = ps.FindAll();  
+Console.WriteLine("The following users have logged on unsuccessfully at more than " + badLogonThreshold.toString + " times:");  
+foreach (UserPrincipal u in results)  
+{  
+  Console.WriteLine(u.Name);  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LastBadPasswordAttempt">
@@ -151,10 +288,45 @@
         <Parameter Name="match" Type="System.DirectoryServices.AccountManagement.MatchType" />
       </Parameters>
       <Docs>
-        <param name="lastAttempt">To be added.</param>
-        <param name="match">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="lastAttempt">A <see cref="T:System.DateTime" /> object.</param>
+        <param name="match">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> that specifies how <c>lastAttempt</c> should be used in the comparison.</param>
+        <summary>Sets the query filter for the <see cref="P:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.LastBadPasswordAttempt" /> attribute to the specified <see cref="T:System.DateTime" /> and the specified comparison value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of your <xref:System.DateTime> object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+  
+```csharp  
+  
+// Create the principal context for the usr object.  
+PrincipalContext ctx = new PrincipalContext(ContextType.Domain, "fabrikam.com", "CN=Users,DC=fabrikam,DC=com", "administrator", "SecurlyStoredPassword");  
+  
+// Create the principal user object from the context  
+UserPrincipal usr = new UserPrincipal(ctx);  
+  
+// Set the advanced query filter  
+usr.AdvancedSearchFilter.LastBadPasswordAttempt(DateTime.Now.AddDays(-1), MatchType.GreaterThan);  
+  
+// Create a PrincipalSearcher object.  
+PrincipalSearcher ps = new PrincipalSearcher(usr);  
+PrincipalSearchResult<Principal> results = ps.FindAll();  
+  
+//Write the name of all users whose most recent incorrect  
+//password entry was within the last day  
+  
+foreach (UserPrincipal u in results)  
+{  
+	Console.WriteLine(u.Name);  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LastLogonTime">
@@ -174,10 +346,43 @@
         <Parameter Name="match" Type="System.DirectoryServices.AccountManagement.MatchType" />
       </Parameters>
       <Docs>
-        <param name="logonTime">To be added.</param>
-        <param name="match">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="logonTime">A <see cref="T:System.DateTime" /> object.</param>
+        <param name="match">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> that specifies how <c>logonTime</c> should be used in the comparison.</param>
+        <summary>Sets the query filter for the <see cref="P:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.LastLogon" /> attribute to the specified <see cref="T:System.DateTime" /> and the specified comparison value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of your <xref:System.DateTime> object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+  
+```csharp  
+  
+// Create the principal context for the usr object.  
+PrincipalContext ctx = new PrincipalContext(ContextType.Domain, "fabrikam.com", "CN=Users,DC=fabrikam,DC=com", "administrator", "SecurlyStoredPassword");  
+  
+// Create the principal user object from the context  
+UserPrincipal usr = new UserPrincipal(ctx);  
+  
+// Set the advanced query filter  
+usr.AdvancedSearchFilter.LastLogonTime(DateTime.Now.AddDays(-1), MatchType.GreaterThan);  
+  
+// Create a PrincipalSearcher object.  
+PrincipalSearcher ps = new PrincipalSearcher(usr);  
+PrincipalSearchResult<Principal> results = ps.FindAll();  
+  
+//Write the names of all users who have logged on since yesterday  
+foreach (UserPrincipal u in results)  
+{  
+	Console.WriteLine(u.Name);  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LastPasswordSetTime">
@@ -197,10 +402,45 @@
         <Parameter Name="match" Type="System.DirectoryServices.AccountManagement.MatchType" />
       </Parameters>
       <Docs>
-        <param name="passwordSetTime">To be added.</param>
-        <param name="match">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="passwordSetTime">A <see cref="T:System.DateTime" /> object.</param>
+        <param name="match">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> that specifies how <c>passwordSetTime</c> should be used in the comparison.</param>
+        <summary>Sets the query filter for the <see cref="P:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.LastPasswordSet" /> attribute to the specified <see cref="T:System.DateTime" /> and the specified comparison value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of your <xref:System.DateTime> object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+  
+```csharp  
+  
+// Create the principal context for the usr object.  
+PrincipalContext ctx = new PrincipalContext(ContextType.Domain, "fabrikam.com", "CN=Users,DC=fabrikam,DC=com", "administrator", "SecurlyStoredPassword");  
+  
+// Create the principal user object from the context  
+UserPrincipal usr = new UserPrincipal(ctx);  
+  
+// Set the advanced query filter  
+usr.AdvancedSearchFilter.LastPasswordSetTime(DateTime.Now.AddDays(-30), MatchType.LessThan);  
+  
+// Create a PrincipalSearcher object.  
+PrincipalSearcher ps = new PrincipalSearcher(usr);  
+PrincipalSearchResult<Principal> results = ps.FindAll();  
+  
+//Force users who have not changed their password in the last  
+//30 days to do so at next logon  
+foreach (UserPrincipal u in results)  
+{  
+	u.ExpirePasswordNow();  
+	u.Save();  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,19 +1,25 @@
 ---
 uid: System.Windows.Annotations.Storage.StoreContentChangedEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Annotations.Storage.StoreContentChangedEventArgs.#ctor(System.Windows.Annotations.Storage.StoreContentAction,System.Windows.Annotations.Annotation)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Annotations.Storage.StoreContentChangedEventArgs.Annotation
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Annotations.Storage.StoreContentChangedEventArgs.Action
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

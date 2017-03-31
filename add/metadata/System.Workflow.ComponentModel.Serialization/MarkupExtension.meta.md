@@ -1,14 +1,20 @@
 ---
 uid: System.Workflow.ComponentModel.Serialization.MarkupExtension
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Serialization.MarkupExtension.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Serialization.MarkupExtension.ProvideValue(System.IServiceProvider)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

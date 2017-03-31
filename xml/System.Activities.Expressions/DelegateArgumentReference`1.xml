@@ -22,8 +22,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="T">The data type of the <see cref="T:System.Activities.DelegateArgument" />.</typeparam>
+    <summary>Represents a <see cref="T:System.Activities.DelegateArgument" /> used as an l-value in an expression.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,7 +38,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Expressions.DelegateArgumentReference`1" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,8 +55,8 @@
         <Parameter Name="delegateArgument" Type="System.Activities.DelegateArgument" />
       </Parameters>
       <Docs>
-        <param name="delegateArgument">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="delegateArgument">The value of the expression.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Expressions.DelegateArgumentReference`1" /> class using the specified <see cref="T:System.Activities.DelegateArgument" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,8 +94,8 @@
         <ReturnType>System.Activities.DelegateArgument</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="T:System.Activities.DelegateArgument" /> represented by the <see cref="T:System.Activities.Expressions.DelegateArgumentReference`1" />.</summary>
+        <value>The <see cref="T:System.Activities.DelegateArgument" /> represented by the <see cref="T:System.Activities.Expressions.DelegateArgumentReference`1" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,8 +112,8 @@
         <ReturnType>System.Activities.LocationReference</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the location reference of the delegate argument.</summary>
+        <value>The location reference of the delegate argument.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

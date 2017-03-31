@@ -1,39 +1,52 @@
 ---
 uid: System.Windows.Controls.DataGridRowClipboardEventArgs
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.DataGridRowClipboardEventArgs.#ctor(System.Object,System.Int32,System.Int32,System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.DataGridRowClipboardEventArgs.ClipboardRowContent
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.DataGridRowClipboardEventArgs.StartColumnDisplayIndex
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.DataGridRowClipboardEventArgs.FormatClipboardCellValues(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.DataGridRowClipboardEventArgs.EndColumnDisplayIndex
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.DataGridRowClipboardEventArgs.Item
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.DataGridRowClipboardEventArgs.IsColumnHeadersRow
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

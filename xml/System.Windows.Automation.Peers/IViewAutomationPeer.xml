@@ -8,8 +8,20 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Allows a customized view of a <see cref="T:System.Windows.Controls.ListView" /> that derives from <see cref="T:System.Windows.Controls.ViewBase" /> to implement automation peer features that are specific to the custom view.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code shows a custom view implementing <xref:System.Windows.Automation.Peers.IViewAutomationPeer> in a separate class to handle a button that appears at the top of the <xref:System.Windows.Controls.ListView> control.  
+  
+ [!code-csharp[ListViewCustomView#IVAPCreate](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCustomView/CSharp/OneButtonHeaderView.cs#ivapcreate)]
+ [!code-vb[ListViewCustomView#IVAPCreate](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListViewCustomView/visualbasic/onebuttonheaderview.vb#ivapcreate)]  
+[!code-csharp[ListViewCustomView#IVAP](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCustomView/CSharp/OneButtonHeaderView.cs#ivap)]
+[!code-vb[ListViewCustomView#IVAP](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListViewCustomView/visualbasic/onebuttonheaderview.vb#ivap)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CreateItemAutomationPeer">
@@ -28,9 +40,9 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The <see cref="T:System.Windows.Controls.ListViewItem" /> that is associated with the <see cref="T:System.Windows.Controls.ListView" /> that is used by this <see cref="T:System.Windows.Automation.Peers.IViewAutomationPeer" />.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Windows.Automation.Peers.ItemAutomationPeer" /> class.</summary>
+        <returns>The new <see cref="T:System.Windows.Automation.Peers.ItemAutomationPeer" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +60,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the control type for the element that is associated with this <see cref="T:System.Windows.Automation.Peers.IViewAutomationPeer" />.</summary>
+        <returns>A value in the <see cref="T:System.Windows.Automation.Peers.AutomationControlType" /> enumeration.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,9 +81,9 @@
         <Parameter Name="children" Type="System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt;" />
       </Parameters>
       <Docs>
-        <param name="children">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="children">The automation peers for the list items.</param>
+        <summary>Gets the collection of immediate child elements of the specified [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] peer.</summary>
+        <returns>The automation peers for all items in the control. If the view contains interactive or informational elements in addition to the list items, automation peers for these elements must be added to the list.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,9 +103,9 @@
         <Parameter Name="patternInterface" Type="System.Windows.Automation.Peers.PatternInterface" />
       </Parameters>
       <Docs>
-        <param name="patternInterface">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="patternInterface">A value in the enumeration.</param>
+        <summary>Gets the control pattern that is associated with the specified <paramref name="patternInterface" />.</summary>
+        <returns>Return the object that implements the control pattern. If this method returns null, the return value from <see cref="M:System.Windows.Automation.Peers.IViewAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" /> is used.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,8 +125,8 @@
         <Parameter Name="e" Type="System.Collections.Specialized.NotifyCollectionChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">A <see cref="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs" /> that contains the event data.</param>
+        <summary>Called by <see cref="T:System.Windows.Controls.ListView" /> when the collection of items changes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,7 +144,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Called when the custom view is no longer applied to the <see cref="T:System.Windows.Controls.ListView" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

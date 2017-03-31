@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Converts instances of <see cref="T:System.String" /> to and from instances of <see cref="T:System.Windows.Input.Key" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is typically only utilized by the <xref:System.Windows.Markup.Primitives.MarkupWriter> for serialization purposes.  
+  
+<a name="xamlTextUsage_KeyValueSerializer"></a>   
+## XAML Text Usage  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +35,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.KeyValueSerializer" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,10 +56,10 @@
         <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">String to evaluate for conversion.</param>
+        <param name="context">Context information that is used for conversion.</param>
+        <summary>Determines if the specified <see cref="T:System.String" /> can be convert to an instance of <see cref="T:System.Windows.Input.Key" />.</summary>
+        <returns>Always returns <see langword="true" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,10 +80,11 @@
         <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The key to evaluate for conversion.</param>
+        <param name="context">Context information that is used for conversion.</param>
+        <summary>Determines if the specified <see cref="T:System.Windows.Input.Key" /> can be converted to a <see cref="T:System.String" />.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="value" /> can be converted into a <see cref="T:System.String" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,10 +105,10 @@
         <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The string to convert into a <see cref="T:System.Windows.Input.Key" />.</param>
+        <param name="context">Context information that is used for conversion.</param>
+        <summary>Converts a <see cref="T:System.String" /> into a <see cref="T:System.Windows.Input.Key" />.</summary>
+        <returns>A new instance of <see cref="T:System.Windows.Input.Key" /> based on the supplied <paramref name="value" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,10 +129,10 @@
         <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The key to convert into a string.</param>
+        <param name="context">Context information that is used for conversion.</param>
+        <summary>Converts an instance of <see cref="T:System.Windows.Input.Key" /> to a <see cref="T:System.String" />.</summary>
+        <returns>An invariant string representation of the specified <see cref="T:System.Windows.Input.Key" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -17,8 +17,27 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies that a type, property, field, or method provides a particular export.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In the Attributed Programming Model, the <xref:System.ComponentModel.Composition.ExportAttribute> declares that a part exports, or provides to the composition container, an object that fulfills a particular contract. During composition, parts with imports that have matching contracts will have those dependencies filled by the exported object.  
+  
+ The <xref:System.ComponentModel.Composition.ExportAttribute> can decorate either an entire class, or a property, field, or method of a class. If the entire class is decorated, an instance of the class is the exported object. If a member of a class is decorated, the exported object will be the value of the decorated member.  
+  
+ Whether or not a contract matches is determined primarily by the contract name and the contract type. For more information, see <xref:System.ComponentModel.Composition.ImportAttribute>.  
+  
+   
+  
+## Examples  
+ The following example shows three classes decorated with the <xref:System.ComponentModel.Composition.ExportAttribute>, and three imports that match them.  
+  
+ [!code-csharp[ImportAndExport#1](~/samples/snippets/csharp/VS_Snippets_Misc/importandexport/cs/program.cs#1)]
+ [!code-vb[ImportAndExport#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/importandexport/vb/module1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,8 +52,19 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.ExportAttribute" /> class, exporting the type or member marked with this attribute under the default contract name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on the property or field type, or on the type that is marked with this attribute.  
+  
+ Methods marked with this attribute must specify a contract name or a type by using either <xref:System.ComponentModel.Composition.ExportAttribute.%23ctor%28System.String%29> or <xref:System.ComponentModel.Composition.ExportAttribute.%23ctor%28System.Type%29>.  
+  
+ The contract name is compared by using the <xref:System.StringComparer.Ordinal%2A> property to perform a case-sensitive, non-linguistic comparison.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -51,9 +81,20 @@
         <Parameter Name="contractName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="contractName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="contractName">The contract name that is used to export the type or member marked with this attribute, or <see langword="null" /> or an empty string ("") to use the default contract name.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.ExportAttribute" /> class, exporting the type or member marked with this attribute under the specified contract name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on the property or field type, or on the type that this is marked with this attribute.  
+  
+ Methods marked with this attribute must specify a contract name or a type by using either <xref:System.ComponentModel.Composition.ExportAttribute.%23ctor%28System.String%29> or <xref:System.ComponentModel.Composition.ExportAttribute.%23ctor%28System.Type%29>.  
+  
+ The contract name is compared by using the <xref:System.StringComparer.Ordinal%2A> property to perform a case-sensitive, non-linguistic comparison.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -70,9 +111,22 @@
         <Parameter Name="contractType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="contractType">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="contractType">A type from which to derive the contract name that is used to export the type or member marked with this attribute, or <see langword="null" /> to use the default contract name.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.ExportAttribute" /> class, exporting the type or member marked with this attribute under a contract name derived from the specified type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on `contractType`.  
+  
+ The default contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on the property or field type, or on the type that is marked with this attribute.  
+  
+ Methods marked with this attribute must specify a contract name or a type by using either <xref:System.ComponentModel.Composition.ExportAttribute.%23ctor%28System.String%29> or <xref:System.ComponentModel.Composition.ExportAttribute.%23ctor%28System.Type%29>.  
+  
+ The contract name is compared by using the <xref:System.StringComparer.Ordinal%2A> property to perform a case-sensitive, non-linguistic comparison.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -90,9 +144,9 @@
         <Parameter Name="contractType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="contractName">To be added.</param>
-        <param name="contractType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="contractName">The contract name that is used to export the type or member marked with this attribute, or <see langword="null" /> or an empty string ("") to use the default contract name.</param>
+        <param name="contractType">The type to export.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.ExportAttribute" /> class, exporting the specified type under the specified contract name.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,8 +164,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the contract name that is used to export the type or member marked with this attribute.</summary>
+        <value>The contract name that is used to export the type or member marked with this attribute. The default value is an empty string ("").</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,8 +183,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the contract type that is exported by the member that this attribute is attached to.</summary>
+        <value>The type of export that is be provided. The default value is <see langword="null" />, which means that the type will be obtained by looking at the type on the member that this export is attached to.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,1 +1,0 @@
-            Dim ultDestsS12() As String = envS12.GetUltimateDestinationActorValues()

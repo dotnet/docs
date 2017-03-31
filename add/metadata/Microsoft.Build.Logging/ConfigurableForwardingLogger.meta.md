@@ -1,49 +1,65 @@
 ---
 uid: Microsoft.Build.Logging.ConfigurableForwardingLogger
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
+---
+
+---
+uid: Microsoft.Build.Logging.ConfigurableForwardingLogger.Initialize
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Logging.ConfigurableForwardingLogger.ForwardToCentralLogger(Microsoft.Build.Framework.BuildEventArgs)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Logging.ConfigurableForwardingLogger.Shutdown
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Logging.ConfigurableForwardingLogger.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Logging.ConfigurableForwardingLogger.Parameters
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Logging.ConfigurableForwardingLogger.Initialize(Microsoft.Build.Framework.IEventSource)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Logging.ConfigurableForwardingLogger.Verbosity
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Logging.ConfigurableForwardingLogger.Initialize(Microsoft.Build.Framework.IEventSource,System.Int32)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Logging.ConfigurableForwardingLogger.BuildEventRedirector
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Logging.ConfigurableForwardingLogger.NodeId
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a <see cref="T:System.Windows.WeakEventManager" /> implementation so that you can use the weak event listener pattern to attach listeners for the <see cref="E:System.ComponentModel.INotifyDataErrorInfo.ErrorsChanged" /> event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,10 +32,12 @@
         <Parameter Name="handler" Type="System.EventHandler&lt;System.ComponentModel.DataErrorsChangedEventArgs&gt;" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="source">The source object that raises the <see cref="E:System.ComponentModel.INotifyDataErrorInfo.ErrorsChanged" /> event.</param>
+        <param name="handler">The delegate that handles the <see cref="E:System.ComponentModel.INotifyDataErrorInfo.ErrorsChanged" /> event.</param>
+        <summary>Adds the specified event handler, which is called when specified source raises the <see cref="E:System.ComponentModel.INotifyDataErrorInfo.ErrorsChanged" /> event.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="handler" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="NewListenerList">
@@ -52,8 +54,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a new object to contain listeners to the <see cref="E:System.ComponentModel.INotifyDataErrorInfo.ErrorsChanged" /> event.</summary>
+        <returns>A new object to contain listeners to the <see cref="E:System.ComponentModel.INotifyDataErrorInfo.ErrorsChanged" /> event.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,10 +76,12 @@
         <Parameter Name="handler" Type="System.EventHandler&lt;System.ComponentModel.DataErrorsChangedEventArgs&gt;" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="source">The source object that raises the <see cref="E:System.ComponentModel.INotifyDataErrorInfo.ErrorsChanged" /> event.</param>
+        <param name="handler">The delegate that handles the <see cref="E:System.ComponentModel.INotifyDataErrorInfo.ErrorsChanged" /> event.</param>
+        <summary>Removes the specified event handler from the specified source.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="handler" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="StartListening">
@@ -96,8 +100,8 @@
         <Parameter Name="source" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="source">The source object that raises the <see cref="E:System.ComponentModel.INotifyDataErrorInfo.ErrorsChanged" /> event.</param>
+        <summary>Begins listening for the <see cref="E:System.ComponentModel.INotifyDataErrorInfo.ErrorsChanged" /> event on the specified source.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,8 +121,8 @@
         <Parameter Name="source" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="source">The source object that raises the <see cref="E:System.ComponentModel.INotifyDataErrorInfo.ErrorsChanged" /> event.</param>
+        <summary>Stops listening for the <see cref="E:System.ComponentModel.INotifyDataErrorInfo.ErrorsChanged" /> event on the specified source.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

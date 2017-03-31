@@ -1,4 +1,5 @@
 ---
 uid: Microsoft.Build.Utilities.ExecutableType
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

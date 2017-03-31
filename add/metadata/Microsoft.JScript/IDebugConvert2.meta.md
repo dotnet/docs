@@ -1,9 +1,9 @@
 ---
 uid: Microsoft.JScript.IDebugConvert2
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.IDebugConvert2.DecimalToString(System.Decimal)
-internalonly: False
+ms.author: "mikejo"
 ---

@@ -1,19 +1,34 @@
 ---
 uid: System.Web.Services.Discovery.ExcludePathInfo
-internalonly: False
----
-
----
-uid: System.Web.Services.Discovery.ExcludePathInfo.Path
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Discovery.ExcludePathInfo.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Web.Services.Discovery.ExcludePathInfo.Path
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Web.Services.Discovery.ExcludePathInfo.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Discovery.ExcludePathInfo.#ctor(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

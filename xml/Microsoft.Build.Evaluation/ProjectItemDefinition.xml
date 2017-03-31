@@ -16,8 +16,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an evaluated item definition for a particular item-type.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Item definitions are not the same as items. Like items, item definitions can have metadata. Like properties, new metadata can override old metadata with the same name.  
+  
+ During evaluation, all the item definitions for an item type are collected together (assuming their conditions are true) to create one ProjectItemDefinition for each type. For this reason, a project item definition can refer to more than one project item definition element. The metadata within a project item definition, however, refers to a single project metadata element, which can be added, removed, and modified.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="GetMetadata">
@@ -41,9 +50,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the metadata to retrieve.</param>
+        <summary>Get any metadata in the item definition with the given name.</summary>
+        <returns>Get any metadata in the item definition with the given name. Returns null if no metadata exists with that name.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,9 +72,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the item whose metadata value is to be retrieved.</param>
+        <summary>Get the value of any metadata in the item that has the specified name.</summary>
+        <returns>Returns the value of any metadata in the item that has the specified name; otherwise returns null.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,8 +99,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the item type of this item definition.</summary>
+        <value>Returns the item type of this item definition.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,9 +117,16 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Build.Evaluation.ProjectMetadata&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets an enumerator over all metadata for the item definition.</summary>
+        <value>Returns an enumerator over all metadata for the item definition.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is a read-only collection.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MetadataCount">
@@ -126,8 +142,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the count of the metadata on the item definition.</summary>
+        <value>Returns the count of the metadata on the item definition.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -152,8 +168,8 @@
         <ReturnType>Microsoft.Build.Evaluation.Project</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the project that contains this item definition.</summary>
+        <value>Returns the project that contains this item definition, which is never null.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -174,11 +190,18 @@
         <Parameter Name="unevaluatedValue" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="unevaluatedValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the metadata to set.</param>
+        <param name="unevaluatedValue">The new unevaluated value of the metadata.</param>
+        <summary>Sets the value of the given metadata in the item definition.</summary>
+        <returns>Returns the metadata with the given name.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The unevaluated value is assumed to contain character escape sequences as needed.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

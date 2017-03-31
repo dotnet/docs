@@ -1,4 +1,4 @@
 ---
 uid: Microsoft.JScript.DebugBreak
-internalonly: False
+ms.author: "mikejo"
 ---

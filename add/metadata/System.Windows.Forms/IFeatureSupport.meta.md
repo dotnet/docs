@@ -1,19 +1,32 @@
 ---
 uid: System.Windows.Forms.IFeatureSupport
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.IFeatureSupport.IsPresent(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.IFeatureSupport.IsPresent(System.Object,System.Version)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.IFeatureSupport.IsPresent
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.IFeatureSupport.GetVersionPresent(System.Object)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

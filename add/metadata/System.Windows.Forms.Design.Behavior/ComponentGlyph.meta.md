@@ -1,29 +1,46 @@
 ---
 uid: System.Windows.Forms.Design.Behavior.ComponentGlyph
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.ComponentGlyph.Paint(System.Windows.Forms.PaintEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.Design.Behavior.ComponentGlyph.#ctor
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.ComponentGlyph.GetHitTest(System.Drawing.Point)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.ComponentGlyph.RelatedComponent
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.ComponentGlyph.#ctor(System.ComponentModel.IComponent,System.Windows.Forms.Design.Behavior.Behavior)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.ComponentGlyph.#ctor(System.ComponentModel.IComponent)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

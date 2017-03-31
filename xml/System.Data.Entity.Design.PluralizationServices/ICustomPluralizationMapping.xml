@@ -8,7 +8,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a collection of the singular and plural forms of words.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,9 +29,9 @@
         <Parameter Name="plural" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="singular">To be added.</param>
-        <param name="plural">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="singular">The singular version of the word added to the <see cref="T:System.Data.Entity.Design.PluralizationServices.ICustomPluralizationMapping" /> object.</param>
+        <param name="plural">The plural version of the word added to the <see cref="T:System.Data.Entity.Design.PluralizationServices.ICustomPluralizationMapping" /> object.</param>
+        <summary>Adds singular and plural forms of a word to the <see cref="T:System.Data.Entity.Design.PluralizationServices.ICustomPluralizationMapping" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

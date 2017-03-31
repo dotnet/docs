@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the property of a configuration element. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class can be used to validate configuration element properties. Also, this class can be used in conjunction with the <xref:System.Configuration.ConfigurationElement> class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,9 +35,11 @@
         <Parameter Name="validator" Type="System.Configuration.ConfigurationValidatorBase" />
       </Parameters>
       <Docs>
-        <param name="validator">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="validator">A <see cref="T:System.Configuration.ConfigurationValidatorBase" /> object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationElementProperty" /> class, based on a supplied parameter.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="validator" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Validator">
@@ -46,8 +55,8 @@
         <ReturnType>System.Configuration.ConfigurationValidatorBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.Configuration.ConfigurationValidatorBase" /> object used to validate the <see cref="T:System.Configuration.ConfigurationElementProperty" /> object.</summary>
+        <value>A <see cref="T:System.Configuration.ConfigurationValidatorBase" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

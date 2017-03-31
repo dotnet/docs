@@ -1,14 +1,20 @@
 ---
 uid: System.Runtime.InteropServices.VARDESC.DESCUNION
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.VARDESC.DESCUNION.oInst
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.VARDESC.DESCUNION.lpvarValue
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

@@ -11,8 +11,23 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>An enumeration that is used with the <see cref="T:System.ServiceModel.TransactionFlowAttribute" /> to specify the transaction flow policy for a service operation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used to instantiate an instance of the <xref:System.ServiceModel.TransactionFlowAttribute> class, which is used to mark a service contract method to indicate its transaction flow policy.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this enumeration together with the <xref:System.ServiceModel.TransactionFlowOption> class at the operation level.  
+  
+ [!code-csharp[OperationBehaviorAttribute1#2](~/samples/snippets/csharp/VS_Snippets_CFX/operationbehaviorattribute1/cs/services.cs#2)]
+ [!code-vb[OperationBehaviorAttribute1#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/operationbehaviorattribute1/vb/services.vb#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Allowed">
@@ -29,7 +44,7 @@
         <ReturnType>System.ServiceModel.TransactionFlowOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Transaction may be flowed.</summary>
       </Docs>
     </Member>
     <Member MemberName="Mandatory">
@@ -46,7 +61,7 @@
         <ReturnType>System.ServiceModel.TransactionFlowOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Transaction must be flowed.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotAllowed">
@@ -63,7 +78,7 @@
         <ReturnType>System.ServiceModel.TransactionFlowOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A transaction should not be flowed. This is the default value.</summary>
       </Docs>
     </Member>
   </Members>

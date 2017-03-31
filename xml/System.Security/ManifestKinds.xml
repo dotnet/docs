@@ -15,8 +15,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the type of manifest that the signature information applies to.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration has two purposes:  
+  
+-   In the <xref:System.Security.Cryptography.ManifestSignatureInformation.VerifySignature%2A> method, it specifies which manifests you want to generate signature information for.  
+  
+-   In a <xref:System.Security.Cryptography.ManifestSignatureInformation> object, it shows you which manifest the signature information is generated from.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -32,7 +43,7 @@
         <ReturnType>System.Security.ManifestKinds</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The manifest is for an application.</summary>
       </Docs>
     </Member>
     <Member MemberName="ApplicationAndDeployment">
@@ -48,7 +59,7 @@
         <ReturnType>System.Security.ManifestKinds</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The manifest is for deployment and application. The is the default value for verifying signatures.</summary>
       </Docs>
     </Member>
     <Member MemberName="Deployment">
@@ -64,7 +75,7 @@
         <ReturnType>System.Security.ManifestKinds</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The manifest is for deployment only.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -80,7 +91,7 @@
         <ReturnType>System.Security.ManifestKinds</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The manifest is of no particular type.</summary>
       </Docs>
     </Member>
   </Members>

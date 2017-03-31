@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a Security Assertion Markup Language 1.1 (SAML 1.1) assertion.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.SamlAssertion> class corresponds to the `<saml:Assertion>` XML element that is defined in the OASIS SAML 1.1 specification.  
+  
+ The claims for <xref:System.IdentityModel.Tokens.SamlSecurityToken> security tokens are contained within a <xref:System.IdentityModel.Tokens.SamlAssertion>. A <xref:System.IdentityModel.Tokens.SamlAssertion> has an extensible set of claims known as SAML statements that are represented by the <xref:System.IdentityModel.Tokens.SamlAssertion.Statements%2A> property. The SAML authority that issued the SAML assertion is specified in the <xref:System.IdentityModel.Tokens.SamlAssertion.Issuer%2A> property.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +35,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlAssertion" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,14 +57,51 @@
         <Parameter Name="samlStatements" Type="System.Collections.Generic.IEnumerable&lt;System.IdentityModel.Tokens.SamlStatement&gt;" />
       </Parameters>
       <Docs>
-        <param name="assertionId">To be added.</param>
-        <param name="issuer">To be added.</param>
-        <param name="issueInstant">To be added.</param>
+        <param name="assertionId">The identifier for the assertion.</param>
+        <param name="issuer">The SAML authority that issued this SAML assertion.</param>
+        <param name="issueInstant">A <see cref="T:System.DateTime" /> that specifies when the SAML assertion was issued.</param>
         <param name="conditions">To be added.</param>
         <param name="advice">To be added.</param>
         <param name="statements">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlAssertion" /> class using the specified SAML assertion identifier, issuer of the assertion, the date and time when the assertion was issued, a set of processing conditions, additional information, and a collection of SAML statements.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `assertionId` parameter must start with a letter or the "_" character.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="assertionId" /> is <see langword="null" />  
+  
+ -or-  
+  
+ <paramref name="assertionId" /> is <see cref="F:System.String.Empty" />  
+  
+ -or-  
+  
+ <paramref name="assertionId" /> does not start with a letter or the "_" character.  
+  
+ -or-  
+  
+ <paramref name="issuer" /> is <see langword="null" />  
+  
+ -or-  
+  
+ <paramref name="issuer" /> is <see cref="F:System.String.Empty" />  
+  
+ -or-  
+  
+ <paramref name="samlStatements" /> is <see langword="null" />  
+  
+ -or-  
+  
+ <paramref name="samlStatements" /> does not contain any elements  
+  
+ -or-  
+  
+ <paramref name="samlStatements" /> contains a <see langword="null" /> element</exception>
       </Docs>
     </Member>
     <Member MemberName="Advice">
@@ -71,9 +117,17 @@
         <ReturnType>System.IdentityModel.Tokens.SamlAdvice</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets additional information related to the <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> that is supplied by the SAML authority that can aide in the processing of the SAML assertion.</summary>
+        <value>A <see cref="T:System.IdentityModel.Tokens.SamlAdvice" /> that specifies additional information that is supplied by the SAML authority that can aide in the processing of the SAML assertion.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.SamlAssertion.Advice%2A> property corresponds to the `<saml:Advice>` element defined in the Assertions and Protocol for the OASIS SAML specification.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.IdentityModel.Tokens.SamlAssertion.Advice" /> property is set and the <see cref="P:System.IdentityModel.Tokens.SamlAssertion.IsReadOnly" /> property is <see langword="true" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AssertionId">
@@ -89,9 +143,18 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the identifier for this assertion.</summary>
+        <value>The identifier for this assertion.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.SamlAssertion.AssertionId%2A> property corresponds to the `AssertionID` attribute of the `<saml:Assertion>` element defined in the OASIS SAML 1.1 specification.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The value of the <see cref="P:System.IdentityModel.Tokens.SamlAssertion.IsReadOnly" /> property is <see langword="true" /> and an attempt is made to set the <see cref="P:System.IdentityModel.Tokens.SamlAssertion.AssertionId" /> property.</exception>
+        <exception cref="T:System.ArgumentException">An attempt is made to set the <see cref="P:System.IdentityModel.Tokens.SamlAssertion.AssertionId" /> property to <see langword="null" /> or an empty string.</exception>
       </Docs>
     </Member>
     <Member MemberName="CanWriteSourceData">
@@ -107,9 +170,20 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether this assertion was deserialized from XML source and can re-emit the XML data unchanged.</summary>
+        <value>
+          <see langword="true" /> if this assertion can re-emit the XML source data unchanged; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation preserves the source data when read using the <xref:System.IdentityModel.Tokens.SamlSecurityTokenHandler.ReadAssertion%2A> method and can re-emit the original data as long as the <xref:System.IdentityModel.Tokens.Saml.SamlAssertion.AssertionId%2A> property has not changed from the time that assertion was read.  
+  
+> [!IMPORTANT]
+>  It is very important that SAML assertions with different data have different IDs. If implementing a scheme whereby an assertion "template" is loaded and certain bits of data are filled in, the Id must be changed.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Conditions">
@@ -125,9 +199,17 @@
         <ReturnType>System.IdentityModel.Tokens.SamlConditions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a set of conditions that may be taken into account when assessing the validity of the SAML assertion.</summary>
+        <value>A <see cref="T:System.IdentityModel.Tokens.SamlConditions" /> that specifies a set of conditions that may be taken into account when assessing the validity of the SAML assertion.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.SamlAssertion.Conditions%2A> property corresponds to the `<saml:Conditions>` element defined in the OASIS SAML 1.1 specification.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.IdentityModel.Tokens.SamlAssertion.IsReadOnly" /> property is <see langword="true" /> and an attempt is made to set the <see cref="P:System.IdentityModel.Tokens.SamlAssertion.Conditions" /> property.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -143,9 +225,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether the properties of this instance are read-only.</summary>
+        <value>
+          <see langword="true" /> if the properties of this instance are read-only; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To make this instance of the <xref:System.IdentityModel.Tokens.SamlAssertion> class read-only, call the <xref:System.IdentityModel.Tokens.SamlAssertion.MakeReadOnly%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IssueInstant">
@@ -161,9 +251,17 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the date and time when the SAML assertion was issued.</summary>
+        <value>A <see cref="T:System.DateTime" /> expressed in the Coordinated Universal Time (UTC) that specifies when the SAML assertion was issued.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.SamlAssertion.IssueInstant%2A> property corresponds to the `IssueInstant` attribute of the `<saml:Assertion>` element defined in the OASIS 1.1 SAML specification.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.IdentityModel.Tokens.SamlAssertion.IsReadOnly" /> property is <see langword="true" /> and an attempt is made to set the <see cref="P:System.IdentityModel.Tokens.SamlAssertion.IssueInstant" /> property.</exception>
       </Docs>
     </Member>
     <Member MemberName="Issuer">
@@ -179,9 +277,18 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the SAML authority that issued this SAML assertion.</summary>
+        <value>The SAML authority that issued this SAML assertion.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.SamlAssertion.Issuer%2A> property corresponds to the `Issuer` attribute of the `<saml:Assertion>` element defined in the OASIS SAML 1.1 specification.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.IdentityModel.Tokens.SamlAssertion.IsReadOnly" /> property is <see langword="true" /> and an attempt is made to set the <see cref="P:System.IdentityModel.Tokens.SamlAssertion.Issuer" /> property.</exception>
+        <exception cref="T:System.ArgumentException">An attempt is made to set the <see cref="P:System.IdentityModel.Tokens.SamlAssertion.Issuer" /> property to <see langword="null" /> or an empty string.</exception>
       </Docs>
     </Member>
     <Member MemberName="MajorVersion">
@@ -197,9 +304,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the major version of the SAML specification to which this SAML assertion conforms.</summary>
+        <value>The major version of the SAML specification to which this SAML assertion conforms. The default value is the value of the <see cref="P:System.IdentityModel.Tokens.SamlConstants.MajorVersionValue" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.SamlAssertion.MajorVersion%2A> property corresponds to the `MajorVersion` attribute of the `<saml:Assertion>` element defined in the Assertions and Protocol for the OASIS SAML specification.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MakeReadOnly">
@@ -216,8 +330,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Causes this instance to be read-only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.IdentityModel.Tokens.SamlAssertion.MakeReadOnly%2A> method is called, the <xref:System.IdentityModel.Tokens.SamlAssertion.IsReadOnly%2A> property is set to `true`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MinorVersion">
@@ -233,9 +354,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the minor version of the SAML specification to which this SAML assertion conforms.</summary>
+        <value>The minor version of the SAML specification to which this SAML assertion conforms. The default value is the value of the <see cref="P:System.IdentityModel.Tokens.SamlConstants.MinorVersionValue" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.SamlAssertion.MinorVersion%2A> property corresponds to the `MinorVersion` attribute of the `<saml:Assertion>` element defined in the Assertions and Protocol for the OASIS SAML specification.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadSignature">
@@ -257,12 +385,29 @@
         <Parameter Name="samlSerializer" Type="System.IdentityModel.Tokens.SamlSerializer" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
+        <param name="reader">A <see cref="T:System.Xml.XmlDictionaryReader" /> to read the digital signature.</param>
         <param name="keyInfoTokenSerializer">To be added.</param>
-        <param name="outOfBandTokenResolver">To be added.</param>
-        <param name="samlSerializer">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="outOfBandTokenResolver">A <see cref="T:System.IdentityModel.Selectors.SecurityTokenResolver" /> that determines the security token that created the digital signature.</param>
+        <param name="samlSerializer">A <see cref="T:System.IdentityModel.Tokens.SamlSerializer" /> that is capable of reading XML elements that are defined in the SAML specification.</param>
+        <summary>Reads the digital signature for a SAML assertion from an XML reader.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.IdentityModel.Tokens.SamlAssertion.ReadSignature%2A> method is called, the <xref:System.IdentityModel.Tokens.SamlAssertion.SigningToken%2A> property is set.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />  
+  
+ -or-  
+  
+ <paramref name="samlSerializer" /> is <see langword="null" />  
+  
+ -or-  
+  
+ the digital signature has not been read from the SAML assertion yet.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadXml">
@@ -284,12 +429,21 @@
         <Parameter Name="outOfBandTokenResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <param name="samlSerializer">To be added.</param>
+        <param name="reader">A <see cref="T:System.Xml.XmlDictionaryReader" /> to read the SAML assertion.</param>
+        <param name="samlSerializer">A <see cref="T:System.IdentityModel.Tokens.SamlSerializer" /> that is capable of reading XML elements in the SAML assertion that are defined in the SAML specification.</param>
         <param name="keyInfoTokenSerializer">To be added.</param>
-        <param name="outOfBandTokenResolver">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="outOfBandTokenResolver">A <see cref="T:System.IdentityModel.Selectors.SecurityTokenResolver" /> that determines the security token that created the digital signature.</param>
+        <summary>Reads a SAML assertion from the specified XML reader.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />  
+  
+ -or-  
+  
+ <paramref name="samlSerializer" /> is <see langword="null" /></exception>
+        <exception cref="T:System.InvalidOperationException">the <see cref="M:System.IdentityModel.Tokens.SamlAssertion.ReadXml(System.Xml.XmlDictionaryReader,System.IdentityModel.Tokens.SamlSerializer,System.IdentityModel.Selectors.SecurityTokenSerializer,System.IdentityModel.Selectors.SecurityTokenResolver)" /> method had been previously called and that SAML assertion was digitally signed.</exception>
+        <exception cref="T:System.IdentityModel.Tokens.SecurityTokenException">
+          <paramref name="reader" /> does not refer to a SAML assertion that is compliant with the SAML 1.1 specification.</exception>
       </Docs>
     </Member>
     <Member MemberName="SigningCredentials">
@@ -305,9 +459,17 @@
         <ReturnType>System.IdentityModel.Tokens.SigningCredentials</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the security credentials that are used to digitally sign the SAML assertion.</summary>
+        <value>A <see cref="T:System.IdentityModel.Tokens.SigningCredentials" /> that is used to digitally sign the SAML assertion.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.SamlAssertion.SigningCredentials%2A> property represents the credentials that are used to sign a SAML assertion when it is serialized into XML. Similarly, the <xref:System.IdentityModel.Tokens.SamlAssertion.SigningToken%2A> property represents the security token that signed a SAML token in an incoming SOAP message.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.IdentityModel.Tokens.SamlAssertion.IsReadOnly" /> property is <see langword="true" /> and an attempt is made to set the <see cref="P:System.IdentityModel.Tokens.SamlAssertion.SigningCredentials" /> property.</exception>
       </Docs>
     </Member>
     <Member MemberName="SigningToken">
@@ -323,9 +485,16 @@
         <ReturnType>System.IdentityModel.Tokens.SecurityToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the security token contained in or referenced by a digitally signed SAML assertion.</summary>
+        <value>A <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> contained in or referenced by a digitally signed SAML assertion.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.IdentityModel.Tokens.SamlAssertion.ReadXml%2A> method is called and a SAML assertion is digitally signed, the digital signature is set to the <xref:System.IdentityModel.Tokens.SamlAssertion.SigningCredentials%2A> property. When the SAML assertion is not digitally signed, the value of the <xref:System.IdentityModel.Tokens.SamlAssertion.SigningCredentials%2A> property is `null`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Statements">
@@ -341,9 +510,26 @@
         <ReturnType>System.Collections.Generic.IList&lt;System.IdentityModel.Tokens.SamlStatement&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the set of SAML statements associated with the SAML assertion.</summary>
+        <value>An <see cref="T:System.Collections.Generic.IList`1" /> of type <see cref="T:System.IdentityModel.Tokens.SamlStatement" /> that contains the SAML statements associated with the SAML assertion.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.IdentityModel.Tokens.SamlAssertion.%23ctor%2A> to set the SAML statements associated with a SAML assertion or add it directly to the collection that is returned by this property when the <xref:System.IdentityModel.Tokens.SamlAssertion.IsReadOnly%2A> property is `false`.  
+  
+ The following table maps the three types of SAML statements defined in the Assertions and Protocol for the OASIS SAML specification to their respective types.  
+  
+|Statement Type|CLR Type|  
+|--------------------|--------------|  
+|Authentication|<xref:System.IdentityModel.Tokens.SamlAuthenticationStatement>|  
+|Attribute|<xref:System.IdentityModel.Tokens.SamlAttributeStatement>|  
+|Authorization decision|<xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement>|  
+|Statement defined in an extension schema|<xref:System.IdentityModel.Tokens.SamlStatement>|  
+|Subject statement defined in an extension schema|<xref:System.IdentityModel.Tokens.SamlSubjectStatement>|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteSourceData">
@@ -362,9 +548,20 @@
         <Parameter Name="writer" Type="System.Xml.XmlWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="writer">The XML writer with which to write the source data.</param>
+        <summary>Writes the source data, if available.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation preserves the source data when read using the <xref:System.IdentityModel.Tokens.SamlSecurityTokenHandler.ReadAssertion%2A> method and can re-emit the original data as long as the <xref:System.IdentityModel.Tokens.Saml.SamlAssertion.AssertionId%2A> property has not changed from the time that assertion was read.  
+  
+> [!IMPORTANT]
+>  It is very important that SAML assertions with different data have different IDs. If implementing a scheme whereby an assertion "template" is loaded and certain bits of data are filled in, the Id must be changed.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">No source data is available</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteXml">
@@ -385,11 +582,18 @@
         <Parameter Name="keyInfoSerializer" Type="System.IdentityModel.Selectors.SecurityTokenSerializer" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="samlSerializer">To be added.</param>
+        <param name="writer">A <see cref="T:System.Xml.XmlDictionaryWriter" /> to write the SAML assertion.</param>
+        <param name="samlSerializer">A <see cref="T:System.IdentityModel.Tokens.SamlSerializer" /> that is capable of writing the objects in the <see cref="T:System.IdentityModel.Tokens.SamlAssertion" /> to XML.</param>
         <param name="keyInfoTokenSerializer">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Writes the SAML assertion into the specified XML writer as a <see langword="&lt;saml:Assertion&gt;" /> element.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="writer" /> is <see langword="null" />  
+  
+ -or-  
+  
+ <paramref name="samlSerializer" /> is <see langword="null" /></exception>
+        <exception cref="T:System.IdentityModel.Tokens.SecurityTokenException">the <see cref="T:System.IdentityModel.Tokens.SamlAssertion" /> is configured such that serializing it into XML would result non-compliance with the SAML v1.1 specification.</exception>
       </Docs>
     </Member>
   </Members>

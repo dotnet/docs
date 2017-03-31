@@ -1,39 +1,60 @@
 ---
 uid: System.ServiceModel.Channels.TransportBindingElement
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.TransportBindingElement.MaxBufferPoolSize
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.TransportBindingElement.ManualAddressing
-internalonly: False
----
-
----
-uid: System.ServiceModel.Channels.TransportBindingElement.MaxReceivedMessageSize
-internalonly: False
----
-
----
-uid: System.ServiceModel.Channels.TransportBindingElement.Scheme
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.TransportBindingElement.#ctor
-internalonly: False
+manager: "ghogen"
+---
+
+---
+uid: System.ServiceModel.Channels.TransportBindingElement.MaxReceivedMessageSize
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Channels.TransportBindingElement.Scheme
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Channels.TransportBindingElement.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.TransportBindingElement.GetProperty``1(System.ServiceModel.Channels.BindingContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.TransportBindingElement.#ctor(System.ServiceModel.Channels.TransportBindingElement)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -18,8 +18,43 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>A control used for selecting a type.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Activities.Presentation.View.TypePresenter> can be used imperatively or declaratively.  
+  
+ The following code example demonstrates how to use TypePresenter in a custom activity designer. It binds the TypePresenter control to the "Text" property of the corresponding activity of the activity designer. The "Text" property is of type "System.Type".  
+  
+   
+  
+## Examples  
+  
+```xaml  
+<sap:ActivityDesigner x:Class="WorkflowConsoleApplication1.ActivityDesigner1"  
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
+    xmlns:sap="clr-namespace:System.Activities.Presentation;assembly=System.Activities.Presentation"  
+    xmlns:sapc="clr-namespace:System.Activities.Presentation.Converters;assembly=System.Activities.Presentation"  
+    xmlns:sapv="clr-namespace:System.Activities.Presentation.View;assembly=System.Activities.Presentation">  
+    <sap:ActivityDesigner.Resources>  
+        <sapc:ModelToObjectValueConverter x:Key="modelItemConverter" />  
+    </sap:ActivityDesigner.Resources>  
+    <StackPanel>  
+        <sapv:TypePresenter  
+            Type="{Binding Path=ModelItem.Text, Mode=TwoWay, Converter={StaticResource modelItemConverter}}"  
+            Context="{Binding Context}"  
+            AllowNull="True"  
+            BrowseTypeDirectly="False"  
+            Label="Choose type"/>  
+    </StackPanel>  
+</sap:ActivityDesigner>  
+  
+```  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,8 +68,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Creates a new instance of a <see cref="T:System.Activities.Presentation.View.TypePresenter" /> that initializes a collection of wrapper objects that each represent a primitive type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#4](WFD_TypePresenter#4)]  -->  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowNull">
@@ -50,9 +92,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether the string (<see langword="null" />) will be shown in the type presenter, which allows you to select null for the type.</summary>
+        <value>
+          <see langword="true" /> if the property can be <see langword="null" />; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#12](WFD_TypePresenter#12)]  -->  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowNullProperty">
@@ -68,8 +118,15 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Dependency property identifier field that designates whether the type <see langword="null" /> can be selected from the type presenter.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#11](WFD_TypePresenter#11)]  -->  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BrowseTypeDirectly">
@@ -85,9 +142,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets an indication whether the type browser should be shown directly when the user clicks the <see cref="T:System.Activities.Presentation.View.TypePresenter" /> control.</summary>
+        <value>
+          <see langword="true" /> if the type browser should be shown directly when the user clicks the <see cref="T:System.Activities.Presentation.View.TypePresenter" /> control; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#20](WFD_TypePresenter#20)]  -->  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BrowseTypeDirectlyProperty">
@@ -103,8 +168,15 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Dependency property identifier field that designates whether the type browser should be shown directly when the user clicks the <see cref="T:System.Activities.Presentation.View.TypePresenter" /> control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#16](WFD_TypePresenter#16)]  -->  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CenterActivityTypeResolverDialog">
@@ -120,9 +192,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets whether the activity type resolver dialog window should be centered.</summary>
+        <value>
+          <see langword="true" /> if the window should be centered; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#29](WFD_TypePresenter#29)]  -->  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CenterActivityTypeResolverDialogProperty">
@@ -138,8 +218,15 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Dependency property identifier field that designates whether the activity type resolver dialog window should be centered.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#25](WFD_TypePresenter#25)]  -->  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CenterTypeBrowserDialog">
@@ -155,9 +242,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets whether a type browser dialog window should be centered.</summary>
+        <value>
+          <see langword="true" /> if the window should be centered; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#30](WFD_TypePresenter#30)]  -->  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CenterTypeBrowserDialogProperty">
@@ -173,8 +268,15 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Dependency property identifier field that designates whether the type browser dialog window should be centered.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#26](WFD_TypePresenter#26)]  -->  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Context">
@@ -190,9 +292,16 @@
         <ReturnType>System.Activities.Presentation.EditingContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the value of an editing context property.</summary>
+        <value>An editing context item.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#7](WFD_TypePresenter#7)]  -->  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ContextProperty">
@@ -208,8 +317,15 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Dependency property identifier field that contains a property of the editing context, for instance a list of currently selected objects or a list of services running in the designer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#2](WFD_TypePresenter#2)]  -->  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultMostRecentlyUsedTypes">
@@ -225,9 +341,16 @@
         <ReturnType>System.Collections.ObjectModel.ObservableCollection&lt;System.Type&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the default types used most recently.</summary>
+        <value>Returns <see cref="T:System.Collections.ObjectModel.ObservableCollection`1" /> that contains the default types used most recently.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#312](WFD_TypePresenter#312)]  -->  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Filter">
@@ -243,9 +366,33 @@
         <ReturnType>System.Func&lt;System.Type,System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the filter used to show types.</summary>
+        <value>A delegate with one return value and a Boolean value that represents the filter used to show types.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the following types are shown in the type presenter/type browser  
+  
+1.  Project system case  
+  
+    1.  All public types in referenced assemblies/projects  
+  
+    2.  All public types in current project  
+  
+2.  Standalone XAML case (file in rehosted application/file opened in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] without solution opened)  
+  
+    1.  All public types in all assemblies loaded in the AppDomain  
+  
+ By setting the filter property, you can limit the number of types shown in the type browser to only those types that are valid for your activity.  
+  
+   
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#21](WFD_TypePresenter#21)]  -->  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FilterProperty">
@@ -261,8 +408,15 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Dependency property identifier field that designates what filter is used to show types.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#17](WFD_TypePresenter#17)]  -->  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FocusOnVisibleControl">
@@ -279,8 +433,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Puts the keyboard focus on the current presenter control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#28](WFD_TypePresenter#28)]  -->  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InitializeComponent">
@@ -305,8 +466,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a combo box. The contents of this method are generated by the designer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#5](WFD_TypePresenter#5)]  -->  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Items">
@@ -327,9 +495,16 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Activities.Presentation.View.TypeWrapper&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets an enumeration of wrapper types that are in the current type presenter.</summary>
+        <value>An enumeration of wrapper types that are in the current type presenter.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#8](WFD_TypePresenter#8)]  -->  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Label">
@@ -345,9 +520,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the display name for a component.</summary>
+        <value>The display name for a component.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#22](WFD_TypePresenter#22)]  -->  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LabelProperty">
@@ -363,8 +545,15 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Dependency property identifier field that defines the label of a control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#18](WFD_TypePresenter#18)]  -->  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MostRecentlyUsedTypes">
@@ -380,9 +569,16 @@
         <ReturnType>System.Collections.ObjectModel.ObservableCollection&lt;System.Type&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the types used most recently.</summary>
+        <value>The types used most recently.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#31](WFD_TypePresenter#31)]  -->  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MostRecentlyUsedTypesProperty">
@@ -398,8 +594,15 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Dependency property identifier field that designates the most recently used types.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#27](WFD_TypePresenter#27)]  -->  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnCreateAutomationPeer">
@@ -497,8 +700,15 @@
         <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Declaration of the event that gets raised when a property on the specified user interface control has been changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#1](WFD_TypePresenter#1)]  -->  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Markup.IComponentConnector.Connect">
@@ -529,10 +739,17 @@
         <Parameter Name="target" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="connectionId">To be added.</param>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="connectionId">Not implemented.</param>
+        <param name="target">Not implemented.</param>
+        <summary>Obsolete. Not implemented.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#6](WFD_TypePresenter#6)]  -->  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -548,9 +765,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the value used for a component display name.</summary>
+        <value>A string name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#24](WFD_TypePresenter#24)]  -->  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TextProperty">
@@ -566,8 +790,15 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Dependency property identifier field that assigns the text that is used for a component display name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#19](WFD_TypePresenter#19)]  -->  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -583,9 +814,16 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the type of the current <see cref="T:System.Activities.Presentation.View.TypePresenter" />.</summary>
+        <value>A type object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#9](WFD_TypePresenter#9)]  -->  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TypeBrowserClosed">
@@ -601,8 +839,20 @@
         <ReturnType>System.Windows.RoutedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Provides event accessors for the <see cref="F:System.Activities.Presentation.View.TypePresenter.TypeBrowserClosedEvent" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Activities.Presentation.View.TypePresenter.TypeBrowserClosedEvent> is raised when the user closes the browser.  
+  
+   
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#13](WFD_TypePresenter#13)]  -->  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TypeBrowserClosedEvent">
@@ -618,7 +868,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Dependency property identifier field that designates whether the user closed the browser.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -635,8 +885,20 @@
         <ReturnType>System.Windows.RoutedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Provides event accessors for the <see cref="F:System.Activities.Presentation.View.TypePresenter.TypeBrowserOpenedEvent" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Activities.Presentation.View.TypePresenter.TypeBrowserOpenedEvent> is raised when the user opens the browser.  
+  
+   
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#14](WFD_TypePresenter#14)]  -->  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TypeBrowserOpenedEvent">
@@ -652,7 +914,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Dependency property identifier field that designates whether the user opened the browser.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -669,8 +931,20 @@
         <ReturnType>System.Windows.RoutedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Provides event accessors for the <see cref="F:System.Activities.Presentation.View.TypePresenter.TypeChangedEvent" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Activities.Presentation.View.TypePresenter.TypeChangedEvent> is raised when the user changes the type of the selected control.  
+  
+   
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#15](WFD_TypePresenter#15)]  -->  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TypeChangedEvent">
@@ -686,7 +960,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Dependency property identifier field that designates whether the component type has changed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -703,9 +977,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the display name for a component type.</summary>
+        <value>A string that represents the display name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#10](WFD_TypePresenter#10)]  -->  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TypeProperty">
@@ -721,8 +1002,15 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Dependency property identifier field that designates the current type represented by the <see cref="T:System.Activities.Presentation.View.TypePresenter" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#3](WFD_TypePresenter#3)]  -->  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

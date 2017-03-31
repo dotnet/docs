@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Stores the fields and properties read by a condition or written to by an action.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The information stored by <xref:System.Workflow.Activities.Rules.RuleAnalysis> is important because it identifies dependencies and side effects of rules in the rule set. These dependencies and side effects drive the chaining behavior.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -29,9 +36,9 @@
         <Parameter Name="forWrites" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="validation">To be added.</param>
-        <param name="forWrites">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="validation">The <see cref="T:System.Workflow.Activities.Rules.RuleValidation" /> to manage the validation process.</param>
+        <param name="forWrites">A <see langword="Boolean" /> value that indicates whether analysis is being done for writes (in the case of <see cref="T:System.Workflow.Activities.Rules.RuleAction" /> objects) or reads (in the case of <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> objects).</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleAnalysis" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,9 +58,16 @@
         <Parameter Name="symbol" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="symbol">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="symbol">A string that represents the path to a field or property.</param>
+        <summary>Adds the fields and properties used by an expression as symbols to the <see cref="T:System.Workflow.Activities.Rules.RuleAnalysis" /> instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Workflow.Activities.Rules.RuleAnalysis.AddSymbol%2A> method to add fields and properties used by an expression to the list of symbols for the <xref:System.Workflow.Activities.Rules.RuleAnalysis> instance.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ForWrites">
@@ -69,8 +83,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether analysis is being done for writes or reads.</summary>
+        <value>
+          <see langword="true" /> if analysis is being done for writes (in the case of <see cref="T:System.Workflow.Activities.Rules.RuleAction" /> objects); otherwise, <see langword="false" /> if the analysis is being done for reads (in the case of <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> objects).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,8 +108,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the list of symbols from the <see cref="T:System.Workflow.Activities.Rules.RuleAnalysis" /> instance.</summary>
+        <returns>The list of symbols for the <see cref="T:System.Workflow.Activities.Rules.RuleAnalysis" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

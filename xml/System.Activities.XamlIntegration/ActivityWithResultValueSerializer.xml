@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Ensures that the result of an activity is properly converted to a string that can be used for serial transmission.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.XamlIntegration.ActivityWithResultValueSerializer" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,10 +47,11 @@
         <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.Activities.XamlIntegration.IValueSerializableExpression" /> object that is verified for its ability to be converted to a string for serial transmission.</param>
+        <param name="context">Defines a context for the serialization of <see cref="T:System.Activities.XamlIntegration.IValueSerializableExpression" />.</param>
+        <summary>Returns an indication whether an input object is an <see cref="T:System.Activities.XamlIntegration.IValueSerializableExpression" /> that can be serialized into a string.</summary>
+        <returns>
+          <see langword="true" /> if the expression can be serialized; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,10 +72,10 @@
         <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The object that is converted to a string for serial transmission.</param>
+        <param name="context">Defines a context for the serialization of the object being that is converted into a string.</param>
+        <summary>Serializes the specified object into a string.</summary>
+        <returns>A string version of the serializable expression.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

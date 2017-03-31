@@ -1,4 +1,5 @@
 ---
 uid: System.Net.Mail.SmtpDeliveryMethod
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

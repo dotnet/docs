@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the parameter information from the using task as a strongly typed class.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,11 +31,11 @@
         <Parameter Name="required" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="typeOfParameter">To be added.</param>
-        <param name="output">To be added.</param>
-        <param name="required">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the parameter</param>
+        <param name="typeOfParameter">The type of the parameter</param>
+        <param name="output">True if the parameter is both an output and an input parameter. False if the parameter is only an input parameter.</param>
+        <param name="required">True if the parameter must be supplied to each invocation of the task.</param>
+        <summary>Encapsulates a list of parameters declared in the task.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,7 +52,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Name of the property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -70,7 +70,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>True of output properties</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,7 +88,7 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The type of the property</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -106,7 +106,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>True if the property is required.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

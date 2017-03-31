@@ -1,4 +1,4 @@
 ---
 uid: System.Windows.Markup
-internalonly: False
+manager: "martinek"
 ---

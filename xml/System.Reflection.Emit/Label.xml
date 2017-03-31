@@ -21,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a label in the instruction stream. <see langword="Label" /> is used in conjunction with the <see cref="T:System.Reflection.Emit.ILGenerator" /> class.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -46,9 +46,9 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The object to compare with this <see langword="Label" /> instance.</param>
+        <summary>Checks if the given object is an instance of <see langword="Label" /> and is equal to this instance.</summary>
+        <returns>Returns <see langword="true" /> if <paramref name="obj" /> is an instance of <see langword="Label" /> and is equal to this object; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,9 +73,10 @@
         <Parameter Name="obj" Type="System.Reflection.Emit.Label" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The <see cref="T:System.Reflection.Emit.Label" /> to compare to the current instance.</param>
+        <summary>Indicates whether the current instance is equal to the specified <see cref="T:System.Reflection.Emit.Label" />.</summary>
+        <returns>
+          <see langword="true" /> if the value of <paramref name="obj" /> is equal to the value of the current instance; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,8 +99,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Generates a hash code for this instance.</summary>
+        <returns>Returns a hash code for this instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,11 +126,14 @@
         <Parameter Name="b" Type="System.Reflection.Emit.Label" />
       </Parameters>
       <Docs>
-        <param name="a">To be added.</param>
-        <param name="b">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="a">The <see cref="T:System.Reflection.Emit.Label" /> to compare to <c>b</c>.</param>
+        <param name="b">The <see cref="T:System.Reflection.Emit.Label" /> to compare to <c>a</c>.</param>
+        <summary>Indicates whether two <see cref="T:System.Reflection.Emit.Label" /> structures are equal.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="a" /> is equal to <paramref name="b" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Reflection.Emit.Label.Equals%28System.Reflection.Emit.Label%2CSystem.Reflection.Emit.Label%29?displayProperty=fullName>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -154,11 +158,14 @@
         <Parameter Name="b" Type="System.Reflection.Emit.Label" />
       </Parameters>
       <Docs>
-        <param name="a">To be added.</param>
-        <param name="b">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="a">The <see cref="T:System.Reflection.Emit.Label" /> to compare to <c>b</c>.</param>
+        <param name="b">The <see cref="T:System.Reflection.Emit.Label" /> to compare to <c>a</c>.</param>
+        <summary>Indicates whether two <see cref="T:System.Reflection.Emit.Label" /> structures are not equal.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="a" /> is not equal to <paramref name="b" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Reflection.Emit.Label.Compare%28System.Reflection.Emit.Label%2CSystem.Reflection.Emit.Label%29?displayProperty=fullName>]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

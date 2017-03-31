@@ -1,134 +1,167 @@
 ---
 uid: System.Net.Sockets.SocketAsyncEventArgs
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.SocketAsyncEventArgs.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.SocketAsyncEventArgs.SocketError
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.SocketAsyncEventArgs.OnCompleted(System.Net.Sockets.SocketAsyncEventArgs)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.SocketAsyncEventArgs.AcceptSocket
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.SocketAsyncEventArgs.SetBuffer(System.Int32,System.Int32)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.SocketAsyncEventArgs.ReceiveMessageFromPacketInfo
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.SocketAsyncEventArgs.ConnectSocket
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.SocketAsyncEventArgs.Completed
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.SocketAsyncEventArgs.ConnectByNameError
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.SocketAsyncEventArgs.Dispose
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.SocketAsyncEventArgs.RemoteEndPoint
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Sockets.SocketAsyncEventArgs.SetBuffer
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.SocketAsyncEventArgs.SocketFlags
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.SocketAsyncEventArgs.BufferList
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.SocketAsyncEventArgs.Count
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.SocketAsyncEventArgs.LastOperation
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.SocketAsyncEventArgs.Finalize
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.SocketAsyncEventArgs.BytesTransferred
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.SocketAsyncEventArgs.SendPacketsElements
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.SocketAsyncEventArgs.DisconnectReuseSocket
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.SocketAsyncEventArgs.SendPacketsFlags
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.SocketAsyncEventArgs.SetBuffer(System.Byte[],System.Int32,System.Int32)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.SocketAsyncEventArgs.Offset
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.SocketAsyncEventArgs.Buffer
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.SocketAsyncEventArgs.UserToken
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.SocketAsyncEventArgs.SocketClientAccessPolicyProtocol
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.SocketAsyncEventArgs.SendPacketsSendSize
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

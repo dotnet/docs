@@ -22,8 +22,19 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Controls how URI information is escaped.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the <xref:System.Uri.GetComponents%2A> method to specify the level of character escaping in the returned URI.  
+  
+ RFC 2396 defines the standard escaping for URIs, and is available at [http://rfc-editor.org](http://rfc-editor.org).  
+  
+ SafeUnescaped leaves the following characters escaped if the character has a reserved meaning in the requested <xref:System.UriComponents>: "%", "#", "?", "/", "\\", and "@".  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="SafeUnescaped">
@@ -51,7 +62,7 @@
         <ReturnType>System.UriFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Characters that have a reserved meaning in the requested URI components remain escaped. All others are not escaped. See Remarks.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unescaped">
@@ -79,7 +90,7 @@
         <ReturnType>System.UriFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No escaping is performed.</summary>
       </Docs>
     </Member>
     <Member MemberName="UriEscaped">
@@ -107,7 +118,7 @@
         <ReturnType>System.UriFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Escaping is performed according to the rules in RFC 2396.</summary>
       </Docs>
     </Member>
   </Members>

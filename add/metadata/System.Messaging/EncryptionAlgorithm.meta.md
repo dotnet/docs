@@ -1,4 +1,4 @@
 ---
 uid: System.Messaging.EncryptionAlgorithm
-internalonly: False
+manager: "tyoung"
 ---

@@ -1,9 +1,13 @@
 ---
 uid: System.Activities.Presentation.Toolbox.ToolCreatedEventArgs
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.Toolbox.ToolCreatedEventArgs.Components
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

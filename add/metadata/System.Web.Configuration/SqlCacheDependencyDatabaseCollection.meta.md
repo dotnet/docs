@@ -1,64 +1,89 @@
 ---
 uid: System.Web.Configuration.SqlCacheDependencyDatabaseCollection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.SqlCacheDependencyDatabaseCollection.AllKeys
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.SqlCacheDependencyDatabaseCollection.Item(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.SqlCacheDependencyDatabaseCollection.Get(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.SqlCacheDependencyDatabaseCollection.Item(System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Configuration.SqlCacheDependencyDatabaseCollection.Get
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.SqlCacheDependencyDatabaseCollection.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.SqlCacheDependencyDatabaseCollection.GetKey(System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.SqlCacheDependencyDatabaseCollection.Clear
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.SqlCacheDependencyDatabaseCollection.Add(System.Web.Configuration.SqlCacheDependencyDatabase)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.SqlCacheDependencyDatabaseCollection.Set(System.Web.Configuration.SqlCacheDependencyDatabase)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.SqlCacheDependencyDatabaseCollection.Get(System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Configuration.SqlCacheDependencyDatabaseCollection.Item
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.SqlCacheDependencyDatabaseCollection.Remove(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.SqlCacheDependencyDatabaseCollection.RemoveAt(System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

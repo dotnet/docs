@@ -1,9 +1,13 @@
 ---
 uid: System.ServiceModel.Discovery.Configuration.DynamicEndpointCollectionElement
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.Configuration.DynamicEndpointCollectionElement.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

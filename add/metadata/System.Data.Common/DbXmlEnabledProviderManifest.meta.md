@@ -1,39 +1,55 @@
 ---
 uid: System.Data.Common.DbXmlEnabledProviderManifest
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.DbXmlEnabledProviderManifest.#ctor(System.Xml.XmlReader)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.DbXmlEnabledProviderManifest.GetStoreTypes
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.DbXmlEnabledProviderManifest.NamespaceName
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.DbXmlEnabledProviderManifest.GetStoreFunctions
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.DbXmlEnabledProviderManifest.GetFacetDescriptions(System.Data.Metadata.Edm.EdmType)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.DbXmlEnabledProviderManifest.StoreTypeNameToStorePrimitiveType
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.DbXmlEnabledProviderManifest.StoreTypeNameToEdmPrimitiveType
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

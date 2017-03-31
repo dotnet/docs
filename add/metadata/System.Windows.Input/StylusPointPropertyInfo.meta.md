@@ -1,34 +1,53 @@
 ---
 uid: System.Windows.Input.StylusPointPropertyInfo
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.StylusPointPropertyInfo.Maximum
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.StylusPointPropertyInfo.Unit
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Input.StylusPointPropertyInfo.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.StylusPointPropertyInfo.#ctor(System.Windows.Input.StylusPointProperty)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.StylusPointPropertyInfo.Minimum
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Input.StylusPointPropertyInfo.Resolution
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.StylusPointPropertyInfo.#ctor(System.Windows.Input.StylusPointProperty,System.Int32,System.Int32,System.Windows.Input.StylusPointPropertyUnit,System.Single)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

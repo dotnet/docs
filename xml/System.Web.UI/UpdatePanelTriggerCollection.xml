@@ -14,8 +14,19 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a collection of <see cref="T:System.Web.UI.UpdatePanelTrigger" /> objects for an <see cref="T:System.Web.UI.UpdatePanel" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Triggers in the <xref:System.Web.UI.UpdatePanelTrigger> collection are specified by using the **UpdatePanelTrigger Collection Editor** in the designer or by adding them declaratively as `<Triggers>` elements inside the <xref:System.Web.UI.UpdatePanel> control. You can add two types of triggers:  
+  
+-   An <xref:System.Web.UI.AsyncPostBackTrigger> object that can be used to specify that a control can cause an asynchronous postback and refresh the update panel's contents. The <xref:System.Web.UI.AsyncPostBackTrigger> object is used for controls outside an update panel or controls that are not immediate child controls of an <xref:System.Web.UI.UpdatePanel> control.  
+  
+-   A <xref:System.Web.UI.PostBackTrigger> object that can be used to specify that a postback control inside an <xref:System.Web.UI.UpdatePanel> control can cause a synchronous postback and a full-page refresh.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,9 +42,16 @@
         <Parameter Name="owner" Type="System.Web.UI.UpdatePanel" />
       </Parameters>
       <Docs>
-        <param name="owner">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="owner">The <see cref="T:System.Web.UI.UpdatePanel" /> control that the <see cref="T:System.Web.UI.UpdatePanelTriggerCollection" /> belongs to.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.UpdatePanelTrigger" /> collection class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You typically add triggers to an <xref:System.Web.UI.UpdatePanel> control by using the **UpdatePanelTrigger Collection Editor** in the designer or by adding them declaratively as `<Triggers>` elements inside the <xref:System.Web.UI.UpdatePanel> control.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearItems">
@@ -50,7 +68,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes all elements from the <see cref="T:System.Web.UI.UpdatePanelTriggerCollection" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,10 +89,17 @@
         <Parameter Name="item" Type="System.Web.UI.UpdatePanelTrigger" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index at which the trigger should be inserted.</param>
+        <param name="item">The trigger to insert. The value can be <see langword="null" /> for reference types.</param>
+        <summary>Inserts an <see cref="T:System.Web.UI.UpdatePanelTrigger" /> object into the <see cref="T:System.Web.UI.UpdatePanelTriggerCollection" /> object at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can add <xref:System.Web.UI.AsyncPostBackTrigger> objects, <xref:System.Web.UI.PostBackTrigger> objects, or any custom trigger that derives from <xref:System.Web.UI.UpdatePanelTrigger>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Owner">
@@ -90,8 +115,8 @@
         <ReturnType>System.Web.UI.UpdatePanel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a reference to the <see cref="T:System.Web.UI.UpdatePanel" /> control that the <see cref="T:System.Web.UI.UpdatePanelTriggerCollection" /> belongs to.</summary>
+        <value>An <see cref="T:System.Web.UI.UpdatePanel" /> control.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,8 +136,8 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The zero-based index of the element to remove.</param>
+        <summary>Removes the element at the specified index of the <see cref="T:System.Web.UI.UpdatePanelTriggerCollection" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,10 +158,17 @@
         <Parameter Name="item" Type="System.Web.UI.UpdatePanelTrigger" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index of the trigger to replace.</param>
+        <param name="item">The new value for the trigger at the specified index. The value can be <see langword="null" /> for reference types.</param>
+        <summary>Replaces the trigger at the specified index in the <see cref="T:System.Web.UI.UpdatePanelTriggerCollection" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can replace an element in the <xref:System.Web.UI.UpdatePanelTriggerCollection> object with an <xref:System.Web.UI.AsyncPostBackTrigger> object, a <xref:System.Web.UI.PostBackTrigger> object, or any custom trigger that derives from <xref:System.Web.UI.UpdatePanelTrigger>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

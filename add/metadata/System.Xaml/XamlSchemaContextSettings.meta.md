@@ -1,24 +1,29 @@
 ---
 uid: System.Xaml.XamlSchemaContextSettings
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlSchemaContextSettings.#ctor(System.Xaml.XamlSchemaContextSettings)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlSchemaContextSettings.#ctor
-internalonly: False
+manager: "martinek"
+---
+
+---
+uid: System.Xaml.XamlSchemaContextSettings.#ctor
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlSchemaContextSettings.SupportMarkupExtensionsWithDuplicateArity
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlSchemaContextSettings.FullyQualifyAssemblyNamesInClrNamespaces
-internalonly: False
+manager: "martinek"
 ---

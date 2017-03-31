@@ -1,69 +1,74 @@
 ---
 uid: System.Xaml.XamlObjectReader
-internalonly: False
+manager: "martinek"
+---
+
+---
+uid: System.Xaml.XamlObjectReader.#ctor
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlObjectReader.#ctor(System.Object,System.Xaml.XamlObjectReaderSettings)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlObjectReader.Namespace
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlObjectReader.#ctor(System.Object,System.Xaml.XamlSchemaContext,System.Xaml.XamlObjectReaderSettings)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlObjectReader.Instance
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlObjectReader.SchemaContext
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlObjectReader.#ctor(System.Object)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlObjectReader.Type
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlObjectReader.Value
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlObjectReader.NodeType
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlObjectReader.#ctor(System.Object,System.Xaml.XamlSchemaContext)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlObjectReader.Member
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlObjectReader.Read
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlObjectReader.IsEof
-internalonly: False
+manager: "martinek"
 ---

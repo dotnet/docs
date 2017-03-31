@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides client validation settings for the application.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.Web.UI.UnobtrusiveValidationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the client validation mode for the application.</summary>
+        <value>The client validation mode for the application.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

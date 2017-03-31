@@ -1,14 +1,17 @@
 ---
 uid: System.Web.ISubscriptionToken
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ISubscriptionToken.Unsubscribe
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ISubscriptionToken.IsActive
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -1,4 +1,5 @@
 ---
 uid: System.Web.DynamicData.Design
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -1,4 +1,6 @@
 ---
 uid: System.Collections.Concurrent
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

@@ -1,19 +1,26 @@
 ---
 uid: System.Windows.Documents.GetPageNumberCompletedEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Documents.GetPageNumberCompletedEventArgs.PageNumber
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Documents.GetPageNumberCompletedEventArgs.ContentPosition
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Documents.GetPageNumberCompletedEventArgs.#ctor(System.Windows.Documents.ContentPosition,System.Int32,System.Exception,System.Boolean,System.Object)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

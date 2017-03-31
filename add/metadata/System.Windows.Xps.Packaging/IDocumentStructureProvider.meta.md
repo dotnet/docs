@@ -1,9 +1,9 @@
 ---
 uid: System.Windows.Xps.Packaging.IDocumentStructureProvider
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Packaging.IDocumentStructureProvider.AddDocumentStructure
-internalonly: False
+manager: "leannef"
 ---

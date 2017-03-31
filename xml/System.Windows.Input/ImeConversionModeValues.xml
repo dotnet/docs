@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Describes a mode of input conversion to be performed by an input method.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>System.Windows.Input.ImeConversionModeValues</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The input method uses alphanumeric conversion mode.</summary>
       </Docs>
     </Member>
     <Member MemberName="CharCode">
@@ -48,7 +48,7 @@
         <ReturnType>System.Windows.Input.ImeConversionModeValues</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The input method uses character code conversion mode.</summary>
       </Docs>
     </Member>
     <Member MemberName="DoNotCare">
@@ -64,7 +64,7 @@
         <ReturnType>System.Windows.Input.ImeConversionModeValues</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The input method does not care what input conversion method is used; the actual conversion method is indeterminate.</summary>
       </Docs>
     </Member>
     <Member MemberName="Eudc">
@@ -80,7 +80,7 @@
         <ReturnType>System.Windows.Input.ImeConversionModeValues</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The input method uses EUDC (end user defined character) conversion mode.</summary>
       </Docs>
     </Member>
     <Member MemberName="Fixed">
@@ -96,7 +96,7 @@
         <ReturnType>System.Windows.Input.ImeConversionModeValues</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The input method uses fixed conversion mode.</summary>
       </Docs>
     </Member>
     <Member MemberName="FullShape">
@@ -112,7 +112,7 @@
         <ReturnType>System.Windows.Input.ImeConversionModeValues</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The input method uses full-shape conversion mode.</summary>
       </Docs>
     </Member>
     <Member MemberName="Katakana">
@@ -128,7 +128,7 @@
         <ReturnType>System.Windows.Input.ImeConversionModeValues</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The input method uses Katakana conversion mode.</summary>
       </Docs>
     </Member>
     <Member MemberName="Native">
@@ -144,7 +144,7 @@
         <ReturnType>System.Windows.Input.ImeConversionModeValues</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The input method uses a native character (Hiragana, Hangul, Chinese) conversion mode.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoConversion">
@@ -160,7 +160,7 @@
         <ReturnType>System.Windows.Input.ImeConversionModeValues</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The input method will not perform any input conversion.</summary>
       </Docs>
     </Member>
     <Member MemberName="Roman">
@@ -176,7 +176,7 @@
         <ReturnType>System.Windows.Input.ImeConversionModeValues</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The input method uses Roman character conversion mode.</summary>
       </Docs>
     </Member>
     <Member MemberName="Symbol">
@@ -192,7 +192,7 @@
         <ReturnType>System.Windows.Input.ImeConversionModeValues</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The input method uses symbol conversion mode.</summary>
       </Docs>
     </Member>
   </Members>

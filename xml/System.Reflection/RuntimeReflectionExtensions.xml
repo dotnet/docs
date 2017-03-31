@@ -20,7 +20,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides methods that retrieve information about types at run time.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -49,9 +49,9 @@
         <Parameter Name="del" Type="System.Delegate" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="del">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="del">The delegate to examine.</param>
+        <summary>Gets an object that represents the method represented by the specified delegate.</summary>
+        <returns>An object that represents the method.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,9 +80,9 @@
         <Parameter Name="method" Type="System.Reflection.MethodInfo" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="method">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="method">The method to retrieve information about.</param>
+        <summary>Retrieves an object that represents the specified method on the direct or indirect base class where the method was first declared.</summary>
+        <returns>An object that represents the specified method's initial declaration on a base class.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,10 +112,10 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="type">The type that contains the event.</param>
+        <param name="name">The name of the event.</param>
+        <summary>Retrieves an object that represents the specified event.</summary>
+        <returns>An object that represents the specified event, or <see langword="null" /> if the event is not found.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,10 +144,17 @@
         <Parameter Name="type" Type="System.Type" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="type">The type that contains the events.</param>
+        <summary>Retrieves a collection that represents all the events defined on a specified type.</summary>
+        <returns>A collection of events for the specified type.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns all events defined on the specified type, including inherited, non-public, instance, and static events.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRuntimeField">
@@ -176,10 +183,10 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="type">The type that contains the field.</param>
+        <param name="name">The name of the field.</param>
+        <summary>Retrieves an object that represents a specified field.</summary>
+        <returns>An object that represents the specified field, or <see langword="null" /> if the field is not found.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -208,10 +215,17 @@
         <Parameter Name="type" Type="System.Type" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="type">The type that contains the fields.</param>
+        <summary>Retrieves a collection that represents all the fields defined on a specified type.</summary>
+        <returns>A collection of fields for the specified type.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns all fields that are defined on the specified type, including inherited, non-public, instance, and static fields.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRuntimeInterfaceMap">
@@ -240,10 +254,10 @@
         <Parameter Name="interfaceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="typeInfo">To be added.</param>
-        <param name="interfaceType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="typeInfo">The type to retrieve a mapping for.</param>
+        <param name="interfaceType">The interface to retrieve a mapping for.</param>
+        <summary>Returns an interface mapping for the specified type and the specified interface.</summary>
+        <returns>An object that represents the interface mapping for the specified interface and type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -274,11 +288,11 @@
         <Parameter Name="parameters" Type="System.Type[]" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <param name="name">To be added.</param>
-        <param name="parameters">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="type">The type that contains the method.</param>
+        <param name="name">The name of the method.</param>
+        <param name="parameters">An array that contains the method's parameters.</param>
+        <summary>Retrieves an object that represents a specified method.</summary>
+        <returns>An object that represents the specified method, or <see langword="null" /> if the method is not found.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -307,10 +321,17 @@
         <Parameter Name="type" Type="System.Type" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="type">The type that contains the methods.</param>
+        <summary>Retrieves a collection that represents all methods defined on a specified type.</summary>
+        <returns>A collection of methods for the specified type.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns all methods defined on the specified type, including inherited, non-public, instance, and static methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRuntimeProperties">
@@ -338,10 +359,17 @@
         <Parameter Name="type" Type="System.Type" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="type">The type that contains the properties.</param>
+        <summary>Retrieves a collection that represents all the properties defined on a specified type.</summary>
+        <returns>A collection of properties for the specified type.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns all properties defined on the specified type, including inherited, non-public, instance, and static properties.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRuntimeProperty">
@@ -370,10 +398,10 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="type">The type that contains the property.</param>
+        <param name="name">The name of the property.</param>
+        <summary>Retrieves an object that represents a specified property.</summary>
+        <returns>An object that represents the specified property, or <see langword="null" /> if the property is not found.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

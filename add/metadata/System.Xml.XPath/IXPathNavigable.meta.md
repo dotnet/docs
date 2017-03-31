@@ -1,9 +1,13 @@
 ---
 uid: System.Xml.XPath.IXPathNavigable
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.XPath.IXPathNavigable.CreateNavigator
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains properties that expose the system resources that concern fonts.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,9 +28,20 @@
         <ReturnType>System.Windows.Media.FontFamily</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the metric that determines the font family of the caption of the nonclient area of a nonminimized window.</summary>
+        <value>A font family.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Obtain the metric from SPI_GETNONCLIENTMETRICS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+  
+<a name="xamlAttributeUsage_CaptionFontFamily"></a>   
+## XAML Attribute Usage  
+ <*object property*="{ SystemFonts.CaptionFontFamily`}`"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CaptionFontFamilyKey">
@@ -46,9 +57,19 @@
         <ReturnType>System.Windows.ResourceKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Windows.ResourceKey" /> for the <see cref="P:System.Windows.SystemFonts.CaptionFontFamily" /> property.</summary>
+        <value>A resource key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_CaptionFontFamilyKey"></a>   
+## XAML Attribute Usage  
+ \<*object property*="{ { SystemFonts.CaptionFontFamilyKey}}"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CaptionFontSize">
@@ -64,9 +85,20 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the metric that determines the caption font-size for the nonclient area of a nonminimized window.</summary>
+        <value>A font size.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Obtain the metric from SPI_GETNONCLIENTMETRICS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+  
+<a name="xamlAttributeUsage_CaptionFontSize"></a>   
+## XAML Attribute Usage  
+ <*object property*="{ SystemFonts.CaptionFontSize`}`"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CaptionFontSizeKey">
@@ -82,9 +114,19 @@
         <ReturnType>System.Windows.ResourceKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Windows.ResourceKey" /> for the <see cref="P:System.Windows.SystemFonts.CaptionFontSize" /> property.</summary>
+        <value>A resource key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_CaptionFontSizeKey"></a>   
+## XAML Attribute Usage  
+ \<*object property*="{ { SystemFonts.CaptionFontSizeKey}}"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CaptionFontStyle">
@@ -100,9 +142,20 @@
         <ReturnType>System.Windows.FontStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the metric that determines the caption font-style for the nonclient area of a nonminimized window.</summary>
+        <value>A font style.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Obtain the metric from SPI_GETNONCLIENTMETRICS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+  
+<a name="xamlAttributeUsage_CaptionFontStyle"></a>   
+## XAML Attribute Usage  
+ <*object property*="{ SystemFonts.CaptionFontStyle`}`"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CaptionFontStyleKey">
@@ -118,9 +171,19 @@
         <ReturnType>System.Windows.ResourceKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Windows.ResourceKey" /> for the <see cref="P:System.Windows.SystemFonts.CaptionFontStyle" /> property.</summary>
+        <value>A resource key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_CaptionFontStyleKey"></a>   
+## XAML Attribute Usage  
+ \<*object property*="{ { SystemFonts.CaptionFontStyleKey}}"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CaptionFontTextDecorations">
@@ -136,9 +199,20 @@
         <ReturnType>System.Windows.TextDecorationCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the metric that determines the caption text-decorations for the nonclient area of a nonminimized window.</summary>
+        <value>A collection of text decorations.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Obtain the metric from SPI_GETNONCLIENTMETRICS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+  
+<a name="xamlAttributeUsage_CaptionFontTextDecorations"></a>   
+## XAML Attribute Usage  
+ <*object property*="{ SystemFonts.CaptionFontTextDecorations`}`"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CaptionFontTextDecorationsKey">
@@ -154,9 +228,19 @@
         <ReturnType>System.Windows.ResourceKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Windows.ResourceKey" /> for the <see cref="P:System.Windows.SystemFonts.CaptionFontTextDecorations" /> property.</summary>
+        <value>A resource key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_CaptionFontTextDecorationsKey"></a>   
+## XAML Attribute Usage  
+ \<*object property*="{ { SystemFonts.CaptionFontTextDecorationsKey}}"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CaptionFontWeight">
@@ -172,9 +256,20 @@
         <ReturnType>System.Windows.FontWeight</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the metric that determines the caption font-weight for the nonclient area of a nonminimized window.</summary>
+        <value>A font weight.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Obtain the metric from SPI_GETNONCLIENTMETRICS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+  
+<a name="xamlAttributeUsage_CaptionFontWeight"></a>   
+## XAML Attribute Usage  
+ <*object property*="{ SystemFonts.CaptionFontWeight`}`"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CaptionFontWeightKey">
@@ -190,9 +285,19 @@
         <ReturnType>System.Windows.ResourceKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Windows.ResourceKey" /> for the <see cref="P:System.Windows.SystemFonts.CaptionFontWeight" /> property.</summary>
+        <value>A resource key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_CaptionFontWeightKey"></a>   
+## XAML Attribute Usage  
+ \<*object property*="{ { SystemFonts.CaptionFontWeightKey}}"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IconFontFamily">
@@ -208,9 +313,20 @@
         <ReturnType>System.Windows.Media.FontFamily</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the font family from the logical font information for the current icon-title font.</summary>
+        <value>A font family.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Obtain the font information from SPI_GETICONTITLELOGFONT. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+  
+<a name="xamlAttributeUsage_IconFontFamily"></a>   
+## XAML Attribute Usage  
+ <*object property*="{ SystemFonts.IconFontFamily`}`"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IconFontFamilyKey">
@@ -226,9 +342,19 @@
         <ReturnType>System.Windows.ResourceKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Windows.ResourceKey" /> for the <see cref="P:System.Windows.SystemFonts.IconFontFamily" /> property.</summary>
+        <value>A resource key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_IconFontFamilyKey"></a>   
+## XAML Attribute Usage  
+ \<*object property*="{ { SystemFonts.IconFontFamilyKey}}"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IconFontSize">
@@ -244,9 +370,20 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the font size from the logical font information for the current icon-title font.</summary>
+        <value>A font size.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Obtain the font information from SPI_GETICONTITLELOGFONT. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+  
+<a name="xamlAttributeUsage_IconFontSize"></a>   
+## XAML Attribute Usage  
+ <*object property*="{ SystemFonts.IconFontSize`}`"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IconFontSizeKey">
@@ -262,9 +399,19 @@
         <ReturnType>System.Windows.ResourceKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Windows.ResourceKey" /> for the <see cref="P:System.Windows.SystemFonts.IconFontSize" /> property.</summary>
+        <value>A resource key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_IconFontSizeKey"></a>   
+## XAML Attribute Usage  
+ \<*object property*="{ { SystemFonts.IconFontSizeKey}}"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IconFontStyle">
@@ -280,9 +427,20 @@
         <ReturnType>System.Windows.FontStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the font style from the logical font information for the current icon-title font.</summary>
+        <value>A font style.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Obtain the font information from SPI_GETICONTITLELOGFONT. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+  
+<a name="xamlAttributeUsage_IconFontStyle"></a>   
+## XAML Attribute Usage  
+ <*object property*="{ SystemFonts.IconFontStyle`}`"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IconFontStyleKey">
@@ -298,9 +456,19 @@
         <ReturnType>System.Windows.ResourceKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Windows.ResourceKey" /> for the <see cref="P:System.Windows.SystemFonts.IconFontStyle" /> property.</summary>
+        <value>A resource key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_IconFontStyleKey"></a>   
+## XAML Attribute Usage  
+ \<*object property*="{ { SystemFonts.IconFontStyleKey}}"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IconFontTextDecorations">
@@ -316,9 +484,20 @@
         <ReturnType>System.Windows.TextDecorationCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the text decorations from the logical font information for the current icon-title font.</summary>
+        <value>A collection of text decorations.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Obtain the font information from SPI_GETICONTITLELOGFONT. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+  
+<a name="xamlAttributeUsage_IconFontTextDecorations"></a>   
+## XAML Attribute Usage  
+ <*object property*="{ SystemFonts.IconFontTextDecorations`}`"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IconFontTextDecorationsKey">
@@ -334,9 +513,19 @@
         <ReturnType>System.Windows.ResourceKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Windows.ResourceKey" /> for the <see cref="P:System.Windows.SystemFonts.IconFontTextDecorations" /> property.</summary>
+        <value>A resource key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_IconFontTextDecorationsKey"></a>   
+## XAML Attribute Usage  
+ \<*object property*="{ { SystemFonts.IconFontTextDecorationsKey}}"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IconFontWeight">
@@ -352,9 +541,20 @@
         <ReturnType>System.Windows.FontWeight</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the font weight from the logical font information for the current icon-title font.</summary>
+        <value>A font weight.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Obtain the font information from SPI_GETICONTITLELOGFONT. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+  
+<a name="xamlAttributeUsage_IconFontWeight"></a>   
+## XAML Attribute Usage  
+ <*object property*="{ SystemFonts.IconFontWeight`}`"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IconFontWeightKey">
@@ -370,9 +570,19 @@
         <ReturnType>System.Windows.ResourceKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Windows.ResourceKey" /> for the <see cref="P:System.Windows.SystemFonts.IconFontWeight" /> property.</summary>
+        <value>A resource key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_IconFontWeightKey"></a>   
+## XAML Attribute Usage  
+ \<*object property*="{ { SystemFonts.IconFontWeightKey}}"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MenuFontFamily">
@@ -388,9 +598,20 @@
         <ReturnType>System.Windows.Media.FontFamily</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the metric that determines the font family for menu text.</summary>
+        <value>A font family.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Obtain the metric from SPI_GETNONCLIENTMETRICS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+  
+<a name="xamlAttributeUsage_MenuFontFamily"></a>   
+## XAML Attribute Usage  
+ <*object property*="{ SystemFonts.MenuFontFamily`}`"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MenuFontFamilyKey">
@@ -406,9 +627,19 @@
         <ReturnType>System.Windows.ResourceKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Windows.ResourceKey" /> for the <see cref="P:System.Windows.SystemFonts.MenuFontFamily" /> property.</summary>
+        <value>A resource key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_MenuFontFamilyKey"></a>   
+## XAML Attribute Usage  
+ \<*object property*="{ { SystemFonts.MenuFontFamilyKey}}"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MenuFontSize">
@@ -424,9 +655,20 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the metric that determines the font size of menu text.</summary>
+        <value>A font size.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Obtain the metric from SPI_GETNONCLIENTMETRICS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+  
+<a name="xamlAttributeUsage_MenuFontSize"></a>   
+## XAML Attribute Usage  
+ <*object property*="{ SystemFonts.MenuFontSize`}`"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MenuFontSizeKey">
@@ -442,9 +684,19 @@
         <ReturnType>System.Windows.ResourceKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Windows.ResourceKey" /> for the <see cref="P:System.Windows.SystemFonts.MenuFontSize" /> property.</summary>
+        <value>A resource key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_MenuFontSizeKey"></a>   
+## XAML Attribute Usage  
+ \<*object property*="{ { SystemFonts.MenuFontSizeKey}}"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MenuFontStyle">
@@ -460,9 +712,20 @@
         <ReturnType>System.Windows.FontStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the metric that determines the font style for menu text.</summary>
+        <value>A font style.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Obtain the metric from SPI_GETNONCLIENTMETRICS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+  
+<a name="xamlAttributeUsage_MenuFontStyle"></a>   
+## XAML Attribute Usage  
+ <*object property*="{ SystemFonts.MenuFontStyle`}`"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MenuFontStyleKey">
@@ -478,9 +741,19 @@
         <ReturnType>System.Windows.ResourceKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Windows.ResourceKey" /> for the <see cref="P:System.Windows.SystemFonts.MenuFontStyle" /> property.</summary>
+        <value>A resource key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_MenuFontStyleKey"></a>   
+## XAML Attribute Usage  
+ \<*object property*="{ { SystemFonts.MenuFontStyleKey}}"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MenuFontTextDecorations">
@@ -496,9 +769,20 @@
         <ReturnType>System.Windows.TextDecorationCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the metric that determines the text decorations for menu text.</summary>
+        <value>A collection of text decorations.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Obtain the metric from SPI_GETNONCLIENTMETRICS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+  
+<a name="xamlAttributeUsage_MenuFontTextDecorations"></a>   
+## XAML Attribute Usage  
+ <*object property*="{ SystemFonts.MenuFontTextDecorations`}`"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MenuFontTextDecorationsKey">
@@ -514,9 +798,19 @@
         <ReturnType>System.Windows.ResourceKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Windows.ResourceKey" /> for the <see cref="P:System.Windows.SystemFonts.MenuFontTextDecorations" /> property.</summary>
+        <value>A resource key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_MenuFontTextDecorationsKey"></a>   
+## XAML Attribute Usage  
+ \<*object property*="{ { SystemFonts.MenuFontTextDecorationsKey}}"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MenuFontWeight">
@@ -532,9 +826,20 @@
         <ReturnType>System.Windows.FontWeight</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the metric that determines the font weight for menu text.</summary>
+        <value>A font weight.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Obtain the metric from SPI_GETNONCLIENTMETRICS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+  
+<a name="xamlAttributeUsage_MenuFontWeight"></a>   
+## XAML Attribute Usage  
+ <*object property*="{ SystemFonts.MenuFontWeight`}`"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MenuFontWeightKey">
@@ -550,9 +855,19 @@
         <ReturnType>System.Windows.ResourceKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Windows.ResourceKey" /> for the <see cref="P:System.Windows.SystemFonts.MenuFontWeight" /> property.</summary>
+        <value>A resource key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_MenuFontWeightKey"></a>   
+## XAML Attribute Usage  
+ \<*object property*="{ { SystemFonts.MenuFontWeightKey}}"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MessageFontFamily">
@@ -568,9 +883,20 @@
         <ReturnType>System.Windows.Media.FontFamily</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the metric that determines the font family for message box text.</summary>
+        <value>A font family.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Obtain the metric from SPI_GETNONCLIENTMETRICS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+  
+<a name="xamlAttributeUsage_MessageFontFamily"></a>   
+## XAML Attribute Usage  
+ <*object property*="{ SystemFonts.MessageFontFamily`}`"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MessageFontFamilyKey">
@@ -586,9 +912,19 @@
         <ReturnType>System.Windows.ResourceKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Windows.ResourceKey" /> for the <see cref="P:System.Windows.SystemFonts.MessageFontFamily" /> property.</summary>
+        <value>A resource key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_MessageFontFamilyKey"></a>   
+## XAML Attribute Usage  
+ \<*object property*="{ { SystemFonts.MessageFontFamilyKey}}"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MessageFontSize">
@@ -604,9 +940,20 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the metric that determines the font size of message box text.</summary>
+        <value>A font size.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Obtain the metric from SPI_GETNONCLIENTMETRICS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+  
+<a name="xamlAttributeUsage_MessageFontSize"></a>   
+## XAML Attribute Usage  
+ <*object property*="{ SystemFonts.MessageFontSize`}`"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MessageFontSizeKey">
@@ -622,9 +969,19 @@
         <ReturnType>System.Windows.ResourceKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Windows.ResourceKey" /> for the <see cref="P:System.Windows.SystemFonts.MessageFontSize" /> property.</summary>
+        <value>A resource key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_MessageFontSizeKey"></a>   
+## XAML Attribute Usage  
+ \<*object property*="{ { SystemFonts.MessageFontSizeKey}}"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MessageFontStyle">
@@ -640,9 +997,20 @@
         <ReturnType>System.Windows.FontStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the metric that determines the font style for message box text.</summary>
+        <value>A font style.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Obtain the metric from SPI_GETNONCLIENTMETRICS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+  
+<a name="xamlAttributeUsage_MessageFontStyle"></a>   
+## XAML Attribute Usage  
+ <*object property*="{ SystemFonts.MessageFontStyle`}`"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MessageFontStyleKey">
@@ -658,9 +1026,19 @@
         <ReturnType>System.Windows.ResourceKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Windows.ResourceKey" /> for the <see cref="P:System.Windows.SystemFonts.MessageFontStyle" /> property.</summary>
+        <value>A resource key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_MessageFontStyleKey"></a>   
+## XAML Attribute Usage  
+ \<*object property*="{ { SystemFonts.MessageFontStyleKey}}"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MessageFontTextDecorations">
@@ -676,9 +1054,20 @@
         <ReturnType>System.Windows.TextDecorationCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the metric that determines the decorations for message box text.</summary>
+        <value>A collection of text decorations.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Obtain the metric from SPI_GETNONCLIENTMETRICS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+  
+<a name="xamlAttributeUsage_MessageFontTextDecorations"></a>   
+## XAML Attribute Usage  
+ <*object property*="{ SystemFonts.MessageFontTextDecorations`}`"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MessageFontTextDecorationsKey">
@@ -694,9 +1083,19 @@
         <ReturnType>System.Windows.ResourceKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Windows.ResourceKey" /> for the <see cref="P:System.Windows.SystemFonts.MessageFontTextDecorations" /> property.</summary>
+        <value>A resource key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_MessageFontTextDecorationsKey"></a>   
+## XAML Attribute Usage  
+ \<*object property*="{ { SystemFonts.MessageFontTextDecorationsKey}}"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MessageFontWeight">
@@ -712,9 +1111,20 @@
         <ReturnType>System.Windows.FontWeight</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the metric that determines the font weight for message box text.</summary>
+        <value>A font weight.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Obtain the metric from SPI_GETNONCLIENTMETRICS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+  
+<a name="xamlAttributeUsage_MessageFontWeight"></a>   
+## XAML Attribute Usage  
+ \<*object property*="{ SystemFonts.MessageFontWeight}"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MessageFontWeightKey">
@@ -730,9 +1140,19 @@
         <ReturnType>System.Windows.ResourceKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Windows.ResourceKey" /> for the <see cref="P:System.Windows.SystemFonts.MessageFontWeight" /> property.</summary>
+        <value>A resource key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_MessageFontWeightKey"></a>   
+## XAML Attribute Usage  
+ \<*object property*="{ { SystemFonts.MessageFontWeightKey}}"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SmallCaptionFontFamily">
@@ -748,9 +1168,20 @@
         <ReturnType>System.Windows.Media.FontFamily</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the metric that determines the font family of the small-caption text for the nonclient area of a nonminimized window.</summary>
+        <value>A font family.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Obtain the metric from SPI_GETNONCLIENTMETRICS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+  
+<a name="xamlAttributeUsage_SmallCaptionFontFamily"></a>   
+## XAML Attribute Usage  
+ <*object property*="{ SystemFonts.SmallCaptionFontFamily`}`"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SmallCaptionFontFamilyKey">
@@ -766,9 +1197,19 @@
         <ReturnType>System.Windows.ResourceKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Windows.ResourceKey" /> for the <see cref="P:System.Windows.SystemFonts.SmallCaptionFontFamily" /> property.</summary>
+        <value>A resource key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_SmallCaptionFontFamilyKey"></a>   
+## XAML Attribute Usage  
+ \<*object property*="{ { SystemFonts.SmallCaptionFontFamilyKey}}"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SmallCaptionFontSize">
@@ -784,9 +1225,20 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the metric that determines the font size of the small-caption text for the nonclient area of a nonminimized window.</summary>
+        <value>A font size.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Obtain the metric from SPI_GETNONCLIENTMETRICS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+  
+<a name="xamlAttributeUsage_SmallCaptionFontSize"></a>   
+## XAML Attribute Usage  
+ <*object property*="{ SystemFonts.SmallCaptionFontSize`}`"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SmallCaptionFontSizeKey">
@@ -802,9 +1254,19 @@
         <ReturnType>System.Windows.ResourceKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Windows.ResourceKey" /> for the <see cref="P:System.Windows.SystemFonts.SmallCaptionFontSize" /> property.</summary>
+        <value>A resource key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_SmallCaptionFontSizeKey"></a>   
+## XAML Attribute Usage  
+ \<*object property*="{ { SystemFonts.SmallCaptionFontSizeKey}}"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SmallCaptionFontStyle">
@@ -820,9 +1282,20 @@
         <ReturnType>System.Windows.FontStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the metric that determines the font style of the small-caption text for the nonclient area of a nonminimized window.</summary>
+        <value>A font style.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Obtain the metric from SPI_GETNONCLIENTMETRICS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+  
+<a name="xamlAttributeUsage_SmallCaptionFontStyle"></a>   
+## XAML Attribute Usage  
+ <*object property*="{ SystemFonts.SmallCaptionFontStyle`}`"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SmallCaptionFontStyleKey">
@@ -838,9 +1311,19 @@
         <ReturnType>System.Windows.ResourceKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Windows.ResourceKey" /> for the <see cref="P:System.Windows.SystemFonts.SmallCaptionFontStyle" /> property.</summary>
+        <value>A resource key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_SmallCaptionFontStyleKey"></a>   
+## XAML Attribute Usage  
+ \<*object property*="{ { SystemFonts.SmallCaptionFontStyleKey}}"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SmallCaptionFontTextDecorations">
@@ -856,9 +1339,20 @@
         <ReturnType>System.Windows.TextDecorationCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the metric that determines the decorations of the small-caption text for the nonclient area of a nonminimized window.</summary>
+        <value>A collection of text decorations.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Obtain the metric from SPI_GETNONCLIENTMETRICS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+  
+<a name="xamlAttributeUsage_SmallCaptionFontTextDecorations"></a>   
+## XAML Attribute Usage  
+ <*object property*="{ SystemFonts.SmallCaptionFontTextDecorations`}`"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SmallCaptionFontTextDecorationsKey">
@@ -874,9 +1368,19 @@
         <ReturnType>System.Windows.ResourceKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Windows.ResourceKey" /> for the <see cref="P:System.Windows.SystemFonts.SmallCaptionFontTextDecorations" /> property.</summary>
+        <value>A resource key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_SmallCaptionFontTextDecorationsKey"></a>   
+## XAML Attribute Usage  
+ \<*object property*="{ { SystemFonts.SmallCaptionFontTextDecorationsKey}}"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SmallCaptionFontWeight">
@@ -892,9 +1396,20 @@
         <ReturnType>System.Windows.FontWeight</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the metric that determines the font weight of the small-caption text for the nonclient area of a nonminimized window.</summary>
+        <value>A font weight.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Obtain the metric from SPI_GETNONCLIENTMETRICS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+  
+<a name="xamlAttributeUsage_SmallCaptionFontWeight"></a>   
+## XAML Attribute Usage  
+ <*object property*="{ SystemFonts.SmallCaptionFontWeight`}`"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SmallCaptionFontWeightKey">
@@ -910,9 +1425,19 @@
         <ReturnType>System.Windows.ResourceKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Windows.ResourceKey" /> for the <see cref="P:System.Windows.SystemFonts.SmallCaptionFontWeight" /> property.</summary>
+        <value>A resource key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_SmallCaptionFontWeightKey"></a>   
+## XAML Attribute Usage  
+ \<*object property*="{ { SystemFonts.SmallCaptionFontWeightKey}}"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StatusFontFamily">
@@ -928,9 +1453,20 @@
         <ReturnType>System.Windows.Media.FontFamily</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the metric that determines the font family of the text used in status bars and ToolTips for the nonclient area of a nonminimized window.</summary>
+        <value>A font family.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Obtain the metric from SPI_GETNONCLIENTMETRICS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+  
+<a name="xamlAttributeUsage_StatusFontFamily"></a>   
+## XAML Attribute Usage  
+ <*object property*="{ SystemFonts.StatusFontFamily`}`"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StatusFontFamilyKey">
@@ -946,9 +1482,19 @@
         <ReturnType>System.Windows.ResourceKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Windows.ResourceKey" /> for the <see cref="P:System.Windows.SystemFonts.StatusFontFamily" /> property.</summary>
+        <value>A resource key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_StatusFontFamilyKey"></a>   
+## XAML Attribute Usage  
+ \<*object property*="{ { SystemFonts.StatusFontFamilyKey}}"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StatusFontSize">
@@ -964,9 +1510,20 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the metric that determines the font size of the text used in status bars and ToolTips for the nonclient area of a nonminimized window.</summary>
+        <value>A font size.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Obtain the metric from SPI_GETNONCLIENTMETRICS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+  
+<a name="xamlAttributeUsage_StatusFontSize"></a>   
+## XAML Attribute Usage  
+ <*object property*="{ SystemFonts.StatusFontSize`}`"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StatusFontSizeKey">
@@ -982,9 +1539,19 @@
         <ReturnType>System.Windows.ResourceKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Windows.ResourceKey" /> for the <see cref="P:System.Windows.SystemFonts.StatusFontSize" /> property.</summary>
+        <value>A resource key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_StatusFontSizeKey"></a>   
+## XAML Attribute Usage  
+ \<*object property*="{ { SystemFonts.StatusFontSizeKey}}"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StatusFontStyle">
@@ -1000,9 +1567,20 @@
         <ReturnType>System.Windows.FontStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the metric that determines the font style of the text used in status bars and ToolTips for the nonclient area of a nonminimized window.</summary>
+        <value>A font style.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Obtain the metric from SPI_GETNONCLIENTMETRICS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+  
+<a name="xamlAttributeUsage_StatusFontStyle"></a>   
+## XAML Attribute Usage  
+ <*object property*="{ SystemFonts.StatusFontStyle`}`"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StatusFontStyleKey">
@@ -1018,9 +1596,19 @@
         <ReturnType>System.Windows.ResourceKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Windows.ResourceKey" /> for the <see cref="P:System.Windows.SystemFonts.StatusFontStyle" /> property.</summary>
+        <value>A resource key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_StatusFontStyleKey"></a>   
+## XAML Attribute Usage  
+ \<*object property*="{ { SystemFonts.StatusFontStyleKey}}"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StatusFontTextDecorations">
@@ -1036,9 +1624,20 @@
         <ReturnType>System.Windows.TextDecorationCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the metric that determines the decorations of the text used in status bars and ToolTips for the nonclient area of a nonminimized window.</summary>
+        <value>A collection of text decoration.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Obtain the metric from SPI_GETNONCLIENTMETRICS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+  
+<a name="xamlAttributeUsage_StatusFontTextDecorations"></a>   
+## XAML Attribute Usage  
+ <*object property*="{ SystemFonts.StatusFontTextDecorations`}`"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StatusFontTextDecorationsKey">
@@ -1054,9 +1653,19 @@
         <ReturnType>System.Windows.ResourceKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Windows.ResourceKey" /> for the <see cref="P:System.Windows.SystemFonts.StatusFontTextDecorations" /> property.</summary>
+        <value>A resource key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_StatusFontTextDecorationsKey"></a>   
+## XAML Attribute Usage  
+ \<*object property*="{ { SystemFonts.StatusFontTextDecorationsKey}}"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StatusFontWeight">
@@ -1072,9 +1681,20 @@
         <ReturnType>System.Windows.FontWeight</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the metric that determines the font weight of the text used in status bars and ToolTips for the nonclient area of a nonminimized window.</summary>
+        <value>A font weight.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Obtain the metric from SPI_GETNONCLIENTMETRICS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+  
+<a name="xamlAttributeUsage_StatusFontWeight"></a>   
+## XAML Attribute Usage  
+ <*object property*="{ SystemFonts.StatusFontWeight`}`"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StatusFontWeightKey">
@@ -1090,9 +1710,19 @@
         <ReturnType>System.Windows.ResourceKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Windows.ResourceKey" /> for the <see cref="P:System.Windows.SystemFonts.StatusFontWeight" /> property.</summary>
+        <value>A resource key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_StatusFontWeightKey"></a>   
+## XAML Attribute Usage  
+ \<*object property*="{ { SystemFonts.StatusFontWeightKey}}"/>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

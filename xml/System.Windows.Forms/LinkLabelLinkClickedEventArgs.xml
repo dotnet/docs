@@ -16,8 +16,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides data for the <see cref="E:System.Windows.Forms.LinkLabel.LinkClicked" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates handling the <xref:System.Windows.Forms.LinkLabel.LinkClicked> event by starting the Web browser for hyperlinks, and displaying a <xref:System.Windows.Forms.MessageBox> for other links.  
+  
+ [!code-cpp[System.Windows.Forms.LinkLabel#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.LinkLabel/CPP/linklabel.cpp#1)]
+ [!code-csharp[System.Windows.Forms.LinkLabel#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.LinkLabel/CS/linklabel.cs#1)]
+ [!code-vb[System.Windows.Forms.LinkLabel#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.LinkLabel/VB/linklabel.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,8 +44,8 @@
         <Parameter Name="link" Type="System.Windows.Forms.LinkLabel+Link" />
       </Parameters>
       <Docs>
-        <param name="link">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="link">The <see cref="T:System.Windows.Forms.LinkLabel.Link" /> that was clicked.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.LinkLabelLinkClickedEventArgs" /> class with the specified link.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,9 +63,9 @@
         <Parameter Name="button" Type="System.Windows.Forms.MouseButtons" />
       </Parameters>
       <Docs>
-        <param name="link">To be added.</param>
-        <param name="button">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="link">The <see cref="T:System.Windows.Forms.LinkLabel.Link" /> that was clicked.</param>
+        <param name="button">One of the <see cref="T:System.Windows.Forms.MouseButtons" /> values.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.LinkLabelLinkClickedEventArgs" /> class with the specified link and the specified mouse button.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,9 +82,21 @@
         <ReturnType>System.Windows.Forms.MouseButtons</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the mouse button that causes the link to be clicked.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.MouseButtons" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.LinkLabel.LinkClicked?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.LinkLabel> named `LinkLabel1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.LinkLabel.LinkClicked?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#461](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#461)]
+ [!code-vb[System.Windows.Forms.EventExamples#461](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#461)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Link">
@@ -89,9 +112,20 @@
         <ReturnType>System.Windows.Forms.LinkLabel+Link</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Windows.Forms.LinkLabel.Link" /> that was clicked.</summary>
+        <value>A link on the <see cref="T:System.Windows.Forms.LinkLabel" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates using the <xref:System.Windows.Forms.LinkLabel> class, with multiple <xref:System.Windows.Forms.LinkArea> sections defined, to display a label on a form. The example demonstrates setting the <xref:System.Windows.Forms.Label.AutoSize%2A>, <xref:System.Windows.Forms.LinkLabel.LinkBehavior%2A>, <xref:System.Windows.Forms.LinkLabel.DisabledLinkColor%2A>, <xref:System.Windows.Forms.LinkLabel.LinkColor%2A>, and <xref:System.Windows.Forms.LinkLabel.VisitedLinkColor%2A> properties to customize the look of the <xref:System.Windows.Forms.LinkLabel>. The first <xref:System.Windows.Forms.LinkArea> is specified using the <xref:System.Windows.Forms.LinkLabel.LinkArea%2A?displayProperty=fullName> property. Additional links are added to the <xref:System.Windows.Forms.LinkLabel> using the <xref:System.Windows.Forms.LinkLabel.LinkCollection.Add%2A?displayProperty=fullName> method. The example handles the <xref:System.Windows.Forms.LinkLabel.LinkClicked> event by starting the Web browser for hyperlinks, and displaying a <xref:System.Windows.Forms.MessageBox> for other links.  
+  
+ [!code-cpp[System.Windows.Forms.LinkLabel#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.LinkLabel/CPP/linklabel.cpp#1)]
+ [!code-csharp[System.Windows.Forms.LinkLabel#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.LinkLabel/CS/linklabel.cs#1)]
+ [!code-vb[System.Windows.Forms.LinkLabel#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.LinkLabel/VB/linklabel.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

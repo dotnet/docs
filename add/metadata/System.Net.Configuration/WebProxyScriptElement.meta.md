@@ -1,14 +1,17 @@
 ---
 uid: System.Net.Configuration.WebProxyScriptElement
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.WebProxyScriptElement.DownloadTimeout
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.WebProxyScriptElement.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

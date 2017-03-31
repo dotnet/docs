@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Abstract base class for a serializer that can serialize and deserialize key identifier clauses.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Key identifier clauses are represented by the <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause> class and by classes derived from it.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClauseSerializer" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,10 +53,18 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="reader">An XML reader positioned at the start element of the key identifier clause.</param>
+        <summary>When overridden in a derived class, returns a value that indicates whether the element where the specified reader is positioned can be read as a key identifier clause by the handler.</summary>
+        <returns>
+          <see langword="true" /> if the XML can be deserialized to a key identifier clause by the handler; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Checks whether the XML can be read as a <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause> of the <xref:System.Type> processed by the derived handler.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CanWriteKeyIdentifierClause">
@@ -68,9 +83,10 @@
         <Parameter Name="securityKeyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
       </Parameters>
       <Docs>
-        <param name="securityKeyIdentifierClause">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="securityKeyIdentifierClause">The key identifier clause to check.</param>
+        <summary>When overridden in a derived class, returns a value that indicates whether the specified key identifier clause can be serialized by the handler.</summary>
+        <returns>
+          <see langword="true" /> if the key identifier clause can be serialized by the handler, otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,9 +106,9 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="reader">An XML reader positioned at the start element of the key identifier clause to read.</param>
+        <summary>When overridden in a derived class, deserializes a key identifier clause from by using the specified XML reader.</summary>
+        <returns>The key identifier clause that was deserialized from the XML.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,9 +129,9 @@
         <Parameter Name="securityKeyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="securityKeyIdentifierClause">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The XML Writer to use to serialized the key identifier clause.</param>
+        <param name="securityKeyIdentifierClause">The key identifier clause to serialize.</param>
+        <summary>When overridden in a derived class, serializes the specified key identifier clause.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

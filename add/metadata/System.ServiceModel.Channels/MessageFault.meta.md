@@ -1,124 +1,195 @@
 ---
 uid: System.ServiceModel.Channels.MessageFault
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.MessageFault.CreateFault(System.ServiceModel.FaultCode,System.ServiceModel.FaultReason)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.MessageFault.CreateFault(System.ServiceModel.FaultCode,System.ServiceModel.FaultReason,System.Object,System.Runtime.Serialization.XmlObjectSerializer,System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.MessageFault.CreateFault(System.ServiceModel.FaultCode,System.ServiceModel.FaultReason,System.Object,System.Runtime.Serialization.XmlObjectSerializer,System.String,System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.MessageFault.Reason
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.MessageFault.OnWriteStartDetail(System.Xml.XmlDictionaryWriter,System.ServiceModel.EnvelopeVersion)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.MessageFault.Actor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.MessageFault.OnWriteDetail(System.Xml.XmlDictionaryWriter,System.ServiceModel.EnvelopeVersion)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.MessageFault.WasHeaderNotUnderstood(System.ServiceModel.Channels.MessageHeaders,System.String,System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.MessageFault.OnGetReaderAtDetailContents
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.MessageFault.HasDetail
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.MessageFault.Node
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.MessageFault.GetDetail``1
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.MessageFault.CreateFault(System.ServiceModel.FaultCode,System.ServiceModel.FaultReason,System.Object)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Channels.MessageFault.WriteTo
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Channels.MessageFault.CreateFault
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.MessageFault.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Channels.MessageFault.GetDetail
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.MessageFault.CreateFault(System.ServiceModel.FaultCode,System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.MessageFault.WriteTo(System.Xml.XmlWriter,System.ServiceModel.EnvelopeVersion)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.MessageFault.WriteTo(System.Xml.XmlDictionaryWriter,System.ServiceModel.EnvelopeVersion)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.MessageFault.GetReaderAtDetailContents
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.MessageFault.GetDetail``1(System.Runtime.Serialization.XmlObjectSerializer)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.MessageFault.OnWriteDetailContents(System.Xml.XmlDictionaryWriter)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.MessageFault.IsMustUnderstandFault
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.MessageFault.Code
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.MessageFault.CreateFault(System.ServiceModel.FaultCode,System.ServiceModel.FaultReason,System.Object,System.Runtime.Serialization.XmlObjectSerializer)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.MessageFault.CreateFault(System.ServiceModel.Channels.Message,System.Int32)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

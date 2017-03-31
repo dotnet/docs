@@ -1,29 +1,38 @@
 ---
 uid: System.Windows.Forms.RadioButton.RadioButtonAccessibleObject
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.RadioButton.RadioButtonAccessibleObject.DefaultAction
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.RadioButton.RadioButtonAccessibleObject.State
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.RadioButton.RadioButtonAccessibleObject.DoDefaultAction
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.RadioButton.RadioButtonAccessibleObject.#ctor(System.Windows.Forms.RadioButton)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.RadioButton.RadioButtonAccessibleObject.Role
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

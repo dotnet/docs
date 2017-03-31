@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the image to draw when drawing a menu with the <see cref="M:System.Windows.Forms.ControlPaint.DrawMenuGlyph(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.MenuGlyph)" /> method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The values of this enumeration are used in the <xref:System.Windows.Forms.ControlPaint.DrawMenuGlyph%2A> method of the <xref:System.Windows.Forms.ControlPaint> class. These values represent the different types of symbols that can be drawn on a menu item.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Arrow">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Forms.MenuGlyph</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Draws a submenu arrow.</summary>
       </Docs>
     </Member>
     <Member MemberName="Bullet">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Forms.MenuGlyph</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Draws a menu bullet.</summary>
       </Docs>
     </Member>
     <Member MemberName="Checkmark">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.Forms.MenuGlyph</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Draws a menu check mark.</summary>
       </Docs>
     </Member>
     <Member MemberName="Max">
@@ -75,7 +82,7 @@
         <ReturnType>System.Windows.Forms.MenuGlyph</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The maximum value available by this enumeration (equal to the <see cref="F:System.Windows.Forms.MenuGlyph.Bullet" /> value).</summary>
       </Docs>
     </Member>
     <Member MemberName="Min">
@@ -91,7 +98,7 @@
         <ReturnType>System.Windows.Forms.MenuGlyph</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The minimum value available by this enumeration (equal to the <see cref="F:System.Windows.Forms.MenuGlyph.Arrow" /> value).</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,9 +1,13 @@
 ---
 uid: System.ServiceModel.Activation.Configuration.SecurityIdentifierElementCollection
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activation.Configuration.SecurityIdentifierElementCollection.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

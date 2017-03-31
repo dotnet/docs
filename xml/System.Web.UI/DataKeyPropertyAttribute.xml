@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the default property of a control that the <see cref="T:System.Web.UI.WebControls.ControlParameter" /> property binds to at run time.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,8 +33,8 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the data-key property attribute.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataKeyPropertyAttribute" /> class by using the name of the data-key property attribute.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,9 +54,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The object to compare.</param>
+        <summary>Compares the name of the <see cref="T:System.Web.UI.DataKeyPropertyAttribute" /> object to a specified object.</summary>
+        <returns>
+          <see langword="true" /> if the name is the same as the object; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,8 +75,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the hash code for an instance of the <see cref="T:System.Web.UI.DataKeyPropertyAttribute" /> class.</summary>
+        <returns>The hash code for an instance of the <see cref="T:System.Web.UI.DataKeyPropertyAttribute" /> class.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,8 +93,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the data-key property attribute.</summary>
+        <value>The name of the data-key property attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

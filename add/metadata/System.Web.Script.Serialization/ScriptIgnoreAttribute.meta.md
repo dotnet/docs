@@ -1,14 +1,17 @@
 ---
 uid: System.Web.Script.Serialization.ScriptIgnoreAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Script.Serialization.ScriptIgnoreAttribute.ApplyToOverrides
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Script.Serialization.ScriptIgnoreAttribute.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -23,7 +23,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides data for the <see cref="M:System.Diagnostics.Tracing.EventListener.OnEventWritten(System.Diagnostics.Tracing.EventWrittenEventArgs)" /> callback.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -51,9 +51,22 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
+  
+ Gets the activity ID on the thread that the event was written to.</summary>
+        <value>The activity ID on the thread that the event was written to.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Retrieving the value of the <xref:System.Diagnostics.Tracing.EventWrittenEventArgs.ActivityId%2A> property accesses thread local storage. This has the following implications:  
+  
+-   The <xref:System.Diagnostics.Tracing.EventWrittenEventArgs.ActivityId%2A> field is valid only for the duration of the <xref:System.Diagnostics.Tracing.EventListener.OnEventWritten%2A?displayProperty=fullName> callback.  
+  
+-   If the activity ID is changed during the callback, the activity ID returned by the <xref:System.Diagnostics.Tracing.EventWrittenEventArgs.ActivityId%2A> property is invalid.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Channel">
@@ -79,8 +92,8 @@
         <ReturnType>System.Diagnostics.Tracing.EventChannel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the channel for the event.</summary>
+        <value>The channel for the event.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,8 +122,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the event identifier.</summary>
+        <value>The event identifier.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,8 +150,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the event.</summary>
+        <value>The name of the event.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,8 +180,8 @@
         <ReturnType>System.Diagnostics.Tracing.EventSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the event source object.</summary>
+        <value>The event source object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -197,8 +210,8 @@
         <ReturnType>System.Diagnostics.Tracing.EventKeywords</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the keywords for the event.</summary>
+        <value>The keywords for the event.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -227,8 +240,8 @@
         <ReturnType>System.Diagnostics.Tracing.EventLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the level of the event.</summary>
+        <value>The level of the event.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -257,8 +270,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the message for the event.</summary>
+        <value>The message for the event.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -287,8 +300,8 @@
         <ReturnType>System.Diagnostics.Tracing.EventOpcode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the operation code for the event.</summary>
+        <value>The operation code for the event.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -317,8 +330,8 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the payload for the event.</summary>
+        <value>The payload for the event.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -345,8 +358,8 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns a list of strings that represent the property names of the event.</summary>
+        <value>Returns <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -374,9 +387,18 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
+  
+ Gets the identifier of an activity that is related to the activity represented by the current instance.</summary>
+        <value>The identifier of the related activity, or <see cref="F:System.Guid.Empty" /> if there is no related activity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Diagnostics.Tracing.EventWrittenEventArgs.RelatedActivityId%2A> is a child of the <xref:System.Diagnostics.Tracing.EventWrittenEventArgs.ActivityId%2A> property. An activity ID can be associated with multiple related activity IDs.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Tags">
@@ -402,8 +424,8 @@
         <ReturnType>System.Diagnostics.Tracing.EventTags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the tags specified in the call to the <see cref="M:System.Diagnostics.Tracing.EventSource.Write(System.String,System.Diagnostics.Tracing.EventSourceOptions)" /> method.</summary>
+        <value>Returns <see cref="T:System.Diagnostics.Tracing.EventTags" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -432,8 +454,8 @@
         <ReturnType>System.Diagnostics.Tracing.EventTask</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the task for the event.</summary>
+        <value>The task for the event.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -462,8 +484,8 @@
         <ReturnType>System.Byte</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the version of the event.</summary>
+        <value>The version of the event.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

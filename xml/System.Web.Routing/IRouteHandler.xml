@@ -13,7 +13,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines the contract that a class must implement in order to process a request for a matching route pattern.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,9 +33,9 @@
         <Parameter Name="requestContext" Type="System.Web.Routing.RequestContext" />
       </Parameters>
       <Docs>
-        <param name="requestContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="requestContext">An object that encapsulates information about the request.</param>
+        <summary>Provides the object that processes the request.</summary>
+        <returns>An object that processes the request.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

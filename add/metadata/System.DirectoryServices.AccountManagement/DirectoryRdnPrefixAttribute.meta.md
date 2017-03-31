@@ -1,19 +1,27 @@
 ---
 uid: System.DirectoryServices.AccountManagement.DirectoryRdnPrefixAttribute
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.AccountManagement.DirectoryRdnPrefixAttribute.#ctor(System.String)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.AccountManagement.DirectoryRdnPrefixAttribute.Context
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.AccountManagement.DirectoryRdnPrefixAttribute.RdnPrefix
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---

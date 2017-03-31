@@ -1,44 +1,66 @@
 ---
 uid: System.Windows.Media.Animation.SplineRotation3DKeyFrame
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SplineRotation3DKeyFrame.KeySpline
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SplineRotation3DKeyFrame.#ctor(System.Windows.Media.Media3D.Rotation3D)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SplineRotation3DKeyFrame.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.SplineRotation3DKeyFrame.#ctor
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SplineRotation3DKeyFrame.InterpolateValueCore(System.Windows.Media.Media3D.Rotation3D,System.Double)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SplineRotation3DKeyFrame.#ctor(System.Windows.Media.Media3D.Rotation3D,System.Windows.Media.Animation.KeyTime,System.Windows.Media.Animation.KeySpline)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SplineRotation3DKeyFrame.CreateInstanceCore
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SplineRotation3DKeyFrame.KeySplineProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SplineRotation3DKeyFrame.#ctor(System.Windows.Media.Media3D.Rotation3D,System.Windows.Media.Animation.KeyTime)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

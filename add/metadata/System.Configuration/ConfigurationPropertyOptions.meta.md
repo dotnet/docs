@@ -1,4 +1,6 @@
 ---
 uid: System.Configuration.ConfigurationPropertyOptions
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

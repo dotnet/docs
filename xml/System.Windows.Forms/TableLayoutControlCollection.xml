@@ -19,8 +19,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a collection of child controls in a table layout container.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.TableLayoutControlCollection> class represents the collection of all the child controls in a <xref:System.Windows.Forms.TableLayoutPanel> control. This collection is exposed by the <xref:System.Windows.Forms.TableLayoutPanel.Controls%2A> property of the <xref:System.Windows.Forms.TableLayoutPanel> class. You can manage and individually manipulate members of the table layout panel through the <xref:System.Windows.Forms.TableLayoutControlCollection> exposed by <xref:System.Windows.Forms.TableLayoutPanel.Controls%2A>.  
+  
+ The <xref:System.Windows.Forms.TableLayoutControlCollection> class is a minor specialization of the <xref:System.Windows.Forms.Control.ControlCollection> base class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,9 +45,16 @@
         <Parameter Name="container" Type="System.Windows.Forms.TableLayoutPanel" />
       </Parameters>
       <Docs>
-        <param name="container">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="container">The <see cref="T:System.Windows.Forms.TableLayoutPanel" /> control that contains the control collection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TableLayoutControlCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Generally, the application programmer will not directly create instances of the <xref:System.Windows.Forms.TableLayoutControlCollection> class. Instead, a reference to an existing <xref:System.Windows.Forms.TableLayoutControlCollection> is returned by the <xref:System.Windows.Forms.TableLayoutPanel.Controls%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -59,11 +75,29 @@
         <Parameter Name="row" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="control">To be added.</param>
-        <param name="column">To be added.</param>
-        <param name="row">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="control">The control to add.</param>
+        <param name="column">The column in which <c>control</c> will be placed.</param>
+        <param name="row">The row in which <c>control</c> will be placed.</param>
+        <summary>Adds the specified control to the collection and positions it at the specified cell.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ With <xref:System.Windows.Forms.TableLayoutControlCollection.Add%2A>, you can specify the cell position of `control`. You can assign `control` to a specific cell by providing both the `column` and `row` parameters, or you can specify only the column or row value and let the <xref:System.Windows.Forms.TableLayoutPanel.LayoutEngine%2A> place `control` at the next open cell. This is known as letting the control *flow* to its position in the <xref:System.Windows.Forms.TableLayoutPanel> control.  
+  
+ Set `column` to -1 if you want `control` to occupy a fixed row position.  
+  
+ Set `row` to -1 if you want `control` to occupy a fixed column position.  
+  
+ If neither `column` nor `row` is -1, `control` will be added at the absolute position given by (`column`, `row`).  
+  
+ If you set both `column` and `row` to -1, `control` will flow to the first open position, with the specific flow behavior defined by the <xref:System.Windows.Forms.TableLayoutPanel.GrowStyle%2A?displayProperty=fullName> value. This is equivalent to using the <xref:System.Windows.Forms.Control.ControlCollection.Add%2A?displayProperty=fullName> method.  
+  
+ To get to the actual current position of a control, use the <xref:System.Windows.Forms.TableLayoutPanel.GetPositionFromControl%2A?displayProperty=fullName> method. This method takes into account the entire <xref:System.Windows.Forms.TableLayoutPanel> control state, including column or row spanning and when the <xref:System.Windows.Forms.TableLayoutPanel.LayoutEngine%2A?displayProperty=fullName> has placed a control with its `Column` and `Row` properties set to -1.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">Either<paramref name=" column" /> or <paramref name="row" /> is less than -1.</exception>
       </Docs>
     </Member>
     <Member MemberName="Container">
@@ -79,9 +113,16 @@
         <ReturnType>System.Windows.Forms.TableLayoutPanel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the parent <see cref="T:System.Windows.Forms.TableLayoutPanel" /> that contains the controls in the collection.</summary>
+        <value>The <see cref="T:System.Windows.Forms.TableLayoutPanel" /> that contains the controls in the current collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is set by the <xref:System.Windows.Forms.TableLayoutControlCollection.%23ctor%2A> constructor.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

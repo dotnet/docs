@@ -16,8 +16,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Describes a run-time instance of a <see cref="T:System.Windows.TemplateBindingExtension" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the content of a template is instantiated for inspection, the <xref:System.Windows.TemplateBindingExpression> instances represent the template bindings.  
+  
+<a name="xamlTextUsage_TemplateBindingExpression"></a>   
+## XAML Text Usage  
+ You cannot use this managed class in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="TemplateBindingExtension">
@@ -33,8 +44,8 @@
         <ReturnType>System.Windows.TemplateBindingExtension</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Windows.TemplateBindingExtension" /> object of this expression instance.</summary>
+        <value>The template binding extension of this expression instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

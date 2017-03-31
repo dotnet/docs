@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains a set of menu commands used by the designer in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.PropertyGridInternal.PropertyGridCommands" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,7 +43,7 @@
         <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the command identifier for the Commands menu item.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,7 +60,7 @@
         <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the command identifier for the Description menu item.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,7 +77,7 @@
         <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the command identifier for the Hide menu item.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,7 +94,7 @@
         <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the command identifier for the Reset menu item.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,7 +111,7 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the GUID for the internal property browser’s command set.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,7 +128,7 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the GUID the internal property browser uses to create a shortcut menu.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

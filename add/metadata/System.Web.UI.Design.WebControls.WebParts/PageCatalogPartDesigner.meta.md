@@ -1,19 +1,31 @@
 ---
 uid: System.Web.UI.Design.WebControls.WebParts.PageCatalogPartDesigner
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.WebParts.PageCatalogPartDesigner.#ctor
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.WebParts.PageCatalogPartDesigner.Initialize(System.ComponentModel.IComponent)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.WebParts.PageCatalogPartDesigner.GetDesignTimeHtml
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.WebParts.PageCatalogPartDesigner.GetDesignTimeHtml
 ---

@@ -19,7 +19,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines the XPath node types that can be returned from the <see cref="T:System.Xml.XPath.XPathNavigator" /> class.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,7 +45,7 @@
         <ReturnType>System.Xml.XPath.XPathNodeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Any of the <see cref="T:System.Xml.XPath.XPathNodeType" /> node types.</summary>
       </Docs>
     </Member>
     <Member MemberName="Attribute">
@@ -70,7 +70,7 @@
         <ReturnType>System.Xml.XPath.XPathNodeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An attribute, such as <c>id='123'</c>.</summary>
       </Docs>
     </Member>
     <Member MemberName="Comment">
@@ -95,7 +95,7 @@
         <ReturnType>System.Xml.XPath.XPathNodeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A comment, such as <c>&lt;!-- my comment --&gt;</c></summary>
       </Docs>
     </Member>
     <Member MemberName="Element">
@@ -120,7 +120,7 @@
         <ReturnType>System.Xml.XPath.XPathNodeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An element, such as <c>&lt;element&gt;</c>.</summary>
       </Docs>
     </Member>
     <Member MemberName="Namespace">
@@ -145,7 +145,7 @@
         <ReturnType>System.Xml.XPath.XPathNodeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A namespace, such as <c>xmlns="namespace"</c>.</summary>
       </Docs>
     </Member>
     <Member MemberName="ProcessingInstruction">
@@ -170,7 +170,7 @@
         <ReturnType>System.Xml.XPath.XPathNodeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A processing instruction, such as <c>&lt;?pi test?&gt;</c>. This does not include XML declarations, which are not visible to the <see cref="T:System.Xml.XPath.XPathNavigator" /> class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Root">
@@ -195,7 +195,7 @@
         <ReturnType>System.Xml.XPath.XPathNodeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The root node of the XML document or node tree.</summary>
       </Docs>
     </Member>
     <Member MemberName="SignificantWhitespace">
@@ -220,7 +220,7 @@
         <ReturnType>System.Xml.XPath.XPathNodeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A node with white space characters and <c>xml:space</c> set to <c>preserve</c>.</summary>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -245,7 +245,7 @@
         <ReturnType>System.Xml.XPath.XPathNodeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text content of a node. Equivalent to the Document Object Model (DOM) Text and CDATA node types. Contains at least one character.</summary>
       </Docs>
     </Member>
     <Member MemberName="Whitespace">
@@ -270,7 +270,7 @@
         <ReturnType>System.Xml.XPath.XPathNodeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A node with only white space characters and no significant white space. White space characters are <c>#x20</c>, <c>#x9</c>, <c>#xD</c>, or <c>#xA</c>.</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,9 +1,11 @@
 ---
 uid: Microsoft.VisualC.IsVolatileModifier
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.IsVolatileModifier.#ctor
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---

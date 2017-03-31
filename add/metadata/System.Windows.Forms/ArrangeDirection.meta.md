@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Forms.ArrangeDirection
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

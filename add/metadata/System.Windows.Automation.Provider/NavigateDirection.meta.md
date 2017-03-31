@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Automation.Provider.NavigateDirection
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---

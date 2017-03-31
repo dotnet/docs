@@ -1,9 +1,13 @@
 ---
 uid: System.Runtime.DurableInstancing.InstanceStoreQueryResult
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.DurableInstancing.InstanceStoreQueryResult.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

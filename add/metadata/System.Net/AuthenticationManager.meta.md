@@ -1,44 +1,59 @@
 ---
 uid: System.Net.AuthenticationManager
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.AuthenticationManager.Unregister
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.AuthenticationManager.Unregister(System.Net.IAuthenticationModule)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.AuthenticationManager.Authenticate(System.String,System.Net.WebRequest,System.Net.ICredentials)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.AuthenticationManager.CustomTargetNameDictionary
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.AuthenticationManager.Unregister(System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.AuthenticationManager.Register(System.Net.IAuthenticationModule)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.AuthenticationManager.CredentialPolicy
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.AuthenticationManager.RegisteredModules
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.AuthenticationManager.PreAuthenticate(System.Net.WebRequest,System.Net.ICredentials)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

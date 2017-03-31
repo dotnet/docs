@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Holds event data for the <see cref="E:System.Management.ManagementOperationObserver.ObjectReady" /> event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,9 +28,21 @@
         <ReturnType>System.Management.ManagementBaseObject</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the newly-returned object.</summary>
+        <value>Returns a <see cref="T:System.Management.ManagementBaseObject" /> containing the newly-returned object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## Property Value  
+ A <xref:System.Management.ManagementBaseObject> representing the newly-returned object.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

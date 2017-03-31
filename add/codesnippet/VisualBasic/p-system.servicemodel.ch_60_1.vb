@@ -1,1 +1,0 @@
-        Dim addrVersion As AddressingVersion = msgVersion.Addressing

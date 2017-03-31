@@ -1,9 +1,13 @@
 ---
 uid: System.IO.Ports.SerialPinChangedEventArgs
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.Ports.SerialPinChangedEventArgs.EventType
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

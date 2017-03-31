@@ -1,19 +1,23 @@
 ---
 uid: System.Configuration.ProtectedConfigurationProviderCollection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ProtectedConfigurationProviderCollection.Item(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ProtectedConfigurationProviderCollection.Add(System.Configuration.Provider.ProviderBase)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ProtectedConfigurationProviderCollection.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -1,24 +1,34 @@
 ---
 uid: System.Deployment.Application.DeploymentProgressChangedEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Deployment.Application.DeploymentProgressChangedEventArgs.BytesTotal
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Deployment.Application.DeploymentProgressChangedEventArgs.BytesCompleted
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Deployment.Application.DeploymentProgressChangedEventArgs.Group
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Deployment.Application.DeploymentProgressChangedEventArgs.State
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

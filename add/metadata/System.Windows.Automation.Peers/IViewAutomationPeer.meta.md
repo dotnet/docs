@@ -1,34 +1,47 @@
 ---
 uid: System.Windows.Automation.Peers.IViewAutomationPeer
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.IViewAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.IViewAutomationPeer.GetAutomationControlType
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.IViewAutomationPeer.ViewDetached
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.IViewAutomationPeer.ItemsChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.IViewAutomationPeer.CreateItemAutomationPeer(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.IViewAutomationPeer.GetChildren(System.Collections.Generic.List{System.Windows.Automation.Peers.AutomationPeer})
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

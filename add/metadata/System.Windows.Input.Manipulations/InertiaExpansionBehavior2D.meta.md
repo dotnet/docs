@@ -1,39 +1,55 @@
 ---
 uid: System.Windows.Input.Manipulations.InertiaExpansionBehavior2D
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Input.Manipulations.InertiaExpansionBehavior2D.DesiredExpansionX
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Input.Manipulations.InertiaExpansionBehavior2D.#ctor
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Input.Manipulations.InertiaExpansionBehavior2D.InitialRadius
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Input.Manipulations.InertiaExpansionBehavior2D.DesiredExpansionY
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Input.Manipulations.InertiaExpansionBehavior2D.InitialVelocityY
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Input.Manipulations.InertiaExpansionBehavior2D.DesiredDeceleration
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Input.Manipulations.InertiaExpansionBehavior2D.InitialVelocityX
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---

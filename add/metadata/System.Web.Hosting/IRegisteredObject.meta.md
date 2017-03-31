@@ -1,9 +1,11 @@
 ---
 uid: System.Web.Hosting.IRegisteredObject
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.IRegisteredObject.Stop(System.Boolean)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -1,4 +1,6 @@
 ---
 uid: System.Diagnostics.Contracts.ContractFailureKind
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

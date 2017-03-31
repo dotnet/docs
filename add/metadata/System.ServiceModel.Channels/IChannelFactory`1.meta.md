@@ -1,14 +1,27 @@
 ---
 uid: System.ServiceModel.Channels.IChannelFactory`1
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.IChannelFactory`1.CreateChannel(System.ServiceModel.EndpointAddress)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.IChannelFactory`1.CreateChannel(System.ServiceModel.EndpointAddress,System.Uri)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Channels.IChannelFactory`1.CreateChannel
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

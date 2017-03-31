@@ -1,19 +1,26 @@
 ---
 uid: System.Windows.Forms.DataGridViewCellMouseEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewCellMouseEventArgs.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.MouseEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewCellMouseEventArgs.ColumnIndex
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewCellMouseEventArgs.RowIndex
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

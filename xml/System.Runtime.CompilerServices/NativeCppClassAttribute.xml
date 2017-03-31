@@ -28,8 +28,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Applies metadata to an assembly that indicates that a type is an unmanaged type.  This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Compilers use the <xref:System.Runtime.CompilerServices.NativeCppClassAttribute> attribute when building assemblies to indicate that a type is an unmanaged type defined in C or C++.  This attribute is used later to correctly handle the unmanaged type when it is imported during interop.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -52,8 +59,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.CompilerServices.NativeCppClassAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Compilers use the <xref:System.Runtime.CompilerServices.NativeCppClassAttribute> attribute when building assemblies to indicate that a type is an unmanaged type defined in C or C++.  This attribute is used later to correctly handle the unmanaged type when it is imported during interop.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

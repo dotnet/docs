@@ -1,1 +1,0 @@
-	    EnvelopeVersion envelopeVersion = binding.EnvelopeVersion;

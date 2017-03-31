@@ -1,14 +1,17 @@
 ---
 uid: Microsoft.Build.Evaluation.SubToolset
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Evaluation.SubToolset.SubToolsetVersion
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Evaluation.SubToolset.Properties
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

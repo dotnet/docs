@@ -1,39 +1,53 @@
 ---
 uid: System.Web.UI.Design.TemplateGroup
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.TemplateGroup.GroupStyle
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.TemplateGroup.#ctor(System.String,System.Web.UI.WebControls.Style)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.TemplateGroup.#ctor(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.TemplateGroup.IsEmpty
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.TemplateGroup.Templates
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.TemplateGroup.AddTemplateDefinition(System.Web.UI.Design.TemplateDefinition)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.TemplateGroup.GroupName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.TemplateGroup.#ctor
+ms.author: "riande"
+manager: "wpickett"
 ---

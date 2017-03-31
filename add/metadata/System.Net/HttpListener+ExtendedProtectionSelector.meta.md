@@ -1,4 +1,5 @@
 ---
 uid: System.Net.HttpListener.ExtendedProtectionSelector
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

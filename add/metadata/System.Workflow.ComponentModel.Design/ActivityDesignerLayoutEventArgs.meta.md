@@ -1,24 +1,34 @@
 ---
 uid: System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs.Graphics
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs.AmbientTheme
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs.DesignerTheme
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs.#ctor(System.Drawing.Graphics,System.Workflow.ComponentModel.Design.ActivityDesignerTheme)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

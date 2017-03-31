@@ -1,39 +1,62 @@
 ---
 uid: System.Configuration.Assemblies.AssemblyHash
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.Assemblies.AssemblyHash.SetValue(System.Byte[])
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.Assemblies.AssemblyHash.Clone
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.Assemblies.AssemblyHash.#ctor
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.Assemblies.AssemblyHash.GetValue
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.Assemblies.AssemblyHash.#ctor(System.Byte[])
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.Assemblies.AssemblyHash.Empty
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.Assemblies.AssemblyHash.Algorithm
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.Assemblies.AssemblyHash.#ctor(System.Configuration.Assemblies.AssemblyHashAlgorithm,System.Byte[])
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

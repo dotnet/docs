@@ -29,8 +29,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines a compensatable version of the <see cref="T:System.Workflow.Activities.SequenceActivity" /> activity. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ <xref:System.Workflow.Activities.CompensatableSequenceActivity> implements the <xref:System.Workflow.ComponentModel.ICompensatableActivity> interface.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,7 +55,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.CompensatableSequenceActivity" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +72,8 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The user-defined name of the activity.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.CompensatableSequenceActivity" /> class using the name of the activity.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,9 +93,9 @@
         <Parameter Name="executionContext" Type="System.Workflow.ComponentModel.ActivityExecutionContext" />
       </Parameters>
       <Docs>
-        <param name="executionContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="executionContext">The execution context of the activity.</param>
+        <summary>Executes the activity using the <see cref="M:System.Workflow.ComponentModel.ICompensatableActivity.Compensate(System.Workflow.ComponentModel.ActivityExecutionContext)" /> interface.</summary>
+        <returns>The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionStatus" /> after the operation has been tried.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

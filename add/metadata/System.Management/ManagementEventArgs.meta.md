@@ -1,9 +1,9 @@
 ---
 uid: System.Management.ManagementEventArgs
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementEventArgs.Context
-internalonly: False
+manager: "jillfra"
 ---

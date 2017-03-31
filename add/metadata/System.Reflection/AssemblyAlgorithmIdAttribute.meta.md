@@ -1,19 +1,34 @@
 ---
 uid: System.Reflection.AssemblyAlgorithmIdAttribute
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.AssemblyAlgorithmIdAttribute.#ctor(System.Configuration.Assemblies.AssemblyHashAlgorithm)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.AssemblyAlgorithmIdAttribute.AlgorithmId
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.AssemblyAlgorithmIdAttribute.#ctor(System.UInt32)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Reflection.AssemblyAlgorithmIdAttribute.#ctor
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

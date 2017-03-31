@@ -20,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a class that is the XAML representation for an IActivityTemplateFactory.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,7 +35,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Presentation.Toolbox.ActivityTemplateFactory" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,9 +55,9 @@
         <Parameter Name="target" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">A reference to the user interface - not used.</param>
+        <summary>Creates an activity by calling Implementation.</summary>
+        <returns>The activity created by the implementation method or null if implementation is not set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,8 +88,8 @@
         <ReturnType>System.Func&lt;System.Activities.Activity&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the factory method that creates an activity as the implementation.</summary>
+        <value>The factory method that creates an activity as the implementation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,19 +1,27 @@
 ---
 uid: System.ComponentModel.Design.Serialization.IDesignerLoaderService
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.Serialization.IDesignerLoaderService.AddLoadDependency
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.Serialization.IDesignerLoaderService.DependentLoadComplete(System.Boolean,System.Collections.ICollection)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.Serialization.IDesignerLoaderService.Reload
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

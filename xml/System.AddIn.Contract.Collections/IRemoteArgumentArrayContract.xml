@@ -12,8 +12,17 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an array of <see cref="T:System.AddIn.Contract.RemoteArgument" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use an <xref:System.AddIn.Contract.Collections.IRemoteArgumentArrayContract> to pass an array of <xref:System.AddIn.Contract.RemoteArgument> objects between contracts by reference.  
+  
+ An <xref:System.AddIn.Contract.Collections.IRemoteArgumentArrayContract> does not dynamically resize itself. If you need to use a collection that dynamically resizes itself, use the <xref:System.AddIn.Contract.Collections.IRemoteArgumentArrayListContract> interface.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="GetItem">
@@ -32,10 +41,16 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="index">The zero-based index of the element to return.</param>
+        <summary>Returns the element at the specified index.</summary>
+        <returns>The element at the specified index.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.IndexOutOfRangeException">
+          <paramref name="index" /> is less than zero.  
+  
+ -or-  
+  
+ <paramref name="index" /> is equal to or greater than the return value of <see cref="M:System.AddIn.Contract.Collections.IRemoteArgumentCollectionContract.GetCount" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetItem">
@@ -55,10 +70,16 @@
         <Parameter Name="value" Type="System.AddIn.Contract.RemoteArgument" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The zero-based index of the element to replace.</param>
+        <param name="value">The new value for the element at the specified index.</param>
+        <summary>Replaces the element at the specified index with the specified <see cref="T:System.AddIn.Contract.RemoteArgument" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.IndexOutOfRangeException">
+          <paramref name="index" /> is less than zero.  
+  
+ -or-  
+  
+ <paramref name="index" /> is equal to or greater than the return value of <see cref="M:System.AddIn.Contract.Collections.IRemoteArgumentCollectionContract.GetCount" />.</exception>
       </Docs>
     </Member>
   </Members>

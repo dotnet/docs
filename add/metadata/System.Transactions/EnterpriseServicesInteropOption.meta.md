@@ -1,4 +1,4 @@
 ---
 uid: System.Transactions.EnterpriseServicesInteropOption
-internalonly: False
+manager: "ghogen"
 ---

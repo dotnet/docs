@@ -1,9 +1,11 @@
 ---
 uid: Microsoft.Build.Tasks.Hosting.IVbcHostObjectFreeThreaded
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Hosting.IVbcHostObjectFreeThreaded.Compile
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

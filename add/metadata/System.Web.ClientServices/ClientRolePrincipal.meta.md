@@ -1,19 +1,27 @@
 ---
 uid: System.Web.ClientServices.ClientRolePrincipal
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ClientServices.ClientRolePrincipal.IsInRole(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ClientServices.ClientRolePrincipal.#ctor(System.Security.Principal.IIdentity)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ClientServices.ClientRolePrincipal.Identity
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

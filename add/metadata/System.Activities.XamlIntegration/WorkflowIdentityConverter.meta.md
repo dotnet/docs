@@ -1,19 +1,41 @@
 ---
 uid: System.Activities.XamlIntegration.WorkflowIdentityConverter
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.XamlIntegration.WorkflowIdentityConverter.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.XamlIntegration.WorkflowIdentityConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.XamlIntegration.WorkflowIdentityConverter.ConvertFrom
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.XamlIntegration.WorkflowIdentityConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.XamlIntegration.WorkflowIdentityConverter.CanConvertFrom
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

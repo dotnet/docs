@@ -1,4 +1,6 @@
 ---
 uid: System.Collections.ObjectModel
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

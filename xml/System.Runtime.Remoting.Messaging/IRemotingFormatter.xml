@@ -18,8 +18,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides the remote procedure call (RPC) interface for all formatters.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Remoting.Messaging.IRemotingFormatter> interface allows the implementing formatter to send and receive remote procedure calls (RPCs). For more information, see <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>. This interface is derived from <xref:System.Runtime.Serialization.IFormatter>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Deserialize">
@@ -40,11 +47,21 @@
         <Parameter Name="handler" Type="System.Runtime.Remoting.Messaging.HeaderHandler" />
       </Parameters>
       <Docs>
-        <param name="serializationStream">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="serializationStream">The <see cref="T:System.IO.Stream" /> from which the data is deserialized.</param>
+        <param name="handler">The delegate designed to handle <see cref="T:System.Runtime.Remoting.Messaging.Header" /> objects. Can be <see langword="null" />.</param>
+        <summary>Begins the deserialization process of a remote procedure call (RPC).</summary>
+        <returns>The root of the deserialized object graph.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Runtime.Remoting.Messaging.Header> objects contain information about a remote function call (for example, transaction ID or a method signature).  
+  
+> [!NOTE]
+>  See the SOAP specification for more information on headers.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Serialize">
@@ -66,11 +83,21 @@
         <Parameter Name="headers" Type="System.Runtime.Remoting.Messaging.Header[]" />
       </Parameters>
       <Docs>
-        <param name="serializationStream">To be added.</param>
-        <param name="graph">To be added.</param>
-        <param name="headers">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="serializationStream">The <see cref="T:System.IO.Stream" /> onto which the specified graph is serialized.</param>
+        <param name="graph">The root of the object graph to be serialized.</param>
+        <param name="headers">The array of <see cref="T:System.Runtime.Remoting.Messaging.Header" /> objects to transmit with the graph specified by the <c>graph</c> parameter. Can be <see langword="null" />.</param>
+        <summary>Starts the serialization process of a remote procedure call (RPC).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Runtime.Remoting.Messaging.Header> objects contain information about a remote function call (for example, transaction ID or a method signature).  
+  
+> [!NOTE]
+>  See the SOAP specification for more information on headers.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

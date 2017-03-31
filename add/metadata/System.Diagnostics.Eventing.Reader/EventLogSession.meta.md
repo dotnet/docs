@@ -1,84 +1,131 @@
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogSession
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogSession.#ctor
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogSession.ClearLog(System.String)
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogSession.GlobalSession
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogSession.Dispose
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogSession.ExportLog(System.String,System.Diagnostics.Eventing.Reader.PathType,System.String,System.String,System.Boolean)
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.EventLogSession.Dispose
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogSession.ClearLog(System.String,System.String)
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogSession.GetLogInformation(System.String,System.Diagnostics.Eventing.Reader.PathType)
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogSession.ExportLogAndMessages(System.String,System.Diagnostics.Eventing.Reader.PathType,System.String,System.String,System.Boolean,System.Globalization.CultureInfo)
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogSession.#ctor(System.String,System.String,System.String,System.Security.SecureString,System.Diagnostics.Eventing.Reader.SessionAuthentication)
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogSession.ExportLog(System.String,System.Diagnostics.Eventing.Reader.PathType,System.String,System.String)
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogSession.CancelCurrentOperations
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.EventLogSession.ExportLog
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogSession.ExportLogAndMessages(System.String,System.Diagnostics.Eventing.Reader.PathType,System.String,System.String)
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogSession.GetLogNames
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.EventLogSession.ClearLog
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogSession.Dispose(System.Boolean)
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.EventLogSession.ExportLogAndMessages
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.EventLogSession.#ctor
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogSession.#ctor(System.String)
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogSession.GetProviderNames
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---

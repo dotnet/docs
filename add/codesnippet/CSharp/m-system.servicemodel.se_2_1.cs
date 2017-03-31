@@ -1,1 +1,0 @@
-            ServiceHost serviceHost = new ServiceHost(typeof(CalculatorService), baseAddress);

@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.IExpressionsAccessor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IExpressionsAccessor.Expressions
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IExpressionsAccessor.HasExpressions
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

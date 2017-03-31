@@ -1,79 +1,122 @@
 ---
 uid: System.ComponentModel.Composition.Hosting.AssemblyCatalog
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Composition.Hosting.AssemblyCatalog.#ctor
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.AssemblyCatalog.System#ComponentModel#Composition#Primitives#ICompositionElement#Origin
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.AssemblyCatalog.GetExports(System.ComponentModel.Composition.Primitives.ImportDefinition)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.AssemblyCatalog.#ctor(System.Reflection.Assembly)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.AssemblyCatalog.#ctor(System.Reflection.Assembly,System.Reflection.ReflectionContext)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.AssemblyCatalog.#ctor(System.Reflection.Assembly,System.ComponentModel.Composition.Primitives.ICompositionElement)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.AssemblyCatalog.#ctor(System.String,System.ComponentModel.Composition.Primitives.ICompositionElement)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Composition.Hosting.AssemblyCatalog.Dispose
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.AssemblyCatalog.System#ComponentModel#Composition#Primitives#ICompositionElement#DisplayName
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.AssemblyCatalog.#ctor(System.String,System.Reflection.ReflectionContext)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.AssemblyCatalog.GetEnumerator
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.AssemblyCatalog.Assembly
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.AssemblyCatalog.#ctor(System.Reflection.Assembly,System.Reflection.ReflectionContext,System.ComponentModel.Composition.Primitives.ICompositionElement)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.AssemblyCatalog.#ctor(System.String)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.AssemblyCatalog.Dispose(System.Boolean)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.AssemblyCatalog.ToString
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.AssemblyCatalog.#ctor(System.String,System.Reflection.ReflectionContext,System.ComponentModel.Composition.Primitives.ICompositionElement)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

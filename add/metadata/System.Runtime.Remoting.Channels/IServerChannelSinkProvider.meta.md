@@ -1,19 +1,19 @@
 ---
 uid: System.Runtime.Remoting.Channels.IServerChannelSinkProvider
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Channels.IServerChannelSinkProvider.GetChannelData(System.Runtime.Remoting.Channels.IChannelDataStore)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Channels.IServerChannelSinkProvider.Next
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Channels.IServerChannelSinkProvider.CreateSink(System.Runtime.Remoting.Channels.IChannelReceiver)
-internalonly: False
+manager: "ghogen"
 ---

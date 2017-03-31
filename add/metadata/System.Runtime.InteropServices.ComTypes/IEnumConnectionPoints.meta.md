@@ -1,24 +1,34 @@
 ---
 uid: System.Runtime.InteropServices.ComTypes.IEnumConnectionPoints
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.ComTypes.IEnumConnectionPoints.Next(System.Int32,System.Runtime.InteropServices.ComTypes.IConnectionPoint[],System.IntPtr)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.ComTypes.IEnumConnectionPoints.Skip(System.Int32)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.ComTypes.IEnumConnectionPoints.Reset
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.ComTypes.IEnumConnectionPoints.Clone(System.Runtime.InteropServices.ComTypes.IEnumConnectionPoints@)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

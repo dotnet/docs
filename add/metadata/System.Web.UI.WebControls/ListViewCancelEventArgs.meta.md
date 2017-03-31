@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.WebControls.ListViewCancelEventArgs
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.ListViewCancelEventArgs.#ctor(System.Int32,System.Web.UI.WebControls.ListViewCancelMode)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.ListViewCancelEventArgs.ItemIndex
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.ListViewCancelEventArgs.CancelMode
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

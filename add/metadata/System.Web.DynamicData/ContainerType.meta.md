@@ -1,4 +1,5 @@
 ---
 uid: System.Web.DynamicData.ContainerType
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

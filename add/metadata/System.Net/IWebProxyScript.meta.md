@@ -1,19 +1,23 @@
 ---
 uid: System.Net.IWebProxyScript
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.IWebProxyScript.Close
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.IWebProxyScript.Run(System.String,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.IWebProxyScript.Load(System.Uri,System.String,System.Type)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

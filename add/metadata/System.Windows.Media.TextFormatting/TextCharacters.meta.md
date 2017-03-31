@@ -1,39 +1,61 @@
 ---
 uid: System.Windows.Media.TextFormatting.TextCharacters
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.TextCharacters.Properties
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.TextCharacters.#ctor(System.String,System.Int32,System.Int32,System.Windows.Media.TextFormatting.TextRunProperties)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.TextCharacters.#ctor(System.Char*,System.Int32,System.Windows.Media.TextFormatting.TextRunProperties)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.TextCharacters.CharacterBufferReference
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.TextFormatting.TextCharacters.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.TextCharacters.Length
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.TextCharacters.#ctor(System.String,System.Windows.Media.TextFormatting.TextRunProperties)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.TextCharacters.#ctor(System.Char[],System.Int32,System.Int32,System.Windows.Media.TextFormatting.TextRunProperties)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -1,4 +1,6 @@
 ---
 uid: System.Data.Linq.ISingleResult`1
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

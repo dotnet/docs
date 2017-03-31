@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.SortResponseControl" /> class is used to pass sort data from the server to the client.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.SortResponseControl.AttributeName" /> property contains the attribute name.</summary>
+        <value>The attribute name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.SortResponseControl.Result" /> property returns a <see cref="T:System.DirectoryServices.Protocols.ResultCode" /> object that contains the result code.</summary>
+        <value>A <see cref="T:System.DirectoryServices.Protocols.ResultCode" /> object that contains the result code.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

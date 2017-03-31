@@ -16,9 +16,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="TValue">To be added.</typeparam>
-    <typeparam name="TCont">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="TValue">The type of an element in the controlled sequence.</typeparam>
+    <typeparam name="TCont">The type of the underlying container.</typeparam>
+    <summary>Defines the interface for an STL/CLR [priority_queue](../Topic/priority_queue%20\(STL-CLR\).md) object.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,9 +38,16 @@
         <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.IPriorityQueue&lt;TValue,TCont&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Right">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="_Right">The container adapter to insert into the container.</param>
+        <summary>Replaces all elements of the container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [priority_queue::assign (STL/CLR)](../Topic/priority_queue::assign%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="empty">
@@ -57,9 +64,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Determines whether the container contains no elements.</summary>
+        <returns>
+          <see langword="true" /> if the container contains no elements; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [priority_queue::empty (STL/CLR)](../Topic/priority_queue::empty%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="pop">
@@ -76,8 +91,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Removes the highest-priority element of the container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [priority_queue::pop (STL/CLR)](../Topic/priority_queue::pop%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="push">
@@ -96,9 +118,16 @@
         <Parameter Name="_Val" Type="TValue" />
       </Parameters>
       <Docs>
-        <param name="_Val">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="_Val">An element to insert into the controlled sequence. The controlled sequence is then reordered to maintain the heap discipline.</param>
+        <summary>Adds a new element to the container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [priority_queue::push (STL/CLR)](../Topic/priority_queue::push%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="size">
@@ -115,9 +144,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Counts the number of elements in the container.</summary>
+        <returns>The length of the controlled sequence.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [priority_queue::size (STL/CLR)](../Topic/priority_queue::size%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="top">
@@ -134,9 +170,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Accesses the highest-priority element of the container.</summary>
+        <returns>The top (highest-priority) element of the controlled sequence, which must be non-empty.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [priority_queue::top (STL/CLR)](../Topic/priority_queue::top%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="top_item">
@@ -152,9 +195,16 @@
         <ReturnType>TValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Accesses the highest-priority element of the container.</summary>
+        <value>The top (highest-priority) element of the controlled sequence, which must be non-empty.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [priority_queue::top_item (STL/CLR)](../Topic/priority_queue::top_item%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="value_comp">
@@ -171,9 +221,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Copies the ordering delegate for two elements.</summary>
+        <returns>The ordering delegate used to order the controlled sequence. You use it to compare two values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [priority_queue::value_comp (STL/CLR)](../Topic/priority_queue::value_comp%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

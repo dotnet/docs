@@ -1,4 +1,5 @@
 ---
 uid: System.Net.NetworkInformation.SuffixOrigin
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

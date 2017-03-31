@@ -1,9 +1,11 @@
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.ListView.EmptyText
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.ListView.EmptyText.Normal
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

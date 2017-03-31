@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.DirectoryServices.SortDirection" /> enumeration specifies how to sort the results of an Active Directory Domain Services query.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.DirectoryServices.SortDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sort from smallest to largest. For example, A to Z.</summary>
       </Docs>
     </Member>
     <Member MemberName="Descending">
@@ -43,7 +43,7 @@
         <ReturnType>System.DirectoryServices.SortDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sort from largest to smallest. For example, Z to A.</summary>
       </Docs>
     </Member>
   </Members>

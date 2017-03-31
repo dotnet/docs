@@ -1,9 +1,11 @@
 ---
 uid: Microsoft.Build.BuildEngine.Utilities
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.BuildEngine.Utilities.Escape(System.String)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

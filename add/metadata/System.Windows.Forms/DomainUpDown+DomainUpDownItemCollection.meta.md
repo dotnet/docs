@@ -1,29 +1,38 @@
 ---
 uid: System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.Remove(System.Object)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.Item(System.Int32)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.Insert(System.Int32,System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.Add(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.RemoveAt(System.Int32)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

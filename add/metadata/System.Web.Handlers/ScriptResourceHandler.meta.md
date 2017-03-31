@@ -1,29 +1,41 @@
 ---
 uid: System.Web.Handlers.ScriptResourceHandler
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Handlers.ScriptResourceHandler.#ctor
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Handlers.ScriptResourceHandler.ProcessRequest(System.Web.HttpContext)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Handlers.ScriptResourceHandler.System#Web#IHttpHandler#ProcessRequest(System.Web.HttpContext)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Handlers.ScriptResourceHandler.System#Web#IHttpHandler#IsReusable
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Handlers.ScriptResourceHandler.IsReusable
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

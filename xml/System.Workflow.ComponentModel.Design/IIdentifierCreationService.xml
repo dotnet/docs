@@ -13,8 +13,27 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a mechanism to create uniquely named identifiers throughout a specified range of activities.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ <xref:System.Workflow.ComponentModel.Design.IIdentifierCreationService> provides a mechanism to create uniquely named identifiers throughout a range of activities.  
+  
+   
+  
+## Examples  
+ The following example shows an implementation of the <xref:System.Workflow.ComponentModel.Design.IIdentifierCreationService>. This service ensures that each of the identifiers used within the current workflow is unique.  
+  
+ [!code-csharp[WF_Samples#41](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#41)]
+ [!code-vb[WF_Samples#41](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#41)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="EnsureUniqueIdentifiers">
@@ -34,10 +53,25 @@
         <Parameter Name="childActivities" Type="System.Collections.ICollection" />
       </Parameters>
       <Docs>
-        <param name="parentActivity">To be added.</param>
-        <param name="childActivities">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="parentActivity">The <see cref="T:System.Workflow.ComponentModel.CompositeActivity" /> that will contain the uniquely named activities.</param>
+        <param name="childActivities">A collection of activities to ensure that activities are uniquely named.</param>
+        <summary>Provides a mechanism to ensure that Activities added to a <see cref="T:System.Workflow.ComponentModel.CompositeActivity" /> are uniquely named.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Workflow.ComponentModel.Design.IIdentifierCreationService.EnsureUniqueIdentifiers%2A> to ensure activities inserted into a <xref:System.Workflow.ComponentModel.CompositeActivity> have unique identifiers.  
+  
+   
+  
+## Examples  
+ The following example shows an implementation of the <xref:System.Workflow.ComponentModel.Design.IIdentifierCreationService>. This service ensures that each of the identifiers used within the current workflow is unique.  
+  
+ [!code-csharp[WF_Samples#43](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#43)]
+ [!code-vb[WF_Samples#43](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#43)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidateIdentifier">
@@ -57,10 +91,25 @@
         <Parameter Name="identifier" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="activity">To be added.</param>
-        <param name="identifier">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="activity">The <see cref="T:System.Workflow.ComponentModel.Activity" /> against which to test the identifier.</param>
+        <param name="identifier">The identifier to test for validity.</param>
+        <summary>Provides a mechanism to test that an identifier is unique within an <see cref="T:System.Workflow.ComponentModel.Activity" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Workflow.ComponentModel.Design.IIdentifierCreationService.ValidateIdentifier%2A> to make sure an identifier is unique and properly formatted for use within a specified <xref:System.Workflow.ComponentModel.Activity>.  
+  
+   
+  
+## Examples  
+ The following example shows an implementation of the <xref:System.Workflow.ComponentModel.Design.IIdentifierCreationService>. This service ensures that each of the identifiers used within the current workflow is unique.  
+  
+ [!code-csharp[WF_Samples#42](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#42)]
+ [!code-vb[WF_Samples#42](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#42)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

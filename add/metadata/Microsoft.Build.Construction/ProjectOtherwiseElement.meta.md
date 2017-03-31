@@ -1,29 +1,35 @@
 ---
 uid: Microsoft.Build.Construction.ProjectOtherwiseElement
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.ProjectOtherwiseElement.PropertyGroups
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.ProjectOtherwiseElement.ConditionLocation
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.ProjectOtherwiseElement.ChooseElements
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.ProjectOtherwiseElement.Condition
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.ProjectOtherwiseElement.ItemGroups
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

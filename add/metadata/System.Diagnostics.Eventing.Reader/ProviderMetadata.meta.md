@@ -1,89 +1,119 @@
 ---
 uid: System.Diagnostics.Eventing.Reader.ProviderMetadata
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.ProviderMetadata.#ctor(System.String)
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.ProviderMetadata.Opcodes
-internalonly: False
----
-
----
-uid: System.Diagnostics.Eventing.Reader.ProviderMetadata.#ctor(System.String,System.Diagnostics.Eventing.Reader.EventLogSession,System.Globalization.CultureInfo)
-internalonly: False
----
-
----
-uid: System.Diagnostics.Eventing.Reader.ProviderMetadata.Keywords
-internalonly: False
----
-
----
-uid: System.Diagnostics.Eventing.Reader.ProviderMetadata.Events
-internalonly: False
----
-
----
-uid: System.Diagnostics.Eventing.Reader.ProviderMetadata.ResourceFilePath
-internalonly: False
----
-
----
-uid: System.Diagnostics.Eventing.Reader.ProviderMetadata.ParameterFilePath
-internalonly: False
----
-
----
-uid: System.Diagnostics.Eventing.Reader.ProviderMetadata.Tasks
-internalonly: False
----
-
----
-uid: System.Diagnostics.Eventing.Reader.ProviderMetadata.LogLinks
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.ProviderMetadata.Dispose
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.ProviderMetadata.#ctor(System.String,System.Diagnostics.Eventing.Reader.EventLogSession,System.Globalization.CultureInfo)
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.ProviderMetadata.Keywords
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.ProviderMetadata.Events
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.ProviderMetadata.ResourceFilePath
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.ProviderMetadata.ParameterFilePath
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.ProviderMetadata.Tasks
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.ProviderMetadata.LogLinks
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.ProviderMetadata.Dispose
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.ProviderMetadata.MessageFilePath
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.ProviderMetadata.Dispose(System.Boolean)
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.ProviderMetadata.Name
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.ProviderMetadata.Id
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.ProviderMetadata.Levels
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.ProviderMetadata.DisplayName
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.ProviderMetadata.#ctor
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.ProviderMetadata.HelpLink
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---

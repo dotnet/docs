@@ -17,8 +17,75 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a set of command-related properties that are used to fill the <see cref="T:System.Data.DataSet" /> and update a data source, and is implemented by .NET Framework data providers that access relational databases.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.IDbDataAdapter> interface inherits from the <xref:System.Data.IDataAdapter> interface and allows an object to create a DataAdapter designed for use with a relational database. The <xref:System.Data.IDbDataAdapter> interface and, optionally, the utility class, <xref:System.Data.Common.DbDataAdapter>, allow an inheriting class to implement a DataAdapter class, which represents the bridge between a data source and a <xref:System.Data.DataSet>. For more information about DataAdapter classes, see [Populating a DataSet from a DataAdapter](../Topic/Populating%20a%20DataSet%20from%20a%20DataAdapter.md). For more information about implementing .NET Framework data providers, see [&#91;\<topic://cpconimplementingnetdataprovider>&#93;](http://msdn.microsoft.com/en-us/a9fa1926-071b-4c6f-997d-a16bac633852).  
+  
+ An application does not create an instance of the <xref:System.Data.IDbDataAdapter> interface directly, but creates an instance of a class that inherits <xref:System.Data.IDbDataAdapter> and <xref:System.Data.Common.DbDataAdapter>.  
+  
+ Classes that inherit <xref:System.Data.IDbDataAdapter> must implement the inherited members, and typically define additional members to add provider-specific functionality. For example, the <xref:System.Data.IDbDataAdapter> interface defines the <xref:System.Data.IDbDataAdapter.SelectCommand%2A> property, and the <xref:System.Data.Common.DbDataAdapter> interface defines a <xref:System.Data.IDataAdapter.Fill%2A> method that takes a <xref:System.Data.DataTable> as a parameter. In turn, the <xref:System.Data.OleDb.OleDbDataAdapter> class inherits the <xref:System.Data.IDbDataAdapter.SelectCommand%2A> property and the <xref:System.Data.Common.DbDataAdapter.Fill%2A> method, and also defines two additional overloads of the <xref:System.Data.OleDb.OleDbDataAdapter.Fill%2A> method that take an ADO Recordset object as a parameter.  
+  
+   
+  
+## Examples  
+ The following example uses the derived classes, <xref:System.Data.SqlClient.SqlCommand>, <xref:System.Data.SqlClient.SqlDataAdapter> and <xref:System.Data.SqlClient.SqlConnection>, to select records from a data source. The filled <xref:System.Data.DataSet> is then returned. To accomplish this, the method is passed an initialized <xref:System.Data.DataSet>, a connection string, and a query string that is a Transact-SQL SELECT statement.  
+  
+ [!code-csharp[Classic WebData SqlDataAdapter Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlDataAdapter Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData SqlDataAdapter Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlDataAdapter Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>To promote consistency among .NET Framework data providers, name the inheriting class in the form <paramref name="Prv" /> DataAdapter where <paramref name="Prv" /> is the uniform prefix given to all classes in a specific .NET Framework data provider namespace. For example, <paramref name="Sql" /> is the prefix of the <see cref="T:System.Data.SqlClient.SqlDataAdapter" /> class in the <see langword="System.Data.SqlClient" /> namespace.  
+  
+ When you inherit from the <see cref="T:System.Data.IDbDataAdapter" /> interface, you should implement the following constructors:  
+  
+ <list type="table">  
+<listheader>  
+<term> Item  
+  
+ </term>  
+<description> Description  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> PrvDataAdapter()  
+  
+ </term>  
+<description> Initializes a new instance of the PrvDataAdapter class.  
+  
+ </description>  
+</item>  
+<item>  
+<term> PrvDataAdapter(PrvCommand selectCommand)  
+  
+ </term>  
+<description> Initializes a new instance of the PrvDataAdapter class with the specified SQL SELECT statement.  
+  
+ </description>  
+</item>  
+<item>  
+<term> PrvDataAdapter(string selectCommandText, string selectConnectionString)  
+  
+ </term>  
+<description> Initializes a new instance of the PrvDataAdapter class with an SQL SELECT statement and a connection string.  
+  
+ </description>  
+</item>  
+<item>  
+<term> PrvDataAdapter(string selectCommandText, PrvConnection selectConnection)  
+  
+ </term>  
+<description> Initializes a new instance of the PrvDataAdapter class with an SQL SELECT statement and a PrvConnection object.  
+  
+ </description>  
+</item>  
+</list></para>
+    </block>
   </Docs>
   <Members>
     <Member MemberName="DeleteCommand">
@@ -39,9 +106,26 @@
         <ReturnType>System.Data.IDbCommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets an SQL statement for deleting records from the data set.</summary>
+        <value>An <see cref="T:System.Data.IDbCommand" /> used during <see cref="M:System.Data.Common.DbDataAdapter.Update(System.Data.DataSet)" /> to delete records in the data source for deleted rows in the data set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ During <xref:System.Data.Common.DbDataAdapter.Update%2A>, if this property is not set and primary key information is present in the <xref:System.Data.DataSet>, the <xref:System.Data.IDbDataAdapter.DeleteCommand%2A> can be generated automatically if you set the `SelectCommand` property of a .NET Framework data provider. Then, any additional commands that you do not set are generated by the CommandBuilder. This generation logic requires key column information to be present in the <xref:System.Data.DataSet>. For more information see [Generating Commands with CommandBuilders](../Topic/Generating%20Commands%20with%20CommandBuilders.md).  
+  
+ When <xref:System.Data.IDbDataAdapter.DeleteCommand%2A> is assigned to a previously created <xref:System.Data.IDbCommand>, the <xref:System.Data.IDbCommand> is not cloned. The <xref:System.Data.IDbDataAdapter.DeleteCommand%2A> maintains a reference to the previously created <xref:System.Data.IDbCommand> object.  
+  
+   
+  
+## Examples  
+ The following example creates an instance of the inherited <xref:System.Data.OleDb.OleDbDataAdapter> class, and sets the <xref:System.Data.OleDb.OleDbDataAdapter.SelectCommand%2A> and <xref:System.Data.OleDb.OleDbDataAdapter.DeleteCommand%2A> properties. It assumes you have already created an <xref:System.Data.OleDb.OleDbConnection> object.  
+  
+ [!code-csharp[Classic WebData DbDataAdapter.DeleteCommand Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DbDataAdapter.DeleteCommand Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData DbDataAdapter.DeleteCommand Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DbDataAdapter.DeleteCommand Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertCommand">
@@ -62,9 +146,29 @@
         <ReturnType>System.Data.IDbCommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets an SQL statement used to insert new records into the data source.</summary>
+        <value>An <see cref="T:System.Data.IDbCommand" /> used during <see cref="M:System.Data.Common.DbDataAdapter.Update(System.Data.DataSet)" /> to insert records in the data source for new rows in the data set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ During <xref:System.Data.Common.DbDataAdapter.Update%2A>, if this property is not set and primary key information is present in the <xref:System.Data.DataSet>, the <xref:System.Data.IDbDataAdapter.InsertCommand%2A> can be generated automatically if you set the `SelectCommand` property of a .NET Framework data provider. Then, any additional commands that you do not set are generated by the CommandBuilder. This generation logic requires key column information to be present in the <xref:System.Data.DataSet>. For more information see [Generating Commands with CommandBuilders](../Topic/Generating%20Commands%20with%20CommandBuilders.md).  
+  
+ When <xref:System.Data.IDbDataAdapter.InsertCommand%2A> is assigned to a previously created <xref:System.Data.IDbCommand>, the <xref:System.Data.IDbCommand> is not cloned. The <xref:System.Data.IDbDataAdapter.InsertCommand%2A> maintains a reference to the previously created <xref:System.Data.IDbCommand> object.  
+  
+> [!NOTE]
+>  If execution of this command returns rows, these rows may be added to the <xref:System.Data.DataSet> depending on how you set the <xref:System.Data.IDbCommand.UpdatedRowSource%2A> property of the <xref:System.Data.IDbCommand> object.  
+  
+   
+  
+## Examples  
+ The following example creates an instance of the inherited <xref:System.Data.OleDb.OleDbDataAdapter> class, and sets the <xref:System.Data.OleDb.OleDbDataAdapter.SelectCommand%2A> and <xref:System.Data.OleDb.OleDbDataAdapter.InsertCommand%2A> properties. It assumes you have already created an <xref:System.Data.OleDb.OleDbConnection> object.  
+  
+ [!code-csharp[Classic WebData DbDataAdapter.InsertCommand Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DbDataAdapter.InsertCommand Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData DbDataAdapter.InsertCommand Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DbDataAdapter.InsertCommand Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectCommand">
@@ -85,9 +189,26 @@
         <ReturnType>System.Data.IDbCommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets an SQL statement used to select records in the data source.</summary>
+        <value>An <see cref="T:System.Data.IDbCommand" /> that is used during <see cref="M:System.Data.Common.DbDataAdapter.Update(System.Data.DataSet)" /> to select records from data source for placement in the data set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When <xref:System.Data.IDbDataAdapter.SelectCommand%2A> is assigned to a previously created <xref:System.Data.IDbCommand>, the <xref:System.Data.IDbCommand> is not cloned. The <xref:System.Data.IDbDataAdapter.SelectCommand%2A> maintains a reference to the previously created <xref:System.Data.IDbCommand> object.  
+  
+ If the <xref:System.Data.IDbDataAdapter.SelectCommand%2A> does not return any rows, no tables are added to the <xref:System.Data.DataSet>, and no exception is raised.  
+  
+   
+  
+## Examples  
+ The following example creates an instance of the inherited <xref:System.Data.OleDb.OleDbDataAdapter> class, and sets the <xref:System.Data.OleDb.OleDbDataAdapter.SelectCommand%2A> and <xref:System.Data.OleDb.OleDbDataAdapter.InsertCommand%2A> properties. It assumes you have already created an <xref:System.Data.OleDb.OleDbConnection> object.  
+  
+ [!code-csharp[Classic WebData DbDataAdapter.SelectCommand Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DbDataAdapter.SelectCommand Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData DbDataAdapter.SelectCommand Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DbDataAdapter.SelectCommand Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateCommand">
@@ -108,9 +229,29 @@
         <ReturnType>System.Data.IDbCommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets an SQL statement used to update records in the data source.</summary>
+        <value>An <see cref="T:System.Data.IDbCommand" /> used during <see cref="M:System.Data.Common.DbDataAdapter.Update(System.Data.DataSet)" /> to update records in the data source for modified rows in the data set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ During <xref:System.Data.Common.DbDataAdapter.Update%2A>, if this property is not set and primary key information is present in the <xref:System.Data.DataSet>, the <xref:System.Data.IDbDataAdapter.UpdateCommand%2A> can be generated automatically if you set the `SelectCommand` property of a .NET Framework data provider. Then, any additional commands that you do not set are generated by the CommandBuilder. This generation logic requires key column information to be present in the <xref:System.Data.DataSet>. For more information see [Generating Commands with CommandBuilders](../Topic/Generating%20Commands%20with%20CommandBuilders.md).  
+  
+ When <xref:System.Data.IDbDataAdapter.UpdateCommand%2A> is assigned to a previously created <xref:System.Data.IDbCommand>, the <xref:System.Data.IDbCommand> is not cloned. The <xref:System.Data.IDbDataAdapter.UpdateCommand%2A> maintains a reference to the previously created <xref:System.Data.IDbCommand> object.  
+  
+> [!NOTE]
+>  If execution of this command returns rows, these rows are added to the <xref:System.Data.DataSet>.  
+  
+   
+  
+## Examples  
+ The following example creates an instance of the inherited <xref:System.Data.OleDb.OleDbDataAdapter> class, and sets the <xref:System.Data.OleDb.OleDbDataAdapter.SelectCommand%2A> and <xref:System.Data.OleDb.OleDbDataAdapter.UpdateCommand%2A> properties. It assumes you have already created an <xref:System.Data.OleDb.OleDbConnection> object.  
+  
+ [!code-csharp[Classic WebData OleDbDataAdapter.UpdateCommand Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OleDbDataAdapter.UpdateCommand Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData OleDbDataAdapter.UpdateCommand Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OleDbDataAdapter.UpdateCommand Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

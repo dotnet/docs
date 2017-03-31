@@ -1,39 +1,53 @@
 ---
 uid: System.Web.UI.Design.TemplateEditingService
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.TemplateEditingService.CreateFrame(System.Web.UI.Design.TemplatedControlDesigner,System.String,System.String[],System.Web.UI.WebControls.Style,System.Web.UI.WebControls.Style[])
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.TemplateEditingService.GetContainingTemplateName(System.Web.UI.Control)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.TemplateEditingService.CreateFrame
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.TemplateEditingService.SupportsNestedTemplateEditing
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.TemplateEditingService.CreateFrame(System.Web.UI.Design.TemplatedControlDesigner,System.String,System.String[])
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.TemplateEditingService.Dispose
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.TemplateEditingService.Finalize
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.TemplateEditingService.#ctor(System.ComponentModel.Design.IDesignerHost)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

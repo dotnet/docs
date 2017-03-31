@@ -1,29 +1,41 @@
 ---
 uid: System.ServiceProcess.Design.ServiceInstallerDialog
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ServiceProcess.Design.ServiceInstallerDialog.#ctor
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ServiceProcess.Design.ServiceInstallerDialog.Password
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ServiceProcess.Design.ServiceInstallerDialog.Main
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ServiceProcess.Design.ServiceInstallerDialog.Result
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ServiceProcess.Design.ServiceInstallerDialog.Username
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

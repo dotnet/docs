@@ -1,4 +1,5 @@
 ---
 uid: System.Web.UI.OutputCacheLocation
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

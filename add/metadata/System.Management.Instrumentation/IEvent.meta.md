@@ -1,9 +1,9 @@
 ---
 uid: System.Management.Instrumentation.IEvent
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.IEvent.Fire
-internalonly: False
+manager: "jillfra"
 ---

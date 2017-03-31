@@ -1,1 +1,0 @@
-   String^ identityName = genericIdentity->Name;

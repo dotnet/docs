@@ -15,8 +15,24 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines identifiers that indicate the persistence scope of a tab in the Properties window.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ComponentModel.PropertyTabScope> indicates the persistence scope of a tab that is displayed in the Properties window when a component of a design document has an associated <xref:System.ComponentModel.PropertyTabAttribute>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use <xref:System.ComponentModel.PropertyTabScope> to specify the scope of a property tab.  
+  
+ [!code-cpp[PropertyTabExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/PropertyTabExample/CPP/class1.cpp#1)]
+ [!code-csharp[PropertyTabExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/PropertyTabExample/CS/class1.cs#1)]
+ [!code-vb[PropertyTabExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/PropertyTabExample/VB/class1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Component">
@@ -37,7 +53,7 @@
         <ReturnType>System.ComponentModel.PropertyTabScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This tab is specific to the current component. This tab is added to the Properties window for the current component only and is removed when the component is no longer selected.</summary>
       </Docs>
     </Member>
     <Member MemberName="Document">
@@ -58,7 +74,19 @@
         <ReturnType>System.ComponentModel.PropertyTabScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This tab is specific to the current document. This tab is added to the Properties window and is removed when the currently selected document changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use <xref:System.ComponentModel.PropertyTabScope> to specify the scope of a property tab.  
+  
+ [!code-cpp[PropertyTabExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/PropertyTabExample/CPP/class1.cpp#1)]
+ [!code-csharp[PropertyTabExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/PropertyTabExample/CS/class1.cs#1)]
+ [!code-vb[PropertyTabExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/PropertyTabExample/VB/class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Global">
@@ -79,7 +107,7 @@
         <ReturnType>System.ComponentModel.PropertyTabScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This tab is added to the Properties window and can only be removed explicitly by a parent component.</summary>
       </Docs>
     </Member>
     <Member MemberName="Static">
@@ -100,7 +128,7 @@
         <ReturnType>System.ComponentModel.PropertyTabScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This tab is added to the Properties window and cannot be removed.</summary>
       </Docs>
     </Member>
   </Members>

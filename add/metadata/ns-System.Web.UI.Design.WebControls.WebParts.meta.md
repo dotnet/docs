@@ -1,4 +1,6 @@
 ---
 uid: System.Web.UI.Design.WebControls.WebParts
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

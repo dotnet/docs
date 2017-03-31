@@ -1,14 +1,14 @@
 ---
 uid: Microsoft.JScript.ArrayWrapper
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.ArrayWrapper.length
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.ArrayWrapper.GetType
-internalonly: False
+ms.author: "mikejo"
 ---

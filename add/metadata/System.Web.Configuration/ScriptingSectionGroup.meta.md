@@ -1,19 +1,23 @@
 ---
 uid: System.Web.Configuration.ScriptingSectionGroup
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ScriptingSectionGroup.ScriptResourceHandler
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ScriptingSectionGroup.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ScriptingSectionGroup.WebServices
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

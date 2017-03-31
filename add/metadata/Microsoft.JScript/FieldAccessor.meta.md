@@ -1,19 +1,19 @@
 ---
 uid: Microsoft.JScript.FieldAccessor
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.FieldAccessor.SetValue(System.Object,System.Object)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.FieldAccessor.GetValue(System.Object)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.FieldAccessor.#ctor
-internalonly: False
+ms.author: "mikejo"
 ---

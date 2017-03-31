@@ -1,9 +1,13 @@
 ---
 uid: System.Workflow.Runtime.WorkflowEventArgs
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.WorkflowEventArgs.WorkflowInstance
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

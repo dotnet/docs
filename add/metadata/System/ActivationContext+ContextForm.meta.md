@@ -1,4 +1,6 @@
 ---
 uid: System.ActivationContext.ContextForm
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

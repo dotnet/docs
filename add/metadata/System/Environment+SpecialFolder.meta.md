@@ -1,4 +1,6 @@
 ---
 uid: System.Environment.SpecialFolder
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

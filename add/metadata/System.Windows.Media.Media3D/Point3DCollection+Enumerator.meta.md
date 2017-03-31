@@ -1,29 +1,39 @@
 ---
 uid: System.Windows.Media.Media3D.Point3DCollection.Enumerator
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Media3D.Point3DCollection.Enumerator.System#Collections#IEnumerator#Current
-internalonly: False
+ms.author: "jimwalk"
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Media.Media3D.Point3DCollection.Enumerator.Reset
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Media3D.Point3DCollection.Enumerator.Current
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Media3D.Point3DCollection.Enumerator.System#IDisposable#Dispose
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Media3D.Point3DCollection.Enumerator.MoveNext
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

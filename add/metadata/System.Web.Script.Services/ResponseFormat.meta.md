@@ -1,4 +1,5 @@
 ---
 uid: System.Web.Script.Services.ResponseFormat
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

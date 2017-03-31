@@ -1,4 +1,6 @@
 ---
 uid: Microsoft.VisualBasic.VariantType
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

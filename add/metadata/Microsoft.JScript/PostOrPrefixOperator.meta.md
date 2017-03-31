@@ -1,14 +1,14 @@
 ---
 uid: Microsoft.JScript.PostOrPrefixOperator
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.PostOrPrefixOperator.#ctor(System.Int32)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.PostOrPrefixOperator.EvaluatePostOrPrefix(System.Object@)
-internalonly: False
+ms.author: "mikejo"
 ---

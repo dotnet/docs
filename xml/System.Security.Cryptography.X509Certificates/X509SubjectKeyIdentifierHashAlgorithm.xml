@@ -20,8 +20,17 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the type of hash algorithm to use with the <see cref="T:System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension" /> class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The subject key identifier (SKI) provides a unique identification for a certificate's subject when working with XML digital signing.  An SKI is an SHA-1 hash of the subject's public key information.  
+  
+ Use the <xref:System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm> enumeration to define the type of hash algorithm to use with the <xref:System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension> class when creating an SKI.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CapiSha1">
@@ -47,7 +56,7 @@
         <ReturnType>System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The subject key identifier (SKI) is composed of a 160-bit SHA-1 hash of the encoded public key (including the tag, length, and number of unused bits).</summary>
       </Docs>
     </Member>
     <Member MemberName="Sha1">
@@ -73,7 +82,7 @@
         <ReturnType>System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The SKI is composed of the 160-bit SHA-1 hash of the value of the public key (excluding the tag, length, and number of unused bits).</summary>
       </Docs>
     </Member>
     <Member MemberName="ShortSha1">
@@ -99,7 +108,7 @@
         <ReturnType>System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The SKI is composed of a four-bit type field with the value 0100, followed by the least significant 60 bits of the SHA-1 hash of the value of the public key (excluding the tag, length, and number of unused bit string bits)</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,24 +1,41 @@
 ---
 uid: System.Activities.DurableInstancing.ActivatableWorkflowsQueryResult
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DurableInstancing.ActivatableWorkflowsQueryResult.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DurableInstancing.ActivatableWorkflowsQueryResult.#ctor(System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object})
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.DurableInstancing.ActivatableWorkflowsQueryResult.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DurableInstancing.ActivatableWorkflowsQueryResult.ActivationParameters
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DurableInstancing.ActivatableWorkflowsQueryResult.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object}})
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

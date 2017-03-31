@@ -1,19 +1,23 @@
 ---
 uid: System.Web.Configuration.FormsAuthenticationUser
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.FormsAuthenticationUser.#ctor(System.String,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.FormsAuthenticationUser.Password
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.FormsAuthenticationUser.Name
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

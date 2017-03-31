@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies how an application will shutdown. Used by the <see cref="P:System.Windows.Application.ShutdownMode" /> property.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Windows.ShutdownMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An application shuts down only when <see cref="M:System.Windows.Application.Shutdown" /> is called.</summary>
       </Docs>
     </Member>
     <Member MemberName="OnLastWindowClose">
@@ -43,7 +43,7 @@
         <ReturnType>System.Windows.ShutdownMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An application shuts down when either the last window closes, or <see cref="M:System.Windows.Application.Shutdown" /> is called.</summary>
       </Docs>
     </Member>
     <Member MemberName="OnMainWindowClose">
@@ -59,7 +59,7 @@
         <ReturnType>System.Windows.ShutdownMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An application shuts down when either the main window closes, or <see cref="M:System.Windows.Application.Shutdown" /> is called.</summary>
       </Docs>
     </Member>
   </Members>

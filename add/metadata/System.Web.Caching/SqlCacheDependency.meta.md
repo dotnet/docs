@@ -1,24 +1,36 @@
 ---
 uid: System.Web.Caching.SqlCacheDependency
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.SqlCacheDependency.CreateOutputCacheDependency(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.SqlCacheDependency.#ctor(System.Data.SqlClient.SqlCommand)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Caching.SqlCacheDependency.#ctor
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.SqlCacheDependency.GetUniqueID
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.SqlCacheDependency.#ctor(System.String,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

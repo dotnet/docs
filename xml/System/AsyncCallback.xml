@@ -33,8 +33,25 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="ar">To be added.</param>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <param name="ar">The result of the asynchronous operation.</param>
+    <summary>References a method to be called when a corresponding asynchronous operation completes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use an <xref:System.AsyncCallback> delegate to process the results of an asynchronous operation in a separate thread. The <xref:System.AsyncCallback> delegate represents a callback method that is called when the asynchronous operation completes. The callback method takes an <xref:System.IAsyncResult> parameter, which is subsequently used to obtain the results of the asynchronous operation.  
+  
+ For more information about asynchronous programming, see [Using an AsyncCallback Delegate to End an Asynchronous Operation](../Topic/Using%20an%20AsyncCallback%20Delegate%20to%20End%20an%20Asynchronous%20Operation.md) and [Using an AsyncCallback Delegate and State Object](../Topic/Using%20an%20AsyncCallback%20Delegate%20and%20State%20Object.md) in [Event-based Asynchronous Pattern (EAP)](../Topic/Event-based%20Asynchronous%20Pattern%20\(EAP\).md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates using asynchronous methods in the <xref:System.Net.Dns> class to retrieve Domain Name System (DNS) information for user-specified computers. This example creates an <xref:System.AsyncCallback> delegate that references the `ProcessDnsInformation` method. This method is called once for each asynchronous request for DNS information.  
+  
+ [!code-csharp[AsyncDesignPattern#4](~/samples/snippets/csharp/VS_Snippets_CLR/AsyncDesignPattern/CS/AsyncDelegateNoStateObject.cs#4)]
+ [!code-vb[AsyncDesignPattern#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/AsyncDesignPattern/VB/AsyncDelegateNoState.vb#4)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

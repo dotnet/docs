@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Manages string localizer providers for globalization.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.Web.Globalization.IStringLocalizerProvider</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the the string localizer provider for globalization.</summary>
+        <value>An interface for the string localizer provider.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

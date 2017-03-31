@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the forward chaining behavior of the <see cref="T:System.Workflow.Activities.Rules.RuleSet" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Workflow.Activities.Rules.RuleChainingBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that chaining is performed when fields or properties are modified by actions, <see cref="T:System.Workflow.Activities.Rules.RuleWriteAttribute" /> are specified for methods called by actions, or when a <see cref="T:System.Workflow.Activities.Rules.RuleUpdateAction" /> is performed.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -43,7 +43,7 @@
         <ReturnType>System.Workflow.Activities.Rules.RuleChainingBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that no chaining is performed. Each rule is executed exactly once.</summary>
       </Docs>
     </Member>
     <Member MemberName="UpdateOnly">
@@ -59,7 +59,7 @@
         <ReturnType>System.Workflow.Activities.Rules.RuleChainingBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that chaining is performed if executed actions explicitly specify it using a <see cref="T:System.Workflow.Activities.Rules.RuleUpdateAction" />.</summary>
       </Docs>
     </Member>
   </Members>

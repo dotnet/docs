@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.SearchResponse" /> class is sent by the server as a response to a <see cref="T:System.DirectoryServices.Protocols.SearchRequest" /> object. This response contains zero or more <see cref="T:System.DirectoryServices.Protocols.SearchResultEntry" /> objects, and zero or more <see cref="T:System.DirectoryServices.Protocols.SearchResultReference" /> objects.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.DirectoryServices.Protocols.DirectoryControl[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.SearchResponse.Controls" /> property contains the <see cref="T:System.DirectoryServices.Protocols.DirectoryControl" /> object returned by the server.</summary>
+        <value>The <see cref="T:System.DirectoryServices.Protocols.DirectoryControl" /> object returned by the server.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <ReturnType>System.DirectoryServices.Protocols.SearchResultEntryCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.SearchResponse.Entries" /> property contains a <see cref="T:System.DirectoryServices.Protocols.SearchResultEntryCollection" /> object that contains the entries returned by the search.</summary>
+        <value>A <see cref="T:System.DirectoryServices.Protocols.SearchResultEntryCollection" /> object that contains the entries returned by the search.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +64,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.SearchResponse.ErrorMessage" /> property contains the error message, if any, for this operation.</summary>
+        <value>The error message, if any, for this operation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +82,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.SearchResponse.MatchedDN" /> property contains the matched distinguished name returned by the server.</summary>
+        <value>The matched distinguished name returned by the server.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,8 +100,8 @@
         <ReturnType>System.DirectoryServices.Protocols.SearchResultReferenceCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.SearchResponse.References" /> property contains a <see cref="T:System.DirectoryServices.Protocols.SearchResultReferenceCollection" /> object that contains search references returned by the server.</summary>
+        <value>A <see cref="T:System.DirectoryServices.Protocols.SearchResultReferenceCollection" /> object that contains search references returned by the server.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,8 +118,8 @@
         <ReturnType>System.Uri[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.SearchResponse.Referral" /> property contains the server referrals.</summary>
+        <value>The server referrals.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,8 +136,8 @@
         <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.SearchResponse.ResultCode" /> property contains a value of <see cref="T:System.DirectoryServices.Protocols.ResultCode" /> that specifies the result code for the operation.</summary>
+        <value>The result code for the operation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

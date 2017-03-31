@@ -1,4 +1,6 @@
 ---
 uid: System.ServiceModel.Security.SecurityTokenAttachmentMode
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

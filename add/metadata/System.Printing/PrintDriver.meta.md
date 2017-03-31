@@ -1,14 +1,19 @@
 ---
 uid: System.Printing.PrintDriver
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintDriver.Refresh
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintDriver.Commit
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

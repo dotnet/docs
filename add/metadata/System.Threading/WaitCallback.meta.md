@@ -1,4 +1,6 @@
 ---
 uid: System.Threading.WaitCallback
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

@@ -1,4 +1,6 @@
 ---
 uid: System.ResolveEventHandler
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

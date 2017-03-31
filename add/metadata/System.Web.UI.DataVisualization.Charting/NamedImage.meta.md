@@ -1,29 +1,45 @@
 ---
 uid: System.Web.UI.DataVisualization.Charting.NamedImage
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.NamedImage.Image
-internalonly: False
----
-
----
-uid: System.Web.UI.DataVisualization.Charting.NamedImage.Name
-internalonly: False
----
-
----
-uid: System.Web.UI.DataVisualization.Charting.NamedImage.Dispose(System.Boolean)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.NamedImage.#ctor
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Web.UI.DataVisualization.Charting.NamedImage.Name
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Web.UI.DataVisualization.Charting.NamedImage.Dispose(System.Boolean)
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Web.UI.DataVisualization.Charting.NamedImage.Dispose
+---
+
+---
+uid: System.Web.UI.DataVisualization.Charting.NamedImage.#ctor
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.NamedImage.#ctor(System.String,System.Drawing.Image)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---

@@ -16,8 +16,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies certain attributes of a class that represents a database.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can apply the <xref:System.Data.Linq.Mapping.DatabaseAttribute> attribute to any strongly typed <xref:System.Data.Linq.DataContext> declaration.  
+  
+ The <xref:System.Data.Linq.Mapping.DatabaseAttribute> attribute is optional. If you use it, you must use the <xref:System.Data.Linq.Mapping.DatabaseAttribute.Name%2A> property to supply a name.  
+  
+ If you do not apply this attribute and the connection does not specify a name, the database is assumed to have the same name as the <xref:System.Data.Linq.DataContext> class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +42,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Linq.Mapping.DatabaseAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,9 +59,38 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the database.</summary>
+        <value>The name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is required if you use the <xref:System.Data.Linq.Mapping.DatabaseAttribute> attribute.  
+  
+ The information is used only if the connection itself does not specify the database name.  
+  
+   
+  
+## Examples  
+  
+```vb  
+<Database(Name:="Database#5")> _  
+Public Class Database5  
+    Inherits DataContext  
+    …  
+End Class  
+```  
+  
+```csharp  
+[Database(Name="Database#5")]  
+public class Database5 : DataContext  
+{  
+    …  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

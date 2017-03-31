@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the information that is used to call a function. This includes the function, the caller, the arguments, and information about the stack frame. This class belongs to the objects and functions category.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,7 +28,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A closure function that represents the function that is being called.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -45,7 +45,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The calling scope information from the stack frame.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,7 +62,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The number of arguments.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

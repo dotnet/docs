@@ -1,24 +1,29 @@
 ---
 uid: Microsoft.Build.Execution.ProjectItemGroupTaskInstance
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ProjectItemGroupTaskInstance.Location
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ProjectItemGroupTaskInstance.Items
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ProjectItemGroupTaskInstance.Condition
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ProjectItemGroupTaskInstance.ConditionLocation
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

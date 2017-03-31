@@ -1,19 +1,34 @@
 ---
 uid: Microsoft.VisualBasic.Logging.AspLog
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Logging.AspLog.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Logging.AspLog.InitializeWithDefaultsSinceNoConfigExists
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Logging.AspLog.#ctor(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Logging.AspLog.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

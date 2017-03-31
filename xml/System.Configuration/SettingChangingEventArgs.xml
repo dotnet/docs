@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides data for the <see cref="E:System.Configuration.ApplicationSettingsBase.SettingChanging" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.SettingChangingEventArgs> class provides data for the <xref:System.Configuration.ApplicationSettingsBase.SettingChanging> event, which signals that the value of an application settings property is about to change. The most common source for this event is the `get` accessor of the <xref:System.Configuration.ApplicationSettingsBase.Item%2A> method in the <xref:System.Configuration.ApplicationSettingsBase> class.  
+  
+ Because <xref:System.Configuration.SettingChangingEventArgs> is derived from <xref:System.ComponentModel.CancelEventArgs>, the handler has the option of canceling the write operation.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,13 +41,21 @@
         <Parameter Name="cancel" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="settingName">To be added.</param>
-        <param name="settingClass">To be added.</param>
-        <param name="settingKey">To be added.</param>
-        <param name="newValue">To be added.</param>
-        <param name="cancel">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="settingName">A <see cref="T:System.String" /> containing the name of the application setting.</param>
+        <param name="settingClass">A <see cref="T:System.String" /> containing a category description of the setting. Often this parameter is set to the application settings group name.</param>
+        <param name="settingKey">A <see cref="T:System.String" /> containing the application settings key.</param>
+        <param name="newValue">An <see cref="T:System.Object" /> that contains the new value to be assigned to the application settings property.</param>
+        <param name="cancel">
+          <see langword="true" /> to cancel the event; otherwise, <see langword="false" />.</param>
+        <summary>Initializes an instance of the <see cref="T:System.Configuration.SettingChangingEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.SettingChangingEventArgs.%23ctor%2A> constructor just assigns the values of the parameters to the corresponding properties in the <xref:System.Configuration.SettingChangingEventArgs> class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NewValue">
@@ -54,9 +71,16 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the new value being assigned to the application settings property.</summary>
+        <value>An <see cref="T:System.Object" /> that contains the new value to be assigned to the application settings property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The actual type of the <xref:System.Configuration.SettingChangingEventArgs.NewValue%2A> property should be compatible with the settings property being set. The latter is available though the <xref:System.Configuration.SettingsProperty.PropertyType%2A> property of the <xref:System.Configuration.SettingsProperty> class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SettingClass">
@@ -72,9 +96,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the application settings property category.</summary>
+        <value>A <see cref="T:System.String" /> containing a category description of the setting. Typically, this parameter is set to the application settings group name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ All application settings belong to a application settings group. The group name can be explicitly supplied by decorating the class with a <xref:System.Configuration.SettingsGroupNameAttribute>; otherwise, one is generated using the name of the settings wrapper class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SettingKey">
@@ -90,9 +121,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the application settings key associated with the property.</summary>
+        <value>A <see cref="T:System.String" /> containing the application settings key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each settings wrapper class, derived from <xref:System.Configuration.ApplicationSettingsBase>, has an associated settings key, which is a string that helps disambiguate different instances of the same wrapper in a single application. Because each wrapper class defines a set of properties that represent application settings, the settings key can similarly help disambiguate their use.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SettingName">
@@ -108,9 +146,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the name of the application setting associated with the application settings property.</summary>
+        <value>A <see cref="T:System.String" /> containing the name of the application setting.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically the settings wrapper class, derived from <xref:System.Configuration.ApplicationSettingsBase>, will be constructed so that the name of the application settings property will be the same as its associated application setting.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

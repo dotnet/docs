@@ -10,8 +10,19 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies whether view state will be enabled for a control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Web.UI.Control.ViewStateMode%2A?displayProperty=fullName> property to enable view state for an individual control even if it is disabled for the page.  
+  
+ To turn off view state for a page and turn it on for a specific control on the page, set the <xref:System.Web.UI.Control.EnableViewState%2A> property of the page and the control to `true`, set the <xref:System.Web.UI.Control.ViewStateMode%2A> property of the page to Disabled, and set the <xref:System.Web.UI.Control.ViewStateMode%2A> property of the control to Enabled.  
+  
+ The <xref:System.Web.UI.Control.ViewStateMode%2A> property of a page or a control has an effect only if the <xref:System.Web.UI.Control.EnableViewState%2A> property is set to `true`. If the <xref:System.Web.UI.Control.EnableViewState%2A> property is set to `false`, view state will be turned off even if the <xref:System.Web.UI.Control.ViewStateMode%2A> property is set to Enabled.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Disabled">
@@ -27,7 +38,7 @@
         <ReturnType>System.Web.UI.ViewStateMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Disable view state for this control even if the parent control has view state enabled.</summary>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -43,7 +54,7 @@
         <ReturnType>System.Web.UI.ViewStateMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Enable view state for this control even if the parent control has view state disabled.</summary>
       </Docs>
     </Member>
     <Member MemberName="Inherit">
@@ -59,7 +70,7 @@
         <ReturnType>System.Web.UI.ViewStateMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Inherit the value of <see cref="T:System.Web.UI.ViewStateMode" /> from the parent <see cref="T:System.Web.UI.Control" />.</summary>
       </Docs>
     </Member>
   </Members>

@@ -15,8 +15,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an enumeration of the permissible actions which may be performed on an <see cref="T:System.Workflow.ComponentModel.ActivityCollection" />, which typically represents the collection of all child activities of a <see cref="T:System.Workflow.ComponentModel.CompositeActivity" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -32,7 +41,7 @@
         <ReturnType>System.Workflow.ComponentModel.ActivityCollectionChangeAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The enumerator corresponding to adding a new <see cref="T:System.Workflow.ComponentModel.Activity" /> to the <see cref="T:System.Workflow.ComponentModel.ActivityCollection" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -48,7 +57,7 @@
         <ReturnType>System.Workflow.ComponentModel.ActivityCollectionChangeAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The enumerator corresponding to removing an <see cref="T:System.Workflow.ComponentModel.Activity" /> from the <see cref="T:System.Workflow.ComponentModel.ActivityCollection" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Replace">
@@ -64,7 +73,7 @@
         <ReturnType>System.Workflow.ComponentModel.ActivityCollectionChangeAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The enumerator corresponding to replacing an <see cref="T:System.Workflow.ComponentModel.Activity" /> in the <see cref="T:System.Workflow.ComponentModel.ActivityCollection" />.</summary>
       </Docs>
     </Member>
   </Members>

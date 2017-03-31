@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The exception that is thrown when an error occurs while processing an encrypted security token.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.EncryptedTokenDecryptionFailedException" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">A message that identifies the reason the exception occurred.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.EncryptedTokenDecryptionFailedException" /> class using the specified error message.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,9 +62,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that contains values that are used during serialization and deserialization.</param>
+        <param name="context">A <see cref="T:System.IdentityModel.Tokens.SecurityTokenException" /> that contains data about the source and destination of the serialization stream.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.EncryptedTokenDecryptionFailedException" /> class using the specified XML serialization data and contextual data about the source and destination of the serialization stream.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,9 +82,9 @@
         <Parameter Name="inner" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="inner">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">A message that identifies the reason the exception occurred.</param>
+        <param name="inner">A <see cref="T:System.Exception" /> that represents the root cause of the exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.EncryptedTokenDecryptionFailedException" /> class using the specified error message and root cause of the error.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

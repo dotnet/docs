@@ -1,4 +1,6 @@
 ---
 uid: System.Configuration.Install.UninstallAction
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

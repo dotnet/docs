@@ -20,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines properties to obtain information about errors. This interface provides extra functionality that is needed by an IActiveScript host.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,8 +37,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When implemented in a class, gets the end line of the code in which an error occurred.</summary>
+        <value>The end line of the code in which an error occurred.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

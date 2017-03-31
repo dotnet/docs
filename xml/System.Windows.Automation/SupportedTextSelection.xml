@@ -21,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains values that specify whether a text provider supports selection and, if so, whether it supports a single, continuous selection or multiple, disjoint selections.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,7 +38,7 @@
         <ReturnType>System.Windows.Automation.SupportedTextSelection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Supports multiple, disjoint text selections.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -54,7 +54,7 @@
         <ReturnType>System.Windows.Automation.SupportedTextSelection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Does not support text selections.</summary>
       </Docs>
     </Member>
     <Member MemberName="Single">
@@ -70,7 +70,7 @@
         <ReturnType>System.Windows.Automation.SupportedTextSelection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Supports a single, continuous text selection.</summary>
       </Docs>
     </Member>
   </Members>

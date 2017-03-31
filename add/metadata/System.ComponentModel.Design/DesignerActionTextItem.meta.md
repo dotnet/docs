@@ -1,9 +1,13 @@
 ---
 uid: System.ComponentModel.Design.DesignerActionTextItem
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.DesignerActionTextItem.#ctor(System.String,System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

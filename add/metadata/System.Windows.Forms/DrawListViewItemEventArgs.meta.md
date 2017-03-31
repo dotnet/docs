@@ -1,59 +1,89 @@
 ---
 uid: System.Windows.Forms.DrawListViewItemEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DrawListViewItemEventArgs.DrawDefault
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DrawListViewItemEventArgs.DrawText(System.Windows.Forms.TextFormatFlags)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DrawListViewItemEventArgs.State
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DrawListViewItemEventArgs.ItemIndex
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DrawListViewItemEventArgs.DrawBackground
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DrawListViewItemEventArgs.DrawFocusRectangle
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DrawListViewItemEventArgs.Graphics
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DrawListViewItemEventArgs.DrawText
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DrawListViewItemEventArgs.State
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DrawListViewItemEventArgs.ItemIndex
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DrawListViewItemEventArgs.DrawBackground
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DrawListViewItemEventArgs.DrawFocusRectangle
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DrawListViewItemEventArgs.Graphics
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DrawListViewItemEventArgs.DrawText
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DrawListViewItemEventArgs.Item
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DrawListViewItemEventArgs.Bounds
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DrawListViewItemEventArgs.#ctor(System.Drawing.Graphics,System.Windows.Forms.ListViewItem,System.Drawing.Rectangle,System.Int32,System.Windows.Forms.ListViewItemStates)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

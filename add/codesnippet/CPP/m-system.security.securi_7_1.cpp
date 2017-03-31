@@ -1,1 +1,0 @@
-            tagText = SecurityElement::Escape( tagText );

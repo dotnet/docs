@@ -1,49 +1,66 @@
 ---
 uid: System.Web.Services.Protocols.Soap12FaultCodes
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Protocols.Soap12FaultCodes.RpcProcedureNotPresentFaultCode
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Protocols.Soap12FaultCodes.SenderFaultCode
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Protocols.Soap12FaultCodes.EncodingUntypedValueFaultCode
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Protocols.Soap12FaultCodes.RpcBadArgumentsFaultCode
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Protocols.Soap12FaultCodes.EncodingMissingIdFaultCode
-internalonly: False
 ---
 
 ---
 uid: System.Web.Services.Protocols.Soap12FaultCodes.DataEncodingUnknownFaultCode
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Protocols.Soap12FaultCodes.ReceiverFaultCode
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Protocols.Soap12FaultCodes.MustUnderstandFaultCode
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Protocols.Soap12FaultCodes.VersionMismatchFaultCode
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

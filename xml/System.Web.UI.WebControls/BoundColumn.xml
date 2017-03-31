@@ -11,8 +11,31 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>A column type for the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control that is bound to a field in a data source.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.BoundColumn> column type in a <xref:System.Web.UI.WebControls.DataGrid> control to display the contents of a field in the data source. The values are listed in a single column. The field is linked to the <xref:System.Web.UI.WebControls.BoundColumn>, so any updates in the data source will reflect in the corresponding cells of the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+> [!NOTE]
+>  This column type is the default for the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ To control appearance of this column, use the style properties of the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+> [!CAUTION]
+>  Text is not HTML encoded before it is displayed in the <xref:System.Web.UI.WebControls.BoundColumn>. This makes it possible to embed script within HTML tags in the text. If the values for this column come from user input, be sure to validate the values to reduce security vulnerabilities.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use a <xref:System.Web.UI.WebControls.BoundColumn> column type in the <xref:System.Web.UI.WebControls.DataGrid> control to display the fields in a data source.  
+  
+ [!code-csharp[Classic BoundColumn Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic BoundColumn Example/CS/sourcecs.aspx#1)]
+ [!code-vb[Classic BoundColumn Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic BoundColumn Example/VB/sourcevb.aspx#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,8 +49,23 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.BoundColumn" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.BoundColumn> class.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to create and initialize a new instance of the <xref:System.Web.UI.WebControls.BoundColumn> class and add it to the <xref:System.Web.UI.WebControls.DataGrid.Columns%2A> collection.  
+  
+ [!code-csharp[DataGridCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridCtor/CS/datagridctorcs.aspx#1)]
+ [!code-vb[DataGridCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridCtor/VB/datagridctorvb.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataField">
@@ -48,9 +86,24 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the field name from the data source to bind to the <see cref="T:System.Web.UI.WebControls.BoundColumn" />.</summary>
+        <value>The name of the field to bind to the <see cref="T:System.Web.UI.WebControls.BoundColumn" />. The default value is <see cref="F:System.String.Empty" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.BoundColumn.DataField%2A> property to specify the field to bind to the <xref:System.Web.UI.WebControls.BoundColumn>.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.BoundColumn.DataField%2A> property to specify the name of the field in the data source to bind to the <xref:System.Web.UI.WebControls.BoundColumn>.  
+  
+ [!code-csharp[Classic BoundColumn Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic BoundColumn Example/CS/sourcecs.aspx#1)]
+ [!code-vb[Classic BoundColumn Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic BoundColumn Example/VB/sourcevb.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataFormatString">
@@ -71,9 +124,53 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the string that specifies the display format for items in the column.</summary>
+        <value>A formatting string that specifies the display format of items in the column. The default value is <see cref="F:System.String.Empty" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.BoundColumn.DataFormatString%2A> property to provide a custom format for the items in the column.  
+  
+ The data format string consists of two parts, separated by a colon, in the form { `A` : `Bxx` }. For example, the formatting string {0:F2} displays a fixed-point number with two decimal places.  
+  
+> [!NOTE]
+>  The entire string must be enclosed in braces to indicate that it is a format string and not a literal string. Any text outside the braces is displayed as literal text.  
+  
+ The value before the colon (`A` in the general example) specifies the parameter index in a zero-based list of parameters.  
+  
+> [!NOTE]
+>  This value can only be set to 0 because there is only one value in each cell.  
+  
+ The character after the colon (`B` in the general example) specifies the format to display the value in. The following table lists the common formats.  
+  
+|Format character|Description|  
+|----------------------|-----------------|  
+|`C`|Displays numeric values in currency format.|  
+|`D`|Displays numeric values in decimal format.|  
+|`E`|Displays numeric values in scientific (exponential) format.|  
+|`F`|Displays numeric values in fixed format.|  
+|`G`|Displays numeric values in general format.|  
+|`N`|Displays numeric values in number format.|  
+|`X`|Displays numeric values in hexadecimal format.|  
+  
+> [!NOTE]
+>  The format character is not case-sensitive, except for `X`, which displays the hexadecimal characters in the case specified.  
+  
+ The value after the format character (`xx` in the general example) specifies the number of significant digits or decimal places to display.  
+  
+ For more information on formatting strings, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md).  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.BoundColumn.DataFormatString%2A> property to specify various formats for the columns in the <xref:System.Web.UI.WebControls.DataGrid> control. The `Qty` column is formatted as an integer, the `Price` column is formatted as currency, the `Weight` column is formatted as a decimal number, and the `Expires` column is formatted as a short date and time string.  
+  
+ [!code-csharp[BoundColumnDataFormatString#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BoundColumnDataFormatString/cs/BoundColumnSampleCS.aspx#1)]
+ [!code-vb[BoundColumnDataFormatString#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BoundColumnDataFormatString/vb/BoundColumnSampleVB.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FormatDataValue">
@@ -92,10 +189,20 @@
         <Parameter Name="dataValue" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="dataValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="dataValue">The value to format.</param>
+        <summary>Converts the specified value to the format indicated by the <see cref="P:System.Web.UI.WebControls.BoundColumn.DataFormatString" /> property.</summary>
+        <returns>The specified value converted to the format indicated by the <see cref="P:System.Web.UI.WebControls.BoundColumn.DataFormatString" /> property.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.BoundColumn.FormatDataValue%2A> method to convert the specified value to the format indicated by the <xref:System.Web.UI.WebControls.BoundColumn.DataFormatString%2A> property.  
+  
+> [!NOTE]
+>  This method returns the string equivalent of the value if the <xref:System.Web.UI.WebControls.BoundColumn.DataFormatString%2A> property is not set.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -112,8 +219,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Resets the <see cref="T:System.Web.UI.WebControls.BoundColumn" /> to its initial state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.BoundColumn.Initialize%2A> method to reset the <xref:System.Web.UI.WebControls.BoundColumn> to its initial state.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InitializeCell">
@@ -134,11 +248,18 @@
         <Parameter Name="itemType" Type="System.Web.UI.WebControls.ListItemType" />
       </Parameters>
       <Docs>
-        <param name="cell">To be added.</param>
-        <param name="columnIndex">To be added.</param>
-        <param name="itemType">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="cell">A <see cref="T:System.Web.UI.WebControls.TableCell" /> object that represents the cell to reset.</param>
+        <param name="columnIndex">The column number where the cell is located.</param>
+        <param name="itemType">One of the <see cref="T:System.Web.UI.WebControls.ListItemType" /> values.</param>
+        <summary>Resets the specified cell in the <see cref="T:System.Web.UI.WebControls.BoundColumn" /> to its initial state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.BoundColumn.InitializeCell%2A> method resets the specified cell in the <xref:System.Web.UI.WebControls.BoundColumn> to its initial state.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadOnly">
@@ -159,9 +280,25 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether the items in the <see cref="T:System.Web.UI.WebControls.BoundColumn" /> can be edited.</summary>
+        <value>
+          <see langword="true" /> if the items in the <see cref="T:System.Web.UI.WebControls.BoundColumn" /> cannot be edited; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.BoundColumn.ReadOnly%2A> property to specify whether the items in the <xref:System.Web.UI.WebControls.BoundColumn> can be edited. This property can also be used to programmatically determine whether the column is read-only.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.BoundColumn.ReadOnly%2A> property to specify that a <xref:System.Web.UI.WebControls.BoundColumn> is read-only. The .aspx file defines three BoundColumn controls, and sets the Item column to read-only.  
+  
+ [!code-csharp[BoundColumnReadOnly#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BoundColumnReadOnly/CS/boundcolumnreadonlycs.aspx#1)]
+ [!code-vb[BoundColumnReadOnly#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BoundColumnReadOnly/VB/boundcolumnreadonlyvb.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="thisExpr">
@@ -177,8 +314,15 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the string "!". This field is read-only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.BoundColumn.thisExpr> field to represent the "!" string.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

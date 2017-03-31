@@ -1,9 +1,13 @@
 ---
 uid: System.ServiceModel.Description.IContractBehaviorAttribute
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Description.IContractBehaviorAttribute.TargetContract
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

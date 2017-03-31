@@ -1,1 +1,0 @@
-			Dim type As Type = cd.CallbackContractType

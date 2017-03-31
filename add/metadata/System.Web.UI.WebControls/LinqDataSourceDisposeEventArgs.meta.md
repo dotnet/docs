@@ -1,14 +1,20 @@
 ---
 uid: System.Web.UI.WebControls.LinqDataSourceDisposeEventArgs
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.LinqDataSourceDisposeEventArgs.#ctor(System.Object)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.LinqDataSourceDisposeEventArgs.ObjectInstance
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

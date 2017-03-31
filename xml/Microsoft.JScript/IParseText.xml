@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines methods for parsing text when JScript code is being authored in an editor.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,9 +37,9 @@
         <Parameter Name="error" Type="Microsoft.JScript.IErrorHandler" />
       </Parameters>
       <Docs>
-        <param name="code">To be added.</param>
-        <param name="error">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="code">The source code to parse.</param>
+        <param name="error">An object that contains information about errors that occur when <c>code</c> is being parsed.</param>
+        <summary>When implemented in a class, parses the specified source code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

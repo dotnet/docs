@@ -1,44 +1,44 @@
 ---
 uid: System.Runtime.Remoting.Messaging.CallContext
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Messaging.CallContext.LogicalGetData(System.String)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Messaging.CallContext.GetHeaders
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Messaging.CallContext.SetHeaders(System.Runtime.Remoting.Messaging.Header[])
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Messaging.CallContext.HostContext
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Messaging.CallContext.SetData(System.String,System.Object)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Messaging.CallContext.GetData(System.String)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Messaging.CallContext.LogicalSetData(System.String,System.Object)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Messaging.CallContext.FreeNamedDataSlot(System.String)
-internalonly: False
+manager: "ghogen"
 ---

@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.DirectoryServices.PropertyAccess" /> enumeration is used with the <see cref="T:System.DirectoryServices.PropertyAccessRule" /> and <see cref="T:System.DirectoryServices.PropertySetAccessRule" /> classes to indicate the type of access that is applied to an Active Directory property or property set.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.DirectoryServices.PropertyAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates permission to read properties.</summary>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -43,7 +43,7 @@
         <ReturnType>System.DirectoryServices.PropertyAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates permission to write properties.</summary>
       </Docs>
     </Member>
   </Members>

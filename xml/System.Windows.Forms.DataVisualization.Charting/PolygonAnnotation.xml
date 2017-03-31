@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a polygon annotation.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.PolygonAnnotation" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,9 +57,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the annotation type.</summary>
+        <value>The annotation type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For internal use, should not be used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BackColor">
@@ -92,8 +99,8 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the background color of an annotation.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value used to draw the annotation background.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,9 +131,16 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.GradientStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the background gradient style of an annotation.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.GradientStyle" /> value used to draw the annotation background.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Two colors are used to draw the gradient fill; the primary color is specified with the <xref:System.Windows.Forms.DataVisualization.Charting.PolygonAnnotation.BackColor%2A> property and the secondary color is specified with the <xref:System.Windows.Forms.DataVisualization.Charting.PolygonAnnotation.BackSecondaryColor%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BackHatchStyle">
@@ -156,9 +170,16 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the background hatch style of an annotation.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle" /> value used to draw the annotation background.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Two colors are used to draw the hatching fill; the primary color is specified with the <xref:System.Windows.Forms.DataVisualization.Charting.PolygonAnnotation.BackColor%2A> property and the secondary color is specified with the <xref:System.Windows.Forms.DataVisualization.Charting.PolygonAnnotation.BackSecondaryColor%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BackSecondaryColor">
@@ -191,9 +212,16 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the secondary color of the annotation background.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value used to draw the annotation background with hatching or gradient fill.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This secondary color is used with a primary color, defined with the <xref:System.Windows.Forms.DataVisualization.Charting.PolygonAnnotation.BackColor%2A> property, when the <xref:System.Windows.Forms.DataVisualization.Charting.PolygonAnnotation.BackHatchStyle%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.PolygonAnnotation.BackGradientStyle%2A> properties are used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EndCap">
@@ -217,9 +245,16 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LineAnchorCapStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not applicable to the polygon annotation type.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.LineAnchorCapStyle" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not applicable to the polygon annotation type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StartCap">
@@ -243,9 +278,16 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LineAnchorCapStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not applicable to the polygon annotation type.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.LineAnchorCapStyle" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not applicable to the polygon annotation type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

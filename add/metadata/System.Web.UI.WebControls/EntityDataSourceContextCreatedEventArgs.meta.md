@@ -1,9 +1,13 @@
 ---
 uid: System.Web.UI.WebControls.EntityDataSourceContextCreatedEventArgs
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.UI.WebControls.EntityDataSourceContextCreatedEventArgs.Context
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

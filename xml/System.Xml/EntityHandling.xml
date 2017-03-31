@@ -15,7 +15,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies how the <see cref="T:System.Xml.XmlTextReader" /> or <see cref="T:System.Xml.XmlValidatingReader" /> handle entities.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,7 +37,17 @@
         <ReturnType>System.Xml.EntityHandling</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Expands character entities and returns general entities as <see cref="F:System.Xml.XmlNodeType.EntityReference" /> nodes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You must call <xref:System.Xml.XmlReader.ResolveEntity%2A> to see what the general entities expand to. This enables you to optimize entity handling by only expanding the entity the first time it is used.  
+  
+ When set to ExpandCharEntities, a reader call to the <xref:System.Xml.XmlReader.GetAttribute%2A> method expands all entities (both general and character entities).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ExpandEntities">
@@ -58,7 +68,15 @@
         <ReturnType>System.Xml.EntityHandling</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Expands all entities and returns the expanded nodes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Xml.XmlNodeType> nodes are not returned. The entity text is expanded in place of the entity references.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

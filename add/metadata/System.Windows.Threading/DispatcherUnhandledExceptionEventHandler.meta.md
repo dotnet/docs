@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Threading.DispatcherUnhandledExceptionEventHandler
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

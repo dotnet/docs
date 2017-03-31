@@ -1,19 +1,23 @@
 ---
 uid: System.IdentityModel.Configuration.TokenReplayDetectionElement
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Configuration.TokenReplayDetectionElement.Enabled
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Configuration.TokenReplayDetectionElement.ExpirationPeriod
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Configuration.TokenReplayDetectionElement.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

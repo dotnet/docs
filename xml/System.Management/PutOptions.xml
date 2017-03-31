@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies options for committing management object changes.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,8 +26,17 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.PutOptions" /> class for put operations, using default values. This is the default constructor.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -43,9 +52,18 @@
         <Parameter Name="context" Type="System.Management.ManagementNamedValueCollection" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="context">A provider-specific, named-value pairs context object to be passed through to the provider.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.PutOptions" /> class for committing a WMI object, using the specified provider-specific context.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -64,12 +82,22 @@
         <Parameter Name="putType" Type="System.Management.PutType" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="timeout">To be added.</param>
-        <param name="useAmendedQualifiers">To be added.</param>
-        <param name="putType">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="context">A provider-specific, named-value pairs object to be passed through to the provider.</param>
+        <param name="timeout">The length of time to let the operation perform before it times out. The default is <see cref="F:System.TimeSpan.MaxValue" />.</param>
+        <param name="useAmendedQualifiers">
+          <see langword="true" /> if the returned objects should contain amended (locale-aware) qualifiers; otherwise, <see langword="false" />.</param>
+        <param name="putType">The type of commit to be performed (update or create).</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.PutOptions" /> class for committing a WMI object, using the specified option values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -86,9 +114,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a copy of the object.</summary>
+        <returns>The cloned object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -104,9 +141,21 @@
         <ReturnType>System.Management.PutType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the type of commit to be performed for the object.</summary>
+        <value>Returns a <see cref="T:System.Management.PutType" /> enumeration value representing the type of commit to be performed for the object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## Property Value  
+ The default value is <xref:System.Management.PutType>.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UseAmendedQualifiers">
@@ -122,9 +171,21 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether the objects returned from WMI should                   contain amended information. Typically, amended information is localizable information attached to the WMI object, such as object and property descriptions.</summary>
+        <value>Returns a <see cref="T:System.Boolean" /> value indicating whether the objects returned from WMI should contain amended information.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## Property Value  
+ `true` if the objects returned from WMI should contain amended information; otherwise, `false`. The default value is `false`.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

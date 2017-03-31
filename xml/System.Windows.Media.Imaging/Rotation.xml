@@ -10,8 +10,23 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the rotation to apply to a bitmap image.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Only 90 degree increments are supported.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to apply a rotation to a bitmap image.  
+  
+ [!code-csharp[bitmapimageprops#1](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapImageProps/CSharp/BitmapImageProps.cs#1)]
+ [!code-vb[bitmapimageprops#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapImageProps/VB/BitmapImageProps.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Rotate0">
@@ -27,7 +42,7 @@
         <ReturnType>System.Windows.Media.Imaging.Rotation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The bitmap is not rotated. This is the default value.</summary>
       </Docs>
     </Member>
     <Member MemberName="Rotate180">
@@ -43,7 +58,7 @@
         <ReturnType>System.Windows.Media.Imaging.Rotation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Rotate the bitmap clockwise by 180 degrees.</summary>
       </Docs>
     </Member>
     <Member MemberName="Rotate270">
@@ -59,7 +74,7 @@
         <ReturnType>System.Windows.Media.Imaging.Rotation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Rotate the bitmap clockwise by 270 degrees.</summary>
       </Docs>
     </Member>
     <Member MemberName="Rotate90">
@@ -75,7 +90,7 @@
         <ReturnType>System.Windows.Media.Imaging.Rotation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Rotate the bitmap clockwise by 90 degrees.</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,24 +1,41 @@
 ---
 uid: System.ServiceModel.InvalidMessageContractException
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.InvalidMessageContractException.#ctor(System.String)
-internalonly: False
----
-
----
-uid: System.ServiceModel.InvalidMessageContractException.#ctor(System.String,System.Exception)
-internalonly: False
----
-
----
-uid: System.ServiceModel.InvalidMessageContractException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.InvalidMessageContractException.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.InvalidMessageContractException.#ctor(System.String,System.Exception)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.InvalidMessageContractException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.InvalidMessageContractException.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

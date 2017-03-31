@@ -1,14 +1,20 @@
 ---
 uid: System.ConsoleCancelEventArgs
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ConsoleCancelEventArgs.Cancel
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ConsoleCancelEventArgs.SpecialKey
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

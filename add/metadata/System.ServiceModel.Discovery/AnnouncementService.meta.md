@@ -1,44 +1,69 @@
 ---
 uid: System.ServiceModel.Discovery.AnnouncementService
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.AnnouncementService.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.AnnouncementService.#ctor(System.Int32)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.AnnouncementService.OfflineAnnouncementReceived
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.AnnouncementService.OnBeginOfflineAnnouncement(System.ServiceModel.Discovery.DiscoveryMessageSequence,System.ServiceModel.Discovery.EndpointDiscoveryMetadata,System.AsyncCallback,System.Object)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.AnnouncementService.OnBeginOnlineAnnouncement(System.ServiceModel.Discovery.DiscoveryMessageSequence,System.ServiceModel.Discovery.EndpointDiscoveryMetadata,System.AsyncCallback,System.Object)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Discovery.AnnouncementService.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.AnnouncementService.OnEndOnlineAnnouncement(System.IAsyncResult)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.AnnouncementService.OnlineAnnouncementReceived
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.AnnouncementService.OnEndOfflineAnnouncement(System.IAsyncResult)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

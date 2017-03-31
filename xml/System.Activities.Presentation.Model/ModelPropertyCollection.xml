@@ -15,8 +15,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains an enumeration of properties.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the search capabilities of this class, see <xref:System.Activities.Presentation.Model.ModelMemberCollection%602>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +37,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new <see cref="T:System.Activities.Presentation.Model.ModelPropertyCollection" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -19,8 +19,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides an implementation of the OLE DB <see langword="IRowsetNotify" /> interface for use by applications upgraded from Visual Basic 6.0.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="OnFieldChange">
@@ -45,16 +54,25 @@
         <Parameter Name="fCantDeny" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="rowset">To be added.</param>
-        <param name="hRow">To be added.</param>
-        <param name="cColumns">To be added.</param>
-        <param name="rgColumns">To be added.</param>
-        <param name="dbReason">To be added.</param>
-        <param name="eventPhase">To be added.</param>
-        <param name="fCantDeny">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="rowset">A pointer to the rowset, because the consumer may be receiving notifications from multiple rowsets and this identifies which one is calling.</param>
+        <param name="hRow">The handle of the row in which the column value was changed.</param>
+        <param name="cColumns">The count of columns in <c>rgColumns</c>.</param>
+        <param name="rgColumns">An array of columns in the row for which the value was changed.</param>
+        <param name="dbReason">The reason for the change, as indicated by the value of <see langword="DBREASON" />.</param>
+        <param name="eventPhase">The phase of this notification.</param>
+        <param name="fCantDeny">When this flag is set to <see langword="true" />, the consumer cannot veto the event by returning <see langword="S_FALSE" /> because the provider cannot undo the event.</param>
+        <summary>Notifies the consumer of any change to the value of a column.</summary>
+        <returns>An <see langword="Integer" /> representing the result.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnRowChange">
@@ -78,15 +96,24 @@
         <Parameter Name="fCantDeny" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="rowset">To be added.</param>
-        <param name="cRows">To be added.</param>
-        <param name="rghRows">To be added.</param>
-        <param name="dbReason">To be added.</param>
-        <param name="eventPhase">To be added.</param>
-        <param name="fCantDeny">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="rowset">A pointer to the rowset, because the consumer may be receiving notifications from multiple rowsets and this identifies which one is calling.</param>
+        <param name="cRows">The count of row handles in <c>rghRows</c>.</param>
+        <param name="rghRows">An array of handles of rows that are changing.</param>
+        <param name="dbReason">The reason for the change, as indicated by the value of <see langword="DBREASON" />.</param>
+        <param name="eventPhase">The phase of this notification.</param>
+        <param name="fCantDeny">When this flag is set to <see langword="true" />, the consumer cannot veto the event by returning <see langword="S_FALSE" /> because the provider cannot undo the event.</param>
+        <summary>Notifies the consumer of the first change to a row or of any change that affects the entire row.</summary>
+        <returns>An <see langword="Integer" /> representing the result.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnRowsetChange">
@@ -108,13 +135,22 @@
         <Parameter Name="fCantDeny" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="rowset">To be added.</param>
-        <param name="dbReason">To be added.</param>
-        <param name="eventPhase">To be added.</param>
-        <param name="fCantDeny">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="rowset">A pointer to the rowset, because the consumer may be receiving notifications from multiple rowsets and this identifies which one is calling.</param>
+        <param name="dbReason">The reason for the change, as indicated by the value of <see langword="DBREASON" />.</param>
+        <param name="eventPhase">The phase of this notification.</param>
+        <param name="fCantDeny">When this flag is set to <see langword="true" />, the consumer cannot veto the event by returning <see langword="S_FALSE" /> because the provider cannot undo the event.</param>
+        <summary>Notifies the consumer of any change affecting the entire rowset.</summary>
+        <returns>An <see langword="Integer" /> representing the result.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

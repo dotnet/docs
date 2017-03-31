@@ -15,8 +15,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Converts a <see langword="ModelItem" /> to the value of the inner object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used when binding to a whole object in XAML.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +37,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Presentation.Converters.ModelToObjectValueConverter" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,12 +60,12 @@
         <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="targetType">To be added.</param>
-        <param name="parameter">To be added.</param>
-        <param name="culture">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see langword="ModelItem" /> to convert.</param>
+        <param name="targetType">Not used in this implementation.</param>
+        <param name="parameter">Not used in this implementation.</param>
+        <param name="culture">Not used in this implementation.</param>
+        <summary>Converts the specified object to its inner value.</summary>
+        <returns>Returns a <see cref="T:System.Object" /> that contains the inner value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,13 +88,20 @@
         <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="targetType">To be added.</param>
-        <param name="parameter">To be added.</param>
-        <param name="culture">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The object to do nothing to.</param>
+        <param name="targetType">Not used in this implementation.</param>
+        <param name="parameter">Not used in this implementation.</param>
+        <param name="culture">Not used in this implementation.</param>
+        <summary>Returns the specified value, unmodified.</summary>
+        <returns>Returns a <see cref="T:System.Object" /> that contains the unmodified value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method does nothing to the value because <xref:System.Activities.Presentation.Model.ModelProperty.SetValue%2A> can accept  the value without modification.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

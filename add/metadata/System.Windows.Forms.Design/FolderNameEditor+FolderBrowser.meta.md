@@ -1,39 +1,61 @@
 ---
 uid: System.Windows.Forms.Design.FolderNameEditor.FolderBrowser
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.Design.FolderNameEditor.FolderBrowser.Style
-internalonly: False
----
-
----
-uid: System.Windows.Forms.Design.FolderNameEditor.FolderBrowser.DirectoryPath
-internalonly: False
----
-
----
-uid: System.Windows.Forms.Design.FolderNameEditor.FolderBrowser.Description
-internalonly: False
----
-
----
-uid: System.Windows.Forms.Design.FolderNameEditor.FolderBrowser.ShowDialog(System.Windows.Forms.IWin32Window)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.Design.FolderNameEditor.FolderBrowser.#ctor
-internalonly: False
----
-
----
-uid: System.Windows.Forms.Design.FolderNameEditor.FolderBrowser.StartLocation
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.FolderNameEditor.FolderBrowser.ShowDialog
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.Design.FolderNameEditor.FolderBrowser.DirectoryPath
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.Design.FolderNameEditor.FolderBrowser.Description
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.Design.FolderNameEditor.FolderBrowser.ShowDialog(System.Windows.Forms.IWin32Window)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.Design.FolderNameEditor.FolderBrowser.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.Design.FolderNameEditor.FolderBrowser.StartLocation
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.Design.FolderNameEditor.FolderBrowser.ShowDialog
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

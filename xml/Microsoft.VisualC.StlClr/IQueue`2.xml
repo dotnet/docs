@@ -16,9 +16,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="TValue">To be added.</typeparam>
-    <typeparam name="TCont">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="TValue">The type of an element in the controlled sequence.</typeparam>
+    <typeparam name="TCont">The type of the underlying container.</typeparam>
+    <summary>Defines the interface for an STL/CLR [queue](../Topic/queue%20\(STL-CLR\).md) object.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,9 +38,16 @@
         <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.IQueue&lt;TValue,TCont&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Right">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="_Right">The container adapter whose elements will be inserted into the container.</param>
+        <summary>Replaces all elements of the container with the contents of the provided container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [queue::assign (STL/CLR)](../Topic/queue::assign%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="back">
@@ -57,9 +64,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Accesses the last element of the container.</summary>
+        <returns>The last element of the controlled sequence, which must be non-empty.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [queue::back (STL/CLR)](../Topic/queue::back%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="empty">
@@ -76,9 +90,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Determines whether the container contains no elements.</summary>
+        <returns>
+          <see langword="true" /> if the container contains no elements; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [queue::empty (STL/CLR)](../Topic/queue::empty%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="front">
@@ -95,9 +117,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Accesses the first element of the container.</summary>
+        <returns>The first element of the controlled sequence, which must be non-empty.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [queue::front (STL/CLR)](../Topic/queue::front%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="pop">
@@ -114,8 +143,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Removes the last element of the container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [queue::pop (STL/CLR)](../Topic/queue::pop%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="push">
@@ -134,9 +170,16 @@
         <Parameter Name="_Val" Type="TValue" />
       </Parameters>
       <Docs>
-        <param name="_Val">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="_Val">The value to add to the beginning of the container.</param>
+        <summary>Adds an element to the beginning of the container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [queue::push (STL/CLR)](../Topic/queue::push%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="size">
@@ -153,9 +196,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Counts the number of elements in the container.</summary>
+        <returns>The length of the controlled sequence.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [queue::size (STL/CLR)](../Topic/queue::size%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

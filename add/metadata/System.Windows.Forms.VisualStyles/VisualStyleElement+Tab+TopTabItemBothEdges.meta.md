@@ -1,9 +1,13 @@
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.Tab.TopTabItemBothEdges
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.Tab.TopTabItemBothEdges.Normal
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

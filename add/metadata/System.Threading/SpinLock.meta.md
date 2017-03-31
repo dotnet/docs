@@ -1,54 +1,90 @@
 ---
 uid: System.Threading.SpinLock
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Threading.SpinLock.TryEnter(System.Int32,System.Boolean@)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Threading.SpinLock.IsHeldByCurrentThread
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Threading.SpinLock.TryEnter(System.Boolean@)
-internalonly: False
----
-
----
-uid: System.Threading.SpinLock.#ctor(System.Boolean)
-internalonly: False
----
-
----
-uid: System.Threading.SpinLock.IsThreadOwnerTrackingEnabled
-internalonly: False
----
-
----
-uid: System.Threading.SpinLock.Enter(System.Boolean@)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Threading.SpinLock.Exit
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.SpinLock.#ctor(System.Boolean)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.SpinLock.IsThreadOwnerTrackingEnabled
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.SpinLock.Enter(System.Boolean@)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.SpinLock.Exit
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Threading.SpinLock.IsHeld
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Threading.SpinLock.TryEnter(System.TimeSpan,System.Boolean@)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Threading.SpinLock.Exit(System.Boolean)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.SpinLock.TryEnter
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

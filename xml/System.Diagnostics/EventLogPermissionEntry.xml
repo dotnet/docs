@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the smallest unit of a code access security permission that is set for an <see cref="T:System.Diagnostics.EventLog" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information on code access security, see [Code Access Security](../Topic/Code%20Access%20Security.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -29,10 +36,18 @@
         <Parameter Name="machineName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="permissionAccess">To be added.</param>
-        <param name="machineName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="permissionAccess">A bitwise combination of the <see cref="T:System.Diagnostics.EventLogPermissionAccess" /> values. The <see cref="P:System.Diagnostics.EventLogPermissionEntry.PermissionAccess" /> property is set to this value.</param>
+        <param name="machineName">The name of the computer on which to read or write events. The <see cref="P:System.Diagnostics.EventLogPermissionEntry.MachineName" /> property is set to this value.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.EventLogPermissionEntry" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the application is running in a High trust zone, request for permission to the local machine must refer to the machine name as COMPUTERNAME or ".", instead of the full machine name. Full machine name is not accepted for security reasons. In addition, the COMPUTERNAME must be treated as case-sensitive.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The computer name is invalid.</exception>
       </Docs>
     </Member>
     <Member MemberName="MachineName">
@@ -48,9 +63,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the name of the computer on which to read or write events.</summary>
+        <value>The name of the computer on which to read or write events.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the application is running in a High trust zone, request for permission to the local machine must refer to the machine name as COMPUTERNAME or ".", instead of the full machine name. Full machine name is not accepted for security reasons. In addition, the COMPUTERNAME must be treated as case-sensitive.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PermissionAccess">
@@ -66,8 +88,8 @@
         <ReturnType>System.Diagnostics.EventLogPermissionAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the permission access levels used in the permissions request.</summary>
+        <value>A bitwise combination of the <see cref="T:System.Diagnostics.EventLogPermissionAccess" /> values.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

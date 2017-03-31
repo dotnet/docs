@@ -1,34 +1,53 @@
 ---
 uid: System.Diagnostics.InstanceDataCollectionCollection
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.InstanceDataCollectionCollection.Values
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.InstanceDataCollectionCollection.Item(System.String)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.InstanceDataCollectionCollection.CopyTo
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.InstanceDataCollectionCollection.Keys
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.InstanceDataCollectionCollection.Contains(System.String)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.InstanceDataCollectionCollection.CopyTo(System.Diagnostics.InstanceDataCollection[],System.Int32)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.InstanceDataCollectionCollection.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

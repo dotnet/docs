@@ -1,19 +1,23 @@
 ---
 uid: System.Net.Mail.SmtpPermissionAttribute
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.SmtpPermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.SmtpPermissionAttribute.Access
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.SmtpPermissionAttribute.CreatePermission
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

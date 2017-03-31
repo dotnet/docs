@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Input.KeyboardInputProviderAcquireFocusEventHandler
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

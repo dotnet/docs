@@ -1,4 +1,4 @@
 ---
 uid: System.Management.StoppedEventHandler
-internalonly: False
+manager: "jillfra"
 ---

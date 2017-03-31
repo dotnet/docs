@@ -1,29 +1,39 @@
 ---
 uid: System.Windows.Input.KeyGestureValueSerializer
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.KeyGestureValueSerializer.ConvertToString(System.Object,System.Windows.Markup.IValueSerializerContext)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Input.KeyGestureValueSerializer.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.KeyGestureValueSerializer.CanConvertFromString(System.String,System.Windows.Markup.IValueSerializerContext)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Input.KeyGestureValueSerializer.ConvertFromString(System.String,System.Windows.Markup.IValueSerializerContext)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.KeyGestureValueSerializer.CanConvertToString(System.Object,System.Windows.Markup.IValueSerializerContext)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

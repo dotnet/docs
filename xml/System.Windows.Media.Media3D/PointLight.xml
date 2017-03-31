@@ -11,8 +11,26 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a light source that has a specified position in space and projects its light in all directions.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The rate at which the light's intensity diminishes over distance is called its attenuation and can be controlled by setting the <xref:System.Windows.Media.Media3D.PointLightBase.ConstantAttenuation%2A>, <xref:System.Windows.Media.Media3D.PointLightBase.LinearAttenuation%2A>, or <xref:System.Windows.Media.Media3D.PointLightBase.QuadraticAttenuation%2A> properties.  
+  
+   
+  
+## Examples  
+ The following examples create a <xref:System.Windows.Media.Media3D.PointLight> object and set some of its properties.  
+  
+ [!code-csharp[Show3Dlights#Show3DLights3DN3](~/samples/snippets/csharp/VS_Snippets_Wpf/Show3DLights/CSharp/MyLights.cs#show3dlights3dn3)]
+ [!code-vb[Show3Dlights#Show3DLights3DN3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Show3DLights/visualbasic/mylights.vb#show3dlights3dn3)]  
+  
+ [!code-csharp[Show3Dlights#Show3DLights3DN5](~/samples/snippets/csharp/VS_Snippets_Wpf/Show3DLights/CSharp/MyLights.cs#show3dlights3dn5)]
+ [!code-vb[Show3Dlights#Show3DLights3DN5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Show3DLights/visualbasic/mylights.vb#show3dlights3dn5)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,8 +44,18 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Media3D.PointLight" /> class at the origin.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this constructor.  
+  
+ [!code-csharp[Show3Dlights#Show3DLights3DN3](~/samples/snippets/csharp/VS_Snippets_Wpf/Show3DLights/CSharp/MyLights.cs#show3dlights3dn3)]
+ [!code-vb[Show3Dlights#Show3DLights3DN3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Show3DLights/visualbasic/mylights.vb#show3dlights3dn3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -44,9 +72,9 @@
         <Parameter Name="position" Type="System.Windows.Media.Media3D.Point3D" />
       </Parameters>
       <Docs>
-        <param name="diffuseColor">To be added.</param>
-        <param name="position">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="diffuseColor">The diffuse color.</param>
+        <param name="position">The position.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Media3D.PointLight" /> class at the specified position, using the specified color.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,9 +92,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.Media3D.PointLight" />, making deep copies of this object's values. When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CloneCurrentValue">
@@ -83,9 +120,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.Media3D.PointLight" /> object, making deep copies of this object's current values. Resource references, data bindings, and animations are not copied, but their current values are.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceCore">

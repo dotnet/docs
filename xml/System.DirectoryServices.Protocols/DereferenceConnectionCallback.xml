@@ -17,9 +17,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="primaryConnection">To be added.</param>
-    <param name="connectionToDereference">To be added.</param>
-    <summary>To be added.</summary>
+    <param name="primaryConnection">An <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object that specifies the primary connection.</param>
+    <param name="connectionToDereference">An <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object that specifies the connection to dereference.</param>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.DereferenceConnectionCallback" /> delegate dereferences a connection that is no longer required. The connection was probably established through a successful call to the <see cref="T:System.DirectoryServices.Protocols.QueryForConnectionCallback" /> or <see cref="T:System.DirectoryServices.Protocols.NotifyOfNewConnectionCallback" /> delegate.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

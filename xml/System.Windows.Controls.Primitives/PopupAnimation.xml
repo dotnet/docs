@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Describes how a <see cref="T:System.Windows.Controls.Primitives.Popup" /> control animates when it opens.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To specify a type of animation for a <xref:System.Windows.Controls.Primitives.Popup> control, set the <xref:System.Windows.Controls.Primitives.Popup.PopupAnimation%2A> property to one of the enumeration values.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Fade">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Controls.Primitives.PopupAnimation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Windows.Controls.Primitives.Popup" /> control gradually appears, or fades in. This effect is created by increasing the opacity of the <see cref="T:System.Windows.Controls.Primitives.Popup" /> window over time.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Controls.Primitives.PopupAnimation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Windows.Controls.Primitives.Popup" /> control appears without animation.</summary>
       </Docs>
     </Member>
     <Member MemberName="Scroll">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.Controls.Primitives.PopupAnimation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Windows.Controls.Primitives.Popup" /> control scrolls from the upper-left corner of its parent. If the screen does not provide enough room to allow the <see cref="T:System.Windows.Controls.Primitives.Popup" /> default behavior, the <see cref="T:System.Windows.Controls.Primitives.Popup" /> scrolls from the lower-right corner instead.</summary>
       </Docs>
     </Member>
     <Member MemberName="Slide">
@@ -75,7 +82,7 @@
         <ReturnType>System.Windows.Controls.Primitives.PopupAnimation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Windows.Controls.Primitives.Popup" /> control slides down or up into place. By default, a <see cref="T:System.Windows.Controls.Primitives.Popup" /> slides down. However, if the screen does not provide enough room for the <see cref="T:System.Windows.Controls.Primitives.Popup" /> to slide down, it slides up instead.</summary>
       </Docs>
     </Member>
   </Members>

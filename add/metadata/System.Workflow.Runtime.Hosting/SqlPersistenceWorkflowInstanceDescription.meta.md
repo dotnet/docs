@@ -1,29 +1,41 @@
 ---
 uid: System.Workflow.Runtime.Hosting.SqlPersistenceWorkflowInstanceDescription
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Hosting.SqlPersistenceWorkflowInstanceDescription.NextTimerExpiration
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Hosting.SqlPersistenceWorkflowInstanceDescription.Status
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Hosting.SqlPersistenceWorkflowInstanceDescription.IsBlocked
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Hosting.SqlPersistenceWorkflowInstanceDescription.SuspendOrTerminateDescription
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Hosting.SqlPersistenceWorkflowInstanceDescription.WorkflowInstanceId
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

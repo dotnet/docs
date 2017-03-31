@@ -1,1 +1,0 @@
-        codeGroup.PolicyStatement = New PolicyStatement(New NamedPermissionSet("MyPermissionSet"))

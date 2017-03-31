@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Media.Effects.SamplingMode
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

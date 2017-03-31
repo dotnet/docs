@@ -1,1 +1,0 @@
-        snIdPerm2 = gcnew StrongNameIdentityPermission(PermissionState::None);

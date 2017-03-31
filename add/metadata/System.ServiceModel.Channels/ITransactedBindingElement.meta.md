@@ -1,9 +1,13 @@
 ---
 uid: System.ServiceModel.Channels.ITransactedBindingElement
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.ITransactedBindingElement.TransactedReceiveEnabled
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -14,8 +14,27 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Holds a collection of <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationError" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+   
+  
+## Examples  
+ The following example shows how to create and manipulate validation errors and a validation error collection as part of a custom validation routine.  
+  
+ This code example is part of the Send E-mail SDK sample and is from the SendEMailActivity.cs file. For more information, see [Send Mail Activity](http://msdn.microsoft.com/en-us/bfb5939e-60a9-4037-af4e-2cea9e654669).  
+  
+ [!code-csharp[WF_Samples#235](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#235)]
+ [!code-vb[WF_Samples#235](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#235)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -29,8 +48,20 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to create and manipulate a validation error collection as part of a custom validation routine.  
+  
+ This code example is part of the Send E-mail SDK sample and is from the SendMailActivity.cs file. For more information, see [Send Mail Activity](http://msdn.microsoft.com/en-us/bfb5939e-60a9-4037-af4e-2cea9e654669).  
+  
+ [!code-csharp[WF_Samples#234](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#234)]
+ [!code-vb[WF_Samples#234](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#234)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -46,9 +77,11 @@
         <Parameter Name="value" Type="System.Collections.Generic.IEnumerable&lt;System.Workflow.ComponentModel.Compiler.ValidationError&gt;" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The <see cref="T:System.Collections.IEnumerable" /> collection of type <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationError" /></param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" /> class from an <see cref="T:System.Collections.IEnumerable" /> collection of type <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationError" /></summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -64,9 +97,21 @@
         <Parameter Name="value" Type="System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="value">A <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" /> that contains validation errors.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" /> class by using a <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to create and manipulate a validation error collection as part of a custom validation routine.  
+  
+ This code example is part of the Send E-mail SDK sample and is from the SendMailActivity.cs file. For more information, see [Send Mail Activity](http://msdn.microsoft.com/en-us/bfb5939e-60a9-4037-af4e-2cea9e654669).  
+  
+ [!code-csharp[WF_Samples#234](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#234)]
+ [!code-vb[WF_Samples#234](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#234)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -85,9 +130,11 @@
         <Parameter Name="value" Type="System.Collections.Generic.IEnumerable&lt;System.Workflow.ComponentModel.Compiler.ValidationError&gt;" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">A collection of <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationError" /> elements to add to the end of the <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" /> collection.</param>
+        <summary>Copies the collection of enumerable elements to the end of the collection.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="HasErrors">
@@ -103,9 +150,27 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Indicates whether the collection contains <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationError" /> objects that indicate compilation errors.</summary>
+        <value>
+          <see langword="true" /> if the activity has generated validation errors; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If an <xref:System.Workflow.ComponentModel.Activity> has generated a warning, the warning is considered an error in the context of this property.  
+  
+   
+  
+## Examples  
+ The following example shows how to create and manipulate a validation error collection as part of a custom validation routine.  
+  
+ This code example is part of the Send E-mail SDK sample and is from the SendMailActivity.cs file. For more information, see [Send Mail Activity](http://msdn.microsoft.com/en-us/bfb5939e-60a9-4037-af4e-2cea9e654669).  
+  
+ [!code-csharp[WF_Samples#234](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#234)]
+ [!code-vb[WF_Samples#234](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#234)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HasWarnings">
@@ -121,8 +186,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This property indicates whether the <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" /> contains at least one <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationError" /> object, which indicates a compilation warning.</summary>
+        <value>
+          <see langword="true" /> if the activity has generated validation warnings; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,10 +252,32 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a new instance of an array that contains all <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationError" /> objects that are contained in this collection.</summary>
+        <returns>A <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationError" /> array of <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationError" /> classes.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following example shows how to create and manipulate a validation error collection as part of a custom validation routine.  
+  
+ This code example is part of the Send E-mail SDK sample and is from the SendMailActivity.cs file. For more information, see [Send Mail Activity](http://msdn.microsoft.com/en-us/bfb5939e-60a9-4037-af4e-2cea9e654669).  
+  
+ [!code-csharp[WF_Samples#234](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#234)]
+ [!code-vb[WF_Samples#234](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#234)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

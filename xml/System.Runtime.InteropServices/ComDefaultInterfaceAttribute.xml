@@ -32,8 +32,23 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies a default interface to expose to COM. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Compilers do not necessarily respect the order in which interfaces are implemented. For example, suppose you have the following code:  
+  
+```  
+interface IBase {}interface IDerived : IBase {}class MyClass : IBase, IDerived {}  
+```  
+  
+ The compiler emits the implemented interfaces as `IDerived, IBase`. The ordering of interfaces is important  when using the <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> class with `[ClassInterface(ClassInterfaceType.None)]` to expose an explicit interface as the default interface. Regardless of the specified `ClassInterfaceType`, use the <xref:System.Runtime.InteropServices.ComDefaultInterfaceAttribute> attribute to specify which interface should be recognized as the default.  
+  
+ Note that the type decorated by the <xref:System.Runtime.InteropServices.ComDefaultInterfaceAttribute> must actually derive from the interface specified as the default interface.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -62,9 +77,16 @@
         <Parameter Name="defaultInterface" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="defaultInterface">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="defaultInterface">A <see cref="T:System.Type" /> value indicating the default interface to expose to COM.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.ComDefaultInterfaceAttribute" /> class with the specified <see cref="T:System.Type" /> object as the default interface exposed to COM.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `defaultInterface` type passed to the constructor must be visible to COM.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -93,8 +115,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Type" /> object that specifies the default interface to expose to COM.</summary>
+        <value>The <see cref="T:System.Type" /> object that specifies the default interface to expose to COM.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,59 +1,81 @@
 ---
 uid: System.Web.HttpWriter
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.HttpWriter.Encoding
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.HttpWriter.Write(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.HttpWriter.WriteBytes(System.Byte[],System.Int32,System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.HttpWriter.Flush
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.HttpWriter.Write(System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.HttpWriter.Close
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.HttpWriter.Write
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.HttpWriter.WriteLine
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.HttpWriter.WriteLine
 ---
 
 ---
 uid: System.Web.HttpWriter.Write(System.Char)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.HttpWriter.WriteString(System.String,System.Int32,System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.HttpWriter.OutputStream
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.HttpWriter.Write(System.Char[],System.Int32,System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

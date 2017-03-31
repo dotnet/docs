@@ -1,9 +1,13 @@
 ---
 uid: System.Activities.Presentation.Metadata.MetadataStore
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.Metadata.MetadataStore.AddAttributeTable(System.Activities.Presentation.Metadata.AttributeTable)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

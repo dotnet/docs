@@ -16,7 +16,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents an error when matching a <see cref="T:System.Uri" /> to a <see cref="T:System.UriTemplateTable" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,7 +36,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.UriTemplateMatchException" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,7 +59,7 @@
       </Parameters>
       <Docs>
         <param name="msg">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.UriTemplateMatchException" /> class with the specified error message.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,9 +82,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">The object that holds the serialized data object.</param>
+        <param name="context">The contextual information about the source or destination.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.UriTemplateMatchException" /> class with serialized data.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,7 +109,7 @@
       <Docs>
         <param name="msg">To be added.</param>
         <param name="inner">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.UriTemplateMatchException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

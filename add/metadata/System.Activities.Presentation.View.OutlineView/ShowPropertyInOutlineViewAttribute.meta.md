@@ -1,24 +1,34 @@
 ---
 uid: System.Activities.Presentation.View.OutlineView.ShowPropertyInOutlineViewAttribute
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.View.OutlineView.ShowPropertyInOutlineViewAttribute.DuplicatedChildNodesVisible
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.View.OutlineView.ShowPropertyInOutlineViewAttribute.ChildNodePrefix
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.View.OutlineView.ShowPropertyInOutlineViewAttribute.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.View.OutlineView.ShowPropertyInOutlineViewAttribute.CurrentPropertyVisible
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

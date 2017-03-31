@@ -1,4 +1,5 @@
 ---
 uid: System.Web.UI.Design.UrlBuilderOptions
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

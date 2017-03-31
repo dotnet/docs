@@ -15,7 +15,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the method used to serialize the <see cref="T:System.Xml.XmlWriter" /> output.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,7 +37,7 @@
         <ReturnType>System.Xml.XmlOutputMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use the XSLT rules to choose between the <see cref="F:System.Xml.XmlOutputMethod.Xml" /> and <see cref="F:System.Xml.XmlOutputMethod.Html" /> output methods at runtime.</summary>
       </Docs>
     </Member>
     <Member MemberName="Html">
@@ -58,7 +58,7 @@
         <ReturnType>System.Xml.XmlOutputMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Serialize according to the HTML rules specified by XSLT.</summary>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -79,7 +79,7 @@
         <ReturnType>System.Xml.XmlOutputMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Serialize text blocks only.</summary>
       </Docs>
     </Member>
     <Member MemberName="Xml">
@@ -100,7 +100,7 @@
         <ReturnType>System.Xml.XmlOutputMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Serialize according to the XML 1.0 rules.</summary>
       </Docs>
     </Member>
   </Members>

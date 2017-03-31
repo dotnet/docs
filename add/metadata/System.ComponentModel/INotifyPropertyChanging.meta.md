@@ -1,9 +1,13 @@
 ---
 uid: System.ComponentModel.INotifyPropertyChanging
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.INotifyPropertyChanging.PropertyChanging
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

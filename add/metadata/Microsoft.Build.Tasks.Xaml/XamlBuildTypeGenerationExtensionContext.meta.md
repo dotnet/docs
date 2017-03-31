@@ -1,14 +1,20 @@
 ---
 uid: Microsoft.Build.Tasks.Xaml.XamlBuildTypeGenerationExtensionContext
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.XamlBuildTypeGenerationExtensionContext.InputTaskItem
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.XamlBuildTypeGenerationExtensionContext.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

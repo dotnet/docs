@@ -1,14 +1,20 @@
 ---
 uid: Microsoft.Win32.SessionSwitchEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Win32.SessionSwitchEventArgs.#ctor(Microsoft.Win32.SessionSwitchReason)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Win32.SessionSwitchEventArgs.Reason
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -1,34 +1,53 @@
 ---
 uid: System.Windows.Media.Animation.Rotation3DAnimationBase
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.Rotation3DAnimationBase.GetCurrentValueCore(System.Windows.Media.Media3D.Rotation3D,System.Windows.Media.Media3D.Rotation3D,System.Windows.Media.Animation.AnimationClock)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.Rotation3DAnimationBase.Clone
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.Rotation3DAnimationBase.TargetPropertyType
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Animation.Rotation3DAnimationBase.GetCurrentValue(System.Object,System.Object,System.Windows.Media.Animation.AnimationClock)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.Rotation3DAnimationBase.GetCurrentValue(System.Windows.Media.Media3D.Rotation3D,System.Windows.Media.Media3D.Rotation3D,System.Windows.Media.Animation.AnimationClock)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.Rotation3DAnimationBase.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.Rotation3DAnimationBase.GetCurrentValue
+ms.author: "kempb"
+manager: "ghogen"
 ---

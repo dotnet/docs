@@ -10,8 +10,24 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the buttons that are displayed on a message box. Used as an argument of the <see cref="Overload:System.Windows.MessageBox.Show" /> method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the <xref:System.Windows.MessageBox.Show%2A> method of the <xref:System.Windows.MessageBox> type displays a message box that has an **OK** button. You can use overloads of the <xref:System.Windows.MessageBox.Show%2A> method that accept a <xref:System.Windows.MessageBoxButton> argument in order to specify different combinations of buttons, which include **OK**, **OK**/**Cancel**, **Yes**/**No**, and **Yes**/**No**/**Cancel**.  
+  
+ If you specify YesNo, you disable the **Close** button in the message box title bar. However, the **Close** button is enabled for all other options. When a user clicks the **Close** button or presses the **ESC** key, a message box returns a message box result value of <xref:System.Windows.MessageBoxResult>. However, if a message box displays only an **OK** button, clicking the **Close** button or pressing the **ESC** key causes a message box to return a message box result value of <xref:System.Windows.MessageBoxResult>.  
+  
+ The value of the button that a user clicks is returned by <xref:System.Windows.MessageBox.Show%2A> and is one of the values of the <xref:System.Windows.MessageBoxResult> enumeration.  
+  
+   
+  
+## Examples  
+ For more information, see [MessageBox Sample](http://go.microsoft.com/fwlink/?LinkID=160023).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="OK">
@@ -27,7 +43,7 @@
         <ReturnType>System.Windows.MessageBoxButton</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The message box displays an **OK** button.</summary>
       </Docs>
     </Member>
     <Member MemberName="OKCancel">
@@ -43,7 +59,7 @@
         <ReturnType>System.Windows.MessageBoxButton</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The message box displays **OK** and **Cancel** buttons.</summary>
       </Docs>
     </Member>
     <Member MemberName="YesNo">
@@ -59,7 +75,7 @@
         <ReturnType>System.Windows.MessageBoxButton</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The message box displays **Yes** and **No** buttons.</summary>
       </Docs>
     </Member>
     <Member MemberName="YesNoCancel">
@@ -75,7 +91,7 @@
         <ReturnType>System.Windows.MessageBoxButton</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The message box displays **Yes**, **No**, and **Cancel** buttons.</summary>
       </Docs>
     </Member>
   </Members>

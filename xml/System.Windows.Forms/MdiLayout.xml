@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the layout of multiple document interface (MDI) child windows in an MDI parent window.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the members of this enumeration when calling the <xref:System.Windows.Forms.Form.LayoutMdi%2A> method of the <xref:System.Windows.Forms.Form> class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ArrangeIcons">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Forms.MdiLayout</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>All MDI child icons are arranged within the client region of the MDI parent form.</summary>
       </Docs>
     </Member>
     <Member MemberName="Cascade">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Forms.MdiLayout</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>All MDI child windows are cascaded within the client region of the MDI parent form.</summary>
       </Docs>
     </Member>
     <Member MemberName="TileHorizontal">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.Forms.MdiLayout</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>All MDI child windows are tiled horizontally within the client region of the MDI parent form.</summary>
       </Docs>
     </Member>
     <Member MemberName="TileVertical">
@@ -75,7 +82,7 @@
         <ReturnType>System.Windows.Forms.MdiLayout</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>All MDI child windows are tiled vertically within the client region of the MDI parent form.</summary>
       </Docs>
     </Member>
   </Members>

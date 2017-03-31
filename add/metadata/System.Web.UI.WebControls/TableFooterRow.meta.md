@@ -1,9 +1,11 @@
 ---
 uid: System.Web.UI.WebControls.TableFooterRow
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.TableFooterRow.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -1,29 +1,34 @@
 ---
 uid: System.Runtime.Remoting.ActivatedServiceTypeEntry
-internalonly: False
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Remoting.ActivatedServiceTypeEntry.#ctor
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.ActivatedServiceTypeEntry.ContextAttributes
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.ActivatedServiceTypeEntry.#ctor(System.Type)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.ActivatedServiceTypeEntry.ObjectType
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.ActivatedServiceTypeEntry.#ctor(System.String,System.String)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.ActivatedServiceTypeEntry.ToString
-internalonly: False
+manager: "ghogen"
 ---

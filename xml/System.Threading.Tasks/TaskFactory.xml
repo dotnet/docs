@@ -21,8 +21,49 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides support for creating and scheduling <see cref="T:System.Threading.Tasks.Task" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework provides two factories for creating and scheduling tasks:  
+  
+-   The <xref:System.Threading.Tasks.TaskFactory> class, which creates <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601> objects. You can call the overloads of this method to create and execute a task that requires non-default arguments.  
+  
+    > [!WARNING]
+    >  Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], the <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=fullName> method provides the easiest way to create a task with default configuration values and start it immediately.  
+  
+-   The <xref:System.Threading.Tasks.TaskFactory%601> class, which creates <xref:System.Threading.Tasks.Task%601> objects.  
+  
+ The <xref:System.Threading.Tasks.TaskFactory> class allows you to do the following:  
+  
+-   Create a task and start it immediately by calling the <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> method.  
+  
+    > [!WARNING]
+    >  Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], the <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=fullName> method provides the easiest way to create a task with default configuration values and start it immediately.  
+  
+-   Create a task that starts when any one of the tasks in an array has completed by calling the <xref:System.Threading.Tasks.TaskFactory.ContinueWhenAny%2A> method.  
+  
+-   Create a task that starts when all the tasks in an array have completed by calling the <xref:System.Threading.Tasks.TaskFactory.ContinueWhenAll%2A> method.  
+  
+ The static <xref:System.Threading.Tasks.Task%601.Factory%2A?displayProperty=fullName> property returns a default <xref:System.Threading.Tasks.TaskFactory%601> object. You can also call one of the <xref:System.Threading.Tasks.TaskFactory> class constructors to configure the <xref:System.Threading.Tasks.Task> objects that  the <xref:System.Threading.Tasks.TaskFactory> class creates. The following example configures a new <xref:System.Threading.Tasks.TaskFactory> object to create tasks that have a specified cancellation token, task creation options, continuation options, and a customized task scheduler.  
+  
+ [!code-csharp[TPL_Factories#1](~/samples/snippets/csharp/VS_Snippets_Misc/tpl_factories/cs/program.cs#1)]
+ [!code-vb[TPL_Factories#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/tpl_factories/vb/factories_vb.vb#1)]  
+  
+ In most cases, you do not have to instantiate a new <xref:System.Threading.Tasks.TaskFactory> instance. Instead, you can use the <xref:System.Threading.Tasks.Task.Factory%2A?displayProperty=fullName> property, which returns a factory object that uses default values. You can then call its methods to start new tasks or define task continuations. For an illustration, see the example.  
+  
+   
+  
+## Examples  
+ The following example uses the static <xref:System.Threading.Tasks.Task.Factory%2A> property to make two calls to the <xref:System.Threading.Tasks.TaskFactory.StartNew%2A?displayProperty=fullName> method. The first populates an array with the names of files in the user's MyDocuments directory, while the second populates an array with the names of subdirectories of the user's MyDocuments directory. It then calls the [TaskFactory.ContinueWhenAll(Task\[\], Action\<Task\<xref:System.Threading.Tasks.TaskFactory.ContinueWhenAll%28System.Threading.Tasks.Task%5B%5D%2CSystem.Action%7BSystem.Threading.Tasks.Task%5B%5D%7D%29?displayProperty=fullName> method, which displays information about the number of files and directories in the two arrays after the first two tasks have completed execution.  
+  
+ [!code-csharp[System.Threading.Tasks.Task.Factory#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.task.factory/cs/factory1.cs#1)]
+ [!code-vb[System.Threading.Tasks.Task.Factory#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.task.factory/vb/factory1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <threadsafe>All public and protected members of <see cref="T:System.Threading.Tasks.TaskFactory" /> are thread-safe and may be used concurrently from multiple threads.</threadsafe>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,8 +87,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a <see cref="T:System.Threading.Tasks.TaskFactory" /> instance with the default configuration.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor creates a <xref:System.Threading.Tasks.TaskFactory> instance with a default configuration. The <xref:System.Threading.Tasks.TaskCreationOptions> property is initialized to <xref:System.Threading.Tasks.TaskCreationOptions>, the <xref:System.Threading.Tasks.TaskContinuationOptions> property is initialized to <xref:System.Threading.Tasks.TaskContinuationOptions>, and the <xref:System.Threading.Tasks.TaskScheduler> property is initialized to the current scheduler (see <xref:System.Threading.Tasks.TaskScheduler.Current%2A>).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -73,9 +121,16 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="cancellationToken">The <see cref="P:System.Threading.Tasks.TaskFactory.CancellationToken" /> that will be assigned to tasks created by this <see cref="T:System.Threading.Tasks.TaskFactory" /> unless another CancellationToken is explicitly specified while calling the factory methods.</param>
+        <summary>Initializes a <see cref="T:System.Threading.Tasks.TaskFactory" /> instance with the specified configuration.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor creates a <xref:System.Threading.Tasks.TaskFactory> instance with a default configuration. The <xref:System.Threading.Tasks.TaskCreationOptions> property is initialized to <xref:System.Threading.Tasks.TaskCreationOptions>, the <xref:System.Threading.Tasks.TaskContinuationOptions> property is initialized to <xref:System.Threading.Tasks.TaskContinuationOptions>, and the <xref:System.Threading.Tasks.TaskScheduler> property is initialized to the current scheduler (see <xref:System.Threading.Tasks.TaskScheduler.Current%2A>).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -101,9 +156,16 @@
         <Parameter Name="scheduler" Type="System.Threading.Tasks.TaskScheduler" />
       </Parameters>
       <Docs>
-        <param name="scheduler">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="scheduler">The <see cref="T:System.Threading.Tasks.TaskScheduler" /> to use to schedule any tasks created with this TaskFactory. A null value indicates that the current TaskScheduler should be used.</param>
+        <summary>Initializes a <see cref="T:System.Threading.Tasks.TaskFactory" /> instance with the specified configuration.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ With this constructor, the <xref:System.Threading.Tasks.TaskCreationOptions> property is initialized to <xref:System.Threading.Tasks.TaskCreationOptions>, the <xref:System.Threading.Tasks.TaskContinuationOptions> property is initialized to <xref:System.Threading.Tasks.TaskContinuationOptions>, and the <xref:System.Threading.Tasks.TaskScheduler> property is initialized to `scheduler`, unless it's null, in which case the property is initialized to the current scheduler (see <xref:System.Threading.Tasks.TaskScheduler.Current%2A>).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -130,10 +192,22 @@
         <Parameter Name="continuationOptions" Type="System.Threading.Tasks.TaskContinuationOptions" />
       </Parameters>
       <Docs>
-        <param name="creationOptions">To be added.</param>
-        <param name="continuationOptions">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="creationOptions">The default <see cref="T:System.Threading.Tasks.TaskCreationOptions" /> to use when creating tasks with this TaskFactory.</param>
+        <param name="continuationOptions">The default <see cref="T:System.Threading.Tasks.TaskContinuationOptions" /> to use when creating continuation tasks with this TaskFactory.</param>
+        <summary>Initializes a <see cref="T:System.Threading.Tasks.TaskFactory" /> instance with the specified configuration.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ With this constructor, the <xref:System.Threading.Tasks.TaskCreationOptions> property is initialized to `creationOptions`, the <xref:System.Threading.Tasks.TaskContinuationOptions> property is initialized to `continuationOptions`, and the <xref:System.Threading.Tasks.TaskScheduler> property is initialized to the current scheduler (see <xref:System.Threading.Tasks.TaskScheduler.Current%2A>).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="creationOptions" /> argument specifies an invalid <see cref="T:System.Threading.Tasks.TaskCreationOptions" /> value. For more information, see the Remarks for <see cref="M:System.Threading.Tasks.TaskFactory.FromAsync(System.Func{System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},System.Object,System.Threading.Tasks.TaskCreationOptions)" />.  
+  
+ -or-  
+  
+ The <paramref name="continuationOptions" /> argument specifies an invalid value.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -162,12 +236,24 @@
         <Parameter Name="scheduler" Type="System.Threading.Tasks.TaskScheduler" />
       </Parameters>
       <Docs>
-        <param name="cancellationToken">To be added.</param>
-        <param name="creationOptions">To be added.</param>
-        <param name="continuationOptions">To be added.</param>
-        <param name="scheduler">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="cancellationToken">The default <see cref="P:System.Threading.Tasks.TaskFactory.CancellationToken" /> that will be assigned to tasks created by this <see cref="T:System.Threading.Tasks.TaskFactory" /> unless another CancellationToken is explicitly specified while calling the factory methods.</param>
+        <param name="creationOptions">The default <see cref="T:System.Threading.Tasks.TaskCreationOptions" /> to use when creating tasks with this TaskFactory.</param>
+        <param name="continuationOptions">The default <see cref="T:System.Threading.Tasks.TaskContinuationOptions" /> to use when creating continuation tasks with this TaskFactory.</param>
+        <param name="scheduler">The default <see cref="T:System.Threading.Tasks.TaskScheduler" /> to use to schedule any Tasks created with this TaskFactory. A null value indicates that TaskScheduler.Current should be used.</param>
+        <summary>Initializes a <see cref="T:System.Threading.Tasks.TaskFactory" /> instance with the specified configuration.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ With this constructor, the <xref:System.Threading.Tasks.TaskCreationOptions> property is initialized to `creationOptions`, the <xref:System.Threading.Tasks.TaskContinuationOptions> property is initialized to `continuationOptions`, and the <xref:System.Threading.Tasks.TaskScheduler> property is initialized to `scheduler`, unless it's null, in which case the property is initialized to the current scheduler (see <xref:System.Threading.Tasks.TaskScheduler.Current%2A>).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="creationOptions" /> argument specifies an invalid <see cref="T:System.Threading.Tasks.TaskCreationOptions" /> value. For more information, see the Remarks for <see cref="M:System.Threading.Tasks.TaskFactory.FromAsync(System.Func{System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},System.Object,System.Threading.Tasks.TaskCreationOptions)" />.  
+  
+ -or-  
+  
+ The <paramref name="continuationOptions" /> argument specifies an invalid value.</exception>
       </Docs>
     </Member>
     <Member MemberName="CancellationToken">
@@ -193,9 +279,16 @@
         <ReturnType>System.Threading.CancellationToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the default cancellation token for this task factory.</summary>
+        <value>The default task cancellation token for this task factory.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property returns the default <xref:System.Threading.CancellationToken> that will be assigned to all tasks created by this factory, unless another <xref:System.Threading.CancellationToken> value is explicitly specified during the call to the factory methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ContinuationOptions">
@@ -221,9 +314,16 @@
         <ReturnType>System.Threading.Tasks.TaskContinuationOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the default task continuation options for this task factory.</summary>
+        <value>The default task continuation options for this task factory.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The property value is used to create all continuation tasks, unless other options are explicitly specified during calls to this factory's methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAll">
@@ -253,11 +353,37 @@
         <Parameter Name="continuationAction" Type="System.Action&lt;System.Threading.Tasks.Task[]&gt;" />
       </Parameters>
       <Docs>
-        <param name="tasks">To be added.</param>
-        <param name="continuationAction">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="tasks">The array of tasks from which to continue.</param>
+        <param name="continuationAction">The action delegate to execute when all tasks in the <c>tasks</c> array have completed.</param>
+        <summary>Creates a continuation task that starts when a set of specified tasks has completed.</summary>
+        <returns>The new continuation task.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The [ContinueWhenAll Method (Task\<xref:System.Threading.Tasks.TaskFactory.ContinueWhenAll%2A> method executes the `continuationAction` delegate when all tasks in the `tasks` array have completed, regardless of their completion status.  
+  
+ Exceptions thrown by tasks in the `tasks` array are not available to the continuation task through structured exception handling. You can determine which exceptions were thrown by examining the <xref:System.Threading.Tasks.Task.Exception%2A?displayProperty=fullName> property of each task in the `tasks` array. To use structured exception handling to handle exceptions thrown by tasks in the `tasks` array, call the [Task.WaitAll(Task\<xref:System.Threading.Tasks.Task.WaitAll%28System.Threading.Tasks.Task%5B%5D%29?displayProperty=fullName> method.  
+  
+   
+  
+## Examples  
+ The following example launches separate tasks that use a regular expression to count the number of words in a set of text files. The [ContinueWhenAll Method (Task\<xref:System.Threading.Tasks.TaskFactory.ContinueWhenAll%2A> method is used to launch a task that displays the total word count when all the antecedent tasks have completed.  
+  
+ [!code-csharp[System.Threading.Tasks.Task.ContinueWhenAll#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.task.continuewhenall/cs/continuewhenall1.cs#1)]
+ [!code-vb[System.Threading.Tasks.Task.ContinueWhenAll#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.task.continuewhenall/vb/continuewhenall1.vb#1)]  
+  
+ The call to the continuation task's <xref:System.Threading.Tasks.Task.Wait%2A?displayProperty=fullName> method does not allow it to handle exceptions thrown by the antecedent tasks, so the example examines the <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=fullName> property of each antecedent task to determine whether the task succeeded.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">An element in the <paramref name="tasks" /> array has been disposed.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="tasks" /> array is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="continuationAction" /> argument is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="tasks" /> array is empty or contains a null value.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAll">
@@ -288,12 +414,38 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="tasks">To be added.</param>
-        <param name="continuationAction">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="tasks">The array of tasks from which to continue.</param>
+        <param name="continuationAction">The action delegate to execute when all tasks in the <c>tasks</c> array have completed.</param>
+        <param name="cancellationToken">The cancellation token to assign to the new continuation task.</param>
+        <summary>Creates a continuation task that starts when a set of specified tasks has completed.</summary>
+        <returns>The new continuation task.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The [ContinueWhenAll Method (Task\[\], Action(Task\<xref:System.Threading.Tasks.TaskFactory.ContinueWhenAll%28System.Threading.Tasks.Task%5B%5D%2CSystem.Action%7BSystem.Threading.Tasks.Task%5B%5D%7D%2CSystem.Threading.CancellationToken%29> method executes the `continuationAction` delegate when all tasks in the `tasks` array have completed, regardless of their completion status.  
+  
+   
+  
+## Examples  
+ The following example creates a cancellation token, which it passes to separate tasks that use a regular expression to count the number of words in a set of text files. The cancellation token is set if a file cannot be found. The [ContinueWhenAll Method (Task\[\], Action(Task\<xref:System.Threading.Tasks.TaskFactory.ContinueWhenAll%2A> method is used to launch a task that displays the total word count when all the antecedent tasks have completed. If the cancellation token is set, which indicates that one or more tasks have been cancelled, it handles the <xref:System.AggregateException> exception and displays an error message.  
+  
+ [!code-csharp[System.Threading.Tasks.Task.ContinueWhenAll#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.task.continuewhenall/cs/continuewhenall2.cs#2)]
+ [!code-vb[System.Threading.Tasks.Task.ContinueWhenAll#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.task.continuewhenall/vb/continuewhenall2.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">An element in the <paramref name="tasks" /> array has been disposed.  
+  
+ -or-  
+  
+ The <see cref="T:System.Threading.CancellationTokenSource" /> that created <paramref name="cancellationToken" /> has already been disposed.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="tasks" /> array is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="continuationAction" /> argument is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="tasks" /> array is empty or contains a null value.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAll">
@@ -324,12 +476,20 @@
         <Parameter Name="continuationOptions" Type="System.Threading.Tasks.TaskContinuationOptions" />
       </Parameters>
       <Docs>
-        <param name="tasks">To be added.</param>
-        <param name="continuationAction">To be added.</param>
-        <param name="continuationOptions">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="tasks">The array of tasks from which to continue.</param>
+        <param name="continuationAction">The action delegate to execute when all tasks in the <c>tasks</c> array have completed.</param>
+        <param name="continuationOptions">A bitwise combination of the enumeration values that control the behavior of the new continuation task. The NotOn* and OnlyOn* members are not supported.</param>
+        <summary>Creates a continuation task that starts when a set of specified tasks has completed.</summary>
+        <returns>The new continuation task.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">An element in the <paramref name="tasks" /> array has been disposed.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="tasks" /> array is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="continuationAction" /> argument is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="continuationOptions" /> argument specifies an invalid value.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="tasks" /> array is empty or contains a null value.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAll">
@@ -362,14 +522,24 @@
         <Parameter Name="scheduler" Type="System.Threading.Tasks.TaskScheduler" />
       </Parameters>
       <Docs>
-        <param name="tasks">To be added.</param>
-        <param name="continuationAction">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <param name="continuationOptions">To be added.</param>
-        <param name="scheduler">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="tasks">The array of tasks from which to continue.</param>
+        <param name="continuationAction">The action delegate to execute when all tasks in the <c>tasks</c> array have completed.</param>
+        <param name="cancellationToken">The cancellation token to assign to the new continuation task.</param>
+        <param name="continuationOptions">A bitwise combination of the enumeration values that control the behavior of the new continuation task.</param>
+        <param name="scheduler">The object that is used to schedule the new continuation task.</param>
+        <summary>Creates a continuation task that starts when a set of specified tasks has completed.</summary>
+        <returns>The new continuation task.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="tasks" /> array is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="continuationAction" /> argument is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="scheduler" /> argument is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="tasks" /> array is empty or contains a null value.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAll&lt;TAntecedentResult&gt;">
@@ -402,12 +572,19 @@
         <Parameter Name="continuationAction" Type="System.Action&lt;System.Threading.Tasks.Task&lt;TAntecedentResult&gt;[]&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TAntecedentResult">To be added.</typeparam>
-        <param name="tasks">To be added.</param>
-        <param name="continuationAction">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TAntecedentResult">The type of the result of the antecedent <c>tasks</c>.</typeparam>
+        <param name="tasks">The array of tasks from which to continue.</param>
+        <param name="continuationAction">The action delegate to execute when all tasks in the <c>tasks</c> array have completed.</param>
+        <summary>Creates a continuation task that starts when a set of specified tasks has completed.</summary>
+        <returns>The new continuation task.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">An element in the <paramref name="tasks" /> array has been disposed.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="tasks" /> array is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="continuationAction" /> argument is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="tasks" /> array is empty or contains a null value.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAll&lt;TAntecedentResult&gt;">
@@ -441,13 +618,24 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <typeparam name="TAntecedentResult">To be added.</typeparam>
-        <param name="tasks">To be added.</param>
-        <param name="continuationAction">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TAntecedentResult">The type of the result of the antecedent <c>tasks</c>.</typeparam>
+        <param name="tasks">The array of tasks from which to continue.</param>
+        <param name="continuationAction">The action delegate to execute when all tasks in the <c>tasks</c> array have completed.</param>
+        <param name="cancellationToken">The cancellation token to assign to the new continuation task.</param>
+        <summary>Creates a continuation task that starts when a set of specified tasks has completed.</summary>
+        <returns>The new continuation task.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">An element in the <paramref name="tasks" /> array has been disposed.  
+  
+ -or-  
+  
+ The <see cref="T:System.Threading.CancellationTokenSource" /> that created <paramref name="cancellationToken" /> has already been disposed.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="tasks" /> array is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="continuationAction" /> argument is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="tasks" /> array is empty or contains a null value.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAll&lt;TAntecedentResult&gt;">
@@ -481,13 +669,21 @@
         <Parameter Name="continuationOptions" Type="System.Threading.Tasks.TaskContinuationOptions" />
       </Parameters>
       <Docs>
-        <typeparam name="TAntecedentResult">To be added.</typeparam>
-        <param name="tasks">To be added.</param>
-        <param name="continuationAction">To be added.</param>
-        <param name="continuationOptions">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TAntecedentResult">The type of the result of the antecedent <c>tasks</c>.</typeparam>
+        <param name="tasks">The array of tasks from which to continue.</param>
+        <param name="continuationAction">The action delegate to execute when all tasks in the <c>tasks</c> array have completed.</param>
+        <param name="continuationOptions">A bitwise combination of the enumeration values that control the behavior of the new continuation task. The NotOn* and OnlyOn* members are not supported.</param>
+        <summary>Creates a continuation task that starts when a set of specified tasks has completed.</summary>
+        <returns>The new continuation task.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">An element in the <paramref name="tasks" /> array has been disposed.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="tasks" /> array is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="continuationAction" /> argument is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="continuationOptions" /> argument specifies an invalid value.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="tasks" /> array is empty or contains a null value.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAll&lt;TAntecedentResult&gt;">
@@ -523,15 +719,25 @@
         <Parameter Name="scheduler" Type="System.Threading.Tasks.TaskScheduler" />
       </Parameters>
       <Docs>
-        <typeparam name="TAntecedentResult">To be added.</typeparam>
-        <param name="tasks">To be added.</param>
-        <param name="continuationAction">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <param name="continuationOptions">To be added.</param>
-        <param name="scheduler">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TAntecedentResult">The type of the result of the antecedent <c>tasks</c>.</typeparam>
+        <param name="tasks">The array of tasks from which to continue.</param>
+        <param name="continuationAction">The action delegate to execute when all tasks in the <c>tasks</c> array have completed.</param>
+        <param name="cancellationToken">The cancellation token to assign to the new continuation task.</param>
+        <param name="continuationOptions">A bitwise combination of the enumeration values that control the behavior of the new continuation task. The NotOn* and OnlyOn* members are not supported.</param>
+        <param name="scheduler">The object that is used to schedule the new continuation task.</param>
+        <summary>Creates a continuation task that starts when a set of specified tasks has completed.</summary>
+        <returns>The new continuation task.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="tasks" /> array is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="continuationAction" /> argument is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="scheduler" /> argument is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="tasks" /> array is empty or contains a null value.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAll&lt;TResult&gt;">
@@ -564,12 +770,19 @@
         <Parameter Name="continuationFunction" Type="System.Func&lt;System.Threading.Tasks.Task[],TResult&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="tasks">To be added.</param>
-        <param name="continuationFunction">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TResult">The type of the result that is returned by the <c>continuationFunction</c> delegate and associated with the created task.</typeparam>
+        <param name="tasks">The array of tasks from which to continue.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <c>tasks</c> array have completed.</param>
+        <summary>Creates a continuation task that starts when a set of specified tasks has completed.</summary>
+        <returns>The new continuation task.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">An element in the <paramref name="tasks" /> array has been disposed.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="tasks" /> array is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="continuationFunction" /> argument is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="tasks" /> array is empty or contains a null value.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAll&lt;TResult&gt;">
@@ -603,13 +816,24 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="tasks">To be added.</param>
-        <param name="continuationFunction">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TResult">The type of the result that is returned by the <c>continuationFunction</c> delegate and associated with the created task.</typeparam>
+        <param name="tasks">The array of tasks from which to continue.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <c>tasks</c> array have completed.</param>
+        <param name="cancellationToken">The cancellation token to assign to the new continuation task.</param>
+        <summary>Creates a continuation task that starts when a set of specified tasks has completed.</summary>
+        <returns>The new continuation task.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">An element in the <paramref name="tasks" /> array has been disposed.  
+  
+ -or-  
+  
+ The <see cref="T:System.Threading.CancellationTokenSource" /> that created <paramref name="cancellationToken" /> has already been disposed.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="tasks" /> array is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="continuationFunction" /> argument is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="tasks" /> array is empty or contains a null value.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAll&lt;TResult&gt;">
@@ -643,13 +867,21 @@
         <Parameter Name="continuationOptions" Type="System.Threading.Tasks.TaskContinuationOptions" />
       </Parameters>
       <Docs>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="tasks">To be added.</param>
-        <param name="continuationFunction">To be added.</param>
-        <param name="continuationOptions">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TResult">The type of the result that is returned by the <c>continuationFunction</c> delegate and associated with the created task.</typeparam>
+        <param name="tasks">The array of tasks from which to continue.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <c>tasks</c> array have completed.</param>
+        <param name="continuationOptions">A bitwise combination of the enumeration values that control the behavior of the new continuation task. The NotOn* and OnlyOn* members are not supported.</param>
+        <summary>Creates a continuation task that starts when a set of specified tasks has completed.</summary>
+        <returns>The new continuation task.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">An element in the <paramref name="tasks" /> array has been disposed.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="tasks" /> array is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="continuationFunction" /> argument is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="continuationOptions" /> argument specifies an invalid value.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="tasks" /> array is empty or contains a null value.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAll&lt;TResult&gt;">
@@ -685,15 +917,25 @@
         <Parameter Name="scheduler" Type="System.Threading.Tasks.TaskScheduler" />
       </Parameters>
       <Docs>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="tasks">To be added.</param>
-        <param name="continuationFunction">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <param name="continuationOptions">To be added.</param>
-        <param name="scheduler">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TResult">The type of the result that is returned by the <c>continuationFunction</c> delegate and associated with the created task.</typeparam>
+        <param name="tasks">The array of tasks from which to continue.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <c>tasks</c> array have completed.</param>
+        <param name="cancellationToken">The cancellation token to assign to the new continuation task.</param>
+        <param name="continuationOptions">A bitwise combination of the enumeration values that control the behavior of the new continuation task. The NotOn* and OnlyOn* members are not supported.</param>
+        <param name="scheduler">The object that is used to schedule the new continuation task.</param>
+        <summary>Creates a continuation task that starts when a set of specified tasks has completed.</summary>
+        <returns>The new continuation task.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="tasks" /> array is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="continuationFunction" /> argument is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="scheduler" /> argument is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="tasks" /> array is empty or contains a null value.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAll&lt;TAntecedentResult,TResult&gt;">
@@ -727,13 +969,20 @@
         <Parameter Name="continuationFunction" Type="System.Func&lt;System.Threading.Tasks.Task&lt;TAntecedentResult&gt;[],TResult&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TAntecedentResult">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="tasks">To be added.</param>
-        <param name="continuationFunction">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TAntecedentResult">The type of the result of the antecedent <c>tasks</c>.</typeparam>
+        <typeparam name="TResult">The type of the result that is returned by the <c>continuationFunction</c> delegate and associated with the created task.</typeparam>
+        <param name="tasks">The array of tasks from which to continue.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <c>tasks</c> array have completed.</param>
+        <summary>Creates a continuation task that starts when a set of specified tasks has completed.</summary>
+        <returns>The new continuation task.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">An element in the <paramref name="tasks" /> array has been disposed.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="tasks" /> array is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="continuationFunction" /> argument is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="tasks" /> array is empty or contains a null value.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAll&lt;TAntecedentResult,TResult&gt;">
@@ -768,14 +1017,25 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <typeparam name="TAntecedentResult">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="tasks">To be added.</param>
-        <param name="continuationFunction">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TAntecedentResult">The type of the result of the antecedent <c>tasks</c>.</typeparam>
+        <typeparam name="TResult">The type of the result that is returned by the <c>continuationFunction</c> delegate and associated with the created task.</typeparam>
+        <param name="tasks">The array of tasks from which to continue.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <c>tasks</c> array have completed.</param>
+        <param name="cancellationToken">The cancellation token to assign to the new continuation task.</param>
+        <summary>Creates a continuation task that starts when a set of specified tasks has completed.</summary>
+        <returns>The new continuation task.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">An element in the <paramref name="tasks" /> array has been disposed.  
+  
+ -or-  
+  
+ The <see cref="T:System.Threading.CancellationTokenSource" /> that created<paramref name=" cancellationToken" /> has already been disposed.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="tasks" /> array is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="continuationFunction" /> argument is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="tasks" /> array is empty or contains a null value.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAll&lt;TAntecedentResult,TResult&gt;">
@@ -810,14 +1070,22 @@
         <Parameter Name="continuationOptions" Type="System.Threading.Tasks.TaskContinuationOptions" />
       </Parameters>
       <Docs>
-        <typeparam name="TAntecedentResult">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="tasks">To be added.</param>
-        <param name="continuationFunction">To be added.</param>
-        <param name="continuationOptions">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TAntecedentResult">The type of the result of the antecedent <c>tasks</c>.</typeparam>
+        <typeparam name="TResult">The type of the result that is returned by the <c>continuationFunction</c> delegate and associated with the created task.</typeparam>
+        <param name="tasks">The array of tasks from which to continue.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <c>tasks</c> array have completed.</param>
+        <param name="continuationOptions">A bitwise combination of the enumeration values that control the behavior of the new continuation task. The NotOn* and OnlyOn* members are not supported.</param>
+        <summary>Creates a continuation task that starts when a set of specified tasks has completed.</summary>
+        <returns>The new continuation task.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">An element in the <paramref name="tasks" /> array has been disposed.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="tasks" /> array is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="continuationFunction" /> argument is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="continuationOptions" /> argument specifies an invalid value.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="tasks" /> array is empty or contains a null value.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAll&lt;TAntecedentResult,TResult&gt;">
@@ -854,16 +1122,32 @@
         <Parameter Name="scheduler" Type="System.Threading.Tasks.TaskScheduler" />
       </Parameters>
       <Docs>
-        <typeparam name="TAntecedentResult">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="tasks">To be added.</param>
-        <param name="continuationFunction">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <param name="continuationOptions">To be added.</param>
-        <param name="scheduler">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TAntecedentResult">The type of the result of the antecedent <c>tasks</c>.</typeparam>
+        <typeparam name="TResult">The type of the result that is returned by the <c>continuationFunction</c> delegate and associated with the created task.</typeparam>
+        <param name="tasks">The array of tasks from which to continue.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <c>tasks</c> array have completed.</param>
+        <param name="cancellationToken">The cancellation token to assign to the new continuation task.</param>
+        <param name="continuationOptions">A bitwise combination of the enumeration values that control the behavior of the new continuation task. The NotOn* and OnlyOn* members are not supported.</param>
+        <param name="scheduler">The object that is used to schedule the new continuation task.</param>
+        <summary>Creates a continuation task that starts when a set of specified tasks has completed.</summary>
+        <returns>The new continuation task.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="tasks" /> array is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="continuationFunction" /> argument is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="scheduler" /> argument is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="tasks" /> array is empty or contains a null value.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="continuationOptions" /> argument specifies an invalid value.</exception>
+        <exception cref="T:System.ObjectDisposedException">An element in the <paramref name="tasks" /> array has been disposed.  
+  
+ -or-  
+  
+ The <see cref="T:System.Threading.CancellationTokenSource" /> that created <paramref name="cancellationToken" /> has already been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAny">
@@ -893,11 +1177,32 @@
         <Parameter Name="continuationAction" Type="System.Action&lt;System.Threading.Tasks.Task&gt;" />
       </Parameters>
       <Docs>
-        <param name="tasks">To be added.</param>
-        <param name="continuationAction">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="tasks">The array of tasks from which to continue when one task completes.</param>
+        <param name="continuationAction">The action delegate to execute when one task in the <c>tasks</c> array completes.</param>
+        <summary>Creates a continuation <see cref="T:System.Threading.Tasks.Task" /> that will be started upon the completion of any Task in the provided set.</summary>
+        <returns>The new continuation <see cref="T:System.Threading.Tasks.Task" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use `ContinueWhenAny` and `ContinueWhenAll`:  
+  
+ [!code-csharp[System.Threading.Tasks.Task#05](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.task/cs/continuewhenmulti.cs#05)]
+ [!code-vb[System.Threading.Tasks.Task#05](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.task/vb/continuewhenmulti.vb#05)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">One of the elements in the <paramref name="tasks" /> array has been disposed.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="tasks" /> array is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="continuationAction" /> argument is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="tasks" /> array contains a <see langword="null" /> value.  
+  
+ -or-  
+  
+ The <paramref name="tasks" /> array is empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAny">
@@ -928,12 +1233,27 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="tasks">To be added.</param>
-        <param name="continuationAction">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="tasks">The array of tasks from which to continue when one task completes.</param>
+        <param name="continuationAction">The action delegate to execute when one task in the <c>tasks</c> array completes.</param>
+        <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" /> that will be assigned to the new continuation task.</param>
+        <summary>Creates a continuation <see cref="T:System.Threading.Tasks.Task" /> that will be started upon the completion of any Task in the provided set.</summary>
+        <returns>The new continuation <see cref="T:System.Threading.Tasks.Task" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">One of the elements in the <paramref name="tasks" /> array has been disposed.  
+  
+ -or-  
+  
+ <paramref name="cancellationToken" /> has already been disposed.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="tasks" /> array is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="continuationAction" /> argument is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="tasks" /> array contains a <see langword="null" /> value.  
+  
+ -or-  
+  
+ The <paramref name="tasks" /> array is empty .</exception>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAny">
@@ -964,12 +1284,31 @@
         <Parameter Name="continuationOptions" Type="System.Threading.Tasks.TaskContinuationOptions" />
       </Parameters>
       <Docs>
-        <param name="tasks">To be added.</param>
-        <param name="continuationAction">To be added.</param>
-        <param name="continuationOptions">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="tasks">The array of tasks from which to continue when one task completes.</param>
+        <param name="continuationAction">The action delegate to execute when one task in the <c>tasks</c> array completes.</param>
+        <param name="continuationOptions">The <see cref="T:System.Threading.Tasks.TaskContinuationOptions" /> value that controls the behavior of the created continuation <see cref="T:System.Threading.Tasks.Task" />.</param>
+        <summary>Creates a continuation <see cref="T:System.Threading.Tasks.Task" /> that will be started upon the completion of any Task in the provided set.</summary>
+        <returns>The new continuation <see cref="T:System.Threading.Tasks.Task" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The NotOn* and OnlyOn* <xref:System.Threading.Tasks.TaskContinuationOptions>, which constrain for which <xref:System.Threading.Tasks.TaskStatus> states a continuation will be executed, are illegal with ContinueWhenAny.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The exception that is thrown when one of the elements in the <paramref name="tasks" /> array has been disposed.</exception>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="tasks" /> array is null.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="continuationAction" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The exception that is thrown when the <paramref name="continuationOptions" /> argument specifies an invalid TaskContinuationOptions value.</exception>
+        <exception cref="T:System.ArgumentException">The exception that is thrown when the <paramref name="tasks" /> array contains a null value.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="tasks" /> array is empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAny">
@@ -1002,14 +1341,28 @@
         <Parameter Name="scheduler" Type="System.Threading.Tasks.TaskScheduler" />
       </Parameters>
       <Docs>
-        <param name="tasks">To be added.</param>
-        <param name="continuationAction">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <param name="continuationOptions">To be added.</param>
-        <param name="scheduler">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="tasks">The array of tasks from which to continue when one task completes.</param>
+        <param name="continuationAction">The action delegate to execute when one task in the <c>tasks</c> array completes.</param>
+        <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" /> that will be assigned to the new continuation task.</param>
+        <param name="continuationOptions">The <see cref="T:System.Threading.Tasks.TaskContinuationOptions" /> value that controls the behavior of the created continuation <see cref="T:System.Threading.Tasks.Task" />.</param>
+        <param name="scheduler">The <see cref="T:System.Threading.Tasks.TaskScheduler" /> that is used to schedule the created continuation <see cref="T:System.Threading.Tasks.Task" />.</param>
+        <summary>Creates a continuation <see cref="T:System.Threading.Tasks.Task" /> that will be started upon the completion of any Task in the provided set.</summary>
+        <returns>The new continuation <see cref="T:System.Threading.Tasks.Task" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="tasks" /> array is null.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="continuationAction" /> argument is null.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="scheduler" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentException">The exception that is thrown when the <paramref name="tasks" /> array contains a null value.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="tasks" /> array is empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAny&lt;TAntecedentResult&gt;">
@@ -1042,12 +1395,23 @@
         <Parameter Name="continuationAction" Type="System.Action&lt;System.Threading.Tasks.Task&lt;TAntecedentResult&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TAntecedentResult">To be added.</typeparam>
-        <param name="tasks">To be added.</param>
-        <param name="continuationAction">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TAntecedentResult">The type of the result of the antecedent <c>tasks</c>.</typeparam>
+        <param name="tasks">The array of tasks from which to continue when one task completes.</param>
+        <param name="continuationAction">The action delegate to execute when one task in the <c>tasks</c> array completes.</param>
+        <summary>Creates a continuation <see cref="T:System.Threading.Tasks.Task" /> that will be started upon the completion of any Task in the provided set.</summary>
+        <returns>The new continuation <see cref="T:System.Threading.Tasks.Task" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The exception that is thrown when one of the elements in the <paramref name="tasks" /> array has been disposed.</exception>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="tasks" /> array is null.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="continuationAction" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentException">The exception that is thrown when the <paramref name="tasks" /> array contains a null value.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="tasks" /> array is empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAny&lt;TAntecedentResult&gt;">
@@ -1081,13 +1445,28 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <typeparam name="TAntecedentResult">To be added.</typeparam>
-        <param name="tasks">To be added.</param>
-        <param name="continuationAction">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TAntecedentResult">The type of the result of the antecedent <c>tasks</c>.</typeparam>
+        <param name="tasks">The array of tasks from which to continue when one task completes.</param>
+        <param name="continuationAction">The action delegate to execute when one task in the <c>tasks</c> array completes.</param>
+        <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" /> that will be assigned to the new continuation task.</param>
+        <summary>Creates a continuation <see cref="T:System.Threading.Tasks.Task" /> that will be started upon the completion of any Task in the provided set.</summary>
+        <returns>The new continuation <see cref="T:System.Threading.Tasks.Task" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The exception that is thrown when one of the elements in the <paramref name="tasks" /> array has been disposed.  
+  
+ -or-  
+  
+ The provided <see cref="T:System.Threading.CancellationToken" /> has already been disposed.</exception>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="tasks" /> array is null.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="continuationAction" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentException">The exception that is thrown when the <paramref name="tasks" /> array contains a null value.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="tasks" /> array is empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAny&lt;TAntecedentResult&gt;">
@@ -1121,13 +1500,32 @@
         <Parameter Name="continuationOptions" Type="System.Threading.Tasks.TaskContinuationOptions" />
       </Parameters>
       <Docs>
-        <typeparam name="TAntecedentResult">To be added.</typeparam>
-        <param name="tasks">To be added.</param>
-        <param name="continuationAction">To be added.</param>
-        <param name="continuationOptions">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TAntecedentResult">The type of the result of the antecedent <c>tasks</c>.</typeparam>
+        <param name="tasks">The array of tasks from which to continue when one task completes.</param>
+        <param name="continuationAction">The action delegate to execute when one task in the <c>tasks</c> array completes.</param>
+        <param name="continuationOptions">The <see cref="T:System.Threading.Tasks.TaskContinuationOptions" /> value that controls the behavior of the created continuation <see cref="T:System.Threading.Tasks.Task" />.</param>
+        <summary>Creates a continuation <see cref="T:System.Threading.Tasks.Task" /> that will be started upon the completion of any Task in the provided set.</summary>
+        <returns>The new continuation <see cref="T:System.Threading.Tasks.Task" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The NotOn* and OnlyOn* <xref:System.Threading.Tasks.TaskContinuationOptions>, which constrain for which <xref:System.Threading.Tasks.TaskStatus> states a continuation will be executed, are illegal with ContinueWhenAny.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The exception that is thrown when one of the elements in the <paramref name="tasks" /> array has been disposed.</exception>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="tasks" /> array is null.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="continuationAction" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The exception that is thrown when the <paramref name="continuationOptions" /> argument specifies an invalid TaskContinuationOptions value.</exception>
+        <exception cref="T:System.ArgumentException">The exception that is thrown when the <paramref name="tasks" /> array contains a null value.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="tasks" /> array is empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAny&lt;TAntecedentResult&gt;">
@@ -1163,15 +1561,36 @@
         <Parameter Name="scheduler" Type="System.Threading.Tasks.TaskScheduler" />
       </Parameters>
       <Docs>
-        <typeparam name="TAntecedentResult">To be added.</typeparam>
-        <param name="tasks">To be added.</param>
-        <param name="continuationAction">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <param name="continuationOptions">To be added.</param>
-        <param name="scheduler">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TAntecedentResult">The type of the result of the antecedent <c>tasks</c>.</typeparam>
+        <param name="tasks">The array of tasks from which to continue when one task completes.</param>
+        <param name="continuationAction">The action delegate to execute when one task in the <c>tasks</c> array completes.</param>
+        <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" /> that will be assigned to the new continuation task.</param>
+        <param name="continuationOptions">The <see cref="T:System.Threading.Tasks.TaskContinuationOptions" /> value that controls the behavior of the created continuation <see cref="T:System.Threading.Tasks.Task" />.</param>
+        <param name="scheduler">The <see cref="T:System.Threading.Tasks.TaskScheduler" /> that is used to schedule the created continuation <see cref="T:System.Threading.Tasks.Task`1" />.</param>
+        <summary>Creates a continuation <see cref="T:System.Threading.Tasks.Task" /> that will be started upon the completion of any Task in the provided set.</summary>
+        <returns>The new continuation <see cref="T:System.Threading.Tasks.Task" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The NotOn* and OnlyOn* <xref:System.Threading.Tasks.TaskContinuationOptions>, which constrain for which <xref:System.Threading.Tasks.TaskStatus> states a continuation will be executed, are illegal with ContinueWhenAny.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="tasks" /> array is null.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="continuationAction" /> argument is null.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="scheduler" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentException">The exception that is thrown when the <paramref name="tasks" /> array contains a null value.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="tasks" /> array is empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAny&lt;TResult&gt;">
@@ -1204,12 +1623,23 @@
         <Parameter Name="continuationFunction" Type="System.Func&lt;System.Threading.Tasks.Task,TResult&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="tasks">To be added.</param>
-        <param name="continuationFunction">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TResult">The type of the result that is returned by the <c>continuationFunction</c> delegate and associated with the created <see cref="T:System.Threading.Tasks.Task`1" />.</typeparam>
+        <param name="tasks">The array of tasks from which to continue when one task completes.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when one task in the <c>tasks</c> array completes.</param>
+        <summary>Creates a continuation <see cref="T:System.Threading.Tasks.Task`1" /> that will be started upon the completion of any Task in the provided set.</summary>
+        <returns>The new continuation <see cref="T:System.Threading.Tasks.Task`1" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The exception that is thrown when one of the elements in the <paramref name="tasks" /> array has been disposed.</exception>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="tasks" /> array is null.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="continuationFunction" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentException">The exception that is thrown when the <paramref name="tasks" /> array contains a null value.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="tasks" /> array is empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAny&lt;TResult&gt;">
@@ -1243,13 +1673,28 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="tasks">To be added.</param>
-        <param name="continuationFunction">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TResult">The type of the result that is returned by the <c>continuationFunction</c> delegate and associated with the created <see cref="T:System.Threading.Tasks.Task`1" />.</typeparam>
+        <param name="tasks">The array of tasks from which to continue when one task completes.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when one task in the <c>tasks</c> array completes.</param>
+        <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" /> that will be assigned to the new continuation task.</param>
+        <summary>Creates a continuation <see cref="T:System.Threading.Tasks.Task`1" /> that will be started upon the completion of any Task in the provided set.</summary>
+        <returns>The new continuation <see cref="T:System.Threading.Tasks.Task`1" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The exception that is thrown when one of the elements in the <paramref name="tasks" /> array has been disposed.  
+  
+ -or-  
+  
+ The provided <see cref="T:System.Threading.CancellationToken" /> has already been disposed.</exception>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="tasks" /> array is null.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="continuationFunction" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentException">The exception that is thrown when the <paramref name="tasks" /> array contains a null value.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="tasks" /> array is empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAny&lt;TResult&gt;">
@@ -1283,13 +1728,32 @@
         <Parameter Name="continuationOptions" Type="System.Threading.Tasks.TaskContinuationOptions" />
       </Parameters>
       <Docs>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="tasks">To be added.</param>
-        <param name="continuationFunction">To be added.</param>
-        <param name="continuationOptions">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TResult">The type of the result that is returned by the <c>continuationFunction</c> delegate and associated with the created <see cref="T:System.Threading.Tasks.Task`1" />.</typeparam>
+        <param name="tasks">The array of tasks from which to continue when one task completes.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when one task in the <c>tasks</c> array completes.</param>
+        <param name="continuationOptions">The <see cref="T:System.Threading.Tasks.TaskContinuationOptions" /> value that controls the behavior of the created continuation <see cref="T:System.Threading.Tasks.Task`1" />.</param>
+        <summary>Creates a continuation <see cref="T:System.Threading.Tasks.Task`1" /> that will be started upon the completion of any Task in the provided set.</summary>
+        <returns>The new continuation <see cref="T:System.Threading.Tasks.Task`1" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The NotOn* and OnlyOn* <xref:System.Threading.Tasks.TaskContinuationOptions>, which constrain for which <xref:System.Threading.Tasks.TaskStatus> states a continuation will be executed, are illegal with ContinueWhenAny.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The exception that is thrown when one of the elements in the <paramref name="tasks" /> array has been disposed.</exception>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="tasks" /> array is null.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="continuationFunction" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The exception that is thrown when the <paramref name="continuationOptions" /> argument specifies an invalid TaskContinuationOptions value.</exception>
+        <exception cref="T:System.ArgumentException">The exception that is thrown when the <paramref name="tasks" /> array contains a null value.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="tasks" /> array is empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAny&lt;TResult&gt;">
@@ -1325,15 +1789,36 @@
         <Parameter Name="scheduler" Type="System.Threading.Tasks.TaskScheduler" />
       </Parameters>
       <Docs>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="tasks">To be added.</param>
-        <param name="continuationFunction">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <param name="continuationOptions">To be added.</param>
-        <param name="scheduler">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TResult">The type of the result that is returned by the <c>continuationFunction</c> delegate and associated with the created <see cref="T:System.Threading.Tasks.Task`1" />.</typeparam>
+        <param name="tasks">The array of tasks from which to continue when one task completes.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when one task in the <c>tasks</c> array completes.</param>
+        <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" /> that will be assigned to the new continuation task.</param>
+        <param name="continuationOptions">The <see cref="T:System.Threading.Tasks.TaskContinuationOptions" /> value that controls the behavior of the created continuation <see cref="T:System.Threading.Tasks.Task`1" />.</param>
+        <param name="scheduler">The <see cref="T:System.Threading.Tasks.TaskScheduler" /> that is used to schedule the created continuation <see cref="T:System.Threading.Tasks.Task`1" />.</param>
+        <summary>Creates a continuation <see cref="T:System.Threading.Tasks.Task`1" /> that will be started upon the completion of any Task in the provided set.</summary>
+        <returns>The new continuation <see cref="T:System.Threading.Tasks.Task`1" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The NotOn* and OnlyOn* <xref:System.Threading.Tasks.TaskContinuationOptions>, which constrain for which <xref:System.Threading.Tasks.TaskStatus> states a continuation will be executed, are illegal with ContinueWhenAny.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="tasks" /> array is null.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="continuationFunction" /> argument is null.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="scheduler" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentException">The exception that is thrown when the <paramref name="tasks" /> array contains a null value.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="tasks" /> array is empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAny&lt;TAntecedentResult,TResult&gt;">
@@ -1367,13 +1852,24 @@
         <Parameter Name="continuationFunction" Type="System.Func&lt;System.Threading.Tasks.Task&lt;TAntecedentResult&gt;,TResult&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TAntecedentResult">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="tasks">To be added.</param>
-        <param name="continuationFunction">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TAntecedentResult">The type of the result of the antecedent <c>tasks</c>.</typeparam>
+        <typeparam name="TResult">The type of the result that is returned by the <c>continuationFunction</c> delegate and associated with the created <see cref="T:System.Threading.Tasks.Task`1" />.</typeparam>
+        <param name="tasks">The array of tasks from which to continue when one task completes.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when one task in the <c>tasks</c> array completes.</param>
+        <summary>Creates a continuation <see cref="T:System.Threading.Tasks.Task`1" /> that will be started upon the completion of any Task in the provided set.</summary>
+        <returns>The new continuation <see cref="T:System.Threading.Tasks.Task`1" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The exception that is thrown when one of the elements in the <paramref name="tasks" /> array has been disposed.</exception>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="tasks" /> array is null.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="continuationFunction" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentException">The exception that is thrown when the <paramref name="tasks" /> array contains a null value.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="tasks" /> array is empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAny&lt;TAntecedentResult,TResult&gt;">
@@ -1408,14 +1904,29 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <typeparam name="TAntecedentResult">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="tasks">To be added.</param>
-        <param name="continuationFunction">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TAntecedentResult">The type of the result of the antecedent <c>tasks</c>.</typeparam>
+        <typeparam name="TResult">The type of the result that is returned by the <c>continuationFunction</c> delegate and associated with the created <see cref="T:System.Threading.Tasks.Task`1" />.</typeparam>
+        <param name="tasks">The array of tasks from which to continue when one task completes.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when one task in the <c>tasks</c> array completes.</param>
+        <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" /> that will be assigned to the new continuation task.</param>
+        <summary>Creates a continuation <see cref="T:System.Threading.Tasks.Task`1" /> that will be started upon the completion of any Task in the provided set.</summary>
+        <returns>The new continuation <see cref="T:System.Threading.Tasks.Task`1" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The exception that is thrown when one of the elements in the <paramref name="tasks" /> array has been disposed.  
+  
+ -or-  
+  
+ The provided <see cref="T:System.Threading.CancellationToken" /> has already been disposed.</exception>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="tasks" /> array is null.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="continuationFunction" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentException">The exception that is thrown when the <paramref name="tasks" /> array contains a null value.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="tasks" /> array is empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAny&lt;TAntecedentResult,TResult&gt;">
@@ -1450,14 +1961,33 @@
         <Parameter Name="continuationOptions" Type="System.Threading.Tasks.TaskContinuationOptions" />
       </Parameters>
       <Docs>
-        <typeparam name="TAntecedentResult">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="tasks">To be added.</param>
-        <param name="continuationFunction">To be added.</param>
-        <param name="continuationOptions">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TAntecedentResult">The type of the result of the antecedent <c>tasks</c>.</typeparam>
+        <typeparam name="TResult">The type of the result that is returned by the <c>continuationFunction</c> delegate and associated with the created <see cref="T:System.Threading.Tasks.Task`1" />.</typeparam>
+        <param name="tasks">The array of tasks from which to continue when one task completes.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when one task in the <c>tasks</c> array completes.</param>
+        <param name="continuationOptions">The <see cref="T:System.Threading.Tasks.TaskContinuationOptions" /> value that controls the behavior of the created continuation <see cref="T:System.Threading.Tasks.Task`1" />.</param>
+        <summary>Creates a continuation <see cref="T:System.Threading.Tasks.Task`1" /> that will be started upon the completion of any Task in the provided set.</summary>
+        <returns>The new continuation <see cref="T:System.Threading.Tasks.Task`1" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The NotOn* and OnlyOn* <xref:System.Threading.Tasks.TaskContinuationOptions>, which constrain for which <xref:System.Threading.Tasks.TaskStatus> states a continuation will be executed, are illegal with ContinueWhenAny.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The exception that is thrown when one of the elements in the <paramref name="tasks" /> array has been disposed.</exception>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="tasks" /> array is null.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="continuationFunction" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The exception that is thrown when the <paramref name="continuationOptions" /> argument specifies an invalid TaskContinuationOptions value.</exception>
+        <exception cref="T:System.ArgumentException">The exception that is thrown when the <paramref name="tasks" /> array contains a null value.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="tasks" /> array is empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAny&lt;TAntecedentResult,TResult&gt;">
@@ -1494,16 +2024,37 @@
         <Parameter Name="scheduler" Type="System.Threading.Tasks.TaskScheduler" />
       </Parameters>
       <Docs>
-        <typeparam name="TAntecedentResult">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="tasks">To be added.</param>
-        <param name="continuationFunction">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <param name="continuationOptions">To be added.</param>
-        <param name="scheduler">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TAntecedentResult">The type of the result of the antecedent <c>tasks</c>.</typeparam>
+        <typeparam name="TResult">The type of the result that is returned by the <c>continuationFunction</c> delegate and associated with the created <see cref="T:System.Threading.Tasks.Task`1" />.</typeparam>
+        <param name="tasks">The array of tasks from which to continue when one task completes.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when one task in the <c>tasks</c> array completes.</param>
+        <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" /> that will be assigned to the new continuation task.</param>
+        <param name="continuationOptions">The <see cref="T:System.Threading.Tasks.TaskContinuationOptions" /> value that controls the behavior of the created continuation <see cref="T:System.Threading.Tasks.Task`1" />.</param>
+        <param name="scheduler">The <see cref="T:System.Threading.Tasks.TaskScheduler" /> that is used to schedule the created continuation <see cref="T:System.Threading.Tasks.Task`1" />.</param>
+        <summary>Creates a continuation <see cref="T:System.Threading.Tasks.Task`1" /> that will be started upon the completion of any Task in the provided set.</summary>
+        <returns>The new continuation <see cref="T:System.Threading.Tasks.Task`1" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The NotOn* and OnlyOn* <xref:System.Threading.Tasks.TaskContinuationOptions>, which constrain for which <xref:System.Threading.Tasks.TaskStatus> states a continuation will be executed, are illegal with ContinueWhenAny.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="tasks" /> array is null.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="continuationFunction" /> argument is null.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="scheduler" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentException">The exception that is thrown when the <paramref name="tasks" /> array contains a null value.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="tasks" /> array is empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreationOptions">
@@ -1529,9 +2080,16 @@
         <ReturnType>System.Threading.Tasks.TaskCreationOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the default task creation options for this task factory.</summary>
+        <value>The default task creation options for this task factory.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The property value is used to create all tasks, unless other options are explicitly specified during calls to this factory's methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FromAsync">
@@ -1561,11 +2119,25 @@
         <Parameter Name="endMethod" Type="System.Action&lt;System.IAsyncResult&gt;" />
       </Parameters>
       <Docs>
-        <param name="asyncResult">To be added.</param>
-        <param name="endMethod">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="asyncResult">The IAsyncResult whose completion should trigger the processing of the <c>endMethod</c>.</param>
+        <param name="endMethod">The action delegate that processes the completed <c>asyncResult</c>.</param>
+        <summary>Creates a <see cref="T:System.Threading.Tasks.Task" /> that executes an end method action when a specified <see cref="T:System.IAsyncResult" /> completes.</summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> that represents the asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!TIP]
+>  The <xref:System.Threading.Tasks.TaskFactory.FromAsync%2A> overloads that take an `asyncResult` parameter are not as efficient as the overloads that take a `beginMethod` parameter. If performance is an issue, use the overloads that provide the `beginMethod`/`endMethod` pattern.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="asyncResult" /> argument is null.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="endMethod" /> argument is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="FromAsync">
@@ -1596,12 +2168,24 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="beginMethod">To be added.</param>
-        <param name="endMethod">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="beginMethod">The delegate that begins the asynchronous operation.</param>
+        <param name="endMethod">The delegate that ends the asynchronous operation.</param>
+        <param name="state">An object containing data to be used by the <c>beginMethod</c> delegate.</param>
+        <summary>Creates a <see cref="T:System.Threading.Tasks.Task" /> that represents a pair of begin and end methods that conform to the Asynchronous Programming Model pattern.</summary>
+        <returns>The created <see cref="T:System.Threading.Tasks.Task" /> that represents the asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `beginMethod` delegate is started on the thread that <xref:System.Threading.Tasks.TaskFactory.FromAsync%2A> is running on.  This method throws any exceptions thrown by the `beginMethod`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="beginMethod" /> argument is null.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="endMethod" /> argument is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="FromAsync">
@@ -1632,12 +2216,27 @@
         <Parameter Name="creationOptions" Type="System.Threading.Tasks.TaskCreationOptions" />
       </Parameters>
       <Docs>
-        <param name="asyncResult">To be added.</param>
-        <param name="endMethod">To be added.</param>
-        <param name="creationOptions">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="asyncResult">The IAsyncResult whose completion should trigger the processing of the <c>endMethod</c>.</param>
+        <param name="endMethod">The action delegate that processes the completed <c>asyncResult</c>.</param>
+        <param name="creationOptions">The TaskCreationOptions value that controls the behavior of the created <see cref="T:System.Threading.Tasks.Task" />.</param>
+        <summary>Creates a <see cref="T:System.Threading.Tasks.Task" /> that executes an end method action when a specified <see cref="T:System.IAsyncResult" /> completes.</summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> that represents the asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!TIP]
+>  The <xref:System.Threading.Tasks.TaskFactory.FromAsync%2A> overloads that take an `asyncResult` parameter are not as efficient as the overloads that take a `beginMethod` parameter. If performance is an issue, use the overloads that provide the `beginMethod`/`endMethod` pattern.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="asyncResult" /> argument is null.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="endMethod" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The exception that is thrown when the <paramref name="creationOptions" /> argument specifies an invalid TaskCreationOptions value. For more information, see the Remarks for <see cref="M:System.Threading.Tasks.TaskFactory.FromAsync(System.Func{System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},System.Object,System.Threading.Tasks.TaskCreationOptions)" /></exception>
       </Docs>
     </Member>
     <Member MemberName="FromAsync">
@@ -1669,13 +2268,26 @@
         <Parameter Name="creationOptions" Type="System.Threading.Tasks.TaskCreationOptions" />
       </Parameters>
       <Docs>
-        <param name="beginMethod">To be added.</param>
-        <param name="endMethod">To be added.</param>
-        <param name="state">To be added.</param>
-        <param name="creationOptions">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="beginMethod">The delegate that begins the asynchronous operation.</param>
+        <param name="endMethod">The delegate that ends the asynchronous operation.</param>
+        <param name="state">An object containing data to be used by the <c>beginMethod</c> delegate.</param>
+        <param name="creationOptions">The TaskCreationOptions value that controls the behavior of the created <see cref="T:System.Threading.Tasks.Task" />.</param>
+        <summary>Creates a <see cref="T:System.Threading.Tasks.Task" /> that represents a pair of begin and end methods that conform to the Asynchronous Programming Model pattern.</summary>
+        <returns>The created <see cref="T:System.Threading.Tasks.Task" /> that represents the asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `beginMethod` delegate is started on the thread that <xref:System.Threading.Tasks.TaskFactory.FromAsync%2A> is running on. This method throws any exceptions thrown by the `beginMethod`. The <xref:System.Threading.Tasks.TaskCreationOptions> values <xref:System.Threading.Tasks.TaskCreationOptions>, <xref:System.Threading.Tasks.TaskCreationOptions> and <xref:System.Threading.Tasks.TaskCreationOptions> are all mutually exclusive. In the FromAsync methods, either `LongRunning` or `AttachedToParent` by themselves will cause an <xref:System.ArgumentOutOfRangeException> to be thrown.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="beginMethod" /> argument is null.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="endMethod" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The exception that is thrown when the <paramref name="creationOptions" /> argument specifies an invalid TaskCreationOptions value.</exception>
       </Docs>
     </Member>
     <Member MemberName="FromAsync">
@@ -1707,13 +2319,32 @@
         <Parameter Name="scheduler" Type="System.Threading.Tasks.TaskScheduler" />
       </Parameters>
       <Docs>
-        <param name="asyncResult">To be added.</param>
-        <param name="endMethod">To be added.</param>
-        <param name="creationOptions">To be added.</param>
-        <param name="scheduler">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="asyncResult">The IAsyncResult whose completion should trigger the processing of the <c>endMethod</c>.</param>
+        <param name="endMethod">The action delegate that processes the completed <c>asyncResult</c>.</param>
+        <param name="creationOptions">The TaskCreationOptions value that controls the behavior of the created <see cref="T:System.Threading.Tasks.Task" />.</param>
+        <param name="scheduler">The <see cref="T:System.Threading.Tasks.TaskScheduler" /> that is used to schedule the task that executes the end method.</param>
+        <summary>Creates a <see cref="T:System.Threading.Tasks.Task" /> that executes an end method action when a specified <see cref="T:System.IAsyncResult" /> completes.</summary>
+        <returns>The created <see cref="T:System.Threading.Tasks.Task" /> that represents the asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!TIP]
+>  The <xref:System.Threading.Tasks.TaskFactory.FromAsync%2A> overloads that take an `asyncResult` parameter are not as efficient as the overloads that take a `beginMethod` parameter. If performance is an issue, use the overloads that provide the `beginMethod`/`endMethod` pattern.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="asyncResult" /> argument is null.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="endMethod" /> argument is null.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="scheduler" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The exception that is thrown when the <paramref name="creationOptions" /> argument specifies an invalid TaskCreationOptions value. The exception that is thrown when the <paramref name="creationOptions" /> argument specifies an invalid TaskCreationOptions value. For more information, see the Remarks for <see cref="M:System.Threading.Tasks.TaskFactory.FromAsync(System.Func{System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},System.Object,System.Threading.Tasks.TaskCreationOptions)" /></exception>
       </Docs>
     </Member>
     <Member MemberName="FromAsync&lt;TArg1&gt;">
@@ -1748,14 +2379,26 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <typeparam name="TArg1">To be added.</typeparam>
-        <param name="beginMethod">To be added.</param>
-        <param name="endMethod">To be added.</param>
-        <param name="arg1">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TArg1">The type of the first argument passed to the <c>beginMethod</c> delegate.</typeparam>
+        <param name="beginMethod">The delegate that begins the asynchronous operation.</param>
+        <param name="endMethod">The delegate that ends the asynchronous operation.</param>
+        <param name="arg1">The first argument passed to the <c>beginMethod</c> delegate.</param>
+        <param name="state">An object containing data to be used by the <c>beginMethod</c> delegate.</param>
+        <summary>Creates a <see cref="T:System.Threading.Tasks.Task" /> that represents a pair of begin and end methods that conform to the Asynchronous Programming Model pattern.</summary>
+        <returns>The created <see cref="T:System.Threading.Tasks.Task" /> that represents the asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `beginMethod` delegate is started on the thread that <xref:System.Threading.Tasks.TaskFactory.FromAsync%2A> is running on. This method throws any exceptions thrown by the `beginMethod`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="beginMethod" /> argument is null.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="endMethod" /> argument is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="FromAsync&lt;TArg1&gt;">
@@ -1791,15 +2434,28 @@
         <Parameter Name="creationOptions" Type="System.Threading.Tasks.TaskCreationOptions" />
       </Parameters>
       <Docs>
-        <typeparam name="TArg1">To be added.</typeparam>
-        <param name="beginMethod">To be added.</param>
-        <param name="endMethod">To be added.</param>
-        <param name="arg1">To be added.</param>
-        <param name="state">To be added.</param>
-        <param name="creationOptions">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TArg1">The type of the first argument passed to the <c>beginMethod</c> delegate.</typeparam>
+        <param name="beginMethod">The delegate that begins the asynchronous operation.</param>
+        <param name="endMethod">The delegate that ends the asynchronous operation.</param>
+        <param name="arg1">The first argument passed to the <c>beginMethod</c> delegate.</param>
+        <param name="state">An object containing data to be used by the <c>beginMethod</c> delegate.</param>
+        <param name="creationOptions">The TaskCreationOptions value that controls the behavior of the created <see cref="T:System.Threading.Tasks.Task" />.</param>
+        <summary>Creates a <see cref="T:System.Threading.Tasks.Task" /> that represents a pair of begin and end methods that conform to the Asynchronous Programming Model pattern.</summary>
+        <returns>The created <see cref="T:System.Threading.Tasks.Task" /> that represents the asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `beginMethod` delegate is started on the thread that <xref:System.Threading.Tasks.TaskFactory.FromAsync%2A> is running on. This method throws any exceptions thrown by the `beginMethod`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="beginMethod" /> argument is null.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="endMethod" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The exception that is thrown when the <paramref name="creationOptions" /> argument specifies an invalid TaskCreationOptions value. The exception that is thrown when the <paramref name="creationOptions" /> argument specifies an invalid TaskCreationOptions value. For more information, see the Remarks for <see cref="M:System.Threading.Tasks.TaskFactory.FromAsync(System.Func{System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},System.Object,System.Threading.Tasks.TaskCreationOptions)" /></exception>
       </Docs>
     </Member>
     <Member MemberName="FromAsync&lt;TResult&gt;">
@@ -1832,12 +2488,26 @@
         <Parameter Name="endMethod" Type="System.Func&lt;System.IAsyncResult,TResult&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="asyncResult">To be added.</param>
-        <param name="endMethod">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TResult">The type of the result available through the <see cref="T:System.Threading.Tasks.Task`1" />.</typeparam>
+        <param name="asyncResult">The IAsyncResult whose completion should trigger the processing of the <c>endMethod</c>.</param>
+        <param name="endMethod">The function delegate that processes the completed <c>asyncResult</c>.</param>
+        <summary>Creates a <see cref="T:System.Threading.Tasks.Task`1" /> that executes an end method function when a specified <see cref="T:System.IAsyncResult" /> completes.</summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> that represents the asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!TIP]
+>  The <xref:System.Threading.Tasks.TaskFactory.FromAsync%2A> overloads that take an `asyncResult` parameter are not as efficient as the overloads that take a `beginMethod` parameter. If performance is an issue, use the overloads that provide the `beginMethod`/`endMethod` pattern.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="asyncResult" /> argument is null.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="endMethod" /> argument is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="FromAsync&lt;TResult&gt;">
@@ -1871,13 +2541,25 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="beginMethod">To be added.</param>
-        <param name="endMethod">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TResult">The type of the result available through the <see cref="T:System.Threading.Tasks.Task`1" />.</typeparam>
+        <param name="beginMethod">The delegate that begins the asynchronous operation.</param>
+        <param name="endMethod">The delegate that ends the asynchronous operation.</param>
+        <param name="state">An object containing data to be used by the <c>beginMethod</c> delegate.</param>
+        <summary>Creates a <see cref="T:System.Threading.Tasks.Task`1" /> that represents a pair of begin and end methods that conform to the Asynchronous Programming Model pattern.</summary>
+        <returns>The created <see cref="T:System.Threading.Tasks.Task`1" /> that represents the asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method throws any exceptions thrown by the `beginMethod`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="beginMethod" /> argument is null.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="endMethod" /> argument is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="FromAsync&lt;TResult&gt;">
@@ -1911,13 +2593,28 @@
         <Parameter Name="creationOptions" Type="System.Threading.Tasks.TaskCreationOptions" />
       </Parameters>
       <Docs>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="asyncResult">To be added.</param>
-        <param name="endMethod">To be added.</param>
-        <param name="creationOptions">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TResult">The type of the result available through the <see cref="T:System.Threading.Tasks.Task`1" />.</typeparam>
+        <param name="asyncResult">The IAsyncResult whose completion should trigger the processing of the <c>endMethod</c>.</param>
+        <param name="endMethod">The function delegate that processes the completed <c>asyncResult</c>.</param>
+        <param name="creationOptions">The TaskCreationOptions value that controls the behavior of the created <see cref="T:System.Threading.Tasks.Task`1" />.</param>
+        <summary>Creates a <see cref="T:System.Threading.Tasks.Task`1" /> that executes an end method function when a specified <see cref="T:System.IAsyncResult" /> completes.</summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> that represents the asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!TIP]
+>  The <xref:System.Threading.Tasks.TaskFactory.FromAsync%2A> overloads that take an `asyncResult` parameter are not as efficient as the overloads that take a `beginMethod` parameter. If performance is an issue, use the overloads that provide the `beginMethod`/`endMethod` pattern.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="asyncResult" /> argument is null.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="endMethod" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The exception that is thrown when the <paramref name="creationOptions" /> argument specifies an invalid TaskCreationOptions value. The exception that is thrown when the <paramref name="creationOptions" /> argument specifies an invalid TaskCreationOptions value. For more information, see the Remarks for <see cref="M:System.Threading.Tasks.TaskFactory.FromAsync(System.Func{System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},System.Object,System.Threading.Tasks.TaskCreationOptions)" /></exception>
       </Docs>
     </Member>
     <Member MemberName="FromAsync&lt;TResult&gt;">
@@ -1952,14 +2649,27 @@
         <Parameter Name="creationOptions" Type="System.Threading.Tasks.TaskCreationOptions" />
       </Parameters>
       <Docs>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="beginMethod">To be added.</param>
-        <param name="endMethod">To be added.</param>
-        <param name="state">To be added.</param>
-        <param name="creationOptions">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TResult">The type of the result available through the <see cref="T:System.Threading.Tasks.Task`1" />.</typeparam>
+        <param name="beginMethod">The delegate that begins the asynchronous operation.</param>
+        <param name="endMethod">The delegate that ends the asynchronous operation.</param>
+        <param name="state">An object containing data to be used by the <c>beginMethod</c> delegate.</param>
+        <param name="creationOptions">The TaskCreationOptions value that controls the behavior of the created <see cref="T:System.Threading.Tasks.Task`1" />.</param>
+        <summary>Creates a <see cref="T:System.Threading.Tasks.Task`1" /> that represents a pair of begin and end methods that conform to the Asynchronous Programming Model pattern.</summary>
+        <returns>The created <see cref="T:System.Threading.Tasks.Task`1" /> that represents the asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method throws any exceptions thrown by the `beginMethod`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="beginMethod" /> argument is null.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="endMethod" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The exception that is thrown when the <paramref name="creationOptions" /> argument specifies an invalid TaskCreationOptions value. The exception that is thrown when the <paramref name="creationOptions" /> argument specifies an invalid TaskCreationOptions value. For more information, see the Remarks for <see cref="M:System.Threading.Tasks.TaskFactory.FromAsync(System.Func{System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},System.Object,System.Threading.Tasks.TaskCreationOptions)" /></exception>
       </Docs>
     </Member>
     <Member MemberName="FromAsync&lt;TResult&gt;">
@@ -1994,14 +2704,33 @@
         <Parameter Name="scheduler" Type="System.Threading.Tasks.TaskScheduler" />
       </Parameters>
       <Docs>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="asyncResult">To be added.</param>
-        <param name="endMethod">To be added.</param>
-        <param name="creationOptions">To be added.</param>
-        <param name="scheduler">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TResult">The type of the result available through the <see cref="T:System.Threading.Tasks.Task`1" />.</typeparam>
+        <param name="asyncResult">The IAsyncResult whose completion should trigger the processing of the <c>endMethod</c>.</param>
+        <param name="endMethod">The function delegate that processes the completed <c>asyncResult</c>.</param>
+        <param name="creationOptions">The TaskCreationOptions value that controls the behavior of the created <see cref="T:System.Threading.Tasks.Task`1" />.</param>
+        <param name="scheduler">The <see cref="T:System.Threading.Tasks.TaskScheduler" /> that is used to schedule the task that executes the end method.</param>
+        <summary>Creates a <see cref="T:System.Threading.Tasks.Task`1" /> that executes an end method function when a specified <see cref="T:System.IAsyncResult" /> completes.</summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> that represents the asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!TIP]
+>  The <xref:System.Threading.Tasks.TaskFactory.FromAsync%2A> overloads that take an `asyncResult` parameter are not as efficient as the overloads that take a `beginMethod` parameter. If performance is an issue, use the overloads that provide the `beginMethod`/`endMethod` pattern.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="asyncResult" /> argument is null.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="endMethod" /> argument is null.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="scheduler" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The exception that is thrown when the <paramref name="creationOptions" /> argument specifies an invalid TaskCreationOptions value. The exception that is thrown when the <paramref name="creationOptions" /> argument specifies an invalid TaskCreationOptions value. For more information, see the Remarks for <see cref="M:System.Threading.Tasks.TaskFactory.FromAsync(System.Func{System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},System.Object,System.Threading.Tasks.TaskCreationOptions)" /></exception>
       </Docs>
     </Member>
     <Member MemberName="FromAsync&lt;TArg1,TArg2&gt;">
@@ -2038,16 +2767,28 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <typeparam name="TArg1">To be added.</typeparam>
-        <typeparam name="TArg2">To be added.</typeparam>
-        <param name="beginMethod">To be added.</param>
-        <param name="endMethod">To be added.</param>
-        <param name="arg1">To be added.</param>
-        <param name="arg2">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TArg1">The type of the second argument passed to <c>beginMethod</c> delegate.</typeparam>
+        <typeparam name="TArg2">The type of the first argument passed to the <c>beginMethod</c> delegate.</typeparam>
+        <param name="beginMethod">The delegate that begins the asynchronous operation.</param>
+        <param name="endMethod">The delegate that ends the asynchronous operation.</param>
+        <param name="arg1">The first argument passed to the <c>beginMethod</c> delegate.</param>
+        <param name="arg2">The second argument passed to the <c>beginMethod</c> delegate.</param>
+        <param name="state">An object containing data to be used by the <c>beginMethod</c> delegate.</param>
+        <summary>Creates a <see cref="T:System.Threading.Tasks.Task" /> that represents a pair of begin and end methods that conform to the Asynchronous Programming Model pattern.</summary>
+        <returns>The created <see cref="T:System.Threading.Tasks.Task" /> that represents the asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `beginMethod` delegate is started on the thread that <xref:System.Threading.Tasks.TaskFactory.FromAsync%2A> is running on. This method throws any exceptions thrown by the `beginMethod`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="beginMethod" /> argument is null.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="endMethod" /> argument is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="FromAsync&lt;TArg1,TArg2&gt;">
@@ -2085,17 +2826,30 @@
         <Parameter Name="creationOptions" Type="System.Threading.Tasks.TaskCreationOptions" />
       </Parameters>
       <Docs>
-        <typeparam name="TArg1">To be added.</typeparam>
-        <typeparam name="TArg2">To be added.</typeparam>
-        <param name="beginMethod">To be added.</param>
-        <param name="endMethod">To be added.</param>
-        <param name="arg1">To be added.</param>
-        <param name="arg2">To be added.</param>
-        <param name="state">To be added.</param>
-        <param name="creationOptions">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TArg1">The type of the second argument passed to <c>beginMethod</c> delegate.</typeparam>
+        <typeparam name="TArg2">The type of the first argument passed to the <c>beginMethod</c> delegate.</typeparam>
+        <param name="beginMethod">The delegate that begins the asynchronous operation.</param>
+        <param name="endMethod">The delegate that ends the asynchronous operation.</param>
+        <param name="arg1">The first argument passed to the <c>beginMethod</c> delegate.</param>
+        <param name="arg2">The second argument passed to the <c>beginMethod</c> delegate.</param>
+        <param name="state">An object containing data to be used by the <c>beginMethod</c> delegate.</param>
+        <param name="creationOptions">The TaskCreationOptions value that controls the behavior of the created <see cref="T:System.Threading.Tasks.Task" />.</param>
+        <summary>Creates a <see cref="T:System.Threading.Tasks.Task" /> that represents a pair of begin and end methods that conform to the Asynchronous Programming Model pattern.</summary>
+        <returns>The created <see cref="T:System.Threading.Tasks.Task" /> that represents the asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `beginMethod` delegate is started on the thread that <xref:System.Threading.Tasks.TaskFactory.FromAsync%2A> is running on. This method throws any exceptions thrown by the `beginMethod`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="beginMethod" /> argument is null.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="endMethod" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The exception that is thrown when the <paramref name="creationOptions" /> argument specifies an invalid TaskCreationOptions value. The exception that is thrown when the <paramref name="creationOptions" /> argument specifies an invalid TaskCreationOptions value. For more information, see the Remarks for <see cref="M:System.Threading.Tasks.TaskFactory.FromAsync(System.Func{System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},System.Object,System.Threading.Tasks.TaskCreationOptions)" /></exception>
       </Docs>
     </Member>
     <Member MemberName="FromAsync&lt;TArg1,TResult&gt;">
@@ -2131,15 +2885,27 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <typeparam name="TArg1">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="beginMethod">To be added.</param>
-        <param name="endMethod">To be added.</param>
-        <param name="arg1">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TArg1">The type of the first argument passed to the <c>beginMethod</c> delegate.</typeparam>
+        <typeparam name="TResult">The type of the result available through the <see cref="T:System.Threading.Tasks.Task`1" />.</typeparam>
+        <param name="beginMethod">The delegate that begins the asynchronous operation.</param>
+        <param name="endMethod">The delegate that ends the asynchronous operation.</param>
+        <param name="arg1">The first argument passed to the <c>beginMethod</c> delegate.</param>
+        <param name="state">An object containing data to be used by the <c>beginMethod</c> delegate.</param>
+        <summary>Creates a <see cref="T:System.Threading.Tasks.Task`1" /> that represents a pair of begin and end methods that conform to the Asynchronous Programming Model pattern.</summary>
+        <returns>The created <see cref="T:System.Threading.Tasks.Task`1" /> that represents the asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `beginMethod` delegate is started on the thread that <xref:System.Threading.Tasks.TaskFactory.FromAsync%2A> is running on. This method throws any exceptions thrown by the `beginMethod`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="beginMethod" /> argument is null.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="endMethod" /> argument is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="FromAsync&lt;TArg1,TResult&gt;">
@@ -2176,16 +2942,29 @@
         <Parameter Name="creationOptions" Type="System.Threading.Tasks.TaskCreationOptions" />
       </Parameters>
       <Docs>
-        <typeparam name="TArg1">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="beginMethod">To be added.</param>
-        <param name="endMethod">To be added.</param>
-        <param name="arg1">To be added.</param>
-        <param name="state">To be added.</param>
-        <param name="creationOptions">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TArg1">The type of the first argument passed to the <c>beginMethod</c> delegate.</typeparam>
+        <typeparam name="TResult">The type of the result available through the <see cref="T:System.Threading.Tasks.Task`1" />.</typeparam>
+        <param name="beginMethod">The delegate that begins the asynchronous operation.</param>
+        <param name="endMethod">The delegate that ends the asynchronous operation.</param>
+        <param name="arg1">The first argument passed to the <c>beginMethod</c> delegate.</param>
+        <param name="state">An object containing data to be used by the <c>beginMethod</c> delegate.</param>
+        <param name="creationOptions">The TaskCreationOptions value that controls the behavior of the created <see cref="T:System.Threading.Tasks.Task`1" />.</param>
+        <summary>Creates a <see cref="T:System.Threading.Tasks.Task`1" /> that represents a pair of begin and end methods that conform to the Asynchronous Programming Model pattern.</summary>
+        <returns>The created <see cref="T:System.Threading.Tasks.Task`1" /> that represents the asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `beginMethod` delegate is started on the thread that <xref:System.Threading.Tasks.TaskFactory.FromAsync%2A> is running on. This method throws any exceptions thrown by the `beginMethod`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="beginMethod" /> argument is null.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="endMethod" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The exception that is thrown when the <paramref name="creationOptions" /> argument specifies an invalid TaskCreationOptions value. The exception that is thrown when the <paramref name="creationOptions" /> argument specifies an invalid TaskCreationOptions value. For more information, see the Remarks for <see cref="M:System.Threading.Tasks.TaskFactory.FromAsync(System.Func{System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},System.Object,System.Threading.Tasks.TaskCreationOptions)" /></exception>
       </Docs>
     </Member>
     <Member MemberName="FromAsync&lt;TArg1,TArg2,TArg3&gt;">
@@ -2224,18 +3003,30 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <typeparam name="TArg1">To be added.</typeparam>
-        <typeparam name="TArg2">To be added.</typeparam>
-        <typeparam name="TArg3">To be added.</typeparam>
-        <param name="beginMethod">To be added.</param>
-        <param name="endMethod">To be added.</param>
-        <param name="arg1">To be added.</param>
-        <param name="arg2">To be added.</param>
-        <param name="arg3">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TArg1">The type of the second argument passed to <c>beginMethod</c> delegate.</typeparam>
+        <typeparam name="TArg2">The type of the third argument passed to <c>beginMethod</c> delegate.</typeparam>
+        <typeparam name="TArg3">The type of the first argument passed to the <c>beginMethod</c> delegate.</typeparam>
+        <param name="beginMethod">The delegate that begins the asynchronous operation.</param>
+        <param name="endMethod">The delegate that ends the asynchronous operation.</param>
+        <param name="arg1">The first argument passed to the <c>beginMethod</c> delegate.</param>
+        <param name="arg2">The second argument passed to the <c>beginMethod</c> delegate.</param>
+        <param name="arg3">The third argument passed to the <c>beginMethod</c> delegate.</param>
+        <param name="state">An object containing data to be used by the <c>beginMethod</c> delegate.</param>
+        <summary>Creates a <see cref="T:System.Threading.Tasks.Task" /> that represents a pair of begin and end methods that conform to the Asynchronous Programming Model pattern.</summary>
+        <returns>The created <see cref="T:System.Threading.Tasks.Task" /> that represents the asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `beginMethod` delegate is started on the thread that <xref:System.Threading.Tasks.TaskFactory.FromAsync%2A> is running on. This method throws any exceptions thrown by the `beginMethod`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="beginMethod" /> argument is null.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="endMethod" /> argument is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="FromAsync&lt;TArg1,TArg2,TArg3&gt;">
@@ -2275,19 +3066,32 @@
         <Parameter Name="creationOptions" Type="System.Threading.Tasks.TaskCreationOptions" />
       </Parameters>
       <Docs>
-        <typeparam name="TArg1">To be added.</typeparam>
-        <typeparam name="TArg2">To be added.</typeparam>
-        <typeparam name="TArg3">To be added.</typeparam>
-        <param name="beginMethod">To be added.</param>
-        <param name="endMethod">To be added.</param>
-        <param name="arg1">To be added.</param>
-        <param name="arg2">To be added.</param>
-        <param name="arg3">To be added.</param>
-        <param name="state">To be added.</param>
-        <param name="creationOptions">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TArg1">The type of the second argument passed to <c>beginMethod</c> delegate.</typeparam>
+        <typeparam name="TArg2">The type of the third argument passed to <c>beginMethod</c> delegate.</typeparam>
+        <typeparam name="TArg3">The type of the first argument passed to the <c>beginMethod</c> delegate.</typeparam>
+        <param name="beginMethod">The delegate that begins the asynchronous operation.</param>
+        <param name="endMethod">The delegate that ends the asynchronous operation.</param>
+        <param name="arg1">The first argument passed to the <c>beginMethod</c> delegate.</param>
+        <param name="arg2">The second argument passed to the <c>beginMethod</c> delegate.</param>
+        <param name="arg3">The third argument passed to the <c>beginMethod</c> delegate.</param>
+        <param name="state">An object containing data to be used by the <c>beginMethod</c> delegate.</param>
+        <param name="creationOptions">The TaskCreationOptions value that controls the behavior of the created <see cref="T:System.Threading.Tasks.Task" />.</param>
+        <summary>Creates a <see cref="T:System.Threading.Tasks.Task" /> that represents a pair of begin and end methods that conform to the Asynchronous Programming Model pattern.</summary>
+        <returns>The created <see cref="T:System.Threading.Tasks.Task" /> that represents the asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `beginMethod` delegate is started on the thread that <xref:System.Threading.Tasks.TaskFactory.FromAsync%2A> is running on. This method throws any exceptions thrown by the `beginMethod`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="beginMethod" /> argument is null.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="endMethod" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The exception that is thrown when the <paramref name="creationOptions" /> argument specifies an invalid TaskCreationOptions value. The exception that is thrown when the <paramref name="creationOptions" /> argument specifies an invalid TaskCreationOptions value. For more information, see the Remarks for <see cref="M:System.Threading.Tasks.TaskFactory.FromAsync(System.Func{System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},System.Object,System.Threading.Tasks.TaskCreationOptions)" /></exception>
       </Docs>
     </Member>
     <Member MemberName="FromAsync&lt;TArg1,TArg2,TResult&gt;">
@@ -2325,17 +3129,29 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <typeparam name="TArg1">To be added.</typeparam>
-        <typeparam name="TArg2">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="beginMethod">To be added.</param>
-        <param name="endMethod">To be added.</param>
-        <param name="arg1">To be added.</param>
-        <param name="arg2">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TArg1">The type of the second argument passed to <c>beginMethod</c> delegate.</typeparam>
+        <typeparam name="TArg2">The type of the first argument passed to the <c>beginMethod</c> delegate.</typeparam>
+        <typeparam name="TResult">The type of the result available through the <see cref="T:System.Threading.Tasks.Task`1" />.</typeparam>
+        <param name="beginMethod">The delegate that begins the asynchronous operation.</param>
+        <param name="endMethod">The delegate that ends the asynchronous operation.</param>
+        <param name="arg1">The first argument passed to the <c>beginMethod</c> delegate.</param>
+        <param name="arg2">The second argument passed to the <c>beginMethod</c> delegate.</param>
+        <param name="state">An object containing data to be used by the <c>beginMethod</c> delegate.</param>
+        <summary>Creates a <see cref="T:System.Threading.Tasks.Task`1" /> that represents a pair of begin and end methods that conform to the Asynchronous Programming Model pattern.</summary>
+        <returns>The created <see cref="T:System.Threading.Tasks.Task`1" /> that represents the asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `beginMethod` delegate is started on the thread that <xref:System.Threading.Tasks.TaskFactory.FromAsync%2A> is running on. This method throws any exceptions thrown by the `beginMethod`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="beginMethod" /> argument is null.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="endMethod" /> argument is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="FromAsync&lt;TArg1,TArg2,TResult&gt;">
@@ -2374,18 +3190,31 @@
         <Parameter Name="creationOptions" Type="System.Threading.Tasks.TaskCreationOptions" />
       </Parameters>
       <Docs>
-        <typeparam name="TArg1">To be added.</typeparam>
-        <typeparam name="TArg2">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="beginMethod">To be added.</param>
-        <param name="endMethod">To be added.</param>
-        <param name="arg1">To be added.</param>
-        <param name="arg2">To be added.</param>
-        <param name="state">To be added.</param>
-        <param name="creationOptions">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TArg1">The type of the second argument passed to <c>beginMethod</c> delegate.</typeparam>
+        <typeparam name="TArg2">The type of the first argument passed to the <c>beginMethod</c> delegate.</typeparam>
+        <typeparam name="TResult">The type of the result available through the <see cref="T:System.Threading.Tasks.Task`1" />.</typeparam>
+        <param name="beginMethod">The delegate that begins the asynchronous operation.</param>
+        <param name="endMethod">The delegate that ends the asynchronous operation.</param>
+        <param name="arg1">The first argument passed to the <c>beginMethod</c> delegate.</param>
+        <param name="arg2">The second argument passed to the <c>beginMethod</c> delegate.</param>
+        <param name="state">An object containing data to be used by the <c>beginMethod</c> delegate.</param>
+        <param name="creationOptions">The TaskCreationOptions value that controls the behavior of the created <see cref="T:System.Threading.Tasks.Task`1" />.</param>
+        <summary>Creates a <see cref="T:System.Threading.Tasks.Task`1" /> that represents a pair of begin and end methods that conform to the Asynchronous Programming Model pattern.</summary>
+        <returns>The created <see cref="T:System.Threading.Tasks.Task`1" /> that represents the asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `beginMethod` delegate is started on the thread that <xref:System.Threading.Tasks.TaskFactory.FromAsync%2A> is running on. This method throws any exceptions thrown by the `beginMethod`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="beginMethod" /> argument is null.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="endMethod" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The exception that is thrown when the <paramref name="creationOptions" /> argument specifies an invalid TaskCreationOptions value. The exception that is thrown when the <paramref name="creationOptions" /> argument specifies an invalid TaskCreationOptions value. For more information, see the Remarks for <see cref="M:System.Threading.Tasks.TaskFactory.FromAsync(System.Func{System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},System.Object,System.Threading.Tasks.TaskCreationOptions)" /></exception>
       </Docs>
     </Member>
     <Member MemberName="FromAsync&lt;TArg1,TArg2,TArg3,TResult&gt;">
@@ -2425,19 +3254,31 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <typeparam name="TArg1">To be added.</typeparam>
-        <typeparam name="TArg2">To be added.</typeparam>
-        <typeparam name="TArg3">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="beginMethod">To be added.</param>
-        <param name="endMethod">To be added.</param>
-        <param name="arg1">To be added.</param>
-        <param name="arg2">To be added.</param>
-        <param name="arg3">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TArg1">The type of the second argument passed to <c>beginMethod</c> delegate.</typeparam>
+        <typeparam name="TArg2">The type of the third argument passed to <c>beginMethod</c> delegate.</typeparam>
+        <typeparam name="TArg3">The type of the first argument passed to the <c>beginMethod</c> delegate.</typeparam>
+        <typeparam name="TResult">The type of the result available through the <see cref="T:System.Threading.Tasks.Task`1" />.</typeparam>
+        <param name="beginMethod">The delegate that begins the asynchronous operation.</param>
+        <param name="endMethod">The delegate that ends the asynchronous operation.</param>
+        <param name="arg1">The first argument passed to the <c>beginMethod</c> delegate.</param>
+        <param name="arg2">The second argument passed to the <c>beginMethod</c> delegate.</param>
+        <param name="arg3">The third argument passed to the <c>beginMethod</c> delegate.</param>
+        <param name="state">An object containing data to be used by the <c>beginMethod</c> delegate.</param>
+        <summary>Creates a <see cref="T:System.Threading.Tasks.Task`1" /> that represents a pair of begin and end methods that conform to the Asynchronous Programming Model pattern.</summary>
+        <returns>The created <see cref="T:System.Threading.Tasks.Task`1" /> that represents the asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `beginMethod` delegate is started on the thread that <xref:System.Threading.Tasks.TaskFactory.FromAsync%2A> is running on. This method throws any exceptions thrown by the `beginMethod`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="beginMethod" /> argument is null.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="endMethod" /> argument is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="FromAsync&lt;TArg1,TArg2,TArg3,TResult&gt;">
@@ -2478,20 +3319,33 @@
         <Parameter Name="creationOptions" Type="System.Threading.Tasks.TaskCreationOptions" />
       </Parameters>
       <Docs>
-        <typeparam name="TArg1">To be added.</typeparam>
-        <typeparam name="TArg2">To be added.</typeparam>
-        <typeparam name="TArg3">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="beginMethod">To be added.</param>
-        <param name="endMethod">To be added.</param>
-        <param name="arg1">To be added.</param>
-        <param name="arg2">To be added.</param>
-        <param name="arg3">To be added.</param>
-        <param name="state">To be added.</param>
-        <param name="creationOptions">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TArg1">The type of the second argument passed to <c>beginMethod</c> delegate.</typeparam>
+        <typeparam name="TArg2">The type of the third argument passed to <c>beginMethod</c> delegate.</typeparam>
+        <typeparam name="TArg3">The type of the first argument passed to the <c>beginMethod</c> delegate.</typeparam>
+        <typeparam name="TResult">The type of the result available through the <see cref="T:System.Threading.Tasks.Task`1" />.</typeparam>
+        <param name="beginMethod">The delegate that begins the asynchronous operation.</param>
+        <param name="endMethod">The delegate that ends the asynchronous operation.</param>
+        <param name="arg1">The first argument passed to the <c>beginMethod</c> delegate.</param>
+        <param name="arg2">The second argument passed to the <c>beginMethod</c> delegate.</param>
+        <param name="arg3">The third argument passed to the <c>beginMethod</c> delegate.</param>
+        <param name="state">An object containing data to be used by the <c>beginMethod</c> delegate.</param>
+        <param name="creationOptions">The TaskCreationOptions value that controls the behavior of the created <see cref="T:System.Threading.Tasks.Task`1" />.</param>
+        <summary>Creates a <see cref="T:System.Threading.Tasks.Task`1" /> that represents a pair of begin and end methods that conform to the Asynchronous Programming Model pattern.</summary>
+        <returns>The created <see cref="T:System.Threading.Tasks.Task`1" /> that represents the asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `beginMethod` delegate is started on the thread that <xref:System.Threading.Tasks.TaskFactory.FromAsync%2A> is running on. This method throws any exceptions thrown by the `beginMethod`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="beginMethod" /> argument is null.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="endMethod" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The exception that is thrown when the <paramref name="creationOptions" /> argument specifies an invalid TaskCreationOptions value. The exception that is thrown when the <paramref name="creationOptions" /> argument specifies an invalid TaskCreationOptions value. For more information, see the Remarks for <see cref="M:System.Threading.Tasks.TaskFactory.FromAsync(System.Func{System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},System.Object,System.Threading.Tasks.TaskCreationOptions)" /></exception>
       </Docs>
     </Member>
     <Member MemberName="Scheduler">
@@ -2517,9 +3371,18 @@
         <ReturnType>System.Threading.Tasks.TaskScheduler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the default task scheduler for this task factory.</summary>
+        <value>The default task scheduler for this task factory.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The property value is used to schedule all tasks, unless another scheduler is explicitly specified during calls to this factory's methods.  
+  
+ If this property value is `null`, the value of the <xref:System.Threading.Tasks.TaskScheduler.Current%2A> property is used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StartNew">
@@ -2548,10 +3411,28 @@
         <Parameter Name="action" Type="System.Action" />
       </Parameters>
       <Docs>
-        <param name="action">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="action">The action delegate to execute asynchronously.</param>
+        <summary>Creates and starts a task.</summary>
+        <returns>The started task.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> is functionally equivalent to creating a task by using one of its constructors, and then calling the <xref:System.Threading.Tasks.Task.Start%2A?displayProperty=fullName> method to schedule the task for execution.  
+  
+ Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%28System.Action%29?displayProperty=fullName> method as  a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%28System.Action%29> with default parameters. Note, however, that there is a difference in behavior between the two methods regarding : <xref:System.Threading.Tasks.Task.Run%28System.Action%29?displayProperty=fullName> by default does not allow child tasks started with the <xref:System.Threading.Tasks.TaskCreationOptions?displayProperty=fullName> option to attach to the current <xref:System.Threading.Tasks.Task> instance, whereas <xref:System.Threading.Tasks.TaskFactory.StartNew%28System.Action%29> does. For more information and code examples, see [Task.Run vs Task.Factory.StartNew](http://blogs.msdn.com/b/pfxteam/archive/2011/10/24/10229468.aspx) in the Parallel Programming with .NET blog.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Threading.Tasks.TaskFactory.StartNew%28System.Action%29> method to repeatedly invoke an <xref:System.Action> delegate that generates a random number, interprets it as a Unicode code point, converts it to a UTF16-encoded code unit, and displays information about the resulting character or characters.  
+  
+ [!code-csharp[System.Threading.Tasks.TaskFactory.StartNew#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.taskfactory.startnew/cs/startnew1.cs#1)]
+ [!code-vb[System.Threading.Tasks.TaskFactory.StartNew#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.taskfactory.startnew/vb/startnew1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="action" /> argument is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="StartNew">
@@ -2581,11 +3462,30 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="action">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="action">The action delegate to execute asynchronously.</param>
+        <param name="cancellationToken">The <see cref="P:System.Threading.Tasks.TaskFactory.CancellationToken" /> that will be assigned to the new task.</param>
+        <summary>Creates and starts a <see cref="T:System.Threading.Tasks.Task" />.</summary>
+        <returns>The started <see cref="T:System.Threading.Tasks.Task" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling `StartNew` is functionally equivalent to creating a Task using one of its constructors and then calling <xref:System.Threading.Tasks.Task.Start%2A> to schedule it for execution.  
+  
+ Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%28System.Action%2CSystem.Threading.CancellationToken%29?displayProperty=fullName> method as  a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%28System.Action%2CSystem.Threading.CancellationToken%29> with default parameters. Note, however, that there is a difference in behavior between the two methods regarding : <xref:System.Threading.Tasks.Task.Run%28System.Action%2CSystem.Threading.CancellationToken%29?displayProperty=fullName> by default does not allow child tasks started with the <xref:System.Threading.Tasks.TaskCreationOptions?displayProperty=fullName> option to attach to the current <xref:System.Threading.Tasks.Task> instance, whereas <xref:System.Threading.Tasks.TaskFactory.StartNew%28System.Action%2CSystem.Threading.CancellationToken%29> does. For more information and code examples, see [Task.Run vs Task.Factory.StartNew](http://blogs.msdn.com/b/pfxteam/archive/2011/10/24/10229468.aspx) in the Parallel Programming with .NET blog.  
+  
+   
+  
+## Examples  
+ The following example calls the <xref:System.Threading.Tasks.TaskFactory.StartNew%28System.Action%2CSystem.Threading.CancellationToken%29> method to create a task that iterates the files in the C:\Windows\System32 directory. The lambda expression calls the <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=fullName> method to add information about each  file to a <xref:System.Collections.Generic.List%601> object. Each detached nested task invoked by the <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=fullName> loop checks the state of the cancellation token and, if cancellation is requested, calls the <xref:System.Threading.CancellationToken.ThrowIfCancellationRequested%2A?displayProperty=fullName> method. The <xref:System.Threading.CancellationToken.ThrowIfCancellationRequested%2A?displayProperty=fullName> method throws an <xref:System.OperationCanceledException> exception that is handled in a `catch` block when the calling thread calls the <xref:System.Threading.Tasks.Task.Wait%2A?displayProperty=fullName> method.  
+  
+ [!code-csharp[System.Threading.Tasks.TaskFactory.StartNew#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.taskfactory.startnew/cs/startnew2.cs#2)]
+ [!code-vb[System.Threading.Tasks.TaskFactory.StartNew#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.taskfactory.startnew/vb/startnew2.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The provided <see cref="T:System.Threading.CancellationToken" /> has already been disposed.</exception>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="action" /> argument is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="StartNew">
@@ -2615,11 +3515,22 @@
         <Parameter Name="creationOptions" Type="System.Threading.Tasks.TaskCreationOptions" />
       </Parameters>
       <Docs>
-        <param name="action">To be added.</param>
-        <param name="creationOptions">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="action">The action delegate to execute asynchronously.</param>
+        <param name="creationOptions">A TaskCreationOptions value that controls the behavior of the created <see cref="T:System.Threading.Tasks.Task" /></param>
+        <summary>Creates and starts a <see cref="T:System.Threading.Tasks.Task" />.</summary>
+        <returns>The started <see cref="T:System.Threading.Tasks.Task" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling StartNew is functionally equivalent to creating a Task using one of its constructors and then calling <xref:System.Threading.Tasks.Task.Start%2A> to schedule it for execution.  
+  
+ Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%2A> method with an <xref:System.Action> object as  a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> with default parameters. For more information and code examples, see [Task.Run vs Task.Factory.StartNew](http://blogs.msdn.com/b/pfxteam/archive/2011/10/24/10229468.aspx) in the Parallel Programming with .NET blog.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="action" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The exception that is thrown when the <paramref name="creationOptions" /> argument specifies an invalid TaskCreationOptions value.</exception>
       </Docs>
     </Member>
     <Member MemberName="StartNew">
@@ -2649,11 +3560,31 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="action">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="action">The action delegate to execute asynchronously.</param>
+        <param name="state">An object containing data to be used by the <c>action</c> delegate.</param>
+        <summary>Creates and starts a <see cref="T:System.Threading.Tasks.Task" />.</summary>
+        <returns>The started <see cref="T:System.Threading.Tasks.Task" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> is functionally equivalent to creating a <xref:System.Threading.Tasks.Task> using one of its constructors and then calling the <xref:System.Threading.Tasks.Task.Start%2A> method to schedule it for execution.  
+  
+ Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%2A> method with an <xref:System.Action> object as  a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> with default parameters. For more information and code examples, see [Task.Run vs Task.Factory.StartNew](http://blogs.msdn.com/b/pfxteam/archive/2011/10/24/10229468.aspx) in the Parallel Programming with .NET blog.  
+  
+   
+  
+## Examples  
+ The following example defines an array of 6-letter words. Each word is then passed to an <xref:System.Action%601> delegate, which scrambles the word and displays the original word and its scrambled version.  
+  
+ [!code-csharp[System.Threading.Tasks.TaskFactory.StartNew#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.taskfactory.startnew/cs/startnew3.cs#3)]
+ [!code-vb[System.Threading.Tasks.TaskFactory.StartNew#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.taskfactory.startnew/vb/startnew3.vb#3)]  
+  
+ Note that the example initializes a single random number generator, which is protected by a lock. For the need of a lock, see "The System.Random class and thread safety" in the <xref:System.Random> class topic.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="action" /> argument is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="StartNew">
@@ -2684,12 +3615,33 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="action">To be added.</param>
-        <param name="state">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="action">The action delegate to execute asynchronously.</param>
+        <param name="state">An object containing data to be used by the <c>action</c> delegate.</param>
+        <param name="cancellationToken">The <see cref="P:System.Threading.Tasks.TaskFactory.CancellationToken" /> that will be assigned to the new <see cref="T:System.Threading.Tasks.Task" /></param>
+        <summary>Creates and starts a <see cref="T:System.Threading.Tasks.Task" />.</summary>
+        <returns>The started <see cref="T:System.Threading.Tasks.Task" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling StartNew is functionally equivalent to creating a Task using one of its constructors and then calling <xref:System.Threading.Tasks.Task.Start%2A> to schedule it for execution.  
+  
+ Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%2A> method with an <xref:System.Action> object as  a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> with default parameters. For more information and code examples, see [Task.Run vs Task.Factory.StartNew](http://blogs.msdn.com/b/pfxteam/archive/2011/10/24/10229468.aspx) in the Parallel Programming with .NET blog.  
+  
+   
+  
+## Examples  
+ The following example defines an array of 6-letter words. Each word is then passed to an <xref:System.Action%601> delegate, which scrambles the word and displays the original word and its scrambled version.  
+  
+ [!code-csharp[System.Threading.Tasks.TaskFactory.StartNew#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.taskfactory.startnew/cs/startnew4.cs#4)]
+ [!code-vb[System.Threading.Tasks.TaskFactory.StartNew#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.taskfactory.startnew/vb/startnew4.vb#4)]  
+  
+ Note that the example initializes a single random number generator, which is protected by a lock. For the need of a lock, see "The System.Random class and thread safety" in the <xref:System.Random> class topic. To handle the possibility of corruption of the random number generator, a cancellation token is passed to task. If two random numbers equal zero, the method assumes that the random number generator is corrupted and sets the cancellation token. Before sorting the `chars` array that contains the six characters in a word, the method calls the <xref:System.Threading.CancellationToken.ThrowIfCancellationRequested%2A?displayProperty=fullName> method to throw an <xref:System.OperationCanceledException> if the token has been canceled.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The provided <see cref="T:System.Threading.CancellationToken" /> has already been disposed.</exception>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="action" /> argument is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="StartNew">
@@ -2720,12 +3672,23 @@
         <Parameter Name="creationOptions" Type="System.Threading.Tasks.TaskCreationOptions" />
       </Parameters>
       <Docs>
-        <param name="action">To be added.</param>
-        <param name="state">To be added.</param>
-        <param name="creationOptions">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="action">The action delegate to execute asynchronously.</param>
+        <param name="state">An object containing data to be used by the <c>action</c> delegate.</param>
+        <param name="creationOptions">A TaskCreationOptions value that controls the behavior of the created <see cref="T:System.Threading.Tasks.Task" /></param>
+        <summary>Creates and starts a <see cref="T:System.Threading.Tasks.Task" />.</summary>
+        <returns>The started <see cref="T:System.Threading.Tasks.Task" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling StartNew is functionally equivalent to creating a Task using one of its constructors and then calling <xref:System.Threading.Tasks.Task.Start%2A> to schedule it for execution.  
+  
+ Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%2A> method with an <xref:System.Action> object as  a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> with default parameters. For more information and code examples, see [Task.Run vs Task.Factory.StartNew](http://blogs.msdn.com/b/pfxteam/archive/2011/10/24/10229468.aspx) in the Parallel Programming with .NET blog.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="action" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The exception that is thrown when the <paramref name="creationOptions" /> argument specifies an invalid TaskCreationOptions value.</exception>
       </Docs>
     </Member>
     <Member MemberName="StartNew">
@@ -2757,13 +3720,29 @@
         <Parameter Name="scheduler" Type="System.Threading.Tasks.TaskScheduler" />
       </Parameters>
       <Docs>
-        <param name="action">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <param name="creationOptions">To be added.</param>
-        <param name="scheduler">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="action">The action delegate to execute asynchronously.</param>
+        <param name="cancellationToken">The <see cref="P:System.Threading.Tasks.TaskFactory.CancellationToken" /> that will be assigned to the new <see cref="T:System.Threading.Tasks.Task" /></param>
+        <param name="creationOptions">A TaskCreationOptions value that controls the behavior of the created <see cref="T:System.Threading.Tasks.Task" /></param>
+        <param name="scheduler">The <see cref="T:System.Threading.Tasks.TaskScheduler" /> that is used to schedule the created <see cref="T:System.Threading.Tasks.Task" />.</param>
+        <summary>Creates and starts a <see cref="T:System.Threading.Tasks.Task" />.</summary>
+        <returns>The started <see cref="T:System.Threading.Tasks.Task" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling StartNew is functionally equivalent to creating a Task using one of its constructors and then calling <xref:System.Threading.Tasks.Task.Start%2A> to schedule it for execution.  
+  
+ Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%2A> method with an <xref:System.Action> object as  a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> with default parameters. For more information and code examples, see [Task.Run vs Task.Factory.StartNew](http://blogs.msdn.com/b/pfxteam/archive/2011/10/24/10229468.aspx) in the Parallel Programming with .NET blog.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The provided <see cref="T:System.Threading.CancellationToken" /> has already been disposed.</exception>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="action" /> argument is null.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="scheduler" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The exception that is thrown when the <paramref name="creationOptions" /> argument specifies an invalid TaskCreationOptions value. The exception that is thrown when the <paramref name="creationOptions" /> argument specifies an invalid TaskCreationOptions value. For more information, see the Remarks for <see cref="M:System.Threading.Tasks.TaskFactory.FromAsync(System.Func{System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},System.Object,System.Threading.Tasks.TaskCreationOptions)" /></exception>
       </Docs>
     </Member>
     <Member MemberName="StartNew">
@@ -2796,14 +3775,30 @@
         <Parameter Name="scheduler" Type="System.Threading.Tasks.TaskScheduler" />
       </Parameters>
       <Docs>
-        <param name="action">To be added.</param>
-        <param name="state">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <param name="creationOptions">To be added.</param>
-        <param name="scheduler">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="action">The action delegate to execute asynchronously.</param>
+        <param name="state">An object containing data to be used by the <c>action</c> delegate.</param>
+        <param name="cancellationToken">The <see cref="P:System.Threading.Tasks.TaskFactory.CancellationToken" /> that will be assigned to the new task.</param>
+        <param name="creationOptions">A TaskCreationOptions value that controls the behavior of the created <see cref="T:System.Threading.Tasks.Task" /></param>
+        <param name="scheduler">The <see cref="T:System.Threading.Tasks.TaskScheduler" /> that is used to schedule the created <see cref="T:System.Threading.Tasks.Task" />.</param>
+        <summary>Creates and starts a <see cref="T:System.Threading.Tasks.Task" />.</summary>
+        <returns>The started <see cref="T:System.Threading.Tasks.Task" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling StartNew is functionally equivalent to creating a Task using one of its constructors and then calling <xref:System.Threading.Tasks.Task.Start%2A> to schedule it for execution.  
+  
+ Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%2A> method with an <xref:System.Action> object as  a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> with default parameters. For more information and code examples, see [Task.Run vs Task.Factory.StartNew](http://blogs.msdn.com/b/pfxteam/archive/2011/10/24/10229468.aspx) in the Parallel Programming with .NET blog.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The provided <see cref="T:System.Threading.CancellationToken" /> has already been disposed.</exception>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="action" /> argument is null.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="scheduler" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The exception that is thrown when the <paramref name="creationOptions" /> argument specifies an invalid TaskCreationOptions value. The exception that is thrown when the <paramref name="creationOptions" /> argument specifies an invalid TaskCreationOptions value. For more information, see the Remarks for <see cref="M:System.Threading.Tasks.TaskFactory.FromAsync(System.Func{System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},System.Object,System.Threading.Tasks.TaskCreationOptions)" /></exception>
       </Docs>
     </Member>
     <Member MemberName="StartNew&lt;TResult&gt;">
@@ -2835,11 +3830,29 @@
         <Parameter Name="function" Type="System.Func&lt;TResult&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="function">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TResult">The type of the result available through the <see cref="T:System.Threading.Tasks.Task`1" />.</typeparam>
+        <param name="function">A function delegate that returns the future result to be available through the <see cref="T:System.Threading.Tasks.Task`1" />.</param>
+        <summary>Creates and starts a <see cref="T:System.Threading.Tasks.Task`1" />.</summary>
+        <returns>The started <see cref="T:System.Threading.Tasks.Task`1" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> is functionally equivalent to creating a <xref:System.Threading.Tasks.Task%601> using one of its constructors and then calling <xref:System.Threading.Tasks.Task.Start%2A> to schedule it for execution.  
+  
+ Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can call the <xref:System.Threading.Tasks.Task.Run%60%601%28System.Func%7B%60%600%7D%29?displayProperty=fullName> method as a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> with default parameters. Note, however, that there is a difference in behavior between the two methods regarding : <xref:System.Threading.Tasks.Task.Run%60%601%28System.Func%7B%60%600%7D%29?displayProperty=fullName> by default does not allow child tasks started with the <xref:System.Threading.Tasks.TaskCreationOptions?displayProperty=fullName> option to attach to the current <xref:System.Threading.Tasks.Task%601> instance, whereas <xref:System.Threading.Tasks.TaskFactory.StartNew%60%601%28System.Func%7B%60%600%7D%29> does. For more information and code examples, see the entry [Task.Run vs. Task.Factory.StartNew](http://blogs.msdn.com/b/pfxteam/archive/2011/10/24/10229468.aspx) in the Parallel Programming with .NET blog.  
+  
+   
+  
+## Examples  
+ The following example is a simple addition app that generates two random numbers and prompts the user to enter their sum. It then indicates whether the answer is correct or, if the user's response is not a valid number, prompts the user to re-enter a valid number. The <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> is used to create the <xref:System.Threading.Tasks.Task%601> objects that return the random numbers to add.  
+  
+ [!code-csharp[System.Threading.Tasks.Task.Run#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.task.run/cs/run5.cs#5)]
+ [!code-vb[System.Threading.Tasks.Task.Run#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.task.run/vb/run5.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="function" /> argument is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="StartNew&lt;TResult&gt;">
@@ -2872,12 +3885,22 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="function">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TResult">The type of the result available through the <see cref="T:System.Threading.Tasks.Task`1" />.</typeparam>
+        <param name="function">A function delegate that returns the future result to be available through the <see cref="T:System.Threading.Tasks.Task`1" />.</param>
+        <param name="state">An object containing data to be used by the <c>function</c> delegate.</param>
+        <summary>Creates and starts a <see cref="T:System.Threading.Tasks.Task`1" />.</summary>
+        <returns>The started <see cref="T:System.Threading.Tasks.Task`1" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling StartNew is functionally equivalent to creating a <xref:System.Threading.Tasks.Task%601> using one of its constructors and then calling <xref:System.Threading.Tasks.Task.Start%2A> to schedule it for execution.  
+  
+ Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%2A> method with an <xref:System.Action> object as a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> with default parameters. For more information and code examples, see the entry [Task.Run vs. Task.Factory.StartNew](http://blogs.msdn.com/b/pfxteam/archive/2011/10/24/10229468.aspx) in the Parallel Programming with .NET blog.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="function" /> argument is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="StartNew&lt;TResult&gt;">
@@ -2910,12 +3933,31 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="function">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TResult">The type of the result available through the <see cref="T:System.Threading.Tasks.Task`1" />.</typeparam>
+        <param name="function">A function delegate that returns the future result to be available through the <see cref="T:System.Threading.Tasks.Task`1" />.</param>
+        <param name="cancellationToken">The <see cref="P:System.Threading.Tasks.TaskFactory.CancellationToken" /> that will be assigned to the new <see cref="T:System.Threading.Tasks.Task" /></param>
+        <summary>Creates and starts a <see cref="T:System.Threading.Tasks.Task`1" />.</summary>
+        <returns>The started <see cref="T:System.Threading.Tasks.Task`1" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> is functionally equivalent to creating a <xref:System.Threading.Tasks.Task%601> using one of its constructors and then calling <xref:System.Threading.Tasks.Task.Start%2A> to schedule it for execution.  
+  
+ Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%60%601%28System.Func%7B%60%600%7D%2CSystem.Threading.CancellationToken%29?displayProperty=fullName> method as a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%60%601%28System.Func%7B%60%600%7D%2CSystem.Threading.CancellationToken%29> with default parameters. Note, however, that there is a difference in behavior between the two methods regarding : <xref:System.Threading.Tasks.Task.Run%60%601%28System.Func%7B%60%600%7D%2CSystem.Threading.CancellationToken%29?displayProperty=fullName> by default does not allow child tasks started with the <xref:System.Threading.Tasks.TaskCreationOptions?displayProperty=fullName> option to attach to the current <xref:System.Threading.Tasks.Task%601> instance, whereas <xref:System.Threading.Tasks.TaskFactory.StartNew%60%601%28System.Func%7B%60%600%7D%2CSystem.Threading.CancellationToken%29> does. For more information and code examples, see the entry [Task.Run vs. Task.Factory.StartNew](http://blogs.msdn.com/b/pfxteam/archive/2011/10/24/10229468.aspx) in the Parallel Programming with .NET blog.  
+  
+   
+  
+## Examples  
+ The following example uses two tasks to compute the Fibonacci sequence ending in F100 = F100-1 + F100-2 with seed values F1= 1, F2 = 1 and F1 = 0, F2= 1. Approximately half of the time, a cancellation token is set as the operations execute. The output from the example shows the result if the two tasks complete successfully and if the token is cancelled.  
+  
+ [!code-csharp[System.Threading.Tasks.Task.Run#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.task.run/cs/Run9.cs#9)]
+ [!code-vb[System.Threading.Tasks.Task.Run#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.task.run/vb/Run9.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The provided <see cref="T:System.Threading.CancellationToken" /> has already been disposed.</exception>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="function" /> argument is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="StartNew&lt;TResult&gt;">
@@ -2948,12 +3990,23 @@
         <Parameter Name="creationOptions" Type="System.Threading.Tasks.TaskCreationOptions" />
       </Parameters>
       <Docs>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="function">To be added.</param>
-        <param name="creationOptions">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TResult">The type of the result available through the <see cref="T:System.Threading.Tasks.Task`1" />.</typeparam>
+        <param name="function">A function delegate that returns the future result to be available through the <see cref="T:System.Threading.Tasks.Task`1" />.</param>
+        <param name="creationOptions">A TaskCreationOptions value that controls the behavior of the created <see cref="T:System.Threading.Tasks.Task`1" />.</param>
+        <summary>Creates and starts a <see cref="T:System.Threading.Tasks.Task`1" />.</summary>
+        <returns>The started <see cref="T:System.Threading.Tasks.Task`1" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling StartNew is functionally equivalent to creating a <xref:System.Threading.Tasks.Task%601> using one of its constructors and then calling <xref:System.Threading.Tasks.Task.Start%2A> to schedule it for execution.  
+  
+ Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%2A> method with an <xref:System.Action> object as a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> with default parameters. For more information and code examples, see the entry [Task.Run vs. Task.Factory.StartNew](http://blogs.msdn.com/b/pfxteam/archive/2011/10/24/10229468.aspx) in the Parallel Programming with .NET blog.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="function" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The exception that is thrown when the <paramref name="creationOptions" /> argument specifies an invalid TaskCreationOptions value. The exception that is thrown when the <paramref name="creationOptions" /> argument specifies an invalid TaskCreationOptions value. For more information, see the Remarks for <see cref="M:System.Threading.Tasks.TaskFactory.FromAsync(System.Func{System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},System.Object,System.Threading.Tasks.TaskCreationOptions)" /></exception>
       </Docs>
     </Member>
     <Member MemberName="StartNew&lt;TResult&gt;">
@@ -2987,13 +4040,24 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="function">To be added.</param>
-        <param name="state">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TResult">The type of the result available through the <see cref="T:System.Threading.Tasks.Task`1" />.</typeparam>
+        <param name="function">A function delegate that returns the future result to be available through the <see cref="T:System.Threading.Tasks.Task`1" />.</param>
+        <param name="state">An object containing data to be used by the <c>function</c> delegate.</param>
+        <param name="cancellationToken">The <see cref="P:System.Threading.Tasks.TaskFactory.CancellationToken" /> that will be assigned to the new <see cref="T:System.Threading.Tasks.Task" /></param>
+        <summary>Creates and starts a <see cref="T:System.Threading.Tasks.Task`1" />.</summary>
+        <returns>The started <see cref="T:System.Threading.Tasks.Task`1" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling StartNew is functionally equivalent to creating a <xref:System.Threading.Tasks.Task%601> using one of its constructors and then calling <xref:System.Threading.Tasks.Task.Start%2A> to schedule it for execution.  
+  
+ Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%2A> method with an <xref:System.Action> object as a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> with default parameters. For more information and code examples, see the entry [Task.Run vs. Task.Factory.StartNew](http://blogs.msdn.com/b/pfxteam/archive/2011/10/24/10229468.aspx) in the Parallel Programming with .NET blog.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The provided <see cref="T:System.Threading.CancellationToken" /> has already been disposed.</exception>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="function" /> argument is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="StartNew&lt;TResult&gt;">
@@ -3027,13 +4091,24 @@
         <Parameter Name="creationOptions" Type="System.Threading.Tasks.TaskCreationOptions" />
       </Parameters>
       <Docs>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="function">To be added.</param>
-        <param name="state">To be added.</param>
-        <param name="creationOptions">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TResult">The type of the result available through the <see cref="T:System.Threading.Tasks.Task`1" />.</typeparam>
+        <param name="function">A function delegate that returns the future result to be available through the <see cref="T:System.Threading.Tasks.Task`1" />.</param>
+        <param name="state">An object containing data to be used by the <c>function</c> delegate.</param>
+        <param name="creationOptions">A TaskCreationOptions value that controls the behavior of the created <see cref="T:System.Threading.Tasks.Task`1" />.</param>
+        <summary>Creates and starts a <see cref="T:System.Threading.Tasks.Task`1" />.</summary>
+        <returns>The started <see cref="T:System.Threading.Tasks.Task`1" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling StartNew is functionally equivalent to creating a <xref:System.Threading.Tasks.Task%601> using one of its constructors and then calling <xref:System.Threading.Tasks.Task.Start%2A> to schedule it for execution.  
+  
+ Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%2A> method with an <xref:System.Action> object as a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> with default parameters. For more information and code examples, see the entry [Task.Run vs. Task.Factory.StartNew](http://blogs.msdn.com/b/pfxteam/archive/2011/10/24/10229468.aspx) in the Parallel Programming with .NET blog.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="function" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The exception that is thrown when the <paramref name="creationOptions" /> argument specifies an invalid TaskCreationOptions value. The exception that is thrown when the <paramref name="creationOptions" /> argument specifies an invalid TaskCreationOptions value. For more information, see the Remarks for <see cref="M:System.Threading.Tasks.TaskFactory.FromAsync(System.Func{System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},System.Object,System.Threading.Tasks.TaskCreationOptions)" /></exception>
       </Docs>
     </Member>
     <Member MemberName="StartNew&lt;TResult&gt;">
@@ -3068,14 +4143,30 @@
         <Parameter Name="scheduler" Type="System.Threading.Tasks.TaskScheduler" />
       </Parameters>
       <Docs>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="function">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <param name="creationOptions">To be added.</param>
-        <param name="scheduler">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TResult">The type of the result available through the <see cref="T:System.Threading.Tasks.Task`1" />.</typeparam>
+        <param name="function">A function delegate that returns the future result to be available through the <see cref="T:System.Threading.Tasks.Task`1" />.</param>
+        <param name="cancellationToken">The <see cref="P:System.Threading.Tasks.TaskFactory.CancellationToken" /> that will be assigned to the new task.</param>
+        <param name="creationOptions">A TaskCreationOptions value that controls the behavior of the created <see cref="T:System.Threading.Tasks.Task`1" />.</param>
+        <param name="scheduler">The <see cref="T:System.Threading.Tasks.TaskScheduler" /> that is used to schedule the created <see cref="T:System.Threading.Tasks.Task`1" />.</param>
+        <summary>Creates and starts a <see cref="T:System.Threading.Tasks.Task`1" />.</summary>
+        <returns>The started <see cref="T:System.Threading.Tasks.Task`1" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling StartNew is functionally equivalent to creating a <xref:System.Threading.Tasks.Task%601> using one of its constructors and then calling <xref:System.Threading.Tasks.Task.Start%2A> to schedule it for execution.  
+  
+ Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%2A> method with an <xref:System.Action> object as a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> with default parameters. For more information and code examples, see the entry [Task.Run vs. Task.Factory.StartNew](http://blogs.msdn.com/b/pfxteam/archive/2011/10/24/10229468.aspx) in the Parallel Programming with .NET blog.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The provided <see cref="T:System.Threading.CancellationToken" /> has already been disposed.</exception>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="function" /> argument is null.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="scheduler" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The exception that is thrown when the <paramref name="creationOptions" /> argument specifies an invalid TaskCreationOptions value. The exception that is thrown when the <paramref name="creationOptions" /> argument specifies an invalid TaskCreationOptions value. For more information, see the Remarks for <see cref="M:System.Threading.Tasks.TaskFactory.FromAsync(System.Func{System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},System.Object,System.Threading.Tasks.TaskCreationOptions)" /></exception>
       </Docs>
     </Member>
     <Member MemberName="StartNew&lt;TResult&gt;">
@@ -3111,16 +4202,56 @@
         <Parameter Name="scheduler" Type="System.Threading.Tasks.TaskScheduler" />
       </Parameters>
       <Docs>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="function">To be added.</param>
-        <param name="state">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <param name="creationOptions">To be added.</param>
-        <param name="scheduler">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TResult">The type of the result available through the <see cref="T:System.Threading.Tasks.Task`1" />.</typeparam>
+        <param name="function">A function delegate that returns the future result to be available through the <see cref="T:System.Threading.Tasks.Task`1" />.</param>
+        <param name="state">An object containing data to be used by the <c>function</c> delegate.</param>
+        <param name="cancellationToken">The <see cref="P:System.Threading.Tasks.TaskFactory.CancellationToken" /> that will be assigned to the new task.</param>
+        <param name="creationOptions">A TaskCreationOptions value that controls the behavior of the created <see cref="T:System.Threading.Tasks.Task`1" />.</param>
+        <param name="scheduler">The <see cref="T:System.Threading.Tasks.TaskScheduler" /> that is used to schedule the created <see cref="T:System.Threading.Tasks.Task`1" />.</param>
+        <summary>Creates and starts a <see cref="T:System.Threading.Tasks.Task`1" />.</summary>
+        <returns>The started <see cref="T:System.Threading.Tasks.Task`1" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling StartNew is functionally equivalent to creating a <xref:System.Threading.Tasks.Task%601> using one of its constructors and then calling <xref:System.Threading.Tasks.Task.Start%2A> to schedule it for execution.  
+  
+ Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%2A> method with an <xref:System.Action> object as a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> with default parameters. For more information and code examples, see the entry [Task.Run vs. Task.Factory.StartNew](http://blogs.msdn.com/b/pfxteam/archive/2011/10/24/10229468.aspx) in the Parallel Programming with .NET blog.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The provided <see cref="T:System.Threading.CancellationToken" /> has already been disposed.</exception>
+        <exception cref="T:System.ArgumentNullException">The exception that is thrown when the <paramref name="function" /> argument is null.  
+  
+ -or-  
+  
+ The exception that is thrown when the <paramref name="scheduler" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The exception that is thrown when the <paramref name="creationOptions" /> argument specifies an invalid TaskCreationOptions value. The exception that is thrown when the <paramref name="creationOptions" /> argument specifies an invalid TaskCreationOptions value. For more information, see the Remarks for <see cref="M:System.Threading.Tasks.TaskFactory.FromAsync(System.Func{System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},System.Object,System.Threading.Tasks.TaskCreationOptions)" /></exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="StartNew">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates and starts a <see cref="T:System.Threading.Tasks.Task" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], the <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=fullName> method is the recommended way to launch a compute-bound task. Use the <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> method only when you require fine-grained control for a long-running, compute-bound task. This includes scenarios in which you want to control the following:  
+  
+-   Task creation options. Tasks created by the <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=fullName> method by default are created with the <xref:System.Threading.Tasks.TaskCreationOptions?displayProperty=fullName> option. To override this behavior, or to provide other <xref:System.Threading.Tasks.TaskCreationOptions> options, call a <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> overload.  
+  
+-   Parameter passing. The overloads of the <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=fullName> method do not allow you to pass a parameter to the task delegate. Overloads of the <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> method do.  
+  
+-   The task scheduler. The overloads of the <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=fullName> method use the default task scheduler. To control the task scheduler, call a <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> overload with a `scheduler` parameter. For more information, see .  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

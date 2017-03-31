@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates whether to peek the current message in a queue, or the next message.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Messaging.PeekAction> enumeration with <xref:System.Messaging.MessageQueue.BeginPeek%28System.TimeSpan%2CSystem.Messaging.Cursor%2CSystem.Messaging.PeekAction%2CSystem.Object%2CSystem.AsyncCallback%29> and <xref:System.Messaging.MessageQueue.Peek%28System.TimeSpan%2CSystem.Messaging.Cursor%2CSystem.Messaging.PeekAction%29> to indicate whether you want to peek at the current message in the queue, or the next message.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Current">
@@ -27,7 +34,7 @@
         <ReturnType>System.Messaging.PeekAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Peek at the current message in the queue.</summary>
       </Docs>
     </Member>
     <Member MemberName="Next">
@@ -43,7 +50,7 @@
         <ReturnType>System.Messaging.PeekAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Peek at the next message in the queue.</summary>
       </Docs>
     </Member>
   </Members>

@@ -23,9 +23,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <typeparam name="TContextItemType">To be added.</typeparam>
-    <param name="item">To be added.</param>
-    <summary>To be added.</summary>
+    <typeparam name="TContextItemType">The type of the context item.</typeparam>
+    <param name="item">The context item that changed.</param>
+    <summary>Defines a callback method that will be invoked when a context item changes.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

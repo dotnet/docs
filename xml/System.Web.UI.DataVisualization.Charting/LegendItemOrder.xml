@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the order in which items are added to the legend.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the chart determines the order in which items are added to the legend. All chart types except stacked area, stacked bar and stacked column charts will always place items in the legend in the same order as how items are ordered in the <xref:System.Web.UI.DataVisualization.Charting.SeriesCollection>. By default, stacked charts will always show items in the reversed order as how they are ordered in the series collection.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Auto">
@@ -27,7 +34,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.LegendItemOrder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The chart automatically determines the order in which items are added to the legend.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReversedSeriesOrder">
@@ -43,7 +50,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.LegendItemOrder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Items are added to the legend in the reverse order of items added to the chart series.</summary>
       </Docs>
     </Member>
     <Member MemberName="SameAsSeriesOrder">
@@ -59,7 +66,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.LegendItemOrder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Items are added to the legend in the same order as items added to the chart series.</summary>
       </Docs>
     </Member>
   </Members>

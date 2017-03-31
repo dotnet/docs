@@ -1,74 +1,111 @@
 ---
 uid: System.Runtime.InteropServices.SafeHandle
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.SafeHandle.DangerousRelease
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.SafeHandle.SetHandleAsInvalid
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.SafeHandle.IsInvalid
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.SafeHandle.DangerousGetHandle
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.SafeHandle.#ctor(System.IntPtr,System.Boolean)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.SafeHandle.DangerousAddRef(System.Boolean@)
-internalonly: False
----
-
----
-uid: System.Runtime.InteropServices.SafeHandle.ReleaseHandle
-internalonly: False
----
-
----
-uid: System.Runtime.InteropServices.SafeHandle.handle
-internalonly: False
----
-
----
-uid: System.Runtime.InteropServices.SafeHandle.Close
-internalonly: False
----
-
----
-uid: System.Runtime.InteropServices.SafeHandle.IsClosed
-internalonly: False
----
-
----
-uid: System.Runtime.InteropServices.SafeHandle.Dispose(System.Boolean)
-internalonly: False
----
-
----
-uid: System.Runtime.InteropServices.SafeHandle.SetHandle(System.IntPtr)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.SafeHandle.Dispose
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.InteropServices.SafeHandle.ReleaseHandle
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.InteropServices.SafeHandle.handle
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.InteropServices.SafeHandle.Close
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.InteropServices.SafeHandle.IsClosed
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.InteropServices.SafeHandle.Dispose(System.Boolean)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.InteropServices.SafeHandle.SetHandle(System.IntPtr)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.InteropServices.SafeHandle.Dispose
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.SafeHandle.Finalize
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

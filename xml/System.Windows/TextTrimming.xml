@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Describes how text is trimmed when it overflows the edge of its containing box.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>System.Windows.TextTrimming</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Text is trimmed at a character boundary. An ellipsis (...) is drawn in place of remaining text.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -48,7 +48,7 @@
         <ReturnType>System.Windows.TextTrimming</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Text is not trimmed.</summary>
       </Docs>
     </Member>
     <Member MemberName="WordEllipsis">
@@ -64,7 +64,7 @@
         <ReturnType>System.Windows.TextTrimming</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Text is trimmed at a word boundary. An ellipsis (...) is drawn in place of remaining text.</summary>
       </Docs>
     </Member>
   </Members>

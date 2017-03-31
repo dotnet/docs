@@ -11,8 +11,27 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a built-in collection list for storing listeners for a <see cref="T:System.Windows.WeakEventManager" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Although this list contains members that resemble those defined by <xref:System.Collections.IList> and <xref:System.Collections.ICollection>, and provide similar functionality, this class implements neither of those interfaces.  
+  
+ Most <xref:System.Windows.WeakEventManager> derived classes do not need to use any members on <xref:System.Windows.WeakEventManager.ListenerList>. The <xref:System.Windows.WeakEventManager> methods <xref:System.Windows.WeakEventManager.ProtectedAddListener%2A> and <xref:System.Windows.WeakEventManager.ProtectedRemoveListener%2A>use a default <xref:System.Windows.WeakEventManager.ListenerList> internally, one list for each `source`.  
+  
+ You only need to call <xref:System.Windows.WeakEventManager.ListenerList> methods if your <xref:System.Windows.WeakEventManager> class maintains multiple lists for the same event-source combination, with each list created to account for different conditions of the event. In this case, you would not use <xref:System.Windows.WeakEventManager.ProtectedAddListener%2A> and <xref:System.Windows.WeakEventManager.ProtectedRemoveListener%2A> and would instead implement `AddListener` or `RemoveListener` to act upon listeners in just one of the internal listener lists, typically based on a parameter that you add to `AddListener` or `RemoveListener`. Also, the handler implementation that receives the raw event cannot simply call <xref:System.Windows.WeakEventManager.DeliverEvent%2A>; you must instead keep track of the specifics of the event and deliver the event only to the appropriate list using <xref:System.Windows.WeakEventManager.DeliverEventToList%2A>.  
+  
+ The various methods of <xref:System.Windows.WeakEventManager.ListenerList> are provided so that you can work with your internal lists and so that you can prevent modification of the list during actual delivery of the event.  
+  
+ An example class that used this implementation technique is <xref:System.ComponentModel.PropertyChangedEventManager>, which maintains separate listener lists for `PropertyChanged` based on which property changed.  
+  
+<a name="xamlTextUsage_ListenerList"></a>   
+## XAML Text Usage  
+ You cannot use this class in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +45,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.WeakEventManager.ListenerList" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +62,8 @@
         <Parameter Name="capacity" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="capacity">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="capacity">The number of items that should be allocated in the initial list.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.WeakEventManager.ListenerList" /> class with the specified initial capacity.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,9 +83,18 @@
         <Parameter Name="listener" Type="System.Windows.IWeakEventListener" />
       </Parameters>
       <Docs>
-        <param name="listener">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="listener">The listener element to add to the <see cref="T:System.Windows.WeakEventManager.ListenerList" />.</param>
+        <summary>Adds a <see cref="T:System.Windows.IWeakEventListener" /> object to the <see cref="T:System.Windows.WeakEventManager.ListenerList" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The object provided as listener should be a <xref:System.Windows.DependencyObject> that implements the <xref:System.Windows.IWeakEventListener> interface and therefore has a working <xref:System.Windows.IWeakEventListener.ReceiveWeakEvent%2A> implementation.  
+  
+ You should always call <xref:System.Windows.WeakEventManager.ListenerList.PrepareForWriting%2A> before changing the list contents. Otherwise, the list may be in process of delivering events and therefore the original is locked. Calling <xref:System.Windows.WeakEventManager.ListenerList.PrepareForWriting%2A> changes the input `list` to be a clone so that your <xref:System.Windows.WeakEventManager.ListenerList.Add%2A> call can still work on the clone. If <xref:System.Windows.WeakEventManager.ListenerList.PrepareForWriting%2A> returns `true`, you might need to update any private references to the list that you maintain in other areas of your code.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddHandler">
@@ -85,8 +113,8 @@
         <Parameter Name="handler" Type="System.Delegate" />
       </Parameters>
       <Docs>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="handler">The event handler to add to the <see cref="T:System.Windows.WeakEventManager.ListenerList" />.</param>
+        <summary>Adds an event handler to the <see cref="T:System.Windows.WeakEventManager.ListenerList" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,9 +132,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Declares the list to be in use. This prevents direct changes to the list during iterations of the list items.</summary>
+        <returns>
+          <see langword="true" /> if the list was already declared to be in use; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.WeakEventManager> implementation should call <xref:System.Windows.WeakEventManager.ListenerList.BeginUse%2A> before iterating through the list to deliver an event to the listeners, and should call <xref:System.Windows.WeakEventManager.ListenerList.EndUse%2A> when it is done. This prevents another caller from modifying the list while the iteration for purposes of event delivery is in progress. If the list is modified during this time, then the list is cloned. If the list is cloned, then <xref:System.Windows.WeakEventManager.ListenerList.PrepareForWriting%2A> returns `true`, which means that you have missed a recent listener change in the last delivery.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -123,8 +159,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.WeakEventManager.ListenerList" />.</summary>
+        <returns>A modifiable clone of the current object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,8 +180,8 @@
         <Parameter Name="newList" Type="System.Windows.WeakEventManager+ListenerList" />
       </Parameters>
       <Docs>
-        <param name="newList">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="newList">The object to copy to.</param>
+        <summary>Copies the current <see cref="T:System.Windows.WeakEventManager.ListenerList" /> to the specified <see cref="T:System.Windows.WeakEventManager.ListenerList" /></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,8 +198,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of items contained in the <see cref="T:System.Windows.WeakEventManager.ListenerList" />.</summary>
+        <value>The number of items contained in the <see cref="T:System.Windows.WeakEventManager.ListenerList" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -185,11 +221,12 @@
         <Parameter Name="managerType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="sender">To be added.</param>
-        <param name="args">To be added.</param>
-        <param name="managerType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="sender">The object that raised the event.</param>
+        <param name="args">An object that contains the event data.</param>
+        <param name="managerType">The type of the <see cref="T:System.Windows.WeakEventManager" /> that calls this method.</param>
+        <summary>Delivers the event being managed to each listener in the <see cref="T:System.Windows.WeakEventManager.ListenerList" />.</summary>
+        <returns>
+          <see langword="true" /> if any of the listeners in the <see cref="T:System.Windows.WeakEventManager.ListenerList" /> refer to an object that has been garbage collected; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -206,8 +243,8 @@
         <ReturnType>System.Windows.WeakEventManager+ListenerList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that represents an empty list for purposes of comparisons.</summary>
+        <value>The empty list representation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -225,7 +262,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Unlocks the locked state initiated by <see cref="M:System.Windows.WeakEventManager.ListenerList.BeginUse" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -242,9 +279,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that declares whether this <see cref="T:System.Windows.WeakEventManager.ListenerList" /> is empty.</summary>
+        <value>
+          <see langword="true" /> if the list is empty; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is equivalent to checking whether the <xref:System.Windows.WeakEventManager.ListenerList.Count%2A> is zero, and does not check whether any of the references in the list are now stale. If you want to assure that all references are still valid, call <xref:System.Windows.WeakEventManager.ListenerList.Purge%2A> just prior to checking the empty status of the list.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -263,9 +308,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The zero-based index of the listener in the list.</param>
+        <summary>Gets or sets a specific listener item in the <see cref="T:System.Windows.WeakEventManager.ListenerList" /> .</summary>
+        <value>The item at that index, or a null reference if no item was at that index.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -285,10 +330,22 @@
         <Parameter Name="list" Type="System.Windows.WeakEventManager+ListenerList&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="list">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="list">The list to check for use state and potentially copy.</param>
+        <summary>Checks to see whether the provided list is in use, and if so, sets the list reference parameter to a copy of that list rather than the original.</summary>
+        <returns>
+          <see langword="true" /> if the provided list was in use at the time of call and therefore the <paramref name="list" /> parameter reference was reset to be a copy. <see langword="false" /> if the provided list was not in use, in which case the <paramref name="list" /> parameter reference remains unaltered.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the given list is in use (which means an event is currently being delivered), calling this method will replace the input `list` with a clone.  The existing users will finish delivering the event to the original list, without interference from changes to the new list.  
+  
+ If the method returns `true`, callers may want to insert the new list in their own data structures, since this indicates the possibility that the provided list is no longer current.  
+  
+ This method calls <xref:System.Windows.WeakEventManager.ListenerList.BeginUse%2A> internally and then immediately calls <xref:System.Windows.WeakEventManager.ListenerList.EndUse%2A>. Therefore calling <xref:System.Windows.WeakEventManager.ListenerList.PrepareForWriting%2A> does not itself introduce a lock on the list. Even the clone copy is done as a secondary operation after calling <xref:System.Windows.WeakEventManager.ListenerList.EndUse%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Purge">
@@ -305,8 +362,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Removes all entries from the list where the underlying reference target is a null reference.</summary>
+        <returns>Returns <see langword="true" /> if any entries were purged; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -326,9 +383,16 @@
         <Parameter Name="listener" Type="System.Windows.IWeakEventListener" />
       </Parameters>
       <Docs>
-        <param name="listener">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="listener">The item to remove.</param>
+        <summary>Removes the first occurrence of a listener item from the <see cref="T:System.Windows.WeakEventManager.ListenerList" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You should always call <xref:System.Windows.WeakEventManager.ListenerList.PrepareForWriting%2A> before changing the list contents. Otherwise, the list may be in process of delivering events and therefore the original is locked. Calling <xref:System.Windows.WeakEventManager.ListenerList.PrepareForWriting%2A> changes the input `list` to be a clone so that your <xref:System.Windows.WeakEventManager.ListenerList.Remove%2A> call can still work on the clone. If <xref:System.Windows.WeakEventManager.ListenerList.PrepareForWriting%2A> returns `true`, you might need to update any private references to the list that you maintain in other areas of your code.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveHandler">
@@ -347,8 +411,8 @@
         <Parameter Name="handler" Type="System.Delegate" />
       </Parameters>
       <Docs>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="handler">The event handler to remove from the <see cref="T:System.Windows.WeakEventManager.ListenerList" />.</param>
+        <summary>Removes an event handler from the <see cref="T:System.Windows.WeakEventManager.ListenerList" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

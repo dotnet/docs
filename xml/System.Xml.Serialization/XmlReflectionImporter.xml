@@ -16,8 +16,31 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Generates mappings to XML schema element declarations, including literal XML Schema Definition (XSD) message parts in a Web Services Description Language (WSDL) document, for .NET Framework types or Web service method information.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.Serialization.XmlReflectionImporter> class is not used directly. Instead, it is used as follows:  
+  
+-   By the <xref:System.Web.Services.Description.ServiceDescriptionReflector> class while it creates <xref:System.Web.Services.Description.ServiceDescription> objects from classes that are identified as Web services.  
+  
+-   By a Web service or client, including during initialization.  
+  
+-   To initialize an <xref:System.Xml.Serialization.XmlSerializer> object.  
+  
+-   By the XML Schema Definition tool (Xsd.exe) while the tool generates XML schemas from types in a run-time assembly file.  
+  
+-   By the Web Services Description Language tool (Wsdl.exe) while the tool generates client proxy classes or abstract server classes from a WSDL document.  
+  
+ The <xref:System.Xml.Serialization.XmlReflectionImporter> class is used for Web services when a service or client specifies:  
+  
+-   Literal use, which indicates that the contents of SOAP message parameters and return values (or request and response documents) are literally specified with XML schema definitions.  
+  
+-   Non-SOAP implementations of Web services using the HTTP-GET and HTTP-POST operations.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,8 +59,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlReflectionImporter" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You do not need to create an instance of an <xref:System.Xml.Serialization.XmlReflectionImporter> object directly.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -58,9 +88,16 @@
         <Parameter Name="defaultNamespace" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="defaultNamespace">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="defaultNamespace">The default XML namespace to use for imported type mappings.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlReflectionImporter" /> class using the specified default XML namespace.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ It is not necessary to create an instance of the <xref:System.Xml.Serialization.XmlReflectionImporter> class directly.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -81,9 +118,16 @@
         <Parameter Name="attributeOverrides" Type="System.Xml.Serialization.XmlAttributeOverrides" />
       </Parameters>
       <Docs>
-        <param name="attributeOverrides">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="attributeOverrides">An object that overrides how the <see cref="T:System.Xml.Serialization.XmlSerializer" /> class serializes mapped types.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlReflectionImporter" /> class using the specified XML serialization overrides.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ It is not necessary to create an instance of the <xref:System.Xml.Serialization.XmlReflectionImporter> class directly.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -105,10 +149,17 @@
         <Parameter Name="defaultNamespace" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="attributeOverrides">To be added.</param>
-        <param name="defaultNamespace">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="attributeOverrides">An object that overrides how the <see cref="T:System.Xml.Serialization.XmlSerializer" /> class serializes mapped types.</param>
+        <param name="defaultNamespace">The default XML namespace to use for imported type mappings.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlReflectionImporter" /> class using the specified XML serialization overrides and default XML namespace.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ It is not necessary to create an instance of the <xref:System.Xml.Serialization.XmlReflectionImporter> class directly.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ImportMembersMapping">
@@ -135,13 +186,31 @@
         <Parameter Name="hasWrapperElement" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="elementName">To be added.</param>
-        <param name="ns">To be added.</param>
-        <param name="members">To be added.</param>
-        <param name="hasWrapperElement">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="elementName">An XML element name produced from the Web service method.</param>
+        <param name="ns">An XML element namespace produced from the Web service method.</param>
+        <param name="members">An array of <see cref="T:System.Xml.Serialization.XmlReflectionMember" /> objects that contain .NET Framework code entities that belong to a Web service method.</param>
+        <param name="hasWrapperElement">
+          <see langword="true" /> if elements that correspond to Web Services Description Language (WSDL) message parts should be enclosed in an extra wrapper element in a SOAP message; otherwise, <see langword="false" />.</param>
+        <summary>Generates internal type mappings for information from a Web service method.</summary>
+        <returns>An <see cref="T:System.Xml.Serialization.XmlMembersMapping" /> with mappings to the element parts of a WSDL message definition.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The [ImportMembersMapping Method (String, String, XmlReflectionMember\<xref:System.Xml.Serialization.XmlReflectionImporter.ImportMembersMapping%2A> method is called while initializing a Web service or client, or reflecting a Web service. It is not necessary to call it directly.  
+  
+ The <xref:System.Xml.Serialization.XmlReflectionMember> array parameter can consist of any one of the following:  
+  
+-   Web service method input parameters.  
+  
+-   Web service method output parameters, plus the return type, if not void, at index 0.  
+  
+-   SOAP input headers.  
+  
+-   SOAP output headers.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ImportMembersMapping">
@@ -169,13 +238,15 @@
         <Parameter Name="rpc" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="elementName">To be added.</param>
-        <param name="ns">To be added.</param>
-        <param name="members">To be added.</param>
-        <param name="hasWrapperElement">To be added.</param>
-        <param name="rpc">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="elementName">An XML element name produced from the Web service method.</param>
+        <param name="ns">An XML element namespace produced from the Web service method.</param>
+        <param name="members">An array of <see cref="T:System.Xml.Serialization.XmlReflectionMember" /> objects that contain .NET Framework code entities that belong to a Web service method.</param>
+        <param name="hasWrapperElement">
+          <see langword="true" /> if elements that correspond to Web Services Description Language (WSDL) message parts should be enclosed in an extra wrapper element in a SOAP message; otherwise, <see langword="false" />.</param>
+        <param name="rpc">
+          <see langword="true" /> if the method is a remote procedure call; otherwise, <see langword="false" />.</param>
+        <summary>Returns internal type mappings using information from a Web service method, and allows you to specify an XML element name, XML namespace, and other options.</summary>
+        <returns>An <see cref="T:System.Xml.Serialization.XmlMembersMapping" /> that contains the mappings.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -205,14 +276,17 @@
         <Parameter Name="openModel" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="elementName">To be added.</param>
-        <param name="ns">To be added.</param>
-        <param name="members">To be added.</param>
-        <param name="hasWrapperElement">To be added.</param>
-        <param name="rpc">To be added.</param>
-        <param name="openModel">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="elementName">An XML element name produced from the Web service method.</param>
+        <param name="ns">An XML element namespace produced from the Web service method.</param>
+        <param name="members">An array of <see cref="T:System.Xml.Serialization.XmlReflectionMember" /> objects that contain .NET Framework code entities that belong to a Web service method.</param>
+        <param name="hasWrapperElement">
+          <see langword="true" /> if elements that correspond to Web Services Description Language (WSDL) message parts should be enclosed in an extra wrapper element in a SOAP message; otherwise, <see langword="false" />.</param>
+        <param name="rpc">
+          <see langword="true" /> if the method is a remote procedure call; otherwise, <see langword="false" />.</param>
+        <param name="openModel">
+          <see langword="true" /> to specify that the generated schema type will be marked with the<see langword=" &lt;xs:anyAttribute&gt;" /> element; otherwise, <see langword="false" />.</param>
+        <summary>Returns internal type mappings using information from a Web service method, and allows you to specify an XML element name, XML namespace, and other options.</summary>
+        <returns>An <see cref="T:System.Xml.Serialization.XmlMembersMapping" /> that contains the mappings.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -243,15 +317,18 @@
         <Parameter Name="access" Type="System.Xml.Serialization.XmlMappingAccess" />
       </Parameters>
       <Docs>
-        <param name="elementName">To be added.</param>
-        <param name="ns">To be added.</param>
-        <param name="members">To be added.</param>
-        <param name="hasWrapperElement">To be added.</param>
-        <param name="rpc">To be added.</param>
-        <param name="openModel">To be added.</param>
-        <param name="access">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="elementName">An XML element name produced from the Web service method.</param>
+        <param name="ns">An XML element namespace produced from the Web service method.</param>
+        <param name="members">An array of <see cref="T:System.Xml.Serialization.XmlReflectionMember" /> objects that contain .NET Framework code entities that belong to a Web service method.</param>
+        <param name="hasWrapperElement">
+          <see langword="true" /> if elements that correspond to Web Services Description Language (WSDL) message parts should be enclosed in an extra wrapper element in a SOAP message; otherwise, <see langword="false" />.</param>
+        <param name="rpc">
+          <see langword="true" /> if the method is a remote procedure call; otherwise, <see langword="false" />.</param>
+        <param name="openModel">
+          <see langword="true" /> to specify that the generated schema type will be marked with the<see langword=" &lt;xs:anyAttribute&gt;" /> element; otherwise, <see langword="false" />.</param>
+        <param name="access">One of the <see cref="T:System.Xml.Serialization.XmlMappingAccess" /> values. The default is <see langword="None" />.</param>
+        <summary>Generates internal type mappings for information from a Web service method.</summary>
+        <returns>An <see cref="T:System.Xml.Serialization.XmlMembersMapping" /> that contains the mappings.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -276,10 +353,17 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="type">The .NET Framework type for which to generate a type mapping.</param>
+        <summary>Generates a mapping to an XML Schema element for a specified .NET Framework type.</summary>
+        <returns>Internal .NET Framework mapping of a type to an XML Schema element.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ It is not necessary to call the <xref:System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping%2A> method directly.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ImportTypeMapping">
@@ -304,11 +388,18 @@
         <Parameter Name="defaultNamespace" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <param name="defaultNamespace">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="type">The .NET Framework type for which to generate a type mapping.</param>
+        <param name="defaultNamespace">The default XML namespace to use.</param>
+        <summary>Generates a mapping to an XML Schema element for a .NET Framework type, using the specified type and namespace.</summary>
+        <returns>Internal .NET Framework mapping of a type to an XML Schema element.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ It is not necessary to call the <xref:System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping%2A> method directly.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ImportTypeMapping">
@@ -333,11 +424,18 @@
         <Parameter Name="root" Type="System.Xml.Serialization.XmlRootAttribute" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <param name="root">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="type">The .NET Framework type for which to generate a type mapping.</param>
+        <param name="root">An <see cref="T:System.Xml.Serialization.XmlRootAttribute" /> attribute that is applied to the type.</param>
+        <summary>Generates a mapping to an XML Schema element for a .NET Framework type, using the specified type and attribute.</summary>
+        <returns>An <see cref="T:System.Xml.Serialization.XmlTypeMapping" /> that represents a mapping of a .NET Framework type to an XML Schema element.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ It is not necessary to call the <xref:System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping%2A> method directly.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ImportTypeMapping">
@@ -363,12 +461,19 @@
         <Parameter Name="defaultNamespace" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <param name="root">To be added.</param>
-        <param name="defaultNamespace">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="type">The .NET Framework type for which to generate a type mapping.</param>
+        <param name="root">An <see cref="T:System.Xml.Serialization.XmlRootAttribute" /> attribute that is applied to the type.</param>
+        <param name="defaultNamespace">The default XML namespace to use.</param>
+        <summary>Generates a mapping to an XML Schema element for a .NET Framework type, using the specified type, attribute, and namespace.</summary>
+        <returns>An <see cref="T:System.Xml.Serialization.XmlTypeMapping" /> that contains the internal .NET Framework mapping of a type to an XML Schema element.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ It is not necessary to call the <xref:System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping%2A> method directly.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IncludeType">
@@ -392,9 +497,16 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="type">The .NET Framework type for which to save type mapping information.</param>
+        <summary>Includes mappings for a type for later use when import methods are invoked.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ It is not necessary to call the <xref:System.Xml.Serialization.XmlReflectionImporter.IncludeType%2A> method directly.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IncludeTypes">
@@ -418,8 +530,8 @@
         <Parameter Name="provider" Type="System.Reflection.ICustomAttributeProvider" />
       </Parameters>
       <Docs>
-        <param name="provider">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="provider">An instance of the <see cref="T:System.Reflection.ICustomAttributeProvider" /> class that contains custom attributes derived from the <see cref="T:System.Xml.Serialization.XmlIncludeAttribute" /> attribute.</param>
+        <summary>Includes mappings for derived types for later use when import methods are invoked.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

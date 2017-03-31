@@ -1,44 +1,68 @@
 ---
 uid: System.Windows.Media.Animation.SplineSingleKeyFrame
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SplineSingleKeyFrame.KeySplineProperty
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SplineSingleKeyFrame.#ctor(System.Single,System.Windows.Media.Animation.KeyTime)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SplineSingleKeyFrame.KeySpline
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.SplineSingleKeyFrame.CreateInstanceCore
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.SplineSingleKeyFrame.#ctor(System.Single,System.Windows.Media.Animation.KeyTime,System.Windows.Media.Animation.KeySpline)
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.SplineSingleKeyFrame.#ctor(System.Single)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SplineSingleKeyFrame.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.SplineSingleKeyFrame.CreateInstanceCore
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.SplineSingleKeyFrame.#ctor(System.Single,System.Windows.Media.Animation.KeyTime,System.Windows.Media.Animation.KeySpline)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.SplineSingleKeyFrame.#ctor(System.Single)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.SplineSingleKeyFrame.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SplineSingleKeyFrame.InterpolateValueCore(System.Single,System.Double)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -16,8 +16,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a set of methods for creating instances of the Oracle provider's implementation of the data source classes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This type is deprecated and will be removed in a future version of the .NET Framework. For more information, see [Oracle and ADO.NET](../Topic/Oracle%20and%20ADO.NET.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CreateCommand">
@@ -34,9 +41,30 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a strongly typed <see cref="T:System.Data.Common.DbCommand" /> instance.</summary>
+        <returns>A new strongly typed instance of <see cref="T:System.Data.Common.DbCommand" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code fragment returns a strongly typed <xref:System.Data.Common.DbCommand> instance.  
+  
+ [Visual Basic]  
+  
+```  
+Dim newFactory As OracleClientFactory = OracleClientFactory.Instance  
+Dim command As DbCommand = newFactory.CreateCommand()  
+```  
+  
+ [C#]  
+  
+```  
+OracleClientFactory newFactory = OracleClientFactory.Instance;  
+DbCommand command = newFactory.CreateCommand();  
+```  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateCommandBuilder">
@@ -53,9 +81,30 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a strongly typed <see cref="T:System.Data.Common.DbCommandBuilder" /> instance.</summary>
+        <returns>A new strongly typed instance of <see cref="T:System.Data.Common.DbCommandBuilder" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code fragment returns a strongly typed <xref:System.Data.Common.DbCommandBuilder> instance.  
+  
+ [Visual Basic]  
+  
+```  
+Dim newFactory As OracleClientFactory = OracleClientFactory.Instance  
+Dim commandBuilder As DbCommandBuilder = newFactory.CreateCommandBuilder()  
+```  
+  
+ [C#]  
+  
+```  
+OracleClientFactory newFactory = OracleClientFactory.Instance;  
+DbCommandBuilder commandBuilder = newFactory.CreateCommandBuilder();  
+```  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateConnection">
@@ -72,9 +121,30 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a strongly typed <see cref="T:System.Data.Common.DbConnection" /> instance.</summary>
+        <returns>A new strongly typed instance of <see cref="T:System.Data.Common.DbConnection" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code fragment returns a strongly typed <xref:System.Data.Common.DbConnection> instance.  
+  
+ [Visual Basic]  
+  
+```  
+Dim newFactory As OracleClientFactory = OracleClientFactory.Instance  
+Dim connection As DbConnection = newFactory.CreateConnection()  
+```  
+  
+ [C#]  
+  
+```  
+OracleClientFactory newFactory = OracleClientFactory.Instance;  
+DbConnection connection = newFactory.CreateConnection();  
+```  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateConnectionStringBuilder">
@@ -91,9 +161,30 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a strongly typed <see cref="T:System.Data.Common.DbConnectionStringBuilder" /> instance.</summary>
+        <returns>A new strongly typed instance of <see cref="T:System.Data.Common.DbConnectionStringBuilder" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code fragment returns a strongly typed <xref:System.Data.Common.DbConnectionStringBuilder> instance.  
+  
+ [Visual Basic]  
+  
+```  
+Dim newFactory As OracleClientFactory = OracleClientFactory.Instance  
+Dim connectionBuilder As DbConnectionStringBuilder = newFactory.CreateConnectionStringBuilder()  
+```  
+  
+ [C#]  
+  
+```  
+OracleClientFactory newFactory = OracleClientFactory.Instance;  
+DbConnectionStringBuilder connectionBuilder = newFactory.CreateConnectionStringBuilder();  
+```  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateDataAdapter">
@@ -110,9 +201,30 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a strongly typed <see cref="T:System.Data.Common.DbDataAdapter" /> instance.</summary>
+        <returns>A new strongly typed instance of <see cref="T:System.Data.Common.DbDataAdapter" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code fragment returns a strongly typed <xref:System.Data.Common.DbDataAdapter> instance.  
+  
+ [Visual Basic]  
+  
+```  
+Dim newFactory As OracleClientFactory = OracleClientFactory.Instance  
+Dim dataAdpater As DbDataAdapter = newFactory.CreateDataAdapter()  
+```  
+  
+ [C#]  
+  
+```  
+OracleClientFactory newFactory = OracleClientFactory.Instance;  
+DbDataAdapter dataAdpater = newFactory.CreateDataAdapter();  
+```  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateParameter">
@@ -129,9 +241,30 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a strongly typed <see cref="T:System.Data.Common.DbParameter" /> instance.</summary>
+        <returns>A new strongly typed instance of <see cref="T:System.Data.Common.DbParameter" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code fragment returns a strongly typed <xref:System.Data.Common.DbParameter> instance.  
+  
+ [Visual Basic]  
+  
+```  
+Dim newFactory As OracleClientFactory = OracleClientFactory.Instance  
+Dim parameter As DbParameter = newFactory.CreateParameter()  
+```  
+  
+ [C#]  
+  
+```  
+OracleClientFactory newFactory = OracleClientFactory.Instance;  
+DbParameter parameter = newFactory.CreateParameter();  
+```  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreatePermission">
@@ -150,9 +283,9 @@
         <Parameter Name="state" Type="System.Security.Permissions.PermissionState" />
       </Parameters>
       <Docs>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="state">A member of the <see cref="T:System.Security.Permissions.PermissionState" /> enumeration.</param>
+        <summary>Returns a strongly typed <see cref="T:System.Security.CodeAccessPermission" /> instance.</summary>
+        <returns>A strongly typed instance of <see cref="T:System.Security.CodeAccessPermission" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -169,8 +302,29 @@
         <ReturnType>System.Data.OracleClient.OracleClientFactory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets an instance of the <see cref="T:System.Data.OracleClient.OracleClientFactory" />, which can be used to retrieve strongly typed data objects.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code fragment uses the <xref:System.Data.OracleClient.OracleClientFactory.Instance> field to retrieve an <xref:System.Data.OracleClient.OracleClientFactory> instance and then return a strongly typed <xref:System.Data.Common.DbCommand> instance.  
+  
+ [Visual Basic]  
+  
+```  
+Dim newFactory As OracleClientFactory = OracleClientFactory.Instance  
+Dim command As DbCommand = newFactory.CreateCommand()  
+```  
+  
+ [C#]  
+  
+```  
+OracleClientFactory newFactory = OracleClientFactory.Instance;  
+DbCommand command = newFactory.CreateCommand();  
+```  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

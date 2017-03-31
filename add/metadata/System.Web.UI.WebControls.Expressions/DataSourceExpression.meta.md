@@ -1,84 +1,101 @@
 ---
 uid: System.Web.UI.WebControls.Expressions.DataSourceExpression
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Expressions.DataSourceExpression.GetQueryable(System.Linq.IQueryable)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Expressions.DataSourceExpression.TrackViewState
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Expressions.DataSourceExpression.LoadViewState(System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Expressions.DataSourceExpression.System#Web#UI#IStateManager#SaveViewState
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Expressions.DataSourceExpression.System#Web#UI#IStateManager#TrackViewState
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Expressions.DataSourceExpression.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Expressions.DataSourceExpression.System#Web#UI#IStateManager#LoadViewState(System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Expressions.DataSourceExpression.DataSource
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Expressions.DataSourceExpression.ViewState
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Expressions.DataSourceExpression.SetContext(System.Web.UI.Control,System.Web.HttpContext,System.Web.UI.WebControls.IQueryableDataSource)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Expressions.DataSourceExpression.System#Web#UI#IStateManager#IsTrackingViewState
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Expressions.DataSourceExpression.SetDirty
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Expressions.DataSourceExpression.SaveViewState
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Expressions.DataSourceExpression.IsTrackingViewState
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Expressions.DataSourceExpression.Context
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Expressions.DataSourceExpression.Owner
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

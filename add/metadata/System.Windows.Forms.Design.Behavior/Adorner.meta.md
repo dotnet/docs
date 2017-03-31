@@ -1,39 +1,60 @@
 ---
 uid: System.Windows.Forms.Design.Behavior.Adorner
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.Adorner.Invalidate(System.Drawing.Region)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.Adorner.#ctor
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.Adorner.Invalidate(System.Drawing.Rectangle)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.Adorner.Glyphs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.Adorner.BehaviorService
-internalonly: False
----
-
----
-uid: System.Windows.Forms.Design.Behavior.Adorner.Enabled
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.Adorner.Invalidate
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.Design.Behavior.Adorner.Enabled
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.Design.Behavior.Adorner.Invalidate
+ms.author: "kempb"
+manager: "ghogen"
 ---

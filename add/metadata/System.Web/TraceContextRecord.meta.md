@@ -1,29 +1,35 @@
 ---
 uid: System.Web.TraceContextRecord
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.TraceContextRecord.#ctor(System.String,System.String,System.Boolean,System.Exception)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.TraceContextRecord.ErrorInfo
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.TraceContextRecord.IsWarning
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.TraceContextRecord.Category
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.TraceContextRecord.Message
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

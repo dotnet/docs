@@ -1,39 +1,65 @@
 ---
 uid: System.Dynamic.ConvertBinder
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+
+---
+uid: System.Dynamic.ConvertBinder.FallbackConvert
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Dynamic.ConvertBinder.ReturnType
-internalonly: False
+ms.author: "billchi"
+manager: "douge"
 ---
 
 ---
 uid: System.Dynamic.ConvertBinder.Explicit
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Dynamic.ConvertBinder.FallbackConvert(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject)
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Dynamic.ConvertBinder.#ctor(System.Type,System.Boolean)
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Dynamic.ConvertBinder.Bind(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject[])
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+
+---
+uid: System.Dynamic.ConvertBinder.Bind
 ---
 
 ---
 uid: System.Dynamic.ConvertBinder.FallbackConvert(System.Dynamic.DynamicMetaObject)
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Dynamic.ConvertBinder.Type
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---

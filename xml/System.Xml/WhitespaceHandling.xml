@@ -15,7 +15,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies how white space is handled.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,7 +37,7 @@
         <ReturnType>System.Xml.WhitespaceHandling</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Return <see langword="Whitespace" /> and <see langword="SignificantWhitespace" /> nodes. This is the default.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -58,7 +58,7 @@
         <ReturnType>System.Xml.WhitespaceHandling</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Return no <see langword="Whitespace" /> and no <see langword="SignificantWhitespace" /> nodes.</summary>
       </Docs>
     </Member>
     <Member MemberName="Significant">
@@ -79,7 +79,7 @@
         <ReturnType>System.Xml.WhitespaceHandling</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Return <see langword="SignificantWhitespace" /> nodes only.</summary>
       </Docs>
     </Member>
   </Members>

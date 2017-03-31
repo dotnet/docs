@@ -8,7 +8,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a service used to update Toolbox contents from a Designer.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <Parameter Name="categoryName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="categoryName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="categoryName">A string that contains the name of the category to be added.</param>
+        <summary>Adds a category to the toolbox.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,9 +50,9 @@
         <Parameter Name="categoryName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="qualifiedTypeName">To be added.</param>
-        <param name="categoryName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="qualifiedTypeName">A string that contains the qualified name of the item to be added.</param>
+        <param name="categoryName">A string that contains the name of the category to which the new item is added.</param>
+        <summary>Adds an item to a specific category in the toolbox.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,8 +70,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets an enumerator for all the categories in this toolbox.</summary>
+        <returns>Returns <see cref="T:System.Collections.Generic.IList`1" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,9 +91,9 @@
         <Parameter Name="categoryName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="categoryName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="categoryName">A category under which all the items will be returned.</param>
+        <summary>Gets an enumerator for all the items under the specified category in this toolbox.</summary>
+        <returns>Returns <see cref="T:System.Collections.Generic.IList`1" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,8 +113,8 @@
         <Parameter Name="categoryName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="categoryName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="categoryName">A string that contains the name of the category to be removed.</param>
+        <summary>Removes a category from the toolbox.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,9 +135,9 @@
         <Parameter Name="categoryName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="qualifiedTypeName">To be added.</param>
-        <param name="categoryName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="qualifiedTypeName">A string that contains the qualified name of the item to be removed.</param>
+        <param name="categoryName">A string that contains the name of the category from which the item is removed.</param>
+        <summary>Removes an item from a specific category in the toolbox.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

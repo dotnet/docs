@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the display state of a smart tag panel.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.DesignerActionUIStateChangeType> enumeration is used in the <xref:System.ComponentModel.Design.DesignerActionUIStateChangeEventArgs> class and is associated with the <xref:System.ComponentModel.Design.DesignerActionUIService.DesignerActionUIStateChange> event, which indicates whether the panel is being displayed or hidden.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Hide">
@@ -27,7 +34,7 @@
         <ReturnType>System.ComponentModel.Design.DesignerActionUIStateChangeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The smart tag panel is being hidden.</summary>
       </Docs>
     </Member>
     <Member MemberName="Refresh">
@@ -43,7 +50,7 @@
         <ReturnType>System.ComponentModel.Design.DesignerActionUIStateChangeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The smart tag panel is being refreshed.</summary>
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -59,7 +66,7 @@
         <ReturnType>System.ComponentModel.Design.DesignerActionUIStateChangeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The smart tag panel is being displayed.</summary>
       </Docs>
     </Member>
   </Members>

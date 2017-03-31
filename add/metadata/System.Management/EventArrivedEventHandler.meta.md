@@ -1,4 +1,4 @@
 ---
 uid: System.Management.EventArrivedEventHandler
-internalonly: False
+manager: "jillfra"
 ---

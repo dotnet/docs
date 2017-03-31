@@ -1,34 +1,41 @@
 ---
 uid: System.Web.UI.ControlBuilderAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ControlBuilderAttribute.BuilderType
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ControlBuilderAttribute.GetHashCode
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ControlBuilderAttribute.Default
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ControlBuilderAttribute.Equals(System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ControlBuilderAttribute.#ctor(System.Type)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ControlBuilderAttribute.IsDefaultAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

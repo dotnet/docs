@@ -1,109 +1,145 @@
 ---
 uid: System.Web.UI.Design.WebControls.RepeaterDesigner
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.RepeaterDesigner.GetSelectedDataSource
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.RepeaterDesigner.Dispose(System.Boolean)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.RepeaterDesigner.GetDesignTimeHtml
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.RepeaterDesigner.GetDesignTimeDataSource
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.RepeaterDesigner.GetDesignTimeHtml
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.RepeaterDesigner.DataSourceID
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.RepeaterDesigner.DataSource
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.RepeaterDesigner.GetDesignTimeDataSource(System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.RepeaterDesigner.DataMember
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.RepeaterDesigner.TemplatesExist
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.RepeaterDesigner.DesignerView
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.RepeaterDesigner.GetDesignTimeDataSource(System.Collections.IEnumerable,System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.RepeaterDesigner.GetErrorDesignTimeHtml(System.Exception)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.RepeaterDesigner.GetEmptyDesignTimeHtml
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.RepeaterDesigner.ActionLists
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.RepeaterDesigner.DataSourceDesigner
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.RepeaterDesigner.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.RepeaterDesigner.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.RepeaterDesigner.PreFilterProperties(System.Collections.IDictionary)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.RepeaterDesigner.Dispose
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.RepeaterDesigner.Initialize(System.ComponentModel.IComponent)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.RepeaterDesigner.OnDataSourceChanged
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.RepeaterDesigner.GetResolvedSelectedDataSource
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.RepeaterDesigner.ExecuteChooseDataSourcePostSteps
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

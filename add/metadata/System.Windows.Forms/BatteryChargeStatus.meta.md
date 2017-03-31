@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Forms.BatteryChargeStatus
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -1,29 +1,41 @@
 ---
 uid: System.Security.Claims.AuthorizationContext
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.AuthorizationContext.#ctor(System.Security.Claims.ClaimsPrincipal,System.Collections.ObjectModel.Collection{System.Security.Claims.Claim},System.Collections.ObjectModel.Collection{System.Security.Claims.Claim})
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.AuthorizationContext.#ctor(System.Security.Claims.ClaimsPrincipal,System.String,System.String)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.AuthorizationContext.Principal
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.AuthorizationContext.Resource
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.AuthorizationContext.Action
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.Security.Claims.AuthorizationContext.#ctor
+ms.author: "v-jibran"
+manager: "markgal"
 ---

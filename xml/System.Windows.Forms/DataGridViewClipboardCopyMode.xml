@@ -10,8 +10,23 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines constants that indicate whether content is copied from a <see cref="T:System.Windows.Forms.DataGridView" /> control to the Clipboard.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the <xref:System.Windows.Forms.DataGridView.ClipboardCopyMode%2A> property to indicate whether users can copy the text values of selected cells to the Clipboard and whether row and column header text is included.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to enable copying in the <xref:System.Windows.Forms.DataGridView> control. For the complete example, see [How to: Enable Users to Copy Multiple Cells to the Clipboard from the Windows Forms DataGridView Control](../Topic/How%20to:%20Enable%20Users%20to%20Copy%20Multiple%20Cells%20to%20the%20Clipboard%20from%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+  
+ [!code-csharp[System.Windows.Forms.DataGridViewClipboardDemo#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewClipboardDemo/CS/datagridviewclipboarddemo.cs#10)]
+ [!code-vb[System.Windows.Forms.DataGridViewClipboardDemo#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewClipboardDemo/VB/datagridviewclipboarddemo.vb#10)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Disable">
@@ -27,7 +42,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewClipboardCopyMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Copying to the Clipboard is disabled.</summary>
       </Docs>
     </Member>
     <Member MemberName="EnableAlwaysIncludeHeaderText">
@@ -43,7 +58,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewClipboardCopyMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text values of selected cells can be copied to the Clipboard. Header text is included for rows and columns that contain selected cells.</summary>
       </Docs>
     </Member>
     <Member MemberName="EnableWithAutoHeaderText">
@@ -59,7 +74,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewClipboardCopyMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text values of selected cells can be copied to the Clipboard. Row or column header text is included for rows or columns that contain selected cells only when the <see cref="P:System.Windows.Forms.DataGridView.SelectionMode" /> property is set to <see cref="F:System.Windows.Forms.DataGridViewSelectionMode.RowHeaderSelect" /> or <see cref="F:System.Windows.Forms.DataGridViewSelectionMode.ColumnHeaderSelect" /> and at least one header is selected.</summary>
       </Docs>
     </Member>
     <Member MemberName="EnableWithoutHeaderText">
@@ -75,7 +90,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewClipboardCopyMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text values of selected cells can be copied to the Clipboard. Header text is not included.</summary>
       </Docs>
     </Member>
   </Members>

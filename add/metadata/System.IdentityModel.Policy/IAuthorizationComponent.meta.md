@@ -1,9 +1,13 @@
 ---
 uid: System.IdentityModel.Policy.IAuthorizationComponent
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.IdentityModel.Policy.IAuthorizationComponent.Id
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

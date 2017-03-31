@@ -16,8 +16,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The <see cref="T:System.Security.Cryptography.Pkcs.Pkcs9MessageDigest" /> class defines the message digest of a CMS/PKCS #7 message.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Security.Cryptography.Pkcs.Pkcs9MessageDigest> object will be automatically generated and placed in the <xref:System.Security.Cryptography.Pkcs.SignerInfo.SignedAttributes%2A?displayProperty=fullName> property whenever the <xref:System.Security.Cryptography.Pkcs.CmsSigner.SignedAttributes%2A?displayProperty=fullName> property for the corresponding signer is not empty.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,7 +43,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="M:System.Security.Cryptography.Pkcs.Pkcs9MessageDigest.#ctor" /> constructor creates an instance of the <see cref="T:System.Security.Cryptography.Pkcs.Pkcs9MessageDigest" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,9 +68,16 @@
         <Parameter Name="asnEncodedData" Type="System.Security.Cryptography.AsnEncodedData" />
       </Parameters>
       <Docs>
-        <param name="asnEncodedData">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="asnEncodedData">The <see cref="T:System.Security.Cryptography.AsnEncodedData" /> object from which to copy information.</param>
+        <summary>Copies information from an <see cref="T:System.Security.Cryptography.AsnEncodedData" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method replaces the current <xref:System.Security.Cryptography.Pkcs.Pkcs9MessageDigest> object with the specified <xref:System.Security.Cryptography.AsnEncodedData> object.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MessageDigest">
@@ -84,8 +98,8 @@
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.Security.Cryptography.Pkcs.Pkcs9MessageDigest.MessageDigest" /> property retrieves the message digest.</summary>
+        <value>An array of byte values that contains the message digest.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

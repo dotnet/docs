@@ -19,8 +19,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates which <see langword="IDispatch" /> implementation to use for a particular class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Runtime.InteropServices.IDispatchImplAttribute> for more information.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CompatibleImpl">
@@ -37,7 +44,7 @@
         <ReturnType>System.Runtime.InteropServices.IDispatchImplType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the <see langword="IDispatch" /> implementation is supplied by passing the type information for the object to the COM <see langword="CreateStdDispatch" /> API method.</summary>
       </Docs>
     </Member>
     <Member MemberName="InternalImpl">
@@ -54,7 +61,7 @@
         <ReturnType>System.Runtime.InteropServices.IDispatchImplType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the <see langword="IDispatch" /> implementation is supplied by the runtime.</summary>
       </Docs>
     </Member>
     <Member MemberName="SystemDefinedImpl">
@@ -71,7 +78,7 @@
         <ReturnType>System.Runtime.InteropServices.IDispatchImplType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the common language runtime decides which <see langword="IDispatch" /> implementation to use.</summary>
       </Docs>
     </Member>
   </Members>

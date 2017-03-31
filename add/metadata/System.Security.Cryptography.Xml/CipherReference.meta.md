@@ -1,29 +1,48 @@
 ---
 uid: System.Security.Cryptography.Xml.CipherReference
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.Xml.CipherReference.#ctor(System.String,System.Security.Cryptography.Xml.TransformChain)
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.Xml.CipherReference.#ctor(System.String)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.Xml.CipherReference.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.Xml.CipherReference.#ctor(System.String,System.Security.Cryptography.Xml.TransformChain)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.Xml.CipherReference.#ctor(System.String)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.Xml.CipherReference.#ctor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.Xml.CipherReference.LoadXml(System.Xml.XmlElement)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.Xml.CipherReference.GetXml
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

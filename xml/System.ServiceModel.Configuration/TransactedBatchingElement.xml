@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a configuration element that specifies whether transaction batching is supported for receive operations. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A transport that is configured with transaction batching will attempt to batch several receive operations into one transaction. By doing so, the relatively high cost of creating a transaction and committing it in every receive operation is avoided.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.TransactedBatchingElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +50,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type of this behavior configuration element.</summary>
+        <value>The type of the behavior.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +71,8 @@
         <Parameter Name="from" Type="System.ServiceModel.Configuration.ServiceModelExtensionElement" />
       </Parameters>
       <Docs>
-        <param name="from">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="from">The configuration element to be copied.</param>
+        <summary>Copies the content of the specified configuration element to this configuration element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,8 +116,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the maximum number of receive operations that can be batched together in one transaction.</summary>
+        <value>The maximum number of receive operations that can be batched together in one transaction. The default is 0.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

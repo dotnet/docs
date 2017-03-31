@@ -1,9 +1,11 @@
 ---
 uid: System.Web.UI.TemplateControlParser
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.TemplateControlParser.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

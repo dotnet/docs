@@ -1,9 +1,13 @@
 ---
 uid: System.Security.SecuritySafeCriticalAttribute
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.SecuritySafeCriticalAttribute.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

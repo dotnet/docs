@@ -1,84 +1,112 @@
 ---
 uid: System.ServiceModel.Security.WSTrustChannelFactory
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.WSTrustChannelFactory.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.WSTrustChannelFactory.#ctor(System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.WSTrustChannelFactory.#ctor(System.ServiceModel.Description.ServiceEndpoint)
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.WSTrustChannelFactory.CreateSerializationContext
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.WSTrustChannelFactory.WSTrustRequestSerializer
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.WSTrustChannelFactory.SecurityTokenResolver
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
+---
+
+---
+uid: System.ServiceModel.Security.WSTrustChannelFactory.#ctor
+ms.author: "v-jibran"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.WSTrustChannelFactory.#ctor(System.String)
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.WSTrustChannelFactory.#ctor(System.String,System.ServiceModel.EndpointAddress)
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.WSTrustChannelFactory.CreateTrustChannel(System.ServiceModel.Security.IWSTrustChannelContract,System.ServiceModel.Security.TrustVersion,System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext,System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer,System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer)
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.WSTrustChannelFactory.#ctor(System.ServiceModel.Channels.Binding,System.String)
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.WSTrustChannelFactory.WSTrustResponseSerializer
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.WSTrustChannelFactory.#ctor(System.ServiceModel.Channels.Binding)
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.WSTrustChannelFactory.TrustVersion
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.WSTrustChannelFactory.UseKeyTokenResolver
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.WSTrustChannelFactory.CreateChannel(System.ServiceModel.EndpointAddress,System.Uri)
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
+---
+
+---
+uid: System.ServiceModel.Security.WSTrustChannelFactory.CreateChannel
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.WSTrustChannelFactory.SecurityTokenHandlerCollectionManager
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
 ---

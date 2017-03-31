@@ -21,8 +21,24 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Determines whether an assembly belongs to a code group by testing its global assembly cache membership. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ All assemblies installed in the global assembly cache are granted the `FullTrust` permission set.  
+  
+   
+  
+## Examples  
+ The following example demonstrates the use of the <xref:System.Security.Policy.GacMembershipCondition> class.  
+  
+ [!code-cpp[System.Security.Policy.GacMembershipCondition#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.GacMembershipCondition/CPP/gacmembershipcondition.cpp#1)]
+ [!code-csharp[System.Security.Policy.GacMembershipCondition#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.GacMembershipCondition/CS/gacmembershipcondition.cs#1)]
+ [!code-vb[System.Security.Policy.GacMembershipCondition#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.GacMembershipCondition/VB/gacmembershipcondition.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,8 +53,24 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Policy.GacMembershipCondition" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Code satisfies this membership condition if it is installed in the global assembly cache.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.Policy.GacMembershipCondition.%23ctor%2A> constructor. This example is part of a larger example provided for the <xref:System.Security.Policy.GacMembershipCondition> class topic.  
+  
+ [!code-cpp[System.Security.Policy.GacMembershipCondition#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.GacMembershipCondition/CPP/gacmembershipcondition.cpp#4)]
+ [!code-csharp[System.Security.Policy.GacMembershipCondition#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.GacMembershipCondition/CS/gacmembershipcondition.cs#4)]
+ [!code-vb[System.Security.Policy.GacMembershipCondition#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.GacMembershipCondition/VB/gacmembershipcondition.vb#4)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Check">
@@ -58,10 +90,27 @@
         <Parameter Name="evidence" Type="System.Security.Policy.Evidence" />
       </Parameters>
       <Docs>
-        <param name="evidence">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="evidence">The <see cref="T:System.Security.Policy.Evidence" /> against which to make the test.</param>
+        <summary>Indicates whether the specified evidence satisfies the membership condition.</summary>
+        <returns>
+          <see langword="true" /> if the specified evidence satisfies the membership condition; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This membership condition tests <xref:System.Security.Policy.GacInstalled> evidence.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.Policy.GacMembershipCondition.Check%2A> method. This example is part of a larger example provided for the <xref:System.Security.Policy.GacMembershipCondition> class.  
+  
+ [!code-cpp[System.Security.Policy.GacMembershipCondition#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.GacMembershipCondition/CPP/gacmembershipcondition.cpp#3)]
+ [!code-csharp[System.Security.Policy.GacMembershipCondition#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.GacMembershipCondition/CS/gacmembershipcondition.cs#3)]
+ [!code-vb[System.Security.Policy.GacMembershipCondition#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.GacMembershipCondition/VB/gacmembershipcondition.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -79,9 +128,25 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates an equivalent copy of the membership condition.</summary>
+        <returns>A new <see cref="T:System.Security.Policy.GacMembershipCondition" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A copy of a membership condition is identical to the original membership condition.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.Policy.GacMembershipCondition.Copy%2A> method. This example is part of a larger example provided for the <xref:System.Security.Policy.GacMembershipCondition> class.  
+  
+ [!code-cpp[System.Security.Policy.GacMembershipCondition#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.GacMembershipCondition/CPP/gacmembershipcondition.cpp#2)]
+ [!code-csharp[System.Security.Policy.GacMembershipCondition#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.GacMembershipCondition/CS/gacmembershipcondition.cs#2)]
+ [!code-vb[System.Security.Policy.GacMembershipCondition#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.GacMembershipCondition/VB/gacmembershipcondition.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -101,10 +166,27 @@
         <Parameter Name="o" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="o">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="o">The object to compare with the current object.</param>
+        <summary>Indicates whether the current object is equivalent to the specified object.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="o" /> is a <see cref="T:System.Security.Policy.GacMembershipCondition" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There are no degrees of global assembly cache membership. An assembly is either in the cache or it is not. If the object identified by `o` is a <xref:System.Security.Policy.GacMembershipCondition>, then the objects being compared are equal. This method returns `false` only if `o` is `null` or if `o` is not a <xref:System.Security.Policy.GacMembershipCondition>.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.Policy.GacMembershipCondition.Equals%2A> method. This example is part of a larger example provided for the <xref:System.Security.Policy.GacMembershipCondition> class.  
+  
+ [!code-cpp[System.Security.Policy.GacMembershipCondition#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.GacMembershipCondition/CPP/gacmembershipcondition.cpp#5)]
+ [!code-csharp[System.Security.Policy.GacMembershipCondition#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.GacMembershipCondition/CS/gacmembershipcondition.cs#5)]
+ [!code-vb[System.Security.Policy.GacMembershipCondition#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.GacMembershipCondition/VB/gacmembershipcondition.vb#5)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FromXml">
@@ -124,9 +206,29 @@
         <Parameter Name="e" Type="System.Security.SecurityElement" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">The <see cref="T:System.Security.SecurityElement" /> that contains the XML encoding to use to reconstruct the security object.</param>
+        <summary>Uses the specified XML encoding to reconstruct a security object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Policy.GacMembershipCondition.FromXml%2A> method reconstructs a <xref:System.Security.Policy.GacMembershipCondition> from an XML encoding defined by the <xref:System.Security.SecurityElement> class. Use the <xref:System.Security.Policy.GacMembershipCondition.ToXml%2A> method to XML-encode the <xref:System.Security.Policy.GacMembershipCondition> including state information.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.Policy.GacMembershipCondition.FromXml%2A> method. This example is part of a larger example provided for the <xref:System.Security.Policy.GacMembershipCondition> class.  
+  
+ [!code-cpp[System.Security.Policy.GacMembershipCondition#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.GacMembershipCondition/CPP/gacmembershipcondition.cpp#5)]
+ [!code-csharp[System.Security.Policy.GacMembershipCondition#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.GacMembershipCondition/CS/gacmembershipcondition.cs#5)]
+ [!code-vb[System.Security.Policy.GacMembershipCondition#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.GacMembershipCondition/VB/gacmembershipcondition.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="e" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="e" /> is not a valid membership condition element.</exception>
       </Docs>
     </Member>
     <Member MemberName="FromXml">
@@ -147,10 +249,30 @@
         <Parameter Name="level" Type="System.Security.Policy.PolicyLevel" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <param name="level">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">The <see cref="T:System.Security.SecurityElement" /> that contains the XML encoding to use to reconstruct the security object.</param>
+        <param name="level">The <see cref="T:System.Security.Policy.PolicyLevel" /> context for resolving <see cref="T:System.Security.NamedPermissionSet" /> references.</param>
+        <summary>Uses the specified XML encoding to reconstruct a security object, using the specified policy level context.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The policy level context is provided for resolution of named permission set references. For example, code groups use policy level to find named permission sets.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.Policy.GacMembershipCondition.FromXml%2A> method. This example is part of a larger example provided for the <xref:System.Security.Policy.GacMembershipCondition> class.  
+  
+ [!code-cpp[System.Security.Policy.GacMembershipCondition#6](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.GacMembershipCondition/CPP/gacmembershipcondition.cpp#6)]
+ [!code-csharp[System.Security.Policy.GacMembershipCondition#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.GacMembershipCondition/CS/gacmembershipcondition.cs#6)]
+ [!code-vb[System.Security.Policy.GacMembershipCondition#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.GacMembershipCondition/VB/gacmembershipcondition.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="e" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="e" /> is not a valid membership condition element.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -168,9 +290,25 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets a hash code for the current membership condition.</summary>
+        <returns>0 (zero).</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Policy.GacMembershipCondition.GetHashCode%2A> method returns 0 (zero) because <xref:System.Security.Policy.GacMembershipCondition> objects have no properties to distinguish one from another.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.Policy.GacMembershipCondition.GetHashCode%2A> method. This example is part of a larger example provided for the <xref:System.Security.Policy.GacMembershipCondition> class.  
+  
+ [!code-cpp[System.Security.Policy.GacMembershipCondition#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.GacMembershipCondition/CPP/gacmembershipcondition.cpp#4)]
+ [!code-csharp[System.Security.Policy.GacMembershipCondition#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.GacMembershipCondition/CS/gacmembershipcondition.cs#4)]
+ [!code-vb[System.Security.Policy.GacMembershipCondition#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.GacMembershipCondition/VB/gacmembershipcondition.vb#4)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -188,9 +326,25 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a string representation of the membership condition.</summary>
+        <returns>A string representation of the membership condition.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string representation for <xref:System.Security.Policy.GacMembershipCondition> is "GAC".  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.Policy.GacMembershipCondition.ToString%2A> method. This example is part of a larger example provided for the <xref:System.Security.Policy.GacMembershipCondition> class.  
+  
+ [!code-cpp[System.Security.Policy.GacMembershipCondition#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.GacMembershipCondition/CPP/gacmembershipcondition.cpp#5)]
+ [!code-csharp[System.Security.Policy.GacMembershipCondition#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.GacMembershipCondition/CS/gacmembershipcondition.cs#5)]
+ [!code-vb[System.Security.Policy.GacMembershipCondition#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.GacMembershipCondition/VB/gacmembershipcondition.vb#5)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToXml">
@@ -208,9 +362,25 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates an XML encoding of the security object and its current state.</summary>
+        <returns>A <see cref="T:System.Security.SecurityElement" /> that contains the XML encoding of the security object, including any state information.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Security.Policy.GacMembershipCondition.FromXml%2A> method to restore the state information from a <xref:System.Security.SecurityElement>.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.Policy.GacMembershipCondition.ToXml%2A> method. This example is part of a larger example provided for the <xref:System.Security.Policy.GacMembershipCondition> class.  
+  
+ [!code-cpp[System.Security.Policy.GacMembershipCondition#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.GacMembershipCondition/CPP/gacmembershipcondition.cpp#5)]
+ [!code-csharp[System.Security.Policy.GacMembershipCondition#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.GacMembershipCondition/CS/gacmembershipcondition.cs#5)]
+ [!code-vb[System.Security.Policy.GacMembershipCondition#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.GacMembershipCondition/VB/gacmembershipcondition.vb#5)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToXml">
@@ -230,10 +400,26 @@
         <Parameter Name="level" Type="System.Security.Policy.PolicyLevel" />
       </Parameters>
       <Docs>
-        <param name="level">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="level">The <see cref="T:System.Security.Policy.PolicyLevel" /> context for resolving <see cref="T:System.Security.NamedPermissionSet" /> references.</param>
+        <summary>Creates an XML encoding of the security object and its current state, using the specified policy level context.</summary>
+        <returns>A <see cref="T:System.Security.SecurityElement" /> that contains the XML encoding of the security object, including any state information.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The policy level context is provided for resolution of named permission set references. For example, code groups use policy level to find named permission sets.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.Policy.GacMembershipCondition.ToXml%2A> method. This example is part of a larger example provided for the <xref:System.Security.Policy.GacMembershipCondition> class.  
+  
+ [!code-cpp[System.Security.Policy.GacMembershipCondition#6](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.GacMembershipCondition/CPP/gacmembershipcondition.cpp#6)]
+ [!code-csharp[System.Security.Policy.GacMembershipCondition#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.GacMembershipCondition/CS/gacmembershipcondition.cs#6)]
+ [!code-vb[System.Security.Policy.GacMembershipCondition#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.GacMembershipCondition/VB/gacmembershipcondition.vb#6)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

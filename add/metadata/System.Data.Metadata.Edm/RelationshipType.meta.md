@@ -1,9 +1,13 @@
 ---
 uid: System.Data.Metadata.Edm.RelationshipType
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Metadata.Edm.RelationshipType.RelationshipEndMembers
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

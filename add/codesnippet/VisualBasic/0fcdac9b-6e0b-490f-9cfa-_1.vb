@@ -1,1 +1,0 @@
-        Dim sp3 As New DataProtectionPermission(PermissionState.Unrestricted)

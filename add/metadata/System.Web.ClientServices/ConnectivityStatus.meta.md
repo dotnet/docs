@@ -1,9 +1,13 @@
 ---
 uid: System.Web.ClientServices.ConnectivityStatus
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ClientServices.ConnectivityStatus.IsOffline
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

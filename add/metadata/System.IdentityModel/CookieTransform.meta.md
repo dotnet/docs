@@ -1,19 +1,23 @@
 ---
 uid: System.IdentityModel.CookieTransform
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.CookieTransform.Encode(System.Byte[])
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.CookieTransform.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.CookieTransform.Decode(System.Byte[])
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

@@ -19,8 +19,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>A standard endpoint with a fixed <see cref="T:System.ServiceModel.WebHttpBinding" /> binding that automatically adds the <see cref="T:System.ServiceModel.Description.WebHttpBehavior" /> behavior.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this endpoint when writing a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] REST service.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,8 +43,8 @@
         <Parameter Name="contract" Type="System.ServiceModel.Description.ContractDescription" />
       </Parameters>
       <Docs>
-        <param name="contract">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="contract">The contract description.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.WebHttpEndpoint" /> class with the specified <see cref="T:System.ServiceModel.Description.ContractDescription" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,9 +62,9 @@
         <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" />
       </Parameters>
       <Docs>
-        <param name="contract">To be added.</param>
-        <param name="address">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="contract">The contract description.</param>
+        <param name="address">The endpoint address.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.WebHttpEndpoint" /> class with the specified <see cref="T:System.ServiceModel.Description.ContractDescription" /> and <see cref="T:System.ServiceModel.EndpointAddress" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,9 +81,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether automatic format selection is enabled.</summary>
+        <value>
+          <see langword="true" /> if automatic format selection is enabled, otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When automatic format selection is enabled, the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] infrastructure parses the `Accept` header of the request message and determines the most appropriate response format. If the `Accept` header does not specify a suitable response format, the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] infrastructure uses the `Content-Type` of the request message or the default response format of the operation.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultOutgoingResponseFormat">
@@ -92,8 +107,8 @@
         <ReturnType>System.ServiceModel.Web.WebMessageFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the default outgoing response format.</summary>
+        <value>The default response format for the endpoint.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,8 +125,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the flag that specifies whether a FaultException is generated when an internal server error (HTTP status code: 500) occurs.</summary>
+        <value>Returns <see langword="true" /> if the flag is enabled; otherwise returns <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,8 +143,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether the HTTP help page is enabled for the endpoint.</summary>
+        <value>
+          <see langword="true" /> if the HTTP help page is enabled; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,8 +162,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Type" /> of the endpoint.</summary>
+        <value>The type of the endpoint.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

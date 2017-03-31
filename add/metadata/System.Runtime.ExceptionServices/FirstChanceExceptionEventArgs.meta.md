@@ -1,14 +1,20 @@
 ---
 uid: System.Runtime.ExceptionServices.FirstChanceExceptionEventArgs
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.ExceptionServices.FirstChanceExceptionEventArgs.#ctor(System.Exception)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.ExceptionServices.FirstChanceExceptionEventArgs.Exception
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

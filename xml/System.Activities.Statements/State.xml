@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Models the state which a state machine can be in.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Statements.State" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets an optional friendly name that is used for debugging, validation, exception handling, and tracking.</summary>
+        <value>Returns <see cref="T:System.String" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,8 +66,8 @@
         <ReturnType>System.Activities.Activity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the activity performed when entering the state.</summary>
+        <value>Returns <see cref="T:System.Activities.Activity" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,8 +92,8 @@
         <ReturnType>System.Activities.Activity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the activity performed when exiting the state.</summary>
+        <value>Returns <see cref="T:System.Activities.Activity" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,8 +115,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets whether the state is a final state.</summary>
+        <value>Returns <see cref="T:System.Boolean" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -138,8 +138,8 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Activities.Statements.Transition&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the collection of transitions that come from this state.</summary>
+        <value>Returns <see cref="T:System.Collections.ObjectModel.Collection`1" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -161,8 +161,8 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Activities.Variable&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the collection of variable objects associated with the state.</summary>
+        <value>Returns <see cref="T:System.Collections.ObjectModel.Collection`1" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

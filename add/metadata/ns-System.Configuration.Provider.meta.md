@@ -1,4 +1,6 @@
 ---
 uid: System.Configuration.Provider
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

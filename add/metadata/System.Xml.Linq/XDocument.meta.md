@@ -1,134 +1,216 @@
 ---
 uid: System.Xml.Linq.XDocument
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XDocument.Load
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Linq.XDocument.#ctor(System.Xml.Linq.XDeclaration,System.Object[])
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Linq.XDocument.Save(System.IO.Stream,System.Xml.Linq.SaveOptions)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Linq.XDocument.Parse(System.String)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Linq.XDocument.Load(System.IO.TextReader,System.Xml.Linq.LoadOptions)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Linq.XDocument.NodeType
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Linq.XDocument.Load(System.IO.Stream)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Linq.XDocument.Load(System.Xml.XmlReader)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Linq.XDocument.Save(System.String)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XDocument.Save
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Linq.XDocument.Load(System.Xml.XmlReader,System.Xml.Linq.LoadOptions)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XDocument.Parse
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Linq.XDocument.Save(System.Xml.XmlWriter)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Linq.XDocument.Load(System.IO.TextReader)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Linq.XDocument.#ctor(System.Xml.Linq.XDocument)
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XDocument.Load(System.String)
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XDocument.#ctor(System.Object[])
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XDocument.Load(System.IO.Stream,System.Xml.Linq.LoadOptions)
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XDocument.Load(System.String,System.Xml.Linq.LoadOptions)
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XDocument.Root
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XDocument.Save(System.IO.Stream)
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XDocument.DocumentType
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XDocument.Save(System.String,System.Xml.Linq.SaveOptions)
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XDocument.Save(System.IO.TextWriter)
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XDocument.Declaration
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XDocument.Parse(System.String,System.Xml.Linq.LoadOptions)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Linq.XDocument.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XDocument.Load(System.String)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XDocument.#ctor(System.Object[])
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XDocument.Load(System.IO.Stream,System.Xml.Linq.LoadOptions)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XDocument.Load(System.String,System.Xml.Linq.LoadOptions)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XDocument.Root
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XDocument.Save(System.IO.Stream)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XDocument.DocumentType
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XDocument.Save(System.String,System.Xml.Linq.SaveOptions)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XDocument.Save(System.IO.TextWriter)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XDocument.Declaration
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XDocument.Parse(System.String,System.Xml.Linq.LoadOptions)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XDocument.#ctor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Linq.XDocument.Save(System.IO.TextWriter,System.Xml.Linq.SaveOptions)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

@@ -1,9 +1,13 @@
 ---
 uid: System.Runtime.CompilerServices.ExtensionAttribute
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.CompilerServices.ExtensionAttribute.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

@@ -1,39 +1,47 @@
 ---
 uid: System.Net.Sockets.HttpPolicyDownloaderProtocol
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.HttpPolicyDownloaderProtocol.Abort
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.HttpPolicyDownloaderProtocol.ReadCallback(System.IAsyncResult)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.HttpPolicyDownloaderProtocol.DownloadCallback(System.IAsyncResult)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.HttpPolicyDownloaderProtocol.RegisterUnsafeWebRequestCreator(System.Net.IUnsafeWebRequestCreate)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.HttpPolicyDownloaderProtocol.#ctor(System.Uri,System.Net.IPAddress)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.HttpPolicyDownloaderProtocol.Result
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.HttpPolicyDownloaderProtocol.BeginDownload(System.Net.Sockets.SecurityCriticalAction)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

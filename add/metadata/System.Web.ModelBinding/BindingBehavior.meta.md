@@ -1,4 +1,6 @@
 ---
 uid: System.Web.ModelBinding.BindingBehavior
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

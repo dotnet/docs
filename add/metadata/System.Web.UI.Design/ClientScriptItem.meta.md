@@ -1,34 +1,41 @@
 ---
 uid: System.Web.UI.Design.ClientScriptItem
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ClientScriptItem.Text
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ClientScriptItem.Source
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ClientScriptItem.Id
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ClientScriptItem.Type
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ClientScriptItem.Language
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ClientScriptItem.#ctor(System.String,System.String,System.String,System.String,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

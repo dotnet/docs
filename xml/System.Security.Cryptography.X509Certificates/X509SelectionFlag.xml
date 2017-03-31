@@ -10,8 +10,24 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the type of selection requested using the <see cref="Overload:System.Security.Cryptography.X509Certificates.X509Certificate2UI.SelectFromCollection" /> method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This flag represents either a single or multiple certificate selection using the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2UI.SelectFromCollection%2A?displayProperty=fullName> method.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the selection flag with the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2UI.SelectFromCollection%2A?displayProperty=fullName> method. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.X509Certificates.X509Store> class. The larger example opens the current user's personal certificate store, allows the user to select a certificate, then writes certificate and certificate chain information to the console. The output depends on the certificate the user selects.  
+  
+ [!code-cpp[x509chaintest#2](~/samples/snippets/cpp/VS_Snippets_CLR/x509chaintest/CPP/x509chaintest.cpp#2)]
+ [!code-csharp[x509chaintest#2](~/samples/snippets/csharp/VS_Snippets_CLR/x509chaintest/CS/x509chaintest.cs#2)]
+ [!code-vb[x509chaintest#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509chaintest/vb/x509chaintest.vb#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="MultiSelection">
@@ -27,7 +43,7 @@
         <ReturnType>System.Security.Cryptography.X509Certificates.X509SelectionFlag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A multiple selection. The user can use the SHIFT or CRTL keys to select more than one X.509 certificate.</summary>
       </Docs>
     </Member>
     <Member MemberName="SingleSelection">
@@ -43,7 +59,7 @@
         <ReturnType>System.Security.Cryptography.X509Certificates.X509SelectionFlag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A single selection. The UI allows the user to select one X.509 certificate.</summary>
       </Docs>
     </Member>
   </Members>

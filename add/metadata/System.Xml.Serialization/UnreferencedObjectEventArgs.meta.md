@@ -1,19 +1,27 @@
 ---
 uid: System.Xml.Serialization.UnreferencedObjectEventArgs
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.UnreferencedObjectEventArgs.UnreferencedObject
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.UnreferencedObjectEventArgs.#ctor(System.Object,System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.UnreferencedObjectEventArgs.UnreferencedId
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

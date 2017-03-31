@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a VBArray object. This class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,9 +29,9 @@
         <Parameter Name="array" Type="System.Array" />
       </Parameters>
       <Docs>
-        <param name="parent">To be added.</param>
-        <param name="array">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="parent">The parent of the object.</param>
+        <param name="array">The underlying array that the class represents.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.VBArrayObject" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

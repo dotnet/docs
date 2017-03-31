@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Indicates the relationship between two entities.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Web.DynamicData.ModelProviders.AssociationDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates a many-to-many relationship.</summary>
       </Docs>
     </Member>
     <Member MemberName="ManyToOne">
@@ -43,7 +43,7 @@
         <ReturnType>System.Web.DynamicData.ModelProviders.AssociationDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates a many-to-one relationship.</summary>
       </Docs>
     </Member>
     <Member MemberName="OneToMany">
@@ -59,7 +59,7 @@
         <ReturnType>System.Web.DynamicData.ModelProviders.AssociationDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates a one-to-many relationship.</summary>
       </Docs>
     </Member>
     <Member MemberName="OneToOne">
@@ -75,7 +75,7 @@
         <ReturnType>System.Web.DynamicData.ModelProviders.AssociationDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates a one-to-one relationship.</summary>
       </Docs>
     </Member>
   </Members>

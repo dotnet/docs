@@ -17,9 +17,20 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="d">To be added.</param>
-    <param name="value">To be added.</param>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <param name="d">The <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="M:System.Workflow.ComponentModel.DependencyObject.SetValue(System.Workflow.ComponentModel.DependencyProperty,System.Object)" /> method.</param>
+    <param name="value">The <see cref="T:System.Object" /> to set the value to.</param>
+    <summary>Allows a custom override of the <see cref="M:System.Workflow.ComponentModel.DependencyObject.SetValue(System.Workflow.ComponentModel.DependencyProperty,System.Object)" /> logic associated with a dependency property that is defined on a dependency object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ The implementation of this delegate can be set to the <xref:System.Workflow.ComponentModel.PropertyMetadata.SetValueOverride%2A> property of <xref:System.Workflow.ComponentModel.PropertyMetadata> while calling <xref:System.Workflow.ComponentModel.DependencyProperty.Register%2A> or <xref:System.Workflow.ComponentModel.DependencyProperty.RegisterAttached%2A>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

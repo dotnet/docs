@@ -1,49 +1,65 @@
 ---
 uid: System.Web.UI.HtmlControls.HtmlInputGenericControl
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlInputGenericControl.OnServerChange(System.EventArgs)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlInputGenericControl.System#Web#UI#IPostBackDataHandler#LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlInputGenericControl.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlInputGenericControl.#ctor(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlInputGenericControl.OnPreRender(System.EventArgs)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlInputGenericControl.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.HtmlControls.HtmlInputGenericControl.#ctor
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlInputGenericControl.System#Web#UI#IPostBackDataHandler#RaisePostDataChangedEvent
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlInputGenericControl.RaisePostDataChangedEvent
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlInputGenericControl.ServerChange
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

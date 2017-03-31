@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.IndexedString
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IndexedString.#ctor(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IndexedString.Value
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

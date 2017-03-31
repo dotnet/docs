@@ -1,29 +1,48 @@
 ---
 uid: System.Workflow.ComponentModel.CompensatableTransactionScopeActivity
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.CompensatableTransactionScopeActivity.#ctor(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.CompensatableTransactionScopeActivity.System#Workflow#ComponentModel#ICompensatableActivity#Compensate(System.Workflow.ComponentModel.ActivityExecutionContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.CompensatableTransactionScopeActivity.System#Workflow#ComponentModel#IActivityEventListener{System#Workflow#ComponentModel#ActivityExecutionStatusChangedEventArgs}#OnEvent(System.Object,System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.CompensatableTransactionScopeActivity.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.CompensatableTransactionScopeActivity.TransactionOptions
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.ComponentModel.CompensatableTransactionScopeActivity.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

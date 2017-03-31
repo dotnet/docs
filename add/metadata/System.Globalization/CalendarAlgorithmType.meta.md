@@ -1,4 +1,6 @@
 ---
 uid: System.Globalization.CalendarAlgorithmType
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

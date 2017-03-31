@@ -8,8 +8,17 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides basic functionality for describing the structure of a data field at design time.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.IDataSourceFieldSchema> interface allows a class to implement a set of properties that describe a field in a data source. The <xref:System.Web.UI.Design.DataSetFieldSchema> class implements the <xref:System.Web.UI.Design.IDataSourceFieldSchema> interface.  
+  
+ Classes that implement the <xref:System.Web.UI.Design.IDataSourceFieldSchema> are used by custom control designer components to provide lists of data source fields and properties for data-bound controls at design time.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="DataType">
@@ -25,8 +34,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type of data stored in the field.</summary>
+        <value>A <see cref="T:System.Type" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,9 +52,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether the value of the field automatically increments for each new row.</summary>
+        <value>
+          <see langword="true" /> if the field's <see cref="P:System.Web.UI.Design.IDataSourceFieldSchema.DataType" /> is numeric and the underlying field increments automatically as new rows are added; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For a <xref:System.Data.DataColumn> object, the <xref:System.Web.UI.Design.IDataSourceFieldSchema.Identity%2A> property corresponds to the <xref:System.Data.DataColumn.AutoIncrement%2A> property. In SQL Server, an Identity column is a numerical column that automatically increments with each added record, thereby ensuring that the value uniquely identifies that record.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -61,9 +78,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether the field is editable.</summary>
+        <value>
+          <see langword="true" /> if the field is read-only; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For a <xref:System.Data.DataColumn>, the <xref:System.Web.UI.Design.IDataSourceFieldSchema.IsReadOnly%2A> property corresponds to the <xref:System.Data.DataColumn.ReadOnly%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsUnique">
@@ -79,9 +104,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether values in the field are required to be unique.</summary>
+        <value>
+          <see langword="true" /> if data in the field must be unique; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For a <xref:System.Data.DataColumn> object, the <xref:System.Web.UI.Design.IDataSourceFieldSchema.IsUnique%2A> property corresponds to the <xref:System.Data.DataColumn.Unique%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Length">
@@ -97,9 +130,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicting the size of data that can be stored in the field.</summary>
+        <value>The number of bytes the field can store.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For a <xref:System.Data.DataColumn> object, the <xref:System.Web.UI.Design.IDataSourceFieldSchema.Length%2A> property corresponds to the <xref:System.Data.DataColumn.MaxLength%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -115,9 +155,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the name of the field.</summary>
+        <value>The name of the field.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For a <xref:System.Data.DataColumn>object, the <xref:System.Web.UI.Design.IDataSourceFieldSchema.Name%2A> property corresponds to the <xref:System.Data.DataColumn.ColumnName%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Nullable">
@@ -133,9 +180,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether the field can accept <see langword="null" /> values.</summary>
+        <value>
+          <see langword="true" /> if the field can accept <see langword="null" /> values; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For a <xref:System.Data.DataColumn> object, the <xref:System.Web.UI.Design.IDataSourceFieldSchema.Nullable%2A> property corresponds to the <xref:System.Data.DataColumn.AllowDBNull%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Precision">
@@ -151,8 +206,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the maximum number of digits used to represent a numerical value in the field.</summary>
+        <value>The maximum number of digits used to represent the values of the field if the <see cref="P:System.Web.UI.Design.IDataSourceFieldSchema.DataType" /> property of the field represents a numeric type. If this property is not implemented, it should return -1.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -169,8 +224,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the field is in the primary key.</summary>
+        <value>
+          <see langword="true" /> if the field is in the primary key; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -187,8 +243,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of decimal places to which numerical values in the field are resolved.</summary>
+        <value>If the <see cref="P:System.Web.UI.Design.IDataSourceFieldSchema.DataType" /> property of the field represents a numeric type, returns the number of decimal places to which values are resolved, otherwise <see langword="-1" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

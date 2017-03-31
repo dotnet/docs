@@ -1,9 +1,13 @@
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar.Bar
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar.Bar.Normal
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

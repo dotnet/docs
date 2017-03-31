@@ -8,7 +8,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides an interface for creating a custom <see cref="T:System.Web.UI.Design.DesignTimeResourceProviderFactory" /> class.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,8 +26,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a <see cref="T:System.Web.UI.Design.DesignTimeResourceProviderFactory" /> object.</summary>
+        <returns>A design time resource provider factory.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

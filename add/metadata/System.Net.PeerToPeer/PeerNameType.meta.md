@@ -1,4 +1,5 @@
 ---
 uid: System.Net.PeerToPeer.PeerNameType
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

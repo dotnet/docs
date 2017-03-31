@@ -12,8 +12,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains APIs used for token binding.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class implements Token Binding using native Win32 APIs. For more information, see [CNG Token Binding functions](https://msdn.microsoft.com/en-us/library/windows/desktop/mt269464\(v=vs.85\).aspx).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="BindingType">
@@ -30,8 +37,8 @@
         <ReturnType>System.Security.Authentication.ExtendedProtection.TokenBindingType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the token binding type.</summary>
+        <value>The token binding type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,8 +57,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the raw token binding Id.</summary>
+        <returns>The raw token binding Id. The first byte of the raw Id, which represents the binding type, is removed.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,119 +1,143 @@
 ---
 uid: System.Net.NetworkInformation.IPGlobalStatistics
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPGlobalStatistics.ReceivedPacketsWithAddressErrors
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPGlobalStatistics.NumberOfIPAddresses
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPGlobalStatistics.ReceivedPackets
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPGlobalStatistics.ReceivedPacketsWithHeadersErrors
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPGlobalStatistics.PacketReassembliesRequired
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPGlobalStatistics.PacketsFragmented
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPGlobalStatistics.PacketReassemblyFailures
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPGlobalStatistics.OutputPacketRoutingDiscards
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPGlobalStatistics.OutputPacketsWithNoRoute
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPGlobalStatistics.PacketReassemblyTimeout
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPGlobalStatistics.PacketFragmentFailures
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPGlobalStatistics.ReceivedPacketsDelivered
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPGlobalStatistics.ReceivedPacketsForwarded
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPGlobalStatistics.OutputPacketRequests
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPGlobalStatistics.NumberOfInterfaces
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPGlobalStatistics.OutputPacketsDiscarded
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPGlobalStatistics.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPGlobalStatistics.NumberOfRoutes
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPGlobalStatistics.ReceivedPacketsDiscarded
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPGlobalStatistics.ReceivedPacketsWithUnknownProtocol
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPGlobalStatistics.ForwardingEnabled
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPGlobalStatistics.PacketsReassembled
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPGlobalStatistics.DefaultTtl
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

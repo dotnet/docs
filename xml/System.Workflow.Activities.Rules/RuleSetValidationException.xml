@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the exception thrown when processing cannot continue because a rule set cannot be validated.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Workflow.Activities.Rules.RuleSetValidationException> is thrown by the <xref:System.Workflow.Activities.Rules.RuleEngine> constructor if the <xref:System.Workflow.Activities.Rules.RuleSet> that is used has validation errors.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleSetValidationException" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +50,8 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The error message that explains the reason for the exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleSetValidationException" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,9 +69,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="serializeInfo">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serializeInfo">Reference to the object that holds the data needed to deserialize the exception.</param>
+        <param name="context">Provides the means for deserializing the exception data.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleSetValidationException" /> class from serialized data.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,9 +89,9 @@
         <Parameter Name="ex" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="ex">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The error message that explains the reason for the exception.</param>
+        <param name="ex">The inner exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleSetValidationException" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,9 +109,9 @@
         <Parameter Name="errors" Type="System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="errors">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The error message that explains the reason for the exception.</param>
+        <param name="errors">Collection of validation errors that occurred while validating a rule set.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleSetValidationException" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,8 +128,8 @@
         <ReturnType>System.Workflow.ComponentModel.Compiler.ValidationErrorCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of validation errors that occurred while validating a rule set.</summary>
+        <value>A <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" /> that contains the validation errors.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,9 +150,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">Reference to the object that holds the data needed to serialize and deserialize the exception.</param>
+        <param name="context">Provides the means for serializing the exception data.</param>
+        <summary>Implements the <see cref="T:System.Runtime.Serialization.ISerializable" /> interface.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,4 +1,6 @@
 ---
 uid: System.Runtime.Remoting.MetadataServices
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

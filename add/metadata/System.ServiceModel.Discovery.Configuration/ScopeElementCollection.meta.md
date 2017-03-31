@@ -1,9 +1,13 @@
 ---
 uid: System.ServiceModel.Discovery.Configuration.ScopeElementCollection
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.Configuration.ScopeElementCollection.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -1,24 +1,35 @@
 ---
 uid: System.Web.UI.Design.ITemplateEditingService
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ITemplateEditingService.GetContainingTemplateName(System.Web.UI.Control)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ITemplateEditingService.SupportsNestedTemplateEditing
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ITemplateEditingService.CreateFrame(System.Web.UI.Design.TemplatedControlDesigner,System.String,System.String[],System.Web.UI.WebControls.Style,System.Web.UI.WebControls.Style[])
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ITemplateEditingService.CreateFrame(System.Web.UI.Design.TemplatedControlDesigner,System.String,System.String[])
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ITemplateEditingService.CreateFrame
+ms.author: "riande"
+manager: "wpickett"
 ---

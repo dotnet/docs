@@ -1,29 +1,41 @@
 ---
 uid: System.ComponentModel.ErrorsChangedEventManager
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.ErrorsChangedEventManager.StartListening(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.ErrorsChangedEventManager.NewListenerList
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.ErrorsChangedEventManager.RemoveHandler(System.ComponentModel.INotifyDataErrorInfo,System.EventHandler{System.ComponentModel.DataErrorsChangedEventArgs})
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.ErrorsChangedEventManager.StopListening(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.ErrorsChangedEventManager.AddHandler(System.ComponentModel.INotifyDataErrorInfo,System.EventHandler{System.ComponentModel.DataErrorsChangedEventArgs})
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

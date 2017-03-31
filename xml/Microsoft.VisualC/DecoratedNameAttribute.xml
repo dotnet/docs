@@ -19,8 +19,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>An attribute used by the compiler to pass the decorated name of a method to the linker.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The decorated name of a method incorporates information about the method's parameter types.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,7 +46,7 @@
       </Attributes>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualC.DecoratedNameAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +68,8 @@
         <Parameter Name="decoratedName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="decoratedName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="decoratedName">The decorated name of a method.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualC.DecoratedNameAttribute" /> class using the specified decorated name.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

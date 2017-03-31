@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Base class for security keys.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Security keys are used for cryptographic operations, such as generating digital signatures and encrypting XML data.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SecurityKey" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,11 +54,18 @@
         <Parameter Name="keyData" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="algorithm">To be added.</param>
-        <param name="keyData">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="algorithm">The cryptographic algorithm that was used to encrypt the key.</param>
+        <param name="keyData">An array of <see cref="T:System.Byte" /> that contains the encrypted key.</param>
+        <summary>When overridden in a derived class, decrypts the specified encrypted key.</summary>
+        <returns>An array of <see cref="T:System.Byte" /> that contains the decrypted key.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the static fields of the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class to specify the algorithm.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EncryptKey">
@@ -71,11 +85,18 @@
         <Parameter Name="keyData" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="algorithm">To be added.</param>
-        <param name="keyData">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="algorithm">The cryptographic algorithm to encrypt the key with.</param>
+        <param name="keyData">An array of <see cref="T:System.Byte" /> that contains the key.</param>
+        <summary>When overridden in a derived class, encrypts the specified key.</summary>
+        <returns>An array of <see cref="T:System.Byte" /> that contains the encrypted key.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the static fields of the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class to specify the algorithm.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsAsymmetricAlgorithm">
@@ -94,10 +115,18 @@
         <Parameter Name="algorithm" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="algorithm">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="algorithm">The cryptographic algorithm.</param>
+        <summary>When overridden in a derived class, gets a value that indicates whether the specified algorithm uses asymmetric keys.</summary>
+        <returns>
+          <see langword="true" /> when the specified algorithm uses asymmetric keys; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the static fields of the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class to specify the algorithm.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSupportedAlgorithm">
@@ -116,9 +145,10 @@
         <Parameter Name="algorithm" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="algorithm">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="algorithm">The cryptographic algorithm.</param>
+        <summary>When overridden in a derived class, gets a value that indicates whether the specified algorithm is supported by this class.</summary>
+        <returns>
+          <see langword="true" /> when the specified algorithm is supported by this class; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -138,10 +168,18 @@
         <Parameter Name="algorithm" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="algorithm">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="algorithm">The cryptographic algorithm.</param>
+        <summary>When overridden in a derived class, gets a value that indicates whether the specified algorithm uses symmetric keys.</summary>
+        <returns>
+          <see langword="true" /> when the specified algorithm uses symmetric keys; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the static fields of the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class to specify the algorithm.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="KeySize">
@@ -157,8 +195,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When overridden in a derived class, gets the size, in bits, of the key.</summary>
+        <value>The size, in bits, of the key.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

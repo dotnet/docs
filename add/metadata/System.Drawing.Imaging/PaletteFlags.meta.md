@@ -1,4 +1,6 @@
 ---
 uid: System.Drawing.Imaging.PaletteFlags
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

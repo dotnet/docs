@@ -20,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a set of services that convert a managed assembly to a COM type library and vice versa.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -44,13 +44,20 @@
         <Parameter Name="notifySink" Type="System.Runtime.InteropServices.ITypeLibExporterNotifySink" />
       </Parameters>
       <Docs>
-        <param name="assembly">To be added.</param>
-        <param name="typeLibName">To be added.</param>
-        <param name="flags">To be added.</param>
-        <param name="notifySink">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="assembly">The assembly to convert.</param>
+        <param name="typeLibName">The file name of the resulting type library.</param>
+        <param name="flags">A <see cref="T:System.Runtime.InteropServices.TypeLibExporterFlags" /> value indicating any special settings.</param>
+        <param name="notifySink">The <see cref="T:System.Runtime.InteropServices.ITypeLibExporterNotifySink" /> interface implemented by the caller.</param>
+        <summary>Converts an assembly to a COM type library.</summary>
+        <returns>An object that implements the <see langword="ITypeLib" /> interface.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information on `ITypeLib`, please see its existing documentation in the MSDN library.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertTypeLibToAssembly">
@@ -76,16 +83,24 @@
         <Parameter Name="unsafeInterfaces" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="typeLib">To be added.</param>
-        <param name="asmFileName">To be added.</param>
-        <param name="flags">To be added.</param>
-        <param name="notifySink">To be added.</param>
-        <param name="publicKey">To be added.</param>
-        <param name="keyPair">To be added.</param>
-        <param name="unsafeInterfaces">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="typeLib">The object that implements the <see langword="ITypeLib" /> interface.</param>
+        <param name="asmFileName">The file name of the resulting assembly.</param>
+        <param name="flags">A <see cref="T:System.Runtime.InteropServices.TypeLibImporterFlags" /> value indicating any special settings.</param>
+        <param name="notifySink">
+          <see cref="T:System.Runtime.InteropServices.ITypeLibImporterNotifySink" /> interface implemented by the caller.</param>
+        <param name="publicKey">A <see langword="byte" /> array containing the public key.</param>
+        <param name="keyPair">A <see cref="T:System.Reflection.StrongNameKeyPair" /> object containing the public and private cryptographic key pair.</param>
+        <param name="unsafeInterfaces">If <see langword="true" />, the interfaces require link time checks for <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /> permission. If <see langword="false" />, the interfaces require run time checks that require a stack walk and are more expensive, but help provide greater protection.</param>
+        <summary>Converts a COM type library to an assembly.</summary>
+        <returns>An <see cref="T:System.Reflection.Emit.AssemblyBuilder" /> object containing the converted type library.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information on `ITypeLib`, please see its existing documentation in the MSDN library.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertTypeLibToAssembly">
@@ -112,17 +127,25 @@
         <Parameter Name="asmVersion" Type="System.Version" />
       </Parameters>
       <Docs>
-        <param name="typeLib">To be added.</param>
-        <param name="asmFileName">To be added.</param>
-        <param name="flags">To be added.</param>
-        <param name="notifySink">To be added.</param>
-        <param name="publicKey">To be added.</param>
-        <param name="keyPair">To be added.</param>
-        <param name="asmNamespace">To be added.</param>
-        <param name="asmVersion">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="typeLib">The object that implements the <see langword="ITypeLib" /> interface.</param>
+        <param name="asmFileName">The file name of the resulting assembly.</param>
+        <param name="flags">A <see cref="T:System.Runtime.InteropServices.TypeLibImporterFlags" /> value indicating any special settings.</param>
+        <param name="notifySink">
+          <see cref="T:System.Runtime.InteropServices.ITypeLibImporterNotifySink" /> interface implemented by the caller.</param>
+        <param name="publicKey">A <see langword="byte" /> array containing the public key.</param>
+        <param name="keyPair">A <see cref="T:System.Reflection.StrongNameKeyPair" /> object containing the public and private cryptographic key pair.</param>
+        <param name="asmNamespace">The namespace for the resulting assembly.</param>
+        <param name="asmVersion">The version of the resulting assembly. If <see langword="null" />, the version of the type library is used.</param>
+        <summary>Converts a COM type library to an assembly.</summary>
+        <returns>An <see cref="T:System.Reflection.Emit.AssemblyBuilder" /> object containing the converted type library.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information on `ITypeLib`, please see its existing documentation in the MSDN library.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetPrimaryInteropAssembly">
@@ -147,14 +170,15 @@
         <Parameter Name="asmCodeBase" Type="System.String&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="g">To be added.</param>
-        <param name="major">To be added.</param>
-        <param name="minor">To be added.</param>
-        <param name="lcid">To be added.</param>
-        <param name="asmName">To be added.</param>
-        <param name="asmCodeBase">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="g">The GUID of the type library.</param>
+        <param name="major">The major version number of the type library.</param>
+        <param name="minor">The minor version number of the type library.</param>
+        <param name="lcid">The LCID of the type library.</param>
+        <param name="asmName">On successful return, the name of the primary interop assembly associated with <c>g</c>.</param>
+        <param name="asmCodeBase">On successful return, the code base of the primary interop assembly associated with <c>g</c>.</param>
+        <summary>Gets the name and code base of a primary interop assembly for a specified type library.</summary>
+        <returns>
+          <see langword="true" /> if the primary interop assembly was found in the registry; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

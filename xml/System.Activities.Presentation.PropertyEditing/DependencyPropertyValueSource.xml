@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Identifies and reports value sources for properties that are dependent upon a parent property.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a property element in XAML code that contains a markup extension.</summary>
+        <value>A value source that is a XAML element that contains a markup extension.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <ReturnType>System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the value of a property that represents a binding between a property and a data source.</summary>
+        <value>A value source that designates a data binding.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +64,8 @@
         <ReturnType>System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the value of a property that does not have its value set in XAML and does not inherit any value from its parent property.</summary>
+        <value>A default value source.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +82,8 @@
         <ReturnType>System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the value of a property that is inherited from a parent property.</summary>
+        <value>A value source that indicates the property is inherited.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,8 +100,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the property is set to a custom markup extension.</summary>
+        <value>
+          <see langword="true" /> if the property is a custom markup extension; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,8 +119,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the property is set to a data binding expression.</summary>
+        <value>
+          <see langword="true" /> if the property is set to a data binding expression; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,8 +138,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the property is set to its default value.</summary>
+        <value>
+          <see langword="true" /> if the property is set to its default value; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,8 +157,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the property is set to an expression.</summary>
+        <value>
+          <see langword="true" /> if the property is set to an expression; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -172,8 +176,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the property is inherited from a parent property.</summary>
+        <value>
+          <see langword="true" /> if the property is inherited; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -190,8 +195,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the property is set to a local value.</summary>
+        <value>
+          <see langword="true" /> if the property is set to a local value; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -208,8 +214,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the property is set to a resource value that appears inside a block of code, in blocks nested in that block, or within the list of formal parameter declarations in a function definition.</summary>
+        <value>
+          <see langword="true" /> if the property is set to a local resource value; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -226,8 +233,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Read-only property that returns true if the property is set to a system or local resource.</summary>
+        <value>
+          <see langword="true" /> if the property is set to a system or local resource; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -244,8 +252,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the property is set to a system resource.</summary>
+        <value>
+          <see langword="true" /> if the property is set to a system resource; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -262,8 +271,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the property is set to a <see cref="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.TemplateBinding" /> markup extension.</summary>
+        <value>
+          <see langword="true" /> if the property is set to a template binding markup extension; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -280,8 +290,8 @@
         <ReturnType>System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the value of a property set to a local value.</summary>
+        <value>A value source that contains a local value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -298,9 +308,16 @@
         <ReturnType>System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the value of a property that represents a <see cref="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.LocalDynamicResource" /> reference.</summary>
+        <value>A value source that contains a dynamic resource reference.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Dynamic resource provides a value for a XAML property by deferring that value to be a runtime reference to a resource. A dynamic resource reference forces a new lookup each time that such a resource is accessed.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LocalStaticResource">
@@ -316,9 +333,16 @@
         <ReturnType>System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the value of a property that represents a <see cref="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.LocalStaticResource" /> reference.</summary>
+        <value>A value source that contains a static resource reference.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A static resource provides a value for a XAML property by substituting the value of an already defined resource.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SystemResource">
@@ -334,8 +358,8 @@
         <ReturnType>System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the value of a property set to a <see cref="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.SystemResource" />.</summary>
+        <value>A value source that contains a value that designates a system resource.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -352,8 +376,8 @@
         <ReturnType>System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the value of a property that represents a <see cref="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.TemplateBinding" /> markup extension.</summary>
+        <value>A value source that represents a template binding markup extension.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,54 +1,65 @@
 ---
 uid: System.Web.Util.HttpEncoder
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Util.HttpEncoder.HtmlAttributeEncode(System.String,System.IO.TextWriter)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Util.HttpEncoder.HtmlEncode(System.String,System.IO.TextWriter)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Util.HttpEncoder.UrlPathEncode(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Util.HttpEncoder.JavaScriptStringEncode(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Util.HttpEncoder.UrlEncode(System.Byte[],System.Int32,System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Util.HttpEncoder.HeaderNameValueEncode(System.String,System.String,System.String@,System.String@)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Util.HttpEncoder.Default
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Util.HttpEncoder.HtmlDecode(System.String,System.IO.TextWriter)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Util.HttpEncoder.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Util.HttpEncoder.Current
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

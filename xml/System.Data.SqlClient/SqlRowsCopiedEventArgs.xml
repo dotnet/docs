@@ -20,7 +20,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the set of arguments passed to the <see cref="T:System.Data.SqlClient.SqlRowsCopiedEventHandler" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -46,9 +46,16 @@
         <Parameter Name="rowsCopied" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="rowsCopied">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="rowsCopied">An <see cref="T:System.Int64" /> that indicates the number of rows copied during the current bulk copy operation.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Data.SqlClient.SqlRowsCopiedEventArgs" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value in the `rowsCopied` parameter is reset on each call to any one of the `SqlBulkCopy.WriteToServer` methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Abort">
@@ -73,9 +80,21 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether the bulk copy operation should be aborted.</summary>
+        <value>
+          <see langword="true" /> if the bulk copy operation should be aborted; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Data.SqlClient.SqlRowsCopiedEventArgs.Abort%2A> property to cancel a bulk copy operation. Set <xref:System.Data.SqlClient.SqlRowsCopiedEventArgs.Abort%2A> to `true` to abort the bulk copy operation.  
+  
+ If you call the **Close** method from <xref:System.Data.SqlClient.SqlBulkCopy.SqlRowsCopied>, an exception is generated, and the <xref:System.Data.SqlClient.SqlBulkCopy> object state does not change.  
+  
+ If an application specifically creates a <xref:System.Data.SqlClient.SqlTransaction> object in the <xref:System.Data.SqlClient.SqlCommand> constructor, the transaction is not rolled back. The application is responsible for determining whether it is required to rollback the operation, and if so, it must call the <xref:System.Data.SqlClient.SqlTransaction.Rollback%2A?displayProperty=fullName> method. If the application does not create a transaction, the internal transaction corresponding to the current batch is automatically rolled back. However, changes related to previous batches within the bulk copy operation are retained, because the transactions for them already have been committed.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RowsCopied">
@@ -100,9 +119,17 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that returns the number of rows copied during the current bulk copy operation.</summary>
+        <value>
+          <see langword="int" /> that returns the number of rows copied.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value in the <xref:System.Data.SqlClient.SqlRowsCopiedEventArgs.RowsCopied%2A> property is reset on each call to any of the `SqlBulkCopy.WriteToServer` methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

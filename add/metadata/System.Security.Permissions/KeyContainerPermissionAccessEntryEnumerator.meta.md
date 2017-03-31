@@ -1,24 +1,34 @@
 ---
 uid: System.Security.Permissions.KeyContainerPermissionAccessEntryEnumerator
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.KeyContainerPermissionAccessEntryEnumerator.Current
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.KeyContainerPermissionAccessEntryEnumerator.System#Collections#IEnumerator#Current
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.KeyContainerPermissionAccessEntryEnumerator.MoveNext
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.KeyContainerPermissionAccessEntryEnumerator.Reset
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

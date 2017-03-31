@@ -1,4 +1,6 @@
 ---
 uid: System.Web.Services.Description.OperationFlow
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

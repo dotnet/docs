@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the settings for an activity that sends a message.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.SendSettings" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <ReturnType>System.ServiceModel.Endpoint</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the endpoint to send messages to.</summary>
+        <value>The endpoint to send messages to.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +61,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the address of the endpoint to send messages to.</summary>
+        <value>The endpoint address.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,8 +79,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the endpoint configuration.</summary>
+        <value>The endpoint configuration name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,8 +97,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether communication is one-way.</summary>
+        <value>
+          <see langword="true" /> if communication is one-way; <see langword="false" /> if communication is two-way.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,8 +116,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the display name of the owner.</summary>
+        <value>The display name of the owner.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,8 +134,8 @@
         <ReturnType>System.Nullable&lt;System.Net.Security.ProtectionLevel&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates the protection level for the message.</summary>
+        <value>One of the enumeration values of the <see cref="T:System.Net.Security.ProtectionLevel" /> enumeration.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,8 +152,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether the workflow service instance should be persisted before sending the message.</summary>
+        <value>
+          <see langword="true" /> if the workflow service should be persisted before sending the message; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -169,8 +171,8 @@
         <ReturnType>System.Security.Principal.TokenImpersonationLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates the token impersonation level allowed for the receiver of the message.</summary>
+        <value>One of the enumeration values of the <see cref="T:System.Security.Principal.TokenImpersonationLevel" /> enumeration.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

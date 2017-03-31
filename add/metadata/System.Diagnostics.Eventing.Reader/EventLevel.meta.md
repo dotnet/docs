@@ -1,19 +1,23 @@
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLevel
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLevel.Value
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLevel.DisplayName
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLevel.Name
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---

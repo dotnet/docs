@@ -1,19 +1,19 @@
 ---
 uid: System.Windows.Xps.Packaging.XpsFont
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Packaging.XpsFont.ObfuscateFontData(System.Byte[],System.Guid)
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Packaging.XpsFont.IsObfuscated
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Packaging.XpsFont.IsRestricted
-internalonly: False
+manager: "leannef"
 ---

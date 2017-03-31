@@ -1,4 +1,6 @@
 ---
 uid: System.Diagnostics.PerformanceCounterPermissionAccess
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

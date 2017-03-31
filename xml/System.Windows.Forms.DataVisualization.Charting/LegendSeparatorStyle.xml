@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the styles for legend separator lines.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Legend separator is a dashed line.</summary>
       </Docs>
     </Member>
     <Member MemberName="DotLine">
@@ -43,7 +43,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Legend separator is a dotted line.</summary>
       </Docs>
     </Member>
     <Member MemberName="DoubleLine">
@@ -59,7 +59,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Legend separator is a double line.</summary>
       </Docs>
     </Member>
     <Member MemberName="GradientLine">
@@ -75,7 +75,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Legend separator is a solid line with a gradient on the ends.</summary>
       </Docs>
     </Member>
     <Member MemberName="Line">
@@ -91,7 +91,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Legend separator is a solid line.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -107,7 +107,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No separator will be shown.</summary>
       </Docs>
     </Member>
     <Member MemberName="ThickGradientLine">
@@ -123,7 +123,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Legend separator is a thick solid line with a gradient on the ends.</summary>
       </Docs>
     </Member>
     <Member MemberName="ThickLine">
@@ -139,7 +139,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Legend separator is a thick solid line.</summary>
       </Docs>
     </Member>
   </Members>

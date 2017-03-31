@@ -1,4 +1,4 @@
 ---
 uid: System.ServiceModel
-internalonly: False
+manager: "ghogen"
 ---

@@ -1,59 +1,79 @@
 ---
 uid: System.Windows.VisualStateManager
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.VisualStateManager.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.VisualStateManager.GoToElementState(System.Windows.FrameworkElement,System.String,System.Boolean)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.VisualStateManager.GetCustomVisualStateManager(System.Windows.FrameworkElement)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.VisualStateManager.RaiseCurrentStateChanged(System.Windows.VisualStateGroup,System.Windows.VisualState,System.Windows.VisualState,System.Windows.FrameworkElement,System.Windows.FrameworkElement)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.VisualStateManager.GoToState(System.Windows.FrameworkElement,System.String,System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.VisualStateManager.GetVisualStateGroups(System.Windows.FrameworkElement)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.VisualStateManager.GoToStateCore(System.Windows.FrameworkElement,System.Windows.FrameworkElement,System.String,System.Windows.VisualStateGroup,System.Windows.VisualState,System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.VisualStateManager.SetCustomVisualStateManager(System.Windows.FrameworkElement,System.Windows.VisualStateManager)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.VisualStateManager.RaiseCurrentStateChanging(System.Windows.VisualStateGroup,System.Windows.VisualState,System.Windows.VisualState,System.Windows.FrameworkElement,System.Windows.FrameworkElement)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.VisualStateManager.CustomVisualStateManagerProperty
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.VisualStateManager.VisualStateGroupsProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

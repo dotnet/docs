@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Updates selected properties in a manifest and resigns.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.UpdateManifest" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +48,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the application manifest.</summary>
+        <value>The application manifest.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,8 +71,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the path of the application manifest.</summary>
+        <value>The path of the application manifest.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,8 +90,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Executes the task.</summary>
+        <returns>
+          <see langword="true" /> if task execution succeeded; <see cref="T:System.InvalidOperationException" /> on error.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,8 +114,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the manifest to update.</summary>
+        <value>The manifest to update.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,8 +137,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the manifest that contains updated properties.</summary>
+        <value>The manifest that contains updated properties.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,8 +155,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the target framework version.</summary>
+        <value>Returns the target framework version.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

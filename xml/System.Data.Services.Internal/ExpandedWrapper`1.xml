@@ -23,9 +23,16 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="TExpandedElement">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="TExpandedElement">Type of the expanded element.</typeparam>
+    <summary>This class is used internally by the system to implement support for queries with eager loading of related entities.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The namespace includes a number of variations of the `ExpandedWrapper` class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,7 +46,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates an instance of the <see cref="T:System.Data.Services.Internal.ExpandedWrapper`1" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,8 +63,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the description for the <see cref="T:System.Data.Services.Internal.ExpandedWrapper`1" />.</summary>
+        <value>The description of the <see cref="T:System.Data.Services.Internal.ExpandedWrapper`1" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,8 +81,8 @@
         <ReturnType>TExpandedElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the element with expanded properties.</summary>
+        <value>The object in a property expanded by <see cref="T:System.Data.Services.IExpandedResult" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,9 +102,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the property.</param>
+        <summary>Returns the value of the expanded property.</summary>
+        <returns>The value of the property.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,9 +124,9 @@
         <Parameter Name="nameIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="nameIndex">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="nameIndex">The index of the property.</param>
+        <summary>Returns a property object of the expanded property.</summary>
+        <returns>The property value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,8 +143,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the element with expanded properties.</summary>
+        <value>The object in a property expanded by <see cref="T:System.Data.Services.IExpandedResult" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

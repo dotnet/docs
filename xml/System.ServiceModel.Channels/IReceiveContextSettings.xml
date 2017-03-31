@@ -8,8 +8,15 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>An interface that enables you to set receive context settings.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Receive context allows for controlled acknowledgement when using a one-way message channel and non-destructive reads when using a queued channel.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Enabled">
@@ -25,8 +32,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that specifies if receive context is enabled.</summary>
+        <value>
+          <see langword="true" /> if receive context is enabled; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,9 +51,18 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that specifies a connection timeout when used with direct channels and message lock duration when used with queued channels.</summary>
+        <value>A timeout value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  If <xref:System.ServiceModel.Channels.IReceiveContextSettings.ValidityDuration%2A>expires for a message, any transaction that may be used for its processing, will be aborted along with the workflow instance if the expiration occurs during the transaction.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

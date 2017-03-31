@@ -1,14 +1,19 @@
 ---
 uid: System.Windows.Forms.ToolBarButtonClickEventArgs
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.ToolBarButtonClickEventArgs.Button
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolBarButtonClickEventArgs.#ctor(System.Windows.Forms.ToolBarButton)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

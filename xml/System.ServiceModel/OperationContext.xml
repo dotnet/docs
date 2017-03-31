@@ -16,8 +16,63 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides access to the execution context of a service method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.OperationContext> from within a service operation to access the current operation execution environment. In particular, the operation context is used to access callback channels in duplex services, to store extra state data across portions of the operations, and to access incoming message headers and properties as well as add outgoing message headers and properties.  
+  
+ For more information about using extensions to store state data, see [Extensible Objects](../Topic/Extensible%20Objects.md).  
+  
+ The <xref:System.ServiceModel.OperationContext> has the following properties and methods.  
+  
+-   The <xref:System.ServiceModel.OperationContext.Current%2A> property returns the <xref:System.ServiceModel.OperationContext> object representing the current execution context.  
+  
+-   The <xref:System.ServiceModel.OperationContext.ServiceSecurityContext%2A> property returns the security environment under which the method executes.  
+  
+-   The <xref:System.ServiceModel.OperationContext.EndpointDispatcher%2A> property gets the operation's <xref:System.ServiceModel.Dispatcher.EndpointDispatcher?displayProperty=fullName>.  
+  
+-   The <xref:System.ServiceModel.OperationContext.Extensions%2A> property returns an extension collection for the current <xref:System.ServiceModel.OperationContext>.  
+  
+-   The <xref:System.ServiceModel.OperationContext.Host%2A> property returns the <xref:System.ServiceModel.ServiceHostBase> object that manages the service.  
+  
+-   The <xref:System.ServiceModel.OperationContext.HasSupportingTokens%2A> property returns a value that indicates whether the method has supporting tokens, if so, the <xref:System.ServiceModel.OperationContext.SupportingTokens%2A> property gets them.  
+  
+-   The <xref:System.ServiceModel.OperationContext.IncomingMessageHeaders%2A>, <xref:System.ServiceModel.OperationContext.IncomingMessageProperties%2A>, and <xref:System.ServiceModel.OperationContext.IncomingMessageVersion%2A> properties get these items from the incoming message.  
+  
+-   The <xref:System.ServiceModel.OperationContext.OperationCompleted> event is fired when the operation has completed.  
+  
+-   The <xref:System.ServiceModel.OperationContext.OutgoingMessageHeaders%2A> and <xref:System.ServiceModel.OperationContext.OutgoingMessageProperties%2A> properties get these items for the outbound message.  
+  
+-   The <xref:System.ServiceModel.OperationContext.RequestContext%2A> property returns the <xref:System.ServiceModel.Channels.RequestContext> implementation for the method.  
+  
+-   The <xref:System.ServiceModel.OperationContext.InstanceContext%2A> property returns the <xref:System.ServiceModel.InstanceContext> associated with the operation.  
+  
+-   The <xref:System.ServiceModel.OperationContext.SessionId%2A> property returns the session identifier for the current channel and object.  
+  
+-   The <xref:System.ServiceModel.OperationContext.GetCallbackChannel%2A> method returns a callback channel to the caller in the case of duplex communication.  
+  
+-   The <xref:System.ServiceModel.OperationContext.SetTransactionComplete%2A> method commits the current transaction.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.ServiceModel.OperationContext.Current%2A> property and <xref:System.ServiceModel.OperationContext.GetCallbackChannel%2A> method to obtain the channel back to the caller from within a method. All methods in this example are one-way methods, enabling the service and the client to communicate in both directions independently. In this case, the example client application expects only one return call before it exits, but another client, for example a Windows Forms client, can receive any number of calls from the service.  
+  
+ [!code-csharp[SCA.CallbackContract#1](~/samples/snippets/csharp/VS_Snippets_CFX/sca.callbackcontract/cs/services.cs#1)]
+ [!code-vb[SCA.CallbackContract#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/sca.callbackcontract/vb/services.vb#1)]  
+  
+ The following client implements the `SampleDuplexHelloCallback` to receive the callback message. The imported callback contract is not the same name as the one in the service, due to the use of the <xref:System.ServiceModel.ServiceContractAttribute.Name%2A> property in the preceding example. Note that the client makes no assumptions about whether or when it might receive a callback; the server callback is entirely independent of the client's outbound call.  
+  
+> [!NOTE]
+>  For an example that uses the <xref:System.ServiceModel.OperationContext> class in a client scenario, see <xref:System.ServiceModel.OperationContextScope>.  
+  
+ [!code-csharp[SCA.CallbackContract#3](~/samples/snippets/csharp/VS_Snippets_CFX/sca.callbackcontract/cs/client.cs#3)]
+ [!code-vb[SCA.CallbackContract#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/sca.callbackcontract/vb/client.vb#3)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,9 +89,25 @@
         <Parameter Name="channel" Type="System.ServiceModel.IContextChannel" />
       </Parameters>
       <Docs>
-        <param name="channel">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="channel">The <see cref="T:System.ServiceModel.IContextChannel" /> used to create a new client <see cref="T:System.ServiceModel.OperationContext" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.OperationContext" /> class that uses the specified <see cref="T:System.ServiceModel.IContextChannel" /> in a client application.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.OperationContext.%23ctor%2A> constructor to create a new operation context within the scope of which the proxy is associated in order to modify outbound items such as headers.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.ServiceModel.OperationContextScope> to create a new context in a client application in order to add a custom header to the outgoing message.  
+  
+ [!code-csharp[OperationContextScope#4](~/samples/snippets/csharp/VS_Snippets_CFX/operationcontextscope/cs/client.cs#4)]
+ [!code-vb[OperationContextScope#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/operationcontextscope/vb/client.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The channel is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="Channel">
@@ -53,8 +124,8 @@
         <ReturnType>System.ServiceModel.IContextChannel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the channel associated with the current <see cref="T:System.ServiceModel.OperationContext" /> object.</summary>
+        <value>An <see cref="T:System.ServiceModel.IContextChannel" /> associated with the current <see cref="T:System.ServiceModel.OperationContext" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,8 +142,8 @@
         <ReturnType>System.Security.Claims.ClaimsPrincipal</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the claims-based principal associated with the operation.</summary>
+        <value>The claims principal.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,9 +161,24 @@
         <ReturnType>System.ServiceModel.OperationContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the execution context for the current thread.</summary>
+        <value>The <see cref="T:System.ServiceModel.OperationContext" /> that represents the messaging and execution context of the current method.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.OperationContext.Current%2A> property to obtain the execution and message context for the current method.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.ServiceModel.OperationContext.Current%2A> property and <xref:System.ServiceModel.OperationContext.GetCallbackChannel%2A> method to create a channel back to the caller from within a method. All methods in this example are one-way methods, enabling the service and the client to communicate in both directions independently. In this case, the example client application expects only one return call before it exits, but another client, for example a Windows Forms client, can receive any number of calls from the service.  
+  
+ [!code-csharp[SCA.CallbackContract#1](~/samples/snippets/csharp/VS_Snippets_CFX/sca.callbackcontract/cs/services.cs#1)]
+ [!code-vb[SCA.CallbackContract#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/sca.callbackcontract/vb/services.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EndpointDispatcher">
@@ -108,8 +194,8 @@
         <ReturnType>System.ServiceModel.Dispatcher.EndpointDispatcher</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the endpoint dispatcher for the endpoint to inspect or modify.</summary>
+        <value>The endpoint dispatcher for the endpoint to inspect or modify.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -127,9 +213,16 @@
         <ReturnType>System.ServiceModel.IExtensionCollection&lt;System.ServiceModel.OperationContext&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the collection of service extensions from the current message context.</summary>
+        <value>A collection of extensions of <see cref="T:System.ServiceModel.OperationContext" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.OperationContext.Extensions%2A> property to obtain a collection of all extensions of the <xref:System.ServiceModel.OperationContext> used to modify the context or add custom state. For more information about extensions, see [Extensible Objects](../Topic/Extensible%20Objects.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCallbackChannel&lt;T&gt;">
@@ -149,10 +242,33 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The type of channel used to call back to the client.</typeparam>
+        <summary>Gets a channel to the client instance that called the current operation.</summary>
+        <returns>A channel to the client instance that called the operation of the type specified in the <see cref="P:System.ServiceModel.ServiceContractAttribute.CallbackContract" /> property.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call the <xref:System.ServiceModel.OperationContext.GetCallbackChannel%2A> property to obtain a channel that you can use to call operations on the client instance that called the service.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.ServiceModel.OperationContext.Current%2A> property and <xref:System.ServiceModel.OperationContext.GetCallbackChannel%2A> method to create a channel back to the caller from within a operation. All operations in this example are one-way operations, enabling the service and the client to communicate in both directions independently. In this case, the example client application expects only one return call before it exits, but another client, for example a Windows Forms client, can receive any number of calls from the service.  
+  
+ [!code-csharp[SCA.CallbackContract#1](~/samples/snippets/csharp/VS_Snippets_CFX/sca.callbackcontract/cs/services.cs#1)]
+ [!code-vb[SCA.CallbackContract#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/sca.callbackcontract/vb/services.vb#1)]  
+  
+ The following client implements the `SampleDuplexHelloCallback` to receive the callback message. The imported callback contract is not the same name as the one in the service, due to the use of the <xref:System.ServiceModel.ServiceContractAttribute.Name%2A> property in the preceding example. Note that the client makes no assumptions about whether or when it might receive a callback; the server callback is entirely independent of the client's outbound call.  
+  
+> [!NOTE]
+>  For an example that uses the <xref:System.ServiceModel.OperationContext> class in a client scenario, see <xref:System.ServiceModel.OperationContextScope>.  
+  
+ [!code-csharp[SCA.CallbackContract#3](~/samples/snippets/csharp/VS_Snippets_CFX/sca.callbackcontract/cs/client.cs#3)]
+ [!code-vb[SCA.CallbackContract#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/sca.callbackcontract/vb/client.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HasSupportingTokens">
@@ -168,8 +284,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the incoming message has supporting tokens.</summary>
+        <value>
+          <see langword="true" /> if the incoming message has supporting tokens; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,8 +303,8 @@
         <ReturnType>System.ServiceModel.ServiceHostBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.ServiceModel.ServiceHost" /> for the current service object.</summary>
+        <value>A <see cref="T:System.ServiceModel.ServiceHost" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -205,9 +322,24 @@
         <ReturnType>System.ServiceModel.Channels.MessageHeaders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the incoming message headers for the <see cref="T:System.ServiceModel.OperationContext" />.</summary>
+        <value>A <see cref="T:System.ServiceModel.Channels.MessageHeaders" /> object that contains the incoming message headers.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to inspect or modify the request headers that arrive at a service operation or reply headers that arrive at a client proxy.  
+  
+   
+  
+## Examples  
+ The following code example shows how to read the incoming message headers in a service operation.  
+  
+ [!code-csharp[OperationContextScope#2](~/samples/snippets/csharp/VS_Snippets_CFX/operationcontextscope/cs/services.cs#2)]
+ [!code-vb[OperationContextScope#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/operationcontextscope/vb/services.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IncomingMessageProperties">
@@ -224,9 +356,16 @@
         <ReturnType>System.ServiceModel.Channels.MessageProperties</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the message properties for the incoming message in the <see cref="T:System.ServiceModel.OperationContext" />.</summary>
+        <value>A <see cref="T:System.ServiceModel.Channels.MessageProperties" /> object that contains the message properties on the incoming message.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to inspect or modify the message properties for a request message in a service operation or a reply message in a client proxy.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IncomingMessageVersion">
@@ -243,9 +382,16 @@
         <ReturnType>System.ServiceModel.Channels.MessageVersion</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the incoming SOAP message version for the <see cref="T:System.ServiceModel.OperationContext" />.</summary>
+        <value>The SOAP version of the incoming message.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to inspect the SOAP version of the request message that arrives at a service operation or the SOAP version of the reply message that arrives at a client proxy.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InstanceContext">
@@ -262,9 +408,16 @@
         <ReturnType>System.ServiceModel.InstanceContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.ServiceModel.InstanceContext" /> object that manages the current service instance.</summary>
+        <value>The <see cref="T:System.ServiceModel.InstanceContext" /> object for the current service.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.OperationContext.InstanceContext%2A> property to access the run-time object that manages the current service object.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsUserContext">
@@ -281,8 +434,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This property is intended for system use and should not be called by users.</summary>
+        <value>
+          <see langword="true" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -300,8 +454,20 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the operation has completed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.OperationContext.OperationCompleted> event to dispose parameters or a return value if you set <xref:System.ServiceModel.OperationBehaviorAttribute.AutoDisposeParameters%2A?displayProperty=fullName> to `false`. Normally you set <xref:System.ServiceModel.OperationBehaviorAttribute.AutoDisposeParameters%2A?displayProperty=fullName> to `false` to prevent [!INCLUDE[indigo2](~/includes/indigo2-md.md)] from calling <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> on the parameter and return value objects.  However, if some parameters need to be preserved while others need to be disposed, this event is the best place to dispose those parameters.  
+  
+ Also, with duplex bindings, this event can be used to send a request on the callback channel after the reply for the current operation is sent.  
+  
+> [!NOTE]
+>  If a caller is listening for the <xref:System.ServiceModel.OperationContext.OperationCompleted?displayProperty=fullName> event for an <xref:System.ServiceModel.OperationContractAttribute.IsTerminating%2A?displayProperty=fullName> operation, it is possible to block when the response is received. The proper way to handle this is to schedule work on another thread when <xref:System.ServiceModel.OperationContext.OperationCompleted> is raised and then immediately return from that event handler.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OutgoingMessageHeaders">
@@ -318,9 +484,24 @@
         <ReturnType>System.ServiceModel.Channels.MessageHeaders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the outgoing message headers for the active <see cref="T:System.ServiceModel.OperationContext" />.</summary>
+        <value>A <see cref="T:System.ServiceModel.Channels.MessageHeaders" /> object that contains outbound message headers for the active <see cref="T:System.ServiceModel.OperationContext" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to add reply headers that are sent by a service operation or request headers that are sent by a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client object.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.ServiceModel.OperationContextScope> to create a new context in a client application in order to add a custom header to the outgoing message.  
+  
+ [!code-csharp[OperationContextScope#4](~/samples/snippets/csharp/VS_Snippets_CFX/operationcontextscope/cs/client.cs#4)]
+ [!code-vb[OperationContextScope#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/operationcontextscope/vb/client.vb#4)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OutgoingMessageProperties">
@@ -337,9 +518,16 @@
         <ReturnType>System.ServiceModel.Channels.MessageProperties</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the message properties for the outbound message in the active <see cref="T:System.ServiceModel.OperationContext" />.</summary>
+        <value>A <see cref="T:System.ServiceModel.Channels.MessageProperties" /> object that contains the message properties on the outbound message.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to add message properties for a reply message from a service operation or message properties for a request message from a client proxy.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RequestContext">
@@ -356,9 +544,16 @@
         <ReturnType>System.ServiceModel.Channels.RequestContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see cref="T:System.ServiceModel.Channels.RequestContext" /> implementation for this method.</summary>
+        <value>An <see cref="T:System.ServiceModel.Channels.RequestContext" /> implementation, or null if there is no request context.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ One-way operations are do not have a request context.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ServiceSecurityContext">
@@ -374,8 +569,8 @@
         <ReturnType>System.ServiceModel.ServiceSecurityContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="T:System.ServiceModel.ServiceSecurityContext" /> within which this method executes.</summary>
+        <value>A <see cref="T:System.ServiceModel.ServiceSecurityContext" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -393,8 +588,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.String" /> used to identify the current session.</summary>
+        <value>The session identifier.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -412,8 +607,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Commits the currently executing transaction.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is only useful in operations that set <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete%2A?displayProperty=fullName> to `false`. Typically, services do this on some but not all operations. When <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete%2A?displayProperty=fullName> is false the transaction completes automatically. Use <xref:System.ServiceModel.OperationContext.SetTransactionComplete%2A> in cases where it is not possible to determine at design-time whether an operation needs to complete the transaction.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">There is no transaction in the context.</exception>
       </Docs>
     </Member>
     <Member MemberName="SupportingTokens">
@@ -429,8 +632,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.ServiceModel.Security.SupportingTokenSpecification&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.Collections.Generic.ICollection`1" /> of type <see cref="T:System.IdentityModel.Tokens.SecurityToken" />.</summary>
+        <value>A collection of security tokens.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

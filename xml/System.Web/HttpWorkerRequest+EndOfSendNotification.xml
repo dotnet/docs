@@ -17,9 +17,16 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="wr">To be added.</param>
-    <param name="extraData">To be added.</param>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <param name="wr">The current <see cref="T:System.Web.HttpWorkerRequest" />.</param>
+    <param name="extraData">Any additional data needed to process the request.</param>
+    <summary>Represents the method that Notifies callers when sending of the response is complete.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The host can use this notification to implement buffer recycling.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

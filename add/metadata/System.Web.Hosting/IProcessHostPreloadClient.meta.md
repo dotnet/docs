@@ -1,9 +1,11 @@
 ---
 uid: System.Web.Hosting.IProcessHostPreloadClient
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.IProcessHostPreloadClient.Preload(System.String[])
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

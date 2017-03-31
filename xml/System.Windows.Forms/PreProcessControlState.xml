@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides options that specify the relationship between the control and preprocessing messages.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Windows.Forms.PreProcessControlState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the control requires the message and that processing should continue.</summary>
       </Docs>
     </Member>
     <Member MemberName="MessageNotNeeded">
@@ -43,7 +43,7 @@
         <ReturnType>System.Windows.Forms.PreProcessControlState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the control does not require the message.</summary>
       </Docs>
     </Member>
     <Member MemberName="MessageProcessed">
@@ -59,7 +59,7 @@
         <ReturnType>System.Windows.Forms.PreProcessControlState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the message has been processed and no further processing is required.</summary>
       </Docs>
     </Member>
   </Members>

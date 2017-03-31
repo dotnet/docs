@@ -16,9 +16,18 @@
     <ReturnType>System.Object</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="arg">To be added.</param>
-    <summary>To be added.</summary>
-    <returns>To be added.</returns>
-    <remarks>To be added.</remarks>
+    <param name="arg">An argument passed to the callback.</param>
+    <summary>Represents a delegate to use for dispatcher operations.</summary>
+    <returns>The object returned by the callback.</returns>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ It is not necessary to use this delegate for dispatcher operations, but <xref:System.Windows.Threading.DispatcherOperationCallback> and <xref:System.Threading.SendOrPostCallback> use dynamic invoking.  
+  
+ Partial Trust applications do not support dynamic invoking, so you must use either <xref:System.Windows.Threading.DispatcherOperationCallback> or <xref:System.Threading.SendOrPostCallback> if the application is going to be running in Partial Trust.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

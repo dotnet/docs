@@ -1,29 +1,35 @@
 ---
 uid: Microsoft.Build.Execution.ProjectOnErrorInstance
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ProjectOnErrorInstance.ExecuteTargets
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ProjectOnErrorInstance.Condition
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ProjectOnErrorInstance.ExecuteTargetsLocation
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ProjectOnErrorInstance.ConditionLocation
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ProjectOnErrorInstance.Location
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

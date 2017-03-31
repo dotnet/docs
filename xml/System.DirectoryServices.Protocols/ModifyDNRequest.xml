@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.ModifyDNRequest" /> class modifies the distinguished name of an object. This class moves an object to a new parent and/or renames the object.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.ModifyDNRequest.#ctor" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.ModifyDNRequest" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -45,10 +45,10 @@
         <Parameter Name="newName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="distinguishedName">To be added.</param>
-        <param name="newParentDistinguishedName">To be added.</param>
-        <param name="newName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="distinguishedName">The current distinguished name of the object.</param>
+        <param name="newParentDistinguishedName">The distinguished name of the new parent of the object.</param>
+        <param name="newName">The new distinguished name of the object.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.ModifyDNRequest.#ctor(System.String,System.String,System.String)" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.ModifyDNRequest" /> object using the specified object name, parent name, and new object name.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,8 +65,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.ModifyDNRequest.DeleteOldRdn" /> property specifies whether to delete the old relative distinguished name (RDN) of the object.</summary>
+        <value>This property is <see langword="true" /> if the RDN should be deleted or <see langword="false" /> if it should not be deleted.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,8 +83,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.ModifyDNRequest.DistinguishedName" /> property contains the distinguished name of the object.</summary>
+        <value>The distinguished name of the object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,8 +101,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.ModifyDNRequest.NewName" /> property contains the new object name.</summary>
+        <value>The new object name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,8 +119,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.ModifyDNRequest.NewParentDistinguishedName" /> property contains the distinguished name of the new parent of the object.</summary>
+        <value>The distinguished name of the new parent of the object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,9 +140,9 @@
         <Parameter Name="doc" Type="System.Xml.XmlDocument" />
       </Parameters>
       <Docs>
-        <param name="doc">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="doc">A <see cref="T:System.Xml.XmlDocument" /> object.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.ModifyDNRequest.ToXmlNode(System.Xml.XmlDocument)" /> method creates an XML node from the specified <see cref="T:System.Xml.XmlDocument" /> object.</summary>
+        <returns>The resulting <see cref="T:System.Xml.XmlElement" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

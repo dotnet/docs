@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Resolves session security tokens from the current cache.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,9 +29,9 @@
         <Parameter Name="endpointId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="tokenCache">To be added.</param>
-        <param name="endpointId">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="tokenCache">The token cache.</param>
+        <param name="endpointId">The identifier of the endpoint.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.SessionSecurityTokenResolver" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,10 +52,11 @@
         <Parameter Name="key" Type="System.IdentityModel.Tokens.SecurityKey&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="keyIdentifierClause">To be added.</param>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="keyIdentifierClause">The security key identifier clause.</param>
+        <param name="key">When this method returns, contains the resolved key core. This parameter is passed uninitialized.</param>
+        <summary>Attempts to resolve the security key core, given a specified key identifier clause.</summary>
+        <returns>
+          <see langword="true" /> if the key core was successfully resolved; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,10 +77,11 @@
         <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="keyIdentifier">To be added.</param>
-        <param name="token">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="keyIdentifier">The key identifier.</param>
+        <param name="token">When this method returns, contains the resolved key core. This parameter is passed uninitialized.</param>
+        <summary>Attempts to resolve the token from the specified key identifier.</summary>
+        <returns>
+          <see langword="true" /> if the key token was successfully resolved; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,10 +102,11 @@
         <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="keyIdentifierClause">To be added.</param>
-        <param name="token">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="keyIdentifierClause">The key identifier clause.</param>
+        <param name="token">When this method returns, contains the resolved key core. This parameter is passed uninitialized.</param>
+        <summary>Attempts to resolve the token from the specified key identifier clause.</summary>
+        <returns>
+          <see langword="true" /> if the key token was successfully resolved; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

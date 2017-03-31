@@ -10,8 +10,27 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains values that specify the type of reference to use when returning [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] elements. These values are used in the <see cref="P:System.Windows.Automation.CacheRequest.AutomationElementMode" /> property.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Full is the default, and specifies that returned elements contain a full reference to the underlying [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)]. None specifies that the returned elements have no reference to the underlying UI, and contain only cached information.  
+  
+ Certain operations on elements, such as <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A> or <xref:System.Windows.Automation.AutomationElement.SetFocus%2A>, require a full reference; attempting to perform these on an element that has none results in an <xref:System.InvalidOperationException>.  
+  
+ Using None can be more efficient when only properties are needed, as it avoids the overhead involved in setting up full references.  
+  
+   
+  
+## Examples  
+ The following example shows how to set the mode on a <xref:System.Windows.Automation.CacheRequest>.  
+  
+ [!code-csharp[UIAClient_snip#183](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#183)]
+ [!code-vb[UIAClient_snip#183](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#183)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Full">
@@ -27,7 +46,7 @@
         <ReturnType>System.Windows.Automation.AutomationElementMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that returned elements have a full reference to the underlying [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)].</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -43,7 +62,7 @@
         <ReturnType>System.Windows.Automation.AutomationElementMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that returned elements have no reference to the underlying [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] and contain only cached information. This mode might be used, for example, to retrieve the names of items in a list box without obtaining references to the items themselves.</summary>
       </Docs>
     </Member>
   </Members>

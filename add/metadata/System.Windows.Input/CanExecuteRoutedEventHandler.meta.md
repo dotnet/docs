@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Input.CanExecuteRoutedEventHandler
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

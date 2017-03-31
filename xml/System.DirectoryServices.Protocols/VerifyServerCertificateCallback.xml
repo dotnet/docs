@@ -17,10 +17,11 @@
     <ReturnType>System.Boolean</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="connection">To be added.</param>
-    <param name="certificate">To be added.</param>
-    <summary>To be added.</summary>
-    <returns>To be added.</returns>
+    <param name="connection">A <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object that specifies the connection.</param>
+    <param name="certificate">A <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate" /> object that specifies the server certificate.</param>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.VerifyServerCertificateCallback" /> delegate gets or sets the default callback function used to verify server certificates when establishing an SSL connection.</summary>
+    <returns>
+      <see langword="true" /> if the client approves the server certificate; otherwise <see langword="false" />.</returns>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

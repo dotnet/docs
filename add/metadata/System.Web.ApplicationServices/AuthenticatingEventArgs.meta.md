@@ -1,29 +1,41 @@
 ---
 uid: System.Web.ApplicationServices.AuthenticatingEventArgs
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ApplicationServices.AuthenticatingEventArgs.Password
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ApplicationServices.AuthenticatingEventArgs.AuthenticationIsComplete
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ApplicationServices.AuthenticatingEventArgs.Authenticated
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ApplicationServices.AuthenticatingEventArgs.UserName
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ApplicationServices.AuthenticatingEventArgs.CustomCredential
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

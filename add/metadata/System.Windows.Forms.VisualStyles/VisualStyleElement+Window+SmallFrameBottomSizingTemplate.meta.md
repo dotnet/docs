@@ -1,9 +1,13 @@
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.Window.SmallFrameBottomSizingTemplate
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.Window.SmallFrameBottomSizingTemplate.Normal
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

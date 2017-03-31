@@ -1,9 +1,13 @@
 ---
 uid: System.Security.SuppressUnmanagedCodeSecurityAttribute
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.SuppressUnmanagedCodeSecurityAttribute.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

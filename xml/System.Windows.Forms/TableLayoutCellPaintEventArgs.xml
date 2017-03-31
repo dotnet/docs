@@ -11,8 +11,23 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides data for the <see cref="E:System.Windows.Forms.TableLayoutPanel.CellPaint" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.TableLayoutCellPaintEventArgs> class provides information about the row, column, and bounds of the cell to support painting of the cell in the table.  
+  
+   
+  
+## Examples  
+ The following example shows how to a <xref:System.Windows.Forms.TableLayoutCellPaintEventArgs> to customize the appearance of a <xref:System.Windows.Forms.TableLayoutPanel> control. This code example is part of a larger example provided for the <xref:System.Windows.Forms.TableLayoutPanel> control.  
+  
+ [!code-csharp[System.Windows.Forms.TableLayoutPanel#100](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel/CS/form1.cs#100)]
+ [!code-vb[System.Windows.Forms.TableLayoutPanel#100](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel/VB/form1.vb#100)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,12 +47,12 @@
         <Parameter Name="row" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="g">To be added.</param>
-        <param name="clipRectangle">To be added.</param>
-        <param name="cellBounds">To be added.</param>
-        <param name="column">To be added.</param>
-        <param name="row">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to paint the item.</param>
+        <param name="clipRectangle">The <see cref="T:System.Drawing.Rectangle" /> that represents the rectangle in which to paint.</param>
+        <param name="cellBounds">The bounds of the cell.</param>
+        <param name="column">The column of the cell.</param>
+        <param name="row">The row of the cell.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TableLayoutCellPaintEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,9 +69,19 @@
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the size and location of the cell.</summary>
+        <value>A <see cref="T:System.Drawing.Rectangle" /> representing the size and location of the cell.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to a <xref:System.Windows.Forms.TableLayoutCellPaintEventArgs> to customize the appearance of a <xref:System.Windows.Forms.TableLayoutPanel> control. This code example is part of a larger example provided for the <xref:System.Windows.Forms.TableLayoutPanel> control.  
+  
+ [!code-csharp[System.Windows.Forms.TableLayoutPanel#100](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel/CS/form1.cs#100)]
+ [!code-vb[System.Windows.Forms.TableLayoutPanel#100](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel/VB/form1.vb#100)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Column">
@@ -72,9 +97,19 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the column of the cell.</summary>
+        <value>The column position of the cell.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to a <xref:System.Windows.Forms.TableLayoutCellPaintEventArgs> to customize the appearance of a <xref:System.Windows.Forms.TableLayoutPanel> control. This code example is part of a larger example provided for the <xref:System.Windows.Forms.TableLayoutPanel> control.  
+  
+ [!code-csharp[System.Windows.Forms.TableLayoutPanel#100](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel/CS/form1.cs#100)]
+ [!code-vb[System.Windows.Forms.TableLayoutPanel#100](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel/VB/form1.vb#100)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Row">
@@ -90,9 +125,19 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the row of the cell.</summary>
+        <value>The row position of the cell.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to a <xref:System.Windows.Forms.TableLayoutCellPaintEventArgs> to customize the appearance of a <xref:System.Windows.Forms.TableLayoutPanel> control. This code example is part of a larger example provided for the <xref:System.Windows.Forms.TableLayoutPanel> control.  
+  
+ [!code-csharp[System.Windows.Forms.TableLayoutPanel#100](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel/CS/form1.cs#100)]
+ [!code-vb[System.Windows.Forms.TableLayoutPanel#100](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel/VB/form1.vb#100)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

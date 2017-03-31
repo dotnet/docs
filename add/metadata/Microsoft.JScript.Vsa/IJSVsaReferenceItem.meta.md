@@ -1,9 +1,13 @@
 ---
 uid: Microsoft.JScript.Vsa.IJSVsaReferenceItem
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.JScript.Vsa.IJSVsaReferenceItem.AssemblyName
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

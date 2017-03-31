@@ -18,8 +18,25 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Generates the [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] on behalf of its host, such as an <see cref="T:System.Windows.Controls.ItemsControl" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Controls.ItemContainerGenerator> implements <xref:System.Windows.Controls.Primitives.IItemContainerGenerator>, which is the interface that defines a type which:  
+  
+-   Maintains an association between the data view of a multiple-item control, such as <xref:System.Windows.Controls.ItemsControl.ContainerFromElement%2A> and the corresponding <xref:System.Windows.UIElement> items.  
+  
+-   Generates <xref:System.Windows.UIElement> items on behalf of a multiple-item control.  
+  
+ Each <xref:System.Windows.Controls.ItemsControl> type has a corresponding container type. Container elements are the objects that contain the data items in the item collection. For example, for <xref:System.Windows.Controls.ListBox>, the generated containers are <xref:System.Windows.Controls.ListBoxItem> controls; for <xref:System.Windows.Controls.ComboBox>, they are <xref:System.Windows.Controls.ComboBoxItem> controls.  
+  
+ The <xref:System.Windows.Controls.ItemsControl> generates its items through the <xref:System.Windows.Controls.Primitives.IItemContainerGenerator> interface. The <xref:System.Windows.Controls.ItemsControl.ItemContainerGenerator%2A> property of the <xref:System.Windows.Controls.ItemsControl> is of type <xref:System.Windows.Controls.ItemContainerGenerator>, which implements the <xref:System.Windows.Controls.Primitives.IItemContainerGenerator> interface. Therefore, you can access the <xref:System.Windows.Controls.ItemContainerGenerator> object associated with your <xref:System.Windows.Controls.ItemsControl> using the <xref:System.Windows.Controls.ItemsControl.ItemContainerGenerator%2A> property. For example, if you have a data-bound <xref:System.Windows.Controls.TreeView>, and you want to get a <xref:System.Windows.Controls.TreeViewItem> based on its index or its associated data item, you can use the <xref:System.Windows.Controls.ItemContainerGenerator.ContainerFromIndex%2A?displayProperty=fullName> or the <xref:System.Windows.Controls.ItemContainerGenerator.ContainerFromItem%2A?displayProperty=fullName> method. Alternatively, you can use the <xref:System.Windows.Controls.ItemContainerGenerator.IndexFromContainer%2A?displayProperty=fullName> or the <xref:System.Windows.Controls.ItemContainerGenerator.ItemFromContainer%2A?displayProperty=fullName> method to get the index or data item associated with a given generated container element.  
+  
+ Apart from those usages, the <xref:System.Windows.Controls.Primitives.IItemContainerGenerator> interface is used in advanced scenarios. Typically, advanced applications that have their own implementation of a virtualizing panel call members of the interface.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ContainerFromIndex">
@@ -38,9 +55,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="index">The index of the desired item.</param>
+        <summary>Returns the element corresponding to the item at the given index within the <see cref="T:System.Windows.Controls.ItemCollection" />.</summary>
+        <returns>Returns the element corresponding to the item at the given index within the <see cref="T:System.Windows.Controls.ItemCollection" /> or returns <see langword="null" /> if the item is not realized.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,9 +77,9 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The <see cref="T:System.Object" /> item to find the <see cref="T:System.Windows.UIElement" /> for.</param>
+        <summary>Returns the <see cref="T:System.Windows.UIElement" /> corresponding to the given item.</summary>
+        <returns>A <see cref="T:System.Windows.UIElement" /> that corresponds to the given item. Returns <see langword="null" /> if the item does not belong to the item collection, or if a <see cref="T:System.Windows.UIElement" /> has not been generated for it.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,9 +97,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns an object that manages the <see cref="P:System.Windows.Controls.ItemContainerGenerator.Status" /> property.</summary>
+        <returns>An object that manages the <see cref="P:System.Windows.Controls.ItemContainerGenerator.Status" /> property.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A class that inherits from <xref:System.Windows.Controls.VirtualizingPanel> can use this method to get an object that will properly set the generated property.  When the <xref:System.Windows.Controls.ItemContainerGenerator.GenerateBatches%2A> method returns, <xref:System.Windows.Controls.ItemContainerGenerator.Status%2A> property is set to <xref:System.Windows.Controls.Primitives.GeneratorStatus>.  When the object is disposed, <xref:System.Windows.Controls.ItemContainerGenerator.Status%2A> is set to <xref:System.Windows.Controls.Primitives.GeneratorStatus>.  You can pass the object to a `using` statement that encapsulates your logic that generates item containers.  When the object returned from <xref:System.Windows.Controls.ItemContainerGenerator.GenerateBatches%2A> goes out of scope, the <xref:System.Windows.Controls.ItemContainerGenerator.Status%2A> property will be properly set.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IndexFromContainer">
@@ -101,10 +125,19 @@
         <Parameter Name="container" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="container">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="container">The <see cref="T:System.Windows.DependencyObject" /> that corresponds to the item to the index to be returned.</param>
+        <summary>Returns the index to an item that corresponds to the specified, generated <see cref="T:System.Windows.UIElement" />.</summary>
+        <returns>An <see cref="T:System.Int32" /> index to an item that corresponds to the specified, generated <see cref="T:System.Windows.UIElement" /> or -1 if <paramref name="container" /> is not found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling this method is identical to calling the <xref:System.Windows.Controls.ItemContainerGenerator.IndexFromContainer%28System.Windows.DependencyObject%2CSystem.Boolean%29?displayProperty=fullName> method and passing `false` to the `returnLocalIndex` parameter.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="container" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="IndexFromContainer">
@@ -124,10 +157,11 @@
         <Parameter Name="returnLocalIndex" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="container">To be added.</param>
-        <param name="returnLocalIndex">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="container">The <see cref="T:System.Windows.DependencyObject" /> that corresponds to the item to the index to be returned.</param>
+        <param name="returnLocalIndex">
+          <see langword="true" /> to search the current level of hierarchical items; <see langword="false" /> to recursively search hierarchical items.</param>
+        <summary>Returns the index to an item that corresponds to the specified, generated <see cref="T:System.Windows.UIElement" />, optionally recursively searching hierarchical items.</summary>
+        <returns>An <see cref="T:System.Int32" /> index to an item that corresponds to the specified, generated <see cref="T:System.Windows.UIElement" /> or -1 if <paramref name="container" /> is not found.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -147,10 +181,12 @@
         <Parameter Name="container" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="container">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="container">The <see cref="T:System.Windows.DependencyObject" /> that corresponds to the item to be returned.</param>
+        <summary>Returns the item that corresponds to the specified, generated <see cref="T:System.Windows.UIElement" />.</summary>
+        <returns>A <see cref="T:System.Windows.DependencyObject" /> that is the item which corresponds to the specified, generated <see cref="T:System.Windows.UIElement" />. If the <see cref="T:System.Windows.UIElement" /> has not been generated, <see cref="F:System.Windows.DependencyProperty.UnsetValue" /> is returned.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="container" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Items">
@@ -166,9 +202,16 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the collection of items that belong to this <see cref="T:System.Windows.Controls.ItemContainerGenerator" />.</summary>
+        <value>The collection of items that belong to this <see cref="T:System.Windows.Controls.ItemContainerGenerator" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property frequently updates, so do not save its value.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ItemsChanged">
@@ -184,8 +227,15 @@
         <ReturnType>System.Windows.Controls.Primitives.ItemsChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="E:System.Windows.Controls.ItemContainerGenerator.ItemsChanged" /> event is raised by a <see cref="T:System.Windows.Controls.ItemContainerGenerator" /> to inform layouts that the items collection has changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The items collection changes when an item is either added, removed, moved, or the <xref:System.Windows.Controls.ItemContainerGenerator> is refreshed.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Status">
@@ -201,8 +251,8 @@
         <ReturnType>System.Windows.Controls.Primitives.GeneratorStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The generation status of the <see cref="T:System.Windows.Controls.ItemContainerGenerator" />.</summary>
+        <value>A <see cref="T:System.Windows.Controls.Primitives.GeneratorStatus" /> value that represents the generation status of the <see cref="T:System.Windows.Controls.ItemContainerGenerator" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -219,7 +269,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="E:System.Windows.Controls.ItemContainerGenerator.StatusChanged" /> event is raised by a <see cref="T:System.Windows.Controls.ItemContainerGenerator" /> to inform controls that its status has changed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -237,8 +287,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the container element used to display the next item.</summary>
+        <returns>A DependencyObject that is the container element which is used to display the next item.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -258,9 +308,9 @@
         <Parameter Name="isNewlyRealized" Type="System.Boolean&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="isNewlyRealized">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="isNewlyRealized">Is true if the returned DependencyObject is newly generated (realized); otherwise, false.</param>
+        <summary>Returns the container element used to display the next item, and whether the container element has been newly generated (realized).</summary>
+        <returns>A DependencyObject that is the container element which is used to display the next item.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -280,9 +330,9 @@
         <Parameter Name="itemIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="itemIndex">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="itemIndex">The index of desired item.</param>
+        <summary>Returns the GeneratorPosition object that maps to the item at the specified index.</summary>
+        <returns>A GeneratorPosition object that maps to the item at the specified index.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -302,9 +352,9 @@
         <Parameter Name="panel" Type="System.Windows.Controls.Panel" />
       </Parameters>
       <Docs>
-        <param name="panel">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="panel">The panel for which to return an appropriate ItemContainerGenerator.</param>
+        <summary>Returns the ItemContainerGenerator appropriate for use by the specified panel.</summary>
+        <returns>An ItemContainerGenerator appropriate for use by the specified panel.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -324,9 +374,9 @@
         <Parameter Name="position" Type="System.Windows.Controls.Primitives.GeneratorPosition" />
       </Parameters>
       <Docs>
-        <param name="position">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="position">The index of desired item.</param>
+        <summary>Returns the index that maps to the specified GeneratorPosition.</summary>
+        <returns>An Int32 that is the index which maps to the specified GeneratorPosition.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -346,8 +396,8 @@
         <Parameter Name="container" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="container">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="container">The container to prepare. Normally, container is the result of the previous call to GenerateNext.</param>
+        <summary>Prepares the specified element as the container for the corresponding item.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -368,9 +418,9 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="position">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="position">Removes one or more generated (realized) items.</param>
+        <param name="count">The Int32 number of elements to remove, starting at <c>position</c>.</param>
+        <summary>This member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -388,7 +438,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes all generated (realized) items.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -409,10 +459,10 @@
         <Parameter Name="direction" Type="System.Windows.Controls.Primitives.GeneratorDirection" />
       </Parameters>
       <Docs>
-        <param name="position">To be added.</param>
-        <param name="direction">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="position">A GeneratorPosition that specifies the position of the item to start generating items at.</param>
+        <param name="direction">A GeneratorDirection that specifies the direction which to generate items.</param>
+        <summary>Prepares the generator to generate items, starting at the specified GeneratorPosition, and in the specified GeneratorDirection.</summary>
+        <returns>An IDisposable object that tracks the lifetime of the generation process.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -434,11 +484,11 @@
         <Parameter Name="allowStartAtRealizedItem" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="position">To be added.</param>
-        <param name="direction">To be added.</param>
-        <param name="allowStartAtRealizedItem">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="position">A GeneratorPosition that specifies the position of the item to start generating items at.</param>
+        <param name="direction">A GeneratorDirection that specifies the direction which to generate items.</param>
+        <param name="allowStartAtRealizedItem">A Boolean that specifies whether to start at a generated (realized) item.</param>
+        <summary>Prepares the generator to generate items, starting at the specified GeneratorPosition, and in the specified GeneratorDirection, and controlling whether or not to start at a generated (realized) item.</summary>
+        <returns>An IDisposable object that tracks the lifetime of the generation process.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -459,9 +509,9 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="position">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="position">The index of the first element to reuse. <c>position</c> must refer to a previously generated (realized) item.</param>
+        <param name="count">The number of elements to reuse, starting at <c>position</c>.</param>
+        <summary>This member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -483,11 +533,12 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="managerType">To be added.</param>
-        <param name="sender">To be added.</param>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="managerType">The type of the <see cref="T:System.Windows.WeakEventManager" /> calling this method.</param>
+        <param name="sender">Object that originated the event.</param>
+        <param name="e">Event data.</param>
+        <summary>This member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
+        <returns>
+          <see langword="true" /> if the listener handled the event.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

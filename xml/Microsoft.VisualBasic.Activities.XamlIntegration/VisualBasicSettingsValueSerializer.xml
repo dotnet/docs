@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Serializes <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicSettings" /> instances to XAML.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:Microsoft.VisualBasic.Activities.XamlIntegration.VisualBasicSettingsValueSerializer> facilitates the serialization of Visual Basic expressions to XAML.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Activities.XamlIntegration.VisualBasicSettingsValueSerializer" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,11 +54,19 @@
         <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert.</param>
+        <param name="context">Context information that is used for conversion.</param>
+        <summary>Determines whether the specified <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicSettings" /> instance can be converted into a <see cref="T:System.String" />.</summary>
+        <returns>
+          <see langword="true" /> if the specified <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicSettings" /> instance can be converted into a <see cref="T:System.String" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When called, this method promotes the specified <xref:Microsoft.VisualBasic.Activities.VisualBasicSettings> instance to namespace declarations and adds them to the serialization context.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertToString">
@@ -71,10 +86,10 @@
         <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value to convert.</param>
+        <param name="context">Context information that is used for conversion.</param>
+        <summary>Converts the specified <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicSettings" /> instance into a <see cref="T:System.String" />.</summary>
+        <returns>A string representation of the <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicSettings" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,39 +1,58 @@
 ---
 uid: System.Windows.UIPropertyMetadata
-internalonly: False
----
-
----
-uid: System.Windows.UIPropertyMetadata.#ctor(System.Object,System.Windows.PropertyChangedCallback,System.Windows.CoerceValueCallback,System.Boolean)
-internalonly: False
----
-
----
-uid: System.Windows.UIPropertyMetadata.IsAnimationProhibited
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.UIPropertyMetadata.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.UIPropertyMetadata.#ctor(System.Object,System.Windows.PropertyChangedCallback,System.Windows.CoerceValueCallback,System.Boolean)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.UIPropertyMetadata.IsAnimationProhibited
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.UIPropertyMetadata.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.UIPropertyMetadata.#ctor(System.Object,System.Windows.PropertyChangedCallback,System.Windows.CoerceValueCallback)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.UIPropertyMetadata.#ctor(System.Object)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.UIPropertyMetadata.#ctor(System.Windows.PropertyChangedCallback)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.UIPropertyMetadata.#ctor(System.Object,System.Windows.PropertyChangedCallback)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

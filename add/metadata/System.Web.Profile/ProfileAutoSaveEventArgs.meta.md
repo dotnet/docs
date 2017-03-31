@@ -1,19 +1,23 @@
 ---
 uid: System.Web.Profile.ProfileAutoSaveEventArgs
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Profile.ProfileAutoSaveEventArgs.ContinueWithProfileAutoSave
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Profile.ProfileAutoSaveEventArgs.Context
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Profile.ProfileAutoSaveEventArgs.#ctor(System.Web.HttpContext)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -1,9 +1,13 @@
 ---
 uid: System.Runtime.InteropServices.AllowReversePInvokeCallsAttribute
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.AllowReversePInvokeCallsAttribute.#ctor
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

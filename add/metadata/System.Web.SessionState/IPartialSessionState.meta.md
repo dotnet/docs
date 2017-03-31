@@ -1,9 +1,11 @@
 ---
 uid: System.Web.SessionState.IPartialSessionState
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.SessionState.IPartialSessionState.PartialSessionStateKeys
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

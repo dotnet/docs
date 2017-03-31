@@ -1,4 +1,5 @@
 ---
 uid: System.Web.Security.AntiXss
-internalonly: False
+ms.author: "rachelap"
+manager: "wpickett"
 ---

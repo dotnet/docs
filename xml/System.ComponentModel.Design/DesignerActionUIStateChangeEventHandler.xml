@@ -17,9 +17,22 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">To be added.</param>
-    <param name="e">To be added.</param>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <param name="sender">The <see cref="T:System.Object" /> that raised the event.</param>
+    <param name="e">The event-specific information.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.ComponentModel.Design.DesignerActionUIService.DesignerActionUIStateChange" /> event of a <see cref="T:System.ComponentModel.Design.DesignerActionUIService" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The event model in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] is based on having an event delegate that connects an event with its handler. To raise a <xref:System.ComponentModel.Design.DesignerActionUIService.DesignerActionUIStateChange> event, two elements are needed:  
+  
+-   The <xref:System.ComponentModel.Design.DesignerActionUIStateChangeEventArgs> class, derived from <xref:System.EventArgs?displayProperty=fullName>, which holds the event data.  
+  
+-   The <xref:System.ComponentModel.Design.DesignerActionUIStateChangeEventHandler> delegate, which points to a method that provides the response to the event.  
+  
+ When you create a <xref:System.ComponentModel.Design.DesignerActionUIStateChangeEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

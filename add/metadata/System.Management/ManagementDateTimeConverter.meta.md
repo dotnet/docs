@@ -1,24 +1,24 @@
 ---
 uid: System.Management.ManagementDateTimeConverter
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementDateTimeConverter.ToTimeSpan(System.String)
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementDateTimeConverter.ToDateTime(System.String)
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementDateTimeConverter.ToDmtfDateTime(System.DateTime)
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementDateTimeConverter.ToDmtfTimeInterval(System.TimeSpan)
-internalonly: False
+manager: "jillfra"
 ---

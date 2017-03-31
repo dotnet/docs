@@ -20,7 +20,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the dynamic create operation at the call site, providing the binding semantic and the details about the operation.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -46,8 +46,8 @@
         <Parameter Name="callInfo" Type="System.Dynamic.CallInfo" />
       </Parameters>
       <Docs>
-        <param name="callInfo">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="callInfo">The signature of the arguments at the call site.</param>
+        <summary>Initializes a new intsance of the <see cref="T:System.Dynamic.CreateInstanceBinder" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,10 +77,10 @@
         <Parameter Name="args" Type="System.Dynamic.DynamicMetaObject[]" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="args">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The target of the dynamic create operation.</param>
+        <param name="args">An array of arguments of the dynamic create operation.</param>
+        <summary>Performs the binding of the dynamic create operation.</summary>
+        <returns>The <see cref="T:System.Dynamic.DynamicMetaObject" /> representing the result of the binding.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,8 +106,8 @@
         <ReturnType>System.Dynamic.CallInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the signature of the arguments at the call site.</summary>
+        <value>The signature of the arguments at the call site.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,10 +137,10 @@
         <Parameter Name="args" Type="System.Dynamic.DynamicMetaObject[]" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="args">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The target of the dynamic create operation.</param>
+        <param name="args">The arguments of the dynamic create operation.</param>
+        <summary>Performs the binding of the dynamic create operation if the target dynamic object cannot bind.</summary>
+        <returns>The <see cref="T:System.Dynamic.DynamicMetaObject" /> representing the result of the binding.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -171,11 +171,11 @@
         <Parameter Name="errorSuggestion" Type="System.Dynamic.DynamicMetaObject" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="args">To be added.</param>
-        <param name="errorSuggestion">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The target of the dynamic create operation.</param>
+        <param name="args">The arguments of the dynamic create operation.</param>
+        <param name="errorSuggestion">The binding result to use if binding fails, or null.</param>
+        <summary>When overridden in the derived class, performs the binding of the dynamic create operation if the target dynamic object cannot bind.</summary>
+        <returns>The <see cref="T:System.Dynamic.DynamicMetaObject" /> representing the result of the binding.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -201,8 +201,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The result type of the operation.</summary>
+        <value>The <see cref="T:System.Type" /> object representing the result type of the operation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

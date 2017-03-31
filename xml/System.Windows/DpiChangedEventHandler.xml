@@ -17,9 +17,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">To be added.</param>
-    <param name="e">To be added.</param>
-    <summary>To be added.</summary>
+    <param name="sender">The sender object.</param>
+    <param name="e">The <see cref="T:System.Windows.DpiChangedEventArgs" /> object.</param>
+    <summary>Represents a method that will handle <see cref="T:System.Windows.DpiChangedEventArgs" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

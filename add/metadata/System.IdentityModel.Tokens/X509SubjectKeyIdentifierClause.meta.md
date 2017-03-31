@@ -1,34 +1,45 @@
 ---
 uid: System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause.Matches
 ---
 
 ---
 uid: System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause.ToString
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause.#ctor(System.Byte[])
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause.Matches(System.Security.Cryptography.X509Certificates.X509Certificate2)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause.GetX509SubjectKeyIdentifier
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause.TryCreateFrom(System.Security.Cryptography.X509Certificates.X509Certificate2,System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause@)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause.CanCreateFrom(System.Security.Cryptography.X509Certificates.X509Certificate2)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

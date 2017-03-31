@@ -19,8 +19,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Exposes methods and properties to support UI Automation client access to a control that acts as a scrollable container for a collection of child objects. The children of this control must implement <see cref="T:System.Windows.Automation.Provider.IScrollItemProvider" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implemented on a UI Automation provider that must support the <xref:System.Windows.Automation.ScrollPattern> control pattern.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="HorizontallyScrollable">
@@ -36,9 +43,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the control can scroll horizontally.</summary>
+        <value>
+          <see langword="true" /> if the control can scroll horizontally; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property can be dynamic. For example, the content area of the control might not be larger than the current viewable area, meaning <xref:System.Windows.Automation.Provider.IScrollProvider.HorizontallyScrollable%2A> is `false`. However, either resizing the control or adding child items can increase the bounds of the content area beyond the viewable area, meaning that <xref:System.Windows.Automation.Provider.IScrollProvider.HorizontallyScrollable%2A> is `true`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalScrollPercent">
@@ -54,8 +69,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the current horizontal scroll position.</summary>
+        <value>The horizontal scroll position as a percentage of the total content area within the control.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,8 +87,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the current horizontal view size.</summary>
+        <value>The horizontal size of the viewable region as a percentage of the total content area within the control.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,10 +109,12 @@
         <Parameter Name="verticalAmount" Type="System.Windows.Automation.ScrollAmount" />
       </Parameters>
       <Docs>
-        <param name="horizontalAmount">To be added.</param>
-        <param name="verticalAmount">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="horizontalAmount">The horizontal increment specific to the control. <see cref="F:System.Windows.Automation.ScrollPatternIdentifiers.NoScroll" /> should be passed in if the control cannot be scrolled in this direction.</param>
+        <param name="verticalAmount">The vertical increment specific to the control. <see cref="F:System.Windows.Automation.ScrollPatternIdentifiers.NoScroll" /> should be passed in if the control cannot be scrolled in this direction.</param>
+        <summary>Scrolls the visible region of the content area horizontally and vertically.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">If a control supports <see cref="F:System.Windows.Automation.ScrollAmount.SmallIncrement" /> values exclusively for horizontal or vertical scrolling but a <see cref="F:System.Windows.Automation.ScrollAmount.LargeIncrement" /> value is passed in.</exception>
+        <exception cref="T:System.InvalidOperationException">An attempt is made to scroll in an unsupported direction.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetScrollPercent">
@@ -117,10 +134,22 @@
         <Parameter Name="verticalPercent" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="horizontalPercent">To be added.</param>
-        <param name="verticalPercent">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="horizontalPercent">The horizontal position as a percentage of the content area's total range. <see cref="F:System.Windows.Automation.ScrollPatternIdentifiers.NoScroll" /> should be passed in if the control cannot be scrolled in this direction.</param>
+        <param name="verticalPercent">The vertical position as a percentage of the content area's total range. <see cref="F:System.Windows.Automation.ScrollPatternIdentifiers.NoScroll" /> should be passed in if the control cannot be scrolled in this direction.</param>
+        <summary>Sets the horizontal and vertical scroll position as a percentage of the total content area within the control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is only useful when the content area of the control is larger than the visible region.  
+  
+ Passing in the value <xref:System.Windows.Automation.ScrollPatternIdentifiers.NoScroll> indicates that there is no scrolling in the specified direction.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">A value that cannot be converted to a double is passed in.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">A value greater than 100 or less than 0 is passed in (except -1, which is equivalent to <see cref="F:System.Windows.Automation.ScrollPatternIdentifiers.NoScroll" />). The <see cref="P:System.Windows.Automation.Provider.IScrollProvider.HorizontalScrollPercent" /> and <see cref="P:System.Windows.Automation.Provider.IScrollProvider.VerticalScrollPercent" /> values are normalized to either 100 percent or 0 percent.</exception>
+        <exception cref="T:System.InvalidOperationException">An attempt is made to scroll in an unsupported direction.</exception>
       </Docs>
     </Member>
     <Member MemberName="VerticallyScrollable">
@@ -136,9 +165,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the control can scroll vertically.</summary>
+        <value>
+          <see langword="true" /> if the control can scroll vertically; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property can be dynamic. For example, the content area of the control might not be larger than the viewable area meaning <xref:System.Windows.Automation.Provider.IScrollProvider.VerticallyScrollable%2A> is `false`. However, resizing the control or adding child items can increase the bounds of the content area beyond the viewable area, indicating that <xref:System.Windows.Automation.Provider.IScrollProvider.VerticallyScrollable%2A> is `true`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="VerticalScrollPercent">
@@ -154,8 +191,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the current vertical scroll position.</summary>
+        <value>The vertical scroll position as a percentage of the total content area within the control.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -172,8 +209,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the vertical view size.</summary>
+        <value>The vertical size of the viewable region as a percentage of the total content area within the control.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,24 +1,29 @@
 ---
 uid: System.Runtime.Caching.HostFileChangeMonitor
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.HostFileChangeMonitor.FilePaths
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.HostFileChangeMonitor.UniqueId
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.HostFileChangeMonitor.LastModified
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.HostFileChangeMonitor.#ctor(System.Collections.Generic.IList{System.String})
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---

@@ -1,9 +1,9 @@
 ---
 uid: Microsoft.JScript.IVsaFullErrorInfo
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.IVsaFullErrorInfo.EndLine
-internalonly: False
+ms.author: "mikejo"
 ---

@@ -10,8 +10,34 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Describes the numeral style for a <see cref="T:System.Windows.Documents.Typography" /> object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ OpenType fonts support an old style numeral format. This format is useful for displaying numerals in styles that are no longer standard. The following text displays an 18th century date in standard and old style numeral formats for the Palatino Linotype font.  
+  
+ ![Text using OpenType old style numerals](~/add/media/opentypefont24.gif "Text using OpenType old style numerals")  
+Example of standard and old style numerals  
+  
+ The following text displays standard numerals for the Palatino Linotype font, followed by old style numerals.  
+  
+ ![Text using OpenType old style numeral sets](~/add/media/opentypefont13.gif "Text using OpenType old style numeral sets")  
+Example of standard and old style numeral sets  
+  
+> [!NOTE]
+>  Most OpenType fonts expose only a subset of the total OpenType features available. If a specified font does not support a particular feature, the default glyphs are used instead.  
+  
+   
+  
+## Examples  
+ The following code example shows how to define old style numerals for the Palatino Linotype font, using properties of the <xref:System.Windows.Documents.Typography> object.  
+  
+ [!code-xml[OpenTypeFontSnippets#11](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/PageOne.xaml#11)]
+ [!code-xml[OpenTypeFontSnippets#11](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/PageOne.xaml#11)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Lining">
@@ -27,7 +53,7 @@
         <ReturnType>System.Windows.FontNumeralStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Lining numeral style is used. Replaces default glyphs with numeric forms of even height.</summary>
       </Docs>
     </Member>
     <Member MemberName="Normal">
@@ -43,7 +69,7 @@
         <ReturnType>System.Windows.FontNumeralStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Default numeral style is used.</summary>
       </Docs>
     </Member>
     <Member MemberName="OldStyle">
@@ -59,7 +85,7 @@
         <ReturnType>System.Windows.FontNumeralStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Old style numeral style is used. Replaces default glyphs with a figure style that matches lowercase letters in height and color.</summary>
       </Docs>
     </Member>
   </Members>

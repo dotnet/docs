@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.IScriptControl
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IScriptControl.GetScriptDescriptors
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IScriptControl.GetScriptReferences
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

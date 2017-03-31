@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.DragDropEffects
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

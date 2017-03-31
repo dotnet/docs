@@ -41,8 +41,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Enables receiving data from a Web service in a workflow. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ The <xref:System.Workflow.Activities.WebServiceInputActivity> corresponds to a Web service method when the containing workflow is deployed as a Web service. When the workflow Web service is called, the <xref:System.Workflow.Activities.WebServiceInputActivity> receives data.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -56,7 +67,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.WebServiceInputActivity" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,8 +84,8 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The user-defined name of the activity.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.WebServiceInputActivity" /> class using the name of the activity.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,8 +102,15 @@
         <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="F:System.Workflow.Activities.WebServiceInputActivity.ActivitySubscribedProperty" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Cancel">
@@ -202,7 +220,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the <see cref="T:System.Workflow.Activities.WebServiceInputActivity" /> has received input.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -219,8 +237,15 @@
         <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Defines an event delegate that is executed after the activity receives the expected call from the Web service invocation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InterfaceType">
@@ -250,8 +275,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the interface type that defines the method that this activity listens on.</summary>
+        <value>The interface type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -268,8 +293,15 @@
         <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Corresponds to the name of the interface that is used as the Web service contract.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsActivating">
@@ -293,9 +325,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether receiving data should start the workflow.</summary>
+        <value>
+          <see langword="true" /> if receiving data should start the workflow; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Only the first receive in a workflow can have the <xref:System.Workflow.Activities.WebServiceInputActivity.IsActivating%2A> property set to `true`. If more than one <xref:System.Workflow.Activities.WebServiceInputActivity.IsActivating%2A> is set to `true`, the session is locked on the first request. This lasts as long as the other receive blocks the workflow; the session is deadlocked.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsActivatingProperty">
@@ -311,8 +351,15 @@
         <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="P:System.Workflow.Activities.WebServiceInputActivity.IsActivating" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.Activities.WebServiceInputActivity.IsActivating%2A> property should be set to `true` for only the very first <xref:System.Workflow.Activities.WebServiceInputActivity>. This signals to the workflow runtime that invoking this Web service method from a client starts the execution of the workflow. The first activity of a workflow definition that is exposed as a Web service is of type <xref:System.Workflow.Activities.WebServiceInputActivity> and sets this property to `true`. [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MethodName">
@@ -342,8 +389,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the method on the interface specified by the <see cref="P:System.Workflow.Activities.WebServiceInputActivity.InterfaceType" /> property that this <see cref="T:System.Workflow.Activities.WebServiceInputActivity" /> represents.</summary>
+        <value>The name of the method on the interface specified by the <see cref="P:System.Workflow.Activities.WebServiceInputActivity.InterfaceType" /> property that this <see cref="T:System.Workflow.Activities.WebServiceInputActivity" /> represents.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -360,8 +407,15 @@
         <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Corresponds to a name of one of the methods contained in the interface that is used as the Web service contract.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ParameterBindings">
@@ -385,9 +439,16 @@
         <ReturnType>System.Workflow.ComponentModel.WorkflowParameterBindingCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the collection of bindings associated with the input parameters to the method specified in the <see cref="P:System.Workflow.Activities.WebServiceInputActivity.MethodName" /> property.</summary>
+        <value>The collection of properties used as inbound parameters on the method specified by the <see cref="P:System.Workflow.Activities.WebServiceInputActivity.MethodName" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.Activities.WebServiceInputActivity.ParameterBindings%2A> on a <xref:System.Workflow.Activities.WebServiceInputActivity> are used to bind the inbound parameters to locations in the workflow. When the <xref:System.Workflow.Activities.WebServiceInputActivity> executes, the bound locations are set to the values of the corresponding inbound parameters.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ParameterBindingsProperty">
@@ -403,8 +464,15 @@
         <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="P:System.Workflow.Activities.WebServiceInputActivity.ParameterBindings" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Roles">
@@ -428,9 +496,18 @@
         <ReturnType>System.Workflow.Activities.WorkflowRoleCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a collection of roles that are valid to send data to the <see cref="T:System.Workflow.Activities.WebServiceInputActivity" />.</summary>
+        <value>The <see cref="T:System.Workflow.Activities.WorkflowRoleCollection" /> that contains the Web service roles that are valid to send data to the <see cref="T:System.Workflow.Activities.WebServiceInputActivity" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Security access exceptions are thrown if the Web service receives a request from a non-member of the <xref:System.Workflow.Activities.WebServiceInputActivity.Roles%2A> collection.  
+  
+ The default value is an empty collection, which gives open access to the Web service.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RolesProperty">
@@ -446,8 +523,15 @@
         <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Identifies the valid user roles that are allowed to send messages from the Web service client to the <see cref="T:System.Workflow.Activities.WebServiceInputActivity" />. The two types of supported roles are Active Directory and ASP.NET.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Workflow.Activities.IEventActivity.QueueName">
@@ -463,8 +547,8 @@
         <ReturnType>System.IComparable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the <see cref="T:System.Workflow.Runtime.WorkflowQueue" /> on which the activity is waiting for data to arrive.</summary>
+        <value>The name of the <see cref="T:System.Workflow.Runtime.WorkflowQueue" /> on which the activity is waiting for data to arrive.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -485,9 +569,9 @@
         <Parameter Name="parentEventHandler" Type="System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.QueueEventArgs&gt;" />
       </Parameters>
       <Docs>
-        <param name="parentContext">To be added.</param>
-        <param name="parentEventHandler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="parentContext">The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> that represents the execution environment of the <see cref="T:System.Workflow.Activities.WebServiceInputActivity" /> activity.</param>
+        <param name="parentEventHandler">The <see cref="T:System.EventHandler" /> for the parent event.</param>
+        <summary>Creates the subscription of the <see cref="T:System.Workflow.Activities.WebServiceInputActivity" /> activity to an event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -508,9 +592,9 @@
         <Parameter Name="parentEventHandler" Type="System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.QueueEventArgs&gt;" />
       </Parameters>
       <Docs>
-        <param name="parentContext">To be added.</param>
-        <param name="parentEventHandler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="parentContext">The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> that represents the execution environment of the <see cref="T:System.Workflow.Activities.WebServiceInputActivity" /> activity.</param>
+        <param name="parentEventHandler">The <see cref="T:System.EventHandler" /> for the parent event.</param>
+        <summary>Cancels the subscription of a <see cref="T:System.Workflow.ComponentModel.Activity" /> to an event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -531,9 +615,9 @@
         <Parameter Name="e" Type="System.Workflow.ComponentModel.QueueEventArgs" />
       </Parameters>
       <Docs>
-        <param name="sender">To be added.</param>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="sender">The object that raised the event.</param>
+        <param name="e">The previously typed event arguments.</param>
+        <summary>Defines the processing procedure when the subscribed-to event occurs.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -554,11 +638,18 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="serviceProvider">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="serviceProvider">An object that implements <see cref="T:System.IServiceProvider" /> to provide access to design time services if they are required.</param>
+        <param name="propertyName">The name of the property.</param>
+        <summary>Returns the access type for the specified property.</summary>
+        <returns>An <see cref="T:System.Workflow.ComponentModel.Compiler.AccessTypes" /> enumeration value that denotes the access level of the property.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Used at compile time to validate whether the properties are correctly bound to one other. Without this interface this information is inferred directly from property getter/setters.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Workflow.ComponentModel.IDynamicPropertyTypeProvider.GetPropertyType">
@@ -578,11 +669,18 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="serviceProvider">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="serviceProvider">An object that implements <see cref="T:System.IServiceProvider" /> to provide access to design time services if they are required.</param>
+        <param name="propertyName">The name of the property.</param>
+        <summary>Returns the <see cref="T:System.Type" /> of the specified property.</summary>
+        <returns>The <see cref="T:System.Type" /> for the property whose name is passed as the <paramref name="propertyName " />parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Used at compile time to validate whether the properties are correctly bound to one other.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

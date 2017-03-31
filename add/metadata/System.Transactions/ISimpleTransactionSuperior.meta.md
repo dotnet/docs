@@ -1,9 +1,9 @@
 ---
 uid: System.Transactions.ISimpleTransactionSuperior
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.ISimpleTransactionSuperior.Rollback
-internalonly: False
+manager: "ghogen"
 ---

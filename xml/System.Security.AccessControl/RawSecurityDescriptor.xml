@@ -16,7 +16,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a security descriptor. A security descriptor includes an owner, a primary group, a Discretionary Access Control List (DACL), and a System Access Control List (SACL).</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,8 +38,8 @@
         <Parameter Name="sddlForm" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="sddlForm">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="sddlForm">The SDDL string from which to create the new <see cref="T:System.Security.AccessControl.RawSecurityDescriptor" /> object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.RawSecurityDescriptor" /> class from the specified Security Descriptor Definition Language (SDDL) string.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,9 +62,9 @@
         <Parameter Name="offset" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="binaryForm">To be added.</param>
-        <param name="offset">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="binaryForm">The array of byte values from which to create the new <see cref="T:System.Security.AccessControl.RawSecurityDescriptor" /> object.</param>
+        <param name="offset">The offset in the  <c>binaryForm</c> array at which to begin copying.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.RawSecurityDescriptor" /> class from the specified array of byte values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,12 +90,12 @@
         <Parameter Name="discretionaryAcl" Type="System.Security.AccessControl.RawAcl" />
       </Parameters>
       <Docs>
-        <param name="flags">To be added.</param>
-        <param name="owner">To be added.</param>
-        <param name="group">To be added.</param>
-        <param name="systemAcl">To be added.</param>
-        <param name="discretionaryAcl">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="flags">Flags that specify behavior of the new <see cref="T:System.Security.AccessControl.RawSecurityDescriptor" /> object.</param>
+        <param name="owner">The owner for the new <see cref="T:System.Security.AccessControl.RawSecurityDescriptor" /> object.</param>
+        <param name="group">The primary group for the new <see cref="T:System.Security.AccessControl.RawSecurityDescriptor" /> object.</param>
+        <param name="systemAcl">The System Access Control List (SACL) for the new <see cref="T:System.Security.AccessControl.RawSecurityDescriptor" /> object.</param>
+        <param name="discretionaryAcl">The Discretionary Access Control List (DACL) for the new <see cref="T:System.Security.AccessControl.RawSecurityDescriptor" /> object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.RawSecurityDescriptor" /> class with the specified values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,8 +117,8 @@
         <ReturnType>System.Security.AccessControl.ControlFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets values that specify behavior of the <see cref="T:System.Security.AccessControl.RawSecurityDescriptor" /> object.</summary>
+        <value>One or more values of the <see cref="T:System.Security.AccessControl.ControlFlags" /> enumeration combined with a logical OR operation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,8 +140,8 @@
         <ReturnType>System.Security.AccessControl.RawAcl</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the Discretionary Access Control List (DACL) for this <see cref="T:System.Security.AccessControl.RawSecurityDescriptor" /> object. The DACL contains access rules.</summary>
+        <value>The DACL for this <see cref="T:System.Security.AccessControl.RawSecurityDescriptor" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -163,8 +163,8 @@
         <ReturnType>System.Security.Principal.SecurityIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the primary group for this <see cref="T:System.Security.AccessControl.RawSecurityDescriptor" /> object.</summary>
+        <value>The primary group for this <see cref="T:System.Security.AccessControl.RawSecurityDescriptor" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,8 +186,8 @@
         <ReturnType>System.Security.Principal.SecurityIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the owner of the object associated with this <see cref="T:System.Security.AccessControl.RawSecurityDescriptor" /> object.</summary>
+        <value>The owner of the object associated with this <see cref="T:System.Security.AccessControl.RawSecurityDescriptor" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -209,9 +209,16 @@
         <ReturnType>System.Byte</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a byte value that represents the resource manager control bits associated with this <see cref="T:System.Security.AccessControl.RawSecurityDescriptor" /> object.</summary>
+        <value>A byte value that represents the resource manager control bits associated with this <see cref="T:System.Security.AccessControl.RawSecurityDescriptor" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The resource manager control bits contain information specific to the resource manager accessing the security descriptor.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetFlags">
@@ -235,8 +242,8 @@
         <Parameter Name="flags" Type="System.Security.AccessControl.ControlFlags" />
       </Parameters>
       <Docs>
-        <param name="flags">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="flags">One or more values of the <see cref="T:System.Security.AccessControl.ControlFlags" /> enumeration combined with a logical OR operation.</param>
+        <summary>Sets the <see cref="P:System.Security.AccessControl.RawSecurityDescriptor.ControlFlags" /> property of this <see cref="T:System.Security.AccessControl.RawSecurityDescriptor" /> object to the specified value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -258,8 +265,8 @@
         <ReturnType>System.Security.AccessControl.RawAcl</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the System Access Control List (SACL) for this <see cref="T:System.Security.AccessControl.RawSecurityDescriptor" /> object. The SACL contains audit rules.</summary>
+        <value>The SACL for this <see cref="T:System.Security.AccessControl.RawSecurityDescriptor" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

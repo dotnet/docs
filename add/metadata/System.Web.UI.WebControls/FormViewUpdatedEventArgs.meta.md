@@ -1,44 +1,53 @@
 ---
 uid: System.Web.UI.WebControls.FormViewUpdatedEventArgs
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.FormViewUpdatedEventArgs.OldValues
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.FormViewUpdatedEventArgs.NewValues
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.FormViewUpdatedEventArgs.#ctor(System.Int32,System.Exception)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.FormViewUpdatedEventArgs.ExceptionHandled
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.FormViewUpdatedEventArgs.Keys
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.FormViewUpdatedEventArgs.Exception
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.FormViewUpdatedEventArgs.KeepInEditMode
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.FormViewUpdatedEventArgs.AffectedRows
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

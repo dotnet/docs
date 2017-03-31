@@ -1,14 +1,17 @@
 ---
 uid: System.Web.Configuration.WebControlsSection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.WebControlsSection.ClientScriptsLocation
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.WebControlsSection.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

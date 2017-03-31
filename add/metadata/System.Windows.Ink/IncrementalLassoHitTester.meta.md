@@ -1,19 +1,26 @@
 ---
 uid: System.Windows.Ink.IncrementalLassoHitTester
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.IncrementalLassoHitTester.OnSelectionChanged(System.Windows.Ink.LassoSelectionChangedEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.IncrementalLassoHitTester.AddPointsCore(System.Collections.Generic.IEnumerable{System.Windows.Point})
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.IncrementalLassoHitTester.SelectionChanged
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

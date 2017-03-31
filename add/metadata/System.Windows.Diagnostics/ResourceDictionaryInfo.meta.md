@@ -1,24 +1,32 @@
 ---
 uid: System.Windows.Diagnostics.ResourceDictionaryInfo
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Diagnostics.ResourceDictionaryInfo.Assembly
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Diagnostics.ResourceDictionaryInfo.ResourceDictionaryAssembly
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Diagnostics.ResourceDictionaryInfo.SourceUri
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Diagnostics.ResourceDictionaryInfo.ResourceDictionary
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

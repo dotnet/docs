@@ -1,9 +1,13 @@
 ---
 uid: System.ComponentModel.Composition.Hosting.CatalogExtensions
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.CatalogExtensions.CreateCompositionService(System.ComponentModel.Composition.Primitives.ComposablePartCatalog)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

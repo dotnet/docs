@@ -1,49 +1,59 @@
 ---
 uid: System.Web.UI.Design.IHierarchicalDataSourceDesigner
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.IHierarchicalDataSourceDesigner.CanRefreshSchema
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.IHierarchicalDataSourceDesigner.Configure
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.IHierarchicalDataSourceDesigner.DataSourceChanged
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.IHierarchicalDataSourceDesigner.ResumeDataSourceEvents
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.IHierarchicalDataSourceDesigner.CanConfigure
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.IHierarchicalDataSourceDesigner.SchemaRefreshed
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.IHierarchicalDataSourceDesigner.GetView(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.IHierarchicalDataSourceDesigner.RefreshSchema(System.Boolean)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.IHierarchicalDataSourceDesigner.SuppressDataSourceEvents
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

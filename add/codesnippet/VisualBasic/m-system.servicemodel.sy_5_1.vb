@@ -1,5 +1,0 @@
-        Dim item As New SyndicationItem("Item Title", "Item Content", New Uri("http:' Item/Alternate/Link"), "itemID", DateTimeOffset.Now)
-        Dim rssFormatter As Rss20ItemFormatter = item.GetRss20Formatter()
-        Dim writer As XmlWriter = XmlWriter.Create("output.xml")
-        rssFormatter.WriteTo(writer)
-        writer.Close()

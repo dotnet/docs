@@ -1,34 +1,55 @@
 ---
 uid: System.Web.Services.Configuration.SoapExtensionTypeElement
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Configuration.SoapExtensionTypeElement.Priority
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Configuration.SoapExtensionTypeElement.#ctor(System.String,System.Int32,System.Web.Services.Configuration.PriorityGroup)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Configuration.SoapExtensionTypeElement.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Configuration.SoapExtensionTypeElement.Type
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Configuration.SoapExtensionTypeElement.Group
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Web.Services.Configuration.SoapExtensionTypeElement.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Configuration.SoapExtensionTypeElement.#ctor(System.Type,System.Int32,System.Web.Services.Configuration.PriorityGroup)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

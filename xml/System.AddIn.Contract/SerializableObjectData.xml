@@ -11,8 +11,19 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides information about a serializable object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.AddIn.Contract.SerializableObjectData> structure contains data that can be used to deserialize a serializable object.  
+  
+ To get a <xref:System.AddIn.Contract.SerializableObjectData>, call the <xref:System.AddIn.Contract.ISerializableObjectContract.GetSerializableObjectData%2A> method of an <xref:System.AddIn.Contract.ISerializableObjectContract>.  
+  
+ The only <xref:System.AddIn.Contract.SerializableObjectData> field that contains a value for every serializable object is the <xref:System.AddIn.Contract.SerializableObjectData.ObjectId> field.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="DimensionLengths">
@@ -28,8 +39,15 @@
         <ReturnType>System.Int32[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents an array that contains the length of each of the dimensions of the serializable array that this <see cref="T:System.AddIn.Contract.SerializableObjectData" /> describes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.AddIn.Contract.SerializableObjectData.DimensionLengths> is `null` if <xref:System.AddIn.Contract.SerializableObjectData> is `false`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DimensionLowerBounds">
@@ -45,8 +63,15 @@
         <ReturnType>System.Int32[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents an array that contains the lower bound of each of the dimensions of the serializable array that this <see cref="T:System.AddIn.Contract.SerializableObjectData" /> describes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.AddIn.Contract.SerializableObjectData.DimensionLowerBounds> is `null` if <xref:System.AddIn.Contract.SerializableObjectData> is `false`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ElementIndexes">
@@ -62,8 +87,15 @@
         <ReturnType>System.Int32[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents an array that contains the indexes of the parent array that contains the serializable object that this <see cref="T:System.AddIn.Contract.SerializableObjectData" /> describes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.AddIn.Contract.SerializableObjectData.ElementIndexes> is `null` if <xref:System.AddIn.Contract.SerializableObjectData> is `false`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsArray">
@@ -79,8 +111,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Indicates whether the <see cref="T:System.AddIn.Contract.SerializableObjectData" /> describes a serializable array.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.AddIn.Contract.SerializableObjectData.IsArray> is `true` if the <xref:System.AddIn.Contract.SerializableObjectData> describes an array; otherwise, <xref:System.AddIn.Contract.SerializableObjectData.IsArray> is `false`.  
+  
+ If <xref:System.AddIn.Contract.SerializableObjectData.IsArray> and <xref:System.AddIn.Contract.SerializableObjectData> are both `true`, the <xref:System.AddIn.Contract.SerializableObjectData> describes a jagged array.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsArrayElement">
@@ -96,8 +137,19 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Indicates whether the <see cref="T:System.AddIn.Contract.SerializableObjectData" /> describes an element in a serializable array.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.AddIn.Contract.SerializableObjectData.IsArrayElement> is `true` if the <xref:System.AddIn.Contract.SerializableObjectData> describes an element in an array; otherwise, <xref:System.AddIn.Contract.SerializableObjectData.IsArrayElement> is `false`.  
+  
+ If <xref:System.AddIn.Contract.SerializableObjectData.IsArrayElement> is `true`, then <xref:System.AddIn.Contract.SerializableObjectData> identifies the array, and <xref:System.AddIn.Contract.SerializableObjectData.MemberName> is `null`.  
+  
+ If <xref:System.AddIn.Contract.SerializableObjectData.IsArray> and <xref:System.AddIn.Contract.SerializableObjectData.IsArrayElement> are both `true`, the <xref:System.AddIn.Contract.SerializableObjectData> describes a jagged array.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MemberName">
@@ -113,8 +165,15 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the member name of the serializable object that this <see cref="T:System.AddIn.Contract.SerializableObjectData" /> describes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.AddIn.Contract.SerializableObjectData.MemberName> is `null` if the <xref:System.AddIn.Contract.SerializableObjectData> describes an object that is not a member of another object (that is, <xref:System.AddIn.Contract.SerializableObjectData> is `null`).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ObjectId">
@@ -130,8 +189,15 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the ID of the serializable object that this <see cref="T:System.AddIn.Contract.SerializableObjectData" /> describes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To create an object ID, implementations of <xref:System.AddIn.Contract.ISerializableObjectContract> can use the <xref:System.Runtime.Serialization.ObjectIDGenerator?displayProperty=fullName> class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ParentId">
@@ -147,8 +213,15 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the ID of the parent of the serializable object that this <see cref="T:System.AddIn.Contract.SerializableObjectData" /> describes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.AddIn.Contract.SerializableObjectData.ParentId> is `null` if the <xref:System.AddIn.Contract.SerializableObjectData> describes a serializable object that is not a member of another object.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

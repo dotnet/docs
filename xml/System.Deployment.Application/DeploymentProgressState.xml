@@ -10,8 +10,24 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the current stage of a [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] download operation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Deployment.Application.DeploymentProgressState> is passed by way of the <xref:System.Deployment.Application.DownloadProgressChangedEventArgs.State%2A> member of <xref:System.Deployment.Application.DeploymentProgressChangedEventArgs>, which is used by the <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdateProgressChanged>, <xref:System.Deployment.Application.ApplicationDeployment.UpdateProgressChanged>, and <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupProgressChanged> events. Use the members of this enumeration to determine what portion of the [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] deployment has already been downloaded to the local machine.  
+  
+   
+  
+## Examples  
+ The following code example installs the latest [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application update asynchronously.  
+  
+ [!code-cpp[ClickOnceAPI#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ClickOnceAPI/cpp/form1.cpp#1)]
+ [!code-csharp[ClickOnceAPI#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ClickOnceAPI/CS/Form1.cs#1)]
+ [!code-vb[ClickOnceAPI#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClickOnceAPI/VB/Form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="DownloadingApplicationFiles">
@@ -27,7 +43,7 @@
         <ReturnType>System.Deployment.Application.DeploymentProgressState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>[!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] is downloading the DLLs and data files that comprised the application.</summary>
       </Docs>
     </Member>
     <Member MemberName="DownloadingApplicationInformation">
@@ -43,7 +59,7 @@
         <ReturnType>System.Deployment.Application.DeploymentProgressState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>[!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] is downloading the application manifest.</summary>
       </Docs>
     </Member>
     <Member MemberName="DownloadingDeploymentInformation">
@@ -59,7 +75,7 @@
         <ReturnType>System.Deployment.Application.DeploymentProgressState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>[!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] is downloading the deployment manifest.</summary>
       </Docs>
     </Member>
   </Members>

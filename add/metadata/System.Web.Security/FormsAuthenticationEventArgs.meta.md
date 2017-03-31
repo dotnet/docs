@@ -1,19 +1,27 @@
 ---
 uid: System.Web.Security.FormsAuthenticationEventArgs
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Security.FormsAuthenticationEventArgs.User
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Security.FormsAuthenticationEventArgs.Context
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Security.FormsAuthenticationEventArgs.#ctor(System.Web.HttpContext)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

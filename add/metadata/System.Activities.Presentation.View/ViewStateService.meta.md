@@ -1,44 +1,62 @@
 ---
 uid: System.Activities.Presentation.View.ViewStateService
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.View.ViewStateService.RemoveViewState(System.Activities.Presentation.Model.ModelItem,System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.View.ViewStateService.RetrieveAllViewState(System.Activities.Presentation.Model.ModelItem)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.View.ViewStateService.UndoableViewStateChanged
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.View.ViewStateService.StoreViewState(System.Activities.Presentation.Model.ModelItem,System.String,System.Object)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.View.ViewStateService.StoreViewStateWithUndo(System.Activities.Presentation.Model.ModelItem,System.String,System.Object)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.View.ViewStateService.RetrieveViewState(System.Activities.Presentation.Model.ModelItem,System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.View.ViewStateService.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.View.ViewStateService.ViewStateChanged
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

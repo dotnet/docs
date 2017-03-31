@@ -17,8 +17,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>A type for HTTP handlers that delegate the processing of HTTP response messages to another handler, called the inner handler.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This application normally instantiate this class and then set the inner handler or provide an inner handler in the constructor.  
+  
+ Note that <xref:System.Net.Http.DelegatingHandler.InnerHandler%2A> property may be a delegating handler too. This approach allows the creation of handler stacks to process the HTTP response messages.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,8 +47,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Creates a new instance of the <see cref="T:System.Net.Http.DelegatingHandler" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The inner handle can be set using the <xref:System.Net.Http.DelegatingHandler.InnerHandler%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -61,8 +77,8 @@
         <Parameter Name="innerHandler" Type="System.Net.Http.HttpMessageHandler" />
       </Parameters>
       <Docs>
-        <param name="innerHandler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="innerHandler">The inner handler which is responsible for processing the HTTP response messages.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Net.Http.DelegatingHandler" /> class with a specific inner handler.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,8 +104,9 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to releases only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Net.Http.DelegatingHandler" />, and optionally disposes of the managed resources.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,9 +129,18 @@
         <ReturnType>System.Net.Http.HttpMessageHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the inner handler which processes the HTTP response messages.</summary>
+        <value>The inner handler for HTTP response messages.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This <xref:System.Net.Http.DelegatingHandler.InnerHandler%2A> property can only be set before the class is used (the <xref:System.Net.Http.DelegatingHandler.SendAsync%2A> method is called).  
+  
+ Note that <xref:System.Net.Http.DelegatingHandler.InnerHandler%2A> property may be a delegating handler too, although this is uncommon. This approach allows the creation of handler stacks for the HTTP response messages.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SendAsync">
@@ -140,11 +166,21 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="request">The HTTP request message to send to the server.</param>
+        <param name="cancellationToken">A cancellation token to cancel operation.</param>
+        <summary>Sends an HTTP request to the inner handler to send to the server as an asynchronous operation.</summary>
+        <returns>The task object representing the asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This operation does not block. This overridable implementation of <xref:System.Net.Http.HttpClientHandler.SendAsync%2A> method forwards the HTTP request to the inner handler to send to the server as an asynchronous operation.  
+  
+ The <xref:System.Net.Http.DelegatingHandler.SendAsync%2A> method is mainly used by the system and not by applications. When this method is called, it calls the <xref:System.Net.Http.DelegatingHandler.SendAsync%2A> method on the inner handler.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="request" /> was <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

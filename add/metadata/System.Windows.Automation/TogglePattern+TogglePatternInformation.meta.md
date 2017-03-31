@@ -1,9 +1,13 @@
 ---
 uid: System.Windows.Automation.TogglePattern.TogglePatternInformation
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.TogglePattern.TogglePatternInformation.ToggleState
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---

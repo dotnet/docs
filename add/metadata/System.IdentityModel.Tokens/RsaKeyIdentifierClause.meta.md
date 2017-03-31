@@ -1,59 +1,77 @@
 ---
 uid: System.IdentityModel.Tokens.RsaKeyIdentifierClause
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.RsaKeyIdentifierClause.GetModulus
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.RsaKeyIdentifierClause.Matches(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.RsaKeyIdentifierClause.Matches
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.RsaKeyIdentifierClause.Rsa
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.RsaKeyIdentifierClause.WriteExponentAsBase64(System.Xml.XmlWriter)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.RsaKeyIdentifierClause.CanCreateKey
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.RsaKeyIdentifierClause.WriteModulusAsBase64(System.Xml.XmlWriter)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.RsaKeyIdentifierClause.CreateKey
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.RsaKeyIdentifierClause.#ctor(System.Security.Cryptography.RSA)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.RsaKeyIdentifierClause.GetExponent
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.RsaKeyIdentifierClause.Matches(System.Security.Cryptography.RSA)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.RsaKeyIdentifierClause.ToString
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

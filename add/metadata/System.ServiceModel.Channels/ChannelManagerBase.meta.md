@@ -1,39 +1,55 @@
 ---
 uid: System.ServiceModel.Channels.ChannelManagerBase
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.ChannelManagerBase.DefaultReceiveTimeout
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.ChannelManagerBase.System#ServiceModel#IDefaultCommunicationTimeouts#SendTimeout
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.ChannelManagerBase.DefaultSendTimeout
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.ChannelManagerBase.System#ServiceModel#IDefaultCommunicationTimeouts#CloseTimeout
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.ChannelManagerBase.System#ServiceModel#IDefaultCommunicationTimeouts#ReceiveTimeout
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.ChannelManagerBase.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.ChannelManagerBase.System#ServiceModel#IDefaultCommunicationTimeouts#OpenTimeout
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -1,24 +1,38 @@
 ---
 uid: System.Web.UI.Design.WebControls.WebParts.EditorPartDesigner
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.WebParts.EditorPartDesigner.Initialize(System.ComponentModel.IComponent)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.WebParts.EditorPartDesigner.#ctor
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.WebParts.EditorPartDesigner.CreateViewControl
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.WebParts.EditorPartDesigner.GetDesignTimeHtml
-internalonly: False
+---
+
+---
+uid: System.Web.UI.Design.WebControls.WebParts.EditorPartDesigner.GetDesignTimeHtml
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the configuration element that specifies transaction flow support for a binding.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.TransactionFlowElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +48,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether wildcard action is permitted.</summary>
+        <value>
+          <see langword="true" /> if wildcard action is permitted; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,9 +70,20 @@
         <Parameter Name="bindingElement" Type="System.ServiceModel.Channels.BindingElement" />
       </Parameters>
       <Docs>
-        <param name="bindingElement">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="bindingElement">A binding element of type <see cref="T:System.ServiceModel.Channels.TransactionFlowBindingElement" />.</param>
+        <summary>Applies the content of this binding configuration section to the specified transaction flow binding element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called internally by the infrastructure when translating the configuration elements into binding settings.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="bindingElement" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="bindingElement" /> is not of type <see cref="T:System.ServiceModel.Channels.TransactionFlowBindingElement" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="BindingElementType">
@@ -87,8 +99,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Type" /> object that represents the type of this configuration element.</summary>
+        <value>The type of this configuration element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,9 +120,12 @@
         <Parameter Name="from" Type="System.ServiceModel.Configuration.ServiceModelExtensionElement" />
       </Parameters>
       <Docs>
-        <param name="from">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="from">The configuration section to be copied.</param>
+        <summary>Copies the content of the specified configuration section to this configuration section.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="from" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">The configuration file is read-only.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateBindingElement">
@@ -127,8 +142,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a <see cref="T:System.ServiceModel.Channels.TransactionFlowBindingElement" /> object that has enabled transaction flow and uses the same <see cref="T:System.ServiceModel.TransactionProtocol" /> as the current element.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.TransactionFlowBindingElement" /> object that has enabled transaction flow, and uses the same <see cref="T:System.ServiceModel.TransactionProtocol" /> as the current element</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -148,9 +163,13 @@
         <Parameter Name="bindingElement" Type="System.ServiceModel.Channels.BindingElement" />
       </Parameters>
       <Docs>
-        <param name="bindingElement">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="bindingElement">A binding element of type <see cref="T:System.ServiceModel.Channels.TransactionFlowBindingElement" />.</param>
+        <summary>Initializes this binding configuration section with the content of the specified binding element.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="bindingElement" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="bindingElement" /> is not of type <see cref="T:System.ServiceModel.Channels.TransactionFlowBindingElement" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -166,8 +185,8 @@
         <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.Configuration.ConfigurationPropertyCollection" /> instance that contains a collection of <see cref="T:System.Configuration.ConfigurationProperty" /> objects that can be attributes or <see cref="T:System.Configuration.ConfigurationElement" /> objects of this configuration element.</summary>
+        <value>A <see cref="T:System.Configuration.ConfigurationPropertyCollection" /> instance that contains a collection of <see cref="T:System.Configuration.ConfigurationProperty" /> objects that can be attributes or <see cref="T:System.Configuration.ConfigurationElement" /> objects of this configuration element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -192,8 +211,8 @@
         <ReturnType>System.ServiceModel.TransactionProtocol</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the transaction protocol to be used.</summary>
+        <value>A <see cref="T:System.ServiceModel.TransactionProtocol" /> that specifies the transaction protocol to be used for transaction flow. The default is <see cref="P:System.ServiceModel.TransactionProtocol.OleTransactions" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

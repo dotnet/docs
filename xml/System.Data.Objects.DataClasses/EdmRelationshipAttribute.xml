@@ -16,8 +16,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines a relationship between two entity types based on an association in the conceptual model.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This attribute is applied at the assembly level with one instance for each association. There can be multiple attributes of this type in an assembly.  
+  
+ The details for the role of an entity type in a particular association should match the association defined in the conceptual schema.  
+  
+ An association does not define any ordering for the roles. This means that properties that define the related ends of an association can be defined in any order.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,16 +51,23 @@
         <Parameter Name="role2Type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="relationshipNamespaceName">To be added.</param>
-        <param name="relationshipName">To be added.</param>
-        <param name="role1Name">To be added.</param>
-        <param name="role1Multiplicity">To be added.</param>
-        <param name="role1Type">To be added.</param>
-        <param name="role2Name">To be added.</param>
-        <param name="role2Multiplicity">To be added.</param>
-        <param name="role2Type">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="relationshipNamespaceName">The name of the namespace for the association in which this entity participates.</param>
+        <param name="relationshipName">The name of a relationship in which this entity participates.</param>
+        <param name="role1Name">Name of the role for the type at one end of the association.</param>
+        <param name="role1Multiplicity">A value of <see cref="T:System.Data.Metadata.Edm.RelationshipMultiplicity" /> that indicates the multiplicity at one end of the association, such as one or many.</param>
+        <param name="role1Type">The type of the entity at one end of the association.</param>
+        <param name="role2Name">Name of the role for the type at the other end of the association.</param>
+        <param name="role2Multiplicity">A value of <see cref="T:System.Data.Metadata.Edm.RelationshipMultiplicity" /> that indicates the multiplicity at the other end of the association, such as one or many.</param>
+        <param name="role2Type">The type of the entity at the other end of the association.</param>
+        <summary>Creates an instance of the <see cref="T:System.Data.Objects.DataClasses.EdmRelationshipAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `typeof` operator (`GetType` in Visual Basic) is used to return the <xref:System.Type> object for an object.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -73,16 +91,16 @@
         <Parameter Name="isForeignKey" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="relationshipNamespaceName">To be added.</param>
-        <param name="relationshipName">To be added.</param>
-        <param name="role1Name">To be added.</param>
-        <param name="role1Multiplicity">To be added.</param>
-        <param name="role1Type">To be added.</param>
-        <param name="role2Name">To be added.</param>
-        <param name="role2Multiplicity">To be added.</param>
-        <param name="role2Type">To be added.</param>
-        <param name="isForeignKey">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="relationshipNamespaceName">The name of the namespace for the association in which this entity participates.</param>
+        <param name="relationshipName">The name of a relationship in which this entity participates.</param>
+        <param name="role1Name">Name of the role for the type at one end of the association.</param>
+        <param name="role1Multiplicity">A value of <see cref="T:System.Data.Metadata.Edm.RelationshipMultiplicity" /> that indicates the multiplicity at one end of the association, such as one or many.</param>
+        <param name="role1Type">The type of the entity at one end of the association.</param>
+        <param name="role2Name">Name of the role for the type at the other end of the association.</param>
+        <param name="role2Multiplicity">A value of <see cref="T:System.Data.Metadata.Edm.RelationshipMultiplicity" /> that indicates the multiplicity at the other end of the association, such as one or many.</param>
+        <param name="role2Type">The type of the entity at the other end of the association.</param>
+        <param name="isForeignKey">A value that indicates whether the relationship is based on the foreign key value.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Objects.DataClasses.EdmRelationshipAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,8 +117,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a Boolean value that indicates whether the relationship is based on the foreign key value.</summary>
+        <value>
+          <see langword="true" /> if the relationship is based on the foreign key value; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,9 +136,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Name of the relationship.</summary>
+        <value>A <see cref="T:System.String" /> that is the name of a relationship that is defined by this <see cref="T:System.Data.Objects.DataClasses.EdmRelationshipAttribute" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The name of the relationship is specified by the `Name` attribute of the `Association` element that defines this relationship in the conceptual model. For more information, see [CSDL, SSDL, and MSL Specifications](../Topic/CSDL,%20SSDL,%20and%20MSL%20Specifications.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RelationshipNamespaceName">
@@ -135,9 +161,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>The namespace for the relationship.</summary>
+        <value>A <see cref="T:System.String" /> that is the namespace for the relationship.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The namespace of the relationship is specified by the `Namespace` attribute of the `Schema` element that contains association that defines this relationship in the conceptual model. For more information, see [CSDL, SSDL, and MSL Specifications](../Topic/CSDL,%20SSDL,%20and%20MSL%20Specifications.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Role1Multiplicity">
@@ -153,9 +186,18 @@
         <ReturnType>System.Data.Metadata.Edm.RelationshipMultiplicity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Multiplicity at one end of the relationship.</summary>
+        <value>A <see cref="T:System.Data.Metadata.Edm.RelationshipMultiplicity" /> value that indicates the multiplicity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Properties that define the related ends of an association can be defined in any order.  
+  
+ The multiplicity is specified by the `Multiplicity` attribute of the `End` element in the association that defines this relationship in the conceptual model. For more information, see [CSDL, SSDL, and MSL Specifications](../Topic/CSDL,%20SSDL,%20and%20MSL%20Specifications.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Role1Name">
@@ -171,9 +213,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Name of the role at one end of the relationship.</summary>
+        <value>A <see cref="T:System.String" /> that is the name of the role.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The role name is specified by the `Role` attribute of the `End` element in the association that defines this relationship in the conceptual model. For more information, see [CSDL, SSDL, and MSL Specifications](../Topic/CSDL,%20SSDL,%20and%20MSL%20Specifications.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Role1Type">
@@ -189,9 +238,18 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Type of the entity at one end of the relationship.</summary>
+        <value>A <see cref="T:System.Type" /> that is the type of the object at this end of the association.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Properties that define the related ends of an association can be defined in any order.  
+  
+ The type name is specified by the `Type` attribute of the `End` element in the association that defines this relationship in the conceptual model. For more information, see [CSDL, SSDL, and MSL Specifications](../Topic/CSDL,%20SSDL,%20and%20MSL%20Specifications.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Role2Multiplicity">
@@ -207,9 +265,18 @@
         <ReturnType>System.Data.Metadata.Edm.RelationshipMultiplicity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Multiplicity at the other end of the relationship.</summary>
+        <value>A <see cref="T:System.Data.Metadata.Edm.RelationshipMultiplicity" /> value that indicates the multiplicity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Properties that define the related ends of an association can be defined in any order.  
+  
+ The multiplicity is specified by the `Multiplicity` attribute of the `End` element in the association that defines this relationship in the conceptual model. For more information, see [CSDL, SSDL, and MSL Specifications](../Topic/CSDL,%20SSDL,%20and%20MSL%20Specifications.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Role2Name">
@@ -225,9 +292,18 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Name of the role at the other end of the relationship.</summary>
+        <value>A <see cref="T:System.String" /> that is the name of the role.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Properties that define the related ends of an association can be defined in any order.  
+  
+ The role name is specified by the `Role` attribute of the `End` element in the association that defines this relationship in the conceptual model. For more information, see [CSDL, SSDL, and MSL Specifications](../Topic/CSDL,%20SSDL,%20and%20MSL%20Specifications.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Role2Type">
@@ -243,9 +319,18 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Type of the entity at the other end of the relationship.</summary>
+        <value>A <see cref="T:System.Type" /> that is the type of the object t the other end of the association.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Properties that define the related ends of an association can be defined in any order.  
+  
+ The type name is specified by the `Type` attribute of the `End` element in the association that defines this relationship in the conceptual model. For more information, see [CSDL, SSDL, and MSL Specifications](../Topic/CSDL,%20SSDL,%20and%20MSL%20Specifications.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

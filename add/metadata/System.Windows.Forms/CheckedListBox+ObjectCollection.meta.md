@@ -1,19 +1,34 @@
 ---
 uid: System.Windows.Forms.CheckedListBox.ObjectCollection
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.CheckedListBox.ObjectCollection.Add(System.Object,System.Windows.Forms.CheckState)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.CheckedListBox.ObjectCollection.Add(System.Object,System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.CheckedListBox.ObjectCollection.Add
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.CheckedListBox.ObjectCollection.#ctor(System.Windows.Forms.CheckedListBox)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

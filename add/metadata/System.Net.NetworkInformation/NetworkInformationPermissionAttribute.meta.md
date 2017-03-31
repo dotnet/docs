@@ -1,19 +1,23 @@
 ---
 uid: System.Net.NetworkInformation.NetworkInformationPermissionAttribute
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.NetworkInformationPermissionAttribute.Access
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.NetworkInformationPermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.NetworkInformationPermissionAttribute.CreatePermission
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

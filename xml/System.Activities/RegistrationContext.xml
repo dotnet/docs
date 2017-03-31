@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides access to the current collection of workflow execution properties.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,9 +31,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the workflow execution property.</param>
+        <summary>Returns a workflow execution property with the specified name.</summary>
+        <returns>The workflow execution property.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

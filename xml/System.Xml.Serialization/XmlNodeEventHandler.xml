@@ -22,9 +22,27 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">To be added.</param>
-    <param name="e">To be added.</param>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <param name="sender">The source of the event.</param>
+    <param name="e">An <see cref="T:System.Xml.Serialization.XmlNodeEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that handles the <see cref="E:System.Xml.Serialization.XmlSerializer.UnknownNode" /> event of an <see cref="T:System.Xml.Serialization.XmlSerializer" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you create an <xref:System.Xml.Serialization.XmlNodeEventHandler> delegate, you identify the method that handles the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+  
+ The <xref:System.Xml.Serialization.XmlSerializer.UnknownNode> event occurs only when you call the <xref:System.Xml.Serialization.XmlSerializer.Deserialize%2A> method.  
+  
+   
+  
+## Examples  
+ The following example creates an <xref:System.Xml.Serialization.XmlSerializer>, adds an event handler for the <xref:System.Xml.Serialization.XmlSerializer.UnknownNode> event, and deserializes an object.  
+  
+ [!code-cpp[Classic XmlNodeEventHandler Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic XmlNodeEventHandler Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic XmlNodeEventHandler Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic XmlNodeEventHandler Example/CS/source.cs#1)]
+ [!code-vb[Classic XmlNodeEventHandler Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic XmlNodeEventHandler Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

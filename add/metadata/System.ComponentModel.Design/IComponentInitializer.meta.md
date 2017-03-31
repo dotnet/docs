@@ -1,14 +1,20 @@
 ---
 uid: System.ComponentModel.Design.IComponentInitializer
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.IComponentInitializer.InitializeNewComponent(System.Collections.IDictionary)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.IComponentInitializer.InitializeExistingComponent(System.Collections.IDictionary)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

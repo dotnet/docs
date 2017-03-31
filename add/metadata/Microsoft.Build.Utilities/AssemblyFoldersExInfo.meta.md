@@ -1,34 +1,41 @@
 ---
 uid: Microsoft.Build.Utilities.AssemblyFoldersExInfo
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Utilities.AssemblyFoldersExInfo.DirectoryPath
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Utilities.AssemblyFoldersExInfo.Key
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Utilities.AssemblyFoldersExInfo.TargetFrameworkVersion
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Utilities.AssemblyFoldersExInfo.#ctor(Microsoft.Win32.RegistryHive,Microsoft.Win32.RegistryView,System.String,System.String,System.Version)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Utilities.AssemblyFoldersExInfo.View
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Utilities.AssemblyFoldersExInfo.Hive
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

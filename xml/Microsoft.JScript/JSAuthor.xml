@@ -23,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides services for authoring JScript code in an editor.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,7 +38,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.JSAuthor" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,8 +56,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets an object that is used to add IntelliSense to text when JScript code is being authored in an editor.</summary>
+        <returns>An object that is used to add IntelliSense to text.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,8 +75,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets an object that is used to colorize text when JScript code is being authored in an editor.</summary>
+        <returns>An object that is used to colorize text.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

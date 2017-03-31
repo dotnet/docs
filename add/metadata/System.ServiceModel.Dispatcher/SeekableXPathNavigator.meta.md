@@ -1,44 +1,72 @@
 ---
 uid: System.ServiceModel.Dispatcher.SeekableXPathNavigator
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.SeekableXPathNavigator.GetNamespace(System.Int64)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.SeekableXPathNavigator.ComparePosition(System.Int64,System.Int64)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.SeekableXPathNavigator.CurrentPosition
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.SeekableXPathNavigator.GetNodeType(System.Int64)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.SeekableXPathNavigator.GetLocalName(System.Int64)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Dispatcher.SeekableXPathNavigator.ComparePosition
+manager: "ghogen"
+---
+
+---
+uid: System.ServiceModel.Dispatcher.SeekableXPathNavigator.GetNamespace
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.SeekableXPathNavigator.GetName(System.Int64)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.SeekableXPathNavigator.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.SeekableXPathNavigator.GetValue(System.Int64)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

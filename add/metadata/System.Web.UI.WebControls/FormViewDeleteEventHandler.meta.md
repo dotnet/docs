@@ -1,4 +1,5 @@
 ---
 uid: System.Web.UI.WebControls.FormViewDeleteEventHandler
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

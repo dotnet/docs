@@ -20,7 +20,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Class responsible for runtime binding of the dynamic operations on the dynamic call site.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -44,7 +44,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.CompilerServices.CallSiteBinder" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,11 +75,11 @@
         <Parameter Name="returnLabel" Type="System.Linq.Expressions.LabelTarget" />
       </Parameters>
       <Docs>
-        <param name="args">To be added.</param>
-        <param name="parameters">To be added.</param>
-        <param name="returnLabel">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="args">An array of arguments to the dynamic operation.</param>
+        <param name="parameters">The array of <see cref="T:System.Linq.Expressions.ParameterExpression" /> instances that represent the parameters of the call site in the binding process.</param>
+        <param name="returnLabel">A LabelTarget used to return the result of the dynamic binding.</param>
+        <summary>Performs the runtime binding of the dynamic operation on a set of arguments.</summary>
+        <returns>An Expression that performs tests on the dynamic operation arguments, and performs the dynamic operation if the tests are valid. If the tests fail on subsequent occurrences of the dynamic operation, Bind will be called again to produce a new <see cref="T:System.Linq.Expressions.Expression" /> for the new argument types.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,11 +116,11 @@
         <Parameter Name="args" Type="System.Object[]" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="site">To be added.</param>
-        <param name="args">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The target type of the CallSite.</typeparam>
+        <param name="site">The CallSite the bind is being performed for.</param>
+        <param name="args">The arguments for the binder.</param>
+        <summary>Provides low-level runtime binding support. Classes can override this and provide a direct delegate for the implementation of rule. This can enable saving rules to disk, having specialized rules available at runtime, or providing a different caching policy.</summary>
+        <returns>A new delegate which replaces the CallSite Target.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,9 +156,9 @@
         <Parameter Name="target" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
+        <typeparam name="T">The type of target being added.</typeparam>
+        <param name="target">The target delegate to be added to the cache.</param>
+        <summary>Adds a target to the cache of known targets. The cached targets will be scanned before calling BindDelegate to produce the new rule.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,8 +184,8 @@
         <ReturnType>System.Linq.Expressions.LabelTarget</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a label that can be used to cause the binding to be updated. It indicates that the expression's binding is no longer valid. This is typically used when the "version" of a dynamic object has changed.</summary>
+        <value>The <see cref="T:System.Linq.Expressions.LabelTarget" /> object representing a label that can be used to trigger the binding update.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

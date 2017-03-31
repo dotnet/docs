@@ -1,14 +1,17 @@
 ---
 uid: System.Net.Configuration.Ipv6Element
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.Ipv6Element.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.Ipv6Element.Enabled
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

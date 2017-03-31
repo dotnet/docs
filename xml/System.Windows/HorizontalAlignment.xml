@@ -15,8 +15,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates where an element should be displayed on the horizontal axis relative to the allocated layout slot of the parent element.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Stretch is the default layout behavior.  
+  
+ Element <xref:System.Windows.FrameworkElement.Height%2A> and <xref:System.Windows.FrameworkElement.Width%2A> properties that are explicitly set take precedence over the Stretch property value.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Center">
@@ -32,7 +41,7 @@
         <ReturnType>System.Windows.HorizontalAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An element aligned to the center of the layout slot for the parent element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -48,7 +57,7 @@
         <ReturnType>System.Windows.HorizontalAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An element aligned to the left of the layout slot for the parent element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -64,7 +73,7 @@
         <ReturnType>System.Windows.HorizontalAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An element aligned to the right of the layout slot for the parent element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Stretch">
@@ -80,7 +89,7 @@
         <ReturnType>System.Windows.HorizontalAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An element stretched to fill the entire layout slot of the parent element.</summary>
       </Docs>
     </Member>
   </Members>

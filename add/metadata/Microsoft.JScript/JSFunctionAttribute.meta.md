@@ -1,19 +1,24 @@
 ---
 uid: Microsoft.JScript.JSFunctionAttribute
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSFunctionAttribute.#ctor(Microsoft.JScript.JSFunctionAttributeEnum,Microsoft.JScript.JSBuiltin)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSFunctionAttribute.#ctor(Microsoft.JScript.JSFunctionAttributeEnum)
-internalonly: False
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.JSFunctionAttribute.#ctor
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSFunctionAttribute.GetAttributeValue
-internalonly: False
+ms.author: "mikejo"
 ---

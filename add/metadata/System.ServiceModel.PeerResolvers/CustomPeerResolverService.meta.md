@@ -1,69 +1,89 @@
 ---
 uid: System.ServiceModel.PeerResolvers.CustomPeerResolverService
-internalonly: False
+ms.author: "bobdel"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerResolvers.CustomPeerResolverService.RefreshInterval
-internalonly: False
+ms.author: "bobdel"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerResolvers.CustomPeerResolverService.Resolve(System.ServiceModel.PeerResolvers.ResolveInfo)
-internalonly: False
+ms.author: "bobdel"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerResolvers.CustomPeerResolverService.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerResolvers.CustomPeerResolverService.GetServiceSettings
-internalonly: False
+ms.author: "bobdel"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerResolvers.CustomPeerResolverService.Register(System.ServiceModel.PeerResolvers.RegisterInfo)
-internalonly: False
+ms.author: "bobdel"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerResolvers.CustomPeerResolverService.Refresh(System.ServiceModel.PeerResolvers.RefreshInfo)
-internalonly: False
+ms.author: "bobdel"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerResolvers.CustomPeerResolverService.Unregister(System.ServiceModel.PeerResolvers.UnregisterInfo)
-internalonly: False
+ms.author: "bobdel"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerResolvers.CustomPeerResolverService.ControlShape
-internalonly: False
+ms.author: "bobdel"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerResolvers.CustomPeerResolverService.Close
-internalonly: False
+ms.author: "bobdel"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerResolvers.CustomPeerResolverService.CleanupInterval
-internalonly: False
+ms.author: "bobdel"
+manager: "ghogen"
+---
+
+---
+uid: System.ServiceModel.PeerResolvers.CustomPeerResolverService.Register
+ms.author: "bobdel"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerResolvers.CustomPeerResolverService.Open
-internalonly: False
+ms.author: "bobdel"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerResolvers.CustomPeerResolverService.Update(System.ServiceModel.PeerResolvers.UpdateInfo)
-internalonly: False
+ms.author: "bobdel"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerResolvers.CustomPeerResolverService.Register(System.Guid,System.String,System.ServiceModel.PeerNodeAddress)
-internalonly: False
+ms.author: "bobdel"
+manager: "ghogen"
 ---

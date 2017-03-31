@@ -24,8 +24,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains the arguments passed to a method or property by <see langword="IDispatch::Invoke" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For additional information about `DISPPARAMS`, see [DISPPARMS structure](https://msdn.microsoft.com/en-us/library/windows/desktop/ms221416\(v=vs.85\).aspx) in the Windows API documentation.  
+  
+ The common language runtime throws an exception when a COM method in native code returns an HRESULT. For more information, see [How to: Map HRESULTs and Exceptions](../Topic/How%20to:%20Map%20HRESULTs%20and%20Exceptions.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="cArgs">
@@ -54,7 +63,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the count of arguments.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,7 +93,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the count of named arguments</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,7 +123,7 @@
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the dispatch IDs of named arguments.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,7 +153,7 @@
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents a reference to the array of arguments.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

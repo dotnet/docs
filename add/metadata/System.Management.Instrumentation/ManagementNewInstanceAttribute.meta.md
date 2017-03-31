@@ -1,9 +1,9 @@
 ---
 uid: System.Management.Instrumentation.ManagementNewInstanceAttribute
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.ManagementNewInstanceAttribute.#ctor
-internalonly: False
+manager: "jillfra"
 ---

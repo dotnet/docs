@@ -17,9 +17,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">To be added.</param>
-    <param name="e">To be added.</param>
-    <summary>To be added.</summary>
+    <param name="sender">The source of the event.</param>
+    <param name="e">An <see cref="T:System.Activities.Presentation.View.ViewStateChangedEventArgs" /> object that contains no event data.</param>
+    <summary>Declares a delegate type that handles changes to the view state.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

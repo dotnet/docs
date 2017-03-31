@@ -1,19 +1,25 @@
 ---
 uid: System.Windows.Forms.MaskInputRejectedEventArgs
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.MaskInputRejectedEventArgs.#ctor(System.Int32,System.ComponentModel.MaskedTextResultHint)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.MaskInputRejectedEventArgs.Position
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.MaskInputRejectedEventArgs.RejectionHint
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

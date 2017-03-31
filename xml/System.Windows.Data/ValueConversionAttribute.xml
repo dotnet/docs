@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents an attribute that allows the author of a value converter to specify the data types involved in the implementation of the converter.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,10 +34,11 @@
         <Parameter Name="targetType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="sourceType">To be added.</param>
-        <param name="targetType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="sourceType">The type this converter converts.</param>
+        <param name="targetType">The type this converter converts to.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Data.ValueConversionAttribute" /> class with the specified source type and target type.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="targetType" /> parameter cannot be <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -54,8 +55,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code for this instance of <see cref="T:System.Windows.Data.ValueConversionAttribute" />.</summary>
+        <returns>The hash code for this instance of <see cref="T:System.Windows.Data.ValueConversionAttribute" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,8 +73,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets and sets the type of the optional value converter parameter object.</summary>
+        <value>The type of the optional value converter parameter object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,8 +91,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type this converter converts.</summary>
+        <value>The type this converter converts.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,8 +109,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type this converter converts to.</summary>
+        <value>The type this converter converts to.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -126,8 +127,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the unique identifier of this <see cref="T:System.Windows.Data.ValueConversionAttribute" /> instance.</summary>
+        <value>The unique identifier of this <see cref="T:System.Windows.Data.ValueConversionAttribute" /> instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

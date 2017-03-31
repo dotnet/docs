@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.CodeStatementBuilder
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.CodeStatementBuilder.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.CodeStatementBuilder.BuildStatement(System.CodeDom.CodeArgumentReferenceExpression)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

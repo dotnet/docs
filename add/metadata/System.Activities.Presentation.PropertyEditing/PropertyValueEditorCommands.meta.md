@@ -1,44 +1,62 @@
 ---
 uid: System.Activities.Presentation.PropertyEditing.PropertyValueEditorCommands
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.PropertyEditing.PropertyValueEditorCommands.BeginTransaction
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.PropertyEditing.PropertyValueEditorCommands.ShowExtendedPopupEditor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.PropertyEditing.PropertyValueEditorCommands.ShowDialogEditor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.PropertyEditing.PropertyValueEditorCommands.CommitTransaction
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.PropertyEditing.PropertyValueEditorCommands.ShowInlineEditor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.PropertyEditing.PropertyValueEditorCommands.AbortTransaction
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.PropertyEditing.PropertyValueEditorCommands.FinishEditing
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.PropertyEditing.PropertyValueEditorCommands.ShowExtendedPinnedEditor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

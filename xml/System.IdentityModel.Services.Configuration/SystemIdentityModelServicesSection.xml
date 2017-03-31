@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the <see langword="&lt;system.identityModel.services&gt;" /> section in a configuration file. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `<system.identityModel.services>` section configures authentication using WS-Federation protocol. It contains elements that configure the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> (WSFAM) and the <xref:System.IdentityModel.Services.SessionAuthenticationModule> (SAM).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.Configuration.SystemIdentityModelServicesSection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +50,8 @@
         <ReturnType>System.IdentityModel.Services.Configuration.SystemIdentityModelServicesSection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a reference to the <see langword="&lt;system.identityModel.services&gt;" /> section from the configuration file.</summary>
+        <value>The <see langword="&lt;system.identityModel.services&gt;" /> section from the configuration file. <see langword="null" /> if the configuration file does not contain a <see langword="&lt;system.identityModel.services&gt;" /> section.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,9 +68,16 @@
         <ReturnType>System.IdentityModel.Services.Configuration.FederationConfigurationElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the unnamed <see langword="&lt;federationConfiguration&gt;" /> element from the configuration file.</summary>
+        <value>The unnamed <see langword="&lt;federationConfiguration&gt;" /> element from the configuration file. <see langword="null" /> if the configuration file does not contain a <see langword="&lt;system.identityModel.services&gt;" /> section.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The unnamed `<federationConfiguration>` element does not have its `name` attribute set (<xref:System.IdentityModel.Services.Configuration.FederationConfigurationElement.Name%2A?displayProperty=fullName> property is `null`).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FederationConfigurationElements">
@@ -84,8 +98,8 @@
         <ReturnType>System.IdentityModel.Services.Configuration.FederationConfigurationElementCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the collection of <see langword="&lt;federationConfiguration&gt;" /> elements configured in this <see langword="&lt;system.identityModel.services&gt;" /> section.</summary>
+        <value>A collection that contains all of the <see langword="&lt;federationConfiguration&gt;" /> elements configured in this <see langword="&lt;system.identityModel.services&gt;" /> section.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,7 +116,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A constant that defines the name of the configuration section; “system.identityModel.services”.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

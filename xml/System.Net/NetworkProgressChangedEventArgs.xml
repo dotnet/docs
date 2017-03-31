@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides data for the network progress changed event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -47,11 +47,11 @@
         <Parameter Name="userState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="percentage">To be added.</param>
-        <param name="processedBytes">To be added.</param>
-        <param name="totalBytes">To be added.</param>
-        <param name="userState">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="percentage">The percentage of an asynchronous task that has been completed.</param>
+        <param name="processedBytes">The number of processed bytes.</param>
+        <param name="totalBytes">The total number of bytes.</param>
+        <param name="userState">A unique user state.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.NetworkProgressChangedEventArgs" /> class</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,8 +76,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of bytes that have been processed.</summary>
+        <value>Returns <see cref="T:System.Int32" />.  
+  
+ The number of bytes processed.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,8 +104,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the total number of bytes that have been transferred.</summary>
+        <value>Returns <see cref="T:System.Int32" />.  
+  
+ The total number of bytes transferred.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

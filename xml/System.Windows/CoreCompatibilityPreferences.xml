@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains properties that specify how an application should behave relative to WPF features that are in the PresentationCore assembly.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,9 @@
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether to enable clipping in a multi-monitor display.</summary>
+        <value>
+          <see langword="true" /> to enable clipping in a multi-monitor display; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,9 +47,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether the user needs to use the ALT key to invoke a shortcut.</summary>
+        <value>
+          <see langword="true" /> if the user needs to use the ALT key to invoke a shortcut; otherwise, <see langword="false" />.  The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you use this property to change the behavior of WPF, you must change the property’s value early in the app’s lifetime, such in the constructor of the class that inherits from Application.  After the value is read, you cannot change it again.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

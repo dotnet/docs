@@ -1,14 +1,17 @@
 ---
 uid: System.Windows.Threading.DispatcherUnhandledExceptionFilterEventArgs
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Threading.DispatcherUnhandledExceptionFilterEventArgs.Exception
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Threading.DispatcherUnhandledExceptionFilterEventArgs.RequestCatch
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

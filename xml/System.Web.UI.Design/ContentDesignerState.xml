@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Enumerates the possible settings for the state of a <see cref="T:System.Web.UI.Design.WebControls.ContentDesigner" /> control at design time.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Web.UI.Design.ContentDesignerState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The associated control displays the default content.</summary>
       </Docs>
     </Member>
     <Member MemberName="ShowUserContent">
@@ -43,7 +43,7 @@
         <ReturnType>System.Web.UI.Design.ContentDesignerState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The associated control displays the user content.</summary>
       </Docs>
     </Member>
   </Members>

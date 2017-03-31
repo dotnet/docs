@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.ValidationPropertyAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ValidationPropertyAttribute.#ctor(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ValidationPropertyAttribute.Name
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

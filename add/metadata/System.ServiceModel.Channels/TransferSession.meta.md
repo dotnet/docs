@@ -1,4 +1,6 @@
 ---
 uid: System.ServiceModel.Channels.TransferSession
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

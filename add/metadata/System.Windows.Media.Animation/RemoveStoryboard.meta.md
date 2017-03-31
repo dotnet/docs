@@ -1,9 +1,13 @@
 ---
 uid: System.Windows.Media.Animation.RemoveStoryboard
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.RemoveStoryboard.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

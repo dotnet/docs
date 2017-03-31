@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies text drawing styles.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.TextStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Default text drawing style.</summary>
       </Docs>
     </Member>
     <Member MemberName="Embed">
@@ -43,7 +43,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.TextStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Embedded text.</summary>
       </Docs>
     </Member>
     <Member MemberName="Emboss">
@@ -59,7 +59,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.TextStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Embossed text.</summary>
       </Docs>
     </Member>
     <Member MemberName="Frame">
@@ -75,7 +75,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.TextStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Framed text.</summary>
       </Docs>
     </Member>
     <Member MemberName="Shadow">
@@ -91,7 +91,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.TextStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Shadow text.</summary>
       </Docs>
     </Member>
   </Members>

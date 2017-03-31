@@ -1,9 +1,9 @@
 ---
 uid: Microsoft.JScript.ForIn
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.ForIn.JScriptGetEnumerator(System.Object)
-internalonly: False
+ms.author: "mikejo"
 ---

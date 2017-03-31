@@ -16,8 +16,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a page adapter for the cHTML adapter set. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
     <remarks>To be added.</remarks>
+    <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,8 +32,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.Adapters.ChtmlPageAdapter" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Adapters are usually constructed automatically by ASP.NET and must have a default constructor.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateTextWriter">
@@ -51,9 +59,9 @@
         <Parameter Name="writer" Type="System.IO.TextWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="writer">The text writer.</param>
+        <summary>Creates and returns a text writer suitable for the given adapters. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <returns>A text writer suitable for the given adapters.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,12 +84,12 @@
         <Parameter Name="baseCollection" Type="System.Collections.Specialized.NameValueCollection" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <param name="postEventSourceID">To be added.</param>
-        <param name="postEventArgumentID">To be added.</param>
-        <param name="baseCollection">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">A <see cref="T:System.Web.HttpRequest" /> object that contains request information, such as HTTP headers.</param>
+        <param name="postEventSourceID">Source identifier for the event.</param>
+        <param name="postEventArgumentID">Argument identifier for the event.</param>
+        <param name="baseCollection">Collection of postback data from the request object.</param>
+        <summary>Called to determine the postback data collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <returns>A modified version of the <paramref name="baseCollection" /> parameter.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,10 +109,23 @@
         <Parameter Name="context" Type="System.Web.HttpContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="context">The current request context.</param>
+        <summary>Evaluates whether the device adapter set applies to the specified request. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <returns>
+          <see langword="true" /> if the device adapter set applies to the specified request; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+|Class|Returns|Preferred rendering type|Check value of JavaScript property|  
+|-----------|-------------|------------------------------|----------------------------------------|  
+|<xref:System.Web.UI.MobileControls.Adapters.HtmlPageAdapter>|`true`|Checks whether the value of the <xref:System.Web.Configuration.HttpCapabilitiesBase.PreferredRenderingType%2A> is <xref:System.Web.Mobile.MobileCapabilities.PreferredRenderingTypeHtml32> or <xref:System.Web.Mobile.MobileCapabilities.PreferredRenderingTypeChtml10>.|The <xref:System.Web.Configuration.HttpCapabilitiesBase.JavaScript%2A> returns `true`.|  
+|<xref:System.Web.UI.MobileControls.Adapters.ChtmlPageAdapter>|`true`|Checks whether the <xref:System.Web.Configuration.HttpCapabilitiesBase.PreferredRenderingType%2A> is <xref:System.Web.Mobile.MobileCapabilities.PreferredRenderingTypeHtml32> or <xref:System.Web.Mobile.MobileCapabilities.PreferredRenderingTypeChtml10>.|The device capability of the <xref:System.Web.Configuration.HttpCapabilitiesBase.JavaScript%2A> returns `false`.|  
+|<xref:System.Web.UI.MobileControls.Adapters.WmlPageAdapter>|`true`|Checks whether the <xref:System.Web.Configuration.HttpCapabilitiesBase.PreferredRenderingType%2A> is <xref:System.Web.Mobile.MobileCapabilities.PreferredRenderingTypeWml11> or <xref:System.Web.Mobile.MobileCapabilities.PreferredRenderingTypeWml12>.|N/A|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EventArgumentKey">
@@ -120,8 +141,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the key to use to submit the event argument. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>The key to use to submit the event argument.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -138,8 +159,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the key to use to submit the event source. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>The key to use to submit the event source.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -161,10 +182,10 @@
         <Parameter Name="argument" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="target">To be added.</param>
-        <param name="argument">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The specified text writer.</param>
+        <param name="target">The target device.</param>
+        <param name="argument">Optional event argument to pass.</param>
+        <summary>Renders a reference to a postback event appropriately for the target device. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -185,9 +206,9 @@
         <Parameter Name="form" Type="System.Web.UI.MobileControls.Form" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="form">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The text writer.</param>
+        <param name="form">The unique identifier for the form.</param>
+        <summary>Renders the header associated with postbacks. For browsers that support script, this includes a script block to perform postback. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

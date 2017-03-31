@@ -15,8 +15,24 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the selection behavior of a list box.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by classes such as <xref:System.Windows.Forms.ListBox> and <xref:System.Windows.Forms.CheckedListBox>.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Windows.Forms.ListBox.GetSelected%2A> method to determine which items in a <xref:System.Windows.Forms.ListBox> are selected in order to select the items that are not selected and deselect the items that are selected. The example also demonstrates using the <xref:System.Windows.Forms.ListBox.SelectionMode%2A> property to enable a <xref:System.Windows.Forms.ListBox> to have more than one selected item and uses the <xref:System.Windows.Forms.ListBox.Sorted%2A> property to demonstrate how to sort items in a <xref:System.Windows.Forms.ListBox> automatically. This example assumes that a <xref:System.Windows.Forms.ListBox>, named `listBox1`, has been added to a form and that the `InitializeMyListBox` method defined in the example is called from the <xref:System.Windows.Forms.Form.Load> event of the form.  
+  
+ [!code-cpp[ListBox.GetSelected#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListBox.GetSelected/CPP/form1.cpp#1)]
+ [!code-csharp[ListBox.GetSelected#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListBox.GetSelected/CS/form1.cs#1)]
+ [!code-vb[ListBox.GetSelected#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListBox.GetSelected/VB/form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="MultiExtended">
@@ -32,7 +48,7 @@
         <ReturnType>System.Windows.Forms.SelectionMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Multiple items can be selected, and the user can use the SHIFT, CTRL, and arrow keys to make selections</summary>
       </Docs>
     </Member>
     <Member MemberName="MultiSimple">
@@ -48,7 +64,7 @@
         <ReturnType>System.Windows.Forms.SelectionMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Multiple items can be selected.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -64,7 +80,7 @@
         <ReturnType>System.Windows.Forms.SelectionMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No items can be selected.</summary>
       </Docs>
     </Member>
     <Member MemberName="One">
@@ -80,7 +96,7 @@
         <ReturnType>System.Windows.Forms.SelectionMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Only one item can be selected.</summary>
       </Docs>
     </Member>
   </Members>

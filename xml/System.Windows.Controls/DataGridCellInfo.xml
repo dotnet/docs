@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents information about a specific cell in a <see cref="T:System.Windows.Controls.DataGrid" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This structure provides information about the cell and the data item associated with the cell. It is used instead of a reference to the actual <xref:System.Windows.Controls.DataGridCell> container when the <xref:System.Windows.Controls.DataGrid> gets a cell; for example, in the <xref:System.Windows.Controls.DataGrid.CurrentCell%2A> or <xref:System.Windows.Controls.DataGrid.SelectedCells%2A> properties.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,9 +35,16 @@
         <Parameter Name="cell" Type="System.Windows.Controls.DataGridCell" />
       </Parameters>
       <Docs>
-        <param name="cell">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="cell">The cell for which information is to be generated.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.DataGridCellInfo" /> structure for the specified cell.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor associates the <xref:System.Windows.Controls.DataGridCellInfo> with the specific <xref:System.Windows.Controls.DataGrid> instance that owns the cell container.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -47,10 +61,17 @@
         <Parameter Name="column" Type="System.Windows.Controls.DataGridColumn" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <param name="column">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="item">The data item for the row that contains the cell.</param>
+        <param name="column">The column that contains the cell.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.DataGridCellInfo" /> structure using the specified data item and column.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor does not associate the <xref:System.Windows.Controls.DataGridCellInfo> with a specific <xref:System.Windows.Controls.DataGrid> instance.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Column">
@@ -66,8 +87,8 @@
         <ReturnType>System.Windows.Controls.DataGridColumn</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the column that contains the cell.</summary>
+        <value>The column that contains the cell.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,10 +108,18 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="obj">The object to compare to the current instance.</param>
+        <summary>Indicates whether the specified object is equal to the current instance.</summary>
+        <returns>
+          <see langword="true" /> if the comparison object represents the same cell; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method compares the <xref:System.Windows.Controls.DataGridCellInfo.Column%2A> property, the <xref:System.Windows.Controls.DataGridCellInfo.Item%2A> property, and the <xref:System.Windows.Controls.DataGrid> that owns the cell container.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -107,8 +136,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a hash code for the current <see cref="T:System.Windows.Controls.DataGridCellInfo" /> structure.</summary>
+        <returns>A hash code for the structure.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,9 +154,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the structure holds valid information.</summary>
+        <value>
+          <see langword="true" /> if the structure has valid information; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property verifies that the <xref:System.Windows.Controls.DataGridCellInfo.Item%2A> property is not <xref:System.Windows.DependencyProperty.UnsetValue?displayProperty=fullName> and the <xref:System.Windows.Controls.DataGridCellInfo.Column%2A> property is not `null`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -143,8 +180,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the data item for the row that contains the cell.</summary>
+        <value>The data item for the row that contains the cell.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -165,11 +202,19 @@
         <Parameter Name="cell2" Type="System.Windows.Controls.DataGridCellInfo" />
       </Parameters>
       <Docs>
-        <param name="cell1">To be added.</param>
-        <param name="cell2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="cell1">The first structure to compare.</param>
+        <param name="cell2">The second structure to compare.</param>
+        <summary>Indicates whether two <see cref="T:System.Windows.Controls.DataGridCellInfo" /> instances are equal.</summary>
+        <returns>
+          <see langword="true" /> if the two structures represent the same cell; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This operator compares the <xref:System.Windows.Controls.DataGridCellInfo.Column%2A> property, the <xref:System.Windows.Controls.DataGridCellInfo.Item%2A> property, and the <xref:System.Windows.Controls.DataGrid> that owns the cell container.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -189,11 +234,19 @@
         <Parameter Name="cell2" Type="System.Windows.Controls.DataGridCellInfo" />
       </Parameters>
       <Docs>
-        <param name="cell1">To be added.</param>
-        <param name="cell2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="cell1">The first structure to compare.</param>
+        <param name="cell2">The second structure to compare.</param>
+        <summary>Indicates whether two <see cref="T:System.Windows.Controls.DataGridCellInfo" /> instances are not equal.</summary>
+        <returns>
+          <see langword="true" /> if the two structures do not represent the same cell; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This operator compares the <xref:System.Windows.Controls.DataGridCellInfo.Column%2A> property, the <xref:System.Windows.Controls.DataGridCellInfo.Item%2A> property, and the <xref:System.Windows.Controls.DataGrid> that owns the cell container.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

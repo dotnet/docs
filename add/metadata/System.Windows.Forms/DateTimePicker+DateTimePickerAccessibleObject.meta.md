@@ -1,29 +1,40 @@
 ---
 uid: System.Windows.Forms.DateTimePicker.DateTimePickerAccessibleObject
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DateTimePicker.DateTimePickerAccessibleObject.#ctor(System.Windows.Forms.DateTimePicker)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DateTimePicker.DateTimePickerAccessibleObject.KeyboardShortcut
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DateTimePicker.DateTimePickerAccessibleObject.Value
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DateTimePicker.DateTimePickerAccessibleObject.Role
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DateTimePicker.DateTimePickerAccessibleObject.State
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

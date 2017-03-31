@@ -22,8 +22,19 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a container for a collection of <see cref="T:System.Net.CookieCollection" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Net.CookieContainer> is a data structure that provides storage for instances of the <xref:System.Net.Cookie> class, and which is accessed in a database-like manner. The <xref:System.Net.CookieContainer> has a capacity limit that is set when the container is created or changed by a property.  
+  
+ An instance of the <xref:System.Net.Cookie> class is added to the container based on its originating URI. It is added to an internal <xref:System.Net.CookieCollection> associated with the URI. A <xref:System.Net.Cookie> is retrieved from the container based on the URI as a <xref:System.Net.CookieCollection>, or as a string that can be used to submit HTTP WebRequests.  
+  
+ The <xref:System.Net.CookieContainer> has three properties that govern the volume of the content of the container: <xref:System.Net.CookieContainer.Capacity%2A>, <xref:System.Net.CookieContainer.MaxCookieSize%2A>, and <xref:System.Net.CookieContainer.PerDomainCapacity%2A>. These values have the default settings of 300, 4096, and 20 respectively. When a <xref:System.Net.Cookie> is added to the container, these properties are used to determine whether a <xref:System.Net.Cookie> already contained in the <xref:System.Net.CookieContainer> should be discarded to make room for the new one. The <xref:System.Net.CookieContainer> keeps track of each addition to ensure that neither the <xref:System.Net.CookieContainer.Capacity%2A> nor the <xref:System.Net.CookieContainer.PerDomainCapacity%2A> limits are exceeded. If one or both are exceeded, then <xref:System.Net.Cookie> instances held by the <xref:System.Net.CookieContainer> are removed. First, any expired <xref:System.Net.Cookie> is removed. If further capacity must be recaptured, then the least-recently used <xref:System.Net.CookieCollection> is purged.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,8 +59,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.CookieContainer" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default constructor initializes all fields to their default values. <xref:System.Net.CookieContainer> is used to initialize <xref:System.Net.CookieContainer.Capacity%2A>, <xref:System.Net.CookieContainer.DefaultCookieLengthLimit> is used for <xref:System.Net.CookieContainer.MaxCookieSize%2A>, and <xref:System.Net.CookieContainer.DefaultPerDomainCookieLimit> is used for <xref:System.Net.CookieContainer.PerDomainCapacity%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -70,9 +88,18 @@
         <Parameter Name="capacity" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="capacity">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="capacity">The number of <see cref="T:System.Net.Cookie" /> instances that the <see cref="T:System.Net.CookieContainer" /> can hold.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.CookieContainer" /> class with a specified value for the number of <see cref="T:System.Net.Cookie" /> instances that the container can hold.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Net.CookieContainer.PerDomainCapacity%2A> is initialized to 20, and <xref:System.Net.CookieContainer.MaxCookieSize%2A> is initialized to 4096.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="capacity" /> is less than or equal to zero.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -95,11 +122,26 @@
         <Parameter Name="maxCookieSize" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="capacity">To be added.</param>
-        <param name="perDomainCapacity">To be added.</param>
-        <param name="maxCookieSize">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="capacity">The number of <see cref="T:System.Net.Cookie" /> instances that the <see cref="T:System.Net.CookieContainer" /> can hold.</param>
+        <param name="perDomainCapacity">The number of <see cref="T:System.Net.Cookie" /> instances per domain.</param>
+        <param name="maxCookieSize">The maximum size in bytes for any single <see cref="T:System.Net.Cookie" /> in a <see cref="T:System.Net.CookieContainer" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.CookieContainer" /> class with specific properties.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The parameters specify values for <xref:System.Net.CookieContainer.Capacity%2A>, <xref:System.Net.CookieContainer.MaxCookieSize%2A>, and <xref:System.Net.CookieContainer.PerDomainCapacity%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="perDomainCapacity" /> is not equal to <see cref="F:System.Int32.MaxValue" />.  
+  
+ and  
+  
+ <paramref name="(perDomainCapacity" /> is less than or equal to zero or <paramref name="perDomainCapacity" /> is greater than <paramref name="capacity)" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="maxCookieSize" /> is less than or equal to zero.</exception>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -123,9 +165,25 @@
         <Parameter Name="cookie" Type="System.Net.Cookie" />
       </Parameters>
       <Docs>
-        <param name="cookie">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="cookie">The <see cref="T:System.Net.Cookie" /> to be added to the <see cref="T:System.Net.CookieContainer" />.</param>
+        <summary>Adds a <see cref="T:System.Net.Cookie" /> to a <see cref="T:System.Net.CookieContainer" />. This method uses the domain from the <see cref="T:System.Net.Cookie" /> to determine which domain collection to associate the <see cref="T:System.Net.Cookie" /> with.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Net.CookieContainer.Count%2A> property equals or exceeds the <xref:System.Net.CookieContainer.Capacity%2A> property, one or more <xref:System.Net.Cookie> instances are removed from the container before adding the `cookie` parameter. Enough <xref:System.Net.Cookie> instances are removed to bring <xref:System.Net.CookieContainer.Count%2A> below <xref:System.Net.CookieContainer.Capacity%2A> as follows: if there are expired instances in the given scope, they are cleaned up. If not, then the least recently used <xref:System.Net.CookieCollection> is found and removed from the container.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="cookie" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The domain for <paramref name="cookie" /> is <see langword="null" /> or the empty string ("").</exception>
+        <exception cref="T:System.Net.CookieException">
+          <paramref name="cookie" /> is larger than <paramref name="maxCookieSize" />.  
+  
+ -or-  
+  
+ the domain for <paramref name="cookie" /> is not a valid URI.</exception>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -149,9 +207,18 @@
         <Parameter Name="cookies" Type="System.Net.CookieCollection" />
       </Parameters>
       <Docs>
-        <param name="cookies">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="cookies">The <see cref="T:System.Net.CookieCollection" /> to be added to the <see cref="T:System.Net.CookieContainer" />.</param>
+        <summary>Adds the contents of a <see cref="T:System.Net.CookieCollection" /> to the <see cref="T:System.Net.CookieContainer" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Net.CookieContainer.Count%2A> property equals the <xref:System.Net.CookieContainer.Capacity%2A> property, one or more <xref:System.Net.Cookie> instances are removed from the container before adding the contents of the `cookies` parameter. Enough <xref:System.Net.Cookie> instances are removed to make room for `cookies` as follows: if there are expired instances, they are cleaned up. If not, or if more room is needed, then the least recently used <xref:System.Net.CookieCollection> is found and removed from the container.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="cookies" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -182,10 +249,31 @@
         <Parameter Name="cookie" Type="System.Net.Cookie" />
       </Parameters>
       <Docs>
-        <param name="uri">To be added.</param>
-        <param name="cookie">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="uri">The URI of the <see cref="T:System.Net.Cookie" /> to be added to the <see cref="T:System.Net.CookieContainer" />.</param>
+        <param name="cookie">The <see cref="T:System.Net.Cookie" /> to be added to the <see cref="T:System.Net.CookieContainer" />.</param>
+        <summary>Adds a <see cref="T:System.Net.Cookie" /> to the <see cref="T:System.Net.CookieContainer" /> for a particular URI.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you add a <xref:System.Net.Cookie> instance for just one specific host, do not set the <xref:System.Net.Cookie.Domain%2A> property of the <xref:System.Net.Cookie> instance. This is set automatically, based on the URI.  
+  
+ If your URI corresponds to your local domain and sends to all the hosts on the local domain, set the <xref:System.Net.Cookie><xref:System.Net.Cookie.Domain%2A> property equal to ".local". Otherwise, make sure it matches the host name used in the URI.  
+  
+ If the <xref:System.Net.Cookie.Version%2A> property of a <xref:System.Net.Cookie> is Netscape, the <xref:System.Net.Cookie.Path%2A> property of the <xref:System.Net.Cookie>, if not set explicitly, is derived from the URI and is the complete path from the URI, including the page name.  
+  
+ If the <xref:System.Net.CookieContainer.Count%2A> property equals the <xref:System.Net.CookieContainer.Capacity%2A> property, one or more <xref:System.Net.Cookie> instances are removed from the container before adding the `cookie` parameter. Enough <xref:System.Net.Cookie> instances are removed to bring <xref:System.Net.CookieContainer.Count%2A> below <xref:System.Net.CookieContainer.Capacity%2A> as follows: if there are expired instances in scope, they are cleaned up. If not, then the least recently used <xref:System.Net.CookieCollection> is found and removed from the container.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="uri" /> is <see langword="null" /> or <paramref name="cookie" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Net.CookieException">
+          <paramref name="cookie" /> is larger than <paramref name="maxCookieSize" />.  
+  
+ -or-  
+  
+ The domain for <paramref name="cookie" /> is not a valid URI.</exception>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -216,10 +304,25 @@
         <Parameter Name="cookies" Type="System.Net.CookieCollection" />
       </Parameters>
       <Docs>
-        <param name="uri">To be added.</param>
-        <param name="cookies">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="uri">The URI of the <see cref="T:System.Net.CookieCollection" /> to be added to the <see cref="T:System.Net.CookieContainer" />.</param>
+        <param name="cookies">The <see cref="T:System.Net.CookieCollection" /> to be added to the <see cref="T:System.Net.CookieContainer" />.</param>
+        <summary>Adds the contents of a <see cref="T:System.Net.CookieCollection" /> to the <see cref="T:System.Net.CookieContainer" /> for a particular URI.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you add a <xref:System.Net.Cookie> instance for just one specific host, do not set the <xref:System.Net.Cookie.Domain%2A> property of the <xref:System.Net.Cookie> instance. This is set automatically, based on the URI.  
+  
+ If your URI corresponds to your local domain and sends to all the hosts on the local domain, set the <xref:System.Net.Cookie><xref:System.Net.Cookie.Domain%2A> property equal to ".local". Otherwise, make sure it matches the host name used in the URI.  
+  
+ If <xref:System.Net.CookieContainer.Count%2A> equals <xref:System.Net.CookieContainer.Capacity%2A>, one or more <xref:System.Net.Cookie> instances is removed from the container before adding the `cookie` parameter. Enough <xref:System.Net.Cookie> instances are removed to bring <xref:System.Net.CookieContainer.Count%2A> below <xref:System.Net.CookieContainer.Capacity%2A> as follows: if there are expired instances in scope they are cleaned up. If not, then the least recently used <xref:System.Net.CookieCollection> is found and removed from the container.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="cookies" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The domain for one of the cookies in <paramref name="cookies" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Net.CookieException">One of the cookies in <paramref name="cookies" /> contains an invalid domain.</exception>
       </Docs>
     </Member>
     <Member MemberName="Capacity">
@@ -246,9 +349,20 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets and sets the number of <see cref="T:System.Net.Cookie" /> instances that a <see cref="T:System.Net.CookieContainer" /> can hold.</summary>
+        <value>The number of <see cref="T:System.Net.Cookie" /> instances that a <see cref="T:System.Net.CookieContainer" /> can hold. This is a hard limit and cannot be exceeded by adding a <see cref="T:System.Net.Cookie" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.Net.CookieContainer.Count%2A> equals or exceeds <xref:System.Net.CookieContainer.Capacity%2A>, one or more <xref:System.Net.Cookie> instances are removed from the container. Enough instances are removed to bring <xref:System.Net.CookieContainer.Count%2A> below <xref:System.Net.CookieContainer.Capacity%2A> as follows: if there are expired <xref:System.Net.Cookie> instances in scope, they are cleaned up. If not, then the least recently used <xref:System.Net.CookieCollection> is found and removed from the container.  
+  
+ <xref:System.Net.CookieContainer.Capacity%2A> must be greater than or equal to <xref:System.Net.CookieContainer.PerDomainCapacity%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="Capacity" /> is less than or equal to zero or (value is less than <see cref="P:System.Net.CookieContainer.PerDomainCapacity" /> and <see cref="P:System.Net.CookieContainer.PerDomainCapacity" /> is not equal to <see cref="F:System.Int32.MaxValue" />).</exception>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -275,9 +389,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of <see cref="T:System.Net.Cookie" /> instances that a <see cref="T:System.Net.CookieContainer" /> currently holds.</summary>
+        <value>The number of <see cref="T:System.Net.Cookie" /> instances that a <see cref="T:System.Net.CookieContainer" /> currently holds. This is the total of <see cref="T:System.Net.Cookie" /> instances in all domains.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value of this property is <xref:System.Net.CookieContainer>. If <xref:System.Net.CookieContainer.Count%2A> equals or exceeds <xref:System.Net.CookieContainer.Capacity%2A>, one or more <xref:System.Net.Cookie> instances are removed from the container. Enough instances are removed to bring <xref:System.Net.CookieContainer.Count%2A> below <xref:System.Net.CookieContainer.Capacity%2A> as follows: if there are expired <xref:System.Net.Cookie> instances in scope, they are cleaned up. If not, then the least recently used <xref:System.Net.CookieCollection> is found and removed from the container.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultCookieLengthLimit">
@@ -305,8 +426,15 @@
       </ReturnValue>
       <MemberValue>4096</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the default maximum size, in bytes, of the <see cref="T:System.Net.Cookie" /> instances that the <see cref="T:System.Net.CookieContainer" /> can hold. This field is constant.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default maximum <xref:System.Net.Cookie> size is 4096.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultCookieLimit">
@@ -334,8 +462,15 @@
       </ReturnValue>
       <MemberValue>300</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the default maximum number of <see cref="T:System.Net.Cookie" /> instances that the <see cref="T:System.Net.CookieContainer" /> can hold. This field is constant.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default maximum number of <xref:System.Net.Cookie> instances is 300.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultPerDomainCookieLimit">
@@ -363,8 +498,15 @@
       </ReturnValue>
       <MemberValue>20</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the default maximum number of <see cref="T:System.Net.Cookie" /> instances that the <see cref="T:System.Net.CookieContainer" /> can reference per domain. This field is constant.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default maximum number of <xref:System.Net.Cookie> instances per domain is 20.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCookieHeader">
@@ -394,10 +536,21 @@
         <Parameter Name="uri" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="uri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="uri">The URI of the <see cref="T:System.Net.Cookie" /> instances desired.</param>
+        <summary>Gets the HTTP cookie header that contains the HTTP cookies that represent the <see cref="T:System.Net.Cookie" /> instances that are associated with a specific URI.</summary>
+        <returns>An HTTP cookie header, with strings representing <see cref="T:System.Net.Cookie" /> instances delimited by semicolons.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Net.CookieContainer.GetCookieHeader%2A> returns a string that holds the HTTP cookie header for the <xref:System.Net.Cookie> instances specified by `uri`. The HTTP header is built by adding a string representation of each <xref:System.Net.Cookie> associated with `uri`. Note that the exact format of the string depends on the RFC that the <xref:System.Net.Cookie> conforms to. The strings for all the <xref:System.Net.Cookie> instances that are associated with `uri` are combined and delimited by semicolons.  
+  
+ This string is not in the correct format for use as the second parameter of the <xref:System.Net.CookieContainer.SetCookies%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="uri" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetCookies">
@@ -427,10 +580,19 @@
         <Parameter Name="uri" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="uri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="uri">The URI of the <see cref="T:System.Net.Cookie" /> instances desired.</param>
+        <summary>Gets a <see cref="T:System.Net.CookieCollection" /> that contains the <see cref="T:System.Net.Cookie" /> instances that are associated with a specific URI.</summary>
+        <returns>A <see cref="T:System.Net.CookieCollection" /> that contains the <see cref="T:System.Net.Cookie" /> instances that are associated with a specific URI.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A new instance of a <xref:System.Net.CookieCollection> is created. Then the <xref:System.Net.Cookie> instances in the internal collection that are associated with the specified URI are read out and added to the new <xref:System.Net.CookieCollection>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="uri" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="MaxCookieSize">
@@ -457,9 +619,18 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Represents the maximum allowed length of a <see cref="T:System.Net.Cookie" />.</summary>
+        <value>The maximum allowed length, in bytes, of a <see cref="T:System.Net.Cookie" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the new value of <xref:System.Net.CookieContainer.MaxCookieSize%2A> is less than the current value, any <xref:System.Net.Cookie> with a length that exceeds the new value will be truncated.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="MaxCookieSize" /> is less than or equal to zero.</exception>
       </Docs>
     </Member>
     <Member MemberName="PerDomainCapacity">
@@ -486,9 +657,22 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets and sets the number of <see cref="T:System.Net.Cookie" /> instances that a <see cref="T:System.Net.CookieContainer" /> can hold per domain.</summary>
+        <value>The number of <see cref="T:System.Net.Cookie" /> instances that are allowed per domain.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the new <xref:System.Net.CookieContainer.PerDomainCapacity%2A> value is less than the current value, and if any of the domain collections contain more <xref:System.Net.Cookie> instances than the new value, the collections are pruned to fit. This uses the same basic rules as described in the <xref:System.Net.CookieContainer.Capacity%2A> property. However, this does the clean-up only on the collection for this domain.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="PerDomainCapacity" /> is less than or equal to zero.  
+  
+ -or-  
+  
+ <paramref name="(PerDomainCapacity" /> is greater than the maximum allowable number of cookies instances, 300, and is not equal to <see cref="F:System.Int32.MaxValue" />).</exception>
       </Docs>
     </Member>
     <Member MemberName="SetCookies">
@@ -519,10 +703,24 @@
         <Parameter Name="cookieHeader" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="uri">To be added.</param>
-        <param name="cookieHeader">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="uri">The URI of the <see cref="T:System.Net.CookieCollection" />.</param>
+        <param name="cookieHeader">The contents of an HTTP set-cookie header as returned by a HTTP server, with <see cref="T:System.Net.Cookie" /> instances delimited by commas.</param>
+        <summary>Adds <see cref="T:System.Net.Cookie" /> instances for one or more cookies from an HTTP cookie header to the <see cref="T:System.Net.CookieContainer" /> for a specific URI.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Net.CookieContainer.SetCookies%2A> pulls all the HTTP cookies out of the HTTP cookie header, builds a <xref:System.Net.Cookie> for each one, and then adds each <xref:System.Net.Cookie> to the internal <xref:System.Net.CookieCollection> that is associated with the URI. The HTTP cookies in the `cookieHeader` string must be delimited by commas.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="cookieHeader" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Net.CookieException">One of the cookies is invalid.  
+  
+ -or-  
+  
+ An error occurred while adding one of the cookies to the container.</exception>
       </Docs>
     </Member>
   </Members>

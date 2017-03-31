@@ -1,19 +1,19 @@
 ---
 uid: System.Runtime.Remoting.TypeEntry
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.TypeEntry.TypeName
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.TypeEntry.AssemblyName
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.TypeEntry.#ctor
-internalonly: False
+manager: "ghogen"
 ---

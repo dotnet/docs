@@ -15,8 +15,19 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the client endpoint behavior used to marshal messages between different binding types and message versions.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ SOAP processing is the process where messages are converted between message versions.  
+  
+ Processing messages from one <xref:System.ServiceModel.Channels.MessageVersion> to another is accomplished by constructing a new WCF message that contains the body part and relevant headers from the incoming WCF message. Headers that are specific to addressing, or that are understood at the router level, are not used during construction of the new WCF message because these headers are either of a different version (in the case of addressing headers) or have been processed as part of the communication between the client and the router.  
+  
+ Whether a header is placed in the outbound message is determined by whether or not it was marked as understood as it passed through the incoming channel layer. Headers that are not understood (such as custom headers) are not removed and so pass through the routing service.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +41,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Routing.SoapProcessingBehavior" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,9 +62,9 @@
         <Parameter Name="bindingParameters" Type="System.ServiceModel.Channels.BindingParameterCollection" />
       </Parameters>
       <Docs>
-        <param name="endpoint">To be added.</param>
-        <param name="bindingParameters">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="endpoint">The service endpoint to apply the binding elements to.</param>
+        <param name="bindingParameters">The binding parameter collection to apply to the endpoint.</param>
+        <summary>Adds new binding elements to an endpoint.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,9 +85,9 @@
         <Parameter Name="clientRuntime" Type="System.ServiceModel.Dispatcher.ClientRuntime" />
       </Parameters>
       <Docs>
-        <param name="endpoint">To be added.</param>
-        <param name="clientRuntime">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="endpoint">The service endpoint to apply to the client.</param>
+        <param name="clientRuntime">The runtime on the client.</param>
+        <summary>Applies the specified endpoint behavior to the client.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,9 +108,9 @@
         <Parameter Name="endpointDispatcher" Type="System.ServiceModel.Dispatcher.EndpointDispatcher" />
       </Parameters>
       <Docs>
-        <param name="endpoint">To be added.</param>
-        <param name="endpointDispatcher">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="endpoint">The service endpoint to apply to the client.</param>
+        <param name="endpointDispatcher">The endpoint dispatcher.</param>
+        <summary>Applies the specified endpoint behavior to the endpoint dispatcher.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,9 +127,18 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether messages should be processed.</summary>
+        <value>**true** if messages should be marshaled; otherwise, **false**. The default value is **true**.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the <xref:System.ServiceModel.Routing.RoutingBehavior> creates and attaches a new <xref:System.ServiceModel.Routing.SoapProcessingBehavior> with <xref:System.ServiceModel.Routing.SoapProcessingBehavior.ProcessMessages%2A> set to `true` for each client endpoint. If you do not want to use the <xref:System.ServiceModel.Routing.SoapProcessingBehavior> on a specific endpoint, create a new <xref:System.ServiceModel.Routing.SoapProcessingBehavior> with this value set to `false`, and then attach it to the endpoint on which you do not want processing to occur. If the <xref:System.ServiceModel.Routing.RoutingBehavior> observes that a client already has a <xref:System.ServiceModel.Routing.SoapProcessingBehavior>, it does not attempt to attach another.  
+  
+ To disable the application of <xref:System.ServiceModel.Routing.SoapProcessingBehavior> on any endpoint, disable SOAP processing on the <xref:System.ServiceModel.Routing.RoutingBehavior> and the <xref:System.ServiceModel.Routing.RoutingConfiguration>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Validate">
@@ -137,8 +157,8 @@
         <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
       </Parameters>
       <Docs>
-        <param name="endpoint">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="endpoint">The service endpoint to validate.</param>
+        <summary>Validates the service endpoint.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

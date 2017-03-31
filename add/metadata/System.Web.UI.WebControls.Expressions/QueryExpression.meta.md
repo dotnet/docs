@@ -1,24 +1,29 @@
 ---
 uid: System.Web.UI.WebControls.Expressions.QueryExpression
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Expressions.QueryExpression.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Expressions.QueryExpression.Expressions
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Expressions.QueryExpression.GetQueryable(System.Linq.IQueryable)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Expressions.QueryExpression.Initialize(System.Web.UI.Control,System.Web.HttpContext,System.Web.UI.WebControls.IQueryableDataSource)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

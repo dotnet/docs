@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a SOAP fault that is specified in the service contract for use with JSON.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.JsonFaultDetail" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,8 +53,8 @@
         <ReturnType>System.ServiceModel.ExceptionDetail</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="T:System.ServiceModel.ExceptionDetail" /> object that represents a SOAP fault that is specified in the service contract.</summary>
+        <value>The SOAP fault that is specified in the service contract.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,8 +76,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the type of the exception.</summary>
+        <value>The type of the exception.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,8 +99,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the exception message.</summary>
+        <value>The exception message.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,8 +122,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the stack trace information for this exception.</summary>
+        <value>The stack trace information for this exception.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,4 +1,5 @@
 ---
 uid: System.Web.UI.DataSourceViewSelectCallback
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

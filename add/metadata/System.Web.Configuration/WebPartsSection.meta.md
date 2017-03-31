@@ -1,24 +1,29 @@
 ---
 uid: System.Web.Configuration.WebPartsSection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.WebPartsSection.EnableExport
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.WebPartsSection.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.WebPartsSection.Personalization
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.WebPartsSection.Transformers
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

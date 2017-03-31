@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides information about the <see cref="E:System.Windows.Controls.Primitives.Thumb.DragStarted" /> event that occurs when a user drags a <see cref="T:System.Windows.Controls.Primitives.Thumb" /> control with the mouse..</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,9 +29,9 @@
         <Parameter Name="verticalOffset" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="horizontalOffset">To be added.</param>
-        <param name="verticalOffset">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="horizontalOffset">The horizontal offset of the mouse click with respect to the screen coordinates of the <see cref="T:System.Windows.Controls.Primitives.Thumb" />.</param>
+        <param name="verticalOffset">The vertical offset of the mouse click with respect to the screen coordinates of the <see cref="T:System.Windows.Controls.Primitives.Thumb" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Primitives.DragStartedEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +48,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the horizontal offset of the mouse click relative to the screen coordinates of the <see cref="T:System.Windows.Controls.Primitives.Thumb" />.</summary>
+        <value>The horizontal offset of the mouse click with respect to the upper-left corner of the bounding box of the <see cref="T:System.Windows.Controls.Primitives.Thumb" />. There is no default value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,10 +70,17 @@
         <Parameter Name="genericTarget" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="genericHandler">To be added.</param>
-        <param name="genericTarget">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="genericHandler">The event handler delegate.</param>
+        <param name="genericTarget">The <see cref="T:System.Windows.Controls.Primitives.Thumb" /> that uses the handler.</param>
+        <summary>Converts a method that handles the <see cref="E:System.Windows.Controls.Primitives.Thumb.DragStarted" /> event to the <see cref="T:System.Windows.Controls.Primitives.DragStartedEventHandler" /> type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This implementation casts the `genericHandler` as a <xref:System.Windows.Controls.Primitives.DragStartedEventHandler>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="VerticalOffset">
@@ -89,8 +96,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the vertical offset of the mouse click relative to the screen coordinates of the <see cref="T:System.Windows.Controls.Primitives.Thumb" />.</summary>
+        <value>The horizontal offset of the mouse click with respect to the upper-left corner of the bounding box of the <see cref="T:System.Windows.Controls.Primitives.Thumb" />. There is no default value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

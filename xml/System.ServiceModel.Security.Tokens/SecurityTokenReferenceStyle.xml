@@ -11,7 +11,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This enumeration sets the desired referencing style that is used to generate security token references (STR) to the security tokens from the signature and encryption elements in the message.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,7 +29,7 @@
         <ReturnType>System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The generated STR will reference the token as if it were not attached to the message itself.</summary>
       </Docs>
     </Member>
     <Member MemberName="Internal">
@@ -46,7 +46,7 @@
         <ReturnType>System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The generated STR will reference the token as if it were included in the message.</summary>
       </Docs>
     </Member>
   </Members>

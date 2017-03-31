@@ -1,9 +1,13 @@
 ---
 uid: System.ServiceModel.Channels.ISessionChannel`1
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.ISessionChannel`1.Session
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides data for the <see cref="E:System.Data.OracleClient.OracleConnection.InfoMessage" /> event. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.OracleClient.OracleConnection.InfoMessage> event contains warnings sent from the data source.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Code">
@@ -28,8 +35,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the code portion of the message as an <see langword="int" />.</summary>
+        <value>The code portion of the message as an <see langword="int" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +53,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the full text of the message sent from the database.</summary>
+        <value>The text describing the message.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +71,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the object that generated the error.</summary>
+        <value>The name of the object that generated the error.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,8 +90,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Retrieves a string representation of the <see cref="E:System.Data.OracleClient.OracleConnection.InfoMessage" /> event.</summary>
+        <returns>A string representing the <see cref="E:System.Data.OracleClient.OracleConnection.InfoMessage" /> event.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

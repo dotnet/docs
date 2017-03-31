@@ -1,39 +1,83 @@
 ---
 uid: System.Windows.Forms.CursorConverter
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.CursorConverter.CanConvertFrom
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.CursorConverter.ConvertTo
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.CursorConverter.GetStandardValues
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.CursorConverter.ConvertFrom
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.CursorConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.CursorConverter.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.CursorConverter.GetStandardValuesSupported
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.CursorConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.CursorConverter.CanConvertTo
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.CursorConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.CursorConverter.GetStandardValuesSupported(System.ComponentModel.ITypeDescriptorContext)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.CursorConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.CursorConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -1,14 +1,17 @@
 ---
 uid: System.Net.Configuration.MailSettingsSectionGroup
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.MailSettingsSectionGroup.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.MailSettingsSectionGroup.Smtp
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

@@ -1,1 +1,0 @@
-            transportBindingElement.BuildChannelListener<IInputChannel>(context);

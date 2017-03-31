@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates whether the sort order for data points is ascending or descending.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.PointSortOrder> enumeration represents the order of the sort to be performed on data point values. It is used with the `Sort` method definitions in the <xref:System.Windows.Forms.DataVisualization.Charting.DataManipulator> class that include a `pointSortOrder` parameter.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Ascending">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.PointSortOrder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Ascending sort order, that is, smallest to largest values.</summary>
       </Docs>
     </Member>
     <Member MemberName="Descending">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.PointSortOrder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Descending sort order, that is, largest to smallest values.</summary>
       </Docs>
     </Member>
   </Members>

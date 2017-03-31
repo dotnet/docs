@@ -34,9 +34,16 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="TEntity">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="TEntity">The data type of the target entity.</typeparam>
+    <summary>Provides for deferred loading and relationship maintenance for the collection side of one-to-many and one-to-one relationships in a [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] applications.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used in combination with <xref:System.Data.Linq.EntityRef%601>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -50,7 +57,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Linq.EntitySet`1" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,9 +75,9 @@
         <Parameter Name="onRemove" Type="System.Action&lt;TEntity&gt;" />
       </Parameters>
       <Docs>
-        <param name="onAdd">To be added.</param>
-        <param name="onRemove">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="onAdd">Delegate for <see cref="M:System.Data.Linq.EntitySet`1.Add(`0)" />.</param>
+        <param name="onRemove">Delegate for <see cref="M:System.Data.Linq.EntitySet`1.Remove(`0)" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Linq.EntitySet`1" /> class while supplying handlers for add and remove operations.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,8 +97,8 @@
         <Parameter Name="entity" Type="TEntity" />
       </Parameters>
       <Docs>
-        <param name="entity">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="entity">The entity to add.</param>
+        <summary>Adds an entity.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,8 +118,8 @@
         <Parameter Name="collection" Type="System.Collections.Generic.IEnumerable&lt;TEntity&gt;" />
       </Parameters>
       <Docs>
-        <param name="collection">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="collection">The collection to be added.</param>
+        <summary>Adds a collection of entities.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,8 +139,8 @@
         <Parameter Name="entitySource" Type="System.Collections.Generic.IEnumerable&lt;TEntity&gt;" />
       </Parameters>
       <Docs>
-        <param name="entitySource">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="entitySource">The collection to assign.</param>
+        <summary>Assigns an <see cref="T:System.Data.Linq.EntitySet`1" /> collection to another <see cref="T:System.Data.Linq.EntitySet`1" /> collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,7 +158,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes all items.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -171,9 +178,10 @@
         <Parameter Name="entity" Type="TEntity" />
       </Parameters>
       <Docs>
-        <param name="entity">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="entity">The entity.</param>
+        <summary>Specifies whether the <see cref="T:System.Data.Linq.EntitySet`1" /> contains a specific entity.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Data.Linq.EntitySet`1" /> contains the entity; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -194,10 +202,36 @@
         <Parameter Name="arrayIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="arrayIndex">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="array">The array to copy to.</param>
+        <param name="arrayIndex">The starting index in the array.</param>
+        <summary>Copies the <see cref="T:System.Data.Linq.EntitySet`1" /> to an array.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following C# sample shows one use of this method:  
+  
+```  
+var customer = (from c in db.Customers  
+   where c.CustomerID == "ALFKI"  
+   select c).Single();  
+  
+Order[] orderArray = new Order[customer.Orders.Count];  
+```  
+  
+ customer.Orders.CopyTo(orderArray,0);In Visual Basic:  
+  
+```  
+Dim customer = (From c In db.Customers _   
+   Where c.CustomerID = "ALFKI" _   
+   Select c).[Single]()  
+  
+Dim orderArray As Order() = New Order(customer.Orders.Count - 1) {}  
+customer.Orders.CopyTo(orderArray, 0)  
+```  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -213,8 +247,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of entities in the <see cref="T:System.Data.Linq.EntitySet`1" /> collection.</summary>
+        <value>An integer representing the number of entities.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -232,8 +266,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an enumerator that iterates through a collection.</summary>
+        <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -251,8 +285,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a new list for binding to a data source.</summary>
+        <returns>A new <see cref="T:System.ComponentModel.IBindingList" /> for binding to a data source.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -287,9 +321,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Specifies whether the <see cref="T:System.Data.Linq.EntitySet`1" /> has loaded or assigned a value.</summary>
+        <value>Returns true if the <see cref="T:System.Data.Linq.EntitySet`1" /> has either loaded or assigned a value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ "Loaded" means that the data was loaded during materialization or at deferred loading. "Assigned" means that you have manually given the data a value.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HasLoadedValues">
@@ -326,9 +367,9 @@
         <Parameter Name="entity" Type="TEntity" />
       </Parameters>
       <Docs>
-        <param name="entity">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="entity">The entity whose index is to be returned.</param>
+        <summary>Returns the index of the entity.</summary>
+        <returns>An integer representing the index.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -349,9 +390,9 @@
         <Parameter Name="entity" Type="TEntity" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="entity">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The index representing the position at which to insert the entity.</param>
+        <param name="entity">The entity to be inserted.</param>
+        <summary>Inserts an entity at an index position.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -368,8 +409,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Specifies whether this <see cref="T:System.Data.Linq.EntitySet`1" /> has a deferred query that has not yet executed.</summary>
+        <value>
+          <see langword="true" /> if a deferred query has not yet been executed; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -389,9 +431,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The index of the element.</param>
+        <summary>Gets or sets the element at the specified index.</summary>
+        <value>An <see cref="T:System.Data.Linq.EntitySet`1" /> representing the item.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -408,7 +450,7 @@
         <ReturnType>System.ComponentModel.ListChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the contents of a list are changed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -426,7 +468,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Loads the <see cref="T:System.Data.Linq.EntitySet`1" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -446,9 +488,10 @@
         <Parameter Name="entity" Type="TEntity" />
       </Parameters>
       <Docs>
-        <param name="entity">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="entity">The entity to be removed.</param>
+        <summary>Removes an entity.</summary>
+        <returns>
+          <see langword="true" /> if the entity is successfully removed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -468,8 +511,8 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The index of the entity to be removed.</param>
+        <summary>Removes an entity at a specified index.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -489,8 +532,8 @@
         <Parameter Name="entitySource" Type="System.Collections.Generic.IEnumerable&lt;TEntity&gt;" />
       </Parameters>
       <Docs>
-        <param name="entitySource">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="entitySource">The source of the <see cref="T:System.Data.Linq.EntitySet`1" />.</param>
+        <summary>Sets the source of the <see cref="T:System.Data.Linq.EntitySet`1" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -507,9 +550,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />.</summary>
+        <value>
+          <see langword="true" /> if the collection is read-only; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.EntitySet%601> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -529,10 +580,17 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="array">The array to which elements of the collection are copied.</param>
+        <param name="index">The array index at which copying begins.</param>
+        <summary>For a description of this member, see <see cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.EntitySet%601> instance is cast to an <xref:System.Collections.ICollection> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.Count">
@@ -566,9 +624,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="P:System.Collections.ICollection.IsSynchronized" />.</summary>
+        <value>
+          <see langword="true" /> if access to the collection is synchronized (thread-safe); otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.EntitySet%601> instance is cast to an <xref:System.Collections.ICollection> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.SyncRoot">
@@ -584,9 +650,16 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="P:System.Collections.ICollection.SyncRoot" />.</summary>
+        <value>An object that can be used to synchronize access to the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.EntitySet%601> instance is cast to an <xref:System.Collections.ICollection> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -603,9 +676,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="M:System.Collections.IEnumerable.GetEnumerator" />.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through a collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.EntitySet%601> instance is cast to an <xref:System.Collections.IEnumerable?displayProperty=fullName> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Add">
@@ -624,10 +704,17 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The object to add to the list.</param>
+        <summary>For a description of this member, see <see cref="M:System.Collections.IList.Add(System.Object)" />.</summary>
+        <returns>The position into which the new element was inserted.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.EntitySet%601> instance is cast to an <xref:System.Collections.IList?displayProperty=fullName> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Clear">
@@ -664,10 +751,18 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The object to locate in the list.</param>
+        <summary>For a description of this member, see <see cref="M:System.Collections.IList.Contains(System.Object)" />.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Object" /> is found in the <see cref="T:System.Collections.IList" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.EntitySet%601> instance is cast to an <xref:System.Collections.IList?displayProperty=fullName> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IndexOf">
@@ -686,10 +781,17 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The object to locate in the list.</param>
+        <summary>For a description of this member, see <see cref="M:System.Collections.IList.IndexOf(System.Object)" />.</summary>
+        <returns>The index of <paramref name="value" /> if found in the list; otherwise, -1.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.EntitySet%601> instance is cast to an <xref:System.Collections.IList?displayProperty=fullName> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Insert">
@@ -709,10 +811,17 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The index of the object in the list.</param>
+        <param name="value">The object to insert into the list.</param>
+        <summary>For a description of this member, see <see cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.EntitySet%601> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsFixedSize">
@@ -728,9 +837,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="P:System.Collections.IList.IsFixedSize" />.</summary>
+        <value>
+          <see langword="true" /> if the collection has a fixed size; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.EntitySet%601> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsReadOnly">
@@ -746,9 +863,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="P:System.Collections.IList.IsReadOnly" />.</summary>
+        <value>
+          <see langword="true" /> if the collection is read-only; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.EntitySet%601> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Item">
@@ -767,10 +892,17 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="index">The index at which to set or get the element.</param>
+        <summary>For a description of this member, see <see cref="P:System.Collections.IList.Item(System.Int32)" />.</summary>
+        <value>The element at the specified index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.EntitySet%601> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Remove">
@@ -789,9 +921,16 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="value">The object to remove from the list.</param>
+        <summary>For a description of this member, see <see cref="M:System.Collections.IList.Remove(System.Object)" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.EntitySet%601> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.RemoveAt">
@@ -828,9 +967,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="P:System.ComponentModel.IListSource.ContainsListCollection" />.</summary>
+        <value>
+          <see langword="true" /> if the collection is a collection of <see cref="T:System.Collections.IList" /> objects; otherwise <see langword="false" />;</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.EntitySet%601> instance is cast to an <xref:System.ComponentModel.IListSource> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IListSource.GetList">
@@ -847,9 +994,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="M:System.ComponentModel.IListSource.GetList" />.</summary>
+        <returns>An <see cref="T:System.Collections.IList" /> that can be bound to a data source from the object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.EntitySet%601> instance is cast to an <xref:System.ComponentModel.IListSource?displayProperty=fullName> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,34 +1,41 @@
 ---
 uid: System.Net.Configuration.SmtpSection
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.SmtpSection.DeliveryFormat
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.SmtpSection.SpecifiedPickupDirectory
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.SmtpSection.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.SmtpSection.Network
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.SmtpSection.DeliveryMethod
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.SmtpSection.From
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

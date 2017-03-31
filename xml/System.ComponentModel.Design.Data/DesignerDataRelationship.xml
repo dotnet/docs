@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents to the designer a relationship between two tables in the data source accessed through a data connection. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,11 +31,11 @@
         <Parameter Name="childColumns" Type="System.Collections.ICollection" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="parentColumns">To be added.</param>
-        <param name="childTable">To be added.</param>
-        <param name="childColumns">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the relationship.</param>
+        <param name="parentColumns">The columns in the parent table that define the relationship.</param>
+        <param name="childTable">The child table in the relationship.</param>
+        <param name="childColumns">The columns in the child table that define the relationship.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Data.DesignerDataRelationship" /> class with the specified name, parent column, and child relationship.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,8 +52,8 @@
         <ReturnType>System.Collections.ICollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of columns from the child table that are part of the relationship.</summary>
+        <value>A collection of <see cref="T:System.ComponentModel.Design.Data.DesignerDataColumn" /> objects that define the relationship in the child table.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,8 +70,8 @@
         <ReturnType>System.ComponentModel.Design.Data.DesignerDataTable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the child table referenced in the relationship.</summary>
+        <value>A <see cref="T:System.ComponentModel.Design.Data.DesignerDataTable" /> object that represents the child table in the relationship.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,8 +88,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the relationship.</summary>
+        <value>The name of the relationship.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,8 +106,8 @@
         <ReturnType>System.Collections.ICollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of columns from the parent table that are part of the relationship between two tables.</summary>
+        <value>A collection of <see cref="T:System.ComponentModel.Design.Data.DesignerDataColumn" /> objects that define the relationship in the parent table.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

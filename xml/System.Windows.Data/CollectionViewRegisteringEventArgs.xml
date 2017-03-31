@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides data for the <see cref="E:System.Windows.Data.BindingOperations.CollectionViewRegistering" /> event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.Windows.Data.CollectionView</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the collection view to be registered for cross-thread access.</summary>
+        <value>The collection view to be registered for cross-thread access.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

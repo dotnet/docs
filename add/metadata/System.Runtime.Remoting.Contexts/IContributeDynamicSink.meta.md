@@ -1,9 +1,9 @@
 ---
 uid: System.Runtime.Remoting.Contexts.IContributeDynamicSink
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Contexts.IContributeDynamicSink.GetDynamicSink
-internalonly: False
+manager: "ghogen"
 ---

@@ -1,9 +1,13 @@
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.WebItemNoTemplateSpecified
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.WebItemNoTemplateSpecified.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

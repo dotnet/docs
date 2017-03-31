@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.DataSourceControlBuilder
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.DataSourceControlBuilder.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.DataSourceControlBuilder.AllowWhitespaceLiterals
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

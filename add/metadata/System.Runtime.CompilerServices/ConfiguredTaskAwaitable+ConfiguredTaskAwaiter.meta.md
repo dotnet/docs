@@ -1,24 +1,34 @@
 ---
 uid: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.GetResult
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.OnCompleted(System.Action)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.UnsafeOnCompleted(System.Action)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.IsCompleted
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

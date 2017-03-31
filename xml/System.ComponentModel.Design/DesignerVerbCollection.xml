@@ -21,8 +21,24 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a collection of <see cref="T:System.ComponentModel.Design.DesignerVerb" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class provides a collection that can contain <xref:System.ComponentModel.Design.DesignerVerb> objects.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.ComponentModel.Design.DesignerVerbCollection> class. The example creates a new instance of the class and uses several methods to add statements to the collection, return their index, and add or remove attributes at a specific index point.  
+  
+ [!code-cpp[DesignerVerbCollectionExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/DesignerVerbCollectionExample/CPP/class1.cpp#1)]
+ [!code-csharp[DesignerVerbCollectionExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/DesignerVerbCollectionExample/CS/class1.cs#1)]
+ [!code-vb[DesignerVerbCollectionExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DesignerVerbCollectionExample/VB/class1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,8 +57,24 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerVerbCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is a default empty collection constructor.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a new <xref:System.ComponentModel.Design.DesignerVerbCollection>.  
+  
+ [!code-cpp[DesignerVerbCollectionExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/DesignerVerbCollectionExample/CPP/class1.cpp#2)]
+ [!code-csharp[DesignerVerbCollectionExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/DesignerVerbCollectionExample/CS/class1.cs#2)]
+ [!code-vb[DesignerVerbCollectionExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DesignerVerbCollectionExample/VB/class1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -63,9 +95,11 @@
         <Parameter Name="value" Type="System.ComponentModel.Design.DesignerVerb[]" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">A <see cref="T:System.ComponentModel.Design.DesignerVerb" /> array that indicates the verbs to contain within the collection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerVerbCollection" /> class using the specified array of <see cref="T:System.ComponentModel.Design.DesignerVerb" /> objects.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -89,10 +123,21 @@
         <Parameter Name="value" Type="System.ComponentModel.Design.DesignerVerb" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The <see cref="T:System.ComponentModel.Design.DesignerVerb" /> to add to the collection.</param>
+        <summary>Adds the specified <see cref="T:System.ComponentModel.Design.DesignerVerb" /> to the collection.</summary>
+        <returns>The index in the collection at which the verb was added.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to add a <xref:System.ComponentModel.Design.DesignerVerb> to a <xref:System.ComponentModel.Design.DesignerVerbCollection>.  
+  
+ [!code-cpp[DesignerVerbCollectionExample#3](~/samples/snippets/cpp/VS_Snippets_Winforms/DesignerVerbCollectionExample/CPP/class1.cpp#3)]
+ [!code-csharp[DesignerVerbCollectionExample#3](~/samples/snippets/csharp/VS_Snippets_Winforms/DesignerVerbCollectionExample/CS/class1.cs#3)]
+ [!code-vb[DesignerVerbCollectionExample#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DesignerVerbCollectionExample/VB/class1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -116,9 +161,22 @@
         <Parameter Name="value" Type="System.ComponentModel.Design.DesignerVerb[]" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="value">An array of <see cref="T:System.ComponentModel.Design.DesignerVerb" /> objects to add to the collection.</param>
+        <summary>Adds the specified set of designer verbs to the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to add an array of <xref:System.ComponentModel.Design.DesignerVerb> objects to a <xref:System.ComponentModel.Design.DesignerVerbCollection>.  
+  
+ [!code-cpp[DesignerVerbCollectionExample#4](~/samples/snippets/cpp/VS_Snippets_Winforms/DesignerVerbCollectionExample/CPP/class1.cpp#4)]
+ [!code-csharp[DesignerVerbCollectionExample#4](~/samples/snippets/csharp/VS_Snippets_Winforms/DesignerVerbCollectionExample/CS/class1.cs#4)]
+ [!code-vb[DesignerVerbCollectionExample#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DesignerVerbCollectionExample/VB/class1.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -142,9 +200,22 @@
         <Parameter Name="value" Type="System.ComponentModel.Design.DesignerVerbCollection" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="value">A <see cref="T:System.ComponentModel.Design.DesignerVerbCollection" /> to add to the collection.</param>
+        <summary>Adds the specified collection of designer verbs to the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to add a collection of <xref:System.ComponentModel.Design.DesignerVerb> objects to a <xref:System.ComponentModel.Design.DesignerVerbCollection>.  
+  
+ [!code-cpp[DesignerVerbCollectionExample#4](~/samples/snippets/cpp/VS_Snippets_Winforms/DesignerVerbCollectionExample/CPP/class1.cpp#4)]
+ [!code-csharp[DesignerVerbCollectionExample#4](~/samples/snippets/csharp/VS_Snippets_Winforms/DesignerVerbCollectionExample/CS/class1.cs#4)]
+ [!code-vb[DesignerVerbCollectionExample#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DesignerVerbCollectionExample/VB/class1.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -168,10 +239,22 @@
         <Parameter Name="value" Type="System.ComponentModel.Design.DesignerVerb" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The <see cref="T:System.ComponentModel.Design.DesignerVerb" /> to search for in the collection.</param>
+        <summary>Gets a value indicating whether the specified <see cref="T:System.ComponentModel.Design.DesignerVerb" /> exists in the collection.</summary>
+        <returns>
+          <see langword="true" /> if the specified object exists in the collection; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example uses the <xref:System.ComponentModel.Design.DesignerVerbCollection.Contains%2A> method to search for the presence of a specific <xref:System.ComponentModel.Design.DesignerVerb> object and subsequently retrieves the index value at which it was found.  
+  
+ [!code-cpp[DesignerVerbCollectionExample#5](~/samples/snippets/cpp/VS_Snippets_Winforms/DesignerVerbCollectionExample/CPP/class1.cpp#5)]
+ [!code-csharp[DesignerVerbCollectionExample#5](~/samples/snippets/csharp/VS_Snippets_Winforms/DesignerVerbCollectionExample/CS/class1.cs#5)]
+ [!code-vb[DesignerVerbCollectionExample#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DesignerVerbCollectionExample/VB/class1.vb#5)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -196,10 +279,21 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="array">The array to copy collection members to.</param>
+        <param name="index">The destination index to begin copying to.</param>
+        <summary>Copies the collection members to the specified <see cref="T:System.ComponentModel.Design.DesignerVerb" /> array beginning at the specified destination index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to copy a collection of <xref:System.ComponentModel.Design.DesignerVerb> objects to an array.  
+  
+ [!code-cpp[DesignerVerbCollectionExample#6](~/samples/snippets/cpp/VS_Snippets_Winforms/DesignerVerbCollectionExample/CPP/class1.cpp#6)]
+ [!code-csharp[DesignerVerbCollectionExample#6](~/samples/snippets/csharp/VS_Snippets_Winforms/DesignerVerbCollectionExample/CS/class1.cs#6)]
+ [!code-vb[DesignerVerbCollectionExample#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DesignerVerbCollectionExample/VB/class1.vb#6)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -223,10 +317,21 @@
         <Parameter Name="value" Type="System.ComponentModel.Design.DesignerVerb" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The <see cref="T:System.ComponentModel.Design.DesignerVerb" /> whose index to get in the collection.</param>
+        <summary>Gets the index of the specified <see cref="T:System.ComponentModel.Design.DesignerVerb" />.</summary>
+        <returns>The index of the specified object if it is found in the list; otherwise, -1.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to test for the presence of a <xref:System.ComponentModel.Design.DesignerVerb> in a <xref:System.ComponentModel.Design.DesignerVerbCollection>.  
+  
+ [!code-cpp[DesignerVerbCollectionExample#5](~/samples/snippets/cpp/VS_Snippets_Winforms/DesignerVerbCollectionExample/CPP/class1.cpp#5)]
+ [!code-csharp[DesignerVerbCollectionExample#5](~/samples/snippets/csharp/VS_Snippets_Winforms/DesignerVerbCollectionExample/CS/class1.cs#5)]
+ [!code-vb[DesignerVerbCollectionExample#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DesignerVerbCollectionExample/VB/class1.vb#5)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -251,10 +356,21 @@
         <Parameter Name="value" Type="System.ComponentModel.Design.DesignerVerb" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The index in the collection at which to insert the verb.</param>
+        <param name="value">The <see cref="T:System.ComponentModel.Design.DesignerVerb" /> to insert in the collection.</param>
+        <summary>Inserts the specified <see cref="T:System.ComponentModel.Design.DesignerVerb" /> at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to insert a <xref:System.ComponentModel.Design.DesignerVerb> into a <xref:System.ComponentModel.Design.DesignerVerbCollection> at index 0.  
+  
+ [!code-cpp[DesignerVerbCollectionExample#8](~/samples/snippets/cpp/VS_Snippets_Winforms/DesignerVerbCollectionExample/CPP/class1.cpp#8)]
+ [!code-csharp[DesignerVerbCollectionExample#8](~/samples/snippets/csharp/VS_Snippets_Winforms/DesignerVerbCollectionExample/CS/class1.cs#8)]
+ [!code-vb[DesignerVerbCollectionExample#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DesignerVerbCollectionExample/VB/class1.vb#8)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -278,9 +394,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The index at which to get or set the <see cref="T:System.ComponentModel.Design.DesignerVerb" />.</param>
+        <summary>Gets or sets the <see cref="T:System.ComponentModel.Design.DesignerVerb" /> at the specified index.</summary>
+        <value>A <see cref="T:System.ComponentModel.Design.DesignerVerb" /> at each valid index in the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -303,8 +419,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Raises the <see langword="Clear" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Inheritors can override this method to add behavior for the `Clear` event.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnInsert">
@@ -329,10 +452,17 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The index at which to insert an item.</param>
+        <param name="value">The object to insert.</param>
+        <summary>Raises the <see langword="Insert" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Inheritors can override this method to add behavior for the `Insert` event.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnRemove">
@@ -357,10 +487,17 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The index at which to remove the item.</param>
+        <param name="value">The object to remove.</param>
+        <summary>Raises the <see langword="Remove" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Inheritors can override this method to add behavior for the `Remove` event.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnSet">
@@ -386,11 +523,18 @@
         <Parameter Name="newValue" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="oldValue">To be added.</param>
-        <param name="newValue">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The index at which to set the item.</param>
+        <param name="oldValue">The old object.</param>
+        <param name="newValue">The new object.</param>
+        <summary>Raises the <see langword="Set" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Inheritors can override this method to add behavior for the `Set` event.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnValidate">
@@ -414,9 +558,16 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="value">The object to validate.</param>
+        <summary>Raises the <see langword="Validate" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Inheritors can override this method to add behavior for the `Validate` event.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -440,9 +591,20 @@
         <Parameter Name="value" Type="System.ComponentModel.Design.DesignerVerb" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="value">The <see cref="T:System.ComponentModel.Design.DesignerVerb" /> to remove from the collection.</param>
+        <summary>Removes the specified <see cref="T:System.ComponentModel.Design.DesignerVerb" /> from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to remove a <xref:System.ComponentModel.Design.DesignerVerb> from a <xref:System.ComponentModel.Design.DesignerVerbCollection>.  
+  
+ [!code-cpp[DesignerVerbCollectionExample#9](~/samples/snippets/cpp/VS_Snippets_Winforms/DesignerVerbCollectionExample/CPP/class1.cpp#9)]
+ [!code-csharp[DesignerVerbCollectionExample#9](~/samples/snippets/csharp/VS_Snippets_Winforms/DesignerVerbCollectionExample/CS/class1.cs#9)]
+ [!code-vb[DesignerVerbCollectionExample#9](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DesignerVerbCollectionExample/VB/class1.vb#9)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

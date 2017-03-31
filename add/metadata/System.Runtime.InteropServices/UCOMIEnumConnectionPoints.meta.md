@@ -1,24 +1,34 @@
 ---
 uid: System.Runtime.InteropServices.UCOMIEnumConnectionPoints
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.UCOMIEnumConnectionPoints.Next(System.Int32,System.Runtime.InteropServices.UCOMIConnectionPoint[],System.Int32@)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.UCOMIEnumConnectionPoints.Skip(System.Int32)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.UCOMIEnumConnectionPoints.Clone(System.Runtime.InteropServices.UCOMIEnumConnectionPoints@)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.UCOMIEnumConnectionPoints.Reset
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

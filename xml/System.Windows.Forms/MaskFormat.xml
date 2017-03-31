@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines how to format the text inside of a <see cref="T:System.Windows.Forms.MaskedTextBox" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by <xref:System.Windows.Forms.MaskedTextBox.CutCopyMaskFormat%2A> and <xref:System.Windows.Forms.MaskedTextBox.TextMaskFormat%2A> to control how text is returned—in the first case, by performing a cut and copy operation, and in the second place, by using the <xref:System.Windows.Forms.MaskedTextBox.Text%2A> property.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ExcludePromptAndLiterals">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Forms.MaskFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Return only text input by the user.</summary>
       </Docs>
     </Member>
     <Member MemberName="IncludeLiterals">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Forms.MaskFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Return text input by the user as well as any literal characters defined in the mask.</summary>
       </Docs>
     </Member>
     <Member MemberName="IncludePrompt">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.Forms.MaskFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Return text input by the user as well as any instances of the prompt character.</summary>
       </Docs>
     </Member>
     <Member MemberName="IncludePromptAndLiterals">
@@ -75,7 +82,7 @@
         <ReturnType>System.Windows.Forms.MaskFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Return text input by the user as well as any literal characters defined in the mask and any instances of the prompt character.</summary>
       </Docs>
     </Member>
   </Members>

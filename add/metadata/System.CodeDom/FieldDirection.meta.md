@@ -1,4 +1,6 @@
 ---
 uid: System.CodeDom.FieldDirection
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

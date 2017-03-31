@@ -1,29 +1,41 @@
 ---
 uid: System.Web.SiteMapProviderCollection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.SiteMapProviderCollection.Add(System.Configuration.Provider.ProviderBase)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.SiteMapProviderCollection.Item(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.SiteMapProviderCollection.AddArray(System.Web.SiteMapProvider[])
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.SiteMapProviderCollection.Add(System.Web.SiteMapProvider)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.SiteMapProviderCollection.Add
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.SiteMapProviderCollection.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

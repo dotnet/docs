@@ -29,8 +29,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Marshals data of type <see langword="VT_BSTR" /> from managed to unmanaged code. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.InteropServices.BStrWrapper> class controls how the wrapped object is marshaled when passed as `VARIANT`. You can wrap a <xref:System.String> object in a <xref:System.Runtime.InteropServices.BStrWrapper> object to marshal it as `VT_BSTR`. <xref:System.Runtime.InteropServices.BStrWrapper> is useful when passing a null string to unmanaged code. Without <xref:System.Runtime.InteropServices.BStrWrapper>, a null string is passed as `VT_EMPTY`; however, wrapping the string with <xref:System.Runtime.InteropServices.BStrWrapper> ensures that the null string is passed as `VT_BSTR`.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -64,9 +71,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The object to wrap and marshal as <see langword="VT_BSTR" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.BStrWrapper" /> class with the specified <see cref="T:System.Object" /> object.</summary>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">For permission to call unmanaged code. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -100,9 +108,10 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The object to wrap and marshal as <see langword="VT_BSTR" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.BStrWrapper" /> class with the specified <see cref="T:System.String" /> object.</summary>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">For permission to call unmanaged code. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
       </Docs>
     </Member>
     <Member MemberName="WrappedObject">
@@ -131,8 +140,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the wrapped <see cref="T:System.String" /> object to marshal as type <see langword="VT_BSTR" />.</summary>
+        <value>The object that is wrapped by <see cref="T:System.Runtime.InteropServices.BStrWrapper" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

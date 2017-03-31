@@ -1,29 +1,35 @@
 ---
 uid: Microsoft.VisualC.StlClr.Generic.INode`1
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.StlClr.Generic.INode`1.prev_node
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.StlClr.Generic.INode`1._Value
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.StlClr.Generic.INode`1.is_head
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.StlClr.Generic.INode`1.next_node
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.StlClr.Generic.INode`1.container
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---

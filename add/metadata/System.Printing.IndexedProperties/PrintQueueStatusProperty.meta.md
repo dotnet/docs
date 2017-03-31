@@ -1,19 +1,39 @@
 ---
 uid: System.Printing.IndexedProperties.PrintQueueStatusProperty
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Printing.IndexedProperties.PrintQueueStatusProperty.#ctor(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.IndexedProperties.PrintQueueStatusProperty.op_Implicit
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.IndexedProperties.PrintQueueStatusProperty.Value
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.IndexedProperties.PrintQueueStatusProperty.#ctor(System.String,System.Object)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Printing.IndexedProperties.PrintQueueStatusProperty.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

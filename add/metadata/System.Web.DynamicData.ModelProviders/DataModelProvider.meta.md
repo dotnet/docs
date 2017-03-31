@@ -1,24 +1,29 @@
 ---
 uid: System.Web.DynamicData.ModelProviders.DataModelProvider
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.ModelProviders.DataModelProvider.ContextType
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.ModelProviders.DataModelProvider.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.ModelProviders.DataModelProvider.CreateContext
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.ModelProviders.DataModelProvider.Tables
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

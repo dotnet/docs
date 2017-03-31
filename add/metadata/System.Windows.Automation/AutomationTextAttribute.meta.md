@@ -1,9 +1,13 @@
 ---
 uid: System.Windows.Automation.AutomationTextAttribute
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.AutomationTextAttribute.LookupById(System.Int32)
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---

@@ -1,34 +1,39 @@
 ---
 uid: System.Management.PutOptions
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.PutOptions.#ctor(System.Management.ManagementNamedValueCollection)
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.PutOptions.Clone
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.PutOptions.Type
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.PutOptions.#ctor(System.Management.ManagementNamedValueCollection,System.TimeSpan,System.Boolean,System.Management.PutType)
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.PutOptions.#ctor
-internalonly: False
+manager: "jillfra"
+---
+
+---
+uid: System.Management.PutOptions.#ctor
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.PutOptions.UseAmendedQualifiers
-internalonly: False
+manager: "jillfra"
 ---

@@ -1,19 +1,23 @@
 ---
 uid: Microsoft.Build.Evaluation.ResolvedImport
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Evaluation.ResolvedImport.IsImported
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Evaluation.ResolvedImport.ImportedProject
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Evaluation.ResolvedImport.ImportingElement
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

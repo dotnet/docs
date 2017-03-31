@@ -16,8 +16,27 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains the name for the content property of the decorated class.  Marking a type with this attribute causes the data in that type to be serialized without the enclosing property name tags. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ For Windows Workflow Foundation, the following restrictions pertain to <xref:System.Workflow.ComponentModel.Serialization.ContentPropertyAttribute>:  
+  
+-   <xref:System.Type>, <xref:System.Collections.Generic.Stack%601>, and <xref:System.Collections.Generic.Queue%601> are not supported `ContentProperty` types.  
+  
+-   An empty string is deserialized as a null value.  
+  
+-   A `ContentProperty` that binds to a field using `ActivityBind` is not serialized as a `ContentProperty`.  
+  
+-   `ContentProperty` that interleaves with non-content property is not supported in workflow markup.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +50,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Serialization.ContentPropertyAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,9 +67,24 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="name">A <see cref="T:System.String" /> that contains the value for the <see cref="P:System.Workflow.ComponentModel.Serialization.ContentPropertyAttribute.Name" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Serialization.ContentPropertyAttribute" /> class, initializing the <see cref="P:System.Workflow.ComponentModel.Serialization.ContentPropertyAttribute.Name" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For Windows Workflow Foundation, the following restrictions pertain to `ContentPropertyAttribute`:  
+  
+-   <xref:System.Type>, <xref:System.Collections.Generic.Stack%601>, and <xref:System.Collections.Generic.Queue%601> are not supported `ContentProperty` types.  
+  
+-   An empty string will be deserialized as a null value.  
+  
+-   A `ContentProperty` which binds to a field using `ActivityBind` will not be serialized as a `ContentProperty`.  
+  
+-   `ContentProperty` that interleaves with non-content property is not supported in workflow markup.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -66,9 +100,24 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.String" /> representing the name of the content property.</summary>
+        <value>The <see cref="T:System.String" /> representing the name of the content property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following restrictions pertain to `ContentPropertyAttribute`:  
+  
+-   <xref:System.Type>, <xref:System.Collections.Generic.Stack%601>, and <xref:System.Collections.Generic.Queue%601> are not supported `ContentProperty` types.  
+  
+-   An empty string will be deserialized as a null value.  
+  
+-   A `ContentProperty` which binds to a field using `ActivityBind` will not be serialized as a `ContentProperty`.  
+  
+-   `ContentProperty` that interleaves with non-content property is not supported in workflow markup.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

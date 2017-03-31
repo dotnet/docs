@@ -1,39 +1,62 @@
 ---
 uid: System.Drawing.BufferedGraphicsContext
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.BufferedGraphicsContext.Finalize
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.BufferedGraphicsContext.Invalidate
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.BufferedGraphicsContext.Allocate(System.Drawing.Graphics,System.Drawing.Rectangle)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.BufferedGraphicsContext.MaximumBuffer
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.BufferedGraphicsContext.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.BufferedGraphicsContext.Dispose
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.BufferedGraphicsContext.Allocate(System.IntPtr,System.Drawing.Rectangle)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Drawing.BufferedGraphicsContext.Allocate
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

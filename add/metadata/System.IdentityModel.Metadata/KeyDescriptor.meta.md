@@ -1,29 +1,41 @@
 ---
 uid: System.IdentityModel.Metadata.KeyDescriptor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.KeyDescriptor.KeyInfo
-internalonly: False
----
-
----
-uid: System.IdentityModel.Metadata.KeyDescriptor.Use
-internalonly: False
----
-
----
-uid: System.IdentityModel.Metadata.KeyDescriptor.EncryptionMethods
-internalonly: False
----
-
----
-uid: System.IdentityModel.Metadata.KeyDescriptor.#ctor(System.IdentityModel.Tokens.SecurityKeyIdentifier)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.KeyDescriptor.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Metadata.KeyDescriptor.Use
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Metadata.KeyDescriptor.EncryptionMethods
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Metadata.KeyDescriptor.#ctor(System.IdentityModel.Tokens.SecurityKeyIdentifier)
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Metadata.KeyDescriptor.#ctor
+ms.author: "v-jibran"
+manager: "markgal"
 ---

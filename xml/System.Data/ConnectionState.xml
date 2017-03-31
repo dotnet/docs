@@ -24,8 +24,18 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Describes the current state of the connection to a data source.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.ConnectionState> values are used by the `State` property of the <xref:System.Data.OleDb.OleDbConnection> and <xref:System.Data.SqlClient.SqlConnection> objects.  
+  
+> [!NOTE]
+>  The values in this enumeration are not designed to be used as a set of flags.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Broken">
@@ -50,7 +60,7 @@
         <ReturnType>System.Data.ConnectionState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The connection to the data source is broken. This can occur only after the connection has been opened. A connection in this state may be closed and then re-opened. (This value is reserved for future versions of the product.)</summary>
       </Docs>
     </Member>
     <Member MemberName="Closed">
@@ -75,7 +85,7 @@
         <ReturnType>System.Data.ConnectionState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The connection is closed.</summary>
       </Docs>
     </Member>
     <Member MemberName="Connecting">
@@ -100,7 +110,7 @@
         <ReturnType>System.Data.ConnectionState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The connection object is connecting to the data source.</summary>
       </Docs>
     </Member>
     <Member MemberName="Executing">
@@ -125,7 +135,7 @@
         <ReturnType>System.Data.ConnectionState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The connection object is executing a command. (This value is reserved for future versions of the product.)</summary>
       </Docs>
     </Member>
     <Member MemberName="Fetching">
@@ -150,7 +160,7 @@
         <ReturnType>System.Data.ConnectionState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The connection object is retrieving data. (This value is reserved for future versions of the product.)</summary>
       </Docs>
     </Member>
     <Member MemberName="Open">
@@ -175,7 +185,7 @@
         <ReturnType>System.Data.ConnectionState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The connection is open.</summary>
       </Docs>
     </Member>
   </Members>

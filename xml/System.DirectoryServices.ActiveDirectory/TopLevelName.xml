@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains forest trust account information about a top-level domain in a <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of a top-level domain in a <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" />.</summary>
+        <value>A <see cref="T:System.String" /> that contains the name of the <see cref="T:System.DirectoryServices.ActiveDirectory.TopLevelName" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,9 +46,10 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.TopLevelNameStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the status of a top-level domain in a <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" />.</summary>
+        <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.TopLevelNameStatus" /> value that contains the status of the <see cref="T:System.DirectoryServices.ActiveDirectory.TopLevelName" /> object.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value is not one of the <see cref="T:System.DirectoryServices.ActiveDirectory.TopLevelNameStatus" /> values.</exception>
       </Docs>
     </Member>
   </Members>

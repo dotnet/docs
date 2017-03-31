@@ -1,94 +1,135 @@
 ---
 uid: System.Windows.Media.Animation.SizeAnimation
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SizeAnimation.To
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SizeAnimation.IsCumulative
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SizeAnimation.FromProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SizeAnimation.From
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SizeAnimation.Clone
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.SizeAnimation.EasingFunctionProperty
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.SizeAnimation.#ctor(System.Windows.Size,System.Windows.Size,System.Windows.Duration,System.Windows.Media.Animation.FillBehavior)
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.SizeAnimation.#ctor(System.Windows.Size,System.Windows.Size,System.Windows.Duration)
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.SizeAnimation.By
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.SizeAnimation.#ctor(System.Windows.Size,System.Windows.Duration,System.Windows.Media.Animation.FillBehavior)
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.SizeAnimation.#ctor(System.Windows.Size,System.Windows.Duration)
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.SizeAnimation.ByProperty
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.SizeAnimation.CreateInstanceCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SizeAnimation.#ctor
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.Animation.SizeAnimation.EasingFunctionProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.SizeAnimation.#ctor(System.Windows.Size,System.Windows.Size,System.Windows.Duration,System.Windows.Media.Animation.FillBehavior)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.SizeAnimation.#ctor(System.Windows.Size,System.Windows.Size,System.Windows.Duration)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.SizeAnimation.By
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.SizeAnimation.#ctor(System.Windows.Size,System.Windows.Duration,System.Windows.Media.Animation.FillBehavior)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.SizeAnimation.#ctor(System.Windows.Size,System.Windows.Duration)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.SizeAnimation.ByProperty
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.Animation.SizeAnimation.CreateInstanceCore
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.SizeAnimation.#ctor
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SizeAnimation.GetCurrentValueCore(System.Windows.Size,System.Windows.Size,System.Windows.Media.Animation.AnimationClock)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SizeAnimation.ToProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SizeAnimation.IsAdditive
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SizeAnimation.EasingFunction
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

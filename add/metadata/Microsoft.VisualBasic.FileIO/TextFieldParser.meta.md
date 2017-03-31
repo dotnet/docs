@@ -1,144 +1,216 @@
 ---
 uid: Microsoft.VisualBasic.FileIO.TextFieldParser
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.FileIO.TextFieldParser.#ctor(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.FileIO.TextFieldParser.#ctor(System.IO.Stream)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.FileIO.TextFieldParser.Dispose(System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.FileIO.TextFieldParser.ErrorLineNumber
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.FileIO.TextFieldParser.TrimWhiteSpace
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.FileIO.TextFieldParser.Close
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.FileIO.TextFieldParser.PeekChars(System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.FileIO.TextFieldParser.SetFieldWidths(System.Int32[])
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.FileIO.TextFieldParser.Finalize
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.FileIO.TextFieldParser.EndOfData
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.FileIO.TextFieldParser.HasFieldsEnclosedInQuotes
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.FileIO.TextFieldParser.#ctor(System.IO.TextReader)
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.FileIO.TextFieldParser.#ctor(System.IO.Stream,System.Text.Encoding)
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.FileIO.TextFieldParser.#ctor(System.IO.Stream,System.Text.Encoding,System.Boolean,System.Boolean)
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.FileIO.TextFieldParser.#ctor(System.IO.Stream,System.Text.Encoding,System.Boolean)
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.FileIO.TextFieldParser.ErrorLine
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.FileIO.TextFieldParser.#ctor(System.String,System.Text.Encoding,System.Boolean)
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.FileIO.TextFieldParser.ReadLine
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.FileIO.TextFieldParser.Dispose
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.FileIO.TextFieldParser.#ctor(System.IO.TextReader)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.FileIO.TextFieldParser.#ctor(System.IO.Stream,System.Text.Encoding)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.FileIO.TextFieldParser.#ctor(System.IO.Stream,System.Text.Encoding,System.Boolean,System.Boolean)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.FileIO.TextFieldParser.#ctor(System.IO.Stream,System.Text.Encoding,System.Boolean)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.FileIO.TextFieldParser.ErrorLine
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.FileIO.TextFieldParser.#ctor(System.String,System.Text.Encoding,System.Boolean)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.FileIO.TextFieldParser.ReadLine
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.FileIO.TextFieldParser.Dispose
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.FileIO.TextFieldParser.CommentTokens
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.FileIO.TextFieldParser.Delimiters
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.FileIO.TextFieldParser.LineNumber
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.FileIO.TextFieldParser.FieldWidths
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.FileIO.TextFieldParser.ReadToEnd
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.FileIO.TextFieldParser.TextFieldType
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.FileIO.TextFieldParser.#ctor(System.String,System.Text.Encoding)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.FileIO.TextFieldParser.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.FileIO.TextFieldParser.SetDelimiters(System.String[])
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.FileIO.TextFieldParser.ReadFields
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

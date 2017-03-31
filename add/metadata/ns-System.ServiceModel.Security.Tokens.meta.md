@@ -1,4 +1,5 @@
 ---
 uid: System.ServiceModel.Security.Tokens
-internalonly: False
+ms.author: "ricksal"
+manager: "ghogen"
 ---

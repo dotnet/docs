@@ -1,34 +1,55 @@
 ---
 uid: System.Activities.WorkflowApplicationCompletedException
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.WorkflowApplicationCompletedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.WorkflowApplicationCompletedException.#ctor(System.String,System.Guid,System.Exception)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.WorkflowApplicationCompletedException.#ctor(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.WorkflowApplicationCompletedException.#ctor(System.String,System.Exception)
-internalonly: False
----
-
----
-uid: System.Activities.WorkflowApplicationCompletedException.#ctor(System.String,System.Guid)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.WorkflowApplicationCompletedException.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.WorkflowApplicationCompletedException.#ctor(System.String,System.Guid)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.WorkflowApplicationCompletedException.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

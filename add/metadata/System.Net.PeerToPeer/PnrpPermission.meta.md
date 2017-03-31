@@ -1,44 +1,53 @@
 ---
 uid: System.Net.PeerToPeer.PnrpPermission
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.PnrpPermission.IsSubsetOf(System.Security.IPermission)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.PnrpPermission.#ctor(System.Security.Permissions.PermissionState)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.PnrpPermission.Union(System.Security.IPermission)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.PnrpPermission.IsUnrestricted
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.PnrpPermission.FromXml(System.Security.SecurityElement)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.PnrpPermission.Copy
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.PnrpPermission.Intersect(System.Security.IPermission)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.PnrpPermission.ToXml
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

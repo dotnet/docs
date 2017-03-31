@@ -1,4 +1,6 @@
 ---
 uid: System.Activities.DurableInstancing.InstanceLockedExceptionAction
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

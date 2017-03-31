@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The base class for tracking configuration elements.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.Tracking.Configuration.TrackingConfigurationElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a key that uniquely identifies the configuration element.</summary>
+        <value>The element key.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,10 +65,10 @@
         <Parameter Name="value2" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value1">To be added.</param>
-        <param name="value2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value1">The first string.</param>
+        <param name="value2">The second string.</param>
+        <summary>Merges the two specified strings.</summary>
+        <returns>A string that contains both strings.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

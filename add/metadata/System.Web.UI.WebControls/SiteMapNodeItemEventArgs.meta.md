@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.WebControls.SiteMapNodeItemEventArgs
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.SiteMapNodeItemEventArgs.#ctor(System.Web.UI.WebControls.SiteMapNodeItem)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.SiteMapNodeItemEventArgs.Item
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -1,24 +1,24 @@
 ---
 uid: System.Configuration.UriSection
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.UriSection.#ctor
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.UriSection.SchemeSettings
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.UriSection.Idn
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.UriSection.IriParsing
-internalonly: False
+manager: "wpickett"
 ---

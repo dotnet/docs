@@ -1,604 +1,893 @@
 ---
 uid: System.Net.WebClient
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.DownloadString(System.Uri)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadStringAsync(System.Uri,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.OnDownloadDataCompleted(System.Net.DownloadDataCompletedEventArgs)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.WebClient.UploadFileTaskAsync
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.OpenWriteAsync(System.Uri,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadStringAsync(System.Uri,System.String,System.String,System.Object)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadDataTaskAsync(System.Uri,System.Byte[])
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.OpenWriteAsync(System.Uri,System.String,System.Object)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.BaseAddress
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.OnOpenWriteCompleted(System.Net.OpenWriteCompletedEventArgs)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.OpenRead(System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.WebClient.UploadValuesAsync
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.OpenWrite(System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.OnUploadValuesCompleted(System.Net.UploadValuesCompletedEventArgs)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.OnUploadFileCompleted(System.Net.UploadFileCompletedEventArgs)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadFileCompleted
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.WriteStreamClosed
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.DownloadFile(System.String,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.OpenWriteAsync(System.Uri)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.OpenWriteTaskAsync(System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.WebClient.GetWebResponse
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.OpenWriteTaskAsync(System.Uri,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.WebClient.UploadValuesTaskAsync
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadValuesAsync(System.Uri,System.String,System.Collections.Specialized.NameValueCollection)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.CachePolicy
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.WebClient.OpenWriteAsync
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.Proxy
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadFileTaskAsync(System.String,System.String,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadFileAsync(System.Uri,System.String,System.String,System.Object)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadFile(System.String,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.WebClient.UploadDataTaskAsync
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.DownloadStringAsync(System.Uri,System.Object)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.WebClient.UploadStringTaskAsync
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.WebClient.DownloadFileTaskAsync
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadFileTaskAsync(System.Uri,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadString(System.String,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadData(System.String,System.String,System.Byte[])
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadValues(System.Uri,System.String,System.Collections.Specialized.NameValueCollection)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.QueryString
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.Credentials
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadString(System.String,System.String,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.OnUploadStringCompleted(System.Net.UploadStringCompletedEventArgs)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadStringCompleted
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.OpenReadCompleted
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.OpenWriteTaskAsync(System.String,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.OnWriteStreamClosed(System.Net.WriteStreamClosedEventArgs)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.DownloadFileTaskAsync(System.Uri,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.WebClient.DownloadString
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadValues(System.String,System.String,System.Collections.Specialized.NameValueCollection)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.ResponseHeaders
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.OnDownloadFileCompleted(System.ComponentModel.AsyncCompletedEventArgs)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.WebClient.OpenReadTaskAsync
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.CancelAsync
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.DownloadDataTaskAsync(System.Uri)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadString(System.Uri,System.String,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.DownloadStringTaskAsync(System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadStringTaskAsync(System.Uri,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.OpenRead(System.Uri)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.WebClient.UploadFileAsync
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.OnUploadProgressChanged(System.Net.UploadProgressChangedEventArgs)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadFileTaskAsync(System.String,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.DownloadStringTaskAsync(System.Uri)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadStringTaskAsync(System.String,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadValuesCompleted
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadDataAsync(System.Uri,System.String,System.Byte[],System.Object)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.OpenWrite(System.Uri)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadFile(System.Uri,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.WebClient.UploadString
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.DownloadFileCompleted
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadDataAsync(System.Uri,System.Byte[])
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.OnUploadDataCompleted(System.Net.UploadDataCompletedEventArgs)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.WebClient.DownloadFileAsync
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadData(System.String,System.Byte[])
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadValuesTaskAsync(System.Uri,System.Collections.Specialized.NameValueCollection)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadFileAsync(System.Uri,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.DownloadStringCompleted
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.DownloadString(System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.AllowReadStreamBuffering
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.OpenReadTaskAsync(System.Uri)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadValues(System.String,System.Collections.Specialized.NameValueCollection)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.DownloadDataAsync(System.Uri)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadDataAsync(System.Uri,System.String,System.Byte[])
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.WebClient.UploadValues
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.DownloadFileTaskAsync(System.String,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.OpenWriteCompleted
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.AllowWriteStreamBuffering
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadStringTaskAsync(System.String,System.String,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.DownloadDataCompleted
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.GetWebResponse(System.Net.WebRequest)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.Headers
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.WebClient.DownloadDataAsync
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadFileTaskAsync(System.Uri,System.String,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.OpenWrite(System.String,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.OpenWriteTaskAsync(System.Uri)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.Encoding
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.WebClient.UploadStringAsync
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadFile(System.String,System.String,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.WebClient.UploadData
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.WebClient.UploadDataAsync
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadValuesTaskAsync(System.String,System.Collections.Specialized.NameValueCollection)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UseDefaultCredentials
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadStringTaskAsync(System.Uri,System.String,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.WebClient.OpenWriteTaskAsync
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.GetWebResponse(System.Net.WebRequest,System.IAsyncResult)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadData(System.Uri,System.String,System.Byte[])
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadFileAsync(System.Uri,System.String,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.DownloadData(System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.OpenWrite(System.Uri,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadDataTaskAsync(System.Uri,System.String,System.Byte[])
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.OpenReadAsync(System.Uri,System.Object)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadDataTaskAsync(System.String,System.String,System.Byte[])
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.WebClient.UploadFile
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.WebClient.OpenRead
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.OpenReadAsync(System.Uri)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadValues(System.Uri,System.Collections.Specialized.NameValueCollection)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.WebClient.DownloadStringAsync
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadValuesTaskAsync(System.String,System.String,System.Collections.Specialized.NameValueCollection)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadStringAsync(System.Uri,System.String,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.DownloadProgressChanged
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.OnDownloadStringCompleted(System.Net.DownloadStringCompletedEventArgs)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadData(System.Uri,System.Byte[])
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.OnDownloadProgressChanged(System.Net.DownloadProgressChangedEventArgs)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.IsBusy
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.WebClient.DownloadStringTaskAsync
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadDataCompleted
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.WebClient.DownloadFile
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.OpenReadTaskAsync(System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.DownloadDataAsync(System.Uri,System.Object)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadValuesAsync(System.Uri,System.String,System.Collections.Specialized.NameValueCollection,System.Object)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadValuesTaskAsync(System.Uri,System.String,System.Collections.Specialized.NameValueCollection)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.DownloadData(System.Uri)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.GetWebRequest(System.Uri)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.WebClient.DownloadDataTaskAsync
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadValuesAsync(System.Uri,System.Collections.Specialized.NameValueCollection)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.WebClient.DownloadData
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadFile(System.Uri,System.String,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.DownloadFileAsync(System.Uri,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.DownloadDataTaskAsync(System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadString(System.Uri,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.DownloadStringAsync(System.Uri)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.WebClient.OpenReadAsync
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadProgressChanged
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.DownloadFile(System.Uri,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.DownloadFileAsync(System.Uri,System.String,System.Object)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.WebClient.OpenWrite
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.OnOpenReadCompleted(System.Net.OpenReadCompletedEventArgs)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebClient.UploadDataTaskAsync(System.String,System.Byte[])
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

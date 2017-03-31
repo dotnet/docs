@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.Design.WebControls.PanelDesigner
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.PanelDesigner.MapPropertyToStyle(System.String,System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.PanelDesigner.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.PanelDesigner.OnBehaviorAttached
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

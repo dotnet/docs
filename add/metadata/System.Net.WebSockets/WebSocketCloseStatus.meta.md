@@ -1,4 +1,5 @@
 ---
 uid: System.Net.WebSockets.WebSocketCloseStatus
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

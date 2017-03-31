@@ -1,4 +1,4 @@
 ---
 uid: System.ServiceModel.Syndication
-internalonly: False
+manager: "ghogen"
 ---

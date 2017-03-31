@@ -15,8 +15,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the interface for a service channel.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This interface defines access to the URI at which the service listens for incoming requests on the channel.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ListenUri">
@@ -32,8 +39,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the URI at which the service listens for incoming requests.</summary>
+        <value>The <see cref="T:System.Uri" /> at which the service listens for incoming requests on the channel.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

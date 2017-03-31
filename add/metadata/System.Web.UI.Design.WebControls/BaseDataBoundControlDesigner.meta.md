@@ -1,84 +1,109 @@
 ---
 uid: System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.ShowCreateDataSourceDialog(System.Web.UI.Design.ControlDesigner,System.Type,System.Boolean,System.String@)
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DisconnectFromDataSource
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.CreateDataSource
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DataBind(System.Web.UI.WebControls.BaseDataBoundControl)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.GetDesignTimeHtml
-internalonly: False
+---
+
+---
+uid: System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DisconnectFromDataSource
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.CreateDataSource
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DataBind(System.Web.UI.WebControls.BaseDataBoundControl)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.GetDesignTimeHtml
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DataSource
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.OnDataSourceChanged(System.Boolean)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.ConnectToDataSource
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.GetErrorDesignTimeHtml(System.Exception)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.GetEmptyDesignTimeHtml
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.OnSchemaRefreshed
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.Initialize(System.ComponentModel.IComponent)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.Dispose
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.Dispose(System.Boolean)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.PreFilterProperties(System.Collections.IDictionary)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DataSourceID
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

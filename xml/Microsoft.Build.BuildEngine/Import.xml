@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a single [Import](../Topic/Import%20Element%20\(MSBuild\).md) element in an [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] project.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <c>Condition</c> attribute value of the [Import](../Topic/Import%20Element%20\(MSBuild\).md) element.</summary>
+        <value>The <c>Condition</c> attribute value of the <c>Import</c> element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the fully qualified path of the file specified in the <c>Name</c> attribute of the [Import](../Topic/Import%20Element%20\(MSBuild\).md) element.</summary>
+        <value>The fullly qualified path of the file specified in the <c>Name</c> attribute of the <c>Import</c> element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +64,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the [Import](../Topic/Import%20Element%20\(MSBuild\).md) element was imported into the project.</summary>
+        <value>
+          <see langword="true" /> if the <c>Import</c> element was imported into the project; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +83,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <c>Project</c> attribute value of the [Import](../Topic/Import%20Element%20\(MSBuild\).md) element.</summary>
+        <value>The <c>Project</c> attribute value of the <c>Import</c> element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

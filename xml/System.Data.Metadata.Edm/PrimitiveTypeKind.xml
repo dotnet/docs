@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the primitive types as defined by EDM.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No content here will be updated; please do not add material here.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Binary">
@@ -27,7 +34,7 @@
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Binary type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Boolean">
@@ -43,7 +50,7 @@
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Boolean type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Byte">
@@ -59,7 +66,7 @@
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Byte type.</summary>
       </Docs>
     </Member>
     <Member MemberName="DateTime">
@@ -75,7 +82,7 @@
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The DateTime type.</summary>
       </Docs>
     </Member>
     <Member MemberName="DateTimeOffset">
@@ -91,7 +98,7 @@
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The DateTimeOffset type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Decimal">
@@ -107,7 +114,7 @@
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Decimal type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Double">
@@ -123,7 +130,7 @@
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Double type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Geography">
@@ -139,7 +146,7 @@
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Geography type.</summary>
       </Docs>
     </Member>
     <Member MemberName="GeographyCollection">
@@ -155,7 +162,7 @@
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Geographic collection type.</summary>
       </Docs>
     </Member>
     <Member MemberName="GeographyLineString">
@@ -171,7 +178,7 @@
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Geographic line string type.</summary>
       </Docs>
     </Member>
     <Member MemberName="GeographyMultiLineString">
@@ -187,7 +194,7 @@
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Geographic multi-line string type.</summary>
       </Docs>
     </Member>
     <Member MemberName="GeographyMultiPoint">
@@ -203,7 +210,7 @@
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Geographic multi-point type.</summary>
       </Docs>
     </Member>
     <Member MemberName="GeographyMultiPolygon">
@@ -219,7 +226,7 @@
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Geographic multi-polygon type.</summary>
       </Docs>
     </Member>
     <Member MemberName="GeographyPoint">
@@ -235,7 +242,7 @@
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Geographic point type.</summary>
       </Docs>
     </Member>
     <Member MemberName="GeographyPolygon">
@@ -251,7 +258,7 @@
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Geographic polygon type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Geometry">
@@ -267,7 +274,7 @@
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Geometry Type.</summary>
       </Docs>
     </Member>
     <Member MemberName="GeometryCollection">
@@ -283,7 +290,7 @@
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Geometric collection type.</summary>
       </Docs>
     </Member>
     <Member MemberName="GeometryLineString">
@@ -299,7 +306,7 @@
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Geometric line string type.</summary>
       </Docs>
     </Member>
     <Member MemberName="GeometryMultiLineString">
@@ -315,7 +322,7 @@
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Geometric multi-line string type.</summary>
       </Docs>
     </Member>
     <Member MemberName="GeometryMultiPoint">
@@ -331,7 +338,7 @@
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Geometric multi-point type.</summary>
       </Docs>
     </Member>
     <Member MemberName="GeometryMultiPolygon">
@@ -347,7 +354,7 @@
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Geometric multi-polygon type.</summary>
       </Docs>
     </Member>
     <Member MemberName="GeometryPoint">
@@ -363,7 +370,7 @@
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Geometric point type.</summary>
       </Docs>
     </Member>
     <Member MemberName="GeometryPolygon">
@@ -379,7 +386,7 @@
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Geometric polygon type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Guid">
@@ -395,7 +402,7 @@
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Guid type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Int16">
@@ -411,7 +418,7 @@
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Int16 type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Int32">
@@ -427,7 +434,7 @@
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Int32 type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Int64">
@@ -443,7 +450,7 @@
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Int64 type.</summary>
       </Docs>
     </Member>
     <Member MemberName="SByte">
@@ -459,7 +466,7 @@
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The SByte type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Single">
@@ -475,7 +482,7 @@
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Single type.</summary>
       </Docs>
     </Member>
     <Member MemberName="String">
@@ -491,7 +498,7 @@
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The String type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Time">
@@ -507,7 +514,7 @@
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Time type.</summary>
       </Docs>
     </Member>
   </Members>

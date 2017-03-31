@@ -1,24 +1,34 @@
 ---
 uid: System.Threading.Tasks.UnobservedTaskExceptionEventArgs
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Threading.Tasks.UnobservedTaskExceptionEventArgs.SetObserved
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Threading.Tasks.UnobservedTaskExceptionEventArgs.Observed
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Threading.Tasks.UnobservedTaskExceptionEventArgs.#ctor(System.AggregateException)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Threading.Tasks.UnobservedTaskExceptionEventArgs.Exception
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

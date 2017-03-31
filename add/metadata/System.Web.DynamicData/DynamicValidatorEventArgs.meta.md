@@ -1,19 +1,23 @@
 ---
 uid: System.Web.DynamicData.DynamicValidatorEventArgs
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.DynamicValidatorEventArgs.Exception
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.DynamicValidatorEventArgs.#ctor(System.Exception,System.Web.DynamicData.DynamicDataSourceOperation)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.DynamicValidatorEventArgs.Operation
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

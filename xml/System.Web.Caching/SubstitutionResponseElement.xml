@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a managed delegate that can be called to insert dynamically generated output into an output-cache response.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,9 +28,11 @@
         <Parameter Name="callback" Type="System.Web.HttpResponseSubstitutionCallback" />
       </Parameters>
       <Docs>
-        <param name="callback">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="callback">The static substitution callback that was set as part of the response for an output-cached page.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Caching.SubstitutionResponseElement" /> class.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="callback" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Callback">
@@ -46,8 +48,8 @@
         <ReturnType>System.Web.HttpResponseSubstitutionCallback</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a reference to the substitution callback method.</summary>
+        <value>A callback method reference.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

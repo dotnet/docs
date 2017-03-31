@@ -12,8 +12,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the contract that HTTP asynchronous handler objects must implement.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Web.IHttpAsyncHandler> class can be associated with a file name extension or a particular URL by a configuration file, in the `httpHandlers` configuration section. The ASP.NET infrastructure will then instantiate and call the handler when the corresponding request is received. Alternatively, the handler can be defined in an .ashx file and when the corresponding request is received for the .ashx file the hander will be executed.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="BeginProcessRequest">
@@ -34,11 +41,11 @@
         <Parameter Name="extraData" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="cb">To be added.</param>
-        <param name="extraData">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">An <see cref="T:System.Web.HttpContext" /> object that provides references to intrinsic server objects (for example, <see langword="Request" />, <see langword="Response" />, <see langword="Session" />, and <see langword="Server" />) used to service HTTP requests.</param>
+        <param name="cb">The <see cref="T:System.AsyncCallback" /> to call when the asynchronous method call is complete. If <c>cb</c> is <see langword="null" />, the delegate is not called.</param>
+        <param name="extraData">Any extra data needed to process the request.</param>
+        <summary>Initiates an asynchronous call to the HTTP handler.</summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> that contains information about the status of the process.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,9 +65,16 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="result">An <see cref="T:System.IAsyncResult" /> that contains information about the status of the process.</param>
+        <summary>Provides an asynchronous process End method when the process ends.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use <xref:System.Web.IHttpAsyncHandler.EndProcessRequest%2A> to raise any exceptions caught during the asynchronous process.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

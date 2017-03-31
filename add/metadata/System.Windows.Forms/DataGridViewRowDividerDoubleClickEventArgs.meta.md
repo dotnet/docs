@@ -1,14 +1,20 @@
 ---
 uid: System.Windows.Forms.DataGridViewRowDividerDoubleClickEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowDividerDoubleClickEventArgs.#ctor(System.Int32,System.Windows.Forms.HandledMouseEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewRowDividerDoubleClickEventArgs.RowIndex
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

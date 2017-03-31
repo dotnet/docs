@@ -1,4 +1,6 @@
 ---
 uid: System.Web.UI.WebControls.DayNameFormat
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

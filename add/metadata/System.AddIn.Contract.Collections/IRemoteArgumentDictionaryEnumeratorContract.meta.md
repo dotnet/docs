@@ -1,19 +1,27 @@
 ---
 uid: System.AddIn.Contract.Collections.IRemoteArgumentDictionaryEnumeratorContract
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.AddIn.Contract.Collections.IRemoteArgumentDictionaryEnumeratorContract.GetEntry
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.AddIn.Contract.Collections.IRemoteArgumentDictionaryEnumeratorContract.GetKey
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.AddIn.Contract.Collections.IRemoteArgumentDictionaryEnumeratorContract.GetValue
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

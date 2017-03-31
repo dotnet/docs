@@ -27,8 +27,54 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Marks each type of member that is defined as a derived class of <see cref="T:System.Reflection.MemberInfo" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ These enumeration values are returned by the following properties:  
+  
+-   <xref:System.Type.MemberType%2A?displayProperty=fullName>.  
+  
+-   <xref:System.Reflection.MemberInfo.MemberType%2A?displayProperty=fullName>.  
+  
+-   <xref:System.Reflection.ConstructorInfo?displayProperty=fullName>.  
+  
+-   <xref:System.Reflection.EventInfo?displayProperty=fullName>.  
+  
+-   <xref:System.Reflection.FieldInfo?displayProperty=fullName>.  
+  
+-   <xref:System.Reflection.MethodInfo?displayProperty=fullName>.  
+  
+-   <xref:System.Reflection.PropertyInfo?displayProperty=fullName>.  
+  
+ To obtain the <xref:System.Reflection.MemberTypes> value for a type:  
+  
+1.  Get a <xref:System.Type> object that represents that type.  
+  
+2.  Retrieve the value of the <xref:System.Type.MemberType%2A?displayProperty=fullName> property.  
+  
+ To get the <xref:System.Reflection.MemberTypes> values for the members of a type.:  
+  
+1.  Get a <xref:System.Type> object that represents that type.  
+  
+2.  Retrieve the <xref:System.Reflection.MemberInfo> array that represents the members of that type by calling the <xref:System.Type.GetMembers%2A?displayProperty=fullName> method.  
+  
+3.  Retrieve the value of the From the <xref:System.Reflection.MemberInfo.MemberType%2A?displayProperty=fullName> property for each member in the array.  A `switch` statement in C# or `Select Case` statement in Visual Basic is typically used to process member types.  
+  
+ <xref:System.Reflection.MemberTypes> matches CorTypeAttr as defined in the corhdr.h file.  
+  
+   
+  
+## Examples  
+ The following example displays the names of the members of the <xref:System.Reflection.ReflectionTypeLoadException> class and their associated member types.  
+  
+ [!code-cpp[System.Reflection.MemberTypes#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/System.Reflection.MemberTypes/cpp/source.cpp#1)]
+ [!code-csharp[System.Reflection.MemberTypes#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Reflection.MemberTypes/cs/source.cs#1)]
+ [!code-vb[System.Reflection.MemberTypes#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Reflection.MemberTypes/vb/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="All">
@@ -53,7 +99,7 @@
         <ReturnType>System.Reflection.MemberTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies all member types.</summary>
       </Docs>
     </Member>
     <Member MemberName="Constructor">
@@ -78,7 +124,7 @@
         <ReturnType>System.Reflection.MemberTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the member is a constructor</summary>
       </Docs>
     </Member>
     <Member MemberName="Custom">
@@ -103,7 +149,7 @@
         <ReturnType>System.Reflection.MemberTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the member is a custom member type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Event">
@@ -128,7 +174,7 @@
         <ReturnType>System.Reflection.MemberTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the member is an event.</summary>
       </Docs>
     </Member>
     <Member MemberName="Field">
@@ -153,7 +199,7 @@
         <ReturnType>System.Reflection.MemberTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the member is a field.</summary>
       </Docs>
     </Member>
     <Member MemberName="Method">
@@ -178,7 +224,7 @@
         <ReturnType>System.Reflection.MemberTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the member is a method.</summary>
       </Docs>
     </Member>
     <Member MemberName="NestedType">
@@ -203,7 +249,7 @@
         <ReturnType>System.Reflection.MemberTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the member is a nested type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Property">
@@ -228,7 +274,7 @@
         <ReturnType>System.Reflection.MemberTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the member is a property.</summary>
       </Docs>
     </Member>
     <Member MemberName="TypeInfo">
@@ -253,7 +299,7 @@
         <ReturnType>System.Reflection.MemberTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the member is a type.</summary>
       </Docs>
     </Member>
   </Members>

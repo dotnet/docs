@@ -1,19 +1,34 @@
 ---
 uid: System.IO.InvalidDataException
-internalonly: False
----
-
----
-uid: System.IO.InvalidDataException.#ctor(System.String,System.Exception)
-internalonly: False
----
-
----
-uid: System.IO.InvalidDataException.#ctor(System.String)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.InvalidDataException.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.InvalidDataException.#ctor(System.String,System.Exception)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.InvalidDataException.#ctor(System.String)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.InvalidDataException.#ctor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

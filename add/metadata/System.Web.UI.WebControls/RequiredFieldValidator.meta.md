@@ -1,24 +1,29 @@
 ---
 uid: System.Web.UI.WebControls.RequiredFieldValidator
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.RequiredFieldValidator.AddAttributesToRender(System.Web.UI.HtmlTextWriter)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.RequiredFieldValidator.InitialValue
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.RequiredFieldValidator.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.RequiredFieldValidator.EvaluateIsValid
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

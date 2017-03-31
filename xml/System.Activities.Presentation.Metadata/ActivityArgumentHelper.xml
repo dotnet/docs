@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides additional functionalities regarding activity arguments.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,9 +32,9 @@
         <Parameter Name="argumentAccessorsGenerator" Type="System.Func&lt;System.Activities.Activity,System.Collections.Generic.IEnumerable&lt;System.Activities.Presentation.ArgumentAccessor&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="activityType">To be added.</param>
-        <param name="argumentAccessorsGenerator">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="activityType">The activity type.</param>
+        <param name="argumentAccessorsGenerator">A function which takes in an activity instance (of type activityType) and returns a list of ArgumentAccessors.</param>
+        <summary>Registers with an activity type a function to generate a list of ArgumentAccessors.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,1 +1,0 @@
-        Private curPriceTime() As Object = {4.25, DateTime.Now}

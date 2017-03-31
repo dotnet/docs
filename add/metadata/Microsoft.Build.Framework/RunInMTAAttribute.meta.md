@@ -1,9 +1,11 @@
 ---
 uid: Microsoft.Build.Framework.RunInMTAAttribute
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.RunInMTAAttribute.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

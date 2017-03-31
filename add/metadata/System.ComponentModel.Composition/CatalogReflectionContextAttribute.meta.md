@@ -1,14 +1,20 @@
 ---
 uid: System.ComponentModel.Composition.CatalogReflectionContextAttribute
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.CatalogReflectionContextAttribute.#ctor(System.Type)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.CatalogReflectionContextAttribute.CreateReflectionContext
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

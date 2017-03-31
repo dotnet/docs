@@ -1,59 +1,64 @@
 ---
 uid: System.ServiceModel.Channels.UdpRetransmissionSettings
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Channels.UdpRetransmissionSettings.ShouldSerializeDelayLowerBound
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Channels.UdpRetransmissionSettings.DelayLowerBound
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Channels.UdpRetransmissionSettings.DelayUpperBound
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Channels.UdpRetransmissionSettings.#ctor(System.Int32,System.Int32,System.TimeSpan,System.TimeSpan,System.TimeSpan)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Channels.UdpRetransmissionSettings.#ctor(System.Int32,System.Int32)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Channels.UdpRetransmissionSettings.MaxMulticastRetransmitCount
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Channels.UdpRetransmissionSettings.MaxDelayPerRetransmission
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Channels.UdpRetransmissionSettings.#ctor
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Channels.UdpRetransmissionSettings.MaxUnicastRetransmitCount
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Channels.UdpRetransmissionSettings.ShouldSerializeDelayUpperBound
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Channels.UdpRetransmissionSettings.ShouldSerializeMaxDelayPerRetransmission
-internalonly: False
+manager: "ghogen"
+---
+
+---
+uid: System.ServiceModel.Channels.UdpRetransmissionSettings.#ctor
+manager: "ghogen"
 ---

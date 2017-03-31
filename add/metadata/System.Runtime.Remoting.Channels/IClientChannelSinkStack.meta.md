@@ -1,14 +1,14 @@
 ---
 uid: System.Runtime.Remoting.Channels.IClientChannelSinkStack
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Channels.IClientChannelSinkStack.Push(System.Runtime.Remoting.Channels.IClientChannelSink,System.Object)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Channels.IClientChannelSinkStack.Pop(System.Runtime.Remoting.Channels.IClientChannelSink)
-internalonly: False
+manager: "ghogen"
 ---

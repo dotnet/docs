@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.DragEventHandler
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

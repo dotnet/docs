@@ -1,1 +1,0 @@
-            pragma1.ChecksumAlgorithmId = HashMD5;

@@ -1,49 +1,59 @@
 ---
 uid: System.Web.UI.Design.WebControls.SqlDesignerDataSourceView
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.SqlDesignerDataSourceView.CanDelete
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.SqlDesignerDataSourceView.CanSort
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.SqlDesignerDataSourceView.CanUpdate
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.SqlDesignerDataSourceView.Schema
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.SqlDesignerDataSourceView.#ctor(System.Web.UI.Design.WebControls.SqlDataSourceDesigner,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.SqlDesignerDataSourceView.GetDesignTimeData(System.Int32,System.Boolean@)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.SqlDesignerDataSourceView.CanInsert
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.SqlDesignerDataSourceView.CanRetrieveTotalRowCount
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.SqlDesignerDataSourceView.CanPage
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

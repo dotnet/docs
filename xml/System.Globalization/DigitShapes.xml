@@ -20,8 +20,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the culture-specific display of digits.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Globalization.DigitShapes> value specifies that no digit shape is substituted for the Unicode input, a digit shape is substituted based on context, or a native national digit shape is substituted for the input.  
+  
+ The Arabic, Indic, and Thai languages have classical shapes for numbers that are different from the digits 0 through 9 (Unicode U+0030 through U+0039), which are most often used on computers. The application uses the <xref:System.Globalization.DigitShapes> enumeration with the <xref:System.Globalization.NumberFormatInfo.DigitSubstitution%2A> property to specify how to display digits U+0030 through U+0039 in the absence of other formatting information.  
+  
+ The <xref:System.Globalization.DigitShapes> enumeration is primarily used by applications intended for cultures that use bidirectional scripts. For example, the reading order of Arabic and Indic scripts is bidirectional.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Context">
@@ -42,7 +53,7 @@
         <ReturnType>System.Globalization.DigitShapes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The digit shape depends on the previous text in the same output. European digits follow Latin scripts; Arabic-Indic digits follow Arabic text; and Thai digits follow Thai text.</summary>
       </Docs>
     </Member>
     <Member MemberName="NativeNational">
@@ -63,7 +74,7 @@
         <ReturnType>System.Globalization.DigitShapes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The digit shape is the native equivalent of the digits from 0 through 9. ASCII digits from 0 through 9 are replaced by equivalent native national digits.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -84,7 +95,7 @@
         <ReturnType>System.Globalization.DigitShapes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The digit shape is not changed. Full Unicode compatibility is maintained.</summary>
       </Docs>
     </Member>
   </Members>

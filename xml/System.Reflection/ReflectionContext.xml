@@ -22,8 +22,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a context that can provide reflection objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The purpose of this class is to provide a way for reflection code to be made aware when reflection objects originate in a context other than the default reflection context, so that operations on those objects can use that context. For example, reflection objects that originate with a <xref:System.Reflection.Context.CustomReflectionContext> object should be compared only with reflection objects that have the same origin. For more information, see the <xref:System.Reflection.Context.CustomReflectionContext> reference page.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,7 +55,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Reflection.ReflectionContext" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,9 +86,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The object to represent.</param>
+        <summary>Gets the representation of the type of the specified object in this reflection context.</summary>
+        <returns>An object that represents the type of the specified object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,9 +119,9 @@
         <Parameter Name="assembly" Type="System.Reflection.Assembly" />
       </Parameters>
       <Docs>
-        <param name="assembly">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="assembly">The external representation of the assembly to represent in this context.</param>
+        <summary>Gets the representation, in this reflection context, of an assembly that is represented by an object from another reflection context.</summary>
+        <returns>The representation of the assembly in this reflection context.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -145,9 +152,9 @@
         <Parameter Name="type" Type="System.Reflection.TypeInfo" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="type">The external representation of the type to represent in this context.</param>
+        <summary>Gets the representation, in this reflection context, of a type represented by an object from another reflection context.</summary>
+        <returns>The representation of the type in this reflection context..</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

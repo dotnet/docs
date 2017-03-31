@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a type converter for <see cref="T:System.Windows.Forms.LinkLabel.Link" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Forms.LinkConverter> class to convert links of one type to another type, and to access standard values and subordinate properties. Access this class through <xref:System.ComponentModel.TypeDescriptor>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.LinkConverter" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,10 +54,11 @@
         <Parameter Name="sourceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="sourceType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> providing contextual information about the object to be converted.</param>
+        <param name="sourceType">The type of the object to be converted.</param>
+        <summary>Retrieves a value that determines if this <see cref="T:System.Windows.Forms.LinkConverter" /> can convert an object having the specified context and source type to the native type of the <see cref="T:System.Windows.Forms.LinkConverter" />.</summary>
+        <returns>
+          <see langword="true" /> if this <see cref="T:System.Windows.Forms.LinkConverter" /> can convert the specified object; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,10 +79,11 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="destinationType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> providing contextual information about the object to be converted.</param>
+        <param name="destinationType">The type to convert the object to.</param>
+        <summary>Retrieves a value that determines if this <see cref="T:System.Windows.Forms.LinkConverter" /> can convert an object having the specified context to the specified type.</summary>
+        <returns>
+          <see langword="true" /> if this <see cref="T:System.Windows.Forms.LinkConverter" /> can convert the specified object; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,12 +105,13 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="culture">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> providing contextual information about the object to be converted.</param>
+        <param name="culture">Cultural attributes of the object to be converted. If this parameter is <see langword="null" />, the <see cref="P:System.Globalization.CultureInfo.CurrentCulture" /> property value is used.</param>
+        <param name="value">The object to be converted.</param>
+        <summary>Converts the specified object to the native type of the <see cref="T:System.Windows.Forms.LinkConverter" />.</summary>
+        <returns>The converted object.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The text of the object to be converted could not be parsed.</exception>
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -123,13 +133,22 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="culture">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="destinationType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> providing contextual information about the object to be converted.</param>
+        <param name="culture">Cultural attributes of the object to be converted. If this parameter is <see langword="null" />, the <see cref="P:System.Globalization.CultureInfo.CurrentCulture" /> property value is used.</param>
+        <param name="value">The object to be converted.</param>
+        <param name="destinationType">The type to convert the object to.</param>
+        <summary>Converts the specified object to another type.</summary>
+        <returns>The converted object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The most common conversion is from one <xref:System.String> to another <xref:System.String>. The default implementation calls <xref:System.Object.ToString%2A> on the object if the object is valid and if the `destinationType` is <xref:System.String>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The object cannot be converted to the destination type.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="destinationType" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

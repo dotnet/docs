@@ -1,4 +1,5 @@
 ---
 uid: System.Web.HttpWorkerRequest.EndOfSendNotification
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

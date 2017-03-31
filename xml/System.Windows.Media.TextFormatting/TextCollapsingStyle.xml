@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the style of collapsed text.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Line collapsing is the ability to reduce displaying space for a line by not showing part of the line's text. Depending on the collapsing style, a collapsing symbol may be shown at the location where the collapsed text occurred.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="TrailingCharacter">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Media.TextFormatting.TextCollapsingStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Collapse trailing characters.</summary>
       </Docs>
     </Member>
     <Member MemberName="TrailingWord">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Media.TextFormatting.TextCollapsingStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Collapse trailing words.</summary>
       </Docs>
     </Member>
   </Members>

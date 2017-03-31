@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The exception that is thrown when a received security token is invalid.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.SecurityTokenValidationException> is typically thrown by the <xref:System.IdentityModel.Selectors.SecurityTokenAuthenticator.ValidateToken%2A> method.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SecurityTokenValidationException" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,7 +51,7 @@
       </Parameters>
       <Docs>
         <param name="msg">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SecurityTokenValidationException" /> class using the specified error message.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,9 +69,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that contains values that are used during serialization and deserialization.</param>
+        <param name="context">A <see cref="T:System.IdentityModel.Tokens.SecurityTokenValidationException" /> that contains data about the source and destination of the serialization stream.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SecurityTokenValidationException" /> class using the specified XML serialization data and contextual data about the source and destination of the serialization stream.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,7 +91,7 @@
       <Docs>
         <param name="msg">To be added.</param>
         <param name="inner">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SecurityTokenValidationException" /> class using the specified error message and root cause of the error.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

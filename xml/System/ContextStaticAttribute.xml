@@ -24,8 +24,23 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates that the value of a static field is unique for a particular context.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A static field marked with `ContextStaticAttribute` is not shared between contexts. If the indicated static field is accessed on a different context, it will contain a different value. Use this attribute as it is, and do not derive from it.  
+  
+ The following example shows the syntax of this attribute:  
+  
+ [ContextStatic]  
+  
+ static int f=7;  
+  
+ For more information about using attributes, see [Attributes](../Topic/Extending%20Metadata%20Using%20Attributes.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,7 +59,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ContextStaticAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

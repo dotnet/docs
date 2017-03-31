@@ -1,4 +1,6 @@
 ---
 uid: System.Security.Cryptography.FromBase64TransformMode
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

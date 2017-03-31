@@ -20,7 +20,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the dynamic set member operation at the call site, providing the binding semantic and the details about the operation.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -47,9 +47,9 @@
         <Parameter Name="ignoreCase" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="ignoreCase">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the member to obtain.</param>
+        <param name="ignoreCase">Is true if the name should be matched ignoring case; false otherwise.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Dynamic.SetMemberBinder" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,10 +79,10 @@
         <Parameter Name="args" Type="System.Dynamic.DynamicMetaObject[]" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="args">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The target of the dynamic set member operation.</param>
+        <param name="args">An array of arguments of the dynamic set member operation.</param>
+        <summary>Performs the binding of the dynamic set member operation.</summary>
+        <returns>The <see cref="T:System.Dynamic.DynamicMetaObject" /> representing the result of the binding.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,10 +112,10 @@
         <Parameter Name="value" Type="System.Dynamic.DynamicMetaObject" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The target of the dynamic set member operation.</param>
+        <param name="value">The value to set to the member.</param>
+        <summary>Performs the binding of the dynamic set member operation if the target dynamic object cannot bind.</summary>
+        <returns>The <see cref="T:System.Dynamic.DynamicMetaObject" /> representing the result of the binding.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,11 +146,11 @@
         <Parameter Name="errorSuggestion" Type="System.Dynamic.DynamicMetaObject" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="errorSuggestion">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The target of the dynamic set member operation.</param>
+        <param name="value">The value to set to the member.</param>
+        <param name="errorSuggestion">The binding result to use if binding fails, or null.</param>
+        <summary>Performs the binding of the dynamic set member operation if the target dynamic object cannot bind.</summary>
+        <returns>The <see cref="T:System.Dynamic.DynamicMetaObject" /> representing the result of the binding.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -176,8 +176,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the value indicating if the string comparison should ignore the case of the member name.</summary>
+        <value>True if the case is ignored, otherwise false.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -203,8 +203,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the member to obtain.</summary>
+        <value>The name of the member to obtain.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -230,8 +230,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The result type of the operation.</summary>
+        <value>The <see cref="T:System.Type" /> object representing the result type of the operation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

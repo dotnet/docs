@@ -1,24 +1,34 @@
 ---
 uid: System.ComponentModel.Design.DesigntimeLicenseContext
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.DesigntimeLicenseContext.GetSavedLicenseKey(System.Type,System.Reflection.Assembly)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.DesigntimeLicenseContext.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.DesigntimeLicenseContext.UsageMode
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.DesigntimeLicenseContext.SetSavedLicenseKey(System.Type,System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

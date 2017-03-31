@@ -1,9 +1,13 @@
 ---
 uid: System.ServiceModel.Discovery.FindCompletedEventArgs
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.FindCompletedEventArgs.Result
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

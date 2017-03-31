@@ -10,8 +10,32 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the number of stop bits used on the <see cref="T:System.IO.Ports.SerialPort" /> object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You use this enumeration when setting the value of the <xref:System.IO.Ports.SerialPort.StopBits%2A> property on the <xref:System.IO.Ports.SerialPort> class. Stop bits separate each unit of data on an asynchronous serial connection. They are also sent continuously when no data is available for transmission.  
+  
+ The <xref:System.IO.Ports.SerialPort> class throws an <xref:System.ArgumentOutOfRangeException> exception when you set the <xref:System.IO.Ports.SerialPort.StopBits%2A> property to None.  
+  
+   
+  
+## Examples  
+ The following example shows how to set the <xref:System.IO.Ports.SerialPort.StopBits%2A> property to `One`.  
+  
+ [!code-cpp[System.IO.Ports.SerialPort#20](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.Ports.SerialPort/cpp/datareceived.cpp#20)]
+ [!code-csharp[System.IO.Ports.SerialPort#20](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Ports.SerialPort/cs/datareceived.cs#20)]
+ [!code-vb[System.IO.Ports.SerialPort#20](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Ports.SerialPort/vb/datareceived.vb#20)]  
+  
+ The following code example displays the possible values of the <xref:System.IO.Ports.StopBits> enumeration to the console, then prompts the user to choose one. This code example is part of a larger code example provided for the <xref:System.IO.Ports.SerialPort> class.  
+  
+ [!code-cpp[System.IO.Ports.SerialPort#04](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.Ports.SerialPort/cpp/serialport.cpp#04)]
+ [!code-csharp[System.IO.Ports.SerialPort#04](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Ports.SerialPort/cs/SerialPort.cs#04)]
+ [!code-vb[System.IO.Ports.SerialPort#04](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Ports.SerialPort/vb/SerialPort.vb#04)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="None">
@@ -27,7 +51,7 @@
         <ReturnType>System.IO.Ports.StopBits</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No stop bits are used. This value is not supported by the <see cref="P:System.IO.Ports.SerialPort.StopBits" /> property.</summary>
       </Docs>
     </Member>
     <Member MemberName="One">
@@ -43,7 +67,7 @@
         <ReturnType>System.IO.Ports.StopBits</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>One stop bit is used.</summary>
       </Docs>
     </Member>
     <Member MemberName="OnePointFive">
@@ -59,7 +83,7 @@
         <ReturnType>System.IO.Ports.StopBits</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>1.5 stop bits are used.</summary>
       </Docs>
     </Member>
     <Member MemberName="Two">
@@ -75,7 +99,7 @@
         <ReturnType>System.IO.Ports.StopBits</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Two stop bits are used.</summary>
       </Docs>
     </Member>
   </Members>

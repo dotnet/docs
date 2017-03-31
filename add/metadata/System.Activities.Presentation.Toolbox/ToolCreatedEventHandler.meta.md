@@ -1,4 +1,6 @@
 ---
 uid: System.Activities.Presentation.Toolbox.ToolCreatedEventHandler
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

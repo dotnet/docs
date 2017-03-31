@@ -11,8 +11,40 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides the system implementation for displaying a <see cref="T:System.Windows.Controls.ContextMenu" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.ContextMenuService> class provides attached properties that can be used to specify the appearance and position of a context menu. Many of the properties in the <xref:System.Windows.Controls.ContextMenuService> class are also defined by the <xref:System.Windows.Controls.ContextMenu>.  Sometimes it is more convenient to set the properties by using the <xref:System.Windows.Controls.ContextMenuService> class than by setting the properties on a <xref:System.Windows.Controls.ContextMenu>. For example, you can create a <xref:System.Windows.Controls.ContextMenu> to be shared by multiple elements, but use the <xref:System.Windows.Controls.ContextMenuService> class to specify a different position of the <xref:System.Windows.Controls.ContextMenu> for each element. The following properties are defined by the <xref:System.Windows.Controls.ContextMenu> and <xref:System.Windows.Controls.ContextMenuService> classes.  If any of these properties are set on both <xref:System.Windows.Controls.ContextMenu> and the <xref:System.Windows.Controls.ContextMenuService>, the property value from the <xref:System.Windows.Controls.ContextMenuService> is used.  
+  
+-   <xref:System.Windows.Controls.ContextMenuService.Placement%2A>  
+  
+-   <xref:System.Windows.Controls.ContextMenuService.PlacementRectangle%2A>  
+  
+-   <xref:System.Windows.Controls.ContextMenuService.PlacementTargetProperty>  
+  
+-   <xref:System.Windows.Controls.ContextMenuService.HorizontalOffset%2A>  
+  
+-   <xref:System.Windows.Controls.ContextMenuService.VerticalOffsetProperty>  
+  
+-   <xref:System.Windows.Controls.ContextMenuService.HasDropShadow%2A>  
+  
+ You can also use the <xref:System.Windows.Controls.ContextMenuService> to display menus on disabled items.  
+  
+   
+  
+## Examples  
+ The following example assigns the same <xref:System.Windows.Controls.ContextMenu> to two buttons and sets the <xref:System.Windows.Controls.ContextMenuService.HasDropShadow%2A>, <xref:System.Windows.Controls.ContextMenuService.Placement%2A>, <xref:System.Windows.Controls.ContextMenuService.PlacementRectangle%2A>, <xref:System.Windows.Controls.ContextMenuService.HorizontalOffset%2A>, and <xref:System.Windows.Controls.ContextMenu.VerticalOffset%2A> properties to set the <xref:System.Windows.Controls.ContextMenu> to different positions for each button.  
+  
+ [!code-xml[ContextMenuService_snip#SharedContextMenu](~/samples/snippets/csharp/VS_Snippets_Wpf/ContextMenuService_snip/CSharp/Pane1.xaml#sharedcontextmenu)]  
+  
+ The following example shows how to use the service to display a <xref:System.Windows.Controls.ContextMenu> on a disabled button. Notice that you set the <xref:System.Windows.Controls.ContextMenuService.ShowOnDisabled%2A> property on the button that is the parent of the context menu.  
+  
+ [!code-xml[ContextMenu#3](~/samples/snippets/csharp/VS_Snippets_Wpf/ContextMenu/CSharp/Pane1.xaml#3)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AddContextMenuClosingHandler">
@@ -32,9 +64,9 @@
         <Parameter Name="handler" Type="System.Windows.Controls.ContextMenuEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to be added.</param>
+        <summary>Adds a handler for the <see cref="E:System.Windows.Controls.ContextMenuService.ContextMenuClosing" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,9 +87,9 @@
         <Parameter Name="handler" Type="System.Windows.Controls.ContextMenuEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to be added.</param>
+        <summary>Adds a handler for the <see cref="E:System.Windows.Controls.ContextMenuService.ContextMenuOpening" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,7 +106,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="E:System.Windows.Controls.ContextMenuService.ContextMenuClosing" /> routed event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,7 +123,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="E:System.Windows.Controls.ContextMenuService.ContextMenuOpening" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,7 +140,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.ContextMenuService.ContextMenu" /> attached property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,9 +165,9 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">Object to query concerning the <see cref="P:System.Windows.FrameworkElement.ContextMenu" /> property.</param>
+        <summary>Gets the value of the <see cref="P:System.Windows.Controls.ContextMenuService.ContextMenu" /> property of the specified object.</summary>
+        <returns>Value of the <see cref="P:System.Windows.Controls.ContextMenuService.ContextMenu" /> property.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,9 +192,9 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">Object to query concerning whether it has a drop shadow.</param>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Windows.Controls.ContextMenu" /> has a drop shadow.</summary>
+        <returns>A Boolean value, **true** if the <see cref="T:System.Windows.Controls.ContextMenu" /> has a drop shadow; **false** otherwise.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -190,9 +222,9 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">Object to query concerning the <see cref="P:System.Windows.Controls.ContextMenuService.HorizontalOffset" /> property.</param>
+        <summary>Gets the value of the <see cref="P:System.Windows.Controls.ContextMenuService.HorizontalOffset" /> property of the specified object.</summary>
+        <returns>Value of the <see cref="P:System.Windows.Controls.ContextMenuService.HorizontalOffset" /> property.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -217,9 +249,9 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">Object to query concerning the <see cref="P:System.Windows.Controls.ContextMenuService.IsEnabled" /> property.</param>
+        <summary>Gets the value of the <see cref="P:System.Windows.Controls.ContextMenuService.IsEnabled" /> property of the specified object.</summary>
+        <returns>Value of the <see cref="P:System.Windows.Controls.ContextMenuService.IsEnabled" /> property.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -244,9 +276,9 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">Object to query concerning the <see cref="P:System.Windows.Controls.ContextMenuService.Placement" /> property.</param>
+        <summary>Gets the value of the <see cref="P:System.Windows.Controls.ContextMenuService.Placement" /> property of the specified object.</summary>
+        <returns>Value of the <see cref="P:System.Windows.Controls.ContextMenuService.Placement" /> property.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -271,9 +303,9 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">Object to query concerning the <see cref="P:System.Windows.Controls.ContextMenuService.PlacementRectangle" /> property.</param>
+        <summary>Gets the value of the <see cref="P:System.Windows.Controls.ContextMenuService.PlacementRectangle" /> property of the specified object.</summary>
+        <returns>Value of the <see cref="P:System.Windows.Controls.ContextMenuService.PlacementRectangle" /> property.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -298,9 +330,9 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">Object to query concerning the <see cref="P:System.Windows.Controls.ContextMenuService.PlacementTarget" /> property.</param>
+        <summary>Gets the value of the <see cref="P:System.Windows.Controls.ContextMenuService.PlacementTarget" /> property of the specified object.</summary>
+        <returns>Value of the <see cref="P:System.Windows.Controls.ContextMenuService.PlacementTarget" /> property.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -325,9 +357,9 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">Object to query concerning the <see cref="P:System.Windows.Controls.ContextMenuService.ShowOnDisabled" /> property.</param>
+        <summary>Gets the value of the <see cref="P:System.Windows.Controls.ContextMenuService.ShowOnDisabled" /> property of the specified object.</summary>
+        <returns>Value of the <see cref="P:System.Windows.Controls.ContextMenuService.ShowOnDisabled" /> property.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -355,9 +387,9 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">Object to query concerning the <see cref="P:System.Windows.Controls.ContextMenuService.VerticalOffset" /> property.</param>
+        <summary>Gets the value of the <see cref="P:System.Windows.Controls.ContextMenuService.VerticalOffset" /> property of the specified object.</summary>
+        <returns>Value of the <see cref="P:System.Windows.Controls.ContextMenuService.VerticalOffset" /> property.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -374,7 +406,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.ContextMenuService.HasDropShadow" /> attached property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -391,7 +423,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.ContextMenuService.HorizontalOffset" /> attached property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -408,7 +440,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.ContextMenuService.IsEnabled" /> attached property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -425,7 +457,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.ContextMenuService.Placement" /> attached property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -442,7 +474,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.ContextMenuService.PlacementRectangle" /> attached property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -459,7 +491,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.ContextMenuService.PlacementTarget" /> attached property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -480,9 +512,9 @@
         <Parameter Name="handler" Type="System.Windows.Controls.ContextMenuEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to be removed.</param>
+        <summary>Removes a handler for the <see cref="E:System.Windows.Controls.ContextMenuService.ContextMenuClosing" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -503,9 +535,9 @@
         <Parameter Name="handler" Type="System.Windows.Controls.ContextMenuEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to be removed.</param>
+        <summary>Removes a handler for the <see cref="E:System.Windows.Controls.ContextMenuService.ContextMenuOpening" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -526,9 +558,9 @@
         <Parameter Name="value" Type="System.Windows.Controls.ContextMenu" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">Object to set the property on.</param>
+        <param name="value">Value to set.</param>
+        <summary>Sets the value of the <see cref="P:System.Windows.Controls.ContextMenuService.ContextMenu" /> property of the specified object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -549,9 +581,9 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">Object to set the property on.</param>
+        <param name="value">Boolean value to set, <see langword="true" /> if the <see cref="T:System.Windows.Controls.ContextMenu" /> has a drop shadow; <see langword="false" /> otherwise.</param>
+        <summary>Sets a value that indicates whether the <see cref="T:System.Windows.Controls.ContextMenu" /> has a drop shadow.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -572,9 +604,9 @@
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">Object to set the value on.</param>
+        <param name="value">Value to set.</param>
+        <summary>Sets the value of the <see cref="P:System.Windows.Controls.ContextMenuService.HorizontalOffset" /> property of the specified object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -595,9 +627,9 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">Object to set value on.</param>
+        <param name="value">Value to set.</param>
+        <summary>Sets the value of the <see cref="P:System.Windows.Controls.ContextMenuService.IsEnabled" /> property of the specified object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -618,9 +650,9 @@
         <Parameter Name="value" Type="System.Windows.Controls.Primitives.PlacementMode" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">Object to set the value on.</param>
+        <param name="value">Value to set.</param>
+        <summary>Sets the value of the <see cref="P:System.Windows.Controls.ContextMenuService.Placement" /> property of the specified object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -641,9 +673,9 @@
         <Parameter Name="value" Type="System.Windows.Rect" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">Object to set the value on.</param>
+        <param name="value">Value to set.</param>
+        <summary>Sets the value of the <see cref="P:System.Windows.Controls.ContextMenuService.PlacementRectangle" /> property of the specified object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -664,9 +696,9 @@
         <Parameter Name="value" Type="System.Windows.UIElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">Object to set value on.</param>
+        <param name="value">Value to set.</param>
+        <summary>Sets the value of the <see cref="P:System.Windows.Controls.ContextMenuService.PlacementTarget" /> property of the specified object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -687,9 +719,9 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">Object to set value on.</param>
+        <param name="value">Value to set.</param>
+        <summary>Sets the value of the <see cref="P:System.Windows.Controls.ContextMenuService.ShowOnDisabled" /> property of the specified object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -710,9 +742,9 @@
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">Object to set value on.</param>
+        <param name="value">Value to set.</param>
+        <summary>Sets the value of the <see cref="P:System.Windows.Controls.ContextMenuService.VerticalOffset" /> property of the specified object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -729,7 +761,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.ContextMenuService.ShowOnDisabled" /> attached property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -746,7 +778,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.ContextMenuService.VerticalOffset" /> attached property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

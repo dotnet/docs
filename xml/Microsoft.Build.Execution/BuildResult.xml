@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the current result set for all of the targets that have produced results for a particular configuration.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates the build result set.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,9 +47,9 @@
         <Parameter Name="result" Type="Microsoft.Build.Execution.TargetResult" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="target">The target whose results are to be added.</param>
+        <param name="result">The results for the target.</param>
+        <summary>Adds the results for the specified target to this build result set.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,8 +71,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a flag indicating whether a circular dependency was detected.</summary>
+        <value>Returns true if a circular dependency was detected; false otherwise.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,8 +94,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the configuration ID for this build result set.</summary>
+        <value>Returns the configuration ID for this build result set.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,8 +120,8 @@
         <ReturnType>System.Exception</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the exception generated for this build result set.</summary>
+        <value>Returns the exception generated for this build result set. Returns false if no exception occurred.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,8 +143,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the build request id for this build result set.</summary>
+        <value>Returns the build request id for this build result set.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -164,9 +164,9 @@
         <Parameter Name="target" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The target whose results are retrieved.</param>
+        <summary>Determines if there are any results for the given target.</summary>
+        <returns>Returns true if results exist; false otherwise.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -191,10 +191,17 @@
         <Parameter Name="target" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="target">The indexed target.</param>
+        <summary>Gets an indexer which can be used to get the build result for the given target.</summary>
+        <value>The build result for the indexed target.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Throws a `KeyNotFoundException` if the given target doesn't exist in this build result.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MergeResults">
@@ -213,8 +220,8 @@
         <Parameter Name="results" Type="Microsoft.Build.Execution.BuildResult" />
       </Parameters>
       <Docs>
-        <param name="results">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="results">The results to merge.</param>
+        <summary>Merges the given results with this build result set.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -236,8 +243,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the build request ID of the originating node.</summary>
+        <value>Returns the build request ID of the originating node.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -254,8 +261,8 @@
         <ReturnType>Microsoft.Build.Execution.BuildResultCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the overall result for this build.</summary>
+        <value>Returns the overall result for this build.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -277,8 +284,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the global build request ID which issued the request leading to this build result set.</summary>
+        <value>Returns the global build request ID which issued the request leading to this build result set.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -295,9 +302,16 @@
         <ReturnType>Microsoft.Build.Execution.ProjectInstance</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets <see cref="T:Microsoft.Build.Execution.ProjectInstance" /> state after the build.</summary>
+        <value>Returns the <see langword="ProjectInstance" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This may be a dummy object and should not be used except to retrieve <xref:Microsoft.Build.Execution.ProjectInstance.Properties%2A>, <xref:Microsoft.Build.Execution.ProjectInstance.GlobalProperties%2A> and <xref:Microsoft.Build.Execution.ProjectInstance.Items%2A>. Other operations are not supported.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ResultsByTarget">
@@ -318,8 +332,8 @@
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,Microsoft.Build.Execution.TargetResult&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an enumerator over all target results in this build result set.</summary>
+        <value>Returns an enumerator over all target results in this build result set.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -341,8 +355,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the build submission which this build result set is associated with.</summary>
+        <value>Returns the build submission which this build result set is associated with.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

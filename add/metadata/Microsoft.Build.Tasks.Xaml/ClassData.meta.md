@@ -1,69 +1,97 @@
 ---
 uid: Microsoft.Build.Tasks.Xaml.ClassData
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.ClassData.Properties
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.ClassData.FileName
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.ClassData.EmbeddedResourceXaml
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.ClassData.IsPublic
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.ClassData.Attributes
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.ClassData.BaseType
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.ClassData.Name
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.ClassData.CodeSnippets
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.ClassData.Namespace
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.ClassData.EmbeddedResourceFileName
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.ClassData.HelperClassFullName
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.ClassData.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.ClassData.NamedObjects
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains a list of the schema names that the <see cref="P:System.DirectoryServices.DirectoryEntries.SchemaFilter" /> property of a <see cref="T:System.DirectoryServices.DirectoryEntries" /> object can use.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,9 +35,9 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The schema name to add to this collection.</param>
+        <summary>Appends a specified schema name to this collection.</summary>
+        <returns>The zero-based index of the specified property value. If the object is not found, the return value is -1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,8 +57,8 @@
         <Parameter Name="value" Type="System.DirectoryServices.SchemaNameCollection" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">A <see cref="T:System.DirectoryServices.SchemaNameCollection" /> that contains the schema names to add.</param>
+        <summary>Appends a set of specified schema names to this collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,8 +78,8 @@
         <Parameter Name="value" Type="System.String[]" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">An array of type <see cref="T:System.String" /> that contains the schema names to add.</param>
+        <summary>Appends a set of specified schema names to this collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,7 +97,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes all objects from this collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,9 +117,9 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The schema name to search for.</param>
+        <summary>Determines whether this collection contains a specified schema name.</summary>
+        <returns>The return value is <see langword="true" /> if the specified property belongs to this collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,9 +140,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="stringArray">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="stringArray">An array of type <see cref="T:System.String" /> that receives this collection's schema names.</param>
+        <param name="index">The zero-based array index at which to begin copying the schema names.</param>
+        <summary>Copies the schema names from this collection to an array, starting at a particular index of the array.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -159,8 +159,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.SchemaNameCollection.Count" /> property gets the number of objects in this collection.</summary>
+        <value>The number of objects in this collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -178,8 +178,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an enumerator that you can use to iterate through this collection.</summary>
+        <returns>An enumerator that you can used to iterate through this collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -199,9 +199,9 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The schema name to search for.</param>
+        <summary>Determines the index of a specified schema name in this collection.</summary>
+        <returns>The zero-based index of the specified schema name, or -1 if the schema name was not found in the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -222,10 +222,17 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index into the collection at which to insert the schema name.</param>
+        <param name="value">The schema name to insert into this collection.</param>
+        <summary>Inserts a schema name into this collection at a specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the `index` parameter equals the number of items in the collection, this method appends the value to the end of the collection.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -244,10 +251,19 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index into the collection.</param>
+        <summary>Gets or sets the object that exists at a specified index.</summary>
+        <value>The object that exists at the specified index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In C#, this property is the indexer for the <xref:System.DirectoryServices.SchemaNameCollection> class.  
+  
+ In JScript, you can use the default indexed properties defined by a type, but you cannot explicitly define your own. However, specifying the expando attribute on a class automatically provides a default indexed property whose type is Object and whose index type is <xref:System.String>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -266,8 +282,8 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The schema name to remove.</param>
+        <summary>Removes a specified schema name from this collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -287,9 +303,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The zero-based index of the schema name to remove.</param>
+        <summary>Removes the schema name that is at a specified index from this collection.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.IndexOutOfRangeException">The zero-based index is either less than zero or equal to the size of the collection.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -309,10 +326,21 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the elements copied from <see cref="T:System.Collections.ICollection" />. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
+        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <summary>Copies the elements of the <see cref="T:System.Collections.ICollection" /> to an <see cref="T:System.Array" />, starting at a particular <see cref="T:System.Array" /> index.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than zero.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="array" /> is multidimensional.  
+  
+ -or-  
+  
+ The number of elements in the source <see cref="T:System.Collections.ICollection" /> is greater than the available space from <paramref name="index" /> to the end of the destination <paramref name="array" />.</exception>
+        <exception cref="T:System.InvalidCastException">The type of the source <see cref="T:System.Collections.ICollection" /> cannot be cast automatically to the type of the destination <paramref name="array" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -328,9 +356,44 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether access to the <see cref="T:System.Collections.ICollection" /> is synchronized (thread safe).</summary>
+        <value>
+          <see langword="true" /> if access to the <see cref="T:System.Collections.ICollection" /> is synchronized (thread safe); otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Collections.ICollection.SyncRoot%2A> returns an object, which can be used to synchronize access to the <xref:System.Collections.ICollection>.  
+  
+ Most collection classes in the <xref:System.Collections?displayProperty=fullName> namespace also implement a Synchronized method, which provides a synchronized wrapper around the underlying collection.  
+  
+ Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
+  
+ [Visual Basic, C#]  
+  
+ The following example shows how to lock the collection using the <xref:System.Collections.ICollection.SyncRoot%2A> during the entire enumeration:  
+  
+```csharp  
+ICollection myCollection = new ICollection();  
+  lock(myCollection.SyncRoot) {  
+  foreach (Object item in myCollection) {  
+  // Insert your code here.  
+  }  
+ }  
+```  
+  
+```vb  
+Dim myCollection As New ICollection()  
+ Dim item As Object  
+ SyncLock myCollection.SyncRoot  
+  For Each item In myCollection  
+  ' Insert your code here.  
+  Next item  
+ End SyncLock  
+```  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.SyncRoot">
@@ -346,9 +409,59 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets an object that can be used to synchronize access to the <see cref="T:System.Collections.ICollection" />.</summary>
+        <value>An object that can be used to synchronize access to the <see cref="T:System.Collections.ICollection" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For collections with an underlying store is not publicly available, the expected implementation is to return the current instance. Note that the pointer to the current instance might not be sufficient for collections that wrap other collections; those should return the underlying collection's `SyncRoot` property.  
+  
+ Most collection classes in the <xref:System.Collections?displayProperty=fullName> namespace also implement a `Synchronized` method, which provides a synchronized wrapper around the underlying collection. However, derived classes can provide their own synchronized version of the collection using the <xref:System.Collections.ICollection.SyncRoot%2A> property. The synchronizing code must perform operations on the <xref:System.Collections.ICollection.SyncRoot%2A> of the collection, not directly on the collection. This ensures proper operation of collections that are derived from other objects. Specifically, it maintains proper synchronization with other threads that might be simultaneously modifying the collection instance.  
+  
+ In the absence of a `Synchronized` method on a collection, the expected usage for <xref:System.Collections.ICollection.SyncRoot%2A> looks like this:  
+  
+```csharp  
+ICollection MyCollection =...  
+ lock(MyCollection.SyncRoot) {  
+  // Some operation on the collection, which is now thread safe.  
+ }  
+```  
+  
+```vb  
+Dim myCollection as New ICollection()  
+ SyncLock myCollection.SyncRoot  
+  ' Some operation on the collection, which is now thread safe.  
+ End SyncLock  
+```  
+  
+ Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
+  
+ [Visual Basic, C#]  
+  
+ The following example shows how to lock the collection using the <xref:System.Collections.ICollection.SyncRoot%2A> during the entire enumeration:  
+  
+```csharp  
+ICollection myCollection = new ICollection();  
+ lock(myCollection.SyncRoot) {  
+  foreach (Object item in myCollection) {  
+  // Insert your code here.  
+  }  
+ }  
+```  
+  
+```vb  
+Dim myCollection As New ICollection()  
+ Dim item As Object  
+ SyncLock myCollection.SyncRoot  
+  For Each item In myCollection  
+  ' Insert your code here.  
+  Next item  
+ End SyncLock  
+```  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Add">
@@ -367,9 +480,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The item to add to the list.</param>
+        <summary>Adds an item to the list.</summary>
+        <returns>The position into which the new item was inserted.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -389,10 +502,18 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to locate in the list.</param>
+        <summary>Determines whether the list contains a specified value.</summary>
+        <returns>
+          <see langword="true" /> if the value is found in the list, otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Starting with the .NET Framework 2.0, this method uses the Equals and CompareTo methods of the objects in the collection to determine whether item exists. In the earlier versions of the .NET Framework, this determination was made by using the Equals and CompareTo methods of the item parameter on the objects in the collection.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IndexOf">
@@ -411,10 +532,17 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The item to locate in the list.</param>
+        <summary>Determines the index of a specified item in the list.</summary>
+        <returns>The index of <paramref name="value" /> if found in the list; otherwise, -1.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Starting with the .NET Framework 2.0, this method uses the Equals and CompareTo methods of the objects in the collection to determine whether item exists. In the earlier versions of the .NET Framework, this determination was made by using the Equals and CompareTo methods of the item parameter on the objects in the collection.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Insert">
@@ -434,10 +562,19 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index at which value should be inserted.</param>
+        <param name="value">The item to insert into the list.</param>
+        <summary>Inserts an item to the list at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `index` equals the number of items in the list, then *value* is appended to the end.  
+  
+ In collections of contiguous elements, such as lists, the elements that follow the removed element move up to occupy the vacated spot. If the collection is indexed, the indexes of the elements that are moved are also updated.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsFixedSize">
@@ -453,9 +590,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether the <see cref="T:System.Collections.IList" /> has a fixed size.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Collections.IList" /> has a fixed size; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A collection with a fixed size does not allow the addition or removal of elements after the collection is created, but it allows the modification of existing elements.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsReadOnly">
@@ -471,9 +616,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether the <see cref="T:System.Collections.IList" /> is read-only.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Collections.IList" /> is read-only; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A collection that is read-only does not allow the addition, removal, or modification of elements after the collection is created.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Item">
@@ -492,10 +645,20 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index of the element to get or set.</param>
+        <summary>Gets or sets the element at the specified index.</summary>
+        <value>The element at the specified index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property provides the ability to access a specific element in the collection by using the following syntax: `myCollection[index]`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is not a valid index in the <see cref="T:System.Collections.IList" />.</exception>
+        <exception cref="T:System.NotSupportedException">The property is set and the <see cref="T:System.Collections.IList" /> is read-only.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Remove">
@@ -514,9 +677,16 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="value">The <c>value</c> to remove from the list.</param>
+        <summary>Removes the first occurrence of a specific <paramref name="value" /> from the list.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In collections of contiguous elements, such as lists, the elements that follow the removed element move up to occupy the vacated spot. If the collection is indexed, the indexes of the elements that are moved are also updated.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

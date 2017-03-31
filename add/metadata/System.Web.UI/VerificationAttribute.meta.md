@@ -1,69 +1,89 @@
 ---
 uid: System.Web.UI.VerificationAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.VerificationAttribute.ConditionalValue
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.VerificationAttribute.GuidelineUrl
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.VerificationAttribute.#ctor(System.String,System.String,System.Web.UI.VerificationReportLevel,System.Int32,System.String,System.Web.UI.VerificationRule,System.String,System.Web.UI.VerificationConditionalOperator,System.String,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.VerificationAttribute.#ctor(System.String,System.String,System.Web.UI.VerificationReportLevel,System.Int32,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.VerificationAttribute.#ctor(System.String,System.String,System.Web.UI.VerificationReportLevel,System.Int32,System.String,System.Web.UI.VerificationRule,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.VerificationAttribute.VerificationConditionalOperator
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.VerificationAttribute.ConditionalProperty
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.VerificationAttribute.#ctor
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.VerificationAttribute.Priority
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.VerificationAttribute.Checkpoint
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.VerificationAttribute.Guideline
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.VerificationAttribute.Message
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.VerificationAttribute.VerificationReportLevel
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.VerificationAttribute.VerificationRule
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

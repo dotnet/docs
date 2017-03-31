@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Resolves an SDKReference to a full path on disk</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of ResolveSDKReference.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,8 +44,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Execute the task.</summary>
+        <returns>Returns <see cref="T:System.Boolean" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,8 +67,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The list of installed SDKs the location of the SDK, the SDKName metadata is the SDKName.</summary>
+        <value>Returns <see cref="T:Microsoft.Build.Framework.ITaskItem" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,8 +85,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Specifies whether problems resolving SDKs are logged as warnings or errors.  
+  
+ If the resolution problem is logged as an error the build will fail.  
+  
+ If the resolution problem is logged as a warning we will warn and continue.</summary>
+        <value>Returns <see cref="T:System.Boolean" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,8 +107,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The value of the Prefer32Bit flag used in the build</summary>
+        <value>Returns the flag.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,8 +125,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>References may be passed in so that the SDKNames can be resolved. Once resolved, the sdkroot paths can be appended to the references so RAR can find the assembly correctly in the sdk location.</summary>
+        <value>Returns <see cref="T:Microsoft.Build.Framework.ITaskItem" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,8 +148,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Resolved SDK References</summary>
+        <value>Returns <see cref="T:Microsoft.Build.Framework.ITaskItem" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,8 +171,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Set of SDK References to resolve to paths on disk</summary>
+        <value>Returns <see cref="T:Microsoft.Build.Framework.ITaskItem" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -185,8 +189,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Architecture of the SDKs we are targeting</summary>
+        <value>Returns <see cref="T:System.String" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -203,8 +207,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Configuration for SDK's which are resolved</summary>
+        <value>Returns <see cref="T:System.String" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

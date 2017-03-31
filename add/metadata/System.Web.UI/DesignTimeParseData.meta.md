@@ -1,49 +1,65 @@
 ---
 uid: System.Web.UI.DesignTimeParseData
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.DesignTimeParseData.Filter
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.DesignTimeParseData.#ctor(System.ComponentModel.Design.IDesignerHost,System.String,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.DesignTimeParseData.UserControlRegisterEntries
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.DesignTimeParseData.#ctor(System.ComponentModel.Design.IDesignerHost,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.DesignTimeParseData.ShouldApplyTheme
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.DesignTimeParseData.DocumentUrl
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.DesignTimeParseData.DesignerHost
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.DesignTimeParseData.#ctor
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.DesignTimeParseData.ParseText
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.DesignTimeParseData.DataBindingHandler
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -1,9 +1,11 @@
 ---
 uid: System.Web.UI.ICodeBlockTypeAccessor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ICodeBlockTypeAccessor.BlockType
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

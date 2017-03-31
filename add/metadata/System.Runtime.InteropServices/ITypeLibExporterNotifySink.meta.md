@@ -1,14 +1,20 @@
 ---
 uid: System.Runtime.InteropServices.ITypeLibExporterNotifySink
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.ITypeLibExporterNotifySink.ResolveRef(System.Reflection.Assembly)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.ITypeLibExporterNotifySink.ReportEvent(System.Runtime.InteropServices.ExporterEventKind,System.Int32,System.String)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

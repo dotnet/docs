@@ -1,19 +1,27 @@
 ---
 uid: System.Runtime.InteropServices.PrimaryInteropAssemblyAttribute
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.PrimaryInteropAssemblyAttribute.MinorVersion
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.PrimaryInteropAssemblyAttribute.#ctor(System.Int32,System.Int32)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.PrimaryInteropAssemblyAttribute.MajorVersion
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

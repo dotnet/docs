@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Used in the RST to indicate the desired algorithm with which to compute a key based on the combined entropies from both the token requestor and the token issuer.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,7 +28,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The URI for the P-SHA1 hash algorithm; http://schemas.microsoft.com/idfx/computedkeyalgorithm/psha1.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,134 +1,237 @@
 ---
 uid: System.Diagnostics.PerformanceCounterCategory
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceCounterCategory.GetInstanceNames
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceCounterCategory.InstanceExists(System.String)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceCounterCategory.Create(System.String,System.String,System.Diagnostics.PerformanceCounterCategoryType,System.String,System.String)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceCounterCategory.Exists(System.String)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceCounterCategory.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceCounterCategory.GetCategories
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.PerformanceCounterCategory.GetCategories
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceCounterCategory.MachineName
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceCounterCategory.CounterExists(System.String)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceCounterCategory.GetCategories(System.String)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceCounterCategory.GetCounters(System.String)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceCounterCategory.ReadCategory
-internalonly: False
----
-
----
-uid: System.Diagnostics.PerformanceCounterCategory.CounterExists(System.String,System.String)
-internalonly: False
----
-
----
-uid: System.Diagnostics.PerformanceCounterCategory.Delete(System.String)
-internalonly: False
----
-
----
-uid: System.Diagnostics.PerformanceCounterCategory.InstanceExists(System.String,System.String,System.String)
-internalonly: False
----
-
----
-uid: System.Diagnostics.PerformanceCounterCategory.#ctor(System.String)
-internalonly: False
----
-
----
-uid: System.Diagnostics.PerformanceCounterCategory.InstanceExists(System.String,System.String)
-internalonly: False
----
-
----
-uid: System.Diagnostics.PerformanceCounterCategory.Exists(System.String,System.String)
-internalonly: False
----
-
----
-uid: System.Diagnostics.PerformanceCounterCategory.Create(System.String,System.String,System.Diagnostics.CounterCreationDataCollection)
-internalonly: False
----
-
----
-uid: System.Diagnostics.PerformanceCounterCategory.#ctor(System.String,System.String)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceCounterCategory.GetCounters
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.PerformanceCounterCategory.CounterExists(System.String,System.String)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.PerformanceCounterCategory.Delete(System.String)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.PerformanceCounterCategory.InstanceExists(System.String,System.String,System.String)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.PerformanceCounterCategory.#ctor(System.String)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.PerformanceCounterCategory.InstanceExists(System.String,System.String)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.PerformanceCounterCategory.Exists(System.String,System.String)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.PerformanceCounterCategory.Create(System.String,System.String,System.Diagnostics.CounterCreationDataCollection)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.PerformanceCounterCategory.#ctor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.PerformanceCounterCategory.#ctor(System.String,System.String)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.PerformanceCounterCategory.GetCounters
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceCounterCategory.CategoryType
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceCounterCategory.CategoryName
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceCounterCategory.CounterExists(System.String,System.String,System.String)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.PerformanceCounterCategory.Create
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceCounterCategory.Create(System.String,System.String,System.Diagnostics.PerformanceCounterCategoryType,System.Diagnostics.CounterCreationDataCollection)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.PerformanceCounterCategory.CounterExists
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.PerformanceCounterCategory.Exists
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceCounterCategory.CategoryHelp
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.PerformanceCounterCategory.InstanceExists
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceCounterCategory.Create(System.String,System.String,System.String,System.String)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

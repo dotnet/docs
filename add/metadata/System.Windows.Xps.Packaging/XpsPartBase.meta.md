@@ -1,9 +1,9 @@
 ---
 uid: System.Windows.Xps.Packaging.XpsPartBase
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Packaging.XpsPartBase.Uri
-internalonly: False
+manager: "leannef"
 ---

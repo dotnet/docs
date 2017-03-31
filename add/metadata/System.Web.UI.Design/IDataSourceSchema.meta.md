@@ -1,9 +1,11 @@
 ---
 uid: System.Web.UI.Design.IDataSourceSchema
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.IDataSourceSchema.GetViews
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

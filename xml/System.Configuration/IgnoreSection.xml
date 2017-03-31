@@ -11,8 +11,21 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a wrapper type definition for configuration sections that are not handled by the <see cref="N:System.Configuration" /> types.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The configuration system completely parses configuration files to collect configuration information and throws exceptions when it encounters configuration sections that do not have a corresponding entry in the `configSections` section.  
+  
+ For those sections not handled by the <xref:System.Configuration> types, the new wrapper type <xref:System.Configuration.IgnoreSection> is provided. This is to prevent configuration-file parsing exceptions.  
+  
+ For legacy purposes the <xref:System.Configuration.IgnoreSectionHandler> is also provided.  
+  
+ See the `configSections` element of the Machine.config configuration file for examples of sections that specify <xref:System.Configuration.IgnoreSection> as the handling type.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +39,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.IgnoreSection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

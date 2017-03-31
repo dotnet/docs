@@ -1,89 +1,125 @@
 ---
 uid: System.Activities.Presentation.WorkflowItemPresenter
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowItemPresenter.AllowedItemTypeProperty
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowItemPresenter.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowItemPresenter.System#Activities#Presentation#ICompositeView#CanPasteItems(System.Collections.Generic.List{System.Object})
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowItemPresenter.System#Activities#Presentation#ICompositeView#OnItemsDelete(System.Collections.Generic.List{System.Activities.Presentation.Model.ModelItem})
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowItemPresenter.Item
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowItemPresenter.ItemProperty
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowItemPresenter.IsDefaultContainerProperty
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowItemPresenter.HintTextProperty
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowItemPresenter.System#Activities#Presentation#ICompositeView#OnItemsCopied(System.Collections.Generic.List{System.Activities.Presentation.Model.ModelItem})
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowItemPresenter.System#Activities#Presentation#ICompositeView#OnItemMoved(System.Activities.Presentation.Model.ModelItem)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowItemPresenter.System#Activities#Presentation#ICompositeView#OnItemsCut(System.Collections.Generic.List{System.Activities.Presentation.Model.ModelItem})
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowItemPresenter.AllowedItemType
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowItemPresenter.System#Activities#Presentation#ICompositeView#OnItemsPasted(System.Collections.Generic.List{System.Object},System.Collections.Generic.List{System.Object},System.Windows.Point,System.Activities.Presentation.WorkflowViewElement)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowItemPresenter.DroppingTypeResolvingOptionsProperty
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowItemPresenter.DroppingTypeResolvingOptions
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowItemPresenter.IsDefaultContainer
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowItemPresenter.HintText
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

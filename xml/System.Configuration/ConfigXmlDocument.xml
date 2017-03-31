@@ -15,8 +15,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Wraps the corresponding <see cref="T:System.Xml.XmlDocument" /> type and also carries the necessary information for reporting file-name and line numbers.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ConfigXmlDocument> wraps the corresponding <xref:System.Xml.XmlDocument> type to carry the necessary information for reporting file-name and line numbers. This information is necessary when the system issues configuration errors.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +37,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigXmlDocument" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,11 +59,11 @@
         <Parameter Name="namespaceUri" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="prefix">To be added.</param>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="prefix">The prefix definition.</param>
+        <param name="localName">The name that is used locally.</param>
+        <param name="namespaceUri">The URL that is assigned to the namespace.</param>
+        <summary>Creates a configuration element attribute.</summary>
+        <returns>The <see cref="P:System.Xml.Serialization.XmlAttributes.XmlAttribute" /> attribute.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,9 +83,9 @@
         <Parameter Name="data" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="data">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="data">The data to use.</param>
+        <summary>Creates an XML CData section.</summary>
+        <returns>The <see cref="T:System.Xml.XmlCDataSection" /> value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,8 +106,8 @@
       </Parameters>
       <Docs>
         <param name="comment">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Create an XML comment.</summary>
+        <returns>The <see cref="T:System.Xml.XmlComment" /> value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,11 +129,11 @@
         <Parameter Name="namespaceUri" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="prefix">To be added.</param>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="prefix">The prefix definition.</param>
+        <param name="localName">The name used locally.</param>
+        <param name="namespaceUri">The namespace for the URL.</param>
+        <summary>Creates a configuration element.</summary>
+        <returns>The <see cref="T:System.Xml.XmlElement" /> value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,9 +153,9 @@
         <Parameter Name="data" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="data">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="data">The data to use.</param>
+        <summary>Creates white spaces.</summary>
+        <returns>The <see cref="T:System.Xml.XmlSignificantWhitespace" /> value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -168,9 +175,9 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="text">The text to use.</param>
+        <summary>Create a text node.</summary>
+        <returns>The <see cref="T:System.Xml.XmlText" /> value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -190,9 +197,9 @@
         <Parameter Name="data" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="data">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="data">The data to use.</param>
+        <summary>Creates white space.</summary>
+        <returns>The <see cref="T:System.Xml.XmlWhitespace" /> value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -209,8 +216,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the configuration file name.</summary>
+        <value>The configuration file name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -227,8 +234,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the current node line number.</summary>
+        <value>The line number for the current node.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -248,8 +255,8 @@
         <Parameter Name="filename" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="filename">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="filename">The name of the file.</param>
+        <summary>Loads the configuration file.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -270,9 +277,9 @@
         <Parameter Name="sourceReader" Type="System.Xml.XmlTextReader" />
       </Parameters>
       <Docs>
-        <param name="filename">To be added.</param>
-        <param name="sourceReader">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="filename">The name of the file.</param>
+        <param name="sourceReader">The source for the reader.</param>
+        <summary>Loads a single configuration element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -289,8 +296,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the configuration file name.</summary>
+        <value>The file name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -307,8 +314,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the configuration line number.</summary>
+        <value>The line number.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

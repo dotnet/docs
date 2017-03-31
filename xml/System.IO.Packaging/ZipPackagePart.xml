@@ -15,8 +15,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a part that is stored in a <see cref="T:System.IO.Packaging.ZipPackage" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.IO.Packaging.ZipPackagePart> provides the derived <xref:System.IO.Packaging.PackagePart> implementation for parts that are stored in a <xref:System.IO.Packaging.ZipPackage>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="GetStreamCore">

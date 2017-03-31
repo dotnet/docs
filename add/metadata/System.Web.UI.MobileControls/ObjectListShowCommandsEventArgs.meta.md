@@ -1,19 +1,27 @@
 ---
 uid: System.Web.UI.MobileControls.ObjectListShowCommandsEventArgs
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.ObjectListShowCommandsEventArgs.#ctor(System.Web.UI.MobileControls.ObjectListItem,System.Web.UI.MobileControls.ObjectListCommandCollection)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.ObjectListShowCommandsEventArgs.ListItem
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.ObjectListShowCommandsEventArgs.Commands
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies values for the lower region of the UTF-8 Unicode code charts, from U0000 to U0FFF.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Arabic code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="ArabicSupplement">
@@ -48,7 +48,7 @@
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Arabic Supplement code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="Armenian">
@@ -64,7 +64,7 @@
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Armenian code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="BasicLatin">
@@ -80,7 +80,7 @@
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Basic Latin code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="Bengali">
@@ -96,7 +96,7 @@
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Bengali code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="C1ControlsAndLatin1Supplement">
@@ -112,7 +112,7 @@
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The C1 Controls and Latin-1 Supplement code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="CombiningDiacriticalMarks">
@@ -128,7 +128,7 @@
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Combining Diacritical Marks code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="Cyrillic">
@@ -144,7 +144,7 @@
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Cyrillic code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="CyrillicSupplement">
@@ -160,7 +160,7 @@
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Cyrillic Supplement code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -176,7 +176,29 @@
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The code charts that are marked as safe on initialization.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Default enumeration member is a bitwise combination of the following <xref:System.Web.Security.AntiXss.LowerCodeCharts> enumeration members:  
+  
+-   BasicLatin  
+  
+-   C1ControlsAndLatin1Supplement  
+  
+-   LatinExtendedA  
+  
+-   LatinExtendedB  
+  
+-   IpaExtensions  
+  
+-   SpacingModifierLetters  
+  
+-   CombiningDiacriticalMarks  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Devanagari">
@@ -192,7 +214,7 @@
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Devanagari code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="GreekAndCoptic">
@@ -208,7 +230,7 @@
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Greek and Coptic code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="Gujarati">
@@ -224,7 +246,7 @@
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Gujarati code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="Gurmukhi">
@@ -240,7 +262,7 @@
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Gurmukhi code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="Hebrew">
@@ -256,7 +278,7 @@
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Hebrew code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="IpaExtensions">
@@ -272,7 +294,7 @@
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The IPA Extensions code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="Kannada">
@@ -288,7 +310,7 @@
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Kannada code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="Lao">
@@ -304,7 +326,7 @@
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Lao code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="LatinExtendedA">
@@ -320,7 +342,7 @@
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Latin Extended-A code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="LatinExtendedB">
@@ -336,7 +358,7 @@
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Latin Extended-B code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="Malayalam">
@@ -352,7 +374,7 @@
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Malayalam code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="Nko">
@@ -368,7 +390,7 @@
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The N'ko code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -384,7 +406,7 @@
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>None of the UTF-8 Unicode code charts from the lower region are marked as safe.</summary>
       </Docs>
     </Member>
     <Member MemberName="Oriya">
@@ -400,7 +422,7 @@
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Oriya code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="Samaritan">
@@ -416,7 +438,7 @@
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Samaritan code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="Sinhala">
@@ -432,7 +454,7 @@
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Sinhala code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="SpacingModifierLetters">
@@ -448,7 +470,7 @@
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Spacing Modifier Letters code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="Syriac">
@@ -464,7 +486,7 @@
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Syriac code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="Tamil">
@@ -480,7 +502,7 @@
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Tamil code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="Telugu">
@@ -496,7 +518,7 @@
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Telugu code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="Thaana">
@@ -512,7 +534,7 @@
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Thaana code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="Thai">
@@ -528,7 +550,7 @@
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Thai code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="Tibetan">
@@ -544,7 +566,7 @@
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Tibetan code table.</summary>
       </Docs>
     </Member>
   </Members>

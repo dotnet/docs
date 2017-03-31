@@ -1,29 +1,34 @@
 ---
 uid: System.Windows.Markup.NamespaceMapEntry
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.NamespaceMapEntry.#ctor
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.NamespaceMapEntry.#ctor(System.String,System.String,System.String)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.NamespaceMapEntry.AssemblyName
-internalonly: False
+manager: "martinek"
+---
+
+---
+uid: System.Windows.Markup.NamespaceMapEntry.#ctor
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.NamespaceMapEntry.ClrNamespace
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.NamespaceMapEntry.XmlNamespace
-internalonly: False
+manager: "martinek"
 ---

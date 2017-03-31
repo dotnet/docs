@@ -1,9 +1,13 @@
 ---
 uid: System.Activities.Core.Presentation.FinalState
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Core.Presentation.FinalState.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

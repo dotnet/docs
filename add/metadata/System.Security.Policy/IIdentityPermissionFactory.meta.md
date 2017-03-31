@@ -1,9 +1,13 @@
 ---
 uid: System.Security.Policy.IIdentityPermissionFactory
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Policy.IIdentityPermissionFactory.CreateIdentityPermission(System.Security.Policy.Evidence)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

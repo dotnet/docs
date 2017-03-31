@@ -1,34 +1,41 @@
 ---
 uid: System.Configuration.ConfigurationCollectionAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationCollectionAttribute.ItemType
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationCollectionAttribute.ClearItemsName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationCollectionAttribute.CollectionType
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationCollectionAttribute.#ctor(System.Type)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationCollectionAttribute.RemoveItemName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationCollectionAttribute.AddItemName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

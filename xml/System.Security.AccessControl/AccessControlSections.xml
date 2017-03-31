@@ -20,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies which sections of a security descriptor to save or load.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -42,7 +42,7 @@
         <ReturnType>System.Security.AccessControl.AccessControlSections</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The discretionary access control list (DACL).</summary>
       </Docs>
     </Member>
     <Member MemberName="All">
@@ -63,7 +63,7 @@
         <ReturnType>System.Security.AccessControl.AccessControlSections</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The entire security descriptor.</summary>
       </Docs>
     </Member>
     <Member MemberName="Audit">
@@ -84,7 +84,7 @@
         <ReturnType>System.Security.AccessControl.AccessControlSections</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The system access control list (SACL).</summary>
       </Docs>
     </Member>
     <Member MemberName="Group">
@@ -105,7 +105,7 @@
         <ReturnType>System.Security.AccessControl.AccessControlSections</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The primary group.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -126,7 +126,7 @@
         <ReturnType>System.Security.AccessControl.AccessControlSections</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No sections.</summary>
       </Docs>
     </Member>
     <Member MemberName="Owner">
@@ -147,7 +147,7 @@
         <ReturnType>System.Security.AccessControl.AccessControlSections</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The owner.</summary>
       </Docs>
     </Member>
   </Members>

@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains the data sent to a tracking service by the run-time tracking infrastructure when a workflow instance changes state.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,8 +33,8 @@
         <Parameter Name="record" Type="System.Activities.Tracking.WorkflowInstanceRecord" />
       </Parameters>
       <Docs>
-        <param name="record">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="record">The instance of the workflow instance record to use.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Tracking.WorkflowInstanceRecord" /> class from an existing <see cref="T:System.Activities.Tracking.WorkflowInstanceRecord" /> instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,10 +53,10 @@
         <Parameter Name="state" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="activityDefinitionId">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceId">The instance ID of the generating workflow instance.</param>
+        <param name="activityDefinitionId">The display name of the root activity of the workflow.</param>
+        <param name="state">The current state of the workflow when the record is generated.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Tracking.WorkflowInstanceRecord" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,11 +76,11 @@
         <Parameter Name="state" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="recordNumber">To be added.</param>
-        <param name="activityDefinitionId">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceId">The instance ID of the generating workflow instance.</param>
+        <param name="recordNumber">A sequence that defines the order in which tracking events are generated.</param>
+        <param name="activityDefinitionId">The display name of the root activity of the workflow.</param>
+        <param name="state">The current state of the workflow when the record is generated.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Tracking.WorkflowInstanceRecord" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,11 +100,11 @@
         <Parameter Name="workflowDefinitionIdentity" Type="System.Activities.WorkflowIdentity" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="activityDefinitionId">To be added.</param>
-        <param name="state">To be added.</param>
-        <param name="workflowDefinitionIdentity">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceId">The instance ID of the generating workflow instance.</param>
+        <param name="activityDefinitionId">The display name of the root activity of the workflow.</param>
+        <param name="state">The current state of the workflow when the record is generated.</param>
+        <param name="workflowDefinitionIdentity">The information about the workflow identity.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Tracking.WorkflowInstanceRecord" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,12 +125,12 @@
         <Parameter Name="workflowDefinitionIdentity" Type="System.Activities.WorkflowIdentity" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="recordNumber">To be added.</param>
-        <param name="activityDefinitionId">To be added.</param>
-        <param name="state">To be added.</param>
-        <param name="workflowDefinitionIdentity">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceId">The instance ID of the generating workflow instance.</param>
+        <param name="recordNumber">A sequence that defines the order in which tracking events are generated.</param>
+        <param name="activityDefinitionId">The display name of the root activity of the workflow.</param>
+        <param name="state">The current state of the workflow when the record is generated.</param>
+        <param name="workflowDefinitionIdentity">The information about the workflow identity.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Tracking.WorkflowInstanceRecord" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -147,8 +147,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the display name of the root activity of the workflow that generated this record.</summary>
+        <value>The activity definition ID.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -166,8 +166,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a deep copy of <see cref="T:System.Activities.Tracking.WorkflowInstanceRecord" />.</summary>
+        <returns>A deep copy of the <see cref="T:System.Activities.Tracking.WorkflowInstanceRecord" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,8 +184,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The current state of the workflow when the record is generated.</summary>
+        <value>The workflow state.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -203,8 +203,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a string that contains the tracking record data.</summary>
+        <returns>The tracking data.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -221,8 +221,8 @@
         <ReturnType>System.Activities.WorkflowIdentity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the information about the workflow identity.</summary>
+        <value>The information about the workflow identity.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

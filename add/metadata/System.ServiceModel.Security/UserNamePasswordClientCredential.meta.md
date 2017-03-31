@@ -1,14 +1,20 @@
 ---
 uid: System.ServiceModel.Security.UserNamePasswordClientCredential
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.UserNamePasswordClientCredential.UserName
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.UserNamePasswordClientCredential.Password
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

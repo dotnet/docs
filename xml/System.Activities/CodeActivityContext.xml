@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Extends <see cref="T:System.Activities.ActivityContext" /> and provides additional functionality for <see cref="T:System.Activities.CodeActivity" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,9 +36,9 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="THandle">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="THandle">The type of execution property.</typeparam>
+        <summary>Gets the execution property of the specified type.</summary>
+        <returns>The execution property.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,8 +58,8 @@
         <Parameter Name="record" Type="System.Activities.Tracking.CustomTrackingRecord" />
       </Parameters>
       <Docs>
-        <param name="record">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="record">The data to be tracked.</param>
+        <summary>Sends the specified custom tracking record to any registered tracking providers.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,49 +1,73 @@
 ---
 uid: System.Windows.Media.Media3D.GeneralTransform3D
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Media3D.GeneralTransform3D.TryTransform(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Point3D@)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Media3D.GeneralTransform3D.Transform(System.Windows.Media.Media3D.Point3D)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Media3D.GeneralTransform3D.System#IFormattable#ToString(System.String,System.IFormatProvider)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Media3D.GeneralTransform3D.CloneCurrentValue
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Media3D.GeneralTransform3D.Inverse
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Media3D.GeneralTransform3D.TransformBounds(System.Windows.Media.Media3D.Rect3D)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Media3D.GeneralTransform3D.ToString(System.IFormatProvider)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Media3D.GeneralTransform3D.ToString
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Media3D.GeneralTransform3D.Clone
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.Media3D.GeneralTransform3D.ToString
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

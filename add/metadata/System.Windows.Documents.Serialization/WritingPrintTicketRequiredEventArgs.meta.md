@@ -1,24 +1,33 @@
 ---
 uid: System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.CurrentPrintTicket
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.#ctor(System.Windows.Xps.Serialization.PrintTicketLevel,System.Int32)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.CurrentPrintTicketLevel
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.Sequence
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

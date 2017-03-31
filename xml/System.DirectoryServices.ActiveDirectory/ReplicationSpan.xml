@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Determines the span of a replication connection.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.ReplicationSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The source and destination servers are in different sites.</summary>
       </Docs>
     </Member>
     <Member MemberName="IntraSite">
@@ -43,7 +43,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.ReplicationSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The source and destination servers are in the same site.</summary>
       </Docs>
     </Member>
   </Members>

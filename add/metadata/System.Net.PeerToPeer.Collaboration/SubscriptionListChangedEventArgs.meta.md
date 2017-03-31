@@ -1,19 +1,23 @@
 ---
 uid: System.Net.PeerToPeer.Collaboration.SubscriptionListChangedEventArgs
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.SubscriptionListChangedEventArgs.PeerContact
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.SubscriptionListChangedEventArgs.PeerEndPoint
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.SubscriptionListChangedEventArgs.PeerChangeType
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

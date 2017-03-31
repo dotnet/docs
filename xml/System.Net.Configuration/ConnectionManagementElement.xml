@@ -11,8 +11,19 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the maximum number of connections to a remote computer. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class corresponds to the [\&lt;add\&gt; Element for connectionManagement (Network Settings)](../Topic/%3Cadd%3E%20Element%20for%20connectionManagement%20\(Network%20Settings\).md) configuration element.  
+  
+ This class is used to specify the maximum number of simultaneous connections to a remote computer.  
+  
+ This class provides programmatic access to information that can be stored in configuration files.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +37,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Configuration.ConnectionManagementElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,10 +55,17 @@
         <Parameter Name="maxConnection" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="address">To be added.</param>
-        <param name="maxConnection">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="address">A string that identifies the address of a remote computer.</param>
+        <param name="maxConnection">An integer that identifies the maximum number of connections allowed to <c>address</c> from the local computer.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Configuration.ConnectionManagementElement" /> class with the specified address and connection limit information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor sets the <xref:System.Net.Configuration.ConnectionManagementElement.Address%2A> property to `address` and the <xref:System.Net.Configuration.ConnectionManagementElement.MaxConnection%2A> property to `maxConnection`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Address">
@@ -68,9 +86,18 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the address for remote computers.</summary>
+        <value>A string that contains a regular expression describing an IP address or DNS name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can set this property using an asterisk (*) to set the default number of connections for unspecified computers.  
+  
+ This property identifies one or more remote computers and the <xref:System.Net.Configuration.ConnectionManagementElement.MaxConnection%2A> property specifies how many simultaneous connections are allowed between the local computer and the remote computers.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxConnection">
@@ -91,9 +118,18 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the maximum number of connections that can be made to a remote computer.</summary>
+        <value>An integer that specifies the maximum number of connections.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property specifies how many simultaneous connections are allowed between the local computer and the remote computer. The remote computer is specified using the <xref:System.Net.Configuration.ConnectionManagementElement.Address%2A> property.  
+  
+ The <xref:System.Net.Configuration.ConnectionManagementElement.MaxConnection%2A> property is per <xref:System.Net.WebRequest.ConnectionGroupName%2A?displayProperty=fullName>. If an application is not changing <xref:System.Net.WebRequest.ConnectionGroupName%2A?displayProperty=fullName> from the default, then the <xref:System.Net.Configuration.ConnectionManagementElement.MaxConnection%2A> property applies to the entire application domain. If only a single application domain is running in your application, then the <xref:System.Net.Configuration.ConnectionManagementElement.MaxConnection%2A> property setting is application-wide.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">

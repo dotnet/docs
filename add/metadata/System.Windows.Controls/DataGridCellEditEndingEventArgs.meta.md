@@ -1,34 +1,45 @@
 ---
 uid: System.Windows.Controls.DataGridCellEditEndingEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.DataGridCellEditEndingEventArgs.EditingElement
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.DataGridCellEditEndingEventArgs.Column
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.DataGridCellEditEndingEventArgs.Row
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.DataGridCellEditEndingEventArgs.Cancel
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.DataGridCellEditEndingEventArgs.#ctor(System.Windows.Controls.DataGridColumn,System.Windows.Controls.DataGridRow,System.Windows.FrameworkElement,System.Windows.Controls.DataGridEditAction)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.DataGridCellEditEndingEventArgs.EditAction
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

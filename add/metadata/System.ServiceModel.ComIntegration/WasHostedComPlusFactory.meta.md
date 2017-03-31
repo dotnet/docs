@@ -1,14 +1,20 @@
 ---
 uid: System.ServiceModel.ComIntegration.WasHostedComPlusFactory
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.ComIntegration.WasHostedComPlusFactory.CreateServiceHost(System.String,System.Uri[])
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.ComIntegration.WasHostedComPlusFactory.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

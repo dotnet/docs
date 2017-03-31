@@ -11,8 +11,21 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains classes that provide <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" /> objects for the parts of a text box. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox> class provides a foundation in which the following classes are defined:  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox.Caret>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox.TextEdit>  
+  
+ Each of these classes provides one or more properties that return a <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> for each state of the text box element specified by the class name.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members />
 </Type>

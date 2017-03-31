@@ -1,14 +1,14 @@
 ---
 uid: System.Runtime.Serialization.Formatters.IFieldInfo
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.Formatters.IFieldInfo.FieldNames
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.Formatters.IFieldInfo.FieldTypes
-internalonly: False
+manager: "ghogen"
 ---

@@ -25,8 +25,26 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies characteristics of the X.500 distinguished name.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used with the <xref:System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags> class to indicate special characters contained in the distinguished name.  
+  
+ Several values are mutually exclusive in this enumeration; use only one of these values to define the special characteristics of an X.500 distinguished name. For example, specify only one of the UseCommas, UseNewLines , and UseSemicolons values. You would also specify either UseT61Encoding or UseUTF8Encoding .  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags> enumeration.  
+  
+ [!code-cpp[Cryptography.X509Certificates.X500DistinguishedName#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X500DistinguishedName/CPP/x500.cpp#1)]
+ [!code-csharp[Cryptography.X509Certificates.X500DistinguishedName#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.X509Certificates.X500DistinguishedName/CS/x500.cs#1)]
+ [!code-vb[Cryptography.X509Certificates.X500DistinguishedName#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X500DistinguishedName/VB/x500.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="DoNotUsePlusSign">
@@ -52,7 +70,7 @@
         <ReturnType>System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The distinguished name does not use the plus sign.</summary>
       </Docs>
     </Member>
     <Member MemberName="DoNotUseQuotes">
@@ -78,7 +96,7 @@
         <ReturnType>System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The distinguished name does not use quotation marks.</summary>
       </Docs>
     </Member>
     <Member MemberName="ForceUTF8Encoding">
@@ -104,7 +122,7 @@
         <ReturnType>System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Forces the distinguished name to encode specific X.500 keys as UTF-8 strings rather than printable Unicode strings. For more information and the list of X.500 keys affected, see the [X500NameFlags enumeration](http://msdn.microsoft.com/library/windows/desktop/aa379394.aspx).</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -130,7 +148,7 @@
         <ReturnType>System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The distinguished name has no special characteristics.</summary>
       </Docs>
     </Member>
     <Member MemberName="Reversed">
@@ -156,7 +174,7 @@
         <ReturnType>System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The distinguished name is reversed.</summary>
       </Docs>
     </Member>
     <Member MemberName="UseCommas">
@@ -182,7 +200,7 @@
         <ReturnType>System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The distinguished name uses commas.</summary>
       </Docs>
     </Member>
     <Member MemberName="UseNewLines">
@@ -208,7 +226,7 @@
         <ReturnType>System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The distinguished name uses the new line character.</summary>
       </Docs>
     </Member>
     <Member MemberName="UseSemicolons">
@@ -234,7 +252,7 @@
         <ReturnType>System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The distinguished name uses semicolons.</summary>
       </Docs>
     </Member>
     <Member MemberName="UseT61Encoding">
@@ -260,7 +278,7 @@
         <ReturnType>System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The distinguished name uses T61 encoding.</summary>
       </Docs>
     </Member>
     <Member MemberName="UseUTF8Encoding">
@@ -286,7 +304,7 @@
         <ReturnType>System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The distinguished name uses UTF8 encoding instead of Unicode character encoding.</summary>
       </Docs>
     </Member>
   </Members>

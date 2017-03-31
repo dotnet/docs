@@ -24,8 +24,31 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies one of two factors that determine the memory alignment of fields when a type is marshaled.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Packing size affects the alignment of fields in structures and classes whose organization is <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=fullName>. The packing size is one of two factors that determine the offset of a field when the structure or class is marshaled; the other factor is the effective size of the field. To determine the offset of a field:  
+  
+1.  Compute the minimum value for the offset by adding the size of the preceding field to the offset of the preceding field.  
+  
+2.  Compute the natural packing size for the field: If the field is a simple data type, use the size. If the field is an array, use the size of an array element. If the field is itself a structure, compare the packing size of that structure to the size of the largest field in that structure, and use the smaller of the two values.  
+  
+3.  Compute the effective packing size by comparing the packing size to the natural packing size of the field, computed in step 2. Use the smaller of the two numbers.  
+  
+4.  Compute the offset. The offset is the first memory location that is equal to or larger than the minimum, and a multiple of the effective packing size computed in step 3.  
+  
+> [!NOTE]
+>  Once offsets have been computed for all the fields in the class or structure, padding is added so that the overall size is a multiple of the packing size.  
+  
+ For example, in a class containing a `byte` and a `long`, using packing size `Size1`, the offset of the `byte` field is zero (0) and the offset of the `long` field is one (1). If the packing size is `Size4`, the `long` field has offset four (4). In a class containing two `short` fields, using any packing size, the offset of the second `short` field is two (2).  
+  
+> [!NOTE]
+>  Changing the packing size can affect performance if it causes fields to be aligned on offsets that are not multiples of their size.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Size1">
@@ -50,7 +73,7 @@
         <ReturnType>System.Reflection.Emit.PackingSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The packing size is 1 byte.</summary>
       </Docs>
     </Member>
     <Member MemberName="Size128">
@@ -75,7 +98,7 @@
         <ReturnType>System.Reflection.Emit.PackingSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The packing size is 128 bytes.</summary>
       </Docs>
     </Member>
     <Member MemberName="Size16">
@@ -100,7 +123,7 @@
         <ReturnType>System.Reflection.Emit.PackingSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The packing size is 16 bytes.</summary>
       </Docs>
     </Member>
     <Member MemberName="Size2">
@@ -125,7 +148,7 @@
         <ReturnType>System.Reflection.Emit.PackingSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The packing size is 2 bytes.</summary>
       </Docs>
     </Member>
     <Member MemberName="Size32">
@@ -150,7 +173,7 @@
         <ReturnType>System.Reflection.Emit.PackingSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The packing size is 32 bytes.</summary>
       </Docs>
     </Member>
     <Member MemberName="Size4">
@@ -175,7 +198,7 @@
         <ReturnType>System.Reflection.Emit.PackingSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The packing size is 4 bytes.</summary>
       </Docs>
     </Member>
     <Member MemberName="Size64">
@@ -200,7 +223,7 @@
         <ReturnType>System.Reflection.Emit.PackingSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The packing size is 64 bytes.</summary>
       </Docs>
     </Member>
     <Member MemberName="Size8">
@@ -225,7 +248,7 @@
         <ReturnType>System.Reflection.Emit.PackingSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The packing size is 8 bytes.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unspecified">
@@ -250,7 +273,7 @@
         <ReturnType>System.Reflection.Emit.PackingSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The packing size is not specified.</summary>
       </Docs>
     </Member>
   </Members>

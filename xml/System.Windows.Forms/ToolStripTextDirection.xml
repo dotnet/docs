@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the text orientation to use with a particular <see cref="P:System.Windows.Forms.ToolStrip.LayoutStyle" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Windows.Forms.ToolStripTextDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies horizontal text orientation.</summary>
       </Docs>
     </Member>
     <Member MemberName="Inherit">
@@ -43,7 +43,7 @@
         <ReturnType>System.Windows.Forms.ToolStripTextDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the text direction is inherited from the parent control.</summary>
       </Docs>
     </Member>
     <Member MemberName="Vertical270">
@@ -59,7 +59,7 @@
         <ReturnType>System.Windows.Forms.ToolStripTextDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that text is to be rotated 270 degrees.</summary>
       </Docs>
     </Member>
     <Member MemberName="Vertical90">
@@ -75,7 +75,7 @@
         <ReturnType>System.Windows.Forms.ToolStripTextDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that text is to be rotated 90 degrees.</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,19 +1,31 @@
 ---
 uid: System.Web.UI.Design.ScriptManagerProxyDesigner
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ScriptManagerProxyDesigner.Initialize(System.ComponentModel.IComponent)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ScriptManagerProxyDesigner.GetDesignTimeHtml
-internalonly: False
+---
+
+---
+uid: System.Web.UI.Design.ScriptManagerProxyDesigner.GetDesignTimeHtml
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ScriptManagerProxyDesigner.#ctor
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

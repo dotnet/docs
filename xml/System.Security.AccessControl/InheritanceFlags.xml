@@ -20,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Inheritance flags specify the semantics of inheritance for access control entries (ACEs).</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -42,7 +42,7 @@
         <ReturnType>System.Security.AccessControl.InheritanceFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The ACE is inherited by child container objects.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -63,7 +63,7 @@
         <ReturnType>System.Security.AccessControl.InheritanceFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The ACE is not inherited by child objects.</summary>
       </Docs>
     </Member>
     <Member MemberName="ObjectInherit">
@@ -84,7 +84,7 @@
         <ReturnType>System.Security.AccessControl.InheritanceFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The ACE is inherited by child leaf objects.</summary>
       </Docs>
     </Member>
   </Members>

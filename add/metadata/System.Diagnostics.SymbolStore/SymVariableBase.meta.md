@@ -1,14 +1,20 @@
 ---
 uid: System.Diagnostics.SymbolStore.SymVariableBase
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.SymbolStore.SymVariableBase.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.SymbolStore.SymVariableBase.{dtor}
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

@@ -20,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Indicates the format in which type descriptions are laid out in the serialized stream.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -42,7 +42,7 @@
         <ReturnType>System.Runtime.Serialization.Formatters.FormatterTypeStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that types can be given to all object members and <see cref="T:System.Runtime.Serialization.ISerializable" /> object members.</summary>
       </Docs>
     </Member>
     <Member MemberName="TypesWhenNeeded">
@@ -63,7 +63,7 @@
         <ReturnType>System.Runtime.Serialization.Formatters.FormatterTypeStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that types can be stated only for arrays of objects, object members of type <see cref="T:System.Object" />, and <see cref="T:System.Runtime.Serialization.ISerializable" /> non-primitive value types.</summary>
       </Docs>
     </Member>
     <Member MemberName="XsdString">
@@ -84,7 +84,15 @@
         <ReturnType>System.Runtime.Serialization.Formatters.FormatterTypeStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that strings can be given in the XSD format rather than SOAP. No string IDs are transmitted.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `XsdString` and `TypesWhenNeeded` settings are meant for high performance serialization between services built on the same version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. These two values do not support VTS (Version Tolerant Serialization) because they intentionally omit type information that VTS uses to skip or add optional fields and properties. You should not use the `XsdString` or `TypesWhenNeeded` type formats when serializing and deserializing types on a computer running a different version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] than the computer on which the type was serialized. Serializing and deserializing on computers running different versions of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] causes the formatter to skip serialization of type information, thus making it impossible for the deserializer to skip optional fields if they are not present in certain types that may exist in the other version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. If you must use `XsdString` or `TypesWhenNeeded` in such a scenario, you must provide custom serialization for types that have changed from one version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] to the other.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

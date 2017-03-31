@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Used in the <see cref="T:System.DirectoryServices.ActiveDirectory.SyncUpdateCallback" /> delegate to specify the type of synchronization event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.SyncFromAllServersEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An error occurred.</summary>
       </Docs>
     </Member>
     <Member MemberName="Finished">
@@ -43,7 +43,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.SyncFromAllServersEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The entire replication process has completed.</summary>
       </Docs>
     </Member>
     <Member MemberName="SyncCompleted">
@@ -59,7 +59,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.SyncFromAllServersEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Synchronization of two servers has just completed.</summary>
       </Docs>
     </Member>
     <Member MemberName="SyncStarted">
@@ -75,7 +75,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.SyncFromAllServersEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Synchronization of two servers has started.</summary>
       </Docs>
     </Member>
   </Members>

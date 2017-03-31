@@ -1,34 +1,47 @@
 ---
 uid: Microsoft.VisualC.StlClr.ListEnumerator`1
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.StlClr.ListEnumerator`1.Dispose(System.Boolean)
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.StlClr.ListEnumerator`1.MoveNext
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.StlClr.ListEnumerator`1.Dispose
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.StlClr.ListEnumerator`1.Current
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
+---
+
+---
+uid: Microsoft.VisualC.StlClr.ListEnumerator`1.Dispose
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.StlClr.ListEnumerator`1.Reset
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.StlClr.ListEnumerator`1.#ctor(Microsoft.VisualC.StlClr.Generic.INode{`0})
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---

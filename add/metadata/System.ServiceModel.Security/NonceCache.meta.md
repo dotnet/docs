@@ -1,29 +1,35 @@
 ---
 uid: System.ServiceModel.Security.NonceCache
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.NonceCache.CachingTimeSpan
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.NonceCache.TryAddNonce(System.Byte[])
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.NonceCache.CheckNonce(System.Byte[])
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.NonceCache.CacheSize
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.NonceCache.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
 ---

@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Enumerates values for the scope of a <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsRule" /> object.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Speech.Recognition.SrgsGrammar.SrgsRuleScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The rule cannot be the target of a rule reference from an external grammar unless it is the root rule of its containing grammar.</summary>
       </Docs>
     </Member>
     <Member MemberName="Public">
@@ -43,7 +43,7 @@
         <ReturnType>System.Speech.Recognition.SrgsGrammar.SrgsRuleScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The rule can be the target of a rule reference from an external grammar, which can use the rule to perform recognition. A public rule can always be activated for recognition.</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,29 +1,41 @@
 ---
 uid: Microsoft.Build.Tasks.Xaml.CommandLineGenerator
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.CommandLineGenerator.#ctor(Microsoft.Build.Framework.XamlTypes.Rule,System.Collections.Generic.Dictionary{System.String,System.Object})
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.CommandLineGenerator.AlwaysAppend
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.CommandLineGenerator.AdditionalOptions
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.CommandLineGenerator.CommandLineTemplate
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.CommandLineGenerator.GenerateCommandLine
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

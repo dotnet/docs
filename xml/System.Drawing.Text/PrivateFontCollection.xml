@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a collection of font families built from font files that are provided by the client application.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Drawing.Text.PrivateFontCollection> class allows applications to install a private version of an existing font without the requirement to replace the system version of the font. For example, [!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)] can create a private version of the Arial font in addition to the Arial font that the system uses. <xref:System.Drawing.Text.PrivateFontCollection> can also be used to install fonts that do not exist in the operating system. This is a temporary font install that does not affect the system-installed collection. To see the installed collection, use the <xref:System.Drawing.Text.InstalledFontCollection> class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Text.PrivateFontCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,9 +53,17 @@
         <Parameter Name="filename" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="filename">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="filename">A <see cref="T:System.String" /> that contains the file name of the font to add.</param>
+        <summary>Adds a font from the specified file to this <see cref="T:System.Drawing.Text.PrivateFontCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Windows Forms applications support TrueType fonts and have limited support for OpenType fonts. If you try to use a font that is not supported, such as an unsupported OpenType font or a Bitmap font, an exception will occur. The <xref:System.Drawing.Text.PrivateFontCollection.AddFontFile%2A> is not supported on operating systems before [!INCLUDE[Win2kFamily](~/includes/win2kfamily-md.md)]. When using a private font on operating systems before [!INCLUDE[Win2kFamily](~/includes/win2kfamily-md.md)], the default font, typically Microsoft Sans Serif, will be substituted.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.IO.FileNotFoundException">The specified font is not supported or the font file cannot be found.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddMemoryFont">
@@ -68,10 +83,17 @@
         <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="memory">To be added.</param>
-        <param name="length">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="memory">The memory address of the font to add.</param>
+        <param name="length">The memory length of the font to add.</param>
+        <summary>Adds a font contained in system memory to this <see cref="T:System.Drawing.Text.PrivateFontCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To use the memory font, text on a control must be rendered with GDI+. Use the <xref:System.Windows.Forms.Application.SetCompatibleTextRenderingDefault%2A> method, passing `true`, to set GDI+ rendering on the application, or on individual controls by setting the control's <xref:System.Windows.Forms.GroupBox.UseCompatibleTextRendering%2A> property to `true`. Some controls cannot be rendered with GDI+.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">

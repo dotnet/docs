@@ -20,7 +20,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the unary dynamic operation at the call site, providing the binding semantic and the details about the operation.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -46,8 +46,8 @@
         <Parameter Name="operation" Type="System.Linq.Expressions.ExpressionType" />
       </Parameters>
       <Docs>
-        <param name="operation">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="operation">The unary operation kind.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Dynamic.BinaryOperationBinder" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,10 +77,10 @@
         <Parameter Name="args" Type="System.Dynamic.DynamicMetaObject[]" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="args">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The target of the dynamic operation.</param>
+        <param name="args">An array of arguments of the dynamic operation.</param>
+        <summary>Performs the binding of the dynamic unary operation.</summary>
+        <returns>The <see cref="T:System.Dynamic.DynamicMetaObject" /> representing the result of the binding.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,9 +109,9 @@
         <Parameter Name="target" Type="System.Dynamic.DynamicMetaObject" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The target of the dynamic unary operation.</param>
+        <summary>Performs the binding of the unary dynamic operation if the target dynamic object cannot bind.</summary>
+        <returns>The <see cref="T:System.Dynamic.DynamicMetaObject" /> representing the result of the binding.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -141,10 +141,10 @@
         <Parameter Name="errorSuggestion" Type="System.Dynamic.DynamicMetaObject" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="errorSuggestion">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The target of the dynamic unary operation.</param>
+        <param name="errorSuggestion">The binding result in case the binding fails, or null.</param>
+        <summary>Performs the binding of the unary dynamic operation if the target dynamic object cannot bind.</summary>
+        <returns>The <see cref="T:System.Dynamic.DynamicMetaObject" /> representing the result of the binding.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -170,8 +170,8 @@
         <ReturnType>System.Linq.Expressions.ExpressionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The unary operation kind.</summary>
+        <value>The object of the <see cref="T:System.Linq.Expressions.ExpressionType" /> that represents the unary operation kind.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -197,8 +197,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The result type of the operation.</summary>
+        <value>The <see cref="T:System.Type" /> object representing the result type of the operation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

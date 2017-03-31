@@ -1,64 +1,89 @@
 ---
 uid: System.Net.Mail.AttachmentBase
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.AttachmentBase.#ctor(System.IO.Stream)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Mail.AttachmentBase.#ctor
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.AttachmentBase.#ctor(System.String,System.Net.Mime.ContentType)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.AttachmentBase.ContentId
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.AttachmentBase.#ctor(System.IO.Stream,System.Net.Mime.ContentType)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.AttachmentBase.ContentStream
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.AttachmentBase.ContentType
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.AttachmentBase.#ctor(System.String)
-internalonly: False
----
-
----
-uid: System.Net.Mail.AttachmentBase.TransferEncoding
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.AttachmentBase.Dispose
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Mail.AttachmentBase.TransferEncoding
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Mail.AttachmentBase.Dispose
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.AttachmentBase.Dispose(System.Boolean)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.AttachmentBase.#ctor(System.String,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.AttachmentBase.#ctor(System.IO.Stream,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

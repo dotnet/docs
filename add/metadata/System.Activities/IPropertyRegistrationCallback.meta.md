@@ -1,14 +1,20 @@
 ---
 uid: System.Activities.IPropertyRegistrationCallback
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.IPropertyRegistrationCallback.Register(System.Activities.RegistrationContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.IPropertyRegistrationCallback.Unregister(System.Activities.RegistrationContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

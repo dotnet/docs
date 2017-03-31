@@ -1,9 +1,13 @@
 ---
 uid: System.Activities.Presentation.Metadata.IRegisterMetadata
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.Metadata.IRegisterMetadata.Register
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

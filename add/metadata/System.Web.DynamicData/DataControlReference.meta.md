@@ -1,24 +1,29 @@
 ---
 uid: System.Web.DynamicData.DataControlReference
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.DataControlReference.Owner
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.DataControlReference.ToString
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.DataControlReference.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.DataControlReference.ControlID
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -19,8 +19,20 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The EncryptionPolicy to use.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.Security.EncryptionPolicy> can be set to require, allow, or prevent encryption.  
+  
+   
+  
+## Examples  
+ The <xref:System.Net.Security.EncryptionPolicy> will be applied to an SSL/TLS session.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AllowNoEncryption">
@@ -45,7 +57,7 @@
         <ReturnType>System.Net.Security.EncryptionPolicy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Prefer that full encryption be used, but allow a NULL cipher (no encryption) if the server agrees.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoEncryption">
@@ -70,7 +82,7 @@
         <ReturnType>System.Net.Security.EncryptionPolicy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Allow no encryption and request that a NULL cipher be used if the other endpoint can handle a NULL cipher.</summary>
       </Docs>
     </Member>
     <Member MemberName="RequireEncryption">
@@ -95,7 +107,7 @@
         <ReturnType>System.Net.Security.EncryptionPolicy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Require encryption and never allow a NULL cipher.</summary>
       </Docs>
     </Member>
   </Members>

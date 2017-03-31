@@ -23,8 +23,33 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Maps a persisted workflow instance to its corresponding workflow definition.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the versioning and dynamic update functionality of Windows Workflow Foundation. [!INCLUDE[crabout](~/includes/crabout-md.md)] workflow versioning, workflow identity, and dynamic update, see the following topics.  
+  
+ [Workflow Versioning](http://go.microsoft.com/fwlink/?LinkID=271561)  
+ Describes the workflow versioning functionality introduced in [!INCLUDE[net_v45](~/includes/net-v45-md.md)].  
+  
+ [Dynamic Update](http://go.microsoft.com/fwlink/?LinkId=271563)  
+ Describes how to update the workflow definition of a persisted workflow instance by using dynamic update.  
+  
+ [Using WorkflowApplication Identity and Versioning](http://go.microsoft.com/fwlink/?LinkId=271564)  
+ Describes how to use <xref:System.Activities.WorkflowIdentity> to host multiple versions of a workflow side-by-side.  
+  
+ [Side by Side Versioning in WorkflowServiceHost](http://go.microsoft.com/fwlink/?LinkId=271565)  
+ Describes how to host multiple versions of a workflow on a single endpoint.  
+  
+ [How to: Host Multiple Versions of a Workflow Side-by-Side](http://go.microsoft.com/fwlink/?LinkId=271566)  
+ This step in the [Getting Started Tutorial](http://go.microsoft.com/fwlink/?LinkId=271570) demonstrates updating a workflow definition, and hosting workflows using both the old and new definition at the same time.  
+  
+ [How to: Update the Definition of a Running Workflow Instance](http://go.microsoft.com/fwlink/?LinkId=271567)  
+ This step in the [Getting Started Tutorial](http://go.microsoft.com/fwlink/?LinkId=271570) demonstrates updating persisted workflow instances to use a new workflow definition.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,7 +63,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.WorkflowIdentity" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,10 +82,10 @@
         <Parameter Name="package" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="version">To be added.</param>
-        <param name="package">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The workflow identity name.</param>
+        <param name="version">The workflow identity version.</param>
+        <param name="package">The workflow identity package.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.WorkflowIdentity" /> class using the name, version, and package.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,9 +105,10 @@
         <Parameter Name="other" Type="System.Activities.WorkflowIdentity" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">The WorkflowIdentity to compare.</param>
+        <summary>Determines whether the current WorkflowIdentity and the specified WorkflowIdentity are the same.</summary>
+        <returns>
+          <see langword="True" /> if the current WorkflowIdentity and the specified WorkflowIdentity are the same; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,9 +128,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The object to compare with the current object.</param>
+        <summary>Determines whether the specified object is equal to the current object.</summary>
+        <returns>
+          <see langword="True" /> if the specified object is equal to the current object; otherwise. <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,8 +149,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code for this workflow identity.</summary>
+        <returns>The hash code for this workflow identity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,8 +167,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the workflow identity.</summary>
+        <value>The name of the workflow identity.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -158,8 +185,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the package of the workflow identity.</summary>
+        <value>The package of the workflow identity.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -179,9 +206,9 @@
         <Parameter Name="identity" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="identity">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="identity">A new identity.</param>
+        <summary>Converts the string representation of the WorkflowIdentity.</summary>
+        <returns>The string representation of the WorkflowIdentity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -199,8 +226,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a string that represents the current object.</summary>
+        <returns>A string that represents the current object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -221,10 +248,11 @@
         <Parameter Name="result" Type="System.Activities.WorkflowIdentity&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="identity">To be added.</param>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="identity">A new identity.</param>
+        <param name="result">The result created from the string.</param>
+        <summary>Parses the string and creates a new instance of a WorkflowIdentity.</summary>
+        <returns>
+          <see langword="True" /> if a WorkflowIdentity instance has been created; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -241,8 +269,8 @@
         <ReturnType>System.Version</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the version of the workflow identity.</summary>
+        <value>The version of the workflow identity.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines the direction and the property name to be used as the criteria for sorting a collection.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,10 +29,13 @@
         <Parameter Name="direction" Type="System.ComponentModel.ListSortDirection" />
       </Parameters>
       <Docs>
-        <param name="propertyName">To be added.</param>
-        <param name="direction">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="propertyName">The name of the property to sort the list by.</param>
+        <param name="direction">The sort order.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.SortDescription" /> structure.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="propertyName" /> parameter cannot be null.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="propertyName" /> parameter cannot be empty</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="direction" /> parameter does not specify a valid value.</exception>
       </Docs>
     </Member>
     <Member MemberName="Direction">
@@ -48,8 +51,8 @@
         <ReturnType>System.ComponentModel.ListSortDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether to sort in ascending or descending order.</summary>
+        <value>A <see cref="T:System.ComponentModel.ListSortDirection" /> value to indicate whether to sort in ascending or descending order.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,9 +72,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The <see cref="T:System.ComponentModel.SortDescription" /> instance to compare.</param>
+        <summary>Compares the specified instance and the current instance of <see cref="T:System.ComponentModel.SortDescription" /> for value equality.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="obj" /> and this instance of <see cref="T:System.ComponentModel.SortDescription" /> have the same values.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,8 +93,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code for this instance of <see cref="T:System.ComponentModel.SortDescription" />.</summary>
+        <returns>The hash code for this instance of <see cref="T:System.ComponentModel.SortDescription" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,8 +111,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether this object is in an immutable state.</summary>
+        <value>
+          <see langword="true" /> if this object is in use; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,11 +134,14 @@
         <Parameter Name="sd2" Type="System.ComponentModel.SortDescription" />
       </Parameters>
       <Docs>
-        <param name="sd1">To be added.</param>
-        <param name="sd2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="sd1">The first instance to compare.</param>
+        <param name="sd2">The second instance to compare.</param>
+        <summary>Compares two <see cref="T:System.ComponentModel.SortDescription" /> objects for value equality.</summary>
+        <returns>
+          <see langword="true" /> if the two objects are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.ComponentModel.SortDescription.Equals%28System.ComponentModel.SortDescription%2CSystem.ComponentModel.SortDescription%29?displayProperty=fullName>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -153,11 +161,14 @@
         <Parameter Name="sd2" Type="System.ComponentModel.SortDescription" />
       </Parameters>
       <Docs>
-        <param name="sd1">To be added.</param>
-        <param name="sd2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="sd1">The first instance to compare.</param>
+        <param name="sd2">The second instance to compare.</param>
+        <summary>Compares two <see cref="T:System.ComponentModel.SortDescription" /> objects for value inequality.</summary>
+        <returns>
+          <see langword="true" /> if the values are not equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.ComponentModel.SortDescription.Compare%28System.ComponentModel.SortDescription%2CSystem.ComponentModel.SortDescription%29?displayProperty=fullName>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PropertyName">
@@ -173,9 +184,18 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the property name being used as the sorting criteria.</summary>
+        <value>The default value is null.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property should be a public property of the items in the underlying collection.  
+  
+ The string is interpreted by the particular <xref:System.ComponentModel.ICollectionView> object involved in the sorting. <xref:System.Windows.Data.BindingListCollectionView> only supports simple column names. <xref:System.Windows.Data.ListCollectionView> supports general property paths and `XPath` for [!INCLUDE[TLA#tla_xml](~/includes/tlasharptla-xml-md.md)] data. Therefore, when the view is a <xref:System.Windows.Data.ListCollectionView> object, you can sort [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] nodes in an <xref:System.Windows.Data.XmlDataProvider> based on an attribute of those nodes. For example, if the attribute name is `Cost`, you would specify "@Cost" for the <xref:System.ComponentModel.SortDescription.PropertyName%2A> in the <xref:System.ComponentModel.SortDescription>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

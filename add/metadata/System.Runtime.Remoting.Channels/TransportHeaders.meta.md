@@ -1,19 +1,19 @@
 ---
 uid: System.Runtime.Remoting.Channels.TransportHeaders
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Channels.TransportHeaders.Item(System.Object)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Channels.TransportHeaders.#ctor
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Channels.TransportHeaders.GetEnumerator
-internalonly: False
+manager: "ghogen"
 ---

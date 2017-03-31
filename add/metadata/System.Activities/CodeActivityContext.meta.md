@@ -1,14 +1,20 @@
 ---
 uid: System.Activities.CodeActivityContext
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.CodeActivityContext.Track(System.Activities.Tracking.CustomTrackingRecord)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.CodeActivityContext.GetProperty``1
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

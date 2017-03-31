@@ -11,8 +11,20 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a base class for editors that use a modal dialog to display a properties page similar to an ActiveX control's property page.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates an example <xref:System.Windows.Forms.Design.WindowsFormsComponentEditor> implementation.  
+  
+ [!code-cpp[ComponentEditorExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ComponentEditorExample/CPP/componenteditorexamplecomponent.cpp#1)]
+ [!code-csharp[ComponentEditorExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ComponentEditorExample/CS/componenteditorexamplecomponent.cs#1)]
+ [!code-vb[ComponentEditorExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ComponentEditorExample/VB/componenteditorexamplecomponent.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +38,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.WindowsFormsComponentEditor" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,10 +59,11 @@
         <Parameter Name="component" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="component">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that can be used to gain additional context information.</param>
+        <param name="component">The component to edit.</param>
+        <summary>Creates an editor window that allows the user to edit the specified component, using the specified context information.</summary>
+        <returns>
+          <see langword="true" /> if the component was changed during editing; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,10 +84,11 @@
         <Parameter Name="owner" Type="System.Windows.Forms.IWin32Window" />
       </Parameters>
       <Docs>
-        <param name="component">To be added.</param>
-        <param name="owner">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="component">The component to edit.</param>
+        <param name="owner">An <see cref="T:System.Windows.Forms.IWin32Window" /> that the component belongs to.</param>
+        <summary>Creates an editor window that allows the user to edit the specified component, using the specified window that owns the component.</summary>
+        <returns>
+          <see langword="true" /> if the component was changed during editing; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,11 +110,12 @@
         <Parameter Name="owner" Type="System.Windows.Forms.IWin32Window" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="component">To be added.</param>
-        <param name="owner">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that can be used to gain additional context information.</param>
+        <param name="component">The component to edit.</param>
+        <param name="owner">An <see cref="T:System.Windows.Forms.IWin32Window" /> that the component belongs to.</param>
+        <summary>Creates an editor window that allows the user to edit the specified component.</summary>
+        <returns>
+          <see langword="true" /> if the component was changed during editing; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,9 +133,23 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets the component editor pages associated with the component editor.</summary>
+        <returns>An array of component editor pages.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates an example implementation of a <xref:System.Windows.Forms.Design.WindowsFormsComponentEditor.GetComponentEditorPages%2A> method override.  
+  
+ [!code-cpp[ComponentEditorExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/ComponentEditorExample/CPP/componenteditorexamplecomponent.cpp#2)]
+ [!code-csharp[ComponentEditorExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/ComponentEditorExample/CS/componenteditorexamplecomponent.cs#2)]
+ [!code-vb[ComponentEditorExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ComponentEditorExample/VB/componenteditorexamplecomponent.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>You must override this method to implement the functionality for this method.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="GetInitialComponentEditorPageIndex">
@@ -137,9 +166,20 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets the index of the initial component editor page for the component editor to display.</summary>
+        <returns>The index of the component editor page that the component editor will initially display.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates an example implementation of a <xref:System.Windows.Forms.Design.WindowsFormsComponentEditor.GetInitialComponentEditorPageIndex%2A> method override.  
+  
+ [!code-cpp[ComponentEditorExample#3](~/samples/snippets/cpp/VS_Snippets_Winforms/ComponentEditorExample/CPP/componenteditorexamplecomponent.cpp#3)]
+ [!code-csharp[ComponentEditorExample#3](~/samples/snippets/csharp/VS_Snippets_Winforms/ComponentEditorExample/CS/componenteditorexamplecomponent.cs#3)]
+ [!code-vb[ComponentEditorExample#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ComponentEditorExample/VB/componenteditorexamplecomponent.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

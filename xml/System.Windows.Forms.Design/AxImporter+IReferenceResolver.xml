@@ -8,7 +8,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides methods to resolve references to ActiveX libraries, COM type libraries or assemblies, or managed assemblies.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,9 +28,9 @@
         <Parameter Name="typeLib" Type="System.Runtime.InteropServices.UCOMITypeLib" />
       </Parameters>
       <Docs>
-        <param name="typeLib">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="typeLib">A <see cref="T:System.Runtime.InteropServices.UCOMITypeLib" /> to resolve a reference to.</param>
+        <summary>Resolves a reference to the specified type library that contains an ActiveX control.</summary>
+        <returns>A fully qualified path to an assembly.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,9 +50,9 @@
         <Parameter Name="name" Type="System.Reflection.AssemblyName" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">An <see cref="T:System.Reflection.AssemblyName" /> that indicates the assembly to resolve a reference to.</param>
+        <summary>Resolves a reference to the specified assembly that contains a COM component.</summary>
+        <returns>A fully qualified path to an assembly.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,9 +72,9 @@
         <Parameter Name="typeLib" Type="System.Runtime.InteropServices.UCOMITypeLib" />
       </Parameters>
       <Docs>
-        <param name="typeLib">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="typeLib">A <see cref="T:System.Runtime.InteropServices.UCOMITypeLib" /> to resolve a reference to.</param>
+        <summary>Resolves a reference to the specified type library that contains an COM component.</summary>
+        <returns>A fully qualified path to an assembly.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,9 +94,9 @@
         <Parameter Name="assemName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="assemName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="assemName">The name of the assembly to resolve a reference to.</param>
+        <summary>Resolves a reference to the specified assembly.</summary>
+        <returns>A fully qualified path to an assembly.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

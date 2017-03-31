@@ -21,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Denotes that the class is a complex type. Complex types are non-scalar properties of entity types that enable scalar properties to be organized within entities. Complex types do not have keys and cannot be managed by the Entity Framework apart from the parent object.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -41,7 +41,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.Schema.ComplexTypeAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

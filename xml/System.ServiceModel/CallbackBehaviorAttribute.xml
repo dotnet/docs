@@ -21,8 +21,48 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Configures a callback service implementation in a client application.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.CallbackBehaviorAttribute> attribute to configure or extend the execution behavior of a callback contract implementation in a client application. This attribute performs the same function for the callback class as the <xref:System.ServiceModel.ServiceBehaviorAttribute> attribute with the exception of instancing behavior and transaction settings.  
+  
+ The <xref:System.ServiceModel.CallbackBehaviorAttribute> must be applied to the class that implements the callback contract. If applied to a non-duplex contract implementation an <xref:System.InvalidOperationException> exception is thrown at runtime.  
+  
+> [!NOTE]
+>  You can also use the <xref:System.ServiceModel.OperationBehaviorAttribute> attribute for the callback operation implementations. However, if <xref:System.ServiceModel.OperationBehaviorAttribute> is used on a callback operation, the <xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode%2A> property must be <xref:System.ServiceModel.ReleaseInstanceMode> or an <xref:System.InvalidOperationException> exception is thrown at runtime.  
+  
+ The following properties are available:  
+  
+-   The <xref:System.ServiceModel.CallbackBehaviorAttribute.AutomaticSessionShutdown%2A> property automatically closes the session when the channel is closed and the callback has finished processing any remaining messages.  
+  
+-   The <xref:System.ServiceModel.CallbackBehaviorAttribute.ConcurrencyMode%2A> property controls the internal threading model, enabling support for reentrant or multithreaded callback objects.  
+  
+-   The <xref:System.ServiceModel.CallbackBehaviorAttribute.IgnoreExtensionDataObject%2A> property enables the runtime to ignore extra serialization information that is not required to process the message.  
+  
+-   The <xref:System.ServiceModel.CallbackBehaviorAttribute.IncludeExceptionDetailInFaults%2A> property specifies whether unhandled exceptions in a service are returned to the service as SOAP faults for debugging purposes.  
+  
+-   The <xref:System.ServiceModel.CallbackBehaviorAttribute.MaxItemsInObjectGraph%2A> property limits on the number of items in an object graph that are serialized.  
+  
+-   The <xref:System.ServiceModel.CallbackBehaviorAttribute.TransactionIsolationLevel%2A> property specifies the transaction isolation level that the contract supports.  
+  
+-   The <xref:System.ServiceModel.CallbackBehaviorAttribute.TransactionTimeout%2A> property specifies the time period within which a transaction must complete or it aborts.  
+  
+-   The <xref:System.ServiceModel.CallbackBehaviorAttribute.UseSynchronizationContext%2A> property indicates whether to synchronize inbound method calls automatically using the current <xref:System.Threading.SynchronizationContext> object.  
+  
+-   The <xref:System.ServiceModel.CallbackBehaviorAttribute.ValidateMustUnderstand%2A> property informs the system whether it should confirm that SOAP headers marked as `MustUnderstand` have, in fact, been understood.  
+  
+   
+  
+## Examples  
+ The following code example shows a <xref:System.ServiceModel.CallbackBehaviorAttribute> on a callback object that uses the <xref:System.Threading.SynchronizationContext> object to determine which thread to marshal to, the <xref:System.ServiceModel.CallbackBehaviorAttribute.ValidateMustUnderstand%2A> property to enforce message validation, and the <xref:System.ServiceModel.CallbackBehaviorAttribute.IncludeExceptionDetailInFaults%2A> property to return exceptions as <xref:System.ServiceModel.FaultException> objects to the service for debugging purposes.  
+  
+ [!code-csharp[CallbackBehaviorAttribute#3](~/samples/snippets/csharp/VS_Snippets_CFX/callbackbehaviorattribute/cs/client.cs#3)]
+ [!code-vb[CallbackBehaviorAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/callbackbehaviorattribute/vb/client.vb#3)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,8 +77,35 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.CallbackBehaviorAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default settings for the <xref:System.ServiceModel.CallbackBehaviorAttribute> are:  
+  
+-   The <xref:System.ServiceModel.CallbackBehaviorAttribute.AutomaticSessionShutdown%2A> property is `true`.  
+  
+-   The <xref:System.ServiceModel.CallbackBehaviorAttribute.ConcurrencyMode%2A> is set to <xref:System.ServiceModel.ConcurrencyMode>.  
+  
+-   The <xref:System.ServiceModel.CallbackBehaviorAttribute.IgnoreExtensionDataObject%2A> property is `false`.  
+  
+-   <xref:System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults%2A> is `false`.  
+  
+-   <xref:System.ServiceModel.CallbackBehaviorAttribute.UseSynchronizationContext%2A> is `false`.  
+  
+-   The <xref:System.ServiceModel.CallbackBehaviorAttribute.ValidateMustUnderstand%2A> property is `true`.  
+  
+   
+  
+## Examples  
+ The following code example shows a <xref:System.ServiceModel.CallbackBehaviorAttribute> on a callback object that uses the <xref:System.Threading.SynchronizationContext> object to determine which thread to marshal to, the <xref:System.ServiceModel.CallbackBehaviorAttribute.ValidateMustUnderstand%2A> property to enforce message validation, and the <xref:System.ServiceModel.CallbackBehaviorAttribute.IncludeExceptionDetailInFaults%2A> property to return exceptions as <xref:System.ServiceModel.FaultException> objects to the service for debugging purposes.  
+  
+ [!code-csharp[CallbackBehaviorAttribute#3](~/samples/snippets/csharp/VS_Snippets_CFX/callbackbehaviorattribute/cs/client.cs#3)]
+ [!code-vb[CallbackBehaviorAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/callbackbehaviorattribute/vb/client.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AutomaticSessionShutdown">
@@ -55,9 +122,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Specifies whether to automatically close a session when a service closes a duplex session.</summary>
+        <value>
+          <see langword="true" /> if duplex callback objects automatically close a session when the service closes a duplex session; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, when a service closes a duplex session and the callback has finished processing any remaining messages, the callback closes the session. Setting <xref:System.ServiceModel.CallbackBehaviorAttribute.AutomaticSessionShutdown%2A> to `false` prevents the client from automatically closing the session.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ConcurrencyMode">
@@ -74,9 +149,27 @@
         <ReturnType>System.ServiceModel.ConcurrencyMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets whether a service supports one thread, multiple threads, or reentrant calls.</summary>
+        <value>One of the <see cref="T:System.ServiceModel.ConcurrencyMode" /> values; the default is <see cref="F:System.ServiceModel.ConcurrencyMode.Single" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property indicates whether an instance of a callback object supports one thread or multiple threads that execute concurrently, and if single-threaded, whether reentrancy is supported.  
+  
+ Setting <xref:System.ServiceModel.ConcurrencyMode> to <xref:System.ServiceModel.ConcurrencyMode> instructs the system to restrict instances of the service to one thread of execution at a time, which frees you from dealing with threading issues. This is the default value. A value of <xref:System.ServiceModel.ConcurrencyMode> means that service objects can be executed by multiple threads at any one time. In this case, you must ensure thread safety and state consistency.  
+  
+ <xref:System.ServiceModel.ConcurrencyMode> also restricts access to a single thread at a time. However, it enables calls out from an executing service method to return and reenter the executing service. A reentrant call can execute on a different managed thread, but in this case the original thread is blocked for the duration of the reentrant call.  
+  
+ Generally, if a message arrives for an instance that violates its concurrency mode, the message waits until the instance is available, or until it times out.  
+  
+ In addition, if the <xref:System.ServiceModel.ConcurrencyMode> is set to <xref:System.ServiceModel.ConcurrencyMode> and a reentrant call is blocked while waiting for the instance to be freed, the system detects the deadlock and throws an exception.  
+  
+ [!INCLUDE[crabout](~/includes/crabout-md.md)] concurrency, see <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A?displayProperty=fullName> and [Sessions, Instancing, and Concurrency](../Topic/Sessions,%20Instancing,%20and%20Concurrency.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value is not one of the <see cref="T:System.ServiceModel.ConcurrencyMode" /> values.</exception>
       </Docs>
     </Member>
     <Member MemberName="IgnoreExtensionDataObject">
@@ -93,9 +186,21 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that specifies whether to send unknown serialization data onto the wire.</summary>
+        <value>
+          <see langword="true" /> if unknown serialization data is never sent; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a type implements the <xref:System.Runtime.Serialization.IExtensibleDataObject> interface, it stores any extra data it does not know about that comes over the wire when deserializing into that type. For example, if a type `Person` has members `FirstName` and `LastName`, and an element called `PhoneNumber` comes in, it is stored. When later serializing the type, `PhoneNumber` is re-emitted. The problem is that the schema for `Person` exported by that service only has `FirstName` and `LastName`, so [!INCLUDE[indigo1](~/includes/indigo1-md.md)] generates a schema-invalid instance. If strict schema compliance is important, you can set <xref:System.ServiceModel.CallbackBehaviorAttribute.IgnoreExtensionDataObject%2A> to `true` to turn this re-emitting behavior off.  
+  
+ Regardless of the <xref:System.ServiceModel.CallbackBehaviorAttribute.IgnoreExtensionDataObject%2A> setting, [!INCLUDE[indigo2](~/includes/indigo2-md.md)] always processes known data (both in and out) and does not throw exceptions when extra data comes in.  
+  
+ You can use the [\&lt;callbackDebug\&gt;](../Topic/%3CcallbackDebug%3E.md) element to set this property in a client application configuration file.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IncludeExceptionDetailInFaults">
@@ -112,9 +217,28 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that specifies that general unhandled execution exceptions are to be converted into a <see cref="T:System.ServiceModel.FaultException`1" /> of type <see cref="T:System.String" /> and sent as a fault message. Set this to <see langword="true" /> only during development to troubleshoot a service.</summary>
+        <value>
+          <see langword="true" /> if unhandled exceptions are to be returned as SOAP faults; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Set <xref:System.ServiceModel.CallbackBehaviorAttribute.IncludeExceptionDetailInFaults%2A> to `true` to enable exception information to flow back to services for debugging purposes when possible. This is a development-only feature and should not be employed in deployed services. These faults appear to the calling service as <xref:System.ServiceModel.FaultException> objects.  
+  
+> [!IMPORTANT]
+>  Setting <xref:System.ServiceModel.CallbackBehaviorAttribute.IncludeExceptionDetailInFaults%2A>to `true` enables services to obtain information about internal client callback exceptions; it is only recommended as a way of temporarily debugging a duplex client application.  
+  
+   
+  
+## Examples  
+ The following code example shows a <xref:System.ServiceModel.CallbackBehaviorAttribute> on a callback object that uses the <xref:System.Threading.SynchronizationContext> object to determine which thread to marshal to, the <xref:System.ServiceModel.CallbackBehaviorAttribute.ValidateMustUnderstand%2A> property to enforce message validation, and the <xref:System.ServiceModel.CallbackBehaviorAttribute.IncludeExceptionDetailInFaults%2A> property to return exceptions as <xref:System.ServiceModel.FaultException> objects to the service for debugging purposes.  
+  
+ [!code-csharp[CallbackBehaviorAttribute#3](~/samples/snippets/csharp/VS_Snippets_CFX/callbackbehaviorattribute/cs/client.cs#3)]
+ [!code-vb[CallbackBehaviorAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/callbackbehaviorattribute/vb/client.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxItemsInObjectGraph">
@@ -131,9 +255,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the maximum number of items allowed in a serialized object.</summary>
+        <value>The maximum number of items allowed in an object. The default is <see cref="F:System.Int32.MaxValue" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.ServiceBehaviorAttribute.MaxItemsInObjectGraph%2A> property set a limit on the number of items in an object graph that are serialized. You can also use the [\&lt;dataContractSerializer\&gt;](../Topic/dataContractSerializer.md) element to set this value in a client application configuration file.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Description.IEndpointBehavior.AddBindingParameters">
@@ -155,8 +286,8 @@
       </Parameters>
       <Docs>
         <param name="endpoint">To be added.</param>
-        <param name="parameters">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="parameters">The collection of binding parameters that are configured.</param>
+        <summary>Configures the binding elements to support the callback behavior.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -178,9 +309,9 @@
         <Parameter Name="clientRuntime" Type="System.ServiceModel.Dispatcher.ClientRuntime" />
       </Parameters>
       <Docs>
-        <param name="serviceEndpoint">To be added.</param>
+        <param name="serviceEndpoint">The endpoint configured by the attribute.</param>
         <param name="behavior">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Configures the client runtime to support the callback object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -202,9 +333,9 @@
         <Parameter Name="endpointDispatcher" Type="System.ServiceModel.Dispatcher.EndpointDispatcher" />
       </Parameters>
       <Docs>
-        <param name="serviceEndpoint">To be added.</param>
+        <param name="serviceEndpoint">The endpoint to be modified.</param>
         <param name="dispatcher">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Implementation of the <see cref="M:System.ServiceModel.Description.IEndpointBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.EndpointDispatcher)" /> method. This implementation has no effect.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -225,8 +356,8 @@
         <Parameter Name="serviceEndpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
       </Parameters>
       <Docs>
-        <param name="serviceEndpoint">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceEndpoint">The endpoint to be validated.</param>
+        <summary>Validates the endpoint description prior to building the runtime.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -243,9 +374,17 @@
         <ReturnType>System.Transactions.IsolationLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the transaction isolation level.</summary>
+        <value>A <see cref="T:System.Transactions.IsolationLevel" /> value that specifies the transaction isolation level. The default is <see cref="F:System.Transactions.IsolationLevel.Unspecified" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The isolation level in which your transaction runs determines how data is treated when changes are made in other transactions and how long your transaction must hold locks to protect against these changes. For example, the default value, <xref:System.Transactions.IsolationLevel>, specifies that no updating or inserting can occur until the transaction is complete.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value is not one of the <see cref="T:System.Transactions.IsolationLevel" /> values.</exception>
       </Docs>
     </Member>
     <Member MemberName="TransactionTimeout">
@@ -262,9 +401,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the period within which a transaction must complete.</summary>
+        <value>A <see cref="T:System.TimeSpan" /> object that represents the time within which transactions must complete or be automatically aborted. The default value is <see cref="F:System.TimeSpan.Zero" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This value is typically set in an application configuration file.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UseSynchronizationContext">
@@ -281,9 +427,27 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that specifies whether to use the current synchronization context to choose the thread of execution.</summary>
+        <value>
+          <see langword="true" /> if all calls to the service must run on the thread specified by the <see cref="T:System.Threading.SynchronizationContext" />; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to provide the user interface thread affinity that some applications require. For example, a Windows Forms application may be registered as a singleton service object. In this case, all calls into the service must run on the Windows Forms thread. The default case, in which <xref:System.ServiceModel.ServiceBehaviorAttribute.UseSynchronizationContext%2A> is set to `true`, synchronizes all calls to the service to run on the user interface thread.  
+  
+ Note that the thread used is the current synchronization thread when <xref:System.ServiceModel.DuplexChannelFactory%601.CreateChannel%2A?displayProperty=fullName> or <xref:System.ServiceModel.DuplexClientBase%601.CreateChannel%2A?displayProperty=fullName> is called. In the case of an Windows Forms application, this means that these calls should occur after a call to the <xref:System.Windows.Forms.Application.Run%2A?displayProperty=fullName> method.  
+  
+   
+  
+## Examples  
+ The following code example shows a <xref:System.ServiceModel.CallbackBehaviorAttribute> on a callback object that uses the <xref:System.Threading.SynchronizationContext> object to determine which thread to marshal to, the <xref:System.ServiceModel.CallbackBehaviorAttribute.ValidateMustUnderstand%2A> property to enforce message validation, and the <xref:System.ServiceModel.CallbackBehaviorAttribute.IncludeExceptionDetailInFaults%2A> property to return exceptions as <xref:System.ServiceModel.FaultException> objects to the service for debugging purposes.  
+  
+ [!code-csharp[CallbackBehaviorAttribute#3](~/samples/snippets/csharp/VS_Snippets_CFX/callbackbehaviorattribute/cs/client.cs#3)]
+ [!code-vb[CallbackBehaviorAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/callbackbehaviorattribute/vb/client.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidateMustUnderstand">
@@ -300,9 +464,25 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that specifies whether the system or the application enforces SOAP <see langword="MustUnderstand" /> header processing.</summary>
+        <value>
+          <see langword="true" /> if the system is to perform SOAP header <see langword="MustUnderstand" /> processing; otherwise <see langword="false" />, which indicates that the application performs this processing. The default value is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.CallbackBehaviorAttribute.ValidateMustUnderstand%2A> property to turn off the enforced validation of arriving message headers. In normal execution, message headers are compared against the <xref:System.ServiceModel.Channels.MessageHeaders.UnderstoodHeaders%2A> property to confirm that arriving headers are explicitly handled by the callback object runtime. Set this to `false` to disable this checking. When set to `false`, the application must check for headers marked with MustUnderstand="true" and return a fault if one or more of them were not understood. This is useful when the callback is supposed to accept any incoming SOAP messages (for example, when using typed or untyped messages) and perform custom header processing.  
+  
+   
+  
+## Examples  
+ The following code example shows a <xref:System.ServiceModel.CallbackBehaviorAttribute> on a callback object that uses the <xref:System.Threading.SynchronizationContext> object to determine which thread to marshal to, the <xref:System.ServiceModel.CallbackBehaviorAttribute.ValidateMustUnderstand%2A> property to enforce message validation, and the <xref:System.ServiceModel.CallbackBehaviorAttribute.IncludeExceptionDetailInFaults%2A> property to return exceptions as <xref:System.ServiceModel.FaultException> objects to the service for debugging purposes.  
+  
+ [!code-csharp[CallbackBehaviorAttribute#3](~/samples/snippets/csharp/VS_Snippets_CFX/callbackbehaviorattribute/cs/client.cs#3)]
+ [!code-vb[CallbackBehaviorAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/callbackbehaviorattribute/vb/client.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

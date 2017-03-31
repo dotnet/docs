@@ -1,39 +1,47 @@
 ---
 uid: System.Net.Configuration.RequestCachingSection
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.RequestCachingSection.UnspecifiedMaximumAge
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.RequestCachingSection.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.RequestCachingSection.DisableAllCaching
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.RequestCachingSection.DefaultPolicyLevel
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.RequestCachingSection.IsPrivateCache
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.RequestCachingSection.DefaultHttpCachePolicy
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.RequestCachingSection.DefaultFtpCachePolicy
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

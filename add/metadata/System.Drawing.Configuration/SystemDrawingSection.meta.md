@@ -1,14 +1,20 @@
 ---
 uid: System.Drawing.Configuration.SystemDrawingSection
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Configuration.SystemDrawingSection.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Configuration.SystemDrawingSection.BitmapSuffix
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

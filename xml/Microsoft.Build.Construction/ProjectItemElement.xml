@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents an [Item Element (MSBuild)](../Topic/Item%20Element%20\(MSBuild\).md) in an MSBuild project.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,10 +37,10 @@
         <Parameter Name="unevaluatedValue" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="unevaluatedValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">Name of metadata.</param>
+        <param name="unevaluatedValue">Metadata to be added.</param>
+        <summary>Adds metadata to this item. Appends the metadata to any existing metadata.</summary>
+        <returns>Returns the modified metadata.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,9 +62,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the Exclude attribute value.</summary>
+        <value>Returns the Exclude attribute value. Returns an empty string if the attribute is not present.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Removes the Exclude attribute if the value to set is set to null or an empty string.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ExcludeLocation">
@@ -80,8 +87,8 @@
         <ReturnType>Microsoft.Build.Construction.ElementLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Location of the exclude attribute</summary>
+        <value>Returns <see cref="T:Microsoft.Build.Construction.ElementLocation" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,8 +105,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Determines if this item has any child metadata elements.</summary>
+        <value>Returns true if this item has child metadata elements; false otherwise.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,9 +128,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the Include attribute value.</summary>
+        <value>Returns the Include attribute value. Returns an empty string if the attribute is not present.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Removes the Include attribute if the value to set is set to null or an empty string.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IncludeLocation">
@@ -139,8 +153,8 @@
         <ReturnType>Microsoft.Build.Construction.ElementLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Location of the include attribute</summary>
+        <value>Returns the include location</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,8 +176,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the item element’s type.</summary>
+        <value>Returns the item element type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -185,9 +199,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the KeepDuplicates value.</summary>
+        <value>Returns the value of KeepDuplicates, or returns empty string if it is not present.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Removes the attribute if the value to set is empty or null.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="KeepDuplicatesLocation">
@@ -203,8 +224,8 @@
         <ReturnType>Microsoft.Build.Construction.ElementLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the Location of the KeepDuplicates attribute.</summary>
+        <value>Returns the location of the KeepDuplicates attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -226,9 +247,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the KeepMetadata attribute value.</summary>
+        <value>Returns the value of the KeepMetadata attribute or returns an empty string if it is not present.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Removes the attribute if the value to set is empty or null.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="KeepMetadataLocation">
@@ -244,8 +272,8 @@
         <ReturnType>Microsoft.Build.Construction.ElementLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the location of the KeepMetadata attribute.</summary>
+        <value>Returns the location of KeepMetadata.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -262,8 +290,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;Microsoft.Build.Construction.ProjectMetadataElement&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets all child metadata.</summary>
+        <value>Returns all child metadata.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -285,9 +313,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the Remove attribute value.</summary>
+        <value>Returns the Remove attribute value. Returns an empty string if the attribute is not present.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Removes the Remove attribute if the value to set is set to null or an empty string.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveLocation">
@@ -303,8 +338,8 @@
         <ReturnType>Microsoft.Build.Construction.ElementLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Location of the remove attribute</summary>
+        <value>Returns the remove attribute’s location.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -326,9 +361,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the RemoveMetadata attribute.</summary>
+        <value>Returns the RemoveMetadata value or returns an empty string if it is not present.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Removes the attribute if the value to set is empty or null.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveMetadataLocation">
@@ -344,8 +386,8 @@
         <ReturnType>Microsoft.Build.Construction.ElementLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the location of the RemoveMetadata attribute.</summary>
+        <value>Returns the RemoveMetadata attribute’s location.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

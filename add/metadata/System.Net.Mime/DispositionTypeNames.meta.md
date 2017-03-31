@@ -1,14 +1,17 @@
 ---
 uid: System.Net.Mime.DispositionTypeNames
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mime.DispositionTypeNames.Attachment
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mime.DispositionTypeNames.Inline
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

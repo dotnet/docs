@@ -1,4 +1,4 @@
 ---
 uid: System.Messaging.TrusteeType
-internalonly: False
+manager: "tyoung"
 ---

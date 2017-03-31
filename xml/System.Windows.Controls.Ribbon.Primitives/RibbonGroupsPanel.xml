@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a panel that arranges the <see cref="T:System.Windows.Controls.Ribbon.RibbonGroup" /> objects in a <see cref="T:System.Windows.Controls.Ribbon.RibbonTab" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonGroupsPanel" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,8 +47,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the current layout pass is after the star layout pass.</summary>
+        <value>
+          <see langword="true" /> if the current pass is a star layout pass; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,7 +66,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.Primitives.RibbonGroupsPanel.IsStarLayoutPass" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,9 +86,9 @@
         <Parameter Name="availableSize" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="availableSize">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="availableSize">The maximum size of the <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonGroupsPanel" />.</param>
+        <summary>Measures the child elements in this <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonGroupsPanel" /> in preparation of arranging them during the <see cref="M:System.Windows.Controls.StackPanel.ArrangeOverride(System.Windows.Size)" /> pass.</summary>
+        <returns>The desired size of the <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonGroupsPanel" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,8 +108,8 @@
         <Parameter Name="starLayoutInfoProvider" Type="System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfoBase" />
       </Parameters>
       <Docs>
-        <param name="starLayoutInfoProvider">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="starLayoutInfoProvider">The element to register.</param>
+        <summary>Registers an element to participate in the star layout.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,8 +129,8 @@
         <Parameter Name="starLayoutInfoProvider" Type="System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfoBase" />
       </Parameters>
       <Docs>
-        <param name="starLayoutInfoProvider">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="starLayoutInfoProvider">The element to remove.</param>
+        <summary>Removes an element from participation in the star layout.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

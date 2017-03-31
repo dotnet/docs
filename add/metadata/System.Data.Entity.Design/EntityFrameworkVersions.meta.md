@@ -1,24 +1,34 @@
 ---
 uid: System.Data.Entity.Design.EntityFrameworkVersions
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Entity.Design.EntityFrameworkVersions.GetSchemaXsd(System.Version,System.Data.Metadata.Edm.DataSpace)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Entity.Design.EntityFrameworkVersions.Version2
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Entity.Design.EntityFrameworkVersions.Version3
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Entity.Design.EntityFrameworkVersions.Version1
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

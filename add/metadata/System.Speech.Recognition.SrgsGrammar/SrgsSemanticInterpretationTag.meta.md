@@ -1,19 +1,29 @@
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag
-internalonly: False
----
-
----
-uid: System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag.#ctor(System.String)
-internalonly: False
----
-
----
-uid: System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag.Script
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag.#ctor
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
+---
+
+---
+uid: System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag.#ctor(System.String)
+ms.author: "kbridge"
+manager: "ghogen"
+---
+
+---
+uid: System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag.Script
+ms.author: "kbridge"
+manager: "ghogen"
+---
+
+---
+uid: System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag.#ctor
+ms.author: "kbridge"
+manager: "ghogen"
 ---

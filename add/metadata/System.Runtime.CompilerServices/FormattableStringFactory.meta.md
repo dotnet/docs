@@ -1,9 +1,13 @@
 ---
 uid: System.Runtime.CompilerServices.FormattableStringFactory
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.CompilerServices.FormattableStringFactory.Create(System.String,System.Object[])
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

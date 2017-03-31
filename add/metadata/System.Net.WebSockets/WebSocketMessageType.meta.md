@@ -1,4 +1,5 @@
 ---
 uid: System.Net.WebSockets.WebSocketMessageType
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

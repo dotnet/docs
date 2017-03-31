@@ -1,14 +1,20 @@
 ---
 uid: Microsoft.VisualBasic.CompilerServices.IVbHost
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.CompilerServices.IVbHost.GetParentWindow
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.CompilerServices.IVbHost.GetWindowTitle
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

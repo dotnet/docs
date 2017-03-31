@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Extends the <see cref="T:System.IdentityModel.Selectors.SecurityTokenRequirement" /> class by adding new properties that are useful for issued tokens.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlSecurityTokenRequirement" /> class to default values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <Parameter Name="element" Type="System.Xml.XmlElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The XML element from which the instance is to be loaded.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlSecurityTokenRequirement" /> class from the specified XML.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +61,8 @@
         <ReturnType>System.IdentityModel.Selectors.X509CertificateValidator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="T:System.IdentityModel.Selectors.X509CertificateValidator" /> that is associated with this token requirement.</summary>
+        <value>The X.509 certificate validator that is associated with this token requirement. The default is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,8 +79,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether the token handler will attempt to map the SAML identity to a Windows identity by using the unique principal name (UPN) claim.</summary>
+        <value>
+          <see langword="true" /> to attempt to map the SAML identity to a Windows identity; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,8 +98,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the claim type that will be used to generate the FederatedIdentity.Name property.</summary>
+        <value>The claim type. The default is the value of the <see cref="F:System.Security.Claims.ClaimsIdentity.DefaultNameClaimType" /> field.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,8 +116,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the claim type that is used to generate the FederatedIdentity.Roles property.</summary>
+        <value>The role claim type. The default is the value of the <see cref="F:System.Security.Claims.ClaimTypes.Role" /> field.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,11 +138,14 @@
         <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken" />
       </Parameters>
       <Docs>
-        <param name="audienceUriMode">To be added.</param>
-        <param name="token">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="audienceUriMode">One of the enumeration values that defines the audience requirement.</param>
+        <param name="token">The security token to be tested for Audience Enforcement.</param>
+        <summary>Returns a value that indicates whether Audience Enforcement checks are required for the specified token based on the settings of this <see cref="T:System.IdentityModel.Tokens.SamlSecurityTokenRequirement" />.</summary>
+        <returns>
+          <see langword="true" /> if Audience Enforcement should be applied; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="token" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ValidateAudienceRestriction">
@@ -161,10 +165,26 @@
         <Parameter Name="tokenAudiences" Type="System.Collections.Generic.IList&lt;System.Uri&gt;" />
       </Parameters>
       <Docs>
-        <param name="allowedAudienceUris">To be added.</param>
-        <param name="tokenAudiences">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="allowedAudienceUris">Collection of AudienceUris.</param>
+        <param name="tokenAudiences">Collection of audience URIs the token applies to.</param>
+        <summary>Checks the specified list of Audience URIs with the AllowedAudienceUri list.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="allowedAudienceUris" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="tokenAudiences" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.IdentityModel.Tokens.AudienceUriValidationFailedException">
+          <paramref name="tokenAudiences" /> is an empty collection.  
+  
+ -or-  
+  
+ <paramref name="allowedAudienceUris" /> is an empty collection.  
+  
+ -or-  
+  
+ Validation fails.</exception>
       </Docs>
     </Member>
   </Members>

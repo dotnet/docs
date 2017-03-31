@@ -1,14 +1,20 @@
 ---
 uid: System.Collections.StructuralComparisons
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.StructuralComparisons.StructuralComparer
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.StructuralComparisons.StructuralEqualityComparer
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

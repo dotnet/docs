@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.Design.ViewEvent
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ViewEvent.TemplateModeChanged
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ViewEvent.Paint
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ViewEvent.Click
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

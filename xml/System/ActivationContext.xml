@@ -24,8 +24,26 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Identifies the activation context for the current application. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ActivationContext> class contains an <xref:System.ApplicationIdentity> and provides internal-only access to the application manifest. The activation context is used during manifest-based activation to set up the domain policy and provide an application-based security model. For more information, see the <xref:System.Security.Policy.ApplicationSecurityManager> class.  
+  
+> [!IMPORTANT]
+>  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of an <xref:System.ActivationContext> object to obtain the <xref:System.ApplicationIdentity> for a manifest-based application. For correct results, execute this code example as a manifest-based application.  
+  
+ [!code-csharp[System.ActivationContext#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.ActivationContext/cs/program.cs#1)]
+ [!code-vb[System.ActivationContext#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.ActivationContext/vb/program.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ApplicationManifestBytes">
@@ -41,9 +59,16 @@
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the ClickOnce application manifest for the current application.</summary>
+        <value>A byte array that contains the ClickOnce application manifest for the application that is associated with this <see cref="T:System.ActivationContext" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the activation context is <xref:System.ActivationContext.ContextForm>, meaning that the application is not installed in the ClickOnce store, the deployment manifest is read from the temporary download folder. If the activation context is <xref:System.ActivationContext.ContextForm>, meaning that the application is installed in the ClickOnce store, the deployment manifest is read from the ClickOnce store. For more information about deployment manifests, see [ClickOnce Deployment Manifest](../Topic/ClickOnce%20Deployment%20Manifest.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreatePartialActivationContext">
@@ -63,10 +88,20 @@
         <Parameter Name="identity" Type="System.ApplicationIdentity" />
       </Parameters>
       <Docs>
-        <param name="identity">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="identity">An object that identifies an application.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ActivationContext" /> class using the specified application identity.</summary>
+        <returns>An object with the specified application identity.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ActivationContext.CreatePartialActivationContext%2A> method calls an internal constructor to create a new activation context. The implementation of the <xref:System.ActivationContext> class in the .NET Framework version 2.0 is designed for applications that are neither fully installed in a store nor fully contained in a folder. This method provides backward compatibility for later releases in which public constructors provide full activation contexts.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="identity" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">No deployment or application identity is specified in <paramref name="identity" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreatePartialActivationContext">
@@ -87,11 +122,33 @@
         <Parameter Name="manifestPaths" Type="System.String[]" />
       </Parameters>
       <Docs>
-        <param name="identity">To be added.</param>
-        <param name="manifestPaths">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="identity">An object that identifies an application.</param>
+        <param name="manifestPaths">A string array of manifest paths for the application.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ActivationContext" /> class using the specified application identity and array of manifest paths.</summary>
+        <returns>An object with the specified application identity and array of manifest paths.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ActivationContext.CreatePartialActivationContext%2A> method calls an internal constructor to create a new activation context. The implementation of the <xref:System.ActivationContext> class in the .NET Framework version 2.0 is designed for applications that are neither fully installed in a store nor fully contained in a folder. This method provides backward compatibility for later releases in which public constructors provide full activation contexts.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="identity" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="manifestPaths" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">No deployment or application identity is specified in <paramref name="identity" />.  
+  
+ -or-  
+  
+ <paramref name="identity" /> does not match the identity in the manifests.  
+  
+ -or-  
+  
+ <paramref name="identity" /> does not have the same number of components as the manifest paths.</exception>
       </Docs>
     </Member>
     <Member MemberName="DeploymentManifestBytes">
@@ -107,9 +164,16 @@
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the ClickOnce deployment manifest for the current application.</summary>
+        <value>A byte array that contains the ClickOnce deployment manifest for the application that is associated with this <see cref="T:System.ActivationContext" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the activation context is <xref:System.ActivationContext.ContextForm>, meaning that the application is not installed in the ClickOnce store, the deployment manifest is read from the temporary download folder. If the activation context is <xref:System.ActivationContext.ContextForm>, meaning that the application is installed in the ClickOnce store, the deployment manifest is read from the ClickOnce store. For more information about deployment manifests, see [ClickOnce Deployment Manifest](../Topic/ClickOnce%20Deployment%20Manifest.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -127,8 +191,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Releases all resources used by the <see cref="T:System.ActivationContext" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call <xref:System.ActivationContext.Dispose%2A> when you are finished using the <xref:System.ActivationContext>. The <xref:System.ActivationContext.Dispose%2A> method leaves the <xref:System.ActivationContext> in an unusable state. After calling <xref:System.ActivationContext.Dispose%2A>, you must release all references to the <xref:System.ActivationContext> so the garbage collector can reclaim the memory that the <xref:System.ActivationContext> was occupying. For more information, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+  
+> [!NOTE]
+>  Always call <xref:System.ActivationContext.Dispose%2A> before you release your last reference to the <xref:System.ActivationContext>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.ActivationContext> object's `Finalize` method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -146,7 +220,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Enables an <see cref="T:System.ActivationContext" /> object to attempt to free resources and perform other cleanup operations before the <see cref="T:System.ActivationContext" /> is reclaimed by garbage collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -164,9 +238,16 @@
         <ReturnType>System.ActivationContext+ContextForm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the form, or store context, for the current application.</summary>
+        <value>One of the enumeration values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A manifest-based application might not be installed in the ClickOnce store. An application that is not in the store, such as a manifest-activated application executing in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], is classified as <xref:System.ActivationContext.ContextForm>. An application that is contained in the store is classified as <xref:System.ActivationContext.ContextForm>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Identity">
@@ -183,9 +264,24 @@
         <ReturnType>System.ApplicationIdentity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the application identity for the current application.</summary>
+        <value>An <see cref="T:System.ApplicationIdentity" /> object that identifies the current application.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.ApplicationIdentity> uniquely identifies an application by its full name and location.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of an <xref:System.ActivationContext> object to obtain the <xref:System.ApplicationIdentity> for a manifest-based application. This code example is part of a larger example provided for the <xref:System.ActivationContext> class.  
+  
+ [!code-csharp[System.ActivationContext#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.ActivationContext/cs/program.cs#2)]
+ [!code-vb[System.ActivationContext#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.ActivationContext/vb/program.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
@@ -206,10 +302,11 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">The object to populate with data.</param>
+        <param name="context">The structure for this serialization.</param>
+        <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with the data needed to serialize the target object.</summary>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
   </Members>

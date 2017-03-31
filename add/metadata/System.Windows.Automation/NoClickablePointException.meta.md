@@ -1,29 +1,48 @@
 ---
 uid: System.Windows.Automation.NoClickablePointException
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.NoClickablePointException.#ctor(System.String,System.Exception)
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.NoClickablePointException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
----
-
----
-uid: System.Windows.Automation.NoClickablePointException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.NoClickablePointException.#ctor
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Automation.NoClickablePointException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Automation.NoClickablePointException.#ctor
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.NoClickablePointException.#ctor(System.String)
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---

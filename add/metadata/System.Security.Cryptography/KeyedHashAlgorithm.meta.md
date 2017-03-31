@@ -1,34 +1,62 @@
 ---
 uid: System.Security.Cryptography.KeyedHashAlgorithm
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.KeyedHashAlgorithm.KeyValue
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.KeyedHashAlgorithm.Dispose
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.KeyedHashAlgorithm.Create(System.String)
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.KeyedHashAlgorithm.#ctor
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.KeyedHashAlgorithm.Dispose(System.Boolean)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.KeyedHashAlgorithm.Create
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.KeyedHashAlgorithm.#ctor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.KeyedHashAlgorithm.Dispose(System.Boolean)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.KeyedHashAlgorithm.Create
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.KeyedHashAlgorithm.Key
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

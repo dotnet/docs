@@ -1,34 +1,41 @@
 ---
 uid: System.Configuration.SettingElementCollection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SettingElementCollection.Clear
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SettingElementCollection.Add(System.Configuration.SettingElement)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SettingElementCollection.Remove(System.Configuration.SettingElement)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SettingElementCollection.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SettingElementCollection.CollectionType
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SettingElementCollection.Get(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

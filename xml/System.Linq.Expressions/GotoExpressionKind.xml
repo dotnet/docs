@@ -21,7 +21,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies what kind of jump this <see cref="T:System.Linq.Expressions.GotoExpression" /> represents.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -49,7 +49,7 @@
         <ReturnType>System.Linq.Expressions.GotoExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.Linq.Expressions.GotoExpression" /> that represents a break statement.</summary>
       </Docs>
     </Member>
     <Member MemberName="Continue">
@@ -76,7 +76,7 @@
         <ReturnType>System.Linq.Expressions.GotoExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.Linq.Expressions.GotoExpression" /> that represents a continue statement.</summary>
       </Docs>
     </Member>
     <Member MemberName="Goto">
@@ -103,7 +103,7 @@
         <ReturnType>System.Linq.Expressions.GotoExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.Linq.Expressions.GotoExpression" /> that represents a jump to some location.</summary>
       </Docs>
     </Member>
     <Member MemberName="Return">
@@ -130,7 +130,7 @@
         <ReturnType>System.Linq.Expressions.GotoExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.Linq.Expressions.GotoExpression" /> that represents a return statement.</summary>
       </Docs>
     </Member>
   </Members>

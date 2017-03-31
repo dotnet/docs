@@ -1,9 +1,13 @@
 ---
 uid: System.ServiceModel.Discovery.Configuration.ContractTypeNameElementCollection
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.Configuration.ContractTypeNameElementCollection.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

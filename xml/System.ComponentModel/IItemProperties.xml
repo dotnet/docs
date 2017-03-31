@@ -8,8 +8,15 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines a property that provides information about an object's properties.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Data.CollectionView> can implement the <xref:System.ComponentModel.IItemProperties> interface to provide information about the properties that are available on the items in its collection.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ItemProperties">
@@ -25,8 +32,8 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.ComponentModel.ItemPropertyInfo&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection that contains information about the properties that are available on the items in a collection.</summary>
+        <value>A collection that contains information about the properties that are available on the items in a collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

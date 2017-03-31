@@ -1,44 +1,44 @@
 ---
 uid: System.Runtime.Remoting.Messaging.RemotingSurrogateSelector
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Messaging.RemotingSurrogateSelector.UseSoapFormat
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Messaging.RemotingSurrogateSelector.Filter
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Messaging.RemotingSurrogateSelector.SetRootObject(System.Object)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Messaging.RemotingSurrogateSelector.GetNextSelector
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Messaging.RemotingSurrogateSelector.GetRootObject
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Messaging.RemotingSurrogateSelector.GetSurrogate(System.Type,System.Runtime.Serialization.StreamingContext,System.Runtime.Serialization.ISurrogateSelector@)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Messaging.RemotingSurrogateSelector.ChainSelector(System.Runtime.Serialization.ISurrogateSelector)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Messaging.RemotingSurrogateSelector.#ctor
-internalonly: False
+manager: "ghogen"
 ---

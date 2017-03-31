@@ -1,34 +1,53 @@
 ---
 uid: System.IdentityModel.TypedAsyncResult`1
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.TypedAsyncResult`1.#ctor(System.Object)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.TypedAsyncResult`1.#ctor
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.TypedAsyncResult`1.#ctor(System.AsyncCallback,System.Object)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.TypedAsyncResult`1.Complete(`0,System.Boolean,System.Exception)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.TypedAsyncResult`1.Result
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.TypedAsyncResult`1.Complete
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.TypedAsyncResult`1.Complete(`0,System.Boolean)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.TypedAsyncResult`1.End(System.IAsyncResult)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

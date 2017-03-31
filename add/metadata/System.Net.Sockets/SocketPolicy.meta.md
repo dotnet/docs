@@ -1,9 +1,11 @@
 ---
 uid: System.Net.Sockets.SocketPolicy
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.SocketPolicy.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

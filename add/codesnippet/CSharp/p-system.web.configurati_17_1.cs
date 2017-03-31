@@ -1,1 +1,0 @@
-ruleSetting.EventName = "All Errors";

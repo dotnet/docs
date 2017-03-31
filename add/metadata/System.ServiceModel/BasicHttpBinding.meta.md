@@ -1,54 +1,88 @@
 ---
 uid: System.ServiceModel.BasicHttpBinding
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.BasicHttpBinding.BuildChannelFactory``1(System.ServiceModel.Channels.BindingParameterCollection)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.BasicHttpBinding.ShouldSerializeSecurity
-internalonly: False
----
-
----
-uid: System.ServiceModel.BasicHttpBinding.EnableHttpCookieContainer
-internalonly: False
----
-
----
-uid: System.ServiceModel.BasicHttpBinding.#ctor(System.String)
-internalonly: False
----
-
----
-uid: System.ServiceModel.BasicHttpBinding.Security
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.BasicHttpBinding.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.BasicHttpBinding.EnableHttpCookieContainer
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.BasicHttpBinding.BuildChannelFactory
+manager: "ghogen"
+---
+
+---
+uid: System.ServiceModel.BasicHttpBinding.#ctor(System.String)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.BasicHttpBinding.Security
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.BasicHttpBinding.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.BasicHttpBinding.#ctor(System.ServiceModel.BasicHttpSecurityMode)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.BasicHttpBinding.MessageEncoding
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.BasicHttpBinding.ShouldSerializeEnableHttpCookieContainer
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.BasicHttpBinding.CreateBindingElements
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

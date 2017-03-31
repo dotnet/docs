@@ -1,54 +1,76 @@
 ---
 uid: System.Runtime.InteropServices.UCOMIBindCtx
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.UCOMIBindCtx.RegisterObjectParam(System.String,System.Object)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.UCOMIBindCtx.SetBindOptions(System.Runtime.InteropServices.BIND_OPTS@)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.UCOMIBindCtx.RevokeObjectParam(System.String)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.UCOMIBindCtx.GetRunningObjectTable(System.Runtime.InteropServices.UCOMIRunningObjectTable@)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.UCOMIBindCtx.GetBindOptions(System.Runtime.InteropServices.BIND_OPTS@)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.UCOMIBindCtx.RegisterObjectBound(System.Object)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.UCOMIBindCtx.ReleaseBoundObjects
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.UCOMIBindCtx.RevokeObjectBound(System.Object)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.UCOMIBindCtx.EnumObjectParam(System.Runtime.InteropServices.UCOMIEnumString@)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.UCOMIBindCtx.GetObjectParam(System.String,System.Object@)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

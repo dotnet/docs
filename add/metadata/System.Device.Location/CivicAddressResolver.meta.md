@@ -1,24 +1,24 @@
 ---
 uid: System.Device.Location.CivicAddressResolver
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Device.Location.CivicAddressResolver.#ctor
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Device.Location.CivicAddressResolver.ResolveAddress(System.Device.Location.GeoCoordinate)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Device.Location.CivicAddressResolver.ResolveAddressCompleted
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Device.Location.CivicAddressResolver.ResolveAddressAsync(System.Device.Location.GeoCoordinate)
-internalonly: False
+manager: "martinek"
 ---

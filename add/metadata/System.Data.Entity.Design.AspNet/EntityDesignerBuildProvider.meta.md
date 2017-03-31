@@ -1,19 +1,27 @@
 ---
 uid: System.Data.Entity.Design.AspNet.EntityDesignerBuildProvider
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Entity.Design.AspNet.EntityDesignerBuildProvider.#ctor
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Entity.Design.AspNet.EntityDesignerBuildProvider.GetResultFlags(System.CodeDom.Compiler.CompilerResults)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Entity.Design.AspNet.EntityDesignerBuildProvider.GenerateCode(System.Web.Compilation.AssemblyBuilder)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

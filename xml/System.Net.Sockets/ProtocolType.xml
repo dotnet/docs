@@ -19,8 +19,24 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the protocols that the <see cref="T:System.Net.Sockets.Socket" /> class supports.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.Sockets.Socket> class uses the <xref:System.Net.Sockets.ProtocolType> enumeration to inform the Windows Sockets API of the requested protocol. Low-level driver software for the requested protocol must be present on the computer for the <xref:System.Net.Sockets.Socket> to be created successfully.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use <xref:System.Net.Sockets.ProtocolType> to instantiate a <xref:System.Net.Sockets.Socket>.  
+  
+ [!code-cpp[Socket_Send_Recieve#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Socket_Send_Recieve/CPP/source.cpp#1)]
+ [!code-csharp[Socket_Send_Recieve#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Socket_Send_Recieve/CS/source.cs#1)]
+ [!code-vb[Socket_Send_Recieve#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Socket_Send_Recieve/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Ggp">
@@ -45,7 +61,7 @@
         <ReturnType>System.Net.Sockets.ProtocolType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gateway To Gateway Protocol.</summary>
       </Docs>
     </Member>
     <Member MemberName="Icmp">
@@ -70,7 +86,7 @@
         <ReturnType>System.Net.Sockets.ProtocolType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Internet Control Message Protocol.</summary>
       </Docs>
     </Member>
     <Member MemberName="IcmpV6">
@@ -95,7 +111,7 @@
         <ReturnType>System.Net.Sockets.ProtocolType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Internet Control Message Protocol for IPv6.</summary>
       </Docs>
     </Member>
     <Member MemberName="Idp">
@@ -120,7 +136,7 @@
         <ReturnType>System.Net.Sockets.ProtocolType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Internet Datagram Protocol.</summary>
       </Docs>
     </Member>
     <Member MemberName="Igmp">
@@ -145,7 +161,7 @@
         <ReturnType>System.Net.Sockets.ProtocolType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Internet Group Management Protocol.</summary>
       </Docs>
     </Member>
     <Member MemberName="IP">
@@ -170,7 +186,7 @@
         <ReturnType>System.Net.Sockets.ProtocolType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Internet Protocol.</summary>
       </Docs>
     </Member>
     <Member MemberName="IPSecAuthenticationHeader">
@@ -195,7 +211,7 @@
         <ReturnType>System.Net.Sockets.ProtocolType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>IPv6 Authentication header. For details, see RFC 2292 section 2.2.1, available at http://www.ietf.org.</summary>
       </Docs>
     </Member>
     <Member MemberName="IPSecEncapsulatingSecurityPayload">
@@ -220,7 +236,7 @@
         <ReturnType>System.Net.Sockets.ProtocolType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>IPv6 Encapsulating Security Payload header.</summary>
       </Docs>
     </Member>
     <Member MemberName="IPv4">
@@ -245,7 +261,7 @@
         <ReturnType>System.Net.Sockets.ProtocolType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Internet Protocol version 4.</summary>
       </Docs>
     </Member>
     <Member MemberName="IPv6">
@@ -270,7 +286,7 @@
         <ReturnType>System.Net.Sockets.ProtocolType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Internet Protocol version 6 (IPv6).</summary>
       </Docs>
     </Member>
     <Member MemberName="IPv6DestinationOptions">
@@ -295,7 +311,7 @@
         <ReturnType>System.Net.Sockets.ProtocolType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>IPv6 Destination Options header.</summary>
       </Docs>
     </Member>
     <Member MemberName="IPv6FragmentHeader">
@@ -320,7 +336,7 @@
         <ReturnType>System.Net.Sockets.ProtocolType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>IPv6 Fragment header.</summary>
       </Docs>
     </Member>
     <Member MemberName="IPv6HopByHopOptions">
@@ -345,7 +361,7 @@
         <ReturnType>System.Net.Sockets.ProtocolType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>IPv6 Hop by Hop Options header.</summary>
       </Docs>
     </Member>
     <Member MemberName="IPv6NoNextHeader">
@@ -370,7 +386,7 @@
         <ReturnType>System.Net.Sockets.ProtocolType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>IPv6 No next header.</summary>
       </Docs>
     </Member>
     <Member MemberName="IPv6RoutingHeader">
@@ -395,7 +411,7 @@
         <ReturnType>System.Net.Sockets.ProtocolType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>IPv6 Routing header.</summary>
       </Docs>
     </Member>
     <Member MemberName="Ipx">
@@ -420,7 +436,7 @@
         <ReturnType>System.Net.Sockets.ProtocolType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Internet Packet Exchange Protocol.</summary>
       </Docs>
     </Member>
     <Member MemberName="ND">
@@ -445,7 +461,7 @@
         <ReturnType>System.Net.Sockets.ProtocolType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Net Disk Protocol (unofficial).</summary>
       </Docs>
     </Member>
     <Member MemberName="Pup">
@@ -470,7 +486,7 @@
         <ReturnType>System.Net.Sockets.ProtocolType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>PARC Universal Packet Protocol.</summary>
       </Docs>
     </Member>
     <Member MemberName="Raw">
@@ -495,7 +511,7 @@
         <ReturnType>System.Net.Sockets.ProtocolType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Raw IP packet protocol.</summary>
       </Docs>
     </Member>
     <Member MemberName="Spx">
@@ -520,7 +536,7 @@
         <ReturnType>System.Net.Sockets.ProtocolType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sequenced Packet Exchange protocol.</summary>
       </Docs>
     </Member>
     <Member MemberName="SpxII">
@@ -545,7 +561,7 @@
         <ReturnType>System.Net.Sockets.ProtocolType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sequenced Packet Exchange version 2 protocol.</summary>
       </Docs>
     </Member>
     <Member MemberName="Tcp">
@@ -570,7 +586,7 @@
         <ReturnType>System.Net.Sockets.ProtocolType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Transmission Control Protocol.</summary>
       </Docs>
     </Member>
     <Member MemberName="Udp">
@@ -595,7 +611,7 @@
         <ReturnType>System.Net.Sockets.ProtocolType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>User Datagram Protocol.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -620,7 +636,7 @@
         <ReturnType>System.Net.Sockets.ProtocolType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Unknown protocol.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unspecified">
@@ -645,7 +661,7 @@
         <ReturnType>System.Net.Sockets.ProtocolType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Unspecified protocol.</summary>
       </Docs>
     </Member>
   </Members>

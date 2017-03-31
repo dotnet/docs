@@ -30,9 +30,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <typeparam name="TMetadata">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="T">The type of the object referenced.</typeparam>
+    <typeparam name="TMetadata">The type of the metadata.</typeparam>
+    <summary>Provides a lazy indirect reference to an object and its associated metadata for use by the Managed Extensibility Framework.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -61,8 +61,8 @@
         <Parameter Name="metadata" Type="TMetadata" />
       </Parameters>
       <Docs>
-        <param name="metadata">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="metadata">The metadata associated with the referenced object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Lazy`2" /> class with the specified metadata.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,9 +92,9 @@
         <Parameter Name="metadata" Type="TMetadata" />
       </Parameters>
       <Docs>
-        <param name="valueFactory">To be added.</param>
-        <param name="metadata">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="valueFactory">A function that returns the referenced object.</param>
+        <param name="metadata">The metadata associated with the referenced object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Lazy`2" /> class with the specified metadata that uses the specified function to get the referenced object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,9 +124,9 @@
         <Parameter Name="isThreadSafe" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="metadata">To be added.</param>
-        <param name="isThreadSafe">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="metadata">The metadata associated with the referenced object.</param>
+        <param name="isThreadSafe">Indicates whether the <see cref="T:System.Lazy`2" /> object that is created will be thread-safe.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Lazy`2" /> class with the specified metadata and thread safety value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,10 +156,17 @@
         <Parameter Name="mode" Type="System.Threading.LazyThreadSafetyMode" />
       </Parameters>
       <Docs>
-        <param name="metadata">To be added.</param>
-        <param name="mode">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="metadata">The metadata associated with the referenced object.</param>
+        <param name="mode">The thread synchronization mode.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Lazy`2" /> class with the specified metadata and thread synchronization mode.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Threading.LazyThreadSafetyMode> for more information on thread synchronization and <xref:System.Lazy%602>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -189,10 +196,10 @@
         <Parameter Name="isThreadSafe" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="valueFactory">To be added.</param>
-        <param name="metadata">To be added.</param>
-        <param name="isThreadSafe">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="valueFactory">A function that returns the referenced object.</param>
+        <param name="metadata">The metadata associated with the referenced object.</param>
+        <param name="isThreadSafe">Indicates whether the <see cref="T:System.Lazy`2" /> object that is created will be thread-safe.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Lazy`2" /> class with the specified metadata and thread safety value that uses the specified function to get the referenced object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -223,11 +230,18 @@
         <Parameter Name="mode" Type="System.Threading.LazyThreadSafetyMode" />
       </Parameters>
       <Docs>
-        <param name="valueFactory">To be added.</param>
-        <param name="metadata">To be added.</param>
-        <param name="mode">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="valueFactory">A function that returns the referenced object</param>
+        <param name="metadata">The metadata associated with the referenced object.</param>
+        <param name="mode">The thread synchronization mode</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Lazy`2" /> class with the specified metadata and thread synchronization mode that uses the specified function to get the referenced object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Threading.LazyThreadSafetyMode> for more information on thread synchronization and <xref:System.Lazy%602>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Metadata">
@@ -255,8 +269,8 @@
         <ReturnType>TMetadata</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the metadata associated with the referenced object.</summary>
+        <value>The metadata associated with the referenced object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

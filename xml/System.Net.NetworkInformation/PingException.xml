@@ -20,8 +20,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The exception that is thrown when a <see cref="Overload:System.Net.NetworkInformation.Ping.Send" /> or <see cref="Overload:System.Net.NetworkInformation.Ping.SendAsync" /> method calls a method that throws an exception.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.NetworkInformation.Ping> class throws this exception to indicate that while sending an Internet Control Message Protocol (ICMP) Echo request, a method called by the <xref:System.Net.NetworkInformation.Ping> class threw an unhandled exception. Applications should check the inner exception of a <xref:System.Net.NetworkInformation.PingException> object to identify the problem.  
+  
+ The <xref:System.Net.NetworkInformation.Ping> class does not throw this exception if the ICMP Echo request fails because of network, ICMP, or destination errors. For such errors, the <xref:System.Net.NetworkInformation.Ping> class returns a <xref:System.Net.NetworkInformation.PingReply> object with the relevant <xref:System.Net.NetworkInformation.IPStatus> value set in the <xref:System.Net.NetworkInformation.PingReply.Status%2A> property.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,9 +55,16 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="message">A <see cref="T:System.String" /> that describes the error.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.NetworkInformation.PingException" /> class using the specified message.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor initializes the <xref:System.Exception.Message%2A> property with the text in the `message` parameter. The <xref:System.Exception.InnerException%2A> property is set to `null`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -70,10 +86,17 @@
         <Parameter Name="streamingContext" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="serializationInfo">To be added.</param>
-        <param name="streamingContext">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="serializationInfo">The object that holds the serialized object data.</param>
+        <param name="streamingContext">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> that specifies the contextual information about the source or destination for this serialization.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.NetworkInformation.PingException" /> class with serialized data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is called during deserialization to reconstitute a previously serialized <xref:System.Net.NetworkInformation.PingException> object.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -99,10 +122,17 @@
         <Parameter Name="innerException" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="innerException">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="message">A <see cref="T:System.String" /> that describes the error.</param>
+        <param name="innerException">The exception that causes the current exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.NetworkInformation.PingException" /> class using the specified message and inner exception.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor initializes the <xref:System.Exception.Message%2A> property with the text in the `message` parameter, and the <xref:System.Exception.InnerException%2A> property with the `innerException` parameter.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

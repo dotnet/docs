@@ -1,34 +1,47 @@
 ---
 uid: System.IdentityModel.Tokens.SigningCredentials
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.SigningCredentials.SignatureAlgorithm
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.SigningCredentials.#ctor
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.SigningCredentials.#ctor(System.IdentityModel.Tokens.SecurityKey,System.String,System.String,System.IdentityModel.Tokens.SecurityKeyIdentifier)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.SigningCredentials.SigningKeyIdentifier
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.SigningCredentials.SigningKey
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.SigningCredentials.#ctor(System.IdentityModel.Tokens.SecurityKey,System.String,System.String)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.SigningCredentials.DigestAlgorithm
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

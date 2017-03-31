@@ -1,19 +1,19 @@
 ---
 uid: Microsoft.JScript.ArgumentsObject
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.ArgumentsObject.caller
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.ArgumentsObject.callee
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.ArgumentsObject.length
-internalonly: False
+ms.author: "mikejo"
 ---

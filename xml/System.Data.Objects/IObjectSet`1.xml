@@ -22,8 +22,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="TEntity">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="TEntity">The type of an entity object returned from the query.</typeparam>
+    <summary>Provides functionality to allow making modifications to a set of data objects.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -43,9 +43,16 @@
         <Parameter Name="entity" Type="TEntity" />
       </Parameters>
       <Docs>
-        <param name="entity">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="entity">The new object to add to the set.</param>
+        <summary>Notifies the set that an object that represents a new entity must be added to the set.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Changes to the set may not be visible in an enumeration of the set until changes to that set have been persisted in some manner. This behavior depends on the specific implementation of the <xref:System.Data.Objects.IObjectSet%601>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Attach">
@@ -64,9 +71,16 @@
         <Parameter Name="entity" Type="TEntity" />
       </Parameters>
       <Docs>
-        <param name="entity">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="entity">The existing object to add to the set.</param>
+        <summary>Notifies the set that an object that represents an existing entity must be added to the set.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Changes to the set may not be visible in an enumeration of the set until changes to that set have been persisted in some manner. This behavior depends on the specific implementation of the <xref:System.Data.Objects.IObjectSet%601>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DeleteObject">
@@ -85,9 +99,16 @@
         <Parameter Name="entity" Type="TEntity" />
       </Parameters>
       <Docs>
-        <param name="entity">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="entity">The existing object to delete from the set.</param>
+        <summary>Notifies the set that an object that represents an existing entity must be deleted from the set.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Changes to the set may not be visible in an enumeration of the set until changes to that set have been persisted in some manner. This behavior depends on the specific implementation of the <xref:System.Data.Objects.IObjectSet%601>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Detach">
@@ -106,9 +127,16 @@
         <Parameter Name="entity" Type="TEntity" />
       </Parameters>
       <Docs>
-        <param name="entity">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="entity">The object to detach from the set.</param>
+        <summary>Notifies the set that an object that represents an existing entity must be detached from the set.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Changes to the set may not be visible in an enumeration of the set until changes to that set have been persisted in some manner. This behavior depends on the specific implementation of the <xref:System.Data.Objects.IObjectSet%601>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

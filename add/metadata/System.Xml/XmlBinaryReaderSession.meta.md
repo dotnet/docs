@@ -1,34 +1,55 @@
 ---
 uid: System.Xml.XmlBinaryReaderSession
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.XmlBinaryReaderSession.Add(System.Int32,System.String)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.XmlBinaryReaderSession.TryLookup
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.XmlBinaryReaderSession.TryLookup(System.Int32,System.Xml.XmlDictionaryString@)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.XmlBinaryReaderSession.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.XmlBinaryReaderSession.Clear
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.XmlBinaryReaderSession.TryLookup(System.String,System.Xml.XmlDictionaryString@)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.XmlBinaryReaderSession.TryLookup(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString@)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

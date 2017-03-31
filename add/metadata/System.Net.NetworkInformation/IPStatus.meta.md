@@ -1,4 +1,5 @@
 ---
 uid: System.Net.NetworkInformation.IPStatus
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

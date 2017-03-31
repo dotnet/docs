@@ -1,4 +1,5 @@
 ---
 uid: System.Net.BindIPEndPoint
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

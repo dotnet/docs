@@ -1,29 +1,41 @@
 ---
 uid: System.IdentityModel.Protocols.WSTrust.BinaryExchange
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.BinaryExchange.BinaryData
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.BinaryExchange.#ctor(System.Byte[],System.Uri,System.Uri)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.BinaryExchange.EncodingType
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Protocols.WSTrust.BinaryExchange.#ctor
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.BinaryExchange.ValueType
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.BinaryExchange.#ctor(System.Byte[],System.Uri)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

@@ -1,9 +1,13 @@
 ---
 uid: System.Diagnostics.Contracts.ContractArgumentValidatorAttribute
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.Contracts.ContractArgumentValidatorAttribute.#ctor
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

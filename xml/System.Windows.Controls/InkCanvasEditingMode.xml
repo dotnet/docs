@@ -10,8 +10,23 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the editing mode for the <see cref="T:System.Windows.Controls.InkCanvas" /></summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.InkCanvas.EditingMode%2A> and <xref:System.Windows.Controls.InkCanvas.EditingModeInverted%2A> properties use the <xref:System.Windows.Controls.InkCanvasEditingMode> to specify how the <xref:System.Windows.Controls.InkCanvas> behaves when it receives input from a tablet pen.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to allow users to partially erase strokes with the inverted tip of a stylus. An elliptical cursor appears on the <xref:System.Windows.Controls.InkCanvas> when the user erases ink.  
+  
+ [!code-csharp[InkCanvasSamples#6](~/samples/snippets/csharp/VS_Snippets_Wpf/InkCanvasSamples/CSharp/Window1.xaml.cs#6)]
+ [!code-vb[InkCanvasSamples#6](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InkCanvasSamples/VisualBasic/Window1.xaml.vb#6)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="EraseByPoint">
@@ -27,7 +42,7 @@
         <ReturnType>System.Windows.Controls.InkCanvasEditingMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the pen erases part of a stroke when the pen intersects the stroke.</summary>
       </Docs>
     </Member>
     <Member MemberName="EraseByStroke">
@@ -43,7 +58,7 @@
         <ReturnType>System.Windows.Controls.InkCanvasEditingMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the pen erases an entire stroke when the pen intersects the stroke.</summary>
       </Docs>
     </Member>
     <Member MemberName="GestureOnly">
@@ -59,7 +74,7 @@
         <ReturnType>System.Windows.Controls.InkCanvasEditingMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the <see cref="T:System.Windows.Controls.InkCanvas" /> responds to gestures, and does not receive ink.</summary>
       </Docs>
     </Member>
     <Member MemberName="Ink">
@@ -75,7 +90,7 @@
         <ReturnType>System.Windows.Controls.InkCanvasEditingMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that ink appears on the <see cref="T:System.Windows.Controls.InkCanvas" /> when the pen sends data to it.</summary>
       </Docs>
     </Member>
     <Member MemberName="InkAndGesture">
@@ -91,7 +106,7 @@
         <ReturnType>System.Windows.Controls.InkCanvasEditingMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the <see cref="T:System.Windows.Controls.InkCanvas" /> responds to gestures, and receives ink.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -107,7 +122,7 @@
         <ReturnType>System.Windows.Controls.InkCanvasEditingMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that no action is taken when the pen sends data to the <see cref="T:System.Windows.Controls.InkCanvas" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -123,7 +138,7 @@
         <ReturnType>System.Windows.Controls.InkCanvasEditingMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the pen selects strokes and elements on the <see cref="T:System.Windows.Controls.InkCanvas" />.</summary>
       </Docs>
     </Member>
   </Members>

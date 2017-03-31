@@ -11,8 +11,45 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains meta-information about an individual element within the configuration. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ElementInformation> object contains meta-information about an individual element within the configuration. This object can be used when validating and changing the properties of an individual element.  
+  
+   
+  
+## Examples  
+ The following example shows how to get the <xref:System.Configuration.ElementInformation> associated with a <xref:System.Configuration.ConfigurationElement> object.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#80](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/ElementInformation.cs#80)]
+ [!code-vb[System.Configuration.ConfigurationElement#80](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/ElementInformation.vb#80)]  
+  
+ The following excerpt shows the configuration used by the previous code example.  
+  
+```  
+<?xml version="1.0" encoding="utf-8"?>  
+<configuration>  
+  <configSections>  
+    <section name="MyUrls" type="Samples.AspNet.UrlsSection,  
+      ConfigurationElement, Version=1.0.0.0, Culture=neutral,  
+      PublicKeyToken=null" allowDefinition="Everywhere"  
+      allowExeDefinition="MachineToApplication"  
+      restartOnExternalChanges="true" />  
+  </configSections>  
+  <MyUrls name="MyFavorites">  
+    <simple name="Contoso" url="http://www.contoso.com" port="8080" />  
+    <urls>  
+      <clear />  
+      <add name="Microsoft" url="http://www.microsoft.com" port="0" />  
+    </urls>  
+  </MyUrls>  
+</configuration>  
+```  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Errors">
@@ -28,9 +65,19 @@
         <ReturnType>System.Collections.ICollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the errors for the associated element and subelements</summary>
+        <value>The collection containing the errors for the associated element and subelements</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the <xref:System.Configuration.ElementInformation.Errors%2A> collection.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#89](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/ElementInformation.cs#89)]
+ [!code-vb[System.Configuration.ConfigurationElement#89](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/ElementInformation.vb#89)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsCollection">
@@ -46,9 +93,20 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether the associated <see cref="T:System.Configuration.ConfigurationElement" /> object is a <see cref="T:System.Configuration.ConfigurationElementCollection" /> collection.</summary>
+        <value>
+          <see langword="true" /> if the associated <see cref="T:System.Configuration.ConfigurationElement" /> object is a <see cref="T:System.Configuration.ConfigurationElementCollection" /> collection; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the <xref:System.Configuration.ElementInformation.IsCollection%2A> property.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#81](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/ElementInformation.cs#81)]
+ [!code-vb[System.Configuration.ConfigurationElement#81](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/ElementInformation.vb#81)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsLocked">
@@ -64,9 +122,25 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the associated <see cref="T:System.Configuration.ConfigurationElement" /> object cannot be modified.</summary>
+        <value>
+          <see langword="true" /> if the associated <see cref="T:System.Configuration.ConfigurationElement" /> object cannot be modified; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ElementInformation.IsLocked%2A> property returns `true` when the related element is locked by the <xref:System.Configuration.SectionInformation.AllowOverride%2A>, <xref:System.Configuration.SectionInformation.AllowDefinition%2A>, or <xref:System.Configuration.ConfigurationElement.LockAllAttributesExcept%2A> property.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Configuration.ElementInformation.IsLocked%2A> property.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#82](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/ElementInformation.cs#82)]
+ [!code-vb[System.Configuration.ConfigurationElement#82](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/ElementInformation.vb#82)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsPresent">
@@ -82,9 +156,20 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether the associated <see cref="T:System.Configuration.ConfigurationElement" /> object is in the configuration file.</summary>
+        <value>
+          <see langword="true" /> if the associated <see cref="T:System.Configuration.ConfigurationElement" /> object is in the configuration file; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the <xref:System.Configuration.ElementInformation.IsPresent%2A> property.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#83](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/ElementInformation.cs#83)]
+ [!code-vb[System.Configuration.ConfigurationElement#83](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/ElementInformation.vb#83)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LineNumber">
@@ -100,9 +185,19 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the line number in the configuration file where the associated <see cref="T:System.Configuration.ConfigurationElement" /> object is defined.</summary>
+        <value>The line number in the configuration file where the associated <see cref="T:System.Configuration.ConfigurationElement" /> object is defined.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the <xref:System.Configuration.ElementInformation.LineNumber%2A> property.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#84](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/ElementInformation.cs#84)]
+ [!code-vb[System.Configuration.ConfigurationElement#84](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/ElementInformation.vb#84)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -118,9 +213,24 @@
         <ReturnType>System.Configuration.PropertyInformationCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a <see cref="T:System.Configuration.PropertyInformationCollection" /> collection of the properties in the associated <see cref="T:System.Configuration.ConfigurationElement" /> object.</summary>
+        <value>A <see cref="T:System.Configuration.PropertyInformationCollection" /> collection of the properties in the associated <see cref="T:System.Configuration.ConfigurationElement" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The properties of a <xref:System.Configuration.ConfigurationElement> object are the attributes and subelements associated with that configuration element in the configuration file.  
+  
+   
+  
+## Examples  
+ The following example shows how to get the <xref:System.Configuration.ElementInformation.Properties%2A> collection.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#85](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/ElementInformation.cs#85)]
+ [!code-vb[System.Configuration.ConfigurationElement#85](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/ElementInformation.vb#85)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Source">
@@ -136,9 +246,24 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the source file where the associated <see cref="T:System.Configuration.ConfigurationElement" /> object originated.</summary>
+        <value>The source file where the associated <see cref="T:System.Configuration.ConfigurationElement" /> object originated.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Configuration.ConfigurationElement> object may be created in a default state, in which case this property returns `null`.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Configuration.ElementInformation.Source%2A> property.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#86](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/ElementInformation.cs#86)]
+ [!code-vb[System.Configuration.ConfigurationElement#86](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/ElementInformation.vb#86)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -154,9 +279,19 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the type of the associated <see cref="T:System.Configuration.ConfigurationElement" /> object.</summary>
+        <value>The type of the associated <see cref="T:System.Configuration.ConfigurationElement" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the <xref:System.Configuration.ElementInformation.Type%2A> property.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#87](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/ElementInformation.cs#87)]
+ [!code-vb[System.Configuration.ConfigurationElement#87](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/ElementInformation.vb#87)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Validator">
@@ -172,9 +307,24 @@
         <ReturnType>System.Configuration.ConfigurationValidatorBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the object used to validate the associated <see cref="T:System.Configuration.ConfigurationElement" /> object.</summary>
+        <value>The object used to validate the associated <see cref="T:System.Configuration.ConfigurationElement" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A validator object is not required, and this property may return `null`.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Configuration.ElementInformation.Validator%2A> property.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#88](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/ElementInformation.cs#88)]
+ [!code-vb[System.Configuration.ConfigurationElement#88](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/ElementInformation.vb#88)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

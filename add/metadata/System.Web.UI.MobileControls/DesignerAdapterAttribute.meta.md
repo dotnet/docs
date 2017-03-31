@@ -1,19 +1,29 @@
 ---
 uid: System.Web.UI.MobileControls.DesignerAdapterAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.DesignerAdapterAttribute.#ctor(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.DesignerAdapterAttribute.#ctor(System.Type)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.DesignerAdapterAttribute.TypeName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.DesignerAdapterAttribute.#ctor
+ms.author: "riande"
+manager: "wpickett"
 ---

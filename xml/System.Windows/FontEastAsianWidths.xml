@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a mechanism for the user to select glyphs of different width styles.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a specified font does not support a particular glyph set, the default glyphs are displayed instead.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Full">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.FontEastAsianWidths</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Replaces uniform width glyphs with full width (usually em) glyphs.</summary>
       </Docs>
     </Member>
     <Member MemberName="Half">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.FontEastAsianWidths</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Replaces uniform width glyphs with half width (half em) glyphs.</summary>
       </Docs>
     </Member>
     <Member MemberName="Normal">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.FontEastAsianWidths</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Default width style.</summary>
       </Docs>
     </Member>
     <Member MemberName="Proportional">
@@ -75,7 +82,7 @@
         <ReturnType>System.Windows.FontEastAsianWidths</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Replaces uniform width glyphs with proportionally spaced glyphs.</summary>
       </Docs>
     </Member>
     <Member MemberName="Quarter">
@@ -91,7 +98,7 @@
         <ReturnType>System.Windows.FontEastAsianWidths</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Replaces uniform width glyphs with one-quarter width (one-quarter em) glyphs.</summary>
       </Docs>
     </Member>
     <Member MemberName="Third">
@@ -107,7 +114,7 @@
         <ReturnType>System.Windows.FontEastAsianWidths</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Replaces uniform width glyphs with one-third width (one-third em) glyphs.</summary>
       </Docs>
     </Member>
   </Members>

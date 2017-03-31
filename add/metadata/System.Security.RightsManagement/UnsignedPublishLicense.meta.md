@@ -1,54 +1,83 @@
 ---
 uid: System.Security.RightsManagement.UnsignedPublishLicense
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.RightsManagement.UnsignedPublishLicense.ToString
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.RightsManagement.UnsignedPublishLicense.ContentId
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.RightsManagement.UnsignedPublishLicense.LocalizedNameDescriptionDictionary
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.RightsManagement.UnsignedPublishLicense.ReferralInfoName
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.RightsManagement.UnsignedPublishLicense.Grants
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.RightsManagement.UnsignedPublishLicense.#ctor(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.RightsManagement.UnsignedPublishLicense.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.RightsManagement.UnsignedPublishLicense.Owner
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.RightsManagement.UnsignedPublishLicense.ReferralInfoUri
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.RightsManagement.UnsignedPublishLicense.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.RightsManagement.UnsignedPublishLicense.Sign(System.Security.RightsManagement.SecureEnvironment,System.Security.RightsManagement.UseLicense@)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

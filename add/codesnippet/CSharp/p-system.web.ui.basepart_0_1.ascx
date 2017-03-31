@@ -1,1 +1,0 @@
-      c.Dependency = new CacheDependency(MapPath("dep1.txt"));

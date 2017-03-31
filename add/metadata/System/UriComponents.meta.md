@@ -1,4 +1,5 @@
 ---
 uid: System.UriComponents
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

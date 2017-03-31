@@ -1,1 +1,0 @@
-        Dim hostInfo As IPHostEntry = Dns.GetHostByName("www.contoso.com")

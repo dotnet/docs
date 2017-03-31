@@ -1,29 +1,35 @@
 ---
 uid: System.Configuration.KeyValueConfigurationElement
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.KeyValueConfigurationElement.#ctor(System.String,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.KeyValueConfigurationElement.Key
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.KeyValueConfigurationElement.Value
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.KeyValueConfigurationElement.Properties
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.KeyValueConfigurationElement.Init
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

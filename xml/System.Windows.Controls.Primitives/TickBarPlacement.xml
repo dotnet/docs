@@ -10,8 +10,22 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the placement of a <see cref="T:System.Windows.Controls.Primitives.TickBar" /> with respect to the <see cref="T:System.Windows.Controls.Primitives.Track" /> of a <see cref="T:System.Windows.Controls.Slider" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.Primitives.TickBarPlacement> enumeration is used to set the <xref:System.Windows.Controls.Primitives.TickBar.Placement%2A> property of a <xref:System.Windows.Controls.Primitives.TickBar>. The actual position of a <xref:System.Windows.Controls.Primitives.TickBar> is defined by the <xref:System.Windows.Controls.ControlTemplate> of a <xref:System.Windows.Controls.Slider> control. The <xref:System.Windows.Controls.Primitives.TickBar.Placement%2A> property identifies this position so that the ticks of a <xref:System.Windows.Controls.Primitives.TickBar> are drawn correctly. The following illustration shows how <xref:System.Windows.Controls.Primitives.TickBar> controls are drawn when the <xref:System.Windows.Controls.Primitives.TickBar.Placement%2A> property is set to Top and Bottom.  
+  
+ ![TickBar placement](~/add/media/tickbarplacement.png "TickBar placement")  
+  
+   
+  
+## Examples  
+ For an example of a <xref:System.Windows.Controls.Primitives.TickBar> that is included in the <xref:System.Windows.Style> of a <xref:System.Windows.Controls.Slider>, see [Slider Styles and Templates](../Topic/Slider%20Styles%20and%20Templates.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Bottom">
@@ -27,7 +41,7 @@
         <ReturnType>System.Windows.Controls.Primitives.TickBarPlacement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The tick bar is positioned below the <see cref="T:System.Windows.Controls.Primitives.Track" /> of the <see cref="T:System.Windows.Controls.Slider" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -43,7 +57,7 @@
         <ReturnType>System.Windows.Controls.Primitives.TickBarPlacement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The tick bar is positioned to the left of the <see cref="T:System.Windows.Controls.Primitives.Track" /> of the <see cref="T:System.Windows.Controls.Slider" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -59,7 +73,7 @@
         <ReturnType>System.Windows.Controls.Primitives.TickBarPlacement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The tick bar is positioned to the right of the <see cref="T:System.Windows.Controls.Primitives.Track" /> of the <see cref="T:System.Windows.Controls.Slider" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -75,7 +89,7 @@
         <ReturnType>System.Windows.Controls.Primitives.TickBarPlacement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The tick bar is positioned above the <see cref="T:System.Windows.Controls.Primitives.Track" /> of the <see cref="T:System.Windows.Controls.Slider" />.</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.WebControls.ListItemControlBuilder
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.ListItemControlBuilder.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.ListItemControlBuilder.AllowWhitespaceLiterals
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.ListItemControlBuilder.HtmlDecodeLiterals
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

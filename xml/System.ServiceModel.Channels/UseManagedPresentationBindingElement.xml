@@ -15,8 +15,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>A binding element used to communicate with a [!INCLUDE[infocard](~/includes/infocard-md.md)] Security Token Service that supports the [!INCLUDE[infocard1](~/includes/infocard1-md.md)] profile of WS-Trust.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used by an identity provider to express in its policy the fact that it supports the [!INCLUDE[infocard1](~/includes/infocard1-md.md)] profile of WS-Trust. Identity providers that publish such a policy assertion should be able to issue tokens based on that [!INCLUDE[infocard1](~/includes/infocard1-md.md)] profile.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +37,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.UseManagedPresentationBindingElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +55,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Copies the current binding element.</summary>
+        <returns>The <see cref="T:System.ServiceModel.Channels.BindingElement" /> that is a copy of the current element.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,11 +83,18 @@
         <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The type of object being queried for.</typeparam>
+        <param name="context">The <see cref="T:System.ServiceModel.Channels.BindingContext" /> that provides context for the binding element.</param>
+        <summary>Returns a typed object requested, if present, from the appropriate layer in the binding stack.</summary>
+        <returns>The typed object <paramref name="T" /> requested if it is present or <see langword="null" /> if it is not.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this to request a typed object such as an interface for setting properties or getting status from the appropriate layer in the binding stack. If a layer supports returning the requested object, it returns it. If not, it delegates the call down to the next layer in the stack. If it gets to the bottom of the stack and no binding layer supported the requested object, then the method returns `null`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Description.IPolicyExportExtension.ExportPolicy">
@@ -100,9 +114,9 @@
         <Parameter Name="context" Type="System.ServiceModel.Description.PolicyConversionContext" />
       </Parameters>
       <Docs>
-        <param name="exporter">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="exporter">The <see cref="T:System.ServiceModel.Description.MetadataExporter" /> that you can use to modify the exporting process.</param>
+        <param name="context">The <see cref="T:System.ServiceModel.Description.PolicyConversionContext" /> that you can use to insert your custom policy assertion.</param>
+        <summary>Exports custom policy assertions in the binding element into the WSDL information.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

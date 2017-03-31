@@ -1,29 +1,35 @@
 ---
 uid: Microsoft.Build.Construction.ProjectUsingTaskBodyElement
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.ProjectUsingTaskBodyElement.Evaluate
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.ProjectUsingTaskBodyElement.Condition
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.ProjectUsingTaskBodyElement.EvaluateLocation
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.ProjectUsingTaskBodyElement.ConditionLocation
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.ProjectUsingTaskBodyElement.TaskBody
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

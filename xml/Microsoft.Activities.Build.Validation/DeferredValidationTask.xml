@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a task for deferring validation.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Activities.Build.Validation.DeferredValidationTask" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +48,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the location of the validation to be deferred.</summary>
+        <value>The location of the validation to be deferred.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,8 +67,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Executes the <see cref="T:Microsoft.Activities.Build.Validation.DeferredValidationTask" />.</summary>
+        <returns>The result of the validation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

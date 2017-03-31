@@ -15,8 +15,34 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the different node types (leaf, parent, and root) in the <see cref="T:System.Web.UI.WebControls.TreeView" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.TreeNodeTypes> enumeration is used to represent the different node types that are available in the <xref:System.Web.UI.WebControls.TreeView> control. The following table describes the three different node types.  
+  
+|Node type|Description|  
+|---------------|-----------------|  
+|Leaf|A node with no child nodes.|  
+|Parent|A node with a parent node and one or more child nodes.|  
+|Root|A node with no parent node and one or more child nodes.|  
+  
+ The <xref:System.Web.UI.WebControls.TreeNodeTypes> enumeration is a flag enumeration, which allows you to combine values through bitwise operations. For example, to represent the parent and leaf nodes, you can perform a bitwise `OR` operation on the Parent and Leaf values.  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.WebControls.TreeView.ShowCheckBoxes%2A> property uses the <xref:System.Web.UI.WebControls.TreeNodeTypes> enumeration to represent the node types that display check boxes in the <xref:System.Web.UI.WebControls.TreeView> control. When it is set to a value other than the None value, check boxes are displayed next to the specified node type, which allows users to select multiple items from the <xref:System.Web.UI.WebControls.TreeView> control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeNodeTypes> enumeration to indicate that the <xref:System.Web.UI.WebControls.TreeView> control should show a check box for each of the parent and leaf nodes only.  
+  
+ [!code-csharp[TreeViewShowCheckBoxes#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewShowCheckBoxes/CS/treeviewshowcheckboxescs.aspx#1)]
+ [!code-vb[TreeViewShowCheckBoxes#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewShowCheckBoxes/VB/treeviewshowcheckboxesvb.aspx#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="All">
@@ -32,7 +58,7 @@
         <ReturnType>System.Web.UI.WebControls.TreeNodeTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>All nodes.</summary>
       </Docs>
     </Member>
     <Member MemberName="Leaf">
@@ -48,7 +74,7 @@
         <ReturnType>System.Web.UI.WebControls.TreeNodeTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A node with no child nodes.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -64,7 +90,7 @@
         <ReturnType>System.Web.UI.WebControls.TreeNodeTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No nodes.</summary>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -80,7 +106,7 @@
         <ReturnType>System.Web.UI.WebControls.TreeNodeTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A node with a parent node and one or more child nodes.</summary>
       </Docs>
     </Member>
     <Member MemberName="Root">
@@ -96,7 +122,7 @@
         <ReturnType>System.Web.UI.WebControls.TreeNodeTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A node with no parent node and one or more child nodes.</summary>
       </Docs>
     </Member>
   </Members>

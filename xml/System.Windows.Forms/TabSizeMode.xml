@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies how tabs in a tab control are sized.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by members such as <xref:System.Windows.Forms.TabControl.SizeMode%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="FillToRight">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Forms.TabSizeMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The width of each tab is sized so that each row of tabs fills the entire width of the container control. This is only applicable to tab controls with more than one row.</summary>
       </Docs>
     </Member>
     <Member MemberName="Fixed">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Forms.TabSizeMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>All tabs in a control are the same width.</summary>
       </Docs>
     </Member>
     <Member MemberName="Normal">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.Forms.TabSizeMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The width of each tab is sized to accommodate what is displayed on the tab, and the size of tabs in a row are not adjusted to fill the entire width of the container control.</summary>
       </Docs>
     </Member>
   </Members>

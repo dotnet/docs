@@ -11,8 +11,19 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Reads incoming request parameters for Web services implemented using HTTP with name-value pairs encoded in the URL's query string rather than as a SOAP message.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.Services.Protocols.UrlParameterReader> and other classes in the <xref:System.Web.Services.Protocols> namespace support the .NET Framework's implementations of Web services via the HTTP-GET and HTTP-POST operations. Web service writers and readers serialize and deserialize, respectively, between the parameters or return objects of Web methods and the HTTP request or response streams. Web service writers and readers use HTTP for transport but don't exchange messages using the SOAP standard.  
+  
+ The <xref:System.Web.Services.Protocols.UrlParameterReader> class provides a service-side method, <xref:System.Web.Services.Protocols.UrlParameterReader.Read%2A>, to read parameter name/value pairs that are encoded into an HTTP request URL's query string. For example, in the URL `http://contoso.com?a=1&b=2`, `a` and `b` are parameter names, and `1` and `2` are their values.  
+  
+ You typically will not need to use <xref:System.Web.Services.Protocols.UrlParameterReader> directly. HTTP-GET Web services are enabled when an ASP.NET configuration file's (Web.config) `protocols` element contains an `add` element whose name attribute's value is "`HttpGet`". The <xref:System.Web.Services.Protocols.UrlParameterReader> class is automatically used when an HTTP-GET Web service is enabled and an applicable HTTP request is received.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +37,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.UrlParameterReader" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,10 +57,17 @@
         <Parameter Name="request" Type="System.Web.HttpRequest" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="request">A <see cref="T:System.Net.WebResponse" /> objectcontaining HTML URL-encoded name/value pairs.</param>
+        <summary>Reads name/value pairs encoded in the query string of an HTTP request into Web method parameter values.</summary>
+        <returns>An array of name/value pairs.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Services.Protocols.UrlParameterReader.Read%2A> method uses the content of the <xref:System.Web.HttpRequest> object's <xref:System.Web.HttpRequest.QueryString%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

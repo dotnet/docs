@@ -1,19 +1,27 @@
 ---
 uid: System.ComponentModel.Design.Data.DesignerDataSchemaClass
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.Data.DesignerDataSchemaClass.StoredProcedures
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.Data.DesignerDataSchemaClass.Views
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.Data.DesignerDataSchemaClass.Tables
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

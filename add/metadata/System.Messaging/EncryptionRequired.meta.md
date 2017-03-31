@@ -1,4 +1,4 @@
 ---
 uid: System.Messaging.EncryptionRequired
-internalonly: False
+manager: "tyoung"
 ---

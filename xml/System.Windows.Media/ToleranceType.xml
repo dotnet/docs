@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Determines the means by which an error tolerance value is interpreted.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Windows.Media.ToleranceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Error tolerance is treated as an absolute value.</summary>
       </Docs>
     </Member>
     <Member MemberName="Relative">
@@ -43,7 +43,7 @@
         <ReturnType>System.Windows.Media.ToleranceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Error tolerance is treated as a relative value.</summary>
       </Docs>
     </Member>
   </Members>

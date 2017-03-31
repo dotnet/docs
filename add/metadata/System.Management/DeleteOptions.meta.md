@@ -1,19 +1,24 @@
 ---
 uid: System.Management.DeleteOptions
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.DeleteOptions.#ctor
-internalonly: False
+manager: "jillfra"
+---
+
+---
+uid: System.Management.DeleteOptions.#ctor
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.DeleteOptions.Clone
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.DeleteOptions.#ctor(System.Management.ManagementNamedValueCollection,System.TimeSpan)
-internalonly: False
+manager: "jillfra"
 ---

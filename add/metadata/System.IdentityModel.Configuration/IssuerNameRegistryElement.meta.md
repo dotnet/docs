@@ -1,14 +1,17 @@
 ---
 uid: System.IdentityModel.Configuration.IssuerNameRegistryElement
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Configuration.IssuerNameRegistryElement.Type
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Configuration.IssuerNameRegistryElement.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

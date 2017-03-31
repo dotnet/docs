@@ -1,19 +1,27 @@
 ---
 uid: System.Web.Services.Protocols.WebServiceHandlerFactory
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Protocols.WebServiceHandlerFactory.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Protocols.WebServiceHandlerFactory.GetHandler(System.Web.HttpContext,System.String,System.String,System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Protocols.WebServiceHandlerFactory.ReleaseHandler(System.Web.IHttpHandler)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

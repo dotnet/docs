@@ -1,249 +1,249 @@
 ---
 uid: System.Messaging.MessagePropertyFilter
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.TimeToBeReceived
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.DigitalSignature
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.Id
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.Clone
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.UseTracing
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.DefaultLabelSize
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.IsFirstInTransaction
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.Acknowledgment
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.HashAlgorithm
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.SenderId
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.EncryptionAlgorithm
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.TransactionStatusQueue
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.ClearAll
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.UseAuthentication
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.UseEncryption
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.ConnectorType
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.Extension
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.AuthenticationProviderType
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.MessageType
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.SourceMachine
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.UseJournalQueue
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.LookupId
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.TransactionId
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.AdministrationQueue
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.Priority
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.TimeToReachQueue
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.#ctor
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.Authenticated
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.UseDeadLetterQueue
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.SenderCertificate
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.Recoverable
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.ResponseQueue
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.DestinationQueue
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.AppSpecific
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.AuthenticationProviderName
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.DestinationSymmetricKey
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.AttachSenderId
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.CorrelationId
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.AcknowledgeType
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.DefaultBodySize
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.IsLastInTransaction
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.Body
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.DefaultExtensionSize
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.SetDefaults
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.ArrivedTime
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.SentTime
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.Label
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.SetAll
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessagePropertyFilter.SenderVersion
-internalonly: False
+manager: "tyoung"
 ---

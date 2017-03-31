@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents an object that loads an instance of a saved function.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.XamlIntegration.FuncDeferringLoader" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,10 +47,10 @@
         <Parameter Name="context" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="xamlReader">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="xamlReader">A list of serialized nodes.</param>
+        <param name="context">A context that provides information needed for parsing.</param>
+        <summary>Loads an instance of a function that can be used at any point to deserialize a list of nodes.</summary>
+        <returns>An instance of a function.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,10 +71,10 @@
         <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="serviceProvider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The object to transform into a Xaml node list.</param>
+        <param name="serviceProvider">An object that provides context information for serialization.</param>
+        <summary>Serializes the specified <see cref="T:System.Object" /> into a Xaml node list.</summary>
+        <returns>A Xaml reader.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

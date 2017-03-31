@@ -1,14 +1,14 @@
 ---
 uid: System.Windows.Markup.IProvideValueTarget
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.IProvideValueTarget.TargetProperty
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.IProvideValueTarget.TargetObject
-internalonly: False
+manager: "martinek"
 ---

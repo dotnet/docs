@@ -1,2 +1,0 @@
-        'Create a dictionary and use UriTemplateEquivalenceComparer as the comparer
-        Dim templates As Dictionary(Of UriTemplate, Object) = New Dictionary(Of UriTemplate, Object)(New UriTemplateEquivalenceComparer())

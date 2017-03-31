@@ -1,129 +1,181 @@
 ---
 uid: System.Windows.Input.CommandBindingCollection
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.CommandBindingCollection.Contains(System.Windows.Input.CommandBinding)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.CommandBindingCollection.Remove(System.Windows.Input.CommandBinding)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.CommandBindingCollection.RemoveAt(System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.CommandBindingCollection.CopyTo(System.Windows.Input.CommandBinding[],System.Int32)
-internalonly: False
----
-
----
-uid: System.Windows.Input.CommandBindingCollection.IndexOf(System.Windows.Input.CommandBinding)
-internalonly: False
----
-
----
-uid: System.Windows.Input.CommandBindingCollection.Count
-internalonly: False
----
-
----
-uid: System.Windows.Input.CommandBindingCollection.GetEnumerator
-internalonly: False
----
-
----
-uid: System.Windows.Input.CommandBindingCollection.Clear
-internalonly: False
----
-
----
-uid: System.Windows.Input.CommandBindingCollection.#ctor(System.Collections.IList)
-internalonly: False
----
-
----
-uid: System.Windows.Input.CommandBindingCollection.System#Collections#IList#Item(System.Int32)
-internalonly: False
----
-
----
-uid: System.Windows.Input.CommandBindingCollection.IsReadOnly
-internalonly: False
----
-
----
-uid: System.Windows.Input.CommandBindingCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
-internalonly: False
----
-
----
-uid: System.Windows.Input.CommandBindingCollection.System#Collections#IList#Insert(System.Int32,System.Object)
-internalonly: False
----
-
----
-uid: System.Windows.Input.CommandBindingCollection.Insert(System.Int32,System.Windows.Input.CommandBinding)
-internalonly: False
----
-
----
-uid: System.Windows.Input.CommandBindingCollection.System#Collections#IList#Add(System.Object)
-internalonly: False
----
-
----
-uid: System.Windows.Input.CommandBindingCollection.AddRange(System.Collections.ICollection)
-internalonly: False
----
-
----
-uid: System.Windows.Input.CommandBindingCollection.System#Collections#IList#IndexOf(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.CommandBindingCollection.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Input.CommandBindingCollection.IndexOf(System.Windows.Input.CommandBinding)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Input.CommandBindingCollection.Count
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Input.CommandBindingCollection.GetEnumerator
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Input.CommandBindingCollection.Clear
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Input.CommandBindingCollection.#ctor(System.Collections.IList)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Input.CommandBindingCollection.System#Collections#IList#Item(System.Int32)
+ms.author: "jimwalk"
+manager: "martinek"
+---
+
+---
+uid: System.Windows.Input.CommandBindingCollection.IsReadOnly
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Input.CommandBindingCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Input.CommandBindingCollection.System#Collections#IList#Insert(System.Int32,System.Object)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Input.CommandBindingCollection.Insert(System.Int32,System.Windows.Input.CommandBinding)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Input.CommandBindingCollection.System#Collections#IList#Add(System.Object)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Input.CommandBindingCollection.AddRange(System.Collections.ICollection)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Input.CommandBindingCollection.System#Collections#IList#IndexOf(System.Object)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Input.CommandBindingCollection.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.CommandBindingCollection.System#Collections#IList#Contains(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.CommandBindingCollection.Item(System.Int32)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Input.CommandBindingCollection.System#Collections#IList#Remove(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.CommandBindingCollection.IsSynchronized
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Input.CommandBindingCollection.SyncRoot
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.CommandBindingCollection.IsFixedSize
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.CommandBindingCollection.Add(System.Windows.Input.CommandBinding)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

@@ -1,29 +1,46 @@
 ---
 uid: System.Windows.Controls.CalendarBlackoutDatesCollection
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.CalendarBlackoutDatesCollection.ContainsAny(System.Windows.Controls.CalendarDateRange)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.CalendarBlackoutDatesCollection.Contains(System.DateTime,System.DateTime)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.CalendarBlackoutDatesCollection.AddDatesInPast
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.CalendarBlackoutDatesCollection.Contains
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.CalendarBlackoutDatesCollection.#ctor(System.Windows.Controls.Calendar)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.CalendarBlackoutDatesCollection.Contains(System.DateTime)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

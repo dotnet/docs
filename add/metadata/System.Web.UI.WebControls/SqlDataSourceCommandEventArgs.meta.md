@@ -1,14 +1,20 @@
 ---
 uid: System.Web.UI.WebControls.SqlDataSourceCommandEventArgs
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.SqlDataSourceCommandEventArgs.#ctor(System.Data.Common.DbCommand)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.SqlDataSourceCommandEventArgs.Command
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

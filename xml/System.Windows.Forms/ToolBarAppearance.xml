@@ -10,8 +10,26 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the type of toolbar to display.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by members such as <xref:System.Windows.Forms.ToolBar.Appearance%2A?displayProperty=fullName>.  
+  
+ Set the <xref:System.Windows.Forms.ToolBar.Appearance%2A> property of the toolbar to `ToolBarAppearance.Flat` to give the toolbar and its buttons a flat appearance. As the mouse pointer moves over the buttons, their appearance changes to three-dimensional. Button separators appear as lines rather than spaces between the buttons when the toolbar has a flat appearance.  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Forms.ToolBar> control, sets some of its common properties, and adds it to a <xref:System.Windows.Forms.Form>. Delegates are also added to the <xref:System.Windows.Forms.ToolBar.ButtonClick> and <xref:System.Windows.Forms.ToolBar.ButtonDropDown> events. This example assumes a <xref:System.Windows.Forms.ToolBar> named `toolBar1` and an <xref:System.Windows.Forms.ImageList> named `imageList1` have been declared.  
+  
+ [!code-cpp[ToolBar#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ToolBar/CPP/mytoolbar.cpp#1)]
+ [!code-csharp[ToolBar#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ToolBar/CS/mytoolbar.cs#1)]
+ [!code-vb[ToolBar#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ToolBar/VB/mytoolbar.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Flat">
@@ -27,7 +45,7 @@
         <ReturnType>System.Windows.Forms.ToolBarAppearance</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The toolbar and buttons appear flat, but the buttons change to three-dimensional as the mouse pointer moves over them.</summary>
       </Docs>
     </Member>
     <Member MemberName="Normal">
@@ -43,7 +61,7 @@
         <ReturnType>System.Windows.Forms.ToolBarAppearance</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The toolbar and buttons appear as standard three-dimensional controls.</summary>
       </Docs>
     </Member>
   </Members>

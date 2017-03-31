@@ -1,14 +1,17 @@
 ---
 uid: System.Net.UiSynchronizationContext
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.UiSynchronizationContext.ManagedUiThreadId
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.UiSynchronizationContext.Current
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

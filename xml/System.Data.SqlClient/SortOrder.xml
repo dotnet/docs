@@ -19,7 +19,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies how rows of data are sorted.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,7 +45,7 @@
         <ReturnType>System.Data.SqlClient.SortOrder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Rows are sorted in ascending order.</summary>
       </Docs>
     </Member>
     <Member MemberName="Descending">
@@ -70,7 +70,7 @@
         <ReturnType>System.Data.SqlClient.SortOrder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Rows are sorted in descending order.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unspecified">
@@ -95,7 +95,7 @@
         <ReturnType>System.Data.SqlClient.SortOrder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The default. No sort order is specified.</summary>
       </Docs>
     </Member>
   </Members>

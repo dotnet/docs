@@ -1,14 +1,20 @@
 ---
 uid: System.Windows.Forms.ICurrencyManagerProvider
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ICurrencyManagerProvider.CurrencyManager
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ICurrencyManagerProvider.GetRelatedCurrencyManager(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

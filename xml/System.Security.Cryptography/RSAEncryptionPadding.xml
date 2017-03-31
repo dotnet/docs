@@ -26,7 +26,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the padding mode and parameters to use with RSA encryption or decryption operations.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -57,10 +57,11 @@
         <Parameter Name="hashAlgorithm" Type="System.Security.Cryptography.HashAlgorithmName" />
       </Parameters>
       <Docs>
-        <param name="hashAlgorithm">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="hashAlgorithm">The hash algorithm.</param>
+        <summary>Creates a new <see cref="T:System.Security.Cryptography.RSAEncryptionPadding" /> instance whose <see cref="P:System.Security.Cryptography.RSAEncryptionPadding.Mode" /> is <see cref="F:System.Security.Cryptography.RSAEncryptionPaddingMode.Oaep" /> with the given hash algorithm.</summary>
+        <returns>An object whose mode is <see cref="P:System.Security.Cryptography.RSAEncryptionPadding.Mode" /> is <see cref="F:System.Security.Cryptography.RSAEncryptionPaddingMode.Oaep" /> with the hash algorithm specified by <paramref name="hashAlgorithm" />. .</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.Security.Cryptography.HashAlgorithmName.Name" /> property of <paramref name="hashAlgorithm" /> is either <see langword="null" /> or <see cref="F:System.String.Empty" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -90,10 +91,18 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="obj">The object to compare.</param>
+        <summary>Determines whether the current instance is equal to the specified object.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="obj" /> is equal to the current instance; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `obj` is equal to the current instance if it is a <xref:System.Security.Cryptography.RSAEncryptionPadding> object and the two objects have identical <xref:System.Security.Cryptography.RSAEncryptionPadding.Mode%2A> and <xref:System.Security.Cryptography.RSAEncryptionPadding.OaepHashAlgorithm%2A> property values.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -123,10 +132,18 @@
         <Parameter Name="other" Type="System.Security.Cryptography.RSAEncryptionPadding" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="other">The object to compare.</param>
+        <summary>Determines whether the current instance is equal to the specified <see cref="T:System.Security.Cryptography.RSAEncryptionPadding" /> object.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="other" /> is equal to the current instance; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `instance` and the current instance are equal if they have identical <xref:System.Security.Cryptography.RSAEncryptionPadding.Mode%2A> and <xref:System.Security.Cryptography.RSAEncryptionPadding.OaepHashAlgorithm%2A> property values.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -154,8 +171,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code of this <see cref="T:System.Security.Cryptography.RSAEncryptionPadding" /> object.</summary>
+        <returns>The hash code of this instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -183,8 +200,8 @@
         <ReturnType>System.Security.Cryptography.RSAEncryptionPaddingMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the padding mode represented by this <see cref="T:System.Security.Cryptography.RSAEncryptionPadding" /> instance.</summary>
+        <value>A padding mode.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -212,8 +229,8 @@
         <ReturnType>System.Security.Cryptography.HashAlgorithmName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the hash algorithm used in conjunction with the <see cref="F:System.Security.Cryptography.RSAEncryptionPaddingMode.Oaep" /> padding mode. If the value of the <see cref="P:System.Security.Cryptography.RSAEncryptionPadding.Mode" /> property is not <see cref="F:System.Security.Cryptography.RSAEncryptionPaddingMode.Oaep" />, <see cref="P:System.Security.Cryptography.HashAlgorithmName.Name" /> is <see langword="null" />.</summary>
+        <value>The hash algorithm.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -241,8 +258,8 @@
         <ReturnType>System.Security.Cryptography.RSAEncryptionPadding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an object that represents the Optimal Asymmetric Encryption Padding (OAEP) encryption standard with a SHA1 hash algorithm.</summary>
+        <value>An object that represents the OAEP encryption standard with a SHA1 hash algorithm.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -270,8 +287,8 @@
         <ReturnType>System.Security.Cryptography.RSAEncryptionPadding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an object that represents the Optimal Asymmetric Encryption Padding (OAEP) encryption standard with a SHA256 hash algorithm.</summary>
+        <value>An object that represents the OAEP encryption standard with a SHA256 hash algorithm.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -299,8 +316,8 @@
         <ReturnType>System.Security.Cryptography.RSAEncryptionPadding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an object that represents the Optimal Asymmetric Encryption Padding (OAEP) encryption standard with a SHA-384 hash algorithm.</summary>
+        <value>An object that represents the OAEP encryption standard with a SHA384 hash algorithm.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -328,8 +345,8 @@
         <ReturnType>System.Security.Cryptography.RSAEncryptionPadding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an object that represents the Optimal Asymmetric Encryption Padding (OAEP) encryption standard with a SHA512 hash algorithm.</summary>
+        <value>An object that represents the OAEP encryption standard with a SHA512 hash algorithm.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -361,11 +378,19 @@
         <Parameter Name="right" Type="System.Security.Cryptography.RSAEncryptionPadding" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="left">The first object to compare.</param>
+        <param name="right">The second object to compare.</param>
+        <summary>Indicates whether two specified <see cref="T:System.Security.Cryptography.RSAEncryptionPadding" /> objects are equal.</summary>
+        <returns>
+          <see langword="true" /> if <see langword="left" /> and <see langword="right" /> are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Two <xref:System.Security.Cryptography.RSAEncryptionPadding> objects are equal if their <xref:System.Security.Cryptography.RSAEncryptionPadding.Mode%2A> and <xref:System.Security.Cryptography.RSAEncryptionPadding.OaepHashAlgorithm%2A> property values are equal.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -396,11 +421,19 @@
         <Parameter Name="right" Type="System.Security.Cryptography.RSAEncryptionPadding" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="left">The first object to compare.</param>
+        <param name="right">The second object to compare.</param>
+        <summary>Indicates whether two specified <see cref="T:System.Security.Cryptography.RSAEncryptionPadding" /> objects are unequal.</summary>
+        <returns>
+          <see langword="true" /> if <see langword="left" /> and <see langword="right" /> are not equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Two <xref:System.Security.Cryptography.RSAEncryptionPadding> objects are not equal if their <xref:System.Security.Cryptography.RSAEncryptionPadding.Mode%2A> and <xref:System.Security.Cryptography.RSAEncryptionPadding.OaepHashAlgorithm%2A> property values are not equal.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Pkcs1">
@@ -427,8 +460,8 @@
         <ReturnType>System.Security.Cryptography.RSAEncryptionPadding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an object that represents the PKCS #1 encryption standard.</summary>
+        <value>An object that represents the PKCS #1 encryption standard.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -457,9 +490,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the string representation of the current <see cref="T:System.Security.Cryptography.RSAEncryptionPadding" /> instance.</summary>
+        <returns>The string representation of the current object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string representation of a <xref:System.Security.Cryptography.RSAEncryptionPadding> object is the concatenation of its <xref:System.Security.Cryptography.RSAEncryptionPadding.Mode%2A> and `OaepHashAlgorithm.Name` properties.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

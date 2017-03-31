@@ -30,7 +30,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Exposes <see cref="T:System.Windows.Controls.DataGridCell" /> types to [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)].</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -48,9 +48,9 @@
         <Parameter Name="dataGridColumn" Type="System.Windows.Controls.DataGridColumn" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <param name="dataGridColumn">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="item">The element that is associated with this automation peer.</param>
+        <param name="dataGridColumn">The <see cref="T:System.Windows.Controls.DataGrid" /> column that <c>item</c> is in.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -336,10 +336,29 @@
         <Parameter Name="patternInterface" Type="System.Windows.Automation.Peers.PatternInterface" />
       </Parameters>
       <Docs>
-        <param name="patternInterface">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="patternInterface">An enumeration that specifies the control pattern.</param>
+        <summary>Returns the object that supports the specified control pattern of the element that is associated with this automation peer.</summary>
+        <returns>The current <see cref="T:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer" /> object, if <paramref name="patternInterface" /> is a supported value; otherwise, <see langword="null" />. For more information, see Remarks.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If one of the following cases occurs, this method returns the current <xref:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer> object:  
+  
+-   `patternInterface` is <xref:System.Windows.Automation.Peers.PatternInterface?displayProperty=fullName> and the <xref:System.Windows.Controls.DataGridCell> object that is associated with this <xref:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer> is not read-only.  
+  
+-   `patternInterface` is <xref:System.Windows.Automation.Peers.PatternInterface?displayProperty=fullName> and the <xref:System.Windows.Controls.DataGridCell> that is associated with this <xref:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer> is not part of the row that is a placeholder for a new item in a <xref:System.Windows.Controls.DataGrid> object.  
+  
+-   `patternInterface` is <xref:System.Windows.Automation.Peers.PatternInterface?displayProperty=fullName> and the <xref:System.Windows.Controls.DataGridCell> that is associated with this <xref:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer> can be selected.  
+  
+-   `patternInterface` is <xref:System.Windows.Automation.Peers.PatternInterface?displayProperty=fullName>.  
+  
+-   `patternInterface` is <xref:System.Windows.Automation.Peers.PatternInterface?displayProperty=fullName>.  
+  
+-   `patternInterface` is <xref:System.Windows.Automation.Peers.PatternInterface?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HasKeyboardFocusCore">
@@ -525,9 +544,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the ordinal number of the column that contains the cell or item.</summary>
+        <value>A zero-based ordinal number that identifies the column containing the cell or item.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IGridItemProvider> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.IGridItemProvider.ColumnSpan">
@@ -543,9 +569,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of columns spanned by a cell or item.</summary>
+        <value>The number of columns spanned.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IGridItemProvider> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.IGridItemProvider.ContainingGrid">
@@ -561,9 +594,16 @@
         <ReturnType>System.Windows.Automation.Provider.IRawElementProviderSimple</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a [UI Automation provider](GTMT) that implements <see cref="T:System.Windows.Automation.Provider.IGridProvider" /> and represents the container of the cell or item.</summary>
+        <value>A [UI Automation provider](GTMT) that implements the <see cref="T:System.Windows.Automation.GridPattern" /> and represents the cell or item container.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IGridItemProvider> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.IGridItemProvider.Row">
@@ -579,9 +619,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the ordinal number of the row that contains the cell or item.</summary>
+        <value>A zero-based ordinal number that identifies the row containing the cell or item.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IGridItemProvider> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.IGridItemProvider.RowSpan">
@@ -597,9 +644,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of rows spanned by a cell or item.</summary>
+        <value>The number of rows spanned.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IGridItemProvider> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.IInvokeProvider.Invoke">
@@ -616,8 +670,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Sends a request to activate a control and initiate its single, unambiguous action.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IInvokeProvider> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.IScrollItemProvider.ScrollIntoView">
@@ -634,8 +695,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Scrolls the content area of a container object in order to display the control within the visible region (viewport) of the container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IScrollItemProvider> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.ISelectionItemProvider.AddToSelection">
@@ -652,8 +720,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Adds the current element to the collection of selected items.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionItemProvider> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.ISelectionItemProvider.IsSelected">
@@ -669,9 +744,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether an item is selected.</summary>
+        <value>
+          <see langword="true" /> if the element is selected; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionItemProvider> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.ISelectionItemProvider.RemoveFromSelection">
@@ -688,8 +771,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Removes the current element from the collection of selected items.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionItemProvider> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.ISelectionItemProvider.Select">
@@ -706,8 +796,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Deselects any selected items and then selects the current element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionItemProvider> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.ISelectionItemProvider.SelectionContainer">
@@ -723,9 +820,16 @@
         <ReturnType>System.Windows.Automation.Provider.IRawElementProviderSimple</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the [UI Automation provider](GTMT) that implements <see cref="T:System.Windows.Automation.Provider.ISelectionProvider" /> and acts as the container for the calling object.</summary>
+        <value>The provider that supports <see cref="T:System.Windows.Automation.Provider.ISelectionProvider" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionItemProvider> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.ITableItemProvider.GetColumnHeaderItems">
@@ -742,9 +846,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Retrieves a collection of UI Automation providers representing all the column headers associated with a table item or cell.</summary>
+        <returns>A collection of UI Automation providers.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ITableItemProvider> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.ITableItemProvider.GetRowHeaderItems">
@@ -761,9 +872,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Retrieves a collection of UI Automation providers representing all the row headers associated with a table item or cell.</summary>
+        <returns>A collection of UI Automation providers.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ITableItemProvider> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.IValueProvider.IsReadOnly">
@@ -779,9 +897,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that specifies whether the value of a control is read-only.</summary>
+        <value>
+          <see langword="true" /> if the value is read-only; <see langword="false" /> if it can be modified.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IValueProvider> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.IValueProvider.SetValue">
@@ -800,9 +926,17 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to set. The provider is responsible for converting the value to the appropriate data type.</param>
+        <summary>Sets the value of a control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IValueProvider> interface.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Controls.DataGridCell" /> object that is associated with this <see cref="T:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer" /> object is read-only.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.IValueProvider.Value">
@@ -818,9 +952,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the value of the control.</summary>
+        <value>The value of the control as a string.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IValueProvider> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.IVirtualizedItemProvider.Realize">
@@ -837,8 +978,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Makes the virtual item fully accessible as a UI Automation element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IVirtualizedItemProvider> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

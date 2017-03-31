@@ -12,8 +12,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The exception that is thrown when a name conflict occurs while generating a strongly typed <see cref="T:System.Data.DataSet" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.TypedDataSetGeneratorException> class is not intended for use as a stand-alone component, but as a class from which other classes derive standard functionality.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,8 +35,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.TypedDataSetGeneratorException" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.TypedDataSetGeneratorException> class is not intended for use as a stand-alone component, but as a class from which other classes derive standard functionality.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -46,9 +60,17 @@
         <Parameter Name="list" Type="System.Collections.ArrayList" />
       </Parameters>
       <Docs>
-        <param name="list">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="list">
+          <see cref="T:System.Collections.ArrayList" /> object containing a dynamic list of exceptions.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.TypedDataSetGeneratorException" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.TypedDataSetGeneratorException> class is not intended for use as a stand-alone component, but as a class from which other classes derive standard functionality.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -65,9 +87,16 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="message">The string to display when the exception is thrown.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.TypedDataSetGeneratorException" /> class with the specified string.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.TypedDataSetGeneratorException> class is not intended for use as a stand-alone component, but as a class from which other classes derive standard functionality.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -85,10 +114,17 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="info">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object.</param>
+        <param name="context">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> structure.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.TypedDataSetGeneratorException" /> class using the specified serialization information and streaming context.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.TypedDataSetGeneratorException> class is not intended for use as a stand-alone component, but as a class from which other classes derive standard functionality.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -106,10 +142,17 @@
         <Parameter Name="innerException" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="innerException">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="message">The string to display when the exception is thrown.</param>
+        <param name="innerException">A reference to an inner exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.TypedDataSetGeneratorException" /> class with the specified string and inner exception.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.TypedDataSetGeneratorException> class is not intended for use as a stand-alone component, but as a class from which other classes derive standard functionality.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ErrorList">
@@ -126,9 +169,17 @@
         <ReturnType>System.Collections.ArrayList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a dynamic list of generated errors.</summary>
+        <value>
+          <see cref="T:System.Collections.ArrayList" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.TypedDataSetGeneratorException> class is not intended for use as a stand-alone component, but as a class from which other classes derive standard functionality.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -149,10 +200,17 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="info">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object.</param>
+        <param name="context">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> structure.</param>
+        <summary>Implements the <see langword="ISerializable" /> interface and returns the data needed to serialize the <see cref="T:System.Data.TypedDataSetGeneratorException" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.TypedDataSetGeneratorException> class is not intended for use as a stand-alone component, but as a class from which other classes derive standard functionality.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

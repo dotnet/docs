@@ -16,8 +16,27 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a signed rights managed publish license.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Security.RightsManagement.PublishLicense> defines security data about rights, users, and other security-related information.  The license defines how a specific user on a specific computer can use specified rights managed content.  
+  
+ The publishing process begins with the document author, who defines rights information in an <xref:System.Security.RightsManagement.UnsignedPublishLicense>.  Next, the author creates a signed <xref:System.Security.RightsManagement.PublishLicense> by calling the <xref:System.Security.RightsManagement.UnsignedPublishLicense.Sign%2A> method of the <xref:System.Security.RightsManagement.UnsignedPublishLicense>.  The serialized form of the signed <xref:System.Security.RightsManagement.PublishLicense> can then be provided to end users who can use it to acquire a <xref:System.Security.RightsManagement.UseLicense> by calling the <xref:System.Security.RightsManagement.PublishLicense.AcquireUseLicense%2A> method of the <xref:System.Security.RightsManagement.PublishLicense>.  The returned <xref:System.Security.RightsManagement.UseLicense> then allows the client application to exercise the rights that were granted to the user.  
+  
+ As with other <xref:System.Security.RightsManagement> types, <xref:System.Security.RightsManagement.PublishLicense> is only usable in full trust applications.  
+  
+   
+  
+## Examples  
+ The following example shows how to initialize a <xref:System.Security.RightsManagement.PublishLicense> by using the <xref:System.Security.RightsManagement.UnsignedPublishLicense.Sign%2A> method.  
+  
+ [!code-csharp[RightsManagedPackagePublish#RmPkgPubEncrypt](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgpubencrypt)]
+ [!code-vb[RightsManagedPackagePublish#RmPkgPubEncrypt](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgpubencrypt)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,9 +52,12 @@
         <Parameter Name="signedPublishLicense" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="signedPublishLicense">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="signedPublishLicense">A signed and serialized publish license.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.RightsManagement.PublishLicense" /> class from a specified serialized and signed <see cref="T:System.Security.RightsManagement.PublishLicense" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="signedPublishLicense" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.RightsManagement.RightsManagementException">The license is invalid.</exception>
       </Docs>
     </Member>
     <Member MemberName="AcquireUseLicense">
@@ -54,10 +76,13 @@
         <Parameter Name="secureEnvironment" Type="System.Security.RightsManagement.SecureEnvironment" />
       </Parameters>
       <Docs>
-        <param name="secureEnvironment">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="secureEnvironment">The secure environment for license activation and binding.</param>
+        <summary>Attempts to acquire a <see cref="T:System.Security.RightsManagement.UseLicense" /> for a user or user group in a specified <see cref="T:System.Security.RightsManagement.SecureEnvironment" />.</summary>
+        <returns>The <see cref="T:System.Security.RightsManagement.UseLicense" /> for a user or user group in the specified <paramref name="secureEnvironment" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="secureEnvironment" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.RightsManagement.RightsManagementException">The authentication failed.</exception>
       </Docs>
     </Member>
     <Member MemberName="AcquireUseLicenseNoUI">
@@ -76,10 +101,20 @@
         <Parameter Name="secureEnvironment" Type="System.Security.RightsManagement.SecureEnvironment" />
       </Parameters>
       <Docs>
-        <param name="secureEnvironment">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="secureEnvironment">The secure environment for license activation and binding.</param>
+        <summary>Attempts to acquire a <see cref="T:System.Security.RightsManagement.UseLicense" /> for a user or user group in a specified <see cref="T:System.Security.RightsManagement.SecureEnvironment" />.</summary>
+        <returns>The <see cref="T:System.Security.RightsManagement.UseLicense" /> for a user or user group in the specified <paramref name="secureEnvironment" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.RightsManagement.PublishLicense.AcquireUseLicenseNoUI%2A> method suppresses the Windows network authentication dialog box. If the license request is denied because the user does not have permission, <xref:System.Security.RightsManagement.PublishLicense.AcquireUseLicenseNoUI%2A> prevents the network authentication dialog box from displaying. Use silent acquisition when attempting to obtain licenses in a background task or in a non-user interface that might display confusing dialog boxes.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="secureEnvironment" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.RightsManagement.RightsManagementException">The authentication failed.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContentId">
@@ -95,9 +130,16 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the publisher-created content identifier.</summary>
+        <value>The publisher-created content identifier.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Publishers create a <xref:System.Security.RightsManagement.UnsignedPublishLicense.ContentId%2A> to identify the protected content.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DecryptUnsignedPublishLicense">
@@ -116,10 +158,19 @@
         <Parameter Name="cryptoProvider" Type="System.Security.RightsManagement.CryptoProvider" />
       </Parameters>
       <Docs>
-        <param name="cryptoProvider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="cryptoProvider">The rights management service to use for decrypting the license.</param>
+        <summary>Returns a decrypted <see cref="T:System.Security.RightsManagement.UnsignedPublishLicense" /> version of this signed <see cref="T:System.Security.RightsManagement.PublishLicense" />.</summary>
+        <returns>A decrypted, unsigned version of this license.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.RightsManagement.PublishLicense.DecryptUnsignedPublishLicense%2A> method allows the license owner and users who were granted <xref:System.Security.RightsManagement.ContentRight> to extract the original information that was encrypted when the <xref:System.Security.RightsManagement.PublishLicense> was created.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="cryptoProvider" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReferralInfoName">
@@ -135,9 +186,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the contact name for the author or publisher of the content.</summary>
+        <value>The contact name for the author or publisher of the content.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by the <xref:System.Security.RightsManagement.PublishLicense.ReferralInfoName%2A> property is not encrypted and can be accessed even when the user does not yet have a <xref:System.Security.RightsManagement.UseLicense>.  The returned string permits users to contact the publisher to request a <xref:System.Security.RightsManagement.UseLicense>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReferralInfoUri">
@@ -153,9 +211,16 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the contact [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] for the author or publisher of the content.</summary>
+        <value>The contact [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] for the author or publisher of the content.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by the <xref:System.Security.RightsManagement.PublishLicense.ReferralInfoUri%2A> property is not encrypted and can be accessed even when the user does not yet have a <xref:System.Security.RightsManagement.UseLicense>.  The returned string permits users to contact the publisher to request a <xref:System.Security.RightsManagement.UseLicense>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -172,8 +237,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the serialized [!INCLUDE[TLA2#tla_xrml](~/includes/tla2sharptla-xrml-md.md)] string that was used to create this license.</summary>
+        <returns>The serialized [!INCLUDE[TLA#tla_xrml](~/includes/tlasharptla-xrml-md.md)] string that was used to create this license.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -190,9 +255,16 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] to use for acquiring a <see cref="T:System.Security.RightsManagement.UseLicense" />.</summary>
+        <value>The [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] to use for acquiring a <see cref="T:System.Security.RightsManagement.UseLicense" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.RightsManagement.PublishLicense.UseLicenseAcquisitionUrl%2A> property is used by the <xref:System.Security.RightsManagement.PublishLicense.AcquireUseLicense%2A> method when a user acquires a <xref:System.Security.RightsManagement.UseLicense>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

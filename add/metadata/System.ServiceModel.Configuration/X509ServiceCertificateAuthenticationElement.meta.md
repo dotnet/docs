@@ -1,34 +1,48 @@
 ---
 uid: System.ServiceModel.Configuration.X509ServiceCertificateAuthenticationElement
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.X509ServiceCertificateAuthenticationElement.CertificateValidationMode
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.X509ServiceCertificateAuthenticationElement.TrustedStoreLocation
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.X509ServiceCertificateAuthenticationElement.RevocationMode
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.X509ServiceCertificateAuthenticationElement.Copy(System.ServiceModel.Configuration.X509ServiceCertificateAuthenticationElement)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.X509ServiceCertificateAuthenticationElement.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.X509ServiceCertificateAuthenticationElement.CustomCertificateValidatorType
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

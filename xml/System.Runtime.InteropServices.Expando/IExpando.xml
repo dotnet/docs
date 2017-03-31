@@ -21,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Enables modification of objects by adding and removing members, represented by <see cref="T:System.Reflection.MemberInfo" /> objects.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -42,10 +42,11 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the field.</param>
+        <summary>Adds the named field to the Reflection object.</summary>
+        <returns>A <see cref="T:System.Reflection.FieldInfo" /> object representing the added field.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">The <see langword="IExpando" /> object does not support this method.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddMethod">
@@ -66,11 +67,12 @@
         <Parameter Name="method" Type="System.Delegate" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="method">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the method.</param>
+        <param name="method">The delegate to the method.</param>
+        <summary>Adds the named method to the Reflection object.</summary>
+        <returns>A <see langword="MethodInfo" /> object representing the added method.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">The <see langword="IExpando" /> object does not support this method.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddProperty">
@@ -90,10 +92,11 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the property.</param>
+        <summary>Adds the named property to the Reflection object.</summary>
+        <returns>A <see langword="PropertyInfo" /> object representing the added property.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">The <see langword="IExpando" /> object does not support this method.</exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveMember">
@@ -113,9 +116,10 @@
         <Parameter Name="m" Type="System.Reflection.MemberInfo" />
       </Parameters>
       <Docs>
-        <param name="m">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="m">The member to remove.</param>
+        <summary>Removes the specified member.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">The <see langword="IExpando" /> object does not support this method.</exception>
       </Docs>
     </Member>
   </Members>

@@ -1,9 +1,11 @@
 ---
 uid: System.ComponentModel.DataAnnotations.ConcurrencyCheckAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.ConcurrencyCheckAttribute.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -15,8 +15,37 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides the XAML type system identifier for members of XAML types. The identifier is used by XAML readers and XAML writers during processing of member nodes (when the XAML reader is positioned on a <see cref="F:System.Xaml.XamlNodeType.StartMember" />) and also for general XAML type system logic.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Xaml.XamlMember> can use three methodologies for returning information about a XAML member: standard common language runtime (CLR) reflection; a reference-only reflection technique calling internal APIs that use optimized bit flags; or calling into virtual overrides of the `Lookup*` API that is provided by possible <xref:System.Xaml.XamlMember> subclasses. For most uses of .NET Framework XAML Services APIs and the <xref:System.Xaml.XamlMember> API, you use the default XAML schema context. The default XAML schema context for .NET Framework XAML Services uses CLR backing for the type system. This enables the XAML readers and XAML writers to work with any type or member that is defined in, or otherwise available to, the CLR and its reflection techniques.  
+  
+## Lookup* APIs and XamlMember Derived Classes  
+ <xref:System.Xaml.XamlMember> defines several virtual members that derived classes might override. These members have names that always start with the string `Lookup`. The remainder of the API name then references the property that the virtual method influences. For example, a <xref:System.Xaml.XamlMember> derived class might override <xref:System.Xaml.XamlMember.LookupTargetType%2A> to influence what the base-defined property <xref:System.Xaml.XamlMember.TargetType%2A> returns in a derived class. You can predict return values for such properties in <xref:System.Xaml.XamlMember> or existing derived classes by reading the documentation for the relevant `Lookup*` methods.  
+  
+ The purpose of the `Lookup*` methods is to provide a XAML type system extension technique that incorporates the <xref:System.Xaml.XamlMember> base class. By deriving from <xref:System.Xaml.XamlMember> and overriding the `Lookup` virtual members, you can define the concept of a XAML member for a XAML schema in a XAML type system without being tied to the specifics of a backing type system or technology. You can also use a provided XAML schema context under this scheme and still return the results you want.  
+  
+ As an example, consider the <xref:System.Xaml.XamlMember> property <xref:System.Xaml.XamlMember.IsWritePublic%2A>. This property informs callers that operations such as using a <xref:System.Xaml.XamlWriter> for serialization can write a value for this member on a target object. In the default implementation, the determination of whether the member is writable is made by using reflection techniques against the backing CLR <xref:System.Type> and its members (the <xref:System.Reflection.MemberInfo>). Therefore, by default, the XAML type system depends on the CLR type system. However, you can remove this dependency for your XAML type system reporting of <xref:System.Xaml.XamlMember.IsWritePublic%2A> by overriding the API <xref:System.Xaml.XamlMember.LookupIsWritePublic%2A>. Within your override, you can use other determinations, such as metadata that is specific to your technology, a master lookup table that is optimized for a fixed XAML vocabulary, or a variety of other strategies for determining whether a XAML member is writable in your XAML vocabulary.  
+  
+## Constructing XamlMember Without XAML Schema Context  
+ Most constructors of <xref:System.Xaml.XamlMember> require a <xref:System.Xaml.XamlSchemaContext> as part of their initialization. The <xref:System.Xaml.XamlSchemaContext> is also necessary for many internal <xref:System.Xaml.XamlSchemaContext> operations, such as obtaining information that is being forwarded from the backing type. When you are working with the <xref:System.Xaml.XamlMember> API, you typically have a <xref:System.Xaml.XamlSchemaContext> that is available from a surrounding construct such as a <xref:System.Xaml.XamlWriter>. In this case, you can pass the <xref:System.Xaml.XamlSchemaContext> reference through to all XAML type system calls that require a XAML schema context.  
+  
+ One specific constructor, <xref:System.Xaml.XamlMember.%23ctor%28System.String%2CSystem.Xaml.XamlType%2CSystem.Boolean%29>, does not require a <xref:System.Xaml.XamlSchemaContext>. However, a <xref:System.Xaml.XamlMember> that is constructed with the <xref:System.Xaml.XamlMember.%23ctor%28System.String%2CSystem.Xaml.XamlType%2CSystem.Boolean%29> signature returns `true` for <xref:System.Xaml.XamlMember.IsUnknown%2A>.  
+  
+ For a load path that involves <xref:System.Xaml.XamlObjectWriter>, such a member cannot be written into an object graph. Using the .NET Framework XAML services implementation, the <xref:System.Xaml.XamlObjectWriter.WriteStartMember%2A?displayProperty=fullName> call throws a <xref:System.Xaml.XamlObjectWriterException> when the relevant <xref:System.Xaml.XamlMember> reports `true` for <xref:System.Xaml.XamlMember.IsUnknown%2A>.  
+  
+ You should not construct a <xref:System.Xaml.XamlMember> that has a value of `true` for <xref:System.Xaml.XamlMember.IsUnknown%2A> unless your implementation can handle the exceptions from <xref:System.Xaml.XamlObjectWriter>, or you have other ways to adjust the <xref:System.Xaml.XamlObjectWriter> behavior. For example, one or more of the  following might be true of your implementation:  
+  
+-   The XAML schema context is available later.  
+  
+-   You use a member invoker pattern.  
+  
+-   You deliberately override <xref:System.Xaml.XamlObjectWriter.WriteStartMember%2A?displayProperty=fullName> in a custom XAML writer.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,10 +62,17 @@
         <Parameter Name="schemaContext" Type="System.Xaml.XamlSchemaContext" />
       </Parameters>
       <Docs>
-        <param name="eventInfo">To be added.</param>
-        <param name="schemaContext">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="eventInfo">The CLR type system <see cref="T:System.Reflection.EventInfo" /> that represents the event member.</param>
+        <param name="schemaContext">The <see cref="T:System.Xaml.XamlSchemaContext" /> context that qualifies the member.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlMember" /> class using CLR type system <see cref="T:System.Reflection.EventInfo" /> and a <see cref="T:System.Xaml.XamlSchemaContext" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor if the member represents an event (event handler connection-point property).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -53,10 +89,17 @@
         <Parameter Name="schemaContext" Type="System.Xaml.XamlSchemaContext" />
       </Parameters>
       <Docs>
-        <param name="propertyInfo">To be added.</param>
-        <param name="schemaContext">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="propertyInfo">The CLR type system <see cref="T:System.Reflection.PropertyInfo" /> that represents the property member.</param>
+        <param name="schemaContext">The <see cref="T:System.Xaml.XamlSchemaContext" /> context that qualifies the member.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlMember" /> class using CLR type system <see cref="T:System.Reflection.PropertyInfo" /> and a <see cref="T:System.Xaml.XamlSchemaContext" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor if the member represents a property (and specifically is not an event handler connection).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -74,11 +117,18 @@
         <Parameter Name="invoker" Type="System.Xaml.Schema.XamlMemberInvoker" />
       </Parameters>
       <Docs>
-        <param name="eventInfo">To be added.</param>
-        <param name="schemaContext">To be added.</param>
-        <param name="invoker">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="eventInfo">The CLR type system <see cref="T:System.Reflection.EventInfo" /> that represents the event member.</param>
+        <param name="schemaContext">The <see cref="T:System.Xaml.XamlSchemaContext" /> context that qualifies the member.</param>
+        <param name="invoker">The <see cref="T:System.Xaml.Schema.XamlMemberInvoker" /> implementation that handles run-time reflection calls against the <see cref="T:System.Xaml.XamlMember" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlMember" /> class using CLR type system <see cref="T:System.Reflection.EventInfo" /> and a <see cref="T:System.Xaml.XamlSchemaContext" />, including <see cref="T:System.Xaml.Schema.XamlMemberInvoker" /> information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor if the member represents an event (or an event handler connection-point property).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -96,11 +146,18 @@
         <Parameter Name="invoker" Type="System.Xaml.Schema.XamlMemberInvoker" />
       </Parameters>
       <Docs>
-        <param name="propertyInfo">To be added.</param>
-        <param name="schemaContext">To be added.</param>
-        <param name="invoker">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="propertyInfo">The CLR type system <see cref="T:System.Reflection.PropertyInfo" /> that represents the property member.</param>
+        <param name="schemaContext">The <see cref="T:System.Xaml.XamlSchemaContext" /> context that qualifies the member.</param>
+        <param name="invoker">The <see cref="T:System.Xaml.Schema.XamlMemberInvoker" /> implementation that handles run-time invocation calls against the <see cref="T:System.Xaml.XamlMember" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlMember" /> class using reflection <see cref="T:System.Reflection.PropertyInfo" /> and a <see cref="T:System.Xaml.XamlSchemaContext" />, including <see cref="T:System.Xaml.Schema.XamlMemberInvoker" /> information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor only if the member represents a property and if it is not an event handler connection.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -118,11 +175,18 @@
         <Parameter Name="schemaContext" Type="System.Xaml.XamlSchemaContext" />
       </Parameters>
       <Docs>
-        <param name="attachableEventName">To be added.</param>
-        <param name="adder">To be added.</param>
-        <param name="schemaContext">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="attachableEventName">The string name of the attachable event.</param>
+        <param name="adder">The CLR type system <see cref="T:System.Reflection.MethodInfo" /> for the handler <see langword="Add" /> method of the attachable member's backing implementation.</param>
+        <param name="schemaContext">The <see cref="T:System.Xaml.XamlSchemaContext" /> context that qualifies the member.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlMember" /> class for a <see cref="T:System.Xaml.XamlMember" /> that represents an attachable event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor if the member represents an attachable event member.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -140,11 +204,31 @@
         <Parameter Name="isAttachable" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="declaringType">To be added.</param>
-        <param name="isAttachable">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="name">The string name of the member.</param>
+        <param name="declaringType">The <see cref="T:System.Xaml.XamlType" /> information for the declaring type.</param>
+        <param name="isAttachable">
+          <see langword="true" /> to indicate that the member is attachable; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlMember" /> class using a string name and declaring <see cref="T:System.Xaml.XamlType" /> information. A <see cref="T:System.Xaml.XamlMember" /> that is constructed with this signature has significant limitations; see Remarks.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Xaml.XamlMember> that is constructed with the <xref:System.Xaml.XamlMember.%23ctor%28System.String%2CSystem.Xaml.XamlType%2CSystem.Boolean%29> signature returns `true` for <xref:System.Xaml.XamlMember.IsUnknown%2A>.  
+  
+ For a load path that involves <xref:System.Xaml.XamlObjectWriter>, such a member cannot be written into an object graph. Using the .NET Framework XAML Services implementation, the <xref:System.Xaml.XamlObjectWriter.WriteStartMember%2A?displayProperty=fullName> call throws a <xref:System.Xaml.XamlObjectWriterException> when the relevant <xref:System.Xaml.XamlMember> reports `true` for <xref:System.Xaml.XamlMember.IsUnknown%2A>.  
+  
+ You should not construct a <xref:System.Xaml.XamlMember> with <xref:System.Xaml.XamlMember.IsUnknown%2A>`true` unless your implementation can handle the exceptions from <xref:System.Xaml.XamlObjectWriter>, or you have other ways to adjust the <xref:System.Xaml.XamlObjectWriter> behavior. For example, one or more of the following might be true of your implementation:  
+  
+-   The XAML schema context is available later.  
+  
+-   You use a member invoker pattern.  
+  
+-   You deliberately override <xref:System.Xaml.XamlObjectWriter.WriteStartMember%2A?displayProperty=fullName> in a custom XAML writer.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> or <paramref name="declaringType" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -163,12 +247,19 @@
         <Parameter Name="schemaContext" Type="System.Xaml.XamlSchemaContext" />
       </Parameters>
       <Docs>
-        <param name="attachablePropertyName">To be added.</param>
-        <param name="getter">To be added.</param>
-        <param name="setter">To be added.</param>
-        <param name="schemaContext">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="attachablePropertyName">The string name of the attachable property.</param>
+        <param name="getter">The CLR type system <see cref="T:System.Reflection.MethodInfo" /> for the <see langword="get" /> accessor of the attachable member's backing implementation.</param>
+        <param name="setter">The CLR type system <see cref="T:System.Reflection.MethodInfo" /> for the <see langword="set" /> accessor of the attachable member's backing implementation.</param>
+        <param name="schemaContext">The <see cref="T:System.Xaml.XamlSchemaContext" /> context that qualifies the member.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlMember" /> class for a <see cref="T:System.Xaml.XamlMember" /> that represents an attachable property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor if the member represents an attachable property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -187,12 +278,19 @@
         <Parameter Name="invoker" Type="System.Xaml.Schema.XamlMemberInvoker" />
       </Parameters>
       <Docs>
-        <param name="attachableEventName">To be added.</param>
-        <param name="adder">To be added.</param>
-        <param name="schemaContext">To be added.</param>
-        <param name="invoker">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="attachableEventName">The string name of the attachable event.</param>
+        <param name="adder">The CLR type system <see cref="T:System.Reflection.MethodInfo" /> for the handler <see langword="Add" /> method of the attachable member's backing implementation.</param>
+        <param name="schemaContext">The <see cref="T:System.Xaml.XamlSchemaContext" /> context that qualifies the member.</param>
+        <param name="invoker">The <see cref="T:System.Xaml.Schema.XamlMemberInvoker" /> implementation that handles run-time invocation calls against the <see cref="T:System.Xaml.XamlMember" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlMember" /> class for a <see cref="T:System.Xaml.XamlMember" /> that represents an attachable event, including <see cref="T:System.Xaml.Schema.XamlMemberInvoker" /> information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor if the member represents an attachable event member.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -212,13 +310,20 @@
         <Parameter Name="invoker" Type="System.Xaml.Schema.XamlMemberInvoker" />
       </Parameters>
       <Docs>
-        <param name="attachablePropertyName">To be added.</param>
-        <param name="getter">To be added.</param>
-        <param name="setter">To be added.</param>
-        <param name="schemaContext">To be added.</param>
-        <param name="invoker">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="attachablePropertyName">The string name of the attachable property.</param>
+        <param name="getter">The CLR type system <see cref="T:System.Reflection.MethodInfo" /> for the <see langword="get" /> accessor of the attachable member's backing implementation.</param>
+        <param name="setter">The CLR type system <see cref="T:System.Reflection.MethodInfo" /> for the <see langword="set" /> accessor of the attachable member's backing implementation.</param>
+        <param name="schemaContext">The <see cref="T:System.Xaml.XamlSchemaContext" /> context that qualifies the member.</param>
+        <param name="invoker">The <see cref="T:System.Xaml.Schema.XamlMemberInvoker" /> implementation that handles run-time invocation calls against the <see cref="T:System.Xaml.XamlMember" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlMember" /> class for a <see cref="T:System.Xaml.XamlMember" /> that represents an attachable property, including <see cref="T:System.Xaml.Schema.XamlMemberInvoker" /> information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor if the member represents an attachable property member.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DeclaringType">
@@ -234,9 +339,19 @@
         <ReturnType>System.Xaml.XamlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Xaml.XamlType" /> for the type that declares the member that is associated with this <see cref="T:System.Xaml.XamlMember" />.</summary>
+        <value>The <see cref="T:System.Xaml.XamlType" /> for the type that declares the member that is associated with this <see cref="T:System.Xaml.XamlMember" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This value is typically set during initialization and is usually not `null`.  
+  
+> [!IMPORTANT]
+>  <xref:System.Xaml.XamlMember.DeclaringType%2A> information can be passed in by constructors for initialization. By calling directly into base constructors, initialization for <xref:System.Xaml.XamlMember> derived classes can omit some of the value-checks that are made in the base class. Therefore, the derived initialization can change the reported type-member relationship information of a XAML member so that it no longer aligns in an expected way with the type system information of its underlying CLR declaration. For any security-critical checks of declaring type information, use the underlying CLR type instead.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DeferringLoader">
@@ -252,9 +367,16 @@
         <ReturnType>System.Xaml.Schema.XamlValueConverter&lt;System.Xaml.XamlDeferringLoader&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a <see cref="T:System.Xaml.Schema.XamlValueConverter`1" /> object, which is used for deferred loading of XAML declared objects.</summary>
+        <value>A <see cref="T:System.Xaml.Schema.XamlValueConverter`1" /> with <see cref="T:System.Xaml.XamlDeferringLoader" /> constraint on the generic.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling <xref:System.Xaml.XamlMember.DeferringLoader%2A> invokes <xref:System.Xaml.XamlMember.LookupDeferringLoader%2A> or a specific override of that method. This behavior occurs in cases where the initial internal reflection logic has not already set the information.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DependsOn">
@@ -270,9 +392,22 @@
         <ReturnType>System.Collections.Generic.IList&lt;System.Xaml.XamlMember&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a list of <see cref="T:System.Xaml.XamlMember" /> objects. These report the members where dependency relationships for initialization order exist relative to this <see cref="T:System.Xaml.XamlMember" />.</summary>
+        <value>A list of <see cref="T:System.Xaml.XamlMember" /> objects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling <xref:System.Xaml.XamlMember.DependsOn%2A> invokes <xref:System.Xaml.XamlMember.LookupDependsOn%2A> or a specific override of that method. This behavior occurs in cases where the initial internal reflection logic has not already set the information.  
+  
+ The `DependsOn` pattern can be applied to object model cases that deliberately contradict a general XAML rule. The general XAML rule is that members of a type that are not passed as initialization text (or by a factory method in XAML 2009) must be able to be assigned in any order. By applying a `DependsOn` pattern to a member, you can instruct XAML writers to always process the referenced member before this member. You can apply this pattern in situations where the value of the current member requires context or other information that is only available after the other member is set.  
+  
+ The `DependsOn` pattern should be applied judiciously and reserved for property scenarios where it serves an architectural purpose. Large numbers of dependencies have the potential to slow down XAML processing. Also, it is possible to produce circular dependencies, in which case the XAML processing behavior is undefined.  
+  
+ Example `DependsOn` scenarios from WPF include certain properties on <xref:System.Windows.Controls.ControlTemplate> and <xref:System.Windows.DataTemplate>, on <xref:System.Windows.Trigger>, and on <xref:System.Windows.Setter>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -291,9 +426,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The object to compare with this object.</param>
+        <summary>Indicates whether the current object is equal to another object.</summary>
+        <returns>
+          <see langword="true" /> if the current object is equal to the <paramref name="obj" /> parameter; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -313,9 +449,10 @@
         <Parameter Name="other" Type="System.Xaml.XamlMember" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">An object to compare with this object.</param>
+        <summary>Indicates whether the current object is equal to another object of the same type.</summary>
+        <returns>
+          <see langword="true" /> if the current object is equal to the <paramref name="other" /> parameter; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -333,8 +470,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code for this object.</summary>
+        <returns>An integer hash code.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -352,9 +489,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a list of XAML namespaces where this XAML member can exist.</summary>
+        <returns>A list of XAML namespace identifiers as strings.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation returns the <xref:System.Xaml.XamlType.GetXamlNamespaces%2A?displayProperty=fullName> call result from the <xref:System.Xaml.XamlMember.DeclaringType%2A> that is associated with this <xref:System.Xaml.XamlMember>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Invoker">
@@ -370,9 +514,22 @@
         <ReturnType>System.Xaml.Schema.XamlMemberInvoker</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Xaml.Schema.XamlMemberInvoker" /> implementation that is associated with this <see cref="T:System.Xaml.XamlMember" />.</summary>
+        <value>The <see cref="T:System.Xaml.Schema.XamlMemberInvoker" /> implementation that is associated with this <see cref="T:System.Xaml.XamlMember" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `Invoker` pattern is an advanced XAML type system extension technique. The `Invoker` pattern provides a way to inject different schema type mapping behavior, while still using XAML type system definitions from .NET Framework XAML Services.  
+  
+ If a <xref:System.Xaml.XamlMember.LookupInvoker%2A> override returns `null`, or if the default implementation returns `null` because it lacks the <xref:System.Xaml.XamlMember.UnderlyingMember%2A> for this <xref:System.Xaml.XamlMember>, the <xref:System.Xaml.XamlMember.Invoker%2A> property returns <xref:System.Xaml.Schema.XamlMemberInvoker.UnknownInvoker%2A?displayProperty=fullName>.  
+  
+ <xref:System.Xaml.Schema.XamlMemberInvoker.UnknownInvoker%2A?displayProperty=fullName> is the default. This is true for most operations that use .NET Framework XAML Services and the default XAML schema context, and where no specific override `Invoker` patterns are passed for construction of XAML type system entities.  
+  
+ Calling <xref:System.Xaml.XamlMember.Invoker%2A> invokes <xref:System.Xaml.XamlMember.LookupInvoker%2A> or a specific override of that method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsAmbient">
@@ -388,9 +545,21 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether this <see cref="T:System.Xaml.XamlMember" /> is reported as an ambient property.</summary>
+        <value>
+          <see langword="true" /> if this <see cref="T:System.Xaml.XamlMember" /> is reported as an ambient property; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling <xref:System.Xaml.XamlMember.IsAmbient%2A> invokes <xref:System.Xaml.XamlMember.LookupIsAmbient%2A> or a specific override of that method. This behavior occurs in implementations where the initial internal reflection logic has not already set the information.  
+  
+ Checking for ambient properties is are usually part of XAML processing logic to make sure that objects and values that rely on ambient usage for type qualification can function correctly. The .NET Framework XAML Services APIs and the default XAML schema context populates this value based on attribution with <xref:System.Windows.Markup.AmbientAttribute>. The default implementation of <xref:System.Xaml.XamlMember.LookupIsAmbient%2A> uses this existing <xref:System.Windows.Markup.AmbientAttribute> technique, and it returns `true` if <xref:System.Windows.Markup.AmbientAttribute> exists on a member declaration.  
+  
+ <xref:System.Windows.Markup.AmbientAttribute> is found on members of several WPF types, which include <xref:System.Windows.Application>, <xref:System.Windows.Setter>, and <xref:System.Windows.Style>. It is also found on the <xref:System.Windows.ResourceDictionary> type, which connotes that any member that uses <xref:System.Windows.ResourceDictionary> as its type should be considered ambient even if the member is not specifically attributed.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsAttachable">
@@ -406,9 +575,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether this <see cref="T:System.Xaml.XamlMember" /> is an attachable member.</summary>
+        <value>
+          <see langword="true" /> if this <see cref="T:System.Xaml.XamlMember" /> is an attachable member; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xaml.XamlMember.IsAttachable%2A> value is initialized based on which constructor was used to construct a <xref:System.Xaml.XamlMember>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsDirective">
@@ -424,9 +601,19 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether this <see cref="T:System.Xaml.XamlMember" /> is a XAML directive.</summary>
+        <value>
+          <see langword="true" /> if this <see cref="T:System.Xaml.XamlMember" /> is a XAML directive; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xaml.XamlMember.IsDirective%2A> value is initialized based on which constructor was used to construct a <xref:System.Xaml.XamlMember>. The base <xref:System.Xaml.XamlMember> constructors initialize so that <xref:System.Xaml.XamlMember.IsDirective%2A> is `false`. However, the <xref:System.Xaml.XamlDirective> class (a <xref:System.Xaml.XamlMember> derived class) initializes so that <xref:System.Xaml.XamlMember.IsDirective%2A> is `true`.  
+  
+ If you want to report <xref:System.Xaml.XamlMember.IsDirective%2A> as `true` to callers of a custom XAML schema class for XAML members, make sure you derive from <xref:System.Xaml.XamlDirective> because that is the only way to enable that behavior.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsEvent">
@@ -442,9 +629,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether this <see cref="T:System.Xaml.XamlMember" /> represents an event member.</summary>
+        <value>
+          <see langword="true" /> if this <see cref="T:System.Xaml.XamlMember" /> represents an event; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling <xref:System.Xaml.XamlMember.IsEvent%2A> invokes <xref:System.Xaml.XamlMember.LookupIsEvent%2A> or a specific override of that method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsNameValid">
@@ -460,8 +655,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether this <see cref="T:System.Xaml.XamlMember" /> is initialized with a valid <see langword="xamlName" /> string as its <see cref="P:System.Xaml.XamlMember.Name" />.</summary>
+        <value>
+          <see langword="true" /> if this <see cref="T:System.Xaml.XamlMember" /> is initialized with a valid <see langword="xamlName" /> string; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -478,9 +674,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether this <see cref="T:System.Xaml.XamlMember" /> represents a read-only member.</summary>
+        <value>
+          <see langword="true" /> if this <see cref="T:System.Xaml.XamlMember" /> represents a read-only member; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling <xref:System.Xaml.XamlMember.IsReadOnly%2A> invokes <xref:System.Xaml.XamlMember.LookupIsReadOnly%2A> or a specific override of that method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsReadPublic">
@@ -496,9 +700,22 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether this <see cref="T:System.Xaml.XamlMember" /> represents a member with a callable public <see langword="get" /> accessor.</summary>
+        <value>
+          <see langword="true" /> if this <see cref="T:System.Xaml.XamlMember" /> represents a callable public <see langword="get" /> accessor; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xaml.XamlMember.IsReadPublic%2A> value checks whether the <xref:System.Xaml.XamlMember.DeclaringType%2A> is public. If <xref:System.Xaml.XamlMember.DeclaringType%2A> is nonpublic, the `get` accessor is not callable in a practical way, and <xref:System.Xaml.XamlMember.IsReadPublic%2A> returns `false`.  
+  
+ Calling <xref:System.Xaml.XamlMember.IsReadPublic%2A> invokes <xref:System.Xaml.XamlMember.LookupIsReadPublic%2A> or a specific override of that method.  
+  
+> [!IMPORTANT]
+>  The <xref:System.Xaml.XamlMember.LookupIsReadPublic%2A> method is virtual and therefore, can be overridden. The override has the potential to change (maliciously or otherwise) the reported access information of a XAML member so that it no longer aligns in an expected way with the type system access information of its underlying CLR declaration. For any security-critical checks of access levels, use the underlying CLR type instead.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsUnknown">
@@ -514,9 +731,23 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the member is not resolvable by the backing system that is used for type and member resolution.</summary>
+        <value>
+          <see langword="true" /> if the member is not resolvable; <see langword="false" /> if the member is resolvable.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Xaml.XamlMember> that is constructed with the <xref:System.Xaml.XamlMember.%23ctor%28System.String%2CSystem.Xaml.XamlType%2CSystem.Boolean%29> signature returns `true` for <xref:System.Xaml.XamlMember.IsUnknown%2A>.  
+  
+ For a load path that involves <xref:System.Xaml.XamlObjectWriter>, a <xref:System.Xaml.XamlMember> with `true` for <xref:System.Xaml.XamlMember.IsUnknown%2A> cannot be written into an object graph. Under the default implementations in .NET Framework XAML Services APIs, the <xref:System.Xaml.XamlObjectWriter.WriteStartMember%2A?displayProperty=fullName> call throws a <xref:System.Xaml.XamlObjectWriterException> when the relevant <xref:System.Xaml.XamlMember> reports `true` for <xref:System.Xaml.XamlMember.IsUnknown%2A>.  
+  
+ You should not construct a <xref:System.Xaml.XamlMember> that has a value of `true` for <xref:System.Xaml.XamlMember.IsUnknown%2A> unless your implementation can handle the exceptions from <xref:System.Xaml.XamlObjectWriter>, or you have other ways to adjust the <xref:System.Xaml.XamlObjectWriter> behavior.  
+  
+ Calling <xref:System.Xaml.XamlMember.IsUnknown%2A> invokes <xref:System.Xaml.XamlMember.LookupIsUnknown%2A> or a specific override of that method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsWriteOnly">
@@ -532,9 +763,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether this <see cref="T:System.Xaml.XamlMember" /> represents a write-only member.</summary>
+        <value>
+          <see langword="true" /> if this <see cref="T:System.Xaml.XamlMember" /> represents a write-only member; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling <xref:System.Xaml.XamlMember.IsWriteOnly%2A> invokes <xref:System.Xaml.XamlMember.LookupIsWriteOnly%2A> or a specific override of that method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsWritePublic">
@@ -550,9 +789,22 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether this <see cref="T:System.Xaml.XamlMember" /> represents a member that has a callable public <see langword="set" /> accessor.</summary>
+        <value>
+          <see langword="true" /> if this <see cref="T:System.Xaml.XamlMember" /> represents a callable public <see langword="set" /> accessor; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xaml.XamlMember.IsWritePublic%2A> value considers whether the <xref:System.Xaml.XamlMember.DeclaringType%2A> is public as part of the determination. If <xref:System.Xaml.XamlMember.DeclaringType%2A> is nonpublic, the `set` accessor is not callable in a practical way, and <xref:System.Xaml.XamlMember.IsWritePublic%2A> returns `false`.  
+  
+ Calling <xref:System.Xaml.XamlMember.IsWritePublic%2A> invokes <xref:System.Xaml.XamlMember.LookupIsWritePublic%2A> or a specific override of that method.  
+  
+> [!IMPORTANT]
+>  The <xref:System.Xaml.XamlMember.LookupIsWritePublic%2A> method is virtual and therefore, can be overridden. The override has the potential to change (maliciously or otherwise) the reported access information of a XAML member so that it no longer aligns in an expected way with the type system access information of its underlying CLR declaration. For any security-critical checks of access levels, use the underlying CLR type instead.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LookupCustomAttributeProvider">
@@ -569,9 +821,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>When implemented in a derived class, returns an <see cref="T:System.Reflection.ICustomAttributeProvider" /> implementation.</summary>
+        <returns>An <see cref="T:System.Reflection.ICustomAttributeProvider" /> implementation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Override this method to provide the internal reflection with an alternative way to obtain CLR attribute values. In the absence of an override, the internal reflector uses typical CLR reflection logic such as calls to <xref:System.Reflection.CustomAttributeData.GetCustomAttributes%2A>.  
+  
+ The default implementation returns `null`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LookupDeferringLoader">
@@ -588,9 +849,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a <see cref="T:System.Xaml.Schema.XamlValueConverter`1" /> object, which is used for deferred loading of XAML declared objects.</summary>
+        <returns>A <see cref="T:System.Xaml.Schema.XamlValueConverter`1" /> that has a <see cref="T:System.Xaml.XamlDeferringLoader" /> constraint on the generic.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is invoked when a caller gets a value from the <xref:System.Xaml.XamlMember.DeferringLoader%2A> property. Override this method if you want <xref:System.Xaml.XamlMember.DeferringLoader%2A> to return a value that differs from the value that is enabled by default internal reflection, and if you are also providing custom <xref:System.Xaml.Schema.XamlMemberInvoker> information.  
+  
+ The default implementation returns an object either by reading <xref:System.Windows.Markup.XamlDeferLoadAttribute> or using a <xref:System.Xaml.XamlDeferringLoader> from the declaring type. If neither object is available, this method might return `null`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LookupDependsOn">
@@ -607,9 +877,22 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a list of <see cref="T:System.Xaml.XamlMember" /> objects. Items in the list report the members where dependency relationships for initialization order exist relative to this <see cref="T:System.Xaml.XamlMember" />.</summary>
+        <returns>A list of <see cref="T:System.Xaml.XamlMember" /> objects.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is invoked when a caller gets a value from the <xref:System.Xaml.XamlMember.DependsOn%2A> property. Override this method if you want <xref:System.Xaml.XamlMember.DependsOn%2A> to return a value that differs from the value that is enabled by default internal reflection, and if you are also providing custom <xref:System.Xaml.Schema.XamlMemberInvoker> information.  
+  
+ The WPF XAML reader and writer implementations attribute this case with <xref:System.Windows.Markup.DependsOnAttribute>. The default implementation uses this existing <xref:System.Windows.Markup.DependsOnAttribute> technique.  
+  
+ Override this method if you are not using <xref:System.Windows.Markup.DependsOnAttribute> for this purpose and intend to replace that technique for indicating property processing order with your own technique. If you do not intend to support a property processing order, you can use the default implementation because it returns no results, which is appropriate.  
+  
+ The list is read-only.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LookupInvoker">
@@ -626,9 +909,20 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a <see cref="T:System.Xaml.Schema.XamlMemberInvoker" /> that is associated with this <see cref="T:System.Xaml.XamlMember" />.</summary>
+        <returns>The <see cref="T:System.Xaml.Schema.XamlMemberInvoker" /> information for this <see cref="T:System.Xaml.XamlMember" />; or <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is invoked by calls to <xref:System.Xaml.XamlMember.Invoker%2A>.  
+  
+ The default implementation does not require that a <xref:System.Xaml.XamlMember> be constructed by using one of the constructors that pass an initial <xref:System.Xaml.Schema.XamlMemberInvoker>. However, an <xref:System.Xaml.XamlMember.UnderlyingMember%2A> value must exist for the <xref:System.Xaml.XamlMember>; otherwise, the default implementation returns `null`.  
+  
+ Override this method if you also derive from <xref:System.Xaml.Schema.XamlMemberInvoker> and intend to return the derived class. If you return `null`, <xref:System.Xaml.XamlMember.Invoker%2A> returns <xref:System.Xaml.Schema.XamlMemberInvoker.UnknownInvoker%2A?displayProperty=fullName> to callers.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LookupIsAmbient">
@@ -645,9 +939,21 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns whether this <see cref="T:System.Xaml.XamlMember" /> is reported as an ambient property.</summary>
+        <returns>
+          <see langword="true" /> to report this <see cref="T:System.Xaml.XamlMember" /> as an ambient property; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is invoked by internal calls that check for ambient XAML property information. Ambient property behavior is accounted for in the public API behavior of XAML readers and XAML writers. The internal calls that reference <xref:System.Xaml.XamlMember.LookupIsAmbient%2A> are usually part of XAML processing logic to make sure that objects and values that rely on ambient usage for type qualification can function correctly. The default .NET Framework XAML Services implementation uses CLR attributing to obtain this information from reflection over backing types. Specifically, the default implementation checks for <xref:System.Windows.Markup.AmbientAttribute> and returns `true` for <xref:System.Xaml.XamlMember.LookupIsAmbient%2A> if <xref:System.Windows.Markup.AmbientAttribute> exists on a member definition.  
+  
+ Override this method if you are not using <xref:System.Windows.Markup.AmbientAttribute> for this purpose and intend to replace that technique for indicating ambient XAML properties with your own technique.  
+  
+ Example APIs from WPF that attribute with <xref:System.Windows.Markup.AmbientAttribute> are <xref:System.Windows.Trigger.Property%2A?displayProperty=fullName> and <xref:System.Windows.Style.BasedOn%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LookupIsEvent">
@@ -664,9 +970,19 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns whether this <see cref="T:System.Xaml.XamlMember" /> represents an event.</summary>
+        <returns>
+          <see langword="true" /> to report that this <see cref="T:System.Xaml.XamlMember" /> represents an event; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation checks whether <xref:System.Xaml.XamlMember.UnderlyingMember%2A> is of type <xref:System.Reflection.EventInfo>, and if it is, returns `true`.  
+  
+ This method is invoked when a caller gets a value from <xref:System.Xaml.XamlMember.IsEvent%2A>. Override this method if you want to report uniform results for an entire <xref:System.Xaml.XamlMember> derived class, or if you have specialized metadata available that can be interpreted to determine XAML type system representations on a per-case basis.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LookupIsReadOnly">
@@ -683,9 +999,19 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns whether this <see cref="T:System.Xaml.XamlMember" /> represents an intended read-only property.</summary>
+        <returns>
+          <see langword="true" /> to report this <see cref="T:System.Xaml.XamlMember" /> as an intended read-only property; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation returns `true` if <xref:System.Xaml.XamlMember.UnderlyingMember%2A> exists, but a public `set` accessor does not exist for it, as determined by internal reflection.  
+  
+ This method is invoked when a caller gets a value from <xref:System.Xaml.XamlMember.IsReadOnly%2A>. Override this method if you want to report uniform results for an entire <xref:System.Xaml.XamlMember> derived class, or if you have specialized metadata available that can be interpreted to determine XAML type system representations on a per-case basis.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LookupIsReadPublic">
@@ -702,9 +1028,24 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns whether this <see cref="T:System.Xaml.XamlMember" /> represents a property that has a public <see langword="get" /> accessor.</summary>
+        <returns>
+          <see langword="true" /> if this <see cref="T:System.Xaml.XamlMember" /> represents a property that has a public <see langword="get" /> accessor; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation returns results based either on internal reflection or the negation of <xref:System.Xaml.XamlMember.IsWriteOnly%2A>, processing in that order.  
+  
+ <xref:System.Xaml.XamlMember.LookupIsReadPublic%2A> returns whether the member itself is public; it returns `true` for a public member on a nonpublic declaring type. Use <xref:System.Xaml.XamlMember.IsReadPublic%2A> instead, if you also want to consider the visibility of the declaring type.  
+  
+ This method is invoked when a caller gets a value from <xref:System.Xaml.XamlMember.IsReadPublic%2A>. Override this method if you want to report uniform results for an entire <xref:System.Xaml.XamlMember> derived class, or if you have specialized metadata available to determine this on a per-case basis.  
+  
+> [!IMPORTANT]
+>  The <xref:System.Xaml.XamlMember.LookupIsReadPublic%2A> method is virtual and therefore, can be overridden. The override has the potential to change (maliciously or otherwise) the reported access information of a XAML member so that it no longer aligns in an expected way with the type system access information of its underlying CLR declaration. For any security-critical checks of access levels, use the underlying CLR type instead.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LookupIsUnknown">
@@ -721,9 +1062,19 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns whether this <see cref="T:System.Xaml.XamlMember" /> represents a member that is not resolvable by the backing system that is used for type and member resolution.</summary>
+        <returns>
+          <see langword="true" /> if this <see cref="T:System.Xaml.XamlMember" /> represents a non-resolvable member; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method may be invoked when a caller gets a value from <xref:System.Xaml.XamlMember.IsUnknown%2A>. The default implementation returns results that are based on either internal reflection or checking for a `null` value of <xref:System.Xaml.XamlMember.UnderlyingMember%2A>, processing in that order.  
+  
+ Override this method if you want to report uniform results for an entire <xref:System.Xaml.XamlMember> derived class, or if you have specialized metadata available to determine this on a per-case basis.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LookupIsWriteOnly">
@@ -740,9 +1091,19 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns whether this <see cref="T:System.Xaml.XamlMember" /> represents a member that has a public <see langword="set" /> accessor but not a public <see langword="get" /> accessor.</summary>
+        <returns>
+          <see langword="true" /> if this <see cref="T:System.Xaml.XamlMember" /> represents a write-only member; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation returns `true` if an <xref:System.Xaml.XamlMember.UnderlyingMember%2A> exists that has a public `set` accessor and a nonpublic `get` accessor, as determined by internal reflection.  
+  
+ This method is invoked when a caller gets a value from <xref:System.Xaml.XamlMember.IsWriteOnly%2A>. Override this method if you want to report uniform results for an entire <xref:System.Xaml.XamlMember> derived class, or if you have specialized metadata available to determine this on a per-case basis.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LookupIsWritePublic">
@@ -759,9 +1120,22 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns whether this <see cref="T:System.Xaml.XamlMember" /> represents a member that has a public <see langword="set" /> accessor.</summary>
+        <returns>
+          <see langword="true" /> if this <see cref="T:System.Xaml.XamlMember" /> represents a writable member; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation returns results based  either internal reflection or the negation of <xref:System.Xaml.XamlMember.IsReadOnly%2A>, processing in that order.  
+  
+ This method is invoked when a caller gets a value from <xref:System.Xaml.XamlMember.IsWritePublic%2A>. Override this method if you want to report uniform results for an entire <xref:System.Xaml.XamlMember> derived class, or if you have specialized metadata available to determine this on a per-case basis.  
+  
+> [!IMPORTANT]
+>  The <xref:System.Xaml.XamlMember.LookupIsWritePublic%2A> method is virtual and therefore, can be overridden. The override has the potential to change (maliciously or otherwise) the reported access information of a XAML member so that it no longer aligns in an expected way with the type system access information of its underlying CLR declaration. For any security-critical checks of access levels, use the underlying CLR type instead.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LookupMarkupExtensionBracketCharacters">
@@ -778,8 +1152,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the opening and closing bracket characters for a markup extension.</summary>
+        <returns>A collection containing the opening and closing bracket characters.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -797,9 +1171,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the <see cref="T:System.Xaml.XamlType" /> of the type where the <see cref="T:System.Xaml.XamlMember" /> can exist.</summary>
+        <returns>The type where the <see cref="T:System.Xaml.XamlMember" /> can exist. See Remarks.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation distinguishes between attachable and non-attachable members. For non-attachable members, <xref:System.Xaml.XamlMember.LookupTargetType%2A> always returns <xref:System.Xaml.XamlMember.DeclaringType%2A>. For attachable members, <xref:System.Xaml.XamlMember.LookupTargetType%2A> returns a result based on examining the <xref:System.Xaml.XamlMember.UnderlyingMember%2A> accessor parameter type and interprets that type based on XAML schema context.  
+  
+ This method is invoked when a caller gets a value from <xref:System.Xaml.XamlMember.TargetType%2A>. Override this method if you want to report uniform results for an entire <xref:System.Xaml.XamlMember> derived class, or if you have specialized metadata available to determine this on a per-case basis.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LookupType">
@@ -816,9 +1199,28 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the <see cref="T:System.Xaml.XamlType" /> of the type that is used by the member. See Remarks.</summary>
+        <returns>The <see cref="T:System.Xaml.XamlType" /> of the type that is used by the member. See Remarks.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is invoked when a caller gets a value from <xref:System.Xaml.XamlMember.Type%2A>. Override this method if you want <xref:System.Xaml.XamlMember.Type%2A> to return a value that differs from the value that is enabled by default internal reflection, and if you are also providing custom <xref:System.Xaml.Schema.XamlMemberInvoker> information.  
+  
+ The default implementation uses different code paths and conceptual meanings for the returned <xref:System.Xaml.XamlType> that is based on whether this <xref:System.Xaml.XamlMember> represents a property, method, or event.  
+  
+-   For a property, the returned <xref:System.Xaml.XamlType> is the type that sets the property or is returned by the property.  
+  
+-   For an event, the returned <xref:System.Xaml.XamlType> is the required event handler type (a delegate in a CLR implementation).  
+  
+-   For a method, <xref:System.Xaml.XamlType> is the return type.  
+  
+ In each case, XAML schema context is used to evaluate the XAML type from the underlying system type.  
+  
+ This method is invoked when a caller gets a value from <xref:System.Xaml.XamlMember.Type%2A>. Override this method if you want to report uniform results for an entire <xref:System.Xaml.XamlMember> derived class, or if you have specialized metadata available to determine this on a per-case basis.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LookupTypeConverter">
@@ -835,9 +1237,24 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a type converter implementation that is associated with this <see cref="T:System.Xaml.XamlMember" />.</summary>
+        <returns>A <see cref="T:System.Xaml.Schema.XamlValueConverter`1" /> instance with <see cref="T:System.ComponentModel.TypeConverter" /> constraint; or <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation uses the following logic and processing order:  
+  
+-   If attributing exists at the member level (<xref:System.ComponentModel.TypeConverterAttribute>), the attribute information is used for a call to <xref:System.Xaml.XamlSchemaContext.GetValueConverter%2A> against the XAML schema context.  
+  
+-   If <xref:System.Xaml.XamlMember.Type%2A> is valid, a type converter that is associated with the type is returned.  
+  
+-   If the member is an event, an event-specific type converter is returned.  
+  
+ This method is invoked when a caller gets a value from <xref:System.Xaml.XamlMember.TypeConverter%2A>. Override this method if you want to report uniform results for an entire <xref:System.Xaml.XamlMember> derived class, or if you have specialized metadata available to determine this on a per-case basis.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LookupUnderlyingGetter">
@@ -854,9 +1271,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a <see langword="get" /> accessor that is associated with this <see cref="T:System.Xaml.XamlMember" />.</summary>
+        <returns>The <see cref="T:System.Reflection.MethodInfo" /> for the associated <see langword="get" /> accessor; or <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation interprets the <xref:System.Xaml.XamlMember.UnderlyingMember%2A> property as <xref:System.Reflection.PropertyInfo> and returns the value of <xref:System.Reflection.PropertyInfo.GetGetMethod%2A?displayProperty=fullName> (with the parameter set to `true`), which means that the returned method can be nonpublic. This behavior can result in `null` for certain cases. including cases where no associated accessor exists or the member is not a property.  
+  
+ This method is invoked when a caller gets a value from the <xref:System.Xaml.Schema.XamlMemberInvoker.UnderlyingGetter%2A> property on an associated <xref:System.Xaml.Schema.XamlMemberInvoker>. Override this method if you want to report uniform results for an entire <xref:System.Xaml.XamlMember> derived class, or if you have specialized metadata available to determine this on a per-case basis. Make sure to implement <xref:System.Xaml.XamlMember.LookupUnderlyingGetter%2A>, <xref:System.Xaml.XamlMember.LookupUnderlyingSetter%2A>, and <xref:System.Xaml.XamlMember.LookupUnderlyingMember%2A> so that they all return correlated results.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LookupUnderlyingMember">
@@ -873,9 +1299,20 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a CLR type system <see cref="T:System.Reflection.MemberInfo" /> that is associated with this <see cref="T:System.Xaml.XamlMember" />.</summary>
+        <returns>A CLR type system <see cref="T:System.Reflection.MemberInfo" /> object that is associated with this <see cref="T:System.Xaml.XamlMember" />; or <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation returns the underlying member information, which is based on construction. If the <xref:System.Reflection.MemberInfo> object is constructed with a signature that does not provide enough information to set the underlying member, this method returns `null`.  
+  
+ If an underlying member was set during construction, you should not need to call this method.  
+  
+ This method is invoked when a caller gets a value from <xref:System.Xaml.XamlMember.UnderlyingMember%2A>. Override this method if you want to report uniform results for an entire <xref:System.Xaml.XamlMember> derived class, or if you have specialized metadata available to determine this on a per-case basis. Make sure to implement <xref:System.Xaml.XamlMember.LookupUnderlyingGetter%2A>, <xref:System.Xaml.XamlMember.LookupUnderlyingSetter%2A>, and <xref:System.Xaml.XamlMember.LookupUnderlyingMember%2A> so that they all return correlated results.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LookupUnderlyingSetter">
@@ -892,9 +1329,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a <see langword="set" /> accessor that is associated with this <see cref="T:System.Xaml.XamlMember" />.</summary>
+        <returns>The <see cref="T:System.Reflection.MethodInfo" /> for the associated <see langword="set" /> accessor; or <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation interprets <xref:System.Xaml.XamlMember.UnderlyingMember%2A> as <xref:System.Reflection.PropertyInfo> and returns the value of <xref:System.Reflection.PropertyInfo.GetSetMethod%2A?displayProperty=fullName> (with the parameter set to `true`), which means that the returned method can be nonpublic. This can result in `null` for certain cases, including cases where there is no such accessor, or the member is not a property.  
+  
+ This method is invoked when a caller gets a value from <xref:System.Xaml.Schema.XamlMemberInvoker.UnderlyingSetter%2A> on an associated <xref:System.Xaml.Schema.XamlMemberInvoker>.Override this method if you want to report uniform results for an entire <xref:System.Xaml.XamlMember> derived class, or if you have specialized metadata available to determine this on a per-case basis. Make sure to implement <xref:System.Xaml.XamlMember.LookupUnderlyingGetter%2A>, <xref:System.Xaml.XamlMember.LookupUnderlyingSetter%2A>, and <xref:System.Xaml.XamlMember.LookupUnderlyingMember%2A> so that they all return correlated results.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LookupValueSerializer">
@@ -911,9 +1357,24 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a value serializer implementation that is associated with this <see cref="T:System.Xaml.XamlMember" />.</summary>
+        <returns>A <see cref="T:System.Xaml.Schema.XamlValueConverter`1" /> instance with <see cref="T:System.Windows.Markup.ValueSerializer" /> constraint, or <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation uses the following logic and processing order:  
+  
+-   If attributing exists at the member level (<xref:System.Windows.Markup.ValueSerializerAttribute>), the attribute information is used for a call to <xref:System.Xaml.XamlSchemaContext.GetValueConverter%2A> against the XAML schema context.  
+  
+-   If <xref:System.Xaml.XamlMember.Type%2A> is valid, a value converter that is associated with the type is returned.  
+  
+-   If the previous conditions do not apply, `null` is returned.  
+  
+ This method is invoked when a caller gets a value from <xref:System.Xaml.XamlMember.ValueSerializer%2A>. Override this method if you want to report uniform results for an entire <xref:System.Xaml.XamlMember> derived class, or if you have specialized metadata available to determine this on a per-case basis.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MarkupExtensionBracketCharacters">
@@ -929,8 +1390,8 @@
         <ReturnType>System.Collections.Generic.IReadOnlyDictionary&lt;System.Char,System.Char&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Defines the opening and closing bracket characters for a markup extension.</summary>
+        <value>A collection containing the opening and closing bracket characters.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -947,9 +1408,18 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see langword="xamlName" /> name string that declares this <see cref="T:System.Xaml.XamlMember" />.</summary>
+        <value>The <see langword="xamlName" /> name string that declares this <see cref="T:System.Xaml.XamlMember" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This value is always set during construction. The constructors that are implemented by <xref:System.Xaml.XamlMember> typically throw an exception if an initial name is not specified; therefore, do not expect this property to be `null` or an empty string, if you are using default .NET Framework XAML Services implementations.  
+  
+ [XamlName Grammar](../Topic/XamlName%20Grammar.md) and naming rules for CLR type and members are not an exact intersect. It is possible to declare a member name that is legal under CLR but not valid under XAML naming. You should avoid this situation if possible.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -969,10 +1439,11 @@
         <Parameter Name="xamlMember2" Type="System.Xaml.XamlMember" />
       </Parameters>
       <Docs>
-        <param name="xamlMember1">To be added.</param>
-        <param name="xamlMember2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="xamlMember1">A <see cref="T:System.Xaml.XamlMember" /> or <see langword="null" />.</param>
+        <param name="xamlMember2">A <see cref="T:System.Xaml.XamlMember" /> or <see langword="null" />.</param>
+        <summary>Determines whether two specified <see cref="T:System.Xaml.XamlMember" /> objects have the same value.</summary>
+        <returns>
+          <see langword="true" /> if the value of <paramref name="xamlMember1" /> is the same as the value of <paramref name="xamlMember2" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -993,10 +1464,11 @@
         <Parameter Name="xamlMember2" Type="System.Xaml.XamlMember" />
       </Parameters>
       <Docs>
-        <param name="xamlMember1">To be added.</param>
-        <param name="xamlMember2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="xamlMember1">A <see cref="T:System.Xaml.XamlMember" /> or <see langword="null" />.</param>
+        <param name="xamlMember2">A <see cref="T:System.Xaml.XamlMember" /> or <see langword="null" />.</param>
+        <summary>Determines whether two specified <see cref="T:System.Xaml.XamlMember" /> objects have different values.</summary>
+        <returns>
+          <see langword="true" /> if the value of <paramref name="xamlMember1" /> differs from the value of <paramref name="xamlMember2" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1013,9 +1485,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the single XAML namespace URI that identifies the primary XAML namespace for this <see cref="T:System.Xaml.XamlMember" />.</summary>
+        <value>The identifier for the primary XAML namespace for this <see cref="T:System.Xaml.XamlMember" />, as a string.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xaml.XamlMember.PreferredXamlNamespace%2A> property provides the same value as calling <xref:System.Xaml.XamlMember.GetXamlNamespaces%2A> and then getting the first value string from the returned list. The preferred XAML namespace should be used when writing the member back to text or other representations that preserve XAML namespace information.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SerializationVisibility">
@@ -1031,8 +1510,8 @@
         <ReturnType>System.ComponentModel.DesignerSerializationVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.ComponentModel.DesignerSerializationVisibility" /> value, which indicates how a visual designer should process the member.</summary>
+        <value>A value of the <see cref="T:System.ComponentModel.DesignerSerializationVisibility" /> enumeration. The default is <see cref="F:System.ComponentModel.DesignerSerializationVisibility.Visible" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1049,9 +1528,20 @@
         <ReturnType>System.Xaml.XamlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Xaml.XamlType" /> of the type where the <see cref="T:System.Xaml.XamlMember" /> can exist.</summary>
+        <value>The type where the <see cref="T:System.Xaml.XamlMember" /> can exist. See Remarks.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The returned value is different for attachable and non-attachable members. For non-attachable members, <xref:System.Xaml.XamlMember.TargetType%2A> returns <xref:System.Xaml.XamlMember.DeclaringType%2A>. For attachable members, <xref:System.Xaml.XamlMember.LookupTargetType%2A> returns a result that is based on this logic:  
+  
+-   If reflection cannot resolve a backing (<xref:System.Xaml.XamlMember.IsUnknown%2A> `true`), this method returns an internal constant that represents a generic object type.  
+  
+-   If the previous condition does not apply, <xref:System.Xaml.XamlMember.LookupTargetType%2A> is called. The default implementation returns a <xref:System.Xaml.XamlType> that is based on examining the methods that implement the `get` and `set` accessors. A class might override <xref:System.Xaml.XamlMember.LookupTargetType%2A> to use a different behavior such as other metadata forms that might report target types for attachable members.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1068,9 +1558,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a string representation of this <see cref="T:System.Xaml.XamlMember" />.</summary>
+        <returns>A string representation of this <see cref="T:System.Xaml.XamlMember" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This implementation returns <xref:System.Xaml.XamlMember.Name%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -1086,9 +1583,26 @@
         <ReturnType>System.Xaml.XamlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Xaml.XamlType" /> of the type that is used by the member.</summary>
+        <value>The <see cref="T:System.Xaml.XamlType" /> of the type that is used by the member. See Remarks.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling <xref:System.Xaml.XamlMember.Type%2A> invokes <xref:System.Xaml.XamlMember.LookupType%2A> or a specific override of that method. This occurs when the initial internal reflection logic has not already set the information.  
+  
+ In the default behavior (no <xref:System.Xaml.XamlMember.LookupType%2A> override), the returned <xref:System.Xaml.XamlType> can have different conceptual meanings. Which meaning applies depends on whether this <xref:System.Xaml.XamlMember> represents a property, method, or event, as the following list shows:  
+  
+-   For a property, the returned <xref:System.Xaml.XamlType> is the type that sets the property or is returned by the property.  
+  
+-   For an event, the returned <xref:System.Xaml.XamlType> is the required event handler type (a delegate in a CLR implementation).  
+  
+-   For a method, <xref:System.Xaml.XamlType> is the return type of that method, which may be `null`.  
+  
+ In each case, the XAML schema context is used to evaluate the XAML type from the backing type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TypeConverter">
@@ -1104,9 +1618,26 @@
         <ReturnType>System.Xaml.Schema.XamlValueConverter&lt;System.ComponentModel.TypeConverter&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a <see cref="T:System.Xaml.Schema.XamlValueConverter`1" /> object, which can be used for type conversion construction of XAML declared objects.</summary>
+        <value>A <see cref="T:System.Xaml.Schema.XamlValueConverter`1" /> value, with a <see cref="T:System.ComponentModel.TypeConverter" /> constraint on the generic. See Remarks.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling <xref:System.Xaml.XamlMember.TypeConverter%2A> invokes <xref:System.Xaml.XamlMember.LookupTypeConverter%2A> or a specific override of that method. This behavior occurs when the initial internal reflection logic has not already set the information.  
+  
+ Implementations that return a non-null property value for <xref:System.Xaml.XamlMember.TypeConverter%2A> are not necessarily a working <xref:System.ComponentModel.TypeConverter>. The following is a list of possible non-null return values for <xref:System.Xaml.XamlMember.TypeConverter%2A> and what these values represent:  
+  
+-   The return value reports a type converter that is attributed specifically to that member or more generally to the target type of the converter. This behavior is typically what most XAML type systems and XAML processors look for in order to instantiate a type converter and invoke its methods.  
+  
+-   The return value reports a built-in value converter. These converters exist for certain internal operations that are performed by a XAML writer. In particular, these built-in value converters convert the raw attribute string values to the XAML language-level primitives. For the .NET Framework XAML Services implementation, these built-in type conversions often forward to a type converter that is defined in the System assembly. For example, a conversion for an <xref:System.Int32> value has built-in forwarded conversion, and therefore, the <xref:System.Xaml.Schema.XamlValueConverter%601.ConverterType%2A> value references <xref:System.ComponentModel.Int32Converter>.  
+  
+-   The return value reports the special case of an unconstrained object model; that is, the <xref:System.Xaml.XamlMember> has a <xref:System.Xaml.XamlMember.Type%2A> value of <xref:System.Object>. In this case, the <xref:System.Xaml.Schema.XamlValueConverter%601> reports that the <xref:System.Xaml.Schema.XamlValueConverter%601.Name%2A?displayProperty=fullName> is {`Object}`. However, <xref:System.Xaml.Schema.XamlValueConverter%601.ConverterInstance%2A> is `null` because no actual type or instance is available to perform this conversion. Instead, the object model behavior cannot be determined until run time, when the runtime of the specific technology determines the handling of its object graph.  
+  
+ If you can access a working <xref:System.ComponentModel.TypeConverter> from <xref:System.Xaml.Schema.XamlValueConverter%601.ConverterInstance%2A>, you can invoke its conversion methods. However, many conversion methods rely on service context. If you do not have the same service context available that the type converter expects for its typical role of writing objects for object graphs, the converter methods can throw exceptions.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UnderlyingMember">
@@ -1127,9 +1658,16 @@
         <ReturnType>System.Reflection.MemberInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the CLR type system <see cref="T:System.Reflection.MemberInfo" /> that is available for a member that is constructed by <see cref="T:System.Reflection.PropertyInfo" />, <see cref="T:System.Reflection.MethodInfo" />, or <see cref="T:System.Reflection.EventInfo" />.</summary>
+        <value>CLR type system <see cref="T:System.Reflection.MemberInfo" /> information, as cast from the initial constructor parameters. A <see cref="T:System.Xaml.XamlMember" /> that is constructed with the <see cref="M:System.Xaml.XamlMember.#ctor(System.String,System.Xaml.XamlType,System.Boolean)" /> signature returns <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling <xref:System.Xaml.XamlMember.UnderlyingMember%2A> invokes <xref:System.Xaml.XamlMember.LookupUnderlyingMember%2A> or a specific override of that method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ValueSerializer">
@@ -1145,9 +1683,18 @@
         <ReturnType>System.Xaml.Schema.XamlValueConverter&lt;System.Windows.Markup.ValueSerializer&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a <see cref="T:System.Xaml.Schema.XamlValueConverter`1" /> object, which is used for value serialization of XAML declared objects.</summary>
+        <value>A <see cref="T:System.Xaml.Schema.XamlValueConverter`1" /> with <see cref="T:System.Windows.Markup.ValueSerializer" /> constraint on the generic.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling <xref:System.Xaml.XamlMember.ValueSerializer%2A> invokes <xref:System.Xaml.XamlMember.LookupValueSerializer%2A> or a specific override of that method. This behavior occurs when the initial internal reflection logic has not already set the information.  
+  
+ Not all cases that return a non-null property value for <xref:System.Xaml.XamlMember.ValueSerializer%2A> are necessarily a working <xref:System.Windows.Markup.ValueSerializer>. See Remarks in <xref:System.Xaml.XamlMember.TypeConverter%2A>; the same considerations apply to <xref:System.Xaml.XamlMember.ValueSerializer%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

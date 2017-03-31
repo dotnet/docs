@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Converts instances of <see cref="T:System.Windows.Media.Animation.RepeatBehavior" /> to and from other data types.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.RepeatBehaviorConverter" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,11 +47,19 @@
         <Parameter Name="t" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="td">To be added.</param>
-        <param name="t">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="td">Context information required for conversion.</param>
+        <param name="t">Type to evaluate for conversion.</param>
+        <summary>Determines whether or not conversion from a specified data type is possible.</summary>
+        <returns>
+          <see langword="true " />if conversion is supported; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.String> is the only supported type for conversion.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CanConvertTo">
@@ -71,11 +79,19 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="destinationType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="context">Context information required for conversion.</param>
+        <param name="destinationType">Destination type being evaluated for conversion.</param>
+        <summary>Determines if conversion to a specified type is possible.</summary>
+        <returns>
+          <see langword="true" /> if conversion is possible; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The only supported destination types are <xref:System.String> and <xref:System.ComponentModel.Design.Serialization.InstanceDescriptor>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertFrom">
@@ -96,11 +112,11 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="td">To be added.</param>
-        <param name="cultureInfo">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="td">Context information required for conversion.</param>
+        <param name="cultureInfo">Cultural information to respect during conversion.</param>
+        <param name="value">Object being evaluated for conversion.</param>
+        <summary>Converts a given string value to an instance of <see cref="T:System.Windows.Media.Animation.RepeatBehaviorConverter" />.</summary>
+        <returns>A new <see cref="T:System.Windows.Media.Animation.RepeatBehavior" /> object based on <paramref name="value" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,12 +144,12 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="cultureInfo">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="destinationType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">Context information required for conversion.</param>
+        <param name="cultureInfo">Cultural information to respect during conversion.</param>
+        <param name="value">Object being evaluated for conversion.</param>
+        <param name="destinationType">Destination type being evaluated for conversion.</param>
+        <summary>Converts an instance of <see cref="T:System.Windows.Media.Animation.RepeatBehavior" /> to a supported destination type.</summary>
+        <returns>The only supported destination types are <see cref="T:System.String" /> and <see cref="T:System.ComponentModel.Design.Serialization.InstanceDescriptor" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

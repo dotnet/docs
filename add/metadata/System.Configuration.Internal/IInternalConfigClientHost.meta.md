@@ -1,34 +1,41 @@
 ---
 uid: System.Configuration.Internal.IInternalConfigClientHost
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.Internal.IInternalConfigClientHost.GetRoamingUserConfigPath
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.Internal.IInternalConfigClientHost.GetExeConfigPath
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.Internal.IInternalConfigClientHost.GetLocalUserConfigPath
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.Internal.IInternalConfigClientHost.IsExeConfig(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.Internal.IInternalConfigClientHost.IsLocalUserConfig(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.Internal.IInternalConfigClientHost.IsRoamingUserConfig(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

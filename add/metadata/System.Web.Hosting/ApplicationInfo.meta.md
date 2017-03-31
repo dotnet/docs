@@ -1,19 +1,23 @@
 ---
 uid: System.Web.Hosting.ApplicationInfo
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.ApplicationInfo.ID
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.ApplicationInfo.VirtualPath
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.ApplicationInfo.PhysicalPath
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

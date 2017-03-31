@@ -1,14 +1,20 @@
 ---
 uid: System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingAttribute
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingAttribute.SteppingOption
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingAttribute.#ctor(System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingOption)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

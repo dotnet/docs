@@ -1,1 +1,0 @@
-ruleSetting.Custom = "MyEvaluators.MyCustomeEvaluator2, MyCustom.dll";

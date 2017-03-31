@@ -34,9 +34,16 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="T">The type of the object referenced.</typeparam>
+    <summary>Represents a typed weak reference, which references an object while still allowing that object to be reclaimed by garbage collection.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A weak reference enables the garbage collector to collect an object while still allowing an application to access the object. If you need the object, you can obtain a strong reference to it and prevent it from being collected.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -64,8 +71,8 @@
         <Parameter Name="target" Type="T" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="target">The object to reference, or <see langword="null" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.WeakReference`1" /> class that references the specified object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,9 +102,10 @@
         <Parameter Name="trackResurrection" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="trackResurrection">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="target">The object to reference, or <see langword="null" />.</param>
+        <param name="trackResurrection">
+          <see langword="true" /> to track the object after finalization; <see langword="false" /> to track the object only until finalization.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.WeakReference`1" /> class that references the specified object and uses the specified resurrection tracking.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,7 +131,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Discards the reference to the target that is represented by the current <see cref="T:System.WeakReference`1" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,10 +157,12 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">An object that holds all the data necessary to serialize or deserialize the current <see cref="T:System.WeakReference`1" /> object.</param>
+        <param name="context">The location where serialized data is stored and retrieved.</param>
+        <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object with all the data necessary to serialize the current <see cref="T:System.WeakReference`1" /> object.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="info" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetTarget">
@@ -183,8 +193,8 @@
         <Parameter Name="target" Type="T" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="target">The new target object.</param>
+        <summary>Sets the target object that is referenced by this <see cref="T:System.WeakReference`1" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -216,9 +226,10 @@
         <Parameter Name="target" Type="T&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">When this method returns, contains the target object, if it is available. This parameter is treated as uninitialized.</param>
+        <summary>Tries to retrieve the target object that is referenced by the current <see cref="T:System.WeakReference`1" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the target was retrieved; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

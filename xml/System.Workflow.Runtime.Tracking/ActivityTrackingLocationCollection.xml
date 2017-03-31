@@ -19,8 +19,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains a collection of <see cref="T:System.Workflow.Runtime.Tracking.ActivityTrackingLocation" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ An <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint> maintains two <xref:System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection> objects: <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.MatchingLocations%2A> specifies parameters used for matching activity status events and <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.ExcludedLocations%2A> specifies parameters used to exclude activity status events from matching.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,8 +45,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default constructor initializes the <xref:System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection> to an empty list.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -51,9 +69,18 @@
         <Parameter Name="locations" Type="System.Collections.Generic.IEnumerable&lt;System.Workflow.Runtime.Tracking.ActivityTrackingLocation&gt;" />
       </Parameters>
       <Docs>
-        <param name="locations">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="locations">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> list of <see cref="T:System.Workflow.Runtime.Tracking.ActivityTrackingLocation" /> objects.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection" /> class by using a list of activity locations.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection> is initialized to contain the <xref:System.Workflow.Runtime.Tracking.ActivityTrackingLocation> objects specified in `locations`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="locations" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
   </Members>

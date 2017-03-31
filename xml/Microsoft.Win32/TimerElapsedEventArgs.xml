@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides data for the <see cref="E:Microsoft.Win32.SystemEvents.TimerElapsed" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:Microsoft.Win32.SystemEvents.TimerElapsed> event is raised when a windows timer interval has expired.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,8 +35,8 @@
         <Parameter Name="timerId" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="timerId">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="timerId">The ID number for the timer.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Win32.TimerElapsedEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +53,8 @@
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the ID number for the timer.</summary>
+        <value>The ID number for the timer.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

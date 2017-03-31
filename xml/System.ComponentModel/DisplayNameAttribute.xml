@@ -25,8 +25,23 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the display name for a property, event, or public void method which takes no arguments.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default is the name of the property or event. The default implementation of <xref:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems%2A> uses reflection to search the public properties and public void methods that take no arguments. <xref:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems%2A> searches for the <xref:System.ComponentModel.DisplayNameAttribute> on each property and method and, if found, uses that string instead of the property or method name.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates using the <xref:System.ComponentModel.DisplayNameAttribute> class to change the name of a property called `MisnamedProperty` to `RenamedProperty` in a <xref:System.Windows.Forms.PropertyGrid> control. For a full code listing, see [How to: Apply Attributes in Windows Forms Controls](../Topic/How%20to:%20Apply%20Attributes%20in%20Windows%20Forms%20Controls.md).  
+  
+ [!code-csharp[System.ComponentModel.AttributesDemoControl#30](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/CS/attributesdemocontrol.cs#30)]
+ [!code-vb[System.ComponentModel.AttributesDemoControl#30](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/VB/attributesdemocontrol.vb#30)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,7 +64,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DisplayNameAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,8 +90,8 @@
         <Parameter Name="displayName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="displayName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="displayName">The display name.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DisplayNameAttribute" /> class using the display name.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,7 +117,7 @@
         <ReturnType>System.ComponentModel.DisplayNameAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the default value for the <see cref="T:System.ComponentModel.DisplayNameAttribute" />. This field is read-only.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,8 +143,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the display name for a property, event, or public void method that takes no arguments stored in this attribute.</summary>
+        <value>The display name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,8 +170,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the display name.</summary>
+        <value>The display name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -185,9 +200,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The <see cref="T:System.ComponentModel.DisplayNameAttribute" /> to test the value equality of.</param>
+        <summary>Determines whether two <see cref="T:System.ComponentModel.DisplayNameAttribute" /> instances are equal.</summary>
+        <returns>
+          <see langword="true" /> if the value of the given object is equal to that of the current object; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -214,8 +230,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code for this instance.</summary>
+        <returns>A hash code for the current <see cref="T:System.ComponentModel.DisplayNameAttribute" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -238,8 +254,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Determines if this attribute is the default.</summary>
+        <returns>
+          <see langword="true" /> if the attribute is the default value for this attribute class; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

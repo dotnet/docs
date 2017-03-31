@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains a query result set consisting of metadata associated with an instance owner or instance owners that are retrieved from a persistence store.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes an instance of the <see cref="T:System.Runtime.DurableInstancing.InstanceOwnerQueryResult" /> class with an empty query result set.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <Parameter Name="instanceOwners" Type="System.Collections.Generic.IDictionary&lt;System.Guid,System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceValue&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="instanceOwners">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceOwners">A dictionary that contains GUIDs and metadata of instance owners representing the query result set. Metadata itself is contained in additional dictionaries that contain names and values of metadata properties.</param>
+        <summary>Initializes an instance of the <see cref="T:System.Runtime.DurableInstancing.InstanceOwnerQueryResult" /> class using the dictionary passed as a parameter that contains GUIDs associated with instance owners and dictionaries that contain metadata associated with these instance owners.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,9 +62,9 @@
         <Parameter Name="metadata" Type="System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="instanceOwnerId">To be added.</param>
-        <param name="metadata">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceOwnerId">GUID associated with the instance owner.</param>
+        <param name="metadata">Metadata associated with the instance owner in a dictionary, (which contains the names of properties and their values).</param>
+        <summary>Initializes an instance of the <see cref="T:System.Runtime.DurableInstancing.InstanceOwnerQueryResult" /> class  with a single query result consisting of the GUID of the instance owner and the metadata associated with that instance owner in the instance store passed as parameters.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,8 +81,8 @@
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.Guid,System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceValue&gt;&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the query result set consisting of metadata associated with an instance owner or instance owners stored in a dictionary that contains the GUID of the instance owner as a key and the metadata stored in another dictionary of names and values of properties as the value.</summary>
+        <value>The metadata associated with instance owners.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

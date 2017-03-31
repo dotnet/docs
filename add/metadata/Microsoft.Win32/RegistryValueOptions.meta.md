@@ -1,4 +1,6 @@
 ---
 uid: Microsoft.Win32.RegistryValueOptions
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

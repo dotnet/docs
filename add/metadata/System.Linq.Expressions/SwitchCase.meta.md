@@ -1,24 +1,33 @@
 ---
 uid: System.Linq.Expressions.SwitchCase
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.Expressions.SwitchCase.Body
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.Expressions.SwitchCase.Update(System.Collections.Generic.IEnumerable{System.Linq.Expressions.Expression},System.Linq.Expressions.Expression)
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.Expressions.SwitchCase.TestValues
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.Expressions.SwitchCase.ToString
-internalonly: False
+ms.author: "billchi"
+manager: "ghogen"
 ---

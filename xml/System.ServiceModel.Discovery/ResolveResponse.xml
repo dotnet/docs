@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the response from a resolve request.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.ServiceModel.Discovery.EndpointDiscoveryMetadata</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.ServiceModel.Discovery.EndpointDiscoveryMetadata" /> that matched the resolve request.</summary>
+        <value>The endpoint discovery metadata.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <ReturnType>System.ServiceModel.Discovery.DiscoveryMessageSequence</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.ServiceModel.Discovery.DiscoveryMessageSequence" /> associated with the <see cref="T:System.ServiceModel.Discovery.ResolveResponse" />.</summary>
+        <value>The discovery message sequence.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

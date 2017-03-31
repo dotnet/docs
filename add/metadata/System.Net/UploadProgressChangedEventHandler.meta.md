@@ -1,4 +1,5 @@
 ---
 uid: System.Net.UploadProgressChangedEventHandler
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

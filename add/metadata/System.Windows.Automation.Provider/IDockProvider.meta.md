@@ -1,14 +1,20 @@
 ---
 uid: System.Windows.Automation.Provider.IDockProvider
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Provider.IDockProvider.SetDockPosition(System.Windows.Automation.DockPosition)
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Provider.IDockProvider.DockPosition
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---

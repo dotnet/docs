@@ -1,1 +1,0 @@
-        md.Subject = sourceSubject.Text

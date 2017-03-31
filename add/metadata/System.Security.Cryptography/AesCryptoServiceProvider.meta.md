@@ -1,49 +1,83 @@
 ---
 uid: System.Security.Cryptography.AesCryptoServiceProvider
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.AesCryptoServiceProvider.Key
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.AesCryptoServiceProvider.KeySize
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.AesCryptoServiceProvider.CreateDecryptor(System.Byte[],System.Byte[])
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.AesCryptoServiceProvider.GenerateKey
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.AesCryptoServiceProvider.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.AesCryptoServiceProvider.CreateEncryptor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.AesCryptoServiceProvider.#ctor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.AesCryptoServiceProvider.CreateEncryptor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.AesCryptoServiceProvider.CreateEncryptor(System.Byte[],System.Byte[])
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.AesCryptoServiceProvider.GenerateIV
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.AesCryptoServiceProvider.CreateDecryptor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.AesCryptoServiceProvider.CreateDecryptor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

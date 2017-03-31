@@ -1,1 +1,0 @@
-        ChDrive("D")   ' Make "D" the current drive.

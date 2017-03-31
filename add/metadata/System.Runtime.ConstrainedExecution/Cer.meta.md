@@ -1,4 +1,6 @@
 ---
 uid: System.Runtime.ConstrainedExecution.Cer
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

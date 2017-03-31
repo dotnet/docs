@@ -11,8 +11,19 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines an encoder that is used to encode [!INCLUDE[TLA#tla_tiff](~/includes/tlasharptla-tiff-md.md)] format images.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The [!INCLUDE[TLA#tla_tiff](~/includes/tlasharptla-tiff-md.md)] bitmap format supports frame level thumbnails, multiple frames, and frame level metadata. It does not support global preview, global thumbnails, or global metadata.  
+  
+ Encoding does not work in partial trust. See [WPF Partial Trust Security](../Topic/WPF%20Partial%20Trust%20Security.md) for information on partial trust.  
+  
+<a name="xamlTextUsage_No"></a>   
+## XAML Text Usage  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,8 +42,19 @@
       </Attributes>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Imaging.TiffBitmapEncoder" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to initialize a <xref:System.Windows.Media.Imaging.TiffBitmapEncoder> to encode a new bitmap image.  
+  
+ [!code-cpp[tiffbitmapdecoderencoder#3](~/samples/snippets/cpp/VS_Snippets_Wpf/TiffBitmapDecoderEncoder/CPP/TiffEncoderDecoder.cpp#3)]
+ [!code-csharp[tiffbitmapdecoderencoder#3](~/samples/snippets/csharp/VS_Snippets_Wpf/TiffBitmapDecoderEncoder/CSharp/TiffEncoderDecoder.cs#3)]
+ [!code-vb[tiffbitmapdecoderencoder#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TiffBitmapDecoderEncoder/VB/TiffEncoderDecoder.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Compression">
@@ -48,9 +70,27 @@
         <ReturnType>System.Windows.Media.Imaging.TiffCompressOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates the type of compression that is used by this [!INCLUDE[TLA#tla_tiff](~/includes/tlasharptla-tiff-md.md)] image.</summary>
+        <value>One of the <see cref="T:System.Windows.Media.Imaging.TiffCompressOption" /> values. The default is <see cref="F:System.Windows.Media.Imaging.TiffCompressOption.Default" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.Imaging.TiffCompressOption>, <xref:System.Windows.Media.Imaging.TiffCompressOption>, and <xref:System.Windows.Media.Imaging.TiffCompressOption> values require that the <xref:System.Windows.Media.PixelFormat> value be set to <xref:System.Windows.Media.PixelFormats.BlackWhite%2A?displayProperty=fullName>.  
+  
+<a name="XAMLTextUsage_Compression"></a>   
+## XAML Text Usage  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Windows.Media.Imaging.TiffBitmapEncoder.Compression%2A> property.  
+  
+ [!code-cpp[tiffbitmapdecoderencoder#3](~/samples/snippets/cpp/VS_Snippets_Wpf/TiffBitmapDecoderEncoder/CPP/TiffEncoderDecoder.cpp#3)]
+ [!code-csharp[tiffbitmapdecoderencoder#3](~/samples/snippets/csharp/VS_Snippets_Wpf/TiffBitmapDecoderEncoder/CSharp/TiffEncoderDecoder.cs#3)]
+ [!code-vb[tiffbitmapdecoderencoder#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TiffBitmapDecoderEncoder/VB/TiffEncoderDecoder.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

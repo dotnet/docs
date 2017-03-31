@@ -11,8 +11,26 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides media playback for drawings.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Although you can declare an instance of this class in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)], you cannot load and play its media without using code. To play media in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] only, use a <xref:System.Windows.Controls.MediaElement>. Also, if you declare an instance in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], the only practical use is to fill property element syntax for the <xref:System.Windows.Media.VideoDrawing.Player%2A> property.  
+  
+ When distributing media with your application, you cannot use a media file as a project resource. In your project file, you must instead set the media type to `Content` and set `CopyToOutputDirectory` to `PreserveNewest` or `Always`.  
+  
+ <xref:System.Windows.Media.MediaPlayer> can be used in two different modes, depending on what is driving the player: independent mode or clock mode. In independent mode, the <xref:System.Windows.Media.MediaPlayer> is analogous to an image and the media opened through the <xref:System.Windows.Media.MediaPlayer.Open%2A> method drives playback. In Clock mode, the <xref:System.Windows.Media.MediaPlayer> can be thought of as a target for an animation, and thus it will have corresponding <xref:System.Windows.Media.Animation.Timeline> and <xref:System.Windows.Media.Animation.Clock> entries in the Timing tree which controls playback. For more information on media modes, see the [Multimedia Overview](../Topic/Multimedia%20Overview.md).  
+  
+ <xref:System.Windows.Media.MediaPlayer> is different from a <xref:System.Windows.Controls.MediaElement> in that it is not a control that can be added directly to the [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] of an application. To display media loaded using <xref:System.Windows.Media.MediaPlayer>, a <xref:System.Windows.Media.VideoDrawing> or <xref:System.Windows.Media.DrawingContext> must be used.  
+  
+   
+  
+## Examples  
+ [How to: Play Media using a VideoDrawing](../Topic/How%20to:%20Play%20Media%20using%20a%20VideoDrawing.md)  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +44,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.MediaPlayer" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,9 +61,16 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the balance between the left and right speaker volumes.</summary>
+        <value>The ratio of volume across the left and right speakers in a range between -1 and 1. The default is 0.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A value of -1 represents 100% of the left side speakers and 1 represents 100% of the right side speakers.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BufferingEnded">
@@ -61,7 +86,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when buffering has finished.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,8 +103,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the percentage of buffering completed for streaming content.</summary>
+        <value>The percentage of buffering completed for streaming content represented in a value between 0 and 1.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,7 +121,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when buffering has started.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,8 +138,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the media can be paused.</summary>
+        <value>true if the media can be paused; otherwise, false.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,9 +156,18 @@
         <ReturnType>System.Windows.Media.MediaClock</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see cref="T:System.Windows.Media.MediaClock" /> associated with the <see cref="T:System.Windows.Media.MediaTimeline" /> to be played.</summary>
+        <value>The clock associated with the <see cref="T:System.Windows.Media.MediaTimeline" /> to be played. The default is null.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting this property tells the <xref:System.Windows.Media.MediaPlayer> to be clock driven and will utilize the timing engine, placing the player in Clock mode. Any media that is playing is stopped and the <xref:System.Uri> associated with the new clock is opened.  
+  
+ When the player is in clock mode, seeking using <xref:System.Windows.Media.MediaPlayer.Position%2A> or calling the <xref:System.Windows.Media.MediaPlayer.Play%2A>, <xref:System.Windows.Media.MediaPlayer.Pause%2A>, or <xref:System.Windows.Media.MediaPlayer.Stop%2A> methods will throw an <xref:System.InvalidOperationException>. These operations are only available when the player <xref:System.Windows.Media.MediaPlayer.Clock%2A> is null.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CloneCore">
@@ -152,9 +186,18 @@
         <Parameter Name="sourceFreezable" Type="System.Windows.Freezable" />
       </Parameters>
       <Docs>
-        <param name="sourceFreezable">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="sourceFreezable">The <see cref="T:System.Windows.Media.MediaPlayer" /> to clone.</param>
+        <summary>Makes this instance a deep copy of the specified <see cref="T:System.Windows.Media.MediaPlayer" />. When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the <xref:System.Windows.Freezable.Clone%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a modifiable copy of the current object, call <xref:System.Windows.Freezable.Clone%2A> instead of calling this method directly.  
+  
+ For more information, see <xref:System.Windows.Freezable.CloneCore%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CloneCurrentValueCore">
@@ -173,9 +216,18 @@
         <Parameter Name="sourceFreezable" Type="System.Windows.Freezable" />
       </Parameters>
       <Docs>
-        <param name="sourceFreezable">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="sourceFreezable">The <see cref="T:System.Windows.Media.MediaPlayer" /> to clone.</param>
+        <summary>Makes this instance a modifiable deep copy of the specified <see cref="T:System.Windows.Media.MediaPlayer" /> using current property values. Resource references, data bindings, and animations are not copied, but their current values are.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the <xref:System.Windows.Freezable.CloneCurrentValue%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a modifiable copy of the current object, call <xref:System.Windows.Freezable.CloneCurrentValue%2A> instead of calling this method directly.  
+  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValueCore%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -192,8 +244,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Closes the underlying media.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.MediaPlayer> can be opened again by calling the <xref:System.Windows.Media.MediaPlayer.Open%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceCore">
@@ -210,8 +269,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a new <see cref="T:System.Windows.Media.MediaPlayer" /> instance.</summary>
+        <returns>A new <see cref="T:System.Windows.Media.MediaPlayer" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -228,8 +287,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the percentage of download progress for content located at a remote server.</summary>
+        <value>The percentage of download progress for content located at a remote server represented by a value between 0 and 1. The default is 0.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -249,9 +308,20 @@
         <Parameter Name="sourceFreezable" Type="System.Windows.Freezable" />
       </Parameters>
       <Docs>
-        <param name="sourceFreezable">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="sourceFreezable">The <see cref="T:System.Windows.Media.MediaPlayer" /> object to clone and freeze.</param>
+        <summary>Makes this instance a clone of the specified <see cref="T:System.Windows.Media.MediaPlayer" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values. Note that if these properties contain resource references or data bindings, <xref:System.Windows.Freezable.GetAsFrozen%2A> will fail when trying to freeze the object and will throw an <xref:System.InvalidOperationException>.  
+  
+ This method is called by the <xref:System.Windows.Freezable.GetAsFrozen%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a frozen copy of the current object, call <xref:System.Windows.Freezable.GetAsFrozen%2A> instead of calling this method directly.  
+  
+ For more information, see <xref:System.Windows.Freezable.GetAsFrozenCore%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HasAudio">
@@ -267,8 +337,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicating whether the media has audio output.</summary>
+        <value>true if the media has audio output; otherwise, false.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -285,8 +355,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the media has video output.</summary>
+        <value>true if the media has video output; otherwise, false.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -303,8 +373,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the media is buffering.</summary>
+        <value>true if the media is buffering; otherwise, false.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -321,8 +391,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the media is muted.</summary>
+        <value>true if the media is muted; otherwise, false.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -339,7 +409,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the media has finished playback.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -356,8 +426,21 @@
         <ReturnType>System.EventHandler&lt;System.Windows.Media.ExceptionEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when an error is encountered</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_MediaFailed"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object MediaFailed="EventHandler"/>  
+```  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MediaOpened">
@@ -373,7 +456,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the media is opened.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -390,9 +473,16 @@
         <ReturnType>System.Windows.Duration</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the natural duration of the media.</summary>
+        <value>The natural duration of the media. The default is <see cref="P:System.Windows.Duration.Automatic" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.MediaPlayer.NaturalDuration%2A> cannot be determined until after <xref:System.Windows.Media.MediaPlayer.MediaOpened> has occurred.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NaturalVideoHeight">
@@ -408,9 +498,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the pixel height of the video.</summary>
+        <value>The pixel height of the video.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Null is returned if the media type is audio.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NaturalVideoWidth">
@@ -426,9 +523,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the pixel width of the video.</summary>
+        <value>The pixel width of the video.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Null is returned if the media type is audio.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Open">
@@ -447,8 +551,8 @@
         <Parameter Name="source" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="source">The media source <see cref="T:System.Uri" />.</param>
+        <summary>Opens the given <see cref="T:System.Uri" /> for media playback.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -466,8 +570,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Pauses media playback.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling <xref:System.Windows.Media.MediaPlayer.Pause%2A> when a player has an associated <xref:System.Windows.Media.MediaPlayer.Clock%2A> will throw an <xref:System.InvalidOperationException>. <xref:System.Windows.Media.MediaPlayer.Pause%2A> cannot be called while the timing engine drives media playback.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Play">
@@ -484,8 +595,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Plays media from the current <see cref="P:System.Windows.Media.MediaPlayer.Position" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling <xref:System.Windows.Media.MediaPlayer.Play%2A> when a player has an associated <xref:System.Windows.Media.MediaPlayer.Clock%2A> will throw an <xref:System.InvalidOperationException>. <xref:System.Windows.Media.MediaPlayer.Play%2A> cannot be called while the timing engine drives media playback.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Position">
@@ -501,9 +619,20 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the current position of the media.</summary>
+        <value>The current position of the media.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the player has an associated <xref:System.Windows.Media.MediaPlayer.Clock%2A>, setting <xref:System.Windows.Media.MediaPlayer.Position%2A> will throw an <xref:System.InvalidOperationException>. <xref:System.Windows.Media.MediaPlayer.Position%2A> cannot be set while the timing engine drives media playback.  
+  
+<a name="xamlTextUsage_Position"></a>   
+## XAML Text Usage  
+ Not typically used in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadPreamble">
@@ -520,7 +649,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Ensures that the MediaPlayer is being accessed from a valid thread.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -537,8 +666,21 @@
         <ReturnType>System.EventHandler&lt;System.Windows.Media.MediaScriptCommandEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a script command has been encountered within the media.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_ScriptCommand"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object ScriptCommand="EventHandler"/>  
+```  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrubbingEnabled">
@@ -554,8 +696,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether scrubbing is enabled.</summary>
+        <value>
+          <see langword="true" /> if scrubbing is enabled; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -572,9 +715,16 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the media <see cref="T:System.Uri" />.</summary>
+        <value>The current media <see cref="T:System.Uri" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.MediaPlayer.Source%2A> is read-only. This property gets the <xref:System.Uri> that is opened through the <xref:System.Windows.Media.MediaPlayer.Open%2A> method or the <xref:System.Uri> associated with the <xref:System.Windows.Media.MediaPlayer.Clock%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SpeedRatio">
@@ -590,9 +740,24 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the ratio of speed that media is played at.</summary>
+        <value>The ratio of speed that media is played back represented by a value between 0 and the largest double value. The default is 1.0.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Values less than one yield slower than normal playback while values greater than one yields faster than normal playback.  
+  
+ If the player has an associated <xref:System.Windows.Media.MediaPlayer.Clock%2A>, setting <xref:System.Windows.Media.MediaPlayer.SpeedRatio%2A> is not allowed. <xref:System.Windows.Media.MediaPlayer.SpeedRatio%2A> cannot be set while the timing engine drives media playback.  
+  
+ Audio playback is not guaranteed when <xref:System.Windows.Controls.MediaElement.SpeedRatio%2A> is not `1`.  
+  
+<a name="xamlTextUsage_SpeedRatio"></a>   
+## XAML Text Usage  
+ Not typically used in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Stop">
@@ -609,8 +774,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Stops media playback.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling <xref:System.Windows.Media.MediaPlayer.Stop%2A> when a player has an associated <xref:System.Windows.Media.MediaPlayer.Clock%2A> will throw an <xref:System.InvalidOperationException>. <xref:System.Windows.Media.MediaPlayer.Stop%2A> cannot be called while the timing engine drives media playback.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Volume">
@@ -626,9 +798,19 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the media's volume.</summary>
+        <value>The media's volume represented on a linear scale between 0 and 1. The default is 0.5.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlTextUsage_Volume"></a>   
+## XAML Text Usage  
+ Not typically used in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WritePreamble">
@@ -645,7 +827,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Verifies that the MediaPlayer is not frozen and that it is being accessed from a valid threading context.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

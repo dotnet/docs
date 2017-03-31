@@ -1,19 +1,27 @@
 ---
 uid: System.Activities.Hosting.BookmarkScopeInfo
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Hosting.BookmarkScopeInfo.TemporaryId
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Hosting.BookmarkScopeInfo.Id
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Hosting.BookmarkScopeInfo.IsInitialized
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

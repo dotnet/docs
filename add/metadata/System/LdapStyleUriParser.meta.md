@@ -1,9 +1,11 @@
 ---
 uid: System.LdapStyleUriParser
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.LdapStyleUriParser.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

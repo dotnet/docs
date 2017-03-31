@@ -1,2 +1,0 @@
-            Dim binding As BasicHttpBinding = New BasicHttpBinding()
-            serviceHost.AddServiceEndpoint(GetType(ICalculator), binding, "http://localhost:8000/servicemodelsamples/service/basic")

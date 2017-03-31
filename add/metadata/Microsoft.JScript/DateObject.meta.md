@@ -1,4 +1,4 @@
 ---
 uid: Microsoft.JScript.DateObject
-internalonly: False
+ms.author: "mikejo"
 ---

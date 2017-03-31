@@ -1,4 +1,6 @@
 ---
 uid: System.Web.Compilation.FolderLevelBuildProviderAppliesTo
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

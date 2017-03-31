@@ -1,29 +1,61 @@
 ---
 uid: System.Diagnostics.Design.LogConverter
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.Design.LogConverter.GetStandardValues
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Design.LogConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.Design.LogConverter.GetStandardValuesSupported
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Design.LogConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.Design.LogConverter.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.Design.LogConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.Design.LogConverter.ConvertFrom
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Design.LogConverter.CanConvertFrom
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Design.LogConverter.GetStandardValuesSupported(System.ComponentModel.ITypeDescriptorContext)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

@@ -1,29 +1,45 @@
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.NamedImage
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.NamedImage.Dispose
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.NamedImage.Dispose(System.Boolean)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.NamedImage.#ctor
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.NamedImage.#ctor
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.NamedImage.Image
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.NamedImage.#ctor(System.String,System.Drawing.Image)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.NamedImage.Name
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---

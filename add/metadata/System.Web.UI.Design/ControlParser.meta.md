@@ -1,29 +1,47 @@
 ---
 uid: System.Web.UI.Design.ControlParser
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ControlParser.ParseTemplate(System.ComponentModel.Design.IDesignerHost,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ControlParser.ParseControl(System.ComponentModel.Design.IDesignerHost,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ControlParser.ParseControl(System.ComponentModel.Design.IDesignerHost,System.String,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ControlParser.ParseTemplate
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ControlParser.ParseControls(System.ComponentModel.Design.IDesignerHost,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ControlParser.ParseControl
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ControlParser.ParseTemplate(System.ComponentModel.Design.IDesignerHost,System.String,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -11,8 +11,17 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>An enumeration that specifies whether to wrap parameter and return values.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the service or client serializes parameters and return values to a message, it writes them within infrastructure-provided XML elements and are *wrapped*. Sometimes developers do not want the service to write these extra XML elements. The <xref:System.ServiceModel.Web.WebMessageBodyStyle> enumeration specifies whether to wrap parameters and return values.  
+  
+ This enumeration is used with the <xref:System.ServiceModel.Web.WebGetAttribute> and the <xref:System.ServiceModel.Web.WebInvokeAttribute> to control how the data passed to and from a service operation appears on the wire. Both attributes default to Bare.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Bare">
@@ -29,7 +38,7 @@
         <ReturnType>System.ServiceModel.Web.WebMessageBodyStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Both requests and responses are not wrapped.</summary>
       </Docs>
     </Member>
     <Member MemberName="Wrapped">
@@ -46,7 +55,7 @@
         <ReturnType>System.ServiceModel.Web.WebMessageBodyStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Both requests and responses are wrapped.</summary>
       </Docs>
     </Member>
     <Member MemberName="WrappedRequest">
@@ -63,7 +72,7 @@
         <ReturnType>System.ServiceModel.Web.WebMessageBodyStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Requests are wrapped, responses are not wrapped.</summary>
       </Docs>
     </Member>
     <Member MemberName="WrappedResponse">
@@ -80,7 +89,7 @@
         <ReturnType>System.ServiceModel.Web.WebMessageBodyStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Responses are wrapped, requests are not wrapped.</summary>
       </Docs>
     </Member>
   </Members>

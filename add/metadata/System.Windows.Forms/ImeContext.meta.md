@@ -1,34 +1,47 @@
 ---
 uid: System.Windows.Forms.ImeContext
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ImeContext.Enable(System.IntPtr)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ImeContext.GetImeMode(System.IntPtr)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ImeContext.SetOpenStatus(System.Boolean,System.IntPtr)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ImeContext.SetImeStatus(System.Windows.Forms.ImeMode,System.IntPtr)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ImeContext.IsOpen(System.IntPtr)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ImeContext.Disable(System.IntPtr)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

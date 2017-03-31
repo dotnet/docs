@@ -1,24 +1,29 @@
 ---
 uid: System.Web.Configuration.WebPartsPersonalization
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.WebPartsPersonalization.Authorization
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.WebPartsPersonalization.Providers
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.WebPartsPersonalization.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.WebPartsPersonalization.DefaultProvider
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

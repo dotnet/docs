@@ -1,389 +1,594 @@
 ---
 uid: System.Data.DataView
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataView.#ctor(System.Data.DataTable)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataView.Item(System.Int32)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataView.Dispose
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataView.System#ComponentModel#IBindingList#AddIndex(System.ComponentModel.PropertyDescriptor)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataView.System#ComponentModel#IBindingListView#SupportsFiltering
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataView.System#ComponentModel#IBindingList#RemoveSort
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataView.IndexListChanged(System.Object,System.ComponentModel.ListChangedEventArgs)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataView.ColumnCollectionChanged(System.Object,System.ComponentModel.CollectionChangeEventArgs)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataView.#ctor(System.Data.DataTable,System.String,System.String,System.Data.DataViewRowState)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataView.Find
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataView.Close
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataView.AllowNew
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataView.Count
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataView.Initialized
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataView.System#Collections#IList#Contains(System.Object)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataView.OnListChanged(System.ComponentModel.ListChangedEventArgs)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataView.ToTable(System.String)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataView.AddNew
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataView.Delete(System.Int32)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataView.System#Collections#IList#IsFixedSize
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataView.System#Collections#IList#Remove(System.Object)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataView.ToTable(System.Boolean,System.String[])
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataView.System#Collections#IList#RemoveAt(System.Int32)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataView.GetEnumerator
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataView.ToTable
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataView.System#ComponentModel#IBindingListView#Filter
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataView.System#ComponentModel#IBindingList#SupportsSorting
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataView.RowStateFilter
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataView.IsInitialized
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataView.System#ComponentModel#IBindingList#ApplySort(System.ComponentModel.PropertyDescriptor,System.ComponentModel.ListSortDirection)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataView.System#ComponentModel#IBindingList#Find(System.ComponentModel.PropertyDescriptor,System.Object)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataView.UpdateIndex(System.Boolean)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataView.ApplyDefaultSort
-internalonly: False
----
-
----
-uid: System.Data.DataView.System#Collections#IList#IsReadOnly
-internalonly: False
----
-
----
-uid: System.Data.DataView.System#ComponentModel#IBindingList#AddNew
-internalonly: False
----
-
----
-uid: System.Data.DataView.ToTable(System.String,System.Boolean,System.String[])
-internalonly: False
----
-
----
-uid: System.Data.DataView.System#ComponentModel#IBindingList#SupportsSearching
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataView.#ctor
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.DataView.System#ComponentModel#ITypedList#GetItemProperties(System.ComponentModel.PropertyDescriptor[])
-internalonly: False
+uid: System.Data.DataView.Equals
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.DataView.Find(System.Object)
-internalonly: False
+uid: System.Data.DataView.System#Collections#IList#IsReadOnly
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.DataView.System#ComponentModel#IBindingList#SortProperty
-internalonly: False
+uid: System.Data.DataView.System#ComponentModel#IBindingList#AddNew
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.DataView.Table
-internalonly: False
+uid: System.Data.DataView.ToTable(System.String,System.Boolean,System.String[])
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.DataView.System#Collections#IList#IndexOf(System.Object)
-internalonly: False
+uid: System.Data.DataView.System#ComponentModel#IBindingList#SupportsSearching
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.DataView.System#ComponentModel#IBindingListView#SupportsAdvancedSorting
-internalonly: False
----
-
----
-uid: System.Data.DataView.System#ComponentModel#IBindingListView#SortDescriptions
-internalonly: False
----
-
----
-uid: System.Data.DataView.System#ComponentModel#IBindingList#SupportsChangeNotification
-internalonly: False
----
-
----
-uid: System.Data.DataView.Open
-internalonly: False
----
-
----
-uid: System.Data.DataView.System#Collections#IList#Clear
-internalonly: False
----
-
----
-uid: System.Data.DataView.System#ComponentModel#IBindingList#IsSorted
-internalonly: False
----
-
----
-uid: System.Data.DataView.EndInit
-internalonly: False
----
-
----
-uid: System.Data.DataView.RowFilter
-internalonly: False
----
-
----
-uid: System.Data.DataView.AllowDelete
-internalonly: False
----
-
----
-uid: System.Data.DataView.System#ComponentModel#IBindingList#AllowNew
-internalonly: False
----
-
----
-uid: System.Data.DataView.System#ComponentModel#IBindingList#RemoveIndex(System.ComponentModel.PropertyDescriptor)
-internalonly: False
----
-
----
-uid: System.Data.DataView.IsOpen
-internalonly: False
----
-
----
-uid: System.Data.DataView.System#ComponentModel#IBindingListView#ApplySort(System.ComponentModel.ListSortDescriptionCollection)
-internalonly: False
----
-
----
-uid: System.Data.DataView.Reset
-internalonly: False
----
-
----
-uid: System.Data.DataView.System#Collections#IList#Insert(System.Int32,System.Object)
-internalonly: False
----
-
----
-uid: System.Data.DataView.System#Collections#ICollection#IsSynchronized
-internalonly: False
----
-
----
-uid: System.Data.DataView.System#ComponentModel#IBindingList#AllowRemove
-internalonly: False
----
-
----
-uid: System.Data.DataView.System#ComponentModel#IBindingListView#RemoveFilter
-internalonly: False
----
-
----
-uid: System.Data.DataView.BeginInit
-internalonly: False
----
-
----
-uid: System.Data.DataView.System#ComponentModel#ITypedList#GetListName(System.ComponentModel.PropertyDescriptor[])
-internalonly: False
----
-
----
-uid: System.Data.DataView.System#Collections#ICollection#SyncRoot
-internalonly: False
----
-
----
-uid: System.Data.DataView.CopyTo(System.Array,System.Int32)
-internalonly: False
----
-
----
-uid: System.Data.DataView.FindRows(System.Object)
-internalonly: False
----
-
----
-uid: System.Data.DataView.Dispose(System.Boolean)
-internalonly: False
----
-
----
-uid: System.Data.DataView.System#ComponentModel#IBindingList#AllowEdit
-internalonly: False
----
-
----
-uid: System.Data.DataView.System#ComponentModel#IBindingList#SortDirection
-internalonly: False
----
-
----
-uid: System.Data.DataView.ListChanged
-internalonly: False
----
-
----
-uid: System.Data.DataView.System#Collections#IList#Item(System.Int32)
-internalonly: False
----
-
----
-uid: System.Data.DataView.System#Collections#IList#Add(System.Object)
-internalonly: False
----
-
----
-uid: System.Data.DataView.DataViewManager
-internalonly: False
----
-
----
-uid: System.Data.DataView.Equals(System.Data.DataView)
-internalonly: False
----
-
----
-uid: System.Data.DataView.Find(System.Object[])
-internalonly: False
----
-
----
-uid: System.Data.DataView.Sort
-internalonly: False
----
-
----
-uid: System.Data.DataView.FindRows(System.Object[])
-internalonly: False
+uid: System.Data.DataView.#ctor
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataView.UpdateIndex
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataView.System#ComponentModel#ITypedList#GetItemProperties(System.ComponentModel.PropertyDescriptor[])
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataView.Find(System.Object)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataView.System#ComponentModel#IBindingList#SortProperty
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataView.Table
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataView.System#Collections#IList#IndexOf(System.Object)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataView.System#ComponentModel#IBindingListView#SupportsAdvancedSorting
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataView.System#ComponentModel#IBindingListView#SortDescriptions
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataView.System#ComponentModel#IBindingList#SupportsChangeNotification
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataView.Open
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataView.System#Collections#IList#Clear
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataView.System#ComponentModel#IBindingList#IsSorted
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataView.EndInit
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataView.RowFilter
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataView.AllowDelete
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataView.System#ComponentModel#IBindingList#AllowNew
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataView.System#ComponentModel#IBindingList#RemoveIndex(System.ComponentModel.PropertyDescriptor)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataView.IsOpen
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataView.System#ComponentModel#IBindingListView#ApplySort(System.ComponentModel.ListSortDescriptionCollection)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataView.Reset
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataView.System#Collections#IList#Insert(System.Int32,System.Object)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataView.System#Collections#ICollection#IsSynchronized
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataView.System#ComponentModel#IBindingList#AllowRemove
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataView.System#ComponentModel#IBindingListView#RemoveFilter
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataView.BeginInit
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataView.System#ComponentModel#ITypedList#GetListName(System.ComponentModel.PropertyDescriptor[])
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataView.System#Collections#ICollection#SyncRoot
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataView.CopyTo(System.Array,System.Int32)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataView.FindRows(System.Object)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataView.ToTable
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataView.Dispose(System.Boolean)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataView.System#ComponentModel#IBindingList#AllowEdit
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataView.System#ComponentModel#IBindingList#SortDirection
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataView.ListChanged
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataView.System#Collections#IList#Item(System.Int32)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataView.System#Collections#IList#Add(System.Object)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataView.DataViewManager
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataView.FindRows
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataView.Equals(System.Data.DataView)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataView.Find(System.Object[])
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataView.Sort
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataView.FindRows(System.Object[])
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.DataView.UpdateIndex
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.DataView.AllowEdit
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

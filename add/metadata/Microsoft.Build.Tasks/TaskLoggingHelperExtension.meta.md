@@ -1,19 +1,23 @@
 ---
 uid: Microsoft.Build.Tasks.TaskLoggingHelperExtension
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.TaskLoggingHelperExtension.#ctor(Microsoft.Build.Framework.ITask,System.Resources.ResourceManager,System.Resources.ResourceManager,System.String)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.TaskLoggingHelperExtension.TaskSharedResources
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.TaskLoggingHelperExtension.FormatResourceString(System.String,System.Object[])
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

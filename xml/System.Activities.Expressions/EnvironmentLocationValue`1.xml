@@ -17,8 +17,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="T">The data type of the <see cref="T:System.Activities.Expressions.EnvironmentLocationValue`1" />.</typeparam>
+    <summary>Represents the environment location value.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,8 +38,8 @@
         <Parameter Name="metadata" Type="System.Activities.CodeActivityMetadata" />
       </Parameters>
       <Docs>
-        <param name="metadata">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="metadata">The activity’s metadata that encapsulates the activity’s arguments, variables, child activities, and activity delegates.</param>
+        <summary>Creates and validates a description of the activity’s arguments, variables, child activities, and activity delegates.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,9 +59,9 @@
         <Parameter Name="context" Type="System.Activities.CodeActivityContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">The execution context under which the activity executes.</param>
+        <summary>Performs the execution of the activity.</summary>
+        <returns>The execution of the activity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,8 +78,8 @@
         <ReturnType>System.Activities.LocationReference</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the location reference value.</summary>
+        <value>The location reference value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

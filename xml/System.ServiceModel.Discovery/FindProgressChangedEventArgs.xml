@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Arguments for the <see cref="E:System.ServiceModel.Discovery.DiscoveryClient.FindProgressChanged" /> event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.ServiceModel.Discovery.EndpointDiscoveryMetadata</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.ServiceModel.Discovery.EndpointDiscoveryMetadata" /> instance associated with the current ongoing find operation.</summary>
+        <value>The endpoint discovery metadata.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <ReturnType>System.ServiceModel.Discovery.DiscoveryMessageSequence</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.ServiceModel.Discovery.DiscoveryMessageSequence" /> instance associated with the current ongoing find operation.</summary>
+        <value>The discovery message sequence.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

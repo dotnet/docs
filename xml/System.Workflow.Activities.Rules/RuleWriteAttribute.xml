@@ -16,8 +16,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates that a property or field is written by the method or property that this attribute is applied to. This information is used by the rules engine to determine dependencies between rules. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This attribute is used to support a forward chaining model that causes the re-evaluation of rules based on changes to fields and properties. The <xref:System.Workflow.Activities.Rules.RuleReadAttribute> and <xref:System.Workflow.Activities.Rules.RuleWriteAttribute> indicate the properties read or written by the property or method the attribute is applied to. `RuleInvokeAttributes` are used to indicate that this property or method uses other methods, which must also be checked for dependencies.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,9 +40,16 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="path">The field or property that is on the same class as the method or property that this attribute is applied to.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleWriteAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To specify that the method or property writes to a field or property on one of the parameters, you must use <xref:System.Workflow.Activities.Rules.RuleWriteAttribute> (path, `RuleAttributeTarget.Parameter`).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -52,10 +66,18 @@
         <Parameter Name="target" Type="System.Workflow.Activities.Rules.RuleAttributeTarget" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="path">The field or property that is on the same class as the method or property that this attribute is applied to.</param>
+        <param name="target">
+          <see cref="T:System.Workflow.Activities.Rules.RuleAttributeTarget" /> enumeration value that determines how to use path to find target.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleWriteAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To specify that the method or property writes to a field or property on one of the parameters, you must use <xref:System.Workflow.Activities.Rules.RuleWriteAttribute> (path, `RuleAttributeTarget.Parameter`).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

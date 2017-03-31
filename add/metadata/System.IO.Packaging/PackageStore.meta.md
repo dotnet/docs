@@ -1,19 +1,27 @@
 ---
 uid: System.IO.Packaging.PackageStore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.Packaging.PackageStore.GetPackage(System.Uri)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.Packaging.PackageStore.AddPackage(System.Uri,System.IO.Packaging.Package)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.Packaging.PackageStore.RemovePackage(System.Uri)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

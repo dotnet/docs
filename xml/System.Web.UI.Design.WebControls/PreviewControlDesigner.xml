@@ -16,8 +16,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides design-time support in a visual designer for a control where the design surface must use a preview of the associated control.</summary>
     <remarks>To be added.</remarks>
+    <block subset="none" type="overrides">
+      <para>The only distinction between the <see cref="T:System.Web.UI.Design.WebControls.PreviewControlDesigner" /> class and the <see cref="T:System.Web.UI.Design.ControlDesigner" /> class is that the design host always displays a preview of the control and any modifications that are made in Design view are applied only to the preview of the control. Your code must specifically persist changes to the control.</para>
+    </block>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +34,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.Web.UI.Design.WebControls.PreviewControlDesigner" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +51,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the control designer uses a temporary preview control to generate the design-time HTML markup.</summary>
+        <value>
+          <see langword="true" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

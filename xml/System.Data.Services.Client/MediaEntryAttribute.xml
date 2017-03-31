@@ -17,8 +17,21 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Signifies that the specified class is to be treated as a media link entry.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The class is treated as a media link entry, which is an AtomPub protocol for handling binary data and metadata about that binary data.  
+  
+ A type marked with this attribute has altered behavior when <xref:System.Data.Services.Client.DataServiceContext.SaveChanges%2A> is called. The media property is also called a Media resource. On saving, the media property of the type denoted by the <xref:System.Data.Services.Client.MediaEntryAttribute.MediaMemberName%2A> property, is inserted by a POST request to the URI `/<EntitySet>/$value`.  
+  
+ After the `POST`, a `PUT` request with all the properties on the type other than the <xref:System.Data.Services.Client.MediaEntryAttribute.MediaMemberName%2A> property, which is binary content, are sent to the URI `/<EntitySet>(<key>)`.  
+  
+ For more information about using attributes, see [Attributes](../Topic/Extending%20Metadata%20Using%20Attributes.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,8 +48,8 @@
         <Parameter Name="mediaMemberName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="mediaMemberName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="mediaMemberName">A string value that identifies the property that holds media data.</param>
+        <summary>Creates a new instance of <see cref="T:System.Data.Services.Client.MediaEntryAttribute" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,8 +67,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The name of the property on the class that holds the media, usually binary data.</summary>
+        <value>A string value that identifies the property that holds media data.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

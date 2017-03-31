@@ -1,19 +1,27 @@
 ---
 uid: System.Web.UI.WebControls.ObjectDataSourceSelectingEventArgs
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.ObjectDataSourceSelectingEventArgs.Arguments
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.ObjectDataSourceSelectingEventArgs.#ctor(System.Collections.Specialized.IOrderedDictionary,System.Web.UI.DataSourceSelectArguments,System.Boolean)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.ObjectDataSourceSelectingEventArgs.ExecutingSelectCount
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

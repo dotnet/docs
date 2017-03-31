@@ -16,8 +16,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Throws <see cref="T:System.Text.EncoderFallbackException" /> when an input character cannot be converted to an encoded output byte sequence. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A common reason for an encoding or decoding operation to fail is if the underlying encoding class does not provide a mapping between a character and an equivalent byte sequence. If the input character cannot be converted to an output byte sequence, the encoding operation calls the <xref:System.Text.EncoderExceptionFallbackBuffer.Fallback%2A> method, which throws <xref:System.Text.EncoderFallbackException>.  
+  
+ The <xref:System.Text.EncoderFallbackBuffer?displayProperty=fullName> class, which represents a data buffer used in an encoding operation, is the base class for the <xref:System.Text.EncoderExceptionFallbackBuffer> class. However, instead of a data buffer, the <xref:System.Text.EncoderExceptionFallbackBuffer> class represents a standard behavior wherein an exception is thrown if an encoding operation fails. No actual data buffer exists, and the members designed to manipulate such a buffer do no significant work.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,7 +45,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Text.EncoderExceptionFallbackBuffer" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,11 +71,20 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="charUnknown">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="charUnknown">An input character.</param>
+        <param name="index">The index position of the character in the input buffer.</param>
+        <summary>Throws an exception because the input character cannot be encoded. Parameters specify the value and index position of the character that cannot be converted.</summary>
+        <returns>None. No value is returned because the <see cref="M:System.Text.EncoderExceptionFallbackBuffer.Fallback(System.Char,System.Int32)" /> method always throws an exception.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Text.Encoding.GetBytes%2A> and <xref:System.Text.Encoder.Convert%2A> methods call <xref:System.Text.EncoderExceptionFallbackBuffer.Fallback%2A> if they encounter an unknown character in their input. In response, <xref:System.Text.EncoderExceptionFallbackBuffer.Fallback%2A> always throws <xref:System.Text.EncoderFallbackException>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Text.EncoderFallbackException">
+          <paramref name="charUnknown" /> cannot be encoded. This method always throws an exception that reports the value of the <paramref name="charUnknown" /> and <paramref name="index" /> parameters.</exception>
       </Docs>
     </Member>
     <Member MemberName="Fallback">
@@ -92,12 +110,21 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="charUnknownHigh">To be added.</param>
-        <param name="charUnknownLow">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="charUnknownHigh">The high surrogate of the input pair.</param>
+        <param name="charUnknownLow">The low surrogate of the input pair.</param>
+        <param name="index">The index position of the surrogate pair in the input buffer.</param>
+        <summary>Throws an exception because the input character cannot be encoded. Parameters specify the value and index position of the surrogate pair in the input, and the nominal return value is not used.</summary>
+        <returns>None. No value is returned because the <see cref="M:System.Text.EncoderExceptionFallbackBuffer.Fallback(System.Char,System.Char,System.Int32)" /> method always throws an exception.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Text.Encoding.GetBytes%2A> and <xref:System.Text.Encoder.Convert%2A> methods call <xref:System.Text.EncoderExceptionFallbackBuffer.Fallback%2A> if they encounter a surrogate pair in their input. In response, <xref:System.Text.EncoderExceptionFallbackBuffer.Fallback%2A> always throws an exception.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Text.EncoderFallbackException">The character represented by <paramref name="charUnknownHigh" /> and <paramref name="charUnknownLow" /> cannot be encoded.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">Either <paramref name="charUnknownHigh" /> or <paramref name="charUnknownLow" /> is invalid. <paramref name="charUnknownHigh" /> is not between U+D800 and U+DBFF, inclusive, or <paramref name="charUnknownLow" /> is not between U+DC00 and U+DFFF, inclusive.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetNextChar">
@@ -119,9 +146,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Retrieves the next character in the exception fallback buffer.</summary>
+        <returns>The return value is always the Unicode character, NULL (U+0000).  
+  
+ A return value is defined, although it is unchanging, because this method implements an abstract method.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because <xref:System.Text.EncoderExceptionFallbackBuffer> has no actual exception data buffer, the <xref:System.Text.EncoderExceptionFallbackBuffer.GetNextChar%2A> method always returns the Unicode NULL character.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MovePrevious">
@@ -143,9 +179,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Causes the next call to the <see cref="M:System.Text.EncoderExceptionFallbackBuffer.GetNextChar" /> method to access the exception data buffer character position that is prior to the current position.</summary>
+        <returns>The return value is always <see langword="false" />.  
+  
+ A return value is defined, although it is unchanging, because this method implements an abstract method.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because <xref:System.Text.EncoderExceptionFallbackBuffer> has no actual exception data buffer, the <xref:System.Text.EncoderExceptionFallbackBuffer.MovePrevious%2A> method always returns `false`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Remaining">
@@ -166,9 +211,18 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of characters in the current <see cref="T:System.Text.EncoderExceptionFallbackBuffer" /> object that remain to be processed.</summary>
+        <value>The return value is always zero.  
+  
+ A return value is defined, although it is unchanging, because this method implements an abstract method.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because <xref:System.Text.EncoderExceptionFallbackBuffer> has no actual exception data buffer, the <xref:System.Text.EncoderExceptionFallbackBuffer.Remaining%2A> property always returns zero.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

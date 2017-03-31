@@ -1,24 +1,34 @@
 ---
 uid: System.Activities.Presentation.PropertyEditing.IPropertyFilterTarget
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.PropertyEditing.IPropertyFilterTarget.MatchesPredicate(System.Activities.Presentation.PropertyEditing.PropertyFilterPredicate)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.PropertyEditing.IPropertyFilterTarget.MatchesFilter
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.PropertyEditing.IPropertyFilterTarget.ApplyFilter(System.Activities.Presentation.PropertyEditing.PropertyFilter)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.PropertyEditing.IPropertyFilterTarget.FilterApplied
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

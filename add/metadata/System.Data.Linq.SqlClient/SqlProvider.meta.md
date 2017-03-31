@@ -1,19 +1,34 @@
 ---
 uid: System.Data.Linq.SqlClient.SqlProvider
-internalonly: False
----
-
----
-uid: System.Data.Linq.SqlClient.SqlProvider.#ctor
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Linq.SqlClient.SqlProvider.Dispose
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Linq.SqlClient.SqlProvider.#ctor
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Linq.SqlClient.SqlProvider.Dispose
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Linq.SqlClient.SqlProvider.Dispose(System.Boolean)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

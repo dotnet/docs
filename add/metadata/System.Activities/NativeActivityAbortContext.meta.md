@@ -1,9 +1,13 @@
 ---
 uid: System.Activities.NativeActivityAbortContext
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.NativeActivityAbortContext.Reason
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

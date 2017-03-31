@@ -1,9 +1,13 @@
 ---
 uid: System.Web.ApplicationServices.KnownTypesProvider
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ApplicationServices.KnownTypesProvider.GetKnownTypes(System.Reflection.ICustomAttributeProvider)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

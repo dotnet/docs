@@ -12,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains the message received by a channel and cannot be associated with any callback operation or pending request.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,8 +30,8 @@
         <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the unknown message that caused the event.</summary>
+        <value>The <see cref="T:System.ServiceModel.Channels.Message" /> that caused the event.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

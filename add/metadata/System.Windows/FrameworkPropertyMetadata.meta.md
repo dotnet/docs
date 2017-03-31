@@ -1,134 +1,191 @@
 ---
 uid: System.Windows.FrameworkPropertyMetadata
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.FrameworkPropertyMetadata.AffectsRender
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.FrameworkPropertyMetadata.#ctor(System.Windows.PropertyChangedCallback)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.FrameworkPropertyMetadata.AffectsParentArrange
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.FrameworkPropertyMetadata.#ctor(System.Object,System.Windows.PropertyChangedCallback,System.Windows.CoerceValueCallback)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.FrameworkPropertyMetadata.#ctor(System.Object,System.Windows.FrameworkPropertyMetadataOptions)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.FrameworkPropertyMetadata.AffectsParentMeasure
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.FrameworkPropertyMetadata.AffectsArrange
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.FrameworkPropertyMetadata.#ctor(System.Object,System.Windows.FrameworkPropertyMetadataOptions,System.Windows.PropertyChangedCallback,System.Windows.CoerceValueCallback,System.Boolean,System.Windows.Data.UpdateSourceTrigger)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.FrameworkPropertyMetadata.#ctor(System.Windows.PropertyChangedCallback,System.Windows.CoerceValueCallback)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.FrameworkPropertyMetadata.#ctor(System.Object,System.Windows.FrameworkPropertyMetadataOptions,System.Windows.PropertyChangedCallback)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.FrameworkPropertyMetadata.DefaultUpdateSourceTrigger
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.FrameworkPropertyMetadata.Journal
-internalonly: False
----
-
----
-uid: System.Windows.FrameworkPropertyMetadata.#ctor(System.Object)
-internalonly: False
----
-
----
-uid: System.Windows.FrameworkPropertyMetadata.IsNotDataBindable
-internalonly: False
----
-
----
-uid: System.Windows.FrameworkPropertyMetadata.AffectsMeasure
-internalonly: False
----
-
----
-uid: System.Windows.FrameworkPropertyMetadata.#ctor(System.Object,System.Windows.PropertyChangedCallback)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.FrameworkPropertyMetadata.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.FrameworkPropertyMetadata.#ctor(System.Object)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.FrameworkPropertyMetadata.IsNotDataBindable
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.FrameworkPropertyMetadata.AffectsMeasure
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.FrameworkPropertyMetadata.#ctor(System.Object,System.Windows.PropertyChangedCallback)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.FrameworkPropertyMetadata.#ctor
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.FrameworkPropertyMetadata.#ctor(System.Object,System.Windows.FrameworkPropertyMetadataOptions,System.Windows.PropertyChangedCallback,System.Windows.CoerceValueCallback,System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.FrameworkPropertyMetadata.OnApply(System.Windows.DependencyProperty,System.Type)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.FrameworkPropertyMetadata.Merge(System.Windows.PropertyMetadata,System.Windows.DependencyProperty)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.FrameworkPropertyMetadata.#ctor(System.Object,System.Windows.FrameworkPropertyMetadataOptions,System.Windows.PropertyChangedCallback,System.Windows.CoerceValueCallback)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.FrameworkPropertyMetadata.Inherits
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.FrameworkPropertyMetadata.SubPropertiesDoNotAffectRender
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.FrameworkPropertyMetadata.IsDataBindingAllowed
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.FrameworkPropertyMetadata.OverridesInheritanceBehavior
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

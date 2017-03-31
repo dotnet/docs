@@ -10,8 +10,21 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies where a <see cref="T:System.Web.UI.WebControls.TableRow" /> object is placed in a <see cref="T:System.Web.UI.WebControls.Table" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.TableRowSection> enumeration specifies whether a <xref:System.Web.UI.WebControls.TableRow> object is placed in the body, header, or footer of a <xref:System.Web.UI.WebControls.Table> control.  
+  
+ The <xref:System.Web.UI.WebControls.TableRowSection> enumeration represents the possible values for the <xref:System.Web.UI.WebControls.TableRow.TableSection%2A> property of the <xref:System.Web.UI.WebControls.TableRow> class.  
+  
+ The <xref:System.Web.UI.WebControls.TableRowSection> enumeration enables you to build accessible Web sites using the <xref:System.Web.UI.WebControls.Table> control by adding the `thead`, `tbody`, and `tfoot` elements to the HTML that is rendered to the client. If all rows in a table are in the `tbody` element, the section information is not rendered. At least one row must be in a non-body element.  
+  
+ When using the declarative syntax, the sections must be in the following order: header, body, and then footer.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="TableBody">
@@ -27,7 +40,7 @@
         <ReturnType>System.Web.UI.WebControls.TableRowSection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Web.UI.WebControls.TableRow" /> is placed in the body of the <see cref="T:System.Web.UI.WebControls.Table" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="TableFooter">
@@ -43,7 +56,7 @@
         <ReturnType>System.Web.UI.WebControls.TableRowSection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Web.UI.WebControls.TableRow" /> is placed in the footer of the <see cref="T:System.Web.UI.WebControls.Table" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="TableHeader">
@@ -59,7 +72,7 @@
         <ReturnType>System.Web.UI.WebControls.TableRowSection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Web.UI.WebControls.TableRow" /> is placed in the header of the <see cref="T:System.Web.UI.WebControls.Table" />.</summary>
       </Docs>
     </Member>
   </Members>

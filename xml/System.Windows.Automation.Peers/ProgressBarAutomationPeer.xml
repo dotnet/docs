@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Exposes <see cref="T:System.Windows.Controls.ProgressBar" /> types to [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)].</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,8 +32,8 @@
         <Parameter Name="owner" Type="System.Windows.Controls.ProgressBar" />
       </Parameters>
       <Docs>
-        <param name="owner">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="owner">The <see cref="T:System.Windows.Controls.ProgressBar" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ProgressBarAutomationPeer" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.ProgressBarAutomationPeer" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +51,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the control type for the <see cref="T:System.Windows.Controls.ProgressBar" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ProgressBarAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" />.</summary>
+        <returns>The <see cref="F:System.Windows.Automation.Peers.AutomationControlType.ProgressBar" /> enumeration value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,8 +70,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the name of the <see cref="T:System.Windows.Controls.ProgressBar" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ProgressBarAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" />.</summary>
+        <returns>A string that contains "ProgressBar".</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,9 +91,9 @@
         <Parameter Name="patternInterface" Type="System.Windows.Automation.Peers.PatternInterface" />
       </Parameters>
       <Docs>
-        <param name="patternInterface">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="patternInterface">A value in the enumeration.</param>
+        <summary>Gets the control pattern for the <see cref="T:System.Windows.Controls.ProgressBar" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ProgressBarAutomationPeer" />.</summary>
+        <returns>If <paramref name="patternInterface" /> is <see cref="F:System.Windows.Automation.Peers.PatternInterface.RangeValue" /> and <see cref="P:System.Windows.Controls.ProgressBar.IsIndeterminate" /> is <see langword="true" />, this method returns the current instance of the <see cref="T:System.Windows.Automation.Peers.ProgressBarAutomationPeer" />; otherwise, this method returns <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,8 +110,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This type or member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
+        <value>
+          <see langword="true" /> if the value is read-only; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,8 +129,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This type or member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
+        <value>The large-change value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,8 +150,8 @@
         <Parameter Name="val" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="val">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="val">The value to set.</param>
+        <summary>This type or member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,8 +168,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This type or member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
+        <value>The small-change value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

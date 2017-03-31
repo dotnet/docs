@@ -1,4 +1,4 @@
 ---
 uid: System.ServiceModel.Dispatcher
-internalonly: False
+manager: "ghogen"
 ---

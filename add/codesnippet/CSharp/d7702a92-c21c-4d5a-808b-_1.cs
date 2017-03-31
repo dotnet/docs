@@ -1,2 +1,0 @@
-        CryptographicUnexpectedOperationException cryptographicException =
-            new CryptographicUnexpectedOperationException();

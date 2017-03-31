@@ -1,4 +1,6 @@
 ---
 uid: System.ServiceModel.Routing.Configuration.FilterType
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

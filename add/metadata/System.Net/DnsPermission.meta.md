@@ -1,44 +1,53 @@
 ---
 uid: System.Net.DnsPermission
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.DnsPermission.FromXml(System.Security.SecurityElement)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.DnsPermission.ToXml
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.DnsPermission.Intersect(System.Security.IPermission)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.DnsPermission.Copy
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.DnsPermission.IsUnrestricted
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.DnsPermission.#ctor(System.Security.Permissions.PermissionState)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.DnsPermission.Union(System.Security.IPermission)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.DnsPermission.IsSubsetOf(System.Security.IPermission)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

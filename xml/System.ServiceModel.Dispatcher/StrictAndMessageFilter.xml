@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a query that tests whether a message satisfies both specified <see cref="T:System.ServiceModel.Dispatcher.MessageFilter" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Matches performed by this filter will always evaluate both <xref:System.ServiceModel.Dispatcher.MessageFilter> objects before returning a result.  
+  
+ This AND operation does not short circuit if the first <xref:System.ServiceModel.Dispatcher.MessageFilter> evaluated returns false.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -29,9 +38,9 @@
         <Parameter Name="filter2" Type="System.ServiceModel.Dispatcher.MessageFilter" />
       </Parameters>
       <Docs>
-        <param name="filter1">To be added.</param>
-        <param name="filter2">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="filter1">The first <see cref="T:System.ServiceModel.Dispatcher.MessageFilter" /> object.</param>
+        <param name="filter2">The second <see cref="T:System.ServiceModel.Dispatcher.MessageFilter" /> object.</param>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Dispatcher.StrictAndMessageFilter" /> class using the specified <see cref="T:System.ServiceModel.Dispatcher.MessageFilter" /> objects.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,9 +61,9 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="TFilterData">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TFilterData">The type of data associated with the filter.</typeparam>
+        <summary>Creates a new <see cref="T:System.ServiceModel.Dispatcher.IMessageFilterTable`1" />.</summary>
+        <returns>A newly created <see cref="T:System.ServiceModel.Dispatcher.IMessageFilterTable`1" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,9 +83,9 @@
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">The <see cref="T:System.ServiceModel.Channels.Message" /> to test.</param>
+        <summary>Tests whether a message matches both of the <see cref="T:System.ServiceModel.Dispatcher.MessageFilter" /> objects specified in this filter.</summary>
+        <returns>**true** if the message contained in the buffer matches both message filters; otherwise, **false**.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,11 +105,35 @@
         <Parameter Name="buffer" Type="System.ServiceModel.Channels.MessageBuffer" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="buffer">The <see cref="T:System.ServiceModel.Channels.MessageBuffer" /> to test.</param>
+        <summary>Tests whether a buffered message matches both of the <see cref="T:System.ServiceModel.Dispatcher.MessageFilter" /> objects specified in this filter.</summary>
+        <returns>**true** if the message contained in the buffer matches both message filters; otherwise, **false**.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When testing for a match condition, both <xref:System.ServiceModel.Dispatcher.MessageFilter> objects are evaluated before returning a result.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Match">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Routing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Tests whether a message or a buffered message matches the filter.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When testing for a match condition, both <xref:System.ServiceModel.Dispatcher.MessageFilter> objects are evaluated before returning a result.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

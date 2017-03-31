@@ -1,19 +1,25 @@
 ---
 uid: System.Linq.Expressions.IDynamicExpression
-internalonly: False
+ms.author: "billchi"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Linq.Expressions.IDynamicExpression.Rewrite(System.Linq.Expressions.Expression[])
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.Expressions.IDynamicExpression.CreateCallSite
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.Expressions.IDynamicExpression.DelegateType
-internalonly: False
+ms.author: "billchi"
+manager: "ghogen"
 ---

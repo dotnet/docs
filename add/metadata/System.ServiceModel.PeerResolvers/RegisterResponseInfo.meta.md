@@ -1,29 +1,41 @@
 ---
 uid: System.ServiceModel.PeerResolvers.RegisterResponseInfo
-internalonly: False
+ms.author: "bobdel"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerResolvers.RegisterResponseInfo.RegistrationLifetime
-internalonly: False
+ms.author: "bobdel"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerResolvers.RegisterResponseInfo.#ctor(System.Guid,System.TimeSpan)
-internalonly: False
+ms.author: "bobdel"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerResolvers.RegisterResponseInfo.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "ghogen"
+---
+
+---
+uid: System.ServiceModel.PeerResolvers.RegisterResponseInfo.#ctor
+ms.author: "bobdel"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerResolvers.RegisterResponseInfo.HasBody
-internalonly: False
+ms.author: "bobdel"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerResolvers.RegisterResponseInfo.RegistrationId
-internalonly: False
+ms.author: "bobdel"
+manager: "ghogen"
 ---

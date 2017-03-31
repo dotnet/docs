@@ -1,19 +1,23 @@
 ---
 uid: System.Configuration.RegexStringValidatorAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.RegexStringValidatorAttribute.#ctor(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.RegexStringValidatorAttribute.ValidatorInstance
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.RegexStringValidatorAttribute.Regex
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

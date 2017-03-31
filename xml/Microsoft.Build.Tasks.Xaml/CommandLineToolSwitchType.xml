@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Enumerates the types for command line switches.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>Microsoft.Build.Tasks.Xaml.CommandLineToolSwitchType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates a Boolean type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Integer">
@@ -43,7 +43,7 @@
         <ReturnType>Microsoft.Build.Tasks.Xaml.CommandLineToolSwitchType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates an integer type.</summary>
       </Docs>
     </Member>
     <Member MemberName="ITaskItemArray">
@@ -59,7 +59,7 @@
         <ReturnType>Microsoft.Build.Tasks.Xaml.CommandLineToolSwitchType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates a task item array type.</summary>
       </Docs>
     </Member>
     <Member MemberName="String">
@@ -75,7 +75,7 @@
         <ReturnType>Microsoft.Build.Tasks.Xaml.CommandLineToolSwitchType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates a string type.</summary>
       </Docs>
     </Member>
     <Member MemberName="StringArray">
@@ -91,7 +91,7 @@
         <ReturnType>Microsoft.Build.Tasks.Xaml.CommandLineToolSwitchType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates an array of strings type.</summary>
       </Docs>
     </Member>
   </Members>

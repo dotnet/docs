@@ -1,19 +1,29 @@
 ---
 uid: System.Net.Http.StringContent
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.StringContent.#ctor(System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.StringContent.#ctor(System.String,System.Text.Encoding)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Http.StringContent.#ctor
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.StringContent.#ctor(System.String,System.Text.Encoding,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

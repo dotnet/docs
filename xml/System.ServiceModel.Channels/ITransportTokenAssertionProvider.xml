@@ -9,7 +9,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a transport token assertion (for example, an HTTPS token assertion) for use in policy exports.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,8 +27,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets a transport token assertion.</summary>
+        <returns>An <see cref="T:System.Xml.XmlElement" /> that represents a transport token assertion.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

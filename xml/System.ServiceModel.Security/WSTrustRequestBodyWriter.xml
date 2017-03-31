@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a message body writer that writes an RST to an outgoing message.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Security.WSTrustRequestBodyWriter> class is an implementation of the <xref:System.ServiceModel.Channels.BodyWriter> class that supports <xref:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken> objects.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,11 +37,21 @@
         <Parameter Name="serializationContext" Type="System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" />
       </Parameters>
       <Docs>
-        <param name="requestSecurityToken">To be added.</param>
-        <param name="serializer">To be added.</param>
-        <param name="serializationContext">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="requestSecurityToken">The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" /> object (RST) to be serialized in the outgoing Message.</param>
+        <param name="serializer">The <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer" /> object to use to serialize the RST.</param>
+        <param name="serializationContext">A <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" /> that contains the context for serialization.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.WSTrustRequestBodyWriter" /> class.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="requestSecurityToken" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="serializer" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="serializationContext" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="OnWriteBodyContents">
@@ -53,9 +70,16 @@
         <Parameter Name="writer" Type="System.Xml.XmlDictionaryWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="writer">The <see cref="T:System.Xml.XmlDictionaryWriter" /> object to which the RST should be written.</param>
+        <summary>Override of the base class method. Serializes the RST to the outgoing stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Serializes the <xref:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken> object associated with this instance to the outgoing stream.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,9 +1,9 @@
 ---
 uid: Microsoft.JScript.FunctionObject
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.FunctionObject.ToString
-internalonly: False
+ms.author: "mikejo"
 ---

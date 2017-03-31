@@ -11,8 +11,24 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides information about installed plug-in serializers.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Plug-in serializer classes derive from and implement the <xref:System.Windows.Documents.Serialization.ISerializerFactory> interface.  
+  
+   
+  
+## Examples  
+ The following examples illustrate using a <xref:System.Windows.Documents.Serialization.SerializerDescriptor> to return information on installed plug-in serializers.  
+  
+ [!code-csharp[DocumentSerialize#DocSerializePlugIn](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializeplugin)]  
+  
+ [!code-csharp[DocumentSerialize#DocSerializeFileFilter](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializefilefilter)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AssemblyName">
@@ -28,8 +44,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the assembly that contains the serializer.</summary>
+        <value>The name of the assembly (usually a DLL) that contains the plug-in serializer.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +62,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the path to the assembly file that contains the serializer.</summary>
+        <value>The path to the assembly file that contains the plug-in serializer.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +80,8 @@
         <ReturnType>System.Version</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the version of the assembly that contains the serializer.</summary>
+        <value>The version of the assembly that contains the plug-in serializer.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,10 +106,20 @@
         <Parameter Name="factoryInstance" Type="System.Windows.Documents.Serialization.ISerializerFactory" />
       </Parameters>
       <Docs>
-        <param name="factoryInstance">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="factoryInstance">The source of data for the new <see cref="T:System.Windows.Documents.Serialization.SerializerDescriptor" />.</param>
+        <summary>Creates a new <see cref="T:System.Windows.Documents.Serialization.SerializerDescriptor" /> through a given <see cref="T:System.Windows.Documents.Serialization.ISerializerFactory" /> implementation.</summary>
+        <returns>A new <see cref="T:System.Windows.Documents.Serialization.SerializerDescriptor" /> with its properties initialized with values from the given <see cref="T:System.Windows.Documents.Serialization.ISerializerFactory" /> implementation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Only full trust callers can use this method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="factoryInstance" /> is null.</exception>
+        <exception cref="T:System.ArgumentException">One or more of the following properties of the <paramref name="factoryInstance" /> is null: <see cref="P:System.Windows.Documents.Serialization.SerializerDescriptor.DisplayName" />, <see cref="P:System.Windows.Documents.Serialization.SerializerDescriptor.ManufacturerName" />, <see cref="P:System.Windows.Documents.Serialization.SerializerDescriptor.ManufacturerWebsite" />, and <see cref="P:System.Windows.Documents.Serialization.SerializerDescriptor.DefaultFileExtension" /></exception>
       </Docs>
     </Member>
     <Member MemberName="DefaultFileExtension">
@@ -109,9 +135,20 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the default extension associated with files that the serializer outputs.</summary>
+        <value>The default extension associated with files that the serializer outputs.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following examples illustrate using <xref:System.Windows.Documents.Serialization.SerializerDescriptor.DefaultFileExtension%2A> to return the default file extensions for installed plug-in serializers.  
+  
+ [!code-csharp[DocumentSerialize#DocSerializePlugIn](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializeplugin)]  
+  
+ [!code-csharp[DocumentSerialize#DocSerializeFileFilter](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializefilefilter)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayName">
@@ -127,9 +164,18 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the public display name of the serializer.</summary>
+        <value>The public display name of the serializer.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows using <xref:System.Windows.Documents.Serialization.SerializerDescriptor.DisplayName%2A> to obtain and display the public name of a plug-in serializer.  
+  
+ [!code-csharp[DocumentSerialize#DocSerializeFileFilter](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializefilefilter)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -148,10 +194,18 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="obj">The object to be compared with this <see cref="T:System.Windows.Documents.Serialization.SerializerDescriptor" />.</param>
+        <summary>Tests two <see cref="T:System.Windows.Documents.Serialization.SerializerDescriptor" /> objects for equality.</summary>
+        <returns>
+          <see langword="true" /> if both are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Documents.Serialization.SerializerDescriptor.Equals%2A> returns `true` even if the two objects differ in one or more of the following properties: <xref:System.Windows.Documents.Serialization.SerializerDescriptor.ManufacturerName%2A>, <xref:System.Windows.Documents.Serialization.SerializerDescriptor.ManufacturerWebsite%2A>, and <xref:System.Windows.Documents.Serialization.SerializerDescriptor.IsLoadable%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FactoryInterfaceName">
@@ -167,8 +221,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the <see cref="T:System.Windows.Documents.Serialization.ISerializerFactory" /> derived class that implements the serializer.</summary>
+        <value>The name of the <see cref="T:System.Windows.Documents.Serialization.ISerializerFactory" /> derived class that implements the serializer.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,9 +240,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets the unique hash code value of the serializer.</summary>
+        <returns>The unique hash code value of the serializer.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The unique hash code value is created based on the <xref:System.Windows.Documents.Serialization.SerializerDescriptor.DisplayName%2A>, <xref:System.Windows.Documents.Serialization.SerializerDescriptor.AssemblyName%2A>, <xref:System.Windows.Documents.Serialization.SerializerDescriptor.AssemblyPath%2A>, <xref:System.Windows.Documents.Serialization.SerializerDescriptor.AssemblyVersion%2A>, <xref:System.Windows.Documents.Serialization.SerializerDescriptor.FactoryInterfaceName%2A>, and <xref:System.Windows.Documents.Serialization.SerializerDescriptor.WinFXVersion%2A> properties of the serializer.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsLoadable">
@@ -204,9 +265,26 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether the serializer can be loaded with the currently installed version of [!INCLUDE[TLA#tla_avalonwinfx](~/includes/tlasharptla-avalonwinfx-md.md)].</summary>
+        <value>
+          <see langword="true" /> if the serializer assembly can be loaded; otherwise, <see langword="false" />.  The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Documents.Serialization.SerializerDescriptor.IsLoadable%2A> should be **false** unless <xref:System.Windows.Documents.Serialization.SerializerDescriptor.AssemblyVersion%2A> has the same value as <xref:System.Windows.Documents.Serialization.SerializerDescriptor.WinFXVersion%2A>.  
+  
+   
+  
+## Examples  
+ The following examples illustrate using <xref:System.Windows.Documents.Serialization.SerializerDescriptor.IsLoadable%2A> to determine if the associated plug-in serializer can be loaded and used.  
+  
+ [!code-csharp[DocumentSerialize#DocSerializeFileFilter](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializefilefilter)]  
+  
+ [!code-csharp[DocumentSerialize#DocSerializePlugIn](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializeplugin)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ManufacturerName">
@@ -222,9 +300,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the name of the company that developed the serializer.</summary>
+        <value>The name of the company that developed the plug-in serializer.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Plug-in serializer classes derive from and implement the <xref:System.Windows.Documents.Serialization.ISerializerFactory> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ManufacturerWebsite">
@@ -240,8 +325,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the web address of the company that developed the serializer.</summary>
+        <value>The web address of the company that developed the serializer.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -258,9 +343,16 @@
         <ReturnType>System.Version</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the version of [!INCLUDE[TLA#tla_avalonwinfx](~/includes/tlasharptla-avalonwinfx-md.md)] required by the serializer.</summary>
+        <value>The version of [!INCLUDE[TLA#tla_avalonwinfx](~/includes/tlasharptla-avalonwinfx-md.md)] required by the plug-in serializer.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Documents.Serialization.SerializerDescriptor.WinFXVersion%2A> must have the same value as the <xref:System.Windows.Documents.Serialization.SerializerDescriptor.AssemblyVersion%2A> or the serializer assembly cannot be loaded.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

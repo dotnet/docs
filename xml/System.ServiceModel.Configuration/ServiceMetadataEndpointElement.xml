@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Makes metadata ready and available for subsequent distribution and deployment in a server environment by adding a <see cref="T:System.ServiceModel.Description.ServiceMetadataEndpoint" /> into the service configuration element.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Configuration.ServiceMetadataEndpointElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,9 +46,9 @@
         <Parameter Name="contractDescription" Type="System.ServiceModel.Description.ContractDescription" />
       </Parameters>
       <Docs>
-        <param name="contractDescription">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="contractDescription">An alphanumeric description of the location and binding information a service application publishes to make itself accessible to client applications.</param>
+        <summary>Creates a new service endpoint using the specified contract description.</summary>
+        <returns>A service endpoint.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,8 +65,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type of the current <see cref="T:System.ServiceModel.Description.ServiceMetadataEndpoint" />.</summary>
+        <value>The metadata service endpoint type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,9 +87,9 @@
         <Parameter Name="serviceEndpointElement" Type="System.ServiceModel.Configuration.ChannelEndpointElement" />
       </Parameters>
       <Docs>
-        <param name="endpoint">To be added.</param>
-        <param name="serviceEndpointElement">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="endpoint">Not implemented.</param>
+        <param name="serviceEndpointElement">Not implemented.</param>
+        <summary>Not implemented.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,9 +110,9 @@
         <Parameter Name="serviceEndpointElement" Type="System.ServiceModel.Configuration.ServiceEndpointElement" />
       </Parameters>
       <Docs>
-        <param name="endpoint">To be added.</param>
-        <param name="serviceEndpointElement">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="endpoint">Not implemented.</param>
+        <param name="serviceEndpointElement">Not implemented.</param>
+        <summary>Not implemented.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,8 +132,8 @@
         <Parameter Name="channelEndpointElement" Type="System.ServiceModel.Configuration.ChannelEndpointElement" />
       </Parameters>
       <Docs>
-        <param name="channelEndpointElement">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="channelEndpointElement">The channel endpoint to which metadata exchange content configuration settings are applied.</param>
+        <summary>Initializes and verifies the format of a specified channel endpoint element and configures it to include metadata exchange content.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,8 +153,8 @@
         <Parameter Name="serviceEndpointElement" Type="System.ServiceModel.Configuration.ServiceEndpointElement" />
       </Parameters>
       <Docs>
-        <param name="serviceEndpointElement">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceEndpointElement">The service endpoint to which metadata exchange content configuration settings are applied.</param>
+        <summary>Initializes and verifies the format of a specified service endpoint element and configures it to include metadata exchange content.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,49 +1,54 @@
 ---
 uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapYear
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapYear.ToString
-internalonly: False
----
-
----
-uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapYear.Parse(System.String)
-internalonly: False
----
-
----
-uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapYear.Sign
-internalonly: False
----
-
----
-uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapYear.XsdType
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapYear.#ctor
-internalonly: False
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapYear.Parse(System.String)
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapYear.Sign
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapYear.XsdType
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapYear.#ctor
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapYear.Value
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapYear.#ctor(System.DateTime,System.Int32)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapYear.#ctor(System.DateTime)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapYear.GetXsdType
-internalonly: False
+manager: "ghogen"
 ---

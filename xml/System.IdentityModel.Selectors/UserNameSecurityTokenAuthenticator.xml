@@ -11,8 +11,30 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Authenticates a <see cref="T:System.IdentityModel.Tokens.UserNameSecurityToken" /> security token.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Override the <xref:System.IdentityModel.Selectors.UserNameSecurityTokenAuthenticator> class to authenticate security tokens based on a user name and password.  
+  
+ The [!INCLUDE[vsindigo](~/includes/vsindigo-md.md)] ships with the following classes that provide support for authenticating <xref:System.IdentityModel.Tokens.UserNameSecurityToken> security tokens.  
+  
+|Type|Description|  
+|----------|-----------------|  
+|<xref:System.IdentityModel.Selectors.CustomUserNameSecurityTokenAuthenticator>|Allows an application to provide a custom authentication scheme for user names and passwords. The authentication scheme is provided using a class deriving from the <xref:System.IdentityModel.Selectors.UserNamePasswordValidator> class.|  
+|<xref:System.IdentityModel.Selectors.WindowsUserNameSecurityTokenAuthenticator>|Authenticates the user name and password as a Windows account.|  
+  
+ Most custom authentication schemes can use the use the <xref:System.IdentityModel.Selectors.CustomUserNameSecurityTokenAuthenticator> class and implement a class that derives from the <xref:System.IdentityModel.Selectors.UserNamePasswordValidator> class.  However, if additional flexibility is needed, you can derive a class from the <xref:System.IdentityModel.Selectors.UserNameSecurityTokenAuthenticator> class and override the <xref:System.IdentityModel.Selectors.UserNameSecurityTokenAuthenticator.ValidateUserNamePasswordCore%2A> method.  
+  
+   
+  
+## Examples  
+ [!code-csharp[UserNameSecurityTokenAuthenticator#0](~/samples/snippets/csharp/VS_Snippets_CFX/usernamesecuritytokenauthenticator/cs/mytokenauthenticator.cs#0)]
+ [!code-vb[UserNameSecurityTokenAuthenticator#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/usernamesecuritytokenauthenticator/vb/mytokenauthenticator.vb#0)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +48,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Selectors.UserNameSecurityTokenAuthenticator" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,10 +68,18 @@
         <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken" />
       </Parameters>
       <Docs>
-        <param name="token">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="token">The <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> to be validated.</param>
+        <summary>Gets a value indicating whether the specified security token can be validated by this security token authenticator.</summary>
+        <returns>
+          <see langword="true" /> when <paramref name="token" /> is a <see cref="T:System.IdentityModel.Tokens.UserNameSecurityToken" /> security token; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Selectors.UserNameSecurityTokenAuthenticator.CanValidateTokenCore%2A> method does not authenticate the security token; that is performed by the <xref:System.IdentityModel.Selectors.UserNameSecurityTokenAuthenticator.ValidateTokenCore%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidateTokenCore">
@@ -68,10 +98,17 @@
         <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken" />
       </Parameters>
       <Docs>
-        <param name="token">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="token">The <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> to be validated.</param>
+        <summary>Authenticates the specified security token and returns the set of authorization policies for the security token.</summary>
+        <returns>A <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> of type <see cref="T:System.IdentityModel.Policy.IAuthorizationPolicy" /> that contains the set of authorization policies in effect for this application.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Selectors.UserNameSecurityTokenAuthenticator.ValidateTokenCore%2A> method calls the <xref:System.IdentityModel.Selectors.UserNameSecurityTokenAuthenticator.ValidateUserNamePasswordCore%2A> method to authenticate the `token` parameter using its user name and password.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidateUserNamePasswordCore">
@@ -91,11 +128,32 @@
         <Parameter Name="password" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="userName">To be added.</param>
-        <param name="password">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="userName">The user name associated with the security token.</param>
+        <param name="password">The password associated with the security token.</param>
+        <summary>When overridden in a derived class, authenticates the specified user name and password and returns the set of authorization policies for <see cref="T:System.IdentityModel.Tokens.UserNameSecurityToken" /> security tokens.</summary>
+        <returns>A <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> of type <see cref="T:System.IdentityModel.Policy.IAuthorizationPolicy" /> that contains the set of authorization policies in effect for this application.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Override the <xref:System.IdentityModel.Selectors.UserNameSecurityTokenAuthenticator.ValidateUserNamePasswordCore%2A> method to authenticate <xref:System.IdentityModel.Tokens.UserNameSecurityToken> security tokens.  
+  
+ When the <xref:System.IdentityModel.Selectors.UserNameSecurityTokenAuthenticator.ValidateUserNamePasswordCore%2A> method is overridden, follow these guidelines:  
+  
+-   When the security token passed into the `token` parameter cannot be validated, throw the <xref:System.IdentityModel.Tokens.SecurityTokenValidationException> exception.  
+  
+-   When there are no authorization policies in effect for this application, return an empty <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> of type <xref:System.IdentityModel.Policy.IAuthorizationPolicy>.  
+  
+ When `null` is returned by this method, [!INCLUDE[vsindigo](~/includes/vsindigo-md.md)] throws the <xref:System.IdentityModel.Tokens.SecurityTokenValidationException> exception.  
+  
+   
+  
+## Examples  
+ [!code-csharp[UserNameSecurityTokenAuthenticator#1](~/samples/snippets/csharp/VS_Snippets_CFX/usernamesecuritytokenauthenticator/cs/mytokenauthenticator.cs#1)]
+ [!code-vb[UserNameSecurityTokenAuthenticator#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/usernamesecuritytokenauthenticator/vb/mytokenauthenticator.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

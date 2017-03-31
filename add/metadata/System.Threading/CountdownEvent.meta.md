@@ -1,109 +1,195 @@
 ---
 uid: System.Threading.CountdownEvent
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Threading.CountdownEvent.CurrentCount
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Threading.CountdownEvent.#ctor(System.Int32)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Threading.CountdownEvent.Wait(System.TimeSpan)
-internalonly: False
----
-
----
-uid: System.Threading.CountdownEvent.Signal
-internalonly: False
----
-
----
-uid: System.Threading.CountdownEvent.InitialCount
-internalonly: False
----
-
----
-uid: System.Threading.CountdownEvent.WaitHandle
-internalonly: False
----
-
----
-uid: System.Threading.CountdownEvent.Wait
-internalonly: False
----
-
----
-uid: System.Threading.CountdownEvent.Wait(System.Int32)
-internalonly: False
----
-
----
-uid: System.Threading.CountdownEvent.Dispose(System.Boolean)
-internalonly: False
----
-
----
-uid: System.Threading.CountdownEvent.TryAddCount
-internalonly: False
----
-
----
-uid: System.Threading.CountdownEvent.TryAddCount(System.Int32)
-internalonly: False
----
-
----
-uid: System.Threading.CountdownEvent.IsSet
-internalonly: False
----
-
----
-uid: System.Threading.CountdownEvent.AddCount(System.Int32)
-internalonly: False
----
-
----
-uid: System.Threading.CountdownEvent.Signal(System.Int32)
-internalonly: False
----
-
----
-uid: System.Threading.CountdownEvent.AddCount
-internalonly: False
----
-
----
-uid: System.Threading.CountdownEvent.Wait(System.Int32,System.Threading.CancellationToken)
-internalonly: False
----
-
----
-uid: System.Threading.CountdownEvent.Wait(System.Threading.CancellationToken)
-internalonly: False
----
-
----
-uid: System.Threading.CountdownEvent.Reset(System.Int32)
-internalonly: False
----
-
----
-uid: System.Threading.CountdownEvent.Wait(System.TimeSpan,System.Threading.CancellationToken)
-internalonly: False
----
-
----
-uid: System.Threading.CountdownEvent.Reset
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Threading.CountdownEvent.Dispose
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.CountdownEvent.Signal
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.CountdownEvent.Wait
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.CountdownEvent.InitialCount
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.CountdownEvent.WaitHandle
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.CountdownEvent.Reset
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.CountdownEvent.Wait
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.CountdownEvent.Wait(System.Int32)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.CountdownEvent.Dispose(System.Boolean)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.CountdownEvent.TryAddCount
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.CountdownEvent.TryAddCount(System.Int32)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.CountdownEvent.IsSet
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.CountdownEvent.AddCount(System.Int32)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.CountdownEvent.Signal(System.Int32)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.CountdownEvent.TryAddCount
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.CountdownEvent.Signal
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.CountdownEvent.AddCount
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.CountdownEvent.AddCount
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.CountdownEvent.Wait(System.Int32,System.Threading.CancellationToken)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.CountdownEvent.Wait(System.Threading.CancellationToken)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.CountdownEvent.Reset(System.Int32)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.CountdownEvent.Wait(System.TimeSpan,System.Threading.CancellationToken)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.CountdownEvent.Reset
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.CountdownEvent.Dispose
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

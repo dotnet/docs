@@ -1,4 +1,6 @@
 ---
 uid: System.AddIn.Hosting.AddInSecurityLevel
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

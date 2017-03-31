@@ -1,29 +1,35 @@
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.ToolTipEventArgs
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.ToolTipEventArgs.X
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.ToolTipEventArgs.Y
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.ToolTipEventArgs.Text
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.ToolTipEventArgs.#ctor(System.Int32,System.Int32,System.String,System.Windows.Forms.DataVisualization.Charting.HitTestResult)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.ToolTipEventArgs.HitTestResult
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---

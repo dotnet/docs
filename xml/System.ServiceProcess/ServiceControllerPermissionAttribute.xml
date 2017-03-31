@@ -16,8 +16,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Allows declarative service controller permission checks.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about using attributes, see [Attributes](../Topic/Extending%20Metadata%20Using%20Attributes.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,8 +40,8 @@
         <Parameter Name="action" Type="System.Security.Permissions.SecurityAction" />
       </Parameters>
       <Docs>
-        <param name="action">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="action">One of the <see cref="T:System.Security.Permissions.SecurityAction" /> values.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceProcess.ServiceControllerPermissionAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,8 +59,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates the permission based on the requested access levels that are set through the <see cref="P:System.ServiceProcess.ServiceControllerPermissionAttribute.PermissionAccess" /> property on the attribute.</summary>
+        <returns>An <see cref="T:System.Security.IPermission" /> that represents the created permission.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,9 +77,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the computer on which the service resides.</summary>
+        <value>The name of the computer that is running the service associated with the <see cref="T:System.ServiceProcess.ServiceController" />.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.ServiceProcess.ServiceControllerPermissionAttribute.MachineName" /> syntax is invalid.</exception>
       </Docs>
     </Member>
     <Member MemberName="PermissionAccess">
@@ -88,8 +96,8 @@
         <ReturnType>System.ServiceProcess.ServiceControllerPermissionAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the access levels used in the permissions request.</summary>
+        <value>A bitwise combination of the <see cref="T:System.ServiceProcess.ServiceControllerPermissionAccess" /> values.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,9 +114,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the short name that identifies the service to the system.</summary>
+        <value>The name of the service.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <see cref="P:System.ServiceProcess.ServiceControllerPermissionAttribute.ServiceName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The syntax of the <see cref="P:System.ServiceProcess.ServiceControllerPermissionAttribute.ServiceName" /> property is invalid.</exception>
       </Docs>
     </Member>
   </Members>

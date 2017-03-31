@@ -1,24 +1,32 @@
 ---
 uid: System.Windows.AttachedPropertyBrowsableForChildrenAttribute
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.AttachedPropertyBrowsableForChildrenAttribute.#ctor
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.AttachedPropertyBrowsableForChildrenAttribute.GetHashCode
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.AttachedPropertyBrowsableForChildrenAttribute.Equals(System.Object)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.AttachedPropertyBrowsableForChildrenAttribute.IncludeDescendants
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

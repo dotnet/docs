@@ -11,8 +11,17 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates the protocol to be used in transferring messages between queue managers.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Specifying Srmp or SrmpSecure when the UseActiveDirectory attribute is set to `true` will cause an exception because Message Queuing (MSMQ) does not provide for Active Directory addressing when using SRMP. UseActiveDirectory is an attribute on the [\&lt;netMsmqBinding\&gt;](../Topic/%3CnetMsmqBinding%3E.md) and the [\&lt;msmqIntegrationBinding\&gt;](../Topic/%3CmsmqIntegrationBinding%3E.md).  
+  
+ For more information about addressing queues, see [Service Endpoints and Queue Addressing](../Topic/Service%20Endpoints%20and%20Queue%20Addressing.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Native">
@@ -29,7 +38,7 @@
         <ReturnType>System.ServiceModel.QueueTransferProtocol</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use the native MSMQ protocol.</summary>
       </Docs>
     </Member>
     <Member MemberName="Srmp">
@@ -46,7 +55,7 @@
         <ReturnType>System.ServiceModel.QueueTransferProtocol</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use the Soap Reliable Messaging Protocol (SRMP).</summary>
       </Docs>
     </Member>
     <Member MemberName="SrmpSecure">
@@ -63,7 +72,7 @@
         <ReturnType>System.ServiceModel.QueueTransferProtocol</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use the Soap Reliable Messaging Protocol Secure (SRMPS) transport.</summary>
       </Docs>
     </Member>
   </Members>

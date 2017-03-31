@@ -1,14 +1,27 @@
 ---
 uid: System.Workflow.Runtime.Tracking.TrackingConditionCollection
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Tracking.TrackingConditionCollection.#ctor(System.Collections.Generic.IEnumerable{System.Workflow.Runtime.Tracking.TrackingCondition})
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Tracking.TrackingConditionCollection.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Runtime.Tracking.TrackingConditionCollection.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

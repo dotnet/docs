@@ -20,8 +20,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Logs tracing messages when the .NET Framework serialization infrastructure is compiled.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The trace message is printed during serialization, remoting, and when running [Soapsuds Tool (Soapsuds.exe)](http://msdn.microsoft.com/en-us/40f6f8c8-b80c-4e9f-a920-31bcd0cf45c5).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,7 +43,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.Formatters.InternalRM" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,8 +75,8 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="messages">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="messages">An array of trace messages to print.</param>
+        <summary>Prints SOAP trace messages.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,8 +95,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Checks if SOAP tracing is enabled.</summary>
+        <returns>
+          <see langword="true" />, if tracing is enabled; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

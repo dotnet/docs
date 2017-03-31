@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Used to specify the targeted bitness of the .NET Framework for some methods of ToolLocationHelper</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>Microsoft.Build.Utilities.DotNetFrameworkArchitecture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates the 32-bit .NET Framework</summary>
       </Docs>
     </Member>
     <Member MemberName="Bitness64">
@@ -43,7 +43,7 @@
         <ReturnType>Microsoft.Build.Utilities.DotNetFrameworkArchitecture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates the 64-bit .NET Framework</summary>
       </Docs>
     </Member>
     <Member MemberName="Current">
@@ -59,7 +59,7 @@
         <ReturnType>Microsoft.Build.Utilities.DotNetFrameworkArchitecture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates the .NET Framework that is currently being run under.</summary>
       </Docs>
     </Member>
   </Members>

@@ -32,8 +32,31 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the value of the <see cref="T:System.Runtime.InteropServices.CharSet" /> enumeration. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Apply the <xref:System.Runtime.InteropServices.DefaultCharSetAttribute> attribute at the assembly level or module level to set the <xref:System.Runtime.InteropServices.DllImportAttribute> value for any call to <xref:System.Runtime.InteropServices.DllImportAttribute> that does not include a <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet> named argument specified by the user.  
+  
+ A <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet> named argument specified by the user overrides the setting of <xref:System.Runtime.InteropServices.DefaultCharSetAttribute>.  
+  
+> [!NOTE]
+>  Only the C# and Visual Basic compilers recognize this attribute; it is not used by the C++ compiler.  
+  
+   
+  
+## Examples  
+ The following code example changes the default <xref:System.Runtime.InteropServices.CharSet> value from <xref:System.Runtime.InteropServices.CharSet> to <xref:System.Runtime.InteropServices.CharSet>.  
+  
+ `using System.Runtime.InteropServices;`  
+  
+ `[module: DefaultCharSet(CharSet.Auto)]`  
+  
+ `// …`  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -62,8 +85,8 @@
         <Parameter Name="charSet" Type="System.Runtime.InteropServices.CharSet" />
       </Parameters>
       <Docs>
-        <param name="charSet">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="charSet">One of the <see cref="T:System.Runtime.InteropServices.CharSet" /> values.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.DefaultCharSetAttribute" /> class with the specified <see cref="T:System.Runtime.InteropServices.CharSet" /> value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,8 +116,8 @@
         <ReturnType>System.Runtime.InteropServices.CharSet</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the default value of <see cref="T:System.Runtime.InteropServices.CharSet" /> for any call to <see cref="T:System.Runtime.InteropServices.DllImportAttribute" />.</summary>
+        <value>The default value of <see cref="T:System.Runtime.InteropServices.CharSet" /> for any call to <see cref="T:System.Runtime.InteropServices.DllImportAttribute" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Event arguments for the <see cref="E:Microsoft.Build.Evaluation.ProjectCollection.ProjectCollectionChanged" /> event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>Microsoft.Build.Evaluation.ProjectCollectionChangedState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type of the change made to the <see cref="T:Microsoft.Build.Evaluation.ProjectCollection" />.</summary>
+        <value>Returns <see cref="T:Microsoft.Build.Evaluation.ProjectCollectionChangedState" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

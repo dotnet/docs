@@ -1,39 +1,53 @@
 ---
 uid: System.IdentityModel.Tokens.Saml2Evidence
-internalonly: False
----
-
----
-uid: System.IdentityModel.Tokens.Saml2Evidence.#ctor(System.IdentityModel.Tokens.Saml2Id)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.Saml2Evidence.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.Saml2Evidence.#ctor(System.IdentityModel.Tokens.Saml2Id)
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.Saml2Evidence.#ctor
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.Saml2Evidence.#ctor(System.Uri)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.Saml2Evidence.#ctor(System.IdentityModel.Tokens.Saml2Assertion)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.Saml2Evidence.AssertionUriReferences
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.Saml2Evidence.Assertions
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.Saml2Evidence.AssertionIdReferences
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

@@ -1,14 +1,14 @@
 ---
 uid: System.Management.Instrumentation.ManagementBindAttribute
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.ManagementBindAttribute.#ctor
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.ManagementBindAttribute.Schema
-internalonly: False
+manager: "jillfra"
 ---

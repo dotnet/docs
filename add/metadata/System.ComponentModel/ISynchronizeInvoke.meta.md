@@ -1,24 +1,34 @@
 ---
 uid: System.ComponentModel.ISynchronizeInvoke
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.ISynchronizeInvoke.Invoke(System.Delegate,System.Object[])
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.ISynchronizeInvoke.InvokeRequired
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.ISynchronizeInvoke.EndInvoke(System.IAsyncResult)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.ISynchronizeInvoke.BeginInvoke(System.Delegate,System.Object[])
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

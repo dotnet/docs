@@ -1,19 +1,34 @@
 ---
 uid: System.ServiceModel.Activation.Configuration.SecurityIdentifierElement
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activation.Configuration.SecurityIdentifierElement.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Activation.Configuration.SecurityIdentifierElement.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activation.Configuration.SecurityIdentifierElement.SecurityIdentifier
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activation.Configuration.SecurityIdentifierElement.#ctor(System.Security.Principal.SecurityIdentifier)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

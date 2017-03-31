@@ -21,9 +21,16 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="TValue">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="TValue">The type of a list element.</typeparam>
+    <summary>Defines the interface for an STL/CLR [list](../Topic/list%20\(STL-CLR\).md) object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[unnamed_parm](~/includes/unnamed-parm-md.md)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="assign">
@@ -42,9 +49,16 @@
         <Parameter Name="_Right" Type="System.Collections.IEnumerable" />
       </Parameters>
       <Docs>
-        <param name="_Right">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="_Right">The enumeration whose elements are to be inserted into the container.</param>
+        <summary>Replaces the controlled sequence with the sequence that is designated by the given enumerator.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::assign (STL/CLR)](../Topic/list::assign%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="assign">
@@ -64,10 +78,17 @@
         <Parameter Name="_Last" Type="Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_First">To be added.</param>
-        <param name="_Last">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="_First">The beginning position of the range of elements to insert into the container.</param>
+        <param name="_Last">The first position beyond the range of elements to insert into the container.</param>
+        <summary>Replaces the controlled sequence with the sequence <c>[</c><paramref name="_First" /><c>,</c> <paramref name="_Last" /><c>)</c>.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::assign (STL/CLR)](../Topic/list::assign%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="assign">
@@ -87,10 +108,17 @@
         <Parameter Name="_Val" Type="TValue" />
       </Parameters>
       <Docs>
-        <param name="_Count">To be added.</param>
-        <param name="_Val">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="_Count">The number of elements to insert into the container.</param>
+        <param name="_Val">The value of the elements to insert into the container.</param>
+        <summary>Replaces the controlled sequence with the specified number of the given element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::assign (STL/CLR)](../Topic/list::assign%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="back">
@@ -107,9 +135,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Accesses the last element of the container.</summary>
+        <returns>The last element of the controlled sequence, which must be non-empty.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::back (STL/CLR)](../Topic/list::back%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="back_item">
@@ -125,9 +160,16 @@
         <ReturnType>TValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Accesses the last element of the container.</summary>
+        <value>The last element of the controlled sequence, which must be non-empty.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::back_item (STL/CLR)](../Topic/list::back_item%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="begin">
@@ -147,9 +189,16 @@
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Designates the beginning of the controlled sequence.</summary>
+        <returns>An iterator.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::begin (STL/CLR)](../Topic/list::begin%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="clear">
@@ -166,8 +215,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Removes all elements from the container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::clear (STL/CLR)](../Topic/list::clear%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="empty">
@@ -184,9 +240,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Tests whether the container has no elements.</summary>
+        <returns>
+          <see langword="true" /> if the container has no elements; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::empty (STL/CLR)](../Topic/list::empty%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="end">
@@ -206,9 +270,16 @@
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Designates the end of the controlled sequence.</summary>
+        <returns>An iterator.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::end (STL/CLR)](../Topic/list::end%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="erase">
@@ -275,9 +346,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Accesses the first element of the container.</summary>
+        <returns>The first element of the controlled sequence, which must be non-empty.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::front (STL/CLR)](../Topic/list::front%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="front_item">
@@ -293,9 +371,16 @@
         <ReturnType>TValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Accesses the first element of the container.</summary>
+        <value>The first element of the controlled sequence, which must be non-empty.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::front_item (STL/CLR)](../Topic/list::front_item%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="insert">
@@ -414,10 +499,17 @@
         <Parameter Name="_Pred" Type="Microsoft.VisualC.StlClr.BinaryDelegate&lt;TValue,TValue,System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Right">To be added.</param>
-        <param name="_Pred">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="_Right">The container to merge into this container.</param>
+        <param name="_Pred">The Boolean functor for comparing pairs of elements.</param>
+        <summary>Merges two ordered controlled sequences.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::merge (STL/CLR)](../Topic/list::merge%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="pop_back">
@@ -434,8 +526,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Removes the last element from the container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::pop_back (STL/CLR)](../Topic/list::pop_back%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="pop_front">
@@ -452,8 +551,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Removes the first element from the container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::pop_front (STL/CLR)](../Topic/list::pop_front%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="push_back">
@@ -472,9 +578,16 @@
         <Parameter Name="_Val" Type="TValue" />
       </Parameters>
       <Docs>
-        <param name="_Val">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="_Val">The value of the element to append to the container.</param>
+        <summary>Adds a new element to the end of the container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::push_back (STL/CLR)](../Topic/list::push_back%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="push_front">
@@ -493,9 +606,16 @@
         <Parameter Name="_Val" Type="TValue" />
       </Parameters>
       <Docs>
-        <param name="_Val">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="_Val">The value of the element to insert at the beginning of the container.</param>
+        <summary>Adds a new element to the beginning of the container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::push_front (STL/CLR)](../Topic/list::push_front%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="rbegin">
@@ -515,9 +635,16 @@
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Designates the beginning of the reversed controlled sequence.</summary>
+        <returns>An iterator.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::rbegin (STL/CLR)](../Topic/list::rbegin%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="remove">
@@ -536,9 +663,16 @@
         <Parameter Name="_Val" Type="TValue" />
       </Parameters>
       <Docs>
-        <param name="_Val">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="_Val">The value of the element to remove from the container.</param>
+        <summary>Removes an element that has a specified value from the container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::remove (STL/CLR)](../Topic/list::remove%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="rend">
@@ -558,9 +692,16 @@
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Designates the end of the reversed controlled sequence.</summary>
+        <returns>An iterator.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::rend (STL/CLR)](../Topic/list::rend%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="resize">
@@ -579,9 +720,16 @@
         <Parameter Name="_Newsize" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="_Newsize">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="_Newsize">The new size of the container.</param>
+        <summary>Changes the number of elements in the container to the specified size.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::resize (STL/CLR)](../Topic/list::resize%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="resize">
@@ -601,10 +749,17 @@
         <Parameter Name="_Val" Type="TValue" />
       </Parameters>
       <Docs>
-        <param name="_Newsize">To be added.</param>
-        <param name="_Val">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="_Newsize">The new size of the container.</param>
+        <param name="_Val">The value of the padding elements.</param>
+        <summary>Changes the number of elements in the container to the specified size. If the new size is larger than the old size, the given values will be appended to the container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::resize (STL/CLR)](../Topic/list::resize%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="reverse">
@@ -621,8 +776,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Reverses the elements of the controlled sequence.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::reverse (STL/CLR)](../Topic/list::reverse%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="size">
@@ -639,9 +801,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Counts the number of elements in the container.</summary>
+        <returns>The length of the controlled sequence.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::size (STL/CLR)](../Topic/list::size%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="sort">
@@ -660,9 +829,16 @@
         <Parameter Name="_Pred" Type="Microsoft.VisualC.StlClr.BinaryDelegate&lt;TValue,TValue,System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Pred">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="_Pred">The operator that will be used to compare elements for ordering.</param>
+        <summary>Orders the controlled sequence.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::sort (STL/CLR)](../Topic/list::sort%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="splice">
@@ -756,9 +932,16 @@
         <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.IList&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Right">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="_Right">The container to swap contents with.</param>
+        <summary>Swaps the contents of two containers.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::swap (STL/CLR)](../Topic/list::swap%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="unique">
@@ -777,10 +960,102 @@
         <Parameter Name="_Pred" Type="Microsoft.VisualC.StlClr.BinaryDelegate&lt;TValue,TValue,System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Pred">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="_Pred">The comparer that determines whether element pairs are unique. An element that is not unique will be removed from the container.</param>
+        <summary>Removes adjacent elements that pass a specified test.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::unique (STL/CLR)](../Topic/list::unique%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="insert">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds elements to the container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::insert (STL/CLR)](../Topic/list::insert%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="assign">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Replaces all elements of the container with the specified elements.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::assign (STL/CLR)](../Topic/list::assign%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="erase">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes elements from the container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::erase (STL/CLR)](../Topic/list::erase%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="resize">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Changes the number of elements in the container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::resize (STL/CLR)](../Topic/list::resize%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="splice">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reorders links between nodes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::splice (STL/CLR)](../Topic/list::splice%20\(STL-CLR\).md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

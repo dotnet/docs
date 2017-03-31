@@ -10,8 +10,27 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the display format for the previous and next month navigation controls within the <see cref="T:System.Web.UI.WebControls.Calendar" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.NextPrevFormat> enumeration represents the different styles for the next and previous month buttons on the <xref:System.Web.UI.WebControls.Calendar>.  
+  
+ CustomText allows the programmer to specify custom text for the navigation controls.  
+  
+ ShortMonth displays a three-letter abbreviation for the month.  
+  
+ FullMonth displays the entire month name.  
+  
+   
+  
+## Examples  
+ [!code-csharp[CalendarNextPrevFormat#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarNextPrevFormat/CS/calendarnextprevformatcs.aspx#1)]
+ [!code-vb[CalendarNextPrevFormat#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarNextPrevFormat/VB/calendarnextprevformatvb.aspx#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CustomText">
@@ -27,7 +46,7 @@
         <ReturnType>System.Web.UI.WebControls.NextPrevFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Custom text format for the month navigation controls on the <see cref="T:System.Web.UI.WebControls.Calendar" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="FullMonth">
@@ -43,7 +62,7 @@
         <ReturnType>System.Web.UI.WebControls.NextPrevFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Full month name format for the month navigation controls on the <see cref="T:System.Web.UI.WebControls.Calendar" />. For example, "January".</summary>
       </Docs>
     </Member>
     <Member MemberName="ShortMonth">
@@ -59,7 +78,7 @@
         <ReturnType>System.Web.UI.WebControls.NextPrevFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Abbreviated month name format for the month navigation controls on the <see cref="T:System.Web.UI.WebControls.Calendar" />. For example, "Jan".</summary>
       </Docs>
     </Member>
   </Members>

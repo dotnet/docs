@@ -1,34 +1,39 @@
 ---
 uid: System.Runtime.Remoting.WellKnownClientTypeEntry
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.WellKnownClientTypeEntry.ApplicationUrl
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.WellKnownClientTypeEntry.#ctor(System.String,System.String,System.String)
-internalonly: False
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Remoting.WellKnownClientTypeEntry.#ctor
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.WellKnownClientTypeEntry.#ctor(System.Type,System.String)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.WellKnownClientTypeEntry.ObjectUrl
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.WellKnownClientTypeEntry.ToString
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.WellKnownClientTypeEntry.ObjectType
-internalonly: False
+manager: "ghogen"
 ---

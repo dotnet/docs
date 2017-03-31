@@ -1,4 +1,4 @@
 ---
 uid: System.Messaging
-internalonly: False
+manager: "tyoung"
 ---

@@ -11,8 +11,21 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the pre-defined types of claims that an entity can claim. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.IdentityModel.Claims.ClaimTypes> class to search for a particular type of claim in a <xref:System.IdentityModel.Claims.ClaimSet> or to create a claim. To search for a particular type of claim in a <xref:System.IdentityModel.Claims.ClaimSet>, use the <xref:System.IdentityModel.Claims.ClaimSet.FindClaims%28System.String%2CSystem.String%29> method and use the properties of this class to specify the claim type for the `claimType` parameter. When the constructor for the <xref:System.IdentityModel.Claims.Claim> class is used to create a new claim, use the properties of the <xref:System.IdentityModel.Claims.ClaimTypes> class to specify the `claimType` parameter. For many of the claim types, the <xref:System.IdentityModel.Claims.Claim> class has static properties that return a claim of a specific type. For instance, the [CreateHashClaim(Byte\<xref:System.IdentityModel.Claims.Claim.CreateHashClaim%28System.Byte%5B%5D%29> method returns a claim using the <xref:System.IdentityModel.Claims.ClaimTypes.Hash%2A> claim type.  
+  
+   
+  
+## Examples  
+ [!code-csharp[c_ClaimTypes#1](~/samples/snippets/csharp/VS_Snippets_CFX/c_claimtypes/cs/service.cs#1)]
+ [!code-vb[c_ClaimTypes#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_claimtypes/vb/service.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Anonymous">
@@ -28,9 +41,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the URI for a claim that specifies the anonymous user.</summary>
+        <value>The URI for a claim that specifies the anonymous user.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/anonymous.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Authentication">
@@ -46,9 +66,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the URI for a claim that specifies details about whether an identity is authenticated.</summary>
+        <value>The URI for a claim that specifies details about whether an identity is authenticated.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/authentication.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AuthorizationDecision">
@@ -64,9 +91,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the URI for a claim that specifies an authorization decision on an entity.</summary>
+        <value>The URI for a claim that specifies an authorization decision on an entity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/authorizationdecision.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Country">
@@ -82,9 +116,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the URI for a claim that specifies the country/region in which an entity resides.</summary>
+        <value>The URI for a claim that specifies a country/region in which an entity resides.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/country.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateOfBirth">
@@ -100,9 +141,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the URI for a claim that specifies the date of birth of an entity.</summary>
+        <value>The URI for a claim that specifies the date of birth of an entity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/dateofbirth.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DenyOnlySid">
@@ -118,9 +166,18 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the URI for a claim that specifies a deny-only security identifier (SID) for an entity.</summary>
+        <value>The URI for a claim that specifies a deny-only SID for an entity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A deny-only SID denies the specified entity to a securable object.  
+  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/denyonlysid.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dns">
@@ -136,9 +193,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the URI for a claim that specifies the DNS name associated with the computer name or with the alternative name of either the subject or issuer of an X.509 certificate.</summary>
+        <value>The URI for a claim that specifies the DNS name associated with the computer name or with the alternative name of either the subject or issuer of an X.509 certificate.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/dns.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Email">
@@ -154,9 +218,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the URI for a claim that specifies the email address of an entity.</summary>
+        <value>The URI for a claim that specifies the email address of an entity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Gender">
@@ -172,9 +243,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the URI for a claim that specifies the gender of an entity.</summary>
+        <value>The URI for a claim that specifies the gender of an entity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/gender.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GivenName">
@@ -190,9 +268,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the URI for a claim that specifies the given name of an entity.</summary>
+        <value>The URI for a claim that specifies the given name of an entity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Hash">
@@ -208,9 +293,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the URI for a claim that specifies a hash value.</summary>
+        <value>The URI for a claim that specifies a hash value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/hash.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HomePhone">
@@ -226,9 +318,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the URI for a claim that specifies the home phone number of an entity.</summary>
+        <value>The URI for a claim that specifies the home phone number of an entity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/homephone.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Locality">
@@ -244,9 +343,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the URI for a claim that specifies the locale in which an entity resides.</summary>
+        <value>The URI for a claim that specifies the locale in which an entity resides.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/locality.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MobilePhone">
@@ -262,9 +368,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the URI for a claim that specifies the mobile phone number of an entity.</summary>
+        <value>The URI for a claim that specifies the mobile phone number of an entity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/mobilephone.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -280,9 +393,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the URI for a claim that specifies the name of an entity.</summary>
+        <value>The URI for a claim that specifies the name of an entity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NameIdentifier">
@@ -298,9 +418,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the URI for a claim that specifies the name of an entity.</summary>
+        <value>The URI for a claim that specifies the name of an entity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OtherPhone">
@@ -316,9 +443,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the URI for a claim that specifies the alternative phone number of an entity.</summary>
+        <value>The URI for a claim that specifies the alternative phone number of an entity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/otherphone.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PostalCode">
@@ -334,9 +468,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the URI for a claim that specifies the postal code of an entity.</summary>
+        <value>The URI for a claim that specifies the postal code of an entity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/postalcode.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PPID">
@@ -352,9 +493,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the URI for a claim that specifies the private personal identifier (PPI) of an entity.</summary>
+        <value>The URI for a claim that specifies the private personal identifier (PPI) of an entity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/privatepersonalidentifier.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Rsa">
@@ -370,9 +518,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the URI for a claim that specifies an RSA key.</summary>
+        <value>The URI for a claim that specifies an RSA key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/rsa.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Sid">
@@ -388,9 +543,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the URI for a claim that specifies a security identifier (SID).</summary>
+        <value>The URI for a claim that specifies a security identifier (SID).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/sid.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Spn">
@@ -406,9 +568,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the URI for a claim that specifies a service principal name (SPN) claim.</summary>
+        <value>The URI for a claim that specifies a service principal name (SPN) claim.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/spn.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StateOrProvince">
@@ -424,9 +593,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the URI for a claim that specifies the state or province in which an entity resides.</summary>
+        <value>The URI for a claim that specifies the state or province in which an entity resides.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/stateorprovince.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StreetAddress">
@@ -442,9 +618,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the URI for a claim that specifies the street address of an entity.</summary>
+        <value>The URI for a claim that specifies the street address of an entity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/streetaddress.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Surname">
@@ -460,9 +643,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the URI for a claim that specifies the surname of an entity.</summary>
+        <value>The URI for a claim that specifies the surname of an entity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System">
@@ -478,9 +668,18 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the URI for a claim that identifies the system entity.</summary>
+        <value>The URI for a claim that identifies the system entity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Claims.ClaimTypes.System%2A> is typically used to identify the issuer of a claim when the issuer is the current application.  
+  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/system.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Thumbprint">
@@ -496,9 +695,18 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the URI for a claim that specifies a thumbprint.</summary>
+        <value>The URI for a claim that specifies a thumbprint.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A thumbprint is a globally unique SHA-1 hash of an X.509 certificate.  
+  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/thumbprint.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Upn">
@@ -514,9 +722,21 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the URI for a claim that specifies a user principal name (UPN).</summary>
+        <value>The URI for a claim that specifies UPN.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn.  
+  
+   
+  
+## Examples  
+ //  \<snippet1>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Uri">
@@ -532,9 +752,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the URI for a claim that specifies a URI.</summary>
+        <value>The URI for a claim that specifies a URI.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/uri.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Webpage">
@@ -550,9 +777,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the URI for a claim that specifies the Web page of an entity.</summary>
+        <value>The URI for a claim that specifies the Web page of an entity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/webpage.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="X500DistinguishedName">
@@ -568,9 +802,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the string that contains the URI for a distinguished name claim of an X.509 certificate.</summary>
+        <value>The URI for a distinguished name claim of an X.509 certificate.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The X.500 standard defines the methodology for defining distinguished names that is used by X.509 certificates.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

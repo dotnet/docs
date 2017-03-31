@@ -1,19 +1,31 @@
 ---
 uid: System.Web.UI.MobileControls.Adapters.WmlPanelAdapter
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.Adapters.WmlPanelAdapter.Control
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.Adapters.WmlPanelAdapter.Render
 ---
 
 ---
 uid: System.Web.UI.MobileControls.Adapters.WmlPanelAdapter.Render(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.Adapters.WmlPanelAdapter.#ctor
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

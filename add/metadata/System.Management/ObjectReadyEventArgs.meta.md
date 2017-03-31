@@ -1,9 +1,9 @@
 ---
 uid: System.Management.ObjectReadyEventArgs
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ObjectReadyEventArgs.NewObject
-internalonly: False
+manager: "jillfra"
 ---

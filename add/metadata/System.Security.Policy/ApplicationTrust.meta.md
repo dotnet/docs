@@ -1,64 +1,97 @@
 ---
 uid: System.Security.Policy.ApplicationTrust
-internalonly: False
----
-
----
-uid: System.Security.Policy.ApplicationTrust.ApplicationIdentity
-internalonly: False
----
-
----
-uid: System.Security.Policy.ApplicationTrust.DefaultGrantSet
-internalonly: False
----
-
----
-uid: System.Security.Policy.ApplicationTrust.IsApplicationTrustedToRun
-internalonly: False
----
-
----
-uid: System.Security.Policy.ApplicationTrust.#ctor(System.ApplicationIdentity)
-internalonly: False
----
-
----
-uid: System.Security.Policy.ApplicationTrust.#ctor(System.Security.PermissionSet,System.Collections.Generic.IEnumerable{System.Security.Policy.StrongName})
-internalonly: False
----
-
----
-uid: System.Security.Policy.ApplicationTrust.Clone
-internalonly: False
----
-
----
-uid: System.Security.Policy.ApplicationTrust.Persist
-internalonly: False
----
-
----
-uid: System.Security.Policy.ApplicationTrust.ToXml
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Policy.ApplicationTrust.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Policy.ApplicationTrust.ApplicationIdentity
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Policy.ApplicationTrust.DefaultGrantSet
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Policy.ApplicationTrust.IsApplicationTrustedToRun
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Policy.ApplicationTrust.#ctor(System.ApplicationIdentity)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Policy.ApplicationTrust.#ctor(System.Security.PermissionSet,System.Collections.Generic.IEnumerable{System.Security.Policy.StrongName})
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Policy.ApplicationTrust.Clone
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Policy.ApplicationTrust.Persist
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Policy.ApplicationTrust.ToXml
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Policy.ApplicationTrust.#ctor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Policy.ApplicationTrust.ExtraInfo
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Policy.ApplicationTrust.FromXml(System.Security.SecurityElement)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Policy.ApplicationTrust.FullTrustAssemblies
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

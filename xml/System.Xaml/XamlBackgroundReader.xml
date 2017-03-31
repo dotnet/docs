@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Implements a double-buffered <see cref="T:System.Xaml.XamlReader" /> that can split reading and writing to different threads.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,9 +32,11 @@
         <Parameter Name="wrappedReader" Type="System.Xaml.XamlReader" />
       </Parameters>
       <Docs>
-        <param name="wrappedReader">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="wrappedReader">The <see cref="T:System.Xaml.XamlReader" /> that this <see cref="T:System.Xaml.XamlBackgroundReader" /> is based on.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlBackgroundReader" /> class.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="wrappedReader" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -53,9 +55,17 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="disposing">
+          <see langword="true" /> to release managed resources; otherwise, <see langword="false" />.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Xaml.XamlBackgroundReader" /> and optionally releases the managed resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In addition to calling the base implementation, this `Dispose` implementation disposes related writers and event handlers.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HasLineInfo">
@@ -71,8 +81,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that specifies whether line information is available.</summary>
+        <value>
+          <see langword="true" /> if line information is available; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,8 +100,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that reports whether the reader position is at end-of-file.</summary>
+        <value>
+          <see langword="true" /> if the position is at end-of-file; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,8 +119,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the line number to report.</summary>
+        <value>The line number to report.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,8 +137,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the line position to report.</summary>
+        <value>The line position to report.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,8 +155,8 @@
         <ReturnType>System.Xaml.XamlMember</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the current member at the reader position, if the reader position is on a <see cref="F:System.Xaml.XamlNodeType.StartMember" />.</summary>
+        <value>The current member; or <see langword="null" />, if the position is not on a member.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -161,8 +173,8 @@
         <ReturnType>System.Xaml.NamespaceDeclaration</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the XAML namespace from the current node.</summary>
+        <value>The XAML namespace, if it is available; otherwise, <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -179,8 +191,8 @@
         <ReturnType>System.Xaml.XamlNodeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type of the current node.</summary>
+        <value>A value of the <see cref="T:System.Xaml.XamlNodeType" /> enumeration.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,8 +210,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Provides the next XAML node from the source, if a node is available.</summary>
+        <returns>
+          <see langword="true" /> if a node is available; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -216,8 +229,8 @@
         <ReturnType>System.Xaml.XamlSchemaContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an object that provides schema context information for the information set.</summary>
+        <value>An object that provides schema context information for the information set.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -235,8 +248,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Creates and starts a new <see cref="T:System.Threading.Thread" /> (constructed from <see cref="T:System.Threading.ParameterizedThreadStart" />) that handles a named thread for the <see cref="T:System.Xaml.XamlReader" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the thread is named `XAML reader thread`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The thread is already started.</exception>
       </Docs>
     </Member>
     <Member MemberName="StartThread">
@@ -255,9 +276,10 @@
         <Parameter Name="threadName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="threadName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="threadName">The name for the thread.</param>
+        <summary>Creates and starts a new <see cref="T:System.Threading.Thread" /> (constructed from <see cref="T:System.Threading.ParameterizedThreadStart" />) that handles a named thread for the <see cref="T:System.Xaml.XamlReader" />. You specify the thread name as a parameter.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The thread is already started.</exception>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -273,8 +295,8 @@
         <ReturnType>System.Xaml.XamlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Xaml.XamlType" /> of the current node.</summary>
+        <value>The <see cref="T:System.Xaml.XamlType" /> of the current node; or <see langword="null" />, if the current reader position is not on an object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -291,8 +313,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the value of the current node.</summary>
+        <value>The value of the current node; or <see langword="null" />, if the current reader position is not on a <see cref="F:System.Xaml.XamlNodeType.Value" /> node type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

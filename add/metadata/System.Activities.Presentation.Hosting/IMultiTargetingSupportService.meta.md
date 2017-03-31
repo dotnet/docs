@@ -1,19 +1,27 @@
 ---
 uid: System.Activities.Presentation.Hosting.IMultiTargetingSupportService
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.Hosting.IMultiTargetingSupportService.IsSupportedType(System.Type)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.Hosting.IMultiTargetingSupportService.GetReflectionAssembly(System.Reflection.AssemblyName)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.Hosting.IMultiTargetingSupportService.GetRuntimeType(System.Type)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

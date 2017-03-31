@@ -1,24 +1,24 @@
 ---
 uid: System.Management.ManagementOptions
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementOptions.Timeout
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementOptions.Context
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementOptions.Clone
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementOptions.InfiniteTimeout
-internalonly: False
+manager: "jillfra"
 ---

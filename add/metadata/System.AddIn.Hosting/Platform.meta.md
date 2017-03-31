@@ -1,4 +1,6 @@
 ---
 uid: System.AddIn.Hosting.Platform
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

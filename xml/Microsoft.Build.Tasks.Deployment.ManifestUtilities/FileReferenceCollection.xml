@@ -20,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a collection for manifest file references.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -40,9 +40,9 @@
         <Parameter Name="file" Type="Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileReference" />
       </Parameters>
       <Docs>
-        <param name="file">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="file">The specified file reference to add.</param>
+        <summary>Adds the specified file reference to the collection.</summary>
+        <returns>Returns the added file reference object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,9 +62,9 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="path">The path of the specified file reference to add.</param>
+        <summary>Adds the specified file reference to the collection.</summary>
+        <returns>Returns the added file reference object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,7 +82,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes all objects from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,8 +99,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the number of objects contained in the collection.</summary>
+        <value>the number of objects contained in the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,9 +120,9 @@
         <Parameter Name="targetPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="targetPath">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="targetPath">The specified target path.</param>
+        <summary>Finds a file reference in the collection by the specified target path.</summary>
+        <returns>Returns the found file reference.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,8 +140,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an enumerator that can iterate through the collection.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> interface representing an enumerator that can iterate through the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -161,9 +161,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The zero-based index of the entry to get.</param>
+        <summary>Returns the element at the specified index.</summary>
+        <value>Returns the file reference object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -183,8 +183,8 @@
         <Parameter Name="file" Type="Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileReference" />
       </Parameters>
       <Docs>
-        <param name="file">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="file">The specified file reference to remove.</param>
+        <summary>Removes the specified file reference from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

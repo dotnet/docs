@@ -18,8 +18,27 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the methods that convert permission object state to and from XML element representation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The XML representation of permissions is used to describe instances of permissions for code requests, declarative security permission sets, and security policy configuration.  
+  
+> [!NOTE]
+>  You must implement this interface for any new permission object.  
+  
+   
+  
+## Examples  
+ This example shows how to define a permission class for use with code access security. All of the necessary permission interfaces are implemented.  
+  
+ [!code-cpp[Permission#1](~/samples/snippets/cpp/VS_Snippets_CLR/Permission/cpp/Permission.cpp#1)]
+ [!code-csharp[Permission#1](~/samples/snippets/csharp/VS_Snippets_CLR/Permission/CS/Permission.cs#1)]
+ [!code-vb[Permission#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Permission/vb/permission.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="FromXml">
@@ -43,9 +62,25 @@
         <Parameter Name="e" Type="System.Security.SecurityElement" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">The XML encoding to use to reconstruct the security object.</param>
+        <summary>Reconstructs a security object with a specified state from an XML encoding.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Custom code that extends security objects needs to implement the <xref:System.Security.ISecurityEncodable.ToXml%2A> and <xref:System.Security.ISecurityEncodable.FromXml%2A> methods to make the objects security-encodable.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates implementing the <xref:System.Security.ISecurityEncodable.FromXml%2A> method. This code example is part of a larger example provided for the <xref:System.Security.ISecurityEncodable> class.  
+  
+ [!code-cpp[Permission#6](~/samples/snippets/cpp/VS_Snippets_CLR/Permission/cpp/Permission.cpp#6)]
+ [!code-csharp[Permission#6](~/samples/snippets/csharp/VS_Snippets_CLR/Permission/CS/Permission.cs#6)]
+ [!code-vb[Permission#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/Permission/vb/permission.vb#6)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToXml">
@@ -67,9 +102,25 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates an XML encoding of the security object and its current state.</summary>
+        <returns>An XML encoding of the security object, including any state information.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Custom code that extends security objects needs to implement the <xref:System.Security.ISecurityEncodable.ToXml%2A> and <xref:System.Security.ISecurityEncodable.FromXml%2A> methods to make the objects security-encodable.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates implementing the <xref:System.Security.ISecurityEncodable.FromXml%2A> method. This code example is part of a larger example provided for the <xref:System.Security.ISecurityEncodable> class.  
+  
+ [!code-cpp[Permission#7](~/samples/snippets/cpp/VS_Snippets_CLR/Permission/cpp/Permission.cpp#7)]
+ [!code-csharp[Permission#7](~/samples/snippets/csharp/VS_Snippets_CLR/Permission/CS/Permission.cs#7)]
+ [!code-vb[Permission#7](~/samples/snippets/visualbasic/VS_Snippets_CLR/Permission/vb/permission.vb#7)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,44 +1,49 @@
 ---
 uid: System.Messaging.BinaryMessageFormatter
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.BinaryMessageFormatter.#ctor(System.Runtime.Serialization.Formatters.FormatterAssemblyStyle,System.Runtime.Serialization.Formatters.FormatterTypeStyle)
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.BinaryMessageFormatter.#ctor
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.BinaryMessageFormatter.Write(System.Messaging.Message,System.Object)
-internalonly: False
+manager: "tyoung"
+---
+
+---
+uid: System.Messaging.BinaryMessageFormatter.#ctor
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.BinaryMessageFormatter.Read(System.Messaging.Message)
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.BinaryMessageFormatter.TypeFormat
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.BinaryMessageFormatter.Clone
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.BinaryMessageFormatter.CanRead(System.Messaging.Message)
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.BinaryMessageFormatter.TopObjectFormat
-internalonly: False
+manager: "tyoung"
 ---

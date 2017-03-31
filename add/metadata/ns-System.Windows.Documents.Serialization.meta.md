@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Documents.Serialization
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -1,19 +1,23 @@
 ---
 uid: System.Net.IPEndPointCollection
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.IPEndPointCollection.SetItem(System.Int32,System.Net.IPEndPoint)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.IPEndPointCollection.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.IPEndPointCollection.InsertItem(System.Int32,System.Net.IPEndPoint)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

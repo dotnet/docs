@@ -1,34 +1,55 @@
 ---
 uid: System.Activities.WorkflowInspectionServices
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.WorkflowInspectionServices.Resolve(System.Activities.Activity,System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.WorkflowInspectionServices.CacheMetadata
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.WorkflowInspectionServices.GetActivities(System.Activities.Activity)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.WorkflowInspectionServices.CanInduceIdle(System.Activities.Activity)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.WorkflowInspectionServices.CacheMetadata(System.Activities.Activity,System.Activities.LocationReferenceEnvironment)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.WorkflowInspectionServices.GetImplementationVersion(System.Activities.Activity)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.WorkflowInspectionServices.CacheMetadata(System.Activities.Activity)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

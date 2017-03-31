@@ -1,9 +1,11 @@
 ---
 uid: System.Web.UI.IControlBuilderAccessor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IControlBuilderAccessor.ControlBuilder
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the path level of a Web-application configuration file.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.WebApplicationLevel> class provides three levels that are used to distinguish where a configuration file is in relation to the root level of an ASP.NET Web application. The three path-level types are AboveApplication, AtApplication, and BelowApplication.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AboveApplication">
@@ -27,7 +34,7 @@
         <ReturnType>System.Web.Configuration.WebApplicationLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the configuration file is in a global directory in relation to the current ASP.NET Web application.</summary>
       </Docs>
     </Member>
     <Member MemberName="AtApplication">
@@ -43,7 +50,7 @@
         <ReturnType>System.Web.Configuration.WebApplicationLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the configuration file is in the root directory of the current ASP.NET Web application.</summary>
       </Docs>
     </Member>
     <Member MemberName="BelowApplication">
@@ -59,7 +66,7 @@
         <ReturnType>System.Web.Configuration.WebApplicationLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the configuration file is in a sub-directory of the current ASP.NET Web application.</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,19 +1,19 @@
 ---
 uid: System.Management.Instrumentation.ManagementConfigurationAttribute
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.ManagementConfigurationAttribute.#ctor
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.ManagementConfigurationAttribute.Mode
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.ManagementConfigurationAttribute.Schema
-internalonly: False
+manager: "jillfra"
 ---

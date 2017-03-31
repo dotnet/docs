@@ -1,19 +1,27 @@
 ---
 uid: System.Windows.Automation.AutomationFocusChangedEventArgs
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.AutomationFocusChangedEventArgs.#ctor(System.Int32,System.Int32)
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.AutomationFocusChangedEventArgs.ObjectId
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.AutomationFocusChangedEventArgs.ChildId
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---

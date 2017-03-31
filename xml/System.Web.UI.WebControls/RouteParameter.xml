@@ -16,8 +16,52 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Binds the value of a URL segment to a parameter object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you implement ASP.NET routing in a Web site, you can use the <xref:System.Web.UI.WebControls.RouteParameter> object to bind the value of a segment of the requested URL to a database query or command. You can declare <xref:System.Web.UI.WebControls.RouteParameter> objects in markup for data source controls or the <xref:System.Web.UI.WebControls.QueryExtender> control.  
+  
+ A Visual Studio Web site project with source code is available to accompany this topic: [Download](http://go.microsoft.com/fwlink/?LinkId=168640).  
+  
+   
+  
+## Examples  
+ The examples in this section show how to use <xref:System.Web.UI.WebControls.RouteParameter> objects in markup to pass URL parameter values to a query that is specified for a data source control.  
+  
+ The following example shows code in the Global.asax page that defines a route that is named `ProductRoute`. The route defines a URL parameter that is named `productname`. The route also defines an optional catchall parameter that is named `culture`, which can be used to specify the language in which the product description is displayed. The Product.aspx page handles requests for this route.  
+  
+  
+  
+  
+  
+ The following example shows the Product.aspx page. The page contains a <xref:System.Web.UI.WebControls.SqlDataSource> control that has a query that requires two parameters, one for the name of the product and one for the language of the product description. <xref:System.Web.UI.WebControls.RouteParameter> objects are used to supply the values for the query parameters. The value of the route URL parameter `productname` is passed to the query parameter `@productname`. The value of the route URL parameter `culture` is passed to the query parameter `@culture`. If a route URL does not include the URL parameter `culture`, a default value of "en" is used.  
+  
+  
+  
+ The following example shows a page that is named ProductLinks.aspx, which contains hyperlinks that link to the Product.aspx page by using route URLs. These hyperlinks use `RouteUrl` expressions to create route URLs. The first link does not include a `culture` route parameter. Therefore, the default value of "en" that is defined in the <xref:System.Web.UI.WebControls.RouteParameter> object for `@culture` query parameter will be used in the query. The second link provides a `culture` value of "fr", which causes the description to be displayed in French. For more information about how to use `RouteUrl` expressions, see [How to: Construct URLs from Routes](../Topic/How%20to:%20Construct%20URLs%20from%20Routes.md).  
+  
+  
+  
+ When you click the first hyperlink, you see the Product.aspx page with the following values in the <xref:System.Web.UI.WebControls.GridView> control:  
+  
+|ProductID|Name|Description|  
+|---------------|----------|-----------------|  
+|`994`|`LL Bottom Bracket`|`Chromoly steel.`|  
+  
+ When you click the second hyperlink, you see the following values in the <xref:System.Web.UI.WebControls.GridView> control:  
+  
+|ProductID|Name|Description|  
+|---------------|----------|-----------------|  
+|`994`|`LL Bottom Bracket`|`Acier chromé.`|  
+  
+ To run this example, add the two .aspx pages and the code in the Global.asax file to an ASP.NET Web site or Web application that defines a connection string named `AdventureWorksLTConnectionString` for the AdventureWorksLT database. For information about how to set up a connection to the AdventureWorksLT database, see [How to: Set Up an AdventureWorksLT Sample Database for ASP.NET Development](../Topic/How%20to:%20Set%20Up%20an%20AdventureWorksLT%20Sample%20Database%20for%20ASP.NET%20Development.md).  
+  
+ For more information about ASP.NET routing, see [ASP.NET Routing](../Topic/ASP.NET%20Routing.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,8 +75,25 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.RouteParameter" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You use this constructor method to initialize a <xref:System.Web.UI.WebControls.RouteParameter> object and set default values. The properties are initialized to the following values:  
+  
+-   <xref:System.Web.UI.WebControls.RouteParameter.RouteKey%2A> is set to an empty string ("").  
+  
+-   <xref:System.Web.UI.WebControls.Parameter.Name%2A> is set to an empty string.  
+  
+-   <xref:System.Web.UI.WebControls.Parameter.Type%2A> is set to <xref:System.TypeCode>.  
+  
+-   <xref:System.Web.UI.WebControls.Parameter.Direction%2A> is set to <xref:System.Data.ParameterDirection>.  
+  
+-   <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> is set to `null`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -48,9 +109,16 @@
         <Parameter Name="original" Type="System.Web.UI.WebControls.RouteParameter" />
       </Parameters>
       <Docs>
-        <param name="original">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="original">An object from which the current instance is initialized.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.RouteParameter" /> class by using the values of the specified instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is used to clone a <xref:System.Web.UI.WebControls.RouteParameter> instance.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -67,9 +135,9 @@
         <Parameter Name="routeKey" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="routeKey">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the parameter instance.</param>
+        <param name="routeKey">The name of the route segment that contains the value for the parameter.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.RouteParameter" /> class by using the specified name for the parameter and the specified key for route data.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,10 +156,10 @@
         <Parameter Name="routeKey" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="dbType">To be added.</param>
-        <param name="routeKey">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the parameter instance.</param>
+        <param name="dbType">The database type of the parameter instance.</param>
+        <param name="routeKey">The name of the route segment that contains the value for the parameter.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.RouteParameter" /> class by using the specified name and database type for the parameter, and by using the specified key for the route data.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,10 +178,10 @@
         <Parameter Name="routeKey" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="type">To be added.</param>
-        <param name="routeKey">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the parameter instance.</param>
+        <param name="type">The type that the parameter represents.</param>
+        <param name="routeKey">The name of the route segment that contains the value for the parameter.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.RouteParameter" /> class by using the specified name and type for the parameter, and by using the specified key for the route data.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,8 +199,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a duplicate of the current <see cref="T:System.Web.UI.WebControls.RouteParameter" /> instance.</summary>
+        <returns>An object that is a duplicate of the current one.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,10 +221,10 @@
         <Parameter Name="control" Type="System.Web.UI.Control" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="control">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">The current <see cref="T:System.Web.HttpContext" /> instance of the request.</param>
+        <param name="control">The control that the parameter is bound to.</param>
+        <summary>Evaluates the request URL and returns the value of the parameter.</summary>
+        <returns>The current value of the parameter.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -178,9 +246,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the route segment from which to retrieve the value for the route parameter.</summary>
+        <value>The name of the route segment that contains the value for the parameter.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you define a route pattern, you can include segments that serve as placeholders for the actual values in the Web request URL. You define placeholders by enclosing them in braces ( `{` and `}` ). For example, a route pattern in the format `blog/{action}/{entry}` contains placeholders named `action` and `entry`. To retrieve the value of a placeholder, set the <xref:System.Web.UI.WebControls.RouteParameter.RouteKey%2A> property to the name of the placeholder and call the <xref:System.Web.UI.WebControls.RouteParameter.Evaluate%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

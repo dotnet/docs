@@ -1,19 +1,33 @@
 ---
 uid: System.Linq.Expressions.Expression`1
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.Expressions.Expression`1.Compile(System.Runtime.CompilerServices.DebugInfoGenerator)
-internalonly: False
----
-
----
-uid: System.Linq.Expressions.Expression`1.Update(System.Linq.Expressions.Expression,System.Collections.Generic.IEnumerable{System.Linq.Expressions.ParameterExpression})
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.Expressions.Expression`1.Compile
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+
+---
+uid: System.Linq.Expressions.Expression`1.Update(System.Linq.Expressions.Expression,System.Collections.Generic.IEnumerable{System.Linq.Expressions.ParameterExpression})
+ms.author: "billchi"
+manager: "ghogen"
+---
+
+---
+uid: System.Linq.Expressions.Expression`1.Compile
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---

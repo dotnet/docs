@@ -1,1 +1,0 @@
-        Dim feed As SyndicationFeed = New SyndicationFeed("My Data Feed", "This is a sample feed", New Uri("http:'localhost/MyDataService"))

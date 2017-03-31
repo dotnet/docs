@@ -1,29 +1,34 @@
 ---
 uid: System.Configuration.SchemeSettingElementCollection
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SchemeSettingElementCollection.#ctor
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SchemeSettingElementCollection.Item(System.String)
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SchemeSettingElementCollection.CollectionType
-internalonly: False
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.SchemeSettingElementCollection.Item
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SchemeSettingElementCollection.IndexOf(System.Configuration.SchemeSettingElement)
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SchemeSettingElementCollection.Item(System.Int32)
-internalonly: False
+manager: "wpickett"
 ---

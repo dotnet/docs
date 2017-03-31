@@ -1,54 +1,80 @@
 ---
 uid: System.Windows.Media.Animation.ThicknessKeyFrame
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.ThicknessKeyFrame.#ctor(System.Windows.Thickness)
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.ThicknessKeyFrame.InterpolateValue(System.Windows.Thickness,System.Double)
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.ThicknessKeyFrame.KeyTimeProperty
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.ThicknessKeyFrame.ValueProperty
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.ThicknessKeyFrame.KeyTime
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.ThicknessKeyFrame.#ctor(System.Windows.Thickness,System.Windows.Media.Animation.KeyTime)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Animation.ThicknessKeyFrame.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.ThicknessKeyFrame.#ctor(System.Windows.Thickness)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.ThicknessKeyFrame.InterpolateValue(System.Windows.Thickness,System.Double)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.ThicknessKeyFrame.KeyTimeProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.ThicknessKeyFrame.ValueProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.ThicknessKeyFrame.KeyTime
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.ThicknessKeyFrame.#ctor(System.Windows.Thickness,System.Windows.Media.Animation.KeyTime)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.Animation.ThicknessKeyFrame.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.ThicknessKeyFrame.InterpolateValueCore(System.Windows.Thickness,System.Double)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.ThicknessKeyFrame.Value
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.ThicknessKeyFrame.System#Windows#Media#Animation#IKeyFrame#Value
-internalonly: False
+ms.author: "jimwalk"
+manager: "martinek"
 ---

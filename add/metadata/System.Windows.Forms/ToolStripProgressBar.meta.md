@@ -1,149 +1,205 @@
 ---
 uid: System.Windows.Forms.ToolStripProgressBar
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripProgressBar.Validating
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripProgressBar.PerformStep
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripProgressBar.KeyUp
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripProgressBar.OnSubscribeControlEvents(System.Windows.Forms.Control)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripProgressBar.TextChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripProgressBar.Value
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripProgressBar.OnUnsubscribeControlEvents(System.Windows.Forms.Control)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripProgressBar.Minimum
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripProgressBar.BackgroundImage
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripProgressBar.Validated
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripProgressBar.RightToLeftLayout
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripProgressBar.Style
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripProgressBar.Increment(System.Int32)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripProgressBar.Maximum
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripProgressBar.RightToLeftLayoutChanged
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStripProgressBar.ProgressBar
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStripProgressBar.MarqueeAnimationSpeed
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStripProgressBar.KeyDown
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStripProgressBar.Text
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStripProgressBar.BackgroundImageLayout
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStripProgressBar.DefaultMargin
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStripProgressBar.KeyPress
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStripProgressBar.DefaultSize
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStripProgressBar.#ctor(System.String)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStripProgressBar.Step
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStripProgressBar.OwnerChanged
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStripProgressBar.LocationChanged
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStripProgressBar.OnRightToLeftLayoutChanged(System.EventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripProgressBar.#ctor
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.ToolStripProgressBar.ProgressBar
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStripProgressBar.MarqueeAnimationSpeed
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStripProgressBar.KeyDown
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.ToolStripProgressBar.Text
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStripProgressBar.BackgroundImageLayout
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.ToolStripProgressBar.DefaultMargin
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStripProgressBar.KeyPress
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStripProgressBar.DefaultSize
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStripProgressBar.#ctor(System.String)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.ToolStripProgressBar.Step
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStripProgressBar.OwnerChanged
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.ToolStripProgressBar.LocationChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStripProgressBar.OnRightToLeftLayoutChanged(System.EventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStripProgressBar.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -1,19 +1,26 @@
 ---
 uid: System.Linq.IQueryable
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.IQueryable.Provider
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.IQueryable.Expression
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.IQueryable.ElementType
-internalonly: False
+ms.author: "billchi"
+manager: "ghogen"
 ---

@@ -1,19 +1,29 @@
 ---
 uid: System.IdentityModel.Services.ErrorEventArgs
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.ErrorEventArgs.#ctor(System.Exception)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.ErrorEventArgs.Exception
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.ErrorEventArgs.#ctor(System.Boolean,System.Exception)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Services.ErrorEventArgs.#ctor
+ms.author: "v-jibran"
+manager: "markgal"
 ---

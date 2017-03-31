@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Stores references to all globally available types and manages the stack. This class belongs to the compilation and run-time state category.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -42,9 +42,9 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="args">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="args">The values to populate the array with.</param>
+        <summary>Provides global access to the <see cref="M:Microsoft.JScript.ArrayConstructor.CreateInstance(System.Object[])" /> method.</summary>
+        <returns>A new instance of a JScript <see cref="T:Microsoft.JScript.ArrayObject" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,9 +64,9 @@
         <Parameter Name="args" Type="System.Object[]" />
       </Parameters>
       <Docs>
-        <param name="args">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="args">The values to populate the array with.</param>
+        <summary>Provides global access to the <see cref="M:Microsoft.JScript.ArrayConstructor.ConstructArray(System.Object[])" /> method.</summary>
+        <returns>A new instance of a JScript <see cref="T:Microsoft.JScript.ArrayObject" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,7 +88,7 @@
         <ReturnType>Microsoft.JScript.Vsa.VsaEngine</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores a global reference to the single scripting engine that is running in the current context.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

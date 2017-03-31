@@ -1,14 +1,20 @@
 ---
 uid: System.Windows.Automation.ClientSettings
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.ClientSettings.RegisterClientSideProviders(System.Windows.Automation.ClientSideProviderDescription[])
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.ClientSettings.RegisterClientSideProviderAssembly(System.Reflection.AssemblyName)
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---

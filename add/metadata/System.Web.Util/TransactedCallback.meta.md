@@ -1,4 +1,6 @@
 ---
 uid: System.Web.Util.TransactedCallback
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

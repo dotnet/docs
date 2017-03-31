@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Input.KeyEventHandler
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

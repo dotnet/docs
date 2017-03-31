@@ -31,8 +31,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the abstract class from which all implementations of cryptographic random number generators derive.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Cryptographic random number generators create cryptographically strong random values.  
+  
+ Application code does not directly use this class. This abstract class is provided as the base class for all cryptographic random number generators.  
+  
+ For an implementation of a cryptographic random number generator, use the derived class <xref:System.Security.Cryptography.RNGCryptoServiceProvider>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -57,8 +68,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of <see cref="T:System.Security.Cryptography.RandomNumberGenerator" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot create an instance of an abstract class. Application code will create a new instance of a derived class. For an implementation of a cryptographic random number generator, use the derived class <xref:System.Security.Cryptography.RNGCryptoServiceProvider>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -86,8 +104,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>When overridden in a derived class, creates an instance of the default implementation of a cryptographic random number generator that can be used to generate random data.</summary>
+        <returns>A new instance of a cryptographic random number generator.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,9 +130,9 @@
         <Parameter Name="rngName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="rngName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="rngName">The name of the random number generator implementation to use.</param>
+        <summary>When overridden in a derived class, creates an instance of the specified implementation of a cryptographic random number generator.</summary>
+        <returns>A new instance of a cryptographic random number generator.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,8 +161,20 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>When overridden in a derived class, releases all resources used by the current instance of the <see cref="T:System.Security.Cryptography.RandomNumberGenerator" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call `Dispose` when you are finished using the <xref:System.Security.Cryptography.RandomNumberGenerator>. The `Dispose` method leaves the <xref:System.Security.Cryptography.RandomNumberGenerator> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.Security.Cryptography.RandomNumberGenerator> so the garbage collector can reclaim the memory that the <xref:System.Security.Cryptography.RandomNumberGenerator> was occupying.  
+  
+ For more information, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+  
+> [!NOTE]
+>  Always call `Dispose` before you release your last reference to the <xref:System.Security.Cryptography.RandomNumberGenerator>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Security.Cryptography.RandomNumberGenerator> object's `Finalize` method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -174,9 +204,25 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>When overridden in a derived class, releases the unmanaged resources used by the <see cref="T:System.Security.Cryptography.RandomNumberGenerator" /> and optionally releases the managed resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the public `Dispose()` method and the `Finalize` method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. `Finalize` invokes `Dispose` with `disposing` set to `false`.  
+  
+ When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Security.Cryptography.RandomNumberGenerator> references. This method invokes the `Dispose()` method of each referenced object.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been previously disposed in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+  
+ For more information about <see langword="Dispose" /> and <see langword="Finalize" />, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md).</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="GetBytes">
@@ -206,9 +252,25 @@
         <Parameter Name="data" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="data">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="data">The array to fill with cryptographically strong random bytes.</param>
+        <summary>When overridden in a derived class, fills an array of bytes with a cryptographically strong random sequence of values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The length of the byte array determines how many random bytes are produced.  
+  
+   
+  
+## Examples  
+ The following example creates a random sequence 100 bytes long and stores it in `random`.  
+  
+ [!code-cpp[Classic RandomNumberGenerator.GetBytes Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic RandomNumberGenerator.GetBytes Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic RandomNumberGenerator.GetBytes Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic RandomNumberGenerator.GetBytes Example/CS/source.cs#1)]
+ [!code-vb[Classic RandomNumberGenerator.GetBytes Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic RandomNumberGenerator.GetBytes Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetBytes">
@@ -234,11 +296,17 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="data">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="data">The array to fill with cryptographically strong random bytes.</param>
+        <param name="offset">The index of the array to start the fill operation.</param>
+        <param name="count">The number of bytes to fill.</param>
+        <summary>Fills the specified byte array with a cryptographically strong random sequence of values.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="data" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="offset" /> or <paramref name="count" /> is less than 0</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="offset" /> plus <paramref name="count" /> exceeds the length of <paramref name="data" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetNonZeroBytes">
@@ -262,9 +330,25 @@
         <Parameter Name="data" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="data">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="data">The array to fill with cryptographically strong random nonzero bytes.</param>
+        <summary>When overridden in a derived class, fills an array of bytes with a cryptographically strong random sequence of nonzero values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The length of the byte array determines how many random bytes are produced.  
+  
+   
+  
+## Examples  
+ The following example creates a random sequence of 100 nonzero bytes and stores it in `random`.  
+  
+ [!code-cpp[Classic RandomNumberGenerator.GetNonZeroBytes Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic RandomNumberGenerator.GetNonZeroBytes Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic RandomNumberGenerator.GetNonZeroBytes Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic RandomNumberGenerator.GetNonZeroBytes Example/CS/source.cs#1)]
+ [!code-vb[Classic RandomNumberGenerator.GetNonZeroBytes Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic RandomNumberGenerator.GetNonZeroBytes Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

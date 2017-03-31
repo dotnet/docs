@@ -22,8 +22,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a safe handle to the Windows registry.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use platform invoke on the native `RegCreateKeyEx` Windows function to obtain a <xref:Microsoft.Win32.SafeHandles.SafeRegistryHandle> object, and then use it to create registry keys with the <xref:Microsoft.Win32.RegistryKey.FromHandle%2A?displayProperty=fullName> method.  
+  
+> [!IMPORTANT]
+>  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -50,10 +61,19 @@
         <Parameter Name="ownsHandle" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="preexistingHandle">To be added.</param>
-        <param name="ownsHandle">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="preexistingHandle">An object that represents the pre-existing handle to use.</param>
+        <param name="ownsHandle">
+          <see langword="true" /> to reliably release the handle during the finalization phase; <see langword="false" /> to prevent reliable release.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Win32.SafeHandles.SafeRegistryHandle" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Specifying `false` for `ownsHandle` is not recommended.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
     <Member MemberName="IsInvalid">

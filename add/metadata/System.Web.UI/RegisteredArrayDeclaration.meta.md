@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.RegisteredArrayDeclaration
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.RegisteredArrayDeclaration.Control
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.RegisteredArrayDeclaration.Name
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.RegisteredArrayDeclaration.Value
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

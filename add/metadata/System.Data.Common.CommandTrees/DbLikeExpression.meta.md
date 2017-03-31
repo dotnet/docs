@@ -1,29 +1,48 @@
 ---
 uid: System.Data.Common.CommandTrees.DbLikeExpression
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DbLikeExpression.Argument
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DbLikeExpression.Escape
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DbLikeExpression.Pattern
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DbLikeExpression.Accept(System.Data.Common.CommandTrees.DbExpressionVisitor)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DbLikeExpression.Accept``1(System.Data.Common.CommandTrees.DbExpressionVisitor{``0})
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Common.CommandTrees.DbLikeExpression.Accept
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Adds supplementary information to a bookmark that enables it to access a subset of its scope handles, excluding handles that are not required.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.ExclusiveHandle" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +51,8 @@
         <Parameter Name="context" Type="System.Activities.HandleInitializationContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="context">The environment in which the handle is created.</param>
+        <summary>Creates a list of default <see cref="T:System.Activities.BookmarkScopeHandle" /> objects from handle variables in the specified handle initialization context.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,10 +73,17 @@
         <Parameter Name="bookmarkScopeHandle" Type="System.Activities.BookmarkScopeHandle" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="bookmarkScopeHandle">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="context">The environment in which the handle is created.</param>
+        <param name="bookmarkScopeHandle">The token used to identify and access a group of bookmarks that operate under the same protocol in a workflow activity operation.</param>
+        <summary>Adds the specified bookmark scope handle to the <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> of <see cref="T:System.Activities.BookmarkScopeHandle" /> objects using the specified context.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this method is called after a bookmark has been created under this exclusive scope, a <xref:System.InvalidOperationException> will be thrown.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RegisteredBookmarkScopes">
@@ -92,8 +99,8 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Activities.BookmarkScopeHandle&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a new or existing <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> of <see cref="T:System.Activities.BookmarkScopeHandle" /> objects.</summary>
+        <value>A read-only collection of bookmark scope handles.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,9 +120,16 @@
         <Parameter Name="context" Type="System.Activities.NativeActivityContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="context">The environment in which the handle is created.</param>
+        <summary>Sets the registered bookmark scope handles back to the defaults.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this method is called when there are bookmarks registered with the exclusive handle, a <xref:System.InvalidOperationException> will be thrown.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

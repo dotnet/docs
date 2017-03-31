@@ -25,7 +25,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the file compression and decompression encoding format to be used to compress the data received in response to an <see cref="T:System.Net.HttpWebRequest" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -52,7 +52,7 @@
         <ReturnType>System.Net.DecompressionMethods</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use the deflate compression-decompression algorithm.</summary>
       </Docs>
     </Member>
     <Member MemberName="GZip">
@@ -78,7 +78,7 @@
         <ReturnType>System.Net.DecompressionMethods</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use the gZip compression-decompression algorithm.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -104,7 +104,7 @@
         <ReturnType>System.Net.DecompressionMethods</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Do not use compression.</summary>
       </Docs>
     </Member>
   </Members>

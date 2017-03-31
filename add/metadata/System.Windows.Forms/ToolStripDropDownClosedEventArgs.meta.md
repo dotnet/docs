@@ -1,14 +1,20 @@
 ---
 uid: System.Windows.Forms.ToolStripDropDownClosedEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripDropDownClosedEventArgs.#ctor(System.Windows.Forms.ToolStripDropDownCloseReason)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripDropDownClosedEventArgs.CloseReason
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

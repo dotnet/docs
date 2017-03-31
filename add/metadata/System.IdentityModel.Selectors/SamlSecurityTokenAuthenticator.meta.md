@@ -1,59 +1,104 @@
 ---
 uid: System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.ResolveIdentity
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.#ctor(System.Collections.Generic.IList{System.IdentityModel.Selectors.SecurityTokenAuthenticator})
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AudienceUriMode
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.ResolveClaimSet(System.IdentityModel.Tokens.SecurityToken)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AllowedAudienceUris
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.#ctor(System.Collections.Generic.IList{System.IdentityModel.Selectors.SecurityTokenAuthenticator},System.TimeSpan)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.ValidateTokenCore(System.IdentityModel.Tokens.SecurityToken)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.CanValidateTokenCore(System.IdentityModel.Tokens.SecurityToken)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.ResolveClaimSet
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.ResolveIdentity(System.IdentityModel.Tokens.SecurityToken)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.ResolveIdentity(System.IdentityModel.Tokens.SecurityKeyIdentifier)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.ResolveClaimSet(System.IdentityModel.Tokens.SecurityKeyIdentifier)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.ValidateAudienceRestriction(System.IdentityModel.Tokens.SamlAudienceRestrictionCondition)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

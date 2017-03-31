@@ -1,1 +1,0 @@
-        [PermissionSetAttribute(SecurityAction.PermitOnly, Name = "LocalIntranet")]

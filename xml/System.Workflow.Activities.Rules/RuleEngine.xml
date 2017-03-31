@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Used to perform <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> evaluation.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,9 +29,9 @@
         <Parameter Name="objectType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="ruleSet">To be added.</param>
-        <param name="objectType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="ruleSet">Specifies the <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> to evaluate.</param>
+        <param name="objectType">Specifies the <see cref="T:System.Type" /> of the <see cref="T:System.Workflow.Activities.Rules.Rule" /> used to create a new instance of <see cref="M:System.Workflow.Activities.Rules.RuleValidation.#ctor(System.Type,System.Workflow.ComponentModel.Compiler.ITypeProvider)" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleEngine" /> class with a <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> to evaluate and a rule type to create a new instance of <see cref="M:System.Workflow.Activities.Rules.RuleValidation.#ctor(System.Type,System.Workflow.ComponentModel.Compiler.ITypeProvider)" /> to use for rule expression validation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,9 +49,9 @@
         <Parameter Name="validation" Type="System.Workflow.Activities.Rules.RuleValidation" />
       </Parameters>
       <Docs>
-        <param name="ruleSet">To be added.</param>
-        <param name="validation">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="ruleSet">Specifies the <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> to evaluate.</param>
+        <param name="validation">Specifies the <see cref="T:System.Workflow.Activities.Rules.RuleValidation" /> used to validate rule expressions.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleEngine" /> class with a <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> to evaluate using <see cref="T:System.Workflow.Activities.Rules.RuleValidation" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,8 +76,8 @@
         <Parameter Name="thisObject" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisObject">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="thisObject">The current object to be executed.</param>
+        <summary>Executes the current object using <see cref="M:System.Workflow.Activities.Rules.RuleExecution.#ctor(System.Workflow.Activities.Rules.RuleValidation,System.Object)" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,9 +103,9 @@
         <Parameter Name="executionContext" Type="System.Workflow.ComponentModel.ActivityExecutionContext" />
       </Parameters>
       <Docs>
-        <param name="thisObject">To be added.</param>
-        <param name="executionContext">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="thisObject">The current object to be executed.</param>
+        <param name="executionContext">The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> for the current activity.</param>
+        <summary>Executes the current <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> against the object instance (which, in this case, is likely an <see cref="T:System.Workflow.ComponentModel.Activity" />).</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

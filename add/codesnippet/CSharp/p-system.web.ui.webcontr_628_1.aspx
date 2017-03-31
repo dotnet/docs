@@ -1,1 +1,0 @@
-        md.CC = sourceCC.Text;

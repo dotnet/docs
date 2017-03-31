@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the removal of a <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> from a workflow during dynamic update. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class can be used by a tracking service to determine which <xref:System.Workflow.Activities.Rules.RuleCondition>s have been removed during a dynamic update. An instance of this object is generated for every <xref:System.Workflow.Activities.Rules.RuleCondition> that is removed (that is, that existed in the workflow prior to this dynamic update, but is gone afterward).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RemovedConditionAction" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,9 +50,11 @@
         <Parameter Name="removedConditionDefinition" Type="System.Workflow.Activities.Rules.RuleCondition" />
       </Parameters>
       <Docs>
-        <param name="removedConditionDefinition">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="removedConditionDefinition">The condition removed from the workflow.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RemovedConditionAction" /> class by using the definition of the removed condition.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="addedConditionDefinition" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="ApplyTo">
@@ -88,9 +97,10 @@
         <ReturnType>System.Workflow.Activities.Rules.RuleCondition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> to remove from the workflow.</summary>
+        <value>The <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> to remove from the workflow.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <see cref="P:System.Workflow.Activities.Rules.RemovedConditionAction.ConditionDefinition" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="ConditionName">
@@ -106,8 +116,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a string that contains the name of the <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> to remove from the workflow.</summary>
+        <value>The name of the <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> to remove from the workflow.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

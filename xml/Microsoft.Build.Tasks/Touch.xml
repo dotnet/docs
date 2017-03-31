@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Implements the <c>Touch</c> task. Use the <c>Touch</c> element in your project file to create and execute this task. For usage and parameter information, see [Touch Task](../Topic/Touch%20Task.md).</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Touch" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a Boolean value that specifies whether to create any files that do not already exist.</summary>
+        <value>
+          <see langword="true" /> if the <c>Touch</c> task creates any files that do not already exist; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,8 +63,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Executes the <c>Touch</c> task.</summary>
+        <returns>
+          <see langword="true" /> if task execution succeeded; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,8 +87,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the files to touch.</summary>
+        <value>The files to touch.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,8 +105,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a Boolean value that specifies whether to force a file touch even if the files are read-only.</summary>
+        <value>
+          <see langword="true" /> if the <c>Touch</c> task forces a file touch even if the files are read-only; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,8 +124,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a time other than the current time. The format must be a format that is acceptable to the <see cref="M:System.DateTime.Parse(System.String)" /> method.</summary>
+        <value>A time other than the current time.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,8 +147,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the items that were successfully touched.</summary>
+        <value>The items that were successfully touched.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

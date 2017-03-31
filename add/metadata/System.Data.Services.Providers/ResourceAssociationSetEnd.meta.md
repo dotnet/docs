@@ -1,24 +1,34 @@
 ---
 uid: System.Data.Services.Providers.ResourceAssociationSetEnd
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Services.Providers.ResourceAssociationSetEnd.ResourceType
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Services.Providers.ResourceAssociationSetEnd.ResourceSet
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Services.Providers.ResourceAssociationSetEnd.#ctor(System.Data.Services.Providers.ResourceSet,System.Data.Services.Providers.ResourceType,System.Data.Services.Providers.ResourceProperty)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Services.Providers.ResourceAssociationSetEnd.ResourceProperty
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

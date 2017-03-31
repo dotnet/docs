@@ -1,199 +1,239 @@
 ---
 uid: System.Web.WebSockets.AspNetWebSocketContext
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.WebSockets.AspNetWebSocketContext.WebSocket
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.WebSockets.AspNetWebSocketContext.IsLocal
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.WebSockets.AspNetWebSocketContext.Timestamp
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.WebSockets.AspNetWebSocketContext.Items
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.WebSockets.AspNetWebSocketContext.QueryString
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.WebSockets.AspNetWebSocketContext.ApplicationPath
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.WebSockets.AspNetWebSocketContext.RawUrl
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.WebSockets.AspNetWebSocketContext.Server
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.WebSockets.AspNetWebSocketContext.FilePath
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.WebSockets.AspNetWebSocketContext.IsDebuggingEnabled
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.WebSockets.AspNetWebSocketContext.IsSecureConnection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.WebSockets.AspNetWebSocketContext.Cache
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.WebSockets.AspNetWebSocketContext.IsClientConnected
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.WebSockets.AspNetWebSocketContext.UrlReferrer
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.WebSockets.AspNetWebSocketContext.UserHostAddress
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.WebSockets.AspNetWebSocketContext.Origin
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.WebSockets.AspNetWebSocketContext.Profile
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.WebSockets.AspNetWebSocketContext.UserAgent
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.WebSockets.AspNetWebSocketContext.SecWebSocketVersion
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.WebSockets.AspNetWebSocketContext.User
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.WebSockets.AspNetWebSocketContext.Application
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.WebSockets.AspNetWebSocketContext.SecWebSocketKey
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.WebSockets.AspNetWebSocketContext.PathInfo
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.WebSockets.AspNetWebSocketContext.Cookies
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.WebSockets.AspNetWebSocketContext.AnonymousID
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.WebSockets.AspNetWebSocketContext.IsAuthenticated
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.WebSockets.AspNetWebSocketContext.UserHostName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.WebSockets.AspNetWebSocketContext.ConnectionCount
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.WebSockets.AspNetWebSocketContext.ClientCertificate
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.WebSockets.AspNetWebSocketContext.SecWebSocketProtocols
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.WebSockets.AspNetWebSocketContext.Headers
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.WebSockets.AspNetWebSocketContext.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.WebSockets.AspNetWebSocketContext.Path
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.WebSockets.AspNetWebSocketContext.CookieCollection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.WebSockets.AspNetWebSocketContext.ServerVariables
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.WebSockets.AspNetWebSocketContext.RequestUri
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.WebSockets.AspNetWebSocketContext.Unvalidated
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.WebSockets.AspNetWebSocketContext.UserLanguages
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.WebSockets.AspNetWebSocketContext.LogonUserIdentity
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

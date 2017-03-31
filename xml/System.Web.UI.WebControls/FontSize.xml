@@ -10,8 +10,22 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the font sizes defined by HTML 4.0.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.FontSize> enumeration represents the font sizes defined by HTML 4.0. The font size can be an absolute or relative size.  
+  
+ An absolute font size represents a predefined font size determined by the browser. The possible values for an absolute font size are XXSmall, XSmall, Small, Medium, Large, XLarge, and XXLarge.  
+  
+ A relative font size represents a font size one size larger or smaller than a parent element's font size. The possible values for a relative font size are Smaller and Larger.  
+  
+> [!NOTE]
+>  Some browers do not recognize Smaller and Larger font sizes. Check with your browser for compatibility.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AsUnit">
@@ -27,7 +41,7 @@
         <ReturnType>System.Web.UI.WebControls.FontSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The font size is specified by a point value.</summary>
       </Docs>
     </Member>
     <Member MemberName="Large">
@@ -43,7 +57,7 @@
         <ReturnType>System.Web.UI.WebControls.FontSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The font size is two sizes larger than the base font size.</summary>
       </Docs>
     </Member>
     <Member MemberName="Larger">
@@ -59,7 +73,7 @@
         <ReturnType>System.Web.UI.WebControls.FontSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The font size is one size larger than the parent element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Medium">
@@ -75,7 +89,7 @@
         <ReturnType>System.Web.UI.WebControls.FontSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The font size is one size larger than the default font size.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotSet">
@@ -91,7 +105,7 @@
         <ReturnType>System.Web.UI.WebControls.FontSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The font size is not set.</summary>
       </Docs>
     </Member>
     <Member MemberName="Small">
@@ -107,7 +121,7 @@
         <ReturnType>System.Web.UI.WebControls.FontSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The base font size determined by the browser.</summary>
       </Docs>
     </Member>
     <Member MemberName="Smaller">
@@ -123,7 +137,7 @@
         <ReturnType>System.Web.UI.WebControls.FontSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The font size is one size smaller than the parent element.</summary>
       </Docs>
     </Member>
     <Member MemberName="XLarge">
@@ -139,7 +153,7 @@
         <ReturnType>System.Web.UI.WebControls.FontSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The font size is three sizes larger than the base font size.</summary>
       </Docs>
     </Member>
     <Member MemberName="XSmall">
@@ -155,7 +169,7 @@
         <ReturnType>System.Web.UI.WebControls.FontSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The font size is one size smaller than the base font size.</summary>
       </Docs>
     </Member>
     <Member MemberName="XXLarge">
@@ -171,7 +185,7 @@
         <ReturnType>System.Web.UI.WebControls.FontSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The font size is four sizes larger than the base font size.</summary>
       </Docs>
     </Member>
     <Member MemberName="XXSmall">
@@ -187,7 +201,7 @@
         <ReturnType>System.Web.UI.WebControls.FontSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The font size is two sizes smaller than the base font size.</summary>
       </Docs>
     </Member>
   </Members>

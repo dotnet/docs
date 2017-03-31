@@ -1,4 +1,4 @@
 ---
 uid: Microsoft.JScript.IObjectCompletionInfo
-internalonly: False
+ms.author: "mikejo"
 ---

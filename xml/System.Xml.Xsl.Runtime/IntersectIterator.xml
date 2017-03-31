@@ -20,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the position of the iterator to the next node in the intersection of two sets of nodes.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -44,8 +44,8 @@
         <Parameter Name="runtime" Type="System.Xml.Xsl.Runtime.XmlQueryRuntime" />
       </Parameters>
       <Docs>
-        <param name="runtime">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="runtime">The <see cref="T:System.Xml.Xsl.Runtime.XmlQueryRuntime" /> object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Xsl.Runtime.IntersectIterator" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,9 +66,16 @@
         <ReturnType>System.Xml.XPath.XPathNavigator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the current result navigator.</summary>
+        <value>The current result navigator.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.Xsl.Runtime.IntersectIterator.Current%2A> property gets modified when the <xref:System.Xml.Xsl.Runtime.IntersectIterator.MoveNext%2A> method sets the <xref:System.Xml.Xsl.Runtime.IntersectIterator.Current%2A> property to the next node and returns <xref:System.Xml.Xsl.Runtime.SetIteratorResult>; otherwise, the <xref:System.Xml.Xsl.Runtime.IntersectIterator.Current%2A> property remains unchanged.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveNext">
@@ -91,10 +98,25 @@
         <Parameter Name="nestedNavigator" Type="System.Xml.XPath.XPathNavigator" />
       </Parameters>
       <Docs>
-        <param name="nestedNavigator">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="nestedNavigator">The <see cref="T:System.Xml.XPath.XPathNavigator" /> object.</param>
+        <summary>Positions the iterator to the next node in the union.</summary>
+        <returns>The <see cref="T:System.Xml.Xsl.Runtime.SetIteratorResult" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Returns <xref:System.Xml.Xsl.Runtime.SetIteratorResult> if there are no more nodes.  
+  
+ Returns <xref:System.Xml.Xsl.Runtime.SetIteratorResult> if this function initializes the right nested iterator.  
+  
+ Returns <xref:System.Xml.Xsl.Runtime.SetIteratorResult> if the next node needs to be fetched from the left-nested iterator.  
+  
+ Returns <xref:System.Xml.Xsl.Runtime.SetIteratorResult> if the next node needs to be fetched from the right-nested iterator.  
+  
+ Returns <xref:System.Xml.Xsl.Runtime.SetIteratorResult> if the iterator's <xref:System.Xml.Xsl.Runtime.IntersectIterator.Current%2A> property is set to the next node in the iteration.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

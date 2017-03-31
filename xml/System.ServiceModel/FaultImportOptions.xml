@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Indicates whether to use the <see cref="T:System.Xml.Serialization.XmlSerializer" /> for reading and writing faults.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.FaultImportOptions" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates that the <see cref="T:System.Xml.Serialization.XmlSerializer" /> should be used for reading and writing faults.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Xml.Serialization.XmlSerializer" /> should be used for reading and writing faults; <see langword="false" /> if the <see cref="T:System.Runtime.Serialization.DataContractSerializer" /> should be used. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Wraps an unevaluated propertygroup under a target. Immutable.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,8 +38,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the Condition attribute of this property group.</summary>
+        <value>Returns the Condition attribute value. Returns an empty string if the attribute is not present.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,8 +56,8 @@
         <ReturnType>Microsoft.Build.Construction.ElementLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the location of the Condition attribute.</summary>
+        <value>Returns location of the Condition attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,8 +74,8 @@
         <ReturnType>Microsoft.Build.Construction.ElementLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the location of the element itself.</summary>
+        <value>Returns location of the element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,8 +97,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;Microsoft.Build.Execution.ProjectPropertyGroupTaskPropertyInstance&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets all child properties in this property group.</summary>
+        <value>Returns all child properties in this property group.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

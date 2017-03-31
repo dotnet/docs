@@ -16,8 +16,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates the possible lease states of a lifetime lease.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Remoting.Lifetime.ILease.CurrentState%2A> property returns the lease status for a lease.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Active">
@@ -34,7 +41,7 @@
         <ReturnType>System.Runtime.Remoting.Lifetime.LeaseState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The lease is active and has not expired.</summary>
       </Docs>
     </Member>
     <Member MemberName="Expired">
@@ -51,7 +58,7 @@
         <ReturnType>System.Runtime.Remoting.Lifetime.LeaseState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The lease has expired and cannot be renewed.</summary>
       </Docs>
     </Member>
     <Member MemberName="Initial">
@@ -68,7 +75,7 @@
         <ReturnType>System.Runtime.Remoting.Lifetime.LeaseState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The lease has been created, but is not yet active.</summary>
       </Docs>
     </Member>
     <Member MemberName="Null">
@@ -85,7 +92,7 @@
         <ReturnType>System.Runtime.Remoting.Lifetime.LeaseState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The lease is not initialized.</summary>
       </Docs>
     </Member>
     <Member MemberName="Renewing">
@@ -102,7 +109,7 @@
         <ReturnType>System.Runtime.Remoting.Lifetime.LeaseState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The lease has expired and is seeking sponsorship.</summary>
       </Docs>
     </Member>
   </Members>

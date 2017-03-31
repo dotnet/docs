@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a configuration element that defines a filter table entry element. This element contains the association between filters, endpoints and backup endpoints and is used to determine which filter is used to route the message.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Routing.Configuration.FilterTableEntryElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +48,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that specifies a reference to a backup endpoints element.</summary>
+        <value>A reference to a backup endpoints element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,8 +71,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that specifies a reference to a client endpoint that sends messages if the associated message filter matches the message.</summary>
+        <value>A key to a client endpoint.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,8 +94,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that specifies a reference to the filter element.</summary>
+        <value>A key to the filter element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,9 +117,18 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that specifies the priority of this entry.</summary>
+        <value>The priority of this entry. The default value is 0.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The entries in the filter table are evaluated based on priority, with 0 being the lowest priority. All entries for a specific priority are evaluated simultaneously, if no matching entry is found for the current priority, the next priority level is evaluated.  
+  
+ This value is optional.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

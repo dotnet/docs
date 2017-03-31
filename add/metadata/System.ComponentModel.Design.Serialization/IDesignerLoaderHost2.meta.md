@@ -1,14 +1,20 @@
 ---
 uid: System.ComponentModel.Design.Serialization.IDesignerLoaderHost2
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.Serialization.IDesignerLoaderHost2.IgnoreErrorsDuringReload
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.Serialization.IDesignerLoaderHost2.CanReloadWithErrors
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

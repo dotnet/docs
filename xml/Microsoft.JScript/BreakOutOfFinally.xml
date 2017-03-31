@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the exception state when code execution breaks out of a <see langword="finally" /> block.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <Parameter Name="target" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="target">The target of the exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.BreakOutOfFinally" /> class, using the specified target.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <Parameter Name="m" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="m">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="m">The message that describes the error.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.BreakOutOfFinally" /> class, using the specified error message.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,9 +65,9 @@
         <Parameter Name="e" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="m">To be added.</param>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="m">The message that describes the error.</param>
+        <param name="e">The exception that is the cause of the current exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.BreakOutOfFinally" /> class, using the specified error message and a reference to the inner exception that is the cause of this exception.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,9 +93,9 @@
         <Parameter Name="c" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="s">To be added.</param>
-        <param name="c">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="s">The serialized object data about the exception that is being thrown.</param>
+        <param name="c">Contextual information about the source or destination.</param>
+        <summary>Stores information about the exception in the <see cref="T:System.Runtime.Serialization.SerializationInfo" />. The stored information includes the <see cref="F:Microsoft.JScript.ContinueOutOfFinally.target" /> value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,7 +112,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores the target of the exception.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

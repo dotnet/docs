@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents an image annotation.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataVisualization.Charting.ImageAnnotation" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,9 +48,16 @@
         <ReturnType>System.Drawing.ContentAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the alignment of the annotation image.</summary>
+        <value>A <see cref="T:System.Drawing.ContentAlignment" /> value that represents the alignment of the annotation image.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is used to align a non-scaled image.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AnnotationType">
@@ -80,9 +87,18 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the annotation type name.</summary>
+        <value>The annotation type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This abstract property is used to get the name of each annotation type such as <xref:System.Web.UI.DataVisualization.Charting.LineAnnotation>, <xref:System.Web.UI.DataVisualization.Charting.RectangleAnnotation>, <xref:System.Web.UI.DataVisualization.Charting.EllipseAnnotation>, and so forth.  
+  
+ This property is for internal use.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BackColor">
@@ -115,9 +131,16 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not applicable to the image annotation type.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not applicable to the image annotation type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BackGradientStyle">
@@ -147,9 +170,16 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.GradientStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not applicable to the image annotation type.</summary>
+        <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.GradientStyle" /> enumeration value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not applicable to the image annotation type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BackHatchStyle">
@@ -179,9 +209,16 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not applicable to the image annotation type.</summary>
+        <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.ChartHatchStyle" /> enumeration value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not applicable to the image annotation type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BackSecondaryColor">
@@ -214,9 +251,16 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not applicable to the image annotation type.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not applicable to the image annotation type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -240,9 +284,16 @@
         <ReturnType>System.Drawing.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not applicable to the image annotation type.</summary>
+        <value>A <see cref="T:System.Drawing.Font" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not applicable to the image annotation type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -272,9 +323,16 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not applicable to the image annotation type.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not applicable to the image annotation type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Image">
@@ -301,9 +359,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the annotation image.</summary>
+        <value>A <see langword="string" /> value that represents the name of the annotation image.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The image name can be a file name, a URL or a named image—that is, its name component—from the <xref:System.Web.UI.DataVisualization.Charting.NamedImagesCollection> class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ImageTransparentColor">
@@ -333,8 +398,8 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a color that will be replaced with a transparent color when the image is drawn.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value that will be replaced with a transparent color when he image is drawn.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -359,8 +424,8 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartImageWrapMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the drawing mode of the image.</summary>
+        <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.ChartImageWrapMode" /> enumeration value that defines the drawing mode of the image.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -391,9 +456,16 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not applicable to the image annotation type.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not applicable to the image annotation type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LineDashStyle">
@@ -417,9 +489,16 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartDashStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not applicable to the image annotation type.</summary>
+        <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.ChartDashStyle" /> enumeration value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not applicable to the image annotation type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LineWidth">
@@ -443,9 +522,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not applicable to the image annotation type.</summary>
+        <value>An <see langword="integer" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not applicable to the image annotation type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TextStyle">
@@ -469,8 +555,8 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.TextStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the text style of the annotation.</summary>
+        <value>A <see cref="P:System.Web.UI.DataVisualization.Charting.ImageAnnotation.TextStyle" /> enumeration value that represents the style used to draw the annotation text.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

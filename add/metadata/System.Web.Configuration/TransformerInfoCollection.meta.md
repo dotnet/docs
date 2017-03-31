@@ -1,34 +1,45 @@
 ---
 uid: System.Web.Configuration.TransformerInfoCollection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.TransformerInfoCollection.Item(System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.TransformerInfoCollection.Remove(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.TransformerInfoCollection.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Configuration.TransformerInfoCollection.Item
 ---
 
 ---
 uid: System.Web.Configuration.TransformerInfoCollection.RemoveAt(System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.TransformerInfoCollection.Add(System.Web.Configuration.TransformerInfo)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.TransformerInfoCollection.Clear
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

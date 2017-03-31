@@ -1,9 +1,13 @@
 ---
 uid: System.ServiceModel.Security.BasicSecurityProfileVersion
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.BasicSecurityProfileVersion.BasicSecurityProfile10
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

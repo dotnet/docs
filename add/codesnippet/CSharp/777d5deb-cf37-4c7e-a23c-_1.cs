@@ -1,1 +1,0 @@
-            msgVersion = MessageVersion.CreateVersion(envVersion, addrVersion);

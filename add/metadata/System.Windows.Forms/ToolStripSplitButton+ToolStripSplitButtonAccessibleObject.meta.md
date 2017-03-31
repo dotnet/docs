@@ -1,14 +1,18 @@
 ---
 uid: System.Windows.Forms.ToolStripSplitButton.ToolStripSplitButtonAccessibleObject
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripSplitButton.ToolStripSplitButtonAccessibleObject.#ctor(System.Windows.Forms.ToolStripSplitButton)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripSplitButton.ToolStripSplitButtonAccessibleObject.DoDefaultAction
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

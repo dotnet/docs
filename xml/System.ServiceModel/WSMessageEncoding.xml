@@ -11,8 +11,21 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies whether Message Transmission Optimization Mechanism (MTOM) or text is used to encode SOAP messages.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Used by interoperable bindings, such as <xref:System.ServiceModel.WSHttpBinding> and <xref:System.ServiceModel.WSDualHttpBinding>, and <xref:System.ServiceModel.BasicHttpBinding> to specify the SOAP message encoding that may be used.  
+  
+ The Message-Transmission Optimization Mechanism (MTOM) is a method for efficiently encoding binary XML elements within the context of a SOAP envelope.  
+  
+ Text encodings for messages, such as UTF8, are used for interoperability purposes.  
+  
+ Note that the standard bindings designed for interoperability with Web services do not use binary encodings. For more information about the standard bindings, see [System-Provided Bindings](../Topic/System-Provided%20Bindings.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Mtom">
@@ -29,7 +42,7 @@
         <ReturnType>System.ServiceModel.WSMessageEncoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>MTOM is used to encode the SOAP messages.</summary>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -46,7 +59,7 @@
         <ReturnType>System.ServiceModel.WSMessageEncoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Text is used to encode the SOAP messages.</summary>
       </Docs>
     </Member>
   </Members>

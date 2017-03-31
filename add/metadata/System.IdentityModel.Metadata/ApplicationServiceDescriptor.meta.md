@@ -1,19 +1,23 @@
 ---
 uid: System.IdentityModel.Metadata.ApplicationServiceDescriptor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.ApplicationServiceDescriptor.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.ApplicationServiceDescriptor.PassiveRequestorEndpoints
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.ApplicationServiceDescriptor.Endpoints
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

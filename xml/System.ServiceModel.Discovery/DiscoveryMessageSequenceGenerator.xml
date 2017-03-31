@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>A helper class that creates <see cref="T:System.ServiceModel.Discovery.DiscoveryMessageSequence" /> instances.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Once created, the <xref:System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator> creates new <xref:System.ServiceModel.Discovery.DiscoveryMessageSequence> instances,  sets the <xref:System.ServiceModel.Discovery.DiscoveryMessageSequence.InstanceId%2A>, <xref:System.ServiceModel.Discovery.DiscoveryMessageSequence.SequenceId%2A> and increments the <xref:System.ServiceModel.Discovery.DiscoveryMessageSequence.MessageNumber%2A> for each successive <xref:System.ServiceModel.Discovery.DiscoveryMessageSequence> instance created.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,9 +51,9 @@
         <Parameter Name="sequenceId" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="sequenceId">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceId">The instance ID.</param>
+        <param name="sequenceId">The sequence ID.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator" /> class with the specified instance ID and sequence ID.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +71,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates the next <see cref="T:System.ServiceModel.Discovery.DiscoveryMessageSequence" /> object.</summary>
+        <returns>The next <see cref="T:System.ServiceModel.Discovery.DiscoveryMessageSequence" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

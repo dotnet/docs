@@ -1,64 +1,83 @@
 ---
 uid: System.Web.UI.Design.WebControls.ListViewDesigner
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.ListViewDesigner.UsePreviewControl
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.ListViewDesigner.OnSchemaRefreshed
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.WebControls.ListViewDesigner.GetDesignTimeHtml(System.Web.UI.Design.DesignerRegionCollection)
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.WebControls.ListViewDesigner.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.WebControls.ListViewDesigner.#ctor
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.WebControls.ListViewDesigner.ActionLists
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.WebControls.ListViewDesigner.SetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion,System.String)
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.WebControls.ListViewDesigner.GetEmptyDesignTimeHtml
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.WebControls.ListViewDesigner.GetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion)
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.WebControls.ListViewDesigner.Initialize(System.ComponentModel.IComponent)
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.WebControls.ListViewDesigner.SampleRowCount
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.ListViewDesigner.GetDesignTimeHtml
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.ListViewDesigner.GetDesignTimeHtml(System.Web.UI.Design.DesignerRegionCollection)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.ListViewDesigner.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.ListViewDesigner.#ctor
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.ListViewDesigner.ActionLists
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.ListViewDesigner.SetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion,System.String)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.ListViewDesigner.GetEmptyDesignTimeHtml
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.ListViewDesigner.GetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.ListViewDesigner.Initialize(System.ComponentModel.IComponent)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.ListViewDesigner.SampleRowCount
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.ListViewDesigner.GetDesignTimeHtml
+ms.author: "riande"
+manager: "wpickett"
 ---

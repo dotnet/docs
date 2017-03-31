@@ -1,14 +1,19 @@
 ---
 uid: System.Windows.MediaScriptCommandRoutedEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.MediaScriptCommandRoutedEventArgs.ParameterType
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.MediaScriptCommandRoutedEventArgs.ParameterValue
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

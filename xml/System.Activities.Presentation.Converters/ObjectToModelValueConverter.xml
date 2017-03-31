@@ -15,8 +15,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Converts objects to model values.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used in `PropertyGrid` scenarios to convert an object into a `ModelItem`. It converts from a `ModelPropertyEntry` to the `ModelItem` that owns the property.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +37,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Presentation.Converters.ObjectToModelValueConverter" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,13 +60,20 @@
         <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
-        <param name="values">To be added.</param>
-        <param name="targetType">To be added.</param>
-        <param name="parameter">To be added.</param>
-        <param name="culture">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="values">The <see langword="ModelPropertyEntry" /> to convert.</param>
+        <param name="targetType">Not used in this implementation.</param>
+        <param name="parameter">Not used in this implementation.</param>
+        <param name="culture">Not used in this implementation.</param>
+        <summary>Converts the specified <see langword="ModelPropertyEntry" /> to a <see langword="ModelItem" /> that contains the original entry.</summary>
+        <returns>Returns <see cref="T:System.Object" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is a two-way binding with the `PropertyValue` object.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertBack">
@@ -81,13 +95,20 @@
         <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="targetTypes">To be added.</param>
-        <param name="parameter">To be added.</param>
-        <param name="culture">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The <see langword="ModelItem" /> to convert.</param>
+        <param name="targetTypes">Not used in this implementation.</param>
+        <param name="parameter">Not used in this implementation.</param>
+        <param name="culture">Not used in this implementation.</param>
+        <summary>Converts the specified <see langword="ModelItem" /> to a <see langword="ModelPropertyEntry" />.</summary>
+        <returns>Returns a <see cref="T:System.Object" /> that contains the converted <see langword="ModelPropertyEntry" />..</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is a one-way binding with the `ModelPropertyEntry`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

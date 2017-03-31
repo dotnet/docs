@@ -1,14 +1,20 @@
 ---
 uid: System.Diagnostics.Design.ProcessThreadDesigner
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.Design.ProcessThreadDesigner.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.Design.ProcessThreadDesigner.PreFilterProperties(System.Collections.IDictionary)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

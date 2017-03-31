@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Documents.PaginationProgressEventHandler
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

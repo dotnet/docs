@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a design-time view of hierarchical data for the <see cref="T:System.Web.SiteMap" /> class.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,9 +29,9 @@
         <Parameter Name="viewPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="owner">To be added.</param>
-        <param name="viewPath">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="owner">The <see cref="T:System.Web.UI.Design.WebControls.SiteMapDataSourceDesigner" /> that is the designer for the associated <see cref="T:System.Web.UI.WebControls.SiteMapDataSource" />.</param>
+        <param name="viewPath">An XPath query that defines the block of data to use for the view.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.SiteMapDesignerHierarchicalDataSourceView" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,9 +51,10 @@
         <Parameter Name="isSampleData" Type="System.Boolean&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="isSampleData">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="isSampleData">
+          <see langword="true" /> to indicate that the returned data is sample data; <see langword="false" /> to indicate that the returned data is real data.</param>
+        <summary>Generates design-time data that matches the schema of the associated data source control and returns a value indicating whether the data is sample data or real data.</summary>
+        <returns>Design-time data that matches the schema of the associated data source control.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,8 +71,8 @@
         <ReturnType>System.Web.UI.Design.IDataSourceSchema</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a schema that describes the data source view that is represented by this view object.</summary>
+        <value>A schema that describes the data source view that is represented by this view object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

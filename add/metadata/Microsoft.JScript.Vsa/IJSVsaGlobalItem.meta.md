@@ -1,14 +1,20 @@
 ---
 uid: Microsoft.JScript.Vsa.IJSVsaGlobalItem
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.JScript.Vsa.IJSVsaGlobalItem.TypeString
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.JScript.Vsa.IJSVsaGlobalItem.ExposeMembers
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

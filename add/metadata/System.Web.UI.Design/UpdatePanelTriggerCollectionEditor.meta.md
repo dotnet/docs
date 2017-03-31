@@ -1,29 +1,45 @@
 ---
 uid: System.Web.UI.Design.UpdatePanelTriggerCollectionEditor
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.UpdatePanelTriggerCollectionEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.UpdatePanelTriggerCollectionEditor.EditValue
 ---
 
 ---
 uid: System.Web.UI.Design.UpdatePanelTriggerCollectionEditor.CanSelectMultipleInstances
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.UpdatePanelTriggerCollectionEditor.CreateNewItemTypes
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.UpdatePanelTriggerCollectionEditor.#ctor(System.Type)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.UpdatePanelTriggerCollectionEditor.CreateCollectionItemType
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

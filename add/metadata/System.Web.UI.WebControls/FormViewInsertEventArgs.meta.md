@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.WebControls.FormViewInsertEventArgs
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.FormViewInsertEventArgs.#ctor(System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.FormViewInsertEventArgs.CommandArgument
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.FormViewInsertEventArgs.Values
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

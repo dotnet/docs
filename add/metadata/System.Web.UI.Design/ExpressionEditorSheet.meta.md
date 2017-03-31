@@ -1,24 +1,29 @@
 ---
 uid: System.Web.UI.Design.ExpressionEditorSheet
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ExpressionEditorSheet.IsValid
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ExpressionEditorSheet.GetExpression
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ExpressionEditorSheet.ServiceProvider
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ExpressionEditorSheet.#ctor(System.IServiceProvider)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

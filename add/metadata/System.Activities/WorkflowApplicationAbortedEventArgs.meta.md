@@ -1,9 +1,13 @@
 ---
 uid: System.Activities.WorkflowApplicationAbortedEventArgs
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.WorkflowApplicationAbortedEventArgs.Reason
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

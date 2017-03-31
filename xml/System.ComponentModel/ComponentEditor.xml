@@ -16,8 +16,27 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides the base class for a custom component editor.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A component editor is used to edit a component as a whole and can be used to implement a user interface similar to that of the property pages. You associate a component editor with a component by using the <xref:System.ComponentModel.EditorAttribute> attribute.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates an example <xref:System.ComponentModel.ComponentEditor> implementation.  
+  
+ [!code-cpp[ComponentEditorExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ComponentEditorExample/CPP/componenteditorexamplecomponent.cpp#1)]
+ [!code-csharp[ComponentEditorExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ComponentEditorExample/CS/componenteditorexamplecomponent.cs#1)]
+ [!code-vb[ComponentEditorExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ComponentEditorExample/VB/componenteditorexamplecomponent.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>When you inherit from this class, you must override the <see cref="M:System.ComponentModel.ComponentEditor.EditComponent(System.Object)" /> method.</para>
+    </block>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,7 +55,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ComponentEditor" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,10 +80,18 @@
         <Parameter Name="component" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="component">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="component">The component to be edited.</param>
+        <summary>Edits the component and returns a value indicating whether the component was modified.</summary>
+        <returns>
+          <see langword="true" /> if the component was modified; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method opens an advanced user interface that you can use to edit the component. The default implementation opens a dialog box with a collection of component editor control objects and a user interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EditComponent">
@@ -89,11 +116,19 @@
         <Parameter Name="component" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="component">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="context">An optional context object that can be used to obtain further information about the edit.</param>
+        <param name="component">The component to be edited.</param>
+        <summary>Edits the component and returns a value indicating whether the component was modified based upon a given context.</summary>
+        <returns>
+          <see langword="true" /> if the component was modified; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can override this method to provide a custom editing user interface for a component. From within this method you can display a dialog box or other type of user interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

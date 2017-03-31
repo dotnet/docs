@@ -1,4 +1,5 @@
 ---
 uid: Microsoft.Build.BuildEngine.WriteHandler
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

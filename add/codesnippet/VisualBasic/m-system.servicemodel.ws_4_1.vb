@@ -1,1 +1,0 @@
-		Dim bindingElements As BindingElementCollection = binding1.CreateBindingElements()

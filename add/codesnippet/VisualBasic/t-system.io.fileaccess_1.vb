@@ -1,1 +1,0 @@
- Dim s2 As New FileStream(name, FileMode.Open, FileAccess.Read, FileShare.Read)

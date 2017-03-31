@@ -1,139 +1,230 @@
 ---
 uid: System.ServiceModel.Web.WebOperationContext
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Web.WebOperationContext.Attach(System.ServiceModel.OperationContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Web.WebOperationContext.CreateStreamResponse(System.IO.Stream,System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Web.WebOperationContext.Detach(System.ServiceModel.OperationContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Web.WebOperationContext.CreateTextResponse(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Web.WebOperationContext.CreateTextResponse(System.String,System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Web.WebOperationContext.IncomingRequest
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Web.WebOperationContext.CreateXmlResponse``1(``0,System.Runtime.Serialization.XmlObjectSerializer)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Web.WebOperationContext.CreateXmlResponse``1(``0,System.Xml.Serialization.XmlSerializer)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Web.WebOperationContext.CreateXmlResponse
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Web.WebOperationContext.CreateTextResponse(System.String,System.String,System.Text.Encoding)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Web.WebOperationContext.CreateAtom10Response
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Web.WebOperationContext.GetUriTemplate(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Web.WebOperationContext.CreateTextResponse(System.Action{System.IO.TextWriter},System.String,System.Text.Encoding)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Web.WebOperationContext.CreateJsonResponse
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Web.WebOperationContext.CreateJsonResponse``1(``0,System.Runtime.Serialization.Json.DataContractJsonSerializer)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Web.WebOperationContext.OutgoingRequest
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Web.WebOperationContext.OutgoingResponse
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Web.WebOperationContext.Current
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Web.WebOperationContext.CreateXmlResponse``1(``0)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Web.WebOperationContext.CreateXmlResponse(System.Xml.Linq.XElement)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Web.WebOperationContext.CreateStreamResponse(System.Action{System.IO.Stream},System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Web.WebOperationContext.CreateXmlResponse(System.Xml.Linq.XDocument)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Web.WebOperationContext.CreateAtom10Response(System.ServiceModel.Syndication.SyndicationItem)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Web.WebOperationContext.CreateStreamResponse(System.ServiceModel.Channels.StreamBodyWriter,System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Web.WebOperationContext.CreateAtom10Response(System.ServiceModel.Syndication.ServiceDocument)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Web.WebOperationContext.CreateStreamResponse
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Web.WebOperationContext.CreateJsonResponse``1(``0)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Web.WebOperationContext.IncomingResponse
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Web.WebOperationContext.CreateAtom10Response(System.ServiceModel.Syndication.SyndicationFeed)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Web.WebOperationContext.CreateTextResponse(System.Action{System.IO.TextWriter},System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Web.WebOperationContext.CreateTextResponse
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Web.WebOperationContext.#ctor(System.ServiceModel.OperationContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

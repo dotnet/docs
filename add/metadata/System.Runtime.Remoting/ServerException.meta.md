@@ -1,19 +1,24 @@
 ---
 uid: System.Runtime.Remoting.ServerException
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.ServerException.#ctor(System.String,System.Exception)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.ServerException.#ctor
-internalonly: False
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Remoting.ServerException.#ctor
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.ServerException.#ctor(System.String)
-internalonly: False
+manager: "ghogen"
 ---

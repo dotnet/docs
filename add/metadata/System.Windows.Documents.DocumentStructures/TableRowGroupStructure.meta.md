@@ -1,34 +1,45 @@
 ---
 uid: System.Windows.Documents.DocumentStructures.TableRowGroupStructure
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Documents.DocumentStructures.TableRowGroupStructure.System#Windows#Markup#IAddChild#AddChild(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Documents.DocumentStructures.TableRowGroupStructure.System#Windows#Markup#IAddChild#AddText(System.String)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Documents.DocumentStructures.TableRowGroupStructure.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Documents.DocumentStructures.TableRowGroupStructure.System#Collections#IEnumerable#GetEnumerator
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Documents.DocumentStructures.TableRowGroupStructure.Add(System.Windows.Documents.DocumentStructures.TableRowStructure)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Documents.DocumentStructures.TableRowGroupStructure.System#Collections#Generic#IEnumerable{System#Windows#Documents#DocumentStructures#TableRowStructure}#GetEnumerator
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

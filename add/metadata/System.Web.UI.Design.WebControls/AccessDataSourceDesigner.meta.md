@@ -1,24 +1,29 @@
 ---
 uid: System.Web.UI.Design.WebControls.AccessDataSourceDesigner
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.AccessDataSourceDesigner.PreFilterProperties(System.Collections.IDictionary)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.AccessDataSourceDesigner.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.AccessDataSourceDesigner.GetConnectionString
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.AccessDataSourceDesigner.DataFile
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

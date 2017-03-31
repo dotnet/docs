@@ -1,99 +1,153 @@
 ---
 uid: System.Activities.DynamicActivity`1
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DynamicActivity`1.Properties
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DynamicActivity`1.System#ComponentModel#ICustomTypeDescriptor#GetProperties
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DynamicActivity`1.System#ComponentModel#ICustomTypeDescriptor#GetDefaultEvent
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DynamicActivity`1.Name
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DynamicActivity`1.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DynamicActivity`1.System#ComponentModel#ICustomTypeDescriptor#GetEditor(System.Type)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DynamicActivity`1.Constraints
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DynamicActivity`1.System#ComponentModel#ICustomTypeDescriptor#GetEvents(System.Attribute[])
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DynamicActivity`1.System#ComponentModel#ICustomTypeDescriptor#GetDefaultProperty
-internalonly: False
----
-
----
-uid: System.Activities.DynamicActivity`1.System#ComponentModel#ICustomTypeDescriptor#GetConverter
-internalonly: False
----
-
----
-uid: System.Activities.DynamicActivity`1.System#ComponentModel#ICustomTypeDescriptor#GetAttributes
-internalonly: False
----
-
----
-uid: System.Activities.DynamicActivity`1.System#ComponentModel#ICustomTypeDescriptor#GetComponentName
-internalonly: False
----
-
----
-uid: System.Activities.DynamicActivity`1.System#ComponentModel#ICustomTypeDescriptor#GetClassName
-internalonly: False
----
-
----
-uid: System.Activities.DynamicActivity`1.Implementation
-internalonly: False
----
-
----
-uid: System.Activities.DynamicActivity`1.Attributes
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DynamicActivity`1.System#ComponentModel#ICustomTypeDescriptor#GetEvents
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.DynamicActivity`1.System#ComponentModel#ICustomTypeDescriptor#GetConverter
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.DynamicActivity`1.System#ComponentModel#ICustomTypeDescriptor#GetAttributes
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.DynamicActivity`1.System#ComponentModel#ICustomTypeDescriptor#GetComponentName
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.DynamicActivity`1.System#ComponentModel#ICustomTypeDescriptor#GetProperties
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.DynamicActivity`1.System#ComponentModel#ICustomTypeDescriptor#GetClassName
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.DynamicActivity`1.Implementation
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.DynamicActivity`1.Attributes
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.DynamicActivity`1.System#ComponentModel#ICustomTypeDescriptor#GetEvents
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DynamicActivity`1.System#ComponentModel#ICustomTypeDescriptor#GetProperties(System.Attribute[])
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DynamicActivity`1.ImplementationVersion
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DynamicActivity`1.System#ComponentModel#ICustomTypeDescriptor#GetPropertyOwner(System.ComponentModel.PropertyDescriptor)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>A class that enables you to associate easing functions with a <see cref="T:System.Windows.Media.Animation.SizeAnimationUsingKeyFrames" /> key frame animation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For an example of using an object similar to this one, see <xref:System.Windows.Media.Animation.EasingDoubleKeyFrame>.  
+  
+ This class is used as part of a <xref:System.Windows.Media.Animation.SizeKeyFrameCollection> in conjunction with a <xref:System.Windows.Media.Animation.SizeAnimationUsingKeyFrames> to animate a <xref:System.Windows.Size> property value along a set of key frames. This <xref:System.Windows.Media.Animation.SizeKeyFrame> interpolates between the <xref:System.Windows.Size> value of the previous key frame and its own value linearly with an easing function to produce its output value.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +35,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.EasingSizeKeyFrame" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +52,8 @@
         <Parameter Name="value" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The initial <see cref="T:System.Windows.Size" /> value.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.EasingSizeKeyFrame" /> class with the specified <see cref="T:System.Windows.Size" /> value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,9 +71,9 @@
         <Parameter Name="keyTime" Type="System.Windows.Media.Animation.KeyTime" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="keyTime">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The initial <see cref="T:System.Windows.Size" /> value.</param>
+        <param name="keyTime">The initial key time.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.EasingSizeKeyFrame" /> class with the specified <see cref="T:System.Windows.Size" /> value and key time.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,10 +92,10 @@
         <Parameter Name="easingFunction" Type="System.Windows.Media.Animation.IEasingFunction" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="keyTime">To be added.</param>
-        <param name="easingFunction">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The initial <see cref="T:System.Windows.Size" /> value.</param>
+        <param name="keyTime">The initial key time.</param>
+        <param name="easingFunction">The easing function.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.EasingSizeKeyFrame" /> class with the specified <see cref="T:System.Windows.Size" /> value, key time, and easing function.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,9 +113,24 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a new instance of the <see cref="T:System.Windows.Freezable" /> derived class. When creating a derived class, you must override this method.</summary>
+        <returns>The new instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Animation classes inherit indirectly from <xref:System.Windows.Freezable>. Because of this, you need to override the <xref:System.Windows.Media.Animation.BackEase.CreateInstanceCore%2A> method to construct a custom animation object.  
+  
+   
+  
+## Examples  
+ The following example shows a typical implementation of <xref:System.Windows.Freezable.CreateInstanceCore%2A>.  
+  
+ [!code-csharp[freezablesample_procedural#CreateInstanceCoreExample](~/samples/snippets/csharp/VS_Snippets_Wpf/freezablesample_procedural/CSharp/freezablesample.cs#createinstancecoreexample)]
+ [!code-vb[freezablesample_procedural#CreateInstanceCoreExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/freezablesample_procedural/visualbasic/freezablesample.vb#createinstancecoreexample)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EasingFunction">
@@ -122,8 +146,8 @@
         <ReturnType>System.Windows.Media.Animation.IEasingFunction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the easing function applied to the key frame.</summary>
+        <value>The easing function applied to the key frame.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,7 +164,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Media.Animation.EasingSizeKeyFrame.EasingFunction" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -161,10 +185,10 @@
         <Parameter Name="keyFrameProgress" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="baseValue">To be added.</param>
-        <param name="keyFrameProgress">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="baseValue">The value to animate from.</param>
+        <param name="keyFrameProgress">A value between 0.0 and 1.0, inclusive, that specifies the percentage of time that has elapsed for this key frame.</param>
+        <summary>Interpolates, according to the easing function used, between the previous key frame value and the value of the current key frame, using the supplied progress increment.</summary>
+        <returns>The output value of this key frame given the specified base value and progress.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

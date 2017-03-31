@@ -1,19 +1,23 @@
 ---
 uid: Microsoft.Build.Construction.ProjectItemDefinitionElement
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.ProjectItemDefinitionElement.Metadata
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.ProjectItemDefinitionElement.ItemType
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.ProjectItemDefinitionElement.AddMetadata(System.String,System.String)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

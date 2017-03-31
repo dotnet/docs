@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines a descriptor for a Service Provider SSO (SPSSO).</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <Parameter Name="collection" Type="System.IdentityModel.Metadata.IndexedProtocolEndpointDictionary" />
       </Parameters>
       <Docs>
-        <param name="collection">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="collection">An <see cref="T:System.IdentityModel.Metadata.IndexedProtocolEndpointDictionary" /> object for this instance. Initializes the <see cref="P:System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor.AssertionConsumerServices" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor" /> class that has the specified dictionary of indexed endpoints.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,9 +61,16 @@
         <ReturnType>System.IdentityModel.Metadata.IndexedProtocolEndpointDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.IdentityModel.Metadata.IndexedProtocolEndpointDictionary" /> that contains the indexed endpoints that support the profiles of the Authentication Request protocol that is defined in [SAMLProf].</summary>
+        <value>The <see cref="T:System.IdentityModel.Metadata.IndexedProtocolEndpointDictionary" /> for this instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The dictionary typically should contain one or more elements.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AuthenticationRequestsSigned">
@@ -79,9 +86,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether requests sent by the service provider will be signed.</summary>
+        <value>
+          <see langword="true" /> if authentication requests sent by the service provider will be signed; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Represents the `AuthnRequestsSigned` attribute.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WantAssertionsSigned">
@@ -97,9 +112,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether assertions received by the service provider should be signed.</summary>
+        <value>
+          <see langword="true" /> if assertions received by the service provider should be signed; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Gets or sets the `WantAssertionsSigned` attribute.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

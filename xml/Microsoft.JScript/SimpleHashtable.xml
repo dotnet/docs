@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>A hash table for the internal storage of items.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <Parameter Name="threshold" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="threshold">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="threshold">The number of items at which the hash table must be resized.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.SimpleHashtable" /> class, using the specified threshold.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,8 +47,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets an enumerator for the hash table.</summary>
+        <returns>An enumerator for the hash table.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,9 +68,9 @@
         <Parameter Name="key" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="key">The key of the item to get or set.</param>
+        <summary>Gets or sets the item that has the specified key.</summary>
+        <value>The value of the item that has the specified <paramref name="key" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,8 +90,8 @@
         <Parameter Name="key" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="key">The key of the item to remove.</param>
+        <summary>Removes the item with the specified key from the hash table.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

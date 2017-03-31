@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Describes the possible effects of saving an object to WMI when using <see cref="M:System.Management.ManagementObject.Put" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Management.PutType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates an object only; does not update an existing object.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -43,7 +43,7 @@
         <ReturnType>System.Management.PutType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No change.</summary>
       </Docs>
     </Member>
     <Member MemberName="UpdateOnly">
@@ -59,7 +59,7 @@
         <ReturnType>System.Management.PutType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Updates an existing object only; does not create a new object.</summary>
       </Docs>
     </Member>
     <Member MemberName="UpdateOrCreate">
@@ -75,7 +75,7 @@
         <ReturnType>System.Management.PutType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Saves the object, whether updating an existing object or creating a new object.</summary>
       </Docs>
     </Member>
   </Members>

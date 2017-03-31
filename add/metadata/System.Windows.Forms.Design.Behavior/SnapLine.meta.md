@@ -1,69 +1,101 @@
 ---
 uid: System.Windows.Forms.Design.Behavior.SnapLine
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.SnapLine.Priority
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.SnapLine.#ctor(System.Windows.Forms.Design.Behavior.SnapLineType,System.Int32,System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.SnapLine.#ctor(System.Windows.Forms.Design.Behavior.SnapLineType,System.Int32,System.String,System.Windows.Forms.Design.Behavior.SnapLinePriority)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.SnapLine.ShouldSnap(System.Windows.Forms.Design.Behavior.SnapLine,System.Windows.Forms.Design.Behavior.SnapLine)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.SnapLine.SnapLineType
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.SnapLine.#ctor(System.Windows.Forms.Design.Behavior.SnapLineType,System.Int32,System.Windows.Forms.Design.Behavior.SnapLinePriority)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.SnapLine.ToString
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.SnapLine.IsVertical
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.SnapLine.IsHorizontal
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.SnapLine.Offset
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.SnapLine.AdjustOffset(System.Int32)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.SnapLine.Filter
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.SnapLine.#ctor(System.Windows.Forms.Design.Behavior.SnapLineType,System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.Design.Behavior.SnapLine.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

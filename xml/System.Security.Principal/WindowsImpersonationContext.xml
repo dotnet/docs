@@ -21,8 +21,30 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the Windows user prior to an impersonation operation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class reverts a user's identity after the user impersonates another user.  
+  
+> [!IMPORTANT]
+>  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to impersonate a user and then revert to the original identity.  
+  
+ [!code-cpp[WindowsIdentity Impersonation#1](~/samples/snippets/cpp/VS_Snippets_CLR/WindowsIdentity Impersonation/CPP/source.cpp#1)]
+ [!code-csharp[WindowsIdentity Impersonation#1](~/samples/snippets/csharp/VS_Snippets_CLR/WindowsIdentity Impersonation/CS/source.cs#1)]
+ [!code-vb[WindowsIdentity Impersonation#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/WindowsIdentity Impersonation/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>Because Microsoft Windows 98 and Windows Millennium Edition platforms do not have users or user tokens, impersonation cannot take place on those platforms.</para>
+    </block>
   </Docs>
   <Members>
     <Member MemberName="Dispose">
@@ -45,8 +67,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Releases all resources used by the <see cref="T:System.Security.Principal.WindowsImpersonationContext" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call <xref:System.Security.Principal.WindowsImpersonationContext.Dispose%2A> when you are finished using the <xref:System.Security.Principal.WindowsImpersonationContext>. The <xref:System.Security.Principal.WindowsImpersonationContext.Dispose%2A> method leaves the <xref:System.Security.Principal.WindowsImpersonationContext> in an unusable state. After calling <xref:System.Security.Principal.WindowsImpersonationContext.Dispose%2A>, you must release all references to the <xref:System.Security.Principal.WindowsImpersonationContext> so the garbage collector can reclaim the memory that the <xref:System.Security.Principal.WindowsImpersonationContext> was occupying. For more information, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+  
+ **Note:** Always call <xref:System.Security.Principal.WindowsImpersonationContext.Dispose%2A> before you release your last reference to the <xref:System.Security.Principal.WindowsImpersonationContext>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Security.Principal.WindowsImpersonationContext> object's **Finalize** method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -71,9 +102,25 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Security.Principal.WindowsImpersonationContext" /> and optionally releases the managed resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the public `Dispose()`method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+  
+ When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.Security.Principal.WindowsImpersonationContext> references. This method invokes the `Dispose()` method of each referenced object.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean) " />be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement<see langword=" Dispose(Boolean)" />, see [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+  
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md).</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="Undo">
@@ -91,8 +138,23 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Reverts the user context to the Windows user represented by this object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to impersonate a Windows identity using a specified user token.  
+  
+ [!code-cpp[Classic WindowsImpersonationContext.Undo Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic WindowsImpersonationContext.Undo Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic WindowsImpersonationContext.Undo Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic WindowsImpersonationContext.Undo Example/CS/source.cs#1)]
+ [!code-vb[Classic WindowsImpersonationContext.Undo Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic WindowsImpersonationContext.Undo Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">An attempt is made to use this method for any purpose other than to revert identity to self.</exception>
+        <block subset="none" type="overrides">
+          <para>Because Microsoft Windows 98 and Windows Millennium Edition platforms do not have users or user tokens, impersonation cannot take place on those platforms.</para>
+        </block>
       </Docs>
     </Member>
   </Members>

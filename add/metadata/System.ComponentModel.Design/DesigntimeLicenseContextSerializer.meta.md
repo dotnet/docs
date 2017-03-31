@@ -1,9 +1,13 @@
 ---
 uid: System.ComponentModel.Design.DesigntimeLicenseContextSerializer
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.DesigntimeLicenseContextSerializer.Serialize(System.IO.Stream,System.String,System.ComponentModel.Design.DesigntimeLicenseContext)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

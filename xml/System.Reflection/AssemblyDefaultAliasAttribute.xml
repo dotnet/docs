@@ -31,8 +31,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines a friendly default alias for an assembly manifest.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is a friendly default alias in cases where the assembly name is not friendly or is a GUID.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -60,8 +67,8 @@
         <Parameter Name="defaultAlias" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="defaultAlias">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="defaultAlias">The assembly default alias information.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Reflection.AssemblyDefaultAliasAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,8 +97,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets default alias information.</summary>
+        <value>A string containing the default alias information.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

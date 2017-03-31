@@ -1,14 +1,17 @@
 ---
 uid: System.Web.Configuration.PartialTrustVisibleAssembliesSection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.PartialTrustVisibleAssembliesSection.PartialTrustVisibleAssemblies
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.PartialTrustVisibleAssembliesSection.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

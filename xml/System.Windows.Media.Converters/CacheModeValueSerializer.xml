@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Converts instances of <see cref="T:System.String" /> to and from instances of <see cref="T:System.Windows.Media.CacheMode" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is typically only used by the <xref:System.Windows.Markup.Primitives.MarkupWriter> for serialization purposes.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Converters.CacheModeValueSerializer" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,11 +54,19 @@
         <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">A <see cref="T:System.String" /> to evaluate for conversion.</param>
+        <param name="context">Context information that is used for conversion.</param>
+        <summary>Determines whether the specified <see cref="T:System.String" /> can be converted to an instance of <see cref="T:System.Windows.Media.CacheMode" />.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="value" /> can be converted; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method always returns `true`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CanConvertToString">
@@ -71,10 +86,11 @@
         <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">An instance of <see cref="T:System.Windows.Media.CacheMode" /> to evaluate for conversion.</param>
+        <param name="context">Context information that is used for conversion.</param>
+        <summary>Determines whether the specified instance of <see cref="T:System.Windows.Media.CacheMode" /> can be converted to a <see cref="T:System.String" />.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="value" /> can be converted into a <see cref="T:System.String" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,10 +111,10 @@
         <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">A <see cref="T:System.String" /> value to convert into a <see cref="T:System.Windows.Media.CacheMode" />.</param>
+        <param name="context">Context information that is used for conversion.</param>
+        <summary>Converts a <see cref="T:System.String" /> into a <see cref="T:System.Windows.Media.CacheMode" />.</summary>
+        <returns>A new instance of <see cref="T:System.Windows.Media.CacheMode" /> based on the specified <paramref name="value" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,10 +135,10 @@
         <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">An instance of <see cref="T:System.Windows.Media.CacheMode" /> to evaluate for conversion.</param>
+        <param name="context">Context information that is used for conversion.</param>
+        <summary>Converts an instance of <see cref="T:System.Windows.Media.CacheMode" /> to a <see cref="T:System.String" />.</summary>
+        <returns>A <see cref="T:System.String" /> representation of the specified <see cref="T:System.Windows.Media.CacheMode" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

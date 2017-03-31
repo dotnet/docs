@@ -10,8 +10,21 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the location of the <see cref="P:System.Web.UI.WebControls.ListView.InsertItemTemplate" /> template when it is rendered as part of the <see cref="T:System.Web.UI.WebControls.ListView" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows a <xref:System.Web.UI.WebControls.ListView> control that is configured to display the <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> template as the last item in the control.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](../Topic/Script%20Exploits%20Overview.md).  
+  
+ [!code-csharp[System.Web.UI.WebControls.ListView.ItemInserted#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/CS/ListViewItemInsertedCS.aspx#2)]
+ [!code-vb[System.Web.UI.WebControls.ListView.ItemInserted#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/VB/ListViewItemInsertedVB.aspx#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="FirstItem">
@@ -27,7 +40,7 @@
         <ReturnType>System.Web.UI.WebControls.InsertItemPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="P:System.Web.UI.WebControls.ListView.InsertItemTemplate" /> template is rendered as the first item in the <see cref="T:System.Web.UI.WebControls.ListView" /> control.</summary>
       </Docs>
     </Member>
     <Member MemberName="LastItem">
@@ -43,7 +56,7 @@
         <ReturnType>System.Web.UI.WebControls.InsertItemPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="P:System.Web.UI.WebControls.ListView.InsertItemTemplate" /> template is rendered as the last item in the <see cref="T:System.Web.UI.WebControls.ListView" /> control.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -59,7 +72,7 @@
         <ReturnType>System.Web.UI.WebControls.InsertItemPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="P:System.Web.UI.WebControls.ListView.InsertItemTemplate" /> template is not rendered.</summary>
       </Docs>
     </Member>
   </Members>

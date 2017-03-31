@@ -32,8 +32,25 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides static methods for creating value tuples.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A tuple is a data structure that has a specific number and sequence of elements. An example of a tuple is a data structure with three elements (known as a 3-tuple or triple) that is used to store an identifier such as a person's name in the first element, a year in the second element, and the person's income for that year in the third element.  
+  
+ Value tuples are tuple types introduced in the [!INCLUDE[net_v463](~/includes/net-v463-md.md)] to provide the runtime implementation of tuples in C# and struct tuples in F#. They differ from the tuple classes, such as  <xref:System.Tuple%601>, <xref:System.Tuple%601>, etc., as follows:  
+  
+-   They are structures (value types) rather than classes (reference types).  
+  
+-   They are mutable rather than read-only. That is, the value of tuple components can change.  
+  
+-   Their data members, such as `Item1`, `Item2`, etc., are fields rather than properties.  
+  
+ The <xref:System.ValueTuple> structure itself does not represent a value tuple. Instead, it provides static methods for creating instances of value tuple types. It provides helper methods that you can call to instantiate value tuples without having to explicitly specify the type of each value tuple component. By calling its static `Create` methods, you can create value tuples that have from zero to eight components. For value tuples with more than eight components, you must call the <xref:System.ValueTuple%608.%23ctor%2A> constructor.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CompareTo">
@@ -57,10 +74,12 @@
         <Parameter Name="other" Type="System.ValueTuple" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">The object to compare with the current instance.</param>
+        <summary>Compares the current <see cref="T:System.ValueTuple" /> instance with a specified object.</summary>
+        <returns>Returns 0 if <paramref name=" other" /> is a <see cref="T:System.ValueTuple" /> instance and 1 if <paramref name="other" /> is <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="other" /> is not a <see cref="T:System.ValueTuple" /> instance.</exception>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -82,8 +101,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a new value tuple with zero components.</summary>
+        <returns>A new value tuple with no components.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,11 +130,18 @@
         <Parameter Name="item1" Type="T1" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <param name="item1">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T1">The type of the value tuple's only component.</typeparam>
+        <param name="item1">The value of the value tuple's only component.</param>
+        <summary>Creates a new value tuple with 1 component (a singleton).</summary>
+        <returns>A value tuple with 1 component.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ValueTuple.Create%2A> is a helper method that you can call to instantiate a 1-component value tuple without having to explicitly specify the type of its component.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Create&lt;T1,T2&gt;">
@@ -144,13 +170,20 @@
         <Parameter Name="item2" Type="T2" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <param name="item1">To be added.</param>
-        <param name="item2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T1">The type of the value tuple's first component.</typeparam>
+        <typeparam name="T2">The type of the value tuple's second component.</typeparam>
+        <param name="item1">The value of the value tuple's first component.</param>
+        <param name="item2">The value of the value tuple's second component.</param>
+        <summary>Creates a new value tuple with 2 components (a pair).</summary>
+        <returns>A value tuple with 2 components.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ValueTuple.Create%2A> is a helper method that you can call to instantiate an 2-component value tuple without having to explicitly specify the types of its components.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Create&lt;T1,T2,T3&gt;">
@@ -181,15 +214,22 @@
         <Parameter Name="item3" Type="T3" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <param name="item1">To be added.</param>
-        <param name="item2">To be added.</param>
-        <param name="item3">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T1">The type of the value tuple's first component.</typeparam>
+        <typeparam name="T2">The type of the value tuple's second component.</typeparam>
+        <typeparam name="T3">The type of the value tuple's third component.</typeparam>
+        <param name="item1">The value of the value tuple's first component.</param>
+        <param name="item2">The value of the value tuple's second component.</param>
+        <param name="item3">The value of the value tuple's third component.</param>
+        <summary>Creates a new value tuple with 8 components (a triple).</summary>
+        <returns>A value tuple with 3 components.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ValueTuple.Create%2A> is a helper method that you can call to instantiate an 3-component value tuple without having to explicitly specify the types of its components.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Create&lt;T1,T2,T3,T4&gt;">
@@ -222,17 +262,24 @@
         <Parameter Name="item4" Type="T4" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <param name="item1">To be added.</param>
-        <param name="item2">To be added.</param>
-        <param name="item3">To be added.</param>
-        <param name="item4">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T1">The type of the value tuple's first component.</typeparam>
+        <typeparam name="T2">The type of the value tuple's second component.</typeparam>
+        <typeparam name="T3">The type of the value tuple's third component.</typeparam>
+        <typeparam name="T4">The type of the value tuple's fourth component.</typeparam>
+        <param name="item1">The value of the value tuple's first component.</param>
+        <param name="item2">The value of the value tuple's second component.</param>
+        <param name="item3">The value of the value tuple's third component.</param>
+        <param name="item4">The value of the value tuple's fourth component.</param>
+        <summary>Creates a new value tuple with 4 components (a quadruple).</summary>
+        <returns>A value tuple with 4 components.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ValueTuple.Create%2A> is a helper method that you can call to instantiate an 4-component value tuple without having to explicitly specify the types of its components.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Create&lt;T1,T2,T3,T4,T5&gt;">
@@ -267,19 +314,26 @@
         <Parameter Name="item5" Type="T5" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <param name="item1">To be added.</param>
-        <param name="item2">To be added.</param>
-        <param name="item3">To be added.</param>
-        <param name="item4">To be added.</param>
-        <param name="item5">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T1">The type of the value tuple's first component.</typeparam>
+        <typeparam name="T2">The type of the value tuple's second component.</typeparam>
+        <typeparam name="T3">The type of the value tuple's third component.</typeparam>
+        <typeparam name="T4">The type of the value tuple's fourth component.</typeparam>
+        <typeparam name="T5">The type of the value tuple's fifth component.</typeparam>
+        <param name="item1">The value of the value tuple's first component.</param>
+        <param name="item2">The value of the value tuple's second component.</param>
+        <param name="item3">The value of the value tuple's third component.</param>
+        <param name="item4">The value of the value tuple's fourth component.</param>
+        <param name="item5">The value of the value tuple's fifth component.</param>
+        <summary>Creates a new value tuple with 5 components (a quintuple).</summary>
+        <returns>A value tuple with 5 components.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ValueTuple.Create%2A> is a helper method that you can call to instantiate a 5-component value tuple without having to explicitly specify the types of its components.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Create&lt;T1,T2,T3,T4,T5,T6&gt;">
@@ -316,21 +370,28 @@
         <Parameter Name="item6" Type="T6" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <param name="item1">To be added.</param>
-        <param name="item2">To be added.</param>
-        <param name="item3">To be added.</param>
-        <param name="item4">To be added.</param>
-        <param name="item5">To be added.</param>
-        <param name="item6">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T1">The type of the value tuple's first component.</typeparam>
+        <typeparam name="T2">The type of the value tuple's second component.</typeparam>
+        <typeparam name="T3">The type of the value tuple's third component.</typeparam>
+        <typeparam name="T4">The type of the value tuple's fourth component.</typeparam>
+        <typeparam name="T5">The type of the value tuple's fifth component.</typeparam>
+        <typeparam name="T6">The type of the value tuple's sixth component.</typeparam>
+        <param name="item1">The value of the value tuple's first component.</param>
+        <param name="item2">The value of the value tuple's second component.</param>
+        <param name="item3">The value of the value tuple's third component.</param>
+        <param name="item4">The value of the value tuple's fourth component.</param>
+        <param name="item5">The value of the value tuple's fifth component.</param>
+        <param name="item6">The value of the value tuple's sixth component.</param>
+        <summary>Creates a new value tuple with 6 components (a sexuple).</summary>
+        <returns>A value tuple with 6 components.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ValueTuple.Create%2A> is a helper method that you can call to instantiate a 6-component value tuple without having to explicitly specify the types of its components.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Create&lt;T1,T2,T3,T4,T5,T6,T7&gt;">
@@ -369,23 +430,30 @@
         <Parameter Name="item7" Type="T7" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <param name="item1">To be added.</param>
-        <param name="item2">To be added.</param>
-        <param name="item3">To be added.</param>
-        <param name="item4">To be added.</param>
-        <param name="item5">To be added.</param>
-        <param name="item6">To be added.</param>
-        <param name="item7">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T1">The type of the value tuple's first component.</typeparam>
+        <typeparam name="T2">The type of the value tuple's second component.</typeparam>
+        <typeparam name="T3">The type of the value tuple's third component.</typeparam>
+        <typeparam name="T4">The type of the value tuple's fourth component.</typeparam>
+        <typeparam name="T5">The type of the value tuple's fifth component.</typeparam>
+        <typeparam name="T6">The type of the value tuple's sixth component.</typeparam>
+        <typeparam name="T7">The type of the value tuple's seventh component.</typeparam>
+        <param name="item1">The value of the value tuple's first component.</param>
+        <param name="item2">The value of the value tuple's second component.</param>
+        <param name="item3">The value of the value tuple's third component.</param>
+        <param name="item4">The value of the value tuple's fourth component.</param>
+        <param name="item5">The value of the value tuple's fifth component.</param>
+        <param name="item6">The value of the value tuple's sixth component.</param>
+        <param name="item7">The value of the value tuple's seventh component.</param>
+        <summary>Creates a new value tuple with 7 components (a septuple).</summary>
+        <returns>A value tuple with 7 components.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ValueTuple.Create%2A> is a helper method that you can call to instantiate an 7-component value tuple without having to explicitly specify the types of its components.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Create&lt;T1,T2,T3,T4,T5,T6,T7,T8&gt;">
@@ -426,25 +494,35 @@
         <Parameter Name="item8" Type="T8" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <param name="item1">To be added.</param>
-        <param name="item2">To be added.</param>
-        <param name="item3">To be added.</param>
-        <param name="item4">To be added.</param>
-        <param name="item5">To be added.</param>
-        <param name="item6">To be added.</param>
-        <param name="item7">To be added.</param>
-        <param name="item8">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T1">The type of the value tuple's first component.</typeparam>
+        <typeparam name="T2">The type of the value tuple's second component.</typeparam>
+        <typeparam name="T3">The type of the value tuple's third component.</typeparam>
+        <typeparam name="T4">The type of the value tuple's fourth component.</typeparam>
+        <typeparam name="T5">The type of the value tuple's fifth component.</typeparam>
+        <typeparam name="T6">The type of the value tuple's sixth component.</typeparam>
+        <typeparam name="T7">The type of the value tuple's seventh component.</typeparam>
+        <typeparam name="T8">The type of the value tuple's eighth component.</typeparam>
+        <param name="item1">The value of the value tuple's first component.</param>
+        <param name="item2">The value of the value tuple's second component.</param>
+        <param name="item3">The value of the value tuple's third component.</param>
+        <param name="item4">The value of the value tuple's fourth component.</param>
+        <param name="item5">The value of the value tuple's fifth component.</param>
+        <param name="item6">The value of the value tuple's sixth component.</param>
+        <param name="item7">The value of the value tuple's seventh component.</param>
+        <param name="item8">The value of the value tuple's eighth component.</param>
+        <summary>Creates a new value tuple with 8 components (an octuple).</summary>
+        <returns>A value tuple with 8 components.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ValueTuple.Create%2A> is a helper method that you can call to instantiate an 8-component value tuple without having to explicitly specify the types of its components.  
+  
+> [!NOTE]
+>  You must call the <xref:System.ValueTuple%608.%23ctor%2A> constructor to create a tuple with nine or more components unless your language provides a special syntax for this purpose. The static methods of the <xref:System.ValueTuple> structure cannot be used to create a tuple with nine or more components.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -468,9 +546,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The object to compare to the current instance.</param>
+        <summary>Returns a value that indicates whether the current <see cref="T:System.ValueTuple" /> instance is equal to a specified object.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="obj" /> is a <see cref="T:System.ValueTuple" /> instance; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -495,9 +574,9 @@
         <Parameter Name="other" Type="System.ValueTuple" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">The value tuple to compare with the current instance.</param>
+        <summary>Determines whether two <see cref="T:System.ValueTuple" /> instances are equal. This method always returns <see langword="true" />.</summary>
+        <returns>This method always returns <see langword="true" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -520,8 +599,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code for the current <see cref="T:System.ValueTuple" /> instance.</summary>
+        <returns>The hash code for the current <see cref="T:System.ValueTuple" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -547,11 +626,13 @@
         <Parameter Name="comparer" Type="System.Collections.IComparer" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <param name="comparer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">The object to compare with the current instance.</param>
+        <param name="comparer">An object that provides custom rules for comparison. This parameter is ignored.</param>
+        <summary>Compares the current <see cref="T:System.ValueTuple" /> instance to a specified object.</summary>
+        <returns>Returns 0 if <paramref name=" other" /> is a <see cref="T:System.ValueTuple" /> instance and 1 if <paramref name="other" /> is <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="other" /> is not a <see cref="T:System.ValueTuple" /> instance.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IStructuralEquatable.Equals">
@@ -576,11 +657,19 @@
         <Parameter Name="comparer" Type="System.Collections.IEqualityComparer" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <param name="comparer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="other">The object to compare with this instance.</param>
+        <param name="comparer">An object that defines the method to use to evaluate whether the two objects are equal.</param>
+        <summary>Returns a value that indicates whether the current <see cref="T:System.ValueTuple" /> instance is equal to a specified object based on a specified comparison method.</summary>
+        <returns>
+          <see langword="true" /> if the current instance is equal to the specified object; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface implementation. It can only be used when the <xref:System.ValueTuple>t> instance is cast to an <xref:System.Collections.IStructuralEquatable> interface. The <xref:System.Collections.IEqualityComparer.Equals%2A?displayProperty=fullName> implementation is called only if `other` is not `null`, and if it can be successfully cast to a <xref:System.ValueTuple> object.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IStructuralEquatable.GetHashCode">
@@ -604,9 +693,9 @@
         <Parameter Name="comparer" Type="System.Collections.IEqualityComparer" />
       </Parameters>
       <Docs>
-        <param name="comparer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="comparer">An object whose <see cref="M:System.Collections.IEqualityComparer.GetHashCode(System.Object)" /> method computes the hash code. This parameter is ignored.</param>
+        <summary>Returns the hash code for this <see cref="T:System.ValueTuple" /> instance.</summary>
+        <returns>The hash code for this <see cref="T:System.ValueTuple" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -631,10 +720,12 @@
         <Parameter Name="other" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">The object to compare with the current instance</param>
+        <summary>Compares this <see cref="T:System.ValueTuple" /> instance with a specified object and returns an indication of their relative values.</summary>
+        <returns>0 if <paramref name="other" /> is a <see cref="T:System.ValueTuple" /> instance; otherwise, 1 if <paramref name="other" /> is <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="other" /> is not a <see cref="T:System.ValueTuple" /> instance.</exception>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -656,8 +747,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the string representation of this <see cref="T:System.ValueTuple" /> instance.</summary>
+        <returns>This method always returns "()".</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Executes a set of child activities according to a single, defined ordering.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Statements.Sequence" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,8 +53,8 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Activities.Activity&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The collection of contained activities to be executed in sequence.</summary>
+        <value>The activities.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,8 +136,8 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Activities.Variable&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The collection of contained variables.</summary>
+        <value>The collection of variables.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

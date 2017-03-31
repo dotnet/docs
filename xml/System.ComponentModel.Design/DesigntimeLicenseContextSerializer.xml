@@ -16,8 +16,18 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides support for design-time license context serialization.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class provides a serialization method that can serialize a specified design-time license context.  
+  
+> [!IMPORTANT]
+>  Using an instance of this object with untrusted data is a security risk. Use this class only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Serialize">
@@ -43,10 +53,10 @@
         <Parameter Name="context" Type="System.ComponentModel.Design.DesigntimeLicenseContext" />
       </Parameters>
       <Docs>
-        <param name="o">To be added.</param>
-        <param name="cryptoKey">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="o">The stream to output to.</param>
+        <param name="cryptoKey">The key to use for encryption.</param>
+        <param name="context">A <see cref="T:System.ComponentModel.Design.DesigntimeLicenseContext" /> indicating the license context.</param>
+        <summary>Serializes the licenses within the specified design-time license context using the specified key and output stream.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -19,9 +19,23 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="T">The type of the values provided in the <see cref="P:System.Activities.Statements.ParallelForEach`1.Values" /> collection.</typeparam>
+    <summary>Enumerates the elements of a collection and executes an embedded statement for each element of the collection in parallel.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The embedded statements are scheduled together and run asynchronously, but unless the scheduled activites themselves are asynchronous (such as messaging activities, <xref:System.Activities.Statements.InvokeMethod>, or activities that derive from <xref:System.Activities.AsyncCodeActivity>), they do not run on separate threads, so each successive activity will only execute when the previously scheduled activity completes or goes idle.  If none of the child activities of this activity are asynchronous or go idle, this activity execute in the same way that a <xref:System.Activities.Statements.ForEach%601> activity does.  
+  
+   
+  
+## Examples  
+ The following code sample demonstrates creating a <xref:System.Activities.Statements.ParallelForEach%601> activity. This example is from the [Corporate Purchase Process](../Topic/Corporate%20Purchase%20Process.md) sample.  
+  
+ [!code-csharp[wfs_PurchaseProcess#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_purchaseprocess/cs/purchaseprocessworkflow.cs#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,8 +49,17 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Statements.ParallelForEach`1" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates creating a <xref:System.Activities.Statements.ParallelForEach%601> activity. This example is from the [Corporate Purchase Process](../Topic/Corporate%20Purchase%20Process.md) sample.  
+  
+ [!code-csharp[wfs_PurchaseProcess#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_purchaseprocess/cs/purchaseprocessworkflow.cs#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Body">
@@ -57,9 +80,18 @@
         <ReturnType>System.Activities.ActivityAction&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="T:System.Activities.ActivityAction" /> that is executed once for every value contained in the <see cref="P:System.Activities.Statements.ParallelForEach`1.Values" /> collection.</summary>
+        <value>The contained activity action.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates setting the Body property of a <xref:System.Activities.Statements.ParallelForEach%601> activity. This example is from the [Corporate Purchase Process](../Topic/Corporate%20Purchase%20Process.md) sample.  
+  
+ [!code-csharp[wfs_PurchaseProcess#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_purchaseprocess/cs/purchaseprocessworkflow.cs#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CacheMetadata">
@@ -101,9 +133,16 @@
         <ReturnType>System.Activities.Activity&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Evaluated after each iteration completes.</summary>
+        <value>The completion expression.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If it evaluates to `true`, then the scheduled pending iterations are canceled. If this property is not set, all scheduled statements execute until completion.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -171,9 +210,18 @@
         <ReturnType>System.Activities.InArgument&lt;System.Collections.Generic.IEnumerable&lt;T&gt;&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>The collection of values used as parameters for each iteration of the activity contained in the <see cref="P:System.Activities.Statements.ParallelForEach`1.Body" />.</summary>
+        <value>The collection of values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates setting the Values property of a <xref:System.Activities.Statements.ParallelForEach%601> activity. This example is from the [Corporate Purchase Process](../Topic/Corporate%20Purchase%20Process.md) sample.  
+  
+ [!code-csharp[wfs_PurchaseProcess#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_purchaseprocess/cs/purchaseprocessworkflow.cs#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

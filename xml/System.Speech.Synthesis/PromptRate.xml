@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Enumerates values for the speaking rate of prompts.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Members of the <xref:System.Speech.Synthesis.PromptRate> enumeration are used by the <xref:System.Speech.Synthesis.PromptStyle.%23ctor%2A> constructor, by the <xref:System.Speech.Synthesis.PromptBuilder.AppendText%2A> method, and by the <xref:System.Speech.Synthesis.PromptBuilder.StartStyle%2A> method to specify the rate of speech for spoken text. The <xref:System.Speech.Synthesis.PromptStyle.Rate%2A> property gets the rate for a <xref:System.Speech.Synthesis.PromptStyle> object using a <xref:System.Speech.Synthesis.PromptRate> instance.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ExtraFast">
@@ -27,7 +34,7 @@
         <ReturnType>System.Speech.Synthesis.PromptRate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates an extra-fast rate.</summary>
       </Docs>
     </Member>
     <Member MemberName="ExtraSlow">
@@ -43,7 +50,7 @@
         <ReturnType>System.Speech.Synthesis.PromptRate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates an extra-slow rate.</summary>
       </Docs>
     </Member>
     <Member MemberName="Fast">
@@ -59,7 +66,7 @@
         <ReturnType>System.Speech.Synthesis.PromptRate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates a fast rate.</summary>
       </Docs>
     </Member>
     <Member MemberName="Medium">
@@ -75,7 +82,7 @@
         <ReturnType>System.Speech.Synthesis.PromptRate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates a medium rate.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotSet">
@@ -91,7 +98,7 @@
         <ReturnType>System.Speech.Synthesis.PromptRate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates no rate is specified.</summary>
       </Docs>
     </Member>
     <Member MemberName="Slow">
@@ -107,7 +114,7 @@
         <ReturnType>System.Speech.Synthesis.PromptRate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates a slow rate.</summary>
       </Docs>
     </Member>
   </Members>

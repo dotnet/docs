@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the visual state of a toolbar item that is drawn with visual styles.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.ToolBarState> values correspond to the states of the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> objects exposed by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar.Button>, <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar.DropDownButton>, <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar.SplitButton>, and <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar.SplitButtonDropDown> classes.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Checked">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.ToolBarState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The item is in the checked state.</summary>
       </Docs>
     </Member>
     <Member MemberName="Disabled">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.ToolBarState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The item is in the disabled state.</summary>
       </Docs>
     </Member>
     <Member MemberName="Hot">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.ToolBarState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The item is in the hot state.</summary>
       </Docs>
     </Member>
     <Member MemberName="HotChecked">
@@ -75,7 +82,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.ToolBarState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The item is in the hot and checked states.</summary>
       </Docs>
     </Member>
     <Member MemberName="Normal">
@@ -91,7 +98,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.ToolBarState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The item is in the normal state.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pressed">
@@ -107,7 +114,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.ToolBarState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The item is in the pressed state.</summary>
       </Docs>
     </Member>
   </Members>

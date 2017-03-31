@@ -19,8 +19,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Identifies the class that performs validation on an <see cref="T:System.Workflow.ComponentModel.Activity" /> that is subject to validation. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ For a list of initial property values for an instance of the <xref:System.Workflow.ComponentModel.Compiler.ActivityValidatorAttribute> class, see the <xref:System.Workflow.ComponentModel.Compiler.ActivityValidatorAttribute.%23ctor%2A> constructor.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,9 +47,16 @@
         <Parameter Name="validatorTypeName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="validatorTypeName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="validatorTypeName">Type of the <see cref="T:System.Workflow.ComponentModel.Compiler.Validator" />.</param>
+        <summary>Initializes an instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.ActivityValidatorAttribute" /> class by using the type of the validator.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For a list of initial property values for an instance of the <xref:System.Workflow.ComponentModel.Compiler.ActivityValidatorAttribute> class, see the <xref:System.Workflow.ComponentModel.Compiler.ActivityValidatorAttribute.%23ctor%2A> constructor.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -54,9 +72,16 @@
         <Parameter Name="validatorType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="validatorType">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="validatorType">The name of the <see cref="T:System.Workflow.ComponentModel.Compiler.Validator" /> type.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.ActivityValidatorAttribute" /> class by using the specified validator type name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For a list of initial property values for an instance of the <xref:System.Workflow.ComponentModel.Compiler.ActivityValidatorAttribute> class, see the <xref:System.Workflow.ComponentModel.Compiler.ActivityValidatorAttribute.%23ctor%2A> constructor.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidatorTypeName">
@@ -72,10 +97,31 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the type of the associated <see cref="T:System.Workflow.ComponentModel.Compiler.Validator" /> class.</summary>
+        <value>The name of the type of the associated <see cref="T:System.Workflow.ComponentModel.Compiler.Validator" /> class.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.ActivityValidatorAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows the initial property values for an instance of the <xref:System.Workflow.ComponentModel.Compiler.ActivityValidatorAttribute> class.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Workflow.ComponentModel.Compiler.ActivityValidatorAttribute.ValidatorTypeName%2A>|`null` reference (`Nothing` in Visual Basic).|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

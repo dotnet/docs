@@ -1,19 +1,25 @@
 ---
 uid: System.Windows.Automation.Peers.RibbonToolTipAutomationPeer
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonToolTipAutomationPeer.#ctor(System.Windows.Controls.Ribbon.RibbonToolTip)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonToolTipAutomationPeer.GetClassNameCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RibbonToolTipAutomationPeer.GetNameCore
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

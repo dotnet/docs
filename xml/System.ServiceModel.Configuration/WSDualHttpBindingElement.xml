@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the configuration element for a secure and interoperable binding that is suitable for duplex service contracts or communication through SOAP intermediaries.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The wsDualHttpBinding is a secure, reliable, interoperable binding suitable for duplex service contracts. By default, it generates a run-time stack with WS-ReliableMessaging for reliability, WS-Security for message security and authentication, HTTP for message delivery, and a Text/XML message encoding.  
+  
+ This binding requires that the client has a public URI. It can be used to communicate reliably through one or more SOAP intermediaries.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +35,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.WSDualHttpBindingElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +52,8 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The configuration name of the binding. This value should be unique because it is used as identification for the binding.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.WSDualHttpBindingElement" /> class with the specified name.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +70,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type of this binding element.</summary>
+        <value>The <see cref="T:System.Type" /> of this binding element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,8 +93,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a boolean value that specifies whether to bypass the proxy server for local addresses.</summary>
+        <value>
+          <see langword="true" /> if the proxy server is bypassed for local addresses; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,9 +117,16 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a URI that specifies the base address the client listens to for response messages from the service.</summary>
+        <value>A URI that specifies the base address that the client listens to for response messages from the service.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this property has a value, this address (plus a GUID for each channel) is used for listening. Otherwise, the client base address is generated in a transport-specific manner.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HostNameComparisonMode">
@@ -130,8 +147,8 @@
         <ReturnType>System.ServiceModel.HostNameComparisonMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the HTTP hostname comparison mode used to parse URIs.</summary>
+        <value>A valid <see cref="P:System.ServiceModel.Configuration.WSDualHttpBindingElement.HostNameComparisonMode" /> value that specifies whether the hostname is used to reach the service when matching on the URI. The default value is <see cref="F:System.ServiceModel.HostNameComparisonMode.StrongWildcard" />, which ignores the hostname in the match.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,8 +168,8 @@
         <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
       </Parameters>
       <Docs>
-        <param name="binding">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="binding">A collection of binding elements.</param>
+        <summary>Initializes this binding configuration section with the content of the specified binding collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -177,8 +194,8 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the maximum amount of memory, in bytes, that can be allocated for the message buffer manager, which receives messages at the endpoints configured with this binding.</summary>
+        <value>The maximum size, in bytes, for the pool of buffers used by an endpoint configured with this binding. The default value is 524288 bytes.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -203,9 +220,18 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the maximum size, in bytes, for a message that can be received on a channel configured with this binding.</summary>
+        <value>The maximum size, in bytes, for a message that is processed by the binding. The default value is 65,536 bytes.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The size of the messages that can be received on the wire by services using the <xref:System.ServiceModel.WSDualHttpBinding> class is bounded by the amount of memory allocated for each message. This bound on message size is intended to limit exposure to DoS-style attacks.  
+  
+ Note that the settings for <xref:System.ServiceModel.Configuration.WSDualHttpBindingElement.MaxBufferPoolSize%2A> and <xref:System.ServiceModel.Configuration.WSDualHttpBindingElement.MaxReceivedMessageSize%2A>, are local behavioral settings. This means that they are not transmitted to other endpoints in metadata. If you generate a proxy to a service with a maximum message size of 2GB from metadata, the proxy still has a default value 64K. This leaves control of the appropriate bounds for message and message buffer size in the scope of local administrators.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MessageEncoding">
@@ -226,8 +252,8 @@
         <ReturnType>System.ServiceModel.WSMessageEncoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the encoder used to encode the message.</summary>
+        <value>A <see cref="T:System.ServiceModel.WSMessageEncoding" /> value that specifies the encoder used to encode the message. The default value is <see cref="F:System.ServiceModel.WSMessageEncoding.Text" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -247,8 +273,8 @@
         <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
       </Parameters>
       <Docs>
-        <param name="binding">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="binding">The binding to be applied.</param>
+        <summary>Called when the content of a specified binding collection is applied to this binding configuration element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -265,8 +291,8 @@
         <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.Configuration.ConfigurationPropertyCollection" /> instance that contains a collection of <see cref="T:System.Configuration.ConfigurationProperty" /> objects that can be attributes or <see cref="T:System.Configuration.ConfigurationElement" /> objects of this configuration element.</summary>
+        <value>A <see cref="T:System.Configuration.ConfigurationPropertyCollection" /> instance that contains a collection of <see cref="T:System.Configuration.ConfigurationProperty" /> objects that can be attributes or <see cref="T:System.Configuration.ConfigurationElement" /> objects of this configuration element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -288,9 +314,16 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or set a URI that specifies the address of the HTTP proxy.</summary>
+        <value>A URI that specifies the address of the HTTP proxy.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.ServiceModel.WSDualHttpBinding.UseDefaultWebProxy%2A> property is set to `true`, the value of this property is ignored.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReaderQuotas">
@@ -311,9 +344,16 @@
         <ReturnType>System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets constraints on the complexity of SOAP messages that can be processed by endpoints configured with this binding.</summary>
+        <value>The <see cref="T:System.Xml.XmlDictionaryReaderQuotas" /> that specifies the complexity constraints.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The complexity constraints include items such as a maximum element depth, or a maximum length for string content within the message. The constraints protect against a type of denial of service (DOS) attacks that attempt to use message complexity to tie up endpoint processing resources.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReliableSession">
@@ -334,9 +374,16 @@
         <ReturnType>System.ServiceModel.Configuration.StandardBindingReliableSessionElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a configuration element that specifies whether reliable sessions are enabled for the endpoint configured with this binding.</summary>
+        <value>An <see cref="T:System.ServiceModel.Configuration.ReliableSessionElement" /> that specifies whether reliable sessions are enabled for the endpoint configured with this binding.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A reliable session is required for services configured with wsDualHttpBinding binding.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Security">
@@ -357,8 +404,8 @@
         <ReturnType>System.ServiceModel.Configuration.WSDualHttpSecurityElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type of security to be used with this binding.</summary>
+        <value>The <see cref="T:System.ServiceModel.Configuration.WSDualHttpSecurityElement" /> that specifies the security settings used with this binding.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -383,8 +430,8 @@
         <ReturnType>System.Text.Encoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the character set encoding to be used for emitting messages on the binding.</summary>
+        <value>A valid <see cref="T:System.Text.Encoding" /> value that specifies the character set encoding to be used for emitting messages on the binding. The default is <see cref="T:System.Text.UTF8Encoding" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -406,9 +453,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a boolean value that specifies whether the binding supports flowing WS-Transactions.</summary>
+        <value>
+          <see langword="true" /> if the binding supports flowing WS-Transactions; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value specifies that clients do not flow transactions and services reject messages with a flowed transaction message header.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UseDefaultWebProxy">
@@ -429,8 +484,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a boolean value that specifies whether the system’s auto-configured HTTP proxy is used.</summary>
+        <value>
+          <see langword="true" /> if the system’s auto-configured HTTP proxy is used; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

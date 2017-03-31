@@ -1,29 +1,48 @@
 ---
 uid: System.Xml.Serialization.Configuration.SchemaImporterExtensionElement
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.Configuration.SchemaImporterExtensionElement.#ctor(System.String,System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.Configuration.SchemaImporterExtensionElement.Name
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.Configuration.SchemaImporterExtensionElement.#ctor(System.String,System.Type)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.Configuration.SchemaImporterExtensionElement.Type
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.Configuration.SchemaImporterExtensionElement.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Xml.Serialization.Configuration.SchemaImporterExtensionElement.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

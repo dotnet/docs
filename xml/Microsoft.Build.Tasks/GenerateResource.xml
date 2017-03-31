@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Implements the <c>GenerateResource</c> task. Use the <c>GenerateResource</c> element in your project file to create and execute this task. For usage and parameter information, see [GenerateResource Task](../Topic/GenerateResource%20Task.md).</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.GenerateResource" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,9 +48,16 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the additional inputs for the dependency checking that the <c>GenerateResource</c> task performs.</summary>
+        <value>The additional inputs for the dependency checking that the <c>GenerateResource</c> task performs.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For example, the project and targets files should be inputs to ensure that if they are updated all resources are regenerated.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EnvironmentVariables">
@@ -66,9 +73,16 @@
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets an array of name-value pairs of environment variables that should be passed to the spawned resgen.exe, in addition to (or selectively overriding) the regular environment block.</summary>
+        <value>Returns an array of name-value pairs of environment variables.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ These aren't currently used when resgen is run in-process.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ExcludedInputPaths">
@@ -84,8 +98,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets an array of items that specify paths from which tracked inputs will be ignored during Up to date checking.</summary>
+        <value>Returns an array of items that specify paths from which tracked inputs will be ignored during Up to date checking.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,8 +117,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Executes the <c>GenerateResource</c> task.</summary>
+        <returns>
+          <see langword="true" /> if the <c>GenerateResource</c> task execution succeeded; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,7 +136,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Property to allow multitargeting of ResolveComReferences: If true, tlbimp.exe and aximp.exe from the appropriate target framework will be run out-of-proc to generate the necessary wrapper assemblies.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -139,9 +154,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a flag specifying whether this rule is generating .resources files or extracting .ResW files from assemblies.</summary>
+        <value>Returns the flag.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Requires additional input filtering.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FilesWritten">
@@ -162,8 +184,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the names of all files written to disk including the cache file, if present.</summary>
+        <value>The names of all files written to disk.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -180,8 +202,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a switch that specifies whether tracked incremental build will be used. If true, incremental build is turned on; otherwise, a rebuild will be forced.</summary>
+        <value>Returns a switch that specifies whether tracked incremental build will be used. If true, incremental build is turned on; otherwise, a rebuild will be forced.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,9 +220,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a Boolean value that specifies whether to create a new <see cref="T:System.AppDomain" /> to evaluate the resources (.resx) files (<see langword="true" />) or to create a new <see cref="T:System.AppDomain" /> only when the resources files reference a user's assembly (<see langword="false" />).</summary>
+        <value>
+          <see langword="true" /> if the <c>GenerateResource</c> task should create a new <see cref="T:System.AppDomain" /> to evaluate the resources (.resx) files; <see langword="false" /> if the <c>GenerateResource</c> task should create a new <see cref="T:System.AppDomain" /> only when the resources (.resx) files reference a user's assembly.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is `false`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OutputDirectory">
@@ -216,9 +246,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value specifying where to extract .ResW files.</summary>
+        <value>Returns the value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Could be the intermediate directory.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OutputResources">
@@ -239,9 +276,16 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the generated files, such as .resources files.</summary>
+        <value>The name of the generated files, such as .resources files.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you do not specify a name, the name of the matching input file is used and the .resources file that is created is placed in the directory that contains the input file.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PublicClass">
@@ -257,8 +301,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a Boolean value that indicates whether the <c>GenerateResource</c> task should create a strongly typed resource class as a public class.</summary>
+        <value>
+          <see langword="true" /> if the <c>GenerateResource</c> task should create a strongly typed resource class as a public class; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -275,9 +320,18 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the references to load types in .resx files from.</summary>
+        <value>The references to load types in .resx files from.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Resx file data elements may have a .NET type. When the .resx file is read, this must be resolved. Typically, it is resolved successfully by using standard type loading rules. If you provide assemblies in <xref:Microsoft.Build.Tasks.GenerateResource.References%2A>, they take precedence.  
+  
+ This parameter is not required for strongly typed resources.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SdkToolsPath">
@@ -293,7 +347,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Even though the generate resource task will do the processing in process, a logging message is still generated. This logging message will include the path to the windows SDK. Since the targets now will pass in the Windows SDK path we should use this for logging.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -319,9 +373,24 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the items to convert.</summary>
+        <value>The items to convert.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Items passed to this parameter must have one of the following file extensions:  
+  
+-   `.txt`: Specifies the extension for a text file to convert. Text files can only contain string resources.  
+  
+-   `.resx`: Specifies the extension for an XML-based resource file to convert.  
+  
+-   `.restext`: Specifies the same format as .txt. This different extension is useful if you want to clearly distinguish source files that contain resources from other source files in your build process.  
+  
+ `.resources`: Specifies the extension for a resource file to convert.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StateFile">
@@ -337,8 +406,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the path to an optional cache file that is used to speed up dependency checking of links in .resx input files.</summary>
+        <value>The path to an optional cache file that is used to speed up dependency checking of links in .resx input files.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -360,9 +429,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the class name for the strongly typed resource class.</summary>
+        <value>The class name for the strongly typed resource class.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this property is not specified, the base name of the resource file is used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StronglyTypedFileName">
@@ -383,9 +459,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the filename for the source file.</summary>
+        <value>The filename for the source file.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this property is not specified, the name of the class is used as the base filename, with the extension dependent on the language. For example: `MyClass.cs`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StronglyTypedLanguage">
@@ -401,9 +484,18 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the language to use when generating the class source for the strongly typed resource.</summary>
+        <value>The language to use when generating the class source for the strongly typed resource.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property must match exactly one of the languages used by the CodeDomProvider. For example: `VB` or `C#`.  
+  
+ By passing a value to this parameter, you instruct the task to generate strongly typed resources.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StronglyTypedManifestPrefix">
@@ -419,8 +511,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the resource namespace or manifest prefix to use in the generated class source for the strongly typed resource.</summary>
+        <value>The resource namespace or manifest prefix to use in the generated class source for the strongly typed resource.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -437,9 +529,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the namespace to use for the generated class source for the strongly typed resource.</summary>
+        <value>The namespace to use for the generated class source for the strongly typed resource.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this property is not specified, any strongly typed resources are in the global namespace.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TLogReadFiles">
@@ -455,8 +554,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an array of items that represent the read tracking logs.</summary>
+        <value>Returns an array of items that represent the read tracking logs.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -473,8 +572,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an array of items that represent the write tracking logs.</summary>
+        <value>Returns an array of items that represent the write tracking logs.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -491,8 +590,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Microsoft.Build.Utilities.ExecutableType of ResGen.exe. Used to determine whether or not Tracker.exe needs to be used to spawn ResGen.exe. If empty, uses a heuristic to determine a default architecture.</summary>
+        <value>Returns <see cref="T:System.String" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -509,8 +608,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Path to the appropriate .NET Framework location that contains FileTracker.dll. If set, the user takes responsibility for making sure that the bitness of the FileTracker.dll that they pass matches the bitness of the ResGen.exe that they intend to use. If not set, the task decides the appropriate location based on the current .NET Framework version.</summary>
+        <value>Returns <see cref="T:System.String" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -527,8 +626,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the intermediate directory into which the tracking logs from running this task will be placed.</summary>
+        <value>Returns the intermediate directory into which the tracking logs from running this task will be placed.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -545,8 +644,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Path to the appropriate Windows SDK location that contains Tracker.exe. If set, the user takes responsibility for making sure that the bitness of the Tracker.exe that they pass matches the bitness of the ResGen.exe that they intend to use. If not set, the task decides the appropriate location based on the current Windows SDK.</summary>
+        <value>Returns <see cref="T:System.String" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -563,9 +662,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a switch that specifies whether we should be tracking file access patterns.</summary>
+        <value>True if we should be tracking file access patterns; false otherwise.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To support incremental build, it is necessary to track file access patterns.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UseSourcePath">
@@ -581,8 +687,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a Boolean value that indicates whether the input file's directory is to be used for resolving relative file paths.</summary>
+        <value>
+          <see langword="true" /> if the input file's directory is to be used for resolving relative file paths; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

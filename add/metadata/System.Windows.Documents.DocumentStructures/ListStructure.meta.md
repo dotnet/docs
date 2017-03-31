@@ -1,34 +1,46 @@
 ---
 uid: System.Windows.Documents.DocumentStructures.ListStructure
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Documents.DocumentStructures.ListStructure.System#Windows#Markup#IAddChild#AddChild(System.Object)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Documents.DocumentStructures.ListStructure.System#Collections#IEnumerable#GetEnumerator
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Documents.DocumentStructures.ListStructure.System#Collections#Generic#IEnumerable{System#Windows#Documents#DocumentStructures#ListItemStructure}#GetEnumerator
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Documents.DocumentStructures.ListStructure.System#Windows#Markup#IAddChild#AddText(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Documents.DocumentStructures.ListStructure.#ctor
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Documents.DocumentStructures.ListStructure.Add(System.Windows.Documents.DocumentStructures.ListItemStructure)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

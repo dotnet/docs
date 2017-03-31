@@ -25,8 +25,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Terminates the running workflow instance when an abnormal situation occurs. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ <xref:System.Workflow.ComponentModel.TerminateActivity> immediately ends the execution of the current workflow instance. Unlike a suspended workflow instance, a terminated workflow instance can never be resumed.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,8 +51,29 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.TerminateActivity" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows initial property values for an instance of the <xref:System.Workflow.ComponentModel.TerminateActivity> class.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Workflow.ComponentModel.TerminateActivity.Error%2A>|null (`Nothing` in Visual Basic).|  
+  
+   
+  
+## Examples  
+ This example illustrates using the constructor for a <xref:System.Workflow.ComponentModel.TerminateActivity>, and other things discussed elsewhere within this type.  
+  
+ This code example is part of the Suspend and Terminate SDK sample and is from the SuspendAndTerminateWorkflow.Designer.cs file. For more information, see [Using Suspend and Terminate](http://msdn.microsoft.com/en-us/f4dffa58-d01e-44fb-b5a1-3b283d2c4517).  
+  
+ [!code-csharp[WF_Samples#173](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#173)]
+ [!code-vb[WF_Samples#173](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#173)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -57,8 +89,8 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The user-defined name of the activity.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.TerminateActivity" /> class using the name of the activity.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,9 +118,26 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets an error message to report to administrators, providing the reason for termination.</summary>
+        <value>An error message that provides the reason for the workflow instance termination. The default value is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this property is set when the activity is in runtime mode (the <xref:System.Workflow.ComponentModel.DependencyObject.DesignMode%2A> property is set to `false`) a <xref:System.Data.ReadOnlyException> is thrown.  
+  
+ Propagation of this error message is determined by the host (the instance manager or the persistence provider).  
+  
+   
+  
+## Examples  
+ The following example demonstrates setting the Error property.  This example is from the Suspend and Terminate SDK sample.  For more information, see [Suspend and Terminate Sample](http://msdn.microsoft.com/en-us/f4dffa58-d01e-44fb-b5a1-3b283d2c4517).  
+  
+ [!code-csharp[WF_Samples#176](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#176)]
+ [!code-vb[WF_Samples#176](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#176)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ErrorProperty">
@@ -104,8 +153,20 @@
         <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="P:System.Workflow.ComponentModel.TerminateActivity.Error" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ This example illustrates initializing the <xref:System.Workflow.ComponentModel.TerminateActivity.Error%2A> property for a <xref:System.Workflow.ComponentModel.TerminateActivity>, and other things discussed elsewhere within this type.  
+  
+ This code example is part of the Suspend and Terminate SDK sample and is from the SuspendAndTerminateWorkflow.Designer.cs file. For more information, see [Using Suspend and Terminate](http://msdn.microsoft.com/en-us/f4dffa58-d01e-44fb-b5a1-3b283d2c4517).  
+  
+ [!code-csharp[WF_Samples#173](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#173)]
+ [!code-vb[WF_Samples#173](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#173)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">

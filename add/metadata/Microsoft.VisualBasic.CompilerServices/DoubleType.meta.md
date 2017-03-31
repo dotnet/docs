@@ -1,34 +1,69 @@
 ---
 uid: Microsoft.VisualBasic.CompilerServices.DoubleType
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.CompilerServices.DoubleType.FromString(System.String,System.Globalization.NumberFormatInfo)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.CompilerServices.DoubleType.FromObject(System.Object,System.Globalization.NumberFormatInfo)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.CompilerServices.DoubleType.FromObject
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.CompilerServices.DoubleType.Parse(System.String,System.Globalization.NumberFormatInfo)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.CompilerServices.DoubleType.Parse(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.CompilerServices.DoubleType.FromObject(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.CompilerServices.DoubleType.FromString(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.CompilerServices.DoubleType.FromString
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.CompilerServices.DoubleType.Parse
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

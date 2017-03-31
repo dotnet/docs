@@ -38,8 +38,33 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides functionality required by all components.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ComponentModel.Component> is the default implementation of <xref:System.ComponentModel.IComponent> and serves as the base class for all components in the common language runtime.  
+  
+ You can contain components in a container. In this context, containment refers to logical containment, not visual containment. You can use components and containers in a variety of scenarios, both visual and non visual.  
+  
+ <xref:System.Windows.Forms.Control?displayProperty=fullName> inherits from <xref:System.ComponentModel.Component>, the default implementation of <xref:System.ComponentModel.IComponent>.  
+  
+ A component interacts with its container primarily through a container-provided <xref:System.ComponentModel.ISite>, which is a repository of container-specific per-component information.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to implement the <xref:System.ComponentModel.IComponent>, <xref:System.ComponentModel.ISite>, and <xref:System.ComponentModel.IContainer> interfaces.  
+  
+ [!code-cpp[ContainerExmpl#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ContainerExmpl/CPP/librarycontainer.cpp#1)]
+ [!code-csharp[ContainerExmpl#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ContainerExmpl/CS/librarycontainer.cs#1)]
+ [!code-vb[ContainerExmpl#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ContainerExmpl/VB/librarycontainer.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>To be a component, a class must implement the <see cref="T:System.ComponentModel.IComponent" /> interface and provide a basic constructor that requires no parameters or a single parameter of type <see cref="T:System.ComponentModel.IContainer" />. For more information about implementing <see cref="T:System.ComponentModel.IComponent" />, see [Programming with Components](../Topic/Programming%20with%20Components.md).</para>
+    </block>
   </Docs>
   <Members>
     <Member MemberName="Disposed">
@@ -64,8 +89,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the method that handles the <see cref="E:System.ComponentModel.IComponent.Disposed" /> event of a component.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you create a <xref:System.ComponentModel.IComponent.Disposed> delegate, you identify the method that handles the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Site">
@@ -90,9 +122,16 @@
         <ReturnType>System.ComponentModel.ISite</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see cref="T:System.ComponentModel.ISite" /> associated with the <see cref="T:System.ComponentModel.IComponent" />.</summary>
+        <value>The <see cref="T:System.ComponentModel.ISite" /> object associated with the component; or <see langword="null" />, if the component does not have a site.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Sites can also serve as a repository for container-specific, per-component information, such as the component name.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

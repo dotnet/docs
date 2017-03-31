@@ -1,4 +1,5 @@
 ---
 uid: Microsoft.Build.Logging.ColorResetter
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

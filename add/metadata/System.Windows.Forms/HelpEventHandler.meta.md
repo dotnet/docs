@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Forms.HelpEventHandler
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

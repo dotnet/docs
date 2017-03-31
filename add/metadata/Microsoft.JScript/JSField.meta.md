@@ -1,59 +1,64 @@
 ---
 uid: Microsoft.JScript.JSField
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSField.ReflectedType
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSField.Attributes
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSField.IsDefined(System.Type,System.Boolean)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSField.FieldType
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSField.#ctor
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSField.Name
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSField.GetCustomAttributes(System.Type,System.Boolean)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSField.FieldHandle
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSField.GetCustomAttributes(System.Boolean)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSField.DeclaringType
-internalonly: False
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.JSField.GetCustomAttributes
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSField.MemberType
-internalonly: False
+ms.author: "mikejo"
 ---

@@ -14,7 +14,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides access to the XML Schema definition language (XSD) of a SOAP type.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,8 +33,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the XML Schema definition language (XSD) of the current SOAP type.</summary>
+        <returns>A <see cref="T:System.String" /> that indicates the XSD of the current SOAP type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,24 +1,41 @@
 ---
 uid: System.Drawing.Imaging.EncoderParameters
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Imaging.EncoderParameters.Param
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Imaging.EncoderParameters.Dispose
-internalonly: False
----
-
----
-uid: System.Drawing.Imaging.EncoderParameters.#ctor(System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Imaging.EncoderParameters.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Drawing.Imaging.EncoderParameters.#ctor(System.Int32)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Drawing.Imaging.EncoderParameters.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

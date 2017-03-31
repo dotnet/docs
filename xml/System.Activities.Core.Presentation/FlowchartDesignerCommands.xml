@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Used by [!INCLUDE[vs_current_short](~/includes/vs-current-short-md.md)] to raise flowchart designer commands.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_FlowchartDesignerCommands#0](WFD_FlowchartDesignerCommands#0)]  -->  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ConnectNodesCommand">
@@ -28,7 +35,7 @@
         <ReturnType>System.Windows.Input.RoutedCommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the command used to link flowchart nodes in the flowchart designer.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

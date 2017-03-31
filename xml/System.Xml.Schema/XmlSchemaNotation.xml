@@ -16,8 +16,23 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the <see langword="notation" /> element from XML Schema as specified by the World Wide Web Consortium (W3C). An XML Schema <see langword="notation" /> declaration is a reconstruction of <see langword="XML 1.0 NOTATION" /> declarations. The purpose of notations is to describe the format of non-XML data within an XML document.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows the use of the `XmlSchemaNotation` class.  
+  
+ [!code-cpp[Classic WebData XmlSchemaNotation Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlSchemaNotation Example/CPP/notation.cpp#1)]
+ [!code-csharp[Classic WebData XmlSchemaNotation Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlSchemaNotation Example/CS/notation.cs#1)]
+ [!code-vb[Classic WebData XmlSchemaNotation Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlSchemaNotation Example/VB/notation.vb#1)]  
+  
+ The following XML file is generated for the preceding code example.  
+  
+ [!code-xml[Classic WebData XmlSchemaNotation Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlSchemaNotation Example/XML/example.xsd#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,7 +51,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Schema.XmlSchemaNotation" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,8 +78,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the notation.</summary>
+        <value>The name of the notation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,8 +106,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see langword="public" /> identifier.</summary>
+        <value>The <see langword="public" /> identifier. The value must be a valid Uniform Resource Identifier (URI).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,8 +134,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see langword="system" /> identifier.</summary>
+        <value>The <see langword="system" /> identifier. The value must be a valid URI.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

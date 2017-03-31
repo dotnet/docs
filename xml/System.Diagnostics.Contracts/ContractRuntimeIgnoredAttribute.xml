@@ -28,8 +28,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Identifies a member that has no run-time behavior.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Methods and properties that are marked with this attribute can be used within calls to <xref:System.Diagnostics.Contracts.Contract?displayProperty=fullName> methods, but they have no run-time behavior.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -52,7 +59,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Contracts.ContractRuntimeIgnoredAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

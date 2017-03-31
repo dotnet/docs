@@ -15,8 +15,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines identifiers that indicate the current battery charge level or charging state information.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the <xref:System.Windows.Forms.PowerStatus.BatteryChargeStatus%2A> property of the <xref:System.Windows.Forms.PowerStatus> class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Charging">
@@ -32,7 +39,7 @@
         <ReturnType>System.Windows.Forms.BatteryChargeStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates a battery is charging.</summary>
       </Docs>
     </Member>
     <Member MemberName="Critical">
@@ -48,7 +55,7 @@
         <ReturnType>System.Windows.Forms.BatteryChargeStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates a critically low level of battery charge.</summary>
       </Docs>
     </Member>
     <Member MemberName="High">
@@ -64,7 +71,7 @@
         <ReturnType>System.Windows.Forms.BatteryChargeStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates a high level of battery charge.</summary>
       </Docs>
     </Member>
     <Member MemberName="Low">
@@ -80,7 +87,7 @@
         <ReturnType>System.Windows.Forms.BatteryChargeStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates a low level of battery charge.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoSystemBattery">
@@ -96,7 +103,7 @@
         <ReturnType>System.Windows.Forms.BatteryChargeStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that no battery is present.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -112,7 +119,7 @@
         <ReturnType>System.Windows.Forms.BatteryChargeStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates an unknown battery condition.</summary>
       </Docs>
     </Member>
   </Members>

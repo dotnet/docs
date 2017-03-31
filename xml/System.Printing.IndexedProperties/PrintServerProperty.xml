@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a <see cref="T:System.Printing.PrintServer" /> property (and its value) of a printing system hardware or software component.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,9 +28,16 @@
         <Parameter Name="attributeName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="attributeName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="attributeName">The name of the <see cref="T:System.Printing.PrintServer" /> property that the <see cref="T:System.Printing.IndexedProperties.PrintServerProperty" /> represents.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.IndexedProperties.PrintServerProperty" /> class for the specified property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `attributeName` should be spelled exactly the same as the name of some particular <xref:System.Printing.PrintServer> property of a print system object, including casing. For example, the <xref:System.Printing.PrintQueue.HostingPrintServer%2A> property of a <xref:System.Printing.PrintQueue> object must be spelled "HostingPrintServer", not "PrintServer" or "Hostingprintserver".  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -47,10 +54,17 @@
         <Parameter Name="attributeValue" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="attributeName">To be added.</param>
-        <param name="attributeValue">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="attributeName">The name of the <see cref="T:System.Printing.PrintServer" /> property that the <see cref="T:System.Printing.IndexedProperties.PrintServerProperty" /> represents.</param>
+        <param name="attributeValue">The value of the property that the <see cref="T:System.Printing.IndexedProperties.PrintServerProperty" /> represents.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.IndexedProperties.PrintServerProperty" /> class that has the specified value for the specified property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `attributeName` should be spelled exactly the same as the name of some particular <xref:System.Printing.PrintServer> property of a print system object, including casing. For example, the <xref:System.Printing.PrintQueue.HostingPrintServer%2A> property of a <xref:System.Printing.PrintQueue> object must be spelled "HostingPrintServer", not "PrintServer" or "Hostingprintserver".  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InternalDispose">
@@ -136,9 +150,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value of the property that the <see cref="T:System.Printing.IndexedProperties.PrintServerProperty" /> represents.</summary>
+        <value>A <see cref="T:System.Object" /> that can be cast as a <see cref="T:System.Printing.PrintServer" />.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The property is not internally initialized.</exception>
       </Docs>
     </Member>
   </Members>

@@ -1,29 +1,41 @@
 ---
 uid: Microsoft.Build.Framework.BuildFinishedEventArgs
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.BuildFinishedEventArgs.#ctor(System.String,System.String,System.Boolean,System.DateTime)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.BuildFinishedEventArgs.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.BuildFinishedEventArgs.#ctor(System.String,System.String,System.Boolean,System.DateTime,System.Object[])
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.BuildFinishedEventArgs.#ctor(System.String,System.String,System.Boolean)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
+---
+
+---
+uid: Microsoft.Build.Framework.BuildFinishedEventArgs.#ctor
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.BuildFinishedEventArgs.Succeeded
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

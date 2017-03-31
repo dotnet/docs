@@ -1,9 +1,13 @@
 ---
 uid: System.Windows.Automation.DockPattern.DockPatternInformation
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.DockPattern.DockPatternInformation.DockPosition
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---

@@ -16,8 +16,16 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides an object list adapter for the mobile XHTML adapter set. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlObjectListAdapter> class can be used by mobile control developers to display an <xref:System.Web.UI.MobileControls.ObjectList> control on new devices or for new markup standards. For more information, see [Control and Adapter Interaction](http://msdn.microsoft.com/en-us/c330dabc-7e28-40bc-b777-101a5c6fa982).  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +39,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlObjectListAdapter" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +56,15 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>A string constant used in postback event arguments to indicate whether the user should be returned to the list view. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlObjectListAdapter.BackToList> field, which is the value "__back", is used by mobile control developers.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Control">
@@ -65,8 +80,8 @@
         <ReturnType>System.Web.UI.MobileControls.ObjectList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns a strongly typed reference to the associated control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>An <see cref="T:System.Web.UI.MobileControls.ObjectList" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,9 +101,17 @@
         <Parameter Name="doDataBind" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="doDataBind">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="doDataBind">
+          <see langword="true" /> to bind the templated UI to the underlying <see cref="T:System.Web.UI.MobileControls.ObjectList" />; otherwise, <see langword="false" />.</param>
+        <summary>Called by a control to create a templated user interface (UI) if device templates are defined. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation of the <xref:System.Web.UI.MobileControls.MobileControl.CreateTemplatedUI%2A> method calls the <xref:System.Web.UI.MobileControls.IControlAdapter.CreateTemplatedUI%2A?displayProperty=fullName> method of the corresponding control adapter, which in turn can either call back the <xref:System.Web.UI.MobileControls.ObjectList.CreateTemplatedItemsList%2A> method or the <xref:System.Web.UI.MobileControls.ObjectList.CreateTemplatedItemDetails%2A> method for the control, or create its own device-specific templated UI.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HandlePostBackEvent">
@@ -107,10 +130,21 @@
         <Parameter Name="eventArgument" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="eventArgument">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="eventArgument">Name of the event.</param>
+        <summary>Returns <see langword="true" /> if the event was handled. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <returns>
+          <see langword="true" /> if the event was handled; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by a control when it receives a postback event notification, to check whether the event is adapter-specific. If the control implements the <xref:System.Web.UI.IPostBackEventHandler> method and receives a postback event, the <xref:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent%2A> method of the control adapter is called. If events sent to the control can vary depending on the target device, the control implementation of this method must call the <xref:System.Web.UI.MobileControls.Adapters.ControlAdapter.HandlePostBackEvent%2A> method of the control adapter.  
+  
+ This method returns `true` or `false`, indicating whether the device adapter handled the event. It returns `false` by default.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Exception">the postback data is invalid.</exception>
       </Docs>
     </Member>
     <Member MemberName="HasCommands">
@@ -127,8 +161,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a Boolean value indicating whether the <see cref="T:System.Web.UI.MobileControls.ObjectList" /> control contains any commands. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <returns>
+          <see langword="true" /> if the associated <see cref="T:System.Web.UI.MobileControls.ObjectList" /> has one or more commands; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,8 +181,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a Boolean value indicating whether an <see cref="T:System.Web.UI.MobileControls.ObjectList" /> control contains a default command. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <returns>
+          <see langword="true" /> if an <see cref="T:System.Web.UI.MobileControls.ObjectList" /> contains a default command; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -165,9 +201,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a Boolean value indicating whether a list item can display all fields of an item. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <returns>
+          <see langword="true" /> if all fields of a list item can be displayed; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlObjectListAdapter.HasItemDetails%2A> method indicates that the item needs a details view in order for the user to see all the data.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnlyHasDefaultCommand">
@@ -184,8 +228,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a Boolean value indicating whether an <see cref="T:System.Web.UI.MobileControls.ObjectList" /> control contains a default command and no other commands. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <returns>
+          <see langword="true" /> if an <see cref="T:System.Web.UI.MobileControls.ObjectList" /> has a default command and no other commands; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -205,8 +250,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">An object (defined by <see cref="T:System.EventArgs" />) that contains event data.</param>
+        <summary>Called prior to rendering the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -226,8 +271,8 @@
         <Parameter Name="writer" Type="System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" /> used to render the server control content on the client's browser.</param>
+        <summary>Renders the control on the page using the provided <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -248,10 +293,17 @@
         <Parameter Name="item" Type="System.Web.UI.MobileControls.ObjectListItem" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="writer">An <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" />.</param>
+        <param name="item">An <see cref="T:System.Web.UI.MobileControls.ObjectListItem" />.</param>
+        <summary>Renders the details of the specified item. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlObjectListAdapter.RenderItemDetails%2A> method is called during rendering for the details view of the specific item in the <xref:System.Web.UI.MobileControls.ObjectList> control.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderItemsList">
@@ -270,9 +322,16 @@
         <Parameter Name="writer" Type="System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="writer">An <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" />.</param>
+        <summary>Renders the list of items in the <see cref="T:System.Web.UI.MobileControls.ObjectList" /> control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlObjectListAdapter.RenderItemsList%2A> method is called during rendering to render each item in the list.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowMore">
@@ -288,8 +347,15 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>A string constant used in postback event arguments to indicate whether the list should jump to the first item beyond the currently visible items. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlObjectListAdapter.ShowMore> field, which is the value "__more", is used by mobile control developers.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowMoreFormat">
@@ -305,8 +371,17 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>A string constant used in postback event arguments to indicate that the browser should jump to a specific item in the list. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlObjectListAdapter.ShowMoreFormat> field, which is an internal field and has the value "__more*n*", where `n` is a number, is created during rendering. This field is used like the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlObjectListAdapter.ShowMore> field, except that it specifies the index of the item to display in details view.  
+  
+ The <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlObjectListAdapter.ShowMoreFormat> field is used by mobile control developers.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

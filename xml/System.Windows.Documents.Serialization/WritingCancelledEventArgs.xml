@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides data for the <see cref="E:System.Windows.Xps.XpsDocumentWriter.WritingCancelled" /> event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <Parameter Name="exception" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="exception">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="exception">The exception that canceled the write operation.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.Serialization.WritingCancelledEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <ReturnType>System.Exception</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the exception that canceled the write operation.</summary>
+        <value>The exception that canceled the write operation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

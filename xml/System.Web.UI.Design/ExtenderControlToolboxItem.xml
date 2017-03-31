@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a way to determine which target controls can be extended by a particular extender control in the toolbox.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.ExtenderControlToolboxItem.GetTargetControlTypes%2A> method returns the collection of target types. The collection is cached for performance by using the <xref:System.Drawing.Design.ToolboxItem.Properties%2A> dictionary.  
+  
+ If you write an extender control that implements <xref:System.Web.UI.IExtenderControl>, but that does not derive from <xref:System.Web.UI.ExtenderControl>, specify this type in the <xref:System.ComponentModel.ToolboxItemAttribute> attribute of your control.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +35,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.ExtenderControlToolboxItem" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +52,8 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="type">The type of the target control.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.ExtenderControlToolboxItem" /> class by using the specified type.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,9 +71,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">An object that provides serialization information.</param>
+        <param name="context">An object that describes the source and destination of the serialized stream.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.ExtenderControlToolboxItem" /> class by using the specified parameters.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,10 +93,17 @@
         <Parameter Name="host" Type="System.ComponentModel.Design.IDesignerHost" />
       </Parameters>
       <Docs>
-        <param name="host">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="host">The control host.</param>
+        <summary>Returns the collection of target types.</summary>
+        <returns>A read-only collection of the target types.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The collection is cached for performance by using the <xref:System.Drawing.Design.ToolboxItem.Properties%2A> dictionary.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -106,8 +122,8 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="type">The type of the target control.</param>
+        <summary>Pre-fills the target-type cache entry with the specified type.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

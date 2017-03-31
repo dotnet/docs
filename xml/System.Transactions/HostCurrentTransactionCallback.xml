@@ -19,8 +19,15 @@
     <ReturnType>System.Transactions.Transaction</ReturnType>
   </ReturnValue>
   <Docs>
-    <summary>To be added.</summary>
-    <returns>To be added.</returns>
-    <remarks>To be added.</remarks>
+    <summary>Provides a mechanism for the hosting environment to supply its own default notion of <see cref="P:System.Transactions.Transaction.Current" />.</summary>
+    <returns>A <see cref="T:System.Transactions.Transaction" /> object.</returns>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This delegate provides a mechanism for a hosting environment to supply its own default notion of <xref:System.Transactions.Transaction.Current%2A>. It is called when <xref:System.Transactions.Transaction.Current%2A> is `null`, and there is no current <xref:System.Transactions.TransactionScope> that indicates that the ambient transaction may have been suppressed.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

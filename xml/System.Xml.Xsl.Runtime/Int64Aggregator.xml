@@ -20,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Computes aggregates over a sequence of <see langword="Int64" /> values.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -44,8 +44,8 @@
         <Parameter Name="value" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">A value of type <see langword="Int64" />.</param>
+        <summary>Finds an average of a sequence of <see langword="Int64" /> values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,8 +66,8 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns an <see langword="Int64" /> value that contains the average of a sequence of <see langword="Int64" /> values.</summary>
+        <value>An <see langword="Int64" /> value that contains the average of a sequence of <see langword="Int64" /> values.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,7 +89,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a sequence of <see langword="Int64" /> values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,8 +110,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns a Boolean value that indicates whether the sequence of <see langword="Int64" /> values is empty.</summary>
+        <value>
+          <see langword="true" /> if the sequence of <see langword="Int64" /> values is empty; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,8 +136,8 @@
         <Parameter Name="value" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">A value of type <see langword="Int64" />.</param>
+        <summary>Assigns the <paramref name="value" /> parameter to the existing result if the <paramref name="value" /> parameter is greater than the existing result.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -157,8 +158,8 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the largest <see langword="Int64" /> value.</summary>
+        <value>The largest <see langword="Int64" /> value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -182,8 +183,8 @@
         <Parameter Name="value" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">A value of type <see langword="Int64" />.</param>
+        <summary>Assigns the <paramref name="value" /> parameter to the existing result if the <paramref name="value" /> parameter is less than the existing result.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -204,8 +205,8 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gest the smallest <see langword="Int64" /> value.</summary>
+        <value>The smallest <see langword="Int64" /> value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -229,8 +230,8 @@
         <Parameter Name="value" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">A value of type <see langword="Int64" />.</param>
+        <summary>Adds an <see langword="Int64" /> value to the existing result.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -251,8 +252,8 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns an <see langword="Int64" /> value that contains the sum of a sequence of <see langword="Int64" /> values.</summary>
+        <value>An <see langword="Int64" /> value that contains the sum of a sequence of <see langword="Int64" /> values.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

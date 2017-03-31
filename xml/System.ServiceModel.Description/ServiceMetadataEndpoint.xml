@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>A standard endpoint with a fixed contract (<see cref="T:System.ServiceModel.Description.IMetadataExchange" />) and a default HTTP binding used for exposing metadata.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,7 +34,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates and initializes a new instance of the <see cref="T:System.ServiceModel.Description.ServiceMetadataEndpoint" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +51,8 @@
         <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" />
       </Parameters>
       <Docs>
-        <param name="address">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="address">The endpoint address.</param>
+        <summary>Creates and initializes a new instance of the <see cref="T:System.ServiceModel.Description.ServiceMetadataEndpoint" /> class using the specified endpoint address.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,9 +70,9 @@
         <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" />
       </Parameters>
       <Docs>
-        <param name="binding">To be added.</param>
-        <param name="address">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="binding">The binding to use for the service metadata endpoint.</param>
+        <param name="address">The endpoint address.</param>
+        <summary>Creates and initializes a new instance of the <see cref="T:System.ServiceModel.Description.ServiceMetadataEndpoint" /> class using the specified binding and endpoint address.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

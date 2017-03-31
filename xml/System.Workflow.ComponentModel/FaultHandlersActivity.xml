@@ -35,8 +35,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a <see cref="T:System.Workflow.ComponentModel.CompositeActivity" /> that has an ordered list of child activities of type <see cref="T:System.Workflow.ComponentModel.FaultHandlerActivity" />. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -50,7 +59,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.FaultHandlersActivity" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,8 +76,8 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The user-defined name of the activity.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.FaultHandlersActivity" /> class using the name of the activity.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -219,9 +228,9 @@
         <Parameter Name="e" Type="System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="sender">To be added.</param>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="sender">The object that raised the event.</param>
+        <param name="e">The previously typed event arguments.</param>
+        <summary>Defines the processing procedure when the subscribed-to event occurs.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

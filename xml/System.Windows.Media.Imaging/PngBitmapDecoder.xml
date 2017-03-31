@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines a decoder for [!INCLUDE[TLA#tla_png](~/includes/tlasharptla-png-md.md)] encoded images.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,11 +35,29 @@
         <Parameter Name="cacheOption" Type="System.Windows.Media.Imaging.BitmapCacheOption" />
       </Parameters>
       <Docs>
-        <param name="bitmapStream">To be added.</param>
-        <param name="createOptions">To be added.</param>
-        <param name="cacheOption">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="bitmapStream">The bitmap stream to decode.</param>
+        <param name="createOptions">Initialization options for the bitmap image.</param>
+        <param name="cacheOption">The cache method to use for the bitmap image.</param>
+        <summary>Initializes a new instance of <see cref="T:System.Windows.Media.Imaging.PngBitmapDecoder" /> from the specified file stream with the specified <paramref name="createOptions" /> and <paramref name="cacheOption" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Media.Imaging.BitmapCacheOption> cache option if you wish to close the `bitmapStream` after the decoder is created. The default <xref:System.Windows.Media.Imaging.BitmapCacheOption> cache option retains access to the stream until the bitmap is needed and cleanup is handled by the garbage collector.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create an instance of and use a <xref:System.Windows.Media.Imaging.PngBitmapDecoder> from a file stream. The decoded image is used as the source of an <xref:System.Windows.Controls.Image> control.  
+  
+ [!code-cpp[pngbitmapdecoderencoder#1](~/samples/snippets/cpp/VS_Snippets_Wpf/PngBitmapDecoderEncoder/CPP/PngEncoderDecoder.cpp#1)]
+ [!code-csharp[pngbitmapdecoderencoder#1](~/samples/snippets/csharp/VS_Snippets_Wpf/PngBitmapDecoderEncoder/CSharp/PngEncoderDecoder.cs#1)]
+ [!code-vb[pngbitmapdecoderencoder#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PngBitmapDecoderEncoder/VB/PngEncoderDecoder.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="bitmapStream" /> value is <see langword="null" />.</exception>
+        <exception cref="T:System.IO.FileFormatException">The <paramref name="bitmapStream" /> is not a [!INCLUDE[TLA#tla_png](~/includes/tlasharptla-png-md.md)] encoded image.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -62,11 +80,24 @@
         <Parameter Name="cacheOption" Type="System.Windows.Media.Imaging.BitmapCacheOption" />
       </Parameters>
       <Docs>
-        <param name="bitmapUri">To be added.</param>
-        <param name="createOptions">To be added.</param>
-        <param name="cacheOption">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="bitmapUri">The <see cref="T:System.Uri" /> that identifies the bitmap to decode.</param>
+        <param name="createOptions">Initialization options for the bitmap image.</param>
+        <param name="cacheOption">The cache method to use for the bitmap image.</param>
+        <summary>Initializes a new instance of <see cref="T:System.Windows.Media.Imaging.PngBitmapDecoder" /> from the specified <see cref="T:System.Uri" /> with the specified <paramref name="createOptions" /> and <paramref name="cacheOption" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to create an instance of and use a <xref:System.Windows.Media.Imaging.PngBitmapDecoder> from a <xref:System.Uri>. The decoded image is used as the source of an <xref:System.Windows.Controls.Image> control.  
+  
+ [!code-cpp[pngbitmapdecoderencoder#5](~/samples/snippets/cpp/VS_Snippets_Wpf/PngBitmapDecoderEncoder/CPP/PngEncoderDecoder.cpp#5)]
+ [!code-csharp[pngbitmapdecoderencoder#5](~/samples/snippets/csharp/VS_Snippets_Wpf/PngBitmapDecoderEncoder/CSharp/PngEncoderDecoder.cs#5)]
+ [!code-vb[pngbitmapdecoderencoder#5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PngBitmapDecoderEncoder/VB/PngEncoderDecoder.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="bitmapUri" /> value is <see langword="null" />.</exception>
+        <exception cref="T:System.IO.FileFormatException">The <paramref name="bitmapUri" /> is not a [!INCLUDE[TLA#tla_png](~/includes/tlasharptla-png-md.md)] encoded image.</exception>
       </Docs>
     </Member>
   </Members>

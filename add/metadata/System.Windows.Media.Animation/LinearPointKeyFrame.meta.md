@@ -1,29 +1,45 @@
 ---
 uid: System.Windows.Media.Animation.LinearPointKeyFrame
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.LinearPointKeyFrame.CreateInstanceCore
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.LinearPointKeyFrame.#ctor(System.Windows.Point,System.Windows.Media.Animation.KeyTime)
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.LinearPointKeyFrame.#ctor(System.Windows.Point)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.LinearPointKeyFrame.#ctor
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.Animation.LinearPointKeyFrame.CreateInstanceCore
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.Animation.LinearPointKeyFrame.#ctor(System.Windows.Point,System.Windows.Media.Animation.KeyTime)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.LinearPointKeyFrame.#ctor(System.Windows.Point)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.Animation.LinearPointKeyFrame.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.LinearPointKeyFrame.InterpolateValueCore(System.Windows.Point,System.Double)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

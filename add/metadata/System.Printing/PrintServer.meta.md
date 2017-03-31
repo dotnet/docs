@@ -1,204 +1,312 @@
 ---
 uid: System.Printing.PrintServer
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Printing.PrintServer.Refresh
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintServer.InstallPrintQueue
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintServer.RestartJobOnPoolTimeout
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintServer.Name
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintServer.GetPrintQueues(System.String[])
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Printing.PrintServer.#ctor(System.String,System.String[],System.Printing.PrintSystemDesiredAccess)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintServer.Commit
-internalonly: False
----
-
----
-uid: System.Printing.PrintServer.InstallPrintQueue(System.String,System.String,System.String[],System.String,System.Printing.PrintQueueAttributes,System.String,System.String,System.String,System.String,System.Int32,System.Int32)
-internalonly: False
----
-
----
-uid: System.Printing.PrintServer.#ctor(System.String,System.String[])
-internalonly: False
----
-
----
-uid: System.Printing.PrintServer.InstallPrintQueue(System.String,System.String,System.String[],System.String,System.Printing.IndexedProperties.PrintPropertyDictionary)
-internalonly: False
----
-
----
-uid: System.Printing.PrintServer.GetPrintQueues(System.String[],System.Printing.EnumeratedPrintQueueTypes[])
-internalonly: False
----
-
----
-uid: System.Printing.PrintServer.NetPopup
-internalonly: False
----
-
----
-uid: System.Printing.PrintServer.MinorVersion
-internalonly: False
----
-
----
-uid: System.Printing.PrintServer.#ctor(System.String,System.Printing.PrintServerIndexedProperty[],System.Printing.PrintSystemDesiredAccess)
-internalonly: False
----
-
----
-uid: System.Printing.PrintServer.#ctor(System.String,System.Printing.PrintServerIndexedProperty[])
-internalonly: False
----
-
----
-uid: System.Printing.PrintServer.DefaultPortThreadPriority
-internalonly: False
----
-
----
-uid: System.Printing.PrintServer.EventLog
-internalonly: False
----
-
----
-uid: System.Printing.PrintServer.IsDelayInitialized
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintServer.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintServer.InstallPrintQueue(System.String,System.String,System.String[],System.String,System.Printing.PrintQueueAttributes,System.String,System.String,System.String,System.String,System.Int32,System.Int32)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintServer.#ctor(System.String,System.String[])
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintServer.InstallPrintQueue(System.String,System.String,System.String[],System.String,System.Printing.IndexedProperties.PrintPropertyDictionary)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Printing.PrintServer.GetPrintQueues(System.String[],System.Printing.EnumeratedPrintQueueTypes[])
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintServer.NetPopup
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Printing.PrintServer.MinorVersion
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintServer.#ctor(System.String,System.Printing.PrintServerIndexedProperty[],System.Printing.PrintSystemDesiredAccess)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintServer.#ctor(System.String,System.Printing.PrintServerIndexedProperty[])
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintServer.DefaultPortThreadPriority
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintServer.EventLog
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Printing.PrintServer.GetPrintQueue
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintServer.IsDelayInitialized
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintServer.#ctor
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Printing.PrintServer.#ctor(System.Printing.PrintSystemDesiredAccess)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintServer.SchedulerPriority
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Printing.PrintServer.GetPrintQueues(System.Printing.PrintQueueIndexedProperty[])
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintServer.GetPrintQueues
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Printing.PrintServer.#ctor(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintServer.MajorVersion
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintServer.DeletePrintQueue(System.Printing.PrintQueue)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintServer.SubSystemVersion
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintServer.DeletePrintQueue
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintServer.GetPrintQueues
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintServer.#ctor(System.String,System.Printing.PrintSystemDesiredAccess)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintServer.DefaultSchedulerPriority
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintServer.PortThreadPriority
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintServer.RestartJobOnPoolEnabled
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintServer.InstallPrintQueue(System.String,System.String,System.String[],System.String,System.Printing.PrintQueueAttributes)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintServer.GetPrintQueue(System.String,System.String[])
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintServer.DeletePrintQueue(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintServer.DefaultSpoolDirectory
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintServer.InternalDispose(System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintServer.BeepEnabled
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintServer.GetPrintQueues(System.Printing.EnumeratedPrintQueueTypes[])
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintServer.GetPrintQueue(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintServer.InstallPrintQueue(System.String,System.String,System.String[],System.String,System.Printing.PrintQueueAttributes,System.Printing.PrintQueueStringProperty,System.Int32,System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintServer.GetPrintQueues(System.Printing.PrintQueueIndexedProperty[],System.Printing.EnumeratedPrintQueueTypes[])
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

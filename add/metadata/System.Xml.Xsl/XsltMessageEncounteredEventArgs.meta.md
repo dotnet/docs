@@ -1,14 +1,20 @@
 ---
 uid: System.Xml.Xsl.XsltMessageEncounteredEventArgs
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Xsl.XsltMessageEncounteredEventArgs.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Xsl.XsltMessageEncounteredEventArgs.Message
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

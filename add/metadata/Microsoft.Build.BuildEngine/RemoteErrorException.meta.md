@@ -1,9 +1,11 @@
 ---
 uid: Microsoft.Build.BuildEngine.RemoteErrorException
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.BuildEngine.RemoteErrorException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

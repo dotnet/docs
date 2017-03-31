@@ -1,9 +1,13 @@
 ---
 uid: System.ComponentModel.Design.IDesignerHostTransactionState
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.IDesignerHostTransactionState.IsClosingTransaction
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -11,8 +11,49 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the configuration elements associated with a provider.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ASP.NET uses providers to perform specific services required by a feature. For example, the membership feature uses a provider to coordinate the persistence of membership data in a database.  
+  
+ In a configuration file, individual providers are added to a `providers` element within a particular feature section.  
+  
+ The <xref:System.Configuration.ProviderSettings> class represents a particular group of settings that are added to the `providers` element within a configuration section. Typically the configuration attributes specified by the `add` directive include a name, type, and other properties.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Configuration.ProviderSettings>.  
+  
+ [!code-csharp[System.Configuration.ProviderSettings#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ProviderSettings/CS/ProviderSettings.cs#1)]
+ [!code-vb[System.Configuration.ProviderSettings#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ProviderSettings/VB/ProviderSettings.vb#1)]  
+  
+ The following is an excerpt of the configuration file used by the above example.  
+  
+```  
+<?xml version="1.0" encoding="utf-8" ?>  
+<configuration>  
+  
+  <configProtectedData>  
+  
+    <providers>  
+      <clear />  
+      <add  
+         name="TripleDESProtectedConfigurationProvider"   
+         type="Samples.Aspnet.TripleDESProtectedConfigurationProvider, protectedconfigurationproviderlib, Version=1.0.0.0, Culture=neutral,   
+PublicKeyToken=79e01ae0f5cfc66f, processorArchitecture=MSIL" />  
+  
+    </providers>  
+  
+  </configProtectedData>  
+  
+</configuration>  
+```  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,8 +67,17 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.ProviderSettings" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Initializes a new instance of the <xref:System.Configuration.ProviderSettings> class.  
+  
+ Use this constructor to create a new <xref:System.Configuration.ProviderSettings> instance.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -44,10 +94,17 @@
         <Parameter Name="type" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the provider to configure settings for.</param>
+        <param name="type">The type of the provider to configure settings for.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.ProviderSettings" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create a new <xref:System.Configuration.ProviderSettings> instance with the specified name and type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsModified">
@@ -87,9 +144,24 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the provider configured by this class.</summary>
+        <value>The name of the provider.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This value of the <xref:System.Configuration.ProviderSettings.Name%2A> property is the same as the value for the `name` attribute that appears in the configuration section for the provider that is configured by the <xref:System.Configuration.ProviderSettings> class.  
+  
+   
+  
+## Examples  
+ The following code example shows how to access the <xref:System.Configuration.ProviderSettings.Name%2A> property.  
+  
+ [!code-csharp[System.Configuration.ProviderSettings#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ProviderSettings/CS/ProviderSettings.cs#2)]
+ [!code-vb[System.Configuration.ProviderSettings#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ProviderSettings/VB/ProviderSettings.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnDeserializeUnrecognizedAttribute">
@@ -129,9 +201,24 @@
         <ReturnType>System.Collections.Specialized.NameValueCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of user-defined parameters for the provider.</summary>
+        <value>A <see cref="T:System.Collections.Specialized.NameValueCollection" /> of parameters for the provider.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Configuration.ProviderSettings.Parameters%2A> property to access the <xref:System.Collections.Specialized.NameValueCollection> parameters for this <xref:System.Configuration.ProviderSettings> object.  
+  
+   
+  
+## Examples  
+ The following code example shows how to access the <xref:System.Configuration.ProviderSettings.Parameters%2A> property.  
+  
+ [!code-csharp[System.Configuration.ProviderSettings#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ProviderSettings/CS/ProviderSettings.cs#4)]
+ [!code-vb[System.Configuration.ProviderSettings#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ProviderSettings/VB/ProviderSettings.vb#4)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -191,9 +278,24 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the type of the provider configured by this class.</summary>
+        <value>The fully qualified namespace and class name for the type of provider configured by this <see cref="T:System.Configuration.ProviderSettings" /> instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ProviderSettings.Type%2A> property contains the fully qualified namespace and class name for the provider configured by the <xref:System.Configuration.ProviderSettings> class.  
+  
+   
+  
+## Examples  
+ The following code example shows how to access the <xref:System.Configuration.ProviderSettings.Type%2A> property.  
+  
+ [!code-csharp[System.Configuration.ProviderSettings#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ProviderSettings/CS/ProviderSettings.cs#3)]
+ [!code-vb[System.Configuration.ProviderSettings#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ProviderSettings/VB/ProviderSettings.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Unmerge">
@@ -221,5 +323,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.ProviderSettings" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create a new <xref:System.Configuration.ProviderSettings> instance.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

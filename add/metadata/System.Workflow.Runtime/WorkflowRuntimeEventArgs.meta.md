@@ -1,9 +1,13 @@
 ---
 uid: System.Workflow.Runtime.WorkflowRuntimeEventArgs
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.WorkflowRuntimeEventArgs.IsStarted
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

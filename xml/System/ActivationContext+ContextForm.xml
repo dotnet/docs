@@ -11,8 +11,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates the context for a manifest-activated application.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The values of this enumeration specify whether an application has been loaded into the ClickOnce store.  A manifest activated application that is not installed in the ClickOnce store is classified as Loose. An example of an application not in the store is a manifest-activated application executing in Visual Studio.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Loose">
@@ -29,7 +36,7 @@
         <ReturnType>System.ActivationContext+ContextForm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The application is not in the ClickOnce store.</summary>
       </Docs>
     </Member>
     <Member MemberName="StoreBounded">
@@ -46,7 +53,7 @@
         <ReturnType>System.ActivationContext+ContextForm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The application is contained in the ClickOnce store.</summary>
       </Docs>
     </Member>
   </Members>

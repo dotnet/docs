@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Forms.ToolStripGripStyle
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -1,9 +1,13 @@
 ---
 uid: System.Runtime.CompilerServices.CallerLineNumberAttribute
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.CompilerServices.CallerLineNumberAttribute.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

@@ -1,4 +1,5 @@
 ---
 uid: System.Net.HttpStatusCode
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

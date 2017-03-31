@@ -19,10 +19,10 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="TLeft">To be added.</typeparam>
-    <typeparam name="TRight">To be added.</typeparam>
-    <typeparam name="TResult">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="TLeft">The type of the left operand.</typeparam>
+    <typeparam name="TRight">The type of the right operand.</typeparam>
+    <typeparam name="TResult">The type of the result.</typeparam>
+    <summary>Computes the sum of two values.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,7 +37,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Expressions.Add`3" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,9 +80,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether the addition executes in a checked context.</summary>
+        <value>
+          <see langword="true" /> if the addition executes in a checked context; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default the <xref:System.Activities.Expressions.Add%603> activity executes in a checked context and throws an <xref:System.OverflowException> if the addition causes an overflow.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -128,8 +136,8 @@
         <ReturnType>System.Activities.InArgument&lt;TLeft&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the left operand.</summary>
+        <value>The left operand.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,8 +162,8 @@
         <ReturnType>System.Activities.InArgument&lt;TRight&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the right operand.</summary>
+        <value>The right operand.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

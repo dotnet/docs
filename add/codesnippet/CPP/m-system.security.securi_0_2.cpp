@@ -1,1 +1,0 @@
-         String^ storedDestroyTime = localXmlElement->SearchForTextOfTag( L"destroytime" );

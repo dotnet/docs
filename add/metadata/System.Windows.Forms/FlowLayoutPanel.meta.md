@@ -1,39 +1,51 @@
 ---
 uid: System.Windows.Forms.FlowLayoutPanel
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.FlowLayoutPanel.System#ComponentModel#IExtenderProvider#CanExtend(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.FlowLayoutPanel.SetFlowBreak(System.Windows.Forms.Control,System.Boolean)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.FlowLayoutPanel.GetFlowBreak(System.Windows.Forms.Control)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.FlowLayoutPanel.FlowDirection
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.FlowLayoutPanel.LayoutEngine
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.FlowLayoutPanel.WrapContents
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.FlowLayoutPanel.#ctor
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

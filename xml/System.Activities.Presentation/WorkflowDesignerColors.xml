@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Enables colors and color gradients to be associated with aspects of the elements and shell bars used in the [!INCLUDE[wfd1](~/includes/wfd1-md.md)] user interface.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the beginning color for the color gradient of the annotation background.</summary>
+        <value>The beginning color for the color gradient of the annotation background.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,7 +46,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the beginning color key for the color gradient of the annotation background. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,8 +63,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the ending color for the color gradient of the annotation background.</summary>
+        <value>The ending color for the color gradient of the annotation background.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,7 +81,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the ending color key for the color gradient of the annotation background. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,8 +98,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the middle section color for the color gradient of the annotation background.</summary>
+        <value>The middle section color for the color gradient of the annotation background.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,7 +116,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the middle section color key for the color gradient of the annotation background. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,8 +133,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the color of the annotation border.</summary>
+        <value>The color of the annotation border.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,7 +151,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the color key of the annotation border. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -168,8 +168,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the color of the annotation dock button.</summary>
+        <value>The color of the annotation dock button.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,7 +186,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the color key of the annotation dock button. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -203,8 +203,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the background color on hover of annotation dock button.</summary>
+        <value>The background color on hover of annotation dock button.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -221,7 +221,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the background color key on hover of annotation dock button. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -238,8 +238,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the border color on hover of annotation dock button.</summary>
+        <value>The border color on hover of annotation dock button.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -256,7 +256,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the border color key on hover of annotation dock button. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -273,8 +273,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the color on hover of annotation dock button.</summary>
+        <value>The color on hover of annotation dock button.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -291,7 +291,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the color key on hover of annotation dock button. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -308,8 +308,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the color for the dock text of an annotation.</summary>
+        <value>The color for the dock text of an annotation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -326,7 +326,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the color key for the dock text of an annotation. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -343,8 +343,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the color for the undock text of an annotation.</summary>
+        <value>The color for the undock text of an annotation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -361,7 +361,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the color key for the undock text of an annotation. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -378,8 +378,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the beginning color for the color gradient of the context menu background.</summary>
+        <value>The beginning color for the color gradient of the context menu background.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -396,7 +396,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the beginning color key for the color gradient of the context menu background. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -413,8 +413,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the ending color for the color gradient of the context menu background.</summary>
+        <value>The ending color for the color gradient of the context menu background.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -431,7 +431,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the ending color key for the color gradient of the context menu background. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -448,8 +448,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the color of the context menu border.</summary>
+        <value>The color of the context menu border.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -466,7 +466,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the color key of the context menu border. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -483,8 +483,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the color for the icon area of the context menu.</summary>
+        <value>The color for the icon area of the context menu.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -501,7 +501,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the color key for the icon area of the context menu. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -518,8 +518,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the color for the item text in the context menu.</summary>
+        <value>The color for the item text in the context menu.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -536,7 +536,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the color key for the item text in the context menu. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -553,8 +553,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the color for the disabled item text in the context menu.</summary>
+        <value>The color for the disabled item text in the context menu.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -571,7 +571,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the color key for the disabled item text in the context menu. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -588,8 +588,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the hover color for the item text in the context menu.</summary>
+        <value>The hover color for the item text in the context menu.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -606,7 +606,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the hover color key for the item text in the context menu. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -623,8 +623,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the color for the selected item text in the context menu.</summary>
+        <value>The color for the selected item text in the context menu.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -641,7 +641,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the color key for the selected item text in the context menu. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -658,8 +658,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the beginning mouse over color for the context menu.</summary>
+        <value>The beginning mouse over color for the context menu.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -676,7 +676,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the beginning mouse over color key for the context menu. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -693,8 +693,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the mouse over color for the context menu border.</summary>
+        <value>The mouse over color for the context menu border.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -711,7 +711,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the mouse over color key for the context menu border. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -728,8 +728,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the ending mouse over color for the context menu.</summary>
+        <value>The ending mouse over color for the context menu.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -746,7 +746,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the ending mouse over color key for the context menu. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -763,8 +763,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the mouse over color for the context menu first middle section, which comes after the beginning section.</summary>
+        <value>The mouse over color for the context menu first middle section.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -781,7 +781,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the mouse over color key for the context menu first middle section, which comes after the beginning section. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -798,8 +798,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the mouse over color for the context menu second middle section, which comes after the first middle section and before the ending section.</summary>
+        <value>The mouse over color for the context menu second middle section.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -816,7 +816,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the mouse over color key for the context menu second middle section, which comes after the first middle section and before the ending section. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -833,8 +833,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the color of the context menu separator.</summary>
+        <value>The color of the context menu separator.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -851,7 +851,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the color key of the context menu separator. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -868,8 +868,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the color for the designer view background.</summary>
+        <value>The <see cref="T:System.Windows.Media.Color" /> for the designer view background.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -886,7 +886,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the color key to be used for the designer view background. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -903,8 +903,8 @@
         <ReturnType>System.Windows.Media.Brush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the brush for the **ExpandAll/CollapseAll** button in the designer view.</summary>
+        <value>The brush for the **ExpandAll/CollapseAll** button in the designer view.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -921,7 +921,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the color key for the **ExpandAll/CollapseAll** button in the designer view. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -938,8 +938,8 @@
         <ReturnType>System.Windows.Media.Brush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the mouse over brush for the **ExpandAll/CollapseAll** button in the designer view.</summary>
+        <value>The mouse over brush for the **ExpandAll/CollapseAll** button in the designer view.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -956,7 +956,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the mouse over color key for the **ExpandAll/CollapseAll** button in the designer view. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -973,8 +973,8 @@
         <ReturnType>System.Windows.Media.Brush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the brush for the **ExpandAll/CollapseAll** pressed button in the designer view.</summary>
+        <value>The brush for the **ExpandAll/CollapseAll** pressed button in the designer view.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -991,7 +991,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the color key for the **ExpandAll/CollapseAll** pressed button in the designer view. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1008,8 +1008,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the color of the caption for the <see cref="T:System.Activities.Presentation.WorkflowViewElement" /> active designer view shell bar.</summary>
+        <value>The <see cref="T:System.Windows.Media.Color" /> of the caption for the active designer view shell bar.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1026,7 +1026,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the active color key for the caption of the designer view shell bar. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1043,8 +1043,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the color of the caption for the <see cref="T:System.Activities.Presentation.WorkflowViewElement" /> designer view shell bar.</summary>
+        <value>The <see cref="T:System.Windows.Media.Color" /> of the caption for the designer view shell bar.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1061,7 +1061,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the color key for the designer view shell bar caption. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1078,8 +1078,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the beginning color for the color gradient of the <see cref="T:System.Activities.Presentation.WorkflowViewElement" /> designer view shell bar.</summary>
+        <value>The beginning <see cref="T:System.Windows.Media.Color" /> for the color gradient of the designer view shell bar.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1096,7 +1096,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the beginning color key for the color gradient of the designer view shell bar. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1113,8 +1113,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the ending color for the color gradient of the <see cref="T:System.Activities.Presentation.WorkflowViewElement" /> designer view shell bar.</summary>
+        <value>The ending <see cref="T:System.Windows.Media.Color" /> for the color gradient of the designer view shell bar.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1131,7 +1131,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the ending color key for the color gradient of the designer view shell bar. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1148,8 +1148,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the background color of the <see cref="T:System.Activities.Presentation.WorkflowViewElement" /> designer view shell bar control.</summary>
+        <value>The background <see cref="T:System.Windows.Media.Color" /> of the designer view shell bar control.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1166,7 +1166,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the background color key for the control of the designer view shell bar. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1183,8 +1183,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the beginning color for the hover color gradient of the <see cref="T:System.Activities.Presentation.WorkflowViewElement" /> designer view shell bar.</summary>
+        <value>The beginning hover <see cref="T:System.Windows.Media.Color" /> for the color gradient of the designer view shell bar.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1201,7 +1201,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the beginning hover color key for the color gradient of the designer view shell bar. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1218,8 +1218,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the ending color for the hover color gradient of the <see cref="T:System.Activities.Presentation.WorkflowViewElement" /> designer view shell bar.</summary>
+        <value>The ending hover <see cref="T:System.Windows.Media.Color" /> for the color gradient for the designer view shell bar.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1236,7 +1236,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the ending hover color key for the color gradient of the designer view shell bar. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1253,8 +1253,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the beginning color of the color gradient for the selected <see cref="T:System.Activities.Presentation.WorkflowViewElement" /> designer view shell bar.</summary>
+        <value>The beginning <see cref="T:System.Windows.Media.Color" /> for the color gradient for the selected designer view shell bar.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1271,7 +1271,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the beginning color key for the color gradient of the selected designer view shell bar. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1288,8 +1288,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the ending color of the color gradient for the selected <see cref="T:System.Activities.Presentation.WorkflowViewElement" /> designer view shell bar.</summary>
+        <value>The ending <see cref="T:System.Windows.Media.Color" /> for the color gradient for the selected designer view shell bar.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1306,7 +1306,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the ending color key for the color gradient of the selected designer view shell bar. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1323,8 +1323,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the color for the designer view status bar background.</summary>
+        <value>The <see cref="T:System.Windows.Media.Color" /> for the designer view status bar background.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1341,7 +1341,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the color key to be used for the designer view status bar background. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1358,8 +1358,8 @@
         <ReturnType>System.Windows.Media.Brush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the brush for the **Flowchart Expression** button in the designer.</summary>
+        <value>The brush for the **Flowchart Expression** button in the designer.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1376,7 +1376,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the color key for the **Flowchart Expression** button in the designer. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1393,8 +1393,8 @@
         <ReturnType>System.Windows.Media.Brush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the mouse over brush for the **Flowchart Expression** button in the designer.</summary>
+        <value>The mouse over brush for the **Flowchart Expression** button in the designer.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1411,7 +1411,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the mouse over color key for the **Flowchart Expression** button in the designer. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1428,8 +1428,8 @@
         <ReturnType>System.Windows.Media.Brush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the brush for the **Flowchart Expression** pressed button in the designer.</summary>
+        <value>The brush for the **Flowchart Expression** pressed button in the designer.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1446,7 +1446,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the color key for the **Flowchart Expression** pressed button in the designer. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1463,8 +1463,8 @@
         <ReturnType>System.Windows.Media.FontFamily</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the font family for the <see cref="T:System.Activities.Presentation.WorkflowViewElement" />.</summary>
+        <value>The <see cref="T:System.Windows.Media.FontFamily" /> for the view element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1481,7 +1481,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the key to be used for the font family. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1498,8 +1498,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the font size for the <see cref="T:System.Activities.Presentation.WorkflowViewElement" />.</summary>
+        <value>The <see cref="T:System.Double" /> that indicates the font size.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1516,7 +1516,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the key to be used for the font size. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1533,8 +1533,8 @@
         <ReturnType>System.Windows.FontWeight</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the font weight to be used for the <see cref="T:System.Activities.Presentation.WorkflowViewElement" />.</summary>
+        <value>The <see cref="T:System.Windows.FontWeight" /> used for the view element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1551,7 +1551,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the key to be used for the font weight. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1568,8 +1568,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the hover color for a row in the grid view.</summary>
+        <value>The hover color for a row in the grid view.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1586,8 +1586,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the color for the outline view background.</summary>
+        <value>The color for the outline view background.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1604,7 +1604,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the color key to be used for the outline view background. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1621,8 +1621,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the border color for the collapsed arrow of the outline view.</summary>
+        <value>The border color for the collapsed arrow of the outline view.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1639,7 +1639,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the border color key for the collapsed arrow of the outline view. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1656,8 +1656,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the border color on hover of collapsed arrow of the outline view.</summary>
+        <value>The border color on hover of collapsed arrow of the outline view.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1674,7 +1674,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the border color key on hover of collapsed arrow of the outline view. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1691,8 +1691,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the border color for the expanded arrow of the outline view.</summary>
+        <value>The border color for the expanded arrow of the outline view.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1709,7 +1709,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the border color key for the expanded arrow of the outline view. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1726,8 +1726,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the color for the expanded arrow of the outline view.</summary>
+        <value>The color for the expanded arrow of the outline view.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1744,7 +1744,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the color key for the expanded arrow of the outline view. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1761,8 +1761,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the color for the background of a highlighted item in the outline view.</summary>
+        <value>The color for the background of a highlighted item in the outline view.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1779,7 +1779,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the color key for the background of a highlighted item in the outline view. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1796,8 +1796,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the color for the text of a selected item in the outline view.</summary>
+        <value>The color for the text of a selected item in the outline view.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1814,7 +1814,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the color key for the text of a selected item in the outline view. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1831,8 +1831,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the color for the text of an item in the outline view.</summary>
+        <value>The color for the text of an item in the outline view.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1849,7 +1849,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the color key for the text of an item in the outline view. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1866,8 +1866,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the brush key for the property inspector background.</summary>
+        <value>The brush key for the property inspector background.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1884,8 +1884,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the brush key for the property inspector border.</summary>
+        <value>The brush key for the property inspector border.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1902,8 +1902,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the brush key for the category caption text in the property inspector.</summary>
+        <value>The brush key for the category caption text in the property inspector.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1920,8 +1920,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the brush key for the property inspector pane.</summary>
+        <value>The brush key for the property inspector pane.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1938,8 +1938,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the brush key for the property inspector pop-up window.</summary>
+        <value>The brush key for the property inspector pop-up window.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1956,8 +1956,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the brush key for the selected background in the property inspector.</summary>
+        <value>The brush key for the selected background in the property inspector.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1974,8 +1974,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the brush key for the selected foreground in the property inspector.</summary>
+        <value>The brush key for the selected foreground in the property inspector.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1992,8 +1992,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the brush key for the property inspector text.</summary>
+        <value>The brush key for the property inspector text.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2010,8 +2010,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the brush key for the toolbar background in the property inspector.</summary>
+        <value>The brush key for the toolbar background in the property inspector.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2028,8 +2028,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the brush key for the background of a hovered item in the property inspector toolbar.</summary>
+        <value>The brush key for the background of a hovered item in the property inspector toolbar.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2046,8 +2046,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the brush key for the border of a hovered item in the property inspector toolbar.</summary>
+        <value>The brush key for the border of a hovered item in the property inspector toolbar.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2064,8 +2064,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the brush key for the background of a selected item in the property inspector toolbar.</summary>
+        <value>The brush key for the background of a selected item in the property inspector toolbar.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2082,8 +2082,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the brush key for the border of a selected item in the property inspector toolbar.</summary>
+        <value>The brush key for the border of a selected item in the property inspector toolbar.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2100,8 +2100,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the brush key for the separator in the property inspector toolbar.</summary>
+        <value>The brush key for the separator in the property inspector toolbar.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2118,8 +2118,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the brush key for the textbox border in the property inspector toolbar.</summary>
+        <value>The brush key for the textbox border in the property inspector toolbar.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2136,7 +2136,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the color key for the rubber band rectangle. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2153,8 +2153,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the background color for the <see cref="T:System.Activities.Presentation.WorkflowViewElement" />.</summary>
+        <value>The background color for the workflow view element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2171,7 +2171,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the color key to be used for the <see cref="T:System.Activities.Presentation.WorkflowViewElement" /> background. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2188,8 +2188,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the color for the <see cref="T:System.Activities.Presentation.WorkflowViewElement" /> border.</summary>
+        <value>The <see cref="T:System.Windows.Media.Color" /> for the workflow view element border.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2206,7 +2206,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the color key to be used for the <see cref="T:System.Activities.Presentation.WorkflowViewElement" /> border. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2223,8 +2223,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the color for the <see cref="T:System.Activities.Presentation.WorkflowViewElement" /> caption.</summary>
+        <value>The <see cref="T:System.Windows.Media.Color" /> for the workflow view element caption.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2241,7 +2241,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the color key to be used for the <see cref="T:System.Activities.Presentation.WorkflowViewElement" /> caption. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2258,8 +2258,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the color for the <see cref="T:System.Activities.Presentation.WorkflowViewElement" /> selected background.</summary>
+        <value>The color for the workflow view element selected background.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2276,7 +2276,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the color key to be used for the selected background of the <see cref="T:System.Activities.Presentation.WorkflowViewElement" />. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2293,8 +2293,8 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the color for the <see cref="T:System.Activities.Presentation.WorkflowViewElement" /> selected border.</summary>
+        <value>The color for the workflow view element selected border.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2311,7 +2311,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the color key for the <see cref="T:System.Activities.Presentation.WorkflowViewElement" /> selected border. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,14 +1,17 @@
 ---
 uid: System.Net.Configuration.WebRequestModulesSection
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.WebRequestModulesSection.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.WebRequestModulesSection.WebRequestModules
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

@@ -1,9 +1,11 @@
 ---
 uid: System.Web.UI.FileLevelUserControlBuilder
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.FileLevelUserControlBuilder.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -1,24 +1,29 @@
 ---
 uid: Microsoft.JScript.NoContextException
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.NoContextException.#ctor(System.String,System.Exception)
-internalonly: False
----
-
----
-uid: Microsoft.JScript.NoContextException.#ctor(System.String)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.NoContextException.#ctor
-internalonly: False
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.NoContextException.#ctor(System.String)
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.NoContextException.#ctor
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.NoContextException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+ms.author: "mikejo"
 ---

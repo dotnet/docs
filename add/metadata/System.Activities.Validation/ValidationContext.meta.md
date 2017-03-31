@@ -1,4 +1,6 @@
 ---
 uid: System.Activities.Validation.ValidationContext
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

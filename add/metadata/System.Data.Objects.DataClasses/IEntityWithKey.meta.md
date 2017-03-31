@@ -1,9 +1,13 @@
 ---
 uid: System.Data.Objects.DataClasses.IEntityWithKey
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Objects.DataClasses.IEntityWithKey.EntityKey
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

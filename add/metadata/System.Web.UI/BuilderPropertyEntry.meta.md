@@ -1,9 +1,11 @@
 ---
 uid: System.Web.UI.BuilderPropertyEntry
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.BuilderPropertyEntry.Builder
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -1,4 +1,6 @@
 ---
 uid: System.Linq.Expressions.ExpressionType
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---

@@ -1,19 +1,26 @@
 ---
 uid: System.Windows.Media.Animation.AnimationException
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.AnimationException.Clock
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.AnimationException.Property
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.AnimationException.Target
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

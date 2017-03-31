@@ -1,34 +1,48 @@
 ---
 uid: System.Windows.Input.Manipulations.ManipulationVelocities2D
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Input.Manipulations.ManipulationVelocities2D.LinearVelocityY
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Input.Manipulations.ManipulationVelocities2D.ExpansionVelocityY
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Input.Manipulations.ManipulationVelocities2D.AngularVelocity
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Input.Manipulations.ManipulationVelocities2D.LinearVelocityX
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Input.Manipulations.ManipulationVelocities2D.Zero
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Input.Manipulations.ManipulationVelocities2D.ExpansionVelocityX
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---

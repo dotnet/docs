@@ -10,8 +10,18 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Describes the session-state type used when installing a session-state database provider.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Management.SessionStateType> enumeration with the <xref:System.Web.Management.SqlServices.InstallSessionState%2A> method of the <xref:System.Web.Management.SqlServices> type.  
+  
+ [!code-csharp[System.Web.Management.SqlServices#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.SqlServices/CS/usingsqlservices.cs#8)]
+ [!code-vb[System.Web.Management.SqlServices#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.SqlServices/VB/usingsqlservices.vb#8)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Custom">
@@ -27,7 +37,7 @@
         <ReturnType>System.Web.Management.SessionStateType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Session-state data and stored procedures are placed in a custom data store.</summary>
       </Docs>
     </Member>
     <Member MemberName="Persisted">
@@ -43,7 +53,7 @@
         <ReturnType>System.Web.Management.SessionStateType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Session-state data and stored procedures are placed in the "ASPState" database. Session-state data will survive a restart of the database server.</summary>
       </Docs>
     </Member>
     <Member MemberName="Temporary">
@@ -59,7 +69,7 @@
         <ReturnType>System.Web.Management.SessionStateType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Session state data is stored in tempdb, and stored procedures are placed in the "ASPState" database. Session state data will not survive a restart of SQL Server.</summary>
       </Docs>
     </Member>
   </Members>

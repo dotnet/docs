@@ -1,4 +1,4 @@
 ---
 uid: System.Runtime.Remoting.Metadata
-internalonly: False
+manager: "ghogen"
 ---

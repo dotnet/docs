@@ -11,8 +11,19 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>To implement a custom upgrade acceptor, inherited from this <see langword="abstract" /> base class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An example of a stream upgrade is to build a compression stream directly on top of the transport stream.  
+  
+ This class is used with <xref:System.ServiceModel.Channels.StreamUpgradeInitiator> and <xref:System.ServiceModel.Channels.StreamUpgradeProvider> to implement a custom stream upgrade.  
+  
+ For a detailed description of the upgrade process, see <xref:System.ServiceModel.Channels.StreamUpgradeProvider>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +37,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.StreamUpgradeAcceptor" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,10 +57,17 @@
         <Parameter Name="stream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="stream">The stream to be upgraded.</param>
+        <summary>Upgrades the transport stream and returns the upgraded stream.</summary>
+        <returns>Returns the upgraded stream.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be used to wrap the existing transport stream by providing additional capabilities; for example, a compressing stream.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginAcceptUpgrade">
@@ -70,12 +88,19 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="stream">The stream to be upgraded.</param>
+        <param name="callback">The method to be called when the <see langword="AcceptUpgrade" /> call has completed.</param>
+        <param name="state">State information for the <see langword="AcceptUpgrade" /> call.</param>
+        <summary>Asynchronous version of <see cref="M:System.ServiceModel.Channels.StreamUpgradeAcceptor.AcceptUpgrade(System.IO.Stream)" />.</summary>
+        <returns>Returns a result code that is passed into EndAcceptUpgrade to access the upgraded stream.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see the remarks for <xref:System.ServiceModel.Channels.StreamUpgradeAcceptor.AcceptUpgrade%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CanUpgrade">
@@ -94,10 +119,18 @@
         <Parameter Name="contentType" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="contentType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="contentType">The type of content to be checked.</param>
+        <summary>Determines whether the upgrade requested is supported by this upgrade acceptor.</summary>
+        <returns>
+          <see langword="true" /> if this kind of upgrade is supported; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The developer can inspect the requested content type and determine whether the resulting upgrade can be performed by this upgrade acceptor. This content type comes from the `GetNextUpgrade` method on the matching upgrade initiator.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EndAcceptUpgrade">
@@ -116,10 +149,17 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="result">The IAsyncResult returned from <see langword="BeginAcceptUpgrade" />.</param>
+        <summary>Asynchronous version of <see cref="M:System.ServiceModel.Channels.StreamUpgradeAcceptor.AcceptUpgrade(System.IO.Stream)" />.</summary>
+        <returns>Returns the upgraded stream.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see the remarks in <xref:System.ServiceModel.Channels.StreamUpgradeAcceptor.AcceptUpgrade%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

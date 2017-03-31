@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Documents.DocumentStructures.SemanticBasicElement
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

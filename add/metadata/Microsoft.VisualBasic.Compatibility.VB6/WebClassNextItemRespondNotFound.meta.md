@@ -1,9 +1,13 @@
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.WebClassNextItemRespondNotFound
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.WebClassNextItemRespondNotFound.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -1,24 +1,29 @@
 ---
 uid: System.Web.UI.IStateManager
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IStateManager.IsTrackingViewState
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IStateManager.TrackViewState
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IStateManager.SaveViewState
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IStateManager.LoadViewState(System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

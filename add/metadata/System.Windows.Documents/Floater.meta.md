@@ -1,39 +1,61 @@
 ---
 uid: System.Windows.Documents.Floater
-internalonly: False
----
-
----
-uid: System.Windows.Documents.Floater.HorizontalAlignment
-internalonly: False
----
-
----
-uid: System.Windows.Documents.Floater.Width
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Documents.Floater.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Documents.Floater.HorizontalAlignment
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Documents.Floater.Width
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Documents.Floater.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Documents.Floater.#ctor(System.Windows.Documents.Block)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Documents.Floater.WidthProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Documents.Floater.#ctor(System.Windows.Documents.Block,System.Windows.Documents.TextPointer)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Documents.Floater.HorizontalAlignmentProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

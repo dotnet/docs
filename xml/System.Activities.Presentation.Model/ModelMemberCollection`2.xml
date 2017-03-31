@@ -19,9 +19,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="TItemType">To be added.</typeparam>
-    <typeparam name="TFindType">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="TItemType">The type of item that the collection represents.</typeparam>
+    <typeparam name="TFindType">The type that should be used as a key in the "Find" methods.</typeparam>
+    <summary>An abstract base class that <see cref="T:System.Activities.Presentation.Model.ModelPropertyCollection" /> derives from.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -41,10 +41,11 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the given key.</param>
+        <summary>Searches the collection for the given key and returns it if it is found. If the key is not found, this method returns <see langword="null" />.</summary>
+        <returns>Returns <see cref="{0}" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Find">
@@ -63,10 +64,11 @@
         <Parameter Name="value" Type="TFindType" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The type of the given key.</param>
+        <summary>Searches the collection for the given key and returns it if it is found. If the key is not found, this method returns <see langword="null" />.</summary>
+        <returns>Returns <see cref="{0}" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Find">
@@ -86,11 +88,13 @@
         <Parameter Name="throwOnError" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="throwOnError">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the given key.</param>
+        <param name="throwOnError">
+          <see langword="true" /> to throw an exception if the given key is not found; otherwise, <see langword="false" />.</param>
+        <summary>Searches the collection for the given key and returns it if it is found. If the key is not found, this method throws an exception or returns <see langword="null" />, depending on the value passed to <paramref name="throwOnError" />.</summary>
+        <returns>Returns <see cref="{0}" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="name" /> is not found and <paramref name="throwOnError" /> is <see langword="true" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Find">
@@ -110,11 +114,13 @@
         <Parameter Name="throwOnError" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="throwOnError">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The type of the given key.</param>
+        <param name="throwOnError">
+          <see langword="true" /> to throw an exception if the given key is not found; otherwise, <see langword="false" />.</param>
+        <summary>Searches the collection for the given key and returns it if it is found. If the key is not found, this method throws an exception or returns <see langword="null" />, depending on the value passed to <paramref name="throwOnError" />.</summary>
+        <returns>Returns <see cref="{0}" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="value" /> is not found and <paramref name="throwOnError" /> is <see langword="true" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -131,8 +137,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an enumerator to enumerate through the values in the collection.</summary>
+        <returns>Returns <see cref="T:System.Collections.Generic.IEnumerator`1" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -152,10 +158,12 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="name">The name of the type to retrieve.</param>
+        <summary>Gets the value at the specified index by name.</summary>
+        <value>The value at the specified index by name.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="name" /> is not found.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -174,10 +182,12 @@
         <Parameter Name="value" Type="TFindType" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="value">The type to retrieve.</param>
+        <summary>Gets the value at the specified index by type.</summary>
+        <value>The value at the specified index by type.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="value" /> is not found.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -194,8 +204,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an enumerator that iterates through a collection.</summary>
+        <returns>Returns <see cref="T:System.Collections.IEnumerator" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Exposes <see cref="T:System.Windows.Controls.Ribbon.RibbonTabHeader" /> types to [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)].</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,9 +29,9 @@
         <Parameter Name="itemsControlPeer" Type="System.Windows.Automation.Peers.RibbonTabHeaderItemsControlAutomationPeer" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <param name="itemsControlPeer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="item">The element associated with this automation peer.</param>
+        <param name="itemsControlPeer">The <see cref="T:System.Windows.Automation.Peers.RibbonTabHeaderItemsControlAutomationPeer" /> that is associated with the <see cref="T:System.Windows.Controls.Ribbon.RibbonTabHeaderItemsControl" /> that holds the <see cref="T:System.Windows.Controls.Ribbon.RibbonTabHeader" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.RibbonTabHeaderDataAutomationPeer" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,8 +49,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the control type for the <see cref="T:System.Windows.Controls.Ribbon.RibbonTabHeader" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonTabHeaderDataAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" />.</summary>
+        <returns>The <see cref="F:System.Windows.Automation.Peers.AutomationControlType.Header" /> enumeration value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,8 +68,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the class name of the <see cref="T:System.Windows.Controls.Ribbon.RibbonTabHeader" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonTabHeaderDataAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" />.</summary>
+        <returns>The class name of the <see cref="T:System.Windows.Controls.Ribbon.RibbonTabHeader" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonTabHeaderDataAutomationPeer" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,9 +89,10 @@
         <Parameter Name="patternInterface" Type="System.Windows.Automation.Peers.PatternInterface" />
       </Parameters>
       <Docs>
-        <param name="patternInterface">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="patternInterface">A value enumeration that specifies the control pattern.</param>
+        <summary>Gets the control pattern for the <see cref="T:System.Windows.Controls.Ribbon.RibbonTabHeader" /> that is associated with the <see cref="T:System.Windows.Automation.Peers.RibbonTabHeaderDataAutomationPeer" />.</summary>
+        <returns>
+          <see langword="null" /> in all cases.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,8 +110,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets a value that indicates whether the element that is associated with this automation peer contains data that is presented to the user. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.IsContentElement" />.</summary>
+        <returns>
+          <see langword="false" /> in all cases.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

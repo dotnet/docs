@@ -10,8 +10,17 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the border style for a button control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by <xref:System.Windows.Forms.ControlPaint.DrawBorder%2A?displayProperty=fullName>.  
+  
+ <xref:System.Windows.Forms.ControlPaint.DrawBorder%2A> updates the display of the button when controls are initially drawn or refreshed.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Dashed">
@@ -27,7 +36,7 @@
         <ReturnType>System.Windows.Forms.ButtonBorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A dashed border.</summary>
       </Docs>
     </Member>
     <Member MemberName="Dotted">
@@ -43,7 +52,7 @@
         <ReturnType>System.Windows.Forms.ButtonBorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A dotted-line border.</summary>
       </Docs>
     </Member>
     <Member MemberName="Inset">
@@ -59,7 +68,7 @@
         <ReturnType>System.Windows.Forms.ButtonBorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A sunken border.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -75,7 +84,7 @@
         <ReturnType>System.Windows.Forms.ButtonBorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No border.</summary>
       </Docs>
     </Member>
     <Member MemberName="Outset">
@@ -91,7 +100,7 @@
         <ReturnType>System.Windows.Forms.ButtonBorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A raised border.</summary>
       </Docs>
     </Member>
     <Member MemberName="Solid">
@@ -107,7 +116,7 @@
         <ReturnType>System.Windows.Forms.ButtonBorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A solid border.</summary>
       </Docs>
     </Member>
   </Members>

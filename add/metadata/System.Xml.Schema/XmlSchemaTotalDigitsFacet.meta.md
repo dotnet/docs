@@ -1,9 +1,13 @@
 ---
 uid: System.Xml.Schema.XmlSchemaTotalDigitsFacet
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Schema.XmlSchemaTotalDigitsFacet.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

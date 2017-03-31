@@ -1,4 +1,4 @@
 ---
 uid: System.Messaging.HashAlgorithm
-internalonly: False
+manager: "tyoung"
 ---

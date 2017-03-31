@@ -20,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides methods and properties to support the XSLT processor.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -46,10 +46,10 @@
         <Parameter Name="index" Type="System.Xml.Xsl.Runtime.XmlILIndex" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="indexId">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="context">An instance of the <see cref="T:System.Xml.XPath.XPathNavigator" /> class.</param>
+        <param name="indexId">A value of type <see langword="int" />.</param>
+        <param name="index">An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlILIndex" /> class.</param>
+        <summary>Adds a newly built index over the specified context document to the existing collection of indexes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,11 +75,11 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="indexType">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="destinationType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="indexType">A value of type <see langword="Int32" />.</param>
+        <param name="value">A value of type <see langword="object" />.</param>
+        <param name="destinationType">A value of type <see langword="Type" />.</param>
+        <summary>Converts a value from the CLR type of the <paramref name="value" /> parameter to CLR <paramref name="destinationType" /> by using V1 XSLT rules. Converts any result tree fragment values to nodes.</summary>
+        <returns>A value of type <see langword="object" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,10 +104,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="indexType">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="indexType">A value of type <see langword="int" />.</param>
+        <param name="value">A value of type <see langword="object" />.</param>
+        <summary>Converts from the CLR type of the <paramref name="value" /> parameter to the default CLR type by which intermediate language generation represents the XML type, based on the conversion rules of the XML type.</summary>
+        <returns>A value of type <see langword="object" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,10 +132,10 @@
         <Parameter Name="navigatorThat" Type="System.Xml.XPath.XPathNavigator" />
       </Parameters>
       <Docs>
-        <param name="navigatorThis">To be added.</param>
-        <param name="navigatorThat">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="navigatorThis">An instance of the <see cref="T:System.Xml.XPath.XPathNavigator" /> class.</param>
+        <param name="navigatorThat">An instance of the <see cref="T:System.Xml.XPath.XPathNavigator" /> class.</param>
+        <summary>Compares the relative positions of two navigators.</summary>
+        <returns>-1 if <paramref name="navigatorThis" /> is before <paramref name="navigatorThat" />; 1 if <paramref name="navigatorThis" /> is after <paramref name="navigatorThat" />; 0 if both navigators are positioned at the same node.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -159,9 +159,9 @@
         <Parameter Name="collation" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="collation">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="collation">A value of type <see langword="string" />.</param>
+        <summary>Creates a collation from a string.</summary>
+        <returns>An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlCollation" /> class.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -183,9 +183,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns an array containing the names of all the global variables and parameters used in this query.</summary>
+        <returns>An array of <see langword="string" /> values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The format of the returned array is `{namespace}prefix:local-name`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DebugGetGlobalValue">
@@ -208,9 +215,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">A value of type <see langword="string" />.</param>
+        <summary>Gets the value of a global value that has the specified name.</summary>
+        <returns>A sequence of <see cref="T:System.Xml.XPath.XPathItem" /> instances, or <see langword="null" /> if there is no global value that has the specified name.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -234,9 +241,9 @@
         <Parameter Name="seq" Type="System.Collections.IList" />
       </Parameters>
       <Docs>
-        <param name="seq">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="seq">An instance of the <see cref="T:System.Collections.IList" /> class.</param>
+        <summary>Converts a sequence to its appropriate XSLT type.</summary>
+        <returns>A value of type <see langword="object" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -261,9 +268,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">A value of type <see langword="string" />.</param>
+        <param name="value">A value of type <see langword="object" />.</param>
+        <summary>Sets the value of a global value that has the specified name.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -287,9 +294,9 @@
         <Parameter Name="seq" Type="System.Collections.Generic.IList&lt;System.Xml.XPath.XPathNavigator&gt;" />
       </Parameters>
       <Docs>
-        <param name="seq">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="seq">A sequence of <see cref="T:System.Xml.XPath.XPathNavigator" /> instances.</param>
+        <summary>Gets distinct sorted nodes from the specified sequence.</summary>
+        <returns>An <see cref="T:System.Collections.IList" /> of <see cref="T:System.Xml.XPath.XPathNavigator" /> objects.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -314,10 +321,11 @@
         <Parameter Name="namespaceUri" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The method name to look for.</param>
+        <param name="namespaceUri">Identifies the early-bound object.</param>
+        <summary>Determines whether the specified early-bound object contains a method with the specified name.</summary>
+        <returns>
+          <see langword="true" /> if the early-bound object identified by <paramref name="namespaceUri" /> contains a method that matches <paramref name="name" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -341,9 +349,9 @@
         <Parameter Name="output" Type="System.Xml.Xsl.Runtime.XmlQueryOutput&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="output">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="output">An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryOutput" /> class.</param>
+        <summary>Finishes constructing an RTF.</summary>
+        <returns>An instance of the <see cref="T:System.Xml.XPath.XPathNavigator" /> class.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -367,9 +375,9 @@
         <Parameter Name="output" Type="System.Xml.Xsl.Runtime.XmlQueryOutput&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="output">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="output">An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryOutput" /> class.</param>
+        <summary>Finishes constructing a nested sequence of items.</summary>
+        <returns>A sequence of instances of the <see cref="T:System.Xml.XPath.XPathItem" /> class.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -390,8 +398,8 @@
         <ReturnType>System.Xml.Xsl.Runtime.XmlQueryContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the object that manages external user context information, such as data sources, parameters, extension objects, and so on.</summary>
+        <value>An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryContext" /> class.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -417,11 +425,11 @@
         <Parameter Name="index" Type="System.Xml.Xsl.Runtime.XmlILIndex&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="indexId">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">The context document.</param>
+        <param name="indexId">The index ID to look for.</param>
+        <param name="index">The returned index.</param>
+        <summary>Returns the index with the specified ID if it has already been created over the specified document, and returns <see langword="true" />. Otherwise, creates a new, empty index and returns <see langword="false" />.</summary>
+        <returns>An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlILIndex" /> class.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -445,9 +453,9 @@
         <Parameter Name="navigator" Type="System.Xml.XPath.XPathNavigator" />
       </Parameters>
       <Docs>
-        <param name="navigator">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="navigator">An instance of the <see cref="T:System.Xml.XPath.XPathNavigator" /> class.</param>
+        <summary>Generate a unique string identifier for the specified node.</summary>
+        <returns>A value of type <see langword="string" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -471,9 +479,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="index">A value of type <see langword="int" />.</param>
+        <summary>Gets the atomized name at the specified index in the array of names.</summary>
+        <returns>A value of type <see langword="string" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -497,9 +505,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="index">A value of type <see langword="int" />.</param>
+        <summary>Gets a collation that was statically created.</summary>
+        <returns>An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlCollation" /> class.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -523,9 +531,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="index">A value of type <see langword="int" />.</param>
+        <summary>Gets the specifiied early-bound extension object. If this object does not yet exist, creates an instance using the corresponding <see cref="T:System.Reflection.ConstructorInfo" />.</summary>
+        <returns>A value of type <see langword="object" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -549,9 +557,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="index">A value of type <see langword="int" />.</param>
+        <summary>Returns the value that is bound to the specified global variable. If the value has not yet been computed, computes it and stores it in the global variable.</summary>
+        <returns>The value that is bound to the specified global variable.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -575,9 +583,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="index">A value of type <see langword="int" />.</param>
+        <summary>Gets the name filter at the specified index in the array of filters.</summary>
+        <returns>An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlNavigatorFilter" /> class.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -601,9 +609,9 @@
         <Parameter Name="nodeType" Type="System.Xml.XPath.XPathNodeType" />
       </Parameters>
       <Docs>
-        <param name="nodeType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="nodeType">An instance of the <see cref="T:System.Xml.XPath.XPathNodeType" /> class.</param>
+        <summary>Gets a filter that filters nodes of the specified type.</summary>
+        <returns>An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlNavigatorFilter" /> class.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -627,9 +635,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="index">A value of type <see langword="int" />.</param>
+        <summary>Returns true if the specified global value has already been computed.</summary>
+        <returns>
+          <see langword="true" /> if the value has been computed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -654,10 +663,11 @@
         <Parameter Name="n2" Type="System.Xml.XPath.XPathNavigator" />
       </Parameters>
       <Docs>
-        <param name="n1">To be added.</param>
-        <param name="n2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="n1">An instance of the <see cref="T:System.Xml.XPath.XPathNavigator" /> class.</param>
+        <param name="n2">An instance of the <see cref="T:System.Xml.XPath.XPathNavigator" /> class.</param>
+        <summary>Compares the <see cref="P:System.Xml.XPath.XPathNavigator.LocalName" /> and <see cref="P:System.Xml.XPath.XPathNavigator.NamespaceURI" /> properties of two <see cref="T:System.Xml.XPath.XPathNavigator" /> instances to check if they are equal.</summary>
+        <returns>
+          <see langword="true" /> if the names are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -683,12 +693,20 @@
         <Parameter Name="indexNamespaceUri" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="navigator">To be added.</param>
-        <param name="indexLocalName">To be added.</param>
-        <param name="indexNamespaceUri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="navigator">An instance of the <see cref="T:System.Xml.XPath.XPathNavigator" /> class.</param>
+        <param name="indexLocalName">A value of type <see langword="int" />.</param>
+        <param name="indexNamespaceUri">A value of type <see langword="int" />.</param>
+        <summary>Determines whether the <see cref="P:System.Xml.XPath.XPathNavigator.LocalName" /> and <see cref="P:System.Xml.XPath.XPathNavigator.NamespaceURI" /> properties of the specified <see cref="T:System.Xml.XPath.XPathNavigator" /> are equal to the names specified in the parameters.</summary>
+        <returns>
+          <see langword="true" /> if the names are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.Xsl.Runtime.XmlQueryRuntime.IsQNameEqual%2A> method calls the <xref:System.Xml.Xsl.Runtime.XmlQueryRuntime.GetAtomizedName%2A> method to get the local name and the namespace URI based on the `indexLocalName` and `indexNamespaceUri`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchesXmlType">
@@ -712,10 +730,11 @@
         <Parameter Name="indexType" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="seq">To be added.</param>
-        <param name="indexType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="seq">An <see cref="T:System.Collections.Generic.IList`1" /> of <see cref="T:System.Xml.XPath.XPathItem" />objects.</param>
+        <param name="indexType">The index.</param>
+        <summary>Returns <see langword="true" /> if the type of every item in the specified sequence matches the XML type that the specified index identifies.</summary>
+        <returns>
+          <see langword="true" /> if the type of <paramref name="seq" /> is a subtype of the <paramref name="indexType" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -740,10 +759,11 @@
         <Parameter Name="code" Type="System.Xml.Schema.XmlTypeCode" />
       </Parameters>
       <Docs>
-        <param name="seq">To be added.</param>
-        <param name="code">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="seq">A sequence of <see cref="T:System.Xml.XPath.XPathItem" /> instances.</param>
+        <param name="code">A singleton type.</param>
+        <summary>Determines whether the type of the specified sequence is a subtype of the specified singleton type.</summary>
+        <returns>
+          <see langword="true" /> if the type of <paramref name="seq" /> is a subtype the type specified by <paramref name="code" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -768,10 +788,11 @@
         <Parameter Name="indexType" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <param name="indexType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">An instance of the <see cref="T:System.Xml.XPath.XPathItem" /> class.</param>
+        <param name="indexType">The index in the array of XML types..</param>
+        <summary>Returns <see langword="true" /> if the type of the specified <see cref="T:System.Xml.XPath.XPathItem" /> object matches the specified XML type.</summary>
+        <returns>
+          <see langword="true" /> if the type of the specified <see cref="T:System.Xml.XPath.XPathItem" /> matches the specified XML type; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -796,10 +817,10 @@
         <Parameter Name="code" Type="System.Xml.Schema.XmlTypeCode" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <param name="code">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">An instance of the <see cref="T:System.Xml.XPath.XPathItem" /> class.</param>
+        <param name="code">An instance of the <see cref="T:System.Xml.Schema.XmlTypeCode" /> class.</param>
+        <summary>Returns <see langword="true" /> if the type of the <see cref="T:System.Xml.XPath.XPathItem" /> object is a subtype of a type identified by the specified <see cref="T:System.Xml.Schema.XmlTypeCode" />.</summary>
+        <returns>Returns <see langword="true" /> if the type of the <see cref="T:System.Xml.XPath.XPathItem" /> object is a subtype of a type identified by the specified <see cref="T:System.Xml.Schema.XmlTypeCode" />, otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -820,8 +841,8 @@
         <ReturnType>System.Xml.XmlNameTable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the name table used to atomize all names used by the query.</summary>
+        <value>An instance of the <see cref="T:System.Xml.XmlNameTable" /> class.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -845,9 +866,10 @@
         <Parameter Name="currentNode" Type="System.Xml.XPath.XPathNavigator" />
       </Parameters>
       <Docs>
-        <param name="currentNode">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="currentNode">
+          <see cref="T:System.Xml.XPath.XPathNavigator" /> object that identifies the node.</param>
+        <summary>Used for debugging in Visual Studio. Called after the current node has changed.</summary>
+        <returns>An integer that indicates the status of the change. Used for internal testing only.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -868,8 +890,8 @@
         <ReturnType>System.Xml.Xsl.Runtime.XmlQueryOutput</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the output writer object.</summary>
+        <value>An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryOutput" /> class.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -894,10 +916,10 @@
         <Parameter Name="indexPrefixMappings" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="tagName">To be added.</param>
-        <param name="indexPrefixMappings">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="tagName">The tag name.</param>
+        <param name="indexPrefixMappings">The index.</param>
+        <summary>Parses the specified tag name and resolves the resulting prefix. If the prefix cannot be resolved, an error is thrown.</summary>
+        <returns>An instance of the <see cref="T:System.Xml.XmlQualifiedName" /> class.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -922,10 +944,10 @@
         <Parameter Name="ns" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="tagName">To be added.</param>
-        <param name="ns">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="tagName">The tag name.</param>
+        <param name="ns">The namespace.</param>
+        <summary>Parses the specified tag name. Returns an <see cref="T:System.Xml.XmlQualifiedName" /> that consists of the parsed local name and the specified namespace.</summary>
+        <returns>An instance of the <see cref="T:System.Xml.XmlQualifiedName" /> class.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -949,8 +971,8 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">A value of type <see langword="string" />.</param>
+        <summary>Reports query execution information to the event handler.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -975,9 +997,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">A value of type <see langword="int" />.</param>
+        <param name="value">A value of type <see langword="object" />.</param>
+        <summary>Returns the value that is bound to the specified global variable or parameter.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1002,9 +1024,9 @@
         <Parameter Name="output" Type="System.Xml.Xsl.Runtime.XmlQueryOutput&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="baseUri">To be added.</param>
-        <param name="output">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="baseUri">A value of type <see langword="string" />.</param>
+        <param name="output">An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryOutput" /> class.</param>
+        <summary>Starts constructing an RTF and returns a new <see cref="T:System.Xml.Xsl.Runtime.XmlQueryOutput" /> object that will be used to construct this RTF.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1028,8 +1050,8 @@
         <Parameter Name="output" Type="System.Xml.Xsl.Runtime.XmlQueryOutput&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="output">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="output">An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryOutput" /> class.</param>
+        <summary>Starts constructing a nested sequence of items. Returns a new <see cref="T:System.Xml.Xsl.Runtime.XmlQueryOutput" /> that will be used to construct this new sequence.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1054,10 +1076,10 @@
         <Parameter Name="baseUri" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <param name="baseUri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="text">A value of type <see langword="string" />.</param>
+        <param name="baseUri">A value of type <see langword="string" />.</param>
+        <summary>Constructs a new <see cref="T:System.Xml.XPath.XPathNavigator" /> from the specified text.</summary>
+        <returns>An instance of the <see cref="T:System.Xml.XPath.XPathNavigator" /> class.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1081,8 +1103,8 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="text">A value of type <see langword="string" />.</param>
+        <summary>Throws an XML exception that has the specified message text.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1103,8 +1125,8 @@
         <ReturnType>System.Xml.Xsl.Runtime.XsltLibrary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the object that manages the state. The state object is required to implement various XSLT functions.</summary>
+        <value>An instance of the <see cref="T:System.Xml.Xsl.Runtime.XsltLibrary" /> class.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

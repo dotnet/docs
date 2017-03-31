@@ -8,7 +8,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Allows Visual Studio to communicate internally with the <see cref="T:System.Windows.Forms.PropertyGrid" /> control.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -25,8 +25,15 @@
         <ReturnType>System.ComponentModel.Design.ComponentRenameEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the <see cref="T:System.Windows.Forms.PropertyGrid" /> control is browsing a COM object and the user renames the object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Only a change of value of the property that corresponds to DISPID_Name for the COM object raises the <xref:System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.ComComponentNameChanged> event.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DropDownDone">
@@ -43,7 +50,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Closes any open drop-down controls on the <see cref="T:System.Windows.Forms.PropertyGrid" /> control.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +68,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Commits all pending changes to the <see cref="T:System.Windows.Forms.PropertyGrid" /> control.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Windows.Forms.PropertyGrid" /> successfully commits changes; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,7 +88,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Activates the <see cref="T:System.Windows.Forms.PropertyGrid" /> control when the user chooses **Properties** for a control in Design view.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,8 +105,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the <see cref="T:System.Windows.Forms.PropertyGrid" /> control is currently setting one of the properties of its selected object.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Forms.PropertyGrid" /> control is currently setting one of the properties of its selected object; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,9 +127,16 @@
         <Parameter Name="key" Type="Microsoft.Win32.RegistryKey" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="key">The registry key that contains the user states.</param>
+        <summary>Loads user states from the registry into the <see cref="T:System.Windows.Forms.PropertyGrid" /> control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can save some of the <xref:System.Windows.Forms.PropertyGrid> control states, such as the <xref:System.Windows.Forms.PropertyGrid.PropertySort%2A> and <xref:System.Windows.Forms.PropertyGrid.HelpVisible%2A> properties, to the registry and load them the next time the user runs your application.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SaveState">
@@ -139,9 +155,16 @@
         <Parameter Name="key" Type="Microsoft.Win32.RegistryKey" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="key">The registry key that contains the user states.</param>
+        <summary>Saves user states from the <see cref="T:System.Windows.Forms.PropertyGrid" /> control to the registry.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can save some of the <xref:System.Windows.Forms.PropertyGrid> control states, such as the <xref:System.Windows.Forms.PropertyGrid.PropertySort%2A> and <xref:System.Windows.Forms.PropertyGrid.HelpVisible%2A> properties, to the registry and load them the next time the user runs your application.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

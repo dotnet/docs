@@ -15,8 +15,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the vertical alignment of an object or text in a control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.VerticalAlign> enumeration represents the different vertical alignment options for an object or text in a control.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Bottom">
@@ -32,7 +39,7 @@
         <ReturnType>System.Web.UI.WebControls.VerticalAlign</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Text or object is aligned with the bottom of the enclosing control.</summary>
       </Docs>
     </Member>
     <Member MemberName="Middle">
@@ -48,7 +55,7 @@
         <ReturnType>System.Web.UI.WebControls.VerticalAlign</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Text or object is aligned with the center of the enclosing control.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotSet">
@@ -64,7 +71,7 @@
         <ReturnType>System.Web.UI.WebControls.VerticalAlign</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Vertical alignment is not set.</summary>
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -80,7 +87,7 @@
         <ReturnType>System.Web.UI.WebControls.VerticalAlign</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Text or object is aligned with the top of the enclosing control.</summary>
       </Docs>
     </Member>
   </Members>

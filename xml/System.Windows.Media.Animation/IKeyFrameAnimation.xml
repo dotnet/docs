@@ -8,7 +8,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>An <see cref="T:System.Windows.Media.Animation.IKeyFrameAnimation" /> interface implementation provides untyped access to key frame collection members.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -25,8 +25,8 @@
         <ReturnType>System.Collections.IList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets an ordered collection <see cref="P:System.Windows.Media.Animation.IKeyFrameAnimation.KeyFrames" /> associated with this animation sequence.</summary>
+        <value>An <see cref="T:System.Collections.IList" /> of <see cref="P:System.Windows.Media.Animation.IKeyFrameAnimation.KeyFrames" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

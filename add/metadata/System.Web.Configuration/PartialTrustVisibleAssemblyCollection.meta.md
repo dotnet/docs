@@ -1,34 +1,45 @@
 ---
 uid: System.Web.Configuration.PartialTrustVisibleAssemblyCollection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.PartialTrustVisibleAssemblyCollection.Item(System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.PartialTrustVisibleAssemblyCollection.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Configuration.PartialTrustVisibleAssemblyCollection.Item
 ---
 
 ---
 uid: System.Web.Configuration.PartialTrustVisibleAssemblyCollection.Add(System.Web.Configuration.PartialTrustVisibleAssembly)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.PartialTrustVisibleAssemblyCollection.Remove(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.PartialTrustVisibleAssemblyCollection.RemoveAt(System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.PartialTrustVisibleAssemblyCollection.Clear
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The identity provider single sign-on descriptor (IDPSSODescriptor) class.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.IdentityProviderSingleSignOnDescriptor" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.IdentityModel.Metadata.ProtocolEndpoint&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the collection of <see cref="T:System.IdentityModel.Metadata.ProtocolEndpoint" /> representing single sign-on services.</summary>
+        <value>The collection of protocol endpoints that represent single sign-on services. The default is an empty collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +61,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.IdentityModel.Tokens.Saml2Attribute&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the supported <see cref="T:Microsoft.IdentityModel.Tokens.Saml2Attribute" /> collection.</summary>
+        <value>The collection of supported attributes. The default is an empty collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,8 +79,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether authentication requests should be signed.</summary>
+        <value>
+          <see langword="true" /> if authentication requests should be signed; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

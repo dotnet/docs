@@ -15,8 +15,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the direction of a sort operation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ComponentModel.IBindingListView.ApplySort%2A?displayProperty=fullName> and <xref:System.ComponentModel.IBindingList.ApplySort%2A?displayProperty=fullName> use this enumeration.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Ascending">
@@ -37,7 +44,7 @@
         <ReturnType>System.ComponentModel.ListSortDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sorts in ascending order.</summary>
       </Docs>
     </Member>
     <Member MemberName="Descending">
@@ -58,7 +65,7 @@
         <ReturnType>System.ComponentModel.ListSortDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sorts in descending order.</summary>
       </Docs>
     </Member>
   </Members>

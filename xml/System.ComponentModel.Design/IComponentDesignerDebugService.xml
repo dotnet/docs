@@ -8,7 +8,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides debugging services in a design-time environment.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,10 +29,18 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="condition">To be added.</param>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="condition">
+          <see langword="true" /> to prevent <c>message</c> from being displayed; otherwise, <see langword="false" />.</param>
+        <param name="message">The message to display.</param>
+        <summary>Asserts on a condition inside a design-time environment.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.IComponentDesignerDebugService.Assert%2A> method enables a designer to assert on a condition inside a design-time environment.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Fail">
@@ -51,9 +59,16 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="message">The message to log.</param>
+        <summary>Logs a failure message inside a design-time environment.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.IComponentDesignerDebugService.Fail%2A> method enables a designer to log failure messages inside a design-time environment.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IndentLevel">
@@ -69,9 +84,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the indent level for debug output.</summary>
+        <value>The indent level for debug output.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.IComponentDesignerDebugService.IndentLevel%2A> property enables a designer to change the indent level for debug output.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Listeners">
@@ -87,9 +109,16 @@
         <ReturnType>System.Diagnostics.TraceListenerCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of trace listeners for monitoring design-time debugging output.</summary>
+        <value>A collection of trace listeners</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.IComponentDesignerDebugService.Listeners%2A> property enables objects to monitor design-time debugging output.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Trace">
@@ -109,10 +138,17 @@
         <Parameter Name="category" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="category">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="message">The message to log.</param>
+        <param name="category">The category of <c>message</c>.</param>
+        <summary>Logs a debug message inside a design-time environment.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.IComponentDesignerDebugService.Trace%2A> method enables a designer to log debug messages inside a design-time environment.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

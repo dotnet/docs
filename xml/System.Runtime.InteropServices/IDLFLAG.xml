@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Use <see cref="T:System.Runtime.InteropServices.ComTypes.IDLFLAG" /> instead.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,7 +37,7 @@
         <ReturnType>System.Runtime.InteropServices.IDLFLAG</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The parameter passes information from the caller to the callee.</summary>
       </Docs>
     </Member>
     <Member MemberName="IDLFLAG_FLCID">
@@ -54,7 +54,7 @@
         <ReturnType>System.Runtime.InteropServices.IDLFLAG</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The parameter is the local identifier of a client application.</summary>
       </Docs>
     </Member>
     <Member MemberName="IDLFLAG_FOUT">
@@ -71,7 +71,7 @@
         <ReturnType>System.Runtime.InteropServices.IDLFLAG</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The parameter returns information from the callee to the caller.</summary>
       </Docs>
     </Member>
     <Member MemberName="IDLFLAG_FRETVAL">
@@ -88,7 +88,7 @@
         <ReturnType>System.Runtime.InteropServices.IDLFLAG</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The parameter is the return value of the member.</summary>
       </Docs>
     </Member>
     <Member MemberName="IDLFLAG_NONE">
@@ -105,7 +105,7 @@
         <ReturnType>System.Runtime.InteropServices.IDLFLAG</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Whether the parameter passes or receives information is unspecified.</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,6 @@
 ---
 uid: System.Workflow.Activities.ExecutionType
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

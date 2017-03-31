@@ -1,4 +1,5 @@
 ---
 uid: System.Net.WebSockets.WebSocketError
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

@@ -25,8 +25,19 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Supports a simple iteration over a <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2Collection" /> object. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Enumerators provide read-only access to the data in the collection. Enumerators cannot be used to modify the underlying collection.  
+  
+ Initially, the enumerator is positioned before the first element in the collection. The <xref:System.Security.Cryptography.X509Certificates.X509Certificate2Enumerator.Reset%2A> method also brings the enumerator back to this position. At this position, calling the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2Enumerator.Current%2A> property throws an exception. Therefore, you must call the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2Enumerator.MoveNext%2A> method to advance the enumerator to the first element of the collection before reading the value of <xref:System.Security.Cryptography.X509Certificates.X509Certificate2Enumerator.Current%2A>.  
+  
+ This class inherits from the <xref:System.Collections.IEnumerator> interface. For more information about enumerating over a collection, see <xref:System.Collections.IEnumerator>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Current">
@@ -52,9 +63,17 @@
         <ReturnType>System.Security.Cryptography.X509Certificates.X509Certificate2</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the current element in the <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2Collection" /> object.</summary>
+        <value>The current element in the <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2Collection" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Security.Cryptography.X509Certificates.X509Certificate2Enumerator> does not move the position of the enumerator. Consecutive calls to the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2Enumerator.Current%2A> property return the same object until either the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2Enumerator.MoveNext%2A> or <xref:System.Security.Cryptography.X509Certificates.X509Certificate2Enumerator.Reset%2A> method is called.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The enumerator is positioned before the first element of the collection or after the last element.</exception>
       </Docs>
     </Member>
     <Member MemberName="MoveNext">
@@ -81,9 +100,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Advances the enumerator to the next element in the <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2Collection" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the enumerator was successfully advanced to the next element; <see langword="false" /> if the enumerator has passed the end of the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method advances the enumerator to the next element in the collection. For more information about enumerating over a collection, see the <xref:System.Collections.IEnumerator> topic.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The collection was modified after the enumerator was created.</exception>
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -110,8 +138,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Sets the enumerator to its initial position, which is before the first element in the <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2Collection" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying or deleting elements, the enumerator is irrecoverably invalidated and the next call to the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2Enumerator.MoveNext%2A> or <xref:System.Security.Cryptography.X509Certificates.X509Certificate2Enumerator.Reset%2A> method throws an <xref:System.InvalidOperationException>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The collection was modified after the enumerator was created.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerator.Current">
@@ -137,9 +173,17 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="P:System.Collections.IEnumerator.Current" />.</summary>
+        <value>The current element in the <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2Collection" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2Enumerator> instance is cast to an <xref:System.Collections.IEnumerator> interface.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The enumerator is positioned before the first element of the collection or after the last element.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerator.MoveNext">
@@ -166,9 +210,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="M:System.Collections.IEnumerator.MoveNext" />.</summary>
+        <returns>
+          <see langword="true" /> if the enumerator was successfully advanced to the next element; <see langword="false" /> if the enumerator has passed the end of the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2Enumerator> instance is cast to an <xref:System.Collections.IEnumerator> interface.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The collection was modified after the enumerator was created.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerator.Reset">
@@ -195,8 +248,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="M:System.Collections.IEnumerator.Reset" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2Enumerator> instance is cast to an <xref:System.Collections.IEnumerator> interface.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The collection was modified after the enumerator was created.</exception>
       </Docs>
     </Member>
   </Members>

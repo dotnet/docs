@@ -1,39 +1,69 @@
 ---
 uid: System.Activities.DynamicUpdate.UpdateMapMetadata
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DynamicUpdate.UpdateMapMetadata.DisallowUpdateInsideThisActivity(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.DynamicUpdate.UpdateMapMetadata.AddMatch
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DynamicUpdate.UpdateMapMetadata.AddMatch(System.Activities.Variable,System.Activities.Variable)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DynamicUpdate.UpdateMapMetadata.AllowUpdateInsideThisActivity
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.DynamicUpdate.UpdateMapMetadata.GetMatch
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DynamicUpdate.UpdateMapMetadata.IsReferenceToImportedChild(System.Activities.Activity)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DynamicUpdate.UpdateMapMetadata.GetMatch(System.Activities.Activity)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DynamicUpdate.UpdateMapMetadata.GetMatch(System.Activities.Variable)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DynamicUpdate.UpdateMapMetadata.AddMatch(System.Activities.Activity,System.Activities.Activity)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

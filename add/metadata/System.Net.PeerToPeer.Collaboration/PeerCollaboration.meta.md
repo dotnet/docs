@@ -1,104 +1,131 @@
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerCollaboration
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerCollaboration.GetPeersNearMe
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerCollaboration.ContactManager
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerCollaboration.SignOut(System.Net.PeerToPeer.Collaboration.PeerScope)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerCollaboration.ApplicationLaunchInfo
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerCollaboration.GetLocalRegisteredApplications
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerCollaboration.GetLocalSetObjects
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerCollaboration.SignInScope
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerCollaboration.DeleteObject(System.Net.PeerToPeer.Collaboration.PeerObject)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.PeerToPeer.Collaboration.PeerCollaboration.GetLocalRegisteredApplications
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerCollaboration.UnregisterApplication(System.Net.PeerToPeer.Collaboration.PeerApplication,System.Net.PeerToPeer.Collaboration.PeerApplicationRegistrationType)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerCollaboration.SynchronizingObject
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerCollaboration.LocalEndPointName
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerCollaboration.SetObject(System.Net.PeerToPeer.Collaboration.PeerObject)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerCollaboration.LocalApplicationChanged
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerCollaboration.LocalObjectChanged
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerCollaboration.GetLocalRegisteredApplications(System.Net.PeerToPeer.Collaboration.PeerApplicationRegistrationType)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerCollaboration.SignIn(System.Net.PeerToPeer.Collaboration.PeerScope)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerCollaboration.LocalPresenceChanged
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerCollaboration.RegisterApplication(System.Net.PeerToPeer.Collaboration.PeerApplication,System.Net.PeerToPeer.Collaboration.PeerApplicationRegistrationType)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerCollaboration.LocalNameChanged
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerCollaboration.LocalPresenceInfo
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

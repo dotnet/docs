@@ -20,8 +20,16 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a page adapter for the XHTML adapter set. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter> class inherits the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter> class and implements the <xref:System.Web.UI.MobileControls.IPageAdapter> class.  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Web.AspNetHostingPermission">for verifying at load time that the class derived from <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter" /> has this permission. Associated enumerations: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />, <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,7 +43,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,9 +60,16 @@
         <ReturnType>System.Collections.IList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a list of any additional HTTP headers by which caching is varied. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>An <see cref="T:System.Collections.IList" /> object of additional HTTP headers.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter> class inherits the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.CacheVaryByHeaders%2A> property from the <xref:System.Web.UI.MobileControls.IPageAdapter> interface and always returns `null`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CookielessDataDictionary">
@@ -70,9 +85,16 @@
         <ReturnType>System.Collections.IDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the current cookieless <see cref="P:System.Web.UI.Page.Session" /> property data, if any. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>An <see cref="T:System.Collections.IDictionary" /> containing key/value pairs for the current cookieless <see cref="P:System.Web.HttpContext.Session" /> data, if any; otherwise, <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.CookielessDataDictionary%2A> property is populated when a valid <xref:System.Collections.IDictionary> interface is configured as an attribute of the <xref:System.Web.UI.MobileControls.MobileControlsSection> element.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateTextWriter">
@@ -91,9 +113,9 @@
         <Parameter Name="writer" Type="System.IO.TextWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="writer">A <see cref="T:System.IO.TextWriter" /> object or an object inherited from the <see cref="T:System.IO.TextWriter" />.</param>
+        <summary>Creates and returns a text writer that is appropriate for the target device. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <returns>A new <see cref="T:System.Web.UI.XhtmlTextWriter" /> object based on the provided <see cref="T:System.IO.TextWriter" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,13 +138,20 @@
         <Parameter Name="baseCollection" Type="System.Collections.Specialized.NameValueCollection" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <param name="postEventSourceID">To be added.</param>
-        <param name="postEventArgumentID">To be added.</param>
-        <param name="baseCollection">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="request">The <see cref="T:System.Web.HttpRequest" /> object that contains request information.</param>
+        <param name="postEventSourceID">The source identifier for the event.</param>
+        <param name="postEventArgumentID">An argument identifier for the event.</param>
+        <param name="baseCollection">The collection of postback data from the request object.</param>
+        <summary>Returns the postback data collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <returns>A <see cref="T:System.Collections.Specialized.NameValueCollection" /> object containing all query string or form parameters and values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because some devices handle postback differently from others, the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.DeterminePostBackMode%2A> method allows the adapter to modify the collection.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DeviceQualifies">
@@ -141,9 +170,10 @@
         <Parameter Name="context" Type="System.Web.HttpContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">The <see cref="T:System.Web.HttpContext" /> object for the current request.</param>
+        <summary>Indicates whether the device adapter set applies to the specified request. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="P:System.Web.Configuration.HttpCapabilitiesBase.PreferredRenderingType" /> for the browser is one of these members of the <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.Doctype" /> object: <see cref="F:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.Doctype.XhtmlBasic" />, <see cref="F:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.Doctype.XhtmlMobileProfile" />, or <see cref="F:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.Doctype.Wml20" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,9 +190,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the key for submitting the event argument. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>A string representing the key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If an inheriting adapter overrides the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.EventArgumentKey%2A> property, it must also override the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.DeterminePostBackMode%2A> method to process the postback.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EventSourceKey">
@@ -178,9 +215,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the key for submitting the event source. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>A string representing the key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If an inheriting adapter overrides the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.EventSourceKey%2A> property, it must also override the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.DeterminePostBackMode%2A> method to process the postback.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HandleError">
@@ -200,11 +244,19 @@
         <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="e">An <see cref="T:System.Exception" /> object.</param>
+        <param name="writer">An <see cref="T:System.Web.UI.HtmlTextWriter" /> object.</param>
+        <summary>Called if an unhandled error occurs on the page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <returns>
+          <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An adapter can choose to handle the error and display an error message. The <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter> class does nothing and returns `false`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HandlePagePostBackEvent">
@@ -224,11 +276,22 @@
         <Parameter Name="eventArgument" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="eventSource">To be added.</param>
-        <param name="eventArgument">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="eventSource">The source identifier for the event.</param>
+        <param name="eventArgument">The name of the event.</param>
+        <summary>Indicates whether the adapter handles the postback event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <returns>
+          <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.HandlePagePostBackEvent%2A> method is called during postback. An adapter can choose to handle the event. The <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter> class does not handle the postback event and always returns `false`.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding the <see cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.HandlePagePostBackEvent(System.String,System.String)" /> method in a derived class, if you want your page adapter to handle the postback event, return <see langword="true" /> after handling the event.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="InitWriterState">
@@ -247,9 +310,22 @@
         <Parameter Name="writer" Type="System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="writer">An <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" /> object.</param>
+        <summary>Configures the <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" /> object for the target device. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.InitWriterState%2A> method is called before rendering the page. This method sets the following properties on `writer` for the target device:  
+  
+-   <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.UseDivsForBreaks%2A>  
+  
+-   <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SuppressNewLine%2A>  
+  
+-   <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SupportsNoWrapStyle%2A>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -268,9 +344,22 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">The <see cref="T:System.EventArgs" /> object for the <see cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.OnPreRender(System.EventArgs)" /> method.</param>
+        <summary>Sets conditional pagination for the page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.OnPreRender%2A> method checks the <xref:System.Web.UI.MobileControls.MobilePage.ActiveForm%2A> property for the page. If the <xref:System.Web.UI.MobileControls.Form.Action%2A> property is not empty, the <xref:System.Web.UI.MobileControls.Panel.Paginate%2A> property for the active form is set to `false`. The <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.OnPreRender%2A> method calls the base <xref:System.Web.UI.MobileControls.Adapters.ControlAdapter.OnPreRender%2A> method before exiting.  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.MobileControls.MobileControl.Form%2A?displayProperty=fullName> property inherits from the <xref:System.Web.UI.MobileControls.Panel?displayProperty=fullName> class, which provides the <xref:System.Web.UI.MobileControls.Panel.Paginate%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding the <see cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.OnPreRender(System.EventArgs)" /> method in a derived class, be sure to call the base method.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="OptimumPageWeight">
@@ -286,8 +375,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a page weight that is appropriate for the target device.  This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>An integer that represents the optimal number of bytes for a page on the target device.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -304,8 +393,8 @@
         <ReturnType>System.Web.UI.MobileControls.MobilePage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the page to which the adapter is attached. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>A <see cref="T:System.Web.UI.MobileControls.MobilePage" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -322,8 +411,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a Boolean value indicating whether items from the <see cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.CookielessDataDictionary" /> property are persisted in the query string. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>
+          <see langword="true" /> if the <see langword="CookielessDataDictionaryType" /> in the <see langword="MobileControls" /> configuration section of the Web.config file is set to a valid dictionary type; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -343,8 +433,8 @@
         <Parameter Name="writer" Type="System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">An <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" /> object that writes the content to the client browser.</param>
+        <summary>Sends the page content to a provided <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" />, which renders the content to the client. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -366,11 +456,18 @@
         <Parameter Name="argument" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="target">To be added.</param>
-        <param name="argument">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="writer">An <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" /> object that writes the link.</param>
+        <param name="target">The target URL for postback.</param>
+        <param name="argument">The name of the event for which the link is substituting.</param>
+        <summary>Creates a link on the current page to enable postback on devices that do not support postback events. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Some devices are able to execute a postback event on a link or button only. The <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.RenderUrlPostBackEvent%2A> method writes a link with a URL that contains all of the information that is required to process the form and to update and display the page.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

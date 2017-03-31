@@ -1,14 +1,21 @@
 ---
 uid: System.Web.UI.Design.WebControls.EmbeddedMailObjectCollectionEditor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.EmbeddedMailObjectCollectionEditor.EditValue
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.EmbeddedMailObjectCollectionEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.EmbeddedMailObjectCollectionEditor.#ctor(System.Type)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

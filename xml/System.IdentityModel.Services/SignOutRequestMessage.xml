@@ -11,8 +11,19 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a WS-Federation sign-out message. This message is created when the received message has the action parameter (wa) set to “wsignout1.0”.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A WS-Federation sign-out message is sent by a relying party (RP) to a security token service (STS) to sign out of the current session with that STS. The wa parameter must be set to “wsignout1.0” and an optional wreply parameter may be set to indicate the URL to which the client should be redirected by the STS after sign-out completes.  
+  
+ A <xref:System.IdentityModel.Services.SignOutRequestMessage> message is created by the static methods of the <xref:System.IdentityModel.Services.WSFederationMessage> class, for example the <xref:System.IdentityModel.Services.WSFederationMessage.CreateFromUri%2A> method, when the wa parameter is set to “wsignout1.0”.  
+  
+ [!INCLUDE[wif_wsfed_ref](~/includes/wif-wsfed-ref-md.md)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,9 +39,20 @@
         <Parameter Name="baseUrl" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="baseUrl">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="baseUrl">The base URL to which this message applies. Sets the  <see cref="" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.SignOutRequestMessage" /> class with the specified base URL.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The wa message parameter (the <xref:System.IdentityModel.Services.WSFederationMessage.Action%2A> property) is initialized to “wsignout1.0”.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="baseUrl" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.IdentityModel.Services.WSFederationMessageException">
+          <paramref name="baseUrl" /> is not a valid, absolute URI.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -47,10 +69,27 @@
         <Parameter Name="reply" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="baseUrl">To be added.</param>
-        <param name="reply">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="baseUrl">The base URL to which this message applies.</param>
+        <param name="reply">The value of the wreply parameter. The URL to which the reply should be sent.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.SignOutRequestMessage" /> class with the specified base URL and wreply parameter.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The wa message parameter (the <xref:System.IdentityModel.Services.WSFederationMessage.Action%2A> property) is initialized to “wsignout1.0”.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="reply" /> is either empty or <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="reply" /> is not a valid, absolute URI.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="baseUrl" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.IdentityModel.Services.WSFederationMessageException">
+          <paramref name="baseUrl" /> is not a valid, absolute URI.</exception>
       </Docs>
     </Member>
     <Member MemberName="Reply">
@@ -66,9 +105,17 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the wreply parameter of the message.</summary>
+        <value>The value of the wreply parameter. This is the URL to which the browser should be redirected.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The wreply parameter specifies the URL to which the browser should be redirected after sign-out has been completed. The wreply parameter is optional. Set the <xref:System.IdentityModel.Services.SignOutRequestMessage> property to `null` or an empty string to remove the wreply parameter from the message.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">An attempt to set a value that is not a valid, absolute URI occurs.</exception>
       </Docs>
     </Member>
     <Member MemberName="Validate">
@@ -85,8 +132,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Validates the current instance.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The wa parameter (the <see cref="P:System.IdentityModel.Services.WSFederationMessage.Action" /> property) is not set to “wsignout1.0”.</exception>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -105,9 +153,18 @@
         <Parameter Name="writer" Type="System.IO.TextWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="writer">The writer to which to write the message.</param>
+        <summary>Writes the message in query string form to the specified text writer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method calls the <xref:System.IdentityModel.Services.SignOutRequestMessage.Validate%2A> method before writing the message.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="writer" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

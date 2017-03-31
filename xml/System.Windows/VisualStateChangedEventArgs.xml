@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides data for the <see cref="E:System.Windows.VisualStateGroup.CurrentStateChanging" /> and <see cref="E:System.Windows.VisualStateGroup.CurrentStateChanged" /> events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Windows.VisualStateGroup> that raises the event is set on the <xref:System.Windows.Controls.ControlTemplate> of a control, the <xref:System.Windows.VisualStateChangedEventArgs.Control%2A> property is the control that owns the <xref:System.Windows.Controls.ControlTemplate>. When the <xref:System.Windows.VisualStateGroup> is set on a <xref:System.Windows.FrameworkElement> that is not in a <xref:System.Windows.Controls.ControlTemplate>, the <xref:System.Windows.VisualStateChangedEventArgs.Control%2A> property is `null` and you should use the <xref:System.Windows.VisualStateChangedEventArgs.StateGroupsRoot%2A> property.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Control">
@@ -28,9 +35,16 @@
         <ReturnType>System.Windows.FrameworkElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the element that is transitioning states.</summary>
+        <value>The element that is transitioning states if the <see cref="T:System.Windows.VisualStateGroup" /> is in a <see cref="T:System.Windows.Controls.ControlTemplate" />; otherwise, <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Windows.VisualStateGroup> is set on a <xref:System.Windows.FrameworkElement> that is not in a <xref:System.Windows.Controls.ControlTemplate>, the <xref:System.Windows.VisualStateChangedEventArgs.Control%2A> property is `null` and you should use the <xref:System.Windows.VisualStateChangedEventArgs.StateGroupsRoot%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NewState">
@@ -46,8 +60,8 @@
         <ReturnType>System.Windows.VisualState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the state that the element is transitioning to or has transitioned to.</summary>
+        <value>The state that the element is transitioning to or has transitioned to.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +78,8 @@
         <ReturnType>System.Windows.VisualState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the state that the element is transitioning to or has transitioned from.</summary>
+        <value>The state that the element is transitioning to or has transitioned from.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +96,8 @@
         <ReturnType>System.Windows.FrameworkElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the root element that contains the <see cref="T:System.Windows.VisualStateManager" />.</summary>
+        <value>The root element that contains the <see cref="T:System.Windows.VisualStateManager" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

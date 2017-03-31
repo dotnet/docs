@@ -1,9 +1,9 @@
 ---
 uid: System.Runtime.Serialization.IObjectReference
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.IObjectReference.GetRealObject(System.Runtime.Serialization.StreamingContext)
-internalonly: False
+manager: "ghogen"
 ---

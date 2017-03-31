@@ -20,8 +20,20 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>An enumeration used with the <see cref="T:System.LoaderOptimizationAttribute" /> class to specify loader optimizations for an executable.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The meaning of MultiDomainHost changed in the .NET Framework version 2.0. The loader now shares resources across application domains only for assemblies that have been added to the global assembly cache.  
+  
+> [!NOTE]
+>  If custom code access security policy is set for the <xref:System.AppDomain>, by using the <xref:System.AppDomain.SetAppDomainPolicy%2A> property, and the <xref:System.AppDomain> is created using the MultiDomain flag, the effect is the same as specifying the MultiDomainHost flag; that is, only assemblies in the GAC are shared. When this occurs, the loader does not throw an exception and the application does not experience the performance gains associated with the MultiDomain flag.  
+  
+ For more information on assembly sharing and domain-neutral assembly loading, see [Application Domains and Assemblies](http://msdn.microsoft.com/en-us/433b04ae-4ba8-4849-9dbd-79194f240346).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="DisallowBindings">
@@ -47,7 +59,7 @@
         <ReturnType>System.LoaderOptimization</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Ignored by the common language runtime.</summary>
       </Docs>
     </Member>
     <Member MemberName="DomainMask">
@@ -73,7 +85,7 @@
         <ReturnType>System.LoaderOptimization</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Do not use. This mask selects the domain-related values, screening out the unused <see cref="F:System.LoaderOptimization.DisallowBindings" /> flag.</summary>
       </Docs>
     </Member>
     <Member MemberName="MultiDomain">
@@ -94,7 +106,7 @@
         <ReturnType>System.LoaderOptimization</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the application will probably have many domains that use the same code, and the loader must share maximal internal resources across application domains.</summary>
       </Docs>
     </Member>
     <Member MemberName="MultiDomainHost">
@@ -115,7 +127,7 @@
         <ReturnType>System.LoaderOptimization</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the application will probably host unique code in multiple domains, and the loader must share resources across application domains only for globally available (strong-named) assemblies that have been added to the global assembly cache.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotSpecified">
@@ -136,7 +148,7 @@
         <ReturnType>System.LoaderOptimization</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that no optimizations for sharing internal resources are specified. If the default domain or hosting interface specified an optimization, then the loader uses that; otherwise, the loader uses <see cref="F:System.LoaderOptimization.SingleDomain" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="SingleDomain">
@@ -157,7 +169,7 @@
         <ReturnType>System.LoaderOptimization</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the application will probably have a single domain, and loader must not share internal resources across application domains.</summary>
       </Docs>
     </Member>
   </Members>

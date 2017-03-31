@@ -1,84 +1,123 @@
 ---
 uid: System.Windows.Forms.Integration.PropertyMap
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.Integration.PropertyMap.Keys
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Integration.PropertyMap.Item(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Integration.PropertyMap.DefaultTranslators
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Integration.PropertyMap.PropertyMappingError
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Integration.PropertyMap.Values
-internalonly: False
----
-
----
-uid: System.Windows.Forms.Integration.PropertyMap.ApplyAll
-internalonly: False
----
-
----
-uid: System.Windows.Forms.Integration.PropertyMap.Apply(System.String)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.Integration.PropertyMap.Add(System.String,System.Windows.Forms.Integration.PropertyTranslator)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.Integration.PropertyMap.ResetAll
-internalonly: False
----
-
----
-uid: System.Windows.Forms.Integration.PropertyMap.Reset(System.String)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.Integration.PropertyMap.Contains(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Integration.PropertyMap.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.Integration.PropertyMap.ApplyAll
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.Integration.PropertyMap.Apply(System.String)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.Integration.PropertyMap.Add(System.String,System.Windows.Forms.Integration.PropertyTranslator)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.Integration.PropertyMap.ResetAll
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.Integration.PropertyMap.Reset(System.String)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.Integration.PropertyMap.Contains(System.String)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.Integration.PropertyMap.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Integration.PropertyMap.Clear
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Integration.PropertyMap.SourceObject
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Integration.PropertyMap.Remove(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Integration.PropertyMap.#ctor(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Input.Manipulations.ManipulationParameters2D
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---

@@ -1,14 +1,20 @@
 ---
 uid: System.Workflow.Runtime.Tracking.PreviousTrackingServiceAttribute
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Tracking.PreviousTrackingServiceAttribute.#ctor(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Tracking.PreviousTrackingServiceAttribute.AssemblyQualifiedName
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

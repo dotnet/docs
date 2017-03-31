@@ -21,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies patch band information for targeted patching of the .NET Framework.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -43,8 +43,8 @@
         <Parameter Name="targetedPatchBand" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="targetedPatchBand">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="targetedPatchBand">The patch band.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.AssemblyTargetedPatchBandAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,8 +66,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the patch band.</summary>
+        <value>The patch band information.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

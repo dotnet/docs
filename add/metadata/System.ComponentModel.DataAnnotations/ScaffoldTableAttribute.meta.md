@@ -1,14 +1,17 @@
 ---
 uid: System.ComponentModel.DataAnnotations.ScaffoldTableAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.ScaffoldTableAttribute.Scaffold
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.ScaffoldTableAttribute.#ctor(System.Boolean)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides data for the <see cref="E:System.Windows.UIElement.ManipulationCompleted" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about manipulations, see the [Input Overview](../Topic/Input%20Overview.md). For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Cancel">
@@ -29,9 +36,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Cancels the manipulation.</summary>
+        <returns>
+          <see langword="true" /> if the manipulation was successfully canceled; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the method succeeds, the default <xref:System.Windows.Input.TouchDevice> sends previous touch events as mouse down, mouse move, or mouse up events to the element. Touch cannot be promoted to mouse events if the <xref:System.Windows.UIElement.ManipulationCompleted> event occurs during inertia.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FinalVelocities">
@@ -47,8 +62,8 @@
         <ReturnType>System.Windows.Input.ManipulationVelocities</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the velocities that are used for the manipulation.</summary>
+        <value>The velocities that are used for the manipulation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,8 +103,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the <see cref="E:System.Windows.UIElement.ManipulationCompleted" /> event occurs during inertia.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="E:System.Windows.UIElement.ManipulationCompleted" /> event occurs during inertia; <see langword="false" /> if the event occurs while the user has contact with the <see cref="T:System.Windows.UIElement" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,8 +122,8 @@
         <ReturnType>System.Windows.IInputElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the container that defines the coordinates for the manipulation.</summary>
+        <value>The container that defines the coordinates for the manipulation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,9 +140,16 @@
         <ReturnType>System.Windows.Point</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the point from which the manipulation originated.</summary>
+        <value>The point from which the manipulation originated.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If two points of contact initiated the manipulation, the <xref:System.Windows.Input.ManipulationCompletedEventArgs.ManipulationOrigin%2A> property is the point between the two points of contact.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Manipulators">
@@ -142,8 +165,8 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Windows.Input.IManipulator&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of objects that represents the touch contacts for the manipulation.</summary>
+        <value>A collection of objects that represents the touch contacts for the manipulation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,8 +183,8 @@
         <ReturnType>System.Windows.Input.ManipulationDelta</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the total transformation that occurs during the current manipulation.</summary>
+        <value>The total transformation that occurs during the current manipulation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

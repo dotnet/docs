@@ -1,9 +1,15 @@
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.ChartAreaCollection
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.ChartAreaCollection.Add(System.String)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.ChartAreaCollection.Add
 ---

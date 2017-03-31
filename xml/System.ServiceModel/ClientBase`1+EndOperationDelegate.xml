@@ -24,8 +24,10 @@
     <ReturnType>System.Object[]</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="result">To be added.</param>
-    <summary>To be added.</summary>
+    <param name="result">The result returned by the call made by <see cref="M:System.ServiceModel.ClientBase`1.InvokeAsync(System.ServiceModel.ClientBase{`0}.BeginOperationDelegate,System.Object[],System.ServiceModel.ClientBase{`0}.EndOperationDelegate,System.Threading.SendOrPostCallback,System.Object)" />  
+  
+ to <see cref="T:System.ServiceModel.ClientBase`1.BeginOperationDelegate" />.</param>
+    <summary>Represents a delegate that is invoked by <see cref="M:System.ServiceModel.ClientBase`1.InvokeAsync(System.ServiceModel.ClientBase{`0}.BeginOperationDelegate,System.Object[],System.ServiceModel.ClientBase{`0}.EndOperationDelegate,System.Threading.SendOrPostCallback,System.Object)" /> on successful completion of the call made by <see cref="M:System.ServiceModel.ClientBase`1.InvokeAsync(System.ServiceModel.ClientBase{`0}.BeginOperationDelegate,System.Object[],System.ServiceModel.ClientBase{`0}.EndOperationDelegate,System.Threading.SendOrPostCallback,System.Object)" /> to <see cref="T:System.ServiceModel.ClientBase`1.BeginOperationDelegate" />.</summary>
     <returns>To be added.</returns>
     <remarks>To be added.</remarks>
   </Docs>

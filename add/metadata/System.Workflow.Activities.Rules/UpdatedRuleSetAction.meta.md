@@ -1,29 +1,48 @@
 ---
 uid: System.Workflow.Activities.Rules.UpdatedRuleSetAction
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.Rules.UpdatedRuleSetAction.#ctor(System.Workflow.Activities.Rules.RuleSet,System.Workflow.Activities.Rules.RuleSet)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.Rules.UpdatedRuleSetAction.RuleSetName
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.Rules.UpdatedRuleSetAction.OriginalRuleSetDefinition
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.Rules.UpdatedRuleSetAction.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.Rules.UpdatedRuleSetAction.UpdatedRuleSetDefinition
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.Rules.UpdatedRuleSetAction.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

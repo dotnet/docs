@@ -11,8 +11,25 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a claim for a <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> security token.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.IdentityModel.Tokens.SamlSecurityToken> security tokens specify their claims using SAML assertions, which can specify when the subject was authenticated. The claims in a SAML assertion are represented by SAML statements, which are represented by the <xref:System.IdentityModel.Tokens.SamlStatement> class.  
+  
+ The SAML specification defines the following statement types:  
+  
+-   <xref:System.IdentityModel.Tokens.SamlAttributeStatement>  
+  
+-   <xref:System.IdentityModel.Tokens.SamlAuthenticationStatement>  
+  
+-   <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement>  
+  
+-   <xref:System.IdentityModel.Tokens.SamlSubjectStatement>  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +43,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlStatement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,11 +64,18 @@
         <Parameter Name="samlAuthenticator" Type="System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator" />
       </Parameters>
       <Docs>
-        <param name="issuer">To be added.</param>
-        <param name="samlAuthenticator">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="issuer">A <see cref="T:System.IdentityModel.Claims.ClaimSet" /> that represents the issuer of the <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> security token.</param>
+        <param name="samlAuthenticator">A <see cref="T:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator" /> to authenticate the <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> security token.</param>
+        <summary>Creates an authorization policy for a <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> security token.</summary>
+        <returns>An <see cref="T:System.IdentityModel.Policy.IAuthorizationPolicy" /> that represents an authorization policy for the <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> security token.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.IdentityModel.Tokens.SamlStatement.CreatePolicy%2A> method to get an authorization policy for a <xref:System.IdentityModel.Tokens.SamlSecurityToken> security token.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -67,9 +91,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>When overridden in a derived class, gets a value that indicates whether the properties of this instance are read-only.</summary>
+        <value>
+          <see langword="true" /> if the properties of this instance are read-only; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Classes that derive from the <xref:System.IdentityModel.Tokens.SamlStatement> class, should set the <xref:System.IdentityModel.Tokens.SamlStatement.IsReadOnly%2A> property to `true` when the <xref:System.IdentityModel.Tokens.SamlStatement.MakeReadOnly%2A> method is called.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MakeReadOnly">
@@ -86,8 +118,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Causes this instance to be read-only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.IdentityModel.Tokens.SamlStatement.MakeReadOnly%2A> method is called, the <xref:System.IdentityModel.Tokens.SamlStatement.IsReadOnly%2A> property is set to `true` and properties of this instance can no longer be set.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadXml">
@@ -109,12 +148,19 @@
         <Parameter Name="outOfBandTokenResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <param name="samlSerializer">To be added.</param>
+        <param name="reader">A <see cref="T:System.Xml.XmlDictionaryReader" /> to read the SAML statement.</param>
+        <param name="samlSerializer">A <see cref="T:System.IdentityModel.Tokens.SamlSerializer" /> that is capable of reading XML elements in the SAML statement that is defined in the SAML specification.</param>
         <param name="keyInfoTokenSerializer">To be added.</param>
-        <param name="outOfBandTokenResolver">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="outOfBandTokenResolver">A <see cref="T:System.IdentityModel.Selectors.SecurityTokenResolver" /> that determines the security token that created the digital signature.</param>
+        <summary>When overridden in a derived class, reads the SAML statement from the specified XML reader.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.IdentityModel.Tokens.SamlStatement.ReadXml%28System.Xml.XmlDictionaryReader%2CSystem.IdentityModel.Tokens.SamlSerializer%2CSystem.IdentityModel.Selectors.SecurityTokenSerializer%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%29> method to read in a SAML statement, validate the XML, and set the appropriate properties that correspond to the attributes and elements.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteXml">
@@ -135,10 +181,10 @@
         <Parameter Name="keyInfoSerializer" Type="System.IdentityModel.Selectors.SecurityTokenSerializer" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="samlSerializer">To be added.</param>
+        <param name="writer">A <see cref="T:System.Xml.XmlDictionaryWriter" /> to write the SAML statement.</param>
+        <param name="samlSerializer">A <see cref="T:System.IdentityModel.Tokens.SamlSerializer" /> that is capable of writing XML elements in a SAML assertion.</param>
         <param name="keyInfoTokenSerializer">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Writes the SAML statement into the specified XML serializer.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

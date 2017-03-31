@@ -1,14 +1,20 @@
 ---
 uid: System.Runtime.CompilerServices.TypeForwardedToAttribute
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.CompilerServices.TypeForwardedToAttribute.#ctor(System.Type)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.CompilerServices.TypeForwardedToAttribute.Destination
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

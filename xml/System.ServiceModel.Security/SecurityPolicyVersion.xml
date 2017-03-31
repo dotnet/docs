@@ -12,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains the set of supported WS-SecurityPolicy versions. This is an abstract class.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -46,8 +46,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the namespace for this WS-SecurityPolicy version.</summary>
+        <value>The namespace for this WS-SecurityPolicy version.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,8 +65,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the prefix.</summary>
+        <value>The prefix.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,8 +84,8 @@
         <ReturnType>System.ServiceModel.Security.SecurityPolicyVersion</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the version 1.1 of WS-SecurityPolicy.</summary>
+        <value>The version 1.1 of WS-SecurityPolicy.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,8 +103,8 @@
         <ReturnType>System.ServiceModel.Security.SecurityPolicyVersion</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the version 1.2 of WS-SecurityPolicy.</summary>
+        <value>The version 1.2 of WS-SecurityPolicy.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

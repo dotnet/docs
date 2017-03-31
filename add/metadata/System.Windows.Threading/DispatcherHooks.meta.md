@@ -1,34 +1,46 @@
 ---
 uid: System.Windows.Threading.DispatcherHooks
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Threading.DispatcherHooks.DispatcherInactive
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Threading.DispatcherHooks.OperationCompleted
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Threading.DispatcherHooks.OperationPriorityChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Threading.DispatcherHooks.OperationAborted
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Threading.DispatcherHooks.OperationStarted
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Threading.DispatcherHooks.OperationPosted
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

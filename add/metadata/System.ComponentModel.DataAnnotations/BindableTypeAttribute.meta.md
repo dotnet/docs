@@ -1,14 +1,17 @@
 ---
 uid: System.ComponentModel.DataAnnotations.BindableTypeAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.BindableTypeAttribute.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.BindableTypeAttribute.IsBindable
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

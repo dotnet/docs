@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.Design.IDocumentProjectItem
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.IDocumentProjectItem.GetContents
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.IDocumentProjectItem.Open
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

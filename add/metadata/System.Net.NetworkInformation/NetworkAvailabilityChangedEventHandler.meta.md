@@ -1,4 +1,5 @@
 ---
 uid: System.Net.NetworkInformation.NetworkAvailabilityChangedEventHandler
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

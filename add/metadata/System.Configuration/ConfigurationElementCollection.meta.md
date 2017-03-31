@@ -1,214 +1,281 @@
 ---
 uid: System.Configuration.ConfigurationElementCollection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationElementCollection.OnDeserializeUnrecognizedElement(System.String,System.Xml.XmlReader)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationElementCollection.BaseClear
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationElementCollection.IsModified
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationElementCollection.CollectionType
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationElementCollection.BaseGet(System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationElementCollection.GetHashCode
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationElementCollection.BaseAdd(System.Int32,System.Configuration.ConfigurationElement)
-internalonly: False
----
-
----
-uid: System.Configuration.ConfigurationElementCollection.ThrowOnDuplicate
-internalonly: False
----
-
----
-uid: System.Configuration.ConfigurationElementCollection.RemoveElementName
-internalonly: False
----
-
----
-uid: System.Configuration.ConfigurationElementCollection.SyncRoot
-internalonly: False
----
-
----
-uid: System.Configuration.ConfigurationElementCollection.BaseGetKey(System.Int32)
-internalonly: False
----
-
----
-uid: System.Configuration.ConfigurationElementCollection.IsSynchronized
-internalonly: False
----
-
----
-uid: System.Configuration.ConfigurationElementCollection.BaseAdd(System.Configuration.ConfigurationElement,System.Boolean)
-internalonly: False
----
-
----
-uid: System.Configuration.ConfigurationElementCollection.ResetModified
-internalonly: False
----
-
----
-uid: System.Configuration.ConfigurationElementCollection.EmitClear
-internalonly: False
----
-
----
-uid: System.Configuration.ConfigurationElementCollection.Unmerge(System.Configuration.ConfigurationElement,System.Configuration.ConfigurationElement,System.Configuration.ConfigurationSaveMode)
-internalonly: False
----
-
----
-uid: System.Configuration.ConfigurationElementCollection.Reset(System.Configuration.ConfigurationElement)
-internalonly: False
----
-
----
-uid: System.Configuration.ConfigurationElementCollection.CopyTo(System.Configuration.ConfigurationElement[],System.Int32)
-internalonly: False
----
-
----
-uid: System.Configuration.ConfigurationElementCollection.SerializeElement(System.Xml.XmlWriter,System.Boolean)
-internalonly: False
----
-
----
-uid: System.Configuration.ConfigurationElementCollection.GetElementKey(System.Configuration.ConfigurationElement)
-internalonly: False
----
-
----
-uid: System.Configuration.ConfigurationElementCollection.CreateNewElement(System.String)
-internalonly: False
----
-
----
-uid: System.Configuration.ConfigurationElementCollection.SetReadOnly
-internalonly: False
----
-
----
-uid: System.Configuration.ConfigurationElementCollection.BaseRemoveAt(System.Int32)
-internalonly: False
----
-
----
-uid: System.Configuration.ConfigurationElementCollection.BaseIsRemoved(System.Object)
-internalonly: False
----
-
----
-uid: System.Configuration.ConfigurationElementCollection.ElementName
-internalonly: False
----
-
----
-uid: System.Configuration.ConfigurationElementCollection.IsElementName(System.String)
-internalonly: False
----
-
----
-uid: System.Configuration.ConfigurationElementCollection.#ctor(System.Collections.IComparer)
-internalonly: False
----
-
----
-uid: System.Configuration.ConfigurationElementCollection.BaseGet(System.Object)
-internalonly: False
----
-
----
-uid: System.Configuration.ConfigurationElementCollection.Equals(System.Object)
-internalonly: False
----
-
----
-uid: System.Configuration.ConfigurationElementCollection.IsReadOnly
-internalonly: False
----
-
----
-uid: System.Configuration.ConfigurationElementCollection.Count
-internalonly: False
----
-
----
-uid: System.Configuration.ConfigurationElementCollection.BaseRemove(System.Object)
-internalonly: False
----
-
----
-uid: System.Configuration.ConfigurationElementCollection.IsElementRemovable(System.Configuration.ConfigurationElement)
-internalonly: False
----
-
----
-uid: System.Configuration.ConfigurationElementCollection.AddElementName
-internalonly: False
----
-
----
-uid: System.Configuration.ConfigurationElementCollection.ClearElementName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationElementCollection.CreateNewElement
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
-uid: System.Configuration.ConfigurationElementCollection.GetEnumerator
-internalonly: False
+uid: System.Configuration.ConfigurationElementCollection.ThrowOnDuplicate
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
-uid: System.Configuration.ConfigurationElementCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
-internalonly: False
+uid: System.Configuration.ConfigurationElementCollection.RemoveElementName
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.ConfigurationElementCollection.SyncRoot
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.ConfigurationElementCollection.BaseGetKey(System.Int32)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.ConfigurationElementCollection.BaseAdd
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.ConfigurationElementCollection.IsSynchronized
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.ConfigurationElementCollection.BaseAdd(System.Configuration.ConfigurationElement,System.Boolean)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.ConfigurationElementCollection.ResetModified
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.ConfigurationElementCollection.EmitClear
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.ConfigurationElementCollection.Unmerge(System.Configuration.ConfigurationElement,System.Configuration.ConfigurationElement,System.Configuration.ConfigurationSaveMode)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.ConfigurationElementCollection.Reset(System.Configuration.ConfigurationElement)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.ConfigurationElementCollection.CopyTo(System.Configuration.ConfigurationElement[],System.Int32)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.ConfigurationElementCollection.SerializeElement(System.Xml.XmlWriter,System.Boolean)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.ConfigurationElementCollection.GetElementKey(System.Configuration.ConfigurationElement)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.ConfigurationElementCollection.CreateNewElement(System.String)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.ConfigurationElementCollection.SetReadOnly
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.ConfigurationElementCollection.BaseRemoveAt(System.Int32)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.ConfigurationElementCollection.BaseIsRemoved(System.Object)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.ConfigurationElementCollection.ElementName
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.ConfigurationElementCollection.IsElementName(System.String)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.ConfigurationElementCollection.#ctor(System.Collections.IComparer)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.ConfigurationElementCollection.BaseGet
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.ConfigurationElementCollection.BaseGet(System.Object)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.ConfigurationElementCollection.Equals(System.Object)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.ConfigurationElementCollection.IsReadOnly
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.ConfigurationElementCollection.Count
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.ConfigurationElementCollection.BaseRemove(System.Object)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.ConfigurationElementCollection.IsElementRemovable(System.Configuration.ConfigurationElement)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.ConfigurationElementCollection.AddElementName
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.ConfigurationElementCollection.ClearElementName
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationElementCollection.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.ConfigurationElementCollection.CreateNewElement
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.ConfigurationElementCollection.GetEnumerator
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.ConfigurationElementCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.ConfigurationElementCollection.#ctor
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationElementCollection.BaseIndexOf(System.Configuration.ConfigurationElement)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationElementCollection.BaseAdd(System.Configuration.ConfigurationElement)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationElementCollection.BaseGetAllKeys
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

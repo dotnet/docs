@@ -1,6 +1,0 @@
-            Dim hostIPAddress1 As IPAddress = Dns.Resolve(hostString1).AddressList(0)
-            Dim hostIPEndPoint As New IPEndPoint(hostIPAddress1, 80)
-            Console.WriteLine((ControlChars.Cr + "IPEndPoint information:" + hostIPEndPoint.ToString()))
-            Console.WriteLine((ControlChars.Cr + ControlChars.Tab + "Maximum allowed Port Address :" + IPEndPoint.MaxPort.ToString()))
-            Console.WriteLine((ControlChars.Cr + ControlChars.Tab + "Minimum allowed Port Address :" + IPEndPoint.MinPort.ToString()))
-            Console.WriteLine((ControlChars.Cr + ControlChars.Tab + "Address Family :" + hostIPEndPoint.AddressFamily.ToString()))

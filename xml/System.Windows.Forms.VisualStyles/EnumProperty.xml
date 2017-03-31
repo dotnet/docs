@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Identifies the enumerated type properties of a visual style element.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.EnumProperty> enumeration represents a set of enumerated properties that describe visual style elements. The <xref:System.Windows.Forms.VisualStyles.EnumProperty> values are used as an argument in the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetEnumValue%2A?displayProperty=fullName> method to specify which property value to retrieve for the element that the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> currently represents.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="BackgroundType">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.EnumProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>One of the <see cref="T:System.Windows.Forms.VisualStyles.BackgroundType" /> values that specifies how the element's background is drawn.</summary>
       </Docs>
     </Member>
     <Member MemberName="BorderType">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.EnumProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>One of the <see cref="T:System.Windows.Forms.VisualStyles.BorderType" /> values that specifies the border type for elements with a filled-border background.</summary>
       </Docs>
     </Member>
     <Member MemberName="ContentAlignment">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.EnumProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>One of the <see cref="T:System.Windows.Forms.VisualStyles.ContentAlignment" /> values that specifies how text is aligned in a window caption.</summary>
       </Docs>
     </Member>
     <Member MemberName="FillType">
@@ -75,7 +82,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.EnumProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>One of the <see cref="T:System.Windows.Forms.VisualStyles.FillType" /> values that specifies the fill type for elements with a filled-border background.</summary>
       </Docs>
     </Member>
     <Member MemberName="GlyphFontSizingType">
@@ -91,7 +98,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.EnumProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>One of the <see cref="T:System.Windows.Forms.VisualStyles.GlyphFontSizingType" /> values that specifies when the visual style selects a different glyph font size.</summary>
       </Docs>
     </Member>
     <Member MemberName="GlyphType">
@@ -107,7 +114,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.EnumProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>One of the <see cref="T:System.Windows.Forms.VisualStyles.GlyphType" /> values that specifies the type of glyph for elements with a bitmap background.</summary>
       </Docs>
     </Member>
     <Member MemberName="HorizontalAlignment">
@@ -123,7 +130,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.EnumProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>One of the <see cref="T:System.Windows.Forms.VisualStyles.HorizontalAlign" /> values that specifies the horizontal alignment for elements with a fixed size.</summary>
       </Docs>
     </Member>
     <Member MemberName="IconEffect">
@@ -139,7 +146,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.EnumProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>One of the <see cref="T:System.Windows.Forms.VisualStyles.IconEffect" /> values that specifies the effect that the visual style will apply to an icon.</summary>
       </Docs>
     </Member>
     <Member MemberName="ImageLayout">
@@ -155,7 +162,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.EnumProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>One of the <see cref="T:System.Windows.Forms.VisualStyles.ImageOrientation" /> values that specifies how multiple images are arranged in a single image file.</summary>
       </Docs>
     </Member>
     <Member MemberName="ImageSelectType">
@@ -171,7 +178,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.EnumProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>One of the <see cref="T:System.Windows.Forms.VisualStyles.ImageSelectType" /> values that specifies when the visual style selects a different multiple-image file to draw an element.</summary>
       </Docs>
     </Member>
     <Member MemberName="OffsetType">
@@ -187,7 +194,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.EnumProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>One of the <see cref="T:System.Windows.Forms.VisualStyles.OffsetType" /> values that specifies where an offset is applied to a window element.</summary>
       </Docs>
     </Member>
     <Member MemberName="SizingType">
@@ -203,7 +210,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.EnumProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>One of the <see cref="T:System.Windows.Forms.VisualStyles.SizingType" /> values that specifies how elements with a bitmap background will adjust to fill the bounds.</summary>
       </Docs>
     </Member>
     <Member MemberName="TextShadowType">
@@ -219,7 +226,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.EnumProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>One of the <see cref="T:System.Windows.Forms.VisualStyles.TextShadowType" /> values that specifies the type of shadow to add to text.</summary>
       </Docs>
     </Member>
     <Member MemberName="TrueSizeScalingType">
@@ -235,7 +242,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.EnumProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>One of the <see cref="T:System.Windows.Forms.VisualStyles.TrueSizeScalingType" /> values that specifies when the visual style rescales an element with a fixed size.</summary>
       </Docs>
     </Member>
     <Member MemberName="VerticalAlignment">
@@ -251,7 +258,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.EnumProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>One of the <see cref="T:System.Windows.Forms.VisualStyles.VerticalAlignment" /> values that specifies the vertical alignment for elements with a fixed size.</summary>
       </Docs>
     </Member>
   </Members>

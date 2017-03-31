@@ -1,24 +1,29 @@
 ---
 uid: Microsoft.VisualC.StlClr.ListEnumeratorBase`1
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.StlClr.ListEnumeratorBase`1.MoveNext
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.StlClr.ListEnumeratorBase`1.#ctor(Microsoft.VisualC.StlClr.Generic.INode{`0})
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.StlClr.ListEnumeratorBase`1.Reset
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.StlClr.ListEnumeratorBase`1.Current
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---

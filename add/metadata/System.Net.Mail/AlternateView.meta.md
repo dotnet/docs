@@ -1,64 +1,93 @@
 ---
 uid: System.Net.Mail.AlternateView
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.AlternateView.#ctor(System.IO.Stream)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.AlternateView.Dispose(System.Boolean)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.AlternateView.#ctor(System.String,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Mail.AlternateView.CreateAlternateViewFromString
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Mail.AlternateView.#ctor
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.AlternateView.#ctor(System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.AlternateView.CreateAlternateViewFromString(System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Mail.AlternateView.Dispose
 ---
 
 ---
 uid: System.Net.Mail.AlternateView.#ctor(System.IO.Stream,System.Net.Mime.ContentType)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.AlternateView.#ctor(System.IO.Stream,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.AlternateView.CreateAlternateViewFromString(System.String,System.Net.Mime.ContentType)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.AlternateView.CreateAlternateViewFromString(System.String,System.Text.Encoding,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.AlternateView.BaseUri
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.AlternateView.#ctor(System.String,System.Net.Mime.ContentType)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.AlternateView.LinkedResources
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

@@ -1,69 +1,93 @@
 ---
 uid: System.Windows.Automation.Peers.DataGridItemAutomationPeer
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridItemAutomationPeer.System#Windows#Automation#Provider#ISelectionItemProvider#AddToSelection
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridItemAutomationPeer.System#Windows#Automation#Provider#ISelectionProvider#IsSelectionRequired
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridItemAutomationPeer.System#Windows#Automation#Provider#IItemContainerProvider#FindItemByProperty(System.Windows.Automation.Provider.IRawElementProviderSimple,System.Int32,System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridItemAutomationPeer.System#Windows#Automation#Provider#ISelectionItemProvider#IsSelected
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridItemAutomationPeer.#ctor(System.Object,System.Windows.Automation.Peers.DataGridAutomationPeer)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridItemAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridItemAutomationPeer.System#Windows#Automation#Provider#ISelectionProvider#GetSelection
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridItemAutomationPeer.System#Windows#Automation#Provider#ISelectionProvider#CanSelectMultiple
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridItemAutomationPeer.System#Windows#Automation#Provider#ISelectionItemProvider#Select
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridItemAutomationPeer.System#Windows#Automation#Provider#ISelectionItemProvider#RemoveFromSelection
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridItemAutomationPeer.System#Windows#Automation#Provider#IScrollItemProvider#ScrollIntoView
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridItemAutomationPeer.System#Windows#Automation#Provider#ISelectionItemProvider#SelectionContainer
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridItemAutomationPeer.System#Windows#Automation#Provider#IInvokeProvider#Invoke
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

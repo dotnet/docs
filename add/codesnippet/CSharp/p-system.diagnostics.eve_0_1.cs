@@ -1,1 +1,0 @@
-        Console.WriteLine("BufferSize =  " + ((EventSchemaTraceListener)ts.Listeners["eventListener"]).BufferSize);

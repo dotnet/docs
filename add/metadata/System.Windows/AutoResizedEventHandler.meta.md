@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.AutoResizedEventHandler
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

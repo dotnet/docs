@@ -1,4 +1,6 @@
 ---
 uid: System.Xml.Resolvers.XmlKnownDtds
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

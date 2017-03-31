@@ -1,34 +1,55 @@
 ---
 uid: System.ServiceModel.Discovery.VersionCD1.ResolveCriteriaCD1
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.VersionCD1.ResolveCriteriaCD1.GetSchema
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Discovery.VersionCD1.ResolveCriteriaCD1.GetSchema
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.VersionCD1.ResolveCriteriaCD1.ToResolveCriteria
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.VersionCD1.ResolveCriteriaCD1.WriteXml(System.Xml.XmlWriter)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.VersionCD1.ResolveCriteriaCD1.FromResolveCriteria(System.ServiceModel.Discovery.ResolveCriteria)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.VersionCD1.ResolveCriteriaCD1.GetSchema(System.Xml.Schema.XmlSchemaSet)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.VersionCD1.ResolveCriteriaCD1.ReadXml(System.Xml.XmlReader)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

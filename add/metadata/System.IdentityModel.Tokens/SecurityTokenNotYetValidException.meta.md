@@ -1,24 +1,35 @@
 ---
 uid: System.IdentityModel.Tokens.SecurityTokenNotYetValidException
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.SecurityTokenNotYetValidException.#ctor(System.String)
-internalonly: False
----
-
----
-uid: System.IdentityModel.Tokens.SecurityTokenNotYetValidException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.SecurityTokenNotYetValidException.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.SecurityTokenNotYetValidException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.SecurityTokenNotYetValidException.#ctor
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.SecurityTokenNotYetValidException.#ctor(System.String,System.Exception)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

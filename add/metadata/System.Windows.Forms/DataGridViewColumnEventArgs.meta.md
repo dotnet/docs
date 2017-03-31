@@ -1,14 +1,19 @@
 ---
 uid: System.Windows.Forms.DataGridViewColumnEventArgs
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewColumnEventArgs.Column
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewColumnEventArgs.#ctor(System.Windows.Forms.DataGridViewColumn)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

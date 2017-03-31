@@ -15,8 +15,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The exception that is thrown by JScript to notify a common language runtime (CLR) host or program that an error occurred. A <see cref="T:Microsoft.JScript.JScriptException" /> usually takes a <see cref="T:Microsoft.JScript.JSError" /> enumeration value.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:Microsoft.JScript.JScriptException> is also an <xref:Microsoft.Vsa.IVsaError> and can be passed to the host through <xref:Microsoft.Vsa.IVsaSite.OnCompilerError%2A>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +37,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.JScriptException" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,8 +54,8 @@
         <Parameter Name="errorNumber" Type="Microsoft.JScript.JSError" />
       </Parameters>
       <Docs>
-        <param name="errorNumber">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="errorNumber">One of the enumeration values. The value specifies the error.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.JScriptException" /> class, using the specified <see cref="T:Microsoft.JScript.JSError" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,8 +72,8 @@
         <Parameter Name="m" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="m">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="m">The message that describes the error.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.JScriptException" /> class, using the specified error message.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,9 +91,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">The serialized object data about the exception that is being thrown.</param>
+        <param name="context">Contextual information about the source or destination.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.JScriptException" /> class, using the specified serialized data.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,9 +111,9 @@
         <Parameter Name="e" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="m">To be added.</param>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="m">The message that describes the error.</param>
+        <param name="e">The exception that is the cause of the current exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.JScriptException" /> class, using the specified error message and a reference to the inner exception that is the cause of this exception.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,8 +130,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the column in the code in which the error occurs.</summary>
+        <value>The column in the code in which the error occurs, or 0 if the <see cref="T:Microsoft.JScript.Context" /> is null.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -141,8 +148,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a message that describes the error.</summary>
+        <value>A message that describes the error.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -159,8 +166,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the column in the code in which the error ends.</summary>
+        <value>The column in the code in which the error ends, or 0 if the <see cref="T:Microsoft.JScript.Context" /> is null.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -177,8 +184,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the line of code in which the error ends.</summary>
+        <value>The line of code in which the error ends, or 0 if the <see cref="T:Microsoft.JScript.Context" /> is null.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -195,8 +202,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="P:System.Exception.HResult" /> code of the error.</summary>
+        <value>The <see cref="P:System.Exception.HResult" /> code of the error.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -222,9 +229,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">The serialized object data about the exception that is being thrown.</param>
+        <param name="context">Contextual information about the source or destination.</param>
+        <summary>Stores information about the exception, including <c>IsError</c> and <c>Code</c> values, in the <see cref="T:System.Runtime.Serialization.SerializationInfo" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -241,8 +248,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the line of code in which the error occurs.</summary>
+        <value>The line of code in which the error occurs, or 0 if the <see cref="T:Microsoft.JScript.Context" /> is null.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -259,8 +266,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the text of the code in which the error occurs.</summary>
+        <value>The text of the code, or an empty string if the <see cref="T:Microsoft.JScript.Context" /> is null.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -277,8 +284,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a message that describes the error.</summary>
+        <value>A message that describes the error.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -295,8 +302,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a message that describes the error.</summary>
+        <value>A message that describes the error.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -313,8 +320,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="P:System.Exception.HResult" /> code of the error.</summary>
+        <value>The <see cref="P:System.Exception.HResult" /> code of the error.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -331,8 +338,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="P:System.Exception.HResult" /> code of the error.</summary>
+        <value>The <see cref="P:System.Exception.HResult" /> code of the error.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -349,8 +356,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a number between 0 (most severe) and 4 (least severe) that indicates the severity of the error. 0 is the default.</summary>
+        <value>A number between 0 and 4.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -367,8 +374,8 @@
         <ReturnType>Microsoft.JScript.Vsa.IJSVsaItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the source code item that caused the error.</summary>
+        <value>The source code item; or throws a <see cref="T:Microsoft.JScript.NoContextException" /> if the <see cref="T:Microsoft.JScript.Context" /> is null.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -385,8 +392,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the source code file that contains the error.</summary>
+        <value>The name of the source code file, or the string literal "no source" if the <see cref="T:Microsoft.JScript.Context" /> is null.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -403,8 +410,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the stack trace information at the time of the error.</summary>
+        <value>The stack trace information.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -421,8 +428,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the column in the code in which the error occurs.</summary>
+        <value>The column in the code in which the error occurs, or 0 if the <see cref="T:Microsoft.JScript.Context" /> is null.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -17,10 +17,10 @@
     <ReturnType>System.Windows.Controls.GroupStyle</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="group">To be added.</param>
-    <param name="level">To be added.</param>
-    <summary>To be added.</summary>
-    <returns>To be added.</returns>
+    <param name="group">Group whose style is to be selected.</param>
+    <param name="level">Level of the group.</param>
+    <summary>Delegate used to select the group style as a function of the parent group and its level.</summary>
+    <returns>The appropriate group style.</returns>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

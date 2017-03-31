@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides functionality to parse a particular file type and generate code during compilation of a dynamic resource. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,9 +29,9 @@
         <Parameter Name="type" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="extension">To be added.</param>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="extension">The file extension of the dynamic resource used during compilation.</param>
+        <param name="type">The type that represents the <see cref="T:System.Web.Configuration.BuildProvider" /> instance to use when parsing and compiling the given extension.</param>
+        <summary>Creates an instance of a <see cref="T:System.Web.Configuration.BuildProvider" /> class, initialized to the provided values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,10 +51,18 @@
         <Parameter Name="provider" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="provider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="provider">The build provider object to compare with the current object.</param>
+        <summary>Determines whether the specified build provider object is equal to the current object.</summary>
+        <returns>
+          <see langword="true" /> if the objects are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The serializer uses this method to determine whether the same object already exists in the parent collection and whether it needs to be serialized at a lower level if it is not inherited.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Extension">
@@ -78,8 +86,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the file extension to map to during compilation of a dynamic resource.</summary>
+        <value>A string specifying the file extension to map to during compilation of a dynamic resource.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,8 +105,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Generates the hash code for the build provider.</summary>
+        <returns>An integer representing the hash code for the build provider.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -141,8 +149,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or set the comma-separated class and assembly combination that indicates the <see cref="T:System.Web.Configuration.BuildProvider" /> instance to use.</summary>
+        <value>A comma-separated class and assembly combination that indicates the <see cref="T:System.Web.Configuration.BuildProvider" /> instance to use.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

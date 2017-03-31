@@ -24,8 +24,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the cryptographic operations that a Cryptography Next Generation (CNG) key may be used with.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Not all operations apply to each key. For example, an Elliptic Curve Digital Signature Algorithm (ECDSA) key cannot be used for decryption even if the Decryption usage is set.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AllUsages">
@@ -50,7 +57,7 @@
         <ReturnType>System.Security.Cryptography.CngKeyUsages</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The key can be used for all purposes.</summary>
       </Docs>
     </Member>
     <Member MemberName="Decryption">
@@ -75,7 +82,7 @@
         <ReturnType>System.Security.Cryptography.CngKeyUsages</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The key can be used for encryption and decryption.</summary>
       </Docs>
     </Member>
     <Member MemberName="KeyAgreement">
@@ -100,7 +107,7 @@
         <ReturnType>System.Security.Cryptography.CngKeyUsages</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The key can be used for secret agreement generation and key exchange.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -125,7 +132,7 @@
         <ReturnType>System.Security.Cryptography.CngKeyUsages</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No usage values are assigned to the key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Signing">
@@ -150,7 +157,7 @@
         <ReturnType>System.Security.Cryptography.CngKeyUsages</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The key can be used for signing and verification.</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,49 +1,65 @@
 ---
 uid: Microsoft.Build.Framework.TargetFinishedEventArgs
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.TargetFinishedEventArgs.ProjectFile
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.TargetFinishedEventArgs.#ctor(System.String,System.String,System.String,System.String,System.String,System.Boolean)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.TargetFinishedEventArgs.TargetFile
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.TargetFinishedEventArgs.TargetOutputs
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.TargetFinishedEventArgs.TargetName
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.TargetFinishedEventArgs.#ctor(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Collections.IEnumerable)
-internalonly: False
----
-
----
-uid: Microsoft.Build.Framework.TargetFinishedEventArgs.#ctor(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.DateTime,System.Collections.IEnumerable)
-internalonly: False
----
-
----
-uid: Microsoft.Build.Framework.TargetFinishedEventArgs.Succeeded
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.TargetFinishedEventArgs.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
+---
+
+---
+uid: Microsoft.Build.Framework.TargetFinishedEventArgs.#ctor(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.DateTime,System.Collections.IEnumerable)
+ms.author: "susanno"
+manager: "douge"
+---
+
+---
+uid: Microsoft.Build.Framework.TargetFinishedEventArgs.Succeeded
+ms.author: "susanno"
+manager: "douge"
+---
+
+---
+uid: Microsoft.Build.Framework.TargetFinishedEventArgs.#ctor
+ms.author: "susanno"
+manager: "douge"
 ---

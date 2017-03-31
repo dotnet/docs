@@ -1,39 +1,62 @@
 ---
 uid: System.Windows.Automation.AutomationElementCollection
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.AutomationElementCollection.GetEnumerator
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Automation.AutomationElementCollection.CopyTo
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.AutomationElementCollection.Count
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.AutomationElementCollection.Item(System.Int32)
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.AutomationElementCollection.CopyTo(System.Array,System.Int32)
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.AutomationElementCollection.IsSynchronized
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.AutomationElementCollection.CopyTo(System.Windows.Automation.AutomationElement[],System.Int32)
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.AutomationElementCollection.SyncRoot
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---

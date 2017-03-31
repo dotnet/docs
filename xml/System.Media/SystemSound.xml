@@ -11,8 +11,19 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a system sound type.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Media.SystemSounds.Asterisk%2A> property.  
+  
+ [!code-cpp[SystemSoundsExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/SystemSoundsExample/CPP/form1.cpp#1)]
+ [!code-csharp[SystemSoundsExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/SystemSoundsExample/CS/form1.cs#1)]
+ [!code-vb[SystemSoundsExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/SystemSoundsExample/VB/form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Play">
@@ -29,8 +40,24 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Plays the system sound type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Media.SystemSound.Play%2A> method plays the sound asynchronously.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Media.SystemSounds.Asterisk%2A> property.  
+  
+ [!code-cpp[SystemSoundsExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/SystemSoundsExample/CPP/form1.cpp#1)]
+ [!code-csharp[SystemSoundsExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/SystemSoundsExample/CS/form1.cs#1)]
+ [!code-vb[SystemSoundsExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/SystemSoundsExample/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

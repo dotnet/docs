@@ -1,9 +1,13 @@
 ---
 uid: System.ServiceModel.Configuration.EndpointBehaviorElementCollection
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.EndpointBehaviorElementCollection.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

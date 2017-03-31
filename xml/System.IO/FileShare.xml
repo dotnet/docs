@@ -27,8 +27,28 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains constants for controlling the kind of access other <see cref="T:System.IO.FileStream" /> objects can have to the same file.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For an example of creating a file and writing text to a file, see [How to: Write Text to a File](../Topic/How%20to:%20Write%20Text%20to%20a%20File.md). For an example of reading text from a file, see [How to: Read Text from a File](../Topic/How%20to:%20Read%20Text%20from%20a%20File.md). For an example of reading from and writing to a binary file, see [How to: Read and Write to a Newly Created Data File](../Topic/How%20to:%20Read%20and%20Write%20to%20a%20Newly%20Created%20Data%20File.md).  
+  
+ A typical use of this enumeration is to define whether two processes can simultaneously read from the same file. For example, if a file is opened and Read is specified, other users can open the file for reading but not for writing.  
+  
+ A <xref:System.IO.FileShare> parameter is specified in some of the constructors for <xref:System.IO.FileStream>, <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream>, and in some of the `Open` methods of <xref:System.IO.File> and <xref:System.IO.FileInfo> to control how a file is opened.  
+  
+   
+  
+## Examples  
+ The following <xref:System.IO.FileStream> constructor opens an existing file and grants read-only access to other users (Read).  
+  
+ [!code-cpp[Classic FileAccess Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FileAccess Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic FileAccess Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FileAccess Example/CS/source.cs#1)]
+ [!code-vb[Classic FileAccess Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileAccess Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Delete">
@@ -53,7 +73,7 @@
         <ReturnType>System.IO.FileShare</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Allows subsequent deleting of a file.</summary>
       </Docs>
     </Member>
     <Member MemberName="Inheritable">
@@ -78,7 +98,7 @@
         <ReturnType>System.IO.FileShare</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Makes the file handle inheritable by child processes. This is not directly supported by Win32.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -103,7 +123,7 @@
         <ReturnType>System.IO.FileShare</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Declines sharing of the current file. Any request to open the file (by this process or another process) will fail until the file is closed.</summary>
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -128,7 +148,7 @@
         <ReturnType>System.IO.FileShare</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Allows subsequent opening of the file for reading. If this flag is not specified, any request to open the file for reading (by this process or another process) will fail until the file is closed. However, even if this flag is specified, additional permissions might still be needed to access the file.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReadWrite">
@@ -153,7 +173,7 @@
         <ReturnType>System.IO.FileShare</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Allows subsequent opening of the file for reading or writing. If this flag is not specified, any request to open the file for reading or writing (by this process or another process) will fail until the file is closed. However, even if this flag is specified, additional permissions might still be needed to access the file.</summary>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -178,7 +198,7 @@
         <ReturnType>System.IO.FileShare</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Allows subsequent opening of the file for writing. If this flag is not specified, any request to open the file for writing (by this process or another process) will fail until the file is closed. However, even if this flag is specified, additional permissions might still be needed to access the file.</summary>
       </Docs>
     </Member>
   </Members>

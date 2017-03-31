@@ -26,8 +26,35 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines methods that convert the value of the implementing reference or value type to a common language runtime type that has an equivalent value.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This interface provides methods to convert the value of an instance of an implementing type to a common language runtime type that has an equivalent value. The common language runtime types are <xref:System.Boolean>, <xref:System.SByte>, <xref:System.Byte>, <xref:System.Int16>, <xref:System.UInt16>, <xref:System.Int32>, <xref:System.UInt32>, <xref:System.Int64>, <xref:System.UInt64>, <xref:System.Single>, <xref:System.Double>, <xref:System.Decimal>, <xref:System.DateTime>, <xref:System.Char>, and <xref:System.String>.  
+  
+ If there is no meaningful conversion to a common language runtime type, then a particular interface method implementation throws <xref:System.InvalidCastException>. For example, if this interface is implemented on a Boolean type, the implementation of the <xref:System.IConvertible.ToDateTime%2A> method throws an exception because there is no meaningful <xref:System.DateTime> equivalent to a Boolean type.  
+  
+ The common language runtime typically exposes the <xref:System.IConvertible> interface through the <xref:System.Convert> class. The common language runtime also uses the <xref:System.IConvertible> interface internally, in explicit interface implementations, to simplify the code used to support conversions in the <xref:System.Convert> class and basic common language runtime types.  
+  
+ In addition to the <xref:System.IConvertible> interface, the .NET Framework provides classes called type converters for converting user-defined data types to other data types. For more information, see the [Generalized Type Conversion](../Topic/Generalized%20Type%20Conversion.md) topic.  
+  
+   
+  
+## Examples  
+ The following code sample demonstrates an implementation of <xref:System.IConvertible> for a Complex number class, allowing it to be cast first as a <xref:System.Double> and then calling the static <xref:System.Convert> members on that <xref:System.Double>.  
+  
+ [!code-cpp[System.IConvertible#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IConvertible/CPP/iconvertible.cpp#1)]
+ [!code-csharp[System.IConvertible#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IConvertible/CS/iconvertible.cs#1)]
+ [!code-vb[System.IConvertible#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IConvertible/VB/iconvertible.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>If you implement the <see cref="T:System.IConvertible" /> interface, your implementation will be called automatically by the <see cref="M:System.Convert.ChangeType(System.Object,System.Type)" /> method if the <see cref="T:System.Object" /> parameter is an instance of your implementing type and the <see cref="T:System.Type" /> parameter is a common language runtime type.  
+  
+ Most conversion methods have a parameter of type <see cref="T:System.IFormatProvider" /> that represents either the current culture (<see cref="P:System.Globalization.CultureInfo.CurrentCulture" />) or a specific culture. For the most part, the <see cref="T:System.IConvertible" /> implementations of the base types ignore this parameter. However, you can choose whether to use it in your code.</para>
+    </block>
   </Docs>
   <Members>
     <Member MemberName="GetTypeCode">
@@ -54,8 +81,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the <see cref="T:System.TypeCode" /> for this instance.</summary>
+        <returns>The enumerated constant that is the <see cref="T:System.TypeCode" /> of the class or value type that implements this interface.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,9 +112,9 @@
         <Parameter Name="provider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="provider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="provider">An <see cref="T:System.IFormatProvider" /> interface implementation that supplies culture-specific formatting information.</param>
+        <summary>Converts the value of this instance to an equivalent Boolean value using the specified culture-specific formatting information.</summary>
+        <returns>A Boolean value equivalent to the value of this instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,9 +144,9 @@
         <Parameter Name="provider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="provider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="provider">An <see cref="T:System.IFormatProvider" /> interface implementation that supplies culture-specific formatting information.</param>
+        <summary>Converts the value of this instance to an equivalent 8-bit unsigned integer using the specified culture-specific formatting information.</summary>
+        <returns>An 8-bit unsigned integer equivalent to the value of this instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,9 +176,9 @@
         <Parameter Name="provider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="provider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="provider">An <see cref="T:System.IFormatProvider" /> interface implementation that supplies culture-specific formatting information.</param>
+        <summary>Converts the value of this instance to an equivalent Unicode character using the specified culture-specific formatting information.</summary>
+        <returns>A Unicode character equivalent to the value of this instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -181,9 +208,9 @@
         <Parameter Name="provider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="provider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="provider">An <see cref="T:System.IFormatProvider" /> interface implementation that supplies culture-specific formatting information.</param>
+        <summary>Converts the value of this instance to an equivalent <see cref="T:System.DateTime" /> using the specified culture-specific formatting information.</summary>
+        <returns>A <see cref="T:System.DateTime" /> instance equivalent to the value of this instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -213,9 +240,9 @@
         <Parameter Name="provider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="provider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="provider">An <see cref="T:System.IFormatProvider" /> interface implementation that supplies culture-specific formatting information.</param>
+        <summary>Converts the value of this instance to an equivalent <see cref="T:System.Decimal" /> number using the specified culture-specific formatting information.</summary>
+        <returns>A <see cref="T:System.Decimal" /> number equivalent to the value of this instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -245,9 +272,9 @@
         <Parameter Name="provider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="provider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="provider">An <see cref="T:System.IFormatProvider" /> interface implementation that supplies culture-specific formatting information.</param>
+        <summary>Converts the value of this instance to an equivalent double-precision floating-point number using the specified culture-specific formatting information.</summary>
+        <returns>A double-precision floating-point number equivalent to the value of this instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -277,9 +304,9 @@
         <Parameter Name="provider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="provider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="provider">An <see cref="T:System.IFormatProvider" /> interface implementation that supplies culture-specific formatting information.</param>
+        <summary>Converts the value of this instance to an equivalent 16-bit signed integer using the specified culture-specific formatting information.</summary>
+        <returns>An 16-bit signed integer equivalent to the value of this instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -309,9 +336,9 @@
         <Parameter Name="provider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="provider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="provider">An <see cref="T:System.IFormatProvider" /> interface implementation that supplies culture-specific formatting information.</param>
+        <summary>Converts the value of this instance to an equivalent 32-bit signed integer using the specified culture-specific formatting information.</summary>
+        <returns>An 32-bit signed integer equivalent to the value of this instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -341,9 +368,9 @@
         <Parameter Name="provider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="provider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="provider">An <see cref="T:System.IFormatProvider" /> interface implementation that supplies culture-specific formatting information.</param>
+        <summary>Converts the value of this instance to an equivalent 64-bit signed integer using the specified culture-specific formatting information.</summary>
+        <returns>An 64-bit signed integer equivalent to the value of this instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -373,9 +400,9 @@
         <Parameter Name="provider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="provider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="provider">An <see cref="T:System.IFormatProvider" /> interface implementation that supplies culture-specific formatting information.</param>
+        <summary>Converts the value of this instance to an equivalent 8-bit signed integer using the specified culture-specific formatting information.</summary>
+        <returns>An 8-bit signed integer equivalent to the value of this instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -405,9 +432,9 @@
         <Parameter Name="provider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="provider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="provider">An <see cref="T:System.IFormatProvider" /> interface implementation that supplies culture-specific formatting information.</param>
+        <summary>Converts the value of this instance to an equivalent single-precision floating-point number using the specified culture-specific formatting information.</summary>
+        <returns>A single-precision floating-point number equivalent to the value of this instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -437,9 +464,9 @@
         <Parameter Name="provider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="provider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="provider">An <see cref="T:System.IFormatProvider" /> interface implementation that supplies culture-specific formatting information.</param>
+        <summary>Converts the value of this instance to an equivalent <see cref="T:System.String" /> using the specified culture-specific formatting information.</summary>
+        <returns>A <see cref="T:System.String" /> instance equivalent to the value of this instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -470,10 +497,10 @@
         <Parameter Name="provider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="conversionType">To be added.</param>
-        <param name="provider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="conversionType">The <see cref="T:System.Type" /> to which the value of this instance is converted.</param>
+        <param name="provider">An <see cref="T:System.IFormatProvider" /> interface implementation that supplies culture-specific formatting information.</param>
+        <summary>Converts the value of this instance to an <see cref="T:System.Object" /> of the specified <see cref="T:System.Type" /> that has an equivalent value, using the specified culture-specific formatting information.</summary>
+        <returns>An <see cref="T:System.Object" /> instance of type <paramref name="conversionType" /> whose value is equivalent to the value of this instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -503,9 +530,9 @@
         <Parameter Name="provider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="provider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="provider">An <see cref="T:System.IFormatProvider" /> interface implementation that supplies culture-specific formatting information.</param>
+        <summary>Converts the value of this instance to an equivalent 16-bit unsigned integer using the specified culture-specific formatting information.</summary>
+        <returns>An 16-bit unsigned integer equivalent to the value of this instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -535,9 +562,9 @@
         <Parameter Name="provider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="provider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="provider">An <see cref="T:System.IFormatProvider" /> interface implementation that supplies culture-specific formatting information.</param>
+        <summary>Converts the value of this instance to an equivalent 32-bit unsigned integer using the specified culture-specific formatting information.</summary>
+        <returns>An 32-bit unsigned integer equivalent to the value of this instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -567,9 +594,9 @@
         <Parameter Name="provider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="provider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="provider">An <see cref="T:System.IFormatProvider" /> interface implementation that supplies culture-specific formatting information.</param>
+        <summary>Converts the value of this instance to an equivalent 64-bit unsigned integer using the specified culture-specific formatting information.</summary>
+        <returns>An 64-bit unsigned integer equivalent to the value of this instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

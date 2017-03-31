@@ -1,19 +1,23 @@
 ---
 uid: System.Web.SiteMapResolveEventArgs
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.SiteMapResolveEventArgs.#ctor(System.Web.HttpContext,System.Web.SiteMapProvider)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.SiteMapResolveEventArgs.Provider
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.SiteMapResolveEventArgs.Context
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

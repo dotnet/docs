@@ -11,8 +11,23 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides information for a data-context instance in order to allow customization.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.ContextConfiguration> class enables you to customize data access. For example, you can use this class to enable scaffolding for a Web application, or to define a custom metadata provider.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.DynamicData.ContextConfiguration> class when you call the <xref:System.Web.DynamicData.MetaModel.RegisterContext%2A> method in order to register a data context with scaffolding enabled.  
+  
+ [!code-csharp[System.Web.DynamicData.MetaModel#99](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/global.asax.cs#99)]
+ [!code-vb[System.Web.DynamicData.MetaModel#99](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/global.asax.vb#99)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +41,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.ContextConfiguration" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,9 +58,16 @@
         <ReturnType>System.Func&lt;System.Type,System.ComponentModel.TypeDescriptionProvider&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the metadata provider.</summary>
+        <value>The type of the metadata provider.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method enables you to define a custom metadata provider for a given data context.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ScaffoldAllTables">
@@ -61,8 +83,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether scaffolding is enabled.</summary>
+        <value>
+          <see langword="true" /> if scaffolding is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

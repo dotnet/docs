@@ -19,8 +19,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Use <see cref="T:System.Runtime.InteropServices.ComTypes.IMPLTYPEFLAGS" /> instead.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For additional information about `IMPLTYPEFLAGS`, see the MSDN Library.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="IMPLTYPEFLAG_FDEFAULT">
@@ -37,7 +44,7 @@
         <ReturnType>System.Runtime.InteropServices.IMPLTYPEFLAGS</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The interface or dispinterface represents the default for the source or sink.</summary>
       </Docs>
     </Member>
     <Member MemberName="IMPLTYPEFLAG_FDEFAULTVTABLE">
@@ -54,7 +61,7 @@
         <ReturnType>System.Runtime.InteropServices.IMPLTYPEFLAGS</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sinks receive events through the virtual function table (VTBL).</summary>
       </Docs>
     </Member>
     <Member MemberName="IMPLTYPEFLAG_FRESTRICTED">
@@ -71,7 +78,7 @@
         <ReturnType>System.Runtime.InteropServices.IMPLTYPEFLAGS</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The member should not be displayed or programmable by users.</summary>
       </Docs>
     </Member>
     <Member MemberName="IMPLTYPEFLAG_FSOURCE">
@@ -88,7 +95,7 @@
         <ReturnType>System.Runtime.InteropServices.IMPLTYPEFLAGS</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This member of a coclass is called rather than implemented.</summary>
       </Docs>
     </Member>
   </Members>

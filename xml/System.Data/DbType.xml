@@ -19,8 +19,19 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the data type of a field, a property, or a <see langword="Parameter" /> object of a .NET Framework data provider.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The type of a parameter is specific to the .NET Framework data provider. Specifying the type converts the value of the `Parameter` to the data provider Type before passing the value to the data source. If the type is not specified, ADO.NET infers the data provider Type of the `Parameter` from the `Value` property of the `Parameter` object.  
+  
+ You can also generically specify the type of a `Parameter` by setting `DbType` property of a `Parameter` object.  
+  
+ ADO.NET cannot correctly infer the type if a byte array is larger than 8,000 bytes. Explicitly specify the <xref:System.Data.DbType> when working with byte arrays larger than 8,000 bytes.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AnsiString">
@@ -45,7 +56,7 @@
         <ReturnType>System.Data.DbType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A variable-length stream of non-Unicode characters ranging between 1 and 8,000 characters.</summary>
       </Docs>
     </Member>
     <Member MemberName="AnsiStringFixedLength">
@@ -70,7 +81,7 @@
         <ReturnType>System.Data.DbType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A fixed-length stream of non-Unicode characters.</summary>
       </Docs>
     </Member>
     <Member MemberName="Binary">
@@ -95,7 +106,7 @@
         <ReturnType>System.Data.DbType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A variable-length stream of binary data ranging between 1 and 8,000 bytes.</summary>
       </Docs>
     </Member>
     <Member MemberName="Boolean">
@@ -120,7 +131,7 @@
         <ReturnType>System.Data.DbType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A simple type representing Boolean values of <see langword="true" /> or <see langword="false" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Byte">
@@ -145,7 +156,7 @@
         <ReturnType>System.Data.DbType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An 8-bit unsigned integer ranging in value from 0 to 255.</summary>
       </Docs>
     </Member>
     <Member MemberName="Currency">
@@ -170,7 +181,7 @@
         <ReturnType>System.Data.DbType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A currency value ranging from -2 <sup>63</sup> (or -922,337,203,685,477.5808) to 2 <sup>63</sup> -1 (or +922,337,203,685,477.5807) with an accuracy to a ten-thousandth of a currency unit.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date">
@@ -195,7 +206,7 @@
         <ReturnType>System.Data.DbType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A type representing a date value.</summary>
       </Docs>
     </Member>
     <Member MemberName="DateTime">
@@ -220,7 +231,7 @@
         <ReturnType>System.Data.DbType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A type representing a date and time value.</summary>
       </Docs>
     </Member>
     <Member MemberName="DateTime2">
@@ -245,7 +256,7 @@
         <ReturnType>System.Data.DbType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Date and time data. Date value range is from January 1,1 AD through December 31, 9999 AD. Time value range is 00:00:00 through 23:59:59.9999999 with an accuracy of 100 nanoseconds.</summary>
       </Docs>
     </Member>
     <Member MemberName="DateTimeOffset">
@@ -270,7 +281,7 @@
         <ReturnType>System.Data.DbType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Date and time data with time zone awareness. Date value range is from January 1,1 AD through December 31, 9999 AD. Time value range is 00:00:00 through 23:59:59.9999999 with an accuracy of 100 nanoseconds. Time zone value range is -14:00 through +14:00.</summary>
       </Docs>
     </Member>
     <Member MemberName="Decimal">
@@ -295,7 +306,7 @@
         <ReturnType>System.Data.DbType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A simple type representing values ranging from 1.0 x 10 <sup>-28</sup> to approximately 7.9 x 10 <sup>28</sup> with 28-29 significant digits.</summary>
       </Docs>
     </Member>
     <Member MemberName="Double">
@@ -320,7 +331,7 @@
         <ReturnType>System.Data.DbType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A floating point type representing values ranging from approximately 5.0 x 10 <sup>-324</sup> to 1.7 x 10 <sup>308</sup> with a precision of 15-16 digits.</summary>
       </Docs>
     </Member>
     <Member MemberName="Guid">
@@ -345,7 +356,7 @@
         <ReturnType>System.Data.DbType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A globally unique identifier (or GUID).</summary>
       </Docs>
     </Member>
     <Member MemberName="Int16">
@@ -370,7 +381,7 @@
         <ReturnType>System.Data.DbType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An integral type representing signed 16-bit integers with values between -32768 and 32767.</summary>
       </Docs>
     </Member>
     <Member MemberName="Int32">
@@ -395,7 +406,7 @@
         <ReturnType>System.Data.DbType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An integral type representing signed 32-bit integers with values between -2147483648 and 2147483647.</summary>
       </Docs>
     </Member>
     <Member MemberName="Int64">
@@ -420,7 +431,7 @@
         <ReturnType>System.Data.DbType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An integral type representing signed 64-bit integers with values between -9223372036854775808 and 9223372036854775807.</summary>
       </Docs>
     </Member>
     <Member MemberName="Object">
@@ -445,7 +456,7 @@
         <ReturnType>System.Data.DbType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A general type representing any reference or value type not explicitly represented by another <see langword="DbType" /> value.</summary>
       </Docs>
     </Member>
     <Member MemberName="SByte">
@@ -470,7 +481,7 @@
         <ReturnType>System.Data.DbType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An integral type representing signed 8-bit integers with values between -128 and 127.</summary>
       </Docs>
     </Member>
     <Member MemberName="Single">
@@ -495,7 +506,7 @@
         <ReturnType>System.Data.DbType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A floating point type representing values ranging from approximately 1.5 x 10 <sup>-45</sup> to 3.4 x 10 <sup>38</sup> with a precision of 7 digits.</summary>
       </Docs>
     </Member>
     <Member MemberName="String">
@@ -520,7 +531,7 @@
         <ReturnType>System.Data.DbType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A type representing Unicode character strings.</summary>
       </Docs>
     </Member>
     <Member MemberName="StringFixedLength">
@@ -545,7 +556,7 @@
         <ReturnType>System.Data.DbType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A fixed-length string of Unicode characters.</summary>
       </Docs>
     </Member>
     <Member MemberName="Time">
@@ -570,7 +581,7 @@
         <ReturnType>System.Data.DbType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A type representing a SQL Server <see langword="DateTime" /> value. If you want to use a SQL Server <see langword="time" /> value, use <see cref="F:System.Data.SqlDbType.Time" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="UInt16">
@@ -595,7 +606,7 @@
         <ReturnType>System.Data.DbType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An integral type representing unsigned 16-bit integers with values between 0 and 65535.</summary>
       </Docs>
     </Member>
     <Member MemberName="UInt32">
@@ -620,7 +631,7 @@
         <ReturnType>System.Data.DbType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An integral type representing unsigned 32-bit integers with values between 0 and 4294967295.</summary>
       </Docs>
     </Member>
     <Member MemberName="UInt64">
@@ -645,7 +656,7 @@
         <ReturnType>System.Data.DbType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An integral type representing unsigned 64-bit integers with values between 0 and 18446744073709551615.</summary>
       </Docs>
     </Member>
     <Member MemberName="VarNumeric">
@@ -670,7 +681,7 @@
         <ReturnType>System.Data.DbType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A variable-length numeric value.</summary>
       </Docs>
     </Member>
     <Member MemberName="Xml">
@@ -695,7 +706,7 @@
         <ReturnType>System.Data.DbType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A parsed representation of an XML document or fragment.</summary>
       </Docs>
     </Member>
   </Members>

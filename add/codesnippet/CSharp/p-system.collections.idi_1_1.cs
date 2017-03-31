@@ -1,1 +1,0 @@
-    public bool IsFixedSize { get { return false; } }

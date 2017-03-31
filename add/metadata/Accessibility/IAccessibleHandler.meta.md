@@ -1,9 +1,13 @@
 ---
 uid: Accessibility.IAccessibleHandler
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Accessibility.IAccessibleHandler.AccessibleObjectFromID(System.Int32,System.Int32,Accessibility.IAccessible@)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

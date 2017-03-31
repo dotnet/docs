@@ -1,4 +1,6 @@
 ---
 uid: System.Globalization.CultureTypes
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

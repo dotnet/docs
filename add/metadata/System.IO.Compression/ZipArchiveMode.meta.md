@@ -1,4 +1,6 @@
 ---
 uid: System.IO.Compression.ZipArchiveMode
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

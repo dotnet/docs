@@ -1,54 +1,63 @@
 ---
 uid: Microsoft.JScript.JSMethod
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSMethod.GetCustomAttributes(System.Type,System.Boolean)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSMethod.Invoke(System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSMethod.GetMethodImplementationFlags
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSMethod.MethodHandle
-internalonly: False
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.JSMethod.GetCustomAttributes
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSMethod.GetCustomAttributes(System.Boolean)
-internalonly: False
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.JSMethod.Invoke
 ---
 
 ---
 uid: Microsoft.JScript.JSMethod.ReturnTypeCustomAttributes
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSMethod.ReflectedType
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSMethod.IsDefined(System.Type,System.Boolean)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSMethod.MemberType
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSMethod.GetBaseDefinition
-internalonly: False
+ms.author: "mikejo"
 ---

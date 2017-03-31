@@ -1,24 +1,35 @@
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.ChartElementOutline
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.ChartElementOutline.Markers
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.ChartElementOutline.Dispose
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.ChartElementOutline.Dispose(System.Boolean)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.ChartElementOutline.Dispose
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.ChartElementOutline.OutlinePath
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---

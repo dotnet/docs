@@ -1,24 +1,41 @@
 ---
 uid: System.Windows.Forms.Design.Behavior.ControlBodyGlyph
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.ControlBodyGlyph.#ctor(System.Drawing.Rectangle,System.Windows.Forms.Cursor,System.ComponentModel.IComponent,System.Windows.Forms.Design.ControlDesigner)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.ControlBodyGlyph.#ctor(System.Drawing.Rectangle,System.Windows.Forms.Cursor,System.ComponentModel.IComponent,System.Windows.Forms.Design.Behavior.Behavior)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.ControlBodyGlyph.Bounds
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.Design.Behavior.ControlBodyGlyph.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.ControlBodyGlyph.GetHitTest(System.Drawing.Point)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.Design.MdbDataFileEditor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.MdbDataFileEditor.Filter
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.MdbDataFileEditor.Caption
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.MdbDataFileEditor.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

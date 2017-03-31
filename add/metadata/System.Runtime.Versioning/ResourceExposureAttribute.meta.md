@@ -1,14 +1,20 @@
 ---
 uid: System.Runtime.Versioning.ResourceExposureAttribute
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.Versioning.ResourceExposureAttribute.ResourceExposureLevel
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.Versioning.ResourceExposureAttribute.#ctor(System.Runtime.Versioning.ResourceScope)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

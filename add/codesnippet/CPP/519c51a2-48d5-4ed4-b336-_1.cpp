@@ -1,1 +1,0 @@
-    uiPerm1 = gcnew UIPermission(UIPermissionClipboard::AllClipboard);

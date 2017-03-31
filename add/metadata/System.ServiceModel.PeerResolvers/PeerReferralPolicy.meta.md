@@ -1,4 +1,5 @@
 ---
 uid: System.ServiceModel.PeerResolvers.PeerReferralPolicy
-internalonly: False
+ms.author: "bobdel"
+manager: "ghogen"
 ---

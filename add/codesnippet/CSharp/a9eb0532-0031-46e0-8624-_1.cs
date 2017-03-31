@@ -1,1 +1,0 @@
-                string classDescription = secondTransform.ToString();

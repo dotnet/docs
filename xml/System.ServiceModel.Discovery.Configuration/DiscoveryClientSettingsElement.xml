@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides the configuration element whose settings enable a client application to automatically search for a discoverable workflow service and find its address at runtime.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Discovery.Configuration.DiscoveryClientSettingsElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +48,8 @@
         <ReturnType>System.ServiceModel.Configuration.ChannelEndpointElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.ServiceModel.Configuration.ChannelEndpointElement" /> that enables a client application to automatically search for a discoverable workflow service and find its address at runtime.</summary>
+        <value>A channel endpoint.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,8 +71,8 @@
         <ReturnType>System.ServiceModel.Discovery.Configuration.FindCriteriaElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.ServiceModel.Discovery.Configuration.FindCriteriaElement" /> that supplies a set of criteria used by a client application to search for a discovery workflow service.</summary>
+        <value>A find criteria element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

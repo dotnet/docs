@@ -24,8 +24,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates that information was lost about a class or interface when it was imported from a type library to an assembly.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The [Tlbimp.exe (Type Library Importer)](../Topic/Tlbimp.exe%20\(Type%20Library%20Importer\).md) applies this attribute to classes or interfaces.  
+  
+ Methods that use `void` pointer arguments cause this attribute to be applied to the containing class or interface.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,7 +53,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see langword="ComConversionLossAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.Design.IControlDesignerBehavior
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.IControlDesignerBehavior.DesignTimeElementView
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.IControlDesignerBehavior.DesignTimeHtml
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.IControlDesignerBehavior.OnTemplateModeChanged
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -1,4 +1,6 @@
 ---
 uid: System.Threading.LockRecursionPolicy
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

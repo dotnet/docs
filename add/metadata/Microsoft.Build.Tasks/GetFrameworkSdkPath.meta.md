@@ -1,39 +1,47 @@
 ---
 uid: Microsoft.Build.Tasks.GetFrameworkSdkPath
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.GetFrameworkSdkPath.FrameworkSdkVersion45Path
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.GetFrameworkSdkPath.FrameworkSdkVersion40Path
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.GetFrameworkSdkPath.FrameworkSdkVersion20Path
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.GetFrameworkSdkPath.FrameworkSdkVersion35Path
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.GetFrameworkSdkPath.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.GetFrameworkSdkPath.Path
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.GetFrameworkSdkPath.Execute
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

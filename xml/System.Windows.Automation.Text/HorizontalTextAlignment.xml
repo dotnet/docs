@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Values for <see cref="F:System.Windows.Automation.TextPattern.HorizontalTextAlignmentAttribute" /></summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,7 +35,7 @@
         <ReturnType>System.Windows.Automation.Text.HorizontalTextAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Centered.</summary>
       </Docs>
     </Member>
     <Member MemberName="Justified">
@@ -51,7 +51,7 @@
         <ReturnType>System.Windows.Automation.Text.HorizontalTextAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Justified.</summary>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -67,7 +67,7 @@
         <ReturnType>System.Windows.Automation.Text.HorizontalTextAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Aligned left.</summary>
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -83,7 +83,7 @@
         <ReturnType>System.Windows.Automation.Text.HorizontalTextAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Aligned right.</summary>
       </Docs>
     </Member>
   </Members>

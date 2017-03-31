@@ -1,24 +1,38 @@
 ---
 uid: System.Web.Security.RoleProviderCollection
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Security.RoleProviderCollection.#ctor
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Security.RoleProviderCollection.Add(System.Configuration.Provider.ProviderBase)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Security.RoleProviderCollection.CopyTo(System.Web.Security.RoleProvider[],System.Int32)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Security.RoleProviderCollection.CopyTo
 ---
 
 ---
 uid: System.Web.Security.RoleProviderCollection.Item(System.String)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

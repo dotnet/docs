@@ -16,8 +16,23 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>A collection of <see cref="T:System.Web.Configuration.RuleSettings" /> objects. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.Configuration.RuleSettings> objects are used to define event rules.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.RuleSettingsCollection> type. This code example is part of a larger example provided for the <xref:System.Web.Configuration.HealthMonitoringSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.HealthMonitoringSection#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/CS/healthmonitoringsection.cs#8)]
+ [!code-vb[System.Web.Configuration.HealthMonitoringSection#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/VB/healthmonitoringsection.vb#8)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,8 +46,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.RuleSettingsCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.HealthMonitoringSection.EventMappings%2A> property of the <xref:System.Web.Configuration.HealthMonitoringSection> class always contains an instance of the <xref:System.Web.Configuration.RuleSettingsCollection>. Use this instance, rather than creating a new instance of the class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -51,9 +73,25 @@
         <Parameter Name="ruleSettings" Type="System.Web.Configuration.RuleSettings" />
       </Parameters>
       <Docs>
-        <param name="ruleSettings">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="ruleSettings">A <see cref="T:System.Web.Configuration.RuleSettings" /> object to add to the collection.</param>
+        <summary>Adds a <see cref="T:System.Web.Configuration.RuleSettings" /> object to the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The collection must not already contain a <xref:System.Web.Configuration.RuleSettings> object with the same name.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.RuleSettingsCollection.Add%2A> method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.HealthMonitoringSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.HealthMonitoringSection#73](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/CS/healthmonitoringsection.cs#73)]
+ [!code-vb[System.Web.Configuration.HealthMonitoringSection#73](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/VB/healthmonitoringsection.vb#73)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Configuration.ConfigurationException">The <see cref="T:System.Web.Configuration.RuleSettings" /> object to add already exists in the collection or the collection is read-only.</exception>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -70,8 +108,23 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Removes all <see cref="T:System.Web.Configuration.RuleSettings" /> objects from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method inserts a `clear` directive into the appropriate section of the configuration file to clear all references to elements defined in a higher-level configuration file. All elements defined in the appropriate section of the current configuration file are removed.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.RuleSettingsCollection.Clear%2A> method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.HealthMonitoringSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.HealthMonitoringSection#84](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/CS/healthmonitoringsection.cs#84)]
+ [!code-vb[System.Web.Configuration.HealthMonitoringSection#84](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/VB/healthmonitoringsection.vb#84)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -90,10 +143,26 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of a <see cref="T:System.Web.Configuration.RuleSettings" /> object in the collection.</param>
+        <summary>Returns <see langword="true" /> if the collection contains a <see cref="T:System.Web.Configuration.RuleSettings" /> object with the specified name.</summary>
+        <returns>
+          <see langword="true" /> if the collection contains a <see cref="T:System.Web.Configuration.RuleSettings" /> object with the specified name; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Returns `false` if the specified name does not exist.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.RuleSettingsCollection.Contains%2A> method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.HealthMonitoringSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.HealthMonitoringSection#79](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/CS/healthmonitoringsection.cs#79)]
+ [!code-vb[System.Web.Configuration.HealthMonitoringSection#79](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/VB/healthmonitoringsection.vb#79)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateNewElement">
@@ -153,10 +222,25 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of a <see cref="T:System.Web.Configuration.RuleSettings" /> object in the collection.</param>
+        <summary>Finds the index of a <see cref="T:System.Web.Configuration.RuleSettings" /> object in the collection with the specified name.</summary>
+        <returns>The index of a <see cref="T:System.Web.Configuration.RuleSettings" /> object in the collection with the specified name.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Returns -1 if a <xref:System.Web.Configuration.RuleSettings> object with the specified name is not in the collection.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.RuleSettingsCollection.IndexOf%2A> method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.HealthMonitoringSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.HealthMonitoringSection#80](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/CS/healthmonitoringsection.cs#80)]
+ [!code-vb[System.Web.Configuration.HealthMonitoringSection#80](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/VB/healthmonitoringsection.vb#80)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -176,10 +260,26 @@
         <Parameter Name="eventSettings" Type="System.Web.Configuration.RuleSettings" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="eventSettings">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">A valid index of a <see cref="T:System.Web.Configuration.RuleSettings" /> object in the collection.</param>
+        <param name="eventSettings">The <see cref="T:System.Web.Configuration.RuleSettings" /> object to insert into the collection.</param>
+        <summary>Adds the specified <see cref="T:System.Web.Configuration.RuleSettings" /> object to the specified index point in the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the index parameter equals the number of items in the collection, then the entry is appended to the end of the collection.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.RuleSettingsCollection.Insert%2A> method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.HealthMonitoringSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.HealthMonitoringSection#77](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/CS/healthmonitoringsection.cs#77)]
+ [!code-vb[System.Web.Configuration.HealthMonitoringSection#77](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/VB/healthmonitoringsection.vb#77)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Configuration.ConfigurationException">The <see cref="T:System.Web.Configuration.RuleSettings" /> object to add already exists in the collection, the index is invalid, or the collection is read only.</exception>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -198,10 +298,26 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="index">The index of a <see cref="T:System.Web.Configuration.RuleSettings" /> object in the collection.</param>
+        <summary>Gets the <see cref="T:System.Web.Configuration.RuleSettings" /> object at the specified numeric index.</summary>
+        <value>The <see cref="T:System.Web.Configuration.RuleSettings" /> object at the specified index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Web.Configuration.RuleSettings> object at the specified index must exist.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.RuleSettingsCollection.Item%2A> method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.HealthMonitoringSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.HealthMonitoringSection#93](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/CS/healthmonitoringsection.cs#93)]
+ [!code-vb[System.Web.Configuration.HealthMonitoringSection#93](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/VB/healthmonitoringsection.vb#93)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">Index is out of range.</exception>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -220,9 +336,9 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="key">The name of the <see cref="T:System.Web.Configuration.RuleSettings" /> object contained in the collection.</param>
+        <summary>Gets the <see cref="T:System.Web.Configuration.RuleSettings" /> object based on the specified key in the collection.</summary>
+        <value>A <see cref="T:System.Web.Configuration.RuleSettings" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -260,9 +376,25 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of a <see cref="T:System.Web.Configuration.RuleSettings" /> object in the collection.</param>
+        <summary>Removes a <see cref="T:System.Web.Configuration.RuleSettings" /> object from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method inserts a `remove` element into the appropriate section of the configuration file for any element defined in a higher-level configuration file. If the element is defined in the appropriate section of the current configuration file, its entry is removed from the configuration file. The object to remove must exist in the collection.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.RuleSettingsCollection.Remove%2A> method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.HealthMonitoringSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.HealthMonitoringSection#82](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/CS/healthmonitoringsection.cs#82)]
+ [!code-vb[System.Web.Configuration.HealthMonitoringSection#82](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/VB/healthmonitoringsection.vb#82)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Configuration.ConfigurationException">There is no <see cref="T:System.Web.Configuration.RuleSettings" /> object with the specified key in the collection, the element has already been removed, or the collection is read-only.</exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -281,9 +413,25 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">A valid index of a <see cref="T:System.Web.Configuration.RuleSettings" /> object in the collection.</param>
+        <summary>Removes a <see cref="T:System.Web.Configuration.RuleSettings" /> object at the specified index location from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method inserts a `remove` element into the appropriate section of the configuration file for any element defined in a higher-level configuration file. If the element is defined in the appropriate section of the current configuration file, its entry is removed from the configuration file. The object to remove must exist in the collection.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.RuleSettingsCollection.RemoveAt%2A> method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.HealthMonitoringSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.HealthMonitoringSection#83](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/CS/healthmonitoringsection.cs#83)]
+ [!code-vb[System.Web.Configuration.HealthMonitoringSection#83](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/VB/healthmonitoringsection.vb#83)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Configuration.ConfigurationException">There is no <see cref="T:System.Web.Configuration.RuleSettings" /> object at the specified index in the collection, the element has already been removed, or the collection is read-only.</exception>
       </Docs>
     </Member>
   </Members>

@@ -15,8 +15,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the routing behavior, which is used to configure the destination endpoints, filters and filtering options to be used during routing.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Routing.RoutingBehavior> registers all of the run-time components used by the routing service, including the channel initializer, <xref:System.ServiceModel.Routing.SoapProcessingBehavior>, and the <xref:System.ServiceModel.Routing.RoutingExtension>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,9 +39,16 @@
         <Parameter Name="routingConfiguration" Type="System.ServiceModel.Routing.RoutingConfiguration" />
       </Parameters>
       <Docs>
-        <param name="routingConfiguration">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="routingConfiguration">The routing configuration.</param>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Routing.RoutingBehavior" /> class with the specified routing configuration.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Routing.RoutingBehavior> registers all of the run-time components used by the routing service, including the channel initializer, <xref:System.ServiceModel.Routing.SoapProcessingBehavior>, and the <xref:System.ServiceModel.Routing.RoutingExtension>, which uses the specified <xref:System.ServiceModel.Routing.RoutingConfiguration>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetContractForDescription">
@@ -53,9 +67,9 @@
         <Parameter Name="description" Type="System.ServiceModel.Description.ContractDescription" />
       </Parameters>
       <Docs>
-        <param name="description">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="description">The contract description to get the type of.</param>
+        <summary>Gets the contract type for the specified <see cref="T:System.ServiceModel.Description.ContractDescription" />.</summary>
+        <returns>The type of the specified <see cref="T:System.ServiceModel.Description.ContractDescription" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,11 +92,11 @@
         <Parameter Name="bindingParameters" Type="System.ServiceModel.Channels.BindingParameterCollection" />
       </Parameters>
       <Docs>
-        <param name="serviceDescription">To be added.</param>
-        <param name="serviceHostBase">To be added.</param>
-        <param name="endpoints">To be added.</param>
-        <param name="bindingParameters">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceDescription">The service description of the service.</param>
+        <param name="serviceHostBase">The host of the service.</param>
+        <param name="endpoints">The service endpoints.</param>
+        <param name="bindingParameters">Custom objects to which binding elements have access.</param>
+        <summary>Implements the <see cref="M:System.ServiceModel.Description.IServiceBehavior.AddBindingParameters(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase,System.Collections.ObjectModel.Collection{System.ServiceModel.Description.ServiceEndpoint},System.ServiceModel.Channels.BindingParameterCollection)" /> method to support the behavior.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,9 +117,9 @@
         <Parameter Name="serviceHostBase" Type="System.ServiceModel.ServiceHostBase" />
       </Parameters>
       <Docs>
-        <param name="serviceDescription">To be added.</param>
-        <param name="serviceHostBase">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceDescription">The service description of the service.</param>
+        <param name="serviceHostBase">The host of the service.</param>
+        <summary>Implements the <see cref="M:System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)" /> method to support the behavior.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -126,9 +140,9 @@
         <Parameter Name="serviceHostBase" Type="System.ServiceModel.ServiceHostBase" />
       </Parameters>
       <Docs>
-        <param name="serviceDescription">To be added.</param>
-        <param name="serviceHostBase">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceDescription">The service description of the service.</param>
+        <param name="serviceHostBase">The host of the service.</param>
+        <summary>Implements the <see cref="M:System.ServiceModel.Description.IServiceBehavior.Validate(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)" /> method to support the behavior.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -11,8 +11,23 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Creates a user-selectable list of data source names.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.DataSourceIDConverter> class is a <xref:System.ComponentModel.TypeConverter> object that is typically referenced by the <xref:System.ComponentModel.TypeConverterAttribute> attribute.  
+  
+ The data source names that are returned by the <xref:System.Web.UI.Design.WebControls.DataSourceIDConverter.GetStandardValues%2A> method are of components from the container of the specified context that are valid data sources.  
+  
+ The <xref:System.Web.UI.Design.WebControls.DataSourceIDConverter.GetStandardValuesExclusive%2A> method gets a value indicating whether the returned data source names are an exclusive list of possible values. The <xref:System.Web.UI.Design.WebControls.DataSourceIDConverter.GetStandardValuesSupported%2A> method gets a value indicating whether the data source names are a standard set of values that can be picked from a list.  
+  
+ The <xref:System.Web.UI.Design.WebControls.DataSourceIDConverter.ConvertFrom%2A> method converts the specified object to the native type of the converter. The <xref:System.Web.UI.Design.WebControls.DataSourceIDConverter.CanConvertFrom%2A> method gets a value indicating whether this <xref:System.Web.UI.Design.WebControls.DataSourceIDConverter> can convert an object in the specified source type to the native type.  
+  
+ The <xref:System.Web.UI.Design.WebControls.DataSourceIDConverter.IsValidDataSource%2A> method indicates whether the specified component implements the <xref:System.Web.UI.IDataSource> interface.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,8 +41,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.DataSourceIDConverter" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework internally constructs a new instance of the <xref:System.Web.UI.Design.WebControls.DataSourceIDConverter> class when the class is referenced by a <xref:System.ComponentModel.TypeConverterAttribute> attribute.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CanConvertFrom">
@@ -47,11 +69,21 @@
         <Parameter Name="sourceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="sourceType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="context">An object implementing the <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides information about a context to a type converter so that the type converter can perform a conversion.</param>
+        <param name="sourceType">The <see cref="T:System.Type" /> of the object for which conversion is being requested.</param>
+        <summary>Gets a value indicating whether this converter can convert an object in the specified source type to the native type of the converter.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="sourceType" /> is a string; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.DataSourceIDConverter.ConvertFrom%2A> method can only convert from a string, so the <xref:System.Web.UI.Design.WebControls.DataSourceIDConverter.CanConvertFrom%2A> only returns `true` when `sourcetype` is a string.  
+  
+ The <xref:System.Web.UI.Design.WebControls.DataSourceIDConverter.CanConvertFrom%2A> does not use the `context` parameter.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertFrom">
@@ -72,12 +104,23 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="culture">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="context">An object implementing the <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides information about a context to a type converter so that the type converter can perform a conversion.</param>
+        <param name="culture">A <see cref="T:System.Globalization.CultureInfo" /> object that specifies the culture of the <c>value</c> parameter.</param>
+        <param name="value">The object to convert.</param>
+        <summary>Converts the specified object to the native type of the converter.</summary>
+        <returns>The <paramref name="value" /> parameter is returned as a string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the `value` parameter has a type of string, it is returned as a string. If `value` is `null`, an empty string ("") is returned. Otherwise, a <xref:System.NotSupportedException> is thrown.  
+  
+ The <xref:System.Web.UI.Design.WebControls.DataSourceIDConverter.ConvertFrom%2A> method does not use the `context` or `culture` parameter.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">
+          <paramref name="value" /> is other than a string or <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetStandardValues">
@@ -96,10 +139,17 @@
         <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="context">An object implementing the <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides information about a context to a type converter so that the type converter can perform a conversion.</param>
+        <summary>Returns a list of the available data source names.</summary>
+        <returns>A <see cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" /> containing the names of the controls that implement the <see cref="T:System.Web.UI.IDataSource" /> interface and are available for use in the given context.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.DataSourceIDConverter.GetStandardValues%2A> method creates a list of the names of the components that are valid data sources in the container of the object that is specified by the `context` parameter. It then converts that list to a <xref:System.ComponentModel.TypeConverter.StandardValuesCollection> object.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetStandardValuesExclusive">
@@ -118,10 +168,19 @@
         <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="context">An object implementing the <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides information about a context to a type converter so that the type converter can perform a conversion.</param>
+        <summary>Gets a value indicating whether the returned data source names are an exclusive list of possible values.</summary>
+        <returns>Always <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you derive a class from the <xref:System.Web.UI.Design.WebControls.DataSourceIDConverter> class and override the <xref:System.Web.UI.Design.WebControls.DataSourceIDConverter.GetStandardValues%2A> method to return an exclusive list of data source names, also override the <xref:System.Web.UI.Design.WebControls.DataSourceIDConverter.GetStandardValuesExclusive%2A> method to return `true` when the data source name list is exclusive.  
+  
+ The `context` parameter is not used by the <xref:System.Web.UI.Design.WebControls.DataSourceIDConverter.GetStandardValuesExclusive%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetStandardValuesSupported">
@@ -140,10 +199,17 @@
         <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="context">An object implementing the <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides information about a context to a type converter so that the type converter can perform a conversion.</param>
+        <summary>Gets a value indicating whether this object returns a standard set of data source names that can be picked from a list.</summary>
+        <returns>Always <see langword="true" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `context` parameter is not used by the <xref:System.Web.UI.Design.WebControls.DataSourceIDConverter.GetStandardValuesSupported%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsValidDataSource">
@@ -162,10 +228,21 @@
         <Parameter Name="component" Type="System.ComponentModel.IComponent" />
       </Parameters>
       <Docs>
-        <param name="component">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="component">An object that implements the <see cref="T:System.ComponentModel.IComponent" /> interface.</param>
+        <summary>Gets a value that indicates whether the specified component is a valid data source.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="component" /> is a valid data source; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.DataSourceIDConverter.IsValidDataSource%2A> method considers the `component` parameter to be a valid data source if it implements the <xref:System.Web.UI.IDataSource> interface.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>The <see cref="M:System.Web.UI.Design.WebControls.DataSourceIDConverter.IsValidDataSource(System.ComponentModel.IComponent)" /> method should be overridden by controls that need to further investigate a given component to decide whether it should be returned in the list of standard values. For example, if a control works with only <see cref="T:System.Web.UI.WebControls.XmlDataSource" /> data sources, <see cref="M:System.Web.UI.Design.WebControls.DataSourceIDConverter.IsValidDataSource(System.ComponentModel.IComponent)" /> should return <see langword="true" /> only for those components that are <see cref="T:System.Web.UI.WebControls.XmlDataSource" /> objects.</para>
+        </block>
       </Docs>
     </Member>
   </Members>

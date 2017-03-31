@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Describes the different types of templates that use <see cref="T:System.Windows.TemplateKey" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Windows.TemplateKey+TemplateType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A type that is a <see cref="T:System.Windows.DataTemplate" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="TableTemplate">
@@ -43,7 +43,7 @@
         <ReturnType>System.Windows.TemplateKey+TemplateType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A type that is a <see langword="TableTemplate" />. This is obsolete.</summary>
       </Docs>
     </Member>
   </Members>

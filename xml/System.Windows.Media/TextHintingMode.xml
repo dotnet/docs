@@ -10,8 +10,17 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the rendering behavior of static or animated text.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For static text, use Fixed.  
+  
+ For animated text, use Animated to allow for smoother animations at the cost of text quality.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Animated">
@@ -27,7 +36,7 @@
         <ReturnType>System.Windows.Media.TextHintingMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The rendering engine renders text with the highest animated quality.</summary>
       </Docs>
     </Member>
     <Member MemberName="Auto">
@@ -43,7 +52,7 @@
         <ReturnType>System.Windows.Media.TextHintingMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The rendering engine automatically determines whether to draw text with quality settings appropriate for animated or static text.</summary>
       </Docs>
     </Member>
     <Member MemberName="Fixed">
@@ -59,7 +68,7 @@
         <ReturnType>System.Windows.Media.TextHintingMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The rendering engine renders text with the highest static quality.</summary>
       </Docs>
     </Member>
   </Members>

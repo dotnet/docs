@@ -18,8 +18,21 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] proxy of a <see cref="T:System.Windows.Data.CollectionView" /> class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Data.CollectionViewSource> is a proxy for a <xref:System.Windows.Data.CollectionView> class, or a class derived from <xref:System.Windows.Data.CollectionView>. <xref:System.Windows.Data.CollectionViewSource> enables [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] code to set the commonly used <xref:System.Windows.Data.CollectionView> properties, passing these settings to the underlying view. <xref:System.Windows.Data.CollectionViewSource> has a <xref:System.Windows.Data.CollectionViewSource.View%2A> property that holds the actual view and a <xref:System.Windows.Data.CollectionViewSource.Source%2A> property that holds the source collection.  
+  
+ You can think of a collection view as the layer on top of the binding source collection that allows you to navigate and display the collection based on sort, filter, and group queries, all without having to manipulate the underlying source collection itself. If the source collection implements the <xref:System.Collections.Specialized.INotifyCollectionChanged> interface, the changes raised by the <xref:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged> event are propagated to the views.  
+  
+ Because views do not change the underlying source collections, each source collection can have multiple views associated with it. For example, you may have a collection of `Task` objects. With the use of views, you can display that same data in different ways. For example, on the left side of your page you may want to show tasks sorted by priority, and on the right side, grouped by area.  
+  
+ For more information, see the Binding to Collections section in the [Data Binding Overview](../Topic/Data%20Binding%20Overview.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,7 +46,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Data.CollectionViewSource" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,9 +68,24 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the collection view supports turning filtering data in real time on or off.</summary>
+        <value>
+          <see langword="true" /> if the collection view supports turning live filtering on or off; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_CanChangeLiveFiltering"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Data.CollectionViewSource.CanChangeLiveFilteringProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CanChangeLiveFilteringProperty">
@@ -73,7 +101,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Data.CollectionViewSource.CanChangeLiveFiltering" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,9 +123,24 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the collection view supports turning grouping data in real time on or off.</summary>
+        <value>
+          <see langword="true" /> if the collection view supports turning live grouping on or off; otherwise, <see langword="false" />.The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_CanChangeLiveGrouping"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Data.CollectionViewSource.CanChangeLiveGroupingProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CanChangeLiveGroupingProperty">
@@ -113,7 +156,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Data.CollectionViewSource.CanChangeLiveGrouping" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,9 +178,24 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the collection view supports turning sorting data in real time on or off.</summary>
+        <value>
+          <see langword="true" /> if the collection view supports turning live sorting on or off; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_CanChangeLiveSorting"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Data.CollectionViewSource.CanChangeLiveSortingProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CanChangeLiveSortingProperty">
@@ -153,7 +211,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Data.CollectionViewSource.CanChangeLiveSorting" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -170,9 +228,38 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the desired view type.</summary>
+        <value>The desired view type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This can be used when you want to create a custom view on top of a collection of a specific type that is different from the default type.  
+  
+ This property may only be set during initialization.  
+  
+<a name="dependencyPropertyInfo_CollectionViewType"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Data.CollectionViewSource.CollectionViewTypeProperty>|  
+|Metadata properties set to `true`|None|  
+  
+<a name="xamlAttributeUsage_CollectionViewType"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object CollectionViewType="{x:Type typeName}"/>  
+```  
+  
+<a name="xamlValues_CollectionViewType"></a>   
+## XAML Values  
+ *typeName*  
+ The name of the <xref:System.Type> that is contained by this view. Note the use of the [x:Type Markup Extension](../Topic/x:Type%20Markup%20Extension.md) to specify a type in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CollectionViewTypeProperty">
@@ -188,7 +275,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Data.CollectionViewSource.CollectionViewType" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -210,9 +297,28 @@
         <ReturnType>System.Globalization.CultureInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the culture that is used for operations such as sorting and comparisons.</summary>
+        <value>The culture that is used for operations such as sorting and comparisons.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is forwarded to any collection view created from this <xref:System.Windows.Data.CollectionViewSource.Source%2A> collection.  
+  
+<a name="xamlAttributeUsage_Culture"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object Culture="ietfLanguageTag"/>  
+```  
+  
+<a name="xamlValues_Culture"></a>   
+## XAML Values  
+ *ietfLanguageTag*  
+ A string used to set the <xref:System.Globalization.CultureInfo>. This string is used to internally call. <xref:System.Globalization.CultureInfo.GetCultureInfoByIetfLanguageTag%2A>. For details on the string format, see <xref:System.Globalization.CultureInfo.GetCultureInfoByIetfLanguageTag%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DeferRefresh">
@@ -229,9 +335,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Enters a defer cycle that you can use to merge changes to the view and delay automatic refresh.</summary>
+        <returns>An <see cref="T:System.IDisposable" /> object that you can use to dispose of the calling object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The typical usage is to create a `using` scope with this method and then place multiple view-changing calls within the scope. This delays automatic refresh until the defer cycle is exited.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Filter">
@@ -247,8 +360,32 @@
         <ReturnType>System.Windows.Data.FilterEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Provides filtering logic.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Views can apply a filter to a collection. This means that although an item might exist in the collection, a particular view is intended to show only a certain subset of the full collection.  
+  
+ You can use this event to set an event handler to provide filtering logic.  
+  
+   
+  
+## Examples  
+ The following example shows how to set an event handler for the <xref:System.Windows.Data.CollectionViewSource.Filter> event. In this example, `listingDataView` is an instance of <xref:System.Windows.Data.CollectionViewSource>.  
+  
+ [!code-csharp[DataBindingLab#10](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/MainWindow.xaml.cs#10)]
+ [!code-vb[DataBindingLab#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DataBindingLab/VisualBasic/MainWindow.xaml.vb#10)]  
+  
+ The following shows the implementation of the example `ShowOnlyBargainsFilter` filter event handler. This event handler uses the <xref:System.Windows.Data.FilterEventArgs.Accepted%2A> property to filter out `AuctionItem` objects that have a `CurrentPrice` of $25 or greater.  
+  
+ [!code-csharp[DataBindingLab#5](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/MainWindow.xaml.cs#5)]
+ [!code-vb[DataBindingLab#5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DataBindingLab/VisualBasic/MainWindow.xaml.vb#5)]  
+  
+ For the complete example, see [Data Binding Demo](http://go.microsoft.com/fwlink/?LinkID=163703).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDefaultView">
@@ -267,10 +404,19 @@
         <Parameter Name="source" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="source">An object reference to the binding source.</param>
+        <summary>Returns the default view for the given source.</summary>
+        <returns>Returns an <see cref="T:System.ComponentModel.ICollectionView" /> object that is the default view for the given source collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This default view is never affiliated with any <xref:System.Windows.Data.CollectionViewSource> objects.  
+  
+ All collections have a default <xref:System.Windows.Data.CollectionView>. WPF always binds to a view rather than a collection. If you bind directly to a collection, WPF actually binds to the default view for that collection. This default view is shared by all bindings to the collection, which causes all direct bindings to the collection to share the sort, filter, group, and current item characteristics of the one default view. Alternatively, you can create a view of your collection in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] or code using the <xref:System.Windows.Data.CollectionViewSource> class, and binding your control to that view. For an example, see [How to: Sort and Group Data Using a View in XAML](../Topic/How%20to:%20Sort%20and%20Group%20Data%20Using%20a%20View%20in%20XAML.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GroupDescriptions">
@@ -286,9 +432,32 @@
         <ReturnType>System.Collections.ObjectModel.ObservableCollection&lt;System.ComponentModel.GroupDescription&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a collection of <see cref="T:System.ComponentModel.GroupDescription" /> objects that describes how the items in the collection are grouped in the view.</summary>
+        <value>An <see cref="T:System.Collections.ObjectModel.ObservableCollection`1" /> of <see cref="T:System.ComponentModel.GroupDescription" /> objects that describes how the items in the collection are grouped in the view.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is forwarded to any collection view created from the current <xref:System.Windows.Data.CollectionViewSource.Source%2A>.  
+  
+<a name="xamlPropertyElementUsage_GroupDescriptions"></a>   
+## XAML Property Element Usage  
+  
+```  
+<object>  
+  <object.GroupDescriptions>  
+    oneOrMorePropertyDescriptions  
+  </object.GroupDescriptions>  
+</object>  
+```  
+  
+<a name="xamlValues_GroupDescriptions"></a>   
+## XAML Values  
+ *oneOrMorePropertyDescriptions*  
+ One or more elements that derive from the <xref:System.ComponentModel.GroupDescription>s abstract class. Typically this is a <xref:System.Windows.Data.PropertyGroupDescription>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsDefaultView">
@@ -307,10 +476,18 @@
         <Parameter Name="view" Type="System.ComponentModel.ICollectionView" />
       </Parameters>
       <Docs>
-        <param name="view">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="view">The view object to check.</param>
+        <summary>Returns a value that indicates whether the given view is the default view for the <see cref="P:System.Windows.Data.CollectionViewSource.Source" /> collection.</summary>
+        <returns>
+          <see langword="true" /> if the given view is the default view for the <see cref="P:System.Windows.Data.CollectionViewSource.Source" /> collection or if the given view is <see langword="nulll" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ All collections have a default <xref:System.Windows.Data.CollectionView>. For all collections implementing <xref:System.Collections.IList>, the <xref:System.Windows.Data.ListCollectionView> object is the default view object. The <xref:System.Windows.Data.BindingListCollectionView> is the collection view class used for collections that implement <xref:System.ComponentModel.IBindingListView> and <xref:System.ComponentModel.IBindingList>. To get the default view, you use the <xref:System.Windows.Data.CollectionViewSource.GetDefaultView%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsLiveFiltering">
@@ -331,9 +508,24 @@
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Windows.Data.CollectionViewSource" /> is filtering data in real time.</summary>
+        <value>
+          <see langword="true" /> if filtering data in real time is enabled; <see langword="false" /> if live filtering is not enabled; <see langword="null" /> if it cannot be determined whether the collection view implements live filtering. The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_IsLiveFiltering"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Data.CollectionViewSource>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsLiveFilteringProperty">
@@ -349,7 +541,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Data.CollectionViewSource.IsLiveFiltering" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -366,9 +558,24 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether <see cref="T:System.Windows.Data.CollectionViewSource" /> should filter the data in real time if it can.</summary>
+        <value>
+          <see langword="true" /> if live filtering has been requested; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_IsLiveFilteringRequested"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Data.CollectionViewSource>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsLiveFilteringRequestedProperty">
@@ -384,7 +591,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Data.CollectionViewSource.IsLiveFilteringRequested" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -406,9 +613,24 @@
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Windows.Data.CollectionViewSource" /> groups data in real time.</summary>
+        <value>
+          <see langword="true" /> if grouping data in real time is enable; <see langword="false" /> if live grouping is not enabled; <see langword="null" /> if it cannot be determined whether the collection view implements live grouping. The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_IsLiveGrouping"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Data.CollectionViewSource>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsLiveGroupingProperty">
@@ -424,7 +646,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Data.CollectionViewSource.IsLiveGrouping" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -441,9 +663,24 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether <see cref="T:System.Windows.Data.CollectionViewSource" /> should group the data in real time if it can.</summary>
+        <value>
+          <see langword="true" /> if live grouping has been requested; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_IsLiveGroupingRequested"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Data.CollectionViewSource>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsLiveGroupingRequestedProperty">
@@ -459,7 +696,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Data.CollectionViewSource.IsLiveGroupingRequested" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -481,9 +718,24 @@
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Windows.Data.CollectionViewSource" /> sorts data in real time.</summary>
+        <value>
+          <see langword="true" /> if sorting data in real time is enable; <see langword="false" /> if live sorting is not enabled; <see langword="null" /> if it cannot be determined whether the collection view implements live sorting. The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_IsLiveSorting"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Data.CollectionViewSource>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsLiveSortingProperty">
@@ -499,7 +751,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Data.CollectionViewSource.IsLiveSorting" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -516,9 +768,24 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether <see cref="T:System.Windows.Data.CollectionViewSource" /> should sort the data in real time if it can.</summary>
+        <value>
+          <see langword="true" /> if live sorting has been requested; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_IsLiveSortingRequested"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Data.CollectionViewSource>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsLiveSortingRequestedProperty">
@@ -534,7 +801,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Data.CollectionViewSource.IsLiveSortingRequested" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -551,8 +818,8 @@
         <ReturnType>System.Collections.ObjectModel.ObservableCollection&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of strings that specify the properties that participate in filtering data in real time.</summary>
+        <value>A collection of strings that specify the properties that participate in filtering data in real time.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -569,8 +836,8 @@
         <ReturnType>System.Collections.ObjectModel.ObservableCollection&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of strings that specify the properties that participate in grouping data in real time.</summary>
+        <value>A collection of strings that specify the properties that participate in grouping data in real time.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -587,8 +854,8 @@
         <ReturnType>System.Collections.ObjectModel.ObservableCollection&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of strings that specify the properties that participate in sorting data in real time.</summary>
+        <value>A collection of strings that specify the properties that participate in sorting data in real time.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -609,9 +876,9 @@
         <Parameter Name="newCollectionViewType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="oldCollectionViewType">To be added.</param>
-        <param name="newCollectionViewType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="oldCollectionViewType">The old value of the <see cref="P:System.Windows.Data.CollectionViewSource.CollectionViewType" /> property.</param>
+        <param name="newCollectionViewType">The new value of the <see cref="P:System.Windows.Data.CollectionViewSource.CollectionViewType" /> property.</param>
+        <summary>Invoked when the <see cref="P:System.Windows.Data.CollectionViewSource.CollectionViewType" /> property changes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -632,9 +899,9 @@
         <Parameter Name="newSource" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="oldSource">To be added.</param>
-        <param name="newSource">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="oldSource">The old value of the <see cref="P:System.Windows.Data.CollectionViewSource.Source" /> property.</param>
+        <param name="newSource">The new value of the <see cref="P:System.Windows.Data.CollectionViewSource.Source" /> property.</param>
+        <summary>Invoked when the <see cref="P:System.Windows.Data.CollectionViewSource.Source" /> property changes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -656,11 +923,12 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="managerType">To be added.</param>
-        <param name="sender">To be added.</param>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="managerType">The type of the <see cref="T:System.Windows.WeakEventManager" /> calling this method. This only recognizes manager objects of type <see cref="T:System.Windows.Data.DataChangedEventManager" />.</param>
+        <param name="sender">Object that originated the event.</param>
+        <param name="e">Event data.</param>
+        <summary>Handles events from the centralized event table.</summary>
+        <returns>
+          <see langword="true" /> if the listener handled the event; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -677,9 +945,32 @@
         <ReturnType>System.ComponentModel.SortDescriptionCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a collection of <see cref="T:System.ComponentModel.SortDescription" /> objects that describes how the items in the collection are sorted in the view.</summary>
+        <value>A collection of <see cref="T:System.ComponentModel.SortDescription" /> objects that describes how the items in the collection are sorted in the view.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is forwarded to any collection view created from the current source.  
+  
+<a name="xamlPropertyElementUsage_SortDescriptions"></a>   
+## XAML Property Element Usage  
+  
+```  
+<object>  
+  <object.SortDescriptions>  
+    oneOrMoreSortDescriptions  
+  </object.SortDescriptions>  
+</object>  
+```  
+  
+<a name="xamlValues_SortDescriptions"></a>   
+## XAML Values  
+ *oneOrMoreSortDescriptions*  
+ One or more <xref:System.ComponentModel.SortDescription> elements.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Source">
@@ -695,9 +986,35 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the collection object from which to create this view.</summary>
+        <value>The default value is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_Source"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier Field|<xref:System.Windows.Data.CollectionViewSource.SourceProperty>|  
+|Metadata properties set to `true`|None|  
+  
+<a name="xamlAttributeUsage_Source"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object Source="myCollection" .../>  
+```  
+  
+<a name="xamlValues_Source"></a>   
+## XAML Values  
+ *myCollection*  
+ An existing collection. To refer to an existing collection, use the [StaticResource Markup Extension](../Topic/StaticResource%20Markup%20Extension.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceProperty">
@@ -713,7 +1030,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Data.CollectionViewSource.Source" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -731,7 +1048,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Signals the object that initialization is starting.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -749,7 +1066,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Signals the object that initialization is complete.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -771,11 +1088,12 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="managerType">To be added.</param>
-        <param name="sender">To be added.</param>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="managerType">The type of the <see cref="T:System.Windows.WeakEventManager" /> calling this method. This only recognizes manager objects of type <see cref="T:System.Windows.Data.DataChangedEventManager" />.</param>
+        <param name="sender">Object that originated the event.</param>
+        <param name="e">Event data.</param>
+        <summary>Receives events from the centralized event manager.</summary>
+        <returns>
+          <see langword="true" /> if the listener handled the event; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -797,9 +1115,23 @@
         <ReturnType>System.ComponentModel.ICollectionView</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the view object that is currently associated with this instance of <see cref="T:System.Windows.Data.CollectionViewSource" />.</summary>
+        <value>The view object that is currently associated with this instance of <see cref="T:System.Windows.Data.CollectionViewSource" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_View"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Data.CollectionViewSource>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ViewProperty">
@@ -815,7 +1147,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Data.CollectionViewSource.CollectionViewType" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

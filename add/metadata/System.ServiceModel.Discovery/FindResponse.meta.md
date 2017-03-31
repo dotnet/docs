@@ -1,14 +1,20 @@
 ---
 uid: System.ServiceModel.Discovery.FindResponse
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.FindResponse.GetMessageSequence(System.ServiceModel.Discovery.EndpointDiscoveryMetadata)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.FindResponse.Endpoints
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

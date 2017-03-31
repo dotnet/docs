@@ -1,69 +1,74 @@
 ---
 uid: System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.#ctor(System.String)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.InstanceLockedExceptionAction
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.InstanceCompletionAction
-internalonly: False
----
-
----
-uid: System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.AddBindingParameters(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase,System.Collections.ObjectModel.Collection{System.ServiceModel.Description.ServiceEndpoint},System.ServiceModel.Channels.BindingParameterCollection)
-internalonly: False
----
-
----
-uid: System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.ConnectionString
-internalonly: False
----
-
----
-uid: System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.RunnableInstancesDetectionPeriod
-internalonly: False
----
-
----
-uid: System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.Validate(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)
-internalonly: False
----
-
----
-uid: System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.Promote(System.String,System.Collections.Generic.IEnumerable{System.Xml.Linq.XName},System.Collections.Generic.IEnumerable{System.Xml.Linq.XName})
-internalonly: False
----
-
----
-uid: System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.HostLockRenewalPeriod
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.#ctor
-internalonly: False
+manager: "ghogen"
+---
+
+---
+uid: System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.AddBindingParameters(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase,System.Collections.ObjectModel.Collection{System.ServiceModel.Description.ServiceEndpoint},System.ServiceModel.Channels.BindingParameterCollection)
+manager: "ghogen"
+---
+
+---
+uid: System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.ConnectionString
+manager: "ghogen"
+---
+
+---
+uid: System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.RunnableInstancesDetectionPeriod
+manager: "ghogen"
+---
+
+---
+uid: System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.Validate(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)
+manager: "ghogen"
+---
+
+---
+uid: System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.Promote(System.String,System.Collections.Generic.IEnumerable{System.Xml.Linq.XName},System.Collections.Generic.IEnumerable{System.Xml.Linq.XName})
+manager: "ghogen"
+---
+
+---
+uid: System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.HostLockRenewalPeriod
+manager: "ghogen"
+---
+
+---
+uid: System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.#ctor
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.MaxConnectionRetries
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.InstanceEncodingOption
-internalonly: False
+manager: "ghogen"
 ---

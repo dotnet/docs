@@ -1,9 +1,13 @@
 ---
 uid: System.ServiceModel.Channels.NamedPipeSettings
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.NamedPipeSettings.ApplicationContainerSettings
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

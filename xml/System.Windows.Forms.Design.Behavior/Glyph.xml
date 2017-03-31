@@ -11,8 +11,26 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a single user interface (UI) entity managed by an <see cref="T:System.Windows.Forms.Design.Behavior.Adorner" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The sole purpose of a <xref:System.Windows.Forms.Design.Behavior.Glyph> is to paint and hit test. A <xref:System.Windows.Forms.Design.Behavior.Glyph> does not have a window handle (HWND), as it is rendered on the adorner window control of the <xref:System.Windows.Forms.Design.Behavior.BehaviorService>. Each <xref:System.Windows.Forms.Design.Behavior.Glyph> can have a <xref:System.Windows.Forms.Design.Behavior.Behavior> associated with it. A successfully hit-tested <xref:System.Windows.Forms.Design.Behavior.Glyph> has the opportunity to push a new or different <xref:System.Windows.Forms.Design.Behavior.Behavior> onto the behavior stack of the <xref:System.Windows.Forms.Design.Behavior.BehaviorService>.  
+  
+ For more information, see [Behavior Service Overview](../Topic/Behavior%20Service%20Overview.md).  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to create your own <xref:System.Windows.Forms.Design.Behavior.Glyph> based class with <xref:System.Windows.Forms.Design.Behavior.Behavior> associated with it. This code example is part of a larger example provided for the <xref:System.Windows.Forms.Design.Behavior.BehaviorService> class.  
+  
+ [!code-cpp[System.Windows.Forms.Design.Behavior.BehaviorService#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/cpp/Form1.cpp#5)]
+ [!code-csharp[System.Windows.Forms.Design.Behavior.BehaviorService#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/CS/Form1.cs#5)]
+ [!code-vb[System.Windows.Forms.Design.Behavior.BehaviorService#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/VB/Form1.vb#5)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,9 +46,20 @@
         <Parameter Name="behavior" Type="System.Windows.Forms.Design.Behavior.Behavior" />
       </Parameters>
       <Docs>
-        <param name="behavior">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="behavior">The <see cref="T:System.Windows.Forms.Design.Behavior.Behavior" /> associated with the <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" />. Can be <see langword="null" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to initialize a new instance of the <xref:System.Windows.Forms.Design.Behavior.Glyph> class. This code example is part of a larger example provided for the <xref:System.Windows.Forms.Design.Behavior.BehaviorService> class.  
+  
+ [!code-cpp[System.Windows.Forms.Design.Behavior.BehaviorService#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/cpp/Form1.cpp#4)]
+ [!code-csharp[System.Windows.Forms.Design.Behavior.BehaviorService#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/CS/Form1.cs#4)]
+ [!code-vb[System.Windows.Forms.Design.Behavior.BehaviorService#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/VB/Form1.vb#4)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Behavior">
@@ -46,8 +75,8 @@
         <ReturnType>System.Windows.Forms.Design.Behavior.Behavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Windows.Forms.Design.Behavior.Behavior" /> associated with the <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" />.</summary>
+        <value>The <see cref="T:System.Windows.Forms.Design.Behavior.Behavior" /> associated with the <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" />, or <see langword="null" /> if there is no behavior.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,9 +93,20 @@
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the bounds of the <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" />.</summary>
+        <value>A <see cref="T:System.Drawing.Rectangle" /> representing the bounds of the <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to override the <xref:System.Windows.Forms.Design.Behavior.Glyph.Bounds%2A> to create a glyph with the specific dimensions and position. This code example is part of a larger example provided for the <xref:System.Windows.Forms.Design.Behavior.BehaviorService> class.  
+  
+ [!code-cpp[System.Windows.Forms.Design.Behavior.BehaviorService#8](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/cpp/Form1.cpp#8)]
+ [!code-csharp[System.Windows.Forms.Design.Behavior.BehaviorService#8](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/CS/Form1.cs#8)]
+ [!code-vb[System.Windows.Forms.Design.Behavior.BehaviorService#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/VB/Form1.vb#8)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHitTest">
@@ -85,10 +125,26 @@
         <Parameter Name="p" Type="System.Drawing.Point" />
       </Parameters>
       <Docs>
-        <param name="p">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="p">A point to hit-test.</param>
+        <summary>Provides hit test logic.</summary>
+        <returns>A <see cref="T:System.Windows.Forms.Cursor" /> if the <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> is associated with <paramref name="p" />; otherwise, <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.Design.Behavior.Glyph.GetHitTest%2A> method is an `abstract` method that forces <xref:System.Windows.Forms.Design.Behavior.Glyph> implementations to provide hit test logic. Given any point, if the <xref:System.Windows.Forms.Design.Behavior.Glyph> has decided to be involved with that location, it will need to return a valid <xref:System.Windows.Forms.Cursor>. Otherwise, returning `null` will cause the <xref:System.Windows.Forms.Design.Behavior.BehaviorService> to ignore the location.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to override the <xref:System.Windows.Forms.Design.Behavior.Glyph.GetHitTest%2A> to see if the point is within this glyph. This code example is part of a larger example provided for the <xref:System.Windows.Forms.Design.Behavior.BehaviorService> class.  
+  
+ [!code-cpp[System.Windows.Forms.Design.Behavior.BehaviorService#9](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/cpp/Form1.cpp#9)]
+ [!code-csharp[System.Windows.Forms.Design.Behavior.BehaviorService#9](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/CS/Form1.cs#9)]
+ [!code-vb[System.Windows.Forms.Design.Behavior.BehaviorService#9](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/VB/Form1.vb#9)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Paint">
@@ -107,9 +163,25 @@
         <Parameter Name="pe" Type="System.Windows.Forms.PaintEventArgs" />
       </Parameters>
       <Docs>
-        <param name="pe">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="pe">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> that contains the event data.</param>
+        <summary>Provides paint logic.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.Design.Behavior.Glyph.Paint%2A> method is an `abstract` method that forces <xref:System.Windows.Forms.Design.Behavior.Glyph> implementations to provide paint logic. The `pe` parameter contains the <xref:System.Drawing.Graphics> related to the adorner window of the <xref:System.Windows.Forms.Design.Behavior.BehaviorService>.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to override the <xref:System.Windows.Forms.Design.Behavior.Glyph.Paint%2A> to draw a glyph. This code example is part of a larger example provided for the <xref:System.Windows.Forms.Design.Behavior.BehaviorService> class.  
+  
+ [!code-cpp[System.Windows.Forms.Design.Behavior.BehaviorService#10](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/cpp/Form1.cpp#10)]
+ [!code-csharp[System.Windows.Forms.Design.Behavior.BehaviorService#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/CS/Form1.cs#10)]
+ [!code-vb[System.Windows.Forms.Design.Behavior.BehaviorService#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.BehaviorService/VB/Form1.vb#10)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetBehavior">
@@ -128,9 +200,12 @@
         <Parameter Name="behavior" Type="System.Windows.Forms.Design.Behavior.Behavior" />
       </Parameters>
       <Docs>
-        <param name="behavior">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="behavior">A <see cref="T:System.Windows.Forms.Design.Behavior.Behavior" /> to associate with the <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" />.</param>
+        <summary>Changes the <see cref="T:System.Windows.Forms.Design.Behavior.Behavior" /> associated with the <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" />.</summary>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>The <see cref="M:System.Windows.Forms.Design.Behavior.Glyph.SetBehavior(System.Windows.Forms.Design.Behavior.Behavior)" /> method is called by inheriting classes to change the <see cref="T:System.Windows.Forms.Design.Behavior.Behavior" /> associated with the <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" />.</para>
+        </block>
       </Docs>
     </Member>
   </Members>

@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates which condition should cause a Windows Forms application to shut down.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can set the shutdown mode for an application through the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.ShutdownStyle%2A> property. By default, the <xref:System.Windows.Forms.ApplicationContext.OnMainFormClosed%2A> method checks the value of the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.ShutdownStyle%2A> property to determine if the application should shut down.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AfterAllFormsClose">
@@ -27,7 +34,7 @@
         <ReturnType>Microsoft.VisualBasic.ApplicationServices.ShutdownMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Shut down only after the last form closes.</summary>
       </Docs>
     </Member>
     <Member MemberName="AfterMainFormCloses">
@@ -43,7 +50,7 @@
         <ReturnType>Microsoft.VisualBasic.ApplicationServices.ShutdownMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Shut down when the main form closes.</summary>
       </Docs>
     </Member>
   </Members>

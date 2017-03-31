@@ -1,14 +1,20 @@
 ---
 uid: System.ComponentModel.Composition.Hosting.CompositionService
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.CompositionService.SatisfyImportsOnce(System.ComponentModel.Composition.Primitives.ComposablePart)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.CompositionService.Dispose
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

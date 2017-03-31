@@ -1,4 +1,6 @@
 ---
 uid: System.Security.RightsManagement.UserActivationMode
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

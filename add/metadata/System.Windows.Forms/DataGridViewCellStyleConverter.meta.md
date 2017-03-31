@@ -1,19 +1,35 @@
 ---
 uid: System.Windows.Forms.DataGridViewCellStyleConverter
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewCellStyleConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridViewCellStyleConverter.CanConvertTo
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.DataGridViewCellStyleConverter.ConvertTo
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewCellStyleConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewCellStyleConverter.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

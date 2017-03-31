@@ -1,19 +1,24 @@
 ---
 uid: System.Management.InvokeMethodOptions
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.InvokeMethodOptions.#ctor(System.Management.ManagementNamedValueCollection,System.TimeSpan)
-internalonly: False
----
-
----
-uid: System.Management.InvokeMethodOptions.Clone
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.InvokeMethodOptions.#ctor
-internalonly: False
+manager: "jillfra"
+---
+
+---
+uid: System.Management.InvokeMethodOptions.Clone
+manager: "jillfra"
+---
+
+---
+uid: System.Management.InvokeMethodOptions.#ctor
+manager: "jillfra"
 ---

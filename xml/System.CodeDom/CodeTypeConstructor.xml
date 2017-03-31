@@ -19,8 +19,27 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a static constructor for a class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.CodeDom.CodeTypeConstructor> can be used to represent the static constructor for a class. A static constructor is called once when the type is loaded.  
+  
+> [!NOTE]
+>  Not all languages support static constructors. Support for static constructors can be checked by calling <xref:System.CodeDom.Compiler.ICodeGenerator.Supports%2A> with the <xref:System.CodeDom.Compiler.GeneratorSupport> flag to determine if static constructors are supported by the code generator for a particular language.  
+  
+   
+  
+## Examples  
+ The following example demonstrates use of a <xref:System.CodeDom.CodeTypeConstructor> to declare a static constructor for a type.  
+  
+ [!code-cpp[CodeTypeConstructorExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeConstructorExample/CPP/codetypeconstructorexample.cpp#2)]
+ [!code-csharp[CodeTypeConstructorExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeConstructorExample/CS/codetypeconstructorexample.cs#2)]
+ [!code-vb[CodeTypeConstructorExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeConstructorExample/VB/codetypeconstructorexample.vb#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,7 +53,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeTypeConstructor" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

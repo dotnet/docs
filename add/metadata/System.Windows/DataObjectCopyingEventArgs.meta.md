@@ -1,14 +1,20 @@
 ---
 uid: System.Windows.DataObjectCopyingEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.DataObjectCopyingEventArgs.DataObject
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.DataObjectCopyingEventArgs.#ctor(System.Windows.IDataObject,System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

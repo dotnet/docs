@@ -17,8 +17,24 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a discovery document. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ XML Web services discovery involves discovering the available XML Web services, given an URL. The URL typically points to a discovery document, which usually has a.disco file name extension. The discovery document, which is an XML document, contains references to information about the existance of XML Web services, such as a service description, XML Schema Definition (XSD) language schema, or another discovery document. This class represents the contents of the discovery document; where the <xref:System.Web.Services.Discovery.DiscoveryDocument.References%2A> property contains a list of the references contained within the discovery document.  
+  
+   
+  
+## Examples  
+ The following code example reads a discovery document from a file using the <xref:System.Web.Services.Discovery.DiscoveryDocument.Read%2A> and writes it back out to file using the <xref:System.Web.Services.Discovery.DiscoveryDocument.Write%2A> method.  
+  
+ [!code-cpp[DiscoveryDocument#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryDocument/CPP/discoverydocument.cpp#1)]
+ [!code-csharp[DiscoveryDocument#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryDocument/CS/discoverydocument.cs#1)]
+ [!code-vb[DiscoveryDocument#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryDocument/VB/discoverydocument.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,7 +49,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,10 +70,22 @@
         <Parameter Name="xmlReader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="xmlReader">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="xmlReader">The <see cref="T:System.Xml.XmlReader" /> that is tested whether it can be deserialized into a <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" />.</param>
+        <summary>Returns a value indicating whether the passed <see cref="T:System.Xml.XmlReader" /> can be deserialized into a <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" />.</summary>
+        <returns>
+          <see langword="true" /> if <see cref="T:System.Xml.XmlReader" /> can be deserialized into a <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example reads in the contents of a discovery document, if the <xref:System.Web.Services.Discovery.DiscoveryDocument.CanRead%2A> property is `true`.  
+  
+ [!code-cpp[DiscoveryDocument_DiscoveryDocument#3](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryDocument_DiscoveryDocument/CPP/discoverydocument_discoverydocument.cpp#3)]
+ [!code-csharp[DiscoveryDocument_DiscoveryDocument#3](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryDocument_DiscoveryDocument/CS/discoverydocument_discoverydocument.cs#3)]
+ [!code-vb[DiscoveryDocument_DiscoveryDocument#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryDocument_DiscoveryDocument/VB/discoverydocument_discoverydocument.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Namespace">
@@ -74,8 +102,24 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Namespace of the discovery XML element of a discovery document.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A discovery document contains references to documents describing Web Services. These references are XML elements contained within a discovery XML element. That discovery XML element is a member of the XML namespace specified by the <xref:System.Web.Services.Discovery.DiscoveryDocument.Namespace> constant.  
+  
+   
+  
+## Examples  
+ The following code example displays the XML namespace associated with the discovery XML element of a discovery document.  
+  
+ [!code-cpp[DiscoveryDocument_DiscoveryDocument#2](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryDocument_DiscoveryDocument/CPP/discoverydocument_discoverydocument.cpp#2)]
+ [!code-csharp[DiscoveryDocument_DiscoveryDocument#2](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryDocument_DiscoveryDocument/CS/discoverydocument_discoverydocument.cs#2)]
+ [!code-vb[DiscoveryDocument_DiscoveryDocument#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryDocument_DiscoveryDocument/VB/discoverydocument_discoverydocument.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -95,9 +139,9 @@
         <Parameter Name="stream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="stream">The <see cref="T:System.IO.Stream" /> from which to read the <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" />.</param>
+        <summary>Reads and returns a <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" /> from the passed <see cref="T:System.IO.Stream" />.</summary>
+        <returns>A <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" /> containing the contents of a discovery document from the passed <see cref="T:System.IO.Stream" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,9 +163,20 @@
       </Parameters>
       <Docs>
         <param name="textReader">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Reads and returns a <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" /> from the passed <see cref="T:System.IO.TextReader" />.</summary>
+        <returns>A <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" /> containing the contents of a discovery document from the passed <see cref="T:System.IO.TextReader" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example reads the discovery document from " `http://localhost/example_Write2_cs.vsdisco` " into a <xref:System.Xml.XmlTextReader>.  
+  
+ [!code-cpp[DiscoveryDocument_Write2#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryDocument_Write2/CPP/discoverydocument_write2.cpp#1)]
+ [!code-csharp[DiscoveryDocument_Write2#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryDocument_Write2/CS/discoverydocument_write2.cs#1)]
+ [!code-vb[DiscoveryDocument_Write2#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryDocument_Write2/VB/discoverydocument_write2.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -141,10 +196,21 @@
         <Parameter Name="xmlReader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="xmlReader">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="xmlReader">The <see cref="T:System.Xml.XmlReader" /> from which to read the <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" />.</param>
+        <summary>Reads and returns a <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" /> from the passed <see cref="T:System.Xml.XmlReader" />.</summary>
+        <returns>A <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" /> containing the contents of a discovery document from the passed <see cref="T:System.Xml.XmlReader" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example reads in the contents of a discovery document, if the <xref:System.Web.Services.Discovery.DiscoveryDocument.CanRead%2A> property is `true`.  
+  
+ [!code-cpp[DiscoveryDocument_DiscoveryDocument#4](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryDocument_DiscoveryDocument/CPP/discoverydocument_discoverydocument.cpp#4)]
+ [!code-csharp[DiscoveryDocument_DiscoveryDocument#4](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryDocument_DiscoveryDocument/CS/discoverydocument_discoverydocument.cs#4)]
+ [!code-vb[DiscoveryDocument_DiscoveryDocument#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryDocument_DiscoveryDocument/VB/discoverydocument_discoverydocument.vb#4)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="References">
@@ -166,9 +232,25 @@
         <ReturnType>System.Collections.IList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A list of references contained within the discovery document.</summary>
+        <value>An <see cref="T:System.Collections.IList" /> containing the references within the discovery document.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A discovery document contains references to information about the existence of XML Web services. These references can refer to service descriptions, XSD schemas, or other discovery documents. The <xref:System.Web.Services.Discovery.DiscoveryDocument.References%2A> property contains a list of these references.  
+  
+   
+  
+## Examples  
+ The following code example enumerates over the references for a discovery document.  
+  
+ [!code-cpp[DiscoveryDocument_DiscoveryDocument#5](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryDocument_DiscoveryDocument/CPP/discoverydocument_discoverydocument.cpp#5)]
+ [!code-csharp[DiscoveryDocument_DiscoveryDocument#5](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryDocument_DiscoveryDocument/CS/discoverydocument_discoverydocument.cs#5)]
+ [!code-vb[DiscoveryDocument_DiscoveryDocument#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryDocument_DiscoveryDocument/VB/discoverydocument_discoverydocument.vb#5)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -188,9 +270,20 @@
         <Parameter Name="stream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="stream">The <see cref="T:System.IO.Stream" /> into which this <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" /> is written.</param>
+        <summary>Writes this <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" /> into the passed <see cref="T:System.IO.Stream" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example writes a discovery document out to a file named `log.txt` using the <xref:System.Web.Services.Discovery.DiscoveryDocument.Write%2A> method.  
+  
+ [!code-cpp[DiscoveryDocument_Write1#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryDocument_Write1/CPP/discoverydocument_write1.cpp#1)]
+ [!code-csharp[DiscoveryDocument_Write1#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryDocument_Write1/CS/discoverydocument_write1.cs#1)]
+ [!code-vb[DiscoveryDocument_Write1#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryDocument_Write1/VB/discoverydocument_write1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -211,8 +304,19 @@
       </Parameters>
       <Docs>
         <param name="textWriter">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Writes this <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" /> into the passed <see cref="T:System.IO.TextWriter" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example writes a discovery document into a <xref:System.Xml.XmlTextWriter>.  
+  
+ [!code-cpp[DiscoveryDocument_Write2#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryDocument_Write2/CPP/discoverydocument_write2.cpp#1)]
+ [!code-csharp[DiscoveryDocument_Write2#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryDocument_Write2/CS/discoverydocument_write2.cs#1)]
+ [!code-vb[DiscoveryDocument_Write2#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryDocument_Write2/VB/discoverydocument_write2.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -233,8 +337,19 @@
       </Parameters>
       <Docs>
         <param name="xmlWriter">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Writes this <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" /> into the passed <see cref="T:System.Xml.XmlWriter" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example writes a discovery document into a <xref:System.Xml.XmlTextWriter>.  
+  
+ [!code-cpp[DiscoveryDocument_Write2#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryDocument_Write2/CPP/discoverydocument_write2.cpp#1)]
+ [!code-csharp[DiscoveryDocument_Write2#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryDocument_Write2/CS/discoverydocument_write2.cs#1)]
+ [!code-vb[DiscoveryDocument_Write2#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryDocument_Write2/VB/discoverydocument_write2.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

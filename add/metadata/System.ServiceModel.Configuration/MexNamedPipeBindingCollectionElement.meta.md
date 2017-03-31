@@ -1,14 +1,20 @@
 ---
 uid: System.ServiceModel.Configuration.MexNamedPipeBindingCollectionElement
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.MexNamedPipeBindingCollectionElement.GetDefault
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.MexNamedPipeBindingCollectionElement.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

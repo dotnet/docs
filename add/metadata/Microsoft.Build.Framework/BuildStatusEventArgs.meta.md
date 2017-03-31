@@ -1,24 +1,35 @@
 ---
 uid: Microsoft.Build.Framework.BuildStatusEventArgs
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.BuildStatusEventArgs.#ctor(System.String,System.String,System.String)
-internalonly: False
----
-
----
-uid: Microsoft.Build.Framework.BuildStatusEventArgs.#ctor(System.String,System.String,System.String,System.DateTime,System.Object[])
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.BuildStatusEventArgs.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
+---
+
+---
+uid: Microsoft.Build.Framework.BuildStatusEventArgs.#ctor(System.String,System.String,System.String,System.DateTime,System.Object[])
+ms.author: "susanno"
+manager: "douge"
+---
+
+---
+uid: Microsoft.Build.Framework.BuildStatusEventArgs.#ctor
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.BuildStatusEventArgs.#ctor(System.String,System.String,System.String,System.DateTime)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

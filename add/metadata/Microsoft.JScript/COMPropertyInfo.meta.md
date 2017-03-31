@@ -1,104 +1,129 @@
 ---
 uid: Microsoft.JScript.COMPropertyInfo
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMPropertyInfo.PropertyType
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMPropertyInfo.#ctor
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMPropertyInfo.GetSetMethod(System.Boolean)
-internalonly: False
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.COMPropertyInfo.SetValue
+---
+
+---
+uid: Microsoft.JScript.COMPropertyInfo.GetGetMethod
 ---
 
 ---
 uid: Microsoft.JScript.COMPropertyInfo.Name
-internalonly: False
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.COMPropertyInfo.GetAccessors
+---
+
+---
+uid: Microsoft.JScript.COMPropertyInfo.GetCustomAttributes
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.COMPropertyInfo.GetSetMethod
 ---
 
 ---
 uid: Microsoft.JScript.COMPropertyInfo.DeclaringType
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMPropertyInfo.GetGetMethod(System.Boolean)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMPropertyInfo.GetCOMMemberInfo
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMPropertyInfo.ReflectedType
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMPropertyInfo.GetCustomAttributes(System.Type,System.Boolean)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMPropertyInfo.GetAccessors(System.Boolean)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMPropertyInfo.CanWrite
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMPropertyInfo.MemberType
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMPropertyInfo.Attributes
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMPropertyInfo.Initialize(System.String,Microsoft.JScript.COMMemberInfo)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMPropertyInfo.CanRead
-internalonly: False
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.COMPropertyInfo.GetValue
 ---
 
 ---
 uid: Microsoft.JScript.COMPropertyInfo.GetCustomAttributes(System.Boolean)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMPropertyInfo.GetIndexParameters
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMPropertyInfo.IsDefined(System.Type,System.Boolean)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMPropertyInfo.SetValue(System.Object,System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMPropertyInfo.GetValue(System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)
-internalonly: False
+ms.author: "mikejo"
 ---

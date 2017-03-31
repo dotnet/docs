@@ -16,8 +16,34 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Declares the base type of the container control of a property that returns an <see cref="T:System.Web.UI.ITemplate" /> interface and is marked with the <see cref="T:System.Web.UI.TemplateContainerAttribute" /> attribute. The control with the <see cref="T:System.Web.UI.ITemplate" /> property must implement the <see cref="T:System.Web.UI.INamingContainer" /> interface. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Type> object that is passed in as a parameter of the <xref:System.Web.UI.TemplateContainerAttribute> object is used by the parser as the type of <xref:System.ComponentModel.Container> object that is used in data-binding expressions. The control whose property returns an <xref:System.Web.UI.ITemplate> interface and is marked with the <xref:System.Web.UI.TemplateContainerAttribute>, must implement the <xref:System.Web.UI.INamingContainer> interface.  
+  
+ For more information about using attributes, see [Attributes](../Topic/Extending%20Metadata%20Using%20Attributes.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a templated control named `TemplatedFirstControl` and associate it with a container named `FirstTemplateContainer`. This allows the creation of custom controls that display the server time when the template is not specified and the template's content when the template is specified.  
+  
+ [!code-csharp[SystemWebUI_TemplateContainerAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SystemWebUI_TemplateContainerAttribute/CS/templatecontainerattribute.cs#1)]
+ [!code-vb[SystemWebUI_TemplateContainerAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SystemWebUI_TemplateContainerAttribute/VB/templatecontainerattribute.vb#1)]  
+  
+ The following Web form demonstrates how to use the custom control created in the preceding code example. Two instances of the `TemplatedFirstControl` are placed on the page:  
+  
+-   The first instance includes the template `<FirstTemplate>`.  
+  
+-   The second instance does not include `<FirstTemplate>`; therefore, it shows just the time.  
+  
+ [!code-csharp[SystemWebUI_TemplateContainerAttribute#2](~/samples/snippets/csharp/VS_Snippets_WebNet/SystemWebUI_TemplateContainerAttribute/CS/templatecontainerattribute.aspx#2)]
+ [!code-vb[SystemWebUI_TemplateContainerAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SystemWebUI_TemplateContainerAttribute/VB/templatecontainerattribute.aspx#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,9 +59,19 @@
         <Parameter Name="containerType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="containerType">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="containerType">The <see cref="T:System.Type" /> for the container control.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.TemplateContainerAttribute" /> class using the specified container type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to create a templated control named `TemplatedFirstControl` and associate it with a container named `FirstTemplateContainer`. This allows the creation of custom controls that display the server time when the template is not specified and the template's content when the template is specified. The <xref:System.Web.UI.TemplateContainerAttribute> class is used for the `FirstTemplate` property.  
+  
+ [!code-csharp[SystemWebUI_TemplateContainerAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SystemWebUI_TemplateContainerAttribute/CS/templatecontainerattribute.cs#1)]
+ [!code-vb[SystemWebUI_TemplateContainerAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SystemWebUI_TemplateContainerAttribute/VB/templatecontainerattribute.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -52,9 +88,9 @@
         <Parameter Name="bindingDirection" Type="System.ComponentModel.BindingDirection" />
       </Parameters>
       <Docs>
-        <param name="containerType">To be added.</param>
-        <param name="bindingDirection">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="containerType">The <see cref="T:System.Type" /> for the container control.</param>
+        <param name="bindingDirection">The <see cref="P:System.Web.UI.TemplateContainerAttribute.BindingDirection" /> for the container control.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.TemplateContainerAttribute" /> class using the specified container type and the <see cref="P:System.Web.UI.TemplateContainerAttribute.BindingDirection" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,9 +107,28 @@
         <ReturnType>System.ComponentModel.BindingDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the binding direction of the container control.</summary>
+        <value>A <see cref="T:System.ComponentModel.BindingDirection" /> indicating the container control's binding direction. The default is <see cref="F:System.ComponentModel.BindingDirection.OneWay" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.TemplateContainerAttribute.BindingDirection%2A> property can be either the <xref:System.ComponentModel.BindingDirection> field, where the template can accept only property values or the <xref:System.ComponentModel.BindingDirection> field, where the template can accept and expose property values. In the latter scenario, data-bound controls automatically can use the update, delete, and insert operations of a data source using the `Bind` data-binding syntax.  
+  
+ For more information on data binding, see [Binding to Databases](http://msdn.microsoft.com/en-us/ab7b2846-975b-4057-a948-45527497c742) and [Data-Binding Expressions Overview](../Topic/Data-Binding%20Expressions%20Overview.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a templated control named `TemplatedFirstControl` and associate it with a container named `FirstTemplateContainer`. This allows the creation of custom controls that display the server time when the template is not specified and the contents of the template when the template is specified. The <xref:System.Attribute.GetCustomAttribute%2A> method determines the <xref:System.Web.UI.TemplateContainerAttribute.BindingDirection%2A> property of the `FirstTemplate` property of the `TemplateFirstControl`.  
+  
+ This code example is part of a larger example provided for the <xref:System.Web.UI.TemplateContainerAttribute> class.  
+  
+ [!code-csharp[SystemWebUI_TemplateContainerAttribute#3](~/samples/snippets/csharp/VS_Snippets_WebNet/SystemWebUI_TemplateContainerAttribute/CS/templatecontainerattribute.aspx#3)]
+ [!code-vb[SystemWebUI_TemplateContainerAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SystemWebUI_TemplateContainerAttribute/VB/templatecontainerattribute.aspx#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ContainerType">
@@ -89,9 +144,19 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the container control type.</summary>
+        <value>The container control <see cref="T:System.Type" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to create a templated control named `TemplatedFirstControl` and associate it with a container named `FirstTemplateContainer`. This allows the creation of custom controls that display the server time when the template is not specified and the template's content when the template is specified. The <xref:System.Web.UI.TemplateContainerAttribute> class is used for the `FirstTemplate` property and for specifying the <xref:System.Web.UI.TemplateContainerAttribute.ContainerType%2A> property as `FirstTemplateContainer`.  
+  
+ [!code-csharp[SystemWebUI_TemplateContainerAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SystemWebUI_TemplateContainerAttribute/CS/templatecontainerattribute.cs#1)]
+ [!code-vb[SystemWebUI_TemplateContainerAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SystemWebUI_TemplateContainerAttribute/VB/templatecontainerattribute.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

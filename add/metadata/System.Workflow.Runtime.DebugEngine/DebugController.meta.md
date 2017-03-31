@@ -1,14 +1,20 @@
 ---
 uid: System.Workflow.Runtime.DebugEngine.DebugController
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.DebugEngine.DebugController.AttachToConduit(System.Uri)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.DebugEngine.DebugController.InitializeLifetimeService
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

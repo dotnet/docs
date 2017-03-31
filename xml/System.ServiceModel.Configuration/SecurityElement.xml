@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a configuration element that specifies the security options for a custom binding. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.SecurityElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,8 +67,8 @@
         <Parameter Name="from" Type="System.ServiceModel.Configuration.ServiceModelExtensionElement" />
       </Parameters>
       <Docs>
-        <param name="from">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="from">A configuration element to be copied.</param>
+        <summary>Copies the content of the specified configuration element to this <see cref="T:System.ServiceModel.Configuration.SecurityElement" /> instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,8 +153,8 @@
         <ReturnType>System.ServiceModel.Configuration.SecurityElementBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a configuration element that specifies the default values used for initiating a secure conversation service.</summary>
+        <value>A <see cref="T:System.ServiceModel.Configuration.SecurityElementBase" /> object that specifies the default values used for initiating a secure conversation service.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

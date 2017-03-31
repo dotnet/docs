@@ -11,8 +11,40 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the metadata that describes a table for use by Dynamic Data pages.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example is part of the code-behind file for the Insert.aspx page template. The <xref:System.Web.DynamicData.MetaTable> instance is initialized in the `Page_Load` method. The title for the page is set to the table `DisplayName` property.  
+  
+```csharp  
+public partial class Insert : System.Web.UI.Page {  
+    protected MetaTable table;     
+  
+    protected void Page_Load(object sender, EventArgs e) {  
+        table = DetailsDataSource.GetTable();  
+        Title = table.DisplayName;  
+    }  
+}  
+```  
+  
+```vb  
+Partial Class Insert  
+    Inherits System.Web.UI.Page  
+  
+    Protected table As MetaTable      
+  
+    Protected Sub Page_Load(ByVal sender As Object, _  
+            ByVal e As EventArgs)  
+        table = DetailsDataSource.GetTable  
+        Title = table.DisplayName  
+    End Sub  
+End Class  
+```  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -29,10 +61,17 @@
         <Parameter Name="tableProvider" Type="System.Web.DynamicData.ModelProviders.TableProvider" />
       </Parameters>
       <Docs>
-        <param name="metaModel">To be added.</param>
-        <param name="tableProvider">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="metaModel">The entity meta model.</param>
+        <param name="tableProvider">The entity model provider.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.MetaTable" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `tableProvider` parameter is used to initialize the <xref:System.Web.DynamicData.MetaTable.DataContextPropertyName%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Attributes">
@@ -48,8 +87,8 @@
         <ReturnType>System.ComponentModel.AttributeCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the attributes that are associated with the table.</summary>
+        <value>A collection that contains the attributes of the table.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,8 +106,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates the attribute collection.</summary>
+        <returns>The attribute collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,10 +127,18 @@
         <Parameter Name="principal" Type="System.Security.Principal.IPrincipal" />
       </Parameters>
       <Docs>
-        <param name="principal">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="principal">The user's security context.</param>
+        <summary>Gets a value that indicates whether the specified user is allowed to perform delete operations.</summary>
+        <returns>
+          <see langword="true" /> if the user is allowed to perform delete operations; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A principal object represents the security context of the user on whose behalf the code is running, including that user's identity and any roles to which they belong.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CanInsert">
@@ -110,10 +157,18 @@
         <Parameter Name="principal" Type="System.Security.Principal.IPrincipal" />
       </Parameters>
       <Docs>
-        <param name="principal">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="principal">The user's security context.</param>
+        <summary>Gets a value that indicates whether the specified user is allowed to perform insert operations.</summary>
+        <returns>
+          <see langword="true" /> if the user is allowed to perform insert operations; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A principal object represents the security context of the user on whose behalf the code is running, including that user's identity and any roles to which they belong.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CanRead">
@@ -132,10 +187,18 @@
         <Parameter Name="principal" Type="System.Security.Principal.IPrincipal" />
       </Parameters>
       <Docs>
-        <param name="principal">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="principal">The user's security context.</param>
+        <summary>Gets a value that indicates whether the specified user is allowed to perform read operations.</summary>
+        <returns>
+          <see langword="true" /> if the user is allowed to perform read operations; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A principal object represents the security context of the user on whose behalf the code is running, including that user's identity and any roles to which they belong.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CanUpdate">
@@ -154,10 +217,18 @@
         <Parameter Name="principal" Type="System.Security.Principal.IPrincipal" />
       </Parameters>
       <Docs>
-        <param name="principal">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="principal">The user's security context.</param>
+        <summary>Gets a value that indicates whether the specified user is allowed to perform update operations.</summary>
+        <returns>
+          <see langword="true" /> if the user is allowed to perform update operations; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A principal object represents the security context of the user on whose behalf the code is running, including that user's identity and any roles to which they belong.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Columns">
@@ -173,9 +244,19 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Web.DynamicData.MetaColumn&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the column collection for the table.</summary>
+        <value>A collection that contains the columns for the table.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.DynamicData.MetaTable.Columns%2A> property. In the example, the Dynamic Data page templates have been copied to the \DynamicData\CustomPages\ProductDescriptions folder to provide a custom display for the ProductDescription table of the AdventureWorksLT database. The markup of the Insert.aspx file is changed to add an `OnDataBound` event handler named `DetailsView1_DataBound`. In the event handler, the <xref:System.Web.DynamicData.DynamicDataExtensions.FindMetaTable%2A> method is used to find the meta table. The <xref:System.Web.DynamicData.MetaTable.Columns%2A> property is used to display the number of columns in the table.  
+  
+ [!code-csharp[System.Web.DynamicData.DynamicDataExtensions#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.DynamicDataExtensions/cs/Insert.aspx.cs#1)]  
+[!code-csharp[System.Web.DynamicData.DynamicDataExtensions#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.DynamicDataExtensions/cs/Insert.aspx#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateChildrenColumn">
@@ -194,10 +275,17 @@
         <Parameter Name="columnProvider" Type="System.Web.DynamicData.ModelProviders.ColumnProvider" />
       </Parameters>
       <Docs>
-        <param name="columnProvider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="columnProvider">The column provider.</param>
+        <summary>Creates a new <see cref="T:System.Web.DynamicData.MetaChildrenColumn" /> object.</summary>
+        <returns>The new child metacolumn object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be overridden to create a derived type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateColumn">
@@ -216,10 +304,17 @@
         <Parameter Name="columnProvider" Type="System.Web.DynamicData.ModelProviders.ColumnProvider" />
       </Parameters>
       <Docs>
-        <param name="columnProvider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="columnProvider">The column provider.</param>
+        <summary>Creates a <see cref="T:System.Web.DynamicData.MetaColumn" /> object.</summary>
+        <returns>The new metacolumn object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be overridden to create a derived type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateContext">
@@ -236,9 +331,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the data context for the table.</summary>
+        <returns>The data context for the table.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The data context is retrieved from a new context that is instantiated by calling the <xref:System.Web.DynamicData.MetaTable.CreateContext%2A?displayProperty=fullName> method. For more information, see the <xref:System.Web.DynamicData.MetaTable?displayProperty=fullName> class overview.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateForeignKeyColumn">
@@ -257,10 +359,17 @@
         <Parameter Name="columnProvider" Type="System.Web.DynamicData.ModelProviders.ColumnProvider" />
       </Parameters>
       <Docs>
-        <param name="columnProvider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="columnProvider">The column provider.</param>
+        <summary>Creates an object that contains foreign-key metadata.</summary>
+        <returns>An object that contains foreign-key metadata.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be overridden to create a derived type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateTable">
@@ -279,9 +388,9 @@
         <Parameter Name="typeDescriptor" Type="System.ComponentModel.ICustomTypeDescriptor" />
       </Parameters>
       <Docs>
-        <param name="typeDescriptor">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="typeDescriptor">Information about the table type.</param>
+        <summary>Creates the metadata for the specified table.</summary>
+        <returns>An object that contains the table metadata.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -301,9 +410,9 @@
         <Parameter Name="entityType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="entityType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="entityType">The table type for which to generate metadata.</param>
+        <summary>Creates the metadata for the specified table.</summary>
+        <returns>An object that contains the table metadata.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -320,9 +429,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the name of the table.</summary>
+        <value>The name of the table.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The name comes from the <xref:System.Web.DynamicData.MetaTable.DataContextType%2A> object that the table belongs to.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataContextType">
@@ -338,9 +454,16 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the type of the data context that is associated with the table.</summary>
+        <value>The type of the data context.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see the <xref:System.Data.Linq.DataContext?displayProperty=fullName> class overview.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayColumn">
@@ -356,9 +479,26 @@
         <ReturnType>System.Web.DynamicData.MetaColumn</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the column that is used to display values when entries in this table are used as parents in foreign-key relationships.</summary>
+        <value>The column that is used to display values when entries in this table are used as parents in foreign-key relationships.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The column that is returned is selected in this order:  
+  
+1.  The column that is specified by using the <xref:System.ComponentModel.DataAnnotations.DisplayColumnAttribute> attribute.  
+  
+2.  The first string column that is not in the primary key.  
+  
+3.  The first string column that is in the primary key.  
+  
+4.  The first non-string column that is in the primary key.  
+  
+5.  The first column.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayName">
@@ -374,9 +514,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the name of the table in a user-friendly format.</summary>
+        <value>The string that represents the user-friendly name of the table.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of this property defaults to the value of the <xref:System.Web.DynamicData.MetaTable.Name%2A> property. You can customize the value of this property by using the <xref:System.ComponentModel.DisplayNameAttribute?displayProperty=fullName> attribute.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EntityType">
@@ -392,8 +539,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the entity type that represents the table.</summary>
+        <value>The type that represents the entity.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -410,8 +557,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a comma-separated list of foreign-key names.</summary>
+        <value>A comma-separated list of foreign-key names.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -431,10 +578,17 @@
         <Parameter Name="action" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="action">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="action">The name of the action.</param>
+        <summary>Returns the action path for the current table and the specified action.</summary>
+        <returns>The action path for the specified action.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The action path is a URL for an action for a specific entity. For more information, see the <xref:System.Web.DynamicData.PageAction?displayProperty=fullName> class overview.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetActionPath">
@@ -454,11 +608,18 @@
         <Parameter Name="primaryKeyValues" Type="System.Collections.Generic.IList&lt;System.Object&gt;" />
       </Parameters>
       <Docs>
-        <param name="action">To be added.</param>
-        <param name="primaryKeyValues">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="action">The name of the action.</param>
+        <param name="primaryKeyValues">The list of column values that make up the primary key.</param>
+        <summary>Returns the action path for the current table, specified action, and specified primary key.</summary>
+        <returns>The action path for the specified action and primary key.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The action path is a URL for an action for a specific entity. For more information, see the <xref:System.Web.DynamicData.PageAction?displayProperty=fullName> class overview.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetActionPath">
@@ -478,11 +639,20 @@
         <Parameter Name="row" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="action">To be added.</param>
-        <param name="row">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="action">The name of the action.</param>
+        <param name="row">The row to get the action path for.</param>
+        <summary>Returns the action path for the specified row by using the name of the action.</summary>
+        <returns>The action path for the specified row.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The action path is a URL for an action for a specific entity. The action path contains the primary-key column names, which can be used for query-string filters.  
+  
+ For more information, see the <xref:System.Web.DynamicData.PageAction?displayProperty=fullName> class overview.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetActionPath">
@@ -502,11 +672,18 @@
         <Parameter Name="routeValues" Type="System.Web.Routing.RouteValueDictionary" />
       </Parameters>
       <Docs>
-        <param name="action">To be added.</param>
-        <param name="routeValues">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="action">The name of the action.</param>
+        <param name="routeValues">The list of routes for the action.</param>
+        <summary>Returns the action path for the current table and for the specified action and routes.</summary>
+        <returns>The action path for the specified action and routes.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The action path is a URL for an action for a specific entity. For more information, see the <xref:System.Web.DynamicData.PageAction?displayProperty=fullName> class overview.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetActionPath">
@@ -527,12 +704,19 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="action">To be added.</param>
-        <param name="primaryKeyValues">To be added.</param>
-        <param name="path">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="action">The name of the action.</param>
+        <param name="primaryKeyValues">The list of column values that make up the primary key.</param>
+        <param name="path">The virtual path of the action.</param>
+        <summary>Appends query strings to the action path, based on the specified primary key and virtual path.</summary>
+        <returns>The action path for the specified primary key and virtual path, with query-string values appended to it.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The action path is a URL for an action for a specific entity. For more information, see the <xref:System.Web.DynamicData.PageAction?displayProperty=fullName> class overview.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetActionPath">
@@ -553,12 +737,19 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="action">To be added.</param>
-        <param name="row">To be added.</param>
-        <param name="path">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="action">The name of the action.</param>
+        <param name="row">An object that contains the row for the action path.</param>
+        <param name="path">The virtual path of the action.</param>
+        <summary>Returns the action path for the specified row by using the name of the action and the virtual path of the action.</summary>
+        <returns>The action path for the specified row.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The action path is a URL for an action for a specific entity. For more information, see the <xref:System.Web.DynamicData.PageAction?displayProperty=fullName> class overview.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetColumn">
@@ -577,9 +768,9 @@
         <Parameter Name="columnName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="columnName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="columnName">The name of the column to get metadata for.</param>
+        <summary>Returns the metadata for the specified column.</summary>
+        <returns>The column metadata.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -599,9 +790,9 @@
         <Parameter Name="context" Type="System.Web.HttpContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">The context for the specified Web request.</param>
+        <summary>Gets the collection of column values.</summary>
+        <returns>The collection of column values.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -619,9 +810,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Retrieves the primary key of the entity from the route values.</summary>
+        <returns>The primary-key values of the entities, if they are found; otherwise, <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The route values typically come from the request URL query string.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDisplayString">
@@ -640,10 +838,17 @@
         <Parameter Name="row" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="row">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="row">The row to get the display string for.</param>
+        <summary>Returns the value to use as the display string for an instance of a row when the row is used in foreign-key relationships.</summary>
+        <returns>The display name for an instance of a row.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the row is `null`, an empty string is returned. If the entity class includes an override of the <xref:System.Web.DynamicData.MetaTable.ToString%2A> method, the overridden <xref:System.Web.DynamicData.MetaTable.ToString%2A> value is returned. Otherwise, the method returns the `ToString` representation of the value of the <xref:System.Web.DynamicData.MetaTable.DisplayColumn%2A> property for the specified row.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetFilteredColumns">
@@ -660,9 +865,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Retrieves a list of columns that are filterable.</summary>
+        <returns>A list of columns that are filterable.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A column is filterable if it is annotated with the <xref:System.ComponentModel.DataAnnotations.DisplayColumnAttribute> attribute and the `Enabled` property of the <xref:System.Web.Mvc.FilterAttribute> attribute of the column is set to `true`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetPrimaryKeyDictionary">
@@ -681,10 +893,38 @@
         <Parameter Name="row" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="row">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="row">A row.</param>
+        <summary>Retrieves a dictionary of primary-key names and values for the specified row.</summary>
+        <returns>A dictionary of primary-key names and values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to create a primary-key dictionary.  
+  
+```csharp  
+private RouteValueDictionary GetRouteValues(MetaTable table, object row) {  
+    RouteValueDictionary routeValues = GetRouteValues();  
+    foreach (var pk in table.GetPrimaryKeyDictionary(row)) {  
+        routeValues[pk.Key] = pk.Value;  
+    }  
+    return routeValues;  
+}   
+```  
+  
+```vb  
+Private Function GetRouteValues(ByVal table As MetaTable, _  
+        ByVal row As Object) As RouteValueDictionary   
+    Dim routeValues As RouteValueDictionary = GetRouteValues()   
+    For Each pk In table.GetPrimaryKeyDictionary(row)   
+        routeValues(pk.Key) = pk.Value   
+    Next   
+    Return routeValues   
+End Function   
+```  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetPrimaryKeyString">
@@ -703,9 +943,9 @@
         <Parameter Name="primaryKeyValues" Type="System.Collections.Generic.IList&lt;System.Object&gt;" />
       </Parameters>
       <Docs>
-        <param name="primaryKeyValues">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="primaryKeyValues">The list of column values that make up the primary key.</param>
+        <summary>Returns a comma-separated list of column values that represent the primary key for the specified row.</summary>
+        <returns>A comma-separated list of column values. If the list is empty, an empty string is returned.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -725,9 +965,9 @@
         <Parameter Name="row" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="row">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="row">The row to get the primary key for.</param>
+        <summary>Returns a comma-separated list of column values that represent the primary key for the specified row.</summary>
+        <returns>A comma-separated list of column values that represent the primary key for the row.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -747,9 +987,9 @@
         <Parameter Name="row" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="row">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="row">The row to get the primary key for.</param>
+        <summary>Returns a collection of column values that represent the primary key for the specified row.</summary>
+        <returns>A collection of column values that represent the primary key for the row.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -767,8 +1007,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the <see cref="T:System.Linq.IQueryable" /> instance for the entity type that represents the table.</summary>
+        <returns>The <see cref="T:System.Linq.IQueryable" /> instance for the entity type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -788,10 +1028,17 @@
         <Parameter Name="context" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="context">The context of the <see cref="T:System.Web.DynamicData.MetaTable" /> object.</param>
+        <summary>Returns the <see cref="T:System.Linq.IQueryable" /> instance for the entity type that represents the table by using the data context.</summary>
+        <returns>The <see cref="T:System.Linq.IQueryable" /> instance for the entity type that represents the table in the data context.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the `context` parameter is `null`, this method creates a new context by calling the <xref:System.Web.DynamicData.MetaTable.CreateContext%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetScaffoldColumns">
@@ -811,11 +1058,22 @@
         <Parameter Name="containerType" Type="System.Web.DynamicData.ContainerType" />
       </Parameters>
       <Docs>
-        <param name="mode">To be added.</param>
-        <param name="containerType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="mode">The data-bound control mode.</param>
+        <param name="containerType">A value that indicates whether the table is displayed as an individual entity or as part of a list of entities.</param>
+        <summary>Returns a list of columns to display by using scaffolding.</summary>
+        <returns>A list of columns to display by using scaffolding.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns all columns whose <xref:System.ComponentModel.DataAnnotations.ScaffoldColumnAttribute> property is set to `true` except the following:  
+  
+-   Long string columns, which are columns whose <xref:System.Web.DynamicData.MetaColumn.IsLongString%2A> property is set to `true` and whose `containerType` parameter is `true`.  
+  
+-   Child columns whose <xref:System.Web.UI.WebControls.DataBoundControlMode> value is set to <xref:System.Web.UI.WebControls.DataBoundControlMode>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTable">
@@ -834,10 +1092,18 @@
         <Parameter Name="entityType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="entityType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="entityType">The type of the entity.</param>
+        <summary>Retrieves the metatable that is associated with the specified type.</summary>
+        <returns>The metatable that is associated with the specified type.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method calls <xref:System.Web.DynamicData.MetaTable.TryGetTable%28System.Type%2CSystem.Web.DynamicData.MetaTable%40%29>. If <xref:System.Web.DynamicData.MetaTable.TryGetTable%28System.Type%2CSystem.Web.DynamicData.MetaTable%40%29> returns `false`, an <xref:System.InvalidOperationException> exception is thrown.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="M:System.Web.DynamicData.MetaTable.TryGetTable(System.Type,System.Web.DynamicData.MetaTable@)" /> method that was called by this method returned <see langword="false" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="HasPrimaryKey">
@@ -853,8 +1119,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the table has a primary key.</summary>
+        <value>
+          <see langword="true" /> if the table has a primary key; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -872,8 +1139,34 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes data that may not be available when the constructor is called.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method calls the <xref:System.Web.DynamicData.MetaColumn.Initialize%2A> method for each column in the <xref:System.Web.DynamicData.MetaTable> instance. This method cannot be called directly. To customize initialization, you can derive from this class and override the <xref:System.Web.DynamicData.MetaColumn.Initialize%2A> method. If you override this method, call the base control's `Initialize` method.  
+  
+   
+  
+## Examples  
+ The following example shows how to override the <xref:System.Web.DynamicData.MetaColumn.Initialize%2A> method in order to customize the initialization process.  
+  
+```csharp  
+protected  override void Initialize() {  
+    base.Initialize();  
+    MyOverridenInit();  
+}  
+```  
+  
+```vb  
+Protected Overloads Overrides Sub Initialize()   
+    MyBase.Initialize()   
+    MyOverridenInit()   
+End Sub  
+```  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -889,8 +1182,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the table is read-only.</summary>
+        <value>
+          <see langword="true" /> if the table is read-only; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -907,9 +1201,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the action path of the list action for the table.</summary>
+        <value>The action path of the list action for the table.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The action path is a URL for an action for a specific entity. For more information, see the <xref:System.Web.DynamicData.PageAction?displayProperty=fullName> class overview.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Model">
@@ -925,9 +1226,16 @@
         <ReturnType>System.Web.DynamicData.MetaModel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the meta model that the table belongs to.</summary>
+        <value>The meta model that the table belongs to.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see the <xref:System.Data.Linq.Mapping.MetaModel?displayProperty=fullName> class overview.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -943,8 +1251,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the unique name of the table.</summary>
+        <value>The unique name of the table.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -961,8 +1269,8 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Web.DynamicData.MetaColumn&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the collection of columns that define the primary key.</summary>
+        <value>A collection that contains the primary-key columns.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -979,8 +1287,8 @@
         <ReturnType>System.Web.DynamicData.ModelProviders.TableProvider</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the provider for the table.</summary>
+        <value>The provider for the table.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -998,8 +1306,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Resets the cached metadata for the table.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The cached table metadata consists of the information that is obtained from data-model attributes and from metadata about intrinsic columns. The metadata cache is rebuilt the next time any metadata is requested.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RootEntityType">
@@ -1015,9 +1330,16 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the root type of the entity's inheritance hierarchy.</summary>
+        <value>The root type of the entity's inheritance hierarchy.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the type is at the top of the inheritance hierarchy or does not have a parent type, the entity type is returned.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Scaffold">
@@ -1033,8 +1355,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether the table should be displayed.</summary>
+        <value>
+          <see langword="true" /> if the table should be displayed; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1051,8 +1374,8 @@
         <ReturnType>System.Web.DynamicData.MetaColumn</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Web.DynamicData.MetaColumn" /> value that the table is sorted by.</summary>
+        <value>The column that the table is sorted by.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1069,9 +1392,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether entries are sorted in descending order when they are used as parents in a foreign-key relationship.</summary>
+        <value>
+          <see langword="true" /> if entries are sorted in descending order; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can specify sort order by using the <xref:System.ComponentModel.DataAnnotations.DisplayColumnAttribute?displayProperty=fullName> attribute.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1088,8 +1419,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the name of the table.</summary>
+        <returns>The name of the table.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1110,11 +1441,19 @@
         <Parameter Name="column" Type="System.Web.DynamicData.MetaColumn&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="columnName">To be added.</param>
-        <param name="column">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="columnName">The name of the column to find.</param>
+        <param name="column">When this method returns, contains the <see langword="MetaColumn" /> object for <c>columnName</c>. This parameter is passed uninitialized.</param>
+        <summary>Returns a value that indicates whether a specified column can be found.</summary>
+        <returns>
+          <see langword="true" /> if the specified column can be found; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the `columnName` parameter is null, an <xref:System.InvalidOperationException> exception is thrown.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TryGetTable">
@@ -1134,12 +1473,31 @@
         <Parameter Name="table" Type="System.Web.DynamicData.MetaTable&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="entityType">To be added.</param>
-        <param name="table">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="entityType">The type of the entity.</param>
+        <param name="table">When this method returns, contains the metatable that is associated with the specified type. This parameter is passed uninitialized.</param>
+        <summary>Retrieves the metatable that is associated with the specified type and table.</summary>
+        <returns>The metatable that is associated with the given specified and table.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="entityType" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetActionPath">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the action path for the specified row.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The action path is a URL for an action for a specific entity. For more information, see the <xref:System.Web.DynamicData.PageAction?displayProperty=fullName> class overview.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -16,8 +16,26 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies whether the recipient of the <see cref="T:System.Web.Services.Protocols.SoapHeader" /> is the XML Web service, the XML Web service client, or both.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Web.Services.Protocols.SoapHeaderAttribute> can be applied to either an XML Web service method or a method of a proxy class to an XML Web service. In either case, the recipient(s) are specified by the <xref:System.Web.Services.Protocols.SoapHeaderAttribute.Direction%2A> property of <xref:System.Web.Services.Protocols.SoapHeaderAttribute>. To specify that an XML Web service method returns a SOAP header when an exception is thrown during its execution, apply an <xref:System.Web.Services.Protocols.SoapHeaderAttribute> to the method and set the <xref:System.Web.Services.Protocols.SoapHeaderAttribute.Direction%2A> property to Fault.  
+  
+ Version 1.0 of the .NET Framework does not support the Fault value.  
+  
+   
+  
+## Examples  
+ The following XML Web service method specifies that the `myHeader`<xref:System.Web.Services.Protocols.SoapHeader> is sent from the XML Web service client to the XML Web service and then back to the XML Web service client, regardless of an exception thrown during execution of the XML Web service method.  
+  
+ [!code-cpp[Classic SoapHeaderDirection Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic SoapHeaderDirection Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic SoapHeaderDirection Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic SoapHeaderDirection Example/CS/source.cs#1)]
+ [!code-vb[Classic SoapHeaderDirection Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic SoapHeaderDirection Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Fault">
@@ -34,7 +52,7 @@
         <ReturnType>System.Web.Services.Protocols.SoapHeaderDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the <see cref="T:System.Web.Services.Protocols.SoapHeader" /> is sent to the XML Web service client when an exception is thrown by the XML Web service method.</summary>
       </Docs>
     </Member>
     <Member MemberName="In">
@@ -51,7 +69,7 @@
         <ReturnType>System.Web.Services.Protocols.SoapHeaderDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the <see cref="T:System.Web.Services.Protocols.SoapHeader" /> is sent to the XML Web service.</summary>
       </Docs>
     </Member>
     <Member MemberName="InOut">
@@ -68,7 +86,7 @@
         <ReturnType>System.Web.Services.Protocols.SoapHeaderDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the <see cref="T:System.Web.Services.Protocols.SoapHeader" /> is sent to both the XML Web service and the XML Web service client.</summary>
       </Docs>
     </Member>
     <Member MemberName="Out">
@@ -85,7 +103,7 @@
         <ReturnType>System.Web.Services.Protocols.SoapHeaderDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the <see cref="T:System.Web.Services.Protocols.SoapHeader" /> is sent to the XML Web service client.</summary>
       </Docs>
     </Member>
   </Members>

@@ -15,8 +15,26 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies attributes of print queues.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use these values with the <xref:System.Printing.PrintServer.GetPrintQueues%2A> method to list subsets of available print queues.  
+  
+ PushedMachineConnection and PushedUserConnection refer to policies that enable automated connection of machines and users to printers. See the section "Deploying Printers to Users or Computers by Using Group Policy" in the [Step-by-Step Guide for Print Management](http://technet2.microsoft.com/WindowsServer/en/Library/312b10cb-73ec-40c7-a4df-63dd7248d93d1033.mspx).  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Printing.EnumeratedPrintQueueTypes> enumeration to get a subset of available print queues.  
+  
+ [!code-cpp[EnumerateSubsetOfPrintQueues#ListSubsetOfPrintQueues](~/samples/snippets/cpp/VS_Snippets_Wpf/EnumerateSubsetOfPrintQueues/CPP/Program.cpp#listsubsetofprintqueues)]
+ [!code-csharp[EnumerateSubsetOfPrintQueues#ListSubsetOfPrintQueues](~/samples/snippets/csharp/VS_Snippets_Wpf/EnumerateSubsetOfPrintQueues/CSharp/Program.cs#listsubsetofprintqueues)]
+ [!code-vb[EnumerateSubsetOfPrintQueues#ListSubsetOfPrintQueues](~/samples/snippets/visualbasic/VS_Snippets_Wpf/EnumerateSubsetOfPrintQueues/visualbasic/program.vb#listsubsetofprintqueues)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Connections">
@@ -32,7 +50,7 @@
         <ReturnType>System.Printing.EnumeratedPrintQueueTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A print queue that is connected to the specified print server.</summary>
       </Docs>
     </Member>
     <Member MemberName="DirectPrinting">
@@ -48,7 +66,7 @@
         <ReturnType>System.Printing.EnumeratedPrintQueueTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A print queue that sends a print job directly to printing instead of spooling the job first.</summary>
       </Docs>
     </Member>
     <Member MemberName="EnableBidi">
@@ -64,7 +82,7 @@
         <ReturnType>System.Printing.EnumeratedPrintQueueTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A print queue for a printer that has bidirectional communication enabled.</summary>
       </Docs>
     </Member>
     <Member MemberName="EnableDevQuery">
@@ -80,7 +98,7 @@
         <ReturnType>System.Printing.EnumeratedPrintQueueTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A print queue that holds its print jobs when the document and printer configurations do not match.</summary>
       </Docs>
     </Member>
     <Member MemberName="Fax">
@@ -96,7 +114,7 @@
         <ReturnType>System.Printing.EnumeratedPrintQueueTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A print queue that services a fax machine.</summary>
       </Docs>
     </Member>
     <Member MemberName="KeepPrintedJobs">
@@ -112,7 +130,7 @@
         <ReturnType>System.Printing.EnumeratedPrintQueueTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A print queue that keeps jobs in the queue after printing them.</summary>
       </Docs>
     </Member>
     <Member MemberName="Local">
@@ -128,7 +146,7 @@
         <ReturnType>System.Printing.EnumeratedPrintQueueTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A print queue that is installed as a local print queue on the specified print server.</summary>
       </Docs>
     </Member>
     <Member MemberName="PublishedInDirectoryServices">
@@ -144,7 +162,7 @@
         <ReturnType>System.Printing.EnumeratedPrintQueueTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A print queue that is visible in the directory of printers.</summary>
       </Docs>
     </Member>
     <Member MemberName="PushedMachineConnection">
@@ -160,7 +178,7 @@
         <ReturnType>System.Printing.EnumeratedPrintQueueTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A print queue that was installed by using the Push Printer Connections computer policy. See Remarks.</summary>
       </Docs>
     </Member>
     <Member MemberName="PushedUserConnection">
@@ -176,7 +194,7 @@
         <ReturnType>System.Printing.EnumeratedPrintQueueTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A print queue that was installed by using the Push Printer Connections user policy. See Remarks.</summary>
       </Docs>
     </Member>
     <Member MemberName="Queued">
@@ -192,7 +210,7 @@
         <ReturnType>System.Printing.EnumeratedPrintQueueTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A print queue that allows multiple print jobs in the queue.</summary>
       </Docs>
     </Member>
     <Member MemberName="RawOnly">
@@ -208,7 +226,7 @@
         <ReturnType>System.Printing.EnumeratedPrintQueueTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A print queue that spools only raw data.</summary>
       </Docs>
     </Member>
     <Member MemberName="Shared">
@@ -224,7 +242,7 @@
         <ReturnType>System.Printing.EnumeratedPrintQueueTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A print queue that is shared.</summary>
       </Docs>
     </Member>
     <Member MemberName="TerminalServer">
@@ -240,7 +258,7 @@
         <ReturnType>System.Printing.EnumeratedPrintQueueTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A print queue that is installed by the redirection feature in Terminal Services.</summary>
       </Docs>
     </Member>
     <Member MemberName="WorkOffline">
@@ -256,7 +274,7 @@
         <ReturnType>System.Printing.EnumeratedPrintQueueTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A print queue that can work offline.</summary>
       </Docs>
     </Member>
   </Members>

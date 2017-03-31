@@ -1,14 +1,20 @@
 ---
 uid: System.Web.UI.MobileControls.Adapters.ChtmlPhoneCallAdapter
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.Adapters.ChtmlPhoneCallAdapter.#ctor
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.Adapters.ChtmlPhoneCallAdapter.AddAttributes(System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

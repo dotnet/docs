@@ -1,19 +1,27 @@
 ---
 uid: System.Windows.Ink.DrawingAttributesReplacedEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.DrawingAttributesReplacedEventArgs.NewDrawingAttributes
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.DrawingAttributesReplacedEventArgs.#ctor(System.Windows.Ink.DrawingAttributes,System.Windows.Ink.DrawingAttributes)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.DrawingAttributesReplacedEventArgs.PreviousDrawingAttributes
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

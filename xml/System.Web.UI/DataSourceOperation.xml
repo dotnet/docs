@@ -10,8 +10,17 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies a data operation performed by a data source control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataSourceOperation> enumeration represents the actions that a data source control can perform on its underlying data. Data source controls such as <xref:System.Web.UI.WebControls.SqlDataSource> and <xref:System.Web.UI.WebControls.ObjectDataSource> use these enumeration values to track the type of operation being performed.  
+  
+ The five major data source operations are represented by the <xref:System.Web.UI.DataSourceOperation> enumeration. The Select and SelectCount values indicate operations that retrieve data from an underlying data source, while the Delete, Insert, and Update values indicate operations that modify data.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Delete">
@@ -27,7 +36,7 @@
         <ReturnType>System.Web.UI.DataSourceOperation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The operation deletes records from a data source.</summary>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -43,7 +52,7 @@
         <ReturnType>System.Web.UI.DataSourceOperation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The operation inserts one or more records into a data source.</summary>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -59,7 +68,7 @@
         <ReturnType>System.Web.UI.DataSourceOperation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The operation retrieves records from a data source.</summary>
       </Docs>
     </Member>
     <Member MemberName="SelectCount">
@@ -75,7 +84,7 @@
         <ReturnType>System.Web.UI.DataSourceOperation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The operation retrieves the total number of records for a query from the data source.</summary>
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -91,7 +100,7 @@
         <ReturnType>System.Web.UI.DataSourceOperation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The operation updates records in a data source.</summary>
       </Docs>
     </Member>
   </Members>

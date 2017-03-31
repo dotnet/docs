@@ -1,9 +1,13 @@
 ---
 uid: System.Diagnostics.DebuggerStepperBoundaryAttribute
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.DebuggerStepperBoundaryAttribute.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

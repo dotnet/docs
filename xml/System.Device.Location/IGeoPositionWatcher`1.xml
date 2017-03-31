@@ -11,9 +11,16 @@
   </TypeParameters>
   <Interfaces />
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="T">The type of the object that contains the location data.</typeparam>
+    <summary>Interface that can be implemented for providing accessing location data and receiving location updates.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Device.Location.GeoCoordinateWatcher> class implements <xref:System.Device.Location.IGeoPositionWatcher%601>, using <xref:System.Device.Location.GeoCoordinate> as the type parameter.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Position">
@@ -29,8 +36,8 @@
         <ReturnType>System.Device.Location.GeoPosition&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the location data.</summary>
+        <value>The <see cref="T:System.Device.Location.GeoPosition`1" /> containing the location data.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,7 +54,7 @@
         <ReturnType>System.EventHandler&lt;System.Device.Location.GeoPositionChangedEventArgs&lt;T&gt;&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the <see cref="P:System.Device.Location.IGeoPositionWatcher`1.Position" /> property has changed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,7 +72,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initiate the acquisition of location data.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,8 +92,10 @@
         <Parameter Name="suppressPermissionPrompt" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="suppressPermissionPrompt">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="suppressPermissionPrompt">If <see langword="true" />, do not prompt the user to enable location providers and only start if location data is already enabled.  
+  
+ If <see langword="false" />, a dialog box may be displayed to prompt the user to enable location sensors that are disabled.</param>
+        <summary>Start acquiring location data, specifying whether or not to suppress prompting for permissions. This method returns synchronously.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,8 +112,8 @@
         <ReturnType>System.Device.Location.GeoPositionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the status of location data.</summary>
+        <value>The status of location data.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,7 +130,7 @@
         <ReturnType>System.EventHandler&lt;System.Device.Location.GeoPositionStatusChangedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the <see cref="P:System.Device.Location.IGeoPositionWatcher`1.Status" /> property changes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -139,7 +148,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stop acquiring location data.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,10 +169,13 @@
         <Parameter Name="timeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="suppressPermissionPrompt">To be added.</param>
-        <param name="timeout">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="suppressPermissionPrompt">If <see langword="true" />, do not prompt the user to enable location providers and only start if location data is already enabled.  
+  
+ If <see langword="false" />, a dialog box may be displayed to prompt the user to enable location sensors that are disabled.</param>
+        <param name="timeout">Time in milliseconds to wait for initialization to complete.</param>
+        <summary>Start acquiring location data, specifying an initialization timeout. This method returns synchronously.</summary>
+        <returns>
+          <see langword="true" /> if succeeded, <see langword="false" /> if timed out.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,14 +1,17 @@
 ---
 uid: Microsoft.Build.Framework.RequiredRuntimeAttribute
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.RequiredRuntimeAttribute.#ctor(System.String)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.RequiredRuntimeAttribute.RuntimeVersion
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

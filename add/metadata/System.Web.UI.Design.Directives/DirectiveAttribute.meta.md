@@ -1,39 +1,47 @@
 ---
 uid: System.Web.UI.Design.Directives.DirectiveAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.Directives.DirectiveAttribute.AllowedOnMobilePages
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.Directives.DirectiveAttribute.Culture
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.Directives.DirectiveAttribute.ServerLanguageNames
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.Directives.DirectiveAttribute.BuilderType
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.Directives.DirectiveAttribute.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.Directives.DirectiveAttribute.ServerLanguageExtensions
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.Directives.DirectiveAttribute.RenameType
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

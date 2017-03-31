@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the navigation from one entity type to another entity type in the conceptual model .</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about how to use the <xref:System.Data.Metadata.Edm.NavigationProperty> in a conceptual model, see [NavigationProperty Element (CSDL)](http://msdn.microsoft.com/en-us/5829a238-a50e-4c81-901d-7b54fc00f27e).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="BuiltInTypeKind">
@@ -28,8 +35,8 @@
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the built-in type kind for this <see cref="T:System.Data.Metadata.Edm.NavigationProperty" />.</summary>
+        <value>A <see cref="T:System.Data.Metadata.Edm.BuiltInTypeKind" /> object that represents the built-in type kind for this <see cref="T:System.Data.Metadata.Edm.NavigationProperty" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +53,8 @@
         <ReturnType>System.Data.Metadata.Edm.RelationshipEndMember</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the "from" relationship end member in this navigation.</summary>
+        <value>The "from" relationship end member in this navigation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,9 +72,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets the foreign key properties for a navigation property that is on the dependent end of a referential constraint.</summary>
+        <returns>A collection of the foreign key properties.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For a navigation property that is on the dependent end of a referential constraint, the <xref:System.Data.Metadata.Edm.NavigationProperty.GetDependentProperties%2A> method returns the corresponding foreign key properties. The returned properties will be in the same order as the principal end key properties.  
+  
+ If the navigation property is not on the dependent end of a referential constraint, the <xref:System.Data.Metadata.Edm.NavigationProperty.GetDependentProperties%2A> method returns an empty collection.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RelationshipType">
@@ -83,8 +99,8 @@
         <ReturnType>System.Data.Metadata.Edm.RelationshipType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the relationship type that this navigation property operates on.</summary>
+        <value>The relationship type that this navigation property operates on.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,8 +117,8 @@
         <ReturnType>System.Data.Metadata.Edm.RelationshipEndMember</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the "to" relationship end member of this navigation.</summary>
+        <value>The "to" relationship end member of this navigation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

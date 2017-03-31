@@ -11,8 +11,32 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a set of static predefined <see cref="T:System.Windows.FontStretch" /> values.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A font stretch describes the degree to which a font form is stretched from its normal aspect ratio, which is the original width to height ratio specified for the glyphs in the font.  
+  
+ The <xref:System.Windows.FontStretches> values correspond to the `usWidthClass` definition in the [!INCLUDE[TLA2#tla_opentype](~/includes/tla2sharptla-opentype-md.md)] specification. The `usWidthClass` represents an integer value between 1 and 9. Lower numeric values indicate narrower widths; higher values indicate wider widths.  
+  
+|Font stretch|usWidthClass|% of normal|  
+|------------------|------------------|-----------------|  
+|<xref:System.Windows.FontStretches.UltraCondensed%2A>|1|50%|  
+|<xref:System.Windows.FontStretches.ExtraCondensed%2A>|2|62.5%|  
+|<xref:System.Windows.FontStretches.Condensed%2A>|3|75%|  
+|<xref:System.Windows.FontStretches.SemiCondensed%2A>|4|87.5%|  
+|<xref:System.Windows.FontStretches.Normal%2A>|5|100%|  
+|<xref:System.Windows.FontStretches.Medium%2A>|5|100%|  
+|<xref:System.Windows.FontStretches.SemiExpanded%2A>|6|112.5%|  
+|<xref:System.Windows.FontStretches.Expanded%2A>|7|125%|  
+|<xref:System.Windows.FontStretches.ExtraExpanded%2A>|8|150%|  
+|<xref:System.Windows.FontStretches.UltraExpanded%2A>|9|200%|  
+  
+ For more information on the [!INCLUDE[TLA#tla_opentype](~/includes/tlasharptla-opentype-md.md)] `usWidthClass` value, see the ["Font File Tables"](http://www.microsoft.com/typography/otspec/otff.htm) section of the [!INCLUDE[TLA2#tla_opentype](~/includes/tla2sharptla-opentype-md.md)] specification.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Condensed">
@@ -28,9 +52,16 @@
         <ReturnType>System.Windows.FontStretch</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Specifies a condensed <see cref="T:System.Windows.FontStretch" />.</summary>
+        <value>A value that represents a condensed <see cref="T:System.Windows.FontStretch" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.FontStretches.Condensed%2A> represents 75% of the normal aspect ratio of the font form.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Expanded">
@@ -46,9 +77,16 @@
         <ReturnType>System.Windows.FontStretch</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Specifies an expanded <see cref="T:System.Windows.FontStretch" />.</summary>
+        <value>A value that represents an expanded <see cref="T:System.Windows.FontStretch" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.FontStretches.Expanded%2A> represents 125% of the normal aspect ratio of the font form.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ExtraCondensed">
@@ -64,9 +102,16 @@
         <ReturnType>System.Windows.FontStretch</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Specifies an extra-condensed <see cref="T:System.Windows.FontStretch" />.</summary>
+        <value>A value that represents an extra-condensed <see cref="T:System.Windows.FontStretch" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.FontStretches.ExtraCondensed%2A> represents 62.5% of the normal aspect ratio of the font form.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ExtraExpanded">
@@ -82,9 +127,16 @@
         <ReturnType>System.Windows.FontStretch</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Specifies an extra-expanded <see cref="T:System.Windows.FontStretch" />.</summary>
+        <value>A value that represents an extra-expanded <see cref="T:System.Windows.FontStretch" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.FontStretches.ExtraExpanded%2A> represents 150% of the normal aspect ratio of the font form.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Medium">
@@ -100,9 +152,16 @@
         <ReturnType>System.Windows.FontStretch</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Specifies a medium <see cref="T:System.Windows.FontStretch" />.</summary>
+        <value>A value that represents a medium <see cref="T:System.Windows.FontStretch" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.FontStretches.Medium%2A> represents the normal (100%) aspect ratio of the font form. The value of <xref:System.Windows.FontStretches.Medium%2A> is equivalent to the value of <xref:System.Windows.FontStretches.Normal%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Normal">
@@ -118,9 +177,16 @@
         <ReturnType>System.Windows.FontStretch</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Specifies a normal <see cref="T:System.Windows.FontStretch" />.</summary>
+        <value>A value that represents a normal <see cref="T:System.Windows.FontStretch" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.FontStretches.Normal%2A> represents the normal (100%) aspect ratio of the font form. The value of <xref:System.Windows.FontStretches.Normal%2A> is equivalent to the value of <xref:System.Windows.FontStretches.Medium%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SemiCondensed">
@@ -136,9 +202,16 @@
         <ReturnType>System.Windows.FontStretch</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Specifies a semi-condensed <see cref="T:System.Windows.FontStretch" />.</summary>
+        <value>A value that represents a semi-condensed <see cref="T:System.Windows.FontStretch" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.FontStretches.SemiCondensed%2A> represents 87.5% of the normal aspect ratio of the font form.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SemiExpanded">
@@ -154,9 +227,16 @@
         <ReturnType>System.Windows.FontStretch</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Specifies a semi-expanded <see cref="T:System.Windows.FontStretch" />.</summary>
+        <value>A value that represents a semi-expanded <see cref="T:System.Windows.FontStretch" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.FontStretches.SemiExpanded%2A> represents 112.5% of the normal aspect ratio of the font form.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UltraCondensed">
@@ -172,9 +252,16 @@
         <ReturnType>System.Windows.FontStretch</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Specifies an ultra-condensed <see cref="T:System.Windows.FontStretch" />.</summary>
+        <value>A value that represents an ultra-condensed <see cref="T:System.Windows.FontStretch" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.FontStretches.UltraCondensed%2A> represents 50% of the normal aspect ratio of the font form.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UltraExpanded">
@@ -190,9 +277,16 @@
         <ReturnType>System.Windows.FontStretch</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Specifies an ultra-expanded <see cref="T:System.Windows.FontStretch" />.</summary>
+        <value>A value that represents an ultra-expanded <see cref="T:System.Windows.FontStretch" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.FontStretches.UltraExpanded%2A> represents 200% of the normal aspect ratio of the font form.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,14 +1,20 @@
 ---
 uid: System.Windows.Forms.FormClosedEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.FormClosedEventArgs.#ctor(System.Windows.Forms.CloseReason)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.FormClosedEventArgs.CloseReason
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

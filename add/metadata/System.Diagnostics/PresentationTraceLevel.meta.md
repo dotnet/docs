@@ -1,4 +1,6 @@
 ---
 uid: System.Diagnostics.PresentationTraceLevel
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -1,34 +1,56 @@
 ---
 uid: System.Dynamic.UnaryOperationBinder
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Dynamic.UnaryOperationBinder.FallbackUnaryOperation(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject)
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+
+---
+uid: System.Dynamic.UnaryOperationBinder.Bind
+---
+
+---
+uid: System.Dynamic.UnaryOperationBinder.FallbackUnaryOperation
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Dynamic.UnaryOperationBinder.ReturnType
-internalonly: False
+ms.author: "billchi"
+manager: "douge"
 ---
 
 ---
 uid: System.Dynamic.UnaryOperationBinder.FallbackUnaryOperation(System.Dynamic.DynamicMetaObject)
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Dynamic.UnaryOperationBinder.#ctor(System.Linq.Expressions.ExpressionType)
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Dynamic.UnaryOperationBinder.Operation
-internalonly: False
+ms.author: "billchi"
+manager: "douge"
 ---
 
 ---
 uid: System.Dynamic.UnaryOperationBinder.Bind(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject[])
-internalonly: False
+ms.author: "billchi"
+manager: "douge"
 ---

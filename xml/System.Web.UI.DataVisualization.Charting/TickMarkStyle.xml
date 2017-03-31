@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies a tick mark style when setting the <see cref="P:System.Web.UI.DataVisualization.Charting.TickMark.TickMarkStyle" /> property of a <see cref="T:System.Web.UI.DataVisualization.Charting.TickMark" /> object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataVisualization.Charting.TickMarkStyle> enumeration represents the styles for major and minor tick marks.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AcrossAxis">
@@ -27,7 +34,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.TickMarkStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Tick marks are drawn across the relevant axis line.</summary>
       </Docs>
     </Member>
     <Member MemberName="InsideArea">
@@ -43,7 +50,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.TickMarkStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Tick marks are drawn inside the chart area.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -59,7 +66,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.TickMarkStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Tick marks are disabled.</summary>
       </Docs>
     </Member>
     <Member MemberName="OutsideArea">
@@ -75,7 +82,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.TickMarkStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Tick marks are drawn outside the chart area.</summary>
       </Docs>
     </Member>
   </Members>

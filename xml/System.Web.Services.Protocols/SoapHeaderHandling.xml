@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.Web.Services.Protocols.SoapHeaderHandling" /> class is used to get, set, write, and read SOAP header content to and from SOAP messages.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of <see cref="T:System.Web.Services.Protocols.SoapHeaderHandling" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,9 +46,10 @@
         <Parameter Name="headers" Type="System.Web.Services.Protocols.SoapHeaderCollection" />
       </Parameters>
       <Docs>
-        <param name="headers">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="headers">The <see cref="T:System.Web.Services.Protocols.SoapHeaderCollection" /> that contains the SOAP headers.</param>
+        <summary>Checks to ensure that the SOAP headers that must be understood have been understood; if not, this method throws an exception.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Web.Services.Protocols.SoapHeaderException">A SOAP header that must be understood was not understood.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetHeaderMembers">
@@ -71,12 +72,12 @@
         <Parameter Name="client" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="headers">To be added.</param>
-        <param name="target">To be added.</param>
-        <param name="mappings">To be added.</param>
-        <param name="direction">To be added.</param>
-        <param name="client">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="headers">The <see cref="T:System.Web.Services.Protocols.SoapHeaderCollection" /> that contains the SOAP headers.</param>
+        <param name="target">A <see cref="T:System.Object" /> that represents the SOAP message.</param>
+        <param name="mappings">An array of type <see cref="T:System.Web.Services.Protocols.SoapHeaderMapping" /> that contains the mappings for the SOAP headers.</param>
+        <param name="direction">A <see cref="T:System.Web.Services.Protocols.SoapHeaderDirection" /> value that indicates the direction of the SOAP headers.</param>
+        <param name="client">This parameter is currently not used.</param>
+        <summary>Gets the SOAP header content for the specified SOAP message.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,16 +104,16 @@
         <Parameter Name="checkRequiredHeaders" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <param name="serializer">To be added.</param>
-        <param name="headers">To be added.</param>
-        <param name="mappings">To be added.</param>
-        <param name="direction">To be added.</param>
-        <param name="envelopeNS">To be added.</param>
-        <param name="encodingStyle">To be added.</param>
-        <param name="checkRequiredHeaders">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to be used in writing the headers.</param>
+        <param name="serializer">The <see cref="T:System.Xml.Serialization.XmlSerializer" /> to be used in reading the headers.</param>
+        <param name="headers">The <see cref="T:System.Web.Services.Protocols.SoapHeaderCollection" /> that contains the SOAP headers.</param>
+        <param name="mappings">An array of type <see cref="T:System.Web.Services.Protocols.SoapHeaderMapping" /> that contains the mappings for the SOAP headers.</param>
+        <param name="direction">A <see cref="T:System.Web.Services.Protocols.SoapHeaderDirection" /> value that indicates the direction of the SOAP headers.</param>
+        <param name="envelopeNS">A <see cref="T:System.String" /> that contains the namespace for the SOAP message envelope.</param>
+        <param name="encodingStyle">A <see cref="T:System.String" /> that contains the encoding style for the SOAP headers.</param>
+        <param name="checkRequiredHeaders">A <see cref="T:System.Boolean" /> that indicates whether to check for the required SOAP headers.</param>
+        <summary>Returns a <see cref="T:System.String" /> that contains the SOAP header content of the SOAP message.</summary>
+        <returns>A <see cref="T:System.String" /> that contains the SOAP header content of the SOAP message.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,12 +137,12 @@
         <Parameter Name="client" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="headers">To be added.</param>
-        <param name="target">To be added.</param>
-        <param name="mappings">To be added.</param>
-        <param name="direction">To be added.</param>
-        <param name="client">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="headers">The <see cref="T:System.Web.Services.Protocols.SoapHeaderCollection" /> that contains the SOAP headers.</param>
+        <param name="target">A <see cref="T:System.Object" /> that represents the SOAP message.</param>
+        <param name="mappings">An array of type <see cref="T:System.Web.Services.Protocols.SoapHeaderMapping" /> that contains the mappings for the SOAP headers.</param>
+        <param name="direction">A <see cref="T:System.Web.Services.Protocols.SoapHeaderDirection" /> value that indicates the direction of the SOAP headers.</param>
+        <param name="client">This parameter is currently not used.</param>
+        <summary>Sets the SOAP header content for the specified SOAP message.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -169,16 +170,16 @@
         <Parameter Name="envelopeNS" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="serializer">To be added.</param>
-        <param name="headers">To be added.</param>
-        <param name="mappings">To be added.</param>
-        <param name="direction">To be added.</param>
-        <param name="isEncoded">To be added.</param>
-        <param name="defaultNS">To be added.</param>
-        <param name="serviceDefaultIsEncoded">To be added.</param>
-        <param name="envelopeNS">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to be used in writing the headers.</param>
+        <param name="serializer">The <see cref="T:System.Xml.Serialization.XmlSerializer" /> to be used in writing the headers.</param>
+        <param name="headers">The <see cref="T:System.Web.Services.Protocols.SoapHeaderCollection" /> that contains the SOAP headers to be written.</param>
+        <param name="mappings">An array of type <see cref="T:System.Web.Services.Protocols.SoapHeaderMapping" /> that contains the mappings for the SOAP headers.</param>
+        <param name="direction">A <see cref="T:System.Web.Services.Protocols.SoapHeaderDirection" /> value that indicates the direction of the SOAP headers.</param>
+        <param name="isEncoded">A <see cref="T:System.Boolean" /> that indicates whether the SOAP headers are encoded.</param>
+        <param name="defaultNS">A <see cref="T:System.String" /> that contains the default namespace for the XML Web service.</param>
+        <param name="serviceDefaultIsEncoded">A <see cref="T:System.Boolean" /> that indicates whether data sent to and from the XML Web service is encoded by default.</param>
+        <param name="envelopeNS">A <see cref="T:System.String" /> that contains the namespace for the SOAP message envelope.</param>
+        <summary>Writes the specified SOAP header content to the SOAP message.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -200,10 +201,10 @@
         <Parameter Name="envelopeNS" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="headers">To be added.</param>
-        <param name="envelopeNS">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to be used in writing the headers.</param>
+        <param name="headers">The <see cref="T:System.Web.Services.Protocols.SoapHeaderCollection" /> that contains the SOAP headers to be written.</param>
+        <param name="envelopeNS">A <see cref="T:System.String" /> that contains the namespace for the SOAP message envelope.</param>
+        <summary>Writes the specified SOAP header content to the SOAP message.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

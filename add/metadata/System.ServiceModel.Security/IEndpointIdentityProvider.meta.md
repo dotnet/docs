@@ -1,9 +1,13 @@
 ---
 uid: System.ServiceModel.Security.IEndpointIdentityProvider
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.IEndpointIdentityProvider.GetIdentityOfSelf(System.IdentityModel.Selectors.SecurityTokenRequirement)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

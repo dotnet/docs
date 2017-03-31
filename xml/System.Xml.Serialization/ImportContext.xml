@@ -16,7 +16,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Describes the context in which a set of schema is bound to .NET Framework code entities.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -39,9 +39,9 @@
         <Parameter Name="shareTypes" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="identifiers">To be added.</param>
-        <param name="shareTypes">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="identifiers">The code entities to which the context applies.</param>
+        <param name="shareTypes">A <see cref="T:System.Boolean" /> value that determines whether custom types are shared among schema.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.ImportContext" /> class for the given code identifiers, with the given type-sharing option.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,8 +63,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that determines whether custom types are shared.</summary>
+        <value>
+          <see langword="true" />, if custom types are shared among schema; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,8 +87,8 @@
         <ReturnType>System.Xml.Serialization.CodeIdentifiers</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a set of code entities to which the context applies.</summary>
+        <value>A <see cref="T:System.Xml.Serialization.CodeIdentifiers" /> that specifies the code entities to which the context applies.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,8 +110,8 @@
         <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of warnings that are generated when importing the code entity descriptions.</summary>
+        <value>A <see cref="T:System.Collections.Specialized.StringCollection" /> that contains warnings that were generated when importing the code entity descriptions.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,14 +1,20 @@
 ---
 uid: System.Runtime.InteropServices.DefaultDllImportSearchPathsAttribute
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.DefaultDllImportSearchPathsAttribute.#ctor(System.Runtime.InteropServices.DllImportSearchPath)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.DefaultDllImportSearchPathsAttribute.Paths
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

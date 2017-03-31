@@ -22,8 +22,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="T">The type of elements in the specified collection.</typeparam>
+    <summary>Removes an item from a specified collection.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,7 +38,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Statements.RemoveFromCollection`1" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,8 +84,8 @@
         <ReturnType>System.Activities.InArgument&lt;System.Collections.Generic.ICollection&lt;T&gt;&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The collection from which to remove the <see cref="P:System.Activities.Statements.RemoveFromCollection`1.Item" />.</summary>
+        <value>The collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,8 +132,8 @@
         <ReturnType>System.Activities.InArgument&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The item to remove from the specified <see cref="P:System.Activities.Statements.RemoveFromCollection`1.Collection" />.</summary>
+        <value>The item to remove.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

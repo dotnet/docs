@@ -1,2 +1,0 @@
-        ' Inserts a CodeAttributeDeclaration at index 0 of the collection.
-        collection.Insert(0, New CodeAttributeDeclaration("DescriptionAttribute", New CodeAttributeArgument(New CodePrimitiveExpression("Test Description"))))

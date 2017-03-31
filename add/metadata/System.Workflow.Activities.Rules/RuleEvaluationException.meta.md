@@ -1,24 +1,41 @@
 ---
 uid: System.Workflow.Activities.Rules.RuleEvaluationException
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.Rules.RuleEvaluationException.#ctor(System.String)
-internalonly: False
----
-
----
-uid: System.Workflow.Activities.Rules.RuleEvaluationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
----
-
----
-uid: System.Workflow.Activities.Rules.RuleEvaluationException.#ctor(System.String,System.Exception)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.Rules.RuleEvaluationException.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.Rules.RuleEvaluationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.Rules.RuleEvaluationException.#ctor(System.String,System.Exception)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.Rules.RuleEvaluationException.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

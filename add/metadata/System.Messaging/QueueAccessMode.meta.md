@@ -1,4 +1,4 @@
 ---
 uid: System.Messaging.QueueAccessMode
-internalonly: False
+manager: "tyoung"
 ---

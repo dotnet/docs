@@ -1,34 +1,47 @@
 ---
 uid: System.Web.UI.Triplet
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Triplet.Second
-internalonly: False
----
-
----
-uid: System.Web.UI.Triplet.#ctor(System.Object,System.Object,System.Object)
-internalonly: False
----
-
----
-uid: System.Web.UI.Triplet.First
-internalonly: False
----
-
----
-uid: System.Web.UI.Triplet.#ctor(System.Object,System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Triplet.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Triplet.#ctor(System.Object,System.Object,System.Object)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Triplet.First
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Triplet.#ctor(System.Object,System.Object)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Triplet.#ctor
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Triplet.Third
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

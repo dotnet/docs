@@ -32,8 +32,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Triggers the compensation of a completed child <see cref="T:System.Workflow.ComponentModel.Activity" /> that implements the <see cref="T:System.Workflow.ComponentModel.ICompensatableActivity" /> interface. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ Any <xref:System.Workflow.ComponentModel.Activity> that implements <xref:System.Workflow.ComponentModel.ICompensatableActivity> is compensateable. A compensatable activity is a valid target of a <xref:System.Workflow.ComponentModel.CompensateActivity>, as long as that activity is a child <xref:System.Workflow.ComponentModel.Activity> of the <xref:System.Workflow.ComponentModel.CompositeActivity> associated with the <xref:System.Workflow.ComponentModel.CompensateActivity>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -47,8 +58,18 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.CompensateActivity" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates creating a <xref:System.Workflow.ComponentModel.CompensateActivity> object.  This example is from the Compensation SDK sample.  For more information, see [Compensation Sample](http://msdn.microsoft.com/en-us/c847a694-9978-46af-aa80-5bd1833f813b).  
+  
+ [!code-csharp[WF_Samples#144](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#144)]
+ [!code-vb[WF_Samples#144](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#144)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -64,8 +85,8 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The user-defined name of the activity.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.CompensateActivity" /> class using the name of the activity.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,9 +150,9 @@
         <Parameter Name="e" Type="System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="sender">To be added.</param>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="sender">The object that raised the event.</param>
+        <param name="e">The previously typed event arguments.</param>
+        <summary>Defines the processing procedure when the subscribed-to event occurs.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -159,9 +180,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the <see cref="T:System.Workflow.ComponentModel.Activity" /> to compensate.</summary>
+        <value>A string that contains the name of the <see cref="T:System.Workflow.ComponentModel.Activity" /> to compensate.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates accessing the `TargetActivityName` property. This sample is from the Compensation SDK sample. For more information, see [Compensation Sample](http://msdn.microsoft.com/en-us/c847a694-9978-46af-aa80-5bd1833f813b).  
+  
+ [!code-csharp[WF_Samples#149](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#149)]
+ [!code-vb[WF_Samples#149](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#149)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TargetActivityNameProperty">
@@ -177,8 +208,15 @@
         <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="P:System.Workflow.ComponentModel.CompensateActivity.TargetActivityName" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

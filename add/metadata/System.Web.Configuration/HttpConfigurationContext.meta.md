@@ -1,9 +1,11 @@
 ---
 uid: System.Web.Configuration.HttpConfigurationContext
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.HttpConfigurationContext.VirtualPath
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Attaches properties to the current instance.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Presentation.Model.AttachedPropertiesService" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <Parameter Name="property" Type="System.Activities.Presentation.Model.AttachedProperty" />
       </Parameters>
       <Docs>
-        <param name="property">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="property">The property to add.</param>
+        <summary>Adds the specified property to the properties of the current instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,14 +1,17 @@
 ---
 uid: System.Net.Configuration.ModuleElement
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.ModuleElement.Type
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.ModuleElement.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

@@ -11,8 +11,39 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a <see cref="T:System.Windows.Controls.DataGrid" /> column that hosts <see cref="T:System.Windows.Controls.CheckBox" /> controls in its cells.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Windows.Controls.DataGridCheckBoxColumn> to display columns of Boolean data as a <xref:System.Windows.Controls.CheckBox>. The following illustration shows an example of <xref:System.Windows.Controls.DataGridCheckBoxColumn>.  
+  
+ ![A DataGridCheckBox column](~/add/media/wpf-datagrid-checkbox.png "A DataGridCheckBox column")  
+  
+ To populate the column, bind the column to the data by using the <xref:System.Windows.Controls.DataGridBoundColumn.Binding%2A> property. The <xref:System.Windows.Controls.DataGridBoundColumn.Binding%2A> property is applied to the <xref:System.Windows.Controls.CheckBox> element created in the column. The <xref:System.Windows.FrameworkElement.DataContext%2A> for the element in each cell is the data item for the row the cell is in. Therefore, to set up the binding you only have to set the <xref:System.Windows.Data.Binding.Path%2A?displayProperty=fullName>. Optionally, you can specify a <xref:System.Windows.Data.Binding.Converter%2A?displayProperty=fullName> if your data source and target are different types. For more information about data binding, see [Data Binding (WPF)](../Topic/Data%20Binding%20\(WPF\).md).  
+  
+ You can customize the <xref:System.Windows.Controls.DataGridCheckBoxColumn> by setting properties, such as <xref:System.Windows.Controls.DataGridColumn.Width%2A>, <xref:System.Windows.Controls.DataGridColumn.Header%2A>, <xref:System.Windows.Controls.DataGridCheckBoxColumn.IsThreeState%2A>, and <xref:System.Windows.Controls.DataGridColumn.IsReadOnly%2A>.  
+  
+ If you want to display other types of data, <xref:System.Windows.Controls.DataGrid> provides the following column types:  
+  
+|Column Type|Data Display|  
+|-----------------|------------------|  
+|<xref:System.Windows.Controls.DataGridHyperlinkColumn>|Use to display URI data.|  
+|<xref:System.Windows.Controls.DataGridComboBoxColumn>|Use to display enumeration data.|  
+|<xref:System.Windows.Controls.DataGridTextColumn>|Use to display text.|  
+  
+ If you want to use other controls in your <xref:System.Windows.Controls.DataGrid>, you can create your own column types by using <xref:System.Windows.Controls.DataGridTemplateColumn>.  
+  
+   
+  
+## Examples  
+ The following example shows how to add a <xref:System.Windows.Controls.DataGridCheckBoxColumn>. This example uses a database as the source and displays a column of Boolean data.  
+  
+ [!code-xml[DataGrid_CheckBoxColumn#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_checkboxcolumn/CS/window1.xaml#1)]
+ [!code-xml[DataGrid_CheckBoxColumn#1](~/samples/snippets/xaml/VS_Snippets_Wpf/datagrid_checkboxcolumn/xaml/window1.xaml#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +57,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.DataGridCheckBoxColumn" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +74,8 @@
         <ReturnType>System.Windows.Style</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the default value of the <see cref="P:System.Windows.Controls.DataGridBoundColumn.EditingElementStyle" /> property.</summary>
+        <value>An object that represents the style.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +92,8 @@
         <ReturnType>System.Windows.Style</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the default value of the <see cref="P:System.Windows.Controls.DataGridBoundColumn.ElementStyle" /> property.</summary>
+        <value>An object that represents the style.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,10 +114,10 @@
         <Parameter Name="dataItem" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="cell">To be added.</param>
-        <param name="dataItem">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="cell">The cell that will contain the generated element.</param>
+        <param name="dataItem">The data item represented by the row that contains the intended cell.</param>
+        <summary>Gets a <see cref="T:System.Windows.Controls.CheckBox" /> control that is bound to the column's <see cref="P:System.Windows.Controls.DataGridBoundColumn.Binding" /> property value.</summary>
+        <returns>A new check box control that is bound to the column's <see cref="P:System.Windows.Controls.DataGridBoundColumn.Binding" /> property value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,10 +138,10 @@
         <Parameter Name="dataItem" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="cell">To be added.</param>
-        <param name="dataItem">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="cell">The cell that will contain the generated element.</param>
+        <param name="dataItem">The data item represented by the row that contains the intended cell.</param>
+        <summary>Gets a read-only <see cref="T:System.Windows.Controls.CheckBox" /> control that is bound to the column's <see cref="P:System.Windows.Controls.DataGridBoundColumn.Binding" /> property value.</summary>
+        <returns>A new, read-only check box control that is bound to the column's <see cref="P:System.Windows.Controls.DataGridBoundColumn.Binding" /> property value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -127,9 +158,19 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether the hosted <see cref="T:System.Windows.Controls.CheckBox" /> controls enable three states or two.</summary>
+        <value>
+          <see langword="true" /> if the hosted controls support three states; <see langword="false" /> if they support two states. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.DataGridCheckBoxColumn.IsThreeState%2A?displayProperty=fullName> property lets you use a nullable Boolean as the data type and has the same functionality as the <xref:System.Windows.Controls.Primitives.ToggleButton.IsThreeState%2A?displayProperty=fullName> property on <xref:System.Windows.Controls.CheckBox>.  
+  
+ The three states for the <xref:System.Windows.Controls.Primitives.ToggleButton.IsChecked%2A?displayProperty=fullName> property of the <xref:System.Windows.Controls.CheckBox> control are `true`, `false`, and `null`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsThreeStateProperty">
@@ -145,7 +186,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.DataGridCheckBoxColumn.IsThreeState" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -166,11 +207,18 @@
         <Parameter Name="editingEventArgs" Type="System.Windows.RoutedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="editingElement">To be added.</param>
-        <param name="editingEventArgs">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="editingElement">The element that the column displays for a cell in editing mode.</param>
+        <param name="editingEventArgs">Information about the user gesture that is causing a cell to enter editing mode.</param>
+        <summary>Called when a cell in the column enters editing mode.</summary>
+        <returns>The unedited value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.DataGrid> control calls the <xref:System.Windows.Controls.DataGridColumn.PrepareCellForEdit%2A> method when a cell in a column derived from <xref:System.Windows.Controls.DataGridColumn> enters editing mode. The <xref:System.Windows.Controls.DataGridCheckBoxColumn> class overrides this method to respond immediately to the user gesture by updating the value in the hosted <xref:System.Windows.Controls.CheckBox> control. This immediate response is necessary because a <xref:System.Windows.Controls.DataGridCheckBoxColumn> cell enters edit mode with the same user gesture that changes the state of its hosted <xref:System.Windows.Controls.CheckBox>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshCellContent">
@@ -190,9 +238,9 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The cell to update.</param>
+        <param name="propertyName">The name of the column property that has changed.</param>
+        <summary>Refreshes the contents of a cell in the column in response to a column property value change.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

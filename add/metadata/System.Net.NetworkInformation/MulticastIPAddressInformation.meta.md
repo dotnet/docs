@@ -1,39 +1,47 @@
 ---
 uid: System.Net.NetworkInformation.MulticastIPAddressInformation
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.MulticastIPAddressInformation.DuplicateAddressDetectionState
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.MulticastIPAddressInformation.SuffixOrigin
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.MulticastIPAddressInformation.DhcpLeaseLifetime
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.MulticastIPAddressInformation.AddressValidLifetime
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.MulticastIPAddressInformation.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.MulticastIPAddressInformation.PrefixOrigin
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.MulticastIPAddressInformation.AddressPreferredLifetime
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

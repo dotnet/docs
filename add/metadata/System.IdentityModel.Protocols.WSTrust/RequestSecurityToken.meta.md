@@ -1,104 +1,131 @@
 ---
 uid: System.IdentityModel.Protocols.WSTrust.RequestSecurityToken
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.Forwardable
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.Participants
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.Encryption
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.ValidateTarget
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.#ctor(System.String,System.String)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.AdditionalContext
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.ProofEncryption
-internalonly: False
----
-
----
-uid: System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.Renewing
-internalonly: False
----
-
----
-uid: System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.Delegatable
-internalonly: False
----
-
----
-uid: System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.ActAs
-internalonly: False
----
-
----
-uid: System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.SecondaryParameters
-internalonly: False
----
-
----
-uid: System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.ComputedKeyAlgorithm
-internalonly: False
----
-
----
-uid: System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.Claims
-internalonly: False
----
-
----
-uid: System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.#ctor(System.String)
-internalonly: False
----
-
----
-uid: System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.RenewTarget
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.Renewing
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.Delegatable
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.ActAs
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.SecondaryParameters
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.ComputedKeyAlgorithm
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.Claims
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.#ctor(System.String)
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.RenewTarget
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.#ctor
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.DelegateTo
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.Issuer
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.CancelTarget
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.OnBehalfOf
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

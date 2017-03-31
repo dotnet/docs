@@ -1,14 +1,18 @@
 ---
 uid: System.Windows.Controls.InkCanvasStrokesReplacedEventArgs
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.InkCanvasStrokesReplacedEventArgs.NewStrokes
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.InkCanvasStrokesReplacedEventArgs.PreviousStrokes
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

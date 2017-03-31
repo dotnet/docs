@@ -1,9 +1,11 @@
 ---
 uid: System.Speech.Recognition.AudioLevelUpdatedEventArgs
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.AudioLevelUpdatedEventArgs.AudioLevel
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

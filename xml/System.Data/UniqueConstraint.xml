@@ -24,8 +24,27 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a restriction on a set of columns in which all values must be unique.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.UniqueConstraint> is enforced on a single column (or columns) to ensure that a primary key value is unique.  
+  
+ Constraints are not enforced unless the <xref:System.Data.DataSet.EnforceConstraints%2A> property is set to `true`.  
+  
+ When the a <xref:System.Data.DataSet> is merged with a second <xref:System.Data.DataSet>, constraints are not enforced until all merges are completed.  
+  
+   
+  
+## Examples  
+ The following example adds a <xref:System.Data.UniqueConstraint> to a <xref:System.Data.DataSet> and sets the <xref:System.Data.DataSet.EnforceConstraints%2A> property to `true`.  
+  
+ [!code-vb[Classic WebData UniqueConstraint Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData UniqueConstraint Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <threadsafe>This type is suitable for multithreaded read operations. You must synchronize any write operations.</threadsafe>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,9 +65,18 @@
         <Parameter Name="column" Type="System.Data.DataColumn" />
       </Parameters>
       <Docs>
-        <param name="column">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="column">The <see cref="T:System.Data.DataColumn" /> to constrain.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.UniqueConstraint" /> class with the specified <see cref="T:System.Data.DataColumn" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a new <xref:System.Data.UniqueConstraint> and assigns it to the <xref:System.Data.DataRelation.ParentKeyConstraint%2A> property of a <xref:System.Data.DataRelation>.  
+  
+ [!code-vb[Classic WebData UniqueConstraint.UniqueConstraint Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData UniqueConstraint.UniqueConstraint Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -69,8 +97,8 @@
         <Parameter Name="columns" Type="System.Data.DataColumn[]" />
       </Parameters>
       <Docs>
-        <param name="columns">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="columns">The array of <see cref="T:System.Data.DataColumn" /> objects to constrain.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.UniqueConstraint" /> class with the given array of <see cref="T:System.Data.DataColumn" /> objects.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,9 +121,10 @@
         <Parameter Name="isPrimaryKey" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="column">To be added.</param>
-        <param name="isPrimaryKey">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="column">The <see cref="T:System.Data.DataColumn" /> to constrain.</param>
+        <param name="isPrimaryKey">
+          <see langword="true" /> to indicate that the constraint is a primary key; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.UniqueConstraint" /> class with the <see cref="T:System.Data.DataColumn" /> to constrain, and a value specifying whether the constraint is a primary key.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,9 +147,10 @@
         <Parameter Name="isPrimaryKey" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="columns">To be added.</param>
-        <param name="isPrimaryKey">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="columns">An array of <see cref="T:System.Data.DataColumn" /> objects to constrain.</param>
+        <param name="isPrimaryKey">
+          <see langword="true" /> to indicate that the constraint is a primary key; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.UniqueConstraint" /> class with an array of <see cref="T:System.Data.DataColumn" /> objects to constrain, and a value specifying whether the constraint is a primary key.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,10 +173,19 @@
         <Parameter Name="column" Type="System.Data.DataColumn" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="column">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the constraint.</param>
+        <param name="column">The <see cref="T:System.Data.DataColumn" /> to constrain.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.UniqueConstraint" /> class with the specified name and <see cref="T:System.Data.DataColumn" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a new <xref:System.Data.UniqueConstraint> and assigns it to the <xref:System.Data.DataRelation.ParentKeyConstraint%2A> property of a <xref:System.Data.DataRelation>.  
+  
+ [!code-vb[Classic WebData UniqueConstraint.UniqueConstraint Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData UniqueConstraint.UniqueConstraint Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -168,10 +207,20 @@
         <Parameter Name="columns" Type="System.Data.DataColumn[]" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="columns">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the constraint.</param>
+        <param name="columns">The array of <see cref="T:System.Data.DataColumn" /> objects to constrain.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.UniqueConstraint" /> class with the specified name and array of <see cref="T:System.Data.DataColumn" /> objects.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a <xref:System.Data.DataTable> with two columns, and adds a new <xref:System.Data.UniqueConstraint> to the <xref:System.Data.ConstraintCollection>.  
+  
+ [!code-csharp[Classic WebData UniqueConstraint.UniqueConstraint2 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData UniqueConstraint.UniqueConstraint2 Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData UniqueConstraint.UniqueConstraint2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData UniqueConstraint.UniqueConstraint2 Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -194,10 +243,11 @@
         <Parameter Name="isPrimaryKey" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="column">To be added.</param>
-        <param name="isPrimaryKey">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the constraint.</param>
+        <param name="column">The <see cref="T:System.Data.DataColumn" /> to constrain.</param>
+        <param name="isPrimaryKey">
+          <see langword="true" /> to indicate that the constraint is a primary key; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.UniqueConstraint" /> class with the specified name, the <see cref="T:System.Data.DataColumn" /> to constrain, and a value specifying whether the constraint is a primary key.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -221,10 +271,11 @@
         <Parameter Name="isPrimaryKey" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="columns">To be added.</param>
-        <param name="isPrimaryKey">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the constraint.</param>
+        <param name="columns">An array of <see cref="T:System.Data.DataColumn" /> objects to constrain.</param>
+        <param name="isPrimaryKey">
+          <see langword="true" /> to indicate that the constraint is a primary key; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.UniqueConstraint" /> class with the specified name, an array of <see cref="T:System.Data.DataColumn" /> objects to constrain, and a value specifying whether the constraint is a primary key.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -253,11 +304,19 @@
         <Parameter Name="isPrimaryKey" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="columnNames">To be added.</param>
-        <param name="isPrimaryKey">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the constraint.</param>
+        <param name="columnNames">An array of <see cref="T:System.Data.DataColumn" /> objects to constrain.</param>
+        <param name="isPrimaryKey">
+          <see langword="true" /> to indicate that the constraint is a primary key; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.UniqueConstraint" /> class with the specified name, an array of <see cref="T:System.Data.DataColumn" /> objects to constrain, and a value specifying whether the constraint is a primary key.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is provided for design time support in the Visual Studio .NET environment. <xref:System.Data.UniqueConstraint> objects created by using this constructor must then be added to the collection via <xref:System.Data.ConstraintCollection.AddRange%2A>. Columns with the specified names must exist at the time the method is called, or if <xref:System.Data.DataTable.BeginInit%2A> has been called prior to calling this constructor, the columns with the specified names must exist at the time that <xref:System.Data.DataTable.EndInit%2A> is called.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Columns">
@@ -283,9 +342,18 @@
         <ReturnType>System.Data.DataColumn[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the array of columns that this constraint affects.</summary>
+        <value>An array of <see cref="T:System.Data.DataColumn" /> objects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example returns the <xref:System.Data.DataColumn> objects that the <xref:System.Data.UniqueConstraint> constrains.  
+  
+ [!code-vb[Classic WebData UniqueConstraint.Columns Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData UniqueConstraint.Columns Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -309,10 +377,25 @@
         <Parameter Name="key2" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="key2">The object to which this <see cref="T:System.Data.UniqueConstraint" /> is compared.</param>
+        <summary>Compares this constraint to a second to determine if both are identical.</summary>
+        <returns>
+          <see langword="true" />, if the contraints are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Two constraints are equal if they constrain the same columns.  
+  
+   
+  
+## Examples  
+ The following example compares two UiqueConstraint objects.  
+  
+ [!code-vb[Classic WebData UniqueConstraint.Equals Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData UniqueConstraint.Equals Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -334,8 +417,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the hash code of this instance of the <see cref="T:System.Data.UniqueConstraint" /> object.</summary>
+        <returns>A 32-bit signed integer hash code.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -357,9 +440,24 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether or not the constraint is on a primary key.</summary>
+        <value>
+          <see langword="true" />, if the constraint is on a primary key; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A table usually includes a primary key that ensures every row is unique. In some tables, the primary key may be made up of more than one column. For example, a primary key for a table containing names might be made up of both the first and last names as well. To create a primary key with more than one column, set the Columns property to an array of DataColumn objects.  
+  
+   
+  
+## Examples  
+ The following example checks the <xref:System.Data.UniqueConstraint.IsPrimaryKey%2A> property.  
+  
+ [!code-vb[Classic WebData UniqueConstraint.IsPrimaryKey Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData UniqueConstraint.IsPrimaryKey Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Table">
@@ -385,9 +483,18 @@
         <ReturnType>System.Data.DataTable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the table to which this constraint belongs.</summary>
+        <value>The <see cref="T:System.Data.DataTable" /> to which the constraint belongs.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example returns a <xref:System.Data.UniqueConstraint> object's <xref:System.Data.DataTable>.  
+  
+ [!code-vb[Classic WebData UniqueConstraint.Table Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData UniqueConstraint.Table Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

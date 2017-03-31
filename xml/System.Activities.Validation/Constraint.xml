@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Handles the validation constraint that is used for validating an activity.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,9 +32,9 @@
         <Parameter Name="error" Type="System.Activities.Validation.ValidationError" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="error">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="context">The workflow activity execution environment.</param>
+        <param name="error">A validation error that occurs during a workflow runtime.</param>
+        <summary>Adds a validation error to a list of run-time validation errors that are attached to the execution context.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,8 +54,8 @@
         <Parameter Name="metadata" Type="System.Activities.NativeActivityMetadata" />
       </Parameters>
       <Docs>
-        <param name="metadata">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="metadata">A <see cref="T:System.Activities.NativeActivityMetadata" /> object that becomes the container for a list of validation runtime arguments.</param>
+        <summary>Creates a <see cref="T:System.Activities.NativeActivityMetadata" /> object that contains runtime arguments for the workflow validation process.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,8 +75,8 @@
         <Parameter Name="context" Type="System.Activities.NativeActivityContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="context">The workflow activity execution environment.</param>
+        <summary>Invokes the process that validates an activity.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,10 +98,10 @@
         <Parameter Name="objectToValidateContext" Type="System.Activities.Validation.ValidationContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="objectToValidate">To be added.</param>
-        <param name="objectToValidateContext">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="context">The workflow activity execution.</param>
+        <param name="objectToValidate">The activity to be validated.</param>
+        <param name="objectToValidateContext">The context of the activity to be validated.</param>
+        <summary>When implemented by a derived class, validates the specified object using the specified native activity and validation contexts.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,7 +118,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The name for an activity constraint property that is a list of workflow run-time validation errors.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

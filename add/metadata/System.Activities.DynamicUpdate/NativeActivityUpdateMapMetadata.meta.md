@@ -1,14 +1,27 @@
 ---
 uid: System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata.SaveOriginalValue
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata.SaveOriginalValue(System.String,System.Object)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata.SaveOriginalValue(System.Activities.Activity,System.Object)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

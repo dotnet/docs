@@ -1,24 +1,39 @@
 ---
 uid: System.Windows.Documents.Bold
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Documents.Bold.#ctor(System.Windows.Documents.TextPointer,System.Windows.Documents.TextPointer)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Documents.Bold.#ctor(System.Windows.Documents.Inline,System.Windows.Documents.TextPointer)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Documents.Bold.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Documents.Bold.#ctor(System.Windows.Documents.Inline)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Documents.Bold.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

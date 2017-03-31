@@ -1,9 +1,11 @@
 ---
 uid: Microsoft.Build.Evaluation.ProjectChangedEventArgs
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Evaluation.ProjectChangedEventArgs.Project
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

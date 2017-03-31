@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This class contains utility functions to encapsulate launching and logging for the Tracker</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,9 +31,9 @@
         <Parameter Name="sources" Type="Microsoft.Build.Framework.ITaskItem[]" />
       </Parameters>
       <Docs>
-        <param name="sources">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="sources">The set of source files.</param>
+        <summary>Given a set of source files in the form of ITaskItem, creates a temporary response file containing the rooting marker that corresponds to those sources.</summary>
+        <returns>The response file path.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,9 +53,9 @@
         <Parameter Name="rootMarker" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="rootMarker">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="rootMarker">The rooting marker to put in the response file.</param>
+        <summary>Given a rooting marker, creates a temporary response file with that rooting marker in it.</summary>
+        <returns>The response file path.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,7 +73,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stops tracking file accesses.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,8 +91,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Prepends the path to the appropriate FileTracker assembly to the PATH environment variable. Used for inproc tracking.</summary>
+        <returns>The old value of the PATH environment variable.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,9 +112,9 @@
         <Parameter Name="rootPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="rootPath">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="rootPath">The root path for FileTracker.dll. Overrides the toolType if specified.</param>
+        <summary>Prepends the path to the appropriate FileTracker assembly to the PATH environment variable. Used for inproc tracking, or when the .NET Framework may not be on the PATH.</summary>
+        <returns>The old value of PATH</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,9 +134,9 @@
         <Parameter Name="fileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="fileName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="fileName">Full path of the file to test</param>
+        <summary>Test to see if the specified file is excluded from tracked dependencies</summary>
+        <returns>Returns true if the file is excluded.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -157,10 +157,10 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="fileName">To be added.</param>
-        <param name="path">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="fileName">Full path of the file to test</param>
+        <param name="path">The path that might contain the file.</param>
+        <summary>Test to see if the specified file is under the specified path</summary>
+        <returns>Returns true if the file is under the path.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -178,8 +178,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Searches %PATH% for the location of Tracker.exe, and returns the first path that matches.Matching full path to Tracker.exe or null if a matching path is not found.</summary>
+        <returns>Returns the path to Tracker.exe.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -199,9 +199,9 @@
         <Parameter Name="toolType" Type="Microsoft.Build.Utilities.ExecutableType" />
       </Parameters>
       <Docs>
-        <param name="toolType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="toolType">The executable type for the tool being tracked</param>
+        <summary>Determines whether we must track out-of-proc, or whether inproc tracking will work.</summary>
+        <returns>True if we need to track out-of-proc, false if inproc tracking is OK</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -223,11 +223,11 @@
         <Parameter Name="cancelEventName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="toolType">To be added.</param>
-        <param name="dllName">To be added.</param>
-        <param name="cancelEventName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="toolType">The executable type for the tool being tracked</param>
+        <param name="dllName">The tool being tracked.</param>
+        <param name="cancelEventName">The name of the cancel event tracker should listen for, or null if there isn't one</param>
+        <summary>Determines whether we must track out-of-proc, or whether inproc tracking will work.</summary>
+        <returns>True if we need to track out-of-proc, false if inproc tracking is OK</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -247,9 +247,9 @@
         <Parameter Name="source" Type="Microsoft.Build.Framework.ITaskItem" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="source">The primary sources.</param>
+        <summary>Construct a rooting marker string from the ITaskItem array of primary sources.</summary>
+        <returns>Returns the marker string.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -269,9 +269,9 @@
         <Parameter Name="sources" Type="Microsoft.Build.Framework.ITaskItem[]" />
       </Parameters>
       <Docs>
-        <param name="sources">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="sources">ITaskItem array of primary sources.</param>
+        <summary>Construct a rooting marker string from the ITaskItem array of primary sources.</summary>
+        <returns>Returns the marker string.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -292,10 +292,10 @@
         <Parameter Name="output" Type="Microsoft.Build.Framework.ITaskItem" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <param name="output">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="source">The primary sources.</param>
+        <param name="output">The output files.</param>
+        <summary>Construct a rooting marker string from the ITaskItem array of primary sources.</summary>
+        <returns>Returns the marker string.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -316,10 +316,10 @@
         <Parameter Name="outputs" Type="Microsoft.Build.Framework.ITaskItem[]" />
       </Parameters>
       <Docs>
-        <param name="sources">To be added.</param>
-        <param name="outputs">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="sources">ITaskItem array of primary sources.</param>
+        <param name="outputs">The output files.</param>
+        <summary>Construct a rooting marker string from the ITaskItem array of primary sources.</summary>
+        <returns>Returns the marker string.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -339,9 +339,9 @@
         <Parameter Name="toolType" Type="Microsoft.Build.Utilities.ExecutableType" />
       </Parameters>
       <Docs>
-        <param name="toolType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="toolType">The ExecutableType of the tool being wrapped.</param>
+        <summary>Given the ExecutableType of the tool being wrapped and information that we know about our current bitness, figures out and returns the path to the correct FileTracker.dll.</summary>
+        <returns>Returns the path of the tool.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -362,10 +362,10 @@
         <Parameter Name="rootPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="toolType">To be added.</param>
-        <param name="rootPath">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="toolType">The toolType.</param>
+        <param name="rootPath">The root path for FileTracker.dll. Overrides the toolType if specified.</param>
+        <summary>Given the ExecutableType of the tool being wrapped and information that we know about our current bitness, figures out and returns the path to the correct FileTracker.dll.</summary>
+        <returns>Returns <see cref="T:System.String" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -385,9 +385,9 @@
         <Parameter Name="toolType" Type="Microsoft.Build.Utilities.ExecutableType" />
       </Parameters>
       <Docs>
-        <param name="toolType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="toolType">The ExecutableType of the tool being wrapped.</param>
+        <summary>Given the ExecutableType of the tool being wrapped and information that we know about our current bitness, figures out and returns the path to the correct Tracker.exe.</summary>
+        <returns>Returns the tracker path.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -408,10 +408,10 @@
         <Parameter Name="rootPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="toolType">To be added.</param>
-        <param name="rootPath">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="toolType">The toolType.</param>
+        <param name="rootPath">The root path for Tracker.exe. Overrides the toolType if specified.</param>
+        <summary>Given the ExecutableType of the tool being wrapped and information that we know about our current bitness, figures out and returns the path to the correct Tracker.exe.</summary>
+        <returns>Returns <see cref="T:System.String" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -429,7 +429,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Resume tracking file accesses in the current tracking context.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -449,8 +449,8 @@
         <Parameter Name="threadCount" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="threadCount">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="threadCount">The thread count.</param>
+        <summary>Set the global thread count, and assign that count to the current thread.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -472,11 +472,11 @@
         <Parameter Name="toolType" Type="Microsoft.Build.Utilities.ExecutableType" />
       </Parameters>
       <Docs>
-        <param name="command">To be added.</param>
-        <param name="arguments">To be added.</param>
-        <param name="toolType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="command">The command to track</param>
+        <param name="arguments">The command to track's arguments</param>
+        <param name="toolType">The type of executable the wrapped tool is</param>
+        <summary>Start the process; tracking the command.</summary>
+        <returns>Returns the process instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -499,12 +499,12 @@
         <Parameter Name="rootFiles" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="command">To be added.</param>
-        <param name="arguments">To be added.</param>
-        <param name="toolType">To be added.</param>
-        <param name="rootFiles">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="command">The command to track</param>
+        <param name="arguments">The command‘s arguments</param>
+        <param name="toolType">The type of executable the wrapped tool is</param>
+        <param name="rootFiles">Rooting marker</param>
+        <summary>Start the process; tracking the command.</summary>
+        <returns>Returns the process instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -528,13 +528,13 @@
         <Parameter Name="rootFiles" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="command">To be added.</param>
-        <param name="arguments">To be added.</param>
-        <param name="toolType">To be added.</param>
-        <param name="intermediateDirectory">To be added.</param>
-        <param name="rootFiles">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="command">The command to track</param>
+        <param name="arguments">The command to track's arguments</param>
+        <param name="toolType">The type of executable the wrapped tool is</param>
+        <param name="intermediateDirectory">Intermediate directory where tracking logs will be written</param>
+        <param name="rootFiles">Rooting marker</param>
+        <summary>Start the process; tracking the command.</summary>
+        <returns>Returns the process instance</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -559,14 +559,14 @@
         <Parameter Name="rootFiles" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="command">To be added.</param>
-        <param name="arguments">To be added.</param>
-        <param name="toolType">To be added.</param>
-        <param name="dllName">To be added.</param>
-        <param name="intermediateDirectory">To be added.</param>
-        <param name="rootFiles">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="command">The command to track</param>
+        <param name="arguments">The command to track's arguments</param>
+        <param name="toolType">The type of executable the wrapped tool is</param>
+        <param name="dllName">The name of the dll that will do the tracking</param>
+        <param name="intermediateDirectory">Intermediate directory where tracking logs will be written</param>
+        <param name="rootFiles">Rooting marker</param>
+        <summary>Start the process; tracking the command.</summary>
+        <returns>Process instance</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -592,15 +592,15 @@
         <Parameter Name="cancelEventName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="command">To be added.</param>
-        <param name="arguments">To be added.</param>
-        <param name="toolType">To be added.</param>
-        <param name="dllName">To be added.</param>
-        <param name="intermediateDirectory">To be added.</param>
-        <param name="rootFiles">To be added.</param>
-        <param name="cancelEventName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="command">The command to track</param>
+        <param name="arguments">The command to track's arguments</param>
+        <param name="toolType">The type of executable the wrapped tool is</param>
+        <param name="dllName">The name of the dll that will do the tracking</param>
+        <param name="intermediateDirectory">Intermediate directory where tracking logs will be written</param>
+        <param name="rootFiles">Rooting marker</param>
+        <param name="cancelEventName">If Tracker should be listening on a particular event for cancellation, pass its name here</param>
+        <summary>Start the process; tracking the command.</summary>
+        <returns>Process instance</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -621,9 +621,9 @@
         <Parameter Name="taskName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="intermediateDirectory">To be added.</param>
-        <param name="taskName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="intermediateDirectory">The directory into which to write the tracking log files</param>
+        <param name="taskName">The name of the task calling this function, used to determine the names of the tracking log files</param>
+        <summary>Starts tracking file accesses.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -645,10 +645,10 @@
         <Parameter Name="rootMarkerResponseFile" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="intermediateDirectory">To be added.</param>
-        <param name="taskName">To be added.</param>
-        <param name="rootMarkerResponseFile">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="intermediateDirectory">The directory into which to write the tracking log files</param>
+        <param name="taskName">The name of the task calling this function, used to determine the names of the tracking log files</param>
+        <param name="rootMarkerResponseFile">The rooting marker in the response file.</param>
+        <summary>Starts tracking file accesses, using the rooting marker in the response file provided. To automatically generate a response file given a rooting marker, call FileTracker.CreateRootingMarkerResponseFile.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -666,7 +666,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stop tracking file accesses and get rid of the current tracking contexts.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -684,7 +684,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Temporarily suspend tracking of file accesses in the current tracking context.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -708,13 +708,13 @@
         <Parameter Name="rootFiles" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="command">To be added.</param>
-        <param name="arguments">To be added.</param>
-        <param name="dllName">To be added.</param>
-        <param name="intermediateDirectory">To be added.</param>
-        <param name="rootFiles">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="command">The command to track</param>
+        <param name="arguments">The command to track's arguments</param>
+        <param name="dllName">The name of the dll that will do the tracking</param>
+        <param name="intermediateDirectory">Intermediate directory where tracking logs will be written</param>
+        <param name="rootFiles">Rooting marker</param>
+        <summary>This method constructs the correct Tracker.exe arguments from its parameters.</summary>
+        <returns>The arguments as a string</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -739,14 +739,14 @@
         <Parameter Name="cancelEventName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="command">To be added.</param>
-        <param name="arguments">To be added.</param>
-        <param name="dllName">To be added.</param>
-        <param name="intermediateDirectory">To be added.</param>
-        <param name="rootFiles">To be added.</param>
-        <param name="cancelEventName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="command">The command to track</param>
+        <param name="arguments">The command to track's arguments</param>
+        <param name="dllName">The name of the dll that will do the tracking</param>
+        <param name="intermediateDirectory">Intermediate directory where tracking logs will be written</param>
+        <param name="rootFiles">Rooting marker</param>
+        <param name="cancelEventName">If a cancel event has been created that Tracker should be listening for, its name is passed here</param>
+        <summary>This method constructs the correct Tracker.exe arguments from its parameters.</summary>
+        <returns>The arguments as a string</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -767,10 +767,10 @@
         <Parameter Name="arguments" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="command">To be added.</param>
-        <param name="arguments">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="command">The command to track</param>
+        <param name="arguments">The command to track's arguments</param>
+        <summary>This method constructs the correct Tracker.exe command arguments from its parameters</summary>
+        <returns>The arguments as a string</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -792,11 +792,11 @@
         <Parameter Name="rootFiles" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="dllName">To be added.</param>
-        <param name="intermediateDirectory">To be added.</param>
-        <param name="rootFiles">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dllName">The name of the dll that will do the tracking</param>
+        <param name="intermediateDirectory">Intermediate directory where tracking logs will be written</param>
+        <param name="rootFiles">Rooting marker</param>
+        <summary>This method constructs the correct Tracker.exe response file arguments from its parameters.</summary>
+        <returns>The arguments as a string</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -819,12 +819,12 @@
         <Parameter Name="cancelEventName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="dllName">To be added.</param>
-        <param name="intermediateDirectory">To be added.</param>
-        <param name="rootFiles">To be added.</param>
-        <param name="cancelEventName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dllName">The name of the dll that will do the tracking</param>
+        <param name="intermediateDirectory">Intermediate directory where tracking logs will be written</param>
+        <param name="rootFiles">Rooting marker</param>
+        <param name="cancelEventName">If a cancel event has been created that Tracker should be listening for, its name is passed here</param>
+        <summary>This method constructs the correct Tracker.exe response file arguments from its parameters.</summary>
+        <returns>The arguments as a string</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -845,9 +845,9 @@
         <Parameter Name="taskName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="intermediateDirectory">To be added.</param>
-        <param name="taskName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="intermediateDirectory">The directory into which to write the tracking log files</param>
+        <param name="taskName">The name of the task calling this function, used to determine the names of the tracking log files</param>
+        <summary>Write tracking logs for all contexts and threads.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -868,9 +868,9 @@
         <Parameter Name="taskName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="intermediateDirectory">To be added.</param>
-        <param name="taskName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="intermediateDirectory">The directory into which to write the tracking log files</param>
+        <param name="taskName">The name of the task calling this function, used to determine the names of the tracking log files</param>
+        <summary>Write tracking logs corresponding to the current tracking context.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

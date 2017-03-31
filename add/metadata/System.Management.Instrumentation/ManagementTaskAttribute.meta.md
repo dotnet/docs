@@ -1,14 +1,14 @@
 ---
 uid: System.Management.Instrumentation.ManagementTaskAttribute
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.ManagementTaskAttribute.Schema
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.ManagementTaskAttribute.#ctor
-internalonly: False
+manager: "jillfra"
 ---

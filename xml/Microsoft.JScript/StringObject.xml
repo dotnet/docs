@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a string object. This class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,9 +29,9 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="prototype">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="prototype">The parent of the object.</param>
+        <param name="value">The underlying value that the class represents.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.StringObject" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,9 +51,10 @@
         <Parameter Name="ob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ob">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="ob">The string to compare.</param>
+        <summary>Determines whether this string and the specified string have the same value.</summary>
+        <returns>
+          <see langword="true" /> if this string and <paramref name="ob" /> have the same value; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,8 +72,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code for this string.</summary>
+        <returns>A hash code for this string.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,8 +91,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns <see cref="T:System.String" /> or <see cref="T:Microsoft.JScript.StringObject" />.</summary>
+        <returns>
+          <see cref="T:System.String" /> or <see cref="T:Microsoft.JScript.StringObject" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,8 +110,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of characters in the string.</summary>
+        <value>The number of characters in the string.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

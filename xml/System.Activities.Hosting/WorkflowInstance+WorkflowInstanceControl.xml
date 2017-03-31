@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides methods for <see cref="T:System.Activities.Hosting.WorkflowInstance" /> derived classes to access the functionality of the workflow runtime.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,8 +29,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Aborts the <see cref="T:System.Activities.Hosting.WorkflowInstance" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Once <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Abort%2A> is called, most <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl> APIs except <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Abort%2A> throw an <xref:System.InvalidOperationException>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Abort">
@@ -49,9 +56,16 @@
         <Parameter Name="reason" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="reason">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="reason">The reason for aborting the <see cref="T:System.Activities.Hosting.WorkflowInstance" />.</param>
+        <summary>Aborts the <see cref="T:System.Activities.Hosting.WorkflowInstance" /> using the specified exception.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Once <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Abort%2A> is called, most <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl> APIs except <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Abort%2A> throw an <xref:System.InvalidOperationException>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginFlushTrackingRecords">
@@ -72,11 +86,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="timeout">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="timeout">The time period after which to abort the attempt.</param>
+        <param name="callback">The method to be called when the track operation has completed.</param>
+        <param name="state">The information about the asynchronous operation.</param>
+        <summary>Called by the workflow runtime to begin sending pending tracking records to tracking participants asynchronously.</summary>
+        <returns>The status of the current track operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,8 +110,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="result">The status of the asynchronous track operation.</param>
+        <summary>Called by the workflow runtime to end the track operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,9 +131,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The object to compare.</param>
+        <summary>Returns a value that indicates whether the current <see cref="T:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl" /> is equal to the specified object.</summary>
+        <returns>
+          <see langword="true" /> of the object is equal to the current <see cref="T:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -139,8 +154,8 @@
         <Parameter Name="timeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="timeout">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="timeout">The time period after which to abort the attempt.</param>
+        <summary>Called by the workflow runtime to send pending tracking records to tracking participants.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -158,8 +173,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the exception that causes the <see cref="T:System.Activities.Hosting.WorkflowInstance" /> to abort.</summary>
+        <returns>The exception that caused the <see cref="T:System.Activities.Hosting.WorkflowInstance" /> to abort, or <see langword="null" /> if the <see cref="T:System.Activities.Hosting.WorkflowInstance" /> did not abort.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -177,8 +192,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the collection of available bookmarks for the <see cref="T:System.Activities.Hosting.WorkflowInstance" />.</summary>
+        <returns>A collection of bookmarks for the <see cref="T:System.Activities.Hosting.WorkflowInstance" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,9 +213,9 @@
         <Parameter Name="scope" Type="System.Activities.BookmarkScope" />
       </Parameters>
       <Docs>
-        <param name="scope">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="scope">The bookmark scope to inspect.</param>
+        <summary>Returns the collection of available bookmarks for the <see cref="T:System.Activities.Hosting.WorkflowInstance" /> created in the specified <see cref="T:System.Activities.BookmarkScope" />.</summary>
+        <returns>The collection of bookmarks created in the specified <see cref="T:System.Activities.BookmarkScope" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -218,8 +233,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the final <see cref="T:System.Activities.ActivityInstanceState" /> of the <see cref="T:System.Activities.Hosting.WorkflowInstance" />.</summary>
+        <returns>One of the enumeration members that describes the state of an activity instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -239,9 +254,9 @@
         <Parameter Name="terminationException" Type="System.Exception&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="terminationException">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="terminationException">When this method returns, <c>terminationException</c> contains the exception that caused the <see cref="T:System.Activities.Hosting.WorkflowInstance" /> to terminate, or <see langword="null" /> if the <see cref="T:System.Activities.Hosting.WorkflowInstance" /> did not terminate. This parameter is passed uninitialized.</param>
+        <summary>Returns the final <see cref="T:System.Activities.ActivityInstanceState" /> of the <see cref="T:System.Activities.Hosting.WorkflowInstance" />, including termination exception.</summary>
+        <returns>One of the enumeration members that describes the state of an activity instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -262,10 +277,10 @@
         <Parameter Name="terminationException" Type="System.Exception&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="outputs">To be added.</param>
-        <param name="terminationException">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="outputs">When this method returns, <c>outputs</c> contains a dictionary of <see cref="F:System.Activities.ArgumentDirection.Out" /> arguments of the workflow, keyed by argument name. This parameter is passed uninitialized.</param>
+        <param name="terminationException">When this method returns, <c>terminationException</c> contains the exception that caused the <see cref="T:System.Activities.Hosting.WorkflowInstance" /> to terminate, or <see langword="null" /> if the <see cref="T:System.Activities.Hosting.WorkflowInstance" /> did not terminate. This parameter is passed uninitialized.</param>
+        <summary>Returns the final <see cref="T:System.Activities.ActivityInstanceState" /> of the <see cref="T:System.Activities.Hosting.WorkflowInstance" />, including workflow outputs and termination exception.</summary>
+        <returns>One of the enumeration members that describes the state of an activity instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -283,8 +298,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code for this <see cref="T:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl" />.</summary>
+        <returns>The hash code for this <see cref="T:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -302,8 +317,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a dictionary of variables in the current scope that have been specified with <see cref="F:System.Activities.VariableModifiers.Mapped" />.</summary>
+        <returns>A dictionary of mapped variables currently in scope.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -320,8 +335,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Called by the workflow runtime to determine whether this workflow instance has pending tracking records and a tracking participant.</summary>
+        <value>
+          <see langword="true" /> if this workflow instance has pending tracking records and a tracking participant; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -338,8 +354,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Activities.Hosting.WorkflowInstance" /> is in a state where it can be persisted.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Activities.Hosting.WorkflowInstance" /> can be persisted; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -360,10 +377,11 @@
         <Parameter Name="right" Type="System.Activities.Hosting.WorkflowInstance+WorkflowInstanceControl" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first <see cref="T:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl" /> to compare.</param>
+        <param name="right">The second <see cref="T:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl" /> to compare.</param>
+        <summary>Returns a value that indicates whether two <see cref="T:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl" /> instances are equal.</summary>
+        <returns>
+          <see langword="true" /> if the two <see cref="T:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl" /> instances are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -384,10 +402,11 @@
         <Parameter Name="right" Type="System.Activities.Hosting.WorkflowInstance+WorkflowInstanceControl" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first <see cref="T:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl" /> to compare.</param>
+        <param name="right">The second <see cref="T:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl" /> to compare.</param>
+        <summary>Returns a value that indicates whether two <see cref="T:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl" /> instances are not equal.</summary>
+        <returns>
+          <see langword="true" /> if the two <see cref="T:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl" /> instances are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -405,7 +424,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Requests that the workflow runtime pause the <see cref="T:System.Activities.Hosting.WorkflowInstance" /> at the next point of execution where it is possible to persist. Note that the scheduler queue may not be empty at this point.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -423,8 +442,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Prepares the <see cref="T:System.Activities.Hosting.WorkflowInstance" /> state for serialization.</summary>
+        <returns>A workflow instance state.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -442,7 +461,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Requests that the scheduler stops.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -460,7 +479,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Instructs the <see cref="T:System.Activities.Hosting.WorkflowInstance" /> to begin execution.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -481,10 +500,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="bookmark">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="bookmark">The bookmark to resume.</param>
+        <param name="value">The data to be passed to the activity that created the <see cref="T:System.Activities.Bookmark" />.</param>
+        <summary>Schedules a bookmark resumption with the specified value.</summary>
+        <returns>One of the enumeration values that indicates the result of a <see cref="T:System.Activities.Bookmark" /> scheduling operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -506,11 +525,11 @@
         <Parameter Name="scope" Type="System.Activities.BookmarkScope" />
       </Parameters>
       <Docs>
-        <param name="bookmark">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="scope">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="bookmark">The bookmark to resume.</param>
+        <param name="value">The data to be passed to the activity that created the <see cref="T:System.Activities.Bookmark" />.</param>
+        <param name="scope">The <see cref="T:System.Activities.Bookmark" /> under which the <see cref="T:System.Activities.Bookmark" /> was created.</param>
+        <summary>Schedules a <see cref="T:System.Activities.Bookmark" /> resumption from the specified <see cref="T:System.Activities.BookmarkScope" />.</summary>
+        <returns>One of the enumeration values that indicates the result of a <see cref="T:System.Activities.Bookmark" /> scheduling operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -528,8 +547,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Schedules the cancellation of the <see cref="T:System.Activities.Hosting.WorkflowInstance" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method schedules a cancel request for the root activity of the <xref:System.Activities.Hosting.WorkflowInstance>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="State">
@@ -545,8 +571,8 @@
         <ReturnType>System.Activities.Hosting.WorkflowInstanceState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the state of the <see cref="T:System.Activities.Hosting.WorkflowInstance" />.</summary>
+        <value>One of the enumeration values that specifies the state of a <see cref="T:System.Activities.Hosting.WorkflowInstance" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -566,8 +592,8 @@
         <Parameter Name="reason" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="reason">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="reason">The exception that is the reason for terminating the <see cref="T:System.Activities.Hosting.WorkflowInstance" />.</param>
+        <summary>Transitions the <see cref="T:System.Activities.Hosting.WorkflowInstance" /> into the terminal <see cref="F:System.Activities.ActivityInstanceState.Faulted" /> state using the specified exception.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -587,8 +613,8 @@
         <Parameter Name="instanceRecord" Type="System.Activities.Tracking.WorkflowInstanceRecord" />
       </Parameters>
       <Docs>
-        <param name="instanceRecord">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceRecord">The tracking record to add.</param>
+        <summary>Called by the workflow runtime to add the specified pending record to the list of pending records.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -605,10 +631,28 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Called by the workflow runtime to determine whether tracking is enabled in this workflow instance.</summary>
+        <value>
+          <see langword="true" /> if tracking is enabled in this workflow instance; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Abort">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Aborts the <see cref="T:System.Activities.Hosting.WorkflowInstance" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Once <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Abort%2A> is called, most <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl> APIs except <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Abort%2A> throw an <xref:System.InvalidOperationException>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -12,8 +12,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a collection of instances of the <see cref="T:System.Web.Services.Description.Port" /> class. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[PortCollection_Item#1](~/samples/snippets/cpp/VS_Snippets_Remoting/PortCollection_Item/CPP/portcollection_item.cpp#1)]
+ [!code-csharp[PortCollection_Item#1](~/samples/snippets/csharp/VS_Snippets_Remoting/PortCollection_Item/CS/portcollection_item.cs#1)]
+ [!code-vb[PortCollection_Item#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/PortCollection_Item/VB/portcollection_item.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -33,10 +42,19 @@
         <Parameter Name="port" Type="System.Web.Services.Description.Port" />
       </Parameters>
       <Docs>
-        <param name="port">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="port">The <see cref="T:System.Web.Services.Description.Port" /> to add to the collection.</param>
+        <summary>Adds the specified <see cref="T:System.Web.Services.Description.Port" /> to the end of the <see cref="T:System.Web.Services.Description.PortCollection" />.</summary>
+        <returns>The zero-based index where the <paramref name="port" /> parameter has been added.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[PortCollection_Add#2](~/samples/snippets/cpp/VS_Snippets_Remoting/PortCollection_Add/CPP/portcollection_add.cpp#2)]
+ [!code-csharp[PortCollection_Add#2](~/samples/snippets/csharp/VS_Snippets_Remoting/PortCollection_Add/CS/portcollection_add.cs#2)]
+ [!code-vb[PortCollection_Add#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/PortCollection_Add/VB/portcollection_add.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -56,10 +74,20 @@
         <Parameter Name="port" Type="System.Web.Services.Description.Port" />
       </Parameters>
       <Docs>
-        <param name="port">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="port">The <see cref="T:System.Web.Services.Description.Port" /> for which to check collection membership.</param>
+        <summary>Returns a value indicating whether the specified <see cref="T:System.Web.Services.Description.Port" /> is a member of the <see cref="T:System.Web.Services.Description.PortCollection" />.</summary>
+        <returns>
+          <see langword="true" /> if the specified <see cref="T:System.Web.Services.Description.Port" /> is a member of the <see cref="T:System.Web.Services.Description.PortCollection" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[PortCollection_Add#2](~/samples/snippets/cpp/VS_Snippets_Remoting/PortCollection_Add/CPP/portcollection_add.cpp#2)]
+ [!code-csharp[PortCollection_Add#2](~/samples/snippets/csharp/VS_Snippets_Remoting/PortCollection_Add/CS/portcollection_add.cs#2)]
+ [!code-vb[PortCollection_Add#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/PortCollection_Add/VB/portcollection_add.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -80,10 +108,19 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="array">An array of type <see cref="T:System.Web.Services.Description.Port" /> serving as the destination for the copy action.</param>
+        <param name="index">The zero-based index at which to start placing the copied collection.</param>
+        <summary>Copies the entire <see cref="T:System.Web.Services.Description.PortCollection" /> to a one-dimensional array of type <see cref="T:System.Web.Services.Description.Port" />, starting at the specified zero-based index of the target array.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[PortCollection_CopyTo#3](~/samples/snippets/cpp/VS_Snippets_Remoting/PortCollection_CopyTo/CPP/portcollection_copyto.cpp#3)]
+ [!code-csharp[PortCollection_CopyTo#3](~/samples/snippets/csharp/VS_Snippets_Remoting/PortCollection_CopyTo/CS/portcollection_copyto.cs#3)]
+ [!code-vb[PortCollection_CopyTo#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/PortCollection_CopyTo/VB/portcollection_copyto.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetKey">
@@ -126,10 +163,19 @@
         <Parameter Name="port" Type="System.Web.Services.Description.Port" />
       </Parameters>
       <Docs>
-        <param name="port">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="port">The <see cref="T:System.Web.Services.Description.Port" /> for which to search in the collection.</param>
+        <summary>Searches for the specified <see cref="T:System.Web.Services.Description.Port" /> and returns the zero-based index of the first occurrence within the collection.</summary>
+        <returns>A 32-bit signed integer.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[PortCollection_CopyTo#2](~/samples/snippets/cpp/VS_Snippets_Remoting/PortCollection_CopyTo/CPP/portcollection_copyto.cpp#2)]
+ [!code-csharp[PortCollection_CopyTo#2](~/samples/snippets/csharp/VS_Snippets_Remoting/PortCollection_CopyTo/CS/portcollection_copyto.cs#2)]
+ [!code-vb[PortCollection_CopyTo#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/PortCollection_CopyTo/VB/portcollection_copyto.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -150,10 +196,33 @@
         <Parameter Name="port" Type="System.Web.Services.Description.Port" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="port">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index at which to insert the <c>port</c> parameter.</param>
+        <param name="port">The <see cref="T:System.Web.Services.Description.Port" /> to add to the collection.</param>
+        <summary>Adds the specified <see cref="T:System.Web.Services.Description.Port" /> instance to the <see cref="T:System.Web.Services.Description.PortCollection" /> at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the number of items in the collection already equals the collection's capacity, the capacity is doubled by automatically reallocating the internal array before the new element is inserted.  
+  
+ If the value of the `index` parameter is equal to <xref:System.Collections.CollectionBase.Count%2A>, the specified <xref:System.Web.Services.Description.Port> is added to the end of the <xref:System.Web.Services.Description.PortCollection>.  
+  
+ The elements after the insertion point move down to accommodate the new element.  
+  
+   
+  
+## Examples  
+ [!code-cpp[PortCollection_CopyTo#1](~/samples/snippets/cpp/VS_Snippets_Remoting/PortCollection_CopyTo/CPP/portcollection_copyto.cpp#1)]
+ [!code-csharp[PortCollection_CopyTo#1](~/samples/snippets/csharp/VS_Snippets_Remoting/PortCollection_CopyTo/CS/portcollection_copyto.cs#1)]
+ [!code-vb[PortCollection_CopyTo#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/PortCollection_CopyTo/VB/portcollection_copyto.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.IndexOutOfRangeException">The <paramref name="index" /> parameter is less than zero.  
+  
+ \- or -  
+  
+ The <paramref name="index" /> parameter is greater than <see cref="P:System.Collections.CollectionBase.Count" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -173,10 +242,19 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index of the <see cref="T:System.Web.Services.Description.Port" /> whose value is modified or returned.</param>
+        <summary>Gets or sets the value of a <see cref="T:System.Web.Services.Description.Port" /> at the specified zero-based index.</summary>
+        <value>The value of a port at the specified index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[PortCollection_Item#4](~/samples/snippets/cpp/VS_Snippets_Remoting/PortCollection_Item/CPP/portcollection_item.cpp#4)]
+ [!code-csharp[PortCollection_Item#4](~/samples/snippets/csharp/VS_Snippets_Remoting/PortCollection_Item/CS/portcollection_item.cs#4)]
+ [!code-vb[PortCollection_Item#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/PortCollection_Item/VB/portcollection_item.vb#4)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -196,10 +274,19 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the <see cref="T:System.Web.Services.Description.Port" /> returned.</param>
+        <summary>Gets a <see cref="T:System.Web.Services.Description.Port" /> specified by its name.</summary>
+        <value>A port specified by its name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[PortCollection_Item#3](~/samples/snippets/cpp/VS_Snippets_Remoting/PortCollection_Item/CPP/portcollection_item.cpp#3)]
+ [!code-csharp[PortCollection_Item#3](~/samples/snippets/csharp/VS_Snippets_Remoting/PortCollection_Item/CS/portcollection_item.cs#3)]
+ [!code-vb[PortCollection_Item#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/PortCollection_Item/VB/portcollection_item.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -219,9 +306,25 @@
         <Parameter Name="port" Type="System.Web.Services.Description.Port" />
       </Parameters>
       <Docs>
-        <param name="port">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="port">The <see cref="T:System.Web.Services.Description.Port" /> to remove from the collection.</param>
+        <summary>Removes the first occurrence of the specified <see cref="T:System.Web.Services.Description.Port" /> from the <see cref="T:System.Web.Services.Description.PortCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method performs a linear search; therefore, the average execution time is proportional to <xref:System.Collections.CollectionBase.Count%2A>.  
+  
+ The elements that follow the removed <xref:System.Web.Services.Description.Port> move up to occupy the vacated spot.  
+  
+   
+  
+## Examples  
+ [!code-cpp[PortCollection_Item#2](~/samples/snippets/cpp/VS_Snippets_Remoting/PortCollection_Item/CPP/portcollection_item.cpp#2)]
+ [!code-csharp[PortCollection_Item#2](~/samples/snippets/csharp/VS_Snippets_Remoting/PortCollection_Item/CS/portcollection_item.cs#2)]
+ [!code-vb[PortCollection_Item#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/PortCollection_Item/VB/portcollection_item.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetParent">

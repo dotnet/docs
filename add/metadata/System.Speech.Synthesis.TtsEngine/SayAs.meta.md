@@ -1,24 +1,29 @@
 ---
 uid: System.Speech.Synthesis.TtsEngine.SayAs
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.TtsEngine.SayAs.#ctor
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.TtsEngine.SayAs.InterpretAs
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.TtsEngine.SayAs.Detail
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.TtsEngine.SayAs.Format
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

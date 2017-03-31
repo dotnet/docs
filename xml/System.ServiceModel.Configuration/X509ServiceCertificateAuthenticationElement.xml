@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a configuration element that specifies authentication settings for a service certificate. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.X509ServiceCertificateAuthenticationElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +48,8 @@
         <ReturnType>System.ServiceModel.Security.X509CertificateValidationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the certificate validation mode.</summary>
+        <value>The certificate validation mode.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,9 +69,12 @@
         <Parameter Name="from" Type="System.ServiceModel.Configuration.X509ServiceCertificateAuthenticationElement" />
       </Parameters>
       <Docs>
-        <param name="from">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="from">The configuration element to be copied.</param>
+        <summary>Copies the content of the specified configuration element to this configuration element.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="from" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">The configuration file is read-only.</exception>
       </Docs>
     </Member>
     <Member MemberName="CustomCertificateValidatorType">
@@ -95,9 +98,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the type of custom service certificate validator to be used.</summary>
+        <value>The type of <see cref="T:System.IdentityModel.Selectors.X509CertificateValidator" /> to be used.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[indigo1](~/includes/indigo1-md.md)] provides a default service certificate validator that verifies the service certificate against the trusted people store. It also verifies that the certificate chains up to a valid root. You can implement a custom validator to specify a different behavior and use this property to point to the custom validator.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -136,9 +146,16 @@
         <ReturnType>System.Security.Cryptography.X509Certificates.X509RevocationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the certificate revocation mode.</summary>
+        <value>The certificate revocation mode.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The system verifies that the service certificate has not been revoked by looking it up in the revoked certificate list. This check can be performed either by checking online or against a cached revocation list. Revocation checking can be turned off by setting this property to <xref:System.Security.Cryptography.X509Certificates.X509RevocationMode>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TrustedStoreLocation">
@@ -159,9 +176,16 @@
         <ReturnType>System.Security.Cryptography.X509Certificates.StoreLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the trusted store location where the service certificate is validated.</summary>
+        <value>The trusted store location where the service certificate is validated.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[indigo1](~/includes/indigo1-md.md)] security system validates the service certificate against a <xref:System.Security.Cryptography.X509Certificates.StoreLocation>. The store location is specified using this property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

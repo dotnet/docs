@@ -1,124 +1,195 @@
 ---
 uid: System.Data.OleDb.OleDbCommand
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OleDb.OleDbCommand.Connection
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OleDb.OleDbCommand.Cancel
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OleDb.OleDbCommand.Clone
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OleDb.OleDbCommand.ExecuteReader(System.Data.CommandBehavior)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OleDb.OleDbCommand.#ctor(System.String,System.Data.OleDb.OleDbConnection,System.Data.OleDb.OleDbTransaction)
-internalonly: False
----
-
----
-uid: System.Data.OleDb.OleDbCommand.ExecuteNonQuery
-internalonly: False
----
-
----
-uid: System.Data.OleDb.OleDbCommand.CommandText
-internalonly: False
----
-
----
-uid: System.Data.OleDb.OleDbCommand.System#ICloneable#Clone
-internalonly: False
----
-
----
-uid: System.Data.OleDb.OleDbCommand.ExecuteScalar
-internalonly: False
----
-
----
-uid: System.Data.OleDb.OleDbCommand.ExecuteReader
-internalonly: False
----
-
----
-uid: System.Data.OleDb.OleDbCommand.UpdatedRowSource
-internalonly: False
----
-
----
-uid: System.Data.OleDb.OleDbCommand.DesignTimeVisible
-internalonly: False
----
-
----
-uid: System.Data.OleDb.OleDbCommand.Parameters
-internalonly: False
----
-
----
-uid: System.Data.OleDb.OleDbCommand.System#Data#IDbCommand#ExecuteReader(System.Data.CommandBehavior)
-internalonly: False
----
-
----
-uid: System.Data.OleDb.OleDbCommand.ResetCommandTimeout
-internalonly: False
----
-
----
-uid: System.Data.OleDb.OleDbCommand.#ctor(System.String)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OleDb.OleDbCommand.#ctor
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.OleDb.OleDbCommand.CreateParameter
-internalonly: False
+uid: System.Data.OleDb.OleDbCommand.ExecuteReader
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.OleDb.OleDbCommand.CommandType
-internalonly: False
+uid: System.Data.OleDb.OleDbCommand.ExecuteNonQuery
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.OleDb.OleDbCommand.Prepare
-internalonly: False
+uid: System.Data.OleDb.OleDbCommand.CommandText
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.OleDb.OleDbCommand.Transaction
-internalonly: False
----
-
----
-uid: System.Data.OleDb.OleDbCommand.#ctor(System.String,System.Data.OleDb.OleDbConnection)
-internalonly: False
----
-
----
-uid: System.Data.OleDb.OleDbCommand.CommandTimeout
-internalonly: False
+uid: System.Data.OleDb.OleDbCommand.System#ICloneable#Clone
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.OleDb.OleDbCommand.System#Data#IDbCommand#ExecuteReader
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.OleDb.OleDbCommand.ExecuteScalar
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.OleDb.OleDbCommand.ExecuteReader
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.OleDb.OleDbCommand.UpdatedRowSource
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.OleDb.OleDbCommand.DesignTimeVisible
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.OleDb.OleDbCommand.Parameters
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.OleDb.OleDbCommand.System#Data#IDbCommand#ExecuteReader(System.Data.CommandBehavior)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.OleDb.OleDbCommand.ResetCommandTimeout
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.OleDb.OleDbCommand.#ctor(System.String)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.OleDb.OleDbCommand.#ctor
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.OleDb.OleDbCommand.CreateParameter
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.OleDb.OleDbCommand.CommandType
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.OleDb.OleDbCommand.Prepare
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.OleDb.OleDbCommand.Transaction
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.OleDb.OleDbCommand.#ctor(System.String,System.Data.OleDb.OleDbConnection)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.OleDb.OleDbCommand.CommandTimeout
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.OleDb.OleDbCommand.System#Data#IDbCommand#ExecuteReader
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

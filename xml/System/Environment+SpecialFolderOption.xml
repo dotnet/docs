@@ -15,8 +15,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies options to use for getting the path to a special folder.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Environment.SpecialFolderOption?displayProperty=fullName> enumeration is used to define the precise behavior of the <xref:System.Environment.GetFolderPath%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Create">
@@ -37,7 +44,7 @@
         <ReturnType>System.Environment+SpecialFolderOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The path to the folder is created if it does not already exist.</summary>
       </Docs>
     </Member>
     <Member MemberName="DoNotVerify">
@@ -58,7 +65,7 @@
         <ReturnType>System.Environment+SpecialFolderOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The path to the folder is returned without verifying whether the path exists. If the folder is located on a network, specifying this option can reduce lag time.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -79,7 +86,7 @@
         <ReturnType>System.Environment+SpecialFolderOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The path to the folder is verified. If the folder exists, the path is returned. If the folder does not exist, an empty string is returned. This is the default behavior.</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Forms.BorderStyle
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

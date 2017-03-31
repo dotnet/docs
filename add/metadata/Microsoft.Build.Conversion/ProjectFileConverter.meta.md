@@ -1,74 +1,101 @@
 ---
 uid: Microsoft.Build.Conversion.ProjectFileConverter
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Conversion.ProjectFileConverter.Convert(Microsoft.Build.BuildEngine.ProjectLoadSettings)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Conversion.ProjectFileConverter.ConvertInMemory
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Conversion.ProjectFileConverter.SolutionFile
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Conversion.ProjectFileConverter.ConversionSkippedBecauseProjectAlreadyConverted
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Conversion.ProjectFileConverter.FSharpSpecificConversions(System.Boolean)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Conversion.ProjectFileConverter.ConvertInMemory(Microsoft.Build.BuildEngine.Engine,Microsoft.Build.BuildEngine.ProjectLoadSettings)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
+---
+
+---
+uid: Microsoft.Build.Conversion.ProjectFileConverter.ConvertInMemory
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Conversion.ProjectFileConverter.#ctor
-internalonly: False
----
-
----
-uid: Microsoft.Build.Conversion.ProjectFileConverter.Convert(System.String)
-internalonly: False
----
-
----
-uid: Microsoft.Build.Conversion.ProjectFileConverter.ConversionWarnings
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Conversion.ProjectFileConverter.Convert
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
+---
+
+---
+uid: Microsoft.Build.Conversion.ProjectFileConverter.Convert(System.String)
+ms.author: "susanno"
+manager: "douge"
+---
+
+---
+uid: Microsoft.Build.Conversion.ProjectFileConverter.ConversionWarnings
+ms.author: "susanno"
+manager: "douge"
+---
+
+---
+uid: Microsoft.Build.Conversion.ProjectFileConverter.Convert
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Conversion.ProjectFileConverter.NewProjectFile
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Conversion.ProjectFileConverter.ConvertInMemory(Microsoft.Build.BuildEngine.Engine)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Conversion.ProjectFileConverter.IsUserFile
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Conversion.ProjectFileConverter.OldProjectFile
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

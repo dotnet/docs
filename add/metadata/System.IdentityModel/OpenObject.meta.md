@@ -1,14 +1,17 @@
 ---
 uid: System.IdentityModel.OpenObject
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.OpenObject.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.OpenObject.Properties
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

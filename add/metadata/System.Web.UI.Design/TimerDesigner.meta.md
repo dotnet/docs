@@ -1,14 +1,24 @@
 ---
 uid: System.Web.UI.Design.TimerDesigner
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.TimerDesigner.GetDesignTimeHtml
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.TimerDesigner.GetDesignTimeHtml
 ---
 
 ---
 uid: System.Web.UI.Design.TimerDesigner.#ctor
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

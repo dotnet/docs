@@ -1,34 +1,39 @@
 ---
 uid: System.Runtime.Serialization.StreamingContext
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.StreamingContext.State
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.StreamingContext.Equals(System.Object)
-internalonly: False
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Serialization.StreamingContext.#ctor
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.StreamingContext.#ctor(System.Runtime.Serialization.StreamingContextStates,System.Object)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.StreamingContext.#ctor(System.Runtime.Serialization.StreamingContextStates)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.StreamingContext.Context
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.StreamingContext.GetHashCode
-internalonly: False
+manager: "ghogen"
 ---

@@ -1,9 +1,13 @@
 ---
 uid: System.Runtime.Serialization.IgnoreDataMemberAttribute
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.Serialization.IgnoreDataMemberAttribute.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

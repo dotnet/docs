@@ -1,129 +1,167 @@
 ---
 uid: System.Net.Mail.MailMessage
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.MailMessage.IsBodyHtml
-internalonly: False
----
-
----
-uid: System.Net.Mail.MailMessage.Subject
-internalonly: False
----
-
----
-uid: System.Net.Mail.MailMessage.Bcc
-internalonly: False
----
-
----
-uid: System.Net.Mail.MailMessage.Headers
-internalonly: False
----
-
----
-uid: System.Net.Mail.MailMessage.AlternateViews
-internalonly: False
----
-
----
-uid: System.Net.Mail.MailMessage.SubjectEncoding
-internalonly: False
----
-
----
-uid: System.Net.Mail.MailMessage.Sender
-internalonly: False
----
-
----
-uid: System.Net.Mail.MailMessage.CC
-internalonly: False
----
-
----
-uid: System.Net.Mail.MailMessage.Priority
-internalonly: False
----
-
----
-uid: System.Net.Mail.MailMessage.#ctor(System.Net.Mail.MailAddress,System.Net.Mail.MailAddress)
-internalonly: False
----
-
----
-uid: System.Net.Mail.MailMessage.ReplyToList
-internalonly: False
----
-
----
-uid: System.Net.Mail.MailMessage.To
-internalonly: False
----
-
----
-uid: System.Net.Mail.MailMessage.From
-internalonly: False
----
-
----
-uid: System.Net.Mail.MailMessage.Dispose
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.MailMessage.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Mail.MailMessage.Subject
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Mail.MailMessage.Bcc
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Mail.MailMessage.Headers
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Mail.MailMessage.AlternateViews
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Mail.MailMessage.SubjectEncoding
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Mail.MailMessage.Sender
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Mail.MailMessage.CC
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Mail.MailMessage.Priority
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Mail.MailMessage.#ctor(System.Net.Mail.MailAddress,System.Net.Mail.MailAddress)
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Mail.MailMessage.ReplyToList
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Mail.MailMessage.To
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Mail.MailMessage.From
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Mail.MailMessage.Dispose
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Mail.MailMessage.Dispose
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Mail.MailMessage.#ctor
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.MailMessage.Attachments
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.MailMessage.DeliveryNotificationOptions
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.MailMessage.#ctor(System.String,System.String,System.String,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.MailMessage.Dispose(System.Boolean)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.MailMessage.Body
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.MailMessage.HeadersEncoding
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.MailMessage.BodyTransferEncoding
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.MailMessage.ReplyTo
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.MailMessage.#ctor(System.String,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.MailMessage.BodyEncoding
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

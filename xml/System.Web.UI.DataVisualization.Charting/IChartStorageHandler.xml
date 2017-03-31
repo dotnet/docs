@@ -8,7 +8,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines methods to manage rendered chart images stored in an external medium.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="key">Index key.</param>
+        <summary>Deletes the data from the external medium.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,9 +49,10 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">Index key.</param>
+        <summary>Checks for the existence of data under a specified key.</summary>
+        <returns>
+          <see langword="True" /> if data exists under specified key, otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,9 +72,9 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">Index key.</param>
+        <summary>Loads the data from the external medium.</summary>
+        <returns>A <see langword="byte" /> array that contains the image data.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,9 +95,9 @@
         <Parameter Name="data" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="data">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="key">Index key.</param>
+        <param name="data">The image data to save.</param>
+        <summary>Saves the data to the external medium.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,29 +1,44 @@
 ---
 uid: System.Windows.Forms.DataGridView.DataGridViewControlCollection
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.DataGridViewControlCollection.CopyTo
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.DataGridViewControlCollection.Insert(System.Int32,System.Windows.Forms.Control)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.DataGridViewControlCollection.Clear
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.DataGridViewControlCollection.CopyTo(System.Windows.Forms.Control[],System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.DataGridViewControlCollection.Remove(System.Windows.Forms.Control)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.DataGridViewControlCollection.#ctor(System.Windows.Forms.DataGridView)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

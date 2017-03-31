@@ -21,8 +21,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The <see cref="T:System.ComponentModel.Design.Serialization.DefaultSerializationProviderAttribute" /> attribute is placed on a serializer to indicate the class to use as a default provider of that type of serializer.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To be a default serialization provider, a class must implement the <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationProvider> interface and have an empty constructor. The class itself can be internal to the assembly. This class cannot be inherited.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,9 +50,11 @@
         <Parameter Name="providerTypeName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="providerTypeName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="providerTypeName">The name of the serialization provider type.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Serialization.DefaultSerializationProviderAttribute" /> class with the named provider type.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="providerTypeName" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -66,9 +75,11 @@
         <Parameter Name="providerType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="providerType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="providerType">The <see cref="T:System.Type" /> of the serialization provider.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Serialization.DefaultSerializationProviderAttribute" /> class with the given provider type.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="providerType" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ProviderTypeName">
@@ -89,8 +100,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type name of the serialization provider.</summary>
+        <value>A string containing the name of the provider.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

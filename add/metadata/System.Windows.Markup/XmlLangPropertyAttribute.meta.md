@@ -1,14 +1,14 @@
 ---
 uid: System.Windows.Markup.XmlLangPropertyAttribute
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XmlLangPropertyAttribute.Name
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XmlLangPropertyAttribute.#ctor(System.String)
-internalonly: False
+manager: "martinek"
 ---

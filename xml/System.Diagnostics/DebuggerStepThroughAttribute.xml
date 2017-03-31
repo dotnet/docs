@@ -29,8 +29,36 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Instructs the debugger to step through the code instead of stepping into the code. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This attribute is provided for use by source code debuggers; the common language runtime is not affected by it. For example, the Visual Studio debugger does not stop in a method that is marked with this attribute even if a breakpoint is set in the method.  
+  
+ The <xref:System.Diagnostics.DebuggerStepThroughAttribute> attribute affects the [Just My Code](../Topic/Just%20My%20Code.md) (JMC) feature of Visual Studio in the following ways:  
+  
+-   If JMC is enabled, the Visual Studio debugger will not stop at a breakpoint in a method marked with the <xref:System.Diagnostics.DebuggerStepThroughAttribute> attribute.  
+  
+-   If JMC is disabled, the debugger stops at the breakpoint even if the method is marked with the <xref:System.Diagnostics.DebuggerStepThroughAttribute>.  
+  
+ The following code shows how the Visual Basic compiler uses the attribute.  
+  
+```  
+<System.Diagnostics.DebuggerStepThrough()> _  
+    Private Sub InitializeComponent()  
+        components = New System.ComponentModel.Container()  
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font  
+        Me.Text = "Form1"  
+    End Sub  
+```  
+  
+ This attribute avoids having to step into compiler-provided code and only steps into developer-provided code. For example, if you are stepping through code by using the **F11** (Step Into) key, the attribute will cause the step to behave like an **F10** (Step Over) key for compiler-provided code. The method won’t be stepped into, but it will be executed.  
+  
+ For more information about using attributes, see [Attributes](../Topic/Extending%20Metadata%20Using%20Attributes.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -54,7 +82,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.DebuggerStepThroughAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

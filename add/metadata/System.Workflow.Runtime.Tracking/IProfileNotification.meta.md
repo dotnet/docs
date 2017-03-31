@@ -1,14 +1,20 @@
 ---
 uid: System.Workflow.Runtime.Tracking.IProfileNotification
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Tracking.IProfileNotification.ProfileRemoved
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Tracking.IProfileNotification.ProfileUpdated
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

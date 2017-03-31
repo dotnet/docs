@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides data for the <see cref="E:System.Windows.Controls.DataGridColumn.CopyingCellClipboardContent" /> and <see cref="E:System.Windows.Controls.DataGridColumn.PastingCellClipboardContent" /> events.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,10 +30,10 @@
         <Parameter Name="content" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <param name="column">To be added.</param>
-        <param name="content">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="item">The data item for the row that contains the cell for which the event occurred.</param>
+        <param name="column">The column that contains the cell for which the event occurred.</param>
+        <param name="content">The text value of the cell for which the event occurred.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.DataGridCellClipboardEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,8 +50,8 @@
         <ReturnType>System.Windows.Controls.DataGridColumn</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the column that contains the cell for which the event occurred.</summary>
+        <value>The column that contains the cell for which the event occurred.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,8 +68,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the text value of the cell for which the event occurred.</summary>
+        <value>The text value of the cell for which the event occurred.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,8 +86,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the data item for the row that contains the cell for which the event occurred.</summary>
+        <value>The data item for the row that contains the cell for which the event occurred.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

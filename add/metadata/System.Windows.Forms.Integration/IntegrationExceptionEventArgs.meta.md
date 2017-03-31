@@ -1,19 +1,26 @@
 ---
 uid: System.Windows.Forms.Integration.IntegrationExceptionEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Integration.IntegrationExceptionEventArgs.ThrowException
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Integration.IntegrationExceptionEventArgs.Exception
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.Integration.IntegrationExceptionEventArgs.#ctor(System.Boolean,System.Exception)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

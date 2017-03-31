@@ -1,9 +1,13 @@
 ---
 uid: System.Windows.Automation.Peers.HostedWindowWrapper
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.HostedWindowWrapper.#ctor(System.IntPtr)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

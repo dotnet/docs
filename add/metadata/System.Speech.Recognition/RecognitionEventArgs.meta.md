@@ -1,9 +1,11 @@
 ---
 uid: System.Speech.Recognition.RecognitionEventArgs
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.RecognitionEventArgs.Result
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

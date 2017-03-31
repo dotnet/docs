@@ -1,1 +1,0 @@
-   if (str == nullptr || str->Equals(String::Empty) || str->Trim()->Equals(String::Empty))

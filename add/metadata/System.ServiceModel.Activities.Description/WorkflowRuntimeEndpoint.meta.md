@@ -1,39 +1,44 @@
 ---
 uid: System.ServiceModel.Activities.Description.WorkflowRuntimeEndpoint
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Description.WorkflowRuntimeEndpoint.GetService(System.Type)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Description.WorkflowRuntimeEndpoint.OnResolveBookmark(System.Object[],System.ServiceModel.OperationContext,System.ServiceModel.Activities.WorkflowHostingResponseContext,System.Object@)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Description.WorkflowRuntimeEndpoint.GetService``1
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Description.WorkflowRuntimeEndpoint.#ctor
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Description.WorkflowRuntimeEndpoint.OnGetInstanceId(System.Object[],System.ServiceModel.OperationContext)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Description.WorkflowRuntimeEndpoint.RemoveService(System.Object)
-internalonly: False
+manager: "ghogen"
+---
+
+---
+uid: System.ServiceModel.Activities.Description.WorkflowRuntimeEndpoint.GetService
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Description.WorkflowRuntimeEndpoint.AddService(System.Object)
-internalonly: False
+manager: "ghogen"
 ---

@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the abstract base class for all keys that are generated using symmetric algorithms.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, this class is used by the infrastructure to transform XML using a symmetric key.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SymmetricSecurityKey" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,14 +57,21 @@
         <Parameter Name="offset" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="algorithm">To be added.</param>
-        <param name="label">To be added.</param>
-        <param name="nonce">To be added.</param>
-        <param name="derivedKeyLength">To be added.</param>
-        <param name="offset">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="algorithm">A URI that represents the cryptographic algorithm to use to generate the derived key.</param>
+        <param name="label">An array of <see cref="T:System.Byte" /> that contains the label parameter for the cryptographic algorithm.</param>
+        <param name="nonce">An array of <see cref="T:System.Byte" /> that contains the nonce that is used to create a derived key.</param>
+        <param name="derivedKeyLength">The size of the derived key.</param>
+        <param name="offset">The position at which the derived key is located in the byte array that is returned from this method.</param>
+        <summary>When overridden in a derived class, generates a derived key using the specified cryptographic algorithm and parameters for the current key.</summary>
+        <returns>An array of <see cref="T:System.Byte" /> that contains the derived key.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To specify P-SHA1 as the cryptographic algorithm, use the <xref:System.IdentityModel.Tokens.SecurityAlgorithms.Psha1KeyDerivation> field.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDecryptionTransform">
@@ -77,11 +91,18 @@
         <Parameter Name="iv" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="algorithm">To be added.</param>
-        <param name="iv">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="algorithm">A cryptographic algorithm that decrypts cipher text, such as encrypted XML.</param>
+        <param name="iv">An array of <see cref="T:System.Byte" /> that contains the initialization vector (<see langword="IV" />) for the specified algorithm.</param>
+        <summary>When overridden in a derived class, gets a transform that decrypts cipher text using the specified cryptographic algorithm.</summary>
+        <returns>An <see cref="T:System.Security.Cryptography.ICryptoTransform" /> that represents the decryption transform.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the fields that represent decryption algorithms in the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class to specify the algorithm.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEncryptionTransform">
@@ -101,11 +122,18 @@
         <Parameter Name="iv" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="algorithm">To be added.</param>
-        <param name="iv">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="algorithm">A cryptographic algorithm that encrypts XML.</param>
+        <param name="iv">An array of <see cref="T:System.Byte" /> that contains the initialization vector (<see langword="IV" />) for the specified algorithm.</param>
+        <summary>When overridden in a derived class, gets a transform that encrypts XML using the specified cryptographic algorithm.</summary>
+        <returns>An <see cref="T:System.Security.Cryptography.ICryptoTransform" /> that represents the encryption transform.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the fields that represent decryption algorithms in the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class to specify the algorithm.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetIVSize">
@@ -124,9 +152,9 @@
         <Parameter Name="algorithm" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="algorithm">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="algorithm">The cryptographic algorithm to get the size of the initialization vector (<see langword="IV" />).</param>
+        <summary>When overridden in a derived class, gets the size, in bits, of the initialization vector (<see langword="IV" />) that is required for the specified cryptographic algorithm.</summary>
+        <returns>The size, in bits, of the initialization vector (<see langword="IV" />) that is required for the cryptographic algorithm specified in the <paramref name="algorithm" /> parameter.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,10 +174,17 @@
         <Parameter Name="algorithm" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="algorithm">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="algorithm">The keyed hash algorithm to get an instance of.</param>
+        <summary>When overridden in a derived class, gets an instance of the specified keyed hash algorithm.</summary>
+        <returns>A <see cref="T:System.Security.Cryptography.KeyedHashAlgorithm" /> that represents the keyed hash algorithm.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the fields that represent keyed hash algorithms in the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class to specify the algorithm.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSymmetricAlgorithm">
@@ -168,10 +203,17 @@
         <Parameter Name="algorithm" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="algorithm">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="algorithm">The symmetric algorithm to get an instance of.</param>
+        <summary>When overridden in a derived class, gets an instance of the specified symmetric algorithm.</summary>
+        <returns>A <see cref="T:System.Security.Cryptography.SymmetricAlgorithm" /> that represents the symmetric algorithm.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the fields that represent symmetric algorithms in the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class to specify the algorithm.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSymmetricKey">
@@ -188,8 +230,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>When overridden in a derived class, gets the bytes that represent the symmetric key.</summary>
+        <returns>An array of <see cref="T:System.Byte" /> that contains the symmetric key.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

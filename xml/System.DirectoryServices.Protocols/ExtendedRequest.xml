@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.ExtendedRequest" /> class passes extended LDAP operations to the server.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.ExtendedRequest.#ctor" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.ExtendedRequest" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <Parameter Name="requestName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="requestName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="requestName">The name of the request.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.ExtendedRequest.#ctor(System.String)" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.ExtendedRequest" /> class using the specified name.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,9 +62,9 @@
         <Parameter Name="requestValue" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="requestName">To be added.</param>
-        <param name="requestValue">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="requestName">The name of the request.</param>
+        <param name="requestValue">The value of the request.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.ExtendedRequest.#ctor(System.String,System.Byte[])" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.ExtendedRequest" /> class using the specified name and value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,8 +81,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.ExtendedRequest.RequestName" /> property contains the request name.</summary>
+        <value>The request name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,8 +99,8 @@
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.ExtendedRequest.RequestValue" /> property contains the value of the request.</summary>
+        <value>The value of the request.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,9 +120,9 @@
         <Parameter Name="doc" Type="System.Xml.XmlDocument" />
       </Parameters>
       <Docs>
-        <param name="doc">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="doc">An <see cref="T:System.Xml.XmlDocument" /> object.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.ExtendedRequest.ToXmlNode(System.Xml.XmlDocument)" /> method creates an XML node from the specified <see cref="T:System.Xml.XmlDocument" /> object.</summary>
+        <returns>The resulting <see cref="T:System.Xml.XmlElement" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

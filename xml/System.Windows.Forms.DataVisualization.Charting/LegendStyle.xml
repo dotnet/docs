@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the legend style.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.LegendStyle> enumeration represents a legend style, and is used in conjunction with the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.LegendStyle%2A> property.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Column">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LegendStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Legend items are displayed using one column and multiple rows.</summary>
       </Docs>
     </Member>
     <Member MemberName="Row">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LegendStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Legend items are displayed using multiple columns and one row.</summary>
       </Docs>
     </Member>
     <Member MemberName="Table">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LegendStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Legend items are displayed using multiple columns and multiple rows.</summary>
       </Docs>
     </Member>
   </Members>

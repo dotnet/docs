@@ -11,8 +11,52 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides debug tracing support that is specifically targeted for [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] applications.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Debug tracing is only available when a [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] application is running in full trust mode.  
+  
+ In order to enable tracing, you first must set a registry key, then you must configure trace sources.  
+  
+-   To create the registry key, set a "ManagedTracing" reg_dword value to 1 under "HKeyCurrentUser\Software\Microsoft\Tracing\WPF".  
+  
+-   To configure trace sources, create an application config file. This file has a .config extension, for example, XamlPad.exe.config.  
+  
+ Achieving optimal application performance requires forethought in application design and an understanding of best practices for [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] application development. For more information, see [Optimizing WPF Application Performance](../Topic/Optimizing%20WPF%20Application%20Performance.md).  
+  
+   
+  
+## Examples  
+ The following sample configuration file enables tracing of animations, writing the output to a text file called "debug.txt".  
+  
+```  
+<configuration>  
+  <system.diagnostics>  
+    <sources>  
+      <source name="System.Windows.Media.Animation"  
+switchName="SourceSwitch" >  
+        <listeners>  
+          <add name="textListener" />  
+        </listeners>  
+      </source>  
+    </sources>  
+    <switches>  
+      <add name="SourceSwitch" value="All" />  
+    </switches>  
+    <sharedListeners>  
+      <add name="textListener"  
+           type="System.Diagnostics.TextWriterTraceListener"  
+           initializeData="Debug.txt" />  
+    </sharedListeners>  
+    <trace autoflush="true" indentsize="4"></trace>  
+  </system.diagnostics>  
+</configuration>  
+```  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AnimationSource">
@@ -28,8 +72,8 @@
         <ReturnType>System.Diagnostics.TraceSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an animation trace source.</summary>
+        <value>An animation trace source.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +90,8 @@
         <ReturnType>System.Diagnostics.TraceSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a data-binding trace source.</summary>
+        <value>A data-binding trace source.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +108,8 @@
         <ReturnType>System.Diagnostics.TraceSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a dependency property trace source.</summary>
+        <value>A dependency property trace source.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +126,8 @@
         <ReturnType>System.Diagnostics.TraceSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a document trace source.</summary>
+        <value>A document trace source.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,8 +144,8 @@
         <ReturnType>System.Diagnostics.TraceSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a Freezable trace source.</summary>
+        <value>A Freezable trace source.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,10 +165,17 @@
         <Parameter Name="element" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="element">The element from which the property value is read.</param>
+        <summary>Gets the value of the <see cref="P:System.Diagnostics.PresentationTraceSources.TraceLevel" /> attached property for a specified element.</summary>
+        <returns>The <see cref="P:System.Diagnostics.PresentationTraceSources.TraceLevel" /> property value for the element.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Diagnostics.PresentationTraceSources.GetTraceLevel%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HwndHostSource">
@@ -140,9 +191,16 @@
         <ReturnType>System.Diagnostics.TraceSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets an hwnd host trace source.</summary>
+        <value>An hwnd host trace source.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Diagnostics.PresentationTraceSources.HwndHostSource%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MarkupSource">
@@ -158,8 +216,8 @@
         <ReturnType>System.Diagnostics.TraceSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a markup trace source.</summary>
+        <value>A markup trace source.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -176,8 +234,8 @@
         <ReturnType>System.Diagnostics.TraceSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a name scope trace source.</summary>
+        <value>A name scope trace source.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -195,7 +253,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Refreshes trace sources, by forcing the app.config file to be re-read.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -212,8 +270,8 @@
         <ReturnType>System.Diagnostics.TraceSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a resource dictionary trace source.</summary>
+        <value>A resource dictionary trace source.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -230,8 +288,8 @@
         <ReturnType>System.Diagnostics.TraceSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a routed event trace source.</summary>
+        <value>A routed event trace source.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -252,10 +310,17 @@
         <Parameter Name="traceLevel" Type="System.Diagnostics.PresentationTraceLevel" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="traceLevel">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="element">The element to which the attached property is written.</param>
+        <param name="traceLevel">The needed <see cref="T:System.Diagnostics.PresentationTraceLevel" /> value.</param>
+        <summary>Sets the value of the <see cref="P:System.Diagnostics.PresentationTraceSources.TraceLevel" /> attached property to a specified element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Diagnostics.PresentationTraceSources.SetTraceLevel%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ShellSource">
@@ -271,8 +336,8 @@
         <ReturnType>System.Diagnostics.TraceSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a shell trace source.</summary>
+        <value>A shell trace source.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -289,8 +354,15 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Identifies the <see cref="P:System.Diagnostics.PresentationTraceSources.TraceLevel" /> attached property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Diagnostics.PresentationTraceSources.TraceLevelProperty> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

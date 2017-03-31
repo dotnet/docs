@@ -1,79 +1,114 @@
 ---
 uid: System.Windows.Forms.Design.ComponentDocumentDesigner
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.ComponentDocumentDesigner.System#ComponentModel#Design#ITypeDescriptorFilterService#FilterAttributes(System.ComponentModel.IComponent,System.Collections.IDictionary)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.ComponentDocumentDesigner.GetToolSupported(System.Drawing.Design.ToolboxItem)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.ComponentDocumentDesigner.System#ComponentModel#Design#ITypeDescriptorFilterService#FilterEvents(System.ComponentModel.IComponent,System.Collections.IDictionary)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.ComponentDocumentDesigner.Control
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.ComponentDocumentDesigner.PreFilterProperties(System.Collections.IDictionary)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.Design.ComponentDocumentDesigner.System#Drawing#Design#IToolboxUser#GetToolSupported(System.Drawing.Design.ToolboxItem)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.Design.ComponentDocumentDesigner.TrayLargeIcon
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.ComponentDocumentDesigner.System#ComponentModel#Design#ITypeDescriptorFilterService#FilterProperties(System.ComponentModel.IComponent,System.Collections.IDictionary)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.Design.ComponentDocumentDesigner.Dispose
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.Design.ComponentDocumentDesigner.System#ComponentModel#Design#IRootDesigner#GetView(System.ComponentModel.Design.ViewTechnology)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.ComponentDocumentDesigner.System#Drawing#Design#IToolboxUser#ToolPicked(System.Drawing.Design.ToolboxItem)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.ComponentDocumentDesigner.TrayAutoArrange
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.ComponentDocumentDesigner.Initialize(System.ComponentModel.IComponent)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.ComponentDocumentDesigner.Dispose(System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.ComponentDocumentDesigner.System#ComponentModel#Design#IRootDesigner#SupportedTechnologies
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.ComponentDocumentDesigner.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

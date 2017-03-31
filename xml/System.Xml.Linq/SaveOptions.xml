@@ -25,8 +25,66 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies serialization options.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you disable formatting when serializing, all insignificant white space in the XML tree is serialized as is. If you do not disable formatting, then all insignificant white space in the XML tree is discarded, and the XML is formatted (indented) as it is serialized.  
+  
+ This type allows you to control how LINQ to XML handles white space when serializing. For more information, see [Preserving White Space while Loading or Parsing XML](../Topic/Preserving%20White%20Space%20while%20Loading%20or%20Parsing%20XML3.md) and [Preserving White Space While Serializing](../Topic/Preserving%20White%20Space%20While%20Serializing1.md).  
+  
+   
+  
+## Examples  
+ The following example shows two ways to serialize. The first preserves insignificant white space in the XML tree. The second serializes the <xref:System.Xml.Linq.XElement> with formatting.  
+  
+```csharp  
+  
+                string str;  
+XElement root = XElement.Parse(@"<Root> <Child> Text </Child> </Root>");  
+  
+root.Save("Root.xml", SaveOptions.DisableFormatting);  
+str = File.ReadAllText("Root.xml");  
+Console.WriteLine(str);  
+  
+Console.WriteLine("=====");  
+  
+root.Save("Root.xml", SaveOptions.None);  
+str = File.ReadAllText("Root.xml");  
+Console.WriteLine(str);  
+```  
+  
+```vb  
+  
+                Dim str As String  
+Dim root As XElement = <Root><Child> Text </Child></Root>  
+  
+root.Save("Root.xml", SaveOptions.DisableFormatting)  
+str = File.ReadAllText("Root.xml")  
+Console.WriteLine(str)  
+  
+Console.WriteLine("=====")  
+  
+root.Save("Root.xml", SaveOptions.None)  
+str = File.ReadAllText("Root.xml")  
+Console.WriteLine(str)  
+  
+```  
+  
+ This example produces the following output:  
+  
+```  
+<?xml version="1.0" encoding="utf-8"?><Root><Child> Text </Child></Root>  
+=====  
+<?xml version="1.0" encoding="utf-8"?>  
+<Root>  
+  <Child> Text </Child>  
+</Root>  
+```  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="DisableFormatting">
@@ -52,7 +110,7 @@
         <ReturnType>System.Xml.Linq.SaveOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Preserve all insignificant white space while serializing.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -78,7 +136,7 @@
         <ReturnType>System.Xml.Linq.SaveOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Format (indent) the XML while serializing.</summary>
       </Docs>
     </Member>
     <Member MemberName="OmitDuplicateNamespaces">
@@ -104,7 +162,7 @@
         <ReturnType>System.Xml.Linq.SaveOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Remove the duplicate namespace declarations while serializing.</summary>
       </Docs>
     </Member>
   </Members>

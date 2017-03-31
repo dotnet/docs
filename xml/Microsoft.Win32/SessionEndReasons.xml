@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines identifiers that represent how the current logon session is ending.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>Microsoft.Win32.SessionEndReasons</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The user is logging off and ending the current user session. The operating system continues to run.</summary>
       </Docs>
     </Member>
     <Member MemberName="SystemShutdown">
@@ -43,7 +43,7 @@
         <ReturnType>Microsoft.Win32.SessionEndReasons</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The operating system is shutting down.</summary>
       </Docs>
     </Member>
   </Members>

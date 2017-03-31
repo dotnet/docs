@@ -19,8 +19,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an ordered pair of floating-point x- and y-coordinates that defines a point in a two-dimensional plane.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To convert a <xref:System.Drawing.PointF> to a <xref:System.Drawing.Point>, use <xref:System.Drawing.Point.Round%2A?displayProperty=fullName> or <xref:System.Drawing.Point.Truncate%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,9 +52,9 @@
         <Parameter Name="y" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="x">The horizontal position of the point.</param>
+        <param name="y">The vertical position of the point.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.PointF" /> class with the specified coordinates.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,11 +83,18 @@
         <Parameter Name="sz" Type="System.Drawing.Size" />
       </Parameters>
       <Docs>
-        <param name="pt">To be added.</param>
-        <param name="sz">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="pt">The <see cref="T:System.Drawing.PointF" /> to translate.</param>
+        <param name="sz">The <see cref="T:System.Drawing.Size" /> that specifies the numbers to add to the coordinates of <c>pt</c>.</param>
+        <summary>Translates a given <see cref="T:System.Drawing.PointF" /> by the specified <see cref="T:System.Drawing.Size" />.</summary>
+        <returns>The translated <see cref="T:System.Drawing.PointF" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Drawing.PointF.Add%2A> method adds the <xref:System.Drawing.Size.Width%2A> of the specified size to the x-coordinate of the <xref:System.Drawing.PointF> and the <xref:System.Drawing.Size.Height%2A> to the y-coordinate of the <xref:System.Drawing.PointF>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -108,11 +122,26 @@
         <Parameter Name="sz" Type="System.Drawing.SizeF" />
       </Parameters>
       <Docs>
-        <param name="pt">To be added.</param>
-        <param name="sz">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="pt">The <see cref="T:System.Drawing.PointF" /> to translate.</param>
+        <param name="sz">The <see cref="T:System.Drawing.SizeF" /> that specifies the numbers to add to the coordinates of <c>pt</c>.</param>
+        <summary>Translates a given <see cref="T:System.Drawing.PointF" /> by a specified <see cref="T:System.Drawing.SizeF" />.</summary>
+        <returns>The translated <see cref="T:System.Drawing.PointF" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Drawing.PointF.Add%2A> method adds the <xref:System.Drawing.SizeF.Width%2A> of the specified size to the x-coordinate of the <xref:System.Drawing.PointF> and the <xref:System.Drawing.SizeF.Height%2A> to the y-coordinate of the <xref:System.Drawing.PointF>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Drawing.PointF.Add%2A> method. To run this example, paste the following code into a Windows Form. Handle the form's <xref:System.Windows.Forms.Control.Paint> event and call `AddExample`, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-csharp[System.Drawing.Misc3#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Misc3/CS/Form1.cs#6)]
+ [!code-vb[System.Drawing.Misc3#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Misc3/VB/Form1.vb#6)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Empty">
@@ -136,7 +165,7 @@
         <ReturnType>System.Drawing.PointF</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents a new instance of the <see cref="T:System.Drawing.PointF" /> class with member data left uninitialized.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -164,9 +193,9 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The <see cref="T:System.Object" /> to test.</param>
+        <summary>Specifies whether this <see cref="T:System.Drawing.PointF" /> contains the same coordinates as the specified <see cref="T:System.Object" />.</summary>
+        <returns>This method returns <see langword="true" /> if <paramref name="obj" /> is a <see cref="T:System.Drawing.PointF" /> and has the same coordinates as this <see cref="T:System.Drawing.Point" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -192,8 +221,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a hash code for this <see cref="T:System.Drawing.PointF" /> structure.</summary>
+        <returns>An integer value that specifies a hash value for this <see cref="T:System.Drawing.PointF" /> structure.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -218,8 +247,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether this <see cref="T:System.Drawing.PointF" /> is empty.</summary>
+        <value>
+          <see langword="true" /> if both <see cref="P:System.Drawing.PointF.X" /> and <see cref="P:System.Drawing.PointF.Y" /> are 0; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -248,11 +278,23 @@
         <Parameter Name="sz" Type="System.Drawing.Size" />
       </Parameters>
       <Docs>
-        <param name="pt">To be added.</param>
-        <param name="sz">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="pt">The <see cref="T:System.Drawing.PointF" /> to translate.</param>
+        <param name="sz">A <see cref="T:System.Drawing.Size" /> that specifies the pair of numbers to add to the coordinates of <c>pt</c>.</param>
+        <summary>Translates a <see cref="T:System.Drawing.PointF" /> by a given <see cref="T:System.Drawing.Size" />.</summary>
+        <returns>Returns the translated <see cref="T:System.Drawing.PointF" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+  
+-   The following code example adds a shadow to a <xref:System.Windows.Forms.ListBox> using the <xref:System.Drawing.PointF.op_Addition%2A> operator. This example is designed to be used with a Windows Form. To run this example, paste this code into a form and call the `AddShadow` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event. Make sure the form contains a <xref:System.Windows.Forms.ListBox> named `listBox1`.  
+  
+ [!code-cpp[System.Drawing.MiscExamples#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CPP/form1.cpp#3)]
+ [!code-csharp[System.Drawing.MiscExamples#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CS/form1.cs#3)]
+ [!code-vb[System.Drawing.MiscExamples#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscExamples/VB/form1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
@@ -280,11 +322,26 @@
         <Parameter Name="sz" Type="System.Drawing.SizeF" />
       </Parameters>
       <Docs>
-        <param name="pt">To be added.</param>
-        <param name="sz">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="pt">The <see cref="T:System.Drawing.PointF" /> to translate.</param>
+        <param name="sz">The <see cref="T:System.Drawing.SizeF" /> that specifies the numbers to add to the x- and y-coordinates of the <see cref="T:System.Drawing.PointF" />.</param>
+        <summary>Translates the <see cref="T:System.Drawing.PointF" /> by the specified <see cref="T:System.Drawing.SizeF" />.</summary>
+        <returns>The translated <see cref="T:System.Drawing.PointF" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Drawing.PointF.op_Addition%2A> operator adds the <xref:System.Drawing.SizeF.Width%2A> of the specified size to the x-coordinate of the <xref:System.Drawing.PointF> and the <xref:System.Drawing.SizeF.Height%2A> to the y-coordinate of the <xref:System.Drawing.PointF>.  
+  
+ The equivalent method for this operator is <xref:System.Drawing.PointF.Add%28System.Drawing.PointF%2CSystem.Drawing.SizeF%29?displayProperty=fullName>  
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Drawing.PointF.op_Addition%2A> operator. To run this example, paste the following code into a Windows Form. Handle the form's <xref:System.Windows.Forms.Control.Paint> event and call `opAdditionExample`, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-csharp[System.Drawing.Misc3#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Misc3/CS/Form1.cs#5)]
+ [!code-vb[System.Drawing.Misc3#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Misc3/VB/Form1.vb#5)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -312,11 +369,22 @@
         <Parameter Name="right" Type="System.Drawing.PointF" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="left">A <see cref="T:System.Drawing.PointF" /> to compare.</param>
+        <param name="right">A <see cref="T:System.Drawing.PointF" /> to compare.</param>
+        <summary>Compares two <see cref="T:System.Drawing.PointF" /> structures. The result specifies whether the values of the <see cref="P:System.Drawing.PointF.X" /> and <see cref="P:System.Drawing.PointF.Y" /> properties of the two <see cref="T:System.Drawing.PointF" /> structures are equal.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="P:System.Drawing.PointF.X" /> and <see cref="P:System.Drawing.PointF.Y" /> values of the left and right <see cref="T:System.Drawing.PointF" /> structures are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Drawing.PointF.op_Equality%2A> operator. To run this example, paste the following code into a Windows Form. Handle the form's <xref:System.Windows.Forms.Control.Paint> event and call `opAdditionExample`, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-csharp[System.Drawing.Misc3#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Misc3/CS/Form1.cs#5)]
+ [!code-vb[System.Drawing.Misc3#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Misc3/VB/Form1.vb#5)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -344,11 +412,22 @@
         <Parameter Name="right" Type="System.Drawing.PointF" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="left">A <see cref="T:System.Drawing.PointF" /> to compare.</param>
+        <param name="right">A <see cref="T:System.Drawing.PointF" /> to compare.</param>
+        <summary>Determines whether the coordinates of the specified points are not equal.</summary>
+        <returns>
+          <see langword="true" /> to indicate the <see cref="P:System.Drawing.PointF.X" /> and <see cref="P:System.Drawing.PointF.Y" /> values of <paramref name="left" /> and <paramref name="right" /> are not equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Drawing.PointF.op_Inequality%2A> operator. To run this example, paste the following code into a Windows Form. Handle the form's <xref:System.Windows.Forms.Control.Paint> event and call `AddExample`, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-csharp[System.Drawing.Misc3#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Misc3/CS/Form1.cs#6)]
+ [!code-vb[System.Drawing.Misc3#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Misc3/VB/Form1.vb#6)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
@@ -376,10 +455,10 @@
         <Parameter Name="sz" Type="System.Drawing.Size" />
       </Parameters>
       <Docs>
-        <param name="pt">To be added.</param>
-        <param name="sz">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="pt">The <see cref="T:System.Drawing.PointF" /> to translate.</param>
+        <param name="sz">The <see cref="T:System.Drawing.Size" /> that specifies the numbers to subtract from the coordinates of <c>pt</c>.</param>
+        <summary>Translates a <see cref="T:System.Drawing.PointF" /> by the negative of a given <see cref="T:System.Drawing.Size" />.</summary>
+        <returns>The translated <see cref="T:System.Drawing.PointF" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -408,11 +487,26 @@
         <Parameter Name="sz" Type="System.Drawing.SizeF" />
       </Parameters>
       <Docs>
-        <param name="pt">To be added.</param>
-        <param name="sz">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="pt">The <see cref="T:System.Drawing.PointF" /> to translate.</param>
+        <param name="sz">The <see cref="T:System.Drawing.SizeF" /> that specifies the numbers to subtract from the coordinates of <c>pt</c>.</param>
+        <summary>Translates a <see cref="T:System.Drawing.PointF" /> by the negative of a specified <see cref="T:System.Drawing.SizeF" />.</summary>
+        <returns>The translated <see cref="T:System.Drawing.PointF" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Drawing.PointF.op_Subtraction%2A> operator subtracts the <xref:System.Drawing.SizeF.Width%2A> of the specified size from the x-coordinate of the <xref:System.Drawing.PointF> and the <xref:System.Drawing.SizeF.Height%2A> from the y-coordinate of the <xref:System.Drawing.PointF>.  
+  
+ The equivalent method for this operator is <xref:System.Drawing.PointF.Subtract%28System.Drawing.PointF%2CSystem.Drawing.SizeF%29?displayProperty=fullName>  
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Drawing.PointF.op_Subtraction%2A> operator. To run this example, paste the following code into a Windows Form. Handle the form's <xref:System.Windows.Forms.Control.Paint> event and call `opSubtractionExample`, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-csharp[System.Drawing.Misc3#8](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Misc3/CS/Form1.cs#8)]
+ [!code-vb[System.Drawing.Misc3#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Misc3/VB/Form1.vb#8)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Subtract">
@@ -440,11 +534,18 @@
         <Parameter Name="sz" Type="System.Drawing.Size" />
       </Parameters>
       <Docs>
-        <param name="pt">To be added.</param>
-        <param name="sz">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="pt">The <see cref="T:System.Drawing.PointF" /> to translate.</param>
+        <param name="sz">The <see cref="T:System.Drawing.Size" /> that specifies the numbers to subtract from the coordinates of <c>pt</c>.</param>
+        <summary>Translates a <see cref="T:System.Drawing.PointF" /> by the negative of a specified size.</summary>
+        <returns>The translated <see cref="T:System.Drawing.PointF" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Drawing.PointF.Subtract%2A> method subtracts the <xref:System.Drawing.Size.Width%2A> of the specified size from the x-coordinate of the <xref:System.Drawing.PointF> and the <xref:System.Drawing.Size.Height%2A> from the y-coordinate of the <xref:System.Drawing.PointF>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Subtract">
@@ -472,11 +573,26 @@
         <Parameter Name="sz" Type="System.Drawing.SizeF" />
       </Parameters>
       <Docs>
-        <param name="pt">To be added.</param>
-        <param name="sz">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="pt">The <see cref="T:System.Drawing.PointF" /> to translate.</param>
+        <param name="sz">The <see cref="T:System.Drawing.SizeF" /> that specifies the numbers to subtract from the coordinates of <c>pt</c>.</param>
+        <summary>Translates a <see cref="T:System.Drawing.PointF" /> by the negative of a specified size.</summary>
+        <returns>The translated <see cref="T:System.Drawing.PointF" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Drawing.PointF.Subtract%2A> method subtracts the <xref:System.Drawing.SizeF.Width%2A> of the specified size from the x-coordinate of the <xref:System.Drawing.PointF> and the <xref:System.Drawing.SizeF.Height%2A> from the y-coordinate of the <xref:System.Drawing.PointF>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Drawing.PointF.Subtract%2A> operator. To run this example, paste the following code into a Windows Form. Handle the form's <xref:System.Windows.Forms.Control.Paint> event and call `SubtractExample`, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-csharp[System.Drawing.Misc3#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Misc3/CS/Form1.cs#7)]
+ [!code-vb[System.Drawing.Misc3#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Misc3/VB/Form1.vb#7)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -501,8 +617,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Converts this <see cref="T:System.Drawing.PointF" /> to a human readable string.</summary>
+        <returns>A string that represents this <see cref="T:System.Drawing.PointF" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -527,8 +643,8 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the x-coordinate of this <see cref="T:System.Drawing.PointF" />.</summary>
+        <value>The x-coordinate of this <see cref="T:System.Drawing.PointF" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -553,8 +669,8 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the y-coordinate of this <see cref="T:System.Drawing.PointF" />.</summary>
+        <value>The y-coordinate of this <see cref="T:System.Drawing.PointF" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

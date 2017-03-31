@@ -8,7 +8,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines a method that automatically generates fields for data-bound controls that use ASP.NET Dynamic Data features.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,8 +29,8 @@
       </Parameters>
       <Docs>
         <param name="control">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Automatically generates <see cref="T:System.Web.DynamicData.DynamicField" /> objects based on metadata information for the table.</summary>
+        <returns>A collection of <see cref="T:System.Web.DynamicData.DynamicField" /> objects.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

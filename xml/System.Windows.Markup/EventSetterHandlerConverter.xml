@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Converts the string name of an event setter handler to a delegate representation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about how XAML for WPF processes event handler names, see [XAML Overview (WPF)](../Topic/XAML%20Overview%20\(WPF\).md).  
+  
+<a name="xamlTextUsage_EventSetterHandlerConverter"></a>   
+## XAML Text Usage  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +35,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.EventSetterHandlerConverter" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,11 +56,19 @@
         <Parameter Name="sourceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="typeDescriptorContext">To be added.</param>
-        <param name="sourceType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="typeDescriptorContext">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
+        <param name="sourceType">A <see cref="T:System.Type" /> that represents the type you want to convert from.</param>
+        <summary>Returns whether this converter can convert an object of one type to a <see cref="T:System.Delegate" />.</summary>
+        <returns>
+          <see langword="true" /> if this converter can perform the conversion; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns `true` only when `sourceType` is a <xref:System.String> type. All other `sourceType` types return `false`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CanConvertTo">
@@ -71,10 +88,10 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="typeDescriptorContext">To be added.</param>
-        <param name="destinationType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="typeDescriptorContext">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
+        <param name="destinationType">A <see cref="T:System.Type" /> that represents the type you want to convert to.</param>
+        <summary>Returns whether this converter can convert the object to the specified type.</summary>
+        <returns>Always returns <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,12 +113,26 @@
         <Parameter Name="source" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="typeDescriptorContext">To be added.</param>
-        <param name="cultureInfo">To be added.</param>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="typeDescriptorContext">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
+        <param name="cultureInfo">The <see cref="T:System.Globalization.CultureInfo" /> to use as the current culture.</param>
+        <param name="source">The source string to convert.</param>
+        <summary>Converts the specified string to a new <see cref="T:System.Delegate" /> for the event handler.</summary>
+        <returns>A new <see cref="T:System.Delegate" /> that represents the referenced event handler.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `typeDescriptorContext` must provide services for <xref:System.Xaml.IRootObjectProvider> and <xref:System.Windows.Markup.IProvideValueTarget>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The necessary services are not available.  
+  
+ -or-  
+  
+ Could not perform the specific conversion.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="typeDescriptorContext" /> or <paramref name="source" /> are <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -123,13 +154,14 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="typeDescriptorContext">To be added.</param>
-        <param name="cultureInfo">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="destinationType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="typeDescriptorContext">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
+        <param name="cultureInfo">The <see cref="T:System.Globalization.CultureInfo" /> to use as the current culture.</param>
+        <param name="value">The value to convert.</param>
+        <param name="destinationType">The type to convert the <c>value</c> parameter to.</param>
+        <summary>Converts the specified value object to the specified type. Always throws an exception.</summary>
+        <returns>Always throws an exception.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">Thrown in all cases.</exception>
       </Docs>
     </Member>
   </Members>

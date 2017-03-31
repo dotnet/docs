@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Encapsulates information about events raised by the application's memory monitor.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,9 +29,9 @@
         <Parameter Name="percentLimit" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="currentPercentUsed">To be added.</param>
-        <param name="percentLimit">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="currentPercentUsed">Detected percent of total RAM used on the local machine.</param>
+        <param name="percentLimit">The determined used-RAM percentage limit for the current machine.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Hosting.LowPhysicalMemoryInfo" /> class with the specified percent used and percent limit.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,7 +48,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the detected percent of total RAM used on the machine. Value may be from 0 to 100.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -66,8 +66,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the determined used-RAM percentage limit for the machine. Value may be from 0 to 100.</summary>
+        <value>The determined used-RAM percentage limit for the machine.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,7 +84,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets a Boolean value returned to the source of the observable event that may be used to indicate whether the source of the event should induce a Garbage Collection after all observers have processed the event. (The default low memory monitor in ASP.NET ignores this flag and does not induce Garbage Collection.)</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

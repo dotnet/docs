@@ -1,19 +1,34 @@
 ---
 uid: Microsoft.VisualBasic.CompilerServices.InternalErrorException
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.CompilerServices.InternalErrorException.#ctor(System.String,System.Exception)
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.CompilerServices.InternalErrorException.#ctor(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.CompilerServices.InternalErrorException.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.CompilerServices.InternalErrorException.#ctor(System.String,System.Exception)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.CompilerServices.InternalErrorException.#ctor(System.String)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.CompilerServices.InternalErrorException.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -21,8 +21,31 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a Range header value.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.Http.Headers.RangeHeaderValue> class provides support for the Range header as defined in [RFC 2616](http://go.microsoft.com/fwlink/?LinkID=241642) by the IETF.  
+  
+ Since all HTTP entities are represented in HTTP messages as sequences of bytes, the concept of a byte range is meaningful for any HTTP entity. However, not all clients and servers need to support byte-range operations.  
+  
+ The Range header on a request allows a client to request that it only wants to receive some part of the specified range of bytes in an HTTP entity. Servers are not required to support Range header requests.  
+  
+ An example of a Range header in an HTTP protocol request that requests the first 100 bytes would be would be the following:  
+  
+ `Range: bytes=0-99\r\n\r\n`  
+  
+ A HTTP server indicates support for Range headers with the Accept-Ranges header. An example of the Accept-Ranges header from a server that supports byte-ranges would be as follows:  
+  
+ `Accept-Ranges: bytes\r\n\r\n`  
+  
+ If an Accept-Ranges header is not received in the header of the response from the server, then the server does not support Range headers. An example of the Accept-Ranges header from a server that does not support ranges, but recognizes the Accept-Ranges header, would be as follows:  
+  
+ `Accept-Ranges: none\r\n\r\n`  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,7 +65,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.RangeHeaderValue" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,10 +89,29 @@
         <Parameter Name="to" Type="System.Nullable&lt;System.Int64&gt;" />
       </Parameters>
       <Docs>
-        <param name="from">To be added.</param>
-        <param name="to">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="from">The position at which to start sending data.</param>
+        <param name="to">The position at which to stop sending data.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.RangeHeaderValue" /> class with a byte range.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This  constructor initializes a new instance of the <xref:System.Net.Http.Headers.RangeHeaderValue> class with a Range header containing a specified byte range.  
+  
+ An example of a Range header with a byte range in an HTTP protocol request that requests the first 100 bytes would be would be the following:  
+  
+ `Range: bytes=0-99\r\n\r\n`  
+  
+ For this example, the `from` parameter would be specified as 0 and the `to` parameter would be specified as 99.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="from" /> is greater than <paramref name="to" />  
+  
+ -or-  
+  
+ <paramref name="from" /> or <paramref name="to" /> is less than 0.</exception>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -94,9 +136,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The object to compare with the current object.</param>
+        <summary>Determines whether the specified <see cref="T:System.Object" /> is equal to the current <see cref="T:System.Net.Http.Headers.RangeHeaderValue" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the specified <see cref="T:System.Object" /> is equal to the current object; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,9 +163,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Serves as a hash function for an <see cref="T:System.Net.Http.Headers.RangeHeaderValue" /> object.</summary>
+        <returns>A hash code for the current object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A hash code is a numeric value that is used to identify an object during equality testing. It can also serve as an index for an object in a collection.  
+  
+ The <xref:System.Net.Http.Headers.RangeHeaderValue.GetHashCode%2A> method is suitable for use in hashing algorithms and data structures such as a hash table.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -147,10 +199,14 @@
         <Parameter Name="input" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="input">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="input">A string that represents range header value information.</param>
+        <summary>Converts a string to an <see cref="T:System.Net.Http.Headers.RangeHeaderValue" /> instance.</summary>
+        <returns>A <see cref="T:System.Net.Http.Headers.RangeHeaderValue" /> instance.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="input" /> is a <see langword="null" /> reference.</exception>
+        <exception cref="T:System.FormatException">
+          <paramref name="input" /> is not valid range header value information.</exception>
       </Docs>
     </Member>
     <Member MemberName="Ranges">
@@ -172,8 +228,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.Net.Http.Headers.RangeItemHeaderValue&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the ranges specified from the <see cref="T:System.Net.Http.Headers.RangeHeaderValue" /> object.</summary>
+        <value>The ranges from the <see cref="T:System.Net.Http.Headers.RangeHeaderValue" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -195,8 +251,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a new object that is a copy of the current <see cref="T:System.Net.Http.Headers.RangeHeaderValue" /> instance.</summary>
+        <returns>A copy of the current instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -220,8 +276,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a string that represents the current <see cref="T:System.Net.Http.Headers.RangeHeaderValue" /> object.</summary>
+        <returns>A string that represents the current object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -248,10 +304,11 @@
         <Parameter Name="parsedValue" Type="System.Net.Http.Headers.RangeHeaderValue&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="input">To be added.</param>
-        <param name="parsedValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="input">he string to validate.</param>
+        <param name="parsedValue">The <see cref="T:System.Net.Http.Headers.RangeHeaderValue" /> version of the string.</param>
+        <summary>Determines whether a string is valid <see cref="T:System.Net.Http.Headers.RangeHeaderValue" /> information.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="input" /> is valid <see cref="T:System.Net.Http.Headers.AuthenticationHeaderValue" /> information; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -274,8 +331,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the unit from the <see cref="T:System.Net.Http.Headers.RangeHeaderValue" /> object.</summary>
+        <value>The unit from the <see cref="T:System.Net.Http.Headers.RangeHeaderValue" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

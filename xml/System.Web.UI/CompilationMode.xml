@@ -10,8 +10,29 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines constants that specify how ASP.NET should compile .aspx pages and .ascx controls.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.CompilationMode> enumeration values indicate whether a page or control should be compiled at run time. When no compilation mode is specified, the default value is Always. Setting a page to never compile using the Never attribute will increase performance by disqualifying the specified page in the compilation process. To define a page-specific <xref:System.Web.UI.CompilationMode> attribute that specifies an .aspx, .ascx or .master file should not be compiled at the page level, you can use a directive like the following:  
+  
+ `<%@ page compilationMode="never" %>`  
+  
+ The compilation mode can also be specified in configuration files. The <xref:System.Web.Configuration.PagesSection> configuration section object identifies page-specific configuration settings. The  configuration section element can be declared at the machine, site, application, and subdirectory levels of the configuration files.  
+  
+ If the <xref:System.Web.UI.CompilationMode> is set to Never and a page contains a script block or code construct that requires compilation, ASP.NET will return with an error and the page will not run.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.CompilationMode> page directive to indicate that a page should never be compiled.  
+  
+ [!code-csharp[CompilationMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CompilationMode/CS/compilationmode_cs.aspx#1)]
+ [!code-vb[CompilationMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CompilationMode/VB/compilationmode_vb.aspx#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Always">
@@ -27,7 +48,7 @@
         <ReturnType>System.Web.UI.CompilationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The page should always be compiled.</summary>
       </Docs>
     </Member>
     <Member MemberName="Auto">
@@ -43,7 +64,7 @@
         <ReturnType>System.Web.UI.CompilationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>ASP.NET will not compile the page, if possible.</summary>
       </Docs>
     </Member>
     <Member MemberName="Never">
@@ -59,7 +80,7 @@
         <ReturnType>System.Web.UI.CompilationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The page or control should never be dynamically compiled.</summary>
       </Docs>
     </Member>
   </Members>

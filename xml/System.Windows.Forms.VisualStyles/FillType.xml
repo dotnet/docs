@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the interior of visual style elements with a filled border background.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.FillType> values represent the return values of the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetEnumValue%2A?displayProperty=fullName> method when it is called with an argument value of <xref:System.Windows.Forms.VisualStyles.EnumProperty?displayProperty=fullName>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="HorizontalGradient">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.FillType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The interior of the element is a horizontal gradient.</summary>
       </Docs>
     </Member>
     <Member MemberName="RadialGradient">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.FillType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The interior of the element is a radial gradient.</summary>
       </Docs>
     </Member>
     <Member MemberName="Solid">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.FillType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The interior of the element is solid.</summary>
       </Docs>
     </Member>
     <Member MemberName="TileImage">
@@ -75,7 +82,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.FillType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The interior of the element is a tiled image.</summary>
       </Docs>
     </Member>
     <Member MemberName="VerticalGradient">
@@ -91,7 +98,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.FillType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The interior of the element is a vertical gradient.</summary>
       </Docs>
     </Member>
   </Members>

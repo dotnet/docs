@@ -1,4 +1,6 @@
 ---
 uid: System.Drawing.FontStyle
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

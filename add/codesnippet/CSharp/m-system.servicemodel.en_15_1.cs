@@ -1,1 +1,0 @@
-            XmlDictionaryReader xdrExtensions = eab.GetReaderAtExtensions();

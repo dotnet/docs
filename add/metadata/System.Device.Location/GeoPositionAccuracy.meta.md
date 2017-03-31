@@ -1,4 +1,4 @@
 ---
 uid: System.Device.Location.GeoPositionAccuracy
-internalonly: False
+manager: "martinek"
 ---

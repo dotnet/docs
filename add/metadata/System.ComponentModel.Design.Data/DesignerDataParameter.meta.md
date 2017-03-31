@@ -1,24 +1,34 @@
 ---
 uid: System.ComponentModel.Design.Data.DesignerDataParameter
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.Data.DesignerDataParameter.Name
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.Data.DesignerDataParameter.DataType
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.Data.DesignerDataParameter.Direction
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.Data.DesignerDataParameter.#ctor(System.String,System.Data.DbType,System.Data.ParameterDirection)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

@@ -10,8 +10,24 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the control protocol used in establishing a serial port communication for a <see cref="T:System.IO.Ports.SerialPort" /> object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used with the <xref:System.IO.Ports.SerialPort.Handshake%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example displays the possible values of the <xref:System.IO.Ports.Handshake> enumeration to the console, then prompts the user to choose one. This code example is part of a larger code example provided for the <xref:System.IO.Ports.SerialPort> class.  
+  
+ [!code-cpp[System.IO.Ports.SerialPort#05](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.Ports.SerialPort/cpp/serialport.cpp#05)]
+ [!code-csharp[System.IO.Ports.SerialPort#05](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Ports.SerialPort/cs/SerialPort.cs#05)]
+ [!code-vb[System.IO.Ports.SerialPort#05](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Ports.SerialPort/vb/SerialPort.vb#05)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="None">
@@ -27,7 +43,7 @@
         <ReturnType>System.IO.Ports.Handshake</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No control is used for the handshake.</summary>
       </Docs>
     </Member>
     <Member MemberName="RequestToSend">
@@ -43,7 +59,7 @@
         <ReturnType>System.IO.Ports.Handshake</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Request-to-Send (RTS) hardware flow control is used. RTS signals that data is available for transmission. If the input buffer becomes full, the RTS line will be set to <see langword="false" />. The RTS line will be set to <see langword="true" /> when more room becomes available in the input buffer.</summary>
       </Docs>
     </Member>
     <Member MemberName="RequestToSendXOnXOff">
@@ -59,7 +75,7 @@
         <ReturnType>System.IO.Ports.Handshake</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Both the Request-to-Send (RTS) hardware control and the XON/XOFF software controls are used.</summary>
       </Docs>
     </Member>
     <Member MemberName="XOnXOff">
@@ -75,7 +91,7 @@
         <ReturnType>System.IO.Ports.Handshake</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The XON/XOFF software control protocol is used. The XOFF control is sent to stop the transmission of data. The XON control is sent to resume the transmission. These software controls are used instead of Request to Send (RTS) and Clear to Send (CTS) hardware controls.</summary>
       </Docs>
     </Member>
   </Members>

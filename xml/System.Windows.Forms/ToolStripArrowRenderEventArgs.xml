@@ -11,8 +11,20 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides data for the <see cref="E:System.Windows.Forms.ToolStripRenderer.RenderArrow" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this type. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripRenderer.RenderArrow> event. This report helps you to learn when the event occurs and can assist you in debugging.  
+  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripRenderer>, such as a <xref:System.Windows.Forms.ToolStripSystemRenderer> or <xref:System.Windows.Forms.ToolStripProfessionalRenderer>. Then name the instance `ToolStripRenderer1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripRenderer.RenderArrow> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#583](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#583)]
+ [!code-vb[System.Windows.Forms.EventExamples#583](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#583)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,12 +44,12 @@
         <Parameter Name="arrowDirection" Type="System.Windows.Forms.ArrowDirection" />
       </Parameters>
       <Docs>
-        <param name="g">To be added.</param>
-        <param name="toolStripItem">To be added.</param>
-        <param name="arrowRectangle">To be added.</param>
-        <param name="arrowColor">To be added.</param>
-        <param name="arrowDirection">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="g">The graphics used to paint the <see cref="T:System.Windows.Forms.ToolStrip" /> arrow.</param>
+        <param name="toolStripItem">The <see cref="T:System.Windows.Forms.ToolStripItem" /> on which to paint the arrow.</param>
+        <param name="arrowRectangle">The bounding area of the <see cref="T:System.Windows.Forms.ToolStrip" /> arrow.</param>
+        <param name="arrowColor">The color of the <see cref="T:System.Windows.Forms.ToolStrip" /> arrow.</param>
+        <param name="arrowDirection">The direction in which the <see cref="T:System.Windows.Forms.ToolStrip" /> arrow points.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripArrowRenderEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,9 +66,21 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the color of the <see cref="T:System.Windows.Forms.ToolStrip" /> arrow.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that represents the color of the arrow.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripRenderer.RenderArrow?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
+  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripRenderer>, such as a <xref:System.Windows.Forms.ToolStripSystemRenderer> or <xref:System.Windows.Forms.ToolStripProfessionalRenderer>. Then name the instance `ToolStripRenderer1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripRenderer.RenderArrow?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#583](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#583)]
+ [!code-vb[System.Windows.Forms.EventExamples#583](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#583)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ArrowRectangle">
@@ -72,9 +96,21 @@
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the bounding area of the <see cref="T:System.Windows.Forms.ToolStrip" /> arrow.</summary>
+        <value>A <see cref="T:System.Drawing.Rectangle" /> that represents the bounding area.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripRenderer.RenderArrow?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
+  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripRenderer>, such as a <xref:System.Windows.Forms.ToolStripSystemRenderer> or <xref:System.Windows.Forms.ToolStripProfessionalRenderer>. Then name the instance `ToolStripRenderer1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripRenderer.RenderArrow?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#583](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#583)]
+ [!code-vb[System.Windows.Forms.EventExamples#583](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#583)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Direction">
@@ -90,9 +126,21 @@
         <ReturnType>System.Windows.Forms.ArrowDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the direction in which the <see cref="T:System.Windows.Forms.ToolStrip" /> arrow points.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.ArrowDirection" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripRenderer.RenderArrow?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
+  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripRenderer>, such as a <xref:System.Windows.Forms.ToolStripSystemRenderer> or <xref:System.Windows.Forms.ToolStripProfessionalRenderer>. Then name the instance `ToolStripRenderer1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripRenderer.RenderArrow?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#583](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#583)]
+ [!code-vb[System.Windows.Forms.EventExamples#583](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#583)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Graphics">
@@ -108,9 +156,21 @@
         <ReturnType>System.Drawing.Graphics</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the graphics used to paint the <see cref="T:System.Windows.Forms.ToolStrip" /> arrow.</summary>
+        <value>The <see cref="T:System.Drawing.Graphics" /> used to paint.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripRenderer.RenderArrow?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
+  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripRenderer>, such as a <xref:System.Windows.Forms.ToolStripSystemRenderer> or <xref:System.Windows.Forms.ToolStripProfessionalRenderer>. Then name the instance `ToolStripRenderer1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripRenderer.RenderArrow?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#583](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#583)]
+ [!code-vb[System.Windows.Forms.EventExamples#583](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#583)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -126,9 +186,21 @@
         <ReturnType>System.Windows.Forms.ToolStripItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Windows.Forms.ToolStripItem" /> on which to paint the arrow.</summary>
+        <value>The <see cref="T:System.Windows.Forms.ToolStripItem" /> on which to paint the arrow.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripRenderer.RenderArrow?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
+  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripRenderer>, such as a <xref:System.Windows.Forms.ToolStripSystemRenderer> or <xref:System.Windows.Forms.ToolStripProfessionalRenderer>. Then name the instance `ToolStripRenderer1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripRenderer.RenderArrow?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#583](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#583)]
+ [!code-vb[System.Windows.Forms.EventExamples#583](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#583)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,39 +1,55 @@
 ---
 uid: System.Collections.Specialized.CollectionChangedEventManager
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.Specialized.CollectionChangedEventManager.AddHandler(System.Collections.Specialized.INotifyCollectionChanged,System.EventHandler{System.Collections.Specialized.NotifyCollectionChangedEventArgs})
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.Specialized.CollectionChangedEventManager.NewListenerList
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.Specialized.CollectionChangedEventManager.StopListening(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.Specialized.CollectionChangedEventManager.StartListening(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.Specialized.CollectionChangedEventManager.RemoveHandler(System.Collections.Specialized.INotifyCollectionChanged,System.EventHandler{System.Collections.Specialized.NotifyCollectionChangedEventArgs})
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.Specialized.CollectionChangedEventManager.AddListener(System.Collections.Specialized.INotifyCollectionChanged,System.Windows.IWeakEventListener)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.Specialized.CollectionChangedEventManager.RemoveListener(System.Collections.Specialized.INotifyCollectionChanged,System.Windows.IWeakEventListener)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

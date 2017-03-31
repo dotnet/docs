@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines the <see langword="End" /> member for the <see cref="T:System.Data.Metadata.Edm.RelationshipType" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.Data.Metadata.Edm.OperationAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the operational behavior of this relationship end member.</summary>
+        <value>One of the <see cref="T:System.Data.Metadata.Edm.OperationAction" /> values. The default is <see cref="P:System.Data.Metadata.Edm.OperationAction.None" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,8 +47,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Access the EntityType of the EndMember in an association.</summary>
+        <returns>The EntityType of the EndMember in an association.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,8 +65,8 @@
         <ReturnType>System.Data.Metadata.Edm.RelationshipMultiplicity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the multiplicity of this relationship end member.</summary>
+        <value>One of the <see cref="T:System.Data.Metadata.Edm.RelationshipMultiplicity" /> values.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

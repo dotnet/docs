@@ -1,24 +1,32 @@
 ---
 uid: System.Windows.Forms.HtmlElementErrorEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.HtmlElementErrorEventArgs.LineNumber
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.HtmlElementErrorEventArgs.Handled
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.HtmlElementErrorEventArgs.Url
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.HtmlElementErrorEventArgs.Description
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

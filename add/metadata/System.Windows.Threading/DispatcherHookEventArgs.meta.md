@@ -1,19 +1,27 @@
 ---
 uid: System.Windows.Threading.DispatcherHookEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Threading.DispatcherHookEventArgs.Dispatcher
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Threading.DispatcherHookEventArgs.#ctor(System.Windows.Threading.DispatcherOperation)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Threading.DispatcherHookEventArgs.Operation
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

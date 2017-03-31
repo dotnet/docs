@@ -1,59 +1,90 @@
 ---
 uid: System.Web.Services.WebMethodAttribute
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.WebMethodAttribute.#ctor(System.Boolean,System.EnterpriseServices.TransactionOption)
-internalonly: False
----
-
----
-uid: System.Web.Services.WebMethodAttribute.MessageName
-internalonly: False
----
-
----
-uid: System.Web.Services.WebMethodAttribute.EnableSession
-internalonly: False
----
-
----
-uid: System.Web.Services.WebMethodAttribute.#ctor(System.Boolean,System.EnterpriseServices.TransactionOption,System.Int32,System.Boolean)
-internalonly: False
----
-
----
-uid: System.Web.Services.WebMethodAttribute.TransactionOption
-internalonly: False
----
-
----
-uid: System.Web.Services.WebMethodAttribute.Description
-internalonly: False
----
-
----
-uid: System.Web.Services.WebMethodAttribute.CacheDuration
-internalonly: False
----
-
----
-uid: System.Web.Services.WebMethodAttribute.#ctor(System.Boolean,System.EnterpriseServices.TransactionOption,System.Int32)
-internalonly: False
----
-
----
-uid: System.Web.Services.WebMethodAttribute.#ctor(System.Boolean)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.WebMethodAttribute.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Web.Services.WebMethodAttribute.MessageName
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Web.Services.WebMethodAttribute.EnableSession
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Web.Services.WebMethodAttribute.#ctor(System.Boolean,System.EnterpriseServices.TransactionOption,System.Int32,System.Boolean)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Web.Services.WebMethodAttribute.TransactionOption
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Web.Services.WebMethodAttribute.Description
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Web.Services.WebMethodAttribute.CacheDuration
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Web.Services.WebMethodAttribute.#ctor(System.Boolean,System.EnterpriseServices.TransactionOption,System.Int32)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Web.Services.WebMethodAttribute.#ctor(System.Boolean)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Web.Services.WebMethodAttribute.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.WebMethodAttribute.BufferResponse
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

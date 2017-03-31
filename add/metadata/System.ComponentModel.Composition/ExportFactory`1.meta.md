@@ -1,14 +1,20 @@
 ---
 uid: System.ComponentModel.Composition.ExportFactory`1
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.ExportFactory`1.CreateExport
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.ExportFactory`1.#ctor(System.Func{System.Tuple{`0,System.Action}})
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

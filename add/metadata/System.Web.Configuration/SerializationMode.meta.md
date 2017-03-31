@@ -1,4 +1,5 @@
 ---
 uid: System.Web.Configuration.SerializationMode
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

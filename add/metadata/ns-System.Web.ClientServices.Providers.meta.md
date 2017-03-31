@@ -1,4 +1,6 @@
 ---
 uid: System.Web.ClientServices.Providers
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

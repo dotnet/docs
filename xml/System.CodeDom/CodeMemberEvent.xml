@@ -19,8 +19,24 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a declaration for an event of a type.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.CodeDom.CodeMemberEvent> can be used to represent event members of a type. <xref:System.CodeDom.CodeMemberEvent> has properties to indicate the data type of the event, whether it privately implements a data type, and what interface types, if any, the member event implements.  
+  
+   
+  
+## Examples  
+ This example demonstrates use of a <xref:System.CodeDom.CodeMemberEvent> to declare an event that takes a `System.EventHandler` delegate:  
+  
+ [!code-cpp[CodeMemberEventSample#3](~/samples/snippets/cpp/VS_Snippets_CLR/CodeMemberEventSample/CPP/codemembereventexample.cpp#3)]
+ [!code-csharp[CodeMemberEventSample#3](~/samples/snippets/csharp/VS_Snippets_CLR/CodeMemberEventSample/CS/codemembereventexample.cs#3)]
+ [!code-vb[CodeMemberEventSample#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeMemberEventSample/VB/codemembereventexample.vb#3)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,7 +50,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeMemberEvent" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,9 +67,16 @@
         <ReturnType>System.CodeDom.CodeTypeReferenceCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the data type that the member event implements.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeTypeReferenceCollection" /> that indicates the data type or types that the member event implements.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The types referenced should consist of interfaces or the base class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PrivateImplementationType">
@@ -69,9 +92,16 @@
         <ReturnType>System.CodeDom.CodeTypeReference</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the privately implemented data type, if any.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeTypeReference" /> that indicates the data type that the event privately implements.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The types referenced should consist of interfaces or the base class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -87,8 +117,8 @@
         <ReturnType>System.CodeDom.CodeTypeReference</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the data type of the delegate type that handles the event.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeTypeReference" /> that indicates the delegate type that handles the event.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

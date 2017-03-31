@@ -26,7 +26,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines an interface for the Vbc task to communicate with the IDE. In particular, the Vbc task will delegate the actual compilation to the IDE, rather than shelling out to the command-line compilers.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -46,9 +46,9 @@
         <Parameter Name="VBRuntime" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="VBRuntime">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="VBRuntime">The name of the Visual Basic Runtime Library.</param>
+        <summary>Defines an interface for the Vbc task to communicate with the IDE. In particular, the Vbc task will delegate the actual compilation to the IDE, rather than shelling out to the command line compiler.</summary>
+        <returns>Returns <see langword="true" /> if the method succeeds; otherwise, returns <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

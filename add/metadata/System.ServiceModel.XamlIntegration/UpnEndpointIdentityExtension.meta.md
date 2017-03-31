@@ -1,24 +1,41 @@
 ---
 uid: System.ServiceModel.XamlIntegration.UpnEndpointIdentityExtension
-internalonly: False
----
-
----
-uid: System.ServiceModel.XamlIntegration.UpnEndpointIdentityExtension.UpnName
-internalonly: False
----
-
----
-uid: System.ServiceModel.XamlIntegration.UpnEndpointIdentityExtension.#ctor(System.ServiceModel.UpnEndpointIdentity)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.XamlIntegration.UpnEndpointIdentityExtension.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.XamlIntegration.UpnEndpointIdentityExtension.UpnName
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.XamlIntegration.UpnEndpointIdentityExtension.#ctor(System.ServiceModel.UpnEndpointIdentity)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.XamlIntegration.UpnEndpointIdentityExtension.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.XamlIntegration.UpnEndpointIdentityExtension.ProvideValue(System.IServiceProvider)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

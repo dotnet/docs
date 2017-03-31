@@ -1,14 +1,20 @@
 ---
 uid: System.Workflow.Runtime.DebugEngine.IWorkflowDebuggerService
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.DebugEngine.IWorkflowDebuggerService.NotifyHandlerInvoked
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.DebugEngine.IWorkflowDebuggerService.NotifyHandlerInvoking(System.Delegate)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

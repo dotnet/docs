@@ -1,9 +1,13 @@
 ---
 uid: System.Data.Services.Client.ChangeOperationResponse
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Services.Client.ChangeOperationResponse.Descriptor
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

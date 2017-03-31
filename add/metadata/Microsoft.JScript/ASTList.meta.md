@@ -1,4 +1,4 @@
 ---
 uid: Microsoft.JScript.ASTList
-internalonly: False
+ms.author: "mikejo"
 ---

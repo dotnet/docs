@@ -15,8 +15,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>A class that represents the syndication versions supported by [!INCLUDE[indigo1](~/includes/indigo1-md.md)].</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class represents the syndication versions that [!INCLUDE[indigo2](~/includes/indigo2-md.md)] supports by default. You can add support for additional syndication versions by implementing your own <xref:System.ServiceModel.Syndication.SyndicationFeed>, <xref:System.ServiceModel.Syndication.SyndicationItem>, and <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter> classes.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Atom10">
@@ -36,7 +43,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents support for the Atom 1.0 specification.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,7 +64,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents support for the RSS 2.0 specification.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

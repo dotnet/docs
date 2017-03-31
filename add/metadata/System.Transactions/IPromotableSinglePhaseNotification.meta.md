@@ -1,19 +1,19 @@
 ---
 uid: System.Transactions.IPromotableSinglePhaseNotification
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.IPromotableSinglePhaseNotification.SinglePhaseCommit(System.Transactions.SinglePhaseEnlistment)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.IPromotableSinglePhaseNotification.Rollback(System.Transactions.SinglePhaseEnlistment)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.IPromotableSinglePhaseNotification.Initialize
-internalonly: False
+manager: "ghogen"
 ---

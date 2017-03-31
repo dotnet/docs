@@ -1,24 +1,40 @@
 ---
 uid: System.Windows.ThemeDictionaryExtension
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.ThemeDictionaryExtension.#ctor(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.ThemeDictionaryExtension.AssemblyName
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.ThemeDictionaryExtension.ProvideValue(System.IServiceProvider)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.ThemeDictionaryExtension.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.ThemeDictionaryExtension.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

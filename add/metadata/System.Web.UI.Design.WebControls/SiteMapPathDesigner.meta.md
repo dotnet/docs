@@ -1,39 +1,51 @@
 ---
 uid: System.Web.UI.Design.WebControls.SiteMapPathDesigner
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.SiteMapPathDesigner.AutoFormats
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.SiteMapPathDesigner.Initialize(System.ComponentModel.IComponent)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.SiteMapPathDesigner.UsePreviewControl
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.WebControls.SiteMapPathDesigner.TemplateGroups
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.SiteMapPathDesigner.GetDesignTimeHtml
-internalonly: False
+---
+
+---
+uid: System.Web.UI.Design.WebControls.SiteMapPathDesigner.TemplateGroups
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.SiteMapPathDesigner.GetDesignTimeHtml
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.SiteMapPathDesigner.GetErrorDesignTimeHtml(System.Exception)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.SiteMapPathDesigner.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

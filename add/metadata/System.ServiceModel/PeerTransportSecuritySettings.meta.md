@@ -1,14 +1,14 @@
 ---
 uid: System.ServiceModel.PeerTransportSecuritySettings
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerTransportSecuritySettings.#ctor
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerTransportSecuritySettings.CredentialType
-internalonly: False
+manager: "ghogen"
 ---

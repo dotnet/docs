@@ -1,29 +1,55 @@
 ---
 uid: System.Activities.Presentation.PropertyEditing.PropertyValueEditor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.PropertyEditing.PropertyValueEditor.CreateEditorAttribute(System.Type)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.PropertyEditing.PropertyValueEditor.CreateEditorAttribute(System.Activities.Presentation.PropertyEditing.PropertyValueEditor)
-internalonly: False
----
-
----
-uid: System.Activities.Presentation.PropertyEditing.PropertyValueEditor.InlineEditorTemplate
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.PropertyEditing.PropertyValueEditor.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Presentation.PropertyEditing.PropertyValueEditor.CreateEditorAttribute
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Presentation.PropertyEditing.PropertyValueEditor.InlineEditorTemplate
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Presentation.PropertyEditing.PropertyValueEditor.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.PropertyEditing.PropertyValueEditor.#ctor(System.Windows.DataTemplate)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

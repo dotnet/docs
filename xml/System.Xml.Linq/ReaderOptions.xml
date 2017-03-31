@@ -25,7 +25,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies whether to omit duplicate namespaces when loading an <see cref="T:System.Xml.Linq.XDocument" /> with an <see cref="T:System.Xml.XmlReader" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -52,7 +52,7 @@
         <ReturnType>System.Xml.Linq.ReaderOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No reader options specified.</summary>
       </Docs>
     </Member>
     <Member MemberName="OmitDuplicateNamespaces">
@@ -78,7 +78,7 @@
         <ReturnType>System.Xml.Linq.ReaderOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Omit duplicate namespaces when loading the <see cref="T:System.Xml.Linq.XDocument" />.</summary>
       </Docs>
     </Member>
   </Members>

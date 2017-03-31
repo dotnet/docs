@@ -10,8 +10,26 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides information about the intersection between the geometries in the <see cref="T:System.Windows.Media.GeometryHitTestParameters" /> and the visual which was hit.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following illustration shows the relationship between the hit test geometry (the blue circle) and the visual geometry (the red square).  
+  
+ ![Diagram of IntersectionDetail used in hit testing](~/add/media/intersectiondetail01.png "Diagram of IntersectionDetail used in hit testing")  
+Intersection between hit test geometry and visual geometry during hit testing  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Media.GeometryHitTestResult.IntersectionDetail%2A> property of <xref:System.Windows.Media.GeometryHitTestResult>.  
+  
+ [!code-csharp[HitTestingOverview#HitTestingOverviewSnippet11](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTestingOverview/CSharp/GeometryHitTest.cs#hittestingoverviewsnippet11)]
+ [!code-vb[HitTestingOverview#HitTestingOverviewSnippet11](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestingOverview/visualbasic/geometryhittest.vb#hittestingoverviewsnippet11)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Empty">
@@ -27,7 +45,7 @@
         <ReturnType>System.Windows.Media.IntersectionDetail</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Windows.Media.Geometry" /> hit test parameter and the target visual, or geometry, do not intersect.</summary>
       </Docs>
     </Member>
     <Member MemberName="FullyContains">
@@ -43,7 +61,7 @@
         <ReturnType>System.Windows.Media.IntersectionDetail</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Windows.Media.Geometry" /> hit test parameter is fully contained within the boundary of the target visual or geometry.</summary>
       </Docs>
     </Member>
     <Member MemberName="FullyInside">
@@ -59,7 +77,7 @@
         <ReturnType>System.Windows.Media.IntersectionDetail</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The target visual, or geometry, is fully inside the <see cref="T:System.Windows.Media.Geometry" /> hit test parameter.</summary>
       </Docs>
     </Member>
     <Member MemberName="Intersects">
@@ -75,7 +93,7 @@
         <ReturnType>System.Windows.Media.IntersectionDetail</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Windows.Media.Geometry" /> hit test parameter and the target visual, or geometry, intersect. This means that the two elements overlap, but neither element contains the other.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotCalculated">
@@ -91,7 +109,7 @@
         <ReturnType>System.Windows.Media.IntersectionDetail</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Windows.Media.IntersectionDetail" /> value is not calculated.</summary>
       </Docs>
     </Member>
   </Members>

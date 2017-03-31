@@ -1,24 +1,29 @@
 ---
 uid: System.Windows.Markup.ValueSerializerAttribute
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.ValueSerializerAttribute.ValueSerializerType
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.ValueSerializerAttribute.ValueSerializerTypeName
-internalonly: False
+manager: "martinek"
+---
+
+---
+uid: System.Windows.Markup.ValueSerializerAttribute.#ctor
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.ValueSerializerAttribute.#ctor(System.String)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.ValueSerializerAttribute.#ctor(System.Type)
-internalonly: False
+manager: "martinek"
 ---

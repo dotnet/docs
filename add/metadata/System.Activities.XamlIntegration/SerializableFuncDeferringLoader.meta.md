@@ -1,19 +1,27 @@
 ---
 uid: System.Activities.XamlIntegration.SerializableFuncDeferringLoader
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.XamlIntegration.SerializableFuncDeferringLoader.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.XamlIntegration.SerializableFuncDeferringLoader.Save(System.Object,System.IServiceProvider)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.XamlIntegration.SerializableFuncDeferringLoader.Load(System.Xaml.XamlReader,System.IServiceProvider)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

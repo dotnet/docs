@@ -1,1 +1,0 @@
-      Return Me.Real = value.Real AndAlso Me.Imaginary = value.Imaginary

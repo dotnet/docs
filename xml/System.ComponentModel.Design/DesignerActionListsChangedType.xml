@@ -15,8 +15,18 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the type of change occurring in a collection of <see cref="T:System.ComponentModel.Design.DesignerActionList" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.DesignerActionListsChangedType> enumeration indicates that an element has been added or removed from a managed collection of <xref:System.ComponentModel.Design.DesignerActionList> objects. This enumeration is used in the <xref:System.ComponentModel.Design.DesignerActionListsChangedEventArgs> class, which is associated with the <xref:System.ComponentModel.Design.DesignerActionService.DesignerActionListsChanged> event.  
+  
+> [!NOTE]
+>  Although the <xref:System.ComponentModel.Design.DesignerActionListCollection> class is a collection of <xref:System.ComponentModel.Design.DesignerActionList> objects, it does not directly raise events. Instead, the owning <xref:System.ComponentModel.Design.DesignerActionService> raises <xref:System.ComponentModel.Design.DesignerActionService.DesignerActionListsChanged> events.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ActionListsAdded">
@@ -32,7 +42,7 @@
         <ReturnType>System.ComponentModel.Design.DesignerActionListsChangedType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>One or more <see cref="T:System.ComponentModel.Design.DesignerActionList" /> objects have been added to the collection.</summary>
       </Docs>
     </Member>
     <Member MemberName="ActionListsRemoved">
@@ -48,7 +58,7 @@
         <ReturnType>System.ComponentModel.Design.DesignerActionListsChangedType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>One or more <see cref="T:System.ComponentModel.Design.DesignerActionList" /> objects have been removed from the collection.</summary>
       </Docs>
     </Member>
   </Members>

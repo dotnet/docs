@@ -1,19 +1,23 @@
 ---
 uid: System.Net.NetworkProgressChangedEventArgs
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkProgressChangedEventArgs.TotalBytes
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkProgressChangedEventArgs.ProcessedBytes
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkProgressChangedEventArgs.#ctor(System.Int32,System.Int32,System.Int32,System.Object)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

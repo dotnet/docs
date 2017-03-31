@@ -16,8 +16,22 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides data for the <see cref="E:System.Data.DataTable.RowChanged" />, <see cref="E:System.Data.DataTable.RowChanging" />, <see cref="M:System.Data.DataTable.OnRowDeleting(System.Data.DataRowChangeEventArgs)" />, and <see cref="M:System.Data.DataTable.OnRowDeleted(System.Data.DataRowChangeEventArgs)" /> events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.DataTable.RowChanged>, <xref:System.Data.DataTable.RowChanging>, <xref:System.Data.DataTable.OnRowDeleted%2A>, and <xref:System.Data.DataTable.OnRowDeleting%2A> events occur when an action is performed on a <xref:System.Data.DataRow>.  
+  
+   
+  
+## Examples  
+ The following example adds a <xref:System.Data.DataRowChangeEventHandler> and the procedure to handle the event when a row is changed.  
+  
+ [!code-vb[DataWorks Data.DataRowChangeEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks Data.DataRowChangeEventArgs/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,10 +53,19 @@
         <Parameter Name="action" Type="System.Data.DataRowAction" />
       </Parameters>
       <Docs>
-        <param name="row">To be added.</param>
-        <param name="action">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="row">The <see cref="T:System.Data.DataRow" /> upon which an action is occuring.</param>
+        <param name="action">One of the <see cref="T:System.Data.DataRowAction" /> values.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.DataRowChangeEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example adds a <xref:System.Data.DataRowChangeEventHandler> and the procedure to handle the event when a row is changed.  
+  
+ [!code-vb[DataWorks Data.DataRowChangeEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks Data.DataRowChangeEventArgs/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Action">
@@ -63,9 +86,18 @@
         <ReturnType>System.Data.DataRowAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the action that has occurred on a <see cref="T:System.Data.DataRow" />.</summary>
+        <value>One of the <see cref="T:System.Data.DataRowAction" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example adds a <xref:System.Data.DataRowChangeEventHandler> and the procedure to handle the event when a row is changed.  
+  
+ [!code-vb[DataWorks Data.DataRowChangeEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks Data.DataRowChangeEventArgs/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Row">
@@ -86,9 +118,18 @@
         <ReturnType>System.Data.DataRow</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the row upon which an action has occurred.</summary>
+        <value>The <see cref="T:System.Data.DataRow" /> upon which an action has occurred.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example adds a <xref:System.Data.DataRowChangeEventHandler> and the procedure to handle the event when a row is changed.  
+  
+ [!code-vb[DataWorks Data.DataRowChangeEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks Data.DataRowChangeEventArgs/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

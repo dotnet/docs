@@ -1,4 +1,4 @@
 ---
 uid: Microsoft.JScript.SuperTypeMembersSorter
-internalonly: False
+ms.author: "mikejo"
 ---

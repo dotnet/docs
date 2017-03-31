@@ -1,54 +1,76 @@
 ---
 uid: System.Xml.Xsl.Runtime.XmlSortKeyAccumulator
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Xsl.Runtime.XmlSortKeyAccumulator.AddIntegerSortKey(System.Xml.Xsl.Runtime.XmlCollation,System.Int64)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Xsl.Runtime.XmlSortKeyAccumulator.AddDoubleSortKey(System.Xml.Xsl.Runtime.XmlCollation,System.Double)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Xsl.Runtime.XmlSortKeyAccumulator.AddEmptySortKey(System.Xml.Xsl.Runtime.XmlCollation)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Xsl.Runtime.XmlSortKeyAccumulator.AddDateTimeSortKey(System.Xml.Xsl.Runtime.XmlCollation,System.DateTime)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Xsl.Runtime.XmlSortKeyAccumulator.Keys
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Xsl.Runtime.XmlSortKeyAccumulator.FinishSortKeys
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Xsl.Runtime.XmlSortKeyAccumulator.Create
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Xsl.Runtime.XmlSortKeyAccumulator.AddStringSortKey(System.Xml.Xsl.Runtime.XmlCollation,System.String)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Xsl.Runtime.XmlSortKeyAccumulator.AddDecimalSortKey(System.Xml.Xsl.Runtime.XmlCollation,System.Decimal)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Xsl.Runtime.XmlSortKeyAccumulator.AddIntSortKey(System.Xml.Xsl.Runtime.XmlCollation,System.Int32)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

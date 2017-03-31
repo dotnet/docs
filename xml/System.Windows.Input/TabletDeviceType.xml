@@ -10,8 +10,18 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines values for the type of devices the tablet device uses.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to determine the type of tablet device.  
+  
+ [!code-csharp[HwCaps#2](~/samples/snippets/csharp/VS_Snippets_Wpf/HwCaps/CSharp/Window1.xaml.cs#2)]
+ [!code-vb[HwCaps#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HwCaps/VisualBasic/Window1.xaml.vb#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Stylus">
@@ -27,7 +37,7 @@
         <ReturnType>System.Windows.Input.TabletDeviceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates the tablet device is a stylus.</summary>
       </Docs>
     </Member>
     <Member MemberName="Touch">
@@ -43,7 +53,7 @@
         <ReturnType>System.Windows.Input.TabletDeviceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates the tablet device is a touch screen.</summary>
       </Docs>
     </Member>
   </Members>

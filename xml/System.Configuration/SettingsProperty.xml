@@ -11,8 +11,31 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Used internally as the class that represents metadata about an individual configuration property.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Configuration.SettingsProperty> is used to describe settings properties of a class derived from <xref:System.Configuration.SettingsBase>. The Settings API allows a collection of settings properties to be grouped into a common language runtime class.  
+  
+ When persisting settings, the <xref:System.Configuration.SettingsBase> base class asks for a collection of <xref:System.Configuration.SettingsProperty> objects, grouped in a collection of type <xref:System.Configuration.SettingsPropertyCollection>. It does this by calling its own Properties member. Inherited classes should return a collection of properties to persist.  
+  
+ Each <xref:System.Configuration.SettingsProperty> object includes metadata about the property, including the following:  
+  
+-   Name.  
+  
+-   Default value.  
+  
+-   Property type.  
+  
+-   Serialization method.  
+  
+-   Provider to use for persistence.  
+  
+-   Other arbitrary attributes that are context and provider specific.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,8 +51,8 @@
         <Parameter Name="propertyToCopy" Type="System.Configuration.SettingsProperty" />
       </Parameters>
       <Docs>
-        <param name="propertyToCopy">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="propertyToCopy">Specifies a copy of an existing <see cref="T:System.Configuration.SettingsProperty" /> object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.SettingsProperty" /> class, based on the supplied parameter.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +69,8 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">Specifies the name of an existing <see cref="T:System.Configuration.SettingsProperty" /> object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.SettingsProperty" /> class. based on the supplied parameter.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,16 +95,16 @@
         <Parameter Name="throwOnErrorSerializing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="propertyType">To be added.</param>
-        <param name="provider">To be added.</param>
-        <param name="isReadOnly">To be added.</param>
-        <param name="defaultValue">To be added.</param>
-        <param name="serializeAs">To be added.</param>
-        <param name="attributes">To be added.</param>
-        <param name="throwOnErrorDeserializing">To be added.</param>
-        <param name="throwOnErrorSerializing">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the <see cref="T:System.Configuration.SettingsProperty" /> object.</param>
+        <param name="propertyType">The type of <see cref="T:System.Configuration.SettingsProperty" /> object.</param>
+        <param name="provider">A <see cref="T:System.Configuration.SettingsProvider" /> object to use for persistence.</param>
+        <param name="isReadOnly">A <see cref="T:System.Boolean" /> value specifying whether the <see cref="T:System.Configuration.SettingsProperty" /> object is read-only.</param>
+        <param name="defaultValue">The default value of the <see cref="T:System.Configuration.SettingsProperty" /> object.</param>
+        <param name="serializeAs">A <see cref="T:System.Configuration.SettingsSerializeAs" /> object. This object is an enumeration used to set the serialization scheme for storing application settings.</param>
+        <param name="attributes">A <see cref="T:System.Configuration.SettingsAttributeDictionary" /> object.</param>
+        <param name="throwOnErrorDeserializing">A Boolean value specifying whether an error will be thrown when the property is unsuccessfully deserialized.</param>
+        <param name="throwOnErrorSerializing">A Boolean value specifying whether an error will be thrown when the property is unsuccessfully serialized.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Configuration.SettingsProperty" /> class based on the supplied parameters.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,9 +121,16 @@
         <ReturnType>System.Configuration.SettingsAttributeDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a <see cref="T:System.Configuration.SettingsAttributeDictionary" /> object containing the attributes of the <see cref="T:System.Configuration.SettingsProperty" /> object.</summary>
+        <value>A <see cref="T:System.Configuration.SettingsAttributeDictionary" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Returns a collection of attributes used to describe a <xref:System.Configuration.SettingsProperty> object.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultValue">
@@ -116,8 +146,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the default value of the <see cref="T:System.Configuration.SettingsProperty" /> object.</summary>
+        <value>An object containing the default value of the <see cref="T:System.Configuration.SettingsProperty" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,9 +164,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value specifying whether a <see cref="T:System.Configuration.SettingsProperty" /> object is read-only.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Configuration.SettingsProperty" /> is read-only; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default is `false`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -152,9 +190,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the <see cref="T:System.Configuration.SettingsProperty" />.</summary>
+        <value>The name of the <see cref="T:System.Configuration.SettingsProperty" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.SettingsProperty.Name%2A> cannot be an empty string or `null`. If the <xref:System.Configuration.SettingsProperty> does not exist in the data provider, nothing can be returned.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PropertyType">
@@ -170,8 +215,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the type for the <see cref="T:System.Configuration.SettingsProperty" />.</summary>
+        <value>The type for the <see cref="T:System.Configuration.SettingsProperty" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -188,8 +233,8 @@
         <ReturnType>System.Configuration.SettingsProvider</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the provider for the <see cref="T:System.Configuration.SettingsProperty" />.</summary>
+        <value>A <see cref="T:System.Configuration.SettingsProvider" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -206,9 +251,16 @@
         <ReturnType>System.Configuration.SettingsSerializeAs</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a <see cref="T:System.Configuration.SettingsSerializeAs" /> object for the <see cref="T:System.Configuration.SettingsProperty" />.</summary>
+        <value>A <see cref="T:System.Configuration.SettingsSerializeAs" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.SettingsSerializeAs> object is an enumeration used as the serialization scheme to store application settings.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ThrowOnErrorDeserializing">
@@ -224,8 +276,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value specifying whether an error will be thrown when the property is unsuccessfully deserialized.</summary>
+        <value>
+          <see langword="true" /> if the error will be thrown when the property is unsuccessfully deserialized; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -242,8 +295,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value specifying whether an error will be thrown when the property is unsuccessfully serialized.</summary>
+        <value>
+          <see langword="true" /> if the error will be thrown when the property is unsuccessfully serialized; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

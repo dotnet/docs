@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Determines whether a <see cref="T:System.Windows.Forms.ToolStripItem" /> is placed in the overflow <see cref="T:System.Windows.Forms.ToolStrip" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If there are more overflow items than can be displayed on the form, use the [ToolStrip Items Collection Editor](http://msdn.microsoft.com/en-us/e681f3ab-94ba-4b2b-ac64-1dfad46caa25) to manage this situation.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Always">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Forms.ToolStripItemOverflow</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that a <see cref="T:System.Windows.Forms.ToolStripItem" /> is permanently shown in the overflow <see cref="T:System.Windows.Forms.ToolStrip" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="AsNeeded">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Forms.ToolStripItemOverflow</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that a <see cref="T:System.Windows.Forms.ToolStripItem" /> drifts between the main <see cref="T:System.Windows.Forms.ToolStrip" /> and the overflow <see cref="T:System.Windows.Forms.ToolStrip" /> as required if space is not available on the main <see cref="T:System.Windows.Forms.ToolStrip" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Never">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.Forms.ToolStripItemOverflow</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that a <see cref="T:System.Windows.Forms.ToolStripItem" /> is never a candidate for the overflow <see cref="T:System.Windows.Forms.ToolStrip" />. If the <see cref="T:System.Windows.Forms.ToolStripItem" /> cannot fit on the main <see cref="T:System.Windows.Forms.ToolStrip" />, it will not be shown.</summary>
       </Docs>
     </Member>
   </Members>

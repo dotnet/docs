@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the event data for the <see cref="T:System.Web.UI.WebControls.Expressions.CustomExpression" /> class.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,9 +29,9 @@
         <Parameter Name="values" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <param name="values">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="source">The data source object to use.</param>
+        <param name="values">The evaluated values from the parameter collection of the <see cref="T:System.Web.UI.WebControls.Expressions.CustomExpression" /> object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.Expressions.CustomExpressionEventArgs" /> class using the data source object and a dictionary of evaluated parameter values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +48,8 @@
         <ReturnType>System.Linq.IQueryable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the data source object.</summary>
+        <value>The data source object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,8 +66,8 @@
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the evaluated values from the <see cref="T:System.Web.UI.WebControls.ParameterCollection" /> instance of the <see cref="T:System.Web.UI.WebControls.Expressions.CustomExpression" /> object.</summary>
+        <value>The evaluated values from the <see cref="T:System.Web.UI.WebControls.ParameterCollection" /> instance of the <see cref="T:System.Web.UI.WebControls.Expressions.CustomExpression" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

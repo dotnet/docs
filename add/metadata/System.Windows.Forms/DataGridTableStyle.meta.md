@@ -1,469 +1,655 @@
 ---
 uid: System.Windows.Forms.DataGridTableStyle
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridTableStyle.ShouldSerializeLinkHoverColor
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridTableStyle.ResetLinkColor
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridTableStyle.ShouldSerializeLinkColor
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridTableStyle.ResetHeaderBackColor
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridTableStyle.ResetHeaderFont
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridTableStyle.AllowSorting
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridTableStyle.OnBackColorChanged(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridTableStyle.OnSelectionForeColorChanged(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridTableStyle.EndEdit(System.Windows.Forms.DataGridColumnStyle,System.Int32,System.Boolean)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridTableStyle.AlternatingBackColorChanged
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridTableStyle.ShouldSerializePreferredRowHeight
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridTableStyle.PreferredColumnWidth
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridTableStyle.PreferredRowHeight
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridTableStyle.OnRowHeadersVisibleChanged(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridTableStyle.OnColumnHeadersVisibleChanged(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridTableStyle.MappingNameChanged
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridTableStyle.ShouldSerializeForeColor
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridTableStyle.PreferredColumnWidthChanged
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridTableStyle.ResetForeColor
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridTableStyle.GridLineStyle
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridTableStyle.HeaderBackColor
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridTableStyle.SelectionBackColor
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridTableStyle.HeaderForeColor
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridTableStyle.RowHeadersVisibleChanged
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridTableStyle.BeginEdit(System.Windows.Forms.DataGridColumnStyle,System.Int32)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridTableStyle.RowHeaderWidthChanged
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridTableStyle.#ctor(System.Boolean)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridTableStyle.OnForeColorChanged(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridTableStyle.PreferredRowHeightChanged
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridTableStyle.ShouldSerializeLinkHoverColor
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.DataGridTableStyle.ResetLinkColor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridTableStyle.ShouldSerializeLinkColor
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.DataGridTableStyle.ResetHeaderBackColor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridTableStyle.ResetHeaderFont
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridTableStyle.AllowSorting
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridTableStyle.OnBackColorChanged(System.EventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridTableStyle.Dispose
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.DataGridTableStyle.OnSelectionForeColorChanged(System.EventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridTableStyle.EndEdit(System.Windows.Forms.DataGridColumnStyle,System.Int32,System.Boolean)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridTableStyle.AlternatingBackColorChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridTableStyle.ShouldSerializePreferredRowHeight
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridTableStyle.PreferredColumnWidth
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridTableStyle.PreferredRowHeight
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridTableStyle.OnRowHeadersVisibleChanged(System.EventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridTableStyle.OnColumnHeadersVisibleChanged(System.EventArgs)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.DataGridTableStyle.MappingNameChanged
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.DataGridTableStyle.ShouldSerializeForeColor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridTableStyle.PreferredColumnWidthChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridTableStyle.ResetForeColor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridTableStyle.GridLineStyle
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.DataGridTableStyle.HeaderBackColor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridTableStyle.SelectionBackColor
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.DataGridTableStyle.HeaderForeColor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridTableStyle.RowHeadersVisibleChanged
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.DataGridTableStyle.BeginEdit(System.Windows.Forms.DataGridColumnStyle,System.Int32)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridTableStyle.RowHeaderWidthChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridTableStyle.#ctor(System.Boolean)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridTableStyle.OnForeColorChanged(System.EventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridTableStyle.PreferredRowHeightChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridTableStyle.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.OnGridLineStyleChanged(System.EventArgs)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.ForeColorChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.OnRowHeaderWidthChanged(System.EventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.SelectionForeColorChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.RowHeaderWidth
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.OnPreferredColumnWidthChanged(System.EventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.ReadOnlyChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.OnHeaderBackColorChanged(System.EventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.SelectionBackColorChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.GridLineColor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.HeaderBackColorChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.ReadOnly
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.MappingName
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.LinkColor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.LinkHoverColorChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.ResetHeaderForeColor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.DataGrid
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.Dispose(System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.OnAlternatingBackColorChanged(System.EventArgs)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.ShouldSerializeSelectionForeColor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.CreateGridColumn(System.ComponentModel.PropertyDescriptor,System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.ForeColor
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.ShouldSerializeBackColor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.ColumnHeadersVisible
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.ResetSelectionBackColor
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.ShouldSerializeHeaderForeColor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.LinkColorChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.DefaultTableStyle
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.GridLineStyleChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.#ctor(System.Windows.Forms.CurrencyManager)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.ResetAlternatingBackColor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.ResetGridLineColor
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.HeaderFontChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.GridColumnStyles
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.ResetBackColor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.GridLineColorChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.ResetSelectionForeColor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.ShouldSerializeSelectionBackColor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.OnMappingNameChanged(System.EventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.CreateGridColumn(System.ComponentModel.PropertyDescriptor)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.OnReadOnlyChanged(System.EventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.ShouldSerializeGridLineColor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.BackColor
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.OnPreferredRowHeightChanged(System.EventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.AllowSortingChanged
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.HeaderFont
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.OnHeaderForeColorChanged(System.EventArgs)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.ResetLinkHoverColor
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.BackColorChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.AlternatingBackColor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.OnLinkColorChanged(System.EventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.ColumnHeadersVisibleChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.OnGridLineColorChanged(System.EventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridTableStyle.CreateGridColumn
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.RowHeadersVisible
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.OnSelectionBackColorChanged(System.EventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.OnAllowSortingChanged(System.EventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.ShouldSerializeHeaderBackColor
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.ShouldSerializeAlternatingBackColor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.HeaderForeColorChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.SelectionForeColor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.OnHeaderFontChanged(System.EventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.OnLinkHoverColorChanged(System.EventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridTableStyle.LinkHoverColor
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

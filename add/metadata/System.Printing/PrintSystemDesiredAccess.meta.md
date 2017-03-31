@@ -1,4 +1,6 @@
 ---
 uid: System.Printing.PrintSystemDesiredAccess
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

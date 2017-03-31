@@ -1,9 +1,11 @@
 ---
 uid: System.Web.Hosting.IStopListeningRegisteredObject
-internalonly: False
+ms.author: "robmcm"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.IStopListeningRegisteredObject.StopListening
-internalonly: False
+ms.author: "robmcm"
+manager: "wpickett"
 ---

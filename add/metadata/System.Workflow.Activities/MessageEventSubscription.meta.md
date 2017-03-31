@@ -1,59 +1,90 @@
 ---
 uid: System.Workflow.Activities.MessageEventSubscription
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.MessageEventSubscription.#ctor(System.IComparable,System.Guid,System.Type,System.String,System.Guid)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.MessageEventSubscription.MethodName
-internalonly: False
----
-
----
-uid: System.Workflow.Activities.MessageEventSubscription.CorrelationProperties
-internalonly: False
----
-
----
-uid: System.Workflow.Activities.MessageEventSubscription.InterfaceType
-internalonly: False
----
-
----
-uid: System.Workflow.Activities.MessageEventSubscription.WorkflowInstanceId
-internalonly: False
----
-
----
-uid: System.Workflow.Activities.MessageEventSubscription.SubscriptionId
-internalonly: False
----
-
----
-uid: System.Workflow.Activities.MessageEventSubscription.#ctor(System.IComparable,System.Guid)
-internalonly: False
----
-
----
-uid: System.Workflow.Activities.MessageEventSubscription.QueueName
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.MessageEventSubscription.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.MessageEventSubscription.CorrelationProperties
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.MessageEventSubscription.InterfaceType
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.MessageEventSubscription.WorkflowInstanceId
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.MessageEventSubscription.SubscriptionId
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.MessageEventSubscription.#ctor(System.IComparable,System.Guid)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.MessageEventSubscription.QueueName
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.MessageEventSubscription.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.MessageEventSubscription.#ctor(System.IComparable,System.Guid,System.Type,System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.MessageEventSubscription.#ctor(System.IComparable,System.Guid,System.Guid)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

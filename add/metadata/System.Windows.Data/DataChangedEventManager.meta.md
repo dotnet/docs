@@ -1,39 +1,52 @@
 ---
 uid: System.Windows.Data.DataChangedEventManager
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Data.DataChangedEventManager.NewListenerList
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Data.DataChangedEventManager.RemoveListener(System.Windows.Data.DataSourceProvider,System.Windows.IWeakEventListener)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Data.DataChangedEventManager.AddListener(System.Windows.Data.DataSourceProvider,System.Windows.IWeakEventListener)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Data.DataChangedEventManager.AddHandler(System.Windows.Data.DataSourceProvider,System.EventHandler{System.EventArgs})
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Data.DataChangedEventManager.RemoveHandler(System.Windows.Data.DataSourceProvider,System.EventHandler{System.EventArgs})
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Data.DataChangedEventManager.StartListening(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Data.DataChangedEventManager.StopListening(System.Object)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

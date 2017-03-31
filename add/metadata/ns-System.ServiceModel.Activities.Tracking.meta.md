@@ -1,4 +1,4 @@
 ---
 uid: System.ServiceModel.Activities.Tracking
-internalonly: False
+manager: "ghogen"
 ---

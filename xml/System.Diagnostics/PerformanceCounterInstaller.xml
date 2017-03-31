@@ -11,8 +11,24 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies an installer for the <see cref="T:System.Diagnostics.PerformanceCounter" /> component.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following information might help provide a performance improvement when installing performance counters at application startup. Performance counter categories installed with .NET Framework version 2.0 use separate shared memories, with each performance counter category having its own memory. You can specify the size of separate shared memory by creating a DWORD named FileMappingSize in the registry key HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\\*\<category name>*\Performance. The FileMappingSize value is set to the shared memory size of the category. The default size is 131072 decimal. If the FileMappingSize value is not present, the `fileMappingSize` attribute value for the `performanceCounters` element specified in the Machine.config file is used, causing additional overhead for configuration file processing. You can realize a performance improvement for application startup by setting the file mapping size in the registry.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a <xref:System.Diagnostics.PerformanceCounterInstaller> object and add it to an <xref:System.Configuration.Install.InstallerCollection>.  
+  
+ [!code-cpp[PerformanceCounterInstaller#1](~/samples/snippets/cpp/VS_Snippets_CLR/PerformanceCounterInstaller/CPP/performancecounterinstaller.cpp#1)]
+ [!code-csharp[PerformanceCounterInstaller#1](~/samples/snippets/csharp/VS_Snippets_CLR/PerformanceCounterInstaller/CS/performancecounterinstaller.cs#1)]
+ [!code-vb[PerformanceCounterInstaller#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/PerformanceCounterInstaller/VB/performancecounterinstaller.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +42,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.PerformanceCounterInstaller" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,9 +64,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the descriptive message for the performance counter.</summary>
+        <value>The descriptive message for the performance counter.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The value is set to <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CategoryName">
@@ -74,9 +91,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the performance category name for the performance counter.</summary>
+        <value>The performance category name for the performance counter.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The value is set to <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The value is not a valid category name.</exception>
       </Docs>
     </Member>
     <Member MemberName="CategoryType">
@@ -100,9 +119,17 @@
         <ReturnType>System.Diagnostics.PerformanceCounterCategoryType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the performance counter category type.</summary>
+        <value>One of the <see cref="T:System.Diagnostics.PerformanceCounterCategoryType" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Diagnostics.PerformanceCounterInstaller.CategoryType%2A> property specifies whether the performance counter category can have multiple instances.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value is not a <see cref="T:System.Diagnostics.PerformanceCounterCategoryType" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CopyFromComponent">
@@ -121,9 +148,25 @@
         <Parameter Name="component" Type="System.ComponentModel.IComponent" />
       </Parameters>
       <Docs>
-        <param name="component">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="component">The component to copy from.</param>
+        <summary>Copies all the properties from the specified component that are required at install time for a performance counter.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Diagnostics.PerformanceCounterInstaller> can only install multiple counters in the same category.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The specified component is not a <see cref="T:System.Diagnostics.PerformanceCounter" />.  
+  
+ -or-  
+  
+ The specified <see cref="T:System.Diagnostics.PerformanceCounter" /> is incomplete.  
+  
+ -or-  
+  
+ Multiple counters in different categories are trying to be installed.</exception>
       </Docs>
     </Member>
     <Member MemberName="Counters">
@@ -144,8 +187,8 @@
         <ReturnType>System.Diagnostics.CounterCreationDataCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of data that pertains to the counters to install.</summary>
+        <value>A <see cref="T:System.Diagnostics.CounterCreationDataCollection" /> that contains the names, help messages, and types of the counters to install.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -165,9 +208,18 @@
         <Parameter Name="stateSaver" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="stateSaver">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="stateSaver">An <see cref="T:System.Collections.IDictionary" /> that is used to save the information needed to perform a commit, rollback, or uninstall operation.</param>
+        <summary>Performs the installation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  When installing both a service and a performance counter with the same name, install the service before installing the performance counter.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Rollback">
@@ -186,8 +238,8 @@
         <Parameter Name="savedState" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="savedState">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="savedState">An <see cref="T:System.Collections.IDictionary" /> that contains the pre-installation state of the computer.</param>
+        <summary>Restores the computer to the state it was in before the installation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -207,8 +259,8 @@
         <Parameter Name="savedState" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="savedState">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="savedState">An <see cref="T:System.Collections.IDictionary" /> that contains the post-installation state of the computer.</param>
+        <summary>Removes an installation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -230,9 +282,10 @@
         <ReturnType>System.Configuration.Install.UninstallAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the performance counter should be removed at uninstall time.</summary>
+        <value>One of the <see cref="T:System.Configuration.Install.UninstallAction" /> values. The default is <see langword="Remove" />.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value is not an <see cref="T:System.Configuration.Install.UninstallAction" />.</exception>
       </Docs>
     </Member>
   </Members>

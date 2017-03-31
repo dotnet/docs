@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents an SSPI security token.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,10 +30,12 @@
         <Parameter Name="allowUnauthenticatedCallers" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="networkCredential">To be added.</param>
-        <param name="extractGroupsForWindowsAccounts">To be added.</param>
-        <param name="allowUnauthenticatedCallers">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="networkCredential">The <see cref="T:System.Net.NetworkCredential" />.</param>
+        <param name="extractGroupsForWindowsAccounts">
+          <see langword="true" /> if the groups to which the Windows accounts belong are extracted; otherwise, <see langword="false" />.</param>
+        <param name="allowUnauthenticatedCallers">
+          <see langword="true" /> if unauthenticated (anonymous) callers are allowed; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.Tokens.SspiSecurityToken" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,10 +54,11 @@
         <Parameter Name="networkCredential" Type="System.Net.NetworkCredential" />
       </Parameters>
       <Docs>
-        <param name="impersonationLevel">To be added.</param>
-        <param name="allowNtlm">To be added.</param>
-        <param name="networkCredential">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="impersonationLevel">The <see cref="T:System.Security.Principal.TokenImpersonationLevel" />.</param>
+        <param name="allowNtlm">
+          <see langword="true" /> if NTLM authentication is allowed; otherwise, <see langword="false" />.</param>
+        <param name="networkCredential">The <see cref="T:System.Net.NetworkCredential" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.Tokens.SspiSecurityToken" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,9 +75,19 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether to allow NTLM authentication.</summary>
+        <value>
+          <see langword="true" /> if NTLM authentication is allowed; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting this property to `true` allows authentication to downgrade to NTLM if Kerberos is not available.  
+  
+ Setting this property to `false` causes [!INCLUDE[indigo1](~/includes/indigo1-md.md)] to make a best-effort to throw an exception if NTLM is used. Note that setting this property to `false` may not prevent NTLM credentials from being sent over the wire.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowUnauthenticatedCallers">
@@ -90,8 +103,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether to allow anonymous callers.</summary>
+        <value>
+          <see langword="true" /> if anonymous callers are allowed; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,8 +122,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether to extract the groups to which the Windows accounts belong.</summary>
+        <value>
+          <see langword="true" /> if the groups to which the Windows accounts belong are extracted; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -126,8 +141,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the token ID.</summary>
+        <value>The token ID.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,8 +159,8 @@
         <ReturnType>System.Security.Principal.TokenImpersonationLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the token impersonation level.</summary>
+        <value>The <see cref="T:System.Security.Principal.TokenImpersonationLevel" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,8 +177,8 @@
         <ReturnType>System.Net.NetworkCredential</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the network credential.</summary>
+        <value>The <see cref="T:System.Net.NetworkCredential" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -180,8 +195,8 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Tokens.SecurityKey&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of security keys.</summary>
+        <value>A collection of <see cref="T:System.IdentityModel.Tokens.SecurityKey" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,8 +213,8 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the starting effective date for the token.</summary>
+        <value>A <see cref="T:System.DateTime" /> that represents the starting effective date for the token.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -216,8 +231,8 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the expiration date for the token.</summary>
+        <value>A <see cref="T:System.DateTime" /> that represents the expiration date for the token.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

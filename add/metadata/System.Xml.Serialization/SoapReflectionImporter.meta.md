@@ -1,64 +1,111 @@
 ---
 uid: System.Xml.Serialization.SoapReflectionImporter
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.SoapReflectionImporter.ImportMembersMapping(System.String,System.String,System.Xml.Serialization.XmlReflectionMember[],System.Boolean,System.Boolean)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.SoapReflectionImporter.#ctor(System.String)
-internalonly: False
----
-
----
-uid: System.Xml.Serialization.SoapReflectionImporter.IncludeTypes(System.Reflection.ICustomAttributeProvider)
-internalonly: False
----
-
----
-uid: System.Xml.Serialization.SoapReflectionImporter.ImportTypeMapping(System.Type)
-internalonly: False
----
-
----
-uid: System.Xml.Serialization.SoapReflectionImporter.ImportTypeMapping(System.Type,System.String)
-internalonly: False
----
-
----
-uid: System.Xml.Serialization.SoapReflectionImporter.ImportMembersMapping(System.String,System.String,System.Xml.Serialization.XmlReflectionMember[])
-internalonly: False
----
-
----
-uid: System.Xml.Serialization.SoapReflectionImporter.ImportMembersMapping(System.String,System.String,System.Xml.Serialization.XmlReflectionMember[],System.Boolean,System.Boolean,System.Boolean,System.Xml.Serialization.XmlMappingAccess)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.SoapReflectionImporter.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Xml.Serialization.SoapReflectionImporter.IncludeTypes(System.Reflection.ICustomAttributeProvider)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Xml.Serialization.SoapReflectionImporter.ImportTypeMapping(System.Type)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Xml.Serialization.SoapReflectionImporter.ImportTypeMapping(System.Type,System.String)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Xml.Serialization.SoapReflectionImporter.ImportMembersMapping(System.String,System.String,System.Xml.Serialization.XmlReflectionMember[])
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Xml.Serialization.SoapReflectionImporter.ImportMembersMapping(System.String,System.String,System.Xml.Serialization.XmlReflectionMember[],System.Boolean,System.Boolean,System.Boolean,System.Xml.Serialization.XmlMappingAccess)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Xml.Serialization.SoapReflectionImporter.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.SoapReflectionImporter.ImportMembersMapping(System.String,System.String,System.Xml.Serialization.XmlReflectionMember[],System.Boolean,System.Boolean,System.Boolean)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.SoapReflectionImporter.#ctor(System.Xml.Serialization.SoapAttributeOverrides)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.SoapReflectionImporter.IncludeType(System.Type)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.SoapReflectionImporter.#ctor(System.Xml.Serialization.SoapAttributeOverrides,System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Xml.Serialization.SoapReflectionImporter.ImportTypeMapping
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Xml.Serialization.SoapReflectionImporter.ImportMembersMapping
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -1,19 +1,27 @@
 ---
 uid: System.Web.UI.WebControls.DataGridCommandEventArgs
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.DataGridCommandEventArgs.#ctor(System.Web.UI.WebControls.DataGridItem,System.Object,System.Web.UI.WebControls.CommandEventArgs)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.DataGridCommandEventArgs.CommandSource
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.DataGridCommandEventArgs.Item
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

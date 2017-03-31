@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.GridUnitType
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

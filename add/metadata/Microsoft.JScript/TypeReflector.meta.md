@@ -1,14 +1,14 @@
 ---
 uid: Microsoft.JScript.TypeReflector
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.TypeReflector.GetMember(System.String,System.Reflection.BindingFlags)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.TypeReflector.GetMembers(System.Reflection.BindingFlags)
-internalonly: False
+ms.author: "mikejo"
 ---

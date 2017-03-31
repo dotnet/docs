@@ -1,9 +1,12 @@
 ---
 uid: System.Windows.Annotations.ContentLocatorBase
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Annotations.ContentLocatorBase.Clone
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

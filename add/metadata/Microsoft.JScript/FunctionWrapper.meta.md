@@ -1,9 +1,9 @@
 ---
 uid: Microsoft.JScript.FunctionWrapper
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.FunctionWrapper.ToString
-internalonly: False
+ms.author: "mikejo"
 ---

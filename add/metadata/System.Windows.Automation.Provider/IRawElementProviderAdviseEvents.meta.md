@@ -1,14 +1,20 @@
 ---
 uid: System.Windows.Automation.Provider.IRawElementProviderAdviseEvents
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Provider.IRawElementProviderAdviseEvents.AdviseEventAdded(System.Int32,System.Int32[])
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Provider.IRawElementProviderAdviseEvents.AdviseEventRemoved(System.Int32,System.Int32[])
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---

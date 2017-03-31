@@ -1,9 +1,9 @@
 ---
 uid: System.Windows.Markup.IQueryAmbient
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.IQueryAmbient.IsAmbientPropertyAvailable(System.String)
-internalonly: False
+manager: "martinek"
 ---

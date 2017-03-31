@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines an abstract class for a cache of session security tokens.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Called from constructors in derived classes to initialize the <see cref="T:System.IdentityModel.Tokens.SessionSecurityTokenCache" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,10 +52,10 @@
         <Parameter Name="expiryTime" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="expiryTime">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="key">The key of the entry to be added or updated.</param>
+        <param name="value">The token associated with the entry.</param>
+        <param name="expiryTime">The expiration time of the entry.</param>
+        <summary>When overridden in a derived class, attempts to add an entry to the cache or update an existing one.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,9 +75,9 @@
         <Parameter Name="key" Type="System.IdentityModel.Tokens.SessionSecurityTokenCacheKey" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">The key of the entry to retrieve.</param>
+        <summary>When overridden in a derived class, attempts to retrieve an entry from the cache.</summary>
+        <returns>The session token associated with the key or <see langword="null" />, if no match is found.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,10 +98,10 @@
         <Parameter Name="contextId" Type="System.Xml.UniqueId" />
       </Parameters>
       <Docs>
-        <param name="endpointId">To be added.</param>
-        <param name="contextId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="endpointId">The endpoint ID to search for.</param>
+        <param name="contextId">The context ID to search for.</param>
+        <summary>When overridden in a derived class, retrieves all of the tokens associated with a key.</summary>
+        <returns>The collection of session tokens associated with the key.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,9 +121,16 @@
         <Parameter Name="nodelist" Type="System.Xml.XmlNodeList" />
       </Parameters>
       <Docs>
-        <param name="nodelist">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="nodelist">The custom configuration elements.</param>
+        <summary>When overridden in a derived class, loads custom configuration from XML.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, this method throws a <xref:System.NotImplementedException>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -142,8 +149,8 @@
         <Parameter Name="key" Type="System.IdentityModel.Tokens.SessionSecurityTokenCacheKey" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="key">The key of the entry to remove.</param>
+        <summary>When implemented in a derived class, attempts to remove an entry from the cache.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -163,8 +170,8 @@
         <Parameter Name="endpointId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="endpointId">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="endpointId">The endpoint ID for which to remove entries.</param>
+        <summary>When implemented in a derived class, attempts to remove all entries with a matching endpoint ID from the cache.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -185,9 +192,9 @@
         <Parameter Name="contextId" Type="System.Xml.UniqueId" />
       </Parameters>
       <Docs>
-        <param name="endpointId">To be added.</param>
-        <param name="contextId">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="endpointId">The endpoint ID for which to remove entries.</param>
+        <param name="contextId">The context ID for which to remove entries.</param>
+        <summary>When implemented in a derived class, attempts to remove all matching entries from the cache.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

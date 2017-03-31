@@ -1,24 +1,29 @@
 ---
 uid: Microsoft.Build.Framework.XamlTypes.IntProperty
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.XamlTypes.IntProperty.MaxValue
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.XamlTypes.IntProperty.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.XamlTypes.IntProperty.EndInit
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.XamlTypes.IntProperty.MinValue
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

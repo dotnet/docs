@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Implements extensions to the base model item.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,9 +31,16 @@
         <Parameter Name="item" Type="System.Activities.Presentation.Model.ModelItem" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="item">The designer item to set focus on.</param>
+        <summary>Sets the keyboard focus on the specified designer item.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the specified designer item is not visible in the model tree view, this method expands the model tree up to a parent that is no more than five levels up.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Focus">
@@ -53,10 +60,17 @@
         <Parameter Name="level" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <param name="level">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="item">The designer item to set focus on.</param>
+        <param name="level">The maximum number of levels used to set a limit on the expansion of the model tree if the specified designer item is not visible.</param>
+        <summary>Sets the keyboard focus on the specified designer item.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the specified designer item is not visible in the model tree view, this method expands the model tree up to a parent that is no more than a maximum number of levels up specified by the `level` parameter.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEditingContext">
@@ -75,9 +89,9 @@
         <Parameter Name="modelItem" Type="System.Activities.Presentation.Model.ModelItem" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="modelItem">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="modelItem">The model item.</param>
+        <summary>Retrieves the editing context of the specified model item.</summary>
+        <returns>The editing context of the specified model item.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,10 +112,10 @@
         <Parameter Name="root" Type="System.Activities.Presentation.Model.ModelItem" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <param name="root">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="path">The path.</param>
+        <param name="root">The root.</param>
+        <summary>Retrieves a model item from the specified path and root.</summary>
+        <returns>The model item from the specified path and root.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,9 +135,9 @@
         <Parameter Name="modelItem" Type="System.Activities.Presentation.Model.ModelItem" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="modelItem">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="modelItem">The model item.</param>
+        <summary>Retrieves the path of the specified model item.</summary>
+        <returns>The path of the specified model item.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,10 +158,11 @@
         <Parameter Name="child" Type="System.Activities.Presentation.Model.ModelItem" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <param name="child">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The parent designer item to check.</param>
+        <param name="child">The child designer item to check.</param>
+        <summary>Returns a value that indicates whether the first specified designer item is a parent of the second specified designer item.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="item" /> is the parent of <paramref name="child" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

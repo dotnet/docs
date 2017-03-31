@@ -31,8 +31,29 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Describes and represents an enumeration type.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  In the .NET Framework versions 1.0 and 1.1, it is necessary to define enumerations using <xref:System.Reflection.Emit.TypeBuilder> because <xref:System.Reflection.Emit.EnumBuilder> emits enumerations whose elements are of type <xref:System.Int32> instead of the enumeration type. In the .NET Framework version 2.0, <xref:System.Reflection.Emit.EnumBuilder> emits enumerations whose elements have the correct type.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the construction of an enumeration within a dynamic assembly, using `EnumBuilder`. The example defines an enumeration named `Elevation`, with an underlying type of <xref:System.Int32>, and creates two elements: `Low`, with a value of 0, and `High`, with a value of 1. After the type has been created, the assembly is saved with the name `TempAssembly.dll`. You can use the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md) to examine the contents of this assembly.  
+  
+> [!NOTE]
+>  Prior to the .NET Framework version 2.0, this code example does not produce a correct enumeration.  
+  
+ [!code-cpp[ModuleBuilder_DefineEnum#1](~/samples/snippets/cpp/VS_Snippets_CLR/ModuleBuilder_DefineEnum/CPP/modulebuilder_defineenum.cpp#1)]
+ [!code-csharp[ModuleBuilder_DefineEnum#1](~/samples/snippets/csharp/VS_Snippets_CLR/ModuleBuilder_DefineEnum/CS/modulebuilder_defineenum.cs#1)]
+ [!code-vb[ModuleBuilder_DefineEnum#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ModuleBuilder_DefineEnum/VB/modulebuilder_defineenum.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -68,9 +89,20 @@
         <ReturnType>System.Reflection.Assembly</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Retrieves the dynamic assembly that contains this enum definition.</summary>
+        <value>Read-only. The dynamic assembly that contains this enum definition.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates the use of the `Assembly` property to reference the parent assembly of the current `EnumBuilder`.  
+  
+ [!code-cpp[EnumBuilder_Properties_5#1](~/samples/snippets/cpp/VS_Snippets_CLR/EnumBuilder_Properties_5/CPP/enumbuilder_properties_5.cpp#1)]
+ [!code-csharp[EnumBuilder_Properties_5#1](~/samples/snippets/csharp/VS_Snippets_CLR/EnumBuilder_Properties_5/CS/enumbuilder_properties_5.cs#1)]
+ [!code-vb[EnumBuilder_Properties_5#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/EnumBuilder_Properties_5/VB/enumbuilder_properties_5.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AssemblyQualifiedName">
@@ -91,9 +123,32 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Returns the full path of this enum qualified by the display name of the parent assembly.</summary>
+        <value>Read-only. The full path of this enum qualified by the display name of the parent assembly.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The format of the returned string is:  
+  
+ \<FullTypeName>, \<AssemblyDisplayName>  
+  
+ See <xref:System.Reflection.AssemblyName> for a description of the format of the display name of an assembly.  
+  
+## Version Information  
+ In the .NET Framework version 1.1 and earlier, the return value of this property did not include the culture or public key.  
+  
+   
+  
+## Examples  
+ The following code sample demonstrates the use of the `AssemblyQualifiedName` property to reference the qualified parent assembly name of the current `EnumBuilder`.  
+  
+ [!code-cpp[EnumBuilder_Properties_5#2](~/samples/snippets/cpp/VS_Snippets_CLR/EnumBuilder_Properties_5/CPP/enumbuilder_properties_5.cpp#2)]
+ [!code-csharp[EnumBuilder_Properties_5#2](~/samples/snippets/csharp/VS_Snippets_CLR/EnumBuilder_Properties_5/CS/enumbuilder_properties_5.cs#2)]
+ [!code-vb[EnumBuilder_Properties_5#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/EnumBuilder_Properties_5/VB/enumbuilder_properties_5.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Attributes">
@@ -132,8 +187,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the parent <see cref="T:System.Type" /> of this type which is always <see cref="T:System.Enum" />.</summary>
+        <value>Read-only. The parent <see cref="T:System.Type" /> of this type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -170,9 +225,14 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a <see cref="T:System.Type" /> object for this enum.</summary>
+        <returns>A <see cref="T:System.Type" /> object for this enum.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">This type has been previously created.  
+  
+ -or-  
+  
+ The enclosing type has not been created.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateTypeInfo">
@@ -194,8 +254,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets a <see cref="T:System.Reflection.TypeInfo" /> object that represents this enumeration.</summary>
+        <returns>An object that represents this enumeration.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -235,8 +295,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the type that declared this <see cref="T:System.Reflection.Emit.EnumBuilder" />.</summary>
+        <value>Read-only. The type that declared this <see cref="T:System.Reflection.Emit.EnumBuilder" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -262,11 +322,33 @@
         <Parameter Name="literalValue" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="literalName">To be added.</param>
-        <param name="literalValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="literalName">The name of the static field.</param>
+        <param name="literalValue">The constant value of the literal.</param>
+        <summary>Defines the named static field in an enumeration type with the specified constant value.</summary>
+        <returns>The defined field.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The defined field will have the field attributes <xref:System.Reflection.FieldAttributes>, <xref:System.Reflection.FieldAttributes>, and <xref:System.Reflection.FieldAttributes> set.  
+  
+> [!NOTE]
+>  In the .NET Framework versions 1.0 and 1.1, it is necessary to define enumerations using <xref:System.Reflection.Emit.TypeBuilder> because <xref:System.Reflection.Emit.EnumBuilder> emits enumerations whose elements are of type <xref:System.Int32> instead of the enumeration type. In the .NET Framework version 2.0, <xref:System.Reflection.Emit.EnumBuilder> emits enumerations whose elements have the correct type.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the construction of an enumeration within a dynamic assembly, using `EnumBuilder`. The example defines an enumeration named `Elevation`, with an underlying type of <xref:System.Int32>, and creates two elements: `Low`, with a value of 0, and `High`, with a value of 1. After the type has been created, the assembly is saved with the name `TempAssembly.dll`. You can use the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md) to examine the contents of this assembly.  
+  
+> [!NOTE]
+>  Prior to the .NET Framework version 2.0, this code example does not produce a correct enumeration.  
+  
+ [!code-cpp[ModuleBuilder_DefineEnum#1](~/samples/snippets/cpp/VS_Snippets_CLR/ModuleBuilder_DefineEnum/CPP/modulebuilder_defineenum.cpp#1)]
+ [!code-csharp[ModuleBuilder_DefineEnum#1](~/samples/snippets/csharp/VS_Snippets_CLR/ModuleBuilder_DefineEnum/CS/modulebuilder_defineenum.cs#1)]
+ [!code-vb[ModuleBuilder_DefineEnum#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ModuleBuilder_DefineEnum/VB/modulebuilder_defineenum.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FullName">
@@ -287,9 +369,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Returns the full path of this enum.</summary>
+        <value>Read-only. The full path of this enum.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The returned format is "enclosingTypeFullName+nestedTypeName" for nested types and "typeName" for non-nested types.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GenericParameterAttributes">
@@ -438,10 +527,18 @@
         <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
       </Parameters>
       <Docs>
-        <param name="bindingAttr">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="bindingAttr">This must be a bit flag from <see cref="T:System.Reflection.BindingFlags" /> : <see langword="InvokeMethod" />, <see langword="NonPublic" />, and so on.</param>
+        <summary>Returns an array of <see cref="T:System.Reflection.ConstructorInfo" /> objects representing the public and non-public constructors defined for this class, as specified.</summary>
+        <returns>Returns an array of <see cref="T:System.Reflection.ConstructorInfo" /> objects representing the specified constructors defined for this class. If no constructors are defined, an empty array is returned.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ As a workaround, to retrieve the constructor of a finished type, you can retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">This method is not currently supported in types that are not complete.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributes">
@@ -461,10 +558,24 @@
         <Parameter Name="inherit" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="inherit">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="inherit">Specifies whether to search this member's inheritance chain to find the attributes.</param>
+        <summary>Returns all the custom attributes defined for this constructor.</summary>
+        <returns>Returns an array of objects representing all the custom attributes of the constructor represented by this <see cref="T:System.Reflection.Emit.ConstructorBuilder" /> instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ As a workaround, to retrieve the custom attributes of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> and call <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A> on the returned <xref:System.Type>.  
+  
+ The following code sample illustrates the use of `GetCustomAttribute` in the context of <xref:System.Reflection.Emit.EnumBuilder>.  
+  
+ [!code-cpp[EnumBuilder_SetCustomAttribute2#1](~/samples/snippets/cpp/VS_Snippets_CLR/EnumBuilder_SetCustomAttribute2/CPP/enumbuilder_setcustomattribute2.cpp#1)]
+ [!code-csharp[EnumBuilder_SetCustomAttribute2#1](~/samples/snippets/csharp/VS_Snippets_CLR/EnumBuilder_SetCustomAttribute2/CS/enumbuilder_setcustomattribute2.cs#1)]
+ [!code-vb[EnumBuilder_SetCustomAttribute2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/EnumBuilder_SetCustomAttribute2/VB/enumbuilder_setcustomattribute2.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">This method is not currently supported in types that are not complete.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributes">
@@ -485,11 +596,25 @@
         <Parameter Name="inherit" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="attributeType">To be added.</param>
-        <param name="inherit">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="attributeType">The <see langword="Type" /> object to which the custom attributes are applied.</param>
+        <param name="inherit">Specifies whether to search this member's inheritance chain to find the attributes.</param>
+        <summary>Returns the custom attributes identified by the given type.</summary>
+        <returns>Returns an array of objects representing the attributes of this constructor that are of <see cref="T:System.Type" /><paramref name="attributeType" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ As a workaround, to retrieve the custom attributes of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> and call <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A?displayProperty=fullName> on the returned <xref:System.Type>.  
+  
+ The following code sample illustrates the use of `GetCustomAttribute` in the context of <xref:System.Reflection.Emit.EnumBuilder>.  
+  
+ [!code-cpp[EnumBuilder_SetCustomAttribute1#2](~/samples/snippets/cpp/VS_Snippets_CLR/EnumBuilder_SetCustomAttribute1/CPP/enumbuilder_setcustomattribute1.cpp#2)]
+ [!code-csharp[EnumBuilder_SetCustomAttribute1#2](~/samples/snippets/csharp/VS_Snippets_CLR/EnumBuilder_SetCustomAttribute1/CS/enumbuilder_setcustomattribute1.cs#2)]
+ [!code-vb[EnumBuilder_SetCustomAttribute1#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/EnumBuilder_SetCustomAttribute1/VB/enumbuilder_setcustomattribute1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">This method is not currently supported in types that are not complete.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetElementType">
@@ -511,9 +636,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Calling this method always throws <see cref="T:System.NotSupportedException" />.</summary>
+        <returns>This method is not supported. No value is returned.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">This method is not currently supported.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetEnumUnderlyingType">
@@ -531,8 +657,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the underlying integer type of the current enumeration, which is set when the enumeration builder is defined.</summary>
+        <returns>The underlying type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -554,11 +680,19 @@
         <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="bindingAttr">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the event to get.</param>
+        <param name="bindingAttr">This invocation attribute. This must be a bit flag from <see cref="T:System.Reflection.BindingFlags" /> : <see langword="InvokeMethod" />, <see langword="NonPublic" />, and so on.</param>
+        <summary>Returns the event with the specified name.</summary>
+        <returns>Returns an <see cref="T:System.Reflection.EventInfo" /> object representing the event declared or inherited by this type with the specified name. If there are no matches, <see langword="null" /> is returned.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ As a workaround, to retrieve the event of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">This method is not currently supported in types that are not complete.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetEvents">
@@ -576,9 +710,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the events for the public events declared or inherited by this type.</summary>
+        <returns>Returns an array of <see cref="T:System.Reflection.EventInfo" /> objects representing the public events declared or inherited by this type. An empty array is returned if there are no public events.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ As a workaround, to retrieve the events of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">This method is not currently supported in types that are not complete.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetEvents">
@@ -598,10 +740,18 @@
         <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
       </Parameters>
       <Docs>
-        <param name="bindingAttr">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="bindingAttr">This must be a bit flag from <see cref="T:System.Reflection.BindingFlags" />, such as <see langword="InvokeMethod" />, <see langword="NonPublic" />, and so on.</param>
+        <summary>Returns the public and non-public events that are declared by this type.</summary>
+        <returns>Returns an array of <see cref="T:System.Reflection.EventInfo" /> objects representing the public and non-public events declared or inherited by this type. An empty array is returned if there are no events, as specified.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ As a workaround, to retrieve the events of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type to retrieve the events.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">This method is not currently supported in types that are not complete.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetField">
@@ -622,11 +772,19 @@
         <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="bindingAttr">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the field to get.</param>
+        <param name="bindingAttr">This must be a bit flag from <see cref="T:System.Reflection.BindingFlags" /> : <see langword="InvokeMethod" />, <see langword="NonPublic" />, and so on.</param>
+        <summary>Returns the field specified by the given name.</summary>
+        <returns>Returns the <see cref="T:System.Reflection.FieldInfo" /> object representing the field declared or inherited by this type with the specified name and public or non-public modifier. If there are no matches, then null is returned.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ As a workaround, to retrieve the field of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A> and use reflection on the retrieved type.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">This method is not currently supported in types that are not complete.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetFields">
@@ -646,10 +804,20 @@
         <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
       </Parameters>
       <Docs>
-        <param name="bindingAttr">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="bindingAttr">This must be a bit flag from <see cref="T:System.Reflection.BindingFlags" />, such as InvokeMethod, NonPublic, and so on.</param>
+        <summary>Returns the public and non-public fields that are declared by this type.</summary>
+        <returns>Returns an array of <see cref="T:System.Reflection.FieldInfo" /> objects representing the public and non-public fields declared or inherited by this type. An empty array is returned if there are no fields, as specified.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ As a workaround, to retrieve the field of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
+  
+ The <xref:System.Reflection.Emit.EnumBuilder.GetFields%2A> method does not return fields in a particular order, such as alphabetical or declaration order. Your code must not depend on the order in which fields are returned, because that order can vary.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">This method is not currently supported in types that are not complete.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetGenericParameterConstraints">
@@ -708,11 +876,19 @@
         <Parameter Name="ignoreCase" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="ignoreCase">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the interface.</param>
+        <param name="ignoreCase">If <see langword="true" />, the search is case-insensitive. If <see langword="false" />, the search is case-sensitive.</param>
+        <summary>Returns the interface implemented (directly or indirectly) by this type, with the specified fully-qualified name.</summary>
+        <returns>Returns a <see cref="T:System.Type" /> object representing the implemented interface. Returns null if no interface matching name is found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ As a workaround, to retrieve the interface of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">This method is not currently supported in types that are not complete.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetInterfaceMap">
@@ -737,10 +913,18 @@
         <Parameter Name="interfaceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="interfaceType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="interfaceType">The type of the interface for which the interface mapping is to be retrieved.</param>
+        <summary>Returns an interface mapping for the interface requested.</summary>
+        <returns>The requested interface mapping.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ As a workaround, to retrieve the interface mapping types of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The type does not implement the interface.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetInterfaces">
@@ -758,9 +942,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns an array of all the interfaces implemented on this a class and its base classes.</summary>
+        <returns>Returns an array of <see cref="T:System.Type" /> objects representing the implemented interfaces. If none are defined, an empty array is returned.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ As a workaround, to retrieve the interface of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetMember">
@@ -782,12 +973,20 @@
         <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="type">To be added.</param>
-        <param name="bindingAttr">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the member.</param>
+        <param name="type">The type of member that is to be returned.</param>
+        <param name="bindingAttr">This must be a bit flag from <see cref="T:System.Reflection.BindingFlags" /> : <see langword="InvokeMethod" />, <see langword="NonPublic" />, and so on.</param>
+        <summary>Returns all members with the specified name, type, and binding that are declared or inherited by this type.</summary>
+        <returns>Returns an array of <see cref="T:System.Reflection.MemberInfo" /> objects representing the public and non-public members defined on this type if <paramref name="nonPublic" /> is used; otherwise, only the public members are returned.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ As a workaround, to retrieve the member of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">This method is not currently supported in types that are not complete.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetMembers">
@@ -807,10 +1006,18 @@
         <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
       </Parameters>
       <Docs>
-        <param name="bindingAttr">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="bindingAttr">This must be a bit flag from <see cref="T:System.Reflection.BindingFlags" /> : <see langword="InvokeMethod" />, <see langword="NonPublic" />, and so on.</param>
+        <summary>Returns the specified members declared or inherited by this type,.</summary>
+        <returns>Returns an array of <see cref="T:System.Reflection.MemberInfo" /> objects representing the public and non-public members declared or inherited by this type. An empty array is returned if there are no matching members.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ As a workaround, to retrieve the members of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">This method is not currently supported in types that are not complete.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetMethodImpl">
@@ -863,10 +1070,18 @@
         <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
       </Parameters>
       <Docs>
-        <param name="bindingAttr">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="bindingAttr">This must be a bit flag from <see cref="T:System.Reflection.BindingFlags" />, such as <see langword="InvokeMethod" />, <see langword="NonPublic" />, and so on.</param>
+        <summary>Returns all the public and non-public methods declared or inherited by this type, as specified.</summary>
+        <returns>Returns an array of <see cref="T:System.Reflection.MethodInfo" /> objects representing the public and non-public methods defined on this type if <paramref name="nonPublic" /> is used; otherwise, only the public methods are returned.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ As a workaround, to retrieve the methods of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">This method is not currently supported in types that are not complete.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetNestedType">
@@ -887,11 +1102,23 @@
         <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="bindingAttr">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="name">The <see cref="T:System.String" /> containing the name of the nested type to get.</param>
+        <param name="bindingAttr">A bitmask comprised of one or more <see cref="T:System.Reflection.BindingFlags" /> that specify how the search is conducted.  
+  
+ -or-  
+  
+ Zero, to conduct a case-sensitive search for public methods.</param>
+        <summary>Returns the specified nested type that is declared by this type.</summary>
+        <returns>A <see cref="T:System.Type" /> object representing the nested type that matches the specified requirements, if found; otherwise, <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ As a workaround, to retrieve the nested type of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">This method is not currently supported in types that are not complete.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetNestedTypes">
@@ -911,10 +1138,20 @@
         <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
       </Parameters>
       <Docs>
-        <param name="bindingAttr">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="bindingAttr">This must be a bit flag from <see cref="T:System.Reflection.BindingFlags" />, such as <see langword="InvokeMethod" />, <see langword="NonPublic" />, and so on.</param>
+        <summary>Returns the public and non-public nested types that are declared or inherited by this type.</summary>
+        <returns>An array of <see cref="T:System.Type" /> objects representing all the types nested within the current <see cref="T:System.Type" /> that match the specified binding constraints.  
+  
+ An empty array of type <see cref="T:System.Type" />, if no types are nested within the current <see cref="T:System.Type" />, or if none of the nested types match the binding constraints.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ As a workaround, to retrieve the nested types of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">This method is not currently supported in types that are not complete.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetProperties">
@@ -934,10 +1171,18 @@
         <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
       </Parameters>
       <Docs>
-        <param name="bindingAttr">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="bindingAttr">This invocation attribute. This must be a bit flag from <see cref="T:System.Reflection.BindingFlags" /> : <see langword="InvokeMethod" />, <see langword="NonPublic" />, and so on.</param>
+        <summary>Returns all the public and non-public properties declared or inherited by this type, as specified.</summary>
+        <returns>Returns an array of <see cref="T:System.Reflection.PropertyInfo" /> objects representing the public and non-public properties defined on this type if <paramref name="nonPublic" /> is used; otherwise, only the public properties are returned.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ As a workaround, to retrieve the properties of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">This method is not currently supported in types that are not complete.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetPropertyImpl">
@@ -991,9 +1236,21 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Returns the GUID of this enum.</summary>
+        <value>Read-only. The GUID of this enum.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates the use of the `GUID` property to reference the associated <xref:System.Guid> of the current `EnumBuilder`.  
+  
+ [!code-cpp[EnumBuilder_Properties_4.cs#4](~/samples/snippets/cpp/VS_Snippets_CLR/EnumBuilder_Properties_4.cs/CPP/enumbuilder_properties_4.cpp#4)]
+ [!code-csharp[EnumBuilder_Properties_4.cs#4](~/samples/snippets/csharp/VS_Snippets_CLR/EnumBuilder_Properties_4.cs/CS/enumbuilder_properties_4.cs#4)]
+ [!code-vb[EnumBuilder_Properties_4.cs#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/EnumBuilder_Properties_4.cs/VB/enumbuilder_properties_4.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">This method is not currently supported in types that are not complete.</exception>
       </Docs>
     </Member>
     <Member MemberName="HasElementTypeImpl">
@@ -1040,17 +1297,25 @@
         <Parameter Name="namedParameters" Type="System.String[]" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="invokeAttr">To be added.</param>
-        <param name="binder">To be added.</param>
-        <param name="target">To be added.</param>
-        <param name="args">To be added.</param>
-        <param name="modifiers">To be added.</param>
-        <param name="culture">To be added.</param>
-        <param name="namedParameters">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the member to invoke. This can be a constructor, method, property, or field. A suitable invocation attribute must be specified. Note that it is possible to invoke the default member of a class by passing an empty string as the name of the member.</param>
+        <param name="invokeAttr">The invocation attribute. This must be a bit flag from <see langword="BindingFlags" />.</param>
+        <param name="binder">An object that enables the binding, coercion of argument types, invocation of members, and retrieval of <see langword="MemberInfo" /> objects using reflection. If binder is <see langword="null" />, the default binder is used. See <see cref="T:System.Reflection.Binder" />.</param>
+        <param name="target">The object on which to invoke the specified member. If the member is static, this parameter is ignored.</param>
+        <param name="args">An argument list. This is an array of objects that contains the number, order, and type of the parameters of the member to be invoked. If there are no parameters this should be null.</param>
+        <param name="modifiers">An array of the same length as <c>args</c> with elements that represent the attributes associated with the arguments of the member to be invoked. A parameter has attributes associated with it in the metadata. They are used by various interoperability services. See the metadata specs for details such as this.</param>
+        <param name="culture">An instance of <see langword="CultureInfo" /> used to govern the coercion of types. If this is null, the <see langword="CultureInfo" /> for the current thread is used. (Note that this is necessary to, for example, convert a string that represents 1000 to a double value, since 1000 is represented differently by different cultures.)</param>
+        <param name="namedParameters">Each parameter in the <c>namedParameters</c> array gets the value in the corresponding element in the <c>args</c> array. If the length of <c>args</c> is greater than the length of <c>namedParameters</c>, the remaining argument values are passed in order.</param>
+        <summary>Invokes the specified member. The method that is to be invoked must be accessible and provide the most specific match with the specified argument list, under the contraints of the specified binder and invocation attributes.</summary>
+        <returns>Returns the return value of the invoked member.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">This method is not currently supported in types that are not complete.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsArrayImpl">
@@ -1094,9 +1359,10 @@
         <Parameter Name="typeInfo" Type="System.Reflection.TypeInfo" />
       </Parameters>
       <Docs>
-        <param name="typeInfo">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="typeInfo">The object to test.</param>
+        <summary>Gets a value that indicates whether a specified <see cref="T:System.Reflection.TypeInfo" /> object can be assigned to this object.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="typeInfo" /> can be assigned to this object; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1154,8 +1420,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether this object represents a constructed generic type.</summary>
+        <value>
+          <see langword="true" /> if this object represents a constructed generic type; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1177,11 +1444,20 @@
         <Parameter Name="inherit" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="attributeType">To be added.</param>
-        <param name="inherit">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="attributeType">The <see langword="Type" /> object to which the custom attributes are applied.</param>
+        <param name="inherit">Specifies whether to search this member's inheritance chain to find the attributes.</param>
+        <summary>Checks if the specified custom attribute type is defined.</summary>
+        <returns>
+          <see langword="true" /> if one or more instance of <paramref name="attributeType" /> is defined on this member; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ As a workaround, to check if a custom attribute is defined for a finished type, retrieve the type using <xref:System.Type.GetType%2A> and call <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A> on the returned <xref:System.Type>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">This method is not currently supported in types that are not complete.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsEnum">
@@ -1353,8 +1629,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a <see cref="T:System.Type" /> object representing a one-dimensional array of the current type, with a lower bound of zero.</summary>
+        <returns>A <see cref="T:System.Type" /> object representing a one-dimensional array of the current type, with a lower bound of zero.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1379,10 +1655,12 @@
         <Parameter Name="rank" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="rank">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="rank">The number of dimensions for the array. This number must be less than or equal to 32.</param>
+        <summary>Returns a <see cref="T:System.Type" /> object representing an array of the current type, with the specified number of dimensions.</summary>
+        <returns>An object representing an array of the current type, with the specified number of dimensions.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.IndexOutOfRangeException">
+          <paramref name="rank" /> is less than 1.</exception>
       </Docs>
     </Member>
     <Member MemberName="MakeByRefType">
@@ -1404,8 +1682,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a <see cref="T:System.Type" /> object that represents the current type when passed as a **ref** parameter (**ByRef** parameter in Visual Basic).</summary>
+        <returns>A <see cref="T:System.Type" /> object that represents the current type when passed as a **ref** parameter (**ByRef** parameter in Visual Basic).</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1456,8 +1734,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a <see cref="T:System.Type" /> object that represents a pointer to the current type.</summary>
+        <returns>A <see cref="T:System.Type" /> object that represents a pointer to the current type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1479,9 +1757,20 @@
         <ReturnType>System.Reflection.Module</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Retrieves the dynamic module that contains this <see cref="T:System.Reflection.Emit.EnumBuilder" /> definition.</summary>
+        <value>Read-only. The dynamic module that contains this <see cref="T:System.Reflection.Emit.EnumBuilder" /> definition.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates the use of the `Module` property to reference the parent module of the current `EnumBuilder`.  
+  
+ [!code-cpp[EnumBuilder_Properties_5#3](~/samples/snippets/cpp/VS_Snippets_CLR/EnumBuilder_Properties_5/CPP/enumbuilder_properties_5.cpp#3)]
+ [!code-csharp[EnumBuilder_Properties_5#3](~/samples/snippets/csharp/VS_Snippets_CLR/EnumBuilder_Properties_5/CS/enumbuilder_properties_5.cs#3)]
+ [!code-vb[EnumBuilder_Properties_5#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/EnumBuilder_Properties_5/VB/enumbuilder_properties_5.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -1502,9 +1791,20 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Returns the name of this enum.</summary>
+        <value>Read-only. The name of this enum.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates the use of the `Name` property to reference the name of the current `EnumBuilder`.  
+  
+ [!code-cpp[EnumBuilder_Properties_5#4](~/samples/snippets/cpp/VS_Snippets_CLR/EnumBuilder_Properties_5/CPP/enumbuilder_properties_5.cpp#4)]
+ [!code-csharp[EnumBuilder_Properties_5#4](~/samples/snippets/csharp/VS_Snippets_CLR/EnumBuilder_Properties_5/CS/enumbuilder_properties_5.cs#4)]
+ [!code-vb[EnumBuilder_Properties_5#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/EnumBuilder_Properties_5/VB/enumbuilder_properties_5.vb#4)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Namespace">
@@ -1525,9 +1825,20 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Returns the namespace of this enum.</summary>
+        <value>Read-only. The namespace of this enum.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates the use of the `Namespace` property to reference the associated namespace of the current `EnumBuilder`.  
+  
+ [!code-cpp[EnumBuilder_Properties_5#5](~/samples/snippets/cpp/VS_Snippets_CLR/EnumBuilder_Properties_5/CPP/enumbuilder_properties_5.cpp#5)]
+ [!code-csharp[EnumBuilder_Properties_5#5](~/samples/snippets/csharp/VS_Snippets_CLR/EnumBuilder_Properties_5/CS/enumbuilder_properties_5.cs#5)]
+ [!code-vb[EnumBuilder_Properties_5#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/EnumBuilder_Properties_5/VB/enumbuilder_properties_5.vb#5)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReflectedType">
@@ -1544,8 +1855,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the type that was used to obtain this <see cref="T:System.Reflection.Emit.EnumBuilder" />.</summary>
+        <value>Read-only. The type that was used to obtain this <see cref="T:System.Reflection.Emit.EnumBuilder" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1570,9 +1881,22 @@
         <Parameter Name="customBuilder" Type="System.Reflection.Emit.CustomAttributeBuilder" />
       </Parameters>
       <Docs>
-        <param name="customBuilder">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="customBuilder">An instance of a helper class to define the custom attribute.</param>
+        <summary>Sets a custom attribute using a custom attribute builder.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample illustrates the use of `SetCustomAttribute` in the context of <xref:System.Reflection.Emit.EnumBuilder>, passing a <xref:System.Reflection.Emit.CustomAttributeBuilder>.  
+  
+ [!code-cpp[EnumBuilder_SetCustomAttribute2#2](~/samples/snippets/cpp/VS_Snippets_CLR/EnumBuilder_SetCustomAttribute2/CPP/enumbuilder_setcustomattribute2.cpp#2)]
+ [!code-csharp[EnumBuilder_SetCustomAttribute2#2](~/samples/snippets/csharp/VS_Snippets_CLR/EnumBuilder_SetCustomAttribute2/CS/enumbuilder_setcustomattribute2.cs#2)]
+ [!code-vb[EnumBuilder_SetCustomAttribute2#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/EnumBuilder_SetCustomAttribute2/VB/enumbuilder_setcustomattribute2.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="con" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetCustomAttribute">
@@ -1602,10 +1926,28 @@
         <Parameter Name="binaryAttribute" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="con">To be added.</param>
-        <param name="binaryAttribute">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="con">The constructor for the custom attribute.</param>
+        <param name="binaryAttribute">A byte blob representing the attributes.</param>
+        <summary>Sets a custom attribute using a specified custom attribute blob.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See the metadata specification in the ECMA Partition II documentation for details on how to format `binaryAttribute`. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
+  
+   
+  
+## Examples  
+ The following code sample illustrates the use of `SetCustomAttribute` in the context of <xref:System.Reflection.Emit.EnumBuilder>, passing a byte blob.  
+  
+ [!code-cpp[EnumBuilder_SetCustomAttribute2#2](~/samples/snippets/cpp/VS_Snippets_CLR/EnumBuilder_SetCustomAttribute2/CPP/enumbuilder_setcustomattribute2.cpp#2)]
+ [!code-csharp[EnumBuilder_SetCustomAttribute2#2](~/samples/snippets/csharp/VS_Snippets_CLR/EnumBuilder_SetCustomAttribute2/CS/enumbuilder_setcustomattribute2.cs#2)]
+ [!code-vb[EnumBuilder_SetCustomAttribute2#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/EnumBuilder_SetCustomAttribute2/VB/enumbuilder_setcustomattribute2.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="con" /> or <paramref name="binaryAttribute" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.InteropServices._EnumBuilder.GetIDsOfNames">
@@ -1629,13 +1971,21 @@
         <Parameter Name="rgDispId" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="riid">To be added.</param>
-        <param name="rgszNames">To be added.</param>
-        <param name="cNames">To be added.</param>
-        <param name="lcid">To be added.</param>
-        <param name="rgDispId">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="riid">Reserved for future use. Must be IID_NULL.</param>
+        <param name="rgszNames">Passed-in array of names to be mapped.</param>
+        <param name="cNames">Count of the names to be mapped.</param>
+        <param name="lcid">The locale context in which to interpret the names.</param>
+        <param name="rgDispId">Caller-allocated array which receives the IDs corresponding to the names.</param>
+        <summary>Maps a set of names to a corresponding set of dispatch identifiers.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetIDsOfNames`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.InteropServices._EnumBuilder.GetTypeInfo">
@@ -1657,11 +2007,19 @@
         <Parameter Name="ppTInfo" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="iTInfo">To be added.</param>
-        <param name="lcid">To be added.</param>
-        <param name="ppTInfo">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="iTInfo">The type information to return.</param>
+        <param name="lcid">The locale identifier for the type information.</param>
+        <param name="ppTInfo">Receives a pointer to the requested type information object.</param>
+        <summary>Retrieves the type information for an object, which can then be used to get the type information for an interface.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfo`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.InteropServices._EnumBuilder.GetTypeInfoCount">
@@ -1681,9 +2039,17 @@
         <Parameter Name="pcTInfo" Type="System.UInt32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="pcTInfo">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="pcTInfo">Points to a location that receives the number of type information interfaces provided by the object.</param>
+        <summary>Retrieves the number of type information interfaces that an object provides (either 0 or 1).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfoCount`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.InteropServices._EnumBuilder.Invoke">
@@ -1710,16 +2076,24 @@
         <Parameter Name="puArgErr" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="dispIdMember">To be added.</param>
-        <param name="riid">To be added.</param>
-        <param name="lcid">To be added.</param>
-        <param name="wFlags">To be added.</param>
-        <param name="pDispParams">To be added.</param>
-        <param name="pVarResult">To be added.</param>
-        <param name="pExcepInfo">To be added.</param>
-        <param name="puArgErr">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="dispIdMember">Identifies the member.</param>
+        <param name="riid">Reserved for future use. Must be IID_NULL.</param>
+        <param name="lcid">The locale context in which to interpret arguments.</param>
+        <param name="wFlags">Flags describing the context of the call.</param>
+        <param name="pDispParams">Pointer to a structure containing an array of arguments, an array of argument DISPIDs for named arguments, and counts for the number of elements in the arrays.</param>
+        <param name="pVarResult">Pointer to the location where the result is to be stored.</param>
+        <param name="pExcepInfo">Pointer to a structure that contains exception information.</param>
+        <param name="puArgErr">The index of the first argument that has an error.</param>
+        <summary>Provides access to properties and methods exposed by an object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::Invoke`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
       </Docs>
     </Member>
     <Member MemberName="TypeHandle">
@@ -1736,9 +2110,19 @@
         <ReturnType>System.RuntimeTypeHandle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Retrieves the internal handle for this enum.</summary>
+        <value>Read-only. The internal handle for this enum.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
+  
+ Use this handle to access the underlying metadata handle.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">This property is not currently supported.</exception>
       </Docs>
     </Member>
     <Member MemberName="TypeToken">
@@ -1755,8 +2139,8 @@
         <ReturnType>System.Reflection.Emit.TypeToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the internal metadata type token of this enum.</summary>
+        <value>Read-only. The type token of this enum.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1778,8 +2162,8 @@
         <ReturnType>System.Reflection.Emit.FieldBuilder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the underlying field for this enum.</summary>
+        <value>Read-only. The underlying field for this enum.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1797,8 +2181,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the underlying system type for this enum.</summary>
+        <value>Read-only. Returns the underlying system type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

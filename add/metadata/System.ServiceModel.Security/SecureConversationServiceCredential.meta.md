@@ -1,14 +1,14 @@
 ---
 uid: System.ServiceModel.Security.SecureConversationServiceCredential
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.SecureConversationServiceCredential.SecurityContextClaimTypes
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.SecureConversationServiceCredential.SecurityStateEncoder
-internalonly: False
+manager: "ghogen"
 ---

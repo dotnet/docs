@@ -14,7 +14,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides an adapter for the <see cref="T:System.ComponentModel.DataAnnotations.MinLengthAttribute" /> attribute.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,10 +33,10 @@
         <Parameter Name="attribute" Type="System.ComponentModel.DataAnnotations.MinLengthAttribute" />
       </Parameters>
       <Docs>
-        <param name="metadata">To be added.</param>
-        <param name="context">To be added.</param>
-        <param name="attribute">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="metadata">Specifies the metadata container for a model.</param>
+        <param name="context">Specifies the container for all of the information that is external to the model binding system.</param>
+        <param name="attribute">Specifies the minimum length of array or string data that is allowed in a property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.MinLengthAttributeAdapter" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -16,8 +16,75 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Automatically generates single-table commands used to reconcile changes made to a <see cref="T:System.Data.DataSet" /> with the associated database. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This type is deprecated and will be removed in a future version of the .NET Framework. For more information, see [Oracle and ADO.NET](../Topic/Oracle%20and%20ADO.NET.md).  
+  
+ The <xref:System.Data.OracleClient.OracleDataAdapter> does not automatically generate the SQL statements required to reconcile changes made to a <xref:System.Data.DataSet> associated with the database. However, you can create an <xref:System.Data.OracleClient.OracleCommandBuilder> object that generates SQL statements for single-table updates by setting the <xref:System.Data.OracleClient.OracleDataAdapter.SelectCommand%2A> property of the <xref:System.Data.OracleClient.OracleDataAdapter>. Then, the <xref:System.Data.OracleClient.OracleCommandBuilder> generates any additional SQL statements that you do not set.  
+  
+ The relationship between an <xref:System.Data.OracleClient.OracleDataAdapter> and its corresponding <xref:System.Data.OracleClient.OracleCommandBuilder> is always one-to-one. To create this correspondence, you set the <xref:System.Data.OracleClient.OracleDataAdapter> property of the <xref:System.Data.OracleClient.OracleCommandBuilder> object. This causes the <xref:System.Data.OracleClient.OracleCommandBuilder> to register itself as a listener, which produces the output of <xref:System.Data.OracleClient.OracleDataAdapter.RowUpdating> events that affect the <xref:System.Data.DataSet>.  
+  
+ To generate INSERT, UPDATE, or DELETE statements, the <xref:System.Data.OracleClient.OracleCommandBuilder> uses the <xref:System.Data.OracleClient.OracleDataAdapter.SelectCommand%2A> property to retrieve a required set of metadata.  
+  
+ The <xref:System.Data.OracleClient.OracleCommandBuilder> also uses the <xref:System.Data.OracleClient.OracleCommand.Connection%2A>, and <xref:System.Data.OracleClient.OracleCommand.Transaction%2A> properties referenced by the <xref:System.Data.OracleClient.OracleDataAdapter.SelectCommand%2A>.  
+  
+ If you call <xref:System.Data.Common.DbDataAdapter.Dispose%2A>, the <xref:System.Data.OracleClient.OracleCommandBuilder> is disassociated from the <xref:System.Data.OracleClient.OracleDataAdapter>, and the generated commands are no longer used.  
+  
+   
+  
+## Examples  
+ The following example uses <xref:System.Data.OracleClient.OracleCommand>, along with <xref:System.Data.OracleClient.OracleDataAdapter> and <xref:System.Data.OracleClient.OracleConnection>, to select rows from a database. The example is passed an initialized <xref:System.Data.DataSet>, a connection string, a query string that is an SQL SELECT statement, and a string that is the name of the database table. The example then creates an <xref:System.Data.OracleClient.OracleCommandBuilder>.  
+  
+ [Visual Basic]  
+  
+```  
+Private Function SelectOracleRows(connection As String, queryString As String, tableName As String) As DataSet  
+  
+   Dim connection As New OracleConnection(connection)  
+   Dim dataAdapter As New OracleDataAdapter()  
+   Dim dataSet As DataSet = New DataSet  
+  
+   dataAdapter.SelectCommand = New OracleCommand(queryString, connection)  
+  
+   Dim cmdBuilder As OracleCommandBuilder = New OracleCommandBuilder(dataAdapter)  
+  
+   connection.Open()  
+   dataAdapter.Fill(dataSet, tableName)  
+      ' Code to modify data in DataSet here   
+      ' Without the OracleCommandBuilder this line would fail.  
+   dataAdapter.Update(dataSet, tableName)  
+   connection.Close()  
+End Function  
+```  
+  
+ [C#]  
+  
+```  
+public static DataSet SelectOracleSrvRows(string myConnection, string mySelectQuery, string myTableName)  
+{  
+   OracleConnection myConn = new OracleConnection(myConnection);  
+   OracleDataAdapter myDataAdapter = new OracleDataAdapter();  
+   myDataAdapter.SelectCommand = new OracleCommand(mySelectQuery, myConn);  
+   OracleCommandBuilder cb = new OracleCommandBuilder(myDataAdapter);  
+  
+   myConn.Open();  
+   DataSet ds = new DataSet();  
+   myDataAdapter.Fill(ds, myTableName);  
+  
+   //Code to modify data in DataSet goes here...  
+  
+   //Without the OracleCommandBuilder this line would fail.  
+   myDataAdapter.Update(ds, myTableName);  
+   myConn.Close();  
+   return ds;  
+}  
+```  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,8 +98,17 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.OracleClient.OracleCommandBuilder" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.OracleClient.OracleCommandBuilder> registers itself as a listener for <xref:System.Data.OracleClient.OracleDataAdapter.RowUpdating> events that are generated by the <xref:System.Data.OracleClient.OracleDataAdapter> specified in this property.  
+  
+ When you create a new instance of <xref:System.Data.OracleClient.OracleCommandBuilder>, any existing <xref:System.Data.OracleClient.OracleCommandBuilder> associated with this <xref:System.Data.OracleClient.OracleDataAdapter> is released.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -48,9 +124,18 @@
         <Parameter Name="adapter" Type="System.Data.OracleClient.OracleDataAdapter" />
       </Parameters>
       <Docs>
-        <param name="adapter">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="adapter">An <see cref="T:System.Data.OracleClient.OracleDataAdapter" /> object to associate with this <see cref="T:System.Data.OracleClient.OracleCommandBuilder" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.OracleClient.OracleCommandBuilder" /> class with the associated <see cref="T:System.Data.OracleClient.OracleDataAdapter" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.OracleClient.OracleCommandBuilder> registers itself as a listener for <xref:System.Data.OracleClient.OracleDataAdapter.RowUpdating> events that are generated by the <xref:System.Data.OracleClient.OracleDataAdapter> specified in this property.  
+  
+ When you create a new instance of <xref:System.Data.OracleClient.OracleCommandBuilder>, any existing <xref:System.Data.OracleClient.OracleCommandBuilder> associated with this <xref:System.Data.OracleClient.OracleDataAdapter> is released.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ApplyParameterInfo">
@@ -104,8 +189,8 @@
         <ReturnType>System.Data.Common.CatalogLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Sets or gets the <see cref="T:System.Data.Common.CatalogLocation" /> for an instance of the <see cref="T:System.Data.Common.DbCommandBuilder" /> class.</summary>
+        <value>A <see cref="T:System.Data.Common.CatalogLocation" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,8 +218,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Sets or gets a string used as the catalog separator for an instance of the <see cref="T:System.Data.Common.DbCommandBuilder" /> class.</summary>
+        <value>A string indicating the catalog separator for use with an instance of the <see cref="T:System.Data.Common.DbCommandBuilder" /> class.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,9 +241,18 @@
         <ReturnType>System.Data.OracleClient.OracleDataAdapter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets an <see cref="T:System.Data.OracleClient.OracleDataAdapter" /> object for which this <see cref="T:System.Data.OracleClient.OracleCommandBuilder" /> object will generate SQL statements.</summary>
+        <value>An <see cref="T:System.Data.OracleClient.OracleDataAdapter" /> object that is associated with this <see cref="T:System.Data.OracleClient.OracleCommandBuilder" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.OracleClient.OracleCommandBuilder> registers itself as a listener for <xref:System.Data.OracleClient.OracleDataAdapter.RowUpdating> events that are generated by the <xref:System.Data.OracleClient.OracleDataAdapter> specified in this property.  
+  
+ When you create a new instance of <xref:System.Data.OracleClient.OracleCommandBuilder>, any existing <xref:System.Data.OracleClient.OracleCommandBuilder> associated with this <xref:System.Data.OracleClient.OracleDataAdapter> is released.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DeriveParameters">
@@ -177,9 +271,23 @@
         <Parameter Name="command" Type="System.Data.OracleClient.OracleCommand" />
       </Parameters>
       <Docs>
-        <param name="command">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="command">The <see cref="T:System.Data.OracleClient.OracleCommand" /> referencing the stored procedure from which the parameter information is to be derived. The derived parameters are added to the <see cref="P:System.Data.OracleClient.OracleCommand.Parameters" /> collection of the <see cref="T:System.Data.OracleClient.OracleCommand" />.</param>
+        <summary>Retrieves parameter information from the stored procedure specified in the <see cref="T:System.Data.OracleClient.OracleCommand" /> and populates the <see cref="P:System.Data.OracleClient.OracleCommand.Parameters" /> collection of the specified <see cref="T:System.Data.OracleClient.OracleCommand" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.OracleClient.OracleCommandBuilder.DeriveParameters%2A> overwrites any existing parameter information for the <xref:System.Data.OracleClient.OracleCommand>.  
+  
+ <xref:System.Data.OracleClient.OracleCommandBuilder.DeriveParameters%2A> requires an extra call to the database to obtain the information. If the parameter information is known in advance, it is more efficient to populate the parameters collection by setting the information explicitly.  
+  
+ You can only use <xref:System.Data.OracleClient.OracleCommandBuilder.DeriveParameters%2A> with stored procedures. You cannot use <xref:System.Data.OracleClient.OracleCommandBuilder.DeriveParameters%2A> to populate the <xref:System.Data.OracleClient.OracleParameterCollection> with arbitrary Transact-SQL statements, such as a parameterized SELECT statement.  
+  
+ For more information, see [Configuring Parameters and Parameter Data Types](../Topic/Configuring%20Parameters%20and%20Parameter%20Data%20Types.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The command text is not a valid stored procedure name, or the <see cref="T:System.Data.CommandType" /> specified was not <see cref="F:System.Data.CommandType.StoredProcedure" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetDeleteCommand">
@@ -196,9 +304,22 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets the automatically generated <see cref="T:System.Data.OracleClient.OracleCommand" /> object required to perform deletions on the database.</summary>
+        <returns>The automatically generated <see cref="T:System.Data.OracleClient.OracleCommand" /> object required to perform deletions.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Data.OracleClient.OracleCommandBuilder.GetDeleteCommand%2A> method for informational or troubleshooting purposes because it returns the <xref:System.Data.OracleClient.OracleCommand> object to be executed.  
+  
+ You can also use <xref:System.Data.OracleClient.OracleCommandBuilder.GetDeleteCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.OracleClient.OracleCommandBuilder.GetDeleteCommand%2A> and modify the <xref:System.Data.OracleClient.OracleCommand.CommandText%2A> value, and then explicitly set that on the <xref:System.Data.OracleClient.OracleDataAdapter>.  
+  
+ The SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.OracleClient.OracleCommandBuilder.GetDeleteCommand%2A>.  
+  
+ For more information, see [Generating Commands with CommandBuilders](../Topic/Generating%20Commands%20with%20CommandBuilders.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDeleteCommand">
@@ -217,10 +338,31 @@
         <Parameter Name="useColumnsForParameterNames" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="useColumnsForParameterNames">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="useColumnsForParameterNames">If true, generate parameter names matching column names, if possible. If false, generate @p1, @p2, and so on.</param>
+        <summary>Gets the automatically generated <see cref="T:System.Data.OracleClient.OracleCommand" /> object required to perform deletions on the database.</summary>
+        <returns>The automatically generated <see cref="T:System.Data.OracleClient.OracleCommand" /> object required to perform deletions.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Data.OracleClient.OracleCommandBuilder.GetDeleteCommand%2A> method for informational or troubleshooting purposes because it returns the <xref:System.Data.OracleClient.OracleCommand> object to be executed.  
+  
+ You can also use <xref:System.Data.OracleClient.OracleCommandBuilder.GetDeleteCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.OracleClient.OracleCommandBuilder.GetDeleteCommand%2A> and modify the <xref:System.Data.OracleClient.OracleCommand.CommandText%2A> value, and then explicitly set that on the <xref:System.Data.OracleClient.OracleDataAdapter>.  
+  
+ The SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.OracleClient.OracleCommandBuilder.GetDeleteCommand%2A>.  
+  
+ The default behavior, when generating parameter names, is to use @p1, @p2, and so on for the various parameters. Passing `true` for the `useColumnsForParameterNames` parameter allows you to force the <xref:System.Data.Common.DbCommandBuilder> to generate parameters based on the column names instead. . This succeeds only if the following conditions are met:  
+  
+-   The <xref:System.Data.Common.DbMetaDataColumnNames.ParameterNameMaxLength> has been specified and its length is equal to or greater than the generated parameter name.  
+  
+-   The generated parameter name meets the criteria specified in the <xref:System.Data.Common.DbMetaDataColumnNames.ParameterNamePattern> regular expression.  
+  
+-   A <xref:System.Data.Common.DbMetaDataColumnNames.ParameterMarkerFormat> is specified.  
+  
+ For more information, see [Generating Commands with CommandBuilders](../Topic/Generating%20Commands%20with%20CommandBuilders.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetInsertCommand">
@@ -237,9 +379,22 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets the automatically generated <see cref="T:System.Data.OracleClient.OracleCommand" /> object required to perform insertions on the database.</summary>
+        <returns>The automatically generated <see cref="T:System.Data.OracleClient.OracleCommand" /> object required to perform insertions.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Data.OracleClient.OracleCommandBuilder.GetInsertCommand%2A> method for informational or troubleshooting purposes because it returns the <xref:System.Data.OracleClient.OracleCommand> object to be executed.  
+  
+ You can also use <xref:System.Data.OracleClient.OracleCommandBuilder.GetInsertCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.OracleClient.OracleCommandBuilder.GetInsertCommand%2A> and modify the <xref:System.Data.OracleClient.OracleCommand.CommandText%2A> value, and then explicitly set that on the <xref:System.Data.OracleClient.OracleDataAdapter>.  
+  
+ The SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.OracleClient.OracleCommandBuilder.GetInsertCommand%2A>.  
+  
+ For more information, see [Generating Commands with CommandBuilders](../Topic/Generating%20Commands%20with%20CommandBuilders.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetInsertCommand">
@@ -258,10 +413,31 @@
         <Parameter Name="useColumnsForParameterNames" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="useColumnsForParameterNames">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="useColumnsForParameterNames">If true, generate parameter names matching column names, if possible. If false, generate @p1, @p2, and so on.</param>
+        <summary>Gets the automatically generated <see cref="T:System.Data.OracleClient.OracleCommand" /> object required to perform insertions on the database.</summary>
+        <returns>The automatically generated <see cref="T:System.Data.OracleClient.OracleCommand" /> object required to perform insertions.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Data.OracleClient.OracleCommandBuilder.GetInsertCommand%2A> method for informational or troubleshooting purposes because it returns the <xref:System.Data.OracleClient.OracleCommand> object to be executed.  
+  
+ You can also use <xref:System.Data.OracleClient.OracleCommandBuilder.GetInsertCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.OracleClient.OracleCommandBuilder.GetInsertCommand%2A> and modify the <xref:System.Data.OracleClient.OracleCommand.CommandText%2A> value, and then explicitly set that on the <xref:System.Data.OracleClient.OracleDataAdapter>.  
+  
+ The SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.OracleClient.OracleCommandBuilder.GetInsertCommand%2A>.  
+  
+ The default behavior, when generating parameter names, is to use @p1, @p2, and so on for the various parameters. Passing `true` for the `useColumnsForParameterNames` parameter allows you to force the <xref:System.Data.Common.DbCommandBuilder> to generate parameters based on the column names instead. . This succeeds only if the following conditions are met:  
+  
+-   The <xref:System.Data.Common.DbMetaDataColumnNames.ParameterNameMaxLength> has been specified and its length is equal to or greater than the generated parameter name.  
+  
+-   The generated parameter name meets the criteria specified in the <xref:System.Data.Common.DbMetaDataColumnNames.ParameterNamePattern> regular expression.  
+  
+-   A <xref:System.Data.Common.DbMetaDataColumnNames.ParameterMarkerFormat> is specified.  
+  
+ For more information, see [Generating Commands with CommandBuilders](../Topic/Generating%20Commands%20with%20CommandBuilders.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetParameterName">
@@ -344,9 +520,22 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets the automatically generated <see cref="T:System.Data.OracleClient.OracleCommand" /> object required to perform updates on the database.</summary>
+        <returns>The automatically generated <see cref="T:System.Data.OracleClient.OracleCommand" /> object required to perform updates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Data.OracleClient.OracleCommandBuilder.GetUpdateCommand%2A> method for informational or troubleshooting purposes because it returns the <xref:System.Data.OracleClient.OracleCommand> object to be executed.  
+  
+ You can also use <xref:System.Data.OracleClient.OracleCommandBuilder.GetUpdateCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.OracleClient.OracleCommandBuilder.GetUpdateCommand%2A> and modify the <xref:System.Data.OracleClient.OracleCommand.CommandText%2A> value, and then explicitly set that on the <xref:System.Data.OracleClient.OracleDataAdapter>.  
+  
+ The SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.OracleClient.OracleCommandBuilder.GetUpdateCommand%2A>.  
+  
+ For more information, see [Generating Commands with CommandBuilders](../Topic/Generating%20Commands%20with%20CommandBuilders.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetUpdateCommand">
@@ -365,10 +554,31 @@
         <Parameter Name="useColumnsForParameterNames" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="useColumnsForParameterNames">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="useColumnsForParameterNames">If true, generate parameter names matching column names, if possible. If false, generate @p1, @p2, and so on.</param>
+        <summary>Gets the automatically generated <see cref="T:System.Data.OracleClient.OracleCommand" /> object required to perform updates on the database.</summary>
+        <returns>The automatically generated <see cref="T:System.Data.OracleClient.OracleCommand" /> object required to perform updates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Data.OracleClient.OracleCommandBuilder.GetUpdateCommand%2A> method for informational or troubleshooting purposes because it returns the <xref:System.Data.OracleClient.OracleCommand> object to be executed.  
+  
+ You can also use <xref:System.Data.OracleClient.OracleCommandBuilder.GetUpdateCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.OracleClient.OracleCommandBuilder.GetUpdateCommand%2A> and modify the <xref:System.Data.OracleClient.OracleCommand.CommandText%2A> value, and then explicitly set that on the <xref:System.Data.OracleClient.OracleDataAdapter>.  
+  
+ The SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.OracleClient.OracleCommandBuilder.GetUpdateCommand%2A>.  
+  
+ The default behavior, when generating parameter names, is to use @p1, @p2, and so on for the various parameters. Passing `true` for the `useColumnsForParameterNames` parameter allows you to force the <xref:System.Data.Common.DbCommandBuilder> to generate parameters based on the column names instead. . This succeeds only if the following conditions are met:  
+  
+-   The <xref:System.Data.Common.DbMetaDataColumnNames.ParameterNameMaxLength> has been specified and its length is equal to or greater than the generated parameter name.  
+  
+-   The generated parameter name meets the criteria specified in the <xref:System.Data.Common.DbMetaDataColumnNames.ParameterNamePattern> regular expression.  
+  
+-   A <xref:System.Data.Common.DbMetaDataColumnNames.ParameterMarkerFormat> is specified.  
+  
+ For more information, see [Generating Commands with CommandBuilders](../Topic/Generating%20Commands%20with%20CommandBuilders.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="QuoteIdentifier">
@@ -387,9 +597,9 @@
         <Parameter Name="unquotedIdentifier" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="unquotedIdentifier">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="unquotedIdentifier">The original unquoted identifier.</param>
+        <summary>Given an unquoted identifier in the correct catalog case, returns the correct quoted form of that identifier, including properly escaping any embedded quotes in the identifier.</summary>
+        <returns>The quoted version of the identifier. Embedded quotes within the identifier are properly escaped.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -417,9 +627,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the character to be used for the separator between the schema identifier and any other identifiers.</summary>
+        <value>The character to be used as the schema separator.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Generally, database servers indicate the schema for a identifier by separating the schema name from the identifier with some character. For example, SQL Server uses a colon, creating complete identifiers such as Person:CustomerName, where "Person" is the schema name and "CustomerName" is the identifier. Setting this property allows developers to modify this behavior.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetRowUpdatingHandler">
@@ -459,11 +676,80 @@
         <Parameter Name="quotedIdentifier" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="quotedIdentifier">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="quotedIdentifier">The identifier that will have its embedded quotes removed.</param>
+        <summary>Given a quoted identifier, returns the correct unquoted form of that identifier, including properly un-escaping any embedded quotes in the identifier.</summary>
+        <returns>The unquoted identifier, with embedded quotes properly un-escaped.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetDeleteCommand">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the automatically generated <see cref="T:System.Data.OracleClient.OracleCommand" /> object required to perform deletions on the database.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Data.OracleClient.OracleCommandBuilder.GetDeleteCommand%2A> method for informational or troubleshooting purposes because it returns the <xref:System.Data.OracleClient.OracleCommand> object to be executed.  
+  
+ You can also use <xref:System.Data.OracleClient.OracleCommandBuilder.GetDeleteCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.OracleClient.OracleCommandBuilder.GetDeleteCommand%2A> and modify the <xref:System.Data.OracleClient.OracleCommand.CommandText%2A> value, and then explicitly set that on the <xref:System.Data.OracleClient.OracleDataAdapter>.  
+  
+ The SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.OracleClient.OracleCommandBuilder.GetDeleteCommand%2A>.  
+  
+ For more information, see [Generating Commands with CommandBuilders](../Topic/Generating%20Commands%20with%20CommandBuilders.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetInsertCommand">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the automatically generated <see cref="T:System.Data.OracleClient.OracleCommand" /> object required to perform insertions on the database.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Data.OracleClient.OracleCommandBuilder.GetInsertCommand%2A> method for informational or troubleshooting purposes because it returns the <xref:System.Data.OracleClient.OracleCommand> object to be executed.  
+  
+ You can also use <xref:System.Data.OracleClient.OracleCommandBuilder.GetInsertCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.OracleClient.OracleCommandBuilder.GetInsertCommand%2A> and modify the <xref:System.Data.OracleClient.OracleCommand.CommandText%2A> value, and then explicitly set that on the <xref:System.Data.OracleClient.OracleDataAdapter>.  
+  
+ The SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.OracleClient.OracleCommandBuilder.GetInsertCommand%2A>.  
+  
+ For more information, see [Generating Commands with CommandBuilders](../Topic/Generating%20Commands%20with%20CommandBuilders.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetUpdateCommand">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the automatically generated <see cref="T:System.Data.OracleClient.OracleCommand" /> object required to perform updates on the database.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Data.OracleClient.OracleCommandBuilder.GetUpdateCommand%2A> method for informational or troubleshooting purposes because it returns the <xref:System.Data.OracleClient.OracleCommand> object to be executed.  
+  
+ You can also use <xref:System.Data.OracleClient.OracleCommandBuilder.GetUpdateCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.OracleClient.OracleCommandBuilder.GetUpdateCommand%2A> and modify the <xref:System.Data.OracleClient.OracleCommand.CommandText%2A> value, and then explicitly set that on the <xref:System.Data.OracleClient.OracleDataAdapter>.  
+  
+ The SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.OracleClient.OracleCommandBuilder.GetUpdateCommand%2A>.  
+  
+ For more information, see [Generating Commands with CommandBuilders](../Topic/Generating%20Commands%20with%20CommandBuilders.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

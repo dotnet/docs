@@ -1,24 +1,29 @@
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsToken
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsToken.Display
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsToken.#ctor(System.String)
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsToken.Pronunciation
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsToken.Text
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

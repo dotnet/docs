@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.HtmlControls.HtmlArea
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlArea.RenderAttributes(System.Web.UI.HtmlTextWriter)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlArea.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlArea.Href
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

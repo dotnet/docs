@@ -1,19 +1,24 @@
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.Header.ItemRight
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.Header.ItemRight.Pressed
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.Header.ItemRight.Hot
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.Header.ItemRight.Normal
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

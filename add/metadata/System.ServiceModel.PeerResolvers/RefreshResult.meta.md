@@ -1,4 +1,5 @@
 ---
 uid: System.ServiceModel.PeerResolvers.RefreshResult
-internalonly: False
+ms.author: "bobdel"
+manager: "ghogen"
 ---

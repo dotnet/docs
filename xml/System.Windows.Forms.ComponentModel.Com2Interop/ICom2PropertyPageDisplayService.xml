@@ -8,7 +8,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines a method that shows the property page for an ActiveX control.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,12 +32,12 @@
         <Parameter Name="parentHandle" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="title">To be added.</param>
-        <param name="component">To be added.</param>
-        <param name="dispid">To be added.</param>
-        <param name="pageGuid">To be added.</param>
-        <param name="parentHandle">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="title">A string that is the title of the property page.</param>
+        <param name="component">The object for which the property page is created.</param>
+        <param name="dispid">The DispID of the property that is highlighted when the property page is created.</param>
+        <param name="pageGuid">The GUID for the property page.</param>
+        <param name="parentHandle">A IntPtr that is the handle of the parent control of the property page.</param>
+        <summary>Shows a property page for the specified object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

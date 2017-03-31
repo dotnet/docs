@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies whether a window can be resized and, if so, how it can be resized. Used by the <see cref="P:System.Windows.Window.ResizeMode" /> property.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>System.Windows.ResizeMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A window can only be minimized and restored. The **Minimize** and **Maximize** buttons are both shown, but only the **Minimize** button is enabled.</summary>
       </Docs>
     </Member>
     <Member MemberName="CanResize">
@@ -48,7 +48,7 @@
         <ReturnType>System.Windows.ResizeMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A window can be resized. The **Minimize** and **Maximize** buttons are both shown and enabled.</summary>
       </Docs>
     </Member>
     <Member MemberName="CanResizeWithGrip">
@@ -64,7 +64,7 @@
         <ReturnType>System.Windows.ResizeMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A window can be resized. The **Minimize** and **Maximize** buttons are both shown and enabled. A resize grip appears in the bottom-right corner of the window.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoResize">
@@ -80,7 +80,7 @@
         <ReturnType>System.Windows.ResizeMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A window cannot be resized. The **Minimize** and **Maximize** buttons are not displayed in the title bar.</summary>
       </Docs>
     </Member>
   </Members>

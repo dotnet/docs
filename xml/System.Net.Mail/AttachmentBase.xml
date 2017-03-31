@@ -20,7 +20,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Base class that represents an email attachment. Classes <see cref="T:System.Net.Mail.Attachment" />, <see cref="T:System.Net.Mail.AlternateView" />, and <see cref="T:System.Net.Mail.LinkedResource" /> derive from this class.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -42,9 +42,11 @@
         <Parameter Name="contentStream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="contentStream">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="contentStream">A stream containing the content for this attachment.</param>
+        <summary>Instantiates an <see cref="T:System.Net.Mail.AttachmentBase" /> with the specified <see cref="T:System.IO.Stream" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="contentStream" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -65,9 +67,11 @@
         <Parameter Name="fileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="fileName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="fileName">The file name holding the content for this attachment.</param>
+        <summary>Instantiates an <see cref="T:System.Net.Mail.AttachmentBase" /> with the specified file name.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="fileName" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -89,10 +93,14 @@
         <Parameter Name="contentType" Type="System.Net.Mime.ContentType" />
       </Parameters>
       <Docs>
-        <param name="contentStream">To be added.</param>
-        <param name="contentType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="contentStream">A stream containing the content for this attachment.</param>
+        <param name="contentType">The type of the content.</param>
+        <summary>Instantiates an <see cref="T:System.Net.Mail.AttachmentBase" /> with the specified <see cref="T:System.IO.Stream" /> and <see cref="T:System.Net.Mime.ContentType" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="contentStream" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.FormatException">
+          <paramref name="contentType" /> is not a valid value.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -114,10 +122,14 @@
         <Parameter Name="mediaType" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="contentStream">To be added.</param>
-        <param name="mediaType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="contentStream">A stream containing the content for this attachment.</param>
+        <param name="mediaType">The MIME media type of the content.</param>
+        <summary>Instantiates an <see cref="T:System.Net.Mail.AttachmentBase" /> with the specified <see cref="T:System.IO.Stream" /> and media type.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="contentStream" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.FormatException">
+          <paramref name="mediaType" /> is not a valid value.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -139,10 +151,14 @@
         <Parameter Name="contentType" Type="System.Net.Mime.ContentType" />
       </Parameters>
       <Docs>
-        <param name="fileName">To be added.</param>
-        <param name="contentType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="fileName">The file name holding the content for this attachment.</param>
+        <param name="contentType">The type of the content.</param>
+        <summary>Instantiates an <see cref="T:System.Net.Mail.AttachmentBase" /> with the specified file name and content type.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="fileName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.FormatException">
+          <paramref name="contentType" /> is not a valid value.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -164,10 +180,14 @@
         <Parameter Name="mediaType" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="fileName">To be added.</param>
-        <param name="mediaType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="fileName">The file name holding the content for this attachment.</param>
+        <param name="mediaType">The MIME media type of the content.</param>
+        <summary>Instantiates an <see cref="T:System.Net.Mail.AttachmentBase" /> with the specified file name and media type.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="fileName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.FormatException">
+          <paramref name="mediaType" /> is not a valid value.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContentId">
@@ -188,9 +208,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the MIME content ID for this attachment.</summary>
+        <value>A <see cref="T:System.String" /> holding the content ID.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Attempted to set <see cref="P:System.Net.Mail.AttachmentBase.ContentId" /> to <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContentStream">
@@ -211,8 +232,10 @@
         <ReturnType>System.IO.Stream</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the content stream of this attachment.</summary>
+        <value>A <see cref="T:System.IO.Stream" />.  
+  
+ The content stream of this attachment.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -234,8 +257,10 @@
         <ReturnType>System.Net.Mime.ContentType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the content type of this attachment.</summary>
+        <value>A <see cref="T:System.Net.Mime.ContentType" />.  
+  
+ The content type for this attachment.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -258,8 +283,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Releases the resources used by the <see cref="T:System.Net.Mail.AttachmentBase" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call <xref:System.Net.Mail.AttachmentBase.Dispose%2A> when you are finished using the <xref:System.Net.Mail.AttachmentBase>. The <xref:System.Net.Mail.AttachmentBase.Dispose%2A> method leaves the <xref:System.Net.Mail.AttachmentBase> in an unusable state. After calling <xref:System.Net.Mail.AttachmentBase.Dispose%2A>, you must release all references to the <xref:System.Net.Mail.AttachmentBase> so the garbage collector can reclaim the memory that the <xref:System.Net.Mail.AttachmentBase> was occupying. For more information, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+  
+ **Note** Always call <xref:System.Net.Mail.AttachmentBase.Dispose%2A> before you release your last reference to the <xref:System.Net.Mail.AttachmentBase>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Net.Mail.AttachmentBase> object's `Finalize` method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -283,9 +317,25 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Net.Mail.AttachmentBase" /> and optionally releases the managed resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+  
+ When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.Net.Mail.AttachmentBase> references. This method invokes the `Dispose()` method of each referenced object.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean) " />be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement<see langword=" Dispose(Boolean)" />, see [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+  
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="TransferEncoding">
@@ -306,8 +356,10 @@
         <ReturnType>System.Net.Mime.TransferEncoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the encoding of this attachment.</summary>
+        <value>A <see cref="T:System.Net.Mime.TransferEncoding" />.  
+  
+ The encoding for this attachment.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

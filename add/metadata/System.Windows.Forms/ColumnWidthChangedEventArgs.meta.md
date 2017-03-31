@@ -1,14 +1,18 @@
 ---
 uid: System.Windows.Forms.ColumnWidthChangedEventArgs
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.ColumnWidthChangedEventArgs.#ctor(System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ColumnWidthChangedEventArgs.ColumnIndex
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

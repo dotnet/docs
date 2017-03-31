@@ -1,9 +1,13 @@
 ---
 uid: System.Windows.Forms.Design.IContainsThemedScrollbarWindows
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.IContainsThemedScrollbarWindows.ThemedScrollbarWindows
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

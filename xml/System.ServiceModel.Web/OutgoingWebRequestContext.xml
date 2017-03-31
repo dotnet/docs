@@ -12,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides programmatic access to the context of the outgoing Web request.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,8 +30,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets and sets the <see langword="Accept" /> header value from the outgoing Web request.</summary>
+        <value>The <see langword="Accept" /> header from the outgoing Web request.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,8 +49,8 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets and sets the content length header value of the outgoing Web request.</summary>
+        <value>The content length header of the outgoing Web request.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,8 +68,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets and sets the content type header value from the outgoing Web request.</summary>
+        <value>The content type header from the outgoing Web request.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,8 +87,8 @@
         <ReturnType>System.Net.WebHeaderCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the headers for the outgoing Web request.</summary>
+        <value>A <see cref="T:System.Net.WebHeaderCollection" /> instance that contains the headers of the outgoing Web request.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,8 +106,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets and sets the <see langword="IfMatch" /> header value from the outgoing Web request.</summary>
+        <value>The <see langword="IfMatch" /> header from the outgoing Web request.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,8 +125,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets and sets the <see langword="IfModifiedSince" /> header value from the outgoing Web request.</summary>
+        <value>The <see langword="IfModifiedSince" /> header from the outgoing Web request.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,8 +144,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets and sets the <see langword="IfNoneMatch" /> header value from the outgoing Web request.</summary>
+        <value>The <see langword="IfNoneMatch" /> header from the outgoing Web request.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -163,8 +163,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets and sets the <see langword="IfUnmodifiedSince" /> header value from the outgoing Web request.</summary>
+        <value>The <see langword="IfUnmodifiedSince" /> header from the outgoing Web request.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -182,8 +182,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the HTTP method of the outgoing Web request.</summary>
+        <value>The HTTP method of the outgoing Web request.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -201,8 +201,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether [!INCLUDE[indigo1](~/includes/indigo1-md.md)] omits data that is normally written to the entity body of the response and forces an empty response to be returned.</summary>
+        <value>If <see langword="true" />, [!INCLUDE[indigo2](~/includes/indigo2-md.md)] omits any data that is normally written to the entity body of the response and forces an empty response to be returned.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -220,8 +220,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the user agent header value from the outgoing Web request.</summary>
+        <value>The user agent header from the outgoing Web request.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

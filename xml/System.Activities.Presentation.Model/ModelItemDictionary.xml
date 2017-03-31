@@ -27,7 +27,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Derives from <see cref="T:System.Activities.Presentation.Model.ModelItem" /> and implements support for a dictionary of key/value pairs.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -42,7 +42,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new <see cref="T:System.Activities.Presentation.Model.ModelItemDictionary" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,10 +63,11 @@
         <Parameter Name="value" Type="System.Activities.Presentation.Model.ModelItem" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="key">The <see cref="T:System.Activities.Presentation.Model.ModelItem" /> that represents the key in the key/value pair to be added.</param>
+        <param name="value">The <see cref="T:System.Activities.Presentation.Model.ModelItem" /> that represents the value in the key/value pair to be added.</param>
+        <summary>Adds the value to the dictionary under the given key.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">If the <see cref="T:System.Activities.Presentation.Model.ModelItemDictionary" /> is read-only.</exception>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -86,11 +87,13 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">The key in the key/value pair to be added.</param>
+        <param name="value">The value in the key/value pair to be added.</param>
+        <summary>Adds the value to the dictionary under the given key. This method wraps the key and value in a set of <see cref="T:System.Activities.Presentation.Model.ModelItem" /> objects.</summary>
+        <returns>Returns a <see cref="T:System.Activities.Presentation.Model.ModelItem" /> that represents the key.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">If <paramref name="key" /> or <paramref name="value" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">If the <see cref="T:System.Activities.Presentation.Model.ModelItemDictionary" /> is read-only.</exception>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -107,7 +110,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Clears the contents of the dictionary.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,7 +127,7 @@
         <ReturnType>System.Collections.Specialized.NotifyCollectionChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Raised when the contents of this collection change.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,9 +147,10 @@
         <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;System.Activities.Presentation.Model.ModelItem,System.Activities.Presentation.Model.ModelItem&gt;" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The key/value pair to find.</param>
+        <summary>Determines whether the dictionary contains the given key/value pair.</summary>
+        <returns>
+          <see langword="true" /> if the dictionary contains the given key/value pair; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -166,10 +170,12 @@
         <Parameter Name="key" Type="System.Activities.Presentation.Model.ModelItem" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">The key to find.</param>
+        <summary>Determines whether the dictionary contains the given key.</summary>
+        <returns>
+          <see langword="true" /> if the dictionary contains the given key; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">If <paramref name="key" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContainsKey">
@@ -188,10 +194,12 @@
         <Parameter Name="key" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">The key to find.</param>
+        <summary>Determines whether the dictionary contains the given key.</summary>
+        <returns>
+          <see langword="true" /> if the dictionary contains the given key; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">If <paramref name="key" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -211,9 +219,9 @@
         <Parameter Name="arrayIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="arrayIndex">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">The array of key/value pairs to copy.</param>
+        <param name="arrayIndex">The zero-based index in the current dictionary at which copying begins.</param>
+        <summary>Copies an array of key/value pairs into the given dictionary.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -230,8 +238,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the count of items in the dictionary.</summary>
+        <value>Returns <see cref="T:System.Int32" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -249,8 +257,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an enumerator for the items in the dictionary.</summary>
+        <returns>Returns <see cref="T:System.Collections.Generic.IEnumerator`1" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -267,8 +275,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Determines whether the dictionary is a fixed size.</summary>
+        <value>
+          <see langword="true" /> if the dictionary is a fixed size; otherwise, <see langword="false" />. The default implementation returns <see langword="true" /> if the dictionary is read-only.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -285,8 +294,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Determines whether the dictionary cannot be modified.</summary>
+        <value>
+          <see langword="true" /> if the dictionary cannot be modified; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -303,8 +313,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether access to the dictionary is synchronized (thread safe).</summary>
+        <value>
+          <see langword="true" /> if access to the dictionary is synchronized (thread safe); otherwise, <see langword="false" />. The default implementation returns <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -324,10 +335,20 @@
         <Parameter Name="key" Type="System.Activities.Presentation.Model.ModelItem" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="key">The specified key of the item.</param>
+        <summary>Gets or sets the item at the specified key.</summary>
+        <value>Returns <see cref="T:System.Activities.Presentation.Model.ModelItem" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If there is no item for the given key, this method returns `null`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">If <paramref name="key" /> or the value is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">If the dictionary is read-only and you set a new value.</exception>
+        <exception cref="T:System.Collections.Generic.KeyNotFoundException">If <paramref name="key" /> is not in the dictionary.</exception>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -346,10 +367,20 @@
         <Parameter Name="key" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="key">The specified key of the item.</param>
+        <summary>Gets or sets the item at the specified key.</summary>
+        <value>Returns <see cref="T:System.Activities.Presentation.Model.ModelItem" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If there is no item for the given key, this method returns `null`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">If <paramref name="key" /> or the value is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">If the dictionary is read-only and you set a new value.</exception>
+        <exception cref="T:System.Collections.Generic.KeyNotFoundException">If <paramref name="key" /> is not in the dictionary.</exception>
       </Docs>
     </Member>
     <Member MemberName="KeyProperty">
@@ -365,7 +396,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see langword="DependencyProperty" /> that represents the key in the key/value pair that is added to all items in the dictionary. The data type of the <see langword="KeyProperty" /> is <see cref="T:System.Activities.Presentation.Model.ModelItem" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -382,8 +413,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.Activities.Presentation.Model.ModelItem&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the keys of the collection. The keys are guaranteed to be in the same order as the values. The resulting collection is read-only.</summary>
+        <value>Returns <see cref="T:System.Collections.Generic.ICollection`1" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -403,10 +434,20 @@
         <Parameter Name="key" Type="System.Activities.Presentation.Model.ModelItem" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="key">The key of the element to remove.</param>
+        <summary>Removes the item with the specified key from the dictionary.</summary>
+        <returns>
+          <see langword="true" /> if the item exists; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method does nothing if the item does not exist in the collection.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">If the <paramref name="key" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">If the dictionary is read-only.</exception>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -425,10 +466,20 @@
         <Parameter Name="key" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="key">The item to remove using the key as the search criterion.</param>
+        <summary>Removes the item from the dictionary.</summary>
+        <returns>
+          <see langword="true" /> if the item exists; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method does nothing if the item does not exist in the collection.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">If the <paramref name="key" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">If the dictionary is read-only.</exception>
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -444,9 +495,16 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets an object that can be used to synchronize access to this collection.</summary>
+        <value>Returns <see cref="T:System.Object" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation returns “this.”  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.Activities.Presentation.Model.ModelItem,System.Activities.Presentation.Model.ModelItem&gt;&gt;.Add">
@@ -554,9 +612,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">The one-dimensional array that is the destination of the elements copied from <see cref="T:System.Collections.ICollection" />. The array must have zero-based indexing</param>
+        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <summary>Copies the elements of the <see cref="T:System.Collections.ICollection" /> to an array, starting at a particular array index.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -573,8 +631,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of elements contained in the <see cref="T:System.Collections.ICollection" />.</summary>
+        <value>The number of elements contained in the <see cref="T:System.Collections.ICollection" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -591,8 +649,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether access to the <see cref="T:System.Collections.ICollection" /> is synchronized (thread safe).</summary>
+        <value>
+          <see langword="true" /> if access to the <see cref="T:System.Collections.ICollection" /> is synchronized (thread safe); otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -609,8 +668,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an object that can be used to synchronize access to the <see cref="T:System.Collections.ICollection" />.</summary>
+        <value>An object that can be used to synchronize access to the <see cref="T:System.Collections.ICollection" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -631,9 +690,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="key">The object to use as the key of the element to add.</param>
+        <param name="value">The object to use as the value of the element to add.</param>
+        <summary>Adds an element with the provided key and value to the <see cref="T:System.Collections.IDictionary" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -651,7 +710,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes all elements from the <see cref="T:System.Collections.IDictionary" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -671,9 +730,10 @@
         <Parameter Name="key" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">The key to locate in the <see cref="T:System.Collections.IDictionary" /> object.</param>
+        <summary>Determines whether the <see cref="T:System.Collections.IDictionary" /> object contains an element with the specified key.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Collections.IDictionary" /> contains an element with the key; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -691,8 +751,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the <see cref="T:System.Collections.IDictionaryEnumerator" /> object for the <see cref="T:System.Collections.IDictionary" /> object.</summary>
+        <returns>An <see cref="T:System.Collections.IDictionaryEnumerator" /> object for the <see cref="T:System.Collections.IDictionary" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -709,8 +769,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Collections.IDictionary" /> object has a fixed size.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Collections.IDictionary" /> object has a fixed size; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -727,8 +788,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Collections.IDictionary" /> object is read-only.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Collections.IDictionary" /> object is read-only; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -748,9 +810,9 @@
         <Parameter Name="key" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="key">The key of the element to get or set.</param>
+        <summary>Gets or sets the element with the specified key.</summary>
+        <value>The element with the specified key.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -767,8 +829,8 @@
         <ReturnType>System.Collections.ICollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an <see cref="T:System.Collections.ICollection" /> object that contains the keys of the <see cref="T:System.Collections.IDictionary" /> object.</summary>
+        <value>An <see cref="T:System.Collections.ICollection" /> object that contains the keys of the <see cref="T:System.Collections.IDictionary" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -788,9 +850,16 @@
         <Parameter Name="key" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="key">The key of the element to remove.</param>
+        <summary>Removes the element with the specified key from the <see cref="T:System.Collections.IDictionary" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Collections.IDictionary> object does not contain an element with the specified key, the <xref:System.Collections.IDictionary> remains unchanged. No exception is thrown.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Values">
@@ -806,8 +875,8 @@
         <ReturnType>System.Collections.ICollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an <see cref="T:System.Collections.ICollection" /> object that contains the values in the <see cref="T:System.Collections.IDictionary" /> object.</summary>
+        <value>An <see cref="T:System.Collections.ICollection" /> object that contains the values in the <see cref="T:System.Collections.IDictionary" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -830,8 +899,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an enumerator that iterates through a collection.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection..</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -852,11 +921,13 @@
         <Parameter Name="value" Type="System.Activities.Presentation.Model.ModelItem&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">The key associated with the value to retrieve.</param>
+        <param name="value">The value associated with the specified key.</param>
+        <summary>Retrieves the value for the given key, if possible.</summary>
+        <returns>
+          <see langword="true" /> if there is a value present for the specified key; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">If <paramref name="key" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="TryGetValue">
@@ -876,11 +947,13 @@
         <Parameter Name="value" Type="System.Activities.Presentation.Model.ModelItem&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">The key associated with the value to retrieve.</param>
+        <param name="value">The value associated with the specified key.</param>
+        <summary>Retrieves the value for the given key, if possible.</summary>
+        <returns>
+          <see langword="true" /> if there is a value present for the specified key; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">If <paramref name="key" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -896,9 +969,16 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.Activities.Presentation.Model.ModelItem&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the values of the collection.</summary>
+        <value>Returns <see cref="T:System.Collections.Generic.ICollection`1" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The values are guaranteed to be in the same order as the keys. The resulting collection is read-only.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

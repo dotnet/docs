@@ -1,1 +1,0 @@
-This snippet ID 2 is used in multiple files: /CS/htmllink.cs, /CS/htmllinkcs.aspx. Rename the duplicate ID to make it unique, and update the reference to the snippet ID in the topic(s).

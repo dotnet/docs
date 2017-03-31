@@ -1,14 +1,20 @@
 ---
 uid: System.Windows.Input.Manipulations.Manipulation2DStartedEventArgs
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Input.Manipulations.Manipulation2DStartedEventArgs.OriginY
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Input.Manipulations.Manipulation2DStartedEventArgs.OriginX
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---

@@ -1,59 +1,77 @@
 ---
 uid: System.Web.UI.DataVisualization.Charting.DataFormula
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.DataFormula.FinancialFormula(System.Web.UI.DataVisualization.Charting.FinancialFormula,System.String)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.DataFormula.FinancialFormula(System.Web.UI.DataVisualization.Charting.FinancialFormula,System.String,System.Web.UI.DataVisualization.Charting.Series,System.Web.UI.DataVisualization.Charting.Series)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Web.UI.DataVisualization.Charting.DataFormula.FinancialFormula
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.DataFormula.Statistics
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.DataFormula.FinancialFormula(System.Web.UI.DataVisualization.Charting.FinancialFormula,System.String,System.String)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.DataFormula.FinancialFormula(System.Web.UI.DataVisualization.Charting.FinancialFormula,System.Web.UI.DataVisualization.Charting.Series)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.DataFormula.FinancialFormula(System.Web.UI.DataVisualization.Charting.FinancialFormula,System.String,System.String,System.String)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.DataFormula.#ctor
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.DataFormula.IsEmptyPointIgnored
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.DataFormula.FinancialFormula(System.Web.UI.DataVisualization.Charting.FinancialFormula,System.Web.UI.DataVisualization.Charting.Series,System.Web.UI.DataVisualization.Charting.Series)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.DataFormula.CopySeriesValues(System.String,System.String)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.DataFormula.IsStartFromFirst
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---

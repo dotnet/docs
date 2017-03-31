@@ -1,69 +1,101 @@
 ---
 uid: System.IdentityModel.AsyncResult
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.AsyncResult.AsyncWaitHandle
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.AsyncResult.Complete(System.Boolean,System.Exception)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.AsyncResult.#ctor(System.AsyncCallback,System.Object)
-internalonly: False
----
-
----
-uid: System.IdentityModel.AsyncResult.#ctor(System.Object)
-internalonly: False
----
-
----
-uid: System.IdentityModel.AsyncResult.IsCompleted
-internalonly: False
----
-
----
-uid: System.IdentityModel.AsyncResult.CompletedSynchronously
-internalonly: False
----
-
----
-uid: System.IdentityModel.AsyncResult.Dispose
-internalonly: False
+uid: System.IdentityModel.AsyncResult.Complete
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.AsyncResult.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.AsyncResult.#ctor(System.AsyncCallback,System.Object)
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.AsyncResult.#ctor(System.Object)
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.AsyncResult.IsCompleted
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.AsyncResult.CompletedSynchronously
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.AsyncResult.Dispose
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.AsyncResult.Dispose
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.AsyncResult.#ctor
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.AsyncResult.End(System.IAsyncResult)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.AsyncResult.Finalize
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.AsyncResult.Dispose(System.Boolean)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.AsyncResult.Complete(System.Boolean)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.AsyncResult.AsyncState
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

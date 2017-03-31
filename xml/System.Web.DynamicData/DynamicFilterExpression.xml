@@ -11,8 +11,41 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Modifies a database query by using a value from specified filter control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.DynamicFilterExpression> class enables you to modify a database query using the values that are assigned in a <xref:System.Web.DynamicData.DynamicFilter> control. This control delegates the task of building of the <xref:System.Linq.IQueryable> query to a specialized control such as <xref:System.Web.DynamicData.QueryableFilterRepeater> control or <xref:System.Web.DynamicData.DynamicFilter> control.  
+  
+ The filter controls in turn delegate the building of the query to the filter template that they reference. The query is then executed by the data source control that is referenced by the <xref:System.Web.UI.WebControls.QueryExtender> control.  
+  
+ To use the <xref:System.Web.DynamicData.DynamicFilterExpression> class in a page, you follow these steps:  
+  
+-   Add a <xref:System.Web.UI.WebControls.QueryExtender> control to the page.  
+  
+-   Set the `TargetControlID` property of the <xref:System.Web.UI.WebControls.QueryExtender> control to reference the data source control.  
+  
+-   Add a <xref:System.Web.DynamicData.DynamicFilterExpression> object as a child of the <xref:System.Web.UI.WebControls.QueryExtender> control.  
+  
+-   Set the `ControlID` property of the <xref:System.Web.DynamicData.DynamicFilterExpression> object to reference the filter control.  
+  
+ In the previous steps it is assumed that the related filter controls, data-bound controls, and data source control are defined in the page.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.DynamicData.DynamicFilterExpression> control to select a filter template in a page. The filter template is selected by the <xref:System.Web.DynamicData.DynamicFilter> control that is identified by <xref:System.Web.DynamicData.DynamicFilterExpression> control through its `ControID` property.  
+  
+```  
+<asp:QueryExtender ID="QueryExtender1"   
+    TargetControlID="GridDataSource" runat="server">  
+    <asp:DynamicFilterExpression ControlID="CategoryFilterID" />  
+</asp:QueryExtender>  
+```  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +59,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.DynamicFilterExpression" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,9 +76,30 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the filter control identifier.</summary>
+        <value>The filter control identifier.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This control identifier is used by the <xref:System.Web.DynamicData.DynamicFilterExpression> class to select the filter control to which it delegates the task of building of the query, which is in turn executed by the data source control.  
+  
+ The filter control delegates the task of building of the query to the filter template it references. The query is then executed by the data source control that is referenced by the <xref:System.Web.UI.WebControls.QueryExtender> control.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.DynamicData.DynamicFilterExpression> class to select a filter control in a page.  
+  
+```  
+<asp:QueryExtender ID="QueryExtender1"   
+    TargetControlID="GridDataSource" runat="server">  
+    <asp:DynamicFilterExpression ControlID="CategoryFilterID" />  
+</asp:QueryExtender>  
+```  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetQueryable">
@@ -64,10 +118,17 @@
         <Parameter Name="source" Type="System.Linq.IQueryable" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="source">The data source query to modify.</param>
+        <summary>Gets the modified query using the current filter value.</summary>
+        <returns>The data source query that is modified by using the current value that is contained in the <see cref="T:System.Web.DynamicData.DynamicFilterExpression" /> instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.DynamicFilterExpression.GetQueryable%2A> method delegates the task of building of the query to the filter template referenced by the filter control that is specified by the <xref:System.Web.DynamicData.DynamicFilterExpression.ControlID%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetContext">
@@ -88,10 +149,10 @@
         <Parameter Name="dataSource" Type="System.Web.UI.WebControls.IQueryableDataSource" />
       </Parameters>
       <Docs>
-        <param name="owner">To be added.</param>
-        <param name="context">To be added.</param>
-        <param name="dataSource">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="owner">The control that contains the <see cref="T:System.Web.DynamicData.DynamicFilterExpression" /> instance, such as the <see cref="T:System.Web.UI.WebControls.QueryExtender" /> control.</param>
+        <param name="context">The current <see cref="T:System.Web.HttpContext" /> object.</param>
+        <param name="dataSource">The target data source for the <see cref="T:System.Web.DynamicData.DynamicFilterExpression" /> instance.</param>
+        <summary>Initializes the expression with data source information.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

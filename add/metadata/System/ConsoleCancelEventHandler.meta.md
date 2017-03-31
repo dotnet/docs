@@ -1,4 +1,6 @@
 ---
 uid: System.ConsoleCancelEventHandler
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

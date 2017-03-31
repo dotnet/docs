@@ -1,14 +1,27 @@
 ---
 uid: System.Xml.IXmlBinaryReaderInitializer
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.IXmlBinaryReaderInitializer.SetInput(System.Byte[],System.Int32,System.Int32,System.Xml.IXmlDictionary,System.Xml.XmlDictionaryReaderQuotas,System.Xml.XmlBinaryReaderSession,System.Xml.OnXmlDictionaryReaderClose)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.IXmlBinaryReaderInitializer.SetInput(System.IO.Stream,System.Xml.IXmlDictionary,System.Xml.XmlDictionaryReaderQuotas,System.Xml.XmlBinaryReaderSession,System.Xml.OnXmlDictionaryReaderClose)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.IXmlBinaryReaderInitializer.SetInput
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

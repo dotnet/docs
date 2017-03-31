@@ -13,8 +13,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the methods that workflow designer hosts can call to determine the environment settings.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="GetReflectionAssembly">
@@ -33,9 +42,9 @@
         <Parameter Name="assemblyName" Type="System.Reflection.AssemblyName" />
       </Parameters>
       <Docs>
-        <param name="assemblyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="assemblyName">The assembly name.</param>
+        <summary>Returns the assembly loaded in reflection context for the current target framework.</summary>
+        <returns>The assembly loaded in reflection context for the current target framework.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,9 +64,9 @@
         <Parameter Name="reflectionType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="reflectionType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="reflectionType">The reflection type that depends on the target [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] version.</param>
+        <summary>Returns the current runtime type for the specified reflection type. The reflection type depends on the target [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] version.</summary>
+        <returns>The current runtime type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,8 +84,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the target [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] version of the current project.</summary>
+        <returns>The target [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] version of the current project.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,9 +105,10 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="type">The type to check.</param>
+        <summary>Returns a value that indicates whether the specified type is supported in the current target [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] version.</summary>
+        <returns>
+          <see langword="true" /> if the specified type is supported in the current target [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] version; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

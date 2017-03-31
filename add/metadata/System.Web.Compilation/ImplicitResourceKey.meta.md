@@ -1,29 +1,48 @@
 ---
 uid: System.Web.Compilation.ImplicitResourceKey
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Compilation.ImplicitResourceKey.Property
-internalonly: False
----
-
----
-uid: System.Web.Compilation.ImplicitResourceKey.#ctor(System.String,System.String,System.String)
-internalonly: False
----
-
----
-uid: System.Web.Compilation.ImplicitResourceKey.KeyPrefix
-internalonly: False
----
-
----
-uid: System.Web.Compilation.ImplicitResourceKey.Filter
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Compilation.ImplicitResourceKey.#ctor
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Compilation.ImplicitResourceKey.#ctor(System.String,System.String,System.String)
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Compilation.ImplicitResourceKey.KeyPrefix
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Compilation.ImplicitResourceKey.Filter
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Compilation.ImplicitResourceKey.#ctor
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

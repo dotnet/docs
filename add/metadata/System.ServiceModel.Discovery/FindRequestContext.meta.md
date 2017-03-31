@@ -1,24 +1,34 @@
 ---
 uid: System.ServiceModel.Discovery.FindRequestContext
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.FindRequestContext.OnAddMatchingEndpoint(System.ServiceModel.Discovery.EndpointDiscoveryMetadata)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.FindRequestContext.Criteria
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.FindRequestContext.#ctor(System.ServiceModel.Discovery.FindCriteria)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.FindRequestContext.AddMatchingEndpoint(System.ServiceModel.Discovery.EndpointDiscoveryMetadata)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

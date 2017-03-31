@@ -1,4 +1,5 @@
 ---
 uid: UIAutomationClientsideProviders
-internalonly: False
+ms.author: "kbridge"
+manager: "leannef"
 ---

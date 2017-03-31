@@ -1,9 +1,12 @@
 ---
 uid: System.Windows.Media.Converters.BoolIListConverter
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Converters.BoolIListConverter.#ctor
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

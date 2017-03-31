@@ -21,7 +21,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a container for all model binders for the application, listed by binder type.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,7 +36,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.ModelBinderDictionary" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,8 +56,8 @@
         <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;System.Type,System.Web.ModelBinding.IModelBinder&gt;" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="item">The object to add to the dictionary.</param>
+        <summary>Adds the specified item to the dictionary.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,9 +78,9 @@
         <Parameter Name="value" Type="System.Web.ModelBinding.IModelBinder" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="key">The key of the item to add.</param>
+        <param name="value">The value of the item to add.</param>
+        <summary>Adds the specified item to the dictionary.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,7 +98,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes all items from the dictionary.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,9 +118,10 @@
         <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;System.Type,System.Web.ModelBinding.IModelBinder&gt;" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The item to search for.</param>
+        <summary>Determines whether the model binder dictionary contains a specified value.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="item" /> is found; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,9 +141,10 @@
         <Parameter Name="key" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">The key to search for.</param>
+        <summary>Determines whether the model binder dictionary contains an element that has the specified key.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="key" /> is found; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -163,9 +165,9 @@
         <Parameter Name="arrayIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="arrayIndex">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">The destination array. The array must be one-dimensional and have zero-based indexing.</param>
+        <param name="arrayIndex">The zero-based index in <c>array</c> at which copying starts.</param>
+        <summary>Copies the elements of the model binder dictionary to an array, starting at a specified index.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -182,8 +184,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of items in the dictionary.</summary>
+        <value>The number of items in the dictionary.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -200,8 +202,8 @@
         <ReturnType>System.Web.ModelBinding.IModelBinder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the default model binder.</summary>
+        <value>The default model binder.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -219,8 +221,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an enumerator that can be used to iterate through the collection.</summary>
+        <returns>An enumerator that can be used to iterate through the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -237,8 +239,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the dictionary is read-only.</summary>
+        <value>
+          <see langword="true" /> if the dictionary is read-only; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -258,9 +261,9 @@
         <Parameter Name="key" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="key">The item key.</param>
+        <summary>Gets or sets the specified key in an object that implements the <see cref="T:System.Web.ModelBinding.IModelBinder" /> interface.</summary>
+        <value>The element that has the specified key.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -277,8 +280,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.Type&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection that contains the keys in the dictionary.</summary>
+        <value>A collection that contains the keys in the dictionary.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -298,9 +301,10 @@
         <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;System.Type,System.Web.ModelBinding.IModelBinder&gt;" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The item to remove.</param>
+        <summary>Removes the first occurrence of the specified element from the model binder dictionary.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="item" /> was successfully removed from the dictionary; <see langword="false" /> if <paramref name="item" /> was not removed or was not found in the dictionary.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -320,9 +324,10 @@
         <Parameter Name="key" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">The key of the item to remove.</param>
+        <summary>Removes the element that has the specified key from the model binder dictionary.</summary>
+        <returns>
+          <see langword="true" /> if the element was successfully removed; <see langword="false" /> if <paramref name="key" /> was note removed or was not found in the dictionary.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -340,9 +345,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns an enumerator that can be used to iterate through a collection.</summary>
+        <returns>An enumerator that can be used to iterate through the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.ModelBinding.ModelBinderDictionary> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TryGetValue">
@@ -362,10 +374,11 @@
         <Parameter Name="value" Type="System.Web.ModelBinding.IModelBinder&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">The key of the value to get.</param>
+        <param name="value">When this method returns, the value that is associated with the specified key, if the key is found; otherwise, the default value for the type of the <c>value</c> parameter. This parameter is passed uninitialized.</param>
+        <summary>Gets the value that is associated with the specified key.</summary>
+        <returns>
+          <see langword="true" /> if the dictionary contains an element that has the specified key; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -382,8 +395,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.Web.ModelBinding.IModelBinder&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection that contains the values in the model binder dictionary.</summary>
+        <value>A collection that contains the values in the model binder dictionary.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

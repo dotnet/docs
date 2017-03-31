@@ -20,8 +20,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies whether a mapping is read, write, or both.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the <xref:System.Xml.Serialization.XmlSchemaImporter.ImportMembersMapping%2A> when generating code for serialization and deserialization methods. The value specifies whether the schema importer generates write methods for mappings with write access, and read methods for mappings with read access. This minimizes the generation of serialization code.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="None">
@@ -42,7 +49,7 @@
         <ReturnType>System.Xml.Serialization.XmlMappingAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Both read and write methods are generated.</summary>
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -63,7 +70,7 @@
         <ReturnType>System.Xml.Serialization.XmlMappingAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Read methods are generated.</summary>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -84,7 +91,7 @@
         <ReturnType>System.Xml.Serialization.XmlMappingAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Write methods are generated.</summary>
       </Docs>
     </Member>
   </Members>

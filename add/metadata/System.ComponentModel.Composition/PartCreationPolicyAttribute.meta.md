@@ -1,14 +1,20 @@
 ---
 uid: System.ComponentModel.Composition.PartCreationPolicyAttribute
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.PartCreationPolicyAttribute.CreationPolicy
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.PartCreationPolicyAttribute.#ctor(System.ComponentModel.Composition.CreationPolicy)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

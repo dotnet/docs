@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.ICheckBoxControl
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ICheckBoxControl.CheckedChanged
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ICheckBoxControl.Checked
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

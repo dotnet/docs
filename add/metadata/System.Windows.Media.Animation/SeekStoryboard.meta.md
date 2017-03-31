@@ -1,24 +1,31 @@
 ---
 uid: System.Windows.Media.Animation.SeekStoryboard
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SeekStoryboard.Origin
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SeekStoryboard.Offset
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SeekStoryboard.ShouldSerializeOffset
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Animation.SeekStoryboard.#ctor
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

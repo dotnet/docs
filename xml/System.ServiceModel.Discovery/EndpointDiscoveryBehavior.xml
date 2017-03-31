@@ -15,8 +15,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Controls the content of the <see cref="T:System.ServiceModel.Discovery.EndpointDiscoveryMetadata" /> returned by a discovery endpoint.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This behavior is used to configure the various discovery settings for an endpoint, such as its discoverability, scopes, and any custom extensions to its metadata. A user creates a new instance of this type and adds it to the specific endpoint whose <xref:System.ServiceModel.Discovery.EndpointDiscoveryMetadata> must be configured. It can also be used to turn off discovery for specific endpoint using the <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior.Enabled%2A> property. Note that the <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior> on an endpoint is ignored if <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior> is not present. You cannot make an endpoint discoverable through <xref:System.ServiceModel.Discovery.EndpointDiscoveryMetadata> without first adding a <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior> to your service.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +37,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Discovery.EndpointDiscoveryBehavior" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,8 +54,8 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Xml.XmlQualifiedName&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the contract type names associated with the endpoint.</summary>
+        <value>The contract type names associated with the endpoint.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,8 +72,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that controls the discoverability of the associated endpoint.</summary>
+        <value>
+          <see langword="true" /> if the endpoint is enabled, otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,9 +91,16 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Xml.Linq.XElement&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the extensions associated with the endpoint.</summary>
+        <value>A collection of extensions associated with the endpoint.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The extension is any custom XML metadata you want to add to an endpoint.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Scopes">
@@ -101,9 +116,16 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Uri&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the scopes associated with the endpoint.</summary>
+        <value>A collection of scopes.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A scope is a URI used as an element to identify a service or group of services.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Description.IEndpointBehavior.AddBindingParameters">
@@ -123,9 +145,9 @@
         <Parameter Name="bindingParameters" Type="System.ServiceModel.Channels.BindingParameterCollection" />
       </Parameters>
       <Docs>
-        <param name="endpoint">To be added.</param>
-        <param name="bindingParameters">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="endpoint">Not implemented.</param>
+        <param name="bindingParameters">Not implemented.</param>
+        <summary>Not implemented.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,9 +168,9 @@
         <Parameter Name="clientRuntime" Type="System.ServiceModel.Dispatcher.ClientRuntime" />
       </Parameters>
       <Docs>
-        <param name="endpoint">To be added.</param>
-        <param name="clientRuntime">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="endpoint">Not implemented.</param>
+        <param name="clientRuntime">Not implemented.</param>
+        <summary>Not implemented.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -169,9 +191,9 @@
         <Parameter Name="endpointDispatcher" Type="System.ServiceModel.Dispatcher.EndpointDispatcher" />
       </Parameters>
       <Docs>
-        <param name="endpoint">To be added.</param>
-        <param name="endpointDispatcher">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="endpoint">Not implemented.</param>
+        <param name="endpointDispatcher">Not implemented.</param>
+        <summary>Not implemented.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -191,8 +213,8 @@
         <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
       </Parameters>
       <Docs>
-        <param name="endpoint">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="endpoint">Not implemented.</param>
+        <summary>Not implemented.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

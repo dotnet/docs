@@ -1,4 +1,5 @@
 ---
 uid: System.Speech.Recognition.SpeechRecognizedEventArgs
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

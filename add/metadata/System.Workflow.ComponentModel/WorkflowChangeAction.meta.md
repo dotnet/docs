@@ -1,19 +1,27 @@
 ---
 uid: System.Workflow.ComponentModel.WorkflowChangeAction
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.WorkflowChangeAction.ValidateChanges(System.Workflow.ComponentModel.Activity)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.WorkflowChangeAction.ApplyTo(System.Workflow.ComponentModel.Activity)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.WorkflowChangeAction.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

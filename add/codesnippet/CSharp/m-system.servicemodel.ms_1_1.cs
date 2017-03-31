@@ -1,1 +1,0 @@
-                MsmqIntegrationBindingElement msmqBindingElement = new MsmqIntegrationBindingElement();

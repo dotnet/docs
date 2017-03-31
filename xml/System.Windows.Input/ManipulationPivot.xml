@@ -11,8 +11,23 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies how a rotation occurs with one point of user input.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Input.ManipulationStartingEventArgs.Pivot%2A?displayProperty=fullName> property is a <xref:System.Windows.Input.ManipulationPivot>.  When you set<xref:System.Windows.Input.ManipulationStartingEventArgs.Pivot%2A> in an event handler for the <xref:System.Windows.UIElement.ManipulationStarting> event, the manipulation will contain rotation data when the user uses one finger during a manipulation.  This is to simulate real-world situations where you can use one finger to rotate an object, such as a piece of paper on a table.  If the <xref:System.Windows.Input.ManipulationStartingEventArgs.Pivot%2A> is `null`, the user must use two fingers to cause rotation.  
+  
+   
+  
+## Examples  
+ The following example shows an event handler for the <xref:System.Windows.UIElement.ManipulationStarting> event and sets the <xref:System.Windows.Input.ManipulationStartingEventArgs.Pivot%2A?displayProperty=fullName> property. To test this example, follow the steps in [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md) and replace the code in step 4 with this code.  
+  
+ [!code-csharp[BasicManipulation#ManipulationPivot](~/samples/snippets/csharp/VS_Snippets_Wpf/basicmanipulation/csharp/reportboundaryfeedbackexample.xaml.cs#manipulationpivot)]
+ [!code-vb[BasicManipulation#ManipulationPivot](~/samples/snippets/visualbasic/VS_Snippets_Wpf/basicmanipulation/visualbasic/reportboundaryfeedbackexample.xaml.vb#manipulationpivot)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +41,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.ManipulationPivot" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,9 +59,9 @@
         <Parameter Name="radius" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="center">To be added.</param>
-        <param name="radius">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="center">The center of a single-point manipulation.</param>
+        <param name="radius">The area around the pivot that is used to determine how much rotation and translation occurs when a single point of contact initiates the manipulation.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.ManipulationPivot" /> class with the specified point of a single-point manipulation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,8 +78,8 @@
         <ReturnType>System.Windows.Point</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the center of a single-point manipulation.</summary>
+        <value>The center of a single-point manipulation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,8 +96,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the area around the pivot that is used to determine how much rotation and translation occurs when a single point of contact initiates the manipulation.</summary>
+        <value>The area around the pivot that is used to determine how much rotation and translation occurs when a single point of contact initiates the manipulation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

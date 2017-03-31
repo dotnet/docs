@@ -1,4 +1,5 @@
 ---
 uid: System.Printing.TrueTypeFontMode
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

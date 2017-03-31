@@ -19,8 +19,29 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a labeled statement or a stand-alone label.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.CodeDom.CodeLabeledStatement> represents a label and optionally, an associated statement. A label can be used to indicate the target of a <xref:System.CodeDom.CodeGotoStatement>.  
+  
+ The <xref:System.CodeDom.CodeLabeledStatement.Statement%2A> property is optional. To create only a label, leave the <xref:System.CodeDom.CodeLabeledStatement.Statement%2A> property uninitialized.  
+  
+> [!NOTE]
+>  Not all languages support `goto` statements and labels, so you should test wheter a code generator supports `goto` statements and labels by calling the <xref:System.CodeDom.Compiler.ICodeGenerator.Supports%2A> method with the <xref:System.CodeDom.Compiler.GeneratorSupport> flag.  
+  
+   
+  
+## Examples  
+ The following example code demonstrates use of a <xref:System.CodeDom.CodeGotoStatement> and a <xref:System.CodeDom.CodeLabeledStatement> to redirect program flow.  
+  
+ [!code-cpp[CodeGotoStatementExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeGotoStatementExample/CPP/codegotostatementexample.cpp#2)]
+ [!code-csharp[CodeGotoStatementExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeGotoStatementExample/CS/codegotostatementexample.cs#2)]
+ [!code-vb[CodeGotoStatementExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeGotoStatementExample/VB/codegotostatementexample.vb#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,7 +55,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeLabeledStatement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +72,8 @@
         <Parameter Name="label" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="label">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="label">The name of the label.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeLabeledStatement" /> class using the specified label name.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,9 +91,9 @@
         <Parameter Name="statement" Type="System.CodeDom.CodeStatement" />
       </Parameters>
       <Docs>
-        <param name="label">To be added.</param>
-        <param name="statement">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="label">The name of the label.</param>
+        <param name="statement">The <see cref="T:System.CodeDom.CodeStatement" /> to associate with the label.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeLabeledStatement" /> class using the specified label name and statement.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,8 +110,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the label.</summary>
+        <value>The name of the label.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,9 +128,16 @@
         <ReturnType>System.CodeDom.CodeStatement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the optional associated statement.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeStatement" /> that indicates the statement associated with the label.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this property is not set, the <xref:System.CodeDom.CodeLabeledStatement> represents only a label, rather than a labeled statement.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

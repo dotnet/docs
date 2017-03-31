@@ -11,8 +11,25 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>In accessibility scenarios, represents a header cell in the rendered table of a tabular ASP.NET data-bound control, such as <see cref="T:System.Web.UI.WebControls.GridView" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.DataControlFieldHeaderCell> class is used by data tables (such as the <xref:System.Web.UI.WebControls.GridView> control) to represent accessible headers. Tabular controls such as <xref:System.Web.UI.WebControls.DetailsView> and <xref:System.Web.UI.WebControls.FormView> are considered layout tables, and therefore do not require accessible headers and do not use the <xref:System.Web.UI.WebControls.DataControlFieldHeaderCell> class.  
+  
+ The <xref:System.Web.UI.WebControls.DataControlFieldHeaderCell> class is used in two cases:  
+  
+-   The <xref:System.Web.UI.WebControls.GridView.UseAccessibleHeader%2A> property is `true`.  
+  
+-   The field is a <xref:System.Web.UI.WebControls.BoundField> object whose <xref:System.Web.UI.WebControls.BoundField.DataField%2A> property is set as the <xref:System.Web.UI.WebControls.GridView.RowHeaderColumn%2A> property.  
+  
+ If neither is the case, a regular <xref:System.Web.UI.WebControls.DataControlFieldHeaderCell> object is used, which renders a `<td>` instead of a `<th>` element.  
+  
+ Because the <xref:System.Web.UI.WebControls.DataControlFieldHeaderCell> class supports the <xref:System.Web.UI.WebControls.DataControlFieldHeaderCell.AbbreviatedText%2A> property, it is used by the <xref:System.Web.UI.WebControls.GridView> control whenever the <xref:System.Web.UI.WebControls.GridView.UseAccessibleHeader%2A> property is `true`.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,9 +45,16 @@
         <Parameter Name="containingField" Type="System.Web.UI.WebControls.DataControlField" />
       </Parameters>
       <Docs>
-        <param name="containingField">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="containingField">The <see cref="T:System.Web.UI.WebControls.DataControlField" /> that contains the current cell.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.DataControlFieldHeaderCell" /> class, setting the specified <see cref="T:System.Web.UI.WebControls.DataControlField" /> object as the cell's container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.DataControlFieldHeaderCell.%23ctor%2A> constructor passes the <xref:System.Web.UI.HtmlTextWriterTag?displayProperty=fullName> element as its `tagKey` parameter, which is the representation of the HTML tag it is rendered with. The <xref:System.Web.UI.WebControls.DataControlField> passed in the `containingField` parameter is used to determine whether to show headers and what styles to apply to the cell when it is rendered.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AbbreviatedText">
@@ -46,9 +70,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets abbreviated text, which is rendered in an HTML <see langword="abbr" /> attribute and is used by screen readers.</summary>
+        <value>A shortened version of the table header text, which is read by screen readers. The default value is <see cref="F:System.String.Empty" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the <xref:System.Web.UI.WebControls.DataControlFieldHeaderCell.AbbreviatedText%2A> property is stored in view state.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddAttributesToRender">
@@ -67,9 +98,16 @@
         <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="writer">An <see cref="T:System.Web.UI.HtmlTextWriter" /> that represents the output stream that renders HTML content to the client.</param>
+        <summary>Adds information about the table cell to the list of attributes to render.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.DataControlFieldHeaderCell.AddAttributesToRender%2A> method adds the <xref:System.Web.UI.HtmlTextWriterAttribute> or <xref:System.Web.UI.HtmlTextWriterAttribute> attributes if the respective <xref:System.Web.UI.WebControls.DataControlFieldHeaderCell.Scope%2A> or <xref:System.Web.UI.WebControls.DataControlFieldHeaderCell.AbbreviatedText%2A> properties are set.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Scope">
@@ -85,9 +123,18 @@
         <ReturnType>System.Web.UI.WebControls.TableHeaderScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the header cell's scope within an HTML table.</summary>
+        <value>One of the <see cref="T:System.Web.UI.WebControls.TableHeaderScope" /> values. The default is <see cref="F:System.Web.UI.WebControls.TableHeaderScope.NotSet" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the <xref:System.Web.UI.WebControls.DataControlFieldHeaderCell.Scope%2A> property is rendered as an HTML `scope` attribute by the <xref:System.Web.UI.WebControls.DataControlFieldHeaderCell> object. Although the <xref:System.Web.UI.WebControls.DataControlFieldHeaderCell.Scope%2A> property is initialized to <xref:System.Web.UI.WebControls.TableHeaderScope>, you should set it to either <xref:System.Web.UI.WebControls.TableHeaderScope> or <xref:System.Web.UI.WebControls.TableHeaderScope>, depending on the cells that the header represents.  
+  
+ The value of the <xref:System.Web.UI.WebControls.DataControlFieldHeaderCell.Scope%2A> property is stored in view state.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

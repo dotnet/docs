@@ -26,7 +26,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines an interface that proffers a free-threaded host object that allows for background threads to call directly (avoids marshalling to the UI thread.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -47,10 +47,10 @@
         <Parameter Name="buildFailedEvent" Type="System.IntPtr&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="buildSucceededEvent">To be added.</param>
-        <param name="buildFailedEvent">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="buildSucceededEvent">[out] the build-succeeded event.</param>
+        <param name="buildFailedEvent">[out] the build-failed event.</param>
+        <summary>This code is called only on the UI thread and kicks off the actual build with VB.</summary>
+        <returns>Returns 0 if the method was successful.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,9 +70,9 @@
         <Parameter Name="buildSuccess" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="buildSuccess">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="buildSuccess">A flag indicating whether the build succeeded. Value is <see langword="true" /> for success.</param>
+        <summary>Performs functions at the end of compilation.</summary>
+        <returns>Returns 0 if the method was successful.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,8 +90,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets a free-threaded host object that allows for background threads to call directly. Avoids marshaling to the UI thread.</summary>
+        <returns>Returns the free-threaded host object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,9 +111,11 @@
         <Parameter Name="highEntropyVA" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="highEntropyVA">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="highEntropyVA">
+          <see langword="True" /> to set the <c>/ highentropyva</c> to indicate support of high entropy Address Space Layout Randomization (ASLR); otherwise, <see langword="False" />.</param>
+        <summary>Sets the <c>/highentropyva</c> value as specified.</summary>
+        <returns>
+          <see langword="True" /> if the method was successful.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,10 +135,18 @@
         <Parameter Name="platformWith32BitPreference" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="platformWith32BitPreference">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="platformWith32BitPreference">
+          <see langword="True" /> to set the <c>/platform</c> value to <see langword="AnyCPU32BitPreferred" />; otherwise, <see langword="False" />.</param>
+        <summary>Sets the <c>/platform</c> value to <see langword="AnyCPU32BitPreferred" />.</summary>
+        <returns>Returns <see langword="True" /> if the method was successful.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:Microsoft.Build.Tasks.ManagedCompiler.Prefer32Bit%2A> property is set on the project, <xref:Microsoft.Build.Tasks.Hosting.IVbcHostObject5.SetPlatformWith32BitPreference%2A> changes the `/platform` value `AnyCPU` or the default platform value (`null` or "") to `AnyCPU32BitPreferred`. For more information, see [/platform (Visual Basic)](../Topic/-platform%20\(Visual%20Basic\).md).The `AnyCPU``/platform` switch setting (`/platform:AnyCPU`) runs your application as a 64-bit process whenever possible, falling back to 32-bit for 32-bit-only systems. However, running applications as 32-bit is often preferred to running them as 64-bit because 64-bit applications may consume more memory. The `AnyCPU32BitPreferred` setting is similar to `AnyCPU` except that its default action is to run applications in 32-bit mode on systems that support either 32-bit or 64-bit mode.  This setting accommodates future processors that may not have a fallback 32-bit mode.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetSubsystemVersion">
@@ -155,9 +165,9 @@
         <Parameter Name="subsystemVersion" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="subsystemVersion">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="subsystemVersion">The subsystem version.</param>
+        <summary>Sets the subsystem version as specified.</summary>
+        <returns>Returns <see langword="true" /> if the method is successful.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

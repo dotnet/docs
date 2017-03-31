@@ -1,29 +1,41 @@
 ---
 uid: System.Web.UI.Design.RouteUrlExpressionEditorSheet
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.RouteUrlExpressionEditorSheet.RouteName
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.RouteUrlExpressionEditorSheet.#ctor(System.String,System.IServiceProvider)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.RouteUrlExpressionEditorSheet.RouteValues
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.RouteUrlExpressionEditorSheet.IsValid
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.RouteUrlExpressionEditorSheet.GetExpression
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

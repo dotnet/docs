@@ -1,14 +1,17 @@
 ---
 uid: System.Web.Configuration.ClientTargetSection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ClientTargetSection.ClientTargets
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ClientTargetSection.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

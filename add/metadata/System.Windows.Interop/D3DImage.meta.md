@@ -1,134 +1,193 @@
 ---
 uid: System.Windows.Interop.D3DImage
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Interop.D3DImage.Clone
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Interop.D3DImage.Unlock
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Interop.D3DImage.CloneCore(System.Windows.Freezable)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Interop.D3DImage.Finalize
-internalonly: False
----
-
----
-uid: System.Windows.Interop.D3DImage.PixelWidth
-internalonly: False
----
-
----
-uid: System.Windows.Interop.D3DImage.Width
-internalonly: False
----
-
----
-uid: System.Windows.Interop.D3DImage.CloneCurrentValueCore(System.Windows.Freezable)
-internalonly: False
----
-
----
-uid: System.Windows.Interop.D3DImage.Height
-internalonly: False
----
-
----
-uid: System.Windows.Interop.D3DImage.Metadata
-internalonly: False
----
-
----
-uid: System.Windows.Interop.D3DImage.CopyBackBuffer
-internalonly: False
----
-
----
-uid: System.Windows.Interop.D3DImage.SetBackBuffer(System.Windows.Interop.D3DResourceType,System.IntPtr)
-internalonly: False
----
-
----
-uid: System.Windows.Interop.D3DImage.TryLock(System.Windows.Duration)
-internalonly: False
----
-
----
-uid: System.Windows.Interop.D3DImage.PixelHeight
-internalonly: False
----
-
----
-uid: System.Windows.Interop.D3DImage.IsFrontBufferAvailableProperty
-internalonly: False
----
-
----
-uid: System.Windows.Interop.D3DImage.FreezeCore(System.Boolean)
-internalonly: False
----
-
----
-uid: System.Windows.Interop.D3DImage.IsFrontBufferAvailable
-internalonly: False
----
-
----
-uid: System.Windows.Interop.D3DImage.IsFrontBufferAvailableChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Interop.D3DImage.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Interop.D3DImage.PixelWidth
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Interop.D3DImage.Width
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Interop.D3DImage.CloneCurrentValueCore(System.Windows.Freezable)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Interop.D3DImage.Height
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Interop.D3DImage.Metadata
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Interop.D3DImage.CopyBackBuffer
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Interop.D3DImage.SetBackBuffer(System.Windows.Interop.D3DResourceType,System.IntPtr)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Interop.D3DImage.TryLock(System.Windows.Duration)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Interop.D3DImage.PixelHeight
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Interop.D3DImage.IsFrontBufferAvailableProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Interop.D3DImage.FreezeCore(System.Boolean)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Interop.D3DImage.IsFrontBufferAvailable
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Interop.D3DImage.IsFrontBufferAvailableChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Interop.D3DImage.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Interop.D3DImage.Lock
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Interop.D3DImage.GetCurrentValueAsFrozenCore(System.Windows.Freezable)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Interop.D3DImage.#ctor(System.Double,System.Double)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Interop.D3DImage.CreateInstanceCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Interop.D3DImage.AddDirtyRect(System.Windows.Int32Rect)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Interop.D3DImage.CloneCurrentValue
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Interop.D3DImage.SetBackBuffer
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Interop.D3DImage.SetBackBuffer(System.Windows.Interop.D3DResourceType,System.IntPtr,System.Boolean)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Interop.D3DImage.GetAsFrozenCore(System.Windows.Freezable)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

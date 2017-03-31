@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.DsmlDocumentProcessing" /> enumeration specifies the processing method for a DSML document.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.DirectoryServices.Protocols.DsmlDocumentProcessing</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Parallel.  Value is equal to 1.</summary>
       </Docs>
     </Member>
     <Member MemberName="Sequential">
@@ -43,7 +43,7 @@
         <ReturnType>System.DirectoryServices.Protocols.DsmlDocumentProcessing</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sequential.  Value is equal to 0.</summary>
       </Docs>
     </Member>
   </Members>

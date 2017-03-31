@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides data for the <see cref="E:System.Windows.Ink.IncrementalLassoHitTester.SelectionChanged" /> event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,9 +28,16 @@
         <ReturnType>System.Windows.Ink.StrokeCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the strokes that have been removed from lasso path since the last time the <see cref="E:System.Windows.Ink.IncrementalLassoHitTester.SelectionChanged" /> event was raised.</summary>
+        <value>A <see cref="T:System.Windows.Ink.StrokeCollection" /> that contains the strokes that have been removed from the lasso path since the last time the <see cref="E:System.Windows.Ink.IncrementalLassoHitTester.SelectionChanged" /> event was raised.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Ink.Stroke> is removed from the lasso path when it is no longer within the bounds of the lasso path.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectedStrokes">
@@ -46,8 +53,8 @@
         <ReturnType>System.Windows.Ink.StrokeCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the strokes that have been surrounded by the lasso path since the last time the <see cref="E:System.Windows.Ink.IncrementalLassoHitTester.SelectionChanged" /> event was raised.</summary>
+        <value>A <see cref="T:System.Windows.Ink.StrokeCollection" /> that contains the strokes that have been surrounded by the lasso path since the last time the <see cref="E:System.Windows.Ink.IncrementalLassoHitTester.SelectionChanged" /> event was raised.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

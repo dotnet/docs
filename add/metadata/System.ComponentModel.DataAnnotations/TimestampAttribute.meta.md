@@ -1,9 +1,11 @@
 ---
 uid: System.ComponentModel.DataAnnotations.TimestampAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.TimestampAttribute.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

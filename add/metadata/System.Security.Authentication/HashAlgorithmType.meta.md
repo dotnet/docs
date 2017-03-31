@@ -1,4 +1,5 @@
 ---
 uid: System.Security.Authentication.HashAlgorithmType
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

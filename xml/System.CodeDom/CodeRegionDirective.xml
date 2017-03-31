@@ -19,8 +19,26 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the name and mode for a code region.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.CodeDom.CodeRegionDirective.RegionMode%2A> property specifies whether an instance represents the start or end of the region.  
+  
+> [!NOTE]
+>  Not all compilers support code region directives. To prevent compiler errors, code providers normally do not include code region directives in the provider output for compilers that do not support them.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.CodeDom.CodeRegionDirective> in the creation of a graph that is used to produce code that is also compiled.  
+  
+ [!code-csharp[System.CodeDom.CodeDirectives#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.CodeDom.CodeDirectives/CS/codedirective.cs#1)]
+ [!code-vb[System.CodeDom.CodeDirectives#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.CodeDom.CodeDirectives/VB/codedirective.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,8 +52,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeRegionDirective" /> class with default values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you use this constructor, you should also set the <xref:System.CodeDom.CodeRegionDirective.RegionMode%2A> and <xref:System.CodeDom.CodeRegionDirective.RegionText%2A> properties.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -52,10 +77,20 @@
         <Parameter Name="regionText" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="regionMode">To be added.</param>
-        <param name="regionText">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="regionMode">One of the <see cref="T:System.CodeDom.CodeRegionMode" /> values.</param>
+        <param name="regionText">The name for the region.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeRegionDirective" /> class, specifying its mode and name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows the use of the <xref:System.CodeDom.CodeRegionDirective.%23ctor%28System.CodeDom.CodeRegionMode%2CSystem.String%29> constructor. This code example is part of a larger example provided for the <xref:System.CodeDom.CodeRegionDirective> class.  
+  
+ [!code-csharp[System.CodeDom.CodeDirectives#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.CodeDom.CodeDirectives/CS/codedirective.cs#9)]
+ [!code-vb[System.CodeDom.CodeDirectives#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.CodeDom.CodeDirectives/VB/codedirective.vb#9)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RegionMode">
@@ -71,9 +106,19 @@
         <ReturnType>System.CodeDom.CodeRegionMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the mode for the region directive.</summary>
+        <value>One of the <see cref="T:System.CodeDom.CodeRegionMode" /> values. The default is <see cref="F:System.CodeDom.CodeRegionMode.None" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows the use of the <xref:System.CodeDom.CodeRegionDirective.RegionMode%2A> property. This example is part of a larger example provided for the <xref:System.CodeDom.CodeRegionDirective> class.  
+  
+ [!code-csharp[System.CodeDom.CodeDirectives#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.CodeDom.CodeDirectives/CS/codedirective.cs#11)]
+ [!code-vb[System.CodeDom.CodeDirectives#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.CodeDom.CodeDirectives/VB/codedirective.vb#11)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RegionText">
@@ -89,9 +134,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the region.</summary>
+        <value>The name of the region.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows the use of the <xref:System.CodeDom.CodeRegionDirective.RegionText%2A> property. This example is part of a larger example provided for the <xref:System.CodeDom.CodeRegionDirective> class.  
+  
+ [!code-csharp[System.CodeDom.CodeDirectives#12](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.CodeDom.CodeDirectives/CS/codedirective.cs#12)]
+ [!code-vb[System.CodeDom.CodeDirectives#12](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.CodeDom.CodeDirectives/VB/codedirective.vb#12)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

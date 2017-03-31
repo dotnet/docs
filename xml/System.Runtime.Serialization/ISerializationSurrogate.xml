@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Implements a serialization surrogate selector that allows one object to perform serialization and deserialization of another.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -50,11 +50,23 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="obj">The object to serialize.</param>
+        <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> to populate with data.</param>
+        <param name="context">The destination (see <see cref="T:System.Runtime.Serialization.StreamingContext" />) for this serialization.</param>
+        <summary>Populates the provided <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with the data needed to serialize the object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Extracts data from object `obj` and stores it in the <xref:System.Runtime.Serialization.SerializationInfo>`info` parameter.  
+  
+ Having located the surrogate, this method stores information on the object `obj` in the <xref:System.Runtime.Serialization.SerializationInfo>`info` parameter. This information describes its view of that object, including the object's fields, properties, and current values. The <xref:System.Runtime.Serialization.SerializationInfo> might correspond to the actual object, or it can be a synthesized view of the surrogate.  
+  
+ This method is protected by a <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> for the <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> specified.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetObjectData">
@@ -86,13 +98,23 @@
         <Parameter Name="selector" Type="System.Runtime.Serialization.ISurrogateSelector" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <param name="selector">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="obj">The object to populate.</param>
+        <param name="info">The information to populate the object.</param>
+        <param name="context">The source from which the object is deserialized.</param>
+        <param name="selector">The surrogate selector where the search for a compatible surrogate begins.</param>
+        <summary>Populates the object using the information in the <see cref="T:System.Runtime.Serialization.SerializationInfo" />.</summary>
+        <returns>The populated deserialized object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Serialization.ISerializationSurrogate.SetObjectData%2A> method is called during deserialization. With this method, you can take the empty <xref:System.Object>`obj` that has already been created, and enter <xref:System.Runtime.Serialization.SerializationInfo>`info` data into that object. Constructors are not invoked during deserialization of information and reconstruction of the object.  
+  
+ This method is protected by a <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> for the <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> specified.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
       </Docs>
     </Member>
   </Members>

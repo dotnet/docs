@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Models the list of possible state changes.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Statements.Transition" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +51,8 @@
         <ReturnType>System.Activities.Activity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the activity performed during a transition.</summary>
+        <value>Returns <see cref="T:System.Activities.Activity" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,9 +77,16 @@
         <ReturnType>System.Activities.Activity&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the condition the transition is testing when the trigger activity is activated.</summary>
+        <value>A Boolean value expression that represents the condition.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the expression is evaluated as false, the transition is not performed.  The state machine remains in the same state.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayName">
@@ -95,8 +102,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets an optional friendly name that is used for debugging, validation, exception handling, and tracking.</summary>
+        <value>Returns <see cref="T:System.String" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,8 +128,8 @@
         <ReturnType>System.Activities.Statements.State</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the next state in the state machine to execute after the transition is completed.</summary>
+        <value>Returns <see cref="T:System.Activities.Statements.State" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,9 +151,16 @@
         <ReturnType>System.Activities.Activity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the activity whose completion activates this transition.</summary>
+        <value>Returns <see cref="T:System.Activities.Activity" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The trigger value can be null. If trigger is null, the transition is evaluated as soon as the entry action of the state is complete.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

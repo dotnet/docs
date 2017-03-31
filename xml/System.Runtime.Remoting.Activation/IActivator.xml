@@ -14,8 +14,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides the basic functionality for a remoting activator class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Activators control and participate in the activation of marshal by reference objects. Some activators create contexts, whereas others create actual objects.  
+  
+ Activators use the <xref:System.Runtime.Remoting.Activation.IActivator.NextActivator%2A> property to form a hierarchy that must be observed.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Activate">
@@ -35,10 +44,12 @@
         <Parameter Name="msg" Type="System.Runtime.Remoting.Activation.IConstructionCallMessage" />
       </Parameters>
       <Docs>
-        <param name="msg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="msg">The information about the object that is needed to activate it, stored in a <see cref="T:System.Runtime.Remoting.Activation.IConstructionCallMessage" />.</param>
+        <summary>Creates an instance of the object that is specified in the provided <see cref="T:System.Runtime.Remoting.Activation.IConstructionCallMessage" />.</summary>
+        <returns>Status of the object activation contained in a <see cref="T:System.Runtime.Remoting.Activation.IConstructionReturnMessage" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">For operating with infrastructure code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
       </Docs>
     </Member>
     <Member MemberName="Level">
@@ -55,9 +66,17 @@
         <ReturnType>System.Runtime.Remoting.Activation.ActivatorLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Runtime.Remoting.Activation.ActivatorLevel" /> where this activator is active.</summary>
+        <value>The <see cref="T:System.Runtime.Remoting.Activation.ActivatorLevel" /> where this activator is active.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Remoting.Activation.IActivator.Level%2A> is used to locate the right position in the chain when adding an activator.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">For operating with infrastructure code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
       </Docs>
     </Member>
     <Member MemberName="NextActivator">
@@ -74,9 +93,11 @@
         <ReturnType>System.Runtime.Remoting.Activation.IActivator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the next activator in the chain.</summary>
+        <value>The next activator in the chain.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">For operating with infrastructure code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
       </Docs>
     </Member>
   </Members>

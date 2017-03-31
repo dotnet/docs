@@ -1,59 +1,77 @@
 ---
 uid: System.Net.Sockets.SendPacketsElement
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.SendPacketsElement.Count
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.SendPacketsElement.#ctor(System.Byte[],System.Int32,System.Int32)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.SendPacketsElement.FilePath
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.SendPacketsElement.Offset
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.SendPacketsElement.#ctor(System.String,System.Int32,System.Int32)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.SendPacketsElement.EndOfPacket
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.SendPacketsElement.#ctor(System.Byte[])
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Sockets.SendPacketsElement.#ctor
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.SendPacketsElement.#ctor(System.Byte[],System.Int32,System.Int32,System.Boolean)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.SendPacketsElement.#ctor(System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.SendPacketsElement.#ctor(System.String,System.Int32,System.Int32,System.Boolean)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.SendPacketsElement.Buffer
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

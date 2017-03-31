@@ -1,19 +1,23 @@
 ---
 uid: System.Web.Instrumentation.PageInstrumentationService
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Instrumentation.PageInstrumentationService.IsEnabled
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Instrumentation.PageInstrumentationService.ExecutionListeners
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Instrumentation.PageInstrumentationService.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

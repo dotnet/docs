@@ -1,1 +1,0 @@
-            Dim mv As MessageVersion = be.GetProperty(Of MessageVersion)(context)

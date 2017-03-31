@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.HtmlControls.HtmlAudio
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlAudio.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlAudio.RenderAttributes(System.Web.UI.HtmlTextWriter)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlAudio.Src
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

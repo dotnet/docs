@@ -1,39 +1,53 @@
 ---
 uid: System.IdentityModel.RsaEncryptionCookieTransform
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.RsaEncryptionCookieTransform.DecryptionKeys
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.RsaEncryptionCookieTransform.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate2)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.RsaEncryptionCookieTransform.#ctor
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.RsaEncryptionCookieTransform.Decode(System.Byte[])
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.RsaEncryptionCookieTransform.Encode(System.Byte[])
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.RsaEncryptionCookieTransform.#ctor(System.Security.Cryptography.RSA)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.RsaEncryptionCookieTransform.EncryptionKey
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.RsaEncryptionCookieTransform.HashName
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

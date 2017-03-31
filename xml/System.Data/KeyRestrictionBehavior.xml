@@ -15,7 +15,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Identifies a list of connection string parameters identified by the <see langword="KeyRestrictions" /> property that are either allowed or not allowed.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,7 +37,7 @@
         <ReturnType>System.Data.KeyRestrictionBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Default. Identifies the only additional connection string parameters that are allowed.</summary>
       </Docs>
     </Member>
     <Member MemberName="PreventUsage">
@@ -58,7 +58,7 @@
         <ReturnType>System.Data.KeyRestrictionBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies additional connection string parameters that are not allowed.</summary>
       </Docs>
     </Member>
   </Members>

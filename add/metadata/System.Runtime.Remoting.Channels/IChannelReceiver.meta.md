@@ -1,24 +1,24 @@
 ---
 uid: System.Runtime.Remoting.Channels.IChannelReceiver
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Channels.IChannelReceiver.StartListening(System.Object)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Channels.IChannelReceiver.GetUrlsForUri(System.String)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Channels.IChannelReceiver.ChannelData
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Channels.IChannelReceiver.StopListening(System.Object)
-internalonly: False
+manager: "ghogen"
 ---

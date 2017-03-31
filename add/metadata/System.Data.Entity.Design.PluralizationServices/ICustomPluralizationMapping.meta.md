@@ -1,9 +1,13 @@
 ---
 uid: System.Data.Entity.Design.PluralizationServices.ICustomPluralizationMapping
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Entity.Design.PluralizationServices.ICustomPluralizationMapping.AddWord(System.String,System.String)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

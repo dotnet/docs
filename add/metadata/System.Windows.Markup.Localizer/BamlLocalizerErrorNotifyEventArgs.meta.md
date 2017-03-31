@@ -1,14 +1,14 @@
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizerErrorNotifyEventArgs
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizerErrorNotifyEventArgs.Key
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizerErrorNotifyEventArgs.Error
-internalonly: False
+manager: "martinek"
 ---

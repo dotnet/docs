@@ -16,8 +16,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Describes the Web services interoperability (WSI) specification to which a Web service claims to conform.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The WS-I organization publishes non-proprietary Web services specifications to promote the interoperability of Web services across platforms. This enumeration is used by the <xref:System.Web.Services.WebServiceBindingAttribute.ConformsTo%2A> property of the <xref:System.Web.Services.WebServiceBindingAttribute> attribute to indicate the WSI specification to which the Web service claims to conform.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="BasicProfile1_1">
@@ -34,7 +41,7 @@
         <ReturnType>System.Web.Services.WsiProfiles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The web service claims to conform to the WSI Basic Profile version 1.1.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -51,7 +58,7 @@
         <ReturnType>System.Web.Services.WsiProfiles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The web service makes no conformance claims.</summary>
       </Docs>
     </Member>
   </Members>

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides event data for <see cref="T:System.Windows.Threading.Dispatcher" /> related events.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.Windows.Threading.Dispatcher</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="T:System.Windows.Threading.Dispatcher" /> associated with this event.</summary>
+        <value>The dispatcher.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

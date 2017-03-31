@@ -1,9 +1,11 @@
 ---
 uid: System.Speech.Synthesis.VoiceChangeEventArgs
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.VoiceChangeEventArgs.Voice
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

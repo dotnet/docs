@@ -1,9 +1,11 @@
 ---
 uid: Microsoft.VisualC.StlClr.Generic.IInputIterator`1
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.StlClr.Generic.IInputIterator`1.equal_to(Microsoft.VisualC.StlClr.Generic.IInputIterator{`0})
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---

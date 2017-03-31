@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Forms.ContentsResizedEventHandler
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

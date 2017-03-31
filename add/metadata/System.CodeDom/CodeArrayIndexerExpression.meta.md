@@ -1,24 +1,41 @@
 ---
 uid: System.CodeDom.CodeArrayIndexerExpression
-internalonly: False
----
-
----
-uid: System.CodeDom.CodeArrayIndexerExpression.#ctor(System.CodeDom.CodeExpression,System.CodeDom.CodeExpression[])
-internalonly: False
----
-
----
-uid: System.CodeDom.CodeArrayIndexerExpression.Indices
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.CodeArrayIndexerExpression.#ctor
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.CodeArrayIndexerExpression.#ctor(System.CodeDom.CodeExpression,System.CodeDom.CodeExpression[])
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.CodeArrayIndexerExpression.Indices
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.CodeArrayIndexerExpression.#ctor
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.CodeArrayIndexerExpression.TargetObject
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

@@ -1,1 +1,0 @@
-			Dim settings As New LocalClientSecuritySettings()

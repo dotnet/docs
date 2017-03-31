@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides unique identification for events whose handlers are stored into an internal hashtable.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  This type exists specifically so that compilers, build rules, or other enforcement mechanisms can verify that all event keys of this type are created exclusively by private static fields on the event-declaring class. Failure to make the event key private raises the possibility of event spoofing.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +35,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.EventPrivateKey" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

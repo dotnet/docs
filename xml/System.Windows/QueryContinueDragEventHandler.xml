@@ -17,9 +17,34 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">To be added.</param>
-    <param name="e">To be added.</param>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <param name="sender">The object where the event handler is attached.</param>
+    <param name="e">The event data.</param>
+    <summary>Represents a method that will handle the routed events that enables a drag-and-drop operation to be canceled by the drag source, for example <see cref="E:System.Windows.UIElement.QueryContinueDrag" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This delegate is used with the following attached events:  
+  
+-   <xref:System.Windows.DragDrop.QueryContinueDrag?displayProperty=fullName>  
+  
+-   <xref:System.Windows.DragDrop.PreviewQueryContinueDrag?displayProperty=fullName>  
+  
+ This delegate is also used with the following routed events on base elements. These routed events forward the previously listed attached events to make them more accessible to the general element model in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)].  
+  
+-   <xref:System.Windows.UIElement.QueryContinueDrag?displayProperty=fullName>  
+  
+-   <xref:System.Windows.UIElement.PreviewQueryContinueDrag?displayProperty=fullName>  
+  
+-   <xref:System.Windows.ContentElement.QueryContinueDrag?displayProperty=fullName>  
+  
+-   <xref:System.Windows.ContentElement.PreviewQueryContinueDrag?displayProperty=fullName>  
+  
+ The attached events and the base element routed events share their event data, and the bubbling and tunneling versions of the routed events also share event data. This can affect the handled characteristics of the event as it travels the event route. For details, see [Input Overview](../Topic/Input%20Overview.md).  
+  
+ The <xref:System.Windows.DragDrop.QueryContinueDrag?displayProperty=fullName> attached event occurs during a drag-and-drop operation and allows the drag source to determine whether the drag-and-drop operation should be canceled.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

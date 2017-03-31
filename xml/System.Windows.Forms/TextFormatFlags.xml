@@ -15,8 +15,23 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the display and layout information for text strings.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.TextFormatFlags> enumeration is used by the <xref:System.Windows.Forms.TextRenderer> when drawing and measuring text. The <xref:System.Windows.Forms.TextRenderer> does not support adding tab stops to drawn text, although you can expand existing tab stops using the ExpandTabs flag.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.TextFormatFlags> enumeration. To run this example, paste the following code into a Windows Form. Call `RenderText6` from the form's <xref:System.Windows.Forms.Control.Paint> event handler, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-csharp[System.Windows.Forms.TextRendererExamples#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TextRendererExamples/CS/Form1.cs#7)]
+ [!code-vb[System.Windows.Forms.TextRendererExamples#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TextRendererExamples/VB/Form1.vb#7)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Bottom">
@@ -32,7 +47,7 @@
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Aligns the text on the bottom of the bounding rectangle. Applied only when the text is a single line.</summary>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -48,7 +63,7 @@
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Applies the default formatting, which is left-aligned.</summary>
       </Docs>
     </Member>
     <Member MemberName="EndEllipsis">
@@ -64,7 +79,7 @@
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes the end of trimmed lines, and replaces them with an ellipsis.</summary>
       </Docs>
     </Member>
     <Member MemberName="ExpandTabs">
@@ -80,7 +95,7 @@
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Expands tab characters. The default number of characters per tab is eight. The <see cref="F:System.Windows.Forms.TextFormatFlags.WordEllipsis" />, <see cref="F:System.Windows.Forms.TextFormatFlags.PathEllipsis" />, and <see cref="F:System.Windows.Forms.TextFormatFlags.EndEllipsis" /> values cannot be used with <see cref="F:System.Windows.Forms.TextFormatFlags.ExpandTabs" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="ExternalLeading">
@@ -96,7 +111,7 @@
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Includes the font external leading in line height. Typically, external leading is not included in the height of a line of text.</summary>
       </Docs>
     </Member>
     <Member MemberName="GlyphOverhangPadding">
@@ -112,7 +127,7 @@
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Adds padding to the bounding rectangle to accommodate overhanging glyphs.</summary>
       </Docs>
     </Member>
     <Member MemberName="HidePrefix">
@@ -128,7 +143,17 @@
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Applies to Windows 2000 and Windows XP only:</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Ignores the ampersand (&) prefix character in the text. The letter that follows will not be underlined, but other mnemonic-prefix characters are still processed. For example, an input string of "A&bc&&d" with HidePrefix applied would result in output of "Abc&d".  
+  
+ Compare with NoPrefix and PrefixOnly.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalCenter">
@@ -144,7 +169,7 @@
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Centers the text horizontally within the bounding rectangle.</summary>
       </Docs>
     </Member>
     <Member MemberName="Internal">
@@ -160,7 +185,7 @@
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Uses the system font to calculate text metrics.</summary>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -176,7 +201,7 @@
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Aligns the text on the left side of the clipping area.</summary>
       </Docs>
     </Member>
     <Member MemberName="LeftAndRightPadding">
@@ -192,7 +217,7 @@
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Adds padding to both sides of the bounding rectangle.</summary>
       </Docs>
     </Member>
     <Member MemberName="ModifyString">
@@ -208,7 +233,7 @@
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Has no effect on the drawn text.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoClipping">
@@ -224,7 +249,7 @@
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Allows the overhanging parts of glyphs and unwrapped text reaching outside the formatting rectangle to show.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoFullWidthCharacterBreak">
@@ -240,7 +265,15 @@
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Applies to Windows 98, Windows Me, Windows 2000, or Windows XP only:</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Prevents a line break at a double-wide character string, so that the line-breaking rule is equivalent to single-wide character strings. For example, NoFullWidthCharacterBreak increases the readability of icon labels in Korean windows. This value has no effect unless WordBreak is also specified.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NoPadding">
@@ -256,7 +289,7 @@
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Does not add padding to the bounding rectangle.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoPrefix">
@@ -272,7 +305,15 @@
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Turns off processing of prefix characters. Typically, the ampersand (&amp;) mnemonic-prefix character is interpreted as a directive to underscore the character that follows, and the double-ampersand (&amp;&amp;) mnemonic-prefix characters as a directive to print a single ampersand. By specifying <see cref="F:System.Windows.Forms.TextFormatFlags.NoPrefix" />, this processing is turned off. For example, an input string of "A&amp;bc&amp;&amp;d" with <see cref="F:System.Windows.Forms.TextFormatFlags.NoPrefix" /> applied would result in output of "A&amp;bc&amp;&amp;d".</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Compare with HidePrefix and PrefixOnly.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PathEllipsis">
@@ -288,7 +329,7 @@
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes the center of trimmed lines and replaces it with an ellipsis.</summary>
       </Docs>
     </Member>
     <Member MemberName="PrefixOnly">
@@ -304,7 +345,17 @@
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Applies to Windows 2000 or Windows XP only:</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Draws only an underline at the position of the character following the ampersand (&) prefix character. Does not draw any other characters in the string. For example, an input string of "A&bc&&d" would result in output of " _   ".  
+  
+ Compare with HidePrefix and NoPrefix.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PreserveGraphicsClipping">
@@ -320,7 +371,7 @@
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Preserves the clipping specified by a <see cref="T:System.Drawing.Graphics" /> object. Applies only to methods receiving an <see cref="T:System.Drawing.IDeviceContext" /> that is a <see cref="T:System.Drawing.Graphics" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="PreserveGraphicsTranslateTransform">
@@ -336,7 +387,7 @@
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Preserves the transformation specified by a <see cref="T:System.Drawing.Graphics" />. Applies only to methods receiving an <see cref="T:System.Drawing.IDeviceContext" /> that is a <see cref="T:System.Drawing.Graphics" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -352,7 +403,7 @@
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Aligns the text on the right side of the clipping area.</summary>
       </Docs>
     </Member>
     <Member MemberName="RightToLeft">
@@ -368,7 +419,7 @@
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Displays the text from right to left.</summary>
       </Docs>
     </Member>
     <Member MemberName="SingleLine">
@@ -384,7 +435,7 @@
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Displays the text in a single line.</summary>
       </Docs>
     </Member>
     <Member MemberName="TextBoxControl">
@@ -400,7 +451,7 @@
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the text should be formatted for display on a <see cref="T:System.Windows.Forms.TextBox" /> control.</summary>
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -416,7 +467,7 @@
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Aligns the text on the top of the bounding rectangle.</summary>
       </Docs>
     </Member>
     <Member MemberName="VerticalCenter">
@@ -432,7 +483,7 @@
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Centers the text vertically, within the bounding rectangle.</summary>
       </Docs>
     </Member>
     <Member MemberName="WordBreak">
@@ -448,7 +499,7 @@
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Breaks the text at the end of a word.</summary>
       </Docs>
     </Member>
     <Member MemberName="WordEllipsis">
@@ -464,7 +515,7 @@
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Trims the line to the nearest word and an ellipsis is placed at the end of a trimmed line.</summary>
       </Docs>
     </Member>
   </Members>

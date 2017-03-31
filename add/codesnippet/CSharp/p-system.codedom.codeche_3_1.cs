@@ -1,1 +1,0 @@
-            pragma1.FileName = "c:\\temp\\test\\OuterLinePragma.txt";

@@ -1,19 +1,19 @@
 ---
 uid: Microsoft.JScript.ITokenColorInfo
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.ITokenColorInfo.StartPosition
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.ITokenColorInfo.Color
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.ITokenColorInfo.EndPosition
-internalonly: False
+ms.author: "mikejo"
 ---

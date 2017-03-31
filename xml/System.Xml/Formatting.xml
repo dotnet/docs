@@ -15,7 +15,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies formatting options for the <see cref="T:System.Xml.XmlTextWriter" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,7 +37,15 @@
         <ReturnType>System.Xml.Formatting</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Causes child elements to be indented according to the <see cref="P:System.Xml.XmlTextWriter.Indentation" /> and <see cref="P:System.Xml.XmlTextWriter.IndentChar" /> settings.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This option indents element content only; mixed content is not affected. For the XML 1.0 definitions of these terms, see the World Wide Web Consortium (W3C) documentation (www.w3.org/TR/1998/REC-xml-19980210#sec-element-content and www.w3.org/TR/1998/REC-xml-19980210#sec-mixed-content).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -58,7 +66,7 @@
         <ReturnType>System.Xml.Formatting</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No special formatting is applied. This is the default.</summary>
       </Docs>
     </Member>
   </Members>

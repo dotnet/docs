@@ -1,59 +1,71 @@
 ---
 uid: System.Web.UI.Design.DesignerDataSourceView
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DesignerDataSourceView.CanPage
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DesignerDataSourceView.Name
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DesignerDataSourceView.Schema
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DesignerDataSourceView.DataSourceDesigner
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DesignerDataSourceView.CanInsert
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DesignerDataSourceView.CanRetrieveTotalRowCount
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DesignerDataSourceView.GetDesignTimeData(System.Int32,System.Boolean@)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DesignerDataSourceView.CanUpdate
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DesignerDataSourceView.CanSort
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DesignerDataSourceView.#ctor(System.Web.UI.Design.IDataSourceDesigner,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DesignerDataSourceView.CanDelete
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

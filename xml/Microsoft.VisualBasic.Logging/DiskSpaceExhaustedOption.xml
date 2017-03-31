@@ -10,8 +10,17 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Determines what to do when the <see cref="T:Microsoft.VisualBasic.Logging.FileLogTraceListener" /> object attempts to write to a log and there is less free disk space available than specified by the <see cref="P:Microsoft.VisualBasic.Logging.FileLogTraceListener.ReserveDiskSpace" /> property.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.DiskSpaceExhaustedBehavior%2A> property is set to DiscardMessages, the log messages are by default discarded if there is not enough reserved disk space. This prevents simple applications from failing if the disk gets too full.  
+  
+ For a more robust application, set the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.DiskSpaceExhaustedBehavior%2A> property to ThrowException, and add `Try...Catch` blocks around all code that writes to the log.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="DiscardMessages">
@@ -27,7 +36,7 @@
         <ReturnType>Microsoft.VisualBasic.Logging.DiskSpaceExhaustedOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Discard log messages.</summary>
       </Docs>
     </Member>
     <Member MemberName="ThrowException">
@@ -43,7 +52,7 @@
         <ReturnType>Microsoft.VisualBasic.Logging.DiskSpaceExhaustedOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Throw an exception.</summary>
       </Docs>
     </Member>
   </Members>

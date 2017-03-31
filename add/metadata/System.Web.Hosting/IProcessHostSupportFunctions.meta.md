@@ -1,34 +1,41 @@
 ---
 uid: System.Web.Hosting.IProcessHostSupportFunctions
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.IProcessHostSupportFunctions.GetNativeConfigurationSystem
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.IProcessHostSupportFunctions.GetRootWebConfigFilename
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.IProcessHostSupportFunctions.GetApplicationProperties(System.String,System.String@,System.String@,System.String@,System.String@)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.IProcessHostSupportFunctions.GetConfigToken(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.IProcessHostSupportFunctions.GetAppHostConfigFilename
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.IProcessHostSupportFunctions.MapPath(System.String,System.String,System.String@)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

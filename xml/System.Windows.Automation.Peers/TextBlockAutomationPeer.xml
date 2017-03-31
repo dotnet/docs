@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Exposes <see cref="T:System.Windows.Controls.TextBlock" /> types to [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)].</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <Parameter Name="owner" Type="System.Windows.Controls.TextBlock" />
       </Parameters>
       <Docs>
-        <param name="owner">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="owner">The <see cref="T:System.Windows.Controls.TextBlock" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TextBlockAutomationPeer" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.TextBlockAutomationPeer" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,8 +47,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the control type for the <see cref="T:System.Windows.Controls.TextBlock" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TextBlockAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" />.</summary>
+        <returns>The <see cref="F:System.Windows.Automation.Peers.AutomationControlType.Text" /> enumeration value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,8 +66,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the collection of child elements of the <see cref="T:System.Windows.Controls.TextBlock" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TextBlockAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetChildren" />.</summary>
+        <returns>A collection of child elements, or <see langword="null" /> if the <see cref="T:System.Windows.Controls.TextBlock" /> is empty.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,8 +85,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the name of the <see cref="T:System.Windows.Controls.TextBlock" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TextBlockAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" />.</summary>
+        <returns>A string that contains the word "TextBlock".</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,8 +104,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets or sets a value that indicates whether the <see cref="T:System.Windows.Controls.TextBlock" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TextBlockAutomationPeer" /> is something that the end user would understand as being interactive or as contributing to the logical structure of the control in the [!INCLUDE[TLA2#tla_gui](~/includes/tla2sharptla-gui-md.md)]. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.IsControlElement" />.</summary>
+        <returns>
+          <see langword="false" /> if the element is part of a template; otherwise <see langword="true" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

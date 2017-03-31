@@ -1,44 +1,69 @@
 ---
 uid: System.Security.Permissions.GacIdentityPermission
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.GacIdentityPermission.FromXml(System.Security.SecurityElement)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.GacIdentityPermission.Copy
-internalonly: False
----
-
----
-uid: System.Security.Permissions.GacIdentityPermission.#ctor(System.Security.Permissions.PermissionState)
-internalonly: False
----
-
----
-uid: System.Security.Permissions.GacIdentityPermission.ToXml
-internalonly: False
----
-
----
-uid: System.Security.Permissions.GacIdentityPermission.Union(System.Security.IPermission)
-internalonly: False
----
-
----
-uid: System.Security.Permissions.GacIdentityPermission.Intersect(System.Security.IPermission)
-internalonly: False
----
-
----
-uid: System.Security.Permissions.GacIdentityPermission.IsSubsetOf(System.Security.IPermission)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.GacIdentityPermission.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Permissions.GacIdentityPermission.#ctor(System.Security.Permissions.PermissionState)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Permissions.GacIdentityPermission.ToXml
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Permissions.GacIdentityPermission.Union(System.Security.IPermission)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Permissions.GacIdentityPermission.Intersect(System.Security.IPermission)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Permissions.GacIdentityPermission.IsSubsetOf(System.Security.IPermission)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Permissions.GacIdentityPermission.#ctor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

@@ -15,8 +15,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the granularity at which font glyph subsets are saved in an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When font glyphs for text in an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document are saved in the document package, the document text displays identically on any computer or printer.  If glyphs are not saved in document and the required font is not installed on the local computer or printer, the rendering device must substitute glyphs from another font.  Substituting glyphs can change the appearance of the text when a different font is used.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CommitEntireSequence">
@@ -32,7 +39,7 @@
         <ReturnType>System.Windows.Xps.Serialization.FontSubsetterCommitPolicies</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Store all glyphs that are used in the text by each document sequence.</summary>
       </Docs>
     </Member>
     <Member MemberName="CommitPerDocument">
@@ -48,7 +55,7 @@
         <ReturnType>System.Windows.Xps.Serialization.FontSubsetterCommitPolicies</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Store all glyphs that are used in the text by each document.</summary>
       </Docs>
     </Member>
     <Member MemberName="CommitPerPage">
@@ -64,7 +71,7 @@
         <ReturnType>System.Windows.Xps.Serialization.FontSubsetterCommitPolicies</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Store all glyphs that are used in the text by each page.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -80,7 +87,7 @@
         <ReturnType>System.Windows.Xps.Serialization.FontSubsetterCommitPolicies</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No subsetting.  Store all glyphs for all fonts used in the document.</summary>
       </Docs>
     </Member>
   </Members>

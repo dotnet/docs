@@ -1,14 +1,18 @@
 ---
 uid: System.Windows.Controls.ItemContainerTemplate
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.ItemContainerTemplate.ItemContainerTemplateKey
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.ItemContainerTemplate.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

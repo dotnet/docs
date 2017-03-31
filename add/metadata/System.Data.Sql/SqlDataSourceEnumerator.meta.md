@@ -1,14 +1,20 @@
 ---
 uid: System.Data.Sql.SqlDataSourceEnumerator
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Sql.SqlDataSourceEnumerator.Instance
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Sql.SqlDataSourceEnumerator.GetDataSources
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

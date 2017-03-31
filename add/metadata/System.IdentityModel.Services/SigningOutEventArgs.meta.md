@@ -1,24 +1,29 @@
 ---
 uid: System.IdentityModel.Services.SigningOutEventArgs
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.SigningOutEventArgs.#ctor(System.Boolean)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.SigningOutEventArgs.IPInitiated
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.SigningOutEventArgs.IsIPInitiated
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.SigningOutEventArgs.RPInitiated
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

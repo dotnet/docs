@@ -1,9 +1,11 @@
 ---
 uid: System.Web.UI.DataVisualization.Charting.MapAreasCollection
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.MapAreasCollection.#ctor
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---

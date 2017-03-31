@@ -1,19 +1,23 @@
 ---
 uid: Microsoft.Build.Framework.XamlTypes.NameValuePair
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.XamlTypes.NameValuePair.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.XamlTypes.NameValuePair.Name
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.XamlTypes.NameValuePair.Value
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

@@ -1,9 +1,13 @@
 ---
 uid: System.Reflection.IntrospectionExtensions
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.IntrospectionExtensions.GetTypeInfo(System.Type)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

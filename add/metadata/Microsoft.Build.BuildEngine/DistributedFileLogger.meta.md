@@ -1,44 +1,59 @@
 ---
 uid: Microsoft.Build.BuildEngine.DistributedFileLogger
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.BuildEngine.DistributedFileLogger.Shutdown
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.BuildEngine.DistributedFileLogger.BuildEventRedirector
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.BuildEngine.DistributedFileLogger.NodeId
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.BuildEngine.DistributedFileLogger.Verbosity
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
+---
+
+---
+uid: Microsoft.Build.BuildEngine.DistributedFileLogger.Initialize
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.BuildEngine.DistributedFileLogger.Parameters
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.BuildEngine.DistributedFileLogger.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.BuildEngine.DistributedFileLogger.Initialize(Microsoft.Build.Framework.IEventSource)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.BuildEngine.DistributedFileLogger.Initialize(Microsoft.Build.Framework.IEventSource,System.Int32)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

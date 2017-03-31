@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.DsmlInvalidDocumentException" /> class is an exception that occurs when a DSML Request or Response document is not well-formed XML or cannot be validated with DSMLv2 schema.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,8 +26,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlInvalidDocumentException.#ctor" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.DsmlInvalidDocumentException" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default text message displayed to the client is "The DSML document could not be parsed."  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -43,8 +50,8 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The message displayed to the client when the exception is thrown.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlInvalidDocumentException.#ctor(System.String)" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.DsmlInvalidDocumentException" /> class using the specified parameter.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,9 +69,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">The serialized object data about the exception thrown.</param>
+        <param name="context">The contextual data about the source or destination.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlInvalidDocumentException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.DsmlInvalidDocumentException" /> class using the specified serialization data and streaming contextual data.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,9 +89,9 @@
         <Parameter Name="inner" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="inner">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The message displayed to the client when the exception is thrown.</param>
+        <param name="inner">The <see cref="P:System.Exception.InnerException" />, if any, that threw the exception.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlInvalidDocumentException.#ctor(System.String,System.Exception)" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.DsmlInvalidDocumentException" /> class using the specified parameters.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

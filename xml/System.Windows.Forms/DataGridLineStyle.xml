@@ -10,8 +10,24 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the style of gridlines in a <see cref="T:System.Windows.Forms.DataGrid" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the members of this enumeration to set the value of the <xref:System.Windows.Forms.DataGrid.GridLineStyle%2A> property of the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> class. The default is `Solid`.  
+  
+   
+  
+## Examples  
+ The following example sets the <xref:System.Windows.Forms.DataGrid.GridLineStyle%2A> property to `DataGridLineStyle.None`.  
+  
+ [!code-cpp[Classic DataGridLineStyle Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGridLineStyle Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic DataGridLineStyle Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGridLineStyle Example/CS/source.cs#1)]
+ [!code-vb[Classic DataGridLineStyle Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridLineStyle Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="None">
@@ -27,7 +43,7 @@
         <ReturnType>System.Windows.Forms.DataGridLineStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No gridlines between cells.</summary>
       </Docs>
     </Member>
     <Member MemberName="Solid">
@@ -43,7 +59,7 @@
         <ReturnType>System.Windows.Forms.DataGridLineStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Solid gridlines between cells.</summary>
       </Docs>
     </Member>
   </Members>

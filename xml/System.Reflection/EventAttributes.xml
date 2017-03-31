@@ -27,8 +27,26 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the attributes of an event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `EventAttributes` values may be combined using the bitwise OR operation to get the appropriate combination.  
+  
+ These enums are defined in the corhdr.h file and are a combination of bits and enumerators.  
+  
+   
+  
+## Examples  
+ The following example uses reflection emit to create a type with two events. It uses None to specify that the events have no attributes.  
+  
+ [!code-cpp[TypeBuilder_GetEvents1#1](~/samples/snippets/cpp/VS_Snippets_CLR/TypeBuilder_GetEvents1/CPP/typebuilder_getevents1.cpp#1)]
+ [!code-csharp[TypeBuilder_GetEvents1#1](~/samples/snippets/csharp/VS_Snippets_CLR/TypeBuilder_GetEvents1/CS/typebuilder_getevents1.cs#1)]
+ [!code-vb[TypeBuilder_GetEvents1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/TypeBuilder_GetEvents1/VB/typebuilder_getevents1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="None">
@@ -53,7 +71,7 @@
         <ReturnType>System.Reflection.EventAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the event has no attributes.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReservedMask">
@@ -74,7 +92,7 @@
         <ReturnType>System.Reflection.EventAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies a reserved flag for common language runtime use only.</summary>
       </Docs>
     </Member>
     <Member MemberName="RTSpecialName">
@@ -99,7 +117,7 @@
         <ReturnType>System.Reflection.EventAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the common language runtime should check name encoding.</summary>
       </Docs>
     </Member>
     <Member MemberName="SpecialName">
@@ -124,7 +142,7 @@
         <ReturnType>System.Reflection.EventAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the event is special in a way described by the name.</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,59 +1,64 @@
 ---
 uid: System.ServiceModel.Security.MessagePartSpecification
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.MessagePartSpecification.#ctor(System.Boolean)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.MessagePartSpecification.#ctor(System.Boolean,System.Xml.XmlQualifiedName[])
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.MessagePartSpecification.HeaderTypes
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.MessagePartSpecification.MakeReadOnly
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.MessagePartSpecification.Union(System.ServiceModel.Security.MessagePartSpecification)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.MessagePartSpecification.Clear
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.MessagePartSpecification.NoParts
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.MessagePartSpecification.#ctor(System.Xml.XmlQualifiedName[])
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.MessagePartSpecification.IsReadOnly
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.MessagePartSpecification.IsBodyIncluded
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.MessagePartSpecification.#ctor
-internalonly: False
+manager: "ghogen"
+---
+
+---
+uid: System.ServiceModel.Security.MessagePartSpecification.#ctor
+manager: "ghogen"
 ---

@@ -1,34 +1,41 @@
 ---
 uid: System.Web.UI.WebControls.GridViewDeletedEventArgs
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.GridViewDeletedEventArgs.ExceptionHandled
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.GridViewDeletedEventArgs.AffectedRows
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.GridViewDeletedEventArgs.#ctor(System.Int32,System.Exception)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.GridViewDeletedEventArgs.Keys
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.GridViewDeletedEventArgs.Exception
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.GridViewDeletedEventArgs.Values
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

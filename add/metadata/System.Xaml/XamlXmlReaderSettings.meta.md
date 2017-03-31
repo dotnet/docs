@@ -1,34 +1,39 @@
 ---
 uid: System.Xaml.XamlXmlReaderSettings
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlReaderSettings.#ctor
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlReaderSettings.XmlSpacePreserve
-internalonly: False
+manager: "martinek"
+---
+
+---
+uid: System.Xaml.XamlXmlReaderSettings.#ctor
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlReaderSettings.#ctor(System.Xaml.XamlXmlReaderSettings)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlReaderSettings.CloseInput
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlReaderSettings.XmlLang
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlReaderSettings.SkipXmlCompatibilityProcessing
-internalonly: False
+manager: "martinek"
 ---

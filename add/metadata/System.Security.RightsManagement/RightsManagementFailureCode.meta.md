@@ -1,4 +1,6 @@
 ---
 uid: System.Security.RightsManagement.RightsManagementFailureCode
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

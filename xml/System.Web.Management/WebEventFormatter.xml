@@ -11,8 +11,27 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Formats ASP.NET health monitoring event information.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ASP.NET health monitoring allows production and operations staff to manage deployed Web applications. The <xref:System.Web.Management> namespace contains the health-event types responsible for packaging application health-status data and the provider types responsible for processing this data. It also contains supporting types that help during the management of health events.  
+  
+ The <xref:System.Web.Management.WebEventFormatter> is a supporting type used to uniformly format event-related information, which is useful if the event data must be logged and later presented to the user..  
+  
+ Instances of the <xref:System.Web.Management.WebEventFormatter> class are passed as arguments to the formatting methods defined by the health-event types.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Management.WebEventFormatter> to format event information. It is mainly intended to show the correct syntax to use. This code example is part of a larger example provided for the <xref:System.Web.Management.WebBaseEvent> class.  
+  
+ [!code-csharp[System.Web.Management.WebBaseEvent#17](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebBaseEvent/CS/webbaseevent.cs#17)]
+ [!code-vb[System.Web.Management.WebBaseEvent#17](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebBaseEvent/VB/webbaseevent.vb#17)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AppendLine">
@@ -31,9 +50,24 @@
         <Parameter Name="s" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="s">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="s">The string to add to the event information.</param>
+        <summary>Appends the specified string and a carriage return to the event information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Management.WebEventFormatter.AppendLine%2A> method allows you to customize the event information by adding your own event-specific data.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Management.WebEventFormatter.AppendLine%2A> method.  
+  
+ [!code-csharp[System.Web.Management.WebBaseEvent#20](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebBaseEvent/CS/webbaseevent.cs#20)]
+ [!code-vb[System.Web.Management.WebBaseEvent#20](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebBaseEvent/VB/webbaseevent.vb#20)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IndentationLevel">
@@ -49,9 +83,24 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the indentation level.</summary>
+        <value>The number of tabs used for the indentation level.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Management.WebEventFormatter.IndentationLevel%2A> property allows you to control how the event information is indented. The base unit of indentation is defined by the <xref:System.Web.Management.WebEventFormatter.TabSize%2A> property. For each indentation level, you increase the indentation one tab.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Management.WebEventFormatter.IndentationLevel%2A> property.  
+  
+ [!code-csharp[System.Web.Management.WebBaseEvent#18](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebBaseEvent/CS/webbaseevent.cs#18)]
+ [!code-vb[System.Web.Management.WebBaseEvent#18](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebBaseEvent/VB/webbaseevent.vb#18)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TabSize">
@@ -67,9 +116,24 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the tab size.</summary>
+        <value>The number of spaces in a tab.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Management.WebEventFormatter.TabSize%2A> property allows you to control the tab size used when writing event information. The <xref:System.Web.Management.WebEventFormatter.TabSize%2A> determines the number of spaces per unit of indentation, controlled by <xref:System.Web.Management.WebEventFormatter.IndentationLevel%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Management.WebEventFormatter.TabSize%2A> property.  
+  
+ [!code-csharp[System.Web.Management.WebBaseEvent#19](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebBaseEvent/CS/webbaseevent.cs#19)]
+ [!code-vb[System.Web.Management.WebBaseEvent#19](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebBaseEvent/VB/webbaseevent.vb#19)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -86,9 +150,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the event information in string format.</summary>
+        <returns>The event information.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Management.WebEventFormatter> uses an internal <xref:System.Text.StringBuilder> variable to store the event information. This <xref:System.Web.Management.WebEventFormatter.ToString%2A> method allows you to get all the information in a string format.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

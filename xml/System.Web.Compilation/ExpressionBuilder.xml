@@ -11,8 +11,58 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Evaluates expressions during page parsing.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Compilation.ExpressionBuilder> class is the base class for expression builders, such as the <xref:System.Web.Compilation.AppSettingsExpressionBuilder> class, that create code expressions during page parsing.  
+  
+ Expression builders parse declarative expressions and create code to retrieve values bound to a control property. In no-compile scenarios, an expression builder that supports a no-compile feature evaluates the expression during run time.  
+  
+ When the page parser encounters an expression that is delimited with the string `<%$ %>`, it creates an expression builder for the expression based on the prefix in the string. The prefix is the portion of the string that is to the left of the colon (:). For example, when the parser encounters the string `<%$ ConnectionStrings:MessageDB %>`, it creates a <xref:System.Web.Compilation.ConnectionStringsExpressionBuilder> object. Prefixes are associated with expression builders in the Web.config file in the <xref:System.Web.Configuration.CompilationSection.ExpressionBuilders%2A> section.  
+  
+ The right side of the declarative expression is passed to the expression builder for evaluation. Override the <xref:System.Web.Compilation.ExpressionBuilder.GetCodeExpression%2A> method to generate code that will be compiled with the page.  
+  
+ If you want the custom expression builder to be active on pages that are not compiled, you must also override the <xref:System.Web.Compilation.ExpressionBuilder.EvaluateExpression%2A> method to return an object that represents the results of the expression. You also must override the <xref:System.Web.Compilation.ExpressionBuilder.SupportsEvaluate%2A> property to indicate that the custom expression builder does support no-compile pages.  
+  
+ You can define a set of properties and methods for selecting and evaluating an expression that is associated with a control property at design time by implementing an expression editor. The editor is marked on the expression builder through class-level metadata. For more information, see <xref:System.Web.UI.Design.ExpressionEditor>.  
+  
+   
+  
+## Examples  
+ The following code examples demonstrate how to build a custom expression builder by implementing the <xref:System.Web.Compilation.ExpressionBuilder> abstract class. This implementation of <xref:System.Web.Compilation.ExpressionBuilder> returns an evaluated statement that is passed to the expression. To run this example, you must first register the custom expression builder in the Web.config file. The first code example demonstrates how to register the custom expression builder in the Web.config file.  
+  
+```  
+<configuration>  
+    <system.web>  
+       <compilation>  
+          <expressionBuilders>  
+              <add expressionPrefix="MyCustomExpression"  
+               type="MyCustomExpressionBuilder"/>  
+          </expressionBuilders>  
+       </compilation>  
+    </system.web>  
+</configuration>  
+```  
+  
+ The second code example demonstrates how to reference the expression in an .aspx file.  
+  
+```  
+<asp:Label ID="Label1" runat="server"   
+Text="<%$ MyCustomExpression:Hello, world! %>" />  
+```  
+  
+ The third code example demonstrates how to develop a customized expression builder by deriving from <xref:System.Web.Compilation.ExpressionBuilder>. To run this code example, you must place the class in the App_Code folder.  
+  
+ [!code-csharp[System.Web.Compilation.ExpressionBuilder#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Compilation.ExpressionBuilder/CS/MyExpressionBuilder.cs#1)]
+ [!code-vb[System.Web.Compilation.ExpressionBuilder#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Compilation.ExpressionBuilder/VB/MyExpressionBuilder.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>When you inherit from the <see cref="T:System.Web.Compilation.ExpressionBuilder" /> class, you must override the <see cref="M:System.Web.Compilation.ExpressionBuilder.GetCodeExpression(System.Web.UI.BoundPropertyEntry,System.Object,System.Web.Compilation.ExpressionBuilderContext)" /> method.</para>
+    </block>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,8 +76,18 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Compilation.ExpressionBuilder" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because the <xref:System.Web.Compilation.ExpressionBuilder> class is abstract, you cannot create an instance of <xref:System.Web.Compilation.ExpressionBuilder> directly by using the <xref:System.Web.Compilation.ExpressionBuilder.%23ctor%2A> constructor.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When deriving from the <see cref="T:System.Web.Compilation.ExpressionBuilder" /> class, override the <see cref="M:System.Web.Compilation.ExpressionBuilder.#ctor" /> constructor to implement custom initialization actions for your expression builder implementation.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="EvaluateExpression">
@@ -49,13 +109,31 @@
         <Parameter Name="context" Type="System.Web.Compilation.ExpressionBuilderContext" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="entry">To be added.</param>
-        <param name="parsedData">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="target">The object containing the expression.</param>
+        <param name="entry">The object that represents information about the property bound to by the expression.</param>
+        <param name="parsedData">The object containing parsed data as returned by <see cref="M:System.Web.Compilation.ExpressionBuilder.ParseExpression(System.String,System.Type,System.Web.Compilation.ExpressionBuilderContext)" />.</param>
+        <param name="context">Contextual information for the evaluation of the expression.</param>
+        <summary>When overridden in a derived class, returns an object that represents an evaluated expression.</summary>
+        <returns>An object that represents the evaluated expression; otherwise, <see langword="null" /> if the inheritor does not implement <see cref="M:System.Web.Compilation.ExpressionBuilder.EvaluateExpression(System.Object,System.Web.UI.BoundPropertyEntry,System.Object,System.Web.Compilation.ExpressionBuilderContext)" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you want your <xref:System.Web.Compilation.ExpressionBuilder> object to be active on a page that supports the no-compile feature, you can override the <xref:System.Web.Compilation.ExpressionBuilder.EvaluateExpression%2A> method and the <xref:System.Web.Compilation.ExpressionBuilder.SupportsEvaluate%2A> property. The <xref:System.Web.Compilation.ExpressionBuilder.EvaluateExpression%2A> method should return the evaluation of the current expression.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the overridden <xref:System.Web.Compilation.ExpressionBuilder.EvaluateExpression%2A> method to return an evaluated expression.  
+  
+ [!code-csharp[System.Web.Compilation.ExpressionBuilder#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Compilation.ExpressionBuilder/CS/MyExpressionBuilder.cs#3)]
+ [!code-vb[System.Web.Compilation.ExpressionBuilder#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Compilation.ExpressionBuilder/VB/MyExpressionBuilder.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>If you override the <see cref="M:System.Web.Compilation.ExpressionBuilder.EvaluateExpression(System.Object,System.Web.UI.BoundPropertyEntry,System.Object,System.Web.Compilation.ExpressionBuilderContext)" /> method, you must also override the <see cref="P:System.Web.Compilation.ExpressionBuilder.SupportsEvaluate" /> property.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="GetCodeExpression">
@@ -76,12 +154,30 @@
         <Parameter Name="context" Type="System.Web.Compilation.ExpressionBuilderContext" />
       </Parameters>
       <Docs>
-        <param name="entry">To be added.</param>
-        <param name="parsedData">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="entry">The object that represents information about the property bound to by the expression.</param>
+        <param name="parsedData">The object containing parsed data as returned by <see cref="M:System.Web.Compilation.ExpressionBuilder.ParseExpression(System.String,System.Type,System.Web.Compilation.ExpressionBuilderContext)" />.</param>
+        <param name="context">Contextual information for the evaluation of the expression.</param>
+        <summary>When overridden in a derived class, returns code that is used during page execution to obtain the evaluated expression.</summary>
+        <returns>A <see cref="T:System.CodeDom.CodeExpression" /> that is used for property assignment.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Classes that inherit from the <xref:System.Web.Compilation.ExpressionBuilder> class must implement the <xref:System.Web.Compilation.ExpressionBuilder.GetCodeExpression%2A> abstract method.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to return a <xref:System.CodeDom.CodeExpression> object by overriding the <xref:System.Web.Compilation.ExpressionBuilder.GetCodeExpression%2A> method.  
+  
+ [!code-csharp[System.Web.Compilation.ExpressionBuilder#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Compilation.ExpressionBuilder/CS/MyExpressionBuilder.cs#4)]
+ [!code-vb[System.Web.Compilation.ExpressionBuilder#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Compilation.ExpressionBuilder/VB/MyExpressionBuilder.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>If you implement a custom expression builder, you must perform the proper type casting for the control property and return the cast operation in the <see cref="T:System.CodeDom.CodeExpression" /> object.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="ParseExpression">
@@ -102,12 +198,19 @@
         <Parameter Name="context" Type="System.Web.Compilation.ExpressionBuilderContext" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <param name="propertyType">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="expression">The value of the declarative expression.</param>
+        <param name="propertyType">The type of the property bound to by the expression.</param>
+        <param name="context">Contextual information for the evaluation of the expression.</param>
+        <summary>When overridden in a derived class, returns an object that represents the parsed expression.</summary>
+        <returns>An <see cref="T:System.Object" /> containing the parsed representation of the expression; otherwise, <see langword="null" /> if <see cref="M:System.Web.Compilation.ExpressionBuilder.ParseExpression(System.String,System.Type,System.Web.Compilation.ExpressionBuilderContext)" /> is not implemented.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When overridden in a derived class, this method parses the expression and returns it as an object that can be used as the `parsedData` parameter in a <xref:System.Web.Compilation.ExpressionBuilder.GetCodeExpression%2A> or <xref:System.Web.Compilation.ExpressionBuilder.EvaluateExpression%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportsEvaluate">
@@ -123,9 +226,25 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>When overridden in a derived class, returns a value indicating whether the current <see cref="T:System.Web.Compilation.ExpressionBuilder" /> object supports no-compile pages.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Web.Compilation.ExpressionBuilder" /> supports expression evaluation; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value for the <xref:System.Web.Compilation.ExpressionBuilder.SupportsEvaluate%2A> property is `false`. To support no-compile pages, you must override both the <xref:System.Web.Compilation.ExpressionBuilder.EvaluateExpression%2A> method and the <xref:System.Web.Compilation.ExpressionBuilder.SupportsEvaluate%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.Compilation.ExpressionBuilder.SupportsEvaluate%2A> property.  
+  
+ [!code-csharp[System.Web.Compilation.ExpressionBuilder#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Compilation.ExpressionBuilder/CS/MyExpressionBuilder.cs#2)]
+ [!code-vb[System.Web.Compilation.ExpressionBuilder#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Compilation.ExpressionBuilder/VB/MyExpressionBuilder.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

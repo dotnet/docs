@@ -1,34 +1,52 @@
 ---
 uid: System.Windows.Media.Animation.MatrixAnimationBase
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.MatrixAnimationBase.GetCurrentValue(System.Object,System.Object,System.Windows.Media.Animation.AnimationClock)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.MatrixAnimationBase.Clone
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.MatrixAnimationBase.GetCurrentValueCore(System.Windows.Media.Matrix,System.Windows.Media.Matrix,System.Windows.Media.Animation.AnimationClock)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Animation.MatrixAnimationBase.GetCurrentValue(System.Windows.Media.Matrix,System.Windows.Media.Matrix,System.Windows.Media.Animation.AnimationClock)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.MatrixAnimationBase.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.MatrixAnimationBase.TargetPropertyType
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.Animation.MatrixAnimationBase.GetCurrentValue
+ms.author: "kempb"
+manager: "ghogen"
 ---

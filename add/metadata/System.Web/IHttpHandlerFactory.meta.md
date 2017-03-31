@@ -1,14 +1,17 @@
 ---
 uid: System.Web.IHttpHandlerFactory
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.IHttpHandlerFactory.ReleaseHandler(System.Web.IHttpHandler)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.IHttpHandlerFactory.GetHandler(System.Web.HttpContext,System.String,System.String,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

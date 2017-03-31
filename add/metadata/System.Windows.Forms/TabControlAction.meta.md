@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Forms.TabControlAction
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -1,44 +1,65 @@
 ---
 uid: System.IdentityModel.Tokens.UserNameSecurityTokenHandler
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.UserNameSecurityTokenHandler.GetTokenTypeIdentifiers
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.UserNameSecurityTokenHandler.TokenType
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.UserNameSecurityTokenHandler.CanReadToken
 ---
 
 ---
 uid: System.IdentityModel.Tokens.UserNameSecurityTokenHandler.CanWriteToken
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.UserNameSecurityTokenHandler.WriteToken(System.Xml.XmlWriter,System.IdentityModel.Tokens.SecurityToken)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.UserNameSecurityTokenHandler.RetainPassword
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.UserNameSecurityTokenHandler.WriteToken
 ---
 
 ---
 uid: System.IdentityModel.Tokens.UserNameSecurityTokenHandler.ReadToken(System.Xml.XmlReader)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.UserNameSecurityTokenHandler.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.UserNameSecurityTokenHandler.ReadToken
 ---
 
 ---
 uid: System.IdentityModel.Tokens.UserNameSecurityTokenHandler.CanReadToken(System.Xml.XmlReader)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

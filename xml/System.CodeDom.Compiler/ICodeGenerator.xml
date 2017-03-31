@@ -8,8 +8,21 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines an interface for generating code.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  In the .NET Framework versions 1.0 and 1.1, code providers consist of implementations of <xref:System.CodeDom.Compiler.CodeDomProvider>, <xref:System.CodeDom.Compiler.ICodeGenerator>, <xref:System.CodeDom.Compiler.ICodeParser>, and <xref:System.CodeDom.Compiler.ICodeCompiler>. In the [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)], the <xref:System.CodeDom.Compiler.CodeDomProvider.CreateGenerator%2A>, <xref:System.CodeDom.Compiler.CodeDomProvider.CreateParser%2A>, and <xref:System.CodeDom.Compiler.CodeDomProvider.CreateCompiler%2A> methods are obsolete, and the methods of <xref:System.CodeDom.Compiler.ICodeGenerator> and <xref:System.CodeDom.Compiler.ICodeCompiler> are directly available in the <xref:System.CodeDom.Compiler.CodeDomProvider> class. You should override those methods in your code provider implementation and not call the base methods.  
+  
+ Developers of compilers can implement this interface to allow people to dynamically generate code in a particular language. This can be used for a variety of purposes, such as creating code-generating wizards, creating dynamic assemblies with content that can be debugged, and for templated documents with embedded code, such as ASP.NET.  
+  
+ An <xref:System.CodeDom.Compiler.ICodeGenerator> implementation is typically obtained through a call to the <xref:System.CodeDom.Compiler.CodeDomProvider.CreateGenerator%2A> method of <xref:System.CodeDom.Compiler.CodeDomProvider>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CreateEscapedIdentifier">
@@ -28,10 +41,19 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The string to create an escaped identifier for.</param>
+        <summary>Creates an escaped identifier for the specified value.</summary>
+        <returns>The escaped identifier for the value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.CodeDom.Compiler.ICodeGenerator.CreateEscapedIdentifier%2A> tests whether the identifier conflicts with reserved or language keywords, and if so, returns an equivalent name with language-specific escape code formatting. This is referred to an escaped identifier. The escaped identifier will contain the same `value` but will have escape code formatting added to differentiate the identifier from the keyword. Two implementation examples are preceding the `value` with "@" or bracketing the `value` with "[" and "]".  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This member cannot be inherited by partially trusted code.</permission>
       </Docs>
     </Member>
     <Member MemberName="CreateValidIdentifier">
@@ -50,10 +72,19 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The string to generate a valid identifier for.</param>
+        <summary>Creates a valid identifier for the specified value.</summary>
+        <returns>A valid identifier for the specified value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.CodeDom.Compiler.ICodeGenerator.CreateValidIdentifier%2A> tests whether the identifier conflicts with reserved or language keywords, and returns a valid identifier name that does not conflict. The returned identifier will contain the same `value` but, if it conflicts with reserved or language keywords, will have escape code formatting added to differentiate the identifier from the keyword. Typically, if the value needs modification, value is returned preceded by an underscore "_".  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This member cannot be inherited by partially trusted code.</permission>
       </Docs>
     </Member>
     <Member MemberName="GenerateCodeFromCompileUnit">
@@ -74,11 +105,13 @@
         <Parameter Name="o" Type="System.CodeDom.Compiler.CodeGeneratorOptions" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <param name="w">To be added.</param>
-        <param name="o">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">A <see cref="T:System.CodeDom.CodeCompileUnit" /> to generate code for.</param>
+        <param name="w">The <see cref="T:System.IO.TextWriter" /> to output code to.</param>
+        <param name="o">A <see cref="T:System.CodeDom.Compiler.CodeGeneratorOptions" /> that indicates the options to use for generating code.</param>
+        <summary>Generates code for the specified Code Document Object Model (CodeDOM) compilation unit and outputs it to the specified text writer using the specified options.</summary>
         <remarks>To be added.</remarks>
+        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This member cannot be inherited by partially trusted code.</permission>
       </Docs>
     </Member>
     <Member MemberName="GenerateCodeFromExpression">
@@ -99,11 +132,13 @@
         <Parameter Name="o" Type="System.CodeDom.Compiler.CodeGeneratorOptions" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <param name="w">To be added.</param>
-        <param name="o">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the expression to generate code for.</param>
+        <param name="w">The <see cref="T:System.IO.TextWriter" /> to output code to.</param>
+        <param name="o">A <see cref="T:System.CodeDom.Compiler.CodeGeneratorOptions" /> that indicates the options to use for generating code.</param>
+        <summary>Generates code for the specified Code Document Object Model (CodeDOM) expression and outputs it to the specified text writer.</summary>
         <remarks>To be added.</remarks>
+        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This member cannot be inherited by partially trusted code.</permission>
       </Docs>
     </Member>
     <Member MemberName="GenerateCodeFromNamespace">
@@ -124,11 +159,13 @@
         <Parameter Name="o" Type="System.CodeDom.Compiler.CodeGeneratorOptions" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <param name="w">To be added.</param>
-        <param name="o">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">A <see cref="T:System.CodeDom.CodeNamespace" /> that indicates the namespace to generate code for.</param>
+        <param name="w">The <see cref="T:System.IO.TextWriter" /> to output code to.</param>
+        <param name="o">A <see cref="T:System.CodeDom.Compiler.CodeGeneratorOptions" /> that indicates the options to use for generating code.</param>
+        <summary>Generates code for the specified Code Document Object Model (CodeDOM) namespace and outputs it to the specified text writer using the specified options.</summary>
         <remarks>To be added.</remarks>
+        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This member cannot be inherited by partially trusted code.</permission>
       </Docs>
     </Member>
     <Member MemberName="GenerateCodeFromStatement">
@@ -149,11 +186,13 @@
         <Parameter Name="o" Type="System.CodeDom.Compiler.CodeGeneratorOptions" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <param name="w">To be added.</param>
-        <param name="o">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">A <see cref="T:System.CodeDom.CodeStatement" /> containing the CodeDOM elements to translate.</param>
+        <param name="w">The <see cref="T:System.IO.TextWriter" /> to output code to.</param>
+        <param name="o">A <see cref="T:System.CodeDom.Compiler.CodeGeneratorOptions" /> that indicates the options to use for generating code.</param>
+        <summary>Generates code for the specified Code Document Object Model (CodeDOM) statement and outputs it to the specified text writer using the specified options.</summary>
         <remarks>To be added.</remarks>
+        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This member cannot be inherited by partially trusted code.</permission>
       </Docs>
     </Member>
     <Member MemberName="GenerateCodeFromType">
@@ -174,11 +213,13 @@
         <Parameter Name="o" Type="System.CodeDom.Compiler.CodeGeneratorOptions" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <param name="w">To be added.</param>
-        <param name="o">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">A <see cref="T:System.CodeDom.CodeTypeDeclaration" /> that indicates the type to generate code for.</param>
+        <param name="w">The <see cref="T:System.IO.TextWriter" /> to output code to.</param>
+        <param name="o">A <see cref="T:System.CodeDom.Compiler.CodeGeneratorOptions" /> that indicates the options to use for generating code.</param>
+        <summary>Generates code for the specified Code Document Object Model (CodeDOM) type declaration and outputs it to the specified text writer using the specified options.</summary>
         <remarks>To be added.</remarks>
+        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This member cannot be inherited by partially trusted code.</permission>
       </Docs>
     </Member>
     <Member MemberName="GetTypeOutput">
@@ -197,10 +238,12 @@
         <Parameter Name="type" Type="System.CodeDom.CodeTypeReference" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="type">A <see cref="T:System.CodeDom.CodeTypeReference" /> that indicates the type to return.</param>
+        <summary>Gets the type indicated by the specified <see cref="T:System.CodeDom.CodeTypeReference" />.</summary>
+        <returns>A text representation of the specified type for the language this code generator is designed to generate code in. For example, in Visual Basic, passing in type System.Int32 will return "Integer".</returns>
         <remarks>To be added.</remarks>
+        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This member cannot be inherited by partially trusted code.</permission>
       </Docs>
     </Member>
     <Member MemberName="IsValidIdentifier">
@@ -219,10 +262,20 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to test for being a valid identifier.</param>
+        <summary>Gets a value that indicates whether the specified value is a valid identifier for the current language.</summary>
+        <returns>
+          <see langword="true" /> if the <paramref name="value" /> parameter is a valid identifier; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method tests whether an identifier is valid. When implementing <xref:System.CodeDom.Compiler.ICodeGenerator.IsValidIdentifier%2A> in a derived class, design the method to test the value passed to it, and return `true` only if the value fits the rules of the language and does not conflict with a keyword.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This member cannot be inherited by partially trusted code.</permission>
       </Docs>
     </Member>
     <Member MemberName="Supports">
@@ -241,10 +294,20 @@
         <Parameter Name="supports" Type="System.CodeDom.Compiler.GeneratorSupport" />
       </Parameters>
       <Docs>
-        <param name="supports">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="supports">The capabilities to test the generator for.</param>
+        <summary>Gets a value indicating whether the generator provides support for the language features represented by the specified <see cref="T:System.CodeDom.Compiler.GeneratorSupport" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the specified capabilities are supported; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be called with a number of <xref:System.CodeDom.Compiler.GeneratorSupport> flags at once to test for a set of capabilities by joining a set of appropriate capability flags together with a binary "Or" operator (&#124;).  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This member cannot be inherited by partially trusted code.</permission>
       </Docs>
     </Member>
     <Member MemberName="ValidateIdentifier">
@@ -263,9 +326,19 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="value">The identifier to validate.</param>
+        <summary>Throws an exception if the specified value is not a valid identifier.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Rather than returning a value, this method throws an exception if the specified identifier is not valid according to the method implementation. Typically, the exception is an <xref:System.ArgumentException>. This method enables a code generator that implements this method to produce an informative error message based upon the value of an invalid identifier.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The identifier is not valid.</exception>
+        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This member cannot be inherited by partially trusted code.</permission>
       </Docs>
     </Member>
   </Members>

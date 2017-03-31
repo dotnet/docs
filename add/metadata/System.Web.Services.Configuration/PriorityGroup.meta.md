@@ -1,4 +1,6 @@
 ---
 uid: System.Web.Services.Configuration.PriorityGroup
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

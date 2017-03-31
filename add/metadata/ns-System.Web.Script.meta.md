@@ -1,4 +1,5 @@
 ---
 uid: System.Web.Script
-internalonly: False
+ms.author: "rachelap"
+manager: "wpickett"
 ---

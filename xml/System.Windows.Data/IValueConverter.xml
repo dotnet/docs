@@ -8,8 +8,19 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a way to apply custom logic to a binding.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you want to associate a value converter with a binding, create a class that implements the <xref:System.Windows.Data.IValueConverter> interface and then implement the <xref:System.Windows.Data.IValueConverter.Convert%2A> and <xref:System.Windows.Data.IValueConverter.ConvertBack%2A> methods. Converters can change data from one type to another, translate data based on cultural information, or modify other aspects of the presentation. For examples of some typical converter scenarios, see "Data Conversion" in [Data Binding Overview](../Topic/Data%20Binding%20Overview.md).  
+  
+ Value converters are culture-aware. Both the <xref:System.Windows.Data.IValueConverter.Convert%2A> and <xref:System.Windows.Data.IValueConverter.ConvertBack%2A> methods have a `culture` parameter that indicates the cultural information. If cultural information is irrelevant to the conversion, then you can ignore that parameter in your custom converter.  
+  
+ The <xref:System.Windows.Data.IValueConverter.Convert%2A> and <xref:System.Windows.Data.IValueConverter.ConvertBack%2A> methods also have a parameter called `parameter` so that you can use the same instance of the converter with different parameters. For example, you can write a formatting converter that produces different formats of data based on the input parameter that you use. You can use the <xref:System.Windows.Data.Binding.ConverterParameter%2A> of the <xref:System.Windows.Data.Binding> class to pass a parameter as an argument into the <xref:System.Windows.Data.IValueConverter.Convert%2A> and <xref:System.Windows.Data.IValueConverter.ConvertBack%2A> methods.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Convert">
@@ -31,13 +42,26 @@
         <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="targetType">To be added.</param>
-        <param name="parameter">To be added.</param>
-        <param name="culture">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value produced by the binding source.</param>
+        <param name="targetType">The type of the binding target property.</param>
+        <param name="parameter">The converter parameter to use.</param>
+        <param name="culture">The culture to use in the converter.</param>
+        <summary>Converts a value.</summary>
+        <returns>A converted value. If the method returns <see langword="null" />, the valid null value is used.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The data binding engine calls this method when it propagates a value from the binding source to the binding target.  
+  
+ The data binding engine does not catch exceptions that are thrown by a user-supplied converter. Any exception that is thrown by the <xref:System.Windows.Data.IValueConverter.Convert%2A> method, or any uncaught exceptions that are thrown by methods that the <xref:System.Windows.Data.IValueConverter.Convert%2A> method calls, are treated as run-time errors. Handle anticipated problems by returning <xref:System.Windows.DependencyProperty.UnsetValue?displayProperty=fullName>.  
+  
+ A return value of <xref:System.Windows.DependencyProperty.UnsetValue?displayProperty=fullName> indicates that the converter produced no value and that the binding uses the <xref:System.Windows.Data.BindingBase.FallbackValue%2A>, if available, or the default value instead.  
+  
+ A return value of <xref:System.Windows.Data.Binding.DoNothing?displayProperty=fullName> indicates that the binding does not transfer the value or use the <xref:System.Windows.Data.BindingBase.FallbackValue%2A> or default value.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertBack">
@@ -59,13 +83,28 @@
         <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="targetType">To be added.</param>
-        <param name="parameter">To be added.</param>
-        <param name="culture">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value that is produced by the binding target.</param>
+        <param name="targetType">The type to convert to.</param>
+        <param name="parameter">The converter parameter to use.</param>
+        <param name="culture">The culture to use in the converter.</param>
+        <summary>Converts a value.</summary>
+        <returns>A converted value. If the method returns <see langword="null" />, the valid null value is used.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The data binding engine calls this method when it propagates a value from the binding target to the binding source.  
+  
+ The implementation of this method must be the inverse of the <xref:System.Windows.Data.IValueConverter.Convert%2A> method.  
+  
+ The data binding engine does not catch exceptions that are thrown by a user-supplied converter. Any exception that is thrown by the <xref:System.Windows.Data.IValueConverter.ConvertBack%2A> method, or any uncaught exceptions that are thrown by methods that the <xref:System.Windows.Data.IValueConverter.ConvertBack%2A> method calls, are treated as run-time errors. Handle anticipated problems by returning <xref:System.Windows.DependencyProperty>.<xref:System.Windows.DependencyProperty.UnsetValue>.  
+  
+ A return value of <xref:System.Windows.DependencyProperty.UnsetValue?displayProperty=fullName> indicates that the converter produced no value and that the binding uses the <xref:System.Windows.Data.BindingBase.FallbackValue%2A>, if available, or the default value instead.  
+  
+ A return value of <xref:System.Windows.Data.Binding.DoNothing?displayProperty=fullName> indicates that the binding does not transfer the value or use the <xref:System.Windows.Data.BindingBase.FallbackValue%2A> or default value.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,209 +1,334 @@
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetPoint(System.Windows.Forms.VisualStyles.PointProperty)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.DrawText(System.Drawing.IDeviceContext,System.Drawing.Rectangle,System.String,System.Boolean)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.SetParameters(System.String,System.Int32,System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetTextExtent(System.Drawing.IDeviceContext,System.Drawing.Rectangle,System.String,System.Windows.Forms.TextFormatFlags)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetFilename(System.Windows.Forms.VisualStyles.FilenameProperty)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetTextExtent(System.Drawing.IDeviceContext,System.String,System.Windows.Forms.TextFormatFlags)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.State
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.DrawParentBackground(System.Drawing.IDeviceContext,System.Drawing.Rectangle,System.Windows.Forms.Control)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.HitTestBackground(System.Drawing.IDeviceContext,System.Drawing.Rectangle,System.Drawing.Point,System.Windows.Forms.VisualStyles.HitTestOptions)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetPartSize
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.DrawBackground(System.Drawing.IDeviceContext,System.Drawing.Rectangle,System.Drawing.Rectangle)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.DrawText
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetFont(System.Drawing.IDeviceContext,System.Windows.Forms.VisualStyles.FontProperty)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.SetParameters(System.Windows.Forms.VisualStyles.VisualStyleElement)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.#ctor(System.String,System.Int32,System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.HitTestBackground(System.Drawing.IDeviceContext,System.Drawing.Rectangle,System.IntPtr,System.Drawing.Point,System.Windows.Forms.VisualStyles.HitTestOptions)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.#ctor(System.Windows.Forms.VisualStyles.VisualStyleElement)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.IsSupported
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetColor(System.Windows.Forms.VisualStyles.ColorProperty)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetBackgroundExtent(System.Drawing.IDeviceContext,System.Drawing.Rectangle)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.SetParameters
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetPartSize(System.Drawing.IDeviceContext,System.Drawing.Rectangle,System.Windows.Forms.VisualStyles.ThemeSizeType)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.DrawText(System.Drawing.IDeviceContext,System.Drawing.Rectangle,System.String)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.DrawImage(System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Image)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.Handle
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetBoolean(System.Windows.Forms.VisualStyles.BooleanProperty)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.DrawEdge(System.Drawing.IDeviceContext,System.Drawing.Rectangle,System.Windows.Forms.VisualStyles.Edges,System.Windows.Forms.VisualStyles.EdgeStyle,System.Windows.Forms.VisualStyles.EdgeEffects)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetEnumValue(System.Windows.Forms.VisualStyles.EnumProperty)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.DrawImage
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.Part
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.DrawBackground(System.Drawing.IDeviceContext,System.Drawing.Rectangle)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetMargins(System.Drawing.IDeviceContext,System.Windows.Forms.VisualStyles.MarginProperty)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.HitTestBackground
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.LastHResult
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.DrawText(System.Drawing.IDeviceContext,System.Drawing.Rectangle,System.String,System.Boolean,System.Windows.Forms.TextFormatFlags)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetPartSize(System.Drawing.IDeviceContext,System.Windows.Forms.VisualStyles.ThemeSizeType)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.DrawImage(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.ImageList,System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetInteger(System.Windows.Forms.VisualStyles.IntegerProperty)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.IsElementDefined(System.Windows.Forms.VisualStyles.VisualStyleElement)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetBackgroundContentRectangle(System.Drawing.IDeviceContext,System.Drawing.Rectangle)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.DrawBackground
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetTextExtent
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetString(System.Windows.Forms.VisualStyles.StringProperty)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.Class
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.HitTestBackground(System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Region,System.Drawing.Point,System.Windows.Forms.VisualStyles.HitTestOptions)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.IsBackgroundPartiallyTransparent
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetBackgroundRegion(System.Drawing.IDeviceContext,System.Drawing.Rectangle)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetTextMetrics(System.Drawing.IDeviceContext)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

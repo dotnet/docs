@@ -1,24 +1,29 @@
 ---
 uid: System.IdentityModel.Tokens.AuthenticationContext
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.AuthenticationContext.ContextDeclaration
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.AuthenticationContext.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.AuthenticationContext.ContextClass
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.AuthenticationContext.Authorities
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

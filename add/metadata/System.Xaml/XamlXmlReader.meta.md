@@ -1,139 +1,144 @@
 ---
 uid: System.Xaml.XamlXmlReader
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlReader.#ctor(System.String,System.Xaml.XamlXmlReaderSettings)
-internalonly: False
+manager: "martinek"
+---
+
+---
+uid: System.Xaml.XamlXmlReader.#ctor
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlReader.#ctor(System.IO.Stream,System.Xaml.XamlSchemaContext,System.Xaml.XamlXmlReaderSettings)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlReader.#ctor(System.Xml.XmlReader,System.Xaml.XamlXmlReaderSettings)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlReader.#ctor(System.IO.Stream)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlReader.#ctor(System.String,System.Xaml.XamlSchemaContext)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlReader.Value
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlReader.#ctor(System.IO.TextReader,System.Xaml.XamlSchemaContext,System.Xaml.XamlXmlReaderSettings)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlReader.#ctor(System.String)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlReader.#ctor(System.IO.Stream,System.Xaml.XamlSchemaContext)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlReader.#ctor(System.Xml.XmlReader,System.Xaml.XamlSchemaContext)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlReader.SchemaContext
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlReader.LineNumber
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlReader.Namespace
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlReader.#ctor(System.IO.TextReader)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlReader.#ctor(System.Xml.XmlReader)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlReader.#ctor(System.String,System.Xaml.XamlSchemaContext,System.Xaml.XamlXmlReaderSettings)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlReader.Member
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlReader.#ctor(System.IO.TextReader,System.Xaml.XamlSchemaContext)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlReader.#ctor(System.Xml.XmlReader,System.Xaml.XamlSchemaContext,System.Xaml.XamlXmlReaderSettings)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlReader.IsEof
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlReader.HasLineInfo
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlReader.LinePosition
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlReader.#ctor(System.IO.Stream,System.Xaml.XamlXmlReaderSettings)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlReader.NodeType
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlReader.Read
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlReader.Type
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlReader.#ctor(System.IO.TextReader,System.Xaml.XamlXmlReaderSettings)
-internalonly: False
+manager: "martinek"
 ---

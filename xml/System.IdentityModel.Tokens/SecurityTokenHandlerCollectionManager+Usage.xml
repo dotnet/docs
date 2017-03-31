@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines standard collection names used by the framework.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,7 +28,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Used to reference a collection of handlers for ActAs element processing.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -45,7 +45,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Used to reference the default collection of handlers.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,7 +62,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Used to reference a collection of handlers for OnBehalfOf element processing.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

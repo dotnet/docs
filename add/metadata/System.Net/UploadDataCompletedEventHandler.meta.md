@@ -1,4 +1,5 @@
 ---
 uid: System.Net.UploadDataCompletedEventHandler
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

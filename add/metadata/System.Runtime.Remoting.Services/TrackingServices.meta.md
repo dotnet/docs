@@ -1,24 +1,24 @@
 ---
 uid: System.Runtime.Remoting.Services.TrackingServices
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Services.TrackingServices.RegisteredHandlers
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Services.TrackingServices.#ctor
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Services.TrackingServices.UnregisterTrackingHandler(System.Runtime.Remoting.Services.ITrackingHandler)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Services.TrackingServices.RegisterTrackingHandler(System.Runtime.Remoting.Services.ITrackingHandler)
-internalonly: False
+manager: "ghogen"
 ---

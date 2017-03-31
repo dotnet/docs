@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Forms.Design.FolderNameEditor.FolderBrowserStyles
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

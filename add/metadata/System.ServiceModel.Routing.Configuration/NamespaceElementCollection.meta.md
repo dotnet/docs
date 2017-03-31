@@ -1,44 +1,74 @@
 ---
 uid: System.ServiceModel.Routing.Configuration.NamespaceElementCollection
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Routing.Configuration.NamespaceElementCollection.GetElementKey(System.Configuration.ConfigurationElement)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Routing.Configuration.NamespaceElementCollection.Add(System.ServiceModel.Routing.Configuration.NamespaceElement)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Routing.Configuration.NamespaceElementCollection.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Routing.Configuration.NamespaceElementCollection.Remove(System.ServiceModel.Routing.Configuration.NamespaceElement)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Routing.Configuration.NamespaceElementCollection.Item(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Routing.Configuration.NamespaceElementCollection.CreateNewElement
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Routing.Configuration.NamespaceElementCollection.Item
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Routing.Configuration.NamespaceElementCollection.CreateNewElement
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Routing.Configuration.NamespaceElementCollection.Clear
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Routing.Configuration.NamespaceElementCollection.Item(System.Int32)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

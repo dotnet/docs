@@ -1,9 +1,9 @@
 ---
 uid: System.Runtime.Remoting.IChannelInfo
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.IChannelInfo.ChannelData
-internalonly: False
+manager: "ghogen"
 ---

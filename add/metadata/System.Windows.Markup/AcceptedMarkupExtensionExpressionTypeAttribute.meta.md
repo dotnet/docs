@@ -1,14 +1,14 @@
 ---
 uid: System.Windows.Markup.AcceptedMarkupExtensionExpressionTypeAttribute
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.AcceptedMarkupExtensionExpressionTypeAttribute.#ctor(System.Type)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.AcceptedMarkupExtensionExpressionTypeAttribute.Type
-internalonly: False
+manager: "martinek"
 ---

@@ -1,14 +1,20 @@
 ---
 uid: System.Drawing.Design.ToolboxComponentsCreatingEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Design.ToolboxComponentsCreatingEventArgs.#ctor(System.ComponentModel.Design.IDesignerHost)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Design.ToolboxComponentsCreatingEventArgs.DesignerHost
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -1,9 +1,12 @@
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar.Chunk
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar.Chunk.Normal
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

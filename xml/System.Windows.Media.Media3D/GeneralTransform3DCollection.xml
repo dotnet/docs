@@ -24,8 +24,35 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an ordered collection of <see cref="T:System.Windows.Media.Media3D.GeneralTransform3D" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Except as noted, members of this class behave exactly as described by the <xref:System.Collections.Generic.IList%601>, <xref:System.Collections.Generic.ICollection%601>, and <xref:System.Collections.Generic.IEnumerable%601> documentation.  
+  
+ **Freezable Features:** Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection> class provides several special features: <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection> objects can be declared as , shared among multiple objects, made read-only to improve performance, cloned, and made thread safe. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see [Freezable Objects Overview](../Topic/Freezable%20Objects%20Overview.md).  
+  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+<a name="xamlImplicitCollectionUsage_GeneralTransform3DCollection"></a>   
+## XAML Implicit Collection Usage  
+  
+```  
+<object>  
+  <object.property>  
+    oneOrMoreGeneralTransform3DObjectElements  
+  </object.property>  
+</object>  
+```  
+  
+<a name="xamlValues_GeneralTransform3DCollection"></a>   
+## XAML Values  
+ *oneOrMoreGeneralTransform3DObjectElements*  
+ One or more <xref:System.Windows.Media.Media3D.GeneralTransform3D> objects, declared using object element syntax.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,8 +66,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Media3D.GeneralTransform3DCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.%23ctor> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -56,9 +90,18 @@
         <Parameter Name="collection" Type="System.Collections.Generic.IEnumerable&lt;System.Windows.Media.Media3D.GeneralTransform3D&gt;" />
       </Parameters>
       <Docs>
-        <param name="collection">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="collection">Initial object in the new collection class.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Media3D.GeneralTransform3DCollection" /> class, using the specified initial object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.%23ctor%28System.Collections.Generic.IEnumerable%7BSystem.Windows.Media.Media3D.GeneralTransform3D%7D%29> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="collection" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -74,9 +117,16 @@
         <Parameter Name="capacity" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="capacity">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="capacity">The number of <see cref="T:System.Windows.Media.Media3D.GeneralTransform3D" /> objects that the collection is initially capable of storing.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Media3D.GeneralTransform3DCollection" /> class with the specified capacity, or the number of <see cref="T:System.Windows.Media.Media3D.GeneralTransform3D" /> objects the collection is initially capable of storing.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.%23ctor%28System.Int32%29> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -95,9 +145,25 @@
         <Parameter Name="value" Type="System.Windows.Media.Media3D.GeneralTransform3D" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="value">The <see cref="T:System.Windows.Media.Media3D.GeneralTransform3D" /> to add to the end of the collection.</param>
+        <summary>Adds a <see cref="T:System.Windows.Media.Media3D.GeneralTransform3D" /> object to the end of the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Unlike typical implementations of <xref:System.Collections.Generic.ICollection%601.Add%2A?displayProperty=fullName>, this implementation throws an <xref:System.ArgumentException> if you attempt to add `null`.  
+  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.Add%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.NotSupportedException">The collection is read-only.  
+  
+ \- or -  
+  
+ The collection has a fixed size.</exception>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -114,8 +180,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Removes all <see cref="T:System.Windows.Media.Media3D.GeneralTransform3D" /> objects from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method does not change the capacity of the collection.  
+  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.Clear%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -132,9 +208,22 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a modifiable clone of this collection, making deep copies of this object's values.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true." /></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+  
+ When copying dependency properties, this method copies resource references and data bindings (they might no longer resolve) but not animations or their current values.  
+  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.Clone%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CloneCore">
@@ -172,9 +261,20 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a modifiable clone of this collection object, making deep copies of this object's current values. Resource references, data bindings, and animations are not copied, but their current values are.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.CloneCurrentValue%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CloneCurrentValueCore">
@@ -214,10 +314,18 @@
         <Parameter Name="value" Type="System.Windows.Media.Media3D.GeneralTransform3D" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The <see cref="T:System.Windows.Media.Media3D.GeneralTransform3D" /> object to locate in the collection.</param>
+        <summary>Indicates whether the collection contains the specified <see cref="T:System.Windows.Media.Media3D.GeneralTransform3D" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the collection contains <paramref name="value" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.Contains%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -237,10 +345,27 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="array">The destination array.</param>
+        <param name="index">The zero-based index position where copying begins.</param>
+        <summary>Copies the <see cref="T:System.Windows.Media.Media3D.GeneralTransform3D" /> objects in the collection into an array of <see cref="T:System.Windows.Media.Media3D.GeneralTransform3D" /> objects, starting at the specified index position.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.CopyTo%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than zero.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="array" /> is multidimensional.  
+  
+ -or-  
+  
+ The number of items in the source collection is greater than the available space from <paramref name="index" /> to the end of the destination <paramref name="array" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -256,9 +381,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of objects in this collection.</summary>
+        <value>The number of items in the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.Count%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceCore">
@@ -358,9 +490,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns an enumerator that can iterate through the collection.</summary>
+        <returns>An enumerator that can iterate the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.GetEnumerator%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -379,10 +518,17 @@
         <Parameter Name="value" Type="System.Windows.Media.Media3D.GeneralTransform3D" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The object to locate.</param>
+        <summary>Searches for the specified <see cref="T:System.Windows.Media.Media3D.GeneralTransform3D" /> object within the collection.</summary>
+        <returns>The zero-based index position of <paramref name="value" />, or –1 if the object is not found in the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.IndexOf%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -402,10 +548,28 @@
         <Parameter Name="value" Type="System.Windows.Media.Media3D.GeneralTransform3D" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index position to insert the object.</param>
+        <param name="value">The object to insert.</param>
+        <summary>Inserts a <see cref="T:System.Windows.Media.Media3D.GeneralTransform3D" /> object into the specified index position within the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Unlike typical implementations of <xref:System.Collections.Generic.IList%601.Insert%2A?displayProperty=fullName>, this implementation throws an <xref:System.ArgumentException> if you attempt to insert `null`.  
+  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.Insert%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is not a valid index in the collection.</exception>
+        <exception cref="T:System.NotSupportedException">The collection is read-only.  
+  
+ \- or -  
+  
+ The collection has a fixed size.</exception>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -424,10 +588,28 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index position of the object to get or set.</param>
+        <summary>Gets or sets the <see cref="T:System.Windows.Media.Media3D.GeneralTransform3D" /> object at the specified index position.</summary>
+        <value>The <see cref="T:System.Windows.Media.Media3D.GeneralTransform3D" /> object at the <paramref name="index" /> position.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Unlike typical implementations of [IList\<T>.Item\<xref:System.Collections.Generic.IList%601.Item%2A?displayProperty=fullName>, this implementation throws an <xref:System.ArgumentException> if you attempt to insert a `null` reference.  
+  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.Item%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is not a valid index in the collection.</exception>
+        <exception cref="T:System.NotSupportedException">The collection is read-only.  
+  
+ \- or -  
+  
+ The collection has a fixed size.</exception>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -446,10 +628,23 @@
         <Parameter Name="value" Type="System.Windows.Media.Media3D.GeneralTransform3D" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The object to remove.</param>
+        <summary>Deletes a <see cref="T:System.Windows.Media.Media3D.GeneralTransform3D" /> object from the collection.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="value" /> was successfully deleted; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.Remove%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The collection is read-only.  
+  
+ \- or -  
+  
+ The collection has a fixed size.</exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -468,9 +663,16 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index position to remove the object.</param>
+        <summary>Deletes a <see cref="T:System.Windows.Media.Media3D.GeneralTransform3D" /> object from the <see cref="T:System.Windows.Media.Media3D.GeneralTransform3DCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.RemoveAt%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;System.Windows.Media.Media3D.GeneralTransform3D&gt;.IsReadOnly">
@@ -486,9 +688,19 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Media.Media3D.GeneralTransform3DCollection" /> is read-only; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
+  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.System%23Collections%23Generic%23ICollection%7BSystem%23Windows%23Media%23Media3D%23GeneralTransform3D%7D%23IsReadOnly%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IEnumerable&lt;System.Windows.Media.Media3D.GeneralTransform3D&gt;.GetEnumerator">
@@ -505,9 +717,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator" />.</summary>
+        <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection> instance is cast to an <xref:System.Collections.Generic.IEnumerable%601> interface.  
+  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.System%23Collections%23Generic%23IEnumerable%7BSystem%23Windows%23Media%23Media3D%23GeneralTransform3D%7D%23GetEnumerator%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -527,10 +748,19 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="array">A zero-based <see cref="T:System.Array" /> that receives the copied items from the <see cref="T:System.Windows.Media.Media3D.GeneralTransform3DCollection" />.</param>
+        <param name="index">The first position in the specified <see cref="T:System.Array" /> to receive the copied contents.</param>
+        <summary>For a description of this member, see <see cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.System%23Collections%23ICollection%23CopyTo%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -546,9 +776,19 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="P:System.Collections.ICollection.IsSynchronized" />.</summary>
+        <value>
+          <see langword="true" /> if access to the <see cref="T:System.Windows.Media.Media3D.GeneralTransform3DCollection" /> is synchronized (thread safe); otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.System%23Collections%23ICollection%23IsSynchronized%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.SyncRoot">
@@ -564,9 +804,18 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="P:System.Collections.ICollection.SyncRoot" />.</summary>
+        <value>An object that can be used to synchronize access to the <see cref="T:System.Windows.Media.Media3D.GeneralTransform3DCollection" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.System%23Collections%23ICollection%23SyncRoot%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -583,9 +832,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="M:System.Collections.IEnumerable.GetEnumerator" />.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.System%23Collections%23IEnumerable%23GetEnumerator%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Add">
@@ -604,10 +862,19 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The <see cref="T:System.Object" /> to add to the <see cref="T:System.Windows.Media.Media3D.GeneralTransform3DCollection" />.</param>
+        <summary>For a description of this member, see <see cref="M:System.Collections.IList.Add(System.Object)" />.</summary>
+        <returns>The position into which the new element was inserted.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.System%23Collections%23IList%23Add%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Contains">
@@ -626,10 +893,20 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The <see cref="T:System.Object" /> to locate in the <see cref="T:System.Windows.Media.Media3D.GeneralTransform3DCollection" />.</param>
+        <summary>For a description of this member, see <see cref="M:System.Collections.IList.Contains(System.Object)" />.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Object" /> is found in the <see cref="T:System.Windows.Media.Media3D.GeneralTransform3DCollection" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.System%23Collections%23IList%23Contains%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IndexOf">
@@ -648,10 +925,19 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The <see cref="T:System.Object" /> to locate in the <see cref="T:System.Windows.Media.Media3D.GeneralTransform3DCollection" />.</param>
+        <summary>For a description of this member, see <see cref="M:System.Collections.IList.IndexOf(System.Object)" />.</summary>
+        <returns>The index of <paramref name="value" /> if found in the list; otherwise, -1.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.System%23Collections%23IList%23IndexOf%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Insert">
@@ -671,10 +957,19 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index at which to insert the <see cref="T:System.Object" />.</param>
+        <param name="value">The <see cref="T:System.Object" /> to insert into the <see cref="T:System.Windows.Media.Media3D.GeneralTransform3DCollection" />.</param>
+        <summary>For a description of this member, see <see cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.System%23Collections%23IList%23Insert%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsFixedSize">
@@ -690,9 +985,19 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="P:System.Collections.IList.IsFixedSize" />.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Media.Media3D.GeneralTransform3DCollection" /> has a fixed size; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.System%23Collections%23IList%23IsFixedSize%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsReadOnly">
@@ -708,9 +1013,19 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="P:System.Collections.IList.IsReadOnly" />.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Media.Media3D.GeneralTransform3DCollection" /> is read-only; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.System%23Collections%23IList%23IsReadOnly%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Item">
@@ -729,10 +1044,19 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index of the element to get or set.</param>
+        <summary>For a description of this member, see <see cref="P:System.Collections.IList.Item(System.Int32)" />.</summary>
+        <value>The element at the specified index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.System%23Collections%23IList%23Item%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Remove">
@@ -751,9 +1075,18 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="value">The <see cref="T:System.Object" /> to remove from the <see cref="T:System.Windows.Media.Media3D.GeneralTransform3DCollection" />.</param>
+        <summary>For a description of this member, see <see cref="M:System.Collections.IList.Remove(System.Object)" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.System%23Collections%23IList%23Remove%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

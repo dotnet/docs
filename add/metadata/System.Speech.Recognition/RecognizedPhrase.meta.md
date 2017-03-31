@@ -1,49 +1,59 @@
 ---
 uid: System.Speech.Recognition.RecognizedPhrase
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.RecognizedPhrase.Grammar
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.RecognizedPhrase.ReplacementWordUnits
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.RecognizedPhrase.Confidence
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.RecognizedPhrase.Semantics
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.RecognizedPhrase.Homophones
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.RecognizedPhrase.HomophoneGroupId
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.RecognizedPhrase.Words
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.RecognizedPhrase.ConstructSmlFromSemantics
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.RecognizedPhrase.Text
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

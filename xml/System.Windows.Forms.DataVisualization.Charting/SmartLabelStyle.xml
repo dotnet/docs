@@ -19,8 +19,37 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides methods and properties used to perform intelligent, rule-based data point label positioning to resolve overlapping data point label issues.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When smart labels are enabled, the chart repositions overlapping data point labels, based on a set of user-defined rules.  
+  
+ Callout lines will be drawn to link the label with its data point. The visual attributes of the callout line can be controlled. These visual attributes include color, line style, and line width. The <xref:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.CalloutStyle%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.CalloutLineAnchorCapStyle%2A> properties control the embellishments, such as arrowheads, that appear at the end of the callout line.  
+  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.CalloutLineColor%2A> property can be set to any <xref:System.Drawing.Color> object. If you set the color of the callout line, you will also automatically set the color of the <xref:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.CalloutLineAnchorCapStyle%2A> and the embellishment defined by the <xref:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.CalloutStyle%2A>.  
+  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.CalloutLineWidth%2A> property controls the pixel width of the callout line. Use of this property will also scale the embellishments of the <xref:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.CalloutLineAnchorCapStyle%2A> and the <xref:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.CalloutStyle%2A>.  
+  
+ The movement of smart labels can be controlled through the use of several motion-related properties. These define the rules of movement for the direction, distance and whether the data point label is allowed to leave the plotting area. The default movement rules will normally resolve most issues. The <xref:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.MaxMovingDistance%2A> defines a value that specifies the maximum distance in pixels from the data point that data point labels are allowed to be moved in case of overlapping. The <xref:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.MinMovingDistance%2A> property defines a value that specifies the minimum distance in pixels from the data point that data point labels will be moved in case of overlapping. When a data point label needs to be repositioned, the label will be moved by at least the number of pixels specified.  
+  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.IsOverlappedHidden%2A> property indicates whether the labels are hidden when overlapping issues cannot be resolved. If the <xref:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.IsOverlappedHidden%2A> property is `true`, and the data point cannot be drawn within the area specified by <xref:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.MinMovingDistance%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.MaxMovingDistance%2A> in the directions allowed by <xref:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.MovingDirection%2A>, the data point label will not be drawn.  
+  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.MovingDirection%2A> property defines the direction(s) in which the data point label can be moved. This property accepts one <xref:System.Windows.Forms.DataVisualization.Charting.LabelAlignmentStyles> value or a bitwise-OR of multiple <xref:System.Windows.Forms.DataVisualization.Charting.LabelAlignmentStyles> values. The default is the bitwise-OR of all <xref:System.Windows.Forms.DataVisualization.Charting.LabelAlignmentStyles> values, to allow repositioning in all possible directions except to the center of the data point.  
+  
+ Smart labels are not supported for the following chart types:  
+  
+-   Bar charts: bar and hundred-percent-stacked bar charts.  
+  
+-   Shape charts: pie, doughnut, polar and radar charts.  
+  
+-   Range charts: range, range column and range bar charts.  
+  
+-   Stacked area charts: stacked area and hundred-percent-stacked area charts.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,7 +63,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,8 +88,8 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LabelOutsidePlotAreaStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a flag that specifies whether a <see cref="T:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle" /> object can be drawn outside the plotting area.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.LabelOutsidePlotAreaStyle" /> enumeration value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,9 +120,16 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the background color of the label callout.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is only applicable when the <xref:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.CalloutStyle%2A> property is set to a value of <xref:System.Windows.Forms.DataVisualization.Charting.LabelCalloutStyle>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CalloutLineAnchorCapStyle">
@@ -117,8 +153,8 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LineAnchorCapStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the anchor cap style of the label callout line.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.LineAnchorCapStyle" /> enumeration value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,8 +185,8 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the color of the label callout line.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,8 +211,8 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartDashStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the style of the label callout line.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartDashStyle" /> enumeration value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -201,8 +237,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the width of the label callout line.</summary>
+        <value>An <see langword="integer " />value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -227,8 +263,8 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LabelCalloutStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the callout style of the repositioned <see cref="T:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle" /> object.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.LabelCalloutStyle" /> enumeration value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -256,8 +292,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a flag that indicates whether a <see cref="T:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle" /> algorithm is enabled.</summary>
+        <value>
+          <see langword="True" /> if an algorithm will be applied to prevent data point labels from overlapping. <see langword="False" /> if overlapping of data point labels will not be prevented. The default value is <see langword="True" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -282,8 +319,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a flag that specifies whether the point labels are allowed to overlap a point marker.</summary>
+        <value>
+          <see langword="True" /> if data point labels are permitted to overlap point markers. <see langword="False" /> if data point labels will be prevented from overlapping the point markers. The default value is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -308,9 +346,20 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a flag that indicates whether overlapped labels that cannot be repositioned will be hidden.</summary>
+        <value>
+          <see langword="True" /> if labels will be hidden if they overlap. <see langword="False" /> if overlapped labels will not be hidden. The default value is <see langword="True" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the point cannot be drawn within the area specified by the properties <xref:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.MinMovingDistance%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.MaxMovingDistance%2A>, in the directions allowed by the <xref:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.MovingDirection%2A>, property, and this property is `true`, the data point label will not be drawn.  
+  
+> [!NOTE]
+>  Smart labels only work when the <xref:System.Windows.Forms.DataVisualization.Charting.LabelStyle.Angle%2A> property is set to zero.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxMovingDistance">
@@ -334,9 +383,16 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the maximum distance, in pixels, that the overlapped <see cref="T:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle" /> object can be moved from the marker.</summary>
+        <value>A <see langword="double" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property specifies the maximum distance in pixels from the data point that data point labels are allowed to be moved in case of overlapping.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MinMovingDistance">
@@ -360,9 +416,16 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the minimum distance, in pixels, that the overlapped <see cref="T:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle" /> object can be moved from the marker.</summary>
+        <value>A <see langword="double" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property specifies the minimum distance in pixels from the data point that data point labels are allowed to be moved in case of overlapping.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MovingDirection">
@@ -389,8 +452,8 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LabelAlignmentStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the direction(s) in which the overlapped <see cref="T:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle" /> object is allowed to be moved.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.LabelAlignmentStyles" /> enumeration value or multiple bitwise OR'd <see cref="T:System.Windows.Forms.DataVisualization.Charting.LabelAlignmentStyles" /> values. The default is the bitwise OR of all <see cref="T:System.Windows.Forms.DataVisualization.Charting.LabelAlignmentStyles" /> values to allow repositioning in all directions except to the center of the data point.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,14 +1,20 @@
 ---
 uid: System.Activities.Hosting.IWorkflowInstanceExtension
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Hosting.IWorkflowInstanceExtension.SetInstance(System.Activities.Hosting.WorkflowInstanceProxy)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Hosting.IWorkflowInstanceExtension.GetAdditionalExtensions
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

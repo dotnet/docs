@@ -1,44 +1,69 @@
 ---
 uid: System.Data.Services.Design.PropertyGeneratedEventArgs
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Services.Design.PropertyGeneratedEventArgs.#ctor(System.Data.Metadata.Edm.MetadataItem,System.String,System.CodeDom.CodeTypeReference)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Services.Design.PropertyGeneratedEventArgs.AdditionalGetStatements
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Services.Design.PropertyGeneratedEventArgs.ReturnType
-internalonly: False
----
-
----
-uid: System.Data.Services.Design.PropertyGeneratedEventArgs.BackingFieldName
-internalonly: False
----
-
----
-uid: System.Data.Services.Design.PropertyGeneratedEventArgs.AdditionalAttributes
-internalonly: False
----
-
----
-uid: System.Data.Services.Design.PropertyGeneratedEventArgs.PropertySource
-internalonly: False
----
-
----
-uid: System.Data.Services.Design.PropertyGeneratedEventArgs.AdditionalSetStatements
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Services.Design.PropertyGeneratedEventArgs.#ctor
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Services.Design.PropertyGeneratedEventArgs.BackingFieldName
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Services.Design.PropertyGeneratedEventArgs.AdditionalAttributes
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Services.Design.PropertyGeneratedEventArgs.PropertySource
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Services.Design.PropertyGeneratedEventArgs.AdditionalSetStatements
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Services.Design.PropertyGeneratedEventArgs.#ctor
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

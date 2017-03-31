@@ -1,1 +1,0 @@
-        TimeSpan openTimeout = hostDefault.OpenTimeout;

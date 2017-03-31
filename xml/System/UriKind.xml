@@ -22,8 +22,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the kinds of <see cref="T:System.Uri" />s for the <see cref="M:System.Uri.IsWellFormedUriString(System.String,System.UriKind)" /> and several <see cref="Overload:System.Uri.#ctor" /> methods.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Absolute URIs are characterized by a complete reference to the resource (example: http://www.contoso.com/index.html), while a relative Uri depends on a previously defined base URI (example: /index.html).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Absolute">
@@ -51,7 +58,7 @@
         <ReturnType>System.UriKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Uri is an absolute Uri.</summary>
       </Docs>
     </Member>
     <Member MemberName="Relative">
@@ -79,7 +86,7 @@
         <ReturnType>System.UriKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Uri is a relative Uri.</summary>
       </Docs>
     </Member>
     <Member MemberName="RelativeOrAbsolute">
@@ -107,7 +114,7 @@
         <ReturnType>System.UriKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The kind of the Uri is indeterminate.</summary>
       </Docs>
     </Member>
   </Members>

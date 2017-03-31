@@ -1,4 +1,6 @@
 ---
 uid: Accessibility
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

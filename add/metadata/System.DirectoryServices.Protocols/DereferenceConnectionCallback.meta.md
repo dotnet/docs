@@ -1,4 +1,6 @@
 ---
 uid: System.DirectoryServices.Protocols.DereferenceConnectionCallback
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---

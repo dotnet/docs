@@ -1,9 +1,13 @@
 ---
 uid: System.ServiceModel.Dispatcher.IDispatchOperationSelector
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.IDispatchOperationSelector.SelectOperation(System.ServiceModel.Channels.Message@)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

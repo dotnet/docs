@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Automation.Peers.AutomationControlType
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

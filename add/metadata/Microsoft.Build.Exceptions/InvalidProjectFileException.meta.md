@@ -1,84 +1,107 @@
 ---
 uid: Microsoft.Build.Exceptions.InvalidProjectFileException
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Exceptions.InvalidProjectFileException.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Exceptions.InvalidProjectFileException.#ctor(System.String,System.Exception)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Exceptions.InvalidProjectFileException.BaseMessage
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Exceptions.InvalidProjectFileException.ProjectFile
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Exceptions.InvalidProjectFileException.Message
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Exceptions.InvalidProjectFileException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
+---
+
+---
+uid: Microsoft.Build.Exceptions.InvalidProjectFileException.#ctor
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Exceptions.InvalidProjectFileException.#ctor(System.String)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Exceptions.InvalidProjectFileException.#ctor(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.String,System.String,System.String)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Exceptions.InvalidProjectFileException.ColumnNumber
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Exceptions.InvalidProjectFileException.ErrorSubcategory
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Exceptions.InvalidProjectFileException.HasBeenLogged
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Exceptions.InvalidProjectFileException.ErrorCode
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Exceptions.InvalidProjectFileException.LineNumber
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Exceptions.InvalidProjectFileException.EndLineNumber
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Exceptions.InvalidProjectFileException.HelpKeyword
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Exceptions.InvalidProjectFileException.EndColumnNumber
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

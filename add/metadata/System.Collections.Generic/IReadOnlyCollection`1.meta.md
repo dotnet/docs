@@ -1,9 +1,13 @@
 ---
 uid: System.Collections.Generic.IReadOnlyCollection`1
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.Generic.IReadOnlyCollection`1.Count
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

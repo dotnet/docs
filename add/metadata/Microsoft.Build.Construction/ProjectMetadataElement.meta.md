@@ -1,14 +1,17 @@
 ---
 uid: Microsoft.Build.Construction.ProjectMetadataElement
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.ProjectMetadataElement.Name
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.ProjectMetadataElement.Value
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

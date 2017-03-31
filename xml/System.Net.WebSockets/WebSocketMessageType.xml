@@ -19,7 +19,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Indicates the message type.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,7 +45,7 @@
         <ReturnType>System.Net.WebSockets.WebSocketMessageType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The message is in binary format.</summary>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -70,7 +70,7 @@
         <ReturnType>System.Net.WebSockets.WebSocketMessageType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A receive has completed because a close message was received.</summary>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -95,7 +95,7 @@
         <ReturnType>System.Net.WebSockets.WebSocketMessageType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The message is clear text.</summary>
       </Docs>
     </Member>
   </Members>

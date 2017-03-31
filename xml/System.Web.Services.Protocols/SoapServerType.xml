@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.Web.Services.Protocols.SoapServerType" /> class represents the type on which the XML Web service is based.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,9 +29,9 @@
         <Parameter Name="protocolsSupported" Type="System.Web.Services.Configuration.WebServiceProtocols" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <param name="protocolsSupported">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="type">The <see cref="T:System.Type" /> on which this XML Web service is based.</param>
+        <param name="protocolsSupported">A <see cref="T:System.Web.Services.Configuration.WebServiceProtocols" /> value that specifies the transmission protocols that are used to decrypt data sent in the XML Web service request.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.SoapServerType" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,9 +51,9 @@
         <Parameter Name="key" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">The key associated with the desired duplicate <see cref="T:System.Web.Services.Protocols.SoapServerMethod" />.</param>
+        <summary>Returns the duplicate <see cref="T:System.Web.Services.Protocols.SoapServerMethod" /> associated with the specified key.</summary>
+        <returns>The duplicate <see cref="T:System.Web.Services.Protocols.SoapServerMethod" /> associated with the specified key.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,9 +73,9 @@
         <Parameter Name="key" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">The key associated with the desired <see cref="T:System.Web.Services.Protocols.SoapServerMethod" />.</param>
+        <summary>Returns the <see cref="T:System.Web.Services.Protocols.SoapServerMethod" /> associated with the specified key.</summary>
+        <returns>The <see cref="T:System.Web.Services.Protocols.SoapServerMethod" /> associated with the specified key.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,8 +92,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns a <see cref="T:System.Boolean" /> that indicates whether SOAP data transmissions sent to and from this XML Web service are encoded by default.</summary>
+        <value>
+          <see langword="true" /> if SOAP data transmissions sent to and from this XML Web service are encoded by default; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,8 +111,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.String" /> that contains the namespace to which this XML Web service belongs.</summary>
+        <value>A <see cref="T:System.String" /> that contains the namespace to which this XML Web service belongs.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,8 +129,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns a <see cref="T:System.Boolean" /> that indicates whether SOAP messages that are routed to this XML Web service are routed based on the <see langword="SOAPAction" /> HTTP header.</summary>
+        <value>
+          <see langword="true" /> if SOAP messages that are routed to this XML Web service are routed based on the <see langword="SOAPAction" /> HTTP header; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

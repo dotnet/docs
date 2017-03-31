@@ -1,9 +1,11 @@
 ---
 uid: System.Web.UI.CssClassPropertyAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.CssClassPropertyAttribute.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

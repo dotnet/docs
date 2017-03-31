@@ -1,14 +1,17 @@
 ---
 uid: System.Web.Hosting.IAppManagerAppDomainFactory
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.IAppManagerAppDomainFactory.Stop
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.IAppManagerAppDomainFactory.Create(System.String,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

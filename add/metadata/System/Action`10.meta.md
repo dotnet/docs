@@ -1,4 +1,6 @@
 ---
 uid: System.Action`10
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

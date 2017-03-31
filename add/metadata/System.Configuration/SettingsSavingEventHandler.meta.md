@@ -1,4 +1,6 @@
 ---
 uid: System.Configuration.SettingsSavingEventHandler
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

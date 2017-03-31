@@ -1,64 +1,83 @@
 ---
 uid: System.Net.Mail.SmtpPermission
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.SmtpPermission.FromXml(System.Security.SecurityElement)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.SmtpPermission.IsUnrestricted
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.SmtpPermission.ToXml
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Mail.SmtpPermission.#ctor
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.SmtpPermission.#ctor(System.Security.Permissions.PermissionState)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.SmtpPermission.Union(System.Security.IPermission)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.SmtpPermission.Copy
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.SmtpPermission.#ctor(System.Boolean)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.SmtpPermission.Access
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.SmtpPermission.AddPermission(System.Net.Mail.SmtpAccess)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.SmtpPermission.IsSubsetOf(System.Security.IPermission)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.SmtpPermission.Intersect(System.Security.IPermission)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.SmtpPermission.#ctor(System.Net.Mail.SmtpAccess)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

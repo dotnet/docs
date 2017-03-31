@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the ParameterGroup of an inline task.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,9 +36,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the parameter to be added.</param>
+        <summary>Adds a parameter to this parameter group.</summary>
+        <returns>The new parameter.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,12 +61,12 @@
         <Parameter Name="parameterType" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="output">To be added.</param>
-        <param name="required">To be added.</param>
-        <param name="parameterType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the parameter to be added.</param>
+        <param name="output">The value of the Output attribute.</param>
+        <param name="required">The value of the Required attribute.</param>
+        <param name="parameterType">The type of the parameter.</param>
+        <summary>Adds a parameter to this parameter group, using the given name, type, and attributes.</summary>
+        <returns>Returns the new parameter.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,8 +83,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a nonexistent condition, which is implicitly true.</summary>
+        <value>Returns a null.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,8 +101,8 @@
         <ReturnType>Microsoft.Build.Construction.ElementLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This does not allow conditions, so it should not be called.</summary>
+        <value>Throws an internal error and returns null.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,8 +119,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;Microsoft.Build.Construction.ProjectUsingTaskParameterElement&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets all parameters of this parameter group.</summary>
+        <value>Returns all parameters.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

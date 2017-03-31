@@ -1,14 +1,20 @@
 ---
 uid: System.Windows.Controls.ItemContainerTemplateSelector
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.ItemContainerTemplateSelector.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.ItemContainerTemplateSelector.SelectTemplate(System.Object,System.Windows.Controls.ItemsControl)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

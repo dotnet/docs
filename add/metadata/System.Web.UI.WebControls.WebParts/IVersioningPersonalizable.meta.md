@@ -1,9 +1,13 @@
 ---
 uid: System.Web.UI.WebControls.WebParts.IVersioningPersonalizable
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.WebParts.IVersioningPersonalizable.Load(System.Collections.IDictionary)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

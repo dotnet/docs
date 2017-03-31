@@ -1,24 +1,29 @@
 ---
 uid: Microsoft.Build.Tasks.CreateProperty
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.CreateProperty.ValueSetByTask
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.CreateProperty.Execute
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.CreateProperty.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.CreateProperty.Value
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

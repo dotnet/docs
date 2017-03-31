@@ -1,24 +1,34 @@
 ---
 uid: System.DirectoryServices.ActiveDirectory.ApplicationPartitionCollection
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ApplicationPartitionCollection.CopyTo(System.DirectoryServices.ActiveDirectory.ApplicationPartition[],System.Int32)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ApplicationPartitionCollection.Contains(System.DirectoryServices.ActiveDirectory.ApplicationPartition)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ApplicationPartitionCollection.IndexOf(System.DirectoryServices.ActiveDirectory.ApplicationPartition)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ApplicationPartitionCollection.Item(System.Int32)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---

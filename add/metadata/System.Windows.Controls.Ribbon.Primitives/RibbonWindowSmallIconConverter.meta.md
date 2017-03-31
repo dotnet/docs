@@ -1,19 +1,26 @@
 ---
 uid: System.Windows.Controls.Ribbon.Primitives.RibbonWindowSmallIconConverter
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.Primitives.RibbonWindowSmallIconConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.Primitives.RibbonWindowSmallIconConverter.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.Primitives.RibbonWindowSmallIconConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -14,7 +14,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a collection of <see cref="T:System.Web.UI.WebControls.MenuItemBinding" /> objects.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,9 +31,10 @@
         <Parameter Name="owner" Type="System.Web.DynamicData.DynamicDataManager" />
       </Parameters>
       <Docs>
-        <param name="owner">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="owner">The container object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.DataControlReferenceCollection" /> class.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="owner" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="InsertItem">
@@ -53,9 +54,9 @@
         <Parameter Name="item" Type="System.Web.DynamicData.DataControlReference" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The index that indicates where to insert the data control.</param>
+        <param name="item">The data control to insert.</param>
+        <summary>Inserts a data-control reference into the data-control reference collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,8 +73,8 @@
         <ReturnType>System.Web.DynamicData.DynamicDataManager</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Web.DynamicData.DynamicDataManager" /> control that contains the data control.</summary>
+        <value>The <see cref="T:System.Web.DynamicData.DynamicDataManager" /> control that contains the data control.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,8 +94,8 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The index of the data-control reference to remove.</param>
+        <summary>Removes a data-control reference from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,9 +116,9 @@
         <Parameter Name="item" Type="System.Web.DynamicData.DataControlReference" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The index of the data-control reference to set.</param>
+        <param name="item">The data control.</param>
+        <summary>Sets the <see cref="T:System.Web.DynamicData.DynamicDataManager" /> control that contains the data-control reference.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

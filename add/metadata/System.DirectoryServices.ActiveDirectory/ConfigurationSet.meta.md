@@ -1,104 +1,167 @@
 ---
 uid: System.DirectoryServices.ActiveDirectory.ConfigurationSet
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ConfigurationSet.GetDirectoryEntry
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ConfigurationSet.Dispose(System.Boolean)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ConfigurationSet.SchemaRoleOwner
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ConfigurationSet.GetConfigurationSet(System.DirectoryServices.ActiveDirectory.DirectoryContext)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ConfigurationSet.Name
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ConfigurationSet.ToString
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ConfigurationSet.FindAdamInstance
-internalonly: False
----
-
----
-uid: System.DirectoryServices.ActiveDirectory.ConfigurationSet.ApplicationPartitions
-internalonly: False
----
-
----
-uid: System.DirectoryServices.ActiveDirectory.ConfigurationSet.NamingRoleOwner
-internalonly: False
----
-
----
-uid: System.DirectoryServices.ActiveDirectory.ConfigurationSet.Schema
-internalonly: False
----
-
----
-uid: System.DirectoryServices.ActiveDirectory.ConfigurationSet.FindAllAdamInstances(System.String,System.String)
-internalonly: False
----
-
----
-uid: System.DirectoryServices.ActiveDirectory.ConfigurationSet.FindAllAdamInstances(System.String)
-internalonly: False
----
-
----
-uid: System.DirectoryServices.ActiveDirectory.ConfigurationSet.FindAdamInstance(System.String)
-internalonly: False
----
-
----
-uid: System.DirectoryServices.ActiveDirectory.ConfigurationSet.Dispose
-internalonly: False
----
-
----
-uid: System.DirectoryServices.ActiveDirectory.ConfigurationSet.Sites
-internalonly: False
----
-
----
-uid: System.DirectoryServices.ActiveDirectory.ConfigurationSet.FindAdamInstance(System.String,System.String)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ConfigurationSet.FindAllAdamInstances
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.ActiveDirectory.ConfigurationSet.ApplicationPartitions
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.ActiveDirectory.ConfigurationSet.NamingRoleOwner
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.ActiveDirectory.ConfigurationSet.Schema
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.ActiveDirectory.ConfigurationSet.FindAdamInstance
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.ActiveDirectory.ConfigurationSet.FindAllAdamInstances(System.String,System.String)
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.ActiveDirectory.ConfigurationSet.FindAllAdamInstances(System.String)
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.ActiveDirectory.ConfigurationSet.FindAdamInstance(System.String)
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.ActiveDirectory.ConfigurationSet.Dispose
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.ActiveDirectory.ConfigurationSet.Dispose
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.ActiveDirectory.ConfigurationSet.Sites
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.ActiveDirectory.ConfigurationSet.FindAdamInstance(System.String,System.String)
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.ActiveDirectory.ConfigurationSet.FindAllAdamInstances
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ConfigurationSet.AdamInstances
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ConfigurationSet.GetSecurityLevel
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ConfigurationSet.SetSecurityLevel(System.DirectoryServices.ActiveDirectory.ReplicationSecurityLevel)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---

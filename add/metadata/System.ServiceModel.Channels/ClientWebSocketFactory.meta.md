@@ -1,19 +1,27 @@
 ---
 uid: System.ServiceModel.Channels.ClientWebSocketFactory
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.ClientWebSocketFactory.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.ClientWebSocketFactory.WebSocketVersion
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.ClientWebSocketFactory.CreateWebSocket(System.IO.Stream,System.ServiceModel.Channels.WebSocketTransportSettings)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

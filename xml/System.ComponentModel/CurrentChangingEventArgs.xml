@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides information for the <see cref="E:System.ComponentModel.ICollectionView.CurrentChanging" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A collection that supports <xref:System.ComponentModel.ICollectionView> raises this event when the <xref:System.ComponentModel.ICollectionView.CurrentItem%2A> is changing or when the content of the collection has been reset.  
+  
+ By default, the event is cancelable when the cause is a move-current operation (such as the <xref:System.ComponentModel.ICollectionView.MoveCurrentTo%2A> and similar methods) and uncancelable when the cause is an irreversible change operation on the collection.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,8 +35,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.CurrentChangingEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value of the <xref:System.ComponentModel.CurrentChangingEventArgs.IsCancelable%2A> property is `true`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -43,8 +59,8 @@
         <Parameter Name="isCancelable" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="isCancelable">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="isCancelable">A value that indicates whether the event is cancelable.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.CurrentChangingEventArgs" /> class with the specified <paramref name="isCancelable" /> value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,9 +77,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether to cancel the event.</summary>
+        <value>
+          <see langword="true" /> if the event is to be canceled; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">If the value of <see cref="P:System.ComponentModel.CurrentChangingEventArgs.IsCancelable" /> is <see langword="false" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsCancelable">
@@ -79,9 +97,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the event is cancelable.</summary>
+        <value>
+          <see langword="true" /> if the event is cancelable, otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the event is cancelable when the cause is a move-current operation (such as the <xref:System.ComponentModel.ICollectionView.MoveCurrentTo%2A> and similar methods) and uncancelable when the cause is an irreversible change operation on the collection.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

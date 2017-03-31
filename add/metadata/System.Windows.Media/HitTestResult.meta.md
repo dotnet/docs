@@ -1,9 +1,13 @@
 ---
 uid: System.Windows.Media.HitTestResult
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.HitTestResult.VisualHit
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

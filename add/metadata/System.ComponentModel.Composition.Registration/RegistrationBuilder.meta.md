@@ -1,49 +1,88 @@
 ---
 uid: System.ComponentModel.Composition.Registration.RegistrationBuilder
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Registration.RegistrationBuilder.GetCustomAttributes(System.Reflection.ParameterInfo,System.Collections.Generic.IEnumerable{System.Object})
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Composition.Registration.RegistrationBuilder.GetCustomAttributes
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Registration.RegistrationBuilder.ForType``1
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Registration.RegistrationBuilder.ForTypesDerivedFrom(System.Type)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Registration.RegistrationBuilder.ForTypesMatching``1(System.Predicate{System.Type})
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Registration.RegistrationBuilder.ForTypesMatching(System.Predicate{System.Type})
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Registration.RegistrationBuilder.GetCustomAttributes(System.Reflection.MemberInfo,System.Collections.Generic.IEnumerable{System.Object})
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Composition.Registration.RegistrationBuilder.ForType
+---
+
+---
+uid: System.ComponentModel.Composition.Registration.RegistrationBuilder.ForTypesMatching
+---
+
+---
+uid: System.ComponentModel.Composition.Registration.RegistrationBuilder.ForTypesDerivedFrom
 ---
 
 ---
 uid: System.ComponentModel.Composition.Registration.RegistrationBuilder.#ctor
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Registration.RegistrationBuilder.ForTypesDerivedFrom``1
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Registration.RegistrationBuilder.ForType(System.Type)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

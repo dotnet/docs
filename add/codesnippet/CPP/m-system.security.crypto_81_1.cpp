@@ -1,1 +1,0 @@
-   String^ sha1Oid = CryptoConfig::MapNameToOID( L"SHA1" );

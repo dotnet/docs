@@ -20,8 +20,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the AppSequence header defined in version 1.1 of the WS-Discovery Protocol.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class allows a receiver of discovery messages to process those messages in order even though they were received out of order.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="FromDiscoveryMessageSequence">
@@ -40,9 +47,9 @@
         <Parameter Name="discoveryMessageSequence" Type="System.ServiceModel.Discovery.DiscoveryMessageSequence" />
       </Parameters>
       <Docs>
-        <param name="discoveryMessageSequence">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="discoveryMessageSequence">The discovery message sequence.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Discovery.Version11.DiscoveryMessageSequence11" /> class from the specified <see cref="T:System.ServiceModel.Discovery.DiscoveryMessageSequence" /> instance.</summary>
+        <returns>An <see cref="T:System.ServiceModel.Discovery.Version11.DiscoveryMessageSequence11" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,8 +67,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the schema for the AppSequence header as defined in version 1.1 of the WS-Discovery protocol.</summary>
+        <returns>The schema for the AppSequence header.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,9 +88,9 @@
         <Parameter Name="schemaSet" Type="System.Xml.Schema.XmlSchemaSet" />
       </Parameters>
       <Docs>
-        <param name="schemaSet">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="schemaSet">The schema set.</param>
+        <summary>Gets the schema for the AppSequence header as defined in version 1.1 of the WS-Discovery protocol and adds it to the specified schema set if the schema set does not already contain the schema.</summary>
+        <returns>The XML-qualified name of the schema.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,8 +110,8 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="reader">The XML reader to read from.</param>
+        <summary>Reads a discovery message sequence from XML.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,8 +129,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Discovery.DiscoveryMessageSequence" /> class from the current <see cref="T:System.ServiceModel.Discovery.Version11.DiscoveryMessageSequence11" /> instance.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Discovery.DiscoveryMessageSequence" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,8 +150,8 @@
         <Parameter Name="writer" Type="System.Xml.XmlWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The XML writer to write to.</param>
+        <summary>Writes the <see cref="T:System.ServiceModel.Discovery.Version11.DiscoveryMessageSequence11" /> instance to XML.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

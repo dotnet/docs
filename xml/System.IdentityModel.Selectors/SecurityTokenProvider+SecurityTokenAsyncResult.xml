@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Encapsulates the results of an asynchronous operation on a delegate.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,10 +34,10 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="token">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="token">A security token with which to instantiate the <see cref="T:System.IdentityModel.Selectors.SecurityTokenProvider.SecurityTokenAsyncResult" /></param>
+        <param name="callback">The callback method to be called when the asynchronous operation completes.</param>
+        <param name="state">The object provided as the last parameter of the asynchronous method call.</param>
+        <summary>Creates a new instance of <see cref="T:System.IdentityModel.Selectors.SecurityTokenProvider.SecurityTokenAsyncResult" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,8 +54,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the object passed as the last parameter of the asynchronous method call.</summary>
+        <value>Returns <see cref="T:System.Object" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,8 +72,8 @@
         <ReturnType>System.Threading.WaitHandle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.Threading.WaitHandle" /> that encapsulates Win32 synchronization handles.</summary>
+        <value>Returns <see cref="T:System.Threading.WaitHandle" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,8 +90,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns <see langword="true" /> if the call completed asynchronously; otherwise, <see langword="false" />.</summary>
+        <value>Returns <see cref="T:System.Boolean" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,9 +111,9 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="result">The result of the asynchronous operation.</param>
+        <summary>Complete the asynchronous operation with the specified result.</summary>
+        <returns>Returns <see cref="T:System.IdentityModel.Tokens.SecurityToken" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -130,8 +130,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns <see langword="true" /> if the asynchronous call is completed; otherwise, <see langword="false" />.</summary>
+        <value>Returns <see cref="T:System.Boolean" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

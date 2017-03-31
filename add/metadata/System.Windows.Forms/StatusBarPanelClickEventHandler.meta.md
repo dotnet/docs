@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Forms.StatusBarPanelClickEventHandler
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

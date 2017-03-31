@@ -1,14 +1,17 @@
 ---
 uid: Microsoft.Build.Construction.ProjectOnErrorElement
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.ProjectOnErrorElement.ExecuteTargetsAttribute
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.ProjectOnErrorElement.ExecuteTargetsLocation
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

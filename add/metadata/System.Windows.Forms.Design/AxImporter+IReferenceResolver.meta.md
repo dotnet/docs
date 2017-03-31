@@ -1,24 +1,40 @@
 ---
 uid: System.Windows.Forms.Design.AxImporter.IReferenceResolver
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.Design.AxImporter.IReferenceResolver.ResolveComReference
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.AxImporter.IReferenceResolver.ResolveComReference(System.Runtime.InteropServices.UCOMITypeLib)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.AxImporter.IReferenceResolver.ResolveManagedReference(System.String)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.Design.AxImporter.IReferenceResolver.ResolveActiveXReference(System.Runtime.InteropServices.UCOMITypeLib)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.AxImporter.IReferenceResolver.ResolveComReference(System.Reflection.AssemblyName)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

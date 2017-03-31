@@ -1,4 +1,6 @@
 ---
 uid: System.Drawing.Drawing2D.InterpolationMode
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -16,8 +16,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains XML namespace and prefix information for the decorated class.  This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,10 +43,12 @@
         <Parameter Name="prefix" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="xmlNamespace">To be added.</param>
-        <param name="prefix">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="xmlNamespace">A <see cref="T:System.String" /> that contains the value for <see cref="P:System.Workflow.ComponentModel.Serialization.XmlnsPrefixAttribute.XmlNamespace" />.</param>
+        <param name="prefix">A <see cref="T:System.String" /> that contains the value for <see cref="P:System.Workflow.ComponentModel.Serialization.XmlnsPrefixAttribute.Prefix" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Serialization.XmlnsPrefixAttribute" /> class, initializing <see cref="P:System.Workflow.ComponentModel.Serialization.XmlnsPrefixAttribute.XmlNamespace" /> and <see cref="P:System.Workflow.ComponentModel.Serialization.XmlnsPrefixAttribute.Prefix" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="prefix" /> is a null reference (Visual Basic <see langword="Nothing" />).</exception>
       </Docs>
     </Member>
     <Member MemberName="Prefix">
@@ -53,8 +64,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.String" /> that contains the value of the prefix for the decorated class.</summary>
+        <value>The <see cref="T:System.String" /> that contains the value of the prefix for the decorated class.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,8 +82,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.String" /> that contains the value of the XML namespace for the decorated class.</summary>
+        <value>The <see cref="T:System.String" /> that contains the value of the XML namespace for the decorated class.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

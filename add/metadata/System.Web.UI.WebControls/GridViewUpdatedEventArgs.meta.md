@@ -1,44 +1,53 @@
 ---
 uid: System.Web.UI.WebControls.GridViewUpdatedEventArgs
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.GridViewUpdatedEventArgs.ExceptionHandled
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.GridViewUpdatedEventArgs.Exception
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.GridViewUpdatedEventArgs.AffectedRows
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.GridViewUpdatedEventArgs.KeepInEditMode
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.GridViewUpdatedEventArgs.#ctor(System.Int32,System.Exception)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.GridViewUpdatedEventArgs.OldValues
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.GridViewUpdatedEventArgs.NewValues
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.GridViewUpdatedEventArgs.Keys
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

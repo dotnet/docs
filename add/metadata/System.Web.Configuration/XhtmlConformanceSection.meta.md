@@ -1,14 +1,17 @@
 ---
 uid: System.Web.Configuration.XhtmlConformanceSection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.XhtmlConformanceSection.Mode
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.XhtmlConformanceSection.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

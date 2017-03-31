@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides cookie compression using <see cref="T:System.IO.Compression.DeflateStream" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.DeflateCookieTransform" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,10 +46,15 @@
         <Parameter Name="encoded" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="encoded">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="encoded">Data previously returned from <see cref="M:System.IdentityModel.DeflateCookieTransform.Encode(System.Byte[])" /></param>
+        <summary>Inflates data.</summary>
+        <returns>The decoded data.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> contains zero bytes.</exception>
+        <exception cref="T:System.IdentityModel.Tokens.SecurityTokenException">The decompressed length is larger than the maximum length specified by the <see cref="P:System.IdentityModel.DeflateCookieTransform.MaxDecompressedSize" /> property.</exception>
       </Docs>
     </Member>
     <Member MemberName="Encode">
@@ -68,10 +73,14 @@
         <Parameter Name="value" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The data to be compressed.</param>
+        <summary>Deflates data.</summary>
+        <returns>The compressed data.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> contains zero bytes.</exception>
       </Docs>
     </Member>
     <Member MemberName="MaxDecompressedSize">
@@ -87,8 +96,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the maximum size, in bytes, of a decompressed cookie.</summary>
+        <value>The maximum size, in bytes, of a decompressed cookie.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

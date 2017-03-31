@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains values used as identifiers for <see cref="T:System.Windows.Automation.Provider.IRangeValueProvider" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ These values are used by UI Automation providers. UI Automation client applications should use the equivalent fields in <xref:System.Windows.Automation.TransformPattern>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="IsReadOnlyProperty">
@@ -28,8 +35,15 @@
         <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.Provider.IRangeValueProvider.IsReadOnly" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation providers. UI Automation client applications should use the equivalent field in <xref:System.Windows.Automation.RangeValuePattern>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LargeChangeProperty">
@@ -45,8 +59,15 @@
         <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.Provider.IRangeValueProvider.LargeChange" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation providers. UI Automation client applications should use the equivalent field in <xref:System.Windows.Automation.RangeValuePattern>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MaximumProperty">
@@ -62,8 +83,15 @@
         <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.Provider.IRangeValueProvider.Maximum" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation providers. UI Automation client applications should use the equivalent field in <xref:System.Windows.Automation.RangeValuePattern>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MinimumProperty">
@@ -79,8 +107,15 @@
         <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.Provider.IRangeValueProvider.Minimum" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation providers. UI Automation client applications should use the equivalent field in <xref:System.Windows.Automation.RangeValuePattern>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Pattern">
@@ -96,8 +131,17 @@
         <ReturnType>System.Windows.Automation.AutomationPattern</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Identifies this pattern as a <see cref="T:System.Windows.Automation.RangeValuePattern" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation providers. UI Automation client applications should use the equivalent field in <xref:System.Windows.Automation.RangeValuePattern>.  
+  
+ The pattern [!INCLUDE[TLA#tla_id](~/includes/tlasharptla-id-md.md)] is passed to methods such as <xref:System.Windows.Automation.AutomationElement.GetCurrentPattern%2A> to specify the pattern to return.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SmallChangeProperty">
@@ -113,8 +157,15 @@
         <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.Provider.IRangeValueProvider.SmallChange" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation providers. UI Automation client applications should use the equivalent field in <xref:System.Windows.Automation.RangeValuePattern>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ValueProperty">
@@ -130,8 +181,15 @@
         <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.Provider.IRangeValueProvider.Value" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation providers. UI Automation client applications should use the equivalent field in <xref:System.Windows.Automation.RangeValuePattern>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,1 +1,0 @@
-            SyndicationFeed feed = new SyndicationFeed("My Data Feed", "This is a sample feed", new Uri("http://localhost/MyDataService"));

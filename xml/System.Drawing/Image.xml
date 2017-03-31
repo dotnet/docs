@@ -35,8 +35,30 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>An abstract base class that provides functionality for the <see cref="T:System.Drawing.Bitmap" /> and <see cref="T:System.Drawing.Imaging.Metafile" /> descended classes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To draw an <xref:System.Drawing.Image> on a Windows Form, you should use one of the <xref:System.Drawing.Graphics.DrawImage%2A> methods.  
+  
+   
+  
+## Examples  
+ The following code example is designed for use with Windows Forms. It is a handler for the <xref:System.Windows.Forms.Control.Paint> event. A <xref:System.Drawing.Graphics> object is passed to the event and is used to draw the image on the form. The code performs the following actions:  
+  
+-   Creates an image from a file named SampImag.jpg. This file must be located in the same folder as the application executable file.  
+  
+-   Creates a point at which to draw the upper-left corner of the image.  
+  
+-   Draws the unscaled image on the form.  
+  
+ [!code-cpp[System.Drawing.ClassicGraphicsExamples#55](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicGraphicsExamples/CPP/form1.cpp#55)]
+ [!code-csharp[System.Drawing.ClassicGraphicsExamples#55](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicGraphicsExamples/CS/form1.cs#55)]
+ [!code-vb[System.Drawing.ClassicGraphicsExamples#55](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicGraphicsExamples/VB/form1.vb#55)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Clone">
@@ -53,8 +75,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates an exact copy of this <see cref="T:System.Drawing.Image" />.</summary>
+        <returns>The <see cref="T:System.Drawing.Image" /> this method creates, cast as an object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,8 +94,20 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Releases all resources used by this <see cref="T:System.Drawing.Image" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling the <xref:System.Drawing.Image.Dispose%2A> method allows the resources used by this <xref:System.Drawing.Image> to be reallocated for other purposes.  
+  
+ Call <xref:System.Drawing.Image.Dispose%2A> when you are finished using the <xref:System.Drawing.Image>. The <xref:System.Drawing.Image.Dispose%2A> method leaves the <xref:System.Drawing.Image> in an unusable state. After calling <xref:System.Drawing.Image.Dispose%2A>, you must release all references to the <xref:System.Drawing.Image> so the garbage collector can reclaim the memory that the <xref:System.Drawing.Image> was occupying. For more information, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+  
+> [!NOTE]
+>  Always call <xref:System.Drawing.Image.Dispose%2A> before you release your last reference to the <xref:System.Drawing.Image>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Drawing.Image> object's `Finalize` method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -92,9 +126,19 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Drawing.Image" /> and optionally releases the managed resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Always call <xref:System.Drawing.Image.Dispose%2A> before you release your last reference to the <xref:System.Drawing.Image>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Drawing.Image> object's `Finalize` method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -111,7 +155,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,9 +177,35 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets attribute flags for the pixel data of this <see cref="T:System.Drawing.Image" />.</summary>
+        <value>The integer representing a bitwise combination of <see cref="T:System.Drawing.Imaging.ImageFlags" /> for this <see cref="T:System.Drawing.Image" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The integer value returned from this method will correspond to a sum of <xref:System.Drawing.Imaging.ImageFlags>, as described in the following table.  
+  
+|ImageFlag value|Integer representation|  
+|---------------------|----------------------------|  
+|`ImageFlagsNone`|0|  
+|`ImageFlagsScalable`|1|  
+|`ImageFlagsHasAlpha`|2|  
+|`ImageFlagsHasTranslucent`|4|  
+|`ImageFlagsPartiallyScalable`|8|  
+|`ImageFlagsColorSpaceRGB`|16|  
+|`ImageFlagsColorSpaceCMYK`|32|  
+|`ImageFlagsColorSpaceGRAY`|64|  
+|`ImageFlagsColorSpaceYCBCR`|128|  
+|`ImageFlagsColorSpaceYCCK`|256|  
+|`ImageFlagsHasRealDPI`|4096|  
+|`ImageFlagsHasRealPixelSize`|8192|  
+|`ImageFlagsReadOnly`|65536|  
+|`ImageFlagsCaching`|131072|  
+  
+ For example, if the <xref:System.Drawing.Image.Flags%2A> property for an image returned 77960, the <xref:System.Drawing.Imaging.ImageFlags> for the image would be <xref:System.Drawing.Imaging.ImageFlags>, <xref:System.Drawing.Imaging.ImageFlags>, <xref:System.Drawing.Imaging.ImageFlags>, <xref:System.Drawing.Imaging.ImageFlags>, and <xref:System.Drawing.Imaging.ImageFlags>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FrameDimensionsList">
@@ -156,9 +226,20 @@
         <ReturnType>System.Guid[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets an array of GUIDs that represent the dimensions of frames within this <see cref="T:System.Drawing.Image" />.</summary>
+        <value>An array of GUIDs that specify the dimensions of frames within this <see cref="T:System.Drawing.Image" /> from most significant to least significant.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns information about multiple-frame images, which come in two styles: multiple page and multiple resolution.  
+  
+ A multiple-page image is an image that contains more than one image. Each page contains a single image (or frame). These pages (or images, or frames) are typically displayed in succession to produce an animated sequence, such as an animated .gif file.  
+  
+ A multiple-resolution image is an image that contains more than one copy of an image at different resolutions. This is commonly used by MIP mapping where the displayed image size determines the resolution of the image used for drawing. [!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)] can support an arbitrary number of pages (or images, or frames), as well as an arbitrary number of resolutions. The defined dimensions are properties of the <xref:System.Drawing.Imaging.FrameDimension>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FromFile">
@@ -177,10 +258,51 @@
         <Parameter Name="filename" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="filename">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="filename">A string that contains the name of the file from which to create the <see cref="T:System.Drawing.Image" />.</param>
+        <summary>Creates an <see cref="T:System.Drawing.Image" /> from the specified file.</summary>
+        <returns>The <see cref="T:System.Drawing.Image" /> this method creates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Managed GDI+ has built-in encoders and decoders that support the following file types:  
+  
+-   BMP  
+  
+-   GIF  
+  
+-   JPEG  
+  
+-   PNG  
+  
+-   TIFF  
+  
+ The file remains locked until the <xref:System.Drawing.Image> is disposed.  
+  
+ If the file does not have a valid image format or if [!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)] does not support the pixel format of the file, this method throws an <xref:System.OutOfMemoryException> exception.  
+  
+> [!NOTE]
+>  The <xref:System.Drawing.Image> class does not support alpha transparency in bitmaps. To enable alpha transparency, use PNG images with 32 bits per pixel.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Drawing.Image.FromFile%2A><xref:System.Drawing.Image.GetPropertyItem%2A> and <xref:System.Drawing.Image.SetPropertyItem%2A> methods. This example is designed to be used with Windows Forms. To run this example, paste it into a form, and handle the form's <xref:System.Windows.Forms.Control.Paint> event by calling the `DemonstratePropertyItem` method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-cpp[System.Drawing.ImageExample#7](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ImageExample/CPP/form1.cpp#7)]
+ [!code-csharp[System.Drawing.ImageExample#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ImageExample/CS/form1.cs#7)]
+ [!code-vb[System.Drawing.ImageExample#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ImageExample/VB/form1.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.OutOfMemoryException">The file does not have a valid image format.  
+  
+ -or-  
+  
+ [!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)] does not support the pixel format of the file.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">The specified file does not exist.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="filename" /> is a <see cref="T:System.Uri" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="FromFile">
@@ -200,11 +322,56 @@
         <Parameter Name="useEmbeddedColorManagement" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="filename">To be added.</param>
-        <param name="useEmbeddedColorManagement">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="filename">A string that contains the name of the file from which to create the <see cref="T:System.Drawing.Image" />.</param>
+        <param name="useEmbeddedColorManagement">Set to <see langword="true" /> to use color management information embedded in the image file; otherwise, <see langword="false" />.</param>
+        <summary>Creates an <see cref="T:System.Drawing.Image" /> from the specified file using embedded color management information in that file.</summary>
+        <returns>The <see cref="T:System.Drawing.Image" /> this method creates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Managed GDI+ has built-in encoders and decoders that support the following file types:  
+  
+-   BMP  
+  
+-   GIF  
+  
+-   JPEG  
+  
+-   PNG  
+  
+-   TIFF  
+  
+ If the file does not have a valid image format or if [!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)] does not support the pixel format of the file, this method throws an <xref:System.OutOfMemoryException> exception.  
+  
+ The file remains locked until the <xref:System.Drawing.Image> is disposed.  
+  
+ The `useEmbeddedColorManagement` parameter specifies whether the new <xref:System.Drawing.Image> applies color correction according to color management information that is embedded in the image file. Embedded information can include International Color Consortium (ICC) profiles, gamma values, and chromaticity information.  
+  
+> [!NOTE]
+>  The <xref:System.Drawing.Image> class does not support alpha transparency in bitmaps. To enable alpha transparency, use PNG images with 32 bits per pixel.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to obtain a new bitmap using the <xref:System.Drawing.Image.FromFile%2A> method. It also demonstrates a <xref:System.Drawing.TextureBrush>.  
+  
+ This example is designed to be used with Windows Forms. Create a form containing a button named `Button2`. Paste the code into the form and associate the `Button2_Click` method with the button's <xref:System.Windows.Forms.Control.Click> event.  
+  
+ [!code-cpp[System.Drawing.ImageExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ImageExample/CPP/form1.cpp#2)]
+ [!code-csharp[System.Drawing.ImageExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ImageExample/CS/form1.cs#2)]
+ [!code-vb[System.Drawing.ImageExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ImageExample/VB/form1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.OutOfMemoryException">The file does not have a valid image format.  
+  
+ -or-  
+  
+ [!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)] does not support the pixel format of the file.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">The specified file does not exist.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="filename" /> is a <see cref="T:System.Uri" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="FromHbitmap">
@@ -223,10 +390,17 @@
         <Parameter Name="hbitmap" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="hbitmap">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="hbitmap">The [!INCLUDE[ndptecgdi](~/includes/ndptecgdi-md.md)] bitmap handle from which to create the <see cref="T:System.Drawing.Bitmap" />.</param>
+        <summary>Creates a <see cref="T:System.Drawing.Bitmap" /> from a handle to a GDI bitmap.</summary>
+        <returns>The <see cref="T:System.Drawing.Bitmap" /> this method creates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Drawing.Image.FromHbitmap%2A> method makes a copy of the [!INCLUDE[ndptecgdi](~/includes/ndptecgdi-md.md)] bitmap; so you can release the incoming [!INCLUDE[ndptecgdi](~/includes/ndptecgdi-md.md)] bitmap using the [!INCLUDE[ndptecgdi](~/includes/ndptecgdi-md.md)] `DeleteObject` method immediately after creating the new <xref:System.Drawing.Image>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FromHbitmap">
@@ -246,11 +420,18 @@
         <Parameter Name="hpalette" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="hbitmap">To be added.</param>
-        <param name="hpalette">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="hbitmap">The [!INCLUDE[ndptecgdi](~/includes/ndptecgdi-md.md)] bitmap handle from which to create the <see cref="T:System.Drawing.Bitmap" />.</param>
+        <param name="hpalette">A handle to a [!INCLUDE[ndptecgdi](~/includes/ndptecgdi-md.md)] palette used to define the bitmap colors if the bitmap specified in the <c>hBitmap</c> parameter is not a device-independent bitmap (DIB).</param>
+        <summary>Creates a <see cref="T:System.Drawing.Bitmap" /> from a handle to a GDI bitmap and a handle to a GDI palette.</summary>
+        <returns>The <see cref="T:System.Drawing.Bitmap" /> this method creates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Drawing.Image.FromHbitmap%2A> method makes a copy of the [!INCLUDE[ndptecgdi](~/includes/ndptecgdi-md.md)] bitmap; so you can release the incoming [!INCLUDE[ndptecgdi](~/includes/ndptecgdi-md.md)] bitmap using the [!INCLUDE[ndptecgdi](~/includes/ndptecgdi-md.md)] `DeleteObject` method immediately after creating the new <xref:System.Drawing.Image>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FromStream">
@@ -269,10 +450,27 @@
         <Parameter Name="stream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="stream">A <see cref="T:System.IO.Stream" /> that contains the data for this <see cref="T:System.Drawing.Image" />.</param>
+        <summary>Creates an <see cref="T:System.Drawing.Image" /> from the specified data stream.</summary>
+        <returns>The <see cref="T:System.Drawing.Image" /> this method creates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You must keep the stream open for the lifetime of the <xref:System.Drawing.Image>.  
+  
+ The stream is reset to zero if this method is called successively with the same stream.  
+  
+> [!NOTE]
+>  The <xref:System.Drawing.Image> class does not support alpha transparency in bitmaps. To enable alpha transparency, use PNG images with 32 bits per pixel.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The stream does not have a valid image format  
+  
+ -or-  
+  
+ <paramref name="stream" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="FromStream">
@@ -292,11 +490,31 @@
         <Parameter Name="useEmbeddedColorManagement" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <param name="useEmbeddedColorManagement">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="stream">A <see cref="T:System.IO.Stream" /> that contains the data for this <see cref="T:System.Drawing.Image" />.</param>
+        <param name="useEmbeddedColorManagement">
+          <see langword="true" /> to use color management information embedded in the data stream; otherwise, <see langword="false" />.</param>
+        <summary>Creates an <see cref="T:System.Drawing.Image" /> from the specified data stream, optionally using embedded color management information in that stream.</summary>
+        <returns>The <see cref="T:System.Drawing.Image" /> this method creates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You must keep the stream open for the lifetime of the <xref:System.Drawing.Image>.  
+  
+ The `useEmbeddedColorManagement` parameter specifies whether the new <xref:System.Drawing.Image> applies color correction according to color management information that is embedded in the data stream. Embedded information can include International Color Consortium (ICC) profiles, gamma values, and chromaticity information.  
+  
+ The stream is reset to zero if this method is called successively with the same stream.  
+  
+> [!NOTE]
+>  The <xref:System.Drawing.Image> class does not support alpha transparency in bitmaps. To enable alpha transparency, use PNG images with 32 bits per pixel.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The stream does not have a valid image format  
+  
+ -or-  
+  
+ <paramref name="stream" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="FromStream">
@@ -317,12 +535,25 @@
         <Parameter Name="validateImageData" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <param name="useEmbeddedColorManagement">To be added.</param>
-        <param name="validateImageData">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="stream">A <see cref="T:System.IO.Stream" /> that contains the data for this <see cref="T:System.Drawing.Image" />.</param>
+        <param name="useEmbeddedColorManagement">
+          <see langword="true" /> to use color management information embedded in the data stream; otherwise, <see langword="false" />.</param>
+        <param name="validateImageData">
+          <see langword="true" /> to validate the image data; otherwise, <see langword="false" />.</param>
+        <summary>Creates an <see cref="T:System.Drawing.Image" /> from the specified data stream, optionally using embedded color management information and validating the image data.</summary>
+        <returns>The <see cref="T:System.Drawing.Image" /> this method creates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `useEmbeddedColorManagement` parameter specifies whether the new <xref:System.Drawing.Image> applies color correction according to color management information that is embedded in the data stream. Embedded information can include International Color Consortium (ICC) profiles, gamma values, and chromaticity information.  
+  
+> [!NOTE]
+>  The <xref:System.Drawing.Image> class does not support alpha transparency in bitmaps. To enable alpha transparency, use PNG images with 32 bits per pixel.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The stream does not have a valid image format.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetBounds">
@@ -341,10 +572,23 @@
         <Parameter Name="pageUnit" Type="System.Drawing.GraphicsUnit&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="pageUnit">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="pageUnit">One of the <see cref="T:System.Drawing.GraphicsUnit" /> values indicating the unit of measure for the bounding rectangle.</param>
+        <summary>Gets the bounds of the image in the specified unit.</summary>
+        <returns>The <see cref="T:System.Drawing.RectangleF" /> that represents the bounds of the image, in the specified unit.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to load a bitmap from an <xref:System.Drawing.Icon> handle, using the <xref:System.Drawing.GraphicsUnit> enumeration, and how to use the <xref:System.Drawing.Rectangle.Round%2A> method to draw the rectangle bounds of a bitmap.  
+  
+ This example is designed to be used with Windows Forms. Create a form that contains a button named `Button2`. Paste the code into the form and associate this method with the button's <xref:System.Windows.Forms.Control.Click> event.  
+  
+ [!code-cpp[System.Drawing.BitmapMembers#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.BitmapMembers/CPP/form1.cpp#1)]
+ [!code-csharp[System.Drawing.BitmapMembers#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.BitmapMembers/CS/form1.cs#1)]
+ [!code-vb[System.Drawing.BitmapMembers#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.BitmapMembers/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEncoderParameterList">
@@ -363,9 +607,9 @@
         <Parameter Name="encoder" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="encoder">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="encoder">A GUID that specifies the image encoder.</param>
+        <summary>Returns information about the parameters supported by the specified image encoder.</summary>
+        <returns>An <see cref="T:System.Drawing.Imaging.EncoderParameters" /> that contains an array of <see cref="T:System.Drawing.Imaging.EncoderParameter" /> objects. Each <see cref="T:System.Drawing.Imaging.EncoderParameter" /> contains information about one of the parameters supported by the specified image encoder.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -385,10 +629,21 @@
         <Parameter Name="dimension" Type="System.Drawing.Imaging.FrameDimension" />
       </Parameters>
       <Docs>
-        <param name="dimension">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="dimension">A <see cref="T:System.Drawing.Imaging.FrameDimension" /> that specifies the identity of the dimension type.</param>
+        <summary>Returns the number of frames of the specified dimension.</summary>
+        <returns>The number of frames in the specified dimension.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns information about multiple-frame images, which come in two styles: multiple page and multiple resolution.  
+  
+ A multiple-page image is an image that contains more than one image. Each page contains a single image (or frame). These pages (or images, or frames) are typically displayed in succession to produce an animated sequence, such as an animated .gif file.  
+  
+ A multiple-resolution image is an image that contains more than one copy of an image at different resolutions. This is commonly used by MIP mapping where the displayed image size determines the resolution of the image used for drawing. [!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)] can support an arbitrary number of pages (or images, or frames), as well as an arbitrary number of resolutions. The defined dimensions are properties of the <xref:System.Drawing.Imaging.FrameDimension>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetPixelFormatSize">
@@ -407,9 +662,9 @@
         <Parameter Name="pixfmt" Type="System.Drawing.Imaging.PixelFormat" />
       </Parameters>
       <Docs>
-        <param name="pixfmt">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="pixfmt">The <see cref="T:System.Drawing.Imaging.PixelFormat" /> member that specifies the format for which to find the size.</param>
+        <summary>Returns the color depth, in number of bits per pixel, of the specified pixel format.</summary>
+        <returns>The color depth of the specified pixel format.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -429,10 +684,29 @@
         <Parameter Name="propid" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="propid">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="propid">The ID of the property item to get.</param>
+        <summary>Gets the specified property item from this <see cref="T:System.Drawing.Image" />.</summary>
+        <returns>The <see cref="T:System.Drawing.Imaging.PropertyItem" /> this method gets.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For a list of property item IDs and links to more information, see <xref:System.Drawing.Imaging.PropertyItem.Id%2A>.  
+  
+ It is difficult to set property items, because the <xref:System.Drawing.Imaging.PropertyItem> class has no public constructors. One way to work around this restriction is to obtain a <xref:System.Drawing.Imaging.PropertyItem> by retrieving the <xref:System.Drawing.Image.PropertyItems%2A> property value or calling the <xref:System.Drawing.Image.GetPropertyItem%2A> method of an <xref:System.Drawing.Image> that already has property items. Then you can set the fields of the <xref:System.Drawing.Imaging.PropertyItem> and pass it to <xref:System.Drawing.Image.SetPropertyItem%2A>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Drawing.Image.GetPropertyItem%2A> and <xref:System.Drawing.Image.SetPropertyItem%2A> methods. This example calls <xref:System.Drawing.Image.GetPropertyItem%2A> passing an ID value. For a list of ID values see, <xref:System.Drawing.Imaging.PropertyItem.Id%2A>. This example is designed to be used with Windows Forms. To run this example, paste it into a form, and handle the form's <xref:System.Windows.Forms.Control.Paint> event by calling the `DemonstratePropertyItem` method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-cpp[System.Drawing.ImageExample#7](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ImageExample/CPP/form1.cpp#7)]
+ [!code-csharp[System.Drawing.ImageExample#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ImageExample/CS/form1.cs#7)]
+ [!code-vb[System.Drawing.ImageExample#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ImageExample/VB/form1.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The image format of this image does not support property items.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetThumbnailImage">
@@ -454,13 +728,32 @@
         <Parameter Name="callbackData" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="thumbWidth">To be added.</param>
-        <param name="thumbHeight">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="callbackData">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="thumbWidth">The width, in pixels, of the requested thumbnail image.</param>
+        <param name="thumbHeight">The height, in pixels, of the requested thumbnail image.</param>
+        <param name="callback">A <see cref="T:System.Drawing.Image.GetThumbnailImageAbort" /> delegate.  
+  
+ **Note** You must create a delegate and pass a reference to the delegate as the <c>callback</c> parameter, but the delegate is not used.</param>
+        <param name="callbackData">Must be <see cref="F:System.IntPtr.Zero" />.</param>
+        <summary>Returns a thumbnail for this <see cref="T:System.Drawing.Image" />.</summary>
+        <returns>An <see cref="T:System.Drawing.Image" /> that represents the thumbnail.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Drawing.Image> contains an embedded thumbnail image, this method retrieves the embedded thumbnail and scales it to the requested size. If the <xref:System.Drawing.Image> does not contain an embedded thumbnail image, this method creates a thumbnail image by scaling the main image.  
+  
+ The <xref:System.Drawing.Image.GetThumbnailImage%2A> method works well when the requested thumbnail image has a size of about 120 x 120 pixels. If you request a large thumbnail image (for example, 300 x 300) from an <xref:System.Drawing.Image> that has an embedded thumbnail, there could be a noticeable loss of quality in the thumbnail image. It might be better to scale the main image (instead of scaling the embedded thumbnail) by calling the <xref:System.Drawing.Graphics.DrawImage%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example creates and displays a thumbnail image. This delegate is never called.  
+  
+ [!code-csharp[System.Drawing.Misc3#GetThumbnail](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Misc3/CS/Form1.cs#getthumbnail)]
+ [!code-vb[System.Drawing.Misc3#GetThumbnail](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Misc3/VB/Form1.vb#getthumbnail)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -487,9 +780,22 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the height, in pixels, of this <see cref="T:System.Drawing.Image" />.</summary>
+        <value>The height, in pixels, of this <see cref="T:System.Drawing.Image" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to construct a new bitmap from a file, using the <xref:System.Drawing.Bitmap.GetPixel%2A> and <xref:System.Drawing.Bitmap.SetPixel%2A> methods to recolor the image. It also uses the <xref:System.Drawing.Image.PixelFormat%2A> and <xref:System.Drawing.Image.Height%2A> properties.  
+  
+ This example is designed to be used with a Windows Forms that contains a <xref:System.Windows.Forms.Label>, <xref:System.Windows.Forms.PictureBox>, and <xref:System.Windows.Forms.Button> named `Label1`, `PictureBox1`, and `Button1`, respectively. Paste the code into the form and associate the `Button1_Click` method with the button's <xref:System.Windows.Forms.Control.Click> event.  
+  
+ [!code-cpp[System.Drawing.ImageExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ImageExample/CPP/form1.cpp#1)]
+ [!code-csharp[System.Drawing.ImageExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ImageExample/CS/form1.cs#1)]
+ [!code-vb[System.Drawing.ImageExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ImageExample/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalResolution">
@@ -505,8 +811,8 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the horizontal resolution, in pixels per inch, of this <see cref="T:System.Drawing.Image" />.</summary>
+        <value>The horizontal resolution, in pixels per inch, of this <see cref="T:System.Drawing.Image" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -526,9 +832,10 @@
         <Parameter Name="pixfmt" Type="System.Drawing.Imaging.PixelFormat" />
       </Parameters>
       <Docs>
-        <param name="pixfmt">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="pixfmt">The <see cref="T:System.Drawing.Imaging.PixelFormat" /> to test.</param>
+        <summary>Returns a value that indicates whether the pixel format for this <see cref="T:System.Drawing.Image" /> contains alpha information.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="pixfmt" /> contains alpha information; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -548,10 +855,18 @@
         <Parameter Name="pixfmt" Type="System.Drawing.Imaging.PixelFormat" />
       </Parameters>
       <Docs>
-        <param name="pixfmt">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="pixfmt">The <see cref="T:System.Drawing.Imaging.PixelFormat" /> to test.</param>
+        <summary>Returns a value that indicates whether the pixel format is 32 bits per pixel.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="pixfmt" /> is canonical; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The canonical pixel format indicates a pixel format of 32 bits per pixel. This format specifies 24-bit color depth and an 8-bit alpha channel.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsExtendedPixelFormat">
@@ -570,9 +885,10 @@
         <Parameter Name="pixfmt" Type="System.Drawing.Imaging.PixelFormat" />
       </Parameters>
       <Docs>
-        <param name="pixfmt">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="pixfmt">The <see cref="T:System.Drawing.Imaging.PixelFormat" /> enumeration to test.</param>
+        <summary>Returns a value that indicates whether the pixel format is 64 bits per pixel.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="pixfmt" /> is extended; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -594,9 +910,16 @@
         <ReturnType>System.Drawing.Imaging.ColorPalette</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the color palette used for this <see cref="T:System.Drawing.Image" />.</summary>
+        <value>A <see cref="T:System.Drawing.Imaging.ColorPalette" /> that represents the color palette used for this <see cref="T:System.Drawing.Image" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property returns a copy of the <xref:System.Drawing.Imaging.ColorPalette> object used by this <xref:System.Drawing.Image>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PhysicalDimension">
@@ -612,9 +935,16 @@
         <ReturnType>System.Drawing.SizeF</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the width and height of this image.</summary>
+        <value>A <see cref="T:System.Drawing.SizeF" /> structure that represents the width and height of this <see cref="T:System.Drawing.Image" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the image is a bitmap, the width and height are returned in pixels. If the image is a metafile, the width and height are returned in 0.01 millimeter units.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PixelFormat">
@@ -630,9 +960,22 @@
         <ReturnType>System.Drawing.Imaging.PixelFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the pixel format for this <see cref="T:System.Drawing.Image" />.</summary>
+        <value>A <see cref="T:System.Drawing.Imaging.PixelFormat" /> that represents the pixel format for this <see cref="T:System.Drawing.Image" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to construct a new bitmap from a file, using the <xref:System.Drawing.Bitmap.GetPixel%2A> and <xref:System.Drawing.Bitmap.SetPixel%2A> methods to recolor the image. It also uses the <xref:System.Drawing.Image.PixelFormat%2A> property.  
+  
+ This example is designed to be used with a Windows Form that contains a <xref:System.Windows.Forms.Label>, <xref:System.Windows.Forms.PictureBox> and <xref:System.Windows.Forms.Button> named `Label1`, `PictureBox1`, and `Button1`, respectively. Paste the code into the form and associate the `Button1_Click` method with the button's <xref:System.Windows.Forms.Control.Click> event.  
+  
+ [!code-cpp[System.Drawing.ImageExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ImageExample/CPP/form1.cpp#1)]
+ [!code-csharp[System.Drawing.ImageExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ImageExample/CS/form1.cs#1)]
+ [!code-vb[System.Drawing.ImageExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ImageExample/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PropertyIdList">
@@ -653,9 +996,16 @@
         <ReturnType>System.Int32[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets IDs of the property items stored in this <see cref="T:System.Drawing.Image" />.</summary>
+        <value>An array of the property IDs, one for each property item stored in this image.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the image has no property items or if the image format does not support property items, the <xref:System.Drawing.Image.PropertyIdList%2A> property returns an empty array (that is, an array of length zero).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PropertyItems">
@@ -676,9 +1026,27 @@
         <ReturnType>System.Drawing.Imaging.PropertyItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets all the property items (pieces of metadata) stored in this <see cref="T:System.Drawing.Image" />.</summary>
+        <value>An array of <see cref="T:System.Drawing.Imaging.PropertyItem" /> objects, one for each property item stored in the image.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the image has no property items or if the image format does not support property items, <xref:System.Drawing.Image.PropertyItems%2A> returns an empty array (that is, an array of length zero).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to read and display the metadata in an image file using the <xref:System.Drawing.Imaging.PropertyItem?displayProperty=fullName> class and the <xref:System.Drawing.Image.PropertyItems%2A> property.  
+  
+ This example is designed to be used a Windows Form that imports the <xref:System.Drawing.Imaging?displayProperty=fullName> namespace. Paste the code into the form and change the path to `fakePhoto.jpg` to point to an image file on your system. Call the `ExtractMetaData` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-cpp[System.Drawing.ImageExample#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ImageExample/CPP/form1.cpp#6)]
+ [!code-csharp[System.Drawing.ImageExample#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ImageExample/CS/form1.cs#6)]
+ [!code-vb[System.Drawing.ImageExample#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ImageExample/VB/form1.vb#6)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RawFormat">
@@ -694,8 +1062,8 @@
         <ReturnType>System.Drawing.Imaging.ImageFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the file format of this <see cref="T:System.Drawing.Image" />.</summary>
+        <value>The <see cref="T:System.Drawing.Imaging.ImageFormat" /> that represents the file format of this <see cref="T:System.Drawing.Image" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -715,9 +1083,21 @@
         <Parameter Name="propid" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="propid">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="propid">The ID of the property item to remove.</param>
+        <summary>Removes the specified property item from this <see cref="T:System.Drawing.Image" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ It is difficult to set property items, because the <xref:System.Drawing.Imaging.PropertyItem> class has no public constructors. One way to work around this restriction is to obtain a <xref:System.Drawing.Imaging.PropertyItem> by retrieving the <xref:System.Drawing.Image.PropertyItems%2A> property value or calling the <xref:System.Drawing.Image.GetPropertyItem%2A> method of an <xref:System.Drawing.Image> that already has property items. Then you can set the fields of the <xref:System.Drawing.Imaging.PropertyItem> and pass it to <xref:System.Drawing.Image.SetPropertyItem%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The image does not contain the requested property item.  
+  
+ -or-  
+  
+ The image format for this image does not support property items.</exception>
       </Docs>
     </Member>
     <Member MemberName="RotateFlip">
@@ -736,9 +1116,29 @@
         <Parameter Name="rotateFlipType" Type="System.Drawing.RotateFlipType" />
       </Parameters>
       <Docs>
-        <param name="rotateFlipType">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="rotateFlipType">A <see cref="T:System.Drawing.RotateFlipType" /> member that specifies the type of rotation and flip to apply to the image.</param>
+        <summary>Rotates, flips, or rotates and flips the <see cref="T:System.Drawing.Image" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Drawing.Image.RotateFlip%2A> method rotates the image clockwise.  
+  
+ If you wish to draw on an image once it has been rotated, you should always retrieve a new graphics object from the image, otherwise an exception could occur.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to call the <xref:System.Drawing.Image.RotateFlip%2A> method on an <xref:System.Drawing.Image> and the <xref:System.Drawing.RotateFlipType> enumeration.  
+  
+ This example is designed to be used with a Windows Form that contains a <xref:System.Windows.Forms.PictureBox> named `PictureBox1` and a button named `Button1`. Paste the code into a form, call `InitializeBitmap` from the form's constructor, and associate `Button1_Click` with the button's <xref:System.Windows.Forms.Control.Click> event. Ensure the file path to the bitmap is valid on your system.  
+  
+ [!code-cpp[System.Drawing.BitmapMembers#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.BitmapMembers/CPP/form1.cpp#3)]
+ [!code-csharp[System.Drawing.BitmapMembers#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.BitmapMembers/CS/form1.cs#3)]
+ [!code-vb[System.Drawing.BitmapMembers#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.BitmapMembers/VB/form1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -757,9 +1157,34 @@
         <Parameter Name="filename" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="filename">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="filename">A string that contains the name of the file to which to save this <see cref="T:System.Drawing.Image" />.</param>
+        <summary>Saves this <see cref="T:System.Drawing.Image" /> to the specified file or stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If no encoder exists for the file format of the image, the Portable Network Graphics (PNG) encoder is used. When you use the <xref:System.Drawing.Image.Save%2A> method to save a graphic image as a Windows Metafile Format (WMF) or Enhanced Metafile Format (EMF) file, the resulting file is saved as a Portable Network Graphics (PNG) file. This behavior occurs because the [!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)] component of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] does not have an encoder that you can use to save files as .wmf or .emf files.  
+  
+ Saving the image to the same file it was constructed from is not allowed and throws an exception.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to call the <xref:System.Drawing.Image.Save%2A> method. This example is designed to be used with Windows Forms. Create a form that contains a button named `Button5`. Paste the code into the form, and associate the method with the button's <xref:System.Windows.Forms.Control.Click> event.  
+  
+ [!code-cpp[System.Drawing.ImageExample#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ImageExample/CPP/form1.cpp#5)]
+ [!code-csharp[System.Drawing.ImageExample#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ImageExample/CS/form1.cs#5)]
+ [!code-vb[System.Drawing.ImageExample#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ImageExample/VB/form1.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="filename" /> is <see langword="null." /></exception>
+        <exception cref="T:System.Runtime.InteropServices.ExternalException">The image was saved with the wrong image format.  
+  
+ -or-  
+  
+ The image was saved to the same file it was created from.</exception>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -779,10 +1204,22 @@
         <Parameter Name="format" Type="System.Drawing.Imaging.ImageFormat" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <param name="format">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="stream">The <see cref="T:System.IO.Stream" /> where the image will be saved.</param>
+        <param name="format">An <see cref="T:System.Drawing.Imaging.ImageFormat" /> that specifies the format of the saved image.</param>
+        <summary>Saves this image to the specified stream in the specified format.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You should avoid saving an image to the same stream that was used to construct it. Doing so might damage the stream.  
+  
+ The image must be saved to the stream at an offset of zero. If any additional data has been written to the stream before saving the image, the image data in the stream will be corrupted.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="stream" /> or <paramref name="format" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Runtime.InteropServices.ExternalException">The image was saved with the wrong image format</exception>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -802,10 +1239,28 @@
         <Parameter Name="format" Type="System.Drawing.Imaging.ImageFormat" />
       </Parameters>
       <Docs>
-        <param name="filename">To be added.</param>
-        <param name="format">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="filename">A string that contains the name of the file to which to save this <see cref="T:System.Drawing.Image" />.</param>
+        <param name="format">The <see cref="T:System.Drawing.Imaging.ImageFormat" /> for this <see cref="T:System.Drawing.Image" />.</param>
+        <summary>Saves this <see cref="T:System.Drawing.Image" /> to the specified file in the specified format.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to construct a bitmap from a type, and how to use the <xref:System.Drawing.Image.Save%2A> method. To run this example, paste the code into a Windows Form. Handle the form’s <xref:System.Windows.Forms.Control.Paint> event, and call the `ConstructFromResourceSaveAsGif` method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>  
+  
+ [!code-cpp[System.Drawing.BmpCtorAndSave#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.BmpCtorAndSave/cpp/form1.cpp#1)]
+ [!code-csharp[System.Drawing.BmpCtorAndSave#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.BmpCtorAndSave/CS/form1.cs#1)]
+ [!code-vb[System.Drawing.BmpCtorAndSave#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.BmpCtorAndSave/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="filename" /> or <paramref name="format" /> is <see langword="null." /></exception>
+        <exception cref="T:System.Runtime.InteropServices.ExternalException">The image was saved with the wrong image format.  
+  
+ -or-  
+  
+ The image was saved to the same file it was created from.</exception>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -826,11 +1281,23 @@
         <Parameter Name="encoderParams" Type="System.Drawing.Imaging.EncoderParameters" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <param name="encoder">To be added.</param>
-        <param name="encoderParams">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="stream">The <see cref="T:System.IO.Stream" /> where the image will be saved.</param>
+        <param name="encoder">The <see cref="T:System.Drawing.Imaging.ImageCodecInfo" /> for this <see cref="T:System.Drawing.Image" />.</param>
+        <param name="encoderParams">An <see cref="T:System.Drawing.Imaging.EncoderParameters" /> that specifies parameters used by the image encoder.</param>
+        <summary>Saves this image to the specified stream, with the specified encoder and image encoder parameters.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Do not save an image to the same stream that was used to construct the image. Doing so might damage the stream.  
+  
+ The image must be saved to the stream at an offset of zero. If any additional data has been written to the stream before saving the image, the image data in the stream will be corrupted.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="stream" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Runtime.InteropServices.ExternalException">The image was saved with the wrong image format.</exception>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -851,11 +1318,34 @@
         <Parameter Name="encoderParams" Type="System.Drawing.Imaging.EncoderParameters" />
       </Parameters>
       <Docs>
-        <param name="filename">To be added.</param>
-        <param name="encoder">To be added.</param>
-        <param name="encoderParams">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="filename">A string that contains the name of the file to which to save this <see cref="T:System.Drawing.Image" />.</param>
+        <param name="encoder">The <see cref="T:System.Drawing.Imaging.ImageCodecInfo" /> for this <see cref="T:System.Drawing.Image" />.</param>
+        <param name="encoderParams">An <see cref="T:System.Drawing.Imaging.EncoderParameters" /> to use for this <see cref="T:System.Drawing.Image" />.</param>
+        <summary>Saves this <see cref="T:System.Drawing.Image" /> to the specified file, with the specified encoder and image-encoder parameters.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Saving the image to the same file it was constructed from is not allowed and throws an exception.  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Drawing.Bitmap> object from a BMP file. The code saves the bitmap to three JPEG files, each with a different quality level.  
+  
+ [!code-cpp[System.Drawing.ClassicImagingEndcoder3#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicImagingEndcoder3/CPP/form1.cpp#3)]
+ [!code-csharp[System.Drawing.ClassicImagingEndcoder3#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicImagingEndcoder3/CS/form1.cs#3)]
+ [!code-vb[System.Drawing.ClassicImagingEndcoder3#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicImagingEndcoder3/VB/form1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="filename" /> or <paramref name="encoder" /> is <see langword="null." /></exception>
+        <exception cref="T:System.Runtime.InteropServices.ExternalException">The image was saved with the wrong image format.  
+  
+ -or-  
+  
+ The image was saved to the same file it was created from.</exception>
       </Docs>
     </Member>
     <Member MemberName="SaveAdd">
@@ -874,8 +1364,8 @@
         <Parameter Name="encoderParams" Type="System.Drawing.Imaging.EncoderParameters" />
       </Parameters>
       <Docs>
-        <param name="encoderParams">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="encoderParams">An <see cref="T:System.Drawing.Imaging.EncoderParameters" /> that holds parameters required by the image encoder that is used by the save-add operation.</param>
+        <summary>Adds a frame to the file or stream specified in a previous call to the <see cref="Overload:System.Drawing.Image.Save" /> method. Use this method to save selected frames from a multiple-frame image to another multiple-frame image.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -896,10 +1386,12 @@
         <Parameter Name="encoderParams" Type="System.Drawing.Imaging.EncoderParameters" />
       </Parameters>
       <Docs>
-        <param name="image">To be added.</param>
-        <param name="encoderParams">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="image">An <see cref="T:System.Drawing.Image" /> that contains the frame to add.</param>
+        <param name="encoderParams">An <see cref="T:System.Drawing.Imaging.EncoderParameters" /> that holds parameters required by the image encoder that is used by the save-add operation.</param>
+        <summary>Adds a frame to the file or stream specified in a previous call to the <see cref="Overload:System.Drawing.Image.Save" /> method.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="image" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SelectActiveFrame">
@@ -919,11 +1411,20 @@
         <Parameter Name="frameIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="dimension">To be added.</param>
-        <param name="frameIndex">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="dimension">A <see cref="T:System.Drawing.Imaging.FrameDimension" /> that specifies the identity of the dimension type.</param>
+        <param name="frameIndex">The index of the active frame.</param>
+        <summary>Selects the frame specified by the dimension and index.</summary>
+        <returns>Always returns 0.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The possible values of the `dimensionID` parameter are properties of the <xref:System.Drawing.Imaging.FrameDimension>. These can be used to identify an image by its time, resolution, or page number.  
+  
+ Calling this method causes all changes made to the previous frame to be discarded. Before selecting another frame, save all changes made to the current frame, including changes to pixel values and properties. If the call to the <xref:System.Drawing.Image.SelectActiveFrame%2A> method is successful (an exception does not occur), the method will return 0.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetPropertyItem">
@@ -942,9 +1443,28 @@
         <Parameter Name="propitem" Type="System.Drawing.Imaging.PropertyItem" />
       </Parameters>
       <Docs>
-        <param name="propitem">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="propitem">The <see cref="T:System.Drawing.Imaging.PropertyItem" /> to be stored.</param>
+        <summary>Stores a property item (piece of metadata) in this <see cref="T:System.Drawing.Image" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the image format does not support property items, this method throws <xref:System.ArgumentException> with the message "Property not supported." If the image format supports property items but does not support the particular property you are attempting to set, this method ignores the attempt but does not throw an exception.  
+  
+ It is difficult to set property items, because the <xref:System.Drawing.Imaging.PropertyItem> class has no public constructors. One way to work around this restriction is to obtain a <xref:System.Drawing.Imaging.PropertyItem> by retrieving the <xref:System.Drawing.Image.PropertyItems%2A> property value or calling the <xref:System.Drawing.Image.GetPropertyItem%2A> method of an <xref:System.Drawing.Image> that already has property items. Then you can set the fields of the <xref:System.Drawing.Imaging.PropertyItem> and pass it to <xref:System.Drawing.Image.SetPropertyItem%2A>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Drawing.Image.GetPropertyItem%2A> and <xref:System.Drawing.Image.SetPropertyItem%2A> methods. This example is designed to be used with Windows Forms. To run this example, paste it into a form, and handle the form's <xref:System.Windows.Forms.Control.Paint> event by calling the `DemonstratePropertyItem` method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-cpp[System.Drawing.ImageExample#7](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ImageExample/CPP/form1.cpp#7)]
+ [!code-csharp[System.Drawing.ImageExample#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ImageExample/CS/form1.cs#7)]
+ [!code-vb[System.Drawing.ImageExample#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ImageExample/VB/form1.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The image format of this image does not support property items.</exception>
       </Docs>
     </Member>
     <Member MemberName="Size">
@@ -960,8 +1480,8 @@
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the width and height, in pixels, of this image.</summary>
+        <value>A <see cref="T:System.Drawing.Size" /> structure that represents the width and height, in pixels, of this image.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -982,9 +1502,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="si">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="si">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> to populate with data.</param>
+        <param name="context">The destination (see <see cref="T:System.Runtime.Serialization.StreamingContext" />) for this serialization.</param>
+        <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with the data needed to serialize the target object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1015,8 +1535,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets an object that provides additional data about the image.</summary>
+        <value>The <see cref="T:System.Object" /> that provides additional data about the image.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1033,8 +1553,8 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the vertical resolution, in pixels per inch, of this <see cref="T:System.Drawing.Image" />.</summary>
+        <value>The vertical resolution, in pixels per inch, of this <see cref="T:System.Drawing.Image" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1062,10 +1582,42 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the width, in pixels, of this <see cref="T:System.Drawing.Image" />.</summary>
+        <value>The width, in pixels, of this <see cref="T:System.Drawing.Image" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to construct a new <xref:System.Drawing.Bitmap> from a file, using the <xref:System.Drawing.Bitmap.GetPixel%2A> and <xref:System.Drawing.Bitmap.SetPixel%2A> methods to recolor the image. It also uses the <xref:System.Drawing.Image.PixelFormat%2A>, <xref:System.Drawing.Image.Width%2A>, and <xref:System.Drawing.Image.Height%2A> properties.  
+  
+ This example is designed to be used with a Windows Forms that contains a <xref:System.Windows.Forms.Label> ,<xref:System.Windows.Forms.PictureBox> and <xref:System.Windows.Forms.Button> named `Label1`, `PictureBox1` and `Button1`, respectively. Paste the code into the form and associate the `Button1_Click` method with the button's <xref:System.Windows.Forms.Control.Click> event.  
+  
+ [!code-cpp[System.Drawing.ImageExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ImageExample/CPP/form1.cpp#1)]
+ [!code-csharp[System.Drawing.ImageExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ImageExample/CS/form1.cs#1)]
+ [!code-vb[System.Drawing.ImageExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ImageExample/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases all resources used by this <see cref="T:System.Drawing.Image" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Always call <xref:System.Drawing.Image.Dispose%2A> before you release your last reference to the <xref:System.Drawing.Image>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Drawing.Image> object's `Finalize` method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -1,29 +1,46 @@
 ---
 uid: System.Windows.Forms.InputLanguageChangedEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.InputLanguageChangedEventArgs.#ctor(System.Windows.Forms.InputLanguage,System.Byte)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.InputLanguageChangedEventArgs.InputLanguage
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.InputLanguageChangedEventArgs.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.InputLanguageChangedEventArgs.Culture
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.InputLanguageChangedEventArgs.#ctor(System.Globalization.CultureInfo,System.Byte)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.InputLanguageChangedEventArgs.CharSet
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

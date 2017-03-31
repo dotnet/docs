@@ -1,4 +1,5 @@
 ---
 uid: System.Speech.Synthesis.TtsEngine.EmphasisWord
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

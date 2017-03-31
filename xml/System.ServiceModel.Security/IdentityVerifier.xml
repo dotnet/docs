@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>An <see langword="abstract" /> base class that can be implemented to verify an expected identity against an authorization context that represents a remote endpoint, or to create an identity from an endpoint address.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The [!INCLUDE[indigo2](~/includes/indigo2-md.md)] infrastructure calls the <xref:System.ServiceModel.Security.IdentityVerifier.TryGetIdentity%2A> method first to retrieve the service's identity from the message. Next, the infrastructure calls the <xref:System.ServiceModel.Security.IdentityVerifier.CheckAccess%2A> method with the returned <xref:System.ServiceModel.EndpointIdentity> and <xref:System.IdentityModel.Policy.AuthorizationContext>.  
+  
+ For more information about implementing the class, see [How to: Create a Custom Client Identity Verifier](../Topic/How%20to:%20Create%20a%20Custom%20Client%20Identity%20Verifier.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +35,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates an instance of this class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,10 +56,11 @@
         <Parameter Name="authContext" Type="System.IdentityModel.Policy.AuthorizationContext" />
       </Parameters>
       <Docs>
-        <param name="identity">To be added.</param>
-        <param name="authContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="identity">The <see cref="T:System.ServiceModel.EndpointIdentity" /> to verify.</param>
+        <param name="authContext">The <see cref="T:System.IdentityModel.Policy.AuthorizationContext" /> to test the <c>identity</c> against.</param>
+        <summary>Implements a method to verify an identity.</summary>
+        <returns>
+          <see langword="true" /> if the identity is verified; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,8 +78,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a default instance of this class.</summary>
+        <returns>A default instance of <see cref="T:System.ServiceModel.Security.IdentityVerifier" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,11 +100,19 @@
         <Parameter Name="identity" Type="System.ServiceModel.EndpointIdentity&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="reference">To be added.</param>
-        <param name="identity">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="reference">The <see cref="T:System.ServiceModel.EndpointAddress" /> to use for creating the identity.</param>
+        <param name="identity">The <see cref="T:System.ServiceModel.EndpointIdentity" /> that is returned.</param>
+        <summary>Tries to create an identity from an endpoint.</summary>
+        <returns>
+          <see langword="true" /> if the identity is returned; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default <xref:System.ServiceModel.Security.IdentityVerifier> creates a <xref:System.ServiceModel.DnsEndpointIdentity> based on the hostname portion of <xref:System.ServiceModel.EndpointAddress.Uri%2A> if an explicit <xref:System.ServiceModel.EndpointIdentity> has not been specified as part of the <xref:System.ServiceModel.EndpointAddress>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -22,8 +22,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="TResult">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="TResult">The type of the return <see cref="T:System.Activities.OutArgument`1" /> whose value is returned from the <see cref="T:System.Activities.ActivityFunc`1" />.</typeparam>
+    <summary>Invokes an <see cref="T:System.Activities.ActivityFunc`1" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,7 +38,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Expressions.InvokeFunc`1" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,8 +81,8 @@
         <ReturnType>System.Activities.ActivityFunc&lt;TResult&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="T:System.Activities.ActivityFunc`1" /> to be invoked.</summary>
+        <value>The activity function to be invoked.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

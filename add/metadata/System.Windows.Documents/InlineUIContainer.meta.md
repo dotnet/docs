@@ -1,24 +1,40 @@
 ---
 uid: System.Windows.Documents.InlineUIContainer
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Documents.InlineUIContainer.#ctor(System.Windows.UIElement,System.Windows.Documents.TextPointer)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Documents.InlineUIContainer.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Documents.InlineUIContainer.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Documents.InlineUIContainer.#ctor(System.Windows.UIElement)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Documents.InlineUIContainer.Child
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

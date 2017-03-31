@@ -11,8 +11,21 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides command related utility methods that register <see cref="T:System.Windows.Input.CommandBinding" /> and <see cref="T:System.Windows.Input.InputBinding" /> objects for class owners and commands, add and remove command event handlers, and provides services for querying the status of a command.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Input.CommandManager> is responsible for managing routed commands.  For more information about commanding, see [Commanding Overview](../Topic/Commanding%20Overview.md).  
+  
+ Use <xref:System.Windows.Input.CommandManager.RegisterClassCommandBinding%2A> to register a <xref:System.Windows.Input.CommandBinding> to a class as opposed to an instance.  
+  
+ Use <xref:System.Windows.Input.CommandManager.RegisterClassInputBinding%2A> to register an <xref:System.Windows.Input.InputBinding> to a class as opposed to an instance.  
+  
+ The <xref:System.Windows.Input.CommandManager.InvalidateRequerySuggested%2A> method forces the <xref:System.Windows.Input.CommandManager> to raise the <xref:System.Windows.Input.CommandManager.RequerySuggested> event.  The <xref:System.Windows.Input.CommandManager.RequerySuggested> event informs a command source to query the command it is associated with to determine whether or not the command can execute.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AddCanExecuteHandler">
@@ -32,10 +45,36 @@
         <Parameter Name="handler" Type="System.Windows.Input.CanExecuteRoutedEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="element">The element to attach <c>handler</c> to.</param>
+        <param name="handler">The can execute handler.</param>
+        <summary>Attaches the specified <see cref="T:System.Windows.Input.CanExecuteRoutedEventHandler" /> to the specified element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Input.CanExecuteRoutedEventHandler> and an <xref:System.Windows.Input.ExecutedRoutedEventHandler> and attaches them to a <xref:System.Windows.Controls.Button> which is a command source for the <xref:System.Windows.Input.ApplicationCommands.Help%2A> command.  
+  
+ First, the <xref:System.Windows.Controls.Button> is created and associated with the <xref:System.Windows.Input.ApplicationCommands.Help%2A> command.  
+  
+ [!code-xml[commandingoverviewsnippets#CommandingOverviewCmdManagerAddHandlersXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml#commandingoverviewcmdmanageraddhandlersxaml)]  
+  
+ Next, the <xref:System.Windows.Input.CanExecuteRoutedEventHandler> and the <xref:System.Windows.Input.ExecutedRoutedEventHandler> are created.  
+  
+ [!code-csharp[commandingoverviewsnippets#CommandingOverviewCmdManagerExecutedHandler](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml.cs#commandingoverviewcmdmanagerexecutedhandler)]
+ [!code-vb[commandingoverviewsnippets#CommandingOverviewCmdManagerExecutedHandler](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandingOverviewSnippets/visualbasic/window1.xaml.vb#commandingoverviewcmdmanagerexecutedhandler)]  
+  
+ [!code-csharp[commandingoverviewsnippets#CommandingOverviewCmdManagerCanExecuteHandler](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml.cs#commandingoverviewcmdmanagercanexecutehandler)]
+ [!code-vb[commandingoverviewsnippets#CommandingOverviewCmdManagerCanExecuteHandler](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandingOverviewSnippets/visualbasic/window1.xaml.vb#commandingoverviewcmdmanagercanexecutehandler)]  
+  
+ And finally, the handlers are attached to the <xref:System.Windows.Controls.Button> using the <xref:System.Windows.Input.CommandManager.AddCanExecuteHandler%2A> and <xref:System.Windows.Input.CommandManager.AddExecutedHandler%2A>.  
+  
+ [!code-csharp[commandingoverviewsnippets#CommandingOverviewCmdManagerAddHandlers](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml.cs#commandingoverviewcmdmanageraddhandlers)]
+ [!code-vb[commandingoverviewsnippets#CommandingOverviewCmdManagerAddHandlers](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandingOverviewSnippets/visualbasic/window1.xaml.vb#commandingoverviewcmdmanageraddhandlers)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="element" /> or <paramref name="handler" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddExecutedHandler">
@@ -55,10 +94,36 @@
         <Parameter Name="handler" Type="System.Windows.Input.ExecutedRoutedEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="element">The element to attach <c>handler</c> to.</param>
+        <param name="handler">The executed handler.</param>
+        <summary>Attaches the specified <see cref="T:System.Windows.Input.ExecutedRoutedEventHandler" /> to the specified element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Input.CanExecuteRoutedEventHandler> and an <xref:System.Windows.Input.ExecutedRoutedEventHandler> and attaches them to a <xref:System.Windows.Controls.Button> which is a command source for the <xref:System.Windows.Input.ApplicationCommands.Help%2A> command.  
+  
+ First, the <xref:System.Windows.Controls.Button> is created and associated with the <xref:System.Windows.Input.ApplicationCommands.Help%2A> command.  
+  
+ [!code-xml[commandingoverviewsnippets#CommandingOverviewCmdManagerAddHandlersXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml#commandingoverviewcmdmanageraddhandlersxaml)]  
+  
+ Next, the <xref:System.Windows.Input.CanExecuteRoutedEventHandler> and the <xref:System.Windows.Input.ExecutedRoutedEventHandler> are created.  
+  
+ [!code-csharp[commandingoverviewsnippets#CommandingOverviewCmdManagerExecutedHandler](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml.cs#commandingoverviewcmdmanagerexecutedhandler)]
+ [!code-vb[commandingoverviewsnippets#CommandingOverviewCmdManagerExecutedHandler](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandingOverviewSnippets/visualbasic/window1.xaml.vb#commandingoverviewcmdmanagerexecutedhandler)]  
+  
+ [!code-csharp[commandingoverviewsnippets#CommandingOverviewCmdManagerCanExecuteHandler](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml.cs#commandingoverviewcmdmanagercanexecutehandler)]
+ [!code-vb[commandingoverviewsnippets#CommandingOverviewCmdManagerCanExecuteHandler](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandingOverviewSnippets/visualbasic/window1.xaml.vb#commandingoverviewcmdmanagercanexecutehandler)]  
+  
+ And finally, the handlers are attached to the <xref:System.Windows.Controls.Button> using the <xref:System.Windows.Input.CommandManager.AddCanExecuteHandler%2A> and <xref:System.Windows.Input.CommandManager.AddExecutedHandler%2A>.  
+  
+ [!code-csharp[commandingoverviewsnippets#CommandingOverviewCmdManagerAddHandlers](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml.cs#commandingoverviewcmdmanageraddhandlers)]
+ [!code-vb[commandingoverviewsnippets#CommandingOverviewCmdManagerAddHandlers](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandingOverviewSnippets/visualbasic/window1.xaml.vb#commandingoverviewcmdmanageraddhandlers)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="element" /> or <paramref name="handler" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddPreviewCanExecuteHandler">
@@ -78,10 +143,36 @@
         <Parameter Name="handler" Type="System.Windows.Input.CanExecuteRoutedEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="element">The element to attach <c>handler</c> to.</param>
+        <param name="handler">The can execute handler.</param>
+        <summary>Attaches the specified <see cref="T:System.Windows.Input.CanExecuteRoutedEventHandler" /> to the specified element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Input.CanExecuteRoutedEventHandler> and an <xref:System.Windows.Input.ExecutedRoutedEventHandler> and attaches them to a <xref:System.Windows.Controls.Button> which is a command source for the <xref:System.Windows.Input.ApplicationCommands.Help%2A> command.  
+  
+ First, the <xref:System.Windows.Controls.Button> is created and associated with the <xref:System.Windows.Input.ApplicationCommands.Help%2A> command.  
+  
+ [!code-xml[commandingoverviewsnippets#CommandingOverviewCmdManagerAddHandlersXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml#commandingoverviewcmdmanageraddhandlersxaml)]  
+  
+ Next, the <xref:System.Windows.Input.CanExecuteRoutedEventHandler> and the <xref:System.Windows.Input.ExecutedRoutedEventHandler> are created.  
+  
+ [!code-csharp[commandingoverviewsnippets#CommandingOverviewCmdManagerExecutedHandler](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml.cs#commandingoverviewcmdmanagerexecutedhandler)]
+ [!code-vb[commandingoverviewsnippets#CommandingOverviewCmdManagerExecutedHandler](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandingOverviewSnippets/visualbasic/window1.xaml.vb#commandingoverviewcmdmanagerexecutedhandler)]  
+  
+ [!code-csharp[commandingoverviewsnippets#CommandingOverviewCmdManagerCanExecuteHandler](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml.cs#commandingoverviewcmdmanagercanexecutehandler)]
+ [!code-vb[commandingoverviewsnippets#CommandingOverviewCmdManagerCanExecuteHandler](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandingOverviewSnippets/visualbasic/window1.xaml.vb#commandingoverviewcmdmanagercanexecutehandler)]  
+  
+ Finally, the handlers are attached to the <xref:System.Windows.Controls.Button> using the <xref:System.Windows.Input.CommandManager.AddCanExecuteHandler%2A> and <xref:System.Windows.Input.CommandManager.AddExecutedHandler%2A>.  
+  
+ [!code-csharp[commandingoverviewsnippets#CommandingOverviewCmdManagerAddHandlers](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml.cs#commandingoverviewcmdmanageraddhandlers)]
+ [!code-vb[commandingoverviewsnippets#CommandingOverviewCmdManagerAddHandlers](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandingOverviewSnippets/visualbasic/window1.xaml.vb#commandingoverviewcmdmanageraddhandlers)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="element" /> or <paramref name="handler" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddPreviewExecutedHandler">
@@ -101,10 +192,36 @@
         <Parameter Name="handler" Type="System.Windows.Input.ExecutedRoutedEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="element">The element to attach <c>handler</c> to.</param>
+        <param name="handler">The can execute handler.</param>
+        <summary>Attaches the specified <see cref="T:System.Windows.Input.ExecutedRoutedEventHandler" /> to the specified element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Input.CanExecuteRoutedEventHandler> and an <xref:System.Windows.Input.ExecutedRoutedEventHandler> and attaches them to a <xref:System.Windows.Controls.Button> which is a command source for the <xref:System.Windows.Input.ApplicationCommands.Help%2A> command.  
+  
+ First, the <xref:System.Windows.Controls.Button> is created and associated with the <xref:System.Windows.Input.ApplicationCommands.Help%2A> command.  
+  
+ [!code-xml[commandingoverviewsnippets#CommandingOverviewCmdManagerAddHandlersXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml#commandingoverviewcmdmanageraddhandlersxaml)]  
+  
+ Next, the <xref:System.Windows.Input.CanExecuteRoutedEventHandler> and the <xref:System.Windows.Input.ExecutedRoutedEventHandler> are created.  
+  
+ [!code-csharp[commandingoverviewsnippets#CommandingOverviewCmdManagerExecutedHandler](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml.cs#commandingoverviewcmdmanagerexecutedhandler)]
+ [!code-vb[commandingoverviewsnippets#CommandingOverviewCmdManagerExecutedHandler](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandingOverviewSnippets/visualbasic/window1.xaml.vb#commandingoverviewcmdmanagerexecutedhandler)]  
+  
+ [!code-csharp[commandingoverviewsnippets#CommandingOverviewCmdManagerCanExecuteHandler](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml.cs#commandingoverviewcmdmanagercanexecutehandler)]
+ [!code-vb[commandingoverviewsnippets#CommandingOverviewCmdManagerCanExecuteHandler](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandingOverviewSnippets/visualbasic/window1.xaml.vb#commandingoverviewcmdmanagercanexecutehandler)]  
+  
+ Finally, the handlers are attached to the <xref:System.Windows.Controls.Button> using the <xref:System.Windows.Input.CommandManager.AddCanExecuteHandler%2A> and <xref:System.Windows.Input.CommandManager.AddExecutedHandler%2A>.  
+  
+ [!code-csharp[commandingoverviewsnippets#CommandingOverviewCmdManagerAddHandlers](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml.cs#commandingoverviewcmdmanageraddhandlers)]
+ [!code-vb[commandingoverviewsnippets#CommandingOverviewCmdManagerAddHandlers](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandingOverviewSnippets/visualbasic/window1.xaml.vb#commandingoverviewcmdmanageraddhandlers)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="element" /> or <paramref name="handler" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CanExecuteEvent">
@@ -120,7 +237,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="E:System.Windows.Input.CommandManager.CanExecute" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,7 +254,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="E:System.Windows.Input.CommandManager.Executed" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,8 +272,23 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Forces the <see cref="T:System.Windows.Input.CommandManager" /> to raise the <see cref="E:System.Windows.Input.CommandManager.RequerySuggested" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Input.CommandManager> only pays attention to certain conditions in determining when the command target has changed, such as change in keyboard focus.  In situations where the <xref:System.Windows.Input.CommandManager> does not sufficiently determine a change in conditions that cause a command to not be able to execute, <xref:System.Windows.Input.CommandManager.InvalidateRequerySuggested%2A> can be called to force the <xref:System.Windows.Input.CommandManager> to raise the <xref:System.Windows.Input.CommandManager.RequerySuggested> event.  
+  
+   
+  
+## Examples  
+ The following example uses a <xref:System.Windows.Threading.DispatcherTimer> to periodically call <xref:System.Windows.Input.CommandManager.InvalidateRequerySuggested%2A> to force the <xref:System.Windows.Input.CommandManager> to raise the <xref:System.Windows.Input.CommandManager.RequerySuggested> event.  
+  
+ [!code-csharp[InvalidateRequeryWithDispatcherTimer#InvalidateSampleDispatcherTimer](~/samples/snippets/csharp/VS_Snippets_Wpf/InvalidateRequeryWithDispatcherTimer/CSharp/Window1.xaml.cs#invalidatesampledispatchertimer)]
+ [!code-vb[InvalidateRequeryWithDispatcherTimer#InvalidateSampleDispatcherTimer](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InvalidateRequeryWithDispatcherTimer/visualbasic/window1.xaml.vb#invalidatesampledispatchertimer)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PreviewCanExecuteEvent">
@@ -172,7 +304,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="E:System.Windows.Input.CommandManager.PreviewCanExecute" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -189,7 +321,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="E:System.Windows.Input.CommandManager.PreviewExecuted" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -210,10 +342,19 @@
         <Parameter Name="commandBinding" Type="System.Windows.Input.CommandBinding" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <param name="commandBinding">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="type">The class with which to register <c>commandBinding</c>.</param>
+        <param name="commandBinding">The command binding to register.</param>
+        <summary>Registers a <see cref="T:System.Windows.Input.CommandBinding" /> with the specified type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method enables a <xref:System.Windows.Input.CommandBinding> to be associated with a class instead than an instance of a class.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="type" /> or <paramref name="commandBinding" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="RegisterClassInputBinding">
@@ -233,10 +374,19 @@
         <Parameter Name="inputBinding" Type="System.Windows.Input.InputBinding" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <param name="inputBinding">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="type">The type to register <c>inputBinding</c> with.</param>
+        <param name="inputBinding">The input binding to register.</param>
+        <summary>Registers the specified <see cref="T:System.Windows.Input.InputBinding" /> with the specified type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method enables an <xref:System.Windows.Input.InputBinding> to be associated with a type instead of an instance of a class.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="type" /> or <paramref name="inputBinding" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveCanExecuteHandler">
@@ -256,10 +406,22 @@
         <Parameter Name="handler" Type="System.Windows.Input.CanExecuteRoutedEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="element">The element to remove <c>handler</c> from.</param>
+        <param name="handler">The can execute handler.</param>
+        <summary>Detaches the specified <see cref="T:System.Windows.Input.CanExecuteRoutedEventHandler" /> from the specified element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example detaches a <xref:System.Windows.Input.CanExecuteRoutedEventHandler> and an <xref:System.Windows.Input.ExecutedRoutedEventHandler> which had previously been attached to a <xref:System.Windows.Controls.Button>.  
+  
+ [!code-csharp[commandingoverviewsnippets#CommandingOverviewCmdManagerRemoveHandlers](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml.cs#commandingoverviewcmdmanagerremovehandlers)]
+ [!code-vb[commandingoverviewsnippets#CommandingOverviewCmdManagerRemoveHandlers](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandingOverviewSnippets/visualbasic/window1.xaml.vb#commandingoverviewcmdmanagerremovehandlers)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="element" /> or <paramref name="handler" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveExecutedHandler">
@@ -279,10 +441,22 @@
         <Parameter Name="handler" Type="System.Windows.Input.ExecutedRoutedEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="element">The element to remove <c>handler</c> from.</param>
+        <param name="handler">The executed handler.</param>
+        <summary>Detaches the specified <see cref="T:System.Windows.Input.ExecutedRoutedEventHandler" /> from the specified element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example detaches a <xref:System.Windows.Input.CanExecuteRoutedEventHandler> and an <xref:System.Windows.Input.ExecutedRoutedEventHandler> which had previously been attached to a <xref:System.Windows.Controls.Button>.  
+  
+ [!code-csharp[commandingoverviewsnippets#CommandingOverviewCmdManagerRemoveHandlers](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml.cs#commandingoverviewcmdmanagerremovehandlers)]
+ [!code-vb[commandingoverviewsnippets#CommandingOverviewCmdManagerRemoveHandlers](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandingOverviewSnippets/visualbasic/window1.xaml.vb#commandingoverviewcmdmanagerremovehandlers)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="element" /> or <paramref name="handler" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="RemovePreviewCanExecuteHandler">
@@ -302,10 +476,22 @@
         <Parameter Name="handler" Type="System.Windows.Input.CanExecuteRoutedEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="element">The element to remove <c>handler</c> from.</param>
+        <param name="handler">The can execute handler.</param>
+        <summary>Detaches the specified <see cref="T:System.Windows.Input.CanExecuteRoutedEventHandler" /> from the specified element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example detaches a <xref:System.Windows.Input.CanExecuteRoutedEventHandler> and an <xref:System.Windows.Input.ExecutedRoutedEventHandler> which had previously been attached to a <xref:System.Windows.Controls.Button>.  
+  
+ [!code-csharp[commandingoverviewsnippets#CommandingOverviewCmdManagerRemoveHandlers](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml.cs#commandingoverviewcmdmanagerremovehandlers)]
+ [!code-vb[commandingoverviewsnippets#CommandingOverviewCmdManagerRemoveHandlers](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandingOverviewSnippets/visualbasic/window1.xaml.vb#commandingoverviewcmdmanagerremovehandlers)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="element" /> or <paramref name="handler" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="RemovePreviewExecutedHandler">
@@ -325,10 +511,22 @@
         <Parameter Name="handler" Type="System.Windows.Input.ExecutedRoutedEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="element">The element to remove <c>handler</c> from.</param>
+        <param name="handler">The executed handler.</param>
+        <summary>Detaches the specified <see cref="T:System.Windows.Input.ExecutedRoutedEventHandler" /> from the specified element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example detaches a <xref:System.Windows.Input.CanExecuteRoutedEventHandler> and an <xref:System.Windows.Input.ExecutedRoutedEventHandler> which had previously been attached to a <xref:System.Windows.Controls.Button>.  
+  
+ [!code-csharp[commandingoverviewsnippets#CommandingOverviewCmdManagerRemoveHandlers](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml.cs#commandingoverviewcmdmanagerremovehandlers)]
+ [!code-vb[commandingoverviewsnippets#CommandingOverviewCmdManagerRemoveHandlers](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandingOverviewSnippets/visualbasic/window1.xaml.vb#commandingoverviewcmdmanagerremovehandlers)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="element" /> or <paramref name="handler" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="RequerySuggested">
@@ -344,8 +542,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the <see cref="T:System.Windows.Input.CommandManager" /> detects conditions that might change the ability of a command to execute.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Since this event is static, it will only hold onto the handler as a weak reference.  Objects that listen for this event should keep a strong reference to their event handler to avoid it being garbage collected. This can be accomplished by having a private field and assigning the handler as the value before or after attaching to this event.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

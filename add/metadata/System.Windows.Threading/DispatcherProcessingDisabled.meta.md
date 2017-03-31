@@ -1,29 +1,39 @@
 ---
 uid: System.Windows.Threading.DispatcherProcessingDisabled
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Threading.DispatcherProcessingDisabled.Dispose
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Threading.DispatcherProcessingDisabled.GetHashCode
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Threading.DispatcherProcessingDisabled.op_Equality(System.Windows.Threading.DispatcherProcessingDisabled,System.Windows.Threading.DispatcherProcessingDisabled)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Threading.DispatcherProcessingDisabled.Equals(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Threading.DispatcherProcessingDisabled.op_Inequality(System.Windows.Threading.DispatcherProcessingDisabled,System.Windows.Threading.DispatcherProcessingDisabled)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

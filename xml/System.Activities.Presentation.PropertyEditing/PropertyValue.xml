@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Maintains a data model for the value of a property in the property grid.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,8 +32,8 @@
         <Parameter Name="parentProperty" Type="System.Activities.Presentation.PropertyEditing.PropertyEntry" />
       </Parameters>
       <Docs>
-        <param name="parentProperty">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="parentProperty">The <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyEntry" /> that corresponds to this <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValue" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValue" /> class with the parent property set to a specified <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyEntry" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,8 +50,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When implemented in a derived class, gets a value that indicates whether <see cref="P:System.Activities.Presentation.PropertyEditing.PropertyValue.Value" /> can be converted from a string.</summary>
+        <value>
+          <see langword="true" /> if the property value can be converted from a string; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,9 +69,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether exceptions thrown during property value getting and setting should be caught or should be propagated directly to the caller.</summary>
+        <value>
+          <see langword="true" /> if exceptions are caught; <see langword="false" /> if exceptions are propagated to the caller.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is based upon whether there are any subscribers to the <xref:System.Activities.Presentation.PropertyEditing.PropertyValue.PropertyValueException> event.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearValue">
@@ -87,7 +96,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>When implemented in a derived class, clears the <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValue" /> so that it is unset.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,8 +113,8 @@
         <ReturnType>System.Activities.Presentation.PropertyEditing.PropertyValueCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When implemented in a derived class, gets a collection of <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValue" /> instances that correspond to items in a collection when <see cref="P:System.Activities.Presentation.PropertyEditing.PropertyValue.IsCollection" /> verifies that the property is a collection.</summary>
+        <value>A <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValueCollection" /> object that is a collection of property value instances.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,9 +134,9 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.String" /> value to convert to a <see cref="P:System.Activities.Presentation.PropertyEditing.PropertyValue.Value" />.</param>
+        <summary>When implemented in a derived class, converts the specified <see cref="P:System.Activities.Presentation.PropertyEditing.PropertyValue.StringValue" /> to a <see cref="P:System.Activities.Presentation.PropertyEditing.PropertyValue.Value" />.</summary>
+        <returns>An <see cref="T:System.Object" /> value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -147,9 +156,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="P:System.Activities.Presentation.PropertyEditing.PropertyValue.Value" /> to convert to a string.</param>
+        <summary>When implemented in a derived class, converts the specified <see cref="P:System.Activities.Presentation.PropertyEditing.PropertyValue.Value" /> to a <see cref="P:System.Activities.Presentation.PropertyEditing.PropertyValue.StringValue" />.</summary>
+        <returns>A <see cref="T:System.String" /> version of the <see cref="P:System.Activities.Presentation.PropertyEditing.PropertyValue.Value" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,8 +176,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>When implemented in a derived class, returns a <see cref="P:System.Activities.Presentation.PropertyEditing.PropertyValue.Value" />.</summary>
+        <returns>A property value <see cref="T:System.Object" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -185,9 +194,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>When implemented in a derived class, gets a value that indicates whether the type of this property supports sub-properties.</summary>
+        <value>A <see cref="T:System.Boolean" /> that, when <see cref="T:System.Boolean.True" />, verifies that the type supports sub-properties, otherwise <see cref="T:System.Boolean.False" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typical implementations will use a <xref:System.ComponentModel.TypeConverter> to verify whether sub-properties exist.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsCollection">
@@ -203,8 +219,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When implemented in a derived class, gets a value that indicates whether this <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValue" /> is a collection.</summary>
+        <value>A <see cref="T:System.Boolean" /> that, when <see cref="T:System.Boolean.True" />, verifies that the property value is a collection, otherwise <see cref="T:System.Boolean.False" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -221,8 +237,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When implemented in a derived class, gets a value that indicates whether the <see cref="P:System.Activities.Presentation.PropertyEditing.PropertyValue.Value" /> is the default value for the property.</summary>
+        <value>A <see cref="T:System.Boolean" /> that, when <see cref="T:System.Boolean.True" />, verifies that the value is the default, otherwise <see cref="T:System.Boolean.False" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -239,9 +255,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>When implemented in a derived class, gets a value that indicates whether multiple objects contain this property and have different values.</summary>
+        <value>A <see cref="T:System.Boolean" /> that, when <see cref="T:System.Boolean.True" />, verifies that multiple objects contain this property, otherwise <see cref="T:System.Boolean.False" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.Boolean.True>, <xref:System.Activities.Presentation.PropertyEditing.PropertyValue.Value%2A> will return null and <xref:System.Activities.Presentation.PropertyEditing.PropertyValue.StringValue%2A> will return <xref:System.String.Empty>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NotifyRootValueChanged">
@@ -258,7 +281,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Raises the <see cref="E:System.Activities.Presentation.PropertyEditing.PropertyValue.RootValueChanged" /> event when the underlying value type is changed externally, as on the design surface.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -276,7 +299,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Raises the <see cref="E:System.Activities.Presentation.PropertyEditing.PropertyValue.SubPropertyChanged" /> event when one of the sub-properties of this property has changed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -296,8 +319,8 @@
         <Parameter Name="e" Type="System.ComponentModel.PropertyChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">A <see cref="T:System.ComponentModel.PropertyChangedEventArgs" /> object that provides the name of the property that changed.</param>
+        <summary>Raises the <see cref="E:System.Activities.Presentation.PropertyEditing.PropertyValue.PropertyChanged" /> event with the specified <see cref="T:System.ComponentModel.PropertyChangedEventArgs" /> objects.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -317,8 +340,8 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="propertyName">The name of the property that changed.</param>
+        <summary>Raises the <see cref="E:System.Activities.Presentation.PropertyEditing.PropertyValue.PropertyChanged" /> event that uses the name of the property that changed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -338,8 +361,8 @@
         <Parameter Name="e" Type="System.Activities.Presentation.PropertyEditing.PropertyValueExceptionEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">A <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValueExceptionEventArgs" /> that provides information about the get or set failure that occurred.</param>
+        <summary>Default implementation that raises the <see cref="E:System.Activities.Presentation.PropertyEditing.PropertyValue.PropertyValueException" /> event when <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValue" /> properties experience failure getting or setting values in the underlying collection of data.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -356,8 +379,8 @@
         <ReturnType>System.Activities.Presentation.PropertyEditing.PropertyEntry</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the parent <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyEntry" /> when the property implementation occurs in a host environment.</summary>
+        <value>A <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyEntry" /> object that represents the parent property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -374,7 +397,7 @@
         <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when properties or sub-properties of the <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValue" /> object has changed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -391,7 +414,7 @@
         <ReturnType>System.EventHandler&lt;System.Activities.Presentation.PropertyEditing.PropertyValueExceptionEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Event used by host implementations for error handling.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -408,7 +431,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the <see cref="P:System.Activities.Presentation.PropertyEditing.PropertyValue.Value" /> or <see cref="P:System.Activities.Presentation.PropertyEditing.PropertyValue.StringValue" /> property is updated as a result of the <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValue" /> value being changed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -428,8 +451,8 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The object to be set in the underlying collection of data.</param>
+        <summary>When implemented in a derived class, sets the <see cref="P:System.Activities.Presentation.PropertyEditing.PropertyValue.Value" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -446,8 +469,8 @@
         <ReturnType>System.Activities.Presentation.PropertyEditing.PropertyValueSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When implemented in a derived class, gets a <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValueSource" /> object that contains information about where this property value is coming from.</summary>
+        <value>A <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValueSource" /> object that contains property value source information.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -464,8 +487,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a <see cref="P:System.Activities.Presentation.PropertyEditing.PropertyValue.Value" /> as a <see cref="T:System.String" />.</summary>
+        <value>A <see cref="T:System.String" /> version of the <see cref="P:System.Activities.Presentation.PropertyEditing.PropertyValue.Value" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -482,8 +505,8 @@
         <ReturnType>System.Activities.Presentation.PropertyEditing.PropertyEntryCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When implemented in a derived class, gets a collection of sub-properties as <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyEntry" /> instances.</summary>
+        <value>A <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyEntryCollection" /> of instances.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -500,7 +523,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when sub-properties are updated as a result of the <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValue" /> being changed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -520,8 +543,8 @@
         <Parameter Name="valueToValidate" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="valueToValidate">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="valueToValidate">The object whose value is verified.</param>
+        <summary>When implemented in a derived class, throws an exception if verification of the specified value object shows it to be invalid.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -538,8 +561,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a property value in the underlying collection of property data.</summary>
+        <value>A property value <see cref="T:System.Object" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

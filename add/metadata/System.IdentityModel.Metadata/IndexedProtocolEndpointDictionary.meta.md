@@ -1,14 +1,17 @@
 ---
 uid: System.IdentityModel.Metadata.IndexedProtocolEndpointDictionary
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.IndexedProtocolEndpointDictionary.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.IndexedProtocolEndpointDictionary.Default
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

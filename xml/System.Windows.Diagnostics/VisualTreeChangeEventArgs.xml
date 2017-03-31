@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides data for the <see cref="E:System.Windows.Diagnostics.VisualDiagnostics.VisualTreeChanged" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[internalonly_netframework_type](~/includes/internalonly-netframework-type-md.md)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,12 +38,19 @@
         <Parameter Name="changeType" Type="System.Windows.Diagnostics.VisualTreeChangeType" />
       </Parameters>
       <Docs>
-        <param name="parent">To be added.</param>
-        <param name="child">To be added.</param>
-        <param name="childIndex">To be added.</param>
-        <param name="changeType">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="parent">The <see cref="T:System.Windows.DependencyObject" /> to which an element (Child) was either added or removed.</param>
+        <param name="child">The <see cref="T:System.Windows.DependencyObject" /> that was added to or removed from another element (Parent).</param>
+        <param name="childIndex">The index in the Parent element’s children where the Child element is located when the add or remove operation is complete.</param>
+        <param name="changeType">A value that indicates whether the Child element was added to another element (Parent) or removed.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Diagnostics.VisualTreeChangeEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[internalonly_netframework_member](~/includes/internalonly-netframework-member-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ChangeType">
@@ -52,9 +66,16 @@
         <ReturnType>System.Windows.Diagnostics.VisualTreeChangeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the Child element was added to another element (Parent) or removed.</summary>
+        <value>An enumeration value that indicates whether the child element was Added or Removed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[internalonly_netframework_member](~/includes/internalonly-netframework-member-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Child">
@@ -70,9 +91,16 @@
         <ReturnType>System.Windows.DependencyObject</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Windows.DependencyObject" /> that was added to or removed from another element (Parent).</summary>
+        <value>The element that was added to or removed from the Parent element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[internalonly_netframework_member](~/includes/internalonly-netframework-member-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ChildIndex">
@@ -88,9 +116,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the index in the Parent element’s children where the Child element is located when the add or remove operation is complete. On a removal, this value will always be -1.</summary>
+        <value>The index in the Parent element’s children where the Child element is located when the add or remove operation is complete.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[internalonly_netframework_member](~/includes/internalonly-netframework-member-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -106,9 +141,16 @@
         <ReturnType>System.Windows.DependencyObject</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Windows.DependencyObject" /> to which an element (Child) was either added or removed.</summary>
+        <value>The element to which the child element was either added or removed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[internalonly_netframework_member](~/includes/internalonly-netframework-member-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

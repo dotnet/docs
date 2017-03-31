@@ -18,8 +18,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides the stack functionality for a stack of server channel sinks.</summary>
     <remarks>To be added.</remarks>
+    <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
   </Docs>
   <Members>
     <Member MemberName="Pop">
@@ -39,10 +40,12 @@
         <Parameter Name="sink" Type="System.Runtime.Remoting.Channels.IServerChannelSink" />
       </Parameters>
       <Docs>
-        <param name="sink">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="sink">The sink to remove and return from the sink stack.</param>
+        <summary>Pops the information associated with all the sinks from the sink stack up to and including the specified sink.</summary>
+        <returns>Information generated on the request side and associated with the specified sink.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
       </Docs>
     </Member>
     <Member MemberName="Push">
@@ -63,10 +66,19 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="sink">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="sink">The sink to push onto the sink stack.</param>
+        <param name="state">Information generated on the request side that is needed on the response side.</param>
+        <summary>Pushes the specified sink and information associated with it onto the sink stack.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The information generated on the request side and specified in the `state` parameter is returned in the `state` parameter of the <xref:System.Runtime.Remoting.Channels.IServerChannelSink.AsyncProcessResponse%2A> method on the corresponding sink.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
       </Docs>
     </Member>
     <Member MemberName="ServerCallback">
@@ -86,9 +98,19 @@
         <Parameter Name="ar" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="ar">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="ar">The status and state of an asynchronous operation on a remote object.</param>
+        <summary>Presents a callback delegate to handle a callback after a message has been dispatched asynchronously.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The dispatched message represents a request method call on a remote object.  
+  
+ The <xref:System.Runtime.Remoting.Channels.IServerChannelSinkStack.ServerCallback%2A> method is intended for use only by the .NET Framework remoting infrastructure.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
       </Docs>
     </Member>
     <Member MemberName="Store">
@@ -109,10 +131,18 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="sink">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="sink">A server channel sink.</param>
+        <param name="state">The state associated with <c>sink</c>.</param>
+        <summary>Stores a message sink and its associated state for later asynchronous processing.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Remoting.Channels.IServerChannelSinkStack.Store%2A> method is intended for use only by the .NET Framework remoting infrastructure.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
       </Docs>
     </Member>
     <Member MemberName="StoreAndDispatch">
@@ -133,10 +163,20 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="sink">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="sink">A server channel sink.</param>
+        <param name="state">The state associated with <c>sink</c>.</param>
+        <summary>Stores a message sink and its associated state, and then dispatches a message asynchronously, using the sink just stored and any other stored sinks.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Remoting.Channels.IServerChannelSinkStack.StoreAndDispatch%2A> method is intended for use only by the .NET Framework remoting infrastructure.  
+  
+ Also, the method should only be called by a transport sink to complete an asynchronous dispatch.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
       </Docs>
     </Member>
   </Members>

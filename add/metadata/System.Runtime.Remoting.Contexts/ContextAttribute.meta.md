@@ -1,49 +1,49 @@
 ---
 uid: System.Runtime.Remoting.Contexts.ContextAttribute
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Contexts.ContextAttribute.Name
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Contexts.ContextAttribute.Freeze(System.Runtime.Remoting.Contexts.Context)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Contexts.ContextAttribute.Equals(System.Object)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Contexts.ContextAttribute.#ctor(System.String)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Contexts.ContextAttribute.GetHashCode
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Contexts.ContextAttribute.IsContextOK(System.Runtime.Remoting.Contexts.Context,System.Runtime.Remoting.Activation.IConstructionCallMessage)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Contexts.ContextAttribute.GetPropertiesForNewContext(System.Runtime.Remoting.Activation.IConstructionCallMessage)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Contexts.ContextAttribute.AttributeName
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Contexts.ContextAttribute.IsNewContextOK(System.Runtime.Remoting.Contexts.Context)
-internalonly: False
+manager: "ghogen"
 ---

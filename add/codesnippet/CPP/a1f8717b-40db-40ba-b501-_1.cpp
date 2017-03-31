@@ -1,2 +1,0 @@
-   myServiceDescription = ServiceDescription::Read( "StockQuoteService_cpp.wsdl" );
-   myServiceDescription->Imports->Insert( 0, CreateImport( "http://localhost/stockquote/definitions", "http://localhost/stockquote/stockquote_cpp.wsdl" ) );

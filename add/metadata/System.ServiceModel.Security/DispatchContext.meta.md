@@ -1,44 +1,53 @@
 ---
 uid: System.ServiceModel.Security.DispatchContext
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.DispatchContext.RequestAction
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.DispatchContext.SecurityTokenService
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.DispatchContext.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.DispatchContext.ResponseMessage
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.DispatchContext.ResponseAction
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.DispatchContext.RequestMessage
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.DispatchContext.TrustNamespace
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.DispatchContext.Principal
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
 ---

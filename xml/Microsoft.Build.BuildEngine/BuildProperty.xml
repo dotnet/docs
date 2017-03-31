@@ -16,8 +16,18 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a single property in an [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] project.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a <xref:Microsoft.Build.BuildEngine.Project> object and uses the <xref:Microsoft.Build.BuildEngine.Project.LoadXml%2A> method to add content to the project. The <xref:Microsoft.Build.BuildEngine.BuildProperty>, <xref:Microsoft.Build.BuildEngine.BuildPropertyGroup>, and <xref:Microsoft.Build.BuildEngine.BuildPropertyGroupCollection> classes are used to add, remove, and change items in the project.  
+  
+ [!code-csharp[msbuild_AddNewProperty#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_AddNewProperty/CS/Program.cs#1)]
+ [!code-vb[msbuild_AddNewProperty#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_AddNewProperty/VB/Module1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,9 +44,9 @@
         <Parameter Name="propertyValue" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="propertyName">To be added.</param>
-        <param name="propertyValue">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="propertyName">The property name.</param>
+        <param name="propertyValue">The property value.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.BuildEngine.BuildProperty" /> class with the specified name and value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,10 +66,20 @@
         <Parameter Name="deepClone" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="deepClone">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="deepClone">
+          <see langword="true" /> to create a deep copy of the <see cref="T:Microsoft.Build.BuildEngine.BuildProperty" />; otherwise, <see langword="false" />.</param>
+        <summary>Creates a deep or shallow copy of the <see cref="T:Microsoft.Build.BuildEngine.BuildProperty" />.</summary>
+        <returns>A copy of the <see cref="T:Microsoft.Build.BuildEngine.BuildProperty" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A shallow copy of a <xref:Microsoft.Build.BuildEngine.BuildProperty> references the same XML element as the original. Modifications to the name or value of a shallow copy will be reflected in both copies. However, depending on property evaluation, the two copies could have different <xref:Microsoft.Build.BuildEngine.BuildProperty.FinalValue%2A> property values.  
+  
+ A deep copy of a <xref:Microsoft.Build.BuildEngine.BuildProperty> creates a new XML element to reference so that both copies of the <xref:Microsoft.Build.BuildEngine.BuildProperty> can be independently modified.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Condition">
@@ -75,8 +95,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <c>Condition</c> attribute value of the property.</summary>
+        <value>Gets or sets the <c>Condition</c> attribute value of the property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,8 +113,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the final value of the property after all property evaluations have been performed.</summary>
+        <value>The final value of the property after all property evaluations have been performed.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,8 +131,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value indicating whether the property was imported into the project.</summary>
+        <value>
+          <see langword="true" /> if the property was imported into the project; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,9 +150,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the property name.</summary>
+        <value>The property name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a <xref:Microsoft.Build.BuildEngine.Project> object and uses the <xref:Microsoft.Build.BuildEngine.Project.LoadXml%2A> method to add content to the project. The <xref:Microsoft.Build.BuildEngine.BuildProperty>, <xref:Microsoft.Build.BuildEngine.BuildPropertyGroup>, and <xref:Microsoft.Build.BuildEngine.BuildPropertyGroupCollection> classes are used to add, remove, and change items in the project.  
+  
+ [!code-csharp[msbuild_AddNewProperty#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_AddNewProperty/CS/Program.cs#1)]
+ [!code-vb[msbuild_AddNewProperty#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_AddNewProperty/VB/Module1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -170,8 +201,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the string that represents the property <see cref="P:Microsoft.Build.BuildEngine.BuildProperty.Value" />.</summary>
+        <returns>The string that represents the property <see cref="P:Microsoft.Build.BuildEngine.BuildProperty.Value" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -188,9 +219,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the property value.</summary>
+        <value>The property value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a <xref:Microsoft.Build.BuildEngine.Project> object and uses the <xref:Microsoft.Build.BuildEngine.Project.LoadXml%2A> method to add content to the project. The <xref:Microsoft.Build.BuildEngine.BuildProperty>, <xref:Microsoft.Build.BuildEngine.BuildPropertyGroup>, and <xref:Microsoft.Build.BuildEngine.BuildPropertyGroupCollection> classes are used to add, remove, and change items in the project.  
+  
+ [!code-csharp[msbuild_AddNewProperty#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_AddNewProperty/CS/Program.cs#1)]
+ [!code-vb[msbuild_AddNewProperty#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_AddNewProperty/VB/Module1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>An abstract base class used to implement a discovery proxy.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Discovery.DiscoveryProxy" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <Parameter Name="messageSequenceGenerator" Type="System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator" />
       </Parameters>
       <Docs>
-        <param name="messageSequenceGenerator">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="messageSequenceGenerator">The message sequence generator.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Discovery.DiscoveryProxy" /> class with the specified <see cref="T:System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,9 +62,9 @@
         <Parameter Name="duplicateMessageHistoryLength" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="messageSequenceGenerator">To be added.</param>
-        <param name="duplicateMessageHistoryLength">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="messageSequenceGenerator">The message sequence generator.</param>
+        <param name="duplicateMessageHistoryLength">The maximum number of message hashes used by the transport for identifying duplicate messages. The default value is 0.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Discovery.DiscoveryProxy" /> class with the specified <see cref="T:System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator" /> and duplicate message history length.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,12 +86,19 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="resolveCriteria">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="resolveCriteria">The resolve criteria that describes the service to find.</param>
+        <param name="callback">The callback delegate to call when the operation has completed.</param>
+        <param name="state">The user-defined state data.</param>
+        <summary>Override this method to allow the discovery proxy to send out multicast suppression messages when it receives a multicast find request.</summary>
+        <returns>A reference to the pending asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Multicast suppression messages can be sent in response to a multicast find or resolve message when a discovery proxy is available. Sending unicast messages to the discovery proxy can help reduce the amount of network traffic caused by the discovery operations.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginShouldRedirectResolve">
@@ -112,12 +119,19 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="findCriteria">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="findCriteria">The find criteria that describes the service to find.</param>
+        <param name="callback">The callback delegate to call when the operation is completed.</param>
+        <param name="state">The user-defined state data.</param>
+        <summary>Override this method to allow the discovery proxy to send out multicast suppression messages when it receives a multicast resolve request.</summary>
+        <returns>A reference to the pending asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Multicast suppression messages can be sent in response to a multicast find or resolve message when a discovery proxy is available. Sending unicast messages to the discovery proxy can help reduce the amount of network traffic caused by the discovery operations.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EndShouldRedirectFind">
@@ -137,11 +151,19 @@
         <Parameter Name="redirectionEndpoints" Type="System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Discovery.EndpointDiscoveryMetadata&gt;&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <param name="redirectionEndpoints">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="result">A reference to the completed asynchronous operation.</param>
+        <param name="redirectionEndpoints">A collection of endpoint discovery metadata that describes the redirection endpoints.</param>
+        <summary>Override this method to handle the completion of sending the multicast suppression message for find requests.</summary>
+        <returns>
+          <see langword="true" /> if the find operation should be redirected, otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Multicast suppression messages can be sent in response to a multicast find or resolve message when a discovery proxy is available. Sending unicast messages to the discovery proxy can help reduce the amount of network traffic caused by the discovery operations.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EndShouldRedirectResolve">
@@ -161,11 +183,19 @@
         <Parameter Name="redirectionEndpoints" Type="System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Discovery.EndpointDiscoveryMetadata&gt;&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <param name="redirectionEndpoints">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="result">A reference to the completed asynchronous operation.</param>
+        <param name="redirectionEndpoints">A collection of endpoint discovery metadata that describes the redirection endpoints.</param>
+        <summary>Override this method to handle the completion of sending the multicast suppression message for resolve requests.</summary>
+        <returns>
+          <see langword="true" /> if the resolve operation should be redirected, otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Multicast suppression messages can be sent in response to a multicast find or resolve message when a discovery proxy is available. Sending unicast messages to the discovery proxy can help reduce the amount of network traffic caused by the discovery operations.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnBeginFind">
@@ -186,12 +216,19 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="findRequestContext">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="findRequestContext">The find request context that describes the service to discover.</param>
+        <param name="callback">The callback delegate to call when the operation is completed.</param>
+        <param name="state">The user-defined state data.</param>
+        <summary>Override this method to handle a find operation.</summary>
+        <returns>A reference to the pending asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Find results are returned by calling the <xref:System.ServiceModel.Discovery.FindRequestContext.AddMatchingEndpoint%2A> method one or more times.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnBeginOfflineAnnouncement">
@@ -213,12 +250,12 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="messageSequence">To be added.</param>
-        <param name="endpointDiscoveryMetadata">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="messageSequence">The discovery message sequence.</param>
+        <param name="endpointDiscoveryMetadata">The endpoint discovery metadata.</param>
+        <param name="callback">The callback delegate to call when the operation is completed.</param>
+        <param name="state">The user-defined state data.</param>
+        <summary>Override this method to handle an offline announcement message.</summary>
+        <returns>A reference to the pending asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -241,12 +278,12 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="messageSequence">To be added.</param>
-        <param name="endpointDiscoveryMetadata">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="messageSequence">The discovery message sequence.</param>
+        <param name="endpointDiscoveryMetadata">The endpoint discovery metadata.</param>
+        <param name="callback">The callback delegate to call when the operation is completed.</param>
+        <param name="state">The user-defined state data.</param>
+        <summary>Override this method to handle an online announcement message.</summary>
+        <returns>A reference to the pending asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -268,11 +305,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="resolveCriteria">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="resolveCriteria">The resolve criteria that describes the service to discover.</param>
+        <param name="callback">The callback delegate to call when the operation is completed.</param>
+        <param name="state">The user-defined state data.</param>
+        <summary>Override this method to handle a resolve operation.</summary>
+        <returns>A reference to the pending asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -292,8 +329,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="result">A reference to the completed asynchronous operation.</param>
+        <summary>Override this method to handle the completion of a find operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -313,8 +350,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="result">A reference to the completed asynchronous operation.</param>
+        <summary>Override this method to handle the completion of an offline announcement message.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -334,8 +371,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="result">A reference to the completed asynchronous operation.</param>
+        <summary>Override this method to handle the completion of an online announcement message.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -355,9 +392,9 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="result">A reference to the completed asynchronous operation.</param>
+        <summary>Override this method to handle the completion of a resolve operation.</summary>
+        <returns>Endpoint discovery metadata for the resolved service.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

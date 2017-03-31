@@ -1,24 +1,29 @@
 ---
 uid: System.IdentityModel.Configuration.CustomTypeElement
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Configuration.CustomTypeElement.IsConfigured
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Configuration.CustomTypeElement.Type
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Configuration.CustomTypeElement.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Configuration.CustomTypeElement.Resolve``1(System.IdentityModel.Configuration.CustomTypeElement)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

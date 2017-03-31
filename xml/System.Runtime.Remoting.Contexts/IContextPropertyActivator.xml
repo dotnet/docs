@@ -14,8 +14,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates that the implementing property is interested in participating in activation and might not have provided a message sink.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Remoting.Contexts.IContextPropertyActivator> interface is exposed on all <xref:System.Runtime.Remoting.Contexts.Context> properties that are interested in participating in activation and that might have not provided a message sink. Client <xref:System.Runtime.Remoting.Contexts.Context> properties send information in the construction message that their counterparts at the remote site could look for during activation.  
+  
+ <xref:System.Runtime.Remoting.Contexts.IContextPropertyActivator> is also used to collect information from the client and server context property and to deliver information from the server context properties to the client context properties when returning to the client <xref:System.Runtime.Remoting.Contexts.Context>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CollectFromClientContext">
@@ -35,9 +44,16 @@
         <Parameter Name="msg" Type="System.Runtime.Remoting.Activation.IConstructionCallMessage" />
       </Parameters>
       <Docs>
-        <param name="msg">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="msg">An <see cref="T:System.Runtime.Remoting.Activation.IConstructionCallMessage" />.</param>
+        <summary>Called on each client context property that has this interface, before the construction request leaves the client.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The context property can examine and manipulate the contents of the <xref:System.Runtime.Remoting.Activation.IConstructionCallMessage>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CollectFromServerContext">
@@ -57,9 +73,16 @@
         <Parameter Name="msg" Type="System.Runtime.Remoting.Activation.IConstructionReturnMessage" />
       </Parameters>
       <Docs>
-        <param name="msg">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="msg">An <see cref="T:System.Runtime.Remoting.Activation.IConstructionReturnMessage" />.</param>
+        <summary>Called on each server context property that has this interface, before the construction response leaves the server for the client.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The context property can examine and manipulate the contents of the <xref:System.Runtime.Remoting.Activation.IConstructionReturnMessage>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DeliverClientContextToServerContext">
@@ -79,10 +102,18 @@
         <Parameter Name="msg" Type="System.Runtime.Remoting.Activation.IConstructionCallMessage" />
       </Parameters>
       <Docs>
-        <param name="msg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="msg">An <see cref="T:System.Runtime.Remoting.Activation.IConstructionCallMessage" />.</param>
+        <summary>Called on each client context property that has this interface, when the construction request returns to the client from the server.</summary>
+        <returns>
+          <see langword="true" /> if successful; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The current method is called on each server context property that implements the <xref:System.Runtime.Remoting.Contexts.IContextPropertyActivator> interface when a construction request arrives at a server. This allows the context property to examine the contents of each <xref:System.Runtime.Remoting.Activation.IConstructionCallMessage>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DeliverServerContextToClientContext">
@@ -102,10 +133,18 @@
         <Parameter Name="msg" Type="System.Runtime.Remoting.Activation.IConstructionReturnMessage" />
       </Parameters>
       <Docs>
-        <param name="msg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="msg">An <see cref="T:System.Runtime.Remoting.Activation.IConstructionReturnMessage" />.</param>
+        <summary>Called on each client context property that has this interface, when the construction request returns to the client from the server.</summary>
+        <returns>
+          <see langword="true" /> if successful; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The context property can examine the contents of the <xref:System.Runtime.Remoting.Activation.IConstructionReturnMessage>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsOKToActivate">
@@ -125,9 +164,9 @@
         <Parameter Name="msg" Type="System.Runtime.Remoting.Activation.IConstructionCallMessage" />
       </Parameters>
       <Docs>
-        <param name="msg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="msg">An <see cref="T:System.Runtime.Remoting.Activation.IConstructionCallMessage" />.</param>
+        <summary>Indicates whether it is all right to activate the object type indicated in the <paramref name="msg" /> parameter.</summary>
+        <returns>A Boolean value indicating whether the requested type can be activated.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

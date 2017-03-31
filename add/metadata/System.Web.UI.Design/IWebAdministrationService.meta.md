@@ -1,9 +1,11 @@
 ---
 uid: System.Web.UI.Design.IWebAdministrationService
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.IWebAdministrationService.Start(System.Collections.IDictionary)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

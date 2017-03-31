@@ -1,34 +1,41 @@
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.FormatNumberEventArgs
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.FormatNumberEventArgs.SenderTag
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.FormatNumberEventArgs.Format
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.FormatNumberEventArgs.Value
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.FormatNumberEventArgs.ValueType
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.FormatNumberEventArgs.ElementType
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.FormatNumberEventArgs.LocalizedValue
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---

@@ -1,4 +1,4 @@
 ---
 uid: System.Transactions.HostCurrentTransactionCallback
-internalonly: False
+manager: "ghogen"
 ---

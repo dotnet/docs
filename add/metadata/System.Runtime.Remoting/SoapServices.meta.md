@@ -1,124 +1,134 @@
 ---
 uid: System.Runtime.Remoting.SoapServices
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.SoapServices.GetXmlTypeForInteropType(System.Type,System.String@,System.String@)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.SoapServices.IsClrTypeNamespace(System.String)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.SoapServices.DecodeXmlNamespaceForClrTypeNamespace(System.String,System.String@,System.String@)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.SoapServices.PreLoad(System.Reflection.Assembly)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.SoapServices.XmlNsForClrTypeWithAssembly
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.SoapServices.RegisterSoapActionForMethodBase(System.Reflection.MethodBase)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.SoapServices.GetXmlNamespaceForMethodResponse(System.Reflection.MethodBase)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.SoapServices.XmlNsForClrTypeWithNsAndAssembly
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.SoapServices.GetInteropFieldTypeAndNameFromXmlAttribute(System.Type,System.String,System.String,System.Type@,System.String@)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.SoapServices.RegisterInteropXmlType(System.String,System.String,System.Type)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.SoapServices.GetInteropTypeFromXmlType(System.String,System.String)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.SoapServices.GetInteropTypeFromXmlElement(System.String,System.String)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.SoapServices.RegisterSoapActionForMethodBase(System.Reflection.MethodBase,System.String)
-internalonly: False
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Remoting.SoapServices.PreLoad
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.SoapServices.GetXmlNamespaceForMethodCall(System.Reflection.MethodBase)
-internalonly: False
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Remoting.SoapServices.RegisterSoapActionForMethodBase
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.SoapServices.GetSoapActionFromMethodBase(System.Reflection.MethodBase)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.SoapServices.XmlNsForClrType
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.SoapServices.RegisterInteropXmlElement(System.String,System.String,System.Type)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.SoapServices.CodeXmlNamespaceForClrTypeNamespace(System.String,System.String)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.SoapServices.GetInteropFieldTypeAndNameFromXmlElement(System.Type,System.String,System.String,System.Type@,System.String@)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.SoapServices.GetTypeAndMethodNameFromSoapAction(System.String,System.String@,System.String@)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.SoapServices.XmlNsForClrTypeWithNs
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.SoapServices.IsSoapActionValidForMethodBase(System.String,System.Reflection.MethodBase)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.SoapServices.GetXmlElementForInteropType(System.Type,System.String@,System.String@)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.SoapServices.PreLoad(System.Type)
-internalonly: False
+manager: "ghogen"
 ---

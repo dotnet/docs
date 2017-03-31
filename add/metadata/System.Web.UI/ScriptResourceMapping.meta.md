@@ -1,49 +1,77 @@
 ---
 uid: System.Web.UI.ScriptResourceMapping
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.ScriptResourceMapping.AddDefinition
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ScriptResourceMapping.AddDefinition(System.String,System.Reflection.Assembly,System.Web.UI.ScriptResourceDefinition)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ScriptResourceMapping.GetDefinition(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ScriptResourceMapping.Clear
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ScriptResourceMapping.RemoveDefinition(System.String,System.Reflection.Assembly)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.ScriptResourceMapping.GetDefinition
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ScriptResourceMapping.RemoveDefinition(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.ScriptResourceMapping.RemoveDefinition
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ScriptResourceMapping.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ScriptResourceMapping.GetDefinition(System.String,System.Reflection.Assembly)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ScriptResourceMapping.GetDefinition(System.Web.UI.ScriptReference)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ScriptResourceMapping.AddDefinition(System.String,System.Web.UI.ScriptResourceDefinition)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

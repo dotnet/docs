@@ -1,54 +1,79 @@
 ---
 uid: System.Windows.Media.Animation.EasingQuaternionKeyFrame
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.EasingQuaternionKeyFrame.EasingFunctionProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.EasingQuaternionKeyFrame.CreateInstanceCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.EasingQuaternionKeyFrame.#ctor(System.Windows.Media.Media3D.Quaternion,System.Windows.Media.Animation.KeyTime)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.EasingQuaternionKeyFrame.#ctor(System.Windows.Media.Media3D.Quaternion)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.EasingQuaternionKeyFrame.InterpolateValueCore(System.Windows.Media.Media3D.Quaternion,System.Double)
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.EasingQuaternionKeyFrame.#ctor(System.Windows.Media.Media3D.Quaternion,System.Windows.Media.Animation.KeyTime,System.Windows.Media.Animation.IEasingFunction)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Animation.EasingQuaternionKeyFrame.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.EasingQuaternionKeyFrame.#ctor(System.Windows.Media.Media3D.Quaternion,System.Windows.Media.Animation.KeyTime,System.Windows.Media.Animation.IEasingFunction)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.Animation.EasingQuaternionKeyFrame.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.EasingQuaternionKeyFrame.EasingFunction
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Animation.EasingQuaternionKeyFrame.UseShortestPathProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.EasingQuaternionKeyFrame.UseShortestPath
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

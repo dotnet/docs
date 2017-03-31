@@ -1,2 +1,0 @@
-            // Create a dictionary and use UriTemplateEquivalenceComparer as the comparer
-            Dictionary<UriTemplate, object> templates = new Dictionary<UriTemplate, object>(new UriTemplateEquivalenceComparer());

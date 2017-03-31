@@ -1,24 +1,35 @@
 ---
 uid: System.Security.Authentication.InvalidCredentialException
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Security.Authentication.InvalidCredentialException.#ctor(System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Security.Authentication.InvalidCredentialException.#ctor(System.String,System.Exception)
-internalonly: False
----
-
----
-uid: System.Security.Authentication.InvalidCredentialException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Security.Authentication.InvalidCredentialException.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Security.Authentication.InvalidCredentialException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Security.Authentication.InvalidCredentialException.#ctor
+ms.author: "bobdel"
+manager: "markl"
 ---

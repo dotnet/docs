@@ -1,39 +1,44 @@
 ---
 uid: System.Runtime.Remoting.Messaging.Header
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Messaging.Header.HeaderNamespace
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Messaging.Header.MustUnderstand
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Messaging.Header.Value
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Messaging.Header.#ctor(System.String,System.Object)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Messaging.Header.Name
-internalonly: False
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Remoting.Messaging.Header.#ctor
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Messaging.Header.#ctor(System.String,System.Object,System.Boolean,System.String)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Messaging.Header.#ctor(System.String,System.Object,System.Boolean)
-internalonly: False
+manager: "ghogen"
 ---

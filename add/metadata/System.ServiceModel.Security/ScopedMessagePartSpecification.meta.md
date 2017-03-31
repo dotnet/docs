@@ -1,54 +1,97 @@
 ---
 uid: System.ServiceModel.Security.ScopedMessagePartSpecification
-internalonly: False
----
-
----
-uid: System.ServiceModel.Security.ScopedMessagePartSpecification.IsReadOnly
-internalonly: False
----
-
----
-uid: System.ServiceModel.Security.ScopedMessagePartSpecification.Actions
-internalonly: False
----
-
----
-uid: System.ServiceModel.Security.ScopedMessagePartSpecification.#ctor(System.ServiceModel.Security.ScopedMessagePartSpecification)
-internalonly: False
----
-
----
-uid: System.ServiceModel.Security.ScopedMessagePartSpecification.TryGetParts(System.String,System.ServiceModel.Security.MessagePartSpecification@)
-internalonly: False
----
-
----
-uid: System.ServiceModel.Security.ScopedMessagePartSpecification.ChannelParts
-internalonly: False
----
-
----
-uid: System.ServiceModel.Security.ScopedMessagePartSpecification.AddParts(System.ServiceModel.Security.MessagePartSpecification)
-internalonly: False
----
-
----
-uid: System.ServiceModel.Security.ScopedMessagePartSpecification.TryGetParts(System.String,System.Boolean,System.ServiceModel.Security.MessagePartSpecification@)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.ScopedMessagePartSpecification.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Security.ScopedMessagePartSpecification.IsReadOnly
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Security.ScopedMessagePartSpecification.Actions
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Security.ScopedMessagePartSpecification.AddParts
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Security.ScopedMessagePartSpecification.TryGetParts
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Security.ScopedMessagePartSpecification.#ctor(System.ServiceModel.Security.ScopedMessagePartSpecification)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Security.ScopedMessagePartSpecification.TryGetParts(System.String,System.ServiceModel.Security.MessagePartSpecification@)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Security.ScopedMessagePartSpecification.ChannelParts
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Security.ScopedMessagePartSpecification.AddParts(System.ServiceModel.Security.MessagePartSpecification)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Security.ScopedMessagePartSpecification.TryGetParts(System.String,System.Boolean,System.ServiceModel.Security.MessagePartSpecification@)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Security.ScopedMessagePartSpecification.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.ScopedMessagePartSpecification.AddParts(System.ServiceModel.Security.MessagePartSpecification,System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.ScopedMessagePartSpecification.MakeReadOnly
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

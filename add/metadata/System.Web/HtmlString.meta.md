@@ -1,19 +1,23 @@
 ---
 uid: System.Web.HtmlString
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.HtmlString.#ctor(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.HtmlString.ToHtmlString
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.HtmlString.ToString
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

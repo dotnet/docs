@@ -1,34 +1,34 @@
 ---
 uid: System.Runtime.Remoting.Services.RemotingService
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Services.RemotingService.Server
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Services.RemotingService.#ctor
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Services.RemotingService.Session
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Services.RemotingService.Context
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Services.RemotingService.Application
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Services.RemotingService.User
-internalonly: False
+manager: "ghogen"
 ---

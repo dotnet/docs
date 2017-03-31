@@ -1,24 +1,29 @@
 ---
 uid: System.Runtime.Remoting.MetadataServices.ServiceType
-internalonly: False
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Remoting.MetadataServices.ServiceType.#ctor
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.MetadataServices.ServiceType.#ctor(System.Type)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.MetadataServices.ServiceType.#ctor(System.Type,System.String)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.MetadataServices.ServiceType.ObjectType
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.MetadataServices.ServiceType.Url
-internalonly: False
+manager: "ghogen"
 ---

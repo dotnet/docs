@@ -1,19 +1,34 @@
 ---
 uid: System.Web.Services.Configuration.ProtocolElement
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Configuration.ProtocolElement.Name
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Configuration.ProtocolElement.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Configuration.ProtocolElement.#ctor(System.Web.Services.Configuration.WebServiceProtocols)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Web.Services.Configuration.ProtocolElement.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

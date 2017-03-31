@@ -14,8 +14,18 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains the <see cref="T:System.Windows.Input.StylusDevice" /> objects that represent a Tablet PC's stylus devices.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to access the <xref:System.Windows.Input.StylusDevice> objects.  
+  
+ [!code-csharp[HwCaps#11](~/samples/snippets/csharp/VS_Snippets_Wpf/HwCaps/CSharp/Window1.xaml.cs#11)]
+ [!code-vb[HwCaps#11](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HwCaps/VisualBasic/Window1.xaml.vb#11)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members />
 </Type>

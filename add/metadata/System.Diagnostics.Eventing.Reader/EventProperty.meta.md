@@ -1,9 +1,11 @@
 ---
 uid: System.Diagnostics.Eventing.Reader.EventProperty
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventProperty.Value
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---

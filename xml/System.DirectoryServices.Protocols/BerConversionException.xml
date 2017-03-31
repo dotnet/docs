@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.BerConversionException" /> class is an exception thrown when converting data using a <see cref="T:System.DirectoryServices.Protocols.BerConverter" /> object.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.BerConversionException.#ctor" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.BerConversionException" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The message displayed to the client when the exception is thrown.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.BerConversionException.#ctor(System.String)" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.BerConversionException" /> class using the specified message.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,9 +62,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">The serialized object data about the exception thrown.</param>
+        <param name="context">The contextual data about the source or destination.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.BerConversionException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.BerConversionException" /> class using the specified serialization data and streaming contextual data.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,9 +82,9 @@
         <Parameter Name="inner" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="inner">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The message displayed when the exception is thrown.</param>
+        <param name="inner">The <see cref="P:System.Exception.InnerException" />, if any, that threw the exception.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.BerConversionException.#ctor(System.String,System.Exception)" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.BerConversionException" /> class using the specified message and inner exception.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

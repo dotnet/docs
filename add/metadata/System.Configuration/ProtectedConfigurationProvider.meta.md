@@ -1,19 +1,23 @@
 ---
 uid: System.Configuration.ProtectedConfigurationProvider
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ProtectedConfigurationProvider.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ProtectedConfigurationProvider.Decrypt(System.Xml.XmlNode)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ProtectedConfigurationProvider.Encrypt(System.Xml.XmlNode)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -11,8 +11,18 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides higher-level services (static methods) for the common XAML tasks of reading XAML and writing an object graph; or reading an object graph and writing XAML file output for serialization purposes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The modes of the <xref:System.Xaml.XamlServices> class that are used in the most common XAML reading and writing scenarios rely on creating instances of XAML readers and XAML writers. These readers and writers are specialized but internal implementations of public classes, such as <xref:System.Xml.XmlReader>, <xref:System.Xaml.XamlXmlReader>, and <xref:System.Xaml.XamlObjectWriter>. To use <xref:System.Xaml.XamlServices> for most scenarios, you can rely on the default internal implementations to obtain the results that you want. For more specialized scenarios, you might define readers and writers yourself, and then pass them as arguments for overloads of the <xref:System.Xaml.XamlServices> methods.  
+  
+> [!IMPORTANT]
+>  <xref:System.Xaml.XamlServices> is not the recommended XAML reading or XAML writing API set if you are processing WPF-defined types, or types based on WPF. For [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] usage, use <xref:System.Windows.Markup.XamlReader?displayProperty=fullName> for reading or loading XAML (or BAML); and <xref:System.Windows.Markup.XamlWriter?displayProperty=fullName> for writing back XAML. These classes use .NET Framework XAML Services APIs and the XAML readers and XAML writers internally in their implementation; however, they also provide support and specialized XAML schema context for WPF-specific concepts, such as optimizations for dependency properties and WPF known types.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Load">
@@ -31,10 +41,30 @@
         <Parameter Name="stream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="stream">The stream to load as input.</param>
+        <summary>Loads a <see cref="T:System.IO.Stream" /> source for a XAML reader and writes its output as an object graph.</summary>
+        <returns>The object graph that is written as output.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Different signatures for the <xref:System.Xaml.XamlServices.Load%28System.IO.Stream%29> method specify different types of input for the source XAML. The <xref:System.Xaml.XamlServices.Load%28System.IO.Stream%29> internal implementation first creates an <xref:System.Xml.XmlReader> by calling <xref:System.Xml.XmlReader.Create%28System.IO.Stream%29> and then creates a new instance of a specialized <xref:System.Xaml.XamlReader> that processes the input.  
+  
+ In order for the <xref:System.Xaml.XamlServices.Load%28System.IO.Stream%29> call to successfully create an object graph, the following must be true:  
+  
+-   The source is well-formed and valid XML.  
+  
+-   The source is valid XAML at the language level.  
+  
+-   The XAML types that are specified in the source XAML must resolve to backing types in the relevant XAML namespaces. For example, XAML types for WPF namespaces can resolve to a WPF XAML namespace as specified in the XAML; the assemblies for WPF must be included in the project or available in the run time; and so on.  
+  
+> [!IMPORTANT]
+>  <xref:System.Xaml.XamlServices> is not the recommended XAML reading or XAML writing API set if you are processing [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] types, or types based on [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)]. For [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] usage, use <xref:System.Windows.Markup.XamlReader?displayProperty=fullName> for reading or loading XAML; and <xref:System.Windows.Markup.XamlWriter?displayProperty=fullName> for writing back XAML. These classes use <xref:System.Xaml> APIs internally in their implementation; however, they also provide support for WPF-specific concepts that influence the nature of XAML reading and writing, such as optimizations for dependency properties.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="stream" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -53,10 +83,19 @@
         <Parameter Name="textReader" Type="System.IO.TextReader" />
       </Parameters>
       <Docs>
-        <param name="textReader">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="textReader">The <see cref="T:System.IO.TextReader" /> to use as the basis for the created <see cref="T:System.Xml.XmlReader" />.</param>
+        <summary>Creates a XAML reader from a <see cref="T:System.IO.TextReader" />, and returns an object graph.</summary>
+        <returns>The object graph that is returned.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In order to return the object graph, the `textReader` input should be constructed by using its relevant input. For example, it should pass a <xref:System.IO.StringReader> that is constructed by using a valid XAML-as-string input for the <xref:System.IO.StringReader.%23ctor%28System.String%29> constructor.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="textReader" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -75,10 +114,27 @@
         <Parameter Name="fileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="fileName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="fileName">The file name to load and use as source.</param>
+        <summary>Loads a <see cref="T:System.IO.Stream" /> source for a XAML reader and returns an object graph.</summary>
+        <returns>The object graph that is returned.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Different signatures for the <xref:System.Xaml.XamlServices.Load%2A> method specify different types of input for the source XAML. The <xref:System.Xaml.XamlServices.Load%2A> internal implementation first creates an <xref:System.Xml.XmlReader> by calling <xref:System.Xml.XmlReader.Create%28System.String%29> and then creates a new instance of a specialized <xref:System.Xaml.XamlReader> that processes the input.  
+  
+ In order for the <xref:System.Xaml.XamlServices.Load%28System.String%29> call to successfully create an object graph, the following must be true:  
+  
+-   The source is well-formed and valid XML.  
+  
+-   The source is valid XAML at the language level.  
+  
+-   The XAML types that are specified in the source XAML must resolve to backing types in the relevant XAML namespaces. For example, XAML types for WPF namespaces can resolve to a WPF XAML namespace as specified in the XAML; the assemblies for WPF must be included in the project or be available in the run time; and so on.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="fileName" /> input is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -97,10 +153,23 @@
         <Parameter Name="xamlReader" Type="System.Xaml.XamlReader" />
       </Parameters>
       <Docs>
-        <param name="xamlReader">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="xamlReader">The XAML reader implementation to use as the reader for this <see langword="Load" /> operation.</param>
+        <summary>Loads a specific XAML reader implementation and returns an object graph.</summary>
+        <returns>The object graph that is returned.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You should typically use this signature only in the following cases:  
+  
+-   You defined your own implementation of a <xref:System.Xaml.XamlReader>.  
+  
+-   You specified settings for a <xref:System.Xaml.XamlReader> that differ from the default settings.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="xamlReader" /> input is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -119,10 +188,19 @@
         <Parameter Name="xmlReader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="xmlReader">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="xmlReader">The <see cref="T:System.Xml.XmlReader" /> implementation to use as the reader for this <see langword="Load" /> operation.</param>
+        <summary>Loads a specific XML reader implementation and returns an object graph.</summary>
+        <returns>The output object graph.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You should typically use this signature only if you defined your own implementation of a <xref:System.Xml.XmlReader>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="xamlReader" /> input is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -141,10 +219,28 @@
         <Parameter Name="xaml" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="xaml">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="xaml">The XAML string input to parse.</param>
+        <summary>Reads XAML as string output and returns an object graph.</summary>
+        <returns>The object graph that is returned.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In order for the <xref:System.Xaml.XamlServices.Parse%2A> call to successfully create an object tree, the following must be true:  
+  
+-   The `xaml` input is well-formed and valid XML.  
+  
+-   The `xaml` input is valid XAML at the language level.  
+  
+-   The XAML types that are specified in the `xaml` input must resolve to backing types in the relevant XAML namespaces. For example, XAML types for a WPF namespace can resolve to a WPF XAML namespace as specified in the XAML; the assemblies for WPF must be included in the project or be available in the run time; and so on.  
+  
+> [!IMPORTANT]
+>  <xref:System.Xaml.XamlServices> is not the recommended XAML reading or XAML writing API set if you are processing [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] types, or types based on [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)]. For [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] usage, use <xref:System.Windows.Markup.XamlReader?displayProperty=fullName> for reading or loading XAML, and <xref:System.Windows.Markup.XamlWriter?displayProperty=fullName> for writing back XAML. These classes use <xref:System.Xaml> APIs internally in their implementation; however, they also provide support for WPF-specific concepts that influence the nature of XAML reading and writing, such as optimizations for dependency properties.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="xaml" /> input is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -163,10 +259,19 @@
         <Parameter Name="instance" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instance">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="instance">The root of the object graph to process.</param>
+        <summary>Processes a provided object tree into a XAML node representation, and returns a string representation of the output XAML.</summary>
+        <returns>The XAML markup output as a string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The output from this method is the `ToString` result of an <xref:System.Xml.XmlWriter> that is created by the method call. That <xref:System.Xml.XmlWriter> is created by using the following settings: <xref:System.Xml.XmlWriterSettings.Indent%2A?displayProperty=fullName> is `true`; and <xref:System.Xml.XmlWriterSettings.OmitXmlDeclaration%2A?displayProperty=fullName> is `true`.  
+  
+ The returned string can be loaded as valid XML through the <xref:System.Xml.XmlReader.Create%2A> method if you processed the string into a stream, or into a reader more specifically dedicated for XAML.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -186,10 +291,21 @@
         <Parameter Name="instance" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <param name="instance">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="stream">The destination stream.</param>
+        <param name="instance">The root of the object graph to process.</param>
+        <summary>Processes a provided object graph into a XAML node representation and then into an output stream for serialization.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  <xref:System.Xaml.XamlServices> is not the recommended XAML reading or XAML writing API set if you are processing [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] types, or types based on [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)]. For [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] usage, use <xref:System.Windows.Markup.XamlReader?displayProperty=fullName> for reading or loading XAML; and <xref:System.Windows.Markup.XamlWriter?displayProperty=fullName> for writing back XAML. These classes use <xref:System.Xaml> APIs internally in their implementation; however, they also provide support for WPF-specific concepts that influence the nature of XAML reading and writing, such as optimizations for dependency properties.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="stream" /> input is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -209,10 +325,12 @@
         <Parameter Name="instance" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="instance">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The <see cref="T:System.IO.TextWriter" /> that writes the output.</param>
+        <param name="instance">The root of the object graph to process.</param>
+        <summary>Processes a provided object graph into a XAML node representation and then into an output that goes to the provided <see cref="T:System.IO.TextWriter" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="writer" /> input is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -232,10 +350,21 @@
         <Parameter Name="instance" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="fileName">To be added.</param>
-        <param name="instance">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="fileName">The name and location of the file to write the output to.</param>
+        <param name="instance">The root of the object graph to process.</param>
+        <summary>Processes a provided object graph into a XAML node representation and then writes it to an output file at a provided location.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `fileName` parameter value is used as the `outputFileName` input for a call to <xref:System.Xml.XmlWriter.Create%2A?displayProperty=fullName>, which creates a <xref:System.Xml.XmlWriter> as part of the method call.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="fileName" /> is an empty string.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="fileName" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -255,10 +384,23 @@
         <Parameter Name="instance" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="instance">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="writer">The <see cref="T:System.Xaml.XamlWriter" /> implementation to use.</param>
+        <param name="instance">The root of the object graph to process.</param>
+        <summary>Processes a provided object graph into a XAML node representation and then writes it to the provided XAML writer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You should typically use this signature only in the following cases:  
+  
+-   You defined your own implementation of a <xref:System.Xaml.XamlWriter>.  
+  
+-   You specified settings for the <xref:System.Xaml.XamlWriter> that differ from the default settings.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="writer" /> input is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -278,10 +420,12 @@
         <Parameter Name="instance" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="instance">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> implementation to use.</param>
+        <param name="instance">The root of the object graph to process.</param>
+        <summary>Processes a provided object graph into a XAML node representation and then writes it to the provided <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="writer" /> input is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Transform">
@@ -301,10 +445,20 @@
         <Parameter Name="xamlWriter" Type="System.Xaml.XamlWriter" />
       </Parameters>
       <Docs>
-        <param name="xamlReader">To be added.</param>
-        <param name="xamlWriter">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="xamlReader">The <see cref="T:System.Xaml.XamlReader" /> implementation to use.</param>
+        <param name="xamlWriter">The <see cref="T:System.Xaml.XamlWriter" /> to use.</param>
+        <summary>Connects a <see cref="T:System.Xaml.XamlReader" /> and a <see cref="T:System.Xaml.XamlWriter" /> to use a common XAML node set intermediary. Potentially transforms the content, depending on the types of readers and writers that are provided.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is a wrapper around <xref:System.Xaml.XamlServices.Transform%28System.Xaml.XamlReader%2CSystem.Xaml.XamlWriter%2CSystem.Boolean%29>, where `closeWriter` is specified as `true`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="xamlReader" /> or <paramref name="xamlWriter" /> input is <see langword="null" />.</exception>
+        <exception cref="T:System.Xaml.XamlException">The XAML schema context does not match between the provided <paramref name="xamlReader" /> and <paramref name="xamlWriter" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Transform">
@@ -325,11 +479,15 @@
         <Parameter Name="closeWriter" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="xamlReader">To be added.</param>
-        <param name="xamlWriter">To be added.</param>
-        <param name="closeWriter">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="xamlReader">The <see cref="T:System.Xaml.XamlReader" /> implementation to use.</param>
+        <param name="xamlWriter">The <see cref="T:System.Xaml.XamlWriter" /> to use.</param>
+        <param name="closeWriter">
+          <see langword="true" /> to close the writer after the call is complete; <see langword="false" /> to leave the writer active at the last written position.</param>
+        <summary>Connects a <see cref="T:System.Xaml.XamlReader" /> and a <see cref="T:System.Xaml.XamlWriter" /> to use a common XAML node set intermediary. Potentially transforms the content, depending on the types of readers and writers that are provided. Provides a parameter for specifying whether to close the writer after the call is completed.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="xamlReader" /> or <paramref name="xamlWriter" /> input is <see langword="null" />.</exception>
+        <exception cref="T:System.Xaml.XamlException">The XAML schema context does not match between the provided <paramref name="xamlReader" /> and <paramref name="xamlWriter" />.</exception>
       </Docs>
     </Member>
   </Members>

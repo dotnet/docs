@@ -1,79 +1,101 @@
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsRuleRef
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.#ctor(System.Uri,System.String,System.String,System.String)
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.SemanticKey
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.Dictation
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.#ctor(System.Speech.Recognition.SrgsGrammar.SrgsRule)
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.#ctor(System.Uri)
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.Uri
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.#ctor(System.Uri,System.String)
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.#ctor(System.Uri,System.String,System.String)
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.Void
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.Params
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
+---
+
+---
+uid: System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.#ctor
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.Null
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.Garbage
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.MnemonicSpelling
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.#ctor(System.Speech.Recognition.SrgsGrammar.SrgsRule,System.String)
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsRuleRef.#ctor(System.Speech.Recognition.SrgsGrammar.SrgsRule,System.String,System.String)
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

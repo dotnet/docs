@@ -11,8 +11,19 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines an encoder that is used to encode [!INCLUDE[TLA#tla_gif](~/includes/tlasharptla-gif-md.md)] images.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[TLA#tla_gif](~/includes/tlasharptla-gif-md.md)] images do not support global preview, global thumbnails, global metadata, frame level thumbnails, or frame level metadata. [!INCLUDE[TLA#tla_gif](~/includes/tlasharptla-gif-md.md)] images do support multiple frames.  
+  
+ Encoding does not work in partial trust. See [WPF Partial Trust Security](../Topic/WPF%20Partial%20Trust%20Security.md) for information on partial trust.  
+  
+<a name="xamlTextUsage_No"></a>   
+## XAML Text Usage  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,8 +42,19 @@
       </Attributes>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Imaging.GifBitmapEncoder" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to initialize a <xref:System.Windows.Media.Imaging.GifBitmapEncoder> to encode a new bitmap image.  
+  
+ [!code-cpp[gifbitmapdecoderencoder#3](~/samples/snippets/cpp/VS_Snippets_Wpf/GifBitmapDecoderEncoder/CPP/GifEncoderDecoder.cpp#3)]
+ [!code-csharp[gifbitmapdecoderencoder#3](~/samples/snippets/csharp/VS_Snippets_Wpf/GifBitmapDecoderEncoder/CSharp/GifEncoderDecoder.cs#3)]
+ [!code-vb[gifbitmapdecoderencoder#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GifBitmapDecoderEncoder/VB/GifEncoderDecoder.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,9 +1,11 @@
 ---
 uid: Microsoft.Build.Tasks.Hosting.ICscHostObject3
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Hosting.ICscHostObject3.SetApplicationConfiguration(System.String)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

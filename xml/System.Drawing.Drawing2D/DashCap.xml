@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the type of graphic shape to use on both ends of each dash in a dashed line.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Drawing.Drawing2D.DashCap</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies a square cap that squares off both ends of each dash.</summary>
       </Docs>
     </Member>
     <Member MemberName="Round">
@@ -43,7 +43,7 @@
         <ReturnType>System.Drawing.Drawing2D.DashCap</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies a circular cap that rounds off both ends of each dash.</summary>
       </Docs>
     </Member>
     <Member MemberName="Triangle">
@@ -59,7 +59,7 @@
         <ReturnType>System.Drawing.Drawing2D.DashCap</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies a triangular cap that points both ends of each dash.</summary>
       </Docs>
     </Member>
   </Members>

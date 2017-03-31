@@ -12,8 +12,23 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines methods for reading the parts of a <see cref="T:System.Windows.Documents.FixedDocument" /> and also for limited types of writing to the document.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to obtain a reference to an object that implements this interface.  
+  
+ [!code-csharp[XpsReadWriteSign#SignatureDefinitionCommandHandler](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsReadWriteSign/CSharp/SignatureDialog.xaml.cs#signaturedefinitioncommandhandler)]
+ [!code-vb[XpsReadWriteSign#SignatureDefinitionCommandHandler](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsReadWriteSign/visualbasic/signaturedialog.xaml.vb#signaturedefinitioncommandhandler)]  
+  
+ The following example shows how to use an <xref:System.Windows.Xps.Packaging.IXpsFixedDocumentReader> to obtain an <xref:System.Windows.Xps.Packaging.IXpsFixedDocumentReader> collection in order to access each page in a <xref:System.Windows.Documents.FixedDocument>.  
+  
+ [!code-csharp[DocumentStructure#DocStrucFixedDoc](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentStructure/CSharp/Window1.xaml.cs#docstrucfixeddoc)]
+ [!code-vb[DocumentStructure#DocStrucFixedDoc](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DocumentStructure/visualbasic/window1.xaml.vb#docstrucfixeddoc)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AddSignatureDefinition">
@@ -32,8 +47,8 @@
         <Parameter Name="signatureDefinition" Type="System.Windows.Xps.Packaging.XpsSignatureDefinition" />
       </Parameters>
       <Docs>
-        <param name="signatureDefinition">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="signatureDefinition">The definition that is added.</param>
+        <summary>Adds the specified <see cref="T:System.Windows.Xps.Packaging.XpsSignatureDefinition" /> to the <see cref="T:System.Windows.Documents.FixedDocument" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,7 +66,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Flushes the package <see cref="T:System.IO.Stream" /> and also commits an <see cref="T:System.Windows.Xps.Packaging.XpsSignatureDefinition" /> to the package.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,8 +83,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the zero-based position of the document in the <see cref="T:System.Windows.Documents.FixedDocumentSequence" />.</summary>
+        <value>An <see cref="T:System.Int32" /> that represents the document location in the sequence.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,9 +101,16 @@
         <ReturnType>System.Windows.Xps.Packaging.XpsStructure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see langword="DocumentStructure" /> part, if one exists, of the <see cref="T:System.Windows.Documents.FixedDocument" />.</summary>
+        <value>An <see cref="T:System.Windows.Xps.Packaging.XpsStructure" /> that represents the <see langword="DocumentStructure" /> element, if one exists, and its child elements.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An [!INCLUDE[TLA#tla_xps](~/includes/tlasharptla-xps-md.md)] document does not need to have a Document Structure part.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FixedPages">
@@ -104,9 +126,19 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Xps.Packaging.IXpsFixedPageReader&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of <see cref="T:System.Windows.Documents.FixedPage" /> readers, one reader for each page in the <see cref="T:System.Windows.Documents.FixedDocument" />.</summary>
+        <value>A collection of fixed page readers, one reader for each page in the <see cref="T:System.Windows.Documents.FixedDocument" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Xps.Packaging.IXpsFixedDocumentReader.FixedPages%2A> property to obtain an <xref:System.Windows.Xps.Packaging.IXpsFixedDocumentReader> collection in order to access the individual pages in a <xref:System.Windows.Documents.FixedDocument>.  
+  
+ [!code-csharp[DocumentStructure#DocStrucFixedDoc](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentStructure/CSharp/Window1.xaml.cs#docstrucfixeddoc)]
+ [!code-vb[DocumentStructure#DocStrucFixedDoc](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DocumentStructure/visualbasic/window1.xaml.vb#docstrucfixeddoc)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetFixedPage">
@@ -125,9 +157,9 @@
         <Parameter Name="pageSource" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="pageSource">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="pageSource">The [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] of the page.</param>
+        <summary>Gets a reader for the <see cref="T:System.Windows.Documents.FixedPage" /> with the specified [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)].</summary>
+        <returns>An <see cref="T:System.Windows.Xps.Packaging.IXpsFixedPageReader" /> for the page.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,9 +176,16 @@
         <ReturnType>System.Printing.PrintTicket</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Printing.PrintTicket" />, if one exists, that is associated with the <see cref="T:System.Windows.Documents.FixedDocument" />.</summary>
+        <value>A <see cref="T:System.Printing.PrintTicket" /> that contains the default printing options for the document; or <see langword="null" /> if no print ticket exists for the document.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Printing.PrintTicket> part of an [!INCLUDE[TLA#tla_xps](~/includes/tlasharptla-xps-md.md)] document, see chapter 2 in the [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] specification, which you can obtain at [XPS: Specification and License Downloads](http://www.microsoft.com/whdc/xps/downloads.mspx).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveSignatureDefinition">
@@ -165,8 +204,8 @@
         <Parameter Name="signatureDefinition" Type="System.Windows.Xps.Packaging.XpsSignatureDefinition" />
       </Parameters>
       <Docs>
-        <param name="signatureDefinition">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="signatureDefinition">The definition that is removed.</param>
+        <summary>Removes the specified <see cref="T:System.Windows.Xps.Packaging.XpsSignatureDefinition" /> from the <see cref="T:System.Windows.Documents.FixedDocument" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -183,8 +222,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.Windows.Xps.Packaging.XpsSignatureDefinition&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of all the signature definitions that are associated with the <see cref="T:System.Windows.Documents.FixedDocument" />.</summary>
+        <value>An <see cref="T:System.Collections.Generic.ICollection`1" /> of signature definitions, typically one for every person who signed or will sign the document.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -201,8 +240,8 @@
         <ReturnType>System.Windows.Xps.Packaging.XpsThumbnail</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the thumbnail image, if a thumbnail exists, that is associated with the <see cref="T:System.Windows.Documents.FixedDocument" />.</summary>
+        <value>An <see cref="T:System.Windows.Xps.Packaging.XpsThumbnail" /> that represents the image.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -219,9 +258,19 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] of the <see cref="T:System.Windows.Documents.FixedDocument" />.</summary>
+        <value>A <see cref="T:System.Uri" /> that represents the [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] for the document.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Xps.Packaging.IXpsFixedDocumentReader.Uri%2A> property.  
+  
+ [!code-csharp[XpsReadWriteSign#IterateXpsPackageParts](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsReadWriteSign/CSharp/ReadingAndWritingXps.cs#iteratexpspackageparts)]
+ [!code-vb[XpsReadWriteSign#IterateXpsPackageParts](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsReadWriteSign/visualbasic/readingandwritingxps.vb#iteratexpspackageparts)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

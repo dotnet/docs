@@ -1,19 +1,19 @@
 ---
 uid: System.Runtime.Remoting.Channels.BaseChannelWithProperties
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Channels.BaseChannelWithProperties.Properties
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Channels.BaseChannelWithProperties.SinksWithProperties
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Channels.BaseChannelWithProperties.#ctor
-internalonly: False
+manager: "ghogen"
 ---

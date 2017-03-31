@@ -1,9 +1,13 @@
 ---
 uid: System.Workflow.Runtime.Tracking.TrackingProfileCache
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Tracking.TrackingProfileCache.Clear
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

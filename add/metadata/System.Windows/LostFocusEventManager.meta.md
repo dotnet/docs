@@ -1,39 +1,51 @@
 ---
 uid: System.Windows.LostFocusEventManager
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.LostFocusEventManager.NewListenerList
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.LostFocusEventManager.AddListener(System.Windows.DependencyObject,System.Windows.IWeakEventListener)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.LostFocusEventManager.RemoveListener(System.Windows.DependencyObject,System.Windows.IWeakEventListener)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.LostFocusEventManager.StartListening(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.LostFocusEventManager.RemoveHandler(System.Windows.DependencyObject,System.EventHandler{System.Windows.RoutedEventArgs})
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.LostFocusEventManager.AddHandler(System.Windows.DependencyObject,System.EventHandler{System.Windows.RoutedEventArgs})
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.LostFocusEventManager.StopListening(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

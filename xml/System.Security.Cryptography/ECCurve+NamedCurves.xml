@@ -20,7 +20,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a factory class for creating named curves.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -46,8 +46,8 @@
         <ReturnType>System.Security.Cryptography.ECCurve</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a brainpoolP160r1 named curve.</summary>
+        <value>A brainpoolP160r1 named curve.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,8 +73,8 @@
         <ReturnType>System.Security.Cryptography.ECCurve</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a brainpoolP160t1 named curve.</summary>
+        <value>A brainpoolP160t1 named curve.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,8 +100,8 @@
         <ReturnType>System.Security.Cryptography.ECCurve</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a brainpoolP192r1 named curve.</summary>
+        <value>A brainpoolP192r1 named curve.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -127,8 +127,8 @@
         <ReturnType>System.Security.Cryptography.ECCurve</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a brainpoolP192t1 named curve.</summary>
+        <value>A brainpoolP192t1 named curve.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,8 +154,8 @@
         <ReturnType>System.Security.Cryptography.ECCurve</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a brainpoolP224r1 named curve.</summary>
+        <value>A brainpoolP224r1 named curve.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -181,8 +181,8 @@
         <ReturnType>System.Security.Cryptography.ECCurve</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a brainpoolP224t1 named curve.</summary>
+        <value>A brainpoolP224t1 named curve.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -208,8 +208,8 @@
         <ReturnType>System.Security.Cryptography.ECCurve</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a brainpoolP256r1 named curve.</summary>
+        <value>A brainpoolP256r1 named curve.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -235,8 +235,8 @@
         <ReturnType>System.Security.Cryptography.ECCurve</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a brainpoolP256t1 named curve.</summary>
+        <value>A brainpoolP256t1 named curve.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -262,8 +262,8 @@
         <ReturnType>System.Security.Cryptography.ECCurve</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a brainpoolP320r1 named curve.</summary>
+        <value>A brainpoolP320r1 named curve.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -289,8 +289,8 @@
         <ReturnType>System.Security.Cryptography.ECCurve</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a brainpoolP320t1 named curve.</summary>
+        <value>A brainpoolP320t1 named curve.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -316,8 +316,8 @@
         <ReturnType>System.Security.Cryptography.ECCurve</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a brainpoolP384r1 named curve.</summary>
+        <value>A brainpoolP384r1 named curve.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -343,8 +343,8 @@
         <ReturnType>System.Security.Cryptography.ECCurve</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a brainpoolP384t1 named curve.</summary>
+        <value>A brainpoolP384t1 named curve.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -370,8 +370,8 @@
         <ReturnType>System.Security.Cryptography.ECCurve</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a brainpoolP512r1 named curve.</summary>
+        <value>A brainpoolP512r1 named curve.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -397,8 +397,8 @@
         <ReturnType>System.Security.Cryptography.ECCurve</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a brainpoolP512t1 named curve.</summary>
+        <value>A brainpoolP512t1 named curve.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -424,8 +424,8 @@
         <ReturnType>System.Security.Cryptography.ECCurve</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a nistP256 named curve.</summary>
+        <value>A nistP256 named curve.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -451,8 +451,8 @@
         <ReturnType>System.Security.Cryptography.ECCurve</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a nistP384 named curve.</summary>
+        <value>A nistP384 named curve.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -478,8 +478,8 @@
         <ReturnType>System.Security.Cryptography.ECCurve</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a nistP521 named curve.</summary>
+        <value>A nistP521 named curve.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,9 +1,11 @@
 ---
 uid: System.Web.UI.ValidationSettings
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ValidationSettings.UnobtrusiveValidationMode
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

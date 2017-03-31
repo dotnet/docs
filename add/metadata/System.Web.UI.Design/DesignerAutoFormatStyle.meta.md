@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.Design.DesignerAutoFormatStyle
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DesignerAutoFormatStyle.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DesignerAutoFormatStyle.VerticalAlign
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

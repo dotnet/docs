@@ -10,8 +10,17 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the kind of argument that a <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.AddIn.Contract.RemoteArgumentKind> enumeration is used by the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A?displayProperty=fullName> property.  
+  
+ An intrinsic data type is a primitive data type (that is, the <xref:System.Type.IsPrimitive%2A?displayProperty=fullName> property of the type is `true`) or a <xref:System.String>, <xref:System.Decimal>, <xref:System.DateTime>, or <xref:System.DBNull>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Contract">
@@ -27,7 +36,7 @@
         <ReturnType>System.AddIn.Contract.RemoteArgumentKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents an <see cref="T:System.AddIn.Contract.IContract" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Intrinsic">
@@ -43,7 +52,7 @@
         <ReturnType>System.AddIn.Contract.RemoteArgumentKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents an intrinsic data type.</summary>
       </Docs>
     </Member>
     <Member MemberName="IntrinsicArray">
@@ -59,7 +68,7 @@
         <ReturnType>System.AddIn.Contract.RemoteArgumentKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents an <see cref="T:System.Array" /> that contains elements of an intrinsic data type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Missing">
@@ -75,7 +84,7 @@
         <ReturnType>System.AddIn.Contract.RemoteArgumentKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents the <see cref="F:System.Type.Missing" /> value. This is the default value for the <see cref="P:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind" /> property.</summary>
       </Docs>
     </Member>
   </Members>

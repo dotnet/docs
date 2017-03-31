@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Determines which properties are written out to a configuration file.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ConfigurationSaveMode> enumeration values identify which properties are written out to a configuration file when calling the <xref:System.Configuration.Configuration.Save%2A> and <xref:System.Configuration.Configuration.SaveAs%2A> methods.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Full">
@@ -27,7 +34,7 @@
         <ReturnType>System.Configuration.ConfigurationSaveMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Causes all properties to be written to the configuration file. This is useful mostly for creating information configuration files or moving configuration values from one machine to another.</summary>
       </Docs>
     </Member>
     <Member MemberName="Minimal">
@@ -43,7 +50,7 @@
         <ReturnType>System.Configuration.ConfigurationSaveMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Causes only properties that differ from inherited values to be written to the configuration file.</summary>
       </Docs>
     </Member>
     <Member MemberName="Modified">
@@ -59,7 +66,7 @@
         <ReturnType>System.Configuration.ConfigurationSaveMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Causes only modified properties to be written to the configuration file, even when the value is the same as the inherited value.</summary>
       </Docs>
     </Member>
   </Members>

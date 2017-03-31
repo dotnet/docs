@@ -20,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a service contract that defines a set of operations that allow you to update workflow instances.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -48,12 +48,12 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="updatedDefinitionIdentity">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="instanceId">The GUID identifier of the workflow instance to terminate.</param>
+        <param name="updatedDefinitionIdentity">The updated workflow identity.</param>
+        <param name="callback">The asynchronous callback delegate that receives the notification of the asynchronous operation completion.</param>
+        <param name="state">An object, specified by the application, that contains state information associated with the asynchronous update operation.</param>
+        <summary>Begins an asynchronous operation that updates a workflow instance within a transaction.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> object that represents the status of the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,12 +81,12 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="updatedDefinitionIdentity">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="instanceId">The GUID identifier of the workflow instance to terminate.</param>
+        <param name="updatedDefinitionIdentity">The updated workflow identity.</param>
+        <param name="callback">The asynchronous callback delegate that receives the notification of the asynchronous operation completion.</param>
+        <param name="state">An object, specified by the application, that contains state information associated with the asynchronous update operation.</param>
+        <summary>Begins an asynchronous operation to update the specified workflow instance.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> object that represents the status of the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,8 +106,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="result">The <see cref="T:System.IAsyncResult" /> object that represents the status of the asynchronous operation.</param>
+        <summary>Completes an asynchronous transacted update operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -127,8 +127,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="result">The <see cref="T:System.IAsyncResult" /> object that represents the status of the asynchronous operation.</param>
+        <summary>Completes an asynchronous update operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -157,9 +157,9 @@
         <Parameter Name="updatedDefinitionIdentity" Type="System.Activities.WorkflowIdentity" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="updatedDefinitionIdentity">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceId">The GUID identifier of the workflow instance to terminate.</param>
+        <param name="updatedDefinitionIdentity">The updated workflow identity.</param>
+        <summary>Updates the specified workflow instance within a transaction.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -185,9 +185,9 @@
         <Parameter Name="updatedDefinitionIdentity" Type="System.Activities.WorkflowIdentity" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="updatedDefinitionIdentity">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceId">The GUID identifier of the workflow instance to terminate.</param>
+        <param name="updatedDefinitionIdentity">The updated workflow identity.</param>
+        <summary>Updates the specified workflow instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

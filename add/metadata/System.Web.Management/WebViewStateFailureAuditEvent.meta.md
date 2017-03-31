@@ -1,19 +1,34 @@
 ---
 uid: System.Web.Management.WebViewStateFailureAuditEvent
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Management.WebViewStateFailureAuditEvent.ViewStateException
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Management.WebViewStateFailureAuditEvent.#ctor(System.String,System.Object,System.Int32,System.Web.UI.ViewStateException)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Management.WebViewStateFailureAuditEvent.#ctor
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Management.WebViewStateFailureAuditEvent.#ctor(System.String,System.Object,System.Int32,System.Int32,System.Web.UI.ViewStateException)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

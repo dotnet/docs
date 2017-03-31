@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains the data for the <see cref="E:System.Data.Objects.ObjectContext.ObjectMaterialized" /> event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,9 +28,16 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the entity object that was created.</summary>
+        <value>The entity object that was created.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If an object that has the same key value exists in the context, the Entity Framework will not recreate the object and the <xref:System.Data.Objects.ObjectContext.ObjectMaterialized> event will not be raised.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,14 +1,14 @@
 ---
 uid: System.Xaml.IXamlNamespaceResolver
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.IXamlNamespaceResolver.GetNamespace(System.String)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.IXamlNamespaceResolver.GetNamespacePrefixes
-internalonly: False
+manager: "martinek"
 ---

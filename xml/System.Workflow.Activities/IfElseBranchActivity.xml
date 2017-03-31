@@ -28,8 +28,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a branch of an <see cref="T:System.Workflow.Activities.IfElseActivity" />. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ The <xref:System.Workflow.ComponentModel.ActivityCondition> of each branch is determined before the branch is run. The first <xref:System.Workflow.Activities.IfElseBranchActivity> in the <xref:System.Workflow.Activities.IfElseActivity> that evaluates to `true` is run.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,8 +54,18 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.IfElseBranchActivity" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to create two new instances of the <xref:System.Workflow.Activities.IfElseBranchActivity> class.  This code example is part of the Compensation SDK Sample from the PurchaseOrder.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Using Compensation](http://msdn.microsoft.com/en-us/c847a694-9978-46af-aa80-5bd1833f813b).  
+  
+ [!code-csharp[wf_samples#38](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#38)]
+ [!code-vb[wf_samples#38](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#38)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -60,8 +81,8 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The user-defined name of the activity.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.IfElseBranchActivity" /> class using the name of the activity.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,9 +107,24 @@
         <ReturnType>System.Workflow.ComponentModel.ActivityCondition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets an <see cref="T:System.Workflow.ComponentModel.ActivityCondition" /> object reference for the current branch activity. The evaluation of this condition returns a value that indicates whether this branch should be run.</summary>
+        <value>An <see cref="T:System.Workflow.ComponentModel.ActivityCondition" /> that returns a value that indicates whether this branch should be run.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is optional on the last <xref:System.Workflow.Activities.IfElseBranchActivity> in the <xref:System.Workflow.Activities.IfElseActivity> and required in other cases.  
+  
+   
+  
+## Examples  
+ The following code example shows how to set the <xref:System.Workflow.Activities.IfElseBranchActivity.Condition%2A> property. This code assumes that `Available` is of type <xref:System.Workflow.Activities.IfElseBranchActivity>. This code example is part of the Compensation SDK Sample from the PurchaseOrder.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Using Compensation](http://msdn.microsoft.com/en-us/c847a694-9978-46af-aa80-5bd1833f813b).  
+  
+ [!code-csharp[wf_samples#39](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#39)]
+ [!code-vb[wf_samples#39](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#39)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ConditionProperty">
@@ -104,8 +140,15 @@
         <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="P:System.Workflow.Activities.IfElseBranchActivity.Condition" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,9 +1,13 @@
 ---
 uid: System.Runtime.CompilerServices.CallSiteHelpers
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.CompilerServices.CallSiteHelpers.IsInternalFrame(System.Reflection.MethodBase)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

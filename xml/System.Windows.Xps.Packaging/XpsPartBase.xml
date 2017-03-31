@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines the abstract class that is the parent for all part classes that can be contained in an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] package.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] of the part.</summary>
+        <value>The <see cref="T:System.Uri" /> for the part.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

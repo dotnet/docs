@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.WebControls.Expressions.PropertyExpression
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Expressions.PropertyExpression.GetQueryable(System.Linq.IQueryable)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Expressions.PropertyExpression.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

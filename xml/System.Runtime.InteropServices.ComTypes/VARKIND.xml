@@ -23,8 +23,17 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the kind of variable.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For additional information about `VARKIND`, see the MSDN Library.  
+  
+ The common language runtime throws an exception when a COM method in native code returns an HRESULT. For more information, see [How to: Map HRESULTs and Exceptions](../Topic/How%20to:%20Map%20HRESULTs%20and%20Exceptions.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="VAR_CONST">
@@ -53,7 +62,7 @@
         <ReturnType>System.Runtime.InteropServices.ComTypes.VARKIND</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see langword="VARDESC" /> structure describes a symbolic constant. There is no memory associated with it.</summary>
       </Docs>
     </Member>
     <Member MemberName="VAR_DISPATCH">
@@ -82,7 +91,7 @@
         <ReturnType>System.Runtime.InteropServices.ComTypes.VARKIND</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The variable can be accessed only through <see langword="IDispatch::Invoke" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="VAR_PERINSTANCE">
@@ -111,7 +120,7 @@
         <ReturnType>System.Runtime.InteropServices.ComTypes.VARKIND</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The variable is a field or member of the type. It exists at a fixed offset within each instance of the type.</summary>
       </Docs>
     </Member>
     <Member MemberName="VAR_STATIC">
@@ -140,7 +149,7 @@
         <ReturnType>System.Runtime.InteropServices.ComTypes.VARKIND</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>There is only one instance of the variable.</summary>
       </Docs>
     </Member>
   </Members>

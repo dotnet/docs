@@ -1,24 +1,34 @@
 ---
 uid: System.Web.Security.WindowsAuthenticationEventArgs
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Security.WindowsAuthenticationEventArgs.Identity
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Security.WindowsAuthenticationEventArgs.Context
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Security.WindowsAuthenticationEventArgs.#ctor(System.Security.Principal.WindowsIdentity,System.Web.HttpContext)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Security.WindowsAuthenticationEventArgs.User
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

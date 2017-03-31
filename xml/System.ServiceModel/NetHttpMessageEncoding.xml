@@ -11,7 +11,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the Net Http message encoding.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,7 +29,7 @@
         <ReturnType>System.ServiceModel.NetHttpMessageEncoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Binary message encoding.</summary>
       </Docs>
     </Member>
     <Member MemberName="Mtom">
@@ -46,7 +46,7 @@
         <ReturnType>System.ServiceModel.NetHttpMessageEncoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Mtom message encoding.</summary>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -63,7 +63,7 @@
         <ReturnType>System.ServiceModel.NetHttpMessageEncoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Text message encoding.</summary>
       </Docs>
     </Member>
   </Members>

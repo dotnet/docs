@@ -1,29 +1,39 @@
 ---
 uid: System.Windows.Diagnostics.ResourceDictionaryDiagnostics
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Diagnostics.ResourceDictionaryDiagnostics.GenericResourceDictionaryLoaded
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Diagnostics.ResourceDictionaryDiagnostics.ThemedResourceDictionaryLoaded
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Diagnostics.ResourceDictionaryDiagnostics.ThemedResourceDictionaryUnloaded
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Diagnostics.ResourceDictionaryDiagnostics.ThemedResourceDictionaries
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Diagnostics.ResourceDictionaryDiagnostics.GenericResourceDictionaries
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

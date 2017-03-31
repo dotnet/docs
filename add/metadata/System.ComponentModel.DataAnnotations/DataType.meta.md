@@ -1,4 +1,5 @@
 ---
 uid: System.ComponentModel.DataAnnotations.DataType
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

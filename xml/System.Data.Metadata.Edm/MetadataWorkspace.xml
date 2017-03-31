@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the [!INCLUDE[vstecado](~/includes/vstecado-md.md)] metadata runtime service component that provides support for retrieving metadata from various sources.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.Metadata.Edm.MetadataWorkSpace> class provides a central runtime service component that you can use to interact with conceptual model metadata in the context of a given application. For more information, see [Metadata Workspace](http://msdn.microsoft.com/en-us/601aee56-3eda-4caa-9082-a01df76c5e84).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Metadata.Edm.MetadataWorkspace" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,9 +51,9 @@
         <Parameter Name="assembliesToConsider" Type="System.Collections.Generic.IEnumerable&lt;System.Reflection.Assembly&gt;" />
       </Parameters>
       <Docs>
-        <param name="paths">To be added.</param>
-        <param name="assembliesToConsider">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="paths">The paths to workspace metadata.</param>
+        <param name="assembliesToConsider">The names of assemblies used to construct workspace.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Metadata.Edm.MetadataWorkspace" /> class using the specified paths and assemblies.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,7 +71,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Clears all the metadata cache entries.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +89,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates an <see cref="T:System.Data.Common.EntitySql.EntitySqlParser" /> configured to use the <see cref="F:System.Data.Metadata.Edm.DataSpace.CSpace" /> data space.</summary>
+        <returns>The created parser object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,10 +110,16 @@
         <Parameter Name="query" Type="System.Data.Common.CommandTrees.DbExpression" />
       </Parameters>
       <Docs>
-        <param name="query">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="query">A <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that defines the query.</param>
+        <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbQueryCommandTree" /> bound to this metadata workspace based on the specified query expression.</summary>
+        <returns>A new <see cref="T:System.Data.Common.CommandTrees.DbQueryCommandTree" /> with the specified expression as it's <see cref="P:System.Data.Common.CommandTrees.DbQueryCommandTree.Query" /> property.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="query" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="query" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GetEdmSpaceType">
@@ -125,9 +138,9 @@
         <Parameter Name="objectSpaceType" Type="System.Data.Metadata.Edm.EnumType" />
       </Parameters>
       <Docs>
-        <param name="objectSpaceType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="objectSpaceType">A <see cref="T:System.Data.Metadata.Edm.EnumlType" /> that supplies the type in the object space.</param>
+        <summary>Returns a <see cref="T:System.Data.Metadata.Edm.StructuralType" /> object that represents the <see cref="T:System.Data.Metadata.Edm.EdmType" /> that matches the type supplied by the parameter <paramref name="objectSpaceType" />.</summary>
+        <returns>A <see cref="T:System.Data.Metadata.Edm.StructuralType" /> object that represents the <see cref="T:System.Data.Metadata.Edm.EdmType" />. If there is no matched type, this method returns null.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -147,9 +160,9 @@
         <Parameter Name="objectSpaceType" Type="System.Data.Metadata.Edm.StructuralType" />
       </Parameters>
       <Docs>
-        <param name="objectSpaceType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="objectSpaceType">A <see cref="T:System.Data.Metadata.Edm.StructuralType" /> that supplies the type in the object space.</param>
+        <summary>Returns a <see cref="T:System.Data.Metadata.Edm.StructuralType" /> object that represents the <see cref="T:System.Data.Metadata.Edm.EdmType" /> that matches the type supplied by the parameter <paramref name="objectSpaceType" />.</summary>
+        <returns>A <see cref="T:System.Data.Metadata.Edm.StructuralType" /> object that represents the <see cref="T:System.Data.Metadata.Edm.EdmType" />. If there is no matched type, this method returns null.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -170,10 +183,10 @@
         <Parameter Name="dataSpace" Type="System.Data.Metadata.Edm.DataSpace" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="dataSpace">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the entity container.</param>
+        <param name="dataSpace">The conceptual model on which the entity container is searched.</param>
+        <summary>Returns an <see cref="T:System.Data.Metadata.Edm.EntityContainer" /> object by using the specified entity container name and the data model.</summary>
+        <returns>If there is no entity container, this method returns null; otherwise, it returns the first entity container.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -195,11 +208,12 @@
         <Parameter Name="dataSpace" Type="System.Data.Metadata.Edm.DataSpace" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="ignoreCase">To be added.</param>
-        <param name="dataSpace">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the entity container.</param>
+        <param name="ignoreCase">
+          <see langword="true" /> to perform the case-insensitive search; otherwise, <see langword="false" />.</param>
+        <param name="dataSpace">The conceptual model on which the entity container is searched.</param>
+        <summary>Returns an <see cref="T:System.Data.Metadata.Edm.EntityContainer" /> object by using the specified entity container name and the data model.</summary>
+        <returns>If there is no entity container, this method returns null; otherwise, it returns the first entity container.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -221,11 +235,11 @@
         <Parameter Name="dataSpace" Type="System.Data.Metadata.Edm.DataSpace" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="namespaceName">To be added.</param>
-        <param name="dataSpace">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the function.</param>
+        <param name="namespaceName">The namespace of the function.</param>
+        <param name="dataSpace">The conceptual model in which the functions are searched.</param>
+        <summary>Returns all the overloads of the functions by using the specified name, namespace name, and data model.</summary>
+        <returns>A collection of type <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> that contains all the functions that match the specified name in a given namespace and a data model.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -248,12 +262,13 @@
         <Parameter Name="ignoreCase" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="namespaceName">To be added.</param>
-        <param name="dataSpace">To be added.</param>
-        <param name="ignoreCase">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the function.</param>
+        <param name="namespaceName">The namespace of the function.</param>
+        <param name="dataSpace">The conceptual model in which the functions are searched.</param>
+        <param name="ignoreCase">
+          <see langword="true" /> to perform the case-insensitive search; otherwise, <see langword="false" />.</param>
+        <summary>Returns all the overloads of the functions by using the specified name, namespace name, and data model.</summary>
+        <returns>A collection of type <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> that contains all the functions that match the specified name in a given namespace and a data model.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -281,11 +296,11 @@
         <Parameter Name="dataSpace" Type="System.Data.Metadata.Edm.DataSpace" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="identity">To be added.</param>
-        <param name="dataSpace">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type returned by the method.</typeparam>
+        <param name="identity">The identity of the item.</param>
+        <param name="dataSpace">The conceptual model in which the item is searched.</param>
+        <summary>Returns an item by using the specified identity and the data model.</summary>
+        <returns>The item that matches the given identity in the specified data model.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -314,12 +329,13 @@
         <Parameter Name="dataSpace" Type="System.Data.Metadata.Edm.DataSpace" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="identity">To be added.</param>
-        <param name="ignoreCase">To be added.</param>
-        <param name="dataSpace">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type returned by the method.</typeparam>
+        <param name="identity">The identity of the item.</param>
+        <param name="ignoreCase">
+          <see langword="true" /> to perform the case-insensitive search; otherwise, <see langword="false" />.</param>
+        <param name="dataSpace">The conceptual model on which the item is searched.</param>
+        <summary>Returns an item by using the specified identity and the data model.</summary>
+        <returns>The item that matches the given identity in the specified data model.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -344,9 +360,9 @@
         <Parameter Name="dataSpace" Type="System.Data.Metadata.Edm.DataSpace" />
       </Parameters>
       <Docs>
-        <param name="dataSpace">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dataSpace">The <see cref="T:System.Data.Metadata.Edm.DataSpace" /> from which to retrieve items.</param>
+        <summary>Gets <see cref="T:System.Data.Metadata.Edm.MetadataWorkspace" /> items.</summary>
+        <returns>The <see cref="T:System.Data.Metadata.Edm.MetadataWorkspace" /> items.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -366,9 +382,9 @@
         <Parameter Name="dataSpace" Type="System.Data.Metadata.Edm.DataSpace" />
       </Parameters>
       <Docs>
-        <param name="dataSpace">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dataSpace">The conceptual model for which the list of items is needed.</param>
+        <summary>Gets all the items in the specified data model.</summary>
+        <returns>A collection of type <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> that contains all the items in the specified data model.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -395,10 +411,10 @@
         <Parameter Name="dataSpace" Type="System.Data.Metadata.Edm.DataSpace" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="dataSpace">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type returned by the method.</typeparam>
+        <param name="dataSpace">The conceptual model for which the list of items is needed.</param>
+        <summary>Gets all the items in the specified data model.</summary>
+        <returns>A collection of type <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> that contains all the items in the specified data model.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -418,9 +434,9 @@
         <Parameter Name="edmSpaceType" Type="System.Data.Metadata.Edm.EnumType" />
       </Parameters>
       <Docs>
-        <param name="edmSpaceType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="edmSpaceType">A <see cref="T:System.Data.Metadata.Edm.EnumType" /> object that represents the <see cref="T:System.Data.Metadata.Edm.EdmType" />.</param>
+        <summary>Returns a <see cref="T:System.Data.Metadata.Edm.StructuralType" /> object that represents the object space type that matches the type supplied by the parameter <paramref name="edmSpaceType" />.</summary>
+        <returns>A <see cref="T:System.Data.Metadata.Edm.StructuralType" /> object that represents the Object space type. If there is no matched type, this method returns null.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -440,9 +456,9 @@
         <Parameter Name="edmSpaceType" Type="System.Data.Metadata.Edm.StructuralType" />
       </Parameters>
       <Docs>
-        <param name="edmSpaceType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="edmSpaceType">A <see cref="T:System.Data.Metadata.Edm.StructuralType" /> object that represents the <see cref="T:System.Data.Metadata.Edm.EdmType" />.</param>
+        <summary>Returns a <see cref="T:System.Data.Metadata.Edm.StructuralType" /> object that represents the object space type that matches the type supplied by the parameter <paramref name="edmSpaceType" />.</summary>
+        <returns>A <see cref="T:System.Data.Metadata.Edm.StructuralType" /> object that represents the Object space type. If there is no matched type, this method returns null.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -462,9 +478,9 @@
         <Parameter Name="dataSpace" Type="System.Data.Metadata.Edm.DataSpace" />
       </Parameters>
       <Docs>
-        <param name="dataSpace">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dataSpace">The data model for which you need the list of primitive types.</param>
+        <summary>Returns the list of primitive types in the specified data model.</summary>
+        <returns>A collection of type <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> that contains all the primitive types in the specified data model.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -486,11 +502,12 @@
         <Parameter Name="partialUpdateSupported" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="entitySet">To be added.</param>
-        <param name="entityType">To be added.</param>
-        <param name="partialUpdateSupported">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="entitySet">An <see cref="T:System.Data.Metadata.Edm.EntitySet" /> belonging to the C-Space.</param>
+        <param name="entityType">An <see cref="T:System.Data.Metadata.Edm.EntityType" /> that participates in the given <see cref="T:System.Data.Metadata.Edm.EntitySet" />.</param>
+        <param name="partialUpdateSupported">
+          <see langword="true" /> if entities may be updated partially; otherwise, <see langword="false" />.</param>
+        <summary>Returns members of a given <see cref="T:System.Data.Metadata.Edm.EntitySet" />/<see cref="T:System.Data.Metadata.Edm.EntityType" /> for which original values are needed when modifying an entity.</summary>
+        <returns>The <see cref="T:System.Data.Metadata.Edm.EdmMember" />s for which original value is required.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -516,10 +533,10 @@
         <Parameter Name="entityType" Type="System.Data.Metadata.Edm.EntityTypeBase" />
       </Parameters>
       <Docs>
-        <param name="entitySet">To be added.</param>
-        <param name="entityType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="entitySet">The entity set from which to retrieve original values.</param>
+        <param name="entityType">The entity type of which to retrieve original values.</param>
+        <summary>Gets original value members from an entity set and entity type.</summary>
+        <returns>The original value members from an entity set and entity type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -541,11 +558,11 @@
         <Parameter Name="dataSpace" Type="System.Data.Metadata.Edm.DataSpace" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="namespaceName">To be added.</param>
-        <param name="dataSpace">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the type.</param>
+        <param name="namespaceName">The namespace of the type.</param>
+        <param name="dataSpace">The conceptual model on which the type is searched.</param>
+        <summary>Returns an <see cref="T:System.Data.Metadata.Edm.EdmType" /> object by using the specified type name, namespace name, and data model.</summary>
+        <returns>An <see cref="T:System.Data.Metadata.Edm.EdmType" /> object that represents the type that matches the given type name and the namespace name in the specified data model. If there is no matched type, this method returns null.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -568,12 +585,13 @@
         <Parameter Name="dataSpace" Type="System.Data.Metadata.Edm.DataSpace" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="namespaceName">To be added.</param>
-        <param name="ignoreCase">To be added.</param>
-        <param name="dataSpace">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the type.</param>
+        <param name="namespaceName">The namespace of the type.</param>
+        <param name="ignoreCase">
+          <see langword="true" /> to perform the case-insensitive search; otherwise, <see langword="false" />.</param>
+        <param name="dataSpace">The conceptual model on which the type is searched.</param>
+        <summary>Returns an <see cref="T:System.Data.Metadata.Edm.EdmType" /> object by using the specified type name, namespace name, and data model.</summary>
+        <returns>An <see cref="T:System.Data.Metadata.Edm.EdmType" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -593,8 +611,8 @@
         <Parameter Name="assembly" Type="System.Reflection.Assembly" />
       </Parameters>
       <Docs>
-        <param name="assembly">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="assembly">The assembly from which the metadata will be loaded.</param>
+        <summary>Loads metadata from the given assembly.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -615,9 +633,9 @@
         <Parameter Name="logLoadMessage" Type="System.Action&lt;System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="assembly">To be added.</param>
-        <param name="logLoadMessage">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="assembly">The assembly from which the metadata will be loaded.</param>
+        <param name="logLoadMessage">The delegate for logging the load messages.</param>
+        <summary>Loads metadata from the given assembly.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -634,7 +652,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the maximum Entity Data Model (EDM) version supported by the Entity Framework runtime.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -659,8 +677,8 @@
         <Parameter Name="collection" Type="System.Data.Metadata.Edm.ItemCollection" />
       </Parameters>
       <Docs>
-        <param name="collection">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="collection">The output parameter collection that needs to be filled up.</param>
+        <summary>Registers the item collection with each associated data model.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -681,10 +699,11 @@
         <Parameter Name="edmSpaceType" Type="System.Data.Metadata.Edm.EnumType&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="objectSpaceType">To be added.</param>
-        <param name="edmSpaceType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="objectSpaceType">A <see cref="T:System.Data.Metadata.Edm.EnumType" /> object that represents the object space type.</param>
+        <param name="edmSpaceType">When this method returns, contains a <see cref="T:System.Data.Metadata.Edm.EnumType" /> object that represents the <see cref="T:System.Data.Metadata.Edm.EdmType" />. This parameter is passed uninitialized.</param>
+        <summary>Returns a <see cref="T:System.Data.Metadata.Edm.EnumType" /> object via the out parameter <paramref name="edmSpaceType" /> that represents the <see cref="T:System.Data.Metadata.Edm.EdmType" /> that matches the type supplied by the parameter <paramref name="objectSpaceType" />.</summary>
+        <returns>
+          <see langword="true" /> on success, <see langword="false" /> on failure.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -705,10 +724,11 @@
         <Parameter Name="edmSpaceType" Type="System.Data.Metadata.Edm.StructuralType&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="objectSpaceType">To be added.</param>
-        <param name="edmSpaceType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="objectSpaceType">A <see cref="T:System.Data.Metadata.Edm.StructuralType" /> object that represents the object space type.</param>
+        <param name="edmSpaceType">When this method returns, contains a <see cref="T:System.Data.Metadata.Edm.StructuralType" /> object that represents the <see cref="T:System.Data.Metadata.Edm.EdmType" />. This parameter is passed uninitialized.</param>
+        <summary>Returns a <see cref="T:System.Data.Metadata.Edm.StructuralType" /> object via the out parameter <paramref name="edmSpaceType" /> that represents the <see cref="T:System.Data.Metadata.Edm.EdmType" /> that matches the type supplied by the parameter <paramref name="objectSpaceType" />.</summary>
+        <returns>
+          <see langword="true" /> if there is a type that matches the search criteria; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -730,11 +750,12 @@
         <Parameter Name="entityContainer" Type="System.Data.Metadata.Edm.EntityContainer&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="dataSpace">To be added.</param>
-        <param name="entityContainer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the entity container.</param>
+        <param name="dataSpace">The conceptual model on which the entity container is searched.</param>
+        <param name="entityContainer">When this method returns, contains an <see cref="T:System.Data.Metadata.Edm.EntityContainer" /> object. If there is no entity container, this output parameter contains null; otherwise, it returns the first entity container. This parameter is passed uninitialized.</param>
+        <summary>Returns an <see cref="T:System.Data.Metadata.Edm.EntityContainer" /> object by using the specified entity container name and the data model.</summary>
+        <returns>
+          <see langword="true" /> if there is an entity container that matches the search criteria; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -757,12 +778,14 @@
         <Parameter Name="entityContainer" Type="System.Data.Metadata.Edm.EntityContainer&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="ignoreCase">To be added.</param>
-        <param name="dataSpace">To be added.</param>
-        <param name="entityContainer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the entity container.</param>
+        <param name="ignoreCase">
+          <see langword="true" /> to perform the case-insensitive search; otherwise, <see langword="false" />.</param>
+        <param name="dataSpace">The conceptual model on which the entity container is searched.</param>
+        <param name="entityContainer">When this method returns, contains an <see cref="T:System.Data.Metadata.Edm.EntityContainer" /> object. If there is no entity container, this output parameter contains null; otherwise, it returns the first entity container. This parameter is passed uninitialized.</param>
+        <summary>Returns an <see cref="T:System.Data.Metadata.Edm.EntityContainer" /> object by using the specified entity container name and the data model.</summary>
+        <returns>
+          <see langword="true" /> if there is an entity container that matches the search criteria; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -791,12 +814,13 @@
         <Parameter Name="item" Type="T&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="identity">To be added.</param>
-        <param name="space">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type returned by the method.</typeparam>
+        <param name="identity">The conceptual model on which the item is searched.</param>
+        <param name="space">The conceptual model on which the item is searched.</param>
+        <param name="item">When this method returns, contains a <see cref="T:System.Data.Metadata.Edm.GlobalIem" /> object. This parameter is passed uninitialized.</param>
+        <summary>Returns an item by using the specified identity and the data model.</summary>
+        <returns>
+          <see langword="true" /> if there is an item that matches the search criteria; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -826,13 +850,15 @@
         <Parameter Name="item" Type="T&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="identity">To be added.</param>
-        <param name="ignoreCase">To be added.</param>
-        <param name="dataSpace">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type returned by the method.</typeparam>
+        <param name="identity">The conceptual model on which the item is searched.</param>
+        <param name="ignoreCase">
+          <see langword="true" /> to perform the case-insensitive search; otherwise, <see langword="false" />.</param>
+        <param name="dataSpace">The conceptual model on which the item is searched.</param>
+        <param name="item">When this method returns, contains a <see cref="T:System.Data.Metadata.Edm.GlobalIem" /> object. This parameter is passed uninitialized.</param>
+        <summary>Returns an item by using the specified identity and the data model.</summary>
+        <returns>
+          <see langword="true" /> if there is an item that matches the search criteria; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -858,10 +884,11 @@
         <Parameter Name="collection" Type="System.Data.Metadata.Edm.ItemCollection&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="dataSpace">To be added.</param>
-        <param name="collection">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dataSpace">The <see cref="T:System.Data.Metadata.Edm.DataSpace" /> from which to attempt retrieval of <see cref="T:System.Data.Metadata.Edm.MetadataWorkspace" />.</param>
+        <param name="collection">When this method returns, contains the item collection. This parameter is passed uninitialized.</param>
+        <summary>Tests the retrieval of <see cref="T:System.Data.Metadata.Edm.MetadataWorkspace" />.</summary>
+        <returns>
+          <see langword="true" /> if the retrieval was successful; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -882,10 +909,11 @@
         <Parameter Name="objectSpaceType" Type="System.Data.Metadata.Edm.EnumType&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="edmSpaceType">To be added.</param>
-        <param name="objectSpaceType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="edmSpaceType">A <see cref="T:System.Data.Metadata.Edm.EnumType" /> object that represents the <see cref="T:System.Data.Metadata.Edm.EdmType" />.</param>
+        <param name="objectSpaceType">When this method returns, contains a <see cref="T:System.Data.Metadata.Edm.EnumType" /> object that represents the Object space type. This parameter is passed uninitialized.</param>
+        <summary>Returns a <see cref="T:System.Data.Metadata.Edm.EnumType" /> object via the out parameter <paramref name="objectSpaceType" /> that represents the type that matches the <see cref="T:System.Data.Metadata.Edm.EdmType" /> supplied by the parameter <paramref name="edmSpaceType" />.</summary>
+        <returns>
+          <see langword="true" /> if there is a type that matches the search criteria; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -906,10 +934,11 @@
         <Parameter Name="objectSpaceType" Type="System.Data.Metadata.Edm.StructuralType&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="edmSpaceType">To be added.</param>
-        <param name="objectSpaceType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="edmSpaceType">A <see cref="T:System.Data.Metadata.Edm.StructuralType" /> object that represents the <see cref="T:System.Data.Metadata.Edm.EdmType" />.</param>
+        <param name="objectSpaceType">When this method returns, contains a <see cref="T:System.Data.Metadata.Edm.StructuralType" /> object that represents the Object space type. This parameter is passed uninitialized.</param>
+        <summary>Returns a <see cref="T:System.Data.Metadata.Edm.StructuralType" /> object via the out parameter <paramref name="objectSpaceType" /> that represents the type that matches the <see cref="T:System.Data.Metadata.Edm.EdmType" /> supplied by the parameter <paramref name="edmSpaceType" />.</summary>
+        <returns>
+          <see langword="true" /> if there is a type that matches the search criteria; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -932,12 +961,13 @@
         <Parameter Name="type" Type="System.Data.Metadata.Edm.EdmType&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="namespaceName">To be added.</param>
-        <param name="dataSpace">To be added.</param>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the type.</param>
+        <param name="namespaceName">The namespace of the type.</param>
+        <param name="dataSpace">The conceptual model on which the type is searched.</param>
+        <param name="type">When this method returns, contains an <see cref="T:System.Data.Metadata.Edm.EdmType" /> object. This parameter is passed uninitialized.</param>
+        <summary>Returns an <see cref="T:System.Data.Metadata.Edm.EdmType" /> object by using the specified type name, namespace name, and data model.</summary>
+        <returns>
+          <see langword="true" /> if there is a type that matches the search criteria; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -961,13 +991,15 @@
         <Parameter Name="type" Type="System.Data.Metadata.Edm.EdmType&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="namespaceName">To be added.</param>
-        <param name="ignoreCase">To be added.</param>
-        <param name="dataSpace">To be added.</param>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the type.</param>
+        <param name="namespaceName">The namespace of the type.</param>
+        <param name="ignoreCase">
+          <see langword="true" /> to perform the case-insensitive search; otherwise, <see langword="false" />.</param>
+        <param name="dataSpace">The conceptual model on which the type is searched.</param>
+        <param name="type">When this method returns, contains an <see cref="T:System.Data.Metadata.Edm.EdmType" /> object. This parameter is passed uninitialized.</param>
+        <summary>Returns an <see cref="T:System.Data.Metadata.Edm.EdmType" /> object by using the specified type name, namespace name, and data model.</summary>
+        <returns>
+          <see langword="true" /> if there is a type that matches the search criteria; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

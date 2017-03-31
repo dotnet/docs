@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Automation.Provider.ProviderOptions
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---

@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Parses a <see cref="T:System.Net.Cache.RequestCachePolicy" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.RequestCachePolicyConverter> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,8 +33,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.RequestCachePolicyConverter" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.RequestCachePolicyConverter.%23ctor%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CanConvertFrom">
@@ -47,11 +61,19 @@
         <Parameter Name="t" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="td">To be added.</param>
-        <param name="t">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="td">The format context.</param>
+        <param name="t">The type to convert from.</param>
+        <summary>Returns a value that indicates whether this converter can convert an object of the specified type to the type of this converter, using the specified context.</summary>
+        <returns>
+          <see langword="true" /> if this converter can perform the conversion; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.RequestCachePolicyConverter.CanConvertFrom%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CanConvertTo">
@@ -71,11 +93,19 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="typeDescriptorContext">To be added.</param>
-        <param name="destinationType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="typeDescriptorContext">The format context.</param>
+        <param name="destinationType">The type being queried for support.</param>
+        <summary>Returns a value that indicates whether this converter can convert the object to the specified type, using the specified context.</summary>
+        <returns>
+          <see langword="true" /> if this converter can perform the conversion; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.RequestCachePolicyConverter.CanConvertTo%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertFrom">
@@ -96,12 +126,21 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="td">To be added.</param>
-        <param name="ci">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="td">The format context.</param>
+        <param name="ci">The current culture.</param>
+        <param name="value">The object to convert.</param>
+        <summary>Converts the specified object to a <see cref="T:System.Net.Cache.RequestCachePolicy" /> object.</summary>
+        <returns>An object that represents the converted value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.RequestCachePolicyConverter.ConvertFrom%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> is <see langword="null" /> or is not of a valid type.</exception>
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -128,13 +167,22 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="typeDescriptorContext">To be added.</param>
-        <param name="cultureInfo">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="destinationType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="typeDescriptorContext">The format context.</param>
+        <param name="cultureInfo">The culture to use for the conversion.</param>
+        <param name="value">The policy to convert.</param>
+        <param name="destinationType">The type to convert to.</param>
+        <summary>Converts this object to the specified type.</summary>
+        <returns>The object that is constructed from the conversion.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.RequestCachePolicyConverter.ConvertTo%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="destinationType" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

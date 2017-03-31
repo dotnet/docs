@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Controls.GridViewColumnHeaderRole
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

@@ -1,9 +1,9 @@
 ---
 uid: Microsoft.JScript.IDebugType
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.IDebugType.HasInstance(System.Object)
-internalonly: False
+ms.author: "mikejo"
 ---

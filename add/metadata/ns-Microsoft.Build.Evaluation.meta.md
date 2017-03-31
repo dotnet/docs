@@ -1,4 +1,5 @@
 ---
 uid: Microsoft.Build.Evaluation
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

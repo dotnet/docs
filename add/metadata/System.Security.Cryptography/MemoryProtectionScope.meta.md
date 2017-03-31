@@ -1,4 +1,6 @@
 ---
 uid: System.Security.Cryptography.MemoryProtectionScope
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

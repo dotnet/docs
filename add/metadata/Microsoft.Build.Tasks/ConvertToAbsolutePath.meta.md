@@ -1,24 +1,29 @@
 ---
 uid: Microsoft.Build.Tasks.ConvertToAbsolutePath
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.ConvertToAbsolutePath.Execute
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.ConvertToAbsolutePath.AbsolutePaths
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.ConvertToAbsolutePath.Paths
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.ConvertToAbsolutePath.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

@@ -10,8 +10,27 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Describes how content is resized to fill its allocated space.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following illustration shows the different <xref:System.Windows.Media.Stretch> values.  
+  
+ ![Different TileBrush Stretch settings](~/add/media/img-mmgraphics-stretchenum.jpg "Different TileBrush Stretch settings")  
+Stretch values  
+  
+   
+  
+## Examples  
+ The following example shows how to create an instance of a <xref:System.Windows.Controls.Viewbox> and set the <xref:System.Windows.Media.Stretch> mode of its content by using code.  
+  
+ [!code-cpp[ViewBoxCode#2](~/samples/snippets/cpp/VS_Snippets_Wpf/ViewBoxCode/CPP/ViewboxCode.cpp#2)]
+ [!code-csharp[ViewBoxCode#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ViewBoxCode/Csharp/ViewboxCode.cs#2)]
+ [!code-vb[ViewBoxCode#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ViewBoxCode/VisualBasic/ViewBoxCodeVB.vb#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Fill">
@@ -27,7 +46,7 @@
         <ReturnType>System.Windows.Media.Stretch</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The content is resized to fill the destination dimensions. The aspect ratio is not preserved.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -43,7 +62,7 @@
         <ReturnType>System.Windows.Media.Stretch</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The content preserves its original size.</summary>
       </Docs>
     </Member>
     <Member MemberName="Uniform">
@@ -59,7 +78,7 @@
         <ReturnType>System.Windows.Media.Stretch</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The content is resized to fit in the destination dimensions while it preserves its native aspect ratio.</summary>
       </Docs>
     </Member>
     <Member MemberName="UniformToFill">
@@ -75,7 +94,7 @@
         <ReturnType>System.Windows.Media.Stretch</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The content is resized to fill the destination dimensions while it preserves its native aspect ratio. If the aspect ratio of the destination rectangle differs from the source, the source content is clipped to fit in the destination dimensions.</summary>
       </Docs>
     </Member>
   </Members>

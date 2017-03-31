@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the type of output message as either an error, warning, or informational.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>Microsoft.Build.Tasks.Deployment.ManifestUtilities.OutputMessageType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates an error.</summary>
       </Docs>
     </Member>
     <Member MemberName="Info">
@@ -48,7 +48,7 @@
         <ReturnType>Microsoft.Build.Tasks.Deployment.ManifestUtilities.OutputMessageType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates an informational message.</summary>
       </Docs>
     </Member>
     <Member MemberName="Warning">
@@ -64,7 +64,7 @@
         <ReturnType>Microsoft.Build.Tasks.Deployment.ManifestUtilities.OutputMessageType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates a warning.</summary>
       </Docs>
     </Member>
   </Members>

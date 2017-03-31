@@ -1,19 +1,23 @@
 ---
 uid: Microsoft.Build.Tasks.CreateVisualBasicManifestResourceName
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.CreateVisualBasicManifestResourceName.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.CreateVisualBasicManifestResourceName.IsSourceFile(System.String)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.CreateVisualBasicManifestResourceName.CreateManifestName(System.String,System.String,System.String,System.String,System.IO.Stream)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

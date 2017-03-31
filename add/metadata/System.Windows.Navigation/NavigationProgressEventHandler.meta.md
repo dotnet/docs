@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Navigation.NavigationProgressEventHandler
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

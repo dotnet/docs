@@ -1,19 +1,26 @@
 ---
 uid: System.Windows.Interop.IKeyboardInputSite
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Interop.IKeyboardInputSite.Unregister
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Interop.IKeyboardInputSite.Sink
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Interop.IKeyboardInputSite.OnNoMoreTabStops(System.Windows.Input.TraversalRequest)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

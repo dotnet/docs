@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.WebControls.PagePropertiesChangingEventArgs
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.PagePropertiesChangingEventArgs.MaximumRows
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.PagePropertiesChangingEventArgs.StartRowIndex
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.PagePropertiesChangingEventArgs.#ctor(System.Int32,System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

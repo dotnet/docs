@@ -24,8 +24,30 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a thread-safe list of <see cref="T:System.Diagnostics.TraceListener" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Diagnostics.TraceListenerCollection> list is used to specify the output listeners for the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=fullName> and the <xref:System.Diagnostics.Debug.Listeners%2A?displayProperty=fullName> collections. You cannot create an instance of this class.  
+  
+ This list is thread-safe, however the methods used to access the list and the enumerator do not take synchronization locks. Instead, the collection is copied, the copy is modified, and a reference is set to the copy of the collection. Methods like <xref:System.Diagnostics.TraceListenerCollection.Add%2A>, <xref:System.Diagnostics.TraceListenerCollection.Remove%2A>, and <xref:System.Diagnostics.TraceListenerCollection.Clear%2A> modify the elements in the collection.  
+  
+ The <xref:System.Diagnostics.TraceListenerCollection> class provides the <xref:System.Diagnostics.TraceListenerCollection.Count%2A> property for information about the list. It also provides the following methods: <xref:System.Diagnostics.TraceListenerCollection.Contains%2A>, <xref:System.Diagnostics.TraceListenerCollection.GetEnumerator%2A>, <xref:System.Diagnostics.TraceListenerCollection.IndexOf%2A>.  
+  
+ This class also provides the following methods to modify the list: <xref:System.Diagnostics.TraceListenerCollection.Add%2A>, <xref:System.Diagnostics.TraceListenerCollection.Clear%2A>, <xref:System.Diagnostics.TraceListenerCollection.Insert%2A>, and <xref:System.Diagnostics.TraceListenerCollection.Remove%2A>. The <xref:System.Diagnostics.TraceListenerCollection.CopyTo%2A> method copies a part of the list to an array. The <xref:System.Diagnostics.TraceListenerCollection.RemoveAt%2A> method deletes the list member at a specified index number.  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Diagnostics.TextWriterTraceListener> that writes to the console screen. The code then adds the new listener to the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=fullName>.  
+  
+ [!code-cpp[Classic Trace.Listeners Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic Trace.Listeners Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic Trace.Listeners Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic Trace.Listeners Example/CS/source.cs#1)]
+ [!code-vb[Classic Trace.Listeners Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic Trace.Listeners Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -53,10 +75,21 @@
         <Parameter Name="listener" Type="System.Diagnostics.TraceListener" />
       </Parameters>
       <Docs>
-        <param name="listener">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="listener">A <see cref="T:System.Diagnostics.TraceListener" /> to add to the list.</param>
+        <summary>Adds a <see cref="T:System.Diagnostics.TraceListener" /> to the list.</summary>
+        <returns>The position at which the new listener was inserted.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a <xref:System.Diagnostics.TextWriterTraceListener> that outputs to the console screen. The code then adds the new listener to the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=fullName>.  
+  
+ [!code-cpp[Classic TraceListenerCollection.Add Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic TraceListenerCollection.Add Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic TraceListenerCollection.Add Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic TraceListenerCollection.Add Example/CS/source.cs#1)]
+ [!code-vb[Classic TraceListenerCollection.Add Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic TraceListenerCollection.Add Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -84,9 +117,11 @@
         <Parameter Name="value" Type="System.Diagnostics.TraceListener[]" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">An array of <see cref="T:System.Diagnostics.TraceListener" /> objects to add to the list.</param>
+        <summary>Adds an array of <see cref="T:System.Diagnostics.TraceListener" /> objects to the list.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -114,9 +149,11 @@
         <Parameter Name="value" Type="System.Diagnostics.TraceListenerCollection" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">Another <see cref="T:System.Diagnostics.TraceListenerCollection" /> whose contents are added to the list.</param>
+        <summary>Adds the contents of another <see cref="T:System.Diagnostics.TraceListenerCollection" /> to the list.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -142,7 +179,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Clears all the listeners from the list.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -171,10 +208,18 @@
         <Parameter Name="listener" Type="System.Diagnostics.TraceListener" />
       </Parameters>
       <Docs>
-        <param name="listener">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="listener">A <see cref="T:System.Diagnostics.TraceListener" /> to find in the list.</param>
+        <summary>Checks whether the list contains the specified listener.</summary>
+        <returns>
+          <see langword="true" /> if the listener is in the list; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Diagnostics.TraceListenerCollection.Contains%2A> method can confirm the existence of a <xref:System.Diagnostics.TraceListener> before you perform further operations.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -203,9 +248,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="listeners">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="listeners">An array of type <see cref="T:System.Array" /> to copy the elements into.</param>
+        <param name="index">The starting index number in the current list to copy from.</param>
+        <summary>Copies a section of the current <see cref="T:System.Diagnostics.TraceListenerCollection" /> list to the specified array at the specified index.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -231,8 +276,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of listeners in the list.</summary>
+        <value>The number of listeners in the list.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -259,8 +304,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets an enumerator for this list.</summary>
+        <returns>An enumerator of type <see cref="T:System.Collections.IEnumerator" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -289,9 +334,9 @@
         <Parameter Name="listener" Type="System.Diagnostics.TraceListener" />
       </Parameters>
       <Docs>
-        <param name="listener">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="listener">A <see cref="T:System.Diagnostics.TraceListener" /> to find in the list.</param>
+        <summary>Gets the index of the specified listener.</summary>
+        <returns>The index of the listener, if it can be found in the list; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -321,10 +366,22 @@
         <Parameter Name="listener" Type="System.Diagnostics.TraceListener" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="listener">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The position in the list to insert the new <see cref="T:System.Diagnostics.TraceListener" />.</param>
+        <param name="listener">A <see cref="T:System.Diagnostics.TraceListener" /> to insert in the list.</param>
+        <summary>Inserts the listener at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the index equals the number of items in the list, then the listener is appended to the end of the list.  
+  
+ The index is zero-based. Therefore, if you want to insert the listener into the third position, you must call `myTraceListenerColl.Insert(2, myNewListener)`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> is not a valid index in the list.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="listener" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -352,10 +409,18 @@
         <Parameter Name="i" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="i">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="i">The zero-based index of the <see cref="T:System.Diagnostics.TraceListener" /> to get from the list.</param>
+        <summary>Gets or sets the <see cref="T:System.Diagnostics.TraceListener" /> at the specified index.</summary>
+        <value>A <see cref="T:System.Diagnostics.TraceListener" /> with the specified index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The index is zero-based. Therefore, you must subtract one from the numerical position of a particular <xref:System.Diagnostics.TraceListener> to access that <xref:System.Diagnostics.TraceListener>. For example, to get the third <xref:System.Diagnostics.TraceListener>, you need to specify `myTraceListenerColl[2]`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The value is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -383,10 +448,17 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the <see cref="T:System.Diagnostics.TraceListener" /> to get from the list.</param>
+        <summary>Gets the first <see cref="T:System.Diagnostics.TraceListener" /> in the list with the specified name.</summary>
+        <value>The first <see cref="T:System.Diagnostics.TraceListener" /> in the list with the given <see cref="P:System.Diagnostics.TraceListener.Name" />. This item returns <see langword="null" /> if no <see cref="T:System.Diagnostics.TraceListener" /> with the given name can be found.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Diagnostics.TraceListenerCollection.Item%2A> property is case-sensitive when searching for names. That is, if two listeners exist with the names "Lname" and "lname", <xref:System.Diagnostics.TraceListenerCollection.Item%2A> property will find only the <xref:System.Diagnostics.TraceListener> with the <xref:System.Diagnostics.TraceListener.Name%2A> that you specify, not both.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -414,8 +486,8 @@
         <Parameter Name="listener" Type="System.Diagnostics.TraceListener" />
       </Parameters>
       <Docs>
-        <param name="listener">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="listener">A <see cref="T:System.Diagnostics.TraceListener" /> to remove from the list.</param>
+        <summary>Removes from the collection the specified <see cref="T:System.Diagnostics.TraceListener" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -444,9 +516,16 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the <see cref="T:System.Diagnostics.TraceListener" /> to remove from the list.</param>
+        <summary>Removes from the collection the first <see cref="T:System.Diagnostics.TraceListener" /> with the specified name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `name` parameter is case-sensitive. That is, if two listeners exist with the names "Rname" and "rname", the <xref:System.Diagnostics.TraceListenerCollection.Remove%2A> method will find the specific listener you name.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -474,9 +553,17 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index of the <see cref="T:System.Diagnostics.TraceListener" /> to remove from the list.</param>
+        <summary>Removes from the collection the <see cref="T:System.Diagnostics.TraceListener" /> at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The index is zero-based. Therefore, you must subtract one from the numerical position of a particular <xref:System.Diagnostics.TraceListener> to delete that <xref:System.Diagnostics.TraceListener>. For example, to remove the third <xref:System.Diagnostics.TraceListener>, you need to specify `myTraceListenerColl.RemoveAt(2)`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> is not a valid index in the list.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -505,10 +592,17 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="array">The one-dimensional array of <see cref="T:System.Diagnostics.TraceListener" /> objects that is the destination of the elements copied from the <see cref="T:System.Diagnostics.TraceListenerCollection" />. The array must have zero-based indexing.</param>
+        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <summary>Copies a section of the current <see cref="T:System.Diagnostics.TraceListenerCollection" /> to the specified array of <see cref="T:System.Diagnostics.TraceListener" /> objects.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Diagnostics.TraceListenerCollection.CopyTo%2A> method of the <xref:System.Diagnostics.TraceListenerCollection> class to copy all or part of the collection to an array.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -533,8 +627,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether access to the <see cref="T:System.Diagnostics.TraceListenerCollection" /> is synchronized (thread safe).</summary>
+        <value>Always <see langword="true" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -560,8 +654,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an object that can be used to synchronize access to the <see cref="T:System.Diagnostics.TraceListenerCollection" />.</summary>
+        <value>The current <see cref="T:System.Diagnostics.TraceListenerCollection" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -590,10 +684,23 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The object to add to the <see cref="T:System.Diagnostics.TraceListenerCollection" />.</param>
+        <summary>Adds a trace listener to the <see cref="T:System.Diagnostics.TraceListenerCollection" />.</summary>
+        <returns>The position into which the new trace listener was inserted.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Diagnostics.TraceListenerCollection.Add%2A> method to add a new trace listener to the collection.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="value" /> is not a <see cref="T:System.Diagnostics.TraceListener" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Contains">
@@ -621,10 +728,18 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The object to locate in the <see cref="T:System.Diagnostics.TraceListenerCollection" />.</param>
+        <summary>Determines whether the <see cref="T:System.Diagnostics.TraceListenerCollection" /> contains a specific object.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Object" /> is found in the <see cref="T:System.Diagnostics.TraceListenerCollection" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Diagnostics.TraceListenerCollection.Contains%2A> method of the <xref:System.Diagnostics.TraceListenerCollection> class to determine whether the collection contains a specific <xref:System.Diagnostics.TraceListener> object.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IndexOf">
@@ -652,10 +767,17 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The object to locate in the <see cref="T:System.Diagnostics.TraceListenerCollection" />.</param>
+        <summary>Determines the index of a specific object in the <see cref="T:System.Diagnostics.TraceListenerCollection" />.</summary>
+        <returns>The index of <paramref name="value" /> if found in the <see cref="T:System.Diagnostics.TraceListenerCollection" />; otherwise, -1.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Diagnostics.TraceListenerCollection.IndexOf%2A> method of the <xref:System.Diagnostics.TraceListenerCollection> class to determine the index of a <xref:System.Diagnostics.TraceListener> object in the collection.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Insert">
@@ -684,10 +806,19 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index at which <c>value</c> should be inserted.</param>
+        <param name="value">The <see cref="T:System.Diagnostics.TraceListener" /> object to insert into the <see cref="T:System.Diagnostics.TraceListenerCollection" />.</param>
+        <summary>Inserts a <see cref="T:System.Diagnostics.TraceListener" /> object at the specified position in the <see cref="T:System.Diagnostics.TraceListenerCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Diagnostics.TraceListenerCollection.Insert%2A> method of the <xref:System.Diagnostics.TraceListenerCollection> class to insert a <xref:System.Diagnostics.TraceListener> object into the collection.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> is not a <see cref="T:System.Diagnostics.TraceListener" /> object.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsFixedSize">
@@ -712,8 +843,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the <see cref="T:System.Diagnostics.TraceListenerCollection" /> has a fixed size.</summary>
+        <value>Always <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -739,8 +870,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the <see cref="T:System.Diagnostics.TraceListenerCollection" /> is read-only</summary>
+        <value>Always <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -769,10 +900,17 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index of the <c>value</c> to get.</param>
+        <summary>Gets or sets the <see cref="T:System.Diagnostics.TraceListener" /> at the specified index in the <see cref="T:System.Diagnostics.TraceListenerCollection" />.</summary>
+        <value>The <see cref="T:System.Diagnostics.TraceListener" /> at the specified index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Diagnostics.TraceListenerCollection.Item%2A> property or the indexer of the <xref:System.Diagnostics.TraceListenerCollection> class to get or set a <xref:System.Diagnostics.TraceListener> in the collection.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Remove">
@@ -800,9 +938,16 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="value">The object to remove from the <see cref="T:System.Diagnostics.TraceListenerCollection" />.</param>
+        <summary>Removes an object from the <see cref="T:System.Diagnostics.TraceListenerCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Diagnostics.TraceListenerCollection.Remove%2A> method of the <xref:System.Diagnostics.TraceListenerCollection> class to remove a <xref:System.Diagnostics.TraceListener> from the collection.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

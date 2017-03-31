@@ -11,8 +11,18 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Extends design-time behavior for controls that implement the <see cref="T:System.Web.UI.WebControls.WebParts.Part" /> abstract class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.WebParts.PartDesigner> class is the base class for many of the various designers in the <xref:System.Web.UI.Design.WebControls.WebParts> namespace, which provide visual representations of Web Parts controls at design time. The <xref:System.Web.UI.Design.WebControls.WebParts.PartDesigner.UsePreviewControl%2A> property is overridden to always return `true`, so <xref:System.Web.UI.Design.WebControls.WebParts.PartDesigner> will always render a copy of the associated control rather than the control itself.  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>The <see cref="T:System.Web.UI.Design.WebControls.WebParts.PartDesigner" /> class does not have a public constructor, so you cannot inherit from it directly outside the <see cref="N:System.Web.UI.Design.WebControls.WebParts" /> namespace. Instead, use <see cref="T:System.Web.UI.Design.WebControls.WebParts.WebPartDesigner" />, <see cref="T:System.Web.UI.Design.WebControls.WebParts.EditorPartDesigner" />, or <see cref="T:System.Web.UI.Design.WebControls.WebParts.CatalogPartDesigner" />, which derive from <see cref="T:System.Web.UI.Design.WebControls.WebParts.PartDesigner" /> and provide the same functionality with a public constructor.</para>
+    </block>
   </Docs>
   <Members>
     <Member MemberName="Initialize">
@@ -31,8 +41,8 @@
         <Parameter Name="component" Type="System.ComponentModel.IComponent" />
       </Parameters>
       <Docs>
-        <param name="component">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="component">The <see cref="T:System.Web.UI.WebControls.WebParts.Part" /> control associated with this designer.</param>
+        <summary>Creates an instance of the designer bound to the associated <see cref="T:System.Web.UI.WebControls.WebParts.Part" /> control.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,8 +59,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the designer should use a temporary copy rather than the actual control associated with the designer to generate the design-time markup.</summary>
+        <value>Always <see langword="true" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

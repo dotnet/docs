@@ -20,7 +20,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Class that contains helper methods for DLR CallSites.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -49,9 +49,9 @@
         <Parameter Name="mb" Type="System.Reflection.MethodBase" />
       </Parameters>
       <Docs>
-        <param name="mb">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="mb">The input <see cref="T:System.Reflection.MethodBase" /></param>
+        <summary>Checks if a <see cref="T:System.Reflection.MethodBase" /> is internally used by DLR and should not be displayed on the language code's stack.</summary>
+        <returns>True if the input <see cref="T:System.Reflection.MethodBase" /> is internally used by DLR and should not be displayed on the language code's stack. Otherwise, false.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,39 +1,47 @@
 ---
 uid: System.Web.UI.MasterPage
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MasterPage.Master
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MasterPage.MasterPageFile
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MasterPage.AddContentTemplate(System.String,System.Web.UI.ITemplate)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MasterPage.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MasterPage.ContentTemplates
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MasterPage.InstantiateInContentPlaceHolder(System.Web.UI.Control,System.Web.UI.ITemplate)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MasterPage.ContentPlaceHolders
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

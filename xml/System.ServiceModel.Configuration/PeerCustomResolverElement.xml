@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a configuration element for a custom peer resolver.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new default instance of the <see cref="T:System.ServiceModel.Configuration.PeerCustomResolverElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +48,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Contains the URI of the schema used for the custom peer resolver configuration XML.</summary>
+        <value>The URI the schema used for the custom peer resolver configuration XML.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,8 +74,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets and sets the name of the string binding used for the custom peer resolver.</summary>
+        <value>The name of the string binding used for the custom peer resolver.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,8 +100,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets and sets the binding configuration string for the custom peer resolver.</summary>
+        <value>The binding configuration string for the custom peer resolver.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,8 +123,9 @@
         <ReturnType>System.ServiceModel.Configuration.AddressHeaderCollectionElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a configuration element that defines the collection that contains the headers used for SOAP messages handled by the custom peer resolver.</summary>
+        <value>
+          <see cref="T:System.ServiceModel.Configuration.AddressHeaderCollectionElement" /> that defines the collection that contains the headers used for SOAP messages handled by the custom peer resolver.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,8 +147,9 @@
         <ReturnType>System.ServiceModel.Configuration.IdentityElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the identity for custom peer resolvers configured with this element.</summary>
+        <value>
+          <see cref="T:System.ServiceModel.Configuration.IdentityElement" /> that contains the identity for custom peer resolvers configured with this element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -190,8 +192,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets and sets a string value that contains the "type" of the custom peer resolver.</summary>
+        <value>A string value that contains the "type" of the custom peer resolver.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

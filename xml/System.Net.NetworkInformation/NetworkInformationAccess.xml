@@ -16,8 +16,24 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies permission to access information about network interfaces and traffic statistics.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used with the <xref:System.Net.NetworkInformation.NetworkInformationPermission> class to specify the level of access to information that the permission object controls.  
+  
+   
+  
+## Examples  
+ The following code example creates a permission that controls Read access to network information.  
+  
+ [!code-cpp[NclNetworkInfoPerms#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNetworkInfoPerms/CPP/NclNetworkInfoPerms.cpp#3)]
+ [!code-csharp[NclNetworkInfoPerms#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNetworkInfoPerms/CS/permissionexample.cs#3)]
+ [!code-vb[NclNetworkInfoPerms#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclNetworkInfoPerms/VB/permissionexample.vb#3)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="None">
@@ -34,7 +50,7 @@
         <ReturnType>System.Net.NetworkInformation.NetworkInformationAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No access to network information.</summary>
       </Docs>
     </Member>
     <Member MemberName="Ping">
@@ -51,7 +67,7 @@
         <ReturnType>System.Net.NetworkInformation.NetworkInformationAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Ping access to network information.</summary>
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -68,7 +84,7 @@
         <ReturnType>System.Net.NetworkInformation.NetworkInformationAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Read access to network information.</summary>
       </Docs>
     </Member>
   </Members>

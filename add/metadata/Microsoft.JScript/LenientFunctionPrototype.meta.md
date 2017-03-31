@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.JScript.LenientFunctionPrototype
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.LenientFunctionPrototype.constructor
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.LenientFunctionPrototype.apply
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.LenientFunctionPrototype.toString
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.LenientFunctionPrototype.call
-internalonly: False
+ms.author: "mikejo"
 ---

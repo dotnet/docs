@@ -1,29 +1,29 @@
 ---
 uid: Microsoft.JScript.IDebuggerObject
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.IDebuggerObject.IsScriptFunction
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.IDebuggerObject.IsEqual(Microsoft.JScript.IDebuggerObject)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.IDebuggerObject.IsCOMObject
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.IDebuggerObject.IsScriptObject
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.IDebuggerObject.HasEnumerableMember(System.String)
-internalonly: False
+ms.author: "mikejo"
 ---

@@ -1,54 +1,83 @@
 ---
 uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileReference
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileReference.#ctor(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileReference.XmlWriteableType
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileReference.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileReference.ComClasses
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileReference.XmlComClasses
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileReference.XmlTypeLibs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileReference.TypeLibs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileReference.ProxyStubs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileReference.IsDataFile
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileReference.XmlProxyStubs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileReference.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

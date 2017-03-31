@@ -1,14 +1,14 @@
 ---
 uid: System.Management.Instrumentation.BaseEvent
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.BaseEvent.Fire
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.BaseEvent.#ctor
-internalonly: False
+manager: "jillfra"
 ---

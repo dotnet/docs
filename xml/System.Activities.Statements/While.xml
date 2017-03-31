@@ -16,8 +16,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Executes a contained activity while a condition evaluates to <see langword="true" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates creating a <xref:System.Activities.Statements.While> activity. This example is from the [Content-Based Correlation](../Topic/Content-Based%20Correlation.md) sample.  
+  
+ [!code-csharp[wfs_ContentBasedCorrelation#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_contentbasedcorrelation/cs/program.cs#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,8 +40,17 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Statements.While" /> activity.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates creating a <xref:System.Activities.Statements.While> activity. This example is from the [Content-Based Correlation](../Topic/Content-Based%20Correlation.md) sample.  
+  
+ [!code-csharp[wfs_ContentBasedCorrelation#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_contentbasedcorrelation/cs/program.cs#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -48,8 +66,8 @@
         <Parameter Name="condition" Type="System.Activities.Activity&lt;System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <param name="condition">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="condition">The condition under which the activity iterates.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Statements.While" /> activity.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,8 +84,8 @@
         <Parameter Name="condition" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;System.Activities.ActivityContext,System.Boolean&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="condition">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="condition">The condition under which the activity iterates.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Statements.While" /> activity.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,9 +110,18 @@
         <ReturnType>System.Activities.Activity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="T:System.Activities.Activity" /> to execute in the <see langword="While" /> loop.</summary>
+        <value>The activit to execute.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates setting the Body property of a <xref:System.Activities.Statements.While> activity. This example is from the [Content-Based Correlation](../Topic/Content-Based%20Correlation.md) sample.  
+  
+ [!code-csharp[wfs_ContentBasedCorrelation#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_contentbasedcorrelation/cs/program.cs#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CacheMetadata">
@@ -139,9 +166,18 @@
         <ReturnType>System.Activities.Activity&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="T:System.Activities.Activity`1" /> to be evaluated before each iteration of the <see langword="While" /> loop.</summary>
+        <value>The condition.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates setting the Condition property of a <xref:System.Activities.Statements.While> activity. This example is from the [Content-Based Correlation](../Topic/Content-Based%20Correlation.md) sample.  
+  
+ [!code-csharp[wfs_ContentBasedCorrelation#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_contentbasedcorrelation/cs/program.cs#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -201,10 +237,29 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Activities.Variable&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The collection of <see cref="T:System.Activities.Variable" /> objects associated with the <see cref="T:System.Activities.Statements.While" /> activity.</summary>
+        <value>The collection of variables.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Statements.While" /> activity.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates creating a <xref:System.Activities.Statements.While> activity. This example is from the [Content-Based Correlation](../Topic/Content-Based%20Correlation.md) sample.  
+  
+ [!code-csharp[wfs_ContentBasedCorrelation#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_contentbasedcorrelation/cs/program.cs#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

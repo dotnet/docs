@@ -11,8 +11,13 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines the abstract methods required to implement a plug-in document serialization <see cref="T:System.Windows.Media.Visual" /> collator.</summary>
     <remarks>To be added.</remarks>
+    <block subset="none" type="overrides">
+      <para>A <see cref="T:System.Windows.Documents.Serialization.SerializerWriterCollator" /> is created with the <see cref="Overload:System.Windows.Documents.Serialization.SerializerWriter.CreateVisualsCollator" /> method of the <see cref="T:System.Windows.Documents.Serialization.SerializerWriter" /> class.  
+  
+ The <see cref="T:System.Windows.Documents.Serialization.SerializerWriterCollator" /> writes to the same output stream as is written to by the <see cref="T:System.Windows.Documents.Serialization.SerializerWriter" /> that created the <see cref="T:System.Windows.Documents.Serialization.SerializerWriterCollator" />.</para>
+    </block>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,8 +31,13 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.Serialization.SerializerWriterCollator" /> class.</summary>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>A <see cref="T:System.Windows.Documents.Serialization.SerializerWriterCollator" /> is created with the <see cref="Overload:System.Windows.Documents.Serialization.SerializerWriter.CreateVisualsCollator" /> method of the <see cref="T:System.Windows.Documents.Serialization.SerializerWriter" /> class.  
+  
+ The <see cref="T:System.Windows.Documents.Serialization.SerializerWriterCollator" /> writes to the same output stream as is written to by the <see cref="T:System.Windows.Documents.Serialization.SerializerWriter" /> that created the <see cref="T:System.Windows.Documents.Serialization.SerializerWriterCollator" />.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="BeginBatchWrite">
@@ -44,7 +54,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>When overridden in a derived class, initiates the start of a batch write operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,7 +72,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>When overridden in a derived class, cancels a synchronous <see cref="Overload:System.Windows.Documents.Serialization.SerializerWriterCollator.Write" /> operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,7 +90,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>When overridden in a derived class, cancels an asynchronous <see cref="Overload:System.Windows.Documents.Serialization.SerializerWriterCollator.WriteAsync" /> operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,7 +108,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>When overridden in a derived class, completes a batch write operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,9 +128,16 @@
         <Parameter Name="visual" Type="System.Windows.Media.Visual" />
       </Parameters>
       <Docs>
-        <param name="visual">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="visual">The visual element to write to the serialization <see cref="T:System.IO.Stream" />.</param>
+        <summary>When overridden in a derived class, synchronously writes a given <see cref="T:System.Windows.Media.Visual" /> element to the serialization stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Documents.Serialization.SerializerWriterCollator.Write%2A> method writes to the stream associated with the <xref:System.Windows.Documents.Serialization.SerializerWriter> that created the <xref:System.Windows.Documents.Serialization.SerializerWriterCollator> from the call to <xref:System.Windows.Documents.Serialization.SerializerWriter.CreateVisualsCollator%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -145,10 +162,17 @@
         <Parameter Name="printTicket" Type="System.Printing.PrintTicket" />
       </Parameters>
       <Docs>
-        <param name="visual">To be added.</param>
-        <param name="printTicket">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="visual">A <see cref="T:System.Windows.Media.Visual" /> that is written to the stream.</param>
+        <param name="printTicket">An object specifying preferences for how the material should be printed.</param>
+        <summary>When overridden in a derived class, synchronously writes a given <see cref="T:System.Windows.Media.Visual" /> element together with an associated print ticket to the serialization stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Documents.Serialization.SerializerWriterCollator.Write%2A> method writes to the stream associated with the <xref:System.Windows.Documents.Serialization.SerializerWriter> that created the <xref:System.Windows.Documents.Serialization.SerializerWriterCollator> from the call to <xref:System.Windows.Documents.Serialization.SerializerWriter.CreateVisualsCollator%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">
@@ -167,9 +191,16 @@
         <Parameter Name="visual" Type="System.Windows.Media.Visual" />
       </Parameters>
       <Docs>
-        <param name="visual">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="visual">The visual element to write to the serialization <see cref="T:System.IO.Stream" />.</param>
+        <summary>When overridden in a derived class, asynchronously writes a given <see cref="T:System.Windows.Media.Visual" /> element to the serialization stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Documents.Serialization.SerializerWriterCollator.WriteAsync%2A> methods write to the stream associated with the <xref:System.Windows.Documents.Serialization.SerializerWriter> that created the <xref:System.Windows.Documents.Serialization.SerializerWriterCollator> from the call to <xref:System.Windows.Documents.Serialization.SerializerWriter.CreateVisualsCollator%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">
@@ -189,10 +220,19 @@
         <Parameter Name="userState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="visual">To be added.</param>
-        <param name="userState">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="visual">The visual element to write to the serialization <see cref="T:System.IO.Stream" />.</param>
+        <param name="userState">A caller-specified object to identify the asynchronous write operation.</param>
+        <summary>When overridden in a derived class, asynchronously writes a given <see cref="T:System.Windows.Media.Visual" /> element with a specified event identifier to the serialization stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Documents.Serialization.SerializerWriterCollator.WriteAsync%2A> methods write to the stream associated with the <xref:System.Windows.Documents.Serialization.SerializerWriter> that created the <xref:System.Windows.Documents.Serialization.SerializerWriterCollator> from the call to <xref:System.Windows.Documents.Serialization.SerializerWriter.CreateVisualsCollator%2A>.  
+  
+ `userState` is passed to the <xref:System.Windows.Documents.Serialization.WritingCompletedEventHandler> when the <xref:System.Windows.Documents.Serialization.SerializerWriter.WritingCompleted> event occurs.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">
@@ -217,10 +257,19 @@
         <Parameter Name="printTicket" Type="System.Printing.PrintTicket" />
       </Parameters>
       <Docs>
-        <param name="visual">To be added.</param>
-        <param name="printTicket">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="visual">The visual element to write to the serialization <see cref="T:System.IO.Stream" />.</param>
+        <param name="printTicket">The default print preferences for the <c>visual</c> element.</param>
+        <summary>When overridden in a derived class, asynchronously writes a given <see cref="T:System.Windows.Media.Visual" /> element together with an associated print ticket to the serialization stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Documents.Serialization.SerializerWriterCollator.WriteAsync%2A> method writes to the stream associated with the <xref:System.Windows.Documents.Serialization.SerializerWriter> that created the <xref:System.Windows.Documents.Serialization.SerializerWriterCollator> from the call to <xref:System.Windows.Documents.Serialization.SerializerWriter.CreateVisualsCollator%2A>.  
+  
+ `printTicket` can be `null` if there are no preferred print settings.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">
@@ -246,12 +295,57 @@
         <Parameter Name="userState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="visual">To be added.</param>
-        <param name="printTicket">To be added.</param>
-        <param name="userState">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="visual">The visual element to write to the serialization <see cref="T:System.IO.Stream" />.</param>
+        <param name="printTicket">The default print preferences for the <c>visual</c> element.</param>
+        <param name="userState">A caller-specified object to identify the asynchronous write operation.</param>
+        <summary>When overridden in a derived class, asynchronously writes a given <see cref="T:System.Windows.Media.Visual" /> element together with an associated print ticket and identifier to the serialization stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Documents.Serialization.SerializerWriterCollator.WriteAsync%2A> method writes to the stream associated with the <xref:System.Windows.Documents.Serialization.SerializerWriter> that created the <xref:System.Windows.Documents.Serialization.SerializerWriterCollator> from the call to <xref:System.Windows.Documents.Serialization.SerializerWriter.CreateVisualsCollator%2A>.  
+  
+ `printTicket` can be `null` if there are no preferred print settings.  
+  
+ `userState` is passed to the <xref:System.Windows.Documents.Serialization.WritingCompletedEventHandler> when the <xref:System.Windows.Documents.Serialization.SerializerWriter.WritingCompleted> event occurs.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, synchronously writes a given <see cref="T:System.Windows.Media.Visual" /> element to the serialization stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Documents.Serialization.SerializerWriterCollator.Write%2A> methods write to the stream associated with the <xref:System.Windows.Documents.Serialization.SerializerWriter> that created the <xref:System.Windows.Documents.Serialization.SerializerWriterCollator> from the call to <xref:System.Windows.Documents.Serialization.SerializerWriter.CreateVisualsCollator%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteAsync">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, asynchronously writes a given <see cref="T:System.Windows.Media.Visual" /> element to the serialization stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Documents.Serialization.SerializerWriterCollator.WriteAsync%2A> methods write to the stream associated with the <xref:System.Windows.Documents.Serialization.SerializerWriter> that created the <xref:System.Windows.Documents.Serialization.SerializerWriterCollator> from the call to <xref:System.Windows.Documents.Serialization.SerializerWriter.CreateVisualsCollator%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

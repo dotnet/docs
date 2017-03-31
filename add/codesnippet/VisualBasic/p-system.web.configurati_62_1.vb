@@ -1,1 +1,0 @@
-profileSetting.MinInstances = 1

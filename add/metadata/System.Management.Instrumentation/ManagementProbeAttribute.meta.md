@@ -1,14 +1,14 @@
 ---
 uid: System.Management.Instrumentation.ManagementProbeAttribute
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.ManagementProbeAttribute.Schema
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.ManagementProbeAttribute.#ctor
-internalonly: False
+manager: "jillfra"
 ---

@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents an individual <see cref="T:System.Windows.Controls.DataGrid" /> row header.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,7 +34,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Primitives.DataGridRowHeader" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,8 +59,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the row is selected.</summary>
+        <value>
+          <see langword="true" /> if the row is selected; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,7 +78,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Primitives.DataGridRowHeader.IsRowSelected" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,9 +98,9 @@
         <Parameter Name="availableSize" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="availableSize">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="availableSize">The available size that this element can give to child elements. Indicates an upper limit that child elements should not exceed.</param>
+        <summary>Measures the children of a <see cref="T:System.Windows.Controls.Primitives.DataGridRowHeader" /> to prepare for arranging them during the <see cref="M:System.Windows.Controls.Control.ArrangeOverride(System.Windows.Size)" /> pass.</summary>
+        <returns>The size that the <see cref="T:System.Windows.Controls.Primitives.DataGridRowHeader" /> determines it needs during layout, based on its calculations of child object allocated sizes.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,8 +118,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Builds the visual tree for the row header when a new template is applied.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is invoked whenever application code or an internal process, such as a rebuilding layout pass, calls the <xref:System.Windows.FrameworkElement.ApplyTemplate%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnClick">
@@ -135,8 +143,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Raises the <see cref="E:System.Windows.Controls.Primitives.ButtonBase.Click" /> event and initiates row selection or drag operations.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called when the row header is clicked.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnCreateAutomationPeer">
@@ -153,8 +168,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a new <see cref="T:System.Windows.Automation.Peers.DataGridRowHeaderAutomationPeer" /> for this row header.</summary>
+        <returns>A new automation peer for this row header.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -171,8 +186,8 @@
         <ReturnType>System.Windows.Media.Brush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="T:System.Windows.Media.Brush" /> used to paint the row header separator lines.</summary>
+        <value>The brush used to paint row header separator lines.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -189,7 +204,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Primitives.DataGridRowHeader.SeparatorBrush" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -206,8 +221,8 @@
         <ReturnType>System.Windows.Visibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the user interface (UI) visibility of the row header separator lines.</summary>
+        <value>The UI visibility of the row header separator lines. The default is <see cref="F:System.Windows.Visibility.Visible" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -224,7 +239,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Primitives.DataGridRowHeader.SeparatorVisibility" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

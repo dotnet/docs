@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the optional configuration setting for WS-Reliable Messaging defined in a standard binding. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.StandardBindingOptionalReliableSessionElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,9 +46,11 @@
         <Parameter Name="optionalReliableSession" Type="System.ServiceModel.OptionalReliableSession" />
       </Parameters>
       <Docs>
-        <param name="optionalReliableSession">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="optionalReliableSession">The configuration element to apply.</param>
+        <summary>Applies the content of a specified binding element to this configuration section.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="optionalReliableSession" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -69,8 +71,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a Boolean value that specifies whether reliable session is enabled for this binding.</summary>
+        <value>
+          <see langword="true" /> if reliable session is enabled for this binding; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,9 +93,11 @@
         <Parameter Name="optionalReliableSession" Type="System.ServiceModel.OptionalReliableSession" />
       </Parameters>
       <Docs>
-        <param name="optionalReliableSession">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="optionalReliableSession">The configuration element whose settings are to be copied.</param>
+        <summary>Initializes the settings of this configuration element from the content of a specified configuration element.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="optionalReliableSession" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Properties">

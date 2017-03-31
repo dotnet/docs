@@ -12,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides data for the <see cref="E:System.ComponentModel.Composition.Hosting.INotifyComposablePartCatalogChanged.Changed" /> event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,10 +32,10 @@
         <Parameter Name="atomicComposition" Type="System.ComponentModel.Composition.Hosting.AtomicComposition" />
       </Parameters>
       <Docs>
-        <param name="addedDefinitions">To be added.</param>
-        <param name="removedDefinitions">To be added.</param>
-        <param name="atomicComposition">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="addedDefinitions">The part definitions that were added to the catalog.</param>
+        <param name="removedDefinitions">The part definitions that were removed from the catalog.</param>
+        <param name="atomicComposition">The composition transaction to use, or <see langword="null" /> to disable transactional composition.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs" /> class with the specified changes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,8 +53,8 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.ComponentModel.Composition.Primitives.ComposablePartDefinition&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of definitions added to the <see cref="T:System.ComponentModel.Composition.Primitives.ComposablePartCatalog" /> in this change.</summary>
+        <value>A collection of definitions added to the catalog.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,8 +72,8 @@
         <ReturnType>System.ComponentModel.Composition.Hosting.AtomicComposition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the composition transaction for this change.</summary>
+        <value>The composition transaction for this change.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,8 +91,8 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.ComponentModel.Composition.Primitives.ComposablePartDefinition&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of definitions removed from the <see cref="T:System.ComponentModel.Composition.Primitives.ComposablePartCatalog" /> in this change.</summary>
+        <value>A collection of definitions removed from the catalog in this change.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

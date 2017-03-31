@@ -8,7 +8,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines methods that get and set references to the scripting engine.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,8 +26,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>When implemented in a class, gets a reference to the scripting engine.</summary>
+        <returns>A reference to the scripting engine.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,8 +47,8 @@
         <Parameter Name="engine" Type="Microsoft.JScript.Vsa.VsaEngine" />
       </Parameters>
       <Docs>
-        <param name="engine">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="engine">A reference to the scripting engine.</param>
+        <summary>When implemented in a class, sets a reference to the scripting engine.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

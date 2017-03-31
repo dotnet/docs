@@ -11,8 +11,27 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>A <see cref="T:System.ServiceModel.ServiceHost" /> derived class that compliments the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] REST programming model.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.ServiceModel.Web.WebServiceHost> finds no endpoints in the service description, it automatically creates a default endpoint at the service's base address for HTTP and HTTPS base addresses. It does not create an endpoint automatically if the user has configured an endpoint explicitly at the base address. <xref:System.ServiceModel.Web.WebServiceHost> automatically configures the endpoint's binding to work with the associated Internet Information Services (IIS) security settings when used in a secure virtual directory.  
+  
+ When creating a default HTTP endpoint, the <xref:System.ServiceModel.Web.WebServiceHost> also disables the HTTP Help page and the Web Services Description Language (WSDL) GET functionality so the metadata endpoint does not interfere with the default HTTP endpoint.  
+  
+ In addition, the <xref:System.ServiceModel.Web.WebServiceHost> class adds the <xref:System.ServiceModel.Description.WebHttpBehavior> to all endpoints that do not already have the behavior and that have a <xref:System.ServiceModel.Configuration.WebMessageEncodingElement>. If all the operations on the service have either empty HTTP request bodies or deal with the HTTP request body as a stream, then the <xref:System.ServiceModel.Web.WebServiceHost> automatically configures the appropriate content type mapper for the binding.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.ServiceModel.Web.WebServiceHost> class to host a service that makes use of the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] REST programming model.  
+  
+ [!code-csharp[WebServiceHost#0](~/samples/snippets/csharp/VS_Snippets_CFX/webservicehost/cs/program.cs#0)]
+ [!code-vb[WebServiceHost#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/webservicehost/vb/program.vb#0)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +45,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Web.WebServiceHost" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,10 +69,25 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="singletonInstance">To be added.</param>
-        <param name="baseAddresses">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="singletonInstance">A service instance to be used as the singleton instance.</param>
+        <param name="baseAddresses">The base address of the service.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Web.WebServiceHost" /> class with the specified singleton server instance and base address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `baseAddresses` parameter can consist of one or more base addresses.  
+  
+   
+  
+## Examples  
+ The following example shows how to call this constructor.  
+  
+ [!code-csharp[WebServiceHost#1](~/samples/snippets/csharp/VS_Snippets_CFX/webservicehost/cs/snippets.cs#1)]
+ [!code-vb[WebServiceHost#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/webservicehost/vb/snippets.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -76,10 +110,25 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="serviceType">To be added.</param>
-        <param name="baseAddresses">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="serviceType">The service type.</param>
+        <param name="baseAddresses">The base address of the service.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Web.WebServiceHost" /> class with the specified service type and base address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `baseAddresses` parameter can consist of one or more base addresses.  
+  
+   
+  
+## Examples  
+ The following example shows how to call this constructor.  
+  
+ [!code-csharp[WebServiceHost#2](~/samples/snippets/csharp/VS_Snippets_CFX/webservicehost/cs/snippets.cs#2)]
+ [!code-vb[WebServiceHost#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/webservicehost/vb/snippets.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnOpening">
@@ -96,8 +145,21 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Called when the <see cref="T:System.ServiceModel.Web.WebServiceHost" /> instance opens.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following occurs when this method is called:  
+  
+1.  If <xref:System.ServiceModel.Web.WebServiceHost> finds no endpoints in the service description, it creates a default endpoint at the service's base address. <xref:System.ServiceModel.Web.WebServiceHost> automatically disables the HTTP Help page and the WSDL GET functionality so that the metadata endpoint does not interfere with the default HTTP endpoint.  
+  
+2.  <xref:System.ServiceModel.Web.WebServiceHost> checks all endpoints that use the <xref:System.ServiceModel.WebHttpBinding> to see if they have the required <xref:System.ServiceModel.Description.WebHttpBehavior>. If not present, <xref:System.ServiceModel.Web.WebServiceHost> adds the <xref:System.ServiceModel.Description.WebHttpBehavior> for the endpoint.  
+  
+3.  <xref:System.ServiceModel.Web.WebServiceHost> configures the endpoint's binding to work with the associated IIS security settings when used in a secure virtual directory.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

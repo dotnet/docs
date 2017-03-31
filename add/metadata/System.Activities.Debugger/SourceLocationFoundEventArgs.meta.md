@@ -1,19 +1,27 @@
 ---
 uid: System.Activities.Debugger.SourceLocationFoundEventArgs
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Debugger.SourceLocationFoundEventArgs.SourceLocation
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Debugger.SourceLocationFoundEventArgs.#ctor(System.Object,System.Activities.Debugger.SourceLocation)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Debugger.SourceLocationFoundEventArgs.Target
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

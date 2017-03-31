@@ -8,8 +8,15 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines properties that are shared by data-bound controls.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This interface provides access to properties shared by data-bound controls, such as the <xref:System.Web.UI.WebControls.GridView>, <xref:System.Web.UI.WebControls.ListView>, <xref:System.Web.UI.WebControls.FormView> and <xref:System.Web.UI.WebControls.DetailsView> controls.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="DataKeyNames">
@@ -25,8 +32,8 @@
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets an array that contains the names of the primary-key fields of the items that are displayed in a data-bound control.</summary>
+        <value>An array that contains the names of the primary-key fields of the items that are displayed in a data-bound control.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +50,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the list of data that the data-bound control binds to when the data source contains more than one list of data items.</summary>
+        <value>The name of the list of data that the data-bound control binds to.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +68,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the object from which the data-bound control retrieves a list of data items.</summary>
+        <value>The object that contains the list of data that the data-bound control retrieves.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,8 +86,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the ID of the data source control from which the data-bound control retrieves a list of data items.</summary>
+        <value>The ID of the data source control that contains the list of data items that the data-bound control retrieves.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,8 +104,8 @@
         <ReturnType>System.Web.UI.IDataSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the data source object from which the data-bound control retrieves a list of data items.</summary>
+        <value>The data source object that contains the list of data items that the data-bound control retrieves.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

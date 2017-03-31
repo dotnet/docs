@@ -1,29 +1,35 @@
 ---
 uid: System.Web.UI.WebControls.IDataBoundListControl
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.IDataBoundListControl.SelectedDataKey
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.IDataBoundListControl.EnablePersistedSelection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.IDataBoundListControl.DataKeys
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.IDataBoundListControl.SelectedIndex
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.IDataBoundListControl.ClientIDRowSuffix
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

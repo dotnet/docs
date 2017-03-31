@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a collection of all of the <see cref="T:System.Windows.Documents.LinkTarget" /> elements in a <see cref="T:System.IO.Packaging.Package" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By providing all the potential <xref:System.Windows.Documents.LinkTargetCollection> elements in one collection, consuming applications can determine if a <xref:System.IO.Packaging.Package> contains a particular link without having to load the entire <xref:System.IO.Packaging.Package>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.LinkTargetCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,9 +53,9 @@
         <Parameter Name="value" Type="System.Windows.Documents.LinkTarget" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The link target that is added.</param>
+        <summary>Adds a specified <see cref="T:System.Windows.Documents.LinkTarget" /> to the collection.</summary>
+        <returns>The zero-based index in the collection of the <paramref name="value" /> added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,10 +75,18 @@
         <Parameter Name="value" Type="System.Windows.Documents.LinkTarget" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The link to test for.</param>
+        <summary>Specifies a value that indicates whether a particular <see cref="T:System.Windows.Documents.LinkTarget" /> is in the collection.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="value" /> is present; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Rather than searching the entire document, the <xref:System.Windows.Documents.LinkTargetCollection.Contains%2A> method provides a quick means to test for a specified link.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -91,9 +106,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">The target array.</param>
+        <param name="index">The zero-based index of the array position where the first item is copied.</param>
+        <summary>Copies the items in the collection to the specified array beginning at the specified index.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,9 +128,9 @@
         <Parameter Name="value" Type="System.Windows.Documents.LinkTarget" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The object to locate in the collection.</param>
+        <summary>Gets the index of the specified item.</summary>
+        <returns>The index of <paramref name="value" /> if found in the collection; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,9 +151,9 @@
         <Parameter Name="value" Type="System.Windows.Documents.LinkTarget" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The point where the link target is inserted.</param>
+        <param name="value">The target to insert.</param>
+        <summary>Inserts the specified item into the collection at the specified index.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -158,9 +173,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The index of the target being written or read.</param>
+        <summary>Gets or sets the <see cref="T:System.Windows.Documents.LinkTarget" /> at the specified index.</summary>
+        <value>The <see cref="T:System.Windows.Documents.LinkTarget" /> at the specified index.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -180,9 +195,16 @@
         <Parameter Name="value" Type="System.Windows.Documents.LinkTarget" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="value">The link target to remove.</param>
+        <summary>Removes the first occurrence of a specific object from the <see cref="T:System.Collections.Generic.ICollection`1" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The link targets that follow the removed target move up to occupy the vacated spot. The indexes of the elements that are moved are also updated.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

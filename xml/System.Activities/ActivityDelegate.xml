@@ -16,8 +16,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an activity-based callback.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Activity delegates enable activity authors to expose callbacks with specific signatures that users of the activity can provide activity-based handlers for. There are two types of activity delegates: <xref:System.Activities.ActivityAction%601> is used for invoking activities that do not have a return value, and <xref:System.Activities.ActivityFunc%601> is used for invoking activities that do have a return value. Activity delegates are useful in scenarios where a child activity must be constrained to having a certain signature.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +38,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Called by derived class constructors to initialize the object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,9 +55,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets an optional friendly name that is used for debugging, validation, exception handling, and tracking.</summary>
+        <value>A friendly name that is used for debugging, validation, exception handling, and tracking.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is read-only at runtime. If the value is set at runtime, an <xref:System.InvalidOperationException> is thrown.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetResultArgument">
@@ -67,8 +81,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>When implemented in a derived class, returns the <see cref="T:System.Activities.DelegateOutArgument" /> of the <see cref="T:System.Activities.ActivityDelegate" />.</summary>
+        <returns>An out argument for the <see cref="T:System.Activities.ActivityDelegate" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,9 +104,16 @@
         <ReturnType>System.Activities.Activity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the activity that is represented by this <see cref="T:System.Activities.ActivityDelegate" />.</summary>
+        <value>The activity that is represented by this <see cref="T:System.Activities.ActivityDelegate" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is read-only at runtime. If the value is set at runtime, an <xref:System.InvalidOperationException> is thrown.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnGetRuntimeDelegateArguments">
@@ -111,9 +132,16 @@
         <Parameter Name="runtimeDelegateArguments" Type="System.Collections.Generic.IList&lt;System.Activities.RuntimeDelegateArgument&gt;" />
       </Parameters>
       <Docs>
-        <param name="runtimeDelegateArguments">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="runtimeDelegateArguments">The list to be populated with runtime arguments.</param>
+        <summary>Supplies a list of runtime arguments for the <see cref="T:System.Activities.ActivityDelegate" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When overridden in a derived class, this method can be used to customize the arguments that are used by the <xref:System.Activities.ActivityDelegate>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeDisplayName">
@@ -135,9 +163,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Indicates whether the <see cref="P:System.Activities.ActivityDelegate.DisplayName" /> property value should be serialized to XAML.</summary>
+        <returns>
+          <see langword="true" />, if the <see cref="P:System.Activities.ActivityDelegate.DisplayName" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Activities.ActivityDelegate.ShouldSerializeDisplayName%2A> returns `true` if the <xref:System.Activities.ActivityDelegate.DisplayName%2A> was explicitly set on the <xref:System.Activities.ActivityDelegate>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -154,8 +190,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a <see cref="T:System.String" /> representation of the <see cref="T:System.Activities.ActivityDelegate" /> that contains the <see cref="P:System.Activities.ActivityDelegate.DisplayName" />.</summary>
+        <returns>A representation of the <see cref="T:System.Activities.ActivityDelegate" /> that contains the <see cref="P:System.Activities.ActivityDelegate.DisplayName" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

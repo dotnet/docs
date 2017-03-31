@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Forms.HtmlElementInsertionOrientation
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

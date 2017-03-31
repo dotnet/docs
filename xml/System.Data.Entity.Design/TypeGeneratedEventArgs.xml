@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides data for the <see cref="E:System.Data.Entity.Design.EntityClassGenerator.OnTypeGenerated" /> event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Entity.Design.TypeGeneratedEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,9 +44,9 @@
         <Parameter Name="baseType" Type="System.CodeDom.CodeTypeReference" />
       </Parameters>
       <Docs>
-        <param name="typeSource">To be added.</param>
-        <param name="baseType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="typeSource">The source of the type.</param>
+        <param name="baseType">The base type.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Entity.Design.TypeGeneratedEventArgs" /> class with the specified source and base type.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,9 +63,16 @@
         <ReturnType>System.Collections.Generic.List&lt;System.CodeDom.CodeAttributeDeclaration&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a <see langword="List(CodeAttributeDeclaration)" /> containing the attributes that will be added to the type.</summary>
+        <value>A collection that contains the attributes that will be added to the type. The collection is empty if no attributes will be added to the type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The members are added after the <xref:System.Data.Entity.Design.EntityClassGenerator.OnTypeGenerated> event is raised  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AdditionalInterfaces">
@@ -81,9 +88,16 @@
         <ReturnType>System.Collections.Generic.List&lt;System.Type&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a <see langword="List(Type)" /> containing the interfaces that will be added to the type.</summary>
+        <value>A collection that contains the interfaces that will be added to the type. The collection is empty if no interfaces will be added.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The members are added after the <xref:System.Data.Entity.Design.EntityClassGenerator.OnTypeGenerated> event is raised.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AdditionalMembers">
@@ -99,9 +113,16 @@
         <ReturnType>System.Collections.Generic.List&lt;System.CodeDom.CodeTypeMember&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a <see langword="List(CodeTypeMember)" /> containing the members that will be added to the type.</summary>
+        <value>A collection that contains the members that will be added to the type. The collection is empty if no members will be added.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The members are added after the <xref:System.Data.Entity.Design.EntityClassGenerator.OnTypeGenerated> event is raised.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BaseType">
@@ -117,8 +138,8 @@
         <ReturnType>System.CodeDom.CodeTypeReference</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the base type.</summary>
+        <value>The base type. The default is <see cref="T:System.Data.Objects.DataClasses.EntityObject" />, <see cref="T:System.Data.Objects.DataClasses.ComplexObject" />, or <see cref="T:System.Data.Objects.ObjectContext" />, depending on the <see cref="P:System.Data.Entity.Design.TypeGeneratedEventArgs.TypeSource" /> property value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,8 +156,8 @@
         <ReturnType>System.Data.Metadata.Edm.GlobalItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Data.Metadata.Edm.GlobalItem" /> object that is the source of the type.</summary>
+        <value>The <see cref="T:System.Data.Metadata.Edm.GlobalItem" /> object that is the source of the type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

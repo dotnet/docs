@@ -1,44 +1,83 @@
 ---
 uid: System.Data.Entity.Design.EntityViewGenerator
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Entity.Design.EntityViewGenerator.Validate(System.Data.Mapping.StorageMappingItemCollection,System.Version)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Entity.Design.EntityViewGenerator.GenerateViews(System.Data.Mapping.StorageMappingItemCollection,System.IO.TextWriter)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Entity.Design.EntityViewGenerator.#ctor(System.Data.Entity.Design.LanguageOption)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Entity.Design.EntityViewGenerator.#ctor
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Entity.Design.EntityViewGenerator.#ctor
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Entity.Design.EntityViewGenerator.GenerateViews
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Entity.Design.EntityViewGenerator.Validate(System.Data.Mapping.StorageMappingItemCollection)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Entity.Design.EntityViewGenerator.GenerateViews(System.Data.Mapping.StorageMappingItemCollection,System.IO.TextWriter,System.Version)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Entity.Design.EntityViewGenerator.LanguageOption
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Entity.Design.EntityViewGenerator.GenerateViews(System.Data.Mapping.StorageMappingItemCollection,System.String)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Entity.Design.EntityViewGenerator.Validate
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

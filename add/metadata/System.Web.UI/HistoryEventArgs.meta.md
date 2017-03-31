@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.HistoryEventArgs
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HistoryEventArgs.#ctor(System.Collections.Specialized.NameValueCollection)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HistoryEventArgs.State
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -14,8 +14,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a collection of <see cref="T:System.Windows.Controls.GridViewColumn" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Controls.GridViewColumnCollection> object contains a set of <xref:System.Windows.Controls.GridViewColumn> objects that are typically used to define the columns of a <xref:System.Windows.Controls.GridView> object. A <xref:System.Windows.Controls.GridView> is a <xref:System.Windows.Controls.ListView.View%2A> that defines the layout of data in a <xref:System.Windows.Controls.ListView> control.  
+  
+ To receive notification of changes in the collection, monitor the <xref:System.Collections.ObjectModel.ObservableCollection%601.CollectionChanged> event that is inherited from <xref:System.Collections.ObjectModel.ObservableCollection%601>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -29,7 +38,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes an instance of the <see cref="T:System.Windows.Controls.GridViewColumnCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,7 +56,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes all of the <see cref="T:System.Windows.Controls.GridViewColumn" /> objects from the <see cref="T:System.Windows.Controls.GridViewColumnCollection" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,10 +77,17 @@
         <Parameter Name="column" Type="System.Windows.Controls.GridViewColumn" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="column">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The position to place the new <see cref="T:System.Windows.Controls.GridViewColumn" />.</param>
+        <param name="column">The <see cref="T:System.Windows.Controls.GridViewColumn" /> to insert.</param>
+        <summary>Adds a <see cref="T:System.Windows.Controls.GridViewColumn" /> to the collection at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method creates a new item in the <xref:System.Windows.Controls.GridViewColumnCollection> without replacing another item. To replace an item in the collection with a new item, use the <xref:System.Windows.Controls.GridViewColumnCollection.SetItem%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveItem">
@@ -91,9 +107,9 @@
         <Parameter Name="newIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="oldIndex">To be added.</param>
-        <param name="newIndex">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="oldIndex">The original position of the <see cref="T:System.Windows.Controls.GridViewColumn" />.</param>
+        <param name="newIndex">The new position of the <see cref="T:System.Windows.Controls.GridViewColumn" />.</param>
+        <summary>Changes the position of a <see cref="T:System.Windows.Controls.GridViewColumn" /> in the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,8 +129,8 @@
         <Parameter Name="e" Type="System.Collections.Specialized.NotifyCollectionChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">The event arguments.</param>
+        <summary>Raises the <see cref="E:System.Collections.ObjectModel.ObservableCollection`1.CollectionChanged" /> event when the <see cref="T:System.Windows.Controls.GridViewColumnCollection" /> changes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,8 +150,8 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The position of the <see cref="T:System.Windows.Controls.GridViewColumn" /> to remove.</param>
+        <summary>Removes a <see cref="T:System.Windows.Controls.GridViewColumn" /> from the <see cref="T:System.Windows.Controls.GridViewColumnCollection" /> at the specified index.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,10 +172,17 @@
         <Parameter Name="column" Type="System.Windows.Controls.GridViewColumn" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="column">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The position at which the new <see cref="T:System.Windows.Controls.GridViewColumn" /> replaces the old <see cref="T:System.Windows.Controls.GridViewColumn" />.</param>
+        <param name="column">The <see cref="T:System.Windows.Controls.GridViewColumn" /> to place at the specified position.</param>
+        <summary>Replaces the <see cref="T:System.Windows.Controls.GridViewColumn" /> that is at the specified index with another <see cref="T:System.Windows.Controls.GridViewColumn" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method replaces a column in the <xref:System.Windows.Controls.GridViewColumnCollection> with a new column. To insert a new column without replacing another column, use the <xref:System.Windows.Controls.GridViewColumnCollection.InsertItem%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the session-state mode.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The session-state mode is set in the configuration file.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Custom">
@@ -27,7 +34,7 @@
         <ReturnType>System.Web.SessionState.SessionStateMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Session state is using a custom data store to store session-state information.</summary>
       </Docs>
     </Member>
     <Member MemberName="InProc">
@@ -43,7 +50,7 @@
         <ReturnType>System.Web.SessionState.SessionStateMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Session state is in process with an ASP.NET worker process.</summary>
       </Docs>
     </Member>
     <Member MemberName="Off">
@@ -59,7 +66,7 @@
         <ReturnType>System.Web.SessionState.SessionStateMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Session state is disabled.</summary>
       </Docs>
     </Member>
     <Member MemberName="SQLServer">
@@ -75,7 +82,7 @@
         <ReturnType>System.Web.SessionState.SessionStateMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Session state is using an out-of-process SQL Server database to store state information.</summary>
       </Docs>
     </Member>
     <Member MemberName="StateServer">
@@ -91,7 +98,7 @@
         <ReturnType>System.Web.SessionState.SessionStateMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Session state is using the out-of-process ASP.NET State Service to store state information.</summary>
       </Docs>
     </Member>
   </Members>

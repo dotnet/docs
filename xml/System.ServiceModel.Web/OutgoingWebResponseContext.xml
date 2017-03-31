@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides programmatic access to the context of the outgoing Web response.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.Text.Encoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the encoding set on the binding.</summary>
+        <value>The encoding.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets and sets the content length header from the outgoing Web response.</summary>
+        <value>The content length header of the outgoing Web response.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +64,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets and sets the content type header from the outgoing Web response.</summary>
+        <value>The content type header of the outgoing Web response.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +82,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets and sets the etag header from the outgoing Web response.</summary>
+        <value>The etag header of the outgoing Web response.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,8 +100,8 @@
         <ReturnType>System.Nullable&lt;System.ServiceModel.Web.WebMessageFormat&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the web message format</summary>
+        <value>The web message format.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,8 +118,8 @@
         <ReturnType>System.Net.WebHeaderCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the headers from the outgoing Web response.</summary>
+        <value>A <see cref="T:System.Net.WebHeaderCollection" /> instance that contains the headers from the outgoing Web response.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,8 +136,8 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets and sets the last modified header of the outgoing Web response.</summary>
+        <value>A <see cref="T:System.DateTime" /> instance that contains the time the requested resource was last modified.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,8 +154,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets and sets the location header from the outgoing Web response.</summary>
+        <value>The location header from the outgoing Web response.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,8 +175,8 @@
         <Parameter Name="entityTag" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="entityTag">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="entityTag">The ETag to set.</param>
+        <summary>Sets the specified ETag.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -196,8 +196,8 @@
         <Parameter Name="entityTag" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="entityTag">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="entityTag">The ETag to set.</param>
+        <summary>Sets the specified ETag.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -217,8 +217,8 @@
         <Parameter Name="entityTag" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="entityTag">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="entityTag">The ETag to set.</param>
+        <summary>Sets the specified ETag.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -238,8 +238,8 @@
         <Parameter Name="entityTag" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="entityTag">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="entityTag">The ETag to set.</param>
+        <summary>Sets the specified ETag.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -259,8 +259,8 @@
         <Parameter Name="locationUri" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="locationUri">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="locationUri">The <see cref="T:System.Uri" /> instance to the requested resource.</param>
+        <summary>Sets the HTTP status code of the outgoing Web response to <see cref="F:System.Net.HttpStatusCode.Created" /> and sets the Location header to the provided URI.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -278,7 +278,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the HTTP status code of the outgoing Web response to <see cref="F:System.Net.HttpStatusCode.NotFound" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -298,8 +298,8 @@
         <Parameter Name="description" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="description">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="description">The description of status.</param>
+        <summary>Sets the HTTP status code of the outgoing Web response to <see cref="F:System.Net.HttpStatusCode.NotFound" /> with the specified description.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -316,8 +316,8 @@
         <ReturnType>System.Net.HttpStatusCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets and sets the status code of the outgoing Web response.</summary>
+        <value>An <see cref="T:System.Net.HttpStatusCode" /> instance that contains the status code of the outgoing Web response.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -334,8 +334,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets and sets the status description of the outgoing Web response.</summary>
+        <value>The status description of the outgoing Web response.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -352,8 +352,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets and sets a value that indicates whether [!INCLUDE[indigo1](~/includes/indigo1-md.md)] omits data that is normally written to the entity body of the response and forces an empty response to be returned.</summary>
+        <value>If <see langword="true" />, [!INCLUDE[indigo2](~/includes/indigo2-md.md)] omits any data that is normally written to the entity body of the response and forces an empty response to be returned. The default value is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

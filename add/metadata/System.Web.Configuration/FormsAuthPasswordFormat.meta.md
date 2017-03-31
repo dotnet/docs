@@ -1,4 +1,5 @@
 ---
 uid: System.Web.Configuration.FormsAuthPasswordFormat
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

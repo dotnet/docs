@@ -1,29 +1,35 @@
 ---
 uid: System.Web.UI.WebControls.RoleGroup
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.RoleGroup.Roles
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.RoleGroup.ContainsUser(System.Security.Principal.IPrincipal)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.RoleGroup.ContentTemplate
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.RoleGroup.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.RoleGroup.ToString
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -1,14 +1,27 @@
 ---
 uid: System.ServiceModel.Channels.HttpRequestMessageExtensionMethods
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.HttpRequestMessageExtensionMethods.SetUserPrincipal(System.Net.Http.HttpRequestMessage,System.Security.Principal.IPrincipal)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Channels.HttpRequestMessageExtensionMethods.ToMessage(System.Net.Http.HttpRequestMessage)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.HttpRequestMessageExtensionMethods.GetUserPrincipal(System.Net.Http.HttpRequestMessage)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

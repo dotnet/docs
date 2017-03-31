@@ -1,3 +1,0 @@
-        If Response.StatusDescription <> "OK" Then
-            '...
-        End If

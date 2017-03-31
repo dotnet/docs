@@ -16,8 +16,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the contract generation options available using the <see cref="T:System.ServiceModel.Description.ServiceContractGenerator" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.Description.ServiceContractGenerationOptions> enumeration with the <xref:System.ServiceModel.Description.ServiceContractGenerator.Options%2A?displayProperty=fullName> property to control the generated contract code.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AsynchronousMethods">
@@ -34,7 +41,7 @@
         <ReturnType>System.ServiceModel.Description.ServiceContractGenerationOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Generates asynchronous methods for operations in addition to synchronous versions.</summary>
       </Docs>
     </Member>
     <Member MemberName="ChannelInterface">
@@ -51,7 +58,7 @@
         <ReturnType>System.ServiceModel.Description.ServiceContractGenerationOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Generates an interface that derives from the contract interface and <see cref="T:System.ServiceModel.IClientChannel" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="ClientClass">
@@ -68,7 +75,7 @@
         <ReturnType>System.ServiceModel.Description.ServiceContractGenerationOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Generates a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] client class that extends <see cref="T:System.ServiceModel.ClientBase`1" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="EventBasedAsynchronousMethods">
@@ -85,7 +92,7 @@
         <ReturnType>System.ServiceModel.Description.ServiceContractGenerationOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Generates event-based asynchronous methods for operations in addition to synchronous versions.</summary>
       </Docs>
     </Member>
     <Member MemberName="InternalTypes">
@@ -102,7 +109,7 @@
         <ReturnType>System.ServiceModel.Description.ServiceContractGenerationOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Causes all types to be marked internal.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -119,7 +126,7 @@
         <ReturnType>System.ServiceModel.Description.ServiceContractGenerationOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No options specified.</summary>
       </Docs>
     </Member>
     <Member MemberName="TaskBasedAsynchronousMethod">
@@ -135,7 +142,7 @@
         <ReturnType>System.ServiceModel.Description.ServiceContractGenerationOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Generates task based asynchronous methods for operations in addition to synchronous versions.</summary>
       </Docs>
     </Member>
     <Member MemberName="TypedMessages">
@@ -152,7 +159,7 @@
         <ReturnType>System.ServiceModel.Description.ServiceContractGenerationOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Generate message contracts.</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.ValidateValueCallback
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

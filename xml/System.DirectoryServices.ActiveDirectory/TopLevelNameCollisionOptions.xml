@@ -15,8 +15,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies additional information about a forest trust collision when the <see cref="P:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollision.CollisionType" /> property value is <see cref="F:System.DirectoryServices.ActiveDirectory.ForestTrustCollisionType.TopLevelName" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ <xref:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollision.CollisionType%2A>  
+  
+ <xref:System.DirectoryServices.ActiveDirectory.ForestTrustCollisionType>  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="DisabledByAdmin">
@@ -32,7 +41,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.TopLevelNameCollisionOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The forest trust account was disabled by administrative action.</summary>
       </Docs>
     </Member>
     <Member MemberName="DisabledByConflict">
@@ -48,7 +57,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.TopLevelNameCollisionOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The forest trust account was disabled due to a conflict with an existing forest trust account.</summary>
       </Docs>
     </Member>
     <Member MemberName="NewlyCreated">
@@ -64,7 +73,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.TopLevelNameCollisionOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The forest trust account has been created and is disabled.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -80,7 +89,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.TopLevelNameCollisionOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No action has occurred.</summary>
       </Docs>
     </Member>
   </Members>

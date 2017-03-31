@@ -20,8 +20,26 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a <see cref="T:System.Windows.Media.Media3D.Visual3D" /> that renders <see cref="T:System.Windows.Media.Media3D.Model3D" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Provides services and properties that are common to all visual objects, including hit-testing, coordinate transformation, and bounding-box calculations.  
+  
+ The <xref:System.Windows.Media.Media3D.ModelVisual3D> class has a <xref:System.Windows.Media.Media3D.ModelVisual3D.Children%2A> property that enables you to build a tree structure of <xref:System.Windows.Media.Media3D.ModelVisual3D> objects.  
+  
+ <xref:System.Windows.Media.Media3D.ModelVisual3D> objects are optimized as scene nodes. For example, they cache bounds. Whenever you can, use <xref:System.Windows.Media.Media3D.ModelVisual3D> objects for unique instances of objects within your scene. This usage contrasts with that of <xref:System.Windows.Media.Media3D.Model3D> objects, which are lightweight objects that are optimized to be shared and reused. For example, use a <xref:System.Windows.Media.Media3D.Model3D> object to build a model of a car; and use ten <xref:System.Windows.Media.Media3D.ModelVisual3D> objects to place ten cars in your scene.  
+  
+   
+  
+## Examples  
+ The following example shows an instance of ModelVisual3D in markup. `myTeapot` refers to a <xref:System.Windows.Media.Media3D.MeshGeometry3D> defined externally. You can substitute any geometry of your own.  
+  
+ [!code-xml[animate3drotation#Animate3DRotation3DN3](~/samples/snippets/csharp/VS_Snippets_Wpf/Animate3DRotation/CS/Window1.xaml#animate3drotation3dn3)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,7 +53,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Media3D.ModelVisual3D" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,9 +75,16 @@
         <ReturnType>System.Windows.Media.Media3D.Visual3DCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of child <see cref="T:System.Windows.Media.Media3D.Visual3D" /> objects.</summary>
+        <value>A <see cref="T:System.Windows.Media.Media3D.Visual3DCollection" /> that contains child <see cref="T:System.Windows.Media.Media3D.Visual3D" /> objects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-xml[animate3drotation#Animate3DRotation3DN3](~/samples/snippets/csharp/VS_Snippets_Wpf/Animate3DRotation/CS/Window1.xaml#animate3drotation3dn3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Content">
@@ -75,9 +100,28 @@
         <ReturnType>System.Windows.Media.Media3D.Model3D</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the model that comprises the content of the <see cref="T:System.Windows.Media.Media3D.ModelVisual3D" />.</summary>
+        <value>A <see cref="T:System.Windows.Media.Media3D.Model3D" /> that comprises the content of the <see cref="T:System.Windows.Media.Media3D.ModelVisual3D" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_Content"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.Media3D.ModelVisual3D>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ [!code-xml[animate3drotation#Animate3DRotation3DN3](~/samples/snippets/csharp/VS_Snippets_Wpf/Animate3DRotation/CS/Window1.xaml#animate3drotation3dn3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ContentProperty">
@@ -93,7 +137,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Media.Media3D.ModelVisual3D.Content" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,10 +157,17 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="index">The index of the 3-D visual object in the collection.</param>
+        <summary>Returns the specified <see cref="T:System.Windows.Media.Media3D.Visual3D" /> in the parent collection.</summary>
+        <returns>The child in the collection at the specified index.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Media3D.ModelVisual3D.GetVisual3DChild%2A> is introduced in the .NET Framework version 3.5. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Markup.IAddChild.AddChild">
@@ -135,9 +186,16 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="value">The child object to add.</param>
+        <summary>Adds a child object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. Use it only when the <xref:System.Windows.Media.Media3D.ModelVisual3D> instance is cast to an <xref:System.Windows.Markup.IAddChild> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Markup.IAddChild.AddText">
@@ -156,9 +214,16 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="text">The text to add to the object.</param>
+        <summary>Adds the text content of a node to the object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. Use it only when the <xref:System.Windows.Media.Media3D.ModelVisual3D> instance is cast to an <xref:System.Windows.Markup.IAddChild> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Transform">
@@ -174,9 +239,28 @@
         <ReturnType>System.Windows.Media.Media3D.Transform3D</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the transform set on the <see cref="T:System.Windows.Media.Media3D.ModelVisual3D" />.</summary>
+        <value>A <see cref="T:System.Windows.Media.Media3D.Transform3D" /> set on the <see cref="T:System.Windows.Media.Media3D.ModelVisual3D" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_Transform"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.Media3D.ModelVisual3D>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ [!code-xml[hittest3d#HitTest3D3DN2](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTest3D/CSharp/Window1.xaml#hittest3d3dn2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TransformProperty">
@@ -192,7 +276,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Media.Media3D.ModelVisual3D.Transform" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -209,9 +293,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Returns the number of child objects.</summary>
+        <value>The number of child objects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Media3D.ModelVisual3D.Visual3DChildrenCount%2A> is introduced in the .NET Framework version 3.5. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

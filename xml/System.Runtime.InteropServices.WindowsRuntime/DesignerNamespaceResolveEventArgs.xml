@@ -17,7 +17,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides data for the <see cref="E:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMetadata.DesignerNamespaceResolve" /> event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,8 +35,8 @@
         <Parameter Name="namespaceName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="namespaceName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="namespaceName">The name of the namespace to resolve.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.WindowsRuntime.DesignerNamespaceResolveEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,8 +54,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the namespace to resolve.</summary>
+        <value>The name of the namespace to resolve.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,8 +73,8 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of assembly file paths; when the event handler for the <see cref="E:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMetadata.DesignerNamespaceResolve" /> event is invoked, the collection is empty, and the event handler is responsible for adding the necessary assembly files.</summary>
+        <value>A collection of assembly files that define the requested namespace.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -14,8 +14,24 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates the current state of the service.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceProcess.ServiceControllerStatus> enumeration is used by an instance of the <xref:System.ServiceProcess.ServiceController> class to indicate whether an existing service is running, stopped, paused, or whether a Start, Stop, Pause, or Continue command is pending.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.ServiceProcess.ServiceController> class to check the current status of the TelNet service. If the service is stopped, the example starts the service. If the service is running, the example stops the service.  
+  
+ [!code-cpp[ServiceController#2](~/samples/snippets/cpp/VS_Snippets_CLR/ServiceController/CPP/servicecontroller.cpp#2)]
+ [!code-csharp[ServiceController#2](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceController/CS/servicecontroller.cs#2)]
+ [!code-vb[ServiceController#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceController/VB/servicecontroller.vb#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ContinuePending">
@@ -35,7 +51,7 @@
         <ReturnType>System.ServiceProcess.ServiceControllerStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The service continue is pending. This corresponds to the Win32 <see langword="SERVICE_CONTINUE_PENDING" /> constant, which is defined as 0x00000005.</summary>
       </Docs>
     </Member>
     <Member MemberName="Paused">
@@ -55,7 +71,7 @@
         <ReturnType>System.ServiceProcess.ServiceControllerStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The service is paused. This corresponds to the Win32 <see langword="SERVICE_PAUSED" /> constant, which is defined as 0x00000007.</summary>
       </Docs>
     </Member>
     <Member MemberName="PausePending">
@@ -75,7 +91,7 @@
         <ReturnType>System.ServiceProcess.ServiceControllerStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The service pause is pending. This corresponds to the Win32 <see langword="SERVICE_PAUSE_PENDING" /> constant, which is defined as 0x00000006.</summary>
       </Docs>
     </Member>
     <Member MemberName="Running">
@@ -95,7 +111,7 @@
         <ReturnType>System.ServiceProcess.ServiceControllerStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The service is running. This corresponds to the Win32 <see langword="SERVICE_RUNNING" /> constant, which is defined as 0x00000004.</summary>
       </Docs>
     </Member>
     <Member MemberName="StartPending">
@@ -115,7 +131,7 @@
         <ReturnType>System.ServiceProcess.ServiceControllerStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The service is starting. This corresponds to the Win32 <see langword="SERVICE_START_PENDING" /> constant, which is defined as 0x00000002.</summary>
       </Docs>
     </Member>
     <Member MemberName="Stopped">
@@ -135,7 +151,7 @@
         <ReturnType>System.ServiceProcess.ServiceControllerStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The service is not running. This corresponds to the Win32 <see langword="SERVICE_STOPPED" /> constant, which is defined as 0x00000001.</summary>
       </Docs>
     </Member>
     <Member MemberName="StopPending">
@@ -155,7 +171,7 @@
         <ReturnType>System.ServiceProcess.ServiceControllerStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The service is stopping. This corresponds to the Win32 <see langword="SERVICE_STOP_PENDING" /> constant, which is defined as 0x00000003.</summary>
       </Docs>
     </Member>
   </Members>

@@ -16,7 +16,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the exception thrown when XML Schema Definition Language (XSD) schema validation errors and warnings are encountered in an XML document being validated.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,7 +36,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Schema.XmlSchemaValidationException" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,8 +58,8 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">A <see langword="string" /> description of the error condition.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Schema.XmlSchemaValidationException" /> class with the exception message specified.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,10 +82,17 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="info">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object.</param>
+        <param name="context">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Schema.XmlSchemaValidationException" /> class with the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> and <see cref="T:System.Runtime.Serialization.StreamingContext" /> objects specified.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is called by derived class constructors to initialize state in this type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -107,9 +114,9 @@
         <Parameter Name="innerException" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="innerException">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">A <see langword="string" /> description of the error condition.</param>
+        <param name="innerException">The original <see cref="T:System.Exception" /> object that caused this exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Schema.XmlSchemaValidationException" /> class with the exception message and original <see cref="T:System.Exception" /> object that caused this exception specified.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,11 +141,11 @@
         <Parameter Name="linePosition" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="innerException">To be added.</param>
-        <param name="lineNumber">To be added.</param>
-        <param name="linePosition">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">A <see langword="string" /> description of the error condition.</param>
+        <param name="innerException">The original <see cref="T:System.Exception" /> object that caused this exception.</param>
+        <param name="lineNumber">The line number of the XML that caused this exception.</param>
+        <param name="linePosition">The line position of the XML that caused this exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Schema.XmlSchemaValidationException" /> class with the exception message specified, and the original <see cref="T:System.Exception" /> object, line number, and line position of the XML that cause this exception specified.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -164,9 +171,13 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">
+          <see cref="T:System.Runtime.Serialization.SerializationInfo" />
+        </param>
+        <param name="context">
+          <see cref="T:System.Runtime.Serialization.StreamingContext" />
+        </param>
+        <summary>Constructs a new <see cref="T:System.Xml.Schema.XmlSchemaValidationException" /> object with the given <see cref="T:System.Runtime.Serialization.SerializationInfo" /> and <see cref="T:System.Runtime.Serialization.StreamingContext" /> information that contains all the properties of the <see cref="T:System.Xml.Schema.XmlSchemaValidationException" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -191,9 +202,16 @@
         <Parameter Name="sourceObject" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="sourceObject">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="sourceObject">The source object.</param>
+        <summary>Sets the XML node that causes the error.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Exception.Source%2A> property instead.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceObject">
@@ -214,9 +232,18 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the XML node that caused this <see cref="T:System.Xml.Schema.XmlSchemaValidationException" />.</summary>
+        <value>The XML node that caused this <see cref="T:System.Xml.Schema.XmlSchemaValidationException" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When an <xref:System.Xml.Schema.XmlSchemaValidationException> is thrown during validation of a class that implements the <xref:System.Xml.XPath.IXPathNavigable> interface such as the <xref:System.Xml.XPath.XPathNavigator> or <xref:System.Xml.XmlNode> class, the object returned by the <xref:System.Xml.Schema.XmlSchemaValidationException.SourceObject%2A> property is an instance of a class that implements the <xref:System.Xml.XPath.IXPathNavigable> interface.  
+  
+ When an <xref:System.Xml.Schema.XmlSchemaValidationException> is thrown during validation by a validating <xref:System.Xml.XmlReader> object, the value of the <xref:System.Xml.Schema.XmlSchemaValidationException.SourceObject%2A> property is `null`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -19,8 +19,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a code expression. This is a base class for other code expression objects that is never instantiated.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.CodeDom.CodeExpression> provides a base class for code expressions within the <xref:System.CodeDom> namespace. <xref:System.CodeDom.CodeExpression> is never instantiated. Instead it provides an abstract base class for other types of code expressions.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,7 +41,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeExpression" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

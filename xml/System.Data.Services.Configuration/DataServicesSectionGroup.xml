@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the DataServicesSectionGroup configuration section group.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Services.Configuration.DataServicesSectionGroup" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +48,8 @@
         <ReturnType>System.Data.Services.Configuration.DataServicesFeaturesSection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the DataServicesFeaturesSection instance associated with the DataServicesSectionGroup.</summary>
+        <value>A DataServicesFeaturesSection instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

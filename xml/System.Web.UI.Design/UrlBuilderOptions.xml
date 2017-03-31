@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines identifiers for settings of a <see cref="T:System.Web.UI.Design.UrlBuilder" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>System.Web.UI.Design.UrlBuilderOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Build a URL that references a path relative to the current path, rather than one that references a fully qualified, absolute path.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -48,7 +48,7 @@
         <ReturnType>System.Web.UI.Design.UrlBuilderOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use no additional options for the <see cref="T:System.Web.UI.Design.UrlBuilder" />.</summary>
       </Docs>
     </Member>
   </Members>

@@ -15,8 +15,18 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Identifies the type of data operation performed by a method, as specified by the <see cref="T:System.ComponentModel.DataObjectMethodAttribute" /> applied to the method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how you can apply the <xref:System.ComponentModel.DataObjectMethodAttribute> to a publicly exposed method and identify the type of data operation it performs as well as whether it is the type's default data method. In this example the `NorthwindEmployee` type exposes two different data methods: one to retrieve a set of data named `GetAllEmployees`, and one to delete data named `DeleteEmployeeByID`. The <xref:System.ComponentModel.DataObjectMethodAttribute> is applied to both methods.  
+  
+ [!code-csharp[System.ComponentModel.DataObjectMethodAttribute#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.ComponentModel.DataObjectMethodAttribute/CS/dataobjectmethodattribute.cs#3)]
+ [!code-vb[System.ComponentModel.DataObjectMethodAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.ComponentModel.DataObjectMethodAttribute/VB/dataobjectmethodattribute.vb#3)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Delete">
@@ -37,7 +47,7 @@
         <ReturnType>System.ComponentModel.DataObjectMethodType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that a method is used for a data operation that deletes data.</summary>
       </Docs>
     </Member>
     <Member MemberName="Fill">
@@ -58,7 +68,7 @@
         <ReturnType>System.ComponentModel.DataObjectMethodType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that a method is used for a data operation that fills a <see cref="T:System.Data.DataSet" /> object.</summary>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -79,7 +89,7 @@
         <ReturnType>System.ComponentModel.DataObjectMethodType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that a method is used for a data operation that inserts data.</summary>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -100,7 +110,7 @@
         <ReturnType>System.ComponentModel.DataObjectMethodType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that a method is used for a data operation that retrieves data.</summary>
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -121,7 +131,7 @@
         <ReturnType>System.ComponentModel.DataObjectMethodType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that a method is used for a data operation that updates data.</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,9 +1,9 @@
 ---
 uid: System.Runtime.Remoting.Messaging.IMessage
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Messaging.IMessage.Properties
-internalonly: False
+manager: "ghogen"
 ---

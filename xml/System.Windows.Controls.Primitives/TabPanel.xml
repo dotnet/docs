@@ -11,8 +11,24 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Handles the layout of the <see cref="T:System.Windows.Controls.TabItem" /> objects on a <see cref="T:System.Windows.Controls.TabControl" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.Primitives.TabPanel> serves as an item host for the tab items in a <xref:System.Windows.Controls.TabControl>. It determines the correct sizing and positioning for tab items and handles the logic for multiple rows of <xref:System.Windows.Controls.TabItem> objects.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Windows.Controls.Primitives.TabPanel> in a <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Controls.TabControl>.  
+  
+ [!code-xml[ControlTemplateExamples#13](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/tabcontrol.xaml#13)]  
+  
+ For the complete sample, see [Styling with ControlTemplates Sample](http://go.microsoft.com/fwlink/?LinkID=160041).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +42,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Primitives.TabPanel" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,9 +62,9 @@
         <Parameter Name="arrangeSize" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="arrangeSize">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="arrangeSize">The size that a tab panel assumes to position child elements.</param>
+        <summary>Arranges and sizes the content of a <see cref="T:System.Windows.Controls.Primitives.TabPanel" /> object.</summary>
+        <returns>The size of the tab panel.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,10 +84,17 @@
         <Parameter Name="layoutSlotSize" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="layoutSlotSize">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="layoutSlotSize">The size of the panel.</param>
+        <summary>Used to override default clipping.</summary>
+        <returns>A size that is the layout size of the <see cref="T:System.Windows.Controls.Primitives.TabPanel" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to override the default clip behavior of the <xref:System.Windows.UIElement> base class. The purpose of the method is to prevent clipping children because the selected <xref:System.Windows.Controls.TabItem> header renders outside the bounds of a <xref:System.Windows.Controls.Primitives.TabPanel>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MeasureOverride">
@@ -90,10 +113,17 @@
         <Parameter Name="constraint" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="constraint">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="constraint">Constraint size is an upper limit. The return value should not exceed this size.</param>
+        <summary>Called when remeasuring the control is required.</summary>
+        <returns>The desired size.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method updates the desired size of a tab panel. It is called by the parent <xref:System.Windows.UIElement>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

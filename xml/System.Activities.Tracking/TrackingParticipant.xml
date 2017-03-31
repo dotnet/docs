@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The base class for workflow extensions that interact with the workflow tracking infrastructure and access tracking records.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A tracking participant is registered to receive tracking records. Currently, any class that implements the tracking participant can be registered with the workflow instance to receive tracking records. If the tracking participant is third party code, ensure that this is not malicious code. The tracking participants run in the same process as the workflow instance and in the case of malicious tracking participants, this code could affect the overall workflow execution. The tracking records are delivered to the registered tracking participants as the workflow executes, so the developer should ensure that the tracking participant does not affect the running workflow by performing unintended operations within the track method. Examples of this could be the alteration of workflow variables or operations that take a long time.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>When implemented in a derived class, creates a new instance of the derived class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,13 +56,20 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="record">To be added.</param>
-        <param name="timeout">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="record">The generated tracking record.</param>
+        <param name="timeout">The time period after which the provider aborts the attempt.</param>
+        <param name="callback">The method to be called on completion of the operation.</param>
+        <param name="state">A user-defined object that uniquely identifies this asynchronous operation.</param>
+        <summary>When implemented in a derived class, begins asynchronous processing of the tracking record.</summary>
+        <returns>The result of the operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Participants are expected to begin a job to process the records and return an <xref:System.IAsyncResult> that the workflow runtime uses to wait for completion. The default implementation is to call <xref:System.Activities.Tracking.TrackingParticipant.Track%2A> and return a Completed status.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EndTrack">
@@ -74,9 +88,16 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="result">The status of the operation.</param>
+        <summary>When implemented in a derived class, represents the end of an asynchronous tracking operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is expected to block until the tracking operation is complete.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Track">
@@ -96,10 +117,17 @@
         <Parameter Name="timeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="record">To be added.</param>
-        <param name="timeout">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="record">The generated tracking record.</param>
+        <param name="timeout">The time period after which the provider aborts the attempt.</param>
+        <summary>When implemented in a derived class, used to synchronously process the tracking record.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The track method is called when the workflow instance emits a tracking record.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TrackingProfile">
@@ -115,9 +143,16 @@
         <ReturnType>System.Activities.Tracking.TrackingProfile</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>The tracking profile object used by the tracking participant. Before adding the tracking participant to the workflow extensions, the tracking profile is set on the participant.</summary>
+        <value>The tracking profile.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The tracking profile defines which tracking events are sent to this tracking participant.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

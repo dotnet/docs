@@ -10,8 +10,23 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates how to open a file when calling file-access functions.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you call file access–related functions, you can use enumeration members in your code instead of the actual values.  
+  
+ The `OpenMode` enumeration defines constants used to set file access modes. The following table lists the `OpenMode` enumeration members.  
+  
+ `Input`, `Output`, and `Append` are used when sequentially accessing files, such as text files, whereas `Binary` is used for binary file access and `Random` for random file access. For examples, see the <xref:Microsoft.VisualBasic.FileSystem.FileOpen%2A> method.  
+  
+ When sequentially accessing a file, you cannot change its data. You can read the data, append to it, or overwrite it with new data. If you open it for input, the contents of the file will be overwritten, even if you do not directly write to the file.  
+  
+ When performing file I/O operations, the `My.Computer.FileSystem` object provides better performance and ease of use than earlier file I/O methods. For more information, see <xref:Microsoft.VisualBasic.FileSystem> object.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Append">
@@ -27,7 +42,7 @@
         <ReturnType>Microsoft.VisualBasic.OpenMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>File opened to append to it. Default.</summary>
       </Docs>
     </Member>
     <Member MemberName="Binary">
@@ -43,7 +58,7 @@
         <ReturnType>Microsoft.VisualBasic.OpenMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>File opened for binary access.</summary>
       </Docs>
     </Member>
     <Member MemberName="Input">
@@ -59,7 +74,7 @@
         <ReturnType>Microsoft.VisualBasic.OpenMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>File opened for read access.</summary>
       </Docs>
     </Member>
     <Member MemberName="Output">
@@ -75,7 +90,7 @@
         <ReturnType>Microsoft.VisualBasic.OpenMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>File opened for write access.</summary>
       </Docs>
     </Member>
     <Member MemberName="Random">
@@ -91,7 +106,7 @@
         <ReturnType>Microsoft.VisualBasic.OpenMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>File opened for random access.</summary>
       </Docs>
     </Member>
   </Members>

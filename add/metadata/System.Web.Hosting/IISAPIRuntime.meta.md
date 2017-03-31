@@ -1,24 +1,29 @@
 ---
 uid: System.Web.Hosting.IISAPIRuntime
-internalonly: False
+ms.author: "robmcm"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.IISAPIRuntime.ProcessRequest(System.IntPtr,System.Int32)
-internalonly: False
+ms.author: "robmcm"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.IISAPIRuntime.DoGCCollect
-internalonly: False
+ms.author: "robmcm"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.IISAPIRuntime.StartProcessing
-internalonly: False
+ms.author: "robmcm"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.IISAPIRuntime.StopProcessing
-internalonly: False
+ms.author: "robmcm"
+manager: "wpickett"
 ---

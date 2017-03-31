@@ -17,8 +17,22 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a SOAP binding in a discovery document. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A SOAP binding is similar to an interface for XML Web services. It is useful for versioning and when you look for a XML Web service implementing a specific SOAP binding. For instance, a discovery document might contain optional information about SOAP bindings, which specify the SOAP bindings implemented by referenced Web Servcies. SOAP bindings are specified within the XML document containd within a discovery document by adding a `SOAP` XML element with an XML namespace equal to the <xref:System.Web.Services.Discovery.SoapBinding.Namespace> constant. The <xref:System.Web.Services.Discovery.SoapBinding.Address%2A> property specifies the URL of the XML Web service and the <xref:System.Web.Services.Discovery.SoapBinding.Binding%2A> property specifies the SOAP binding implemented by that XML Web service.  
+  
+   
+  
+## Examples  
+ [!code-cpp[Discovery_SoapBinding1#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Discovery_SoapBinding1/CPP/discovery_soapbinding.cpp#1)]
+ [!code-csharp[Discovery_SoapBinding1#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Discovery_SoapBinding1/CS/discovery_soapbinding.cs#1)]
+ [!code-vb[Discovery_SoapBinding1#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Discovery_SoapBinding1/VB/discovery_soapbinding.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,7 +47,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Discovery.SoapBinding" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,9 +70,18 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the URL of the XML Web service implementing the SOAP binding.</summary>
+        <value>The URL of the XML Web service implementing the SOAP binding. The default value is <see cref="F:System.String.Empty" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[Discovery_SoapBinding1#2](~/samples/snippets/cpp/VS_Snippets_Remoting/Discovery_SoapBinding1/CPP/discovery_soapbinding.cpp#2)]
+ [!code-csharp[Discovery_SoapBinding1#2](~/samples/snippets/csharp/VS_Snippets_Remoting/Discovery_SoapBinding1/CS/discovery_soapbinding.cs#2)]
+ [!code-vb[Discovery_SoapBinding1#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Discovery_SoapBinding1/VB/discovery_soapbinding.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Binding">
@@ -80,9 +103,18 @@
         <ReturnType>System.Xml.XmlQualifiedName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the XML qualified name of the SOAP binding implemented by the XML Web service.</summary>
+        <value>The <see cref="T:System.Xml.XmlQualifiedName" /> of the SOAP binding implemented by the XML Web service.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[Discovery_SoapBinding1#2](~/samples/snippets/cpp/VS_Snippets_Remoting/Discovery_SoapBinding1/CPP/discovery_soapbinding.cpp#2)]
+ [!code-csharp[Discovery_SoapBinding1#2](~/samples/snippets/csharp/VS_Snippets_Remoting/Discovery_SoapBinding1/CS/discovery_soapbinding.cs#2)]
+ [!code-vb[Discovery_SoapBinding1#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Discovery_SoapBinding1/VB/discovery_soapbinding.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Namespace">
@@ -99,8 +131,20 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The XML namespace of the element that specifies a SOAP binding within a discovery document.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ SOAP bindings within a discovery document reside within a `SOAP` XML element, which is a member of the XML namespace specifed by the <xref:System.Web.Services.Discovery.SoapBinding.Namespace> constant.  
+  
+   
+  
+## Examples  
+ Discovery_SoapBinding1#2  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies a legend cell column type.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.LegendCellColumnType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The legend cell column contains a series symbol such as a line, rectangle, or line with marker.</summary>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -43,7 +43,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.LegendCellColumnType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The legend cell column contains text.</summary>
       </Docs>
     </Member>
   </Members>

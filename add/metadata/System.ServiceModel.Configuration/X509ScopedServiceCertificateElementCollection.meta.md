@@ -1,9 +1,13 @@
 ---
 uid: System.ServiceModel.Configuration.X509ScopedServiceCertificateElementCollection
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.X509ScopedServiceCertificateElementCollection.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

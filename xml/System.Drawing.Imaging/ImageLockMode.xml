@@ -10,8 +10,19 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies flags that are passed to the flags parameter of the <see cref="Overload:System.Drawing.Bitmap.LockBits" /> method. The <see cref="Overload:System.Drawing.Bitmap.LockBits" /> method locks a portion of an image so that you can read or write the pixel data.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Drawing.Image.PixelFormat%2A>, <xref:System.Drawing.Image.Height%2A>, <xref:System.Drawing.Image.Width%2A>, and <xref:System.Drawing.Imaging.BitmapData.Scan0%2A> properties; the <xref:System.Drawing.Bitmap.LockBits%2A> and <xref:System.Drawing.Bitmap.UnlockBits%2A> methods; and the <xref:System.Drawing.Imaging.ImageLockMode> enumeration. This example is designed to be used with Windows Forms. To run this example, paste it into a form and handle the form's <xref:System.Windows.Forms.Control.Paint> event by calling the `LockUnlockBitsExample` method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-cpp[System.Drawing.BitmapMembers#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.BitmapMembers/CPP/form1.cpp#5)]
+ [!code-csharp[System.Drawing.BitmapMembers#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.BitmapMembers/CS/form1.cs#5)]
+ [!code-vb[System.Drawing.BitmapMembers#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.BitmapMembers/VB/form1.vb#5)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ReadOnly">
@@ -27,7 +38,7 @@
         <ReturnType>System.Drawing.Imaging.ImageLockMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that a portion of the image is locked for reading.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReadWrite">
@@ -43,7 +54,7 @@
         <ReturnType>System.Drawing.Imaging.ImageLockMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that a portion of the image is locked for reading or writing.</summary>
       </Docs>
     </Member>
     <Member MemberName="UserInputBuffer">
@@ -59,7 +70,7 @@
         <ReturnType>System.Drawing.Imaging.ImageLockMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the buffer used for reading or writing pixel data is allocated by the user. If this flag is set, the <paramref name="flags" /> parameter of the <see cref="Overload:System.Drawing.Bitmap.LockBits" /> method serves as an input parameter (and possibly as an output parameter). If this flag is cleared, then the <paramref name="flags" /> parameter serves only as an output parameter.</summary>
       </Docs>
     </Member>
     <Member MemberName="WriteOnly">
@@ -75,7 +86,7 @@
         <ReturnType>System.Drawing.Imaging.ImageLockMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that a portion of the image is locked for writing.</summary>
       </Docs>
     </Member>
   </Members>

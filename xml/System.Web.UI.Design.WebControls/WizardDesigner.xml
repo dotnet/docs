@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides design-time support in a visual designer for the <see cref="T:System.Web.UI.WebControls.Wizard" /> control.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.WizardDesigner" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <ReturnType>System.ComponentModel.Design.DesignerActionListCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the action list collection for the control designer.</summary>
+        <value>An <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> object that contains the custom <see cref="T:System.ComponentModel.Design.DesignerActionList" /> items for the control designer.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +64,8 @@
         <Parameter Name="regions" Type="System.Web.UI.Design.DesignerRegionCollection" />
       </Parameters>
       <Docs>
-        <param name="regions">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="regions">A <see cref="T:System.Web.UI.Design.DesignerRegionCollection" /> object containing the regions to add.</param>
+        <summary>Adds the provided designer region collection to the current designer regions.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +82,8 @@
         <ReturnType>System.Web.UI.Design.DesignerAutoFormatCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the collection of predefined automatic formatting schemes to display in the **Auto Format** dialog box for the associated control at design time.</summary>
+        <value>A <see cref="T:System.Web.UI.Design.DesignerAutoFormatCollection" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,7 +101,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a navigation template from the active step and saves it in the <see cref="P:System.Web.UI.WebControls.TemplatedWizardStep.CustomNavigationTemplate" /> property of the active step.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,11 +124,11 @@
         <Parameter Name="keys" Type="System.String[]" />
       </Parameters>
       <Docs>
-        <param name="description">To be added.</param>
-        <param name="component">To be added.</param>
-        <param name="templateName">To be added.</param>
-        <param name="keys">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="description">A description of the effect of allowing the transaction to complete, which is used by the design host to give the user an opportunity to cancel the operation.</param>
+        <param name="component">The wizard control associated with this designer.</param>
+        <param name="templateName">The name of the template to convert to.</param>
+        <param name="keys">An array of IDs for the controls that are to be included in the template.</param>
+        <summary>Converts a selection of controls to a template in the associated control.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,7 +146,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates the child controls of the associated control.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -163,8 +163,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a property in the associated wizard control indicating whether to display a sidebar.</summary>
+        <value>
+          <see langword="true" /> to display the sidebar; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -182,8 +183,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the HTML that is used to represent the control at design time.</summary>
+        <returns>The HTML that is used to represent the control at design time.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -203,9 +204,9 @@
         <Parameter Name="regions" Type="System.Web.UI.Design.DesignerRegionCollection" />
       </Parameters>
       <Docs>
-        <param name="regions">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="regions">A collection of control designer regions for the associated control.</param>
+        <summary>Retrieves the HTML markup to display the control and populates the collection with the current control designer regions.</summary>
+        <returns>The design-time HTML markup for the associated control, including all control designer regions.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -225,10 +226,14 @@
         <Parameter Name="region" Type="System.Web.UI.Design.EditableDesignerRegion" />
       </Parameters>
       <Docs>
-        <param name="region">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="region">An <see cref="T:System.Web.UI.Design.EditableDesignerRegion" /> object.</param>
+        <summary>Gets the content for the editable region of the control at design time.</summary>
+        <returns>The persisted content for the region, if the control designer supports editable regions; otherwise, an empty string ("").</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="region" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="region" /> is not an object of type <see cref="T:System.Web.UI.Design.EditableDesignerRegion" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -247,8 +252,8 @@
         <Parameter Name="component" Type="System.ComponentModel.IComponent" />
       </Parameters>
       <Docs>
-        <param name="component">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="component">Use base</param>
+        <summary>Initializes the designer with the specified <see cref="T:System.ComponentModel.IComponent" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -268,8 +273,8 @@
         <Parameter Name="e" Type="System.Web.UI.Design.DesignerRegionMouseEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">Use base</param>
+        <summary>Called by the design host when the user clicks the associated control at design time.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -290,10 +295,22 @@
         <Parameter Name="ce" Type="System.ComponentModel.Design.ComponentChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="sender">To be added.</param>
-        <param name="ce">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="sender">The source of the event.</param>
+        <param name="ce">The event data.</param>
+        <summary>Called when the associated control changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.WizardDesigner.OnComponentChanged%2A> method is called when a property of the associated control is changed. This lets you perform any processing that is required after a property change.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Override the <see cref="M:System.Web.UI.Design.WebControls.WizardDesigner.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)" /> method to provide additional processing before you persist the control and before you refresh the design-time HTML markup.  
+  
+ When you override the <see cref="M:System.Web.UI.Design.WebControls.WizardDesigner.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)" /> method in a derived class, make sure that you call the <see cref="M:System.Web.UI.Design.WebControls.WizardDesigner.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)" /> method for the base class so that registered delegates receive the event.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="PreFilterProperties">
@@ -312,8 +329,8 @@
         <Parameter Name="properties" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="properties">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="properties">An <see cref="T:System.Collections.IDictionary" /> object containing the properties for the class of the component.</param>
+        <summary>Adds properties to or removes properties from the Properties grid in a design host, or provides new design-time settings or properties that correspond to properties on the associated control.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -335,10 +352,10 @@
         <Parameter Name="templateName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="description">To be added.</param>
-        <param name="component">To be added.</param>
-        <param name="templateName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="description">A description of the effect of allowing the transaction to complete, which is used by the design host to give the user an opportunity to cancel the operation.</param>
+        <param name="component">The <see cref="T:System.Web.UI.WebControls.Wizard" /> control associated with this designer.</param>
+        <param name="templateName">The name of the template to reset.</param>
+        <summary>Resets the specified template to its default value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -359,10 +376,14 @@
         <Parameter Name="content" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="region">To be added.</param>
-        <param name="content">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="region">An editable design region contained within the control.</param>
+        <param name="content">The content to assign for the editable design region.</param>
+        <summary>Specifies the content for an editable region of the control at design time.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="region" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="region" /> is not an object of type <see cref="T:System.Web.UI.Design.EditableDesignerRegion" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="TemplateGroups">
@@ -378,8 +399,8 @@
         <ReturnType>System.Web.UI.Design.TemplateGroupCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of template groups, each containing one or more template definitions.</summary>
+        <value>A <see cref="T:System.Web.UI.Design.TemplateGroupCollection" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -396,8 +417,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the design host should use a preview control.</summary>
+        <value>
+          <see langword="true" /> to use a preview control; <see langword="false" /> to use the associated control.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

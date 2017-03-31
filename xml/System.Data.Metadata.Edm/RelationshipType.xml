@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the base class for relationships in a conceptual model.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [Relationships](http://msdn.microsoft.com/en-us/48026c06-5e7f-4a9c-a73c-e4c53583f52b).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="RelationshipEndMembers">
@@ -28,8 +35,8 @@
         <ReturnType>System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;System.Data.Metadata.Edm.RelationshipEndMember&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the list of ends for this relationship type.</summary>
+        <value>A collection of type <see cref="T:System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1" /> that contains the list of Ends for this relationship type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

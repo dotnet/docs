@@ -10,8 +10,23 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the gridline styles for controls that display items in a table structure.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.GridLines> enumeration represents the different gridline styles for controls that display items in a table structure. You can display the horizontal, the vertical, both the horizontal and vertical, or no grid lines.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.GridLines> enumeration to indicate that the gridlines in a <xref:System.Web.UI.WebControls.GridView> control should be hidden.  
+  
+ [!code-csharp[GridViewGridLines#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewGridLines/CS/gridviewgridlinescs.aspx#1)]
+ [!code-vb[GridViewGridLines#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewGridLines/VB/gridviewgridlinesvb.aspx#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Both">
@@ -27,7 +42,7 @@
         <ReturnType>System.Web.UI.WebControls.GridLines</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Both horizontal and vertical gridlines are rendered.</summary>
       </Docs>
     </Member>
     <Member MemberName="Horizontal">
@@ -43,7 +58,7 @@
         <ReturnType>System.Web.UI.WebControls.GridLines</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Only horizontal gridlines are rendered.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -59,7 +74,7 @@
         <ReturnType>System.Web.UI.WebControls.GridLines</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No gridlines are rendered.</summary>
       </Docs>
     </Member>
     <Member MemberName="Vertical">
@@ -75,7 +90,7 @@
         <ReturnType>System.Web.UI.WebControls.GridLines</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Only vertical gridlines are rendered.</summary>
       </Docs>
     </Member>
   </Members>

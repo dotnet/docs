@@ -1,14 +1,20 @@
 ---
 uid: System.Linq.Expressions.DynamicExpressionVisitor
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.Expressions.DynamicExpressionVisitor.VisitDynamic(System.Linq.Expressions.DynamicExpression)
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.Expressions.DynamicExpressionVisitor.#ctor
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---

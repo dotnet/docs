@@ -1,24 +1,41 @@
 ---
 uid: System.ServiceModel.Security.Tokens.ClaimTypeRequirement
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ClaimTypeRequirement.ClaimType
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ClaimTypeRequirement.#ctor(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ClaimTypeRequirement.#ctor(System.String,System.Boolean)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ClaimTypeRequirement.IsOptional
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Security.Tokens.ClaimTypeRequirement.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

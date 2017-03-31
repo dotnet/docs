@@ -1,44 +1,68 @@
 ---
 uid: System.Windows.Media.Animation.EasingByteKeyFrame
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.EasingByteKeyFrame.EasingFunction
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.EasingByteKeyFrame.#ctor(System.Byte,System.Windows.Media.Animation.KeyTime,System.Windows.Media.Animation.IEasingFunction)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.EasingByteKeyFrame.InterpolateValueCore(System.Byte,System.Double)
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.EasingByteKeyFrame.#ctor(System.Byte)
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.EasingByteKeyFrame.#ctor(System.Byte,System.Windows.Media.Animation.KeyTime)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.EasingByteKeyFrame.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.EasingByteKeyFrame.#ctor(System.Byte)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.EasingByteKeyFrame.#ctor(System.Byte,System.Windows.Media.Animation.KeyTime)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.EasingByteKeyFrame.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.EasingByteKeyFrame.EasingFunctionProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.EasingByteKeyFrame.CreateInstanceCore
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

@@ -15,8 +15,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Determines the shapes of connector points on a workflow design surface.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ Connectors are the lines rendered on the workflow design surface between interconnected activity designers. The ends of each line are called connector points, which are where the lines attach to the activity designers that they connect. <xref:System.Workflow.ComponentModel.Design.LineAnchor> provides values that determine the appearance of the connector points.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Arrow">
@@ -32,7 +43,7 @@
         <ReturnType>System.Workflow.ComponentModel.Design.LineAnchor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The connector point is an arrow.</summary>
       </Docs>
     </Member>
     <Member MemberName="ArrowAnchor">
@@ -48,7 +59,7 @@
         <ReturnType>System.Workflow.ComponentModel.Design.LineAnchor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The connector point is an arrow anchor.</summary>
       </Docs>
     </Member>
     <Member MemberName="Diamond">
@@ -64,7 +75,7 @@
         <ReturnType>System.Workflow.ComponentModel.Design.LineAnchor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The connector point is a diamond.</summary>
       </Docs>
     </Member>
     <Member MemberName="DiamondAnchor">
@@ -80,7 +91,7 @@
         <ReturnType>System.Workflow.ComponentModel.Design.LineAnchor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The connector point is an diamond anchor.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -96,7 +107,7 @@
         <ReturnType>System.Workflow.ComponentModel.Design.LineAnchor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>There is no connector point.</summary>
       </Docs>
     </Member>
     <Member MemberName="Rectangle">
@@ -112,7 +123,7 @@
         <ReturnType>System.Workflow.ComponentModel.Design.LineAnchor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The connector point is a rectangle.</summary>
       </Docs>
     </Member>
     <Member MemberName="RectangleAnchor">
@@ -128,7 +139,7 @@
         <ReturnType>System.Workflow.ComponentModel.Design.LineAnchor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The connector point is a rectangle anchor.</summary>
       </Docs>
     </Member>
     <Member MemberName="Round">
@@ -144,7 +155,7 @@
         <ReturnType>System.Workflow.ComponentModel.Design.LineAnchor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The connector point is a circle.</summary>
       </Docs>
     </Member>
     <Member MemberName="RoundAnchor">
@@ -160,7 +171,7 @@
         <ReturnType>System.Workflow.ComponentModel.Design.LineAnchor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The connector point is a circle anchor.</summary>
       </Docs>
     </Member>
     <Member MemberName="RoundedRectangle">
@@ -176,7 +187,7 @@
         <ReturnType>System.Workflow.ComponentModel.Design.LineAnchor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The connector point is a rounded rectangle.</summary>
       </Docs>
     </Member>
     <Member MemberName="RoundedRectangleAnchor">
@@ -192,7 +203,7 @@
         <ReturnType>System.Workflow.ComponentModel.Design.LineAnchor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The connector point is a rounded rectangle anchor.</summary>
       </Docs>
     </Member>
   </Members>

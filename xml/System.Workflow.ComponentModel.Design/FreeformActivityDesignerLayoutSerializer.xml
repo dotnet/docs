@@ -16,8 +16,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Serializes freeform activity designer specific layout information.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +40,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Design.FreeformActivityDesignerLayoutSerializer" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,10 +61,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="serializationManager">To be added.</param>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="serializationManager">The <see cref="T:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager" /> that manages the serialization process.</param>
+        <param name="obj">The <see cref="T:System.Object" /> to search for properties.</param>
+        <summary>Retrieves information about all properties associated with the specified object.</summary>
+        <returns>A <see cref="T:System.Reflection.PropertyInfo" /> array that contains information about the properties associated with <paramref name="obj" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

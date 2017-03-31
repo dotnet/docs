@@ -13,8 +13,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the behavior of a service that acts as a container of types.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ <xref:System.Workflow.ComponentModel.Compiler.ITypeProvider> can be pushed as a <xref:System.Workflow.Runtime.WorkflowRuntime> service to discover data types that are necessary for extensible Application Markup Language (XAML) workflow activation.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="GetType">
@@ -33,9 +44,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">A string that contains the name of the entity.</param>
+        <summary>Gets the <see cref="T:System.Type" /> of the named entity.</summary>
+        <returns>The <see cref="T:System.Type" /> of the named entity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,10 +67,10 @@
         <Parameter Name="throwOnError" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="throwOnError">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">A string that contains the name of the entity.</param>
+        <param name="throwOnError">A value that indicates whether to throw an exception if <c>name</c> is not resolvable.</param>
+        <summary>Gets the <see cref="T:System.Type" /> of the named entity.</summary>
+        <returns>The <see cref="T:System.Type" /> of the named entity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,8 +88,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates and returns an array which contains each <see cref="T:System.Type" /> known to this instance.</summary>
+        <returns>An array which contains each <see cref="T:System.Type" /> known to this instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,8 +106,8 @@
         <ReturnType>System.Reflection.Assembly</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Temporary assembly that is generated during the compilation process to validate the types in the active project that is being compiled.</summary>
+        <value>The local <see cref="T:System.Reflection.Assembly" /> defined by this instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,8 +124,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.Reflection.Assembly&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of all assemblies referenced by the <see cref="T:System.Type" />.</summary>
+        <value>A collection of all assemblies referenced by the <see cref="T:System.Type" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,8 +142,8 @@
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.Object,System.Exception&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an <see cref="T:System.Collections.IDictionary" /> of load error exceptions keyed by the <see cref="T:System.Object" /> causing the <see cref="T:System.Exception" />.</summary>
+        <value>An <see cref="T:System.Collections.IDictionary" /> of load error exceptions keyed by the <see cref="T:System.Object" /> causing the <see cref="T:System.Exception" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,7 +160,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the collection <see cref="P:System.Workflow.ComponentModel.Compiler.TypeProvider.TypeLoadErrors" /> is modified.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -166,7 +177,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the types in the type provider that implements this interface change. This can happen when an assembly or <see cref="T:System.CodeDom.CodeCompileUnit" /> is added or removed from the type provider.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

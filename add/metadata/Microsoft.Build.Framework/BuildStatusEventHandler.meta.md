@@ -1,4 +1,5 @@
 ---
 uid: Microsoft.Build.Framework.BuildStatusEventHandler
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

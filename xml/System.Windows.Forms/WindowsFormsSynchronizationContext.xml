@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a synchronization context for the Windows Forms application model.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.WindowsFormsSynchronizationContext" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,9 +52,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether the <see cref="T:System.Windows.Forms.WindowsFormsSynchronizationContext" /> is installed when a control is created.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Forms.WindowsFormsSynchronizationContext" /> is installed; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.WindowsFormsSynchronizationContext.AutoInstall%2A> property determines whether the <xref:System.Windows.Forms.WindowsFormsSynchronizationContext> is installed when a control is created, or when a message loop is started.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateCopy">
@@ -71,8 +79,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Copies the synchronization context.</summary>
+        <returns>A copy of the synchronization context.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,8 +98,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Releases all resources used by the <see cref="T:System.Windows.Forms.WindowsFormsSynchronizationContext" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call <xref:System.Windows.Forms.WindowsFormsSynchronizationContext.Dispose%2A> when you are finished using the <xref:System.Windows.Forms.WindowsFormsSynchronizationContext>. The <xref:System.Windows.Forms.WindowsFormsSynchronizationContext.Dispose%2A> method leaves the <xref:System.Windows.Forms.WindowsFormsSynchronizationContext> in an unusable state. After calling <xref:System.Windows.Forms.WindowsFormsSynchronizationContext.Dispose%2A>, you must release all references to the <xref:System.Windows.Forms.WindowsFormsSynchronizationContext> so the garbage collector can reclaim the memory that the <xref:System.Windows.Forms.WindowsFormsSynchronizationContext> was occupying. For more information, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+  
+> [!NOTE]
+>  Always call <xref:System.Windows.Forms.WindowsFormsSynchronizationContext.Dispose%2A> before you release your last reference to the <xref:System.Windows.Forms.WindowsFormsSynchronizationContext>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Windows.Forms.WindowsFormsSynchronizationContext> object's `Finalize` method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Post">
@@ -111,10 +129,17 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="d">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="d">The <see cref="T:System.Threading.SendOrPostCallback" /> delegate to call.</param>
+        <param name="state">The object passed to the delegate.</param>
+        <summary>Dispatches an asynchronous message to a synchronization context.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.WindowsFormsSynchronizationContext.Post%2A> method starts an asynchronous request to post a message.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Send">
@@ -134,10 +159,18 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="d">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="d">The <see cref="T:System.Threading.SendOrPostCallback" /> delegate to call.</param>
+        <param name="state">The object passed to the delegate.</param>
+        <summary>Dispatches a synchronous message to a synchronization context</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the destination thread no longer exists or the value of its <xref:System.Threading.Thread.IsAlive%2A?displayProperty=fullName> property is `false`, the <xref:System.Windows.Forms.WindowsFormsSynchronizationContext.Send%2A> method raises an <xref:System.ComponentModel.InvalidAsynchronousStateException>. It is up to the caller to determine what further action to take.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidAsynchronousStateException">The destination thread no longer exists.</exception>
       </Docs>
     </Member>
     <Member MemberName="Uninstall">
@@ -154,8 +187,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Uninstalls the currently installed <see cref="T:System.Windows.Forms.WindowsFormsSynchronizationContext" /> and replaces it with the previously installed context.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the previously installed <xref:System.Windows.Forms.WindowsFormsSynchronizationContext> is `null`, the current context is set to `null`.  
+  
+ If the currently installed synchronization context is not a <xref:System.Windows.Forms.WindowsFormsSynchronizationContext>, this method does nothing.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

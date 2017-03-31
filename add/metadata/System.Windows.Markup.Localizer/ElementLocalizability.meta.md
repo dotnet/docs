@@ -1,24 +1,29 @@
 ---
 uid: System.Windows.Markup.Localizer.ElementLocalizability
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.ElementLocalizability.Attribute
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.ElementLocalizability.FormattingTag
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.ElementLocalizability.#ctor
-internalonly: False
+manager: "martinek"
+---
+
+---
+uid: System.Windows.Markup.Localizer.ElementLocalizability.#ctor
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.ElementLocalizability.#ctor(System.String,System.Windows.LocalizabilityAttribute)
-internalonly: False
+manager: "martinek"
 ---

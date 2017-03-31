@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.WebControls.GridViewCancelEditEventArgs
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.GridViewCancelEditEventArgs.RowIndex
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.GridViewCancelEditEventArgs.#ctor(System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

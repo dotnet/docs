@@ -1,9 +1,13 @@
 ---
 uid: System.Runtime.Remoting.Metadata.SoapParameterAttribute
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.Remoting.Metadata.SoapParameterAttribute.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

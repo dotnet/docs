@@ -1,1 +1,0 @@
-        indent("Type: " + sectionGroup.Type)

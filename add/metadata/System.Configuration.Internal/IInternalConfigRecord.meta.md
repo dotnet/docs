@@ -1,44 +1,53 @@
 ---
 uid: System.Configuration.Internal.IInternalConfigRecord
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.Internal.IInternalConfigRecord.ThrowIfInitErrors
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.Internal.IInternalConfigRecord.Remove
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.Internal.IInternalConfigRecord.HasInitErrors
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.Internal.IInternalConfigRecord.GetSection(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.Internal.IInternalConfigRecord.RefreshSection(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.Internal.IInternalConfigRecord.ConfigPath
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.Internal.IInternalConfigRecord.StreamName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.Internal.IInternalConfigRecord.GetLkgSection(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

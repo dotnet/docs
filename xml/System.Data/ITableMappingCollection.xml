@@ -17,8 +17,49 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains a collection of TableMapping objects, and is implemented by the <see cref="T:System.Data.Common.DataTableMappingCollection" />, which is used in common by .NET Framework data providers.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.ITableMappingCollection> interface allows an inheriting class to implement a TableMapping collection. For more information, see [DataAdapter DataTable and DataColumn Mappings](../Topic/DataAdapter%20DataTable%20and%20DataColumn%20Mappings.md).  
+  
+ An application does not create an instance of the <xref:System.Data.ITableMappingCollection> interface directly, but creates an instance of a class that inherits <xref:System.Data.ITableMappingCollection>.  
+  
+ Classes that inherit <xref:System.Data.ITableMappingCollection> must implement the inherited members, and typically define additional members to add provider-specific functionality. For example, the <xref:System.Data.ITableMappingCollection> interface defines one implementation of the <xref:System.Data.ITableMappingCollection.RemoveAt%2A> method. In turn, the <xref:System.Data.Common.DataTableMappingCollection> class inherits this method, and defines two additional overloads of <xref:System.Data.Common.DataTableMappingCollection.RemoveAt%2A>.  
+  
+   
+  
+## Examples  
+ The following example creates an instance of the derived class, <xref:System.Data.Common.DataTableMapping>, and adds it to a <xref:System.Data.Common.DataTableMappingCollection> collection. It then informs the user that the mapping was added to the collection.  
+  
+ [!code-csharp[Classic WebData DataTableMapping Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTableMapping Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData DataTableMapping Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataTableMapping Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>When you inherit from the <see cref="T:System.Data.ITableMappingCollection" /> interface, you should implement the following constructor:  
+  
+ <list type="table">  
+<listheader>  
+<term> Item  
+  
+ </term>  
+<description> Description  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> PrvTableMappingCollection()  
+  
+ </term>  
+<description> Creates an empty PrvTableMappingCollection class.  
+  
+ </description>  
+</item>  
+</list></para>
+    </block>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -43,10 +84,10 @@
         <Parameter Name="dataSetTableName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="sourceTableName">To be added.</param>
-        <param name="dataSetTableName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="sourceTableName">The case-sensitive name of the source table.</param>
+        <param name="dataSetTableName">The name of the <see cref="T:System.Data.DataSet" /> table.</param>
+        <summary>Adds a table mapping to the collection.</summary>
+        <returns>A reference to the newly-mapped <see cref="T:System.Data.ITableMapping" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,9 +112,10 @@
         <Parameter Name="sourceTableName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="sourceTableName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="sourceTableName">The case-sensitive name of the source table.</param>
+        <summary>Gets a value indicating whether the collection contains a table mapping with the specified source table name.</summary>
+        <returns>
+          <see langword="true" /> if a table mapping with the specified source table name exists, otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,9 +140,9 @@
         <Parameter Name="dataSetTableName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="dataSetTableName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dataSetTableName">The name of the <see langword="DataSet" /> table within the collection.</param>
+        <summary>Gets the TableMapping object with the specified <see cref="T:System.Data.DataSet" /> table name.</summary>
+        <returns>The TableMapping object with the specified <see langword="DataSet" /> table name.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,9 +167,9 @@
         <Parameter Name="sourceTableName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="sourceTableName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="sourceTableName">The case-sensitive name of the source table.</param>
+        <summary>Gets the location of the <see cref="T:System.Data.ITableMapping" /> object within the collection.</summary>
+        <returns>The zero-based location of the <see cref="T:System.Data.ITableMapping" /> object within the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -152,9 +194,9 @@
         <Parameter Name="index" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The <see langword="SourceTable" /> name of the <see cref="T:System.Data.ITableMapping" />.</param>
+        <summary>Gets or sets the instance of <see cref="T:System.Data.ITableMapping" /> with the specified <see cref="P:System.Data.ITableMapping.SourceTable" /> name.</summary>
+        <value>The instance of <see cref="T:System.Data.ITableMapping" /> with the specified <see langword="SourceTable" /> name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -179,8 +221,8 @@
         <Parameter Name="sourceTableName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="sourceTableName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="sourceTableName">The case-sensitive name of the <see langword="SourceTable" />.</param>
+        <summary>Removes the <see cref="T:System.Data.ITableMapping" /> object with the specified <see cref="P:System.Data.ITableMapping.SourceTable" /> name from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

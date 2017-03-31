@@ -1,4 +1,6 @@
 ---
 uid: System.Web.Services.Protocols.InvokeCompletedEventHandler
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

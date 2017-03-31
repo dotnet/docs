@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides ambient property values to top-level controls.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An ambient property is a property on a control that, if not set, is retrieved from the parent control. If the control does not have a parent and the property is not set, the control tries to find the value of the ambient property through the <xref:System.ComponentModel.Component.Site%2A> property. If the control is not sited, the site does not support ambient properties, or the property is not set on the <xref:System.Windows.Forms.AmbientProperties> object, the <xref:System.Windows.Forms.Control> uses its own default values. Some objects derived from the <xref:System.Windows.Forms.Control> class might set the property even if you do not. For example, the <xref:System.Windows.Forms.Form> class always sets the <xref:System.Windows.Forms.Control.ForeColor%2A> and <xref:System.Windows.Forms.Control.BackColor%2A> properties.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.AmbientProperties" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,9 +50,16 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the ambient background color of an object.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value that represents the background color of an object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If there is no ambient background color, the value of the <xref:System.Windows.Forms.Control.BackColor%2A> property is set to <xref:System.Drawing.Color.Empty?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Cursor">
@@ -61,9 +75,16 @@
         <ReturnType>System.Windows.Forms.Cursor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the ambient cursor of an object.</summary>
+        <value>A <see cref="T:System.Windows.Forms.Cursor" /> that represents the cursor of an object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If there is no ambient cursor, the value of the <xref:System.Windows.Forms.Control.Cursor%2A> property is `null`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -79,9 +100,16 @@
         <ReturnType>System.Drawing.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the ambient font of an object.</summary>
+        <value>A <see cref="T:System.Drawing.Font" /> that represents the font used when displaying text within an object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If there is no ambient font, the value of the <xref:System.Windows.Forms.Control.Font%2A> property is `null`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -97,9 +125,16 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the ambient foreground color of an object.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value that represents the foreground color of an object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If there is no ambient foreground color, the value of the <xref:System.Windows.Forms.Control.ForeColor%2A> property is set to <xref:System.Drawing.Color.Empty?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

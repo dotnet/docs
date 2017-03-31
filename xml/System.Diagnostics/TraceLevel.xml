@@ -19,8 +19,50 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies what messages to output for the <see cref="T:System.Diagnostics.Debug" />, <see cref="T:System.Diagnostics.Trace" /> and <see cref="T:System.Diagnostics.TraceSwitch" /> classes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the <xref:System.Diagnostics.TraceSwitch> class.  
+  
+ You must enable tracing or debugging to use a switch. The following syntax is compiler specific. If you use compilers other than C# or Visual Basic, refer to the documentation for your compiler.  
+  
+-   To enable debugging in C#, add the `/d:DEBUG` flag to the compiler command line when you compile your code, or you can add `#define DEBUG` to the top of your file. In Visual Basic, add the `/d:DEBUG=True` flag to the compiler command line.  
+  
+-   To enable tracing in C#, add the `/d:TRACE` flag to the compiler command line when you compile your code, or add `#define TRACE` to the top of your file. In Visual Basic, add the `/d:TRACE=True` flag to the compiler command line.  
+  
+ For more information on instrumenting your application, see <xref:System.Diagnostics.Debug> and <xref:System.Diagnostics.Trace>.  
+  
+> [!NOTE]
+>  In the .NET Framework version 2.0, you can use text to specify the value for a switch. For example, `true` for a <xref:System.Diagnostics.BooleanSwitch> or the text representing an enumeration value such as `Error` for a <xref:System.Diagnostics.TraceSwitch>. The line `<add name="mySwitch" value="Error" />` is equivalent to `<add name="mySwitch" value="1" />`.  
+  
+ In the .NET Framework versions 1.0 and 1.1, trace levels in configuration files are set using the integer value corresponding to the enumeration member, rather than the enumeration member itself, as the following example demonstrates.  
+  
+```  
+<configuration>  
+    <system.diagnostics>  
+       <switches>  
+          <add name="mySwitch" value="4" />  
+       </switches>  
+    </system.diagnostics>  
+</configuration>  
+```  
+  
+ In addition to setting trace levels using the integer value of the enumeration, the .NET Framework version 2.0 trace levels can be set using the text representation of the enumeration value. For example, `Verbose` for a <xref:System.Diagnostics.TraceSwitch>. The line `<add name="mySwitch" value="Verbose" />` is equivalent to `<add name="mySwitch" value="4" />`.  
+  
+ The following table shows the relationship between the <xref:System.Diagnostics.TraceLevel> enumeration members and their corresponding configuration file entries.  
+  
+|Trace Level|Configuration File Value|  
+|-----------------|------------------------------|  
+|Off|0|  
+|Error|1|  
+|Warning|2|  
+|Info|3|  
+|Verbose|4|  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Error">
@@ -45,7 +87,7 @@
         <ReturnType>System.Diagnostics.TraceLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Output error-handling messages.</summary>
       </Docs>
     </Member>
     <Member MemberName="Info">
@@ -70,7 +112,7 @@
         <ReturnType>System.Diagnostics.TraceLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Output informational messages, warnings, and error-handling messages.</summary>
       </Docs>
     </Member>
     <Member MemberName="Off">
@@ -95,7 +137,7 @@
         <ReturnType>System.Diagnostics.TraceLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Output no tracing and debugging messages.</summary>
       </Docs>
     </Member>
     <Member MemberName="Verbose">
@@ -120,7 +162,7 @@
         <ReturnType>System.Diagnostics.TraceLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Output all debugging and tracing messages.</summary>
       </Docs>
     </Member>
     <Member MemberName="Warning">
@@ -145,7 +187,7 @@
         <ReturnType>System.Diagnostics.TraceLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Output warnings and error-handling messages.</summary>
       </Docs>
     </Member>
   </Members>

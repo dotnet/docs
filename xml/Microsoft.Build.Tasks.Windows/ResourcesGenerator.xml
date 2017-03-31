@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Implements the <c>ResourcesGenerator</c> task. Use the <c>ResourcesGenerator</c> element in your project file to create and execute this task. For usage and parameter information, see [ResourcesGenerator](../Topic/ResourcesGenerator%20Task.md).</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Windows.ResourcesGenerator" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,8 +44,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Executes a task.</summary>
+        <returns>
+          <see langword="true" /> if the task executed successfully; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,9 +68,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the path of the output directory.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The path of the output directory. If the path is not an absolute path, it is treated as a path that is relative to the root project directory.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OutputResourcesFile">
@@ -93,8 +101,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the path and name of the generated .resources file.</summary>
+        <value>The path and name of the generated .resources file. If the path is not an absolute path, the .resources file is generated relative to the root project directory.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,8 +124,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets one or more resources to embed in the generated .resources file.</summary>
+        <value>One or more resources to embed in the generated .resources file.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

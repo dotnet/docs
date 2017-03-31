@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.Design.DesignerRegionMouseEventArgs
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DesignerRegionMouseEventArgs.Region
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DesignerRegionMouseEventArgs.#ctor(System.Web.UI.Design.DesignerRegion,System.Drawing.Point)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DesignerRegionMouseEventArgs.Location
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

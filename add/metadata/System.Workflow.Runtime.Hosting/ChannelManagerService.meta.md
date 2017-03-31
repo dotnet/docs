@@ -1,29 +1,48 @@
 ---
 uid: System.Workflow.Runtime.Hosting.ChannelManagerService
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Hosting.ChannelManagerService.#ctor(System.ServiceModel.Channels.ChannelPoolSettings)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Hosting.ChannelManagerService.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Hosting.ChannelManagerService.#ctor(System.Collections.Specialized.NameValueCollection)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Hosting.ChannelManagerService.#ctor(System.ServiceModel.Channels.ChannelPoolSettings,System.Collections.Generic.IList{System.ServiceModel.Description.ServiceEndpoint})
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Hosting.ChannelManagerService.#ctor(System.Collections.Generic.IList{System.ServiceModel.Description.ServiceEndpoint})
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Runtime.Hosting.ChannelManagerService.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

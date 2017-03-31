@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a collision record resulting from a collision between forest trust records.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the collision record from the underlying Active Directory Domain Services service.</summary>
+        <value>A <see cref="T:System.String" /> containing the collision record resulting from a collision between forest trust records.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.ForestTrustCollisionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.DirectoryServices.ActiveDirectory.ForestTrustCollisionType" /> value for the forest trust collision.</summary>
+        <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.ForestTrustCollisionType" /> value indicating the collision type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +64,8 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.DomainCollisionOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.DirectoryServices.ActiveDirectory.DomainCollisionOptions" /> value for the forest trust collision.</summary>
+        <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.DomainCollisionOptions" /> value that provides information about the collision when the <see cref="P:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollision.CollisionType" /> type is <see cref="T:System.DirectoryServices.ActiveDirectory.ForestTrustCollisionType" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +82,8 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.TopLevelNameCollisionOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.DirectoryServices.ActiveDirectory.TopLevelNameCollisionOptions" /> value for the forest trust collision.</summary>
+        <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.TopLevelNameCollisionOptions" /> value that provides information about the collision when the <see cref="P:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollision.CollisionType" /> type is <see cref="T:System.DirectoryServices.ActiveDirectory.ForestTrustCollisionType" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

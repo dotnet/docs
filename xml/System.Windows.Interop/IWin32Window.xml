@@ -8,8 +8,18 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the contract for [!INCLUDE[TLA#tla_win32](~/includes/tlasharptla-win32-md.md)] window handles.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  This interface should not be implemented if the implementing code can run under partial trust. This is enforced by an InheritanceDemand.  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Security.Permissions.UIPermission">as an InheritanceDemand. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
   </Docs>
   <Members>
     <Member MemberName="Handle">
@@ -25,8 +35,8 @@
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the window handle.</summary>
+        <value>The window handle.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

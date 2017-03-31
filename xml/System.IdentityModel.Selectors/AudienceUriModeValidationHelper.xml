@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>A helper class for the <see cref="T:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator" /> class that verifies that the <see cref="P:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AudienceUriMode" /> property is set to a valid value.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,9 +31,10 @@
         <Parameter Name="validationMode" Type="System.IdentityModel.Selectors.AudienceUriMode" />
       </Parameters>
       <Docs>
-        <param name="validationMode">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="validationMode">The <see cref="T:System.IdentityModel.Selectors.AudienceUriMode" /> to verify its validity.</param>
+        <summary>Gets a value that indicates whether the value of the specified <see cref="T:System.IdentityModel.Selectors.AudienceUriMode" /> is valid.</summary>
+        <returns>
+          <see langword="true" /> when the <paramref name="validationMode" /> is <see cref="F:System.IdentityModel.Selectors.AudienceUriMode.Always" />, <see cref="F:System.IdentityModel.Selectors.AudienceUriMode.BearerKeyOnly" />, or <see cref="F:System.IdentityModel.Selectors.AudienceUriMode.Never" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

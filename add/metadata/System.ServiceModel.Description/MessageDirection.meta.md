@@ -1,4 +1,6 @@
 ---
 uid: System.ServiceModel.Description.MessageDirection
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

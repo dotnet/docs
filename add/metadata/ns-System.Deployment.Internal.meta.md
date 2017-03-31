@@ -1,4 +1,6 @@
 ---
 uid: System.Deployment.Internal
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -1,74 +1,101 @@
 ---
 uid: System.Net.PeerToPeer.PeerNameResolver
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.PeerNameResolver.ResolveAsync(System.Net.PeerToPeer.PeerName,System.Net.PeerToPeer.Cloud,System.Int32,System.Object)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.PeerNameResolver.OnResolveCompleted(System.Net.PeerToPeer.ResolveCompletedEventArgs)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.PeerToPeer.PeerNameResolver.ResolveAsync
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.PeerNameResolver.OnResolveProgressChanged(System.Net.PeerToPeer.ResolveProgressChangedEventArgs)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.PeerNameResolver.Resolve(System.Net.PeerToPeer.PeerName,System.Int32)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.PeerNameResolver.ResolveCompleted
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.PeerToPeer.PeerNameResolver.Resolve
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.PeerNameResolver.Resolve(System.Net.PeerToPeer.PeerName)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.PeerNameResolver.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.PeerNameResolver.ResolveAsyncCancel(System.Object)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.PeerNameResolver.Resolve(System.Net.PeerToPeer.PeerName,System.Net.PeerToPeer.Cloud,System.Int32)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.PeerNameResolver.Resolve(System.Net.PeerToPeer.PeerName,System.Net.PeerToPeer.Cloud)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.PeerNameResolver.ResolveProgressChanged
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.PeerNameResolver.ResolveAsync(System.Net.PeerToPeer.PeerName,System.Int32,System.Object)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.PeerNameResolver.ResolveAsync(System.Net.PeerToPeer.PeerName,System.Object)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.PeerNameResolver.ResolveAsync(System.Net.PeerToPeer.PeerName,System.Net.PeerToPeer.Cloud,System.Object)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

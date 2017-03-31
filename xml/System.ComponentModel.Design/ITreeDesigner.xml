@@ -20,8 +20,19 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides support for building a set of related custom designers.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.ITreeDesigner> interface derives from the <xref:System.ComponentModel.Design.IDesigner> interface and provides support for flexibly navigating a hierarchy of related designers. With this interface, a programmer can supply a number of designers for the component, with the appropriate one being determined dynamically.  
+  
+ This interface is a simple extension of its base class, adding just two properties for navigating a tree hierarchy: <xref:System.ComponentModel.Design.ITreeDesigner.Children%2A> and <xref:System.ComponentModel.Design.ITreeDesigner.Parent%2A>.  
+  
+ For an overview of creating design components, see [Extending Design-Time Support](../Topic/Extending%20Design-Time%20Support.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Children">
@@ -42,9 +53,16 @@
         <ReturnType>System.Collections.ICollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of child designers.</summary>
+        <value>An <see cref="T:System.Collections.ICollection" />, containing the collection of <see cref="T:System.ComponentModel.Design.IDesigner" /> child objects of the current designer.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.ITreeDesigner.Children%2A> property will return an empty collection if the <xref:System.ComponentModel.Design.ITreeDesigner> has no child objects.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -65,8 +83,8 @@
         <ReturnType>System.ComponentModel.Design.IDesigner</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the parent designer.</summary>
+        <value>An <see cref="T:System.ComponentModel.Design.IDesigner" /> representing the parent designer, or <see langword="null" /> if there is no parent.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

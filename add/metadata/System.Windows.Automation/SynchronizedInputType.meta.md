@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Automation.SynchronizedInputType
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---

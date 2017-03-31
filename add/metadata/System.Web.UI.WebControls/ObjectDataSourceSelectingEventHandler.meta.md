@@ -1,4 +1,6 @@
 ---
 uid: System.Web.UI.WebControls.ObjectDataSourceSelectingEventHandler
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

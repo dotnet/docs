@@ -1,114 +1,143 @@
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Cursor
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Cursor.IntervalType
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Cursor.#ctor
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Cursor.LineColor
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Cursor.IntervalOffset
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Cursor.Interval
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Cursor.LineWidth
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Cursor.SelectionColor
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Cursor.LineDashStyle
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Cursor.SetSelectionPosition(System.Double,System.Double)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Cursor.AxisType
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Cursor.SelectionStart
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Cursor.SetSelectionPixelPosition(System.Drawing.PointF,System.Drawing.PointF,System.Boolean)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Cursor.Position
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Cursor.Dispose(System.Boolean)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Cursor.SetCursorPixelPosition(System.Drawing.PointF,System.Boolean)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Cursor.SetCursorPosition(System.Double)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Cursor.IntervalOffsetType
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Cursor.IsUserSelectionEnabled
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Cursor.SelectionEnd
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Cursor.IsUserEnabled
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Cursor.AutoScroll
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Cursor.Dispose
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Cursor.LineDashStyle
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Cursor.SetSelectionPosition(System.Double,System.Double)
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Cursor.AxisType
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Cursor.SelectionStart
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Cursor.SetSelectionPixelPosition(System.Drawing.PointF,System.Drawing.PointF,System.Boolean)
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Cursor.Position
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Cursor.Dispose(System.Boolean)
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Cursor.SetCursorPixelPosition(System.Drawing.PointF,System.Boolean)
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Cursor.SetCursorPosition(System.Double)
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Cursor.IntervalOffsetType
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Cursor.IsUserSelectionEnabled
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Cursor.SelectionEnd
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Cursor.IsUserEnabled
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Cursor.AutoScroll
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Cursor.Dispose
+ms.author: "mblythe"
+manager: "mblythe"
 ---

@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.Design.TemplateModeChangedEventArgs
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.TemplateModeChangedEventArgs.NewTemplateGroup
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.TemplateModeChangedEventArgs.#ctor(System.Web.UI.Design.TemplateGroup)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

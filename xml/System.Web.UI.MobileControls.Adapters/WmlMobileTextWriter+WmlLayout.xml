@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains wrapping and alignment information for <see cref="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter" />. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,9 +29,9 @@
         <Parameter Name="wrapping" Type="System.Web.UI.MobileControls.Wrapping" />
       </Parameters>
       <Docs>
-        <param name="alignment">To be added.</param>
-        <param name="wrapping">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="alignment">The alignment of the layout.</param>
+        <param name="wrapping">The wrapping of the layout.</param>
+        <summary>Initializes a new instance of <see cref="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,10 +49,17 @@
         <Parameter Name="currentLayout" Type="System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter+WmlLayout" />
       </Parameters>
       <Docs>
-        <param name="style">To be added.</param>
-        <param name="currentLayout">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="style">The style to use as a base for this layout.</param>
+        <param name="currentLayout">The layout to use as a base for this layout.</param>
+        <summary>Initializes a new instance of <see cref="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor looks first to the specified `style` for the values of its <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout.Align%2A> and <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout.Wrap%2A> properties.  If these properties are not set in the `style`, this constructor uses the corresponding properties from the specified `currentLayout`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Align">
@@ -68,9 +75,16 @@
         <ReturnType>System.Web.UI.MobileControls.Alignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Sets or returns the alignment. The default value is <see cref="F:System.Web.UI.MobileControls.Alignment.NotSet" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>An enumerated value representing the alignment of the layout.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout.Align%2A> property can be set to any <xref:System.Web.UI.MobileControls.Alignment> value.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Compare">
@@ -89,10 +103,18 @@
         <Parameter Name="layout" Type="System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter+WmlLayout" />
       </Parameters>
       <Docs>
-        <param name="layout">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="layout">The layout object to compare.</param>
+        <summary>Compares a <see cref="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout" /> object to the current <see cref="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <returns>
+          <see langword="true" /> if the values for <see cref="P:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout.Wrap" /> and <see cref="P:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout.Align" /> are the same in both layouts; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout.Compare%2A> method is called internally by the <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter> class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Wrap">
@@ -108,9 +130,16 @@
         <ReturnType>System.Web.UI.MobileControls.Wrapping</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Sets or returns the specified wrapping mode for the style. The default value is <see cref="F:System.Web.UI.MobileControls.Wrapping.NotSet" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>The specified wrapping mode for the style.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout.Wrap%2A> property can be set to any <xref:System.Web.UI.MobileControls.Wrapping> value.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

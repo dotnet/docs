@@ -22,9 +22,18 @@
     <ReturnType>System.IntPtr</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="aggregator">To be added.</param>
-    <summary>To be added.</summary>
-    <returns>To be added.</returns>
-    <remarks>To be added.</remarks>
+    <param name="aggregator">A pointer to the managed object's <see langword="IUnknown" /> interface.</param>
+    <summary>Creates a COM object.</summary>
+    <returns>An <see cref="T:System.IntPtr" /> object that represents the <see langword="IUnknown" /> interface of the COM object.</returns>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This delegate is called to create a COM object as an alternative to `CoCreateInstance` when a managed object needs to create a new instance of its unmanaged portion. The `IUnknown` interface of the managed object is passed as a parameter and the delegate should return the `IUnknown` interface of the unmanaged object. Both interfaces are passed as type <xref:System.IntPtr> to avoid marshaling.  
+  
+ Every derived class of <xref:System.Delegate> and <xref:System.MulticastDelegate> has a constructor and an `Invoke` method.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

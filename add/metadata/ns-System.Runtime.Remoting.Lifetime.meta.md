@@ -1,4 +1,4 @@
 ---
 uid: System.Runtime.Remoting.Lifetime
-internalonly: False
+manager: "ghogen"
 ---

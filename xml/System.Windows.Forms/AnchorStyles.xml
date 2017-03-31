@@ -18,8 +18,24 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies how a control anchors to the edges of its container.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a control is anchored to an edge of its container, the distance between the control and the specified edge remains constant when the container resizes. For example, if a control is anchored to the right edge of its container, the distance between the right edge of the control and the right edge of the container remains constant when the container resizes. A control can be anchored to any combination of control edges. If the control is anchored to opposite edges of its container (for example, to the top and bottom), it resizes when the container resizes. If a control has its <xref:System.Windows.Forms.Control.Anchor%2A> property set to None, the control moves half of the distance that the container of the control is resized. For example, if a <xref:System.Windows.Forms.Button> has its <xref:System.Windows.Forms.Control.Anchor%2A> property set to None and the <xref:System.Windows.Forms.Form> that the control is located on is resized by 20 pixels in either direction, the button will be moved 10 pixels in both directions.  
+  
+   
+  
+## Examples  
+ The following example adds a <xref:System.Windows.Forms.Button> to a form and sets some of its common properties. The example anchors the button to the bottom-right corner of the form so it keeps its relative position as the form is resized. Next it sets the <xref:System.Windows.Forms.Control.BackgroundImage%2A> and resizes the button to the same size as the <xref:System.Drawing.Image>. The example then sets the <xref:System.Windows.Forms.Control.TabStop%2A> to `true` and sets the <xref:System.Windows.Forms.Control.TabIndex%2A> property. Lastly, it adds an event handler to handle the <xref:System.Windows.Forms.Control.Click> event of the button. This example assumes you have an <xref:System.Windows.Forms.ImageList> named `imageList1`.  
+  
+ [!code-cpp[Windows.Forms.Control Properties#3](~/samples/snippets/cpp/VS_Snippets_Winforms/Windows.Forms.Control Properties/CPP/controlproperties.cpp#3)]
+ [!code-csharp[Windows.Forms.Control Properties#3](~/samples/snippets/csharp/VS_Snippets_Winforms/Windows.Forms.Control Properties/CS/controlproperties.cs#3)]
+ [!code-vb[Windows.Forms.Control Properties#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Windows.Forms.Control Properties/VB/controlproperties.vb#3)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Bottom">
@@ -35,7 +51,7 @@
         <ReturnType>System.Windows.Forms.AnchorStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The control is anchored to the bottom edge of its container.</summary>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -51,7 +67,7 @@
         <ReturnType>System.Windows.Forms.AnchorStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The control is anchored to the left edge of its container.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -67,7 +83,7 @@
         <ReturnType>System.Windows.Forms.AnchorStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The control is not anchored to any edges of its container.</summary>
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -83,7 +99,7 @@
         <ReturnType>System.Windows.Forms.AnchorStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The control is anchored to the right edge of its container.</summary>
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -99,7 +115,7 @@
         <ReturnType>System.Windows.Forms.AnchorStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The control is anchored to the top edge of its container.</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,24 +1,35 @@
 ---
 uid: System.IdentityModel.Tokens.KerberosTicketHashKeyIdentifierClause
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.KerberosTicketHashKeyIdentifierClause.GetKerberosTicketHash
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.KerberosTicketHashKeyIdentifierClause.ToString
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.KerberosTicketHashKeyIdentifierClause.#ctor
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.KerberosTicketHashKeyIdentifierClause.#ctor(System.Byte[],System.Byte[],System.Int32)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.KerberosTicketHashKeyIdentifierClause.#ctor(System.Byte[])
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

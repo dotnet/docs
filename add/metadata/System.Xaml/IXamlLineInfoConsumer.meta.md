@@ -1,14 +1,14 @@
 ---
 uid: System.Xaml.IXamlLineInfoConsumer
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.IXamlLineInfoConsumer.SetLineInfo(System.Int32,System.Int32)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.IXamlLineInfoConsumer.ShouldProvideLineInfo
-internalonly: False
+manager: "martinek"
 ---

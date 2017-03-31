@@ -1,19 +1,26 @@
 ---
 uid: System.Windows.Automation.Peers.DocumentPageViewAutomationPeer
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DocumentPageViewAutomationPeer.#ctor(System.Windows.Controls.Primitives.DocumentPageView)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DocumentPageViewAutomationPeer.GetChildrenCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DocumentPageViewAutomationPeer.GetAutomationIdCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Data.BindingMode
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

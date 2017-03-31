@@ -17,8 +17,22 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Groups together a set of related instances of the <see cref="T:System.Web.Services.Description.Port" /> class that are associated with an XML Web service. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `Service` class corresponds to the Web Services Description Language (WSDL) `<service>` element enclosed by the `<definitions>` root element. For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
+  
+   
+  
+## Examples  
+ [!code-cpp[ServiceClass#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceClass/CPP/serviceclass.cpp#1)]
+ [!code-csharp[ServiceClass#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceClass/CS/serviceclass.cs#1)]
+ [!code-vb[ServiceClass#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceClass/VB/serviceclass.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,7 +47,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Description.Service" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,9 +70,18 @@
         <ReturnType>System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the collection of extensibility elements associated with the <see cref="T:System.Web.Services.Description.Service" />.</summary>
+        <value>The collection of extensibility elements associated with the <see cref="T:System.Web.Services.Description.Service" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[Service_Class4#2](~/samples/snippets/cpp/VS_Snippets_Remoting/Service_Class4/CPP/service_class.cpp#2)]
+ [!code-csharp[Service_Class4#2](~/samples/snippets/csharp/VS_Snippets_Remoting/Service_Class4/CS/service_class.cs#2)]
+ [!code-vb[Service_Class4#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Service_Class4/VB/service_class.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Ports">
@@ -80,9 +103,18 @@
         <ReturnType>System.Web.Services.Description.PortCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the collection of <see cref="T:System.Web.Services.Description.Port" /> instances contained in the <see cref="T:System.Web.Services.Description.Service" />.</summary>
+        <value>A collection of port instances contained in the <see cref="T:System.Web.Services.Description.Service" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[Service_Class4#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Service_Class4/CPP/service_class.cpp#1)]
+ [!code-csharp[Service_Class4#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Service_Class4/CS/service_class.cs#1)]
+ [!code-vb[Service_Class4#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Service_Class4/VB/service_class.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ServiceDescription">
@@ -99,9 +131,16 @@
         <ReturnType>System.Web.Services.Description.ServiceDescription</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Web.Services.Description.ServiceDescription" /> of which the <see cref="T:System.Web.Services.Description.Service" /> is a member.</summary>
+        <value>A <see cref="T:System.Web.Services.Description.ServiceDescription" /> of which the <see cref="T:System.Web.Services.Description.Service" /> is a member.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ Service_ServiceDescription#1  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

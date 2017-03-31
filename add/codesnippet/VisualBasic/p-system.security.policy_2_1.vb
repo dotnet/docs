@@ -1,1 +1,0 @@
-        Console.WriteLine((ControlChars.Lf & "The default value for the Locked property = " & myEvidence.Locked.ToString()))

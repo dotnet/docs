@@ -11,8 +11,28 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> class identifies a specific directory and the credentials that are used to access the directory.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A directory context must be created before accessing the methods and properties of a System.DirectoryServices.ActiveDirectory directory object such as a domain or forest.  
+  
+ When creating a directory context, the process' current credentials or alternate credentials can be applied to that context by using the appropriate constructor.  These credentials determine the permissions that are in effect when the program accesses directory objects.  Because Active Directory Domain Services objects might be protected against retrieval or modification by non-administrative users, the use of alternate credentials with permission to access the target objects is sometimes necessary for proper program functionality.  
+  
+ The following table contains a list of the target types that are allowed and a description of the format of the target string.  
+  
+|Target type|<xref:System.DirectoryServices.ActiveDirectory.DirectoryContextType> member|Target name format|  
+|-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|  
+|Domain Controller|<xref:System.DirectoryServices.ActiveDirectory.DirectoryContextType>|The DNS name of the domain controller.|  
+|AD LDS Instance|<xref:System.DirectoryServices.ActiveDirectory.DirectoryContextType>|The DNS name of the AD LDS server and the LDAP port number, for example, ad_lds_instance.fabrikam.com:389.|  
+|Domain|<xref:System.DirectoryServices.ActiveDirectory.DirectoryContextType>|The DNS name of the domain, for example, sales.corp.fabrikam.com.|  
+|Forest|<xref:System.DirectoryServices.ActiveDirectory.DirectoryContextType>|The DNS name of the forest, for example, corp.fabrikam.com.|  
+|Application Partition|<xref:System.DirectoryServices.ActiveDirectory.DirectoryContextType>|The DNS name of the application partition.|  
+|AD LDS Configuration Set|<xref:System.DirectoryServices.ActiveDirectory.DirectoryContextType>|One of the keywords that is associated with the service connection point registered by AD LDS instances for the configuration set.|  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,9 +48,13 @@
         <Parameter Name="contextType" Type="System.DirectoryServices.ActiveDirectory.DirectoryContextType" />
       </Parameters>
       <Docs>
-        <param name="contextType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="contextType">One of the <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContextType" /> members that specifies the type of context to create.  For this constructor, the context type must be <see cref="F:System.DirectoryServices.ActiveDirectory.DirectoryContextType.Domain" /> or <see cref="F:System.DirectoryServices.ActiveDirectory.DirectoryContextType.Forest" />.  Other types of directory contexts cannot be created using this constructor because other types require a constructor that includes a parameter specifying the directory or target name.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> class of the specified type that contains the credentials of the current user context.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="contextType" /> is not valid.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">This class does not work on the current platform.</exception>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" /></permission>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -47,10 +71,18 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="contextType">To be added.</param>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="contextType">One of the <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContextType" /> members that specifies the type of context to create.</param>
+        <param name="name">The target of the directory context. This string can take any of the formats defined in the Remarks section of the <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> topic.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> class of the specified type that contains the specified name and the credentials of the current user context.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> is not valid.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
+          <paramref name="contextType" /> is not valid.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">This class does not work on the current platform.</exception>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" /></permission>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -68,11 +100,15 @@
         <Parameter Name="password" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="contextType">To be added.</param>
-        <param name="username">To be added.</param>
-        <param name="password">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="contextType">One of the <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContextType" /> members that specifies the type of context to create. For this constructor, this parameter must be <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContextType" /> or <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContextType" />.</param>
+        <param name="username">The user name to use for access.</param>
+        <param name="password">The password to use for access.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> class of the specified type that contains the specified user name and password.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="contextType" /> is not valid.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">This class does not work on the current platform.</exception>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" /></permission>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -91,12 +127,20 @@
         <Parameter Name="password" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="contextType">To be added.</param>
-        <param name="name">To be added.</param>
-        <param name="username">To be added.</param>
-        <param name="password">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="contextType">One of the <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContextType" /> members that specifies the type of context to create.</param>
+        <param name="name">The target of the directory context. This string can take any of the formats defined in the Remarks section of the <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> topic.</param>
+        <param name="username">The user name to use for access.</param>
+        <param name="password">The password to use for access.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> class of the specified type that contains the specified target, user name, and password.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> is not valid.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
+          <paramref name="contextType" /> is not valid.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">This class does not work on the current platform.</exception>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" /></permission>
       </Docs>
     </Member>
     <Member MemberName="ContextType">
@@ -112,8 +156,8 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.DirectoryContextType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type of the context object.</summary>
+        <value>One of the <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContextType" /> members that specifies the type of context.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -130,8 +174,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the context.</summary>
+        <value>The name of the context.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -148,8 +192,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the user name of the context.</summary>
+        <value>The user name to use for access by this context.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

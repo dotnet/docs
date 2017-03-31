@@ -28,8 +28,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies that a type contains an unmanaged array that might potentially overflow. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Runtime.CompilerServices.UnsafeValueTypeAttribute> class to instruct the common language runtime (CLR) that a type contains an unmanaged array that can potentially overflow.  When this attribute is encountered, the CLR inserts runtime checks to prevent the array from overflowing and to prevent buffer overrun attacks.  
+  
+ This class is used by the Microsoft Visual C++ and the Microsoft Visual C# compilers.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,7 +64,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.CompilerServices.UnsafeValueTypeAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

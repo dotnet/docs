@@ -16,8 +16,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Use <see cref="T:System.Runtime.InteropServices.ComTypes.DESCKIND" /> instead.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the `DESCKIND` enumeration, see the MSDN Library.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="DESCKIND_FUNCDESC">
@@ -34,7 +41,7 @@
         <ReturnType>System.Runtime.InteropServices.DESCKIND</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that a <see cref="T:System.Runtime.InteropServices.FUNCDESC" /> was returned.</summary>
       </Docs>
     </Member>
     <Member MemberName="DESCKIND_IMPLICITAPPOBJ">
@@ -51,7 +58,7 @@
         <ReturnType>System.Runtime.InteropServices.DESCKIND</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that an <see langword="IMPLICITAPPOBJ" /> was returned.</summary>
       </Docs>
     </Member>
     <Member MemberName="DESCKIND_MAX">
@@ -68,7 +75,7 @@
         <ReturnType>System.Runtime.InteropServices.DESCKIND</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates an end of enumeration marker.</summary>
       </Docs>
     </Member>
     <Member MemberName="DESCKIND_NONE">
@@ -85,7 +92,7 @@
         <ReturnType>System.Runtime.InteropServices.DESCKIND</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that no match was found.</summary>
       </Docs>
     </Member>
     <Member MemberName="DESCKIND_TYPECOMP">
@@ -102,7 +109,7 @@
         <ReturnType>System.Runtime.InteropServices.DESCKIND</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that a <see langword="TYPECOMP" /> was returned.</summary>
       </Docs>
     </Member>
     <Member MemberName="DESCKIND_VARDESC">
@@ -119,7 +126,7 @@
         <ReturnType>System.Runtime.InteropServices.DESCKIND</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that a <see langword="VARDESC" /> was returned.</summary>
       </Docs>
     </Member>
   </Members>

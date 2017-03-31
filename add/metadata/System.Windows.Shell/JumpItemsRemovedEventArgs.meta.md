@@ -1,19 +1,34 @@
 ---
 uid: System.Windows.Shell.JumpItemsRemovedEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Shell.JumpItemsRemovedEventArgs.#ctor(System.Collections.Generic.IList{System.Windows.Shell.JumpItem})
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Shell.JumpItemsRemovedEventArgs.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Shell.JumpItemsRemovedEventArgs.RemovedItems
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Shell.JumpItemsRemovedEventArgs.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

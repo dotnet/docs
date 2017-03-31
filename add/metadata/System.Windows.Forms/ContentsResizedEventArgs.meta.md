@@ -1,14 +1,19 @@
 ---
 uid: System.Windows.Forms.ContentsResizedEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ContentsResizedEventArgs.#ctor(System.Drawing.Rectangle)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ContentsResizedEventArgs.NewRectangle
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

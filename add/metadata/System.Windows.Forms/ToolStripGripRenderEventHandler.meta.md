@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Forms.ToolStripGripRenderEventHandler
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

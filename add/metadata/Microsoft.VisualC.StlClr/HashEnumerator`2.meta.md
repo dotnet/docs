@@ -1,34 +1,47 @@
 ---
 uid: Microsoft.VisualC.StlClr.HashEnumerator`2
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.StlClr.HashEnumerator`2.Dispose
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
+---
+
+---
+uid: Microsoft.VisualC.StlClr.HashEnumerator`2.Dispose
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.StlClr.HashEnumerator`2.Reset
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.StlClr.HashEnumerator`2.MoveNext
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.StlClr.HashEnumerator`2.Current
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.StlClr.HashEnumerator`2.#ctor(Microsoft.VisualC.StlClr.Generic.INode{`1})
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.StlClr.HashEnumerator`2.Dispose(System.Boolean)
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---

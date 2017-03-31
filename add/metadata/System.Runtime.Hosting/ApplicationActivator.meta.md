@@ -1,24 +1,41 @@
 ---
 uid: System.Runtime.Hosting.ApplicationActivator
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.Hosting.ApplicationActivator.#ctor
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.Hosting.ApplicationActivator.CreateInstance(System.ActivationContext)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.Hosting.ApplicationActivator.CreateInstanceHelper(System.AppDomainSetup)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.Hosting.ApplicationActivator.CreateInstance
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.Hosting.ApplicationActivator.CreateInstance(System.ActivationContext,System.String[])
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

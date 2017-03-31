@@ -1,29 +1,35 @@
 ---
 uid: System.Web.Configuration.SystemWebCachingSectionGroup
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.SystemWebCachingSectionGroup.SqlCacheDependency
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.SystemWebCachingSectionGroup.OutputCache
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.SystemWebCachingSectionGroup.OutputCacheSettings
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.SystemWebCachingSectionGroup.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.SystemWebCachingSectionGroup.Cache
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

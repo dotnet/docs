@@ -15,8 +15,21 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the type of XHTML markup for an <see cref="T:System.Web.UI.XhtmlTextWriter" /> class to render to the page or control. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you specify one of the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.Doctype> enumeration values as the parameter in a <xref:System.Web.UI.XhtmlTextWriter.SetDocType%2A> method call, the value forces the text writer to adhere to the restrictions of that XHTML document type.  
+  
+ XHTML Basic is the mobile version of XHTML 1.0 and supports the minimum number of XHTML modules to be an XHTML document. It is designed for clients that do not support the full set of XHTML features, such as mobile phones, personal digital assistants (PDAs), pagers, and set-top boxes. With XHTML Basic, a document can be presented on the maximum number of clients, including a wide range of mobile phones with different display formats and presentation capabilities.  
+  
+ XHTML Mobile Profile adds several additional elements and attributes to XHTML Basic from the full XHTML 1.0, including additional presentation elements and support for internal style sheets.  
+  
+ Wireless Markup Language (WML) 2.0 expands on both XHTML Basic and XHTML Mobile Profile by providing support for cascading style sheets.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="NotSet">
@@ -32,7 +45,7 @@
         <ReturnType>System.Web.UI.MobileControls.Adapters.XhtmlAdapters.Doctype</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Not determined.</summary>
       </Docs>
     </Member>
     <Member MemberName="Wml20">
@@ -48,7 +61,7 @@
         <ReturnType>System.Web.UI.MobileControls.Adapters.XhtmlAdapters.Doctype</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>WML 2.0 document.</summary>
       </Docs>
     </Member>
     <Member MemberName="XhtmlBasic">
@@ -64,7 +77,7 @@
         <ReturnType>System.Web.UI.MobileControls.Adapters.XhtmlAdapters.Doctype</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Basic XHTML format. This format does not support frames and styles.</summary>
       </Docs>
     </Member>
     <Member MemberName="XhtmlMobileProfile">
@@ -80,7 +93,7 @@
         <ReturnType>System.Web.UI.MobileControls.Adapters.XhtmlAdapters.Doctype</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>XHTML Mobile Profile format.</summary>
       </Docs>
     </Member>
   </Members>

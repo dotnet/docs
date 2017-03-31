@@ -31,8 +31,40 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a Windows <see cref="T:System.Windows.Forms.CheckBox" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use a <xref:System.Windows.Forms.CheckBox> to give the user an option, such as true/false or yes/no. The <xref:System.Windows.Forms.CheckBox> control can display an image or text or both.  
+  
+ <xref:System.Windows.Forms.CheckBox> and <xref:System.Windows.Forms.RadioButton> controls have a similar function: they allow the user to choose from a list of options. <xref:System.Windows.Forms.CheckBox> controls let the user pick a combination of options. In contrast, <xref:System.Windows.Forms.RadioButton> controls allow a user to choose from mutually exclusive options.  
+  
+ The <xref:System.Windows.Forms.CheckBox.Appearance%2A> property determines whether the <xref:System.Windows.Forms.CheckBox> appears as a typical <xref:System.Windows.Forms.CheckBox> or as a button.  
+  
+ The <xref:System.Windows.Forms.CheckBox.ThreeState%2A> property determines whether the control supports two or three states. Use the <xref:System.Windows.Forms.CheckBox.Checked%2A> property to get or set the value of a two-state <xref:System.Windows.Forms.CheckBox> control and use the <xref:System.Windows.Forms.CheckBox.CheckState%2A> property to get or set the value of a three-state <xref:System.Windows.Forms.CheckBox> control.  
+  
+> [!NOTE]
+>  If the <xref:System.Windows.Forms.CheckBox.ThreeState%2A> property is set to `true`, the <xref:System.Windows.Forms.CheckBox.Checked%2A> property will return `true` for either a checked or indeterminate state.  
+  
+ The <xref:System.Windows.Forms.ButtonBase.FlatStyle%2A> property determines the style and appearance of the control. If the <xref:System.Windows.Forms.ButtonBase.FlatStyle%2A> property is set to <xref:System.Windows.Forms.FlatStyle?displayProperty=fullName>, the user's operating system determines the appearance of the control.  
+  
+> [!NOTE]
+>  When the <xref:System.Windows.Forms.ButtonBase.FlatStyle%2A> property is set to <xref:System.Windows.Forms.FlatStyle?displayProperty=fullName>, the <xref:System.Windows.Forms.CheckBox.CheckAlign%2A> property is ignored and the control is displayed using the <xref:System.Drawing.ContentAlignment?displayProperty=fullName> or <xref:System.Drawing.ContentAlignment?displayProperty=fullName> alignment. If the <xref:System.Windows.Forms.CheckBox.CheckAlign%2A> property is set to one of the right alignments, the control is displayed using the <xref:System.Drawing.ContentAlignment?displayProperty=fullName> alignment; otherwise, it is displayed using the <xref:System.Drawing.ContentAlignment?displayProperty=fullName> alignment.  
+  
+ The following describes an indeterminate state: You have a <xref:System.Windows.Forms.CheckBox> that determines if the selected text in a <xref:System.Windows.Forms.RichTextBox> is bold. When you select text you can click the <xref:System.Windows.Forms.CheckBox> to bold the selection. Likewise, when you select some text, the <xref:System.Windows.Forms.CheckBox> displays whether the selected text is bold. If your selected text contains text that is bold and normal, the <xref:System.Windows.Forms.CheckBox> will have an indeterminate state.  
+  
+   
+  
+## Examples  
+ The following code example creates and initializes a <xref:System.Windows.Forms.CheckBox>, gives it the appearance of a toggle button, sets <xref:System.Windows.Forms.CheckBox.AutoCheck%2A> to `false`, and adds it to a <xref:System.Windows.Forms.Form>.  
+  
+ [!code-cpp[Classic CheckBox.CheckBox Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic CheckBox.CheckBox Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic CheckBox.CheckBox Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic CheckBox.CheckBox Example/CS/source.cs#1)]
+ [!code-vb[Classic CheckBox.CheckBox Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic CheckBox.CheckBox Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,8 +78,24 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.CheckBox" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, when a new <xref:System.Windows.Forms.CheckBox> is instantiated, <xref:System.Windows.Forms.CheckBox.AutoCheck%2A> is set to `true`, <xref:System.Windows.Forms.CheckBox.Checked%2A> is set to `false`, and <xref:System.Windows.Forms.CheckBox.Appearance%2A> is set to <xref:System.Windows.Forms.Appearance>.  
+  
+   
+  
+## Examples  
+ The following code example creates and initializes a <xref:System.Windows.Forms.CheckBox>, gives it the appearance of a toggle button, sets <xref:System.Windows.Forms.CheckBox.AutoCheck%2A> to `false`, and adds it to a <xref:System.Windows.Forms.Form>.  
+  
+ [!code-cpp[Classic CheckBox.CheckBox Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic CheckBox.CheckBox Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic CheckBox.CheckBox Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic CheckBox.CheckBox Example/CS/source.cs#1)]
+ [!code-vb[Classic CheckBox.CheckBox Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic CheckBox.CheckBox Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Appearance">
@@ -71,9 +119,26 @@
         <ReturnType>System.Windows.Forms.Appearance</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the value that determines the appearance of a <see cref="T:System.Windows.Forms.CheckBox" /> control.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.Appearance" /> values. The default value is <see cref="F:System.Windows.Forms.Appearance.Normal" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.Windows.Forms.CheckBox.Appearance%2A> value is set to <xref:System.Windows.Forms.Appearance>, the <xref:System.Windows.Forms.CheckBox> has a typical appearance. If the value is set to `Button`, the <xref:System.Windows.Forms.CheckBox> appears like a toggle button, which can be toggled to an up or down state.  
+  
+   
+  
+## Examples  
+ The following code example creates and initializes a <xref:System.Windows.Forms.CheckBox>, gives it the appearance of a toggle button, sets <xref:System.Windows.Forms.CheckBox.AutoCheck%2A> to `false`, and adds it to a <xref:System.Windows.Forms.Form>.  
+  
+ [!code-cpp[Classic CheckBox.CheckBox Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic CheckBox.CheckBox Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic CheckBox.CheckBox Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic CheckBox.CheckBox Example/CS/source.cs#1)]
+ [!code-vb[Classic CheckBox.CheckBox Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic CheckBox.CheckBox Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value assigned is not one of the <see cref="T:System.Windows.Forms.Appearance" /> values.</exception>
       </Docs>
     </Member>
     <Member MemberName="AppearanceChanged">
@@ -89,8 +154,25 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.CheckBox.Appearance" /> property changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.CheckBox.AppearanceChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.CheckBox> named `CheckBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.CheckBox.AppearanceChanged> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#139](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#139)]
+ [!code-vb[System.Windows.Forms.EventExamples#139](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#139)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoCheck">
@@ -111,9 +193,26 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or set a value indicating whether the <see cref="P:System.Windows.Forms.CheckBox.Checked" /> or <see cref="P:System.Windows.Forms.CheckBox.CheckState" /> values and the <see cref="T:System.Windows.Forms.CheckBox" />'s appearance are automatically changed when the <see cref="T:System.Windows.Forms.CheckBox" /> is clicked.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="P:System.Windows.Forms.CheckBox.Checked" /> value or <see cref="P:System.Windows.Forms.CheckBox.CheckState" /> value and the appearance of the control are automatically changed on the <see cref="E:System.Windows.Forms.Control.Click" /> event; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.Windows.Forms.CheckBox.AutoCheck%2A> is set to false, you will need to add code to update the <xref:System.Windows.Forms.CheckBox.Checked%2A> or <xref:System.Windows.Forms.CheckBox.CheckState%2A> values in the <xref:System.Windows.Forms.Control.Click> event handler.  
+  
+   
+  
+## Examples  
+ The following code example creates and initializes a <xref:System.Windows.Forms.CheckBox>, gives it the appearance of a toggle button, sets <xref:System.Windows.Forms.CheckBox.AutoCheck%2A> to `false`, and adds it to a <xref:System.Windows.Forms.Form>.  
+  
+ [!code-cpp[Classic CheckBox.CheckBox Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic CheckBox.CheckBox Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic CheckBox.CheckBox Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic CheckBox.CheckBox Example/CS/source.cs#1)]
+ [!code-vb[Classic CheckBox.CheckBox Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic CheckBox.CheckBox Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CheckAlign">
@@ -140,9 +239,21 @@
         <ReturnType>System.Drawing.ContentAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the horizontal and vertical alignment of the check mark on a <see cref="T:System.Windows.Forms.CheckBox" /> control.</summary>
+        <value>One of the <see cref="T:System.Drawing.ContentAlignment" /> values. The default value is <see langword="MiddleLeft" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example displays the values of three properties in a label. The <xref:System.Windows.Forms.CheckBox.ThreeState%2A> property alternates between `true` and `false` with alternating clicks of the control and the <xref:System.Windows.Forms.CheckBox.CheckAlign%2A> alternates between the `MiddleRight` and `MiddleLeft` values of <xref:System.Drawing.ContentAlignment>. This example shows how the property values change as the <xref:System.Windows.Forms.CheckBox.ThreeState%2A> property changes and the control is checked. This example requires that a <xref:System.Windows.Forms.CheckBox>, <xref:System.Windows.Forms.Label> and <xref:System.Windows.Forms.Button> have all been instantiated on a form and that the label is large enough to display three lines of text, as well as a reference to the <xref:System.Drawing?displayProperty=fullName> namespace. This code should be called in the <xref:System.Windows.Forms.Control.Click> event handler of the control.  
+  
+ [!code-cpp[Classic CheckBox.CheckAlign Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic CheckBox.CheckAlign Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic CheckBox.CheckAlign Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic CheckBox.CheckAlign Example/CS/source.cs#1)]
+ [!code-vb[Classic CheckBox.CheckAlign Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic CheckBox.CheckAlign Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value assigned is not one of the <see cref="T:System.Drawing.ContentAlignment" /> enumeration values.</exception>
       </Docs>
     </Member>
     <Member MemberName="Checked">
@@ -172,9 +283,33 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or set a value indicating whether the <see cref="T:System.Windows.Forms.CheckBox" /> is in the checked state.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Forms.CheckBox" /> is in the checked state; otherwise, <see langword="false" />. The default value is <see langword="false" />.  
+  
+ <block subset="none" type="note">  
+<para>  
+ If the <see cref="P:System.Windows.Forms.CheckBox.ThreeState" /> property is set to <see langword="true" />, the <see cref="P:System.Windows.Forms.CheckBox.Checked" /> property will return <see langword="true" /> for either a <see langword="Checked" /> or <see langword="Indeterminate" /><see cref="P:System.Windows.Forms.CheckBox.CheckState" />.  
+  
+</para>  
+</block></value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the value is `true`, the <xref:System.Windows.Forms.CheckBox> portion of the control displays a check mark. If the <xref:System.Windows.Forms.CheckBox.Appearance%2A> property is set to `Button`, the control will appear sunken when <xref:System.Windows.Forms.CheckBox.Checked%2A> is `true` and raised like a standard button when `false`.  
+  
+   
+  
+## Examples  
+ The following code example displays the values of three properties in a label. The <xref:System.Windows.Forms.CheckBox.ThreeState%2A> property alternates between `true` and `false` with alternating clicks of the control and the <xref:System.Windows.Forms.CheckBox.CheckAlign%2A> alternates between a <xref:System.Drawing.ContentAlignment> value of `MiddleRight` and `MiddleLeft`. This example shows how the property values change as the <xref:System.Windows.Forms.CheckBox.ThreeState%2A> property changes and the control is checked. This example requires that a <xref:System.Windows.Forms.CheckBox>, <xref:System.Windows.Forms.Label> and <xref:System.Windows.Forms.Button> have all been instantiated on a form and that the label is large enough to display three lines of text, as well as a reference to the <xref:System.Drawing?displayProperty=fullName> namespace. This code should be called in the <xref:System.Windows.Forms.Control.Click> event handler of the control.  
+  
+ [!code-cpp[Classic CheckBox.CheckAlign Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic CheckBox.CheckAlign Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic CheckBox.CheckAlign Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic CheckBox.CheckAlign Example/CS/source.cs#1)]
+ [!code-vb[Classic CheckBox.CheckAlign Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic CheckBox.CheckAlign Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CheckedChanged">
@@ -190,8 +325,25 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.CheckBox.Checked" /> property changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.CheckBox.CheckedChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.CheckBox> named `CheckBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.CheckBox.CheckedChanged> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#140](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#140)]
+ [!code-vb[System.Windows.Forms.EventExamples#140](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#140)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CheckState">
@@ -218,9 +370,34 @@
         <ReturnType>System.Windows.Forms.CheckState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the state of the <see cref="T:System.Windows.Forms.CheckBox" />.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.CheckState" /> enumeration values. The default value is <see langword="Unchecked" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Windows.Forms.CheckBox.ThreeState%2A> property is set to `false`, the <xref:System.Windows.Forms.CheckBox.CheckState%2A> property value can only be set to `CheckState.Indeterminate` in code and not by user interaction.  
+  
+ The following table describes the <xref:System.Windows.Forms.Appearance?displayProperty=fullName> of the <xref:System.Windows.Forms.CheckBox> control in its different states for the `Normal` and `Button` style control <xref:System.Windows.Forms.CheckBox.Appearance%2A?displayProperty=fullName>.  
+  
+|CheckState|Appearance.Normal|Appearance.Button|  
+|----------------|-----------------------|-----------------------|  
+|`Checked`|The <xref:System.Windows.Forms.CheckBox> displays a check mark.|The control appears sunken.|  
+|`Unchecked`|The <xref:System.Windows.Forms.CheckBox> is empty.|The control appears raised.|  
+|`Indeterminate`|The <xref:System.Windows.Forms.CheckBox> displays a check mark and is shaded.|The control appears flat.|  
+  
+   
+  
+## Examples  
+ The following code example displays the values of three properties in a label. The <xref:System.Windows.Forms.CheckBox.ThreeState%2A> property alternates between `true` and `false` with alternating clicks of the control and the <xref:System.Windows.Forms.CheckBox.CheckAlign%2A> alternates between the `MiddleRight` and `MiddleLeft` values of <xref:System.Drawing.ContentAlignment?displayProperty=fullName>. This example shows how the property values change as the <xref:System.Windows.Forms.CheckBox.ThreeState%2A> property changes and the control is checked. This example requires that a <xref:System.Windows.Forms.CheckBox>, <xref:System.Windows.Forms.Label> and <xref:System.Windows.Forms.Button> have all been instantiated on a form and that the label is large enough to display three lines of text, as well as a reference to the <xref:System.Drawing?displayProperty=fullName> namespace. This code should be called in the <xref:System.Windows.Forms.Control.Click> event handler of the control.  
+  
+ [!code-cpp[Classic CheckBox.CheckAlign Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic CheckBox.CheckAlign Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic CheckBox.CheckAlign Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic CheckBox.CheckAlign Example/CS/source.cs#1)]
+ [!code-vb[Classic CheckBox.CheckAlign Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic CheckBox.CheckAlign Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value assigned is not one of the <see cref="T:System.Windows.Forms.CheckState" /> enumeration values.</exception>
       </Docs>
     </Member>
     <Member MemberName="CheckStateChanged">
@@ -236,8 +413,25 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.CheckBox.CheckState" /> property changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.CheckBox.CheckStateChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.CheckBox> named `CheckBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.CheckBox.CheckStateChanged> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#141](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#141)]
+ [!code-vb[System.Windows.Forms.EventExamples#141](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#141)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateAccessibilityInstance">
@@ -254,9 +448,22 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a new accessibility object for the <see cref="T:System.Windows.Forms.CheckBox" /> control.</summary>
+        <returns>A new <see cref="T:System.Windows.Forms.CheckBox.CheckBoxAccessibleObject" /> for the control.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you do not explicitly call the <xref:System.Windows.Forms.CheckBox.CreateAccessibilityInstance%2A> method, it will be called when the <xref:System.Windows.Forms.Control.AccessibilityObject%2A> property is referenced.  
+  
+> [!NOTE]
+>  To get or set the <xref:System.Windows.Forms.Control.AccessibilityObject%2A> property, you must add a reference to the `Accessibility` assembly installed with the .NET Framework.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.CheckBox.CreateAccessibilityInstance" /> in a derived class, you should not call the base class's <see cref="M:System.Windows.Forms.CheckBox.CreateAccessibilityInstance" /> method.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="CreateParams">
@@ -272,9 +479,21 @@
         <ReturnType>System.Windows.Forms.CreateParams</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the required creation parameters when the control handle is created.</summary>
+        <value>A <see cref="T:System.Windows.Forms.CreateParams" /> that contains the required creation parameters when the handle to the control is created.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example extends the <xref:System.Windows.Forms.Control.CreateParams%2A> property of a <xref:System.Windows.Forms.Button> derived class. The <xref:System.Windows.Forms.CreateParams.Style%2A?displayProperty=fullName> property is changed, which causes the button to display an <xref:System.Drawing.Icon> rather than an <xref:System.Drawing.Image>. This example requires that you have a class that inherits from the <xref:System.Windows.Forms.Button> class.  
+  
+ [!code-cpp[CreateParams#3](~/samples/snippets/cpp/VS_Snippets_Winforms/CreateParams/CPP/createparams.cpp#3)]
+ [!code-csharp[CreateParams#3](~/samples/snippets/csharp/VS_Snippets_Winforms/CreateParams/CS/createparams.cs#3)]
+ [!code-vb[CreateParams#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/CreateParams/VB/createparams.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
       </Docs>
     </Member>
     <Member MemberName="DefaultSize">
@@ -290,8 +509,8 @@
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the default size of the control.</summary>
+        <value>The default size.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -316,8 +535,17 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the user double-clicks the <see cref="T:System.Windows.Forms.CheckBox" /> control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the <xref:System.Windows.Forms.ControlStyles> and <xref:System.Windows.Forms.ControlStyles> enumerations are set to false for the <xref:System.Windows.Forms.CheckBox> control, and the <xref:System.Windows.Forms.CheckBox.DoubleClick> event is not raised.  
+  
+ This event is not relevant to this class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseDoubleClick">
@@ -341,8 +569,17 @@
         <ReturnType>System.Windows.Forms.MouseEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the user double-clicks the <see cref="T:System.Windows.Forms.CheckBox" /> control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the <xref:System.Windows.Forms.ControlStyles?displayProperty=fullName> and <xref:System.Windows.Forms.ControlStyles?displayProperty=fullName> style bits are set to `false` for the <xref:System.Windows.Forms.CheckBox> control, and the <xref:System.Windows.Forms.CheckBox.MouseDoubleClick> event is not raised.  
+  
+ This event is not relevant to this class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnAppearanceChanged">
@@ -361,9 +598,21 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.CheckBox.AppearanceChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
+  
+ The <xref:System.Windows.Forms.CheckBox.OnAppearanceChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.CheckBox.OnAppearanceChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.CheckBox.OnAppearanceChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="OnCheckedChanged">
@@ -382,9 +631,21 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.CheckBox.CheckedChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
+  
+ The <xref:System.Windows.Forms.CheckBox.OnCheckedChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.CheckBox.OnCheckedChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.CheckBox.OnCheckedChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="OnCheckStateChanged">
@@ -403,9 +664,21 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.CheckBox.CheckStateChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
+  
+ The <xref:System.Windows.Forms.CheckBox.OnCheckStateChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.CheckBox.OnCheckStateChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.CheckBox.OnCheckStateChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="OnClick">
@@ -424,9 +697,23 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Click" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.CheckBox.OnClick%2A> method changes the <xref:System.Windows.Forms.CheckBox.CheckState%2A> property. If the <xref:System.Windows.Forms.CheckBox.ThreeState%2A> property is set to `true`, subsequent clicks of the <xref:System.Windows.Forms.CheckBox> will result in <xref:System.Windows.Forms.CheckBox.OnClick%2A> cycling through all the values of the <xref:System.Windows.Forms.CheckBox.CheckState%2A> enumeration. Otherwise, <xref:System.Windows.Forms.CheckBox.OnClick%2A> switches between <xref:System.Windows.Forms.CheckState> and <xref:System.Windows.Forms.CheckState>.  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
+  
+ The <xref:System.Windows.Forms.CheckBox.OnClick%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.CheckBox.OnClick(System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.CheckBox.OnClick(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="OnHandleCreated">
@@ -445,8 +732,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.HandleCreated" /> event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -466,8 +753,8 @@
         <Parameter Name="e" Type="System.Windows.Forms.KeyEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">A <see cref="T:System.Windows.Forms.KeyEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="M:System.Windows.Forms.ButtonBase.OnKeyUp(System.Windows.Forms.KeyEventArgs)" /> event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -487,8 +774,8 @@
         <Parameter Name="mevent" Type="System.Windows.Forms.MouseEventArgs" />
       </Parameters>
       <Docs>
-        <param name="mevent">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="mevent">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains the event data.</param>
+        <summary>Raises the OnMouseUp event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -508,10 +795,37 @@
         <Parameter Name="charCode" Type="System.Char" />
       </Parameters>
       <Docs>
-        <param name="charCode">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="charCode">The character to process.</param>
+        <summary>Processes a mnemonic character.</summary>
+        <returns>
+          <see langword="true" /> if the character was processed as a mnemonic by the control; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called to give a control the opportunity to process a mnemonic character. The method should determine whether the control is in a state to process mnemonics and if whether the given character represents a mnemonic. If so, the method should perform the action associated with the mnemonic and return `true`. If not, the method should return `false`. Implementations of this method often use the <xref:System.Windows.Forms.Control.IsMnemonic%2A> method to determine whether the given character matches a mnemonic in the control's text.  
+  
+ For example:  
+  
+```csharp  
+if (CanSelect && IsMnemonic(charCode, MyControl.Text) {  
+    // Perform action associated with mnemonic.  
+    }  
+```  
+  
+ This default implementation of the <xref:System.Windows.Forms.Control.ProcessMnemonic%2A> method simply returns `false` to indicate that the control has no mnemonic.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates an extension of the button class that overrides the <xref:System.Windows.Forms.Control.ProcessMnemonic%2A> method to exhibit custom behavior. The example also demonstrates the use of the <xref:System.Windows.Forms.Control.CanSelect%2A> and <xref:System.Windows.Forms.Control.IsMnemonic%2A> properties. To run this example, paste the following code after a form class, in the same file. Add a button of type `MnemonicButton` to the form.  
+  
+ [!code-cpp[System.Windows.Forms.ProcessMnemonic#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ProcessMnemonic/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.ProcessMnemonic#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ProcessMnemonic/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.ProcessMnemonic#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ProcessMnemonic/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TextAlign">
@@ -535,8 +849,8 @@
         <ReturnType>System.Drawing.ContentAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the alignment of the text on the <see cref="T:System.Windows.Forms.CheckBox" /> control.</summary>
+        <value>One of the <see cref="T:System.Drawing.ContentAlignment" /> values. The default is <see cref="F:System.Drawing.ContentAlignment.MiddleLeft" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -558,9 +872,26 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether the <see cref="T:System.Windows.Forms.CheckBox" /> will allow three check states rather than two.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Forms.CheckBox" /> is able to display three check states; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Windows.Forms.CheckBox.ThreeState%2A> property is set to `false`, the <xref:System.Windows.Forms.CheckBox.CheckState%2A> property value can only be set to the `Indeterminate` value of <xref:System.Windows.Forms.CheckState?displayProperty=fullName> in code and not by user interaction.  
+  
+   
+  
+## Examples  
+ The following code example displays the values of three properties in a label. The <xref:System.Windows.Forms.CheckBox.ThreeState%2A> property alternates between `true` and `false` with alternating clicks of the control and the <xref:System.Windows.Forms.CheckBox.CheckAlign%2A> alternates between the `MiddleRight` and `MiddleLeft` values of <xref:System.Drawing.ContentAlignment?displayProperty=fullName>. This example shows how the property values change as the <xref:System.Windows.Forms.CheckBox.ThreeState%2A> property changes and the control is checked. This code requires that a <xref:System.Windows.Forms.CheckBox>, <xref:System.Windows.Forms.Label> and <xref:System.Windows.Forms.Button> have all been instantiated on a form and that the label is large enough to display three lines of text, as well as a reference to the <xref:System.Drawing?displayProperty=fullName> namespace. This code should be called in the <xref:System.Windows.Forms.Control.Click> event handler of the control.  
+  
+ [!code-cpp[Classic CheckBox.CheckAlign Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic CheckBox.CheckAlign Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic CheckBox.CheckAlign Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic CheckBox.CheckAlign Example/CS/source.cs#1)]
+ [!code-vb[Classic CheckBox.CheckAlign Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic CheckBox.CheckAlign Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -577,8 +908,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a string that represents the current <see cref="T:System.Windows.Forms.CheckBox" /> control.</summary>
+        <returns>A string that states the control type and the state of the <see cref="P:System.Windows.Forms.CheckBox.CheckState" /> property.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

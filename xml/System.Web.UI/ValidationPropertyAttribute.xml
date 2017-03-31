@@ -16,8 +16,25 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the metadata attribute that ASP.NET server controls use to identify a validation property. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This attribute is typically used for form-based input controls.  
+  
+ For more information about attributes, see [Attributes](../Topic/Extending%20Metadata%20Using%20Attributes.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates using the <xref:System.Web.UI.ValidationPropertyAttribute> class when creating a custom control.  
+  
+ [!code-csharp[ValidationPropertyAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ValidationPropertyAttribute/CS/validationpropertyattribute1.cs#1)]
+ [!code-vb[ValidationPropertyAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ValidationPropertyAttribute/VB/validationpropertyattribute1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,9 +50,19 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the validation property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ValidationPropertyAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates using the <xref:System.Web.UI.ValidationPropertyAttribute> class when creating a custom control.  
+  
+ [!code-csharp[ValidationPropertyAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ValidationPropertyAttribute/CS/validationpropertyattribute1.cs#1)]
+ [!code-vb[ValidationPropertyAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ValidationPropertyAttribute/VB/validationpropertyattribute1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -51,9 +78,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the name of the ASP.NET server control's validation property.</summary>
+        <value>The name of the validation property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates using the <xref:System.Web.UI.ValidationPropertyAttribute> class when creating a custom control.  
+  
+ [!code-csharp[ValidationPropertyAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ValidationPropertyAttribute/CS/validationpropertyattribute1.cs#1)]
+ [!code-vb[ValidationPropertyAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ValidationPropertyAttribute/VB/validationpropertyattribute1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

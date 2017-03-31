@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>A binding parameter that can be used with the HTTP Transport to  specify the setting for HttpMessage support.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.HttpMessageSettings" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,9 +50,10 @@
         <Parameter Name="other" Type="System.ServiceModel.Channels.HttpMessageSettings" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">The object to compare with the current object.</param>
+        <summary>Determines whether the specified Object is equal to the current Object.</summary>
+        <returns>
+          <see langword="true" /> if the specified Object is equal to the current Object; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,8 +70,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value indicating whether the HTTP transport should support <see cref="T:System.Net.Http.HttpRequestMessage" /> and <see cref="T:System.Net.Http.HttpResponseMessage" /> instances.</summary>
+        <value>
+          <see langword="true" /> if the HTTP transport supports <see cref="T:System.Net.Http.HttpRequestMessage" /> and <see cref="T:System.Net.Http.HttpResponseMessage" /> instances; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

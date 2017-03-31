@@ -1,4 +1,4 @@
 ---
 uid: System.Management.Instrumentation
-internalonly: False
+manager: "jillfra"
 ---

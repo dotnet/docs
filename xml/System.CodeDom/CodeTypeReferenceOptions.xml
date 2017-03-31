@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies how the code type reference is to be resolved.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,7 +35,7 @@
         <ReturnType>System.CodeDom.CodeTypeReferenceOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Resolve the type from the type parameter.</summary>
       </Docs>
     </Member>
     <Member MemberName="GlobalReference">
@@ -51,7 +51,7 @@
         <ReturnType>System.CodeDom.CodeTypeReferenceOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Resolve the type from the root namespace.</summary>
       </Docs>
     </Member>
   </Members>

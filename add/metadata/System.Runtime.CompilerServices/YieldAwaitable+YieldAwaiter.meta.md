@@ -1,24 +1,34 @@
 ---
 uid: System.Runtime.CompilerServices.YieldAwaitable.YieldAwaiter
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.CompilerServices.YieldAwaitable.YieldAwaiter.GetResult
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.CompilerServices.YieldAwaitable.YieldAwaiter.UnsafeOnCompleted(System.Action)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.CompilerServices.YieldAwaitable.YieldAwaiter.IsCompleted
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.CompilerServices.YieldAwaitable.YieldAwaiter.OnCompleted(System.Action)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

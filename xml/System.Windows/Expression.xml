@@ -16,8 +16,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>This type supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No member of this class is public. The class supports expression modes for setting dependency property values, such as <xref:System.Windows.DynamicResourceExtension> and <xref:System.Windows.Data.Binding>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members />
 </Type>

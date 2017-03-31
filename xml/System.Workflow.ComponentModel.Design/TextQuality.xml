@@ -15,8 +15,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the text rendering settings for the AmbientTheme class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ <xref:System.Workflow.ComponentModel.Design.TextQuality> allows users to determine whether the text displayed on a workflow design surface, and all its child designers, is antialiased or aliased. Antialiased text provides higher quality text display, while aliased text requires fewer resources to maintain.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Aliased">
@@ -32,7 +43,7 @@
         <ReturnType>System.Workflow.ComponentModel.Design.TextQuality</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The ambient text quality setting is aliased.</summary>
       </Docs>
     </Member>
     <Member MemberName="AntiAliased">
@@ -48,7 +59,7 @@
         <ReturnType>System.Workflow.ComponentModel.Design.TextQuality</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The ambient text quality setting is antialiased.</summary>
       </Docs>
     </Member>
   </Members>

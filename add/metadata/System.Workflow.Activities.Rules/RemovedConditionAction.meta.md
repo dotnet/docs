@@ -1,24 +1,41 @@
 ---
 uid: System.Workflow.Activities.Rules.RemovedConditionAction
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.Rules.RemovedConditionAction.ConditionName
-internalonly: False
----
-
----
-uid: System.Workflow.Activities.Rules.RemovedConditionAction.#ctor(System.Workflow.Activities.Rules.RuleCondition)
-internalonly: False
----
-
----
-uid: System.Workflow.Activities.Rules.RemovedConditionAction.ConditionDefinition
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.Rules.RemovedConditionAction.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.Rules.RemovedConditionAction.#ctor(System.Workflow.Activities.Rules.RuleCondition)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.Rules.RemovedConditionAction.ConditionDefinition
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.Rules.RemovedConditionAction.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

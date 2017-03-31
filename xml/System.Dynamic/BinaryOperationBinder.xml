@@ -20,7 +20,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the binary dynamic operation at the call site, providing the binding semantic and the details about the operation.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -46,8 +46,8 @@
         <Parameter Name="operation" Type="System.Linq.Expressions.ExpressionType" />
       </Parameters>
       <Docs>
-        <param name="operation">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="operation">The binary operation kind.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Dynamic.BinaryOperationBinder" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,10 +77,10 @@
         <Parameter Name="args" Type="System.Dynamic.DynamicMetaObject[]" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="args">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The target of the dynamic operation.</param>
+        <param name="args">An array of arguments of the dynamic operation.</param>
+        <summary>Performs the binding of the dynamic binary operation.</summary>
+        <returns>The <see cref="T:System.Dynamic.DynamicMetaObject" /> representing the result of the binding.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,10 +110,10 @@
         <Parameter Name="arg" Type="System.Dynamic.DynamicMetaObject" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The target of the dynamic binary operation.</param>
+        <param name="arg">The right hand side operand of the dynamic binary operation.</param>
+        <summary>Performs the binding of the binary dynamic operation if the target dynamic object cannot bind.</summary>
+        <returns>The <see cref="T:System.Dynamic.DynamicMetaObject" /> representing the result of the binding.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,11 +144,11 @@
         <Parameter Name="errorSuggestion" Type="System.Dynamic.DynamicMetaObject" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="arg">To be added.</param>
-        <param name="errorSuggestion">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The target of the dynamic binary operation.</param>
+        <param name="arg">The right hand side operand of the dynamic binary operation.</param>
+        <param name="errorSuggestion">The binding result if the binding fails, or null.</param>
+        <summary>When overridden in the derived class, performs the binding of the binary dynamic operation if the target dynamic object cannot bind.</summary>
+        <returns>The <see cref="T:System.Dynamic.DynamicMetaObject" /> representing the result of the binding.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -174,8 +174,8 @@
         <ReturnType>System.Linq.Expressions.ExpressionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The binary operation kind.</summary>
+        <value>The <see cref="T:System.Linq.Expressions.ExpressionType" /> object representing the kind of binary operation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -201,8 +201,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The result type of the operation.</summary>
+        <value>The result type of the operation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

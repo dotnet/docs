@@ -1,4 +1,5 @@
 ---
 uid: System.Web.UI.DataVisualization.Charting.CalloutStyle
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---

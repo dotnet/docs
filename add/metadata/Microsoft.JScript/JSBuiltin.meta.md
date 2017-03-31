@@ -1,4 +1,4 @@
 ---
 uid: Microsoft.JScript.JSBuiltin
-internalonly: False
+ms.author: "mikejo"
 ---

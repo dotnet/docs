@@ -1,34 +1,41 @@
 ---
 uid: System.Security.Claims.AuthenticationInformation
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.AuthenticationInformation.DnsName
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.AuthenticationInformation.Session
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.AuthenticationInformation.NotOnOrAfter
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.AuthenticationInformation.AuthorizationContexts
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.AuthenticationInformation.Address
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.AuthenticationInformation.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

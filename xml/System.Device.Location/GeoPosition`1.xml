@@ -14,8 +14,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="T">The type of the location data.</typeparam>
+    <summary>Contains location data of a type specified by the type parameter of the <see cref="T:System.Device.Location.GeoPosition`1" /> class.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Device.Location.GeoPosition`1" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,9 +48,9 @@
         <Parameter Name="position" Type="T" />
       </Parameters>
       <Docs>
-        <param name="timestamp">To be added.</param>
-        <param name="position">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="timestamp">The time the location data was obtained.</param>
+        <param name="position">The location data to use to initialize the <see cref="T:System.Device.Location.GeoPosition`1" /> object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Device.Location.GeoPosition`1" /> class with a timestamp and position.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,8 +67,8 @@
         <ReturnType>T</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the location data for the <see cref="T:System.Device.Location.GeoPosition`1" /> object.</summary>
+        <value>An object of type T that contains the location data for the <see cref="T:System.Device.Location.GeoPosition`1" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,8 +85,8 @@
         <ReturnType>System.DateTimeOffset</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the time when the location data was obtained.</summary>
+        <value>A <see cref="T:System.DateTimeOffset" /> that contains the time the location data was created.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

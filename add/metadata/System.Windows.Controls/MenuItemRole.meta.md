@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Controls.MenuItemRole
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

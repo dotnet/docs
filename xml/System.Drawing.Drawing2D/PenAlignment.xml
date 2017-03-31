@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the alignment of a <see cref="T:System.Drawing.Pen" /> object in relation to the theoretical, zero-width line.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Drawing.Pen> object has width. The center point of this pen width is aligned relative to the line being drawn depending on the alignment value. A <xref:System.Drawing.Pen> object can be positioned to draw inside of a line or centered over the line.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Center">
@@ -27,7 +34,7 @@
         <ReturnType>System.Drawing.Drawing2D.PenAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the <see cref="T:System.Drawing.Pen" /> object is centered over the theoretical line.</summary>
       </Docs>
     </Member>
     <Member MemberName="Inset">
@@ -43,7 +50,7 @@
         <ReturnType>System.Drawing.Drawing2D.PenAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the <see cref="T:System.Drawing.Pen" /> is positioned on the inside of the theoretical line.</summary>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -59,7 +66,7 @@
         <ReturnType>System.Drawing.Drawing2D.PenAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the <see cref="T:System.Drawing.Pen" /> is positioned to the left of the theoretical line.</summary>
       </Docs>
     </Member>
     <Member MemberName="Outset">
@@ -75,7 +82,7 @@
         <ReturnType>System.Drawing.Drawing2D.PenAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the <see cref="T:System.Drawing.Pen" /> is positioned on the outside of the theoretical line.</summary>
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -91,7 +98,7 @@
         <ReturnType>System.Drawing.Drawing2D.PenAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the <see cref="T:System.Drawing.Pen" /> is positioned to the right of the theoretical line.</summary>
       </Docs>
     </Member>
   </Members>

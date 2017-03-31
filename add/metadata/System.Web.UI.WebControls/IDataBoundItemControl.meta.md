@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.WebControls.IDataBoundItemControl
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.IDataBoundItemControl.DataKey
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.IDataBoundItemControl.Mode
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

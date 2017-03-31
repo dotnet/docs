@@ -1,34 +1,52 @@
 ---
 uid: System.Windows.Forms.TableLayoutRowStyleCollection
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.TableLayoutRowStyleCollection.Add
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.TableLayoutRowStyleCollection.Add(System.Windows.Forms.RowStyle)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TableLayoutRowStyleCollection.Item(System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TableLayoutRowStyleCollection.IndexOf(System.Windows.Forms.RowStyle)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TableLayoutRowStyleCollection.Insert(System.Int32,System.Windows.Forms.RowStyle)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.TableLayoutRowStyleCollection.Remove(System.Windows.Forms.RowStyle)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TableLayoutRowStyleCollection.Contains(System.Windows.Forms.RowStyle)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

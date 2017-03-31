@@ -1,19 +1,23 @@
 ---
 uid: System.Web.DynamicData.DynamicQueryStringParameter
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.DynamicQueryStringParameter.GetWhereParameters(System.Web.DynamicData.IDynamicDataSource)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.DynamicQueryStringParameter.Evaluate(System.Web.HttpContext,System.Web.UI.Control)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.DynamicQueryStringParameter.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

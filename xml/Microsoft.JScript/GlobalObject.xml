@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Stores constants, data type information, utility functions, and references to prototype-based objects. This class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>Microsoft.JScript.ActiveXObjectConstructor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a reference to an <see cref="T:Microsoft.JScript.ActiveXObjectConstructor" /> object.</summary>
+        <value>A reference to an <see cref="T:Microsoft.JScript.ActiveXObjectConstructor" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <ReturnType>Microsoft.JScript.ArrayConstructor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a reference to an <see cref="T:Microsoft.JScript.ArrayConstructor" /> object.</summary>
+        <value>A reference to an <see cref="T:Microsoft.JScript.ArrayConstructor" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +64,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the managed type that corresponds to the JScript <see langword="boolean" /> data type.</summary>
+        <value>The managed type that corresponds to the JScript <see langword="boolean" /> data type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +82,8 @@
         <ReturnType>Microsoft.JScript.BooleanConstructor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a reference to a <see cref="T:Microsoft.JScript.BooleanConstructor" /> object.</summary>
+        <value>A reference to a <see cref="T:Microsoft.JScript.BooleanConstructor" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,8 +100,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the managed type that corresponds to the JScript <see langword="byte" /> data type.</summary>
+        <value>The managed type that corresponds to the JScript <see langword="byte" /> data type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,8 +118,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the managed type that corresponds to the JScript <see langword="char" /> data type.</summary>
+        <value>The managed type that corresponds to the JScript <see langword="char" /> data type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,7 +142,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Calls the garbage collector.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -159,8 +159,8 @@
         <ReturnType>Microsoft.JScript.DateConstructor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a reference to a <see cref="T:Microsoft.JScript.DateConstructor" /> object.</summary>
+        <value>A reference to a <see cref="T:Microsoft.JScript.DateConstructor" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -177,8 +177,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the managed type that corresponds to the JScript <see langword="decimal" /> data type.</summary>
+        <value>The managed type that corresponds to the JScript <see langword="decimal" /> data type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -203,9 +203,9 @@
         <Parameter Name="encodedURI" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="encodedURI">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="encodedURI">The URI to decode.</param>
+        <summary>Decodes the specified Uniform Resource Identifier (URI), accounting for reserved characters.</summary>
+        <returns>The decoded version of <paramref name="encodedURI" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -230,9 +230,9 @@
         <Parameter Name="encodedURI" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="encodedURI">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="encodedURI">The URI to decode.</param>
+        <summary>Decodes the specified Uniform Resource Identifier (URI).</summary>
+        <returns>The decoded version of <paramref name="encodedURI" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -249,8 +249,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the managed type that corresponds to the JScript <see langword="double" /> data type.</summary>
+        <value>The managed type that corresponds to the JScript <see langword="double" /> data type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -275,9 +275,9 @@
         <Parameter Name="uri" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="uri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="uri">The URI to encode.</param>
+        <summary>Encodes the specified Uniform Resource Identifier (URI), accounting for reserved characters.</summary>
+        <returns>The encoded version of <paramref name="uri" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -302,9 +302,9 @@
         <Parameter Name="uriComponent" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="uriComponent">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="uriComponent">The URI to encode.</param>
+        <summary>Encodes the specified Uniform Resource Identifier (URI).</summary>
+        <returns>The encoded version of <paramref name="uriComponent" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -321,8 +321,8 @@
         <ReturnType>Microsoft.JScript.EnumeratorConstructor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a reference to an <see cref="T:Microsoft.JScript.EnumeratorConstructor" /> object.</summary>
+        <value>A reference to an <see cref="T:Microsoft.JScript.EnumeratorConstructor" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -339,8 +339,8 @@
         <ReturnType>Microsoft.JScript.ErrorConstructor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a reference to an <see cref="T:Microsoft.JScript.ErrorConstructor" /> object.</summary>
+        <value>A reference to an <see cref="T:Microsoft.JScript.ErrorConstructor" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -368,9 +368,9 @@
         <Parameter Name="string" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="string">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="string">The string to convert.</param>
+        <summary>Converts the specified string to use the % character to escape reserved characters (@, *, _, +, -, ., /) and express them in Unicode notation.</summary>
+        <returns>A new copy of <paramref name="string" /> in which the reserved characters are escaped by the % character and expressed in Unicode.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -395,9 +395,9 @@
         <Parameter Name="x" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">The expression to evaluate.</param>
+        <summary>Throws an <see cref="F:Microsoft.JScript.JSError.IllegalEval" /> exception in all cases.</summary>
+        <returns>Throws an <see cref="F:Microsoft.JScript.JSError.IllegalEval" /> exception in all cases.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -414,8 +414,8 @@
         <ReturnType>Microsoft.JScript.ErrorConstructor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a reference to an <see cref="T:Microsoft.JScript.ErrorConstructor" /> object. The object is initialized as an <see cref="F:Microsoft.JScript.ErrorType.EvalError" />.</summary>
+        <value>A reference to an <see cref="T:Microsoft.JScript.ErrorConstructor" /> object. The object is initialized as an <see cref="F:Microsoft.JScript.ErrorType.EvalError" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -432,8 +432,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the managed type that corresponds to the JScript <see langword="float" /> data type.</summary>
+        <value>The managed type that corresponds to the JScript <see langword="float" /> data type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -450,8 +450,8 @@
         <ReturnType>Microsoft.JScript.FunctionConstructor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a reference to a <see cref="T:Microsoft.JScript.FunctionConstructor" /> object.</summary>
+        <value>A reference to a <see cref="T:Microsoft.JScript.FunctionConstructor" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -477,10 +477,10 @@
         <Parameter Name="progId" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="moniker">To be added.</param>
-        <param name="progId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="moniker">The moniker of the object.</param>
+        <param name="progId">The ProgID of the object.</param>
+        <summary>Creates a managed object from an unmanaged object by using either the moniker or the ProgID.</summary>
+        <returns>The managed object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -498,7 +498,7 @@
       </ReturnValue>
       <MemberValue>Infinity</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents positive infinity. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -515,8 +515,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the managed type that corresponds to the JScript <see langword="int" /> data type.</summary>
+        <value>The managed type that corresponds to the JScript <see langword="int" /> data type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -541,9 +541,10 @@
         <Parameter Name="number" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="number">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="number">The number to check.</param>
+        <summary>Determines whether the specified number represents infinity.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="number" /> is not <see cref="F:System.Double.NaN" />, not <see cref="F:System.Double.PositiveInfinity" />, and not <see cref="F:System.Double.NegativeInfinity" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -568,9 +569,10 @@
         <Parameter Name="num" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="num">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="num">The number to check.</param>
+        <summary>Determines whether the specified number can be converted to a JScript number.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="num" /> can be converted to a JScript number; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -587,8 +589,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the managed type that corresponds to the JScript <see langword="long" /> data type.</summary>
+        <value>The managed type that corresponds to the JScript <see langword="long" /> data type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -605,8 +607,8 @@
         <ReturnType>Microsoft.JScript.MathObject</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a reference to a <see cref="T:Microsoft.JScript.MathObject" /> object.</summary>
+        <value>A reference to a <see cref="T:Microsoft.JScript.MathObject" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -624,7 +626,7 @@
       </ReturnValue>
       <MemberValue>NaN</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents a value that is not a number (NaN). This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -641,8 +643,8 @@
         <ReturnType>Microsoft.JScript.NumberConstructor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a reference to a <see cref="T:Microsoft.JScript.NumberConstructor" /> object.</summary>
+        <value>A reference to a <see cref="T:Microsoft.JScript.NumberConstructor" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -659,8 +661,8 @@
         <ReturnType>Microsoft.JScript.ObjectConstructor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a reference to an <see cref="T:Microsoft.JScript.ObjectConstructor" /> object.</summary>
+        <value>A reference to an <see cref="T:Microsoft.JScript.ObjectConstructor" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -677,7 +679,7 @@
         <ReturnType>Microsoft.JScript.ActiveXObjectConstructor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores a reference to an <see cref="T:Microsoft.JScript.ActiveXObjectConstructor" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -694,7 +696,7 @@
         <ReturnType>Microsoft.JScript.ArrayConstructor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores a reference to an <see cref="T:Microsoft.JScript.ArrayConstructor" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -711,7 +713,7 @@
         <ReturnType>Microsoft.JScript.BooleanConstructor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores a reference to a <see cref="T:Microsoft.JScript.BooleanConstructor" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -728,7 +730,7 @@
         <ReturnType>Microsoft.JScript.DateConstructor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores a reference to a <see cref="T:Microsoft.JScript.DateConstructor" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -745,7 +747,7 @@
         <ReturnType>Microsoft.JScript.EnumeratorConstructor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores a reference to an <see cref="T:Microsoft.JScript.EnumeratorConstructor" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -762,7 +764,7 @@
         <ReturnType>Microsoft.JScript.ErrorConstructor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores a reference to an <see cref="T:Microsoft.JScript.ErrorConstructor" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -779,7 +781,7 @@
         <ReturnType>Microsoft.JScript.ErrorConstructor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores a reference to an <see cref="T:Microsoft.JScript.ErrorConstructor" /> object. The object is initialized as an <see cref="F:Microsoft.JScript.ErrorType.EvalError" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -796,7 +798,7 @@
         <ReturnType>Microsoft.JScript.FunctionConstructor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores a reference to a <see cref="T:Microsoft.JScript.FunctionConstructor" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -813,7 +815,7 @@
         <ReturnType>Microsoft.JScript.NumberConstructor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores a reference to a <see cref="T:Microsoft.JScript.NumberConstructor" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -830,7 +832,7 @@
         <ReturnType>Microsoft.JScript.ObjectConstructor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores a reference to an <see cref="T:Microsoft.JScript.ObjectConstructor" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -847,7 +849,7 @@
         <ReturnType>Microsoft.JScript.ObjectPrototype</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores a reference to an <see cref="T:Microsoft.JScript.ObjectPrototype" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -864,7 +866,7 @@
         <ReturnType>Microsoft.JScript.ErrorConstructor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores a reference to an <see cref="T:Microsoft.JScript.ErrorConstructor" /> object. The object is initialized as a <see cref="F:Microsoft.JScript.ErrorType.RangeError" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -881,7 +883,7 @@
         <ReturnType>Microsoft.JScript.ErrorConstructor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores a reference to an <see cref="T:Microsoft.JScript.ErrorConstructor" /> object. The object is initialized as a <see cref="F:Microsoft.JScript.ErrorType.ReferenceError" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -898,7 +900,7 @@
         <ReturnType>Microsoft.JScript.RegExpConstructor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores a reference to a <see cref="T:Microsoft.JScript.RegExpConstructor" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -915,7 +917,7 @@
         <ReturnType>Microsoft.JScript.StringConstructor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores a reference to a <see cref="T:Microsoft.JScript.StringConstructor" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -932,7 +934,7 @@
         <ReturnType>Microsoft.JScript.ErrorConstructor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores a reference to an <see cref="T:Microsoft.JScript.ErrorConstructor" /> object. The object is initialized as a <see cref="F:Microsoft.JScript.ErrorType.SyntaxError" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -949,7 +951,7 @@
         <ReturnType>Microsoft.JScript.ErrorConstructor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores a reference to an <see cref="T:Microsoft.JScript.ErrorConstructor" /> object. The object is initialized as a <see cref="F:Microsoft.JScript.ErrorType.TypeError" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -966,7 +968,7 @@
         <ReturnType>Microsoft.JScript.ErrorConstructor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores a reference to an <see cref="T:Microsoft.JScript.ErrorConstructor" /> object. The object is initialized as a <see cref="F:Microsoft.JScript.ErrorType.URIError" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -983,7 +985,7 @@
         <ReturnType>Microsoft.JScript.VBArrayConstructor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores a reference to a <see cref="T:Microsoft.JScript.VBArrayConstructor" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1008,9 +1010,9 @@
         <Parameter Name="string" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="string">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="string">The string to convert.</param>
+        <summary>Converts the specified string to its <see cref="T:System.Double" /> equivalent.</summary>
+        <returns>A value equivalent to the value that is contained in <paramref name="string" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1036,10 +1038,10 @@
         <Parameter Name="radix" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="string">To be added.</param>
-        <param name="radix">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="string">The string to convert.</param>
+        <param name="radix">A number between 2 and 36 that represents the base of the number system that <c>string</c> is expressed in. The default is 10.</param>
+        <summary>Converts the specified string to its <see cref="T:System.Double" /> equivalent, using the specified base.</summary>
+        <returns>A value that is equivalent to the value that is contained in <paramref name="string" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1056,8 +1058,8 @@
         <ReturnType>Microsoft.JScript.ErrorConstructor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a reference to an <see cref="T:Microsoft.JScript.ErrorConstructor" /> object. The object is initialized as a <see cref="F:Microsoft.JScript.ErrorType.RangeError" />.</summary>
+        <value>A reference to an <see cref="T:Microsoft.JScript.ErrorConstructor" /> object. The object is initialized as a <see cref="F:Microsoft.JScript.ErrorType.RangeError" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1074,8 +1076,8 @@
         <ReturnType>Microsoft.JScript.ErrorConstructor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a reference to an <see cref="T:Microsoft.JScript.ErrorConstructor" /> object. The object is initialized as a <see cref="F:Microsoft.JScript.ErrorType.ReferenceError" />.</summary>
+        <value>A reference to an <see cref="T:Microsoft.JScript.ErrorConstructor" /> object. The object is initialized as a <see cref="F:Microsoft.JScript.ErrorType.ReferenceError" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1092,8 +1094,8 @@
         <ReturnType>Microsoft.JScript.RegExpConstructor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a reference to a <see cref="T:Microsoft.JScript.RegExpConstructor" /> object.</summary>
+        <value>A reference to a <see cref="T:Microsoft.JScript.RegExpConstructor" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1110,8 +1112,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the managed type that corresponds to the JScript <see langword="sbyte" /> data type.</summary>
+        <value>The managed type that corresponds to the JScript <see langword="sbyte" /> data type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1134,8 +1136,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the name of the scripting engine.</summary>
+        <returns>The string literal "JScript".</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1158,8 +1160,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the build number of the scripting engine.</summary>
+        <returns>The build number of the scripting engine.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1182,8 +1184,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the major version number of the scripting engine.</summary>
+        <returns>The major version number of the scripting engine.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1206,8 +1208,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the minor version number of the scripting engine.</summary>
+        <returns>The minor version number of the scripting engine.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1224,8 +1226,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the managed type that corresponds to the JScript <see langword="short" /> data type.</summary>
+        <value>The managed type that corresponds to the JScript <see langword="short" /> data type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1242,8 +1244,8 @@
         <ReturnType>Microsoft.JScript.StringConstructor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a reference to a <see cref="T:Microsoft.JScript.StringConstructor" /> object.</summary>
+        <value>A reference to a <see cref="T:Microsoft.JScript.StringConstructor" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1260,8 +1262,8 @@
         <ReturnType>Microsoft.JScript.ErrorConstructor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a reference to an <see cref="T:Microsoft.JScript.ErrorConstructor" /> object. The object is initialized as a <see cref="F:Microsoft.JScript.ErrorType.SyntaxError" />.</summary>
+        <value>A reference to an <see cref="T:Microsoft.JScript.ErrorConstructor" /> object. The object is initialized as a <see cref="F:Microsoft.JScript.ErrorType.SyntaxError" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1278,8 +1280,8 @@
         <ReturnType>Microsoft.JScript.ErrorConstructor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a reference to an <see cref="T:Microsoft.JScript.ErrorConstructor" /> object. The object is initialized as a <see cref="F:Microsoft.JScript.ErrorType.TypeError" />.</summary>
+        <value>A reference to an <see cref="T:Microsoft.JScript.ErrorConstructor" /> object. The object is initialized as a <see cref="F:Microsoft.JScript.ErrorType.TypeError" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1296,8 +1298,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the managed type that corresponds to the JScript <see langword="uint" /> data type.</summary>
+        <value>The managed type that corresponds to the JScript <see langword="uint" /> data type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1314,8 +1316,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the managed type that corresponds to the JScript <see langword="ulong" /> data type.</summary>
+        <value>The managed type that corresponds to the JScript <see langword="ulong" /> data type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1332,7 +1334,7 @@
         <ReturnType>Microsoft.JScript.Empty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents a value that is null.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1360,9 +1362,9 @@
         <Parameter Name="string" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="string">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="string">The string to convert.</param>
+        <summary>Converts % escaped characters (@, *, _, +, -, ., /) in the specified string to their original form. The escaped characters are expressed in Unicode notation.</summary>
+        <returns>A new copy of <paramref name="string" /> in which the escaped characters are converted to their original form.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1379,8 +1381,8 @@
         <ReturnType>Microsoft.JScript.ErrorConstructor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a reference to an <see cref="T:Microsoft.JScript.ErrorConstructor" /> object. The object is initialized as a <see cref="F:Microsoft.JScript.ErrorType.URIError" />.</summary>
+        <value>A reference to an <see cref="T:Microsoft.JScript.ErrorConstructor" /> object. The object is initialized as a <see cref="F:Microsoft.JScript.ErrorType.URIError" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1397,8 +1399,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the managed type that corresponds to the JScript <see langword="ushort" /> data type.</summary>
+        <value>The managed type that corresponds to the JScript <see langword="ushort" /> data type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1415,8 +1417,8 @@
         <ReturnType>Microsoft.JScript.VBArrayConstructor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a reference to a <see cref="T:Microsoft.JScript.VBArrayConstructor" /> object.</summary>
+        <value>A reference to a <see cref="T:Microsoft.JScript.VBArrayConstructor" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1433,8 +1435,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the managed type that corresponds to the return value of a function that does not return a value.</summary>
+        <value>The managed type that corresponds to the return value of a function that does not return a value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

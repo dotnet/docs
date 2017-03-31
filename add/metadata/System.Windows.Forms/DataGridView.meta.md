@@ -1,2264 +1,3174 @@
 ---
 uid: System.Windows.Forms.DataGridView
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnCellValueNeeded(System.Windows.Forms.DataGridViewCellValueEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.FirstDisplayedScrollingColumnHiddenWidth
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.CellStateChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.ClearSelection(System.Int32,System.Int32,System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.RowHeaderCellChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.UpdateRowErrorText(System.Int32,System.Int32)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.ColumnHeadersHeightSizeMode
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.AutoResizeColumnHeadersHeight(System.Int32)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.RowDividerHeightChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.SelectedCells
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.RowHeadersBorderStyle
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.CellValueNeeded
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnRowsRemoved(System.Windows.Forms.DataGridViewRowsRemovedEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.DisplayRectangle
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.AutoResizeColumn(System.Int32,System.Windows.Forms.DataGridViewAutoSizeColumnMode,System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.RowDefaultCellStyleChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnAlternatingRowsDefaultCellStyleChanged(System.EventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.FirstDisplayedScrollingColumnIndex
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.DefaultValuesNeeded
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.ProcessInsertKey(System.Windows.Forms.Keys)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnCellStyleChanged(System.Windows.Forms.DataGridViewCellEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnCellEnter(System.Windows.Forms.DataGridViewCellEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.RowContextMenuStripNeeded
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.BackColor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnCellPainting(System.Windows.Forms.DataGridViewCellPaintingEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.RefreshEdit
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.RowStateChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.Padding
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.Dispose(System.Boolean)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnMouseMove(System.Windows.Forms.MouseEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.DefaultCellStyle
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnCellMouseUp(System.Windows.Forms.DataGridViewCellMouseEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnMouseDown(System.Windows.Forms.MouseEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnMultiSelectChanged(System.EventArgs)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.AutoSize
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.RowHeadersWidthSizeMode
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.CellBorderStyle
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.ProcessEnterKey(System.Windows.Forms.Keys)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnGotFocus(System.EventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.HorizontalScrollBar
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.DataMemberChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnCellClick(System.Windows.Forms.DataGridViewCellEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.DisplayedColumnCount(System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.RowDividerDoubleClick
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnRowHeadersWidthChanged(System.EventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.RowHeadersWidth
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.AllowUserToDeleteRows
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.AutoResizeRowHeadersWidth(System.Int32,System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.RowsRemoved
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.ColumnCount
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.AutoResizeRow(System.Int32,System.Windows.Forms.DataGridViewAutoSizeRowMode,System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.MultiSelectChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.Sort
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.UserSetCursor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.AutoResizeColumnHeadersHeight
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.ColumnContextMenuStripChanged
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.StandardTab
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnRowDirtyStateNeeded(System.Windows.Forms.QuestionEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.ColumnHeadersBorderStyleChanged
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.ProcessDownKey(System.Windows.Forms.Keys)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnCursorChanged(System.EventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.ColumnHeadersDefaultCellStyleChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.DataBindingComplete
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.CanEnableIme
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnRowDividerDoubleClick(System.Windows.Forms.DataGridViewRowDividerDoubleClickEventArgs)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.InvalidateCell(System.Windows.Forms.DataGridViewCell)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.ColumnNameChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.BeginEdit(System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.System#ComponentModel#ISupportInitialize#EndInit
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.EndEdit(System.Windows.Forms.DataGridViewDataErrorContexts)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.BackgroundColorChanged
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.CellStyleContentChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.DataMember
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnRowHeadersWidthSizeModeChanged(System.Windows.Forms.DataGridViewAutoSizeModeEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.AutoResizeRows
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.AutoResizeColumnHeadersHeight(System.Int32,System.Boolean,System.Boolean)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.ColumnHeadersHeightChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.CellContentClick
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnBorderStyleChanged(System.EventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.ProcessSpaceKey(System.Windows.Forms.Keys)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.AllowUserToAddRows
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.ShowEditingIcon
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.TopLeftHeaderCell
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnMouseLeave(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.ProcessNextKey(System.Windows.Forms.Keys)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnEditingControlShowing(System.Windows.Forms.DataGridViewEditingControlShowingEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnColumnDividerDoubleClick(System.Windows.Forms.DataGridViewColumnDividerDoubleClickEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.AutoResizeColumn(System.Int32)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.TextChanged
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnAllowUserToResizeRowsChanged(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.NewRowNeeded
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.CurrentCellChanged
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.ProcessKeyEventArgs(System.Windows.Forms.Message@)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnCellErrorTextChanged(System.Windows.Forms.DataGridViewCellEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.Item(System.String,System.Int32)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.ClearSelection
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnCellBorderStyleChanged(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.ColumnHeaderMouseClick
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnCellLeave(System.Windows.Forms.DataGridViewCellEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnForeColorChanged(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.UserDeletedRow
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.EnableHeadersVisualStyles
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.DisplayedRowCount(System.Boolean)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.DataError
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.ProcessHomeKey(System.Windows.Forms.Keys)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnRowDividerHeightChanged(System.Windows.Forms.DataGridViewRowEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.RowTemplate
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnDefaultCellStyleChanged(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.ReadOnlyChanged
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.ProcessAKey(System.Windows.Forms.Keys)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnRowHeadersBorderStyleChanged(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.SetBoundsCore(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnCellMouseEnter(System.Windows.Forms.DataGridViewCellEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnResize(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnBackgroundColorChanged(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.ClipboardCopyMode
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnRowStateChanged(System.Int32,System.Windows.Forms.DataGridViewRowStateChangedEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.ColumnMinimumWidthChanged
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.CellValidated
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.GetRowDisplayRectangle(System.Int32,System.Boolean)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnMouseDoubleClick(System.Windows.Forms.MouseEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.BackgroundImage
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.BackgroundImageLayoutChanged
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.CreateControlsInstance
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.GridColorChanged
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.RowHeadersWidthChanged
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.CellContextMenuStripChanged
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.DataSourceChanged
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.ShowCellErrors
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnLostFocus(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.ProcessDeleteKey(System.Windows.Forms.Keys)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnCellContextMenuStripChanged(System.Windows.Forms.DataGridViewCellEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.RowErrorTextNeeded
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnValidating(System.ComponentModel.CancelEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnCellStateChanged(System.Windows.Forms.DataGridViewCellStateChangedEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnCurrentCellChanged(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnKeyPress(System.Windows.Forms.KeyPressEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnLayout(System.Windows.Forms.LayoutEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.ColumnSortModeChanged
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnRowContextMenuStripChanged(System.Windows.Forms.DataGridViewRowEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.GetClipboardContent
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.SelectionChanged
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.AlternatingRowsDefaultCellStyle
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.CellContextMenuStripNeeded
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.DefaultCellStyleChanged
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.GetColumnDisplayRectangle(System.Int32,System.Boolean)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.CellParsing
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.RowHeadersVisible
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.GetAccessibilityObjectById(System.Int32)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnHandleDestroyed(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnDefaultValuesNeeded(System.Windows.Forms.DataGridViewRowEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnColumnRemoved(System.Windows.Forms.DataGridViewColumnEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.ColumnDividerWidthChanged
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.EndEdit
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.FontChanged
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.HorizontalScrollingOffset
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnVisibleChanged(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.ShowCellToolTips
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.CellStyleChanged
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.AdjustedTopLeftHeaderBorderStyle
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.InvalidateCell(System.Int32,System.Int32)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.BorderStyleChanged
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.SelectAll
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.CellValueChanged
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.AutoGenerateColumns
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.ProcessPriorKey(System.Windows.Forms.Keys)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnCellMouseDown(System.Windows.Forms.DataGridViewCellMouseEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnRightToLeftChanged(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.AllowUserToOrderColumns
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnRowErrorTextNeeded(System.Windows.Forms.DataGridViewRowErrorTextNeededEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.CellToolTipTextNeeded
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.RowHeadersWidthSizeModeChanged
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.ResetText
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnRowHeaderCellChanged(System.Windows.Forms.DataGridViewRowEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.NotifyCurrentCellDirty(System.Boolean)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnCellMouseDoubleClick(System.Windows.Forms.DataGridViewCellMouseEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnKeyDown(System.Windows.Forms.KeyEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.RowUnshared
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.AutoSizeRowsMode
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.CancelEdit
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnAutoGenerateColumnsChanged(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.CellClick
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.SelectionMode
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.VerticalScrollingOffset
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.ColumnToolTipTextChanged
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnSortCompare(System.Windows.Forms.DataGridViewSortCompareEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.RowsAdded
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.AutoSizeColumnsModeChanged
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.AdvancedRowHeadersBorderStyle
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.CreateAccessibilityInstance
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.RowsDefaultCellStyleChanged
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.ColumnHeadersHeight
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnReadOnlyChanged(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.Scroll
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.HitTest(System.Int32,System.Int32)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnCellToolTipTextChanged(System.Windows.Forms.DataGridViewCellEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.BackColorChanged
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnColumnHeadersDefaultCellStyleChanged(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.RowHeaderMouseClick
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnColumnHeaderCellChanged(System.Windows.Forms.DataGridViewColumnEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.AutoResizeRowHeadersWidth(System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode,System.Boolean,System.Boolean)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.AutoResizeRows(System.Windows.Forms.DataGridViewAutoSizeRowsMode,System.Boolean)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.ProcessTabKey(System.Windows.Forms.Keys)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnRowValidated(System.Windows.Forms.DataGridViewCellEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.CommitEdit(System.Windows.Forms.DataGridViewDataErrorContexts)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.CellContentDoubleClick
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.ColumnHeadersBorderStyle
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.SetCurrentCellAddressCore(System.Int32,System.Int32,System.Boolean,System.Boolean,System.Boolean)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.BackgroundImageLayout
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.AutoSizeColumnsMode
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.GetCellDisplayRectangle(System.Int32,System.Int32,System.Boolean)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.AutoResizeColumns(System.Windows.Forms.DataGridViewAutoSizeColumnsMode)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnCellDoubleClick(System.Windows.Forms.DataGridViewCellEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.CellValuePushed
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.AutoResizeColumns(System.Windows.Forms.DataGridViewAutoSizeColumnsMode,System.Boolean)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.ColumnHeadersDefaultCellStyle
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.AdvancedCellBorderStyle
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.RowsDefaultCellStyle
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnCurrentCellDirtyStateChanged(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnDataError(System.Boolean,System.Windows.Forms.DataGridViewDataErrorEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.CellPainting
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnLeave(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.BackgroundColor
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnRowLeave(System.Windows.Forms.DataGridViewCellEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnColumnAdded(System.Windows.Forms.DataGridViewColumnEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnRowDefaultCellStyleChanged(System.Windows.Forms.DataGridViewRowEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnCellValueChanged(System.Windows.Forms.DataGridViewCellEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.AreAllCellsSelected(System.Boolean)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.RowPostPaint
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.ColumnHeaderMouseDoubleClick
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnCancelRowEdit(System.Windows.Forms.QuestionEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.AutoResizeRow(System.Int32,System.Windows.Forms.DataGridViewAutoSizeRowMode)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.OnEditModeChanged(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridView.AllowUserToDeleteRowsChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.AutoResizeColumns
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.TopLeftHeaderCell
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnMouseLeave(System.EventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.ProcessNextKey(System.Windows.Forms.Keys)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnEditingControlShowing(System.Windows.Forms.DataGridViewEditingControlShowingEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnColumnDividerDoubleClick(System.Windows.Forms.DataGridViewColumnDividerDoubleClickEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.AutoResizeColumn(System.Int32)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.TextChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnAllowUserToResizeRowsChanged(System.EventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.NewRowNeeded
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.CurrentCellChanged
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.ProcessKeyEventArgs(System.Windows.Forms.Message@)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnCellErrorTextChanged(System.Windows.Forms.DataGridViewCellEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.Item(System.String,System.Int32)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.ClearSelection
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnCellBorderStyleChanged(System.EventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.ColumnHeaderMouseClick
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnCellLeave(System.Windows.Forms.DataGridViewCellEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnForeColorChanged(System.EventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.UserDeletedRow
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.EnableHeadersVisualStyles
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.DisplayedRowCount(System.Boolean)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.DataError
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.ProcessHomeKey(System.Windows.Forms.Keys)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnRowDividerHeightChanged(System.Windows.Forms.DataGridViewRowEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.RowTemplate
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnDefaultCellStyleChanged(System.EventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.ReadOnlyChanged
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.ProcessAKey(System.Windows.Forms.Keys)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnRowHeadersBorderStyleChanged(System.EventArgs)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.SetBoundsCore(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnCellMouseEnter(System.Windows.Forms.DataGridViewCellEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnResize(System.EventArgs)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnBackgroundColorChanged(System.EventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.ClipboardCopyMode
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnRowStateChanged(System.Int32,System.Windows.Forms.DataGridViewRowStateChangedEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.ColumnMinimumWidthChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.CellValidated
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.EndEdit
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.GetRowDisplayRectangle(System.Int32,System.Boolean)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnMouseDoubleClick(System.Windows.Forms.MouseEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.BackgroundImage
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.BackgroundImageLayoutChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.CreateControlsInstance
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.GridColorChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.RowHeadersWidthChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.CellContextMenuStripChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.DataSourceChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.ShowCellErrors
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnLostFocus(System.EventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.ProcessDeleteKey(System.Windows.Forms.Keys)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnCellContextMenuStripChanged(System.Windows.Forms.DataGridViewCellEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.RowErrorTextNeeded
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnValidating(System.ComponentModel.CancelEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnCellStateChanged(System.Windows.Forms.DataGridViewCellStateChangedEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnCurrentCellChanged(System.EventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnKeyPress(System.Windows.Forms.KeyPressEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnLayout(System.Windows.Forms.LayoutEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.ColumnSortModeChanged
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnRowContextMenuStripChanged(System.Windows.Forms.DataGridViewRowEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.GetClipboardContent
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.UpdateRowErrorText
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.SelectionChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.AlternatingRowsDefaultCellStyle
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.CellContextMenuStripNeeded
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.DefaultCellStyleChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.GetColumnDisplayRectangle(System.Int32,System.Boolean)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.CellParsing
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.RowHeadersVisible
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.GetAccessibilityObjectById(System.Int32)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnHandleDestroyed(System.EventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnDefaultValuesNeeded(System.Windows.Forms.DataGridViewRowEventArgs)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnColumnRemoved(System.Windows.Forms.DataGridViewColumnEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.ColumnDividerWidthChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.EndEdit
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.FontChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.HorizontalScrollingOffset
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnVisibleChanged(System.EventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.ShowCellToolTips
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.CellStyleChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.AdjustedTopLeftHeaderBorderStyle
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.InvalidateCell(System.Int32,System.Int32)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.Dispose
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.BorderStyleChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.SelectAll
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.CellValueChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.AutoGenerateColumns
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.ProcessPriorKey(System.Windows.Forms.Keys)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnCellMouseDown(System.Windows.Forms.DataGridViewCellMouseEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnRightToLeftChanged(System.EventArgs)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.AllowUserToOrderColumns
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnRowErrorTextNeeded(System.Windows.Forms.DataGridViewRowErrorTextNeededEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.CellToolTipTextNeeded
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.RowHeadersWidthSizeModeChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.ResetText
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnRowHeaderCellChanged(System.Windows.Forms.DataGridViewRowEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.NotifyCurrentCellDirty(System.Boolean)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnCellMouseDoubleClick(System.Windows.Forms.DataGridViewCellMouseEventArgs)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnKeyDown(System.Windows.Forms.KeyEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.RowUnshared
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.AutoSizeRowsMode
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.CancelEdit
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnAutoGenerateColumnsChanged(System.EventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.CellClick
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.SelectionMode
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.VerticalScrollingOffset
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.ColumnToolTipTextChanged
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnSortCompare(System.Windows.Forms.DataGridViewSortCompareEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.RowsAdded
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.AutoSizeColumnsModeChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.AdvancedRowHeadersBorderStyle
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.CreateAccessibilityInstance
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.RowsDefaultCellStyleChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.ColumnHeadersHeight
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnReadOnlyChanged(System.EventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.Scroll
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.HitTest(System.Int32,System.Int32)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnCellToolTipTextChanged(System.Windows.Forms.DataGridViewCellEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.BackColorChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnColumnHeadersDefaultCellStyleChanged(System.EventArgs)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.RowHeaderMouseClick
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnColumnHeaderCellChanged(System.Windows.Forms.DataGridViewColumnEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.AutoResizeRowHeadersWidth(System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode,System.Boolean,System.Boolean)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.AutoResizeRows(System.Windows.Forms.DataGridViewAutoSizeRowsMode,System.Boolean)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.ProcessTabKey(System.Windows.Forms.Keys)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnRowValidated(System.Windows.Forms.DataGridViewCellEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.CommitEdit(System.Windows.Forms.DataGridViewDataErrorContexts)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.CellContentDoubleClick
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.ColumnHeadersBorderStyle
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.SetCurrentCellAddressCore(System.Int32,System.Int32,System.Boolean,System.Boolean,System.Boolean)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.BackgroundImageLayout
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.AutoSizeColumnsMode
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.GetCellDisplayRectangle(System.Int32,System.Int32,System.Boolean)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.AutoResizeColumns(System.Windows.Forms.DataGridViewAutoSizeColumnsMode)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnCellDoubleClick(System.Windows.Forms.DataGridViewCellEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.CellValuePushed
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.AutoResizeColumns(System.Windows.Forms.DataGridViewAutoSizeColumnsMode,System.Boolean)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.ColumnHeadersDefaultCellStyle
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.AdvancedCellBorderStyle
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.RowsDefaultCellStyle
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnCurrentCellDirtyStateChanged(System.EventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnDataError(System.Boolean,System.Windows.Forms.DataGridViewDataErrorEventArgs)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.CellPainting
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnLeave(System.EventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.BackgroundColor
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnRowLeave(System.Windows.Forms.DataGridViewCellEventArgs)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnColumnAdded(System.Windows.Forms.DataGridViewColumnEventArgs)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnRowDefaultCellStyleChanged(System.Windows.Forms.DataGridViewRowEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnCellValueChanged(System.Windows.Forms.DataGridViewCellEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.AreAllCellsSelected(System.Boolean)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.RowPostPaint
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.ColumnHeaderMouseDoubleClick
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnCancelRowEdit(System.Windows.Forms.QuestionEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.AutoResizeRow(System.Int32,System.Windows.Forms.DataGridViewAutoSizeRowMode)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.OnEditModeChanged(System.EventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.AllowUserToDeleteRowsChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.AutoResizeColumns
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.Item
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.RowHeadersDefaultCellStyle
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnEnter(System.EventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnSorted(System.EventArgs)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnAllowUserToAddRowsChanged(System.EventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnRowHeightChanged(System.Windows.Forms.DataGridViewRowEventArgs)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.RowDirtyStateNeeded
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.InvalidateCell
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.CurrentCellAddress
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.ForeColor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnCellFormatting(System.Windows.Forms.DataGridViewCellFormattingEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.ColumnDisplayIndexChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnCellMouseMove(System.Windows.Forms.DataGridViewCellMouseEventArgs)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnCellValidated(System.Windows.Forms.DataGridViewCellEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.NewRowIndex
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnRowMinimumHeightChanged(System.Windows.Forms.DataGridViewRowEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.WndProc(System.Windows.Forms.Message@)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.CellErrorTextChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.SelectedColumns
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.AutoResizeRow(System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.AutoResizeColumn
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnColumnDataPropertyNameChanged(System.Windows.Forms.DataGridViewColumnEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.UserAddedRow
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnCellStyleContentChanged(System.Windows.Forms.DataGridViewCellStyleContentChangedEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.AdjustColumnHeaderBorderStyle(System.Windows.Forms.DataGridViewAdvancedBorderStyle,System.Windows.Forms.DataGridViewAdvancedBorderStyle,System.Boolean,System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.ColumnDefaultCellStyleChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.SelectedRows
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.RowErrorTextChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnKeyUp(System.Windows.Forms.KeyEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.ProcessDataGridViewKey(System.Windows.Forms.KeyEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnGridColorChanged(System.EventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.AllowUserToResizeColumnsChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.EditingControl
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnCellToolTipTextNeeded(System.Windows.Forms.DataGridViewCellToolTipTextNeededEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnSelectionChanged(System.EventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.IsInputKey(System.Windows.Forms.Keys)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnDataMemberChanged(System.EventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnDataBindingComplete(System.Windows.Forms.DataGridViewBindingCompleteEventArgs)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnCellValuePushed(System.Windows.Forms.DataGridViewCellValueEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.GetCellCount(System.Windows.Forms.DataGridViewElementStates)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.AllowUserToOrderColumnsChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.CellMouseClick
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnDataSourceChanged(System.EventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.MultiSelect
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnPaint(System.Windows.Forms.PaintEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.SortOrder
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.CreateColumnsInstance
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.RowValidating
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnColumnWidthChanged(System.Windows.Forms.DataGridViewColumnEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.AllowUserToResizeColumns
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnRowPostPaint(System.Windows.Forms.DataGridViewRowPostPaintEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.RowHeadersBorderStyleChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.ColumnWidthChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnCellErrorTextNeeded(System.Windows.Forms.DataGridViewCellErrorTextNeededEventArgs)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.ProcessKeyPreview(System.Windows.Forms.Message@)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.RowLeave
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.RowPrePaint
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnColumnDividerWidthChanged(System.Windows.Forms.DataGridViewColumnEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.AllowUserToResizeRowsChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.IsCurrentCellInEditMode
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.ProcessLeftKey(System.Windows.Forms.Keys)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.CellBorderStyleChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.RowCount
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnColumnHeadersHeightSizeModeChanged(System.Windows.Forms.DataGridViewAutoSizeModeEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnRowErrorTextChanged(System.Windows.Forms.DataGridViewRowEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnCellContentClick(System.Windows.Forms.DataGridViewCellEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.AlternatingRowsDefaultCellStyleChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnUserDeletedRow(System.Windows.Forms.DataGridViewRowEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.CellToolTipTextChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnCellParsing(System.Windows.Forms.DataGridViewCellParsingEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.CreateRowsInstance
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnEnabledChanged(System.EventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.EditModeChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.ForeColorChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.ScrollBars
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.ReadOnly
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.SortedColumn
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnColumnNameChanged(System.Windows.Forms.DataGridViewColumnEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnRowsAdded(System.Windows.Forms.DataGridViewRowsAddedEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.RowHeightInfoNeeded
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.Text
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.ProcessRightKey(System.Windows.Forms.Keys)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnCellBeginEdit(System.Windows.Forms.DataGridViewCellCancelEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.ColumnDataPropertyNameChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.CurrentCell
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.ShowRowErrors
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnRowHeaderMouseClick(System.Windows.Forms.DataGridViewCellMouseEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.ColumnHeaderCellChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.Sort(System.Windows.Forms.DataGridViewColumn,System.ComponentModel.ListSortDirection)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.ColumnHeadersVisible
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.CellBeginEdit
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.Rows
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnMouseEnter(System.EventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.Sort(System.Collections.IComparer)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.EditingPanel
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.InvalidateRow(System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.EditMode
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.IsCurrentRowDirty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.AccessibilityNotifyCurrentCellChanged(System.Drawing.Point)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnMouseClick(System.Windows.Forms.MouseEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.CellValidating
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnUserAddedRow(System.Windows.Forms.DataGridViewRowEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.FirstDisplayedCell
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnCellContextMenuStripNeeded(System.Windows.Forms.DataGridViewCellContextMenuStripNeededEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnHandleCreated(System.EventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.AutoGenerateColumnsChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.CellFormatting
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnColumnDisplayIndexChanged(System.Windows.Forms.DataGridViewColumnEventArgs)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnUserDeletingRow(System.Windows.Forms.DataGridViewRowCancelEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.ProcessZeroKey(System.Windows.Forms.Keys)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.AutoSizeRowsModeChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnColumnSortModeChanged(System.Windows.Forms.DataGridViewColumnEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnRowContextMenuStripNeeded(System.Windows.Forms.DataGridViewRowContextMenuStripNeededEventArgs)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.CellLeave
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.ColumnRemoved
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.RowHeightChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.CellEndEdit
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.ProcessF2Key(System.Windows.Forms.Keys)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnRowsDefaultCellStyleChanged(System.EventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.ProcessEndKey(System.Windows.Forms.Keys)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnFontChanged(System.EventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnColumnDefaultCellStyleChanged(System.Windows.Forms.DataGridViewColumnEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.DefaultSize
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnColumnStateChanged(System.Windows.Forms.DataGridViewColumnStateChangedEventArgs)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.CurrentRow
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnRowPrePaint(System.Windows.Forms.DataGridViewRowPrePaintEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.RowValidated
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.UpdateRowErrorText(System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.CellMouseLeave
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.SetSelectedColumnCore(System.Int32,System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.ColumnStateChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnColumnHeadersHeightChanged(System.EventArgs)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.ProcessEscapeKey(System.Windows.Forms.Keys)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.SetSelectedRowCore(System.Int32,System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.AllowUserToAddRowsChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.CellEnter
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnAllowUserToOrderColumnsChanged(System.EventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnMouseWheel(System.Windows.Forms.MouseEventArgs)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnRowUnshared(System.Windows.Forms.DataGridViewRowEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.ProcessDialogKey(System.Windows.Forms.Keys)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnColumnHeadersBorderStyleChanged(System.EventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnAllowUserToResizeColumnsChanged(System.EventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.UserDeletingRow
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnCellMouseLeave(System.Windows.Forms.DataGridViewCellEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.IsCurrentCellDirty
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.AutoResizeRowHeadersWidth(System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnColumnContextMenuStripChanged(System.Windows.Forms.DataGridViewColumnEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.AutoSizeColumnModeChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnCellMouseClick(System.Windows.Forms.DataGridViewCellMouseEventArgs)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.CellMouseDoubleClick
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnRowEnter(System.Windows.Forms.DataGridViewCellEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.RowMinimumHeightChanged
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.UpdateRowHeightInfo(System.Int32,System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.AutoResizeColumn(System.Int32,System.Windows.Forms.DataGridViewAutoSizeColumnMode)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.RowHeaderMouseDoubleClick
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.DataSource
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnScroll(System.Windows.Forms.ScrollEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.AutoResizeRowHeadersWidth(System.Int32,System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode,System.Boolean,System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.Sorted
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.IsInputChar(System.Char)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnRowHeightInfoPushed(System.Windows.Forms.DataGridViewRowHeightInfoPushedEventArgs)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.AllowUserToResizeRows
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.BackgroundImageChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.CellMouseDown
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnNewRowNeeded(System.Windows.Forms.DataGridViewRowEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.GridColor
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.AutoResizeColumnHeadersHeight
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.AutoResizeRows(System.Windows.Forms.DataGridViewAutoSizeRowsMode)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.VerticalScrollBar
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.PaddingChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.ColumnAdded
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.SortCompare
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnDoubleClick(System.EventArgs)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.System#ComponentModel#ISupportInitialize#BeginInit
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnColumnToolTipTextChanged(System.Windows.Forms.DataGridViewColumnEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.FirstDisplayedScrollingRowIndex
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.ColumnDividerDoubleClick
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.VirtualMode
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.ClearSelection
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.CellDoubleClick
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnRowHeightInfoNeeded(System.Windows.Forms.DataGridViewRowHeightInfoNeededEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnRowHeaderMouseDoubleClick(System.Windows.Forms.DataGridViewCellMouseEventArgs)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnColumnMinimumWidthChanged(System.Windows.Forms.DataGridViewColumnEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.ColumnHeadersHeightSizeModeChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.Columns
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.UpdateCellValue(System.Int32,System.Int32)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.RowHeadersDefaultCellStyleChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.BorderStyle
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.RowContextMenuStripChanged
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnRowHeadersDefaultCellStyleChanged(System.EventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.CellMouseEnter
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.CellMouseUp
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnAllowUserToDeleteRowsChanged(System.EventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.EditingControlShowing
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.RowHeightInfoPushed
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnColumnHeaderMouseClick(System.Windows.Forms.DataGridViewCellMouseEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.RowEnter
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnRowValidating(System.Windows.Forms.DataGridViewCellCancelEventArgs)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.Item(System.Int32,System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnAutoSizeRowsModeChanged(System.Windows.Forms.DataGridViewAutoSizeModeEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.InvalidateColumn(System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnCellEndEdit(System.Windows.Forms.DataGridViewCellEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.AutoResizeRows
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnAutoSizeColumnsModeChanged(System.Windows.Forms.DataGridViewAutoSizeColumnsModeEventArgs)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.AutoResizeRow
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.CancelRowEdit
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.Font
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnMouseUp(System.Windows.Forms.MouseEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.CellErrorTextNeeded
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.PaintBackground(System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Rectangle)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.CurrentCellDirtyStateChanged
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.AdvancedColumnHeadersBorderStyle
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.UpdateCellErrorText(System.Int32,System.Int32)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.SetSelectedCellCore(System.Int32,System.Int32,System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridView.AutoResizeRowHeadersWidth
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.AutoResizeRows(System.Int32,System.Int32,System.Windows.Forms.DataGridViewAutoSizeRowMode,System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnCellValidating(System.Windows.Forms.DataGridViewCellValidatingEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnCellContentDoubleClick(System.Windows.Forms.DataGridViewCellEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.CellMouseMove
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.ProcessUpKey(System.Windows.Forms.Keys)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnColumnHeaderMouseDoubleClick(System.Windows.Forms.DataGridViewCellMouseEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnBindingContextChanged(System.EventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.AutoResizeColumnHeadersHeight(System.Boolean,System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.StyleChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridView.OnAutoSizeColumnModeChanged(System.Windows.Forms.DataGridViewAutoSizeColumnModeEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

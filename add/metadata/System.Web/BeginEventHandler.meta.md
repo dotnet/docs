@@ -1,4 +1,5 @@
 ---
 uid: System.Web.BeginEventHandler
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

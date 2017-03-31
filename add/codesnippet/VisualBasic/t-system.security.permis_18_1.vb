@@ -1,1 +1,0 @@
-        Dim restrictedMemberAccessPerm As New ReflectionPermission(ReflectionPermissionFlag.RestrictedMemberAccess)

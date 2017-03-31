@@ -1,24 +1,35 @@
 ---
 uid: System.Diagnostics.PerformanceData.CounterSetInstanceCounterDataSet
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceData.CounterSetInstanceCounterDataSet.Dispose
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.PerformanceData.CounterSetInstanceCounterDataSet.Item
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceData.CounterSetInstanceCounterDataSet.Finalize
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceData.CounterSetInstanceCounterDataSet.Item(System.String)
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceData.CounterSetInstanceCounterDataSet.Item(System.Int32)
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---

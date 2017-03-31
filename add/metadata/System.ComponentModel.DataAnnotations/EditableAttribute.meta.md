@@ -1,19 +1,23 @@
 ---
 uid: System.ComponentModel.DataAnnotations.EditableAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.EditableAttribute.#ctor(System.Boolean)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.EditableAttribute.AllowEdit
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.EditableAttribute.AllowInitialValue
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

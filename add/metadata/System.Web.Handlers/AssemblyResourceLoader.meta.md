@@ -1,19 +1,27 @@
 ---
 uid: System.Web.Handlers.AssemblyResourceLoader
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Handlers.AssemblyResourceLoader.#ctor
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Handlers.AssemblyResourceLoader.System#Web#IHttpHandler#IsReusable
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Handlers.AssemblyResourceLoader.System#Web#IHttpHandler#ProcessRequest(System.Web.HttpContext)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

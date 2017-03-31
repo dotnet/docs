@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the visual effect that the visual style will apply to an icon.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.IconEffect> values represent the return values of the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetEnumValue%2A?displayProperty=fullName> method when it is called with an argument value of <xref:System.Windows.Forms.VisualStyles.EnumProperty?displayProperty=fullName>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Alpha">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.IconEffect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The icon is alpha-blended.</summary>
       </Docs>
     </Member>
     <Member MemberName="Glow">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.IconEffect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The icon glows.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.IconEffect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No visual effect is applied to the icon.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pulse">
@@ -75,7 +82,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.IconEffect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The icon pulses.</summary>
       </Docs>
     </Member>
     <Member MemberName="Shadow">
@@ -91,7 +98,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.IconEffect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The icon has a shadow.</summary>
       </Docs>
     </Member>
   </Members>

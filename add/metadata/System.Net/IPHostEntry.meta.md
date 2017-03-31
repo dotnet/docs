@@ -1,24 +1,29 @@
 ---
 uid: System.Net.IPHostEntry
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.IPHostEntry.Aliases
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.IPHostEntry.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.IPHostEntry.HostName
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.IPHostEntry.AddressList
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

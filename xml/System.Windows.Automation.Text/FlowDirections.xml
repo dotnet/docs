@@ -21,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Values for <see cref="F:System.Windows.Automation.TextPattern.TextFlowDirectionsAttribute" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,7 +38,7 @@
         <ReturnType>System.Windows.Automation.Text.FlowDirections</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bottom to top.</summary>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -54,7 +54,7 @@
         <ReturnType>System.Windows.Automation.Text.FlowDirections</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Top to bottom, left to right, horizontal.</summary>
       </Docs>
     </Member>
     <Member MemberName="RightToLeft">
@@ -70,7 +70,7 @@
         <ReturnType>System.Windows.Automation.Text.FlowDirections</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Right to left.</summary>
       </Docs>
     </Member>
     <Member MemberName="Vertical">
@@ -86,7 +86,7 @@
         <ReturnType>System.Windows.Automation.Text.FlowDirections</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Vertical.</summary>
       </Docs>
     </Member>
   </Members>

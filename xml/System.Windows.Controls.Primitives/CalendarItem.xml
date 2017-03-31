@@ -37,7 +37,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the currently displayed month or year on a <see cref="T:System.Windows.Controls.Calendar" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -52,7 +52,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Primitives.CalendarItem" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,8 +69,8 @@
         <ReturnType>System.Windows.ComponentResourceKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the resource key for the <see cref="T:System.Windows.DataTemplate" /> that displays the days of the week.</summary>
+        <value>The resource key for the <see cref="T:System.Windows.DataTemplate" /> that displays the days of the week.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,7 +88,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Builds the visual tree for the <see cref="T:System.Windows.Controls.Primitives.CalendarItem" /> when a new template is applied.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

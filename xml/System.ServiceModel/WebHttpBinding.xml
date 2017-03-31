@@ -16,8 +16,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>A binding used to configure endpoints for [!INCLUDE[indigo1](~/includes/indigo1-md.md)] Web services that are exposed through HTTP requests instead of SOAP messages.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The [!INCLUDE[indigo2](~/includes/indigo2-md.md)] Web Programming Model allows developers to expose [!INCLUDE[indigo2](~/includes/indigo2-md.md)] Web services through HTTP requests that use "plain old XML" (POX) style messaging instead of SOAP-based messaging. For clients to communicate with a service using HTTP requests, an endpoint of the service must be configured with the <xref:System.ServiceModel.WebHttpBinding> that has the <xref:System.ServiceModel.Description.WebHttpBehavior> attached to it. The WCF Web Programming Model also requires that the individual service operations are annotated with the <xref:System.ServiceModel.Web.WebGetAttribute> or <xref:System.ServiceModel.Web.WebInvokeAttribute> attributes. This defines a mapping from a URI and HTTP method to the service operation, as well as the format of the messages used to call the operation and return the results. Support in [!INCLUDE[indigo2](~/includes/indigo2-md.md)] for syndication and ASP.AJAX integration are both built on top of the WCF Web Programming Model.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,8 +39,21 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.WebHttpBinding" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default security mode is <xref:System.ServiceModel.WebHttpSecurityMode>, which specifies that no security is used.  
+  
+ To use transport-level security for endpoints configured with this binding, the <xref:System.ServiceModel.WebHttpSecurityMode> value must be specified as a parameter in the <xref:System.ServiceModel.WebHttpBinding.%23ctor%28System.ServiceModel.WebHttpSecurityMode%29> constructor.  
+  
+ To use HTTP authentication without HTTPS, the <xref:System.ServiceModel.WebHttpSecurityMode> value must be specified as a parameter in the <xref:System.ServiceModel.WebHttpBinding.%23ctor%28System.ServiceModel.WebHttpSecurityMode%29> constructor.  
+  
+ The value of <xref:System.ServiceModel.WebHttpSecurityMode> cannot be set again after the binding instance is created.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -51,8 +71,20 @@
       </Parameters>
       <Docs>
         <param name="mode">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.WebHttpBinding" /> class with the type of security used by the binding explicitly specified.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To use transport-level security for endpoints configured with this binding, the <xref:System.ServiceModel.WebHttpSecurityMode> value must be specified as a parameter in the <xref:System.ServiceModel.WebHttpBinding.%23ctor%28System.ServiceModel.WebHttpSecurityMode%29> constructor.  
+  
+ To use HTTP authentication without HTTPS, the <xref:System.ServiceModel.WebHttpSecurityMode> value must be specified as a parameter in the <xref:System.ServiceModel.WebHttpBinding.%23ctor%28System.ServiceModel.WebHttpSecurityMode%29> constructor.  
+  
+ The value of <xref:System.ServiceModel.WebHttpSecurityMode> cannot be set again after the binding instance is created.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="securityMode" /> specified is not a valid <see cref="T:System.ServiceModel.WebHttpSecurityMode" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -69,9 +101,10 @@
         <Parameter Name="configurationName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="configurationName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="configurationName">The binding configuration name for the <see cref="T:System.ServiceModel.Configuration.WebHttpBindingElement" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.WebHttpBinding" /> class with a binding specified by its configuration name.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">The binding element with the name <paramref name="configurationName" /> was not found.</exception>
       </Docs>
     </Member>
     <Member MemberName="AllowCookies">
@@ -92,9 +125,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether the client accepts cookies and propagates them on future requests.</summary>
+        <value>
+          <see langword="true" /> if cookies are allowed; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is provided as a convenience for using cookies included in HTTP headers. When cookies are accepted by the client by setting the property to `true`, cookies returned from the server are automatically copied to all future client requests to that service.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BuildChannelFactory&lt;TChannel&gt;">
@@ -116,10 +157,10 @@
         <Parameter Name="parameters" Type="System.ServiceModel.Channels.BindingParameterCollection" />
       </Parameters>
       <Docs>
-        <typeparam name="TChannel">To be added.</typeparam>
-        <param name="parameters">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TChannel">The type of channel the channel factory produces.</typeparam>
+        <param name="parameters">The <see cref="T:System.ServiceModel.Channels.BindingParameterCollection" /> that specifies requirements for the channel factory built.</param>
+        <summary>Builds the channel factory stack on the client that creates a specified type of channel and that satisfies the features specified by a collection of binding parameters.</summary>
+        <returns>An <see cref="T:System.ServiceModel.Channels.IChannelFactory`1" /> of type TChannel that satisfies the features specified by the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -141,9 +182,21 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether to bypass the proxy server for local addresses.</summary>
+        <value>
+          <see langword="true" /> to bypass the proxy server for local addresses; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An Internet resource is local if it has a local address. A local address is one that is on same computer, the local LAN or intranet and is identified, syntactically, by the lack of a period (.) as in the URIs "http://webserver/" and "http://localhost/".  
+  
+ Setting the <xref:System.ServiceModel.WebHttpBinding.BypassProxyOnLocal%2A> property determines whether endpoints configured with the <xref:System.ServiceModel.WebHttpBinding> use the proxy server when accessing local resources.  
+  
+ If <xref:System.ServiceModel.WebHttpBinding.BypassProxyOnLocal%2A> is `true`, requests to local Internet resources do not use the proxy server. When <xref:System.ServiceModel.WebHttpBinding.BypassProxyOnLocal%2A> is `false`, all Internet requests are made through the proxy server.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ContentTypeMapper">
@@ -159,8 +212,8 @@
         <ReturnType>System.ServiceModel.Channels.WebContentTypeMapper</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the content type mapper.</summary>
+        <value>The content type mapper.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -179,9 +232,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns an ordered collection of binding elements contained in the current binding.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.BindingElementCollection" /> that contains the <see cref="T:System.ServiceModel.Channels.BindingElement" /> objects for the binding.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The order of the binding elements is important. It reflects the order in which the protocol and transport channels are constructed and stacked.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CrossDomainScriptAccessEnabled">
@@ -197,8 +257,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that determines if cross domain script access is enabled.</summary>
+        <value>
+          <see langword="true" /> if cross domain scripting is enabled; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -216,8 +277,8 @@
         <ReturnType>System.ServiceModel.EnvelopeVersion</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the envelope version that is used by endpoints that are configured by this binding to receive HTTP requests.</summary>
+        <value>The <see cref="T:System.ServiceModel.EnvelopeVersion" /> with the <see cref="P:System.ServiceModel.EnvelopeVersion.None" /> property that is used with endpoints configured with this binding to receive HTTP requests.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -239,9 +300,10 @@
         <ReturnType>System.ServiceModel.HostNameComparisonMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether the hostname is used to reach the service when matching the URI.</summary>
+        <value>The <see cref="P:System.ServiceModel.Configuration.WSDualHttpBindingElement.HostNameComparisonMode" /> value that indicates whether the hostname is used to reach the service when matching on the URI. The default value is <see cref="F:System.ServiceModel.HostNameComparisonMode.StrongWildcard" />, which ignores the hostname in the match.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value set is not a valid <see cref="P:System.ServiceModel.Configuration.WSDualHttpBindingElement.HostNameComparisonMode" /> value.</exception>
       </Docs>
     </Member>
     <Member MemberName="MaxBufferPoolSize">
@@ -262,9 +324,16 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the maximum amount of memory allocated, in bytes, for the buffer manager that manages the buffers required by endpoints that use this binding.</summary>
+        <value>The maximum size, in bytes, for the pool of buffers used by an endpoint configured with this binding. The default value is 65,536 bytes.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Channels.BufferManager> tries to minimize the cost of using buffers with a buffer pool. Buffers are required to process messages by the service when they come out of the channel. If there is not sufficient memory in the buffer pool to process the message load, the <xref:System.ServiceModel.Channels.BufferManager> must allocate additional memory from the CLR heap, which increases the garbage collection overhead. Extensive allocation from the CLR garbage heap is an indication that the buffer pool size is too small and that performance can be improved with a larger allocation by increasing the <xref:System.ServiceModel.WebHttpBinding.MaxBufferPoolSize%2A> limit.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxBufferSize">
@@ -286,9 +355,17 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the maximum amount of memory, in bytes, that is allocated for use by the manager of the message buffers that receive messages from the channel.</summary>
+        <value>The maximum amount of memory, in bytes, available for use by the message buffer manager. The default value is 524,288 (0x80000) bytes.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Channels.BufferManager> minimizes the cost of using buffers by using a buffer pool. Buffers are required to process messages by the service when they come out of the channel. If there is not sufficient memory in the buffer pool to process the message load, the <xref:System.ServiceModel.Channels.BufferManager> must allocate additional memory from the CLR heap, which increases the garbage collection overhead. Extensive allocation from the CLR garbage heap is an indication that the buffer pool size is too small and that performance can be improved with a larger allocation by increasing the <xref:System.ServiceModel.BasicHttpBinding.MaxBufferPoolSize%2A> limit.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value set is less than or equal to zero.</exception>
       </Docs>
     </Member>
     <Member MemberName="MaxReceivedMessageSize">
@@ -310,9 +387,18 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the maximum size, in bytes, for a message that can be processed by the binding.</summary>
+        <value>The maximum size, in bytes, for a message that is processed by the binding. The default value is 65,536 bytes.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The size of the messages that can be received on the wire by services using the <xref:System.ServiceModel.WebHttpBinding> is bounded by the amount of memory allocated for each message. This bound on message size is intended to limit exposure to denial of service (DoS) attacks.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value is less than zero.</exception>
+        <exception cref="T:System.ServiceModel.QuotaExceededException">A message exceeded the maximum size allocated.</exception>
       </Docs>
     </Member>
     <Member MemberName="ProxyAddress">
@@ -333,9 +419,16 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the URI address of the HTTP proxy.</summary>
+        <value>A <see cref="T:System.Uri" /> that serves as the address of the HTTP proxy. The default value is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.ServiceModel.WebHttpBinding.UseDefaultWebProxy%2A> is set to `true`, the value of <xref:System.ServiceModel.WebHttpBinding.ProxyAddress%2A> is ignored.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReaderQuotas">
@@ -352,9 +445,29 @@
         <ReturnType>System.Xml.XmlDictionaryReaderQuotas</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets constraints on the complexity of SOAP messages that can be processed by endpoints configured with this binding.</summary>
+        <value>The <see cref="T:System.Xml.XmlDictionaryReaderQuotas" /> that specifies the complexity constraints.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The complexity constraints protect against a class of denial of service (DOS) attacks that attempt to use message complexity to tie up endpoint processing resources. The properties that express these constraints and their default values (in bytes) are as follows:  
+  
+-   <xref:System.Xml.XmlDictionaryReaderQuotas.MaxDepth%2A> = 32  
+  
+-   <xref:System.Xml.XmlDictionaryReaderQuotas.MaxStringContentLength%2A> = 8192  
+  
+-   <xref:System.Xml.XmlDictionaryReaderQuotas.MaxArrayLength%2A> = 16384  
+  
+-   <xref:System.Xml.XmlDictionaryReaderQuotas.MaxBytesPerRead%2A> = 4096  
+  
+-   <xref:System.Xml.XmlDictionaryReaderQuotas.MaxNameTableCharCount%2A> = 16384  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The value set is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The quota values of <see cref="T:System.Xml.XmlDictionaryReaderQuotas" /> are read only.</exception>
+        <exception cref="T:System.ArgumentException">The quotas set must be positive.</exception>
       </Docs>
     </Member>
     <Member MemberName="Scheme">
@@ -371,8 +484,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the URI transport scheme for the channels and listeners that are configured with this binding.</summary>
+        <value>"https" if the <see cref="P:System.ServiceModel.WebHttpBinding.Security" /> is set to <see cref="F:System.ServiceModel.WebHttpSecurityMode.Transport" />; "http" if it is set to <see cref="F:System.ServiceModel.WebHttpSecurityMode.None" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -390,9 +503,19 @@
         <ReturnType>System.ServiceModel.WebHttpSecurity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the security settings used with this binding.</summary>
+        <value>The <see cref="T:System.ServiceModel.WebHttpSecurity" /> that is used with this binding. The default value is <see cref="F:System.ServiceModel.WebHttpSecurityMode.None" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To use a non-default type of security, use the <xref:System.ServiceModel.WebHttpBinding.%23ctor%28System.ServiceModel.WebHttpSecurityMode%29> constructor.  
+  
+> [!NOTE]
+>  If you set this property to <xref:System.ServiceModel.WebHttpSecurityMode> and you are using HTTP, be aware that credentials are sent over the wire in plain text.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeReaderQuotas">
@@ -415,8 +538,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Determines if reader quotas should be serialized.</summary>
+        <returns>
+          <see langword="true" /> if reader quotas should be serialized; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -440,8 +564,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Determines if security settings should be serialized.</summary>
+        <returns>
+          <see langword="true" /> if security settings should be serialized; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -465,8 +590,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Determines if the encoding used for serialization should be serialized.</summary>
+        <returns>
+          <see langword="true" /> if the encoding should be serialized; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -484,9 +610,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether incoming requests are handled synchronously or asynchronously.</summary>
+        <value>
+          <see langword="true" /> if incoming requests are handled synchronously; <see langword="false" /> if incoming requests are handled asynchronously. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This run-time behavior for receiving messages in either a service or client application can be changed using the [\&lt;synchronousReceive\&gt;](../Topic/%3CsynchronousReceive%3E%20element.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TransferMode">
@@ -507,9 +641,10 @@
         <ReturnType>System.ServiceModel.TransferMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether the service configured with the binding uses streamed or buffered (or both) modes of message transfer.</summary>
+        <value>The <see cref="T:System.ServiceModel.TransferMode" /> value that indicates whether the service configured with the binding uses streamed or buffered (or both) modes of message transfer. The default value is <see cref="F:System.ServiceModel.TransferMode.Buffered" />.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value set is not a valid <see cref="T:System.ServiceModel.TransferMode" /> value.</exception>
       </Docs>
     </Member>
     <Member MemberName="UseDefaultWebProxy">
@@ -530,9 +665,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether the auto-configured HTTP proxy of the system should be used, if available.</summary>
+        <value>
+          <see langword="true" /> if the auto-configured HTTP proxy of the system should be used, if available; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ It is an error for this to be `true` and <xref:System.ServiceModel.WebHttpBinding.ProxyAddress%2A> to be non-`null`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteEncoding">
@@ -549,9 +692,10 @@
         <ReturnType>System.Text.Encoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the character encoding that is used for the message text.</summary>
+        <value>The <see cref="T:System.Text.Encoding" /> that indicates the character encoding that is used. The default is <see cref="T:System.Text.UTF8Encoding" />.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The value set is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

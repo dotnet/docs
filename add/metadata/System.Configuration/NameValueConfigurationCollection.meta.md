@@ -1,39 +1,57 @@
 ---
 uid: System.Configuration.NameValueConfigurationCollection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.NameValueConfigurationCollection.Remove(System.Configuration.NameValueConfigurationElement)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.NameValueConfigurationCollection.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.NameValueConfigurationCollection.Item
 ---
 
 ---
 uid: System.Configuration.NameValueConfigurationCollection.AllKeys
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.NameValueConfigurationCollection.Clear
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.NameValueConfigurationCollection.Remove(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.NameValueConfigurationCollection.Add(System.Configuration.NameValueConfigurationElement)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.NameValueConfigurationCollection.Item(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.NameValueConfigurationCollection.Remove
+ms.author: "riande"
+manager: "wpickett"
 ---

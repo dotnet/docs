@@ -1,9 +1,13 @@
 ---
 uid: System.Drawing.Design.IToolboxItemProvider
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Design.IToolboxItemProvider.Items
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

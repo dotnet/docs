@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.AuthenticationServiceManager
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.AuthenticationServiceManager.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.AuthenticationServiceManager.Path
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

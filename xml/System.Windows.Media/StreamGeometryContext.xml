@@ -15,8 +15,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Describes a geometry using drawing commands. This class is used with the <see cref="T:System.Windows.Media.StreamGeometry" /> class to create a lightweight geometry that does not support data binding, animation, or modification.</summary>
     <remarks>To be added.</remarks>
+    <exception cref="T:System.InvalidOperationException">An attempt was made to add a segment without starting a figure by calling the <see cref="M:System.Windows.Media.StreamGeometryContext.BeginFigure(System.Windows.Point,System.Boolean,System.Boolean)" /> method.</exception>
   </Docs>
   <Members>
     <Member MemberName="ArcTo">
@@ -41,15 +42,35 @@
         <Parameter Name="isSmoothJoin" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="point">To be added.</param>
-        <param name="size">To be added.</param>
-        <param name="rotationAngle">To be added.</param>
-        <param name="isLargeArc">To be added.</param>
-        <param name="sweepDirection">To be added.</param>
-        <param name="isStroked">To be added.</param>
-        <param name="isSmoothJoin">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="point">The destination point for the end of the arc.</param>
+        <param name="size">The radii (half the width and half the height) of an oval whose perimeter is used to draw the angle. If the oval is very rounded in all directions, the arc will be rounded, if it is nearly flat, so will the arc. For example, a very large width and height would represent a very large oval, which would give a slight curvature for the angle.</param>
+        <param name="rotationAngle">The rotation angle of the oval that specifies the curve. The curvature of the arc can be rotated with this parameter.</param>
+        <param name="isLargeArc">
+          <see langword="true" /> to draw the arc greater than 180 degrees; otherwise, <see langword="false" />.</param>
+        <param name="sweepDirection">A value that indicates whether the arc is drawn in the <see cref="F:System.Windows.Media.SweepDirection.Clockwise" /> or <see cref="F:System.Windows.Media.SweepDirection.Counterclockwise" /> direction.</param>
+        <param name="isStroked">
+          <see langword="true" /> to make the segment stroked when a <see cref="T:System.Windows.Media.Pen" /> is used to render the segment; otherwise, <see langword="false" />.</param>
+        <param name="isSmoothJoin">
+          <see langword="true" /> to treat the join between this segment and the previous segment as a corner when stroked with a <see cref="T:System.Windows.Media.Pen" />; otherwise, <see langword="false" />.</param>
+        <summary>Draws an arc to the specified point.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method uses the end point of the previous segment as its starting point. If this is the first segment in a figure, it uses the point specified by the <xref:System.Windows.Media.StreamGeometryContext.BeginFigure%2A> method as its start point.  
+  
+ A <xref:System.Windows.Media.StreamGeometry> cannot be serialized if it contains a <xref:System.Windows.Media.Transform> or any non-stroked or unfilled segments.  
+  
+   
+  
+## Examples  
+ The following example shows how to draw an arc using the <xref:System.Windows.Media.StreamGeometryContext.ArcTo%2A> method.  
+  
+ [!code-csharp[GeometriesMiscSnippets_procedural_snip#StreamGeometryArcToExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/CSharp/StreamGeometryArcToExample.cs#streamgeometryarctoexamplewholepage)]
+ [!code-vb[GeometriesMiscSnippets_procedural_snip#StreamGeometryArcToExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/visualbasic/streamgeometryarctoexample.vb#streamgeometryarctoexamplewholepage)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginFigure">
@@ -70,11 +91,22 @@
         <Parameter Name="isClosed" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="startPoint">To be added.</param>
-        <param name="isFilled">To be added.</param>
-        <param name="isClosed">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="startPoint">The <see cref="T:System.Windows.Point" /> where the figure begins.</param>
+        <param name="isFilled">
+          <see langword="true" /> to use the area contained by this figure for hit-testing, rendering, and clipping; otherwise, <see langword="false" />.</param>
+        <param name="isClosed">
+          <see langword="true" /> to close the figure; otherwise, <see langword="false" />. For example, if two connecting lines are drawn, and <c>isClosed</c> is set to <see langword="false" />, the drawing will just be of two lines but if <c>isClosed</c> is set to <see langword="true" />, the two lines will be closed to create a triangle.</param>
+        <summary>Specifies the starting point for a new figure.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By calling this method multiple times, you can create multiple figures (self-contained geometric shapes) within this <xref:System.Windows.Media.StreamGeometryContext>.  
+  
+ A <xref:System.Windows.Media.StreamGeometry> cannot be serialized if it contains a <xref:System.Windows.Media.Transform> or any non-stroked or unfilled segments.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BezierTo">
@@ -97,13 +129,35 @@
         <Parameter Name="isSmoothJoin" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="point1">To be added.</param>
-        <param name="point2">To be added.</param>
-        <param name="point3">To be added.</param>
-        <param name="isStroked">To be added.</param>
-        <param name="isSmoothJoin">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="point1">The first control point used to specify the shape of the curve.</param>
+        <param name="point2">The second control point used to specify the shape of the curve.</param>
+        <param name="point3">The destination point for the end of the curve.</param>
+        <param name="isStroked">
+          <see langword="true" /> to make the segment stroked when a <see cref="T:System.Windows.Media.Pen" /> is used to render the segment; otherwise, <see langword="false" />.</param>
+        <param name="isSmoothJoin">
+          <see langword="true" /> to treat the join between this segment and the previous segment as a corner when stroked with a <see cref="T:System.Windows.Media.Pen" />; otherwise, <see langword="false" />.</param>
+        <summary>Draws a Bezier curve to the specified point.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A cubic Bezier curve is defined by a start point, end point, and two control points. The first control point determines the curvature of the first half of the segment, and the second control point determines the curvature of the second half of the segment.  
+  
+ This method uses the end point of the previous segment as its starting point. If this is the first segment in a figure, it uses the point specified by the <xref:System.Windows.Media.StreamGeometryContext.BeginFigure%2A> method as its start point.  
+  
+ A <xref:System.Windows.Media.StreamGeometry> cannot be serialized if it contains a <xref:System.Windows.Media.Transform> or any non-stroked or unfilled segments.  
+  
+   
+  
+## Examples  
+ The following example shows how to draw a Bezier curve using the <xref:System.Windows.Media.StreamGeometryContext.BezierTo%2A> method.  
+  
+ [!code-csharp[GeometriesMiscSnippets_procedural_snip#StreamGeometryBezierToExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/CSharp/StreamGeometryBezierToExample.cs#streamgeometrybeziertoexamplewholepage)]
+ [!code-vb[GeometriesMiscSnippets_procedural_snip#StreamGeometryBezierToExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/visualbasic/streamgeometrybeziertoexample.vb#streamgeometrybeziertoexamplewholepage)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">An attempt was made to add a segment without starting a figure by calling the <see cref="M:System.Windows.Media.StreamGeometryContext.BeginFigure(System.Windows.Point,System.Boolean,System.Boolean)" /> method.</exception>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -120,8 +174,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Closes this context and flushes its content so that it can be rendered.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Once closed, the context cannot be modified. The context must be closed before its content can be rendered.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">This context has already been closed or disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="LineTo">
@@ -142,11 +204,31 @@
         <Parameter Name="isSmoothJoin" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="point">To be added.</param>
-        <param name="isStroked">To be added.</param>
-        <param name="isSmoothJoin">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="point">The destination point for the end of the line.</param>
+        <param name="isStroked">
+          <see langword="true" /> to make the segment stroked when a <see cref="T:System.Windows.Media.Pen" /> is used to render the segment; otherwise, <see langword="false" />.</param>
+        <param name="isSmoothJoin">
+          <see langword="true" /> to treat the join between this segment and the previous segment as a corner when stroked with a <see cref="T:System.Windows.Media.Pen" />; otherwise, <see langword="false" />.</param>
+        <summary>Draws a straight line to the specified <see cref="T:System.Windows.Point" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method uses the end point of the previous segment as its starting point. If this is the first segment in a figure, it uses the point specified by the <xref:System.Windows.Media.StreamGeometryContext.BeginFigure%2A> method as its start point.  
+  
+ A <xref:System.Windows.Media.StreamGeometry> cannot be serialized if it contains a <xref:System.Windows.Media.Transform> or any non-stroked or unfilled segments.  
+  
+   
+  
+## Examples  
+ The following example shows how to draw a triangle using the <xref:System.Windows.Media.StreamGeometryContext.LineTo%2A> method.  
+  
+ [!code-csharp[GeometriesMiscSnippets_procedural_snip#StreamGeometryTriangleExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/CSharp/StreamGeometryTriangleExample.cs#streamgeometrytriangleexamplewholepage)]
+ [!code-vb[GeometriesMiscSnippets_procedural_snip#StreamGeometryTriangleExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/visualbasic/streamgeometrytriangleexample.vb#streamgeometrytriangleexamplewholepage)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">An attempt was made to add a segment without starting a figure by calling the <see cref="M:System.Windows.Media.StreamGeometryContext.BeginFigure(System.Windows.Point,System.Boolean,System.Boolean)" /> method.</exception>
       </Docs>
     </Member>
     <Member MemberName="PolyBezierTo">
@@ -167,11 +249,33 @@
         <Parameter Name="isSmoothJoin" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="points">To be added.</param>
-        <param name="isStroked">To be added.</param>
-        <param name="isSmoothJoin">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="points">The list of points that specify control points and destination points for one or more Bezier curves. The number of points in this list should be a multiple of three.</param>
+        <param name="isStroked">
+          <see langword="true" /> to make the segment stroked when a <see cref="T:System.Windows.Media.Pen" /> is used to render the segment; otherwise, <see langword="false" />.</param>
+        <param name="isSmoothJoin">
+          <see langword="true" /> to treat the join between this segment and the previous segment as a corner when stroked with a <see cref="T:System.Windows.Media.Pen" />; otherwise, <see langword="false" />.</param>
+        <summary>Draws one or more connected Bezier curves.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The first point in `points` specifies the first control point, the next specifies the second control point, the third point specifies the end point, the next point specifies the first control point of the next curve, and so on.  
+  
+ This method uses the end point of the previous segment as its starting point. If this is the first segment in a figure, it uses the point specified by the <xref:System.Windows.Media.StreamGeometryContext.BeginFigure%2A> method as its start point.  
+  
+ A <xref:System.Windows.Media.StreamGeometry> cannot be serialized if it contains a <xref:System.Windows.Media.Transform> or any non-stroked or unfilled segments.  
+  
+   
+  
+## Examples  
+ The following example shows how to draw multiple connected Bezier curves using the <xref:System.Windows.Media.StreamGeometryContext.PolyBezierTo%2A> method.  
+  
+ [!code-csharp[GeometriesMiscSnippets_procedural_snip#StreamGeometryPolyBezierToExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/CSharp/StreamGeometryPolyBezierToExample.cs#streamgeometrypolybeziertoexamplewholepage)]
+ [!code-vb[GeometriesMiscSnippets_procedural_snip#StreamGeometryPolyBezierToExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/visualbasic/streamgeometrypolybeziertoexample.vb#streamgeometrypolybeziertoexamplewholepage)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">An attempt was made to add a segment without starting a figure by calling the <see cref="M:System.Windows.Media.StreamGeometryContext.BeginFigure(System.Windows.Point,System.Boolean,System.Boolean)" /> method.</exception>
       </Docs>
     </Member>
     <Member MemberName="PolyLineTo">
@@ -192,11 +296,31 @@
         <Parameter Name="isSmoothJoin" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="points">To be added.</param>
-        <param name="isStroked">To be added.</param>
-        <param name="isSmoothJoin">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="points">The collection of points that specify destination points for one or more connected straight lines.</param>
+        <param name="isStroked">
+          <see langword="true" /> to make the segment stroked when a <see cref="T:System.Windows.Media.Pen" /> is used to render the segment; otherwise, <see langword="false" />.</param>
+        <param name="isSmoothJoin">
+          <see langword="true" /> to treat the join between this segment and the previous segment as a corner when stroked with a <see cref="T:System.Windows.Media.Pen" />; otherwise, <see langword="false" />.</param>
+        <summary>Draws one or more connected straight lines.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method uses the end point of the previous segment as its starting point. If this is the first segment in a figure, it uses the point specified by the <xref:System.Windows.Media.StreamGeometryContext.BeginFigure%2A> method as its start point.  
+  
+ A <xref:System.Windows.Media.StreamGeometry> cannot be serialized if it contains a <xref:System.Windows.Media.Transform> or any non-stroked or unfilled segments.  
+  
+   
+  
+## Examples  
+ The following example shows how to draw a triangle using the <xref:System.Windows.Media.StreamGeometryContext.PolyLineTo%2A> method.  
+  
+ [!code-csharp[GeometriesMiscSnippets_procedural_snip#StreamGeometryPolyLineToExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/CSharp/StreamGeometryPolyLineToExample.cs#streamgeometrypolylinetoexamplewholepage)]
+ [!code-vb[GeometriesMiscSnippets_procedural_snip#StreamGeometryPolyLineToExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/visualbasic/streamgeometrypolylinetoexample.vb#streamgeometrypolylinetoexamplewholepage)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">An attempt was made to add a segment without starting a figure by calling the <see cref="M:System.Windows.Media.StreamGeometryContext.BeginFigure(System.Windows.Point,System.Boolean,System.Boolean)" /> method.</exception>
       </Docs>
     </Member>
     <Member MemberName="PolyQuadraticBezierTo">
@@ -217,11 +341,31 @@
         <Parameter Name="isSmoothJoin" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="points">To be added.</param>
-        <param name="isStroked">To be added.</param>
-        <param name="isSmoothJoin">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="points">The collection of points that specify control points and destination points for one or more quadratic Bezier curves. The first point in the list specifies the curve's control point, the next point specifies the destination point, the next point specifies the control point of the next curve, and so on. The list must contain an even number of points.</param>
+        <param name="isStroked">
+          <see langword="true" /> to make the segment stroked when a <see cref="T:System.Windows.Media.Pen" /> is used to render the segment; otherwise, <see langword="false" />.</param>
+        <param name="isSmoothJoin">
+          <see langword="true" /> to treat the join between this segment and the previous segment as a corner when stroked with a <see cref="T:System.Windows.Media.Pen" />; otherwise, <see langword="false" />.</param>
+        <summary>Draws one or more connected quadratic Bezier curves.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method uses the end point of the previous segment as its starting point. If this is the first segment in a figure, it uses the point specified by the <xref:System.Windows.Media.StreamGeometryContext.BeginFigure%2A> method as its start point.  
+  
+ A <xref:System.Windows.Media.StreamGeometry> cannot be serialized if it contains a <xref:System.Windows.Media.Transform> or any non-stroked or unfilled segments.  
+  
+   
+  
+## Examples  
+ The following example shows how to draw multiple connected quadratic Bezier curves using the <xref:System.Windows.Media.StreamGeometryContext.PolyQuadraticBezierTo%2A> method.  
+  
+ [!code-csharp[GeometriesMiscSnippets_procedural_snip#StreamGeometryPolyQuadraticBezierToExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/CSharp/StreamGeometryPolyQuadraticBezierToExample.cs#streamgeometrypolyquadraticbeziertoexamplewholepage)]
+ [!code-vb[GeometriesMiscSnippets_procedural_snip#StreamGeometryPolyQuadraticBezierToExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/visualbasic/streamgeometrypolyquadraticbeziertoexample.vb#streamgeometrypolyquadraticbeziertoexamplewholepage)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">An attempt was made to add a segment without starting a figure by calling the <see cref="M:System.Windows.Media.StreamGeometryContext.BeginFigure(System.Windows.Point,System.Boolean,System.Boolean)" /> method.</exception>
       </Docs>
     </Member>
     <Member MemberName="QuadraticBezierTo">
@@ -243,12 +387,34 @@
         <Parameter Name="isSmoothJoin" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="point1">To be added.</param>
-        <param name="point2">To be added.</param>
-        <param name="isStroked">To be added.</param>
-        <param name="isSmoothJoin">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="point1">The control point used to specify the shape of the curve.</param>
+        <param name="point2">The destination point for the end of the curve.</param>
+        <param name="isStroked">
+          <see langword="true" /> to make the segment stroked when a <see cref="T:System.Windows.Media.Pen" /> is used to render the segment; otherwise, <see langword="false" />.</param>
+        <param name="isSmoothJoin">
+          <see langword="true" /> to treat the join between this segment and the previous segment as a corner when stroked with a <see cref="T:System.Windows.Media.Pen" />; otherwise, <see langword="false" />.</param>
+        <summary>Draws a quadratic Bezier curve.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Unlike a cubic Bezier curve, which uses two control points, a quadratic cubic Bezier curve uses a single control point.  
+  
+ This method uses the end point of the previous segment as its starting point. If this is the first segment in a figure, it uses the point specified by the <xref:System.Windows.Media.StreamGeometryContext.BeginFigure%2A> method as its start point.  
+  
+ A <xref:System.Windows.Media.StreamGeometry> cannot be serialized if it contains a <xref:System.Windows.Media.Transform> or any non-stroked or unfilled segments.  
+  
+   
+  
+## Examples  
+ The following example shows how to draw a quadratic Bezier curve using the <xref:System.Windows.Media.StreamGeometryContext.QuadraticBezierTo%2A> method.  
+  
+ [!code-csharp[GeometriesMiscSnippets_procedural_snip#StreamGeometryQuadraticBezierToExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/CSharp/StreamGeometryQuadraticBezierToExample.cs#streamgeometryquadraticbeziertoexamplewholepage)]
+ [!code-vb[GeometriesMiscSnippets_procedural_snip#StreamGeometryQuadraticBezierToExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/visualbasic/streamgeometryquadraticbeziertoexample.vb#streamgeometryquadraticbeziertoexamplewholepage)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">An attempt was made to add a segment without starting a figure by calling the <see cref="M:System.Windows.Media.StreamGeometryContext.BeginFigure(System.Windows.Point,System.Boolean,System.Boolean)" /> method.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.IDisposable.Dispose">
@@ -265,7 +431,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

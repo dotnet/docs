@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.WebControls.Table.RowControlCollection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Table.RowControlCollection.AddAt(System.Int32,System.Web.UI.Control)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Table.RowControlCollection.Add(System.Web.UI.Control)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

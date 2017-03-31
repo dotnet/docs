@@ -10,8 +10,25 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the direction in which an <see cref="T:System.Windows.Controls.Expander" /> control opens.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To specify the direction that an <xref:System.Windows.Controls.Expander> control expands, set the <xref:System.Windows.Controls.Expander.ExpandDirection%2A> property to one of the enumeration members.  
+  
+   
+  
+## Examples  
+ The following example shows how to set the <xref:System.Windows.Controls.Expander.ExpandDirection%2A> property to an <xref:System.Windows.Controls.ExpandDirection> enumeration member.  
+  
+ [!code-xml[ExpanderExample#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpanderExample/CSharp/Page1.xaml#1)]  
+  
+ [!code-csharp[ExpanderExample#3](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpanderExample/CSharp/Page1.xaml.cs#3)]
+ [!code-vb[ExpanderExample#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ExpanderExample/VisualBasic/Window1.xaml.vb#3)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Down">
@@ -27,7 +44,7 @@
         <ReturnType>System.Windows.Controls.ExpandDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Windows.Controls.Expander" /> control opens down.</summary>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -43,7 +60,7 @@
         <ReturnType>System.Windows.Controls.ExpandDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Windows.Controls.Expander" /> control opens left.</summary>
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -59,7 +76,7 @@
         <ReturnType>System.Windows.Controls.ExpandDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Windows.Controls.Expander" /> control opens right.</summary>
       </Docs>
     </Member>
     <Member MemberName="Up">
@@ -75,7 +92,7 @@
         <ReturnType>System.Windows.Controls.ExpandDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Windows.Controls.Expander" /> control opens up.</summary>
       </Docs>
     </Member>
   </Members>

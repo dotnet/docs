@@ -1,9 +1,13 @@
 ---
 uid: System.Windows.Automation.Peers.ContentTextAutomationPeer
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.ContentTextAutomationPeer.#ctor(System.Windows.FrameworkContentElement)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

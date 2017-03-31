@@ -20,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>A flow content element that defines a row within a <see cref="T:System.Windows.Documents.Table" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,7 +35,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new, empty instance of the <see cref="T:System.Windows.Documents.TableRow" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,8 +57,8 @@
         <ReturnType>System.Windows.Documents.TableCellCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.Windows.Documents.TableCellCollection" /> that contains cells of a <see cref="T:System.Windows.Documents.TableRow" />.</summary>
+        <value>A collection of child cells.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,8 +81,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a value that indicates whether or not the effective value of the <see cref="P:System.Windows.Documents.TableRow.Cells" /> property should be serialized during serialization of a <see cref="T:System.Windows.Documents.TableRow" /> object.</summary>
+        <returns>**true** if the <see cref="P:System.Windows.Documents.TableRow.Cells" /> property should be serialized; otherwise, **false**.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,8 +102,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The child object to add.</param>
+        <summary>
+          <see cref="P:System.Windows.Documents.TableRow.Cells" /> property to add child <see cref="T:System.Windows.Documents.TableCell" /> elements to a <see cref="T:System.Windows.Documents.TableRow" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,8 +124,8 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="text">The text to add to the object.</param>
+        <summary>Adds the text content of a node to the object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

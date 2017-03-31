@@ -14,8 +14,20 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a collection of <see cref="T:System.Web.UI.DataVisualization.Charting.CustomLabel" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataVisualization.Charting.CustomLabelsCollection> class represents a collection of <xref:System.Web.UI.DataVisualization.Charting.CustomLabel> objects, which in turn represent the custom labels that an <xref:System.Web.UI.DataVisualization.Charting.Axis> object can use. This class is exposed as the <xref:System.Web.UI.DataVisualization.Charting.Axis.CustomLabels%2A> collection property of an <xref:System.Web.UI.DataVisualization.Charting.Axis> object.  
+  
+> [!NOTE]
+>  You can automatically populate the entire label row of an axis with custom <xref:System.DateTime> labels using any <xref:System.Web.UI.DataVisualization.Charting.CustomLabelsCollection.Add%2A> method definition that includes a `DateTimeIntervalType` argument.  
+  
+ The <xref:System.Collections.ObjectModel.Collection%601.Count%2A> property indicates the total number of items in the collection, and is commonly used to find the upper bound of the collection.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -35,10 +47,22 @@
         <Parameter Name="intervalType" Type="System.Web.UI.DataVisualization.Charting.DateTimeIntervalType" />
       </Parameters>
       <Docs>
-        <param name="labelsStep">To be added.</param>
-        <param name="intervalType">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="labelsStep">A <see langword="Double" /> value that determines how often the custom labels will be drawn.</param>
+        <param name="intervalType">A <see cref="T:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType" /> enumeration value that determines the interval type.</param>
+        <summary>Adds multiple <see cref="T:System.Web.UI.DataVisualization.Charting.CustomLabel" /> objects of type <see cref="T:System.DateTime" /> to the collection. Populates the entire first row of an axis with labels.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataVisualization.Charting.CustomLabelsCollection.Add%2A> method creates and initializes <xref:System.Web.UI.DataVisualization.Charting.CustomLabel> objects for the entire first label row of an axis with <xref:System.DateTime> labels of the specified type.  
+  
+ The `labelsStep` parameter determines how often the custom labels will be drawn.  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.DataVisualization.Charting.ChartArea.RecalculateAxesScale%2A> method must be called prior to calling this particular method definition.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -59,12 +83,24 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="fromPosition">To be added.</param>
-        <param name="toPosition">To be added.</param>
-        <param name="text">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="fromPosition">The minimum value of the axis range to which the label is applied.</param>
+        <param name="toPosition">The maximum value of the axis range to which the label is applied.</param>
+        <param name="text">The label text.</param>
+        <summary>Adds a <see cref="T:System.Web.UI.DataVisualization.Charting.CustomLabel" /> object to the collection, using the given axis range and text.</summary>
+        <returns>The newly added <see cref="T:System.Web.UI.DataVisualization.Charting.CustomLabel" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Adds one custom label to the first label row of the relevant axis. No label mark is used.  
+  
+ If a custom label is used anywhere in the first label row, no labels are automatically generated for that first row.  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.DataVisualization.Charting.ChartArea.RecalculateAxesScale%2A> method must be called prior to calling this particular method definition.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -85,11 +121,23 @@
         <Parameter Name="format" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="labelsStep">To be added.</param>
-        <param name="intervalType">To be added.</param>
-        <param name="format">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="labelsStep">A <see langword="Double" /> value that determines how often the custom labels will be drawn.</param>
+        <param name="intervalType">A <see cref="T:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType" /> enumeration value that determines the unit of measure for the <c>labelsStep</c> parameter.</param>
+        <param name="format">A value that determines the format of the custom label. For more information, see Date and Time Format Strings.</param>
+        <summary>Adds multiple <see cref="T:System.DateTime" /><see cref="T:System.Web.UI.DataVisualization.Charting.CustomLabelsCollection" /> objects to the collection. Populates the entire first row of an axis with labels with the specified format.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method creates and initializes <xref:System.Web.UI.DataVisualization.Charting.CustomLabel> objects for an axis' entire first label row with <xref:System.DateTime> labels of the specified type.  
+  
+ The step determines how often the custom labels will be drawn, and optional label formatting can be specified as well.  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.DataVisualization.Charting.ChartArea.RecalculateAxesScale%2A> method must be called prior to calling this particular method definition.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -112,13 +160,13 @@
         <Parameter Name="markStyle" Type="System.Web.UI.DataVisualization.Charting.LabelMarkStyle" />
       </Parameters>
       <Docs>
-        <param name="fromPosition">To be added.</param>
-        <param name="toPosition">To be added.</param>
-        <param name="text">To be added.</param>
-        <param name="rowIndex">To be added.</param>
-        <param name="markStyle">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="fromPosition">The minimum value of the axis range the label is applied to.</param>
+        <param name="toPosition">The maximum value of the axis range the label is applied to.</param>
+        <param name="text">The label text.</param>
+        <param name="rowIndex">The label row index.</param>
+        <param name="markStyle">A <see cref="T:System.Web.UI.DataVisualization.Charting.LabelMarkstyle" /> enumeration value that specifies the tick mark style used for the label.</param>
+        <summary>Adds a custom label to the collection, using the given axis range, text, row index and marking style.</summary>
+        <returns>The newly added <see cref="T:System.Web.UI.DataVisualization.Charting.CustomLabel" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,12 +190,12 @@
         <Parameter Name="markStyle" Type="System.Web.UI.DataVisualization.Charting.LabelMarkStyle" />
       </Parameters>
       <Docs>
-        <param name="labelsStep">To be added.</param>
-        <param name="intervalType">To be added.</param>
-        <param name="format">To be added.</param>
-        <param name="rowIndex">To be added.</param>
-        <param name="markStyle">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="labelsStep">A <see langword="Double" /> value that determines how often the custom labels will be drawn.</param>
+        <param name="intervalType">A <see cref="T:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType" /> enumeration value that determines the unit of measure for the <c>labelsStep</c> parameter.</param>
+        <param name="format">The label text format.</param>
+        <param name="rowIndex">The label row index.</param>
+        <param name="markStyle">A <see cref="T:System.Web.UI.DataVisualization.Charting.LabelMarkstyle" /> enumeration value that specifies the tick mark style used for the label.</param>
+        <summary>Adds multiple custom labels to the collection. The labels will be <see cref="T:System.DateTime" /> labels with the specified interval type, text format, row index and marking style.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -172,14 +220,14 @@
         <Parameter Name="gridTick" Type="System.Web.UI.DataVisualization.Charting.GridTickTypes" />
       </Parameters>
       <Docs>
-        <param name="fromPosition">To be added.</param>
-        <param name="toPosition">To be added.</param>
-        <param name="text">To be added.</param>
-        <param name="rowIndex">To be added.</param>
-        <param name="markStyle">To be added.</param>
-        <param name="gridTick">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="fromPosition">The minimum value of the axis range the label is applied to.</param>
+        <param name="toPosition">The maximum value of the axis range the label is applied to.</param>
+        <param name="text">The label text.</param>
+        <param name="rowIndex">The label row index.</param>
+        <param name="markStyle">A <see cref="T:System.Web.UI.DataVisualization.Charting.LabelMarkstyle" /> enumeration value that specifies the tick mark style used for the label.</param>
+        <param name="gridTick">A <see cref="T:System.Web.UI.DataVisualization.Charting.GridTickTypes" /> enumeration value that specifies the grid tick type used for the label.</param>
+        <summary>Adds a custom label to the collection, using the given axis range, text, row index, marking style and grid tick type.</summary>
+        <returns>The newly added <see cref="T:System.Web.UI.DataVisualization.Charting.CustomLabel" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -205,14 +253,14 @@
         <Parameter Name="markStyle" Type="System.Web.UI.DataVisualization.Charting.LabelMarkStyle" />
       </Parameters>
       <Docs>
-        <param name="labelsStep">To be added.</param>
-        <param name="intervalType">To be added.</param>
-        <param name="min">To be added.</param>
-        <param name="max">To be added.</param>
-        <param name="format">To be added.</param>
-        <param name="rowIndex">To be added.</param>
-        <param name="markStyle">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="labelsStep">A <see langword="Double" /> value that determines how often the custom labels will be drawn.</param>
+        <param name="intervalType">A <see cref="T:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType" /> enumeration value that determines the unit of measure for the <c>labelsStep</c> parameter.</param>
+        <param name="min">The minimum value of the axis range.</param>
+        <param name="max">The maximum value of the axis range.</param>
+        <param name="format">The label text format.</param>
+        <param name="rowIndex">The label row index.</param>
+        <param name="markStyle">A <see cref="T:System.Web.UI.DataVisualization.Charting.LabelMarkstyle" /> enumeration value that specifies the tick mark style used for the label.</param>
+        <summary>Adds multiple custom labels to the collection. The labels will be <see cref="T:System.DateTime" /> labels with the specified interval type, and will be generated for the axis range that is determined by the <paramref name="min" /> and <paramref name="max" /> arguments.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

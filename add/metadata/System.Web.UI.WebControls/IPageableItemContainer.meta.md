@@ -1,24 +1,29 @@
 ---
 uid: System.Web.UI.WebControls.IPageableItemContainer
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.IPageableItemContainer.SetPageProperties(System.Int32,System.Int32,System.Boolean)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.IPageableItemContainer.TotalRowCountAvailable
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.IPageableItemContainer.StartRowIndex
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.IPageableItemContainer.MaximumRows
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

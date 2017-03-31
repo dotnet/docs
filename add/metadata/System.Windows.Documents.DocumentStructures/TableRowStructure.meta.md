@@ -1,34 +1,43 @@
 ---
 uid: System.Windows.Documents.DocumentStructures.TableRowStructure
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Documents.DocumentStructures.TableRowStructure.Add(System.Windows.Documents.DocumentStructures.TableCellStructure)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Documents.DocumentStructures.TableRowStructure.System#Collections#Generic#IEnumerable{System#Windows#Documents#DocumentStructures#TableCellStructure}#GetEnumerator
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Documents.DocumentStructures.TableRowStructure.System#Windows#Markup#IAddChild#AddChild(System.Object)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Documents.DocumentStructures.TableRowStructure.#ctor
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Documents.DocumentStructures.TableRowStructure.System#Collections#IEnumerable#GetEnumerator
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Documents.DocumentStructures.TableRowStructure.System#Windows#Markup#IAddChild#AddText(System.String)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

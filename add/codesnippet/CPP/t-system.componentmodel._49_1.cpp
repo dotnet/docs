@@ -1,1 +1,0 @@
-         throw gcnew CodeDomSerializerException( "This exception was raised as an example.", gcnew CodeLinePragma( "Example.txt", 20 ) );

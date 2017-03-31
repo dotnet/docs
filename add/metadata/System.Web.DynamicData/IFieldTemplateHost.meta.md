@@ -1,24 +1,29 @@
 ---
 uid: System.Web.DynamicData.IFieldTemplateHost
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.IFieldTemplateHost.Mode
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.IFieldTemplateHost.FormattingOptions
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.IFieldTemplateHost.Column
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.IFieldTemplateHost.ValidationGroup
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

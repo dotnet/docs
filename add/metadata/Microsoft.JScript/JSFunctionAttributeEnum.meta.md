@@ -1,4 +1,4 @@
 ---
 uid: Microsoft.JScript.JSFunctionAttributeEnum
-internalonly: False
+ms.author: "mikejo"
 ---

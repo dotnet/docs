@@ -1,4 +1,6 @@
 ---
 uid: System.Activities.Hosting.WorkflowInstanceState
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

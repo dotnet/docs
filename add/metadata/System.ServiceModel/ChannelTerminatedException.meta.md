@@ -1,24 +1,41 @@
 ---
 uid: System.ServiceModel.ChannelTerminatedException
-internalonly: False
----
-
----
-uid: System.ServiceModel.ChannelTerminatedException.#ctor(System.String,System.Exception)
-internalonly: False
----
-
----
-uid: System.ServiceModel.ChannelTerminatedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
----
-
----
-uid: System.ServiceModel.ChannelTerminatedException.#ctor(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.ChannelTerminatedException.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.ChannelTerminatedException.#ctor(System.String,System.Exception)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.ChannelTerminatedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.ChannelTerminatedException.#ctor(System.String)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.ChannelTerminatedException.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

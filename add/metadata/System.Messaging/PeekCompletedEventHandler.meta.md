@@ -1,4 +1,4 @@
 ---
 uid: System.Messaging.PeekCompletedEventHandler
-internalonly: False
+manager: "tyoung"
 ---

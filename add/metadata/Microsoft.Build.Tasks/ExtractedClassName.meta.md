@@ -1,14 +1,17 @@
 ---
 uid: Microsoft.Build.Tasks.ExtractedClassName
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.ExtractedClassName.IsInsideConditionalBlock
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.ExtractedClassName.Name
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

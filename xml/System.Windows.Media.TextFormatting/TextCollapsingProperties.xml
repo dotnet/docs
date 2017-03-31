@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the characteristics of collapsed text.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Line collapsing is the ability to reduce displaying space for a line by not showing part of the line's text. Depending on the collapsing style, a collapsing symbol may be shown at the location where the collapsed text occurred.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.TextFormatting.TextCollapsingProperties" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +50,8 @@
         <ReturnType>System.Windows.Media.TextFormatting.TextCollapsingStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the style of the collapsed text.</summary>
+        <value>An enumerated value of <see cref="T:System.Windows.Media.TextFormatting.TextCollapsingStyle" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +68,8 @@
         <ReturnType>System.Windows.Media.TextFormatting.TextRun</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the text run that is used as the collapsed text symbol.</summary>
+        <value>A <see cref="T:System.Windows.Media.TextFormatting.TextRun" /> value that represents the collapsed text symbol.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,8 +86,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the width of the range of collapsed text.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the width of the range of collapsed text.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

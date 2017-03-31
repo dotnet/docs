@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the possible states for the receive context state machine.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.ServiceModel.Channels.ReceiveContextState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the abandoned state.</summary>
       </Docs>
     </Member>
     <Member MemberName="Abandoning">
@@ -43,7 +43,7 @@
         <ReturnType>System.ServiceModel.Channels.ReceiveContextState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the abandoning state.</summary>
       </Docs>
     </Member>
     <Member MemberName="Completed">
@@ -59,7 +59,7 @@
         <ReturnType>System.ServiceModel.Channels.ReceiveContextState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the completed state.</summary>
       </Docs>
     </Member>
     <Member MemberName="Completing">
@@ -75,7 +75,7 @@
         <ReturnType>System.ServiceModel.Channels.ReceiveContextState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the completing state.</summary>
       </Docs>
     </Member>
     <Member MemberName="Faulted">
@@ -91,7 +91,7 @@
         <ReturnType>System.ServiceModel.Channels.ReceiveContextState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the faulted state.</summary>
       </Docs>
     </Member>
     <Member MemberName="Received">
@@ -107,7 +107,7 @@
         <ReturnType>System.ServiceModel.Channels.ReceiveContextState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the received state.</summary>
       </Docs>
     </Member>
   </Members>

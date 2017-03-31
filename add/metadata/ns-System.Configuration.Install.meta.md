@@ -1,4 +1,6 @@
 ---
 uid: System.Configuration.Install
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

@@ -1,14 +1,14 @@
 ---
 uid: Microsoft.JScript.IAuthorServices
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.IAuthorServices.GetCodeSense
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.IAuthorServices.GetColorizer
-internalonly: False
+ms.author: "mikejo"
 ---

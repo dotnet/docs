@@ -23,8 +23,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a content anchor or cargo resource for an <see cref="T:System.Windows.Annotations.Annotation" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Annotations.AnnotationResource> elements are used to model <xref:System.Windows.Annotations.Annotation.Anchors%2A> (the data that is being annotated) and <xref:System.Windows.Annotations.Annotation.Cargos%2A> (the data provided by the user such as a text note) in an <xref:System.Windows.Annotations.Annotation>.  
+  
+ Through the use of <xref:System.Windows.Annotations.AnnotationResource.ContentLocators%2A> an <xref:System.Windows.Annotations.AnnotationResource> can refer to the content, directly contain the content, or both.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,8 +47,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>This constructor supports the [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is intended for annotation serializer use only.  For application needs, use the <xref:System.Windows.Annotations.AnnotationResource.%23ctor%2A> constructor that accepts a specified `name` parameter.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -55,9 +71,18 @@
         <Parameter Name="id" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="id">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="id">The [!INCLUDE[TLA#tla_guid](~/includes/tlasharptla-guid-md.md)] that identifies this resource.</param>
+        <summary>This constructor supports the [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is intended for annotation serializer use only.  For application needs, use the <xref:System.Windows.Annotations.AnnotationResource.%23ctor%2A> constructor that accepts a specified `name` parameter.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="id" /> is equal to Guid.Empty.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -73,9 +98,20 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="name">A name to identify this resource from other <see cref="P:System.Windows.Annotations.Annotation.Anchors" /> and <see cref="P:System.Windows.Annotations.Annotation.Cargos" /> defined in the same annotation.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Annotations.AnnotationResource" /> class with a specified name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `name` parameter is provided for convenience only and no validation is performed on the string.  
+  
+ The <xref:System.Windows.Annotations.AnnotationResource.%23ctor%2A> constructor automatically creates a unique [!INCLUDE[TLA#tla_guid](~/includes/tlasharptla-guid-md.md)] that is accessible through the <xref:System.Windows.Annotations.AnnotationResource.Id%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContentLocators">
@@ -91,9 +127,16 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Windows.Annotations.ContentLocatorBase&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the collection of <see cref="T:System.Windows.Annotations.ContentLocatorBase" /> elements contained in this resource.</summary>
+        <value>The collection of content locators contained in this resource.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Annotations.AnnotationResource.ContentLocators%2A> property will never return `null`, however the collection may be empty if the resource contains no content locators.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Contents">
@@ -109,9 +152,16 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Xml.XmlElement&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of the <see cref="T:System.Xml.XmlElement" /> objects that define the content of this resource.</summary>
+        <value>The collection of the <see cref="T:System.Xml.XmlElement" /> objects that define the content of this resource.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Annotations.AnnotationResource.Contents%2A> never returns `null`; however the <xref:System.Xml.XmlElement> collection may be empty if the resource contains no content.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSchema">
@@ -128,8 +178,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Always returns <see langword="null" />.  See [Annotations Schema](../Topic/Annotations%20Schema.md) for schema details.</summary>
+        <returns>Always <see langword="null" />.  See [Annotations Schema](../Topic/Annotations%20Schema.md) for schema details.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,8 +196,8 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the [!INCLUDE[TLA2#tla_guid](~/includes/tla2sharptla-guid-md.md)] of this resource.</summary>
+        <value>The [!INCLUDE[TLA#tla_guid](~/includes/tlasharptla-guid-md.md)] that identifies this resource.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -164,8 +214,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a name for this <see cref="T:System.Windows.Annotations.AnnotationResource" />.</summary>
+        <value>The name assigned to this <see cref="T:System.Windows.Annotations.AnnotationResource" /> to distinguish it from other <see cref="P:System.Windows.Annotations.Annotation.Anchors" /> or <see cref="P:System.Windows.Annotations.Annotation.Cargos" /> in the annotation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -185,9 +235,12 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="reader">The XML reader to deserialize the <see cref="T:System.Windows.Annotations.AnnotationResource" /> from.</param>
+        <summary>Deserializes the <see cref="T:System.Windows.Annotations.AnnotationResource" /> from a specified <see cref="T:System.Xml.XmlReader" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Xml.XmlException">The serialized XML for the <see cref="T:System.Windows.Annotations.AnnotationResource" /> is not valid.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteXml">
@@ -206,9 +259,12 @@
         <Parameter Name="writer" Type="System.Xml.XmlWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The XML writer to serialize the <see cref="T:System.Windows.Annotations.AnnotationResource" />.</param>
+        <summary>Serializes the <see cref="T:System.Windows.Annotations.AnnotationResource" /> to a specified <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="writer" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Windows.Annotations.Annotation.AnnotationType" /> is not valid.</exception>
       </Docs>
     </Member>
   </Members>

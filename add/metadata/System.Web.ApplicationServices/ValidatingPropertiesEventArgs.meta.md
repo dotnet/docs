@@ -1,14 +1,20 @@
 ---
 uid: System.Web.ApplicationServices.ValidatingPropertiesEventArgs
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ApplicationServices.ValidatingPropertiesEventArgs.FailedProperties
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ApplicationServices.ValidatingPropertiesEventArgs.Properties
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

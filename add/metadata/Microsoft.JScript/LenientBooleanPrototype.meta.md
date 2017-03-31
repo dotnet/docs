@@ -1,19 +1,19 @@
 ---
 uid: Microsoft.JScript.LenientBooleanPrototype
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.LenientBooleanPrototype.constructor
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.LenientBooleanPrototype.toString
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.LenientBooleanPrototype.valueOf
-internalonly: False
+ms.author: "mikejo"
 ---

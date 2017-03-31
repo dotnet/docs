@@ -1,4 +1,5 @@
 ---
 uid: Microsoft.Build.BuildEngine.ColorSetter
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

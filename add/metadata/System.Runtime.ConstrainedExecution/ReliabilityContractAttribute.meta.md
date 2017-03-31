@@ -1,19 +1,27 @@
 ---
 uid: System.Runtime.ConstrainedExecution.ReliabilityContractAttribute
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.ConstrainedExecution.ReliabilityContractAttribute.#ctor(System.Runtime.ConstrainedExecution.Consistency,System.Runtime.ConstrainedExecution.Cer)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.ConstrainedExecution.ReliabilityContractAttribute.Cer
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.ConstrainedExecution.ReliabilityContractAttribute.ConsistencyGuarantee
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

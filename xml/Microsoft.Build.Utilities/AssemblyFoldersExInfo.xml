@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains information about entries in the AssemblyFoldersEx registry keys.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,12 +32,12 @@
         <Parameter Name="targetFrameworkVersion" Type="System.Version" />
       </Parameters>
       <Docs>
-        <param name="hive">To be added.</param>
-        <param name="view">To be added.</param>
-        <param name="registryKey">To be added.</param>
-        <param name="directoryPath">To be added.</param>
-        <param name="targetFrameworkVersion">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="hive">Registry hive to use.</param>
+        <param name="view">Registry view to use.</param>
+        <param name="registryKey">Registry key for the component.</param>
+        <param name="directoryPath">Registry keys default folder path.</param>
+        <param name="targetFrameworkVersion">Target framework version for the registry key.</param>
+        <summary>Creates a new instance of the <see langword="AssemblyFoldersExInfo" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,8 +54,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the folder found at the registry keys default value.</summary>
+        <value>Returns path to the registry keys default folder.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,8 +72,8 @@
         <ReturnType>Microsoft.Win32.RegistryHive</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the registry hive.</summary>
+        <value>Returns the registry hive.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,8 +90,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the registry key for the component.</summary>
+        <value>Returns the registry key.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,8 +108,8 @@
         <ReturnType>System.Version</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the target framework version for the registry key.</summary>
+        <value>Returns the target framework version.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -126,8 +126,8 @@
         <ReturnType>Microsoft.Win32.RegistryView</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the registry view.</summary>
+        <value>Returns the registry view.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

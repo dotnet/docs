@@ -1,19 +1,27 @@
 ---
 uid: System.Windows.Forms.GiveFeedbackEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.GiveFeedbackEventArgs.#ctor(System.Windows.Forms.DragDropEffects,System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.GiveFeedbackEventArgs.UseDefaultCursors
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.GiveFeedbackEventArgs.Effect
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

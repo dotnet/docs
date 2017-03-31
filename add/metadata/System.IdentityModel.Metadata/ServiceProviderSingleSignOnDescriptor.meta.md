@@ -1,29 +1,41 @@
 ---
 uid: System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor.WantAssertionsSigned
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor.AuthenticationRequestsSigned
-internalonly: False
----
-
----
-uid: System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor.#ctor(System.IdentityModel.Metadata.IndexedProtocolEndpointDictionary)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor.#ctor(System.IdentityModel.Metadata.IndexedProtocolEndpointDictionary)
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor.#ctor
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor.AssertionConsumerServices
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

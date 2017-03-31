@@ -11,8 +11,19 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Identifies [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] text attributes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Derived from <xref:System.Windows.Automation.AutomationIdentifier>.  
+  
+ The list of text attributes supported by [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] can be found at <xref:System.Windows.Automation.TextPattern>.  
+  
+ The <xref:System.Windows.Automation.AutomationTextAttribute> class is effectively abstract, as it has no constructor and cannot be instantiated by applications.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="LookupById">
@@ -31,8 +42,8 @@
         <Parameter Name="id" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="id">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="id">The numerical identifier.</param>
+        <summary>Retrieves a <see cref="T:System.Windows.Automation.AutomationTextAttribute" /> that encapsulates a specified numerical identifier.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

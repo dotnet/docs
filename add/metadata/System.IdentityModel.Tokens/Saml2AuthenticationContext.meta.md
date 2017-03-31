@@ -1,34 +1,47 @@
 ---
 uid: System.IdentityModel.Tokens.Saml2AuthenticationContext
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.Saml2AuthenticationContext.AuthenticatingAuthorities
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.Saml2AuthenticationContext.DeclarationReference
-internalonly: False
----
-
----
-uid: System.IdentityModel.Tokens.Saml2AuthenticationContext.#ctor(System.Uri,System.Uri)
-internalonly: False
----
-
----
-uid: System.IdentityModel.Tokens.Saml2AuthenticationContext.#ctor(System.Uri)
-internalonly: False
----
-
----
-uid: System.IdentityModel.Tokens.Saml2AuthenticationContext.ClassReference
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.Saml2AuthenticationContext.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.Saml2AuthenticationContext.#ctor(System.Uri,System.Uri)
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.Saml2AuthenticationContext.#ctor(System.Uri)
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.Saml2AuthenticationContext.ClassReference
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.Saml2AuthenticationContext.#ctor
+ms.author: "v-jibran"
+manager: "markgal"
 ---

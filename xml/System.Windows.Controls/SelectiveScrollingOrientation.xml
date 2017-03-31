@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the direction that <see cref="T:System.Windows.Controls.Primitives.SelectiveScrollingGrid" /> panels can scroll.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Windows.Controls.SelectiveScrollingOrientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The panel scrolls in both the horizontal and vertical direction.</summary>
       </Docs>
     </Member>
     <Member MemberName="Horizontal">
@@ -43,7 +43,7 @@
         <ReturnType>System.Windows.Controls.SelectiveScrollingOrientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The panel scrolls in the horizontal direction only.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -59,7 +59,7 @@
         <ReturnType>System.Windows.Controls.SelectiveScrollingOrientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The panel does not scroll.</summary>
       </Docs>
     </Member>
     <Member MemberName="Vertical">
@@ -75,7 +75,7 @@
         <ReturnType>System.Windows.Controls.SelectiveScrollingOrientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The panel scrolls in the vertical direction only.</summary>
       </Docs>
     </Member>
   </Members>

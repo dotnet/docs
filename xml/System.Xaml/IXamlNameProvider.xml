@@ -8,8 +8,19 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a service that is used during save and write operations to input an object and return a XAML name.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This service is only relevant for a save path operation, such as when a <xref:System.Xaml.XamlXmlWriter> serializes an attributed value converter usage, and the type converter or value serializer supports serialization. A <xref:System.Xaml.XamlObjectWriter> does not provide the service in its service context.  
+  
+ A type converter or value serializer can access this service by using an available schema context as a service provider and then obtaining the <xref:System.Xaml.IXamlNameProvider> service that is implemented in that context. For more information, see [Type Converters and Markup Extensions for XAML](../Topic/Type%20Converters%20and%20Markup%20Extensions%20for%20XAML.md) and [Service Contexts Available to Type Converters and Markup Extensions](../Topic/Service%20Contexts%20Available%20to%20Type%20Converters%20and%20Markup%20Extensions.md).  
+  
+ To correctly use XAML-defined names, you may also need to obtain information about the acting XAML namescope and the <xref:System.Windows.Markup.INameScope> value that represents it.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="GetName">
@@ -28,10 +39,17 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The object to get the name for.</param>
+        <summary>Retrieves the XAML name of the specified object.</summary>
+        <returns>The XAML name value of the requested object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default .NET Framework XAML Services implementation relies on a XAML schema context that can report the object names being used in the runtime object graph.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

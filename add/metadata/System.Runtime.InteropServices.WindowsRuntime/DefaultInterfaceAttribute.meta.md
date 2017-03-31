@@ -1,14 +1,20 @@
 ---
 uid: System.Runtime.InteropServices.WindowsRuntime.DefaultInterfaceAttribute
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.WindowsRuntime.DefaultInterfaceAttribute.DefaultInterface
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.WindowsRuntime.DefaultInterfaceAttribute.#ctor(System.Type)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

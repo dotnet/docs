@@ -20,8 +20,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the collection of items in a <see cref="T:System.Windows.Forms.ComboBox" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ComboBox.ObjectCollection?displayProperty=fullName> class encapsulates the items in the <xref:System.Windows.Forms.ComboBox>. The object collection of a combo box can be used to manage many types of objects, including strings, images, and custom business objects.  
+  
+ You can add items to the collection in several ways. The <xref:System.Windows.Forms.ComboBox.ObjectCollection.Add%2A> method adds one object to the collection. To add a number of objects to the collection, it is best to create an array of items and assign with the [AddRange(Object\<xref:System.Windows.Forms.ComboBox.ObjectCollection.AddRange%2A> method. To insert an object at a specific location within the collection, you can use the <xref:System.Windows.Forms.ComboBox.ObjectCollection.Insert%2A> method. To remove items at a known index in the collection you can use either the <xref:System.Windows.Forms.ComboBox.ObjectCollection.Remove%2A> method or the <xref:System.Windows.Forms.ComboBox.ObjectCollection.RemoveAt%2A> method. The <xref:System.Windows.Forms.ComboBox.ObjectCollection.Clear%2A> method removes all the items from the collection.  
+  
+ In addition to methods and properties for adding and removing items, the <xref:System.Windows.Forms.ComboBox.ObjectCollection?displayProperty=fullName> also provides methods to find items within the collection. The <xref:System.Windows.Forms.ComboBox.ObjectCollection.Contains%2A> method enables you to determine if an object is a member of the collection. Once you know that the item is located within the collection, you can use the <xref:System.Windows.Forms.ComboBox.ObjectCollection.IndexOf%2A> method to determine where the item is located within the collection.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,9 +48,16 @@
         <Parameter Name="owner" Type="System.Windows.Forms.ComboBox" />
       </Parameters>
       <Docs>
-        <param name="owner">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="owner">The <see cref="T:System.Windows.Forms.ComboBox" /> that owns this object collection.</param>
+        <summary>Initializes a new instance of <see cref="T:System.Windows.Forms.ComboBox.ObjectCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An instance of this class cannot be created without associating it with a <xref:System.Windows.Forms.ComboBox> control.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -58,10 +76,20 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="item">An object representing the item to add to the collection.</param>
+        <summary>Adds an item to the list of items for a <see cref="T:System.Windows.Forms.ComboBox" />.</summary>
+        <returns>The zero-based index of the item in the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method adds an item to the combo box. If the <xref:System.Windows.Forms.ComboBox.Sorted%2A> property of the <xref:System.Windows.Forms.ComboBox> is set to `true`, the item is inserted into the list alphabetically. Otherwise, the item is inserted at the end of the list.  
+  
+ A visual representation of the item is displayed in the combo box. This content representation is specified by the <xref:System.Windows.Forms.ListControl.DisplayMember%2A> property. If the <xref:System.Windows.Forms.ListControl.DisplayMember%2A> property is `null`, the item's `ToString` method is called to obtain the string that is displayed in the combo box; otherwise, the property of the stored object as specified by the <xref:System.Windows.Forms.ListControl.DisplayMember%2A> property is displayed. A <xref:System.SystemException> occurs if there is insufficient space available to store the new item. To add a set of items to the combo box it is best to use the <xref:System.Windows.Forms.ComboBox.ObjectCollection.AddRange%2A> method. If you choose to use the <xref:System.Windows.Forms.ComboBox.ObjectCollection.Add%2A> method to add a number of items to the combo box, use the <xref:System.Windows.Forms.ComboBox.BeginUpdate%2A> method to suspend repainting during your add and the <xref:System.Windows.Forms.ComboBox.EndUpdate%2A> method to resume repainting. You can use the <xref:System.Windows.Forms.ComboBox.ObjectCollection.Insert%2A> method to specify the location in the list where an item is added. When an object is added to the collection, the <xref:System.Windows.Forms.ComboBox> calls the object's <xref:System.Object.ToString%2A> method to obtain the string to display in the list.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="item" /> parameter was <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -80,9 +108,26 @@
         <Parameter Name="items" Type="System.Object[]" />
       </Parameters>
       <Docs>
-        <param name="items">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="items">An array of objects to add to the list.</param>
+        <summary>Adds an array of items to the list of items for a <see cref="T:System.Windows.Forms.ComboBox" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Windows.Forms.ComboBox.Sorted%2A> property of the <xref:System.Windows.Forms.ComboBox> is set to true, the items are inserted into the list alphabetically. Otherwise, the items are inserted in the order they occur within the array. This method is typically passed an array of <xref:System.String> objects, but an array of any type of object can be passed to this method. When an object is added to the collection, the method calls the object's <xref:System.Object.ToString%2A> method to obtain the string to display in the list. When using this method to add items to the collection, you do not need to call the <xref:System.Windows.Forms.ComboBox.BeginUpdate%2A> and <xref:System.Windows.Forms.ComboBox.EndUpdate%2A> methods to optimize performance.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to initialize a <xref:System.Windows.Forms.ComboBox> control by setting the text property and using the <xref:System.Windows.Forms.ComboBox.ObjectCollection.AddRange%2A> method to populate the <xref:System.Windows.Forms.ComboBox>. It also demonstrates handling the <xref:System.Windows.Forms.ComboBox.DropDown> event. To run the example, paste the following code in a form and call the `InitializeComboBox` method from the form's constructor or `Load` method.  
+  
+ [!code-cpp[System.Windows.Forms.ComboBoxDropDown#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ComboBoxDropDown/CPP/form1.cpp#2)]
+ [!code-csharp[System.Windows.Forms.ComboBoxDropDown#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ComboBoxDropDown/CS/form1.cs#2)]
+ [!code-vb[System.Windows.Forms.ComboBoxDropDown#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ComboBoxDropDown/VB/form1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">An item in the <paramref name="items" /> parameter was <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -99,8 +144,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Removes all items from the <see cref="T:System.Windows.Forms.ComboBox" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you remove items from the list, all information about the deleted items is lost. To remove a single item from the <xref:System.Windows.Forms.ComboBox>, use the <xref:System.Windows.Forms.ComboBox.ObjectCollection.Remove%2A> or <xref:System.Windows.Forms.ComboBox.ObjectCollection.RemoveAt%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -119,10 +171,18 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">An object representing the item to locate in the collection.</param>
+        <summary>Determines if the specified item is located within the collection.</summary>
+        <returns>
+          <see langword="true" /> if the item is located within the collection; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ComboBox.ObjectCollection.Contains%2A> method enables you to determine if an object is a member of the collection. Once you know that the item is located within the collection, you can use the <xref:System.Windows.Forms.ComboBox.ObjectCollection.IndexOf%2A> method to determine where the item is located within the collection.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -142,10 +202,17 @@
         <Parameter Name="arrayIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="destination">To be added.</param>
-        <param name="arrayIndex">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="destination">The object array to copy the collection to.</param>
+        <param name="arrayIndex">The location in the destination array to copy the collection to.</param>
+        <summary>Copies the entire collection into an existing array of objects at a specified location within the array.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this method to combine the items from multiple collections into a single array. You can then use this array to populate the contents of another <xref:System.Windows.Forms.ComboBox> control using the <xref:System.Windows.Forms.ComboBox.ObjectCollection.AddRange%2A> method of the <xref:System.Windows.Forms.ComboBox.ObjectCollection> class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -161,9 +228,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of items in the collection.</summary>
+        <value>The number of items in the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property enables you to determine the number of items in the <xref:System.Windows.Forms.ComboBox>. You can use this value when looping through the values of the collection.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -180,8 +254,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an enumerator that can be used to iterate through the item collection.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> that represents the item collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -201,10 +275,18 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">An object representing the item to locate in the collection.</param>
+        <summary>Retrieves the index within the collection of the specified item.</summary>
+        <returns>The zero-based index where the item is located within the collection; otherwise, -1.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ComboBox.ObjectCollection.IndexOf%2A> method enables you to determine where an item is located within the collection. To determine if an item is located within the collection before calling this method, use the <xref:System.Windows.Forms.ComboBox.ObjectCollection.Contains%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> parameter was <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -224,10 +306,23 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index location where the item is inserted.</param>
+        <param name="item">An object representing the item to insert.</param>
+        <summary>Inserts an item into the collection at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Windows.Forms.ComboBox.Sorted%2A> property of the <xref:System.Windows.Forms.ComboBox> is true, the `index` parameter is ignored. When an object is added to the collection, the <xref:System.Windows.Forms.ComboBox> calls the object's <xref:System.Object.ToString%2A> method is to obtain the string to display in the list.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="item" /> was <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> was less than zero.  
+  
+ -or-  
+  
+ The <paramref name="index" /> was greater than the count of items in the collection.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -243,8 +338,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether this collection can be modified.</summary>
+        <value>Always <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -272,10 +367,22 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="index">The index of the item in the collection to retrieve.</param>
+        <summary>Retrieves the item at the specified index within the collection.</summary>
+        <value>An object representing the item located at the specified index within the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this method to obtain the item at the specified location within the collection. You can use <xref:System.Windows.Forms.ComboBox.ObjectCollection.IndexOf%2A> to find the location of an item, or you can use the index return from the <xref:System.Windows.Forms.ComboBox.ObjectCollection.Add%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The index was less than zero.  
+  
+ -or-  
+  
+ The <paramref name="index" /> was greater of equal to the count of items in the collection.</exception>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -294,9 +401,16 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="value">The <see cref="T:System.Object" /> to remove from the list.</param>
+        <summary>Removes the specified item from the <see cref="T:System.Windows.Forms.ComboBox" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No exception is thrown if the specified item is not found.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -315,9 +429,25 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The index of the item to remove.</param>
+        <summary>Removes an item from the <see cref="T:System.Windows.Forms.ComboBox" /> at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to initialize a <xref:System.Windows.Forms.ComboBox> control by setting the <xref:System.Windows.Forms.ComboBox.MaxDropDownItems%2A> and <xref:System.Windows.Forms.ComboBox.DropDownStyle%2A> properties, using the <xref:System.Windows.Forms.ComboBox.FindStringExact%2A> methods to search the <xref:System.Windows.Forms.ComboBox> and the <xref:System.Windows.Forms.ComboBox.ObjectCollection.RemoveAt%2A> method to remove an item from the <xref:System.Windows.Forms.ComboBox>. It also shows handling the <xref:System.Windows.Forms.ComboBox.SelectedIndexChanged> event.  
+  
+ [!code-cpp[System.Windows.Forms.ComboBoxFindString#0](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ComboBoxFindString/CPP/form1.cpp#0)]
+ [!code-csharp[System.Windows.Forms.ComboBoxFindString#0](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ComboBoxFindString/CS/form1.cs#0)]
+ [!code-vb[System.Windows.Forms.ComboBoxFindString#0](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ComboBoxFindString/VB/form1.vb#0)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="value" /> parameter was less than zero.  
+  
+ -or-  
+  
+ The <paramref name="value" /> parameter was greater than or equal to the count of items in the collection.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -337,10 +467,17 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="destination">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="destination">The one-dimensional array that is the destination of the elements copied from the collection. The array must have zero-based indexing.</param>
+        <param name="index">The zero-based index in the array at which copying begins.</param>
+        <summary>For a description of this member, see <see cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ComboBox.ObjectCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -356,9 +493,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="P:System.Collections.ICollection.IsSynchronized" />.</summary>
+        <value>
+          <see langword="false" /> in all cases.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ComboBox.ObjectCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.SyncRoot">
@@ -374,9 +519,16 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="P:System.Collections.ICollection.SyncRoot" />.</summary>
+        <value>An object that can be used to synchronize access to the <see cref="T:System.Windows.Forms.ComboBox.ObjectCollection" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ComboBox.ObjectCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Add">
@@ -395,10 +547,23 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="item">An object that represents the item to add to the collection.</param>
+        <summary>For a description of this member, see <see cref="M:System.Collections.IList.Add(System.Object)" />.</summary>
+        <returns>The zero-based index of the item in the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ComboBox.ObjectCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ This method adds an item to the combo box. If the <xref:System.Windows.Forms.ComboBox.Sorted%2A> property of the <xref:System.Windows.Forms.ComboBox> is set to `true`, the item is inserted into the list alphabetically. Otherwise, the item is inserted at the end of the list.  
+  
+ A visual representation of the item is displayed in the combo box. This content representation is specified by the <xref:System.Windows.Forms.ListControl.DisplayMember%2A> property. If the <xref:System.Windows.Forms.ListControl.DisplayMember%2A> property is `null`, the item's <xref:System.Object.ToString%2A> method is called to obtain the string that is displayed in the combo box; otherwise, the property of the stored object as specified by the <xref:System.Windows.Forms.ListControl.DisplayMember%2A> property is displayed. To add a set of items to the combo box, it is best to use the <xref:System.Windows.Forms.ComboBox.ObjectCollection.AddRange%2A> method. If you choose to use the <xref:System.Windows.Forms.ComboBox.ObjectCollection.Add%2A> method to add a set of items to the combo box, use the <xref:System.Windows.Forms.ComboBox.BeginUpdate%2A> method to suspend repainting during your add and the <xref:System.Windows.Forms.ComboBox.EndUpdate%2A> method to resume repainting. You can use the <xref:System.Windows.Forms.ComboBox.ObjectCollection.Insert%2A> method to specify the location in the list where an item is added. When an object is added to the collection, the <xref:System.Windows.Forms.ComboBox> calls the object's <xref:System.Object.ToString%2A> method to obtain the string to display in the list.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="item" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.SystemException">There is insufficient space available to store the new item.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsFixedSize">
@@ -414,9 +579,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="P:System.Collections.IList.IsFixedSize" />.</summary>
+        <value>
+          <see langword="false" /> in all cases.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ComboBox.ObjectCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

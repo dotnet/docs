@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Threading.DispatcherOperationStatus
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

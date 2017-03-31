@@ -1,39 +1,44 @@
 ---
 uid: System.Messaging.MessageQueuePermissionEntry
-internalonly: False
+manager: "tyoung"
+---
+
+---
+uid: System.Messaging.MessageQueuePermissionEntry.#ctor
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessageQueuePermissionEntry.PermissionAccess
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessageQueuePermissionEntry.Path
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessageQueuePermissionEntry.#ctor(System.Messaging.MessageQueuePermissionAccess,System.String,System.String,System.String)
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessageQueuePermissionEntry.Label
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessageQueuePermissionEntry.Category
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessageQueuePermissionEntry.MachineName
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessageQueuePermissionEntry.#ctor(System.Messaging.MessageQueuePermissionAccess,System.String)
-internalonly: False
+manager: "tyoung"
 ---

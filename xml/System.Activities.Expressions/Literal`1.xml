@@ -29,8 +29,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="T">The type of the value.</typeparam>
+    <summary>Represents an expression activity that returns a literal value of the specified type.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,7 +45,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Expressions.Literal`1" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,8 +62,8 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The literal value of the expression.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Expressions.Literal`1" /> class using the specified value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,9 +104,10 @@
         <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">The context information that is used for conversion.</param>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Activities.Expressions.Literal`1" /> can be converted into a <see cref="T:System.String" />.</summary>
+        <returns>
+          <see langword="true" /> if the value can be converted into a <see cref="T:System.String" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -126,9 +127,9 @@
         <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">Context information that is used for conversion.</param>
+        <summary>Converts the <see cref="T:System.Activities.Expressions.Literal`1" /> to a <see cref="T:System.String" />.</summary>
+        <returns>The literal expression.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -173,8 +174,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a value that indicates whether the <see cref="P:System.Activities.Expressions.Literal`1.Value" /> property has changed from its default value and should be serialized.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="P:System.Activities.Expressions.Literal`1.Value" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -192,8 +194,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a <see cref="T:System.String" /> that represents the literal’s value.</summary>
+        <returns>The string representation of the literal’s value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -210,8 +212,8 @@
         <ReturnType>T</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value of the literal expression.</summary>
+        <value>The value of the literal expression.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

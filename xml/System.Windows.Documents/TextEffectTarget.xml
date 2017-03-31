@@ -11,8 +11,21 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Result from using <see cref="T:System.Windows.Documents.TextEffectResolver" /> to set an effect on text. This consists of the <see cref="T:System.Windows.Media.TextEffect" /> created and the <see cref="T:System.Windows.DependencyObject" /> to which the <see cref="T:System.Windows.Media.TextEffect" /> should be set.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to apply a <xref:System.Windows.Media.TranslateTransform>, <xref:System.Windows.Media.ScaleTransform>, and <xref:System.Windows.Media.RotateTransform> text effect to text. Below is the XAML for the example.  
+  
+ [!code-xml[FlowMiscSnippets_snip#TextEffectTargetExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_snip/cs/texteffecttargetexample.xaml#texteffecttargetexamplewholepage)]  
+  
+ Below is the code behind for the example.  
+  
+ [!code-csharp[FlowMiscSnippets_snip#TextEffectTargetCodeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_snip/cs/texteffecttargetexample.xaml.cs#texteffecttargetcodeexamplewholepage)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Disable">
@@ -29,8 +42,21 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Disables the <see cref="T:System.Windows.Media.TextEffect" /> on the effect target.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to apply a <xref:System.Windows.Media.TranslateTransform>, <xref:System.Windows.Media.ScaleTransform>, and <xref:System.Windows.Media.RotateTransform> text effect to text. Below is the XAML for the example.  
+  
+ [!code-xml[FlowMiscSnippets_snip#TextEffectTargetExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_snip/cs/texteffecttargetexample.xaml#texteffecttargetexamplewholepage)]  
+  
+ Below is the code behind for the example.  
+  
+ [!code-csharp[FlowMiscSnippets_snip#TextEffectTargetCodeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_snip/cs/texteffecttargetexample.xaml.cs#texteffecttargetcodeexamplewholepage)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Element">
@@ -46,8 +72,8 @@
         <ReturnType>System.Windows.DependencyObject</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Windows.DependencyObject" /> that the <see cref="T:System.Windows.Media.TextEffect" /> is targeting.</summary>
+        <value>The <see cref="T:System.Windows.DependencyObject" /> that the <see cref="T:System.Windows.Media.TextEffect" /> is targeting.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,8 +91,26 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Enables the <see cref="T:System.Windows.Media.TextEffect" /> on the target text.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Windows.Media.TextEffect> is already enabled, the method will be a no-op (no operation).  
+  
+   
+  
+## Examples  
+ The following example shows how to apply a <xref:System.Windows.Media.TranslateTransform>, <xref:System.Windows.Media.ScaleTransform>, and <xref:System.Windows.Media.RotateTransform> text effect to text. Below is the XAML for the example.  
+  
+ [!code-xml[FlowMiscSnippets_snip#TextEffectTargetExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_snip/cs/texteffecttargetexample.xaml#texteffecttargetexamplewholepage)]  
+  
+ Below is the code behind for the example.  
+  
+ [!code-csharp[FlowMiscSnippets_snip#TextEffectTargetCodeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_snip/cs/texteffecttargetexample.xaml.cs#texteffecttargetcodeexamplewholepage)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsEnabled">
@@ -82,8 +126,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that determines whether the text effect is enabled on the target element</summary>
+        <value>**true** if the <see cref="T:System.Windows.Media.TextEffect" />is enabled on the target; otherwise, **false**.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,8 +144,8 @@
         <ReturnType>System.Windows.Media.TextEffect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Windows.Media.TextEffect" /> of the <see cref="T:System.Windows.Documents.TextEffectTarget" />.</summary>
+        <value>The <see cref="T:System.Windows.Media.TextEffect" /> of the <see cref="T:System.Windows.Documents.TextEffectTarget" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

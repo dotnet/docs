@@ -1,9 +1,9 @@
 ---
 uid: Microsoft.JScript.Expando
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.Expando.#ctor
-internalonly: False
+ms.author: "mikejo"
 ---

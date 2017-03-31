@@ -39,9 +39,16 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="T">The type of elements in the collection.</typeparam>
+    <summary>Represents a read-only <see cref="T:System.Collections.ObjectModel.ObservableCollection`1" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is a read-only wrapper around an <xref:System.Collections.ObjectModel.ObservableCollection%601>. If changes are made to the underlying collection, the <xref:System.Collections.ObjectModel.ReadOnlyObservableCollection%601> reflects those changes. To be notified of the changes to this class, subscribe to the <xref:System.Collections.ObjectModel.ReadOnlyObservableCollection%601.System%23Collections%23Specialized%23INotifyCollectionChanged%23CollectionChanged> or <xref:System.Collections.ObjectModel.ReadOnlyObservableCollection%601.System%23ComponentModel%23INotifyPropertyChanged%23PropertyChanged> event.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -67,9 +74,11 @@
         <Parameter Name="list" Type="System.Collections.ObjectModel.ObservableCollection&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="list">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="list">The <see cref="T:System.Collections.ObjectModel.ObservableCollection`1" /> with which to create this instance of the <see cref="T:System.Collections.ObjectModel.ReadOnlyObservableCollection`1" /> class.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.ObjectModel.ReadOnlyObservableCollection`1" /> class that serves as a wrapper around the specified <see cref="T:System.Collections.ObjectModel.ObservableCollection`1" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="list" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CollectionChanged">
@@ -95,8 +104,15 @@
         <ReturnType>System.Collections.Specialized.NotifyCollectionChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when an item is added or removed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see <xref:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnCollectionChanged">
@@ -125,8 +141,8 @@
         <Parameter Name="args" Type="System.Collections.Specialized.NotifyCollectionChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="args">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="args">Arguments of the event being raised.</param>
+        <summary>Raises the <see cref="E:System.Collections.ObjectModel.ReadOnlyObservableCollection`1.CollectionChanged" /> event using the provided arguments.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,8 +172,8 @@
         <Parameter Name="args" Type="System.ComponentModel.PropertyChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="args">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="args">Arguments of the event being raised.</param>
+        <summary>Raises the <see cref="E:System.Collections.ObjectModel.ReadOnlyObservableCollection`1.PropertyChanged" /> event using the provided arguments.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,8 +200,15 @@
         <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a property value changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see <xref:System.ComponentModel.INotifyPropertyChanged.PropertyChanged>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

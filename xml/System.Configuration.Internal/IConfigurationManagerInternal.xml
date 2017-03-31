@@ -13,7 +13,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines an interface used by the .NET Framework to initialize configuration properties.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,8 +30,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the configuration file name related to the application path.</summary>
+        <value>A string value representing a configuration file name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +48,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the local configuration directory of the application based on the entry assembly.</summary>
+        <value>A string representing the local configuration directory.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,8 +66,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the local configuration path of the application based on the entry assembly.</summary>
+        <value>A string value representing the local configuration path of the application.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,8 +84,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the product name of the application based on the entry assembly.</summary>
+        <value>A string value representing the product name of the application.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,8 +102,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the product version of the application based on the entry assembly.</summary>
+        <value>A string value representing the product version of the application.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,8 +120,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the roaming configuration directory of the application based on the entry assembly.</summary>
+        <value>A string value representing the roaming configuration directory of the application.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -138,8 +138,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the roaming user's configuration path based on the application's entry assembly.</summary>
+        <value>A string value representing the roaming user's configuration path.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,8 +156,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the configuration path for the Machine.config file.</summary>
+        <value>A string value representing the path of the Machine.config file.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -174,9 +174,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value representing the configuration system's status.</summary>
+        <value>
+          <see langword="true" /> if the configuration system is in the process of being initialized; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.Internal.IConfigurationManagerInternal.SetConfigurationSystemInProgress%2A> property is used by <xref:System.Diagnostics> during configuration initialization.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportsUserConfig">
@@ -192,8 +200,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that specifies whether user configuration settings are supported.</summary>
+        <value>
+          <see langword="true" /> if the configuration system supports user configuration settings; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -210,8 +219,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the file used to store user configuration settings.</summary>
+        <value>A string specifying the name of the file used to store user configuration.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

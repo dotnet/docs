@@ -1,19 +1,31 @@
 ---
 uid: System.Web.UI.Design.WebControls.DataPagerFieldTypeEditor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.DataPagerFieldTypeEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.DataPagerFieldTypeEditor.EditValue
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.DataPagerFieldTypeEditor.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.DataPagerFieldTypeEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.DataPagerFieldTypeEditor.GetEditStyle
 ---

@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies whether any characters in the current selection have the style or attribute.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.RichTextBox> class uses this enumeration internally.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="All">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Forms.RichTextBoxSelectionAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>All characters.</summary>
       </Docs>
     </Member>
     <Member MemberName="Mixed">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Forms.RichTextBoxSelectionAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Some but not all characters.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.Forms.RichTextBoxSelectionAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No characters.</summary>
       </Docs>
     </Member>
   </Members>

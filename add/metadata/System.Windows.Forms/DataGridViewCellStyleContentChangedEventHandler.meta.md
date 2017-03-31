@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Forms.DataGridViewCellStyleContentChangedEventHandler
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Describes why a <see cref="T:System.Windows.Shell.JumpItem" /> could not be added to the Jump List by the Windows shell.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Windows.Shell.JumpItemRejectionReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Windows.Shell.JumpItem" /> references an invalid file path, or the operating system does not support Jump Lists.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -43,7 +43,7 @@
         <ReturnType>System.Windows.Shell.JumpItemRejectionReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The reason is not specified.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoRegisteredHandler">
@@ -59,7 +59,7 @@
         <ReturnType>System.Windows.Shell.JumpItemRejectionReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The application is not registered to handle the file name extension of the <see cref="T:System.Windows.Shell.JumpItem" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="RemovedByUser">
@@ -75,7 +75,7 @@
         <ReturnType>System.Windows.Shell.JumpItemRejectionReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The item was previously in the Jump List but was removed by the user.</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,14 +1,14 @@
 ---
 uid: Microsoft.JScript.NumberObject
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.NumberObject.#ctor(Microsoft.JScript.ScriptObject,System.Object)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.NumberObject.GetType
-internalonly: False
+ms.author: "mikejo"
 ---

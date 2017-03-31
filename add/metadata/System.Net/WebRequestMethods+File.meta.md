@@ -1,14 +1,17 @@
 ---
 uid: System.Net.WebRequestMethods.File
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebRequestMethods.File.UploadFile
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebRequestMethods.File.DownloadFile
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

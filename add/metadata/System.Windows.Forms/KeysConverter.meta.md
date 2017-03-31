@@ -1,49 +1,101 @@
 ---
 uid: System.Windows.Forms.KeysConverter
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.KeysConverter.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.KeysConverter.ConvertTo
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.KeysConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.KeysConverter.ConvertFrom
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.KeysConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.KeysConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.KeysConverter.Compare(System.Object,System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.KeysConverter.GetStandardValuesSupported
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.KeysConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.KeysConverter.CanConvertFrom
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.KeysConverter.GetStandardValuesExclusive(System.ComponentModel.ITypeDescriptorContext)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.KeysConverter.CanConvertTo
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.KeysConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.KeysConverter.GetStandardValuesExclusive
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.KeysConverter.GetStandardValuesSupported(System.ComponentModel.ITypeDescriptorContext)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.KeysConverter.GetStandardValues
+manager: "ghogen"
 ---

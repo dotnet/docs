@@ -1,29 +1,46 @@
 ---
 uid: System.Windows.Input.InputScopePhrase
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.InputScopePhrase.AddText(System.String)
-internalonly: False
----
-
----
-uid: System.Windows.Input.InputScopePhrase.#ctor(System.String)
-internalonly: False
----
-
----
-uid: System.Windows.Input.InputScopePhrase.Name
-internalonly: False
----
-
----
-uid: System.Windows.Input.InputScopePhrase.AddChild(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.InputScopePhrase.#ctor
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Input.InputScopePhrase.#ctor(System.String)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Input.InputScopePhrase.Name
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Input.InputScopePhrase.AddChild(System.Object)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Input.InputScopePhrase.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

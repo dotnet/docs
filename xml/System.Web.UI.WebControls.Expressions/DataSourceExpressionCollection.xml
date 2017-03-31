@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a collection of expressions to apply to a data source control.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.Expressions.DataSourceExpression" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <Parameter Name="expression" Type="System.Web.UI.WebControls.Expressions.DataSourceExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="expression">The data source expression object to add.</param>
+        <summary>Adds a data source expression object to a <see cref="T:System.Web.UI.WebControls.Expressions.DataSourceExpressionCollection" /> object at the specified index.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,8 +67,8 @@
         <Parameter Name="expression" Type="System.Web.UI.WebControls.Expressions.DataSourceExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="expression">The data source expression object to locate.</param>
+        <summary>Determines whether a <see cref="T:System.Web.UI.WebControls.Expressions.DataSourceExpressionCollection" /> object contains a specific data source expression object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,8 +85,8 @@
         <ReturnType>System.Web.HttpContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Web.HttpContext" /> instance of the <see cref="T:System.Web.UI.WebControls.Expressions.DataSourceExpressionCollection" /> class.</summary>
+        <value>The <see cref="T:System.Web.HttpContext" /> instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,10 +107,17 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="expressionArray">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="expressionArray">The one-dimensional array that is the destination of the elements that are copied.</param>
+        <param name="index">The zero-based index in the array at which copying starts.</param>
+        <summary>Copies elements of the <see cref="T:System.Web.UI.WebControls.Expressions.DataSourceExpressionCollection" /> object to an array, starting at a particular index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The array must have zero-based indexing.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateKnownType">
@@ -129,9 +136,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="index">The zero-based index in the array where the data source expression object is located.</param>
+        <summary>Creates an instance of a data source expression object.</summary>
+        <returns>The index of the data source expression to create from the ordered list of types returned by the <see cref="M:System.Web.UI.WebControls.Expressions.DataSourceExpressionCollection.GetKnownTypes" /> method.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,8 +156,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets an array of data source expression objects that the <see cref="T:System.Web.UI.WebControls.Expressions.DataSourceExpressionCollection" /> object can contain.</summary>
+        <returns>An ordered array of data source expression objects that the data source collection can contain.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -170,9 +177,9 @@
         <Parameter Name="expression" Type="System.Web.UI.WebControls.Expressions.DataSourceExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The data source expression object to locate.</param>
+        <summary>Gets the index of a specified data source expression object in the <see cref="T:System.Web.UI.WebControls.Expressions.DataSourceExpressionCollection" /> object.</summary>
+        <returns>The index of the data source expression object, if it is in the collection; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -193,9 +200,9 @@
         <Parameter Name="expression" Type="System.Web.UI.WebControls.Expressions.DataSourceExpression" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The zero-based index at which the object should be inserted.</param>
+        <param name="expression">The data source expression object to insert.</param>
+        <summary>Inserts a data source expression object into an <see cref="T:System.Web.UI.WebControls.Expressions.DataSourceExpressionCollection" /> object at the specified index.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -215,9 +222,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The zero-based index of the data source expression to get.</param>
+        <summary>Gets or sets the data source expression object at a specified index.</summary>
+        <value>The data source expression object at the specified index.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -234,8 +241,8 @@
         <ReturnType>System.Web.UI.Control</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the owner control.</summary>
+        <value>The owner control.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -255,8 +262,8 @@
         <Parameter Name="expression" Type="System.Web.UI.WebControls.Expressions.DataSourceExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="expression">The data source expression object to remove.</param>
+        <summary>Removes the first occurrence of the specified data source expression object from the <see cref="T:System.Web.UI.WebControls.Expressions.DataSourceExpressionCollection" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -276,8 +283,8 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The zero-based index of the data source expression to remove.</param>
+        <summary>Removes a data source expression object at a specified index from the <see cref="T:System.Web.UI.WebControls.Expressions.DataSourceExpressionCollection" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -297,8 +304,8 @@
         <Parameter Name="o" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="o">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="o">The data source expression object to mark as having changed since the last load or save operation from view state.</param>
+        <summary>Marks a specified data source expression object as having changed since the last load or save operation from view state.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

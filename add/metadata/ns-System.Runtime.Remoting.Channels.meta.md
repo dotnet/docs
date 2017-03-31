@@ -1,4 +1,4 @@
 ---
 uid: System.Runtime.Remoting.Channels
-internalonly: False
+manager: "ghogen"
 ---

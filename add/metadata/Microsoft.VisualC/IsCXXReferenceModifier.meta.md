@@ -1,9 +1,11 @@
 ---
 uid: Microsoft.VisualC.IsCXXReferenceModifier
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.IsCXXReferenceModifier.#ctor
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---

@@ -1,14 +1,17 @@
 ---
 uid: System.Configuration.ConnectionStringsSection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConnectionStringsSection.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConnectionStringsSection.ConnectionStrings
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

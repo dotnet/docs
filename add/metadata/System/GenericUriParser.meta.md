@@ -1,9 +1,11 @@
 ---
 uid: System.GenericUriParser
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.GenericUriParser.#ctor(System.GenericUriParserOptions)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

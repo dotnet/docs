@@ -1,9 +1,13 @@
 ---
 uid: System.Data.Services.DataServiceHost
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Services.DataServiceHost.#ctor(System.Type,System.Uri[])
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

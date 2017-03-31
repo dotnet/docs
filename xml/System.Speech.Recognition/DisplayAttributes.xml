@@ -15,8 +15,75 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Lists the options that the <see cref="T:System.Speech.Recognition.SpeechRecognitionEngine" /> object can use to specify white space for the display of a word or punctuation mark.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Windows Desktop Speech returns recognized phrases as collections of <xref:System.Speech.Recognition.RecognizedWordUnit> or <xref:System.Speech.Recognition.ReplacementText> objects. Each object corresponds to a single word or punctuation mark. The `DisplayAttributes` property of a <xref:System.Speech.Recognition.RecognizedWordUnit> or <xref:System.Speech.Recognition.ReplacementText> uses a member of the <xref:System.Speech.Recognition.DisplayAttributes> enumeration to describe how print spacing is handled around a given word or punctuation mark.  
+  
+ Two or more members of the `DisplayAttributes` enumeration may be combined by a bit-wise `OR` to specify how a particular word should be displayed.  
+  
+> [!NOTE]
+>  The display formatting that the speech recognizer uses is language specific.  
+  
+ For example, suppose the input phrase to a recognition engine using the default system grammar provided by <xref:System.Speech.Recognition.DictationGrammar> is "Hello comma he said period". Then the recognition engine returns a <xref:System.Speech.Recognition.RecognizedPhrase> containing five <xref:System.Speech.Recognition.RecognizedWordUnit> objects containing the following strings with the following `DisplayAttributes` values.  
+  
+|Item|`DisplayAttributes`|  
+|----------|-------------------------|  
+|Hello|OneTrailingSpace|  
+|,|OneTrailingSpace &#124; ConsumeLeadingSpaces|  
+|he|OneTrailingSpace|  
+|said|OneTrailingSpace|  
+|.|OneTrailingSpace &#124; ConsumeLeadingSpaces|  
+  
+ The text returned for this recognized phrase is printed as: "Hello, he said."  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Speech.Recognition.RecognizedWordUnit.DisplayAttributes%2A> property of a list of <xref:System.Speech.Recognition.RecognizedWordUnit> objects to format the words as a phrase.  
+  
+```csharp  
+  
+// Use the DisplayAttributes property to format speech as text.   
+  
+static string GetDisplayText(List<RecognizedWordUnit> words)  
+{  
+  StringBuilder sb = new StringBuilder();  
+  
+  // Concatenate the word units together. Use the DisplayAttributes  
+  // property of each word unit to add or remove white space around  
+  // the word unit.  
+  foreach (RecognizedWordUnit word in words)  
+  {  
+    if ((word.DisplayAttributes  
+      & DisplayAttributes.ConsumeLeadingSpaces) != 0))  
+    {  
+      sb = new StringBuilder(sb.ToString().TrimEnd());  
+    }  
+  
+    sb.Append(word.Text);  
+  
+    if ((word.DisplayAttributes  
+      & DisplayAttributes.OneTrailingSpace) != 0)  
+    {  
+      sb.Append(" ");  
+    }  
+    else if ((word.DisplayAttributes  
+      & DisplayAttributes.TwoTrailingSpaces) != 0)  
+    {  
+      sb.Append("  ");  
+    }  
+  }  
+  
+  return sb.ToString();  
+}  
+  
+```  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ConsumeLeadingSpaces">
@@ -32,7 +99,7 @@
         <ReturnType>System.Speech.Recognition.DisplayAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The item has no spaces preceding it.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -48,7 +115,7 @@
         <ReturnType>System.Speech.Recognition.DisplayAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The item does not specify how white space is handled.</summary>
       </Docs>
     </Member>
     <Member MemberName="OneTrailingSpace">
@@ -64,7 +131,7 @@
         <ReturnType>System.Speech.Recognition.DisplayAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The item has one space following it.</summary>
       </Docs>
     </Member>
     <Member MemberName="TwoTrailingSpaces">
@@ -80,7 +147,7 @@
         <ReturnType>System.Speech.Recognition.DisplayAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The item has two spaces following it.</summary>
       </Docs>
     </Member>
     <Member MemberName="ZeroTrailingSpaces">
@@ -96,7 +163,7 @@
         <ReturnType>System.Speech.Recognition.DisplayAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The item has no spaces following it.</summary>
       </Docs>
     </Member>
   </Members>

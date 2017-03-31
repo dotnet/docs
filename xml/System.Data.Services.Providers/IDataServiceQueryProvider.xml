@@ -8,7 +8,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines a metadata and query source implementation for a custom data service provider.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -25,8 +25,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The data source object from which data is provided.</summary>
+        <value>The data source.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,10 +47,10 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">Instance of the type that declares the open property.</param>
+        <param name="propertyName">Name of the open property.</param>
+        <summary>Gets the value of the open property.</summary>
+        <returns>The value of the open property.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,9 +70,9 @@
         <Parameter Name="target" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">Instance of the type that declares the open property.</param>
+        <summary>Gets the name and values of all the properties that are defined in the given instance of an open type.</summary>
+        <returns>A collection of name and values of all the open properties.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,10 +93,10 @@
         <Parameter Name="resourceProperty" Type="System.Data.Services.Providers.ResourceProperty" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="resourceProperty">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">Instance of the type that declares the open property.</param>
+        <param name="resourceProperty">Value for the open property.</param>
+        <summary>Gets the value of the open property.</summary>
+        <returns>Value for the property.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,9 +116,9 @@
         <Parameter Name="resourceSet" Type="System.Data.Services.Providers.ResourceSet" />
       </Parameters>
       <Docs>
-        <param name="resourceSet">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="resourceSet">The resource set.</param>
+        <summary>Gets the <see cref="T:System.Linq.IQueryable`1" /> that represents the container.</summary>
+        <returns>An <see cref="T:System.Linq.IQueryable`1" /> that represents the resource set, or a <see langword="null" /> value if there is no resource set for the specified <paramref name="resourceSet" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -138,10 +138,17 @@
         <Parameter Name="target" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="target">Instance to extract a resource type from.</param>
+        <summary>Gets the resource type for the instance that is specified by the parameter.</summary>
+        <returns>The <see cref="T:System.Data.Services.Providers.ResourceType" /> of the supplied object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Returns `true` if the given instance represents a collection; otherwise returns `false`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InvokeServiceOperation">
@@ -161,10 +168,10 @@
         <Parameter Name="parameters" Type="System.Object[]" />
       </Parameters>
       <Docs>
-        <param name="serviceOperation">To be added.</param>
-        <param name="parameters">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="serviceOperation">Service operation to invoke.</param>
+        <param name="parameters">Values of parameters to pass to the service operation.</param>
+        <summary>Invokes the given service operation and returns the results.</summary>
+        <returns>The result of the service operation, or a <see langword="null" /> value for a service operation that returns <see langword="void" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -181,8 +188,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether null propagation is required in expression trees.</summary>
+        <value>A <see cref="T:System.Boolean" /> value that indicates whether null propagation is required.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

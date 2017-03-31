@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the scope of the group principal.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.DirectoryServices.AccountManagement.GroupScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The group's scope is global. This group type is supported on AD DS. When a global group is specified with an AD LDS directory, a <see cref="F:System.DirectoryServices.AccountManagement.GroupScope.Local" /> group is created instead.</summary>
       </Docs>
     </Member>
     <Member MemberName="Local">
@@ -43,7 +43,7 @@
         <ReturnType>System.DirectoryServices.AccountManagement.GroupScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The scope of the group is local. This group type is supported on AD DS and AD LDS.</summary>
       </Docs>
     </Member>
     <Member MemberName="Universal">
@@ -59,7 +59,7 @@
         <ReturnType>System.DirectoryServices.AccountManagement.GroupScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The scope of the group is universal. This group type is supported on AD DS and AD LDS.</summary>
       </Docs>
     </Member>
   </Members>

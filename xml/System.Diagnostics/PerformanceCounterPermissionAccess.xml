@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines access levels used by <see cref="T:System.Diagnostics.PerformanceCounter" /> permission classes.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>System.Diagnostics.PerformanceCounterPermissionAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Diagnostics.PerformanceCounter" /> can read, write, and create categories.</summary>
       </Docs>
     </Member>
     <Member MemberName="Browse">
@@ -53,7 +53,7 @@
         <ReturnType>System.Diagnostics.PerformanceCounterPermissionAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Diagnostics.PerformanceCounter" /> can read categories.</summary>
       </Docs>
     </Member>
     <Member MemberName="Instrument">
@@ -74,7 +74,7 @@
         <ReturnType>System.Diagnostics.PerformanceCounterPermissionAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Diagnostics.PerformanceCounter" /> can read and write categories.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -90,7 +90,7 @@
         <ReturnType>System.Diagnostics.PerformanceCounterPermissionAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Diagnostics.PerformanceCounter" /> has no permissions.</summary>
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -106,7 +106,7 @@
         <ReturnType>System.Diagnostics.PerformanceCounterPermissionAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Diagnostics.PerformanceCounter" /> can read categories.</summary>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -122,7 +122,7 @@
         <ReturnType>System.Diagnostics.PerformanceCounterPermissionAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Diagnostics.PerformanceCounter" /> can write categories.</summary>
       </Docs>
     </Member>
   </Members>

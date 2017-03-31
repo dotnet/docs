@@ -1,49 +1,76 @@
 ---
 uid: System.Web.UI.Design.WebControls.WebParts.CatalogZoneDesigner
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.WebParts.CatalogZoneDesigner.#ctor
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.WebParts.CatalogZoneDesigner.GetDesignTimeHtml
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.WebParts.CatalogZoneDesigner.GetDesignTimeHtml
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.WebParts.CatalogZoneDesigner.GetEmptyDesignTimeHtml
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.WebParts.CatalogZoneDesigner.TemplateGroups
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.WebParts.CatalogZoneDesigner.GetDesignTimeHtml(System.Web.UI.Design.DesignerRegionCollection)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.WebParts.CatalogZoneDesigner.GetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.WebParts.CatalogZoneDesigner.Initialize(System.ComponentModel.IComponent)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.WebParts.CatalogZoneDesigner.AutoFormats
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.WebParts.CatalogZoneDesigner.SetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion,System.String)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

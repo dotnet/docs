@@ -16,8 +16,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides data for the <see cref="E:System.Data.DataTable.ColumnChanging" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.DataTable.ColumnChanging> event occurs when a change is made to the value of a column in the <xref:System.Data.DataTable>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,10 +47,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="row">To be added.</param>
-        <param name="column">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="row">The <see cref="T:System.Data.DataRow" /> of the column with the changing value.</param>
+        <param name="column">The <see cref="T:System.Data.DataColumn" /> with the changing value.</param>
+        <param name="value">The new value.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.DataColumnChangeEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,8 +72,8 @@
         <ReturnType>System.Data.DataColumn</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Data.DataColumn" /> with a changing value.</summary>
+        <value>The <see cref="T:System.Data.DataColumn" /> with a changing value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,8 +95,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the proposed new value for the column.</summary>
+        <value>The proposed value, of type <see cref="T:System.Object" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,8 +118,8 @@
         <ReturnType>System.Data.DataRow</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Data.DataRow" /> of the column with a changing value.</summary>
+        <value>The <see cref="T:System.Data.DataRow" /> of the column with a changing value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

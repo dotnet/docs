@@ -1,14 +1,20 @@
 ---
 uid: Microsoft.VisualBasic.ApplicationServices.StartupEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.ApplicationServices.StartupEventArgs.CommandLine
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.ApplicationServices.StartupEventArgs.#ctor(System.Collections.ObjectModel.ReadOnlyCollection{System.String})
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

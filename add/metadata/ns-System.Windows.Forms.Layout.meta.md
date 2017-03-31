@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Forms.Layout
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.Design.XsdSchemaFileEditor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.XsdSchemaFileEditor.Filter
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.XsdSchemaFileEditor.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.XsdSchemaFileEditor.Caption
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -1,4 +1,6 @@
 ---
 uid: System.Text.RegularExpressions.RegexOptions
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

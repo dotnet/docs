@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the schema of an enumeration property.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class inherits the <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.Default%2A> property from the <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty> class, which has no meaning for this class. Use the <xref:Microsoft.Build.Framework.XamlTypes.EnumValue.IsDefault%2A> property on the <xref:Microsoft.Build.Framework.XamlTypes.EnumValue> instead to mark the default value for this property.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The default constructor for a dynamic enum property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,9 +50,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the provider that produces the list of possible values for this property.</summary>
+        <value>Returns the provider.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property must be set during deserialization.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ProviderSettings">
@@ -61,8 +75,8 @@
         <ReturnType>System.Collections.Generic.List&lt;Microsoft.Build.Framework.XamlTypes.NameValuePair&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a provider-specific set of options to pass to the provider.</summary>
+        <value>Returns the set of options.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

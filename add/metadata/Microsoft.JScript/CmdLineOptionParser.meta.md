@@ -1,34 +1,44 @@
 ---
 uid: Microsoft.JScript.CmdLineOptionParser
-internalonly: False
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.CmdLineOptionParser.IsBooleanOption
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.CmdLineOptionParser.IsBooleanOption(System.String,System.String,System.String)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.CmdLineOptionParser.IsArgumentOption(System.String,System.String,System.String)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.CmdLineOptionParser.#ctor
-internalonly: False
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.CmdLineOptionParser.IsArgumentOption
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.CmdLineOptionParser.IsBooleanOption(System.String,System.String)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.CmdLineOptionParser.IsSimpleOption(System.String,System.String)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.CmdLineOptionParser.IsArgumentOption(System.String,System.String)
-internalonly: False
+ms.author: "mikejo"
 ---

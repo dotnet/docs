@@ -1,1 +1,0 @@
-            msgVersion = MessageVersion.Soap11WSAddressing10;

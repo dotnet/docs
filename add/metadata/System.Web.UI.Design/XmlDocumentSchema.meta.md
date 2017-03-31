@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.Design.XmlDocumentSchema
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.XmlDocumentSchema.GetViews
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.XmlDocumentSchema.#ctor(System.Xml.XmlDocument,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

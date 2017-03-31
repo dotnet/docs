@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.MessageBoxButton
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

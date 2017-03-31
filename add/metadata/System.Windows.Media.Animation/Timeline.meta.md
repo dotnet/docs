@@ -1,204 +1,296 @@
 ---
 uid: System.Windows.Media.Animation.Timeline
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.Timeline.DecelerationRatio
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.Timeline.BeginTimeProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.Timeline.DecelerationRatioProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.Timeline.AutoReverse
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.Timeline.SpeedRatioProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.Timeline.SpeedRatio
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.Timeline.GetNaturalDuration(System.Windows.Media.Animation.Clock)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.Timeline.FillBehaviorProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.Timeline.Clone
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.Timeline.AllocateClock
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.Timeline.SetDesiredFrameRate(System.Windows.Media.Animation.Timeline,System.Nullable{System.Int32})
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.Timeline.AccelerationRatioProperty
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.Timeline.CurrentTimeInvalidated
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.Timeline.AutoReverseProperty
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.Timeline.DesiredFrameRateProperty
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.Timeline.#ctor(System.Nullable{System.TimeSpan},System.Windows.Duration)
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.Timeline.CurrentStateInvalidated
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.Timeline.GetDesiredFrameRate(System.Windows.Media.Animation.Timeline)
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.Timeline.CreateClock
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.Timeline.Name
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.Timeline.#ctor(System.Nullable{System.TimeSpan},System.Windows.Duration,System.Windows.Media.Animation.RepeatBehavior)
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.Timeline.RepeatBehavior
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.Timeline.GetAsFrozenCore(System.Windows.Freezable)
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.Timeline.#ctor(System.Nullable{System.TimeSpan})
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.Timeline.GetNaturalDurationCore(System.Windows.Media.Animation.Clock)
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.Timeline.CurrentGlobalSpeedInvalidated
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.Timeline.CreateClock(System.Boolean)
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.Timeline.Duration
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.Timeline.GetCurrentValueAsFrozenCore(System.Windows.Freezable)
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.Timeline.NameProperty
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.Timeline.FreezeCore(System.Boolean)
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.Timeline.BeginTime
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.Timeline.FillBehavior
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.Timeline.RepeatBehaviorProperty
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.Timeline.CloneCurrentValue
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.Timeline.#ctor
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.Animation.Timeline.AccelerationRatioProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.Timeline.CurrentTimeInvalidated
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.Timeline.AutoReverseProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.Timeline.CreateClock
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.Timeline.DesiredFrameRateProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.Timeline.#ctor(System.Nullable{System.TimeSpan},System.Windows.Duration)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.Animation.Timeline.CurrentStateInvalidated
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.Animation.Timeline.GetDesiredFrameRate(System.Windows.Media.Animation.Timeline)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.Timeline.CreateClock
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.Timeline.Name
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.Timeline.#ctor(System.Nullable{System.TimeSpan},System.Windows.Duration,System.Windows.Media.Animation.RepeatBehavior)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.Timeline.RepeatBehavior
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.Animation.Timeline.GetAsFrozenCore(System.Windows.Freezable)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.Timeline.#ctor(System.Nullable{System.TimeSpan})
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.Timeline.GetNaturalDurationCore(System.Windows.Media.Animation.Clock)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.Timeline.CurrentGlobalSpeedInvalidated
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.Timeline.CreateClock(System.Boolean)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.Timeline.Duration
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.Timeline.GetCurrentValueAsFrozenCore(System.Windows.Freezable)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.Timeline.NameProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.Timeline.FreezeCore(System.Boolean)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.Timeline.BeginTime
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.Timeline.FillBehavior
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.Timeline.RepeatBehaviorProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.Timeline.CloneCurrentValue
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.Timeline.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.Timeline.DurationProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.Timeline.AccelerationRatio
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.Timeline.Completed
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.Timeline.RemoveRequested
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

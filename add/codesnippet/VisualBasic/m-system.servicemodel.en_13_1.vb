@@ -1,1 +1,0 @@
-            Dim eab As New EndpointAddressBuilder()

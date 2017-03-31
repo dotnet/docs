@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a service contract that defines a set of operations that allow you to control workflow instances.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -42,10 +42,17 @@
         <Parameter Name="reason" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="reason">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="instanceId">The GUID identifier of the workflow instance to abandon.</param>
+        <param name="reason">The reason for abandoning the workflow instance.</param>
+        <summary>Attempts to abandon the specified workflow instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This operation is only valid for a workflow instance that is currently loaded in memory. If the specified workflow instance is not loaded or has completed, this operation is a no-op. This operation is not transaction aware.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginAbandon">
@@ -72,13 +79,20 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="reason">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="instanceId">The GUID identifier of the workflow instance to abandon.</param>
+        <param name="reason">The reason for abandoning the workflow instance.</param>
+        <param name="callback">The asynchronous callback delegate that receives the notification of the asynchronous operation completion.</param>
+        <param name="state">An object, specified by the application, that contains state information associated with the asynchronous abandon operation.</param>
+        <summary>Begins an asynchronous operation to abandon the specified workflow instance.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The abandon process terminates the workflow instance, destroys all the associated objects, and releases the associated resources.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginCancel">
@@ -104,12 +118,19 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="instanceId">The GUID identifier of the workflow instance to cancel.</param>
+        <param name="callback">The asynchronous callback delegate that receives the notification of the asynchronous operation completion.</param>
+        <param name="state">An object, specified by the application, that contains state information associated with the asynchronous cancel operation.</param>
+        <summary>Begins an asynchronous operation to cancel the specified workflow instance.</summary>
+        <returns>An <see cref="T:System.IAsyncResult" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The cancel process quits a workflow instance and returns to the previous state without saving any changes that the workflow may have made.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginRun">
@@ -135,11 +156,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="instanceId">The GUID identifier of the workflow instance to run.</param>
+        <param name="callback">The asynchronous callback delegate that receives the notification of the asynchronous operation completion.</param>
+        <param name="state">An object, specified by the application, that contains state information associated with the asynchronous run operation.</param>
+        <summary>Begins an asynchronous operation to run the specified workflow instance.</summary>
+        <returns>An <see cref="T:System.IAsyncResult" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,13 +188,20 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="reason">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="instanceId">The GUID identifier of the workflow instance to suspend.</param>
+        <param name="reason">The reason to suspend the workflow instance.</param>
+        <param name="callback">The asynchronous callback delegate that receives the notification of the asynchronous operation completion.</param>
+        <param name="state">An object, specified by the application, that contains state information associated with the asynchronous suspend operation.</param>
+        <summary>Begins an asynchronous operation to suspend the specified workflow instance.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The suspend process temporarily halts a workflow instance.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginTerminate">
@@ -200,13 +228,20 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="reason">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="instanceId">The GUID identifier of the workflow instance to terminate.</param>
+        <param name="reason">The reason to terminate the workflow instance.</param>
+        <param name="callback">The asynchronous callback delegate that receives the notification of the asynchronous operation completion.</param>
+        <param name="state">An object, specified by the application, that contains state information associated with the asynchronous terminate operation.</param>
+        <summary>Begins an asynchronous operation to terminate the specified workflow instance.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The terminate process brings a workflow instance to an end.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginTransactedCancel">
@@ -232,12 +267,19 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="instanceId">The GUID identifier of the workflow instance to cancel.</param>
+        <param name="callback">The asynchronous callback delegate that receives the notification of the asynchronous operation completion.</param>
+        <param name="state">An object, specified by the application, that contains state information associated with the asynchronous cancel operation.</param>
+        <summary>Begins an asynchronous cancel operation in a transaction.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The cancel process quits a workflow instance and returns to the previous state without saving any changes that the workflow may have made.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginTransactedRun">
@@ -263,11 +305,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="instanceId">The GUID identifier of the workflow instance to run.</param>
+        <param name="callback">The asynchronous callback delegate that receives the notification of the asynchronous operation completion.</param>
+        <param name="state">An object, specified by the application, that contains state information associated with the asynchronous run operation.</param>
+        <summary>Begins an asynchronous operation that runs a workflow instance within a transaction.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -295,13 +337,20 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="reason">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="instanceId">The GUID identifier of the workflow instance to suspend.</param>
+        <param name="reason">The reason to suspend the workflow instance.</param>
+        <param name="callback">The asynchronous callback delegate that receives the notification of the asynchronous operation completion.</param>
+        <param name="state">An object, specified by the application, that contains state information associated with the asynchronous suspend operation.</param>
+        <summary>Begins an asynchronous operation that suspends the specified workflow instance.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The suspend process temporarily halts a workflow instance.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginTransactedTerminate">
@@ -328,13 +377,20 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="reason">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="instanceId">The GUID identifier of the workflow instance to terminate.</param>
+        <param name="reason">The reason to terminate the workflow instance.</param>
+        <param name="callback">The asynchronous callback delegate that receives the notification of the asynchronous operation completion.</param>
+        <param name="state">An object, specified by the application, that contains state information associated with the asynchronous terminate operation.</param>
+        <summary>Begins an asynchronous operation that terminates a workflow instance within a transaction.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The terminate process brings a workflow instance to an end.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginTransactedUnsuspend">
@@ -360,12 +416,19 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="instanceId">The GUID identifier of the workflow instance to unsuspend.</param>
+        <param name="callback">The asynchronous callback delegate that receives the notification of the asynchronous operation completion.</param>
+        <param name="state">An object, specified by the application, that contains state information associated with the asynchronous unsuspend operation.</param>
+        <summary>Begins an asynchronous operation that resumes the specified workflow instance within a transaction.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The unsuspend process resumes a temporarily halted workflow instance.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginUnsuspend">
@@ -391,12 +454,19 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="instanceId">The GUID identifier of the workflow instance to resume.</param>
+        <param name="callback">The asynchronous callback delegate that receives the notification of the asynchronous operation completion.</param>
+        <param name="state">An object, specified by the application, that contains state information associated with the asynchronous unsuspend operation.</param>
+        <summary>Begins an asynchronous operation that resumes the specified workflow instance.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The unsuspend process resumes a temporarily halted workflow instance.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Cancel">
@@ -420,9 +490,16 @@
         <Parameter Name="instanceId" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="instanceId">The GUID identifier of the workflow instance to cancel.</param>
+        <summary>Cancels the specified workflow instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the instance identified by the instance ID does not exist in-memory, an attempt is made to load the instance from the  instance store (if persistence has been enabled). If  persistence has not been enabled or the instance was not persisted a fault is returned to the caller. Once the in-memory instance has been loaded or identified, this operation cancels the workflow instance.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EndAbandon">
@@ -441,8 +518,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="result">The <see cref="T:System.IAsyncResult" /> returned by a call to the <see cref="M:System.ServiceModel.Activities.IWorkflowInstanceManagement.BeginAbandon(System.Guid,System.String,System.AsyncCallback,System.Object)" /> method.</param>
+        <summary>Completes an asynchronous abandon operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -462,9 +539,16 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="result">The <see cref="T:System.IAsyncResult" /> returned by a call to the <see cref="M:System.ServiceModel.Activities.IWorkflowInstanceManagement.BeginCancel(System.Guid,System.AsyncCallback,System.Object)" /> method.</param>
+        <summary>Completes an asynchronous cancel operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The cancel process quits a workflow instance and returns to the previous state without saving any changes that the workflow may have made.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EndRun">
@@ -483,8 +567,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="result">The <see cref="T:System.IAsyncResult" /> returned by a call to the <see cref="M:System.ServiceModel.Activities.IWorkflowInstanceManagement.BeginRun(System.Guid,System.AsyncCallback,System.Object)" /> method.</param>
+        <summary>Completes an asynchronous run operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -504,9 +588,16 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="result">The <see cref="T:System.IAsyncResult" /> returned by a call to the <see cref="M:System.ServiceModel.Activities.IWorkflowInstanceManagement.BeginSuspend(System.Guid,System.String,System.AsyncCallback,System.Object)" /> operation</param>
+        <summary>Completes an asynchronous suspend operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The suspend process temporarily halts a workflow instance.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EndTerminate">
@@ -525,9 +616,16 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="result">The <see cref="T:System.IAsyncResult" /> returned by a call to the <see cref="M:System.ServiceModel.Activities.IWorkflowInstanceManagement.BeginTerminate(System.Guid,System.String,System.AsyncCallback,System.Object)" /> method.</param>
+        <summary>Completes an asynchronous terminate operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The terminate process brings a workflow instance to an end.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EndTransactedCancel">
@@ -546,8 +644,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="result">The <see cref="T:System.IAsyncResult" /> returned by a call to the <see cref="M:System.ServiceModel.Activities.IWorkflowInstanceManagement.BeginTransactedCancel(System.Guid,System.AsyncCallback,System.Object)" /> method.</param>
+        <summary>Completes an asynchronous transacted cancel operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -567,8 +665,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="result">The <see cref="T:System.IAsyncResult" /> returned by a call to the <see cref="M:System.ServiceModel.Activities.IWorkflowInstanceManagement.BeginTransactedRun(System.Guid,System.AsyncCallback,System.Object)" /> method.</param>
+        <summary>Completes an asynchronous transacted run operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -588,9 +686,16 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="result">The <see cref="T:System.IAsyncResult" /> returned by a call to the <see cref="M:System.ServiceModel.Activities.IWorkflowInstanceManagement.BeginTransactedSuspend(System.Guid,System.String,System.AsyncCallback,System.Object)" /> method.</param>
+        <summary>Completes an asynchronous transacted suspend operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The suspend process temporarily halts a workflow instance.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EndTransactedTerminate">
@@ -609,9 +714,16 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="result">The <see cref="T:System.IAsyncResult" /> returned by a call to the <see cref="M:System.ServiceModel.Activities.IWorkflowInstanceManagement.BeginTransactedTerminate(System.Guid,System.String,System.AsyncCallback,System.Object)" /> method.</param>
+        <summary>Completes an asynchronous transacted terminate operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The terminate process brings a workflow instance to an end.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EndTransactedUnsuspend">
@@ -630,9 +742,16 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="result">The <see cref="T:System.IAsyncResult" /> returned by a call to the <see cref="M:System.ServiceModel.Activities.IWorkflowInstanceManagement.BeginTransactedUnsuspend(System.Guid,System.AsyncCallback,System.Object)" /> method.</param>
+        <summary>Completes an asynchronous transacted unsuspend operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The unsuspend process resumes a temporarily halted workflow instance.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EndUnsuspend">
@@ -651,9 +770,16 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="result">The <see cref="T:System.IAsyncResult" /> returned by a call to the <see cref="M:System.ServiceModel.Activities.IWorkflowInstanceManagement.BeginUnsuspend(System.Guid,System.AsyncCallback,System.Object)" /> method.</param>
+        <summary>Completes an asynchronous unsuspend operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The unsuspend process resumes a temporarily halted workflow instance.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Run">
@@ -677,8 +803,8 @@
         <Parameter Name="instanceId" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceId">The GUID identifier of the workflow instance to run.</param>
+        <summary>Starts executing the specified workflow instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -704,10 +830,17 @@
         <Parameter Name="reason" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="reason">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="instanceId">The workflow instance to suspend.</param>
+        <param name="reason">The reason for suspending the workflow instance.</param>
+        <summary>Suspends the specified workflow instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The suspend process temporarily halts a workflow instance.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Terminate">
@@ -732,10 +865,17 @@
         <Parameter Name="reason" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="reason">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="instanceId">The GUID identifier of the workflow instance to terminate.</param>
+        <param name="reason">The reason to terminate the workflow instance.</param>
+        <summary>Terminates the specified workflow instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This operation combines the functionality of an abort operation followed by a persist operation.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TransactedCancel">
@@ -762,8 +902,8 @@
         <Parameter Name="instanceId" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceId">The GUID identifier of the workflow instance to cancel.</param>
+        <summary>Cancels the specified workflow instance within a transaction.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -791,8 +931,8 @@
         <Parameter Name="instanceId" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceId">The GUID identifier of the workflow instance to run.</param>
+        <summary>Runs the specified workflow instance within a transaction.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -821,10 +961,17 @@
         <Parameter Name="reason" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="reason">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="instanceId">The GUID identifier of the workflow instance to suspend.</param>
+        <param name="reason">The reason the workflow instance is suspended.</param>
+        <summary>Suspends the specified workflow instance within a transaction.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The suspend process temporarily halts a workflow instance.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TransactedTerminate">
@@ -852,10 +999,17 @@
         <Parameter Name="reason" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="reason">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="instanceId">The GUID identifier of the workflow instance to terminate.</param>
+        <param name="reason">The reason to terminate the workflow instance.</param>
+        <summary>Terminates the specified workflow instance within a transaction.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The terminate process brings a workflow instance to an end.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TransactedUnsuspend">
@@ -882,9 +1036,16 @@
         <Parameter Name="instanceId" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="instanceId">The GUID identifier of the workflow instance to resume.</param>
+        <summary>Resumes the specified workflow instance within a transaction.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The unsuspend process resumes a temporarily halted workflow instance.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Unsuspend">
@@ -908,8 +1069,8 @@
         <Parameter Name="instanceId" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceId">The GUID identifier of the workflow instance to resume.</param>
+        <summary>Resumes the specified workflow instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,1 +1,0 @@
-            fileIOPerm1.SetPathList(FileIOPermissionAccess.Write, new string[] {"C:\\pictures", "C:\\music"});

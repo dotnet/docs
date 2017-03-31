@@ -28,8 +28,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Compares nodes to determine whether they are equal. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The purpose of this class is to implement <xref:System.Collections.IEqualityComparer?displayProperty=fullName> and <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>. Classes that require identity (such as <xref:System.Collections.Generic.Dictionary%602> ) require an instance of a class that implements one of these interfaces.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -53,8 +60,43 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Linq.XNodeEqualityComparer" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example uses this class to determine whether two nodes are equal.  
+  
+```csharp  
+  
+                XElement xmlTree1 = new XElement("Root",  
+    new XAttribute("Att1", 1),  
+    new XAttribute("Att2", 2),  
+    new XElement("Child1", 1),  
+    new XElement("Child2", "some content")  
+);  
+XElement xmlTree2 = new XElement("Root",  
+    new XAttribute("Att1", 1),  
+    new XAttribute("Att2", 2),  
+    new XElement("Child1", 1),  
+    new XElement("Child2", "some content")  
+);  
+XNodeEqualityComparer equalityComparer = new XNodeEqualityComparer();  
+Console.WriteLine(equalityComparer.Equals(xmlTree1, xmlTree2));  
+xmlTree2.Add(new XElement("NewChild", "new content"));  
+Console.WriteLine(equalityComparer.Equals(xmlTree1, xmlTree2));  
+```  
+  
+ This example produces the following output:  
+  
+```  
+  
+                True  
+False  
+```  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -84,11 +126,67 @@
         <Parameter Name="y" Type="System.Xml.Linq.XNode" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">The first <see cref="T:System.Xml.Linq.XNode" /> to compare.</param>
+        <param name="y">The second <see cref="T:System.Xml.Linq.XNode" /> to compare.</param>
+        <summary>Compares the values of two nodes.</summary>
+        <returns>A <see cref="T:System.Boolean" /> indicating if the nodes are equal.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following criteria determine whether two nodes are equal:  
+  
+-   A `null` node is equal to another `null` node but unequal to a non-`null` node.  
+  
+-   Two <xref:System.Xml.Linq.XNode> objects of different types are never equal.  
+  
+-   Two <xref:System.Xml.Linq.XText> nodes are equal if they contain the same text.  
+  
+-   Two <xref:System.Xml.Linq.XElement> nodes are equal if they have the same tag name, the same set of attributes with the same values, and (ignoring comments and processing instructions), contain two equal-length sequences of pairwise equal content nodes.  
+  
+-   Two <xref:System.Xml.Linq.XDocument> objects are equal if their root nodes are equal.  
+  
+-   Two <xref:System.Xml.Linq.XComment> nodes are equal if they contain the same comment text.  
+  
+-   Two <xref:System.Xml.Linq.XProcessingInstruction> nodes are equal if they have the same target and data.  
+  
+-   Two <xref:System.Xml.Linq.XDocumentType> nodes are equal if the have the same name, public ID, system ID, and internal subset.  
+  
+   
+  
+## Examples  
+ The following example uses this class to compare two nodes.  
+  
+```csharp  
+  
+                XElement xmlTree1 = new XElement("Root",  
+    new XAttribute("Att1", 1),  
+    new XAttribute("Att2", 2),  
+    new XElement("Child1", 1),  
+    new XElement("Child2", "some content")  
+);  
+XElement xmlTree2 = new XElement("Root",  
+    new XAttribute("Att1", 1),  
+    new XAttribute("Att2", 2),  
+    new XElement("Child1", 1),  
+    new XElement("Child2", "some content")  
+);  
+XNodeEqualityComparer equalityComparer = new XNodeEqualityComparer();  
+Console.WriteLine(equalityComparer.Equals(xmlTree1, xmlTree2));  
+xmlTree2.Add(new XElement("NewChild", "new content"));  
+Console.WriteLine(equalityComparer.Equals(xmlTree1, xmlTree2));  
+```  
+  
+ This example produces the following output:  
+  
+```  
+  
+                True  
+False  
+```  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -117,10 +215,44 @@
         <Parameter Name="obj" Type="System.Xml.Linq.XNode" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="obj">The <see cref="T:System.Xml.Linq.XNode" /> to hash.</param>
+        <summary>Returns a hash code based on an <see cref="T:System.Xml.Linq.XNode" />.</summary>
+        <returns>A <see cref="T:System.Int32" /> that contains a value-based hash code for the node.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.Linq.XNode> implementation of  <xref:System.Object.GetHashCode%2A> is based on the referential identity of the node. This method computes a deep hash code based on the value of the node and all descendants. The hash code reflects all attributes and all descendent nodes.  
+  
+   
+  
+## Examples  
+ The following example uses this method to get a deep hash code for an XML tree.  
+  
+```csharp  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XAttribute("Att1", 1),  
+    new XAttribute("Att2", 2),  
+    new XElement("Child1", 1),  
+    new XElement("Child2", "some content")  
+);  
+XNodeEqualityComparer equalityComparer = new XNodeEqualityComparer();  
+Console.WriteLine("HashCode: {0}", equalityComparer.GetHashCode(xmlTree).ToString("X"));  
+xmlTree.Add(new XElement("NewChild", "new content"));  
+Console.WriteLine("HashCode: {0}", equalityComparer.GetHashCode(xmlTree).ToString("X"));  
+```  
+  
+ This example produces the following output:  
+  
+```  
+  
+                HashCode: 958CCD0  
+HashCode: AD26516B  
+```  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEqualityComparer.Equals">
@@ -150,11 +282,35 @@
         <Parameter Name="y" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">The first <see cref="T:System.Xml.Linq.XNode" /> to compare.</param>
+        <param name="y">The second <see cref="T:System.Xml.Linq.XNode" /> to compare.</param>
+        <summary>Compares the values of two nodes.</summary>
+        <returns>
+          <see langword="true" /> if the nodes are equal; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following criteria determine whether two nodes are equal:  
+  
+-   A `null` node is equal to another `null` node but unequal to a non-`null` node.  
+  
+-   Two <xref:System.Xml.Linq.XNode> objects of different types are never equal.  
+  
+-   Two <xref:System.Xml.Linq.XText> nodes are equal if they contain the same text.  
+  
+-   Two <xref:System.Xml.Linq.XElement> nodes are equal if they have the same tag name, the same set of attributes with the same values, and (ignoring comments and processing instructions), contain two equa-length sequences of pairwise equal content nodes.  
+  
+-   Two <xref:System.Xml.Linq.XDocument> objects are equal if their root nodes are equal.  
+  
+-   Two <xref:System.Xml.Linq.XComment> nodes are equal if they contain the same comment text.  
+  
+-   Two <xref:System.Xml.Linq.XProcessingInstruction> nodes are equal if they have the same target and data.  
+  
+-   Two <xref:System.Xml.Linq.XDocumentType> nodes are equal if the have the same name, public ID, system ID, and internal subset.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEqualityComparer.GetHashCode">
@@ -183,10 +339,17 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="obj">The node to hash.</param>
+        <summary>Returns a hash code based on the value of a node.</summary>
+        <returns>A <see cref="T:System.Int32" /> that contains a value-based hash code for the node.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.Linq.XNode> implementation of <xref:System.Object.GetHashCode%2A> is based on the referential identity of the node. This method computes a deep hash code based on the value of the node, its attributes, and its descendants.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

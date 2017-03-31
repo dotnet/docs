@@ -1,9 +1,13 @@
 ---
 uid: System.ComponentModel.ICollectionViewFactory
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.ICollectionViewFactory.CreateView
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

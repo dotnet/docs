@@ -1,34 +1,61 @@
 ---
 uid: System.Web.UI.Design.DataColumnSelectionConverter
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DataColumnSelectionConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DataColumnSelectionConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DataColumnSelectionConverter.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DataColumnSelectionConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.DataColumnSelectionConverter.GetStandardValues
+---
+
+---
+uid: System.Web.UI.Design.DataColumnSelectionConverter.CanConvertFrom
+---
+
+---
+uid: System.Web.UI.Design.DataColumnSelectionConverter.GetStandardValuesSupported
+---
+
+---
+uid: System.Web.UI.Design.DataColumnSelectionConverter.GetStandardValuesExclusive
 ---
 
 ---
 uid: System.Web.UI.Design.DataColumnSelectionConverter.GetStandardValuesExclusive(System.ComponentModel.ITypeDescriptorContext)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DataColumnSelectionConverter.GetStandardValuesSupported(System.ComponentModel.ITypeDescriptorContext)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.DataColumnSelectionConverter.ConvertFrom
 ---

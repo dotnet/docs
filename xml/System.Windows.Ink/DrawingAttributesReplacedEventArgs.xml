@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides data for the <see cref="E:System.Windows.Controls.InkCanvas.DefaultDrawingAttributesReplaced" /> event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,9 +29,9 @@
         <Parameter Name="previousDrawingAttributes" Type="System.Windows.Ink.DrawingAttributes" />
       </Parameters>
       <Docs>
-        <param name="newDrawingAttributes">To be added.</param>
-        <param name="previousDrawingAttributes">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="newDrawingAttributes">The new <see cref="T:System.Windows.Ink.DrawingAttributes" />.</param>
+        <param name="previousDrawingAttributes">The old <see cref="T:System.Windows.Ink.DrawingAttributes" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Ink.DrawingAttributesReplacedEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +48,8 @@
         <ReturnType>System.Windows.Ink.DrawingAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the new <see cref="T:System.Windows.Ink.DrawingAttributes" />.</summary>
+        <value>The new <see cref="T:System.Windows.Ink.DrawingAttributes" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,8 +66,8 @@
         <ReturnType>System.Windows.Ink.DrawingAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the old <see cref="T:System.Windows.Ink.DrawingAttributes" />.</summary>
+        <value>The old <see cref="T:System.Windows.Ink.DrawingAttributes" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

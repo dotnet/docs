@@ -1,19 +1,35 @@
 ---
 uid: System.Windows.Forms.Design.DockEditor
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.Design.DockEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.Design.DockEditor.EditValue
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.Design.DockEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.Design.DockEditor.GetEditStyle
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.Design.DockEditor.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

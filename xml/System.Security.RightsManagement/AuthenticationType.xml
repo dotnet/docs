@@ -10,8 +10,25 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the method of rights management authentication.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Security.RightsManagement.AuthenticationType> specifies how users who access rights managed content are to be authenticated.  
+  
+ `Internal` also provides authentication for the owner and author of a protected document or template.  
+  
+   
+  
+## Examples  
+ The following example also shows use of the <xref:System.Security.RightsManagement.AuthenticationType> enumeration.  
+  
+ [!code-csharp[RightsManagedPackagePublish#RmPkgPubSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgpubsecenv)]
+ [!code-vb[RightsManagedPackagePublish#RmPkgPubSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgpubsecenv)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Internal">
@@ -27,7 +44,7 @@
         <ReturnType>System.Security.RightsManagement.AuthenticationType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Implicit authentication to any requesting user.</summary>
       </Docs>
     </Member>
     <Member MemberName="Passport">
@@ -43,7 +60,7 @@
         <ReturnType>System.Security.RightsManagement.AuthenticationType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>[!INCLUDE[TLA#tla_passport](~/includes/tlasharptla-passport-md.md)] authentication.</summary>
       </Docs>
     </Member>
     <Member MemberName="Windows">
@@ -59,7 +76,7 @@
         <ReturnType>System.Security.RightsManagement.AuthenticationType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>[!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] authentication in a corporate domain environment.</summary>
       </Docs>
     </Member>
     <Member MemberName="WindowsPassport">
@@ -75,7 +92,7 @@
         <ReturnType>System.Security.RightsManagement.AuthenticationType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Either [!INCLUDE[TLA2#tla_win](~/includes/tla2sharptla-win-md.md)] authentication or [!INCLUDE[TLA2#tla_passport](~/includes/tla2sharptla-passport-md.md)] authentication.</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,1 +1,0 @@
-        lazyLargeObject = New Lazy(Of LargeObject)(LazyThreadSafetyMode.PublicationOnly)

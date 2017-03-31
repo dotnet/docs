@@ -1,14 +1,20 @@
 ---
 uid: System.Web.UI.WebControls.CreateUserErrorEventArgs
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.CreateUserErrorEventArgs.#ctor(System.Web.Security.MembershipCreateStatus)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.CreateUserErrorEventArgs.CreateUserError
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

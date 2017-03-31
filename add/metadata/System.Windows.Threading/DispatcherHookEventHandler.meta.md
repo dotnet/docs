@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Threading.DispatcherHookEventHandler
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

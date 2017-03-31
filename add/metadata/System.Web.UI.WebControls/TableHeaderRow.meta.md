@@ -1,9 +1,11 @@
 ---
 uid: System.Web.UI.WebControls.TableHeaderRow
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.TableHeaderRow.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

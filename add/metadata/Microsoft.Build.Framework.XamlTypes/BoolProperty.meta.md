@@ -1,14 +1,17 @@
 ---
 uid: Microsoft.Build.Framework.XamlTypes.BoolProperty
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.XamlTypes.BoolProperty.ReverseSwitch
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.XamlTypes.BoolProperty.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

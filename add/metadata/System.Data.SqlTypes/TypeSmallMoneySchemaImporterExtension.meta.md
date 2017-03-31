@@ -1,9 +1,13 @@
 ---
 uid: System.Data.SqlTypes.TypeSmallMoneySchemaImporterExtension
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.TypeSmallMoneySchemaImporterExtension.#ctor
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

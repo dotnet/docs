@@ -30,8 +30,29 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the application elements on which it is valid to apply an attribute.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.AttributeUsageAttribute> class uses this enumeration to specify the kind of element on which it is valid to apply an attribute.  
+  
+ <xref:System.AttributeTargets> enumeration values can be combined with a bitwise OR operation to get the preferred combination.  
+  
+   
+  
+## Examples  
+ The following example illustrates the application of attributes to various targets.  
+  
+> [!NOTE]
+>  Visual Basic and Visual C++ syntax currently do not support the application of attributes to type parameters.  
+  
+ [!code-cpp[AttrTargs#1](~/samples/snippets/cpp/VS_Snippets_CLR/AttrTargs/CPP/attrtargs.cpp#1)]
+ [!code-csharp[AttrTargs#1](~/samples/snippets/csharp/VS_Snippets_CLR/AttrTargs/CS/attrtargs.cs#1)]
+ [!code-vb[AttrTargs#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/AttrTargs/VB/AttrTargs.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="All">
@@ -59,7 +80,7 @@
         <ReturnType>System.AttributeTargets</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Attribute can be applied to any application element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Assembly">
@@ -87,7 +108,7 @@
         <ReturnType>System.AttributeTargets</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Attribute can be applied to an assembly.</summary>
       </Docs>
     </Member>
     <Member MemberName="Class">
@@ -115,7 +136,7 @@
         <ReturnType>System.AttributeTargets</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Attribute can be applied to a class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Constructor">
@@ -143,7 +164,7 @@
         <ReturnType>System.AttributeTargets</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Attribute can be applied to a constructor.</summary>
       </Docs>
     </Member>
     <Member MemberName="Delegate">
@@ -171,7 +192,7 @@
         <ReturnType>System.AttributeTargets</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Attribute can be applied to a delegate.</summary>
       </Docs>
     </Member>
     <Member MemberName="Enum">
@@ -199,7 +220,7 @@
         <ReturnType>System.AttributeTargets</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Attribute can be applied to an enumeration.</summary>
       </Docs>
     </Member>
     <Member MemberName="Event">
@@ -227,7 +248,7 @@
         <ReturnType>System.AttributeTargets</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Attribute can be applied to an event.</summary>
       </Docs>
     </Member>
     <Member MemberName="Field">
@@ -255,7 +276,7 @@
         <ReturnType>System.AttributeTargets</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Attribute can be applied to a field.</summary>
       </Docs>
     </Member>
     <Member MemberName="GenericParameter">
@@ -283,7 +304,17 @@
         <ReturnType>System.AttributeTargets</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Attribute can be applied to a generic parameter.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Currently, this attribute can be applied only in C#, Microsoft intermediate language (MSIL), and emitted code.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Interface">
@@ -311,7 +342,7 @@
         <ReturnType>System.AttributeTargets</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Attribute can be applied to an interface.</summary>
       </Docs>
     </Member>
     <Member MemberName="Method">
@@ -339,7 +370,7 @@
         <ReturnType>System.AttributeTargets</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Attribute can be applied to a method.</summary>
       </Docs>
     </Member>
     <Member MemberName="Module">
@@ -367,7 +398,17 @@
         <ReturnType>System.AttributeTargets</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Attribute can be applied to a module.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  `Module` refers to a portable executable file (.dll or.exe) and not a Visual Basic standard module.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parameter">
@@ -395,7 +436,7 @@
         <ReturnType>System.AttributeTargets</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Attribute can be applied to a parameter.</summary>
       </Docs>
     </Member>
     <Member MemberName="Property">
@@ -423,7 +464,7 @@
         <ReturnType>System.AttributeTargets</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Attribute can be applied to a property.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReturnValue">
@@ -451,7 +492,7 @@
         <ReturnType>System.AttributeTargets</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Attribute can be applied to a return value.</summary>
       </Docs>
     </Member>
     <Member MemberName="Struct">
@@ -479,7 +520,7 @@
         <ReturnType>System.AttributeTargets</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Attribute can be applied to a structure; that is, a value type.</summary>
       </Docs>
     </Member>
   </Members>

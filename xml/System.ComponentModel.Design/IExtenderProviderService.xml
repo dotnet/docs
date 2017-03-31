@@ -13,8 +13,24 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides an interface for adding and removing extender providers at design time.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, only components that have been added to a container offer extender providers. The <xref:System.ComponentModel.Design.IExtenderProviderService> allows you to extend this capability to objects that are not in the container.  
+  
+   
+  
+## Examples  
+ The following example demosntrates using the <xref:System.ComponentModel.Design.IExtenderProviderService> from a designer to add and remove an <xref:System.ComponentModel.IExtenderProvider> implementation.  
+  
+ [!code-cpp[ExtenderServiceExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ExtenderServiceExample/CPP/extenderservicedesigner.cpp#1)]
+ [!code-csharp[ExtenderServiceExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ExtenderServiceExample/CS/extenderservicedesigner.cs#1)]
+ [!code-vb[ExtenderServiceExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ExtenderServiceExample/VB/extenderservicedesigner.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AddExtenderProvider">
@@ -38,9 +54,16 @@
         <Parameter Name="provider" Type="System.ComponentModel.IExtenderProvider" />
       </Parameters>
       <Docs>
-        <param name="provider">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="provider">The extender provider to add.</param>
+        <summary>Adds the specified extender provider.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This interface allows objects besides components to add extender providers to the design time set of extender providers. All properties that are displayed from these extender providers are marked as design time only.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveExtenderProvider">
@@ -64,9 +87,16 @@
         <Parameter Name="provider" Type="System.ComponentModel.IExtenderProvider" />
       </Parameters>
       <Docs>
-        <param name="provider">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="provider">The extender provider to remove.</param>
+        <summary>Removes the specified extender provider.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This interface allows objects besides components to add extender providers to the design-time set of extender providers. All properties that are displayed from these extender providers are marked as design time only.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

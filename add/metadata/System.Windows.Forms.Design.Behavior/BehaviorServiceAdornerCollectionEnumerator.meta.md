@@ -1,39 +1,52 @@
 ---
 uid: System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollectionEnumerator
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollectionEnumerator.System#Collections#IEnumerator#Reset
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollectionEnumerator.#ctor(System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollection)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollectionEnumerator.Current
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollectionEnumerator.System#Collections#IEnumerator#Current
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollectionEnumerator.System#Collections#IEnumerator#MoveNext
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollectionEnumerator.MoveNext
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollectionEnumerator.Reset
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -1,19 +1,27 @@
 ---
 uid: System.Web.Mobile.ErrorHandlerModule
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Mobile.ErrorHandlerModule.#ctor
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Mobile.ErrorHandlerModule.System#Web#IHttpModule#Init(System.Web.HttpApplication)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Mobile.ErrorHandlerModule.System#Web#IHttpModule#Dispose
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

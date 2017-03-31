@@ -47,8 +47,27 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides several different visual representations for a list of selectable items. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.MobileControls.SelectionList> class maintains the selection of single or multiple selected items. The <xref:System.Web.UI.MobileControls.SelectionList> is derived directly from the <xref:System.Web.UI.MobileControls.MobileControl> class and does not have any of the pagination handling properties, such as the <xref:System.Web.UI.MobileControls.Adapters.ControlAdapter.ItemWeight%2A> property.  
+  
+   
+  
+## Examples  
+ In the following code example, the <xref:System.Web.UI.MobileControls.SelectionList.DataSource%2A> property of the <xref:System.Web.UI.MobileControls.SelectionList> class is an array of values that is created during the initial page load. You can change the setting of the <xref:System.Web.UI.MobileControls.SelectionList.SelectType%2A> property to see different versions of a <xref:System.Web.UI.MobileControls.SelectionList>.  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Syntax Overview](../Topic/ASP.NET%20Web%20Forms%20Page%20Syntax%20Overview.md).  
+  
+ [!code-csharp[MobileListItemSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileListItemSample/cs/Default.aspx#1)]
+ [!code-vb[MobileListItemSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileListItemSample/vb/Default.aspx#1)]  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -62,7 +81,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.SelectionList" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +101,8 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="obj">The object reference to add to the server control's <see cref="P:System.Web.UI.Control.Controls" /> collection object.</param>
+        <summary>Notifies the server control that an element, either XML or HTML, was parsed, and adds the element to the server control's <see cref="P:System.Web.UI.Control.Controls" /> collection object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,9 +122,16 @@
         <Parameter Name="dataSource" Type="System.Collections.IEnumerable" />
       </Parameters>
       <Docs>
-        <param name="dataSource">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="dataSource">The source from which items in the collection are created.</param>
+        <summary>Creates items in an items collection from the specified <paramref name="dataSource" /> parameter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Inheriting classes can override this method for custom data-binding behavior.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataMember">
@@ -132,9 +158,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the data member to extract when data binding to a list data source. The default value is an empty string (""). This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>The data member to extract when data binding to a list data source.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is only used if the value of the <xref:System.Web.UI.MobileControls.SelectionList.DataSource%2A> property is of type <xref:System.ComponentModel.IListSource>, rather than of type <xref:System.Collections.IEnumerable>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataSource">
@@ -161,9 +194,16 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the data source of the list that is being bound. The default value is <see langword="null" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>The data source of the list that is being bound.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To bind a data source to a list, you must first use the control's <xref:System.Web.UI.MobileControls.ObjectList.DataBind%2A> method to ensure data binding. The data source can either be of type <xref:System.Collections.IEnumerable>, or it can be of type <xref:System.ComponentModel.IListSource>. If the data source is of type <xref:System.ComponentModel.IListSource>, you can use the <xref:System.Web.UI.MobileControls.SelectionList.DataMember%2A> field to specify which member to extract.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataTextField">
@@ -187,8 +227,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Specifies which property of a data-bound item to use when binding an item's <see cref="P:System.Web.UI.MobileControls.MobileListItem.Text" /> property. The default is <see langword="null" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>The property of a data-bound item to use when binding an item's <see cref="P:System.Web.UI.MobileControls.MobileListItem.Text" /> property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -213,8 +253,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Specifies which property of a data-bound item to use when binding an item's <see cref="P:System.Web.UI.MobileControls.MobileListItem.Value" /> property. The default is <see langword="null" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>The property of a data-bound item to use when binding an item's <see cref="P:System.Web.UI.MobileControls.MobileListItem.Value" /> property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -242,9 +282,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Returns <see langword="true" /> if the <see cref="T:System.Web.UI.MobileControls.SelectionList" /> allows multiple selections. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Web.UI.MobileControls.SelectionList" /> allows multiple selections; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To create a multiple-selection <xref:System.Web.UI.MobileControls.SelectionList>, set its <xref:System.Web.UI.MobileControls.SelectionList.SelectType%2A> property to <xref:System.Web.UI.MobileControls.ListSelectType?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ItemDataBind">
@@ -260,8 +308,19 @@
         <ReturnType>System.Web.UI.MobileControls.ListDataBindEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when an item in the list is bound to data. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When an item in a <xref:System.Web.UI.MobileControls.SelectionList> control is created and data-bound, this event handler sets the properties of the list item from arbitrary expressions.  
+  
+ An item in a <xref:System.Web.UI.MobileControls.SelectionList> control is of type <xref:System.Web.UI.MobileControls.MobileListItem>.  
+  
+ This event is raised as each data source item is bound. This is the best time to filter or group items of the <xref:System.Web.UI.MobileControls.MobileListItemCollection> collection, by using the <xref:System.Web.UI.MobileControls.MobileListItem.Text%2A> or <xref:System.Web.UI.MobileControls.MobileListItem.Value%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Items">
@@ -294,9 +353,16 @@
         <ReturnType>System.Web.UI.MobileControls.MobileListItemCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Returns the collection of items in a <see cref="T:System.Web.UI.MobileControls.MobileListItemCollection" /> list. The default value is an empty collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>The collection of items in the selection list.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can add or remove items from a <xref:System.Web.UI.MobileControls.SelectionList> collection by using the <xref:System.Web.UI.MobileControls.MobileListItemCollection.Add%2A>, <xref:System.Web.UI.MobileControls.MobileListItemCollection.Remove%2A>, and <xref:System.Web.UI.MobileControls.MobileListItemCollection.RemoveAt%2A> methods of the <xref:System.Web.UI.MobileControls.MobileListItemCollection> class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadPostData">
@@ -316,11 +382,20 @@
         <Parameter Name="postCollection" Type="System.Collections.Specialized.NameValueCollection" />
       </Parameters>
       <Docs>
-        <param name="postDataKey">To be added.</param>
-        <param name="postCollection">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="postDataKey">The key identifier for the control.</param>
+        <param name="postCollection">The collection of all incoming named values.</param>
+        <summary>Processes the postback data for this control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <returns>
+          <see langword="true" /> if the state of the <see cref="T:System.Web.UI.MobileControls.SelectionList" /> changes as a result of the postback; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.MobileControls.SelectionList.LoadPostData%2A> method uses the <xref:System.Web.UI.MobileControls.IControlAdapter.LoadPostData%2A> method on the <xref:System.Web.UI.MobileControls.IControlAdapter> object referenced by the <xref:System.Web.UI.MobileControls.MobileControl.Adapter%2A> property to load data into the control from the post data sent by the client browser. If there is no device-specific handling for loading the postback data on this control, then the <xref:System.Web.UI.MobileControls.IControlAdapter.LoadPostData%2A?displayProperty=fullName> method returns `true`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Exception">the call to <see cref="M:System.Web.UI.MobileControls.IControlAdapter.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection,System.Object,System.Boolean@)" /> on the object referenced by <see cref="P:System.Web.UI.MobileControls.MobileControl.Adapter" /> returns <see langword="false" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -339,8 +414,8 @@
         <Parameter Name="savedState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="savedState">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="savedState">An object that contains the previous view-state information.</param>
+        <summary>Restores view-state information from a previous page request that was saved by the <see cref="M:System.Web.UI.MobileControls.SelectionList.SaveViewState" /> method. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -360,8 +435,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">None.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.MobileControls.SelectionList.ItemDataBind" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -381,9 +456,16 @@
         <Parameter Name="e" Type="System.Web.UI.MobileControls.ListDataBindEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">An object (defined by <see cref="T:System.Web.UI.MobileControls.ListDataBindEventArgs" />) that contains event data.</param>
+        <summary>Called when a list item is data bound. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation raises the <xref:System.Web.UI.MobileControls.SelectionList.ItemDataBind> event. Inheriting classes can override this method to perform other tasks.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -402,8 +484,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">None.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.Control.PreRender" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -423,9 +505,16 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">An object defined by an <see cref="T:System.EventArgs" /> object that contains event data.</param>
+        <summary>Called when the selected index changes. The list must be in selection mode for this method to be called. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation raises the <xref:System.Web.UI.MobileControls.SelectionList.SelectedIndexChanged> event. Inheriting classes can override this method to perform other tasks.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RaisePostDataChangedEvent">
@@ -442,8 +531,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Notifies the <see cref="T:System.Web.UI.MobileControls.SelectionList" /> that the post data has changed. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calls the <xref:System.Web.UI.MobileControls.SelectionList.OnSelectedIndexChanged%2A> method with <xref:System.EventArgs.Empty> as the event argument.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Rows">
@@ -470,9 +566,28 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the number of rows in the selection list. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>The number of rows in the selection list.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is 4; the minimum is 1, with no maximum.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.UI.MobileControls.SelectionList.Rows%2A> property on postback to expand the list.  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Syntax Overview](../Topic/ASP.NET%20Web%20Forms%20Page%20Syntax%20Overview.md).  
+  
+ [!code-csharp[MobileSelectionListSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileSelectionListSample/cs/Default.aspx#1)]
+ [!code-vb[MobileSelectionListSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileSelectionListSample/vb/Default.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">an attempt was made to set the <see cref="T:System.Web.UI.MobileControls.SelectionList" /> value to less than zero.</exception>
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -489,8 +604,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Saves any server control view-state changes that have occurred since the time the page was posted back to the server. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <returns>None.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -518,9 +633,17 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Returns the index of the selected item. The default value is -1. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>The index of the selected item.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the control is in multiple selection mode, this property returns the index of the first selected item. The selected index cannot be set declaratively; use the <xref:System.Web.UI.MobileControls.MobileListItem.Selected%2A> property of a list item instead. Set the <xref:System.Web.UI.MobileControls.SelectionList.SelectedIndex%2A> to -1 to clear the selection. This is useful when you want to dynamically remove items from the list.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">an attempt was made to set the <see cref="P:System.Web.UI.MobileControls.SelectionList.SelectedIndex" /> property to less than <see langword="-1" /> or greater than or equal to the number of items.</exception>
       </Docs>
     </Member>
     <Member MemberName="SelectedIndexChanged">
@@ -536,8 +659,26 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs whenever a user changes the selection of a <see cref="T:System.Web.UI.MobileControls.SelectionList" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Changing the selection on the client does not generate a postback event. This event is called on the server if a postback event is generated by some other control and the selection has changed.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.UI.MobileControls.SelectionList.SelectedIndexChanged> event. It also shows how to use the <xref:System.Web.UI.MobileControls.SelectionList.Rows%2A> property on postback to expand the list.  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Syntax Overview](../Topic/ASP.NET%20Web%20Forms%20Page%20Syntax%20Overview.md).  
+  
+ [!code-csharp[MobileSelectionListSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileSelectionListSample/cs/Default.aspx#1)]
+ [!code-vb[MobileSelectionListSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileSelectionListSample/vb/Default.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Selection">
@@ -564,9 +705,16 @@
         <ReturnType>System.Web.UI.MobileControls.MobileListItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Returns the selected item, or <see langword="null" /> if there is no selection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>The currently selected item in the selection list.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the control is in multiple selection mode, this property returns the first selected item.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectType">
@@ -590,9 +738,35 @@
         <ReturnType>System.Web.UI.MobileControls.ListSelectType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the type of UI used to provide a selection UI. Must be of type <see cref="T:System.Web.UI.MobileControls.ListSelectType" />. The default value is <see cref="F:System.Web.UI.MobileControls.ListSelectType.DropDown" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>Type of UI used to provide a selection UI.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Web.UI.MobileControls.SelectionList> object can be rendered as a `CheckBox`, `DropDown`, `ListBox`, `MultiSelectListBox`, or `Radio` list, depending on the target device. The selection type also affects whether the control allows the user to select multiple items. The `MultiSelectListBox` and `CheckBox` settings allow multiple selections; other settings allow only a single selection. The selection types are shown in the following table.  
+  
+|`ListSelectType` value|Description|Multiselect|  
+|----------------------------|-----------------|-----------------|  
+|`CheckBox`|Renders list items with check boxes and multiple selection capability.|Yes|  
+|`DropDown`|Renders list items in a drop-down list box.|No|  
+|`ListBox`|Renders list items in a list box.|No|  
+|`MultipleSelectionListBox`|Renders list items in a list box with multiple selection capability.|Yes|  
+|`Radio`|Renders list items as options.|No|  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.UI.MobileControls.SelectionList.SelectedIndexChanged> event. It also shows how to use the <xref:System.Web.UI.MobileControls.SelectionList.Rows%2A> property on postback to expand the list.  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Syntax Overview](../Topic/ASP.NET%20Web%20Forms%20Page%20Syntax%20Overview.md).  
+  
+ [!code-csharp[MobileSelectionListSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileSelectionListSample/cs/Default.aspx#1)]
+ [!code-vb[MobileSelectionListSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileSelectionListSample/vb/Default.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">
@@ -612,11 +786,19 @@
         <Parameter Name="data" Type="System.Collections.Specialized.NameValueCollection" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="data">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="key">The key identifying the relevant value in the data.</param>
+        <param name="data">The collection containing the post data.</param>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <returns>
+          <see langword="true" /> if the state of the <see cref="T:System.Web.UI.MobileControls.SelectionList" /> changes as a result of the postback; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.SelectionList> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent">
@@ -633,8 +815,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.SelectionList> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -658,8 +847,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see langword="Title" /> attribute on WML devices. The default value is an empty <see langword="string" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>The <see langword="Title" /> attribute on WML devices.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -677,7 +866,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Causes tracking of view-state changes to the server control so they can be stored in the server control's <see cref="T:System.Web.UI.StateBag" /> object. This object is accessible through the <see cref="P:System.Web.UI.Control.ViewState" /> property. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

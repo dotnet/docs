@@ -16,8 +16,25 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the friendly name for a property of a Web Parts control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart> control provides a generic user interface (UI) that enables users to edit custom properties on <xref:System.Web.UI.WebControls.WebParts.WebPart> and server controls placed in <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zones. The editing UI is provided for properties that are marked in the source code with the `WebBrowsable` attribute (from the <xref:System.Web.UI.WebControls.WebParts.WebBrowsableAttribute> class). When a property is marked with this attribute, a <xref:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart> control creates the editing UI based on the type of the property, and uses a <xref:System.ComponentModel.PropertyDescriptor> object if needed to convert the value in each editing control to the type of the property.  
+  
+ The `WebDisplayName` attribute (from the <xref:System.Web.UI.WebControls.WebParts.WebDisplayNameAttribute> class) allows you to specify the text for the label that appears with each control in the editing UI.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.WebParts.WebDisplayNameAttribute> attribute to assign a display name to a property on a Web Parts control. The custom `UserJobType` property is given a friendly name "Job Type" to display in the <xref:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart> control. This example is part of a larger example found in the <xref:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart> class overview.  
+  
+ [!code-csharp[WebParts_PropertyGridEditorPart_Overview#6](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_PropertyGridEditorPart_Overview/CS/userinfowebpart.cs#6)]
+ [!code-vb[WebParts_PropertyGridEditorPart_Overview#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_PropertyGridEditorPart_Overview/VB/userinfowebpart.vb#6)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,8 +48,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.WebDisplayNameAttribute" /> class without a specified name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebDisplayNameAttribute.%23ctor%2A> constructor sets the <xref:System.Web.UI.WebControls.WebParts.WebDisplayNameAttribute.DisplayName%2A> property to an empty string ("").  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -48,9 +72,24 @@
         <Parameter Name="displayName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="displayName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="displayName">The friendly name to use in a <see cref="T:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.WebDisplayNameAttribute" /> class with a specified display name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebDisplayNameAttribute.%23ctor%2A> constructor sets the <xref:System.Web.UI.WebControls.WebParts.WebDisplayNameAttribute.DisplayName%2A> property to `displayName`. The `displayName` parameter is the value that will appear in a <xref:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart> control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.WebParts.WebDisplayNameAttribute> attribute to assign a display name to a property on a Web Parts control. The custom `UserJobType` property is given the friendly name "Job Type" to display in the <xref:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart> control. The name is assigned through the <xref:System.Web.UI.WebControls.WebParts.WebDisplayNameAttribute.%23ctor%2A> constructor. This example is part of a larger example found in the <xref:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart> class overview.  
+  
+ [!code-csharp[WebParts_PropertyGridEditorPart_Overview#6](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_PropertyGridEditorPart_Overview/CS/userinfowebpart.cs#6)]
+ [!code-vb[WebParts_PropertyGridEditorPart_Overview#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_PropertyGridEditorPart_Overview/VB/userinfowebpart.vb#6)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -66,8 +105,15 @@
         <ReturnType>System.Web.UI.WebControls.WebParts.WebDisplayNameAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents an instance of the <see cref="T:System.Web.UI.WebControls.WebParts.WebDisplayNameAttribute" /> class with the <see cref="P:System.Web.UI.WebControls.WebParts.WebDisplayNameAttribute.DisplayName" /> property set to an empty string ("").</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebDisplayNameAttribute.Default> field returns the same result as calling the <xref:System.Web.UI.WebControls.WebParts.WebDisplayNameAttribute.%23ctor%2A> constructor.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayName">
@@ -83,8 +129,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of a property to display in a <see cref="T:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart" /> control.</summary>
+        <value>A <see cref="T:System.String" /> containing the value to display in a <see cref="T:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,9 +147,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name to display in the <see cref="T:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart" /> control.</summary>
+        <value>A <see cref="T:System.String" /> containing the value to display in a <see cref="T:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebDisplayNameAttribute.DisplayNameValue%2A> property gets or sets the same value that is accessed through the <xref:System.Web.UI.WebControls.WebParts.WebDisplayNameAttribute.DisplayName%2A> property. The <xref:System.Web.UI.WebControls.WebParts.WebDisplayNameAttribute.DisplayNameValue%2A> property is protected and therefore only accessible either within the class or through a derived class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -122,9 +175,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">An <see cref="T:System.Object" /> to compare with this instance, or <see langword="null" />.</param>
+        <summary>Returns a value that indicates whether this instance is equal to a specified object.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="obj" /> equals the type and value of this instance; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,8 +196,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code for the display name value.</summary>
+        <returns>A 32-bit signed integer hash code.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -161,8 +215,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Determines whether the current instance is set to the default value.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Web.UI.WebControls.WebParts.WebDisplayNameAttribute" /> equals <see cref="F:System.Web.UI.WebControls.WebParts.WebDisplayNameAttribute.Default" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

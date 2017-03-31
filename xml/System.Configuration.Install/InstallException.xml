@@ -11,8 +11,28 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The exception that is thrown when an error occurs during the commit, rollback, or uninstall phase of an installation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example, plus the examples in the <xref:System.Configuration.Install.InstallException.%23ctor%2A> constructors, together make up an example showing an assembly having its own installer. The installer is named `MyInstaller`, which has an attribute `RunInstallerAttribute`, indicating that this installer will be invoked by [Installutil.exe (Installer Tool)](../Topic/Installutil.exe%20\(Installer%20Tool\).md). [Installutil.exe (Installer Tool)](../Topic/Installutil.exe%20\(Installer%20Tool\).md) calls the methods <xref:System.Configuration.Install.Installer.Commit%2A>, <xref:System.Configuration.Install.Installer.Rollback%2A>, <xref:System.Configuration.Install.Installer.Install%2A> and <xref:System.Configuration.Install.Installer.Uninstall%2A>. The code in <xref:System.Configuration.Install.Installer.Commit%2A> presumes that a file named `FileDoesNotExist.txt` exists before the installation of the assembly can be committed. If the file `FileDoesNotExist.txt` does not exist, <xref:System.Configuration.Install.Installer.Commit%2A> raises an <xref:System.Configuration.Install.InstallException>. The same is the case with <xref:System.Configuration.Install.Installer.Uninstall%2A> in which an uninstallation will only happen if a file named `FileDoesNotExist.txt` exists. Otherwise it raises an <xref:System.Configuration.Install.InstallException>. In <xref:System.Configuration.Install.Installer.Rollback%2A>, a code fragment is executed, which might raise an exception. If the exception is raised, it is caught and an <xref:System.Configuration.Install.InstallException> is raised with that exception being passed to it.  
+  
+> [!NOTE]
+>  Run this example with the help of Installutil.exe. Type this in the command prompt:  
+  
+ `Installutil InstallException.exe`  
+  
+ -or-  
+  
+ `Installutil /u InstallException.exe`  
+  
+ [!code-cpp[InstallException#1](~/samples/snippets/cpp/VS_Snippets_CLR/InstallException/CPP/installexception.cpp#1)]
+ [!code-csharp[InstallException#1](~/samples/snippets/csharp/VS_Snippets_CLR/InstallException/CS/installexception.cs#1)]
+ [!code-vb[InstallException#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/InstallException/VB/installexception.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,8 +46,24 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.Install.InstallException" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the <xref:System.Configuration.Install.InstallException.%23ctor%2A> constructor. It is a part of the example of the <xref:System.Configuration.Install.InstallException> class.  
+  
+ In this example, Installutil.exe calls the <xref:System.Configuration.Install.Installer.Commit%2A> method. The code in <xref:System.Configuration.Install.Installer.Commit%2A> presumes that a file named `FileDoesNotExist.txt` exists before the installation of the assembly can be committed. If the file `FileDoesNotExist.txt` does not exist, <xref:System.Configuration.Install.Installer.Commit%2A> raises an <xref:System.Configuration.Install.InstallException>.  
+  
+> [!NOTE]
+>  This example shows how to use one of the overloaded versions of the <xref:System.Configuration.Install.InstallException> constructor. For other examples that might be available, see the individual overload topics.  
+  
+ [!code-cpp[InstallException#2](~/samples/snippets/cpp/VS_Snippets_CLR/InstallException/CPP/installexception.cpp#2)]
+ [!code-csharp[InstallException#2](~/samples/snippets/csharp/VS_Snippets_CLR/InstallException/CS/installexception.cs#2)]
+ [!code-vb[InstallException#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/InstallException/VB/installexception.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -43,9 +79,25 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="message">The message to display to the user.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.Install.InstallException" /> class, and specifies the message to display to the user.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the <xref:System.Configuration.Install.InstallException.%23ctor%2A> constructor. It is a part of the example of the <xref:System.Configuration.Install.InstallException> class.  
+  
+ In this example, Installutil.exe calls the <xref:System.Configuration.Install.Installer.Uninstall%2A> method. Uninstallation will only happen if a file named `FileDoesNotExist.txt` exists. Otherwise it raises an <xref:System.Configuration.Install.InstallException>.  
+  
+> [!NOTE]
+>  This example shows how to use one of the overloaded versions of the <xref:System.Configuration.Install.InstallException> constructor. For other examples that might be available, see the individual overload topics.  
+  
+ [!code-cpp[InstallException#4](~/samples/snippets/cpp/VS_Snippets_CLR/InstallException/CPP/installexception.cpp#4)]
+ [!code-csharp[InstallException#4](~/samples/snippets/csharp/VS_Snippets_CLR/InstallException/CS/installexception.cs#4)]
+ [!code-vb[InstallException#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/InstallException/VB/installexception.vb#4)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -62,9 +114,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+        <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.Install.InstallException" /> class with serialized data.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,9 +134,9 @@
         <Parameter Name="innerException" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="innerException">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The message to display to the user.</param>
+        <param name="innerException">The exception that is the cause of the current exception. If the <c>innerException</c> parameter is not <see langword="null" />, the current exception is raised in a <see langword="catch" /> block that handles the inner exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.Install.InstallException" /> class, and specifies the message to display to the user, and a reference to the inner exception that is the cause of this exception.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

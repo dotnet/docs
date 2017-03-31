@@ -11,8 +11,26 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains information about a part of the <see cref="T:System.Windows.Forms.DataGrid" /> at a specified coordinate. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataGrid.HitTestInfo> class, in conjunction with the <xref:System.Windows.Forms.DataGrid.HitTest%2A> method of the <xref:System.Windows.Forms.DataGrid> control, is used to determine which part of a <xref:System.Windows.Forms.DataGrid> control the user has clicked. The <xref:System.Windows.Forms.DataGrid.HitTestInfo> class contains the row, column, and part of the grid that was clicked. See the <xref:System.Windows.Forms.DataGrid.HitTestType> enumeration returned by the <xref:System.Windows.Forms.DataGrid.HitTestInfo.Type%2A> property for a complete list of grid parts.  
+  
+ To return a <xref:System.Windows.Forms.DataGrid.HitTestInfo>, invoke the <xref:System.Windows.Forms.DataGrid.HitTest%2A> method from the <xref:System.Windows.Forms.Control.MouseDown> event of <xref:System.Windows.Forms.DataGrid> control. Pass the `x` and `y` properties of the <xref:System.Windows.Forms.MouseEventArgs> to the <xref:System.Windows.Forms.DataGrid.HitTest%2A> method.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Windows.Forms.DataGrid.HitTest%2A> method in a <xref:System.Windows.Forms.Control.MouseDown> event to return the <xref:System.Windows.Forms.DataGrid.HitTestInfo> object. The row, column, and part of the grid are then printed.  
+  
+ [!code-cpp[Classic DataGrid.HitTestInfo Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGrid.HitTestInfo Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic DataGrid.HitTestInfo Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGrid.HitTestInfo Example/CS/source.cs#1)]
+ [!code-vb[Classic DataGrid.HitTestInfo Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGrid.HitTestInfo Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Column">
@@ -28,9 +46,25 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of the column the user has clicked.</summary>
+        <value>The number of the column.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the coordinate is not a cell, the property returns -1.  
+  
+   
+  
+## Examples  
+ The following example prints the numbers of the clicked row and column by calling the <xref:System.Windows.Forms.DataGrid.HitTest%2A> method from within the <xref:System.Windows.Forms.Control.MouseDown> event of a <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> control. This returns a <xref:System.Windows.Forms.DataGrid.HitTestInfo> object.  
+  
+ [!code-cpp[Classic DataGrid.HitTestInfo.Column Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGrid.HitTestInfo.Column Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic DataGrid.HitTestInfo.Column Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGrid.HitTestInfo.Column Example/CS/source.cs#1)]
+ [!code-vb[Classic DataGrid.HitTestInfo.Column Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGrid.HitTestInfo.Column Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -49,10 +83,22 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The second object to compare, typed as <see cref="T:System.Object" />.</param>
+        <summary>Indicates whether two objects are identical.</summary>
+        <returns>
+          <see langword="true" /> if the objects are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example tests whether the user is clicking an area of the grid that is not valid.  
+  
+ [!code-cpp[Classic DataGrid.HitTestInfo.Nowhere Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGrid.HitTestInfo.Nowhere Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic DataGrid.HitTestInfo.Nowhere Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGrid.HitTestInfo.Nowhere Example/CS/source.cs#1)]
+ [!code-vb[Classic DataGrid.HitTestInfo.Nowhere Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGrid.HitTestInfo.Nowhere Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -69,9 +115,25 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets the hash code for the <see cref="T:System.Windows.Forms.DataGrid.HitTestInfo" /> instance.</summary>
+        <returns>The hash code for this instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method overrides <xref:System.Object.GetHashCode%2A>.  
+  
+   
+  
+## Examples  
+ The following example prints the hash code of the <xref:System.Windows.Forms.DataGrid.HitTestInfo>.  
+  
+ [!code-cpp[Classic DataGrid.HitTestInfo.GetHashCode Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGrid.HitTestInfo.GetHashCode Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic DataGrid.HitTestInfo.GetHashCode Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGrid.HitTestInfo.GetHashCode Example/CS/source.cs#1)]
+ [!code-vb[Classic DataGrid.HitTestInfo.GetHashCode Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGrid.HitTestInfo.GetHashCode Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Nowhere">
@@ -87,8 +149,24 @@
         <ReturnType>System.Windows.Forms.DataGrid+HitTestInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Indicates that a coordinate corresponds to part of the <see cref="T:System.Windows.Forms.DataGrid" /> control that is not functioning.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Other parts of the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>, such as the <xref:System.Windows.Forms.DataGrid.HitTestType>, can return useful information. If the part of the grid has no function (such as the gray area behind a sparsely populated grid table), the <xref:System.Windows.Forms.DataGrid.HitTestInfo.Nowhere> field is returned.  
+  
+   
+  
+## Examples  
+ The following example tests whether the user is clicking an area of the grid that is not valid.  
+  
+ [!code-cpp[Classic DataGrid.HitTestInfo.Nowhere Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGrid.HitTestInfo.Nowhere Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic DataGrid.HitTestInfo.Nowhere Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGrid.HitTestInfo.Nowhere Example/CS/source.cs#1)]
+ [!code-vb[Classic DataGrid.HitTestInfo.Nowhere Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGrid.HitTestInfo.Nowhere Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Row">
@@ -104,9 +182,25 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of the row the user has clicked.</summary>
+        <value>The number of the clicked row.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the coordinate is not a cell, the property returns -1. If the coordinate is a <xref:System.Windows.Forms.DataGrid.HitTestType>, the property returns the row number of the header, but the <xref:System.Windows.Forms.DataGrid.HitTestInfo.Column%2A> property will return -1.  
+  
+   
+  
+## Examples  
+ The following example prints the number of the clicked row and column by calling the <xref:System.Windows.Forms.DataGrid.HitTest%2A> method from within the <xref:System.Windows.Forms.Control.MouseDown> event of a <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> control. This returns a <xref:System.Windows.Forms.DataGrid.HitTestInfo> object.  
+  
+ [!code-cpp[Classic DataGrid.HitTestInfo.Row Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGrid.HitTestInfo.Row Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic DataGrid.HitTestInfo.Row Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGrid.HitTestInfo.Row Example/CS/source.cs#1)]
+ [!code-vb[Classic DataGrid.HitTestInfo.Row Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGrid.HitTestInfo.Row Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -123,9 +217,20 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets the type, row number, and column number.</summary>
+        <returns>The type, row number, and column number.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example prints the type, row number, and column number when the user clicks the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>.  
+  
+ [!code-cpp[Classic DataGrid.HitTestInfo.ToString Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGrid.HitTestInfo.ToString Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic DataGrid.HitTestInfo.ToString Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGrid.HitTestInfo.ToString Example/CS/source.cs#1)]
+ [!code-vb[Classic DataGrid.HitTestInfo.ToString Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGrid.HitTestInfo.ToString Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -141,9 +246,20 @@
         <ReturnType>System.Windows.Forms.DataGrid+HitTestType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the part of the <see cref="T:System.Windows.Forms.DataGrid" /> control, other than the row or column, that was clicked.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.DataGrid.HitTestType" /> enumerations.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example prints the clicked part of the grid by calling the <xref:System.Windows.Forms.DataGrid.HitTest%2A> method from within the <xref:System.Windows.Forms.Control.MouseDown> event of a <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> control. This returns a <xref:System.Windows.Forms.DataGrid.HitTestInfo> object.  
+  
+ [!code-cpp[Classic DataGrid.HitTestInfo.Type Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGrid.HitTestInfo.Type Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic DataGrid.HitTestInfo.Type Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGrid.HitTestInfo.Type Example/CS/source.cs#1)]
+ [!code-vb[Classic DataGrid.HitTestInfo.Type Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGrid.HitTestInfo.Type Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

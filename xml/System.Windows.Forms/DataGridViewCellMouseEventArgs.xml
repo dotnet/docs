@@ -11,8 +11,41 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides data for mouse events raised by a <see cref="T:System.Windows.Forms.DataGridView" /> whenever the mouse is moved within a <see cref="T:System.Windows.Forms.DataGridViewCell" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataGridViewCellMouseEventArgs> class provides data for the following <xref:System.Windows.Forms.DataGridView> events:  
+  
+-   <xref:System.Windows.Forms.DataGridView.CellMouseClick>  
+  
+-   <xref:System.Windows.Forms.DataGridView.CellMouseDoubleClick>  
+  
+-   <xref:System.Windows.Forms.DataGridView.CellMouseDown>  
+  
+-   <xref:System.Windows.Forms.DataGridView.CellMouseMove>  
+  
+-   <xref:System.Windows.Forms.DataGridView.CellMouseUp>  
+  
+-   <xref:System.Windows.Forms.DataGridView.ColumnHeaderMouseClick>  
+  
+-   <xref:System.Windows.Forms.DataGridView.ColumnHeaderMouseDoubleClick>  
+  
+-   <xref:System.Windows.Forms.DataGridView.RowHeaderMouseClick>  
+  
+-   <xref:System.Windows.Forms.DataGridView.RowHeaderMouseDoubleClick>  
+  
+   
+  
+## Examples  
+ The following code example illustrates the use of this type.  
+  
+ [!code-csharp[System.Windows.Forms.DataGridViewMisc#160](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/CS/datagridviewmisc.cs#160)]
+ [!code-vb[System.Windows.Forms.DataGridViewMisc#160](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#160)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,13 +65,19 @@
         <Parameter Name="e" Type="System.Windows.Forms.MouseEventArgs" />
       </Parameters>
       <Docs>
-        <param name="columnIndex">To be added.</param>
-        <param name="rowIndex">To be added.</param>
-        <param name="localX">To be added.</param>
-        <param name="localY">To be added.</param>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="columnIndex">The cell's zero-based column index.</param>
+        <param name="rowIndex">The cell's zero-based row index.</param>
+        <param name="localX">The x-coordinate of the mouse, in pixels.</param>
+        <param name="localY">The y-coordinate of the mouse, in pixels.</param>
+        <param name="e">The originating <see cref="T:System.Windows.Forms.MouseEventArgs" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewCellMouseEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="columnIndex" /> is less than -1.  
+  
+ -or-  
+  
+ <paramref name="rowIndex" /> is less than -1.</exception>
       </Docs>
     </Member>
     <Member MemberName="ColumnIndex">
@@ -54,9 +93,19 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the zero-based column index of the cell.</summary>
+        <value>An integer specifying the column index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example illustrates the use of this property.  
+  
+ [!code-csharp[System.Windows.Forms.DataGridViewMisc#160](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/CS/datagridviewmisc.cs#160)]
+ [!code-vb[System.Windows.Forms.DataGridViewMisc#160](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#160)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RowIndex">
@@ -72,9 +121,19 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the zero-based row index of the cell.</summary>
+        <value>An integer specifying the row index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example illustrates the use of this type.  
+  
+ [!code-csharp[System.Windows.Forms.DataGridViewMisc2#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc2/cs/misc2.cs#10)]
+ [!code-vb[System.Windows.Forms.DataGridViewMisc2#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc2/vb/misc2.vb#10)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

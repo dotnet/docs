@@ -1,4 +1,6 @@
 ---
 uid: System.Drawing.Printing.PrintPageEventHandler
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

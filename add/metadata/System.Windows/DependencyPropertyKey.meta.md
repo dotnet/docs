@@ -1,14 +1,18 @@
 ---
 uid: System.Windows.DependencyPropertyKey
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.DependencyPropertyKey.DependencyProperty
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.DependencyPropertyKey.OverrideMetadata(System.Type,System.Windows.PropertyMetadata)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

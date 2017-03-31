@@ -1,9 +1,11 @@
 ---
 uid: System.Net.DownloadStringCompletedEventArgs
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.DownloadStringCompletedEventArgs.Result
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

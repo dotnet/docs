@@ -1,29 +1,39 @@
 ---
 uid: System.Windows.Controls.InkCanvasGestureEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.InkCanvasGestureEventArgs.GetGestureRecognitionResults
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.InkCanvasGestureEventArgs.Strokes
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.InkCanvasGestureEventArgs.#ctor(System.Windows.Ink.StrokeCollection,System.Collections.Generic.IEnumerable{System.Windows.Ink.GestureRecognitionResult})
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.InkCanvasGestureEventArgs.InvokeEventHandler(System.Delegate,System.Object)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.InkCanvasGestureEventArgs.Cancel
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

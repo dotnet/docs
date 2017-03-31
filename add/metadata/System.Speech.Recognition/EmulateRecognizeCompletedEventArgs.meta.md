@@ -1,9 +1,11 @@
 ---
 uid: System.Speech.Recognition.EmulateRecognizeCompletedEventArgs
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.EmulateRecognizeCompletedEventArgs.Result
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

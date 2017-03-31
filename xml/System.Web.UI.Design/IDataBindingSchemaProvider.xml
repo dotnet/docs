@@ -8,8 +8,15 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides an interface for design-time access to a schema provider in a design host.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.IDataBindingSchemaProvider> class is implemented by design hosts, such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], that host the data-binding dialog box to show schema.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CanRefreshSchema">
@@ -25,8 +32,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the provider can refresh the schema.</summary>
+        <value>
+          <see langword="true" />, if the schema can be refreshed; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,9 +54,17 @@
         <Parameter Name="preferSilent" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="preferSilent">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="preferSilent">
+          <see langword="true" /> to disable data-binding events until after the schema has been refreshed; <see langword="false" /> to enable the events.</param>
+        <summary>Refreshes the schema for the data source.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.IDataBindingSchemaProvider.RefreshSchema%2A> method is called by the design host only if the <xref:System.Web.UI.Design.IDataBindingSchemaProvider.CanRefreshSchema%2A> property is `true`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Schema">
@@ -64,8 +80,8 @@
         <ReturnType>System.Web.UI.Design.IDataSourceViewSchema</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the current schema object for the designer.</summary>
+        <value>The current schema object for the designer.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

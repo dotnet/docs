@@ -1,19 +1,34 @@
 ---
 uid: System.Activities.DynamicUpdate.DynamicUpdateMapQuery
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DynamicUpdate.DynamicUpdateMapQuery.FindMatch(System.Activities.Variable)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DynamicUpdate.DynamicUpdateMapQuery.CanApplyUpdateWhileRunning(System.Activities.Activity)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.DynamicUpdate.DynamicUpdateMapQuery.FindMatch
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DynamicUpdate.DynamicUpdateMapQuery.FindMatch(System.Activities.Activity)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

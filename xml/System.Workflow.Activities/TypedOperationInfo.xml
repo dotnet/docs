@@ -16,8 +16,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>An <see cref="T:System.Workflow.Activities.OperationInfo" /> object that inherits from <see cref="T:System.Workflow.Activities.OperationInfoBase" /> used for the service operation information of the <see cref="T:System.Workflow.Activities.SendActivity" /> and <see cref="T:System.Workflow.Activities.ReceiveActivity" /> activities. Note that this operation information must be based on a CLR type.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +40,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.TypedOperationInfo" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,9 +58,9 @@
         <Parameter Name="operationName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="contractType">To be added.</param>
-        <param name="operationName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="contractType">The type of the associated contract interface.</param>
+        <param name="operationName">The method name of the associated service operation.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.TypedOperationInfo" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,8 +78,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a copy of the current object.</summary>
+        <returns>The copy of the object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,8 +96,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The type of the associated contract interface.</summary>
+        <value>A <see cref="T:System.Type" /> object that represents the type of the associated contract interface.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,9 +117,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The <see cref="T:System.Object" /> to compare with the current <see cref="T:System.Workflow.Activities.TypedOperationInfo" />.</param>
+        <summary>Determines whether two <see cref="T:System.Workflow.Activities.TypedOperationInfo" /> instances are equal.</summary>
+        <returns>
+          <see langword="true" /> if the instances are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -172,8 +182,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Generates a number that corresponds to the value of the object to support the use of a hash table.</summary>
+        <returns>An <see cref="T:System.Int32" /> that represents the hash code value of the object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -257,10 +267,27 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a <see cref="T:System.String" /> that represents the current <see cref="T:System.Workflow.Activities.TypedOperationInfo" /> object.</summary>
+        <returns>A <see cref="T:System.String" /> that represents the current <see cref="T:System.Workflow.Activities.TypedOperationInfo" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.TypedOperationInfo" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.Activities.TypedOperationInfo> class requires that a service contract is present.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

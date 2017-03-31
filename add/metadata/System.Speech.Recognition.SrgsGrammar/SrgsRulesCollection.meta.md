@@ -1,14 +1,22 @@
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsRulesCollection
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsRulesCollection.Add(System.Speech.Recognition.SrgsGrammar.SrgsRule[])
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsRulesCollection.#ctor
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
+---
+
+---
+uid: System.Speech.Recognition.SrgsGrammar.SrgsRulesCollection.Add
+manager: "ghogen"
 ---

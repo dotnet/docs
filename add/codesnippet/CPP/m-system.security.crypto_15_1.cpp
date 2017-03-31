@@ -1,1 +1,0 @@
-            XmlDsigC14NTransform^ secondTransform = gcnew XmlDsigC14NTransform;

@@ -15,8 +15,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Initializes new instances of the <see cref="T:System.Runtime.Remoting.Channels.Http.HttpRemotingHandler" /> class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The current class dynamically manufactures new instances of the <xref:System.Runtime.Remoting.Channels.Http.HttpRemotingHandler> class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +37,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates an instance of <see cref="T:System.Runtime.Remoting.Channels.Http.HttpRemotingHandlerFactory" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,13 +60,20 @@
         <Parameter Name="filePath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="verb">To be added.</param>
-        <param name="url">To be added.</param>
-        <param name="filePath">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="context">An instance of the <see cref="T:System.Web.HttpContext" /> class that provides references to intrinsic server objects (for example, <see langword="Request" />, <see langword="Response" />, <see langword="Session" />, and <see langword="Server" />) used to service HTTP requests.</param>
+        <param name="verb">The HTTP data transfer method (<see langword="GET" /> or <see langword="POST" />) that the client uses.</param>
+        <param name="url">The <see cref="P:System.Web.HttpRequest.RawUrl" /> of the requested resource.</param>
+        <param name="filePath">The <see cref="P:System.Web.HttpRequest.PhysicalApplicationPath" /> to the requested resource.</param>
+        <summary>Returns an instance of the <see cref="T:System.Runtime.Remoting.Channels.Http.HttpRemotingHandler" /> class.</summary>
+        <returns>A new <see cref="T:System.Runtime.Remoting.Channels.Http.HttpRemotingHandler" /> that processes the request.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the current method, see <xref:System.Web.IHttpHandlerFactory.GetHandler%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReleaseHandler">
@@ -78,8 +92,8 @@
         <Parameter Name="handler" Type="System.Web.IHttpHandler" />
       </Parameters>
       <Docs>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="handler">The <see cref="T:System.Web.IHttpHandler" /> to release.</param>
+        <summary>Enables a factory to reuse the specified <see cref="T:System.Runtime.Remoting.Channels.Http.HttpRemotingHandler" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

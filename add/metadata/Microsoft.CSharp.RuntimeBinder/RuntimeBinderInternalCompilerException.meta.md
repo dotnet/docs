@@ -1,24 +1,41 @@
 ---
 uid: Microsoft.CSharp.RuntimeBinder.RuntimeBinderInternalCompilerException
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.CSharp.RuntimeBinder.RuntimeBinderInternalCompilerException.#ctor(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.CSharp.RuntimeBinder.RuntimeBinderInternalCompilerException.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.CSharp.RuntimeBinder.RuntimeBinderInternalCompilerException.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.CSharp.RuntimeBinder.RuntimeBinderInternalCompilerException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.CSharp.RuntimeBinder.RuntimeBinderInternalCompilerException.#ctor(System.String,System.Exception)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Reads an XML manifest file into an object representation.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,10 +37,10 @@
         <Parameter Name="preserveStream" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="input">To be added.</param>
-        <param name="preserveStream">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="input">Specifies an input stream.</param>
+        <param name="preserveStream">Specifies whether to preserve the input stream in the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest.InputStream" /> property of the resulting manifest object. Used by <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ManifestWriter" /> to reconstitute input which is not represented in the object representation.</param>
+        <summary>Reads the specified manifest XML and returns an object representation.</summary>
+        <returns>A <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest" /> object representation of the manifest. Can be cast to <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyManifest" />, <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest" />, or <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest" /> to access more specific functionality.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,10 +61,10 @@
         <Parameter Name="preserveStream" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <param name="preserveStream">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="path">The fully qualified path name of the input file. For example, the full path may be c:\directory\folder\filename.manifest.</param>
+        <param name="preserveStream">Specifies whether to preserve the input stream in the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest.InputStream" /> property of the resulting manifest object. Used by <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ManifestWriter" /> to reconstitute input which is not represented in the object representation.</param>
+        <summary>Reads the specified manifest XML and returns an object representation.</summary>
+        <returns>A <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest" /> object representation of the manifest. Can be cast to <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyManifest" />, <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest" />, or <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest" /> to access more specific functionality.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,11 +86,11 @@
         <Parameter Name="preserveStream" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="manifestType">To be added.</param>
-        <param name="input">To be added.</param>
-        <param name="preserveStream">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="manifestType">Specifies the expected type of the manifest. Valid values are <see langword="AssemblyManifest" />, <see langword="ApplicationManifest" />, or <see langword="DeployManifest" />.</param>
+        <param name="input">Specifies an input stream.</param>
+        <param name="preserveStream">Specifies whether to preserve the input stream in the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest.InputStream" /> property of the resulting manifest object. Used by <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ManifestWriter" /> to reconstitute input which is not represented in the object representation.</param>
+        <summary>Reads the specified manifest XML and returns an object representation.</summary>
+        <returns>A <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest" /> object representation of the manifest. Can be cast to <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyManifest" />, <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest" />, or <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest" /> to access more specific functionality.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,11 +112,11 @@
         <Parameter Name="preserveStream" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="manifestType">To be added.</param>
-        <param name="path">To be added.</param>
-        <param name="preserveStream">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="manifestType">Specifies the expected type of the manifest. Valid values are <see langword="AssemblyManifest" />, <see langword="ApplicationManifest" />, or <see langword="DeployManifest" />.</param>
+        <param name="path">The path name of the input file.</param>
+        <param name="preserveStream">Specifies whether to preserve the input stream in the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest.InputStream" /> property of the resulting manifest object. Used by <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ManifestWriter" /> to reconstitute input which is not represented in the object representation.</param>
+        <summary>Reads the specified manifest XML and returns an object representation.</summary>
+        <returns>A <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest" /> object representation of the manifest. Can be cast to <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyManifest" />, <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest" />, or <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest" /> to access more specific functionality.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

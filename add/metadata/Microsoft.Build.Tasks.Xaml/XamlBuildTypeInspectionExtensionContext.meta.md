@@ -1,14 +1,20 @@
 ---
 uid: Microsoft.Build.Tasks.Xaml.XamlBuildTypeInspectionExtensionContext
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.XamlBuildTypeInspectionExtensionContext.MarkupItemsByTypeName
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.XamlBuildTypeInspectionExtensionContext.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -1,24 +1,40 @@
 ---
 uid: System.Windows.Shell.JumpItemsRejectedEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Shell.JumpItemsRejectedEventArgs.RejectionReasons
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Shell.JumpItemsRejectedEventArgs.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Shell.JumpItemsRejectedEventArgs.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Shell.JumpItemsRejectedEventArgs.#ctor(System.Collections.Generic.IList{System.Windows.Shell.JumpItem},System.Collections.Generic.IList{System.Windows.Shell.JumpItemRejectionReason})
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Shell.JumpItemsRejectedEventArgs.RejectedItems
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

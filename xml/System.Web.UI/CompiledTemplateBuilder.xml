@@ -15,8 +15,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>An <see cref="T:System.Web.UI.ITemplate" /> implementation that is called from the generated page class code. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.CompiledTemplateBuilder> class is used by ASP.NET to create a template for a templated control from the generated class code. It is not meant to be used directly in your code.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,9 +39,16 @@
         <Parameter Name="buildTemplateMethod" Type="System.Web.UI.BuildTemplateMethod" />
       </Parameters>
       <Docs>
-        <param name="buildTemplateMethod">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="buildTemplateMethod">A delegate used to handle the <see cref="M:System.Web.UI.CompiledTemplateBuilder.InstantiateIn(System.Web.UI.Control)" /> method call.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.CompiledTemplateBuilder" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is used internally by ASP.NET to create a new instance of the <xref:System.Web.UI.CompiledTemplateBuilder> class. It is not meant to be used directly in your code.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InstantiateIn">
@@ -53,9 +67,16 @@
         <Parameter Name="container" Type="System.Web.UI.Control" />
       </Parameters>
       <Docs>
-        <param name="container">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="container">A <see cref="T:System.Web.UI.Control" /> that represents the container used to store the child controls in the template.</param>
+        <summary>Populates the <see cref="T:System.Web.UI.Control" /> object with the child controls contained in the template.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.CompiledBindableTemplateBuilder.InstantiateIn%2A> method is the <xref:System.Web.UI.TemplateBuilder> class's implementation of the <xref:System.Web.UI.ITemplate.InstantiateIn%2A?displayProperty=fullName> method. It is used by ASP.NET to create the control hierarchy of the template and is not meant to be used directly in your code.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

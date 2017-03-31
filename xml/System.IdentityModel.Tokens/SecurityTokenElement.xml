@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a number elements found in a <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" /> which represent security tokens.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is not thread-safe.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,9 +35,18 @@
         <Parameter Name="securityToken" Type="System.IdentityModel.Tokens.SecurityToken" />
       </Parameters>
       <Docs>
-        <param name="securityToken">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="securityToken">The security token that the new instance represents.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SecurityTokenElement" /> class by using a <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When this constructor is used, the <xref:System.IdentityModel.Tokens.SecurityTokenElement.GetIdentities%2A> method is not supported by the new instance unless the <xref:System.IdentityModel.Tokens.SecurityTokenElement.CreateSubject%2A> method is overridden.  
+  
+ If the `securityToken` parameter is an instance of <xref:System.IdentityModel.Tokens.GenericXmlSecurityToken> then the <xref:System.IdentityModel.Tokens.SecurityTokenElement.SecurityTokenXml%2A> property is set to the value of the <xref:System.IdentityModel.Tokens.GenericXmlSecurityToken.TokenXml%2A?displayProperty=fullName> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -47,9 +63,9 @@
         <Parameter Name="securityTokenHandlers" Type="System.IdentityModel.Tokens.SecurityTokenHandlerCollection" />
       </Parameters>
       <Docs>
-        <param name="securityTokenXml">To be added.</param>
-        <param name="securityTokenHandlers">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="securityTokenXml">The XML representation of the security token.</param>
+        <param name="securityTokenHandlers">The default token handler collection that is used to read and validate the security token wrapped by the new instance.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SecurityTokenElement" /> class by using the specified XML representation of a security token.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,8 +83,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the identities that are contained in the wrapped token.</summary>
+        <returns>The identities that are contained in the token.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,9 +102,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets the security token that is represented by the current instance.</summary>
+        <returns>The security token that the current instance represents.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the current instance was not constructed explicitly from a <xref:System.IdentityModel.Tokens.SecurityToken> object by using the <xref:System.IdentityModel.Tokens.SecurityTokenElement.%23ctor%28System.IdentityModel.Tokens.SecurityToken%29?displayProperty=fullName> constructor, then the <xref:System.IdentityModel.Tokens.SecurityTokenElement.ReadSecurityToken%2A> method is called to return the security token.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadSecurityToken">
@@ -108,10 +131,10 @@
         <Parameter Name="securityTokenHandlers" Type="System.IdentityModel.Tokens.SecurityTokenHandlerCollection" />
       </Parameters>
       <Docs>
-        <param name="securityTokenXml">To be added.</param>
-        <param name="securityTokenHandlers">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="securityTokenXml">The XML representation of the security token.</param>
+        <param name="securityTokenHandlers">The token handler collection to use to read the token.</param>
+        <summary>Deserializes a <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> from the specified XML representation.</summary>
+        <returns>The security token that was deserialized from the XML.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,9 +151,16 @@
         <ReturnType>System.Xml.XmlElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the XML representation of the wrapped token.</summary>
+        <value>The XML representation of the token.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is `null` unless the current instance was initialized by using the <xref:System.IdentityModel.Tokens.SecurityTokenElement.%23ctor%28System.Xml.XmlElement%2CSystem.IdentityModel.Tokens.SecurityTokenHandlerCollection%29?displayProperty=fullName> constructor.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidateToken">
@@ -150,11 +180,17 @@
         <Parameter Name="securityTokenHandlers" Type="System.IdentityModel.Tokens.SecurityTokenHandlerCollection" />
       </Parameters>
       <Docs>
-        <param name="securityTokenXml">To be added.</param>
-        <param name="securityTokenHandlers">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="securityTokenXml">The XML representation of the security token.</param>
+        <param name="securityTokenHandlers">The token handler collection to use to read the token.</param>
+        <summary>Creates the identities that are contained in the specified XML representation of a security token.</summary>
+        <returns>The identities that are contained in the token.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="securityTokenXml" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="securityTokenHandlers" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

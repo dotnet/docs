@@ -1,14 +1,20 @@
 ---
 uid: System.Diagnostics.Contracts.ContractClassAttribute
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.Contracts.ContractClassAttribute.#ctor(System.Type)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.Contracts.ContractClassAttribute.TypeContainingContracts
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

@@ -1,4 +1,5 @@
 ---
 uid: System.Web.HttpCacheability
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

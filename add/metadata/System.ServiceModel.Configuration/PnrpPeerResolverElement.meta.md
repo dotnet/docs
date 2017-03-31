@@ -1,19 +1,19 @@
 ---
 uid: System.ServiceModel.Configuration.PnrpPeerResolverElement
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.PnrpPeerResolverElement.BindingElementType
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.PnrpPeerResolverElement.CreateBindingElement
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.PnrpPeerResolverElement.#ctor
-internalonly: False
+manager: "ghogen"
 ---

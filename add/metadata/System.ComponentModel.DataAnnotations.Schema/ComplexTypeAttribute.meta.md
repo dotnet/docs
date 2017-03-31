@@ -1,9 +1,11 @@
 ---
 uid: System.ComponentModel.DataAnnotations.Schema.ComplexTypeAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.Schema.ComplexTypeAttribute.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

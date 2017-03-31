@@ -1,29 +1,48 @@
 ---
 uid: System.Web.UI.HtmlControls.HtmlInputReset
-internalonly: False
----
-
----
-uid: System.Web.UI.HtmlControls.HtmlInputReset.ServerClick
-internalonly: False
----
-
----
-uid: System.Web.UI.HtmlControls.HtmlInputReset.CausesValidation
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlInputReset.#ctor
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.HtmlControls.HtmlInputReset.ServerClick
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.HtmlControls.HtmlInputReset.CausesValidation
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.HtmlControls.HtmlInputReset.#ctor
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlInputReset.#ctor(System.String)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlInputReset.ValidationGroup
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

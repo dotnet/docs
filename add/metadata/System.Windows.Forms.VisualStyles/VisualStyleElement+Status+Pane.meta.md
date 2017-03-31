@@ -1,9 +1,12 @@
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.Status.Pane
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.Status.Pane.Normal
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

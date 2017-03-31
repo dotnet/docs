@@ -1,24 +1,29 @@
 ---
 uid: Microsoft.Build.Tasks.GetAssemblyIdentity
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.GetAssemblyIdentity.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.GetAssemblyIdentity.AssemblyFiles
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.GetAssemblyIdentity.Assemblies
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.GetAssemblyIdentity.Execute
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

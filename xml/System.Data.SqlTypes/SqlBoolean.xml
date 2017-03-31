@@ -35,8 +35,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an integer value that is either 1 or 0 to be stored in or retrieved from a database.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Any non-zero value is interpreted as 1.  
+  
+ The key difference between a <xref:System.Data.SqlTypes.SqlBoolean> structure and a standard Boolean value is that, where a standard Boolean has two possible values, `true` and `false`, a <xref:System.Data.SqlTypes.SqlBoolean> structure has three possible values, <xref:System.Data.SqlTypes.SqlBoolean.True>, <xref:System.Data.SqlTypes.SqlBoolean.False>, or <xref:System.Data.SqlTypes.SqlBoolean.Null>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -61,8 +70,8 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The value for the new <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure; either <see langword="true" /> or <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure using the supplied Boolean value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,8 +97,8 @@
         <Parameter Name="value" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The integer whose value is to be used for the new <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure using the specified integer value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,10 +128,10 @@
         <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
+        <param name="y">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
+        <summary>Computes the bitwise AND operation of two specified <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structures.</summary>
+        <returns>The result of the logical AND operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -148,9 +157,16 @@
         <ReturnType>System.Byte</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the value of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure as a byte.</summary>
+        <value>A byte representing the value of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The byte value will be either 0 or 1.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CompareTo">
@@ -178,10 +194,56 @@
         <Parameter Name="value" Type="System.Data.SqlTypes.SqlBoolean" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /><see cref="T:System.Data.SqlTypes.SqlBoolean" /> object to compare, or a null reference (<see langword="Nothing" /> in Visual Basic).</param>
+        <summary>Compares this <see cref="T:System.Data.SqlTypes.SqlBoolean" /> object to the supplied <see cref="T:System.Data.SqlTypes.SqlBoolean" /> object and returns an indication of their relative values.</summary>
+        <returns>A signed number that indicates the relative values of the instance and value.  
+  
+ <list type="table">  
+<listheader>  
+<term> Value  
+  
+ </term>  
+<description> Description  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> A negative integer  
+  
+ </term>  
+<description> This instance is less than <paramref name="value" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Zero  
+  
+ </term>  
+<description> This instance is equal to <paramref name="value" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> A positive integer  
+  
+ </term>  
+<description> This instance is greater than <paramref name="value" />.  
+  
+ -or-  
+  
+ <paramref name="value" /> is a null reference (<see langword="Nothing" /> in Visual Basic).  
+  
+ </description>  
+</item>  
+</list></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Any instance of <xref:System.Data.SqlTypes.SqlBoolean>, regardless of its value, is considered greater than a null reference (`Nothing` in Visual Basic).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CompareTo">
@@ -209,10 +271,56 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">An object to compare, or a null reference (<see langword="Nothing" /> in Visual Basic).</param>
+        <summary>Compares this <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure to a specified object and returns an indication of their relative values.</summary>
+        <returns>A signed number that indicates the relative values of the instance and value.  
+  
+ <list type="table">  
+<listheader>  
+<term> Value  
+  
+ </term>  
+<description> Description  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> A negative integer  
+  
+ </term>  
+<description> This instance is less than <paramref name="value" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Zero  
+  
+ </term>  
+<description> This instance is equal to <paramref name="value" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> A positive integer  
+  
+ </term>  
+<description> This instance is greater than <paramref name="value" />.  
+  
+ -or-  
+  
+ <paramref name="value" /> is a null reference (<see langword="Nothing" /> in Visual Basic).  
+  
+ </description>  
+</item>  
+</list></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Any instance of <xref:System.Data.SqlTypes.SqlBoolean>, regardless of its value, is considered greater than a null reference (`Nothing` in Visual Basic).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -240,9 +348,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The object to be compared.</param>
+        <summary>Compares the supplied object parameter to the <see cref="T:System.Data.SqlTypes.SqlBoolean" />.</summary>
+        <returns>
+          <see langword="true" /> if object is an instance of <see cref="T:System.Data.SqlTypes.SqlBoolean" /> and the two are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -272,10 +381,10 @@
         <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
+        <param name="y">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
+        <summary>Compares two <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structures to determine whether they are equal.</summary>
+        <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the two instances are equal or <see cref="F:System.Data.SqlTypes.SqlBoolean.False" /> if the two instances are not equal. If either instance of <see cref="T:System.Data.SqlTypes.SqlBoolean" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -301,8 +410,15 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents a false value that can be assigned to the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> property of an instance of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.SqlTypes.SqlBoolean.False> field is a constant for the <xref:System.Data.SqlTypes.SqlBoolean> structure.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -328,8 +444,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code for this instance.</summary>
+        <returns>A 32-bit signed integer hash code.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -354,9 +470,9 @@
         <Parameter Name="schemaSet" Type="System.Xml.Schema.XmlSchemaSet" />
       </Parameters>
       <Docs>
-        <param name="schemaSet">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="schemaSet">A <see cref="T:System.Xml.Schema.XmlSchemaSet" />.</param>
+        <summary>Returns the XML Schema definition language (XSD) of the specified <see cref="T:System.Xml.Schema.XmlSchemaSet" />.</summary>
+        <returns>A <see langword="string" /> value that indicates the XSD of the specified <see cref="T:System.Xml.Schema.XmlSchemaSet" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -386,11 +502,18 @@
         <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
+        <param name="y">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
+        <summary>Compares two instances of <see cref="T:System.Data.SqlTypes.SqlBoolean" /> to determine whether the first is greater than the second.</summary>
+        <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see langword="true" /> if the first instance is greater than the second instance; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If either instance of `x` or `y` is null, the value of the <xref:System.Data.SqlTypes.SqlBoolean> will be null.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GreaterThanOrEquals">
@@ -419,11 +542,18 @@
         <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
+        <param name="y">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
+        <summary>Compares two instances of <see cref="T:System.Data.SqlTypes.SqlBoolean" /> to determine whether the first is greater than or equal to the second.</summary>
+        <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see langword="true" /> if the first instance is greater than or equal to the second instance; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If either instance of `x` or `y` is null, the value of the <xref:System.Data.SqlTypes.SqlBoolean> will be null.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsFalse">
@@ -448,9 +578,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Indicates whether the current <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> is <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />.</summary>
+        <value>
+          <see langword="true" /> if <see langword="Value" /> is <see langword="False" />; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Data.SqlTypes.SqlBoolean.Value%2A> is <xref:System.Data.SqlTypes.SqlBoolean.Null>, this property still will be `false`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsNull">
@@ -475,9 +613,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Indicates whether this <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure is null.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure is null; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [Handling Null Values](../Topic/Handling%20Null%20Values.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsTrue">
@@ -502,9 +648,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Indicates whether the current <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" />.</summary>
+        <value>
+          <see langword="true" /> if <see langword="Value" /> is <see langword="True" />; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Data.SqlTypes.SqlBoolean.Value%2A> is <xref:System.Data.SqlTypes.SqlBoolean.Null>, this property still will be `false`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LessThan">
@@ -533,11 +687,18 @@
         <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
+        <param name="y">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
+        <summary>Compares two instances of <see cref="T:System.Data.SqlTypes.SqlBoolean" /> to determine whether the first is less than the second.</summary>
+        <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see langword="true" /> if the first instance is less than the second instance; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If either instance of `x` or `y` is null, the value of the <xref:System.Data.SqlTypes.SqlBoolean> will be null.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LessThanOrEquals">
@@ -566,11 +727,18 @@
         <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
+        <param name="y">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
+        <summary>Compares two instances of <see cref="T:System.Data.SqlTypes.SqlBoolean" /> to determine whether the first is less than or equal to the second.</summary>
+        <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see langword="true" /> if the first instance is less than or equal to the second instance; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If either instance of `x` or `y` is null, the value of the <xref:System.Data.SqlTypes.SqlBoolean> will be null.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NotEquals">
@@ -599,10 +767,10 @@
         <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
+        <param name="y">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
+        <summary>Compares two instances of <see cref="T:System.Data.SqlTypes.SqlBoolean" /> for equality.</summary>
+        <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the two instances are not equal or <see cref="F:System.Data.SqlTypes.SqlBoolean.False" /> if the two instances are equal. If either instance of <see cref="T:System.Data.SqlTypes.SqlBoolean" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -628,8 +796,15 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents <see cref="T:System.DBNull" /> that can be assigned to this instance of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.SqlTypes.SqlBoolean.Null> field is a constant for the <xref:System.Data.SqlTypes.SqlBoolean> structure. For more information, see [Handling Null Values](../Topic/Handling%20Null%20Values.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="One">
@@ -654,8 +829,15 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents a one value that can be assigned to the <see cref="P:System.Data.SqlTypes.SqlBoolean.ByteValue" /> property of an instance of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.SqlTypes.SqlBoolean.One> field is a constant for the <xref:System.Data.SqlTypes.SqlBoolean> structure.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnesComplement">
@@ -683,9 +865,9 @@
         <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
+        <summary>Performs a one's complement operation on the supplied <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structures.</summary>
+        <returns>The one's complement of the supplied <see cref="T:System.Data.SqlTypes.SqlBoolean" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -715,11 +897,13 @@
         <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
+        <param name="y">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
+        <summary>Computes the bitwise AND operation of two specified <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structures.</summary>
+        <returns>The result of the logical AND operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.And%2A> oolean)?qualifyHint=True&autoUpgrade=False]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_BitwiseOr">
@@ -748,11 +932,13 @@
         <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
+        <param name="y">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
+        <summary>Computes the bitwise OR of its operands.</summary>
+        <returns>The results of the logical OR operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.Or%28System.Data.SqlTypes.SqlBoolean%2CSystem.Data.SqlTypes.SqlBoolean%29?displayProperty=fullName>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -781,11 +967,13 @@
         <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" />.</param>
+        <param name="y">A <see cref="T:System.Data.SqlTypes.SqlBoolean" />.</param>
+        <summary>Compares two instances of <see cref="T:System.Data.SqlTypes.SqlBoolean" /> for equality.</summary>
+        <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the two instances are equal or <see cref="F:System.Data.SqlTypes.SqlBoolean.False" /> if the two instances are not equal. If either instance of <see cref="T:System.Data.SqlTypes.SqlBoolean" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlString.Equals%28System.Data.SqlTypes.SqlString%2CSystem.Data.SqlTypes.SqlString%29?displayProperty=fullName>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_ExclusiveOr">
@@ -814,11 +1002,13 @@
         <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
+        <param name="y">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
+        <summary>Performs a bitwise exclusive-OR (XOR) operation on the supplied parameters.</summary>
+        <returns>The result of the logical XOR operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.Xor%28System.Data.SqlTypes.SqlBoolean%2CSystem.Data.SqlTypes.SqlBoolean%29?displayProperty=fullName>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1156,10 +1346,12 @@
         <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">The <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure to be tested.</param>
+        <summary>The false operator can be used to test the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> to determine whether it is false.</summary>
+        <returns>Returns <see langword="true" /> if the supplied parameter is <see cref="T:System.Data.SqlTypes.SqlBoolean" /> is false, <see langword="false" /> otherwise.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean?displayProperty=fullName>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
@@ -1188,11 +1380,18 @@
         <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> object.</param>
+        <param name="y">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> object.</param>
+        <summary>Compares two <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structures to determine whether the first is greater than the second.</summary>
+        <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see langword="true" /> if the first instance is greater than the second instance; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If either instance of `x` or `y` is null, the value of the <xref:System.Data.SqlTypes.SqlBoolean> will be null.  
+  
+ The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.Compare%28System.Data.SqlTypes.SqlBoolean%2CSystem.Data.SqlTypes.SqlBoolean%29?displayProperty=fullName>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
@@ -1221,11 +1420,18 @@
         <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
+        <param name="y">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
+        <summary>Compares two <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structures to determine whether the first is greater than or equal to the second.</summary>
+        <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see langword="true" /> if the first instance is greater than or equal to the second instance; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If either instance of `x` or `y` is null, the value of the <xref:System.Data.SqlTypes.SqlBoolean> will be null.  
+  
+ The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.Compare%28System.Data.SqlTypes.SqlBoolean%2CSystem.Data.SqlTypes.SqlBoolean%29?displayProperty=fullName>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -1285,11 +1491,13 @@
         <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" />.</param>
+        <param name="y">A <see cref="T:System.Data.SqlTypes.SqlBoolean" />.</param>
+        <summary>Compares two instances of <see cref="T:System.Data.SqlTypes.SqlBoolean" /> to determine whether they are not equal.</summary>
+        <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the two instances are not equal or <see cref="F:System.Data.SqlTypes.SqlBoolean.False" /> if the two instances are equal. If either instance of <see cref="T:System.Data.SqlTypes.SqlBoolean" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlString.NotEquals%28System.Data.SqlTypes.SqlString%2CSystem.Data.SqlTypes.SqlString%29?displayProperty=fullName>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
@@ -1318,11 +1526,18 @@
         <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
+        <param name="y">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
+        <summary>Compares two instances of <see cref="T:System.Data.SqlTypes.SqlBoolean" /> to determine whether the first is less than the second.</summary>
+        <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see langword="true" /> if the first instance is less than the second instance; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If either instance of `x` or `y` is null, the value of the <xref:System.Data.SqlTypes.SqlBoolean> will be null.  
+  
+ The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.Compare%28System.Data.SqlTypes.SqlBoolean%2CSystem.Data.SqlTypes.SqlBoolean%29?displayProperty=fullName>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
@@ -1351,11 +1566,18 @@
         <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
+        <param name="y">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
+        <summary>Compares two instances of <see cref="T:System.Data.SqlTypes.SqlBoolean" /> to determine whether the first is less than or equal to the second.</summary>
+        <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see langword="true" /> if the first instance is less than or equal to the second instance; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If either instance of `x` or `y` is null, the value of the <xref:System.Data.SqlTypes.SqlBoolean> will be null.  
+  
+ The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.Compare%28System.Data.SqlTypes.SqlBoolean%2CSystem.Data.SqlTypes.SqlBoolean%29?displayProperty=fullName>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_LogicalNot">
@@ -1383,9 +1605,9 @@
         <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">The <see cref="T:System.Data.SqlTypes.SqlBoolean" /> on which the NOT operation will be performed.</param>
+        <summary>Performs a NOT operation on a <see cref="T:System.Data.SqlTypes.SqlBoolean" />.</summary>
+        <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> with the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /><see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if argument was true, <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" /> if argument was null, and <see cref="F:System.Data.SqlTypes.SqlBoolean.False" /> otherwise.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1414,10 +1636,12 @@
         <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
+        <summary>Performs a one's complement operation on the supplied <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structures.</summary>
+        <returns>The one's complement of the supplied <see cref="T:System.Data.SqlTypes.SqlBoolean" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.OnesComplement%28System.Data.SqlTypes.SqlBoolean%29?displayProperty=fullName>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_True">
@@ -1445,10 +1669,12 @@
         <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">The <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure to be tested.</param>
+        <summary>The true operator can be used to test the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> to determine whether it is true.</summary>
+        <returns>Returns <see langword="true" /> if the supplied parameter is <see cref="T:System.Data.SqlTypes.SqlBoolean" /> is true, <see langword="false" /> otherwise.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean?displayProperty=fullName>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Or">
@@ -1477,10 +1703,10 @@
         <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
+        <param name="y">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
+        <summary>Performs a bitwise OR operation on the two specified <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structures.</summary>
+        <returns>A new <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure whose Value is the result of the bitwise OR operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1509,9 +1735,9 @@
         <Parameter Name="s" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="s">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="s">The <see cref="T:System.String" /> to be converted.</param>
+        <summary>Converts the specified <see cref="T:System.String" /> representation of a logical value to its <see cref="T:System.Data.SqlTypes.SqlBoolean" /> equivalent.</summary>
+        <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure that contains the parsed value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1534,8 +1760,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
+        <returns>An <see langword="XmlSchema" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1560,8 +1786,10 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="reader">
+          <see langword="XmlReader " />
+        </param>
+        <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1586,8 +1814,10 @@
         <Parameter Name="writer" Type="System.Xml.XmlWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">
+          <see langword="XmlWriter " />
+        </param>
+        <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1614,8 +1844,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure to <see cref="T:System.Data.SqlTypes.SqlByte" />.</summary>
+        <returns>A new <see cref="T:System.Data.SqlTypes.SqlByte" /> structure whose value is 1 or 0. If the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure's value equals <see langword="true" />, the new <see cref="T:System.Data.SqlTypes.SqlByte" /> structure's value is 1. Otherwise, the new <see cref="T:System.Data.SqlTypes.SqlByte" /> structure's value is 0.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1642,8 +1872,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure to <see cref="T:System.Data.SqlTypes.SqlDecimal" />.</summary>
+        <returns>A new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure whose value is 1 or 0. If the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure's value equals <see langword="true" /> then the new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure's value is 1. Otherwise, the new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure's value is 0.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1670,8 +1900,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure to <see cref="T:System.Data.SqlTypes.SqlDouble" />.</summary>
+        <returns>A new <see cref="T:System.Data.SqlTypes.SqlDouble" /> structure whose value is 1 or 0. If the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure's value equals <see langword="true" /> then the new <see cref="T:System.Data.SqlTypes.SqlDouble" /> structure's value is 1. Otherwise, the new <see cref="T:System.Data.SqlTypes.SqlDouble" /> structure's value is 0.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1698,8 +1928,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure to <see cref="T:System.Data.SqlTypes.SqlInt16" />.</summary>
+        <returns>A new <see langword="SqlInt16" /> structure whose value is 1 or 0. If the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure's value equals <see langword="true" /> then the new <see cref="T:System.Data.SqlTypes.SqlInt16" /> structure's value is 1. Otherwise, the new <see langword="SqlInt16" /> structure's value is 0.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1726,8 +1956,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure to <see cref="T:System.Data.SqlTypes.SqlInt32" />.</summary>
+        <returns>A new <see langword="SqlInt32" /> structure whose value is 1 or 0. If the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure's value equals <see langword="true" />, the new <see cref="T:System.Data.SqlTypes.SqlInt32" /> structure's value is 1. Otherwise, the new <see langword="SqlInt32" /> structure's value is 0.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1754,8 +1984,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure to <see cref="T:System.Data.SqlTypes.SqlInt64" />.</summary>
+        <returns>A new <see langword="SqlInt64" /> structure whose value is 1 or 0. If the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure's value equals <see langword="true" />, the new <see cref="T:System.Data.SqlTypes.SqlInt64" /> structure's value is 1. Otherwise, the new <see langword="SqlInt64" /> structure's value is 0.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1782,8 +2012,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure to <see cref="T:System.Data.SqlTypes.SqlMoney" />.</summary>
+        <returns>A new <see cref="T:System.Data.SqlTypes.SqlMoney" /> structure whose value is 1 or 0. If the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure's value equals <see langword="true" />, the new <see cref="T:System.Data.SqlTypes.SqlMoney" /> value is 1. If the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure's value equals <see langword="false" />, the new <see cref="T:System.Data.SqlTypes.SqlMoney" /> value is 0. If <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure's value is neither 1 nor 0, the new <see cref="T:System.Data.SqlTypes.SqlMoney" /> value is <see cref="F:System.Data.SqlTypes.SqlMoney.Null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1810,8 +2040,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure to <see cref="T:System.Data.SqlTypes.SqlSingle" />.</summary>
+        <returns>A new <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure whose value is 1 or 0.  
+  
+ If the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure's value equals true, the new <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure's value is 1; otherwise the new <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure's value is 0.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1838,8 +2070,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure to <see cref="T:System.Data.SqlTypes.SqlString" />.</summary>
+        <returns>A new <see cref="T:System.Data.SqlTypes.SqlString" /> structure whose value is 1 or 0. If the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure's value equals <see langword="true" /> then <see cref="T:System.Data.SqlTypes.SqlString" /> structure's value is 1. Otherwise, the new <see cref="T:System.Data.SqlTypes.SqlString" /> structure's value is 0.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1866,8 +2098,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure to a string.</summary>
+        <returns>A string that contains the value of the <see cref="T:System.Data.SqlTypes.SqlBoolean" />. If the value is null, the string will contain "null".</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1893,8 +2125,15 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents a true value that can be assigned to the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> property of an instance of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.SqlTypes.SqlBoolean.True> field is a constant for the <xref:System.Data.SqlTypes.SqlBoolean> structure.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -1919,9 +2158,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure's value. This property is read-only.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" />; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Data.SqlTypes.SqlNullValueException">The property is set to null.</exception>
       </Docs>
     </Member>
     <Member MemberName="Xor">
@@ -1950,10 +2191,10 @@
         <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
+        <param name="y">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
+        <summary>Performs a bitwise exclusive-OR operation on the supplied parameters.</summary>
+        <returns>The result of the logical XOR operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1979,9 +2220,33 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents a zero value that can be assigned to the <see cref="P:System.Data.SqlTypes.SqlBoolean.ByteValue" /> property of an instance of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.SqlTypes.SqlBoolean.Zero> field is a constant for the <xref:System.Data.SqlTypes.SqlBoolean> structure.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CompareTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares this instance to a specified object and returns an indication of their relative values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is implemented to support the <xref:System.IComparable> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

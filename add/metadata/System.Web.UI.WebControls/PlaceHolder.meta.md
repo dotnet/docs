@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.WebControls.PlaceHolder
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.PlaceHolder.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.PlaceHolder.EnableTheming
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

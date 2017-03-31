@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>A configuration element that represents a <see cref="T:System.Activities.Tracking.BookmarkResumptionQuery" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.Tracking.Configuration.BookmarkResumptionQueryElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +51,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the bookmark.</summary>
+        <value>The bookmark name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,8 +70,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates the <see cref="T:System.ServiceModel.Activities.Tracking.Configuration.BookmarkResumptionQueryElement" />.</summary>
+        <returns>The bookmark resumption query.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,8 +88,8 @@
         <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.Configuration.ConfigurationPropertyCollection" /> that contains the properties associated with this element.</summary>
+        <value>A collection of properties.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

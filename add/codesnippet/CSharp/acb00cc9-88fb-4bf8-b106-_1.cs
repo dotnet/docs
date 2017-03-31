@@ -1,1 +1,0 @@
-This snippet ID 8 is used in multiple files: /cs/customtextmessageencoder.cs, /cs/customtextmessageencoderfactory.cs. Rename the duplicate ID to make it unique, and update the reference to the snippet ID in the topic(s).

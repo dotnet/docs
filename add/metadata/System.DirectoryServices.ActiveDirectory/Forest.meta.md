@@ -1,214 +1,335 @@
 ---
 uid: System.DirectoryServices.ActiveDirectory.Forest
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.Forest.GetTrustRelationship(System.String)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.Forest.CreateLocalSideOfTrustRelationship(System.String,System.DirectoryServices.ActiveDirectory.TrustDirection,System.String)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.Forest.GlobalCatalogs
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.Forest.Domains
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.Forest.RaiseForestFunctionality(System.DirectoryServices.ActiveDirectory.ForestMode)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.Forest.GetAllTrustRelationships
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.Forest.SetSelectiveAuthenticationStatus(System.String,System.Boolean)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.Forest.CreateTrustRelationship(System.DirectoryServices.ActiveDirectory.Forest,System.DirectoryServices.ActiveDirectory.TrustDirection)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.Forest.GetSelectiveAuthenticationStatus(System.String)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.Forest.GetForest(System.DirectoryServices.ActiveDirectory.DirectoryContext)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.Forest.FindGlobalCatalog
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.Forest.Schema
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.Forest.FindGlobalCatalog(System.String,System.DirectoryServices.ActiveDirectory.LocatorOptions)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.Forest.Dispose(System.Boolean)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.Forest.ToString
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.ActiveDirectory.Forest.UpdateLocalSideOfTrustRelationship
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.Forest.GetCurrentForest
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.Forest.FindAllDiscoverableGlobalCatalogs
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.Forest.ForestMode
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.Forest.DeleteLocalSideOfTrustRelationship(System.String)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.Forest.UpdateLocalSideOfTrustRelationship(System.String,System.DirectoryServices.ActiveDirectory.TrustDirection,System.String)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.Forest.FindGlobalCatalog(System.String)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.ActiveDirectory.Forest.FindAllDiscoverableGlobalCatalogs
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.Forest.ForestModeLevel
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.Forest.FindAllDiscoverableGlobalCatalogs(System.String)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.Forest.DeleteTrustRelationship(System.DirectoryServices.ActiveDirectory.Forest)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.Forest.Dispose
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.Forest.SetSidFilteringStatus(System.String,System.Boolean)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.ActiveDirectory.Forest.Dispose
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.Forest.Name
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.ActiveDirectory.Forest.FindGlobalCatalog
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.Forest.VerifyTrustRelationship(System.DirectoryServices.ActiveDirectory.Forest,System.DirectoryServices.ActiveDirectory.TrustDirection)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.Forest.SchemaRoleOwner
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.Forest.GetSidFilteringStatus(System.String)
-internalonly: False
----
-
----
-uid: System.DirectoryServices.ActiveDirectory.Forest.VerifyOutboundTrustRelationship(System.String)
-internalonly: False
----
-
----
-uid: System.DirectoryServices.ActiveDirectory.Forest.RaiseForestFunctionalityLevel(System.Int32)
-internalonly: False
----
-
----
-uid: System.DirectoryServices.ActiveDirectory.Forest.UpdateLocalSideOfTrustRelationship(System.String,System.String)
-internalonly: False
----
-
----
-uid: System.DirectoryServices.ActiveDirectory.Forest.ApplicationPartitions
-internalonly: False
----
-
----
-uid: System.DirectoryServices.ActiveDirectory.Forest.RepairTrustRelationship(System.DirectoryServices.ActiveDirectory.Forest)
-internalonly: False
----
-
----
-uid: System.DirectoryServices.ActiveDirectory.Forest.Sites
-internalonly: False
----
-
----
-uid: System.DirectoryServices.ActiveDirectory.Forest.RootDomain
-internalonly: False
----
-
----
-uid: System.DirectoryServices.ActiveDirectory.Forest.FindGlobalCatalog(System.DirectoryServices.ActiveDirectory.LocatorOptions)
-internalonly: False
----
-
----
-uid: System.DirectoryServices.ActiveDirectory.Forest.FindAllGlobalCatalogs(System.String)
-internalonly: False
----
-
----
-uid: System.DirectoryServices.ActiveDirectory.Forest.UpdateTrustRelationship(System.DirectoryServices.ActiveDirectory.Forest,System.DirectoryServices.ActiveDirectory.TrustDirection)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.Forest.FindAllGlobalCatalogs
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.ActiveDirectory.Forest.VerifyOutboundTrustRelationship(System.String)
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.ActiveDirectory.Forest.RaiseForestFunctionalityLevel(System.Int32)
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.ActiveDirectory.Forest.UpdateLocalSideOfTrustRelationship(System.String,System.String)
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.ActiveDirectory.Forest.ApplicationPartitions
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.ActiveDirectory.Forest.RepairTrustRelationship(System.DirectoryServices.ActiveDirectory.Forest)
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.ActiveDirectory.Forest.Sites
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.ActiveDirectory.Forest.RootDomain
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.ActiveDirectory.Forest.FindGlobalCatalog(System.DirectoryServices.ActiveDirectory.LocatorOptions)
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.ActiveDirectory.Forest.FindAllGlobalCatalogs(System.String)
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.ActiveDirectory.Forest.UpdateTrustRelationship(System.DirectoryServices.ActiveDirectory.Forest,System.DirectoryServices.ActiveDirectory.TrustDirection)
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.ActiveDirectory.Forest.FindAllGlobalCatalogs
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.Forest.NamingRoleOwner
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---

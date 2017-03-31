@@ -15,8 +15,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the options that are used for binding to the server. The application can set multiple options that are linked with a bitwise OR operation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the context options are not specified by the application, the Account Management API uses the following combination of options:  
+  
+-   ContextOptions.Negotiate &#124; ContextOptions.Signing &#124; ContextOptions.Sealing  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Negotiate">
@@ -32,7 +41,7 @@
         <ReturnType>System.DirectoryServices.AccountManagement.ContextOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The client is authenticated by using either Kerberos or NTLM. When the user name and password are not provided, the Account Management API binds to the object by using the security context of the calling thread, which is either the security context of the user account under which the application is running or of the client user account that the calling thread represents.</summary>
       </Docs>
     </Member>
     <Member MemberName="Sealing">
@@ -48,7 +57,15 @@
         <ReturnType>System.DirectoryServices.AccountManagement.ContextOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The data is encrypted by using Kerberos.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This flag can only be used with the Negotiate context option and is not available with the simple bind option.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SecureSocketLayer">
@@ -64,7 +81,7 @@
         <ReturnType>System.DirectoryServices.AccountManagement.ContextOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The channel is encrypted by using the Secure Sockets Layer (SSL). Active Directory requires that the Certificate Services be installed to support SSL.</summary>
       </Docs>
     </Member>
     <Member MemberName="ServerBind">
@@ -80,7 +97,7 @@
         <ReturnType>System.DirectoryServices.AccountManagement.ContextOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specify this flag when you use the domain context type if the application is binding to a specific server name.</summary>
       </Docs>
     </Member>
     <Member MemberName="Signing">
@@ -96,7 +113,7 @@
         <ReturnType>System.DirectoryServices.AccountManagement.ContextOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The integrity of the data is verified. This flag can only be used with the Negotiate context option and is not available with the simple bind option.</summary>
       </Docs>
     </Member>
     <Member MemberName="SimpleBind">
@@ -112,7 +129,15 @@
         <ReturnType>System.DirectoryServices.AccountManagement.ContextOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The client is authenticated by using the Basic authentication.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ **Caution** Communications may be sent over the Internet in clear text if the SecureSocketsLayer option is not specified with simple bind.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

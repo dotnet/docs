@@ -1,39 +1,44 @@
 ---
 uid: System.Runtime.Remoting.WellKnownServiceTypeEntry
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.WellKnownServiceTypeEntry.ObjectUri
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.WellKnownServiceTypeEntry.Mode
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.WellKnownServiceTypeEntry.ToString
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.WellKnownServiceTypeEntry.#ctor(System.String,System.String,System.String,System.Runtime.Remoting.WellKnownObjectMode)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.WellKnownServiceTypeEntry.ContextAttributes
-internalonly: False
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Remoting.WellKnownServiceTypeEntry.#ctor
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.WellKnownServiceTypeEntry.ObjectType
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.WellKnownServiceTypeEntry.#ctor(System.Type,System.String,System.Runtime.Remoting.WellKnownObjectMode)
-internalonly: False
+manager: "ghogen"
 ---

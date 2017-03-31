@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the image type for the chart.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataVisualization.Charting.ChartImageType> enumeration represents the image format type of the chart, as set by the <xref:System.Web.UI.DataVisualization.Charting.Chart.ImageType%2A> property. This property determines the image type in which the chart is rendered, if image tag or input tag rendering is used.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Bmp">
@@ -27,7 +34,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartImageType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>BMP image format type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Emf">
@@ -43,7 +50,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartImageType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Windows Enhanced Metafile (EMF) image format type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Jpeg">
@@ -59,7 +66,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartImageType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>JPEG image format type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Png">
@@ -75,7 +82,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartImageType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>PNG image format type.</summary>
       </Docs>
     </Member>
   </Members>

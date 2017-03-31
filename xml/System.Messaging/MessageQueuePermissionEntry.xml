@@ -11,8 +11,23 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the smallest unit of a code access security permission set for messaging.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [Code Access Security](http://msdn.microsoft.com/en-us/23a20143-241d-4fe5-9d9f-3933fd594c03).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of <xref:System.Messaging.MessageQueuePermissionEntry>.  
+  
+ [!code-cpp[MessageQueuePermissionEntry#0](~/samples/snippets/cpp/VS_Snippets_Remoting/MessageQueuePermissionEntry/cpp/class1.cpp#0)]
+ [!code-csharp[MessageQueuePermissionEntry#0](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueuePermissionEntry/CS/class1.cs#0)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -29,10 +44,20 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="permissionAccess">To be added.</param>
-        <param name="path">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="permissionAccess">A bitwise combination of the <see cref="T:System.Messaging.MessageQueuePermissionAccess" /> values. The <see cref="P:System.Messaging.MessageQueuePermissionEntry.PermissionAccess" /> property is set to this value.</param>
+        <param name="path">The path of the queue that is referenced by the <see cref="T:System.Messaging.MessageQueue" /> object. The <see cref="P:System.Messaging.MessageQueuePermissionEntry.Path" /> property is set to this value.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Messaging.MessageQueuePermissionEntry" /> class with the specified permission access levels and the path of the queue.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example creates a new instance of <xref:System.Messaging.MessageQueuePermissionEntry>.  
+  
+ [!code-cpp[MessageQueuePermissionEntry#1](~/samples/snippets/cpp/VS_Snippets_Remoting/MessageQueuePermissionEntry/cpp/class1.cpp#1)]
+ [!code-csharp[MessageQueuePermissionEntry#1](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueuePermissionEntry/CS/class1.cs#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -51,12 +76,22 @@
         <Parameter Name="category" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="permissionAccess">To be added.</param>
-        <param name="machineName">To be added.</param>
-        <param name="label">To be added.</param>
-        <param name="category">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="permissionAccess">A bitwise combination of the <see cref="T:System.Messaging.MessageQueuePermissionAccess" /> values. The <see cref="P:System.Messaging.MessageQueuePermissionEntry.PermissionAccess" /> property is set to this value.</param>
+        <param name="machineName">The name of the computer where the Message Queuing queue is located. The <see cref="P:System.Messaging.MessageQueuePermissionEntry.MachineName" /> property is set to this value.</param>
+        <param name="label">The queue description. The <see cref="P:System.Messaging.MessageQueuePermissionEntry.Label" /> property is set to this value.</param>
+        <param name="category">The queue category (Message Queuing type identifier). The <see cref="P:System.Messaging.MessageQueuePermissionEntry.Category" /> property is set to this value.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Messaging.MessageQueuePermissionEntry" /> class with the specified permission access levels, the name of the computer where the queue is located, the queue description, and the queue category.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example creates a new instance of <xref:System.Messaging.MessageQueuePermissionEntry>.  
+  
+ [!code-cpp[MessageQueuePermissionEntry#2](~/samples/snippets/cpp/VS_Snippets_Remoting/MessageQueuePermissionEntry/cpp/class1.cpp#2)]
+ [!code-csharp[MessageQueuePermissionEntry#2](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueuePermissionEntry/CS/class1.cs#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Category">
@@ -72,9 +107,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the queue category.</summary>
+        <value>The queue category (Message Queuing type identifier), which allows an application to categorize its queues.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example displays the value of a message queue permission entry's <xref:System.Messaging.MessageQueuePermissionEntry.Category%2A> property.  
+  
+ [!code-cpp[MessageQueuePermissionEntry#3](~/samples/snippets/cpp/VS_Snippets_Remoting/MessageQueuePermissionEntry/cpp/class1.cpp#3)]
+ [!code-csharp[MessageQueuePermissionEntry#3](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueuePermissionEntry/CS/class1.cs#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Label">
@@ -90,9 +135,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the queue description.</summary>
+        <value>The label for the message queue.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example displays the value of a message queue permission entry's <xref:System.Messaging.MessageQueuePermissionEntry.Label%2A> property.  
+  
+ [!code-cpp[MessageQueuePermissionEntry#4](~/samples/snippets/cpp/VS_Snippets_Remoting/MessageQueuePermissionEntry/cpp/class1.cpp#4)]
+ [!code-csharp[MessageQueuePermissionEntry#4](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueuePermissionEntry/CS/class1.cs#4)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MachineName">
@@ -108,9 +163,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the name of the computer where the Message Queuing queue is located.</summary>
+        <value>The name of the computer where the queue is located.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example displays the value of a message queue permission entry's <xref:System.Messaging.MessageQueuePermissionEntry.MachineName%2A> property.  
+  
+ [!code-cpp[MessageQueuePermissionEntry#5](~/samples/snippets/cpp/VS_Snippets_Remoting/MessageQueuePermissionEntry/cpp/class1.cpp#5)]
+ [!code-csharp[MessageQueuePermissionEntry#5](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueuePermissionEntry/CS/class1.cs#5)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Path">
@@ -126,9 +191,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the queue's path.</summary>
+        <value>The queue that is referenced by the <see cref="T:System.Messaging.MessageQueue" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example displays the value of a message queue permission entry's <xref:System.Messaging.MessageQueuePermissionEntry.Path%2A> property.  
+  
+ [!code-cpp[MessageQueuePermissionEntry#6](~/samples/snippets/cpp/VS_Snippets_Remoting/MessageQueuePermissionEntry/cpp/class1.cpp#6)]
+ [!code-csharp[MessageQueuePermissionEntry#6](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueuePermissionEntry/CS/class1.cs#6)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PermissionAccess">
@@ -144,9 +219,19 @@
         <ReturnType>System.Messaging.MessageQueuePermissionAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the permission access levels used in the permissions request.</summary>
+        <value>A bitwise combination of the <see cref="T:System.Messaging.MessageQueuePermissionAccess" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example displays the value of a message queue permission entry's <xref:System.Messaging.MessageQueuePermissionEntry.PermissionAccess%2A> property.  
+  
+ [!code-cpp[MessageQueuePermissionEntry#7](~/samples/snippets/cpp/VS_Snippets_Remoting/MessageQueuePermissionEntry/cpp/class1.cpp#7)]
+ [!code-csharp[MessageQueuePermissionEntry#7](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueuePermissionEntry/CS/class1.cs#7)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

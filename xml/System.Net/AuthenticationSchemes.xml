@@ -25,8 +25,25 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies protocols for authentication.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used to specify the method used to authenticate client requests being processed by <xref:System.Net.HttpListener> objects.  
+  
+ **Note** Basic authentication requires the exchange of a password and should therefore be avoided except in the case of secure, encrypted connections.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates using the Negotiate enumeration value to specify that clients are authenticated using the Negotiate security protocol.  
+  
+ [!code-csharp[NCLListener#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLListener/CS/sample.cs#3)]
+ [!code-vb[NCLListener#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLListener/vb/sample.vb#3)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Anonymous">
@@ -52,7 +69,7 @@
         <ReturnType>System.Net.AuthenticationSchemes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies anonymous authentication.</summary>
       </Docs>
     </Member>
     <Member MemberName="Basic">
@@ -78,7 +95,15 @@
         <ReturnType>System.Net.AuthenticationSchemes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies basic authentication.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For additional information, see RFC2617 – HTTP Authentication: Basic and Digest Authentication. This document is available at [http://www.rfc-editor.org](http://www.rfc-editor.org/).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Digest">
@@ -104,7 +129,15 @@
         <ReturnType>System.Net.AuthenticationSchemes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies digest authentication.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For additional information, see RFC2617 – HTTP Authentication: Basic and Digest Authentication. This document is available at [http://www.rfc-editor.org](http://www.rfc-editor.org/)  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IntegratedWindowsAuthentication">
@@ -130,7 +163,7 @@
         <ReturnType>System.Net.AuthenticationSchemes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies Windows authentication.</summary>
       </Docs>
     </Member>
     <Member MemberName="Negotiate">
@@ -156,7 +189,7 @@
         <ReturnType>System.Net.AuthenticationSchemes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Negotiates with the client to determine the authentication scheme. If both client and server support Kerberos, it is used; otherwise, NTLM is used.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -182,7 +215,7 @@
         <ReturnType>System.Net.AuthenticationSchemes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No authentication is allowed. A client requesting an <see cref="T:System.Net.HttpListener" /> object with this flag set will always receive a 403 Forbidden status. Use this flag when a resource should never be served to a client.</summary>
       </Docs>
     </Member>
     <Member MemberName="Ntlm">
@@ -208,7 +241,7 @@
         <ReturnType>System.Net.AuthenticationSchemes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies NTLM authentication.</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,14 +1,17 @@
 ---
 uid: System.Configuration.IConfigurationSystem
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.IConfigurationSystem.GetConfig(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.IConfigurationSystem.Init
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

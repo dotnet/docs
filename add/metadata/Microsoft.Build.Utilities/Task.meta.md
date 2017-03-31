@@ -1,64 +1,83 @@
 ---
 uid: Microsoft.Build.Utilities.Task
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Utilities.Task.Execute
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Utilities.Task.BuildEngine3
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Utilities.Task.BuildEngine
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Utilities.Task.BuildEngine4
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Utilities.Task.TaskResources
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Utilities.Task.HostObject
-internalonly: False
----
-
----
-uid: Microsoft.Build.Utilities.Task.BuildEngine2
-internalonly: False
----
-
----
-uid: Microsoft.Build.Utilities.Task.Log
-internalonly: False
----
-
----
-uid: Microsoft.Build.Utilities.Task.#ctor(System.Resources.ResourceManager)
-internalonly: False
----
-
----
-uid: Microsoft.Build.Utilities.Task.#ctor(System.Resources.ResourceManager,System.String)
-internalonly: False
----
-
----
-uid: Microsoft.Build.Utilities.Task.HelpKeywordPrefix
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Utilities.Task.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
+---
+
+---
+uid: Microsoft.Build.Utilities.Task.BuildEngine2
+ms.author: "susanno"
+manager: "douge"
+---
+
+---
+uid: Microsoft.Build.Utilities.Task.Log
+ms.author: "susanno"
+manager: "douge"
+---
+
+---
+uid: Microsoft.Build.Utilities.Task.#ctor(System.Resources.ResourceManager)
+ms.author: "susanno"
+manager: "douge"
+---
+
+---
+uid: Microsoft.Build.Utilities.Task.#ctor(System.Resources.ResourceManager,System.String)
+ms.author: "susanno"
+manager: "douge"
+---
+
+---
+uid: Microsoft.Build.Utilities.Task.HelpKeywordPrefix
+ms.author: "susanno"
+manager: "douge"
+---
+
+---
+uid: Microsoft.Build.Utilities.Task.#ctor
+ms.author: "susanno"
+manager: "douge"
 ---

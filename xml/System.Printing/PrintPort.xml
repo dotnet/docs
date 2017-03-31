@@ -11,8 +11,20 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a printer port on a print server. Each print queue has a print port assigned to it.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Printing.PrintQueue.QueuePort%2A?displayProperty=fullName> property holds the <xref:System.Printing.PrintPort> object that is assigned to the queue.  
+  
+> [!CAUTION]
+>  Classes within the <xref:System.Printing> namespace are not supported for use within a Windows service or ASP.NET application or service. Attempting to use these classes from within one of these application types may produce unexpected problems, such as diminished service performance and run-time exceptions.  
+  
+ If you want to print from a Windows Forms application, see the <xref:System.Drawing.Printing> namespace.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Commit">
@@ -29,7 +41,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Do not use.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,7 +85,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Do not use.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

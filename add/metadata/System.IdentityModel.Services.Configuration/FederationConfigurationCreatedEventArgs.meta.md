@@ -1,14 +1,17 @@
 ---
 uid: System.IdentityModel.Services.Configuration.FederationConfigurationCreatedEventArgs
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.Configuration.FederationConfigurationCreatedEventArgs.#ctor(System.IdentityModel.Services.Configuration.FederationConfiguration)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.Configuration.FederationConfigurationCreatedEventArgs.FederationConfiguration
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

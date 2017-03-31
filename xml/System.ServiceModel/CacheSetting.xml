@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies an enumeration of cache settings.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.ServiceModel.CacheSetting</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The setting is always off.</summary>
       </Docs>
     </Member>
     <Member MemberName="AlwaysOn">
@@ -43,7 +43,7 @@
         <ReturnType>System.ServiceModel.CacheSetting</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The setting is always on.</summary>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -59,7 +59,7 @@
         <ReturnType>System.ServiceModel.CacheSetting</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Default setting.</summary>
       </Docs>
     </Member>
   </Members>

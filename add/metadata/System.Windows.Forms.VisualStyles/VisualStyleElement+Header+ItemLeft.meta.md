@@ -1,19 +1,26 @@
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.Header.ItemLeft
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.Header.ItemLeft.Hot
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.Header.ItemLeft.Pressed
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.Header.ItemLeft.Normal
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

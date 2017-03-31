@@ -1,1 +1,0 @@
-        Private lists As DesignerActionListCollection

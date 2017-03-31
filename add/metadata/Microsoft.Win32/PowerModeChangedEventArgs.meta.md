@@ -1,14 +1,20 @@
 ---
 uid: Microsoft.Win32.PowerModeChangedEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Win32.PowerModeChangedEventArgs.#ctor(Microsoft.Win32.PowerModes)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Win32.PowerModeChangedEventArgs.Mode
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

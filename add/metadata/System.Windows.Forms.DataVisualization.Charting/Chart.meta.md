@@ -1,534 +1,687 @@
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.EndInit
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.HitTest(System.Int32,System.Int32,System.Boolean)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.#ctor
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.OnPaint(System.Windows.Forms.PaintEventArgs)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.DefaultSize
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.CustomizeLegend
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.SaveImage
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.BackColor
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.BorderlineDashStyle
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.BackImageWrapMode
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.DataBindCrossTable(System.Collections.IEnumerable,System.String,System.String,System.String,System.String)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.Dispose(System.Boolean)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.BackHatchStyle
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.IsSoftShadows
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.AnnotationSelectionChanged
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.BorderWidth
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.Series
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.Annotations
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.CursorPositionChanging
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.BorderSkin
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.ForeColor
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.DataManipulator
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.GetToolTipText
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.Font
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.PostPaint
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.Images
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.AxisViewChanging
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.OnRightToLeftChanged(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.SaveImage(System.IO.Stream,System.Windows.Forms.DataVisualization.Charting.ChartImageFormat)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.AnnotationTextChanged
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.BorderlineColor
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.PrePaint
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.Legends
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.Refresh
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.OnCustomize
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.OnLocationChanged(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.BackgroundImage
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.AntiAliasing
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.OnMouseMove(System.Windows.Forms.MouseEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.Invalidate(System.Drawing.Rectangle)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.OnMouseDown(System.Windows.Forms.MouseEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.AxisViewChanged
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.Invalidate
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.GetService(System.Type)
-internalonly: False
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.HitTest
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.OnMouseUp(System.Windows.Forms.MouseEventArgs)
-internalonly: False
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.BackImageWrapMode
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.Customize
-internalonly: False
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.DataBindCrossTable(System.Collections.IEnumerable,System.String,System.String,System.String,System.String)
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.SelectionRangeChanging
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.BeginInit
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.LoadTemplate(System.String)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.AnnotationPositionChanging
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.RenderingDpiX
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.AnnotationPositionChanged
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.AlignDataPointsByAxisLabel(System.Windows.Forms.DataVisualization.Charting.PointSortOrder)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.AnnotationPlaced
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.OnCursorChanged(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.HitTest(System.Int32,System.Int32,System.Boolean,System.Windows.Forms.DataVisualization.Charting.ChartElementType[])
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.BackImageAlignment
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.BuildNumber
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.BackSecondaryColor
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.BorderlineWidth
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.PaletteCustomColors
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.SaveImage(System.IO.Stream,System.Drawing.Imaging.ImageFormat)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.OnResize(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.BorderColor
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.RenderingDpiY
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.ChartAreas
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.SelectionRangeChanged
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.BorderDashStyle
-internalonly: False
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.Dispose(System.Boolean)
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.AlignDataPointsByAxisLabel
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.BackHatchStyle
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.IsSoftShadows
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.AnnotationSelectionChanged
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.BorderWidth
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.Dispose
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.Series
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.Annotations
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.CursorPositionChanging
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.BorderSkin
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.ForeColor
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.DataManipulator
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.GetToolTipText
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.Font
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.PostPaint
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.DataBindTable
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.Images
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.AxisViewChanging
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.OnRightToLeftChanged(System.EventArgs)
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.SaveImage(System.IO.Stream,System.Windows.Forms.DataVisualization.Charting.ChartImageFormat)
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.LoadTemplate
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.DataBindCrossTable
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.AnnotationTextChanged
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.BorderlineColor
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.PrePaint
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.Legends
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.Refresh
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.OnCustomize
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.OnLocationChanged(System.EventArgs)
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.BackgroundImage
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.AntiAliasing
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.OnMouseMove(System.Windows.Forms.MouseEventArgs)
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.Invalidate(System.Drawing.Rectangle)
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.OnMouseDown(System.Windows.Forms.MouseEventArgs)
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.AxisViewChanged
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.Invalidate
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.GetService(System.Type)
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.OnMouseUp(System.Windows.Forms.MouseEventArgs)
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.Customize
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.SelectionRangeChanging
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.BeginInit
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.LoadTemplate(System.String)
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.AnnotationPositionChanging
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.RenderingDpiX
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.AnnotationPositionChanged
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.AlignDataPointsByAxisLabel(System.Windows.Forms.DataVisualization.Charting.PointSortOrder)
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.AnnotationPlaced
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.OnCursorChanged(System.EventArgs)
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.HitTest(System.Int32,System.Int32,System.Boolean,System.Windows.Forms.DataVisualization.Charting.ChartElementType[])
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.BackImageAlignment
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.BuildNumber
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.BackSecondaryColor
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.BorderlineWidth
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.PaletteCustomColors
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.SaveImage(System.IO.Stream,System.Drawing.Imaging.ImageFormat)
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.OnResize(System.EventArgs)
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.BorderColor
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.RenderingDpiY
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.ChartAreas
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.SelectionRangeChanged
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.BorderDashStyle
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.Chart.AlignDataPointsByAxisLabel
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.OnPostPaint(System.Windows.Forms.DataVisualization.Charting.ChartPaintEventArgs)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.CreateAccessibilityInstance
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.BackImage
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.ResetAutoValues
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.OnFormatNumber(System.Windows.Forms.DataVisualization.Charting.FormatNumberEventArgs)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.SaveImage(System.String,System.Windows.Forms.DataVisualization.Charting.ChartImageFormat)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.DataBind
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.Palette
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.DataBindTable(System.Collections.IEnumerable,System.String)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.HitTest(System.Int32,System.Int32)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.BackGradientStyle
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.OnDoubleClick(System.EventArgs)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.OnPrePaint(System.Windows.Forms.DataVisualization.Charting.ChartPaintEventArgs)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.DataSource
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.UpdateAnnotations
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.LoadTemplate(System.IO.Stream)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.Size
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.DataBindCrossTable(System.Collections.IEnumerable,System.String,System.String,System.String,System.String,System.Windows.Forms.DataVisualization.Charting.PointSortOrder)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.SaveImage(System.String,System.Drawing.Imaging.ImageFormat)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.SuppressExceptions
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.OnSystemColorsChanged(System.EventArgs)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.HitTest(System.Int32,System.Int32,System.Windows.Forms.DataVisualization.Charting.ChartElementType)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.TextAntiAliasingQuality
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.GetChartElementOutline(System.Object,System.Windows.Forms.DataVisualization.Charting.ChartElementType)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.OnPaintBackground(System.Windows.Forms.PaintEventArgs)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.AlignDataPointsByAxisLabel(System.String)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.ApplyPaletteColors
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.UpdateCursor
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.BackImageTransparentColor
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.Titles
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.DataBindTable(System.Collections.IEnumerable)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.FormatNumber
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.Serializer
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.AlignDataPointsByAxisLabel(System.String,System.Windows.Forms.DataVisualization.Charting.PointSortOrder)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.Printing
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.AxisScrollBarClicked
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.CursorPositionChanged
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.OnCustomizeLegend(System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection,System.String)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---

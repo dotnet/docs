@@ -26,8 +26,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a way for clients to access the actual object, rather than the adapter object handed out by a custom marshaler.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The objects that the built-in custom marshalers hand out to clients implement this interface.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="GetUnderlyingObject">
@@ -57,8 +64,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Provides access to the underlying object wrapped by a custom marshaler.</summary>
+        <returns>The object contained by the adapter object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

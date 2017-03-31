@@ -17,8 +17,24 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a set of specifications for data formats and protocols used by the XML Web service for output messages. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `OutputBinding` class corresponds to the Web Services Description Language (WSDL) `<output>` element enclosed by the `<operation>` element, which in turn corresponds to the <xref:System.Web.Services.Description.OperationBinding> class. For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
+  
+   
+  
+## Examples  
+ The following example demonstrates a typical use of the `OutputBinding` class.  
+  
+ [!code-cpp[DescriptionNamespaceSample1#3](~/samples/snippets/cpp/VS_Snippets_Remoting/DescriptionNamespaceSample1/CPP/descriptionnamespacesample1.cpp#3)]
+ [!code-csharp[DescriptionNamespaceSample1#3](~/samples/snippets/csharp/VS_Snippets_Remoting/DescriptionNamespaceSample1/CS/descriptionnamespacesample1.cs#3)]
+ [!code-vb[DescriptionNamespaceSample1#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DescriptionNamespaceSample1/VB/descriptionnamespacesample1.vb#3)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,7 +49,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Description.OutputBinding" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,9 +72,16 @@
         <ReturnType>System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the collection of extensibility elements associated with the current <see cref="T:System.Web.Services.Description.OutputBinding" />.</summary>
+        <value>A collection of service description format extension.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ OutputBinding_OutputBinding_Extensions#3  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

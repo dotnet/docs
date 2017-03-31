@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>A static extension methods class for getting either an <see cref="T:System.Net.Http.HttpRequestMessage" /> or <see cref="T:System.Net.Http.HttpResponseMessage" /> instance from a <see cref="T:System.ServiceModel.Channels.Message" /> instance.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,9 +31,9 @@
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">The <see cref="T:System.ServiceModel.Channels.Message" /> instance from which to get the <see cref="T:System.Net.Http.HttpRequestMessage" /> instance.</param>
+        <summary>Creates a <see cref="T:System.Net.Http.HttpRequestMessage" /> instance from an <see cref="T:System.ServiceModel.Channels.Message" /> instance.</summary>
+        <returns>The <see cref="T:System.Net.Http.HttpRequestMessage" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,9 +53,9 @@
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">The <see cref="T:System.ServiceModel.Channels.Message" /> instance from which to get the <see cref="T:System.Net.Http.HttpResponseMessage" /> instance.</param>
+        <summary>Creates a <see cref="T:System.Net.Http.HttpResponseMessage" /> instance from an <see cref="T:System.ServiceModel.Channels.Message" /> instance.</summary>
+        <returns>The <see cref="T:System.Net.Http.HttpResponseMessage" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.SimplePropertyEntry
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.SimplePropertyEntry.Value
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.SimplePropertyEntry.PersistedValue
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.SimplePropertyEntry.UseSetAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

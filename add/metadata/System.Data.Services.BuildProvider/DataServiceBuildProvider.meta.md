@@ -1,14 +1,20 @@
 ---
 uid: System.Data.Services.BuildProvider.DataServiceBuildProvider
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Services.BuildProvider.DataServiceBuildProvider.GenerateCode(System.Web.Compilation.AssemblyBuilder)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Services.BuildProvider.DataServiceBuildProvider.#ctor
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

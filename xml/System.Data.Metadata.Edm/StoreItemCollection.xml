@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Loads metadata about the storage (database) model. The <see cref="T:System.Data.Metadata.Edm.StoreItemCollection" /> loads metadata from store schema definition language (SSDL) files. This class is derived from the <see cref="T:System.Data.Metadata.Edm.ItemCollection" /> class.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,8 +33,8 @@
         <Parameter Name="xmlReaders" Type="System.Collections.Generic.IEnumerable&lt;System.Xml.XmlReader&gt;" />
       </Parameters>
       <Docs>
-        <param name="xmlReaders">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="xmlReaders">The XMLReader used to create metadata.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Metadata.Edm.StoreItemCollection" /> class using the specified XMLReader.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,8 +57,8 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="filePaths">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="filePaths">The file paths used to create metadata.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Metadata.Edm.StoreItemCollection" /> class using the specified file paths.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,8 +76,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a collection of the <see cref="T:System.Data.Metadata.Edm.PrimitiveType" /> objects.</summary>
+        <returns>A <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> object that represents the collection of the <see cref="T:System.Data.Metadata.Edm.PrimitiveType" /> objects.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,8 +94,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the version of the store schema for this collection.</summary>
+        <value>The version of the store schema for this collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

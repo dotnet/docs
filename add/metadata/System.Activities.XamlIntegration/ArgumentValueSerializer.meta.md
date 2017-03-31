@@ -1,19 +1,27 @@
 ---
 uid: System.Activities.XamlIntegration.ArgumentValueSerializer
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.XamlIntegration.ArgumentValueSerializer.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.XamlIntegration.ArgumentValueSerializer.ConvertToString(System.Object,System.Windows.Markup.IValueSerializerContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.XamlIntegration.ArgumentValueSerializer.CanConvertToString(System.Object,System.Windows.Markup.IValueSerializerContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

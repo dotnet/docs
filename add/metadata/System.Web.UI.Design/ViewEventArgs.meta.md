@@ -1,24 +1,29 @@
 ---
 uid: System.Web.UI.Design.ViewEventArgs
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ViewEventArgs.Region
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ViewEventArgs.EventType
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ViewEventArgs.EventArgs
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ViewEventArgs.#ctor(System.Web.UI.Design.ViewEvent,System.Web.UI.Design.DesignerRegion,System.EventArgs)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

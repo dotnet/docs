@@ -16,8 +16,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines methods and properties that can be used to match a given string with a spoken phrase.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The spoken phrase can include the given string as a subset.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,9 +40,11 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="text">The portion of the phrase to be matched.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsSubset" /> class, specifying the portion of the phrase to be matched.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="text" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -52,10 +61,25 @@
         <Parameter Name="matchingMode" Type="System.Speech.Recognition.SubsetMatchingMode" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <param name="matchingMode">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="text">The portion of the phrase to be matched.</param>
+        <param name="matchingMode">The mode in which <c>text</c> should be matched with the spoken phrase.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsSubset" /> class, specifying the portion to be matched and the mode in which the text should be matched.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `matchingMode` parameter must a member of the <xref:System.Speech.Recognition.SubsetMatchingMode> enumeration.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="text" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="text" /> is empty.  
+  
+ <paramref name="text" /> contains only white space characters (that is, ' ', '\t', '\n', '\r').  
+  
+ <paramref name="matchingMode" /> is set to a value in the <see cref="T:System.Speech.Recognition.SubsetMatchingMode" /> enumeration.</exception>
       </Docs>
     </Member>
     <Member MemberName="MatchingMode">
@@ -71,9 +95,10 @@
         <ReturnType>System.Speech.Recognition.SubsetMatchingMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the matching mode for the subset.</summary>
+        <value>A member of the <see cref="T:System.Speech.Recognition.SubsetMatchingMode" /> enumeration.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">An attempt is made to set <see cref="P:System.Speech.Recognition.SrgsGrammar.SrgsSubset.MatchingMode" /> to a value that is not a member of the <see cref="T:System.Speech.Recognition.SubsetMatchingMode" /> enumeration.</exception>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -89,9 +114,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets as string that contains the portion of a spoken phrase to be matched.</summary>
+        <value>A string that contains the portion of a spoken phrase to be matched.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">An attempt is made to set <see cref="P:System.Speech.Recognition.SrgsGrammar.SrgsSubset.Text" /> to <see langword="null" /> or to an empty string.</exception>
+        <exception cref="T:System.ArgumentException">An attempt is made to set <see cref="P:System.Speech.Recognition.SrgsGrammar.SrgsSubset.Text" /> using a string that contains only white space characters (' ', '\t', '\n', '\r').</exception>
       </Docs>
     </Member>
   </Members>

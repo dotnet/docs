@@ -1,14 +1,17 @@
 ---
 uid: System.Configuration.IgnoreSectionHandler
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.IgnoreSectionHandler.Create(System.Object,System.Object,System.Xml.XmlNode)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.IgnoreSectionHandler.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

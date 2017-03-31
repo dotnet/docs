@@ -15,8 +15,19 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the base class for resources that can be added to an <see cref="T:System.Windows.Xps.Packaging.XpsDocument" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to add <xref:System.Windows.Xps.Packaging.XpsResource> derived types to an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+  
+ [!code-cpp[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreateaddpageresources)]
+ [!code-csharp[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreateaddpageresources)]
+ [!code-vb[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreateaddpageresources)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Commit">
@@ -33,8 +44,24 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Commits all changes and flushes the resource to the document package.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Based on settings of <xref:System.Windows.Xps.Serialization.XpsSerializationManager> and <xref:System.Windows.Xps.Serialization.XpsPackagingPolicy>, such as <xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies> and <xref:System.Windows.Xps.Packaging.PackageInterleavingOrder>, the flush operation of the <xref:System.Windows.Xps.Packaging.XpsResource.Commit%2A> method may be delayed until the whole <xref:System.Windows.Xps.Packaging.XpsDocument> is closed.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Xps.Packaging.XpsResource.Commit%2A> method (in a derived class) when you add resources to an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+  
+ [!code-cpp[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreateaddpageresources)]
+ [!code-csharp[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreateaddpageresources)]
+ [!code-vb[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreateaddpageresources)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetStream">
@@ -51,9 +78,20 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>When overridden in a derived class, returns the I/O stream for reading or writing the resource.</summary>
+        <returns>The <see cref="T:System.IO.Stream" /> for reading or writing the resource.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this method (in a derived class) to add resources to an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+  
+ [!code-cpp[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreateaddpageresources)]
+ [!code-csharp[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreateaddpageresources)]
+ [!code-vb[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreateaddpageresources)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RelativeUri">
@@ -72,9 +110,9 @@
         <Parameter Name="inUri" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="inUri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="inUri">A starting absolute [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)].</param>
+        <summary>Returns the [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] of the resource that is relative to a specified absolute [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)].</summary>
+        <returns>The <see cref="T:System.Uri" /> of the resource that is relative to the specified absolute <paramref name="inUri" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,7 +130,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This member supports the [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

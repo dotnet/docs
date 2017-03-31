@@ -1,9 +1,11 @@
 ---
 uid: System.Web.UI.Design.HtmlIntrinsicControlDesigner
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.HtmlIntrinsicControlDesigner.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents <see langword="WsdlHelpGenerator" /> element in the configuration file that specifies the XML Web service Help page (an .aspx file) that is displayed to a browser when the browser navigates directly to an ASMX XML Web services page.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Configuration.WsdlHelpGeneratorElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,8 +71,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the file path to the Help page.</summary>
+        <value>A <see cref="T:System.String" /> that contains the file path to the Help page.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

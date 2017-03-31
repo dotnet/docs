@@ -15,8 +15,18 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains values that specify how a property value is tested in a <see cref="T:System.Windows.Automation.PropertyCondition" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ In the following example, IgnoreCase is set in a <xref:System.Windows.Automation.PropertyCondition>.  
+  
+ [!code-csharp[UIAClient_snip#110](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#110)]
+ [!code-vb[UIAClient_snip#110](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#110)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="IgnoreCase">
@@ -32,7 +42,7 @@
         <ReturnType>System.Windows.Automation.PropertyConditionFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that comparison with a string property value is not case-sensitive.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -48,7 +58,7 @@
         <ReturnType>System.Windows.Automation.PropertyConditionFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the property value is tested using default behavior (case-sensitive comparison for strings).</summary>
       </Docs>
     </Member>
   </Members>

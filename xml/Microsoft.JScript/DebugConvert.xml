@@ -26,7 +26,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Converts data from one type to another. Includes methods that convert values to <see cref="T:System.String" /> objects so that they can be displayed by the debugger.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -41,7 +41,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.DebugConvert" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,9 +61,9 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value to convert.</param>
+        <summary>Converts the specified <see cref="T:System.Boolean" /> value to a <see cref="T:System.String" />.</summary>
+        <returns>The literal string "true" or the literal string "false".</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,10 +84,10 @@
         <Parameter Name="radix" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="radix">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value to convert.</param>
+        <param name="radix">The base of the return value. The base must be 2, 8, 10, or 16.</param>
+        <summary>Converts the specified <see cref="T:System.Byte" /> value to a <see cref="T:System.String" />.</summary>
+        <returns>The string representation of <paramref name="value" /> in base <paramref name="radix" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,9 +107,9 @@
         <Parameter Name="value" Type="System.Decimal" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value to convert.</param>
+        <summary>Converts the specified <see cref="T:System.Decimal" /> value to a <see cref="T:System.String" />.</summary>
+        <returns>The string representation of <paramref name="value" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,9 +129,9 @@
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value to convert.</param>
+        <summary>Creates a string representation of the specified <see cref="T:System.Double" />. The string representation contains the day of the week, the month, the date, the time, the time zone, and the year.</summary>
+        <returns>The string representation of <paramref name="value" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,9 +151,9 @@
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value to convert.</param>
+        <summary>Converts the specified <see cref="T:System.Double" /> value to a <see cref="T:System.String" />.</summary>
+        <returns>The string representation of <paramref name="value" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -174,10 +174,10 @@
         <Parameter Name="engine" Type="Microsoft.JScript.Vsa.IJSVsaEngine" />
       </Parameters>
       <Docs>
-        <param name="hr">To be added.</param>
-        <param name="engine">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="hr">The HRESULT error code.</param>
+        <param name="engine">A reference to the scripting engine.</param>
+        <summary>Gets an error message that is created from the specified <see cref="P:System.Exception.HResult" /> and the <see cref="T:System.Globalization.CultureInfo" /> of the specified <see cref="T:Microsoft.JScript.Vsa.IJSVsaEngine" />.</summary>
+        <returns>A localized string that contains information about the error.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -197,9 +197,10 @@
         <Parameter Name="i" Type="System.UInt16" />
       </Parameters>
       <Docs>
-        <param name="i">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="i">The value to convert.</param>
+        <summary>Creates a managed object that has the specified primitive <see cref="T:System.Char" /> value.</summary>
+        <returns>
+          <paramref name="i" /> converted to a <see cref="T:System.Char" /> and then an <see cref="T:System.Object" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -219,9 +220,10 @@
         <Parameter Name="i" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="i">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="i">The value to convert.</param>
+        <summary>Creates a managed object that has the specified primitive <see cref="T:System.Int64" /> value.</summary>
+        <returns>
+          <paramref name="i" /> converted to an <see cref="T:System.Object" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -241,9 +243,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value to convert.</param>
+        <summary>Creates a managed object that has the specified primitive value.</summary>
+        <returns>
+          <paramref name="value" /> converted to a managed <see cref="T:System.Object" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -263,9 +266,10 @@
         <Parameter Name="i" Type="System.UInt64" />
       </Parameters>
       <Docs>
-        <param name="i">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="i">The value to convert.</param>
+        <summary>Creates a managed object that has the specified primitive <see cref="T:System.UInt64" /> value.</summary>
+        <returns>
+          <paramref name="i" /> converted to an <see cref="T:System.Object" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -286,10 +290,10 @@
         <Parameter Name="radix" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="radix">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value to convert.</param>
+        <param name="radix">The base of the return value. The base must be 2, 8, 10, or 16.</param>
+        <summary>Converts the specified <see cref="T:System.Int16" /> value to a <see cref="T:System.String" />.</summary>
+        <returns>The string representation of <paramref name="value" /> in base <paramref name="radix" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -310,10 +314,10 @@
         <Parameter Name="radix" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="radix">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value to convert.</param>
+        <param name="radix">The base of the return value. The base must be 2, 8, 10, or 16.</param>
+        <summary>Converts the specified <see cref="T:System.Int32" /> value to a <see cref="T:System.String" />.</summary>
+        <returns>The string representation of <paramref name="value" /> in base <paramref name="radix" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -334,10 +338,10 @@
         <Parameter Name="radix" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="radix">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value to convert.</param>
+        <param name="radix">The base of the return value. The base must be 2, 8, 10, or 16.</param>
+        <summary>Converts the specified <see cref="T:System.Int64" /> value to a <see cref="T:System.String" />.</summary>
+        <returns>The string representation of <paramref name="value" /> in base <paramref name="radix" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -360,12 +364,15 @@
         <Parameter Name="multiline" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <param name="ignoreCase">To be added.</param>
-        <param name="global">To be added.</param>
-        <param name="multiline">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="source">The regular expression pattern to match.</param>
+        <param name="ignoreCase">
+          <see langword="true" /> to use case-insensitive matching; otherwise, <see langword="false" />.</param>
+        <param name="global">
+          <see langword="true" /> to use a global match; otherwise, <see langword="false" />.</param>
+        <param name="multiline">
+          <see langword="true" /> to use a multiline match; otherwise, <see langword="false" />.</param>
+        <summary>Converts the specified regular expression information to a <see cref="T:System.String" />.</summary>
+        <returns>The string representation of the regular expression information.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -386,10 +393,10 @@
         <Parameter Name="radix" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="radix">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value to convert.</param>
+        <param name="radix">The base of the return value. The base must be 2, 8, 10, or 16.</param>
+        <summary>Converts the specified <see cref="T:System.SByte" /> value to a <see cref="T:System.String" />.</summary>
+        <returns>The string representation of <paramref name="value" /> in base <paramref name="radix" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -409,9 +416,9 @@
         <Parameter Name="value" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value to convert.</param>
+        <summary>Converts the specified <see cref="T:System.Single" /> value to a <see cref="T:System.String" />.</summary>
+        <returns>The string representation of <paramref name="value" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -431,9 +438,9 @@
         <Parameter Name="source" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="source">The value to convert.</param>
+        <summary>Converts the specified <see cref="T:System.String" /> to a <see cref="T:System.String" /> that contains escape characters for non-printable characters.</summary>
+        <returns>The string representation of <paramref name="source" /> that contains escape characters.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -455,11 +462,13 @@
         <Parameter Name="truncationPermitted" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="typeCode">To be added.</param>
-        <param name="truncationPermitted">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value to convert to a new type.</param>
+        <param name="typeCode">The type to convert <c>value</c> to.</param>
+        <param name="truncationPermitted">
+          <see langword="true" /> to allow data loss; otherwise, <see langword="false" />.</param>
+        <summary>Converts the specified value to the specified <see cref="T:System.TypeCode" />, optionally allowing data loss.</summary>
+        <returns>
+          <paramref name="value" /> converted to the <paramref name="typeCode" /> type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -480,10 +489,10 @@
         <Parameter Name="radix" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="radix">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value to convert.</param>
+        <param name="radix">The base of the return value. The base must be 2, 8, 10, or 16.</param>
+        <summary>Converts the specified <see cref="T:System.UInt16" /> value to a <see cref="T:System.String" />.</summary>
+        <returns>The string representation of <paramref name="value" /> in base <paramref name="radix" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -504,10 +513,10 @@
         <Parameter Name="radix" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="radix">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value to convert.</param>
+        <param name="radix">The base of the return value. The base must be 2, 8, 10, or 16.</param>
+        <summary>Converts the specified <see cref="T:System.UInt32" /> value to a <see cref="T:System.String" />.</summary>
+        <returns>The string representation of <paramref name="value" /> in base <paramref name="radix" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -528,10 +537,10 @@
         <Parameter Name="radix" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="radix">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value to convert.</param>
+        <param name="radix">The base of the return value. The base must be 2, 8, 10, or 16.</param>
+        <summary>Converts the specified <see cref="T:System.UInt64" /> value to a <see cref="T:System.String" />.</summary>
+        <returns>The string representation of <paramref name="value" /> in base <paramref name="radix" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

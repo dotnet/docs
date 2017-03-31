@@ -1,29 +1,48 @@
 ---
 uid: System.ComponentModel.Composition.Primitives.ExportDefinition
-internalonly: False
----
-
----
-uid: System.ComponentModel.Composition.Primitives.ExportDefinition.#ctor(System.String,System.Collections.Generic.IDictionary{System.String,System.Object})
-internalonly: False
----
-
----
-uid: System.ComponentModel.Composition.Primitives.ExportDefinition.ToString
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Primitives.ExportDefinition.#ctor
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Composition.Primitives.ExportDefinition.#ctor(System.String,System.Collections.Generic.IDictionary{System.String,System.Object})
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Composition.Primitives.ExportDefinition.ToString
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Composition.Primitives.ExportDefinition.#ctor
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Primitives.ExportDefinition.ContractName
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Primitives.ExportDefinition.Metadata
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

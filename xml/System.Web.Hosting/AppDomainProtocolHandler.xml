@@ -15,8 +15,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides support for programmatic access to application domain protocols.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,8 +37,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Hosting.AppDomainProtocolHandler" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InitializeLifetimeService">
@@ -48,9 +62,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gives the protocol handler an infinite lifetime by preventing a lease from being created.</summary>
+        <returns>
+          <see langword="true" /> if the service is initiated; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StartListenerChannel">
@@ -69,8 +91,8 @@
         <Parameter Name="listenerChannelCallback" Type="System.Web.Hosting.IListenerChannelCallback" />
       </Parameters>
       <Docs>
-        <param name="listenerChannelCallback">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="listenerChannelCallback">The callback for the listener channel.</param>
+        <summary>Starts a protocol listener channel.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,9 +112,17 @@
         <Parameter Name="immediate" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="immediate">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="immediate">
+          <see langword="true" /> to stop the queue immediately.</param>
+        <summary>Stops a queue.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StopListenerChannel">
@@ -112,9 +142,10 @@
         <Parameter Name="immediate" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="listenerChannelId">To be added.</param>
-        <param name="immediate">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="listenerChannelId">The callback for the listener channel.</param>
+        <param name="immediate">
+          <see langword="true" /> to stop the protocol immediately; otherwise, <see langword="false" />.</param>
+        <summary>Stops the specified process protocol handler.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,9 +165,17 @@
         <Parameter Name="immediate" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="immediate">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="immediate">
+          <see langword="true" /> to stop the protocol immediately.</param>
+        <summary>Stops a protocol.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

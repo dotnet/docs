@@ -44,8 +44,30 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Creates a user interface element that enables users to invoke ASP.NET event handlers and it provides a means to post user input from UI elements back to the server. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.MobileControls.Command> control displays as an interactive UI element on the requesting device. The label of the UI element comes from the <xref:System.Web.UI.MobileControls.TextControl.Text%2A> property, which is inherited from the <xref:System.Web.UI.MobileControls.TextControl> base class.  
+  
+> [!CAUTION]
+>  Avoid using special characters in ASP.NET mobile Web page URLs. The HREF tags generated for posting `Command` events back to the server are not strictly validated. For example, a URL that includes spaces results in the generation of WML that cannot be handled by some WML browsers.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to attach command events. Clicking either of the <xref:System.Web.UI.MobileControls.Command> buttons raises the <xref:System.Web.UI.MobileControls.Command.OnItemCommand%2A> event. The user-defined function uses the `CommandEventArgs` argument to see which <xref:System.Web.UI.MobileControls.Command> button was clicked.  
+  
+> [!NOTE]
+>  The following code example uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](../Topic/ASP.NET%20Web%20Forms%20Page%20Code%20Model.md).  
+  
+ [!code-csharp[MobileCommandExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileCommandExample/CS/default.aspx#1)]
+ [!code-vb[MobileCommandExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileCommandExample/VB/default.aspx#1)]  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -59,7 +81,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates an instance of the <see cref="T:System.Web.UI.MobileControls.Command" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,9 +106,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets whether the specified control causes server-side validation to occur on all controls on the form. The default value is <see langword="true" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>
+          <see langword="true" /> if the specified control causes server-side validation to occur on all controls on the form; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For validation to occur on a form, the form must be submitted with a control that raises validation, and must have its <xref:System.Web.UI.MobileControls.Command.CausesValidation%2A> property set to `true`. The <xref:System.Web.UI.MobileControls.Command> control is currently the only control that raises validation.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Click">
@@ -102,8 +132,26 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a user activates a <see cref="T:System.Web.UI.MobileControls.Command" /> control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a <xref:System.Web.UI.MobileControls.Command> control is activated, it raises the <xref:System.Web.UI.MobileControls.Command.OnClick%2A> event. For more information, see the "Device-Specific Rendering" and "Device-Specific Behavior" sections in <xref:System.Web.UI.MobileControls.Command?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to attach command events. Clicking either of the <xref:System.Web.UI.MobileControls.Command> buttons raises the <xref:System.Web.UI.MobileControls.Command.OnItemCommand%2A> event. The user-defined function uses the `CommandEventArgs` argument to see which <xref:System.Web.UI.MobileControls.Command> button was clicked.  
+  
+> [!NOTE]
+>  The following code example uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](../Topic/ASP.NET%20Web%20Forms%20Page%20Code%20Model.md).  
+  
+ [!code-csharp[MobileCommandExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileCommandExample/CS/default.aspx#1)]
+ [!code-vb[MobileCommandExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileCommandExample/VB/default.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CommandArgument">
@@ -127,9 +175,22 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Sets or returns the argument associated with the command in the <see cref="E:System.Web.UI.MobileControls.Command.ItemCommand" /> event. The default value is an empty string (""). This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>The argument associated with the command in the <see cref="E:System.Web.UI.MobileControls.Command.ItemCommand" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to the use the <xref:System.Web.UI.MobileControls.Command.CommandArgument%2A> property to display a value.  
+  
+> [!NOTE]
+>  The following code example uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](../Topic/ASP.NET%20Web%20Forms%20Page%20Code%20Model.md).  
+  
+ [!code-csharp[MobileItemCommandSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileItemCommandSample/cs/default.aspx#1)]
+ [!code-vb[MobileItemCommandSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileItemCommandSample/vb/default.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CommandName">
@@ -153,8 +214,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the command name associated with the <see cref="T:System.Web.UI.MobileControls.Command" /> control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>The name of the <see cref="T:System.Web.UI.MobileControls.Command" /> that raised the event.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -179,9 +240,36 @@
         <ReturnType>System.Web.UI.MobileControls.CommandFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the render style for the <see cref="T:System.Web.UI.MobileControls.Command" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>A <see cref="T:System.Web.UI.MobileControls.CommandFormat" /> value indicating the render style for the <see cref="T:System.Web.UI.MobileControls.Command" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Access the two available types through the <xref:System.Web.UI.MobileControls.CommandFormat> enumeration.  
+  
+ <xref:System.Web.UI.MobileControls.CommandFormat?displayProperty=fullName> (default)  
+ The command is rendered as a button.  
+  
+ <xref:System.Web.UI.MobileControls.CommandFormat?displayProperty=fullName>  
+ The command is rendered as a link.  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.MobileControls.Command.Format%2A> property supports the <xref:System.Web.UI.MobileControls.CommandFormat?displayProperty=fullName> value only on devices that support JavaScript as indicated by the <xref:System.Web.Configuration.HttpCapabilitiesBase.JavaScript%2A?displayProperty=fullName> property.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to the use the <xref:System.Web.UI.MobileControls.Command.Format%2A> property to render the command as a link or a button.  
+  
+> [!NOTE]
+>  The following code example uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](../Topic/ASP.NET%20Web%20Forms%20Page%20Code%20Model.md).  
+  
+ [!code-csharp[MobileItemCommandSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileItemCommandSample/cs/default.aspx#1)]
+ [!code-vb[MobileItemCommandSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileItemCommandSample/vb/default.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ImageUrl">
@@ -208,9 +296,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Sets or returns the URL of the image source for the <see cref="T:System.Web.UI.MobileControls.Command" /> control when the control is rendered as an image button. The default value is <see cref="F:System.String.Empty" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>The URL of the image source for the <see cref="T:System.Web.UI.MobileControls.Command" /> when the control is rendered as an image button.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this property is not <xref:System.String.Empty> and the device can handle image buttons, the <xref:System.Web.UI.MobileControls.Command> control uses the image instead of a button or link text.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsFormSubmitControl">
@@ -227,9 +322,20 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether the control submits the form. The default is <see langword="false" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <returns>
+          <see langword="true" /> if the control submits the form; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Mobile controls, such as the <xref:System.Web.UI.MobileControls.Command>, can override this method to determine whether this is a control used for form submission. Other controls can be extended by providing logic to programmatically determine whether or not they must be submit controls, for example, by checking for specific properties.  
+  
+> [!NOTE]
+>  A control is considered to be a form-submit control only if it implements <xref:System.Web.UI.IPostBackEventHandler> method to capture the postback event. Otherwise, it is not registered for the default event handler, even if the method returns `true`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ItemCommand">
@@ -245,8 +351,27 @@
         <ReturnType>System.Web.UI.WebControls.CommandEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the user selects a command that is associated with an <see cref="T:System.Web.UI.MobileControls.ObjectList" /> item. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When an <xref:System.Web.UI.MobileControls.Command.ItemCommand> event handler is defined, the <xref:System.Web.UI.MobileControls.Command> control notifies the handler when an item event is generated through user interaction.  
+  
+ Unlike the <xref:System.Web.UI.MobileControls.Command.Click> event, the <xref:System.Web.UI.MobileControls.Command.ItemCommand> event is bubbled up to the parent controls. The <xref:System.Web.UI.MobileControls.Command.ItemCommand> event rendering is device-specific and is discussed in detail in the "Device-Specific Behavior" section of <xref:System.Web.UI.MobileControls.Command?displayProperty=fullName>.  
+  
+ The <xref:System.Web.UI.MobileControls.Command.OnItemCommand%2A> event is raised after an <xref:System.Web.UI.MobileControls.Command.OnClick%2A> event. In a scenario where you repeat the same set of actions each time a command button is clicked, you can use either the <xref:System.Web.UI.MobileControls.Command.CommandName%2A> or <xref:System.Web.UI.MobileControls.Command.CommandArgument%2A> property of the <xref:System.Web.UI.MobileControls.Command> control to identify which command button the user clicked.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.MobileControls.Command.ItemCommand> event for multiple commands on a page.  
+  
+ [!code-csharp[MobileItemCommandSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileItemCommandSample/cs/default.aspx#1)]
+ [!code-vb[MobileItemCommandSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileItemCommandSample/vb/default.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadPostData">
@@ -266,11 +391,22 @@
         <Parameter Name="data" Type="System.Collections.Specialized.NameValueCollection" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="data">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="key">A reference to the name of a parameter collection.</param>
+        <param name="data">A parameter collection of postback data.</param>
+        <summary>Gets a value indicating whether the adapter associated with the <see cref="T:System.Web.UI.MobileControls.Command" /> control has handled loading the post data. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <returns>
+          <see langword="true" /> if the adapter associated with this control has handled loading the post data; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the <xref:System.Web.UI.IPostBackDataHandler.LoadPostData%2A?displayProperty=fullName> method.  
+  
+> [!NOTE]
+>  Different devices might provide their data back to the calling server in different ways.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnClick">
@@ -289,9 +425,16 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">An object defined by an <see cref="T:System.EventArgs" /> that contains event data.</param>
+        <summary>Called when the user activates the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation of the <xref:System.Web.UI.MobileControls.Command.OnClick%2A> method raises the <xref:System.Web.UI.MobileControls.Command.Click> event. Inheriting classes can override the <xref:System.Web.UI.MobileControls.Command.OnClick%2A> method to perform other tasks.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnItemCommand">
@@ -310,9 +453,18 @@
         <Parameter Name="e" Type="System.Web.UI.WebControls.CommandEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">An <see cref="T:System.Web.UI.WebControls.CommandEventArgs" /> object that contains event data.</param>
+        <summary>Called when the user activates the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation raises the <xref:System.Web.UI.MobileControls.Command.ItemCommand> event. Inheriting classes can override this method to perform other tasks.  
+  
+ The <xref:System.Web.UI.MobileControls.Command.OnItemCommand%2A> event is raised after the <xref:System.Web.UI.MobileControls.Command.OnClick%2A> event. This is useful when you must take the same actions for multiple <xref:System.Web.UI.MobileControls.Command> buttons. You can use the <xref:System.Web.UI.MobileControls.Command.CommandName%2A> or <xref:System.Web.UI.MobileControls.Command.CommandArgument%2A> property of the <xref:System.Web.UI.MobileControls.Command> control to identify which <xref:System.Web.UI.MobileControls.Command> button was clicked.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -331,8 +483,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">An <see cref="T:System.EventArgs" /> object that contains event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.Control.PreRender" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -352,9 +504,16 @@
         <Parameter Name="argument" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="argument">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="argument">The argument for the event.</param>
+        <summary>Raises events for the <see cref="T:System.Web.UI.MobileControls.Command" /> control when it posts back to the server. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.MobileControls.Command.RaisePostBackEvent%2A> method is used internally by the <xref:System.Web.UI.MobileControls.Command> control when it is clicked to raise a <xref:System.Web.UI.MobileControls.Command.Click> event.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RaisePostDataChangedEvent">
@@ -371,8 +530,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Notifies the ASP.NET application that the state of the <see cref="T:System.Web.UI.MobileControls.Command" /> control has changed. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.MobileControls.Command.RaisePostDataChangedEvent%2A> method can be overridden in a derived class to raise change events for the <xref:System.Web.UI.MobileControls.Command> control when it posts back to the server. This method is used primarily by control developers.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SoftkeyLabel">
@@ -396,9 +562,27 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Sets or returns the label used when a softkey is displayed. The default value is an empty string (""). This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>The label used when a soft key is displayed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is used only for devices that support softkeys.  
+  
+ If this property is empty, the <xref:System.Web.UI.MobileControls.TextControl.Text%2A> property of the control is used. If the <xref:System.Web.UI.MobileControls.TextControl.Text%2A> property is empty or its length is less than 9, the <xref:System.Web.UI.MobileControls.TextControl.Text%2A> property is used for the softkey label. Otherwise, the word `Go` (if it is a submit control command) is displayed.  
+  
+ The value of the <xref:System.Web.UI.MobileControls.Command.SoftkeyLabel%2A> property is truncated to 12 characters (the standard maximum length of a softkey).  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.MobileControls.Command.SoftkeyLabel%2A> property.  
+  
+<!-- TODO: review snippet reference  [!CODE [MobileCommandSample#3](MobileCommandSample#3)]  -->  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">
@@ -418,11 +602,19 @@
         <Parameter Name="data" Type="System.Collections.Specialized.NameValueCollection" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="data">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="key">A reference to the name of a parameter collection.</param>
+        <param name="data">A parameter collection of postback data.</param>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <returns>
+          <see langword="true" /> if the adapter handles loading the post data; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.Command> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler?displayProperty=fullName> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent">
@@ -439,8 +631,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.Command> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackEventHandler.RaisePostBackEvent">
@@ -459,9 +658,16 @@
         <Parameter Name="eventArgument" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="eventArgument">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="eventArgument">The argument for the event.</param>
+        <summary>Raises events for the <see cref="T:System.Web.UI.MobileControls.Command" /> control when it posts back to the server. For a description of this member, see <see cref="M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.MobileControls.Command.RaisePostBackEvent%2A> method is used internally by the <xref:System.Web.UI.MobileControls.Command> control when it is clicked to raise a <xref:System.Web.UI.MobileControls.Command.Click> event.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

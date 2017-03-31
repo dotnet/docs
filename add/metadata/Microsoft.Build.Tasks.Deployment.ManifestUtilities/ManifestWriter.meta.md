@@ -1,24 +1,41 @@
 ---
 uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.ManifestWriter
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.ManifestWriter.WriteManifest(Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest,System.IO.Stream)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.ManifestWriter.WriteManifest(Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest,System.String)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.ManifestWriter.WriteManifest
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.ManifestWriter.WriteManifest(Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.ManifestWriter.WriteManifest(Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest,System.String,System.String)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

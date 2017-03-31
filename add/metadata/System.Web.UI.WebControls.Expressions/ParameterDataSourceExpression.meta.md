@@ -1,34 +1,41 @@
 ---
 uid: System.Web.UI.WebControls.Expressions.ParameterDataSourceExpression
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Expressions.ParameterDataSourceExpression.LoadViewState(System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Expressions.ParameterDataSourceExpression.TrackViewState
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Expressions.ParameterDataSourceExpression.SetContext(System.Web.UI.Control,System.Web.HttpContext,System.Web.UI.WebControls.IQueryableDataSource)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Expressions.ParameterDataSourceExpression.SaveViewState
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Expressions.ParameterDataSourceExpression.Parameters
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Expressions.ParameterDataSourceExpression.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

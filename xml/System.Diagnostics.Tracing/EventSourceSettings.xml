@@ -25,8 +25,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies configuration options for an event source.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Only EtwManifestEventFormat or EtwSelfDescribingEventFormat should be specified, but not both.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Default">
@@ -52,7 +59,7 @@
         <ReturnType>System.Diagnostics.Tracing.EventSourceSettings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>None of the special configuration options are enabled.</summary>
       </Docs>
     </Member>
     <Member MemberName="EtwManifestEventFormat">
@@ -78,7 +85,7 @@
         <ReturnType>System.Diagnostics.Tracing.EventSourceSettings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The ETW listener should use a manifest-based format when raising events. Setting this option is a directive to the ETW listener should use manifest-based format when raising events. This is the default option when defining a type derived from <see cref="T:System.Diagnostics.Tracing.EventSource" /> using one of the protected <see cref="T:System.Diagnostics.Tracing.EventSource" /> constructors.</summary>
       </Docs>
     </Member>
     <Member MemberName="EtwSelfDescribingEventFormat">
@@ -104,7 +111,7 @@
         <ReturnType>System.Diagnostics.Tracing.EventSourceSettings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The ETW listener should use self-describing event format. This is the default option when creating a new instance of the <see cref="T:System.Diagnostics.Tracing.EventSource" /> using one of the public <see cref="T:System.Diagnostics.Tracing.EventSource" /> constructors.</summary>
       </Docs>
     </Member>
     <Member MemberName="ThrowOnEventWriteErrors">
@@ -130,7 +137,7 @@
         <ReturnType>System.Diagnostics.Tracing.EventSourceSettings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The event source throws an exception when an error occurs.</summary>
       </Docs>
     </Member>
   </Members>

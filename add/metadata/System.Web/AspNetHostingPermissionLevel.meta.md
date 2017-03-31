@@ -1,4 +1,5 @@
 ---
 uid: System.Web.AspNetHostingPermissionLevel
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

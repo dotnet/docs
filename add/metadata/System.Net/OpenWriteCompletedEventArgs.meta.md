@@ -1,9 +1,11 @@
 ---
 uid: System.Net.OpenWriteCompletedEventArgs
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.OpenWriteCompletedEventArgs.Result
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

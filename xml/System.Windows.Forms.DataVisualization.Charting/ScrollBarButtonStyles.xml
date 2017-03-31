@@ -15,8 +15,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the type of button that will be displayed on the scrollbar.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonStyles> enumeration is used with the <xref:System.Windows.Forms.DataVisualization.Charting.AxisScrollBar.ButtonStyle%2A> property to specify the buttons to be displayed for a scrollbar.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="All">
@@ -32,7 +39,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>All buttons are displayed.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -48,7 +55,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No buttons are displayed.</summary>
       </Docs>
     </Member>
     <Member MemberName="ResetZoom">
@@ -64,7 +71,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The reset and zoom (thumb) buttons are displayed.</summary>
       </Docs>
     </Member>
     <Member MemberName="SmallScroll">
@@ -80,7 +87,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The up/down and left/right buttons only are displayed.</summary>
       </Docs>
     </Member>
   </Members>

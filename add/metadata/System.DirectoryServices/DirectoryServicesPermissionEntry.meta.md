@@ -1,19 +1,27 @@
 ---
 uid: System.DirectoryServices.DirectoryServicesPermissionEntry
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.DirectoryServicesPermissionEntry.Path
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.DirectoryServicesPermissionEntry.PermissionAccess
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.DirectoryServicesPermissionEntry.#ctor(System.DirectoryServices.DirectoryServicesPermissionAccess,System.String)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---

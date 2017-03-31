@@ -1,19 +1,23 @@
 ---
 uid: System.IdentityModel.Protocols.WSTrust.Participants
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.Participants.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.Participants.Participant
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.Participants.Primary
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

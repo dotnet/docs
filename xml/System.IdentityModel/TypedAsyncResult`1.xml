@@ -14,8 +14,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="T">The type of the result.</typeparam>
+    <summary>A concrete implementation of <see cref="T:System.IdentityModel.AsyncResult" /> that will wrap the result <see cref="T:System.Type" /> and return it when the <see cref="M:System.IdentityModel.TypedAsyncResult`1.End(System.IAsyncResult)" /> method is called.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,9 +32,16 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="state">A user-defined object that qualifies or contains information about an asynchronous operation.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.TypedAsyncResult`1" /> class that has a state object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor if your <xref:System.IdentityModel.TypedAsyncResult%601> instance does not need a callback delegate.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -51,9 +58,9 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="callback">The method to be called when the asynchronous operation completes.</param>
+        <param name="state">A user-defined object that qualifies or contains information about an asynchronous operation.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.TypedAsyncResult`1" /> class that has a callback delegate and a state object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,9 +81,10 @@
         <Parameter Name="completedSynchronously" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <param name="completedSynchronously">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="result">The result to be wrapped.</param>
+        <param name="completedSynchronously">
+          <see langword="true" /> if the asynchronous operation completed synchronously; otherwise <see langword="false" />.</param>
+        <summary>Call this version of complete when your asynchronous operation is complete and no exception was encountered. It updates the state of the operation and notifies the callback.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,10 +106,11 @@
         <Parameter Name="exception" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <param name="completedSynchronously">To be added.</param>
-        <param name="exception">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="result">The result to be wrapped.</param>
+        <param name="completedSynchronously">
+          <see langword="true" /> if the asynchronous operation completed synchronously; otherwise <see langword="false" />.</param>
+        <param name="exception">The exception that occurred during the processing of the asynchronous operation.</param>
+        <summary>Call this version of complete if you raise an exception during processing. In addition to notifying the callback, it captures the exception and stores it to be thrown during the call to the <see cref="M:System.IdentityModel.TypedAsyncResult`1.End(System.IAsyncResult)" /> method.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,9 +130,9 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="result">The <see cref="T:System.IAsyncResult" /> representing the status of an asynchronous operation.</param>
+        <summary>End should be called when the End function for the asynchronous operation is complete. It ensures the asynchronous operation is complete, and does some common validation.</summary>
+        <returns>The typed result of the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,8 +149,8 @@
         <ReturnType>T</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the typed result of the completed asynchronous operation.</summary>
+        <value>The typed result of the completed asynchronous operation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

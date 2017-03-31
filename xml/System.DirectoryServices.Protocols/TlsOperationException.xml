@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.TlsOperationException" /> class is an exception that occurs in the <see cref="M:System.DirectoryServices.Protocols.LdapSessionOptions.StartTransportLayerSecurity(System.DirectoryServices.Protocols.DirectoryControlCollection)" /> method if the request fails.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.TlsOperationException.#ctor" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.TlsOperationException" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <Parameter Name="response" Type="System.DirectoryServices.Protocols.DirectoryResponse" />
       </Parameters>
       <Docs>
-        <param name="response">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="response">A <see cref="T:System.DirectoryServices.Protocols.DirectoryResponse" /> object returned by the server.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.TlsOperationException.#ctor(System.DirectoryServices.Protocols.DirectoryResponse)" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.TlsOperationException" /> class using the specified response.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +61,8 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The message displayed to the client when the exception occurs.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.TlsOperationException.#ctor(System.String)" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.TlsOperationException" /> class using the specified message.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,9 +80,9 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="response">To be added.</param>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="response">A <see cref="T:System.DirectoryServices.Protocols.DirectoryResponse" /> object returned by the server.</param>
+        <param name="message">The message displayed to the client when the exception occurs.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.TlsOperationException.#ctor(System.DirectoryServices.Protocols.DirectoryResponse,System.String)" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.TlsOperationException" /> class using the specified response and message.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,9 +100,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">The data required to serialize the parameter.</param>
+        <param name="context">The source and destination of the serialized stream associated with the parameter.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.TlsOperationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.TlsOperationException" /> class using the specified serialization data and streaming context.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,9 +120,9 @@
         <Parameter Name="inner" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="inner">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The message displayed to the client when the exception occurs.</param>
+        <param name="inner">The <see cref="P:System.Exception.InnerException" />, if any, that threw the exception.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.TlsOperationException.#ctor(System.String,System.Exception)" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.TlsOperationException" /> class using the specified message and inner exception.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -141,10 +141,10 @@
         <Parameter Name="inner" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="response">To be added.</param>
-        <param name="message">To be added.</param>
-        <param name="inner">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="response">A <see cref="T:System.DirectoryServices.Protocols.DirectoryResponse" /> object returned by the server.</param>
+        <param name="message">The message displayed to the client when the exception occurs.</param>
+        <param name="inner">The <see cref="P:System.Exception.InnerException" />, if any, that threw the exception.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.TlsOperationException.#ctor(System.DirectoryServices.Protocols.DirectoryResponse,System.String,System.Exception)" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.TlsOperationException" /> class using the specified response, message, and inner exception.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

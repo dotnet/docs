@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the type of session support that is required in order to handle a request.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.SessionState.SessionStateBehavior> enumeration is used with the <xref:System.Web.HttpContext.SetSessionStateBehavior%2A> method. You can call this method to indicate that session state support is needed to handle a request, and pass a <xref:System.Web.SessionState.SessionStateBehavior> enumeration value to specify what type of session state behavior applies to the request.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Default">
@@ -27,7 +34,7 @@
         <ReturnType>System.Web.SessionState.SessionStateBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The default ASP.NET logic is used to determine the session state behavior for the request. The default logic looks for the existence of marker session state interfaces on the <see cref="T:System.Web.IHttpHandler" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Disabled">
@@ -43,7 +50,7 @@
         <ReturnType>System.Web.SessionState.SessionStateBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Session state is not enabled for processing the request. This setting overrides whatever session behavior would have been determined by inspecting the handler for the request.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReadOnly">
@@ -59,7 +66,7 @@
         <ReturnType>System.Web.SessionState.SessionStateBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Read-only session state is enabled for the request. This means that session state cannot be updated. This setting overrides whatever session state behavior would have been determined by inspecting the handler for the request.</summary>
       </Docs>
     </Member>
     <Member MemberName="Required">
@@ -75,7 +82,7 @@
         <ReturnType>System.Web.SessionState.SessionStateBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Full read-write session state behavior is enabled for the request. This setting overrides whatever session behavior would have been determined by inspecting the handler for the request.</summary>
       </Docs>
     </Member>
   </Members>

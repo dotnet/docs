@@ -26,7 +26,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.Diagnostics.Tracing.EventFieldAttribute" /> is placed on fields of user-defined types that are passed as <see cref="T:System.Diagnostics.Tracing.EventSource" /> payloads.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -51,7 +51,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Tracing.EventFieldAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,8 +78,8 @@
         <ReturnType>System.Diagnostics.Tracing.EventFieldFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets and sets the value that specifies how to format the value of a user-defined type.</summary>
+        <value>Returns a<see cref="T:System.Diagnostics.Tracing.EventFieldFormat" /> value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,8 +106,8 @@
         <ReturnType>System.Diagnostics.Tracing.EventFieldTags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets and sets the user-defined <see cref="T:System.Diagnostics.Tracing.EventFieldTags" /> value that is required for fields that contain data that isn't one of the supported types.</summary>
+        <value>Returns <see cref="T:System.Diagnostics.Tracing.EventFieldTags" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

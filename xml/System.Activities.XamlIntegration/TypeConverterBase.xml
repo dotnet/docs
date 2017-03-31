@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides methods that derived type converter classes can use for converting objects to and from various representations.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,10 +32,11 @@
         <Parameter Name="sourceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="sourceType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">Context information that is used for conversion.</param>
+        <param name="sourceType">The type to convert from.</param>
+        <summary>When overridden in a derived class, determines whether the specified type can be converted from.</summary>
+        <returns>
+          <see langword="true" /> if the specified type can be converted from; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,10 +57,11 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="destinationType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">Context information that is used for conversion.</param>
+        <param name="destinationType">The type to convert to.</param>
+        <summary>When overridden in a derived class, determines whether the specified type can be converted to.</summary>
+        <returns>
+          <see langword="true" /> if the specified type can be converted to; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,11 +83,11 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="culture">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">Context information that is used for conversion.</param>
+        <param name="culture">An optional <see cref="T:System.Globalization.CultureInfo" />. If not supplied, the current culture is assumed.</param>
+        <param name="value">The object to convert.</param>
+        <summary>When overridden in a derived class, converts the specified value to a new representation specified by the derived class.</summary>
+        <returns>The converted value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,12 +110,12 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="culture">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="destinationType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">Context information that is used for conversion.</param>
+        <param name="culture">An optional <see cref="T:System.Globalization.CultureInfo" />. If not supplied, the current culture is assumed.</param>
+        <param name="value">The object to convert.</param>
+        <param name="destinationType">The type to convert to.</param>
+        <summary>When overridden in a derived class, converts the specified value to the specified representation.</summary>
+        <returns>The converted value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Forms.Design.SelectionRules
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

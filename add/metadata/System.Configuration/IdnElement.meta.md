@@ -1,14 +1,14 @@
 ---
 uid: System.Configuration.IdnElement
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.IdnElement.Enabled
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.IdnElement.#ctor
-internalonly: False
+manager: "wpickett"
 ---

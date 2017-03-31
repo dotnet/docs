@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains a class that provides a <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" /> for the background of the taskbar clock. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock> class provides a foundation in which the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock.Time> class is defined. The <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock.Time.Normal%2A> property of this class returns a <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> for the background of the taskbar clock.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members />
 </Type>

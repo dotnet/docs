@@ -1,99 +1,174 @@
 ---
 uid: System.IO.Packaging.EncryptedPackageEnvelope
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.Packaging.EncryptedPackageEnvelope.GetPackage
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.Packaging.EncryptedPackageEnvelope.PackageProperties
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.Packaging.EncryptedPackageEnvelope.CreateFromPackage
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.Packaging.EncryptedPackageEnvelope.IsEncryptedPackageEnvelope(System.IO.Stream)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.Packaging.EncryptedPackageEnvelope.CreateFromPackage(System.String,System.IO.Stream,System.Security.RightsManagement.PublishLicense,System.Security.RightsManagement.CryptoProvider)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.Packaging.EncryptedPackageEnvelope.Open(System.String,System.IO.FileAccess)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.Packaging.EncryptedPackageEnvelope.FileOpenAccess
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.Packaging.EncryptedPackageEnvelope.Dispose(System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.Packaging.EncryptedPackageEnvelope.Open(System.IO.Stream)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.Packaging.EncryptedPackageEnvelope.Create
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.Packaging.EncryptedPackageEnvelope.Open(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.Packaging.EncryptedPackageEnvelope.IsEncryptedPackageEnvelope(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.Packaging.EncryptedPackageEnvelope.CreateFromPackage(System.IO.Stream,System.IO.Stream,System.Security.RightsManagement.PublishLicense,System.Security.RightsManagement.CryptoProvider)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.Packaging.EncryptedPackageEnvelope.Create(System.String,System.Security.RightsManagement.PublishLicense,System.Security.RightsManagement.CryptoProvider)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.Packaging.EncryptedPackageEnvelope.IsEncryptedPackageEnvelope
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.Packaging.EncryptedPackageEnvelope.RightsManagementInformation
-internalonly: False
----
-
----
-uid: System.IO.Packaging.EncryptedPackageEnvelope.StorageInfo
-internalonly: False
----
-
----
-uid: System.IO.Packaging.EncryptedPackageEnvelope.Close
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.Packaging.EncryptedPackageEnvelope.Dispose
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.Packaging.EncryptedPackageEnvelope.StorageInfo
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.Packaging.EncryptedPackageEnvelope.Open
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.Packaging.EncryptedPackageEnvelope.Close
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.Packaging.EncryptedPackageEnvelope.Dispose
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.Packaging.EncryptedPackageEnvelope.Open(System.String,System.IO.FileAccess,System.IO.FileShare)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.Packaging.EncryptedPackageEnvelope.Create(System.IO.Stream,System.Security.RightsManagement.PublishLicense,System.Security.RightsManagement.CryptoProvider)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.Packaging.EncryptedPackageEnvelope.Flush
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

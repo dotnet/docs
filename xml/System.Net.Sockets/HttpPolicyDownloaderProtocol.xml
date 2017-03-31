@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Downloads the policy file that an instance of the <see cref="T:System.Net.Sockets.Socket" /> class will use.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,9 +45,9 @@
         <Parameter Name="address" Type="System.Net.IPAddress" />
       </Parameters>
       <Docs>
-        <param name="appUri">To be added.</param>
-        <param name="address">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="appUri">The URI where the application is hosted.</param>
+        <param name="address">The IP address where the app will run.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Sockets.HttpPolicyDownloaderProtocol" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,7 +73,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Abort the download of the policy file.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,8 +101,8 @@
         <Parameter Name="callback" Type="System.Net.Sockets.SecurityCriticalAction" />
       </Parameters>
       <Docs>
-        <param name="callback">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="callback">A callback function used to provide critical security actions.</param>
+        <summary>Begin the download of the policy file.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -130,8 +130,8 @@
         <Parameter Name="ar" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="ar">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="ar">The <see cref="T:System.IAsyncResult" /> to receive the results when the asynchronous operation completes.</param>
+        <summary>The download callback function to receive the results.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -159,8 +159,8 @@
         <Parameter Name="ar" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="ar">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="ar">The <see cref="T:System.IAsyncResult" /> to receive the results when the asynchronous operation completes.</param>
+        <summary>The read callback function to read the policy file.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -188,8 +188,8 @@
         <Parameter Name="creator" Type="System.Net.IUnsafeWebRequestCreate" />
       </Parameters>
       <Docs>
-        <param name="creator">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="creator">The object to create an unsafe <see cref="T:System.Net.WebRequest" />.</param>
+        <summary>Registers an object to creates an unsafe <see cref="T:System.Net.WebRequest" /> to a Uniform Resource Identifier (URI).</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -214,8 +214,10 @@
         <ReturnType>System.Net.Sockets.SocketPolicy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the result of the download of the socket policy file.</summary>
+        <value>Returns <see cref="T:System.Net.Sockets.SocketPolicy" />.  
+  
+ The socket policy file that was downloaded.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

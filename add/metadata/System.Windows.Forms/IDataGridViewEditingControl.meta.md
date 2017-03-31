@@ -1,54 +1,74 @@
 ---
 uid: System.Windows.Forms.IDataGridViewEditingControl
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.IDataGridViewEditingControl.EditingControlFormattedValue
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.IDataGridViewEditingControl.EditingControlRowIndex
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.IDataGridViewEditingControl.EditingControlValueChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.IDataGridViewEditingControl.EditingControlWantsInputKey(System.Windows.Forms.Keys,System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.IDataGridViewEditingControl.PrepareEditingControlForEdit(System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.IDataGridViewEditingControl.GetEditingControlFormattedValue(System.Windows.Forms.DataGridViewDataErrorContexts)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.IDataGridViewEditingControl.ApplyCellStyleToEditingControl(System.Windows.Forms.DataGridViewCellStyle)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.IDataGridViewEditingControl.RepositionEditingControlOnValueChange
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.IDataGridViewEditingControl.EditingControlDataGridView
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.IDataGridViewEditingControl.EditingPanelCursor
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

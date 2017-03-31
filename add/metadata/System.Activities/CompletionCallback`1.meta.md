@@ -1,4 +1,6 @@
 ---
 uid: System.Activities.CompletionCallback`1
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

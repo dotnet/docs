@@ -1,9 +1,13 @@
 ---
 uid: System.ServiceModel.Channels.ICorrelationDataSource
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.ICorrelationDataSource.DataSources
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

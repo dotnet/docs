@@ -20,8 +20,23 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies whether to compress or decompress the underlying stream.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used with the <xref:System.IO.Compression.GZipStream> and <xref:System.IO.Compression.DeflateStream> classes.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.IO.Compression.CompressionMode> enumeration with the <xref:System.IO.Compression.GZipStream> class to compress and decompress a file.  
+  
+ [!code-csharp[IO.Compression.GZip1#1](~/samples/snippets/csharp/VS_Snippets_CLR/IO.Compression.GZip1/CS/gziptest.cs#1)]
+ [!code-vb[IO.Compression.GZip1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/IO.Compression.GZip1/VB/gziptest.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Compress">
@@ -47,7 +62,7 @@
         <ReturnType>System.IO.Compression.CompressionMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Compresses the underlying stream.</summary>
       </Docs>
     </Member>
     <Member MemberName="Decompress">
@@ -73,7 +88,7 @@
         <ReturnType>System.IO.Compression.CompressionMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Decompresses the underlying stream.</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,84 +1,115 @@
 ---
 uid: System.Windows.Input.CommandManager
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.CommandManager.AddPreviewCanExecuteHandler(System.Windows.UIElement,System.Windows.Input.CanExecuteRoutedEventHandler)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.CommandManager.CanExecuteEvent
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.CommandManager.PreviewCanExecuteEvent
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.CommandManager.RequerySuggested
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.CommandManager.RemovePreviewCanExecuteHandler(System.Windows.UIElement,System.Windows.Input.CanExecuteRoutedEventHandler)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.CommandManager.RemoveCanExecuteHandler(System.Windows.UIElement,System.Windows.Input.CanExecuteRoutedEventHandler)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.CommandManager.AddPreviewExecutedHandler(System.Windows.UIElement,System.Windows.Input.ExecutedRoutedEventHandler)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.CommandManager.RegisterClassCommandBinding(System.Type,System.Windows.Input.CommandBinding)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.CommandManager.AddExecutedHandler(System.Windows.UIElement,System.Windows.Input.ExecutedRoutedEventHandler)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Input.CommandManager.InvalidateRequerySuggested
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Input.CommandManager.PreviewExecutedEvent
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.CommandManager.RegisterClassInputBinding(System.Type,System.Windows.Input.InputBinding)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Input.CommandManager.RemoveExecutedHandler(System.Windows.UIElement,System.Windows.Input.ExecutedRoutedEventHandler)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.CommandManager.RemovePreviewExecutedHandler(System.Windows.UIElement,System.Windows.Input.ExecutedRoutedEventHandler)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.CommandManager.ExecutedEvent
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.CommandManager.AddCanExecuteHandler(System.Windows.UIElement,System.Windows.Input.CanExecuteRoutedEventHandler)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

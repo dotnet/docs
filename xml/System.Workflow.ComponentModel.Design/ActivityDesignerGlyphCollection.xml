@@ -19,8 +19,21 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Exposes a generic <see cref="T:System.Collections.Generic.List`1" /> of designer glyphs associated with an activity designer.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ <xref:System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection> contains all designer glyphs that appear on the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> class with which the collection is associated.  
+  
+ You can access the contents of the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection> through the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.Glyphs%2A> property.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,7 +47,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection" /> class that is empty and has the default initial capacity.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +64,8 @@
         <Parameter Name="glyphs" Type="System.Collections.Generic.IEnumerable&lt;System.Workflow.ComponentModel.Design.DesignerGlyph&gt;" />
       </Parameters>
       <Docs>
-        <param name="glyphs">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="glyphs">Enumerable generic collection containing <see cref="T:System.Workflow.ComponentModel.Design.DesignerGlyph" /> objects.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection" /> class that contains elements copied from the specified generic collection of <see cref="T:System.Workflow.ComponentModel.Design.DesignerGlyph" />, and has sufficient capacity to accommodate the number of elements copied.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,8 +82,8 @@
         <Parameter Name="glyphs" Type="System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection" />
       </Parameters>
       <Docs>
-        <param name="glyphs">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="glyphs">An <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection" /> from which to copy collection elements.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection" /> class that contains elements copied from the specified <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection" /> and has sufficient capacity to accommodate the number of elements copied.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

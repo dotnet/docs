@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.DirectoryResponse" /> class is the base class for request response classes, like the <see cref="T:System.DirectoryServices.Protocols.SearchResponse" /> and <see cref="T:System.DirectoryServices.Protocols.AddResponse" /> classes.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.DirectoryServices.Protocols.DirectoryControl[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DirectoryResponse.Controls" /> property contains an array of <see cref="T:System.DirectoryServices.Protocols.DirectoryControl" /> objects returned by the server.</summary>
+        <value>An array of <see cref="T:System.DirectoryServices.Protocols.DirectoryControl" /> objects returned by the server.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DirectoryResponse.ErrorMessage" /> property contains the error message, if any, for this operation.</summary>
+        <value>The error message, if any, for this operation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +64,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DirectoryResponse.MatchedDN" /> property contains the matched distinguished name returned by the server.</summary>
+        <value>The matched distinguished name returned by the server.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +82,8 @@
         <ReturnType>System.Uri[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DirectoryResponse.Referral" /> property contains the server referrals.</summary>
+        <value>The server referrals.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,9 +100,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DirectoryResponse.RequestId" /> property contains the Request Identifier.</summary>
+        <value>The Request Identifier.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">User attempted to set the property value.</exception>
       </Docs>
     </Member>
     <Member MemberName="ResultCode">
@@ -118,8 +119,8 @@
         <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DirectoryResponse.ResultCode" /> property contains the result code of the operation.</summary>
+        <value>The result code of the operation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

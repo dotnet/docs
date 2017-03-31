@@ -1,1 +1,0 @@
-                For Each c In cs.FindClaims("http://example.org/claims/allowedoperation", Rights.PossessProperty)

@@ -1,34 +1,52 @@
 ---
 uid: System.Windows.Input.AccessKeyPressedEventArgs
-internalonly: False
----
-
----
-uid: System.Windows.Input.AccessKeyPressedEventArgs.InvokeEventHandler(System.Delegate,System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.AccessKeyPressedEventArgs.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Input.AccessKeyPressedEventArgs.InvokeEventHandler(System.Delegate,System.Object)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Input.AccessKeyPressedEventArgs.#ctor
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Input.AccessKeyPressedEventArgs.Key
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Input.AccessKeyPressedEventArgs.Target
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.AccessKeyPressedEventArgs.#ctor(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.AccessKeyPressedEventArgs.Scope
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

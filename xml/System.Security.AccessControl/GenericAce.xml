@@ -16,8 +16,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an Access Control Entry (ACE), and is the base class for all other ACE classes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An ACE contains both an ACE header and a binary blob. The header contains information about the type of the ACE, various flags, and the size of the binary blob.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AceFlags">
@@ -38,9 +45,16 @@
         <ReturnType>System.Security.AccessControl.AceFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see cref="T:System.Security.AccessControl.AceFlags" /> associated with this <see cref="T:System.Security.AccessControl.GenericAce" /> object.</summary>
+        <value>The <see cref="T:System.Security.AccessControl.AceFlags" /> associated with this <see cref="T:System.Security.AccessControl.GenericAce" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Security.AccessControl.AceFlags> object contains flags that specify information about the inheritance, inheritance propagation, and auditing conditions for an Access Control Entry (ACE).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AceType">
@@ -61,8 +75,8 @@
         <ReturnType>System.Security.AccessControl.AceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type of this Access Control Entry (ACE).</summary>
+        <value>The type of this ACE.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,8 +98,8 @@
         <ReturnType>System.Security.AccessControl.AuditFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the audit information associated with this Access Control Entry (ACE).</summary>
+        <value>The audit information associated with this Access Control Entry (ACE).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,8 +121,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the length, in bytes, of the binary representation of the current <see cref="T:System.Security.AccessControl.GenericAce" /> object. This length should be used before marshaling the ACL into a binary array with the <see cref="M:System.Security.AccessControl.GenericAce.GetBinaryForm(System.Byte[],System.Int32)" /> method.</summary>
+        <value>The length, in bytes, of the binary representation of the current <see cref="T:System.Security.AccessControl.GenericAce" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,8 +145,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a deep copy of this Access Control Entry (ACE).</summary>
+        <returns>The <see cref="T:System.Security.AccessControl.GenericAce" /> object that this method creates.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -158,10 +172,10 @@
         <Parameter Name="offset" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="binaryForm">To be added.</param>
-        <param name="offset">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="binaryForm">The binary data from which to create the new <see cref="T:System.Security.AccessControl.GenericAce" /> object.</param>
+        <param name="offset">The offset at which to begin unmarshaling.</param>
+        <summary>Creates a <see cref="T:System.Security.AccessControl.GenericAce" /> object from the specified binary data.</summary>
+        <returns>The <see cref="T:System.Security.AccessControl.GenericAce" /> object this method creates.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,9 +200,10 @@
         <Parameter Name="o" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="o">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="o">The <see cref="T:System.Security.AccessControl.GenericAce" /> object to compare to the current <see cref="T:System.Security.AccessControl.GenericAce" /> object.</param>
+        <summary>Determines whether the specified <see cref="T:System.Security.AccessControl.GenericAce" /> object is equal to the current <see cref="T:System.Security.AccessControl.GenericAce" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the specified <see cref="T:System.Security.AccessControl.GenericAce" /> object is equal to the current <see cref="T:System.Security.AccessControl.GenericAce" /> object; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -214,10 +229,12 @@
         <Parameter Name="offset" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="binaryForm">To be added.</param>
-        <param name="offset">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="binaryForm">The byte array into which the contents of the <see cref="T:System.Security.AccessControl.GenericAce" /> is marshaled.</param>
+        <param name="offset">The offset at which to start marshaling.</param>
+        <summary>Marshals the contents of the <see cref="T:System.Security.AccessControl.GenericAce" /> object into the specified byte array beginning at the specified offset.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="offset" /> is negative or too high to allow the entire <see cref="T:System.Security.AccessControl.GenericAcl" /> to be copied into <paramref name="array" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -239,8 +256,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Serves as a hash function for the <see cref="T:System.Security.AccessControl.GenericAce" /> class. The  <see cref="M:System.Security.AccessControl.GenericAce.GetHashCode" /> method is suitable for use in hashing algorithms and data structures like a hash table.</summary>
+        <returns>A hash code for the current <see cref="T:System.Security.AccessControl.GenericAce" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -262,8 +279,8 @@
         <ReturnType>System.Security.AccessControl.InheritanceFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets flags that specify the inheritance properties of this Access Control Entry (ACE).</summary>
+        <value>Flags that specify the inheritance properties of this ACE.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -285,8 +302,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a Boolean value that specifies whether this Access Control Entry (ACE) is inherited or is set explicitly.</summary>
+        <value>
+          <see langword="true" /> if this ACE is inherited; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -312,11 +330,14 @@
         <Parameter Name="right" Type="System.Security.AccessControl.GenericAce" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="left">The first <see cref="T:System.Security.AccessControl.GenericAce" /> object to compare.</param>
+        <param name="right">The second <see cref="T:System.Security.AccessControl.GenericAce" /> to compare.</param>
+        <summary>Determines whether the specified <see cref="T:System.Security.AccessControl.GenericAce" /> objects are considered equal.</summary>
+        <returns>
+          <see langword="true" /> if the two <see cref="T:System.Security.AccessControl.GenericAce" /> objects are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Security.AccessControl.GenericAce.Equals%28System.Security.AccessControl.GenericAce%2CSystem.Security.AccessControl.GenericAce%29?displayProperty=fullName>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -341,11 +362,14 @@
         <Parameter Name="right" Type="System.Security.AccessControl.GenericAce" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="left">The first <see cref="T:System.Security.AccessControl.GenericAce" /> object to compare.</param>
+        <param name="right">The second <see cref="T:System.Security.AccessControl.GenericAce" /> to compare.</param>
+        <summary>Determines whether the specified <see cref="T:System.Security.AccessControl.GenericAce" /> objects are considered unequal.</summary>
+        <returns>
+          <see langword="true" /> if the two <see cref="T:System.Security.AccessControl.GenericAce" /> objects are unequal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Security.AccessControl.GenericAce.Compare%28System.Security.AccessControl.GenericAce%2CSystem.Security.AccessControl.GenericAce%29?displayProperty=fullName>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PropagationFlags">
@@ -366,8 +390,8 @@
         <ReturnType>System.Security.AccessControl.PropagationFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets flags that specify the inheritance propagation properties of this Access Control Entry (ACE).</summary>
+        <value>Flags that specify the inheritance propagation properties of this ACE.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

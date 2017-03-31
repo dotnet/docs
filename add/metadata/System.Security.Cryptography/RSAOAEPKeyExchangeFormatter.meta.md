@@ -1,44 +1,76 @@
 ---
 uid: System.Security.Cryptography.RSAOAEPKeyExchangeFormatter
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.RSAOAEPKeyExchangeFormatter.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.RSAOAEPKeyExchangeFormatter.#ctor(System.Security.Cryptography.AsymmetricAlgorithm)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.RSAOAEPKeyExchangeFormatter.Parameter
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.RSAOAEPKeyExchangeFormatter.CreateKeyExchange(System.Byte[],System.Type)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.RSAOAEPKeyExchangeFormatter.SetKey(System.Security.Cryptography.AsymmetricAlgorithm)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.RSAOAEPKeyExchangeFormatter.CreateKeyExchange
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.RSAOAEPKeyExchangeFormatter.Parameters
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.RSAOAEPKeyExchangeFormatter.CreateKeyExchange(System.Byte[])
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.RSAOAEPKeyExchangeFormatter.Rng
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.RSAOAEPKeyExchangeFormatter.#ctor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

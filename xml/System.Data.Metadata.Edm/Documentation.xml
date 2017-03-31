@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the documentation associated with a conceptual model construct.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.Metadata.Edm.Documentation> class instance represents the contents of the documentation tag defined in the conceptual schema definition language (CSDL) files and store schema definition language (SSDL) files. You can define a documentation tag for conceptual model constructs, such as the <xref:System.Data.Metadata.Edm.EntityContainer>, the <xref:System.Data.Metadata.Edm.EntityType>, the <xref:System.Data.Metadata.Edm.ComplexType>, the <xref:System.Data.Metadata.Edm.AssociationType>, and so on. For more information, see [Documentation Element (CSDL)](http://msdn.microsoft.com/en-us/d49e7bb9-a6a1-4017-9c7e-7836bf3bef48).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="BuiltInTypeKind">
@@ -28,8 +35,8 @@
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the built-in type kind for this <see cref="T:System.Data.Metadata.Edm.Documentation" />.</summary>
+        <value>A <see cref="T:System.Data.Metadata.Edm.BuiltInTypeKind" /> object that represents the built-in type kind for this <see cref="T:System.Data.Metadata.Edm.Documentation" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +53,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether this <see cref="T:System.Data.Metadata.Edm.Documentation" /> object contains only a null or an empty <see cref="P:System.Data.Metadata.Edm.Documentation.Summary" /> and a <see cref="P:System.Data.Metadata.Edm.Documentation.Longdescription" />.</summary>
+        <value>
+          <see langword="true" /> if this <see cref="T:System.Data.Metadata.Edm.Documentation" /> object contains only a null or an empty <see cref="P:System.Data.Metadata.Edm.Documentation.Summary" /> and a <see cref="P:System.Data.Metadata.Edm.Documentation.LongDescription" />; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +72,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the long description for this <see cref="T:System.Data.Metadata.Edm.Documentation" />.</summary>
+        <value>The long description for this <see cref="T:System.Data.Metadata.Edm.Documentation" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +90,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the summary for this <see cref="T:System.Data.Metadata.Edm.Documentation" />.</summary>
+        <value>The summary for this <see cref="T:System.Data.Metadata.Edm.Documentation" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,8 +109,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the summary for this <see cref="T:System.Data.Metadata.Edm.Documentation" />.</summary>
+        <returns>The summary for this <see cref="T:System.Data.Metadata.Edm.Documentation" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

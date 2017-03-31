@@ -20,8 +20,33 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a type converter to convert 16-bit signed integer objects to and from other representations.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This converter can only convert a 16-bit signed integer object to and from a string. The <xref:System.Int16> value type represents signed integers with values ranging from negative 32768 through positive 32767.  
+  
+ The <xref:System.ComponentModel.TypeConverter.ConvertFrom%2A> method uses the <xref:System.Int16.Parse%2A> method of <xref:System.Int16> with the integer value of <xref:System.Globalization.NumberStyles>.  
+  
+ The <xref:System.ComponentModel.TypeConverter.ConvertTo%2A> method uses the general ("G") format for the string returned.  
+  
+ For more information about type converters, see the <xref:System.ComponentModel.TypeConverter> base class and [How to: Implement a Type Converter](../Topic/How%20to:%20Implement%20a%20Type%20Converter.md).  
+  
+> [!NOTE]
+>  You should never create an instance of an <xref:System.ComponentModel.Int16Converter>. Instead, call the <xref:System.ComponentModel.TypeDescriptor.GetConverter%2A> method of <xref:System.ComponentModel.TypeDescriptor>. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter> base class.  
+  
+   
+  
+## Examples  
+ The following code example converts a variable of type <xref:System.Int16> to a string, and vice versa.  
+  
+ [!code-cpp[Converters#14](~/samples/snippets/cpp/VS_Snippets_Winforms/Converters/CPP/converters.cpp#14)]
+ [!code-csharp[Converters#14](~/samples/snippets/csharp/VS_Snippets_Winforms/Converters/CS/converters.cs#14)]
+ [!code-vb[Converters#14](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Converters/VB/converters.vb#14)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,7 +69,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Int16Converter" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

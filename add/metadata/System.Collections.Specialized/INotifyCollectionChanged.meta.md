@@ -1,9 +1,13 @@
 ---
 uid: System.Collections.Specialized.INotifyCollectionChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

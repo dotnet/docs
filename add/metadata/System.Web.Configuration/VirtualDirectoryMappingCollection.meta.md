@@ -1,64 +1,89 @@
 ---
 uid: System.Web.Configuration.VirtualDirectoryMappingCollection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.VirtualDirectoryMappingCollection.AllKeys
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.VirtualDirectoryMappingCollection.Item(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Configuration.VirtualDirectoryMappingCollection.Item
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.VirtualDirectoryMappingCollection.GetKey(System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.VirtualDirectoryMappingCollection.Get(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.VirtualDirectoryMappingCollection.Item(System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.VirtualDirectoryMappingCollection.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.VirtualDirectoryMappingCollection.Get(System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.VirtualDirectoryMappingCollection.Add(System.String,System.Web.Configuration.VirtualDirectoryMapping)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.VirtualDirectoryMappingCollection.Remove(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Configuration.VirtualDirectoryMappingCollection.Get
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.VirtualDirectoryMappingCollection.CopyTo(System.Web.Configuration.VirtualDirectoryMapping[],System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.VirtualDirectoryMappingCollection.RemoveAt(System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.VirtualDirectoryMappingCollection.Clear
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

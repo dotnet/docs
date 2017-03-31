@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Automation.Peers.AutomationOrientation
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

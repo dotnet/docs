@@ -18,7 +18,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents an object in JScript. This class belongs to the objects and functions category.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.JSObject" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,9 +53,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the field to add.</param>
+        <summary>Adds the specified field to the object.</summary>
+        <returns>The new field, if it is successfully added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,7 +72,7 @@
         <ReturnType>System.Collections.ArrayList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores a list of fields that are dynamically added and removed from the object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,10 +93,10 @@
         <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="bindingAttr">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the member to search for.</param>
+        <param name="bindingAttr">A bitwise combination of the enumeration values that specifies how the search for members is conducted by reflection.</param>
+        <summary>Gets an array of <see cref="T:System.Reflection.MemberInfo" /> objects that correspond to all members that match the specified name.</summary>
+        <returns>An array of members that match the <paramref name="name" /> argument.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,9 +116,9 @@
         <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
       </Parameters>
       <Docs>
-        <param name="bindingAttr">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="bindingAttr">A bitwise combination of the enumeration values that specifies how the search for members is conducted by reflection.</param>
+        <summary>Gets an array of <see cref="T:System.Reflection.MemberInfo" /> objects that correspond to all members of the current script object.</summary>
+        <returns>An array of objects that contains all members of the current object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -139,9 +139,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the field for which to set the value.</param>
+        <param name="value">The new value of the field.</param>
+        <summary>Sets the value of a field that was dynamically added to the object and stored in <see cref="F:Microsoft.JScript.JSObject.field_table" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -159,8 +159,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an enumerator that iterates through the members of the object.</summary>
+        <returns>An enumerator object that is used to iterate through the members of the object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -181,10 +181,10 @@
         <Parameter Name="method" Type="System.Delegate" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="method">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the method to add.</param>
+        <param name="method">The delegate to the method.</param>
+        <summary>Adds the specified method to the object. <see cref="M:Microsoft.JScript.JSObject.System#Runtime#InteropServices#Expando#IExpando#AddMethod(System.String,System.Delegate)" /> is not implemented in JScript.</summary>
+        <returns>null in all cases.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -204,9 +204,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the property to add.</param>
+        <summary>Adds the specified property to the object. This method is not implemented in JScript.</summary>
+        <returns>null in all cases.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -226,8 +226,8 @@
         <Parameter Name="m" Type="System.Reflection.MemberInfo" />
       </Parameters>
       <Docs>
-        <param name="m">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="m">The name of the member to remove.</param>
+        <summary>Removes the specified member from the object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -245,8 +245,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a string that represents the current object.</summary>
+        <returns>A string that represents the current object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

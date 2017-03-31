@@ -1,19 +1,19 @@
 ---
 uid: Microsoft.JScript.ErrorPrototype
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.ErrorPrototype.name
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.ErrorPrototype.constructor
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.ErrorPrototype.toString(System.Object)
-internalonly: False
+ms.author: "mikejo"
 ---

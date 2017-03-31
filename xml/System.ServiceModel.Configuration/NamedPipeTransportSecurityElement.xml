@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the transport security for a named pipe. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.NamedPipeTransportSecurityElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,8 +66,8 @@
         <ReturnType>System.Net.Security.ProtectionLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Specifies the protection for this named pipe.</summary>
+        <value>A <see cref="T:System.Net.Security.ProtectionLevel" />. The default is <see cref="F:System.Net.Security.ProtectionLevel.EncryptAndSign" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

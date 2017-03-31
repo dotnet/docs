@@ -11,8 +11,27 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Passed to the <see cref="M:System.ServiceModel.Description.IOperationContractGenerationExtension.GenerateOperation(System.ServiceModel.Description.OperationContractGenerationContext)" /> method to enable the modification of an operation contract and its context prior to generating code.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.Description.OperationContractGenerationContext> object passed to the <xref:System.ServiceModel.Description.IOperationContractGenerationExtension.GenerateOperation%2A?displayProperty=fullName> method to modify the code document object model prior to the generation of code. Typically, the <xref:System.ServiceModel.Description.IOperationContractGenerationExtension?displayProperty=fullName> interface is implemented on a custom <xref:System.ServiceModel.Description.IWsdlImportExtension?displayProperty=fullName> implementation that is used to import custom WSDL elements or otherwise modify the code at the service or operation level. To modify the code at the service level, see <xref:System.ServiceModel.Description.IServiceContractGenerationExtension?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+ The following example shows the use of the <xref:System.ServiceModel.Description.OperationContractGenerationContext> object passed to the <xref:System.ServiceModel.Description.IOperationContractGenerationExtension.GenerateOperation%2A?displayProperty=fullName> method to add code comments extracted from custom WSDL elements.  
+  
+ [!code-csharp[C_CustomWSDLExtensions#14](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/wsdldocumentationimporter.cs#14)]  
+  
+ The following code example shows the resulting code comments.  
+  
+ [!code-csharp[C_CustomWSDLExtensions#13](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/newgeneratedcontract.cs#13)]
+ [!code-vb[C_CustomWSDLExtensions#13](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/newgeneratedcontract.vb#13)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,12 +51,12 @@
         <Parameter Name="method" Type="System.CodeDom.CodeMemberMethod" />
       </Parameters>
       <Docs>
-        <param name="serviceContractGenerator">To be added.</param>
-        <param name="contract">To be added.</param>
-        <param name="operation">To be added.</param>
-        <param name="declaringType">To be added.</param>
-        <param name="method">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceContractGenerator">The service contract generator that generates the code.</param>
+        <param name="contract">The contract and its generation context.</param>
+        <param name="operation">The operation description for the operation to be generated.</param>
+        <param name="declaringType">The declaring code type.</param>
+        <param name="method">The method to be generated.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.OperationContractGenerationContext" /> class using the specified contract generator, contract context, operation description, code type declaration, synchronization method and task method.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,13 +78,13 @@
         <Parameter Name="taskMethod" Type="System.CodeDom.CodeMemberMethod" />
       </Parameters>
       <Docs>
-        <param name="serviceContractGenerator">To be added.</param>
-        <param name="contract">To be added.</param>
-        <param name="operation">To be added.</param>
-        <param name="declaringType">To be added.</param>
-        <param name="syncMethod">To be added.</param>
-        <param name="taskMethod">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceContractGenerator">The service contract generator that generates the code.</param>
+        <param name="contract">The contract and its generation context.</param>
+        <param name="operation">The operation description for the operation to be generated.</param>
+        <param name="declaringType">The declaring code type.</param>
+        <param name="syncMethod">The synchronization method to be generated.</param>
+        <param name="taskMethod">The task method used.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.OperationContractGenerationContext" /> class using the specified contract generator, contract context, operation description, code type declaration, and method.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,14 +107,14 @@
         <Parameter Name="endMethod" Type="System.CodeDom.CodeMemberMethod" />
       </Parameters>
       <Docs>
-        <param name="serviceContractGenerator">To be added.</param>
-        <param name="contract">To be added.</param>
-        <param name="operation">To be added.</param>
-        <param name="declaringType">To be added.</param>
-        <param name="syncMethod">To be added.</param>
-        <param name="beginMethod">To be added.</param>
-        <param name="endMethod">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceContractGenerator">The service contract generator that generates the code.</param>
+        <param name="contract">The contract and its generation context.</param>
+        <param name="operation">The operation description for the operation to be generated.</param>
+        <param name="declaringType">The declaring code type.</param>
+        <param name="syncMethod">The synchronous method.</param>
+        <param name="beginMethod">The asynchronous begin method.</param>
+        <param name="endMethod">The asynchronous end method.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.OperationContractGenerationContext" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,15 +138,15 @@
         <Parameter Name="taskMethod" Type="System.CodeDom.CodeMemberMethod" />
       </Parameters>
       <Docs>
-        <param name="serviceContractGenerator">To be added.</param>
-        <param name="contract">To be added.</param>
-        <param name="operation">To be added.</param>
-        <param name="declaringType">To be added.</param>
-        <param name="syncMethod">To be added.</param>
-        <param name="beginMethod">To be added.</param>
-        <param name="endMethod">To be added.</param>
-        <param name="taskMethod">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceContractGenerator">The service contract generator that generates the code.</param>
+        <param name="contract">The contract and its generation context.</param>
+        <param name="operation">The operation description for the operation to be generated.</param>
+        <param name="declaringType">The declaring code type.</param>
+        <param name="syncMethod">The synchronization method to be generated.</param>
+        <param name="beginMethod">The asynchronous begin method.</param>
+        <param name="endMethod">The asynchronous end method.</param>
+        <param name="taskMethod">The task method used.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.OperationContractGenerationContext" /> class using the specified contract generator, contract context, operation description, code type declaration, synchronization method, begin method, end method, and task method.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,9 +163,16 @@
         <ReturnType>System.CodeDom.CodeMemberMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.CodeDom.CodeMemberMethod" /> for the asynchronous begin operation.</summary>
+        <value>The <see cref="T:System.CodeDom.CodeMemberMethod" /> for the asynchronous begin operation. Returns null if the operation is a synchronous operation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.Description.OperationContractGenerationContext.BeginMethod%2A> to examine or modify the asynchronous begin method that represents the operation to be generated.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Contract">
@@ -162,9 +188,16 @@
         <ReturnType>System.ServiceModel.Description.ServiceContractGenerationContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the code generation context for the service contract.</summary>
+        <value>The <see cref="T:System.ServiceModel.Description.ServiceContractGenerationContext" /> for the current operation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.Description.OperationContractGenerationContext.Contract%2A> property to obtain the contract generation context for the service contract that contains the operation.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DeclaringType">
@@ -180,9 +213,16 @@
         <ReturnType>System.CodeDom.CodeTypeDeclaration</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the declaring type for the current operation.</summary>
+        <value>The declaring type for the current operation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.Description.OperationContractGenerationContext.DeclaringType%2A> property to examine or modify the code type declaration for the current operation.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EndMethod">
@@ -198,9 +238,16 @@
         <ReturnType>System.CodeDom.CodeMemberMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the asynchronous end operation declaration.</summary>
+        <value>The asynchronous end operation. Returns null if the operation is a synchronous operation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.Description.OperationContractGenerationContext.EndMethod%2A> property to examine or modify the asynchronous end method that models an asynchronous operation.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsAsync">
@@ -216,8 +263,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether asynchronous methods are generated for the current operation.</summary>
+        <value>
+          <see langword="true" /> if the operation is asynchronous; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -234,8 +282,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether a task is generated for the current operation.</summary>
+        <value>
+          <see langword="True" /> if a task is generated for the current operation; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -252,9 +301,16 @@
         <ReturnType>System.ServiceModel.Description.OperationDescription</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.ServiceModel.Description.OperationDescription" /> for the current operation.</summary>
+        <value>The <see cref="T:System.ServiceModel.Description.OperationDescription" /> for the current operation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.Description.OperationContractGenerationContext.Operation%2A> property to examine operation information prior to generating code for that operation.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ServiceContractGenerator">
@@ -270,9 +326,16 @@
         <ReturnType>System.ServiceModel.Description.ServiceContractGenerator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.ServiceModel.Description.ServiceContractGenerator" /> that generates the current operation.</summary>
+        <value>The <see cref="T:System.ServiceModel.Description.ServiceContractGenerator" /> that generates the current operation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.Description.OperationContractGenerationContext.ServiceContractGenerator%2A> property to examine or modify the object that generates code for the current operation.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SyncMethod">
@@ -288,9 +351,28 @@
         <ReturnType>System.CodeDom.CodeMemberMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.CodeDom.CodeMemberMethod" /> for the synchronous operation.</summary>
+        <value>The <see cref="T:System.CodeDom.CodeMemberMethod" /> for the synchronous operation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.Description.OperationContractGenerationContext.SyncMethod%2A> property to examine or modify the synchronous operation before it is generated.  
+  
+   
+  
+## Examples  
+ The following example shows the use of the <xref:System.ServiceModel.Description.OperationContractGenerationContext> object passed to the <xref:System.ServiceModel.Description.IOperationContractGenerationExtension.GenerateOperation%2A?displayProperty=fullName> method to add code comments extracted from custom WSDL elements.  
+  
+ [!code-csharp[C_CustomWSDLExtensions#14](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/wsdldocumentationimporter.cs#14)]  
+  
+ The following code example shows the resulting code comments.  
+  
+ [!code-csharp[C_CustomWSDLExtensions#13](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/newgeneratedcontract.cs#13)]
+ [!code-vb[C_CustomWSDLExtensions#13](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/newgeneratedcontract.vb#13)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TaskMethod">
@@ -306,8 +388,8 @@
         <ReturnType>System.CodeDom.CodeMemberMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.CodeDom.CodeMemberMethod" /> for the task operation.</summary>
+        <value>The <see cref="T:System.CodeDom.CodeMemberMethod" /> for the task operation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

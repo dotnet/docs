@@ -1,9 +1,11 @@
 ---
 uid: Microsoft.Build.Framework.XamlTypes.RuleSchema
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.XamlTypes.RuleSchema.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

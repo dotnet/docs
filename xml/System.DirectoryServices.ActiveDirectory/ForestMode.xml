@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Indicates the mode in which a <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> is operating.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.ForestMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> is operating in an unknown mode.</summary>
       </Docs>
     </Member>
     <Member MemberName="Windows2000Forest">
@@ -43,7 +43,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.ForestMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> is operating in Windows 2000 mode.</summary>
       </Docs>
     </Member>
     <Member MemberName="Windows2003Forest">
@@ -59,7 +59,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.ForestMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> is operating in Windows Server 2003 mode.</summary>
       </Docs>
     </Member>
     <Member MemberName="Windows2003InterimForest">
@@ -75,7 +75,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.ForestMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> is operating in Windows Server 2003 domain-function mode.</summary>
       </Docs>
     </Member>
     <Member MemberName="Windows2008Forest">
@@ -91,7 +91,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.ForestMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> is operating in Windows Server 2008 mode.</summary>
       </Docs>
     </Member>
     <Member MemberName="Windows2008R2Forest">
@@ -107,7 +107,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.ForestMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> is operating in Windows Server 2008 R2 mode.</summary>
       </Docs>
     </Member>
     <Member MemberName="Windows2012R2Forest">
@@ -123,7 +123,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.ForestMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>[Supported in the .NET Framework 4.5.1 and later versions] The <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> is operating in Windows Server 2012 R2 mode.</summary>
       </Docs>
     </Member>
     <Member MemberName="Windows8Forest">
@@ -139,7 +139,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.ForestMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> is operating in Windows 8 mode.</summary>
       </Docs>
     </Member>
   </Members>

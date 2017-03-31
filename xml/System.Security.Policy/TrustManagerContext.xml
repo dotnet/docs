@@ -17,8 +17,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the context for the trust manager to consider when making the decision to run an application, and when setting up the security on a new <see cref="T:System.AppDomain" /> in which to run an application.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For a list of initial property values for an instance of the <xref:System.Security.Policy.TrustManagerContext> class, see the <xref:System.Security.Policy.TrustManagerContext.%23ctor> constructor.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,8 +40,24 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Policy.TrustManagerContext" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows the initial property values for a new instance of the <xref:System.Security.Policy.TrustManagerContext> class.  
+  
+|Property|Initial value|  
+|--------------|-------------------|  
+|<xref:System.Security.Policy.TrustManagerContext.IgnorePersistedDecision%2A>|`false`|  
+|<xref:System.Security.Policy.TrustManagerContext.KeepAlive%2A>|`false`|  
+|<xref:System.Security.Policy.TrustManagerContext.NoPrompt%2A>|`false`|  
+|<xref:System.Security.Policy.TrustManagerContext.Persist%2A>|`true`|  
+|<xref:System.Security.Policy.TrustManagerContext.PreviousApplicationIdentity%2A>|`null`|  
+|<xref:System.Security.Policy.TrustManagerContext.UIContext%2A>|<xref:System.Security.Policy.TrustManagerUIContext>|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -51,9 +74,16 @@
         <Parameter Name="uiContext" Type="System.Security.Policy.TrustManagerUIContext" />
       </Parameters>
       <Docs>
-        <param name="uiContext">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="uiContext">One of the <see cref="T:System.Security.Policy.TrustManagerUIContext" /> values that specifies the type of trust manager user interface to use.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Policy.TrustManagerContext" /> class using the specified <see cref="T:System.Security.Policy.TrustManagerUIContext" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor initializes the properties to the same settings as the default constructor, with the exception of the <xref:System.Security.Policy.TrustManagerContext.UIContext%2A> property, which is set to the value that is passed in.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IgnorePersistedDecision">
@@ -70,9 +100,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether the application security manager should ignore any persisted decisions and call the trust manager.</summary>
+        <value>
+          <see langword="true" /> to call the trust manager; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `true`, the <xref:System.Security.Policy.ApplicationSecurityManager> ignores persisted decisions for the application and calls the trust manager. If `false`, the <xref:System.Security.Policy.ApplicationSecurityManager> uses cached decisions, if available.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="KeepAlive">
@@ -89,9 +127,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether the trust manager should cache state for this application, to facilitate future requests to determine application trust.</summary>
+        <value>
+          <see langword="true" /> to cache state data; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This flag is set to `true` if the host might call the trust manager numerous times for trust decisions for this application. If `true`, the trust manager should cache any state that might improve the speed of future calls to the <xref:System.Security.Policy.IApplicationTrustManager.DetermineApplicationTrust%2A> method. This property is set to `false` if the host does not expect to call the trust manager again for the current <xref:System.AppDomain>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NoPrompt">
@@ -108,9 +154,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether the trust manager should prompt the user for trust decisions.</summary>
+        <value>
+          <see langword="true" /> to not prompt the user; <see langword="false" /> to prompt the user. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `false`, the trust manager determines the appropriate user dialog to obtain a trust decision.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Persist">
@@ -127,9 +181,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether the user's response to the consent dialog should be persisted.</summary>
+        <value>
+          <see langword="true" /> to cache state data; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is `true` if the user’s response to the consent dialog should be persisted to avoid further prompting the user with each new activation request. This property is `false` if the user’s response should not be persisted.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PreviousApplicationIdentity">
@@ -146,8 +208,8 @@
         <ReturnType>System.ApplicationIdentity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the identity of the previous application identity.</summary>
+        <value>An <see cref="T:System.ApplicationIdentity" /> object representing the previous <see cref="T:System.ApplicationIdentity" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -165,9 +227,16 @@
         <ReturnType>System.Security.Policy.TrustManagerUIContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the type of user interface the trust manager should display.</summary>
+        <value>One of the <see cref="T:System.Security.Policy.TrustManagerUIContext" /> values. The default is <see cref="F:System.Security.Policy.TrustManagerUIContext.Run" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Policy.TrustManagerContext.UIContext%2A> property is intended to recommend the user interface the trust manager should provide for the trust decision. A trust manager can decide to use a different interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

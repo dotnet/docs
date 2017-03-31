@@ -21,8 +21,32 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides data for the <see cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentRename" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.ComponentModel.Design.ComponentRenameEventArgs> provides data about a <xref:System.ComponentModel.Design.IComponentChangeService.ComponentRename> event.  
+  
+ A <xref:System.ComponentModel.Design.ComponentRenameEventArgs> object provides the following information:  
+  
+-   A <xref:System.ComponentModel.Design.ComponentRenameEventArgs.Component%2A> property that references the component being renamed.  
+  
+-   An <xref:System.ComponentModel.Design.ComponentRenameEventArgs.OldName%2A> property that indicates the old name of the component.  
+  
+-   A <xref:System.ComponentModel.Design.ComponentRenameEventArgs.NewName%2A> property that indicates the new name of the component.  
+  
+   
+  
+## Examples  
+ The following example demonstrates creating a <xref:System.ComponentModel.Design.ComponentRenameEventArgs>.  
+  
+ [!code-cpp[ComponentRenameEventArgsExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ComponentRenameEventArgsExample/CPP/componentrenameeventargsexample.cpp#1)]
+ [!code-csharp[ComponentRenameEventArgsExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ComponentRenameEventArgsExample/CS/componentrenameeventargsexample.cs#1)]
+ [!code-vb[ComponentRenameEventArgsExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ComponentRenameEventArgsExample/VB/componentrenameeventargsexample.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,10 +69,10 @@
         <Parameter Name="newName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="component">To be added.</param>
-        <param name="oldName">To be added.</param>
-        <param name="newName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="component">The component to be renamed.</param>
+        <param name="oldName">The old name of the component.</param>
+        <param name="newName">The new name of the component.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.ComponentRenameEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,8 +94,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the component that is being renamed.</summary>
+        <value>The component that is being renamed.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,8 +117,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the component after the rename event.</summary>
+        <value>The name of the component after the rename event.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,8 +140,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the component before the rename event.</summary>
+        <value>The previous name of the component.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

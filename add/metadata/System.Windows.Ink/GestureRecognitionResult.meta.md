@@ -1,14 +1,20 @@
 ---
 uid: System.Windows.Ink.GestureRecognitionResult
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.GestureRecognitionResult.RecognitionConfidence
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.GestureRecognitionResult.ApplicationGesture
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

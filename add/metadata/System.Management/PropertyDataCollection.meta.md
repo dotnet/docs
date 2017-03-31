@@ -1,64 +1,74 @@
 ---
 uid: System.Management.PropertyDataCollection
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.PropertyDataCollection.Count
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.PropertyDataCollection.Add(System.String,System.Management.CimType,System.Boolean)
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.PropertyDataCollection.Add(System.String,System.Object)
-internalonly: False
+manager: "jillfra"
+---
+
+---
+uid: System.Management.PropertyDataCollection.CopyTo
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.PropertyDataCollection.System#Collections#IEnumerable#GetEnumerator
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.PropertyDataCollection.Add(System.String,System.Object,System.Management.CimType)
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.PropertyDataCollection.SyncRoot
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.PropertyDataCollection.CopyTo(System.Array,System.Int32)
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.PropertyDataCollection.Remove(System.String)
-internalonly: False
+manager: "jillfra"
+---
+
+---
+uid: System.Management.PropertyDataCollection.Add
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.PropertyDataCollection.GetEnumerator
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.PropertyDataCollection.Item(System.String)
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.PropertyDataCollection.CopyTo(System.Management.PropertyData[],System.Int32)
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.PropertyDataCollection.IsSynchronized
-internalonly: False
+manager: "jillfra"
 ---

@@ -8,8 +8,18 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a means for creating a software component that can serialize any part of a [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] application's content to a manufacturer's proprietary format.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Xps.Serialization.XpsSerializerFactory> in the <xref:System.Windows.Xps.Serialization> namespace is Microsoft's implementation of this interface for serialized [!INCLUDE[TLA#tla_metro](~/includes/tlasharptla-metro-md.md)] content.  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="usage">
+      <para>We recommend that you implement this interface only with a document format serializer that you wish to register using the <see cref="M:System.Windows.Documents.Serialization.SerializerProvider.RegisterSerializer(System.Windows.Documents.Serialization.SerializerDescriptor,System.Boolean)" /> method. Accordingly, we recommend that you not call your implementations of <see cref="T:System.Windows.Documents.Serialization.ISerializerFactory" /> methods directly.</para>
+    </block>
   </Docs>
   <Members>
     <Member MemberName="CreateSerializerWriter">
@@ -28,10 +38,13 @@
         <Parameter Name="stream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="stream">The <see cref="T:System.IO.Stream" /> to which the returned object writes.</param>
+        <summary>Initializes an object derived from the abstract <see cref="T:System.Windows.Documents.Serialization.SerializerWriter" /> class for the specified <see cref="T:System.IO.Stream" />.</summary>
+        <returns>An object of a class derived from <see cref="T:System.Windows.Documents.Serialization.SerializerWriter" />.</returns>
         <remarks>To be added.</remarks>
+        <block subset="none" type="usage">
+          <para>We recommend that you not call your implementation of this method directly. Instead, use the <see cref="M:System.Windows.Documents.Serialization.SerializerProvider.CreateSerializerWriter(System.Windows.Documents.Serialization.SerializerDescriptor,System.IO.Stream)" /> method of the <see cref="T:System.Windows.Documents.Serialization.SerializerProvider" /> class.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="DefaultFileExtension">
@@ -47,9 +60,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the default extension for files of the manufacturer's proprietary format.</summary>
+        <value>A <see cref="T:System.String" /> representing the proprietary format's default file extension.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is most useful if the leading period is included, for example, ".zzz"  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayName">
@@ -65,8 +85,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the public name of the manufacturer's serializing component.</summary>
+        <value>A <see cref="T:System.String" /> representing the public name of the serializing component.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,8 +103,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the serializing component's manufacturer.</summary>
+        <value>A <see cref="T:System.String" /> representing the manufacturer's name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,8 +121,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the web address of the serializing component's manufacturer.</summary>
+        <value>A <see cref="T:System.Uri" /> representing the manufacturer's website.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

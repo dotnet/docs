@@ -1,9 +1,13 @@
 ---
 uid: System.Windows.Controls.Primitives.IRecyclingItemContainerGenerator
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Primitives.IRecyclingItemContainerGenerator.Recycle(System.Windows.Controls.Primitives.GeneratorPosition,System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

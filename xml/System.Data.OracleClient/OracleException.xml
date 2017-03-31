@@ -11,8 +11,25 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The exception that is generated when a warning or error is returned by an Oracle database or the .NET Framework Data Provider for Oracle. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is created whenever the <xref:System.Data.OracleClient.OracleDataAdapter> encounters a situation that it cannot handle.  
+  
+ If the severity of the error is too great, the server may close the <xref:System.Data.OracleClient.OracleConnection>. However, the user can reopen the connection and continue.  
+  
+   
+  
+## Examples  
+ The following example generates an <xref:System.Data.OracleClient.OracleException> due to a missing database, and then displays the exception.  
+  
+ [!code-csharp[Classic WebData OracleException#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OracleException/CS/source.cs#1)]
+ [!code-vb[Classic WebData OracleException#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OracleException/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Code">
@@ -28,8 +45,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the code portion of the error as an integer.</summary>
+        <value>The code portion of the error as an integer.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,9 +67,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="si">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="si">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+        <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+        <summary>Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

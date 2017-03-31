@@ -1,1 +1,0 @@
-            itcc.IssuedTokenRenewalThresholdPercentage = 80;

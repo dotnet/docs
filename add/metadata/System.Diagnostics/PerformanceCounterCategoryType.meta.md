@@ -1,4 +1,6 @@
 ---
 uid: System.Diagnostics.PerformanceCounterCategoryType
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

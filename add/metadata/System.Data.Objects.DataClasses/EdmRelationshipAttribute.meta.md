@@ -1,59 +1,90 @@
 ---
 uid: System.Data.Objects.DataClasses.EdmRelationshipAttribute
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Objects.DataClasses.EdmRelationshipAttribute.Role2Type
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Objects.DataClasses.EdmRelationshipAttribute.IsForeignKey
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Objects.DataClasses.EdmRelationshipAttribute.Role1Name
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Objects.DataClasses.EdmRelationshipAttribute.Role1Multiplicity
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Objects.DataClasses.EdmRelationshipAttribute.Role1Type
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Objects.DataClasses.EdmRelationshipAttribute.RelationshipNamespaceName
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Objects.DataClasses.EdmRelationshipAttribute.Role2Name
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Objects.DataClasses.EdmRelationshipAttribute.RelationshipName
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Objects.DataClasses.EdmRelationshipAttribute.#ctor(System.String,System.String,System.String,System.Data.Metadata.Edm.RelationshipMultiplicity,System.Type,System.String,System.Data.Metadata.Edm.RelationshipMultiplicity,System.Type)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Objects.DataClasses.EdmRelationshipAttribute.#ctor(System.String,System.String,System.String,System.Data.Metadata.Edm.RelationshipMultiplicity,System.Type,System.String,System.Data.Metadata.Edm.RelationshipMultiplicity,System.Type,System.Boolean)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Objects.DataClasses.EdmRelationshipAttribute.Role2Multiplicity
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Objects.DataClasses.EdmRelationshipAttribute.#ctor
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

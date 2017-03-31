@@ -1,114 +1,188 @@
 ---
 uid: Microsoft.VisualBasic.MyServices.ClipboardProxy
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsData(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsAudio
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.MyServices.ClipboardProxy.Clear
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsImage
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.MyServices.ClipboardProxy.SetFileDropList(System.Collections.Specialized.StringCollection)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.MyServices.ClipboardProxy.GetText
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.MyServices.ClipboardProxy.SetAudio
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.MyServices.ClipboardProxy.GetData(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.MyServices.ClipboardProxy.SetAudio(System.IO.Stream)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.MyServices.ClipboardProxy.GetText(System.Windows.Forms.TextDataFormat)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.MyServices.ClipboardProxy.GetText
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.MyServices.ClipboardProxy.SetImage(System.Drawing.Image)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsFileDropList
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.MyServices.ClipboardProxy.SetText(System.String,System.Windows.Forms.TextDataFormat)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.MyServices.ClipboardProxy.GetImage
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.MyServices.ClipboardProxy.SetAudio(System.Byte[])
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.MyServices.ClipboardProxy.GetFileDropList
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.MyServices.ClipboardProxy.SetData(System.String,System.Object)
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.MyServices.ClipboardProxy.SetDataObject(System.Windows.Forms.DataObject)
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.MyServices.ClipboardProxy.SetText(System.String)
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.MyServices.ClipboardProxy.GetDataObject
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.MyServices.ClipboardProxy.GetAudioStream
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsText(System.Windows.Forms.TextDataFormat)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsText
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.MyServices.ClipboardProxy.SetText
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.MyServices.ClipboardProxy.SetAudio(System.Byte[])
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.MyServices.ClipboardProxy.GetFileDropList
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.MyServices.ClipboardProxy.SetData(System.String,System.Object)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.MyServices.ClipboardProxy.SetDataObject(System.Windows.Forms.DataObject)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.MyServices.ClipboardProxy.SetText(System.String)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.MyServices.ClipboardProxy.GetDataObject
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.MyServices.ClipboardProxy.GetAudioStream
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsText(System.Windows.Forms.TextDataFormat)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsText
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

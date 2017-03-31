@@ -1,14 +1,20 @@
 ---
 uid: System.Workflow.Runtime.CorrelationTokenEventArgs
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.CorrelationTokenEventArgs.CorrelationToken
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.CorrelationTokenEventArgs.IsInitializing
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

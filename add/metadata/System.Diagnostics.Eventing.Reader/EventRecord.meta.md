@@ -1,154 +1,197 @@
 ---
 uid: System.Diagnostics.Eventing.Reader.EventRecord
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventRecord.Keywords
-internalonly: False
----
-
----
-uid: System.Diagnostics.Eventing.Reader.EventRecord.Level
-internalonly: False
----
-
----
-uid: System.Diagnostics.Eventing.Reader.EventRecord.ToXml
-internalonly: False
----
-
----
-uid: System.Diagnostics.Eventing.Reader.EventRecord.ProviderId
-internalonly: False
----
-
----
-uid: System.Diagnostics.Eventing.Reader.EventRecord.ProcessId
-internalonly: False
----
-
----
-uid: System.Diagnostics.Eventing.Reader.EventRecord.LogName
-internalonly: False
----
-
----
-uid: System.Diagnostics.Eventing.Reader.EventRecord.Opcode
-internalonly: False
----
-
----
-uid: System.Diagnostics.Eventing.Reader.EventRecord.Bookmark
-internalonly: False
----
-
----
-uid: System.Diagnostics.Eventing.Reader.EventRecord.FormatDescription
-internalonly: False
----
-
----
-uid: System.Diagnostics.Eventing.Reader.EventRecord.FormatDescription(System.Collections.Generic.IEnumerable{System.Object})
-internalonly: False
----
-
----
-uid: System.Diagnostics.Eventing.Reader.EventRecord.Properties
-internalonly: False
----
-
----
-uid: System.Diagnostics.Eventing.Reader.EventRecord.ProviderName
-internalonly: False
----
-
----
-uid: System.Diagnostics.Eventing.Reader.EventRecord.RelatedActivityId
-internalonly: False
----
-
----
-uid: System.Diagnostics.Eventing.Reader.EventRecord.LevelDisplayName
-internalonly: False
----
-
----
-uid: System.Diagnostics.Eventing.Reader.EventRecord.Qualifiers
-internalonly: False
----
-
----
-uid: System.Diagnostics.Eventing.Reader.EventRecord.#ctor
-internalonly: False
----
-
----
-uid: System.Diagnostics.Eventing.Reader.EventRecord.OpcodeDisplayName
-internalonly: False
----
-
----
-uid: System.Diagnostics.Eventing.Reader.EventRecord.Task
-internalonly: False
----
-
----
-uid: System.Diagnostics.Eventing.Reader.EventRecord.ThreadId
-internalonly: False
----
-
----
-uid: System.Diagnostics.Eventing.Reader.EventRecord.TaskDisplayName
-internalonly: False
----
-
----
-uid: System.Diagnostics.Eventing.Reader.EventRecord.UserId
-internalonly: False
----
-
----
-uid: System.Diagnostics.Eventing.Reader.EventRecord.Version
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventRecord.Dispose
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.EventRecord.FormatDescription
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.EventRecord.Level
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.EventRecord.ToXml
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.EventRecord.ProviderId
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.EventRecord.ProcessId
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.EventRecord.LogName
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.EventRecord.Opcode
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.EventRecord.Bookmark
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.EventRecord.FormatDescription
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.EventRecord.FormatDescription(System.Collections.Generic.IEnumerable{System.Object})
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.EventRecord.Properties
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.EventRecord.ProviderName
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.EventRecord.RelatedActivityId
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.EventRecord.LevelDisplayName
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.EventRecord.Qualifiers
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.EventRecord.#ctor
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.EventRecord.OpcodeDisplayName
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.EventRecord.Task
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.EventRecord.ThreadId
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.EventRecord.TaskDisplayName
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.EventRecord.UserId
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.EventRecord.Version
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.EventRecord.Dispose
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventRecord.ActivityId
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventRecord.MachineName
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventRecord.KeywordsDisplayNames
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventRecord.RecordId
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventRecord.TimeCreated
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventRecord.Dispose(System.Boolean)
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventRecord.Id
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---

@@ -1,4 +1,6 @@
 ---
 uid: System.Runtime.InteropServices.RegistrationConnectionType
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

@@ -1,9 +1,13 @@
 ---
 uid: System.Windows.Forms.ComponentModel.Com2Interop.Com2Variant
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ComponentModel.Com2Interop.Com2Variant.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -19,7 +19,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies access capabilities and restrictions for a memory-mapped file or view.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,7 +45,7 @@
         <ReturnType>System.IO.MemoryMappedFiles.MemoryMappedFileAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Read and write access to the file, with the restriction that any write operations will not be seen by other processes.</summary>
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -70,7 +70,7 @@
         <ReturnType>System.IO.MemoryMappedFiles.MemoryMappedFileAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Read-only access to the file.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReadExecute">
@@ -95,7 +95,7 @@
         <ReturnType>System.IO.MemoryMappedFiles.MemoryMappedFileAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Read access to the file that can store and run executable code.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReadWrite">
@@ -120,7 +120,7 @@
         <ReturnType>System.IO.MemoryMappedFiles.MemoryMappedFileAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Read and write access to the file.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReadWriteExecute">
@@ -145,7 +145,7 @@
         <ReturnType>System.IO.MemoryMappedFiles.MemoryMappedFileAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Read and write access to the file that can can store and run executable code.</summary>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -170,7 +170,7 @@
         <ReturnType>System.IO.MemoryMappedFiles.MemoryMappedFileAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Write-only access to file.</summary>
       </Docs>
     </Member>
   </Members>

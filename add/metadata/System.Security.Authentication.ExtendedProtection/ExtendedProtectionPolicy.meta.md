@@ -1,64 +1,83 @@
 ---
 uid: System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.CustomChannelBinding
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.#ctor(System.Security.Authentication.ExtendedProtection.PolicyEnforcement,System.Security.Authentication.ExtendedProtection.ProtectionScenario,System.Collections.ICollection)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.PolicyEnforcement
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.CustomServiceNames
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.ProtectionScenario
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.OSSupportsExtendedProtection
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.ToString
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.#ctor(System.Security.Authentication.ExtendedProtection.PolicyEnforcement,System.Security.Authentication.ExtendedProtection.ChannelBinding)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.#ctor(System.Security.Authentication.ExtendedProtection.PolicyEnforcement)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.#ctor(System.Security.Authentication.ExtendedProtection.PolicyEnforcement,System.Security.Authentication.ExtendedProtection.ProtectionScenario,System.Security.Authentication.ExtendedProtection.ServiceNameCollection)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.#ctor
+ms.author: "bobdel"
+manager: "markl"
 ---

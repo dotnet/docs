@@ -1,1 +1,0 @@
-    myParserError.VirtualPath = "MyPath"

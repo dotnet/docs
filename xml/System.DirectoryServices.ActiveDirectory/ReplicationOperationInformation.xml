@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationOperationInformation" /> class contains information about an Active Directory Domain Services replication operation.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationOperationInformation" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.ReplicationOperation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the current replication operation.</summary>
+        <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationOperation" /> object that represents the current replication operation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +61,8 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the time that this replication operation started.</summary>
+        <value>A <see cref="T:System.DateTime" /> object that contains the date and time that this replication operation started.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,8 +79,8 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.ReplicationOperationCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the replication operations that have not been run.</summary>
+        <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationOperationCollection" /> object that contains the pending replication operations.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

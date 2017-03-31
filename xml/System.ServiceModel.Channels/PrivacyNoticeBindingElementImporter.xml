@@ -13,7 +13,7 @@
   <Interfaces>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Imports WSDL-based policies and contracts about privacy notices into descriptions of the binding elements that can implement these policies for the service.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,7 +29,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.PrivacyNoticeBindingElementImporter" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,9 +50,9 @@
         <Parameter Name="policyContext" Type="System.ServiceModel.Description.PolicyConversionContext" />
       </Parameters>
       <Docs>
-        <param name="importer">To be added.</param>
-        <param name="policyContext">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="importer">The <see cref="T:System.ServiceModel.Description.MetadataImporter" /> that imports the metadata information.</param>
+        <param name="policyContext">The <see cref="T:System.ServiceModel.Description.PolicyConversionContext" /> object that contains the policy assertions that can be imported and the collections of binding elements to which custom binding elements that implement the encoding policy can be added.</param>
+        <summary>Imports custom policy assertions for privacy notices and adds the binding elements that implement the policy.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -12,8 +12,15 @@
   <Interfaces>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a security token that is based on the identity of a Windows domain or user account.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, application developers do not need to use the <xref:System.IdentityModel.Tokens.WindowsSecurityToken> class, unless a Web service must gain access to details about the Windows domain or user account associated with the <xref:System.IdentityModel.Tokens.WindowsSecurityToken> security token. To get the details of the Windows domain or user account, access the <xref:System.IdentityModel.Tokens.WindowsSecurityToken.WindowsIdentity%2A> property.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -27,8 +34,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.WindowsSecurityToken" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor does nothing, by default.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -45,8 +59,17 @@
       </Parameters>
       <Docs>
         <param name="identity">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.WindowsSecurityToken" /> class using the Windows user.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor creates a unique identifier for the <xref:System.IdentityModel.Tokens.WindowsSecurityToken> security token and assigns that value to the <xref:System.IdentityModel.Tokens.WindowsSecurityToken.Id%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="windowsIdentity" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -64,9 +87,22 @@
       </Parameters>
       <Docs>
         <param name="identity">To be added.</param>
-        <param name="id">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="id">A unique identifier for the security token.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.WindowsSecurityToken" /> class using the Windows user.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor calls the <xref:System.IdentityModel.Tokens.WindowsSecurityToken.Initialize%2A> method to initialize the properties of this class.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="windowsIdentity" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="id" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -84,10 +120,10 @@
         <Parameter Name="authenticationType" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="windowsIdentity">To be added.</param>
-        <param name="id">To be added.</param>
-        <param name="authenticationType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="windowsIdentity">A <see cref="T:System.Security.Principal.WindowsIdentity" /> that represents a Windows user.</param>
+        <param name="id">A unique identifier for the security token.</param>
+        <param name="authenticationType">The authentication type for the security token.</param>
+        <summary>Creates a new instance of <see cref="T:System.IdentityModel.Tokens.WindowsSecurityToken" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,8 +140,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the authentication type for the token.</summary>
+        <value>Returns <see cref="T:System.String" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,8 +159,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Releases all resources used by the <see cref="T:System.IdentityModel.Tokens.WindowsSecurityToken" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call the <xref:System.IdentityModel.Tokens.WindowsSecurityToken.Dispose%2A> method when you are finished using the <xref:System.IdentityModel.Tokens.WindowsSecurityToken>. The <xref:System.IdentityModel.Tokens.WindowsSecurityToken.Dispose%2A> method leaves the <xref:System.IdentityModel.Tokens.WindowsSecurityToken> in an unusable state. After calling the <xref:System.IdentityModel.Tokens.WindowsSecurityToken.Dispose%2A> method, you must release all references to the <xref:System.IdentityModel.Tokens.WindowsSecurityToken> so the garbage collector can reclaim the memory that the <xref:System.IdentityModel.Tokens.WindowsSecurityToken> was occupying.  
+  
+> [!NOTE]
+>  Always call the <xref:System.IdentityModel.Tokens.WindowsSecurityToken.Dispose%2A> method before you release your last reference to the <xref:System.IdentityModel.Tokens.WindowsSecurityToken>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.IdentityModel.Tokens.WindowsSecurityToken> object's `Finalize` method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Id">
@@ -140,8 +186,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the unique identifier for the security token.</summary>
+        <value>A unique identifier for the security token.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -165,13 +211,27 @@
         <Parameter Name="clone" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="id">To be added.</param>
-        <param name="effectiveTime">To be added.</param>
-        <param name="expirationTime">To be added.</param>
-        <param name="windowsIdentity">To be added.</param>
-        <param name="clone">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="id">A unique identifier for the security token. Sets the value of the <see cref="P:System.IdentityModel.Tokens.WindowsSecurityToken.Id" /> property.</param>
+        <param name="effectiveTime">A <see cref="T:System.DateTime" /> that represents the instant in time at which this security token is first valid. Set the value of the <see cref="P:System.IdentityModel.Tokens.WindowsSecurityToken.ValidFrom" /> property.</param>
+        <param name="expirationTime">A <see cref="T:System.DateTime" /> that represents the last instant in time at which this security token is valid. Sets the value of the <see cref="P:System.IdentityModel.Tokens.WindowsSecurityToken.ValidTo" /> property.</param>
+        <param name="windowsIdentity">A <see cref="T:System.Security.Principal.WindowsIdentity" /> that represents a Windows user. Sets the value of the <see cref="P:System.IdentityModel.Tokens.WindowsSecurityToken.WindowsIdentity" /> property.</param>
+        <param name="clone">
+          <see langword="true" /> to create a <see cref="T:System.Security.Principal.WindowsIdentity" /> object that is identical to the <c>windowsIdentity</c> parameter and assign that to the <see cref="P:System.IdentityModel.Tokens.WindowsSecurityToken.WindowsIdentity" /> property; otherwise, assign the value of the <c>windowsIdentity</c> parameter to the <see cref="P:System.IdentityModel.Tokens.WindowsSecurityToken.WindowsIdentity" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.WindowsSecurityToken" /> class using the specified unique identifier, Windows user, and the first and last instants in time when the security token is valid.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.WindowsSecurityToken.Initialize%2A> method is called by the constructors for the <xref:System.IdentityModel.Tokens.WindowsSecurityToken> class.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="windowsIdentity" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="id" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -195,13 +255,14 @@
         <Parameter Name="clone" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="id">To be added.</param>
-        <param name="authenticationType">To be added.</param>
-        <param name="effectiveTime">To be added.</param>
-        <param name="expirationTime">To be added.</param>
-        <param name="windowsIdentity">To be added.</param>
-        <param name="clone">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="id">A unique identifier for the security token.</param>
+        <param name="authenticationType">The authentication type for the security token.</param>
+        <param name="effectiveTime">A <see cref="T:System.DateTime" /> that represents the instant in time at which this security token is first valid.</param>
+        <param name="expirationTime">A <see cref="T:System.DateTime" /> that represents the last instant in time at which this security token is valid.</param>
+        <param name="windowsIdentity">Represents a Windows user.</param>
+        <param name="clone">
+          <see langword="true" /> to create a <see cref="T:System.Security.Principal.WindowsIdentity" /> object that is identical to the <c>windowsIdentity</c> parameter and assign that to the <c>WindowsIdentity</c> property; otherwise, assign the value of the <c>windowsIdentity</c> parameter to the <c>WindowsIdentity</c> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.WindowsSecurityToken" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -218,9 +279,16 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Tokens.SecurityKey&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the cryptographic keys associated with the security token.</summary>
+        <value>A <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> of type <see cref="T:System.IdentityModel.Tokens.SecurityKey" /> that contains the set of keys associated with the security token.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.WindowsSecurityToken.SecurityKeys%2A> method returns an empty collection, by default.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ThrowIfDisposed">
@@ -237,8 +305,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Throws an exception if the <see cref="M:System.IdentityModel.Tokens.WindowsSecurityToken.Dispose" /> method has been called for this instance.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">the <see cref="M:System.IdentityModel.Tokens.WindowsSecurityToken.Dispose" /> method has been called for this instance.</exception>
       </Docs>
     </Member>
     <Member MemberName="ValidFrom">
@@ -254,9 +323,16 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the first instant in time at which this security token is valid.</summary>
+        <value>A <see cref="T:System.DateTime" /> that represents the instant in time at which this security token is first valid.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.WindowsSecurityToken.ValidFrom%2A> property is set to the instant in time when the <xref:System.IdentityModel.Tokens.WindowsSecurityToken> class is created.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidTo">
@@ -272,9 +348,16 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the last instant in time at which this security token is valid.</summary>
+        <value>A <see cref="T:System.DateTime" /> that represents the last instant in time at which this security token is valid.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.IdentityModel.Tokens.WindowsSecurityToken> security token is valid for 10 hours, by default. The <xref:System.IdentityModel.Tokens.WindowsSecurityToken.ValidTo%2A> property is set to the instant in time when the <xref:System.IdentityModel.Tokens.WindowsSecurityToken> class is created plus 10 hours.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WindowsIdentity">
@@ -290,8 +373,8 @@
         <ReturnType>System.Security.Principal.WindowsIdentity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Windows user associated with this security token.</summary>
+        <value>A <see cref="T:System.Security.Principal.WindowsIdentity" /> that represents a Windows user.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

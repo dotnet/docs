@@ -1,19 +1,29 @@
 ---
 uid: System.Net.Configuration.AuthenticationModuleElement
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.AuthenticationModuleElement.Type
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.AuthenticationModuleElement.#ctor(System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.AuthenticationModuleElement.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Configuration.AuthenticationModuleElement.#ctor
+ms.author: "bobdel"
+manager: "markl"
 ---

@@ -1,19 +1,27 @@
 ---
 uid: System.Windows.Navigation.CustomContentState
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Navigation.CustomContentState.JournalEntryName
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Navigation.CustomContentState.Replay(System.Windows.Navigation.NavigationService,System.Windows.Navigation.NavigationMode)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Navigation.CustomContentState.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

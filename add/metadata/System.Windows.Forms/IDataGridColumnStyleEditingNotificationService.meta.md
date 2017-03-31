@@ -1,9 +1,12 @@
 ---
 uid: System.Windows.Forms.IDataGridColumnStyleEditingNotificationService
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.IDataGridColumnStyleEditingNotificationService.ColumnStartedEditing(System.Windows.Forms.Control)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

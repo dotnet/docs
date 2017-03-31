@@ -1,39 +1,53 @@
 ---
 uid: System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext.#ctor(System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager,System.IdentityModel.Selectors.SecurityTokenResolver,System.IdentityModel.Selectors.SecurityTokenResolver)
-internalonly: False
----
-
----
-uid: System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext.SecurityTokenHandlers
-internalonly: False
----
-
----
-uid: System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext.TokenResolver
-internalonly: False
----
-
----
-uid: System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext.SecurityTokenHandlerCollectionManager
-internalonly: False
----
-
----
-uid: System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext.UseKeyTokenResolver
-internalonly: False
----
-
----
-uid: System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext.#ctor(System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext.SecurityTokenHandlers
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext.TokenResolver
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext.SecurityTokenHandlerCollectionManager
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext.UseKeyTokenResolver
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext.#ctor(System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager)
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext.#ctor
+ms.author: "v-jibran"
+manager: "markgal"
 ---

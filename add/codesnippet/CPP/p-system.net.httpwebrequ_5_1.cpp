@@ -1,1 +1,0 @@
-      bool hasChanged = req->RequestUri->Equals( req->Address );

@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents an instance key and contains an identifier and metadata associated with the instance key. An instance key acts as a non-unique alias for an instance.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,8 +33,8 @@
         <Parameter Name="value" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The GUID associated with the instance key. Must not be Guid.Empty.</param>
+        <summary>Initializes an instance of the <see cref="T:System.Runtime.DurableInstancing.InstanceKey" /> class using the GUID associated with the instance key passed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,9 +52,9 @@
         <Parameter Name="metadata" Type="System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="metadata">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The GUID associated with the instance key. Must not be Guid.Empty.</param>
+        <param name="metadata">The dictionary that contains metadata associated with the instance key or null.</param>
+        <summary>Initializes an instance of the <see cref="T:System.Runtime.DurableInstancing.InstanceKey" /> class using the GUID and metadata associated with the instance key.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,9 +74,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">An <see cref="T:System.Runtime.DurableInstancing.InstanceKey" /> object that needs to be compared with the current object.  Must not be null.</param>
+        <summary>Compares the GUID associated with the current object (stored in the <see cref="P:System.Runtime.DurableInstancing.InstanceKey.Value" /> property) with the GUID associated with the <see cref="T:System.Runtime.DurableInstancing.InstanceKey" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the objects are same; otherwise returns <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,8 +95,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a unique hash code for the current <see cref="T:System.Runtime.DurableInstancing.InstanceKey" /> object’s GUID (stored in the Value property).</summary>
+        <returns>The unique hash code.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,8 +113,8 @@
         <ReturnType>System.Runtime.DurableInstancing.InstanceKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns an invalid <see cref="T:System.Runtime.DurableInstancing.InstanceKey" /> object. An invalid <see cref="T:System.Runtime.DurableInstancing.InstanceKey" /> object has Guid.Empty value for the <see cref="P:System.Runtime.DurableInstancing.InstanceKey.Value" /> property and a <see langword="false" /> value for the <see cref="P:System.Runtime.DurableInstancing.InstanceKey.IsValid" /> property.</summary>
+        <value>An invalid instance key.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -130,8 +131,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the instance key is valid.</summary>
+        <value>
+          <see langword="true" /> if the instance key is valid; otherwise <see langword="false" />.  An instance key is valid if and only if its GUID (stored in the Value property) is not Guid.Empty.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -148,8 +150,8 @@
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceValue&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the dictionary that contains metadata associated with the instance key.</summary>
+        <value>The dictionary that contains metadata associated with the instance key. This dictionary is a read-only dictionary.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -166,9 +168,16 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the GUID value associated with the current instance key.</summary>
+        <value>The GUID value associated with the current instance key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An instance key is valid if and only if its GUID (stored in the Value property) is not Guid.Empty.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,34 +1,55 @@
 ---
 uid: System.ServiceModel.Discovery.AnnouncementEndpoint
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.AnnouncementEndpoint.#ctor(System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)
-internalonly: False
----
-
----
-uid: System.ServiceModel.Discovery.AnnouncementEndpoint.#ctor(System.ServiceModel.Discovery.DiscoveryVersion)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.AnnouncementEndpoint.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Discovery.AnnouncementEndpoint.#ctor(System.ServiceModel.Discovery.DiscoveryVersion)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Discovery.AnnouncementEndpoint.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.AnnouncementEndpoint.#ctor(System.ServiceModel.Discovery.DiscoveryVersion,System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.AnnouncementEndpoint.DiscoveryVersion
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.AnnouncementEndpoint.MaxAnnouncementDelay
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

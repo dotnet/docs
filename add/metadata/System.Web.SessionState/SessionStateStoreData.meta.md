@@ -1,24 +1,29 @@
 ---
 uid: System.Web.SessionState.SessionStateStoreData
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.SessionState.SessionStateStoreData.#ctor(System.Web.SessionState.ISessionStateItemCollection,System.Web.HttpStaticObjectsCollection,System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.SessionState.SessionStateStoreData.Timeout
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.SessionState.SessionStateStoreData.StaticObjects
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.SessionState.SessionStateStoreData.Items
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

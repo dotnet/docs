@@ -15,8 +15,25 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the structure, or schema, of a data field.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.Design.DataSetFieldSchema> class to get the properties of a data field using a <xref:System.Data.DataColumn>. You can discover the structure of a data field by using the following properties in this class: <xref:System.Web.UI.Design.DataSetFieldSchema.DataType%2A>, <xref:System.Web.UI.Design.DataSetFieldSchema.IsReadOnly%2A>, <xref:System.Web.UI.Design.DataSetFieldSchema.Length%2A>, <xref:System.Web.UI.Design.DataSetFieldSchema.Name%2A>, and <xref:System.Web.UI.Design.DataSetFieldSchema.IsUnique%2A>. In addition, you can use the <xref:System.Web.UI.Design.DataSetFieldSchema.Identity%2A> property to determine if a data column is set for <xref:System.Data.DataColumn.AutoIncrement%2A>, or the <xref:System.Web.UI.Design.DataSetFieldSchema.PrimaryKey%2A> property to determine if a data column is in the primary key.  
+  
+ The <xref:System.Web.UI.Design.DataSetFieldSchema> class is used by custom control designer components to provide information about a data field at design time.  
+  
+ To examine the components of data using a <xref:System.Data.DataSet>, use the following classes.  
+  
+-   <xref:System.Web.UI.Design.DataSetSchema>  
+  
+-   <xref:System.Web.UI.Design.DataSetViewSchema>  
+  
+-   <xref:System.Web.UI.Design.DataSetFieldSchema>  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,9 +49,16 @@
         <Parameter Name="column" Type="System.Data.DataColumn" />
       </Parameters>
       <Docs>
-        <param name="column">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="column">A <see cref="T:System.Data.DataColumn" /> object that the <see cref="T:System.Web.UI.Design.DataSetFieldSchema" /> object  describes.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.DataSetFieldSchema" /> class using a specified <see cref="T:System.Data.DataColumn" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.Design.DataSetFieldSchema> class to examine the properties of a data field using a <xref:System.Data.DataColumn> object.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataType">
@@ -50,8 +74,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type of data stored in the data field.</summary>
+        <value>A <see cref="T:System.Type" /> object that represents the type of data the data field contains.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,9 +92,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether the value of the data field automatically increments for each new row added to the table or view.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="P:System.Web.UI.Design.DataSetFieldSchema.DataType" /> is numeric and the value of the column increments automatically as new rows are added to the <see cref="T:System.Data.DataTable" />; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.DataSetFieldSchema.Identity%2A> property corresponds to the <xref:System.Data.DataColumn.AutoIncrement%2A> property of a <xref:System.Data.DataColumn>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -86,8 +118,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the <see cref="T:System.Data.DataColumn" /> is read-only.</summary>
+        <value>
+          <see langword="true" /> if the data field is read-only; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,9 +137,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether values in the data field are required to be unique.</summary>
+        <value>
+          <see langword="true" /> if data in the data field is unique; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.DataSetFieldSchema.IsUnique%2A> property corresponds to the <xref:System.Data.DataColumn.Unique%2A> property of a <xref:System.Data.DataColumn>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Length">
@@ -122,9 +163,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating the size of data that can be stored in the data field.</summary>
+        <value>The number of bytes the column can store.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.DataSetFieldSchema.Length%2A> property corresponds to the <xref:System.Data.DataColumn.MaxLength%2A> property of a <xref:System.Data.DataColumn>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -140,9 +188,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the name of the data field.</summary>
+        <value>The name of the data field.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.DataSetFieldSchema.Name%2A> property corresponds to the <xref:System.Data.DataColumn.ColumnName%2A> property of a <xref:System.Data.DataColumn>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Nullable">
@@ -158,9 +213,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether the data field can accept <see langword="null" /> values.</summary>
+        <value>
+          <see langword="true" /> if the data field can accept <see langword="null" /> values; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.DataSetFieldSchema.Nullable%2A> property corresponds to the <xref:System.Data.DataColumn.AllowDBNull%2A> property of a <xref:System.Data.DataColumn>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Precision">
@@ -176,9 +239,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the maximum number of digits used to represent a numerical value in the data field.</summary>
+        <value>This property always returns <see langword="-1" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.DataSetFieldSchema.Precision%2A> property is required by the <xref:System.Web.UI.Design.IDataSourceFieldSchema> interface, but is not used by the <xref:System.Web.UI.Design.DataSetFieldSchema> class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PrimaryKey">
@@ -194,8 +264,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the data field is in the primary key for the containing table or view.</summary>
+        <value>
+          <see langword="true" /> if the data field is in the primary key; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -212,9 +283,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of decimal places to which numerical values in the data field are resolved.</summary>
+        <value>This property always returns -1.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.DataSetFieldSchema.Scale%2A> property is required by the <xref:System.Web.UI.Design.IDataSourceFieldSchema> interface, but is not used by the <xref:System.Web.UI.Design.DataSetFieldSchema> class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -10,8 +10,76 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies constants defining which information to display.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the <xref:System.Windows.Forms.MessageBox> class. The description of each member of this enumeration contains a typical representation of the symbol. The actual graphic displayed is a function of the operating system constants. In current implementations there are four unique symbols with multiple values assigned to them.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use a <xref:System.Windows.Forms.MessageBox> to inform the user of a missing entry in a <xref:System.Windows.Forms.TextBox>. This example requires that the method is called from an existing form with a <xref:System.Windows.Forms.Button> and a <xref:System.Windows.Forms.TextBox> on it.  
+  
+```csharp  
+private void Form1_FormClosing(object sender, FormClosingEventArgs e)  
+{  
+    const string message =  
+        "Are you sure that you would like to close the form?";  
+    const string caption = "Form Closing";  
+    var result = MessageBox.Show(message, caption,  
+                                 MessageBoxButtons.YesNo,  
+                                 MessageBoxIcon.Exclamation);  
+  
+    // If the no button was pressed ...  
+    if (result == DialogResult.No)  
+    {  
+        // cancel the closure of the form.  
+        e.Cancel = true;  
+    }  
+}  
+```  
+  
+```cpp  
+private:  
+   void Form1_FormClosing(Object^ sender, FormClosingEventArgs^ e)  
+   {  
+	  // If the no button was pressed ...  
+      if ((MessageBox::Show(  
+         "Are you sure that you would like to close the form?",   
+         "Form Closing", MessageBoxButtons::YesNo,   
+         MessageBoxIcon::Exclamation) == DialogResult::No))  
+      {  
+		 // cancel the closure of the form.  
+         e->Cancel = true;  
+      }  
+   }  
+```  
+  
+```vb  
+Private Sub Form1_FormClosing( _  
+    ByVal sender As System.Object, _  
+    ByVal e As System.Windows.Forms.FormClosingEventArgs) _  
+    Handles MyBase.FormClosing  
+  
+    Dim message As String = _  
+            "Are you sure that you would like to close the form?"  
+    Dim caption As String = "Form Closing"  
+    Dim result = MessageBox.Show(message, caption, _  
+                                 MessageBoxButtons.YesNo, _  
+                                 MessageBoxIcon.Exclamation)  
+  
+    ' If the no button was pressed ...  
+    If (result = DialogResult.No) Then  
+        ' cancel the closure of the form.  
+        e.Cancel = True  
+    End If  
+End Sub  
+```  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Asterisk">
@@ -27,7 +95,7 @@
         <ReturnType>System.Windows.Forms.MessageBoxIcon</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The message box contains a symbol consisting of a lowercase letter i in a circle.</summary>
       </Docs>
     </Member>
     <Member MemberName="Error">
@@ -43,7 +111,7 @@
         <ReturnType>System.Windows.Forms.MessageBoxIcon</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The message box contains a symbol consisting of white X in a circle with a red background.</summary>
       </Docs>
     </Member>
     <Member MemberName="Exclamation">
@@ -59,7 +127,7 @@
         <ReturnType>System.Windows.Forms.MessageBoxIcon</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The message box contains a symbol consisting of an exclamation point in a triangle with a yellow background.</summary>
       </Docs>
     </Member>
     <Member MemberName="Hand">
@@ -75,7 +143,7 @@
         <ReturnType>System.Windows.Forms.MessageBoxIcon</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The message box contains a symbol consisting of a white X in a circle with a red background.</summary>
       </Docs>
     </Member>
     <Member MemberName="Information">
@@ -91,7 +159,7 @@
         <ReturnType>System.Windows.Forms.MessageBoxIcon</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The message box contains a symbol consisting of a lowercase letter i in a circle.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -107,7 +175,7 @@
         <ReturnType>System.Windows.Forms.MessageBoxIcon</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The message box contain no symbols.</summary>
       </Docs>
     </Member>
     <Member MemberName="Question">
@@ -123,7 +191,7 @@
         <ReturnType>System.Windows.Forms.MessageBoxIcon</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The message box contains a symbol consisting of a question mark in a circle. The question-mark message icon is no longer recommended because it does not clearly represent a specific type of message and because the phrasing of a message as a question could apply to any message type. In addition, users can confuse the message symbol question mark with Help information. Therefore, do not use this question mark message symbol in your message boxes. The system continues to support its inclusion only for backward compatibility.</summary>
       </Docs>
     </Member>
     <Member MemberName="Stop">
@@ -139,7 +207,7 @@
         <ReturnType>System.Windows.Forms.MessageBoxIcon</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The message box contains a symbol consisting of white X in a circle with a red background.</summary>
       </Docs>
     </Member>
     <Member MemberName="Warning">
@@ -155,7 +223,7 @@
         <ReturnType>System.Windows.Forms.MessageBoxIcon</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The message box contains a symbol consisting of an exclamation point in a triangle with a yellow background.</summary>
       </Docs>
     </Member>
   </Members>

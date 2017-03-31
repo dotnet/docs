@@ -18,7 +18,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Manages <see cref="T:System.Web.HttpWorkerRequest" /> objects in the .NET Framework. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Hosting.ISAPIRuntime" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,7 +51,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Forces garbage collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,8 +69,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gives the <see cref="T:System.Web.Hosting.ISAPIRuntime" /> object an infinite lifetime by preventing a lease from being created.</summary>
+        <returns>
+          <see langword="null" /> to prevent a lease from being created.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,10 +92,10 @@
         <Parameter Name="iWRType" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="ecb">To be added.</param>
-        <param name="iWRType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="ecb">An ISAPI extension control block.</param>
+        <param name="iWRType">0 to create an out-of-process request; otherwise, an in-process request is created.</param>
+        <summary>Creates a new <see cref="T:System.Web.HttpWorkerRequest" /> object to process the current request.</summary>
+        <returns>0 if <see cref="T:System.Web.HttpWorkerRequest" /> was created successfully; otherwise, 1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,7 +113,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Starts processing all items in the worker process pipeline.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -130,7 +131,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stops processing the items in the worker process pipeline.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -150,8 +151,9 @@
         <Parameter Name="immediate" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="immediate">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="immediate">
+          <see langword="true" /> to indicate that the registered object should unregister from the hosting environment before returning; otherwise, <see langword="false" />.</param>
+        <summary>Requests a registered object to unregister.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

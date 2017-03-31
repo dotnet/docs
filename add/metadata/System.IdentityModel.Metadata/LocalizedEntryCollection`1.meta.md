@@ -1,14 +1,17 @@
 ---
 uid: System.IdentityModel.Metadata.LocalizedEntryCollection`1
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.LocalizedEntryCollection`1.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.LocalizedEntryCollection`1.GetKeyForItem(`0)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

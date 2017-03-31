@@ -1,14 +1,20 @@
 ---
 uid: System.Windows.Automation.MultipleViewPattern.MultipleViewPatternInformation
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.MultipleViewPattern.MultipleViewPatternInformation.GetSupportedViews
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.MultipleViewPattern.MultipleViewPatternInformation.CurrentView
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---

@@ -1,64 +1,97 @@
 ---
 uid: System.Workflow.Runtime.Tracking.ActivityTrackingLocation
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Tracking.ActivityTrackingLocation.#ctor(System.Type)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Tracking.ActivityTrackingLocation.#ctor(System.String,System.Collections.Generic.IEnumerable{System.Workflow.ComponentModel.ActivityExecutionStatus})
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Tracking.ActivityTrackingLocation.#ctor(System.Type,System.Boolean,System.Collections.Generic.IEnumerable{System.Workflow.ComponentModel.ActivityExecutionStatus})
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Tracking.ActivityTrackingLocation.Conditions
-internalonly: False
----
-
----
-uid: System.Workflow.Runtime.Tracking.ActivityTrackingLocation.ActivityTypeName
-internalonly: False
----
-
----
-uid: System.Workflow.Runtime.Tracking.ActivityTrackingLocation.ActivityType
-internalonly: False
----
-
----
-uid: System.Workflow.Runtime.Tracking.ActivityTrackingLocation.#ctor(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Tracking.ActivityTrackingLocation.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Runtime.Tracking.ActivityTrackingLocation.ActivityTypeName
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Runtime.Tracking.ActivityTrackingLocation.ActivityType
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Runtime.Tracking.ActivityTrackingLocation.#ctor(System.String)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Runtime.Tracking.ActivityTrackingLocation.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Tracking.ActivityTrackingLocation.ExecutionStatusEvents
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Tracking.ActivityTrackingLocation.#ctor(System.String,System.Boolean,System.Collections.Generic.IEnumerable{System.Workflow.ComponentModel.ActivityExecutionStatus})
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Tracking.ActivityTrackingLocation.#ctor(System.Type,System.Collections.Generic.IEnumerable{System.Workflow.ComponentModel.ActivityExecutionStatus})
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Tracking.ActivityTrackingLocation.MatchDerivedTypes
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

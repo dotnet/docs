@@ -1,29 +1,48 @@
 ---
 uid: System.Windows.Automation.PropertyCondition
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.PropertyCondition.#ctor(System.Windows.Automation.AutomationProperty,System.Object,System.Windows.Automation.PropertyConditionFlags)
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.PropertyCondition.Flags
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.PropertyCondition.Value
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.PropertyCondition.Property
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Automation.PropertyCondition.#ctor
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.PropertyCondition.#ctor(System.Windows.Automation.AutomationProperty,System.Object)
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---

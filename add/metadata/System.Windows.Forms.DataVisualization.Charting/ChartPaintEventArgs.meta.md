@@ -1,24 +1,29 @@
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.ChartPaintEventArgs
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.ChartPaintEventArgs.Position
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.ChartPaintEventArgs.Chart
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.ChartPaintEventArgs.ChartGraphics
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.ChartPaintEventArgs.ChartElement
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---

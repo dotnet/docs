@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides properties and methods for composing a <see langword="RouteURL" /> expression at design time.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A visual designer host, such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], uses the <xref:System.Web.UI.Design.RouteUrlExpressionEditor> class to compose a `RouteUrl` markup expression.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.RouteUrlExpressionEditor" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,13 +56,20 @@
         <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <param name="parseTimeData">To be added.</param>
-        <param name="propertyType">To be added.</param>
-        <param name="serviceProvider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="expression">A <see langword="RouteUrl" /> expression to evaluate. The expression does not include the <see langword="RouteUrl" /> expression prefix.</param>
+        <param name="parseTimeData">An object that contains additional parsing information for evaluating the expression.</param>
+        <param name="propertyType">The type of the control property.</param>
+        <param name="serviceProvider">A service provider implementation supplied by the designer host that is used to obtain additional design-time services.</param>
+        <summary>Evaluates a <see langword="RouteUrl" /> expression and provides the design-time value.</summary>
+        <returns>The URL for the specified route and route parameter values if the expression evaluation succeeded; otherwise, <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The visual designer uses the <xref:System.Web.UI.Design.RouteUrlExpressionEditor.EvaluateExpression%2A> method to evaluate a `RouteUrl` expression and provide the design-time value for an associated control property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetExpressionEditorSheet">
@@ -75,11 +89,18 @@
         <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <param name="serviceProvider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="expression">The expression string that is used to initialize the expression editor sheet. The expression does not include the <see langword="RouteUrl" /> expression prefix.</param>
+        <param name="serviceProvider">A service provider implementation supplied by the designer host that is used to obtain additional design-time services.</param>
+        <summary>Returns an expression editor sheet for a <see langword="RouteUrl" /> expression.</summary>
+        <returns>A <see cref="T:System.Web.UI.Design.RouteUrlExpressionEditorSheet" /> instance that defines the <see langword="RouteUrl" /> expression properties.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.RouteUrlExpressionEditor.GetExpressionEditorSheet%2A> method returns an editor-sheet implementation for `RouteUrl` expressions. The editor sheet for `RouteUrl` expressions enables users to select parameters and a route name. After users have selected the parameters and route name, the editor-sheet implementation generates a `RouteUrl` expression, which is returned to the visual designer.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

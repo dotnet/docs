@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Translates colors to and from GDI+ <see cref="T:System.Drawing.Color" /> structures. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,10 +31,28 @@
         <Parameter Name="htmlColor" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="htmlColor">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="htmlColor">The string representation of the Html color to translate.</param>
+        <summary>Translates an HTML color representation to a GDI+ <see cref="T:System.Drawing.Color" /> structure.</summary>
+        <returns>The <see cref="T:System.Drawing.Color" /> structure that represents the translated HTML color or <see cref="F:System.Drawing.Color.Empty" /> if <paramref name="htmlColor" /> is <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method translates a string representation of an HTML color name, such as Blue or Red, to a GDI+ <xref:System.Drawing.Color> structure.  
+  
+   
+  
+## Examples  
+ The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code translates an HTML color name to a <xref:System.Drawing.Color> structure, and then uses that color to fill a rectangle.  
+  
+ [!code-cpp[System.Drawing.ClassicColorTranslatorExamples#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicColorTranslatorExamples/CPP/form1.cpp#1)]
+ [!code-csharp[System.Drawing.ClassicColorTranslatorExamples#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicColorTranslatorExamples/CS/form1.cs#1)]
+ [!code-vb[System.Drawing.ClassicColorTranslatorExamples#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicColorTranslatorExamples/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Exception">
+          <paramref name="htmlColor" /> is not a valid HTML color name.</exception>
       </Docs>
     </Member>
     <Member MemberName="FromOle">
@@ -53,10 +71,21 @@
         <Parameter Name="oleColor" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="oleColor">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="oleColor">The OLE color to translate.</param>
+        <summary>Translates an OLE color value to a GDI+ <see cref="T:System.Drawing.Color" /> structure.</summary>
+        <returns>The <see cref="T:System.Drawing.Color" /> structure that represents the translated OLE color.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code translates an OLE color value to a <xref:System.Drawing.Color> structure, and then uses that color to fill a rectangle.  
+  
+ [!code-cpp[System.Drawing.ClassicColorTranslatorExamples#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicColorTranslatorExamples/CPP/form1.cpp#2)]
+ [!code-csharp[System.Drawing.ClassicColorTranslatorExamples#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicColorTranslatorExamples/CS/form1.cs#2)]
+ [!code-vb[System.Drawing.ClassicColorTranslatorExamples#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicColorTranslatorExamples/VB/form1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FromWin32">
@@ -75,10 +104,21 @@
         <Parameter Name="win32Color" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="win32Color">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="win32Color">The Windows color to translate.</param>
+        <summary>Translates a Windows color value to a GDI+ <see cref="T:System.Drawing.Color" /> structure.</summary>
+        <returns>The <see cref="T:System.Drawing.Color" /> structure that represents the translated Windows color.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code translates a Windows color value to a <xref:System.Drawing.Color> structure, and then uses that color to fill a rectangle.  
+  
+ [!code-cpp[System.Drawing.ClassicColorTranslatorExamples#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicColorTranslatorExamples/CPP/form1.cpp#3)]
+ [!code-csharp[System.Drawing.ClassicColorTranslatorExamples#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicColorTranslatorExamples/CS/form1.cs#3)]
+ [!code-vb[System.Drawing.ClassicColorTranslatorExamples#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicColorTranslatorExamples/VB/form1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToHtml">
@@ -97,10 +137,26 @@
         <Parameter Name="c" Type="System.Drawing.Color" />
       </Parameters>
       <Docs>
-        <param name="c">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="c">The <see cref="T:System.Drawing.Color" /> structure to translate.</param>
+        <summary>Translates the specified <see cref="T:System.Drawing.Color" /> structure to an HTML string color representation.</summary>
+        <returns>The string that represents the HTML color.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method translates a <xref:System.Drawing.Color> structure to a string representation of an HTML color. This is the commonly used name of a color, such as "Red", "Blue", or "Green", and not string representation of a numeric color value, such as "FF33AA".  
+  
+   
+  
+## Examples  
+ The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code translates a <xref:System.Drawing.Color> structure to a string representation of an HTML color, and then shows a message box with the resulting string.  
+  
+ [!code-cpp[System.Drawing.ClassicColorTranslatorExamples#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicColorTranslatorExamples/CPP/form1.cpp#4)]
+ [!code-csharp[System.Drawing.ClassicColorTranslatorExamples#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicColorTranslatorExamples/CS/form1.cs#4)]
+ [!code-vb[System.Drawing.ClassicColorTranslatorExamples#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicColorTranslatorExamples/VB/form1.vb#4)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToOle">
@@ -119,10 +175,21 @@
         <Parameter Name="c" Type="System.Drawing.Color" />
       </Parameters>
       <Docs>
-        <param name="c">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="c">The <see cref="T:System.Drawing.Color" /> structure to translate.</param>
+        <summary>Translates the specified <see cref="T:System.Drawing.Color" /> structure to an OLE color.</summary>
+        <returns>The OLE color value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code translates a <xref:System.Drawing.Color> structure to an integer that represents an OLE color, and then shows a message box with the resulting string.  
+  
+ [!code-cpp[System.Drawing.ClassicColorTranslatorExamples#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicColorTranslatorExamples/CPP/form1.cpp#5)]
+ [!code-csharp[System.Drawing.ClassicColorTranslatorExamples#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicColorTranslatorExamples/CS/form1.cs#5)]
+ [!code-vb[System.Drawing.ClassicColorTranslatorExamples#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicColorTranslatorExamples/VB/form1.vb#5)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToWin32">
@@ -141,10 +208,21 @@
         <Parameter Name="c" Type="System.Drawing.Color" />
       </Parameters>
       <Docs>
-        <param name="c">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="c">The <see cref="T:System.Drawing.Color" /> structure to translate.</param>
+        <summary>Translates the specified <see cref="T:System.Drawing.Color" /> structure to a Windows color.</summary>
+        <returns>The Windows color value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code translates a <xref:System.Drawing.Color> structure to an integer that represents a Windows color, and then shows a message box with the resulting string.  
+  
+ [!code-cpp[System.Drawing.ClassicColorTranslatorExamples#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicColorTranslatorExamples/CPP/form1.cpp#6)]
+ [!code-csharp[System.Drawing.ClassicColorTranslatorExamples#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicColorTranslatorExamples/CS/form1.cs#6)]
+ [!code-vb[System.Drawing.ClassicColorTranslatorExamples#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicColorTranslatorExamples/VB/form1.vb#6)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

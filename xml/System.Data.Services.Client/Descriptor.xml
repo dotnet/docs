@@ -12,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Abstract class from which <see cref="T:System.Data.Services.Client.EntityDescriptor" /> is derived.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,8 +30,8 @@
         <ReturnType>System.Data.Services.Client.EntityStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When overridden in a derived class, gets the state of the object at the time this instance was constructed.</summary>
+        <value>An <see cref="T:System.Data.Services.Client.EntityStates" /> of the object returned at the time this instance was constructed.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

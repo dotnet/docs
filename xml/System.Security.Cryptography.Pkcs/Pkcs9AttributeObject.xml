@@ -16,8 +16,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an attribute used for CMS/PKCS #7 and PKCS #9 operations.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Security.Cryptography.Pkcs.Pkcs9AttributeObject> object can be thought of as a strongly typed <xref:System.Security.Cryptography.AsnEncodedData> object because of the addition of the <xref:System.Security.Cryptography.Pkcs.Pkcs9AttributeObject.Oid%2A> property.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,7 +43,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Pkcs.Pkcs9AttributeObject" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,9 +65,15 @@
         <Parameter Name="asnEncodedData" Type="System.Security.Cryptography.AsnEncodedData" />
       </Parameters>
       <Docs>
-        <param name="asnEncodedData">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="asnEncodedData">An object that contains the PKCS #9 attribute type and value to use.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Pkcs.Pkcs9AttributeObject" /> class using a specified <see cref="T:System.Security.Cryptography.AsnEncodedData" /> object as its attribute type and value.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The length of the <paramref name="Value" /> member of the <paramref name="Oid" /> member of <paramref name="asnEncodedData" /> is zero.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="Oid" /> member of <paramref name="asnEncodedData" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="Value" /> member of the <paramref name="Oid" /> member of <paramref name="asnEncodedData" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -82,9 +95,9 @@
         <Parameter Name="encodedData" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="oid">To be added.</param>
-        <param name="encodedData">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="oid">An object that represents the PKCS #9 attribute type.</param>
+        <param name="encodedData">An array of byte values that represents the PKCS #9 attribute value.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Pkcs.Pkcs9AttributeObject" /> class using a specified <see cref="T:System.Security.Cryptography.Oid" /> object as the attribute type and a specified ASN.1 encoded data as the attribute value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,9 +120,9 @@
         <Parameter Name="encodedData" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="oid">To be added.</param>
-        <param name="encodedData">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="oid">The string representation of an OID that represents the PKCS #9 attribute type.</param>
+        <param name="encodedData">An array of byte values that contains the PKCS #9 attribute value.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Pkcs.Pkcs9AttributeObject" /> class using a specified string representation of an object identifier (OID) as the attribute type and a specified ASN.1 encoded data as the attribute value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,9 +147,13 @@
         <Parameter Name="asnEncodedData" Type="System.Security.Cryptography.AsnEncodedData" />
       </Parameters>
       <Docs>
-        <param name="asnEncodedData">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="asnEncodedData">An object that contains the PKCS #9 attribute type and value to use.</param>
+        <summary>Copies a PKCS #9 attribute type and value for this <see cref="T:System.Security.Cryptography.Pkcs.Pkcs9AttributeObject" /> from the specified <see cref="T:System.Security.Cryptography.AsnEncodedData" /> object.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="asnEncodeData" /> does not represent a compatible attribute type.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="asnEncodedData" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Oid">
@@ -157,8 +174,8 @@
         <ReturnType>System.Security.Cryptography.Oid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an <see cref="T:System.Security.Cryptography.Oid" /> object that represents the type of attribute associated with this <see cref="T:System.Security.Cryptography.Pkcs.Pkcs9AttributeObject" /> object.</summary>
+        <value>An object that represents the type of attribute associated with this <see cref="T:System.Security.Cryptography.Pkcs.Pkcs9AttributeObject" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

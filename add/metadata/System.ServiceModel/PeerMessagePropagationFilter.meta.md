@@ -1,14 +1,14 @@
 ---
 uid: System.ServiceModel.PeerMessagePropagationFilter
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerMessagePropagationFilter.ShouldMessagePropagate(System.ServiceModel.Channels.Message,System.ServiceModel.PeerMessageOrigination)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerMessagePropagationFilter.#ctor
-internalonly: False
+manager: "ghogen"
 ---

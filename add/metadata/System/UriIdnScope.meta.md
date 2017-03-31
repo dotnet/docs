@@ -1,4 +1,5 @@
 ---
 uid: System.UriIdnScope
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

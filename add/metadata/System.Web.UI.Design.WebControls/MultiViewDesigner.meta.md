@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.Design.WebControls.MultiViewDesigner
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.MultiViewDesigner.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.MultiViewDesigner.NoWrap
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

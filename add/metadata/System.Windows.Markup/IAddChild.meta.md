@@ -1,14 +1,14 @@
 ---
 uid: System.Windows.Markup.IAddChild
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.IAddChild.AddChild(System.Object)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.IAddChild.AddText(System.String)
-internalonly: False
+manager: "martinek"
 ---

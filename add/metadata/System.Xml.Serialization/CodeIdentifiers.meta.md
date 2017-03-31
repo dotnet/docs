@@ -1,69 +1,104 @@
 ---
 uid: System.Xml.Serialization.CodeIdentifiers
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.CodeIdentifiers.RemoveReserved(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.CodeIdentifiers.#ctor(System.Boolean)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.CodeIdentifiers.MakeUnique(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.CodeIdentifiers.AddReserved(System.String)
-internalonly: False
----
-
----
-uid: System.Xml.Serialization.CodeIdentifiers.Clear
-internalonly: False
----
-
----
-uid: System.Xml.Serialization.CodeIdentifiers.Remove(System.String)
-internalonly: False
----
-
----
-uid: System.Xml.Serialization.CodeIdentifiers.UseCamelCasing
-internalonly: False
----
-
----
-uid: System.Xml.Serialization.CodeIdentifiers.AddUnique(System.String,System.Object)
-internalonly: False
----
-
----
-uid: System.Xml.Serialization.CodeIdentifiers.MakeRightCase(System.String)
-internalonly: False
----
-
----
-uid: System.Xml.Serialization.CodeIdentifiers.Add(System.String,System.Object)
-internalonly: False
----
-
----
-uid: System.Xml.Serialization.CodeIdentifiers.IsInUse(System.String)
-internalonly: False
----
-
----
-uid: System.Xml.Serialization.CodeIdentifiers.ToArray(System.Type)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.CodeIdentifiers.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Xml.Serialization.CodeIdentifiers.Clear
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Xml.Serialization.CodeIdentifiers.Remove(System.String)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Xml.Serialization.CodeIdentifiers.UseCamelCasing
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Xml.Serialization.CodeIdentifiers.AddUnique(System.String,System.Object)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Xml.Serialization.CodeIdentifiers.MakeRightCase(System.String)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Xml.Serialization.CodeIdentifiers.Add(System.String,System.Object)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Xml.Serialization.CodeIdentifiers.IsInUse(System.String)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Xml.Serialization.CodeIdentifiers.ToArray(System.Type)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Xml.Serialization.CodeIdentifiers.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

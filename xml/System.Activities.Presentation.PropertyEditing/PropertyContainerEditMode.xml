@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains the different edit modes of a <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyContainer" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Activities.Presentation.PropertyEditing.PropertyContainerEditMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Edit mode of the property inspector dialog window, which enables the implementation of a pop-up window to contain the property editor.</summary>
       </Docs>
     </Member>
     <Member MemberName="ExtendedPinned">
@@ -43,7 +43,7 @@
         <ReturnType>System.Activities.Presentation.PropertyEditing.PropertyContainerEditMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Editor mode of the property inspector dialog window, which enables the implementation of an additional user interface pinned into place within the property inspector window.</summary>
       </Docs>
     </Member>
     <Member MemberName="ExtendedPopup">
@@ -59,7 +59,7 @@
         <ReturnType>System.Activities.Presentation.PropertyEditing.PropertyContainerEditMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Editor mode of the property inspector dialog window, which enables the implementation of an additional user interface displayed on top of the property inspector window.</summary>
       </Docs>
     </Member>
     <Member MemberName="Inline">
@@ -75,7 +75,7 @@
         <ReturnType>System.Activities.Presentation.PropertyEditing.PropertyContainerEditMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Inline editor mode of the property inspector dialog window, which enables the editing of values directly into that window.</summary>
       </Docs>
     </Member>
   </Members>

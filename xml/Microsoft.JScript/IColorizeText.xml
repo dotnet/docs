@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines services for colorizing text when JScript code is being authored in an editor.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,10 +37,10 @@
         <Parameter Name="state" Type="Microsoft.JScript.SourceState" />
       </Parameters>
       <Docs>
-        <param name="sourceCode">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="sourceCode">The source code to colorize.</param>
+        <param name="state">The current state (normal, comment, string) of the source code.</param>
+        <summary>When implemented in a class, scans the specified source code for individual units of code and identifies the color that each should have.</summary>
+        <returns>An enumeration of <see cref="T:Microsoft.JScript.ITokenColorInfo" /> objects that represent units of code to colorize.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,10 +61,10 @@
         <Parameter Name="currentState" Type="Microsoft.JScript.SourceState" />
       </Parameters>
       <Docs>
-        <param name="sourceCode">To be added.</param>
-        <param name="currentState">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="sourceCode">The source code to analyze.</param>
+        <param name="currentState">The current state (normal, comment, string) of the source code.</param>
+        <summary>When implemented in a class, scans the specified source code for individual units of code and identifies the state (normal, comment, string) of the specified code.</summary>
+        <returns>The state of the source code.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

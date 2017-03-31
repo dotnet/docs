@@ -1,19 +1,23 @@
 ---
 uid: System.Web.Configuration.FormsAuthenticationCredentials
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.FormsAuthenticationCredentials.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.FormsAuthenticationCredentials.Users
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.FormsAuthenticationCredentials.PasswordFormat
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

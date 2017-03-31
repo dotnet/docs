@@ -1,9 +1,13 @@
 ---
 uid: Microsoft.Win32.SafeHandles.SafeFileHandle
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Win32.SafeHandles.SafeFileHandle.#ctor(System.IntPtr,System.Boolean)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

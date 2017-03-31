@@ -1,14 +1,27 @@
 ---
 uid: System.Security.Cryptography.Xml.XmlDsigExcC14NWithCommentsTransform
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.Xml.XmlDsigExcC14NWithCommentsTransform.#ctor(System.String)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.Xml.XmlDsigExcC14NWithCommentsTransform.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.Xml.XmlDsigExcC14NWithCommentsTransform.#ctor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

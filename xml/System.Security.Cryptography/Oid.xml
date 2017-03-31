@@ -20,8 +20,24 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a cryptographic object identifier. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Cryptographic object identifiers consist of a value/name pair. If one property in a pair is set to a known value, the other property is updated automatically to a corresponding value. For example, if the <xref:System.Security.Cryptography.Oid.Value%2A> property is set to "1.3.6.1.5.5.7.3.4", the <xref:System.Security.Cryptography.Oid.FriendlyName%2A> property, which is localized, is set automatically to "Secure Email".  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Security.Cryptography.Oid> class.  
+  
+ [!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
+ [!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
+ [!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,8 +56,24 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Oid" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is the default constructor.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Security.Cryptography.Oid> class.  
+  
+ [!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
+ [!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
+ [!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -66,9 +98,27 @@
         <Parameter Name="oid" Type="System.Security.Cryptography.Oid" />
       </Parameters>
       <Docs>
-        <param name="oid">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="oid">The object identifier information to use to create the new object identifier.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Oid" /> class using the specified <see cref="T:System.Security.Cryptography.Oid" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor copies the values of an existing <xref:System.Security.Cryptography.Oid> object to a new object.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Security.Cryptography.Oid> class.  
+  
+ [!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
+ [!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
+ [!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="oid " />is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -93,9 +143,25 @@
         <Parameter Name="oid" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="oid">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="oid">An object identifier.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Oid" /> class using a string value of an <see cref="T:System.Security.Cryptography.Oid" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor copies the values of an existing <xref:System.Security.Cryptography.Oid> object to a new object.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Security.Cryptography.Oid> class.  
+  
+ [!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
+ [!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
+ [!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -121,10 +187,26 @@
         <Parameter Name="friendlyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="friendlyName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="value">The dotted number of the identifier.</param>
+        <param name="friendlyName">The friendly name of the identifier.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Oid" /> class using the specified value and friendly name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor can be used to copy the values of an existing <xref:System.Security.Cryptography.Oid> object. Note that if the Oid value is not recognized, the `value` and `friendlyName` parameters are not verified to determine if they correspond to each other. This is because there are object identifiers that the .NET Framework does not recognize, although an application may be able to interpret them.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Security.Cryptography.Oid> class.  
+  
+ [!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
+ [!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
+ [!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FriendlyName">
@@ -149,9 +231,25 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the friendly name of the identifier.</summary>
+        <value>The friendly name of the identifier.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If one value of an <xref:System.Security.Cryptography.Oid> property is set to a known value, the other value of an <xref:System.Security.Cryptography.Oid> property is updated automatically to a corresponding value. For example, if the <xref:System.Security.Cryptography.Oid.FriendlyName%2A> property is set to "Secure Email", the <xref:System.Security.Cryptography.Oid.Value%2A> property is set automatically to "1.3.6.1.5.5.7.3.4".  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Security.Cryptography.Oid> class.  
+  
+ [!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
+ [!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
+ [!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FromFriendlyName">
@@ -180,11 +278,14 @@
         <Parameter Name="group" Type="System.Security.Cryptography.OidGroup" />
       </Parameters>
       <Docs>
-        <param name="friendlyName">To be added.</param>
-        <param name="group">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="friendlyName">The friendly name of the identifier.</param>
+        <param name="group">The group to search in.</param>
+        <summary>Creates an <see cref="T:System.Security.Cryptography.Oid" /> object from an OID friendly name by searching the specified group.</summary>
+        <returns>An object that represents the specified OID.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="friendlyName " /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The OID was not found.</exception>
       </Docs>
     </Member>
     <Member MemberName="FromOidValue">
@@ -213,11 +314,14 @@
         <Parameter Name="group" Type="System.Security.Cryptography.OidGroup" />
       </Parameters>
       <Docs>
-        <param name="oidValue">To be added.</param>
-        <param name="group">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="oidValue">The OID value.</param>
+        <param name="group">The group to search in.</param>
+        <summary>Creates an <see cref="T:System.Security.Cryptography.Oid" /> object by using the specified OID value and group.</summary>
+        <returns>A new instance of an <see cref="T:System.Security.Cryptography.Oid" /> object.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="oidValue" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The friendly name for the OID value was not found.</exception>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -242,9 +346,25 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the dotted number of the identifier.</summary>
+        <value>The dotted number of the identifier.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If one value of an <xref:System.Security.Cryptography.Oid> property is set to a known value, the other value of an <xref:System.Security.Cryptography.Oid> property is updated automatically to a corresponding value. For example, if the <xref:System.Security.Cryptography.Oid.Value%2A> property is set to "1.3.6.1.5.5.7.3.4", the <xref:System.Security.Cryptography.Oid.FriendlyName%2A> property is set automatically to "Secure Email".  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Security.Cryptography.Oid> class.  
+  
+ [!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
+ [!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
+ [!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

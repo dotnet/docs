@@ -20,8 +20,16 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides completion status on the execution of a <see cref="T:System.Threading.Tasks.Parallel" /> loop.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.Threading.Tasks.ParallelLoopResult.IsCompleted%2A> returns true, then the loop ran to completion, such that all iterations of the loop were executed. If <xref:System.Threading.Tasks.ParallelLoopResult.IsCompleted%2A> returns false and <xref:System.Threading.Tasks.ParallelLoopResult.LowestBreakIteration%2A> returns null, a call to <xref:System.Threading.Tasks.ParallelLoopState.Stop%2A> was used to end the loop prematurely. If <xref:System.Threading.Tasks.ParallelLoopResult.IsCompleted%2A> returns false and <xref:System.Threading.Tasks.ParallelLoopResult.LowestBreakIteration%2A> returns a non-null integral value, <xref:System.Threading.Tasks.ParallelLoopState.Break%2A> was used to end the loop prematurely.  
+  
+ ]]></format>
+    </remarks>
+    <threadsafe>All public members of <see cref="T:System.Threading.Tasks.ParallelLoopResult" /> are thread safe and may be called from multiple threads concurrently.</threadsafe>
   </Docs>
   <Members>
     <Member MemberName="IsCompleted">
@@ -46,8 +54,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets whether the loop ran to completion, such that all iterations of the loop were executed and the loop didn't receive a request to end prematurely.</summary>
+        <value>true if the loop ran to completion; otherwise false;</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,9 +81,16 @@
         <ReturnType>System.Nullable&lt;System.Int64&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the index of the lowest iteration from which <see cref="M:System.Threading.Tasks.ParallelLoopState.Break" /> was called.</summary>
+        <value>Returns an integer that represents the lowest iteration from which the Break statement was called.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.Threading.Tasks.ParallelLoopState.Break%2A> was not employed, this property will return null.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

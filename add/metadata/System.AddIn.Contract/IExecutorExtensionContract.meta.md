@@ -1,39 +1,55 @@
 ---
 uid: System.AddIn.Contract.IExecutorExtensionContract
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.AddIn.Contract.IExecutorExtensionContract.ExecutorCreated
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.AddIn.Contract.IExecutorExtensionContract.EntryPointStarting(System.String,System.String,System.AddIn.Contract.Collections.IRemoteArgumentArrayContract)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.AddIn.Contract.IExecutorExtensionContract.EntryPointStarted(System.AddIn.Contract.IContract)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.AddIn.Contract.IExecutorExtensionContract.AssemblyLoading(System.String)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.AddIn.Contract.IExecutorExtensionContract.AssemblyLoaded(System.String)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.AddIn.Contract.IExecutorExtensionContract.AssemblyLoadingFrom(System.String)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.AddIn.Contract.IExecutorExtensionContract.AssemblyLoadedFrom(System.String)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

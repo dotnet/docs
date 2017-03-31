@@ -1,9 +1,13 @@
 ---
 uid: System.ServiceModel.Configuration.X509CertificateTrustedIssuerElementCollection
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.X509CertificateTrustedIssuerElementCollection.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Indicates the policy for rendering a <see cref="T:System.Windows.Media.Effects.ShaderEffect" /> in software.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Windows.Media.Effects.ShaderRenderMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Allow hardware and software rendering.</summary>
       </Docs>
     </Member>
     <Member MemberName="HardwareOnly">
@@ -43,7 +43,7 @@
         <ReturnType>System.Windows.Media.Effects.ShaderRenderMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Require hardware rendering, ignore if unavailable.</summary>
       </Docs>
     </Member>
     <Member MemberName="SoftwareOnly">
@@ -59,7 +59,7 @@
         <ReturnType>System.Windows.Media.Effects.ShaderRenderMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Force software rendering.</summary>
       </Docs>
     </Member>
   </Members>

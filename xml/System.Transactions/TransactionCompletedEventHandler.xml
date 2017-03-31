@@ -22,9 +22,19 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">To be added.</param>
-    <param name="e">To be added.</param>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <param name="sender">The source of the event.</param>
+    <param name="e">The <see cref="T:System.Transactions.TransactionEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that handles the <see cref="E:System.Transactions.Transaction.TransactionCompleted" /> event of a <see cref="T:System.Transactions.Transaction" /> class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how an application can obtain the outcome of a transaction by subscribing to the <xref:System.Transactions.Transaction.TransactionCompleted> event.  
+  
+ [!code-csharp[Tx_Outcome#1](~/samples/snippets/csharp/VS_Snippets_CFX/tx_outcome/cs/txoutcome.cs#1)]
+ [!code-vb[Tx_Outcome#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/tx_outcome/vb/txoutcome.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

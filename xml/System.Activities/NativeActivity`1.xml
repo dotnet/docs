@@ -17,9 +17,19 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="TResult">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="TResult">The result returned by the activity.</typeparam>
+    <summary>Abstract base class for custom activities that implement execution logic using the <see cref="M:System.Activities.NativeActivity`1.Execute(System.Activities.ActivityExecutionContext)" /> method, that has full access to the runtime’s features.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates creating a class that inherits from <xref:System.Activities.NativeActivity%601>. This example is from the [How to: Create an Activity](../Topic/How%20to:%20Create%20an%20Activity.md) step of the  [Getting Started Tutorial &#91;.NET Framework 4.5&#93;](../Topic/Getting%20Started%20Tutorial2.md).  
+  
+ [!code-csharp[CFX_WF_GettingStarted#1](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_wf_gettingstarted/cs/readint.cs#1)]
+ [!code-vb[CFX_WF_GettingStarted#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/cfx_wf_gettingstarted/vb/readint.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,7 +43,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>When implemented in a derived class, creates a new instance of the derived class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,8 +63,8 @@
         <Parameter Name="context" Type="System.Activities.NativeActivityAbortContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="context">The execution context in which the activity executes.</param>
+        <summary>When implemented in a derived class, takes actions in response to the activity being aborted.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,9 +84,16 @@
         <Parameter Name="metadata" Type="System.Activities.ActivityMetadata" />
       </Parameters>
       <Docs>
-        <param name="metadata">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="metadata">Not implemented.</param>
+        <summary>Not implemented. Use <see cref="M:System.Activities.NativeActivity`1.CacheMetadata(System.Activities.NativeActivityMetadata)" /> instead.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Custom activity authors can provide validation logic in an activity's <xref:System.Activities.NativeActivity%601.CacheMetadata%2A> override. Any exceptions that are thrown from <xref:System.Activities.NativeActivity%601.CacheMetadata%2A> are not treated as validation errors. These exceptions will escape from the call to <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A> and must be handled by the caller.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CacheMetadata">
@@ -95,9 +112,23 @@
         <Parameter Name="metadata" Type="System.Activities.NativeActivityMetadata" />
       </Parameters>
       <Docs>
-        <param name="metadata">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="metadata">The activity’s metadata that encapsulates the activity’s arguments, variables, child activities, and activity delegates.</param>
+        <summary>Creates and validates a description of the activity’s arguments, variables, child activities, and activity delegates.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The workflow runtime uses the default implementation of <xref:System.Activities.NativeActivity%601.CacheMetadata%2A> to ensure correct construction of a workflow as well as to manage run-time relationships and lifetime rules. The default implementation of <xref:System.Activities.NativeActivity%601.CacheMetadata%2A> examines the public members of the activity type using the type’s <xref:System.ComponentModel.TypeDescriptor>. These public members are of type <xref:System.Activities.Argument>, <xref:System.Activities.Variable>, [T:System.Collections.Generic.IEnumerable\<T:System.Activities.Variable>](assetId:///T:System.Collections.Generic.IEnumerable\<T:System.Activities.Variable>?qualifyHint=False&amp;autoUpgrade=True), <xref:System.Activities.Activity>, [T:System.Collections.Generic.IEnumerable\<T:System.Activities.Activity>](assetId:///T:System.Collections.Generic.IEnumerable\<T:System.Activities.Activity>?qualifyHint=False&amp;autoUpgrade=True), or <xref:System.Activities.ActivityDelegate>. You can override this method to customize the building of the activity’s run-time description and to provide custom validation logic. Any exceptions that are thrown from <xref:System.Activities.NativeActivity%601.CacheMetadata%2A> are not treated as validation errors. These exceptions will escape from the call to <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A> and must be handled by the caller.  
+  
+   
+  
+## Examples  
+ The following code sample demonstrates using CacheMetadata in a class that inherits from <xref:System.Activities.NativeActivity%601>. This example is from the [Custom Composite using Native Activity](../Topic/Custom%20Composite%20using%20Native%20Activity.md) sample.  
+  
+ [!code-csharp[wfs_CustomCompositeNativeActivity#2](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_customcompositenativeactivity/cs/mysequence.cs#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Cancel">
@@ -116,9 +147,18 @@
         <Parameter Name="context" Type="System.Activities.NativeActivityContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="context">The execution context in which the activity executes.</param>
+        <summary>When implemented in a derived class, runs logic to cause graceful early completion of the activity.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates using Cancel in a class that inherits from <xref:System.Activities.NativeActivity%601>. This example is from the [Non-Generic ParallelForEach](../Topic/Non-Generic%20ParallelForEach.md) sample.  
+  
+ [!code-csharp[wfs_NonGenericParallelForEach#2](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_nongenericparallelforeach/cs/parallelforeach.cs#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CanInduceIdle">
@@ -134,9 +174,19 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether the activity can cause the workflow to become idle.</summary>
+        <value>
+          <see langword="true" /> if the activity can cause the workflow to become idle, otherwise <see langword="false" />. This value is <see langword="false" /> by default.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates using CanInduceIdle in a class that inherits from <xref:System.Activities.NativeActivity%601>. This example is from the [Wait For Input Activity &#91;WF Samples&#93;](../Topic/Wait%20For%20Input%20Activity.md) sample.  
+  
+ [!code-csharp[wfs_WaitForInput#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_waitforinput/cs/waitforinput/waitforinput.cs#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -155,9 +205,18 @@
         <Parameter Name="context" Type="System.Activities.NativeActivityContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="context">The execution context in which the activity executes.</param>
+        <summary>When implemented in a derived class, runs the activity’s execution logic.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates using Execute in a class that inherits from <xref:System.Activities.NativeActivity%601>. This example is from the [Non-Generic ParallelForEach](../Topic/Non-Generic%20ParallelForEach.md) sample.  
+  
+ [!code-csharp[wfs_NonGenericParallelForEach#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_nongenericparallelforeach/cs/parallelforeach.cs#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Implementation">
@@ -178,8 +237,8 @@
         <ReturnType>System.Func&lt;System.Activities.Activity&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The execution logic of the activity.</summary>
+        <value>The execution logic.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -196,8 +255,8 @@
         <ReturnType>System.Version</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the implementation version of the activity.</summary>
+        <value>The implementation version of the activity.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -218,9 +277,9 @@
         <Parameter Name="originalActivity" Type="System.Activities.Activity" />
       </Parameters>
       <Docs>
-        <param name="metadata">To be added.</param>
-        <param name="originalActivity">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="metadata">The metadata.</param>
+        <param name="originalActivity">The original activity.</param>
+        <summary>Raises an event when creating a map for the dynamic update.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -241,9 +300,9 @@
         <Parameter Name="originalActivity" Type="System.Activities.Activity" />
       </Parameters>
       <Docs>
-        <param name="metadata">To be added.</param>
-        <param name="originalActivity">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="metadata">The metadata.</param>
+        <param name="originalActivity">The original activity.</param>
+        <summary>Raises an event when creating a map for the dynamic update.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -263,10 +322,27 @@
         <Parameter Name="updateContext" Type="System.Activities.DynamicUpdate.NativeActivityUpdateContext" />
       </Parameters>
       <Docs>
-        <param name="updateContext">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="updateContext">The update context.</param>
+        <summary>Updates the instance of <see cref="T:System.Activities.NativeActivity`1" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CacheMetadata">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates and validates a description of the activity’s arguments, variables, child activities, and activity delegates.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Custom activity authors can provide validation logic in an activity's <xref:System.Activities.NativeActivity%601.CacheMetadata%2A> override. Any exceptions that are thrown from <xref:System.Activities.NativeActivity%601.CacheMetadata%2A> are not treated as validation errors. These exceptions will escape from the call to <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A> and must be handled by the caller.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

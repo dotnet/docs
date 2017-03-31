@@ -1,34 +1,47 @@
 ---
 uid: Microsoft.Build.BuildEngine.UsingTaskCollection
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.BuildEngine.UsingTaskCollection.GetEnumerator
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.BuildEngine.UsingTaskCollection.IsSynchronized
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.BuildEngine.UsingTaskCollection.CopyTo(Microsoft.Build.BuildEngine.UsingTask[],System.Int32)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.BuildEngine.UsingTaskCollection.Count
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
+---
+
+---
+uid: Microsoft.Build.BuildEngine.UsingTaskCollection.CopyTo
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.BuildEngine.UsingTaskCollection.SyncRoot
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.BuildEngine.UsingTaskCollection.CopyTo(System.Array,System.Int32)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

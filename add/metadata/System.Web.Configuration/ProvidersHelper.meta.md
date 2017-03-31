@@ -1,14 +1,17 @@
 ---
 uid: System.Web.Configuration.ProvidersHelper
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ProvidersHelper.InstantiateProvider(System.Configuration.ProviderSettings,System.Type)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ProvidersHelper.InstantiateProviders(System.Configuration.ProviderSettingsCollection,System.Configuration.Provider.ProviderCollection,System.Type)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

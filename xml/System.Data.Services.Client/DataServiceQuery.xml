@@ -19,8 +19,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>An abstract class that represents a single query request to [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)].</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No public constructors are defined on this class. Object instances are created by using <xref:System.Data.Services.Client.DataServiceContext.CreateQuery%2A> or <xref:System.Data.Services.Client.DataServiceContext.CreateQuery%2A> on the <xref:System.Data.Services.Client.DataServiceContext> class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="BeginExecute">
@@ -41,11 +48,20 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="callback">Delegate to invoke when results are available for client consumption.</param>
+        <param name="state">User-defined state object passed to the callback.</param>
+        <summary>Asynchronously sends a request to execute the data service query.</summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> object that is used to track the status of the asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The returned <xref:System.IAsyncResult> object is used to determine when the asynchronous operation has completed. For more information, see [Asynchronous Operations](../Topic/Asynchronous%20Operations%20\(WCF%20Data%20Services\).md).  
+  
+ The <xref:System.Data.Services.Client.DataServiceQuery.BeginExecute%2A> method uses the same semantics as the <xref:System.Data.Services.Client.DataServiceQuery.Execute%2A> method, however <xref:System.Data.Services.Client.DataServiceQuery.BeginExecute%2A> asynchronously sends the request so that the call does not block processing while waiting for the results from the service. According to the standard begin-end asynchronous pattern, the provided callback is invoked when query results are retrieved.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EndExecute">
@@ -65,10 +81,11 @@
         <Parameter Name="asyncResult" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="asyncResult">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="asyncResult">The result from the <see cref="M:System.Data.Services.Client.DataServiceQuery.BeginExecute(System.AsyncCallback,System.Object)" /> operation that contains the query results.</param>
+        <summary>Called to complete the asynchronous operation of executing a data service query.</summary>
+        <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> that contains the results of the query operation.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Data.Services.Client.DataServiceQueryException">When the data service returns an HTTP 404: Resource Not Found error.</exception>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -86,9 +103,19 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Executes the query against the data service.</summary>
+        <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> that contains the results of the query operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.Services.Client.DataServiceQuery.Execute%2A> method is used to execute the given data service query.  
+  
+ The <xref:System.Data.Services.Client.DataServiceQuery.Execute%2A> method generates an HTTP GET request that is set to the data service.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Data.Services.Client.DataServiceQueryException">When the data service returns an HTTP 404: Resource Not Found error.</exception>
       </Docs>
     </Member>
     <Member MemberName="Expression">
@@ -105,8 +132,8 @@
         <ReturnType>System.Linq.Expressions.Expression</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Represents an expression that contains the query to the data service.</summary>
+        <value>An <see cref="T:System.Linq.Expressions.Expression" /> object that represents the query.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,8 +151,8 @@
         <ReturnType>System.Linq.IQueryProvider</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Represents the query provider instance.</summary>
+        <value>An <see cref="T:System.Linq.IQueryProvider" /> representing the data source provider.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,9 +171,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection returned by the query.</summary>
+        <returns>An enumerator over the query results.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

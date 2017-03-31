@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies line styles for axis scale breaks.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.BreakLineStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Scale break is not displayed.</summary>
       </Docs>
     </Member>
     <Member MemberName="Ragged">
@@ -43,7 +43,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.BreakLineStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Scale break is displayed as a ragged line.</summary>
       </Docs>
     </Member>
     <Member MemberName="Straight">
@@ -59,7 +59,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.BreakLineStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Scale break is displayed as a straight line.</summary>
       </Docs>
     </Member>
     <Member MemberName="Wave">
@@ -75,7 +75,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.BreakLineStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Scale break is displayed as a wavy line.</summary>
       </Docs>
     </Member>
   </Members>

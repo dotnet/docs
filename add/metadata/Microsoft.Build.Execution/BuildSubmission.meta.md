@@ -1,44 +1,53 @@
 ---
 uid: Microsoft.Build.Execution.BuildSubmission
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildSubmission.SubmissionId
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildSubmission.Execute
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildSubmission.IsCompleted
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildSubmission.AsyncContext
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildSubmission.WaitHandle
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildSubmission.ExecuteAsync(Microsoft.Build.Execution.BuildSubmissionCompleteCallback,System.Object)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildSubmission.BuildResult
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.BuildSubmission.BuildManager
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

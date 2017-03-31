@@ -1,14 +1,20 @@
 ---
 uid: Microsoft.Win32.SafeHandles.SafeHandleZeroOrMinusOneIsInvalid
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Win32.SafeHandles.SafeHandleZeroOrMinusOneIsInvalid.IsInvalid
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Win32.SafeHandles.SafeHandleZeroOrMinusOneIsInvalid.#ctor(System.Boolean)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

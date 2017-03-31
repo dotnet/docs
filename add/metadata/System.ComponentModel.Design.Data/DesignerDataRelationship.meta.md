@@ -1,29 +1,41 @@
 ---
 uid: System.ComponentModel.Design.Data.DesignerDataRelationship
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.Data.DesignerDataRelationship.ChildTable
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.Data.DesignerDataRelationship.Name
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.Data.DesignerDataRelationship.ParentColumns
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.Data.DesignerDataRelationship.ChildColumns
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.Data.DesignerDataRelationship.#ctor(System.String,System.Collections.ICollection,System.ComponentModel.Design.Data.DesignerDataTable,System.Collections.ICollection)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

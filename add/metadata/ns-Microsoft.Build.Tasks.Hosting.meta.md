@@ -1,4 +1,5 @@
 ---
 uid: Microsoft.Build.Tasks.Hosting
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

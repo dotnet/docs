@@ -1,319 +1,454 @@
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbIsNullExpression)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.VisitExpressionBindingList(System.Collections.Generic.IList{System.Data.Common.CommandTrees.DbExpressionBinding})
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.VisitExpressionList(System.Collections.Generic.IList{System.Data.Common.CommandTrees.DbExpression})
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbFilterExpression)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbProjectExpression)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.VisitFunction(System.Data.Metadata.Edm.EdmFunction)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbUnionAllExpression)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbLimitExpression)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbOrExpression)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbRelationshipNavigationExpression)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.VisitTypeUsage(System.Data.Metadata.Edm.TypeUsage)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.OnEnterScope(System.Collections.Generic.IEnumerable{System.Data.Common.CommandTrees.DbVariableReferenceExpression})
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.#ctor
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbAndExpression)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.VisitExpressionBinding(System.Data.Common.CommandTrees.DbExpressionBinding)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbApplyExpression)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.OnExitScope
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbScanExpression)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.VisitFunctionAggregate(System.Data.Common.CommandTrees.DbFunctionAggregate)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbExpression)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.VisitExpression(System.Data.Common.CommandTrees.DbExpression)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbIsOfExpression)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbOfTypeExpression)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbLikeExpression)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.OnVariableRebound(System.Data.Common.CommandTrees.DbVariableReferenceExpression,System.Data.Common.CommandTrees.DbVariableReferenceExpression)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbExceptExpression)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.VisitSortClause(System.Data.Common.CommandTrees.DbSortClause)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbCaseExpression)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbCastExpression)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbRefExpression)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbIntersectExpression)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbComparisonExpression)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbDerefExpression)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.OnExpressionReplaced(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbSortExpression)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbNewInstanceExpression)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbCrossJoinExpression)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbVariableReferenceExpression)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbIsEmptyExpression)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbEntityRefExpression)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.VisitAggregate(System.Data.Common.CommandTrees.DbAggregate)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbJoinExpression)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbRefKeyExpression)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbSkipExpression)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbPropertyExpression)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbFunctionExpression)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbNullExpression)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.VisitEntitySet(System.Data.Metadata.Edm.EntitySetBase)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.VisitSortOrder(System.Collections.Generic.IList{System.Data.Common.CommandTrees.DbSortClause})
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbGroupByExpression)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbElementExpression)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbQuantifierExpression)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbLambdaExpression)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbConstantExpression)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbArithmeticExpression)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbDistinctExpression)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.VisitType(System.Data.Metadata.Edm.EdmType)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.VisitGroupAggregate(System.Data.Common.CommandTrees.DbGroupAggregate)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.Visit
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbTreatExpression)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbParameterReferenceExpression)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.Visit(System.Data.Common.CommandTrees.DbNotExpression)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.VisitLambda(System.Data.Common.CommandTrees.DbLambda)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.CommandTrees.DefaultExpressionVisitor.VisitGroupExpressionBinding(System.Data.Common.CommandTrees.DbGroupExpressionBinding)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

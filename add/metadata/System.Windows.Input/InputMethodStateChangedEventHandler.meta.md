@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Input.InputMethodStateChangedEventHandler
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

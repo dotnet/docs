@@ -11,8 +11,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Base designer class for extending the design-mode behavior of a process module.</summary>
     <remarks>To be added.</remarks>
+    <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.</permission>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,8 +27,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Design.ProcessModuleDesigner" /> class.</summary>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to access unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.</permission>
       </Docs>
     </Member>
     <Member MemberName="PreFilterProperties">
@@ -46,9 +48,16 @@
         <Parameter Name="properties" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="properties">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="properties">An <see cref="T:System.Collections.IDictionary" /> containing the properties for the class of the component.</param>
+        <summary>Adjusts the set of properties the process module exposes through a <see cref="T:System.ComponentModel.TypeDescriptor" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method adds the nonbrowsable "FileVersionInfo" property to the designer's process module at design time.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

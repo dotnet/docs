@@ -11,8 +11,28 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the number of service instances available for handling calls that are contained in incoming messages.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.InstanceContext?displayProperty=fullName> manages the association between the channel and the user-defined service objects. Use the <xref:System.ServiceModel.InstanceContextMode> enumeration with the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A?displayProperty=fullName> property to specify the lifetime of the <xref:System.ServiceModel.InstanceContext> object. [!INCLUDE[indigo1](~/includes/indigo1-md.md)] can create a new <xref:System.ServiceModel.InstanceContext> object for every call, every session or specify that the <xref:System.ServiceModel.InstanceContext> object is bound to a single service object. For a working example, see the [Instancing](../Topic/Instancing.md).  
+  
+ The Single value specifies that a single <xref:System.ServiceModel.InstanceContext> object should be used for the lifetime of the service.  
+  
+> [!NOTE]
+>  If the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> value is set to Single the result is that your service can only process one message at a time unless you also set the <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> value to <xref:System.ServiceModel.ConcurrencyMode>.  
+  
+   
+  
+## Examples  
+ The following code illustrates how to set the <xref:System.ServiceModel.InstanceContextMode> for a service class:  
+  
+ [!code-csharp[S_ReliableSession#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_reliablesession/cs/service.cs#1)]
+ [!code-vb[S_ReliableSession#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_reliablesession/vb/service.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="PerCall">
@@ -29,7 +49,7 @@
         <ReturnType>System.ServiceModel.InstanceContextMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A new <see cref="T:System.ServiceModel.InstanceContext" /> object is created prior to and recycled subsequent to each call. If the channel does not create a session this value behaves as if it were <see cref="F:System.ServiceModel.InstanceContextMode.PerCall" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="PerSession">
@@ -46,7 +66,7 @@
         <ReturnType>System.ServiceModel.InstanceContextMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A new <see cref="T:System.ServiceModel.InstanceContext" /> object is created for each session.</summary>
       </Docs>
     </Member>
     <Member MemberName="Single">
@@ -63,7 +83,17 @@
         <ReturnType>System.ServiceModel.InstanceContextMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Only one <see cref="T:System.ServiceModel.InstanceContext" /> object is used for all incoming calls and is not recycled subsequent to the calls. If a service object does not exist, one is created.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  For singleton lifetime behavior (for example, if the host application calls the [System.ServiceModel.ServiceHost.#ctor(System.Object,System.Uri\<xref:System.ServiceModel.ServiceHost.%23ctor%2A> constructor and passes an object to use as the service), the service class must set <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> to Single, or an exception is thrown when the service host is opened.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

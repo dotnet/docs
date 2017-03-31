@@ -1,19 +1,31 @@
 ---
 uid: System.Web.UI.MobileControls.Adapters.ChtmlSelectionListAdapter
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.Adapters.ChtmlSelectionListAdapter.#ctor
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.Adapters.ChtmlSelectionListAdapter.Render
 ---
 
 ---
 uid: System.Web.UI.MobileControls.Adapters.ChtmlSelectionListAdapter.RequiresFormTag
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.Adapters.ChtmlSelectionListAdapter.Render(System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

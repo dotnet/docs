@@ -1,14 +1,14 @@
 ---
 uid: System.Windows.Markup.DesignerSerializationOptionsAttribute
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.DesignerSerializationOptionsAttribute.#ctor(System.Windows.Markup.DesignerSerializationOptions)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.DesignerSerializationOptionsAttribute.DesignerSerializationOptions
-internalonly: False
+manager: "martinek"
 ---

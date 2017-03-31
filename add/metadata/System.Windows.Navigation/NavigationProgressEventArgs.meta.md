@@ -1,24 +1,31 @@
 ---
 uid: System.Windows.Navigation.NavigationProgressEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Navigation.NavigationProgressEventArgs.MaxBytes
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Navigation.NavigationProgressEventArgs.BytesRead
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Navigation.NavigationProgressEventArgs.Navigator
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Navigation.NavigationProgressEventArgs.Uri
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

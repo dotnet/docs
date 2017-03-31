@@ -1,4 +1,5 @@
 ---
 uid: System.Configuration.ConfigurationAllowExeDefinition
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -1,9 +1,13 @@
 ---
 uid: System.Windows.Automation.Peers.DataGridRowHeaderAutomationPeer
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridRowHeaderAutomationPeer.#ctor(System.Windows.Controls.Primitives.DataGridRowHeader)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

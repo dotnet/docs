@@ -10,8 +10,23 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the bits-per-word of the process in which an out-of-process add-in is run.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows how the enumeration value affects the bits-per-word of the process on different operating systems:  
+  
+||32-bit operating system|64-bit operating system|  
+|-|------------------------------|------------------------------|  
+|Host|32-bit|Same as host process|  
+|AnyCPU|32-bit|64-bit|  
+|X86|32-bit|32-bit|  
+|X64|Exception is thrown|64-bit|  
+||32-bit|N/A|  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AnyCpu">
@@ -27,7 +42,7 @@
         <ReturnType>System.AddIn.Hosting.Platform</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The add-in is loaded into an external process with the same bits-per-word as the operating system.</summary>
       </Docs>
     </Member>
     <Member MemberName="ARM">
@@ -43,7 +58,7 @@
         <ReturnType>System.AddIn.Hosting.Platform</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The add-in is loaded into a 32-bit process on an ARM processor.</summary>
       </Docs>
     </Member>
     <Member MemberName="Host">
@@ -59,7 +74,7 @@
         <ReturnType>System.AddIn.Hosting.Platform</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The add-in is loaded into an external process with the same bits-per-word as the host process.</summary>
       </Docs>
     </Member>
     <Member MemberName="X64">
@@ -75,7 +90,7 @@
         <ReturnType>System.AddIn.Hosting.Platform</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The add-in is loaded into a 64-bit external process.</summary>
       </Docs>
     </Member>
     <Member MemberName="X86">
@@ -91,7 +106,7 @@
         <ReturnType>System.AddIn.Hosting.Platform</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The add-in is loaded into a 32-bit external process.</summary>
       </Docs>
     </Member>
   </Members>

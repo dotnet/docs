@@ -1,4 +1,6 @@
 ---
 uid: System.ComponentModel.Design.DesignerActionUIStateChangeType
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

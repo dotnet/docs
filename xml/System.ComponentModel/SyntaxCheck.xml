@@ -16,7 +16,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides methods to verify the machine name and path conform to a specific syntax. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -41,9 +41,10 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">A string containing the machine name to check.</param>
+        <summary>Checks the syntax of the machine name to confirm that it does not contain "\\".</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="value" /> matches the proper machine name format; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,9 +69,10 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">A string containing the path to check.</param>
+        <summary>Checks the syntax of the path to see whether it starts with "\\\\".</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="value" /> matches the proper path format; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,9 +97,10 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">A string containing the path to check.</param>
+        <summary>Checks the syntax of the path to see if it starts with "\\" or drive letter "C:".</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="value" /> matches the proper path format; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

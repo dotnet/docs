@@ -1,104 +1,153 @@
 ---
 uid: System.CodeDom.Compiler.CompilerParameters
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.Compiler.CompilerParameters.Win32Resource
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.Compiler.CompilerParameters.UserToken
-internalonly: False
----
-
----
-uid: System.CodeDom.Compiler.CompilerParameters.CoreAssemblyFileName
-internalonly: False
----
-
----
-uid: System.CodeDom.Compiler.CompilerParameters.GenerateInMemory
-internalonly: False
----
-
----
-uid: System.CodeDom.Compiler.CompilerParameters.LinkedResources
-internalonly: False
----
-
----
-uid: System.CodeDom.Compiler.CompilerParameters.TempFiles
-internalonly: False
----
-
----
-uid: System.CodeDom.Compiler.CompilerParameters.TreatWarningsAsErrors
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.Compiler.CompilerParameters.#ctor
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.Compiler.CompilerParameters.CoreAssemblyFileName
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.Compiler.CompilerParameters.GenerateInMemory
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.Compiler.CompilerParameters.LinkedResources
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.Compiler.CompilerParameters.TempFiles
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.Compiler.CompilerParameters.TreatWarningsAsErrors
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.Compiler.CompilerParameters.#ctor
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.Compiler.CompilerParameters.OutputAssembly
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.Compiler.CompilerParameters.EmbeddedResources
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.Compiler.CompilerParameters.GenerateExecutable
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.Compiler.CompilerParameters.ReferencedAssemblies
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.Compiler.CompilerParameters.#ctor(System.String[])
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.Compiler.CompilerParameters.IncludeDebugInformation
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.Compiler.CompilerParameters.WarningLevel
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.Compiler.CompilerParameters.#ctor(System.String[],System.String,System.Boolean)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.Compiler.CompilerParameters.#ctor(System.String[],System.String)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.Compiler.CompilerParameters.Evidence
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.Compiler.CompilerParameters.MainClass
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.Compiler.CompilerParameters.CompilerOptions
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

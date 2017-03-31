@@ -1,4 +1,6 @@
 ---
 uid: System.Web.Util.RequestValidationSource
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

@@ -1,14 +1,20 @@
 ---
 uid: System.Windows.Controls.SelectedDatesCollection
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.SelectedDatesCollection.AddRange(System.DateTime,System.DateTime)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.SelectedDatesCollection.#ctor(System.Windows.Controls.Calendar)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

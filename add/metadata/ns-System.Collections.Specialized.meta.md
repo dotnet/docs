@@ -1,4 +1,6 @@
 ---
 uid: System.Collections.Specialized
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

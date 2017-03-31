@@ -23,8 +23,32 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a base class for elements that apply effects onto or around a single child element, such as <see cref="T:System.Windows.Controls.Border" /> or <see cref="T:System.Windows.Controls.Viewbox" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Controls.Decorator> contains a single <xref:System.Windows.UIElement>, which is specified by the <xref:System.Windows.Controls.Decorator.Child%2A> property. The <xref:System.Windows.Controls.Decorator> affects, or decorates, the <xref:System.Windows.UIElement>.  The <xref:System.Windows.Controls.Decorator> may or may not have an appearance.  For example, a <xref:System.Windows.Controls.Border> puts a rectangle around a control, but a <xref:System.Windows.Controls.Viewbox> has no visual presence.  
+  
+   
+  
+## Examples  
+ The following example adds a <xref:System.Windows.Controls.TextBox> the <xref:System.Windows.Controls.Decorator.Child%2A> property of a <xref:System.Windows.Controls.Border>.  
+  
+ **Note** The [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] version of the example could use the `<Border.Child>` tags around the content of the <xref:System.Windows.Controls.Border>, but it is not necessary because the <xref:System.Windows.Controls.Decorator> applies the <xref:System.Windows.Markup.ContentPropertyAttribute> to the <xref:System.Windows.Controls.Decorator.Child%2A> property. For more information, see [XAML Overview (WPF)](../Topic/XAML%20Overview%20\(WPF\).md).  
+  
+ [!code-xml[Border_snip#SimpleBorderWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/Border_snip/CS/simpleborder.xaml#simpleborderwholepage)]  
+  
+ [!code-csharp[Border_Procedural_snip#BasicBorderCodeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/Border_Procedural_snip/CSharp/BasicBorderExample.cs#basicbordercodeexamplewholepage)]
+ [!code-vb[Border_Procedural_snip#BasicBorderCodeExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Border_Procedural_snip/visualbasic/basicborderexample.vb#basicbordercodeexamplewholepage)]  
+  
+ The preceding example produces output that is similar to the following illustration.  
+  
+ ![TextBox with black border](~/add/media/layout-border-around-textbox.png "TextBox with black border")  
+Border around a TextBox  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,7 +62,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Decorator" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,9 +82,9 @@
         <Parameter Name="arrangeSize" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="arrangeSize">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="arrangeSize">The <see cref="T:System.Windows.Size" /> this element uses to arrange its child content.</param>
+        <summary>Arranges the content of a <see cref="T:System.Windows.Controls.Decorator" /> element.</summary>
+        <returns>The <see cref="T:System.Windows.Size" /> that represents the arranged size of this <see cref="T:System.Windows.Controls.Decorator" /> element and its child.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,9 +106,16 @@
         <ReturnType>System.Windows.UIElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the single child element of a <see cref="T:System.Windows.Controls.Decorator" />.</summary>
+        <value>The single child element of a <see cref="T:System.Windows.Controls.Decorator" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Controls.Decorator> enforces a strong content model for child content. The <xref:System.Windows.Controls.Decorator.Child%2A> property of a <xref:System.Windows.Controls.Decorator> must be a single <xref:System.Windows.UIElement>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetVisualChild">
@@ -103,10 +134,19 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="index">Index position of the child element.</param>
+        <summary>Gets the child <see cref="T:System.Windows.Media.Visual" /> element at the specified <paramref name="index" /> position.</summary>
+        <returns>The child element at the specified <paramref name="index" /> position.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because <xref:System.Windows.Controls.Decorator.Child%2A> can equal only 0 or 1, specifying an `index` position greater than 1 or less than 0 results in an <xref:System.ArgumentOutOfRangeException>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is greater than the number of visual child elements.</exception>
       </Docs>
     </Member>
     <Member MemberName="LogicalChildren">
@@ -122,8 +162,8 @@
         <ReturnType>System.Collections.IEnumerator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an enumerator that can be used to iterate the logical child elements of a <see cref="T:System.Windows.Controls.Decorator" />.</summary>
+        <value>An enumerator that can be used to iterate the logical child elements of a <see cref="T:System.Windows.Controls.Decorator" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,10 +183,17 @@
         <Parameter Name="constraint" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="constraint">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="constraint">An upper limit <see cref="T:System.Windows.Size" /> that should not be exceeded.</param>
+        <summary>Measures the child element of a <see cref="T:System.Windows.Controls.Decorator" /> to prepare for arranging it during the <see cref="M:System.Windows.Controls.Decorator.ArrangeOverride(System.Windows.Size)" /> pass.</summary>
+        <returns>The target <see cref="T:System.Windows.Size" /> of the element.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Controls.Decorator> determines its desired size by analyzing its child element's sizing properties, margin, and requested size.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Markup.IAddChild.AddChild">
@@ -165,8 +212,8 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">An object to add as a child.</param>
+        <summary>This type or member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,8 +233,8 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="text">A string to add to the object.</param>
+        <summary>This type or member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -204,9 +251,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that is equal to the number of visual child elements of this instance of <see cref="T:System.Windows.Controls.Decorator" />.</summary>
+        <value>The number of visual child elements.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because a <xref:System.Windows.Controls.Decorator> can have only one child object in its child collection, this property always reports  0 or 1.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

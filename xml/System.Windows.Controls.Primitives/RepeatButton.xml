@@ -11,8 +11,34 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a control that raises its <see cref="E:System.Windows.Controls.Primitives.ButtonBase.Click" /> event repeatedly from the time it is pressed until it is released.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Controls.Primitives.RepeatButton> is a <xref:System.Windows.Controls.ContentControl>, which means that it can contain a single object of any type (such as a string, an image, or a panel). For more information, see the <xref:System.Windows.Controls.ContentControl> class.  
+  
+ The <xref:System.Windows.Controls.Primitives.RepeatButton> class represents a control that is similar to a <xref:System.Windows.Controls.Button>. However, repeat buttons give you control over when and how the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event occurs. The <xref:System.Windows.Controls.Primitives.RepeatButton> raises the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event repeatedly from the time it is pressed until it is released. The <xref:System.Windows.Controls.Primitives.RepeatButton.Delay%2A> property determines when the event begins. You can also control the interval of the repetitions with the <xref:System.Windows.Controls.Primitives.RepeatButton.Interval%2A> property.  
+  
+## Customizing the RepeatButton Control  
+ To apply the same property settings to multiple <xref:System.Windows.Controls.Primitives.RepeatButton> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../Topic/Customizing%20the%20Appearance%20of%20an%20Existing%20Control%20by%20Creating%20a%20ControlTemplate.md).  To see the parts and states that are specific to the <xref:System.Windows.Controls.Primitives.RepeatButton>, see [RepeatButton Syles and Templates](../Topic/RepeatButton%20Syles%20and%20Templates.md).  
+  
+ Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
+  
+> [!NOTE]
+>  Setting a visual property will only have an effect if that property is both present in Button control's default template and is set by using a . You can find a list of visual properties in the "Changing the Visual Structure of a Control" section in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../Topic/Customizing%20the%20Appearance%20of%20an%20Existing%20Control%20by%20Creating%20a%20ControlTemplate.md).  
+  
+   
+  
+## Examples  
+ The following example shows how to create a <xref:System.Windows.Controls.Primitives.RepeatButton>.  
+  
+ [!code-xml[RepeatButton#1](~/samples/snippets/csharp/VS_Snippets_Wpf/RepeatButton/CSharp/Pane1.xaml#1)]  
+[!code-csharp[RepeatButton#2](~/samples/snippets/csharp/VS_Snippets_Wpf/RepeatButton/CSharp/Pane1.xaml.cs#2)]
+[!code-vb[RepeatButton#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RepeatButton/VisualBasic/Pane1.xaml.vb#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +52,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Primitives.RepeatButton" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,9 +77,30 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the amount of time, in milliseconds, the <see cref="T:System.Windows.Controls.Primitives.RepeatButton" /> waits while it is pressed before it starts repeating. The value must be non-negative.</summary>
+        <value>The amount of time, in milliseconds, the <see cref="T:System.Windows.Controls.Primitives.RepeatButton" /> waits while it is pressed before it starts repeating. The default is the value of <see cref="P:System.Windows.SystemParameters.KeyboardDelay" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_Delay"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Primitives.RepeatButton>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Controls.Primitives.RepeatButton.Delay%2A> property to set the time that a <xref:System.Windows.Controls.Primitives.RepeatButton> waits before it starts repeating.  
+  
+ [!code-xml[RepeatButton#1](~/samples/snippets/csharp/VS_Snippets_Wpf/RepeatButton/CSharp/Pane1.xaml#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DelayProperty">
@@ -69,7 +116,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Primitives.RepeatButton.Delay" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,9 +141,30 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the amount of time, in milliseconds, between repeats once repeating starts. The value must be non-negative.</summary>
+        <value>The amount of time, in milliseconds, between repeats after repeating starts. The default is the value of <see cref="P:System.Windows.SystemParameters.KeyboardSpeed" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_Interval"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Primitives.RepeatButton.IntervalProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Controls.Primitives.RepeatButton.Interval%2A> property to set the time between repeats after the <xref:System.Windows.Controls.Primitives.RepeatButton> starts repeating.  
+  
+ [!code-xml[RepeatButton#1](~/samples/snippets/csharp/VS_Snippets_Wpf/RepeatButton/CSharp/Pane1.xaml#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IntervalProperty">
@@ -112,7 +180,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Primitives.RepeatButton.Interval" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -130,7 +198,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Raises an automation event and calls the base method to raise the <see cref="E:System.Windows.Controls.Primitives.ButtonBase.Click" /> event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -148,8 +216,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Provides an appropriate <see cref="T:System.Windows.Automation.Peers.RepeatButtonAutomationPeer" /> implementation for this control, as part of the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] infrastructure.</summary>
+        <returns>The type-specific <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> implementation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -169,8 +237,8 @@
         <Parameter Name="e" Type="System.Windows.Input.KeyEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">The event data for a <see cref="E:System.Windows.UIElement.KeyDown" /> event.</param>
+        <summary>Responds to the <see cref="E:System.Windows.UIElement.KeyDown" /> event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -190,8 +258,8 @@
         <Parameter Name="e" Type="System.Windows.Input.KeyEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">The event data for a <see cref="E:System.Windows.UIElement.KeyUp" /> event.</param>
+        <summary>Responds to the <see cref="E:System.Windows.UIElement.KeyUp" /> event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -211,8 +279,8 @@
         <Parameter Name="e" Type="System.Windows.Input.MouseEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">The event data for a <see cref="E:System.Windows.UIElement.LostMouseCapture" /> event.</param>
+        <summary>Called when a <see cref="T:System.Windows.Controls.Primitives.RepeatButton" /> loses mouse capture.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -232,8 +300,8 @@
         <Parameter Name="e" Type="System.Windows.Input.MouseEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">The event data for a <see cref="E:System.Windows.UIElement.MouseEnter" /> event.</param>
+        <summary>Reports when the mouse enters an element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -253,8 +321,8 @@
         <Parameter Name="e" Type="System.Windows.Input.MouseEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">The event data for a <see cref="E:System.Windows.UIElement.MouseLeave" /> event.</param>
+        <summary>Reports when the mouse leaves an element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -274,8 +342,8 @@
         <Parameter Name="e" Type="System.Windows.Input.MouseButtonEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">The event data for a <see cref="E:System.Windows.UIElement.MouseLeftButtonDown" /> event.</param>
+        <summary>Responds to the <see cref="E:System.Windows.UIElement.MouseLeftButtonDown" /> event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -295,8 +363,8 @@
         <Parameter Name="e" Type="System.Windows.Input.MouseButtonEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">The event data for a <see cref="E:System.Windows.ContentElement.MouseLeftButtonUp" /> event.</param>
+        <summary>Responds to the <see cref="E:System.Windows.UIElement.MouseLeftButtonUp" /> event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,4 +1,6 @@
 ---
 uid: System.ComponentModel.Composition.ReflectionModel
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

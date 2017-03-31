@@ -1,9 +1,13 @@
 ---
 uid: System.ServiceModel.Dispatcher.IInstanceContextInitializer
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.IInstanceContextInitializer.Initialize(System.ServiceModel.InstanceContext,System.ServiceModel.Channels.Message)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

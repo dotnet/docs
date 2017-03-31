@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Input.StylusPlugIns
-internalonly: False
+ms.author: "kbridge"
+manager: "leannef"
 ---

@@ -1,9 +1,11 @@
 ---
 uid: System.NetTcpStyleUriParser
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.NetTcpStyleUriParser.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

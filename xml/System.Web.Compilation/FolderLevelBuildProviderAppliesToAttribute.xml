@@ -16,8 +16,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines an attribute that specifies the scope where a <see cref="T:System.Web.Configuration.FolderLevelBuildProvider" /> object should be applied when a resource is located.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.FolderLevelBuildProvider> class parses and generates code during compilation for a resource that has a specific file. The <xref:System.Web.Compilation.FolderLevelBuildProviderAppliesToAttribute> attribute defines the location scope for which the <xref:System.Web.Configuration.FolderLevelBuildProvider> object will be called.  
+  
+ By setting the <xref:System.Web.Compilation.FolderLevelBuildProviderAppliesToAttribute> attribute, you can limit a <xref:System.Web.Configuration.FolderLevelBuildProvider> object to certain [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] directories, such as App_Code.  
+  
+ If you do not apply a <xref:System.Web.Compilation.FolderLevelBuildProviderAppliesToAttribute> attribute to a <xref:System.Web.Configuration.FolderLevelBuildProvider> class, by default, the attribute targets all directories.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,8 +44,8 @@
         <Parameter Name="appliesTo" Type="System.Web.Compilation.FolderLevelBuildProviderAppliesTo" />
       </Parameters>
       <Docs>
-        <param name="appliesTo">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="appliesTo">The target directory that a <see cref="T:System.Web.Configuration.FolderLevelBuildProvider" /> object applies to.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Compilation.FolderLevelBuildProviderAppliesToAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +62,8 @@
         <ReturnType>System.Web.Compilation.FolderLevelBuildProviderAppliesTo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the target directory that a <see cref="T:System.Web.Configuration.FolderLevelBuildProvider" /> object applies to.</summary>
+        <value>The directory that a <see cref="T:System.Web.Configuration.FolderLevelBuildProvider" /> object applies to.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

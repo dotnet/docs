@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a collection of <see cref="T:System.Web.Configuration.FolderLevelBuildProvider" /> objects.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.FolderLevelBuildProviderCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +51,8 @@
         <Parameter Name="buildProvider" Type="System.Web.Configuration.FolderLevelBuildProvider" />
       </Parameters>
       <Docs>
-        <param name="buildProvider">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="buildProvider">The <see cref="T:System.Web.Configuration.FolderLevelBuildProvider" /> object to add.</param>
+        <summary>Adds a <see cref="T:System.Web.Configuration.FolderLevelBuildProvider" /> object to the <see cref="T:System.Web.Configuration.FolderLevelBuildProviderCollection" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,7 +70,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Clears all <see cref="T:System.Web.Configuration.FolderLevelBuildProvider" /> objects from the <see cref="T:System.Web.Configuration.FolderLevelBuildProviderCollection" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,9 +131,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The index of the <see cref="T:System.Web.Configuration.FolderLevelBuildProvider" /> object to get.</param>
+        <summary>Gets a <see cref="T:System.Web.Configuration.FolderLevelBuildProvider" /> object at the specified index in the <see cref="T:System.Web.Configuration.FolderLevelBuildProviderCollection" /> object.</summary>
+        <value>The folder-level build provider object that is located at the specified index.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,9 +153,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="name">The name of the <see cref="T:System.Web.Configuration.FolderLevelBuildProvider" /> to get.</param>
+        <summary>Gets the <see cref="T:System.Web.Configuration.FolderLevelBuildProvider" /> object that has the specified name.</summary>
+        <value>The folder-level build provider object that has the specified name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -193,8 +193,8 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The <see cref="T:System.Web.Configuration.FolderLevelBuildProvider" /> object to remove.</param>
+        <summary>Removes a <see cref="T:System.Web.Configuration.FolderLevelBuildProvider" /> object from the <see cref="T:System.Web.Configuration.FolderLevelBuildProviderCollection" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -214,8 +214,8 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The index of the <see cref="T:System.Web.Configuration.FolderLevelBuildProvider" /> object to remove.</param>
+        <summary>Removes a <see cref="T:System.Web.Configuration.FolderLevelBuildProvider" /> object at the specified index in a <see cref="T:System.Web.Configuration.FolderLevelBuildProviderCollection" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

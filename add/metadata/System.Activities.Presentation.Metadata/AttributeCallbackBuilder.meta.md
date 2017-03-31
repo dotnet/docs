@@ -1,34 +1,55 @@
 ---
 uid: System.Activities.Presentation.Metadata.AttributeCallbackBuilder
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.Metadata.AttributeCallbackBuilder.AddCustomAttributes(System.Attribute[])
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.Metadata.AttributeCallbackBuilder.AddCustomAttributes(System.String,System.Attribute[])
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Presentation.Metadata.AttributeCallbackBuilder.AddCustomAttributes
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.Metadata.AttributeCallbackBuilder.AddCustomAttributes(System.Reflection.MemberInfo,System.Attribute[])
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.Metadata.AttributeCallbackBuilder.CallbackType
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.Metadata.AttributeCallbackBuilder.AddCustomAttributes(System.Windows.DependencyProperty,System.Attribute[])
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.Metadata.AttributeCallbackBuilder.AddCustomAttributes(System.ComponentModel.MemberDescriptor,System.Attribute[])
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

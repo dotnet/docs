@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>An enumeration that lists the ways in which security tokens are attached.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration specifies the signing and encrypting relationships between a message and its signature.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Endorsing">
@@ -27,7 +34,7 @@
         <ReturnType>System.ServiceModel.Security.SecurityTokenAttachmentMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The token is used to sign the message signature.</summary>
       </Docs>
     </Member>
     <Member MemberName="Signed">
@@ -43,7 +50,7 @@
         <ReturnType>System.ServiceModel.Security.SecurityTokenAttachmentMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The token is included in the message signature.</summary>
       </Docs>
     </Member>
     <Member MemberName="SignedEncrypted">
@@ -59,7 +66,7 @@
         <ReturnType>System.ServiceModel.Security.SecurityTokenAttachmentMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The token is included in the message signature and is encrypted.</summary>
       </Docs>
     </Member>
     <Member MemberName="SignedEndorsing">
@@ -75,7 +82,7 @@
         <ReturnType>System.ServiceModel.Security.SecurityTokenAttachmentMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The token is included in and signs the message signature.</summary>
       </Docs>
     </Member>
   </Members>

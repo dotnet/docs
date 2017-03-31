@@ -1,19 +1,26 @@
 ---
 uid: System.Windows.Media.TextFormatting.CultureSpecificCharacterBufferRange
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.CultureSpecificCharacterBufferRange.CharacterBufferRange
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.CultureSpecificCharacterBufferRange.CultureInfo
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.CultureSpecificCharacterBufferRange.#ctor(System.Globalization.CultureInfo,System.Windows.Media.TextFormatting.CharacterBufferRange)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

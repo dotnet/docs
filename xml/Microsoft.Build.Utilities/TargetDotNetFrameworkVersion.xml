@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] to use with the methods in <see cref="T:Microsoft.Build.Utilities.ToolLocationHelper" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>Microsoft.Build.Utilities.TargetDotNetFrameworkVersion</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] version 1.1.</summary>
       </Docs>
     </Member>
     <Member MemberName="Version20">
@@ -43,7 +43,7 @@
         <ReturnType>Microsoft.Build.Utilities.TargetDotNetFrameworkVersion</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] version 2.0.</summary>
       </Docs>
     </Member>
     <Member MemberName="Version30">
@@ -59,7 +59,7 @@
         <ReturnType>Microsoft.Build.Utilities.TargetDotNetFrameworkVersion</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] version 3.0.</summary>
       </Docs>
     </Member>
     <Member MemberName="Version35">
@@ -75,7 +75,7 @@
         <ReturnType>Microsoft.Build.Utilities.TargetDotNetFrameworkVersion</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] version 3.5.</summary>
       </Docs>
     </Member>
     <Member MemberName="Version40">
@@ -91,7 +91,7 @@
         <ReturnType>Microsoft.Build.Utilities.TargetDotNetFrameworkVersion</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>version 4.0</summary>
       </Docs>
     </Member>
     <Member MemberName="Version45">
@@ -107,7 +107,7 @@
         <ReturnType>Microsoft.Build.Utilities.TargetDotNetFrameworkVersion</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>version 4.5</summary>
       </Docs>
     </Member>
     <Member MemberName="VersionLatest">
@@ -123,7 +123,7 @@
         <ReturnType>Microsoft.Build.Utilities.TargetDotNetFrameworkVersion</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the most recent released version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)].</summary>
       </Docs>
     </Member>
   </Members>

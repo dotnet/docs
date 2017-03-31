@@ -1,14 +1,17 @@
 ---
 uid: System.Configuration.Internal.IInternalConfigSettingsFactory
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.Internal.IInternalConfigSettingsFactory.SetConfigurationSystem(System.Configuration.Internal.IInternalConfigSystem,System.Boolean)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.Internal.IInternalConfigSettingsFactory.CompleteInit
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

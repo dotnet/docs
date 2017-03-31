@@ -1,4 +1,6 @@
 ---
 uid: System.Data.UpdateRowSource
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

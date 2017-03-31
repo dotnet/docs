@@ -22,7 +22,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the attributes of a property.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -40,7 +40,7 @@
         <ReturnType>System.Data.PropertyAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The property is not supported by the provider.</summary>
       </Docs>
     </Member>
     <Member MemberName="Optional">
@@ -57,7 +57,7 @@
         <ReturnType>System.Data.PropertyAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The user does not need to specify a value for this property before the data source is initialized.</summary>
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -74,7 +74,7 @@
         <ReturnType>System.Data.PropertyAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The user can read the property.</summary>
       </Docs>
     </Member>
     <Member MemberName="Required">
@@ -91,7 +91,7 @@
         <ReturnType>System.Data.PropertyAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The user must specify a value for this property before the data source is initialized.</summary>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -108,7 +108,7 @@
         <ReturnType>System.Data.PropertyAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The user can write to the property.</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,6 @@
 ---
 uid: System.Drawing.Printing.PaperSourceKind
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -1,14 +1,17 @@
 ---
 uid: System.Web.Configuration.PassportAuthentication
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.PassportAuthentication.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.PassportAuthentication.RedirectUrl
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

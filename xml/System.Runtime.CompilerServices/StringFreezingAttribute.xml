@@ -21,8 +21,31 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Deprecated. Freezes a string literal when creating native images using the [Ngen.exe (Native Image Generator)](../Topic/Ngen.exe%20\(Native%20Image%20Generator\).md). This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  The <xref:System.Runtime.CompilerServices.StringFreezingAttribute> class has been deprecated in the .NET Framework version 3.5 Service Pack 1 (SP1) and later versions.  
+  
+ A frozen string is a string literal object that is compatible with the managed heap and has been serialized into a native image by the [Ngen.exe (Native Image Generator)](../Topic/Ngen.exe%20\(Native%20Image%20Generator\).md).  The <xref:System.Runtime.CompilerServices.StringFreezingAttribute> attribute allows you to optimize your code by pre-allocating string literals during native image generation rather than at run time.  After a string literal has been frozen, code can simply refer to the string using the address in the native image.  
+  
+ The <xref:System.Runtime.CompilerServices.StringFreezingAttribute> must be applied on the assembly level.  
+  
+ Note that the common language runtime (CLR) cannot unload any native image that has a frozen string because any object in the heap might refer to the frozen string.  Therefore, you should use the <xref:System.Runtime.CompilerServices.StringFreezingAttribute> class only in cases where the native image that contains the frozen string is shared heavily.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to apply the <xref:System.Runtime.CompilerServices.StringFreezingAttribute> to an assembly.  
+  
+ [!code-csharp[Runtime.CompilerServices.StringFreezingAttribute#1](~/samples/snippets/csharp/VS_Snippets_CLR/Runtime.CompilerServices.StringFreezingAttribute/cs/example.cs#1)]
+ [!code-vb[Runtime.CompilerServices.StringFreezingAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Runtime.CompilerServices.StringFreezingAttribute/vb/example.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,8 +64,18 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.CompilerServices.StringFreezingAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to apply the <xref:System.Runtime.CompilerServices.StringFreezingAttribute> to an assembly.  
+  
+ [!code-csharp[Runtime.CompilerServices.StringFreezingAttribute#1](~/samples/snippets/csharp/VS_Snippets_CLR/Runtime.CompilerServices.StringFreezingAttribute/cs/example.cs#1)]
+ [!code-vb[Runtime.CompilerServices.StringFreezingAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Runtime.CompilerServices.StringFreezingAttribute/vb/example.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

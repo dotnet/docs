@@ -20,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Merges several doc-order-distinct sequences into a single doc-order-distinct sequence.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -44,8 +44,8 @@
         <Parameter Name="sequence" Type="System.Collections.Generic.IList&lt;System.Xml.XPath.XPathNavigator&gt;" />
       </Parameters>
       <Docs>
-        <param name="sequence">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="sequence">An instance of the <see cref="T:System.Xml.XPath.XPathNavigator" /> class.</param>
+        <summary>Adds a new sequence to the list of sequences to merge.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,8 +69,8 @@
         <Parameter Name="runtime" Type="System.Xml.Xsl.Runtime.XmlQueryRuntime" />
       </Parameters>
       <Docs>
-        <param name="runtime">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="runtime">An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryRuntime" /> class, which provides methods and properties to support the XSLT processor.</param>
+        <summary>Initializes this instance of <see cref="T:System.Xml.Xsl.Runtime.DodSequenceMerge" /> .</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,8 +92,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the fully-merged sequence.</summary>
+        <returns>The fully-merged sequence.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

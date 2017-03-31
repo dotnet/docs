@@ -1,2 +1,0 @@
-   WindowsIdentity^ windowsIdentity = WindowsIdentity::GetAnonymous();
-   

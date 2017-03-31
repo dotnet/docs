@@ -1,4 +1,6 @@
 ---
 uid: System.Reflection.FieldAttributes
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

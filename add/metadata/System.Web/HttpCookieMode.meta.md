@@ -1,4 +1,5 @@
 ---
 uid: System.Web.HttpCookieMode
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -1,14 +1,20 @@
 ---
 uid: System.Web.ModelBinding.ControlValueProvider
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ModelBinding.ControlValueProvider.#ctor(System.Web.ModelBinding.ModelBindingExecutionContext,System.String)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ModelBinding.ControlValueProvider.PropertyName
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

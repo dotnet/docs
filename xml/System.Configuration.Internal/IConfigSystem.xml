@@ -8,7 +8,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines an interface used by the .NET Framework to support the initialization of configuration properties.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -25,8 +25,8 @@
         <ReturnType>System.Configuration.Internal.IInternalConfigHost</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the configuration host.</summary>
+        <value>An <see cref="T:System.Configuration.Internal.IInternalConfigHost" /> object that is used by the .NET Framework to initialize application configuration properties.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,9 +53,9 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="typeConfigHost">To be added.</param>
-        <param name="hostInitParams">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="typeConfigHost">The type of configuration host.</param>
+        <param name="hostInitParams">An array of configuration host parameters.</param>
+        <summary>Initializes a configuration object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,9 +72,16 @@
         <ReturnType>System.Configuration.Internal.IInternalConfigRoot</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the root of the configuration hierarchy.</summary>
+        <value>An <see cref="T:System.Configuration.Internal.IInternalConfigRoot" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.Internal.IInternalConfigRoot> object helps manage the creation, removal, and search of configuration records in a thread-safe manner.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

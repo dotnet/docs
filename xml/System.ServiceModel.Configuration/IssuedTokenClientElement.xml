@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a configuration element that specifies the token issued as a client credential. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.IssuedTokenClientElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +48,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that specifies whether issued tokens are to be cached.</summary>
+        <value>
+          <see langword="true" /> if tokens are to be cached; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,9 +70,12 @@
         <Parameter Name="from" Type="System.ServiceModel.Configuration.IssuedTokenClientElement" />
       </Parameters>
       <Docs>
-        <param name="from">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="from">A configuration section.</param>
+        <summary>Copies the content of the specified configuration element to this <see cref="T:System.ServiceModel.Configuration.IssuedTokenClientElement" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="from" /> is <see langword="null" /> or empty.</exception>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">The configuration file is read-only.</exception>
       </Docs>
     </Member>
     <Member MemberName="DefaultKeyEntropyMode">
@@ -92,8 +96,8 @@
         <ReturnType>System.ServiceModel.Security.SecurityKeyEntropyMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the default value of <see cref="T:System.ServiceModel.Security.SecurityKeyEntropyMode" />.</summary>
+        <value>A valid <see cref="T:System.ServiceModel.Security.SecurityKeyEntropyMode" /> value. The default value is <see cref="F:System.ServiceModel.Security.SecurityKeyEntropyMode.CombinedEntropy" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,8 +122,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the renewal threshold percentage for issued tokens.</summary>
+        <value>The renewal threshold percentage for issued tokens.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -141,8 +145,8 @@
         <ReturnType>System.ServiceModel.Configuration.IssuedTokenClientBehaviorsElementCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of configuration elements that define issuer channel behaviors.</summary>
+        <value>A collection of configuration elements that define issuer channel behaviors.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -164,8 +168,8 @@
         <ReturnType>System.ServiceModel.Configuration.IssuedTokenParametersEndpointAddressElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a configuration element that defines the address of the local issuer.</summary>
+        <value>A <see cref="T:System.ServiceModel.Configuration.IssuedTokenParametersEndpointAddressElement" /> that specifies the address of the local issuer.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -190,8 +194,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a collection of local issuer channel behaviors.</summary>
+        <value>A collection of local issuer channel behaviors. The default is an empty string.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -216,8 +220,8 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the maximum caching time for an issued token.</summary>
+        <value>A <see cref="T:System.TimeSpan" /> that represents the maximum caching time for an issued token.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

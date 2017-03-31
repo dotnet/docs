@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Manages a standard endpoint element for a service application configuration file.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Configuration.StandardEndpointElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,9 +47,9 @@
         <Parameter Name="channelEndpointElement" Type="System.ServiceModel.Configuration.ChannelEndpointElement" />
       </Parameters>
       <Docs>
-        <param name="endpoint">To be added.</param>
-        <param name="channelEndpointElement">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="endpoint">An endpoint that enables clients to find and communicate with the service.</param>
+        <param name="channelEndpointElement">An endpoint element that defines the physical transfer of messages back and forth between the client and the service.</param>
+        <summary>Applies the content of a specific service endpoint to the current channel endpoint element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,9 +70,9 @@
         <Parameter Name="serviceEndpointElement" Type="System.ServiceModel.Configuration.ServiceEndpointElement" />
       </Parameters>
       <Docs>
-        <param name="endpoint">To be added.</param>
-        <param name="serviceEndpointElement">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="endpoint">An endpoint that enables clients to find and communicate with the service.</param>
+        <param name="serviceEndpointElement">An endpoint element that defines how clients find and communicate with the service.</param>
+        <summary>Applies the content of a specific service endpoint to the current service endpoint element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,9 +92,9 @@
         <Parameter Name="contractDescription" Type="System.ServiceModel.Description.ContractDescription" />
       </Parameters>
       <Docs>
-        <param name="contractDescription">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="contractDescription">Information about what is contained in messages being sent from an endpoint.</param>
+        <summary>When implemented in a derived class, creates a service endpoint from message information contained in the specified contract description.</summary>
+        <returns>A service endpoint.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,8 +111,9 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Not implemented.</summary>
+        <value>
+          <see cref="T:System.Type" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,8 +133,8 @@
         <Parameter Name="channelEndpointElement" Type="System.ServiceModel.Configuration.ChannelEndpointElement" />
       </Parameters>
       <Docs>
-        <param name="channelEndpointElement">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="channelEndpointElement">An endpoint element that defines the physical transfer of messages back and forth between the client and the service.</param>
+        <summary>Initializes and verifies the format of the specified channel endpoint in a service application configuration file.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,8 +154,8 @@
         <Parameter Name="serviceEndpointElement" Type="System.ServiceModel.Configuration.ServiceEndpointElement" />
       </Parameters>
       <Docs>
-        <param name="serviceEndpointElement">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceEndpointElement">An endpoint element that enables clients to find and communicate with the service.</param>
+        <summary>Initializes and verifies the format of the specified service endpoint in a service application configuration file.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -174,8 +175,8 @@
         <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
       </Parameters>
       <Docs>
-        <param name="endpoint">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="endpoint">An endpoint that enables clients to find and communicate with the service.</param>
+        <summary>Ensures that the specified service endpoint is not <see langword="null" /> and that its type matches the current endpoint type.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -200,8 +201,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the current endpoint element from a list of configuration strings for that element.</summary>
+        <value>The name of an endpoint element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -222,9 +223,9 @@
         <Parameter Name="channelEndpointElement" Type="System.ServiceModel.Configuration.ChannelEndpointElement" />
       </Parameters>
       <Docs>
-        <param name="endpoint">To be added.</param>
-        <param name="channelEndpointElement">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="endpoint">An endpoint that enables clients to find and communicate with the service.</param>
+        <param name="channelEndpointElement">An endpoint element that defines the physical transfer of messages back and forth between the client and the service.</param>
+        <summary>When called from a derived class, loads the service description information from the configuration file and applies it to the runtime being constructed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -245,9 +246,9 @@
         <Parameter Name="serviceEndpointElement" Type="System.ServiceModel.Configuration.ServiceEndpointElement" />
       </Parameters>
       <Docs>
-        <param name="endpoint">To be added.</param>
-        <param name="serviceEndpointElement">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="endpoint">An endpoint that enables clients to find and communicate with the service.</param>
+        <param name="serviceEndpointElement">A service endpoint element of a service application.</param>
+        <summary>When called from a derived class, loads the service description information from the configuration file and applies it to the runtime being constructed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -267,8 +268,8 @@
         <Parameter Name="channelEndpointElement" Type="System.ServiceModel.Configuration.ChannelEndpointElement" />
       </Parameters>
       <Docs>
-        <param name="channelEndpointElement">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="channelEndpointElement">An endpoint element that defines the physical transfer of messages back and forth between the client and the service.</param>
+        <summary>When called from a derived class, initializes and verifies the format of the specified service endpoint in a service application configuration file.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -288,8 +289,8 @@
         <Parameter Name="serviceEndpointElement" Type="System.ServiceModel.Configuration.ServiceEndpointElement" />
       </Parameters>
       <Docs>
-        <param name="serviceEndpointElement">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceEndpointElement">A service endpoint element that enables clients to find and communicate with the service.</param>
+        <summary>When called from a derived class, initializes and verifies the format of the specified service endpoint in a service application configuration file.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -306,8 +307,8 @@
         <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the collection of properties of the current endpoint element.</summary>
+        <value>A collection of configuration element properties.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -332,8 +333,8 @@
         <Parameter Name="parentElement" Type="System.Configuration.ConfigurationElement" />
       </Parameters>
       <Docs>
-        <param name="parentElement">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="parentElement">The top level of a configuration element that has sub-elements.</param>
+        <summary>Resets the internal state of the <see cref="T:System.Configuration.ConfigurationElement" /> object, including the locks and the properties collections.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

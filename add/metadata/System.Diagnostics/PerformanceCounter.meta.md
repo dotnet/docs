@@ -1,134 +1,195 @@
 ---
 uid: System.Diagnostics.PerformanceCounter
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceCounter.IncrementBy(System.Int64)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceCounter.BeginInit
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceCounter.#ctor(System.String,System.String,System.Boolean)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceCounter.InstanceName
-internalonly: False
----
-
----
-uid: System.Diagnostics.PerformanceCounter.RawValue
-internalonly: False
----
-
----
-uid: System.Diagnostics.PerformanceCounter.InstanceLifetime
-internalonly: False
----
-
----
-uid: System.Diagnostics.PerformanceCounter.Increment
-internalonly: False
----
-
----
-uid: System.Diagnostics.PerformanceCounter.ReadOnly
-internalonly: False
----
-
----
-uid: System.Diagnostics.PerformanceCounter.NextValue
-internalonly: False
----
-
----
-uid: System.Diagnostics.PerformanceCounter.Close
-internalonly: False
----
-
----
-uid: System.Diagnostics.PerformanceCounter.NextSample
-internalonly: False
----
-
----
-uid: System.Diagnostics.PerformanceCounter.#ctor(System.String,System.String)
-internalonly: False
----
-
----
-uid: System.Diagnostics.PerformanceCounter.CounterType
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceCounter.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.PerformanceCounter.RawValue
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.PerformanceCounter.InstanceLifetime
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.PerformanceCounter.Increment
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.PerformanceCounter.ReadOnly
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.PerformanceCounter.NextValue
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.PerformanceCounter.Close
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.PerformanceCounter.NextSample
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.PerformanceCounter.#ctor(System.String,System.String)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.PerformanceCounter.CounterType
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.PerformanceCounter.#ctor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceCounter.Decrement
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceCounter.CloseSharedResources
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceCounter.CounterHelp
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceCounter.#ctor(System.String,System.String,System.String,System.String)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceCounter.MachineName
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceCounter.CounterName
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceCounter.#ctor(System.String,System.String,System.String,System.Boolean)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceCounter.RemoveInstance
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceCounter.#ctor(System.String,System.String,System.String)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceCounter.DefaultFileMappingSize
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceCounter.EndInit
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceCounter.CategoryName
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

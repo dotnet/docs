@@ -1,39 +1,62 @@
 ---
 uid: System.Activities.Tracking.WorkflowInstanceUnhandledExceptionRecord
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Tracking.WorkflowInstanceUnhandledExceptionRecord.#ctor(System.Guid,System.String,System.Activities.Tracking.ActivityInfo,System.Exception,System.Activities.WorkflowIdentity)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Tracking.WorkflowInstanceUnhandledExceptionRecord.#ctor(System.Guid,System.Int64,System.String,System.Activities.Tracking.ActivityInfo,System.Exception)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Tracking.WorkflowInstanceUnhandledExceptionRecord.#ctor(System.Guid,System.String,System.Activities.Tracking.ActivityInfo,System.Exception)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Tracking.WorkflowInstanceUnhandledExceptionRecord.FaultSource
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Tracking.WorkflowInstanceUnhandledExceptionRecord.ToString
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Tracking.WorkflowInstanceUnhandledExceptionRecord.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Tracking.WorkflowInstanceUnhandledExceptionRecord.UnhandledException
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Tracking.WorkflowInstanceUnhandledExceptionRecord.#ctor(System.Guid,System.Int64,System.String,System.Activities.Tracking.ActivityInfo,System.Exception,System.Activities.WorkflowIdentity)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

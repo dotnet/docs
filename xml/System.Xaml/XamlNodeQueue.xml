@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a buffer for writing nodes and reading them again.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Nodes are consumed from the <xref:System.Xaml.XamlNodeQueue> when they are read by the XAML reader. If you require a list of XAML nodes that can be replayed, or a list model that supports random access, see <xref:System.Xaml.XamlNodeList>.  
+  
+ When you create a <xref:System.Xaml.XamlNodeQueue>, you create a writer delegate that exists as the <xref:System.Xaml.XamlNodeQueue.Writer%2A> value. The writer delegate is based on an internal XAML writer class that is specifically for XAML nodes.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,9 +37,18 @@
         <Parameter Name="schemaContext" Type="System.Xaml.XamlSchemaContext" />
       </Parameters>
       <Docs>
-        <param name="schemaContext">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="schemaContext">The schema context to use for node operations.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlNodeQueue" /> class using a provided XAML schema context.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The schema context is applied to the XAML writer that exists as the <xref:System.Xaml.XamlNodeQueue.Writer%2A> value.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="xamlSchemaContext" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -46,8 +64,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of nodes in the <see cref="T:System.Xaml.XamlNodeQueue" />.</summary>
+        <value>The number of nodes in the <see cref="T:System.Xaml.XamlNodeQueue" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +82,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that determines whether this <see cref="T:System.Xaml.XamlNodeQueue" /> does not contain nodes.</summary>
+        <value>
+          <see langword="true" /> if this <see cref="T:System.Xaml.XamlNodeQueue" /> does not contain nodes; <see langword="false" /> if this <see cref="T:System.Xaml.XamlNodeQueue" /> contains nodes.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,9 +101,10 @@
         <ReturnType>System.Xaml.XamlReader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a XAML reader implementation delegate.</summary>
+        <value>A XAML reader implementation delegate.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Xaml.XamlException">The XAML writer that is used for the node list has no valid XAML schema context.</exception>
       </Docs>
     </Member>
     <Member MemberName="Writer">
@@ -100,8 +120,8 @@
         <ReturnType>System.Xaml.XamlWriter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the associated XAML writer.</summary>
+        <value>The associated XAML writer.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

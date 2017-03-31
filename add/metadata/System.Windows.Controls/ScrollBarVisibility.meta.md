@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Controls.ScrollBarVisibility
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

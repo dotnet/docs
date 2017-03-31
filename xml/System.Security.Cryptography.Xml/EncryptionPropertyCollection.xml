@@ -15,8 +15,25 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a collection of <see cref="T:System.Security.Cryptography.Xml.EncryptionProperty" /> classes used in XML encryption. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Cryptography.Xml.EncryptionProperty> class encapsulates the `<EncryptionProperty>` element defined by the World Wide Web Consortium XML Encryption specification located at http://www.w3.org/TR/xmlenc-core/.  
+  
+ Use the <xref:System.Security.Cryptography.Xml.EncryptionProperty> class to provide additional encryption information related to the <xref:System.Security.Cryptography.Xml.EncryptedData> and <xref:System.Security.Cryptography.Xml.EncryptedKey> elements.  For example, you can use this class to specify a time stamp.  
+  
+   
+  
+## Examples  
+ The following code example encrypts and decrypts an XML document.  This code example creates an <xref:System.Security.Cryptography.Xml.EncryptionProperty> object that contains custom information about the <xref:System.Security.Cryptography.Xml.EncryptedKey> element, and adds the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object to the <xref:System.Security.Cryptography.Xml.EncryptionPropertyCollection> collection of the <xref:System.Security.Cryptography.Xml.EncryptedXml> class.  Finally, this code example displays information about the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object and the <xref:System.Security.Cryptography.Xml.EncryptionPropertyCollection> collection.  
+  
+ [!code-csharp[Cryptography.XML.EncryptionProperty#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.EncryptionProperty/cs/sample.cs#1)]
+ [!code-vb[Cryptography.XML.EncryptionProperty#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.EncryptionProperty/vb/sample.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,8 +47,18 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.EncryptionPropertyCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example encrypts and decrypts an XML document.  This code example creates an <xref:System.Security.Cryptography.Xml.EncryptionProperty> object that contains custom information about the <xref:System.Security.Cryptography.Xml.EncryptedKey> element, and adds the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object to the <xref:System.Security.Cryptography.Xml.EncryptionPropertyCollection> collection of the <xref:System.Security.Cryptography.Xml.EncryptedXml> class.  Finally, this code example displays information about the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object and the <xref:System.Security.Cryptography.Xml.EncryptionPropertyCollection> collection.  
+  
+ [!code-csharp[Cryptography.XML.EncryptionProperty#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.EncryptionProperty/cs/sample.cs#1)]
+ [!code-vb[Cryptography.XML.EncryptionProperty#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.EncryptionProperty/vb/sample.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -50,10 +77,20 @@
         <Parameter Name="value" Type="System.Security.Cryptography.Xml.EncryptionProperty" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">An <see cref="T:System.Security.Cryptography.Xml.EncryptionProperty" /> object to add to the <see cref="T:System.Security.Cryptography.Xml.EncryptionPropertyCollection" /> object.</param>
+        <summary>Adds an <see cref="T:System.Security.Cryptography.Xml.EncryptionProperty" /> object to the <see cref="T:System.Security.Cryptography.Xml.EncryptionPropertyCollection" /> object.</summary>
+        <returns>The position at which the new element is inserted.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example encrypts and decrypts an XML document.  This code example creates an <xref:System.Security.Cryptography.Xml.EncryptionProperty> object that contains custom information about the <xref:System.Security.Cryptography.Xml.EncryptedKey> element, and adds the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object to the <xref:System.Security.Cryptography.Xml.EncryptionPropertyCollection> collection of the <xref:System.Security.Cryptography.Xml.EncryptedXml> class.  Finally, this code example displays information about the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object and the <xref:System.Security.Cryptography.Xml.EncryptionPropertyCollection> collection.  
+  
+ [!code-csharp[Cryptography.XML.EncryptionProperty#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.EncryptionProperty/cs/sample.cs#1)]
+ [!code-vb[Cryptography.XML.EncryptionProperty#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.EncryptionProperty/vb/sample.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -70,7 +107,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes all items from the <see cref="T:System.Security.Cryptography.Xml.EncryptionPropertyCollection" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,9 +127,10 @@
         <Parameter Name="value" Type="System.Security.Cryptography.Xml.EncryptionProperty" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.Security.Cryptography.Xml.EncryptionProperty" /> object to locate in the <see cref="T:System.Security.Cryptography.Xml.EncryptionPropertyCollection" /> object.</param>
+        <summary>Determines whether the <see cref="T:System.Security.Cryptography.Xml.EncryptionPropertyCollection" /> object contains a specific <see cref="T:System.Security.Cryptography.Xml.EncryptionProperty" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Security.Cryptography.Xml.EncryptionProperty" /> object is found in the <see cref="T:System.Security.Cryptography.Xml.EncryptionPropertyCollection" /> object; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,9 +151,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">The one-dimensional <see cref="T:System.Array" /> object that is the destination of the elements copied from the <see cref="T:System.Security.Cryptography.Xml.EncryptionPropertyCollection" /> object. The array must have zero-based indexing.</param>
+        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <summary>Copies the elements of the <see cref="T:System.Security.Cryptography.Xml.EncryptionPropertyCollection" /> object to an array, starting at a particular array index.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,9 +174,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">The one-dimensional array of  <see cref="T:System.Security.Cryptography.Xml.EncryptionProperty" /> objects that is the destination of the elements copied from the <see cref="T:System.Security.Cryptography.Xml.EncryptionPropertyCollection" /> object. The array must have zero-based indexing.</param>
+        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <summary>Copies the elements of the <see cref="T:System.Security.Cryptography.Xml.EncryptionPropertyCollection" /> object to an array of <see cref="T:System.Security.Cryptography.Xml.EncryptionProperty" /> objects, starting at a particular array index.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,9 +193,19 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of elements contained in the <see cref="T:System.Security.Cryptography.Xml.EncryptionPropertyCollection" /> object.</summary>
+        <value>The number of elements contained in the <see cref="T:System.Security.Cryptography.Xml.EncryptionPropertyCollection" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example encrypts and decrypts an XML document.  This code example creates an <xref:System.Security.Cryptography.Xml.EncryptionProperty> object that contains custom information about the <xref:System.Security.Cryptography.Xml.EncryptedKey> element, and adds the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object to the <xref:System.Security.Cryptography.Xml.EncryptionPropertyCollection> collection of the <xref:System.Security.Cryptography.Xml.EncryptedXml> class.  Finally, this code example displays information about the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object and the <xref:System.Security.Cryptography.Xml.EncryptionPropertyCollection> collection.  
+  
+ [!code-csharp[Cryptography.XML.EncryptionProperty#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.EncryptionProperty/cs/sample.cs#1)]
+ [!code-vb[Cryptography.XML.EncryptionProperty#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.EncryptionProperty/vb/sample.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -174,9 +222,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns an enumerator that iterates through an <see cref="T:System.Security.Cryptography.Xml.EncryptionPropertyCollection" /> object.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through an <see cref="T:System.Security.Cryptography.Xml.EncryptionPropertyCollection" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Enumerators allow only reading the data in the collection. Enumerators cannot be used to modify the underlying collection.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -195,9 +250,9 @@
         <Parameter Name="value" Type="System.Security.Cryptography.Xml.EncryptionProperty" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.Security.Cryptography.Xml.EncryptionProperty" /> object to locate in the <see cref="T:System.Security.Cryptography.Xml.EncryptionPropertyCollection" /> object.</param>
+        <summary>Determines the index of a specific item in the <see cref="T:System.Security.Cryptography.Xml.EncryptionPropertyCollection" /> object.</summary>
+        <returns>The index of <paramref name="value" /> if found in the collection; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -218,9 +273,9 @@
         <Parameter Name="value" Type="System.Security.Cryptography.Xml.EncryptionProperty" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The zero-based index at which <c>value</c> should be inserted.</param>
+        <param name="value">An <see cref="T:System.Security.Cryptography.Xml.EncryptionProperty" /> object to insert into the <see cref="T:System.Security.Cryptography.Xml.EncryptionPropertyCollection" /> object.</param>
+        <summary>Inserts an <see cref="T:System.Security.Cryptography.Xml.EncryptionProperty" /> object into the <see cref="T:System.Security.Cryptography.Xml.EncryptionPropertyCollection" /> object at the specified position.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -237,9 +292,19 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Security.Cryptography.Xml.EncryptionPropertyCollection" /> object has a fixed size.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Security.Cryptography.Xml.EncryptionPropertyCollection" /> object has a fixed size; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A collection with a fixed size does not allow the addition or removal of elements after the collection is created, but does allow the modification of existing elements.  
+  
+ A collection with a fixed size is simply a collection with a wrapper that prevents adding and removing elements. Therefore, if changes are made to the underlying collection, including the addition or removal of elements, the fixed-size collection reflects those changes.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -255,9 +320,19 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Security.Cryptography.Xml.EncryptionPropertyCollection" /> object is read-only.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Security.Cryptography.Xml.EncryptionPropertyCollection" /> object is read-only; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A collection that is read-only does not allow the addition, removal, or modification of elements after the collection is created.  
+  
+ A collection that is read-only is simply a collection with a wrapper that prevents modifying the collection; therefore, if changes are made to the underlying collection, the read-only collection reflects those changes.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -273,8 +348,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether access to the <see cref="T:System.Security.Cryptography.Xml.EncryptionPropertyCollection" /> object is synchronized (thread safe).</summary>
+        <value>
+          <see langword="true" /> if access to the <see cref="T:System.Security.Cryptography.Xml.EncryptionPropertyCollection" /> object is synchronized (thread safe); otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -294,9 +370,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="index">The index of the <see cref="T:System.Security.Cryptography.Xml.EncryptionProperty" /> object to return.</param>
+        <summary>Returns the <see cref="T:System.Security.Cryptography.Xml.EncryptionProperty" /> object at the specified index.</summary>
+        <returns>The <see cref="T:System.Security.Cryptography.Xml.EncryptionProperty" /> object at the specified index.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -316,9 +392,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The index of the <see cref="T:System.Security.Cryptography.Xml.EncryptionProperty" /> object to return.</param>
+        <summary>Gets or sets the <see cref="T:System.Security.Cryptography.Xml.EncryptionProperty" /> object at the specified index.</summary>
+        <value>The <see cref="T:System.Security.Cryptography.Xml.EncryptionProperty" /> object at the specified index.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -338,8 +414,8 @@
         <Parameter Name="value" Type="System.Security.Cryptography.Xml.EncryptionProperty" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The <see cref="T:System.Security.Cryptography.Xml.EncryptionProperty" /> object to remove from the <see cref="T:System.Security.Cryptography.Xml.EncryptionPropertyCollection" /> object.</param>
+        <summary>Removes the first occurrence of a specific <see cref="T:System.Security.Cryptography.Xml.EncryptionProperty" /> object from the <see cref="T:System.Security.Cryptography.Xml.EncryptionPropertyCollection" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -359,8 +435,8 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The zero-based index of the <see cref="T:System.Security.Cryptography.Xml.EncryptionProperty" /> object to remove.</param>
+        <summary>Removes the <see cref="T:System.Security.Cryptography.Xml.EncryptionProperty" /> object at the specified index.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -377,8 +453,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an object that can be used to synchronize access to the <see cref="T:System.Security.Cryptography.Xml.EncryptionPropertyCollection" /> object.</summary>
+        <value>An object that can be used to synchronize access to the <see cref="T:System.Security.Cryptography.Xml.EncryptionPropertyCollection" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -398,10 +474,12 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.Object" /> to add to the <see cref="T:System.Collections.IList" />.</param>
+        <summary>Adds an item to the <see cref="T:System.Collections.IList" />.</summary>
+        <returns>The position into which the new element was inserted.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> uses an incorrect object type.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Contains">
@@ -420,10 +498,13 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.Object" /> to locate in the <see cref="T:System.Collections.IList" />.</param>
+        <summary>Determines whether the <see cref="T:System.Collections.IList" /> contains a specific value.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Object" /> is found in the <see cref="T:System.Collections.IList" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> uses an incorrect object type.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IndexOf">
@@ -442,10 +523,12 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.Object" /> to locate in the <see cref="T:System.Collections.IList" />.</param>
+        <summary>Determines the index of a specific item in the <see cref="T:System.Collections.IList" />.</summary>
+        <returns>The index of <paramref name="value" /> if found in the list; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> uses an incorrect object type.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Insert">
@@ -465,10 +548,12 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The zero-based index at which <c>value</c> should be inserted.</param>
+        <param name="value">The <see cref="T:System.Object" /> to insert into the <see cref="T:System.Collections.IList" />.</param>
+        <summary>Inserts an item to the <see cref="T:System.Collections.IList" /> at the specified index.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> uses an incorrect object type.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Item">
@@ -487,9 +572,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The <see cref="T:System.Object" /> to remove from the <see cref="T:System.Collections.IList" />.</param>
+        <summary>Gets the element at the specified index.</summary>
+        <value>The element at the specified index.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -509,9 +594,11 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The <see cref="T:System.Object" /> to remove from the <see cref="T:System.Collections.IList" />.</param>
+        <summary>Removes the first occurrence of a specific object from the <see cref="T:System.Collections.IList" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> uses an incorrect object type.</exception>
       </Docs>
     </Member>
   </Members>

@@ -1,24 +1,41 @@
 ---
 uid: System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension.ProvideValue(System.IServiceProvider)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension.#ctor(System.ServiceModel.Dispatcher.XPathMessageContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension.Namespaces
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

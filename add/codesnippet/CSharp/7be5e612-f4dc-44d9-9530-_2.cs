@@ -1,1 +1,0 @@
-        IPermission pp1 = new PrincipalPermission("", "Administrator");

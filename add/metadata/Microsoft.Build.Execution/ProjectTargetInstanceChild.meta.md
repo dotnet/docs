@@ -1,29 +1,35 @@
 ---
 uid: Microsoft.Build.Execution.ProjectTargetInstanceChild
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ProjectTargetInstanceChild.Condition
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ProjectTargetInstanceChild.FullPath
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ProjectTargetInstanceChild.ConditionLocation
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ProjectTargetInstanceChild.Location
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ProjectTargetInstanceChild.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

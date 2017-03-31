@@ -1,34 +1,47 @@
 ---
 uid: System.IdentityModel.Protocols.WSTrust.RequestedProofToken
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.RequestedProofToken.ComputedKeyAlgorithm
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.RequestedProofToken.#ctor(System.String)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.RequestedProofToken.#ctor(System.IdentityModel.Protocols.WSTrust.ProtectedKey)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.RequestedProofToken.ProtectedKey
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.RequestedProofToken.#ctor(System.Byte[])
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Protocols.WSTrust.RequestedProofToken.#ctor
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.RequestedProofToken.#ctor(System.Byte[],System.IdentityModel.Tokens.EncryptingCredentials)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

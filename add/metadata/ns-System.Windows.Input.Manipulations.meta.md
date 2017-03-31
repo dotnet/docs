@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Input.Manipulations
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "adwilson"
 ---

@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Invokes the specified <see cref="T:System.Activities.ActivityDelegate" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Statements.InvokeDelegate" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,8 +74,8 @@
         <ReturnType>System.Activities.Activity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the default activity when invoke is not required.</summary>
+        <value>The default activity.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,8 +97,8 @@
         <ReturnType>System.Activities.ActivityDelegate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Activities.ActivityDelegate" /> to invoke.</summary>
+        <value>The delegate.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,9 +115,16 @@
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Activities.Argument&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>The arguments to be passed to the <see cref="P:System.Activities.Statements.InvokeDelegate.ActivityDelegate" />.</summary>
+        <value>The arguments to be passed to the delegate.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The keys are the names of the <xref:System.Activities.ActivityDelegateParameter> objects on the <xref:Activities.ActivityDelegate> and the values are the arguments whose expressions are evaluated and assigned to the corresponding <xref:System.Activities.ActivityDelegateParameter> objects.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">

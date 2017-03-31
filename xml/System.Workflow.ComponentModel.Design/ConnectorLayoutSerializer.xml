@@ -16,8 +16,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Serializes a connector layout.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ This class is also useful for customizing the serialization of connectors of classes derived from <xref:System.Workflow.ComponentModel.Design.Connector>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +42,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Design.ConnectorLayoutSerializer" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,11 +63,13 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="serializationManager">To be added.</param>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="serializationManager">The <see cref="T:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager" /> supporting this operation.</param>
+        <param name="type">The specified <see cref="T:System.Type" />.</param>
+        <summary>Creates an instance of the specified <see cref="T:System.Type" /> using the specified <see cref="T:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager" />.</summary>
+        <returns>An instance of the specified <see cref="T:System.Type" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="type" /> is a null reference (<see langword="Nothing" />).</exception>
       </Docs>
     </Member>
     <Member MemberName="GetConnectorConstructionArguments">
@@ -76,10 +89,10 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="serializationManager">To be added.</param>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="serializationManager">The <see cref="T:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager" /> that manages the serialization process.</param>
+        <param name="type">The specified <see cref="T:System.Type" />.</param>
+        <summary>Gets a Dictionary collection filled with element name and their associated values from the current position in the xml reader associated with the <see cref="T:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager" />.</summary>
+        <returns>Dictionary based collection containing the argument names and their associated values for the construction of the connector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,11 +113,13 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="serializationManager">To be added.</param>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="serializationManager">The <see cref="T:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager" /> that manages the serialization process.</param>
+        <param name="obj">The <see cref="T:System.Object" /> to search for properties.</param>
+        <summary>Retrieves information about all properties associated with the specified object.</summary>
+        <returns>A <see cref="T:System.Reflection.PropertyInfo" /> array that contains information about the properties associated with <paramref name="obj" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="serializationManager" /> or <paramref name="obj" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="OnAfterDeserialize">
@@ -124,9 +139,9 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="serializationManager">To be added.</param>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serializationManager">The <see cref="T:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager" /> that manages the serialization process.</param>
+        <param name="obj">The <see cref="T:System.Object" /> that was deserialized.</param>
+        <summary>Performs processing of the object after the deserialization process.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -14,7 +14,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a container for a collection of validation providers.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,7 +29,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.ModelValidatorProviderCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <Parameter Name="list" Type="System.Collections.Generic.IList&lt;System.Web.ModelBinding.ModelValidatorProvider&gt;" />
       </Parameters>
       <Docs>
-        <param name="list">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="list">The collection of validator providers.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.ModelValidatorProviderCollection" /> class using an existing collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,10 +68,10 @@
         <Parameter Name="context" Type="System.Web.ModelBinding.ModelBindingExecutionContext" />
       </Parameters>
       <Docs>
-        <param name="metadata">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="metadata">The metadata.</param>
+        <param name="context">The execution context.</param>
+        <summary>Returns the collection of validators.</summary>
+        <returns>The validators.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,9 +92,9 @@
         <Parameter Name="item" Type="System.Web.ModelBinding.ModelValidatorProvider" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The zero-based index at which item should be inserted.</param>
+        <param name="item">The model-validator provider object to insert.</param>
+        <summary>Inserts a validator provider into the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,9 +115,9 @@
         <Parameter Name="item" Type="System.Web.ModelBinding.ModelValidatorProvider" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The zero-based index of the model-validator provider element to replace.</param>
+        <param name="item">The new value for the model-validator provider element.</param>
+        <summary>Replaces the model-validator provider element at the specified index.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

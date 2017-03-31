@@ -1,4 +1,5 @@
 ---
 uid: System.Net.Mime.TransferEncoding
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

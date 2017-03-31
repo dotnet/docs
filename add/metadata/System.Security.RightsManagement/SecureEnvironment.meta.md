@@ -1,49 +1,83 @@
 ---
 uid: System.Security.RightsManagement.SecureEnvironment
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.RightsManagement.SecureEnvironment.User
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.RightsManagement.SecureEnvironment.RemoveActivatedUser(System.Security.RightsManagement.ContentUser)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.RightsManagement.SecureEnvironment.Dispose(System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.RightsManagement.SecureEnvironment.GetActivatedUsers
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.RightsManagement.SecureEnvironment.Create
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.RightsManagement.SecureEnvironment.ApplicationManifest
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.RightsManagement.SecureEnvironment.Create(System.String,System.Security.RightsManagement.AuthenticationType,System.Security.RightsManagement.UserActivationMode)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.RightsManagement.SecureEnvironment.Create(System.String,System.Security.RightsManagement.ContentUser)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.RightsManagement.SecureEnvironment.Dispose
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.RightsManagement.SecureEnvironment.Dispose
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.RightsManagement.SecureEnvironment.IsUserActivated(System.Security.RightsManagement.ContentUser)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

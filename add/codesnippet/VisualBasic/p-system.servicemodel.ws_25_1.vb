@@ -1,1 +1,0 @@
-            Dim transactionFlow = binding1.TransactionFlow

@@ -16,8 +16,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Attribute that indicates that the class represents a complex type.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.Objects.DataClasses.EdmComplexTypeAttribute> links a class to a complex type defined in the conceptual model.  
+  
+ This attribute is applied to classes that represent complex types.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +40,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.Data.Objects.DataClasses.EdmComplexTypeAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

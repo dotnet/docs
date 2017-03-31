@@ -1,39 +1,51 @@
 ---
 uid: System.Web.UI.WebControls.CompositeControl
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.CompositeControl.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.CompositeControl.DataBind
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.CompositeControl.DataBind
 ---
 
 ---
 uid: System.Web.UI.WebControls.CompositeControl.Controls
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.CompositeControl.RecreateChildControls
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.CompositeControl.SupportsDisabledAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.CompositeControl.Render(System.Web.UI.HtmlTextWriter)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.CompositeControl.System#Web#UI#WebControls#ICompositeControlDesignerAccessor#RecreateChildControls
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

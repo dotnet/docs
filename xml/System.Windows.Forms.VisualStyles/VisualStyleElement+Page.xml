@@ -11,8 +11,25 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains classes that provide <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" /> objects for the parts of a page. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Page> class provides a foundation in which the following classes are defined:  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Page.Down>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Page.DownHorizontal>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Page.Up>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Page.UpHorizontal>  
+  
+ Each of these classes provides one or more properties that return a <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> for the part of the page specified by the class name.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members />
 </Type>

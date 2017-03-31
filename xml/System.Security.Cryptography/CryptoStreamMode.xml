@@ -24,7 +24,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the mode of a cryptographic stream.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -50,7 +50,7 @@
         <ReturnType>System.Security.Cryptography.CryptoStreamMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Read access to a cryptographic stream.</summary>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -75,7 +75,7 @@
         <ReturnType>System.Security.Cryptography.CryptoStreamMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Write access to a cryptographic stream.</summary>
       </Docs>
     </Member>
   </Members>

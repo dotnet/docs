@@ -1,24 +1,38 @@
 ---
 uid: System.Printing.PrintSystemObjectPropertiesChangedEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintSystemObjectPropertiesChangedEventArgs.PropertiesNames
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Printing.PrintSystemObjectPropertiesChangedEventArgs.#ctor(System.Collections.Specialized.StringCollection)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Printing.PrintSystemObjectPropertiesChangedEventArgs.Dispose(System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintSystemObjectPropertiesChangedEventArgs.Dispose
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintSystemObjectPropertiesChangedEventArgs.Dispose
+ms.author: "kempb"
+manager: "ghogen"
 ---

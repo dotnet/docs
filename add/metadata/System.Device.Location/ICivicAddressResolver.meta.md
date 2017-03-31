@@ -1,19 +1,19 @@
 ---
 uid: System.Device.Location.ICivicAddressResolver
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Device.Location.ICivicAddressResolver.ResolveAddressCompleted
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Device.Location.ICivicAddressResolver.ResolveAddressAsync(System.Device.Location.GeoCoordinate)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Device.Location.ICivicAddressResolver.ResolveAddress(System.Device.Location.GeoCoordinate)
-internalonly: False
+manager: "martinek"
 ---

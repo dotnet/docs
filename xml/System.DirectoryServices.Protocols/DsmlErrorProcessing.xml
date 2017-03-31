@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.DsmlErrorProcessing" /> enumeration specifies how to proceed when an error occurs.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.DirectoryServices.Protocols.DsmlErrorProcessing</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Exit. Value is equal to 1.</summary>
       </Docs>
     </Member>
     <Member MemberName="Resume">
@@ -43,7 +43,7 @@
         <ReturnType>System.DirectoryServices.Protocols.DsmlErrorProcessing</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Resume. Value is equal to 0.</summary>
       </Docs>
     </Member>
   </Members>

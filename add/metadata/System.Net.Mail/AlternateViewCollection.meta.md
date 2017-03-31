@@ -1,9 +1,11 @@
 ---
 uid: System.Net.Mail.AlternateViewCollection
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.AlternateViewCollection.Dispose
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

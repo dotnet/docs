@@ -21,8 +21,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides the URL from which a code assembly originates as evidence for policy evaluation. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The presence of <xref:System.Security.Policy.Url> evidence produces a <xref:System.Security.Permissions.UrlIdentityPermission> in the grant set. If there is a <xref:System.Security.CodeAccessPermission.Demand%2A> for <xref:System.Security.Permissions.UrlIdentityPermission>, the <xref:System.Security.Permissions.UrlIdentityPermission> that corresponds to the <xref:System.Security.Policy.Url> evidence is compared to the demanded permission.  
+  
+ The complete URL is considered, including the protocol (HTTP, HTTPS, FTP) and the file. For example, http://www.fourthcoffee.com/process/grind.htm is a complete URL.  
+  
+ URLs can be matched exactly or by a wildcard in the final position. For example, http://www.fourthcoffee.com/process/* is a wildcard URL.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,9 +50,10 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The URL of origin for the associated code assembly.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Policy.Url" /> class with the URL from which a code assembly originates.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -58,8 +70,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a new object that is a copy of the current instance.</summary>
+        <returns>A new object that is a copy of this instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,8 +90,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a new copy of the evidence object.</summary>
+        <returns>A new, identical copy of the evidence object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,9 +112,9 @@
         <Parameter Name="evidence" Type="System.Security.Policy.Evidence" />
       </Parameters>
       <Docs>
-        <param name="evidence">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="evidence">The evidence set from which to construct the identity permission.</param>
+        <summary>Creates an identity permission corresponding to the current instance of the <see cref="T:System.Security.Policy.Url" /> evidence class.</summary>
+        <returns>A <see cref="T:System.Security.Permissions.UrlIdentityPermission" /> for the specified <see cref="T:System.Security.Policy.Url" /> evidence.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,9 +135,10 @@
         <Parameter Name="o" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="o">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="o">The <see cref="T:System.Security.Policy.Url" /> evidence object to test for equivalence with the current object.</param>
+        <summary>Compares the current <see cref="T:System.Security.Policy.Url" /> evidence object to the specified object for equivalence.</summary>
+        <returns>
+          <see langword="true" /> if the two <see cref="T:System.Security.Policy.Url" /> objects are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,8 +157,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the hash code of the current URL.</summary>
+        <returns>The hash code of the current URL.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -164,8 +177,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a string representation of the current <see cref="T:System.Security.Policy.Url" />.</summary>
+        <returns>A representation of the current <see cref="T:System.Security.Policy.Url" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -183,8 +196,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the URL from which the code assembly originates.</summary>
+        <value>The URL from which the code assembly originates.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

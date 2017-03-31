@@ -12,7 +12,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines the methods that must be implemented to supply eTag values to a custom data service provider.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,10 +34,10 @@
         <Parameter Name="concurrencyValues" Type="System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="resourceCookie">To be added.</param>
-        <param name="checkForEquality">To be added.</param>
-        <param name="concurrencyValues">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="resourceCookie">Cookie that represents the resource.</param>
+        <param name="checkForEquality">A <see cref="T:System.Boolean" /> that is <see langword="true" /> when property values must be compared for equality; <see langword="false" /> when property values must be compared for inequality.</param>
+        <param name="concurrencyValues">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> list of the eTag property names and corresponding values.</param>
+        <summary>Supplies the eTag value for the given entity resource.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

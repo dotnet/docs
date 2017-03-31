@@ -1,9 +1,13 @@
 ---
 uid: System.Activities.DurableInstancing.HasRunnableWorkflowEvent
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DurableInstancing.HasRunnableWorkflowEvent.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

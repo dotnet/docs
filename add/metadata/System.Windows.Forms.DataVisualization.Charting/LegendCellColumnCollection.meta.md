@@ -1,9 +1,15 @@
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.LegendCellColumnCollection
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.LegendCellColumnCollection.Dispose
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.LegendCellColumnCollection.Dispose(System.Boolean)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---

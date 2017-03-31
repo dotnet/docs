@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Processes HTTP web requests using a custom HTTP handler; handles chart images.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataVisualization.Charting.ChartHttpHandler" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,8 +47,8 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartHttpHandlerSettings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the chart image storage settings registered in the web.config file under the <c>ChartHttpHandler</c> key.</summary>
+        <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.ChartHttpHandlerSettings" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,8 +65,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether another request can use the <see cref="T:System.Web.IHttpHandler" /> object.</summary>
+        <value>
+          <see langword="True" /> if the <see cref="T:System.Web.IHttpHandler" /> object is reusable, otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,8 +87,8 @@
         <Parameter Name="context" Type="System.Web.HttpContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="context">An <see cref="T:System.Web.HttpContext" /> object that provides references to intrinsic server objects such as Request, Response, Session, and Server. Used to service HTTP requests.</param>
+        <summary>Enables HTTP web requests to be processed by a custom HTTP handler that implements the <see cref="T:System.Web.IHttpHandler" /> interface.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

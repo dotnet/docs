@@ -1,4 +1,5 @@
 ---
 uid: System.Speech.Recognition.RecognizeMode
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

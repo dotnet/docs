@@ -1,14 +1,20 @@
 ---
 uid: System.Diagnostics.SymbolStore.ISymbolDocumentWriter
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.SymbolStore.ISymbolDocumentWriter.SetSource(System.Byte[])
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.SymbolStore.ISymbolDocumentWriter.SetCheckSum(System.Guid,System.Byte[])
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

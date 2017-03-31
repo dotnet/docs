@@ -1,14 +1,17 @@
 ---
 uid: System.Web.Configuration.FullTrustAssembliesSection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.FullTrustAssembliesSection.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.FullTrustAssembliesSection.FullTrustAssemblies
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

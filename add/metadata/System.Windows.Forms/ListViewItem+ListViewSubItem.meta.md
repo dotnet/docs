@@ -1,64 +1,93 @@
 ---
 uid: System.Windows.Forms.ListViewItem.ListViewSubItem
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ListViewItem.ListViewSubItem.Text
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ListViewItem.ListViewSubItem.Name
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ListViewItem.ListViewSubItem.#ctor(System.Windows.Forms.ListViewItem,System.String)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.ListViewItem.ListViewSubItem.ToString
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ListViewItem.ListViewSubItem.Font
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ListViewItem.ListViewSubItem.ForeColor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ListViewItem.ListViewSubItem.#ctor
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.ListViewItem.ListViewSubItem.Font
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ListViewItem.ListViewSubItem.ForeColor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ListViewItem.ListViewSubItem.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ListViewItem.ListViewSubItem.ResetStyle
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ListViewItem.ListViewSubItem.BackColor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ListViewItem.ListViewSubItem.Bounds
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.ListViewItem.ListViewSubItem.#ctor(System.Windows.Forms.ListViewItem,System.String,System.Drawing.Color,System.Drawing.Color,System.Drawing.Font)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ListViewItem.ListViewSubItem.Tag
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

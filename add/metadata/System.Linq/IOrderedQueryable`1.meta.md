@@ -1,4 +1,6 @@
 ---
 uid: System.Linq.IOrderedQueryable`1
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---

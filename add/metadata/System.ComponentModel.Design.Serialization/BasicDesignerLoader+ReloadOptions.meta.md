@@ -1,4 +1,6 @@
 ---
 uid: System.ComponentModel.Design.Serialization.BasicDesignerLoader.ReloadOptions
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

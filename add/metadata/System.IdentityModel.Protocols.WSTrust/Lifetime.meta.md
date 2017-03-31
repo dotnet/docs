@@ -1,24 +1,35 @@
 ---
 uid: System.IdentityModel.Protocols.WSTrust.Lifetime
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.Lifetime.#ctor(System.DateTime,System.DateTime)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.Lifetime.Expires
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.Lifetime.#ctor(System.Nullable{System.DateTime},System.Nullable{System.DateTime})
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.Lifetime.Created
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Protocols.WSTrust.Lifetime.#ctor
+ms.author: "v-jibran"
+manager: "markgal"
 ---

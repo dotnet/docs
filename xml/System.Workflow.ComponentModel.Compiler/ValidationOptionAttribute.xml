@@ -19,8 +19,55 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Custom attribute that contains <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationOption" /> information. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ This attribute should only be used as dependency property option. Attributes are ignored if declared on a .NET property.  
+  
+ The <xref:System.Workflow.ComponentModel.Compiler.ValidationOptionAttribute> is intended to be used on Meta-properties only. It will be ignored for instance properties. For more information, see [Using Activity Properties](http://msdn.microsoft.com/en-us/974353d4-28f9-4202-890d-b36981876148) for more details.  
+  
+ If the <xref:System.Workflow.ComponentModel.Compiler.ValidationOptionAttribute> is not specified, the behavior defaults to <xref:System.Workflow.ComponentModel.Compiler.ValidationOption?displayProperty=fullName>.  
+  
+```csharp  
+public sealed partial class Activity1: Activity  
+{  
+    public Activity1()  
+    {  
+    }  
+  
+    public static DependencyProperty MyPropertyProperty =   
+        DependencyProperty.Register(  
+            "MyProperty",   
+            typeof(string),   
+            typeof(Activity1),  
+            new PropertyMetadata(  
+                DependencyPropertyOptions.Metadata,  
+                new ValidationOptionAttribute(ValidationOption.Required)));  
+  
+    [Browsable(true)]  
+    [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]  
+    public string MyProperty  
+    {  
+        get  
+        {  
+            return ((string)(base.GetValue(Activity1.MyPropertyProperty)));  
+        }  
+        set  
+        {  
+            base.SetValue(Activity1.MyPropertyProperty, value);  
+        }  
+    }  
+}  
+```  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,8 +83,8 @@
         <Parameter Name="validationOption" Type="System.Workflow.ComponentModel.Compiler.ValidationOption" />
       </Parameters>
       <Docs>
-        <param name="validationOption">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="validationOption">The required <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationOption" /> enumeration value for this instance.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationOptionAttribute" /> class, with a value for <see cref="P:System.Workflow.ComponentModel.Compiler.ValidationOptionAttribute.ValidationOption" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,8 +101,8 @@
         <ReturnType>System.Workflow.ComponentModel.Compiler.ValidationOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the value of the <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationOption" /> associated with this instance.</summary>
+        <value>The value of the <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationOption" /> associated with this instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

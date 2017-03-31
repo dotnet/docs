@@ -1,24 +1,29 @@
 ---
 uid: System.Web.UI.Design.DesignTimeResourceProviderFactory
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DesignTimeResourceProviderFactory.CreateDesignTimeLocalResourceProvider(System.IServiceProvider)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DesignTimeResourceProviderFactory.CreateDesignTimeGlobalResourceProvider(System.IServiceProvider,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DesignTimeResourceProviderFactory.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DesignTimeResourceProviderFactory.CreateDesignTimeLocalResourceWriter(System.IServiceProvider)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

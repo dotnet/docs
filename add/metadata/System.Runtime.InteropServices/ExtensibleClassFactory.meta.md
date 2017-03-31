@@ -1,9 +1,13 @@
 ---
 uid: System.Runtime.InteropServices.ExtensibleClassFactory
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.ExtensibleClassFactory.RegisterObjectCreationCallback(System.Runtime.InteropServices.ObjectCreationDelegate)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

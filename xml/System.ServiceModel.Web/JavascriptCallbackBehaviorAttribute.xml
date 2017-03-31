@@ -20,8 +20,41 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>A contract behavior that allows you to set the URL query string parameter name to something other than the default “callback”.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ JSONP is a mechanism used to enable cross-site, scripting support in Web browsers. It involves sending a request with a callback function name provided as a URL query string parameter value. The service returns a response with the usual JSON payload wrapped in the call to the provided callback function as if it were a line of executable code.  
+  
+ The following is an example of a URL used to call a service: `http://baseAddress/Service/RESTService?callback=functionName`. When invoked, the service responds with the following JSON.  
+  
+```  
+functionName({ “root”:”Something});  
+```  
+  
+ The <xref:System.ServiceModel.Web.JavascriptCallbackBehaviorAttribute> allows developers to specify the name of the URL query string parameter to interpret as the callback parameter. The default value is “callback” (not case sensitive).  
+  
+ The following example shows how this attribute is applied to a service contract.  
+  
+```  
+[ServiceContract]  
+[JavascriptCallbackBehavior]  
+public class Service1  
+{  
+    [OperationContract]  
+    [WebGet(ResponseFormat=WebMessageFormat.Json)]  
+    public string GetData()  
+    {              
+         // ...  
+    }  
+}  
+```  
+  
+ This attribute only applies when it marks a service contract type that is used with the <xref:System.ServiceModel.WebHttpBinding> and the <xref:System.ServiceModel.WebHttpBinding.CrossDomainScriptAccessEnabled%2A> property of the binding is set to `true`.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,7 +68,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Web.JavascriptCallbackBehaviorAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,10 +90,10 @@
         <Parameter Name="bindingParameters" Type="System.ServiceModel.Channels.BindingParameterCollection" />
       </Parameters>
       <Docs>
-        <param name="contractDescription">To be added.</param>
-        <param name="endpoint">To be added.</param>
-        <param name="bindingParameters">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="contractDescription">The contract description.</param>
+        <param name="endpoint">The service endpoint.</param>
+        <param name="bindingParameters">The binding parameters required to implement the behavior.</param>
+        <summary>An implementation of the <see cref="M:System.ServiceModel.Description.IContractBehavior.AddBindingParameters(System.ServiceModel.Description.ContractDescription,System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Channels.BindingParameterCollection)" /> method.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,10 +115,10 @@
         <Parameter Name="clientRuntime" Type="System.ServiceModel.Dispatcher.ClientRuntime" />
       </Parameters>
       <Docs>
-        <param name="contractDescription">To be added.</param>
-        <param name="endpoint">To be added.</param>
-        <param name="clientRuntime">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="contractDescription">The contract description.</param>
+        <param name="endpoint">The service endpoint.</param>
+        <param name="clientRuntime">The client runtime.</param>
+        <summary>An implementation of the <see cref="M:System.ServiceModel.Description.IContractBehavior.ApplyClientBehavior(System.ServiceModel.Description.ContractDescription,System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.ClientRuntime)" /> method.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,10 +140,10 @@
         <Parameter Name="dispatchRuntime" Type="System.ServiceModel.Dispatcher.DispatchRuntime" />
       </Parameters>
       <Docs>
-        <param name="contractDescription">To be added.</param>
-        <param name="endpoint">To be added.</param>
-        <param name="dispatchRuntime">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="contractDescription">The contract description.</param>
+        <param name="endpoint">The service endpoint.</param>
+        <param name="dispatchRuntime">The dispatch runtime.</param>
+        <summary>An implementation of the <see cref="M:System.ServiceModel.Description.IContractBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.ContractDescription,System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.DispatchRuntime)" /> method.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -127,9 +160,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the URL query string parameter name to use for cross-domain script access.</summary>
+        <value>The URL query string parameter name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property allows you to specify the name of the URL query string parameter used to identify the JSONP callback function name. The default value is “callback”.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Validate">
@@ -149,9 +189,9 @@
         <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
       </Parameters>
       <Docs>
-        <param name="contractDescription">To be added.</param>
-        <param name="endpoint">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="contractDescription">The contract description.</param>
+        <param name="endpoint">The service endpoint.</param>
+        <summary>An implementation of the <see cref="M:System.ServiceModel.Description.IContractBehavior.Validate(System.ServiceModel.Description.ContractDescription,System.ServiceModel.Description.ServiceEndpoint)" /> method.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

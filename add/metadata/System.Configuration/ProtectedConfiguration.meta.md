@@ -1,29 +1,34 @@
 ---
 uid: System.Configuration.ProtectedConfiguration
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ProtectedConfiguration.ProtectedDataSectionName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ProtectedConfiguration.RsaProviderName
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ProtectedConfiguration.DataProtectionProviderName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ProtectedConfiguration.DefaultProvider
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ProtectedConfiguration.Providers
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

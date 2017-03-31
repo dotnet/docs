@@ -1,29 +1,48 @@
 ---
 uid: System.Windows.Media.Animation.DiscretePointKeyFrame
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.DiscretePointKeyFrame.#ctor(System.Windows.Point,System.Windows.Media.Animation.KeyTime)
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.DiscretePointKeyFrame.#ctor(System.Windows.Point)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.DiscretePointKeyFrame.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.DiscretePointKeyFrame.#ctor(System.Windows.Point,System.Windows.Media.Animation.KeyTime)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.DiscretePointKeyFrame.#ctor(System.Windows.Point)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.DiscretePointKeyFrame.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.DiscretePointKeyFrame.InterpolateValueCore(System.Windows.Point,System.Double)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.DiscretePointKeyFrame.CreateInstanceCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

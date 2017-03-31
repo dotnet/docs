@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.DsmlAuthRequest" /> class indicates that access control for the requests be interpreted as though the requests are performed by the security principal identified by the <see cref="P:System.DirectoryServices.Protocols.DsmlAuthRequest.Principal" /> property.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlAuthRequest.#ctor" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.DsmlAuthRequest" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <Parameter Name="principal" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="principal">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="principal">The security principal.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlAuthRequest.#ctor(System.String)" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.DsmlAuthRequest" /> class using the specified parameter.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +61,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DsmlAuthRequest.Principal" /> property contains the security principal.</summary>
+        <value>The security principal.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,9 +82,9 @@
         <Parameter Name="doc" Type="System.Xml.XmlDocument" />
       </Parameters>
       <Docs>
-        <param name="doc">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="doc">An <see cref="T:System.Xml.XmlDocument" /> object.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlAuthRequest.ToXmlNode(System.Xml.XmlDocument)" /> method transforms an <see cref="T:System.Xml.XmlDocument" /> object into its DSML v2 XML representation.</summary>
+        <returns>The transformed <see cref="T:System.Xml.XmlElement" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

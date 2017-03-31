@@ -1,14 +1,14 @@
 ---
 uid: System.Windows.Markup.DictionaryKeyPropertyAttribute
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.DictionaryKeyPropertyAttribute.#ctor(System.String)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.DictionaryKeyPropertyAttribute.Name
-internalonly: False
+manager: "martinek"
 ---

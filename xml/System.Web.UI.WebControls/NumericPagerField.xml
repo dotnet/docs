@@ -11,8 +11,47 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a <see cref="T:System.Web.UI.WebControls.DataPager" /> field that enables users to select a page by page number.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.NumericPagerField> class displays navigation controls in a <xref:System.Web.UI.WebControls.DataPager> control. The controls can be used to page through data that is displayed by a control that implements the <xref:System.Web.UI.WebControls.IPageableItemContainer> interface, such as the <xref:System.Web.UI.WebControls.ListView> control. The <xref:System.Web.UI.WebControls.NumericPagerField> object displays page numbers as buttons that users can click to move to specific a page. The control also displays next-page and previous-page buttons that enable users to access more pages of data than the ones that are displayed by the control.  
+  
+ You can customize the appearance of the <xref:System.Web.UI.WebControls.NumericPagerField> object by using the properties that are listed in the following table.  
+  
+|Property|Description|  
+|--------------|-----------------|  
+|<xref:System.Web.UI.WebControls.NumericPagerField.CurrentPageLabelCssClass%2A>|The CSS class for the current page number.|  
+|<xref:System.Web.UI.WebControls.NumericPagerField.NextPreviousButtonCssClass%2A>|The CSS class for the next-page and previous-page buttons.|  
+|<xref:System.Web.UI.WebControls.NumericPagerField.NumericButtonCssClass%2A>|The CSS class for the buttons that represent the page numbers.|  
+  
+ You can use the <xref:System.Web.UI.WebControls.NumericPagerField.ButtonType%2A> property to select the type of button that will be displayed. The following table lists the available button types.  
+  
+|Button type|Description|  
+|-----------------|-----------------|  
+|<xref:System.Web.UI.WebControls.ButtonType?displayProperty=fullName>|A <xref:System.Web.UI.WebControls.Button> control.|  
+|<xref:System.Web.UI.WebControls.ButtonType?displayProperty=fullName>|An <xref:System.Web.UI.WebControls.ImageButton> control.|  
+|<xref:System.Web.UI.WebControls.ButtonType?displayProperty=fullName>|A <xref:System.Web.UI.WebControls.LinkButton> control.|  
+  
+ The controls inside the <xref:System.Web.UI.WebControls.NumericPagerField.NumericButtonCssClass%2A> object are rendered with non-breaking spaces between them. If you want to customize this behavior, you can use the <xref:System.Web.UI.WebControls.NumericPagerField.RenderNonBreakingSpacesBetweenControls%2A> property.  
+  
+ You can hide a <xref:System.Web.UI.WebControls.NumericPagerField> object in a <xref:System.Web.UI.WebControls.DataPager> control by setting the <xref:System.Web.UI.WebControls.DataPagerField.Visible%2A> property to `false`. You cannot control the visibility of the next-page and previous-page buttons. They are displayed by the control if the associated data control has additional pages available to display. You can use the <xref:System.Web.UI.WebControls.NumericPagerField.ButtonCount%2A> property to specify how many buttons are displayed in a <xref:System.Web.UI.WebControls.NumericPagerField> object. Each button corresponds to a page number.  
+  
+ You can set the text of the next-page button by setting the <xref:System.Web.UI.WebControls.NumericPagerField.NextPageText%2A> property. You can set the text of the previous-page button by using the <xref:System.Web.UI.WebControls.NumericPagerField.PreviousPageText%2A> property.  
+  
+ When the <xref:System.Web.UI.WebControls.NumericPagerField.ButtonType%2A> property is set to <xref:System.Web.UI.WebControls.ButtonType?displayProperty=fullName>, you must provide the URL of an image that will be displayed for the next-page and previous page buttons. You do this by setting the <xref:System.Web.UI.WebControls.NumericPagerField.NextPageImageUrl%2A> and <xref:System.Web.UI.WebControls.NumericPagerField.PreviousPageImageUrl%2A> properties. In that case, the corresponding text property is used as the alternate text for the image. For example, the text that is specified by the <xref:System.Web.UI.WebControls.NumericPagerField.NextPageImageUrl%2A> property is displayed as the alternate text for the next-page image button. On browsers that support tooltips, this text is also displayed as a tooltip for the corresponding button.  
+  
+   
+  
+## Examples  
+ The following example shows how to use a <xref:System.Web.UI.WebControls.NumericPagerField> object to page through data that is displayed in a <xref:System.Web.UI.WebControls.ListView> control.  
+  
+ [!code-csharp[System.Web.UI.WebControls.NumericPagerField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NumericPagerField/CS/NumericPagerFieldCS.aspx#1)]
+ [!code-vb[System.Web.UI.WebControls.NumericPagerField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NumericPagerField/VB/NumericPagerFieldVB.aspx#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,8 +65,25 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.NumericPagerField" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is typically used when you add fields to a dynamically created <xref:System.Web.UI.WebControls.DataPager> control.  
+  
+ To add a <xref:System.Web.UI.WebControls.NumericPagerField> object dynamically to a <xref:System.Web.UI.WebControls.DataPager> control, create a new <xref:System.Web.UI.WebControls.NumericPagerField> object, set its properties, and then add it to the field collection for the <xref:System.Web.UI.WebControls.DataPager> control.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the constructor to dynamically add a <xref:System.Web.UI.WebControls.NumericPagerField> object to a <xref:System.Web.UI.WebControls.DataPager> control.  
+  
+ [!code-csharp[System.Web.UI.WebControls.NumericPagerField.Ctor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NumericPagerField.Ctor/CS/NumericPagerFieldCtorCS.aspx#1)]
+ [!code-vb[System.Web.UI.WebControls.NumericPagerField.Ctor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NumericPagerField.Ctor/VB/NumericPagerFieldCtorVB.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ButtonCount">
@@ -51,9 +107,27 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the number of buttons to display in a <see cref="T:System.Web.UI.WebControls.NumericPagerField" /> object.</summary>
+        <value>The number of buttons to display in a <see cref="T:System.Web.UI.WebControls.NumericPagerField" /> object. The default is 5.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.NumericPagerField.ButtonCount%2A> property to specify the number of buttons to display in a <xref:System.Web.UI.WebControls.NumericPagerField> object. Each button corresponds to a page number. If the <xref:System.Web.UI.WebControls.NumericPagerField> object has more pages than the number specified for <xref:System.Web.UI.WebControls.NumericPagerField.ButtonCount%2A>, the control displays a next-page button that lets users access the next set of pages.  
+  
+ The <xref:System.Web.UI.WebControls.NumericPagerField> object displays buttons only for existing page numbers. If the <xref:System.Web.UI.WebControls.NumericPagerField> object has fewer pages to show than the number specified for <xref:System.Web.UI.WebControls.NumericPagerField.ButtonCount%2A>, the control shows fewer buttons than the number specified by this property.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.UI.WebControls.NumericPagerField.ButtonCount%2A> property to change the default number of page buttons that are displayed in the <xref:System.Web.UI.WebControls.NumericPagerField> object of a <xref:System.Web.UI.WebControls.DataPager> control.  
+  
+ [!code-csharp[System.Web.UI.WebControls.NumericPagerFieldCss#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NumericPagerFieldCss/CS/NumericPagerCssCS.aspx#1)]
+ [!code-vb[System.Web.UI.WebControls.NumericPagerFieldCss#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NumericPagerFieldCss/VB/NumericPagerCssVB.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="P:System.Web.UI.WebControls.NumericPagerField.ButtonCount" /> property is set to a value less than 1.</exception>
       </Docs>
     </Member>
     <Member MemberName="ButtonType">
@@ -77,9 +151,37 @@
         <ReturnType>System.Web.UI.WebControls.ButtonType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the button type to display in the pager field.</summary>
+        <value>One of the <see cref="T:System.Web.UI.WebControls.ButtonType" /> values. The default is <see cref="F:System.Web.UI.WebControls.ButtonType.Link" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table lists the available button types.  
+  
+|Button type value|Description|  
+|-----------------------|-----------------|  
+|<xref:System.Web.UI.WebControls.ButtonType?displayProperty=fullName>|A <xref:System.Web.UI.WebControls.Button> control.|  
+|<xref:System.Web.UI.WebControls.ButtonType?displayProperty=fullName>|An <xref:System.Web.UI.WebControls.ImageButton> control.|  
+|<xref:System.Web.UI.WebControls.ButtonType?displayProperty=fullName>|A <xref:System.Web.UI.WebControls.LinkButton> control.|  
+  
+ When the <xref:System.Web.UI.WebControls.NumericPagerField.ButtonType%2A> property is set to <xref:System.Web.UI.WebControls.ButtonType?displayProperty=fullName>, you must provide the URL of an image for the next-page and previous page buttons. To do this, you can use the <xref:System.Web.UI.WebControls.NumericPagerField.NextPageImageUrl%2A> and <xref:System.Web.UI.WebControls.NumericPagerField.PreviousPageImageUrl%2A> properties. The corresponding text property is used as the alternate text for the image. For example, the text that is specified by the <xref:System.Web.UI.WebControls.NumericPagerField.NextPageImageUrl%2A> property is displayed as the alternate text for the next-page image button. On browsers that support tooltips, this text is also displayed as a tooltip for the corresponding button.  
+  
+ The value of the <xref:System.Web.UI.WebControls.NumericPagerField.ButtonType%2A> property is stored in view state.  
+  
+ If the <xref:System.Web.UI.WebControls.DataPager.QueryStringField%2A?displayProperty=fullName> property is not an empty string or `null`, the <xref:System.Web.UI.WebControls.NumericPagerField> object ignores the value of the <xref:System.Web.UI.WebControls.NumericPagerField.ButtonCount%2A> property. In that case, the <xref:System.Web.UI.WebControls.HyperLink> control is used to create the buttons.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.UI.WebControls.NumericPagerField.ButtonType%2A> property to specify that image buttons are displayed in the <xref:System.Web.UI.WebControls.NumericPagerField> object of a <xref:System.Web.UI.WebControls.DataPager> control.  
+  
+ [!code-csharp[System.Web.UI.WebControls.NumericPagerFieldUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NumericPagerFieldUrl/CS/NumericPagerUrlCS.aspx#1)]
+ [!code-vb[System.Web.UI.WebControls.NumericPagerFieldUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NumericPagerFieldUrl/VB/NumericPagerUrlVB.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value for the <see cref="P:System.Web.UI.WebControls.NumericPagerField.ButtonType" /> property is not one of the <see cref="T:System.Web.UI.WebControls.ButtonType" /> values.</exception>
       </Docs>
     </Member>
     <Member MemberName="CopyProperties">
@@ -98,9 +200,19 @@
         <Parameter Name="newField" Type="System.Web.UI.WebControls.DataPagerField" />
       </Parameters>
       <Docs>
-        <param name="newField">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="newField">The <see cref="T:System.Web.UI.WebControls.DataPagerField" /> object to copy the properties of the current <see cref="T:System.Web.UI.WebControls.NumericPagerField" /> object to.</param>
+        <summary>Copies the properties of the current <see cref="T:System.Web.UI.WebControls.NumericPagerField" /> object to the specified <see cref="T:System.Web.UI.WebControls.DataPagerField" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.NumericPagerField.CopyProperties%2A> method is a helper method. It is used by the <xref:System.Web.UI.WebControls.DataPagerField.CloneField%2A> method to copy the properties of the current <xref:System.Web.UI.WebControls.NumericPagerField> object to the <xref:System.Web.UI.WebControls.DataPagerField> object that is passed in the `newField` parameter.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Override the <see cref="M:System.Web.UI.WebControls.NumericPagerField.CopyProperties(System.Web.UI.WebControls.DataPagerField)" /> method to copy the new properties that were created in the derived class. Call the base class's <see cref="M:System.Web.UI.WebControls.NumericPagerField.CopyProperties(System.Web.UI.WebControls.DataPagerField)" /> method so that the properties of the <see cref="T:System.Web.UI.WebControls.NumericPagerField" /> class are also copied.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="CreateDataPagers">
@@ -123,13 +235,20 @@
         <Parameter Name="fieldIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="container">To be added.</param>
-        <param name="startRowIndex">To be added.</param>
-        <param name="maximumRows">To be added.</param>
-        <param name="totalRowCount">To be added.</param>
-        <param name="fieldIndex">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="container">The container that is used to store the controls.</param>
+        <param name="startRowIndex">The index of the first record on the page.</param>
+        <param name="maximumRows">The maximum number of items on a single page.</param>
+        <param name="totalRowCount">The total number of items.</param>
+        <param name="fieldIndex">The index of the data pager field in the <see cref="P:System.Web.UI.WebControls.DataPager.Fields" /> collection.</param>
+        <summary>Creates the user interface (UI) controls for the pager field object and adds them to the specified container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.NumericPagerField.CreateDataPagers%2A> method is a helper method. It is used by the <xref:System.Web.UI.WebControls.DataPager.CreatePagerFields%2A?displayProperty=fullName> method to create the UI controls for the pager field, such as the numeric buttons.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateField">
@@ -146,9 +265,19 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates and returns a new instance of the <see cref="T:System.Web.UI.WebControls.NumericPagerField" /> class.</summary>
+        <returns>A new instance of the <see cref="T:System.Web.UI.WebControls.NumericPagerField" /> class.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.NumericPagerField.CreateField%2A> method is a helper method. It is used by the <xref:System.Web.UI.WebControls.DataPagerField.CloneField%2A> method of the base class to create an empty <xref:System.Web.UI.WebControls.NumericPagerField> object.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Override the <see cref="M:System.Web.UI.WebControls.NumericPagerField.CreateField" /> method to return a new instance of the derived class. Do not call the <see cref="M:System.Web.UI.WebControls.NumericPagerField.CreateField" /> method of the base class.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="CurrentPageLabelCssClass">
@@ -175,9 +304,29 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the cascading style sheet (CSS) class that is used to style the current page number.</summary>
+        <value>The CSS class that is used to style the current page number in the browser. The default is an empty string (""), which indicates that the <see cref="P:System.Web.UI.WebControls.NumericPagerField.CurrentPageLabelCssClass" /> property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.NumericPagerField.CurrentPageLabelCssClass%2A> property to specify the CSS class that is used to style the <xref:System.Web.UI.WebControls.Label> object that represents the number of the page that is currently selected. The <xref:System.Web.UI.WebControls.NumericPagerField.CurrentPageLabelCssClass%2A> property is always rendered as a `class` attribute, regardless of the browser.  
+  
+> [!NOTE]
+>  On browsers that do not support CSS, setting the <xref:System.Web.UI.WebControls.NumericPagerField.CurrentPageLabelCssClass%2A> property has no effect.  
+  
+ The value of this property is stored in view state.  
+  
+   
+  
+## Examples  
+ The following example shows how to specify a CSS class to style the current page number in the <xref:System.Web.UI.WebControls.NumericPagerField> object of a <xref:System.Web.UI.WebControls.DataPager> control.  
+  
+ [!code-csharp[System.Web.UI.WebControls.NumericPagerFieldCss#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NumericPagerFieldCss/CS/NumericPagerCssCS.aspx#1)]
+ [!code-vb[System.Web.UI.WebControls.NumericPagerFieldCss#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NumericPagerFieldCss/VB/NumericPagerCssVB.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -196,10 +345,18 @@
         <Parameter Name="o" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="o">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="o">The object to compare with the current <see cref="T:System.Web.UI.WebControls.NumericPagerField" /> instance.</param>
+        <summary>Determines whether the specified object is equal to the current <see cref="T:System.Web.UI.WebControls.NumericPagerField" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the specified object is equal to the current <see cref="T:System.Web.UI.WebControls.NumericPagerField" /> object; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.NumericPagerField.Equals%2A> returns `true` if the two objects contain exactly the same values for all public properties of the <xref:System.Web.UI.WebControls.NumericPagerField> class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -216,8 +373,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Serves as a hash function for the <see cref="T:System.Web.UI.WebControls.NumericPagerField" /> class.</summary>
+        <returns>A hash code for the current <see cref="T:System.Web.UI.WebControls.NumericPagerField" /> object. For more information, see the <see cref="M:System.Object.GetHashCode" /> class.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -237,9 +394,26 @@
         <Parameter Name="e" Type="System.Web.UI.WebControls.CommandEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">The event data.</param>
+        <summary>Handles events that occur in the <see cref="T:System.Web.UI.WebControls.NumericPagerField" /> object and performs the appropriate action.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.NumericPagerField.HandleEvent%2A> method is a helper method. It is used by the <xref:System.Web.UI.WebControls.DataPager.OnBubbleEvent%2A?displayProperty=fullName> method to handle events that occur in the <xref:System.Web.UI.WebControls.NumericPagerField> object when one of the buttons inside the control is clicked.  
+  
+ The <xref:System.Web.UI.WebControls.NumericPagerField.HandleEvent%2A> method examines the <xref:System.Web.UI.WebControls.CommandEventArgs.CommandName%2A> property of the <xref:System.Web.UI.WebControls.CommandEventArgs> object that is contained in the `e` parameter, and then performs the appropriate action.  
+  
+ The following table lists the buttons provided by the <xref:System.Web.UI.WebControls.NumericPagerField> object and the action that is performed when the button is clicked.  
+  
+|Button|CommandName value|Action|  
+|------------|-----------------------|------------|  
+|Number|Page number|Navigates to the corresponding page of data.|  
+|Previous page|<xref:System.Web.UI.WebControls.DataControlCommands.PreviousPageCommandArgument?displayProperty=fullName>|Displays the previous set of page numbers and navigates to the last page of data in that set.|  
+|Next page|<xref:System.Web.UI.WebControls.DataControlCommands.NextPageCommandArgument?displayProperty=fullName>|Displays the previous set of page numbers and navigates to the first page of data in that set.|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NextPageImageUrl">
@@ -269,9 +443,28 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the URL of an image that is displayed for the next-page button in the <see cref="T:System.Web.UI.WebControls.NumericPagerField" /> object.</summary>
+        <value>The URL of an image that is displayed for the next-page button in the <see cref="T:System.Web.UI.WebControls.NumericPagerField" /> object. The default is an empty string (""), which indicates that the <see cref="P:System.Web.UI.WebControls.NumericPagerField.NextPageImageUrl" /> property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Web.UI.WebControls.NumericPagerField.ButtonType%2A> property is set to <xref:System.Web.UI.WebControls.ButtonType?displayProperty=fullName>, use the <xref:System.Web.UI.WebControls.NumericPagerField.NextPageImageUrl%2A> property to specify the URL of an image that is displayed for the next-page button. The image can be in any file format that is supported in browser, such as .jpg, .gif, .bmp, and .png.  
+  
+ When the <xref:System.Web.UI.WebControls.NumericPagerField.ButtonType%2A> property is set to a value other than <xref:System.Web.UI.WebControls.ButtonType?displayProperty=fullName>, setting the <xref:System.Web.UI.WebControls.NumericPagerField.NextPageImageUrl%2A> property has no effect.  
+  
+ The value of this property is stored in view state.  
+  
+   
+  
+## Examples  
+ The following example shows how to display an image for the next-page button in the <xref:System.Web.UI.WebControls.NumericPagerField> object of a <xref:System.Web.UI.WebControls.DataPager> control.  
+  
+ [!code-csharp[System.Web.UI.WebControls.NumericPagerFieldUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NumericPagerFieldUrl/CS/NumericPagerUrlCS.aspx#1)]
+ [!code-vb[System.Web.UI.WebControls.NumericPagerFieldUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NumericPagerFieldUrl/VB/NumericPagerUrlVB.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NextPageText">
@@ -295,9 +488,26 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the text that is displayed for the next-page button.</summary>
+        <value>The text that is displayed for the next-page button. The default is "…".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Web.UI.WebControls.NumericPagerField.ButtonType%2A> property is set to <xref:System.Web.UI.WebControls.ButtonType?displayProperty=fullName>, the text specified in the <xref:System.Web.UI.WebControls.NumericPagerField.NextPageText%2A> property is used as the alternate text for the image. On browsers that support tooltips, this text is also displayed as a tooltip for the corresponding button.  
+  
+ The value of this property is stored in view state. It can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](../Topic/ASP.NET%20Globalization%20and%20Localization.md).  
+  
+   
+  
+## Examples  
+ The following example shows how to customize the text that is displayed for the next-page button of the pager field in a <xref:System.Web.UI.WebControls.DataPager> control.  
+  
+ [!code-csharp[System.Web.UI.WebControls.NumericPagerFieldText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NumericPagerFieldText/CS/NumericPagerTextCS.aspx#1)]
+ [!code-vb[System.Web.UI.WebControls.NumericPagerFieldText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NumericPagerFieldText/VB/NumericPagerTextVB.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NextPreviousButtonCssClass">
@@ -324,9 +534,29 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the cascading style sheet (CSS) class that is used to style the next-page and previous-page buttons of the pager field.</summary>
+        <value>The CSS class that is used to style the next-page and previous-page buttons of the pager field. The default is an empty string (""), which indicates that the <see cref="P:System.Web.UI.WebControls.NumericPagerField.NextPreviousButtonCssClass" /> property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The next-page and previous-page buttons are displayed by the <xref:System.Web.UI.WebControls.NumericPagerField> class to let users access other pages of data when the total number of pages is greater than the value specified in the <xref:System.Web.UI.WebControls.NumericPagerField.ButtonCount%2A> property. The <xref:System.Web.UI.WebControls.NumericPagerField.NextPreviousButtonCssClass%2A> property is always rendered as a `class` attribute, regardless of the browser.  
+  
+> [!NOTE]
+>  On browsers that do not support CSS, setting the <xref:System.Web.UI.WebControls.NumericPagerField.NextPreviousButtonCssClass%2A> property has no effect.  
+  
+ The value of this property is stored in view state.  
+  
+   
+  
+## Examples  
+ The following example shows how to specify a CSS class to style the next-page and previous-page buttons in the <xref:System.Web.UI.WebControls.NumericPagerField> object of a <xref:System.Web.UI.WebControls.DataPager> control.  
+  
+ [!code-csharp[System.Web.UI.WebControls.NumericPagerFieldCss#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NumericPagerFieldCss/CS/NumericPagerCssCS.aspx#1)]
+ [!code-vb[System.Web.UI.WebControls.NumericPagerFieldCss#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NumericPagerFieldCss/VB/NumericPagerCssVB.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NumericButtonCssClass">
@@ -353,9 +583,31 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the cascading style sheet (CSS) class that is used to style the page-number buttons of the pager field.</summary>
+        <value>The CSS class that is used to style the page-number buttons of the pager field. The default is an empty string (""), which indicates that the <see cref="P:System.Web.UI.WebControls.NumericPagerField.NumericButtonCssClass" /> property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Page-number buttons are displayed by the <xref:System.Web.UI.WebControls.NumericPagerField> class to enable users to navigate directly to individual pages. The CSS class specified by the <xref:System.Web.UI.WebControls.NumericPagerField.NumericButtonCssClass%2A> property is applied to all page numbers that are displayed by the <xref:System.Web.UI.WebControls.NumericPagerField> object, except for the page that is currently selected. The page currently selected page uses the CSS class that is specified by the <xref:System.Web.UI.WebControls.NumericPagerField.CurrentPageLabelCssClass%2A> property.  
+  
+ The <xref:System.Web.UI.WebControls.NumericPagerField.NumericButtonCssClass%2A> property is always rendered as a `class` attribute, regardless of the browser.  
+  
+> [!NOTE]
+>  On browsers that do not support CSS, setting the <xref:System.Web.UI.WebControls.NumericPagerField.NumericButtonCssClass%2A> property has no effect.  
+  
+ The value of this property is stored in view state.  
+  
+   
+  
+## Examples  
+ The following example shows how to specify a CSS class to style the page number buttons in the <xref:System.Web.UI.WebControls.NumericPagerField> object of a <xref:System.Web.UI.WebControls.DataPager> control.  
+  
+ [!code-csharp[System.Web.UI.WebControls.NumericPagerFieldCss#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NumericPagerFieldCss/CS/NumericPagerCssCS.aspx#1)]
+ [!code-vb[System.Web.UI.WebControls.NumericPagerFieldCss#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NumericPagerFieldCss/VB/NumericPagerCssVB.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PreviousPageImageUrl">
@@ -385,9 +637,28 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the URL of an image that is displayed for the previous-page button in the <see cref="T:System.Web.UI.WebControls.NumericPagerField" /> object.</summary>
+        <value>The URL to an image that is displayed for the previous-page button in the <see cref="T:System.Web.UI.WebControls.NumericPagerField" /> object. The default is an empty string (""), which indicates that the <see cref="P:System.Web.UI.WebControls.NumericPagerField.PreviousPageImageUrl" /> property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Web.UI.WebControls.NumericPagerField.ButtonType%2A> property is set to <xref:System.Web.UI.WebControls.ButtonType?displayProperty=fullName>, use the <xref:System.Web.UI.WebControls.NumericPagerField.PreviousPageImageUrl%2A> property to specify the URL of an image that is displayed for the previous-page button. The image can be in any file format that is supported in browsers, such as .jpg, .gif, .bmp, and .png.  
+  
+ When the <xref:System.Web.UI.WebControls.NumericPagerField.ButtonType%2A> property is set to a value other than <xref:System.Web.UI.WebControls.ButtonType?displayProperty=fullName>, setting the <xref:System.Web.UI.WebControls.NumericPagerField.PreviousPageImageUrl%2A> property has no effect.  
+  
+ The value of this property is stored in view state.  
+  
+   
+  
+## Examples  
+ The following example shows how to display an image for the previous-page button in the <xref:System.Web.UI.WebControls.NumericPagerField> object of a <xref:System.Web.UI.WebControls.DataPager> control.  
+  
+ [!code-csharp[System.Web.UI.WebControls.NumericPagerFieldUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NumericPagerFieldUrl/CS/NumericPagerUrlCS.aspx#1)]
+ [!code-vb[System.Web.UI.WebControls.NumericPagerFieldUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NumericPagerFieldUrl/VB/NumericPagerUrlVB.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PreviousPageText">
@@ -411,9 +682,26 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the text that is displayed for the previous-page button.</summary>
+        <value>The text that is displayed for the previous-page button. The default is "…".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Web.UI.WebControls.NumericPagerField.ButtonType%2A> property is set to <xref:System.Web.UI.WebControls.ButtonType?displayProperty=fullName>, the text in the <xref:System.Web.UI.WebControls.NumericPagerField.PreviousPageText%2A> property is used as the alternate text for the image. On browsers that support tooltips, this text is also displayed as a tooltip for the corresponding button.  
+  
+ The value of this property is stored in view state. It can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](../Topic/ASP.NET%20Globalization%20and%20Localization.md).  
+  
+   
+  
+## Examples  
+ The following example shows how to customize the text that is displayed for the previous-page button of the pager field in a <xref:System.Web.UI.WebControls.DataPager> control.  
+  
+ [!code-csharp[System.Web.UI.WebControls.NumericPagerFieldText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NumericPagerFieldText/CS/NumericPagerTextCS.aspx#1)]
+ [!code-vb[System.Web.UI.WebControls.NumericPagerFieldText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NumericPagerFieldText/VB/NumericPagerTextVB.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderNonBreakingSpacesBetweenControls">
@@ -437,9 +725,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether non-breaking spaces will be rendered between controls.</summary>
+        <value>
+          <see langword="true" /> if non-breaking spaces will be rendered between controls; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.NumericPagerField.RenderNonBreakingSpacesBetweenControls%2A> property to specify whether non-breaking spaces (the HTML `&nbsp;` character reference) will be rendered between the controls of the <xref:System.Web.UI.WebControls.NumericPagerField> object, such as the page buttons. If you need more control over the layout that you are creating with cascading style sheet (CSS) classes, you can set <xref:System.Web.UI.WebControls.NumericPagerField.RenderNonBreakingSpacesBetweenControls%2A> to `false`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

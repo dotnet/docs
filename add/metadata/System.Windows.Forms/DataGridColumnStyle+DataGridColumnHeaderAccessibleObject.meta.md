@@ -1,44 +1,67 @@
 ---
 uid: System.Windows.Forms.DataGridColumnStyle.DataGridColumnHeaderAccessibleObject
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridColumnStyle.DataGridColumnHeaderAccessibleObject.Role
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridColumnStyle.DataGridColumnHeaderAccessibleObject.Bounds
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridColumnStyle.DataGridColumnHeaderAccessibleObject.#ctor(System.Windows.Forms.DataGridColumnStyle)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridColumnStyle.DataGridColumnHeaderAccessibleObject.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridColumnStyle.DataGridColumnHeaderAccessibleObject.Parent
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridColumnStyle.DataGridColumnHeaderAccessibleObject.Navigate(System.Windows.Forms.AccessibleNavigation)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridColumnStyle.DataGridColumnHeaderAccessibleObject.Name
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridColumnStyle.DataGridColumnHeaderAccessibleObject.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridColumnStyle.DataGridColumnHeaderAccessibleObject.Owner
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

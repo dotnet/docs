@@ -1,34 +1,41 @@
 ---
 uid: System.Web.UI.Design.DesignerObject
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DesignerObject.Designer
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DesignerObject.System#IServiceProvider#GetService(System.Type)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DesignerObject.#ctor(System.Web.UI.Design.ControlDesigner,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DesignerObject.Properties
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DesignerObject.GetService(System.Type)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DesignerObject.Name
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

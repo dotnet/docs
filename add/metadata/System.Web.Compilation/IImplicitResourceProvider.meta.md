@@ -1,14 +1,20 @@
 ---
 uid: System.Web.Compilation.IImplicitResourceProvider
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Compilation.IImplicitResourceProvider.GetImplicitResourceKeys(System.String)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Compilation.IImplicitResourceProvider.GetObject(System.Web.Compilation.ImplicitResourceKey,System.Globalization.CultureInfo)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

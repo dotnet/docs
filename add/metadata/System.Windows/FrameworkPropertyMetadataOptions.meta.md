@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.FrameworkPropertyMetadataOptions
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

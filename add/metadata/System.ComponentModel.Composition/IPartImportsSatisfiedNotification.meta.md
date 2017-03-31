@@ -1,9 +1,13 @@
 ---
 uid: System.ComponentModel.Composition.IPartImportsSatisfiedNotification
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.IPartImportsSatisfiedNotification.OnImportsSatisfied
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

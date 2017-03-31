@@ -1,1 +1,0 @@
-	       ChannelFactory<IRequestChannel> factory = new ChannelFactory<IRequestChannel>("MyEndpoint");

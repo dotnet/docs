@@ -1,119 +1,149 @@
 ---
 uid: System.Web.UI.MobileControls.MobileListItem
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.MobileListItem.OnBubbleEvent(System.Object,System.EventArgs)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.MobileListItem.GetHashCode
-internalonly: False
----
-
----
-uid: System.Web.UI.MobileControls.MobileListItem.SaveViewState
-internalonly: False
----
-
----
-uid: System.Web.UI.MobileControls.MobileListItem.System#Web#UI#IStateManager#TrackViewState
-internalonly: False
----
-
----
-uid: System.Web.UI.MobileControls.MobileListItem.Value
-internalonly: False
----
-
----
-uid: System.Web.UI.MobileControls.MobileListItem.TrackViewState
-internalonly: False
----
-
----
-uid: System.Web.UI.MobileControls.MobileListItem.Index
-internalonly: False
----
-
----
-uid: System.Web.UI.MobileControls.MobileListItem.System#Web#UI#IStateManager#IsTrackingViewState
-internalonly: False
----
-
----
-uid: System.Web.UI.MobileControls.MobileListItem.System#Web#UI#IStateManager#LoadViewState(System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.MobileListItem.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.MobileListItem.SaveViewState
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.MobileListItem.System#Web#UI#IStateManager#TrackViewState
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.MobileListItem.Value
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.MobileListItem.TrackViewState
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.MobileListItem.Index
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.MobileListItem.System#Web#UI#IStateManager#IsTrackingViewState
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.MobileListItem.System#Web#UI#IStateManager#LoadViewState(System.Object)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.MobileListItem.#ctor
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.MobileListItem.DataItem
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.MobileListItem.#ctor(System.Object,System.String,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.MobileListItem.ToString
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.MobileListItem.System#Web#UI#IStateManager#SaveViewState
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.MobileListItem.Equals(System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.MobileListItem.Text
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.MobileListItem.#ctor(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.MobileListItem.Selected
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.MobileListItem.IsTrackingViewState
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.MobileListItem.#ctor(System.Web.UI.MobileControls.MobileListItemType)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.MobileListItem.FromString(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.MobileListItem.LoadViewState(System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.MobileListItem.#ctor(System.String,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

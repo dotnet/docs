@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.LdapException" /> class is an exception that occurs when LDAP returns an error code not included in <see cref="T:System.DirectoryServices.Protocols.ResultCode" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.LdapException.#ctor" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.LdapException" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <Parameter Name="errorCode" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="errorCode">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="errorCode">The error code returned by the LDAP implementation.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.LdapException.#ctor(System.Int32)" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.LdapException" /> class using the specified error code. The default message displayed to the client is "Communications error with the LDAP server".</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +61,8 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The message displayed to the client when the exception occurs.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.LdapException.#ctor(System.String)" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.LdapException" /> class using the specified message.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,9 +80,9 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="errorCode">To be added.</param>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="errorCode">The error code returned by the LDAP implementation.</param>
+        <param name="message">The message displayed to the client when the exception occurs.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.LdapException.#ctor(System.Int32,System.String)" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.LdapException" /> class using the specified error code and message.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,9 +100,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">Data required to serialize the parameter.</param>
+        <param name="context">The source and destination of the serialized stream associated with the parameter.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.LdapException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.LdapException" /> class using the specified serialization data and streaming context.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,9 +120,9 @@
         <Parameter Name="inner" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="inner">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The message displayed to the client when the exception occurs.</param>
+        <param name="inner">The inner exception, if any, that threw the exception.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.LdapException.#ctor(System.String,System.Exception)" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.LdapException" /> class using the specified message and inner exception.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -141,10 +141,10 @@
         <Parameter Name="inner" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="errorCode">To be added.</param>
-        <param name="message">To be added.</param>
-        <param name="inner">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="errorCode">The error code returned by the LDAP implementation.</param>
+        <param name="message">The message displayed to the client when the exception occurs.</param>
+        <param name="inner">The inner exception, if any, that threw the exception.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.LdapException.#ctor(System.Int32,System.String,System.Exception)" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.LdapException" /> class using the specified error code, message, and inner exception.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -163,10 +163,10 @@
         <Parameter Name="serverErrorMessage" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="errorCode">To be added.</param>
-        <param name="message">To be added.</param>
-        <param name="serverErrorMessage">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="errorCode">The error code returned by the LDAP implementation.</param>
+        <param name="message">The message displayed to the client when the exception occurs.</param>
+        <param name="serverErrorMessage">The LDAP server error message.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.LdapException.#ctor(System.Int32,System.String,System.String)" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.LdapException" /> class using the specified error code, message, and LDAP server error message.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -183,8 +183,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.LdapException.ErrorCode" /> property contains the LDAP error code.</summary>
+        <value>The LDAP error code.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -205,9 +205,9 @@
         <Parameter Name="streamingContext" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="serializationInfo">To be added.</param>
-        <param name="streamingContext">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serializationInfo">Data required to serialize the parameter.</param>
+        <param name="streamingContext">The source and destination of the serialized stream associated with the parameter.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.LdapException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" /> method populates the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object with the data required to serialize the parameter.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -224,8 +224,8 @@
         <ReturnType>System.DirectoryServices.Protocols.PartialResultsCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.LdapException.PartialResults" /> property contains a <see cref="T:System.DirectoryServices.Protocols.PartialResultsCollection" /> object that contains partial results.</summary>
+        <value>A <see cref="T:System.DirectoryServices.Protocols.PartialResultsCollection" /> object that contains partial results.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -242,8 +242,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.LdapException.ServerErrorMessage" /> property contains a <see cref="T:System.String" /> that contains the LDAP server error message (if any exists).</summary>
+        <value>A <see cref="T:System.String" /> that contains the LDAP server error message (if any).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

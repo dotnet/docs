@@ -15,8 +15,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the current state of the modifier keys (SHIFT, CTRL, and ALT), as well as the state of the mouse buttons.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No distinction is made between the left or right SHIFT, ALT, and CTRL keys.  
+  
+ This enumeration is used by the <xref:System.Windows.DragEventArgs> and <xref:System.Windows.QueryContinueDragEventArgs> classes.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AltKey">
@@ -32,7 +41,7 @@
         <ReturnType>System.Windows.DragDropKeyStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The ALT key is pressed.</summary>
       </Docs>
     </Member>
     <Member MemberName="ControlKey">
@@ -48,7 +57,7 @@
         <ReturnType>System.Windows.DragDropKeyStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The control (CTRL) key is pressed.</summary>
       </Docs>
     </Member>
     <Member MemberName="LeftMouseButton">
@@ -64,7 +73,7 @@
         <ReturnType>System.Windows.DragDropKeyStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The left mouse button is pressed.</summary>
       </Docs>
     </Member>
     <Member MemberName="MiddleMouseButton">
@@ -80,7 +89,7 @@
         <ReturnType>System.Windows.DragDropKeyStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The middle mouse button is pressed.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -96,7 +105,7 @@
         <ReturnType>System.Windows.DragDropKeyStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No modifier keys or mouse buttons are pressed.</summary>
       </Docs>
     </Member>
     <Member MemberName="RightMouseButton">
@@ -112,7 +121,7 @@
         <ReturnType>System.Windows.DragDropKeyStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The right mouse button is pressed.</summary>
       </Docs>
     </Member>
     <Member MemberName="ShiftKey">
@@ -128,7 +137,7 @@
         <ReturnType>System.Windows.DragDropKeyStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The shift (SHIFT) key is pressed.</summary>
       </Docs>
     </Member>
   </Members>

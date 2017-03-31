@@ -1,24 +1,29 @@
 ---
 uid: Microsoft.VisualC.StlClr.VectorEnumeratorBase`1
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.StlClr.VectorEnumeratorBase`1.MoveNext
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.StlClr.VectorEnumeratorBase`1.Current
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.StlClr.VectorEnumeratorBase`1.#ctor(Microsoft.VisualC.StlClr.IVector{`0},System.Int32)
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.StlClr.VectorEnumeratorBase`1.Reset
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---

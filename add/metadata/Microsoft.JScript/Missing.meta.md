@@ -1,9 +1,9 @@
 ---
 uid: Microsoft.JScript.Missing
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.Missing.Value
-internalonly: False
+ms.author: "mikejo"
 ---

@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the direction to move when getting items with the <see cref="M:System.Windows.Forms.ToolStrip.GetNextItem(System.Windows.Forms.ToolStripItem,System.Windows.Forms.ArrowDirection)" /> method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.ArrowDirection> works with <xref:System.Windows.Forms.Orientation> so you can quickly determine an orientation from a direction.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Down">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Forms.ArrowDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The direction is down (<see cref="F:System.Windows.Forms.Orientation.Vertical" />).</summary>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Forms.ArrowDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The direction is left (<see cref="F:System.Windows.Forms.Orientation.Horizontal" />).</summary>
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.Forms.ArrowDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The direction is right (<see cref="F:System.Windows.Forms.Orientation.Horizontal" />).</summary>
       </Docs>
     </Member>
     <Member MemberName="Up">
@@ -75,7 +82,7 @@
         <ReturnType>System.Windows.Forms.ArrowDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The direction is up (<see cref="F:System.Windows.Forms.Orientation.Vertical" />).</summary>
       </Docs>
     </Member>
   </Members>

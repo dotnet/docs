@@ -38,8 +38,32 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Wraps ActiveX controls and exposes them as fully featured Windows Forms controls.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You typically do not use the <xref:System.Windows.Forms.AxHost> class directly. You can use the [Aximp.exe (Windows Forms ActiveX Control Importer)](../Topic/Aximp.exe%20\(Windows%20Forms%20ActiveX%20Control%20Importer\).md) to generate the wrappers that extend <xref:System.Windows.Forms.AxHost>.  
+  
+ The ActiveX Control Importer generates a class that is derived from the <xref:System.Windows.Forms.AxHost> class, and compiles it into a library file (DLL) that can be added as a reference to your application. Alternatively, you can use the `/source` switch with the ActiveX Control Importer and a C# file is generated for your <xref:System.Windows.Forms.AxHost> derived class. You can then make changes to the code and recompile it into a library file.  
+  
+> [!NOTE]
+>  If the name of a member of the ActiveX control matches a name defined in the .NET Framework, then the ActiveX Control Importer will prefix the member name with "Ctl" when it creates the <xref:System.Windows.Forms.AxHost> derived class. For example, if your ActiveX control has a member named "Layout", it is renamed "CtlLayout" in the <xref:System.Windows.Forms.AxHost> derived class because the `Layout` event is defined within the .NET Framework.  
+  
+ Most of the common properties of the <xref:System.Windows.Forms.AxHost> class are only valid and used if the underlying ActiveX control exposes those properties. A few examples of the common properties are <xref:System.Windows.Forms.Control.BackColor%2A>, <xref:System.Windows.Forms.Control.Cursor%2A>, <xref:System.Windows.Forms.Control.Font%2A>, and <xref:System.Windows.Forms.Control.Text%2A>.  
+  
+> [!NOTE]
+>  If you are using Visual Studio as your Windows Forms design environment, you can make an ActiveX control available to your application by adding the ActiveX control to your Toolbox. To accomplish this, right-click the **Toolbox**, select **Customize Toolbox**, then browse to the ActiveX control's.ocx file. For more information, see "Adding ActiveX Controls to Windows Forms" in the Visual Studio documentation.  
+  
+   
+  
+## Examples  
+ The following code example overrides the constructor, and the <xref:System.Windows.Forms.AxHost.SetAboutBoxDelegate%2A> and <xref:System.Windows.Forms.AxHost.AttachInterfaces%2A> methods of an <xref:System.Windows.Forms.AxHost> derived class that wraps the Microsoft Masked Edit ActiveX Control. This code requires that you have created the generated source code by running the AxImp.exe on the MSMask32.ocx file with the `/source` switch to generate the wrapper class to be edited. This code is only shown in C# syntax because that is the only language output by the AxImp.exe.  
+  
+ [!code-csharp[AxHost_Wrap_MaskEdit#1](~/samples/snippets/csharp/VS_Snippets_Winforms/AxHost_Wrap_MaskEdit/CS/axmsmask.cs#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,8 +79,8 @@
         <Parameter Name="clsid" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="clsid">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="clsid">The CLSID of the ActiveX control to wrap.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.AxHost" /> class, wrapping the ActiveX control indicated by the specified CLSID.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,10 +98,19 @@
         <Parameter Name="flags" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="clsid">To be added.</param>
-        <param name="flags">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="clsid">The CLSID of the ActiveX control to wrap.</param>
+        <param name="flags">An <see cref="T:System.Int32" /> that modifies the shortcut-menu behavior for the control.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.AxHost" /> class, wrapping the ActiveX control indicated by the specified CLSID, and using the shortcut-menu behavior indicated by the specified <paramref name="flags" /> value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the binary representation of the `flags` parameter value contains the bit represented by the value 0x1, the shortcut menu for the control will not contain an **Edit** option unless the ActiveX control explicitly provides it.  
+  
+ If the binary representation of the `flags` parameter value contains the bit represented by the value 0x2, the shortcut menu for the control will contain a Properties option if the ActiveX control offers a set of property pages; otherwise, the shortcut menu will contain a Properties option only if the ActiveX control explicitly provides it.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AttachInterfaces">
@@ -94,8 +127,20 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>When overridden in a derived class, attaches interfaces to the underlying ActiveX control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example overrides the constructor, and the <xref:System.Windows.Forms.AxHost.SetAboutBoxDelegate%2A> and <xref:System.Windows.Forms.AxHost.AttachInterfaces%2A> methods of an <xref:System.Windows.Forms.AxHost> derived class that wraps the Microsoft Masked Edit ActiveX Control. This code requires that you have created the generated source code by running the AxImp.exe on the MSMask32.ocx file with the `/source` switch to generate the wrapper class to be edited. This code is only shown in C# syntax because that is the only language output by the AxImp.exe.  
+  
+ [!code-csharp[AxHost_Wrap_MaskEdit#1](~/samples/snippets/csharp/VS_Snippets_Winforms/AxHost_Wrap_MaskEdit/CS/axmsmask.cs#1)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Classes that extend <see cref="T:System.Windows.Forms.AxHost" /> should override this method. Within an overridden version of this method, the extending class should call <see cref="M:System.Windows.Forms.AxHost.GetOcx" /> to retrieve its own interface. In most cases, the <see cref="M:System.Windows.Forms.AxHost.GetOcx" /> method should not be called before this method is called.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="BackColor">
@@ -119,8 +164,8 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This member is not meaningful for this control.</summary>
+        <value>A Color that represents the background color of the control.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -145,8 +190,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="E:System.Windows.Forms.AxHost.BackColorChanged" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.BackColorChanged> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BackgroundImage">
@@ -173,8 +225,8 @@
         <ReturnType>System.Drawing.Image</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This property is not relevant for this class.</summary>
+        <value>The background image displayed in the control.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -199,8 +251,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="E:System.Windows.Forms.AxHost.BackgroundImageChanged" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.BackgroundImageChanged> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BackgroundImageLayout">
@@ -227,8 +286,8 @@
         <ReturnType>System.Windows.Forms.ImageLayout</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This property is not relevant for this class.</summary>
+        <value>An <see cref="T:System.Windows.Forms.ImageLayout" /> value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -253,7 +312,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This event is not relevant for this class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -276,8 +335,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Begins the initialization of the ActiveX control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Design environments typically use this method to start the initialization of a component that is used on a form or used by another component. The <xref:System.Windows.Forms.AxHost.EndInit%2A> method ends the initialization. Using the <xref:System.Windows.Forms.AxHost.BeginInit%2A> and <xref:System.Windows.Forms.AxHost.EndInit%2A> methods prevents the control from being used before it is fully initialized. The initialization occurs at run time.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BindingContextChanged">
@@ -301,8 +367,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="E:System.Windows.Forms.AxHost.BindingContextChanged" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.BindingContextChanged> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ChangeUICues">
@@ -326,8 +399,15 @@
         <ReturnType>System.Windows.Forms.UICuesEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="E:System.Windows.Forms.AxHost.ChangeUICues" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.ChangeUICues> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Click">
@@ -351,8 +431,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="E:System.Windows.Forms.AxHost.Click" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.Click> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ContainingControl">
@@ -379,9 +466,17 @@
         <ReturnType>System.Windows.Forms.ContainerControl</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the control containing the ActiveX control.</summary>
+        <value>A <see cref="T:System.Windows.Forms.ContainerControl" /> that represents the control containing the ActiveX control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.AxHost.ContainingControl%2A> property value can be different from the <xref:System.Windows.Forms.Control.Parent%2A> property. The <xref:System.Windows.Forms.ContainerControl> represented by this property is the ActiveX control's logical container. For example, if an ActiveX control is hosted in a <xref:System.Windows.Forms.GroupBox> control, and the <xref:System.Windows.Forms.GroupBox> is contained on a <xref:System.Windows.Forms.Form>, then the <xref:System.Windows.Forms.AxHost.ContainingControl%2A> property value of the ActiveX control is the <xref:System.Windows.Forms.Form>, and the <xref:System.Windows.Forms.Control.Parent%2A> property value is the <xref:System.Windows.Forms.GroupBox> control.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">for all windows to get this property value. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
       </Docs>
     </Member>
     <Member MemberName="ContextMenu">
@@ -405,8 +500,8 @@
         <ReturnType>System.Windows.Forms.ContextMenu</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This property is not relevant for this class.</summary>
+        <value>The shortcut menu associated with the control.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -431,8 +526,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="E:System.Windows.Forms.AxHost.ContextMenuChanged" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.ContextMenuChanged> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateHandle">
@@ -449,7 +551,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a handle for the control.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -469,9 +571,9 @@
         <Parameter Name="clsid" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="clsid">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="clsid">The CLSID of the ActiveX control.</param>
+        <summary>Called by the system to create the ActiveX control.</summary>
+        <returns>An <see cref="T:System.Object" /> representing the ActiveX control.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -488,8 +590,8 @@
         <ReturnType>System.Windows.Forms.CreateParams</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the required creation parameters when the control handle is created.</summary>
+        <value>A <see cref="T:System.Windows.Forms.CreateParams" /> that contains the required creation parameters when the handle to the control is created.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -512,8 +614,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Called by the control to prepare it for listening to events.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This base-class implementation is empty.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Cursor">
@@ -537,8 +646,8 @@
         <ReturnType>System.Windows.Forms.Cursor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This property is not relevant for this class.</summary>
+        <value>The foreground color of the control.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -563,8 +672,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="E:System.Windows.Forms.AxHost.CursorChanged" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.CursorChanged> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultSize">
@@ -580,8 +696,8 @@
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the default size of the control.</summary>
+        <value>The default <see cref="T:System.Drawing.Size" /> of the control.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -599,7 +715,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Destroys the handle associated with the control.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -622,8 +738,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Called by the control when it stops listening to events.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This base-class implementation is empty.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -642,8 +765,9 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.Control" /> and its child controls and optionally releases the managed resources.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -668,8 +792,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="E:System.Windows.Forms.AxHost.DoubleClick" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.DoubleClick> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DoVerb">
@@ -688,9 +819,16 @@
         <Parameter Name="verb" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="verb">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="verb">One of the actions enumerated for the object in IOleObject::EnumVerbs.</param>
+        <summary>Requests that an object perform an action in response to an end-user's action.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method passes the specified verb to the [IOleObject::DoVerb](http://go.microsoft.com/fwlink/?LinkId=166076) method of the hosted control.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DragDrop">
@@ -714,8 +852,15 @@
         <ReturnType>System.Windows.Forms.DragEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="E:System.Windows.Forms.AxHost.DragDrop" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.DragDrop> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DragEnter">
@@ -739,8 +884,15 @@
         <ReturnType>System.Windows.Forms.DragEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="E:System.Windows.Forms.AxHost.DragEnter" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.DragEnter> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DragLeave">
@@ -764,8 +916,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="E:System.Windows.Forms.AxHost.DragLeave" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.DragLeave> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DragOver">
@@ -789,8 +948,15 @@
         <ReturnType>System.Windows.Forms.DragEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="E:System.Windows.Forms.AxHost.DragOver" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.DragOver> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawToBitmap">
@@ -815,9 +981,9 @@
         <Parameter Name="targetBounds" Type="System.Drawing.Rectangle" />
       </Parameters>
       <Docs>
-        <param name="bitmap">To be added.</param>
-        <param name="targetBounds">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="bitmap">A <see cref="T:System.Drawing.Bitmap" />.</param>
+        <param name="targetBounds">A <see cref="T:System.Drawing.Rectangle" />.</param>
+        <summary>This method is not supported by this control.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -845,8 +1011,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns a value that indicates whether the hosted control is in edit mode.</summary>
+        <value>
+          <see langword="true" /> if the hosted control is in edit mode; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -871,8 +1038,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This property is not relevant for this class.</summary>
+        <value>A <see cref="T:System.Boolean" /> value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -897,8 +1064,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="E:System.Windows.Forms.AxHost.EnabledChanged" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.EnabledChanged> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EndInit">
@@ -920,8 +1094,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Ends the initialization of an ActiveX control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Design environments typically use this method to finish the initialization of a component that is used on a form or used by another component. The <xref:System.Windows.Forms.AxHost.EndInit%2A> method ends the initialization. Using the <xref:System.Windows.Forms.AxHost.BeginInit%2A> and <xref:System.Windows.Forms.AxHost.EndInit%2A> methods prevents the control from being used before it is fully initialized. The initialization occurs at run time.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -945,8 +1126,8 @@
         <ReturnType>System.Drawing.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This property is not relevant for this class.</summary>
+        <value>The font of the text displayed by the control.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -971,8 +1152,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="E:System.Windows.Forms.AxHost.FontChanged" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.FontChanged> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -996,8 +1184,8 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This property is not relevant for this class.</summary>
+        <value>The foreground color of the control.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1022,8 +1210,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="E:System.Windows.Forms.AxHost.ForeColorChanged" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.ForeColorChanged> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetColorFromOleColor">
@@ -1050,9 +1245,9 @@
         <Parameter Name="color" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="color">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="color">The OLE color value to translate.</param>
+        <summary>Returns a <see cref="T:System.Drawing.Color" /> structure that corresponds to the specified OLE color value.</summary>
+        <returns>The <see cref="T:System.Drawing.Color" /> structure that represents the translated OLE color value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1077,9 +1272,9 @@
         <Parameter Name="font" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="font">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="font">The IFont to create a <see cref="T:System.Drawing.Font" /> from.</param>
+        <summary>Returns a <see cref="T:System.Drawing.Font" /> created from the specified OLE [IFont](http://go.microsoft.com/fwlink/?LinkId=166075) object.</summary>
+        <returns>The <see cref="T:System.Drawing.Font" /> created from the specified [IFont](http://go.microsoft.com/fwlink/?LinkId=166075), <see cref="P:System.Windows.Forms.Control.DefaultFont" /> if the font could not be created, or <see langword="null" /> if <paramref name="font" /> is <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1104,9 +1299,9 @@
         <Parameter Name="font" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="font">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="font">The IFontDisp to create a <see cref="T:System.Drawing.Font" /> from.</param>
+        <summary>Returns a <see cref="T:System.Drawing.Font" /> created from the specified OLE [IFontDisp](http://go.microsoft.com/fwlink/?LinkId=166073) object.</summary>
+        <returns>The <see cref="T:System.Drawing.Font" /> created from the specified [IFontDisp](http://go.microsoft.com/fwlink/?LinkId=166073), <see cref="P:System.Windows.Forms.Control.DefaultFont" /> if the font could not be created, or <see langword="null" /> if <paramref name="font" /> is <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1131,10 +1326,11 @@
         <Parameter Name="font" Type="System.Drawing.Font" />
       </Parameters>
       <Docs>
-        <param name="font">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="font">The font to create an IFontDisp object from.</param>
+        <summary>Returns an OLE [IFontDisp](http://go.microsoft.com/fwlink/?LinkId=166073) object created from the specified <see cref="T:System.Drawing.Font" /> object.</summary>
+        <returns>The [IFontDisp](http://go.microsoft.com/fwlink/?LinkId=166073) object created from the specified font or <see langword="null" /> if <paramref name="font" /> is <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.Drawing.Font.Unit" /> property value is not <see cref="F:System.Drawing.GraphicsUnit.Point" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetIFontFromFont">
@@ -1158,10 +1354,11 @@
         <Parameter Name="font" Type="System.Drawing.Font" />
       </Parameters>
       <Docs>
-        <param name="font">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="font">The font to create an IFont object from.</param>
+        <summary>Returns an OLE [IFont](http://go.microsoft.com/fwlink/?LinkId=166075) object created from the specified <see cref="T:System.Drawing.Font" /> object.</summary>
+        <returns>The [IFont](http://go.microsoft.com/fwlink/?LinkId=166075) object created from the specified font, or <see langword="null" /> if <paramref name="font" /> is <see langword="null" /> or the [IFont](http://go.microsoft.com/fwlink/?LinkId=166075) could not be created.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.Drawing.Font.Unit" /> property value is not <see cref="F:System.Drawing.GraphicsUnit.Point" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetIPictureDispFromPicture">
@@ -1185,9 +1382,9 @@
         <Parameter Name="image" Type="System.Drawing.Image" />
       </Parameters>
       <Docs>
-        <param name="image">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="image">The <see cref="T:System.Drawing.Image" /> to convert.</param>
+        <summary>Returns an OLE <see langword="IPictureDisp" /> object corresponding to the specified <see cref="T:System.Drawing.Image" />.</summary>
+        <returns>An <see cref="T:System.Object" /> representing the OLE <see langword="IPictureDisp" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1212,9 +1409,9 @@
         <Parameter Name="cursor" Type="System.Windows.Forms.Cursor" />
       </Parameters>
       <Docs>
-        <param name="cursor">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="cursor">A <see cref="T:System.Windows.Forms.Cursor" />, which is an image that represents the Windows mouse pointer.</param>
+        <summary>Returns an OLE <see langword="IPicture" /> object corresponding to the specified <see cref="T:System.Windows.Forms.Cursor" />.</summary>
+        <returns>An <see cref="T:System.Object" /> representing the OLE <see langword="IPicture" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1239,9 +1436,9 @@
         <Parameter Name="image" Type="System.Drawing.Image" />
       </Parameters>
       <Docs>
-        <param name="image">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="image">The <see cref="T:System.Drawing.Image" /> to convert.</param>
+        <summary>Returns an OLE <see langword="IPicture" /> object corresponding to the specified <see cref="T:System.Drawing.Image" />.</summary>
+        <returns>An <see cref="T:System.Object" /> representing the OLE <see langword="IPicture" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1266,10 +1463,22 @@
         <Parameter Name="time" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="time">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="time">The <see cref="T:System.DateTime" /> structure to translate.</param>
+        <summary>Returns an OLE Automation date that corresponds to the specified <see cref="T:System.DateTime" /> structure.</summary>
+        <returns>A double-precision floating-point number that contains an OLE Automation date equivalent to specified <paramref name="time" /> value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An OLE Automation date is implemented as a floating-point number whose value is the number of days from midnight, 30 December 1899. For example, midnight, 31 December 1899 is represented by 1.0; 6 A.M., 1 January 1900 is represented by 2.25; midnight, 29 December 1899 is represented by -1.0; and 6 A.M., 29 December 1899 is represented by -1.25.  
+  
+ The base OLE Automation Date is midnight, 30 December 1899. The maximum OLE Automation Date is the same as <xref:System.DateTime>, the last moment of 31 December 9999.  
+  
+ For more information about OLE Automation, see the [MSDN Library](http://go.microsoft.com/fwlink/?linkid=37118).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.OverflowException">The value of this instance cannot be represented as an OLE Automation Date.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetOcx">
@@ -1291,9 +1500,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Retrieves a reference to the underlying ActiveX control.</summary>
+        <returns>An object that represents the ActiveX control.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example overrides the constructor, and the <xref:System.Windows.Forms.AxHost.SetAboutBoxDelegate%2A> and <xref:System.Windows.Forms.AxHost.AttachInterfaces%2A> methods of an <xref:System.Windows.Forms.AxHost> derived class that wraps the Microsoft Masked Edit ActiveX Control. This code requires that you have created the generated source code by running the AxImp.exe on the MSMask32.ocx file with the `/source` switch to generate the wrapper class to be edited. This code is only shown in C# syntax because that is the only language output by the AxImp.exe.  
+  
+ [!code-csharp[AxHost_Wrap_MaskEdit#1](~/samples/snippets/csharp/VS_Snippets_Winforms/AxHost_Wrap_MaskEdit/CS/axmsmask.cs#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetOleColorFromColor">
@@ -1320,9 +1538,9 @@
         <Parameter Name="color" Type="System.Drawing.Color" />
       </Parameters>
       <Docs>
-        <param name="color">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="color">The <see cref="T:System.Drawing.Color" /> structure to translate.</param>
+        <summary>Returns an OLE color value that corresponds to the specified <see cref="T:System.Drawing.Color" /> structure.</summary>
+        <returns>The OLE color value that represents the translated <see cref="T:System.Drawing.Color" /> structure.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1347,10 +1565,17 @@
         <Parameter Name="picture" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="picture">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="picture">The <see langword="IPicture" /> to convert.</param>
+        <summary>Returns an <see cref="T:System.Drawing.Image" /> corresponding to the specified OLE <see langword="IPicture" /> object.</summary>
+        <returns>An <see cref="T:System.Drawing.Image" /> representing the <see langword="IPicture" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this method to convert `IPictureDisp` objects in addition to `IPicture` objects. This works because the `IPictureDisp` OLE interface is a subset of the `IPicture` interface. Converting `IPictureDisp` objects with this method is necessary because the <xref:System.Windows.Forms.AxHost.GetPictureFromIPictureDisp%2A> does not work correctly at this time.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetPictureFromIPictureDisp">
@@ -1374,10 +1599,17 @@
         <Parameter Name="picture" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="picture">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="picture">The <see langword="IPictureDisp" /> to convert.</param>
+        <summary>Returns an <see cref="T:System.Drawing.Image" /> corresponding to the specified OLE <see langword="IPictureDisp" /> object.</summary>
+        <returns>An <see cref="T:System.Drawing.Image" /> representing the <see langword="IPictureDisp" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method does not work correctly. You can use the <xref:System.Windows.Forms.AxHost.GetPictureFromIPicture%2A> method to convert an `IPictureDisp` object into an <xref:System.Drawing.Image>, however, because the `IPictureDisp` OLE interface is a subset of the `IPicture` interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetScaledBounds">
@@ -1403,12 +1635,19 @@
         <Parameter Name="specified" Type="System.Windows.Forms.BoundsSpecified" />
       </Parameters>
       <Docs>
-        <param name="bounds">To be added.</param>
-        <param name="factor">To be added.</param>
-        <param name="specified">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="bounds">The original bounds of the ActiveX control.</param>
+        <param name="factor">A scaling factor.</param>
+        <param name="specified">A <see cref="T:System.Windows.Forms.BoundsSpecified" /> value.</param>
+        <summary>Called by the system to retrieve the current bounds of the ActiveX control.</summary>
+        <returns>The unmodified <paramref name="bounds" /> value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ActiveX controls scale themselves, so this method does not perform any special calculations, ignores the `factor` and `specified` values, and returns the `bounds` value unchanged.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTimeFromOADate">
@@ -1432,10 +1671,22 @@
         <Parameter Name="date" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="date">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="date">The OLE Automate date to translate.</param>
+        <summary>Returns a <see cref="T:System.DateTime" /> structure that corresponds to the specified OLE Automation date.</summary>
+        <returns>A <see cref="T:System.DateTime" /> that represents the same date and time as <paramref name="date" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `date` parameter is a double-precision floating-point number that represents a date as the number of days before or after the base date, midnight, 30 December 1899. The sign and integral part of `date` encode the date as a positive or negative day displacement from 30 December 1899, and the absolute value of the fractional part of `date` encodes the time of day as a fraction of a day displacement from midnight. `date` must be a value between negative 657435.0 through positive 2958466.0.  
+  
+ Note that because of the way dates are encoded, there are two ways of representing any time of day on 30 December 1899. For example, -0.5 and 0.5 both mean noon on 30 December 1899 because a day displacement of plus or minus zero days from the base date is still the base date, and a half day displacement from midnight is noon.  
+  
+ For more information about OLE Automation, see the [MSDN Library](http://go.microsoft.com/fwlink/?linkid=37118).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The date is not a valid OLE Automation Date value.</exception>
       </Docs>
     </Member>
     <Member MemberName="GiveFeedback">
@@ -1459,8 +1710,15 @@
         <ReturnType>System.Windows.Forms.GiveFeedbackEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="E:System.Windows.Forms.AxHost.GiveFeedback" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.GiveFeedback> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HasAboutBox">
@@ -1487,9 +1745,24 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether the ActiveX control has an **About** dialog box.</summary>
+        <value>
+          <see langword="true" /> if the ActiveX control has an **About** dialog box; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The **About** dialog box typically displays version and copyright information about the ActiveX control.  
+  
+   
+  
+## Examples  
+ The following code example overrides the constructor, and the <xref:System.Windows.Forms.AxHost.SetAboutBoxDelegate%2A> and <xref:System.Windows.Forms.AxHost.AttachInterfaces%2A> methods of an <xref:System.Windows.Forms.AxHost> derived class that wraps the Microsoft Masked Edit ActiveX Control. This code requires that you have created the generated source code by running the AxImp.exe on the MSMask32.ocx file with the `/source` switch to generate the wrapper class to be edited. This code is only shown in C# syntax because that is the only language output by the AxImp.exe.  
+  
+ [!code-csharp[AxHost_Wrap_MaskEdit#1](~/samples/snippets/csharp/VS_Snippets_Winforms/AxHost_Wrap_MaskEdit/CS/axmsmask.cs#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HasPropertyPages">
@@ -1506,9 +1779,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Determines if the ActiveX control has a property page.</summary>
+        <returns>
+          <see langword="true" /> if the ActiveX control has a property page; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Property pages allow an ActiveX control user to view and change ActiveX control properties. These properties are accessed by invoking a control properties dialog box, which contains one or more property pages that provide a customized, graphical interface for viewing and editing the control properties.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HelpRequested">
@@ -1532,8 +1813,15 @@
         <ReturnType>System.Windows.Forms.HelpEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="E:System.Windows.Forms.AxHost.HelpRequested" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.HelpRequested> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ImeMode">
@@ -1560,8 +1848,8 @@
         <ReturnType>System.Windows.Forms.ImeMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This property is not relevant for this class.</summary>
+        <value>An <see cref="T:System.Windows.Forms.ImeMode" /> value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1586,8 +1874,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="E:System.Windows.Forms.AxHost.ImeModeChanged" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.ImeModeChanged> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InvokeEditMode">
@@ -1609,7 +1904,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Attempts to activate the editing mode of the hosted control.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1629,10 +1924,21 @@
         <Parameter Name="charCode" Type="System.Char" />
       </Parameters>
       <Docs>
-        <param name="charCode">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="charCode">The character to test.</param>
+        <summary>Determines if a character is an input character that the ActiveX control recognizes.</summary>
+        <returns>
+          <see langword="true" /> if the character should be sent directly to the ActiveX control and not preprocessed; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.AxHost.IsInputChar%2A> method is called during window message preprocessing to determine whether the given input character should be preprocessed or sent directly to the ActiveX control. The preprocessing of a character includes checking whether the character is a mnemonic of another control.  
+  
+ As implemented in the <xref:System.Windows.Forms.AxHost> class, the <xref:System.Windows.Forms.AxHost.IsInputChar%2A> method always returns `true`, so the specified character is sent directly to the ActiveX control.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">for all windows for inheriting classes to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
       </Docs>
     </Member>
     <Member MemberName="KeyDown">
@@ -1656,8 +1962,15 @@
         <ReturnType>System.Windows.Forms.KeyEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="E:System.Windows.Forms.AxHost.KeyDown" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.KeyDown> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyPress">
@@ -1681,8 +1994,15 @@
         <ReturnType>System.Windows.Forms.KeyPressEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="E:System.Windows.Forms.AxHost.KeyPress" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.KeyPress> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyUp">
@@ -1706,8 +2026,15 @@
         <ReturnType>System.Windows.Forms.KeyEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="E:System.Windows.Forms.AxHost.KeyUp" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.KeyUp> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Layout">
@@ -1731,8 +2058,15 @@
         <ReturnType>System.Windows.Forms.LayoutEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="E:System.Windows.Forms.AxHost.Layout" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.Layout> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MakeDirty">
@@ -1754,7 +2088,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Announces to the component change service that the <see cref="T:System.Windows.Forms.AxHost" /> has changed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1779,7 +2113,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This event is not relevant for this class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1804,7 +2138,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This event is not relevant for this class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1829,8 +2163,15 @@
         <ReturnType>System.Windows.Forms.MouseEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="E:System.Windows.Forms.AxHost.MouseDown" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.MouseDown> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseEnter">
@@ -1854,8 +2195,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="E:System.Windows.Forms.AxHost.MouseEnter" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.MouseEnter> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseHover">
@@ -1879,8 +2227,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="E:System.Windows.Forms.AxHost.MouseHover" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.MouseHover> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseLeave">
@@ -1904,8 +2259,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="E:System.Windows.Forms.AxHost.MouseLeave" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.MouseLeave> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseMove">
@@ -1929,8 +2291,15 @@
         <ReturnType>System.Windows.Forms.MouseEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="E:System.Windows.Forms.AxHost.MouseMove" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.MouseMove> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseUp">
@@ -1954,8 +2323,15 @@
         <ReturnType>System.Windows.Forms.MouseEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="E:System.Windows.Forms.AxHost.MouseUp" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.MouseUp> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseWheel">
@@ -1979,8 +2355,15 @@
         <ReturnType>System.Windows.Forms.MouseEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="E:System.Windows.Forms.AxHost.MouseWheel" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.MouseWheel> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OcxState">
@@ -2010,9 +2393,17 @@
         <ReturnType>System.Windows.Forms.AxHost+State</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the persisted state of the ActiveX control.</summary>
+        <value>A <see cref="T:System.Windows.Forms.AxHost.State" /> that represents the persisted state of the ActiveX control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the <xref:System.Windows.Forms.AxHost.OcxState%2A> property is used after the control is created but before it is shown. The persisted state of the underlying ActiveX control is returned in the <xref:System.Windows.Forms.AxHost.State>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Exception">The ActiveX control is already loaded.</exception>
       </Docs>
     </Member>
     <Member MemberName="OnBackColorChanged">
@@ -2031,8 +2422,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.BackColorChanged" /> event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2052,8 +2443,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.FontChanged" /> event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2073,8 +2464,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.ForeColorChanged" /> event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2094,8 +2485,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.HandleCreated" /> event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2113,8 +2504,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Called when the control transitions to the in-place active state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This base-class implementation is empty.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnLostFocus">
@@ -2138,8 +2536,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.LostFocus" /> event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2164,8 +2562,15 @@
         <ReturnType>System.Windows.Forms.PaintEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="E:System.Windows.Forms.AxHost.Paint" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.Paint> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PreProcessMessage">
@@ -2184,9 +2589,10 @@
         <Parameter Name="msg" Type="System.Windows.Forms.Message&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="msg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="msg">A <see cref="T:System.Windows.Forms.Message" />, passed by reference, that represents the message to process. The possible values are WM_KEYDOWN, WM_SYSKEYDOWN, WM_CHAR, and WM_SYSCHAR.</param>
+        <summary>Preprocesses keyboard or input messages within the message loop before they are dispatched.</summary>
+        <returns>
+          <see langword="true" /> if the message was processed by the control; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2206,9 +2612,10 @@
         <Parameter Name="keyData" Type="System.Windows.Forms.Keys" />
       </Parameters>
       <Docs>
-        <param name="keyData">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="keyData">One of the <see cref="T:System.Windows.Forms.Keys" /> values that represents the key to process.</param>
+        <summary>Processes a dialog key.</summary>
+        <returns>
+          <see langword="true" /> if the key was processed by the control; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2228,9 +2635,10 @@
         <Parameter Name="charCode" Type="System.Char" />
       </Parameters>
       <Docs>
-        <param name="charCode">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="charCode">The character to process.</param>
+        <summary>Processes a mnemonic character.</summary>
+        <returns>
+          <see langword="true" /> if the character was processed as a mnemonic by the control; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2253,8 +2661,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a value that indicates whether the hosted control is in a state in which its properties can be accessed.</summary>
+        <returns>
+          <see langword="true" /> if the properties of the hosted control can be accessed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2279,8 +2688,15 @@
         <ReturnType>System.Windows.Forms.QueryAccessibilityHelpEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="E:System.Windows.Forms.AxHost.QueryAccessibilityHelp" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.QueryAccessibilityHelp> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="QueryContinueDrag">
@@ -2304,8 +2720,15 @@
         <ReturnType>System.Windows.Forms.QueryContinueDragEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="E:System.Windows.Forms.AxHost.QueryContinueDrag" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.QueryContinueDrag> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RaiseOnMouseDown">
@@ -2332,11 +2755,11 @@
         <Parameter Name="y" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="button">To be added.</param>
-        <param name="shift">To be added.</param>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="button">One of the <see cref="T:System.Windows.Forms.MouseButtons" /> values that indicate which mouse button was pressed.</param>
+        <param name="shift">Not used.</param>
+        <param name="x">The x-coordinate of a mouse click, in pixels.</param>
+        <param name="y">The y-coordinate of a mouse click, in pixels.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.AxHost.MouseDown" /> event using the specified 32-bit signed integers.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2364,11 +2787,11 @@
         <Parameter Name="y" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="button">To be added.</param>
-        <param name="shift">To be added.</param>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="button">One of the <see cref="T:System.Windows.Forms.MouseButtons" /> values that indicate which mouse button was pressed.</param>
+        <param name="shift">Not used.</param>
+        <param name="x">The x-coordinate of a mouse click, in pixels.</param>
+        <param name="y">The y-coordinate of a mouse click, in pixels.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.AxHost.MouseDown" /> event using the specified single-precision floating-point numbers.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2396,11 +2819,11 @@
         <Parameter Name="o4" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="o1">To be added.</param>
-        <param name="o2">To be added.</param>
-        <param name="o3">To be added.</param>
-        <param name="o4">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="o1">One of the <see cref="T:System.Windows.Forms.MouseButtons" /> values that indicate which mouse button was pressed.</param>
+        <param name="o2">Not used.</param>
+        <param name="o3">The x-coordinate of a mouse click, in pixels.</param>
+        <param name="o4">The y-coordinate of a mouse click, in pixels.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.AxHost.MouseDown" /> event using the specified objects.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2428,11 +2851,11 @@
         <Parameter Name="y" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="button">To be added.</param>
-        <param name="shift">To be added.</param>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="button">One of the <see cref="T:System.Windows.Forms.MouseButtons" /> values that indicate which mouse button was pressed.</param>
+        <param name="shift">Not used.</param>
+        <param name="x">The x-coordinate of a mouse click, in pixels.</param>
+        <param name="y">The y-coordinate of a mouse click, in pixels.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.AxHost.MouseMove" /> event using the specified 32-bit signed integers.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2460,11 +2883,11 @@
         <Parameter Name="y" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="button">To be added.</param>
-        <param name="shift">To be added.</param>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="button">One of the <see cref="T:System.Windows.Forms.MouseButtons" /> values that indicate which mouse button was pressed.</param>
+        <param name="shift">Not used.</param>
+        <param name="x">The x-coordinate of a mouse click, in pixels.</param>
+        <param name="y">The y-coordinate of a mouse click, in pixels.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.AxHost.MouseMove" /> event using the specified single-precision floating-point numbers.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2492,11 +2915,11 @@
         <Parameter Name="o4" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="o1">To be added.</param>
-        <param name="o2">To be added.</param>
-        <param name="o3">To be added.</param>
-        <param name="o4">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="o1">One of the <see cref="T:System.Windows.Forms.MouseButtons" /> values that indicate which mouse button was pressed.</param>
+        <param name="o2">Not used.</param>
+        <param name="o3">The x-coordinate of a mouse click, in pixels.</param>
+        <param name="o4">The y-coordinate of a mouse click, in pixels.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.AxHost.MouseMove" /> event using the specified objects.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2524,11 +2947,11 @@
         <Parameter Name="y" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="button">To be added.</param>
-        <param name="shift">To be added.</param>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="button">One of the <see cref="T:System.Windows.Forms.MouseButtons" /> values that indicate which mouse button was pressed.</param>
+        <param name="shift">Not used.</param>
+        <param name="x">The x-coordinate of a mouse click, in pixels.</param>
+        <param name="y">The y-coordinate of a mouse click, in pixels.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.AxHost.MouseUp" /> event using the specified 32-bit signed integers.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2556,11 +2979,11 @@
         <Parameter Name="y" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="button">To be added.</param>
-        <param name="shift">To be added.</param>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="button">One of the <see cref="T:System.Windows.Forms.MouseButtons" /> values that indicate which mouse button was pressed.</param>
+        <param name="shift">Not used.</param>
+        <param name="x">The x-coordinate of a mouse click, in pixels.</param>
+        <param name="y">The y-coordinate of a mouse click, in pixels.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.AxHost.MouseUp" /> event using the specified single-precision floating-point numbers.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2588,11 +3011,11 @@
         <Parameter Name="o4" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="o1">To be added.</param>
-        <param name="o2">To be added.</param>
-        <param name="o3">To be added.</param>
-        <param name="o4">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="o1">One of the <see cref="T:System.Windows.Forms.MouseButtons" /> values that indicate which mouse button was pressed.</param>
+        <param name="o2">Not used.</param>
+        <param name="o3">The x-coordinate of a mouse click, in pixels.</param>
+        <param name="o4">The y-coordinate of a mouse click, in pixels.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.AxHost.MouseUp" /> event using the specified objects.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2620,8 +3043,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This property is not relevant for this class.</summary>
+        <value>A <see cref="T:System.Boolean" /> value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2646,8 +3069,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="E:System.Windows.Forms.AxHost.RightToLeftChanged" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.RightToLeftChanged> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetAboutBoxDelegate">
@@ -2666,9 +3096,26 @@
         <Parameter Name="d" Type="System.Windows.Forms.AxHost+AboutBoxDelegate" />
       </Parameters>
       <Docs>
-        <param name="d">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="d">The <see cref="T:System.Windows.Forms.AxHost.AboutBoxDelegate" /> to call.</param>
+        <summary>Calls the <see cref="M:System.Windows.Forms.AxHost.ShowAboutBox" /> method to display the ActiveX control's About dialog box.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.AxHost.SetAboutBoxDelegate%2A> method also allows derived classes to handle the <xref:System.Windows.Forms.AxHost.ShowAboutBox%2A> method without attaching a delegate. This is the preferred technique for handling the <xref:System.Windows.Forms.AxHost.ShowAboutBox%2A> method in a derived class.  
+  
+   
+  
+## Examples  
+ The following code example overrides the constructor, and the <xref:System.Windows.Forms.AxHost.SetAboutBoxDelegate%2A> and <xref:System.Windows.Forms.AxHost.AttachInterfaces%2A> methods of an <xref:System.Windows.Forms.AxHost> derived class that wraps the Microsoft Masked Edit ActiveX Control. This code requires that you have created the generated source code by running the AxImp.exe on the MSMask32.ocx file with the `/source` switch to generate the wrapper class to be edited. This code is only shown in C# syntax because that is the only language output by the AxImp.exe.  
+  
+ [!code-csharp[AxHost_Wrap_MaskEdit#1](~/samples/snippets/csharp/VS_Snippets_Winforms/AxHost_Wrap_MaskEdit/CS/axmsmask.cs#1)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.AxHost.SetAboutBoxDelegate(System.Windows.Forms.AxHost.AboutBoxDelegate)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.AxHost.SetAboutBoxDelegate(System.Windows.Forms.AxHost.AboutBoxDelegate)" /> method so that registered delegates receive the <see cref="M:System.Windows.Forms.AxHost.ShowAboutBox" /> method.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="SetBoundsCore">
@@ -2691,12 +3138,12 @@
         <Parameter Name="specified" Type="System.Windows.Forms.BoundsSpecified" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <param name="width">To be added.</param>
-        <param name="height">To be added.</param>
-        <param name="specified">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="x">The new <see cref="P:System.Windows.Forms.Control.Left" /> property value of the control.</param>
+        <param name="y">The new <see cref="P:System.Windows.Forms.Control.Top" /> property value of the control.</param>
+        <param name="width">The new <see cref="P:System.Windows.Forms.Control.Width" /> property value of the control.</param>
+        <param name="height">The new <see cref="P:System.Windows.Forms.Control.Height" /> property value of the control.</param>
+        <param name="specified">A bitwise combination of the <see cref="T:System.Windows.Forms.BoundsSpecified" /> values.</param>
+        <summary>Performs the work of setting the specified bounds of this control.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2716,8 +3163,9 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">
+          <see langword="true" /> to make the control visible; otherwise, <see langword="false" />.</param>
+        <summary>Sets the control to the specified visible state.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2735,8 +3183,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Displays the ActiveX control's **About** dialog box.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.Windows.Forms.AxHost.HasAboutBox%2A> is `false`, no **About** dialog box is displayed.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowPropertyPages">
@@ -2753,8 +3208,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Displays the property pages associated with the ActiveX control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.Windows.Forms.AxHost.HasPropertyPages%2A> is `false`, no property pages are displayed.  
+  
+ Property pages allow an ActiveX control user to view and change ActiveX control properties. These properties are accessed by invoking a control properties dialog box, which contains one or more property pages that provide a customized, graphical interface for viewing and editing the control properties.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowPropertyPages">
@@ -2773,9 +3237,18 @@
         <Parameter Name="control" Type="System.Windows.Forms.Control" />
       </Parameters>
       <Docs>
-        <param name="control">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="control">The parent <see cref="T:System.Windows.Forms.Control" /> of the ActiveX control.</param>
+        <summary>Displays the property pages associated with the ActiveX control assigned to the specified parent control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.Windows.Forms.AxHost.HasPropertyPages%2A> is `false`, no property pages are displayed.  
+  
+ Property pages allow an ActiveX control user to view and change ActiveX control properties. These properties are accessed by invoking a control properties dialog box, which contains one or more property pages that provide a customized, graphical interface for viewing and editing the control properties.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Site">
@@ -2791,8 +3264,8 @@
         <ReturnType>System.ComponentModel.ISite</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the site of the control.</summary>
+        <value>The <see cref="T:System.ComponentModel.ISite" /> associated with the Control, if any.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2817,8 +3290,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="E:System.Windows.Forms.AxHost.StyleChanged" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.StyleChanged> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetAttributes">
@@ -2840,8 +3320,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a collection of type <see cref="T:System.Attribute" /> for the current object.</summary>
+        <returns>An <see cref="T:System.ComponentModel.AttributeCollection" /> with the attributes for the current object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2864,9 +3344,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the class name of the current object.</summary>
+        <returns>Returns <see langword="null" /> in all cases.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the type name instead of the value that the <xref:System.Windows.Forms.AxHost.System%23ComponentModel%23ICustomTypeDescriptor%23GetClassName%2A> method returns.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetComponentName">
@@ -2888,9 +3375,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the name of the current object.</summary>
+        <returns>Returns <see langword="null" /> in all cases.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the default name instead of the value that the <xref:System.Windows.Forms.AxHost.System%23ComponentModel%23ICustomTypeDescriptor%23GetComponentName%2A> method returns.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetConverter">
@@ -2912,9 +3406,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a type converter for the current object.</summary>
+        <returns>Returns <see langword="null" /> in all cases.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the default type converter instead of the value that the <xref:System.Windows.Forms.AxHost.System%23ComponentModel%23ICustomTypeDescriptor%23GetConverter%2A> method returns.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetDefaultEvent">
@@ -2936,8 +3437,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the default event for the current object.</summary>
+        <returns>An <see cref="T:System.ComponentModel.EventDescriptor" /> that represents the default event for the current object, or <see langword="null" /> if the object does not have events.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2960,8 +3461,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the default property for the current object.</summary>
+        <returns>A <see cref="T:System.ComponentModel.PropertyDescriptor" /> that represents the default property for the current object, or <see langword="null" /> if the object does not have properties.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2986,9 +3487,9 @@
         <Parameter Name="editorBaseType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="editorBaseType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="editorBaseType">A <see cref="T:System.Type" /> that represents the editor for the current object.</param>
+        <summary>Returns an editor of the specified type for the current object.</summary>
+        <returns>An object of the specified type that is the editor for the current object, or <see langword="null" /> if the editor cannot be found.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3011,8 +3512,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the events for the current object.</summary>
+        <returns>An <see cref="T:System.ComponentModel.EventDescriptorCollection" /> that represents the events for the current object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3037,9 +3538,9 @@
         <Parameter Name="attributes" Type="System.Attribute[]" />
       </Parameters>
       <Docs>
-        <param name="attributes">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="attributes">An array of type <see cref="T:System.Attribute" /> that is used as a filter.</param>
+        <summary>Returns the events for the current object using the specified attribute array as a filter.</summary>
+        <returns>An <see cref="T:System.ComponentModel.EventDescriptorCollection" /> that represents the events for the <see cref="T:System.Windows.Forms.AxHost" /> that match the given set of attributes.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3062,8 +3563,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the properties for the current object.</summary>
+        <returns>A <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> that represents the events for the current object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3088,9 +3589,9 @@
         <Parameter Name="attributes" Type="System.Attribute[]" />
       </Parameters>
       <Docs>
-        <param name="attributes">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="attributes">An array of type <see cref="T:System.Attribute" /> that is used as a filter.</param>
+        <summary>Returns the properties for the current object using the specified attribute array as a filter.</summary>
+        <returns>A <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> that represents the events for the current <see cref="T:System.Windows.Forms.AxHost" /> that match the given set of attributes.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3115,9 +3616,9 @@
         <Parameter Name="pd" Type="System.ComponentModel.PropertyDescriptor" />
       </Parameters>
       <Docs>
-        <param name="pd">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="pd">Not used.</param>
+        <summary>Returns the object that owns the specified value.</summary>
+        <returns>The current object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3142,8 +3643,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This property is not relevant for this class.</summary>
+        <value>The text associated with this control.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3168,8 +3669,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="E:System.Windows.Forms.AxHost.TextChanged" /> event is not supported by the <see cref="T:System.Windows.Forms.AxHost" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you attempt to add or remove a handler for the <xref:System.Windows.Forms.AxHost.TextChanged> event, a <xref:System.NotSupportedException> is thrown. The events derived from the <xref:System.Windows.Forms.Control> class are not supported by the <xref:System.Windows.Forms.AxHost> class. The events exposed by the ActiveX control when the <xref:System.Windows.Forms.AxHost> wrapper is created are the events that should be used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WndProc">
@@ -3188,8 +3696,8 @@
         <Parameter Name="m" Type="System.Windows.Forms.Message&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="m">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="m">The Windows <see cref="T:System.Windows.Forms.Message" /> to process.</param>
+        <summary>Processes Windows messages.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

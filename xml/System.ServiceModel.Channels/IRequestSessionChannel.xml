@@ -16,8 +16,17 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the interface to associate a request channel with a session.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Channels.IRequestSessionChannel> interface indicates that an <xref:System.ServiceModel.Channels.IRequestChannel> implements <xref:System.ServiceModel.Channels.IOutputSession> semantics.  
+  
+ The <xref:System.ServiceModel.Channels.IOutputSession> associated with its <xref:System.ServiceModel.Channels.IReplySessionChannel> can be retrieved through the <xref:System.ServiceModel.Channels.ISessionChannel%601.Session%2A> property.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members />
 </Type>

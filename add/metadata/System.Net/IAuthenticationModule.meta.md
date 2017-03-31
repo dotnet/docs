@@ -1,24 +1,29 @@
 ---
 uid: System.Net.IAuthenticationModule
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.IAuthenticationModule.CanPreAuthenticate
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.IAuthenticationModule.PreAuthenticate(System.Net.WebRequest,System.Net.ICredentials)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.IAuthenticationModule.AuthenticationType
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.IAuthenticationModule.Authenticate(System.String,System.Net.WebRequest,System.Net.ICredentials)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

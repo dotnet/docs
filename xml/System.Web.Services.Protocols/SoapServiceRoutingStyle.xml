@@ -11,7 +11,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies how a SOAP message is routed to the Web server hosting the XML Web service.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,7 +29,7 @@
         <ReturnType>System.Web.Services.Protocols.SoapServiceRoutingStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The SOAP Message is routed based on the first child element following the <see langword="&lt;Body&gt;" /> XML element of the SOAP message.</summary>
       </Docs>
     </Member>
     <Member MemberName="SoapAction">
@@ -46,7 +46,7 @@
         <ReturnType>System.Web.Services.Protocols.SoapServiceRoutingStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The SOAP message is routed based on the <see langword="SOAPAction" /> HTTP header.</summary>
       </Docs>
     </Member>
   </Members>

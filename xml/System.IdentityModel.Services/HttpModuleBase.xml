@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The base class from which HTTP modules that are configurable with the [\&lt;system.identityModel.services\&gt;](../Topic/%3Csystem.identityModel.services%3E.md) element (<see cref="T:System.IdentityModel.Services.Configuration.SystemIdentityModelServicesSection" />) derive.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.HttpModuleBase" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +48,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Releases the resources (except memory) used by the current instance of the <see cref="T:System.IdentityModel.Services.HttpModuleBase" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Override this method in your derived class to release resources. The default implementation is empty.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FederationConfiguration">
@@ -65,9 +72,10 @@
         <ReturnType>System.IdentityModel.Services.Configuration.FederationConfiguration</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="T:System.IdentityModel.Services.Configuration.FederationConfiguration" /> object that is in effect for the current module.</summary>
+        <value>The <see cref="T:System.IdentityModel.Services.Configuration.FederationConfiguration" /> object that is in effect for the current module.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">An attempt to set the property to <see langword="null" /> occurs.</exception>
       </Docs>
     </Member>
     <Member MemberName="Init">
@@ -86,9 +94,18 @@
         <Parameter Name="context" Type="System.Web.HttpApplication" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="context">The application object which contains this module.</param>
+        <summary>Initializes the HTTP module.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method implements the <xref:System.Web.IHttpModule.Init%2A?displayProperty=fullName> method by initializing the <xref:System.IdentityModel.Services.HttpModuleBase.FederationConfiguration%2A> property to the value of the <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration%2A?displayProperty=fullName> property, invoking the <xref:System.IdentityModel.Services.HttpModuleBase.InitializeModule%2A> method, and then invoking the <xref:System.IdentityModel.Services.HttpModuleBase.InitializePropertiesFromConfiguration%2A> method.  
+  
+ Derived classes override the <xref:System.IdentityModel.Services.HttpModuleBase.InitializeModule%2A> and <xref:System.IdentityModel.Services.HttpModuleBase.InitializePropertiesFromConfiguration%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InitializeModule">
@@ -107,9 +124,16 @@
         <Parameter Name="context" Type="System.Web.HttpApplication" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="context">The application object which contains this module.</param>
+        <summary>When overridden in a derived class, initializes the current module and prepares it to handle events from its ASP.NET application object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.IdentityModel.Services.HttpModuleBase.InitializeModule%2A> method to load any additional configuration state as well as to register event handling methods with specific events raised by the <xref:System.Web.HttpApplication> object. When this method is called from the <xref:System.IdentityModel.Services.HttpModuleBase.Init%2A> method, the <xref:System.IdentityModel.Services.HttpModuleBase.FederationConfiguration%2A> property has already been initialized. You can get the configuration object that is in effect for this module from this property. The <xref:System.IdentityModel.Services.HttpModuleBase.FederationConfiguration%2A> property should be used for all token processing in this module.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InitializePropertiesFromConfiguration">
@@ -126,8 +150,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>When overridden in a derived class, initializes module properties based on values in the <see cref="T:System.IdentityModel.Services.Configuration.FederationConfiguration" /> object that is in effect for it.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When this method is called from the <xref:System.IdentityModel.Services.HttpModuleBase.Init%2A> method, the <xref:System.IdentityModel.Services.HttpModuleBase.FederationConfiguration%2A> property has already been initialized. You can get the configuration object that is in effect for this module from this property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

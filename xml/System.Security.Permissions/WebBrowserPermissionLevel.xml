@@ -10,8 +10,31 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the permission level for a Web browser.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this enumeration to set the <xref:System.Security.Permissions.WebBrowserPermission.Level%2A> property of the <xref:System.Security.Permissions.WebBrowserPermission> class.  
+  
+ The Safe permission level restricts the following Web browser operations.  
+  
+-   A pop-up window cannot be created over the Web browser control.  
+  
+-   The Web browser control can only be navigated to its site of origin.  
+  
+-   The security settings of the Web browser control are reduced.  
+  
+   
+  
+## Examples  
+ The following example shows how to demand that the calling code has unrestricted permission to create a Web browser control.  
+  
+ [!code-csharp[WebBrowserPermissionsSnippets#WebBrowserPermissionAttribute3](~/samples/snippets/csharp/VS_Snippets_Wpf/WebBrowserPermissionsSnippets/CSharp/Window1.xaml.cs#webbrowserpermissionattribute3)]
+ [!code-vb[WebBrowserPermissionsSnippets#WebBrowserPermissionAttribute3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WebBrowserPermissionsSnippets/visualbasic/window1.xaml.vb#webbrowserpermissionattribute3)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="None">
@@ -27,7 +50,7 @@
         <ReturnType>System.Security.Permissions.WebBrowserPermissionLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A Web browser that cannot navigate frames to HTML.</summary>
       </Docs>
     </Member>
     <Member MemberName="Safe">
@@ -43,7 +66,7 @@
         <ReturnType>System.Security.Permissions.WebBrowserPermissionLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A Web browser that can safely navigate frames to HTML but with several restrictions.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unrestricted">
@@ -59,7 +82,7 @@
         <ReturnType>System.Security.Permissions.WebBrowserPermissionLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A Web browser that can navigate without restrictions.</summary>
       </Docs>
     </Member>
   </Members>

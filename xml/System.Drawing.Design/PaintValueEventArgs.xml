@@ -11,8 +11,25 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides data for the <see cref="M:System.Drawing.Design.UITypeEditor.PaintValue(System.Object,System.Drawing.Graphics,System.Drawing.Rectangle)" /> method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Drawing.Design.PaintValueEventArgs> provides all the information needed for a <xref:System.Drawing.Design.UITypeEditor> to paint within an area based on the value of the specified object, including the <xref:System.Drawing.Rectangle> in which the drawing should be done and the <xref:System.Drawing.Graphics> object with which the drawing should be done.  
+  
+   
+  
+## Examples  
+ The following code example method returns a <xref:System.Drawing.Design.PaintValueEventArgs> that provides the data needed to paint a representation of the value of an object within a given area:  
+  
+ [!code-cpp[MoreEventArgsExamples#2](~/samples/snippets/cpp/VS_Snippets_Winforms/MoreEventArgsExamples/CPP/class1.cpp#2)]
+ [!code-csharp[MoreEventArgsExamples#2](~/samples/snippets/csharp/VS_Snippets_Winforms/MoreEventArgsExamples/CS/class1.cs#2)]
+ [!code-vb[MoreEventArgsExamples#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MoreEventArgsExamples/VB/class1.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,12 +48,14 @@
         <Parameter Name="bounds" Type="System.Drawing.Rectangle" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="graphics">To be added.</param>
-        <param name="bounds">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="context">The context in which the value appears.</param>
+        <param name="value">The value to paint.</param>
+        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> object with which drawing is to be done.</param>
+        <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> in which drawing is to be done.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Design.PaintValueEventArgs" /> class using the specified values.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="graphics" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Bounds">
@@ -52,8 +71,8 @@
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the rectangle that indicates the area in which the painting should be done.</summary>
+        <value>The rectangle that indicates the area in which the painting should be done.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,8 +89,8 @@
         <ReturnType>System.ComponentModel.ITypeDescriptorContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> interface to be used to gain additional information about the context this value appears in.</summary>
+        <value>An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that indicates the context of the event.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,8 +107,8 @@
         <ReturnType>System.Drawing.Graphics</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Drawing.Graphics" /> object with which painting should be done.</summary>
+        <value>A <see cref="T:System.Drawing.Graphics" /> object to use for painting.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,8 +125,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the value to paint.</summary>
+        <value>An object indicating what to paint.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

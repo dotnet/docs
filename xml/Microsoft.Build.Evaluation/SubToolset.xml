@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents an aggregation of a set of properties that correspond to a particular sub toolset.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,8 +33,8 @@
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,Microsoft.Build.Execution.ProjectPropertyInstance&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the properties that correspond to this particular sub toolset.</summary>
+        <value>Returns the properties that correspond to this particular sub toolset.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +51,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Visual Studio version that corresponds to this sub toolset.</summary>
+        <value>Returns the string containing the Visual Studio version for this sub toolset.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

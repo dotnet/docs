@@ -1,14 +1,19 @@
 ---
 uid: System.Linq.Expressions.MemberListBinding
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.Expressions.MemberListBinding.Update(System.Collections.Generic.IEnumerable{System.Linq.Expressions.ElementInit})
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.Expressions.MemberListBinding.Initializers
-internalonly: False
+ms.author: "billchi"
+manager: "ghogen"
 ---

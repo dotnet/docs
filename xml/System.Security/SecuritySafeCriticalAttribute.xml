@@ -28,8 +28,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Identifies types or members as security-critical and safely accessible by transparent code.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Types or members that are marked with the <xref:System.Security.SecuritySafeCriticalAttribute> attribute can be accessed by partially trusted types and members. These partially trusted types and members can be within any assembly that is marked with the <xref:System.Security.SecurityTransparentAttribute> or <xref:System.Security.AllowPartiallyTrustedCallersAttribute> (APTCA) attribute, or they are partially trusted for other reasons, such as being loaded into partial trust. Code that is marked with the <xref:System.Security.SecuritySafeCriticalAttribute> must be subject to a rigorous security audit to ensure that it can be used safely in a secure execution environment. Security-safe-critical code must validate the permissions of callers to determine whether they have authority to access protected resources used by the code.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,7 +62,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.SecuritySafeCriticalAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

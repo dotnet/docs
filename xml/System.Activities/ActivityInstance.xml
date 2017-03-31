@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the instance state of an activity at runtime.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,8 +33,8 @@
         <ReturnType>System.Activities.Activity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the activity represented by the current <see cref="T:System.Activities.ActivityInstance" />.</summary>
+        <value>The activity represented by this <see cref="T:System.Activities.ActivityInstance" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +51,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an identifier that uniquely identifies the <see cref="T:System.Activities.ActivityInstance" />.</summary>
+        <value>An identifier that uniquely identifies the <see cref="T:System.Activities.ActivityInstance" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,8 +74,8 @@
         <ReturnType>System.Version</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the implementation version for the instance.</summary>
+        <value>The implementation version for the instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,8 +92,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the activity represented by the current <see cref="T:System.Activities.ActivityInstance" /> is completed.</summary>
+        <value>
+          <see langword="true" /> if the activity is completed; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,8 +111,8 @@
         <ReturnType>System.Activities.ActivityInstanceState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Activities.ActivityInstanceState" /> of the current <see cref="T:System.Activities.ActivityInstance" />.</summary>
+        <value>The state of the activity instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

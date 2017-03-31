@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Implements the basic functionality required of a service for providing access to a data source at the <see langword="EnvDTE.Project" /> level.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Data.DataSourceProviderService" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,11 +52,21 @@
         <Parameter Name="dataSourceDescriptor" Type="System.ComponentModel.Design.Data.DataSourceDescriptor" />
       </Parameters>
       <Docs>
-        <param name="host">To be added.</param>
-        <param name="dataSourceDescriptor">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="host">The designer host.</param>
+        <param name="dataSourceDescriptor">The data source.</param>
+        <summary>When overridden in a derived class, creates and returns an instance of the given data source, and adds it to the design surface.</summary>
+        <returns>An <see cref="T:System.Object" /> representing an instance of the added data source.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You should only call the <xref:System.ComponentModel.Design.Data.DataSourceProviderService.AddDataSourceInstance%2A> method on data sources that are designable for example, if the<xref:System.ComponentModel.Design.Data.DataSourceDescriptor.IsDesignable%2A> value is `true`.  
+  
+ This method enables the service implementer to perform custom actions when a data source is added to the design surface.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The type name cannot be created or resolved.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetDataSources">
@@ -73,8 +83,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>When overridden in a derived class, retrieves the collection of data sources at the <see langword="EnvDTE.Project" /> level.</summary>
+        <returns>A <see cref="T:System.ComponentModel.Design.Data.DataSourceGroupCollection" />, or <see langword="null" /> if there are no data sources at the <see langword="EnvDTE.Project" /> level.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,10 +105,10 @@
         <Parameter Name="startPosition" Type="System.Windows.Forms.FormStartPosition" />
       </Parameters>
       <Docs>
-        <param name="parentWindow">To be added.</param>
-        <param name="startPosition">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="parentWindow">The parent window.</param>
+        <param name="startPosition">The initial position of a form.</param>
+        <summary>When overridden in a derived class, invokes the **Add New Data Source Wizard**.</summary>
+        <returns>A <see cref="T:System.ComponentModel.Design.Data.DataSourceGroup" /> collection of newly added data sources, or <see langword="null" /> if no data sources are added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,12 +130,14 @@
         <Parameter Name="dataSourceDescriptor" Type="System.ComponentModel.Design.Data.DataSourceDescriptor" />
       </Parameters>
       <Docs>
-        <param name="parentWindow">To be added.</param>
-        <param name="startPosition">To be added.</param>
-        <param name="dataSourceDescriptor">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="parentWindow">The parent window.</param>
+        <param name="startPosition">The initial position of a form.</param>
+        <param name="dataSourceDescriptor">The data source.</param>
+        <summary>When overridden in a derived class, invokes the **Configure Data Source** dialog box on the specified data source.</summary>
+        <returns>
+          <see langword="true" /> if any changes were made to that data source; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The specified data source is invalid or <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="NotifyDataSourceComponentAdded">
@@ -144,8 +156,8 @@
         <Parameter Name="dsc" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="dsc">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="dsc">The data source component.</param>
+        <summary>When overridden in a derived class, notifies the service that a component representing a data source was added to the design surface.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,8 +174,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When overridden in a derived class, gets the value indicating whether the service supports adding a new data source using <see cref="M:System.ComponentModel.Design.Data.DataSourceProviderService.InvokeAddNewDataSource(System.Windows.Forms.IWin32Window,System.Windows.Forms.FormStartPosition)" />.</summary>
+        <value>
+          <see langword="true" /> if the service supports adding a new data source using <see cref="M:System.ComponentModel.Design.Data.DataSourceProviderService.InvokeAddNewDataSource(System.Windows.Forms.IWin32Window,System.Windows.Forms.FormStartPosition)" />; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -180,8 +193,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When overridden in a derived class, gets the value indicating whether the service supports configuring data sources using <see cref="M:System.ComponentModel.Design.Data.DataSourceProviderService.InvokeConfigureDataSource(System.Windows.Forms.IWin32Window,System.Windows.Forms.FormStartPosition,System.ComponentModel.Design.Data.DataSourceDescriptor)" />.</summary>
+        <value>
+          <see langword="true" /> if the service supports configuring a data source using <see cref="M:System.ComponentModel.Design.Data.DataSourceProviderService.InvokeConfigureDataSource(System.Windows.Forms.IWin32Window,System.Windows.Forms.FormStartPosition,System.ComponentModel.Design.Data.DataSourceDescriptor)" />; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

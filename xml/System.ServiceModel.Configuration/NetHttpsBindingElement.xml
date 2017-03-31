@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a net https binding element.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.NetHttpsBindingElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.NetHttpsBindingElement" /> class with specified name.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,8 +105,8 @@
         <ReturnType>System.ServiceModel.NetHttpMessageEncoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the message encoding used for the <see cref="T:System.ServiceModel.Configuration.NetHttpsBindingElement" />.</summary>
+        <value>The message encoding used.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,8 +167,8 @@
         <ReturnType>System.ServiceModel.Configuration.StandardBindingOptionalReliableSessionElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the established reliable session for the <see cref="T:System.ServiceModel.Configuration.NetHttpsBindingElement" />.</summary>
+        <value>The established reliable session.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -190,8 +190,8 @@
         <ReturnType>System.ServiceModel.Configuration.BasicHttpsSecurityElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the secure binding for the binding element.</summary>
+        <value>The secure binding for the binding element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -213,8 +213,8 @@
         <ReturnType>System.ServiceModel.Configuration.NetHttpWebSocketTransportSettingsElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the web socket settings used for the <see cref="T:System.ServiceModel.Configuration.NetHttpsBindingElement" />.</summary>
+        <value>The web socket settings used.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

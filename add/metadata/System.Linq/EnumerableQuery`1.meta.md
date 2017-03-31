@@ -1,64 +1,104 @@
 ---
 uid: System.Linq.EnumerableQuery`1
-internalonly: False
+ms.author: "billchi"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Linq.EnumerableQuery`1.System#Collections#IEnumerable#GetEnumerator
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.EnumerableQuery`1.System#Linq#IQueryProvider#Execute(System.Linq.Expressions.Expression)
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.EnumerableQuery`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator
-internalonly: False
+ms.author: "billchi"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Linq.EnumerableQuery`1.#ctor(System.Linq.Expressions.Expression)
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.EnumerableQuery`1.System#Linq#IQueryable#Provider
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.EnumerableQuery`1.System#Linq#IQueryProvider#CreateQuery``1(System.Linq.Expressions.Expression)
-internalonly: False
+ms.author: "billchi"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Linq.EnumerableQuery`1.System#Linq#IQueryable#Expression
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+
+---
+uid: System.Linq.EnumerableQuery`1.System#Linq#IQueryProvider#CreateQuery
+manager: "ghogen"
 ---
 
 ---
 uid: System.Linq.EnumerableQuery`1.System#Linq#IQueryable#ElementType
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.EnumerableQuery`1.ToString
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+
+---
+uid: System.Linq.EnumerableQuery`1.#ctor
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.EnumerableQuery`1.System#Linq#IQueryProvider#CreateQuery(System.Linq.Expressions.Expression)
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+
+---
+uid: System.Linq.EnumerableQuery`1.System#Linq#IQueryProvider#Execute
+manager: "ghogen"
 ---
 
 ---
 uid: System.Linq.EnumerableQuery`1.#ctor(System.Collections.Generic.IEnumerable{`0})
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.EnumerableQuery`1.System#Linq#IQueryProvider#Execute``1(System.Linq.Expressions.Expression)
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---

@@ -10,8 +10,23 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies a location in a <see cref="T:System.Windows.Forms.DataGridView" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Forms.DataGridView.HitTestInfo> describes a coordinate pair on the <xref:System.Windows.Forms.DataGridView> control. The <xref:System.Windows.Forms.DataGridView.HitTestInfo.Type%2A> property indicates which part of the <xref:System.Windows.Forms.DataGridView> contains the point.  
+  
+   
+  
+## Examples  
+ The following code example illustrates the use of this type. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.Columns%2A?displayProperty=fullName> property reference topic.  
+  
+ [!code-csharp[System.Windows.Forms.GridViewAutoSize#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.GridViewAutoSize/CS/form1.cs#4)]
+ [!code-vb[System.Windows.Forms.GridViewAutoSize#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.GridViewAutoSize/VB/form1.vb#4)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Cell">
@@ -27,7 +42,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewHitTestType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A cell in the <see cref="T:System.Windows.Forms.DataGridView" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="ColumnHeader">
@@ -43,7 +58,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewHitTestType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A column header in the <see cref="T:System.Windows.Forms.DataGridView" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="HorizontalScrollBar">
@@ -59,7 +74,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewHitTestType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The horizontal scroll bar of the <see cref="T:System.Windows.Forms.DataGridView" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -75,7 +90,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewHitTestType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An empty part of the <see cref="T:System.Windows.Forms.DataGridView" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="RowHeader">
@@ -91,7 +106,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewHitTestType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A row header in the <see cref="T:System.Windows.Forms.DataGridView" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="TopLeftHeader">
@@ -107,7 +122,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewHitTestType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The top left column header in the <see cref="T:System.Windows.Forms.DataGridView" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="VerticalScrollBar">
@@ -123,7 +138,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewHitTestType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The vertical scroll bar of the <see cref="T:System.Windows.Forms.DataGridView" />.</summary>
       </Docs>
     </Member>
   </Members>

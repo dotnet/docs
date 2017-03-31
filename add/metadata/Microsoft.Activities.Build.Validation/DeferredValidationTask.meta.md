@@ -1,19 +1,27 @@
 ---
 uid: Microsoft.Activities.Build.Validation.DeferredValidationTask
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Activities.Build.Validation.DeferredValidationTask.DeferredValidationErrorsFilePath
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Activities.Build.Validation.DeferredValidationTask.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Activities.Build.Validation.DeferredValidationTask.Execute
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

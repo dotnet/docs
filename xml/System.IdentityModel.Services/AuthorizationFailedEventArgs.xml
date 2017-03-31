@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides data for the <see cref="E:System.IdentityModel.Services.WSFederationAuthenticationModule.AuthorizationFailed" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.AuthorizationFailed> event is raised when authorization has failed and the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> (WSFAM) is determining whether to redirect to an identity provider (STS).  
+  
+ Set the <xref:System.IdentityModel.Services.AuthorizationFailedEventArgs.RedirectToIdentityProvider%2A> property to determine whether the redirect runtime logic will be called by WSFAM.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +35,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.AuthorizationFailedEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +52,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether the runtime (<see cref="T:System.IdentityModel.Services.WSFederationAuthenticationModule" />) should redirect to an identity provider.</summary>
+        <value>
+          <see langword="true" /> to redirect; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

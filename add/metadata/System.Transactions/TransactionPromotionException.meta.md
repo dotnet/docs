@@ -1,24 +1,29 @@
 ---
 uid: System.Transactions.TransactionPromotionException
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.TransactionPromotionException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
----
-
----
-uid: System.Transactions.TransactionPromotionException.#ctor(System.String,System.Exception)
-internalonly: False
----
-
----
-uid: System.Transactions.TransactionPromotionException.#ctor(System.String)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.TransactionPromotionException.#ctor
-internalonly: False
+manager: "ghogen"
+---
+
+---
+uid: System.Transactions.TransactionPromotionException.#ctor(System.String,System.Exception)
+manager: "ghogen"
+---
+
+---
+uid: System.Transactions.TransactionPromotionException.#ctor(System.String)
+manager: "ghogen"
+---
+
+---
+uid: System.Transactions.TransactionPromotionException.#ctor
+manager: "ghogen"
 ---

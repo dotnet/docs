@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Forms.ComponentModel.Com2Interop
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

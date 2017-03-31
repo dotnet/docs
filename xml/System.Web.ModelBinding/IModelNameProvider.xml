@@ -8,8 +8,15 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a way to specify an alternate name to use for model binding instead of using the parameter name.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This interface is implemented by custom value-provider attributes that must have the ability to specify a value-provider key that is different from the parameter name.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="GetModelName">
@@ -26,8 +33,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>When implemented in a class, gets the model name.</summary>
+        <returns>The model name.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

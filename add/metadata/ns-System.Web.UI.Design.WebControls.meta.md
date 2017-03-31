@@ -1,4 +1,4 @@
 ---
 uid: System.Web.UI.Design.WebControls
-internalonly: False
+manager: "wpickett"
 ---

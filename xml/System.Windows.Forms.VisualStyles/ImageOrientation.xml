@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies how multiple images are arranged in a single image file.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.ImageOrientation> values represent the return values of the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetEnumValue%2A?displayProperty=fullName> method when it is called with an argument value of <xref:System.Windows.Forms.VisualStyles.EnumProperty?displayProperty=fullName>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Horizontal">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.ImageOrientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Images are arranged horizontally in the multiple-image file.</summary>
       </Docs>
     </Member>
     <Member MemberName="Vertical">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.ImageOrientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Images are arranged vertically in the multiple-image file.</summary>
       </Docs>
     </Member>
   </Members>

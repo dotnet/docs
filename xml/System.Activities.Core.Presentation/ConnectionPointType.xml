@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the type of connection point.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_ConnectionPointType#0](WFD_ConnectionPointType#0)]  -->  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Default">
@@ -27,7 +34,7 @@
         <ReturnType>System.Activities.Core.Presentation.ConnectionPointType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A default connection point.</summary>
       </Docs>
     </Member>
     <Member MemberName="Incoming">
@@ -43,7 +50,7 @@
         <ReturnType>System.Activities.Core.Presentation.ConnectionPointType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An incoming connection point.</summary>
       </Docs>
     </Member>
     <Member MemberName="Outgoing">
@@ -59,7 +66,7 @@
         <ReturnType>System.Activities.Core.Presentation.ConnectionPointType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An outgoing connection point.</summary>
       </Docs>
     </Member>
   </Members>

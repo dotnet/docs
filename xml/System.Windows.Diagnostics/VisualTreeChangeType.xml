@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines constants that specify whether the element was added or removed.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[internalonly_netframework_type](~/includes/internalonly-netframework-type-md.md)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Diagnostics.VisualTreeChangeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The child element was added to the visual tree of the parent element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Diagnostics.VisualTreeChangeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The child element was removed from the visual tree of the parent element.</summary>
       </Docs>
     </Member>
   </Members>

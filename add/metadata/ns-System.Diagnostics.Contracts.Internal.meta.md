@@ -1,4 +1,6 @@
 ---
 uid: System.Diagnostics.Contracts.Internal
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

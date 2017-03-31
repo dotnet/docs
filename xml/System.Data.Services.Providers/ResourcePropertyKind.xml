@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Enumeration for the kinds of properties that a resource can have.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>System.Data.Services.Providers.ResourcePropertyKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Complex or compound property.</summary>
       </Docs>
     </Member>
     <Member MemberName="ETag">
@@ -48,7 +48,7 @@
         <ReturnType>System.Data.Services.Providers.ResourcePropertyKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An <c>ETag</c> property.</summary>
       </Docs>
     </Member>
     <Member MemberName="Key">
@@ -64,7 +64,7 @@
         <ReturnType>System.Data.Services.Providers.ResourcePropertyKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A property that is part of the key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Primitive">
@@ -80,7 +80,7 @@
         <ReturnType>System.Data.Services.Providers.ResourcePropertyKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A primitive type property.</summary>
       </Docs>
     </Member>
     <Member MemberName="ResourceReference">
@@ -96,7 +96,7 @@
         <ReturnType>System.Data.Services.Providers.ResourcePropertyKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A reference to another resource.</summary>
       </Docs>
     </Member>
     <Member MemberName="ResourceSetReference">
@@ -112,7 +112,7 @@
         <ReturnType>System.Data.Services.Providers.ResourcePropertyKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A reference to a resource set.</summary>
       </Docs>
     </Member>
   </Members>

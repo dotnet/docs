@@ -1,19 +1,31 @@
 ---
 uid: System.Configuration.InfiniteTimeSpanConverter
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.InfiniteTimeSpanConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.InfiniteTimeSpanConverter.ConvertTo
 ---
 
 ---
 uid: System.Configuration.InfiniteTimeSpanConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.InfiniteTimeSpanConverter.ConvertFrom
 ---
 
 ---
 uid: System.Configuration.InfiniteTimeSpanConverter.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

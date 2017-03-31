@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Indicates whether the system power is online, or that the system power status is unknown.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Windows.PowerLineStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The system power is not on.</summary>
       </Docs>
     </Member>
     <Member MemberName="Online">
@@ -43,7 +43,7 @@
         <ReturnType>System.Windows.PowerLineStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The system power is on.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -59,7 +59,7 @@
         <ReturnType>System.Windows.PowerLineStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The status of the system power cannot be determined.</summary>
       </Docs>
     </Member>
   </Members>

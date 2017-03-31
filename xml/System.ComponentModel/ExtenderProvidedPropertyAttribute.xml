@@ -25,8 +25,18 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies a property that is offered by an extender provider. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.ExtenderProvidedPropertyAttribute> is injected automatically by the <xref:System.ComponentModel.TypeDescriptor> class on properties that are exposed as extended properties.  
+  
+> [!NOTE]
+>  Do not use this attribute on your properties. Instead, use the <xref:System.ComponentModel.ProvidePropertyAttribute> on a type that implements the <xref:System.ComponentModel.IExtenderProvider> interface. For more information, see [Extender Providers](../Topic/Extender%20Providers.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,7 +59,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ExtenderProvidedPropertyAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,9 +88,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">An <see cref="T:System.Object" /> to compare with this instance or a null reference (<see langword="Nothing" /> in Visual Basic).</param>
+        <summary>Returns a value that indicates whether this instance is equal to a specified object.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="obj" /> equals the type and value of this instance; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,8 +117,8 @@
         <ReturnType>System.ComponentModel.PropertyDescriptor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the property that is being provided.</summary>
+        <value>A <see cref="T:System.ComponentModel.PropertyDescriptor" /> encapsulating the property that is being provided.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,8 +145,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code for this instance.</summary>
+        <returns>A 32-bit signed integer hash code.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -158,8 +169,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Provides an indication whether the value of this instance is the default value for the derived class.</summary>
+        <returns>
+          <see langword="true" /> if this instance is the default attribute for the class; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -185,8 +197,8 @@
         <ReturnType>System.ComponentModel.IExtenderProvider</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the extender provider that is providing the property.</summary>
+        <value>The <see cref="T:System.ComponentModel.IExtenderProvider" /> that is providing the property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -212,8 +224,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type of object that can receive the property.</summary>
+        <value>A <see cref="T:System.Type" /> describing the type of object that can receive the property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

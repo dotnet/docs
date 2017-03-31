@@ -1,4 +1,6 @@
 ---
 uid: System.Security.AccessControl.AccessControlModification
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

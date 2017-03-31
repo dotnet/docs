@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.Design.WebControls.RoleGroupCollectionEditor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.RoleGroupCollectionEditor.CanSelectMultipleInstances
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.RoleGroupCollectionEditor.#ctor(System.Type)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

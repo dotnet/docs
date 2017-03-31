@@ -1,24 +1,33 @@
 ---
 uid: System.Windows.Automation.Peers.FrameworkContentElementAutomationPeer
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.FrameworkContentElementAutomationPeer.GetAutomationIdCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.FrameworkContentElementAutomationPeer.#ctor(System.Windows.FrameworkContentElement)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.FrameworkContentElementAutomationPeer.GetLabeledByCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.FrameworkContentElementAutomationPeer.GetHelpTextCore
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

@@ -1,74 +1,118 @@
 ---
 uid: System.Security.Cryptography.AsymmetricAlgorithm
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.AsymmetricAlgorithm.KeySizeValue
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.AsymmetricAlgorithm.LegalKeySizes
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.AsymmetricAlgorithm.#ctor
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.AsymmetricAlgorithm.SignatureAlgorithm
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.AsymmetricAlgorithm.KeyExchangeAlgorithm
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.AsymmetricAlgorithm.FromXmlString(System.String)
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.AsymmetricAlgorithm.Create
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.AsymmetricAlgorithm.Dispose(System.Boolean)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.AsymmetricAlgorithm.Dispose
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.AsymmetricAlgorithm.SignatureAlgorithm
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.AsymmetricAlgorithm.Create
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.AsymmetricAlgorithm.KeyExchangeAlgorithm
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.AsymmetricAlgorithm.FromXmlString(System.String)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.AsymmetricAlgorithm.Create
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.AsymmetricAlgorithm.Dispose(System.Boolean)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.AsymmetricAlgorithm.Dispose
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.AsymmetricAlgorithm.Clear
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.AsymmetricAlgorithm.ToXmlString(System.Boolean)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.AsymmetricAlgorithm.LegalKeySizesValue
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.AsymmetricAlgorithm.Create(System.String)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.AsymmetricAlgorithm.KeySize
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

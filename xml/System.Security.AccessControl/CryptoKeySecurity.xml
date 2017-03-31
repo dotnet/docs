@@ -12,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides the ability to control access to a cryptographic key object without direct manipulation of  an Access Control List (ACL).</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,7 +28,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.CryptoKeySecurity" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <Parameter Name="securityDescriptor" Type="System.Security.AccessControl.CommonSecurityDescriptor" />
       </Parameters>
       <Docs>
-        <param name="securityDescriptor">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="securityDescriptor">The security descriptor from which to create the new <see cref="T:System.Security.AccessControl.CryptoKeySecurity" /> object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.CryptoKeySecurity" /> class by using the specified security descriptor.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,8 +65,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Type" /> of the securable object associated with this <see cref="T:System.Security.AccessControl.CryptoKeySecurity" /> object.</summary>
+        <value>The type of the securable object associated with this <see cref="T:System.Security.AccessControl.CryptoKeySecurity" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,14 +92,14 @@
         <Parameter Name="type" Type="System.Security.AccessControl.AccessControlType" />
       </Parameters>
       <Docs>
-        <param name="identityReference">To be added.</param>
-        <param name="accessMask">To be added.</param>
-        <param name="isInherited">To be added.</param>
-        <param name="inheritanceFlags">To be added.</param>
-        <param name="propagationFlags">To be added.</param>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="identityReference">The identity to which the access rule applies.  It must be an object that can be cast as a <see cref="T:System.Security.Principal.SecurityIdentifier" />.</param>
+        <param name="accessMask">The access mask of this rule. The access mask is a 32-bit collection of anonymous bits, the meaning of which is defined by the individual integrators.</param>
+        <param name="isInherited">true if this rule is inherited from a parent container.</param>
+        <param name="inheritanceFlags">Specifies the inheritance properties of the access rule.</param>
+        <param name="propagationFlags">Specifies whether inherited access rules are automatically propagated. The propagation flags are ignored if <c>inheritanceFlags</c> is set to <see cref="F:System.Security.AccessControl.InheritanceFlags.None" />.</param>
+        <param name="type">Specifies the valid access control type.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.AccessRule" /> class with the specified values.</summary>
+        <returns>The <see cref="T:System.Security.AccessControl.AccessRule" /> object that this method creates.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,8 +117,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Type" /> of the object associated with the access rules of this <see cref="T:System.Security.AccessControl.CryptoKeySecurity" /> object. The <see cref="T:System.Type" /> object must be an object that can be cast as a <see cref="T:System.Security.Principal.SecurityIdentifier" /> object.</summary>
+        <value>The type of the object associated with the access rules of this <see cref="T:System.Security.AccessControl.CryptoKeySecurity" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -139,9 +139,16 @@
         <Parameter Name="rule" Type="System.Security.AccessControl.CryptoKeyAccessRule" />
       </Parameters>
       <Docs>
-        <param name="rule">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="rule">The access rule to add.</param>
+        <summary>Adds the specified access rule to the Discretionary Access Control List (DACL) associated with this <see cref="T:System.Security.AccessControl.CryptoKeySecurity" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Adding an access rule might cause existing access rules in the DACL to be merged.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddAuditRule">
@@ -161,9 +168,16 @@
         <Parameter Name="rule" Type="System.Security.AccessControl.CryptoKeyAuditRule" />
       </Parameters>
       <Docs>
-        <param name="rule">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="rule">The audit rule to add.</param>
+        <summary>Adds the specified audit rule to the System Access Control List (SACL) associated with this <see cref="T:System.Security.AccessControl.CryptoKeySecurity" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Adding an audit rule might cause existing access rules in the SACL to be merged.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AuditRuleFactory">
@@ -188,14 +202,15 @@
         <Parameter Name="flags" Type="System.Security.AccessControl.AuditFlags" />
       </Parameters>
       <Docs>
-        <param name="identityReference">To be added.</param>
-        <param name="accessMask">To be added.</param>
-        <param name="isInherited">To be added.</param>
-        <param name="inheritanceFlags">To be added.</param>
-        <param name="propagationFlags">To be added.</param>
-        <param name="flags">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="identityReference">The identity to which the audit rule applies.  It must be an object that can be cast as a <see cref="T:System.Security.Principal.SecurityIdentifier" />.</param>
+        <param name="accessMask">The access mask of this rule. The access mask is a 32-bit collection of anonymous bits, the meaning of which is defined by the individual integrators.</param>
+        <param name="isInherited">
+          <see langword="true" /> if this rule is inherited from a parent container.</param>
+        <param name="inheritanceFlags">Specifies the inheritance properties of the audit rule.</param>
+        <param name="propagationFlags">Specifies whether inherited audit rules are automatically propagated. The propagation flags are ignored if <c>inheritanceFlags</c> is set to <see cref="F:System.Security.AccessControl.InheritanceFlags.None" />.</param>
+        <param name="flags">Specifies the conditions for which the rule is audited.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.AuditRule" /> class with the specified values.</summary>
+        <returns>The <see cref="T:System.Security.AccessControl.AuditRule" /> object that this method creates.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -213,8 +228,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Type" /> object associated with the audit rules of this <see cref="T:System.Security.AccessControl.CryptoKeySecurity" /> object. The <see cref="T:System.Type" /> object must be an object that can be cast as a <see cref="T:System.Security.Principal.SecurityIdentifier" /> object.</summary>
+        <value>The type of the object associated with the audit rules of this <see cref="T:System.Security.AccessControl.CryptoKeySecurity" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -235,10 +250,20 @@
         <Parameter Name="rule" Type="System.Security.AccessControl.CryptoKeyAccessRule" />
       </Parameters>
       <Docs>
-        <param name="rule">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="rule">The access rule to remove.</param>
+        <summary>Removes access rules that contain the same security identifier and access mask as the specified access rule from the Discretionary Access Control List (DACL) associated with this <see cref="T:System.Security.AccessControl.CryptoKeySecurity" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the access rule was successfully removed; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Access removal is accomplished by using a complex algorithm that might add access control rules in addition to removing them.  
+  
+ This method fails to remove the access rule and returns `false` if the inheritance rules associated with the access rule are too complex for the removal algorithm to succeed.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAccessRuleAll">
@@ -258,8 +283,8 @@
         <Parameter Name="rule" Type="System.Security.AccessControl.CryptoKeyAccessRule" />
       </Parameters>
       <Docs>
-        <param name="rule">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="rule">The access rule to remove.</param>
+        <summary>Removes all access rules that have the same security identifier as the specified access rule from the Discretionary Access Control List (DACL) associated with this <see cref="T:System.Security.AccessControl.CryptoKeySecurity" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -280,8 +305,8 @@
         <Parameter Name="rule" Type="System.Security.AccessControl.CryptoKeyAccessRule" />
       </Parameters>
       <Docs>
-        <param name="rule">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="rule">The access rule to remove.</param>
+        <summary>Removes all access rules that exactly match the specified access rule from the Discretionary Access Control List (DACL) associated with this <see cref="T:System.Security.AccessControl.CryptoKeySecurity" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -302,10 +327,20 @@
         <Parameter Name="rule" Type="System.Security.AccessControl.CryptoKeyAuditRule" />
       </Parameters>
       <Docs>
-        <param name="rule">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="rule">The audit rule to remove.</param>
+        <summary>Removes audit rules that contain the same security identifier and access mask as the specified audit rule from the System Access Control List (SACL) associated with this <see cref="T:System.Security.AccessControl.CryptoKeySecurity" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the audit rule was successfully removed; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Audit removal is accomplished by using a complex algorithm that might add audit control rules in addition to removing them.  
+  
+ This method fails to remove the audit rule and returns `false` if the inheritance rules associated with the audit rule are too complex for the removal algorithm to succeed.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAuditRuleAll">
@@ -325,8 +360,8 @@
         <Parameter Name="rule" Type="System.Security.AccessControl.CryptoKeyAuditRule" />
       </Parameters>
       <Docs>
-        <param name="rule">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="rule">The audit rule to remove.</param>
+        <summary>Removes all audit rules that have the same security identifier as the specified audit rule from the System Access Control List (SACL) associated with this <see cref="T:System.Security.AccessControl.CryptoKeySecurity" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -347,8 +382,8 @@
         <Parameter Name="rule" Type="System.Security.AccessControl.CryptoKeyAuditRule" />
       </Parameters>
       <Docs>
-        <param name="rule">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="rule">The audit rule to remove.</param>
+        <summary>Removes all audit rules that exactly match the specified audit rule from the System Access Control List (SACL) associated with this <see cref="T:System.Security.AccessControl.CryptoKeySecurity" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -369,8 +404,8 @@
         <Parameter Name="rule" Type="System.Security.AccessControl.CryptoKeyAccessRule" />
       </Parameters>
       <Docs>
-        <param name="rule">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="rule">The access rule to reset.</param>
+        <summary>Removes all access rules in the Discretionary Access Control List (DACL) associated with this <see cref="T:System.Security.AccessControl.CryptoKeySecurity" /> object and then adds the specified access rule.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -391,8 +426,8 @@
         <Parameter Name="rule" Type="System.Security.AccessControl.CryptoKeyAccessRule" />
       </Parameters>
       <Docs>
-        <param name="rule">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="rule">The access rule to set.</param>
+        <summary>Removes all access rules that contain the same security identifier and qualifier as the specified access rule in the Discretionary Access Control List (DACL) associated with this <see cref="T:System.Security.AccessControl.CryptoKeySecurity" /> object and then adds the specified access rule.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -413,8 +448,8 @@
         <Parameter Name="rule" Type="System.Security.AccessControl.CryptoKeyAuditRule" />
       </Parameters>
       <Docs>
-        <param name="rule">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="rule">The audit rule to set.</param>
+        <summary>Removes all audit rules that contain the same security identifier and qualifier as the specified audit rule in the System Access Control List (SACL) associated with this <see cref="T:System.Security.AccessControl.CryptoKeySecurity" /> object and then adds the specified audit rule.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

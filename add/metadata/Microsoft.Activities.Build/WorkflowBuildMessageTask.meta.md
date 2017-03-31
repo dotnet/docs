@@ -1,24 +1,34 @@
 ---
 uid: Microsoft.Activities.Build.WorkflowBuildMessageTask
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Activities.Build.WorkflowBuildMessageTask.Execute
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Activities.Build.WorkflowBuildMessageTask.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Activities.Build.WorkflowBuildMessageTask.ResourceName
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Activities.Build.WorkflowBuildMessageTask.MessageType
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

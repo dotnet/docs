@@ -1,24 +1,29 @@
 ---
 uid: System.Web.UI.Design.TemplatedEditableDesignerRegion
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.TemplatedEditableDesignerRegion.TemplateDefinition
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.TemplatedEditableDesignerRegion.IsSingleInstanceTemplate
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.TemplatedEditableDesignerRegion.SupportsDataBinding
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.TemplatedEditableDesignerRegion.#ctor(System.Web.UI.Design.TemplateDefinition)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

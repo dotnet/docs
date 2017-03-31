@@ -1,209 +1,275 @@
 ---
 uid: System.Security.Claims.ClaimsIdentity
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.ClaimsIdentity.#ctor(System.String)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.Security.Claims.ClaimsIdentity.HasClaim
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.ClaimsIdentity.DefaultNameClaimType
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.Security.Claims.ClaimsIdentity.FindAll
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.ClaimsIdentity.Actor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.ClaimsIdentity.#ctor(System.Security.Principal.IIdentity,System.Collections.Generic.IEnumerable{System.Security.Claims.Claim})
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.ClaimsIdentity.Claims
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.ClaimsIdentity.#ctor(System.Security.Principal.IIdentity,System.Collections.Generic.IEnumerable{System.Security.Claims.Claim},System.String,System.String,System.String)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.ClaimsIdentity.WriteTo(System.IO.BinaryWriter)
-internalonly: False
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.ClaimsIdentity.AddClaims(System.Collections.Generic.IEnumerable{System.Security.Claims.Claim})
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.ClaimsIdentity.FindFirst(System.String)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.ClaimsIdentity.TryRemoveClaim(System.Security.Claims.Claim)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.ClaimsIdentity.DefaultRoleClaimType
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.ClaimsIdentity.Clone
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.ClaimsIdentity.BootstrapContext
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.ClaimsIdentity.CustomSerializationData
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.ClaimsIdentity.HasClaim(System.String,System.String)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.ClaimsIdentity.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.ClaimsIdentity.#ctor(System.Security.Claims.ClaimsIdentity)
-internalonly: False
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.ClaimsIdentity.DefaultIssuer
-internalonly: False
----
-
----
-uid: System.Security.Claims.ClaimsIdentity.#ctor(System.IO.BinaryReader)
-internalonly: False
----
-
----
-uid: System.Security.Claims.ClaimsIdentity.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
----
-
----
-uid: System.Security.Claims.ClaimsIdentity.#ctor(System.Collections.Generic.IEnumerable{System.Security.Claims.Claim})
-internalonly: False
----
-
----
-uid: System.Security.Claims.ClaimsIdentity.Label
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.ClaimsIdentity.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.Security.Claims.ClaimsIdentity.#ctor(System.IO.BinaryReader)
+manager: "markgal"
+---
+
+---
+uid: System.Security.Claims.ClaimsIdentity.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.Security.Claims.ClaimsIdentity.#ctor(System.Collections.Generic.IEnumerable{System.Security.Claims.Claim})
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.Security.Claims.ClaimsIdentity.Label
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.Security.Claims.ClaimsIdentity.#ctor
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.Security.Claims.ClaimsIdentity.WriteTo
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.ClaimsIdentity.#ctor(System.Security.Principal.IIdentity)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.ClaimsIdentity.NameClaimType
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.ClaimsIdentity.RemoveClaim(System.Security.Claims.Claim)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.ClaimsIdentity.FindAll(System.Predicate{System.Security.Claims.Claim})
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.Security.Claims.ClaimsIdentity.FindFirst
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.ClaimsIdentity.#ctor(System.Collections.Generic.IEnumerable{System.Security.Claims.Claim},System.String)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.ClaimsIdentity.WriteTo(System.IO.BinaryWriter,System.Byte[])
-internalonly: False
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.ClaimsIdentity.FindFirst(System.Predicate{System.Security.Claims.Claim})
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.ClaimsIdentity.FindAll(System.String)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.ClaimsIdentity.#ctor(System.String,System.String,System.String)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.ClaimsIdentity.AuthenticationType
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.ClaimsIdentity.HasClaim(System.Predicate{System.Security.Claims.Claim})
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.ClaimsIdentity.#ctor(System.Collections.Generic.IEnumerable{System.Security.Claims.Claim},System.String,System.String,System.String)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.ClaimsIdentity.IsAuthenticated
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.ClaimsIdentity.CreateClaim(System.IO.BinaryReader)
-internalonly: False
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.ClaimsIdentity.#ctor(System.Runtime.Serialization.SerializationInfo)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.ClaimsIdentity.AddClaim(System.Security.Claims.Claim)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.ClaimsIdentity.RoleClaimType
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.ClaimsIdentity.Name
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

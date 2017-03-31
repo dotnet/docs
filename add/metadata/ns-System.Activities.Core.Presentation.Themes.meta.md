@@ -1,4 +1,6 @@
 ---
 uid: System.Activities.Core.Presentation.Themes
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

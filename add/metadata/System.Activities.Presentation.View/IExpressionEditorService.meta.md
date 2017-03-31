@@ -1,34 +1,55 @@
 ---
 uid: System.Activities.Presentation.View.IExpressionEditorService
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Presentation.View.IExpressionEditorService.CreateExpressionEditor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.View.IExpressionEditorService.UpdateContext(System.Activities.Presentation.Hosting.AssemblyContextControlItem,System.Activities.Presentation.Hosting.ImportedNamespaceContextItem)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.View.IExpressionEditorService.CloseExpressionEditors
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.View.IExpressionEditorService.CreateExpressionEditor(System.Activities.Presentation.Hosting.AssemblyContextControlItem,System.Activities.Presentation.Hosting.ImportedNamespaceContextItem,System.Collections.Generic.List{System.Activities.Presentation.Model.ModelItem},System.String,System.Type)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.View.IExpressionEditorService.CreateExpressionEditor(System.Activities.Presentation.Hosting.AssemblyContextControlItem,System.Activities.Presentation.Hosting.ImportedNamespaceContextItem,System.Collections.Generic.List{System.Activities.Presentation.Model.ModelItem},System.String,System.Type,System.Windows.Size)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.View.IExpressionEditorService.CreateExpressionEditor(System.Activities.Presentation.Hosting.AssemblyContextControlItem,System.Activities.Presentation.Hosting.ImportedNamespaceContextItem,System.Collections.Generic.List{System.Activities.Presentation.Model.ModelItem},System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.View.IExpressionEditorService.CreateExpressionEditor(System.Activities.Presentation.Hosting.AssemblyContextControlItem,System.Activities.Presentation.Hosting.ImportedNamespaceContextItem,System.Collections.Generic.List{System.Activities.Presentation.Model.ModelItem},System.String,System.Windows.Size)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

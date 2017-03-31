@@ -1,9 +1,13 @@
 ---
 uid: System.Windows.Automation.Provider.IScrollItemProvider
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Provider.IScrollItemProvider.ScrollIntoView
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---

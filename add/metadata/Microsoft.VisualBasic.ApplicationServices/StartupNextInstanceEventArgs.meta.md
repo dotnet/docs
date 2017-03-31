@@ -1,19 +1,27 @@
 ---
 uid: Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs.BringToForeground
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs.#ctor(System.Collections.ObjectModel.ReadOnlyCollection{System.String},System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs.CommandLine
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

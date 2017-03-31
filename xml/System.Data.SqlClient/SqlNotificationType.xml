@@ -11,8 +11,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Describes the different notification types that can be received by an <see cref="T:System.Data.SqlClient.OnChangeEventHandler" /> event handler through the <see cref="T:System.Data.SqlClient.SqlNotificationEventArgs" /> parameter.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.SqlClient.SqlNotificationType> enumeration is referenced by an instance of the <xref:System.Data.SqlClient.SqlNotificationEventArgs> class. This information is provided when a notification event is fired with the <xref:System.Data.SqlClient.SqlDependency> class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Change">
@@ -29,7 +36,7 @@
         <ReturnType>System.Data.SqlClient.SqlNotificationType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Data on the server being monitored changed. Use the <see cref="T:System.Data.SqlClient.SqlNotificationInfo" /> item to determine the details of the change.</summary>
       </Docs>
     </Member>
     <Member MemberName="Subscribe">
@@ -46,7 +53,7 @@
         <ReturnType>System.Data.SqlClient.SqlNotificationType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>There was a failure to create a notification subscription. Use the <see cref="T:System.Data.SqlClient.SqlNotificationEventArgs" /> object's <see cref="T:System.Data.SqlClient.SqlNotificationInfo" /> item to determine the cause of the failure.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -63,7 +70,7 @@
         <ReturnType>System.Data.SqlClient.SqlNotificationType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Used when the type option sent by the server was not recognized by the client.</summary>
       </Docs>
     </Member>
   </Members>

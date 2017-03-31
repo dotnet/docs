@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a message property that contains correlation instance keys after applying the correlation calculation to a message.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,9 +34,9 @@
         <Parameter Name="additionalKeys" Type="System.Collections.Generic.IEnumerable&lt;System.Runtime.DurableInstancing.InstanceKey&gt;" />
       </Parameters>
       <Docs>
-        <param name="correlationKey">To be added.</param>
-        <param name="additionalKeys">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="correlationKey">The instance key for the primary correlation.</param>
+        <param name="additionalKeys">Instance keys for additional correlations.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.CorrelationMessageProperty" /> class using the specified correlation keys.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,10 +55,10 @@
         <Parameter Name="transientCorrelations" Type="System.Collections.Generic.IEnumerable&lt;System.Runtime.DurableInstancing.InstanceKey&gt;" />
       </Parameters>
       <Docs>
-        <param name="correlationKey">To be added.</param>
-        <param name="additionalKeys">To be added.</param>
-        <param name="transientCorrelations">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="correlationKey">The correlation key.</param>
+        <param name="additionalKeys">The additional keys.</param>
+        <param name="transientCorrelations">The transient correlations.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.CorrelationMessageProperty" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,8 +75,8 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Runtime.DurableInstancing.InstanceKey&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection that contains the additional instance keys for this <see cref="T:System.ServiceModel.Channels.CorrelationMessageProperty" />.</summary>
+        <value>The additional instance keys.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,8 +93,8 @@
         <ReturnType>System.Runtime.DurableInstancing.InstanceKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the primary correlation instance key for this <see cref="T:System.ServiceModel.Channels.CorrelationMessageProperty" />.</summary>
+        <value>The primary correlation instance key.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,8 +111,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of this <see cref="T:System.ServiceModel.Channels.CorrelationMessageProperty" />.</summary>
+        <value>The string value <see cref="T:System.ServiceModel.Channels.CorrelationMessageProperty" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,8 +129,8 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Runtime.DurableInstancing.InstanceKey&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the collection of transient correlation instance key for this <see cref="T:System.ServiceModel.Channels.CorrelationMessageProperty" />.</summary>
+        <value>The collection of transient correlation instance key.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,10 +151,11 @@
         <Parameter Name="property" Type="System.ServiceModel.Channels.CorrelationMessageProperty&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="property">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">The message that contains the <see cref="P:System.ServiceModel.Channels.Message.Properties" /> to inspect.</param>
+        <param name="property">When this method returns, contains the <see cref="T:System.ServiceModel.Channels.CorrelationMessageProperty" /> contained the specified message’s <see cref="P:System.ServiceModel.Channels.Message.Properties" /> if one is present; otherwise, <see langword="null" />. This parameter is passed uninitialized.</param>
+        <summary>Attempts to get a <see cref="T:System.ServiceModel.Channels.CorrelationMessageProperty" /> from the specified message’s <see cref="P:System.ServiceModel.Channels.Message.Properties" />.</summary>
+        <returns>
+          <see langword="true" /> if the message’s <see cref="P:System.ServiceModel.Channels.Message.Properties" /> contains a <see cref="T:System.ServiceModel.Channels.CorrelationMessageProperty" />; otherwise; <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,10 +176,11 @@
         <Parameter Name="property" Type="System.ServiceModel.Channels.CorrelationMessageProperty&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="properties">To be added.</param>
-        <param name="property">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="properties">The message properties to inspect.</param>
+        <param name="property">When this method returns, contains the <see cref="T:System.ServiceModel.Channels.CorrelationMessageProperty" /> contained by the specified message properties if one is present; otherwise, <see langword="null" />. This parameter is passed uninitialized.</param>
+        <summary>Attempts to get the <see cref="T:System.ServiceModel.Channels.CorrelationMessageProperty" /> from the specified message properties.</summary>
+        <returns>
+          <see langword="true" /> if the message properties contain a <see cref="T:System.ServiceModel.Channels.CorrelationMessageProperty" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

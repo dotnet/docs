@@ -1,4 +1,5 @@
 ---
 uid: System.Web.UI.VirtualReferenceType
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

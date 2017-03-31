@@ -21,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies which sides of a <see cref="T:System.Windows.Forms.ToolStripStatusLabel" /> have borders.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,7 +38,7 @@
         <ReturnType>System.Windows.Forms.ToolStripStatusLabelBorderSides</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>All sides of the <see cref="T:System.Windows.Forms.ToolStripStatusLabel" /> have borders.</summary>
       </Docs>
     </Member>
     <Member MemberName="Bottom">
@@ -54,7 +54,7 @@
         <ReturnType>System.Windows.Forms.ToolStripStatusLabelBorderSides</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Only the bottom side of the <see cref="T:System.Windows.Forms.ToolStripStatusLabel" /> has borders.</summary>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -70,7 +70,7 @@
         <ReturnType>System.Windows.Forms.ToolStripStatusLabelBorderSides</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Only the left side of the <see cref="T:System.Windows.Forms.ToolStripStatusLabel" /> has borders.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -86,7 +86,7 @@
         <ReturnType>System.Windows.Forms.ToolStripStatusLabelBorderSides</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Windows.Forms.ToolStripStatusLabel" /> has no borders.</summary>
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -102,7 +102,7 @@
         <ReturnType>System.Windows.Forms.ToolStripStatusLabelBorderSides</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Only the right side of the <see cref="T:System.Windows.Forms.ToolStripStatusLabel" /> has borders.</summary>
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -118,7 +118,7 @@
         <ReturnType>System.Windows.Forms.ToolStripStatusLabelBorderSides</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Only the top side of the <see cref="T:System.Windows.Forms.ToolStripStatusLabel" /> has borders.</summary>
       </Docs>
     </Member>
   </Members>

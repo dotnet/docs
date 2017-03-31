@@ -1,4 +1,4 @@
 ---
 uid: System.Configuration
-internalonly: False
+manager: "wpickett"
 ---

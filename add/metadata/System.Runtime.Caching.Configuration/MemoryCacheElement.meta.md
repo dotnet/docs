@@ -1,29 +1,41 @@
 ---
 uid: System.Runtime.Caching.Configuration.MemoryCacheElement
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.Configuration.MemoryCacheElement.PollingInterval
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.Configuration.MemoryCacheElement.PhysicalMemoryLimitPercentage
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.Configuration.MemoryCacheElement.#ctor(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.Configuration.MemoryCacheElement.CacheMemoryLimitMegabytes
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.Configuration.MemoryCacheElement.Name
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "ghogen"
 ---

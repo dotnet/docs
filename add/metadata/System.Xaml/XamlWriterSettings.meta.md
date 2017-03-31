@@ -1,14 +1,19 @@
 ---
 uid: System.Xaml.XamlWriterSettings
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlWriterSettings.#ctor
-internalonly: False
+manager: "martinek"
+---
+
+---
+uid: System.Xaml.XamlWriterSettings.#ctor
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlWriterSettings.#ctor(System.Xaml.XamlWriterSettings)
-internalonly: False
+manager: "martinek"
 ---

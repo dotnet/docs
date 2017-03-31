@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Class defining ViewStateManager and ViewStateId attached properties.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,9 +31,9 @@
         <Parameter Name="instance" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instance">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="instance">Instance object to retrieve RefId attached property from an object if set.</param>
+        <summary>Specifies a Get RefId attached property value from an object if set.</summary>
+        <returns>RefId value if set; null otherwise.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,9 +53,9 @@
         <Parameter Name="instance" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instance">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="instance">Instance object to retrieve ViewStateManager attached property from an object if set.</param>
+        <summary>Specifies a Get ViewStateManager attached property value from an object if set.</summary>
+        <returns>ViewStateManager object if set; null otherwise.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,7 +72,7 @@
         <ReturnType>System.Xaml.AttachableMemberIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Attachable property for IdRef.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,9 +93,9 @@
         <Parameter Name="idRef" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="instance">To be added.</param>
-        <param name="idRef">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instance">Instance object to attach IdRef property of an object.</param>
+        <param name="idRef">RefId value to attach.</param>
+        <summary>Specifies a Set IdRef as an attached property of an object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,9 +116,9 @@
         <Parameter Name="viewStateManager" Type="System.Activities.Presentation.ViewState.ViewStateManager" />
       </Parameters>
       <Docs>
-        <param name="instance">To be added.</param>
-        <param name="viewStateManager">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instance">Instance object to attach ViewStateManager property on.</param>
+        <param name="viewStateManager">ViewStateManager object to attach.</param>
+        <summary>Specifies a Set ViewStateManager as an attached property on an object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,7 +135,7 @@
         <ReturnType>System.Xaml.AttachableMemberIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Attachable property for ViewStateManager.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,2 +1,0 @@
-            MsmqIntegrationBindingElement msmqBindingElement = new MsmqIntegrationBindingElement();
-            MsmqIntegrationBindingElement clonedElement = (MsmqIntegrationBindingElement)msmqBindingElement.Clone();

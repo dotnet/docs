@@ -1,14 +1,20 @@
 ---
 uid: System.Runtime.Caching.Configuration.CachingSectionGroup
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.Configuration.CachingSectionGroup.MemoryCaches
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.Configuration.CachingSectionGroup.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "ghogen"
 ---

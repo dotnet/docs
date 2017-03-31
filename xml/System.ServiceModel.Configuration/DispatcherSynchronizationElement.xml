@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Adds dispatcher synchronization behavior to a dispatcher configuration element so that a WCF service program can send message replies to client applications asynchronously.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Configuration.DispatcherSynchronizationElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +48,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets whether asynchronous message sending is enabled.</summary>
+        <value>
+          <see langword="true" /> if asynchronous send is enabled; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,8 +67,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type of the <see cref="T:System.ServiceModel.Configuration.DispatcherSynchronizationElement" /> behavior extension.</summary>
+        <value>A type object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,8 +88,8 @@
         <Parameter Name="from" Type="System.ServiceModel.Configuration.ServiceModelExtensionElement" />
       </Parameters>
       <Docs>
-        <param name="from">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="from">A <see cref="T:System.ServiceModel.Configuration.ServiceModelExtensionElement" /> object that provides synchronization sub-elements.</param>
+        <summary>Copies a sub-element that defines dispatcher behavior extensions from the specified configuration <see cref="T:System.ServiceModel.Configuration.ServiceModelExtensionElement" /> into the current <see cref="T:System.ServiceModel.Configuration.DispatcherSynchronizationElement" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,8 +133,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the maximum number of received messages that can be buffered by the dispatcher.</summary>
+        <value>A number that represents a quantity of messages.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,4 +1,5 @@
 ---
 uid: System.Printing.PageMediaSizeName
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

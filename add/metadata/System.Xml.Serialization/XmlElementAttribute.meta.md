@@ -1,59 +1,90 @@
 ---
 uid: System.Xml.Serialization.XmlElementAttribute
-internalonly: False
----
-
----
-uid: System.Xml.Serialization.XmlElementAttribute.Type
-internalonly: False
----
-
----
-uid: System.Xml.Serialization.XmlElementAttribute.#ctor(System.String)
-internalonly: False
----
-
----
-uid: System.Xml.Serialization.XmlElementAttribute.Namespace
-internalonly: False
----
-
----
-uid: System.Xml.Serialization.XmlElementAttribute.DataType
-internalonly: False
----
-
----
-uid: System.Xml.Serialization.XmlElementAttribute.#ctor(System.Type)
-internalonly: False
----
-
----
-uid: System.Xml.Serialization.XmlElementAttribute.Form
-internalonly: False
----
-
----
-uid: System.Xml.Serialization.XmlElementAttribute.Order
-internalonly: False
----
-
----
-uid: System.Xml.Serialization.XmlElementAttribute.#ctor(System.String,System.Type)
-internalonly: False
----
-
----
-uid: System.Xml.Serialization.XmlElementAttribute.IsNullable
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.XmlElementAttribute.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Xml.Serialization.XmlElementAttribute.Type
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Xml.Serialization.XmlElementAttribute.#ctor(System.String)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Xml.Serialization.XmlElementAttribute.Namespace
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Xml.Serialization.XmlElementAttribute.DataType
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Xml.Serialization.XmlElementAttribute.#ctor(System.Type)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Xml.Serialization.XmlElementAttribute.Form
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Xml.Serialization.XmlElementAttribute.Order
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Xml.Serialization.XmlElementAttribute.#ctor(System.String,System.Type)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Xml.Serialization.XmlElementAttribute.IsNullable
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Xml.Serialization.XmlElementAttribute.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.XmlElementAttribute.ElementName
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

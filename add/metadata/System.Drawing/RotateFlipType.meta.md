@@ -1,4 +1,6 @@
 ---
 uid: System.Drawing.RotateFlipType
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

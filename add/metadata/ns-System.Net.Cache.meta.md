@@ -1,4 +1,5 @@
 ---
 uid: System.Net.Cache
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

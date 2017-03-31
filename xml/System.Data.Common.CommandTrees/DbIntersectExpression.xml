@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the set intersection operation between the left and right operands. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class requires that its arguments have a common collection result type.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Accept">
@@ -31,9 +38,11 @@
         <Parameter Name="visitor" Type="System.Data.Common.CommandTrees.DbExpressionVisitor" />
       </Parameters>
       <Docs>
-        <param name="visitor">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="visitor">An instance of <see cref="T:System.Data.Common.CommandTrees.DbExpressionVisitor" />.</param>
+        <summary>Implements the visitor pattern for expressions that do not produce a result value.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="visitor" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Accept&lt;TResultType&gt;">
@@ -55,11 +64,13 @@
         <Parameter Name="visitor" Type="System.Data.Common.CommandTrees.DbExpressionVisitor&lt;TResultType&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TResultType">To be added.</typeparam>
-        <param name="visitor">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TResultType">The type of the result produced by <c>visitor</c>.</typeparam>
+        <param name="visitor">An instance of a typed <see cref="T:System.Data.Common.CommandTrees.DbExpressionVisitor" /> that produces a result value of a specific type.</param>
+        <summary>Implements the visitor pattern for expressions that produce a result value of a specific type.</summary>
+        <returns>A result value of a specific type produced by <see cref="T:System.Data.Common.CommandTrees.DbExpressionVisitor" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="visitor" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

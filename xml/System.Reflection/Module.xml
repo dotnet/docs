@@ -43,8 +43,28 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Performs reflection on a module.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A module is a portable executable file, such as type.dll or application.exe, consisting of one or more classes and interfaces. There may be multiple namespaces contained in a single module, and a namespace may span multiple modules.  
+  
+ One or more modules deployed as a unit compose an assembly. For information about creating an assembly with more than one module, see [Multifile Assemblies](../Topic/Multifile%20Assemblies.md).  
+  
+ Note that a .NET Framework module is not the same as a module in Visual Basic, which is used by a programmers to organize functions and subroutines in an application.  
+  
+   
+  
+## Examples  
+ The following code examples show how to use reflection to get information about modules:  
+  
+ [!code-csharp[System.Reflection.Module#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Module/CS/source.cs#1)]
+ [!code-vb[System.Reflection.Module#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Module/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This class cannot be inherited by partially trusted code.</permission>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -63,8 +83,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Reflection.Module" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is invoked by derived classes during the construction of <xref:System.Reflection.Module> objects.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Assembly">
@@ -91,9 +118,20 @@
         <ReturnType>System.Reflection.Assembly</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the appropriate <see cref="T:System.Reflection.Assembly" /> for this instance of <see cref="T:System.Reflection.Module" />.</summary>
+        <value>An <see langword="Assembly" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example displays the full name of the specified assembly in the specified module.  
+  
+ [!code-cpp[System.Reflection.Module.Assembly Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Module.Assembly Example/CPP/class1.cpp#1)]
+ [!code-csharp[System.Reflection.Module.Assembly Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Module.Assembly Example/CS/class1.cs#1)]
+ [!code-vb[System.Reflection.Module.Assembly Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Module.Assembly Example/VB/class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomAttributes">
@@ -120,8 +158,8 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Reflection.CustomAttributeData&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection that contains this module's custom attributes.</summary>
+        <value>A collection that contains this module's custom attributes.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -152,9 +190,10 @@
         <Parameter Name="o" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="o">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="o">The object to compare with this instance.</param>
+        <summary>Determines whether this module and the specified object are equal.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="o" /> is equal to this instance; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -180,8 +219,24 @@
         <ReturnType>System.Reflection.TypeFilter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>A <see langword="TypeFilter" /> object that filters the list of types defined in this module based upon the name. This field is case-sensitive and read-only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The filter supports a trailing "*" wildcard.  
+  
+   
+  
+## Examples  
+ The following example displays the module names that match the specified search criteria.  
+  
+ [!code-cpp[System.Reflection.Module.FilterTypeName Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Module.FilterTypeName Example/CPP/class1.cpp#1)]
+ [!code-csharp[System.Reflection.Module.FilterTypeName Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Module.FilterTypeName Example/CS/class1.cs#1)]
+ [!code-vb[System.Reflection.Module.FilterTypeName Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Module.FilterTypeName Example/VB/class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FilterTypeNameIgnoreCase">
@@ -206,8 +261,24 @@
         <ReturnType>System.Reflection.TypeFilter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>A <see langword="TypeFilter" /> object that filters the list of types defined in this module based upon the name. This field is case-insensitive and read-only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The filter supports a trailing "*" wildcard.  
+  
+   
+  
+## Examples  
+ The following example displays the module names that match the specified search criteria, ignoring the case.  
+  
+ [!code-cpp[System.Reflection.Module.FilterTypeNameIgnoreCase Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Module.FilterTypeNameIgnoreCase Example/CPP/class1.cpp#1)]
+ [!code-csharp[System.Reflection.Module.FilterTypeNameIgnoreCase Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Module.FilterTypeNameIgnoreCase Example/CS/class1.cs#1)]
+ [!code-vb[System.Reflection.Module.FilterTypeNameIgnoreCase Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Module.FilterTypeNameIgnoreCase Example/VB/class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FindTypes">
@@ -236,11 +307,32 @@
         <Parameter Name="filterCriteria" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="filter">To be added.</param>
-        <param name="filterCriteria">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="filter">The delegate used to filter the classes.</param>
+        <param name="filterCriteria">An Object used to filter the classes.</param>
+        <summary>Returns an array of classes accepted by the given filter and filter criteria.</summary>
+        <returns>An array of type <see langword="Type" /> containing classes that were accepted by the filter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Reflection.ReflectionTypeLoadException> is a special class load exception. The `ReflectionTypeLoadException.Types` property contains the array of classes that were defined in the module and were loaded. This array may contain some null values. The `ReflectionTypeLoadException.LoaderExceptions` property is an array of exceptions that represent the exceptions that were thrown by the class loader. The holes in the class array line up with the exceptions.  
+  
+ The delegate given by `filter` is called for each class in the module, passing along the `Type` object representing the class as well as the given `filterCriteria`. If `filter` returns a particular class, that class will be included in the returned array. If `filter` returns `null`, all classes are returned and `filterCriteria` is ignored.  
+  
+ `FindTypes` cannot be used to look up parameterized types such as arrays.  
+  
+   
+  
+## Examples  
+ The following example demonstrates the `FindTypes` method.  
+  
+ [!code-cpp[System.Reflection.Module.FilterTypeName Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Module.FilterTypeName Example/CPP/class1.cpp#1)]
+ [!code-csharp[System.Reflection.Module.FilterTypeName Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Module.FilterTypeName Example/CS/class1.cs#1)]
+ [!code-vb[System.Reflection.Module.FilterTypeName Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Module.FilterTypeName Example/VB/class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Reflection.ReflectionTypeLoadException">One or more classes in a module could not be loaded.</exception>
       </Docs>
     </Member>
     <Member MemberName="FullyQualifiedName">
@@ -267,9 +359,32 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a string representing the fully qualified name and path to this module.</summary>
+        <value>The fully qualified module name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To get the name without the path, use <xref:System.Reflection.Module.Name%2A>.  
+  
+ If the assembly for this module was loaded from a byte array then the `FullyQualifiedName` for the module will be: \<Unknown>.  
+  
+> [!NOTE]
+>  The case of module name is platform-dependent.  
+  
+   
+  
+## Examples  
+ The following example displays the fully qualified name of the specified module.  
+  
+ [!code-cpp[System.Reflection.Module.FullyQualifiedName#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Module.FullyQualifiedName/CPP/class1.cpp#1)]
+ [!code-csharp[System.Reflection.Module.FullyQualifiedName#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Module.FullyQualifiedName/CS/class1.cs#1)]
+ [!code-vb[System.Reflection.Module.FullyQualifiedName#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Module.FullyQualifiedName/VB/class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The caller does not have the required permissions.</exception>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">for access to information in the path. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" />.</permission>
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributes">
@@ -293,10 +408,21 @@
         <Parameter Name="inherit" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="inherit">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="inherit">This argument is ignored for objects of this type.</param>
+        <summary>Returns all custom attributes.</summary>
+        <returns>An array of type <see langword="Object" /> containing all custom attributes.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example displays the module names that match the specified search criteria.  
+  
+ [!code-cpp[System.Reflection.Module.GetCustomAttributes 1Arg Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Module.GetCustomAttributes 1Arg Example/CPP/class1.cpp#1)]
+ [!code-csharp[System.Reflection.Module.GetCustomAttributes 1Arg Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Module.GetCustomAttributes 1Arg Example/CS/class1.cs#1)]
+ [!code-vb[System.Reflection.Module.GetCustomAttributes 1Arg Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Module.GetCustomAttributes 1Arg Example/VB/class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributes">
@@ -321,11 +447,26 @@
         <Parameter Name="inherit" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="attributeType">To be added.</param>
-        <param name="inherit">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="attributeType">The type of attribute to get.</param>
+        <param name="inherit">This argument is ignored for objects of this type.</param>
+        <summary>Gets custom attributes of the specified type.</summary>
+        <returns>An array of type <see langword="Object" /> containing all custom attributes of the specified type.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example displays the module names of the specified type that match the specified search criteria.  
+  
+ [!code-cpp[System.Reflection.Module.GetCustomAttributes 2Arg Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Module.GetCustomAttributes 2Arg Example/CPP/class1.cpp#1)]
+ [!code-csharp[System.Reflection.Module.GetCustomAttributes 2Arg Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Module.GetCustomAttributes 2Arg Example/CS/class1.cs#1)]
+ [!code-vb[System.Reflection.Module.GetCustomAttributes 2Arg Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Module.GetCustomAttributes 2Arg Example/VB/class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="attributeType" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="attributeType" /> is not a <see cref="T:System.Type" /> object supplied by the runtime. For example, <paramref name="attributeType" /> is a <see cref="T:System.Reflection.Emit.TypeBuilder" /> object.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributesData">
@@ -347,9 +488,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a list of <see cref="T:System.Reflection.CustomAttributeData" /> objects for the current module, which can be used in the reflection-only context.</summary>
+        <returns>A generic list of <see cref="T:System.Reflection.CustomAttributeData" /> objects representing data about the attributes that have been applied to the current module.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to examine the custom attributes of code in the reflection-only context, in cases where the custom attributes themselves are defined in code that is loaded into the reflection-only context. Methods such as <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=fullName> and <xref:System.Reflection.Module.GetCustomAttributes%2A?displayProperty=fullName> cannot be used in such cases, because they create instances of the attributes. Code in the reflection-only context cannot be executed. For more information and example code, see the <xref:System.Reflection.CustomAttributeData> class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetField">
@@ -377,10 +525,11 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The field name.</param>
+        <summary>Returns a field having the specified name.</summary>
+        <returns>A <see langword="FieldInfo" /> object having the specified name, or <see langword="null" /> if the field does not exist.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetField">
@@ -409,11 +558,12 @@
         <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="bindingAttr">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The field name.</param>
+        <param name="bindingAttr">One of the <see langword="BindingFlags" /> bit flags used to control the search.</param>
+        <summary>Returns a field having the specified name and binding attributes.</summary>
+        <returns>A <see langword="FieldInfo" /> object having the specified name and binding attributes, or <see langword="null" /> if the field does not exist.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetFields">
@@ -439,9 +589,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the global fields defined on the module.</summary>
+        <returns>An array of <see cref="T:System.Reflection.FieldInfo" /> objects representing the global fields defined on the module; if there are no global fields, an empty array is returned.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Reflection.Module.GetFields%2A> method does not return fields in a particular order, such as alphabetical or declaration order. Your code must not depend on the order in which fields are returned, because that order can vary.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetFields">
@@ -469,10 +626,17 @@
         <Parameter Name="bindingFlags" Type="System.Reflection.BindingFlags" />
       </Parameters>
       <Docs>
-        <param name="bindingFlags">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="bindingFlags">A bitwise combination of <see cref="T:System.Reflection.BindingFlags" /> values that limit the search.</param>
+        <summary>Returns the global fields defined on the module that match the specified binding flags.</summary>
+        <returns>An array of type <see cref="T:System.Reflection.FieldInfo" /> representing the global fields defined on the module that match the specified binding flags; if no global fields match the binding flags, an empty array is returned.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Reflection.Module.GetFields%2A> method does not return fields in a particular order, such as alphabetical or declaration order. Your code must not depend on the order in which fields are returned, because that order can vary.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -500,8 +664,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code for this instance.</summary>
+        <returns>A 32-bit signed integer hash code.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -530,10 +694,12 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The method name.</param>
+        <summary>Returns a method having the specified name.</summary>
+        <returns>A <see langword="MethodInfo" /> object having the specified name, or <see langword="null" /> if the method does not exist.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetMethod">
@@ -562,11 +728,13 @@
         <Parameter Name="types" Type="System.Type[]" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="types">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The method name.</param>
+        <param name="types">The parameter types to search for.</param>
+        <summary>Returns a method having the specified name and parameter types.</summary>
+        <returns>A <see langword="MethodInfo" /> object in accordance with the specified criteria, or <see langword="null" /> if the method does not exist.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is <see langword="null" />, <paramref name="types" /> is <see langword="null" />, or <paramref name="types" /> (i) is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetMethod">
@@ -595,15 +763,17 @@
         <Parameter Name="modifiers" Type="System.Reflection.ParameterModifier[]" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="bindingAttr">To be added.</param>
-        <param name="binder">To be added.</param>
-        <param name="callConvention">To be added.</param>
-        <param name="types">To be added.</param>
-        <param name="modifiers">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The method name.</param>
+        <param name="bindingAttr">One of the <see langword="BindingFlags" /> bit flags used to control the search.</param>
+        <param name="binder">An object that implements <see langword="Binder" />, containing properties related to this method.</param>
+        <param name="callConvention">The calling convention for the method.</param>
+        <param name="types">The parameter types to search for.</param>
+        <param name="modifiers">An array of parameter modifiers used to make binding work with parameter signatures in which the types have been modified.</param>
+        <summary>Returns a method having the specified name, binding information, calling convention, and parameter types and modifiers.</summary>
+        <returns>A <see langword="MethodInfo" /> object in accordance with the specified criteria, or <see langword="null" /> if the method does not exist.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is <see langword="null" />, <paramref name="types" /> is <see langword="null" />, or <paramref name="types" /> (i) is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetMethodImpl">
@@ -632,15 +802,17 @@
         <Parameter Name="modifiers" Type="System.Reflection.ParameterModifier[]" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="bindingAttr">To be added.</param>
-        <param name="binder">To be added.</param>
-        <param name="callConvention">To be added.</param>
-        <param name="types">To be added.</param>
-        <param name="modifiers">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The method name.</param>
+        <param name="bindingAttr">One of the <see langword="BindingFlags" /> bit flags used to control the search.</param>
+        <param name="binder">An object that implements <see langword="Binder" />, containing properties related to this method.</param>
+        <param name="callConvention">The calling convention for the method.</param>
+        <param name="types">The parameter types to search for.</param>
+        <param name="modifiers">An array of parameter modifiers used to make binding work with parameter signatures in which the types have been modified.</param>
+        <summary>Returns the method implementation in accordance with the specified criteria.</summary>
+        <returns>A <see langword="MethodInfo" /> object containing implementation information as specified, or <see langword="null" /> if the method does not exist.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Reflection.AmbiguousMatchException">
+          <paramref name="types" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetMethods">
@@ -666,8 +838,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the global methods defined on the module.</summary>
+        <returns>An array of <see cref="T:System.Reflection.MethodInfo" /> objects representing all the global methods defined on the module; if there are no global methods, an empty array is returned.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -696,9 +868,9 @@
         <Parameter Name="bindingFlags" Type="System.Reflection.BindingFlags" />
       </Parameters>
       <Docs>
-        <param name="bindingFlags">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="bindingFlags">A bitwise combination of <see cref="T:System.Reflection.BindingFlags" /> values that limit the search.</param>
+        <summary>Returns the global methods defined on the module that match the specified binding flags.</summary>
+        <returns>An array of type <see cref="T:System.Reflection.MethodInfo" /> representing the global methods defined on the module that match the specified binding flags; if no global methods match the binding flags, an empty array is returned.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -724,10 +896,13 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">The information and data needed to serialize or deserialize an object.</param>
+        <param name="context">The context for the serialization.</param>
+        <summary>Provides an <see cref="T:System.Runtime.Serialization.ISerializable" /> implementation for serialized objects.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="info" /> is <see langword="null" />.</exception>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
     <Member MemberName="GetPEKind">
@@ -752,9 +927,9 @@
         <Parameter Name="machine" Type="System.Reflection.ImageFileMachine&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="peKind">To be added.</param>
-        <param name="machine">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="peKind">When this method returns, a combination of the <see cref="T:System.Reflection.PortableExecutableKinds" /> values indicating the nature of the code in the module.</param>
+        <param name="machine">When this method returns, one of the <see cref="T:System.Reflection.ImageFileMachine" /> values indicating the platform targeted by the module.</param>
+        <summary>Gets a pair of values indicating the nature of the code in a module and the platform targeted by the module.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -773,8 +948,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an <see langword="X509Certificate" /> object corresponding to the certificate included in the Authenticode signature of the assembly which this module belongs to. If the assembly has not been Authenticode signed, <see langword="null" /> is returned.</summary>
+        <returns>An <see langword="X509Certificate" /> object, or <see langword="null" /> if the assembly to which this module belongs has not been Authenticode signed.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -808,10 +983,49 @@
         <Parameter Name="className" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="className">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="className">The name of the type to locate. The name must be fully qualified with the namespace.</param>
+        <summary>Returns the specified type, performing a case-sensitive search.</summary>
+        <returns>A <see langword="Type" /> object representing the given type, if the type is in this module; otherwise, <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  If the type has been forwarded to another assembly, it is still returned by this method. For information on type forwarding, see [Type Forwarding in the Common Language Runtime](../Topic/Type%20Forwarding%20in%20the%20Common%20Language%20Runtime.md).  
+  
+ A type can be retrieved from a specific module using <xref:System.Reflection.Module.GetType%2A?displayProperty=fullName>. Calling <xref:System.Reflection.Module.GetType%2A?displayProperty=fullName> on the module that contains the manifest will not search the entire assembly. To retrieve a type from an assembly, regardless of which module it is in, you must call <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+ The following example displays the name of a type in the specified module.  
+  
+ [!code-cpp[System.Reflection.Module.GetType 1Arg Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Module.GetType 1Arg Example/CPP/class1.cpp#1)]
+ [!code-csharp[System.Reflection.Module.GetType 1Arg Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Module.GetType 1Arg Example/CS/class1.cs#1)]
+ [!code-vb[System.Reflection.Module.GetType 1Arg Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Module.GetType 1Arg Example/VB/class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="className" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Reflection.TargetInvocationException">The class initializers are invoked and an exception is thrown.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="className" /> is a zero-length string.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">
+          <paramref name="className" /> requires a dependent assembly that could not be found.</exception>
+        <exception cref="T:System.IO.FileLoadException">
+          <paramref name="className" /> requires a dependent assembly that was found but could not be loaded.  
+  
+ -or-  
+  
+ The current assembly was loaded into the reflection-only context, and <paramref name="className" /> requires a dependent assembly that was not preloaded.</exception>
+        <exception cref="T:System.BadImageFormatException">
+          <paramref name="className" /> requires a dependent assembly, but the file is not a valid assembly.  
+  
+ -or-  
+  
+ <paramref name="className" /> requires a dependent assembly which was compiled for a version of the runtime later than the currently loaded version.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetType">
@@ -845,11 +1059,51 @@
         <Parameter Name="ignoreCase" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="className">To be added.</param>
-        <param name="ignoreCase">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="className">The name of the type to locate. The name must be fully qualified with the namespace.</param>
+        <param name="ignoreCase">
+          <see langword="true" /> for case-insensitive search; otherwise, <see langword="false" />.</param>
+        <summary>Returns the specified type, searching the module with the specified case sensitivity.</summary>
+        <returns>A <see langword="Type" /> object representing the given type, if the type is in this module; otherwise, <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  If the type has been forwarded to another assembly, it is still returned by this method. For information on type forwarding, see [Type Forwarding in the Common Language Runtime](../Topic/Type%20Forwarding%20in%20the%20Common%20Language%20Runtime.md).  
+  
+ A type can be retrieved from a specific module using <xref:System.Reflection.Module.GetType%2A?displayProperty=fullName>. Calling <xref:System.Reflection.Module.GetType%2A?displayProperty=fullName> on the module that contains the manifest will not search the entire assembly. To retrieve a type from an assembly, regardless of which module it is in, you must call <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+ The following example displays the name of a type in the specified module, specifying `false` for the `ignoreCase` parameter so that case will not be ignored.  
+  
+ [!code-cpp[System.Reflection.Module.GetType 2Arg Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Module.GetType 2Arg Example/CPP/class1.cpp#1)]
+ [!code-csharp[System.Reflection.Module.GetType 2Arg Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Module.GetType 2Arg Example/CS/class1.cs#1)]
+ [!code-vb[System.Reflection.Module.GetType 2Arg Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Module.GetType 2Arg Example/VB/class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="className" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Reflection.TargetInvocationException">The class initializers are invoked and an exception is thrown.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="className" /> is a zero-length string.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">
+          <paramref name="className" /> requires a dependent assembly that could not be found.</exception>
+        <exception cref="T:System.IO.FileLoadException">
+          <paramref name="className" /> requires a dependent assembly that was found but could not be loaded.  
+  
+ -or-  
+  
+ The current assembly was loaded into the reflection-only context, and <paramref name="className" /> requires a dependent assembly that was not preloaded.</exception>
+        <exception cref="T:System.BadImageFormatException">
+          <paramref name="className" /> requires a dependent assembly, but the file is not a valid assembly.  
+  
+ -or-  
+  
+ <paramref name="className" /> requires a dependent assembly which was compiled for a version of the runtime later than the currently loaded version.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetType">
@@ -885,12 +1139,56 @@
         <Parameter Name="ignoreCase" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="className">To be added.</param>
-        <param name="throwOnError">To be added.</param>
-        <param name="ignoreCase">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="className">The name of the type to locate. The name must be fully qualified with the namespace.</param>
+        <param name="throwOnError">
+          <see langword="true" /> to throw an exception if the type cannot be found; <see langword="false" /> to return <see langword="null" />.</param>
+        <param name="ignoreCase">
+          <see langword="true" /> for case-insensitive search; otherwise, <see langword="false" />.</param>
+        <summary>Returns the specified type, specifying whether to make a case-sensitive search of the module and whether to throw an exception if the type cannot be found.</summary>
+        <returns>A <see cref="T:System.Type" /> object representing the specified type, if the type is declared in this module; otherwise, <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `throwOnError` parameter affects only what happens when the type is not found. It does not affect any other exceptions that might be thrown. In particular, if the type is found but cannot be loaded, <xref:System.TypeLoadException> can be thrown even if `throwOnError` is `false`.  
+  
+> [!NOTE]
+>  If the type has been forwarded to another assembly, it is still returned by this method. For information on type forwarding, see [Type Forwarding in the Common Language Runtime](../Topic/Type%20Forwarding%20in%20the%20Common%20Language%20Runtime.md).  
+  
+ A type can be retrieved from a specific module using <xref:System.Reflection.Module.GetType%2A?displayProperty=fullName>. Calling <xref:System.Reflection.Module.GetType%2A?displayProperty=fullName> on the module that contains the manifest will not search the entire assembly. To retrieve a type from an assembly, regardless of which module it is in, you must call <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+ The following example displays the name of a type in the specified module. The `throwOnError` and `ignoreCase` parameters are specified as `false`.  
+  
+ [!code-cpp[System.Reflection.Module.GetType 3Arg Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Module.GetType 3Arg Example/CPP/class1.cpp#1)]
+ [!code-csharp[System.Reflection.Module.GetType 3Arg Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Module.GetType 3Arg Example/CS/class1.cs#1)]
+ [!code-vb[System.Reflection.Module.GetType 3Arg Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Module.GetType 3Arg Example/VB/class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="className" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Reflection.TargetInvocationException">The class initializers are invoked and an exception is thrown.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="className" /> is a zero-length string.</exception>
+        <exception cref="T:System.TypeLoadException">
+          <paramref name="throwOnError" /> is <see langword="true" />, and the type cannot be found.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">
+          <paramref name="className" /> requires a dependent assembly that could not be found.</exception>
+        <exception cref="T:System.IO.FileLoadException">
+          <paramref name="className" /> requires a dependent assembly that was found but could not be loaded.  
+  
+ -or-  
+  
+ The current assembly was loaded into the reflection-only context, and <paramref name="className" /> requires a dependent assembly that was not preloaded.</exception>
+        <exception cref="T:System.BadImageFormatException">
+          <paramref name="className" /> requires a dependent assembly, but the file is not a valid assembly.  
+  
+ -or-  
+  
+ <paramref name="className" /> requires a dependent assembly which was compiled for a version of the runtime later than the currently loaded version.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetTypes">
@@ -916,9 +1214,24 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns all the types defined within this module.</summary>
+        <returns>An array of type <see langword="Type" /> containing types defined within the module that is reflected by this instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `ReflectionTypeLoadException` is a special load exception. The `ReflectionTypeLoadException.Types` property contains the array of types that were defined in the module and were loaded. This array may contain some null values. The `ReflectionTypeLoadException.LoaderExceptions` property is an array of exceptions that represent the exceptions that were thrown by the loader. The holes in the class array line up with the exceptions.  
+  
+ For example, if the class initializers of one of the classes throws an exception while it is being loaded, a `TargetInvocationException` is stored in the corresponding element of the `LoaderExceptions` array.  
+  
+> [!NOTE]
+>  If a type has been forwarded to another assembly, it is not included in the returned array. For information on type forwarding, see [Type Forwarding in the Common Language Runtime](../Topic/Type%20Forwarding%20in%20the%20Common%20Language%20Runtime.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Reflection.ReflectionTypeLoadException">One or more classes in a module could not be loaded.</exception>
+        <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
+        <permission cref="T:System.Security.Permissions.ReflectionPermission">Reflection permission for the current module.</permission>
       </Docs>
     </Member>
     <Member MemberName="IsDefined">
@@ -943,11 +1256,27 @@
         <Parameter Name="inherit" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="attributeType">To be added.</param>
-        <param name="inherit">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="attributeType">The type of custom attribute to test for.</param>
+        <param name="inherit">This argument is ignored for objects of this type.</param>
+        <summary>Returns a value that indicates whether the specified attribute type has been applied to this module.</summary>
+        <returns>
+          <see langword="true" /> if one or more instances of <paramref name="attributeType" /> have been applied to this module; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates a use of the `IsDefined` method.  
+  
+ [!code-cpp[System.Reflection.Module.IsDefined Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Module.IsDefined Example/CPP/class1.cpp#1)]
+ [!code-csharp[System.Reflection.Module.IsDefined Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Module.IsDefined Example/CS/class1.cs#1)]
+ [!code-vb[System.Reflection.Module.IsDefined Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Module.IsDefined Example/VB/class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="attributeType" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="attributeType" /> is not a <see cref="T:System.Type" /> object supplied by the runtime. For example, <paramref name="attributeType" /> is a <see cref="T:System.Reflection.Emit.TypeBuilder" /> object.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsResource">
@@ -969,9 +1298,21 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether the object is a resource.</summary>
+        <returns>
+          <see langword="true" /> if the object is a resource; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates a use of the `IsResource` method.  
+  
+ [!code-cpp[System.Reflection.Module.IsResource Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Module.IsResource Example/CPP/class1.cpp#1)]
+ [!code-csharp[System.Reflection.Module.IsResource Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Module.IsResource Example/CS/class1.cs#1)]
+ [!code-vb[System.Reflection.Module.IsResource Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Module.IsResource Example/VB/class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MDStreamVersion">
@@ -992,9 +1333,18 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the metadata stream version.</summary>
+        <value>A 32-bit integer representing the metadata stream version. The high-order two bytes represent the major version number, and the low-order two bytes represent the minor version number.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  For more information on the metadata header, see "Partition II: Metadata Definition and Semantics" in the Common Language Infrastructure (CLI) documentation. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MetadataToken">
@@ -1015,9 +1365,19 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a token that identifies the module in metadata.</summary>
+        <value>An integer token that identifies the current module in metadata.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The tokens obtained using this property can be passed to the unmanaged Reflection API. For more information, see [Unmanaged Reflection API](http://msdn.microsoft.com/en-us/0c5bb9de-0cf6-438d-ba47-134e6c775fb8).  
+  
+> [!NOTE]
+>  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ModuleHandle">
@@ -1038,8 +1398,8 @@
         <ReturnType>System.ModuleHandle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a handle for the module.</summary>
+        <value>A <see cref="T:System.ModuleHandle" /> structure for the current module.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1065,9 +1425,19 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a universally unique identifier (UUID) that can be used to distinguish between two versions of a module.</summary>
+        <value>A <see cref="T:System.Guid" /> that can be used to distinguish between two versions of a module.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In unmanaged metadata, the GUID returned by the <xref:System.Reflection.Module.ModuleVersionId%2A> property is referred to as the `mvid`, and is stored in the GUID heap.  
+  
+> [!NOTE]
+>  More information about metadata can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -1094,9 +1464,29 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a <see langword="String" /> representing the name of the module with the path removed.</summary>
+        <value>The module name with no path.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `Name` is a platform-dependent string.  
+  
+ If the assembly for this module was loaded from a byte array then the `FullyQualifiedName` for the module will be: \<Unknown>.  
+  
+ To get the name and the path, use <xref:System.Reflection.Module.FullyQualifiedName%2A>.  
+  
+   
+  
+## Examples  
+ This example shows the effect of the `ScopeName`, `FullyQualifiedName`, and `Name` properties.  
+  
+ [!code-cpp[Classic Module.Name Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic Module.Name Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic Module.Name Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic Module.Name Example/CS/source.cs#1)]
+ [!code-vb[Classic Module.Name Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic Module.Name Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -1121,10 +1511,11 @@
         <Parameter Name="right" Type="System.Reflection.Module" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first object to compare.</param>
+        <param name="right">The second object to compare.</param>
+        <summary>Indicates whether two <see cref="T:System.Reflection.Module" /> objects are equal.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="left" /> is equal to <paramref name="right" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1150,10 +1541,11 @@
         <Parameter Name="right" Type="System.Reflection.Module" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first object to compare.</param>
+        <param name="right">The second object to compare.</param>
+        <summary>Indicates whether two <see cref="T:System.Reflection.Module" /> objects are not equal.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="left" /> is not equal to <paramref name="right" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1178,10 +1570,30 @@
         <Parameter Name="metadataToken" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="metadataToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="metadataToken">A metadata token that identifies a field in the module.</param>
+        <summary>Returns the field identified by the specified metadata token.</summary>
+        <returns>A <see cref="T:System.Reflection.FieldInfo" /> object representing the field that is identified by the specified metadata token.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To resolve a metadata token that identifies a field whose parent `TypeSpec` has a signature containing element type `ELEMENT_TYPE_VAR` or `ELEMENT_TYPE_MVAR`, use the [ResolveField(Int32, Type\[\], Type\<xref:System.Reflection.Module.ResolveField%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method overload, which allows you to supply the necessary context. That is, when you are resolving a metadata token for a field that depends on the generic type parameters of the generic type and/or the generic method in which the token is embedded, you must use the overload that allows you to supply those type parameters.  
+  
+> [!NOTE]
+>  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
+  
+ For code that demonstrates token resolution using the generic context (that is, the generic type parameters of the generic type and/or the generic method in which the token is embedded) see the [ResolveMethod(Int32, Type\[\], Type\<xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="metadataToken" /> is not a token for a field in the scope of the current module.  
+  
+ -or-  
+  
+ <paramref name="metadataToken" /> identifies a field whose parent <see langword="TypeSpec" /> has a signature containing element type <see langword="var" /> (a type parameter of a generic type) or <see langword="mvar" /> (a type parameter of a generic method).</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="metadataToken" /> is not a valid token in the scope of the current module.</exception>
       </Docs>
     </Member>
     <Member MemberName="ResolveField">
@@ -1207,12 +1619,32 @@
         <Parameter Name="genericMethodArguments" Type="System.Type[]" />
       </Parameters>
       <Docs>
-        <param name="metadataToken">To be added.</param>
-        <param name="genericTypeArguments">To be added.</param>
-        <param name="genericMethodArguments">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="metadataToken">A metadata token that identifies a field in the module.</param>
+        <param name="genericTypeArguments">An array of <see cref="T:System.Type" /> objects representing the generic type arguments of the type where the token is in scope, or <see langword="null" /> if that type is not generic.</param>
+        <param name="genericMethodArguments">An array of <see cref="T:System.Type" /> objects representing the generic type arguments of the method where the token is in scope, or <see langword="null" /> if that method is not generic.</param>
+        <summary>Returns the field identified by the specified metadata token, in the context defined by the specified generic type parameters.</summary>
+        <returns>A <see cref="T:System.Reflection.FieldInfo" /> object representing the field that is identified by the specified metadata token.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> method on the type where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. Use the <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=fullName> method on the method where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. It is always safe to provide these arguments, even when they are not needed.  
+  
+> [!NOTE]
+>  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
+  
+ For code that demonstrates token resolution using the generic context (that is, the generic type parameters of the generic type and/or the generic method in which the token is embedded) see the [ResolveMethod(Int32, Type\[\], Type\<xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="metadataToken" /> is not a token for a field in the scope of the current module.  
+  
+ -or-  
+  
+ <paramref name="metadataToken" /> identifies a field whose parent <see langword="TypeSpec" /> has a signature containing element type <see langword="var" /> (a type parameter of a generic type) or <see langword="mvar" /> (a type parameter of a generic method), and the necessary generic type arguments were not supplied for either or both of <paramref name="genericTypeArguments" /> and <paramref name="genericMethodArguments" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="metadataToken" /> is not a valid token in the scope of the current module.</exception>
       </Docs>
     </Member>
     <Member MemberName="ResolveMember">
@@ -1236,10 +1668,34 @@
         <Parameter Name="metadataToken" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="metadataToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="metadataToken">A metadata token that identifies a type or member in the module.</param>
+        <summary>Returns the type or member identified by the specified metadata token.</summary>
+        <returns>A <see cref="T:System.Reflection.MemberInfo" /> object representing the type or member that is identified by the specified metadata token.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To resolve a metadata token for a `MethodSpec` or `TypeSpec` whose signature contains element type `ELEMENT_TYPE_VAR` or `ELEMENT_TYPE_MVAR`, use the [ResolveMember(Int32, Type\[\], Type\<xref:System.Reflection.Module.ResolveMember%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method overload, which allows you to supply the necessary context. That is, when you are resolving a metadata token for a member that depends on the generic type parameters of the generic type and/or the generic method in which the token is embedded, you must use the overload that allows you to supply those type parameters.  
+  
+> [!NOTE]
+>  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
+  
+ For code that demonstrates token resolution using the generic context (that is, the generic type parameters of the generic type and/or the generic method in which the token is embedded) see the [ResolveMethod(Int32, Type\[\], Type\<xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="metadataToken" /> is not a token for a type or member in the scope of the current module.  
+  
+ -or-  
+  
+ <paramref name="metadataToken" /> is a <see langword="MethodSpec" /> or <see langword="TypeSpec" /> whose signature contains element type <see langword="var" /> (a type parameter of a generic type) or <see langword="mvar" /> (a type parameter of a generic method).  
+  
+ -or-  
+  
+ <paramref name="metadataToken" /> identifies a property or event.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="metadataToken" /> is not a valid token in the scope of the current module.</exception>
       </Docs>
     </Member>
     <Member MemberName="ResolveMember">
@@ -1265,12 +1721,36 @@
         <Parameter Name="genericMethodArguments" Type="System.Type[]" />
       </Parameters>
       <Docs>
-        <param name="metadataToken">To be added.</param>
-        <param name="genericTypeArguments">To be added.</param>
-        <param name="genericMethodArguments">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="metadataToken">A metadata token that identifies a type or member in the module.</param>
+        <param name="genericTypeArguments">An array of <see cref="T:System.Type" /> objects representing the generic type arguments of the type where the token is in scope, or <see langword="null" /> if that type is not generic.</param>
+        <param name="genericMethodArguments">An array of <see cref="T:System.Type" /> objects representing the generic type arguments of the method where the token is in scope, or <see langword="null" /> if that method is not generic.</param>
+        <summary>Returns the type or member identified by the specified metadata token, in the context defined by the specified generic type parameters.</summary>
+        <returns>A <see cref="T:System.Reflection.MemberInfo" /> object representing the type or member that is identified by the specified metadata token.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> method on the type where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. Use the <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=fullName> method on the method where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. It is always safe to provide these arguments, even when they are not needed.  
+  
+> [!NOTE]
+>  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
+  
+ For code that demonstrates token resolution using the generic context (that is, the generic type parameters of the generic type and/or the generic method in which the token is embedded) see the [ResolveMethod(Int32, Type\[\], Type\<xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="metadataToken" /> is not a token for a type or member in the scope of the current module.  
+  
+ -or-  
+  
+ <paramref name="metadataToken" /> is a <see langword="MethodSpec" /> or <see langword="TypeSpec" /> whose signature contains element type <see langword="var" /> (a type parameter of a generic type) or <see langword="mvar" /> (a type parameter of a generic method), and the necessary generic type arguments were not supplied for either or both of <paramref name="genericTypeArguments" /> and <paramref name="genericMethodArguments" />.  
+  
+ -or-  
+  
+ <paramref name="metadataToken" /> identifies a property or event.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="metadataToken" /> is not a valid token in the scope of the current module.</exception>
       </Docs>
     </Member>
     <Member MemberName="ResolveMethod">
@@ -1294,10 +1774,56 @@
         <Parameter Name="metadataToken" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="metadataToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="metadataToken">A metadata token that identifies a method or constructor in the module.</param>
+        <summary>Returns the method or constructor identified by the specified metadata token.</summary>
+        <returns>A <see cref="T:System.Reflection.MethodBase" /> object representing the method or constructor that is identified by the specified metadata token.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To resolve a metadata token for a `MethodSpec` whose signature contains element type `ELEMENT_TYPE_VAR` or `ELEMENT_TYPE_MVAR`, use the [ResolveMethod(Int32, Type\[\], Type\<xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method overload, which allows you to supply the necessary context. That is, when you are resolving a metadata token for a method that depends on the generic type parameters of the generic type and/or the generic method in which the token is embedded, you must use the overload that allows you to supply those type parameters.  
+  
+> [!NOTE]
+>  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the two overloads of the <xref:System.Reflection.Module.ResolveMethod%2A> method to resolve metadata tokens from call sites in generic and non-generic contexts.  
+  
+ The code example defines two generic types, `G1<Tg1>` and `G2<Tg2>` (`G1(Of Tg1)` and `G2(Of Tg2)` in Visual Basic), each of which has a generic method. `G1<Tg1>` also has a non-generic method that uses the type parameter `Tg1` for its parameter. The generic method `GM2<Tgm2>` in type `G2<Tg2>` contains several method calls:  
+  
+-   Case 1: The generic method `GM1<Tgm1>` is called, using the type parameters of `G2<Tg2>` and `GM2<Tgm2>` as the type arguments. In other words, the parameter types of the called method will depend on the types that are used to construct a closed generic type from the type definition for `G2<Tg2>`.  
+  
+-   Case 2: The non-generic method `M1` is called. The parameter of this method uses the type parameter of the defining type, `G1<Tg1>`, which is replaced in this case by the type parameter of the enclosing type, `G2<Tg2>`.  
+  
+-   Case 3: The generic method `GM1<Tgm1>` is called, specifying <xref:System.Int32> and <xref:System.Object> for the type arguments of the generic type and the generic method, respectively. This method call does not depend on the type parameters of the enclosing type or method.  
+  
+-   Case 4: The non-generic method `M1` of the `Example` class is called. This method call does not depend on the type parameters of the enclosing type or method.  
+  
+ In addition, the example defines the non-generic `Example` class. This class has a method `M` that makes a call to a generic method:  
+  
+-   Case 5: The generic method `GM1` is called, specifying <xref:System.Int32> and <xref:System.Object> for the type arguments of the generic type and the generic method, respectively. The context for this method has no enclosing generic type or generic method.  
+  
+ For each case, the example first constructs a <xref:System.Reflection.MethodInfo> that represents the called method, and then resolves the token using the [ResolveMethod(Int32, Type\[\], Type\<xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method overload, using the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> and <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=fullName> methods to get the values for the `genericTypeArguments` and `genericMethodArguments` parameters. This technique works in all cases, because the methods return <xref:System.Type.EmptyTypes?displayProperty=fullName> for non-generic contexts. The example compares the resolved <xref:System.Reflection.MethodInfo> with the constructed <xref:System.Reflection.MethodInfo>.  
+  
+ The example then attempts to use the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%29> method overload to resolve the token. This works in cases 3, 4, and 5, because the method calls do not depend on the generic context. In cases 1 and 2, an exception is thrown because there is insufficient information to resolve the token.  
+  
+ The metadata token values are hard-coded as an enumeration. If you change this code example, the token values are likely to change. To determine the new token values, compile the code and use Ildasm.exe with the **/TOKENS** option to examine the assembly. The tokens can be found at the points of call. Insert the new values into the enumeration, and recompile the example.  
+  
+ [!code-csharp[Module.MethodResolve#1](~/samples/snippets/csharp/VS_Snippets_CLR/Module.MethodResolve/cs/source.cs#1)]
+ [!code-vb[Module.MethodResolve#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Module.MethodResolve/vb/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="metadataToken" /> is not a token for a method or constructor in the scope of the current module.  
+  
+ -or-  
+  
+ <paramref name="metadataToken" /> is a <see langword="MethodSpec" /> whose signature contains element type <see langword="var" /> (a type parameter of a generic type) or <see langword="mvar" /> (a type parameter of a generic method).</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="metadataToken" /> is not a valid token in the scope of the current module.</exception>
       </Docs>
     </Member>
     <Member MemberName="ResolveMethod">
@@ -1323,12 +1849,58 @@
         <Parameter Name="genericMethodArguments" Type="System.Type[]" />
       </Parameters>
       <Docs>
-        <param name="metadataToken">To be added.</param>
-        <param name="genericTypeArguments">To be added.</param>
-        <param name="genericMethodArguments">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="metadataToken">A metadata token that identifies a method or constructor in the module.</param>
+        <param name="genericTypeArguments">An array of <see cref="T:System.Type" /> objects representing the generic type arguments of the type where the token is in scope, or <see langword="null" /> if that type is not generic.</param>
+        <param name="genericMethodArguments">An array of <see cref="T:System.Type" /> objects representing the generic type arguments of the method where the token is in scope, or <see langword="null" /> if that method is not generic.</param>
+        <summary>Returns the method or constructor identified by the specified metadata token, in the context defined by the specified generic type parameters.</summary>
+        <returns>A <see cref="T:System.Reflection.MethodBase" /> object representing the method that is identified by the specified metadata token.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> method on the type where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. Use the <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=fullName> method on the method where `metadataToken` is in scope to obtain an array of generic type arguments for `genericMethodArguments`. It is always safe to provide these arguments, even when they are not needed.  
+  
+> [!NOTE]
+>  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the two overloads of the <xref:System.Reflection.Module.ResolveMethod%2A> method to resolve metadata tokens from call sites in generic and non-generic contexts.  
+  
+ The code example defines two generic types, `G1<Tg1>` and `G2<Tg2>`, each of which has a generic method. `G1<Tg1>` also has a non-generic method that uses the type parameter `Tg1` for its parameter. The generic method `GM2<Tgm2>` in type `G2<Tg2>` contains several method calls:  
+  
+-   Case 1: The generic method `GM1<Tgm1>` is called, using the type parameters of `G2<Tg2>` and `GM2<Tgm2>` as the type arguments. In other words, the parameter types of the called method will depend on the types that are used to construct a closed generic type from the type definition for `G2<Tg2>`.  
+  
+-   Case 2: The non-generic method `M1` is called. The parameter of this method uses the type parameter of the defining type, `G1<Tg1>`, which is replaced in this case by the type parameter of the enclosing type, `G2<Tg2>`.  
+  
+-   Case 3: The generic method `GM1<Tgm1>` is called, specifying <xref:System.Int32> and <xref:System.Object> for the type arguments of the generic type and the generic method, respectively. This method call does not depend on the type parameters of the enclosing type or method.  
+  
+-   Case 4: The non-generic method `M1` of the `Example` class is called. This method call does not depend on the type parameters of the enclosing type or method.  
+  
+ In addition, the example defines the non-generic `Example` class. This class has a method `M` that makes a call to a generic method.  
+  
+-   Case 5: The generic method `GM1<Tgm1>` is called, specifying <xref:System.Int32> and <xref:System.Object> for the type arguments of the generic type and the generic method, respectively. The context for this method has no enclosing generic type or generic method.  
+  
+ For each case, the example first constructs a <xref:System.Reflection.MethodInfo> that represents the called method, and then resolves the token using the [ResolveMethod Method (Int32, Type\<xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method overload, using the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> and <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=fullName> methods to get the values for the `genericTypeArguments` and `genericMethodArguments` parameters. This technique works in all cases, because the methods return <xref:System.Type.EmptyTypes?displayProperty=fullName> for non-generic contexts. The example compares the resolved <xref:System.Reflection.MethodInfo> with the constructed <xref:System.Reflection.MethodInfo>.  
+  
+ The example then attempts to use the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%29> method overload to resolve the token. This works in cases 3, 4, and 5, because the method calls do not depend on the generic context. In cases 1 and 2, an exception is thrown because there is insufficient information to resolve the token.  
+  
+ The metadata token values are hard-coded as an enumeration. If you change this code example, the token values are likely to change. To determine the new token values, compile the code and use Ildasm.exe with the **/TOKENS** option to examine the assembly. The tokens can be found at the points of call. Insert the new values into the enumeration, and recompile the example.  
+  
+ [!code-csharp[Module.MethodResolve#1](~/samples/snippets/csharp/VS_Snippets_CLR/Module.MethodResolve/cs/source.cs#1)]
+ [!code-vb[Module.MethodResolve#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Module.MethodResolve/vb/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="metadataToken" /> is not a token for a method or constructor in the scope of the current module.  
+  
+ -or-  
+  
+ <paramref name="metadataToken" /> is a <see langword="MethodSpec" /> whose signature contains element type <see langword="var" /> (a type parameter of a generic type) or <see langword="mvar" /> (a type parameter of a generic method), and the necessary generic type arguments were not supplied for either or both of <paramref name="genericTypeArguments" /> and <paramref name="genericMethodArguments" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="metadataToken" /> is not a valid token in the scope of the current module.</exception>
       </Docs>
     </Member>
     <Member MemberName="ResolveSignature">
@@ -1352,10 +1924,23 @@
         <Parameter Name="metadataToken" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="metadataToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="metadataToken">A metadata token that identifies a signature in the module.</param>
+        <summary>Returns the signature blob identified by a metadata token.</summary>
+        <returns>An array of bytes representing the signature blob.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Information about metadata tokens and signatures can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="metadataToken" /> is not a valid <see langword="MemberRef" />, <see langword="MethodDef" />, <see langword="TypeSpec" />, signature, or <see langword="FieldDef" /> token in the scope of the current module.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="metadataToken" /> is not a valid token in the scope of the current module.</exception>
       </Docs>
     </Member>
     <Member MemberName="ResolveString">
@@ -1379,10 +1964,23 @@
         <Parameter Name="metadataToken" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="metadataToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="metadataToken">A metadata token that identifies a string in the string heap of the module.</param>
+        <summary>Returns the string identified by the specified metadata token.</summary>
+        <returns>A <see cref="T:System.String" /> containing a string value from the metadata string heap.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="metadataToken" /> is not a token for a string in the scope of the current module.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="metadataToken" /> is not a valid token in the scope of the current module.</exception>
       </Docs>
     </Member>
     <Member MemberName="ResolveType">
@@ -1406,10 +2004,28 @@
         <Parameter Name="metadataToken" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="metadataToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="metadataToken">A metadata token that identifies a type in the module.</param>
+        <summary>Returns the type identified by the specified metadata token.</summary>
+        <returns>A <see cref="T:System.Type" /> object representing the type that is identified by the specified metadata token.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To resolve a metadata token for a `TypeSpec` whose signature contains `ELEMENT_TYPE_VAR` or `ELEMENT_TYPE_MVAR`, use the [ResolveType(Int32, Type\[\], Type\<xref:System.Reflection.Module.ResolveType%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method overload, which allows you to supply the necessary context. That is, when you are resolving a metadata token for a type that depends on the generic type parameters of the generic type and/or the generic method in which the token is embedded, you must use the overload that allows you to supply those type parameters.  
+  
+> [!NOTE]
+>  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="metadataToken" /> is not a token for a type in the scope of the current module.  
+  
+ -or-  
+  
+ <paramref name="metadataToken" /> is a <see langword="TypeSpec" /> whose signature contains element type <see langword="var" /> (a type parameter of a generic type) or <see langword="mvar" /> (a type parameter of a generic method).</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="metadataToken" /> is not a valid token in the scope of the current module.</exception>
       </Docs>
     </Member>
     <Member MemberName="ResolveType">
@@ -1435,12 +2051,32 @@
         <Parameter Name="genericMethodArguments" Type="System.Type[]" />
       </Parameters>
       <Docs>
-        <param name="metadataToken">To be added.</param>
-        <param name="genericTypeArguments">To be added.</param>
-        <param name="genericMethodArguments">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="metadataToken">A metadata token that identifies a type in the module.</param>
+        <param name="genericTypeArguments">An array of <see cref="T:System.Type" /> objects representing the generic type arguments of the type where the token is in scope, or <see langword="null" /> if that type is not generic.</param>
+        <param name="genericMethodArguments">An array of <see cref="T:System.Type" /> objects representing the generic type arguments of the method where the token is in scope, or <see langword="null" /> if that method is not generic.</param>
+        <summary>Returns the type identified by the specified metadata token, in the context defined by the specified generic type parameters.</summary>
+        <returns>A <see cref="T:System.Type" /> object representing the type that is identified by the specified metadata token.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> method on the type where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. Use the <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=fullName> method on the method where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. It is always safe to provide these arguments, even when they are not needed.  
+  
+> [!NOTE]
+>  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
+  
+ For code that demonstrates token resolution using the generic context (that is, the generic type parameters of the generic type and/or the generic method in which the token is embedded) see the [ResolveMethod(Int32, Type\[\], Type\<xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="metadataToken" /> is not a token for a type in the scope of the current module.  
+  
+ -or-  
+  
+ <paramref name="metadataToken" /> is a <see langword="TypeSpec" /> whose signature contains element type <see langword="var" /> (a type parameter of a generic type) or <see langword="mvar" /> (a type parameter of a generic method), and the necessary generic type arguments were not supplied for either or both of <paramref name="genericTypeArguments" /> and <paramref name="genericMethodArguments" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="metadataToken" /> is not a valid token in the scope of the current module.</exception>
       </Docs>
     </Member>
     <Member MemberName="ScopeName">
@@ -1465,9 +2101,25 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a string representing the name of the module.</summary>
+        <value>The module name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `ScopeName` property is not used by the common language runtime, but you can use it to store any string you want in the property when you emit a module using the metadata APIs. Reflection itself does not allow you to set the `ScopeName` property.  
+  
+   
+  
+## Examples  
+ This example shows the effect of the `ScopeName`, `FullyQualifiedName`, and `Name` properties.  
+  
+ [!code-cpp[Classic Module.ScopeName Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic Module.ScopeName Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic Module.ScopeName Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic Module.ScopeName Example/CS/source.cs#1)]
+ [!code-vb[Classic Module.ScopeName Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic Module.ScopeName Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Reflection.ICustomAttributeProvider.GetCustomAttributes">
@@ -1560,13 +2212,21 @@
         <Parameter Name="rgDispId" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="riid">To be added.</param>
-        <param name="rgszNames">To be added.</param>
-        <param name="cNames">To be added.</param>
-        <param name="lcid">To be added.</param>
-        <param name="rgDispId">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="riid">Reserved for future use. Must be IID_NULL.</param>
+        <param name="rgszNames">Passed-in array of names to be mapped.</param>
+        <param name="cNames">Count of the names to be mapped.</param>
+        <param name="lcid">The locale context in which to interpret the names.</param>
+        <param name="rgDispId">Caller-allocated array that receives the IDs corresponding to the names.</param>
+        <summary>Maps a set of names to a corresponding set of dispatch identifiers.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetIDsOfNames`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException">Late-bound access using the COM <c>IDispatch</c> interface is not supported.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.InteropServices._Module.GetTypeInfo">
@@ -1587,11 +2247,19 @@
         <Parameter Name="ppTInfo" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="iTInfo">To be added.</param>
-        <param name="lcid">To be added.</param>
-        <param name="ppTInfo">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="iTInfo">The type information to return.</param>
+        <param name="lcid">The locale identifier for the type information.</param>
+        <param name="ppTInfo">Receives a pointer to the requested type information object.</param>
+        <summary>Retrieves the type information for an object, which can then be used to get the type information for an interface.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfo`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException">Late-bound access using the COM <c>IDispatch</c> interface is not supported.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.InteropServices._Module.GetTypeInfoCount">
@@ -1610,9 +2278,17 @@
         <Parameter Name="pcTInfo" Type="System.UInt32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="pcTInfo">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="pcTInfo">Points to a location that receives the number of type information interfaces provided by the object.</param>
+        <summary>Retrieves the number of type information interfaces that an object provides (either 0 or 1).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfoCount`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException">Late-bound access using the COM <c>IDispatch</c> interface is not supported.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.InteropServices._Module.Invoke">
@@ -1638,16 +2314,24 @@
         <Parameter Name="puArgErr" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="dispIdMember">To be added.</param>
-        <param name="riid">To be added.</param>
-        <param name="lcid">To be added.</param>
-        <param name="wFlags">To be added.</param>
-        <param name="pDispParams">To be added.</param>
-        <param name="pVarResult">To be added.</param>
-        <param name="pExcepInfo">To be added.</param>
-        <param name="puArgErr">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="dispIdMember">Identifies the member.</param>
+        <param name="riid">Reserved for future use. Must be IID_NULL.</param>
+        <param name="lcid">The locale context in which to interpret arguments.</param>
+        <param name="wFlags">Flags describing the context of the call.</param>
+        <param name="pDispParams">Pointer to a structure containing an array of arguments, an array of argument DispIDs for named arguments, and counts for the number of elements in the arrays.</param>
+        <param name="pVarResult">Pointer to the location where the result is to be stored.</param>
+        <param name="pExcepInfo">Pointer to a structure that contains exception information.</param>
+        <param name="puArgErr">The index of the first argument that has an error.</param>
+        <summary>Provides access to properties and methods exposed by an object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::Invoke`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException">Late-bound access using the COM <c>IDispatch</c> interface is not supported.</exception>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1675,9 +2359,20 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the name of the module.</summary>
+        <returns>A <see langword="String" /> representing the name of this module.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates a use of the `ToString` method.  
+  
+ [!code-cpp[System.Reflection.Module.ToString Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Module.ToString Example/CPP/class1.cpp#1)]
+ [!code-csharp[System.Reflection.Module.ToString Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Module.ToString Example/CS/class1.cs#1)]
+ [!code-vb[System.Reflection.Module.ToString Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Module.ToString Example/VB/class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

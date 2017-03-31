@@ -1,9 +1,13 @@
 ---
 uid: System.Collections.Generic.IComparer`1
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.Generic.IComparer`1.Compare(`0,`0)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

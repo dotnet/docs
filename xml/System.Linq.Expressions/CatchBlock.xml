@@ -27,8 +27,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a catch statement in a try block.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Linq.Expressions.Expression.Catch%2A> methods can be used to create a <xref:System.Linq.Expressions.CatchBlock>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Body">
@@ -55,8 +62,8 @@
         <ReturnType>System.Linq.Expressions.Expression</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the body of the catch block.</summary>
+        <value>The <see cref="T:System.Linq.Expressions.Expression" /> object representing the catch body.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,8 +91,8 @@
         <ReturnType>System.Linq.Expressions.Expression</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the body of the <see cref="T:System.Linq.Expressions.CatchBlock" /> filter.</summary>
+        <value>The <see cref="T:System.Linq.Expressions.Expression" /> object representing the body of the <see cref="T:System.Linq.Expressions.CatchBlock" /> filter.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,8 +120,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type of <see cref="T:System.Exception" /> this handler catches.</summary>
+        <value>The <see cref="T:System.Type" /> object representing the type of <see cref="T:System.Exception" /> this handler catches.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,8 +150,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a <see cref="T:System.String" /> that represents the current <see cref="T:System.Object" />.</summary>
+        <returns>A <see cref="T:System.String" /> that represents the current <see cref="T:System.Object" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -177,11 +184,11 @@
         <Parameter Name="body" Type="System.Linq.Expressions.Expression" />
       </Parameters>
       <Docs>
-        <param name="variable">To be added.</param>
-        <param name="filter">To be added.</param>
-        <param name="body">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="variable">The <see cref="P:System.Linq.Expressions.CatchBlock.Variable" /> property of the result.</param>
+        <param name="filter">The <see cref="P:System.Linq.Expressions.CatchBlock.Filter" /> property of the result.</param>
+        <param name="body">The <see cref="P:System.Linq.Expressions.CatchBlock.Body" /> property of the result.</param>
+        <summary>Creates a new expression that is like this one, but using the supplied children. If all of the children are the same, it will return this expression.</summary>
+        <returns>This expression if no children are changed or an expression with the updated children.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -209,8 +216,8 @@
         <ReturnType>System.Linq.Expressions.ParameterExpression</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a reference to the <see cref="T:System.Exception" /> object caught by this handler.</summary>
+        <value>The <see cref="T:System.Linq.Expressions.ParameterExpression" /> object representing a reference to the <see cref="T:System.Exception" /> object caught by this handler.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

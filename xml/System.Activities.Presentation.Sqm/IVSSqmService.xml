@@ -8,7 +8,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies information about the IVSSqmService.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,10 +30,10 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="dataPointId">To be added.</param>
-        <param name="data">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="dataPointId">The data point identifier.</param>
+        <param name="data">The data.</param>
+        <param name="count">The number of elements in the array.</param>
+        <summary>Adds an array to the stream.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,9 +54,9 @@
         <Parameter Name="value" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="dataPointId">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="dataPointId">The data point identifier.</param>
+        <param name="value">The value of the item.</param>
+        <summary>Adds an item to the stream.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,9 +77,9 @@
         <Parameter Name="value" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="dataPointId">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="dataPointId">The data point identifier.</param>
+        <param name="value">The value of the data point.</param>
+        <summary>Sets a data point item to the stream.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

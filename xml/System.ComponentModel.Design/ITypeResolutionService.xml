@@ -13,8 +13,24 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides an interface to retrieve an assembly or type by name.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This service is used to load types at design time.  
+  
+   
+  
+## Examples  
+ The following example control provides an interface to call methods of the <xref:System.ComponentModel.Design.ITypeResolutionService> from design mode.  
+  
+ [!code-cpp[ITypeResolutionServiceExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ITypeResolutionServiceExample/CPP/ityperesolutionservicecontrol.cpp#1)]
+ [!code-csharp[ITypeResolutionServiceExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ITypeResolutionServiceExample/CS/ityperesolutionservicecontrol.cs#1)]
+ [!code-vb[ITypeResolutionServiceExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ITypeResolutionServiceExample/VB/ityperesolutionservicecontrol.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="GetAssembly">
@@ -38,9 +54,9 @@
         <Parameter Name="name" Type="System.Reflection.AssemblyName" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the assembly to retrieve.</param>
+        <summary>Gets the requested assembly.</summary>
+        <returns>An instance of the requested assembly, or <see langword="null" /> if no assembly can be located.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,10 +82,11 @@
         <Parameter Name="throwOnError" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="throwOnError">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the assembly to retrieve.</param>
+        <param name="throwOnError">
+          <see langword="true" /> if this method should throw an exception if the assembly cannot be located; otherwise, <see langword="false" />, and this method returns <see langword="null" /> if the assembly cannot be located.</param>
+        <summary>Gets the requested assembly.</summary>
+        <returns>An instance of the requested assembly, or <see langword="null" /> if no assembly can be located.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,9 +111,9 @@
         <Parameter Name="name" Type="System.Reflection.AssemblyName" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the assembly.</param>
+        <summary>Gets the path to the file from which the assembly was loaded.</summary>
+        <returns>The path to the file from which the assembly was loaded.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,9 +138,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the type. If the type name is not a fully qualified name that indicates an assembly, this service will search its internal set of referenced assemblies.</param>
+        <summary>Loads a type with the specified name.</summary>
+        <returns>An instance of <see cref="T:System.Type" /> that corresponds to the specified name, or <see langword="null" /> if no type can be found.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,11 +166,19 @@
         <Parameter Name="throwOnError" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="throwOnError">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the type. If the type name is not a fully qualified name that indicates an assembly, this service will search its internal set of referenced assemblies.</param>
+        <param name="throwOnError">
+          <see langword="true" /> if this method should throw an exception if the assembly cannot be located; otherwise, <see langword="false" />, and this method returns <see langword="null" /> if the assembly cannot be located.</param>
+        <summary>Loads a type with the specified name.</summary>
+        <returns>An instance of <see cref="T:System.Type" /> that corresponds to the specified name, or <see langword="null" /> if no type can be found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the type cannot be loaded and the `throwOnError` parameter is `true`, this will throw an exception.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetType">
@@ -179,12 +204,21 @@
         <Parameter Name="ignoreCase" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="throwOnError">To be added.</param>
-        <param name="ignoreCase">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the type. If the type name is not a fully qualified name that indicates an assembly, this service will search its internal set of referenced assemblies.</param>
+        <param name="throwOnError">
+          <see langword="true" /> if this method should throw an exception if the assembly cannot be located; otherwise, <see langword="false" />, and this method returns <see langword="null" /> if the assembly cannot be located.</param>
+        <param name="ignoreCase">
+          <see langword="true" /> to ignore case when searching for types; otherwise, <see langword="false" />.</param>
+        <summary>Loads a type with the specified name.</summary>
+        <returns>An instance of <see cref="T:System.Type" /> that corresponds to the specified name, or <see langword="null" /> if no type can be found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the type cannot be loaded and the `throwOnError` parameter is `true`, this will throw an exception.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReferenceAssembly">
@@ -208,9 +242,16 @@
         <Parameter Name="name" Type="System.Reflection.AssemblyName" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="name">An <see cref="T:System.Reflection.AssemblyName" /> that indicates the assembly to reference.</param>
+        <summary>Adds a reference to the specified assembly.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Once a reference to an assembly has been added to this service, this service can load types from names that do not specify an assembly.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

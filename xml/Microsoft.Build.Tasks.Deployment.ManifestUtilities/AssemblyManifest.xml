@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Describes a Win32 assembly manifest.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,7 +34,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyManifest" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,8 +56,8 @@
         <ReturnType>Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the set of external proxy stubs referenced by the manifest for isolated applications and Reg-Free COM.</summary>
+        <value>Returns the set of external proxy stubs referenced by the manifest for isolated applications and Reg-Free COM.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,8 +85,8 @@
         <ReturnType>Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the set of external proxy stubs referenced by the manifest for isolated applications and Reg-Free COM in XML format.</summary>
+        <value>Returns the set of external proxy stubs referenced by the manifest for isolated applications and Reg-Free COM in XML format.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

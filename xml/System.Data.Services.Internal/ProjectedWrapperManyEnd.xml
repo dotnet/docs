@@ -16,8 +16,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>an instance of this class is assigned to the last <see cref="P:System.Data.Services.Internal.ProjectedWrapperMany.Next" /> in the list.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is needed to integrate correctly with the Entity Framework provider, which cannot project a `null` value into the `Next` property.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +38,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.Data.Services.Internal.ProjectedWrapperManyEnd" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

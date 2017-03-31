@@ -1,4 +1,4 @@
 ---
 uid: Microsoft.JScript.CmdLineError
-internalonly: False
+ms.author: "mikejo"
 ---

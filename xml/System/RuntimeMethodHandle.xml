@@ -32,7 +32,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+      <see cref="T:System.RuntimeMethodHandle" /> is a handle to the internal metadata representation of a method.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -69,9 +70,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">A <see cref="T:System.Object" /> to compare to this instance.</param>
+        <summary>Indicates whether this instance is equal to a specified object.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="obj" /> is a <see cref="T:System.RuntimeMethodHandle" /> and equal to the value of this instance; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,9 +110,10 @@
         <Parameter Name="handle" Type="System.RuntimeMethodHandle" />
       </Parameters>
       <Docs>
-        <param name="handle">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="handle">A <see cref="T:System.RuntimeMethodHandle" /> to compare to this instance.</param>
+        <summary>Indicates whether this instance is equal to a specified <see cref="T:System.RuntimeMethodHandle" />.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="handle" /> is equal to the value of this instance; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,9 +136,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Obtains a pointer to the method represented by this instance.</summary>
+        <returns>A pointer to the method represented by this instance.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.SecurityException">The caller does not have the necessary permission to perform this operation.</exception>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -164,8 +169,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code for this instance.</summary>
+        <returns>A 32-bit signed integer hash code.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -191,10 +196,24 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="info">The object to populate with serialization information.</param>
+        <param name="context">(Reserved) The place to store and retrieve serialized data.</param>
+        <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with the data necessary to deserialize the field represented by this instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `context` parameter is reserved; it does not currently participate in this operation.  
+  
+ For more information, see the <xref:System.Runtime.Serialization.SerializationInfo.AddValue%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="info" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Runtime.Serialization.SerializationException">
+          <see cref="P:System.RuntimeMethodHandle.Value" /> is invalid.</exception>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -226,11 +245,14 @@
         <Parameter Name="right" Type="System.RuntimeMethodHandle" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="left">A <see cref="T:System.RuntimeMethodHandle" /> to compare to <c>right</c>.</param>
+        <param name="right">A <see cref="T:System.RuntimeMethodHandle" /> to compare to <c>left</c>.</param>
+        <summary>Indicates whether two instances of <see cref="T:System.RuntimeMethodHandle" /> are equal.</summary>
+        <returns>
+          <see langword="true" /> if the value of <paramref name="left" /> is equal to the value of <paramref name="right" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.RuntimeMethodHandle.Equals%28System.RuntimeMethodHandle%2CSystem.RuntimeMethodHandle%29?displayProperty=fullName>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -262,11 +284,14 @@
         <Parameter Name="right" Type="System.RuntimeMethodHandle" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="left">A <see cref="T:System.RuntimeMethodHandle" /> to compare to <c>right</c>.</param>
+        <param name="right">A <see cref="T:System.RuntimeMethodHandle" /> to compare to <c>left</c>.</param>
+        <summary>Indicates whether two instances of <see cref="T:System.RuntimeMethodHandle" /> are not equal.</summary>
+        <returns>
+          <see langword="true" /> if the value of <paramref name="left" /> is unequal to the value of <paramref name="right" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.RuntimeMethod%2A> Handle.Compare(System.RuntimeMethodHandle,System.RuntimeMethodHandle)?qualifyHint=True&autoUpgrade=False]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -287,9 +312,10 @@
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the value of this instance.</summary>
+        <value>A <see cref="T:System.RuntimeMethodHandle" /> that is the internal metadata representation of a method.</value>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
   </Members>

@@ -20,8 +20,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a wrapper around Passport Authentication services. This class cannot be inherited. This class is deprecated.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,8 +42,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Creates a new instance of the <see cref="T:System.Web.Security.PassportAuthenticationModule" /> class. This class is deprecated.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Authenticate">
@@ -52,8 +66,15 @@
         <ReturnType>System.Web.Security.PassportAuthenticationEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Raised during authentication. This is a Global.asax event that must be named <see langword="PassportAuthentication_OnAuthenticate" />. This class is deprecated</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -70,8 +91,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Disposes of the module derived from <see cref="T:System.Web.IHttpModule" /> when called by the <see cref="T:System.Web.HttpRuntime" />. This class is deprecated.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Init">
@@ -90,9 +118,16 @@
         <Parameter Name="app" Type="System.Web.HttpApplication" />
       </Parameters>
       <Docs>
-        <param name="app">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="app">The <see cref="T:System.Web.HttpApplication" /> module</param>
+        <summary>Initializes the module derived from <see cref="T:System.Web.IHttpModule" /> when called by the <see cref="T:System.Web.HttpRuntime" />. This class is deprecated</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

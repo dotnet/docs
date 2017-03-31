@@ -1,24 +1,24 @@
 ---
 uid: System.Windows.Markup.XmlnsDefinitionAttribute
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XmlnsDefinitionAttribute.ClrNamespace
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XmlnsDefinitionAttribute.#ctor(System.String,System.String)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XmlnsDefinitionAttribute.XmlNamespace
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XmlnsDefinitionAttribute.AssemblyName
-internalonly: False
+manager: "martinek"
 ---

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents an XML element that specifies a binding used to communicate with WS-I Basic Profile 1.1-conformant Web Services like ASMX-based services or to accept messages from ASMX-based clients.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.BasicHttpBindingElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the binding element.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.BasicHttpBindingElement" /> class with a name.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +61,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type of the binding element.</summary>
+        <value>A type that specifies the binding element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +82,8 @@
         <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
       </Parameters>
       <Docs>
-        <param name="binding">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="binding">A collection of binding elements.</param>
+        <summary>Initializes this binding configuration element with the content of the specified binding collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,8 +105,8 @@
         <ReturnType>System.ServiceModel.WSMessageEncoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets whether MTOM or text/XML is used to encode SOAP messages.</summary>
+        <value>The value of <see cref="T:System.ServiceModel.WSMessageEncoding" /> that indicates that MTOM or text/XML is used to encode SOAP messages. The default value is <see cref="F:System.ServiceModel.WSMessageEncoding.Text" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -126,8 +126,8 @@
         <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
       </Parameters>
       <Docs>
-        <param name="binding">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="binding">A collection of binding elements.</param>
+        <summary>Called when the content of a specified binding collection is applied to this binding configuration element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,8 +144,8 @@
         <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.Configuration.ConfigurationPropertyCollection" /> instance that contains a collection of <see cref="T:System.Configuration.ConfigurationProperty" /> objects that can be attributes or <see cref="T:System.Configuration.ConfigurationElement" /> objects of this binding configuration element.</summary>
+        <value>A <see cref="T:System.Configuration.ConfigurationPropertyCollection" /> instance that contains a collection of <see cref="T:System.Configuration.ConfigurationProperty" /> objects that can be attributes or <see cref="T:System.Configuration.ConfigurationElement" /> objects of this binding configuration element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,8 +167,8 @@
         <ReturnType>System.ServiceModel.Configuration.BasicHttpSecurityElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the type of security to be used with this binding.</summary>
+        <value>The <see cref="T:System.ServiceModel.Configuration.BasicHttpSecurityElement" /> that specifies the type of security to be used with this binding.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

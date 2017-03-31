@@ -1,24 +1,34 @@
 ---
 uid: System.Workflow.ComponentModel.Design.SequenceDesignerAccessibleObject
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.SequenceDesignerAccessibleObject.#ctor(System.Workflow.ComponentModel.Design.SequentialActivityDesigner)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.SequenceDesignerAccessibleObject.Navigate(System.Windows.Forms.AccessibleNavigation)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.SequenceDesignerAccessibleObject.GetChild(System.Int32)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.SequenceDesignerAccessibleObject.GetChildCount
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

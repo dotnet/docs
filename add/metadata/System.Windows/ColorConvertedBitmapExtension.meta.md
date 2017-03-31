@@ -1,19 +1,34 @@
 ---
 uid: System.Windows.ColorConvertedBitmapExtension
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.ColorConvertedBitmapExtension.#ctor(System.Object)
-internalonly: False
----
-
----
-uid: System.Windows.ColorConvertedBitmapExtension.ProvideValue(System.IServiceProvider)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.ColorConvertedBitmapExtension.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.ColorConvertedBitmapExtension.ProvideValue(System.IServiceProvider)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.ColorConvertedBitmapExtension.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

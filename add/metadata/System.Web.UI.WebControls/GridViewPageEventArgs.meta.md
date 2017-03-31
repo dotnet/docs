@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.WebControls.GridViewPageEventArgs
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.GridViewPageEventArgs.#ctor(System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.GridViewPageEventArgs.NewPageIndex
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -15,8 +15,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides extension methods for tuples to interoperate with language support for tuples in C#.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Although these methods can be called directly, they are primarily intended for use by the C# compiler in creating and deconstructing tuples.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Deconstruct&lt;T1&gt;">
@@ -43,11 +50,18 @@
         <Parameter Name="item1" Type="T1&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <param name="item1">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <typeparam name="T1">The type of the single element.</typeparam>
+        <param name="value">The 1-element tuple to deconstruct into a separate variable.</param>
+        <param name="item1">The value of the single element.</param>
+        <summary>Deconstructs a tuple with 1 element into a separate variable.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is implemented primarily to support the tuple language features in C#.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Deconstruct&lt;T1,T2&gt;">
@@ -76,13 +90,20 @@
         <Parameter Name="item2" Type="T2&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <param name="item1">To be added.</param>
-        <param name="item2">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <param name="value">The 2-element tuple to deconstruct into 2 separate variables.</param>
+        <param name="item1">The value of the first element.</param>
+        <param name="item2">The value of the second element.</param>
+        <summary>Deconstructs a tuple with 2 elements into separate variables.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is implemented primarily to support the tuple language features in C#.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Deconstruct&lt;T1,T2,T3&gt;">
@@ -113,15 +134,22 @@
         <Parameter Name="item3" Type="T3&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <param name="item1">To be added.</param>
-        <param name="item2">To be added.</param>
-        <param name="item3">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <param name="value">The 3-element tuple to deconstruct into 3 separate variables.</param>
+        <param name="item1">The value of the first element.</param>
+        <param name="item2">The value of the second element.</param>
+        <param name="item3">The value of the third element.</param>
+        <summary>Deconstructs a tuple with 3 elements into separate variables.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is implemented primarily to support the tuple language features in C#.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Deconstruct&lt;T1,T2,T3,T4&gt;">
@@ -154,17 +182,24 @@
         <Parameter Name="item4" Type="T4&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <param name="item1">To be added.</param>
-        <param name="item2">To be added.</param>
-        <param name="item3">To be added.</param>
-        <param name="item4">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <param name="value">The 4-element tuple to deconstruct into 4 separate variables.</param>
+        <param name="item1">The value of the first element.</param>
+        <param name="item2">The value of the second element.</param>
+        <param name="item3">The value of the third element.</param>
+        <param name="item4">The value of the fourth element.</param>
+        <summary>Deconstructs a tuple with 4 elements into separate variables.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is implemented primarily to support the tuple language features in C#.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Deconstruct&lt;T1,T2,T3,T4,T5&gt;">
@@ -199,19 +234,26 @@
         <Parameter Name="item5" Type="T5&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <param name="item1">To be added.</param>
-        <param name="item2">To be added.</param>
-        <param name="item3">To be added.</param>
-        <param name="item4">To be added.</param>
-        <param name="item5">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <param name="value">The 5-element tuple to deconstruct into 5 separate variables.</param>
+        <param name="item1">The value of the first element.</param>
+        <param name="item2">The value of the second element.</param>
+        <param name="item3">The value of the third element.</param>
+        <param name="item4">The value of the fourth element.</param>
+        <param name="item5">The value of the fifth element.</param>
+        <summary>Deconstructs a tuple with 5 elements into separate variables.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is implemented primarily to support the tuple language features in C#.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Deconstruct&lt;T1,T2,T3,T4,T5,T6&gt;">
@@ -248,21 +290,28 @@
         <Parameter Name="item6" Type="T6&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <param name="item1">To be added.</param>
-        <param name="item2">To be added.</param>
-        <param name="item3">To be added.</param>
-        <param name="item4">To be added.</param>
-        <param name="item5">To be added.</param>
-        <param name="item6">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <param name="value">The 6-element tuple to deconstruct into 6 separate variables.</param>
+        <param name="item1">The value of the first element.</param>
+        <param name="item2">The value of the second element.</param>
+        <param name="item3">The value of the third element.</param>
+        <param name="item4">The value of the fourth element.</param>
+        <param name="item5">The value of the fifth element.</param>
+        <param name="item6">The value of the sixth element.</param>
+        <summary>Deconstructs a tuple with 6 elements into separate variables.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is implemented primarily to support the tuple language features in C#.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Deconstruct&lt;T1,T2,T3,T4,T5,T6,T7&gt;">
@@ -301,23 +350,30 @@
         <Parameter Name="item7" Type="T7&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <param name="item1">To be added.</param>
-        <param name="item2">To be added.</param>
-        <param name="item3">To be added.</param>
-        <param name="item4">To be added.</param>
-        <param name="item5">To be added.</param>
-        <param name="item6">To be added.</param>
-        <param name="item7">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <typeparam name="T7">The type of the seventh element.</typeparam>
+        <param name="value">The 7-element tuple to deconstruct into 7 separate variables.</param>
+        <param name="item1">The value of the first element.</param>
+        <param name="item2">The value of the second element.</param>
+        <param name="item3">The value of the third element.</param>
+        <param name="item4">The value of the fourth element.</param>
+        <param name="item5">The value of the fifth element.</param>
+        <param name="item6">The value of the sixth element.</param>
+        <param name="item7">The value of the seventh element.</param>
+        <summary>Deconstructs a tuple with 7 elements into separate variables.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is implemented primarily to support the tuple language features in C#.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Deconstruct&lt;T1,T2,T3,T4,T5,T6,T7,T8&gt;">
@@ -358,25 +414,34 @@
         <Parameter Name="item8" Type="T8&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <param name="item1">To be added.</param>
-        <param name="item2">To be added.</param>
-        <param name="item3">To be added.</param>
-        <param name="item4">To be added.</param>
-        <param name="item5">To be added.</param>
-        <param name="item6">To be added.</param>
-        <param name="item7">To be added.</param>
-        <param name="item8">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <typeparam name="T7">The type of the seventh element.</typeparam>
+        <typeparam name="T8">The type of the eighth element.</typeparam>
+        <param name="value">The 8-element tuple to deconstruct into 8 separate variables.</param>
+        <param name="item1">The value of the first element.</param>
+        <param name="item2">The value of the second element.</param>
+        <param name="item3">The value of the third element.</param>
+        <param name="item4">The value of the fourth element.</param>
+        <param name="item5">The value of the fifth element.</param>
+        <param name="item6">The value of the sixth element.</param>
+        <param name="item7">The value of the seventh element.</param>
+        <param name="item8">The value of the eighth element, or <c>value</c><see langword=".Rest.Item1" />.</param>
+        <summary>Deconstructs a tuple with 8 elements into separate variables.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is implemented primarily to support the tuple language features in C#.  
+  
+ Because the .NET Framework tuple types implement tuples with more than 7 elements by nesting a tuple in <xref:System.Tuple%608.Rest%2A?displayProperty=fullName>,  `item8` is an element in a nested tuple.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Deconstruct&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9&gt;">
@@ -419,27 +484,36 @@
         <Parameter Name="item9" Type="T9&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <param name="item1">To be added.</param>
-        <param name="item2">To be added.</param>
-        <param name="item3">To be added.</param>
-        <param name="item4">To be added.</param>
-        <param name="item5">To be added.</param>
-        <param name="item6">To be added.</param>
-        <param name="item7">To be added.</param>
-        <param name="item8">To be added.</param>
-        <param name="item9">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <typeparam name="T7">The type of the seventh element.</typeparam>
+        <typeparam name="T8">The type of the eighth element.</typeparam>
+        <typeparam name="T9">The type of the ninth element.</typeparam>
+        <param name="value">The 9-element tuple to deconstruct into 9 separate variables.</param>
+        <param name="item1">The value of the first element.</param>
+        <param name="item2">The value of the second element.</param>
+        <param name="item3">The value of the third element.</param>
+        <param name="item4">The value of the fourth element.</param>
+        <param name="item5">The value of the fifth element.</param>
+        <param name="item6">The value of the sixth element.</param>
+        <param name="item7">The value of the seventh element.</param>
+        <param name="item8">The value of the eighth element, or <c>value</c><see langword=".Rest.Item1" />.</param>
+        <param name="item9">The value of the ninth element, or <c>value</c><see langword=".Rest.Item2" />.</param>
+        <summary>Deconstructs a tuple with 9 elements into separate variables.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is implemented primarily to support the tuple language features in C#.  
+  
+ Because the .NET Framework tuple types implement tuples with more than 7 elements by nesting a tuple in <xref:System.Tuple%608.Rest%2A?displayProperty=fullName>,  `item8` and `item9` are elements of nested tuples.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Deconstruct&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10&gt;">
@@ -484,29 +558,38 @@
         <Parameter Name="item10" Type="T10&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <param name="item1">To be added.</param>
-        <param name="item2">To be added.</param>
-        <param name="item3">To be added.</param>
-        <param name="item4">To be added.</param>
-        <param name="item5">To be added.</param>
-        <param name="item6">To be added.</param>
-        <param name="item7">To be added.</param>
-        <param name="item8">To be added.</param>
-        <param name="item9">To be added.</param>
-        <param name="item10">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <typeparam name="T7">The type of the seventh element.</typeparam>
+        <typeparam name="T8">The type of the eighth element.</typeparam>
+        <typeparam name="T9">The type of the ninth element.</typeparam>
+        <typeparam name="T10">The type of the tenth element.</typeparam>
+        <param name="value">The 10-element tuple to deconstruct into 10 separate variables.</param>
+        <param name="item1">The value of the first element.</param>
+        <param name="item2">The value of the second element.</param>
+        <param name="item3">The value of the third element.</param>
+        <param name="item4">The value of the fourth element.</param>
+        <param name="item5">The value of the fifth element.</param>
+        <param name="item6">The value of the sixth element.</param>
+        <param name="item7">The value of the seventh element.</param>
+        <param name="item8">The value of the eighth element, or <c>value</c><see langword=".Rest.Item1" />.</param>
+        <param name="item9">The value of the ninth element, or <c>value</c><see langword=".Rest.Item2" />.</param>
+        <param name="item10">The value of the tenth element, or <c>value</c><see langword=".Rest.Item3" />.</param>
+        <summary>Deconstructs a tuple with 10 elements into separate variables.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is implemented primarily to support the tuple language features in C#.  
+  
+ Because the .NET Framework tuple types implement tuples with more than 7 elements by nesting a tuple in <xref:System.Tuple%608.Rest%2A?displayProperty=fullName>,  `item8` through `item10` are elements of nested tuples.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Deconstruct&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11&gt;">
@@ -553,31 +636,40 @@
         <Parameter Name="item11" Type="T11&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <typeparam name="T11">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <param name="item1">To be added.</param>
-        <param name="item2">To be added.</param>
-        <param name="item3">To be added.</param>
-        <param name="item4">To be added.</param>
-        <param name="item5">To be added.</param>
-        <param name="item6">To be added.</param>
-        <param name="item7">To be added.</param>
-        <param name="item8">To be added.</param>
-        <param name="item9">To be added.</param>
-        <param name="item10">To be added.</param>
-        <param name="item11">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <typeparam name="T7">The type of the seventh element.</typeparam>
+        <typeparam name="T8">The type of the eighth element.</typeparam>
+        <typeparam name="T9">The type of the ninth element.</typeparam>
+        <typeparam name="T10">The type of the tenth element.</typeparam>
+        <typeparam name="T11">The type of the eleventh element.</typeparam>
+        <param name="value">The 11-element tuple to deconstruct into 11 separate variables.</param>
+        <param name="item1">The value of the first element.</param>
+        <param name="item2">The value of the second element.</param>
+        <param name="item3">The value of the third element.</param>
+        <param name="item4">The value of the fourth element.</param>
+        <param name="item5">The value of the fifth element.</param>
+        <param name="item6">The value of the sixth element.</param>
+        <param name="item7">The value of the seventh element.</param>
+        <param name="item8">The value of the eighth element, or <c>value</c><see langword=".Rest.Item1" />.</param>
+        <param name="item9">The value of the ninth element, or <c>value</c><see langword=".Rest.Item2" />.</param>
+        <param name="item10">The value of the tenth element, or <c>value</c><see langword=".Rest.Item3" />.</param>
+        <param name="item11">The value of the eleventh element, or <c>value</c><see langword=".Rest.Item4" />.</param>
+        <summary>Deconstructs a tuple with 11 elements into separate variables.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is implemented primarily to support the tuple language features in C#.  
+  
+ Because the .NET Framework tuple types implement tuples with more than 7 elements by nesting a tuple in <xref:System.Tuple%608.Rest%2A?displayProperty=fullName>,  `item8` through `item11` are elements of nested tuples.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Deconstruct&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12&gt;">
@@ -626,33 +718,42 @@
         <Parameter Name="item12" Type="T12&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <typeparam name="T11">To be added.</typeparam>
-        <typeparam name="T12">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <param name="item1">To be added.</param>
-        <param name="item2">To be added.</param>
-        <param name="item3">To be added.</param>
-        <param name="item4">To be added.</param>
-        <param name="item5">To be added.</param>
-        <param name="item6">To be added.</param>
-        <param name="item7">To be added.</param>
-        <param name="item8">To be added.</param>
-        <param name="item9">To be added.</param>
-        <param name="item10">To be added.</param>
-        <param name="item11">To be added.</param>
-        <param name="item12">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <typeparam name="T7">The type of the seventh element.</typeparam>
+        <typeparam name="T8">The type of the eighth element.</typeparam>
+        <typeparam name="T9">The type of the ninth element.</typeparam>
+        <typeparam name="T10">The type of the tenth element.</typeparam>
+        <typeparam name="T11">The type of the eleventh element.</typeparam>
+        <typeparam name="T12">The type of the twelfth element.</typeparam>
+        <param name="value">The 12-element tuple to deconstruct into 12 separate variables.</param>
+        <param name="item1">The value of the first element.</param>
+        <param name="item2">The value of the second element.</param>
+        <param name="item3">The value of the third element.</param>
+        <param name="item4">The value of the fourth element.</param>
+        <param name="item5">The value of the fifth element.</param>
+        <param name="item6">The value of the sixth element.</param>
+        <param name="item7">The value of the seventh element.</param>
+        <param name="item8">The value of the eighth element, or <c>value</c><see langword=".Rest.Item1" />.</param>
+        <param name="item9">The value of the ninth element, or <c>value</c><see langword=".Rest.Item2" />.</param>
+        <param name="item10">The value of the tenth element, or <c>value</c><see langword=".Rest.Item3" />.</param>
+        <param name="item11">The value of the eleventh element, or <c>value</c><see langword=".Rest.Item4" />.</param>
+        <param name="item12">The value of the twelfth element, or <c>value</c><see langword=".Rest.Item5" />.</param>
+        <summary>Deconstructs a tuple with 12 elements into separate variables.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is implemented primarily to support the tuple language features in C#.  
+  
+ Because the .NET Framework tuple types implement tuples with more than 7 elements by nesting a tuple in <xref:System.Tuple%608.Rest%2A?displayProperty=fullName>,  `item8` through `item12` are elements of nested tuples.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Deconstruct&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13&gt;">
@@ -703,35 +804,44 @@
         <Parameter Name="item13" Type="T13&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <typeparam name="T11">To be added.</typeparam>
-        <typeparam name="T12">To be added.</typeparam>
-        <typeparam name="T13">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <param name="item1">To be added.</param>
-        <param name="item2">To be added.</param>
-        <param name="item3">To be added.</param>
-        <param name="item4">To be added.</param>
-        <param name="item5">To be added.</param>
-        <param name="item6">To be added.</param>
-        <param name="item7">To be added.</param>
-        <param name="item8">To be added.</param>
-        <param name="item9">To be added.</param>
-        <param name="item10">To be added.</param>
-        <param name="item11">To be added.</param>
-        <param name="item12">To be added.</param>
-        <param name="item13">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <typeparam name="T7">The type of the seventh element.</typeparam>
+        <typeparam name="T8">The type of the eighth element.</typeparam>
+        <typeparam name="T9">The type of the ninth element.</typeparam>
+        <typeparam name="T10">The type of the tenth element.</typeparam>
+        <typeparam name="T11">The type of the eleventh element.</typeparam>
+        <typeparam name="T12">The type of the twelfth element.</typeparam>
+        <typeparam name="T13">The type of the thirteenth element.</typeparam>
+        <param name="value">The 13-element tuple to deconstruct into 13 separate variables.</param>
+        <param name="item1">The value of the first element.</param>
+        <param name="item2">The value of the second element.</param>
+        <param name="item3">The value of the third element.</param>
+        <param name="item4">The value of the fourth element.</param>
+        <param name="item5">The value of the fifth element.</param>
+        <param name="item6">The value of the sixth element.</param>
+        <param name="item7">The value of the seventh element.</param>
+        <param name="item8">The value of the eighth element, or <c>value</c><see langword=".Rest.Item1" />.</param>
+        <param name="item9">The value of the ninth element, or <c>value</c><see langword=".Rest.Item2" />.</param>
+        <param name="item10">The value of the tenth element, or <c>value</c><see langword=".Rest.Item3" />.</param>
+        <param name="item11">The value of the eleventh element, or <c>value</c><see langword=".Rest.Item4" />.</param>
+        <param name="item12">The value of the twelfth element, or <c>value</c><see langword=".Rest.Item5" />.</param>
+        <param name="item13">The value of the thirteenth element, or <c>value</c><see langword=".Rest.Item6" />.</param>
+        <summary>Deconstructs a tuple with 13 elements into separate variables.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is implemented primarily to support the tuple language features in C#.  
+  
+ Because the .NET Framework tuple types implement tuples with more than 7 elements by nesting a tuple in <xref:System.Tuple%608.Rest%2A?displayProperty=fullName>,  `item8` through `item13` are elements of nested tuples.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Deconstruct&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14&gt;">
@@ -784,36 +894,36 @@
         <Parameter Name="item14" Type="T14&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <typeparam name="T11">To be added.</typeparam>
-        <typeparam name="T12">To be added.</typeparam>
-        <typeparam name="T13">To be added.</typeparam>
-        <typeparam name="T14">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <param name="item1">To be added.</param>
-        <param name="item2">To be added.</param>
-        <param name="item3">To be added.</param>
-        <param name="item4">To be added.</param>
-        <param name="item5">To be added.</param>
-        <param name="item6">To be added.</param>
-        <param name="item7">To be added.</param>
-        <param name="item8">To be added.</param>
-        <param name="item9">To be added.</param>
-        <param name="item10">To be added.</param>
-        <param name="item11">To be added.</param>
-        <param name="item12">To be added.</param>
-        <param name="item13">To be added.</param>
-        <param name="item14">To be added.</param>
-        <summary>To be added.</summary>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <typeparam name="T7">The type of the seventh element.</typeparam>
+        <typeparam name="T8">The type of the eighth element.</typeparam>
+        <typeparam name="T9">The type of the ninth element.</typeparam>
+        <typeparam name="T10">The type of the tenth element.</typeparam>
+        <typeparam name="T11">The type of the eleventh element.</typeparam>
+        <typeparam name="T12">The type of the twelfth element.</typeparam>
+        <typeparam name="T13">The type of the thirteenth element.</typeparam>
+        <typeparam name="T14">The type of the fourteenth element.</typeparam>
+        <param name="value">The 14-element tuple to deconstruct into 14 separate variables.</param>
+        <param name="item1">The value of the first element.</param>
+        <param name="item2">The value of the second element.</param>
+        <param name="item3">The value of the third element.</param>
+        <param name="item4">The value of the fourth element.</param>
+        <param name="item5">The value of the fifth element.</param>
+        <param name="item6">The value of the sixth element.</param>
+        <param name="item7">The value of the seventh element.</param>
+        <param name="item8">The value of the eighth element, or <c>value</c><see langword=".Rest.Item1" />.</param>
+        <param name="item9">The value of the ninth element, or <c>value</c><see langword=".Rest.Item2" />.</param>
+        <param name="item10">The value of the tenth element, or <c>value</c><see langword=".Rest.Item3" />.</param>
+        <param name="item11">The value of the eleventh element, or <c>value</c><see langword=".Rest.Item4" />.</param>
+        <param name="item12">The value of the twelfth element, or <c>value</c><see langword=".Rest.Item5" />.</param>
+        <param name="item13">The value of the thirteenth element, or <c>value</c><see langword=".Rest.Item6" />.</param>
+        <param name="item14">The value of the fourteenth element, or <c>value</c><see langword=".Rest.Item7" />.</param>
+        <summary>Deconstructs a tuple with 14 elements into separate variables.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -869,39 +979,48 @@
         <Parameter Name="item15" Type="T15&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <typeparam name="T11">To be added.</typeparam>
-        <typeparam name="T12">To be added.</typeparam>
-        <typeparam name="T13">To be added.</typeparam>
-        <typeparam name="T14">To be added.</typeparam>
-        <typeparam name="T15">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <param name="item1">To be added.</param>
-        <param name="item2">To be added.</param>
-        <param name="item3">To be added.</param>
-        <param name="item4">To be added.</param>
-        <param name="item5">To be added.</param>
-        <param name="item6">To be added.</param>
-        <param name="item7">To be added.</param>
-        <param name="item8">To be added.</param>
-        <param name="item9">To be added.</param>
-        <param name="item10">To be added.</param>
-        <param name="item11">To be added.</param>
-        <param name="item12">To be added.</param>
-        <param name="item13">To be added.</param>
-        <param name="item14">To be added.</param>
-        <param name="item15">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <typeparam name="T7">The type of the seventh element.</typeparam>
+        <typeparam name="T8">The type of the eighth element.</typeparam>
+        <typeparam name="T9">The type of the ninth element.</typeparam>
+        <typeparam name="T10">The type of the tenth element.</typeparam>
+        <typeparam name="T11">The type of the eleventh element.</typeparam>
+        <typeparam name="T12">The type of the twelfth element.</typeparam>
+        <typeparam name="T13">The type of the thirteenth element.</typeparam>
+        <typeparam name="T14">The type of the fourteenth element.</typeparam>
+        <typeparam name="T15">The type of the fifteenth element.</typeparam>
+        <param name="value">The 15-element tuple to deconstruct into 15 separate variables.</param>
+        <param name="item1">The value of the first element.</param>
+        <param name="item2">The value of the second element.</param>
+        <param name="item3">The value of the third element.</param>
+        <param name="item4">The value of the fourth element.</param>
+        <param name="item5">The value of the fifth element.</param>
+        <param name="item6">The value of the sixth element.</param>
+        <param name="item7">The value of the seventh element.</param>
+        <param name="item8">The value of the eighth element, or <c>value</c><see langword=".Rest.Item1" />.</param>
+        <param name="item9">The value of the ninth element, or <c>value</c><see langword=".Rest.Item2" />.</param>
+        <param name="item10">The value of the tenth element, or <c>value</c><see langword=".Rest.Item3" />.</param>
+        <param name="item11">The value of the eleventh element, or <c>value</c><see langword=".Rest.Item4" />.</param>
+        <param name="item12">The value of the twelfth element, or <c>value</c><see langword=".Rest.Item5" />.</param>
+        <param name="item13">The value of the thirteenth element, or <c>value</c><see langword=".Rest.Item6" />.</param>
+        <param name="item14">The value of the fourteenth element, or <c>value</c><see langword=".Rest.Item7" />.</param>
+        <param name="item15">The value of the fifteenth element, or <c>value</c><see langword=".Rest.Rest.Item1 " />.</param>
+        <summary>Deconstructs a tuple with 15 elements into separate variables.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is implemented primarily to support the tuple language features in C#.  
+  
+ Because the .NET Framework tuple types implement tuples with more than 7 elements by nesting a tuple in <xref:System.Tuple%608.Rest%2A?displayProperty=fullName>,  `item8` through `item15` are elements of nested tuples.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Deconstruct&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16&gt;">
@@ -958,41 +1077,50 @@
         <Parameter Name="item16" Type="T16&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <typeparam name="T11">To be added.</typeparam>
-        <typeparam name="T12">To be added.</typeparam>
-        <typeparam name="T13">To be added.</typeparam>
-        <typeparam name="T14">To be added.</typeparam>
-        <typeparam name="T15">To be added.</typeparam>
-        <typeparam name="T16">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <param name="item1">To be added.</param>
-        <param name="item2">To be added.</param>
-        <param name="item3">To be added.</param>
-        <param name="item4">To be added.</param>
-        <param name="item5">To be added.</param>
-        <param name="item6">To be added.</param>
-        <param name="item7">To be added.</param>
-        <param name="item8">To be added.</param>
-        <param name="item9">To be added.</param>
-        <param name="item10">To be added.</param>
-        <param name="item11">To be added.</param>
-        <param name="item12">To be added.</param>
-        <param name="item13">To be added.</param>
-        <param name="item14">To be added.</param>
-        <param name="item15">To be added.</param>
-        <param name="item16">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <typeparam name="T7">The type of the seventh element.</typeparam>
+        <typeparam name="T8">The type of the eighth element.</typeparam>
+        <typeparam name="T9">The type of the ninth element.</typeparam>
+        <typeparam name="T10">The type of the tenth element.</typeparam>
+        <typeparam name="T11">The type of the eleventh element.</typeparam>
+        <typeparam name="T12">The type of the twelfth element.</typeparam>
+        <typeparam name="T13">The type of the thirteenth element.</typeparam>
+        <typeparam name="T14">The type of the fourteenth element.</typeparam>
+        <typeparam name="T15">The type of the fifteenth element.</typeparam>
+        <typeparam name="T16">The type of the sixteenth element.</typeparam>
+        <param name="value">The 16-element tuple to deconstruct into 16 separate variables.</param>
+        <param name="item1">The value of the first element.</param>
+        <param name="item2">The value of the second element.</param>
+        <param name="item3">The value of the third element.</param>
+        <param name="item4">The value of the fourth element.</param>
+        <param name="item5">The value of the fifth element.</param>
+        <param name="item6">The value of the sixth element.</param>
+        <param name="item7">The value of the seventh element.</param>
+        <param name="item8">The value of the eighth element, or <c>value</c><see langword=".Rest.Item1" />.</param>
+        <param name="item9">The value of the ninth element, or <c>value</c><see langword=".Rest.Item2" />.</param>
+        <param name="item10">The value of the tenth element, or <c>value</c><see langword=".Rest.Item3" />.</param>
+        <param name="item11">The value of the eleventh element, or <c>value</c><see langword=".Rest.Item4" />.</param>
+        <param name="item12">The value of the twelfth element, or <c>value</c><see langword=".Rest.Item5" />.</param>
+        <param name="item13">The value of the thirteenth element, or <c>value</c><see langword=".Rest.Item6" />.</param>
+        <param name="item14">The value of the fourteenth element, or <c>value</c><see langword=".Rest.Item7" />.</param>
+        <param name="item15">The value of the fifteenth element, or <c>value</c><see langword=".Rest.Rest.Item1 " />.</param>
+        <param name="item16">The value of the sixteenth element, or <c>value</c><see langword=".Rest.Rest.Item2" />.</param>
+        <summary>Deconstructs a tuple with 16 elements into separate variables.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is implemented primarily to support the tuple language features in C#.  
+  
+ Because the .NET Framework tuple types implement tuples with more than 7 elements by nesting a tuple in <xref:System.Tuple%608.Rest%2A?displayProperty=fullName>,  `item8` through `item16` are elements of nested tuples.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Deconstruct&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17&gt;">
@@ -1051,43 +1179,52 @@
         <Parameter Name="item17" Type="T17&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <typeparam name="T11">To be added.</typeparam>
-        <typeparam name="T12">To be added.</typeparam>
-        <typeparam name="T13">To be added.</typeparam>
-        <typeparam name="T14">To be added.</typeparam>
-        <typeparam name="T15">To be added.</typeparam>
-        <typeparam name="T16">To be added.</typeparam>
-        <typeparam name="T17">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <param name="item1">To be added.</param>
-        <param name="item2">To be added.</param>
-        <param name="item3">To be added.</param>
-        <param name="item4">To be added.</param>
-        <param name="item5">To be added.</param>
-        <param name="item6">To be added.</param>
-        <param name="item7">To be added.</param>
-        <param name="item8">To be added.</param>
-        <param name="item9">To be added.</param>
-        <param name="item10">To be added.</param>
-        <param name="item11">To be added.</param>
-        <param name="item12">To be added.</param>
-        <param name="item13">To be added.</param>
-        <param name="item14">To be added.</param>
-        <param name="item15">To be added.</param>
-        <param name="item16">To be added.</param>
-        <param name="item17">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <typeparam name="T7">The type of the seventh element.</typeparam>
+        <typeparam name="T8">The type of the eighth element.</typeparam>
+        <typeparam name="T9">The type of the ninth element.</typeparam>
+        <typeparam name="T10">The type of the tenth element.</typeparam>
+        <typeparam name="T11">The type of the eleventh element.</typeparam>
+        <typeparam name="T12">The type of the twelfth element.</typeparam>
+        <typeparam name="T13">The type of the thirteenth element.</typeparam>
+        <typeparam name="T14">The type of the fourteenth element.</typeparam>
+        <typeparam name="T15">The type of the fifteenth element.</typeparam>
+        <typeparam name="T16">The type of the sixteenth element.</typeparam>
+        <typeparam name="T17">The type of the seventeenth element.</typeparam>
+        <param name="value">The 17-element tuple to deconstruct into 17 separate variables.</param>
+        <param name="item1">The value of the first element.</param>
+        <param name="item2">The value of the second element.</param>
+        <param name="item3">The value of the third element.</param>
+        <param name="item4">The value of the fourth element.</param>
+        <param name="item5">The value of the fifth element.</param>
+        <param name="item6">The value of the sixth element.</param>
+        <param name="item7">The value of the seventh element.</param>
+        <param name="item8">The value of the eighth element, or <c>value</c><see langword=".Rest.Item1" />.</param>
+        <param name="item9">The value of the ninth element, or <c>value</c><see langword=".Rest.Item2" />.</param>
+        <param name="item10">The value of the tenth element, or <c>value</c><see langword=".Rest.Item3" />.</param>
+        <param name="item11">The value of the eleventh element, or <c>value</c><see langword=".Rest.Item4" />.</param>
+        <param name="item12">The value of the twelfth element, or <c>value</c><see langword=".Rest.Item5" />.</param>
+        <param name="item13">The value of the thirteenth element, or <c>value</c><see langword=".Rest.Item6" />.</param>
+        <param name="item14">The value of the fourteenth element, or <c>value</c><see langword=".Rest.Item7" />.</param>
+        <param name="item15">The value of the fifteenth element, or <c>value</c><see langword=".Rest.Rest.Item1 " />.</param>
+        <param name="item16">The value of the sixteenth element, or <c>value</c><see langword=".Rest.Rest.Item2" />.</param>
+        <param name="item17">The value of the seventeenth element, or <c>value</c><see langword=".Rest.Rest.Item3" />.</param>
+        <summary>Deconstructs a tuple with 17 elements into separate variables.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is implemented primarily to support the tuple language features in C#.  
+  
+ Because the .NET Framework tuple types implement tuples with more than 7 elements by nesting a tuple in <xref:System.Tuple%608.Rest%2A?displayProperty=fullName>,  `item8` through `item17` are elements of nested tuples.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Deconstruct&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18&gt;">
@@ -1148,45 +1285,54 @@
         <Parameter Name="item18" Type="T18&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <typeparam name="T11">To be added.</typeparam>
-        <typeparam name="T12">To be added.</typeparam>
-        <typeparam name="T13">To be added.</typeparam>
-        <typeparam name="T14">To be added.</typeparam>
-        <typeparam name="T15">To be added.</typeparam>
-        <typeparam name="T16">To be added.</typeparam>
-        <typeparam name="T17">To be added.</typeparam>
-        <typeparam name="T18">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <param name="item1">To be added.</param>
-        <param name="item2">To be added.</param>
-        <param name="item3">To be added.</param>
-        <param name="item4">To be added.</param>
-        <param name="item5">To be added.</param>
-        <param name="item6">To be added.</param>
-        <param name="item7">To be added.</param>
-        <param name="item8">To be added.</param>
-        <param name="item9">To be added.</param>
-        <param name="item10">To be added.</param>
-        <param name="item11">To be added.</param>
-        <param name="item12">To be added.</param>
-        <param name="item13">To be added.</param>
-        <param name="item14">To be added.</param>
-        <param name="item15">To be added.</param>
-        <param name="item16">To be added.</param>
-        <param name="item17">To be added.</param>
-        <param name="item18">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <typeparam name="T7">The type of the seventh element.</typeparam>
+        <typeparam name="T8">The type of the eighth element.</typeparam>
+        <typeparam name="T9">The type of the ninth element.</typeparam>
+        <typeparam name="T10">The type of the tenth element.</typeparam>
+        <typeparam name="T11">The type of the eleventh element.</typeparam>
+        <typeparam name="T12">The type of the twelfth element.</typeparam>
+        <typeparam name="T13">The type of the thirteenth element.</typeparam>
+        <typeparam name="T14">The type of the fourteenth element.</typeparam>
+        <typeparam name="T15">The type of the fifteenth element.</typeparam>
+        <typeparam name="T16">The type of the sixteenth element.</typeparam>
+        <typeparam name="T17">The type of the seventeenth element.</typeparam>
+        <typeparam name="T18">The type of the eighteenth element.</typeparam>
+        <param name="value">The 18-element tuple to deconstruct into 18 separate variables.</param>
+        <param name="item1">The value of the first element.</param>
+        <param name="item2">The value of the second element.</param>
+        <param name="item3">The value of the third element.</param>
+        <param name="item4">The value of the fourth element.</param>
+        <param name="item5">The value of the fifth element.</param>
+        <param name="item6">The value of the sixth element.</param>
+        <param name="item7">The value of the seventh element.</param>
+        <param name="item8">The value of the eighth element, or <c>value</c><see langword=".Rest.Item1" />.</param>
+        <param name="item9">The value of the ninth element, or <c>value</c><see langword=".Rest.Item2" />.</param>
+        <param name="item10">The value of the tenth element, or <c>value</c><see langword=".Rest.Item3" />.</param>
+        <param name="item11">The value of the eleventh element, or <c>value</c><see langword=".Rest.Item4" />.</param>
+        <param name="item12">The value of the twelfth element, or <c>value</c><see langword=".Rest.Item5" />.</param>
+        <param name="item13">The value of the thirteenth element, or <c>value</c><see langword=".Rest.Item6" />.</param>
+        <param name="item14">The value of the fourteenth element, or <c>value</c><see langword=".Rest.Item7" />.</param>
+        <param name="item15">The value of the fifteenth element, or <c>value</c><see langword=".Rest.Rest.Item1 " />.</param>
+        <param name="item16">The value of the sixteenth element, or <c>value</c><see langword=".Rest.Rest.Item2" />.</param>
+        <param name="item17">The value of the seventeenth element, or <c>value</c><see langword=".Rest.Rest.Item3" />.</param>
+        <param name="item18">The value of the eighteenth element, or <c>value</c><see langword=".Rest.Rest.Item4" />.</param>
+        <summary>Deconstructs a tuple with 18 elements into separate variables.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is implemented primarily to support the tuple language features in C#.  
+  
+ Because the .NET Framework tuple types implement tuples with more than 7 elements by nesting a tuple in <xref:System.Tuple%608.Rest%2A?displayProperty=fullName>,  `item8` through `item18` are elements of nested tuples.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Deconstruct&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19&gt;">
@@ -1249,47 +1395,56 @@
         <Parameter Name="item19" Type="T19&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <typeparam name="T11">To be added.</typeparam>
-        <typeparam name="T12">To be added.</typeparam>
-        <typeparam name="T13">To be added.</typeparam>
-        <typeparam name="T14">To be added.</typeparam>
-        <typeparam name="T15">To be added.</typeparam>
-        <typeparam name="T16">To be added.</typeparam>
-        <typeparam name="T17">To be added.</typeparam>
-        <typeparam name="T18">To be added.</typeparam>
-        <typeparam name="T19">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <param name="item1">To be added.</param>
-        <param name="item2">To be added.</param>
-        <param name="item3">To be added.</param>
-        <param name="item4">To be added.</param>
-        <param name="item5">To be added.</param>
-        <param name="item6">To be added.</param>
-        <param name="item7">To be added.</param>
-        <param name="item8">To be added.</param>
-        <param name="item9">To be added.</param>
-        <param name="item10">To be added.</param>
-        <param name="item11">To be added.</param>
-        <param name="item12">To be added.</param>
-        <param name="item13">To be added.</param>
-        <param name="item14">To be added.</param>
-        <param name="item15">To be added.</param>
-        <param name="item16">To be added.</param>
-        <param name="item17">To be added.</param>
-        <param name="item18">To be added.</param>
-        <param name="item19">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <typeparam name="T7">The type of the seventh element.</typeparam>
+        <typeparam name="T8">The type of the eighth element.</typeparam>
+        <typeparam name="T9">The type of the ninth element.</typeparam>
+        <typeparam name="T10">The type of the tenth element.</typeparam>
+        <typeparam name="T11">The type of the eleventh element.</typeparam>
+        <typeparam name="T12">The type of the twelfth element.</typeparam>
+        <typeparam name="T13">The type of the thirteenth element.</typeparam>
+        <typeparam name="T14">The type of the fourteenth element.</typeparam>
+        <typeparam name="T15">The type of the fifteenth element.</typeparam>
+        <typeparam name="T16">The type of the sixteenth element.</typeparam>
+        <typeparam name="T17">The type of the seventeenth element.</typeparam>
+        <typeparam name="T18">The type of the eighteenth element.</typeparam>
+        <typeparam name="T19">The type of the nineteenth element.</typeparam>
+        <param name="value">The 19-element tuple to deconstruct into 19 separate variables.</param>
+        <param name="item1">The value of the first element.</param>
+        <param name="item2">The value of the second element.</param>
+        <param name="item3">The value of the third element.</param>
+        <param name="item4">The value of the fourth element.</param>
+        <param name="item5">The value of the fifth element.</param>
+        <param name="item6">The value of the sixth element.</param>
+        <param name="item7">The value of the seventh element.</param>
+        <param name="item8">The value of the eighth element, or <c>value</c><see langword=".Rest.Item1" />.</param>
+        <param name="item9">The value of the ninth element, or <c>value</c><see langword=".Rest.Item2" />.</param>
+        <param name="item10">The value of the tenth element, or <c>value</c><see langword=".Rest.Item3" />.</param>
+        <param name="item11">The value of the eleventh element, or <c>value</c><see langword=".Rest.Item4" />.</param>
+        <param name="item12">The value of the twelfth element, or <c>value</c><see langword=".Rest.Item5" />.</param>
+        <param name="item13">The value of the thirteenth element, or <c>value</c><see langword=".Rest.Item6" />.</param>
+        <param name="item14">The value of the fourteenth element, or <c>value</c><see langword=".Rest.Item7" />.</param>
+        <param name="item15">The value of the fifteenth element, or <c>value</c><see langword=".Rest.Rest.Item1 " />.</param>
+        <param name="item16">The value of the sixteenth element, or <c>value</c><see langword=".Rest.Rest.Item2" />.</param>
+        <param name="item17">The value of the seventeenth element, or <c>value</c><see langword=".Rest.Rest.Item3" />.</param>
+        <param name="item18">The value of the eighteenth element, or <c>value</c><see langword=".Rest.Rest.Item4" />.</param>
+        <param name="item19">The value of the nineteenth element, or <c>value</c><see langword=".Rest.Rest.Item5" />.</param>
+        <summary>Deconstructs a tuple with 19 elements into separate variables.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is implemented primarily to support the tuple language features in C#.  
+  
+ Because the .NET Framework tuple types implement tuples with more than 7 elements by nesting a tuple in <xref:System.Tuple%608.Rest%2A?displayProperty=fullName>,  `item8` through `item19` are elements of nested tuples.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Deconstruct&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20&gt;">
@@ -1354,48 +1509,48 @@
         <Parameter Name="item20" Type="T20&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <typeparam name="T11">To be added.</typeparam>
-        <typeparam name="T12">To be added.</typeparam>
-        <typeparam name="T13">To be added.</typeparam>
-        <typeparam name="T14">To be added.</typeparam>
-        <typeparam name="T15">To be added.</typeparam>
-        <typeparam name="T16">To be added.</typeparam>
-        <typeparam name="T17">To be added.</typeparam>
-        <typeparam name="T18">To be added.</typeparam>
-        <typeparam name="T19">To be added.</typeparam>
-        <typeparam name="T20">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <param name="item1">To be added.</param>
-        <param name="item2">To be added.</param>
-        <param name="item3">To be added.</param>
-        <param name="item4">To be added.</param>
-        <param name="item5">To be added.</param>
-        <param name="item6">To be added.</param>
-        <param name="item7">To be added.</param>
-        <param name="item8">To be added.</param>
-        <param name="item9">To be added.</param>
-        <param name="item10">To be added.</param>
-        <param name="item11">To be added.</param>
-        <param name="item12">To be added.</param>
-        <param name="item13">To be added.</param>
-        <param name="item14">To be added.</param>
-        <param name="item15">To be added.</param>
-        <param name="item16">To be added.</param>
-        <param name="item17">To be added.</param>
-        <param name="item18">To be added.</param>
-        <param name="item19">To be added.</param>
-        <param name="item20">To be added.</param>
-        <summary>To be added.</summary>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <typeparam name="T7">The type of the seventh element.</typeparam>
+        <typeparam name="T8">The type of the eighth element.</typeparam>
+        <typeparam name="T9">The type of the ninth element.</typeparam>
+        <typeparam name="T10">The type of the tenth element.</typeparam>
+        <typeparam name="T11">The type of the eleventh element.</typeparam>
+        <typeparam name="T12">The type of the twelfth element.</typeparam>
+        <typeparam name="T13">The type of the thirteenth element.</typeparam>
+        <typeparam name="T14">The type of the fourteenth element.</typeparam>
+        <typeparam name="T15">The type of the fifteenth element.</typeparam>
+        <typeparam name="T16">The type of the sixteenth element.</typeparam>
+        <typeparam name="T17">The type of the seventeenth element.</typeparam>
+        <typeparam name="T18">The type of the eighteenth element.</typeparam>
+        <typeparam name="T19">The type of the nineteenth element.</typeparam>
+        <typeparam name="T20">The type of the twentieth element.</typeparam>
+        <param name="value">The 20-element tuple to deconstruct into 20 separate variables.</param>
+        <param name="item1">The value of the first element.</param>
+        <param name="item2">The value of the second element.</param>
+        <param name="item3">The value of the third element.</param>
+        <param name="item4">The value of the fourth element.</param>
+        <param name="item5">The value of the fifth element.</param>
+        <param name="item6">The value of the sixth element.</param>
+        <param name="item7">The value of the seventh element.</param>
+        <param name="item8">The value of the eighth element, or <c>value</c><see langword=".Rest.Item1" />.</param>
+        <param name="item9">The value of the ninth element, or <c>value</c><see langword=".Rest.Item2" />.</param>
+        <param name="item10">The value of the tenth element, or <c>value</c><see langword=".Rest.Item3" />.</param>
+        <param name="item11">The value of the eleventh element, or <c>value</c><see langword=".Rest.Item4" />.</param>
+        <param name="item12">The value of the twelfth element, or <c>value</c><see langword=".Rest.Item5" />.</param>
+        <param name="item13">The value of the thirteenth element, or <c>value</c><see langword=".Rest.Item6" />.</param>
+        <param name="item14">The value of the fourteenth element, or <c>value</c><see langword=".Rest.Item7" />.</param>
+        <param name="item15">The value of the fifteenth element, or <c>value</c><see langword=".Rest.Rest.Item1 " />.</param>
+        <param name="item16">The value of the sixteenth element, or <c>value</c><see langword=".Rest.Rest.Item2" />.</param>
+        <param name="item17">The value of the seventeenth element, or <c>value</c><see langword=".Rest.Rest.Item3" />.</param>
+        <param name="item18">The value of the eighteenth element, or <c>value</c><see langword=".Rest.Rest.Item4" />.</param>
+        <param name="item19">The value of the nineteenth element, or <c>value</c><see langword=".Rest.Rest.Item5" />.</param>
+        <param name="item20">The value of the twentieth element, or <c>value</c><see langword=".Rest.Rest.Item6" />.</param>
+        <summary>Deconstructs a tuple with 20 elements into separate variables.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1463,51 +1618,60 @@
         <Parameter Name="item21" Type="T21&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <typeparam name="T11">To be added.</typeparam>
-        <typeparam name="T12">To be added.</typeparam>
-        <typeparam name="T13">To be added.</typeparam>
-        <typeparam name="T14">To be added.</typeparam>
-        <typeparam name="T15">To be added.</typeparam>
-        <typeparam name="T16">To be added.</typeparam>
-        <typeparam name="T17">To be added.</typeparam>
-        <typeparam name="T18">To be added.</typeparam>
-        <typeparam name="T19">To be added.</typeparam>
-        <typeparam name="T20">To be added.</typeparam>
-        <typeparam name="T21">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <param name="item1">To be added.</param>
-        <param name="item2">To be added.</param>
-        <param name="item3">To be added.</param>
-        <param name="item4">To be added.</param>
-        <param name="item5">To be added.</param>
-        <param name="item6">To be added.</param>
-        <param name="item7">To be added.</param>
-        <param name="item8">To be added.</param>
-        <param name="item9">To be added.</param>
-        <param name="item10">To be added.</param>
-        <param name="item11">To be added.</param>
-        <param name="item12">To be added.</param>
-        <param name="item13">To be added.</param>
-        <param name="item14">To be added.</param>
-        <param name="item15">To be added.</param>
-        <param name="item16">To be added.</param>
-        <param name="item17">To be added.</param>
-        <param name="item18">To be added.</param>
-        <param name="item19">To be added.</param>
-        <param name="item20">To be added.</param>
-        <param name="item21">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <typeparam name="T7">The type of the seventh element.</typeparam>
+        <typeparam name="T8">The type of the eighth element.</typeparam>
+        <typeparam name="T9">The type of the ninth element.</typeparam>
+        <typeparam name="T10">The type of the tenth element.</typeparam>
+        <typeparam name="T11">The type of the eleventh element.</typeparam>
+        <typeparam name="T12">The type of the twelfth element.</typeparam>
+        <typeparam name="T13">The type of the thirteenth element.</typeparam>
+        <typeparam name="T14">The type of the fourteenth element.</typeparam>
+        <typeparam name="T15">The type of the fifteenth element.</typeparam>
+        <typeparam name="T16">The type of the sixteenth element.</typeparam>
+        <typeparam name="T17">The type of the seventeenth element.</typeparam>
+        <typeparam name="T18">The type of the eighteenth element.</typeparam>
+        <typeparam name="T19">The type of the nineteenth element.</typeparam>
+        <typeparam name="T20">The type of the twentieth element.</typeparam>
+        <typeparam name="T21">The type of the twenty-first element.</typeparam>
+        <param name="value">The 21-element tuple to deconstruct into 21 separate variables.</param>
+        <param name="item1">The value of the first element.</param>
+        <param name="item2">The value of the second element.</param>
+        <param name="item3">The value of the third element.</param>
+        <param name="item4">The value of the fourth element.</param>
+        <param name="item5">The value of the fifth element.</param>
+        <param name="item6">The value of the sixth element.</param>
+        <param name="item7">The value of the seventh element.</param>
+        <param name="item8">The value of the eighth element, or <c>value</c><see langword=".Rest.Item1" />.</param>
+        <param name="item9">The value of the ninth element, or <c>value</c><see langword=".Rest.Item2" />.</param>
+        <param name="item10">The value of the tenth element, or <c>value</c><see langword=".Rest.Item3" />.</param>
+        <param name="item11">The value of the eleventh element, or <c>value</c><see langword=".Rest.Item4" />.</param>
+        <param name="item12">The value of the twelfth element, or <c>value</c><see langword=".Rest.Item5" />.</param>
+        <param name="item13">The value of the thirteenth element, or <c>value</c><see langword=".Rest.Item6" />.</param>
+        <param name="item14">The value of the fourteenth element, or <c>value</c><see langword=".Rest.Item7" />.</param>
+        <param name="item15">The value of the fifteenth element, or <c>value</c><see langword=".Rest.Rest.Item1 " />.</param>
+        <param name="item16">The value of the sixteenth element, or <c>value</c><see langword=".Rest.Rest.Item2" />.</param>
+        <param name="item17">The value of the seventeenth element, or <c>value</c><see langword=".Rest.Rest.Item3" />.</param>
+        <param name="item18">The value of the eighteenth element, or <c>value</c><see langword=".Rest.Rest.Item4" />.</param>
+        <param name="item19">The value of the nineteenth element, or <c>value</c><see langword=".Rest.Rest.Item5" />.</param>
+        <param name="item20">The value of the twentieth element, or <c>value</c><see langword=".Rest.Rest.Item6" />.</param>
+        <param name="item21">The value of the twenty-first element, or <c>value</c><see langword=".Rest.Rest.Item7" />.</param>
+        <summary>Deconstructs a tuple with 21 elements into separate variables.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is implemented primarily to support the tuple language features in C#.  
+  
+ Because the .NET Framework tuple types implement tuples with more than 7 elements by nesting a tuple in <xref:System.Tuple%608.Rest%2A?displayProperty=fullName>,  `item8` through `item21` are elements of nested tuples.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToTuple&lt;T1&gt;">
@@ -1533,10 +1697,10 @@
         <Parameter Name="value" Type="System.ValueTuple&lt;T1&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <param name="value">The value tuple instance to convert to a tuple.</param>
+        <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
+        <returns>The converted tuple.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1564,11 +1728,11 @@
         <Parameter Name="value" Type="System.ValueTuple&lt;T1,T2&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <param name="value">The value tuple instance to convert to a tuple.</param>
+        <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
+        <returns>The converted tuple.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1597,12 +1761,12 @@
         <Parameter Name="value" Type="System.ValueTuple&lt;T1,T2,T3&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <param name="value">The value tuple instance to convert to a tuple.</param>
+        <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
+        <returns>The converted tuple.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1632,13 +1796,13 @@
         <Parameter Name="value" Type="System.ValueTuple&lt;T1,T2,T3,T4&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <param name="value">The value tuple instance to convert to a tuple.</param>
+        <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
+        <returns>The converted tuple.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1669,14 +1833,14 @@
         <Parameter Name="value" Type="System.ValueTuple&lt;T1,T2,T3,T4,T5&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <param name="value">The value tuple instance to convert to a tuple.</param>
+        <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
+        <returns>The converted tuple.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1708,15 +1872,15 @@
         <Parameter Name="value" Type="System.ValueTuple&lt;T1,T2,T3,T4,T5,T6&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <param name="value">The value tuple instance to convert to a tuple.</param>
+        <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
+        <returns>The converted tuple.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1749,16 +1913,16 @@
         <Parameter Name="value" Type="System.ValueTuple&lt;T1,T2,T3,T4,T5,T6,T7&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <typeparam name="T7">The type of the seventh element.</typeparam>
+        <param name="value">The value tuple instance to convert to a tuple.</param>
+        <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
+        <returns>The converted tuple.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1792,17 +1956,17 @@
         <Parameter Name="value" Type="System.ValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,System.ValueTuple&lt;T8&gt;&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <typeparam name="T7">The type of the seventh element.</typeparam>
+        <typeparam name="T8">The type of the eighth element, or <c>value</c><see langword=".Rest.Item1" />.</typeparam>
+        <param name="value">The value tuple instance to convert to a tuple.</param>
+        <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
+        <returns>The converted tuple.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1837,18 +2001,18 @@
         <Parameter Name="value" Type="System.ValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,System.ValueTuple&lt;T8,T9&gt;&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <typeparam name="T7">The type of the seventh element.</typeparam>
+        <typeparam name="T8">The type of the eighth element, or <c>value</c><see langword=".Rest.Item1" />.</typeparam>
+        <typeparam name="T9">The type of the ninth element, or <c>value</c><see langword=".Rest.Item2" />.</typeparam>
+        <param name="value">The value tuple instance to convert to a tuple.</param>
+        <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
+        <returns>The converted tuple.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1884,19 +2048,19 @@
         <Parameter Name="value" Type="System.ValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,System.ValueTuple&lt;T8,T9,T10&gt;&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <typeparam name="T7">The type of the seventh element.</typeparam>
+        <typeparam name="T8">The type of the eighth element, or <c>value</c><see langword=".Rest.Item1" />.</typeparam>
+        <typeparam name="T9">The type of the ninth element, or <c>value</c><see langword=".Rest.Item2" />.</typeparam>
+        <typeparam name="T10">The type of the tenth element, or <c>value</c><see langword=".Rest.Item3" />.</typeparam>
+        <param name="value">The value tuple instance to convert to a tuple.</param>
+        <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
+        <returns>The converted tuple.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1933,20 +2097,20 @@
         <Parameter Name="value" Type="System.ValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,System.ValueTuple&lt;T8,T9,T10,T11&gt;&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <typeparam name="T11">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <typeparam name="T7">The type of the seventh element.</typeparam>
+        <typeparam name="T8">The type of the eighth element, or <c>value</c><see langword=".Rest.Item1" />.</typeparam>
+        <typeparam name="T9">The type of the ninth element, or <c>value</c><see langword=".Rest.Item2" />.</typeparam>
+        <typeparam name="T10">The type of the tenth element, or <c>value</c><see langword=".Rest.Item3" />.</typeparam>
+        <typeparam name="T11">The type of the eleventh element, or <c>value</c><see langword=".Rest.Item4" />.</typeparam>
+        <param name="value">The value tuple instance to convert to a tuple.</param>
+        <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
+        <returns>The converted tuple.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1984,21 +2148,21 @@
         <Parameter Name="value" Type="System.ValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,System.ValueTuple&lt;T8,T9,T10,T11,T12&gt;&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <typeparam name="T11">To be added.</typeparam>
-        <typeparam name="T12">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <typeparam name="T7">The type of the seventh element.</typeparam>
+        <typeparam name="T8">The type of the eighth element, or <c>value</c><see langword=".Rest.Item1" />.</typeparam>
+        <typeparam name="T9">The type of the ninth element, or <c>value</c><see langword=".Rest.Item2" />.</typeparam>
+        <typeparam name="T10">The type of the tenth element, or <c>value</c><see langword=".Rest.Item3" />.</typeparam>
+        <typeparam name="T11">The type of the eleventh element, or <c>value</c><see langword=".Rest.Item4" />.</typeparam>
+        <typeparam name="T12">The type of the twelfth element, or <c>value</c><see langword=".Rest.Item5" />.</typeparam>
+        <param name="value">The value tuple instance to convert to a tuple.</param>
+        <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
+        <returns>The converted tuple.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2037,22 +2201,22 @@
         <Parameter Name="value" Type="System.ValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,System.ValueTuple&lt;T8,T9,T10,T11,T12,T13&gt;&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <typeparam name="T11">To be added.</typeparam>
-        <typeparam name="T12">To be added.</typeparam>
-        <typeparam name="T13">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <typeparam name="T7">The type of the seventh element.</typeparam>
+        <typeparam name="T8">The type of the eighth element, or <c>value</c><see langword=".Rest.Item1" />.</typeparam>
+        <typeparam name="T9">The type of the ninth element, or <c>value</c><see langword=".Rest.Item2" />.</typeparam>
+        <typeparam name="T10">The type of the tenth element, or <c>value</c><see langword=".Rest.Item3" />.</typeparam>
+        <typeparam name="T11">The type of the eleventh element, or <c>value</c><see langword=".Rest.Item4" />.</typeparam>
+        <typeparam name="T12">The type of the twelfth element, or <c>value</c><see langword=".Rest.Item5" />.</typeparam>
+        <typeparam name="T13">The type of the thirteenth element, or <c>value</c><see langword=".Rest.Item6" />.</typeparam>
+        <param name="value">The value tuple instance to convert to a tuple.</param>
+        <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
+        <returns>The converted tuple.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2092,23 +2256,23 @@
         <Parameter Name="value" Type="System.ValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,System.ValueTuple&lt;T8,T9,T10,T11,T12,T13,T14&gt;&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <typeparam name="T11">To be added.</typeparam>
-        <typeparam name="T12">To be added.</typeparam>
-        <typeparam name="T13">To be added.</typeparam>
-        <typeparam name="T14">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <typeparam name="T7">The type of the seventh element.</typeparam>
+        <typeparam name="T8">The type of the eighth element, or <c>value</c><see langword=".Rest.Item1" />.</typeparam>
+        <typeparam name="T9">The type of the ninth element, or <c>value</c><see langword=".Rest.Item2" />.</typeparam>
+        <typeparam name="T10">The type of the tenth element, or <c>value</c><see langword=".Rest.Item3" />.</typeparam>
+        <typeparam name="T11">The type of the eleventh element, or <c>value</c><see langword=".Rest.Item4" />.</typeparam>
+        <typeparam name="T12">The type of the twelfth element, or <c>value</c><see langword=".Rest.Item5" />.</typeparam>
+        <typeparam name="T13">The type of the thirteenth element, or <c>value</c><see langword=".Rest.Item6" />.</typeparam>
+        <typeparam name="T14">The type of the fourteenth element, or <c>value</c><see langword=".Rest.Item7" />.</typeparam>
+        <param name="value">The value tuple instance to convert to a tuple.</param>
+        <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
+        <returns>The converted tuple.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2149,24 +2313,24 @@
         <Parameter Name="value" Type="System.ValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,System.ValueTuple&lt;T8,T9,T10,T11,T12,T13,T14,System.ValueTuple&lt;T15&gt;&gt;&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <typeparam name="T11">To be added.</typeparam>
-        <typeparam name="T12">To be added.</typeparam>
-        <typeparam name="T13">To be added.</typeparam>
-        <typeparam name="T14">To be added.</typeparam>
-        <typeparam name="T15">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <typeparam name="T7">The type of the seventh element.</typeparam>
+        <typeparam name="T8">The type of the eighth element, or <c>value</c><see langword=".Rest.Item1" />.</typeparam>
+        <typeparam name="T9">The type of the ninth element, or <c>value</c><see langword=".Rest.Item2" />.</typeparam>
+        <typeparam name="T10">The type of the tenth element, or <c>value</c><see langword=".Rest.Item3" />.</typeparam>
+        <typeparam name="T11">The type of the eleventh element, or <c>value</c><see langword=".Rest.Item4" />.</typeparam>
+        <typeparam name="T12">The type of the twelfth element, or <c>value</c><see langword=".Rest.Item5" />.</typeparam>
+        <typeparam name="T13">The type of the thirteenth element, or <c>value</c><see langword=".Rest.Item6" />.</typeparam>
+        <typeparam name="T14">The type of the fourteenth element, or <c>value</c><see langword=".Rest.Item7" />.</typeparam>
+        <typeparam name="T15">The type of the fifteenth element., or <c>value</c><see langword=".Rest.Rest.Item1" />.</typeparam>
+        <param name="value">The value tuple instance to convert to a tuple.</param>
+        <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
+        <returns>The converted tuple.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2208,25 +2372,25 @@
         <Parameter Name="value" Type="System.ValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,System.ValueTuple&lt;T8,T9,T10,T11,T12,T13,T14,System.ValueTuple&lt;T15,T16&gt;&gt;&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <typeparam name="T11">To be added.</typeparam>
-        <typeparam name="T12">To be added.</typeparam>
-        <typeparam name="T13">To be added.</typeparam>
-        <typeparam name="T14">To be added.</typeparam>
-        <typeparam name="T15">To be added.</typeparam>
-        <typeparam name="T16">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <typeparam name="T7">The type of the seventh element.</typeparam>
+        <typeparam name="T8">The type of the eighth element, or <c>value</c><see langword=".Rest.Item1" />.</typeparam>
+        <typeparam name="T9">The type of the ninth element, or <c>value</c><see langword=".Rest.Item2" />.</typeparam>
+        <typeparam name="T10">The type of the tenth element, or <c>value</c><see langword=".Rest.Item3" />.</typeparam>
+        <typeparam name="T11">The type of the eleventh element, or <c>value</c><see langword=".Rest.Item4" />.</typeparam>
+        <typeparam name="T12">The type of the twelfth element, or <c>value</c><see langword=".Rest.Item5" />.</typeparam>
+        <typeparam name="T13">The type of the thirteenth element, or <c>value</c><see langword=".Rest.Item6" />.</typeparam>
+        <typeparam name="T14">The type of the fourteenth element, or <c>value</c><see langword=".Rest.Item7" />.</typeparam>
+        <typeparam name="T15">The type of the fifteenth element., or <c>value</c><see langword=".Rest.Rest.Item1" />.</typeparam>
+        <typeparam name="T16">The type of the sixteenth element, ., or <c>value</c><see langword=".Rest.Rest.Item2" />.</typeparam>
+        <param name="value">The value tuple instance to convert to a tuple.</param>
+        <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
+        <returns>The converted tuple.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2269,26 +2433,26 @@
         <Parameter Name="value" Type="System.ValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,System.ValueTuple&lt;T8,T9,T10,T11,T12,T13,T14,System.ValueTuple&lt;T15,T16,T17&gt;&gt;&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <typeparam name="T11">To be added.</typeparam>
-        <typeparam name="T12">To be added.</typeparam>
-        <typeparam name="T13">To be added.</typeparam>
-        <typeparam name="T14">To be added.</typeparam>
-        <typeparam name="T15">To be added.</typeparam>
-        <typeparam name="T16">To be added.</typeparam>
-        <typeparam name="T17">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <typeparam name="T7">The type of the seventh element.</typeparam>
+        <typeparam name="T8">The type of the eighth element, or <c>value</c><see langword=".Rest.Item1" />.</typeparam>
+        <typeparam name="T9">The type of the ninth element, or <c>value</c><see langword=".Rest.Item2" />.</typeparam>
+        <typeparam name="T10">The type of the tenth element, or <c>value</c><see langword=".Rest.Item3" />.</typeparam>
+        <typeparam name="T11">The type of the eleventh element, or <c>value</c><see langword=".Rest.Item4" />.</typeparam>
+        <typeparam name="T12">The type of the twelfth element, or <c>value</c><see langword=".Rest.Item5" />.</typeparam>
+        <typeparam name="T13">The type of the thirteenth element, or <c>value</c><see langword=".Rest.Item6" />.</typeparam>
+        <typeparam name="T14">The type of the fourteenth element, or <c>value</c><see langword=".Rest.Item7" />.</typeparam>
+        <typeparam name="T15">The type of the fifteenth element., or <c>value</c><see langword=".Rest.Rest.Item1" />.</typeparam>
+        <typeparam name="T16">The type of the sixteenth element, ., or <c>value</c><see langword=".Rest.Rest.Item2" />.</typeparam>
+        <typeparam name="T17">The type of the seventeenth element., or <c>value</c><see langword=".Rest.Rest.Item3" />.</typeparam>
+        <param name="value">The value tuple instance to convert to a tuple.</param>
+        <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
+        <returns>The converted tuple.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2332,27 +2496,27 @@
         <Parameter Name="value" Type="System.ValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,System.ValueTuple&lt;T8,T9,T10,T11,T12,T13,T14,System.ValueTuple&lt;T15,T16,T17,T18&gt;&gt;&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <typeparam name="T11">To be added.</typeparam>
-        <typeparam name="T12">To be added.</typeparam>
-        <typeparam name="T13">To be added.</typeparam>
-        <typeparam name="T14">To be added.</typeparam>
-        <typeparam name="T15">To be added.</typeparam>
-        <typeparam name="T16">To be added.</typeparam>
-        <typeparam name="T17">To be added.</typeparam>
-        <typeparam name="T18">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <typeparam name="T7">The type of the seventh element.</typeparam>
+        <typeparam name="T8">The type of the eighth element, or <c>value</c><see langword=".Rest.Item1" />.</typeparam>
+        <typeparam name="T9">The type of the ninth element, or <c>value</c><see langword=".Rest.Item2" />.</typeparam>
+        <typeparam name="T10">The type of the tenth element, or <c>value</c><see langword=".Rest.Item3" />.</typeparam>
+        <typeparam name="T11">The type of the eleventh element, or <c>value</c><see langword=".Rest.Item4" />.</typeparam>
+        <typeparam name="T12">The type of the twelfth element, or <c>value</c><see langword=".Rest.Item5" />.</typeparam>
+        <typeparam name="T13">The type of the thirteenth element, or <c>value</c><see langword=".Rest.Item6" />.</typeparam>
+        <typeparam name="T14">The type of the fourteenth element, or <c>value</c><see langword=".Rest.Item7" />.</typeparam>
+        <typeparam name="T15">The type of the fifteenth element., or <c>value</c><see langword=".Rest.Rest.Item1" />.</typeparam>
+        <typeparam name="T16">The type of the sixteenth element, ., or <c>value</c><see langword=".Rest.Rest.Item2" />.</typeparam>
+        <typeparam name="T17">The type of the seventeenth element., or <c>value</c><see langword=".Rest.Rest.Item3" />.</typeparam>
+        <typeparam name="T18">The type of the eighteenth element., or <c>value</c><see langword=".Rest.Rest.Item4" />.</typeparam>
+        <param name="value">The value tuple instance to convert to a tuple.</param>
+        <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
+        <returns>The converted tuple.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2397,28 +2561,28 @@
         <Parameter Name="value" Type="System.ValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,System.ValueTuple&lt;T8,T9,T10,T11,T12,T13,T14,System.ValueTuple&lt;T15,T16,T17,T18,T19&gt;&gt;&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <typeparam name="T11">To be added.</typeparam>
-        <typeparam name="T12">To be added.</typeparam>
-        <typeparam name="T13">To be added.</typeparam>
-        <typeparam name="T14">To be added.</typeparam>
-        <typeparam name="T15">To be added.</typeparam>
-        <typeparam name="T16">To be added.</typeparam>
-        <typeparam name="T17">To be added.</typeparam>
-        <typeparam name="T18">To be added.</typeparam>
-        <typeparam name="T19">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <typeparam name="T7">The type of the seventh element.</typeparam>
+        <typeparam name="T8">The type of the eighth element, or <c>value</c><see langword=".Rest.Item1" />.</typeparam>
+        <typeparam name="T9">The type of the ninth element, or <c>value</c><see langword=".Rest.Item2" />.</typeparam>
+        <typeparam name="T10">The type of the tenth element, or <c>value</c><see langword=".Rest.Item3" />.</typeparam>
+        <typeparam name="T11">The type of the eleventh element, or <c>value</c><see langword=".Rest.Item4" />.</typeparam>
+        <typeparam name="T12">The type of the twelfth element, or <c>value</c><see langword=".Rest.Item5" />.</typeparam>
+        <typeparam name="T13">The type of the thirteenth element, or <c>value</c><see langword=".Rest.Item6" />.</typeparam>
+        <typeparam name="T14">The type of the fourteenth element, or <c>value</c><see langword=".Rest.Item7" />.</typeparam>
+        <typeparam name="T15">The type of the fifteenth element., or <c>value</c><see langword=".Rest.Rest.Item1" />.</typeparam>
+        <typeparam name="T16">The type of the sixteenth element, ., or <c>value</c><see langword=".Rest.Rest.Item2" />.</typeparam>
+        <typeparam name="T17">The type of the seventeenth element., or <c>value</c><see langword=".Rest.Rest.Item3" />.</typeparam>
+        <typeparam name="T18">The type of the eighteenth element., or <c>value</c><see langword=".Rest.Rest.Item4" />.</typeparam>
+        <typeparam name="T19">The type of the nineteenth element., or <c>value</c><see langword=".Rest.Rest.Item5" />.</typeparam>
+        <param name="value">The value tuple instance to convert to a tuple.</param>
+        <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
+        <returns>The converted tuple.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2464,29 +2628,29 @@
         <Parameter Name="value" Type="System.ValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,System.ValueTuple&lt;T8,T9,T10,T11,T12,T13,T14,System.ValueTuple&lt;T15,T16,T17,T18,T19,T20&gt;&gt;&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <typeparam name="T11">To be added.</typeparam>
-        <typeparam name="T12">To be added.</typeparam>
-        <typeparam name="T13">To be added.</typeparam>
-        <typeparam name="T14">To be added.</typeparam>
-        <typeparam name="T15">To be added.</typeparam>
-        <typeparam name="T16">To be added.</typeparam>
-        <typeparam name="T17">To be added.</typeparam>
-        <typeparam name="T18">To be added.</typeparam>
-        <typeparam name="T19">To be added.</typeparam>
-        <typeparam name="T20">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <typeparam name="T7">The type of the seventh element.</typeparam>
+        <typeparam name="T8">The type of the eighth element, or <c>value</c><see langword=".Rest.Item1" />.</typeparam>
+        <typeparam name="T9">The type of the ninth element, or <c>value</c><see langword=".Rest.Item2" />.</typeparam>
+        <typeparam name="T10">The type of the tenth element, or <c>value</c><see langword=".Rest.Item3" />.</typeparam>
+        <typeparam name="T11">The type of the eleventh element, or <c>value</c><see langword=".Rest.Item4" />.</typeparam>
+        <typeparam name="T12">The type of the twelfth element, or <c>value</c><see langword=".Rest.Item5" />.</typeparam>
+        <typeparam name="T13">The type of the thirteenth element, or <c>value</c><see langword=".Rest.Item6" />.</typeparam>
+        <typeparam name="T14">The type of the fourteenth element, or <c>value</c><see langword=".Rest.Item7" />.</typeparam>
+        <typeparam name="T15">The type of the fifteenth element., or <c>value</c><see langword=".Rest.Rest.Item1" />.</typeparam>
+        <typeparam name="T16">The type of the sixteenth element, ., or <c>value</c><see langword=".Rest.Rest.Item2" />.</typeparam>
+        <typeparam name="T17">The type of the seventeenth element., or <c>value</c><see langword=".Rest.Rest.Item3" />.</typeparam>
+        <typeparam name="T18">The type of the eighteenth element., or <c>value</c><see langword=".Rest.Rest.Item4" />.</typeparam>
+        <typeparam name="T19">The type of the nineteenth element., or <c>value</c><see langword=".Rest.Rest.Item5" />.</typeparam>
+        <typeparam name="T20">The type of the twentieth element., or <c>value</c><see langword=".Rest.Rest.Item6" />.</typeparam>
+        <param name="value">The value tuple instance to convert to a tuple.</param>
+        <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
+        <returns>The converted tuple.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2533,30 +2697,30 @@
         <Parameter Name="value" Type="System.ValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,System.ValueTuple&lt;T8,T9,T10,T11,T12,T13,T14,System.ValueTuple&lt;T15,T16,T17,T18,T19,T20,T21&gt;&gt;&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <typeparam name="T11">To be added.</typeparam>
-        <typeparam name="T12">To be added.</typeparam>
-        <typeparam name="T13">To be added.</typeparam>
-        <typeparam name="T14">To be added.</typeparam>
-        <typeparam name="T15">To be added.</typeparam>
-        <typeparam name="T16">To be added.</typeparam>
-        <typeparam name="T17">To be added.</typeparam>
-        <typeparam name="T18">To be added.</typeparam>
-        <typeparam name="T19">To be added.</typeparam>
-        <typeparam name="T20">To be added.</typeparam>
-        <typeparam name="T21">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <typeparam name="T7">The type of the seventh element.</typeparam>
+        <typeparam name="T8">The type of the eighth element, or <c>value</c><see langword=".Rest.Item1" />.</typeparam>
+        <typeparam name="T9">The type of the ninth element, or <c>value</c><see langword=".Rest.Item2" />.</typeparam>
+        <typeparam name="T10">The type of the tenth element, or <c>value</c><see langword=".Rest.Item3" />.</typeparam>
+        <typeparam name="T11">The type of the eleventh element, or <c>value</c><see langword=".Rest.Item4" />.</typeparam>
+        <typeparam name="T12">The type of the twelfth element, or <c>value</c><see langword=".Rest.Item5" />.</typeparam>
+        <typeparam name="T13">The type of the thirteenth element, or <c>value</c><see langword=".Rest.Item6" />.</typeparam>
+        <typeparam name="T14">The type of the fourteenth element, or <c>value</c><see langword=".Rest.Item7" />.</typeparam>
+        <typeparam name="T15">The type of the fifteenth element., or <c>value</c><see langword=".Rest.Rest.Item1" />.</typeparam>
+        <typeparam name="T16">The type of the sixteenth element, ., or <c>value</c><see langword=".Rest.Rest.Item2" />.</typeparam>
+        <typeparam name="T17">The type of the seventeenth element., or <c>value</c><see langword=".Rest.Rest.Item3" />.</typeparam>
+        <typeparam name="T18">The type of the eighteenth element., or <c>value</c><see langword=".Rest.Rest.Item4" />.</typeparam>
+        <typeparam name="T19">The type of the nineteenth element., or <c>value</c><see langword=".Rest.Rest.Item5" />.</typeparam>
+        <typeparam name="T20">The type of the twentieth element., or <c>value</c><see langword=".Rest.Rest.Item6" />.</typeparam>
+        <typeparam name="T21">The type of the twenty-first element., or <c>value</c><see langword=".Rest.Rest.Item7" />.</typeparam>
+        <param name="value">The value tuple instance to convert to a tuple.</param>
+        <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
+        <returns>The converted tuple.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2583,10 +2747,10 @@
         <Parameter Name="value" Type="System.Tuple&lt;T1&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <param name="value">The tuple object to convert to a value tuple</param>
+        <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
+        <returns>The converted value tuple instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2614,11 +2778,11 @@
         <Parameter Name="value" Type="System.Tuple&lt;T1,T2&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <param name="value">The tuple object to convert to a value tuple</param>
+        <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
+        <returns>The converted value tuple instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2647,12 +2811,12 @@
         <Parameter Name="value" Type="System.Tuple&lt;T1,T2,T3&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <param name="value">The tuple object to convert to a value tuple</param>
+        <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
+        <returns>The converted value tuple instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2682,13 +2846,13 @@
         <Parameter Name="value" Type="System.Tuple&lt;T1,T2,T3,T4&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <param name="value">The tuple object to convert to a value tuple</param>
+        <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
+        <returns>The converted value tuple instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2719,14 +2883,14 @@
         <Parameter Name="value" Type="System.Tuple&lt;T1,T2,T3,T4,T5&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <param name="value">The tuple object to convert to a value tuple</param>
+        <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
+        <returns>The converted value tuple instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2758,15 +2922,15 @@
         <Parameter Name="value" Type="System.Tuple&lt;T1,T2,T3,T4,T5,T6&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <param name="value">The tuple object to convert to a value tuple</param>
+        <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
+        <returns>The converted value tuple instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2799,16 +2963,16 @@
         <Parameter Name="value" Type="System.Tuple&lt;T1,T2,T3,T4,T5,T6,T7&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <typeparam name="T7">The type of the seventh element.</typeparam>
+        <param name="value">The tuple object to convert to a value tuple</param>
+        <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
+        <returns>The converted value tuple instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2842,17 +3006,17 @@
         <Parameter Name="value" Type="System.Tuple&lt;T1,T2,T3,T4,T5,T6,T7,System.Tuple&lt;T8&gt;&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <typeparam name="T7">The type of the seventh element.</typeparam>
+        <typeparam name="T8">The type of the eighth element, or <c>value</c><see langword=".Rest.Item1" />.</typeparam>
+        <param name="value">The tuple object to convert to a value tuple</param>
+        <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
+        <returns>The converted value tuple instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2887,18 +3051,18 @@
         <Parameter Name="value" Type="System.Tuple&lt;T1,T2,T3,T4,T5,T6,T7,System.Tuple&lt;T8,T9&gt;&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <typeparam name="T7">The type of the seventh element.</typeparam>
+        <typeparam name="T8">The type of the eighth element, or <c>value</c><see langword=".Rest.Item1" />.</typeparam>
+        <typeparam name="T9">The type of the ninth element, or <c>value</c><see langword=".Rest.Item2" />.</typeparam>
+        <param name="value">The tuple object to convert to a value tuple</param>
+        <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
+        <returns>The converted value tuple instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2934,19 +3098,19 @@
         <Parameter Name="value" Type="System.Tuple&lt;T1,T2,T3,T4,T5,T6,T7,System.Tuple&lt;T8,T9,T10&gt;&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <typeparam name="T7">The type of the seventh element.</typeparam>
+        <typeparam name="T8">The type of the eighth element, or <c>value</c><see langword=".Rest.Item1" />.</typeparam>
+        <typeparam name="T9">The type of the ninth element, or <c>value</c><see langword=".Rest.Item2" />.</typeparam>
+        <typeparam name="T10">The type of the tenth element, or <c>value</c><see langword=".Rest.Item3" />.</typeparam>
+        <param name="value">The tuple object to convert to a value tuple</param>
+        <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
+        <returns>The converted value tuple instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2983,20 +3147,20 @@
         <Parameter Name="value" Type="System.Tuple&lt;T1,T2,T3,T4,T5,T6,T7,System.Tuple&lt;T8,T9,T10,T11&gt;&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <typeparam name="T11">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <typeparam name="T7">The type of the seventh element.</typeparam>
+        <typeparam name="T8">The type of the eighth element, or <c>value</c><see langword=".Rest.Item1" />.</typeparam>
+        <typeparam name="T9">The type of the ninth element, or <c>value</c><see langword=".Rest.Item2" />.</typeparam>
+        <typeparam name="T10">The type of the tenth element, or <c>value</c><see langword=".Rest.Item3" />.</typeparam>
+        <typeparam name="T11">The type of the eleventh element, or <c>value</c><see langword=".Rest.Item4" />.</typeparam>
+        <param name="value">The tuple object to convert to a value tuple</param>
+        <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
+        <returns>The converted value tuple instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3034,21 +3198,21 @@
         <Parameter Name="value" Type="System.Tuple&lt;T1,T2,T3,T4,T5,T6,T7,System.Tuple&lt;T8,T9,T10,T11,T12&gt;&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <typeparam name="T11">To be added.</typeparam>
-        <typeparam name="T12">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <typeparam name="T7">The type of the seventh element.</typeparam>
+        <typeparam name="T8">The type of the eighth element, or <c>value</c><see langword=".Rest.Item1" />.</typeparam>
+        <typeparam name="T9">The type of the ninth element, or <c>value</c><see langword=".Rest.Item2" />.</typeparam>
+        <typeparam name="T10">The type of the tenth element, or <c>value</c><see langword=".Rest.Item3" />.</typeparam>
+        <typeparam name="T11">The type of the eleventh element, or <c>value</c><see langword=".Rest.Item4" />.</typeparam>
+        <typeparam name="T12">The type of the twelfth element, or <c>value</c><see langword=".Rest.Item5" />.</typeparam>
+        <param name="value">The tuple object to convert to a value tuple</param>
+        <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
+        <returns>The converted value tuple instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3087,22 +3251,22 @@
         <Parameter Name="value" Type="System.Tuple&lt;T1,T2,T3,T4,T5,T6,T7,System.Tuple&lt;T8,T9,T10,T11,T12,T13&gt;&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <typeparam name="T11">To be added.</typeparam>
-        <typeparam name="T12">To be added.</typeparam>
-        <typeparam name="T13">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <typeparam name="T7">The type of the seventh element.</typeparam>
+        <typeparam name="T8">The type of the eighth element, or <c>value</c><see langword=".Rest.Item1" />.</typeparam>
+        <typeparam name="T9">The type of the ninth element, or <c>value</c><see langword=".Rest.Item2" />.</typeparam>
+        <typeparam name="T10">The type of the tenth element, or <c>value</c><see langword=".Rest.Item3" />.</typeparam>
+        <typeparam name="T11">The type of the eleventh element, or <c>value</c><see langword=".Rest.Item4" />.</typeparam>
+        <typeparam name="T12">The type of the twelfth element, or <c>value</c><see langword=".Rest.Item5" />.</typeparam>
+        <typeparam name="T13">The type of the thirteenth element, or <c>value</c><see langword=".Rest.Item6" />.</typeparam>
+        <param name="value">The tuple object to convert to a value tuple</param>
+        <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
+        <returns>The converted value tuple instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3142,23 +3306,23 @@
         <Parameter Name="value" Type="System.Tuple&lt;T1,T2,T3,T4,T5,T6,T7,System.Tuple&lt;T8,T9,T10,T11,T12,T13,T14&gt;&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <typeparam name="T11">To be added.</typeparam>
-        <typeparam name="T12">To be added.</typeparam>
-        <typeparam name="T13">To be added.</typeparam>
-        <typeparam name="T14">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <typeparam name="T7">The type of the seventh element.</typeparam>
+        <typeparam name="T8">The type of the eighth element, or <c>value</c><see langword=".Rest.Item1" />.</typeparam>
+        <typeparam name="T9">The type of the ninth element, or <c>value</c><see langword=".Rest.Item2" />.</typeparam>
+        <typeparam name="T10">The type of the tenth element, or <c>value</c><see langword=".Rest.Item3" />.</typeparam>
+        <typeparam name="T11">The type of the eleventh element, or <c>value</c><see langword=".Rest.Item4" />.</typeparam>
+        <typeparam name="T12">The type of the twelfth element, or <c>value</c><see langword=".Rest.Item5" />.</typeparam>
+        <typeparam name="T13">The type of the thirteenth element, or <c>value</c><see langword=".Rest.Item6" />.</typeparam>
+        <typeparam name="T14">The type of the fourteenth element, or <c>value</c><see langword=".Rest.Item7" />.</typeparam>
+        <param name="value">The tuple object to convert to a value tuple</param>
+        <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
+        <returns>The converted value tuple instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3199,24 +3363,24 @@
         <Parameter Name="value" Type="System.Tuple&lt;T1,T2,T3,T4,T5,T6,T7,System.Tuple&lt;T8,T9,T10,T11,T12,T13,T14,System.Tuple&lt;T15&gt;&gt;&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <typeparam name="T11">To be added.</typeparam>
-        <typeparam name="T12">To be added.</typeparam>
-        <typeparam name="T13">To be added.</typeparam>
-        <typeparam name="T14">To be added.</typeparam>
-        <typeparam name="T15">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <typeparam name="T7">The type of the seventh element.</typeparam>
+        <typeparam name="T8">The type of the eighth element, or <c>value</c><see langword=".Rest.Item1" />.</typeparam>
+        <typeparam name="T9">The type of the ninth element, or <c>value</c><see langword=".Rest.Item2" />.</typeparam>
+        <typeparam name="T10">The type of the tenth element, or <c>value</c><see langword=".Rest.Item3" />.</typeparam>
+        <typeparam name="T11">The type of the eleventh element, or <c>value</c><see langword=".Rest.Item4" />.</typeparam>
+        <typeparam name="T12">The type of the twelfth element, or <c>value</c><see langword=".Rest.Item5" />.</typeparam>
+        <typeparam name="T13">The type of the thirteenth element, or <c>value</c><see langword=".Rest.Item6" />.</typeparam>
+        <typeparam name="T14">The type of the fourteenth element, or <c>value</c><see langword=".Rest.Item7" />.</typeparam>
+        <typeparam name="T15">The type of the fifteenth element., or <c>value</c><see langword=".Rest.Rest.Item1" />.</typeparam>
+        <param name="value">The tuple object to convert to a value tuple</param>
+        <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
+        <returns>The converted value tuple instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3258,25 +3422,25 @@
         <Parameter Name="value" Type="System.Tuple&lt;T1,T2,T3,T4,T5,T6,T7,System.Tuple&lt;T8,T9,T10,T11,T12,T13,T14,System.Tuple&lt;T15,T16&gt;&gt;&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <typeparam name="T11">To be added.</typeparam>
-        <typeparam name="T12">To be added.</typeparam>
-        <typeparam name="T13">To be added.</typeparam>
-        <typeparam name="T14">To be added.</typeparam>
-        <typeparam name="T15">To be added.</typeparam>
-        <typeparam name="T16">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <typeparam name="T7">The type of the seventh element.</typeparam>
+        <typeparam name="T8">The type of the eighth element, or <c>value</c><see langword=".Rest.Item1" />.</typeparam>
+        <typeparam name="T9">The type of the ninth element, or <c>value</c><see langword=".Rest.Item2" />.</typeparam>
+        <typeparam name="T10">The type of the tenth element, or <c>value</c><see langword=".Rest.Item3" />.</typeparam>
+        <typeparam name="T11">The type of the eleventh element, or <c>value</c><see langword=".Rest.Item4" />.</typeparam>
+        <typeparam name="T12">The type of the twelfth element, or <c>value</c><see langword=".Rest.Item5" />.</typeparam>
+        <typeparam name="T13">The type of the thirteenth element, or <c>value</c><see langword=".Rest.Item6" />.</typeparam>
+        <typeparam name="T14">The type of the fourteenth element, or <c>value</c><see langword=".Rest.Item7" />.</typeparam>
+        <typeparam name="T15">The type of the fifteenth element., or <c>value</c><see langword=".Rest.Rest.Item1" />.</typeparam>
+        <typeparam name="T16">The type of the sixteenth element, ., or <c>value</c><see langword=".Rest.Rest.Item2" />.</typeparam>
+        <param name="value">The tuple object to convert to a value tuple</param>
+        <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
+        <returns>The converted value tuple instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3319,26 +3483,26 @@
         <Parameter Name="value" Type="System.Tuple&lt;T1,T2,T3,T4,T5,T6,T7,System.Tuple&lt;T8,T9,T10,T11,T12,T13,T14,System.Tuple&lt;T15,T16,T17&gt;&gt;&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <typeparam name="T11">To be added.</typeparam>
-        <typeparam name="T12">To be added.</typeparam>
-        <typeparam name="T13">To be added.</typeparam>
-        <typeparam name="T14">To be added.</typeparam>
-        <typeparam name="T15">To be added.</typeparam>
-        <typeparam name="T16">To be added.</typeparam>
-        <typeparam name="T17">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <typeparam name="T7">The type of the seventh element.</typeparam>
+        <typeparam name="T8">The type of the eighth element, or <c>value</c><see langword=".Rest.Item1" />.</typeparam>
+        <typeparam name="T9">The type of the ninth element, or <c>value</c><see langword=".Rest.Item2" />.</typeparam>
+        <typeparam name="T10">The type of the tenth element, or <c>value</c><see langword=".Rest.Item3" />.</typeparam>
+        <typeparam name="T11">The type of the eleventh element, or <c>value</c><see langword=".Rest.Item4" />.</typeparam>
+        <typeparam name="T12">The type of the twelfth element, or <c>value</c><see langword=".Rest.Item5" />.</typeparam>
+        <typeparam name="T13">The type of the thirteenth element, or <c>value</c><see langword=".Rest.Item6" />.</typeparam>
+        <typeparam name="T14">The type of the fourteenth element, or <c>value</c><see langword=".Rest.Item7" />.</typeparam>
+        <typeparam name="T15">The type of the fifteenth element., or <c>value</c><see langword=".Rest.Rest.Item1" />.</typeparam>
+        <typeparam name="T16">The type of the sixteenth element, ., or <c>value</c><see langword=".Rest.Rest.Item2" />.</typeparam>
+        <typeparam name="T17">The type of the seventeenth element., or <c>value</c><see langword=".Rest.Rest.Item3" />.</typeparam>
+        <param name="value">The tuple object to convert to a value tuple</param>
+        <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
+        <returns>The converted value tuple instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3382,27 +3546,27 @@
         <Parameter Name="value" Type="System.Tuple&lt;T1,T2,T3,T4,T5,T6,T7,System.Tuple&lt;T8,T9,T10,T11,T12,T13,T14,System.Tuple&lt;T15,T16,T17,T18&gt;&gt;&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <typeparam name="T11">To be added.</typeparam>
-        <typeparam name="T12">To be added.</typeparam>
-        <typeparam name="T13">To be added.</typeparam>
-        <typeparam name="T14">To be added.</typeparam>
-        <typeparam name="T15">To be added.</typeparam>
-        <typeparam name="T16">To be added.</typeparam>
-        <typeparam name="T17">To be added.</typeparam>
-        <typeparam name="T18">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <typeparam name="T7">The type of the seventh element.</typeparam>
+        <typeparam name="T8">The type of the eighth element, or <c>value</c><see langword=".Rest.Item1" />.</typeparam>
+        <typeparam name="T9">The type of the ninth element, or <c>value</c><see langword=".Rest.Item2" />.</typeparam>
+        <typeparam name="T10">The type of the tenth element, or <c>value</c><see langword=".Rest.Item3" />.</typeparam>
+        <typeparam name="T11">The type of the eleventh element, or <c>value</c><see langword=".Rest.Item4" />.</typeparam>
+        <typeparam name="T12">The type of the twelfth element, or <c>value</c><see langword=".Rest.Item5" />.</typeparam>
+        <typeparam name="T13">The type of the thirteenth element, or <c>value</c><see langword=".Rest.Item6" />.</typeparam>
+        <typeparam name="T14">The type of the fourteenth element, or <c>value</c><see langword=".Rest.Item7" />.</typeparam>
+        <typeparam name="T15">The type of the fifteenth element., or <c>value</c><see langword=".Rest.Rest.Item1" />.</typeparam>
+        <typeparam name="T16">The type of the sixteenth element, ., or <c>value</c><see langword=".Rest.Rest.Item2" />.</typeparam>
+        <typeparam name="T17">The type of the seventeenth element., or <c>value</c><see langword=".Rest.Rest.Item3" />.</typeparam>
+        <typeparam name="T18">The type of the eighteenth element., or <c>value</c><see langword=".Rest.Rest.Item4" />.</typeparam>
+        <param name="value">The tuple object to convert to a value tuple</param>
+        <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
+        <returns>The converted value tuple instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3447,28 +3611,28 @@
         <Parameter Name="value" Type="System.Tuple&lt;T1,T2,T3,T4,T5,T6,T7,System.Tuple&lt;T8,T9,T10,T11,T12,T13,T14,System.Tuple&lt;T15,T16,T17,T18,T19&gt;&gt;&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <typeparam name="T11">To be added.</typeparam>
-        <typeparam name="T12">To be added.</typeparam>
-        <typeparam name="T13">To be added.</typeparam>
-        <typeparam name="T14">To be added.</typeparam>
-        <typeparam name="T15">To be added.</typeparam>
-        <typeparam name="T16">To be added.</typeparam>
-        <typeparam name="T17">To be added.</typeparam>
-        <typeparam name="T18">To be added.</typeparam>
-        <typeparam name="T19">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <typeparam name="T7">The type of the seventh element.</typeparam>
+        <typeparam name="T8">The type of the eighth element, or <c>value</c><see langword=".Rest.Item1" />.</typeparam>
+        <typeparam name="T9">The type of the ninth element, or <c>value</c><see langword=".Rest.Item2" />.</typeparam>
+        <typeparam name="T10">The type of the tenth element, or <c>value</c><see langword=".Rest.Item3" />.</typeparam>
+        <typeparam name="T11">The type of the eleventh element, or <c>value</c><see langword=".Rest.Item4" />.</typeparam>
+        <typeparam name="T12">The type of the twelfth element, or <c>value</c><see langword=".Rest.Item5" />.</typeparam>
+        <typeparam name="T13">The type of the thirteenth element, or <c>value</c><see langword=".Rest.Item6" />.</typeparam>
+        <typeparam name="T14">The type of the fourteenth element, or <c>value</c><see langword=".Rest.Item7" />.</typeparam>
+        <typeparam name="T15">The type of the fifteenth element., or <c>value</c><see langword=".Rest.Rest.Item1" />.</typeparam>
+        <typeparam name="T16">The type of the sixteenth element, ., or <c>value</c><see langword=".Rest.Rest.Item2" />.</typeparam>
+        <typeparam name="T17">The type of the seventeenth element., or <c>value</c><see langword=".Rest.Rest.Item3" />.</typeparam>
+        <typeparam name="T18">The type of the eighteenth element., or <c>value</c><see langword=".Rest.Rest.Item4" />.</typeparam>
+        <typeparam name="T19">The type of the nineteenth element., or <c>value</c><see langword=".Rest.Rest.Item5" />.</typeparam>
+        <param name="value">The tuple object to convert to a value tuple</param>
+        <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
+        <returns>The converted value tuple instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3514,29 +3678,29 @@
         <Parameter Name="value" Type="System.Tuple&lt;T1,T2,T3,T4,T5,T6,T7,System.Tuple&lt;T8,T9,T10,T11,T12,T13,T14,System.Tuple&lt;T15,T16,T17,T18,T19,T20&gt;&gt;&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <typeparam name="T11">To be added.</typeparam>
-        <typeparam name="T12">To be added.</typeparam>
-        <typeparam name="T13">To be added.</typeparam>
-        <typeparam name="T14">To be added.</typeparam>
-        <typeparam name="T15">To be added.</typeparam>
-        <typeparam name="T16">To be added.</typeparam>
-        <typeparam name="T17">To be added.</typeparam>
-        <typeparam name="T18">To be added.</typeparam>
-        <typeparam name="T19">To be added.</typeparam>
-        <typeparam name="T20">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <typeparam name="T7">The type of the seventh element.</typeparam>
+        <typeparam name="T8">The type of the eighth element, or <c>value</c><see langword=".Rest.Item1" />.</typeparam>
+        <typeparam name="T9">The type of the ninth element, or <c>value</c><see langword=".Rest.Item2" />.</typeparam>
+        <typeparam name="T10">The type of the tenth element, or <c>value</c><see langword=".Rest.Item3" />.</typeparam>
+        <typeparam name="T11">The type of the eleventh element, or <c>value</c><see langword=".Rest.Item4" />.</typeparam>
+        <typeparam name="T12">The type of the twelfth element, or <c>value</c><see langword=".Rest.Item5" />.</typeparam>
+        <typeparam name="T13">The type of the thirteenth element, or <c>value</c><see langword=".Rest.Item6" />.</typeparam>
+        <typeparam name="T14">The type of the fourteenth element, or <c>value</c><see langword=".Rest.Item7" />.</typeparam>
+        <typeparam name="T15">The type of the fifteenth element., or <c>value</c><see langword=".Rest.Rest.Item1" />.</typeparam>
+        <typeparam name="T16">The type of the sixteenth element, ., or <c>value</c><see langword=".Rest.Rest.Item2" />.</typeparam>
+        <typeparam name="T17">The type of the seventeenth element., or <c>value</c><see langword=".Rest.Rest.Item3" />.</typeparam>
+        <typeparam name="T18">The type of the eighteenth element., or <c>value</c><see langword=".Rest.Rest.Item4" />.</typeparam>
+        <typeparam name="T19">The type of the nineteenth element., or <c>value</c><see langword=".Rest.Rest.Item5" />.</typeparam>
+        <typeparam name="T20">The type of the twentieth element., or <c>value</c><see langword=".Rest.Rest.Item6" />.</typeparam>
+        <param name="value">The tuple object to convert to a value tuple</param>
+        <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
+        <returns>The converted value tuple instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3583,30 +3747,30 @@
         <Parameter Name="value" Type="System.Tuple&lt;T1,T2,T3,T4,T5,T6,T7,System.Tuple&lt;T8,T9,T10,T11,T12,T13,T14,System.Tuple&lt;T15,T16,T17,T18,T19,T20,T21&gt;&gt;&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <typeparam name="T4">To be added.</typeparam>
-        <typeparam name="T5">To be added.</typeparam>
-        <typeparam name="T6">To be added.</typeparam>
-        <typeparam name="T7">To be added.</typeparam>
-        <typeparam name="T8">To be added.</typeparam>
-        <typeparam name="T9">To be added.</typeparam>
-        <typeparam name="T10">To be added.</typeparam>
-        <typeparam name="T11">To be added.</typeparam>
-        <typeparam name="T12">To be added.</typeparam>
-        <typeparam name="T13">To be added.</typeparam>
-        <typeparam name="T14">To be added.</typeparam>
-        <typeparam name="T15">To be added.</typeparam>
-        <typeparam name="T16">To be added.</typeparam>
-        <typeparam name="T17">To be added.</typeparam>
-        <typeparam name="T18">To be added.</typeparam>
-        <typeparam name="T19">To be added.</typeparam>
-        <typeparam name="T20">To be added.</typeparam>
-        <typeparam name="T21">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">The type of the first element.</typeparam>
+        <typeparam name="T2">The type of the second element.</typeparam>
+        <typeparam name="T3">The type of the third element.</typeparam>
+        <typeparam name="T4">The type of the fourth element.</typeparam>
+        <typeparam name="T5">The type of the fifth element.</typeparam>
+        <typeparam name="T6">The type of the sixth element.</typeparam>
+        <typeparam name="T7">The type of the seventh element.</typeparam>
+        <typeparam name="T8">The type of the eighth element, or <c>value</c><see langword=".Rest.Item1" />.</typeparam>
+        <typeparam name="T9">The type of the ninth element, or <c>value</c><see langword=".Rest.Item2" />.</typeparam>
+        <typeparam name="T10">The type of the tenth element, or <c>value</c><see langword=".Rest.Item3" />.</typeparam>
+        <typeparam name="T11">The type of the eleventh element, or <c>value</c><see langword=".Rest.Item4" />.</typeparam>
+        <typeparam name="T12">The type of the twelfth element, or <c>value</c><see langword=".Rest.Item5" />.</typeparam>
+        <typeparam name="T13">The type of the thirteenth element, or <c>value</c><see langword=".Rest.Item6" />.</typeparam>
+        <typeparam name="T14">The type of the fourteenth element, or <c>value</c><see langword=".Rest.Item7" />.</typeparam>
+        <typeparam name="T15">The type of the fifteenth element., or <c>value</c><see langword=".Rest.Rest.Item1" />.</typeparam>
+        <typeparam name="T16">The type of the sixteenth element, ., or <c>value</c><see langword=".Rest.Rest.Item2" />.</typeparam>
+        <typeparam name="T17">The type of the seventeenth element., or <c>value</c><see langword=".Rest.Rest.Item3" />.</typeparam>
+        <typeparam name="T18">The type of the eighteenth element., or <c>value</c><see langword=".Rest.Rest.Item4" />.</typeparam>
+        <typeparam name="T19">The type of the nineteenth element., or <c>value</c><see langword=".Rest.Rest.Item5" />.</typeparam>
+        <typeparam name="T20">The type of the twentieth element., or <c>value</c><see langword=".Rest.Rest.Item6" />.</typeparam>
+        <typeparam name="T21">The type of the twenty-first element., or <c>value</c><see langword=".Rest.Rest.Item7" />.</typeparam>
+        <param name="value">The tuple object to convert to a value tuple</param>
+        <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
+        <returns>The converted value tuple instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

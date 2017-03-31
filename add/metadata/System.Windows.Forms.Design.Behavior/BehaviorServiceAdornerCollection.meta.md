@@ -1,69 +1,109 @@
 ---
 uid: System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollection
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollection.Item(System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollection.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollection.GetEnumerator
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollection.IndexOf(System.Windows.Forms.Design.Behavior.Adorner)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollection.#ctor(System.Windows.Forms.Design.Behavior.BehaviorService)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollection.AddRange(System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollection)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollection.Contains(System.Windows.Forms.Design.Behavior.Adorner)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollection.#ctor(System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollection)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollection.Remove(System.Windows.Forms.Design.Behavior.Adorner)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollection.Insert(System.Int32,System.Windows.Forms.Design.Behavior.Adorner)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollection.#ctor(System.Windows.Forms.Design.Behavior.Adorner[])
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollection.AddRange
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollection.AddRange(System.Windows.Forms.Design.Behavior.Adorner[])
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollection.CopyTo(System.Windows.Forms.Design.Behavior.Adorner[],System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollection.Add(System.Windows.Forms.Design.Behavior.Adorner)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

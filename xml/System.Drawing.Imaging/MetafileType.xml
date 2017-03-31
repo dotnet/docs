@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies types of metafiles. The <see cref="P:System.Drawing.Imaging.MetafileHeader.Type" /> property returns a member of this enumeration.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Drawing.Imaging.MetafileType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies an Enhanced Metafile (EMF) file. Such a file contains only GDI records.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfPlusDual">
@@ -43,7 +43,7 @@
         <ReturnType>System.Drawing.Imaging.MetafileType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies an EMF+ Dual file. Such a file contains GDI+ records along with alternative GDI records and can be displayed by using either GDI or GDI+. Displaying the records using GDI may cause some quality degradation.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfPlusOnly">
@@ -59,7 +59,7 @@
         <ReturnType>System.Drawing.Imaging.MetafileType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies an EMF+ file. Such a file contains only GDI+ records and must be displayed by using GDI+. Displaying the records using GDI may cause unpredictable results.</summary>
       </Docs>
     </Member>
     <Member MemberName="Invalid">
@@ -75,7 +75,7 @@
         <ReturnType>System.Drawing.Imaging.MetafileType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies a metafile format that is not recognized in GDI+.</summary>
       </Docs>
     </Member>
     <Member MemberName="Wmf">
@@ -91,7 +91,7 @@
         <ReturnType>System.Drawing.Imaging.MetafileType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies a WMF (Windows Metafile) file. Such a file contains only GDI records.</summary>
       </Docs>
     </Member>
     <Member MemberName="WmfPlaceable">
@@ -107,7 +107,7 @@
         <ReturnType>System.Drawing.Imaging.MetafileType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies a WMF (Windows Metafile) file that has a placeable metafile header in front of it.</summary>
       </Docs>
     </Member>
   </Members>

@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>An exception representing the case where the build was aborted by request, as opposed to being unceremoniously shut down due to another kind of error exception.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you add fields to this class, add a custom serialization constructor and override GetObjectData().  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a BuildAborted exception.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +50,8 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The error message.</param>
+        <summary>Creates a BuildAborted exception.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,9 +69,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">The error information.</param>
+        <param name="context">The error context.</param>
+        <summary>Protected constructor used for (de)serialization.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,9 +89,9 @@
         <Parameter Name="innerException" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="innerException">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The error message.</param>
+        <param name="innerException">The inner exception.</param>
+        <summary>Constructs a BuildAbortedException with an additional message attached and an inner exception.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,8 +108,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the error code (if any) associated with the exception message.</summary>
+        <value>Returns the error code as a string; returns a null string if no error code exists.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,9 +130,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">The error information.</param>
+        <param name="context">The error context.</param>
+        <summary>ISerializable method which must be overridden because Exception implements this interface.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

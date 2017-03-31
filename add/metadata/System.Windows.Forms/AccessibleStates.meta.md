@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Forms.AccessibleStates
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

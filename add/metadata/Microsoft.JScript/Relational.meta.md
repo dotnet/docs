@@ -1,19 +1,19 @@
 ---
 uid: Microsoft.JScript.Relational
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.Relational.JScriptCompare(System.Object,System.Object)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.Relational.EvaluateRelational(System.Object,System.Object)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.Relational.#ctor(System.Int32)
-internalonly: False
+ms.author: "mikejo"
 ---

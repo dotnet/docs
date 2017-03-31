@@ -1,49 +1,83 @@
 ---
 uid: System.Security.Cryptography.Xml.XmlDsigXsltTransform
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.Xml.XmlDsigXsltTransform.LoadInnerXml(System.Xml.XmlNodeList)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.Xml.XmlDsigXsltTransform.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Xml.XmlDsigXsltTransform.InputTypes
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.Xml.XmlDsigXsltTransform.LoadInput(System.Object)
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.Xml.XmlDsigXsltTransform.#ctor(System.Boolean)
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.Xml.XmlDsigXsltTransform.GetInnerXml
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.Xml.XmlDsigXsltTransform.GetOutput(System.Type)
-internalonly: False
+uid: System.Security.Cryptography.Xml.XmlDsigXsltTransform.LoadInnerXml(System.Xml.XmlNodeList)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.Xml.XmlDsigXsltTransform.GetOutput
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.Xml.XmlDsigXsltTransform.#ctor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.Xml.XmlDsigXsltTransform.InputTypes
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.Xml.XmlDsigXsltTransform.LoadInput(System.Object)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.Xml.XmlDsigXsltTransform.#ctor(System.Boolean)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.Xml.XmlDsigXsltTransform.GetInnerXml
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.Xml.XmlDsigXsltTransform.GetOutput(System.Type)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.Xml.XmlDsigXsltTransform.GetOutput
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.Xml.XmlDsigXsltTransform.OutputTypes
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

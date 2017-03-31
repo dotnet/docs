@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the manner in which records should be read from a <see cref="T:System.IO.Log.LogRecordSequence" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is provided to the <xref:System.IO.Log.IRecordSequence.ReadLogRecords%2A> method to control the order in which records should be read. Each value corresponds to one of the metadata sequence numbers stored in a log record.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Next">
@@ -27,7 +34,7 @@
         <ReturnType>System.IO.Log.LogRecordEnumeratorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Records should be read in the order in which they were appended to the sequence.</summary>
       </Docs>
     </Member>
     <Member MemberName="Previous">
@@ -43,7 +50,7 @@
         <ReturnType>System.IO.Log.LogRecordEnumeratorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Records should be read in the order specified by the Previous sequence number of the log record.</summary>
       </Docs>
     </Member>
     <Member MemberName="User">
@@ -59,7 +66,7 @@
         <ReturnType>System.IO.Log.LogRecordEnumeratorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Records should be read in the order specified by the User sequence number of the log record.</summary>
       </Docs>
     </Member>
   </Members>

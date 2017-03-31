@@ -1,19 +1,29 @@
 ---
 uid: System.Web.HttpRequestValidationException
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.HttpRequestValidationException.#ctor(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.HttpRequestValidationException.#ctor(System.String,System.Exception)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.HttpRequestValidationException.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.HttpRequestValidationException.#ctor
+ms.author: "riande"
+manager: "wpickett"
 ---

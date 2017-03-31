@@ -15,8 +15,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge" /> class represents a set of site links that communicate through a transport.</summary>
     <remarks>To be added.</remarks>
+    <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" /></permission>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,10 +34,26 @@
         <Parameter Name="bridgeName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="bridgeName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="context">A <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object that specifies the context for this <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge" /> object.</param>
+        <param name="bridgeName">A <see cref="T:System.String" /> that specifies the name for this <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge" /> object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge" /> class using the specified <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object and name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default <xref:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType> type is RPC.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
+        <exception cref="T:System.ArgumentException">This exception will occur for any of the following reasons:  
+  
+-   The <paramref name="context" /> parameter does not refer to a valid forest, configuration set,  domain controller, or AD LDS server.  
+  
+-   The <paramref name="bridgeName" /> parameter is an empty string.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="context" /> parameter or the <paramref name="bridgeName" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.Authentication.AuthenticationException">The credentials that were supplied are not valid.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -54,11 +71,23 @@
         <Parameter Name="transport" Type="System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="bridgeName">To be added.</param>
-        <param name="transport">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="context">A <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object that specifies the context for this <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge" /> object.</param>
+        <param name="bridgeName">A <see cref="T:System.String" /> that specifies the name for this <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge" /> object.</param>
+        <param name="transport">A <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" /> value that specifies the transport type to be used.</param>
+        <summary>Initializes an instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge" /> class using the specified <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object, name, and transport type.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
+        <exception cref="T:System.ArgumentException">This exception will occur for any of the following reasons:  
+  
+-   The <paramref name="context" /> parameter does not refer to a valid forest, configuration set, domain controller, or AD LDS server.  
+  
+-   The <paramref name="bridgeName" /> parameter is an empty string.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="context" /> parameter or the <paramref name="bridgeName" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.Authentication.AuthenticationException">The credentials that were supplied are not valid.</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
+          <paramref name="transport" /> is not a valid <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" /> value.</exception>
+        <exception cref="T:System.NotSupportedException">The transport type specified in the <paramref name="transport" /> parameter is not supported.</exception>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -75,8 +104,13 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Deletes the site link bridge.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge" /> object has not yet been saved in the Active Directory Domain Services store.</exception>
+        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -93,7 +127,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Releases the resources that are used by the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,8 +147,9 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="disposing">
+          <see langword="true" /> if the managed resources should be released; <see langword="false" /> if only the unmanaged resources should be released.</param>
+        <summary>Releases the unmanaged resources that are used by the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge" /> object and, optionally, releases unmanaged resources.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,11 +170,20 @@
         <Parameter Name="bridgeName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="bridgeName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">A <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object that specifies the context for the search.</param>
+        <param name="bridgeName">A <see cref="T:System.String" /> that specifies the name of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge" /> object to search for.</param>
+        <summary>Gets a <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge" /> object that matches a given directory context and name for the RPC transport protocol only.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge" /> object. <see langword="null" /> if the object was not found.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">In the <paramref name="context" /> parameter that was specified, the site link bridge could not be found for the given <paramref name="bridgeName" /> parameter.</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
+        <exception cref="T:System.ArgumentException">This exception will occur for any of the following reasons.  
+  
+-   The target in the <paramref name="context" /> parameter is not a forest, configuration set, domain controller, or an AD LDS server.  
+  
+-   The <paramref name="bridgeName" /> parameter is an empty string.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="context" /> or the <paramref name="bridgeName" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="FindByName">
@@ -160,12 +204,22 @@
         <Parameter Name="transport" Type="System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="bridgeName">To be added.</param>
-        <param name="transport">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">A <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object that specifies the context for the search.</param>
+        <param name="bridgeName">A <see cref="T:System.String" /> that specifies the name of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge" /> object to search for.</param>
+        <param name="transport">A <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" /> value that specifies the transport type of the object to search for.</param>
+        <summary>Gets a <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge" /> object that matches a given directory context, name, and transport type.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge" /> object. <see langword="null" /> if the object was not found.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">In the <paramref name="context" /> parameter that was specified, the site link bridge could not be found for the given <paramref name="bridgeName" /> parameter.</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
+        <exception cref="T:System.ArgumentException">This exception will occur for any of the following reasons:  
+  
+-   The target in the <paramref name="context" /> parameter is not a forest, configuration set, domain controller, or an AD LDS server.  
+  
+-   The <paramref name="bridgeName" /> parameter is an empty string.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="context" /> or the <paramref name="bridgeName" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="transport" /> parameter is not a valid <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" /> value.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetDirectoryEntry">
@@ -182,9 +236,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the <see cref="T:System.DirectoryServices.DirectoryEntry" /> object for the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge" /> object.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.DirectoryEntry" /> object that represents the directory entry for the site link bridge object.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge" /> object has not yet been saved in the Active Directory Domain Services store.</exception>
+        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -200,9 +256,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge" /> object.</summary>
+        <value>A <see cref="T:System.String" /> that represents the name of the current site link bridge object.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -219,8 +276,13 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Commits all changes to the current <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge" /> object to the underlying directory store.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectExistsException">The site link bridge object already exists.</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
+        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
       </Docs>
     </Member>
     <Member MemberName="SiteLinks">
@@ -236,9 +298,12 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of site link objects that are associated with the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge" /> object.</summary>
+        <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkCollection" /> object that contains <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink" /> objects that are associated with the current site link bridge object.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
+        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -255,9 +320,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the name of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge" /> object.</summary>
+        <returns>A <see cref="T:System.String" /> that represents the name of the current <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge" /> object.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="TransportType">
@@ -273,9 +339,10 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the transport type for the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge" /> object.</summary>
+        <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" /> value that represents the transport type that is used by the current site link bridge object.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
       </Docs>
     </Member>
   </Members>

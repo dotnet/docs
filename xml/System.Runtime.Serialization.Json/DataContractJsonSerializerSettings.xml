@@ -20,7 +20,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies <see cref="T:System.Runtime.Serialization.Json.DataContractJsonSerializer" /> settings.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -44,7 +44,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.Json.DataContractJsonSerializerSettings" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,8 +62,8 @@
         <ReturnType>System.Runtime.Serialization.IDataContractSurrogate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a surrogate type that is currently active for given IDataContractSurrogate instance.</summary>
+        <value>The surrogate type that is currently active for given IDataContractSurrogate instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,8 +89,8 @@
         <ReturnType>System.Runtime.Serialization.DateTimeFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a DateTimeFormat that defines the culturally appropriate format of displaying dates and times.</summary>
+        <value>The DateTimeFormat that defines the culturally appropriate format of displaying dates and times.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,8 +116,8 @@
         <ReturnType>System.Runtime.Serialization.EmitTypeInformation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the data contract JSON serializer settings to emit type information.</summary>
+        <value>The data contract JSON serializer settings to emit type information.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -139,8 +139,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that specifies whether to ignore data supplied by an extension of the class when the class is being serialized or deserialized.</summary>
+        <value>
+          <see langword="True" /> to ignore data supplied by an extension of the class when the class is being serialized or deserialized; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -166,8 +167,8 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Type&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a collection of types that may be present in the object graph serialized using this instance the DataContractJsonSerializerSettings.</summary>
+        <value>A collection of types that may be present in the object graph serialized using this instance the DataContractJsonSerializerSettings.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -193,8 +194,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the maximum number of items in an object graph to serialize or deserialize.</summary>
+        <value>The maximum number of items in an object graph to serialize or deserialize.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -220,8 +221,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the root name of the selected object.</summary>
+        <value>The root name of the selected object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -247,8 +248,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that specifies whether to serialize read only types.</summary>
+        <value>
+          <see langword="True" /> to serialize read only types; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -274,8 +276,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that specifies whether to use a simple dictionary format.</summary>
+        <value>
+          <see langword="True" /> to use a simple dictionary format; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
